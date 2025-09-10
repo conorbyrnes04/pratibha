@@ -13,13 +13,16 @@ async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, floa
     from openai import AsyncOpenAI
     client = AsyncOpenAI(api_key=settings.OPENAI_API_KEY)
     emb = (await client.embeddings.create(model="text-embedding-3-small", input=query)).data[0].embedding
+    
+    # Convert embedding to proper vector format for pgvector
+    vector_str = f"[{','.join(map(str, emb))}]"
 
     rows = await conn.fetch(
         """SELECT body, metadata, 1 - (embedding <=> $1::vector) AS score
             FROM chunks
             ORDER BY embedding <-> $1::vector
             LIMIT $2
-        """, emb, k
+        """, vector_str, k
     )
     await conn.close()
     return [(r["body"], r["metadata"], float(r["score"])) for r in rows]
