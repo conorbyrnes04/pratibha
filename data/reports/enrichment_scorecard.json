@@ -1,0 +1,134 @@
+{
+  "yaml_root": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml",
+  "collections": [
+    {
+      "collection": "epictetus_works",
+      "input_dir": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml/epictetus_works",
+      "total_files": 95,
+      "changed_files": 0,
+      "changes_by_type": {},
+      "issues": {
+        "missing_translation": 0,
+        "empty_commentary": 0,
+        "missing_abhyasa": 0
+      },
+      "quality_score": 100
+    },
+    {
+      "collection": "fragments",
+      "input_dir": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml/fragments",
+      "total_files": 128,
+      "changed_files": 0,
+      "changes_by_type": {},
+      "issues": {
+        "missing_translation": 0,
+        "empty_commentary": 0,
+        "missing_abhyasa": 0
+      },
+      "quality_score": 100
+    },
+    {
+      "collection": "know_yourself_ibn_arabi",
+      "input_dir": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml/know_yourself_ibn_arabi",
+      "total_files": 36,
+      "changed_files": 0,
+      "changes_by_type": {},
+      "issues": {
+        "missing_translation": 0,
+        "empty_commentary": 0,
+        "missing_abhyasa": 0
+      },
+      "quality_score": 100
+    },
+    {
+      "collection": "phaedo",
+      "input_dir": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml/phaedo",
+      "total_files": 68,
+      "changed_files": 68,
+      "changes_by_type": {
+        "themes_generated": 66,
+        "commentary_generated": 61,
+        "commentary_normalized": 61
+      },
+      "issues": {
+        "missing_translation": 0,
+        "empty_commentary": 0,
+        "missing_abhyasa": 0
+      },
+      "quality_score": 100
+    },
+    {
+      "collection": "siva_sutra",
+      "input_dir": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml/siva_sutra",
+      "total_files": 47,
+      "changed_files": 0,
+      "changes_by_type": {},
+      "issues": {
+        "missing_translation": 0,
+        "empty_commentary": 0,
+        "missing_abhyasa": 0
+      },
+      "quality_score": 100
+    },
+    {
+      "collection": "tao_te_ching",
+      "input_dir": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml/tao_te_ching",
+      "total_files": 81,
+      "changed_files": 0,
+      "changes_by_type": {},
+      "issues": {
+        "missing_translation": 0,
+        "empty_commentary": 0,
+        "missing_abhyasa": 0
+      },
+      "quality_score": 100
+    },
+    {
+      "collection": "the_book_of_chuang_tzu",
+      "input_dir": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml/the_book_of_chuang_tzu",
+      "total_files": 33,
+      "changed_files": 0,
+      "changes_by_type": {},
+      "issues": {
+        "missing_translation": 0,
+        "empty_commentary": 0,
+        "missing_abhyasa": 0
+      },
+      "quality_score": 100
+    },
+    {
+      "collection": "vbt_translation_wallis_2",
+      "input_dir": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml/vbt_translation_wallis_2",
+      "total_files": 112,
+      "changed_files": 0,
+      "changes_by_type": {},
+      "issues": {
+        "missing_translation": 0,
+        "empty_commentary": 0,
+        "missing_abhyasa": 0
+      },
+      "quality_score": 100
+    },
+    {
+      "collection": "yoga_spandakarika",
+      "input_dir": "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha/data/yaml/yoga_spandakarika",
+      "total_files": 52,
+      "changed_files": 0,
+      "changes_by_type": {},
+      "issues": {
+        "missing_translation": 0,
+        "empty_commentary": 0,
+        "missing_abhyasa": 0
+      },
+      "quality_score": 100
+    }
+  ],
+  "totals": {
+    "collections": 9,
+    "files": 652,
+    "changed_files": 68,
+    "missing_translation": 0,
+    "empty_commentary": 0,
+    "missing_abhyasa": 0
+  }
+}
