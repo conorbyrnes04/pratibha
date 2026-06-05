@@ -5,10 +5,11 @@ import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { getVerse, getVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
-import { firstSentence, stripMarkdown } from "@/lib/textPreview";
+import { stripMarkdown } from "@/lib/textPreview";
 import { displayCollectionName } from "@/lib/collectionLabels";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import { LayerBlock } from "@/components/LayerBlock";
+import { JournalPanel } from "@/components/JournalPanel";
+import { getVerseLayers, layerText, maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
 
 function practiceFallback(item: VerseItem): string {
   if ((item.themes || []).includes("witness")) {
@@ -54,8 +55,19 @@ export default function VerseDetailPage() {
   const [item, setItem] = useState<VerseItem | null>(null);
   const [allItems, setAllItems] = useState<VerseItem[]>([]);
   const [learningMode, setLearningMode] = useState(true);
+  const [showOriginal, setShowOriginal] = useState(true);
+  const [compact, setCompact] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [backHref, setBackHref] = useState<string | null>(null);
   const id = decodeURIComponent(params.id || "");
+
+  // If we arrived from a guided path (/read/<id>?back=/learn?...), offer a link
+  // straight back to that exact step. Only honor internal paths.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const b = new URLSearchParams(window.location.search).get("back");
+    setBackHref(b && b.startsWith("/") ? b : null);
+  }, []);
 
   useEffect(() => {
     getVerse(id)
@@ -63,7 +75,7 @@ export default function VerseDetailPage() {
       .finally(() => setLoading(false));
   }, [id]);
   useEffect(() => {
-    getVerses().then(setAllItems).catch(() => setAllItems([]));
+    getVerses("strong_draft").then(setAllItems).catch(() => setAllItems([]));
   }, []);
 
   const related = useMemo(() => {
@@ -71,6 +83,7 @@ export default function VerseDetailPage() {
     const mineThemes = new Set(item.themes || []);
     const out = allItems.filter((v) => {
       if (v._id === item._id) return false;
+      if (v.editorial_maturity === "needs_rewrite" || v.editorial_maturity === "structural_draft") return false;
       const sameCollection = (v.collection || "") === (item.collection || "");
       const overlap = (v.themes || []).some((t) => mineThemes.has(t));
       return sameCollection || overlap;
@@ -84,64 +97,86 @@ export default function VerseDetailPage() {
   }, [allItems, item]);
 
   if (loading) {
-    return <main className="mx-auto max-w-4xl px-4 py-8 soft">Loading passage...</main>;
+    return <main className="page-shell soft">Opening the manuscript...</main>;
   }
   if (!item) {
-    return <main className="mx-auto max-w-4xl px-4 py-8 soft">Passage not found.</main>;
+    return <main className="page-shell soft">Passage not found.</main>;
   }
 
-  const prompt = encodeURIComponent(
-    `Guide me through this passage from ${displayCollectionName(item.collection)} (${item.sutra_id || item._id}). First explain simply, then key themes, then one practice for today.`,
-  );
-  const norm = (s: string) => s.replace(/\s+/g, " ").trim().toLowerCase();
-  const hasDistinctCommentary =
-    Boolean(item.commentary?.trim()) &&
-    norm(item.commentary || "") !== norm(item.translation || "");
+  const layers = getVerseLayers(item);
+  const visibleLayers = layers.filter((layer) => showOriginal || (layer.kind !== "original" && layer.kind !== "iast"));
+  const translation = layerText(item, "translation");
+  const commentary = layerText(item, "commentary");
   const used = new Set<string>();
   const coreIdea =
     pickDistinct(
       [
         ...sentenceCandidates(item.thesis),
-        ...sentenceCandidates(item.translation),
-        ...sentenceCandidates(item.commentary),
+        ...sentenceCandidates(translation),
+        ...sentenceCandidates(commentary),
         ...sentenceCandidates(item.source_excerpt),
       ],
       used,
-    ) || firstSentence(item.translation || item.commentary || item.source_excerpt || "");
+    ) || passagePreview(item);
   const plain =
     pickDistinct(
       [
         ...sentenceCandidates(item.source_excerpt),
-        ...sentenceCandidates(item.commentary),
-        ...sentenceCandidates(item.translation),
+        ...sentenceCandidates(commentary),
+        ...sentenceCandidates(translation),
         ...sentenceCandidates(item.thesis),
       ],
       used,
     ) || "This passage asks for slower reading so the practical move is clear.";
-  const practice = stripMarkdown((item.practice || item.abhyasa || "").trim() || practiceFallback(item));
+  const practice = practiceText(item) || practiceFallback(item);
   const reflection = reflectionPrompt(item);
 
   const nextStep = related[0] || null;
 
   return (
-    <main className="mx-auto max-w-6xl px-4 py-8">
-      <Link href="/read" className="soft text-sm hover:text-amber-100">
-        ← Back to library
-      </Link>
-      <h1 className="mt-3 text-3xl text-amber-200">{item.title || item.sutra_id || item._id}</h1>
-      <p className="soft mt-2">
-        {displayCollectionName(item.collection)} {item.section ? `• ${item.section}` : ""}
-      </p>
-      <label className="mt-4 block text-sm soft">
-        <input type="checkbox" className="mr-2" checked={learningMode} onChange={(e) => setLearningMode(e.target.checked)} />
-        Learning mode
-      </label>
+    <main className="page-shell">
+      {backHref ? (
+        <div className="flex flex-wrap items-center gap-4">
+          <Link href={backHref} className="font-sans text-sm text-amber-200 hover:text-amber-100">
+            ← Back to path
+          </Link>
+          <Link href="/read" className="soft font-sans text-sm hover:text-amber-100">
+            Back to library
+          </Link>
+        </div>
+      ) : (
+        <Link href="/read" className="soft font-sans text-sm hover:text-amber-100">
+          ← Back to library
+        </Link>
+      )}
+      <section className="mt-4 grid gap-6 lg:grid-cols-[1fr_15rem] lg:items-end">
+        <div>
+          <p className="eyebrow">{displayCollectionName(item.collection) || "Pratibha"} {item.section ? ` / ${item.section}` : ""}</p>
+          <h1 className="mt-3 max-w-4xl text-5xl font-semibold leading-[0.92] tracking-[-0.04em] text-stone-100 sm:text-6xl">
+            {item.title || item.sutra_id || item._id}
+          </h1>
+        </div>
+        <div className="citation-card grid gap-2 p-3 font-sans text-sm text-stone-300">
+          <label className="flex items-center gap-3">
+            <input type="checkbox" className="accent-amber-300" checked={learningMode} onChange={(e) => setLearningMode(e.target.checked)} />
+            Learning guide
+          </label>
+          <label className="flex items-center gap-3">
+            <input type="checkbox" className="accent-amber-300" checked={showOriginal} onChange={(e) => setShowOriginal(e.target.checked)} />
+            Original language
+          </label>
+          <label className="flex items-center gap-3">
+            <input type="checkbox" className="accent-amber-300" checked={compact} onChange={(e) => setCompact(e.target.checked)} />
+            Compact commentary
+          </label>
+        </div>
+      </section>
 
       <div className="mt-6 grid gap-5 lg:grid-cols-[2fr_1fr]">
         <section>
           {learningMode ? (
-            <section className="card mb-4 p-5">
-              <h2 className="text-sm uppercase tracking-wider text-amber-100/90">Learning guide</h2>
+            <section className="practice-card mb-4 p-5">
+              <h2 className="layer-heading">Learning guide</h2>
               <div className="mt-3 space-y-3 text-sm">
                 <p><span className="text-amber-100">Core idea:</span> {coreIdea}</p>
                 <p><span className="text-amber-100">Why it matters:</span> {plain}</p>
@@ -151,53 +186,9 @@ export default function VerseDetailPage() {
             </section>
           ) : null}
 
-          {item.sanskrit ? (
-            <section className="card mt-6 p-5">
-              <h2 className="text-sm uppercase tracking-wider text-amber-100/90">Devanagari</h2>
-              <p className="mt-3 whitespace-pre-wrap text-2xl leading-relaxed">{item.sanskrit}</p>
-            </section>
-          ) : null}
-
-          {item.transliteration ? (
-            <section className="card mt-4 p-5">
-              <h2 className="text-sm uppercase tracking-wider text-amber-100/90">IAST</h2>
-              <p className="mt-3 whitespace-pre-wrap italic leading-relaxed">{item.transliteration}</p>
-            </section>
-          ) : null}
-
-          {item.translation ? (
-            <section className="card mt-6 p-5">
-              <h2 className="text-sm uppercase tracking-wider text-amber-100/90">Root text</h2>
-              <div className="chat-markdown mt-3 leading-relaxed">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.translation}</ReactMarkdown>
-              </div>
-            </section>
-          ) : null}
-
-          {hasDistinctCommentary ? (
-            <section className="card mt-4 p-5">
-              <h2 className="text-sm uppercase tracking-wider text-amber-100/90">Commentary</h2>
-              <div className="chat-markdown mt-3 leading-relaxed">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.commentary}</ReactMarkdown>
-              </div>
-            </section>
-          ) : null}
-
-          {item.appendixes && item.appendixes.length > 0 ? (
-            <section className="card mt-4 p-5">
-              <h2 className="text-sm uppercase tracking-wider text-amber-100/90">Appendix commentaries</h2>
-              <div className="mt-3 space-y-4">
-                {item.appendixes.map((a, idx) => (
-                  <article key={`${a.commentator || "appendix"}-${idx}`} className="rounded-md border border-white/10 p-3">
-                    <h3 className="text-amber-100">{a.commentator || "Commentary"}</h3>
-                    <div className="chat-markdown soft mt-2 text-sm">
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{a.text || ""}</ReactMarkdown>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </section>
-          ) : null}
+          {visibleLayers.map((layer, idx) => (
+            <LayerBlock key={`${layer.kind}-${layer.label}-${idx}`} layer={layer} compact={compact && layer.kind === "commentary"} />
+          ))}
 
           {item.themes && item.themes.length > 0 ? (
             <section className="mt-4 flex flex-wrap gap-2">
@@ -214,41 +205,48 @@ export default function VerseDetailPage() {
           ) : null}
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link href={`/chat?q=${prompt}`} className="rounded-lg bg-amber-300 px-4 py-2 font-semibold text-slate-900">
+            <Link href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain`} className="btn-primary px-5 py-2.5">
               Guided Study
             </Link>
-            <Link href="/random" className="rounded-lg border border-amber-200/30 px-4 py-2 text-amber-100">
+            <Link href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=practice`} className="btn-secondary px-5 py-2.5">
+              Practice chat
+            </Link>
+            <Link href="/random" className="btn-secondary px-5 py-2.5">
               Explore another random passage
             </Link>
           </div>
         </section>
 
         <aside className="card h-fit p-4">
-          <h2 className="text-lg text-amber-100">Related ideas</h2>
+          <h2 className="text-2xl text-amber-100">Related ideas</h2>
           <p className="soft mt-1 text-sm">Follow concept links across texts.</p>
+          <p className="mt-3 rounded-full border border-amber-200/20 px-3 py-1 font-sans text-xs text-amber-100">
+            {maturityLabel(item.editorial_maturity)}
+          </p>
           <div className="mt-3 space-y-3">
             {related.length === 0 ? (
               <p className="soft text-sm">No related passages yet.</p>
             ) : (
               related.map((r) => (
-                <Link key={r._id} href={`/read/${encodeURIComponent(r._id)}`} className="block rounded-md border border-white/10 p-3 hover:border-amber-300/30">
+                <Link key={r._id} href={`/read/${encodeURIComponent(r._id)}`} className="citation-card block p-3 hover:border-amber-300/30">
                   <p className="text-sm text-amber-100">{r.title || r.sutra_id || r._id}</p>
                   <p className="soft mt-1 text-xs">
                     {displayCollectionName(r.collection)} {r.section ? `• ${r.section}` : ""}
                   </p>
-                  <p className="soft mt-1 line-clamp-2 text-xs">{stripMarkdown(r.translation || r.commentary || "")}</p>
+                  <p className="soft mt-1 line-clamp-2 text-xs">{passagePreview(r)}</p>
                 </Link>
               ))
             )}
           </div>
           {nextStep ? (
-            <div className="mt-4 rounded-md border border-amber-200/30 bg-amber-200/5 p-3">
-              <p className="text-xs uppercase tracking-wide text-amber-100">Next natural step</p>
+            <div className="practice-card mt-4 p-3">
+              <p className="layer-heading">Next natural step</p>
               <Link href={`/read/${encodeURIComponent(nextStep._id)}`} className="mt-1 block text-sm text-amber-100 hover:underline">
                 {nextStep.title || nextStep.sutra_id || nextStep._id}
               </Link>
             </div>
           ) : null}
+          <JournalPanel passage={item} />
         </aside>
       </div>
     </main>
