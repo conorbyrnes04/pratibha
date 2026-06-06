@@ -47,15 +47,18 @@ pratibha_layers:
     record is not given by the historian Ssŭ-ma Ch'ien, and he may well have been no more than an allegorical personage created
     by Chuang Tzŭ for purposes of illustration. It was however thought necessary under the Han dynasty to supply his "Works";
     and the treatise thus provided still passes under his name, though generally regarded as a forgery. See pp. 4, 5.
+  layer_provenance: normalized from Giles (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Chapter 32 (Lieh Tzŭ.) in Giles''s 1889 rendering. Pratibha treats the chapter as a philosophical movement: read
     the anchor appendix for the full Victorian translation, then the Pratibha translation for a modern, source-honest excerpt.
     Full chapter text remains in the public-domain appendix for philological comparison; the display layers do not reproduce
     Giles wholesale.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
+  layer_provenance: template-assembled
 - kind: appendix
   label: Public-domain anchor (Giles 1889)
   body: When Lieh Tzŭ Lieh Yü K'ou, a name well known in connection with Tao. But it is extremely doubtful if such a man ever

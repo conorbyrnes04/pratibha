@@ -30,16 +30,19 @@ pratibha_layers:
 - kind: translation
   label: Pratibha Translation
   body: In change is rest.
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
     a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
     quiet. Anchor: George T.W. Patrick (1889), fragment 83 (Bywater Greek). Corpus index HFR_P083 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing, limit, exchange). Sit
     with that pattern for two minutes.
+  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:

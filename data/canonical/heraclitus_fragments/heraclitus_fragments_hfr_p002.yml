@@ -35,6 +35,7 @@ pratibha_layers:
 - kind: translation
   label: Pratibha Translation
   body: It is wise for those who hear, not me, but the the Logos, to confess that all things are one.
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Heraclitus insists that wisdom is auditory before it is argumentative: the Logos is already at work in how things
@@ -43,10 +44,12 @@ pratibha_layers:
     intelligible order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics —
     yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment
     2 (Bywater Greek). Corpus index HFR_P002 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
     rests on. Can you hear the claim, not only think it?
+  layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
@@ -54,6 +57,7 @@ pratibha_layers:
     definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
       all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
       we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+  layer_provenance: template-assembled
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
   body: It is wise for those who hear, not me, but the universal Reason, to confess that all things are one.

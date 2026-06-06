@@ -37,6 +37,7 @@ pratibha_layers:
 - kind: translation
   label: Pratibha Translation
   body: ;Where the land is dry, the soul is wisest and best.}”
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
@@ -45,16 +46,19 @@ pratibha_layers:
     are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it.
     Anchor: George T.W. Patrick (1889), fragment 38 (Bywater Greek). Corpus index HFR_P038 follows the Diels–Kranz-style numbering
     used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
     arises — that resistance is part of the teaching.
+  layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: psychē (ψυχή)
     definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
       ethics into cosmology: how you live is how you align (or fail) with measure.'
+  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:

@@ -45,6 +45,7 @@ pratibha_layers:
   body: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things are converted
     into this. And it was for this Logos that Heraclitus thus said that if all existing things should become smoke, perception
     would be by the nostrils. XXX VIII.—Souls smell in Hades.®
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Heraclitus insists that wisdom is auditory before it is argumentative: the Logos is already at work in how things
@@ -55,10 +56,12 @@ pratibha_layers:
     intelligible order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics —
     yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment
     37 (Bywater Greek). Corpus index HFR_P037 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
     rests on. Can you hear the claim, not only think it?
+  layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
@@ -69,6 +72,7 @@ pratibha_layers:
   - term: psychē (ψυχή)
     definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
       ethics into cosmology: how you live is how you align (or fail) with measure.'
+  layer_provenance: template-assembled
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
   body: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things are converted

@@ -32,22 +32,26 @@ pratibha_layers:
 - kind: translation
   label: Pratibha Translation
   body: The hidden harmony is better than the visible, 2248
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
     generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
     Anchor: George T.W. Patrick (1889), fragment 47 (Bywater Greek). Corpus index HFR_P047 follows the Diels–Kranz-style numbering
     used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the function?
     Write both pulls without trying to remove either.'
+  layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: harmoniē (ἁρμονίη)
     definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
       difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:

@@ -52,15 +52,18 @@ pratibha_layers:
   body: Those who exercise their faculties in mere worldly studies, hoping thereby to revert to their original condition;
     and those who sink their aspirations in mundane thoughts, hoping thereby to reach enlightenment;—these are the dullards
     of the earth.
+  layer_provenance: normalized from Giles (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Chapter 16 (Exercise of Faculties.) in Giles''s 1889 rendering. Pratibha treats the chapter as a philosophical movement:
     read the anchor appendix for the full Victorian translation, then the Pratibha translation for a modern, source-honest
     excerpt. Full chapter text remains in the public-domain appendix for philological comparison; the display layers do not
     reproduce Giles wholesale.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
+  layer_provenance: template-assembled
 - kind: appendix
   label: Public-domain anchor (Giles 1889)
   body: Those who exercise their faculties in mere worldly studies, hoping thereby to revert to their original condition;

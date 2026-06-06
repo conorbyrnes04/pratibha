@@ -39,6 +39,7 @@ pratibha_layers:
   label: Pratibha Translation
   body: text:—For it seems that by the ancients the bow and life were synonymously called βιός. So Heraclitus, the obscure,
     said, ‘* The name of the bow is life, but its work is death.”’ Etym. magn. under word βιός. LX VII.—
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
@@ -47,10 +48,12 @@ pratibha_layers:
     Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion. Anchor:
     George T.W. Patrick (1889), fragment 66 (Bywater Greek). Corpus index HFR_P066 follows the Diels–Kranz-style numbering
     used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the function?
     Write both pulls without trying to remove either.'
+  layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
@@ -61,6 +64,7 @@ pratibha_layers:
   - term: harmoniē (ἁρμονίη)
     definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
       difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:

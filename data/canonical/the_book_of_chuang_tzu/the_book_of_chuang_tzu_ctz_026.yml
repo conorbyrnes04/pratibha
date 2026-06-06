@@ -40,15 +40,18 @@ pratibha_layers:
   label: Pratibha Translation
   body: Contingencies are uncertain. Hence the decapitation of Lung Fêng, the disembowelment of Pi Kan, the enthusiasm of
     Chi Tzŭ, the death of Wu Lai, the flights of Chieh and Chou.
+  layer_provenance: normalized from Giles (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Chapter 26 (Contingencies.) in Giles''s 1889 rendering. Pratibha treats the chapter as a philosophical movement:
     read the anchor appendix for the full Victorian translation, then the Pratibha translation for a modern, source-honest
     excerpt. Full chapter text remains in the public-domain appendix for philological comparison; the display layers do not
     reproduce Giles wholesale.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
+  layer_provenance: template-assembled
 - kind: appendix
   label: Public-domain anchor (Giles 1889)
   body: Contingencies are uncertain. Hence the decapitation of Lung Fêng, the disembowelment of Pi Kan, the enthusiasm of

@@ -306,7 +306,9 @@ def build_pratibha_layers(
     key_terms: list[dict[str, str]] | None = None,
     resonances: list[dict[str, str]] | None = None,
     appendixes: list[dict[str, str]] | None = None,
+    layer_provenance: dict[str, str] | None = None,
 ) -> list[dict[str, Any]]:
+    prov = layer_provenance or {}
     layers: list[dict[str, Any]] = []
     for kind, label, body in [
         ("original", "Original", sanskrit),
@@ -339,11 +341,20 @@ def build_pratibha_layers(
             ):
                 continue
         if clean:
-            layers.append({"kind": kind, "label": label, "body": clean})
+            layer: dict[str, Any] = {"kind": kind, "label": label, "body": clean}
+            if prov.get(kind):
+                layer["layer_provenance"] = prov[kind]
+            layers.append(layer)
     if key_terms:
-        layers.append({"kind": "key_terms", "label": "Key Terms", "items": key_terms})
+        kt_layer: dict[str, Any] = {"kind": "key_terms", "label": "Key Terms", "items": key_terms}
+        if prov.get("key_terms"):
+            kt_layer["layer_provenance"] = prov["key_terms"]
+        layers.append(kt_layer)
     if resonances:
-        layers.append({"kind": "resonances", "label": "Cross-Tradition Resonances", "items": resonances})
+        res_layer: dict[str, Any] = {"kind": "resonances", "label": "Cross-Tradition Resonances", "items": resonances}
+        if prov.get("resonances"):
+            res_layer["layer_provenance"] = prov["resonances"]
+        layers.append(res_layer)
     for idx, appendix in enumerate(appendixes or []):
         body = txt(appendix.get("text"))
         if body:
@@ -484,6 +495,7 @@ def normalize_root_unit(y: dict[str, Any], path: Path) -> dict[str, Any]:
             key_terms=key_terms,
             resonances=resonances,
             appendixes=appendixes,
+            layer_provenance=y.get("layer_provenance") if isinstance(y.get("layer_provenance"), dict) else None,
         ),
         "appendixes": appendixes,
         "anchor_chapter": anchor_chapter,
@@ -558,6 +570,7 @@ def normalize_commentary_unit(y: dict[str, Any], path: Path) -> dict[str, Any]:
             key_terms=key_terms,
             resonances=resonances,
             appendixes=appendixes,
+            layer_provenance=y.get("layer_provenance") if isinstance(y.get("layer_provenance"), dict) else None,
         ),
         "appendixes": appendixes,
         "anchor_chapter": anchor_chapter,

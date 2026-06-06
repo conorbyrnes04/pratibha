@@ -48,15 +48,18 @@ pratibha_layers:
   body: '"In winter," said Wang Kuo, "he catches turtles on the river. In summer, he reposes in some mountain copse. If any
     passers-by ask of him, he tells them, "This is my home." Where I Chieh could not succeed, still less should I. I am not
     equal even to him.'
+  layer_provenance: normalized from Giles (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Chapter 25 (Tsê Yang.) in Giles''s 1889 rendering. Pratibha treats the chapter as a philosophical movement: read
     the anchor appendix for the full Victorian translation, then the Pratibha translation for a modern, source-honest excerpt.
     Full chapter text remains in the public-domain appendix for philological comparison; the display layers do not reproduce
     Giles wholesale.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
+  layer_provenance: template-assembled
 - kind: appendix
   label: Public-domain anchor (Giles 1889)
   body: When Tsê Yang visited the Ch'u State, I Chieh An official of Ch'u. spoke of him to the prince; but the latter refused

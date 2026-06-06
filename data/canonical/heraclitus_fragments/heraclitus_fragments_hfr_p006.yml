@@ -30,16 +30,19 @@ pratibha_layers:
 - kind: translation
   label: Pratibha Translation
   body: They understand neither how to hear nor how to speak.
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
     a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
     quiet. Anchor: George T.W. Patrick (1889), fragment 6 (Bywater Greek). Corpus index HFR_P006 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
     rests on. Can you hear the claim, not only think it?
+  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:

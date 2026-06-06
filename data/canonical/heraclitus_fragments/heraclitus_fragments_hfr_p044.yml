@@ -37,22 +37,26 @@ pratibha_layers:
   label: Pratibha Translation
   body: War is the father and king of all, and has produced some as gods and some as people, and has made some slaves and
     some free.
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
     generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
     Anchor: George T.W. Patrick (1889), fragment 44 (Bywater Greek). Corpus index HFR_P044 follows the Diels–Kranz-style numbering
     used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
     arises — that resistance is part of the teaching.
+  layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: harmoniē (ἁρμονίη)
     definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
       difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
   body: War is the father and king of all, and has produced some as gods and some as men, and has made some slaves and some

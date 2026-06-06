@@ -31,13 +31,17 @@ sys.path.insert(0, str(ROOT))
 from philological_lib import (  # noqa: E402
     CHAPTER_INTROS,
     HERACLITUS_RESONANCES,
+    PROVENANCE_GILES_NORMALIZED,
+    PROVENANCE_HAND_CONSTANT,
+    PROVENANCE_PATRICK_NORMALIZED,
+    PROVENANCE_TEMPLATE,
     chapter_commentary,
     clean_ocr,
     heraclitus_commentary,
     heraclitus_key_terms,
     heraclitus_practice,
-    modernize_giles_excerpt,
-    modernize_heraclitus,
+    normalize_giles_excerpt,
+    normalize_patrick_heraclitus,
     strip_commentary_layers,
     strip_giles_footnote_blocks,
     yaml_key_terms_to_layers,
@@ -78,6 +82,53 @@ def _save_yaml(path: Path, data: dict[str, Any]) -> None:
     )
 
 
+def _template_heraclitus_commentary(commentary: str) -> bool:
+    return "Anchor: George T.W. Patrick" in str(commentary or "")
+
+
+def is_human_revised_heraclitus(data: dict[str, Any]) -> bool:
+    """Unit has hand-authored layers beyond regex/template assembly."""
+    comm = str(data.get("commentary") or "")
+    if comm and not _template_heraclitus_commentary(comm):
+        return True
+    anchor = clean_ocr(str(data.get("anchor_translation") or data.get("translation") or ""))
+    pratibha = str(data.get("pratibha_translation") or data.get("translation") or "")
+    if anchor and pratibha and normalize_patrick_heraclitus(anchor) != clean_ocr(pratibha):
+        return True
+    return False
+
+
+def is_human_revised_chuang(data: dict[str, Any], md: dict[str, Any] | None) -> bool:
+    """Chapter enriched from zhuangzi_pratibha MD (hand-authored pilot units)."""
+    return bool(md)
+
+
+def _set_layer_provenance(data: dict[str, Any], mapping: dict[str, str]) -> None:
+    existing = dict(data.get("layer_provenance") or {})
+    existing.update(mapping)
+    data["layer_provenance"] = existing
+
+
+def _heraclitus_template_provenance(n: int) -> dict[str, str]:
+    out = {
+        "translation": PROVENANCE_PATRICK_NORMALIZED,
+        "commentary": PROVENANCE_TEMPLATE,
+        "key_terms": PROVENANCE_TEMPLATE,
+        "practice": PROVENANCE_TEMPLATE,
+    }
+    if n in HERACLITUS_RESONANCES:
+        out["resonances"] = PROVENANCE_HAND_CONSTANT
+    return out
+
+
+def _chuang_template_provenance() -> dict[str, str]:
+    return {
+        "translation": PROVENANCE_GILES_NORMALIZED,
+        "commentary": PROVENANCE_TEMPLATE,
+        "practice": PROVENANCE_TEMPLATE,
+    }
+
+
 def _frag_num(path: Path, data: dict[str, Any]) -> int:
     m = re.search(r"fragment_(\d+)", path.name)
     if m:
@@ -94,12 +145,21 @@ def _ch_num(path: Path, data: dict[str, Any]) -> int:
     return int(m.group(1)) if m else 0
 
 
-def enrich_heraclitus(path: Path, data: dict[str, Any], use_llm: bool) -> bool:
+def enrich_heraclitus(path: Path, data: dict[str, Any], use_llm: bool, relabel_only: bool = False) -> bool:
     anchor = clean_ocr(str(data.get("anchor_translation") or data.get("translation") or ""))
     if not anchor:
         return False
     n = _frag_num(path, data)
     changed = False
+    human = is_human_revised_heraclitus(data)
+
+    if relabel_only:
+        if human:
+            return False
+        _set_layer_provenance(data, _heraclitus_template_provenance(n))
+        if data.get("editorial_maturity") != "structural_draft":
+            data["editorial_maturity"] = "structural_draft"
+        return True
 
     data["anchor_translation"] = anchor
     data["source_reference"] = f"Patrick (1889), frag. {n}; corpus HFR_P{n:03d}"
@@ -108,7 +168,10 @@ def enrich_heraclitus(path: Path, data: dict[str, Any], use_llm: bool) -> bool:
     if use_llm:
         return False  # filled by async batch
 
-    pratibha = modernize_heraclitus(anchor)
+    if human:
+        return False
+
+    pratibha = normalize_patrick_heraclitus(anchor)
     if data.get("pratibha_translation") != pratibha:
         data["pratibha_translation"] = pratibha
         changed = True
@@ -143,7 +206,10 @@ def enrich_heraclitus(path: Path, data: dict[str, Any], use_llm: bool) -> bool:
             data["title"] = new_title
             changed = True
 
-    data["editorial_maturity"] = "strong_draft" if n in HERACLITUS_RESONANCES else "structural_draft"
+    _set_layer_provenance(data, _heraclitus_template_provenance(n))
+    if data.get("editorial_maturity") != "structural_draft":
+        data["editorial_maturity"] = "structural_draft"
+        changed = True
     return changed
 
 
@@ -177,15 +243,28 @@ def giles_chapter_excerpt(data: dict[str, Any]) -> str:
     return clean_ocr(full[:1000])
 
 
-def enrich_chuang_chapter(path: Path, data: dict[str, Any], md_by_chapter: dict[int, dict], use_llm: bool) -> bool:
+def enrich_chuang_chapter(
+    path: Path, data: dict[str, Any], md_by_chapter: dict[int, dict], use_llm: bool, relabel_only: bool = False
+) -> bool:
     if not path.name.startswith("ch_"):
         return False
-    changed = restructure_chuang_chapter(data)
     n = _ch_num(path, data)
+    md = md_by_chapter.get(n)
+    human = is_human_revised_chuang(data, md)
+
+    if relabel_only:
+        if human:
+            return False
+        _set_layer_provenance(data, _chuang_template_provenance())
+        if data.get("editorial_maturity") != "structural_draft":
+            data["editorial_maturity"] = "structural_draft"
+            return True
+        return bool(data.get("layer_provenance"))
+
+    changed = restructure_chuang_chapter(data)
     anchor = clean_ocr(str(data.get("anchor_translation") or data.get("translation") or ""))
     title = str(data.get("title") or f"Chapter {n}")
 
-    md = md_by_chapter.get(n)
     if md:
         if md.get("sanskrit") and data.get("sanskrit") != md["sanskrit"]:
             data["sanskrit"] = md["sanskrit"]
@@ -209,25 +288,35 @@ def enrich_chuang_chapter(path: Path, data: dict[str, Any], md_by_chapter: dict[
         data["anchor_translation"] = anchor[:2000]
         changed = True
 
-    pratibha = modernize_giles_excerpt(excerpt)
-    if md and md.get("pratibha_translation"):
-        pratibha = md["pratibha_translation"]
+    if human and md:
+        pratibha = md.get("pratibha_translation") or data.get("pratibha_translation")
+        if pratibha and (data.get("pratibha_translation") != pratibha or data.get("translation") != pratibha):
+            data["pratibha_translation"] = pratibha
+            data["translation"] = pratibha
+            changed = True
+        if md.get("commentary"):
+            comm = strip_commentary_layers(md["commentary"])
+            if data.get("commentary") != comm:
+                data["commentary"] = comm
+                changed = True
+        if md.get("abhyasa") and data.get("abhyasa") != md["abhyasa"]:
+            data["abhyasa"] = md["abhyasa"]
+            changed = True
+        data["source_reference"] = f"Giles (1889), chapter {n}; Project Gutenberg #59709"
+        return changed
+
+    pratibha = normalize_giles_excerpt(excerpt)
     if data.get("pratibha_translation") != pratibha or data.get("translation") != pratibha:
         data["pratibha_translation"] = pratibha
         data["translation"] = pratibha
         changed = True
 
     comm = chapter_commentary(n, title, excerpt)
-    if md and md.get("commentary"):
-        comm = strip_commentary_layers(md["commentary"])
     if data.get("commentary") != comm:
         data["commentary"] = comm
         changed = True
 
-    if md and md.get("abhyasa") and data.get("abhyasa") != md["abhyasa"]:
-        data["abhyasa"] = md["abhyasa"]
-        changed = True
-    elif not data.get("abhyasa"):
+    if not data.get("abhyasa"):
         data["abhyasa"] = (
             "Read the Pratibha excerpt, then open the Giles appendix and compare one sentence "
             "where the mythic names differ — note what philosophical work the naming does."
@@ -235,7 +324,10 @@ def enrich_chuang_chapter(path: Path, data: dict[str, Any], md_by_chapter: dict[
         changed = True
 
     data["source_reference"] = f"Giles (1889), chapter {n}; Project Gutenberg #59709"
-    data["editorial_maturity"] = "strong_draft" if md else "structural_draft"
+    _set_layer_provenance(data, _chuang_template_provenance())
+    if data.get("editorial_maturity") != "structural_draft":
+        data["editorial_maturity"] = "structural_draft"
+        changed = True
     return changed
 
 
@@ -341,6 +433,11 @@ def main() -> int:
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--canonicalize", action="store_true")
     ap.add_argument("--llm", action="store_true", help="Use LLM when API keys are configured")
+    ap.add_argument(
+        "--relabel-only",
+        action="store_true",
+        help="Set layer_provenance and structural_draft on template units only; do not rewrite content",
+    )
     ap.add_argument("--prefix", default="")
     args = ap.parse_args()
     if not args.all and not args.collection:
@@ -366,9 +463,9 @@ def main() -> int:
         for path in paths:
             data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
             if coll == "heraclitus_fragments":
-                ok = enrich_heraclitus(path, data, args.llm)
+                ok = enrich_heraclitus(path, data, args.llm, relabel_only=args.relabel_only)
             elif coll == "the_book_of_chuang_tzu":
-                ok = enrich_chuang_chapter(path, data, md_map, args.llm)
+                ok = enrich_chuang_chapter(path, data, md_map, args.llm, relabel_only=args.relabel_only)
             else:
                 ok = False
             if ok:

@@ -37,16 +37,19 @@ pratibha_layers:
   label: Pratibha Translation
   body: cerning the sun this cannot happen, since, being nourished in the same manner, as they say, it is plain that the sun
     is not only, as Heraclitus says, new every day, but it is continually new. Olympiodorus in Meteor. 1. 1. fol. 30 a.
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
     a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
     quiet. Anchor: George T.W. Patrick (1889), fragment 32 (Bywater Greek). Corpus index HFR_P032 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
     arises — that resistance is part of the teaching.
+  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:

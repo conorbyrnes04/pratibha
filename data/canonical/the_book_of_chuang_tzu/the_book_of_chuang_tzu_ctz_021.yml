@@ -38,15 +38,18 @@ pratibha_layers:
 - kind: translation
   label: Pratibha Translation
   body: He kept on praising Ch'i Kung, until at length Prince Wên said, "Is Ch'i Kung your tutor?"
+  layer_provenance: normalized from Giles (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Chapter 21 (T''ien Tzŭ Fang.) in Giles''s 1889 rendering. Pratibha treats the chapter as a philosophical movement:
     read the anchor appendix for the full Victorian translation, then the Pratibha translation for a modern, source-honest
     excerpt. Full chapter text remains in the public-domain appendix for philological comparison; the display layers do not
     reproduce Giles wholesale.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
+  layer_provenance: template-assembled
 - kind: appendix
   label: Public-domain anchor (Giles 1889)
   body: '[This chapter is supplementary to chapter vi.] T''ien Tzŭ Fang was in attendance upon Prince Wên of Wei. Whose tutor

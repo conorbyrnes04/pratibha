@@ -37,16 +37,19 @@ pratibha_layers:
   label: Pratibha Translation
   body: my man, that there is a good saying of Heraclitus, to the effect that the most beautiful of apes is ugly when compared
     with another kind, and the most beautiful of earthen pots is ugly when compared with maidenkind, as says Hippias the wise.
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all
     things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
     it. Anchor: George T.W. Patrick (1889), fragment 99 (Bywater Greek). Corpus index HFR_P099 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
     arises — that resistance is part of the teaching.
+  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:

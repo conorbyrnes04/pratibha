@@ -37,7 +37,7 @@ tags:
 - consciousness
 - heraclitus_fragments
 quality_score: 0
-editorial_maturity: strong_draft
+editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
 - kind: translation
@@ -47,6 +47,7 @@ pratibha_layers:
     people act as though they had never had any experience in regard to it when they attempt such words and works as I am
     now relating, describing each thing according to its nature and explaining how it is ordered. they do when awake as they
     are forgetful of what they do when asleep.
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Heraclitus insists that wisdom is auditory before it is argumentative: the Logos is already at work in how things
@@ -55,10 +56,12 @@ pratibha_layers:
     intelligible order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics —
     yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment
     1 (Bywater Greek). Corpus index HFR_P001 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
     rests on. Can you hear the claim, not only think it?
+  layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
@@ -66,6 +69,7 @@ pratibha_layers:
     definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
       all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
       we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -75,6 +79,7 @@ pratibha_layers:
   - citation: Plotinus, Enneads V.1.3
     resonance: Intellect and intelligible order are 'heard' before they are argued — contemplative attunement precedes proof.
     divergence: Plotinus ascends to a transcendent One; Heraclitus stays with the tension of becoming.
+  layer_provenance: hand-authored constant
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
   body: To this universal Reason which I unfold, although it always exists, men make themselves insensible, both before they

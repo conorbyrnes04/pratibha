@@ -5,6 +5,16 @@ from __future__ import annotations
 import re
 from typing import Any
 
+# Layer provenance labels (regex-normalized PD derivatives vs template assembly).
+PROVENANCE_PATRICK_NORMALIZED = (
+    "normalized from Patrick (1889), PD; regex word-modernization, not fresh translation"
+)
+PROVENANCE_GILES_NORMALIZED = (
+    "normalized from Giles (1889), PD; regex word-modernization, not fresh translation"
+)
+PROVENANCE_TEMPLATE = "template-assembled"
+PROVENANCE_HAND_CONSTANT = "hand-authored constant"
+
 # Famous fragments: pre-written cross-tradition resonances (passage-level specificity).
 HERACLITUS_RESONANCES: dict[int, list[dict[str, str]]] = {
     1: [
@@ -68,8 +78,11 @@ def clean_ocr(text: str) -> str:
     return text.strip()
 
 
-def modernize_heraclitus(anchor: str) -> str:
-    """Fresh English rendering faithful to Patrick/Bywater sense, not a copy."""
+def normalize_patrick_heraclitus(anchor: str) -> str:
+    """Lightly normalizes the public-domain Patrick (1889) translation — word modernization and OCR cleanup.
+
+    Derivative of PD source, not original translation.
+    """
     s = clean_ocr(anchor)
     s = re.sub(r"\buniversal Reason\b", "the Logos", s, flags=re.I)
     s = re.sub(r"\bthis Reason\b", "this Logos", s, flags=re.I)
@@ -81,7 +94,11 @@ def modernize_heraclitus(anchor: str) -> str:
     return s
 
 
-def modernize_giles_excerpt(anchor: str) -> str:
+def normalize_giles_excerpt(anchor: str) -> str:
+    """Lightly normalizes the public-domain Giles (1889) translation — word modernization and OCR cleanup.
+
+    Derivative of PD source, not original translation.
+    """
     s = clean_ocr(anchor)
     subs = [
         (r"\bLeviathan\b", "Kun"),

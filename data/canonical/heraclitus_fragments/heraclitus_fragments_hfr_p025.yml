@@ -48,6 +48,7 @@ pratibha_layers:
   body: change of bodies and the alternation of origin, the way up and down, according to Heraclitus. And again he says, ‘‘
     Living in their death and dying in their life (see frag. 67). Fire lives in the death of earth,”’ etc. M. Antoninus iv.
     46. Context, see frag. 5. XX VI.—
+  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
   body: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation. What looks like
@@ -56,16 +57,19 @@ pratibha_layers:
     Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion. Anchor:
     George T.W. Patrick (1889), fragment 25 (Bywater Greek). Corpus index HFR_P025 follows the Diels–Kranz-style numbering
     used in the Pratibha pilot batch.'
+  layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing, limit, exchange). Sit
     with that pattern for two minutes.
+  layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: pyr / cosmic fire
     definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation — exchange (πυρὸς τροπαὶ)
       governed by proportion. Fire names process, not a static element.
+  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:
