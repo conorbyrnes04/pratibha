@@ -68,8 +68,11 @@ docker-compose up -d
 # Install Python dependencies
 pip install -r requirements.txt
 
-# Start the FastAPI server
-source .env && uvicorn app.main:app --reload --port 8000
+# Start both API + web (recommended)
+./scripts/dev.sh
+
+# Or API only — reload watches app/ only (not data/ or web/)
+source .env && uvicorn app.main:app --reload --reload-dir app --host 127.0.0.1 --port 8000
 ```
 
 ### 4. Frontend Setup
@@ -106,12 +109,25 @@ pratibha/
 │   ├── epub_to_yaml.py    # EPUB text extraction
 │   └── text_to_yaml.py    # Plain text processing
 ├── data/
+│   ├── canonical/         # Canonical YAML units (see DATA.md)
 │   ├── raw_texts/         # Source texts (PDF, EPUB, TXT)
-│   └── yaml/              # Processed YAML files
-│       ├── siva_sutra/    # Shiva Sutra collection
-│       └── vijnana_bhairava_final/ # Vijñāna Bhairava yuktis
+│   └── yaml/              # Legacy / pipeline YAML files
 ├── db/init/               # Database initialization
 └── docker-compose.yml     # PostgreSQL + pgvector setup
+```
+
+## 📊 Canonical Corpus & Translation Quality
+
+The canonical corpus (`data/canonical/`, ~887 units) is **not** uniformly human-translated. See [DATA.md](DATA.md) for the full breakdown.
+
+- **`editorial_maturity`** marks where each unit stands: `publishable` (human-revised, ~19 units), `strong_draft` (default for most collections), or `structural_draft` (PD-normalized or template-assembled scaffolding, ~145 units).
+- **Translation layers** in `pratibha_layers` may be original Pratibha renderings, PD-normalized derivatives (regex word-modernization of Patrick 1889, Giles 1889, etc.), or absent entirely on legacy units.
+- **Commentary, key terms, resonances, and practice** layers are similarly mixed: some are hand-authored to house standards; Heraclitus and Zhuangzi pilot batches use template-assembled drafts flagged `structural_draft`.
+- Do **not** treat every `translation` layer as a finished, publishable Pratibha translation. Check `editorial_maturity` and `layer_provenance` before citing or shipping content.
+
+```bash
+# Validate corpus structure and provenance honesty
+python scripts/validate_canonical.py
 ```
 
 ## 🔧 Core Features
@@ -250,10 +266,13 @@ PG_PORT=5432
 
 ### Development
 ```bash
-# Backend
-source .env && uvicorn app.main:app --reload --port 8000
+# Both servers (stable reload scope)
+./scripts/dev.sh
 
-# Frontend
+# API only (reload watches app/ — avoids reload storms from data/ or node_modules/)
+source .env && uvicorn app.main:app --reload --reload-dir app --host 127.0.0.1 --port 8000
+
+# Web only
 cd web && npm run dev
 ```
 
