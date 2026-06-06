@@ -60,6 +60,30 @@ def _first_sentence(s: str) -> str:
     return parts[0].strip() if parts else t
 
 
+def _translation_layer(y: dict[str, Any]) -> dict[str, Any] | None:
+    layers = y.get("pratibha_layers")
+    if not isinstance(layers, list):
+        return None
+    for layer in layers:
+        if isinstance(layer, dict) and str(layer.get("kind") or "").strip() == "translation":
+            return layer
+    return None
+
+
+def _layer_provenance(layer: dict[str, Any]) -> str:
+    for key in ("layer_provenance", "provenance", "method"):
+        val = layer.get(key)
+        if val is not None and str(val).strip():
+            return str(val).strip()
+    return ""
+
+
+_AUTOMATED_PROVENANCE = re.compile(
+    r"normalized|regex|template[- ]assembled|word-modernization|not fresh translation",
+    re.I,
+)
+
+
 def validate_one(path: Path, y: dict[str, Any]) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warns: list[str] = []
@@ -128,6 +152,17 @@ def validate_one(path: Path, y: dict[str, Any]) -> tuple[list[str], list[str]]:
         overlap = _token_overlap(title, first)
         if overlap >= 0.85:
             warns.append("possible title/body bleed: first body sentence near-duplicates title")
+
+    trans_layer = _translation_layer(y)
+    if trans_layer is not None:
+        prov = _layer_provenance(trans_layer)
+        if not prov:
+            warns.append("translation layer missing provenance/method (layer_provenance, provenance, or method)")
+        elif maturity == "publishable" and _AUTOMATED_PROVENANCE.search(prov):
+            errors.append(
+                "publishable unit has automated translation provenance "
+                "(normalized/regex/template); upgrade translation or lower editorial_maturity"
+            )
 
     return errors, warns
 
