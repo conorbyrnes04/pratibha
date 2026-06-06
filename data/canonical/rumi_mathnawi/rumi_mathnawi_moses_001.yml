@@ -27,7 +27,7 @@ tags:
 - rumi_mathnawi
 - moses_shepherd
 quality_score: 0
-editorial_maturity: strong_draft
+editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
@@ -62,6 +62,7 @@ pratibha_layers:
     Duwwum (Book Two), sections 35–36; public domain (13th century)'
 - kind: translation
   label: Pratibha Translation
+  layer_provenance: "AI-generated translation from classical Persian (Ganjoor, PD source); UNVERIFIED — no Persian reader reviewed; DO NOT ingest to RAG pending review"
   body: "Moses saw a shepherd on the road,\n\
     who was saying: O God, O You who choose —\n\
     where are You, that I may become Your servant?\n\

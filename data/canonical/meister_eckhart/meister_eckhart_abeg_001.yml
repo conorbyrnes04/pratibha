@@ -95,7 +95,7 @@ tags:
   - meister_eckhart
   - abgeschiedenheit
 quality_score: 0
-editorial_maturity: strong_draft
+editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
   - kind: original
@@ -124,6 +124,7 @@ pratibha_layers:
       abegescheidenen herzen.
   - kind: translation
     label: Pratibhā Translation
+    layer_provenance: "AI-generated translation from Middle High German (Pfeiffer 1857, PD source); UNVERIFIED — no German reader reviewed"
     body: >
       I have read much of Scripture, both from pagan masters and from prophets,
       and from the Old Law and from the New, and have sought with earnestness

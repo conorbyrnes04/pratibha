@@ -88,7 +88,7 @@ tags:
   - meister_eckhart
   - armut
 quality_score: 0
-editorial_maturity: strong_draft
+editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
   - kind: original
@@ -108,6 +108,7 @@ pratibha_layers:
       sie niht.
   - kind: translation
     label: Pratibhā Translation
+    layer_provenance: "AI-generated translation from Middle High German (Pfeiffer 1857, PD source); UNVERIFIED — no German reader reviewed"
     body: >
       "Blessed are the poor in spirit," etc. We ought to be eternally as poor
       as we were when we eternally were not. In our being we remain enduringly

@@ -37,7 +37,7 @@ tags:
 - rumi_mathnawi
 - ney
 quality_score: 0
-editorial_maturity: strong_draft
+editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
@@ -59,6 +59,7 @@ pratibha_layers:
     \ والسّلام"
 - kind: translation
   label: Pratibha Translation
+  layer_provenance: "AI-generated translation from classical Persian (Ganjoor, PD source); UNVERIFIED — no Persian reader reviewed; DO NOT ingest to RAG pending review"
   body: "Listen to this reed, how it is making complaint —\nfrom separations it is\
     \ telling a tale.\n\n\"Since they cut me from the reed-bed,\nin my cry man and\
     \ woman have wailed.\n\nI want a breast torn open, shred by shred, from being\
