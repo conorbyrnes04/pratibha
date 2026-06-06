@@ -9,14 +9,8 @@ title: 'Pearl #29'
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
-- knowledge
-- passing
-- away
-- god
 - attention
-- clarity
-- content
-- emphasis
+- knowledge
 source_excerpt: Passing away implies the prior existence of the thing that passes away. If you know yourself without existing
   and passing away, then you know God, and if not, then not. By making the knowledge of God dependent on the passing away
   of your existence and the passing away of that passing away, there is an affirmation of something other than God.
@@ -30,18 +24,28 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - attention
-- away
-- clarity
 - commentary_text
-- content
-- emphasis
-- god
 - know_yourself_ibn_arabi_balyani
 - knowledge
-- passing
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: Passing away implies the prior existence of the thing that passes away. If you know yourself without existing and
+    passing away, then you know God, and if not, then not. By making the knowledge of God dependent on the passing away of
+    your existence and the passing away of that passing away, there is an affirmation of something other than God.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P029
+  source_reference: ''

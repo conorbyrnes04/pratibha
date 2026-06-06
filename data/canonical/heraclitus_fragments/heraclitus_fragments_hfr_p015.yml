@@ -4,46 +4,59 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p015
-unit_label: What eyes witness,
-title: What eyes witness,
+unit_label: The eyes are more exact witnesses than the ears.* thousand years, because of the God.
+title: The eyes are more exact witnesses than the ears.* thousand years, because of the God.
 unit_type: teaching_passage
-thesis: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding ripen
-  through experience.'
-themes:
-- silence
-- direct
-- fragment
-- argument
-- contemplation
-- experience
-- eyes
-- hold
-source_excerpt: 'What eyes witness,
-
-  ears believe on hearsay.'
-translation_literal: 'What eyes witness,
-
-  ears believe on hearsay.'
-commentary: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding
-  ripen through experience.'
+thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+themes: []
+source_excerpt: The eyes are more exact witnesses than the ears.* thousand years, because of the God. And Pindar saysthat
+  Cadmus heard from the God a kind of music neither pleasant nor soft nor melodious. For great holiness permits not the allurements
+  of pleasures. See also pseudo-Heraclitus, Epist. viii. ¥ XIII.—
+translation_literal: The eyes are more exact witnesses than the ears.* thousand years, because of the God. And Pindar saysthat
+  Cadmus heard from the God a kind of music neither pleasant nor soft nor melodious. For great holiness permits not the allurements
+  of pleasures. See also pseudo-Heraclitus, Epist. viii. ¥ XIII.—
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
+  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
+  falls quiet. Anchor: George T.W. Patrick (1889), fragment 15 (Bywater Greek). Corpus index HFR_P015 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
+  rests on. Can you hear the claim, not only think it?
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- argument
 - commentary_text
-- contemplation
-- direct
-- experience
-- eyes
-- fragment
 - heraclitus_fragments
-- hold
-- silence
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: The eyes are more exact witnesses than the ears.* thousand years, because of the God. And Pindar saysthat Cadmus heard
+    from the God a kind of music neither pleasant nor soft nor melodious. For great holiness permits not the allurements of
+    pleasures. See also pseudo-Heraclitus, Epist. viii. ¥ XIII.—
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
+    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
+    quiet. Anchor: George T.W. Patrick (1889), fragment 15 (Bywater Greek). Corpus index HFR_P015 follows the Diels–Kranz-style
+    numbering used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
+    rests on. Can you hear the claim, not only think it?
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: Logos (λόγος)
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P015
+  source_reference: Patrick (1889), frag. 15; corpus HFR_P015

@@ -31,28 +31,56 @@ insight: Integration, not exclusion, is the teaching climax of this triad.
 practice: Pair your meditation with one concrete ethical action immediately after.
 upaya: ''
 themes:
+- action
+- death
 - mantra
 - meditation
-- both
-- climax
-- exclusion
-- integration
-- teaching
-- together
 tags:
-- both
-- climax
-- exclusion
-- integration
+- action
+- death
 - isavasya_upanishad
 - mantra
 - meditation
 - root_text
-- teaching
-- together
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'विद्यां चाविद्यां च यस्तद्वेदोभयं सह ।
+
+    अविद्यया मृत्युं तीर्त्वा विद्ययामृतमश्नुते ॥ ११ ॥'
+- kind: iast
+  label: IAST
+  body: 'vidyam cavidyam ca yas tad vedobhayam saha |
+
+    avidyaya mrtyum tirtva vidyayamrtam asnute || 11 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: Knowing both together, one crosses death through avidya and attains immortality through vidya.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Integration, not exclusion, is the teaching climax of this triad.
+
+
+    Key Terms:
+
+
+    **ubhayam saha** - both together.
+
+
+    Cross-Tradition Resonances:
+
+
+    Karma-jnana synthesis debates.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Pair your meditation with one concrete ethical action immediately after.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_017
+  source_reference: ''

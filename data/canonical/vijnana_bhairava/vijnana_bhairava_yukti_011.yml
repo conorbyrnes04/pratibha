@@ -24,29 +24,36 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes:
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- itself
+themes: []
 tags:
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- itself
-- pause
-- read
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #11
+
+    [If the yogī] closes the doors [of the senses] with the ‘weapon’ by which
+
+    perception is blocked with the hands, [and] pierces the eyebrow-center, he will
+
+    [eventually] perceive the Bindu. When it dissolves, [one will experience the
+
+    state of] Supreme Stasis in one’s Center. || 36'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_011
+  source_reference: ''

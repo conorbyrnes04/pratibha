@@ -31,8 +31,32 @@ tags:
 - root_text
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: ज्ञानं जाग्रत्
+- kind: iast
+  label: IAST
+  body: jñānaṁ jāgrat
+- kind: translation
+  label: Pratibha Translation
+  body: Knowledge belongs to the waking state.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Ordinary knowing arises with orientation toward objects. In waking, consciousness extends outward, names, categorizes,
+    and stabilizes appearances. This is the domain of functional knowledge.
+
+
+    The sūtra quietly limits its scope. What is most intimate is not grasped here.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.8
+  source_reference: ''

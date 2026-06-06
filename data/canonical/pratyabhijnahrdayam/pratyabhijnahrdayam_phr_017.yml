@@ -42,8 +42,8 @@ themes:
 - heart
 - recognition
 - self
-- stillness
 - madhya
+- vikasa
 tags:
 - awareness
 - breath
@@ -54,10 +54,51 @@ tags:
 - recognition
 - root_text
 - self
-- stillness
+- vikasa
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: मध्यविकासाच्चिदानन्दलाभः
+- kind: iast
+  label: IAST
+  body: madhya-vikāsāt cit-ānanda-lābhaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Through the unfoldment of the middle, there is acquisition of the Bliss of Consciousness.
+- kind: commentary
+  label: Pratibha Commentary
+  body: '*Madhya* — the middle — is one of the most generative terms in the entire Kashmir Śaiva tradition. It refers simultaneously
+    to: the middle breath (the *madhyamā prāṇa*, the subtle energy between exhalation and inhalation); the central channel
+    (*suṣumnā*); the middle between two thoughts; the *vimarśa* (self-recognition) at the heart of every moment of awareness.
+    *Vikāsa* — unfoldment, blossoming — is its own image: not forced opening but the natural expansion of what was already
+    there. The acquisition of *cidānanda* (Sūtra 16) occurs through this unfoldment, which Sūtra 18 will elaborate with specific
+    practices. The *madhya* is always accessible because it is not located at a particular place or time — it is the gap,
+    the opening, the interval that is present in every moment.
+
+
+    Cross-Tradition Resonance:
+
+    - Vijñāna Bhairava Tantra dhāraṇā 49–61: multiple practices oriented precisely around the *madhya* — the gap, the interval,
+    the middle space.
+
+    - Hesychast tradition (Christian Orthodox): *hesychia* (stillness) as the middle between activity and sleep, where the
+    heart-prayer (*Prayer of the Heart*) finds its ground.
+
+    - Zhuāngzǐ ch. 3: *Cook Ding* finding the natural intervals in the structure of the ox — moving through the empty spaces.
+    The *madhya* as the natural opening in all structure.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'At the end of the exhalation — before the inhalation begins — there is a natural pause. Rest in that pause without
+    forcing it to extend. Notice: in that moment between breaths, there is awareness. Not awareness *of* anything in particular
+    — just the bare fact of awareness. This is *madhya*. Sūtra 17''s promise is that this gap, when attended to, opens into
+    *cidānanda*.'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Pratyabhijnahrdayam
   section: sutra
   original_id: PHR_017
+  source_reference: ''

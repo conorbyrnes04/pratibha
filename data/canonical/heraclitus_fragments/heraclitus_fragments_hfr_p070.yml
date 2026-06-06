@@ -4,42 +4,61 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p070
-unit_label: The beginning is the end.
-title: The beginning is the end.
+unit_label: /jThe dry beam is the wisest and best soul.
+title: /jThe dry beam is the wisest and best soul.
 unit_type: teaching_passage
-thesis: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding ripen
-  through experience.'
+thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
+  things.'
 themes:
-- silence
-- direct
-- fragment
-- argument
-- beginning
-- contemplation
-- end
-- experience
-source_excerpt: The beginning is the end.
-translation_literal: The beginning is the end.
-commentary: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding
-  ripen through experience.'
+- breath
+- soul
+source_excerpt: /jThe dry beam is the wisest and best soul.
+translation_literal: /jThe dry beam is the wisest and best soul.
+commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs
+  all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
+  The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things
+  are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor:
+  George T.W. Patrick (1889), fragment 70 (Bywater Greek). Corpus index HFR_P070 follows the Diels–Kranz-style numbering used
+  in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- argument
-- beginning
+- breath
 - commentary_text
-- contemplation
-- direct
-- end
-- experience
-- fragment
 - heraclitus_fragments
-- silence
+- soul
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: /jThe dry beam is the wisest and best soul.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
+    things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
+    The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things
+    are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it.
+    Anchor: George T.W. Patrick (1889), fragment 70 (Bywater Greek). Corpus index HFR_P070 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: psychē (ψυχή)
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P070
+  source_reference: Patrick (1889), frag. 70; corpus HFR_P070

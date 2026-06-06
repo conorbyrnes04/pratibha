@@ -12,11 +12,20 @@ import glob
 import json
 import os
 import re
+import sys
 from pathlib import Path
 
 import asyncpg
 import yaml
 from openai import AsyncOpenAI
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from app.data_loader import normalize_unit  # noqa: E402  (path set up above)
+from app.collection_aliases import canonical_slug  # noqa: E402
+
+# Number of chunks embedded per API request (the embeddings endpoint accepts a
+# list input; batching is dramatically faster than one call per chunk).
+EMBED_BATCH = 96
 
 
 def _as_text(value) -> str:
@@ -27,6 +36,40 @@ def _as_text(value) -> str:
     if isinstance(value, list):
         return "\n".join(str(v).strip() for v in value if str(v).strip())
     return str(value).strip()
+
+
+def _word_safe_overlap(text: str, overlap: int) -> str:
+    """Return a trailing slice of ~overlap chars that begins at a word boundary."""
+    if overlap <= 0 or not text:
+        return ""
+    tail = text[-overlap:]
+    if len(text) > overlap:
+        # We cut into the middle of `text`; drop the partial leading word.
+        space = tail.find(" ")
+        tail = tail[space + 1:] if space != -1 else ""
+    return tail.strip()
+
+
+def _split_long_paragraph(para: str, target: int, overlap: int) -> list[str]:
+    """Slice an over-long paragraph on whitespace so words are never split."""
+    pieces: list[str] = []
+    start = 0
+    n = len(para)
+    while start < n:
+        end = min(n, start + target)
+        if end < n:
+            # Back up to the last whitespace so we break between words.
+            space = para.rfind(" ", start, end)
+            if space > start:
+                end = space
+        pieces.append(para[start:end].strip())
+        if end >= n:
+            break
+        # Step back by ~overlap, snapped to a word boundary.
+        next_start = max(end - overlap, start + 1)
+        space = para.find(" ", next_start, end)
+        start = (space + 1) if space != -1 else end
+    return [p for p in pieces if p]
 
 
 def _split_chunks(text: str, target: int = 700, overlap: int = 120) -> list[str]:
@@ -55,7 +98,13 @@ def _split_chunks(text: str, target: int = 700, overlap: int = 120) -> list[str]
             else:
                 if cur:
                     normalized.append(cur)
-                cur = piece
+                # A single sentence longer than target is split on word
+                # boundaries rather than mid-word.
+                if len(piece) > target:
+                    normalized.extend(_split_long_paragraph(piece, target, overlap))
+                    cur = ""
+                else:
+                    cur = piece
         if cur:
             normalized.append(cur)
     paragraphs = normalized
@@ -69,42 +118,88 @@ def _split_chunks(text: str, target: int = 700, overlap: int = 120) -> list[str]
             continue
         if current:
             chunks.append(current)
-            carry = current[-overlap:].strip()
+            carry = _word_safe_overlap(current, overlap)
             current = f"{carry}\n\n{para}".strip() if carry else para
         else:
-            # Extremely long single paragraph fallback.
-            start = 0
-            while start < len(para):
-                end = min(len(para), start + target)
-                chunks.append(para[start:end])
-                start = max(start + target - overlap, end)
+            # Extremely long single paragraph fallback (word-boundary aware).
+            chunks.extend(_split_long_paragraph(para, target, overlap))
             current = ""
     if current:
         chunks.append(current)
     return chunks
 
 
-def _build_sections(y: dict) -> list[tuple[str, str]]:
-    sections: list[tuple[str, str]] = []
+def _layer_text(layer: dict) -> str:
+    body = _as_text(layer.get("body"))
+    items = layer.get("items")
+    if not isinstance(items, list) or not items:
+        return body
+    rendered: list[str] = []
+    for item in items:
+        if isinstance(item, dict):
+            if item.get("term"):
+                rendered.append(f"{_as_text(item.get('term'))}: {_as_text(item.get('definition'))}")
+            elif item.get("citation"):
+                divergence = _as_text(item.get("divergence"))
+                suffix = f"\nDivergence: {divergence}" if divergence else ""
+                rendered.append(f"{_as_text(item.get('citation'))}: {_as_text(item.get('resonance'))}{suffix}")
+            else:
+                rendered.append(json.dumps(item, ensure_ascii=False))
+        else:
+            rendered.append(_as_text(item))
+    combined = "\n\n".join([x for x in [body, *rendered] if x])
+    return combined.strip()
+
+
+def _build_sections(y: dict) -> list[tuple[str, str, str]]:
+    sections: list[tuple[str, str, str]] = []
+    layers = y.get("pratibha_layers")
+    if isinstance(layers, list):
+        for idx, layer in enumerate(layers):
+            if not isinstance(layer, dict):
+                continue
+            kind = _as_text(layer.get("kind")) or f"layer_{idx + 1}"
+            label = _as_text(layer.get("label")) or kind
+            text = _layer_text(layer)
+            if text:
+                sections.append((label, text, kind))
+        if sections:
+            return sections
+
     for key in [
         "sanskrit",
+        "sanskrit_devanagari",
         "transliteration",
+        "sanskrit_iast",
         "translation",
         "translation_literal",
         "commentary",
         "voice_of_siva",
         "sadhana",
+        "practice",
+        "abhyasa",
     ]:
         text = _as_text(y.get(key))
         if text:
-            sections.append((key, text))
+            layer_kind = {
+                "sanskrit": "original",
+                "sanskrit_devanagari": "original",
+                "transliteration": "iast",
+                "sanskrit_iast": "iast",
+                "translation": "translation",
+                "translation_literal": "translation",
+                "commentary": "commentary",
+                "practice": "practice",
+                "abhyasa": "practice",
+            }.get(key, key)
+            sections.append((key, text, layer_kind))
 
     modes = y.get("modes") or {}
     if isinstance(modes, dict):
         for mk, mv in modes.items():
             text = _as_text(mv)
             if text:
-                sections.append((f"mode:{mk}", text))
+                sections.append((f"mode:{mk}", text, f"mode:{mk}"))
 
     appendixes = y.get("appendixes") or []
     if isinstance(appendixes, list):
@@ -116,7 +211,7 @@ def _build_sections(y: dict) -> list[tuple[str, str]]:
                 label = f"appendix_{idx + 1}"
                 text = _as_text(item)
             if text:
-                sections.append((f"appendix:{label}", text))
+                sections.append((f"appendix:{label}", text, "appendix"))
     return sections
 
 
@@ -191,29 +286,47 @@ async def main(dir_path: str):
             y = yaml.safe_load(path.read_text(encoding="utf-8", errors="replace")) or {}
             if not isinstance(y, dict):
                 continue
+            # Reuse the API's normalization so DB metadata (maturity, layers)
+            # matches exactly what the running app serves and filters on.
+            norm = normalize_unit(y, path.as_posix())
             # Idempotent per source file.
             await conn.execute("DELETE FROM chunks WHERE metadata->>'source_file' = $1", path.as_posix())
             base_meta = {
                 "source_file": path.as_posix(),
-                "_id": y.get("_id") or y.get("unit_id"),
-                "title": y.get("title") or y.get("unit_label"),
-                "sutra_id": y.get("sutra_id") or y.get("source_id"),
-                "collection": y.get("collection") or y.get("work_title") or _infer_collection(path),
+                "_id": norm.get("_id") or y.get("_id") or y.get("unit_id"),
+                "title": norm.get("title") or y.get("title") or y.get("unit_label"),
+                "sutra_id": norm.get("sutra_id") or y.get("sutra_id") or y.get("source_id"),
+                "collection": canonical_slug(norm.get("collection") or y.get("collection") or _infer_collection(path), path.as_posix()),
                 "type": y.get("type") or y.get("unit_type"),
-                "themes": y.get("themes") if isinstance(y.get("themes"), list) else [],
+                "themes": norm.get("themes") if isinstance(norm.get("themes"), list) else [],
                 "quality_score": y.get("quality_score") or y.get("quality_score_unit") or 0,
+                "editorial_maturity": norm.get("editorial_maturity") or "needs_rewrite",
+                "editorial_score": norm.get("editorial_score") or 0,
                 "ingested_at": datetime.datetime.utcnow().isoformat() + "Z",
             }
-            sections = _build_sections(y)
-            for section_name, text in sections:
+            # Build sections from the normalized record so ingestion and the API
+            # use the identical pratibha_layers (single source of truth).
+            sections = _build_sections(norm)
+            # Gather every chunk for this file, then embed in batches. Embedding
+            # uses a context header (better recall) while we store the clean
+            # body so retrieved sources read as pure teaching text.
+            embed_inputs: list[str] = []
+            pending_rows: list[tuple[str, dict]] = []
+            for section_name, text, layer_kind in sections:
                 for chunk_idx, chunk in enumerate(_split_chunks(text), start=1):
-                    chunk_text = _with_chunk_context(chunk, {**base_meta, "section": section_name})
-                    emb = (await client.embeddings.create(model=embedding_model, input=chunk_text)).data[0].embedding
-                    vector_str = f"[{','.join(map(str, emb))}]"
-                    meta = {**base_meta, "section": section_name, "chunk_index": chunk_idx}
+                    meta = {**base_meta, "section": section_name, "layer_kind": layer_kind, "chunk_index": chunk_idx}
+                    embed_inputs.append(_with_chunk_context(chunk, meta))
+                    pending_rows.append((chunk.strip(), meta))
+
+            for start in range(0, len(embed_inputs), EMBED_BATCH):
+                batch = embed_inputs[start:start + EMBED_BATCH]
+                resp = await client.embeddings.create(model=embedding_model, input=batch)
+                for item in sorted(resp.data, key=lambda d: d.index):
+                    body, meta = pending_rows[start + item.index]
+                    vector_str = f"[{','.join(map(str, item.embedding))}]"
                     await conn.execute(
                         "INSERT INTO chunks (body, embedding, metadata) VALUES ($1, $2, $3)",
-                        chunk_text,
+                        body,
                         vector_str,
                         json.dumps(meta),
                     )

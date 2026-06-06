@@ -1,4 +1,4 @@
-import type { ChatOptions, EditorialMaturity, Source, VerseItem } from "@/lib/types";
+import type { ChatOptions, EditorialMaturity, Source, SourcesPayload, VerseItem } from "@/lib/types";
 
 export const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://127.0.0.1:8000";
 
@@ -21,7 +21,7 @@ export async function getVerse(id: string): Promise<VerseItem | null> {
   return (await res.json()) as VerseItem;
 }
 
-export async function getDaily(minMaturity: EditorialMaturity | "all" = "publishable"): Promise<VerseItem | null> {
+export async function getDaily(minMaturity: EditorialMaturity | "all" = "strong_draft"): Promise<VerseItem | null> {
   const res = await fetch(withMaturity("/daily", minMaturity), { cache: "no-store" });
   if (!res.ok) return null;
   const data = (await res.json()) as VerseItem;
@@ -44,6 +44,12 @@ export async function getCollections(): Promise<string[]> {
   return Array.isArray(data?.items) ? data.items.map((x: unknown) => String(x)) : [];
 }
 
+export async function getSources(): Promise<SourcesPayload | null> {
+  const res = await fetch(`${API_BASE}/sources`, { cache: "no-store" });
+  if (!res.ok) return null;
+  return (await res.json()) as SourcesPayload;
+}
+
 export async function askChat(
   messages: Array<{ role: "user" | "assistant"; content: string }>,
   useRag: boolean,
@@ -59,6 +65,7 @@ export async function askChat(
       use_rag: useRag,
       compare_mode: compareMode,
       compare_collections: compareCollections,
+      compare_verse_ids: options.compareVerseIds || [],
       verse_id: options.verseId,
       layer_focus: options.layerFocus,
       chat_mode: options.chatMode,

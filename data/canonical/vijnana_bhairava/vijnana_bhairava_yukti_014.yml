@@ -26,27 +26,36 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - śakti
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
 tags:
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- pause
-- read
 - root_text
 - vijnana_bhairava
 - śakti
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #14
+
+    O Goddess, by performing complete uccāra of the praṇava and meditating on
+
+    the void at the end of its protracted (saturated) sound, one enters into the
+
+    Spacious Openness by means of the void which is the Supreme Power (parā
+
+    śakti). || 39'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_014
+  source_reference: ''

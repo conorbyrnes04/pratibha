@@ -21,28 +21,38 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- attention
 - consciousness
 - self
-- attention
-- clarity
-- content
-- emphasis
-- everything
-- grows
 tags:
 - attention
-- clarity
 - consciousness
-- content
-- emphasis
-- everything
-- grows
 - root_text
 - self
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #109
+
+    Everything is revealed by insight (or consciousness), and the self is revealed by
+
+    everything. Due to there being only one essential nature, knowables are [to be]
+
+    contemplated as [consisting of] One Consciousness. || 137'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_109
+  source_reference: ''

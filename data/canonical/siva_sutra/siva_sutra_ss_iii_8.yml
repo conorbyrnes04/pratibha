@@ -18,25 +18,35 @@ themes:
 - knowledge
 - jnana
 - bandha
-- bondage
-- finally
-- human
-- lands
-- level
 tags:
 - bandha
-- bondage
-- finally
-- human
 - jnana
 - knowledge
-- lands
-- level
 - root_text
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: ज्ञानं बन्धः
+- kind: iast
+  label: IAST
+  body: jñānaṁ bandhaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Knowledge is bondage.
+- kind: commentary
+  label: Pratibha Commentary
+  body: The refrain lands finally at the human level. Knowledge binds when it substitutes for presence.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Āṇavopāya
   original_id: SS_III.8
+  source_reference: ''

@@ -11,13 +11,6 @@ thesis: 'Read this line as a contemplative pointer: pause interpretation for a m
   directly.'
 themes:
 - knowledge
-- away
-- passing
-- pause
-- read
-- contemplative
-- directly
-- disclose
 source_excerpt: That is clearly an error and misconception. The knowledge of God does not require the passing away of existence
   or the passing away of that passing away because things have no existence and what does not exist cannot pass away.
 translation_literal: That is clearly an error and misconception. The knowledge of God does not require the passing away of
@@ -30,19 +23,28 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
-- away
 - commentary_text
-- contemplative
-- directly
-- disclose
 - know_yourself_ibn_arabi_balyani
 - knowledge
-- passing
-- pause
-- read
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: That is clearly an error and misconception. The knowledge of God does not require the passing away of existence or
+    the passing away of that passing away because things have no existence and what does not exist cannot pass away.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P027
+  source_reference: ''

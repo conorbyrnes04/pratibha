@@ -10,14 +10,10 @@ unit_type: teaching_passage
 thesis: The tantrika then discovers that only the blaze of ardor is required, and that all forms, all rituals, all practices
   are only aspects of divine play, of the creativity of Shiva/Shakti.
 themes:
+- action
 - heart
 - shakti
 - shiva
-- ardor
-- only
-- tantrika
-- dream
-- allows
 source_excerpt: The ardor toward Shiva/Shakti that manifests the universe allows the tantrika to be fulfilled. Over the course
   of the dream, the sun and the moon appear in his heart and all his wishes are granted.
 translation_literal: The ardor toward Shiva/Shakti that manifests the universe allows the tantrika to be fulfilled. Over the
@@ -33,19 +29,35 @@ practice: Choose one ordinary action today and perform it fully without seeking 
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
-- allows
-- ardor
+- action
 - commentary_text
-- dream
 - heart
-- only
 - shakti
 - shiva
-- tantrika
 - yoga_spandakarika
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: The ardor toward Shiva/Shakti that manifests the universe allows the tantrika to be fulfilled. Over the course of
+    the dream, the sun and the moon appear in his heart and all his wishes are granted.
+- kind: commentary
+  label: Pratibha Commentary
+  body: The tantrika then discovers that only the blaze of ardor is required, and that all forms, all rituals, all practices
+    are only aspects of divine play, of the creativity of Shiva/Shakti. Then there is nothing to do but abandon oneself to
+    the great fire of/in the heart where the sun and the moon touch lips and, in the midnight blue sky, are united both night
+    and day in the reality of the dream, and in the dream of Reality. All matters are matters of the Heart All names are names
+    of the Heart
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute in
+    the felt sense of simple presence.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Yoga Spandakarika
   section: Third Flow
   original_id: SP_33
+  source_reference: ''

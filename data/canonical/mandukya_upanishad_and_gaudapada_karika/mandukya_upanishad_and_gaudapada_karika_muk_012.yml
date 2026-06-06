@@ -30,26 +30,51 @@ upaya: ''
 themes:
 - awareness
 - consciousness
+- desire
 - self
-- first
-- waking
-- desires
-- other
-- sound
 tags:
 - awareness
 - consciousness
-- desires
-- first
+- desire
 - mandukya_upanishad_and_gaudapada_karika
-- other
 - root_text
 - self
-- sound
-- waking
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: जागरितस्थानो वैश्वानरोऽकारः प्रथमा मात्राऽऽप्तेरादिमत्त्वाद्वाऽऽप्नोति ह वै सर्वान्कामानादिश्च भवति य एवं वेद ॥ ९
+    ॥
+- kind: iast
+  label: IAST
+  body: jāgaritasthāno vaiśvānaro 'kāraḥ prathamā mātrā āpter ādimattvād vā āpnoti ha vai sarvān kāmān ādiś ca bhavati ya
+    evaṃ veda || 9 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Vaiśvānara, whose sphere is the waking state, is A — the first element — on account of its pervasiveness or on account
+    of being the first. One who knows this obtains all desires and becomes the first.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The A vowel opens the mouth and generates the fundamental space from which all speech emerges. As the first vowel,
+    it is prior to all differentiation — no other sound precedes it. This structural primacy mirrors Vaiśvānara''s role: waking
+    consciousness is the most immediately available state, the one from which the others are known and described. It is also
+    the most *āpta* (pervading) — the A sound pervades all other sounds as their substrate, just as waking consciousness pervades
+    and contains our ordinary understanding of the other states.
+
+
+    The "fruits" described (*āpnoti sarvān kāmān* — attains all desires) are traditional pedagogical incentives but have an
+    inner meaning: to know the waking state as the first expression of the one Self is to recognize oneself as the source
+    from which all desires arise. One does not attain desires as objects; one recognizes oneself as the creative ground of
+    desire''s arising.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Mandukya Upanishad and Gaudapada Karika
   section: teaching_passage
   original_id: MUK_012
+  source_reference: ''

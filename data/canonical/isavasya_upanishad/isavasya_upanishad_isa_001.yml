@@ -36,27 +36,52 @@ practice: Repeat this invocation once before study and notice one place where yo
 upaya: ''
 themes:
 - mind
-- fullness
-- invocation
-- whole
-- before
-- container
-- entire
-- establishes
 tags:
-- before
-- container
-- entire
-- establishes
-- fullness
-- invocation
 - isavasya_upanishad
 - mind
 - root_text
-- whole
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'ॐ पूर्णमदः पूर्णमिदं पूर्णात्पूर्णमुदच्यते ।
+
+    पूर्णस्य पूर्णमादाय पूर्णमेवावशिष्यते ॥'
+- kind: iast
+  label: IAST
+  body: 'om purnam adah purnam idam purnat purnam udacyate |
+
+    purnasya purnam adaya purnam eva avasisyate ||'
+- kind: translation
+  label: Pratibha Translation
+  body: 'That is fullness; this is fullness. From fullness, fullness appears.
+
+    When fullness is taken from fullness, fullness alone remains.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The invocation establishes the metaphysical grammar for the entire text: reality is not a scarce container but an
+    inexhaustible whole. Manifestation does not reduce source. This dissolves possessiveness before verse one begins.
+
+
+    Key Terms:
+
+
+    **purnam (पूर्णम्)** - fullness, completeness, non-lack.
+
+
+    Cross-Tradition Resonances:
+
+
+    **Neoplatonic procession:** emergence without depletion.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Repeat this invocation once before study and notice one place where your mind is operating from lack.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_001
+  source_reference: ''

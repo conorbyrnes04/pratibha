@@ -7,9 +7,10 @@ import { getVerse, getVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { stripMarkdown } from "@/lib/textPreview";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { displayPassageTitle, passageSortKey } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
 import { JournalPanel } from "@/components/JournalPanel";
-import { getVerseLayers, layerText, maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
+import { getStudyLayers, getAppendixLayers, getAnchorChapter, layerText, maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
 
 function practiceFallback(item: VerseItem): string {
   if ((item.themes || []).includes("witness")) {
@@ -57,6 +58,7 @@ export default function VerseDetailPage() {
   const [learningMode, setLearningMode] = useState(true);
   const [showOriginal, setShowOriginal] = useState(true);
   const [compact, setCompact] = useState(false);
+  const [showSource, setShowSource] = useState(false);
   const [loading, setLoading] = useState(true);
   const [backHref, setBackHref] = useState<string | null>(null);
   const id = decodeURIComponent(params.id || "");
@@ -91,7 +93,8 @@ export default function VerseDetailPage() {
     out.sort((a, b) => {
       const aSame = (a.collection || "") === (item.collection || "") ? 1 : 0;
       const bSame = (b.collection || "") === (item.collection || "") ? 1 : 0;
-      return bSame - aSame;
+      if (bSame !== aSame) return bSame - aSame;
+      return passageSortKey(a) - passageSortKey(b);
     });
     return out.slice(0, 6);
   }, [allItems, item]);
@@ -103,7 +106,9 @@ export default function VerseDetailPage() {
     return <main className="page-shell soft">Passage not found.</main>;
   }
 
-  const layers = getVerseLayers(item);
+  const layers = getStudyLayers(item);
+  const appendixLayers = getAppendixLayers(item);
+  const anchorChapter = getAnchorChapter(item);
   const visibleLayers = layers.filter((layer) => showOriginal || (layer.kind !== "original" && layer.kind !== "iast"));
   const translation = layerText(item, "translation");
   const commentary = layerText(item, "commentary");
@@ -153,7 +158,7 @@ export default function VerseDetailPage() {
         <div>
           <p className="eyebrow">{displayCollectionName(item.collection) || "Pratibha"} {item.section ? ` / ${item.section}` : ""}</p>
           <h1 className="mt-3 max-w-4xl text-5xl font-semibold leading-[0.92] tracking-[-0.04em] text-stone-100 sm:text-6xl">
-            {item.title || item.sutra_id || item._id}
+            {displayPassageTitle(item)}
           </h1>
         </div>
         <div className="citation-card grid gap-2 p-3 font-sans text-sm text-stone-300">
@@ -169,6 +174,12 @@ export default function VerseDetailPage() {
             <input type="checkbox" className="accent-amber-300" checked={compact} onChange={(e) => setCompact(e.target.checked)} />
             Compact commentary
           </label>
+          {(appendixLayers.length > 0 || anchorChapter) ? (
+            <label className="flex items-center gap-3">
+              <input type="checkbox" className="accent-amber-300" checked={showSource} onChange={(e) => setShowSource(e.target.checked)} />
+              Public-domain source (Giles / Patrick)
+            </label>
+          ) : null}
         </div>
       </section>
 
@@ -189,6 +200,28 @@ export default function VerseDetailPage() {
           {visibleLayers.map((layer, idx) => (
             <LayerBlock key={`${layer.kind}-${layer.label}-${idx}`} layer={layer} compact={compact && layer.kind === "commentary"} />
           ))}
+
+          {showSource ? (
+            <>
+              {appendixLayers.map((layer, idx) => (
+                <LayerBlock key={`appendix-${layer.label}-${idx}`} layer={layer} defaultCollapsed={Boolean(layer.body && layer.body.length > 1200)} />
+              ))}
+              {anchorChapter ? (
+                <LayerBlock
+                  layer={{ kind: "appendix", label: "Full chapter — public-domain translation", body: anchorChapter }}
+                  defaultCollapsed
+                />
+              ) : null}
+            </>
+          ) : (appendixLayers.length > 0 || anchorChapter) ? (
+            <button
+              type="button"
+              onClick={() => setShowSource(true)}
+              className="mt-4 w-full rounded-2xl border border-dashed border-amber-200/25 px-4 py-3 text-left font-sans text-sm text-amber-100/90 hover:border-amber-200/45"
+            >
+              Compare with public-domain translation (Giles 1889) — hidden by default so study stays focused.
+            </button>
+          ) : null}
 
           {item.themes && item.themes.length > 0 ? (
             <section className="mt-4 flex flex-wrap gap-2">
@@ -229,7 +262,7 @@ export default function VerseDetailPage() {
             ) : (
               related.map((r) => (
                 <Link key={r._id} href={`/read/${encodeURIComponent(r._id)}`} className="citation-card block p-3 hover:border-amber-300/30">
-                  <p className="text-sm text-amber-100">{r.title || r.sutra_id || r._id}</p>
+                  <p className="text-sm text-amber-100">{displayPassageTitle(r)}</p>
                   <p className="soft mt-1 text-xs">
                     {displayCollectionName(r.collection)} {r.section ? `• ${r.section}` : ""}
                   </p>
@@ -242,7 +275,7 @@ export default function VerseDetailPage() {
             <div className="practice-card mt-4 p-3">
               <p className="layer-heading">Next natural step</p>
               <Link href={`/read/${encodeURIComponent(nextStep._id)}`} className="mt-1 block text-sm text-amber-100 hover:underline">
-                {nextStep.title || nextStep.sutra_id || nextStep._id}
+                {displayPassageTitle(nextStep)}
               </Link>
             </div>
           ) : null}

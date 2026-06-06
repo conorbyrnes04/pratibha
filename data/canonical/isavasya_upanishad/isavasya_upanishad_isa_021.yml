@@ -32,27 +32,51 @@ practice: 'Ask: what pleasant appearance in my life is also a concealment?'
 upaya: ''
 themes:
 - mantra
-- luminous
-- veil
-- appearances
-- asks
-- can
-- even
-- golden
+- truth
 tags:
-- appearances
-- asks
-- can
-- even
-- golden
 - isavasya_upanishad
-- luminous
 - mantra
 - root_text
-- veil
+- truth
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'हिरण्मयेन पात्रेण सत्यस्यापिहितं मुखम् ।
+
+    तत्त्वं पूषन्नपावृणु सत्यधर्माय दृष्टये ॥ १५ ॥'
+- kind: iast
+  label: IAST
+  body: 'hiranmayena patrena satyasyapihitam mukham |
+
+    tat tvam pusan apavrnu satyadharmaya drstaye || 15 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: The face of Truth is covered by a golden lid; O Sun, remove it for the seer devoted to truth.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Even luminous appearances can veil the Real; prayer asks for penetrative seeing.
+
+
+    Key Terms:
+
+
+    **hiranmayena patrena** - golden covering.
+
+
+    Cross-Tradition Resonances:
+
+
+    Luminous veil motifs in mystical traditions.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Ask: what pleasant appearance in my life is also a concealment?'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_021
+  source_reference: ''

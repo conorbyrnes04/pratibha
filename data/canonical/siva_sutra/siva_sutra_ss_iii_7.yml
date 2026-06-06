@@ -29,8 +29,28 @@ tags:
 - self
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: चैतन्यादात्मा
+- kind: iast
+  label: IAST
+  body: caitanyād ātmā
+- kind: translation
+  label: Pratibha Translation
+  body: From consciousness, the Self is known.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Even here, recognition is indirect. Consciousness is approached through training until it reveals its ground.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Āṇavopāya
   original_id: SS_III.7
+  source_reference: ''

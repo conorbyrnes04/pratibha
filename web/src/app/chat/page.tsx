@@ -1,15 +1,29 @@
 'use client';
 
 import { useEffect, useMemo, useState } from "react";
-import { askChat, getCollections, getVerse } from "@/lib/api";
+import { askChat, getCollections, getVerse, getVerses } from "@/lib/api";
 import { saveChatResponse } from "@/lib/journalStorage";
 import type { ChatMode, PratibhaLayerKind, Source, VerseItem } from "@/lib/types";
+import { FilterSelect } from "@/components/FilterSelect";
+import { ComparePassageSelect } from "@/components/ComparePassageSelect";
+import { buildCompareCollectionOptions, passagesInCollection } from "@/lib/corpusFilters";
+import { COMPARE_PRESETS } from "@/lib/comparePresets";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { displayPassageTitle } from "@/lib/passageTitles";
 import { maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
+
+function sourcePassageLabel(metadata?: Record<string, unknown>): string {
+  if (!metadata) return "";
+  const ref = String(metadata.reference || "").trim();
+  const title = String(metadata.title || "").trim();
+  if (ref && title) return `${ref} — ${title}`;
+  if (title) return title;
+  return "";
+}
 
 export default function ChatPage() {
   const [q, setQ] = useState("");
@@ -19,8 +33,11 @@ export default function ChatPage() {
   const [busy, setBusy] = useState(false);
   const [compareMode, setCompareMode] = useState(false);
   const [collections, setCollections] = useState<string[]>([]);
+  const [allPassages, setAllPassages] = useState<VerseItem[]>([]);
   const [compareA, setCompareA] = useState("");
   const [compareB, setCompareB] = useState("");
+  const [compareVerseA, setCompareVerseA] = useState("");
+  const [compareVerseB, setCompareVerseB] = useState("");
   const [compareWarning, setCompareWarning] = useState("");
   const [pinnedVerse, setPinnedVerse] = useState<VerseItem | null>(null);
   const [chatMode, setChatMode] = useState<ChatMode>("question");
@@ -28,17 +45,37 @@ export default function ChatPage() {
   const [savedReplies, setSavedReplies] = useState<Set<number>>(new Set());
 
   useEffect(() => {
-    const fromUrl = new URLSearchParams(window.location.search).get("q");
-    if (fromUrl) setQ(fromUrl);
     const params = new URLSearchParams(window.location.search);
+    const fromUrl = params.get("q");
+    if (fromUrl) setQ(fromUrl);
+
     const verseId = params.get("verse_id");
     const mode = params.get("mode") as ChatMode | null;
     if (mode && ["question", "explain", "compare", "practice"].includes(mode)) {
       setChatMode(mode);
+      if (mode === "compare") setCompareMode(true);
       if (!fromUrl) {
-        setQ(mode === "practice" ? "Give me one concrete practice from this passage." : "Guide me through this passage.");
+        setQ(
+          mode === "practice"
+            ? "Give me one concrete practice from this passage."
+            : mode === "compare"
+              ? "Compare these two traditions on the question above."
+              : "Guide me through this passage.",
+        );
       }
     }
+
+    const voiceA = params.get("voice_a");
+    const voiceB = params.get("voice_b");
+    if (voiceA) setCompareA(voiceA);
+    if (voiceB) setCompareB(voiceB);
+    if (params.get("compare") === "1") setCompareMode(true);
+
+    const verseA = params.get("verse_a");
+    const verseB = params.get("verse_b");
+    if (verseA) setCompareVerseA(verseA);
+    if (verseB) setCompareVerseB(verseB);
+
     if (verseId) {
       getVerse(verseId).then(setPinnedVerse).catch(() => setPinnedVerse(null));
     }
@@ -47,10 +84,61 @@ export default function ChatPage() {
   useEffect(() => {
     getCollections().then((items) => {
       setCollections(items);
-      if (items.length > 0) setCompareA((prev) => prev || items[0]);
-      if (items.length > 1) setCompareB((prev) => prev || items[1]);
+      setCompareA((prev) => prev || items[0] || "");
+      setCompareB((prev) => prev || items[1] || items[0] || "");
     });
+    getVerses("strong_draft").then(setAllPassages).catch(() => setAllPassages([]));
   }, []);
+
+  useEffect(() => {
+    setCompareVerseA((prev) => {
+      if (!prev) return prev;
+      return passagesInCollection(allPassages, compareA).some((item) => item._id === prev) ? prev : "";
+    });
+  }, [allPassages, compareA]);
+
+  useEffect(() => {
+    setCompareVerseB((prev) => {
+      if (!prev) return prev;
+      return passagesInCollection(allPassages, compareB).some((item) => item._id === prev) ? prev : "";
+    });
+  }, [allPassages, compareB]);
+
+  const collectionOptions = useMemo(
+    () => buildCompareCollectionOptions(collections, allPassages),
+    [allPassages, collections],
+  );
+
+  const passagesA = useMemo(
+    () => passagesInCollection(allPassages, compareA),
+    [allPassages, compareA],
+  );
+  const passagesB = useMemo(
+    () => passagesInCollection(allPassages, compareB),
+    [allPassages, compareB],
+  );
+
+  const chatModeOptions = useMemo(
+    () => [
+      { value: "question", label: "Open question" },
+      { value: "explain", label: "Explain" },
+      { value: "practice", label: "Practice" },
+      { value: "compare", label: "Compare" },
+    ],
+    [],
+  );
+
+  const layerOptions = useMemo(
+    () => [
+      { value: "", label: "All layers" },
+      { value: "translation", label: "Translation" },
+      { value: "commentary", label: "Commentary" },
+      { value: "key_terms", label: "Key terms" },
+      { value: "resonances", label: "Resonances" },
+      { value: "practice", label: "Practice" },
+    ],
+    [],
+  );
 
   const suggestions = useMemo(
     () => [
@@ -63,6 +151,18 @@ export default function ChatPage() {
     ],
     [],
   );
+
+  function applyPreset(presetId: string) {
+    const preset = COMPARE_PRESETS.find((item) => item.id === presetId);
+    if (!preset) return;
+    setCompareMode(true);
+    setChatMode("compare");
+    setCompareA(preset.voiceA);
+    setCompareB(preset.voiceB);
+    setCompareVerseA(preset.verseA || "");
+    setCompareVerseB(preset.verseB || "");
+    setQ(preset.prompt);
+  }
 
   function saveReply(index: number, content: string) {
     const question =
@@ -84,8 +184,11 @@ export default function ChatPage() {
     setQ("");
     try {
       const selected = compareMode ? [compareA, compareB].filter(Boolean) : [];
+      const compareVerseIds =
+        compareMode && (compareVerseA || compareVerseB) ? [compareVerseA, compareVerseB] : undefined;
       const data = await askChat(next, useRag, compareMode, selected, {
         verseId: pinnedVerse?._id,
+        compareVerseIds,
         layerFocus: layerFocus || undefined,
         chatMode,
       });
@@ -114,7 +217,7 @@ export default function ChatPage() {
             <div className="practice-card mb-4 p-4">
               <p className="layer-heading">Pinned passage</p>
               <h2 className="mt-2 text-2xl leading-none text-amber-100">
-                {pinnedVerse.title || pinnedVerse.sutra_id || pinnedVerse._id}
+                {displayPassageTitle(pinnedVerse)}
               </h2>
               <p className="soft mt-1 font-sans text-sm">
                 {displayCollectionName(pinnedVerse.collection)} {pinnedVerse.section ? `• ${pinnedVerse.section}` : ""} • {maturityLabel(pinnedVerse.editorial_maturity)}
@@ -125,21 +228,25 @@ export default function ChatPage() {
                   <span className="text-amber-100">Practice:</span> {practiceText(pinnedVerse)}
                 </p>
               ) : null}
-              <div className="mt-4 grid gap-2 sm:grid-cols-2">
-                <select value={chatMode} onChange={(e) => setChatMode(e.target.value as ChatMode)} className="input-field rounded-md p-2 text-sm">
-                  <option value="question">Open question</option>
-                  <option value="explain">Explain</option>
-                  <option value="practice">Practice</option>
-                  <option value="compare">Compare</option>
-                </select>
-                <select value={layerFocus} onChange={(e) => setLayerFocus(e.target.value as PratibhaLayerKind | "")} className="input-field rounded-md p-2 text-sm">
-                  <option value="">All layers</option>
-                  <option value="translation">Translation</option>
-                  <option value="commentary">Commentary</option>
-                  <option value="key_terms">Key terms</option>
-                  <option value="resonances">Resonances</option>
-                  <option value="practice">Practice</option>
-                </select>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                <FilterSelect
+                  label="Study mode"
+                  tone="gold"
+                  value={chatMode}
+                  onChange={(value) => {
+                    const mode = value as ChatMode;
+                    setChatMode(mode);
+                    if (mode === "compare") setCompareMode(true);
+                  }}
+                  options={chatModeOptions}
+                />
+                <FilterSelect
+                  label="Layer focus"
+                  tone="lapis"
+                  value={layerFocus}
+                  onChange={(value) => setLayerFocus(value as PratibhaLayerKind | "")}
+                  options={layerOptions}
+                />
               </div>
             </div>
           ) : null}
@@ -193,34 +300,68 @@ export default function ChatPage() {
             Use source-grounded retrieval (recommended)
           </label>
           <label className="mt-2 block font-sans text-sm soft">
-            <input type="checkbox" checked={compareMode} onChange={(e) => setCompareMode(e.target.checked)} className="mr-2 accent-amber-300" />
+            <input
+              type="checkbox"
+              checked={compareMode}
+              onChange={(e) => {
+                setCompareMode(e.target.checked);
+                if (e.target.checked) setChatMode("compare");
+              }}
+              className="mr-2 accent-amber-300"
+            />
             Compare mode (debate/synthesis between two texts)
           </label>
           {compareMode && (
-            <div className="mt-2 grid gap-2 sm:grid-cols-2">
-              <select
-                value={compareA}
-                onChange={(e) => setCompareA(e.target.value)}
-                className="input-field rounded-md p-2 text-sm"
-              >
-                {collections.map((c) => (
-                  <option key={`a-${c}`} value={c}>
-                    A: {displayCollectionName(c)}
-                  </option>
+            <>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {COMPARE_PRESETS.map((preset) => (
+                  <button
+                    key={preset.id}
+                    type="button"
+                    onClick={() => applyPreset(preset.id)}
+                    className="btn-secondary px-3 py-1 text-xs"
+                  >
+                    {preset.label}
+                  </button>
                 ))}
-              </select>
-              <select
-                value={compareB}
-                onChange={(e) => setCompareB(e.target.value)}
-                className="input-field rounded-md p-2 text-sm"
-              >
-                {collections.map((c) => (
-                  <option key={`b-${c}`} value={c}>
-                    B: {displayCollectionName(c)}
-                  </option>
-                ))}
-              </select>
-            </div>
+              </div>
+              <div className="mt-3 grid gap-3 lg:grid-cols-2">
+                <div className="space-y-3">
+                  <FilterSelect
+                    label="Voice A — collection"
+                    tone="gold"
+                    value={compareA}
+                    onChange={setCompareA}
+                    options={collectionOptions.map((o) => ({ ...o, label: `A · ${o.label}` }))}
+                  />
+                  <ComparePassageSelect
+                    label="Voice A — passage (optional)"
+                    tone="gold"
+                    collection={compareA}
+                    passages={passagesA}
+                    value={compareVerseA}
+                    onChange={setCompareVerseA}
+                  />
+                </div>
+                <div className="space-y-3">
+                  <FilterSelect
+                    label="Voice B — collection"
+                    tone="lapis"
+                    value={compareB}
+                    onChange={setCompareB}
+                    options={collectionOptions.map((o) => ({ ...o, label: `B · ${o.label}` }))}
+                  />
+                  <ComparePassageSelect
+                    label="Voice B — passage (optional)"
+                    tone="lapis"
+                    collection={compareB}
+                    passages={passagesB}
+                    value={compareVerseB}
+                    onChange={setCompareVerseB}
+                  />
+                </div>
+              </div>
+            </>
           )}
           <textarea
             className="input-field mt-3 w-full rounded-2xl p-3"
@@ -246,7 +387,7 @@ export default function ChatPage() {
           {pinnedVerse ? (
             <article className="practice-card mt-3 p-3">
               <p className="layer-heading">Primary source</p>
-              <p className="mt-2 text-sm text-amber-100">{pinnedVerse.title || pinnedVerse.sutra_id || pinnedVerse._id}</p>
+              <p className="mt-2 text-sm text-amber-100">{displayPassageTitle(pinnedVerse)}</p>
               <p className="soft mt-1 line-clamp-4 text-sm">{passagePreview(pinnedVerse)}</p>
             </article>
           ) : null}
@@ -274,7 +415,7 @@ export default function ChatPage() {
                   })()}
                   <p className="mt-2 text-sm text-amber-100">
                     {displayCollectionName(String((s.metadata?.collection as string) || ""))}
-                    {s.metadata?.title ? ` • ${String(s.metadata.title)}` : ""}
+                    {sourcePassageLabel(s.metadata) ? ` • ${sourcePassageLabel(s.metadata)}` : s.metadata?.title ? ` • ${String(s.metadata.title)}` : ""}
                     {s.metadata?.section ? ` • ${String(s.metadata.section)}` : ""}
                   </p>
                   {Array.isArray(s.metadata?.themes) && (s.metadata?.themes as unknown[]).length > 0 ? (

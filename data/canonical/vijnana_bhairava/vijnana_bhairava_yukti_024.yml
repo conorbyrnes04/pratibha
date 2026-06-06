@@ -21,28 +21,38 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- attention
 - mind
 - practice
-- attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
 - mind
 - practice
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #24
+
+    [Or,] completely dissolve the mind in the upper limit of one’s
+
+    [subtle] body [above the head]; through this practice, one of steady
+
+    mind steadily attains that Reality which is the goal. || 50'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_024
+  source_reference: ''

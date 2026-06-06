@@ -4,49 +4,61 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p062
-unit_label: Justice in our minds is strife.
-title: Justice in our minds is strife.
+unit_label: We must know that war is universal and strife right, and that by strife all things arise...
+title: We must know that war is universal and strife right, and that by strife all things arise...
 unit_type: teaching_passage
-thesis: Opposites are not enemies to erase but tensions that generate becoming.
+thesis: Opposition is not a failure of order but its instrument.
 themes:
+- breath
 - harmony
-- silence
-- becoming
-- enemies
-- erase
-- generate
-- justice
-- minds
-source_excerpt: 'Justice in our minds is strife.
-
-  We cannot help but see
-
-  war makes us as we are.'
-translation_literal: 'Justice in our minds is strife.
-
-  We cannot help but see
-
-  war makes us as we are.'
-commentary: Opposites are not enemies to erase but tensions that generate becoming. Harmony is discovered through, not apart
-  from, contrast.
+source_excerpt: We must know that war is universal and strife right, and that by strife all things arise and tare used. 13
+translation_literal: We must know that war is universal and strife right, and that by strife all things arise and tare used.
+  13
+commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that
+  tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony
+  audible. The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that
+  all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
+  it. Anchor: George T.W. Patrick (1889), fragment 62 (Bywater Greek). Corpus index HFR_P062 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- becoming
+- breath
 - commentary_text
-- enemies
-- erase
-- generate
 - harmony
 - heraclitus_fragments
-- justice
-- minds
-- silence
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: We must know that war is universal and strife right, and that by strife all things arise and tare used. 13
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
+    generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
+    The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things
+    are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it.
+    Anchor: George T.W. Patrick (1889), fragment 62 (Bywater Greek). Corpus index HFR_P062 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P062
+  source_reference: Patrick (1889), frag. 62; corpus HFR_P062

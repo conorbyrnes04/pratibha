@@ -23,28 +23,38 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- mind
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
+- mind
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
 - mind
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #42
+
+    O queen of the gods, even in the absence of a consort, by filling
+
+    the mind with the memory of the joy of [being with] a woman,
+
+    i.e. with [the memory of] licking, lovemaking, and [her] curves
+
+    [?], one may become plunged in bliss. || 70'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_042
+  source_reference: ''

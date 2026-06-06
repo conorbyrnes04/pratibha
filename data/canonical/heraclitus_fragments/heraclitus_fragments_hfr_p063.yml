@@ -4,40 +4,48 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p063
-unit_label: Thus are things decreed by fate.
-title: Thus are things decreed by fate.
+unit_label: For it is wholly destined
+title: For it is wholly destined
 unit_type: teaching_passage
-thesis: 'The line turns inquiry inward: character and attention shape destiny.'
+thesis: This aphorism compresses a cosmological claim into a single image or paradox.
 themes:
-- silence
-- attention
-- character
-- decreed
-- destiny
-- fate
-- inquiry
-- inward
-source_excerpt: Thus are things decreed by fate.
-translation_literal: Thus are things decreed by fate.
-commentary: 'The line turns inquiry inward: character and attention shape destiny. Mortality sharpens the call to live deliberately.'
+- breath
+source_excerpt: For it is wholly destined
+translation_literal: For it is wholly destined
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
+  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
+  falls quiet. Anchor: George T.W. Patrick (1889), fragment 63 (Bywater Greek). Corpus index HFR_P063 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- attention
-- character
+- breath
 - commentary_text
-- decreed
-- destiny
-- fate
 - heraclitus_fragments
-- inquiry
-- inward
-- silence
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: For it is wholly destined
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
+    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
+    quiet. Anchor: George T.W. Patrick (1889), fragment 63 (Bywater Greek). Corpus index HFR_P063 follows the Diels–Kranz-style
+    numbering used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P063
+  source_reference: Patrick (1889), frag. 63; corpus HFR_P063

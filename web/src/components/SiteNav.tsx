@@ -6,11 +6,11 @@ import { useEffect, useState } from "react";
 
 const LINKS: Array<{ href: string; label: string }> = [
   { href: "/read", label: "Read" },
-  { href: "/daily", label: "Daily" },
   { href: "/random", label: "Random" },
   { href: "/chat", label: "Study Chat" },
   { href: "/learn", label: "Paths" },
   { href: "/journal", label: "Journal" },
+  { href: "/sources", label: "Sources" },
 ];
 
 export function SiteNav() {

@@ -4,42 +4,95 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p010
-unit_label: Things keep their secrets.
-title: Things keep their secrets.
+unit_label: Nature Loves to Hide
+title: Nature Loves to Hide
 unit_type: teaching_passage
-thesis: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding ripen
-  through experience.'
+thesis: Heraclitus compresses an entire epistemology into five words.
 themes:
-- silence
-- direct
-- fragment
-- argument
-- contemplation
-- experience
-- hold
-- invites
-source_excerpt: Things keep their secrets.
-translation_literal: Things keep their secrets.
-commentary: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding
-  ripen through experience.'
+- breath
+- knowledge
+- soul
+- truth
+source_excerpt: Nature loves to conceal herself.
+translation_literal: Nature loves to conceal herself.
+commentary: 'Heraclitus compresses an entire epistemology into five words. *Phýsis* — nature, the process of growth and emergence
+  — is not a static substance but an activity that *loves* (*phileî*) to *hide* (*krýptesthai*). The fragment is not pessimistic:
+  concealment is not failure of knowledge but nature''s mode of appearing. What grows must withdraw its roots; what shines
+  must cast shadow; what speaks the logos must do so through riddles.
+
+  The love of hiding explains why truth is not delivered as open information. Fire transforms while hiding its measure; the
+  soul has a depth that no single saying exhausts; the wise is one who knows that the one and the many are the same logos
+  seen from different angles. Heraclitus trains perception, not doctrine: you learn to read what nature conceals by attending
+  to pattern, tension, and reversal rather than to surface assertion.
+
+  This is the pre-Socratic root of a contemplative stance: reality is not opaque, but it is not transparent either. The philosopher
+  must learn to love the hiding as nature does — to find the showing *in* the concealing.
+
+  Cross-Tradition Resonances:
+
+  - Dào Dé Jīng ch. 1: the Dao that can be named is not the eternal Dao — same structure of essential concealment at the origin
+  of teaching.
+
+  - Abhinavagupta, Tantrasāra: Śiva''s fivefold light is "quietly delighting" — fullness that does not display itself as spectacle
+  but as hidden radiance.
+
+  - Wittgenstein, Tractatus 6.44: "Not how the world is, is the mystical, but that it is" — the hiddenness of being as such,
+  not as puzzle to solve.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Choose one natural process today — a plant, a flame, your own breath. Ask not what it is but how it hides its own
+  working. Watch for the moment concealment itself becomes visible as a mode of showing.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: phýsis krýptesthai phileî (φύσις κρύπτεσθαι φιλεῖ)
 tags:
-- argument
+- breath
 - commentary_text
-- contemplation
-- direct
-- experience
-- fragment
 - heraclitus_fragments
-- hold
-- invites
-- silence
+- knowledge
+- soul
+- truth
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: iast
+  label: IAST
+  body: phýsis krýptesthai phileî (φύσις κρύπτεσθαι φιλεῖ)
+- kind: translation
+  label: Pratibha Translation
+  body: Nature loves to conceal herself.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Heraclitus compresses an entire epistemology into five words. *Phýsis* — nature, the process of growth and emergence
+    — is not a static substance but an activity that *loves* (*phileî*) to *hide* (*krýptesthai*). The fragment is not pessimistic:
+    concealment is not failure of knowledge but nature''s mode of appearing. What grows must withdraw its roots; what shines
+    must cast shadow; what speaks the logos must do so through riddles.
+
+    The love of hiding explains why truth is not delivered as open information. Fire transforms while hiding its measure;
+    the soul has a depth that no single saying exhausts; the wise is one who knows that the one and the many are the same
+    logos seen from different angles. Heraclitus trains perception, not doctrine: you learn to read what nature conceals by
+    attending to pattern, tension, and reversal rather than to surface assertion.
+
+    This is the pre-Socratic root of a contemplative stance: reality is not opaque, but it is not transparent either. The
+    philosopher must learn to love the hiding as nature does — to find the showing *in* the concealing.
+
+    Cross-Tradition Resonances:
+
+    - Dào Dé Jīng ch. 1: the Dao that can be named is not the eternal Dao — same structure of essential concealment at the
+    origin of teaching.
+
+    - Abhinavagupta, Tantrasāra: Śiva''s fivefold light is "quietly delighting" — fullness that does not display itself as
+    spectacle but as hidden radiance.
+
+    - Wittgenstein, Tractatus 6.44: "Not how the world is, is the mystical, but that it is" — the hiddenness of being as such,
+    not as puzzle to solve.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one natural process today — a plant, a flame, your own breath. Ask not what it is but how it hides its own
+    working. Watch for the moment concealment itself becomes visible as a mode of showing.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P010
+  source_reference: Patrick (1889), frag. 10 (B10); Greek φύσις κρύπτεσθαι φιλεῖ

@@ -28,25 +28,38 @@ themes:
 - awareness
 - mantra
 - shiva
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
 tags:
 - awareness
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
 - mantra
 - root_text
 - shiva
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #17
+
+    Through internal enunciation of an entire piṇḍa-mantra in accordance
+
+    with the sequence of its articulable letters, [followed by] the Half-moon,
+
+    the Point, the Resonance, the End of Resonance, and the Void, one
+
+    becomes Shiva. || 42'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_017
+  source_reference: ''

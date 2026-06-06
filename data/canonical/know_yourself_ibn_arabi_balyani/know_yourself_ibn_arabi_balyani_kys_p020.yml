@@ -9,14 +9,7 @@ title: 'Pearl #20'
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
-- him
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
 source_excerpt: It is not that He enters into you or that you enter into Him, or that He comes out of you or that you come
   out of Him. That does not mean that you have being and you are qualified by this or that attribute. What is meant is that
   you never were and never will be, whether through yourself or through Him or in Him or with Him.
@@ -30,18 +23,27 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - attention
-- clarity
 - commentary_text
-- content
-- emphasis
-- grows
-- him
-- inward
 - know_yourself_ibn_arabi_balyani
-- knower
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: It is not that He enters into you or that you enter into Him, or that He comes out of you or that you come out of
+    Him. That does not mean that you have being and you are qualified by this or that attribute. What is meant is that you
+    never were and never will be, whether through yourself or through Him or in Him or with Him.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P020
+  source_reference: ''

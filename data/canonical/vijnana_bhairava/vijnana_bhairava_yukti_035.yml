@@ -25,28 +25,40 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- awareness
-- bhava
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
+- awareness
 tags:
 - attention
 - awareness
-- bhava
-- clarity
-- content
-- emphasis
-- grows
-- inward
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #35
+
+    When any mental-emotional state or mood (bhāva) has been
+
+    released, let awareness be checked: do not move on to another
+
+    bhāva [right away]. Then, through the felt sense (bhāva) of one’s
+
+    Center, a deeper contemplation (atibhāvanā) [of one’s essence-
+
+    nature] expands & blossoms. || 62'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_035
+  source_reference: ''

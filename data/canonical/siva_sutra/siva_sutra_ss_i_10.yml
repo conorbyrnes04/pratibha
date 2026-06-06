@@ -18,6 +18,7 @@ upaya: ''
 themes:
 - awareness
 - consciousness
+- illusion
 - aviveka
 - maya
 - sausupta
@@ -25,13 +26,35 @@ tags:
 - aviveka
 - awareness
 - consciousness
+- illusion
 - maya
 - root_text
 - sausupta
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: अविवेको मायासौषुप्तम्
+- kind: iast
+  label: IAST
+  body: aviveko māyā-sauṣuptam
+- kind: translation
+  label: Pratibha Translation
+  body: Non-discrimination is the deep sleep of illusion.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Deep sleep here is not physiological rest but a **collapse of discernment**. Awareness remains, but unrecognized.
+    Māyā operates most effectively where consciousness forgets itself entirely.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.10
+  source_reference: ''

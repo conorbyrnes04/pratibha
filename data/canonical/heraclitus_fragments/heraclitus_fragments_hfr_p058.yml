@@ -4,54 +4,63 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p058
-unit_label: Good and ill to the physician
-title: Good and ill to the physician
+unit_label: evil (scil.
+title: evil (scil.
 unit_type: teaching_passage
-thesis: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding ripen
-  through experience.'
+thesis: Opposition is not a failure of order but its instrument.
 themes:
-- silence
-- direct
-- fragment
-- argument
-- contemplation
-- experience
-- good
-- hold
-source_excerpt: 'Good and ill to the physician
-
-  surely must be one,
-
-  since he derives his fee
-
-  from torturing the sick.'
-translation_literal: 'Good and ill to the physician
-
-  surely must be one,
-
-  since he derives his fee
-
-  from torturing the sick.'
-commentary: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding
-  ripen through experience.'
+- breath
+- harmony
+source_excerpt: evil (scil. are one). The physicians, therefore, says turing the sick, complain that the patients do not pay
+  them fitting reward for thus effecting these benefits— yand sufferings.t
+translation_literal: evil (scil. are one). The physicians, therefore, says turing the sick, complain that the patients do
+  not pay them fitting reward for thus effecting these benefits— yand sufferings.t
+commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that
+  tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony
+  audible. The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that
+  all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
+  it. Anchor: George T.W. Patrick (1889), fragment 58 (Bywater Greek). Corpus index HFR_P058 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- argument
+- breath
 - commentary_text
-- contemplation
-- direct
-- experience
-- fragment
-- good
+- harmony
 - heraclitus_fragments
-- hold
-- silence
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: evil (scil. are one). The physicians, therefore, says turing the sick, complain that the patients do not pay them
+    fitting reward for thus effecting these benefits— yand sufferings.t
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
+    generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
+    The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things
+    are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it.
+    Anchor: George T.W. Patrick (1889), fragment 58 (Bywater Greek). Corpus index HFR_P058 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P058
+  source_reference: Patrick (1889), frag. 58; corpus HFR_P058

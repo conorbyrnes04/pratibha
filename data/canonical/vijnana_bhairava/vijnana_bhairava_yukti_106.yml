@@ -21,28 +21,40 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 upaya: ''
 themes:
-- breath
-- self
 - action
 - attention
-- clarity
-- cognition
-- content
-- emphasis
+- breath
+- self
 tags:
 - action
 - attention
 - breath
-- clarity
-- cognition
-- content
-- emphasis
 - root_text
 - self
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #106
+
+    How can the unchanging Self be the locus of cognition or action? [Yet
+
+    all] external states (bahir-bhāvas) depend on cognition. Hence, this
+
+    world is empty. || 134'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_106
+  source_reference: ''

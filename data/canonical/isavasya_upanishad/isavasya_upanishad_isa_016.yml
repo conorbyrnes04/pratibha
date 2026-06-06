@@ -31,28 +31,52 @@ insight: The text insists on disciplined differentiation before integration.
 practice: List what action addresses and what contemplation addresses in your current life.
 upaya: ''
 themes:
+- action
 - mantra
-- addresses
-- before
-- differentiation
-- disciplined
-- insists
-- integration
-- teachers
 tags:
-- addresses
-- before
-- differentiation
-- disciplined
-- insists
-- integration
+- action
 - isavasya_upanishad
 - mantra
 - root_text
-- teachers
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'अन्यदेवाहुर्विद्ययाऽन्यदाहुरविद्यया ।
+
+    इति शुश्रुम धीराणां ये नस्तद्विचचक्षिरे ॥ १० ॥'
+- kind: iast
+  label: IAST
+  body: 'anyad evahur vidyaya anyad ahur avidyaya |
+
+    iti susruma dhiranam ye nas tad vicacaksire || 10 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: Wise teachers say vidya and avidya yield different results.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The text insists on disciplined differentiation before integration.
+
+
+    Key Terms:
+
+
+    **dhira** - steady seers/teachers.
+
+
+    Cross-Tradition Resonances:
+
+
+    Pedagogical gradation in Upanishadic teaching.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: List what action addresses and what contemplation addresses in your current life.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_016
+  source_reference: ''

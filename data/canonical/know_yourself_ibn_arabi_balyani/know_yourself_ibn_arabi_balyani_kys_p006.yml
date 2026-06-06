@@ -9,14 +9,7 @@ title: 'Pearl #6'
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
-- himself
-- him
-- except
-- sees
 - attention
-- clarity
-- content
-- emphasis
 source_excerpt: No one sees Him except Himself, no one reaches Him except Himself and no one knows Him except Himself. He
   knows Himself through Himself and He sees Himself by means of Himself. No one but He sees Him.
 translation_literal: No one sees Him except Himself, no one reaches Him except Himself and no one knows Him except Himself.
@@ -28,18 +21,26 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - attention
-- clarity
 - commentary_text
-- content
-- emphasis
-- except
-- him
-- himself
 - know_yourself_ibn_arabi_balyani
-- sees
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: No one sees Him except Himself, no one reaches Him except Himself and no one knows Him except Himself. He knows Himself
+    through Himself and He sees Himself by means of Himself. No one but He sees Him.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P006
+  source_reference: ''

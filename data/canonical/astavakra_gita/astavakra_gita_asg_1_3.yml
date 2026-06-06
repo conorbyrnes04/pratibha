@@ -48,7 +48,7 @@ themes:
 - earth
 - recognition
 - self
-- śiva
+- witness
 - panca mahabhuta
 - saksin
 tags:
@@ -61,10 +61,57 @@ tags:
 - root_text
 - saksin
 - self
-- śiva
+- witness
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'न पृथ्वी न जलं नाग्निर्न वायुर्द्यौर्न वा भवान् ।
+
+    एषां साक्षिणमात्मानं चिद्रूपं विद्धि मुक्तये ॥'
+- kind: iast
+  label: IAST
+  body: 'na pṛthvī na jalaṃ nāgnir na vāyur dyaur na vā bhavān |
+
+    eṣāṃ sākṣiṇam ātmānaṃ cid-rūpaṃ viddhi muktaye ||'
+- kind: translation
+  label: Pratibha Translation
+  body: You are not earth, nor water, nor fire, nor air, nor space.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Extended Translation:
+
+    You are not earth, nor water, nor fire, nor air, nor space. Know the Self as the witness of all these — of the nature
+    of pure consciousness — and be liberated.
+
+
+    The classical five-element negation (*neti neti* in compressed form), but Aṣṭāvakra moves immediately to the positive
+    identification: *cid-rūpa*, of the nature of consciousness. This is the Pratyabhijñā move as well — negation alone is
+    insufficient, even dangerous, if it produces only a sense of void. The teaching is: you are not any of these objects,
+    but you are the *sākṣin* — the witness — in whom all these objects arise. And that witness is not a neutral blank screen:
+    it is *cid-rūpam*, the very nature of knowing, of luminous awareness. Liberation (*muktaye*) is placed at the end of the
+    verse as the fruit of this recognition — not a future event but the immediate consequence of *viddhi*, of *knowing* this
+    directly.
+
+
+    Cross-Tradition Resonance:
+
+    - Śiva Sūtra I.1: *caitanyam ātmā* — Consciousness is the Self; the same recognition in four words
+
+    - Plato, *Phaedo* 79b: the soul as akin to the unchanging, the invisible, the eternal — the *sākṣin* logic in Greek dress
+
+    - Heraclitus Fragment 115: the *logos* that is common to all — the witness-ground as universal'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Become aware of sound. Now notice: you are not the sound. Become aware of a sensation in the body. Notice: you are
+    not the sensation. Become aware of a thought. Notice: you are not the thought. What remains when all objects are excluded?
+    That remainder — the simple fact of being aware — is *cid-rūpa*. Rest there for two minutes.'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Astavakra Gita
   section: verse
   original_id: ASG_1_3
+  source_reference: ''

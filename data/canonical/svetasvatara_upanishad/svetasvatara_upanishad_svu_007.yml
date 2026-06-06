@@ -89,28 +89,120 @@ practice: 'Choose one recurring craving. For seven days, before acting on it, as
   and who is the implied enjoyer? Act only after this threefold check.'
 upaya: ''
 themes:
-- de
+- attention
+- death
+- devotion
+- illusion
 - self
 - transformation
-- nature
-- both
-- perishable
-- imperishable
-- contemplation
+- truth
 tags:
-- both
-- contemplation
-- de
-- imperishable
-- nature
-- perishable
+- attention
+- death
+- devotion
+- illusion
 - root_text
 - self
 - svetasvatara_upanishad
 - transformation
+- truth
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'क्षरं प्रधानममृताक्षरं हरः क्षरात्मानावीशते देव एकः ।
+
+    तस्याभिध्यानाद्योजनात्तत्त्वभावाद्भूयश्चान्ते विश्वमायानिवृत्तिः ॥ १.१० ॥
+
+
+    ज्ञात्वा देवं सर्वपाशापहानिः क्षीणैः क्लेशैर्जन्ममृत्युप्रहाणिः ।
+
+    तस्याभिध्यानात्तृतीयं देहभेदे विश्वैश्वर्यं केवल आप्तकामः ॥ १.११ ॥
+
+
+    एतज्ज्ञेयं नित्यमेवात्मसंस्थं नातः परं वेदितव्यं हि किञ्चित् ।
+
+    भोक्ता भोग्यं प्रेरितारं च मत्वा सर्वं प्रोक्तं त्रिविधं ब्रह्ममेतत् ॥ १.१२ ॥'
+- kind: iast
+  label: IAST
+  body: 'kṣaraṃ pradhānam amṛtākṣaraṃ haraḥ kṣarātmānāv īśate deva ekaḥ |
+
+    tasyābhidhyānād yojanāt tattva-bhāvād bhūyaś cānte viśva-māyā-nivṛttiḥ || 1.10 ||
+
+
+    jñātvā devaṃ sarva-pāśāpahāniḥ kṣīṇaiḥ kleśair janma-mṛtyu-prahāṇiḥ |
+
+    tasyābhidhyānāt tṛtīyaṃ deha-bhede viśvaiśvaryaṃ kevala āpta-kāmaḥ || 1.11 ||
+
+
+    etaj jñeyaṃ nityam evātma-saṃsthaṃ nātaḥ paraṃ veditavyaṃ hi kiñcit |
+
+    bhoktā bhogyaṃ preritāraṃ ca matvā sarvaṃ proktaṃ trividhaṃ brahmam etat || 1.12 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Primary nature is perishable; Hara is immortal and imperishable. The one God rules both perishable nature and the
+    embodied self. Through deep contemplation, union, and realization of truth, world-illusion subsides.
+
+
+    Knowing the Divine, all bonds fall away; with afflictions exhausted, birth-and-death domination ends. Through contemplation
+    comes a higher state; beyond body-identification, one abides fulfilled.
+
+
+    This eternal, established in the self, is what must be known; beyond it nothing remains to be known. Enjoyer, enjoyed,
+    and mover - understood together - are the threefold Brahman.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'These verses are one of the clearest anti-reduction statements in the text. Nature is real yet perishable; Lordship
+    is imperishable yet immanent to process. The Upaniṣad therefore rejects both crude materialism (only nature) and escapist
+    transcendence (only beyond-world). The one Divine governs both the mutable field and the experiencing individual.
+
+
+    The method triad is also explicit: contemplation (*abhidhyana*), union (*yojana*), and truth-realization (*tattva-bhava*).
+    This progression blocks two common distortions: purely conceptual philosophy without transformation, and purely affective
+    devotion without insight. Liberation requires both depth of attention and ontological discernment.
+
+
+    Verse 1.12 is especially strong: if enjoyer, enjoyed, and mover are seen in their unity-ground, nothing essential remains
+    unknown. This is not informational totality; it is structural completeness. One has understood the architecture of bondage
+    and release. The practical shift is from "I am the consumer of experiences" to "experience unfolds in a larger field whose
+    source I am not separate from."
+
+
+    Key Terms:
+
+
+    **pradhana (प्रधान)** - primary matrix of manifested nature; real as process, not ultimate as ground.
+
+
+    **abhidhyana (अभिध्यान)** - sustained contemplative attention charged with intentionality; more than casual reflection.
+
+
+    **aptakama (आप्तकाम)** - one whose fundamental lack has ended; fulfillment not dependent on acquisition.
+
+
+    Cross-Tradition Resonances:
+
+
+    **Bhagavad Gita 15.16-18:** Similar mutable/immutable distinction completed in Supreme Person. *Divergence:* Gita embeds
+    this in dharma-action and devotion to Krishna.
+
+
+    **Mandukya Karika III:** Shared concern with dissolving superimposition. *Divergence:* Karika often de-emphasizes creator
+    language that Śvetāśvatara retains.
+
+
+    **Plotinus, Enneads VI:** Both distinguish changing process from higher immutable principle. *Divergence:* Plotinus frames
+    return as ascent of intellect; Śvetāśvatara integrates devotion to Hara.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Choose one recurring craving. For seven days, before acting on it, ask: What is perishable here, what feels imperishable,
+    and who is the implied enjoyer? Act only after this threefold check.'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Svetasvatara Upanishad
   section: teaching_passage
   original_id: SVU_007
+  source_reference: ''

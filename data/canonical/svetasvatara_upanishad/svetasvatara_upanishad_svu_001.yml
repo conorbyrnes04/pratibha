@@ -100,26 +100,133 @@ practice: When a strong mood arises, name the cause you are assigning to it (tim
   and the field feels larger than the story.
 upaya: ''
 themes:
+- attention
 - awareness
-- dao
-- de
+- fate
 - ignorance
 - practice
 - self
-- śakti
+- suffering
+- witnessing
 tags:
+- attention
 - awareness
-- dao
-- de
+- fate
 - ignorance
 - practice
 - root_text
 - self
+- suffering
 - svetasvatara_upanishad
-- śakti
+- witnessing
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'किं कारणं ब्रह्म कुतः स्म जाता, जीवामः केन क्व च संप्रतिष्ठाः ।
+
+    अधिष्ठिताः केन सुखेतरेषु वर्तामहे ब्रह्मविदो व्यवस्थाम् ॥ १.१ ॥
+
+
+    कालः स्वभावो नियतिर्यदृच्छा भूतानि योनिः पुरुष इति चिन्त्या ।
+
+    संयोग एषां न त्वात्मभावादात्माप्यनीशः सुखदुःखहेतोः ॥ १.२ ॥
+
+
+    ते ध्यानयोगानुगता अपश्यन्देवात्मशक्तिं स्वगुणैर्निगूढाम् ।
+
+    यः कारणानि निखिलानि तानि कालात्मयुक्तान्यधितिष्ठत्येकः ॥ १.३ ॥'
+- kind: iast
+  label: IAST
+  body: 'kiṃ kāraṇaṃ brahma kutaḥ sma jātāḥ, jīvāmaḥ kena kva ca saṃpratiṣṭhāḥ |
+
+    adhiṣṭhitāḥ kena sukha-itareṣu vartāmahe brahma-vido vyavasthām || 1.1 ||
+
+
+    kālaḥ svabhāvo niyatir yadṛcchā bhūtāni yoniḥ puruṣa iti cintyāḥ |
+
+    saṃyoga eṣāṃ na tv ātma-bhāvād ātmā api anīśaḥ sukha-duḥkha-hetoḥ || 1.2 ||
+
+
+    te dhyāna-yoga-anugatā apaśyan deva-ātma-śaktiṃ sva-guṇair nigūḍhām |
+
+    yaḥ kāraṇāni nikhilāni tāni kāla-ātma-yuktāni adhitiṣṭhati ekaḥ || 1.3 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Those who inquire into Brahman ask: What is the cause? From where are we born? By what do we live, and in what are
+    we established? Under whose governance do we move through pleasure and pain?
+
+
+    Is time the cause? Inherent nature? Necessity? Chance? The elements? Womb? Person? None of these, alone or in combination,
+    is sufficient; even the individual self does not command the law of suffering and joy.
+
+
+    Those who enter contemplation see the Divine Self-Power [*devātma-śakti*], hidden by its own modalities. The One stands
+    over all causal chains, including time and the embodied self.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The opening claim is that first-cause discourse fails until causality itself is re-situated inside a higher principle.
+    The text does not merely list competing explanations; it stages and then dismantles an entire causal marketplace: time,
+    nature, necessity, chance, matter, and person all appear as candidates, then collapse under examination. The critical
+    move is counterintuitive: even the *ātman* understood as empirical individual does not qualify as ultimate cause. That
+    refusal prevents an early metaphysical shortcut in which inwardness is mistaken for ultimacy.
+
+
+    Verse 1.3 then makes the decisive turn: what is ultimate is neither a mechanism nor an event, but *deva-ātma-śakti* -
+    Divine Self-Power - concealed in its own *guṇic* modalities. This is why the Upaniṣad can absorb Sāṃkhya vocabulary without
+    adopting Sāṃkhya dualism: prakṛti-like terms are retained, but autonomy is denied. Causality is real at the level of world-process,
+    yet derivative at the level of ground.
+
+
+    The existential implication is immediate: confusion persists when one seeks certainty by multiplying explanations; clarity
+    appears when attention shifts from isolated causes to the field in which causality itself is possible. The text therefore
+    links metaphysics and practice from the start: contemplative seeing, not speculation alone, resolves the question.
+
+
+    Key Terms:
+
+
+    **devātma-śakti (देवात्मशक्ति)** - *deva* (radiant/divine) + *ātma* (Self) + *śakti* (power, capacity) -> the Divine''s
+    own self-power of manifestation. Not an independent second principle (as a strict prakṛti dualism would require), but
+    Brahman-as-īśvara in dynamic mode. This matters because it allows cosmology without metaphysical bifurcation.
+
+
+    **niyati (नियति)** - from root *ni-yam* ("to regulate, constrain") -> necessity, lawful determinacy. In this passage it
+    is tested and rejected as ultimate. The text accepts lawful order but denies its ultimacy, preventing determinism from
+    becoming ontology.
+
+
+    **anīśa (अनीश)** - *an* (not) + *īśa* (lord, ruler) -> non-sovereign. The individual self in ignorance is called *anīśa*:
+    conscious, but not master. The departure from common spiritual language is sharp: subjective awareness alone is not yet
+    liberating sovereignty.
+
+
+    Cross-Tradition Resonances:
+
+
+    **Māṇḍūkya Kārikā I.11-12:** Both texts deny that cause-effect chains can ground the unconditioned; conditioned states
+    remain within causal dependence while the Fourth has no causal locus. *Divergence:* Gauḍapāda radicalizes this into near
+    non-origination logic; Śvetāśvatara retains a stronger īśvara-governed cosmology.
+
+
+    **Epictetus, Enchiridion 1:** Both relocate agency by distinguishing what appears causal from what is truly sovereign
+    in human life. *Divergence:* Epictetus operationalizes this as ethical discernment in *prohairesis*; Śvetāśvatara extends
+    the frame to metaphysical causation itself.
+
+
+    **Dào Dé Jīng 1:** Both refuse superficial causal naming and indicate a source that naming cannot exhaust. *Divergence:*
+    Daoist apophasis keeps the source impersonal; Śvetāśvatara increasingly personalizes source as īśvara/Rudra.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: When a strong mood arises, name the cause you are assigning to it (time, person, circumstance, fate), then pause and
+    ask what in you is aware of this entire assignment process. Stay with that witnessing shift until blame-pressure softens
+    and the field feels larger than the story.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Svetasvatara Upanishad
   section: teaching_passage
   original_id: SVU_001
+  source_reference: ''

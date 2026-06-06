@@ -21,28 +21,54 @@ insight: At this stage, thought itself is no longer an obstacle.
 practice: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 upaya: ''
 themes:
+- action
 - awareness
 - breath
+- contraction
 - knowledge
 - recognition
 - self
 - vitarka
-- atma-jnana
-- prasada
 tags:
-- atma-jnana
+- action
 - awareness
 - breath
+- contraction
 - knowledge
-- prasada
 - recognition
 - root_text
 - self
 - siva_sutra
 - vitarka
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: वितर्क आत्मज्ञानम्
+- kind: iast
+  label: IAST
+  body: vitarka ātmājñānam
+- kind: translation
+  label: Pratibha Translation
+  body: Reflection becomes knowledge of the Self.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'At this stage, thought itself is no longer an obstacle. When reflection arises without grasping, without agenda,
+    it turns back toward its own source. Vitarka is not analysis in the ordinary sense, but a gentle circling of awareness
+    around itself.
+
+
+    Here knowing no longer binds, because it does not claim ownership. Thought becomes translucent, serving recognition rather
+    than replacing it. Even ordinary cognition, when free of contraction, discloses the Self.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.17
+  source_reference: ''

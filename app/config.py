@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: str | None = None
     GROQ_API_KEY: str | None = None
     OPENROUTER_API_KEY: str | None = None
-    OPENROUTER_MODEL: str = "openrouter/google/gemma-3-12b-it:free"
+    OPENROUTER_MODEL: str = "openrouter/meta-llama/llama-3.3-70b-instruct"
     OPENROUTER_SITE_URL: str | None = None
     OPENROUTER_APP_NAME: str = "Pratibha"
     DEFAULT_MODEL: str = "groq/llama-3.1-70b-versatile"
@@ -41,5 +41,22 @@ class Settings(BaseSettings):
         return s
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+
+    def chat_provider(self) -> str:
+        if self.OPENROUTER_API_KEY:
+            return "openrouter"
+        if self.GROQ_API_KEY:
+            return "groq"
+        if self.OPENAI_API_KEY:
+            return "openai"
+        return "none"
+
+    def effective_default_model(self) -> str:
+        if self.chat_provider() == "openrouter":
+            model = (self.DEFAULT_MODEL or "").strip()
+            if model.startswith("openrouter/"):
+                return model
+            return self.OPENROUTER_MODEL
+        return self.DEFAULT_MODEL
 
 settings = Settings()

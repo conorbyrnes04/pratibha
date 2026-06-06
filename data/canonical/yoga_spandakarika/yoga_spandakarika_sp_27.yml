@@ -13,11 +13,6 @@ themes:
 - awareness
 - breath
 - vibration
-- stanza
-- contemplative
-- directly
-- disclose
-- insight
 source_excerpt: Shared source passage with Stanza 26. See Stanza 26 for the full translation and commentary.
 translation_literal: Shared source passage with Stanza 26. See Stanza 26 for the full translation and commentary.
 commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
@@ -31,16 +26,27 @@ tags:
 - awareness
 - breath
 - commentary_text
-- contemplative
-- directly
-- disclose
-- insight
-- stanza
 - vibration
 - yoga_spandakarika
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: Shared source passage with Stanza 26. See Stanza 26 for the full translation and commentary.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit for 5 minutes and follow the breath naturally. At each inhale and exhale, notice the subtle vibration of awareness
+    before naming it.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Yoga Spandakarika
   section: Second Flow
   original_id: SP_27
+  source_reference: ''

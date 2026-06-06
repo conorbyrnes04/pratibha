@@ -22,29 +22,34 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes:
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- itself
+themes: []
 tags:
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- itself
-- pause
-- read
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #47
+
+    When the external sensory field has disappeared but sleep has
+
+    not yet come, that [liminal] mental state is attainable in which
+
+    the Supreme Goddess (Parā Devī) manifests. || 75'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_047
+  source_reference: ''

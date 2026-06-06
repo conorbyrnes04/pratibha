@@ -31,12 +31,14 @@ insight: U is the middle vowel — between the open A and the closed M — and t
 practice: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 upaya: ''
 themes:
+- action
 - breath
 - consciousness
 - knowledge
 - recognition
 - self
 tags:
+- action
 - breath
 - consciousness
 - knowledge
@@ -45,8 +47,44 @@ tags:
 - root_text
 - self
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: स्वप्नस्थानस्तैजस उकारो द्वितीया मात्रोत्कर्षादुभयत्वाद्वोत्कर्षति ह वै ज्ञानसन्ततिं समानश्च भवति नास्याब्रह्मवित्कुले
+    भवति य एवं वेद ॥ १० ॥
+- kind: iast
+  label: IAST
+  body: svapnasthānas taijasa ukāro dvitīyā mātrā utkarṣād ubhayatvād vā utkarṣati ha vai jñānasantatiṃ samānaś ca bhavati
+    nāsyābrahmavit kule bhavati ya evaṃ veda || 10 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Taijasa, whose sphere is the dream state, is U — the second element — on account of its superiority or its intermediate
+    position. One who knows this elevates the stream of knowledge, becomes balanced, and in their lineage no one is born without
+    knowledge of Brahman.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'U is the middle vowel — between the open A and the closed M — and this medial position is its defining characteristic.
+    *Utkarṣa* (superiority, elevation): U has a naturally rising, elevating quality; its sound lifts from the position of
+    A toward the closure of M. This mirrors Taijasa''s relationship to the other states: it rises from the gross engagement
+    of waking toward the subtle interiority of deep sleep, while maintaining the complete cognitive apparatus in subtle form.
+
+
+    *Ubhayatva* (being in between, intermediate): U participates in both extremes — it has the openness of A and the interiority
+    that approaches M. Taijasa similarly participates in both the external orientation of waking and the internal orientation
+    of deep sleep.
+
+
+    The promise that "no one in the lineage is born without Brahman-knowledge" carries an important implication: genuine recognition
+    does not stay bounded within one individual. The field of consciousness in which recognition occurs is not private property.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Mandukya Upanishad and Gaudapada Karika
   section: teaching_passage
   original_id: MUK_013
+  source_reference: ''

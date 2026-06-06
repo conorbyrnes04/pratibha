@@ -19,25 +19,36 @@ themes:
 - suddha-tattva
 - sandhana
 - apasu-sakti
-- power
-- another
-- bound
-- dissolves
-- possibility
 tags:
-- another
 - apasu-sakti
-- bound
-- dissolves
-- possibility
-- power
 - root_text
 - sandhana
 - siva_sutra
 - suddha-tattva
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: शुद्धतत्त्वसन्धानाद्वा अपशुशक्तिः
+- kind: iast
+  label: IAST
+  body: śuddha-tattva-sandhānād vā apaśu-śaktiḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Or, by resting in the pure principle, the bound power dissolves.
+- kind: commentary
+  label: Pratibha Commentary
+  body: There is another possibility. Without traversing the play of manifestation, one may turn directly toward the unconditioned.
+    In that alignment, the power that binds reveals itself as never having been separate.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.16
+  source_reference: ''

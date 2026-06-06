@@ -25,26 +25,36 @@ upaya: ''
 themes:
 - awareness
 - śiva
-- attentive
-- conceptual
-- deeper
-- everything
-- line
-- listening
 tags:
-- attentive
 - awareness
-- conceptual
-- deeper
-- everything
-- line
-- listening
 - root_text
 - vijnana_bhairava
 - śiva
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #102
+
+    One who constantly utters (uccāra.na) the word ‘Bhairava’,
+
+    understanding that it means “That which supports (BH.R) everything,
+
+    that which produces (RAc) everything, which grants all [blessings] and
+
+    pervades (VyĀp) the whole”, becomes Śiva. || 130'
+- kind: commentary
+  label: Pratibha Commentary
+  body: This line points to a deeper order that is received through attentive listening rather than conceptual noise.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_102
+  source_reference: ''

@@ -23,28 +23,38 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- awareness
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
+- awareness
 tags:
 - attention
 - awareness
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #72
+
+    The One who has awareness as his fundamental attribute exists in
+
+    all bodies; and awareness [as such] is the same in all beings. Thus,
+
+    a person who contemplates everything as having that [Divine]
+
+    nature overcomes [the false appearances of] mundane existence. || 100'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_072
+  source_reference: ''

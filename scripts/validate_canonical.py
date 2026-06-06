@@ -19,6 +19,7 @@ CANONICAL_ROOT_DEFAULT = ROOT / "data" / "canonical"
 REQ_COMMON = ["category", "work_id", "work_title", "unit_id", "unit_type"]
 REQ_ROOT = ["translation_literal"]
 REQ_COMMENTARY = ["thesis", "source_excerpt"]
+LAYER_ORDER = ["original", "iast", "translation", "commentary", "key_terms", "resonances", "practice", "appendix"]
 
 
 def load(path: Path) -> dict[str, Any] | None:
@@ -84,6 +85,31 @@ def validate_one(path: Path, y: dict[str, Any]) -> tuple[list[str], list[str]]:
 
     if nonempty(y.get("sanskrit_devanagari")) and not nonempty(y.get("sanskrit_iast")):
         warns.append("has Devanagari but missing IAST")
+
+    layers = y.get("pratibha_layers")
+    if layers is not None:
+        if not isinstance(layers, list):
+            errors.append("`pratibha_layers` must be a list")
+        else:
+            seen_order = -1
+            for idx, layer in enumerate(layers):
+                if not isinstance(layer, dict):
+                    errors.append(f"`pratibha_layers[{idx}]` must be an object")
+                    continue
+                kind = str(layer.get("kind") or "").strip()
+                if kind not in LAYER_ORDER:
+                    errors.append(f"`pratibha_layers[{idx}].kind` must be one of {', '.join(LAYER_ORDER)}")
+                    continue
+                order = LAYER_ORDER.index(kind)
+                if order < seen_order and kind != "appendix":
+                    warns.append("`pratibha_layers` are not in canonical display order")
+                seen_order = max(seen_order, order)
+                if not nonempty(layer.get("body")) and not nonempty(layer.get("items")):
+                    warns.append(f"`pratibha_layers[{idx}]` has no body/items")
+
+    maturity = str(y.get("editorial_maturity") or "").strip()
+    if maturity and maturity not in {"publishable", "strong_draft", "needs_rewrite", "structural_draft"}:
+        errors.append("`editorial_maturity` must be publishable, strong_draft, needs_rewrite, or structural_draft")
 
     themes = y.get("themes")
     if themes is not None and not isinstance(themes, list):

@@ -47,11 +47,15 @@ insight: The Upanishad rejects one-sided absolutism.
 practice: Balance one contemplative practice with one concrete act of service today.
 upaya: ''
 themes:
+- death
+- duty
 - ignorance
 - knowledge
 - practice
 - self
 tags:
+- death
+- duty
 - ignorance
 - isavasya_upanishad
 - knowledge
@@ -59,8 +63,60 @@ tags:
 - root_text
 - self
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'अन्धन्तमः प्रविशन्ति येऽविद्यामुपासते ।
+
+    ततो भूय इव ते तमो य उ विद्यायां रताः ॥ ९ ॥
+
+
+    विद्यां चाविद्यां च यस्तद्वेदोभयं सह ।
+
+    अविद्यया मृत्युं तीर्त्वा विद्ययामृतमश्नुते ॥ ११ ॥'
+- kind: iast
+  label: IAST
+  body: 'andham tamah pravisanti ye''vidyam upasate |
+
+    tato bhuya iva te tamo ya u vidyayam ratah || 9 ||
+
+
+    vidyam cavidyam ca yas tad vedobhayam saha |
+
+    avidyaya mrtyum tirtva vidyayamrtam asnute || 11 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Those devoted only to ignorance enter darkness; those devoted only to knowledge enter deeper darkness.
+
+    One who knows both together crosses death through avidya and attains immortality through vidya.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The Upanishad rejects one-sided absolutism. Pure activism without insight binds. Pure knowledge-talk without embodied
+    duty also binds. Integration is the discipline: practice in the world with insight into the Real.
+
+
+    Key Terms:
+
+
+    **avidya** - pragmatic, world-engaged knowing at the empirical level (also ignorance in other contexts).
+
+
+    **vidya** - liberating knowledge of the Self.
+
+
+    Cross-Tradition Resonances:
+
+
+    **Madhyamaka middle logic:** avoid extremes.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Balance one contemplative practice with one concrete act of service today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_004
+  source_reference: ''

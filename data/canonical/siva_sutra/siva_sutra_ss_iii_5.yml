@@ -16,28 +16,41 @@ insight: In Āṇavopāya, error is precise.
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- illusion
 - kala
 - aviveka
 - maya
-- limitation
-- anavopaya
-- beginning
-- error
-- illusion
 tags:
-- anavopaya
 - aviveka
-- beginning
-- error
 - illusion
 - kala
-- limitation
 - maya
 - root_text
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: कलादीनां तत्त्वानामविवेको मायाया
+- kind: iast
+  label: IAST
+  body: kalādīnāṁ tattvānām aviveko māyāyāḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Non-discrimination of the principles beginning with limitation is illusion.
+- kind: commentary
+  label: Pratibha Commentary
+  body: In Āṇavopāya, error is precise. Māyā operates when limitation (_kalā_ and the rest) is taken as final rather than
+    functional. The practitioner learns to see limitation as a condition, not an identity.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Āṇavopāya
   original_id: SS_III.5
+  source_reference: ''

@@ -39,8 +39,34 @@ tags:
 - self
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: आत्मा चित्तम्
+- kind: iast
+  label: IAST
+  body: ātmā cittaṁ
+- kind: translation
+  label: Pratibha Translation
+  body: The mind is the Self.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'At first glance this contradicts the opening of the text. But here the statement is contextual, not absolute. For
+    the practitioner established in limitation, the most immediate access to awareness is the mind itself.
+
+
+    Rather than rejecting thought, Āṇavopāya begins by dignifying it. Mind is not an obstacle to be eliminated, but the nearest
+    mirror of consciousness available to one who has not yet stabilized recognition. To work skillfully with mind is to work
+    with the Self in its most accessible form.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Āṇavopāya
   original_id: SS_III.1
+  source_reference: ''

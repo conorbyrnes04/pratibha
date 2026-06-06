@@ -9,14 +9,9 @@ title: Verses 8–12 · Om and the Fourfold Correspondence
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
+- attention
 - meditation
 - self
-- analysis
-- attention
-- clarity
-- content
-- correspondence
-- emphasis
 source_excerpt: 'Overview
 
   The second movement of the Upaniṣad maps the four-quarter analysis of the Self onto the phonetic analysis of Om, establishing
@@ -31,19 +26,31 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
-- analysis
 - attention
-- clarity
 - commentary_text
-- content
-- correspondence
-- emphasis
 - mandukya_upanishad_and_gaudapada_karika
 - meditation
 - self
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'Overview
+
+    The second movement of the Upaniṣad maps the four-quarter analysis of the Self onto the phonetic analysis of Om, establishing
+    a correspondence that transforms sound-meditation into a complete method of Self-inquiry.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Mandukya Upanishad and Gaudapada Karika
   section: teaching_passage
   original_id: MUK_010
+  source_reference: ''

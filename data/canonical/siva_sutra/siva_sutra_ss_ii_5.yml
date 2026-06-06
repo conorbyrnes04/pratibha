@@ -34,8 +34,33 @@ tags:
 - tantra
 - vidya
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: विद्यासनातन्त्राणि
+- kind: iast
+  label: IAST
+  body: vidyāsanā-tantrāṇi
+- kind: translation
+  label: Pratibha Translation
+  body: Disciplines arise from established knowledge.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Once knowledge has become embodied, it naturally expresses itself as discipline. Practice is no longer imposed from
+    outside; it unfolds from understanding. What is known reorganizes how one sits, speaks, listens, and acts.
+
+
+    These disciplines are not rigid systems. They are responsive forms shaped by clarity. When knowledge is partial, discipline
+    becomes compulsive. When knowledge is stable, discipline becomes fluid.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāktopāya
   original_id: SS_II.5
+  source_reference: ''

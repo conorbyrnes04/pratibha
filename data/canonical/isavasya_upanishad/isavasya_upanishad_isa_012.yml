@@ -33,26 +33,50 @@ upaya: ''
 themes:
 - mantra
 - self
-- beings
-- ethical
-- non-hatred
-- realization
-- signature
-- advaitic
 tags:
-- advaitic
-- beings
-- ethical
 - isavasya_upanishad
 - mantra
-- non-hatred
-- realization
 - root_text
 - self
-- signature
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'यस्तु सर्वाणि भूतान्यात्मन्येवानुपश्यति ।
+
+    सर्वभूतेषु चात्मानं ततो न विजुगुप्सते ॥ ६ ॥'
+- kind: iast
+  label: IAST
+  body: 'yas tu sarvani bhutany atmany evanupasyati |
+
+    sarvabhutesu catmanam tato na vijugupsate || 6 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: Who sees all beings in the Self and the Self in all beings does not shrink in hatred.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Realization has an ethical signature: non-hatred.
+
+
+    Key Terms:
+
+
+    **anupasyati** - sustained seeing.
+
+
+    Cross-Tradition Resonances:
+
+
+    Advaitic compassion logic.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'When aversion arises, ask: what shared being am I refusing to see?'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_012
+  source_reference: ''

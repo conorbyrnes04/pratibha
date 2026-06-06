@@ -31,28 +31,56 @@ insight: The text does not reject karma; it purifies agency through non-attachme
 practice: 'Before acting, set intention: "I offer this action; I do not own its fruits."'
 upaya: ''
 themes:
-- mantra
-- way
 - action
-- karma
-- does
-- agency
+- mantra
 - non-attachment
-- purifies
+- way
 tags:
 - action
-- agency
-- does
 - isavasya_upanishad
-- karma
 - mantra
 - non-attachment
-- purifies
 - root_text
 - way
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'कुर्वन्नेवेह कर्माणि जिजीविषेच्छतं समाः ।
+
+    एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥ २ ॥'
+- kind: iast
+  label: IAST
+  body: 'kurvanneveha karmani jijivisec chatam samah |
+
+    evam tvayi nanyatheto''sti na karma lipyate nare || 2 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: Living fully through action, one may wish to live a hundred years; only this way action does not bind.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The text does not reject karma; it purifies agency through non-attachment.
+
+
+    Key Terms:
+
+
+    **karma lipyate** - action sticking/binding.
+
+
+    Cross-Tradition Resonances:
+
+
+    Nishkama karma framework.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Before acting, set intention: "I offer this action; I do not own its fruits."'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_008
+  source_reference: ''

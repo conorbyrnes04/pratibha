@@ -25,28 +25,42 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- attention
 - consciousness
 - knowledge
-- attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
 tags:
 - attention
-- clarity
 - consciousness
-- content
-- emphasis
-- grows
-- inward
 - knowledge
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #58
+
+    Having known the [three] states of ‘universe’ and so on –
+
+    consisting of limited knowledge producing duality, illumination
+
+    of the external, and darkness respectively – as the very form of
+
+    Bhairava, he becomes one who carries within the infinite Light
+
+    of Consciousness. || 86'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_058
+  source_reference: ''

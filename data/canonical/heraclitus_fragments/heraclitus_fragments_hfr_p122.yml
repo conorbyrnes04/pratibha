@@ -4,48 +4,56 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p122
-unit_label: After death comes
-title: After death comes
+unit_label: There awaits men after death what they neither hope nor think.
+title: There awaits men after death what they neither hope nor think.
 unit_type: teaching_passage
-thesis: 'The line turns inquiry inward: character and attention shape destiny.'
+thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
+  things.'
 themes:
-- silence
-- after
-- attention
-- character
-- comes
+- breath
 - death
-- destiny
-- inquiry
-source_excerpt: 'After death comes
-
-  nothing hoped for
-
-  nor imagined.'
-translation_literal: 'After death comes
-
-  nothing hoped for
-
-  nor imagined.'
-commentary: 'The line turns inquiry inward: character and attention shape destiny. Mortality sharpens the call to live deliberately.'
+source_excerpt: There awaits men after death what they neither hope nor think.
+translation_literal: There awaits people after death what they neither hope nor think.
+commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs
+  all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
+  Anchor: George T.W. Patrick (1889), fragment 122 (Bywater Greek). Corpus index HFR_P122 follows the Diels–Kranz-style numbering
+  used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- after
-- attention
-- character
-- comes
+- breath
 - commentary_text
 - death
-- destiny
 - heraclitus_fragments
-- inquiry
-- silence
 quality_score: 0
-appendixes: []
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: There awaits people after death what they neither hope nor think.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
+    things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
+    Anchor: George T.W. Patrick (1889), fragment 122 (Bywater Greek). Corpus index HFR_P122 follows the Diels–Kranz-style
+    numbering used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
+- kind: appendix
+  label: Public-domain anchor (Patrick 1889)
+  body: There awaits men after death what they neither hope nor think.
+appendixes:
+- commentator: Public-domain anchor (Patrick 1889)
+  text: There awaits men after death what they neither hope nor think.
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P122
+  source_reference: Patrick (1889), frag. 122; corpus HFR_P122

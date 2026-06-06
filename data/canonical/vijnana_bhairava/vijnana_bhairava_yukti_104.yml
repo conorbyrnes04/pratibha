@@ -24,27 +24,35 @@ practice: For 2 minutes, observe inner speech as sound only. Return to the silen
 upaya: ''
 themes:
 - awareness
-- attentive
-- conceptual
-- deeper
-- line
-- listening
-- noise
-- order
 tags:
-- attentive
 - awareness
-- conceptual
-- deeper
-- line
-- listening
-- noise
-- order
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #104
+
+    “Eternal, majestic, requiring no external support, all-pervasive,
+
+    and Lord of All”—meditating on these words [as applying equally
+
+    to God and to oneself] every possible moment, one attains the
+
+    goal in accordance with their meaning. || 132'
+- kind: commentary
+  label: Pratibha Commentary
+  body: This line points to a deeper order that is received through attentive listening rather than conceptual noise.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_104
+  source_reference: ''

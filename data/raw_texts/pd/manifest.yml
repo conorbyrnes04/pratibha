@@ -1,0 +1,151 @@
+# Public-domain anchor texts for the Pratibha corpus.
+# Stored here for philological reference — not ingested into study units by default.
+# Regenerate Gutenberg files: python scripts/fetch_pd_sources.py
+
+version: 1
+updated: 2026-06-06
+
+sources:
+  - id: heraclitus_patrick_1889
+    collection: heraclitus_fragments
+    translator: George T.W. Patrick
+    year: 1889
+    work: The Fragments of the Work of Heraclitus of Ephesus on Nature
+    license: public_domain
+    local_path: greek/heraclitus_patrick_1889.txt
+    legacy_path: ../patrick_heraclitus_1889.txt
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/fragmentsofworko00hera
+
+  - id: zhuangzi_giles_1889
+    collection: the_book_of_chuang_tzu
+    translator: Herbert A. Giles
+    year: 1889
+    work: Chuang Tzu — Mystic, Moralist, and Social Reformer
+    license: public_domain
+    local_path: chinese/zhuangzi_giles_gutenberg_59709.txt
+    alternate_path: chinese/zhuangzi_giles_gutenberg_59709_fresh.txt
+    legacy_path: ../ChaungTzuRaw
+    links:
+      - label: Project Gutenberg #59709
+        url: https://www.gutenberg.org/ebooks/59709
+
+  - id: bhagavad_gita_arnold
+    collection: bhagavad_gita
+    translator: Sir Edwin Arnold
+    work: The Bhagavad Gita
+    license: public_domain
+    local_path: indian/bhagavad_gita_arnold_gutenberg_2388.txt
+    links:
+      - label: Project Gutenberg #2388
+        url: https://www.gutenberg.org/ebooks/2388
+
+  - id: phaedo_jowett
+    collection: phaedo_plato
+    translator: Benjamin Jowett
+    work: Phaedo
+    license: public_domain
+    local_path: greek/phaedo_jowett_gutenberg_1658.txt
+    links:
+      - label: Project Gutenberg #1658
+        url: https://www.gutenberg.org/ebooks/1658
+
+  - id: plotinus_mackenna
+    collection: plotinus_enneads
+    translator: Stephen MacKenna & B. S. Page
+    work: The Six Enneads
+    license: public_domain
+    local_path: greek/plotinus_mackenna_enneads.txt
+    legacy_path: ../plotinus_enneads_full.txt
+    links:
+      - label: MIT Classics
+        url: https://classics.mit.edu/Plotinus/enneads.html
+
+  - id: tao_te_ching_legge
+    collection: tao_te_ching
+    translator: James Legge
+    year: 1891
+    work: Tao Te Ching (Sacred Books of the East vol. 39)
+    license: public_domain
+    local_path: chinese/tao_te_ching_legge_gutenberg_216.txt
+    note: PD alternative for yellow-tier Tao Te Ching units (corpus uses Pratibha editorial + Lau/Mitchell refs)
+    links:
+      - label: Project Gutenberg #216
+        url: https://www.gutenberg.org/ebooks/216
+
+  - id: epictetus_enchiridion_45109
+    collection: epictetus_works
+    translator: George Helms (1948 ed.; not Carter)
+    work: The Enchiridion
+    license: public_domain
+    local_path: greek/epictetus_enchiridion_gutenberg_45109.txt
+    note: Corpus cites Carter; this Gutenberg Enchiridion is a different PD translation — Carter full works see references/epictetus_carter_1759.md
+
+  - id: epictetus_long_10662
+    collection: epictetus_works
+    translator: George Long
+    work: Discourses of Epictetus
+    license: public_domain
+    local_path: greek/epictetus_long_discourses_gutenberg_10662.txt
+    note: Supplementary PD Epictetus material
+
+  - id: yoga_sutras_dvivedi_1890
+    collection: patanjali_yoga_sutras
+    translator: Manilal Nabhubhai Dvivedi
+    year: 1890
+    work: The Yoga Sutra of Patanjali
+    license: public_domain
+    local_path: indian/yoga_sutras_dvivedi_1890.pdf
+    legacy_path: "../[Patanjali Yoga Sutras] Dvivedi, Manilal Nabhubhai - The Yoga Sutra of Patanjali_ (translation, with introduction, appendix, and notes based upon several authentic commentaries) (1890, Bombay Theosophical publication fund) - libgen.li.pdf"
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/yogaSutraOfPatanjali
+
+  - id: yoga_sutras_gretil_sanskrit
+    collection: patanjali_yoga_sutras
+    translator: null
+    work: Yoga Sūtras — GRETIL IAST
+    license: public_domain
+    local_path: indian/yoga_sutras_gretil_iast_sanskrit.txt
+    legacy_path: ../yoga_sutras_gretil_iast.txt
+    note: Sanskrit/IAST only — no PD English in this file
+
+# Not downloaded in full — URL references for future swap or side-by-side study
+references:
+  - id: sbe_isavasya_muller
+    collection: isavasya_upanishad
+    translator: F. Max Müller
+    work: Sacred Books of the East vol. 1 — Īśā Upaniṣad
+    url: https://sacred-texts.com/hin/sbe01/index.htm
+
+  - id: sbe_svetasvatara_muller
+    collection: svetasvatara_upanishad
+    translator: F. Max Müller
+    work: Sacred Books of the East vol. 15 — Śvetāśvatara
+    url: https://sacred-texts.com/hin/sbe15/index.htm
+
+  - id: sbe_mandukya_muller
+    collection: mandukya_upanishad_and_gaudapada_karika
+    translator: F. Max Müller
+    work: Sacred Books of the East vol. 34 — Māṇḍūkya
+    url: https://sacred-texts.com/hin/sbe34/index.htm
+
+  - id: epictetus_carter_1759
+    collection: epictetus_works
+    translator: Elizabeth Carter
+    work: All the Works of Epictetus (Discourses, Enchiridion, Fragments)
+    url: https://archive.org/details/bim_eighteenth-century_all-the-works-of-epictet_epictetus_1759
+    local_epub: "../All the Works of Epictetus, Which Are Now Extant; Consisting of His Discourses, Preserved by Arrian, in Four Books, the Enchiridion, and Fragments. Translated from the Original Greek, by Elizabeth Carter..epub"
+
+  - id: vijnana_bhairava_ksts_sanskrit
+    collection: vijnana_bhairava
+    translator: KSTS edition
+    work: Vijñānabhairavatantra (Sanskrit, 1918)
+    url: https://archive.org/details/dli.ernet.242056
+
+  - id: vivekananda_raja_yoga
+    collection: patanjali_yoga_sutras
+    translator: Swami Vivekananda
+    work: Raja Yoga (1896)
+    url: https://archive.org/details/in.ernet.dli.2015.20715

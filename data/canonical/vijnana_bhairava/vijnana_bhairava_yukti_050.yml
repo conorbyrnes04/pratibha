@@ -24,27 +24,35 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
-- passing
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
-- passing
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #50
+
+    Situating oneself on a soft seat, with only the buttocks touching
+
+    it and the hands and feet susupended in the air, after remaining
+
+    there [for some time], one’s resolution & determination become
+
+    completely fulfilled. || 78'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_050
+  source_reference: ''

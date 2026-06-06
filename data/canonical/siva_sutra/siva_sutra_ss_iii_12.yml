@@ -17,26 +17,34 @@ upaya: ''
 themes:
 - moha
 - avarana
-- confusion
-- already
-- arises
-- fulfillment
-- functional
-- gained
 tags:
-- already
-- arises
 - avarana
-- confusion
-- fulfillment
-- functional
-- gained
 - moha
 - root_text
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: मोहावरणात्सिद्धिः
+- kind: iast
+  label: IAST
+  body: moha-āvaraṇāt siddhiḥ
+- kind: translation
+  label: Pratibha Translation
+  body: From the removal of confusion, fulfillment arises.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Nothing is gained; confusion simply no longer obscures what is already functional.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Āṇavopāya
   original_id: SS_III.12
+  source_reference: ''

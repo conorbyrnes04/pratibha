@@ -38,28 +38,71 @@ practice: 'Choose one of the five qualities — whichever feels most absent toda
   has a texture of openness or contraction.'
 upaya: ''
 themes:
-- awareness
-- dao
-- de
+- contraction
+- desire
 - mind
 - practice
 - recognition
 - self
+- truth
 - visaya
 tags:
 - astavakra_gita
-- awareness
-- dao
-- de
+- contraction
+- desire
 - mind
 - practice
 - recognition
 - root_text
 - self
+- truth
 - visaya
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'मुक्तिमिच्छसि चेत्तात विषयान् विषवत्त्यज ।
+
+    क्षमार्जवदयातोषसत्यं पीयूषवद् भज ॥'
+- kind: iast
+  label: IAST
+  body: 'muktim icchasi cet tāta viṣayān viṣavat tyaja |
+
+    kṣamā-ārjava-dayā-toṣa-satyaṃ pīyūṣavad bhaja ||'
+- kind: translation
+  label: Pratibha Translation
+  body: If you desire liberation, O child, abandon sense objects like poison and cultivate forgiveness, sincerity, compassion,
+    contentment, and truth as if they were nectar.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The text''s only concession to graduated practice — and even here, the framing is radical. Aṣṭāvakra does not say
+    "reduce attachment" or "practice moderation." He says *viṣavat* — like poison. The absoluteness is deliberate: from the
+    perspective of the already-free Self, engagement driven by craving is indeed toxic to the recognition of one''s nature.
+    The five qualities prescribed (*kṣamā*, *ārjava*, *dayā*, *toṣa*, *satya*) are not moral virtues in a conventional sense
+    — they are the natural expressions of a mind whose grasping has loosened. Forgiveness flows from one who is not injured
+    at the level of Self. Contentment flows from one who lacks nothing. These are not causes of liberation but its early symptoms.
+
+
+    Cross-Tradition Resonance:
+
+    - Epictetus, *Enchiridion* 1: the distinction between what is "up to us" and what is not — *viṣaya* belongs entirely to
+    the latter column
+
+    - VBT Dhāraṇā 49: the state of *santośa* (contentment) as a direct entry into the ground of awareness
+
+    - Dào Dé Jīng ch. 19: "Abandon cleverness, discard profit, and there will be no thieves and robbers" — the same gesture
+    of subtraction as path'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Choose one of the five qualities — whichever feels most absent today. Not as a moral discipline but as an experiment:
+    what happens when forgiveness (or sincerity, or contentment) is simply allowed rather than performed? Notice whether it
+    has a texture of openness or contraction.'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Astavakra Gita
   section: verse
   original_id: ASG_1_2
+  source_reference: ''

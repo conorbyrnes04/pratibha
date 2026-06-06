@@ -52,8 +52,40 @@ tags:
 - recognition
 - śiva
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: The *Pratyabhijñāhṛdayam* was composed by Kṣemarāja, the foremost disciple of Abhinavagupta, in the 11th century CE
+    in Kashmir.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The *Pratyabhijñāhṛdayam* was composed by Kṣemarāja, the foremost disciple of Abhinavagupta, in the 11th century
+    CE in Kashmir. It serves as an accessible summary of the *Pratyabhijñā* ("Recognition") school of Kashmir Śaiva Tantra
+    — itself a synthesis and refinement of the *Śiva Sūtras* and *Spanda* traditions. Where the *Pratyabhijñā Darśana* of
+    Utpaladeva and Abhinavagupta is philosophically exhaustive, the *Hṛdayam* ("Heart") is intentionally condensed, designed
+    for serious practitioners rather than specialist philosophers.
+
+
+    The text''s central claim — that liberation is *recognition* rather than *achievement* — distinguishes it from both Advaita
+    Vedānta (where ignorance must be removed by knowledge) and Yoga (where Puruṣa must be disentangled from Prakṛti). In the
+    Pratyabhijñā framework, Consciousness has *always been free*; what changes in liberation is not the structure of reality
+    but the experiencer''s relationship to it. This makes the *Hṛdayam* uniquely suited to *jīvanmukti* — liberation in the
+    midst of life — rather than liberation as withdrawal from it.
+
+
+    *Pratibhā Edition — philological translation and commentary compiled for the Pratibhā wisdom corpus.*
+
+    *Source basis: Kṣemarāja''s Sanskrit original with reference to Jaideva Singh''s critical translation and commentary (1963),
+    cross-checked against the original Devanāgarī for terminological precision.*'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Pratyabhijnahrdayam
   section: chapter_summary
   original_id: PHR_SUM_APPENDIX
+  source_reference: ''

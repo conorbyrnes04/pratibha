@@ -9,14 +9,8 @@ title: 'Pearl #17'
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
-- self
-- him
-- lord
 - attention
-- clarity
-- content
-- emphasis
-- grows
+- self
 source_excerpt: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their self, knows their
   Lord. He also said, I knew my Lord through my Lord. What the Prophet pointed out by that, is that you are not you but you
   are Him and there is no you.
@@ -30,18 +24,28 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - attention
-- clarity
 - commentary_text
-- content
-- emphasis
-- grows
-- him
 - know_yourself_ibn_arabi_balyani
-- lord
 - self
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their self, knows their Lord.
+    He also said, I knew my Lord through my Lord. What the Prophet pointed out by that, is that you are not you but you are
+    Him and there is no you.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P017
+  source_reference: ''

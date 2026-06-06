@@ -9,14 +9,7 @@ title: 'Pearl #7'
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
-- him
-- himself
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
 source_excerpt: He knows Himself through Himself and He sees Himself by means of Himself. No one but He sees Him. His veil
   is His oneness since nothing veils Him other than Him. His own being veils Him.
 translation_literal: He knows Himself through Himself and He sees Himself by means of Himself. No one but He sees Him. His
@@ -28,18 +21,26 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - attention
-- clarity
 - commentary_text
-- content
-- emphasis
-- grows
-- him
-- himself
-- inward
 - know_yourself_ibn_arabi_balyani
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: He knows Himself through Himself and He sees Himself by means of Himself. No one but He sees Him. His veil is His
+    oneness since nothing veils Him other than Him. His own being veils Him.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P007
+  source_reference: ''

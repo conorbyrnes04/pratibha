@@ -24,28 +24,39 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- mind
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
+- mind
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
 - mind
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #19
+
+    One may contemplate the space above [at the crown of the
+
+    head] and the space in the root [of the body] simultaneously.
+
+
+    Through the Power that is independent of the body, one’s mind
+
+    will become empty & spacious. || 44'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_019
+  source_reference: ''

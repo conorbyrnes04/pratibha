@@ -44,28 +44,69 @@ practice: 'Sit with the question "how?" — any "how?" currently alive in your s
   belong to the question? That presence is what Aṣṭāvakra will point to.'
 upaya: ''
 themes:
-- consciousness
-- dao
-- de
 - knowledge
-- tao
+- renunciation
 - jnana
 - mukti / moksa
 - vairagya
 tags:
 - astavakra_gita
-- consciousness
-- dao
-- de
 - jnana
 - knowledge
 - mukti / moksa
+- renunciation
 - root_text
-- tao
 - vairagya
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'कथं ज्ञानमवाप्नोति कथं मुक्तिर्भविष्यति ।
+
+    वैराग्यं च कथं प्राप्तमेतद् ब्रूहि मम प्रभो ॥'
+- kind: iast
+  label: IAST
+  body: 'kathaṃ jñānam avāpnoti kathaṃ muktir bhaviṣyati |
+
+    vairāgyaṃ ca kathaṃ prāptam etad brūhi mama prabho ||'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Janaka said: How is knowledge attained?'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Extended Translation:
+
+    Janaka said: How is knowledge attained? How does liberation come? How is dispassion reached? Tell me this, O Lord.
+
+
+    The text opens with the three questions that frame every spiritual tradition: epistemology (*jñāna* — how do we know?),
+    soteriology (*mukti* — how are we freed?), and the psychology of renunciation (*vairāgya* — how does attachment loosen?).
+    Janaka is asking as a genuine seeker. What is remarkable is how rapidly Aṣṭāvakra answers — not with a teaching program
+    but with a single declaration that makes the questions obsolete. The questions assume liberation is somewhere to be reached.
+    The answer reveals it was never absent.
+
+
+    Cross-Tradition Resonance:
+
+    - Pratyabhijñāhṛdayam Sūtra 1: *citiḥ svatantrā* — Consciousness is already sovereign; the question of "how to attain"
+    is the first obstacle.
+
+    - Dào Dé Jīng ch. 48: "In pursuit of learning, every day something is acquired. In pursuit of Tao, every day something
+    is dropped." Janaka is still acquiring; Aṣṭāvakra will show him what to drop.
+
+    - Meister Eckhart, Sermon 52: "If you want the kernel, you must break the shell" — the shell here is precisely Janaka''s
+    three questions.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Sit with the question "how?" — any "how?" currently alive in your spiritual life. Notice the shape of the question:
+    it assumes a gap between here and there, between seeker and sought. Can you sense, even faintly, a presence that does
+    not belong to the question? That presence is what Aṣṭāvakra will point to.'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Astavakra Gita
   section: verse
   original_id: ASG_1_1
+  source_reference: ''

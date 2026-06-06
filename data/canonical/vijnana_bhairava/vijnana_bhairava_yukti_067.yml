@@ -25,28 +25,40 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- self
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
+- self
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
 - root_text
 - self
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #67
+
+    Māyā (the Divine’s power of self-concealment-in-plurality) is indeed
+
+    bewildering; She is established as that which effects (kalana) the limited
+
+    powers (kalā) of the embodied self. Knowing (kalayan) the primordial
+
+    property (ādi-dharma) of the Principles of Reality, one will no longer
+
+    experience separation. || 95'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_067
+  source_reference: ''

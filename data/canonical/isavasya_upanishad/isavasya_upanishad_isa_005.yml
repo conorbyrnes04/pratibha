@@ -50,26 +50,66 @@ upaya: ''
 themes:
 - awareness
 - meditation
-- becoming
-- manifestation
-- unmanifest
-- again
-- asambhuti
-- blocks
 tags:
-- again
-- asambhuti
 - awareness
-- becoming
-- blocks
 - isavasya_upanishad
-- manifestation
 - meditation
 - root_text
-- unmanifest
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'अन्धं तमः प्रविशन्ति येऽसम्भूतिमुपासते ।
+
+    ततो भूय इव ते तमो य उ सम्भूत्यां रताः ॥ १२ ॥
+
+
+    सम्भूतिं च विनाशं च यस्तद्वेदोभयं सह ।
+
+    विनाशेन मृत्युं तीर्त्वा सम्भूत्यामृतमश्नुते ॥ १४ ॥'
+- kind: iast
+  label: IAST
+  body: 'andham tamah pravisanti ye''sambhutim upasate |
+
+    tato bhuya iva te tamo ya u sambhutyam ratah || 12 ||
+
+
+    sambhutim ca vinasam ca yas tad vedobhayam saha |
+
+    vinasena mrtyum tirtva sambhutyamrtam asnute || 14 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Exclusive fixation on the unmanifest leads to darkness; exclusive fixation on manifest becoming also leads to darkness.
+
+    Knowing both together, one crosses mortality and realizes immortality.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Again the text blocks reductionism. Reality is not exhausted by either metaphysical abstraction or empirical manifestation.
+    The seeker must learn double vision: respect for becoming, rootedness in the unconditioned.
+
+
+    Key Terms:
+
+
+    **sambhuti** - becoming/manifestation.
+
+
+    **asambhuti** - unmanifest source.
+
+
+    Cross-Tradition Resonances:
+
+
+    **Plotinus One and emanation:** source and manifestation without dual rupture.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: In meditation, alternate 2 minutes open awareness (unmanifest) and 2 minutes sensory detail (manifest), then integrate.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_005
+  source_reference: ''

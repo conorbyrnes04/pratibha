@@ -20,28 +20,45 @@ insight: Knowledge is no longer defined by content but by steadiness.
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- attention
 - knowledge
 - avadhana
 - vidya
-- attention
-- content
-- defined
-- longer
-- steadiness
 tags:
 - attention
 - avadhana
-- content
-- defined
 - knowledge
-- longer
 - root_text
 - siva_sutra
-- steadiness
 - vidya
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: अवधानं विद्या
+- kind: iast
+  label: IAST
+  body: avadhānaṁ vidyā
+- kind: translation
+  label: Pratibha Translation
+  body: Sustained attention is knowledge.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Knowledge is no longer defined by content but by steadiness. What knows is not what is known, but the capacity to
+    remain present without fragmentation.
+
+
+    _Avadhāna_ names a quality rarer than insight: continuity. When attention ceases to scatter, knowing becomes simple, direct,
+    and sufficient. This is not concentration as tension, but attention as loyalty.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāktopāya
   original_id: SS_II.12
+  source_reference: ''

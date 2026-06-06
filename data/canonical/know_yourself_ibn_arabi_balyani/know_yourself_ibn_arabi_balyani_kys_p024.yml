@@ -12,12 +12,6 @@ thesis: 'Read this line as a contemplative pointer: pause interpretation for a m
 themes:
 - knowledge
 - way
-- away
-- god
-- know
-- passing
-- pause
-- read
 source_excerpt: You are Him and He is you, without any of these imperfections. If you know your existence in this way, then
   you know God, and if not, then not. Most of those who claim to know God make the knowledge of God dependent on the passing
   away of existence and on the passing away of that passing away.
@@ -31,19 +25,30 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
-- away
 - commentary_text
-- god
-- know
 - know_yourself_ibn_arabi_balyani
 - knowledge
-- passing
-- pause
-- read
 - way
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: You are Him and He is you, without any of these imperfections. If you know your existence in this way, then you know
+    God, and if not, then not. Most of those who claim to know God make the knowledge of God dependent on the passing away
+    of existence and on the passing away of that passing away.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P024
+  source_reference: ''

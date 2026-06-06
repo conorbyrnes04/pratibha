@@ -4,48 +4,60 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p056
-unit_label: The cosmos works
-title: The cosmos works
+unit_label: The harmony of the world is a harmony of oppositions, as in the case of the bow and of th...
+title: The harmony of the world is a harmony of oppositions, as in the case of the bow and of th...
 unit_type: teaching_passage
-thesis: Here change is not chaos but lawful transformation.
+thesis: Opposition is not a failure of order but its instrument.
 themes:
 - harmony
-- silence
-- transformation
-- change
-- chaos
-- cosmos
-- here
-- lawful
-source_excerpt: 'The cosmos works
-
-  by harmony of tensions,
-
-  like the lyre and bow.'
-translation_literal: 'The cosmos works
-
-  by harmony of tensions,
-
-  like the lyre and bow.'
-commentary: Here change is not chaos but lawful transformation. The world is dynamic, yet governed by proportion and measure.
+source_excerpt: The harmony of the world is a harmony of oppositions, as in the case of the bow and of the lyre.
+translation_literal: The harmony of the world is a harmony of oppositions, as in the case of the bow and of the lyre.
+commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that
+  tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony
+  audible. Anchor: George T.W. Patrick (1889), fragment 56 (Bywater Greek). Corpus index HFR_P056 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the
+  function? Write both pulls without trying to remove either.'
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- change
-- chaos
 - commentary_text
-- cosmos
 - harmony
 - heraclitus_fragments
-- here
-- lawful
-- silence
-- transformation
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: The harmony of the world is a harmony of oppositions, as in the case of the bow and of the lyre.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
+    generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
+    Anchor: George T.W. Patrick (1889), fragment 56 (Bywater Greek). Corpus index HFR_P056 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the function?
+    Write both pulls without trying to remove either.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus B45 (bow and lyre)
+    resonance: 'Same image-cluster: harmony is not absence of conflict but measured counter-tension.'
+    divergence: B56 generalizes to world-harmony; B45 focuses on the mind's failure to grasp the pattern.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P056
+  source_reference: Patrick (1889), frag. 56; corpus HFR_P056

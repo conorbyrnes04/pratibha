@@ -27,26 +27,40 @@ upaya: ''
 themes:
 - awareness
 - mind
-- attentive
-- conceptual
-- deeper
-- hears
-- line
-- listening
+- truth
 tags:
-- attentive
 - awareness
-- conceptual
-- deeper
-- hears
-- line
-- listening
 - mind
 - root_text
+- truth
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #103
+
+    In everyday life, when one hears oneself saying phrases like ‘I am . . .’
+
+    or ‘this is mine’, seize the opportunity to inquire into what these
+
+    words (‘I’ or ‘my’) refer to. The mind tries to find a referent, but it
+
+    cannot. Impelled [toward the truth] by this meditative contemplation,
+
+    one becomes peaceful. || 131'
+- kind: commentary
+  label: Pratibha Commentary
+  body: This line points to a deeper order that is received through attentive listening rather than conceptual noise.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_103
+  source_reference: ''

@@ -1,30 +1,52 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 from typing import Any, List
 import json
+import logging
 import os
 import random
 import re
 import asyncpg
 
 from .config import settings
-from .llm import chat_completion, smart_chat
-from .rag import retrieve_context, retrieve_context_compare
-from .data_loader import ALL_VERSES, pick_daily
+from .llm import smart_chat, smart_chat_stream
+from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, detected_collections
+from .data_loader import (
+    ALL_VERSES,
+    LOAD_STATS,
+    _humanize_collection,
+    filter_by_maturity,
+    get_verse_by_id,
+    normalize_maturity,
+    pick_daily,
+)
 from .collection_aliases import (
     belongs_to_selection,
     meta_collection_slug,
     validate_registered_collections,
 )
 
+logger = logging.getLogger("pratibha.api")
+
 app = FastAPI(title="Pratibha API", version="0.9")
 
+
+def _cors_origins() -> list[str]:
+    raw = (os.environ.get("CORS_ALLOW_ORIGINS") or "").strip()
+    if not raw or raw == "*":
+        return ["*"]
+    return [o.strip() for o in raw.split(",") if o.strip()]
+
+
+_origins = _cors_origins()
+# Credentialed requests cannot use the "*" wildcard per the CORS spec, so only
+# enable credentials when explicit origins are configured.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
+    allow_origins=_origins,
+    allow_credentials=_origins != ["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -33,39 +55,50 @@ _missing_aliases = validate_registered_collections(
     str(v.get("collection", "")).strip() for v in ALL_VERSES if str(v.get("collection", "")).strip()
 )
 if _missing_aliases:
-    raise RuntimeError(
-        "Missing collection alias entries for loaded collections: " + ", ".join(sorted(_missing_aliases))
+    # Degrade gracefully: a missing alias should not take the whole API down.
+    # Affected collections simply fall back to their humanized name.
+    logger.warning(
+        "Missing collection alias entries for loaded collections: %s",
+        ", ".join(sorted(_missing_aliases)),
     )
+
+
+def _valid_maturity(value: str | None) -> str | None:
+    """Validate an incoming min_maturity query param, ignoring junk values."""
+    if value is None:
+        return None
+    normalized = normalize_maturity(value)
+    return normalized or None
 
 # ---- Data endpoints ----
 @app.get("/health")
 async def health():
-    return {"ok": True, "items": len(ALL_VERSES)}
+    return {"ok": True, "items": len(ALL_VERSES), "load_stats": LOAD_STATS}
 
 
 @app.get("/verses")
-async def list_verses():
-    return {"items": ALL_VERSES}
+async def list_verses(min_maturity: str | None = None):
+    return {"items": filter_by_maturity(ALL_VERSES, _valid_maturity(min_maturity))}
 
 @app.get("/verse/{sid}")
 async def get_verse(sid: str):
-    for v in ALL_VERSES:
-        if v.get("_id")==sid:
-            return v
-    raise HTTPException(404, "Not found")
+    v = get_verse_by_id(sid)
+    if v is None:
+        raise HTTPException(404, "Not found")
+    return v
 
 @app.get("/daily")
-async def daily():
-    v = pick_daily()
+async def daily(min_maturity: str | None = "publishable"):
+    v = pick_daily(min_maturity=_valid_maturity(min_maturity))
     return v or {}
 
 
 @app.get("/random")
-async def random_verse(collection: str | None = None):
-    items = ALL_VERSES
+async def random_verse(collection: str | None = None, min_maturity: str | None = "strong_draft"):
+    items = filter_by_maturity(ALL_VERSES, _valid_maturity(min_maturity))
     if collection:
         needle = collection.strip().lower()
-        items = [v for v in ALL_VERSES if str(v.get("collection", "")).strip().lower() == needle]
+        items = [v for v in items if str(v.get("collection", "")).strip().lower() == needle]
     if not items:
         return {}
     return random.choice(items)
@@ -81,6 +114,13 @@ async def collections():
         }
     )
     return {"items": names}
+
+
+@app.get("/sources")
+async def sources():
+    from .sources_registry import build_sources_payload
+
+    return build_sources_payload(ALL_VERSES)
 
 
 @app.get("/admin/corpus-status")
@@ -138,6 +178,7 @@ async def corpus_status(request: Request):
 
     absent_from_pgvector = sorted([c for c in yaml_collections if c and c not in pg_counts])
     return {
+        "load_stats": LOAD_STATS,
         "loaded_units_per_collection": dict(sorted(loaded_counts.items())),
         "pgvector_chunks_per_collection": dict(sorted(pg_counts.items())),
         "last_ingestion_timestamp_per_collection": dict(sorted(last_ingestion.items())),
@@ -154,24 +195,131 @@ class ChatReq(BaseModel):
     use_rag: bool | None = None
     compare_mode: bool = False
     compare_collections: list[str] = []
+    compare_verse_ids: list[str] = []
+    verse_id: str | None = None
+    layer_focus: str | None = None
+    chat_mode: str | None = None
 
-def persona():
-    return {
-        "role": "system",
-        "content": (
-            "You are Pratibha, a luminous and practical study companion for spiritual texts. "
-            "Be clear, grounded, and kind. If context is provided, prioritize it and avoid hallucinations. "
-            "If the user asks multiple questions, or asks a follow-up/paradoxical question, answer the most recent explicit question first. "
-            "Start with a short '## Direct answer' section before the structured sections. "
-            "Answer in markdown with this exact structure:\n"
-            "## Plain-language explanation\n"
-            "## Source-grounded insight\n"
-            "## Concrete practice suggestion\n"
-            "## Reflection question\n\n"
-            "In 'Source-grounded insight', cite source numbers like [1], [2] when context is available. "
-            "If context is weak or missing, clearly say what is uncertain instead of guessing."
-        ),
-    }
+    @field_validator("messages")
+    @classmethod
+    def _validate_messages(cls, value: List[dict]) -> List[dict]:
+        if not value:
+            raise ValueError("messages must not be empty")
+        for msg in value:
+            if not isinstance(msg, dict) or "role" not in msg or "content" not in msg:
+                raise ValueError("each message requires 'role' and 'content'")
+            if msg.get("role") not in {"system", "user", "assistant"}:
+                raise ValueError(f"invalid message role: {msg.get('role')!r}")
+        return value
+
+    @field_validator("temperature")
+    @classmethod
+    def _validate_temperature(cls, value: float) -> float:
+        if not 0.0 <= value <= 2.0:
+            raise ValueError("temperature must be between 0 and 2")
+        return value
+
+_COMPARE_CUE_RE = re.compile(
+    r"\b(vs\.?|versus|compare|comparison|contrast|debate|dialogue|between .+ and)\b",
+    re.I,
+)
+_EXPLORATORY_CUE_RE = re.compile(
+    r"\b(imagine|thought experiment|what if|irony|genealog|historical|essay|table)\b",
+    re.I,
+)
+
+
+def _is_exploratory_query(query: str) -> bool:
+    q = (query or "").strip()
+    if not q:
+        return False
+    if _COMPARE_CUE_RE.search(q) or _EXPLORATORY_CUE_RE.search(q):
+        return True
+    return len(detected_collections(q, limit=3)) >= 2
+
+
+def _effective_temperature(req: "ChatReq", query: str, *, compare_enabled: bool) -> float:
+    mode = (req.chat_mode or "").strip().lower()
+    if mode in {"compare", "question"} and (_is_exploratory_query(query) or compare_enabled):
+        return max(req.temperature, 0.55)
+    if mode == "practice":
+        return min(req.temperature, 0.35)
+    return req.temperature
+
+
+def persona(
+    chat_mode: str | None = None,
+    *,
+    exploratory: bool = False,
+    compare_enabled: bool = False,
+) -> dict:
+    base = (
+        "You are Pratibha, a scholarly study companion for spiritual and philosophical texts. "
+        "Write with clarity, nuance, and intellectual honesty — not as a generic study guide. "
+        "When context passages are provided, ground claims in them and cite like [1], [2] in flowing prose; "
+        "never invent citations. If evidence is thin, say so plainly instead of filling gaps with boilerplate. "
+        "If the user asks multiple questions, answer the most recent explicit question first."
+    )
+    mode = (chat_mode or "question").strip().lower()
+
+    if compare_enabled or mode == "compare" or exploratory:
+        format_guide = (
+            "This is comparative or exploratory. Prefer a rich essay: dialogue between thinkers, "
+            "markdown tables, genealogical or historical irony, and a brief verdict or synthesis are welcome. "
+            "Let structure follow the question — do not force a fixed template. "
+            "Ground divergences in cited passages where possible."
+        )
+    elif mode == "practice":
+        format_guide = (
+            "Focus on one or two concrete practices drawn from the sources. "
+            "Use headings only if they organize real content; skip generic section labels."
+        )
+    elif mode == "explain":
+        format_guide = (
+            "Explain with depth: open with the direct answer, then develop the argument. "
+            "Use headings only when they organize real content. Cite sources in flowing prose."
+        )
+    else:
+        format_guide = (
+            "Match form to the question: crisp answers for simple queries; essays, dialogue, or tables "
+            "for debates and cross-tradition comparisons. "
+            "Add a practice or reflection at the end only when it genuinely fits — never as mandatory filler."
+        )
+    return {"role": "system", "content": f"{base}\n\n{format_guide}"}
+
+
+def _compare_format_instruction(compare_cols: list[str]) -> str:
+    a, b = compare_cols[0], compare_cols[1]
+    return (
+        f"Comparative mode between '{a}' and '{b}'. Present both voices faithfully before synthesis. "
+        "You may use dialogue, tables, and irony; avoid rigid boilerplate. "
+        "Suggested flow (adapt as needed): opening thesis → Voice A → Voice B → convergences/tensions → synthesis. "
+        "Cite source numbers like [1], [2] in prose."
+    )
+
+
+def _source_label(metadata: dict) -> str:
+    """Human-readable attribution for a retrieved chunk, from metadata.
+
+    Bodies no longer carry an inline header, so we derive a clean label here so
+    the model can still attribute passages (e.g. 'Tao Te Ching - Tying Knots').
+    """
+    meta = metadata or {}
+    coll = _humanize_collection(str(meta.get("collection") or "")).strip()
+    title = str(meta.get("title") or "").strip()
+    sid = str(meta.get("sutra_id") or "").strip()
+    parts = [p for p in (coll, title) if p and p != "Unknown Collection"]
+    label = " - ".join(parts) if parts else (sid or "Source")
+    if sid and sid not in label:
+        label = f"{label} ({sid})"
+    return label
+
+
+def _format_context(ctx: list[tuple[str, dict, float]]) -> str:
+    lines = []
+    for i, (text, meta, _score) in enumerate(ctx, start=1):
+        lines.append(f"[{i}] {_source_label(meta)}\n{text}")
+    return "\n\n".join(lines)
 
 
 def _use_rag_flag(req: ChatReq) -> bool:
@@ -186,63 +334,228 @@ def _llm_configured() -> bool:
     )
 
 
-@app.post("/chat")
-async def chat(req: ChatReq):
-    msgs = [persona(), *req.messages]
-    latest_user = next((m["content"] for m in reversed(req.messages) if m["role"] == "user"), "")
-    if latest_user:
-        q_count = len(re.findall(r"\?", latest_user))
-        if q_count >= 1:
-            msgs.append(
-                {
-                    "role": "system",
-                    "content": (
-                        "Respond directly to the user's latest explicit question first in 1-3 sentences, "
-                        "then continue with the full structured response."
-                    ),
-                }
+def _chat_failure_message(err: str) -> str:
+    lower = err.lower()
+    if settings.chat_provider() == "openrouter":
+        if any(token in lower for token in ("401", "403", "invalid api key", "user not found", "unauthorized")):
+            return (
+                "OpenRouter rejected this API key. Update OPENROUTER_API_KEY in .env, "
+                "then restart the backend so the new key loads."
             )
+        if "404" in lower or "no endpoints found" in lower:
+            return (
+                "The configured OpenRouter model is unavailable. Update OPENROUTER_MODEL in .env "
+                "to a model your key supports (for paid keys, remove the :free suffix), then restart."
+            )
+        if "free-models-per-day" in lower or ("free" in lower and "daily" in lower and "limit" in lower):
+            return (
+                "OpenRouter free-tier daily limit is exhausted for this key. Add credits at openrouter.ai "
+                "or switch OPENROUTER_MODEL to a paid model, then restart the backend."
+            )
+        if "429" in lower or "rate limit" in lower or "insufficient credits" in lower:
+            return (
+                "OpenRouter rate or credit limit reached. Add credits at openrouter.ai, wait a moment "
+                "and retry, or choose a different OPENROUTER_MODEL in .env."
+            )
+        if "openrouter" in lower:
+            return (
+                "OpenRouter could not complete this chat request. Check OPENROUTER_API_KEY and "
+                "OPENROUTER_MODEL in .env, then restart the backend."
+            )
+    return (
+        "I could not reach the configured chat model right now. "
+        "Please check your API key/model settings in .env and try again."
+    )
+
+
+def _find_verse(verse_id: str | None) -> dict[str, Any] | None:
+    needle = (verse_id or "").strip()
+    if not needle:
+        return None
+    hit = get_verse_by_id(needle)
+    if hit is not None:
+        return hit
+    # Fall back to sutra_id lookup for legacy/citation-style ids.
+    for v in ALL_VERSES:
+        if str(v.get("sutra_id", "")).strip() == needle:
+            return v
+    return None
+
+
+def _format_layer_items(items: list[Any]) -> str:
+    """Render structured key_terms / resonances as readable lines."""
+    lines: list[str] = []
+    for entry in items[:6]:
+        if isinstance(entry, dict):
+            if "term" in entry and "definition" in entry:
+                lines.append(f"- {entry.get('term')}: {entry.get('definition')}")
+            elif "citation" in entry and "resonance" in entry:
+                divergence = str(entry.get("divergence") or "").strip()
+                tail = f" (Divergence: {divergence})" if divergence else ""
+                lines.append(f"- {entry.get('citation')}: {entry.get('resonance')}{tail}")
+            else:
+                lines.append("- " + "; ".join(f"{k}: {v}" for k, v in entry.items()))
+        else:
+            lines.append(f"- {entry}")
+    return "\n".join(lines)
+
+
+def _format_layer_summary(layer: dict[str, Any]) -> str:
+    label = str(layer.get("label") or layer.get("kind") or "Layer").strip()
+    body = str(layer.get("body") or "").strip()
+    items = layer.get("items")
+    if isinstance(items, list) and items:
+        rendered = _format_layer_items(items)
+        body = f"{body}\n{rendered}".strip() if body else rendered
+    if len(body) > 1200:
+        body = body[:1200].rstrip() + "..."
+    return f"### {label}\n{body}".strip()
+
+
+def _format_pinned_passage(verse: dict[str, Any], focus: str | None = None, mode: str | None = None) -> str:
+    layers = verse.get("pratibha_layers") if isinstance(verse.get("pratibha_layers"), list) else []
+    wanted = (focus or "").strip().lower()
+    selected_layers = [
+        layer for layer in layers
+        if isinstance(layer, dict)
+        and str(layer.get("kind", "")).lower() != "appendix"
+        and (not wanted or str(layer.get("kind", "")).lower() == wanted)
+    ]
+    if not selected_layers:
+        selected_layers = [layer for layer in layers if isinstance(layer, dict)]
+    summary = "\n\n".join(_format_layer_summary(layer) for layer in selected_layers[:7])
+    return (
+        "Pinned passage dossier. Treat this passage as the primary source for the conversation.\n"
+        f"Chat mode: {(mode or 'question').strip()}.\n"
+        f"Title: {verse.get('title') or verse.get('sutra_id') or verse.get('_id')}.\n"
+        f"Source: {verse.get('collection') or 'Unknown'} {verse.get('section') or ''} {verse.get('sutra_id') or ''}.\n"
+        f"Editorial maturity: {verse.get('editorial_maturity') or 'unknown'}.\n\n"
+        f"{summary}"
+    ).strip()
+
+
+def _compare_pinned_rows(
+    verse_ids: list[str],
+    collections: list[str],
+) -> list[tuple[str, dict[str, Any], float]]:
+    rows: list[tuple[str, dict[str, Any], float]] = []
+    for idx, vid in enumerate(verse_ids[:2]):
+        verse = _find_verse(vid)
+        if not verse:
+            continue
+        side = "A" if idx == 0 else "B"
+        expected = collections[idx] if idx < len(collections) else ""
+        if expected and not belongs_to_selection(verse, expected):
+            continue
+        layers = verse.get("pratibha_layers") if isinstance(verse.get("pratibha_layers"), list) else []
+        summary = "\n\n".join(
+            _format_layer_summary(layer)
+            for layer in layers[:5]
+            if isinstance(layer, dict) and str(layer.get("kind", "")).lower() != "appendix"
+        )
+        if not summary.strip():
+            summary = "\n\n".join(
+                part
+                for part in (
+                    str(verse.get("translation") or "").strip(),
+                    str(verse.get("commentary") or "").strip()[:1200],
+                )
+                if part
+            )
+        title = verse.get("title") or verse.get("sutra_id") or verse.get("_id")
+        ref = str(verse.get("reference") or "").strip()
+        heading = f"{ref} — {title}" if ref else str(title)
+        body = f"{heading}\n\n{summary}".strip()
+        meta = {
+            "collection": verse.get("collection"),
+            "_id": verse.get("_id"),
+            "unit_id": verse.get("_id"),
+            "title": verse.get("title"),
+            "reference": verse.get("reference"),
+            "compare_side": side,
+            "compare_pinned": True,
+        }
+        rows.append((body, meta, 1.0))
+    return rows
+
+
+def _merge_compare_context(
+    ctx: list[tuple[str, dict[str, Any], float]],
+    pinned: list[tuple[str, dict[str, Any], float]],
+    limit: int = 8,
+) -> list[tuple[str, dict[str, Any], float]]:
+    if not pinned:
+        return ctx[:limit]
+    seen: set[str] = set()
+    merged: list[tuple[str, dict[str, Any], float]] = []
+    for body, meta, score in [*pinned, *ctx]:
+        key = (body or "").strip().lower()
+        if not key or key in seen:
+            continue
+        merged.append((body, meta, score))
+        seen.add(key)
+        if len(merged) >= limit:
+            break
+    return merged
+
+
+async def _assemble_chat_messages(
+    req: ChatReq,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], str, float]:
+    """Build LLM messages, source list, compare warning, and effective temperature."""
+    latest_user = next((m["content"] for m in reversed(req.messages) if m["role"] == "user"), "")
+    compare_cols = [c.strip() for c in (req.compare_collections or []) if c and c.strip()]
+    compare_enabled = bool(
+        req.compare_mode
+        and len(compare_cols) >= 2
+        and compare_cols[0].lower() != compare_cols[1].lower()
+    )
+    auto_hints = detected_collections(latest_user, limit=2)
+    if not compare_enabled and len(auto_hints) >= 2:
+        compare_enabled = True
+        compare_cols = auto_hints[:2]
+
+    exploratory = _is_exploratory_query(latest_user)
+    msgs: list[dict[str, Any]] = [
+        persona(req.chat_mode, exploratory=exploratory, compare_enabled=compare_enabled),
+        *req.messages,
+    ]
+    pinned_verse = _find_verse(req.verse_id)
+    if pinned_verse:
+        msgs.append(
+            {
+                "role": "system",
+                "content": _format_pinned_passage(pinned_verse, req.layer_focus, req.chat_mode),
+            }
+        )
+
     sources: list[dict[str, Any]] = []
     compare_warning = ""
+    rag_k = 6 if (compare_enabled or exploratory) else 4
+
     if _use_rag_flag(req):
-        q = next((m["content"] for m in reversed(req.messages) if m["role"]=="user"), "")
-        compare_cols = [c.strip() for c in (req.compare_collections or []) if c and c.strip()]
-        compare_enabled = bool(
-            req.compare_mode
-            and len(compare_cols) >= 2
-            and compare_cols[0].lower() != compare_cols[1].lower()
-        )
+        q = latest_user
         if compare_enabled:
-            ctx = await retrieve_context_compare(q, collections=compare_cols[:2], per_collection=2)
+            ctx = await retrieve_context_compare(q, collections=compare_cols[:2], per_collection=3)
+            pinned_compare = _compare_pinned_rows(req.compare_verse_ids or [], compare_cols[:2])
+            ctx = _merge_compare_context(ctx, pinned_compare, limit=10)
+        elif pinned_verse:
+            ctx = await retrieve_context_for_verse(str(pinned_verse.get("_id", "")), q, k=rag_k)
         else:
-            ctx = await retrieve_context(q, k=4)
+            ctx = await retrieve_context(q, k=rag_k)
         if ctx:
             if compare_enabled:
-                msgs.append(
-                    {
-                        "role": "system",
-                        "content": (
-                            f"Comparative mode is active between '{compare_cols[0]}' and '{compare_cols[1]}'. "
-                            "Present both voices faithfully before synthesis. "
-                            "Use this structure:\n"
-                            "## Direct answer\n"
-                            "## Voice A\n"
-                            "## Voice B\n"
-                            "## Convergences\n"
-                            "## Tensions\n"
-                            "## Practical synthesis\n"
-                            "## Reflection question\n"
-                            "In Voice A/Voice B, cite source numbers like [1], [2]."
-                        ),
-                    }
-                )
-            ctx_txt = "\n\n".join([f"[{i+1}] {t}" for i,(t,_,_) in enumerate(ctx)])
-            msgs.append({"role":"system","content":f"Context:\n{ctx_txt}\nUse only if relevant."})
+                msgs.append({"role": "system", "content": _compare_format_instruction(compare_cols[:2])})
+            ctx_txt = _format_context(ctx)
+            msgs.append({"role": "system", "content": f"Context:\n{ctx_txt}\nUse only if relevant."})
             for i, (text, metadata, score) in enumerate(ctx, start=1):
                 meta = metadata or {}
                 side = ""
                 if compare_enabled and len(compare_cols) >= 2:
-                    if belongs_to_selection(meta, compare_cols[0]):
+                    pinned_side = str(meta.get("compare_side") or "").strip()
+                    if pinned_side in {"A", "B"}:
+                        side = pinned_side
+                    elif belongs_to_selection(meta, compare_cols[0]):
                         side = "A"
                     elif belongs_to_selection(meta, compare_cols[1]):
                         side = "B"
@@ -270,10 +583,18 @@ async def chat(req: ChatReq):
                     ),
                 }
             )
+
+    temperature = _effective_temperature(req, latest_user, compare_enabled=compare_enabled)
+    return msgs, sources, compare_warning, temperature
+
+
+@app.post("/chat")
+async def chat(req: ChatReq):
+    msgs, sources, compare_warning, temperature = await _assemble_chat_messages(req)
     if not _llm_configured():
         fallback = (
             "Study chat is not fully configured yet because no LLM API key is set. "
-            "Add OPENAI_API_KEY, GROQ_API_KEY, or OPENROUTER_API_KEY in your .env file, then restart the backend. "
+            "Add OPENROUTER_API_KEY in your .env file, then restart the backend. "
         )
         if sources:
             fallback += "\n\nMeanwhile, here is a relevant source passage:\n\n" + (sources[0].get("text") or "")
@@ -281,64 +602,40 @@ async def chat(req: ChatReq):
             fallback += "\n\nYou can still use Read/Random pages to study the imported texts."
         return {"answer": fallback, "sources": sources, "compare_warning": compare_warning}
     try:
-        text = await smart_chat(msgs, primary_model=req.model or settings.DEFAULT_MODEL)
+        text = await smart_chat(
+            msgs,
+            primary_model=req.model or settings.effective_default_model(),
+            temperature=temperature,
+        )
         return {"answer": text, "sources": sources, "compare_warning": compare_warning}
     except Exception as e:
         err = str(e)
-        lower = err.lower()
-        if "free-models-per-day" in lower or ("429" in lower and "openrouter" in lower):
-            fallback = (
-                "OpenRouter free-tier daily limit is currently exhausted for this key. "
-                "Add credits in OpenRouter, or set GROQ_API_KEY/OPENAI_API_KEY in .env, then retry."
-            )
-        else:
-            fallback = (
-                "I could not reach the configured chat model right now. "
-                "Please check your API key/model settings in .env and try again."
-            )
-        return {"answer": fallback, "sources": sources, "compare_warning": compare_warning, "error": str(e)}
+        return {
+            "answer": _chat_failure_message(err),
+            "sources": sources,
+            "compare_warning": compare_warning,
+        }
 
 @app.post("/chat.stream")
 async def chat_stream(req: ChatReq):
-    msgs = [persona(), *req.messages]
-    if _use_rag_flag(req):
-        q = next((m["content"] for m in reversed(req.messages) if m["role"]=="user"), "")
-        compare_cols = [c.strip() for c in (req.compare_collections or []) if c and c.strip()]
-        compare_enabled = bool(
-            req.compare_mode
-            and len(compare_cols) >= 2
-            and compare_cols[0].lower() != compare_cols[1].lower()
-        )
-        if compare_enabled:
-            ctx = await retrieve_context_compare(q, collections=compare_cols[:2], per_collection=2)
-        else:
-            ctx = await retrieve_context(q, k=4)
-        if ctx:
-            if compare_enabled:
-                msgs.append(
-                    {
-                        "role": "system",
-                        "content": (
-                            f"Comparative mode is active between '{compare_cols[0]}' and '{compare_cols[1]}'. "
-                            "Present both voices faithfully before synthesis."
-                        ),
-                    }
-                )
-            ctx_txt = "\n\n".join([f"[{i+1}] {t}" for i,(t,_,_) in enumerate(ctx)])
-            msgs.append({"role":"system","content":f"Context:\n{ctx_txt}\nUse only if relevant."})
+    msgs, _, _, temperature = await _assemble_chat_messages(req)
     if not _llm_configured():
         async def no_key_gen():
             payload = {
                 "object": "chat.error",
-                "message": "Missing OPENAI_API_KEY/GROQ_API_KEY/OPENROUTER_API_KEY for streaming chat.",
+                "message": "Missing OPENROUTER_API_KEY for streaming chat.",
             }
             yield f"data: {json.dumps(payload)}\n\n"
 
         return StreamingResponse(no_key_gen(), media_type="text/event-stream")
     try:
-        resp = await chat_completion(msgs, model=req.model or settings.DEFAULT_MODEL, temperature=req.temperature, stream=True)
+        resp = await smart_chat_stream(
+            msgs,
+            primary_model=req.model or settings.effective_default_model(),
+            temperature=temperature,
+        )
     except Exception as e:
-        raise HTTPException(500, str(e))
+        raise HTTPException(500, _chat_failure_message(str(e)))
     async def gen():
         async for line in resp.aiter_lines():
             if line and line.startswith("data: "):

@@ -49,28 +49,71 @@ insight: The text refuses the split between world-rejection and worldliness.
 practice: Choose one ordinary task today and perform it without inner claim of "mine."
 upaya: ''
 themes:
-- way
 - action
 - renunciation
-- between
-- life
-- lord
-- non-grasping
-- pervaded
+- way
 tags:
 - action
-- between
 - isavasya_upanishad
-- life
-- lord
-- non-grasping
-- pervaded
 - renunciation
 - root_text
 - way
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'ईशावास्यमिदं सर्वं यत्किञ्च जगत्यां जगत् ।
+
+    तेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम् ॥ १ ॥
+
+
+    कुर्वन्नेवेह कर्माणि जिजीविषेच्छतं समाः ।
+
+    एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे ॥ २ ॥'
+- kind: iast
+  label: IAST
+  body: 'isavasyam idam sarvam yat kinca jagatyam jagat |
+
+    tena tyaktena bhunjitha ma grdah kasya svid dhanam || 1 ||
+
+
+    kurvanneveha karmani jijivisec chatam samah |
+
+    evam tvayi nanyatheto''sti na karma lipyate nare || 2 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: 'All this moving world is pervaded by the Lord. Through renunciation, enjoy; do not covet what belongs to another.
+
+
+    One may wish to live a full life doing action here - only in this way does action cease to bind.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The text refuses the split between world-rejection and worldliness. Renunciation is not withdrawal from life but
+    non-grasping participation in it. Action remains, ownership loosens. This is the opening synthesis of karma and jnana.
+
+
+    Key Terms:
+
+
+    **isavasyam** - pervaded, clothed, inhabited by the Lord.
+
+
+    **tyaktena** - by relinquishment, by non-grasping.
+
+
+    Cross-Tradition Resonances:
+
+
+    **Bhagavad Gita karma-yoga:** action without attachment.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary task today and perform it without inner claim of "mine."
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_002
+  source_reference: ''

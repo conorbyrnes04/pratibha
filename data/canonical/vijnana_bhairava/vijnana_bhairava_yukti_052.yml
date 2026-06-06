@@ -21,28 +21,38 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- attention
 - mind
 - śiva
-- attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
 - mind
 - root_text
 - vijnana_bhairava
 - śiva
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #52
+
+    Casting an unmoving gaze upon a being with a physical form and
+
+    making the mind free of thoughts & projections [about that
+
+    being], one attains Śiva. || 80'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_052
+  source_reference: ''

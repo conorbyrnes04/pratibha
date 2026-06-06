@@ -25,27 +25,40 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - consciousness
-- appears
-- like
-- ocean
-- universe
-- waves
-- extended
-- translation
 tags:
-- appears
 - astavakra_gita
 - consciousness
-- extended
-- like
-- ocean
 - root_text
-- translation
-- universe
-- waves
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'विश्वं स्फुरति यत्रेदं तरङ्गा इव सागरे ।
+
+    तत्त्वमेव न सन्देहश्चिन्मूर्ते विजवरो भव ॥'
+- kind: iast
+  label: IAST
+  body: 'viśvaṃ sphurati yatredaṃ taraṅgā iva sāgare |
+
+    tattvam eva na sandehaḥ cinmūrte vijvaro bhava ||'
+- kind: translation
+  label: Pratibha Translation
+  body: The universe appears in you like waves in the ocean.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Extended Translation:
+
+    The universe appears in you like waves in the ocean. You are that — no doubt — O embodiment of pure consciousness. Remain
+    free from agitation.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Astavakra Gita
   section: verse
   original_id: ASG_15_7
+  source_reference: ''

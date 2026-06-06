@@ -12,13 +12,6 @@ thesis: '(Summary: Aṣṭāvakra continues the declaration through six more ver
   beads on a string, and the pot-in-space analogy.'
 themes:
 - self
-- verses
-- astavakra
-- body-identification
-- bondage
-- continues
-- declaration
-- elaborating
 source_excerpt: '(Summary: Aṣṭāvakra continues the declaration through six more verses, elaborating the unchanging Self (kūṭastha),
   the body-identification as the noose (pāśa), the bondage of even seeking...'
 translation_literal: '(Summary: Aṣṭāvakra continues the declaration through six more verses, elaborating the unchanging Self
@@ -34,19 +27,32 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
-- astavakra
 - astavakra_gita
-- body-identification
-- bondage
 - commentary_text
-- continues
-- declaration
-- elaborating
 - self
-- verses
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: '(Summary: Aṣṭāvakra continues the declaration through six more verses, elaborating the unchanging Self (kūṭastha),
+    the body-identification as the noose (pāśa), the bondage of even seeking...'
+- kind: commentary
+  label: Pratibha Commentary
+  body: '(Summary: Aṣṭāvakra continues the declaration through six more verses, elaborating the unchanging Self (kūṭastha),
+    the body-identification as the noose (pāśa), the bondage of even seeking samādhi, the universe as strung in the Self like
+    beads on a string, and the pot-in-space analogy. Each ends with the same imperative: be happy, be free, right now.)
+
+
+    Full verses available in the philological appendix.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Astavakra Gita
   section: chapter_summary
   original_id: ASG_SUM_01_13_01_20
+  source_reference: ''

@@ -29,25 +29,39 @@ themes:
 - freedom
 - heart
 - śakti
-- pause
-- read
-- contemplative
-- directly
-- disclose
 tags:
-- contemplative
-- directly
-- disclose
 - freedom
 - heart
-- pause
-- read
 - root_text
 - vijnana_bhairava
 - śakti
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #28
+
+    Having meditated on the śakti as thick and [then] weak in the
+
+    region of the dvādaśānta, [and then] entering into the Heart and
+
+    meditating [on it], one attains freedom in one’s dreams.
+
+
+    || 55'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_028
+  source_reference: ''

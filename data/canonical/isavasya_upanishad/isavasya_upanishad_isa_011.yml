@@ -33,26 +33,50 @@ upaya: ''
 themes:
 - mantra
 - stillness
-- immanence
-- integrates
-- reality
-- splitting
-- substances
-- transcendence
 tags:
-- immanence
-- integrates
 - isavasya_upanishad
 - mantra
-- reality
 - root_text
-- splitting
 - stillness
-- substances
-- transcendence
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'तदेजति तन्नैजति तद्दूरे तद्वन्तिके ।
+
+    तदन्तरस्य सर्वस्य तदु सर्वस्यास्य बाह्यतः ॥ ५ ॥'
+- kind: iast
+  label: IAST
+  body: 'tad ejati tan naijati tad dure tad v antike |
+
+    tad antar asya sarvasya tadu sarvasyasya bahyatah || 5 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: It moves and does not move; far and near; within all and outside all.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The verse integrates transcendence and immanence without splitting reality into two substances.
+
+
+    Key Terms:
+
+
+    **antar/bahya** - inner/outer non-separation.
+
+
+    Cross-Tradition Resonances:
+
+
+    Non-dual paradox language across Upanishads.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: In one interaction, hold both inward stillness and outward responsiveness.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_011
+  source_reference: ''

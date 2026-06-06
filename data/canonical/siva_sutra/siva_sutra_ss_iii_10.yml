@@ -17,26 +17,34 @@ upaya: ''
 themes:
 - tattva
 - artha
-- according
-- becomes
-- exist
-- objects
-- perception
-- principle
 tags:
-- according
 - artha
-- becomes
-- exist
-- objects
-- perception
-- principle
 - root_text
 - siva_sutra
 - tattva
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: तत्तत्त्वतोऽर्थभावः
+- kind: iast
+  label: IAST
+  body: tat tattvato’rtha-bhāvaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Thus, objects exist according to their principle.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Perception becomes proportional. Things are seen according to what they are, not what they promise.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Āṇavopāya
   original_id: SS_III.10
+  source_reference: ''

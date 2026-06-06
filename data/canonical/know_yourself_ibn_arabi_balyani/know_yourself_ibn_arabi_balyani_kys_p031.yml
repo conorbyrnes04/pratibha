@@ -9,14 +9,9 @@ title: 'Pearl #31'
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
+- attention
 - knowledge
 - self
-- passing
-- away
-- attention
-- clarity
-- content
-- emphasis
 source_excerpt: By making the knowledge of God dependent on the passing away of your existence and the passing away of that
   passing away, there is an affirmation of something other than God. The Prophet said, Whoever knows their self, knows their
   Lord.
@@ -30,18 +25,28 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - attention
-- away
-- clarity
 - commentary_text
-- content
-- emphasis
 - know_yourself_ibn_arabi_balyani
 - knowledge
-- passing
 - self
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: By making the knowledge of God dependent on the passing away of your existence and the passing away of that passing
+    away, there is an affirmation of something other than God. The Prophet said, Whoever knows their self, knows their Lord.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P031
+  source_reference: ''

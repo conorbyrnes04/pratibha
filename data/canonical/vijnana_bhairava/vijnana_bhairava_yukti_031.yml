@@ -21,28 +21,38 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- attention
 - emptiness
 - mind
-- attention
-- clarity
-- content
-- dissolution
-- emphasis
-- grows
 tags:
 - attention
-- clarity
-- content
-- dissolution
-- emphasis
 - emptiness
-- grows
 - mind
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #31
+
+    O great Goddess, one may consider this universe as Empty Void;
+
+    the mind dissolves in that very [Emptiness], then one shares in its
+
+    dissolution (or: becomes a worthy vessel of its dissolution). || 58'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_031
+  source_reference: ''

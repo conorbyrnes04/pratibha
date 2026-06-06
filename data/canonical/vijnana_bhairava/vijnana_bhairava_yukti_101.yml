@@ -21,28 +21,36 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- mind
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
+- mind
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
 - mind
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #101
+
+    Wherever the mind goes, in that very instant let it abandon
+
+    whatever [it has alighted upon]. Due to having nothing to hang on
+
+    to, it then becomes ‘waveless’. || 129'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_101
+  source_reference: ''

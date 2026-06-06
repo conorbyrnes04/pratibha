@@ -32,8 +32,29 @@ tags:
 - siva_sutra
 - svapna
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: हृदये चित्तसंघट्टाद्दृश्यस्वापदर्शनम्
+- kind: iast
+  label: IAST
+  body: hr̥daye citta-saṅghaṭṭād dr̥śya-svāpa-darśanam
+- kind: translation
+  label: Pratibha Translation
+  body: From the collision of mind in the heart, appearances arise like dreams.
+- kind: commentary
+  label: Pratibha Commentary
+  body: The heart is the meeting place of awareness and form. When mind stirs there, the world appears — vivid, persuasive,
+    dreamlike.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.15
+  source_reference: ''

@@ -278,12 +278,27 @@ def _parse_resonances(text: str) -> list[dict[str, str]]:
     return items
 
 
-_IAST_PLACEHOLDER_MARKERS = ("source-language basis",)
+_IAST_PLACEHOLDER_MARKERS = (
+    "source-language basis",
+    "no sanskrit",
+    "not in corpus",
+    "chinese text",
+    "chinese source",
+    "greek original",
+    "greek text",
+    "the enchiridion is a greek",
+    "not applicable",
+    "pending dedicated sanskrit",
+)
 
 
 def _has_real_transliteration(text: Any) -> bool:
     clean = _as_text(text)
     if not clean:
+        return False
+    if re.match(r"^\*\([^)]+\)\*\.?$", clean.strip()):
+        return False
+    if clean.startswith("*Source-language basis:*"):
         return False
     lowered = clean.lower()
     return not any(marker in lowered for marker in _IAST_PLACEHOLDER_MARKERS)
@@ -315,16 +330,17 @@ def _finalize_layers(layers: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return out
 
 
-def _derive_layers(out: dict[str, Any]) -> list[dict[str, Any]]:
+def _derive_layers(out: dict[str, Any], raw_commentary: str = "") -> list[dict[str, Any]]:
     """Build the canonical layer set from flat fields + commentary parsing."""
     commentary = out.get("commentary", "")
+    parse_source = raw_commentary or commentary
     key_terms_text = _extract_section(
-        commentary, _KEY_TERMS_HEADING, (_RESONANCE_HEADING, _PRACTICE_HEADING)
+        parse_source, _KEY_TERMS_HEADING, (_RESONANCE_HEADING, _PRACTICE_HEADING)
     )
-    resonances_text = _extract_section(commentary, _RESONANCE_HEADING, (_PRACTICE_HEADING,))
+    resonances_text = _extract_section(parse_source, _RESONANCE_HEADING, (_PRACTICE_HEADING,))
     key_terms = _parse_key_terms(key_terms_text)
     resonances = _parse_resonances(resonances_text)
-    clean_commentary = _strip_layer_tail(commentary)
+    clean_commentary = _strip_layer_tail(parse_source) if parse_source else commentary
 
     candidates = [
         _layer("original", "Original", out.get("sanskrit", "")),
@@ -344,8 +360,8 @@ def _derive_layers(out: dict[str, Any]) -> list[dict[str, Any]]:
     return _finalize_layers([c for c in candidates if c is not None])
 
 
-def _build_layers(item: dict[str, Any], out: dict[str, Any]) -> list[dict[str, Any]]:
-    derived = _derive_layers(out)
+def _build_layers(item: dict[str, Any], out: dict[str, Any], raw_commentary: str = "") -> list[dict[str, Any]]:
+    derived = _derive_layers(out, raw_commentary=raw_commentary)
     explicit = item.get("pratibha_layers")
     if not isinstance(explicit, list):
         return derived
@@ -354,12 +370,16 @@ def _build_layers(item: dict[str, Any], out: dict[str, Any]) -> list[dict[str, A
     if not explicit_layers:
         return derived
 
-    # Merge: explicit layers win per-kind, derived layers fill the gaps. This
-    # avoids silently dropping parsed key_terms/resonances when a unit declares
-    # only a subset of layers explicitly.
+    # Merge: explicit layers win per-kind, derived layers fill the gaps. Strip
+    # Key Terms / Resonances tails from explicit commentary so study view stays
+    # readable; parsed structured layers from derived fill in when missing.
     by_kind = {layer["kind"]: layer for layer in derived}
     for layer in explicit_layers:
-        by_kind[layer["kind"]] = layer
+        kind = str(layer.get("kind") or "")
+        merged = dict(layer)
+        if kind == "commentary":
+            merged["body"] = _strip_layer_tail(str(layer.get("body") or ""))
+        by_kind[kind] = merged
     order = ["original", "iast", "translation", "commentary", "key_terms", "resonances", "practice", "appendix"]
     merged = sorted(by_kind.values(), key=lambda layer: order.index(layer["kind"]) if layer["kind"] in order else 99)
     return _finalize_layers(merged)
@@ -384,12 +404,14 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
     out["section"] = _pretty_section(_as_text(item.get("section") or item.get("unit_type")))
     out["sutra_id"] = _as_text(item.get("sutra_id") or item.get("source_id") or out["_id"])
     out["translation"] = _as_text(item.get("translation") or item.get("translation_literal"))
-    out["commentary"] = _as_text(item.get("commentary"))
+    raw_commentary = _as_text(item.get("commentary"))
+    out["commentary"] = _strip_layer_tail(raw_commentary) if _commentary_is_authored(raw_commentary) else ""
     out["sanskrit"] = _as_text(item.get("sanskrit") or item.get("sanskrit_devanagari"))
     out["transliteration"] = _as_text(item.get("transliteration") or item.get("sanskrit_iast"))
     out["title"] = _as_text(item.get("title") or item.get("unit_label") or item.get("sutra") or out["sutra_id"])
     out["themes"] = item.get("themes") if isinstance(item.get("themes"), list) else []
     out["appendixes"] = item.get("appendixes") if isinstance(item.get("appendixes"), list) else []
+    out["anchor_chapter"] = _as_text(item.get("anchor_chapter"))
     out["abhyasa"] = _as_text(item.get("abhyasa") or item.get("practice"))
     out["editorial_maturity"] = _infer_maturity(item, out)
     out["editorial_score"] = item.get("editorial_score") or item.get("content_score") or item.get("quality_score") or item.get("quality_score_unit") or 0
@@ -400,7 +422,13 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
         out["commentary"] = ""
     if _practice_is_generic(out["abhyasa"]):
         out["abhyasa"] = ""
-    out["pratibha_layers"] = _build_layers(item, out)
+    out["pratibha_layers"] = _build_layers(item, out, raw_commentary=raw_commentary)
+    from .ttc_refs import humanize_ttc_unit, is_tao_te_ching
+    from .ys_refs import enrich_patanjali_unit
+
+    if is_tao_te_ching(out):
+        out = humanize_ttc_unit(out)
+    out = enrich_patanjali_unit(out)
     return out
 
 
@@ -469,6 +497,12 @@ def get_verse_by_id(verse_id: str) -> dict[str, Any] | None:
 
 
 def pick_daily(user_id: str = "guest", tz: str = "Europe/Paris", min_maturity: str | None = None):
+    """Return one publishable passage for the current calendar day.
+
+    Same verse for all visitors on a given date: SHA-1 of ``YYYY-M-D-guest`` picks
+    a stable index into the maturity-filtered corpus. The day boundary follows
+    ``tz`` (default Europe/Paris), so the passage changes at local midnight there.
+    """
     items = filter_by_maturity(ALL_VERSES, min_maturity)
     if not items:
         # Do not silently fall back to the full (unfiltered) corpus: that would

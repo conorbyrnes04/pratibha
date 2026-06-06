@@ -1,0 +1,40 @@
+# Manual Pratibha reworks for PD anchor passages (sell-ready English).
+# Keys: collection slug + unit id (sutra_id or ch_NNN stem).
+#
+# anchor_translation: verbatim PD anchor (after OCR cleanup)
+# pratibha_translation: fresh Pratibha rendering — yours to sell
+# commentary: optional upgrade when template gloss is too thin
+
+heraclitus_fragments:
+  HFR_P001:
+    pratibha_translation: |
+      I set forth this account—the Logos—that always is. Yet people are deaf to it before they hear it, and numb after the first hearing. Though all things unfold according to this Logos, they speak and act like beginners, carving nature into separate essences as if they had never met the world. They no more notice how they live awake than they remember what they did asleep.
+    commentary: |
+      Heraclitus opens with a complaint about hearing, not seeing: the order of things is already spoken, yet most people treat revelation like background noise. The Logos is not a private doctrine of the sage—it is the intelligible pattern in which all events already occur. The sleep/wake contrast is epistemological: ordinary consciousness forgets its own activity and then wonders why reality seems fragmented.
+  HFR_P002:
+    pratibha_translation: |
+      It is wise to listen—not to me, but to the Logos—and to agree that all things are one.
+  HFR_P003:
+    pratibha_translation: |
+      Those who hear and do not understand are like the deaf. The proverb fits them: present, yet absent.
+  HFR_P045:
+    pratibha_translation: |
+      They do not grasp how what pulls apart also agrees with itself: a harmony of opposites, as in bow and lyre.
+    commentary: |
+      Strife and tension are not failures of order but its instrument. The bow works by pulling against itself; the lyre by opposing tensions of string. Heraclitus uses craft-images to say unity is dynamic, not static sameness.
+  HFR_P056:
+    pratibha_translation: |
+      The world's harmony is a harmony of oppositions, as with bow and lyre.
+
+the_book_of_chuang_tzu:
+  ctz_001:
+    pratibha_translation: |
+      In the northern darkness there is a fish called Kun, immeasurably vast. It transforms into a bird called Peng, whose back is likewise immeasurable. When it rises in full force, its wings hang like sky-wide clouds.
+
+      When the sea-winds turn, this bird prepares to move to the southern darkness, the Heavenly Pool. The old records say: when Peng makes this migration, it beats the waters for three thousand li, rides the whirlwind upward ninety thousand li, and then travels with the wind-breath of six months.
+
+      If water does not gather deeply, it cannot bear a great boat. Pour a cup of water into a shallow hollow and a mustard seed can serve as a boat; place an actual cup there and it grounds at once—the water is too shallow and the vessel too large.
+
+      So too with wind. If wind does not gather deeply, it cannot bear great wings. Only when the air is deep enough can Peng carry blue sky on its back, pass beyond all obstruction, and set its course southward.
+    commentary: |
+      Zhuangzi's opening is scale-work, not natural history. Small creatures measure the world by their basin; what looks impossible from one depth is proportionate from another. Peng is not moral superiority over the cicada—it is the disclosure of a wider medium. The question is whether your standard of "realistic" names reality or only the size of your vessel.

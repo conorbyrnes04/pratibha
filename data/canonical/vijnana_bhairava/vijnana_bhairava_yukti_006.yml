@@ -25,28 +25,40 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- mind
-- having
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
+- mind
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- having
-- inward
 - mind
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #6
+
+    Having quickly filled the body up to the head with that energy, and having
+
+    breached [the knot of māyā aka rudra-granthi] with the ‘bridge’ of
+
+    concentration between the eyebrows, [and] having freed the mind from its
+
+    thought-entrancement, one ascends to the all-pervasive state (vyāpinī) in the
+
+    [place] above all. || 31'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_006
+  source_reference: ''

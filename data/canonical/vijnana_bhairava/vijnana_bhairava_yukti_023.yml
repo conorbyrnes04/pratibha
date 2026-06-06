@@ -23,28 +23,37 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- attention
 - heart
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
 tags:
-- contemplative
-- directly
-- disclose
+- attention
 - heart
-- insight
-- interpretation
-- pause
-- read
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #23
+
+    With one’s sense-faculties dissolved in the space of the Heart—in
+
+    the innermost recess of the Lotus—with one’s attention on nothing
+
+    else: O blessed Lady, one will obtain supreme blessedness. || 49'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_023
+  source_reference: ''

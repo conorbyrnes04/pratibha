@@ -23,28 +23,40 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- śiva
 - attention
-- clarity
-- cognitions
-- content
-- emphasis
-- grows
-- inward
+- truth
+- śiva
 tags:
 - attention
-- clarity
-- cognitions
-- content
-- emphasis
-- grows
-- inward
 - root_text
+- truth
 - vijnana_bhairava
 - śiva
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #71
+
+    Cognitions arise without cause and without objective basis, their
+
+    nature being [merely] an eddy [of mental energy]. In reality,
+
+    these [cognitions] belong to no one. One who directly senses the
+
+    truth of this is Śiva [himself]. || 99'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_071
+  source_reference: ''

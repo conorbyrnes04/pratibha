@@ -23,25 +23,40 @@ themes:
 - knowledge
 - jnana
 - bandha
-- because
-- binds
-- bondage
-- meaning
-- refrain
 tags:
 - bandha
-- because
-- binds
-- bondage
 - jnana
 - knowledge
-- meaning
-- refrain
 - root_text
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: ज्ञानं बन्धः
+- kind: iast
+  label: IAST
+  body: jñānaṁ bandhaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Knowledge is bondage.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The refrain returns, but its meaning shifts. In Āṇavopāya, knowledge binds not because it is articulated, but because
+    it is habitually misused. Concepts are clung to for security. Understanding replaces presence.
+
+
+    Here the practitioner must learn restraint. Knowing is not abolished, but loosened. What binds is not information, but
+    identification with it.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Āṇavopāya
   original_id: SS_III.2
+  source_reference: ''

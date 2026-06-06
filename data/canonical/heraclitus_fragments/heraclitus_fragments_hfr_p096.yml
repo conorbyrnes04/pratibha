@@ -4,46 +4,68 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p096
-unit_label: The habit of knowledge
-title: The habit of knowledge
+unit_label: For human nature does not possess understanding, but the divine does.
+title: For human nature does not possess understanding, but the divine does.
 unit_type: teaching_passage
-thesis: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding ripen
-  through experience.'
-themes:
-- knowledge
-- silence
-- direct
-- fragment
-- argument
-- contemplation
-- experience
-- habit
-source_excerpt: 'The habit of knowledge
-
-  is not human but divine.'
-translation_literal: 'The habit of knowledge
-
-  is not human but divine.'
-commentary: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding
-  ripen through experience.'
+thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+themes: []
+source_excerpt: 'For human nature does not possess understanding, but the divine does. thus statedly shown that we do and
+  think everything by participation in the divine reason, he (Heraclitus), after some previous exposition, adds: It is necessary,
+  therefore, to follow the common (for by ξυνὸς he means ὁ κοινός, the common). For although the law of reason is common,
+  the majority of people live as though they had an understanding of their own. But this is nothing else than an explanation
+  of the mode of the universal disposition. As far, therefore, as we participate in the memory of this, we are true; but in
+  as far as we act individually, we are false.'
+translation_literal: 'For human nature does not possess understanding, but the divine does. thus statedly shown that we do
+  and think everything by participation in the divine reason, he (Heraclitus), after some previous exposition, adds: It is
+  necessary, therefore, to follow the common (for by ξυνὸς he means ὁ κοινός, the common). For although the law of reason
+  is common, the majority of people live as though they had an understanding of their own. But this is nothing else than an
+  explanation of the mode of the universal disposition. As far, therefore, as we participate in the memory of this, we are
+  true; but in as far as we act individually, we are false.'
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
+  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
+  falls quiet. Anchor: George T.W. Patrick (1889), fragment 96 (Bywater Greek). Corpus index HFR_P096 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
+  rests on. Can you hear the claim, not only think it?
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- argument
 - commentary_text
-- contemplation
-- direct
-- experience
-- fragment
-- habit
 - heraclitus_fragments
-- knowledge
-- silence
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'For human nature does not possess understanding, but the divine does. thus statedly shown that we do and think everything
+    by participation in the divine reason, he (Heraclitus), after some previous exposition, adds: It is necessary, therefore,
+    to follow the common (for by ξυνὸς he means ὁ κοινός, the common). For although the law of reason is common, the majority
+    of people live as though they had an understanding of their own. But this is nothing else than an explanation of the mode
+    of the universal disposition. As far, therefore, as we participate in the memory of this, we are true; but in as far as
+    we act individually, we are false.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
+    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
+    quiet. Anchor: George T.W. Patrick (1889), fragment 96 (Bywater Greek). Corpus index HFR_P096 follows the Diels–Kranz-style
+    numbering used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
+    rests on. Can you hear the claim, not only think it?
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: Logos (λόγος)
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P096
+  source_reference: Patrick (1889), frag. 96; corpus HFR_P096

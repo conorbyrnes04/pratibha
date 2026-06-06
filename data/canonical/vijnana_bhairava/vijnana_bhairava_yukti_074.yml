@@ -24,27 +24,34 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - way
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
 tags:
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- pause
-- read
 - root_text
 - vijnana_bhairava
 - way
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #74
+
+    Contemplating the diverse universe as being similar to a magic
+
+    show, or a wondrous painting, or as [constantly] in flux—seeing
+
+    everything [in this way], the arising of [true] happiness occurs. || 102'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_074
+  source_reference: ''

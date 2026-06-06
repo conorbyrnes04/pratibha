@@ -32,27 +32,49 @@ practice: Close each day with one sincere request for clearer conduct tomorrow.
 upaya: ''
 themes:
 - mantra
-- ends
-- ethical
-- good
-- guidance
-- humility
-- path
-- prayer
 tags:
-- ends
-- ethical
-- good
-- guidance
-- humility
 - isavasya_upanishad
 - mantra
-- path
-- prayer
 - root_text
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'अग्ने नय सुपथा राये अस्मान् विश्वानि देव वयुनानि विद्वान् ।
+
+    युयोध्यस्मज्जुहुराणमेनो भूयिष्ठां ते नम उक्तिं विधेम ॥ १८ ॥'
+- kind: iast
+  label: IAST
+  body: 'agne naya supatha raye asman visvani deva vayunani vidvan |
+
+    yuyodhy asmaj juhuranam eno bhuyistham te nama uktim vidhema || 18 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: O Fire, lead us by the good path, knowing all our ways; remove crooked sin from us. We offer reverence.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The text ends as ethical prayer: guidance, purification, humility.
+
+
+    Key Terms:
+
+
+    **supatha** - good path; **yuyodhi** - remove, ward off.
+
+
+    Cross-Tradition Resonances:
+
+
+    Purificatory closing prayers across Vedic liturgy.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Close each day with one sincere request for clearer conduct tomorrow.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_024
+  source_reference: ''

@@ -1,0 +1,327 @@
+path_id: yoginihrdaya_cakrasamketa
+work_id: yoginihrdaya
+work_title: Yoginīhṛdaya
+title: "The Descent of the Cakra: An Initiatic Path through the Heart of the Yoginī"
+tradition: Śrī Vidyā / Tripurā Tantra
+covers: "Chapter 1 (Cakrasaṃketa), ślokas 1–35"
+status: open_ended  # extends as Mantrasaṃketa (Ch.2) and Pūjāsaṃketa (Ch.3) are authored
+
+# --- Design rationale -------------------------------------------------------
+# The Yoginīhṛdaya does not call its three chapters "lessons" but saṃketas —
+# "appointed encounters / agreements." So this path is built AS a saṃketa: an
+# agreed sequence of meetings through which the secret descends, "ear to ear."
+# Two consequences shape every station below:
+#   1. You do not advance by reading the next unit. You advance by *passing a
+#      gate* — a practice that must ripen first. The text itself gates
+#      transmission on testing (YH 1.5: "given to one tested through half a
+#      year"). The path honours that: each station has a `passed_when` marker.
+#   2. The movement mirrors the text. Gates I–III trace the *descent*
+#      (avatāra) — how undivided consciousness becomes diagram, then world.
+#      The final gate reverses the current (antaryāga) and returns inward.
+# Delivery model (how an app would walk a student through this): serve one
+# station at a time; reveal `transmission` + `contemplation`, withhold the next
+# station until the user marks the `gate_practice` done and answers the
+# station's `opening_question` of the *next* step. The path is linear but each
+# gate is a threshold, not a page-turn.
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  Treat the diagram as a living presence to be met, not a symbol to be decoded.
+
+premise: >
+  You are not learning *about* the śrīcakra. You are being walked into it. The
+  cakra is the cosmic body of the Goddess — and, the text insists, your own.
+  Every gate moves the same single question one notch closer: where does the
+  world come from, and where, right now, are you standing in its arising?
+
+how_to_walk:
+  - "Sit before each station as before an appointment. You are expected."
+  - "Read the transmission once aloud, then close the text and do the practice."
+  - "Do not advance until the `passed_when` marker is honestly true for you."
+  - "Secrecy here means interiority, not concealment: keep the work unspoken so it gathers heat."
+
+gates:
+
+  - gate_id: gate_0_threshold
+    name: "The Threshold — Adhikāra (Fitness)"
+    sanskrit: अधिकार
+    theme: "Who may receive, and in what posture."
+    why_first: >
+      The text spends its first five verses not on doctrine but on fitness,
+      secrecy, and desire. Before the cakra can be shown, the one who would see
+      it must be made into a vessel. This gate does not teach the cakra; it
+      makes you askable.
+    stations:
+      - station: 1
+        unit_id: yoginihrdaya.yh_001
+        reference: "YH 1.1"
+        title: "The Question That Opens the Absolute"
+        opening_question: "What do you already claim to know that keeps you from being taught?"
+        transmission: >
+          Notice who speaks first. Not the god, but the Goddess — and she asks.
+          Revelation here begins as a demand made from fullness, not from lack.
+          This tells you the posture of all that follows: you do not seize this
+          teaching, you petition it. The "unknown meanings" (ajñātārtha) are not
+          missing facts; they are senses the text withholds until they are
+          desired within a relationship. So begin by un-knowing on purpose.
+        contemplation: "Sit with one thing you are certain about. Loosen the grip until it becomes a question again."
+        gate_practice: >
+          Before study, form one precise question and address it aloud, as to a
+          presence: "Speak this, completely." Then read as one who has asked.
+        passed_when: "You can hold your central concern as a question without rushing to answer it."
+
+      - station: 2
+        unit_id: yoginihrdaya.yh_002
+        reference: "YH 1.2–5"
+        title: "Whispered Ear to Ear — Secrecy and the Sky-Going State"
+        opening_question: "Can you hold something precious in silence without needing to be seen holding it?"
+        transmission: >
+          The teaching travels mouth to ear and is "kept carefully hidden." This
+          is not gatekeeping for its own sake. Meaning received in trust and
+          silence is a different object than meaning published flat. And the
+          promise is enormous: the instant one truly knows this, one becomes
+          khecara — the sky-goer. But the sky (kha) is the void at the centre of
+          a wheel's hub transposed inward: the open space of the heart. To move
+          in that sky is to be free. Knowing, here, is not clever; it is the
+          capacity for tested, loving, sustained attention.
+        contemplation: "Feel how a truth withheld concentrates — gathers heat in the void of the chest."
+        gate_practice: >
+          Choose your most precious insight and, for one full day, do not speak
+          it. Carry it silently. Let the unspoken truth gather in the heart-space.
+        passed_when: "Silence around the work feels like fuel, not deprivation."
+
+  - gate_id: gate_1_agreement
+    name: "The Agreement — Saṃketa (Co-Presence)"
+    sanskrit: संकेत
+    theme: "The threefold meeting-place, and why understanding *is* authority."
+    why_first: >
+      Now the architecture is named. The whole of what follows is a single
+      presence met in three modes — diagram, sound, rite. And the text warns:
+      until you *understand* the agreement, the diagram stays inert. This gate
+      converts the student from spectator to participant.
+    stations:
+      - station: 3
+        unit_id: yoginihrdaya.yh_003
+        reference: "YH 1.6"
+        title: "Threefold Co-Presence — Cakra, Mantra, Worship"
+        opening_question: "Do your sacred forms point at something absent, or are they places you actually go?"
+        transmission: >
+          Saṃketa cannot be said in one word: agreement, appointed meeting-place,
+          co-presence. The cakra does not depict the Goddess; the mantra does not
+          refer to her; the worship does not commemorate her. Each is a rendez-
+          vous where she and Śiva are actually present by agreement — and that
+          co-presence is what makes the form work. A true symbol is not a token
+          you decode. It is an appointment you keep.
+        contemplation: "Pick one habitual sacred form. See it not as a reminder but as a place you are expected to arrive."
+        gate_practice: >
+          Take one daily form — an image, a phrase, a small rite. Today, arrive
+          at it on time and fully, expecting to be met there.
+        passed_when: "At least one of your forms has stopped being a reminder and become a meeting."
+
+      - station: 4
+        unit_id: yoginihrdaya.yh_004
+        reference: "YH 1.7"
+        title: "The Seat of Supreme Authority"
+        opening_question: "Where in your practice are you running on autopilot, without grasping why the form is shaped as it is?"
+        transmission: >
+          "So long as one does not know this triad, one does not become a bearer
+          of the highest authority in the cakra." This is not a password rule.
+          To *know* the saṃketa is to be assimilated to the will (ājñā) that
+          animates the diagram, so that your own command participates in hers.
+          Incomprehension is not innocent here — it is exclusion from a
+          sovereignty already latent in you. The diagram waits, inert, until
+          understanding makes you its conduit.
+        contemplation: "Where understanding is absent, authority is borrowed. Find one borrowed place."
+        gate_practice: >
+          Pick one practice you perform without understanding its form. Withhold
+          the autopilot and ask it: "What presence are you the meeting-place of?"
+        passed_when: "You would rather not perform a rite than perform one you do not understand."
+
+  - gate_id: gate_2_flashing
+    name: "The Flashing — Sphurattā (The Arising)"
+    sanskrit: स्फुरत्ता
+    theme: "How the cakra — and the cosmos — springs into being."
+    why_first: >
+      Before tracing the diagram's parts, you must witness its birth. These two
+      stations give the metaphysical engine of the entire work: reality as a
+      rhythm of emission and return, originating in consciousness seeing itself.
+    stations:
+      - station: 5
+        unit_id: yoginihrdaya.yh_005
+        reference: "YH 1.8"
+        title: "Five Energies, Four Fires"
+        opening_question: "Is your sense of self a thing, or a standing pattern that some movement keeps making?"
+        transmission: >
+          The śrīcakra is not a static figure. It exists only as the conjunction
+          of two opposed movements: five energies pouring out (sṛṣṭi) and four
+          fires drawing back (laya). Remove the tension and there is no cakra at
+          all. Reality is intrinsically rhythmic — creation and dissolution are
+          not sequential events but simultaneous vectors. And note: five against
+          four. The cosmos leans, ever so slightly, toward appearing.
+        contemplation: "Watch the breath as the live conjunction of letting-forth and drawing-back."
+        gate_practice: >
+          Watch three full breaths. On each in-breath sense laya (the world
+          melting toward your centre); on each out-breath sense sṛṣṭi (the world
+          flung outward). Rest as the meeting-point of the two.
+        passed_when: "You can feel yourself as the oscillation rather than as either pole."
+
+      - station: 6
+        unit_id: yoginihrdaya.yh_006
+        reference: "YH 1.9"
+        title: "Sphurattā — The Cakra Springs from the Goddess Seeing Herself"
+        opening_question: "Have you ever caught yourself in the act of being aware?"
+        transmission: >
+          Here is the heart of the heart. The Supreme Power, freely taking the
+          form of all that exists, *beholds her own flashing-forth* — and in that
+          seeing, the cakra arises. Manifestation is reflexive: the world is not
+          made by the Goddess as an external product; it *is* her looking at her
+          own radiance. Your small moments of suddenly catching yourself being
+          aware are micro-instances of the very flash from which a universe
+          springs. Nothing compels it. It is free play (svecchā), not necessity.
+        contemplation: "The light that knows itself is the same light that becomes a world."
+        gate_practice: >
+          Once today, the instant you notice you are aware, catch the small flash
+          of realising you are present. Do not analyse it. Stay one breath in it
+          as sphurattā — the flash from which a world is said to spring.
+        passed_when: "You have caught the flash at least once and recognised it as the same act the verse describes."
+
+  - gate_id: gate_3_descent
+    name: "The Descent — Avatāra / Vikāsa (The Unfolding)"
+    sanskrit: अवतार
+    theme: "How the single point becomes structure, senses, world — and where the supreme hides."
+    why_first: >
+      Having witnessed the arising, you now trace the descent: how the bindu
+      becomes the ninefold womb, the senses, the graded cosmos, and finally the
+      solid earth at the outer square. This is the longest gate because the
+      descent is long. Walk it as a controlled fall from light into world.
+    stations:
+      - station: 7
+        unit_id: yoginihrdaya.yh_007
+        reference: "YH 1.10cd–13"
+        title: "From the Void-A and the Bindu — The Ninefold Womb"
+        opening_question: "What do you treat as the neutral furniture of experience — the given that needs no explanation?"
+        transmission: >
+          From the meeting of the unmanifest (void-A) and the bindu streams not a
+          thing but a *seat* — the womb-throne of the three levels of the Word.
+          And its first offspring are not earth or water but *structure*: dharma
+          and its opposite, the selves, and above all the triad knower–knowable–
+          knowing. Reality is cognitive at its root. The subject, the object, and
+          the act between them — these are not brute givens; they are the womb's
+          first children, a "compact mass of consciousness-and-bliss."
+        contemplation: "Subject, object, and the knowing that binds them are one dense field, not three separate things."
+        gate_practice: >
+          Take one perception. Notice its three children — knower, known, and the
+          live knowing between. Hold all three at once for three breaths as a
+          single field.
+        passed_when: "The split between you and what you perceive has, for a moment, stopped feeling absolute."
+
+      - station: 8
+        unit_id: yoginihrdaya.yh_008
+        reference: "YH 1.14–18"
+        title: "The Expanding Triangles — Consciousness Differentiates into the Senses"
+        opening_question: "When you perceive, do you experience yourself as receiving a world, or as a world appearing?"
+        transmission: >
+          As the womb expands through its triangles, what is generated is the
+          apparatus of experience itself: the phonemes (sound), the elements
+          (world), and the senses (cognition) — laid on one nested figure,
+          asserting they are one differentiation seen three ways. Ambikā, the
+          Mother, sits still at the centre, ringed by the vowels, the seed-powers
+          of all speech. When you hear a sound or see a colour, you are reading
+          one of these triangles — a local flash of the same consciousness the
+          whole diagram maps.
+        contemplation: "Perception is the cosmos perceiving itself, not a subject sampling an outside."
+        gate_practice: >
+          Choose one sense — hearing. For ten breaths attend not to what you hear
+          but to the act of hearing as a radiance flashing from a still centre.
+        passed_when: "An ordinary act of perception has felt, briefly, like a radiance rather than a transaction."
+
+      - station: 9
+        unit_id: yoginihrdaya.yh_009
+        reference: "YH 1.19–21"
+        title: "The Five Portions — From Pure Consciousness to Earth"
+        opening_question: "Do you treat the world's solidity as the opposite of spirit?"
+        transmission: >
+          The whole diagram is a scale model of the descent of reality. The five
+          kalās map onto the nested figures: pure consciousness at the inmost
+          point, and earth at the outermost square. The direction is the
+          teaching — the highest reality is the *smallest, innermost* point; the
+          grossest is the *largest outer ring*. Magnitude is a mark of descent,
+          not importance. To move inward is to ascend toward the source. The
+          world's solidity is not opposed to spirit; it is spirit's outermost
+          shining, where consciousness has become earth — and can be traced home.
+        contemplation: "The wall, the floor: the outermost shining of consciousness, not dead matter."
+        gate_practice: >
+          Look at the most ordinary solid object near you. Regard it as nivṛtti —
+          the outer edge of consciousness condensed to earth. Trace one step
+          inward, from its solidity to your bare awareness of it, and rest there.
+        passed_when: "Solid matter and awareness feel like two ends of one continuum, not two worlds."
+
+      - station: 10
+        unit_id: yoginihrdaya.yh_010
+        reference: "YH 1.22–24"
+        title: "The Inverted Hierarchy and the Erotic Point"
+        opening_question: "Do you believe depth requires withdrawal from the busy, outer surface of life?"
+        transmission: >
+          Counted from the outside in — the order of return — the peaceful, highest
+          energy is found pervading the *outermost* cakras, and the heat of action
+          burns at the *centre*. The supreme is not only "deep within"; it saturates
+          every level, periphery included. And the whole figure is declared a form
+          of kāmakalā — the glyph of the desiring union of Śiva and Śakti — whose
+          deepest nature is *prasāra*, expansion. The cosmos is not a neutral
+          structure but an erotic one: it exists because two poles desire and unite,
+          and its essence is verb, not noun — generous overflow.
+        contemplation: "The same peace you seek in stillness saturates the noisiest outer ring of your day."
+        gate_practice: >
+          Find the busiest, most peripheral part of your day. Instead of withdrawing
+          to find depth, look for the supreme *in* it: let one ordinary act be felt
+          as the expansion of a fullness, not a distraction from it.
+        passed_when: "You have located the sacred in a 'peripheral' moment without retreating from it."
+
+  - gate_id: gate_4_return
+    name: "The Return — Antaryāga (Inner Sacrifice)"
+    sanskrit: अन्तर्याग
+    theme: "Reversing the current: the whole diagram re-found in the body, and the ascent beyond form."
+    why_first: >
+      The descent is complete; now the current reverses. The external diagram is
+      drawn back into the practitioner's own axis and climbed — from base to the
+      partless summit. This is where worship becomes yoga and the cosmos becomes
+      you. It is the natural end of Chapter 1 and the doorway to the chapters on
+      mantra and worship still to come.
+    stations:
+      - station: 11
+        unit_id: yoginihrdaya.yh_011
+        reference: "YH 1.25–27, 35"
+        title: "Interiorizing the Diagram — The Cakra in the Subtle Body"
+        opening_question: "Where, in your own body, is the centre of the diagram you have been studying?"
+        transmission: >
+          Now re-find the whole figure within. Its nine parts are distributed along
+          the central channel from the base lotus to the great point above the head.
+          To build the cakra in worship and to build yourself in yoga become one
+          act. The ascent is graded by a phenomenology of dissolution: meditation
+          "with parts" while images still hold; "with-and-without parts" through the
+          thinning resonances of the seed-sound HRĪṂ; and "partless" at the summit.
+          The terminus is not a higher form but the formless "Supremely Great,"
+          unbounded by space or time, self-beautiful, awhirl with bliss. The path
+          is a controlled de-thickening of attention — ending not in blankness but
+          in unbounded, self-delighting plenitude.
+        contemplation: "From image, to sound, to the silence past sound — the same presence, progressively unveiled."
+        gate_practice: >
+          Sit upright and intone a single syllable (use "hrīṃ," or simply "mmm").
+          Follow it as it fades: vowel, then hum, then bare vibration, then the
+          silence after. Each time it dissolves, rest one breath in the partless
+          quiet above the sound before sounding it again.
+        passed_when: "The silence after the sound has begun to feel fuller than the sound itself."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    You have walked the Cakrasaṃketa — the agreement concerning the diagram. Two
+    further encounters await in the text: the Mantrasaṃketa (the same descent and
+    return enacted in *sound* — the building and meaning of the śrīvidyā mantra)
+    and the Pūjāsaṃketa (the same reality enacted in *worship*). The threefold
+    saṃketa is one presence met three ways; having met it as form, you are now
+    fit to meet it as sound, and then as rite. Keep the appointment.
+  next_gates:
+    - "Mantrasaṃketa (Chapter 2) — to be authored"
+    - "Pūjāsaṃketa (Chapter 3) — to be authored"

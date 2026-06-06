@@ -21,28 +21,36 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- consciousness
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
+- consciousness
 tags:
 - attention
-- clarity
 - consciousness
-- content
-- emphasis
-- grows
-- inward
-- knower
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #79
+
+    Cultivate the felt-sense that the consciousness in another’s body
+
+    is the same as one’s own. Releasing obsession with one’s own
+
+    body, one experiences one’s all-pervasiveness within days. || 107'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_079
+  source_reference: ''

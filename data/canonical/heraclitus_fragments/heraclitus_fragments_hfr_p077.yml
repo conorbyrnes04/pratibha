@@ -4,44 +4,57 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p077
-unit_label: A man in the quiet of the night
-title: A man in the quiet of the night
+unit_label: Man, as a light at night, is lighted and extinguished.* For when is death not present wit...
+title: Man, as a light at night, is lighted and extinguished.* For when is death not present wit...
 unit_type: teaching_passage
-thesis: Here change is not chaos but lawful transformation.
+thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
+  things.'
 themes:
-- silence
-- transformation
-- change
-- chaos
-- here
-- lawful
-- man
-- night
-source_excerpt: 'A man in the quiet of the night
-
-  is kindled like a fire soon quenched.'
-translation_literal: 'A man in the quiet of the night
-
-  is kindled like a fire soon quenched.'
-commentary: Here change is not chaos but lawful transformation. The world is dynamic, yet governed by proportion and measure.
+- breath
+- death
+source_excerpt: 'Man, as a light at night, is lighted and extinguished.* For when is death not present with us? As indeed
+  Heraclitus says: Living and dead, awake and asleep, young and old, are the same. For these several states are transmutations
+  of each other.'
+translation_literal: 'Man, as a light at night, is lighted and extinguished.* For when is death not present with us? As indeed
+  Heraclitus says: Living and dead, awake and asleep, young and old, are the same. For these several states are transmutations
+  of each other.'
+commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs
+  all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
+  Anchor: George T.W. Patrick (1889), fragment 77 (Bywater Greek). Corpus index HFR_P077 follows the Diels–Kranz-style numbering
+  used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- change
-- chaos
+- breath
 - commentary_text
+- death
 - heraclitus_fragments
-- here
-- lawful
-- man
-- night
-- silence
-- transformation
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'Man, as a light at night, is lighted and extinguished.* For when is death not present with us? As indeed Heraclitus
+    says: Living and dead, awake and asleep, young and old, are the same. For these several states are transmutations of each
+    other.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
+    things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
+    Anchor: George T.W. Patrick (1889), fragment 77 (Bywater Greek). Corpus index HFR_P077 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P077
+  source_reference: Patrick (1889), frag. 77; corpus HFR_P077

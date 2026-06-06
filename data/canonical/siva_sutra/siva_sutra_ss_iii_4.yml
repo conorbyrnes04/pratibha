@@ -20,12 +20,14 @@ insight: At this level, the distinction must be named plainly.
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- attention
 - awareness
 - ignorance
 - knowledge
 - vidya
 - avidya
 tags:
+- attention
 - avidya
 - awareness
 - ignorance
@@ -34,8 +36,33 @@ tags:
 - siva_sutra
 - vidya
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: विद्या अविद्या
+- kind: iast
+  label: IAST
+  body: vidyā avidyā
+- kind: translation
+  label: Pratibha Translation
+  body: Knowledge and ignorance.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'At this level, the distinction must be named plainly. Some ways of knowing clarify; others obscure. The practitioner
+    learns discernment not as judgment, but as orientation.
+
+
+    Ignorance here is not the absence of information, but the habit of misplacing attention. Knowledge is whatever returns
+    awareness toward its source, even provisionally.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Āṇavopāya
   original_id: SS_III.4
+  source_reference: ''

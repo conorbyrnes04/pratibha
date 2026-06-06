@@ -11,14 +11,8 @@ thesis: 'Eyes open on space, without blinking, the body relaxed, thought at rest
   reality flowing in the open space of our body, a vast mass grave where fertile chaos decomposes, where the yogin and the
   yogini love to stroll, their reflections crisscrossing: gods and goddesses, dakinis and dakas, dancing in the sky.'
 themes:
+- attention
 - mind
-- open
-- space
-- anything
-- attainment
-- blinking
-- chaos
-- crisscrossing
 source_excerpt: This is the attainment of the supreme nectar, the immortality of samadhi, which reveals to the tantrika his
   own nature.
 translation_literal: This is the attainment of the supreme nectar, the immortality of samadhi, which reveals to the tantrika
@@ -33,19 +27,31 @@ practice: Read the stanza slowly three times. Keep one line in attention through
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
-- anything
-- attainment
-- blinking
-- chaos
+- attention
 - commentary_text
-- crisscrossing
 - mind
-- open
-- space
 - yoga_spandakarika
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: This is the attainment of the supreme nectar, the immortality of samadhi, which reveals to the tantrika his own nature.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Eyes open on space, without blinking, the body relaxed, thought at rest, there no longer exists anything but ineffable
+    reality flowing in the open space of our body, a vast mass grave where fertile chaos decomposes, where the yogin and the
+    yogini love to stroll, their reflections crisscrossing: gods and goddesses, dakinis and dakas, dancing in the sky. No
+    hope, no needs, nothing lacking, No projection, no expectations, no personal history,'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read the stanza slowly three times. Keep one line in attention through the day, and return to it whenever the mind
+    contracts.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Yoga Spandakarika
   section: Third Flow
   original_id: SP_32
+  source_reference: ''

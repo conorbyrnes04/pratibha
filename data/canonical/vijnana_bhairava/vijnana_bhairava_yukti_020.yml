@@ -26,27 +26,36 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - heart
-- pause
-- read
-- space
-- contemplative
-- directly
-- disclose
-- insight
 tags:
-- contemplative
-- directly
-- disclose
 - heart
-- insight
-- pause
-- read
 - root_text
-- space
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #20
+
+    One may steadily contemplate the space above, the space in the
+
+    root, and the space in the heart simultaneously. [In this
+
+    process,] one becomes free of dichotomizing beliefs, due to
+
+    which the unconstructed state arises. || 45'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_020
+  source_reference: ''

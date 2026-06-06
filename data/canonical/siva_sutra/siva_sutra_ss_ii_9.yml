@@ -19,25 +19,36 @@ themes:
 - knowledge
 - jnana
 - anna
-- feed
-- identity
-- inflate
-- life
-- must
 tags:
 - anna
-- feed
-- identity
-- inflate
 - jnana
 - knowledge
-- life
-- must
 - root_text
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: ज्ञानं अन्नम्
+- kind: iast
+  label: IAST
+  body: jñānam annam
+- kind: translation
+  label: Pratibha Translation
+  body: Knowledge is nourishment.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Understanding must now feed life rather than inflate identity. Knowledge that cannot be digested becomes excess. Knowledge
+    that nourishes strengthens clarity, compassion, and stability.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāktopāya
   original_id: SS_II.9
+  source_reference: ''

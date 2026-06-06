@@ -25,6 +25,7 @@ import { learnStepContextId } from "@/lib/journalStorage";
 import type { VerseItem } from "@/lib/types";
 import { passagePreview } from "@/lib/verseLayers";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { displayPassageTitle } from "@/lib/passageTitles";
 
 function actionLabel(chatMode?: string): string {
   if (chatMode === "practice") return "Practice with it";
@@ -46,7 +47,7 @@ function PassageLink({ item, primary = false, backHref }: { item: VerseItem; pri
         {displayCollectionName(item.collection)}
         {item.section ? ` · ${item.section}` : ""}
       </p>
-      <h5 className="mt-1 text-base leading-tight text-amber-100">{item.title || item.sutra_id || item._id}</h5>
+      <h5 className="mt-1 text-base leading-tight text-amber-100">{displayPassageTitle(item)}</h5>
       {primary ? <p className="soft mt-1 line-clamp-2 text-sm leading-relaxed">{passagePreview(item)}</p> : null}
     </Link>
   );

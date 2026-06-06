@@ -4,50 +4,67 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p066
-unit_label: The living, when the dead
-title: The living, when the dead
+unit_label: text :—For it seems that by the ancients the bow and life were synonymously called βιός.
+title: text :—For it seems that by the ancients the bow and life were synonymously called βιός.
 unit_type: teaching_passage
-thesis: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding ripen
-  through experience.'
+thesis: Opposition is not a failure of order but its instrument.
 themes:
-- silence
-- direct
-- fragment
-- argument
-- contemplation
-- dead
-- experience
-- hold
-source_excerpt: 'The living, when the dead
-
-  wood of the bow
-
-  springs back to life, must die.'
-translation_literal: 'The living, when the dead
-
-  wood of the bow
-
-  springs back to life, must die.'
-commentary: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding
-  ripen through experience.'
+- death
+- harmony
+source_excerpt: text:—For it seems that by the ancients the bow and life were synonymously called βιός. So Heraclitus, the
+  obscure, said, ‘* The name of the bow is life, but its work is death.”’ Etym. magn. under word βιός. LX VII.—
+translation_literal: text:—For it seems that by the ancients the bow and life were synonymously called βιός. So Heraclitus,
+  the obscure, said, ‘* The name of the bow is life, but its work is death.”’ Etym. magn. under word βιός. LX VII.—
+commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that
+  tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony
+  audible. The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
+  things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
+  Anchor: George T.W. Patrick (1889), fragment 66 (Bywater Greek). Corpus index HFR_P066 follows the Diels–Kranz-style numbering
+  used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the
+  function? Write both pulls without trying to remove either.'
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- argument
 - commentary_text
-- contemplation
-- dead
-- direct
-- experience
-- fragment
+- death
+- harmony
 - heraclitus_fragments
-- hold
-- silence
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: text:—For it seems that by the ancients the bow and life were synonymously called βιός. So Heraclitus, the obscure,
+    said, ‘* The name of the bow is life, but its work is death.”’ Etym. magn. under word βιός. LX VII.—
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
+    generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
+    The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all things.
+    Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion. Anchor:
+    George T.W. Patrick (1889), fragment 66 (Bywater Greek). Corpus index HFR_P066 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the function?
+    Write both pulls without trying to remove either.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: Logos (λόγος)
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P066
+  source_reference: Patrick (1889), frag. 66; corpus HFR_P066

@@ -8,15 +8,7 @@ unit_label: 'Gauḍapāda''s Kārikā: Extended Philosophical Commentary'
 title: 'Gauḍapāda''s Kārikā: Extended Philosophical Commentary'
 unit_type: teaching_passage
 thesis: The first prakaraṇa closely follows the Upaniṣad's analysis.
-themes:
-- first
-- prakarana
-- alone
-- analysis
-- causality
-- cause
-- closely
-- follows
+themes: []
 source_excerpt: Āgama Prakaraṇa — Tradition · 29 Verses
 translation_literal: Āgama Prakaraṇa — Tradition · 29 Verses
 commentary: 'The first prakaraṇa closely follows the Upaniṣad''s analysis. Its distinctive contributions are:
@@ -29,19 +21,29 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
-- alone
-- analysis
-- causality
-- cause
-- closely
 - commentary_text
-- first
-- follows
 - mandukya_upanishad_and_gaudapada_karika
-- prakarana
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: Āgama Prakaraṇa — Tradition · 29 Verses
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The first prakaraṇa closely follows the Upaniṣad''s analysis. Its distinctive contributions are:
+
+
+    The causality diagnosis (I.11–12): establishing that the first three quarters are conditioned (by cause and effect, or
+    cause alone) while Turīya alone is uncaused — not one term in the causal chain but the ground in which causality appears.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Mandukya Upanishad and Gaudapada Karika
   section: teaching_passage
   original_id: MUK_016
+  source_reference: ''

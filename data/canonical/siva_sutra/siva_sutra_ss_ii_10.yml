@@ -31,8 +31,32 @@ tags:
 - svapna-darsana
 - vidya-samhara
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: विद्यासंहारे तदुत्थस्वप्नदर्शनम्
+- kind: iast
+  label: IAST
+  body: vidyā-saṁhāre tad-uttha-svapna-darśanam
+- kind: translation
+  label: Pratibha Translation
+  body: When knowledge withdraws, dreamlike perception arises from it.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Even refined knowledge must eventually loosen. As conceptual knowing subsides, perception becomes imaginal once more
+    — fluid, symbolic, and suggestive.
+
+
+    This is not regression but transition. Awareness prepares to move beyond structured support.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāktopāya
   original_id: SS_II.10
+  source_reference: ''

@@ -22,29 +22,34 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes:
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- itself
+themes: []
 tags:
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- itself
-- pause
-- read
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #56
+
+    Looking at the clear blue sky, with uninterrupted gaze,
+
+    remaining completely still: all at once, O Goddess, one attains the
+
+    ‘form’ of Bhairava. || 84'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_056
+  source_reference: ''

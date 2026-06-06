@@ -17,6 +17,7 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "vijñāna_bhairava",
     },
     "tao_te_ching": {"tao_te_ching", "dao_de_jing"},
+    "bhagavad_gita": {"bhagavad_gita", "bhagavad_gītā"},
     "the_book_of_chuang_tzu": {"the_book_of_chuang_tzu", "chuang_tzu", "zhuangzi"},
     "yoga_spandakarika": {
         "yoga_spandakarika",
@@ -30,6 +31,8 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
     },
     "epictetus_works": {"epictetus_works"},
     "phaedo_plato": {"phaedo_plato", "phaedo"},
+    "plotinus_enneads": {"plotinus_enneads", "the_enneads_of_plotinus", "enneads", "plotinus"},
+    "plotinus_enneads": {"plotinus_enneads", "plotinus", "enneads", "the_six_enneads"},
     "pratyabhijnahrdayam": {
         "pratyabhijnahrdayam",
         "pratyabhijna_hrdayam",
@@ -59,7 +62,51 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "isavasya_upanisad",
         "īśāvāsya_upaniṣad",
     },
+    "yoginihrdaya": {
+        "yoginihrdaya",
+        "yoginihrdayam",
+        "yogini_hrdaya",
+        "yoginī_hṛdaya",
+        "yoginīhṛdaya",
+        "the_heart_of_the_yogini",
+    },
+    "tantrasara": {
+        "tantrasara",
+        "tantrasāra",
+        "tantra_sara",
+        "abhinavagupta_tantrasara",
+    },
+    "patanjali_yoga_sutras": {
+        "patanjali_yoga_sutras",
+        "patañjali_yoga_sūtras",
+        "patanjali",
+        "yoga_sutras",
+        "yoga_sūtras",
+        "raja_yoga",
+    },
 }
+
+
+_ALIAS_TO_CANONICAL: dict[str, str] = {}
+for _canonical, _alias_set in COLLECTION_ALIASES.items():
+    for _name in {_canonical, *_alias_set}:
+        _ALIAS_TO_CANONICAL[slugify(_name)] = _canonical
+
+
+def canonical_slug(value: str, source_file: str = "") -> str:
+    """Map any collection label/alias to its canonical registry slug.
+
+    Falls back to the directory name in the source path, then to a plain slug,
+    so ingestion and enrichment store one consistent collection identifier.
+    """
+    s = slugify(value)
+    if s in _ALIAS_TO_CANONICAL:
+        return _ALIAS_TO_CANONICAL[s]
+    m = re.search(r"data/(?:yaml|canonical)/([^/]+)/", (source_file or "").lower())
+    if m:
+        s2 = slugify(m.group(1))
+        return _ALIAS_TO_CANONICAL.get(s2, s2)
+    return s
 
 
 def aliases_for_selection(selection: str) -> set[str]:

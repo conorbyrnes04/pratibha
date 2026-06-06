@@ -18,25 +18,35 @@ themes:
 - awareness
 - sakti
 - visva
-- energy
-- own
-- power
-- re-seen
-- resting
 tags:
 - awareness
-- energy
-- own
-- power
-- re-seen
-- resting
 - root_text
 - sakti
 - siva_sutra
 - visva
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: स्वशक्त्यावस्थानं विश्वम्
+- kind: iast
+  label: IAST
+  body: sva-śakty-avasthānaṁ viśvam
+- kind: translation
+  label: Pratibha Translation
+  body: The universe is the resting of one’s own power.
+- kind: commentary
+  label: Pratibha Commentary
+  body: The world is re-seen as stabilized energy. Nothing stands outside awareness; everything stands _within_ its play.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Āṇavopāya
   original_id: SS_III.9
+  source_reference: ''

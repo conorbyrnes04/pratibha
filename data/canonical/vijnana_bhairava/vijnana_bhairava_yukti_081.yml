@@ -24,27 +24,34 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - śiva
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
 tags:
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- pause
-- read
 - root_text
 - vijnana_bhairava
 - śiva
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #81
+
+    “The Highest Divinity is omniscient, omnipotent, and all-
+
+    pervading; and I am he who possesses Śiva’s qualities.” Stabilizing
+
+    this conviction, one becomes Śiva. || 109'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_081
+  source_reference: ''

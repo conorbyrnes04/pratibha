@@ -22,27 +22,39 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - mind
+- soul
 - transformation
 - way
-- change
-- frames
-- intelligible
-- inviting
-- lawful
 tags:
-- change
-- frames
-- intelligible
-- inviting
-- lawful
 - mind
 - root_text
+- soul
 - transformation
 - vijnana_bhairava
 - way
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #26
+
+    In the same way, imagining the whole world incinerated [by
+
+    fire], a person of disciplined mind experiences the supreme state
+
+    of the soul. || 53'
+- kind: commentary
+  label: Pratibha Commentary
+  body: The teaching frames change as lawful and intelligible, inviting steadiness within transformation.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_026
+  source_reference: ''

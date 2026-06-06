@@ -4,56 +4,64 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p068
-unit_label: As souls change into water
-title: As souls change into water
+unit_label: To souls it is death to become water, and to water it is death to become earth, but from...
+title: To souls it is death to become water, and to water it is death to become earth, but from...
 unit_type: teaching_passage
-thesis: 'The line turns inquiry inward: character and attention shape destiny.'
+thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
+  things.'
 themes:
+- breath
+- death
 - earth
-- silence
-- way
-- water
-- attention
-- change
-- character
-- destiny
-source_excerpt: 'As souls change into water
-
-  on their way through death,
-
-  so water changes into earth.
-
-  And as water springs from earth,
-
-  so from water does the soul.'
-translation_literal: 'As souls change into water
-
-  on their way through death,
-
-  so water changes into earth.
-
-  And as water springs from earth,
-
-  so from water does the soul.'
-commentary: 'The line turns inquiry inward: character and attention shape destiny. Mortality sharpens the call to live deliberately.'
+- soul
+source_excerpt: To souls it is death to become water, and to water it is death to become earth, but from earth comes water,
+  and from water, soul.
+translation_literal: To souls it is death to become water, and to water it is death to become earth, but from earth comes
+  water, and from water, soul.
+commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs
+  all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
+  Anchor: George T.W. Patrick (1889), fragment 68 (Bywater Greek). Corpus index HFR_P068 follows the Diels–Kranz-style numbering
+  used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- attention
-- change
-- character
+- breath
 - commentary_text
-- destiny
+- death
 - earth
 - heraclitus_fragments
-- silence
-- water
-- way
+- soul
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: To souls it is death to become water, and to water it is death to become earth, but from earth comes water, and from
+    water, soul.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
+    things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
+    Anchor: George T.W. Patrick (1889), fragment 68 (Bywater Greek). Corpus index HFR_P068 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: psychē (ψυχή)
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P068
+  source_reference: Patrick (1889), frag. 68; corpus HFR_P068

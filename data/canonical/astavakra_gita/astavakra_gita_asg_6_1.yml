@@ -26,28 +26,37 @@ insight: 'Extended Translation:
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- like
-- space
-- infinite
-- material
-- pot
-- world
-- acceptance
-- dissolution
+- renunciation
 tags:
-- acceptance
 - astavakra_gita
-- dissolution
-- infinite
-- like
-- material
-- pot
+- renunciation
 - root_text
-- space
-- world
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: I am infinite like space; the material world is like a pot in space.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Extended Translation:
+
+    I am infinite like space; the material world is like a pot in space. Knowing this, there is no renunciation, no acceptance,
+    no dissolution.
+
+
+    ākāśavad ananto''haṃ ghaṭavat prākṛtaṃ jagat | iti jñānaṃ tathaitasya na tyāgo na graho layaḥ ||
+
+    "I am infinite like space; the material world is like a pot in space. Knowing this, there is no renunciation, no acceptance,
+    no dissolution."'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Astavakra Gita
   section: verse
   original_id: ASG_6_1
+  source_reference: ''

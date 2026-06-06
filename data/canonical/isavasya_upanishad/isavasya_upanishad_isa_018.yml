@@ -33,27 +33,49 @@ practice: Alternate abstract contemplation and concrete service in the same day.
 upaya: ''
 themes:
 - mantra
-- another
-- anti-reduction
-- both
-- darkness
-- devoted
-- enter
-- manifest
 tags:
-- another
-- anti-reduction
-- both
-- darkness
-- devoted
-- enter
 - isavasya_upanishad
-- manifest
 - mantra
 - root_text
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'अन्धं तमः प्रविशन्ति येऽसम्भूतिमुपासते ।
+
+    ततो भूय इव ते तमो य उ सम्भूत्यां रताः ॥ १२ ॥'
+- kind: iast
+  label: IAST
+  body: 'andham tamah pravisanti ye''sambhutim upasate |
+
+    tato bhuya iva te tamo ya u sambhutyam ratah || 12 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: Those devoted only to the unmanifest enter darkness; those devoted only to the manifest enter deeper darkness.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Another anti-reduction teaching: both poles must be understood.
+
+
+    Key Terms:
+
+
+    **asambhuti/sambhuti** - unmanifest/manifest becoming.
+
+
+    Cross-Tradition Resonances:
+
+
+    Source-expression non-duality.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Alternate abstract contemplation and concrete service in the same day.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_018
+  source_reference: ''

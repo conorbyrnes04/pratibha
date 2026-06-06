@@ -24,27 +24,35 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - harmony
-- can
-- dynamic
-- hidden
-- opposition
-- reactivity
-- reveal
-- seen
 tags:
-- can
-- dynamic
 - harmony
-- hidden
-- opposition
-- reactivity
-- reveal
 - root_text
-- seen
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #97
+
+    Knowing that because the total plenitude of the Absolute [is the
+
+    same in all beings], [it makes sense to be] equal towards foe and
+
+    friend, and equanimous in both honor and dishonor, one becomes
+
+    [truly] happy. || 125'
+- kind: commentary
+  label: Pratibha Commentary
+  body: Opposition is treated as a dynamic tension that can reveal hidden harmony when seen without reactivity.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_097
+  source_reference: ''

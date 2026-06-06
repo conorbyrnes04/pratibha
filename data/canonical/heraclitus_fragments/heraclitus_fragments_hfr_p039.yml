@@ -4,53 +4,56 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p039
-unit_label: What was cold soon warms,
-title: What was cold soon warms,
+unit_label: Cold becomes warm, and warm, cold ; wet becomes dry, and dry, wet.
+title: Cold becomes warm, and warm, cold ; wet becomes dry, and dry, wet.
 unit_type: teaching_passage
-thesis: Opposites are not enemies to erase but tensions that generate becoming.
+thesis: Opposition is not a failure of order but its instrument.
 themes:
+- breath
 - harmony
-- silence
-- soon
-- becoming
-- cold
-- enemies
-- erase
-- generate
-source_excerpt: 'What was cold soon warms,
-
-  and warmth soon cools.
-
-  So moisture dries,
-
-  and dry things drown.'
-translation_literal: 'What was cold soon warms,
-
-  and warmth soon cools.
-
-  So moisture dries,
-
-  and dry things drown.'
-commentary: Opposites are not enemies to erase but tensions that generate becoming. Harmony is discovered through, not apart
-  from, contrast.
+source_excerpt: Cold becomes warm, and warm, cold; wet becomes dry, and dry, wet.
+translation_literal: Cold becomes warm, and warm, cold; wet becomes dry, and dry, wet.
+commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that
+  tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony
+  audible. Anchor: George T.W. Patrick (1889), fragment 39 (Bywater Greek). Corpus index HFR_P039 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- becoming
-- cold
+- breath
 - commentary_text
-- enemies
-- erase
-- generate
 - harmony
 - heraclitus_fragments
-- silence
-- soon
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: Cold becomes warm, and warm, cold; wet becomes dry, and dry, wet.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
+    generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
+    Anchor: George T.W. Patrick (1889), fragment 39 (Bywater Greek). Corpus index HFR_P039 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P039
+  source_reference: Patrick (1889), frag. 39; corpus HFR_P039

@@ -100,12 +100,14 @@ practice: At the end of the day, sit in a darkened room and notice each source o
 upaya: ''
 themes:
 - consciousness
+- death
 - knowledge
 - practice
 - self
 - way
 tags:
 - consciousness
+- death
 - knowledge
 - practice
 - root_text
@@ -113,8 +115,112 @@ tags:
 - svetasvatara_upanishad
 - way
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'वेदाहमेतं पुरुषं महान्तमादित्यवर्णं तमसः परस्तात् ।
+
+    तमेव विदित्वाऽतिमृत्युमेति नान्यः पन्था विद्यतेऽयनाय ॥ ३.८ ॥
+
+
+    न तत्र सूर्यौ भाति न चन्द्रतारकं नेमा विद्युतो भान्ति कुतोऽयमग्निः ।
+
+    तमेव भान्तमनुभाति सर्वं तस्य भासा सर्वमिदं विभाति ॥ ६.१४ ॥
+
+
+    एको हंसो भुवनस्यास्य मध्ये स एवाग्निः सलिले संनिविष्टः ।
+
+    तमेव विदित्वाऽतिमृत्युमेति नान्यः पन्था विद्यतेऽयनाय ॥ ६.१५ ॥'
+- kind: iast
+  label: IAST
+  body: 'vedāham etaṃ puruṣaṃ mahāntam āditya-varṇaṃ tamasaḥ parastāt |
+
+    tam eva viditvā atimṛtyum eti nānyaḥ panthā vidyate ayanāya || 3.8 ||
+
+
+    na tatra sūryo bhāti na candra-tārakaṃ nemā vidyuto bhānti kuto ''yam agniḥ |
+
+    tam eva bhāntam anubhāti sarvaṃ tasya bhāsā sarvam idaṃ vibhāti || 6.14 ||
+
+
+    eko haṃso bhuvanasya asya madhye sa eva agniḥ salile sanniviṣṭaḥ |
+
+    tam eva viditvā atimṛtyum eti nānyaḥ panthā vidyate ayanāya || 6.15 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: 'I know that Great Person, radiant like the sun, beyond darkness. By knowing Him alone one crosses beyond death; there
+    is no other path for this passage.
+
+
+    There the sun does not shine, nor moon nor stars; these lightnings do not illumine it - what then to say of fire? Everything
+    shines only after That shines; by its light all this becomes luminous.
+
+
+    The one Swan [*haṃsa*] in the midst of the world, the same fire present in the waters - by knowing Him alone one goes
+    beyond death; there is no other path.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is uncompromising: liberation is epistemic-realizational before it is ritual, social, or conceptual. "No
+    other path" here does not dismiss practice; it hierarchizes it. All methods are preparatory unless they culminate in direct
+    knowledge of the Real. The verse therefore functions as a criterion statement for the entire Upaniṣadic project.
+
+
+    The luminous imagery of 6.14 is not cosmology in the physical sense but phenomenology of ground. Ordinary lights reveal
+    objects; this Light reveals revealing itself. The text denies the adequacy of every finite luminary to name the source
+    of luminosity, then states a strict dependence relation: all appearance borrows intelligibility from the Real.
+
+
+    The *haṃsa* symbol in 6.15 intensifies this: the one migratory principle moving through worlds and states is the same
+    inner fire hidden even in apparent opposites (fire in water). The point is not poetic contradiction but ontological non-duality
+    under manifest polarity.
+
+
+    What is counterintuitive is that death is treated as an epistemic boundary before a biological event. "Crossing death"
+    means crossing misidentification with the perishable. Biological death remains; death as ultimate referent is undone.
+
+
+    Key Terms:
+
+
+    **atimṛtyum eti (अतिमृत्युमेति)** - *ati* (beyond, across) + *mṛtyu* (death) + *eti* (goes) -> crossing beyond death as
+    limiting principle. Not merely post-mortem survival, but transvaluation of identity away from the perishable.
+
+
+    **panthā (पन्था)** - path, way, route of passage -> here a soteriological path-condition. "No other path" means no substitute
+    for realization, not rejection of preparatory disciplines.
+
+
+    **haṃsa (हंस)** - swan/goose, migratory principle, often symbol of the Self moving yet untouched. In this passage it signifies
+    unitary consciousness in the midst of plurality; not a decorative image but a doctrinal symbol of transcendence-in-immanence.
+
+
+    Cross-Tradition Resonances:
+
+
+    **Muṇḍaka Upaniṣad 2.2.10:** The same "no sun, moon, or fire" luminosity formula appears, establishing the Self as condition
+    of all empirical light. *Divergence:* Muṇḍaka leans renunciatory and sacrificially critical; Śvetāśvatara integrates devotional
+    and theistic emphasis more overtly.
+
+
+    **Pseudo-Dionysius, Mystical Theology 1:** Both move beyond sensory/intellectual lights to a supra-luminous darkness in
+    which true knowing occurs. *Divergence:* Dionysian apophasis remains explicitly Trinitarian and ecclesial; Śvetāśvatara
+    frames the same movement through ātman-īśvara identity language.
+
+
+    **Gospel of John 1:4-9:** Both assert derivative luminosity of the world from a primordial Light. *Divergence:* Johannine
+    theology personalizes this in incarnation-history; Śvetāśvatara interiorizes it as contemplative realization of indwelling
+    divine ground.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: At the end of the day, sit in a darkened room and notice each source of perceived illumination (screen-glow, memory-image,
+    inner speech), then ask what is aware of all these lights without itself becoming an object, and remain there until the
+    question stops feeling conceptual.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Svetasvatara Upanishad
   section: teaching_passage
   original_id: SVU_004
+  source_reference: ''

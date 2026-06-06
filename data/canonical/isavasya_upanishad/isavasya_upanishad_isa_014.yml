@@ -33,26 +33,52 @@ upaya: ''
 themes:
 - mantra
 - self
-- ordering
-- cosmically
-- intelligence
-- interior
-- merely
-- self-existent
+- witness
 tags:
-- cosmically
-- intelligence
-- interior
 - isavasya_upanishad
 - mantra
-- merely
-- ordering
 - root_text
 - self
-- self-existent
+- witness
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'स पर्यगाच्छुक्रमकायमव्रणमस्नाविरं शुद्धमपापविद्धम् ।
+
+    कविर्मनीषी परिभूः स्वयंभूर्याथातथ्यतोऽर्थान्व्यदधाच्छाश्वतीभ्यः समाभ्यः ॥ ८ ॥'
+- kind: iast
+  label: IAST
+  body: 'sa paryagac chukram akayam avranam asnaviram suddham apapa-viddham |
+
+    kavir manisi paribhuh svayambhur yathatathyato''rthan vyadadhac chasvatibhyah samabhyah || 8 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: All-pervading, pure, bodiless, untouched by evil - wise, transcendent, self-existent, ordering all rightly.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The Self is not merely interior witness but cosmically ordering intelligence.
+
+
+    Key Terms:
+
+
+    **svayambhu** - self-existent; **paribhuh** - transcendent.
+
+
+    Cross-Tradition Resonances:
+
+
+    Ishvara descriptions in later Vedanta.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Before planning, pause and align with "right order," not anxiety-speed.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_014
+  source_reference: ''

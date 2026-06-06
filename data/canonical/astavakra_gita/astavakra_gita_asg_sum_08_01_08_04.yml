@@ -25,14 +25,10 @@ thesis: 'Devanāgarī (8.1–8.2)
 
   Bondage is when the mind desires, grieves, grasps, releases, rejoices, or is angered.'
 themes:
+- action
 - breath
 - mind
 - self
-- bondage
-- socati
-- tada
-- vanchati
-- cittam
 source_excerpt: 'Devanāgarī (8.1–8.2)
 
   तदा बन्धो यदा चित्तं किञ्चिद् वाञ्छति शोचति ।
@@ -83,19 +79,67 @@ practice: Choose one ordinary action today and perform it without haste or self-
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
+- action
 - astavakra_gita
-- bondage
 - breath
-- cittam
 - commentary_text
 - mind
 - self
-- socati
-- tada
-- vanchati
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'Devanāgarī (8.1–8.2)
+
+    तदा बन्धो यदा चित्तं किञ्चिद् वाञ्छति शोचति ।
+
+    तदा मुक्तिर्यदा चित्तं न वाञ्छति न शोचति ॥
+
+
+    IAST
+
+    tadā bandho yadā cittaṃ kiñcid vāñchati śocati |
+
+    tadā muktir yadā citta...'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Devanāgarī (8.1–8.2)
+
+    तदा बन्धो यदा चित्तं किञ्चिद् वाञ्छति शोचति ।
+
+    तदा मुक्तिर्यदा चित्तं न वाञ्छति न शोचति ॥
+
+
+    IAST
+
+    tadā bandho yadā cittaṃ kiñcid vāñchati śocati |
+
+    tadā muktir yadā cittaṃ na vāñchati na śocati ||
+
+
+    Pratibhā Translation
+
+    Bondage is when the mind desires, grieves, grasps, releases, rejoices, or is angered. Liberation is when the mind does
+    none of these.
+
+
+    Pratibhā Commentary
+
+    The most operational definition of bondage and liberation in the text — and deceptively simple. Tadā — at that time —
+    makes these simultaneous states rather than permanent conditions. Bondage and liberation are not ontological categories
+    but descriptions of the mind''s current movement. When the mind''s movement is characterized by vāñchati (desiring), śocati
+    (grieving), muñcati (releasing), gṛhṇāti (grasping), hṛṣyati (rejoicing), kupyati (getting angry) — that is bondage. When
+    none of these movements are occurring — that is liberation. This does not require enlightenment as a permanent state;
+    it requires, moment by moment, the absence of these contractions.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Astavakra Gita
   section: chapter_summary
   original_id: ASG_SUM_08_01_08_04
+  source_reference: ''

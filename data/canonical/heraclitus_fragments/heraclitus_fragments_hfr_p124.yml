@@ -4,62 +4,48 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p124
-unit_label: Nightwalker, magus,
-title: Nightwalker, magus,
+unit_label: Night-roamers, Magians, bacchanals, revelers in wine, the initiated.
+title: Night-roamers, Magians, bacchanals, revelers in wine, the initiated.
 unit_type: teaching_passage
-thesis: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding ripen
-  through experience.'
+thesis: This aphorism compresses a cosmological claim into a single image or paradox.
 themes:
-- silence
-- direct
-- fragment
-- argument
-- contemplation
-- experience
-- hold
-- invites
-source_excerpt: 'Nightwalker, magus,
-
-  and their entourage,
-
-  bacchants and mystics
-
-  of the wine press,
-
-  with stained faces
-
-  and damp wits . . .'
-translation_literal: 'Nightwalker, magus,
-
-  and their entourage,
-
-  bacchants and mystics
-
-  of the wine press,
-
-  with stained faces
-
-  and damp wits . . .'
-commentary: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding
-  ripen through experience.'
+- breath
+source_excerpt: Night-roamers, Magians, bacchanals, revelers in wine, the initiated. CX X.—Seneca, Epist. 12.
+translation_literal: Night-roamers, Magians, bacchanals, revelers in wine, the initiated. CX X.—Seneca, Epist. 12.
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
+  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
+  falls quiet. Anchor: George T.W. Patrick (1889), fragment 124 (Bywater Greek). Corpus index HFR_P124 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- argument
+- breath
 - commentary_text
-- contemplation
-- direct
-- experience
-- fragment
 - heraclitus_fragments
-- hold
-- invites
-- silence
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: Night-roamers, Magians, bacchanals, revelers in wine, the initiated. CX X.—Seneca, Epist. 12.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
+    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
+    quiet. Anchor: George T.W. Patrick (1889), fragment 124 (Bywater Greek). Corpus index HFR_P124 follows the Diels–Kranz-style
+    numbering used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P124
+  source_reference: Patrick (1889), frag. 124; corpus HFR_P124

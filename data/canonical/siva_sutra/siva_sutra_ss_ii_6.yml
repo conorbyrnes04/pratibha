@@ -32,8 +32,33 @@ tags:
 - siva_sutra
 - upaya
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: गुरुरुपायः
+- kind: iast
+  label: IAST
+  body: gurur upāyaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The guru is the means.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'At this stage, guidance becomes essential. Not as authority, but as resonance. The guru names the principle by which
+    recognition is mirrored, corrected, and stabilized through relationship.
+
+
+    What cannot yet be sustained alone is reflected back through another. The guru is not a person to be followed, but a function
+    that interrupts self-deception.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāktopāya
   original_id: SS_II.6
+  source_reference: ''

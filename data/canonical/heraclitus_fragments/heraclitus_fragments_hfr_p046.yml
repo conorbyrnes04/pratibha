@@ -4,50 +4,71 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p046
-unit_label: From the strain
-title: From the strain
+unit_label: reference to these things, some seek for deeper principles and more in accordance with na...
+title: reference to these things, some seek for deeper principles and more in accordance with na...
 unit_type: teaching_passage
-thesis: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding ripen
-  through experience.'
+thesis: Opposition is not a failure of order but its instrument.
 themes:
+- earth
 - harmony
-- silence
-- direct
-- fragment
-- argument
-- contemplation
-- experience
-- hold
-source_excerpt: 'From the strain
-
-  of binding opposites
-
-  comes harmony.'
-translation_literal: 'From the strain
-
-  of binding opposites
-
-  comes harmony.'
-commentary: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding
-  ripen through experience.'
+- heaven
+source_excerpt: reference to these things, some seek for deeper principles and more in accordance with nature. Euripides says,
+  ‘“‘ The parched earth loves the rain, and the high heaven, with moisture laden, loves earthward to fall.’ And Heraclitus
+  says, ‘‘ The unlike is joined together, and from differences results the most beautiful harmony, and all things take place
+  by strife.’’
+translation_literal: reference to these things, some seek for deeper principles and more in accordance with nature. Euripides
+  says, ‘“‘ The parched earth loves the rain, and the high heaven, with moisture laden, loves earthward to fall.’ And Heraclitus
+  says, ‘‘ The unlike is joined together, and from differences results the most beautiful harmony, and all things take place
+  by strife.’’
+commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that
+  tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony
+  audible. The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that
+  all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
+  it. Anchor: George T.W. Patrick (1889), fragment 46 (Bywater Greek). Corpus index HFR_P046 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the
+  function? Write both pulls without trying to remove either.'
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- argument
 - commentary_text
-- contemplation
-- direct
-- experience
-- fragment
+- earth
 - harmony
+- heaven
 - heraclitus_fragments
-- hold
-- silence
 quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: reference to these things, some seek for deeper principles and more in accordance with nature. Euripides says, ‘“‘
+    The parched earth loves the rain, and the high heaven, with moisture laden, loves earthward to fall.’ And Heraclitus says,
+    ‘‘ The unlike is joined together, and from differences results the most beautiful harmony, and all things take place by
+    strife.’’
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
+    generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
+    The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things
+    are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it.
+    Anchor: George T.W. Patrick (1889), fragment 46 (Bywater Greek). Corpus index HFR_P046 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the function?
+    Write both pulls without trying to remove either.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P046
+  source_reference: Patrick (1889), frag. 46; corpus HFR_P046

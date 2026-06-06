@@ -30,8 +30,29 @@ tags:
 - way
 - yoga-bhumi
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: विस्मयो योगभूमिकाः
+- kind: iast
+  label: IAST
+  body: vismayo yoga-bhūmikāḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Wonder marks the stages of yoga.
+- kind: commentary
+  label: Pratibha Commentary
+  body: As recognition deepens, certainty gives way to astonishment. Wonder is not confusion; it is the mind encountering
+    what exceeds its reach.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.12
+  source_reference: ''

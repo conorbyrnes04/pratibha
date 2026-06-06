@@ -9,14 +9,8 @@ title: 'Pearl #33'
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
-- self
-- passing
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
+- self
 source_excerpt: He did not say, Whoever annihilates their self, knows their Lord. Your being is nothing and whatever is nothing
   cannot be placed in relationship to anything else, whether it is capable of passing away or not and whether it is existent
   or nonexistent.
@@ -30,18 +24,28 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - attention
-- clarity
 - commentary_text
-- content
-- emphasis
-- grows
-- inward
 - know_yourself_ibn_arabi_balyani
-- passing
 - self
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: He did not say, Whoever annihilates their self, knows their Lord. Your being is nothing and whatever is nothing cannot
+    be placed in relationship to anything else, whether it is capable of passing away or not and whether it is existent or
+    nonexistent.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P033
+  source_reference: ''

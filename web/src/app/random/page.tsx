@@ -2,11 +2,14 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { getRandom, getVerses } from "@/lib/api";
+import { getCollections, getRandom, getVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
+import { FilterSelect } from "@/components/FilterSelect";
+import { buildCollectionOptions } from "@/lib/corpusFilters";
 import { displayCollectionName } from "@/lib/collectionLabels";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import { displayPassageTitle } from "@/lib/passageTitles";
+import { LayerBlock } from "@/components/LayerBlock";
+import { getVerseLayers } from "@/lib/verseLayers";
 
 export default function RandomPage() {
   const [item, setItem] = useState<VerseItem | null>(null);
@@ -17,15 +20,18 @@ export default function RandomPage() {
   const [allItems, setAllItems] = useState<VerseItem[]>([]);
 
   useEffect(() => {
-    getVerses()
-      .then((items) => {
-        setAllItems(items);
-        const set = new Set(items.map((x) => (x.collection || "Unknown").trim()));
-        setCollections(["all", ...Array.from(set).sort((a, b) => a.localeCompare(b))]);
+    getCollections()
+      .then((names) => {
+        if (names.length > 0) {
+          setCollections(["all", ...names.slice().sort((a, b) => a.localeCompare(b))]);
+        }
       })
-      .catch(() => {
-        setError("Could not load the text library from the API.");
-      });
+      .catch(() => {});
+    // Load the library only for the local fallback pool; collection list comes
+    // from the dedicated endpoint above.
+    getVerses("strong_draft")
+      .then(setAllItems)
+      .catch(() => {});
   }, []);
 
   async function nextOne(selected: string) {
@@ -33,7 +39,7 @@ export default function RandomPage() {
     setError("");
     try {
       const c = selected === "all" ? undefined : selected;
-      const v = await getRandom(c);
+      const v = await getRandom(c, "strong_draft");
       if (v) {
         setItem(v);
         return;
@@ -59,38 +65,36 @@ export default function RandomPage() {
 
   useEffect(() => {
     void nextOne("all");
-    // Trigger initial load once.
+    // Pick the first passage exactly once on mount.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [allItems.length]);
+  }, []);
 
   return (
-    <main className="mx-auto max-w-4xl px-4 py-8">
-      <h1 className="text-3xl text-amber-200">Random Discovery</h1>
-      <p className="soft mt-2">Let the text choose you, then dive deeper.</p>
+    <main className="page-shell max-w-4xl">
+      <p className="eyebrow">Oracle</p>
+      <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Random Discovery</h1>
+      <p className="soft mt-4 text-xl">Let the text choose you, then dive deeper.</p>
 
-      <div className="mt-5 flex flex-wrap items-center gap-3">
-        <select
-          value={collection}
-          onChange={(e) => {
-            const value = e.target.value;
-            setCollection(value);
-            void nextOne(value);
-          }}
-          className="rounded-lg border border-white/15 bg-slate-950/70 px-3 py-2"
-        >
-          {collections.map((c) => (
-            <option key={c} value={c}>
-              {c === "all" ? "All collections" : displayCollectionName(c)}
-            </option>
-          ))}
-        </select>
-        <button onClick={() => nextOne(collection)} className="rounded-lg bg-amber-300 px-4 py-2 font-semibold text-slate-900">
+      <div className="mt-5 flex flex-wrap items-end gap-3">
+        <div className="min-w-[min(100%,18rem)] flex-1">
+          <FilterSelect
+            label="Collection"
+            tone="gold"
+            value={collection}
+            onChange={(value) => {
+              setCollection(value);
+              void nextOne(value);
+            }}
+            options={buildCollectionOptions(allItems, collections)}
+          />
+        </div>
+        <button onClick={() => nextOne(collection)} className="btn-primary px-5 py-2.5">
           Another one
         </button>
-        <Link href="/" className="rounded-lg border border-amber-200/30 px-4 py-2 text-amber-100">
+        <Link href="/" className="btn-secondary px-5 py-2.5">
           Home
         </Link>
-        <Link href="/read" className="rounded-lg border border-amber-200/30 px-4 py-2 text-amber-100">
+        <Link href="/read" className="btn-secondary px-5 py-2.5">
           Library
         </Link>
       </div>
@@ -101,40 +105,38 @@ export default function RandomPage() {
         <section className="card mt-6 p-5">
           <p className="text-amber-100">{error}</p>
           <div className="mt-4">
-            <button onClick={() => nextOne(collection)} className="rounded-lg bg-amber-300 px-4 py-2 font-semibold text-slate-900">
+            <button onClick={() => nextOne(collection)} className="btn-primary px-5 py-2.5">
               Retry
             </button>
           </div>
         </section>
       ) : item ? (
-        <section className="card mt-6 p-5">
-          <h2 className="text-xl text-amber-100">{item.title || item.sutra_id || item._id}</h2>
+        <section className="manuscript-card mt-6 p-6">
+          <h2 className="text-3xl leading-none text-amber-100">{displayPassageTitle(item)}</h2>
           <p className="soft mt-1 text-sm">
             {displayCollectionName(item.collection)} {item.section ? `• ${item.section}` : ""}
           </p>
-          {item.sanskrit ? <p className="mt-3 whitespace-pre-wrap text-xl leading-relaxed">{item.sanskrit}</p> : null}
-          {item.transliteration ? <p className="soft mt-2 whitespace-pre-wrap italic">{item.transliteration}</p> : null}
-          <div className="chat-markdown mt-4 leading-relaxed">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{item.translation || item.commentary || ""}</ReactMarkdown>
-          </div>
+          {getVerseLayers(item)
+            .filter((layer) => ["original", "iast", "translation", "practice"].includes(layer.kind))
+            .map((layer, idx) => (
+              <LayerBlock key={`${layer.kind}-${idx}`} layer={layer} compact />
+            ))}
           {item.themes && item.themes.length > 0 ? (
             <div className="mt-4 flex flex-wrap gap-2">
               {item.themes.slice(0, 6).map((t) => (
-                <span key={t} className="rounded-full border border-amber-200/30 px-3 py-1 text-xs text-amber-100">
+                <span key={t} className="rounded-full border border-amber-200/30 px-3 py-1 font-sans text-xs text-amber-100">
                   {t}
                 </span>
               ))}
             </div>
           ) : null}
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href={`/read/${encodeURIComponent(item._id)}`} className="rounded-lg bg-amber-300 px-4 py-2 font-semibold text-slate-900">
+            <Link href={`/read/${encodeURIComponent(item._id)}`} className="btn-primary px-5 py-2.5">
               Open full page
             </Link>
             <Link
-              href={`/chat?q=${encodeURIComponent(
-                `Study this passage from ${displayCollectionName(item.collection)}: ${item.title || item.sutra_id || item._id}. Explain simply, key insights, and one practice.`,
-              )}`}
-              className="rounded-lg border border-amber-200/30 px-4 py-2 text-amber-100"
+              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain`}
+              className="btn-secondary px-5 py-2.5"
             >
               Study this passage
             </Link>

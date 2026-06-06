@@ -20,6 +20,7 @@ insight: Once recognition has occurred, thought is no longer merely noise.
 practice: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 upaya: ''
 themes:
+- attention
 - awareness
 - mantra
 - mind
@@ -27,6 +28,7 @@ themes:
 - vibration
 - citta
 tags:
+- attention
 - awareness
 - citta
 - mantra
@@ -36,8 +38,33 @@ tags:
 - siva_sutra
 - vibration
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: चित्तं मन्त्रः
+- kind: iast
+  label: IAST
+  body: cittaṁ mantraḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Mind is mantra.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Once recognition has occurred, thought is no longer merely noise. The movements of mind carry potency. Every pattern
+    of attention shapes reality, just as mantra does—not by meaning alone, but by vibration and repetition.
+
+
+    Here the task is no longer to dissolve mind, but to hear it. When thought aligns with awareness, it becomes a vehicle
+    rather than a veil.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāktopāya
   original_id: SS_II.1
+  source_reference: ''

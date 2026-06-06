@@ -4,65 +4,66 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p044
-unit_label: War, as father
-title: War, as father
+unit_label: War is the father and king of all, and has produced some as gods and some as men, and has...
+title: War is the father and king of all, and has produced some as gods and some as men, and has...
 unit_type: teaching_passage
-thesis: Opposites are not enemies to erase but tensions that generate becoming.
+thesis: Opposition is not a failure of order but its instrument.
 themes:
+- breath
 - harmony
-- silence
-- becoming
-- enemies
-- erase
-- father
-- generate
-- opposites
-source_excerpt: 'War, as father
-
-  of all things, and king,
-
-  names few
-
-  to serve as gods,
-
-  and of the rest makes
-
-  these men slaves,
-
-  those free.'
-translation_literal: 'War, as father
-
-  of all things, and king,
-
-  names few
-
-  to serve as gods,
-
-  and of the rest makes
-
-  these men slaves,
-
-  those free.'
-commentary: Opposites are not enemies to erase but tensions that generate becoming. Harmony is discovered through, not apart
-  from, contrast.
+source_excerpt: War is the father and king of all, and has produced some as gods and some as men, and has made some slaves
+  and some free.
+translation_literal: War is the father and king of all, and has produced some as gods and some as people, and has made some
+  slaves and some free.
+commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that
+  tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony
+  audible. Anchor: George T.W. Patrick (1889), fragment 44 (Bywater Greek). Corpus index HFR_P044 follows the Diels–Kranz-style
+  numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+  arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- becoming
+- breath
 - commentary_text
-- enemies
-- erase
-- father
-- generate
 - harmony
 - heraclitus_fragments
-- opposites
-- silence
 quality_score: 0
-appendixes: []
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: War is the father and king of all, and has produced some as gods and some as people, and has made some slaves and
+    some free.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
+    generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
+    Anchor: George T.W. Patrick (1889), fragment 44 (Bywater Greek). Corpus index HFR_P044 follows the Diels–Kranz-style numbering
+    used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
+    arises — that resistance is part of the teaching.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+- kind: appendix
+  label: Public-domain anchor (Patrick 1889)
+  body: War is the father and king of all, and has produced some as gods and some as men, and has made some slaves and some
+    free.
+appendixes:
+- commentator: Public-domain anchor (Patrick 1889)
+  text: War is the father and king of all, and has produced some as gods and some as men, and has made some slaves and some
+    free.
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P044
+  source_reference: Patrick (1889), frag. 44; corpus HFR_P044

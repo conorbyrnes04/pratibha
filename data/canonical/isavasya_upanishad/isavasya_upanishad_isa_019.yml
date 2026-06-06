@@ -33,26 +33,50 @@ upaya: ''
 themes:
 - mantra
 - practice
-- clarity
-- distinctions
-- emphasizes
-- optional
-- transmission
-- arise
 tags:
-- arise
-- clarity
-- distinctions
-- emphasizes
 - isavasya_upanishad
 - mantra
-- optional
 - practice
 - root_text
-- transmission
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'अन्यदेवाहुः सम्भवादन्यदाहुरसम्भवात् ।
+
+    इति शुश्रुम धीराणां ये नस्तद्विचचक्षिरे ॥ १३ ॥'
+- kind: iast
+  label: IAST
+  body: 'anyad evahuh sambhavad anyad ahur asambhavat |
+
+    iti susruma dhiranam ye nas tad vicacaksire || 13 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: Different results arise from attending to manifest and unmanifest, as taught by the wise.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The verse emphasizes transmission clarity: distinctions are not optional.
+
+
+    Key Terms:
+
+
+    **sambhava/asambhava** - becoming/unbecoming.
+
+
+    Cross-Tradition Resonances:
+
+
+    Graduated means in traditional teaching.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Clarify whether your current practice is primarily transformative or transcendent.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_019
+  source_reference: ''

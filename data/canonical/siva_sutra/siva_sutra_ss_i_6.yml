@@ -20,12 +20,14 @@ insight: The world persists through dispersion.
 practice: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 upaya: ''
 themes:
+- action
 - breath
 - self
 - sakti-cakra
 - sandhana
 - samhara
 tags:
+- action
 - breath
 - root_text
 - sakti-cakra
@@ -34,8 +36,33 @@ tags:
 - self
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: शक्तिचक्रसन्धाने विश्वसंहारः
+- kind: iast
+  label: IAST
+  body: śakticakra-sandhāne viśva-saṁhāraḥ
+- kind: translation
+  label: Pratibha Translation
+  body: When the circles of power are gathered, the universe withdraws.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The world persists through dispersion. When the many currents of power are scattered outward, multiplicity appears
+    solid and compelling. But when these same currents are gathered back into their source, the universe does not end — it **resolves**.
+
+
+    This is not cosmic destruction, but inward retraction. Phenomena lose their grip not through negation, but through reintegration.
+    What was extended returns to intensity.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.6
+  source_reference: ''

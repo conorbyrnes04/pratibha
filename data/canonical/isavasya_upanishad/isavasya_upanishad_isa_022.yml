@@ -31,28 +31,56 @@ insight: The mantra culminates in identity-recognition, not ego inflation.
 practice: 'In contemplation, repeat softly: "Not the role - the witnessing Presence."'
 upaya: ''
 themes:
+- ego
 - mantra
 - recognition
-- culminates
-- ego
-- identity-recognition
-- inflation
-- asmi
-- auspicious
+- witnessing
 tags:
-- asmi
-- auspicious
-- culminates
 - ego
-- identity-recognition
-- inflation
 - isavasya_upanishad
 - mantra
 - recognition
 - root_text
+- witnessing
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'पूषन्नेकर्षे यम सूर्य प्राजापत्य व्यूह रश्मीन् समूह ।
+
+    तेजो यत्ते रूपं कल्याणतमं तत्ते पश्यामि योऽसावसौ पुरुषः सोऽहमस्मि ॥ १६ ॥'
+- kind: iast
+  label: IAST
+  body: 'pusann ekarse yama surya prajapatya vyuha rasmin samuha |
+
+    tejo yat te rupam kalyanatamam tat te pasyami yo''sav asau purusah so''ham asmi || 16 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: O Sun, gather your rays; let me behold your most auspicious form - that Purusha there, I am He.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The mantra culminates in identity-recognition, not ego inflation.
+
+
+    Key Terms:
+
+
+    **so''ham asmi** - He am I.
+
+
+    Cross-Tradition Resonances:
+
+
+    Mahavakya-style realization formulas.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'In contemplation, repeat softly: "Not the role - the witnessing Presence."'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_022
+  source_reference: ''

@@ -18,25 +18,35 @@ themes:
 - consciousness
 - drsya
 - sarira
-- appearance
-- coheres
-- every
-- form
-- seen
 tags:
-- appearance
-- coheres
 - consciousness
 - drsya
-- every
-- form
 - root_text
 - sarira
-- seen
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: दृश्यं शरीरम्
+- kind: iast
+  label: IAST
+  body: dr̥śyaṁ śarīram
+- kind: translation
+  label: Pratibha Translation
+  body: What is seen is a body.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Every appearance coheres as form. The body is not opposed to consciousness; it is consciousness appearing locally.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.14
+  source_reference: ''

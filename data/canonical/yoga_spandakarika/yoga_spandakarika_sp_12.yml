@@ -10,13 +10,10 @@ unit_type: teaching_passage
 thesis: The void is a cold, hard space; spatiality, a vibrant, living space.
 themes:
 - consciousness
+- death
+- fear
 - heart
 - way
-- void
-- space
-- contemplation
-- object
-- spatiality
 source_excerpt: If the void could be an object of contemplation, where would the consciousness that perceives it be? Therefore,
   consider contemplation of the vacuity as an artifice of a nature analogous to that of a profound absence from the world.
 translation_literal: If the void could be an object of contemplation, where would the consciousness that perceives it be?
@@ -38,17 +35,37 @@ sanskrit_iast: ''
 tags:
 - commentary_text
 - consciousness
-- contemplation
+- death
+- fear
 - heart
-- object
-- space
-- spatiality
-- void
 - way
 - yoga_spandakarika
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: If the void could be an object of contemplation, where would the consciousness that perceives it be? Therefore, consider
+    contemplation of the vacuity as an artifice of a nature analogous to that of a profound absence from the world.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The void is a cold, hard space; spatiality, a vibrant, living space. There is no difference between the void and
+    spatiality. Space contains the worlds, beauty, violence, and fear, wonderment, love, and passion. All these impulses are
+    the continuous sacred tremor. The person who is attached to an objectless void hardens her heart; the person who perceives
+    a void that includes all of manifestation recognizes the divine in herself. To leave behind all oppositions is to recognize
+    that samadhi is the only reality, since the source of all reality is found there. Going in this way toward the source
+    of all things, the yogi and the yogini are no longer in opposition to the world: the universe lies in each of their cells
+    like an embryo in the womb of the Goddess. The body is but a bringing together of goddesses and gods. There is neither
+    birth nor death. Nor to restrain it to become peaceful, Being void of object is virgin nature,'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Close the eyes for 2 minutes and release all labels. Repeatedly return to the immediate sense 'I am aware' without
+    adding any story.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Yoga Spandakarika
   section: First Flow
   original_id: SP_12
+  source_reference: ''

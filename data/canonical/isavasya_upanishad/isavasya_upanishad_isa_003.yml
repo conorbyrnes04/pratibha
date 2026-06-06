@@ -62,25 +62,79 @@ themes:
 - mind
 - self
 - stillness
-- beings
-- cannot
-- confusion
-- dismantle
-- hatred
 tags:
-- beings
-- cannot
-- confusion
-- dismantle
-- hatred
 - isavasya_upanishad
 - mind
 - root_text
 - self
 - stillness
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'अनेजदेकं मनसो जवीयो नैनद्देवा आप्नुवन्पूर्वमर्षत् ।
+
+    तद्धावतोऽन्यानत्येति तिष्ठत्तस्मिन्नपो मातरिश्वा दधाति ॥ ४ ॥
+
+
+    तदेजति तन्नैजति तद्दूरे तद्वन्तिके ।
+
+    तदन्तरस्य सर्वस्य तदु सर्वस्यास्य बाह्यतः ॥ ५ ॥
+
+
+    यस्तु सर्वाणि भूतान्यात्मन्येवानुपश्यति ।
+
+    सर्वभूतेषु चात्मानं ततो न विजुगुप्सते ॥ ६ ॥'
+- kind: iast
+  label: IAST
+  body: 'anejad ekam manaso javiyo nainad deva apnuvan purvam arsat |
+
+    tad dhavato''nyan atyeti tisthat tasminn apo matarisva dadhati || 4 ||
+
+
+    tad ejati tan naijati tad dure tad v antike |
+
+    tad antar asya sarvasya tadu sarvasyasya bahyatah || 5 ||
+
+
+    yas tu sarvani bhutany atmany evanupasyati |
+
+    sarvabhutesu catmanam tato na vijugupsate || 6 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: 'The Self is unmoving yet swifter than the mind; senses cannot overtake it. It moves and does not move, far and near,
+    within all and outside all.
+
+
+    Who sees all beings in the Self and the Self in all beings no longer recoils in hatred.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'These paradoxes are not poetic confusion; they dismantle object-based thinking. The Self cannot be grasped as one
+    finite thing among others. Realization is tested ethically: non-dual vision ends hatred, not just speculation.
+
+
+    Key Terms:
+
+
+    **anupasyati** - sees continuously, not as a one-time concept.
+
+
+    **ekatva** - unity, non-separation.
+
+
+    Cross-Tradition Resonances:
+
+
+    **Kena and Katha Upanishads:** non-objectifiable Self.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'In one conflict, pause and ask: "What am I refusing to include in my sense of self?"'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_003
+  source_reference: ''

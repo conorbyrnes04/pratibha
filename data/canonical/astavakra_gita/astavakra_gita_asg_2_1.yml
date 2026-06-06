@@ -48,7 +48,6 @@ practice: 'Can you recall a moment when you recognized something that was in fro
 upaya: ''
 themes:
 - consciousness
-- mind
 - recognition
 - self
 - niranjana
@@ -58,7 +57,6 @@ themes:
 tags:
 - astavakra_gita
 - consciousness
-- mind
 - moha
 - niranjana
 - prakrteh parah
@@ -67,8 +65,58 @@ tags:
 - self
 - vidambita
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'अहो निरञ्जनः शान्तो बोधोऽहं प्रकृतेः परः ।
+
+    एतावन्तमहं कालं मोहेनैव विडम्बितः ॥'
+- kind: iast
+  label: IAST
+  body: 'aho nirañjanaḥ śānto bodho''haṃ prakṛteḥ paraḥ |
+
+    etāvantam ahaṃ kālaṃ mohenaiva viḍambitaḥ ||'
+- kind: translation
+  label: Pratibha Translation
+  body: Oh!
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Extended Translation:
+
+    Oh! I am the stainless, peaceful knowing, beyond nature. For such a long time, I was merely deluded!
+
+
+    The exclamation *aho* — Oh! — is the sound of recognition breaking through. Not the "aha!" of intellectual solution, but
+    the "Oh!" of a person who has just found their keys in their own hand after searching the house for an hour. *Viḍambitaḥ*
+    — tricked, deceived, made a fool of — captures the retrospective quality of the moment. The recognition retroactively
+    illuminates the entire period of seeking: it was all *moha* (delusion), the delusion of not recognizing what was always
+    present. *Etāvantam kālam* — for so long — is an expression of both wonder and gentle self-compassion. The first word
+    of Janaka''s recognition is not "I know" but "I am": *bodhaḥ aham* — I am consciousness itself.
+
+
+    Cross-Tradition Resonance:
+
+    - Pratyabhijñāhṛdayam 13: the mind *itself* becoming Citi through *antarmukhī-bhāva* — Janaka''s *aho* is the sound of
+    this turning
+
+    - Zen *kenshō* accounts: the characteristic retrospective laughter — "how could I have not seen this?" — is the same *viḍambita*
+    quality
+
+    - Plotinus *Enneads* VI.9.10: the soul''s return to the One described as a shock of recognition — "there was no distance"'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Can you recall a moment when you recognized something that was in front of you the whole time? The specific quality
+    of that retroactive clarity — the "how did I miss this?" — is structurally similar to *pratyabhijñā*. Sit with that quality
+    as a taste of what recognition of the Self might feel like.
+
+
+    ### 2.2 — 2.7 *(Ocean and Wave series)*'
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Astavakra Gita
   section: verse
   original_id: ASG_2_1
+  source_reference: ''

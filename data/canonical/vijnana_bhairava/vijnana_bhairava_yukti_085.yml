@@ -24,27 +24,34 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - freedom
-- moment
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- insight
 tags:
-- contemplative
-- directly
-- disclose
 - freedom
-- insight
-- moment
-- pause
-- read
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #85
+
+    O goddess, listen to this traditional teaching: I will speak it
+
+    accurately. For one whose eyes are unmoving, radical freedom can
+
+    arise in a moment. || 113'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_085
+  source_reference: ''

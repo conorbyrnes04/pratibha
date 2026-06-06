@@ -1,3 +1,5 @@
+import asyncio
+import logging
 import re
 import json
 from typing import List, Tuple
@@ -7,6 +9,8 @@ from openai import AsyncOpenAI
 
 from .config import settings
 from .collection_aliases import aliases_for_selection, meta_collection_slug
+
+logger = logging.getLogger("pratibha.rag")
 
 _STOPWORDS = {
     "the", "and", "for", "that", "with", "this", "from", "into", "your", "what",
@@ -42,6 +46,42 @@ _COLLECTION_HINTS = {
         "isavasyam",
         "vidya and avidya",
     ],
+    "yoginihrdaya": [
+        "yoginihrdaya",
+        "yogini hrdaya",
+        "heart of the yogini",
+        "sricakra",
+        "sri cakra",
+        "tripura",
+        "tripurasundari",
+        "sri vidya",
+        "srividya",
+        "khecara",
+        "kamakala",
+    ],
+    "tantrasara": [
+        "tantrasara",
+        "tantrasāra",
+        "abhinavagupta",
+        "anupaya",
+        "sambhava",
+        "saktopaya",
+        "anavopaya",
+        "prakasha",
+        "svatantrya",
+        "trika",
+    ],
+    "patanjali_yoga_sutras": [
+        "patanjali",
+        "yoga sutras",
+        "yoga sūtras",
+        "raja yoga",
+        "ashtanga",
+        "citta vrtti",
+        "samadhi pada",
+        "yamas",
+        "niyamas",
+    ],
 }
 
 
@@ -74,11 +114,24 @@ def _tokenize(query: str) -> list[str]:
 
 
 def _collection_hint(query: str) -> str | None:
+    hits = detected_collections(query, limit=1)
+    return hits[0] if hits else None
+
+
+def detected_collections(query: str, limit: int = 4) -> list[str]:
+    """Return canonical collection slugs mentioned in the query (order preserved)."""
     q = (query or "").lower()
+    hits: list[str] = []
     for slug, aliases in _COLLECTION_HINTS.items():
         if any(alias in q for alias in aliases):
-            return slug
-    return None
+            hits.append(slug)
+            if len(hits) >= limit:
+                break
+    return hits
+
+
+def _slugish(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", (value or "").lower()).strip("_")
 
 
 def _matches_hint(metadata: dict, hint: str) -> bool:
@@ -91,7 +144,9 @@ def _matches_hint(metadata: dict, hint: str) -> bool:
             str(meta.get("sutra_id", "")),
         ]
     ).lower()
-    return hint in hay
+    # Hints are slugs (e.g. "tao_te_ching"); compare against both the raw
+    # haystack and a slugified version so "Tao Te Ching" still matches.
+    return hint in hay or hint in _slugish(hay)
 
 
 def _filter_by_collections(
@@ -107,6 +162,85 @@ def _filter_by_collections(
     if not wanted:
         return candidates
     return [c for c in candidates if meta_collection_slug(c[1]) in wanted]
+
+
+def _verse_chunk_body(verse: dict) -> str:
+    parts: list[str] = []
+    title = str(verse.get("title") or "").strip()
+    ref = str(verse.get("reference") or "").strip()
+    if ref and title:
+        parts.append(f"{ref} — {title}")
+    elif title:
+        parts.append(title)
+    for key in ("translation", "commentary", "abhyasa"):
+        text = str(verse.get(key) or "").strip()
+        if not text:
+            continue
+        parts.append(text[:1200] if key == "commentary" else text)
+    return "\n\n".join(parts).strip()
+
+
+def _verse_chunk_meta(verse: dict) -> dict:
+    return {
+        "collection": verse.get("collection"),
+        "_id": verse.get("_id"),
+        "unit_id": verse.get("_id"),
+        "title": verse.get("title"),
+        "sutra_id": verse.get("sutra_id"),
+        "reference": verse.get("reference"),
+        "themes": verse.get("themes"),
+        "corpus_fallback": True,
+    }
+
+
+def _corpus_lexical_candidates(
+    query: str,
+    aliases: set[str],
+    limit: int,
+) -> list[tuple[str, dict, float]]:
+    """Lexical search over in-memory corpus when pgvector lacks a collection."""
+    from .data_loader import ALL_VERSES
+
+    tokens = set(_tokenize(query))
+    scored: list[tuple[str, dict, float]] = []
+    for verse in ALL_VERSES:
+        if meta_collection_slug(verse) not in aliases:
+            continue
+        body = _verse_chunk_body(verse)
+        if not body:
+            continue
+        blob_tokens = _token_set(body)
+        score = _jaccard(tokens, blob_tokens) if tokens else 0.5
+        if tokens and score < 0.04:
+            continue
+        scored.append((body, _verse_chunk_meta(verse), max(score, settings.COMPARE_MIN_SCORE)))
+    scored.sort(key=lambda row: (row[2], str((row[1] or {}).get("reference") or "")))
+    return scored[: max(2, limit)]
+
+
+def _corpus_collection_candidates(
+    aliases: set[str],
+    limit: int,
+) -> list[tuple[str, dict, float]]:
+    """Return representative corpus units when pgvector has no indexed chunks."""
+    from .data_loader import ALL_VERSES
+
+    rows: list[tuple[str, dict, float]] = []
+    for verse in ALL_VERSES:
+        if meta_collection_slug(verse) not in aliases:
+            continue
+        body = _verse_chunk_body(verse)
+        if not body:
+            continue
+        rows.append((body, _verse_chunk_meta(verse), float(settings.COMPARE_MIN_SCORE)))
+    rows.sort(
+        key=lambda row: (
+            int((row[1] or {}).get("sequence") or 0),
+            str((row[1] or {}).get("reference") or ""),
+            str((row[1] or {}).get("_id") or ""),
+        )
+    )
+    return rows[: max(2, limit)]
 
 
 async def _collection_fallback_candidates(
@@ -222,11 +356,30 @@ def _diversify(candidates: list[tuple[str, dict, float]], k: int) -> list[tuple[
     return selected
 
 
+async def _embed_query(client: AsyncOpenAI, model: str, query: str, attempts: int = 3) -> list[float]:
+    """Embed the query with bounded exponential backoff.
+
+    A single transient failure (e.g. OpenRouter free-tier rate limiting) must
+    not silently demote retrieval to lexical fallback, so we retry briefly
+    before letting the exception propagate.
+    """
+    last_exc: Exception | None = None
+    for attempt in range(attempts):
+        try:
+            resp = await client.embeddings.create(model=model, input=query)
+            return resp.data[0].embedding
+        except Exception as exc:  # noqa: BLE001 - retry transient embedding failures
+            last_exc = exc
+            if attempt + 1 < attempts:
+                await asyncio.sleep(0.5 * (2 ** attempt))
+    raise last_exc if last_exc else RuntimeError("embedding failed")
+
+
 async def _vector_candidates(conn: asyncpg.Connection, query: str, fetch_k: int) -> list[tuple[str, dict, float]]:
     client, model = _embedding_client_and_model()
     if client is None:
         return []
-    emb = (await client.embeddings.create(model=model, input=query)).data[0].embedding
+    emb = await _embed_query(client, model, query)
     vector_str = f"[{','.join(map(str, emb))}]"
     rows = await conn.fetch(
         """
@@ -291,6 +444,7 @@ async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, floa
                 vector = await _vector_candidates(conn, query, fetch_k=fetch_k)
             except Exception:
                 # Fall through to lexical search if embeddings are unavailable at runtime.
+                logger.warning("Vector retrieval failed; falling back to lexical search", exc_info=True)
                 vector = []
         lexical = await _keyword_candidates(conn, query, fetch_k=fetch_k)
         merged = sorted([*vector, *lexical], key=lambda x: x[2], reverse=True)
@@ -315,10 +469,73 @@ async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, floa
                 return uniq
         return _diversify(merged, k)
     except Exception:
+        logger.error("retrieve_context failed (returning empty context)", exc_info=True)
         return []
     finally:
         if conn is not None:
             await conn.close()
+
+
+async def retrieve_context_for_verse(verse_id: str, query: str, k: int = 4) -> List[Tuple[str, dict, float]]:
+    """
+    Prefer chunks already indexed for the pinned verse, then top up with normal retrieval.
+    """
+    needle = (verse_id or "").strip()
+    if not needle:
+        return await retrieve_context(query, k=k)
+
+    conn: asyncpg.Connection | None = None
+    pinned: list[tuple[str, dict, float]] = []
+    try:
+        conn = await asyncpg.connect(
+            user=settings.PG_USER,
+            password=settings.PG_PASSWORD,
+            database=settings.PG_DB,
+            host=settings.PG_HOST,
+            port=settings.PG_PORT,
+        )
+        rows = await conn.fetch(
+            """
+            SELECT body, metadata
+            FROM chunks
+            WHERE metadata->>'_id' = $1 OR metadata->>'unit_id' = $1 OR metadata->>'sutra_id' = $1
+            ORDER BY
+              CASE metadata->>'layer_kind'
+                WHEN 'translation' THEN 1
+                WHEN 'commentary' THEN 2
+                WHEN 'key_terms' THEN 3
+                WHEN 'resonances' THEN 4
+                WHEN 'practice' THEN 5
+                ELSE 6
+              END,
+              COALESCE((metadata->>'chunk_index')::int, 999)
+            LIMIT $2
+            """,
+            needle,
+            max(k, 8),
+        )
+        pinned = [(r["body"], _normalize_meta(r["metadata"]), 1.0) for r in rows]
+    except Exception:
+        logger.warning("Pinned-verse retrieval failed for %r; using general retrieval", needle, exc_info=True)
+        pinned = []
+    finally:
+        if conn is not None:
+            await conn.close()
+
+    if len(pinned) >= k:
+        return pinned[:k]
+
+    supplemental = await retrieve_context(query, k=max(k, 4))
+    seen = {(body or "").strip().lower() for body, _, _ in pinned}
+    for body, meta, score in supplemental:
+        key = (body or "").strip().lower()
+        if not key or key in seen:
+            continue
+        pinned.append((body, meta, score))
+        seen.add(key)
+        if len(pinned) >= k:
+            break
+    return pinned[:k]
 
 
 async def retrieve_context_compare(
@@ -354,12 +571,20 @@ async def retrieve_context_compare(
             try:
                 vector = await _vector_candidates(conn, query, fetch_k=fetch_k)
             except Exception:
+                logger.warning("Vector retrieval failed in compare mode; using lexical only", exc_info=True)
                 vector = []
         lexical = await _keyword_candidates(conn, query, fetch_k=fetch_k)
         merged = sorted([*vector, *lexical], key=lambda x: x[2], reverse=True)
         merged = _filter_by_collections(merged, collections)
         if not merged:
-            return []
+            fallback_rows: list[tuple[str, dict, float]] = []
+            for collection_name in selected:
+                aliases = aliases_for_selection(collection_name)
+                lexical_rows = _corpus_lexical_candidates(query, aliases, per_collection * 2)
+                if not lexical_rows:
+                    lexical_rows = _corpus_collection_candidates(aliases, per_collection * 2)
+                fallback_rows.extend(lexical_rows)
+            return fallback_rows[:total_k]
 
         selected_rows: list[tuple[str, dict, float]] = []
         seen: set[str] = set()
@@ -370,6 +595,10 @@ async def retrieve_context_compare(
             if not pool:
                 pool = await _collection_fallback_candidates(conn, aliases, per_collection)
                 pool = [c for c in pool if float(c[2]) >= settings.COMPARE_MIN_SCORE]
+            if not pool:
+                pool = _corpus_lexical_candidates(query, aliases, per_collection * 3)
+            if not pool:
+                pool = _corpus_collection_candidates(aliases, per_collection * 2)
             for body, meta, score in _diversify(pool, per_collection):
                 key = (body or "").strip().lower()
                 if not key or key in seen:
@@ -391,6 +620,7 @@ async def retrieve_context_compare(
                     break
         return selected_rows[:total_k]
     except Exception:
+        logger.error("retrieve_context_compare failed (returning empty context)", exc_info=True)
         return []
     finally:
         if conn is not None:

@@ -23,29 +23,34 @@ insight: 'Extended Translation:
   The universe manifests like waves in the ocean.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes:
-- like
-- manifests
-- ocean
-- universe
-- waves
-- extended
-- iva
-- knowing
+themes: []
 tags:
 - astavakra_gita
-- extended
-- iva
-- knowing
-- like
-- manifests
-- ocean
 - root_text
-- universe
-- waves
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: The universe manifests like waves in the ocean.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Extended Translation:
+
+    The universe manifests like waves in the ocean. Knowing ''I am that'' — why do you run about like a miserable person?
+
+
+    viśvaṃ sphurati yatredaṃ taraṅgā iva sāgare | so''ham asmīti vijñāya kiṃ dīna iva dhāvasi ||
+
+    "The universe manifests like waves in the ocean. Knowing ''I am that'' — why do you run about like a miserable person?"'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Astavakra Gita
   section: verse
   original_id: ASG_3_3
+  source_reference: ''

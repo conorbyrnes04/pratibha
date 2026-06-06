@@ -1,0 +1,116 @@
+import type { VerseItem } from "./types";
+import { collectionIcon } from "./collectionIcons";
+import { displayCollectionName } from "./collectionLabels";
+import { displayPassageTitle, isPatanjaliYogaSutras, passageSortKey, sortPassagesForLibrary } from "./passageTitles";
+export type ThemeCount = { theme: string; count: number };
+
+export type CollectionFilterOption = {
+  value: string;
+  label: string;
+  hint?: string;
+  icon?: string;
+};
+
+export function uniqueCollections(items: VerseItem[]): string[] {
+  const set = new Set(items.map((x) => (x.collection || "Unknown").trim()));
+  return ["all", ...Array.from(set).sort((a, b) => a.localeCompare(b))];
+}
+
+export function topThemes(items: VerseItem[], limit = 16): ThemeCount[] {
+  const counts = new Map<string, number>();
+  for (const item of items) {
+    for (const theme of item.themes || []) {
+      const clean = theme?.trim();
+      if (!clean) continue;
+      counts.set(clean, (counts.get(clean) || 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, limit)
+    .map(([theme, count]) => ({ theme, count }));
+}
+
+export function countForCollection(items: VerseItem[], collection: string): number {
+  const pool = preferStudyUnits(items);
+  if (collection === "all") return pool.length;
+  return pool.filter((x) => (x.collection || "").trim() === collection).length;
+}
+
+export function buildCollectionOptions(items: VerseItem[], collections: string[]): CollectionFilterOption[] {
+  return collections.map((c) => ({
+    value: c,
+    icon: collectionIcon(c),
+    label: c === "all" ? "All collections" : displayCollectionName(c),
+    hint: `${countForCollection(items, c)} passages`,
+  }));
+}
+
+export function buildNamedCollectionOptions(collections: string[]): CollectionFilterOption[] {
+  return collections.map((c) => ({
+    value: c,
+    icon: collectionIcon(c),
+    label: displayCollectionName(c),
+  }));
+}
+
+export function buildCompareCollectionOptions(
+  collections: string[],
+  items: VerseItem[],
+): CollectionFilterOption[] {
+  return collections.map((c) => ({
+    value: c,
+    icon: collectionIcon(c),
+    label: displayCollectionName(c),
+    hint: `${countForCollection(items, c)} passages`,
+  }));
+}
+
+export function passagesInCollection(items: VerseItem[], collection: string): VerseItem[] {
+  const target = (collection || "").trim();
+  if (!target) return [];
+  return preferStudyUnits(items).filter((item) => (item.collection || "").trim() === target);
+}
+
+export function sortComparePassages(items: VerseItem[], collection: string): VerseItem[] {
+  const pool = passagesInCollection(items, collection);
+  if (pool.length === 0) return pool;
+  if (pool.every(isPatanjaliYogaSutras)) return sortPassagesForLibrary(pool);
+  return [...pool].sort((a, b) => {
+    const seqA = typeof a.sequence === "number" ? a.sequence : passageSortKey(a);
+    const seqB = typeof b.sequence === "number" ? b.sequence : passageSortKey(b);
+    if (seqA !== seqB) return seqA - seqB;
+    return displayPassageTitle(a).localeCompare(displayPassageTitle(b));
+  });
+}
+
+export function filterPassages(
+  items: VerseItem[],
+  opts: { q?: string; collection?: string; theme?: string; blob?: (item: VerseItem) => string },
+): VerseItem[] {
+  const needle = (opts.q || "").trim().toLowerCase();
+  const collection = opts.collection || "all";
+  const theme = opts.theme || "all";
+  return preferStudyUnits(items).filter((x) => {
+    if (collection !== "all" && (x.collection || "").trim() !== collection) return false;
+    if (theme !== "all" && !(x.themes || []).includes(theme)) return false;
+    if (!needle) return true;
+    const blob = opts.blob ? opts.blob(x) : [x.title, x.sutra_id, x.collection].join(" ");
+    return blob.toLowerCase().includes(needle);
+  });
+}
+
+/** Prefer curated Zhuangzi MD units over raw chapter dumps when both exist. */
+export function preferStudyUnits(items: VerseItem[]): VerseItem[] {
+  const mdChapters = new Set<number>();
+  for (const item of items) {
+    const m = (item._id || "").match(/zhuangzi_md_(\d+)/i);
+    if (m) mdChapters.add(Number(m[1]));
+  }
+  if (mdChapters.size === 0) return items;
+  return items.filter((item) => {
+    const m = (item._id || "").match(/\.ctz_(\d+)/i);
+    if (!m) return true;
+    return !mdChapters.has(Number(m[1]));
+  });
+}

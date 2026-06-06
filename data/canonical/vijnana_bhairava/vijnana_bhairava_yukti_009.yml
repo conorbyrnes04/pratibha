@@ -21,28 +21,36 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- mind
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
+- mind
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
-- knower
 - mind
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #9
+
+    Remaining with eyes closed, fix your attention inside the cranium (kapāla); by
+
+    means of gradually increasing steadiness of mind, you will perceive that which
+
+    is most worthy of being perceived. || 34'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_009
+  source_reference: ''

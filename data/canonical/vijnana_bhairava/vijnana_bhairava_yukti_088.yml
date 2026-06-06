@@ -21,28 +21,38 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
+- attention
 - mind
 - śiva
-- attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
 tags:
 - attention
-- clarity
-- content
-- emphasis
-- grows
-- inward
 - mind
 - root_text
 - vijnana_bhairava
 - śiva
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #88
+
+    Wherever the mind goes, externally or even internally, it
+
+    [discovers] nothing but the state of Śiva. Since [that state] is all-
+
+    pervasive, where else could the mind go? || 116'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_088
+  source_reference: ''

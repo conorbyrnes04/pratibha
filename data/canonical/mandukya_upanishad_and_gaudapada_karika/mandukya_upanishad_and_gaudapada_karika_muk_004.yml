@@ -9,14 +9,9 @@ title: Verses 3–6 · The Three States
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
+- attention
 - consciousness
 - heart
-- states
-- attention
-- clarity
-- content
-- emphasis
-- grows
 source_excerpt: 'Overview
 
   These four verses constitute the analytical heart of the Upaniṣad — the systematic examination of the three ordinary states
@@ -34,18 +29,31 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - attention
-- clarity
 - commentary_text
 - consciousness
-- content
-- emphasis
-- grows
 - heart
 - mandukya_upanishad_and_gaudapada_karika
-- states
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'Overview
+
+    These four verses constitute the analytical heart of the Upaniṣad — the systematic examination of the three ordinary states
+    of consciousness. The analysis is not psychological or neuroscientific; it is ontological. The question is not "what happens
+    in these states?" but "what does each state reveal about the nature of consciousness itself?"'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Mandukya Upanishad and Gaudapada Karika
   section: teaching_passage
   original_id: MUK_004
+  source_reference: ''

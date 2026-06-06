@@ -31,15 +31,7 @@ thesis: 'Devanāgarī
   vyaśema devahitaṃ yad āyūḥ |
 
   oṃ śāntiḥ śāntiḥ śāntiḥ ||'
-themes:
-- santih
-- bhadram
-- angais
-- ayuh
-- devah
-- devahitam
-- devanagari
-- iast
+themes: []
 source_excerpt: Peace Invocation (Śāntiḥ Pāṭha)
 translation_literal: Peace Invocation (Śāntiḥ Pāṭha)
 commentary: 'Devanāgarī
@@ -71,19 +63,48 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
-- angais
-- ayuh
-- bhadram
 - commentary_text
-- devah
-- devahitam
-- devanagari
-- iast
 - mandukya_upanishad_and_gaudapada_karika
-- santih
 quality_score: 90
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: Peace Invocation (Śāntiḥ Pāṭha)
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Devanāgarī
+
+    ॐ भद्रं कर्णेभिः शृणुयाम देवाः ।
+
+    भद्रं पश्येमाक्षभिर्यजत्राः ।
+
+    स्थिरैरङ्गैस्तुष्टुवागंसस्तनूभिः ।
+
+    व्यशेम देवहितं यदायूः ।
+
+    ॐ शान्तिः शान्तिः शान्तिः ॥
+
+
+    IAST
+
+    oṃ bhadraṃ karṇebhiḥ śṛṇuyāma devāḥ |
+
+    bhadraṃ paśyemākṣabhir yajatrāḥ |
+
+    sthirair aṅgais tuṣṭuvāgaṃsas tanūbhiḥ |
+
+    vyaśema devahitaṃ yad āyūḥ |
+
+    oṃ śāntiḥ śāntiḥ śāntiḥ ||'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Mandukya Upanishad and Gaudapada Karika
   section: teaching_passage
   original_id: MUK_001
+  source_reference: ''

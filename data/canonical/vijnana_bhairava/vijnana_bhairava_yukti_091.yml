@@ -22,29 +22,34 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes:
-- let
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
+themes: []
 tags:
-- contemplative
-- directly
-- disclose
-- insight
-- interpretation
-- let
-- pause
-- read
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #91
+
+    When seeing a place [one has been before], let go of things that
+
+    arise in the memory, and let your body be ‘supportless’: [then] the
+
+    Lord appears. || 119'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_091
+  source_reference: ''

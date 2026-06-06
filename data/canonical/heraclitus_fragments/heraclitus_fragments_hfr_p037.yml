@@ -4,54 +4,84 @@ category: commentary_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p037
-unit_label: If everything
-title: If everything
+unit_label: think that odor consists in smoky exhalation, common to earth and air, and that for smell...
+title: think that odor consists in smoky exhalation, common to earth and air, and that for smell...
 unit_type: teaching_passage
-thesis: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding ripen
-  through experience.'
+thesis: 'Heraclitus insists that wisdom is auditory before it is argumentative: the Logos is already at work in how things
+  happen, yet people live as if they had no prior encounter with it.'
 themes:
-- silence
-- direct
-- fragment
-- argument
-- contemplation
-- everything
-- experience
-- hold
-source_excerpt: 'If everything
-
-  were turned to smoke,
-
-  the nose would
-
-  be the seat of judgment.'
-translation_literal: 'If everything
-
-  were turned to smoke,
-
-  the nose would
-
-  be the seat of judgment.'
-commentary: 'This fragment invites direct contemplation rather than argument: hold its paradox quietly and let understanding
-  ripen through experience.'
+- consciousness
+- earth
+source_excerpt: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things are converted
+  into this. And it was for this reason that Heraclitus thus said that if all existing things should become smoke, perception
+  would be by the nostrils. XXX VIII.—Souls smell in Hades.®
+translation_literal: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things
+  are converted into this. And it was for this Logos that Heraclitus thus said that if all existing things should become smoke,
+  perception would be by the nostrils. XXX VIII.—Souls smell in Hades.®
+commentary: 'Heraclitus insists that wisdom is auditory before it is argumentative: the Logos is already at work in how things
+  happen, yet people live as if they had no prior encounter with it. The complaint is not elitism but phenomenology — most
+  consciousness is forgetful, whether in sleep or in ''waking'' busyness. The turn is ethical-cosmological: character is not
+  private style but alignment with the measure that governs all things. Mortality intensifies the question — finite life must
+  choose whether to hear the pattern or merely repeat opinion. The ''one'' is not mystical fusion but the single intelligible
+  order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus
+  never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 37 (Bywater Greek).
+  Corpus index HFR_P037 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Read this fragment three times slowly. Pause in silence for one minute and note one direct insight it reveals.
+practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
+  rests on. Can you hear the claim, not only think it?
 sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- argument
 - commentary_text
-- contemplation
-- direct
-- everything
-- experience
-- fragment
+- consciousness
+- earth
 - heraclitus_fragments
-- hold
-- silence
 quality_score: 0
-appendixes: []
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things are converted
+    into this. And it was for this Logos that Heraclitus thus said that if all existing things should become smoke, perception
+    would be by the nostrils. XXX VIII.—Souls smell in Hades.®
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Heraclitus insists that wisdom is auditory before it is argumentative: the Logos is already at work in how things
+    happen, yet people live as if they had no prior encounter with it. The complaint is not elitism but phenomenology — most
+    consciousness is forgetful, whether in sleep or in ''waking'' busyness. The turn is ethical-cosmological: character is
+    not private style but alignment with the measure that governs all things. Mortality intensifies the question — finite
+    life must choose whether to hear the pattern or merely repeat opinion. The ''one'' is not mystical fusion but the single
+    intelligible order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics —
+    yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment
+    37 (Bywater Greek). Corpus index HFR_P037 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
+    rests on. Can you hear the claim, not only think it?
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: Logos (λόγος)
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+  - term: psychē (ψυχή)
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
+- kind: appendix
+  label: Public-domain anchor (Patrick 1889)
+  body: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things are converted
+    into this. And it was for this reason that Heraclitus thus said that if all existing things should become smoke, perception
+    would be by the nostrils. XXX VIII.—Souls smell in Hades.®
+appendixes:
+- commentator: Public-domain anchor (Patrick 1889)
+  text: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things are converted
+    into this. And it was for this reason that Heraclitus thus said that if all existing things should become smoke, perception
+    would be by the nostrils. XXX VIII.—Souls smell in Hades.®
+anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P037
+  source_reference: Patrick (1889), frag. 37; corpus HFR_P037

@@ -35,8 +35,32 @@ tags:
 - svapna
 - vikalpa
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: स्वप्नो विकल्पाः
+- kind: iast
+  label: IAST
+  body: svapno vikalpāḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Dreaming is the play of imaginations.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'In dream, consciousness no longer requires external support. Images arise from their own momentum. The mind rehearses
+    creation freely, unbound by sensory constraint.
+
+
+    This freedom, however, is unstable. Without recognition, imagination mistakes itself for reality.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.9
+  source_reference: ''

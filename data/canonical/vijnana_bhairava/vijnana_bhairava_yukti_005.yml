@@ -25,28 +25,40 @@ insight: 'The emphasis turns inward: clarity grows when attention returns to the
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
-- awareness
 - attention
-- clarity
-- content
-- each
-- emphasis
-- grows
-- inward
+- awareness
 tags:
 - attention
 - awareness
-- clarity
-- content
-- each
-- emphasis
-- grows
-- inward
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #5
+
+    There are twelve [such centers] in sequence; properly
+
+    associated with twelve vowels. By fixing awareness on
+
+    each one, in successively coarse, subtle, and supreme
+
+    forms, and then abandoning each, in the end, [one
+
+    knows] God. || 30'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_005
+  source_reference: ''

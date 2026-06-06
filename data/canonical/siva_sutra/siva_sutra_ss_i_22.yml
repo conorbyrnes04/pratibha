@@ -20,6 +20,7 @@ insight: The chapter closes by returning to depth rather than ascent.
 practice: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 upaya: ''
 themes:
+- attention
 - awareness
 - consciousness
 - mantra
@@ -29,6 +30,7 @@ themes:
 - mantra-virya
 tags:
 - anusandhana
+- attention
 - awareness
 - consciousness
 - maha-hrada
@@ -38,8 +40,33 @@ tags:
 - silence
 - siva_sutra
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: महाह्रदानुसन्धानान्मन्त्रवीर्यानुभवः
+- kind: iast
+  label: IAST
+  body: mahā-hradānusandhānān mantra-vīryānubhavaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: By entering the great depth, the power of mantra is directly known.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The chapter closes by returning to depth rather than ascent. The great lake is consciousness itself—vast, still,
+    unfathomable. When attention abides there, mantra is no longer sound or technique; it is potency arising from silence.
+
+
+    What is known here cannot be taught. It is tasted. With this, Śāmbhavopāya completes its arc: from identity, through manifestation,
+    back into immeasurable depth.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Siva Sutra
   section: Śāmbhavopāya
   original_id: SS_I.22
+  source_reference: ''

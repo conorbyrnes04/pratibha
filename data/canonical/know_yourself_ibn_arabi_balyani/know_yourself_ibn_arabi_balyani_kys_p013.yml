@@ -9,14 +9,7 @@ title: 'Pearl #13'
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
 themes:
-- himself
-- sent
 - attention
-- clarity
-- content
-- emphasis
-- existence
-- grows
 source_excerpt: He sent Himself from Himself, through Himself to Himself. There is no intermediary or means other than Him.
   There is no difference between the sender, that which is sent and the one to whom it is sent. The very existence of the
   prophetic message is His existence.
@@ -30,18 +23,27 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - attention
-- clarity
 - commentary_text
-- content
-- emphasis
-- existence
-- grows
-- himself
 - know_yourself_ibn_arabi_balyani
-- sent
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: He sent Himself from Himself, through Himself to Himself. There is no intermediary or means other than Him. There
+    is no difference between the sender, that which is sent and the one to whom it is sent. The very existence of the prophetic
+    message is His existence.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
   section: wisdom_pearl
   original_id: KYS_P013
+  source_reference: ''

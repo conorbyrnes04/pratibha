@@ -1,4 +1,5 @@
 import type { ChatMode, JournalNote, VerseItem } from "@/lib/types";
+import { displayPassageTitle } from "@/lib/passageTitles";
 
 const STORAGE_KEY = "pratibha.journal.v1";
 
@@ -104,11 +105,7 @@ export function upsertJournalNote(input: {
   if (!passageId) {
     throw new Error("upsertJournalNote requires passage or contextId");
   }
-  const passageTitle =
-    input.passage?.title ||
-    input.passage?.sutra_id ||
-    input.contextTitle ||
-    passageId;
+  const passageTitle = input.passage ? displayPassageTitle(input.passage) : input.contextTitle || passageId;
   const notes = loadJournalNotes();
   const timestamp = now();
   const existing = input.existingId ? notes.find((note) => note.id === input.existingId) : undefined;

@@ -32,27 +32,49 @@ practice: Name one grief-story; inquire where separation is being absolutized.
 upaya: ''
 themes:
 - mantra
-- delusion
-- grief
-- fragmentation
-- identity
-- tied
-- absolutized
-- brihadaranyaka
 tags:
-- absolutized
-- brihadaranyaka
-- delusion
-- fragmentation
-- grief
-- identity
 - isavasya_upanishad
 - mantra
 - root_text
-- tied
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'यस्मिन्सर्वाणि भूतान्यात्मैवाभूद्विजानतः ।
+
+    तत्र को मोहः कः शोक एकत्वमनुपश्यतः ॥ ७ ॥'
+- kind: iast
+  label: IAST
+  body: 'yasmin sarvani bhutany atmaivabhud vijanatah |
+
+    tatra ko mohah kah soka ekatvam anupasyatah || 7 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: For one who sees unity, what delusion and what sorrow remain?
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Delusion and grief are tied to fragmentation of identity.
+
+
+    Key Terms:
+
+
+    **ekatva** - oneness; **moha/soka** - delusion/grief.
+
+
+    Cross-Tradition Resonances:
+
+
+    Brihadaranyaka non-dual result.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Name one grief-story; inquire where separation is being absolutized.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_013
+  source_reference: ''

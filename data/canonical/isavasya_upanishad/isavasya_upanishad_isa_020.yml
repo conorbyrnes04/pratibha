@@ -31,28 +31,52 @@ insight: Seeing impermanence clearly becomes doorway to the deathless.
 practice: Reflect on one ending as teacher, not threat.
 upaya: ''
 themes:
-- mantra
 - impermanence
-- becomes
-- clearly
-- deathless
-- dissolution
-- doorway
-- seeing
+- mantra
 tags:
-- becomes
-- clearly
-- deathless
-- dissolution
-- doorway
 - impermanence
 - isavasya_upanishad
 - mantra
 - root_text
-- seeing
 quality_score: 100
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'सम्भूतिं च विनाशं च यस्तद्वेदोभयं सह ।
+
+    विनाशेन मृत्युं तीर्त्वा सम्भूत्यामृतमश्नुते ॥ १४ ॥'
+- kind: iast
+  label: IAST
+  body: 'sambhutim ca vinasam ca yas tad vedobhayam saha |
+
+    vinasena mrtyum tirtva sambhutyamrtam asnute || 14 ||'
+- kind: translation
+  label: Pratibha Translation
+  body: Knowing becoming and dissolution together, one crosses mortality and realizes immortality.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Seeing impermanence clearly becomes doorway to the deathless.
+
+
+    Key Terms:
+
+
+    **vinasa** - dissolution/impermanence.
+
+
+    Cross-Tradition Resonances:
+
+
+    Impermanence insight as liberative threshold.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Reflect on one ending as teacher, not threat.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Isavasya Upanishad
   section: teaching_passage
   original_id: ISA_020
+  source_reference: ''

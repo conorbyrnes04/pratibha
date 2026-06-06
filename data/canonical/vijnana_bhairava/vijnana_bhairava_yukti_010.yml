@@ -24,29 +24,36 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes:
-- pause
-- read
-- contemplative
-- directly
-- disclose
-- form
-- insight
-- interpretation
+themes: []
 tags:
-- contemplative
-- directly
-- disclose
-- form
-- insight
-- interpretation
-- pause
-- read
 - root_text
 - vijnana_bhairava
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #10
+
+    The central channel is situated in the core [of one’s being]. Visualize it as
+
+    having a form like a slender lotus fiber, and meditate on it as being the
+
+    Goddess in the form of the innermost Space; through Her, [the experience of]
+
+    God will manifest. || 35'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Vijnana Bhairava
   section: meditation_technique
   original_id: yukti_010
+  source_reference: ''

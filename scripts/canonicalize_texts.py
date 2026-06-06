@@ -248,6 +248,54 @@ def _appendixes_as_commentary(appendixes: list[dict[str, str]]) -> str:
     return "\n\n".join(f"{a['commentator']}:\n{a['text']}" for a in appendixes if txt(a.get("text")))
 
 
+def _resolve_translations(y: dict[str, Any]) -> tuple[str, str, str]:
+    """Return (anchor_text, display_translation, pratibha_translation)."""
+    anchor = txt(y.get("anchor_translation"))
+    legacy = txt(y.get("translation"))
+    pratibha = txt(y.get("pratibha_translation"))
+    anchor_text = anchor or legacy
+    display = pratibha or legacy or anchor
+    return anchor_text, display, pratibha
+
+
+def _anchor_appendix(anchor: str, display: str, label: str) -> dict[str, str] | None:
+    if not anchor or not display:
+        return None
+    a = re.sub(r"\s+", " ", anchor).strip()
+    d = re.sub(r"\s+", " ", display).strip()
+    if a == d or len(a) < 20:
+        return None
+    return {"commentator": label, "text": anchor}
+
+
+def _layer_items(y: dict[str, Any], key: str) -> list[dict[str, str]] | None:
+    raw = y.get(key)
+    if not isinstance(raw, list) or not raw:
+        return None
+    items: list[dict[str, str]] = []
+    for entry in raw:
+        if not isinstance(entry, dict):
+            continue
+        if key == "key_terms" and entry.get("term"):
+            items.append({"term": txt(entry.get("term")), "definition": txt(entry.get("definition"))})
+        elif key == "resonances" and entry.get("citation"):
+            items.append(
+                {
+                    "citation": txt(entry.get("citation")),
+                    "resonance": txt(entry.get("resonance")),
+                    "divergence": txt(entry.get("divergence")),
+                }
+            )
+    return items or None
+
+
+def _chapter_appendix(y: dict[str, Any], label: str) -> dict[str, str] | None:
+    body = txt(y.get("anchor_chapter"))
+    if not body or len(body) < 500:
+        return None
+    return {"commentator": label, "text": body}
+
+
 def build_pratibha_layers(
     *,
     sanskrit: str = "",
@@ -255,6 +303,8 @@ def build_pratibha_layers(
     translation: str = "",
     commentary: str = "",
     practice: str = "",
+    key_terms: list[dict[str, str]] | None = None,
+    resonances: list[dict[str, str]] | None = None,
     appendixes: list[dict[str, str]] | None = None,
 ) -> list[dict[str, Any]]:
     layers: list[dict[str, Any]] = []
@@ -266,8 +316,34 @@ def build_pratibha_layers(
         ("practice", "Practice (Abhyasa)", practice),
     ]:
         clean = txt(body)
+        if kind == "iast" and clean:
+            lowered = clean.lower()
+            if (
+                re.match(r"^\*\([^)]+\)\*\.?$", clean.strip())
+                or clean.startswith("*Source-language basis:*")
+                or any(
+                    m in lowered
+                    for m in (
+                        "source-language basis",
+                        "no sanskrit",
+                        "not in corpus",
+                        "chinese text",
+                        "chinese source",
+                        "greek original",
+                        "greek text",
+                        "the enchiridion is a greek",
+                        "not applicable",
+                        "pending dedicated sanskrit",
+                    )
+                )
+            ):
+                continue
         if clean:
             layers.append({"kind": kind, "label": label, "body": clean})
+    if key_terms:
+        layers.append({"kind": "key_terms", "label": "Key Terms", "items": key_terms})
+    if resonances:
+        layers.append({"kind": "resonances", "label": "Cross-Tradition Resonances", "items": resonances})
     for idx, appendix in enumerate(appendixes or []):
         body = txt(appendix.get("text"))
         if body:
@@ -308,6 +384,10 @@ def infer_root_like(y: dict[str, Any], path: Path) -> bool:
     i = txt(y.get("transliteration"))
     tr = txt(y.get("translation"))
 
+    if re.search(r"\bch_\d+", path.stem.lower()) or sid.startswith("ctz_"):
+        return False
+    if "chapter" in sec and ("chuang" in coll or "zhuang" in coll):
+        return False
     if any(k in p for k in ["siva_sutra", "vijnana_bhairava", "yukti"]):
         return True
     if "sutra" in coll or "bhairava" in coll:
@@ -333,6 +413,14 @@ def classify_unit_type(y: dict[str, Any], path: Path, is_root: bool) -> str:
     return "teaching_passage"
 
 
+def _anchor_label(coll_slug: str) -> str:
+    if coll_slug == "the_book_of_chuang_tzu":
+        return "Public-domain anchor (Giles 1889)"
+    if coll_slug == "heraclitus_fragments":
+        return "Public-domain anchor (Patrick 1889)"
+    return "Public-domain anchor"
+
+
 def normalize_root_unit(y: dict[str, Any], path: Path) -> dict[str, Any]:
     coll = txt(y.get("collection")) or path.parent.name
     sutra_id = txt(y.get("sutra_id")) or path.stem
@@ -340,11 +428,20 @@ def normalize_root_unit(y: dict[str, Any], path: Path) -> dict[str, Any]:
     label = display_title or txt(y.get("number")) or sutra_id
     sanskrit = txt(y.get("sanskrit"))
     iast = txt(y.get("transliteration"))
-    translation = txt(y.get("translation"))
+    anchor_text, translation, pratibha_trans = _resolve_translations(y)
     commentary = txt(y.get("scholarly_commentary")) or txt(y.get("commentary"))
     appendixes = _normalize_appendixes(y.get("appendixes"))
+    coll_slug = slug(coll)
+    anchor_label = _anchor_label(coll_slug)
+    anchor_note = _anchor_appendix(anchor_text, translation, anchor_label)
+    if anchor_note and anchor_note not in appendixes:
+        appendixes = [anchor_note, *appendixes]
+    chapter_note = _chapter_appendix(y, f"Full chapter — {anchor_label}")
+    anchor_chapter = chapter_note["text"] if chapter_note else txt(y.get("anchor_chapter"))
     if not commentary and appendixes:
         commentary = _appendixes_as_commentary(appendixes)
+    key_terms = _layer_items(y, "key_terms")
+    resonances = _layer_items(y, "resonances")
     if not translation:
         translation = txt((y.get("modes") or {}).get("sadhana")) or txt(y.get("voice_of_siva")) or commentary
     insight = txt(y.get("voice_of_siva")) or first_sentence(commentary or translation)
@@ -384,13 +481,17 @@ def normalize_root_unit(y: dict[str, Any], path: Path) -> dict[str, Any]:
             translation=translation,
             commentary=commentary,
             practice=practice,
+            key_terms=key_terms,
+            resonances=resonances,
             appendixes=appendixes,
         ),
         "appendixes": appendixes,
+        "anchor_chapter": anchor_chapter,
         "provenance": {
             "collection": coll,
             "section": txt(y.get("section")),
             "original_id": sutra_id,
+            "source_reference": txt(y.get("source_reference")),
         },
     }
 
@@ -400,13 +501,22 @@ def normalize_commentary_unit(y: dict[str, Any], path: Path) -> dict[str, Any]:
     source_id = txt(y.get("sutra_id")) or path.stem
     section = txt(y.get("section")) or "chapter_section"
     display_title = txt(y.get("title")) or txt(y.get("sutra")) or source_id
-    translation = txt(y.get("translation"))
+    anchor_text, translation, _pratibha = _resolve_translations(y)
     commentary = txt(y.get("commentary"))
     appendixes = _normalize_appendixes(y.get("appendixes"))
+    coll_slug = slug(coll)
+    anchor_label = _anchor_label(coll_slug)
+    anchor_note = _anchor_appendix(anchor_text, translation, anchor_label)
+    if anchor_note and anchor_note not in appendixes:
+        appendixes = [anchor_note, *appendixes]
+    chapter_note = _chapter_appendix(y, f"Full chapter — {anchor_label}")
+    anchor_chapter = chapter_note["text"] if chapter_note else txt(y.get("anchor_chapter"))
     if not commentary and appendixes:
         commentary = _appendixes_as_commentary(appendixes)
+    key_terms = _layer_items(y, "key_terms")
+    resonances = _layer_items(y, "resonances")
     thesis = first_sentence(txt(y.get("voice_of_siva")) or txt((y.get("modes") or {}).get("doctrinal")) or commentary or translation)
-    excerpt = first_paragraph(translation or commentary, limit=700)
+    excerpt = first_paragraph(anchor_text or translation or commentary, limit=700)
     practice = txt(y.get("abhyasa")) or txt((y.get("modes") or {}).get("sadhana"))
     if not practice:
         practice = "Read the excerpt slowly, pause at one striking line, and reflect on its relevance to present experience."
@@ -445,13 +555,17 @@ def normalize_commentary_unit(y: dict[str, Any], path: Path) -> dict[str, Any]:
             translation=translation,
             commentary=commentary,
             practice=practice,
+            key_terms=key_terms,
+            resonances=resonances,
             appendixes=appendixes,
         ),
         "appendixes": appendixes,
+        "anchor_chapter": anchor_chapter,
         "provenance": {
             "collection": coll,
             "section": section,
             "original_id": source_id,
+            "source_reference": txt(y.get("source_reference")),
         },
     }
 

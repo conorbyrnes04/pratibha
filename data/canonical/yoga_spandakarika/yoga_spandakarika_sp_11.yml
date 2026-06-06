@@ -10,14 +10,7 @@ unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
   directly.'
 themes:
-- transmigration
-- subject
-- tantric
-- considers
-- contemplative
-- directly
-- disclose
-- insight
+- action
 source_excerpt: 'considers the subject of transmigration—which occurs occasionally in the Tantric texts—and asks clearly:
   “How can a wonder-filled tantrika be subject to transmigration?” Does this mean that those who are not wonder-filled are
   subject to transmigration? No, this is a Tantric mystery. At times it is said that there is transmigration; other times
@@ -34,19 +27,31 @@ practice: Choose one ordinary action today and perform it fully without seeking 
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
+- action
 - commentary_text
-- considers
-- contemplative
-- directly
-- disclose
-- insight
-- subject
-- tantric
-- transmigration
 - yoga_spandakarika
 quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: 'considers the subject of transmigration—which occurs occasionally in the Tantric texts—and asks clearly: “How can
+    a wonder-filled tantrika be subject to transmigration?” Does this mean that those who are not wonder-filled are subject
+    to transmigration? No, this is a Tantric mystery. At times it is said that there is transmigration; other times it is
+    said that the idea of transmigration is a “hitching post for asses” (Abhinavagupta). Do not count on me to tell you!'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
+    directly.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute in
+    the felt sense of simple presence.
 appendixes: []
+anchor_chapter: ''
 provenance:
   collection: Yoga Spandakarika
   section: First Flow
   original_id: SP_11
+  source_reference: ''
