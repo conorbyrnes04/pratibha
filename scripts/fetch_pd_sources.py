@@ -19,10 +19,16 @@ GUTENBERG = [
     (10662, PD / "greek" / "epictetus_long_discourses_gutenberg_10662.txt"),
 ]
 
+# Each COPIES entry MUST record its PD basis (publication year, Gutenberg ID, or archive URL)
+# in a trailing comment so downstream scripts can verify copyright status before use.
 COPIES = [
+    # PD: Patrick (1889) — pre-1928 US publication
     (ROOT / "data" / "raw_texts" / "patrick_heraclitus_1889.txt", PD / "greek" / "heraclitus_patrick_1889.txt"),
+    # PD: Giles (1889) Zhuangzi — Gutenberg #59709
     (ROOT / "data" / "raw_texts" / "ChaungTzuRaw", PD / "chinese" / "zhuangzi_giles_gutenberg_59709.txt"),
+    # PD: Mackenna (1917–1930) Plotinus Enneads — pre-1928 US publication
     (ROOT / "data" / "raw_texts" / "plotinus_enneads_full.txt", PD / "greek" / "plotinus_mackenna_enneads.txt"),
+    # PD: GRETIL IAST Yoga Sutras — open academic text, no translation copyright claim
     (ROOT / "data" / "raw_texts" / "yoga_sutras_gretil_iast.txt", PD / "indian" / "yoga_sutras_gretil_iast_sanskrit.txt"),
 ]
 

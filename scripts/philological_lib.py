@@ -1,4 +1,12 @@
-"""Philological helpers for PD anchor → Pratibha layer enrichment."""
+"""Philological helpers for PD anchor → Pratibha layer enrichment.
+
+COPYRIGHT GUARDRAIL — read before extending:
+These normalization functions (``normalize_patrick_heraclitus``, ``normalize_giles_excerpt``,
+and any future ``normalize_*`` word-substitution helpers) are ONLY for genuinely
+public-domain source translations (Patrick 1889, Giles 1889, etc.). Applying
+word-substitution to a copyrighted translation does NOT create an original work
+and is a copyright violation. Do not extend these functions to in-copyright sources.
+"""
 
 from __future__ import annotations
 

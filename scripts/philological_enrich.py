@@ -4,6 +4,13 @@
 Separates public-domain anchor text from sell-ready Pratibha translation, adds
 Key Terms, resonances (where catalogued), and educational commentary.
 
+COPYRIGHT GUARDRAIL — read before extending:
+This converter calls ``normalize_patrick_heraclitus`` and ``normalize_giles_excerpt``
+from ``philological_lib``. Those normalization functions are ONLY for genuinely
+public-domain source translations (Patrick 1889, Giles 1889, etc.). Applying
+word-substitution to a copyrighted translation does NOT create an original work
+and is a copyright violation. Do not extend these functions to in-copyright sources.
+
 Usage:
   python scripts/philological_enrich.py --collection heraclitus_fragments
   python scripts/philological_enrich.py --collection the_book_of_chuang_tzu
