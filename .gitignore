@@ -28,6 +28,7 @@ wheels/
 MANIFEST
 
 # Virtual environments
+.venv/
 venv/
 env/
 ENV/
@@ -98,4 +99,9 @@ htmlcov/
 coverage.xml
 *.cover
 .hypothesis/
-.pytest_cache/data/raw_texts.zip
+.pytest_cache/
+
+# Re-fetchable PD bulk sources (keep manifest.yml)
+data/raw_texts/pd/
+!data/raw_texts/pd/manifest.yml
+data/raw_texts.zip
