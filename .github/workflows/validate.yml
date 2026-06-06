@@ -1,0 +1,27 @@
+name: Validate Canonical
+
+on:
+  push:
+    paths:
+      - 'data/canonical/**'
+      - 'scripts/validate_canonical.py'
+  pull_request:
+    paths:
+      - 'data/canonical/**'
+      - 'scripts/validate_canonical.py'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Validate canonical units
+        run: python scripts/validate_canonical.py

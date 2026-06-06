@@ -1,343 +1,204 @@
-# Pratibha: Sanskrit Text RAG System
+# Pratibhā
 
-A comprehensive Retrieval Augmented Generation (RAG) system for Sanskrit texts, featuring a FastAPI backend with PostgreSQL + pgvector, and a Next.js frontend for interactive chat with Sanskrit literature.
+**A multi-tradition contemplative corpus with RAG-powered study tools.**
 
-## 🎯 Overview
+*Pratibhā* (प्रतिभा) — "luminous intelligence," the flash of recognition by which consciousness knows itself. In the Pratyabhijñā tradition, *pratibhā* is not acquired learning but the innate brilliance that makes understanding possible at all.
 
-Pratibha enables intelligent querying and exploration of Sanskrit texts through:
-- **RAG-powered chat interface** for contextual responses about Sanskrit literature
-- **Vector database** for semantic search across texts
-- **YAML-based text processing** for structured Sanskrit content
-- **Multiple extraction tools** for PDF, EPUB, and plain text sources
+This project is two things at once:
 
-## 🏗️ Architecture
+1. **A structured corpus** of 563 annotated units spanning 15 philosophical and contemplative traditions — Sanskrit, Greek, Chinese, Arabic, Persian — each processed through a seven-layer scholarly format (original text, transliteration, translation, commentary, key terms, cross-tradition resonances, practice).
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Next.js Web   │    │   FastAPI       │    │   PostgreSQL    │
-│   Frontend      │◄──►│   Backend       │◄──►│   + pgvector    │
-│   (Chat UI)     │    │   (RAG Engine)  │    │   (Vector DB)   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │   OpenAI API    │
-                       │   (Embeddings)  │
-                       └─────────────────┘
-```
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Python 3.8+
-- Node.js 18+
-- Docker & Docker Compose
-- OpenAI API key
-- Groq API key (optional)
-
-### 1. Environment Setup
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd pratibha
-
-# Create environment file
-cp .env.example .env
-# Edit .env with your API keys:
-# OPENAI_API_KEY=your_openai_key
-# GROQ_API_KEY=your_groq_key
-# DEFAULT_MODEL=groq/llama-3.3-70b-versatile
-# USE_RAG=true
-```
-
-### 2. Database Setup
-
-```bash
-# Start PostgreSQL with pgvector
-docker-compose up -d
-
-# The database will be initialized automatically with:
-# - pgvector extension
-# - chunks table for vector storage
-```
-
-### 3. Backend Setup
-
-```bash
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Start the FastAPI server
-source .env && uvicorn app.main:app --reload --port 8000
-```
-
-### 4. Frontend Setup
-
-```bash
-cd web
-npm install
-npm run dev
-```
-
-### 5. Ingest Sanskrit Texts
-
-```bash
-# Ingest existing YAML files into the vector database
-source .env && python scripts/ingest_pgvector.py data/yaml/
-```
-
-## 📁 Project Structure
-
-```
-pratibha/
-├── app/                    # FastAPI backend
-│   ├── main.py            # API endpoints (/chat, /chat.stream)
-│   ├── config.py          # Configuration management
-│   ├── llm.py             # LLM wrapper (Groq/OpenAI)
-│   ├── rag.py             # RAG retrieval logic
-│   └── data_loader.py     # Data loading utilities
-├── web/                   # Next.js frontend
-│   └── src/app/chat/      # Chat interface
-├── scripts/               # Text processing tools
-│   ├── ingest_pgvector.py # Vector database ingestion
-│   ├── final_clean_yuktis.py # Clean yukti extraction
-│   ├── pdf_to_yaml.py     # PDF text extraction
-│   ├── epub_to_yaml.py    # EPUB text extraction
-│   └── text_to_yaml.py    # Plain text processing
-├── data/
-│   ├── raw_texts/         # Source texts (PDF, EPUB, TXT)
-│   └── yaml/              # Processed YAML files
-│       ├── siva_sutra/    # Shiva Sutra collection
-│       └── vijnana_bhairava_final/ # Vijñāna Bhairava yuktis
-├── db/init/               # Database initialization
-└── docker-compose.yml     # PostgreSQL + pgvector setup
-```
-
-## 🔧 Core Features
-
-### 1. RAG System
-- **Vector Search**: Semantic similarity search using OpenAI embeddings
-- **Context Retrieval**: Automatically finds relevant text passages
-- **LLM Integration**: Supports both Groq and OpenAI models
-- **Streaming Responses**: Real-time chat experience
-
-### 2. Text Processing Pipeline
-- **PDF Extraction**: Extract text from Sanskrit PDFs
-- **EPUB Processing**: Handle digital Sanskrit books
-- **YAML Structure**: Standardized format for Sanskrit texts
-- **Verse Detection**: Automatic identification of verses and sutras
-
-### 3. Data Formats
-
-#### YAML Structure
-```yaml
-sutra_id: yukti_001
-collection: Vijñāna Bhairava
-section: meditation_technique
-sanskrit: "संस्कृतम्"
-transliteration: "saṃskṛtam"
-translation: "YUKTI #1\nThe Supreme Goddess constantly articulates..."
-commentary: ""
-modes:
-  bhasya: ""
-  doctrinal: ""
-  comparative: ""
-  sadhana: "YUKTI #1\nThe Supreme Goddess constantly articulates..."
-```
-
-## 📚 Available Texts
-
-### Shiva Sutra Collection
-- **Location**: `data/yaml/siva_sutra/`
-- **Content**: 60+ sutras from the Shiva Sutras
-- **Format**: Sanskrit, transliteration, translation, commentary
-
-### Vijñāna Bhairava Yuktis
-- **Location**: `data/yaml/vijnana_bhairava_final/`
-- **Content**: 15 meditation techniques (yuktis)
-- **Format**: Clean, focused teachings without commentary
-
-## 🛠️ Scripts & Tools
-
-### Text Processing
-```bash
-# Extract from PDF
-python scripts/pdf_to_yaml.py input.pdf output_dir
-
-# Extract from EPUB
-python scripts/epub_to_yaml.py input.epub output_dir
-
-# Process plain text
-python scripts/text_to_yaml.py input.txt output_dir
-
-# Create clean yuktis (customizable)
-python scripts/final_clean_yuktis.py
-```
-
-### Database Operations
-```bash
-# Ingest YAML files into vector database
-python scripts/ingest_pgvector.py data/yaml/
-
-# Check database status
-docker-compose ps
-```
-
-## 🔍 API Endpoints
-
-### Chat Endpoints
-- `POST /chat` - Single response chat
-- `POST /chat.stream` - Streaming chat response
-
-### Request Format
-```json
-{
-  "message": "What is the first yukti in Vijñāna Bhairava?",
-  "use_rag": true
-}
-```
-
-### Response Format
-```json
-{
-  "response": "The first yukti teaches about the breath...",
-  "sources": [
-    {
-      "text": "YUKTI #1\nThe Supreme Goddess...",
-      "metadata": {"sutra_id": "yukti_001", "collection": "Vijñāna Bhairava"},
-      "score": 0.95
-    }
-  ]
-}
-```
-
-## 🎨 Web Interface
-
-The Next.js frontend provides:
-- **Real-time chat** with Sanskrit texts
-- **Source citations** showing relevant passages
-- **Responsive design** for all devices
-- **Streaming responses** for better UX
-
-## 🔧 Configuration
-
-### Environment Variables
-```bash
-# API Keys
-OPENAI_API_KEY=your_key_here
-GROQ_API_KEY=your_key_here
-
-# Model Settings
-DEFAULT_MODEL=groq/llama-3.3-70b-versatile
-USE_RAG=true
-
-# Database Settings
-PG_USER=postgres
-PG_PASSWORD=postgres
-PG_DB=pratibha
-PG_HOST=localhost
-PG_PORT=5432
-```
-
-### RAG Settings
-- **Embedding Model**: `text-embedding-3-small`
-- **Vector Dimension**: 1536
-- **Similarity Metric**: Cosine similarity
-- **Retrieval Count**: 4 chunks per query
-
-## 🚀 Deployment
-
-### Development
-```bash
-# Backend
-source .env && uvicorn app.main:app --reload --port 8000
-
-# Frontend
-cd web && npm run dev
-```
-
-### Production
-```bash
-# Build frontend
-cd web && npm run build
-
-# Run backend with production server
-source .env && gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker
-```
-
-## 📖 Usage Examples
-
-### 1. Querying Sanskrit Texts
-```
-User: "What are the different types of meditation in Vijñāna Bhairava?"
-System: [Retrieves relevant yuktis and provides contextual response]
-```
-
-### 2. Adding New Texts
-```bash
-# 1. Place source file in data/raw_texts/
-# 2. Extract using appropriate script
-python scripts/pdf_to_yaml.py new_text.pdf data/yaml/new_collection/
-# 3. Ingest into database
-python scripts/ingest_pgvector.py data/yaml/new_collection/
-```
-
-### 3. Customizing Yuktis
-```bash
-# Edit the yukti definitions
-vim scripts/final_clean_yuktis.py
-# Regenerate YAML files
-python scripts/final_clean_yuktis.py
-# Re-ingest
-python scripts/ingest_pgvector.py data/yaml/vijnana_bhairava_final/
-```
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **Database Connection Error**
-   ```bash
-   # Check if PostgreSQL is running
-   docker-compose ps
-   # Restart if needed
-   docker-compose restart
-   ```
-
-2. **API Key Errors**
-   ```bash
-   # Verify environment variables
-   source .env && echo $OPENAI_API_KEY
-   ```
-
-3. **Vector Dimension Mismatch**
-   ```bash
-   # Recreate database with correct schema
-   docker-compose down -v
-   docker-compose up -d
-   ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Add your Sanskrit texts to `data/raw_texts/`
-4. Process using appropriate scripts
-5. Test the RAG system
-6. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- **OpenAI** for embedding models
-- **Groq** for fast LLM inference
-- **pgvector** for vector similarity search
-- **Sanskrit scholars** whose translations make this possible
+2. **A study application** — FastAPI backend + Next.js frontend + PostgreSQL/pgvector — that makes the corpus queryable, browsable, and livable through RAG-powered chat, daily practice passages, a contemplative journal, and guided learning paths.
 
 ---
 
-**Pratibha** - "Intelligence" in Sanskrit, enabling intelligent exploration of ancient wisdom through modern technology.
+## The Corpus
+
+| Collection | Tradition | Units | Source |
+|---|---|---|---|
+| **Śiva Sūtra** | Nondual Śaiva Tantra | 47 | Vasugupta |
+| **Vijñāna Bhairava Tantra** | Nondual Śaiva Tantra | 112 | 112 dhāraṇās (yuktis) |
+| **Yoga Spanda-kārikā** | Spanda school | 52 | Vasugupta / Kallaṭa |
+| **Pratyabhijñāhṛdayam** | Pratyabhijñā | 21 | Kṣemarāja |
+| **Aṣṭāvakra Gītā** | Advaita | 31 | — |
+| **Bhagavad Gītā** | Vedānta / Yoga | 12 | Selected passage-units |
+| **Īśāvāsya Upaniṣad** | Upanishadic | 24 | — |
+| **Śvetāśvatara Upaniṣad** | Upanishadic | 22 | — |
+| **Māṇḍūkya Upaniṣad + Gauḍapāda Kārikā** | Advaita / Ajātivāda | 16 | Gauḍapāda |
+| **Heraclitus Fragments** | Pre-Socratic Greek | 128 | Diels-Kranz numbering |
+| **Epictetus: Enchiridion** | Stoic | 3 | Carter/Higginson |
+| **Phaedo** | Platonic | 7 | Plato |
+| **Dào Dé Jīng** | Daoist | 4 | Lǎozǐ |
+| **The Book of Chuang Tzu** | Daoist | 48 | Zhuāngzǐ |
+| **Know Yourself** | Sufi (Ibn ʿArabī / al-Balayānī) | 36 | — |
+
+**563 units total.** Each unit carries up to seven annotated layers — see [DATA.md](DATA.md) for the full schema and pipeline.
+
+### The Seven Layers (Pratibhā Format)
+
+Every canonical unit passes through this structure:
+
+1. **Original / Devanāgarī** — source script (Devanāgarī, Greek, Traditional Chinese, Arabic)
+2. **IAST / Transliteration** — full diacritics, compound resolution at morpheme boundaries
+3. **Pratibhā Translation** — present-tense, active-voice, philosophically precise; no archaisms
+4. **Pratibhā Commentary** — opens with an explicit philosophical claim, names the counterintuitive move, ≥150 words
+5. **Key Terms** — etymology → tradition-specific meaning → why the default translation fails
+6. **Cross-Tradition Resonances** — structural (not thematic) parallels across traditions, with divergence notes
+7. **Practice (Abhyāsa)** — second-person, present-tense, derived from *this specific passage*
+
+---
+
+## Architecture
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Next.js Web   │    │   FastAPI        │    │  PostgreSQL     │
+│   Frontend      │◄──►│   Backend        │◄──►│  + pgvector     │
+│                 │    │   (RAG Engine)   │    │  (Vector DB)    │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+       │                        │
+       │  Pages:                ▼
+       │  · Library       ┌─────────────────┐
+       │  · Daily         │   LLM Provider  │
+       │  · Random        │   (Groq/OpenAI) │
+       │  · Study Chat    └─────────────────┘
+       │  · Journal
+       │  · Learning Paths
+```
+
+The backend serves the corpus via REST endpoints and streams RAG-grounded responses. The frontend provides five study modes:
+
+- **Library** — browse all collections and passages
+- **Daily** — one selected passage per day
+- **Random** — serendipitous discovery
+- **Study Chat** — ask questions in plain language, get RAG-grounded answers with source citations
+- **Learning Paths** — guided tracks from concept to practice, with a journal integration
+- **Journal** — contemplative reflection tied to passages
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+- Python 3.8+
+- Node.js 18+
+- Docker & Docker Compose
+- API key for at least one LLM provider (OpenAI, Groq, or OpenRouter)
+
+### 1. Environment
+
+```bash
+cp .env.example .env
+# Edit .env with your API keys
+```
+
+### 2. Database
+
+```bash
+docker-compose up -d
+```
+
+### 3. Backend
+
+```bash
+pip install -r requirements.txt
+source .env && uvicorn app.main:app --reload --port 8000
+```
+
+### 4. Ingest the Corpus
+
+```bash
+source .env && python scripts/ingest_pgvector.py data/canonical/
+```
+
+### 5. Frontend
+
+```bash
+cd web && npm install && npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Project Structure
+
+```
+pratibha/
+├── app/                        # FastAPI backend
+│   ├── main.py                 #   API endpoints (health, verses, chat, stream)
+│   ├── rag.py                  #   RAG retrieval logic (pgvector similarity search)
+│   ├── llm.py                  #   LLM wrapper (Groq / OpenAI / OpenRouter)
+│   ├── data_loader.py          #   Loads canonical YAML at startup
+│   ├── collection_aliases.py   #   Human-readable collection labels
+│   └── config.py               #   Settings from environment
+├── web/                        # Next.js frontend
+│   └── src/
+│       ├── app/                #   Pages: home, chat, daily, learn, journal, read, random
+│       ├── components/         #   LayerBlock, SiteNav, JournalPanel, learn/*
+│       ├── hooks/              #   useLearnProgress
+│       └── lib/                #   API client, types, learning paths, journal storage
+├── scripts/                    # Text processing pipeline (31 scripts)
+│   ├── *_md_to_yaml.py         #   Markdown → structured YAML
+│   ├── *_epub_to_yaml.py       #   EPUB → structured YAML
+│   ├── canonicalize_texts.py   #   YAML → canonical format
+│   ├── enrich_yaml_*.py        #   LLM-powered enrichment
+│   ├── ingest_pgvector.py      #   Canonical YAML → pgvector embeddings
+│   └── validate_canonical.py   #   Schema validation for canonical units
+├── data/
+│   ├── raw_texts/              #   Source manuscripts (Pratibhā MD format)
+│   ├── yaml/                   #   Intermediate YAML (per-script output)
+│   ├── canonical/              #   Final validated units (source of truth)
+│   └── reports/                #   Enrichment quality reports
+├── db/init/                    # PostgreSQL initialization (pgvector extension)
+├── docker-compose.yml          # PostgreSQL + pgvector + Adminer
+└── requirements.txt            # Python dependencies
+```
+
+See [DATA.md](DATA.md) for a detailed explanation of the data pipeline.
+
+---
+
+## API
+
+| Endpoint | Method | Description |
+|---|---|---|
+| `/health` | GET | Status + loaded item count |
+| `/verses` | GET | All loaded passages |
+| `/verse/{id}` | GET | Single passage by ID |
+| `/daily` | GET | Today's selected passage |
+| `/random` | GET | Random passage |
+| `/chat` | POST | Single RAG-grounded response |
+| `/chat.stream` | POST | Streaming RAG-grounded response |
+
+---
+
+## Configuration
+
+Key settings in `.env`:
+
+| Variable | Default | Notes |
+|---|---|---|
+| `OPENAI_API_KEY` | — | Required for embeddings (text-embedding-3-small) |
+| `GROQ_API_KEY` | — | Optional: fast inference via Groq |
+| `DEFAULT_MODEL` | `groq/llama-3.3-70b-versatile` | LLM for chat responses |
+| `USE_RAG` | `true` | Enable/disable vector retrieval |
+| `RAG_FETCH_K` | `20` | Candidates to retrieve before reranking |
+| `RAG_MIN_SCORE` | `0.2` | Cosine similarity threshold |
+
+---
+
+## Contributing
+
+The corpus is the heart of this project. Contributions that add new texts, improve translations, deepen commentaries, or extend cross-tradition resonances are especially welcome. See [DATA.md](DATA.md) for the schema and quality standards.
+
+---
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+*Pratibhā* — प्रतिभा — luminous intelligence, the flash of recognition.
