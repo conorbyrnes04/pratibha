@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import type { JournalNote } from "@/lib/types";
-import { deleteJournalNote, loadJournalNotes } from "@/lib/journalStorage";
+import { deleteJournalNote, journalSourceHref, loadJournalNotes } from "@/lib/journalStorage";
 
 export default function JournalPage() {
   const [notes, setNotes] = useState<JournalNote[]>([]);
@@ -28,13 +28,10 @@ export default function JournalPage() {
     refresh();
   }
 
-  function sourceHref(note: JournalNote): string | null {
-    if (note.passageId.startsWith("learn:")) {
-      const [, trackId, stepId] = note.passageId.split(":");
-      if (!trackId || !stepId) return "/learn";
-      return `/learn?track=${encodeURIComponent(trackId)}&step=${encodeURIComponent(stepId)}`;
-    }
-    return `/read/${encodeURIComponent(note.passageId)}`;
+  function sourceLabel(note: JournalNote): string {
+    if (note.kind === "chat_response") return "Reopen chat";
+    if (note.passageId.startsWith("learn:")) return "Reopen step";
+    return "Reopen passage";
   }
 
   return (
@@ -53,7 +50,7 @@ export default function JournalPage() {
       <div className="mt-6 space-y-4">
         {filtered.length === 0 ? (
           <section className="card p-5">
-            <p className="soft">No notes yet. Save a reflection from a learning path step or passage reader.</p>
+            <p className="soft">No notes yet. Save a reflection from a passage, learning step, or an Ask Pratibha response.</p>
           </section>
         ) : (
           filtered.map((note) => (
@@ -62,11 +59,14 @@ export default function JournalPage() {
                 <div>
                   <p className="layer-heading">{new Date(note.updatedAt).toLocaleString()}</p>
                   <h2 className="mt-2 text-2xl text-amber-100">{note.passageTitle}</h2>
+                  {note.kind === "chat_response" && note.question ? (
+                    <p className="soft mt-2 text-sm">You asked: {note.question}</p>
+                  ) : null}
                 </div>
                 <div className="flex gap-2">
-                  {sourceHref(note) ? (
-                    <Link href={sourceHref(note)!} className="btn-secondary px-4 py-2 text-sm">
-                      {note.passageId.startsWith("learn:") ? "Reopen step" : "Reopen passage"}
+                  {journalSourceHref(note) ? (
+                    <Link href={journalSourceHref(note)!} className="btn-secondary px-4 py-2 text-sm">
+                      {sourceLabel(note)}
                     </Link>
                   ) : null}
                   <button onClick={() => remove(note.id)} className="btn-secondary px-4 py-2 text-sm">

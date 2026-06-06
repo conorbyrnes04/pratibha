@@ -1,4 +1,4 @@
-import type { JournalNote, VerseItem } from "@/lib/types";
+import type { ChatMode, JournalNote, VerseItem } from "@/lib/types";
 
 const STORAGE_KEY = "pratibha.journal.v1";
 
@@ -38,6 +38,55 @@ export function learnStepContextId(trackId: string, stepId: string): string {
   return `learn:${trackId}:${stepId}`;
 }
 
+export function journalSourceHref(note: JournalNote): string | null {
+  if (note.passageId.startsWith("learn:")) {
+    const [, trackId, stepId] = note.passageId.split(":");
+    if (!trackId || !stepId) return "/learn";
+    return `/learn?track=${encodeURIComponent(trackId)}&step=${encodeURIComponent(stepId)}`;
+  }
+  if (note.kind === "chat_response" || note.passageId.startsWith("chat:")) {
+    const params = new URLSearchParams();
+    if (note.verseId) params.set("verse_id", note.verseId);
+    if (note.question) params.set("q", note.question);
+    const qs = params.toString();
+    return qs ? `/chat?${qs}` : "/chat";
+  }
+  return `/read/${encodeURIComponent(note.passageId)}`;
+}
+
+export function saveChatResponse(input: {
+  answer: string;
+  question: string;
+  verse?: VerseItem | null;
+  chatMode?: ChatMode;
+}): JournalNote {
+  const cleanAnswer = input.answer.trim();
+  const cleanQuestion = input.question.trim();
+  if (!cleanAnswer) {
+    throw new Error("saveChatResponse requires a non-empty answer");
+  }
+  const shared = {
+    body: cleanAnswer,
+    prompt: cleanQuestion || "Ask Pratibha",
+    kind: "chat_response" as const,
+    question: cleanQuestion || undefined,
+    chatMode: input.chatMode,
+    tags: ["chat"],
+  };
+  if (input.verse) {
+    return upsertJournalNote({
+      ...shared,
+      passage: input.verse,
+      verseId: input.verse._id,
+    });
+  }
+  return upsertJournalNote({
+    ...shared,
+    contextId: `chat:${Date.now()}`,
+    contextTitle: "Ask Pratibha",
+  });
+}
+
 export function upsertJournalNote(input: {
   existingId?: string;
   passage?: VerseItem;
@@ -46,6 +95,10 @@ export function upsertJournalNote(input: {
   body: string;
   tags?: string[];
   prompt?: string;
+  kind?: JournalNote["kind"];
+  question?: string;
+  chatMode?: ChatMode;
+  verseId?: string;
 }): JournalNote {
   const passageId = input.passage?._id || input.contextId;
   if (!passageId) {
@@ -66,6 +119,10 @@ export function upsertJournalNote(input: {
     body: input.body,
     tags: input.tags || existing?.tags || [],
     prompt: input.prompt || existing?.prompt,
+    kind: input.kind || existing?.kind,
+    question: input.question || existing?.question,
+    chatMode: input.chatMode || existing?.chatMode,
+    verseId: input.verseId || existing?.verseId,
     createdAt: existing?.createdAt || timestamp,
     updatedAt: timestamp,
   };

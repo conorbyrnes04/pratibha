@@ -1,9 +1,11 @@
 'use client';
 
 import { useEffect, useMemo, useState } from "react";
-import { askChat, getCollections } from "@/lib/api";
-import type { Source } from "@/lib/types";
+import { askChat, getCollections, getVerse } from "@/lib/api";
+import { saveChatResponse } from "@/lib/journalStorage";
+import type { ChatMode, PratibhaLayerKind, Source, VerseItem } from "@/lib/types";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -20,10 +22,26 @@ export default function ChatPage() {
   const [compareA, setCompareA] = useState("");
   const [compareB, setCompareB] = useState("");
   const [compareWarning, setCompareWarning] = useState("");
+  const [pinnedVerse, setPinnedVerse] = useState<VerseItem | null>(null);
+  const [chatMode, setChatMode] = useState<ChatMode>("question");
+  const [layerFocus, setLayerFocus] = useState<PratibhaLayerKind | "">("");
+  const [savedReplies, setSavedReplies] = useState<Set<number>>(new Set());
 
   useEffect(() => {
     const fromUrl = new URLSearchParams(window.location.search).get("q");
     if (fromUrl) setQ(fromUrl);
+    const params = new URLSearchParams(window.location.search);
+    const verseId = params.get("verse_id");
+    const mode = params.get("mode") as ChatMode | null;
+    if (mode && ["question", "explain", "compare", "practice"].includes(mode)) {
+      setChatMode(mode);
+      if (!fromUrl) {
+        setQ(mode === "practice" ? "Give me one concrete practice from this passage." : "Guide me through this passage.");
+      }
+    }
+    if (verseId) {
+      getVerse(verseId).then(setPinnedVerse).catch(() => setPinnedVerse(null));
+    }
   }, []);
 
   useEffect(() => {
@@ -46,6 +64,18 @@ export default function ChatPage() {
     [],
   );
 
+  function saveReply(index: number, content: string) {
+    const question =
+      index > 0 && messages[index - 1]?.role === "user" ? messages[index - 1].content : "";
+    saveChatResponse({
+      answer: content,
+      question,
+      verse: pinnedVerse,
+      chatMode,
+    });
+    setSavedReplies((prev) => new Set(prev).add(index));
+  }
+
   async function ask() {
     if (!q.trim() || busy) return;
     const next: ChatMessage[] = [...messages, { role: "user", content: q.trim() }];
@@ -54,7 +84,11 @@ export default function ChatPage() {
     setQ("");
     try {
       const selected = compareMode ? [compareA, compareB].filter(Boolean) : [];
-      const data = await askChat(next, useRag, compareMode, selected);
+      const data = await askChat(next, useRag, compareMode, selected, {
+        verseId: pinnedVerse?._id,
+        layerFocus: layerFocus || undefined,
+        chatMode,
+      });
       setMessages([...next, { role: "assistant", content: data.answer || "(no answer)" }]);
       setSources(data.sources || []);
       setCompareWarning(data.compareWarning || "");
@@ -69,30 +103,75 @@ export default function ChatPage() {
   }
 
   return (
-    <main className="mx-auto max-w-6xl px-4 py-8">
-      <h1 className="text-3xl text-amber-200">Study Chat</h1>
-      <p className="soft mt-2">Ask naturally. You will get simple explanation, key insight, and one concrete practice.</p>
+    <main className="page-shell">
+      <p className="eyebrow">Dialogue with the corpus</p>
+      <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Ask Pratibha</h1>
+      <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">Ask naturally. The companion answers with source-grounded explanation, cross-tradition context, and a practice you can actually try.</p>
 
       <div className="mt-6 grid gap-4 lg:grid-cols-[2fr_1fr]">
-        <section className="card p-4">
+        <section className="manuscript-card p-4 sm:p-5">
+          {pinnedVerse ? (
+            <div className="practice-card mb-4 p-4">
+              <p className="layer-heading">Pinned passage</p>
+              <h2 className="mt-2 text-2xl leading-none text-amber-100">
+                {pinnedVerse.title || pinnedVerse.sutra_id || pinnedVerse._id}
+              </h2>
+              <p className="soft mt-1 font-sans text-sm">
+                {displayCollectionName(pinnedVerse.collection)} {pinnedVerse.section ? `• ${pinnedVerse.section}` : ""} • {maturityLabel(pinnedVerse.editorial_maturity)}
+              </p>
+              <p className="soft mt-3 text-sm leading-relaxed">{passagePreview(pinnedVerse)}</p>
+              {practiceText(pinnedVerse) ? (
+                <p className="mt-3 text-sm leading-relaxed text-stone-200">
+                  <span className="text-amber-100">Practice:</span> {practiceText(pinnedVerse)}
+                </p>
+              ) : null}
+              <div className="mt-4 grid gap-2 sm:grid-cols-2">
+                <select value={chatMode} onChange={(e) => setChatMode(e.target.value as ChatMode)} className="input-field rounded-md p-2 text-sm">
+                  <option value="question">Open question</option>
+                  <option value="explain">Explain</option>
+                  <option value="practice">Practice</option>
+                  <option value="compare">Compare</option>
+                </select>
+                <select value={layerFocus} onChange={(e) => setLayerFocus(e.target.value as PratibhaLayerKind | "")} className="input-field rounded-md p-2 text-sm">
+                  <option value="">All layers</option>
+                  <option value="translation">Translation</option>
+                  <option value="commentary">Commentary</option>
+                  <option value="key_terms">Key terms</option>
+                  <option value="resonances">Resonances</option>
+                  <option value="practice">Practice</option>
+                </select>
+              </div>
+            </div>
+          ) : null}
           <div className="space-y-3">
             {messages.length === 0 ? (
-              <div className="soft rounded-md border border-white/10 p-4">
-                Start with a prompt below, or ask your own question about any chapter.
+              <div className="citation-card p-5">
+                <p className="layer-heading">Begin</p>
+                <p className="soft mt-3 text-lg">Start with a prompt below, or ask your own question about any chapter.</p>
               </div>
             ) : (
               messages.map((m, idx) => (
                 <article
                   key={`${m.role}-${idx}`}
-                  className={`rounded-md border p-4 whitespace-pre-wrap ${
-                    m.role === "user" ? "border-amber-200/30 bg-amber-100/5" : "border-white/10 bg-slate-950/40"
+                  className={`whitespace-pre-wrap rounded-2xl border p-4 ${
+                    m.role === "user" ? "border-amber-200/30 bg-amber-100/10" : "citation-card"
                   }`}
                 >
-                  <p className="mb-2 text-xs uppercase tracking-wide soft">{m.role === "user" ? "You" : "Pratibha"}</p>
+                  <p className="layer-heading mb-2">{m.role === "user" ? "You" : "Pratibha"}</p>
                   {m.role === "assistant" ? (
-                    <div className="chat-markdown">
-                      <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
-                    </div>
+                    <>
+                      <div className="chat-markdown reading-prose">
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => saveReply(idx, m.content)}
+                        disabled={savedReplies.has(idx)}
+                        className="btn-secondary mt-3 px-3 py-1 text-xs disabled:opacity-50"
+                      >
+                        {savedReplies.has(idx) ? "Saved to journal" : "Save to journal"}
+                      </button>
+                    </>
                   ) : (
                     <p>{m.content}</p>
                   )}
@@ -103,18 +182,18 @@ export default function ChatPage() {
 
           <div className="mt-4 flex flex-wrap gap-2">
             {suggestions.map((s) => (
-              <button key={s} onClick={() => setQ(s)} className="rounded-full border border-amber-200/25 px-3 py-1 text-xs text-amber-100">
+              <button key={s} onClick={() => setQ(s)} className="btn-secondary px-3 py-1 text-xs">
                 {s}
               </button>
             ))}
           </div>
 
-          <label className="mt-4 block text-sm soft">
-            <input type="checkbox" checked={useRag} onChange={(e) => setUseRag(e.target.checked)} className="mr-2" />
+          <label className="mt-4 block font-sans text-sm soft">
+            <input type="checkbox" checked={useRag} onChange={(e) => setUseRag(e.target.checked)} className="mr-2 accent-amber-300" />
             Use source-grounded retrieval (recommended)
           </label>
-          <label className="mt-2 block text-sm soft">
-            <input type="checkbox" checked={compareMode} onChange={(e) => setCompareMode(e.target.checked)} className="mr-2" />
+          <label className="mt-2 block font-sans text-sm soft">
+            <input type="checkbox" checked={compareMode} onChange={(e) => setCompareMode(e.target.checked)} className="mr-2 accent-amber-300" />
             Compare mode (debate/synthesis between two texts)
           </label>
           {compareMode && (
@@ -122,7 +201,7 @@ export default function ChatPage() {
               <select
                 value={compareA}
                 onChange={(e) => setCompareA(e.target.value)}
-                className="rounded-md border border-white/15 bg-slate-950/70 p-2 text-sm"
+                className="input-field rounded-md p-2 text-sm"
               >
                 {collections.map((c) => (
                   <option key={`a-${c}`} value={c}>
@@ -133,7 +212,7 @@ export default function ChatPage() {
               <select
                 value={compareB}
                 onChange={(e) => setCompareB(e.target.value)}
-                className="rounded-md border border-white/15 bg-slate-950/70 p-2 text-sm"
+                className="input-field rounded-md p-2 text-sm"
               >
                 {collections.map((c) => (
                   <option key={`b-${c}`} value={c}>
@@ -144,7 +223,7 @@ export default function ChatPage() {
             </div>
           )}
           <textarea
-            className="mt-3 w-full rounded-lg border border-white/15 bg-slate-950/70 p-3"
+            className="input-field mt-3 w-full rounded-2xl p-3"
             rows={4}
             value={q}
             onChange={(e) => setQ(e.target.value)}
@@ -154,7 +233,7 @@ export default function ChatPage() {
             <button
               onClick={ask}
               disabled={busy}
-              className="rounded-lg bg-amber-300 px-5 py-2 font-semibold text-slate-900 disabled:opacity-50"
+              className="btn-primary px-6 py-2.5 disabled:opacity-50"
             >
               {busy ? "Thinking..." : "Ask"}
             </button>
@@ -162,8 +241,15 @@ export default function ChatPage() {
         </section>
 
         <aside className="card p-4">
-          <h2 className="text-lg text-amber-100">Sources</h2>
-          <p className="soft mt-1 text-sm">When RAG is enabled, supporting passages appear here.</p>
+          <h2 className="text-2xl text-amber-100">Source shelf</h2>
+          <p className="soft mt-1 text-sm">Supporting passages appear here when retrieval is enabled.</p>
+          {pinnedVerse ? (
+            <article className="practice-card mt-3 p-3">
+              <p className="layer-heading">Primary source</p>
+              <p className="mt-2 text-sm text-amber-100">{pinnedVerse.title || pinnedVerse.sutra_id || pinnedVerse._id}</p>
+              <p className="soft mt-1 line-clamp-4 text-sm">{passagePreview(pinnedVerse)}</p>
+            </article>
+          ) : null}
           {compareMode && compareWarning ? (
             <p className="mt-2 rounded-md border border-amber-300/40 bg-amber-300/10 p-2 text-xs text-amber-100">
               {compareWarning}
@@ -174,19 +260,19 @@ export default function ChatPage() {
               <p className="soft text-sm">No sources shown yet.</p>
             ) : (
               sources.map((s) => (
-                <article key={`source-${s.rank}`} className="rounded-md border border-white/10 bg-slate-950/40 p-3">
-                  <p className="text-xs soft">
-                    #{s.rank} {typeof s.score === "number" ? `• score ${s.score.toFixed(3)}` : ""}
+                <article key={`source-${s.rank}`} className="citation-card p-3">
+                  <p className="layer-heading">
+                    Source {s.rank}
                   </p>
                   {(() => {
                     const side = (s.metadata?.compare_side as string | undefined) || "";
                     return side ? (
-                    <p className="mt-1 text-[11px] uppercase tracking-wide text-amber-200">
+                    <p className="mt-1 font-sans text-[11px] uppercase tracking-wide text-amber-200">
                       Voice {side}
                     </p>
                     ) : null;
                   })()}
-                  <p className="mt-1 text-xs soft">
+                  <p className="mt-2 text-sm text-amber-100">
                     {displayCollectionName(String((s.metadata?.collection as string) || ""))}
                     {s.metadata?.title ? ` • ${String(s.metadata.title)}` : ""}
                     {s.metadata?.section ? ` • ${String(s.metadata.section)}` : ""}
@@ -196,7 +282,7 @@ export default function ChatPage() {
                       Themes: {(s.metadata?.themes as unknown[]).slice(0, 3).map((t) => String(t)).join(", ")}
                     </p>
                   ) : null}
-                  <p className="mt-2 line-clamp-6 text-sm whitespace-pre-wrap">{s.text || ""}</p>
+                  <p className="soft mt-2 line-clamp-6 whitespace-pre-wrap text-sm leading-relaxed">{s.text || ""}</p>
                 </article>
               ))
             )}

@@ -1,4 +1,4 @@
-import type { PratibhaLayer, PratibhaLayerKind, VerseItem } from "@/lib/types";
+import type { PratibhaLayer, PratibhaLayerKind, VerseItem } from "@shared/types";
 import { firstSentence, stripMarkdown } from "@/lib/textPreview";
 
 const ORDER: PratibhaLayerKind[] = [
@@ -74,24 +74,7 @@ export function layerText(item: VerseItem, kind: PratibhaLayerKind): string {
 }
 
 export function passagePreview(item: VerseItem): string {
-  return stripMarkdown(firstSentence(layerText(item, "translation") || layerText(item, "commentary") || item.source_excerpt || ""));
-}
-
-export function practiceText(item: VerseItem): string {
-  return stripMarkdown(layerText(item, "practice") || item.practice || item.abhyasa || "");
-}
-
-export function maturityLabel(value?: string): string {
-  switch (value) {
-    case "publishable":
-      return "Publishable";
-    case "strong_draft":
-      return "Strong draft";
-    case "needs_rewrite":
-      return "Needs rewrite";
-    case "structural_draft":
-      return "Structural draft";
-    default:
-      return "Unreviewed";
-  }
+  return stripMarkdown(
+    firstSentence(layerText(item, "translation") || layerText(item, "commentary") || item.source_excerpt || ""),
+  );
 }

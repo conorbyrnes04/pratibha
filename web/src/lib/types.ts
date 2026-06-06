@@ -73,6 +73,8 @@ export type ChatOptions = {
   chatMode?: ChatMode;
 };
 
+export type JournalNoteKind = "reflection" | "chat_response";
+
 export type JournalNote = {
   id: string;
   passageId: string;
@@ -82,4 +84,8 @@ export type JournalNote = {
   createdAt: string;
   updatedAt: string;
   prompt?: string;
+  kind?: JournalNoteKind;
+  question?: string;
+  chatMode?: ChatMode;
+  verseId?: string;
 };

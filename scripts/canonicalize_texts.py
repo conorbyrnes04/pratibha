@@ -131,17 +131,34 @@ THEME_TERMS = [
     "sitting in forgetfulness",
     "usefulness",
     "uselessness",
+    # Learning-path vocabulary (kept aligned with web/src/lib/learningPaths.ts
+    # so curated path steps can match passages by theme).
+    "action",
+    "duty",
+    "renunciation",
+    "non-attachment",
+    "detachment",
+    "surrender",
+    "death",
+    "dying",
+    "impermanence",
+    "soul",
+    "witness",
+    "witnessing",
+    "contraction",
+    "devotion",
+    "desire",
+    "suffering",
+    "equanimity",
+    "courage",
+    "fear",
+    "fate",
+    "truth",
+    "illusion",
+    "ego",
+    "attention",
+    "grace",
 ]
-
-THEME_STOPWORDS = {
-    "the", "and", "for", "with", "from", "that", "this", "then", "than", "into", "through", "while", "when", "where",
-    "which", "what", "will", "would", "could", "should", "have", "has", "had", "are", "was", "were", "been", "being",
-    "not", "but", "all", "any", "one", "two", "three", "its", "their", "your", "our", "his", "her", "they", "them",
-    "you", "we", "he", "she", "it", "his", "hers", "about", "over", "under", "within", "without", "also", "very",
-    "chapter", "sutra", "text", "verse", "body", "mind", "self", "knowledge", "consciousness", "siva", "shiva",
-    "book", "te", "ching", "chuang", "tzu",
-}
-
 
 def _normalize_for_match(s: str) -> str:
     s = txt(s).lower()
@@ -151,8 +168,19 @@ def _normalize_for_match(s: str) -> str:
     return re.sub(r"\s+", " ", s)
 
 
+def _strip_cross_tradition(text: str) -> str:
+    """Remove the Cross-Tradition Resonances section so other traditions'
+    vocabulary (e.g. Daoist terms inside a Phaedo unit) does not leak into a
+    passage's own themes."""
+    s = txt(text)
+    if not s:
+        return ""
+    match = re.search(r"(?im)^\s*#*\s*cross-tradition resonances?\s*:?\s*$", s)
+    return s[: match.start()].strip() if match else s
+
+
 def extract_themes(*parts: str) -> list[str]:
-    blob = _normalize_for_match(" ".join(txt(p) for p in parts))
+    blob = _normalize_for_match(" ".join(_strip_cross_tradition(p) for p in parts))
     out: list[str] = []
     for term in THEME_TERMS:
         t = _normalize_for_match(term)
@@ -164,20 +192,6 @@ def extract_themes(*parts: str) -> list[str]:
             if re.search(rf"\b{re.escape(t)}\b", blob):
                 out.append(term)
     return sorted(set(out))[:8]
-
-
-def _fallback_theme_tokens(*parts: str) -> list[str]:
-    blob = _normalize_for_match(" ".join(txt(p) for p in parts))
-    words = re.findall(r"[a-z][a-z\-]{2,}", blob)
-    counts: dict[str, int] = {}
-    for w in words:
-        if w in THEME_STOPWORDS:
-            continue
-        if len(w) > 24:
-            continue
-        counts[w] = counts.get(w, 0) + 1
-    ranked = sorted(counts.items(), key=lambda x: (-x[1], x[0]))
-    return [w for w, _ in ranked[:8]]
 
 
 def _glossary_terms(y: dict[str, Any]) -> list[str]:
@@ -199,6 +213,9 @@ def _glossary_terms(y: dict[str, Any]) -> list[str]:
 
 
 def themes_for_unit(y: dict[str, Any], *parts: str) -> list[str]:
+    # Themes come from a controlled vocabulary (THEME_TERMS) plus the unit's own
+    # glossary. The old frequency-based fallback produced noisy tokens
+    # ("things", "way", "make") and is intentionally dropped.
     out: list[str] = []
     for t in extract_themes(*parts):
         if t not in out:
@@ -207,13 +224,7 @@ def themes_for_unit(y: dict[str, Any], *parts: str) -> list[str]:
         if g not in out:
             out.append(g)
         if len(out) >= 8:
-            return out[:8]
-    if len(out) < 4:
-        for t in _fallback_theme_tokens(*parts):
-            if t not in out:
-                out.append(t)
-            if len(out) >= 8:
-                break
+            break
     return out[:8]
 
 
@@ -235,6 +246,37 @@ def _appendixes_as_commentary(appendixes: list[dict[str, str]]) -> str:
     if not appendixes:
         return ""
     return "\n\n".join(f"{a['commentator']}:\n{a['text']}" for a in appendixes if txt(a.get("text")))
+
+
+def build_pratibha_layers(
+    *,
+    sanskrit: str = "",
+    iast: str = "",
+    translation: str = "",
+    commentary: str = "",
+    practice: str = "",
+    appendixes: list[dict[str, str]] | None = None,
+) -> list[dict[str, Any]]:
+    layers: list[dict[str, Any]] = []
+    for kind, label, body in [
+        ("original", "Original", sanskrit),
+        ("iast", "IAST", iast),
+        ("translation", "Pratibha Translation", translation),
+        ("commentary", "Pratibha Commentary", commentary),
+        ("practice", "Practice (Abhyasa)", practice),
+    ]:
+        clean = txt(body)
+        if clean:
+            layers.append({"kind": kind, "label": label, "body": clean})
+    for idx, appendix in enumerate(appendixes or []):
+        body = txt(appendix.get("text"))
+        if body:
+            layers.append({
+                "kind": "appendix",
+                "label": txt(appendix.get("commentator")) or f"Appendix {idx + 1}",
+                "body": body,
+            })
+    return layers
 
 
 def _coerce_wrapped_record(raw: dict[str, Any]) -> dict[str, Any]:
@@ -334,6 +376,16 @@ def normalize_root_unit(y: dict[str, Any], path: Path) -> dict[str, Any]:
         "themes": themes,
         "tags": tags,
         "quality_score": y.get("quality_score_unit") or 0,
+        "editorial_maturity": y.get("editorial_maturity") or "strong_draft",
+        "editorial_score": y.get("editorial_score") or 0,
+        "pratibha_layers": build_pratibha_layers(
+            sanskrit=sanskrit,
+            iast=iast,
+            translation=translation,
+            commentary=commentary,
+            practice=practice,
+            appendixes=appendixes,
+        ),
         "appendixes": appendixes,
         "provenance": {
             "collection": coll,
@@ -385,6 +437,16 @@ def normalize_commentary_unit(y: dict[str, Any], path: Path) -> dict[str, Any]:
         "sanskrit_iast": txt(y.get("transliteration")),
         "tags": tags,
         "quality_score": y.get("quality_score_unit") or 0,
+        "editorial_maturity": y.get("editorial_maturity") or "strong_draft",
+        "editorial_score": y.get("editorial_score") or 0,
+        "pratibha_layers": build_pratibha_layers(
+            sanskrit=txt(y.get("sanskrit")),
+            iast=txt(y.get("transliteration")),
+            translation=translation,
+            commentary=commentary,
+            practice=practice,
+            appendixes=appendixes,
+        ),
         "appendixes": appendixes,
         "provenance": {
             "collection": coll,
