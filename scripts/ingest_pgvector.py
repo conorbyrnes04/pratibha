@@ -151,8 +151,36 @@ def _layer_text(layer: dict) -> str:
     return combined.strip()
 
 
-def _build_sections(y: dict) -> list[tuple[str, str, str]]:
-    sections: list[tuple[str, str, str]] = []
+RAG_HARD_GATE_COLLECTIONS = frozenset({"rumi_mathnawi", "dogen_shobogenzo"})
+RAG_BLOCK_MARKER = "DO NOT ingest to RAG"
+
+
+def _layer_provenance(layer: dict) -> str:
+    for key in ("layer_provenance", "provenance", "method"):
+        val = _as_text(layer.get(key))
+        if val:
+            return val
+    return ""
+
+
+def _should_skip_rag_ingest(norm: dict, collection: str) -> str | None:
+    """Return a skip reason when this unit must not be embedded for RAG."""
+    maturity = _as_text(norm.get("editorial_maturity"))
+    if collection in RAG_HARD_GATE_COLLECTIONS and maturity == "structural_draft":
+        return f"collection {collection} at structural_draft"
+
+    layers = norm.get("pratibha_layers")
+    if isinstance(layers, list):
+        for layer in layers:
+            if not isinstance(layer, dict) or _as_text(layer.get("kind")) != "translation":
+                continue
+            if RAG_BLOCK_MARKER in _layer_provenance(layer):
+                return "translation layer_provenance contains DO NOT ingest to RAG"
+    return None
+
+
+def _build_sections(y: dict) -> list[tuple[str, str, str, str]]:
+    sections: list[tuple[str, str, str, str]] = []
     layers = y.get("pratibha_layers")
     if isinstance(layers, list):
         for idx, layer in enumerate(layers):
@@ -162,7 +190,7 @@ def _build_sections(y: dict) -> list[tuple[str, str, str]]:
             label = _as_text(layer.get("label")) or kind
             text = _layer_text(layer)
             if text:
-                sections.append((label, text, kind))
+                sections.append((label, text, kind, _layer_provenance(layer)))
         if sections:
             return sections
 
@@ -192,14 +220,14 @@ def _build_sections(y: dict) -> list[tuple[str, str, str]]:
                 "practice": "practice",
                 "abhyasa": "practice",
             }.get(key, key)
-            sections.append((key, text, layer_kind))
+            sections.append((key, text, layer_kind, ""))
 
     modes = y.get("modes") or {}
     if isinstance(modes, dict):
         for mk, mv in modes.items():
             text = _as_text(mv)
             if text:
-                sections.append((f"mode:{mk}", text, f"mode:{mk}"))
+                sections.append((f"mode:{mk}", text, f"mode:{mk}", ""))
 
     appendixes = y.get("appendixes") or []
     if isinstance(appendixes, list):
@@ -211,7 +239,7 @@ def _build_sections(y: dict) -> list[tuple[str, str, str]]:
                 label = f"appendix_{idx + 1}"
                 text = _as_text(item)
             if text:
-                sections.append((f"appendix:{label}", text, "appendix"))
+                sections.append((f"appendix:{label}", text, "appendix", ""))
     return sections
 
 
@@ -304,6 +332,11 @@ async def main(dir_path: str):
                 "editorial_score": norm.get("editorial_score") or 0,
                 "ingested_at": datetime.datetime.utcnow().isoformat() + "Z",
             }
+            skip_reason = _should_skip_rag_ingest(norm, base_meta["collection"])
+            if skip_reason:
+                print(f"Skipping RAG ingest for {path.name}: {skip_reason}")
+                continue
+
             # Build sections from the normalized record so ingestion and the API
             # use the identical pratibha_layers (single source of truth).
             sections = _build_sections(norm)
@@ -312,9 +345,11 @@ async def main(dir_path: str):
             # body so retrieved sources read as pure teaching text.
             embed_inputs: list[str] = []
             pending_rows: list[tuple[str, dict]] = []
-            for section_name, text, layer_kind in sections:
+            for section_name, text, layer_kind, layer_prov in sections:
                 for chunk_idx, chunk in enumerate(_split_chunks(text), start=1):
                     meta = {**base_meta, "section": section_name, "layer_kind": layer_kind, "chunk_index": chunk_idx}
+                    if layer_prov:
+                        meta["layer_provenance"] = layer_prov
                     embed_inputs.append(_with_chunk_context(chunk, meta))
                     pending_rows.append((chunk.strip(), meta))
 

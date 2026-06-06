@@ -49,6 +49,11 @@ export function LayerBlock({
       ) : (
         <>
           <h2 className="layer-heading">{layer.label}</h2>
+          {layer.kind === "translation" && layer.layer_provenance ? (
+            <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-400">
+              {layer.layer_provenance}
+            </p>
+          ) : null}
           {renderLayerBody(layer, items, { compact, isOriginal })}
         </>
       )}

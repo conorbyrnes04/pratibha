@@ -34,6 +34,7 @@ export type PratibhaLayer = {
   kind: PratibhaLayerKind;
   label: string;
   body?: string;
+  layer_provenance?: string;
   items?: Array<KeyTerm | Resonance | Record<string, unknown>>;
 };
 
