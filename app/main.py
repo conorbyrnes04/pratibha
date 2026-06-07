@@ -12,6 +12,7 @@ import asyncpg
 
 from .chat_voice import (
     ANTI_PATTERNS,
+    HARD_RULES,
     PRATIBHA_VOICE_PERSONA,
     SOURCE_GROUNDING,
 )
@@ -250,7 +251,7 @@ def _effective_temperature(req: "ChatReq", query: str, *, compare_enabled: bool)
     if mode in {"compare", "question"} and (_is_exploratory_query(query) or compare_enabled):
         return max(req.temperature, 0.55)
     if mode == "explain":
-        return max(req.temperature, 0.4)
+        return max(req.temperature, 0.35)
     if mode == "practice":
         return min(req.temperature, 0.35)
     return req.temperature
@@ -435,6 +436,8 @@ def _format_pinned_passage(verse: dict[str, Any], focus: str | None = None, mode
     summary = "\n\n".join(_format_layer_summary(layer) for layer in selected_layers[:7])
     return (
         "Pinned passage dossier. Treat this passage as the primary source for the conversation.\n"
+        "Open your answer from this passage's concrete language — translation, key terms, named "
+        "figures, specific images — not generic metaphors from other traditions.\n"
         f"Chat mode: {(mode or 'question').strip()}.\n"
         f"Title: {verse.get('title') or verse.get('sutra_id') or verse.get('_id')}.\n"
         f"Source: {verse.get('collection') or 'Unknown'} {verse.get('section') or ''} {verse.get('sutra_id') or ''}.\n"
@@ -561,8 +564,9 @@ async def _assemble_chat_messages(
                     "role": "system",
                     "content": (
                         f"Context:\n{ctx_txt}\n"
-                        "Draw from these when they serve the question. "
-                        "Cite as [n] after the thought they support — never mid-flow."
+                        "Your first sentence must engage [1]'s concrete image or claim by name. "
+                        "Ground every claim in Context or the pinned dossier. "
+                        "Cite as [n] after the sentence they support — never mid-flow."
                     ),
                 }
             )
@@ -602,6 +606,7 @@ async def _assemble_chat_messages(
                 }
             )
 
+    msgs.append({"role": "system", "content": HARD_RULES})
     temperature = _effective_temperature(req, latest_user, compare_enabled=compare_enabled)
     return msgs, sources, compare_warning, temperature
 
