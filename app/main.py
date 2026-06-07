@@ -10,6 +10,12 @@ import random
 import re
 import asyncpg
 
+from .chat_voice import (
+    ANTI_PATTERNS,
+    PRATIBHA_VOICE_PERSONA,
+    SOURCE_GROUNDING,
+)
+from .voice_examples import default_few_shot_block
 from .config import settings
 from .llm import smart_chat, smart_chat_stream
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, detected_collections
@@ -18,6 +24,7 @@ from .data_loader import (
     LOAD_STATS,
     _humanize_collection,
     filter_by_maturity,
+    filter_reader_facing,
     get_verse_by_id,
     normalize_maturity,
     pick_daily,
@@ -95,7 +102,7 @@ async def daily(min_maturity: str | None = "publishable"):
 
 @app.get("/random")
 async def random_verse(collection: str | None = None, min_maturity: str | None = "strong_draft"):
-    items = filter_by_maturity(ALL_VERSES, _valid_maturity(min_maturity))
+    items = filter_reader_facing(filter_by_maturity(ALL_VERSES, _valid_maturity(min_maturity)))
     if collection:
         needle = collection.strip().lower()
         items = [v for v in items if str(v.get("collection", "")).strip().lower() == needle]
@@ -242,6 +249,8 @@ def _effective_temperature(req: "ChatReq", query: str, *, compare_enabled: bool)
     mode = (req.chat_mode or "").strip().lower()
     if mode in {"compare", "question"} and (_is_exploratory_query(query) or compare_enabled):
         return max(req.temperature, 0.55)
+    if mode == "explain":
+        return max(req.temperature, 0.4)
     if mode == "practice":
         return min(req.temperature, 0.35)
     return req.temperature
@@ -253,48 +262,48 @@ def persona(
     exploratory: bool = False,
     compare_enabled: bool = False,
 ) -> dict:
-    base = (
-        "You are Pratibha, a scholarly study companion for spiritual and philosophical texts. "
-        "Write with clarity, nuance, and intellectual honesty — not as a generic study guide. "
-        "When context passages are provided, ground claims in them and cite like [1], [2] in flowing prose; "
-        "never invent citations. If evidence is thin, say so plainly instead of filling gaps with boilerplate. "
-        "If the user asks multiple questions, answer the most recent explicit question first."
-    )
     mode = (chat_mode or "question").strip().lower()
 
     if compare_enabled or mode == "compare" or exploratory:
-        format_guide = (
-            "This is comparative or exploratory. Prefer a rich essay: dialogue between thinkers, "
-            "markdown tables, genealogical or historical irony, and a brief verdict or synthesis are welcome. "
-            "Let structure follow the question — do not force a fixed template. "
-            "Ground divergences in cited passages where possible."
+        mode_guide = (
+            "## MODE: COMPARE / EXPLORATORY\n"
+            "Let two traditions or thinkers speak in their own textures before you weave them. "
+            "Dialogue, tables, and genealogical irony are welcome when they carry the insight — "
+            "never as scaffolding. End on a turn, not a verdict paragraph."
         )
     elif mode == "practice":
-        format_guide = (
-            "Focus on one or two concrete practices drawn from the sources. "
-            "Use headings only if they organize real content; skip generic section labels."
+        mode_guide = (
+            "## MODE: PRACTICE\n"
+            "Offer one or two concrete practices drawn from the sources — something the body can do "
+            "today. Speak it plainly; skip homework-list formatting."
         )
     elif mode == "explain":
-        format_guide = (
-            "Explain with depth: open with the direct answer, then develop the argument. "
-            "Use headings only when they organize real content. Cite sources in flowing prose."
+        mode_guide = (
+            "## MODE: EXPLAIN\n"
+            "Open with the direct answer, then unfold the argument. Show the insight; don't announce "
+            "that you're explaining. Follow the few-shot examples: abstraction into image, no throat-clear, "
+            "end on the turn not the bow."
         )
     else:
-        format_guide = (
-            "Match form to the question: crisp answers for simple queries; essays, dialogue, or tables "
-            "for debates and cross-tradition comparisons. "
-            "Add a practice or reflection at the end only when it genuinely fits — never as mandatory filler."
+        mode_guide = (
+            "## MODE: QUESTION\n"
+            "Match form to the question — short when short suffices, room to wander when it doesn't. "
+            "A practice or reflection only if it lands naturally; never tacked on."
         )
-    return {"role": "system", "content": f"{base}\n\n{format_guide}"}
+    content = (
+        f"{PRATIBHA_VOICE_PERSONA}\n\n{ANTI_PATTERNS}\n\n"
+        f"{default_few_shot_block()}\n\n"
+        f"{SOURCE_GROUNDING}\n\n{mode_guide}"
+    )
+    return {"role": "system", "content": content}
 
 
 def _compare_format_instruction(compare_cols: list[str]) -> str:
     a, b = compare_cols[0], compare_cols[1]
     return (
-        f"Comparative mode between '{a}' and '{b}'. Present both voices faithfully before synthesis. "
-        "You may use dialogue, tables, and irony; avoid rigid boilerplate. "
-        "Suggested flow (adapt as needed): opening thesis → Voice A → Voice B → convergences/tensions → synthesis. "
-        "Cite source numbers like [1], [2] in prose."
+        f"Comparing '{a}' and '{b}'. Let each voice sound like itself before you braid them. "
+        "Dialogue and tables are fine when they carry meaning — not as section headers. "
+        "Cite [1], [2] lightly after the thought they support."
     )
 
 
@@ -547,7 +556,16 @@ async def _assemble_chat_messages(
             if compare_enabled:
                 msgs.append({"role": "system", "content": _compare_format_instruction(compare_cols[:2])})
             ctx_txt = _format_context(ctx)
-            msgs.append({"role": "system", "content": f"Context:\n{ctx_txt}\nUse only if relevant."})
+            msgs.append(
+                {
+                    "role": "system",
+                    "content": (
+                        f"Context:\n{ctx_txt}\n"
+                        "Draw from these when they serve the question. "
+                        "Cite as [n] after the thought they support — never mid-flow."
+                    ),
+                }
+            )
             for i, (text, metadata, score) in enumerate(ctx, start=1):
                 meta = metadata or {}
                 side = ""
@@ -578,8 +596,8 @@ async def _assemble_chat_messages(
                 {
                     "role": "system",
                     "content": (
-                        "Comparative retrieval returned sparse evidence for one or both selected texts. "
-                        "Acknowledge this clearly and provide a cautious high-level comparison only."
+                        "Retrieval found thin evidence for one or both sides. Say that plainly — "
+                        "honest not-knowing, not a padded comparison."
                     ),
                 }
             )

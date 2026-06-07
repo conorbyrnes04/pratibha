@@ -12,6 +12,30 @@ from .collection_aliases import aliases_for_selection, meta_collection_slug
 
 logger = logging.getLogger("pratibha.rag")
 
+# Tie-break only — does not override vector/lexical relevance scores.
+IMAGERY_BIAS_WEIGHT = 0.08
+
+_ABSTRACT_NOMINALS = re.compile(
+    r"\b("
+    r"manifestation|framework|principle|interconnectedness|emergence|paradigm|"
+    r"dimension|ontology|epistemology|self-ordering|collaboration|vibration|"
+    r"implications|perspective|alignment|cultivat\w+|fundamental"
+    r")\b",
+    re.I,
+)
+_CONCRETE_NOUNS = re.compile(
+    r"\b("
+    r"water|wheel|cup|stone|wood|breath|hand|river|valley|block|bowl|fire|earth|"
+    r"sky|body|eye|mouth|feet|seed|tree|bird|fish|mountain|shadow|light|sound|"
+    r"silence|spoke|clay|room|hub|tea|kettle|fan|dust|hearth|log|mountain|bowl|"
+    r"syllable|akṣara|akshara|oṃ|om"
+    r")\b",
+    re.I,
+)
+
+_ROOT_LAYER_KINDS = frozenset({"translation", "original", "iast"})
+_COMMENTARY_LIKE = frozenset({"commentary", "key_terms", "resonances", "insight", "appendix"})
+
 _STOPWORDS = {
     "the", "and", "for", "that", "with", "this", "from", "into", "your", "what",
     "when", "where", "which", "about", "have", "will", "would", "could", "should",
@@ -81,6 +105,55 @@ _COLLECTION_HINTS = {
         "samadhi pada",
         "yamas",
         "niyamas",
+    ],
+    "milarepa_songs": [
+        "milarepa",
+        "mila repa",
+        "jetsun kahbum",
+        "jetsün kahbum",
+        "great yogi milarepa",
+        "tibet's great yogi",
+    ],
+    "dogen_shobogenzo": [
+        "dogen",
+        "dōgen",
+        "shobogenzo",
+        "shōbōgenzō",
+        "genjokoan",
+        "genjōkōan",
+        "bendowa",
+        "bendōwa",
+        "fukanzazengi",
+        "uji",
+        "bussho",
+        "soto zen",
+    ],
+    "plotinus_enneads": [
+        "plotinus",
+        "enneads",
+        "ennead",
+        "neoplaton",
+    ],
+    "heraclitus_fragments": [
+        "heraclitus",
+        "heracleitus",
+        "fragments of heraclitus",
+        "logos",
+        "panta rhei",
+        "ever-living fire",
+        "pre-socratic",
+    ],
+    "chandogya_upanishad": [
+        "chandogya",
+        "chāndogya",
+        "khandogya",
+        "khândogya",
+        "tat tvam asi",
+        "tat tvam",
+        "uddalaka",
+        "svetaketu",
+        "sandilya",
+        "sāṇḍilya",
     ],
 }
 
@@ -284,6 +357,120 @@ def _quality_of(metadata: dict) -> float:
         return 0.0
 
 
+def _imagery_score(body: str) -> float:
+    """Higher when text carries concrete/sensory nouns vs abstract nominal piles."""
+    if not body:
+        return 0.0
+    abstract = len(_ABSTRACT_NOMINALS.findall(body))
+    concrete = len(_CONCRETE_NOUNS.findall(body))
+    return float(concrete - abstract)
+
+
+def _rank_by_relevance_and_imagery(
+    candidates: list[tuple[str, dict, float]],
+) -> list[tuple[str, dict, float]]:
+    """Primary sort: retrieval score. Tie-break: image-bearing chunks."""
+    return sorted(
+        candidates,
+        key=lambda row: (row[2], IMAGERY_BIAS_WEIGHT * _imagery_score(row[0])),
+        reverse=True,
+    )
+
+
+def _unit_id_from_meta(metadata: dict) -> str:
+    meta = metadata or {}
+    for key in ("_id", "unit_id", "sutra_id"):
+        val = str(meta.get(key) or "").strip()
+        if val:
+            return val
+    return ""
+
+
+def _verse_root_chunks(verse: dict) -> list[tuple[str, dict, float]]:
+    """Root verse / translation rows for a unit — concrete language the model can use."""
+    rows: list[tuple[str, dict, float]] = []
+    base_meta = {
+        "collection": verse.get("collection"),
+        "_id": verse.get("_id"),
+        "unit_id": verse.get("_id"),
+        "title": verse.get("title"),
+        "sutra_id": verse.get("sutra_id"),
+        "reference": verse.get("reference"),
+        "root_companion": True,
+    }
+    layers = verse.get("pratibha_layers") or []
+    if isinstance(layers, list):
+        for layer in layers:
+            if not isinstance(layer, dict):
+                continue
+            kind = str(layer.get("kind") or "").strip().lower()
+            if kind not in _ROOT_LAYER_KINDS:
+                continue
+            body = str(layer.get("body") or "").strip()
+            if body:
+                meta = {**base_meta, "layer_kind": kind, "section": layer.get("label") or kind}
+                rows.append((body, meta, 0.95))
+    if rows:
+        return rows
+    for key, kind in (
+        ("translation", "translation"),
+        ("translation_literal", "translation"),
+        ("sanskrit_devanagari", "original"),
+        ("sanskrit_iast", "iast"),
+    ):
+        text = str(verse.get(key) or "").strip()
+        if text:
+            meta = {**base_meta, "layer_kind": kind, "section": key}
+            rows.append((text, meta, 0.95))
+    return rows
+
+
+def _ensure_root_companions(
+    selected: list[tuple[str, dict, float]],
+    k: int,
+) -> list[tuple[str, dict, float]]:
+    """When commentary chunks are selected, prepend root translation/original from the same unit."""
+    from .data_loader import get_verse_by_id
+
+    if not selected:
+        return selected
+
+    out = list(selected)
+    seen_body = {(body or "").strip().lower() for body, _, _ in out}
+    present_by_unit: dict[str, set[str]] = {}
+    units_needing_root: set[str] = set()
+
+    for _, meta, _ in out:
+        uid = _unit_id_from_meta(meta)
+        if not uid:
+            continue
+        kind = str(meta.get("layer_kind") or "").strip().lower()
+        present_by_unit.setdefault(uid, set()).add(kind)
+        if kind not in _ROOT_LAYER_KINDS:
+            units_needing_root.add(uid)
+
+    prepend: list[tuple[str, dict, float]] = []
+    for uid in sorted(units_needing_root):
+        kinds = present_by_unit.get(uid, set())
+        if kinds & _ROOT_LAYER_KINDS:
+            continue
+        verse = get_verse_by_id(uid)
+        if not verse:
+            continue
+        for body, meta, score in _verse_root_chunks(verse):
+            key = body.strip().lower()
+            if not key or key in seen_body:
+                continue
+            prepend.append((body, meta, score))
+            seen_body.add(key)
+            break
+
+    if not prepend:
+        return out[:k]
+    merged = [*prepend, *out]
+    return merged[: max(k, len(prepend) + min(len(out), k))]
+
+
 def _dedupe_argument_redundancy(candidates: list[tuple[str, dict, float]]) -> list[tuple[str, dict, float]]:
     ranked = sorted(candidates, key=lambda x: (_quality_of(_normalize_meta(x[1])), x[2]), reverse=True)
     kept: list[tuple[str, dict, float]] = []
@@ -321,7 +508,7 @@ def _normalize_meta(value) -> dict:
 
 
 def _diversify(candidates: list[tuple[str, dict, float]], k: int) -> list[tuple[str, dict, float]]:
-    candidates = _dedupe_argument_redundancy(candidates)
+    candidates = _rank_by_relevance_and_imagery(_dedupe_argument_redundancy(candidates))
     # First pass: prefer one chunk per logical source/section.
     selected: list[tuple[str, dict, float]] = []
     seen_source: set[tuple[str, str, str]] = set()
@@ -466,8 +653,8 @@ async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, floa
                     seen.add(key)
                     if len(uniq) >= k:
                         break
-                return uniq
-        return _diversify(merged, k)
+                return _ensure_root_companions(uniq, k)
+        return _ensure_root_companions(_diversify(merged, k), k)
     except Exception:
         logger.error("retrieve_context failed (returning empty context)", exc_info=True)
         return []
@@ -523,7 +710,7 @@ async def retrieve_context_for_verse(verse_id: str, query: str, k: int = 4) -> L
             await conn.close()
 
     if len(pinned) >= k:
-        return pinned[:k]
+        return _ensure_root_companions(pinned[:k], k)
 
     supplemental = await retrieve_context(query, k=max(k, 4))
     seen = {(body or "").strip().lower() for body, _, _ in pinned}
@@ -535,7 +722,7 @@ async def retrieve_context_for_verse(verse_id: str, query: str, k: int = 4) -> L
         seen.add(key)
         if len(pinned) >= k:
             break
-    return pinned[:k]
+    return _ensure_root_companions(pinned[:k], k)
 
 
 async def retrieve_context_compare(
