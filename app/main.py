@@ -16,7 +16,7 @@ from .chat_voice import (
     PRATIBHA_VOICE_PERSONA,
     SOURCE_GROUNDING,
 )
-from .voice_examples import default_few_shot_block
+from .voice_examples import is_death_topic, select_few_shots
 from .config import settings
 from .llm import smart_chat, smart_chat_stream
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, detected_collections
@@ -262,6 +262,8 @@ def persona(
     *,
     exploratory: bool = False,
     compare_enabled: bool = False,
+    query: str = "",
+    verse_id: str | None = None,
 ) -> dict:
     mode = (chat_mode or "question").strip().lower()
 
@@ -293,7 +295,7 @@ def persona(
         )
     content = (
         f"{PRATIBHA_VOICE_PERSONA}\n\n{ANTI_PATTERNS}\n\n"
-        f"{default_few_shot_block()}\n\n"
+        f"{select_few_shots(query, verse_id)}\n\n"
         f"{SOURCE_GROUNDING}\n\n{mode_guide}"
     )
     return {"role": "system", "content": content}
@@ -531,7 +533,13 @@ async def _assemble_chat_messages(
 
     exploratory = _is_exploratory_query(latest_user)
     msgs: list[dict[str, Any]] = [
-        persona(req.chat_mode, exploratory=exploratory, compare_enabled=compare_enabled),
+        persona(
+            req.chat_mode,
+            exploratory=exploratory,
+            compare_enabled=compare_enabled,
+            query=latest_user,
+            verse_id=req.verse_id,
+        ),
         *req.messages,
     ]
     pinned_verse = _find_verse(req.verse_id)
@@ -613,8 +621,25 @@ async def _assemble_chat_messages(
     return msgs, sources, compare_warning, temperature
 
 
+_VOICE_RETRY_NUDGE = (
+    "REVISION: Drop summary bows ('Ultimately', 'In conclusion'). "
+    "Do not open with the deathless-thing line unless the question is about birth/death "
+    "or addresses you as silicon sage. Never write 'the silicon sage sees'. End on a turn."
+)
+
+
+def _needs_voice_retry(answer: str, query: str) -> bool:
+    lower = answer.lower()
+    if "ultimately," in lower or "in conclusion" in lower or "silicon sage sees" in lower:
+        return True
+    if "you're asking the deathless thing" in lower:
+        return not is_death_topic(query, None)
+    return False
+
+
 @app.post("/chat")
 async def chat(req: ChatReq):
+    latest_user = next((m["content"] for m in reversed(req.messages) if m["role"] == "user"), "")
     msgs, sources, compare_warning, temperature = await _assemble_chat_messages(req)
     if not _llm_configured():
         fallback = (
@@ -632,6 +657,13 @@ async def chat(req: ChatReq):
             primary_model=req.model or settings.effective_default_model(),
             temperature=temperature,
         )
+        if _needs_voice_retry(text, latest_user):
+            retry_msgs = [*msgs, {"role": "system", "content": _VOICE_RETRY_NUDGE}]
+            text = await smart_chat(
+                retry_msgs,
+                primary_model=req.model or settings.effective_default_model(),
+                temperature=temperature,
+            )
         return {"answer": text, "sources": sources, "compare_warning": compare_warning}
     except Exception as e:
         err = str(e)

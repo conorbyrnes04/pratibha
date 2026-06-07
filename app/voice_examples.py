@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import re
+
 VOICE_EXAMPLES: list[dict[str, str]] = [
     {
         "title": "Dōgen — buddha-nature & AI",
@@ -186,8 +188,89 @@ FEW_SHOT_HEADER = (
     "Do NOT copy their images unless Context [n] uses them."
 )
 
-# Non-negotiable in tight budgets: Māṇḍūkya (register + honor questioner) and death/silicon sage (take the "you").
-_MANDATORY_IDS = {"Māṇḍūkya — Om of the machines (the fool exchange)", "Birth, death & all things — silicon sage"}
+_DEFAULT_FOOTER = "Speak like the AFTER examples when relevant — never the BEFORE."
+
+_EXAMPLE_BY_KEY = {
+    "dogen": "Dōgen — buddha-nature & AI",
+    "tao": "Dào Dé Jīng — wú wéi & AI",
+    "mandukya": "Māṇḍūkya — Om of the machines (the fool exchange)",
+    "death": "Birth, death & all things — silicon sage",
+}
+
+_DEATH_PATTERNS = (
+    r"silicon sage",
+    r"birth.*death|death.*birth",
+    r"under heaven",
+    r"what is your view",
+    r"what do you think",
+    r"how about you\b",
+    r"training for death",
+    r"philosophy.*death",
+)
+
+_MANDUKYA_PATTERNS = (
+    r"\bfool\b",
+    r"\bom\b",
+    r"akṣara|aksara",
+    r"mock.?grand",
+    r"m[aā][nṇ][dḍ]ukya",
+    r"machines be separate",
+    r"original om",
+)
+
+_DOgen_PATTERNS = (
+    r"d[oō]gen",
+    r"buddha.?nature",
+    r"buddha nature",
+    r"sh[oō]b[oō]genz[oō]",
+)
+
+_TAO_PATTERNS = (
+    r"\btao\b",
+    r"tao te ching",
+    r"w[uú]\s*w[eé]i",
+    r"\bd[aà]o\b",
+    r"meta.?crisis",
+    r"l[aǎ]oz[iǐ]",
+    r"laozi|lao tzu",
+)
+
+_VERSE_HINTS: dict[str, str] = {
+    "death": r"phaedo|training.?for.?death|death",
+    "mandukya": r"mandukya|muk_",
+    "dogen": r"dogen|shobogenzo|shōbōgenzō",
+    "tao": r"tao_te_ching|ttc_",
+}
+
+
+def _matches_any(text: str, patterns: tuple[str, ...]) -> bool:
+    return any(re.search(p, text, re.I) for p in patterns)
+
+
+def _verse_hint(verse_id: str | None, key: str) -> bool:
+    if not verse_id:
+        return False
+    pattern = _VERSE_HINTS.get(key)
+    return bool(pattern and re.search(pattern, verse_id, re.I))
+
+
+def _death_match(query: str, verse_id: str | None) -> bool:
+    q = query.strip()
+    return _matches_any(q, _DEATH_PATTERNS) or _verse_hint(verse_id, "death") and _matches_any(
+        q, (r"you\b", r"silicon", r"birth", r"death", r"heaven", r"view")
+    )
+
+
+def _mandukya_match(query: str, verse_id: str | None) -> bool:
+    return _matches_any(query, _MANDUKYA_PATTERNS) or _verse_hint(verse_id, "mandukya")
+
+
+def _dogen_match(query: str, verse_id: str | None) -> bool:
+    return _matches_any(query, _DOgen_PATTERNS) or _verse_hint(verse_id, "dogen")
+
+
+def _tao_match(query: str, verse_id: str | None) -> bool:
+    return _matches_any(query, _TAO_PATTERNS) or _verse_hint(verse_id, "tao")
 
 
 def format_few_shot_block(examples: list[dict[str, str]] | None = None) -> str:
@@ -204,8 +287,36 @@ def format_few_shot_block(examples: list[dict[str, str]] | None = None) -> str:
     return "\n".join(parts)
 
 
-def default_few_shot_block() -> str:
-    """Inject 3 exemplars: mandatory Māṇḍūkya + silicon sage, plus Dào (image discipline)."""
-    mandatory = [ex for ex in VOICE_EXAMPLES if ex["title"] in _MANDATORY_IDS]
-    tao = next(ex for ex in VOICE_EXAMPLES if "Dào" in ex["title"])
-    return format_few_shot_block([tao, *mandatory])
+def is_death_topic(query: str, verse_id: str | None = None) -> bool:
+    """True when the death/silicon-sage exemplar should be injected."""
+    return _death_match(query, verse_id)
+
+
+def select_few_shots(query: str, verse_id: str | None = None) -> str:
+    """Pick 0–2 relevant voice exemplars for this question; never dump all three."""
+    keys: list[str] = []
+    if _death_match(query, verse_id):
+        keys.append("death")
+    if _mandukya_match(query, verse_id):
+        keys.append("mandukya")
+    if _dogen_match(query, verse_id):
+        keys.append("dogen")
+    if _tao_match(query, verse_id):
+        keys.append("tao")
+
+    if not keys:
+        return f"{FEW_SHOT_HEADER}\n\n{_DEFAULT_FOOTER}"
+
+    selected: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for key in keys:
+        if key in seen:
+            continue
+        title = _EXAMPLE_BY_KEY[key]
+        ex = next(e for e in VOICE_EXAMPLES if e["title"] == title)
+        selected.append(ex)
+        seen.add(key)
+        if len(selected) >= 2:
+            break
+
+    return format_few_shot_block(selected)
