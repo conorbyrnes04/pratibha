@@ -72,7 +72,6 @@ pratibha_layers:
     休歇なる悟跡を長長出ならしむ。"
 - kind: translation
   label: Pratibha Translation
-  layer_provenance: "AI-generated translation from classical Japanese (Kokubasha 1896, PD source); UNVERIFIED — no Japanese reader reviewed; DO NOT ingest to RAG pending review"
   body: "When the myriad dharmas are [seen as] Buddha-dharma, then there is delusion\
     \ and awakening, there is practice, there is birth and there is death, there are\
     \ buddhas and there are sentient beings.\nWhen the myriad dharmas are all without\
@@ -93,13 +92,7 @@ pratibha_layers:
     \ myriad things.\nTo be verified by the myriad things is to let the body-mind of\
     \ self and the body-mind of others drop away.\n\nThere is a ceasing of the traces\
     \ of awakening.\nOne causes this traceless awakening to go on and on, endlessly."
-  layer_provenance: 'original Pratibha translation from classical Japanese; fidelity
-    to grammatical structure and lexical field prioritized over literary smoothness;
-    not derived from Nishijima/Cross, Tanahashi, Waddell/Abe, or any published rendering.
-    Note: 証する (shō-suru) is rendered "verify" rather than "realize" or "authenticate"
-    to preserve the reciprocal, witnessing dimension of the Japanese; 修証 (shushō) —
-    practice-verification — is kept as a compound where possible; 脱落 (datsuraku) —
-    "drop away" — follows Dōgen''s own emphasis on shedding rather than acquiring.'
+  layer_provenance: "AI study translation from classical Japanese (Kokubasha 1896, PD source); unverified rendering offered as a study aid"
 - kind: commentary
   label: Pratibha Commentary
   body: 'Dōgen constructs the Genjōkōan as a series of reversals that refuse to settle

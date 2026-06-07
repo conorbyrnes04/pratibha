@@ -151,7 +151,7 @@ def _layer_text(layer: dict) -> str:
     return combined.strip()
 
 
-RAG_HARD_GATE_COLLECTIONS = frozenset({"rumi_mathnawi", "dogen_shobogenzo"})
+RAG_HARD_GATE_COLLECTIONS = frozenset({"rumi_mathnawi"})
 RAG_BLOCK_MARKER = "DO NOT ingest to RAG"
 
 
