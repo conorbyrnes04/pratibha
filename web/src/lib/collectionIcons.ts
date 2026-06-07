@@ -21,6 +21,10 @@ const ICON_RULES: Array<{ pattern: RegExp; icon: string }> = [
   { pattern: /confucius|analect/i, icon: "儒" },
   { pattern: /marcus|meditation/i, icon: "◎" },
   { pattern: /rumi|poet/i, icon: "۞" },
+  // Dōgen — Zen emptiness / śūnyatā register (distinct from Daoist 道)
+  { pattern: /dogen|dōgen|shobogenzo|shōbōgenzō/i, icon: "空" },
+  // Meister Eckhart — Christian mysticism (parallel register to Ibn Arabi ☪)
+  { pattern: /eckhart|meister_eckhart|abegescheidenheit|abgeschiedenheit/i, icon: "☩" },
 ];
 
 export function collectionIcon(name?: string): string {

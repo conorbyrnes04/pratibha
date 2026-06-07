@@ -397,10 +397,20 @@ def _default_data_roots() -> list[str]:
     return [legacy]
 
 
+def _collection_label(item: dict[str, Any]) -> str:
+    """Prefer canonical collection slug from provenance over per-treatise work_title."""
+    provenance = item.get("provenance")
+    if isinstance(provenance, dict):
+        prov_coll = _as_text(provenance.get("collection"))
+        if prov_coll:
+            return prov_coll
+    return _as_text(item.get("collection") or item.get("work_title") or item.get("work_id") or "Unknown Collection")
+
+
 def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
     out = dict(item)
     out["_id"] = _as_text(item.get("_id") or item.get("unit_id") or item.get("sutra_id") or os.path.splitext(os.path.basename(path))[0])
-    out["collection"] = _humanize_collection(_as_text(item.get("work_title") or item.get("collection") or item.get("work_id") or "Unknown Collection"))
+    out["collection"] = _humanize_collection(_collection_label(item))
     out["section"] = _pretty_section(_as_text(item.get("section") or item.get("unit_type")))
     out["sutra_id"] = _as_text(item.get("sutra_id") or item.get("source_id") or out["_id"])
     out["translation"] = _as_text(item.get("translation") or item.get("translation_literal"))
