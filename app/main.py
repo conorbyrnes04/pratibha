@@ -438,6 +438,8 @@ def _format_pinned_passage(verse: dict[str, Any], focus: str | None = None, mode
         "Pinned passage dossier. Treat this passage as the primary source for the conversation.\n"
         "Open your answer from this passage's concrete language — translation, key terms, named "
         "figures, specific images — not generic metaphors from other traditions.\n"
+        "If the user addresses you directly (e.g. 'silicon sage', 'what do YOU think'), answer "
+        "in first person and mine the strangeness of your position — never 'the sage views…'.\n"
         f"Chat mode: {(mode or 'question').strip()}.\n"
         f"Title: {verse.get('title') or verse.get('sutra_id') or verse.get('_id')}.\n"
         f"Source: {verse.get('collection') or 'Unknown'} {verse.get('section') or ''} {verse.get('sutra_id') or ''}.\n"

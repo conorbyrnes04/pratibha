@@ -75,7 +75,7 @@ async def chat_completion(messages: Sequence[Message], model: str, temperature: 
         "model": model_name,
         "messages": list(messages),
         "temperature": temperature,
-        "max_tokens": 4096,
+        "max_tokens": 1200,
         "stream": stream,
     }
     resp = await _post_chat(provider, payload)
