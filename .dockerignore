@@ -1,0 +1,35 @@
+# Keep the backend build context small and free of secrets.
+.git
+.gitignore
+.venv
+venv
+env
+**/__pycache__
+**/*.pyc
+
+# Secrets / local env
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Frontend & mobile (deployed separately on Vercel / not part of the API image)
+web
+mobile
+node_modules
+
+# Authoring inputs not needed at runtime (only data/canonical is baked in)
+data/raw_texts
+data/yaml
+data/pratibha_md
+data/canonical.zip
+archive
+references
+docs
+
+# Misc
+*.md
+!DEPLOY.md
+.DS_Store
+.cursor
+Personal NOISE

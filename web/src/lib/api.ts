@@ -1,6 +1,12 @@
 import type { ChatOptions, EditorialMaturity, Source, SourcesPayload, VerseItem } from "@/lib/types";
 
-export const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://127.0.0.1:8000";
+// Set NEXT_PUBLIC_API_BASE to the deployed backend URL (baked in at build time).
+// The localhost fallback only applies in development so a misconfigured
+// production build fails loudly (relative URLs) instead of silently calling
+// a machine-local API that does not exist.
+export const API_BASE =
+  process.env.NEXT_PUBLIC_API_BASE ||
+  (process.env.NODE_ENV === "production" ? "" : "http://127.0.0.1:8000");
 
 function withMaturity(path: string, minMaturity?: EditorialMaturity | "all"): string {
   if (!minMaturity || minMaturity === "all") return `${API_BASE}${path}`;

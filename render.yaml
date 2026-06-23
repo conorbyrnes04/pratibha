@@ -1,0 +1,50 @@
+# Render Blueprint — provisions the Pratibha FastAPI backend + Postgres (pgvector).
+# Deploy from the Render dashboard: New > Blueprint > pick this repo.
+# Docs: https://render.com/docs/blueprint-spec
+#
+# Plans default to `free` for a zero-cost trial. IMPORTANT:
+#   - Free Postgres EXPIRES 30 days after creation and has no backups.
+#   - Free web services spin down after ~15 min idle (cold start ~1 min).
+# For a real public launch, change the two `plan:` lines to paid tiers
+# (web: `starter` ~$7/mo, database: `basic-256mb` ~$6/mo). See DEPLOY.md.
+
+services:
+  - type: web
+    name: pratibha-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      # RAG/Study chat needs Postgres + pgvector.
+      - key: USE_RAG
+        value: "true"
+      # Internal connection string (no SSL needed inside Render's network).
+      - key: DATABASE_URL
+        fromDatabase:
+          name: pratibha-db
+          property: connectionString
+      # Comma-separated allowed origins. Set to your Vercel URL(s) after the
+      # frontend deploys, e.g. https://pratibha.vercel.app
+      - key: CORS_ALLOW_ORIGINS
+        sync: false
+      # LLM provider — set at least one. First match wins: OpenRouter > Groq > OpenAI.
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      # OpenAI key is ALSO required for RAG embeddings at query/ingest time.
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: DEFAULT_MODEL
+        value: openrouter/meta-llama/llama-3.3-70b-instruct
+      - key: EMBEDDING_MODEL
+        value: text-embedding-3-small
+
+databases:
+  - name: pratibha-db
+    plan: free
+    region: oregon
+    postgresMajorVersion: "16"

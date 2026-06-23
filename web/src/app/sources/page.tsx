@@ -147,7 +147,7 @@ export default function SourcesPage() {
           return;
         }
         setItems(data.items);
-        setSummary(data.summary);
+        setSummary({ ...data.summary, sell_ready_tiers: data.summary.sell_ready_tiers ?? {} });
       })
       .catch(() => setError("Could not load sources."));
   }, []);

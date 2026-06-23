@@ -148,13 +148,7 @@ async def corpus_status(request: Request):
     error: str | None = None
     conn: asyncpg.Connection | None = None
     try:
-        conn = await asyncpg.connect(
-            user=settings.PG_USER,
-            password=settings.PG_PASSWORD,
-            database=settings.PG_DB,
-            host=settings.PG_HOST,
-            port=settings.PG_PORT,
-        )
+        conn = await asyncpg.connect(**settings.asyncpg_kwargs())
         rows = await conn.fetch("SELECT metadata FROM chunks")
         for row in rows:
             meta = row.get("metadata") or {}

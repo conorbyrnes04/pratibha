@@ -618,13 +618,7 @@ async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, floa
     fetch_k = max(k, settings.RAG_FETCH_K)
     conn: asyncpg.Connection | None = None
     try:
-        conn = await asyncpg.connect(
-            user=settings.PG_USER,
-            password=settings.PG_PASSWORD,
-            database=settings.PG_DB,
-            host=settings.PG_HOST,
-            port=settings.PG_PORT,
-        )
+        conn = await asyncpg.connect(**settings.asyncpg_kwargs())
         vector = []
         if settings.OPENAI_API_KEY or settings.OPENROUTER_API_KEY:
             try:
@@ -674,13 +668,7 @@ async def retrieve_context_for_verse(verse_id: str, query: str, k: int = 4) -> L
     conn: asyncpg.Connection | None = None
     pinned: list[tuple[str, dict, float]] = []
     try:
-        conn = await asyncpg.connect(
-            user=settings.PG_USER,
-            password=settings.PG_PASSWORD,
-            database=settings.PG_DB,
-            host=settings.PG_HOST,
-            port=settings.PG_PORT,
-        )
+        conn = await asyncpg.connect(**settings.asyncpg_kwargs())
         rows = await conn.fetch(
             """
             SELECT body, metadata
@@ -746,13 +734,7 @@ async def retrieve_context_compare(
 
     conn: asyncpg.Connection | None = None
     try:
-        conn = await asyncpg.connect(
-            user=settings.PG_USER,
-            password=settings.PG_PASSWORD,
-            database=settings.PG_DB,
-            host=settings.PG_HOST,
-            port=settings.PG_PORT,
-        )
+        conn = await asyncpg.connect(**settings.asyncpg_kwargs())
         vector: list[tuple[str, dict, float]] = []
         if settings.OPENAI_API_KEY or settings.OPENROUTER_API_KEY:
             try:

@@ -22,6 +22,7 @@ from openai import AsyncOpenAI
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from app.data_loader import normalize_unit  # noqa: E402  (path set up above)
 from app.collection_aliases import canonical_slug  # noqa: E402
+from app.config import settings  # noqa: E402
 
 # Number of chunks embedded per API request (the embeddings endpoint accepts a
 # list input; batching is dramatically faster than one call per chunk).
@@ -299,13 +300,9 @@ async def main(dir_path: str):
         return
 
     client, embedding_model = _embedding_client_and_model()
-    conn = await asyncpg.connect(
-        user=os.getenv("PG_USER", "postgres"),
-        password=os.getenv("PG_PASSWORD", "postgres"),
-        database=os.getenv("PG_DB", "pratibha"),
-        host=os.getenv("PG_HOST", "localhost"),
-        port=int(os.getenv("PG_PORT", "5432")),
-    )
+    # Shares the API's connection settings so a single DATABASE_URL (and TLS)
+    # works for both the running app and this one-time ingest.
+    conn = await asyncpg.connect(**settings.asyncpg_kwargs())
 
     total = 0
     for fp in files:
