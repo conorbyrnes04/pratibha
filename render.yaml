@@ -12,11 +12,14 @@ services:
   - type: web
     name: pratibha-api
     runtime: docker
+    # Deploy files live on this branch until merged to main.
+    branch: cursor/study-notes-layer-labels-chuang-cleanup
     dockerfilePath: ./Dockerfile
+    dockerContext: .
     plan: free
     region: oregon
     healthCheckPath: /health
-    autoDeploy: true
+    autoDeployTrigger: commit
     envVars:
       # RAG/Study chat needs Postgres + pgvector.
       - key: USE_RAG

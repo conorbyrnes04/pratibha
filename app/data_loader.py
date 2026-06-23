@@ -97,6 +97,24 @@ def _humanize_collection(v: str) -> str:
     return s.title() if s == s.lower() else s
 
 
+_UNIT_TYPE_SECTIONS = frozenset({"chapter_section", "teaching_passage", "sutra", "verse", "chapter_summary"})
+
+
+def _resolve_section(item: dict[str, Any]) -> str:
+    """Prefer explicit section, then provenance fascicle/chapter label, then unit_type."""
+    direct = _as_text(item.get("section"))
+    if direct:
+        token = direct.lower().replace(" ", "_")
+        return _pretty_section(direct) if token in _UNIT_TYPE_SECTIONS else " ".join(direct.split()).strip()
+    provenance = item.get("provenance")
+    if isinstance(provenance, dict):
+        prov = _as_text(provenance.get("section"))
+        if prov:
+            return " ".join(prov.split()).strip()
+    unit_type = _as_text(item.get("unit_type"))
+    return _pretty_section(unit_type) if unit_type else ""
+
+
 def _pretty_section(v: str) -> str:
     s = " ".join(v.split()).strip().lower()
     if not s:
@@ -198,6 +216,37 @@ def filter_by_maturity(items: list[dict[str, Any]], minimum: Any = None) -> list
     if not normalize_maturity(minimum):
         return items
     return [v for v in items if maturity_meets(v.get("editorial_maturity"), minimum)]
+
+
+_SUMMARY_SOURCE_RE = re.compile(r"^(?:ASG|PHR)_SUM_", re.I)
+_SUMMARY_UNIT_RE = re.compile(r"(?:^|\.)(?:asg_sum|phr_sum)(?:_|\.|$)", re.I)
+
+
+def is_chapter_summary_meta_unit(item: dict[str, Any]) -> bool:
+    """True for chapter-range overview meta-units (not reader-facing verses)."""
+    section = _as_text(item.get("section")).lower().replace(" ", "_")
+    if section == "chapter_summary":
+        return True
+    provenance = item.get("provenance")
+    if isinstance(provenance, dict):
+        prov_section = _as_text(provenance.get("section")).lower().replace(" ", "_")
+        if prov_section == "chapter_summary":
+            return True
+    for key in ("sutra_id", "source_id", "_id", "unit_id"):
+        val = _as_text(item.get(key))
+        if not val:
+            continue
+        if _SUMMARY_SOURCE_RE.match(val) or _SUMMARY_UNIT_RE.search(val):
+            return True
+    return False
+
+
+def is_reader_facing_unit(item: dict[str, Any]) -> bool:
+    return not is_chapter_summary_meta_unit(item)
+
+
+def filter_reader_facing(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [v for v in items if is_reader_facing_unit(v)]
 
 
 # Headings accept optional markdown prefixes ("###") and singular/plural and
@@ -411,7 +460,7 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
     out = dict(item)
     out["_id"] = _as_text(item.get("_id") or item.get("unit_id") or item.get("sutra_id") or os.path.splitext(os.path.basename(path))[0])
     out["collection"] = _humanize_collection(_collection_label(item))
-    out["section"] = _pretty_section(_as_text(item.get("section") or item.get("unit_type")))
+    out["section"] = _resolve_section(item)
     out["sutra_id"] = _as_text(item.get("sutra_id") or item.get("source_id") or out["_id"])
     out["translation"] = _as_text(item.get("translation") or item.get("translation_literal"))
     raw_commentary = _as_text(item.get("commentary"))
@@ -498,12 +547,38 @@ def load_all() -> list[dict[str, Any]]:
     return out
 
 
-ALL_VERSES = load_all()
-VERSE_BY_ID: dict[str, dict[str, Any]] = {v["_id"]: v for v in ALL_VERSES}
+_cached_verses: list[dict[str, Any]] | None = None
+_cached_verse_by_id: dict[str, dict[str, Any]] | None = None
+
+
+def corpus_ready() -> bool:
+    """True once the on-disk corpus has been loaded into memory."""
+    return _cached_verses is not None
+
+
+def get_all_verses() -> list[dict[str, Any]]:
+    """Load and cache the corpus on first access (keeps deploy health checks fast)."""
+    global _cached_verses, _cached_verse_by_id
+    if _cached_verses is None:
+        _cached_verses = load_all()
+        _cached_verse_by_id = {v["_id"]: v for v in _cached_verses}
+    return _cached_verses
+
+
+def __getattr__(name: str) -> Any:
+    if name == "ALL_VERSES":
+        return get_all_verses()
+    if name == "VERSE_BY_ID":
+        get_all_verses()
+        assert _cached_verse_by_id is not None
+        return _cached_verse_by_id
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 
 def get_verse_by_id(verse_id: str) -> dict[str, Any] | None:
-    return VERSE_BY_ID.get(verse_id)
+    get_all_verses()
+    assert _cached_verse_by_id is not None
+    return _cached_verse_by_id.get(verse_id)
 
 
 def pick_daily(user_id: str = "guest", tz: str = "Europe/Paris", min_maturity: str | None = None):
@@ -513,7 +588,7 @@ def pick_daily(user_id: str = "guest", tz: str = "Europe/Paris", min_maturity: s
     a stable index into the maturity-filtered corpus. The day boundary follows
     ``tz`` (default Europe/Paris), so the passage changes at local midnight there.
     """
-    items = filter_by_maturity(ALL_VERSES, min_maturity)
+    items = filter_reader_facing(filter_by_maturity(get_all_verses(), min_maturity))
     if not items:
         # Do not silently fall back to the full (unfiltered) corpus: that would
         # surface unreviewed drafts on a curated surface. Signal "no match".

@@ -22,10 +22,13 @@ COPY data/canonical ./data/canonical
 
 # Ingest script + DB schema (handy for one-off jobs / reference inside the image).
 COPY scripts/ingest_pgvector.py ./scripts/ingest_pgvector.py
+COPY scripts/start_api.sh ./scripts/start_api.sh
 COPY db ./db
 
 # Railway/Render inject $PORT; default to 8000 for local `docker run`.
 ENV PORT=8000
 EXPOSE 8000
 
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+RUN chmod +x ./scripts/start_api.sh
+
+CMD ["./scripts/start_api.sh"]

@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, field_validator
 from typing import Any, List
+import asyncio
 import json
 import logging
 import os
@@ -21,11 +22,12 @@ from .config import settings
 from .llm import smart_chat, smart_chat_stream
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, detected_collections
 from .data_loader import (
-    ALL_VERSES,
     LOAD_STATS,
     _humanize_collection,
+    corpus_ready,
     filter_by_maturity,
     filter_reader_facing,
+    get_all_verses,
     get_verse_by_id,
     normalize_maturity,
     pick_daily,
@@ -59,16 +61,27 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-_missing_aliases = validate_registered_collections(
-    str(v.get("collection", "")).strip() for v in ALL_VERSES if str(v.get("collection", "")).strip()
-)
-if _missing_aliases:
-    # Degrade gracefully: a missing alias should not take the whole API down.
-    # Affected collections simply fall back to their humanized name.
-    logger.warning(
-        "Missing collection alias entries for loaded collections: %s",
-        ", ".join(sorted(_missing_aliases)),
+def _warn_missing_aliases(verses: list[dict[str, Any]]) -> None:
+    missing = validate_registered_collections(
+        str(v.get("collection", "")).strip() for v in verses if str(v.get("collection", "")).strip()
     )
+    if missing:
+        # Degrade gracefully: a missing alias should not take the whole API down.
+        logger.warning(
+            "Missing collection alias entries for loaded collections: %s",
+            ", ".join(sorted(missing)),
+        )
+
+
+@app.on_event("startup")
+async def _warm_corpus() -> None:
+    """Bind the port quickly, then load ~900 YAML units in the background."""
+
+    async def _load() -> None:
+        verses = await asyncio.to_thread(get_all_verses)
+        _warn_missing_aliases(verses)
+
+    asyncio.create_task(_load())
 
 
 def _valid_maturity(value: str | None) -> str | None:
@@ -81,12 +94,18 @@ def _valid_maturity(value: str | None) -> str | None:
 # ---- Data endpoints ----
 @app.get("/health")
 async def health():
-    return {"ok": True, "items": len(ALL_VERSES), "load_stats": LOAD_STATS}
+    ready = corpus_ready()
+    return {
+        "ok": True,
+        "ready": ready,
+        "items": len(get_all_verses()) if ready else 0,
+        "load_stats": LOAD_STATS if ready else {},
+    }
 
 
 @app.get("/verses")
 async def list_verses(min_maturity: str | None = None):
-    return {"items": filter_by_maturity(ALL_VERSES, _valid_maturity(min_maturity))}
+    return {"items": filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity))}
 
 @app.get("/verse/{sid}")
 async def get_verse(sid: str):
@@ -103,7 +122,7 @@ async def daily(min_maturity: str | None = "publishable"):
 
 @app.get("/random")
 async def random_verse(collection: str | None = None, min_maturity: str | None = "strong_draft"):
-    items = filter_reader_facing(filter_by_maturity(ALL_VERSES, _valid_maturity(min_maturity)))
+    items = filter_reader_facing(filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity)))
     if collection:
         needle = collection.strip().lower()
         items = [v for v in items if str(v.get("collection", "")).strip().lower() == needle]
@@ -117,7 +136,7 @@ async def collections():
     names = sorted(
         {
             str(v.get("collection", "")).strip()
-            for v in ALL_VERSES
+            for v in get_all_verses()
             if str(v.get("collection", "")).strip()
         }
     )
@@ -128,7 +147,7 @@ async def collections():
 async def sources():
     from .sources_registry import build_sources_payload
 
-    return build_sources_payload(ALL_VERSES)
+    return build_sources_payload(get_all_verses())
 
 
 @app.get("/admin/corpus-status")
@@ -138,7 +157,7 @@ async def corpus_status(request: Request):
         raise HTTPException(403, "Forbidden")
 
     loaded_counts: dict[str, int] = {}
-    for v in ALL_VERSES:
+    for v in get_all_verses():
         slug = meta_collection_slug(v)
         if slug:
             loaded_counts[slug] = loaded_counts.get(slug, 0) + 1
@@ -382,7 +401,7 @@ def _find_verse(verse_id: str | None) -> dict[str, Any] | None:
     if hit is not None:
         return hit
     # Fall back to sutra_id lookup for legacy/citation-style ids.
-    for v in ALL_VERSES:
+    for v in get_all_verses():
         if str(v.get("sutra_id", "")).strip() == needle:
             return v
     return None
