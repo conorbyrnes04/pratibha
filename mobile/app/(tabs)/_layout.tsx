@@ -1,17 +1,23 @@
 import { colors } from "@/constants/theme";
 import { SymbolView } from "expo-symbols";
 import { Tabs } from "expo-router";
+import { Keyboard } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function TabLayout() {
+  const insets = useSafeAreaInsets();
+  const tabBarHeight = 56 + insets.bottom;
+
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
+        tabBarHideOnKeyboard: true,
         tabBarStyle: {
           backgroundColor: "#0b0b14",
           borderTopColor: colors.border,
-          height: 84,
-          paddingBottom: 18,
+          height: tabBarHeight,
+          paddingBottom: Math.max(insets.bottom, 8),
           paddingTop: 8,
         },
         tabBarActiveTintColor: colors.accentBright,
@@ -22,22 +28,18 @@ export default function TabLayout() {
           textTransform: "uppercase",
         },
       }}
+      screenListeners={{
+        tabPress: () => {
+          Keyboard.dismiss();
+        },
+      }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: "Paths",
+          title: "Home",
           tabBarIcon: ({ color }) => (
-            <SymbolView name={{ ios: "point.3.filled.connected.trianglepath.dotted", android: "route", web: "route" }} tintColor={color} size={24} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="read"
-        options={{
-          title: "Read",
-          tabBarIcon: ({ color }) => (
-            <SymbolView name={{ ios: "book.closed.fill", android: "menu_book", web: "menu_book" }} tintColor={color} size={24} />
+            <SymbolView name={{ ios: "house.fill", android: "home", web: "home" }} tintColor={color} size={24} />
           ),
         }}
       />
@@ -56,6 +58,28 @@ export default function TabLayout() {
           title: "Study",
           tabBarIcon: ({ color }) => (
             <SymbolView name={{ ios: "bubble.left.and.bubble.right.fill", android: "forum", web: "forum" }} tintColor={color} size={24} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="read"
+        options={{
+          title: "Read",
+          tabBarIcon: ({ color }) => (
+            <SymbolView name={{ ios: "book.closed.fill", android: "menu_book", web: "menu_book" }} tintColor={color} size={24} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="paths"
+        options={{
+          title: "Paths",
+          tabBarIcon: ({ color }) => (
+            <SymbolView
+              name={{ ios: "point.3.filled.connected.trianglepath.dotted", android: "route", web: "route" }}
+              tintColor={color}
+              size={24}
+            />
           ),
         }}
       />

@@ -7,6 +7,8 @@ import { getVerse, getVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { stripMarkdown } from "@/lib/textPreview";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { collectionArtPool, collectionImageSrc } from "@/lib/collectionImages";
+import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
 import { displayPassageTitle, passageSortKey } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
 import { JournalPanel } from "@/components/JournalPanel";
@@ -154,32 +156,44 @@ export default function VerseDetailPage() {
           ← Back to library
         </Link>
       )}
-      <section className="mt-4 grid gap-6 lg:grid-cols-[1fr_15rem] lg:items-end">
-        <div>
-          <p className="eyebrow">{displayCollectionName(item.collection) || "Pratibha"} {item.section ? ` / ${item.section}` : ""}</p>
-          <h1 className="mt-3 max-w-4xl text-5xl font-semibold leading-[0.92] tracking-[-0.04em] text-stone-100 sm:text-6xl">
-            {displayPassageTitle(item)}
-          </h1>
-        </div>
-        <div className="citation-card grid gap-2 p-3 font-sans text-sm text-stone-300">
-          <label className="flex items-center gap-3">
-            <input type="checkbox" className="accent-amber-300" checked={learningMode} onChange={(e) => setLearningMode(e.target.checked)} />
-            Learning guide
-          </label>
-          <label className="flex items-center gap-3">
-            <input type="checkbox" className="accent-amber-300" checked={showOriginal} onChange={(e) => setShowOriginal(e.target.checked)} />
-            Original language
-          </label>
-          <label className="flex items-center gap-3">
-            <input type="checkbox" className="accent-amber-300" checked={compact} onChange={(e) => setCompact(e.target.checked)} />
-            Compact commentary
-          </label>
-          {(appendixLayers.length > 0 || anchorChapter) ? (
+      <section className="passage-hero manuscript-card mt-4 p-6 sm:p-8">
+        <ArtBackdrop srcs={collectionArtPool(item.collection)} variant="hero" priority />
+        <div className="relative z-10 grid gap-6 lg:grid-cols-[1fr_15rem] lg:items-end">
+          <div className="flex items-start gap-4">
+            <ArtThumb
+              src={collectionImageSrc(item.collection, item._id)}
+              alt=""
+              framed
+              className="mt-1 hidden h-[4.5rem] w-[4.5rem] shrink-0 rounded-2xl sm:block"
+              imgClassName="[object-position:center_28%]"
+            />
+            <div>
+              <p className="eyebrow">{displayCollectionName(item.collection) || "Pratibha"} {item.section ? ` / ${item.section}` : ""}</p>
+              <h1 className="mt-3 max-w-4xl text-5xl font-semibold leading-[0.92] tracking-[-0.04em] text-stone-100 sm:text-6xl">
+                {displayPassageTitle(item)}
+              </h1>
+            </div>
+          </div>
+          <div className="citation-card grid gap-2 border-amber-200/20 bg-[#0b0b14]/75 p-3 font-sans text-sm text-stone-300 backdrop-blur-sm">
             <label className="flex items-center gap-3">
-              <input type="checkbox" className="accent-amber-300" checked={showSource} onChange={(e) => setShowSource(e.target.checked)} />
-              Public-domain source (Giles / Patrick)
+              <input type="checkbox" className="accent-amber-300" checked={learningMode} onChange={(e) => setLearningMode(e.target.checked)} />
+              Learning guide
             </label>
-          ) : null}
+            <label className="flex items-center gap-3">
+              <input type="checkbox" className="accent-amber-300" checked={showOriginal} onChange={(e) => setShowOriginal(e.target.checked)} />
+              Original language
+            </label>
+            <label className="flex items-center gap-3">
+              <input type="checkbox" className="accent-amber-300" checked={compact} onChange={(e) => setCompact(e.target.checked)} />
+              Compact commentary
+            </label>
+            {(appendixLayers.length > 0 || anchorChapter) ? (
+              <label className="flex items-center gap-3">
+                <input type="checkbox" className="accent-amber-300" checked={showSource} onChange={(e) => setShowSource(e.target.checked)} />
+                Public-domain source (Giles / Patrick)
+              </label>
+            ) : null}
+          </div>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
-# LLM wrapper: OpenRouter-first chat with optional legacy Groq/OpenAI keys.
+# LLM wrapper: OpenRouter-only chat. (Groq/OpenAI are no longer chat providers;
+# OpenAI remains only for RAG embeddings elsewhere.)
 from typing import Literal, Sequence
 import asyncio, httpx
 from .config import settings
@@ -6,45 +7,28 @@ from .config import settings
 Role = Literal["system","user","assistant"]
 Message = dict  # {role, content}
 
-GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 http = httpx.AsyncClient(timeout=settings.REQUEST_TIMEOUT_S)
 
 def _provider_and_model(name: str):
-    if name.startswith("groq/"):
-        if not settings.GROQ_API_KEY:
-            raise ValueError("GROQ_API_KEY is missing")
-        return "groq", name.split("/",1)[1]
-    if name.startswith("openrouter/"):
-        return "openrouter", name.split("/", 1)[1]
-    return "openai", name
+    # Everything routes through OpenRouter. Strip a leading "openrouter/" if present;
+    # tolerate legacy "groq/"/bare ids by treating the remainder as the OpenRouter id.
+    model = name.split("/", 1)[1] if name.startswith(("openrouter/", "groq/")) else name
+    return "openrouter", model
 
 def _headers(provider: str):
-    if provider == "groq":
-        if not settings.GROQ_API_KEY:
-            raise ValueError("GROQ_API_KEY is missing")
-        return {"Authorization": f"Bearer {settings.GROQ_API_KEY}", "Content-Type":"application/json"}
-    if provider == "openrouter":
-        if not settings.OPENROUTER_API_KEY:
-            raise ValueError("OPENROUTER_API_KEY is missing")
-        headers = {"Authorization": f"Bearer {settings.OPENROUTER_API_KEY}", "Content-Type":"application/json"}
-        if settings.OPENROUTER_SITE_URL:
-            headers["HTTP-Referer"] = settings.OPENROUTER_SITE_URL
-        if settings.OPENROUTER_APP_NAME:
-            headers["X-Title"] = settings.OPENROUTER_APP_NAME
-        return headers
-    if not settings.OPENAI_API_KEY:
-        raise ValueError("OPENAI_API_KEY is missing")
-    return {"Authorization": f"Bearer {settings.OPENAI_API_KEY}", "Content-Type":"application/json"}
+    if not settings.OPENROUTER_API_KEY:
+        raise ValueError("OPENROUTER_API_KEY is missing")
+    headers = {"Authorization": f"Bearer {settings.OPENROUTER_API_KEY}", "Content-Type": "application/json"}
+    if settings.OPENROUTER_SITE_URL:
+        headers["HTTP-Referer"] = settings.OPENROUTER_SITE_URL
+    if settings.OPENROUTER_APP_NAME:
+        headers["X-Title"] = settings.OPENROUTER_APP_NAME
+    return headers
 
 def _url(provider: str):
-    if provider == "groq":
-        return GROQ_URL
-    if provider == "openrouter":
-        return OPENROUTER_URL
-    return OPENAI_URL
+    return OPENROUTER_URL
 
 def _response_error_detail(resp: httpx.Response) -> str:
     try:
@@ -69,13 +53,13 @@ async def _post_chat(provider: str, payload: dict) -> httpx.Response:
         return r
     return r
 
-async def chat_completion(messages: Sequence[Message], model: str, temperature: float=0.2, stream: bool=False):
+async def chat_completion(messages: Sequence[Message], model: str, temperature: float=0.2, stream: bool=False, max_tokens: int | None = None):
     provider, model_name = _provider_and_model(model)
     payload = {
         "model": model_name,
         "messages": list(messages),
         "temperature": temperature,
-        "max_tokens": 700,
+        "max_tokens": max_tokens or settings.CHAT_MAX_TOKENS,
         "stream": stream,
     }
     resp = await _post_chat(provider, payload)
@@ -85,40 +69,28 @@ async def chat_completion(messages: Sequence[Message], model: str, temperature: 
     return resp
 
 
-def _openrouter_model_candidates(primary_model: str | None = None) -> list[str]:
-    primary = primary_model or settings.effective_default_model()
-    candidates = [primary, settings.OPENROUTER_MODEL]
-    return [m for m in dict.fromkeys(candidates) if m.startswith("openrouter/") and not m.endswith(":free")]
-
-
 def _model_candidates(primary_model: str | None = None, fallback_model: str | None = None) -> list[str]:
-    if settings.OPENROUTER_API_KEY:
-        return _openrouter_model_candidates(primary_model)
-
-    primary = primary_model or settings.DEFAULT_MODEL
-    openai_fallback = fallback_model or settings.OPENAI_MODEL
-    candidates: list[str] = [primary]
-
-    if settings.GROQ_API_KEY:
-        groq_model = (
-            settings.DEFAULT_MODEL
-            if settings.DEFAULT_MODEL.startswith("groq/")
-            else "groq/llama-3.1-70b-versatile"
-        )
-        candidates.append(groq_model)
-
-    if settings.OPENAI_API_KEY:
-        candidates.append(openai_fallback)
-
-    return list(dict.fromkeys(candidates))
+    """Ordered OpenRouter model ids to try. Always non-empty when a request or
+    default model is set, so chat never silently returns an empty answer."""
+    primary = (primary_model or "").strip() or settings.effective_default_model()
+    candidates = [primary, settings.effective_default_model(), settings.OPENROUTER_MODEL]
+    # Ensure every id is OpenRouter-routed; bare ids get an "openrouter/" prefix.
+    normalized: list[str] = []
+    for m in candidates:
+        m = (m or "").strip()
+        if not m:
+            continue
+        normalized.append(m if m.startswith("openrouter/") else f"openrouter/{m}")
+    deduped = list(dict.fromkeys(normalized))
+    return deduped or [settings.OPENROUTER_MODEL]
 
 
-async def smart_chat(messages: Sequence[Message], primary_model: str|None=None, fallback_model: str|None=None, temperature: float=0.2) -> str:
+async def smart_chat(messages: Sequence[Message], primary_model: str|None=None, fallback_model: str|None=None, temperature: float=0.2, max_tokens: int | None = None) -> str:
     last_error: Exception | None = None
     text = ""
     for model in _model_candidates(primary_model, fallback_model):
         try:
-            r = await chat_completion(messages, model, temperature, stream=False)
+            r = await chat_completion(messages, model, temperature, stream=False, max_tokens=max_tokens)
             data = r.json()
             text = data["choices"][0]["message"]["content"].strip()
             if text:

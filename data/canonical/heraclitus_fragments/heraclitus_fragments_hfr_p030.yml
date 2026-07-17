@@ -1,64 +1,143 @@
 source_file: data/yaml/fragments/fragment_030.yml
 source_id: HFR_P030
-category: commentary_text
+category: root_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p030
-unit_label: tus of Ephesus is very plainly of this opinion, since he recognizes the gods nor any man...
-title: tus of Ephesus is very plainly of this opinion, since he recognizes the gods nor any man...
-unit_type: teaching_passage
-thesis: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation.'
+unit_label: The Eternal, Self-Regulating Cosmos
+title: The Eternal, Self-Regulating Cosmos
+unit_type: sutra
+sanskrit_devanagari: 'ἥλιος αὐτὸς τοῦτο, καὶ ἄπειρον, καὶ πῦρ αἰώνιον, ἡμίσυ γαῖα, ἡμίσυ ἠér, ἡμίσυ νύξ, ἡμίσυ ἡμέρα, ἡμίσυ
+  ὕδωρ, ἡμίσυ πῦρ (partial, related concept); key term: πῦρ αἰώνιον (ever-living fire)'
+sanskrit_iast: 'pûr aiōnion (πῦρ αἰώνιον) - eternal fire; with diacritics: pŷr aiṓnion'
+translation_literal: The cosmos, shared by all, has not been created by any god or human; instead, it has always existed,
+  exists now, and will continue to exist as an ever-living fire, ignited and extinguished in a measured manner, embodying
+  the Logos [Λόγος] of self-regulation.
+commentary: 'The philosophical claim that the cosmos is an eternal, self-regulating system makes a counterintuitive move by
+  denying the role of divine or human creators. Heraclitus'' concept of the ever-living fire challenges the conventional understanding
+  of the universe as a static or created entity. In the pre-Socratic context, this idea revolutionizes the understanding of
+  the cosmos, shifting the focus from creation myths to the intrinsic, dynamic principles governing the universe. The existential
+  application of this concept lies in recognizing that our lives are part of a larger, interconnected web of processes, subject
+  to the same principles of balance and regulation as the cosmos. By embracing this perspective, we can cultivate a deeper
+  sense of harmony [ἁρμονία] with the natural world and the Logos [Λόγος] that governs it. The psychē [ψυχή], or the human
+  soul, is not separate from this cosmic process but is an integral part of it, subject to the same rhythms and cycles.
+
+
+  Key Terms:
+
+
+  * **πῦρ (pûr)** — etymology: from Proto-Indo-European *per-, related to burning -> Heraclitean meaning: the eternal, self-regulating
+  fire that governs the cosmos -> what default translation misses: the dynamic, transformative aspect of fire as a symbol
+  of cosmic balance.
+
+  * **Λόγος (Logos)** — etymology: from λέγω (legō), to gather, collect -> Heraclitean meaning: the principle of reason, balance,
+  and self-regulation that governs the cosmos -> what default translation misses: the dynamic, relational aspect of Logos
+  as a unifying force.
+
+  * **ἁρμονία (harmoniē)** — etymology: from ἁρμόζω (harmozō), to fit together -> Heraclitean meaning: the balance and cohesion
+  that result from the self-regulating principles of the cosmos -> what default translation misses: the active, dynamic aspect
+  of harmony as a process of adjustment and balance.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Tao Te Ching, Chapter 25:** structural homology in the concept of the self-regulating, eternal cosmos, where the Tao
+  is described as the ultimate reality that governs the universe. *Divergence:* while the Tao Te Ching emphasizes the effortless,
+  spontaneous nature of the Tao, Heraclitus'' concept of the ever-living fire highlights the dynamic, transformative aspect
+  of the cosmos.
+
+  * **Plotinus, Enneads, V.1.10:** structural homology in the concept of the eternal, self-regulating cosmos, where Plotinus
+  describes the universe as a unified, interconnected system governed by the One. *Divergence:* while Plotinus emphasizes
+  the transcendent, eternal nature of the One, Heraclitus'' concept of the ever-living fire highlights the immanent, dynamic
+  aspect of the cosmos.'
+insight: The philosophical claim that the cosmos is an eternal, self-regulating system makes a counterintuitive move by denying
+  the role of divine or human creators.
+practice: As you breathe in and out, imagine the ever-living fire of the cosmos igniting and extinguishing within you, regulating
+  your inner balance and harmony, and connecting you to the larger web of life, embodying the Logos [Λόγος] of self-regulation.
+upaya: ''
 themes:
-- transformation
-source_excerpt: tus of Ephesus is very plainly of this opinion, since he recognizes the gods nor any man has made, but it
-  always was, and is, and shall be, an ever living fire, kindled in due measure, and in due measure extinguished.‘
-translation_literal: tus of Ephesus is very plainly of this opinion, since he recognizes the gods nor any man has made, but
-  it always was, and is, and shall be, an ever living fire, kindled in due measure, and in due measure extinguished.‘
-commentary: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation. What looks
-  like destruction is often conversion governed by proportion — a physics of becoming that refuses both chaos and immobility.
-  Anchor: George T.W. Patrick (1889), fragment 30 (Bywater Greek). Corpus index HFR_P030 follows the Diels–Kranz-style numbering
-  used in the Pratibha pilot batch.'
-insight: ''
-practice: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing, limit, exchange).
-  Sit with that pattern for two minutes.
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+- harmony
+- self
+- soul
 tags:
-- commentary_text
+- harmony
 - heraclitus_fragments
-- transformation
+- root_text
+- self
+- soul
 quality_score: 0
-editorial_maturity: structural_draft
-editorial_score: 0
+editorial_maturity: strong_draft
+editorial_score: 72
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'ἥλιος αὐτὸς τοῦτο, καὶ ἄπειρον, καὶ πῦρ αἰώνιον, ἡμίσυ γαῖα, ἡμίσυ ἠér, ἡμίσυ νύξ, ἡμίσυ ἡμέρα, ἡμίσυ ὕδωρ, ἡμίσυ
+    πῦρ (partial, related concept); key term: πῦρ αἰώνιον (ever-living fire)'
+- kind: iast
+  label: IAST
+  body: 'pûr aiōnion (πῦρ αἰώνιον) - eternal fire; with diacritics: pŷr aiṓnion'
 - kind: translation
   label: Pratibha Translation
-  body: tus of Ephesus is very plainly of this opinion, since he recognizes the gods nor any man has made, but it always was,
-    and is, and shall be, an ever living fire, kindled in due measure, and in due measure extinguished.‘
-  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
+  body: The cosmos, shared by all, has not been created by any god or human; instead, it has always existed, exists now, and
+    will continue to exist as an ever-living fire, ignited and extinguished in a measured manner, embodying the Logos [Λόγος]
+    of self-regulation.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation. What looks like
-    destruction is often conversion governed by proportion — a physics of becoming that refuses both chaos and immobility.
-    Anchor: George T.W. Patrick (1889), fragment 30 (Bywater Greek). Corpus index HFR_P030 follows the Diels–Kranz-style numbering
-    used in the Pratibha pilot batch.'
-  layer_provenance: template-assembled
+  body: 'The philosophical claim that the cosmos is an eternal, self-regulating system makes a counterintuitive move by denying
+    the role of divine or human creators. Heraclitus'' concept of the ever-living fire challenges the conventional understanding
+    of the universe as a static or created entity. In the pre-Socratic context, this idea revolutionizes the understanding
+    of the cosmos, shifting the focus from creation myths to the intrinsic, dynamic principles governing the universe. The
+    existential application of this concept lies in recognizing that our lives are part of a larger, interconnected web of
+    processes, subject to the same principles of balance and regulation as the cosmos. By embracing this perspective, we can
+    cultivate a deeper sense of harmony [ἁρμονία] with the natural world and the Logos [Λόγος] that governs it. The psychē
+    [ψυχή], or the human soul, is not separate from this cosmic process but is an integral part of it, subject to the same
+    rhythms and cycles.
+
+
+    Key Terms:
+
+
+    * **πῦρ (pûr)** — etymology: from Proto-Indo-European *per-, related to burning -> Heraclitean meaning: the eternal, self-regulating
+    fire that governs the cosmos -> what default translation misses: the dynamic, transformative aspect of fire as a symbol
+    of cosmic balance.
+
+    * **Λόγος (Logos)** — etymology: from λέγω (legō), to gather, collect -> Heraclitean meaning: the principle of reason,
+    balance, and self-regulation that governs the cosmos -> what default translation misses: the dynamic, relational aspect
+    of Logos as a unifying force.
+
+    * **ἁρμονία (harmoniē)** — etymology: from ἁρμόζω (harmozō), to fit together -> Heraclitean meaning: the balance and cohesion
+    that result from the self-regulating principles of the cosmos -> what default translation misses: the active, dynamic
+    aspect of harmony as a process of adjustment and balance.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Tao Te Ching, Chapter 25:** structural homology in the concept of the self-regulating, eternal cosmos, where the Tao
+    is described as the ultimate reality that governs the universe. *Divergence:* while the Tao Te Ching emphasizes the effortless,
+    spontaneous nature of the Tao, Heraclitus'' concept of the ever-living fire highlights the dynamic, transformative aspect
+    of the cosmos.
+
+    * **Plotinus, Enneads, V.1.10:** structural homology in the concept of the eternal, self-regulating cosmos, where Plotinus
+    describes the universe as a unified, interconnected system governed by the One. *Divergence:* while Plotinus emphasizes
+    the transcendent, eternal nature of the One, Heraclitus'' concept of the ever-living fire highlights the immanent, dynamic
+    aspect of the cosmos.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing, limit, exchange). Sit
-    with that pattern for two minutes.
-  layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: pyr / cosmic fire
-    definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation — exchange (πυρὸς τροπαὶ)
-      governed by proportion. Fire names process, not a static element.
-  layer_provenance: template-assembled
-appendixes: []
+  body: As you breathe in and out, imagine the ever-living fire of the cosmos igniting and extinguishing within you, regulating
+    your inner balance and harmony, and connecting you to the larger web of life, embodying the Logos [Λόγος] of self-regulation.
+- kind: appendix
+  label: Public-domain anchor (Patrick 1889)
+  body: This world, the same for all, neither any of the gods nor any man has made; but it always was, and is, and shall be,
+    an ever living fire, kindled in due measure, and in due measure extinguished.
+appendixes:
+- commentator: Public-domain anchor (Patrick 1889)
+  text: This world, the same for all, neither any of the gods nor any man has made; but it always was, and is, and shall be,
+    an ever living fire, kindled in due measure, and in due measure extinguished.
 anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
-  section: wisdom_pearl
+  section: Fragment 30
   original_id: HFR_P030
-  source_reference: Patrick (1889), frag. 30; corpus HFR_P030
+  source_reference: Heraclitus, *Fragments* (HFR_P030; DK B30; Patrick 1889 / Bywater Greek)

@@ -29,7 +29,21 @@ def main() -> int:
     env["PORT"] = str(args.web_port)
 
     py = sys.executable
-    backend_cmd = [py, "-m", "uvicorn", "app.main:app", "--reload", "--port", str(args.backend_port)]
+    # Watch app/ only — default uvicorn --reload watches the whole repo (data/, scripts/,
+    # web/node_modules/) and reload-storms through load_all() on ~850 YAML files.
+    backend_cmd = [
+        py,
+        "-m",
+        "uvicorn",
+        "app.main:app",
+        "--host",
+        "127.0.0.1",
+        "--reload",
+        "--reload-dir",
+        str(ROOT / "app"),
+        "--port",
+        str(args.backend_port),
+    ]
     web_cmd = ["npm", "run", "dev", "--", "-p", str(args.web_port)]
 
     print("Starting backend:", " ".join(backend_cmd))

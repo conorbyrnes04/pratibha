@@ -33,18 +33,22 @@ services:
       # frontend deploys, e.g. https://pratibha.vercel.app
       - key: CORS_ALLOW_ORIGINS
         sync: false
-      # LLM provider — set at least one. First match wins: OpenRouter > Groq > OpenAI.
+      # Chat is OpenRouter-only. This key powers chat (and can power embeddings).
       - key: OPENROUTER_API_KEY
         sync: false
-      - key: GROQ_API_KEY
-        sync: false
-      # OpenAI key is ALSO required for RAG embeddings at query/ingest time.
+      # OpenAI key is used ONLY for RAG embeddings at query/ingest time (optional).
       - key: OPENAI_API_KEY
         sync: false
       - key: DEFAULT_MODEL
-        value: openrouter/meta-llama/llama-3.3-70b-instruct
+        value: openrouter/anthropic/claude-haiku-4.5
       - key: EMBEDDING_MODEL
         value: text-embedding-3-small
+      # Per-IP chat rate limit (requests/minute); protects the metered LLM.
+      - key: CHAT_RATE_MAX_PER_MIN
+        value: "20"
+      # Shared secret for /admin/corpus-status (X-Admin-Token header).
+      - key: ADMIN_TOKEN
+        sync: false
 
 databases:
   - name: pratibha-db

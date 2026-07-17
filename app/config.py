@@ -8,18 +8,24 @@ from pydantic_settings import BaseSettings
 from pydantic_settings import SettingsConfigDict
 
 class Settings(BaseSettings):
+    # OpenAI key is retained for RAG embeddings only (chat runs on OpenRouter).
     OPENAI_API_KEY: str | None = None
+    # Legacy: Groq is no longer used for chat. Kept so old .env files don't error.
     GROQ_API_KEY: str | None = None
     OPENROUTER_API_KEY: str | None = None
-    OPENROUTER_MODEL: str = "openrouter/meta-llama/llama-3.3-70b-instruct"
+    # Cheap, fast, voice-capable default. Override in .env with any OpenRouter id.
+    OPENROUTER_MODEL: str = "openrouter/anthropic/claude-haiku-4.5"
     OPENROUTER_SITE_URL: str | None = None
     OPENROUTER_APP_NAME: str = "Pratibha"
-    DEFAULT_MODEL: str = "groq/llama-3.1-70b-versatile"
+    DEFAULT_MODEL: str = "openrouter/anthropic/claude-haiku-4.5"
     OPENAI_MODEL: str = "gpt-4o-mini"
     USE_RAG: bool = False
     VECTOR_BACKEND: str = "pgvector"
-    REQUEST_TIMEOUT_S: float = 20.0
-    MAX_RETRIES: int = 2
+    # Chat must return well inside the client's patience. A fast model + a hard
+    # per-request cap keeps the round trip under ~20s even on a cold backend.
+    REQUEST_TIMEOUT_S: float = 18.0
+    CHAT_MAX_TOKENS: int = 700
+    MAX_RETRIES: int = 1
     EMBEDDING_MODEL: str = "text-embedding-3-small"
     RAG_FETCH_K: int = 20
     RAG_MIN_SCORE: float = 0.2
@@ -101,20 +107,14 @@ class Settings(BaseSettings):
         return kwargs
 
     def chat_provider(self) -> str:
-        if self.OPENROUTER_API_KEY:
-            return "openrouter"
-        if self.GROQ_API_KEY:
-            return "groq"
-        if self.OPENAI_API_KEY:
-            return "openai"
-        return "none"
+        # Chat is OpenRouter-only. Groq/OpenAI are no longer chat providers.
+        return "openrouter" if self.OPENROUTER_API_KEY else "none"
 
     def effective_default_model(self) -> str:
-        if self.chat_provider() == "openrouter":
-            model = (self.DEFAULT_MODEL or "").strip()
-            if model.startswith("openrouter/"):
-                return model
-            return self.OPENROUTER_MODEL
-        return self.DEFAULT_MODEL
+        model = (self.DEFAULT_MODEL or "").strip()
+        if model.startswith("openrouter/"):
+            return model
+        # Any non-OpenRouter id (legacy Groq/OpenAI) falls back to the OpenRouter default.
+        return self.OPENROUTER_MODEL
 
 settings = Settings()

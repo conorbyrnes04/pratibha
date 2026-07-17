@@ -5,6 +5,7 @@ import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export { ErrorBoundary } from "expo-router";
 
@@ -28,24 +29,26 @@ export default function RootLayout() {
   }, []);
 
   return (
-    <StudyProvider>
-      <ThemeProvider value={pratibhaTheme}>
-        <StatusBar style="light" />
-        <Stack
-          screenOptions={{
-            headerStyle: { backgroundColor: colors.background },
-            headerTintColor: colors.accentBright,
-            headerTitleStyle: { fontFamily: "Georgia" },
-            contentStyle: { backgroundColor: colors.background },
-          }}
-        >
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-          <Stack.Screen name="path/[id]" options={{ title: "Path" }} />
-          <Stack.Screen name="step/[trackId]/[stepId]" options={{ title: "Gate" }} />
-          <Stack.Screen name="passage/[id]" options={{ title: "Passage" }} />
-          <Stack.Screen name="settings" options={{ presentation: "modal", title: "Settings" }} />
-        </Stack>
-      </ThemeProvider>
-    </StudyProvider>
+    <SafeAreaProvider>
+      <StudyProvider>
+        <ThemeProvider value={pratibhaTheme}>
+          <StatusBar style="light" />
+          <Stack
+            screenOptions={{
+              headerStyle: { backgroundColor: colors.background },
+              headerTintColor: colors.accentBright,
+              headerTitleStyle: { fontFamily: "Georgia" },
+              contentStyle: { backgroundColor: colors.background },
+            }}
+          >
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            <Stack.Screen name="path/[id]" options={{ title: "Path" }} />
+            <Stack.Screen name="step/[trackId]/[stepId]" options={{ title: "Gate" }} />
+            <Stack.Screen name="passage/[id]" options={{ title: "Passage" }} />
+            <Stack.Screen name="settings" options={{ presentation: "modal", title: "Settings" }} />
+          </Stack>
+        </ThemeProvider>
+      </StudyProvider>
+    </SafeAreaProvider>
   );
 }

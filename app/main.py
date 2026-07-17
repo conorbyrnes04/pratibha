@@ -3,12 +3,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, field_validator
 from typing import Any, List
+from contextlib import asynccontextmanager
 import asyncio
 import json
 import logging
 import os
 import random
 import re
+import time
 import asyncpg
 
 from .chat_voice import (
@@ -40,7 +42,35 @@ from .collection_aliases import (
 
 logger = logging.getLogger("pratibha.api")
 
-app = FastAPI(title="Pratibha API", version="0.9")
+
+def _warn_missing_aliases(verses: list[dict[str, Any]]) -> None:
+    missing = validate_registered_collections(
+        str(v.get("collection", "")).strip() for v in verses if str(v.get("collection", "")).strip()
+    )
+    if missing:
+        # Degrade gracefully: a missing alias should not take the whole API down.
+        logger.warning(
+            "Missing collection alias entries for loaded collections: %s",
+            ", ".join(sorted(missing)),
+        )
+
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    """Bind the port quickly, then load ~900 YAML units in the background."""
+
+    async def _load() -> None:
+        verses = await asyncio.to_thread(get_all_verses)
+        _warn_missing_aliases(verses)
+
+    task = asyncio.create_task(_load())
+    try:
+        yield
+    finally:
+        task.cancel()
+
+
+app = FastAPI(title="Pratibha API", version="0.9", lifespan=lifespan)
 
 
 def _cors_origins() -> list[str]:
@@ -60,29 +90,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-def _warn_missing_aliases(verses: list[dict[str, Any]]) -> None:
-    missing = validate_registered_collections(
-        str(v.get("collection", "")).strip() for v in verses if str(v.get("collection", "")).strip()
-    )
-    if missing:
-        # Degrade gracefully: a missing alias should not take the whole API down.
-        logger.warning(
-            "Missing collection alias entries for loaded collections: %s",
-            ", ".join(sorted(missing)),
-        )
-
-
-@app.on_event("startup")
-async def _warm_corpus() -> None:
-    """Bind the port quickly, then load ~900 YAML units in the background."""
-
-    async def _load() -> None:
-        verses = await asyncio.to_thread(get_all_verses)
-        _warn_missing_aliases(verses)
-
-    asyncio.create_task(_load())
-
 
 def _valid_maturity(value: str | None) -> str | None:
     """Validate an incoming min_maturity query param, ignoring junk values."""
@@ -152,8 +159,17 @@ async def sources():
 
 @app.get("/admin/corpus-status")
 async def corpus_status(request: Request):
+    # Behind a proxy (Render/Vercel) request.client.host is the proxy, so a
+    # localhost check is meaningless in prod. Gate on a shared secret instead.
+    # Set ADMIN_TOKEN in the environment and pass it as `X-Admin-Token`.
+    expected = (os.environ.get("ADMIN_TOKEN") or "").strip()
     host = (request.client.host if request.client else "") or ""
-    if host not in {"127.0.0.1", "::1", "localhost"}:
+    is_local = host in {"127.0.0.1", "::1", "localhost"}
+    if expected:
+        if request.headers.get("X-Admin-Token", "").strip() != expected:
+            raise HTTPException(403, "Forbidden")
+    elif not is_local:
+        # No token configured: allow only genuine local access (dev convenience).
         raise HTTPException(403, "Forbidden")
 
     loaded_counts: dict[str, int] = {}
@@ -209,6 +225,38 @@ async def corpus_status(request: Request):
 
 
 # ---- Chat ----
+# Lightweight in-process per-IP rate limit. Protects the metered LLM from a
+# single abusive client. For multi-instance deploys, move this to Redis; for a
+# single Render web service it is sufficient.
+_CHAT_RATE_MAX = int(os.environ.get("CHAT_RATE_MAX_PER_MIN", "20") or "20")
+_chat_hits: dict[str, list[float]] = {}
+
+
+def _client_ip(request: Request) -> str:
+    fwd = (request.headers.get("x-forwarded-for") or "").split(",")[0].strip()
+    if fwd:
+        return fwd
+    return (request.client.host if request.client else "") or "unknown"
+
+
+def _rate_limited(request: Request) -> bool:
+    if _CHAT_RATE_MAX <= 0:
+        return False
+    now = time.monotonic()
+    ip = _client_ip(request)
+    window = [t for t in _chat_hits.get(ip, []) if now - t < 60.0]
+    if len(window) >= _CHAT_RATE_MAX:
+        _chat_hits[ip] = window
+        return True
+    window.append(now)
+    _chat_hits[ip] = window
+    # Opportunistic cleanup so the dict can't grow unbounded.
+    if len(_chat_hits) > 4096:
+        for key in [k for k, v in _chat_hits.items() if not any(now - t < 60.0 for t in v)]:
+            _chat_hits.pop(key, None)
+    return False
+
+
 class ChatReq(BaseModel):
     messages: List[dict]
     model: str | None = None
@@ -651,7 +699,9 @@ def _needs_voice_retry(answer: str, query: str) -> bool:
 
 
 @app.post("/chat")
-async def chat(req: ChatReq):
+async def chat(req: ChatReq, request: Request):
+    if _rate_limited(request):
+        raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
     latest_user = next((m["content"] for m in reversed(req.messages) if m["role"] == "user"), "")
     msgs, sources, compare_warning, temperature = await _assemble_chat_messages(req)
     if not _llm_configured():
@@ -686,28 +736,55 @@ async def chat(req: ChatReq):
             "compare_warning": compare_warning,
         }
 
+def _sse(payload: dict) -> str:
+    return f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"
+
+
 @app.post("/chat.stream")
-async def chat_stream(req: ChatReq):
-    msgs, _, _, temperature = await _assemble_chat_messages(req)
+async def chat_stream(req: ChatReq, request: Request):
+    if _rate_limited(request):
+        raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
+    msgs, sources, compare_warning, temperature = await _assemble_chat_messages(req)
+
     if not _llm_configured():
         async def no_key_gen():
-            payload = {
-                "object": "chat.error",
-                "message": "Missing OPENROUTER_API_KEY for streaming chat.",
-            }
-            yield f"data: {json.dumps(payload)}\n\n"
-
+            yield _sse({"type": "sources", "sources": sources, "compare_warning": compare_warning})
+            yield _sse({"type": "error", "message": _chat_failure_message("missing key")})
+            yield _sse({"type": "done"})
         return StreamingResponse(no_key_gen(), media_type="text/event-stream")
-    try:
-        resp = await smart_chat_stream(
-            msgs,
-            primary_model=req.model or settings.effective_default_model(),
-            temperature=temperature,
-        )
-    except Exception as e:
-        raise HTTPException(500, _chat_failure_message(str(e)))
+
     async def gen():
-        async for line in resp.aiter_lines():
-            if line and line.startswith("data: "):
-                yield line + "\n"
+        # Send sources + any compare warning up front so the UI can render the
+        # source shelf while the answer streams in.
+        yield _sse({"type": "sources", "sources": sources, "compare_warning": compare_warning})
+        try:
+            resp = await smart_chat_stream(
+                msgs,
+                primary_model=req.model or settings.effective_default_model(),
+                temperature=temperature,
+            )
+        except Exception as e:
+            yield _sse({"type": "error", "message": _chat_failure_message(str(e))})
+            yield _sse({"type": "done"})
+            return
+        try:
+            async for line in resp.aiter_lines():
+                if not line or not line.startswith("data: "):
+                    continue
+                data = line[6:].strip()
+                if data == "[DONE]":
+                    break
+                try:
+                    chunk = json.loads(data)
+                    delta = chunk["choices"][0].get("delta", {}).get("content")
+                except Exception:
+                    continue
+                if delta:
+                    yield _sse({"type": "delta", "text": delta})
+        except Exception as e:
+            yield _sse({"type": "error", "message": _chat_failure_message(str(e))})
+        finally:
+            await resp.aclose()
+        yield _sse({"type": "done"})
+
     return StreamingResponse(gen(), media_type="text/event-stream")

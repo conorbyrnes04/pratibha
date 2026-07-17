@@ -1,6 +1,8 @@
 "use client";
 
 import { LEARNING_REALMS, RECOMMENDED_SPINE, type LearningTrack } from "@/lib/learningPaths";
+import { realmImageSrc } from "@/lib/collectionImages";
+import { ArtBackdrop } from "@/components/ArtImage";
 import { YantraBreath } from "./YantraBreath";
 
 type ProgressMap = Record<string, boolean>;
@@ -192,14 +194,15 @@ export function JourneyMandala({
         </p>
       </div>
 
-      {/* Mobile: realm arcs with yantra breathing behind each */}
+      {/* Mobile: realm arcs with tradition artwork behind each */}
       <div className="mt-8 space-y-10 md:hidden">
         {LEARNING_REALMS.map((realm) => (
           <div key={realm.id} className="realm-arc relative overflow-hidden rounded-3xl border border-amber-200/10 p-5">
+            <ArtBackdrop src={realmImageSrc(realm.id)} variant="subtle" position="center 30%" />
             <YantraBreath className="absolute -right-16 -top-16 h-48 w-48 opacity-40" />
-            <p className="relative eyebrow">{realm.title}</p>
-            <p className="relative soft mt-2 text-sm leading-relaxed">{realm.blurb}</p>
-            <div className="relative mt-5 space-y-3">
+            <p className="relative z-10 eyebrow">{realm.title}</p>
+            <p className="relative z-10 soft mt-2 text-sm leading-relaxed">{realm.blurb}</p>
+            <div className="relative z-10 mt-5 space-y-3">
               {realm.trackIds.map((tid) => {
                 const t = trackById[tid];
                 if (!t) return null;

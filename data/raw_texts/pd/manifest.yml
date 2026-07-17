@@ -111,6 +111,288 @@ sources:
     legacy_path: ../yoga_sutras_gretil_iast.txt
     note: Sanskrit/IAST only — no PD English in this file
 
+  # ── Pfeiffer MHG Eckhart (already present as local file) ──
+  - id: pfeiffer_eckhart_1857
+    collection: meister_eckhart
+    translator: Franz Pfeiffer (editor)
+    year: 1857
+    work: "Deutsche Mystiker des vierzehnten Jahrhunderts, Bd. 2"
+    license: public_domain
+    local_path: german/pfeiffer_eckhart_1857_ocr.txt
+
+  # ── Rūmī Mathnawī Persian (already present) ──
+  - id: mathnawi_persian_ganjoor
+    collection: rumi_mathnawi
+    translator: null
+    year: null
+    work: "Mathnawī-ye Maʿnavī — Persian original via Ganjoor.net"
+    license: public_domain
+    local_path: persian/mathnawi_neynameh_ganjoor.txt
+    note: "Ney-Nāme (Book I, opening). Moses & Shepherd in mathnawi_moses_shepherd_ganjoor.txt"
+
+  # ── Dōgen Shōbōgenzō (already present) ──
+  - id: shobogenzo_1896_kokubasha
+    collection: dogen_shobogenzo
+    translator: null
+    year: 1896
+    work: "正法眼蔵 — 1896 Kokubasha (国文社) edition"
+    license: public_domain
+    local_path: japanese/shobogenzo_1896_kokubasha.txt
+
+  # ═══════════════════════════════════════════
+  # NEW TEXTS — to be sourced / downloaded
+  # ═══════════════════════════════════════════
+
+  # ── TIER 1: Missing Pillars ──
+
+  - id: brhadaranyaka_upanishad_muller
+    collection: brhadaranyaka_upanishad
+    translator: F. Max Müller
+    year: 1879
+    work: "Sacred Books of the East Vol. 15 — Bṛhadāraṇyaka Upaniṣad"
+    license: public_domain
+    local_path: indian/brhadaranyaka_upanishad_muller_sbe15.txt
+    status: to_be_sourced
+    links:
+      - label: Sacred Texts
+        url: https://sacred-texts.com/hin/sbe15/index.htm
+    note: "Priority passages: Yājñavalkya-Maitreyī (II.4/IV.5), neti neti (II.3.6), madhu-vidyā (II.5), Gārgī (III.6/III.8). Est. 12-18 units."
+
+  - id: chandogya_upanishad_muller
+    collection: chandogya_upanishad
+    translator: F. Max Müller
+    year: 1879
+    work: "Sacred Books of the East Vol. 1 — Chāndogya Upaniṣad"
+    license: public_domain
+    local_path: indian/chandogya_upanishad_muller_sbe01.txt
+    status: in_corpus_pilot
+    links:
+      - label: Internet Archive — Müller Upanishads vol. 1
+        url: https://archive.org/details/upanishads00mlgoog
+    note: "Pilot: 12 units — Om (I.1), Sāṇḍilya (III.14), Uddālaka–Śvetaketu VI.1–2,8–11,16, Prajāpati–Indra VIII.7,11–12. File includes all SBE vol. 1 Upaniṣads."
+
+  - id: katha_upanishad_muller
+    collection: katha_upanishad
+    translator: F. Max Müller
+    year: 1879
+    work: "Sacred Books of the East Vol. 15 — Kaṭha Upaniṣad"
+    license: public_domain
+    local_path: indian/katha_upanishad_muller_sbe15.txt
+    status: to_be_sourced
+    links:
+      - label: Sacred Texts
+        url: https://sacred-texts.com/hin/sbe15/index.htm
+    note: "Priority passages: Naciketas-Yama dialogue, chariot metaphor (I.3.3-9), razor's edge (I.3.14). Est. 8-12 units."
+
+  - id: taittiriya_upanishad_muller
+    collection: taittiriya_upanishad
+    translator: F. Max Müller
+    year: 1879
+    work: "Sacred Books of the East Vol. 15 — Taittirīya Upaniṣad"
+    license: public_domain
+    local_path: indian/taittiriya_upanishad_muller_sbe15.txt
+    status: to_be_sourced
+    links:
+      - label: Sacred Texts
+        url: https://sacred-texts.com/hin/sbe15/index.htm
+    note: "Priority passages: pañca-kośa (II.1-5), ānanda-valli (II.8), Bhṛgu's realization (III.1-6). Est. 6-10 units."
+
+  - id: kena_upanishad_muller
+    collection: kena_upanishad
+    translator: F. Max Müller
+    year: 1879
+    work: "Sacred Books of the East Vol. 1 — Kena Upaniṣad"
+    license: public_domain
+    local_path: indian/kena_upanishad_muller_sbe01.txt
+    status: to_be_sourced
+    links:
+      - label: Sacred Texts
+        url: https://sacred-texts.com/hin/sbe01/index.htm
+    note: "Complete text (~35 verses). Umā-Haimavatī reveals Brahman — proto-Trika (Śakti as revealer). Est. 4-6 units."
+
+  - id: desert_fathers_budge_1907
+    collection: desert_fathers_apophthegmata
+    translator: E.A. Wallis Budge
+    year: 1907
+    work: "The Paradise of the Fathers (from the Syriac)"
+    license: public_domain
+    local_path: syriac_english/desert_fathers_budge_1907.txt
+    status: to_be_sourced
+    links:
+      - label: Internet Archive
+        url: https://archive.org/search?query=budge+paradise+fathers+1907
+    note: "Aphoristic sayings. Priority: Abba Moses ('cell will teach you'), Abba Arsenius ('fuge tace quiesce'), Amma Syncletica, Abba Joseph ('become all flame'). Est. 12-16 units."
+
+  - id: milarepa_evans_wentz_1928
+    collection: milarepa_songs
+    translator: W.Y. Evans-Wentz
+    year: 1928
+    work: "Tibet's Great Yogi Milarepa"
+    license: public_domain
+    local_path: tibetan/milarepa_evans_wentz_1928.txt
+    status: in_corpus_pilot
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/dli.ministry.06735
+    note: "Pilot: 8 Chapter X songs (Meditation in Solitude). Snow Song, Six Bardos, Lingwa demoness chapters are summarized in Ch. XI but not fully translated in this 1928 edition."
+
+  - id: pseudo_dionysius_rolt_1920
+    collection: pseudo_dionysius
+    translator: C.E. Rolt
+    year: 1920
+    work: "Dionysius the Areopagite on the Divine Names and the Mystical Theology"
+    license: public_domain
+    local_path: greek/pseudo_dionysius_rolt_1920.txt
+    status: to_be_sourced
+    links:
+      - label: Internet Archive
+        url: https://archive.org/search?query=rolt+dionysius+areopagite+1920
+    note: "Complete Mystical Theology (~2500 words Greek). Priority: 'brilliant darkness', systematic negation, beyond being/non-being. Est. 6-10 units."
+
+  # ── TIER 2: Deepening the Architecture ──
+
+  - id: cloud_of_unknowing_underhill_1912
+    collection: cloud_of_unknowing
+    translator: Evelyn Underhill (modernized ed.)
+    year: 1912
+    work: "The Cloud of Unknowing"
+    license: public_domain
+    local_path: english/cloud_of_unknowing_underhill_1912.txt
+    status: to_be_sourced
+    links:
+      - label: Internet Archive
+        url: https://archive.org/search?query=underhill+cloud+unknowing+1912
+    note: "Middle English original also available. Priority: 'naked intent' (ch.3), single-word practice (ch.4), two clouds (ch.5-6). Est. 8-10 units."
+
+  - id: gospel_of_philip_coptic
+    collection: gnostic_gospels
+    translator: null
+    year: null
+    work: "Gospel of Philip — Coptic original (Nag Hammadi Codex II)"
+    license: public_domain
+    local_path: coptic/gospel_of_philip_coptic.txt
+    status: to_be_sourced
+    note: "Original-language sourcing from Coptic Library Project. Priority: bridal chamber, light/darkness, mirror/image. Est. 5-7 units."
+
+  - id: gospel_of_mary_coptic
+    collection: gnostic_gospels
+    translator: null
+    year: null
+    work: "Gospel of Mary Magdalene — Coptic/Greek original (BG 8502)"
+    license: public_domain
+    local_path: coptic/gospel_of_mary_coptic.txt
+    status: to_be_sourced
+    note: "Short text (~8 papyrus pages). Priority: ascending soul, Peter's objection, matter and dissolution. Est. 3-5 units."
+
+  - id: boethius_james_1897
+    collection: boethius_consolation
+    translator: H.R. James
+    year: 1897
+    work: "The Consolation of Philosophy of Boethius"
+    license: public_domain
+    local_path: latin/boethius_james_1897.txt
+    status: to_be_sourced
+    links:
+      - label: Internet Archive
+        url: https://archive.org/search?query=james+consolation+philosophy+boethius+1897
+    note: "Prosimetrum (alternating prose/verse). Priority: Lady Philosophy appears (I.1), Wheel of Fortune (II.4), 'O qui perpetua' (III.9), eternal present (V.6). Est. 8-10 units."
+
+  - id: ibn_arabi_fusus_arabic
+    collection: ibn_arabi_fusus
+    translator: null
+    year: null
+    work: "Fuṣūṣ al-Ḥikam — Arabic original"
+    license: public_domain
+    local_path: arabic/ibn_arabi_fusus_arabic.txt
+    status: to_be_sourced
+    note: "Original-language sourcing (Arabic). No clean PD English exists. Priority bezels: Adam (mirror), Seth (gift), Noah, Abraham, Jesus (Word), Muhammad (Seal). Est. 8-12 units."
+
+  - id: marcus_aurelius_long_1862
+    collection: marcus_aurelius_meditations
+    translator: George Long
+    year: 1862
+    work: "The Meditations of Marcus Aurelius"
+    license: public_domain
+    local_path: greek/marcus_aurelius_long_1862.txt
+    status: to_be_sourced
+    links:
+      - label: Project Gutenberg
+        url: https://www.gutenberg.org/ebooks/2680
+    note: "Journal format. Priority: II.1 (morning preparation), IV.3 ('retire into yourself'), V.16 (soul dyed by thoughts), VII.9 (all things interwoven). Est. 12-16 units."
+
+  # ── TIER 3: Luminous Additions ──
+
+  - id: kabir_tagore_underhill_1915
+    collection: kabir_songs
+    translator: Rabindranath Tagore & Evelyn Underhill
+    year: 1915
+    work: "Songs of Kabir"
+    license: public_domain
+    local_path: indian/kabir_tagore_underhill_1915.txt
+    status: to_be_sourced
+    links:
+      - label: Project Gutenberg
+        url: https://www.gutenberg.org/ebooks/6519
+    note: "Priority: 'O servant where dost thou seek Me' (I), 'Do not go to the garden' (XLVI), 'The moon shines in my body' (XL). Est. 10-14 units."
+
+  - id: evagrius_praktikos_greek
+    collection: evagrius_ponticus
+    translator: null
+    year: null
+    work: "Praktikos + De Oratione — Greek original (Patrologia Graeca)"
+    license: public_domain
+    local_path: greek/evagrius_praktikos_pg40.txt
+    status: to_be_sourced
+    note: "Original-language sourcing from PG 40/79. Priority: eight logismoi (Prk. 6-14), acedia (Prk. 15), apatheia (Prk. 50-56), imageless prayer (OP 60-66). Est. 10-14 units."
+
+  - id: nagarjuna_mmk_sanskrit
+    collection: nagarjuna_mulamadhyamakakarika
+    translator: null
+    year: null
+    work: "Mūlamadhyamakakārikā — Sanskrit original"
+    license: public_domain
+    local_path: indian/nagarjuna_mmk_sanskrit.txt
+    status: to_be_sourced
+    note: "Sanskrit from training data. Stcherbatsky 1927 as reference. Priority: Ch.1 (conditions), Ch.15 (svabhāva), Ch.24 (śūnyatā as possibility), Ch.25 (saṃsāra=nirvāṇa), maṅgala-śloka. Est. 10-14 units."
+
+  - id: hakuin_zazen_wasan_japanese
+    collection: hakuin_zen
+    translator: null
+    year: null
+    work: "Zazen Wasan + selections from Orategama & Yasen Kanna — Japanese originals"
+    license: public_domain
+    local_path: japanese/hakuin_zazen_wasan.txt
+    status: to_be_sourced
+    note: "Zazen Wasan is ~30 lines. D.T. Suzuki (1927) partial PD translations as reference. Priority: complete Zazen Wasan, great doubt teaching, meditation in activity, zen sickness/butter pill. Est. 5-8 units."
+
+  - id: teresa_interior_castle_stanbrook_1921
+    collection: teresa_interior_castle
+    translator: Benedictines of Stanbrook
+    year: 1921
+    work: "The Interior Castle"
+    license: public_domain
+    local_path: spanish/teresa_interior_castle_stanbrook_1921.txt
+    status: to_be_sourced
+    links:
+      - label: Internet Archive
+        url: https://archive.org/search?query=stanbrook+interior+castle+teresa+1921
+    note: "Spanish original also via Biblioteca Virtual Miguel de Cervantes. Priority: crystal castle (1M.1), prayer of quiet (4M), silkworm/chrysalis (5M), spiritual marriage (7M). Est. 8-12 units."
+
+  - id: dhammapada_muller_1881
+    collection: dhammapada
+    translator: F. Max Müller
+    year: 1881
+    work: "Sacred Books of the East Vol. 10 — The Dhammapada"
+    license: public_domain
+    local_path: pali/dhammapada_muller_sbe10.txt
+    status: to_be_sourced
+    links:
+      - label: Sacred Texts
+        url: https://sacred-texts.com/bud/sbe10/index.htm
+      - label: Project Gutenberg
+        url: https://www.gutenberg.org/ebooks/2017
+    note: "423 verses, 26 chapters. Priority: 'mind is the forerunner' (1.1-2), 'hatred ceases by love' (1.5), 'ridgepole broken' (11.153-154), tilakkhaṇa (21.277-279). Est. 12-16 units."
+
 # Not downloaded in full — URL references for future swap or side-by-side study
 references:
   - id: sbe_isavasya_muller

@@ -1,8 +1,8 @@
-# Scripts Documentation
+# Scripts
 
-This directory contains all the text processing and data management scripts for the Pratibha Sanskrit RAG system.
+Text processing, corpus validation, and ingestion tools. **Getting started:** root [README](../README.md).
 
-## 📋 Script Overview
+## Script overview
 
 | Script | Purpose | Input | Output |
 |--------|---------|-------|--------|

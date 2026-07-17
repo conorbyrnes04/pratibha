@@ -1,6 +1,7 @@
 import type { PratibhaLayer, PratibhaLayerKind, VerseItem } from "@/lib/types";
 import { firstSentence, stripMarkdown } from "@/lib/textPreview";
 import { humanizeTtcRefs, isTaoTeChing } from "@/lib/ttcRefs";
+import { passageUsesIast } from "@/lib/sanskritScript";
 
 const ORDER: PratibhaLayerKind[] = [
   "original",
@@ -23,11 +24,14 @@ const IAST_PLACEHOLDER_MARKERS = [
   "not in corpus",
   "chinese text",
   "chinese source",
+  "chinese source text tradition",
   "greek original",
   "greek text",
+  "greek original not in corpus",
   "the enchiridion is a greek",
   "not applicable",
   "pending dedicated sanskrit",
+  "n/a, as the key",
 ];
 
 function hasRealTransliteration(body?: string): boolean {
@@ -65,6 +69,7 @@ function normalizeLayer(layer: PratibhaLayer, item?: VerseItem): PratibhaLayer |
     : [];
   const layerWithBody = { ...layer, body, ...(items.length ? { items } : {}) };
   if (layerWithBody.kind === "iast") {
+    if (item && !passageUsesIast(item)) return null;
     if (!hasRealTransliteration(body) && items.length === 0) return null;
     return { ...layerWithBody, label: "IAST" };
   }
@@ -79,9 +84,12 @@ function finalizeLayers(layers: PratibhaLayer[], item?: VerseItem): PratibhaLaye
   return layers.map((layer) => normalizeLayer(layer, item)).filter(Boolean) as PratibhaLayer[];
 }
 
-function layer(kind: PratibhaLayerKind, label: string, body?: string): PratibhaLayer | null {
+function layer(kind: PratibhaLayerKind, label: string, body?: string, item?: VerseItem): PratibhaLayer | null {
   const value = clean(body);
-  if (kind === "iast" && !hasRealTransliteration(value)) return null;
+  if (kind === "iast") {
+    if (item && !passageUsesIast(item)) return null;
+    if (!hasRealTransliteration(value)) return null;
+  }
   return value ? { kind, label, body: value } : null;
 }
 
@@ -92,7 +100,7 @@ export function getVerseLayers(item: VerseItem): PratibhaLayer[] {
 
   const layers: Array<PratibhaLayer | null> = [
     layer("original", "Original", item.sanskrit),
-    layer("iast", "IAST", item.transliteration),
+    layer("iast", "IAST", item.transliteration, item),
     layer("translation", "Pratibha Translation", item.translation),
     layer("commentary", "Pratibha Commentary", item.commentary),
     layer("practice", "Practice (Abhyasa)", item.practice || item.abhyasa),

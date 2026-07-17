@@ -3,9 +3,37 @@ import Link from "next/link";
 import "./globals.css";
 import { SiteNav } from "@/components/SiteNav";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pratibha.agniagama.com";
+const SITE_DESCRIPTION =
+  "Pratibha is a multi-tradition wisdom study platform: layered canonical texts — original, translation, commentary, key terms, cross-tradition resonances, and practice — across the Upaniṣads, Tao Te Ching, Heraclitus, Patañjali, Kashmir Śaivism, Buddhism, and more, with a source-grounded study companion.";
+
 export const metadata: Metadata = {
-  title: "Pratibha",
-  description: "A study companion for timeless wisdom texts",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Pratibha — Living Manuscript of World Wisdom",
+    template: "%s · Pratibha",
+  },
+  description: SITE_DESCRIPTION,
+  applicationName: "Pratibha",
+  keywords: [
+    "wisdom texts", "contemplative study", "Upanishads", "Tao Te Ching", "Heraclitus",
+    "Patanjali Yoga Sutras", "Kashmir Shaivism", "Vijnana Bhairava", "Buddhism",
+    "comparative philosophy", "meditation practice", "commentary",
+  ],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "Pratibha",
+    url: SITE_URL,
+    title: "Pratibha — Living Manuscript of World Wisdom",
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pratibha — Living Manuscript of World Wisdom",
+    description: SITE_DESCRIPTION,
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

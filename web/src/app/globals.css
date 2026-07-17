@@ -747,6 +747,123 @@ select:focus-visible {
   animation: bindu-pulse 7s ease-in-out infinite;
 }
 
+/* ── Thangka art: reveal, placeholder, overlays ── */
+@keyframes art-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: var(--art-opacity, 1);
+    transform: scale(1);
+  }
+}
+
+@keyframes art-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.art-placeholder {
+  background:
+    linear-gradient(
+      125deg,
+      rgb(50 72 103 / 0.45) 0%,
+      rgb(33 26 42 / 0.7) 35%,
+      rgb(216 168 74 / 0.18) 55%,
+      rgb(13 13 24 / 0.85) 100%
+    );
+  background-size: 200% 200%;
+  animation: art-shimmer 4.5s ease-in-out infinite;
+}
+
+.art-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.art-reveal--in {
+  animation: art-fade-in 0.85s ease-out both;
+}
+
+.art-overlay {
+  pointer-events: none;
+}
+
+.art-overlay--hero {
+  background:
+    linear-gradient(105deg, rgb(9 9 18 / 0.55) 0%, rgb(9 9 18 / 0.28) 42%, rgb(9 9 18 / 0.72) 100%),
+    linear-gradient(to top, rgb(9 9 18 / 0.92) 0%, rgb(9 9 18 / 0.45) 45%, rgb(9 9 18 / 0.25) 100%);
+}
+
+.art-overlay--card {
+  background:
+    linear-gradient(145deg, rgb(13 11 22 / 0.72) 0%, rgb(13 11 22 / 0.55) 40%, rgb(13 11 22 / 0.88) 100%);
+}
+
+.art-overlay--banner {
+  background:
+    linear-gradient(to top, rgb(9 9 18 / 0.94) 0%, rgb(11 11 22 / 0.55) 50%, rgb(9 9 18 / 0.35) 100%);
+}
+
+.art-overlay--chip {
+  background:
+    linear-gradient(90deg, rgb(9 9 18 / 0.55) 0%, rgb(17 16 26 / 0.78) 55%, rgb(19 16 26 / 0.92) 100%);
+}
+
+.art-frame {
+  box-shadow:
+    inset 0 0 0 1px rgb(240 201 121 / 0.28),
+    0 10px 28px rgb(0 0 0 / 0.35);
+}
+
+.art-frame__rim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 30% 20%, transparent 40%, rgb(9 9 18 / 0.35) 100%),
+    linear-gradient(to top, rgb(9 9 18 / 0.45), transparent 55%);
+}
+
+.art-chip {
+  border: 1px solid rgb(216 168 74 / 0.28);
+  border-radius: 22px;
+  padding: 1rem;
+  background:
+    linear-gradient(135deg, rgb(184 91 61 / 0.12), transparent 56%),
+    rgb(216 168 74 / 0.06);
+}
+
+.passage-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 11rem;
+}
+
+.library-row__thumb {
+  flex-shrink: 0;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.9rem;
+}
+
+.realm-arc {
+  position: relative;
+}
+
+.daily-sit {
+  position: relative;
+  overflow: hidden;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .yantra-ring,
   .yantra-triangle,
@@ -756,7 +873,14 @@ select:focus-visible {
   .thread-bead__pulse,
   .threads-field__glow,
   .thread-card__glyph,
-  .resume-hero::before {
+  .resume-hero::before,
+  .art-placeholder {
     animation: none;
+  }
+
+  .art-reveal--in {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

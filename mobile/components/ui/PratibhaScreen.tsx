@@ -1,6 +1,6 @@
 import { LinearGradient } from "expo-linear-gradient";
 import { ReactNode } from "react";
-import { RefreshControl, ScrollView, StyleSheet, View, type ViewStyle } from "react-native";
+import { Keyboard, RefreshControl, ScrollView, StyleSheet, View, type ViewStyle } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { colors } from "@/constants/theme";
 
@@ -17,6 +17,9 @@ export function PratibhaScreen({ children, scroll = true, onRefresh, refreshing,
     <ScrollView
       contentContainerStyle={[styles.content, contentStyle]}
       showsVerticalScrollIndicator={false}
+      keyboardShouldPersistTaps="handled"
+      keyboardDismissMode="on-drag"
+      onScrollBeginDrag={Keyboard.dismiss}
       refreshControl={
         onRefresh ? <RefreshControl refreshing={!!refreshing} onRefresh={onRefresh} tintColor={colors.accent} /> : undefined
       }
@@ -30,7 +33,7 @@ export function PratibhaScreen({ children, scroll = true, onRefresh, refreshing,
   return (
     <View style={styles.root}>
       <LinearGradient colors={["#07070d", "#11101a", "#17101a"]} style={StyleSheet.absoluteFill} />
-      <SafeAreaView style={styles.safe} edges={["left", "right"]}>
+      <SafeAreaView style={styles.safe} edges={["top", "left", "right"]}>
         {body}
       </SafeAreaView>
     </View>

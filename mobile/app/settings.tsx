@@ -1,17 +1,21 @@
 import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
 import { PratibhaText, ui } from "@/components/ui/PratibhaText";
-import { getApiBase, setApiBaseOverride } from "@/lib/api";
+import { getApiBase, pingHealth, setApiBaseOverride } from "@/lib/api";
 import { API_OVERRIDE_KEY } from "@/lib/storage";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useStudy } from "@/context/StudyContext";
 import { useEffect, useState } from "react";
-import { Pressable, TextInput, View } from "react-native";
+import { ActivityIndicator, Pressable, TextInput, View, Keyboard } from "react-native";
 import { colors } from "@/constants/theme";
+
+type PingState = "idle" | "checking" | "ok" | "fail";
 
 export default function SettingsScreen() {
   const { refreshCorpus } = useStudy();
   const [apiBase, setApiBase] = useState(getApiBase());
   const [saved, setSaved] = useState(false);
+  const [pingState, setPingState] = useState<PingState>("idle");
+  const [pingDetail, setPingDetail] = useState("");
 
   useEffect(() => {
     AsyncStorage.getItem(API_OVERRIDE_KEY).then((v) => {
@@ -20,11 +24,24 @@ export default function SettingsScreen() {
   }, []);
 
   async function save() {
+    Keyboard.dismiss();
     const clean = apiBase.trim().replace(/\/$/, "");
     await AsyncStorage.setItem(API_OVERRIDE_KEY, clean);
     setApiBaseOverride(clean);
     setSaved(true);
-    await refreshCorpus();
+    setPingState("checking");
+    setPingDetail("");
+    const health = await pingHealth();
+    if (health.ok) {
+      setPingState("ok");
+      setPingDetail(
+        health.verseCount != null ? `Connected · ${health.verseCount} verses loaded` : "Connected",
+      );
+      await refreshCorpus();
+    } else {
+      setPingState("fail");
+      setPingDetail(health.error || `HTTP ${health.status || "error"}`);
+    }
     setTimeout(() => setSaved(false), 2000);
   }
 
@@ -46,6 +63,9 @@ export default function SettingsScreen() {
           onChangeText={setApiBase}
           autoCapitalize="none"
           autoCorrect={false}
+          returnKeyType="done"
+          onSubmitEditing={Keyboard.dismiss}
+          blurOnSubmit
           style={{
             marginTop: 10,
             borderRadius: 12,
@@ -59,6 +79,22 @@ export default function SettingsScreen() {
         <Pressable style={[ui.button, { marginTop: 14 }]} onPress={save}>
           <PratibhaText style={ui.buttonText}>{saved ? "Saved ✓" : "Save & reconnect"}</PratibhaText>
         </Pressable>
+        {pingState === "checking" ? (
+          <View style={{ marginTop: 12, flexDirection: "row", alignItems: "center", gap: 8 }}>
+            <ActivityIndicator color={colors.accent} size="small" />
+            <PratibhaText variant="soft" style={{ fontSize: 14 }}>
+              Checking connection…
+            </PratibhaText>
+          </View>
+        ) : pingState === "ok" ? (
+          <PratibhaText variant="soft" style={{ marginTop: 12, fontSize: 14, color: colors.emerald }}>
+            {pingDetail}
+          </PratibhaText>
+        ) : pingState === "fail" ? (
+          <PratibhaText variant="soft" style={{ marginTop: 12, fontSize: 14, color: colors.rose }}>
+            Connection failed: {pingDetail}
+          </PratibhaText>
+        ) : null}
       </View>
     </PratibhaScreen>
   );

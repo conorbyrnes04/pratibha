@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from "react";
-import { askChat, getCollections, getVerse, getVerses } from "@/lib/api";
+import { askChatStream, getCollections, getVerse, getVerses } from "@/lib/api";
 import { saveChatResponse } from "@/lib/journalStorage";
 import type { ChatMode, PratibhaLayerKind, Source, VerseItem } from "@/lib/types";
 import { FilterSelect } from "@/components/FilterSelect";
@@ -9,6 +9,8 @@ import { ComparePassageSelect } from "@/components/ComparePassageSelect";
 import { buildCompareCollectionOptions, passagesInCollection } from "@/lib/corpusFilters";
 import { COMPARE_PRESETS } from "@/lib/comparePresets";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
+import { ArtBackdrop, ArtChip } from "@/components/ArtImage";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
 import ReactMarkdown from "react-markdown";
@@ -179,25 +181,50 @@ export default function ChatPage() {
   async function ask() {
     if (!q.trim() || busy) return;
     const next: ChatMessage[] = [...messages, { role: "user", content: q.trim() }];
-    setMessages(next);
+    // Add an empty assistant message we fill as tokens stream in.
+    setMessages([...next, { role: "assistant", content: "" }]);
+    const assistantIdx = next.length;
     setBusy(true);
     setQ("");
+    setSources([]);
+    setCompareWarning("");
     try {
       const selected = compareMode ? [compareA, compareB].filter(Boolean) : [];
       const compareVerseIds =
         compareMode && (compareVerseA || compareVerseB) ? [compareVerseA, compareVerseB] : undefined;
-      const data = await askChat(next, useRag, compareMode, selected, {
-        verseId: pinnedVerse?._id,
-        compareVerseIds,
-        layerFocus: layerFocus || undefined,
-        chatMode,
+      const data = await askChatStream(
+        next,
+        useRag,
+        compareMode,
+        selected,
+        { verseId: pinnedVerse?._id, compareVerseIds, layerFocus: layerFocus || undefined, chatMode },
+        {
+          onSources: (srcs, warning) => {
+            setSources(srcs || []);
+            setCompareWarning(warning || "");
+          },
+          onDelta: (full) => {
+            setMessages((prev) => {
+              const copy = [...prev];
+              if (copy[assistantIdx]) copy[assistantIdx] = { role: "assistant", content: full };
+              return copy;
+            });
+          },
+        },
+      );
+      // Ensure final state matches (covers the no-delta error path).
+      setMessages((prev) => {
+        const copy = [...prev];
+        copy[assistantIdx] = { role: "assistant", content: data.answer || "(no answer)" };
+        return copy;
       });
-      setMessages([...next, { role: "assistant", content: data.answer || "(no answer)" }]);
-      setSources(data.sources || []);
-      setCompareWarning(data.compareWarning || "");
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Unknown error";
-      setMessages([...next, { role: "assistant", content: `I hit an error: ${msg}` }]);
+      setMessages((prev) => {
+        const copy = [...prev];
+        copy[assistantIdx] = { role: "assistant", content: `I hit an error: ${msg}` };
+        return copy;
+      });
       setSources([]);
       setCompareWarning("");
     } finally {
@@ -207,21 +234,28 @@ export default function ChatPage() {
 
   return (
     <main className="page-shell">
-      <p className="eyebrow">Dialogue with the corpus</p>
-      <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Ask Pratibha</h1>
-      <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">Ask naturally. The companion answers with source-grounded explanation, cross-tradition context, and a practice you can actually try.</p>
+      <section className="manuscript-card relative overflow-hidden p-5 sm:p-6">
+        <ArtBackdrop
+          srcs={pinnedVerse ? collectionArtPool(pinnedVerse.collection) : generatedArtPool("heart-sutra")}
+          variant="subtle"
+          overlay="banner"
+        />
+        <div className="relative z-10">
+          <p className="eyebrow">Dialogue with the corpus</p>
+          <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Ask Pratibha</h1>
+          <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">Ask naturally. The companion answers with source-grounded explanation, cross-tradition context, and a practice you can actually try.</p>
+        </div>
+      </section>
 
       <div className="mt-6 grid gap-4 lg:grid-cols-[2fr_1fr]">
         <section className="manuscript-card p-4 sm:p-5">
           {pinnedVerse ? (
-            <div className="practice-card mb-4 p-4">
-              <p className="layer-heading">Pinned passage</p>
-              <h2 className="mt-2 text-2xl leading-none text-amber-100">
-                {displayPassageTitle(pinnedVerse)}
-              </h2>
-              <p className="soft mt-1 font-sans text-sm">
-                {displayCollectionName(pinnedVerse.collection)} {pinnedVerse.section ? `• ${pinnedVerse.section}` : ""} • {maturityLabel(pinnedVerse.editorial_maturity)}
-              </p>
+            <ArtChip
+              src={collectionImageSrc(pinnedVerse.collection)}
+              title={displayPassageTitle(pinnedVerse)}
+              subtitle={`${displayCollectionName(pinnedVerse.collection)}${pinnedVerse.section ? ` • ${pinnedVerse.section}` : ""} • ${maturityLabel(pinnedVerse.editorial_maturity)}`}
+              className="mb-4"
+            >
               <p className="soft mt-3 text-sm leading-relaxed">{passagePreview(pinnedVerse)}</p>
               {practiceText(pinnedVerse) ? (
                 <p className="mt-3 text-sm leading-relaxed text-stone-200">
@@ -248,7 +282,7 @@ export default function ChatPage() {
                   options={layerOptions}
                 />
               </div>
-            </div>
+            </ArtChip>
           ) : null}
           <div className="space-y-3">
             {messages.length === 0 ? (
@@ -267,17 +301,23 @@ export default function ChatPage() {
                   <p className="layer-heading mb-2">{m.role === "user" ? "You" : "Pratibha"}</p>
                   {m.role === "assistant" ? (
                     <>
-                      <div className="chat-markdown reading-prose">
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => saveReply(idx, m.content)}
-                        disabled={savedReplies.has(idx)}
-                        className="btn-secondary mt-3 px-3 py-1 text-xs disabled:opacity-50"
-                      >
-                        {savedReplies.has(idx) ? "Saved to journal" : "Save to journal"}
-                      </button>
+                      {m.content ? (
+                        <div className="chat-markdown reading-prose">
+                          <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
+                        </div>
+                      ) : (
+                        <p className="soft animate-pulse text-sm">Pratibha is thinking…</p>
+                      )}
+                      {m.content ? (
+                        <button
+                          type="button"
+                          onClick={() => saveReply(idx, m.content)}
+                          disabled={savedReplies.has(idx)}
+                          className="btn-secondary mt-3 px-3 py-1 text-xs disabled:opacity-50"
+                        >
+                          {savedReplies.has(idx) ? "Saved to journal" : "Save to journal"}
+                        </button>
+                      ) : null}
                     </>
                   ) : (
                     <p>{m.content}</p>

@@ -11,19 +11,26 @@ const ICON_RULES: Array<{ pattern: RegExp; icon: string }> = [
   { pattern: /epictetus/i, icon: "ε" },
   { pattern: /phaedo|plato/i, icon: "Π" },
   { pattern: /plotinus|ennead/i, icon: "∞" },
+  { pattern: /milarepa|jetsun.?kahbum|tibet.?s.?great.?yogi/i, icon: "ཨ" },
+  // Vajrayāna / Buddhist emptiness voices
+  { pattern: /tilopa|maha.?mudra|ganges.?mahamudra/i, icon: "ཏི" },
+  { pattern: /heart.?s[uū]tra|prajnaparamita|prajñāpāramitā/i, icon: "प्र" },
+  { pattern: /nagarjuna|madhyamaka|mulamadhyamakakarika|mmk/i, icon: "मा" },
+  { pattern: /shantideva|śāntideva|bodhicary/i, icon: "बो" },
+  { pattern: /chandogya|khandogya|khândogya/i, icon: "छ" },
   { pattern: /upanishad|isavasya|svetasvatara|mandukya/i, icon: "ॐ" },
   // Kashmir Śaiva / Tantra — Yoginīhṛdaya, Vijñāna Bhairava, Spanda, etc.
   { pattern: /vijnana|bhairava|shiva|siva|tantra|spanda|yogin[iī]|yogini_hrdaya|pratyabhij/i, icon: "श" },
   { pattern: /heraclitus|fragment/i, icon: "λ" },
   // Patañjali Yoga Sūtras — puruṣa–prakṛti duality (Sāṃkhya epistemology)
   { pattern: /patanjali|patañjali|yoga.?s[uū]tras?|raja.?yoga/i, icon: "◐" },
-  { pattern: /ibn|arabi|know yourself/i, icon: "☪" },
+  { pattern: /ibn|arabi|know yourself/i, icon: "◈" },
   { pattern: /confucius|analect/i, icon: "儒" },
   { pattern: /marcus|meditation/i, icon: "◎" },
   { pattern: /rumi|poet/i, icon: "۞" },
   // Dōgen — Zen emptiness / śūnyatā register (distinct from Daoist 道)
   { pattern: /dogen|dōgen|shobogenzo|shōbōgenzō/i, icon: "空" },
-  // Meister Eckhart — Christian mysticism (parallel register to Ibn Arabi ☪)
+  // Meister Eckhart — Christian mysticism (parallel register to Ibn Arabi ◈)
   { pattern: /eckhart|meister_eckhart|abegescheidenheit|abgeschiedenheit/i, icon: "☩" },
 ];
 

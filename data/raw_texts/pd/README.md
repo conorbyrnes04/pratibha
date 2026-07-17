@@ -1,19 +1,32 @@
 # Public-domain anchor texts
 
-This folder holds **PD translations and Sanskrit sources** for philological reference. They are **not** wired into the live study corpus by default — use them when building Pratibha units or comparing anchors.
+PD translations and original-language sources for philological reference. **Not** loaded into the live study corpus by default — use them when authoring Pratibha units or comparing anchors.
+
+For how the live corpus works, see the root [README](../../../README.md) (`data/canonical/`). For editorial rules, see [references/editorial-standards.md](../../../references/editorial-standards.md).
 
 ## Layout
 
 ```
 pd/
-  manifest.yml          # catalog: paths, translators, Gutenberg IDs, URLs
-  greek/                # Heraclitus (Patrick), Phaedo (Jowett), Plotinus, Epictetus
-  chinese/              # Zhuangzi (Giles), Tao Te Ching (Legge)
-  indian/               # Bhagavad Gita (Arnold), Yoga Sutras (Dvivedi PDF, GRETIL IAST)
-  references/           # (optional) saved notes for SBE / Archive-only texts
+  manifest.yml          # Catalog: paths, translators, Gutenberg IDs, URLs, status
+  greek/                # Heraclitus, Phaedo, Plotinus, Epictetus, …
+  chinese/              # Zhuangzi, Tao Te Ching
+  indian/               # Gita, Yoga Sutras, Upaniṣads (Müller SBE), …
+  japanese/             # Dōgen, Hakuin
+  tibetan/              # Milarepa (Evans-Wentz 1928)
+  persian/              # Rūmī Mathnawī
+  …                     # See manifest.yml for full list
+  references/           # Optional notes for Archive-only texts
 ```
 
-## Refresh Gutenberg files
+## manifest.yml
+
+- Entries **without** `status` are downloaded and present on disk.
+- Entries with `status: to_be_sourced` are planned but not yet fetched.
+
+Do not duplicate the manifest here — open [manifest.yml](manifest.yml) for paths, priorities, and sourcing notes.
+
+## Refresh Gutenberg / catalog files
 
 ```bash
 python scripts/fetch_pd_sources.py
@@ -21,8 +34,8 @@ python scripts/fetch_pd_sources.py
 
 ## Legacy paths
 
-Older scripts used flat files in `data/raw_texts/` (`patrick_heraclitus_1889.txt`, `ChaungTzuRaw`, etc.). Those files are kept; `pd/` is the canonical archive. Parsers in `scripts/pd_anchor_sources.py` prefer `pd/` paths.
+Older flat files under `data/raw_texts/` (e.g. `patrick_heraclitus_1889.txt`) are kept for compatibility. **`pd/` is the canonical archive.** Parsers in `scripts/pd_anchor_sources.py` prefer `pd/` paths.
 
-## Sell-ready strategy (future)
+## Usage in the product
 
-Keep **Pratibha Translation** as the product voice. Use files here only as attributed reference — not pasted wholesale into study units.
+Pratibha study units use **Pratibha editorial layers** as the product voice. Files here are attributed reference material — not pasted wholesale into published units.

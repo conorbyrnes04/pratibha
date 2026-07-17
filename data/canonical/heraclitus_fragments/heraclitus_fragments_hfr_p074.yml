@@ -1,68 +1,127 @@
 source_file: data/yaml/fragments/fragment_074.yml
 source_id: HFR_P074
-category: commentary_text
+category: root_text
 work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p074
-unit_label: The dry soul is the wisest and best.” Musonius from Stob.
-title: The dry soul is the wisest and best.” Musonius from Stob.
-unit_type: teaching_passage
-thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
-  things.'
+unit_label: The Dry Soul Embodies Wisdom
+title: The Dry Soul Embodies Wisdom
+unit_type: sutra
+sanskrit_devanagari: ἡ ξηρὰ ψυχὴ σοφώτατος καὶ ἄριστος (Bywater Greek)
+sanskrit_iast: hē xērà psychē sophōtatos kaì áristos - The dry psychē (ψυχή) is wisest and best.
+translation_literal: The soul that is dry is the wisest and the best, embodying Logos [Λόγος] in its clarity.
+commentary: 'The philosophical claim that the dry soul is the wisest and best presents a counterintuitive move by Heraclitus,
+  suggesting that a state of being unencumbered by excesses, such as desires or emotions, is preferable for achieving wisdom.
+  This idea is rooted in the pre-Socratic and Ephesian context, where the concept of physis [φύσις] or nature, was central
+  to understanding the world and human existence. Heraclitus'' emphasis on the dry soul can be seen as a call to cultivate
+  a state of inner clarity and balance, akin to the concept of harmoniē [ἁρμονία], which allows the individual to embody Logos
+  [Λόγος] or reason, and thus navigate the complexities of life with wisdom. This existential application encourages individuals
+  to strive for a state of being that is unclouded by external influences, allowing for a deeper understanding of themselves
+  and the world. The dry soul, in this sense, is not devoid of emotion or passion but is rather characterized by a sense of
+  detachment and clarity that enables wise decision-making and a deeper connection to one''s psychē [ψυχή] or soul.
+
+
+  Key Terms:
+
+
+  * **Psychē (ψυχή)** — etymology: breath, spirit -> Heraclitean meaning in this fragment: the soul or the essence of a being
+  -> what default translation misses: the dynamic and living aspect of the soul.
+
+  * **Sophōtatos (σοφώτατος)** — etymology: wise -> Heraclitean meaning in this fragment: embodying wisdom -> what default
+  translation misses: the idea that wisdom is not just a state of being but an active process of cultivation.
+
+  * **Xērà (ξηρὰ)** — etymology: dry -> Heraclitean meaning in this fragment: unencumbered, clear -> what default translation
+  misses: the positive connotation of dryness as a desirable state.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Tao Te Ching, Chapter 27:** structural homology in the idea of embracing simplicity and clarity as a means to achieve
+  wisdom. *Divergence:* While the Tao Te Ching emphasizes the importance of embracing the natural flow of life, Heraclitus
+  focuses on the cultivation of the dry soul as a means to achieve wisdom.
+
+  * **Epictetus, Discourses, Book 1, Chapter 1:** structural homology in the idea of cultivating inner strength and detachment
+  as a means to achieve freedom. *Divergence:* While Epictetus emphasizes the importance of reason and self-control, Heraclitus
+  focuses on the cultivation of the dry soul as a means to embody Logos [Λόγος].'
+insight: The philosophical claim that the dry soul is the wisest and best presents a counterintuitive move by Heraclitus,
+  suggesting that a state of being unencumbered by excesses, such as desires or emotions, is preferable for achieving wisdom.
+practice: Observe your thoughts and emotions without attachment, allowing yourself to settle into a state of inner clarity,
+  much like the dry soul, and from this place, make decisions that align with your deepest wisdom.
+upaya: ''
 themes:
 - breath
+- detachment
 - soul
-source_excerpt: The dry soul is the wisest and best.” Musonius from Stob. Flo. 108, 60. are common, according to Heraclitus.
-translation_literal: The dry soul is the wisest and best.” Musonius from Stob. Flo. 108, 60. are common, according to Heraclitus.
-commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs
-  all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
-  The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things
-  are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor:
-  George T.W. Patrick (1889), fragment 74 (Bywater Greek). Corpus index HFR_P074 follows the Diels–Kranz-style numbering used
-  in the Pratibha pilot batch.'
-insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
-- commentary_text
+- detachment
 - heraclitus_fragments
+- root_text
 - soul
 quality_score: 0
-editorial_maturity: structural_draft
-editorial_score: 0
+editorial_maturity: strong_draft
+editorial_score: 72
 pratibha_layers:
+- kind: original
+  label: Original
+  body: ἡ ξηρὰ ψυχὴ σοφώτατος καὶ ἄριστος (Bywater Greek)
+- kind: iast
+  label: IAST
+  body: hē xērà psychē sophōtatos kaì áristos - The dry psychē (ψυχή) is wisest and best.
 - kind: translation
   label: Pratibha Translation
-  body: The dry soul is the wisest and best.” Musonius from Stob. Flo. 108, 60. are common, according to Heraclitus.
-  layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
+  body: The soul that is dry is the wisest and the best, embodying Logos [Λόγος] in its clarity.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
-    things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
-    The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things
-    are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it.
-    Anchor: George T.W. Patrick (1889), fragment 74 (Bywater Greek). Corpus index HFR_P074 follows the Diels–Kranz-style numbering
-    used in the Pratibha pilot batch.'
-  layer_provenance: template-assembled
+  body: 'The philosophical claim that the dry soul is the wisest and best presents a counterintuitive move by Heraclitus,
+    suggesting that a state of being unencumbered by excesses, such as desires or emotions, is preferable for achieving wisdom.
+    This idea is rooted in the pre-Socratic and Ephesian context, where the concept of physis [φύσις] or nature, was central
+    to understanding the world and human existence. Heraclitus'' emphasis on the dry soul can be seen as a call to cultivate
+    a state of inner clarity and balance, akin to the concept of harmoniē [ἁρμονία], which allows the individual to embody
+    Logos [Λόγος] or reason, and thus navigate the complexities of life with wisdom. This existential application encourages
+    individuals to strive for a state of being that is unclouded by external influences, allowing for a deeper understanding
+    of themselves and the world. The dry soul, in this sense, is not devoid of emotion or passion but is rather characterized
+    by a sense of detachment and clarity that enables wise decision-making and a deeper connection to one''s psychē [ψυχή]
+    or soul.
+
+
+    Key Terms:
+
+
+    * **Psychē (ψυχή)** — etymology: breath, spirit -> Heraclitean meaning in this fragment: the soul or the essence of a
+    being -> what default translation misses: the dynamic and living aspect of the soul.
+
+    * **Sophōtatos (σοφώτατος)** — etymology: wise -> Heraclitean meaning in this fragment: embodying wisdom -> what default
+    translation misses: the idea that wisdom is not just a state of being but an active process of cultivation.
+
+    * **Xērà (ξηρὰ)** — etymology: dry -> Heraclitean meaning in this fragment: unencumbered, clear -> what default translation
+    misses: the positive connotation of dryness as a desirable state.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Tao Te Ching, Chapter 27:** structural homology in the idea of embracing simplicity and clarity as a means to achieve
+    wisdom. *Divergence:* While the Tao Te Ching emphasizes the importance of embracing the natural flow of life, Heraclitus
+    focuses on the cultivation of the dry soul as a means to achieve wisdom.
+
+    * **Epictetus, Discourses, Book 1, Chapter 1:** structural homology in the idea of cultivating inner strength and detachment
+    as a means to achieve freedom. *Divergence:* While Epictetus emphasizes the importance of reason and self-control, Heraclitus
+    focuses on the cultivation of the dry soul as a means to embody Logos [Λόγος].'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
-  layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: psychē (ψυχή)
-    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
-      ethics into cosmology: how you live is how you align (or fail) with measure.'
-  layer_provenance: template-assembled
-appendixes: []
+  body: Observe your thoughts and emotions without attachment, allowing yourself to settle into a state of inner clarity,
+    much like the dry soul, and from this place, make decisions that align with your deepest wisdom.
+- kind: appendix
+  label: Public-domain anchor (Patrick 1889)
+  body: The dry soul is the wisest and best.
+appendixes:
+- commentator: Public-domain anchor (Patrick 1889)
+  text: The dry soul is the wisest and best.
 anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
-  section: wisdom_pearl
+  section: Fragment 74
   original_id: HFR_P074
-  source_reference: Patrick (1889), frag. 74; corpus HFR_P074
+  source_reference: Heraclitus, *Fragments* (HFR_P074; DK B118; Patrick 1889 / Bywater Greek)

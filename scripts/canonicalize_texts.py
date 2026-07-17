@@ -429,6 +429,10 @@ def _anchor_label(coll_slug: str) -> str:
         return "Public-domain anchor (Giles 1889)"
     if coll_slug == "heraclitus_fragments":
         return "Public-domain anchor (Patrick 1889)"
+    if coll_slug == "heart_sutra":
+        return "Public-domain anchor (Müller 1894)"
+    if coll_slug == "shantideva_bodhicaryavatara":
+        return "Public-domain anchor (Barnett 1909)"
     return "Public-domain anchor"
 
 

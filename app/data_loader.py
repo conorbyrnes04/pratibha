@@ -333,12 +333,46 @@ _IAST_PLACEHOLDER_MARKERS = (
     "not in corpus",
     "chinese text",
     "chinese source",
+    "chinese source text tradition",
     "greek original",
     "greek text",
+    "greek original not in corpus",
     "the enchiridion is a greek",
     "not applicable",
     "pending dedicated sanskrit",
+    "n/a, as the key",
 )
+
+_NON_SANSKRIT_COLLECTION = re.compile(
+    r"heraclitus|fragment|epictetus|enchiridion|meditations|phaedo|plato|plotinus|ennead|"
+    r"eckhart|ibn.?arabi|know.?yourself|balyani|rumi|mathnawi|"
+    r"tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|"
+    r"milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō",
+    re.I,
+)
+
+_SANSKRIT_COLLECTION = re.compile(
+    r"upanishad|upaniṣad|chandogya|isavasya|svetasvatara|mandukya|bhagavad.?gita|"
+    r"astavakra|ashtavakra|aṣṭāvakra|patanjali|patañjali|yoga.?s[uū]tra|"
+    r"vijnana|bhairava|shiva|siva|tantra|spanda|yogin[iī]|pratyabhij|kashmir|"
+    r"nagarjuna|madhyamaka|mmk|shantideva|śāntideva|bodhicary|"
+    r"heart.?s[uū]tra|prajnaparamita|tilopa|maha.?mudra",
+    re.I,
+)
+
+
+def _contains_devanagari(text: str) -> bool:
+    return bool(re.search(r"[\u0900-\u097F]", text))
+
+
+def _passage_uses_iast(out: dict[str, Any]) -> bool:
+    collection = _as_text(out.get("collection"))
+    if collection and _NON_SANSKRIT_COLLECTION.search(collection):
+        return False
+    if collection and _SANSKRIT_COLLECTION.search(collection):
+        return True
+    original = _as_text(out.get("sanskrit"))
+    return _contains_devanagari(original)
 
 
 def _has_real_transliteration(text: Any) -> bool:
@@ -362,12 +396,15 @@ def _layer(kind: str, label: str, body: str, **extra: Any) -> dict[str, Any] | N
     return {"kind": kind, "label": label, "body": clean, **extra}
 
 
-def _finalize_layers(layers: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Normalize display labels and drop IAST layers with no real transliteration."""
-    out: list[dict[str, Any]] = []
+def _finalize_layers(layers: list[dict[str, Any]], out: dict[str, Any] | None = None) -> list[dict[str, Any]]:
+    """Normalize display labels and drop IAST layers for non-Sanskrit passages."""
+    uses_iast = _passage_uses_iast(out) if out else True
+    result: list[dict[str, Any]] = []
     for layer in layers:
         kind = layer.get("kind")
         if kind == "iast":
+            if not uses_iast:
+                continue
             body = _as_text(layer.get("body"))
             items = layer.get("items") or []
             if not _has_real_transliteration(body) and not items:
@@ -375,8 +412,8 @@ def _finalize_layers(layers: list[dict[str, Any]]) -> list[dict[str, Any]]:
             layer = {**layer, "label": "IAST"}
         elif kind == "original":
             layer = {**layer, "label": "Original"}
-        out.append(layer)
-    return out
+        result.append(layer)
+    return result
 
 
 def _derive_layers(out: dict[str, Any], raw_commentary: str = "") -> list[dict[str, Any]]:
@@ -406,7 +443,7 @@ def _derive_layers(out: dict[str, Any], raw_commentary: str = "") -> list[dict[s
             candidates.append(_layer("appendix", label, _as_text(appendix.get("text"))))
         else:
             candidates.append(_layer("appendix", f"Appendix {idx + 1}", _as_text(appendix)))
-    return _finalize_layers([c for c in candidates if c is not None])
+    return _finalize_layers([c for c in candidates if c is not None], out)
 
 
 def _build_layers(item: dict[str, Any], out: dict[str, Any], raw_commentary: str = "") -> list[dict[str, Any]]:
@@ -431,7 +468,7 @@ def _build_layers(item: dict[str, Any], out: dict[str, Any], raw_commentary: str
         by_kind[kind] = merged
     order = ["original", "iast", "translation", "commentary", "key_terms", "resonances", "practice", "appendix"]
     merged = sorted(by_kind.values(), key=lambda layer: order.index(layer["kind"]) if layer["kind"] in order else 99)
-    return _finalize_layers(merged)
+    return _finalize_layers(merged, out)
 
 
 def _default_data_roots() -> list[str]:
@@ -547,8 +584,14 @@ def load_all() -> list[dict[str, Any]]:
     return out
 
 
+import threading
+
 _cached_verses: list[dict[str, Any]] | None = None
 _cached_verse_by_id: dict[str, dict[str, Any]] | None = None
+# Guards the one-time load so the startup warm task and the first request can't
+# both parse the ~900-file corpus concurrently (double work + a window where the
+# id index is inconsistent).
+_load_lock = threading.Lock()
 
 
 def corpus_ready() -> bool:
@@ -559,9 +602,15 @@ def corpus_ready() -> bool:
 def get_all_verses() -> list[dict[str, Any]]:
     """Load and cache the corpus on first access (keeps deploy health checks fast)."""
     global _cached_verses, _cached_verse_by_id
-    if _cached_verses is None:
-        _cached_verses = load_all()
-        _cached_verse_by_id = {v["_id"]: v for v in _cached_verses}
+    if _cached_verses is not None:
+        return _cached_verses
+    with _load_lock:
+        # Re-check inside the lock: another thread may have finished loading
+        # while we were blocked.
+        if _cached_verses is None:
+            verses = load_all()
+            _cached_verse_by_id = {v["_id"]: v for v in verses}
+            _cached_verses = verses  # publish last so readers never see a partial index
     return _cached_verses
 
 

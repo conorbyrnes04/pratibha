@@ -3,7 +3,7 @@ import { ThemeConstellation } from "@/components/ThemeConstellation";
 import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
 import { PratibhaText, ui } from "@/components/ui/PratibhaText";
 import { useStudy } from "@/context/StudyContext";
-import { passagePreview } from "@/lib/passages";
+import { passagePreview, pickRandomPassage } from "@/lib/passages";
 import { layerText } from "@/lib/verseLayers";
 import {
   buildCollectionOptions,
@@ -12,9 +12,10 @@ import {
   uniqueCollections,
 } from "@shared/corpusFilters";
 import { displayCollectionName } from "@shared/collectionLabels";
+import { displayPassageTitle } from "@shared/passageTitles";
 import { router } from "expo-router";
-import { useMemo, useState } from "react";
-import { Pressable, TextInput, View } from "react-native";
+import { useCallback, useMemo, useState } from "react";
+import { Pressable, TextInput, View, Keyboard } from "react-native";
 import { colors } from "@/constants/theme";
 
 export default function ReadTab() {
@@ -44,6 +45,12 @@ export default function ReadTab() {
     [library, q, collection, theme],
   );
 
+  const openRandomPassage = useCallback(() => {
+    const item = pickRandomPassage(library, collection);
+    if (!item) return;
+    router.push({ pathname: "/passage/[id]", params: { id: item._id } });
+  }, [library, collection]);
+
   return (
     <PratibhaScreen onRefresh={refreshCorpus} refreshing={loading}>
       <PratibhaText variant="eyebrow">Library</PratibhaText>
@@ -56,6 +63,9 @@ export default function ReadTab() {
         onChangeText={setQ}
         placeholder="Search passages…"
         placeholderTextColor={colors.muted2}
+        returnKeyType="search"
+        onSubmitEditing={Keyboard.dismiss}
+        blurOnSubmit
         style={{
           marginTop: 16,
           borderRadius: 18,
@@ -68,14 +78,21 @@ export default function ReadTab() {
         }}
       />
 
-      <View style={{ marginTop: 14 }}>
-        <FilterSelectSheet
-          label="Collection"
-          tone="gold"
-          value={collection}
-          onChange={setCollection}
-          options={collectionOptions}
-        />
+      <View style={{ marginTop: 14, flexDirection: "row", alignItems: "flex-end", gap: 10 }}>
+        <View style={{ flex: 1 }}>
+          <FilterSelectSheet
+            label="Collection"
+            tone="gold"
+            value={collection}
+            onChange={setCollection}
+            options={collectionOptions}
+          />
+        </View>
+        {collection !== "all" ? (
+          <Pressable style={ui.button} onPress={openRandomPassage}>
+            <PratibhaText style={ui.buttonText}>Random</PratibhaText>
+          </Pressable>
+        ) : null}
       </View>
 
       <ThemeConstellation themes={themeConstellation} active={theme} onChange={setTheme} />
@@ -88,7 +105,7 @@ export default function ReadTab() {
             onPress={() => router.push({ pathname: "/passage/[id]", params: { id: item._id } })}
           >
             <PratibhaText variant="heading" style={{ fontSize: 18 }}>
-              {item.title || item.sutra_id || item._id}
+              {displayPassageTitle(item)}
             </PratibhaText>
             <PratibhaText variant="label" style={{ marginTop: 4 }}>
               {displayCollectionName(item.collection)}

@@ -1,7 +1,10 @@
-# Environment variables
+# Environment variables (never commit secrets)
 .env
-.env.local
-.env.production
+.env.*
+!.env.example
+web/.env.local
+web/.env.production
+mobile/.env.local
 
 # Python
 __pycache__/
@@ -18,6 +21,7 @@ eggs/
 lib/
 lib64/
 !web/src/lib/
+!mobile/lib/
 parts/
 sdist/
 var/
@@ -67,6 +71,20 @@ build/
 *.db
 *.sqlite
 *.sqlite3
+*.dump
+dist-share/
+pratibha-embeddings*.zip
+
+# Local scratch / personal notes (not for the repo)
+Personal NOISE
+Personal NOISE/
+Personal*/
+
+# IDE / editor
+.cursor/
+
+# Office lock files
+~$*
 
 # Logs
 logs/
@@ -105,3 +123,15 @@ coverage.xml
 data/raw_texts/pd/
 !data/raw_texts/pd/manifest.yml
 data/raw_texts.zip
+
+# Booklet working copies (keep source .md / build scripts)
+data/booklet/*.backup*.docx
+data/booklet/~$*
+
+# Expo
+mobile/.expo/
+mobile/dist/
+
+# Python tooling caches
+.mypy_cache/
+.ruff_cache/

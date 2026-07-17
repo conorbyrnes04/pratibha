@@ -10,6 +10,8 @@ import { FilterSelect } from "@/components/FilterSelect";
 import { ThemeConstellation } from "@/components/ThemeConstellation";
 import { buildCollectionOptions, filterPassages, topThemes, uniqueCollections } from "@/lib/corpusFilters";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
+import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
 import { displayPassageTitle, patanjaliSutraRef, sortPassagesForLibrary } from "@/lib/passageTitles";
 import { layerText, maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
 
@@ -67,11 +69,21 @@ function ReadPageContent() {
     router.replace(`/read${params.toString() ? `?${params.toString()}` : ""}`);
   }
 
+  const headerArtPool =
+    collection !== "all" ? collectionArtPool(collection) : generatedArtPool("bg-library");
+
   return (
     <main className="page-shell">
-      <p className="eyebrow">Archive</p>
-      <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Library</h1>
-      <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">Move idea-to-idea: choose a collection, follow a theme thread, open a passage, then trace related concepts.</p>
+      <section className="manuscript-card relative overflow-hidden p-6 sm:p-8">
+        <ArtBackdrop srcs={headerArtPool} variant="banner" priority={collection !== "all"} />
+        <div className="relative z-10">
+          <p className="eyebrow">Archive</p>
+          <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">
+            {collection !== "all" ? displayCollectionName(collection) : "Library"}
+          </h1>
+          <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">Move idea-to-idea: choose a collection, follow a theme thread, open a passage, then trace related concepts.</p>
+        </div>
+      </section>
 
       <div className="mt-6 grid gap-4 lg:grid-cols-[2fr_1fr]">
         <label className="block">
@@ -119,9 +131,17 @@ function ReadPageContent() {
         {filtered.slice(0, 300).map((x) => (
           <Link key={x._id} href={`/read/${encodeURIComponent(x._id)}`} className="card group block p-5 transition hover:-translate-y-0.5 hover:border-amber-300/30">
             <div className="flex items-start justify-between gap-4">
-              <div>
-                <h2 className="text-2xl leading-none text-amber-100">{displayPassageTitle(x)}</h2>
-                <p className="soft text-sm">{displayCollectionName(x.collection)} {x.section ? `• ${x.section}` : ""}</p>
+              <div className="flex min-w-0 items-start gap-3">
+                <ArtThumb
+                  src={collectionImageSrc(x.collection, x._id)}
+                  framed
+                  className="library-row__thumb hidden sm:block"
+                  imgClassName="[object-position:center_28%]"
+                />
+                <div className="min-w-0">
+                  <h2 className="text-2xl leading-none text-amber-100">{displayPassageTitle(x)}</h2>
+                  <p className="soft text-sm">{displayCollectionName(x.collection)} {x.section ? `• ${x.section}` : ""}</p>
+                </div>
               </div>
               {x.themes && x.themes.length > 0 ? (
                 <div className="flex flex-wrap justify-end gap-2">

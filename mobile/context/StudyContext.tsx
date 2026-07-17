@@ -14,7 +14,8 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { getVerses, setApiBaseOverride } from "@/lib/api";
+import Constants from "expo-constants";
+import { getVerses, isLocalhostApiBase, setApiBaseOverride } from "@/lib/api";
 import {
   API_OVERRIDE_KEY,
   loadProgress,
@@ -105,7 +106,7 @@ export function StudyProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     (async () => {
       const [p, api] = await Promise.all([loadProgress(), AsyncStorage.getItem(API_OVERRIDE_KEY)]);
-      if (api) setApiBaseOverride(api);
+      if (api && !(Constants.isDevice && isLocalhostApiBase(api))) setApiBaseOverride(api);
       setProgress(p);
       setHydrated(true);
       await refreshCorpus();

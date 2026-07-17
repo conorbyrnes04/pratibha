@@ -16,12 +16,15 @@ import { matchStepItem, resolveById } from "@/lib/learn/passages";
 import { stepKey, trackDoneCount } from "@/lib/learn/progress";
 import { learnHref, parseLearnSearch } from "@/lib/learn/url";
 import {
+  LEARNING_REALMS,
   LEARNING_TRACKS,
   RECOMMENDED_SPINE,
   type LearningStepSpec,
   type LearningTrack,
 } from "@/lib/learningPaths";
 import { learnStepContextId } from "@/lib/journalStorage";
+import { generatedArtPool } from "@/lib/collectionImages";
+import { ArtBackdrop } from "@/components/ArtImage";
 import type { VerseItem } from "@/lib/types";
 import { passagePreview } from "@/lib/verseLayers";
 import { displayCollectionName } from "@/lib/collectionLabels";
@@ -112,6 +115,8 @@ export default function LearnPage() {
     : anyProgress
       ? "Recommended next"
       : "Start here";
+  const heroRealmId =
+    LEARNING_REALMS.find((r) => r.trackIds.includes(heroTrack.id))?.id ?? "foundations";
 
   function syncUrl(trackId: string, stepId?: string | null) {
     if (!urlReadyRef.current) return;
@@ -191,19 +196,22 @@ export default function LearnPage() {
         <button
           type="button"
           onClick={() => continueTo(heroTrack.id, heroNextStep.id)}
-          className="resume-hero card group w-full border-amber-200/40 p-5 text-left transition hover:-translate-y-0.5 sm:p-6"
+          className="resume-hero card group w-full overflow-hidden border-amber-200/40 p-5 text-left transition hover:-translate-y-0.5 sm:p-6"
         >
-          <p className="font-sans text-xs uppercase tracking-[0.18em] text-amber-200/80">{heroLabel}</p>
-          <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <h2 className="text-3xl leading-none text-amber-100 sm:text-4xl">{heroTrack.title}</h2>
-              <p className="soft mt-2 max-w-xl text-sm leading-relaxed">
-                {startedTrackId
-                  ? `Next · Step ${heroNextIndex + 1}: ${heroNextStep.title}`
-                  : heroTrack.focus}
-              </p>
+          <ArtBackdrop srcs={generatedArtPool("bg-paths")} variant="card" />
+          <div className="relative z-10">
+            <p className="font-sans text-xs uppercase tracking-[0.18em] text-amber-200/80">{heroLabel}</p>
+            <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <h2 className="text-3xl leading-none text-amber-100 sm:text-4xl">{heroTrack.title}</h2>
+                <p className="soft mt-2 max-w-xl text-sm leading-relaxed">
+                  {startedTrackId
+                    ? `Next · Step ${heroNextIndex + 1}: ${heroNextStep.title}`
+                    : heroTrack.focus}
+                </p>
+              </div>
+              <span className="btn-primary px-5 py-2 text-sm">{startedTrackId ? "Continue →" : "Begin →"}</span>
             </div>
-            <span className="btn-primary px-5 py-2 text-sm">{startedTrackId ? "Continue →" : "Begin →"}</span>
           </div>
         </button>
 
@@ -211,6 +219,7 @@ export default function LearnPage() {
           track={heroTrack}
           step={heroNextStep}
           stepIndex={heroNextIndex}
+          realmId={heroRealmId}
           onBegin={() => continueTo(heroTrack.id, heroNextStep.id)}
         />
       </section>

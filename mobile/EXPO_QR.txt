@@ -1,0 +1,30 @@
+Pratibha iPhone dev — READ THIS FIRST
+======================================
+
+If Expo Go shows:
+  "Project is incompatible with this version of Expo Go.
+   The project you requested requires a newer version of Expo Go."
+
+Your phone’s Expo Go is OLDER than SDK 54. You need Expo Go iOS **54.0.0**
+(App Store → Expo Go → Update, or delete & reinstall). Check version in
+Expo Go → Profile (must match 54.x for this repo).
+
+Network + API (Mac 192.168.1.128) — verified OK from Mac:
+  curl http://192.168.1.128:8000/health
+  curl http://192.168.1.128:8082/status
+
+ONE path that should work NOW (same Wi‑Fi, Expo Go 54.0.0+):
+  1. Mac: EXPO_PUBLIC_API_BASE=http://192.168.1.128:8000 npx expo start --port 8082 --lan
+  2. iPhone: same Wi‑Fi, Private Relay OFF, no VPN
+  3. Expo Go → "Enter URL manually" → exp://192.168.1.128:8082
+     (or scan QR from that terminal)
+  4. After load: Settings → API → http://192.168.1.128:8000 → Save & reconnect
+
+Verify API from iPhone Safari (before blaming the app):
+  http://192.168.1.128:8000/health
+  → should show JSON with "ok":true
+
+Tunnel fallback (Metro only): --tunnel failed here (ngrok "remote gone away").
+When ngrok works: same command with --tunnel instead of --lan; API URL still LAN IP.
+
+Docker uses host port 8081 — always use Metro **8082**.

@@ -4,7 +4,9 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { getSources } from "@/lib/api";
 import { collectionIcon } from "@/lib/collectionIcons";
+import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
 import type { SourceAttribution } from "@/lib/types";
 
 const LICENSE_TONE: Record<string, string> = {
@@ -27,10 +29,19 @@ function SourceCard({ item }: { item: SourceAttribution }) {
   const tierClass = SELL_READY_TONE[item.sell_ready_tier] || "text-stone-300";
 
   return (
-    <article className={`manuscript-card rounded-[22px] p-5 sm:p-6 ${!inCorpus ? "opacity-75" : ""}`}>
+    <article className={`manuscript-card overflow-hidden rounded-[22px] ${!inCorpus ? "opacity-75" : ""}`}>
+      <div className="relative h-24 w-full sm:h-28">
+        <ArtThumb
+          src={collectionImageSrc(item.collection)}
+          className="absolute inset-0 h-full w-full"
+          imgClassName="object-cover [object-position:center_28%]"
+        />
+        <div className="art-overlay art-overlay--banner absolute inset-0" />
+      </div>
+      <div className="relative -mt-8 p-5 pt-0 sm:p-6 sm:pt-0">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="flex items-start gap-3">
-          <span className="mt-0.5 font-sans text-2xl text-amber-200/80" aria-hidden>
+          <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-amber-200/25 bg-[#0b0b14]/85 font-sans text-2xl text-amber-200/90 backdrop-blur-sm" aria-hidden>
             {collectionIcon(item.collection)}
           </span>
           <div>
@@ -125,6 +136,7 @@ function SourceCard({ item }: { item: SourceAttribution }) {
           Browse {displayCollectionName(item.collection)} in Library →
         </Link>
       ) : null}
+      </div>
     </article>
   );
 }
@@ -167,7 +179,9 @@ export default function SourcesPage() {
         solid ground.
       </p>
 
-      <section className="manuscript-card mt-8 rounded-[22px] p-5 sm:p-6">
+      <section className="manuscript-card relative mt-8 overflow-hidden rounded-[22px] p-5 sm:p-6">
+        <ArtBackdrop srcs={generatedArtPool("bg-sources")} variant="banner" />
+        <div className="relative z-10">
         <h2 className="text-2xl font-semibold text-stone-100">How Pratibha uses texts</h2>
         <div className="soft mt-4 space-y-3 font-sans text-sm leading-relaxed">
           <p>
@@ -199,6 +213,7 @@ export default function SourcesPage() {
             {summary.sell_ready_tiers?.yellow ? ` · ${summary.sell_ready_tiers.yellow} PD swap pending` : ""}
           </p>
         ) : null}
+        </div>
       </section>
 
       {error ? <p className="mt-6 font-sans text-sm text-red-300/90">{error}</p> : null}

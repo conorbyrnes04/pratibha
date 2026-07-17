@@ -1,4 +1,4 @@
-import type { VerseItem } from "@/lib/types";
+import type { VerseItem } from "./types";
 
 type VerseWithRef = VerseItem & {
   reference?: string;

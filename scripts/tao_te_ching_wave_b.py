@@ -36,7 +36,7 @@ TTC_SYSTEM = """You are a Pratibha editor for Lǎozǐ's Dào Dé Jīng (Tao Te C
 {
   "title": "thematic English title (never 'Chapter N')",
   "body": "1-3 sentence lead-in in modern English (not a copy of Legge)",
-  "pratibha_translation": "full chapter in fresh English; preserve dào, wúwéi, dé, zìrán in brackets with 汉字 on first key term",
+  "pratibha_translation": "full chapter in fresh English; key Daoist terms as English first with inline gloss English [*pinyin* 汉字] on first use (e.g. the Way [*dào* 道], non-being [*wú* 無]); never leave raw Chinese in English prose",
   "commentary": "two paragraphs (~120-180 words). Open with a philosophical claim about this chapter. Name the contested move. Do not paraphrase the translation.",
   "key_terms": [{"term": "pinyin 汉字", "definition": "graph/meaning -> Daoist sense -> translation stakes"}],
   "resonances": [{"citation": "Author, work, passage", "resonance": "structural homology", "divergence": "where the parallel breaks"}],

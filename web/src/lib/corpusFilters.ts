@@ -4,6 +4,27 @@ import { displayCollectionName } from "./collectionLabels";
 import { displayPassageTitle, isPatanjaliYogaSutras, passageSortKey, sortPassagesForLibrary } from "./passageTitles";
 export type ThemeCount = { theme: string; count: number };
 
+const SUMMARY_SOURCE_RE = /^(?:ASG|PHR)_SUM_/i;
+const SUMMARY_UNIT_RE = /(?:^|\.)(?:asg_sum|phr_sum)(?:_|\.|$)/i;
+
+/** Chapter-range overview meta-units (e.g. ASG_SUM_*) — not reader-facing verses. */
+export function isChapterSummaryMetaUnit(item: VerseItem): boolean {
+  const section = (item.section || "").trim().toLowerCase().replace(/\s+/g, "_");
+  if (section === "chapter_summary") return true;
+  const provSection = (item.provenance?.section || "").trim().toLowerCase().replace(/\s+/g, "_");
+  if (provSection === "chapter_summary") return true;
+  for (const key of ["sutra_id", "_id"] as const) {
+    const val = (item[key] || "").trim();
+    if (!val) continue;
+    if (SUMMARY_SOURCE_RE.test(val) || SUMMARY_UNIT_RE.test(val)) return true;
+  }
+  return false;
+}
+
+export function isReaderFacingUnit(item: VerseItem): boolean {
+  return !isChapterSummaryMetaUnit(item);
+}
+
 export type CollectionFilterOption = {
   value: string;
   label: string;
@@ -102,13 +123,14 @@ export function filterPassages(
 
 /** Prefer curated Zhuangzi MD units over raw chapter dumps when both exist. */
 export function preferStudyUnits(items: VerseItem[]): VerseItem[] {
+  const readerFacing = items.filter(isReaderFacingUnit);
   const mdChapters = new Set<number>();
-  for (const item of items) {
+  for (const item of readerFacing) {
     const m = (item._id || "").match(/zhuangzi_md_(\d+)/i);
     if (m) mdChapters.add(Number(m[1]));
   }
-  if (mdChapters.size === 0) return items;
-  return items.filter((item) => {
+  if (mdChapters.size === 0) return readerFacing;
+  return readerFacing.filter((item) => {
     const m = (item._id || "").match(/\.ctz_(\d+)/i);
     if (!m) return true;
     return !mdChapters.has(Number(m[1]));

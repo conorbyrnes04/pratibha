@@ -1,4 +1,5 @@
 const config = {
+  owner: "conm4n",
   name: "Pratibha",
   slug: "pratibha",
   version: "1.0.0",
@@ -18,6 +19,7 @@ const config = {
       NSAppTransportSecurity: {
         NSAllowsArbitraryLoads: true,
       },
+      ITSAppUsesNonExemptEncryption: false,
     },
   },
   android: {
@@ -34,6 +36,9 @@ const config = {
   },
   extra: {
     apiBase: process.env.EXPO_PUBLIC_API_BASE ?? "http://127.0.0.1:8000",
+    eas: {
+      projectId: "7051a79c-f704-4c73-9672-e170d31f0aaf",
+    },
   },
 };
 

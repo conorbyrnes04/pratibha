@@ -5,8 +5,16 @@ import { matchStepItem } from "@/lib/passages";
 import { learnStepContextId, notesForContext, stepKey, upsertJournalNote } from "@/lib/storage";
 import { useLocalSearchParams, router } from "expo-router";
 import { useEffect, useState, type ReactNode } from "react";
-import { Pressable, StyleSheet, TextInput, View } from "react-native";
+import { Pressable, StyleSheet, TextInput, View, Keyboard } from "react-native";
+import { displayPassageTitle } from "@shared/passageTitles";
 import type { JournalNote } from "@shared/types";
+
+function actionLabel(chatMode?: string): string {
+  if (chatMode === "practice") return "Practice with it";
+  if (chatMode === "compare") return "Compare traditions";
+  if (chatMode === "explain") return "Understand it";
+  return "Study with Pratibha";
+}
 
 export default function StepScreen() {
   const { trackId, stepId } = useLocalSearchParams<{ trackId: string; stepId: string }>();
@@ -51,6 +59,7 @@ export default function StepScreen() {
       });
     }
     setJournalBody("");
+    Keyboard.dismiss();
     setNotes(await notesForContext(noteKey));
   }
 
@@ -88,17 +97,39 @@ export default function StepScreen() {
 
       <Section title="Study">
         {item ? (
-          <Pressable
-            style={[ui.card, { marginTop: 8 }]}
-            onPress={() => router.push({ pathname: "/passage/[id]", params: { id: item._id } })}
-          >
-            <PratibhaText variant="heading" style={{ fontSize: 18 }}>
-              {item.title || item._id}
-            </PratibhaText>
-            <PratibhaText variant="soft" style={{ marginTop: 4, fontSize: 13 }}>
-              Tap to open passage →
-            </PratibhaText>
-          </Pressable>
+          <>
+            <Pressable
+              style={[ui.card, { marginTop: 8 }]}
+              onPress={() =>
+                router.push({
+                  pathname: "/passage/[id]",
+                  params: { id: item._id, backTrackId: track.id, backStepId: step.id },
+                })
+              }
+            >
+              <PratibhaText variant="heading" style={{ fontSize: 18 }}>
+                {displayPassageTitle(item)}
+              </PratibhaText>
+              <PratibhaText variant="soft" style={{ marginTop: 4, fontSize: 13 }}>
+                Tap to open passage →
+              </PratibhaText>
+            </Pressable>
+            <Pressable
+              style={[ui.button, { marginTop: 10 }]}
+              onPress={() =>
+                router.push({
+                  pathname: "/(tabs)/chat",
+                  params: {
+                    verse_id: item._id,
+                    q: step.chatPrompt,
+                    mode: step.chatMode || "question",
+                  },
+                })
+              }
+            >
+              <PratibhaText style={ui.buttonText}>{actionLabel(step.chatMode)}</PratibhaText>
+            </Pressable>
+          </>
         ) : (
           <PratibhaText variant="soft">Passage loading…</PratibhaText>
         )}

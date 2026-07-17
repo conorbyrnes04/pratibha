@@ -251,6 +251,22 @@ def _is_summary_heading(heading: str) -> bool:
     )
 
 
+def _strip_overview_heading(text: str) -> str:
+    """Remove leading 'Overview' heading from chapter-summary blocks."""
+    t = _strip_md(text)
+    if not t:
+        return t
+    lines = t.splitlines()
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    if lines and lines[0].strip().lower() == "overview":
+        lines = lines[1:]
+        while lines and not lines[0].strip():
+            lines.pop(0)
+        t = "\n".join(lines).strip()
+    return t or _strip_md(text)
+
+
 def _summary_unit_id(heading: str) -> str:
     m = RANGE_RE.search(heading)
     if m:
@@ -261,7 +277,7 @@ def _summary_unit_id(heading: str) -> str:
 
 
 def _make_summary_record(heading: str, block: str) -> dict[str, Any] | None:
-    body = _strip_md(block)
+    body = _strip_overview_heading(block)
     if len(body) < 140:
         return None
     translation = _short_translation(body)
@@ -269,11 +285,13 @@ def _make_summary_record(heading: str, block: str) -> dict[str, Any] | None:
         return None
     title = _strip_md(heading)
     abhyasa = ""
-    if "practice" in body.lower():
-        # Extract first practice paragraph if present.
-        m = re.search(r"Practice.*?\n(.+?)(?:\n\n|$)", body, flags=re.IGNORECASE | re.DOTALL)
+    if "practice" in block.lower():
+        # Extract first practice paragraph if present (skip generic stubs on summaries).
+        m = re.search(r"Practice.*?\n(.+?)(?:\n\n|$)", block, flags=re.IGNORECASE | re.DOTALL)
         if m:
-            abhyasa = _clean(m.group(1))
+            candidate = _clean(m.group(1))
+            if candidate and "read this passage slowly three times" not in candidate.lower():
+                abhyasa = candidate
     return {
         "sutra_id": _summary_unit_id(heading),
         "collection": "Astavakra Gita",
