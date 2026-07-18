@@ -6,7 +6,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { getVerses } from "@/lib/api";
 import { DailySitCard } from "@/components/learn/DailySitCard";
 import { JourneyMandala } from "@/components/learn/JourneyMandala";
-import { PassageMaturityBadge } from "@/components/learn/PassageMaturityBadge";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
 import { ThreadsConstellation } from "@/components/learn/ThreadsConstellation";
 import { YantraBreath } from "@/components/learn/YantraBreath";
@@ -25,6 +24,7 @@ import {
 import { learnStepContextId } from "@/lib/journalStorage";
 import { generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop } from "@/components/ArtImage";
+import { Glyph } from "@/components/Glyph";
 import type { VerseItem } from "@/lib/types";
 import { passagePreview } from "@/lib/verseLayers";
 import { displayCollectionName } from "@/lib/collectionLabels";
@@ -185,12 +185,19 @@ export default function LearnPage() {
 
   return (
     <main className="page-shell">
-      <p className="eyebrow">Guided study</p>
-      <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Paths</h1>
-      <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
-        Paths descend like a cakra — gate by gate. Threads trace one golden insight across traditions. Each step is a
-        practice, not a playlist item.
-      </p>
+      <div className="relative">
+        <Glyph
+          name="mandala"
+          size="hero"
+          className="pointer-events-none absolute -right-4 -top-6 opacity-[0.12] sm:-right-2 sm:top-0"
+        />
+        <p className="eyebrow">Guided study</p>
+        <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Paths</h1>
+        <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
+          Paths descend like a cakra — gate by gate. Threads trace one golden insight across traditions. Each step is a
+          practice, not a playlist item.
+        </p>
+      </div>
 
       <section className="mt-7">
         <button
@@ -360,7 +367,6 @@ export default function LearnPage() {
 
                       <div>
                         <p className="layer-heading">Study these passages</p>
-                        <PassageMaturityBadge item={item} />
                         <div className="mt-2 space-y-2">
                           {item ? (
                             <PassageLink item={item} primary backHref={backHref} />

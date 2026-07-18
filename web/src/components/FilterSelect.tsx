@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import { Glyph } from "@/components/Glyph";
+import type { GlyphSlug } from "@/lib/glyphs";
 
 export type FilterSelectOption = {
   value: string;
   label: string;
   hint?: string;
   icon?: string;
+  glyph?: GlyphSlug;
 };
 
 type FilterSelectProps = {
@@ -62,7 +65,11 @@ export function FilterSelect({
         className="filter-select__trigger"
       >
         <span className="filter-select__value">
-          {selected?.icon ? <span className="filter-select__icon">{selected.icon}</span> : null}
+          {selected?.glyph ? (
+            <Glyph name={selected.glyph} size="sm" className="filter-select__glyph" />
+          ) : selected?.icon ? (
+            <span className="filter-select__icon">{selected.icon}</span>
+          ) : null}
           <span className="filter-select__label">{selected?.label || placeholder}</span>
         </span>
         <span className="filter-select__chevron" aria-hidden>
@@ -86,7 +93,11 @@ export function FilterSelect({
                   className={`filter-select__option${active ? " filter-select__option--active" : ""}`}
                 >
                   <span className="filter-select__option-label">
-                    {option.icon ? <span className="filter-select__option-icon">{option.icon}</span> : null}
+                    {option.glyph ? (
+                      <Glyph name={option.glyph} size="sm" className="filter-select__glyph" />
+                    ) : option.icon ? (
+                      <span className="filter-select__option-icon">{option.icon}</span>
+                    ) : null}
                     <span className="filter-select__option-text">{option.label}</span>
                   </span>
                   {option.hint ? <span className="filter-select__option-hint">{option.hint}</span> : null}

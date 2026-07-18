@@ -8,7 +8,9 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { passagePreview, practiceText } from "@/lib/verseLayers";
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
+import { GATEWAY_GLYPHS } from "@/lib/glyphs";
 import { ArtBackdrop } from "@/components/ArtImage";
+import { Glyph, GlyphOrnament } from "@/components/Glyph";
 
 const gateways = [
   {
@@ -17,6 +19,7 @@ const gateways = [
     title: "Archive",
     copy: "Browse the corpus by tradition, passage, and theme.",
     art: "bg-library",
+    glyph: GATEWAY_GLYPHS.archive,
   },
   {
     href: "/chat",
@@ -24,6 +27,7 @@ const gateways = [
     title: "Dialogue",
     copy: "Question the texts, compare traditions, and ask for practice.",
     art: "heart-sutra",
+    glyph: GATEWAY_GLYPHS.dialogue,
   },
   {
     href: "/random",
@@ -31,6 +35,7 @@ const gateways = [
     title: "Oracle",
     copy: "Let an unexpected verse interrupt your current frame.",
     art: "default",
+    glyph: GATEWAY_GLYPHS.oracle,
   },
   {
     href: "/learn",
@@ -38,8 +43,9 @@ const gateways = [
     title: "Curriculum",
     copy: "Move through guided sequences from concept to embodiment.",
     art: "bg-paths",
+    glyph: GATEWAY_GLYPHS.curriculum,
   },
-];
+] as const;
 
 export default function Home() {
   const [daily, setDaily] = useState<VerseItem | null>(null);
@@ -63,7 +69,7 @@ export default function Home() {
           <p className="eyebrow">Today&apos;s passage</p>
           <h1 className="mt-4 text-3xl font-semibold leading-none text-amber-100 sm:text-4xl">{dailyTitle}</h1>
           <p className="soft mt-2 font-sans text-sm">{dailyCollection || "Pratibha corpus"}</p>
-          <div className="ornament my-6" />
+          <GlyphOrnament name="lotus" className="my-6 max-w-md" />
           <blockquote className="max-w-3xl text-2xl leading-snug text-stone-100">
             {dailyLine || "Open a passage, let it read you back, then practice one concrete shift."}
           </blockquote>
@@ -109,7 +115,10 @@ export default function Home() {
             <Link key={g.href} href={g.href} className="card group relative block overflow-hidden p-5 transition hover:-translate-y-0.5 hover:border-amber-200/40">
               <ArtBackdrop srcs={generatedArtPool(g.art)} variant="card" />
               <div className="relative z-10">
-                <p className="layer-heading">{g.title}</p>
+                <div className="flex items-start justify-between gap-3">
+                  <p className="layer-heading">{g.title}</p>
+                  <Glyph name={g.glyph} size="md" className="opacity-80 transition duration-300 group-hover:opacity-100 group-hover:scale-105" />
+                </div>
                 <h2 className="mt-5 text-2xl font-semibold text-amber-100">{g.label}</h2>
                 <p className="soft mt-3 text-base leading-relaxed">{g.copy}</p>
                 <p className="mt-6 font-sans text-xs uppercase tracking-[0.2em] text-amber-200/70 group-hover:text-amber-100">
@@ -122,17 +131,18 @@ export default function Home() {
       </section>
 
       <section className="mt-12 grid gap-4 lg:grid-cols-3">
-        {["Source-grounded", "Cross-tradition", "Practice-ready"].map((label, idx) => (
-          <div key={label} className="citation-card p-5">
+        {(
+          [
+            { label: "Source-grounded", glyph: "key" as const, copy: "Original passages stay visible so interpretation never floats free." },
+            { label: "Cross-tradition", glyph: "infinity" as const, copy: "Resonances name both shared structure and real divergence." },
+            { label: "Practice-ready", glyph: "spiral" as const, copy: "Every study path returns to one embodied instruction." },
+          ] as const
+        ).map((item, idx) => (
+          <div key={item.label} className="citation-card relative overflow-hidden p-5">
+            <Glyph name={item.glyph} size="xl" className="pointer-events-none absolute -right-2 -top-2 opacity-[0.14]" />
             <p className="text-4xl text-amber-200/80">0{idx + 1}</p>
-            <h2 className="mt-3 text-2xl text-stone-100">{label}</h2>
-            <p className="soft mt-2 leading-relaxed">
-              {idx === 0
-                ? "Original passages stay visible so interpretation never floats free."
-                : idx === 1
-                  ? "Resonances name both shared structure and real divergence."
-                  : "Every study path returns to one embodied instruction."}
-            </p>
+            <h2 className="mt-3 text-2xl text-stone-100">{item.label}</h2>
+            <p className="soft mt-2 leading-relaxed">{item.copy}</p>
           </div>
         ))}
       </section>

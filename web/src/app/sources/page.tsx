@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { getSources } from "@/lib/api";
-import { collectionIcon } from "@/lib/collectionIcons";
+import { collectionGlyph } from "@/lib/glyphs";
 import { collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
+import { Glyph } from "@/components/Glyph";
 import type { SourceAttribution } from "@/lib/types";
 
 const LICENSE_TONE: Record<string, string> = {
@@ -24,6 +25,7 @@ function SourceCard({ item }: { item: SourceAttribution }) {
   const inCorpus = item.passages_in_corpus > 0;
   const licenseClass = LICENSE_TONE[item.license] || "text-stone-300";
   const links = publicLinks(item);
+  const glyph = collectionGlyph(item.collection);
 
   return (
     <article className={`manuscript-card overflow-hidden rounded-[22px] ${!inCorpus ? "opacity-75" : ""}`}>
@@ -39,10 +41,10 @@ function SourceCard({ item }: { item: SourceAttribution }) {
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="flex items-start gap-3">
             <span
-              className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-amber-200/25 bg-[#0b0b14]/85 font-sans text-2xl text-amber-200/90 backdrop-blur-sm"
+              className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-amber-200/25 bg-[#0b0b14]/85 backdrop-blur-sm"
               aria-hidden
             >
-              {collectionIcon(item.collection)}
+              <Glyph name={glyph} size="sm" />
             </span>
             <div>
               <h2 className="text-2xl font-semibold tracking-[-0.03em] text-stone-100">
