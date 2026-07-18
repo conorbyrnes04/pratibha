@@ -55,6 +55,22 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 3.30
+    resonance: Both texts make knowledge a function of sustained attentional focus on a specific locus (navel plexus / attention
+      itself), not of conceptual content or object-knowledge. The act of holding attention steady *is* the epistemic act.
+    divergence: Patañjali locates knowledge through attention to a bodily center and its constitutional effects; Śiva Sūtra
+      makes attention itself—independent of object or location—the ground of knowledge.
+    passage_id: patañjali_yoga_sūtras.ys_3_30
+  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 7
+    resonance: Both identify knowledge as a reorientation of attention away from habitual external focus toward an inward
+      presence that is always already operative but obscured by misdirected perception.
+    divergence: Plotinus frames this as a turning toward transcendent Unity beyond the soul; Śiva Sūtra frames it as recognition
+      that attention itself, when sustained, *is* knowledge—immanent, not transcendent.
+    passage_id: plotinus_enneads.enn_vi_9_07
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

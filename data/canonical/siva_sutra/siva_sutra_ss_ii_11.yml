@@ -56,6 +56,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 2.31
+    resonance: 'Both texts establish a practice (yajna/vows) that operates independent of circumstantial conditions (time,
+      place, utility, class) yet produces concrete results (siddhi/universal efficacy). The structure is: stripped-down discipline
+      → transcendence of contingency → accomplishment.'
+    divergence: Patañjali grounds universality in ethical vows that transcend social hierarchy; the Siva Sutra grounds it
+      in temporal sacrifice itself, making time the medium rather than the obstacle.
+    passage_id: patañjali_yoga_sūtras.ys_2_31
+  - citation: 'Vijnana Bhairava — Yukti #21'
+    resonance: Both texts prescribe a specific meditative practice (imagination/visualization of space; sacrifice to time)
+      as the direct mechanism by which stability and accomplishment arise. Practice is not preparation but the generative
+      act itself.
+    divergence: The Vijnana Bhairava uses spatial imagination (body-pervading space) as the vehicle; the Siva Sutra uses temporal
+      surrender (sacrifice to kala) as the vehicle—one works through embodied perception, the other through temporal submission.
+    passage_id: vijnana_bhairava.yukti_021
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

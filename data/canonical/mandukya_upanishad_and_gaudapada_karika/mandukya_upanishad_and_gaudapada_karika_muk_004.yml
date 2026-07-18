@@ -50,6 +50,32 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #23'
+    resonance: Both texts turn attention inward to the heart-space as the locus where ordinary consciousness dissolves and
+      the knower is revealed. The Mandukya examines the three states to isolate the witness; Vijnana Bhairava 23 dissolves
+      sense-faculties into the Heart's innermost recess to obtain supreme blessedness—both moves collapse outward content
+      into a single interior point of clarity.
+    divergence: The Mandukya uses systematic state-analysis (waking, dream, deep sleep) as the method; Vijnana Bhairava employs
+      direct meditative absorption into the Heart-space as the method. The Upanishad is epistemological; the Tantra is phenomenological.
+    passage_id: vijnana_bhairava.yukti_023
+  - citation: Astavakra Gita — Verse 1.12
+    resonance: Both identify the knower as a non-acting witness that remains constant across all states and contents. The
+      Mandukya's analytical turn toward the knower parallels Astavakra's declaration that the Self is witness, all-pervading,
+      and inactive—both establish the observer as the stable ground independent of what passes.
+    divergence: The Mandukya arrives at the witness through systematic examination of three states; Astavakra asserts the
+      Self's nature directly as a non-dual principle. One is analytical; the other is aphoristic and non-dual.
+    passage_id: astavakra_gita.asg_1_12
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: Both texts gather the dispersed faculties (senses, mind, attention) into a single interior locus—the heart—as
+      the method for transcending ordinary consciousness. The Mandukya's inward turn of attention and the Svetasvatara's gathering
+      of senses and mind into the heart both use concentration as the gateway to realization.
+    divergence: The Mandukya emphasizes the knower's clarity through state-analysis; the Svetasvatara emphasizes embodied
+      alignment and crossing fear through the boat of Brahman. One is contemplative-analytical; the other is yogic-soteriological.
+    passage_id: svetasvatara_upanishad.svu_009
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

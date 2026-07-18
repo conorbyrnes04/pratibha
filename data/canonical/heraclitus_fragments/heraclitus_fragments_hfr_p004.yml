@@ -53,6 +53,26 @@ pratibha_layers:
     definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
       ethics into cosmology: how you live is how you align (or fail) with measure.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Beyond Image, Known in the Heart
+    resonance: 'Both texts deny sensory or conceptual access to a transcendent principle that governs all things: Heraclitus
+      claims eyes and ears fail to witness the cosmic measure (logos) in those with crude souls; Svetasvatara states no one
+      grasps the supreme principle through spatial or perceptual means. Each makes sensory inadequacy the pivot for claiming
+      a higher order of knowing.'
+    divergence: Heraclitus grounds the failure in the observer's ethical character (rude soul), while Svetasvatara grounds
+      it in the transcendent's radical transcendence beyond all categories of apprehension.
+    passage_id: svetasvatara_upanishad.svu_012
+  - citation: 'Vijnana Bhairava — Yukti #37'
+    resonance: 'Both texts locate transformative knowledge at the threshold of breath-cessation or pause: Heraclitus invokes
+      breath (pneuma) as the measure that witnesses align with; Vijnana Bhairava Yukti 37 describes the yogī becoming a vessel
+      for equality-consciousness precisely at the termination of the breath-pause. Each treats the breath''s suspension as
+      the site where ordinary witness fails and higher alignment emerges.'
+    divergence: Heraclitus treats breath as the cosmic principle itself that the soul must attune to; the Tantric text treats
+      breath-pause as a technical gateway where dualistic consciousness dissolves into non-dual recognition.
+    passage_id: vijnana_bhairava.yukti_037
+  layer_provenance: generated_grounded
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
   body: Kyes and ears are bad witnesses to men having rude souls.

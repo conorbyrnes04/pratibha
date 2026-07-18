@@ -82,6 +82,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — The Cosmic Person Beyond and Within
+    resonance: Both texts locate the ultimate principle (Śiva/the Lord) within the heart-cave as the innermost dwelling of
+      consciousness, making recognition of this interior presence the path to knowledge. The Pratyabhijñā's emphasis on 'recognition'
+      (pratyabhijñā) structurally mirrors the Upanishadic revelation of Śiva already present within.
+    divergence: The Upanishad emphasizes Śiva as transcendent cosmic principle dwelling within all beings; Pratyabhijñā makes
+      recognition of one's own consciousness as Śiva the active epistemic move, centering self-realization over cosmic theology.
+    passage_id: svetasvatara_upanishad.svu_018
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: Both texts make 'recognition of the heart' (hṛdaya-pratyabhijñā) the pivot point where ignorance dissolves
+      and omniscience emerges. The Spandakarika's tantrika achieves harmony through heart-recognition; Pratyabhijñā's very
+      title encodes this same recognition as the liberatory move.
+    divergence: Spandakarika grounds recognition in the vibratory pulse (spanda) of consciousness; Pratyabhijñā emphasizes
+      the logical-phenomenological structure of self-recognition as the recovery of what was always known.
+    passage_id: yoga_spandakarika.sp_39
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

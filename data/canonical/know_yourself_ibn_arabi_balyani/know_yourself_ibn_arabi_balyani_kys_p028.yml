@@ -43,6 +43,27 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
+    resonance: Both texts posit that ordinary perception obscures a non-dual reality, and that true knowledge consists in
+      recognizing the essential oneness underlying apparent multiplicity. The Upaniṣad's instruction to 'know the unknowable'
+      through understanding all things as one mirrors Ibn Arabi's claim that knowledge of God requires recognizing that things
+      have no independent existence.
+    divergence: The Upaniṣad frames this as a pedagogical method (hearing, perceiving, knowing through instruction), while
+      Ibn Arabi grounds it in an ontological claim about the non-existence of things themselves—knowledge follows from metaphysical
+      negation, not from perceptual reorientation.
+    passage_id: chāndogya_upaniṣad.chu_vi_01
+  - citation: The Book of Chuang Tzu — chapter 22
+    resonance: 'Both texts enact a paradox: they use language and conceptual inquiry to point toward a knowledge that transcends
+      conceptual thought. The Chuang Tzu''s dialogue between Knowledge and Do-nothing Say-nothing mirrors Ibn Arabi''s suspension
+      of interpretation—both suggest that the sought knowledge cannot be grasped through the ordinary operations of mind.'
+    divergence: Chuang Tzu emphasizes the futility of seeking Tao through cognition itself (the comic failure of Knowledge's
+      quest), while Ibn Arabi emphasizes the logical impossibility of negation (things cannot pass away because they do not
+      exist)—one is epistemological, the other ontological.
+    passage_id: the_book_of_chuang_tzu.ctz_022
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

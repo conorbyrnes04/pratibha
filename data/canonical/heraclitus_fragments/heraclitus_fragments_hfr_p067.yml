@@ -48,6 +48,25 @@ pratibha_layers:
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
     arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: The Book of Chuang Tzu — chapter 8
+    resonance: 'Both texts displace personal expectation and hope as the measure of what is real or true: Heraclitus says
+      death brings what mortals ''neither hope nor think,'' while Chuang Tzu''s true persons ''do not glorify success'' and
+      refuse to construct identity through desire. Each makes ethical alignment depend on releasing the ego''s anticipatory
+      frame.'
+    divergence: Heraclitus grounds this displacement in a cosmic measure (logos) that governs all things; Chuang Tzu grounds
+      it in spontaneous non-action (wu wei) that flows with the Way's own emptiness.
+    passage_id: the_book_of_chuang_tzu.ctz_008
+  - citation: Isavasya Upanishad — Mantra 17
+    resonance: 'Both passages mark death as a dissolution where individual breath returns to a universal element: Heraclitus
+      implies breath rejoins the cosmic order that exceeds mortal hope, while the Isavasya Upanishad explicitly returns breath
+      to ''immortal air'' and body to ashes. Each treats death as reintegration into what transcends the personal.'
+    divergence: Heraclitus emphasizes the ethical shock of what exceeds expectation; the Upanishad emphasizes the metaphysical
+      continuity of the immortal element itself.
+    passage_id: isavasya_upanishad.isa_023
+  layer_provenance: generated_grounded
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
   body: There awaits men after death what they neither hope nor think.

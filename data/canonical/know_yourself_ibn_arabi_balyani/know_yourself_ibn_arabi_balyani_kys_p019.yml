@@ -43,6 +43,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāktopāya
+    resonance: 'Both texts locate knowledge or realization in the quality and direction of attention itself rather than in
+      conceptual content: Ibn Arabi''s ''clarity grows when attention returns to the knower'' mirrors the Śiva Sūtra''s ''sustained
+      attention is knowledge,'' making attention the instrument of self-recognition.'
+    divergence: Ibn Arabi frames this as a negation of separate selfhood ('you are not you'), while the Śiva Sūtra treats
+      attention as an active power of consciousness that reveals what already is.
+    passage_id: siva_sutra.ss_ii_12
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verses 8–12 · Om and the Fourfold Correspondence
+    resonance: Both passages establish a method of self-inquiry by mapping an external form (Om's phonetic structure / the
+      Prophet's pointing) onto an internal structure of consciousness, using the correspondence itself as the vehicle for
+      recognizing one's true nature.
+    divergence: The Upaniṣad uses systematic analytical correspondence between sound and states of consciousness, while Ibn
+      Arabi uses paradoxical negation ('you are Him and there is no you') to dissolve the inquirer into the inquiry.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_010
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

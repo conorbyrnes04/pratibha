@@ -49,6 +49,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: Both texts dissolve the constructed scaffolding of mind by redirecting attention away from bounded form toward
+      an unbounded, centerless awareness. Vijnana Bhairava's 'making the mind supportless' and Tilopa's 'mind has no center
+      and no circumference' share the move of negating structural containment as the path to clarity.
+    divergence: Vijnana Bhairava emphasizes the cessation of mental construct-assembly as technique, while Tilopa uses spatial
+      metaphor (space, sky) to point directly to the nature of mind itself—one is procedural, the other descriptive-pointing.
+    passage_id: tilopa_mahamudra.til_002
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: Both texts locate liberation in a reversal of attention from external content to the knower's own nature. Vijnana
+      Bhairava's 'clarity grows when attention returns to the knower' and Spandakarika's 'reveals to the tantrika his own
+      nature' both make the self-disclosure of consciousness the fruit of redirected awareness.
+    divergence: Vijnana Bhairava frames this as negation (unsupporting the mind), while Spandakarika frames it as positive
+      attainment ('supreme nectar, immortality')—one via subtraction, one via fullness.
+    passage_id: yoga_spandakarika.sp_32
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

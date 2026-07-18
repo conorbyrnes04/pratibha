@@ -49,6 +49,26 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — The One Hidden in All Beings
+    resonance: Both texts posit a single transcendent witness-consciousness that pervades and underlies all states of being—the
+      Siva Sutra's 'enjoyer of the three states' and the Svetasvatara's 'witness, knower, the one alone' standing behind multiplicity
+      as its unified ground.
+    divergence: The Svetasvatara emphasizes the hidden, all-pervading God as ontological substrate ('inner self of all beings'),
+      while the Siva Sutra foregrounds the experiential act of enjoyment (bhokta) across distinct phenomenal states, making
+      consciousness-as-enjoyer rather than being-as-ground the primary move.
+    passage_id: svetasvatara_upanishad.svu_003
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 4 · Svapna — The Dream State
+    resonance: Both texts anatomize consciousness through its distinct states—the Siva Sutra naming waking, dream, and deep
+      sleep as three modalities unified by a single experiencer, and the Mandukya naming Taijasa as the dream quarter with
+      its own specific phenomenology—establishing state-differentiation as the method for isolating the invariant witness.
+    divergence: The Mandukya catalogs the qualitative features of each state (seven limbs, nineteen mouths, subtle objects),
+      whereas the Siva Sutra abstracts away from state-content to focus solely on the fact of unified enjoyment across all
+      three, prioritizing the witness-function over phenomenological detail.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_006
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

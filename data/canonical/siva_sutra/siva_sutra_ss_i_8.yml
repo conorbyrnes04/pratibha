@@ -53,6 +53,28 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 10 · U — Dream Consciousness
+    resonance: 'Both texts organize knowledge through distinct states of consciousness (waking vs. dream), assigning each
+      state a specific epistemic character: the Siva Sutra locates ordinary object-oriented knowing in the waking state, while
+      the Mandukya assigns Taijasa (dream consciousness) its own intermediate epistemic status. Each state produces a different
+      quality or mode of knowing.'
+    divergence: The Siva Sutra treats waking-state knowledge as the baseline for ordinary knowing, while the Mandukya treats
+      dream consciousness as a distinct ontological and epistemic position within a four-fold hierarchy that ultimately transcends
+      all states.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_013
+  - citation: 'Bhagavad Gita — Field and Knower: The Anatomy of Liberation'
+    resonance: 'Both texts establish knowledge through a structural differentiation: the Siva Sutra anchors knowing in orientation
+      toward objects (the field of experience), while the Bhagavad Gita''s liberating discernment begins by observing the
+      field (body, mind, sensory process) as distinct from the knower. Both make the relationship between consciousness and
+      its object-domain constitutive of how knowledge operates.'
+    divergence: The Siva Sutra describes ordinary knowing as inherently object-oriented without judgment, whereas the Gita's
+      framework requires discernment to separate the knower from the field—implying that ordinary knowing conflates them and
+      liberation requires their differentiation.
+    passage_id: bhagavad_gita.bg_md_010
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

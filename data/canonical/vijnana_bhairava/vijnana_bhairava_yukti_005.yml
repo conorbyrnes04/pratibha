@@ -55,6 +55,30 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a structural inversion: the soul/awareness continuously performs its characteristic act
+      (attention to the knower), but ordinary perception remains obstructed by fixation on external content. Clarity emerges
+      when perception redirects from sense-objects to the source of perception itself.'
+    divergence: Plotinus frames this as a metaphysical problem of soul-consciousness alignment; Vijnana Bhairava treats it
+      as a yogic technique using sequential centers and vowels to systematically retrain attention inward.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Tilopa Mahamudra — Look at the Looker
+    resonance: 'Both texts prescribe a reversal of attention''s habitual direction: from the seen (external content) to the
+      seer (the knower/looker), with the understanding that this reorientation reveals an innate or intrinsic nature already
+      present but obscured by outward focus.'
+    divergence: Tilopa emphasizes guru-devotion and sudden recognition of the sahaja (innate); Vijnana Bhairava uses systematic
+      meditative sequencing through centers and vowels as the method of reorientation.
+    passage_id: tilopa_mahamudra.til_003
+  - citation: The Book of Chuang Tzu — chapter 19
+    resonance: Both texts redirect attention away from what cannot be accomplished or what is transient (passing content,
+      external things) toward what is stable and intrinsic—a reordering of where consciousness naturally aligns itself.
+    divergence: Chuang Tzu emphasizes non-action and acceptance of life's limits; Vijnana Bhairava prescribes active, structured
+      inward attention through embodied centers and vowel-sound correspondences.
+    passage_id: the_book_of_chuang_tzu.ctz_019
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

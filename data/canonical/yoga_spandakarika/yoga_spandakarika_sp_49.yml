@@ -82,6 +82,23 @@ pratibha_layers:
   label: Practice (Abhyasa)
   body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute in
     the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — Verse 1.8
+    resonance: Both texts identify ego-identification ('I am the doer' / ahamkara) as the binding mechanism that creates and
+      sustains the obstacle to liberation. The Spandakarika locates this obstacle in the subtle body's spatial division; Astavakra
+      locates it in the false doer-sense that must be inverted through counter-conviction.
+    divergence: Spandakarika treats the subtle body as structurally constitutive of duality itself; Astavakra treats ego-identification
+      as a mental conviction that can be directly negated through jnana without reference to subtle anatomy.
+    passage_id: astavakra_gita.asg_1_8
+  - citation: Patañjali Yoga Sūtras 4.4
+    resonance: 'Both texts locate the root of multiplicity and limitation in ego-sense (ahamkara): Spandakarika identifies
+      it as tied to the subtle body''s division; Patañjali identifies it as the generative principle of all individual minds.'
+    divergence: Spandakarika emphasizes spatial division and the subtle body as the mechanism; Patañjali treats ego-sense
+      as the causal principle of mind-creation without reference to subtle bodily anatomy.
+    passage_id: patañjali_yoga_sūtras.ys_4_04
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

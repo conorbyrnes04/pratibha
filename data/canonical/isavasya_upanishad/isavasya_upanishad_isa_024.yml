@@ -71,6 +71,31 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Close each day with one sincere request for clearer conduct tomorrow.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.28
+    resonance: 'Both texts treat mantra as a dual practice: utterance paired with contemplative attention to meaning. The
+      Isavasya prayer invokes Fire while requesting guidance; Patañjali''s sutra joins repetition of the word with meditation
+      on its sense—each binding vocalization to inner understanding.'
+    divergence: The Upanishad frames mantra as ethical petition to a divine agent (Fire); Patañjali treats it as a technical
+      method for stabilizing mind without invoking external agency.
+    passage_id: patañjali_yoga_sūtras.ys_1_28
+  - citation: Svetasvatara Upanishad — Fire by Friction, Self by Om
+    resonance: Both use fire as a metaphor for latent spiritual power requiring proper means to manifest. The Isavasya addresses
+      Fire as guide and purifier; the Svetasvatara describes the Self as fire hidden in wood, brought forth 'by the right
+      means'—each posits a dormant force activated through correct practice.
+    divergence: The Isavasya frames fire as an external divine power to petition; the Svetasvatara locates fire as the Self's
+      intrinsic nature, requiring technique rather than prayer.
+    passage_id: svetasvatara_upanishad.svu_008
+  - citation: Siva Sutra — Śāktopāya
+    resonance: Both assert that mantra operates through embodied realization, not mere conceptual knowledge. The Isavasya's
+      prayer seeks actual purification and guidance (not just intellectual assent); the Siva Sutra states 'Knowledge becomes
+      embodied reality'—each insists mantra's efficacy lies in lived transformation.
+    divergence: The Isavasya emphasizes ethical purification through divine grace; the Siva Sutra emphasizes non-dual recognition
+      where knowledge and reality collapse into identity.
+    passage_id: siva_sutra.ss_ii_3
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

@@ -53,6 +53,32 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Knowledge and Ignorance in the Imperishable
+    resonance: 'Both texts posit a fundamental duality hidden within or prior to manifest reality: the Siva Sutra describes
+      knowledge withdrawing to reveal dreamlike perception, while the Svetasvatara names knowledge and ignorance as two principles
+      concealed in the imperishable Brahman. Each treats the withdrawal or concealment of one epistemic mode as generative
+      of another.'
+    divergence: The Siva Sutra emphasizes the dynamic withdrawal of refined knowledge as a lived phenomenological event, whereas
+      the Svetasvatara presents knowledge and ignorance as static metaphysical principles eternally hidden in Brahman's nature.
+    passage_id: svetasvatara_upanishad.svu_013
+  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 4
+    resonance: 'Both texts describe a threshold where ordinary knowledge must cease or be transcended: the Siva Sutra shows
+      knowledge withdrawing to allow dreamlike perception to arise, and Plotinus describes awareness of the ultimate Principle
+      as transcending all knowledge and intellection, requiring a presence beyond knowing.'
+    divergence: The Siva Sutra treats the withdrawal as a natural loosening within consciousness itself, while Plotinus frames
+      transcendence as a radical rupture from the multiplicity of knowing into a singular, non-dual presence.
+    passage_id: plotinus_enneads.enn_vi_9_04
+  - citation: Tao Te Ching — The Paradox of Knowing
+    resonance: 'Both texts invert the conventional hierarchy of knowledge: the Siva Sutra suggests that refined knowledge
+      must loosen for a subtler perception to emerge, and the Tao Te Ching teaches that knowing one does not know is highest
+      attainment, while claiming to know is disease. Each reverses what appears as epistemic gain into epistemic error.'
+    divergence: The Siva Sutra grounds this inversion in the structure of consciousness itself (vidya-samhara), while the
+      Tao Te Ching frames it as an ethical and practical paradox about the limits of discursive knowing.
+    passage_id: tao_te_ching.ttc_md_073
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

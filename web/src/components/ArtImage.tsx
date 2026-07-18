@@ -214,8 +214,11 @@ type ArtChipProps = {
  */
 export function ArtChip({ src, title, subtitle, className = "", children }: ArtChipProps) {
   return (
-    <div className={`art-chip relative overflow-hidden ${className}`}>
-      <ArtBackdrop src={src} variant="subtle" overlay="chip" position="center 20%" />
+    // Overflow stays visible so FilterSelect menus aren't clipped; art is clipped on its own layer.
+    <div className={`art-chip relative ${className}`}>
+      <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[22px]">
+        <ArtBackdrop src={src} variant="subtle" overlay="chip" position="center 20%" />
+      </div>
       <div className="relative z-10 flex gap-3">
         <ArtThumb
           src={src}

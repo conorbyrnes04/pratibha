@@ -47,6 +47,27 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a structural inversion: the soul/awareness continuously enacts its nature, but liberation
+      comes only when perception shifts from external content to the knower itself. In Plotinus, we remain unaware of the
+      soul''s act because attention clings to sense-experience; in Vijnana Bhairava, dissolution occurs when awareness returns
+      to the knower rather than the passing content.'
+    divergence: Plotinus frames this as a metaphysical fact about the soul's eternal activity that we fail to perceive; Vijnana
+      Bhairava frames it as a practical technique of redirected attention that spontaneously dissolves the subject-object
+      boundary into non-dual awareness.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Tilopa Mahamudra — Look at the Looker
+    resonance: 'Both texts prescribe a reversal of the habitual direction of attention: from the object of awareness to awareness
+      itself (the looker). Tilopa''s ''Look at the Looker'' and Vijnana Bhairava''s return of attention to the knower enact
+      the same inward pivot as the gateway to realization.'
+    divergence: Tilopa locates this realization within devotional surrender to the guru as the necessary condition; Vijnana
+      Bhairava presents it as a spontaneous dissolution that occurs through the mechanical application of the technique itself,
+      without explicit reference to guru-grace.
+    passage_id: tilopa_mahamudra.til_003
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

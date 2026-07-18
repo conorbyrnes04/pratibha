@@ -66,6 +66,35 @@ pratibha_layers:
   label: Practice (Abhyasa)
   body: Sit for 5 minutes and follow the breath naturally. At each inhale and exhale, notice the subtle vibration of awareness
     before naming it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — World as Reflection in the Sky of Awareness
+    resonance: Both texts locate liberation in a direct, non-elaborated shift of awareness itself—the Spandakarika through
+      objectless desire that abandons the arrow-like trajectory, the Tantrasara through the sharp tilt of recognition that
+      bypasses constructed practice. Each describes a reorientation of consciousness rather than accumulation of technique.
+    divergence: The Spandakarika emphasizes the paradox of desire-without-object as the vehicle, while Śāmbhavopāya stresses
+      the immediacy of recognition as a cognitive event; the former privileges affective intensity, the latter epistemological
+      directness.
+    passage_id: tantrasara.ts_010
+  - citation: 'Vijnana Bhairava — Yukti #37'
+    resonance: 'Both texts locate transformation at the threshold of breath-pause and inner tremor: the Spandakarika grounds
+      contemplation in the ''profound sacred tremor'' (spanda), while Yukti 37 describes the yogī becoming a vessel for consciousness-arising
+      precisely at the termination of the breath-pause through dynamic tension (sanghaṭṭa). Each treats the body''s subtle
+      oscillation as the site where ordinary intentionality dissolves into non-dual awareness.'
+    divergence: The Spandakarika frames this through objectless desire and the heart's recognition, emphasizing the affective-volitional
+      dimension, while Vijnana Bhairava employs precise prāṇa mechanics and breath-control as the methodological entry point.
+    passage_id: vijnana_bhairava.yukti_037
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: 'Both texts describe a gathering of consciousness into the heart as the operative move: the Spandakarika locates
+      contemplation''s emergence ''in the heart of the tantrika,'' while the Svetasvatara prescribes ''gathering senses and
+      mind into the heart'' as the crossing of fear. Each treats the heart as the convergence-point where scattered faculties
+      unify.'
+    divergence: The Spandakarika emphasizes the heart as the spontaneous locus of the sacred tremor's recognition, while the
+      Svetasvatara presents heart-gathering as a deliberate yogic technique for transcendence; the former is recognition,
+      the latter is method.
+    passage_id: svetasvatara_upanishad.svu_009
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

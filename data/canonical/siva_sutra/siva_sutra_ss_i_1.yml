@@ -100,6 +100,32 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — Verse 1.12
+    resonance: Both texts assert consciousness as the fundamental, unchanging ground of reality through direct ontological
+      statement rather than argument. The Siva Sutra's 'Consciousness is the Self' and Astavakra's 'The Self is witness, all-pervading,
+      full, one, free, consciousness, and inactive' both posit consciousness as self-evident necessity that cannot be otherwise.
+    divergence: The Siva Sutra emphasizes the singular identity (tadatmya) between consciousness and self as ontological fact,
+      while Astavakra enumerates consciousness as one attribute among others (witness, all-pervading, inactive), suggesting
+      a descriptive rather than purely identificatory approach.
+    passage_id: astavakra_gita.asg_1_12
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 8 · The Mapping
+    resonance: 'Both texts establish consciousness through symbolic or structural correspondence rather than discursive proof:
+      the Siva Sutra identifies consciousness as the Self directly, while the Mandukya identifies the Atman with Om through
+      the syllable''s structure, treating the correspondence itself as revelatory of ontological truth.'
+    divergence: The Siva Sutra makes an unmediated metaphysical claim, whereas the Mandukya works through symbolic homology
+      (Atman-Om mapping), using linguistic structure as the vehicle for recognition rather than bare assertion.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_011
+  - citation: Svetasvatara Upanishad — The Cosmic Person Beyond and Within
+    resonance: Both texts posit a single, all-pervading consciousness (Śiva/Lord) as the ontological ground that is simultaneously
+      transcendent and immanent within all beings, stated as necessary truth rather than achieved realization.
+    divergence: The Siva Sutra identifies consciousness with the Self as the primary principle, while the Svetasvatara locates
+      this consciousness as the Lord dwelling within beings, maintaining a subtle distinction between the transcendent principle
+      and its indwelling presence.
+    passage_id: svetasvatara_upanishad.svu_018
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

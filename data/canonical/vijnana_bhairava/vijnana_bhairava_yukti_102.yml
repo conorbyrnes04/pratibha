@@ -51,6 +51,30 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Cutting the Cords of Death
+    resonance: Both texts identify a supreme principle through its cosmological functions—supporting, governing, and pervading
+      all existence—and posit that recognizing this principle (through discernment in Svetasvatara, through utterance in Bhairava)
+      grants liberation or peace.
+    divergence: Svetasvatara emphasizes discernment of the Lord as giver of grace leading to peace; Bhairava emphasizes constant
+      utterance and semantic understanding of the name as the path to becoming Śiva, collapsing subject-object distinction.
+    passage_id: svetasvatara_upanishad.svu_020
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
+    resonance: 'Both passages locate knowledge through a reversal of ordinary perception: Chāndogya teaches hearing the inaudible
+      and knowing the unknowable through unity-recognition; Bhairava teaches that attentive listening (not conceptual noise)
+      receives a deeper order encoded in the name''s semantic layers.'
+    divergence: Chāndogya grounds this reversal in non-dual metaphysics (all things are one Brahman); Bhairava grounds it
+      in the phonetic-semantic structure of the mantra itself as a vehicle for recognition of Śiva's functions.
+    passage_id: chāndogya_upaniṣad.chu_vi_01
+  - citation: Heraclitus Fragments — Fragment 2
+    resonance: Both texts posit a universal principle (Logos, Bhairava) that is always present yet requires active attentive
+      engagement to be recognized; mere hearing or utterance without understanding leaves one unaware.
+    divergence: Heraclitus emphasizes the paradox of universal presence despite human inattention; Bhairava emphasizes that
+      semantic understanding of the utterance itself becomes the means of transformation into Śiva.
+    passage_id: heraclitus_fragments.hfr_p002
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

@@ -111,13 +111,14 @@ function ThreadCard({
           </span>
         </button>
 
-        {/* Beads sit outside the toggle button so hydration stays valid (no nested buttons). */}
+        {/* Beads sit outside the toggle button so hydration stays valid (no nested buttons).
+            Fixed gaps (not justify-between) so 3-bead and 4-bead threads match. */}
         <div
-          className="thread-constellation mt-5 flex items-center justify-between gap-1 overflow-x-auto pb-1"
+          className="thread-constellation mt-5 flex items-start gap-2 overflow-x-auto pb-1"
           onClick={(e) => e.stopPropagation()}
         >
           {thread.steps.map((step, i) => (
-            <div key={step.id} className="flex items-center">
+            <div key={step.id} className="flex shrink-0 items-start gap-2">
               <ThreadBead
                 step={step}
                 index={i}
@@ -126,7 +127,10 @@ function ThreadCard({
                 onOpen={() => onOpenStep(step.trackId, step.stepId)}
               />
               {i < thread.steps.length - 1 ? (
-                <span className="thread-connector mx-1 hidden h-px w-6 shrink-0 sm:block" aria-hidden />
+                <span
+                  className="thread-connector mt-6 hidden h-px w-8 shrink-0 sm:block"
+                  aria-hidden
+                />
               ) : null}
             </div>
           ))}

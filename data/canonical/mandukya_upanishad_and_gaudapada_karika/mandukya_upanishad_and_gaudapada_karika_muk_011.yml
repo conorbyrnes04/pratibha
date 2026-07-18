@@ -82,6 +82,36 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heart Sutra — Form Is Emptiness, Emptiness Is Form
+    resonance: 'Both texts establish identity between two apparently opposite categories through a reversible equation: Mandukya
+      identifies Ātman with Om by mapping the fourfold Self onto the fourfold syllable; Heart Sutra identifies form with emptiness
+      through the same bidirectional structure (form *is* emptiness, emptiness *is* form). Each uses symbolic/phenomenological
+      analysis to reveal non-duality.'
+    divergence: Mandukya grounds the identity in a single transcendent reality (Ātman) accessed through phonetic-meditative
+      correspondence; Heart Sutra grounds it in the mutual emptiness of both terms, making neither primary—a distinctly Buddhist
+      negation rather than Vedantic affirmation.
+    passage_id: heart_sutra.hs_001
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: Both make a stark identity claim between consciousness and the ultimate Self, collapsing the distinction between
+      knower and known into a single statement. Mandukya's 'Ātman is Om' and Śiva Sūtra's 'Consciousness is the Self' both
+      use apposition to assert non-dual recognition.
+    divergence: Mandukya requires a fourfold structural analysis (catuṣpāt) to justify the identity; Śiva Sūtra asserts it
+      directly without mediation, reflecting Kashmir Śaivism's emphasis on immediate recognition (pratyabhijñā) over systematic
+      correspondence.
+    passage_id: siva_sutra.ss_i_1
+  - citation: 'Vijnana Bhairava — Yukti #77'
+    resonance: 'Both employ a contemplative inversion: Mandukya maps individual consciousness through the syllable Om to recognize
+      the universal Ātman; Vijnana Bhairava Yukti 77 contemplates the presence of consciousness in all things to experience
+      oneself as all-pervasive. Each uses meditation on a universal principle to dissolve the boundary between particular
+      and infinite.'
+    divergence: Mandukya works through symbolic correspondence (syllable as ladder); Vijnana Bhairava works through direct
+      phenomenological extension (consciousness already present everywhere, needing only recognition), reflecting Tantra's
+      emphasis on immanence over transcendent mapping.
+    passage_id: vijnana_bhairava.yukti_077
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

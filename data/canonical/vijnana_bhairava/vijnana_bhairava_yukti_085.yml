@@ -48,6 +48,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — Śiva’s Play of Veiling and Revealing
+    resonance: 'Both passages mark a shift from abstract teaching to direct, personalized transmission: Vijnana Bhairava''s
+      ''let the insight disclose itself directly'' and Tantrasara''s ''The teaching now becomes personal'' both suspend mediated
+      explanation in favor of immediate recognition.'
+    divergence: Vijnana Bhairava emphasizes spontaneous disclosure through pause, while Tantrasara frames personalization
+      as a deliberate pedagogical turn within a structured tantric system.
+    passage_id: tantrasara.ts_007
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: 'Both passages identify freedom as obscured by mental-representational entanglement and propose direct insight
+      as liberation: Vijnana Bhairava''s ''let the insight disclose itself'' mirrors Yoga Spandakarika''s recognition that
+      forgetting ''innate freedom'' occurs through capture in subtle energies and mental forms.'
+    divergence: Vijnana Bhairava treats direct disclosure as the method itself, while Yoga Spandakarika diagnoses the problem
+      (entanglement) and implies recovery through recognizing what is already present.
+    passage_id: yoga_spandakarika.sp_46
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

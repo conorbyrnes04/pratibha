@@ -42,6 +42,23 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 7
+    resonance: 'Both texts locate knowledge in a reorientation of attention away from external objects toward an inner principle
+      that is always present but obscured by habitual perception. The move is identical: turn inward, and what was hidden
+      becomes known.'
+    divergence: Ibn Arabi grounds this inward turn in the paradox of self-knowledge without ontological persistence (fana),
+      while Plotinus grounds it in the soul's continuous intelligible activity that sense-perception merely obscures.
+    passage_id: plotinus_enneads.enn_vi_9_07
+  - citation: Siva Sutra — Śāktopāya
+    resonance: 'Both texts collapse the distinction between attention and knowledge: sustained or focused attention is itself
+      the act of knowing, not a means to it. The knower and the knowing are unified through the quality of attention itself.'
+    divergence: The Siva Sutra formulates this as a metaphysical principle of consciousness (Śāktopāya), while Ibn Arabi frames
+      it as a paradoxical condition of self-annihilation (fana) that reveals divine knowledge.
+    passage_id: siva_sutra.ss_ii_12
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

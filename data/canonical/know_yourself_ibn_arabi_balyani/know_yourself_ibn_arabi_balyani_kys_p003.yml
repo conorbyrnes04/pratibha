@@ -47,6 +47,31 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāktopāya
+    resonance: 'Both texts locate knowledge in the quality and direction of attention itself: Ibn Arabi''s inward turn of
+      attention to the knower (not the known) structurally mirrors the Śiva Sūtra''s equation of sustained attention with
+      knowledge as the primary epistemic act.'
+    divergence: Ibn Arabi emphasizes attention as a corrective against false metaphysical belief (incarnation), while the
+      Śiva Sūtra presents attention as the fundamental ontological principle through which consciousness knows itself.
+    passage_id: siva_sutra.ss_ii_12
+  - citation: Pratyabhijnahrdayam — Sutra 12
+    resonance: 'Both passages identify ignorance as a failure of self-recognition: Ibn Arabi warns against mistaking external
+      content for the knower, while the Pratyabhijñā describes bewilderment as forgetting one''s own authorship—both locate
+      error in a collapse of reflexive awareness.'
+    divergence: Ibn Arabi frames this as a corrective epistemological move (understanding to avoid error), whereas Pratyabhijñā
+      frames it as metaphysical bondage (ignorance of one's creative power as the Self).
+    passage_id: pratyabhijnahrdayam.phr_012
+  - citation: Tao Te Ching — Learning Adds; the Way Subtracts
+    resonance: 'Both texts prescribe a reversal of ordinary mental direction: Ibn Arabi''s inward turn away from passing content
+      parallels the Tao Te Ching''s daily diminishment—both describe knowledge as a subtraction or withdrawal rather than
+      accumulation.'
+    divergence: Ibn Arabi's withdrawal targets the knower's self-recognition within a theistic framework, while the Taoist
+      diminishment aims at alignment with the impersonal Way through the negation of conceptual overlay.
+    passage_id: tao_te_ching.ttc_md_011
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

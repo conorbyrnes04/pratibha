@@ -47,6 +47,26 @@ pratibha_layers:
   label: Practice (Abhyasa)
   body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute in
     the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — 11.1 — 11.8 (Selected)
+    resonance: 'Both texts establish a diagnostic principle: the awakened person recognizes the *source* of suffering/unconsciousness
+      (worry, the nature of change) and thereby remains lucid through apparent dissolution, while the unawakened person is
+      trapped in automatic reactivity to that same condition.'
+    divergence: Astavakra Gita locates liberation in intellectual certainty about causation (worry causes suffering), while
+      Spandakarika locates it in direct consciousness-revelation that dissolves the division between states themselves—a non-dual
+      recognition rather than a logical inference.
+    passage_id: astavakra_gita.asg_sum_11_01_11_08
+  - citation: Isavasya Upanishad — Mantra 10
+    resonance: 'Both texts posit a fundamental bifurcation in human capacity: vidya (knowledge/lucidity) and avidya (ignorance/unconsciousness)
+      yield structurally opposite outcomes—one liberative, one binding—and this division is irreducible at the level of ordinary
+      consciousness.'
+    divergence: Isavasya Upanishad treats vidya and avidya as distinct paths with different fruits, maintaining their duality;
+      Spandakarika's commentary suggests that awakening *dissolves* the division between states, implying a non-dual resolution
+      rather than permanent bifurcation.
+    passage_id: isavasya_upanishad.isa_016
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

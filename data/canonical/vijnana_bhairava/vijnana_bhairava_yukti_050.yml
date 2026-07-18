@@ -49,6 +49,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāktopāya
+    resonance: Both texts posit that sustained, inward-directed attention itself constitutes the operative principle of knowledge
+      or realization. In Yukti 50, the physical suspension and inward settling produce fulfillment through attention's return
+      to the knower; in Siva Sutra, attention *is* knowledge—the same reflexive turn.
+    divergence: Vijnana Bhairava uses embodied posture as the method to anchor attention inward, while Siva Sutra states the
+      principle abstractly as a direct equation, without prescribing physical technique.
+    passage_id: siva_sutra.ss_ii_12
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: 'Both texts describe a paradoxical intensification through effort: clarity or perception of the supreme principle
+      emerges precisely when attention is ardently directed toward it, not through passivity. The act of focused striving
+      itself reveals what was obscured.'
+    divergence: Yukti 50 achieves this through sustained physical posture and stillness, while Yoga Spandakarika frames it
+      as active, angular perception—'seeing from all angles'—suggesting a more dynamic, exploratory mode of attention.
+    passage_id: yoga_spandakarika.sp_36
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

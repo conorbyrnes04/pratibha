@@ -47,6 +47,25 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 3.50
+    resonance: 'Both texts posit that Self-knowledge arises through a discriminative act: the Siva Sutra locates recognition
+      *from* consciousness itself, while Patañjali''s sutra achieves supreme mastery by recognizing the distinction between
+      reflective nature (sattva) and the Self. Each makes knowledge depend on a precise cognitive separation or discernment.'
+    divergence: The Siva Sutra emphasizes consciousness as the medium or source of recognition (non-dual), whereas Patañjali's
+      framework requires a dualistic discrimination between two principles (sattva and purusha) to achieve liberation.
+    passage_id: patañjali_yoga_sūtras.ys_3_50
+  - citation: 'Vijnana Bhairava — Yukti #109'
+    resonance: 'Both texts articulate a reciprocal or reflexive structure: the Siva Sutra states the Self is known *from*
+      consciousness (implying consciousness as the instrument), while Vijnana Bhairava 109 declares ''everything is revealed
+      by insight, and the self is revealed by everything''—a mutual illumination where consciousness and the self are inseparable
+      revealers.'
+    divergence: The Siva Sutra treats recognition as indirect and mediated through consciousness, whereas the Vijnana Bhairava
+      presents a direct, non-dual simultaneity where self and consciousness mutually reveal each other without mediation.
+    passage_id: vijnana_bhairava.yukti_109
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

@@ -16,6 +16,7 @@ import { LayerBlock } from "@/components/LayerBlock";
 import { JournalPanel } from "@/components/JournalPanel";
 import { getStudyLayers, getAppendixLayers, getAnchorChapter, getResonances, layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 import { relatedPassages } from "@/lib/relatedPassages";
+import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
 
 function practiceFallback(item: VerseItem): string {
   if ((item.themes || []).includes("witness")) {
@@ -111,6 +112,22 @@ export default function VerseDetailPage() {
   const relatedMode = semanticRelated && semanticRelated.length > 0 ? "semantic" : "themes";
 
   const resonances = useMemo(() => (item ? getResonances(item) : []), [item]);
+
+  // Turn free-text resonance citations into links into the corpus when they
+  // point at a passage/collection we actually hold.
+  const citationIndex = useMemo(() => buildCitationIndex(allItems), [allItems]);
+  const knownIds = useMemo(() => new Set(allItems.map((v) => v._id)), [allItems]);
+  const resonanceLinks = useMemo<CitationResolution[]>(
+    () =>
+      resonances.map((r) => {
+        // Prefer an exact, grounded passage_id when the pipeline supplied one.
+        if (r.passage_id && knownIds.has(r.passage_id)) {
+          return { kind: "passage", passageId: r.passage_id, collection: "" };
+        }
+        return resolveCitation(r.citation, citationIndex);
+      }),
+    [resonances, citationIndex, knownIds],
+  );
 
   if (loading) {
     return <main className="page-shell soft">Opening the manuscript...</main>;
@@ -287,17 +304,41 @@ export default function VerseDetailPage() {
             <div className="mt-4">
               <p className="layer-heading">Cross-tradition resonances</p>
               <div className="mt-2 space-y-3">
-                {resonances.map((r, idx) => (
-                  <article key={`${r.citation}-${idx}`} className="citation-card p-3">
-                    <p className="text-sm text-amber-100">{r.citation}</p>
-                    <p className="soft mt-1 text-xs leading-relaxed">{r.resonance}</p>
-                    {r.divergence ? (
-                      <p className="mt-2 text-xs leading-relaxed text-stone-300">
-                        <span className="text-amber-100">Divergence:</span> {r.divergence}
-                      </p>
-                    ) : null}
-                  </article>
-                ))}
+                {resonances.map((r, idx) => {
+                  const link = resonanceLinks[idx];
+                  const href =
+                    link?.kind === "passage"
+                      ? `/read/${encodeURIComponent(link.passageId)}`
+                      : link?.kind === "collection"
+                        ? `/read?collection=${encodeURIComponent(link.collection)}`
+                        : null;
+                  return (
+                    <article key={`${r.citation}-${idx}`} className="citation-card p-3">
+                      {href ? (
+                        <Link
+                          href={href}
+                          className="group inline-flex items-center gap-1 text-sm text-amber-100 underline decoration-amber-200/30 underline-offset-2 transition hover:decoration-amber-200/70"
+                        >
+                          {r.citation}
+                          <span
+                            aria-hidden
+                            className="text-[10px] text-amber-200/60 transition group-hover:translate-x-0.5"
+                          >
+                            {link?.kind === "passage" ? "↗" : "→"}
+                          </span>
+                        </Link>
+                      ) : (
+                        <span className="text-sm text-amber-100">{r.citation}</span>
+                      )}
+                      <p className="soft mt-1 text-xs leading-relaxed">{r.resonance}</p>
+                      {r.divergence ? (
+                        <p className="mt-2 text-xs leading-relaxed text-stone-300">
+                          <span className="text-amber-100">Divergence:</span> {r.divergence}
+                        </p>
+                      ) : null}
+                    </article>
+                  );
+                })}
               </div>
             </div>
           ) : null}

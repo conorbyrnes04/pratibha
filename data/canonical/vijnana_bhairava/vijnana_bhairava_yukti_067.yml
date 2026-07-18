@@ -55,6 +55,23 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Māyā Is Dependence, Not a Second Reality
+    resonance: Both texts identify māyā as the mechanism by which a transcendent principle (the Maker/Divine) projects limited
+      individual powers or perspectives into manifestation. The knower becomes constrained within a field of appearance that
+      obscures the source.
+    divergence: Vijnana Bhairava treats māyā's bewildering power as the starting point for inward attention to recover the
+      knower; Svetasvatara emphasizes the cosmological structure of constraint itself, with less focus on the method of return.
+    passage_id: svetasvatara_upanishad.svu_002
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts locate the problem in attention: the soul/self continuously enacts its nature, but remains unaware
+      because perception is absorbed in external content rather than turned toward the knowing subject itself.'
+    divergence: Plotinus frames this as a natural but unexamined condition of soul; Vijnana Bhairava frames it as māyā's active
+      concealment, requiring deliberate inward redirection of attention to the knower.
+    passage_id: plotinus_enneads.enn_v_1_12
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

@@ -23,17 +23,26 @@ commentary: 'The text insists on disciplined differentiation before integration.
 
   Pedagogical gradation in Upanishadic teaching.'
 voice_of_siva: ''
-abhyasa: List what action addresses and what contemplation addresses in your current
-  life.
+abhyasa: List what action addresses and what contemplation addresses in your current life.
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
-  sadhana: List what action addresses and what contemplation addresses in your current
-    life.
+  sadhana: List what action addresses and what contemplation addresses in your current life.
 glossary: []
 themes:
 - practice
 - speech
 source: Isavasya Upanishad 10
 quality_score_unit: 100
+resonances:
+- citation: 'Phaedo (Plato) — The Second Sailing: Forms as True Causes'
+  resonance: Both texts establish a methodological distinction between two orders of knowledge or causation—vidya vs. avidya in the Upanishad, sensory causes vs. intelligible forms in Plato—and insist that disciplined differentiation between them is the prerequisite for philosophical advance.
+  divergence: The Upanishad frames this as a practical path to integration and liberation, while Plato treats it as a logical-metaphysical correction that moves from the physical to the eternal.
+  passage_id: phaedo_plato.phaedo_md_005
+- citation: Patañjali Yoga Sūtras 2.18
+  resonance: 'Both passages distinguish between two modes or results of knowledge: the Upanishad separates vidya and avidya as yielding different fruits, while Patañjali''s sūtra identifies sight as serving dual purposes—experience and ultimate liberation—implying a hierarchical differentiation of knowledge outcomes.'
+  divergence: The Upanishad emphasizes the teacher's role in making this distinction explicit, whereas Patañjali grounds it in the ontological structure of perception itself (elements, organs, illumination).
+  passage_id: patañjali_yoga_sūtras.ys_2_18
+layer_provenance:
+  resonances: generated_grounded

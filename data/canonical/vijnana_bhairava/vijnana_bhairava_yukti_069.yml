@@ -55,6 +55,26 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.15
+    resonance: 'Both texts locate liberation through the cessation of desire: Yukti 69 asks ''who am I?'' when desire ceases,
+      while Patañjali defines non-attachment as the consciousness of mastery over desire for perceptible objects. Each makes
+      the withdrawal of craving the threshold to self-recognition.'
+    divergence: Patañjali frames non-attachment as a discriminative mental state (viveka-khyāti), whereas Vijnana Bhairava
+      points to a direct inquiry into the knower itself when mental content stills—emphasizing immediate self-presence over
+      cognitive mastery.
+    passage_id: patañjali_yoga_sūtras.ys_1_15
+  - citation: Astavakra Gita — 18.96 — 18.97 (The Paradoxical State)
+    resonance: 'Both texts use negation to dissolve the seeker''s identity: Yukti 69 suspends desire and thought to ask ''who
+      am I?'', while Astavakra 18.96 negates happiness, suffering, detachment, attachment, liberation-seeking, and liberation
+      itself—each using the collapse of conceptual opposites to reveal what remains.'
+    divergence: Astavakra employs systematic negation of all states and conditions to establish non-dual being, whereas Vijnana
+      Bhairava uses the specific suspension of desire and thought as a gateway to the knower, maintaining a more phenomenological
+      focus on attention's reversal.
+    passage_id: astavakra_gita.asg_sum_18_96_18_97
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

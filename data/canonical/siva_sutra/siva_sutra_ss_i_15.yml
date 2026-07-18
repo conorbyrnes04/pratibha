@@ -51,6 +51,31 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: Both texts locate the heart as the convergence point where mind/senses gather and where the crossing from multiplicity
+      to unity occurs. The Siva Sutra's 'collision of mind in the heart' parallels the Svetasvatara's gathering of 'senses
+      and mind into the heart' as the operative mechanism of transformation.
+    divergence: The Svetasvatara frames this as embodied yogic technique (aligned posture enabling crossing), while the Siva
+      Sutra treats it as spontaneous phenomenological event (collision generating dream-like appearances).
+    passage_id: svetasvatara_upanishad.svu_009
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VIII.11
+    resonance: 'Both use the dream-state as a structural analogy for understanding consciousness: the Siva Sutra compares
+      waking appearances to dreams (suggesting their illusory status), while the Chandogya identifies dreamless sleep as the
+      Self, implying dreams are a lower epistemic register.'
+    divergence: The Siva Sutra uses dream-likeness to explain how appearances arise from mind-heart collision, whereas the
+      Chandogya uses the absence of dreams to mark the highest state of undifferentiated consciousness.
+    passage_id: chāndogya_upaniṣad.chu_viii_11
+  - citation: Yoga Spandakarika — First Flow
+    resonance: 'Both describe a simultaneous operation within duality and access to nondual source: the Siva Sutra''s ''collision''
+      generates appearances (duality) while implying their origin in unified awareness; the Spandakarika''s tantrika ''goes
+      straight to the nondual source'' even ''within duality'' through immersion in pure subjectivity.'
+    divergence: The Siva Sutra emphasizes the generative mechanism (collision producing dream-appearances), while the Spandakarika
+      emphasizes the practitioner's direct penetration to source through sustained subjectivity.
+    passage_id: yoga_spandakarika.sp_03
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

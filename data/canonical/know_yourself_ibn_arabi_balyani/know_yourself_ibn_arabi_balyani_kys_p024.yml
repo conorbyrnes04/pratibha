@@ -45,6 +45,31 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 12
+    resonance: 'Both texts identify ignorance of one''s true nature as the root obscuration: Ibn Arabi''s ''You are Him''
+      names the identity obscured by ego-imperfections, while Pratyabhijnahrdayam''s ''bewildered by one''s own powers'' names
+      the same veiling—mistaking the limited self for the universal Self through forgetting authorship.'
+    divergence: Ibn Arabi emphasizes the direct non-dual identity (You are Him), while Pratyabhijnahrdayam frames it as recognition
+      of one's own creative agency (authorship of the fivefold act)—a shift from union to sovereignty.
+    passage_id: pratyabhijnahrdayam.phr_012
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
+    resonance: 'Both passages point to a knowing that transcends ordinary perception by revealing essential unity: the Chāndogya''s
+      ''instruction that allows us to know the unknowable'' through ''all things are essentially one'' mirrors Ibn Arabi''s
+      direct disclosure of identity beyond conceptual limitation.'
+    divergence: The Upanishad frames this as meditative instruction leading to unified perception, while Ibn Arabi presents
+      it as immediate non-dual recognition that suspends the interpretive mind itself.
+    passage_id: chāndogya_upaniṣad.chu_vi_01
+  - citation: Heraclitus Fragments — Fragment 1
+    resonance: 'Both texts posit a universal principle (Logos, divine identity) that must be recognized beyond individual
+      reasoning: Heraclitus calls listeners to acknowledge unity through the Logos rather than personal opinion, while Ibn
+      Arabi dissolves the boundary between self and divine through direct insight.'
+    divergence: Heraclitus emphasizes listening to an external universal principle, while Ibn Arabi collapses subject-object
+      distinction entirely—the insight is not about aligning with something external but recognizing non-duality.
+    passage_id: heraclitus_fragments.hfr_p001
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

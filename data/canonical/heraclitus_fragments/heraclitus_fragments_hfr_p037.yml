@@ -73,6 +73,24 @@ pratibha_layers:
     definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
       ethics into cosmology: how you live is how you align (or fail) with measure.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching — The Unnameable One
+    resonance: 'Both texts insist that direct sensory encounter precedes and exceeds linguistic capture: Heraclitus grounds
+      wisdom in the auditory encounter with Logos already at work, while the Tao Te Ching names the Dào through sensory negation
+      (unseen, unheard, ungraspable), making perception itself the primary mode of knowing.'
+    divergence: Heraclitus treats the Logos as an active principle immanent in things' becoming; the Tao Te Ching treats the
+      Dào as fundamentally beyond sensory grasp, accessible only through negation and receptivity rather than active listening.
+    passage_id: tao_te_ching.ttc_md_025
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 3 · Jāgrat — The Waking State
+    resonance: 'Both passages map consciousness onto a structured sensory apparatus: Heraclitus describes how all things convert
+      into smoky exhalation for smell (a unified sensory medium), while the Mandukya describes Vaiśvānara as conscious of
+      the external through seven limbs and nineteen mouths (a multiplied sensory apparatus).'
+    divergence: Heraclitus posits a single, fluid medium (exhalation) through which all sensation flows; the Mandukya posits
+      a discrete, enumerated anatomy of perception tied to a specific state of consciousness (waking), not a universal principle.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_005
+  layer_provenance: generated_grounded
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
   body: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things are converted

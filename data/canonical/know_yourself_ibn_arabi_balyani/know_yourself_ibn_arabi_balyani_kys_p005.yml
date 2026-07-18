@@ -44,6 +44,31 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāktopāya
+    resonance: 'Both texts identify a shift from discursive knowledge to a direct knowing that is itself attention or presence:
+      Ibn Arabi rejects theoretical knowledge in favor of inward attention to the knower, while the Siva Sutra equates sustained
+      attention itself with knowledge, making the quality of awareness the epistemic act.'
+    divergence: Ibn Arabi emphasizes negation (what knowing is *not*) to point toward divine encounter, while the Siva Sutra
+      makes attention a positive metaphysical principle—consciousness recognizing itself through focused presence.
+    passage_id: siva_sutra.ss_ii_12
+  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 5
+    resonance: 'Both texts reject the discursive intellect as the path to ultimate reality: Ibn Arabi negates reason, understanding,
+      and conjecture; Plotinus transcends the reasoning faculty to approach the Unity, recognizing that direct knowledge of
+      the source exceeds rational comprehension.'
+    divergence: Ibn Arabi frames this as turning inward to the knower within; Plotinus frames it as transcendence toward the
+      transcendent source beyond all being, emphasizing vertical ascent rather than inward return.
+    passage_id: plotinus_enneads.enn_vi_9_05
+  - citation: Tao Te Ching — Learning Adds; the Way Subtracts
+    resonance: 'Both texts prescribe a reversal of the ordinary acquisitive mode: Ibn Arabi negates accumulation of theoretical
+      knowledge and sensory input; the Tao Te Ching prescribes daily diminishment in pursuing the Way, suggesting that realization
+      requires subtraction rather than addition.'
+    divergence: Ibn Arabi's negation is epistemological (rejecting false modes of knowing) and points toward divine knowledge;
+      the Taoist diminishment is ontological and practical (reducing artifice and desire to align with natural flow).
+    passage_id: tao_te_ching.ttc_md_011
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

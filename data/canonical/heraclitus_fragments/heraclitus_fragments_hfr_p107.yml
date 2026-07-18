@@ -52,6 +52,33 @@ pratibha_layers:
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
     arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: The Book of Chuang Tzu — chapter 11
+    resonance: 'Both texts locate virtue in a principle of non-interference or non-action that aligns with natural order:
+      Heraclitus ties self-control to acting ''according to nature,'' while Zhuang Zi asserts that ''letting mankind alone''
+      (wu wei) is the only authentic governance, making restraint itself the highest wisdom.'
+    divergence: Heraclitus frames this as individual moral virtue achieved through conscious rational control, whereas Zhuang
+      Zi dissolves the distinction between self and nature, treating non-action as spontaneous alignment rather than disciplined
+      choice.
+    passage_id: the_book_of_chuang_tzu.ctz_011
+  - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
+    resonance: Both passages identify wisdom with a utterance or principle that 'does not lie'—Heraclitus's wisdom as 'speaking
+      truth' and the Heart Sutra's prajñāpāramitā as 'true for the plain reason that it does not lie'—making truth-telling
+      itself the vehicle of liberation or virtue.
+    divergence: Heraclitus grounds truth in conscious alignment with cosmic logos through individual virtue, while the Heart
+      Sutra locates truth in the emptiness of conceptual proliferation, where the mantra's power lies in transcending propositional
+      meaning.
+    passage_id: heart_sutra.hs_003
+  - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 4
+    resonance: 'Both texts structure virtue as an ascent from sensory perception to a higher order of knowing: Heraclitus''s
+      ''wisdom'' requires conscious action according to nature (a transcendence of mere appetite), and Plotinus''s soul must
+      ''ascend, leaving the senses behind'' to perceive loftier beauties.'
+    divergence: Heraclitus emphasizes rational self-control and alignment with cosmic order, while Plotinus emphasizes mystical
+      ascent and the soul's direct intuition of transcendent beauty independent of rational deliberation.
+    passage_id: plotinus_enneads.enn_i_6_04
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

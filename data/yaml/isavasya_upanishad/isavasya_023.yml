@@ -8,8 +8,7 @@ sanskrit: 'वायुरनिलममृतमथेदं भस्मा�
 transliteration: 'vayur anilam amrtam atha idam bhasmantam sariram |
 
   om krato smara krtam smara krato smara krtam smara || 17 ||'
-translation: May breath return to the immortal air; this body to ashes. O mind, remember
-  what has been done.
+translation: May breath return to the immortal air; this body to ashes. O mind, remember what has been done.
 commentary: 'At death, discernment and memory become sacred accountability.
 
 
@@ -38,3 +37,14 @@ themes:
 - speech
 source: Isavasya Upanishad 17
 quality_score_unit: 100
+resonances:
+- citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.8
+  resonance: Both texts map a sequential dissolution of embodied faculties at death—speech→mind→life force→heat→ultimate reality in Chāndogya mirrors breath→ashes in Isavasya—treating death as a structured return of constituent elements to their source.
+  divergence: Isavasya emphasizes the ethical accountability of discernment and memory in this dissolution, while Chāndogya traces a purely ontological cascade of merger without moral valence.
+  passage_id: chāndogya_upaniṣad.chu_vi_08
+- citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
+  resonance: 'Both passages locate transformative power in a mantra''s capacity to operate at the threshold between utterance and silence: Isavasya''s mantra at death invokes breath''s return to the immortal, while Heart Sutra''s mantra ''quiets all suffering'' by transcending conceptual reference.'
+  divergence: Isavasya grounds the mantra's efficacy in breath-regulation and embodied dissolution, whereas Heart Sutra grounds it in the emptiness of all signs and the perfection of wisdom itself.
+  passage_id: heart_sutra.hs_003
+layer_provenance:
+  resonances: generated_grounded

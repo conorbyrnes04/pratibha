@@ -43,6 +43,31 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 1
+    resonance: 'Both texts identify a singular power (Śakti/Consciousness) as the generative principle underlying the universe''s
+      three phases: manifestation, maintenance, and dissolution. The target sees the world as ''resting'' energy; Pratyabhijnahrdayam
+      sees Śakti as the active cause of these same cosmic operations.'
+    divergence: The Siva Sutra emphasizes the universe as a stabilized or resting state of power, whereas Pratyabhijnahrdayam
+      foregrounds Śakti's dynamic causality across cyclical cosmic functions.
+    passage_id: pratyabhijnahrdayam.phr_001
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: Both texts reframe perception of the world by recognizing a single principle (Śakti) operating throughout the
+      entire structure of experience. The target 're-sees' the universe as stabilized energy; Tantrasara teaches recognition
+      of Śakti 'in the entire architecture of your experience.'
+    divergence: The Siva Sutra presents this recognition as a metaphysical fact about the universe itself, while Śāktopāya
+      frames it as a methodological practice of learning to recognize what is already present in consciousness.
+    passage_id: tantrasara.ts_014
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 2
+    resonance: 'Both texts make a non-dual identification: the target collapses the distinction between the universe and one''s
+      own power; the Mandukya identifies all manifestation as Brahman. Each asserts that apparent multiplicity is fundamentally
+      one principle.'
+    divergence: The Siva Sutra emphasizes Śakti as dynamic power and resting energy, while the Mandukya emphasizes Brahman
+      as undifferentiated being, approaching non-duality through ontological rather than energetic language.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_003
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

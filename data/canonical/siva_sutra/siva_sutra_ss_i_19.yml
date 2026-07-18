@@ -57,6 +57,33 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 2
+    resonance: Both texts posit that manifestation (bodies, universe) arises from the creative unfolding of a singular power
+      or will—in the Siva Sutra through sakti's convergence, in the Pratyabhijnahrdayam through Śakti's self-directed unfoldment
+      on Her own canvas. Form is the direct expression of power's intentional gathering.
+    divergence: The Siva Sutra emphasizes the *convergence* or concentration of power as the generative mechanism, while the
+      Pratyabhijnahrdayam stresses Śakti's autonomous *will* and self-luminous creativity as the primary principle.
+    passage_id: pratyabhijnahrdayam.phr_002
+  - citation: Svetasvatara Upanishad — One Without Color, Manifest as All Forms
+    resonance: 'Both texts describe a singular, formless principle that manifests multiplicity through its inherent power:
+      the Siva Sutra''s power gathering to produce bodies parallels the Svetasvatara''s One without color manifesting many
+      forms through power. In both, manifestation is not external creation but power''s intrinsic self-expression.'
+    divergence: The Svetasvatara frames this as the One's hidden purpose and cosmic gathering at beginning and end (cyclical
+      cosmology), while the Siva Sutra treats sakti's convergence as the immediate, ongoing mechanism of embodied form-arising
+      without explicit temporal framing.
+    passage_id: svetasvatara_upanishad.svu_019
+  - citation: Tantrasara — World as Reflection in the Sky of Awareness
+    resonance: 'Both passages locate the generative act in a direct, non-mediated recognition or tilt of consciousness: the
+      Siva Sutra''s convergence of power produces bodies through immediate gathering, while Śāmbhavopāya achieves recognition
+      through a sharp, direct tilt of awareness without elaborated means. Both bypass methodical accumulation in favor of
+      immediate power-actualization.'
+    divergence: The Siva Sutra speaks of power's objective convergence producing material form, while Śāmbhavopāya emphasizes
+      the subject's direct perceptual shift in consciousness as the mechanism of recognition.
+    passage_id: tantrasara.ts_010
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

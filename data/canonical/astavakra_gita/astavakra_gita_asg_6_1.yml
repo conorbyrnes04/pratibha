@@ -53,6 +53,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Isavasya Upanishad — Mantra 1
+    resonance: 'Both texts establish an infinite, all-pervading principle (Lord/Brahman as space) within which the finite
+      world subsists as a contained, dependent entity. The structural move is: infinite container → finite contents, establishing
+      the metaphysical ground for renunciation.'
+    divergence: Astavakra identifies the self directly with the infinite space; Isavasya attributes pervading power to the
+      Lord as distinct principle, maintaining a subtle subject-object duality even in non-duality.
+    passage_id: isavasya_upanishad.isa_007
+  - citation: Bhagavad Gita — Renunciation Is Inner, Not Avoidant
+    resonance: 'Both texts reframe renunciation not as withdrawal from the world but as a shift in consciousness—detachment
+      from possessiveness or identification with form while remaining engaged. The move is: renunciation as inner reorientation,
+      not external negation.'
+    divergence: Astavakra achieves this through direct recognition of infinite selfhood transcending the pot-like world; Bhagavad
+      Gita achieves it through disciplined action performed without attachment, maintaining ethical engagement as the path.
+    passage_id: bhagavad_gita.bg_md_005
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

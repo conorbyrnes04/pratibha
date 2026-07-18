@@ -49,6 +49,34 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.9
+    resonance: 'Both texts use the image of multiplicity merging into unity to articulate the Self''s non-dual nature: Astavakra''s
+      ''beads on a string'' (universe strung in the Self) structurally mirrors the Chāndogya''s bees merging nectar into one
+      honey, each showing how apparent plurality dissolves into singular being when recognized truly.'
+    divergence: Astavakra emphasizes the unchanging kūṭastha as the static ground on which multiplicity appears; Chāndogya
+      stresses the experiential dissolution of individual form through deep sleep or death, privileging the phenomenological
+      moment of merger over metaphysical substrate.
+    passage_id: chāndogya_upaniṣad.chu_vi_09
+  - citation: Isavasya Upanishad — Mantra 6
+    resonance: 'Both passages move from the recognition of the Self as the ground of all beings to the dissolution of the
+      separative stance (hatred/bondage): Astavakra''s teaching that body-identification is a noose structurally parallels
+      Isavasya''s vision where seeing the Self in all beings prevents contraction into hatred, each showing how correct vision
+      dissolves the knot of separation.'
+    divergence: Astavakra locates bondage in the fundamental misidentification with the body itself; Isavasya locates liberation
+      in the perceptual shift of seeing unity, treating bondage as a failure of vision rather than ontological confusion.
+    passage_id: isavasya_upanishad.isa_012
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 2
+    resonance: 'Both make the radical non-dual declaration that collapses the distinction between Self and cosmos: Astavakra''s
+      pot-in-space analogy (the universe contained in the Self) and Mandukya''s ''All this is indeed Brahman'' both assert
+      that apparent multiplicity has no independent reality outside the singular Self.'
+    divergence: Mandukya grounds this declaration in the phonetic-meditative structure of Om as a method of realization; Astavakra
+      presents it as a direct proclamation requiring no mediating practice, emphasizing immediate recognition over systematic
+      inquiry.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_003
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

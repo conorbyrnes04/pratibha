@@ -279,13 +279,15 @@ def _layer_items(y: dict[str, Any], key: str) -> list[dict[str, str]] | None:
         if key == "key_terms" and entry.get("term"):
             items.append({"term": txt(entry.get("term")), "definition": txt(entry.get("definition"))})
         elif key == "resonances" and entry.get("citation"):
-            items.append(
-                {
-                    "citation": txt(entry.get("citation")),
-                    "resonance": txt(entry.get("resonance")),
-                    "divergence": txt(entry.get("divergence")),
-                }
-            )
+            item = {
+                "citation": txt(entry.get("citation")),
+                "resonance": txt(entry.get("resonance")),
+                "divergence": txt(entry.get("divergence")),
+            }
+            passage_id = txt(entry.get("passage_id"))
+            if passage_id:
+                item["passage_id"] = passage_id
+            items.append(item)
     return items or None
 
 

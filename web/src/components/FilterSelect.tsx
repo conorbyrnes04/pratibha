@@ -51,7 +51,7 @@ export function FilterSelect({
   const toneClass = tone === "lapis" ? "filter-select--lapis" : "filter-select--gold";
 
   return (
-    <div ref={rootRef} className={`filter-select ${toneClass}`}>
+    <div ref={rootRef} className={`filter-select ${toneClass}${open ? " filter-select--open" : ""}`}>
       <p className="layer-heading mb-2">{label}</p>
       <button
         type="button"

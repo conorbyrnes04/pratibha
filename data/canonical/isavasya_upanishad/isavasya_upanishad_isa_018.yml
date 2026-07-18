@@ -72,6 +72,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Alternate abstract contemplation and concrete service in the same day.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
+    resonance: 'Both texts reject reduction to a single pole: the Heart Sutra''s prajñāpāramitā mantra ''does not lie'' because
+      it encompasses both emptiness and form (the two truths), just as Isavasya warns that devotion to only unmanifest or
+      only manifest leads to darkness. Each demands holding both poles simultaneously.'
+    divergence: The Upanishad frames the error as spiritual blindness (entering darkness), while the Heart Sutra frames the
+      mantra's power as its non-duality itself—truth emerges from the integration, not from avoiding a trap.
+    passage_id: heart_sutra.hs_003
+  - citation: Svetasvatara Upanishad — Fire by Friction, Self by Om
+    resonance: 'Both use a paradox of hiddenness and manifestation: the Svetasvatara''s Self is ''unseen yet not absent''
+      in wood, requiring ''right means'' to bring forth, structurally mirrors Isavasya''s teaching that neither pole alone
+      suffices—both latent and manifest dimensions must be engaged.'
+    divergence: Svetasvatara emphasizes technique (friction, means) to reveal what is already present, while Isavasya emphasizes
+      the error of exclusive devotion to one pole, making the correction epistemic rather than methodological.
+    passage_id: svetasvatara_upanishad.svu_008
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

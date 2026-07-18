@@ -54,6 +54,26 @@ pratibha_layers:
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
     arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Isavasya Upanishad — Mantra 17
+    resonance: 'Both texts use the breath-body cycle as the fundamental measure of human existence: Heraclitus sees the individual
+      as a light that cycles through ignition and extinction (life and death), while Isavasya Upanishad traces breath''s return
+      to the immortal air and body to ashes—each marking a dissolution into a larger cosmic element.'
+    divergence: Heraclitus frames this cycle as an ethical-cosmological alignment with universal measure (logos), whereas
+      the Upanishad frames it as a metaphysical return to the immortal principle (brahman), emphasizing transcendence rather
+      than participatory attunement.
+    passage_id: isavasya_upanishad.isa_023
+  - citation: 'Vijnana Bhairava — Yukti #1'
+    resonance: 'Both texts locate the fundamental rhythm of human existence in breath itself: Heraclitus''s lighted-and-extinguished
+      man mirrors the Vijnana Bhairava''s prāṇa (exhale/rising) and jīva (inhale/descending) as the constant articulation
+      of life—a cyclical pulsation that defines embodied presence.'
+    divergence: Heraclitus treats the cycle as a measure of mortality and ethical alignment, while the Vijnana Bhairava treats
+      it as a gateway to recognition of the Supreme Goddess and non-dual consciousness, making breath a path to liberation
+      rather than a sign of transience.
+    passage_id: vijnana_bhairava.yukti_001
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

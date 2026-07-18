@@ -51,6 +51,33 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a structural blindness: the soul/awareness continuously performs its nature, but ordinary
+      perception misses it because attention is absorbed in external content. Turning attention inward (to the knower rather
+      than the known) reveals what was always operating.'
+    divergence: Plotinus frames this as the soul's continuous noetic activity obscured by sensory focus; Vijnana Bhairava
+      locates the same awareness identically in all bodies as a direct recognition, emphasizing non-dual recognition over
+      Plotinian hierarchical emanation.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Pratyabhijnahrdayam — Sutra 15
+    resonance: 'Both passages move from recognizing a universal principle (awareness/Consciousness) to a transformative assimilation:
+      when attention stabilizes on the fundamental attribute itself rather than its modifications, the knower realizes identity
+      with the whole.'
+    divergence: Pratyabhijnahrdayam emphasizes the power of Consciousness to assimilate the universe through recognition;
+      Vijnana Bhairava emphasizes the sameness of awareness across all beings as the direct insight, with less emphasis on
+      the assimilative act.
+    passage_id: pratyabhijnahrdayam.phr_015
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: Both use the metaphor of boundlessness (no center, no circumference; same in all bodies) to point toward a
+      nature that cannot be grasped by ordinary spatial or conceptual reference—the knower itself has no fixed location or
+      limit.
+    divergence: Tilopa uses spatial negation (open sky) to dissolve conceptual framing of mind; Vijnana Bhairava uses the
+      ubiquity of awareness across embodied beings to establish its fundamental, unchanging character.
+    passage_id: tilopa_mahamudra.til_002
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

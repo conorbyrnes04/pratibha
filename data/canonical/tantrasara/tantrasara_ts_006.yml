@@ -174,6 +174,33 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read the excerpt slowly, pause at one striking line, and reflect on its relevance to present experience.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: Both texts posit that a reflexive turn—reflection or inward attention—directly constitutes knowledge of the
+      Self; the act of turning awareness back upon itself is not preparatory but constitutive of liberation.
+    divergence: Śāmbhavopāya emphasizes reflection as a spontaneous, non-dual recognition of consciousness itself, while Tantrasara
+      (as Abhinavagupta's synthesis) integrates this with devotional practice and the contraction-expansion play of the One
+      Light.
+    passage_id: siva_sutra.ss_i_17
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: Both texts locate liberation not as escape from embodied life but as recognition of one's own nature already
+      present within the play of manifestation; the tantrika's freedom occurs 'at the very heart of life' through perceiving
+      the divine as one's own nature.
+    divergence: Spandakarika emphasizes the continuous oscillation (spanda) of consciousness as the mechanism of liberation,
+      while Tantrasara frames this through the One Light's contraction into individual awareness and the devotional recognition
+      of that unity.
+    passage_id: yoga_spandakarika.sp_30
+  - citation: Tao Te Ching — The Paradox of Knowing
+    resonance: Both texts invert ordinary epistemology by privileging a paradoxical knowing that acknowledges its own limits;
+      true knowledge involves recognizing what cannot be grasped by conceptual mind, whereas false knowledge claims certainty
+      about what remains unknowable.
+    divergence: The Tao Te Ching frames this as a corrective to discursive knowledge itself, while Tantrasara (through Abhinavagupta)
+      integrates this paradox into a non-dual metaphysics where consciousness knows itself through its own contraction and
+      expansion.
+    passage_id: tao_te_ching.ttc_md_073
+  layer_provenance: generated_grounded
 - kind: appendix
   label: Received translation (Śastra vault)
   body: 'Here, the essential nature alone is what is truly to be chosen. That essential nature is nothing but light, the shining

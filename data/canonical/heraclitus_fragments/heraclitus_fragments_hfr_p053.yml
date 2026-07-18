@@ -59,6 +59,24 @@ pratibha_layers:
     definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
       ethics into cosmology: how you live is how you align (or fail) with measure.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Phaedo (Plato) — The Soul's Affinity With the Unseen
+    resonance: 'Both texts ground ethical excellence in a structural principle: Heraclitus ties wisdom to dryness (a cosmological
+      measure governing all things), while Plato ties the soul''s endurance to simplicity and intelligibility. Each makes
+      character depend on alignment with a universal principle rather than individual disposition.'
+    divergence: Heraclitus emphasizes the physical-pneumatic substrate (dryness as vital measure), while Plato privileges
+      the ontological distinction between composite/visible and simple/intelligible realms.
+    passage_id: phaedo_plato.phaedo_md_003
+  - citation: 'Vijnana Bhairava — Yukti #1'
+    resonance: 'Both texts locate the soul''s excellence in breath-flow as a cosmological measure: Heraclitus identifies the
+      dry beam (pneuma) as the wisest soul, while the Vijnana Bhairava identifies prāṇa (breath-articulation) as the Supreme
+      Goddess''s constant expression. Each makes respiration the vehicle of wisdom and being.'
+    divergence: Heraclitus treats dryness as a static measure of excellence, while the Vijnana Bhairava treats breath as a
+      dynamic, oscillating flow between exhalation and inhalation—a rhythmic rather than fixed principle.
+    passage_id: vijnana_bhairava.yukti_001
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

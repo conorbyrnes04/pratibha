@@ -54,18 +54,26 @@ function normalizeLayer(layer: PratibhaLayer, item?: VerseItem): PratibhaLayer |
     body = humanizeTtcRefs(body);
   }
   const items = Array.isArray(layer.items)
-    ? layer.items.map((entry) =>
-        item && isTaoTeChing(item)
-          ? {
-              ...entry,
-              term: entry.term ? humanizeTtcRefs(entry.term) : entry.term,
-              definition: entry.definition ? humanizeTtcRefs(entry.definition) : entry.definition,
-              citation: entry.citation ? humanizeTtcRefs(entry.citation) : entry.citation,
-              resonance: entry.resonance ? humanizeTtcRefs(entry.resonance) : entry.resonance,
-              divergence: entry.divergence ? humanizeTtcRefs(entry.divergence) : entry.divergence,
-            }
-          : entry,
-      )
+    ? layer.items.map((entry) => {
+        if (!(item && isTaoTeChing(item)) || !entry || typeof entry !== "object") {
+          return entry;
+        }
+        // Humanize any TTC refs present on key-term / resonance fields without
+        // assuming which shape the entry is.
+        const rec = entry as Record<string, unknown>;
+        const humanizeField = (key: string) => {
+          const value = rec[key];
+          return typeof value === "string" ? humanizeTtcRefs(value) : value;
+        };
+        return {
+          ...rec,
+          term: humanizeField("term"),
+          definition: humanizeField("definition"),
+          citation: humanizeField("citation"),
+          resonance: humanizeField("resonance"),
+          divergence: humanizeField("divergence"),
+        };
+      })
     : [];
   const layerWithBody = { ...layer, body, ...(items.length ? { items } : {}) };
   if (layerWithBody.kind === "iast") {

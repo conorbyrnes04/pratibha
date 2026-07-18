@@ -232,6 +232,10 @@ button {
   position: relative;
 }
 
+.filter-select--open {
+  z-index: 50;
+}
+
 .filter-select__trigger {
   display: flex;
   width: 100%;

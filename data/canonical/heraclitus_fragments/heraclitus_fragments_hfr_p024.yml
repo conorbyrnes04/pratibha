@@ -63,6 +63,33 @@ pratibha_layers:
     definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation — exchange (πυρὸς τροπαὶ)
       governed by proportion. Fire names process, not a static element.
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.8
+    resonance: Both texts map a cascading dissolution through elemental stages—Heraclitus through fire, air, water, earth
+      as mutual transformations; Chāndogya through speech→mind→life force→heat→Ultimate Reality. Each names a lawful sequence
+      where one state dies into the next, constituting the fabric of reality itself.
+    divergence: Heraclitus treats the cycle as perpetual and self-sustaining (fire lives in death); Chāndogya frames it as
+      a one-directional resorption at death into a transcendent ground (Brahman), not an eternal reciprocal exchange.
+    passage_id: chāndogya_upaniṣad.chu_vi_08
+  - citation: 'Vijnana Bhairava — Yukti #82'
+    resonance: 'Both use elemental emergence as the structural principle of manifestation: Heraclitus shows elements arising
+      from and returning to one another in measured transformation; Vijnana Bhairava shows waves, flames, and light-rays arising
+      from their respective sources (water, fire, sun) as the model for how the universe emanates from Bhairava.'
+    divergence: Heraclitus emphasizes the death-into-life cycle as impersonal cosmic law; Vijnana Bhairava frames emergence
+      as conscious emanation from a divine non-dual source, making the process an expression of divine self-manifestation
+      rather than mechanical transformation.
+    passage_id: vijnana_bhairava.yukti_082
+  - citation: Patañjali Yoga Sūtras 4.2
+    resonance: 'Both identify transformation as the fundamental operation of reality: Heraclitus through the death-into-life
+      sequence of elements; Patañjali through the overflow of nature causing one species to change into another. Each treats
+      change not as accidental but as intrinsic to the nature of manifestation.'
+    divergence: Heraclitus grounds change in the logos (rational measure) governing elemental exchange; Patañjali grounds
+      it in prakṛti (nature's inherent creative overflow), which yoga seeks to transcend rather than understand as cosmic
+      law.
+    passage_id: patañjali_yoga_sūtras.ys_4_02
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

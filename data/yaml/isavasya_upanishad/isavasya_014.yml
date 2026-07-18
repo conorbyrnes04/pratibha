@@ -5,13 +5,10 @@ title: Mantra 8
 sanskrit: 'स पर्यगाच्छुक्रमकायमव्रणमस्नाविरं शुद्धमपापविद्धम् ।
 
   कविर्मनीषी परिभूः स्वयंभूर्याथातथ्यतोऽर्थान्व्यदधाच्छाश्वतीभ्यः समाभ्यः ॥ ८ ॥'
-transliteration: 'sa paryagac chukram akayam avranam asnaviram suddham apapa-viddham
-  |
+transliteration: 'sa paryagac chukram akayam avranam asnaviram suddham apapa-viddham |
 
-  kavir manisi paribhuh svayambhur yathatathyato''rthan vyadadhac chasvatibhyah samabhyah
-  || 8 ||'
-translation: All-pervading, pure, bodiless, untouched by evil - wise, transcendent,
-  self-existent, ordering all rightly.
+  kavir manisi paribhuh svayambhur yathatathyato''rthan vyadadhac chasvatibhyah samabhyah || 8 ||'
+translation: All-pervading, pure, bodiless, untouched by evil - wise, transcendent, self-existent, ordering all rightly.
 commentary: 'The Self is not merely interior witness but cosmically ordering intelligence.
 
 
@@ -39,3 +36,18 @@ themes:
 - speech
 source: Isavasya Upanishad 8
 quality_score_unit: 100
+resonances:
+- citation: Svetasvatara Upanishad — The One Hidden in All Beings
+  resonance: 'Both passages identify the Self as simultaneously all-pervading, hidden/transcendent, and functioning as witness-knower of all beings. Each names the Self''s dual character: immanent ordering intelligence and transcendent consciousness beyond qualities.'
+  divergence: Svetasvatara emphasizes the Self as 'indwelling support' and 'overseer of action' (cosmic governance through immanence), while Isavasya stresses the Self as 'untouched by evil' and 'self-existent' (transcendence through non-involvement).
+  passage_id: svetasvatara_upanishad.svu_003
+- citation: Astavakra Gita — Verse 1.12
+  resonance: 'Both passages attribute to the Self the exact triad: witness-consciousness, all-pervading nature, and inactivity/freedom from modification. Each refuses to locate the Self in any particular content or action.'
+  divergence: Astavakra grounds liberation in recognition of this nature ('the one who thinks themselves free'), making the Self's witness-status soteriologically immediate, while Isavasya presents it as cosmically ordering (active in governance despite being inactive in essence).
+  passage_id: astavakra_gita.asg_1_12
+- citation: 'Bhagavad Gita — Field and Knower: The Anatomy of Liberation'
+  resonance: 'Both texts establish liberation through structural differentiation: the Self is identified as the non-reducible knower standing apart from all observable contents (field/body/mind). The move is epistemological discrimination, not negation.'
+  divergence: Bhagavad Gita emphasizes the field-knower distinction as the beginning of discernment (a practice), while Isavasya presents the Self's transcendence as already accomplished fact ('self-existent'), requiring recognition rather than cultivation.
+  passage_id: bhagavad_gita.bg_md_010
+layer_provenance:
+  resonances: generated_grounded

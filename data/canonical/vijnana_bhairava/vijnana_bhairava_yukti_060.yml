@@ -56,6 +56,33 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching — The Dao Moves by Reversal
+    resonance: 'Both texts enact a reversal of ordinary perception as the method itself: the Tao Te Ching names reversal (fǎn)
+      as the movement of the Dao, while Yukti 60 reverses the gaze from closed eyes (inner blackness) to open eyes (same blackness
+      perceived externally), collapsing the distinction between inner and outer states to disclose non-dual nature.'
+    divergence: The Tao Te Ching frames reversal as cosmological principle and natural movement, while Vijnana Bhairava frames
+      it as a phenomenological technique of direct recognition that dissolves the subject-object divide through contemplative
+      practice.
+    passage_id: tao_te_ching.ttc_md_009
+  - citation: Nagarjuna Mulamadhyamakakarika — Dependent Arising Is Emptiness Is the Middle Way
+    resonance: 'Both texts use a paradoxical identity statement to point beyond conceptual division: Nagarjuna equates dependent
+      arising with emptiness with the middle way (collapsing three apparent categories into one reality), while Yukti 60 equates
+      closed-eye blackness with open-eye blackness with His nature (collapsing inner/outer/transcendent into one recognition).'
+    divergence: Nagarjuna's method is logical-philosophical (distinguishing false views of the two truths), while Vijnana
+      Bhairava's method is direct sensory-contemplative (a lived reversal that bypasses conceptual analysis).
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_18
+  - citation: Astavakra Gita — 18.96 — 18.97 (The Paradoxical State)
+    resonance: Both texts dissolve all binary oppositions (pleasure/pain, attachment/detachment, liberation/bondage) into
+      a paradoxical non-state that cannot be named or grasped; Astavakra Gita 18.96 negates every possible category (neither
+      happy nor unhappy, neither bound nor free, neither something nor nothing), while Yukti 60 negates the distinction between
+      closed and open perception to reveal a nature beyond all such divisions.
+    divergence: Astavakra Gita achieves this through systematic negation of all conceptual categories, while Vijnana Bhairava
+      achieves it through a single reversal of sensory attention that discloses the non-dual directly.
+    passage_id: astavakra_gita.asg_sum_18_96_18_97
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

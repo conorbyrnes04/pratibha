@@ -60,6 +60,31 @@ pratibha_layers:
   label: Practice (Abhyasa)
   body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute in
     the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: 'Both texts present meditation/yoga as iterative return of attention to center rather than a single achievement:
+      the Spandakarika''s ''vigilantly sown senses'' and ''stability'' parallel the Gita''s repeated return of attention from
+      dispersion to center through embodied practice.'
+    divergence: The Gita frames this as mastery through disciplined habit-regulation, while Spandakarika locates stability
+      in spontaneous Mahamudra presence—effort versus effortlessness as the operative mode.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Patañjali Yoga Sūtras 1.43
+    resonance: 'Both describe a state where the mind''s ordinary operations dissolve and direct presence to reality emerges:
+      Patañjali''s samādhi where ''memory of name, form, meaning has dissolved'' structurally mirrors the Spandakarika''s
+      senses ''sown in reality'' with stability found in non-conceptual presence.'
+    divergence: Patañjali emphasizes the cessation of mental arguments and the object's isolated nature, while Spandakarika
+      emphasizes the tantrika's vigilant presence itself as the locus of spontaneous meditation.
+    passage_id: patañjali_yoga_sūtras.ys_1_43
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: 'Both employ embodied gathering—of senses and mind—as the method for crossing into a higher state: the Spandakarika''s
+      ''senses vigilantly sown'' and the Svetasvatara''s ''gathering senses and mind into the heart'' share the same structural
+      move of sensory integration as gateway.'
+    divergence: Svetasvatara frames this as crossing fear through Brahman's boat (cosmological liberation), while Spandakarika
+      frames it as spontaneous meditation in presence (non-dual immediacy).
+    passage_id: svetasvatara_upanishad.svu_009
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

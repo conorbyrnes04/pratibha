@@ -73,6 +73,31 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Clarify whether your current practice is primarily transformative or transcendent.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.28
+    resonance: Both texts establish that precise repetition of a word-form (mantra/praṇava) paired with meditation on its
+      meaning produces determinate spiritual results—the method itself generates the outcome through disciplined attention
+      to the distinction between form and content.
+    divergence: Patañjali grounds this in the removal of obstacles to mental clarity (yogic psychology), while Isavasya emphasizes
+      the cosmological distinction between manifest and unmanifest realms as the source of differentiated results.
+    passage_id: patañjali_yoga_sūtras.ys_1_28
+  - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
+    resonance: Both texts insist that two distinct registers—manifest/conventional and unmanifest/ultimate—cannot be collapsed;
+      one must navigate both precisely to reach the goal, and the distinction itself is not pedagogically optional but constitutive
+      of the path.
+    divergence: Nagarjuna's two truths are epistemological and soteriological (pointing to nirvāṇa), while Isavasya's manifest/unmanifest
+      distinction operates as a cosmological and ritual taxonomy grounded in Vedic ontology.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
+  - citation: Svetasvatara Upanishad — Fire by Friction, Self by Om
+    resonance: Both passages teach that the unmanifest (hidden Self, latent fire) requires the correct means or method to
+      be actualized; the distinction between potential and actualized is not merely theoretical but demands precise technique.
+    divergence: Svetasvatara frames the unmanifest as ontologically present but concealed (requiring friction/Om), while Isavasya
+      treats manifest and unmanifest as yielding different results through different modes of attention, without necessarily
+      positing a single hidden reality.
+    passage_id: svetasvatara_upanishad.svu_008
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

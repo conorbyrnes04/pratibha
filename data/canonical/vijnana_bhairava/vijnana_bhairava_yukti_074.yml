@@ -48,6 +48,25 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nagarjuna Mulamadhyamakakarika — Dependent Arising Is Emptiness Is the Middle Way
+    resonance: 'Both texts dissolve the apparent multiplicity of phenomena into a unified conceptual framework by reframing
+      how appearance itself is understood: Yukti 74 sees the diverse universe as illusory display (magic show, painting, flux),
+      while Nagarjuna identifies dependent arising with emptiness, making the very mechanism of manifestation reveal non-dual
+      reality.'
+    divergence: Vijnana Bhairava emphasizes direct contemplative disclosure of happiness through perceptual shift, whereas
+      Nagarjuna uses logical analysis of the two truths to dismantle conceptual grasping and avoid nihilism.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_18
+  - citation: Heraclitus Fragments — The straight and crooked way of the woolcarders is one and the same.”
+    resonance: 'Both passages collapse apparent opposites into a single underlying reality: Heraclitus identifies the straight
+      and crooked paths as one, while Yukti 74 treats the flux of diverse forms (magic, painting, change) as a unified display—both
+      dissolving dualistic perception into non-dual seeing.'
+    divergence: Heraclitus grounds this unity in the logos as cosmic principle, whereas Vijnana Bhairava locates it in the
+      direct experiential recognition that happiness arises when conceptual distinctions are suspended.
+    passage_id: heraclitus_fragments.hfr_p050
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

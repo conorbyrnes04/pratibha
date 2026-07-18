@@ -91,6 +91,7 @@ def normalize_chinese(text: str) -> str:
     text = text.replace("\u3000", "")
     text = re.sub(r"[﹁﹂﹃﹄]", lambda m: {"﹁": "「", "﹂": "」", "﹃": "「", "﹄": "」"}[m.group()], text)
     text = re.sub(r"\s+", "", text)
+    text = re.sub(r"(前篇|次篇|目錄).*$", "", text)
     return text.strip()
 
 

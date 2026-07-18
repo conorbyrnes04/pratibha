@@ -46,6 +46,27 @@ pratibha_layers:
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
     arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Beyond Image, Known in the Heart
+    resonance: Both texts establish a radical incommensurability between human intellection and a transcendent principle that
+      cannot be grasped through ordinary cognitive categories. Heraclitus positions the wisest human as an ape before God's
+      intelligible order; Svetasvatara declares the divine grasped neither above, across, nor in between—each denying conventional
+      epistemic access to the ultimate.
+    divergence: Heraclitus grounds incommensurability in the single intelligible order (logos) that structures apparent plurality;
+      Svetasvatara emphasizes the transcendence of spatial and relational categories themselves, pointing toward a non-dual
+      principle beyond conceptual location.
+    passage_id: svetasvatara_upanishad.svu_012
+  - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
+    resonance: 'Both texts refuse a mystical collapse of distinctions while insisting on a necessary structural interdependence:
+      Heraclitus''s ''one'' is not fusion but the single order within plurality; Nagarjuna''s ultimate cannot be pointed out
+      without leaning on conventional reality—each preserves a two-fold framework as epistemologically necessary.'
+    divergence: Heraclitus treats the one as an intelligible cosmic order that the wise approach through logos; Nagarjuna
+      treats the ultimate and conventional as mutually dependent conceptual frameworks with no independent essence, emphasizing
+      emptiness rather than an ordering principle.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
+  layer_provenance: generated_grounded
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
   body: that the wisest of men compared with God appears an ape in wisdom and in beauty and in all other things? ἱ

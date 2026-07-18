@@ -47,6 +47,35 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāktopāya
+    resonance: Both texts locate knowledge in the quality and direction of attention itself rather than in the object attended
+      to. Ibn Arabi's inward turn ('clarity grows when attention returns to the knower') structurally mirrors the Śāktopāya's
+      equation of sustained attention with knowledge—the knower's focused awareness becomes the epistemological ground.
+    divergence: Ibn Arabi emphasizes negation and transcendence (what the Absolute is not), while the Śāktopāya affirms attention
+      as an active power of consciousness; Ibn Arabi's apophatic method contrasts with Kashmir Shaivism's affirmative metaphysics
+      of Śakti.
+    passage_id: siva_sutra.ss_ii_12
+  - citation: Tao Te Ching — Learning Adds; the Way Subtracts
+    resonance: 'Both texts prescribe a reversal of ordinary cognitive habit: Ibn Arabi''s inward turn away from ''passing
+      content'' parallels the Taoist practice of ''daily diminish''—a subtraction from accumulated knowledge and external
+      focus to access a deeper principle. Both treat knowledge as requiring withdrawal rather than accumulation.'
+    divergence: Ibn Arabi's withdrawal aims at the transcendent Absolute beyond all things, while the Taoist diminishment
+      aims at alignment with the immanent, natural flow of the Dào; Ibn Arabi is apophatic and theistic, the Tao Te Ching
+      is naturalistic and non-theistic.
+    passage_id: tao_te_ching.ttc_md_011
+  - citation: Pratyabhijnahrdayam — Sutra 12
+    resonance: 'Both texts identify ignorance as a fundamental misalignment of attention: the Pratyabhijnahrdayam''s ''bewilderment
+      by one''s own powers through ignorance of authorship'' mirrors Ibn Arabi''s point that clarity requires attention to
+      return to the knower—both diagnose the error as attending to effects (the fivefold act, passing content) while forgetting
+      the source (authorship, the knower).'
+    divergence: Ibn Arabi frames this as a metaphysical paradox about the Absolute's transcendence, while Kashmir Shaivism
+      frames it as recognition of one's own divine agency; Ibn Arabi emphasizes unknowability, Pratyabhijnahrdayam emphasizes
+      self-recognition (pratyabhijñā).
+    passage_id: pratyabhijnahrdayam.phr_012
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

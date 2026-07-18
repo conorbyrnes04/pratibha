@@ -47,6 +47,24 @@ pratibha_layers:
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
     arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: 'Both texts invert the expected value of knowledge: Heraclitus claims ignorance must be concealed (implying
+      knowledge of one''s ignorance is the real burden), while Śiva Sūtra declares ''Knowledge is bondage''—each treats cognitive
+      states as traps rather than liberations.'
+    divergence: Heraclitus frames the problem as social (concealment fails in relaxation), whereas Śāmbhavopāya identifies
+      knowledge itself as the ontological obstacle to freedom.
+    passage_id: siva_sutra.ss_i_2
+  - citation: 'Vijnana Bhairava — Yukti #1'
+    resonance: 'Both passages anchor a philosophical claim in breath as the primary register: Heraclitus embeds his aphorism
+      about ignorance in the physiological state of relaxation (breath unguarded), while Vijnana Bhairava makes prāṇa the
+      constant articulation through which reality is known.'
+    divergence: Heraclitus uses breath-state as the condition where ignorance leaks out (a failure of concealment), whereas
+      Vijnana Bhairava treats breath as the direct vehicle of supreme knowledge itself.
+    passage_id: vijnana_bhairava.yukti_001
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

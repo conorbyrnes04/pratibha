@@ -82,6 +82,24 @@ pratibha_layers:
   label: Practice (Abhyasa)
   body: Sit for 5 minutes and follow the breath naturally. At each inhale and exhale, notice the subtle vibration of awareness
     before naming it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — World as Reflection in the Sky of Awareness
+    resonance: 'Both texts posit a direct, non-dual recognition where awareness itself is the operative principle: the Spandakarika
+      grounds freedom in grasping the fundamental truth of non-separation, while Tantrasara locates recognition through a
+      sharp tilt of awareness that bypasses elaborated mediation. Each makes awareness the instrument and the revelation simultaneously.'
+    divergence: Tantrasara emphasizes the *method* of direct tilt (śāmbhavopāya) as the path, whereas Spandakarika emphasizes
+      the *result*—the fullness of manifestation seen as non-separate from the absolute—as the fruit of grasping.
+    passage_id: tantrasara.ts_010
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad III.14
+    resonance: 'Both texts make a non-dual identity claim: Spandakarika asserts that no manifestation is separate from the
+      absolute condition, while Chāndogya directly states the entire universe is Brahman. Each collapses the apparent distinction
+      between the manifest world and ultimate reality into a single non-dual assertion.'
+    divergence: Spandakarika grounds this non-duality in the *dynamic freedom* of consciousness recognizing itself through
+      manifestation, whereas Chāndogya grounds it in *being*—the universe *is* Brahman as a statement of identity.
+    passage_id: chāndogya_upaniṣad.chu_iii_14
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

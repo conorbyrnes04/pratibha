@@ -49,6 +49,32 @@ pratibha_layers:
   label: Practice (Abhyasa)
   body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute in
     the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching — The Blindness of Sensory Excess
+    resonance: Both texts diagnose how sensory engagement—the Spandakarika through 'energy of sounds' and Tao Te Ching through
+      'five sounds'—depletes the practitioner's power and autonomy, rendering them passive victims of external forces rather
+      than sovereign agents.
+    divergence: The Spandakarika frames this as entrapment by dark energy and illusion requiring yogic restraint; the Tao
+      Te Ching frames it as natural excess that obscures the Way, requiring simplification and return to inner stillness.
+    passage_id: tao_te_ching.ttc_md_023
+  - citation: Siva Sutra — Āṇavopāya
+    resonance: Both texts identify illusion as arising from non-discrimination—the Spandakarika through failure to distinguish
+      oneself from the 'energy of action,' and Siva Sutra through 'non-discrimination of the principles beginning with limitation'—where
+      confusion about one's true nature becomes the mechanism of bondage.
+    divergence: The Spandakarika emphasizes the active seduction of seeking (the roaming dog), while Siva Sutra emphasizes
+      metaphysical confusion about the nature of principles themselves; one is behavioral, the other epistemological.
+    passage_id: siva_sutra.ss_iii_5
+  - citation: Astavakra Gita — 8.1 — 8.4
+    resonance: Both texts locate bondage in the mind's habitual movement toward desire and aversion—Spandakarika's 'always
+      seeking' parallels Astavakra's cittaṃ vāñchati śocati (mind wishing and grieving)—and liberation in cessation of this
+      oscillation rather than in external action.
+    divergence: The Spandakarika warns against being captured by external energy; Astavakra Gita locates the problem entirely
+      in the mind's own nature, making liberation a matter of cognitive non-engagement rather than resistance to external
+      forces.
+    passage_id: astavakra_gita.asg_sum_08_01_08_04
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

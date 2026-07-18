@@ -55,6 +55,35 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 2
+    resonance: Both passages posit a singular source-consciousness that pervades and animates the entire manifest universe
+      as its expressions or modifications. The Astavakra's waves-in-ocean model and Plotinus's soul infusing life into all
+      beings share the structural move of collapsing the apparent multiplicity of phenomena into manifestations of one undivided
+      principle.
+    divergence: Plotinus grounds this in a hierarchical emanation from the transcendent One through soul to matter, whereas
+      Astavakra presents the universe as appearing *in* consciousness without ontological descent—a non-dual appearance rather
+      than a graded emanation.
+    passage_id: plotinus_enneads.enn_v_1_02
+  - citation: Yoga Spandakarika — First Flow
+    resonance: Both texts dissolve the subject-object duality by revealing pleasure/suffering and all phenomenal pairs as
+      modifications within a single undifferentiated consciousness-space. The Spandakarika's 'space of profound consciousness'
+      and Astavakra's ocean-ground perform the same structural collapse of multiplicity into non-dual awareness.
+    divergence: Astavakra emphasizes the appearance-metaphor (waves as illusory forms), while Spandakarika emphasizes the
+      experiential recognition that duality is already resolved within consciousness—a shift from metaphysical description
+      to direct phenomenological realization.
+    passage_id: yoga_spandakarika.sp_05
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: Both passages locate a transcendent fourth state (Turiya) that encompasses and pervades the three ordinary
+      states of consciousness (waking, dream, deep sleep). Each text uses the three states as a gateway to recognizing the
+      continuous, unchanging ground that witnesses all states.
+    divergence: Astavakra's wave-metaphor emphasizes the illusory appearance of multiplicity within a single substance, while
+      Siva Sutra's 'enjoyment of the Fourth' emphasizes the experiential availability of non-dual awareness *within* the three
+      states—a shift from appearance-doctrine to lived integration.
+    passage_id: siva_sutra.ss_i_7
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

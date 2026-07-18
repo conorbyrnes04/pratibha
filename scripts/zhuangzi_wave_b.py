@@ -70,6 +70,9 @@ def md_unit(ch: int, chinese: str, giles_title: str, payload: dict[str, Any]) ->
                 block += f" *Divergence:* {divergence}"
             res_lines.append(block)
 
+    # Keep Original aligned to the focal excerpt (not the full chapter).
+    chinese_excerpt = format_chinese(chinese, max_chars=500)
+
     return f"""## {title}
 **Source:** Zhuangzi, Chapter {ch} (*{cn}*, "{giles_title}")
 
@@ -78,7 +81,7 @@ def md_unit(ch: int, chinese: str, giles_title: str, payload: dict[str, Any]) ->
 ---
 
 ### Original
-{format_chinese(chinese)}
+{chinese_excerpt}
 
 ### IAST
 *(Chinese source text; no Sanskrit original. Pinyin with tones for key terms is provided in Key Terms.)*

@@ -63,6 +63,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 13
+    resonance: 'Both texts perform a paradoxical move: the mind, through a specific operation (recognition/introversion in
+      Pratyabhijnahrdayam; direct assertion in Siva Sutra), is revealed to *be* the Supreme Consciousness rather than merely
+      reflect or contain it. The apparent contradiction dissolves when the mind''s true nature is recognized.'
+    divergence: Pratyabhijnahrdayam emphasizes the *process* of recognition and ascent through introversion, while Siva Sutra
+      makes a stark, non-processual declaration that collapses the distinction immediately.
+    passage_id: pratyabhijnahrdayam.phr_013
+  - citation: Patañjali Yoga Sūtras 4.22
+    resonance: 'Both texts address the paradox of how mind-stuff (citta/manas) can become conscious of itself: Patañjali through
+      the Purusha''s unchangeable consciousness reflecting into the mind-stuff, Siva Sutra through the direct identity of
+      mind and Self. Each resolves the apparent circularity by positing a non-dual relationship between witness and witnessed.'
+    divergence: Patañjali maintains a dualism of Purusha and Prakriti (reflection model), while Siva Sutra collapses this
+      into non-dual identity, making the mind itself the Self without mediation.
+    passage_id: patañjali_yoga_sūtras.ys_4_22
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

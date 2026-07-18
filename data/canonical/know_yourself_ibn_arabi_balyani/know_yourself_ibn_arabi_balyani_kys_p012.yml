@@ -37,6 +37,26 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus Fragments — Fragment 2
+    resonance: Both texts posit a universal principle (Logos/Divine Reality) that exists prior to and independent of human
+      conceptual apprehension; the barrier is not the principle's absence but human inattentiveness to what is already present.
+      Knowledge arrives through receptive awareness rather than intellectual construction.
+    divergence: Heraclitus emphasizes the eternal constancy of Logos and human forgetfulness as the problem; Ibn Arabi/Balyani
+      stresses that even the spiritually advanced (prophets, saints, angels) cannot know the Divine through their own faculties—only
+      through receptive listening to what is given.
+    passage_id: heraclitus_fragments.hfr_p002
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
+    resonance: Both passages identify a mode of knowing that transcends ordinary sensory and conceptual channels—hearing the
+      inaudible, perceiving the imperceptible—and locate this capacity in a unified understanding that dissolves the subject-object
+      divide. Knowledge is not acquired but recognized as already present.
+    divergence: The Chāndogya grounds this in non-dual metaphysics (all things are one Brahman); Ibn Arabi/Balyani frames
+      it as the unknowability of the Divine essence itself, accessible only through attentive surrender rather than through
+      any doctrine of identity.
+    passage_id: chāndogya_upaniṣad.chu_vi_01
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

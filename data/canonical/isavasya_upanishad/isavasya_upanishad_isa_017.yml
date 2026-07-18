@@ -77,6 +77,31 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Pair your meditation with one concrete ethical action immediately after.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — When Thought Needs Support – Descent into the Āṇava Path
+    resonance: 'Both texts structure knowledge as a dual path requiring integration of distinct means: the Upanishad teaches
+      crossing death through avidya while attaining immortality through vidya; Tantrasara ascends through Śāmbhavopāya (sudden
+      recognition) then descends into Āṇava (gradual support), neither negating the other.'
+    divergence: The Upanishad frames the duality as simultaneous knowledge of two truths; Tantrasara structures it as sequential
+      ascent and descent, with descent as necessary completion rather than parallel integration.
+    passage_id: tantrasara.ts_015
+  - citation: Patañjali Yoga Sūtras 4.6
+    resonance: 'Both passages locate liberation or transformation in a state produced by sustained practice: the Upanishad''s
+      vidya (knowledge) attains immortality; Patañjali''s meditation-born mind becomes free of karmic residue—each identifies
+      a specific mental condition as the gateway to transcendence.'
+    divergence: The Upanishad emphasizes knowledge (jñāna) as the operative principle; Patañjali emphasizes the mind's purification
+      through meditation as the mechanism, making psychology rather than gnosis primary.
+    passage_id: patañjali_yoga_sūtras.ys_4_06
+  - citation: Svetasvatara Upanishad — Fire by Friction, Self by Om
+    resonance: 'Both use the metaphor of latency and manifestation to describe how the transcendent is accessed: the Upanishad''s
+      vidya attains what is already immortal; Svetasvatara''s hidden Self is brought forth by right means—both assume the
+      goal exists but requires proper method to reveal.'
+    divergence: Isavasya emphasizes knowledge as the revealing act; Svetasvatara emphasizes technique (the friction of Om)
+      as the mechanical means, locating agency in practice rather than gnosis.
+    passage_id: svetasvatara_upanishad.svu_008
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

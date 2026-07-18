@@ -28,6 +28,8 @@ export type Resonance = {
   citation: string;
   resonance: string;
   divergence?: string;
+  /** Corpus unit id when the cited passage exists in Pratibha (exact deep-link). */
+  passage_id?: string;
 };
 
 export type PratibhaLayer = {

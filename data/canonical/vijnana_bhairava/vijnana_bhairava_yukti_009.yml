@@ -47,6 +47,34 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts prescribe iterative return of attention to an interior center as the method for stabilizing mind.
+      Yukti 9 directs steadiness inward to the cranium; Bhagavad Gita 10 frames yoga-mastery as repeatedly returning attention
+      from dispersion to center. Both treat attention-discipline as gradual and cyclical rather than instantaneous.
+    divergence: Yukti 9 locates the object of perception within a specific anatomical locus (kapāla) and promises direct perception
+      of the ultimate; Bhagavad Gita emphasizes habit-formation and behavioral regulation as the means, without claiming metaphysical
+      revelation.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Shantideva Bodhicaryavatara — Stillness Before Insight
+    resonance: 'Both texts identify mental steadiness (gathered concentration) as prerequisite and protective: Yukti 9 requires
+      ''gradually increasing steadiness of mind'' to perceive the worthy; Bodhicaryavatara frames steadied concentration as
+      defense against the afflictions that prey on scattered mind. Both treat stability as both method and safeguard.'
+    divergence: Yukti 9 grounds steadiness in inward anatomical focus and promises direct perception; Bodhicaryavatara treats
+      steadiness as ethical protection and prerequisite for insight into emptiness, without privileging a specific bodily
+      locus.
+    passage_id: shantideva_bodhicaryavatara.bca_08_solitude
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: 'Both texts employ the paradox of effort-through-attention: Yukti 9 uses ''gradually increasing steadiness''
+      to perceive what is most worthy; Yoga Spandakarika 5 uses ''ardent striving'' and angular attention to reveal the supreme
+      tremor. Both suggest that intensified, directed attention makes manifest what was obscured.'
+    divergence: Yukti 9 locates the object internally (in the cranium) and emphasizes inward closure; Yoga Spandakarika 5
+      uses external analogy (viewing an object from all angles) and suggests the sacred tremor is already present but requires
+      recognition through effort.
+    passage_id: yoga_spandakarika.sp_36
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

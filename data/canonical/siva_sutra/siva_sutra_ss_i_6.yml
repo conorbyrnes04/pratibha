@@ -59,6 +59,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching — Non-Acting, Nothing Left Undone
+    resonance: 'Both texts posit a paradoxical unity of withdrawal and manifestation: the Siva Sutra describes how gathering
+      (samhara) causes withdrawal, while the Tao Te Ching describes how wu-wei (non-action) paradoxically leaves nothing undone.
+      Each tradition locates creative power in a state of apparent passivity or contraction.'
+    divergence: The Siva Sutra frames this through sakti-cakra (circles of power) and cosmological cycles of manifestation/withdrawal,
+      while the Tao Te Ching grounds it in the metaphysical principle of the Dao itself as the source of effortless action.
+    passage_id: tao_te_ching.ttc_md_008
+  - citation: Yoga Spandakarika — First Flow
+    resonance: 'Both passages identify a formless, tremulous ground as the locus of both creation and return: the Siva Sutra''s
+      gathered circles withdrawing the universe structurally mirrors the Spandakarika''s sacred tremor as the place of creation
+      and return. Each describes a single principle oscillating between manifestation and reabsorption.'
+    divergence: The Siva Sutra emphasizes the gathering of sakti-cakra as the mechanism of withdrawal, while the Spandakarika
+      emphasizes the formless nature and limitlessness of the spanda itself as the ground enabling both movements.
+    passage_id: yoga_spandakarika.sp_02
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

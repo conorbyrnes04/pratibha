@@ -153,6 +153,30 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read the excerpt slowly, pause at one striking line, and reflect on its relevance to present experience.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Āṇavopāya
+    resonance: Both texts identify mind directly with Self/Śiva as the fundamental recognition move. The Śāmbhavopāya's 'naked
+      awareness' and Āṇavopāya's 'mind is the Self' name the same collapse of subject-object duality into non-dual recognition.
+    divergence: Śāmbhavopāya emphasizes the flash or sudden stripping away (śakti's path through reasoning), while Āṇavopāya
+      states the identity as a direct aphorism without process.
+    passage_id: siva_sutra.ss_iii_1
+  - citation: Pratyabhijnahrdayam — Sutra 9
+    resonance: 'Both passages structure the metaphysics of awareness through contraction: the Tantrasara''s ''everything falls
+      away'' and Pratyabhijnahrdayam''s ''contraction of Śakti'' describe the same mechanism—how fullness becomes apparent
+      limitation, yet the Self remains unchanged.'
+    divergence: The Tantrasara emphasizes the phenomenological stripping (what remains when content dissolves), while Pratyabhijnahrdayam
+      emphasizes the ontological mechanism (how Śakti's contraction produces the individual soul).
+    passage_id: pratyabhijnahrdayam.phr_009
+  - citation: Tilopa Mahamudra — Do Not Contrive, and Wisdom Dawns
+    resonance: 'Both texts refuse conceptual capture of the ultimate state: Śāmbhavopāya''s ''naked awareness'' beyond thought
+      and Tilopa''s ''cannot be grasped as an object of thought'' name the same impossibility—that direct recognition cannot
+      be mediated by symbol or ordinary mind.'
+    divergence: The Tantrasara locates this recognition within a path of reasoning (śakti's refinement), while Tilopa's Mahāmudrā
+      teaches non-contrivance and the cessation of grasping itself.
+    passage_id: tilopa_mahamudra.til_001
+  layer_provenance: generated_grounded
 - kind: appendix
   label: Received translation (Śastra vault)
   body: 'When the practitioner gradually purifies and refines his thoughts in order to enter the essential nature described

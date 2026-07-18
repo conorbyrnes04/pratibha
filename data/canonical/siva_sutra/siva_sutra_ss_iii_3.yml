@@ -55,6 +55,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Māyā Is Dependence, Not a Second Reality
+    resonance: Both texts identify a maker (māyin/srastr) who projects or constructs the world as illusion, and simultaneously
+      bind an individual within that constructed reality through māyā. Creation is revealed as an act of wielding illusion
+      rather than generating substance.
+    divergence: The Svetasvatara frames this within a dualism of Maker and individual constrained by māyā; the Siva Sutra
+      emphasizes the creator's own nature as illusion-wielder, collapsing the distinction between maker and made.
+    passage_id: svetasvatara_upanishad.svu_002
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 7
+    resonance: Both texts posit that what appears as creation or manifestation is structurally an image or projection emerging
+      from a prior reality—the Intellectual-Principle as image of ultimate reality parallels the creator wielding illusion
+      as a construction rather than independent generation.
+    divergence: Plotinus grounds this in emanation and hierarchical emanation from the One; the Siva Sutra locates it in the
+      non-dual self's illusory creative power (māyā), without ontological hierarchy.
+    passage_id: plotinus_enneads.enn_v_1_07
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

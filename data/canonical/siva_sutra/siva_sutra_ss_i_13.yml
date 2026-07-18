@@ -45,6 +45,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: Both texts locate Śakti as the foundational recognitive power that structures experience itself—not as an object
+      to acquire but as the architecture already present. The Siva Sutra names will-power (iccha-sakti) as the pristine impulse
+      of manifestation; Tantrasara teaches recognizing Śakti in the entire architecture of experience.
+    divergence: The Siva Sutra emphasizes Śakti as the originary creative impulse (ever-new desire), while Tantrasara emphasizes
+      the epistemological practice of recognition within already-manifested experience.
+    passage_id: tantrasara.ts_014
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: Both texts present desire or striving not as obstacle but as the dynamic vehicle of revelation. The Siva Sutra
+      identifies will-power as the pristine impulse of manifestation; Yoga Spandakarika describes ardent striving as the condition
+      through which the supreme tremor appears to the tantrika.
+    divergence: The Siva Sutra grounds desire in the metaphysical nature of Śakti itself, while Spandakarika frames ardent
+      striving as a phenomenological method—the tantrika's effort to perceive what is already vibrating.
+    passage_id: yoga_spandakarika.sp_36
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

@@ -40,6 +40,25 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — 18.96 — 18.97 (The Paradoxical State)
+    resonance: Both texts suspend the subject in a paradoxical neither/nor state that dissolves ordinary categorical identity.
+      Ibn Arabi's 'neither ceased to be nor are you existent' and Astavakra's negation of happiness/suffering, attachment/detachment,
+      liberation/bondage all refuse affirmation of any stable position, forcing direct recognition beyond conceptual poles.
+    divergence: Astavakra uses systematic negation of paired opposites as a logical method to exhaust false identifications;
+      Ibn Arabi's formulation is more apophatic and poetic, suspending the very ground of being/non-being rather than cataloging
+      states.
+    passage_id: astavakra_gita.asg_sum_18_96_18_97
+  - citation: Nagarjuna Mulamadhyamakakarika — Missing the Division of the Truths
+    resonance: Both texts insist that grasping the structure itself—not content—is the gateway to profound reality. Ibn Arabi's
+      pointer asks the reader to pause interpretation and let insight disclose itself; Nagarjuna warns that missing the distinction
+      between the two truths blocks access to tattva, making the *method of division* itself the teaching.
+    divergence: Nagarjuna's two truths are an epistemological framework (conventional/ultimate); Ibn Arabi's neither/nor dissolves
+      the framework itself, pointing to a non-dual recognition prior to any division.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_09
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

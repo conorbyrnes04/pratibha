@@ -52,6 +52,25 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — Riding the Five Prāṇas – The Six Stages of Bliss
+    resonance: 'Both texts locate liberation through a prāṇic practice that operates as recognition rather than acquisition:
+      Yukti 14 enters Spacious Openness via void-meditation on saturated sound, while Tantrasara 1 describes prāṇāyāma as
+      recognition itself—both treat the breath-sound continuum as the direct gateway to śakti-consciousness.'
+    divergence: Yukti 14 emphasizes the void (śūnya) as the terminal point of sonic saturation, whereas Tantrasara 1 frames
+      prāṇa-work as continuous recognition across all five prāṇas, making the method more systemic than punctual.
+    passage_id: tantrasara.ts_017
+  - citation: Pratyabhijnahrdayam — Sutra 1
+    resonance: 'Both texts identify śakti as the operative principle of manifestation and the ground of consciousness: Yukti
+      14 enters the Spacious Openness ''by means of the void which is the Supreme Power,'' while Pratyabhijnahrdayam 1 declares
+      śakti (absolute Consciousness) as the cause of all manifestation—both make śakti the fundamental causal and revelatory
+      force.'
+    divergence: Yukti 14 approaches śakti through a phenomenological practice (uccāra and void-meditation), whereas Pratyabhijnahrdayam
+      1 states śakti metaphysically as the eternal cause, treating it as principle rather than experiential method.
+    passage_id: pratyabhijnahrdayam.phr_001
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

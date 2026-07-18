@@ -45,6 +45,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus Fragments
+    resonance: 'Both texts model transformation as lawful emanation from a single source-element: fire transmutes into sea,
+      earth, lightning (Heraclitus); waves, flames, and light-rays emanate from water, fire, and sun respectively (Bhairava).
+      Each uses elemental cascades to render multiplicity intelligible as ordered process, not chaos.'
+    divergence: Heraclitus grounds transformation in cosmic conflict and strife (polemos); Bhairava grounds it in non-dual
+      consciousness (Bhairava as source) and treats change as a play of manifestation rather than agonistic necessity.
+    passage_id: heraclitus_fragments.hfr_p021
+  - citation: Patañjali Yoga Sūtras 3.15
+    resonance: 'Both texts locate the intelligibility of transformation in succession and phase-structure: Patañjali identifies
+      successive phases as the cause of successive transformations; Bhairava frames the universe''s waves as arising lawfully
+      from a single source, inviting steadiness *within* transformation by grasping its structural order.'
+    divergence: Patañjali's framework is epistemological and technical (explaining how yogic perception grasps transformation);
+      Bhairava's is metaphysical and devotional (asserting the non-dual source from which all phases emanate).
+    passage_id: patañjali_yoga_sūtras.ys_3_15
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

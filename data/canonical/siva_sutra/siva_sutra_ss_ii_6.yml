@@ -55,6 +55,23 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: Both texts identify a gap between continuous ontological reality (the soul's characteristic act; the guru as
+      means) and ordinary perception/recognition. The problem is not absence but unrecognized presence—we fail to perceive
+      what is already operative.
+    divergence: Plotinus locates the failure in sensory distraction; the Siva Sutra locates it in the need for external guidance
+      (upaya) to trigger recognition of what is already the case.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Pratyabhijnahrdayam — Sutra 8
+    resonance: Both texts posit a single principle (Consciousness; the guru) that stands prior to and encompasses all apparent
+      positions or means. Recognition of this principle dissolves the multiplicity of approaches.
+    divergence: Pratyabhijnahrdayam emphasizes the non-dual recognition of Consciousness as the ground of all systems; the
+      Siva Sutra emphasizes the guru as the practical instrument (upaya) through which that recognition is accessed.
+    passage_id: pratyabhijnahrdayam.phr_008
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

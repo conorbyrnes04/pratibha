@@ -65,6 +65,24 @@ pratibha_layers:
     definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
       difference. This is Heraclitus's answer to those who expect peace as sameness.
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #97'
+    resonance: Both texts locate harmony not in the absence of opposition but in a unified principle that encompasses apparent
+      contraries—Heraclitus through war as instrument of order, the Vijnana Bhairava through the Absolute's plenitude equally
+      present in foe and friend, making equanimity the recognition of underlying unity.
+    divergence: Heraclitus grounds harmony in the dynamic necessity of conflict itself, while the Vijnana Bhairava grounds
+      it in non-dual consciousness that transcends the distinction between opposites.
+    passage_id: vijnana_bhairava.yukti_097
+  - citation: Tao Te Ching — The Quiet Power of the Unforced Victory
+    resonance: 'Both reject force and assertion as the means to order: Heraclitus implies that wars please the gods not through
+      violence but through the hidden harmony opposition generates, and the Tao Te Ching explicitly teaches that mastery in
+      harmony with the Way requires non-assertion of force.'
+    divergence: Heraclitus emphasizes opposition as the generative principle of cosmic order, while the Tao Te Ching emphasizes
+      wu-wei (non-action) and alignment with natural flow as the path to effective governance.
+    passage_id: tao_te_ching.ttc_md_039
+  layer_provenance: generated_grounded
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
   body: that it is unfitting that the sight of wars should please the gods. But it is notso. For noble works delight them,

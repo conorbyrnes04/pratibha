@@ -51,6 +51,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts locate liberation in the iterative redirection of attention itself rather than in a dramatic ontological
+      shift. Yukti 107 dissolves bondage by turning attention to the knower; Bhagavad Gita 10 describes yoga-mastery as repeatedly
+      returning attention from dispersion to center—the practice *is* the liberation.
+    divergence: Vijnana Bhairava emphasizes the non-dual recognition that bondage never existed; Bhagavad Gita frames the
+      return as disciplined habit-formation within embodied practice.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Epictetus Works — The Division That Liberates
+    resonance: Both texts establish freedom by clarifying what lies within one's actual domain of power. Yukti 107 negates
+      bondage by recognizing the knower's intrinsic freedom; Epictetus divides reality into what is 'in our power' and what
+      is not, locating liberation in this discriminating clarity.
+    divergence: Vijnana Bhairava grounds freedom in non-dual consciousness; Epictetus grounds it in rational discernment of
+      the will's proper sphere.
+    passage_id: epictetus_works.epi_enc_001
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

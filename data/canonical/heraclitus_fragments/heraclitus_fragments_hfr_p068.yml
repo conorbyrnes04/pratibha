@@ -62,6 +62,24 @@ pratibha_layers:
     definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
       ethics into cosmology: how you live is how you align (or fail) with measure.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Phaedo (Plato) — The Soul's Affinity With the Unseen
+    resonance: 'Both texts use a logic of essential nature to establish what can and cannot undergo transformation: Heraclitus
+      argues soul cannot become water without ceasing to be soul (death), while Plato argues the simple and intelligible cannot
+      admit dissolution while remaining itself. Each treats ontological kind as the measure that governs permissible change.'
+    divergence: Heraclitus embeds this logic in a cyclical cosmology where death-as-transformation feeds the cycle (water→earth→water→soul);
+      Plato uses it to argue for the soul's absolute exemption from death and dissolution.
+    passage_id: phaedo_plato.phaedo_md_003
+  - citation: Isavasya Upanishad — Mantra 17
+    resonance: 'Both texts trace a reversal or return of elements through the body: Heraclitus moves from soul→water→earth
+      and back, while the Isavasya Upanishad returns breath to air and body to ashes. Each marks the dissolution of composite
+      form as a return to elemental principle.'
+    divergence: Heraclitus frames this as an ethical-cosmological measure governing all things; the Isavasya Upanishad frames
+      it as a ritual invocation of release from embodied existence toward the immortal.
+    passage_id: isavasya_upanishad.isa_023
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

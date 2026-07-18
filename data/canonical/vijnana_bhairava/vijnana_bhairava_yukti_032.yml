@@ -57,6 +57,23 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: Both texts use a spatial container (vessel/pot in VB; open sky in Tilopa) as a pedagogical device to redirect
+      attention from bounded form to unbounded awareness itself. The method is to negate the circumscribed object and rest
+      in what remains.
+    divergence: VB uses a concrete, material vessel as the starting point for inward turn; Tilopa uses space as a direct metaphor
+      for mind's nature, collapsing the distinction between container and consciousness.
+    passage_id: tilopa_mahamudra.til_002
+  - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 8
+    resonance: 'Both texts prescribe a withdrawal from sensory content and external objects toward an interior principle of
+      knowing. The move is: abandon the known-through-senses to access a higher faculty of perception.'
+    divergence: VB frames this as attention returning to the knower within a non-dual continuum; Plotinus frames it as ascent
+      toward transcendent Beauty beyond the sensible, implying a vertical metaphysics of emanation rather than non-dual recognition.
+    passage_id: plotinus_enneads.enn_i_6_08
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

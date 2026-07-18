@@ -41,6 +41,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus Fragments
+    resonance: 'Both texts diagnose a fundamental error in ordinary cognition: people mistake their habitual impressions for
+      genuine knowledge, failing to recognize the gap between seeming-to-know and actual understanding. The move is to expose
+      false certainty as the primary obstacle.'
+    divergence: Heraclitus locates the error in failure to listen to the universal Logos; Ibn Arabi's pointer suspends interpretation
+      itself, inviting direct disclosure rather than reasoned instruction.
+    passage_id: heraclitus_fragments.hfr_p005
+  - citation: The Book of Chuang Tzu — chapter 22
+    resonance: Both texts stage an encounter where the seeker asks how knowledge itself is to be known or accessed—posing
+      the question of method as inseparable from the object. The structural move is to make the inquiry into knowledge reflexive
+      rather than instrumental.
+    divergence: Chuang Tzu's dialogue unfolds through paradoxical exchange and names (Do-nothing Say-nothing); Ibn Arabi's
+      commentary calls for pause and direct insight, bypassing discursive dialogue.
+    passage_id: the_book_of_chuang_tzu.ctz_022
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

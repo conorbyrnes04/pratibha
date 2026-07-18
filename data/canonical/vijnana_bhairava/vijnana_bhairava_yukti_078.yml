@@ -47,6 +47,26 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a structural blindness: the soul/awareness continuously performs its native act, but ordinary
+      perception misses it because attention is absorbed in external content. The yogī''s difference (like the soul''s awakening)
+      lies in redirecting perception from the object-stream to the subject''s own continuous operation.'
+    divergence: Plotinus frames this as the soul's metaphysical continuity obscured by sense-focus; the Vijnana Bhairava frames
+      it as a yogic discipline of attention to the knower-known connection itself, grounded in non-dual awareness rather than
+      Neoplatonic emanation.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Tilopa Mahamudra — Look at the Looker
+    resonance: 'Both texts prescribe a reversal of attentional direction: from the content of experience to the looker/knower
+      itself. The yogī''s ''careful attention to the connection'' parallels the instruction to ''look at the looker''—a reflexive
+      turn that reveals what is already present but unnoticed.'
+    divergence: Tilopa's method emphasizes guru-devotion and the spontaneous (sahaja) arising of innate nature; the Vijnana
+      Bhairava emphasizes the yogī's own disciplined attention to the structural fact of knower-known, without invoking grace
+      or the guru's role as primary catalyst.
+    passage_id: tilopa_mahamudra.til_003
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

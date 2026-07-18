@@ -45,6 +45,25 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
+    resonance: 'Both texts present knowledge as a transformative unification rather than accumulation: the Chāndogya instructs
+      that understanding ''all things are essentially one'' dissolves the subject-object divide, while the Siva Sutra''s ''knowledge
+      is nourishment'' reframes jñāna from abstract possession into lived sustenance that integrates knower and known.'
+    divergence: The Chāndogya emphasizes epistemological method (hearing the inaudible through non-dual perception), while
+      the Siva Sutra emphasizes the ethical-existential consequence (knowledge must feed life, not ego).
+    passage_id: chāndogya_upaniṣad.chu_vi_01
+  - citation: The Book of Chuang Tzu — chapter 19
+    resonance: 'Both texts measure knowledge by its practical integration into living rather than by its theoretical scope:
+      the Chuang Tzu''s sage ''devotes no attention to things which life cannot accomplish'' mirrors the Siva Sutra''s insistence
+      that understanding must ''feed life rather than inflate identity''—knowledge proves itself through what it enables,
+      not what it claims.'
+    divergence: The Chuang Tzu operates through negation and non-action (wu-wei), while the Siva Sutra operates through affirmation
+      and embodied nourishment (anna as both literal and metaphorical sustenance).
+    passage_id: the_book_of_chuang_tzu.ctz_019
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

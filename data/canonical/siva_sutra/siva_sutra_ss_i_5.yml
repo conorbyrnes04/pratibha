@@ -69,6 +69,34 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Yoga Spandakarika — First Flow
+    resonance: 'Both texts locate the dynamic pulse of manifestation and reabsorption in a single conscious principle: the
+      Siva Sutra names the surge (spanda) of awareness as Bhairava; the Spandakarika names Shakti''s opening and closing of
+      eyes as the mechanism of cosmic manifestation and dissolution. Both treat the living pulse as the generative act itself.'
+    divergence: The Siva Sutra emphasizes the surge as a unified principle of consciousness-freedom; the Spandakarika foregrounds
+      the feminine creative power (Shakti) as the agent whose gesture produces the cycle, introducing a gendered dyadic structure
+      absent in the Sutra's singular Bhairava.
+    passage_id: yoga_spandakarika.sp_01
+  - citation: Pratyabhijnahrdayam — Sutra 1
+    resonance: Both passages identify an absolute conscious principle as the efficient cause of the universe's manifestation,
+      maintenance, and dissolution. The Siva Sutra's Bhairava and the Pratyabhijnahrdayam's sovereign Shakti function identically
+      as the living source from which all cosmic activity flows.
+    divergence: The Siva Sutra emphasizes the *surge* or dynamic pulsation (spanda) as the essential character of this principle;
+      the Pratyabhijnahrdayam emphasizes Shakti's causal sovereignty and will, treating the principle more as transcendent
+      source than as immanent vibration.
+    passage_id: pratyabhijnahrdayam.phr_001
+  - citation: Vijnana Bhairava — The Bindu of Subtle Fire at the Radiant Abode
+    resonance: 'Both texts locate liberatory realization in the dissolution of a subtle focal point into pure Presence: the
+      Siva Sutra''s surge of awareness culminates in freedom; the Vijnana Bhairava''s meditation on the Bindu culminates in
+      dissolution into pure Presence. Both treat the subtle object as a gateway to non-dual realization.'
+    divergence: The Siva Sutra names the surge itself as Bhairava (the principle); the Vijnana Bhairava employs a meditative
+      technique on a visualized object (Bindu) as the means to reach that principle, making the latter more methodologically
+      prescriptive.
+    passage_id: vijnana_bhairava.yukti_012
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

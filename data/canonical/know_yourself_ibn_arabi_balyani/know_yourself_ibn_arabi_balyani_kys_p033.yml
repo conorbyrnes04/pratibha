@@ -42,6 +42,30 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts locate ignorance not in the absence of the Self but in misdirected attention: the soul/knower continuously
+      acts, yet remains unaware because perception is absorbed in external content rather than turning back to its own nature.'
+    divergence: Plotinus frames this as a perceptual habit of the soul's outward gaze; Ibn Arabi emphasizes the annihilation
+      of the separate self-sense as the prerequisite for this inward turn, grounding it in Sufi metaphysics of fana.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: 'Vijnana Bhairava — Yukti #61'
+    resonance: 'Both passages invert the typical path: rather than achieving knowledge through negation or dissolution, clarity
+      emerges when attention settles into the nondual ground itself—the Void or the knower—where the Self''s true nature manifests.'
+    divergence: The Vijnana Bhairava locates this manifestation in the Void as a phenomenological entry-point; Ibn Arabi's
+      Pearl emphasizes the knower as the locus, with annihilation of false selfhood as the condition, rooting the move in
+      Sufi ontology.
+    passage_id: vijnana_bhairava.yukti_061
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verses 8–12 · Om and the Fourfold Correspondence
+    resonance: 'Both establish a method of Self-inquiry through systematic correspondence: mapping the fourfold Self onto
+      Om''s structure parallels the Pearl''s directive to return attention to the knower itself, using a structured framework
+      to redirect consciousness inward.'
+    divergence: The Mandukya uses sound-meditation and phonetic analysis as the vehicle; Ibn Arabi's approach is apophatic
+      and attention-based, requiring the dissolution of the ego-self rather than a positive meditative correspondence.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_010
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

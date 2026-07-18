@@ -47,6 +47,32 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: 'Both texts prescribe iterative return of attention to a center as the method of mastery: Yukti 46 instructs
+      lingering attention on the felt rapture of delight, while the Gita describes yoga-mastery as repeatedly returning attention
+      from dispersion to center. Both treat attention-return as the operative practice, not a one-time achievement.'
+    divergence: The Gita frames this return within a regulated ethical-bodily discipline (body, habit, center), while Yukti
+      46 privileges the introspective turn toward the knower and the affective quality of rapture itself.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: 'Both texts use the metaphor of directed perception to clarify an inner reality: Yukti 46 asks attention to
+      linger on rapture to reveal the knower, while Spandakarika 5 describes how ardent striving toward the sacred tremor—like
+      seeing an object from all angles—makes it appear more clearly. Both treat intensified attention as the means to unveil
+      what is already present.'
+    divergence: Spandakarika frames this as effortful angular perception of an external-yet-inner tremor, whereas Yukti 46
+      emphasizes the reflexive turn inward to the subject of knowing itself, not the object of perception.
+    passage_id: yoga_spandakarika.sp_36
+  - citation: Shantideva Bodhicaryavatara — Stillness Before Insight
+    resonance: 'Both texts identify scattered attention as the obstacle and gathered concentration as the remedy: Shantideva
+      warns that a scattered mind lives ''between the fangs of the afflictions,'' while Yukti 46 implicitly prescribes lingering
+      attention as the antidote to mental dispersion. Both treat attention-gathering as liberation from affliction.'
+    divergence: Shantideva situates this within a progressive ethical path (energy first, then concentration), while Yukti
+      46 locates the practice in the immediate felt quality of delight and the inward turn to the knower.
+    passage_id: shantideva_bodhicaryavatara.bca_08_solitude
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

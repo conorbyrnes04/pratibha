@@ -60,6 +60,31 @@ pratibha_layers:
     definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
       difference. This is Heraclitus's answer to those who expect peace as sameness.
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: The Book of Chuang Tzu — Uselessness and the Middle Way
+    resonance: 'Both texts locate truth or proper functioning in the middle point between apparent opposites: Heraclitus makes
+      the upward and downward path identical, while Chuang Tzu''s speaker ''rests halfway between the two,'' treating opposition
+      itself as the site of balance rather than contradiction.'
+    divergence: Heraclitus emphasizes opposition as the *instrument* of cosmic order (dynamic tension), while Chuang Tzu emphasizes
+      non-action and release from the poles themselves (wu-wei transcendence of dualism).
+    passage_id: the_book_of_chuang_tzu.zhuangzi_md_020
+  - citation: Tao Te Ching — The Tao’s Generative Cycle
+    resonance: 'Both texts present a generative unfolding where unity and multiplicity are not opposed but sequential stages
+      of the same process: Heraclitus''s ''way upward and downward'' as a single path, and the Tao Te Ching''s cascade from
+      One to Two to Three to All things as a single productive movement.'
+    divergence: Heraclitus stresses the *simultaneity* and *reversibility* of opposites (upward-downward as one), while the
+      Tao Te Ching presents a *linear emanation* from undifferentiated source through differentiation.
+    passage_id: tao_te_ching.ttc_md_049
+  - citation: 'Vijnana Bhairava — Yukti #60'
+    resonance: 'Both employ a paradoxical reversal where closing and opening, or negation and affirmation, yield the same
+      insight: Heraclitus''s unified path that moves both ways, and the Vijnana Bhairava''s instruction to see blackness with
+      eyes closed and open as identical, arriving at ''His nature'' through the non-difference.'
+    divergence: Heraclitus grounds this in cosmic logos and opposition as ontological principle, while the Vijnana Bhairava
+      treats it as a phenomenological technique for recognizing non-dual consciousness.
+    passage_id: vijnana_bhairava.yukti_060
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

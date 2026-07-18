@@ -8,8 +8,7 @@ sanskrit: 'अन्धन्तमः प्रविशन्ति येऽ�
 transliteration: 'andham tamah pravisanti ye''vidyam upasate |
 
   tato bhuya iva te tamo ya u vidyayam ratah || 9 ||'
-translation: Those devoted only to avidya enter darkness; those devoted only to vidya
-  enter deeper darkness.
+translation: Those devoted only to avidya enter darkness; those devoted only to vidya enter deeper darkness.
 commentary: 'Exclusive one-sidedness - worldly or spiritual - binds.
 
 
@@ -37,3 +36,14 @@ themes:
 - speech
 source: Isavasya Upanishad 9
 quality_score_unit: 100
+resonances:
+- citation: The Book of Chuang Tzu — chapter 16
+  resonance: Both texts reject exclusive devotion to a single pole (worldly vs. spiritual) as a trap that produces delusion rather than liberation. The Upanishad warns that one-sided avidya *and* one-sided vidya both lead to darkness; Chuang Tzu condemns those who cling to either mundane studies or sunk aspirations as 'dullards,' unable to revert to original condition.
+  divergence: The Upanishad frames the problem as binding ignorance vs. binding knowledge (a metaphysical hierarchy); Chuang Tzu frames it as rigidity of method itself, where both extremes miss the natural spontaneity (ziran) that precedes the distinction.
+  passage_id: the_book_of_chuang_tzu.ctz_016
+- citation: Bhagavad Gita — Yajna as the Ecology of Action
+  resonance: 'Both texts distinguish between action that binds and action that liberates through a shift in *orientation*: the Upanishad warns that exclusive devotion to either pole binds; the Gita teaches that action becomes liberative only when reframed as yajna (reciprocal offering) rather than private consumption. The structural move is: same act, different framing = different metaphysical result.'
+  divergence: The Upanishad diagnoses the problem as one-sidedness itself (a cognitive error); the Gita prescribes a positive reorientation toward duty-as-offering (a relational reframing of agency).
+  passage_id: bhagavad_gita.bg_md_003
+layer_provenance:
+  resonances: generated_grounded

@@ -55,6 +55,32 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.50
+    resonance: Both texts pivot attention from the content of experience (impressions, sensory objects) to the witnessing
+      consciousness itself—Yukti 36 by recognizing the body/world as Consciousness, Patañjali by isolating the blissful cognition
+      of Purusha as the final truth that displaces all other impressions.
+    divergence: Patañjali emphasizes sequential displacement of impressions through samadhi practice, while Yukti 36 proposes
+      direct contemplative recognition that consciousness already pervades the entire field, requiring a shift of perspective
+      rather than progressive elimination.
+    passage_id: patañjali_yoga_sūtras.ys_1_50
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: Both texts identify a revelatory moment where attention turns inward and discloses one's true nature as identical
+      with a transcendent principle—Yukti 36 through recognizing body/world as Consciousness, Yoga Spandakarika through samadhi
+      revealing the tantrika's own nature as supreme nectar.
+    divergence: Yukti 36 frames this as a contemplative recognition of non-dual Consciousness pervading all phenomena, while
+      Yoga Spandakarika emphasizes the experiential attainment (samadhi) and its nectar-like quality as a realized state.
+    passage_id: yoga_spandakarika.sp_32
+  - citation: Phaedo (Plato) — Knowledge as Recollection
+    resonance: 'Both texts reframe the knowing process as recognition rather than acquisition: Yukti 36 asks the practitioner
+      to recognize that consciousness already constitutes body and world, while Phaedo presents learning as recollection—re-recognizing
+      standards the mind already measures by.'
+    divergence: Phaedo grounds recollection in a metaphysics of pre-existing Forms and the soul's prior knowledge, while Yukti
+      36 operates within non-dual Tantra where Consciousness is the ever-present ground, not a remembered transcendent realm.
+    passage_id: phaedo_plato.phaedo_md_002
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

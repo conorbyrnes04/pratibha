@@ -72,6 +72,32 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read the excerpt slowly, pause at one striking line, and reflect on its relevance to present experience.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 2
+    resonance: 'Both texts arrive at a singular recognition through iterative formulation: Astavakra''s ocean-wave series
+      and Mandukya''s ''All this is indeed Brahman'' each declare the same non-dual truth from multiple angles, treating repetition
+      as a method of recognition rather than proof.'
+    divergence: Astavakra uses phenomenal metaphor (wave-ocean) to dissolve subject-object distinction, while Mandukya asserts
+      the identity directly as a metaphysical statement about the nature of reality itself.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_003
+  - citation: Pratyabhijnahrdayam — Sutra 8
+    resonance: 'Both texts use a recursive structural move: Astavakra''s parallel declarations that arrive at the same recognition,
+      and Pratyabhijnahrdayam''s claim that all philosophical positions are ''roles played by Consciousness'' both collapse
+      apparent multiplicity into a single underlying principle through reframing rather than negation.'
+    divergence: Astavakra emphasizes the wave's recognition of its ocean-nature through self-inquiry, while Pratyabhijnahrdayam
+      emphasizes Consciousness as the actor behind all conceptual systems, making recognition an unveiling of agency rather
+      than identity.
+    passage_id: pratyabhijnahrdayam.phr_008
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: 'Both employ a spatial or structural metaphor to indicate what cannot be directly indicated: Astavakra''s wave-ocean
+      series points to the Self through relational dissolution, and Tilopa''s space-and-finger analogy points to mind''s nature
+      by showing what cannot contain or circumscribe it.'
+    divergence: Astavakra works through the logic of appearance and substrate (wave-ocean), while Tilopa works through the
+      logic of boundlessness and the failure of spatial reference itself.
+    passage_id: tilopa_mahamudra.til_002
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

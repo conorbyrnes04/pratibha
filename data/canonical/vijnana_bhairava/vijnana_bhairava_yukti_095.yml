@@ -54,6 +54,31 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nagarjuna Mulamadhyamakakarika — Missing the Division of the Truths
+    resonance: 'Both texts invert conventional understanding by asserting that failure to grasp a specific discriminative
+      framework (Śiva''s teaching vs. worldly convention; the two truths vs. undifferentiated view) means one has missed the
+      profound reality itself. The move is: wrong framework = wrong reality, not merely wrong interpretation.'
+    divergence: Yukti 95 inverts purity/impurity as a direct contemplative shock to dissolve conceptual habit; Nagarjuna systematizes
+      the inversion as a logical prerequisite for understanding emptiness and dependent origination.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_09
+  - citation: Isavasya Upanishad — Mantra 15
+    resonance: 'Both texts posit that truth is obscured by a covering (golden lid / conventional purity) and require active
+      removal or piercing of that veil by the seeker. The structure is: truth exists but is hidden; direct perception requires
+      stripping away the obscuring layer.'
+    divergence: Isavasya appeals to the Sun as grace-giver to remove the lid; Yukti 95 uses paradox and reversal to shock
+      the mind into direct disclosure without invoking external agency.
+    passage_id: isavasya_upanishad.isa_021
+  - citation: Heraclitus Fragments — Nature Loves to Hide
+    resonance: 'Both assert that reality''s true nature is concealed from ordinary perception—not absent, but actively hidden
+      or inverted from what the untrained mind assumes. The move is: what appears is not what is; hiddenness is intrinsic
+      to the real.'
+    divergence: Heraclitus treats concealment as nature's ontological preference; Yukti 95 treats it as a pedagogical inversion
+      specific to Śiva's non-dual teaching, not a universal principle.
+    passage_id: heraclitus_fragments.hfr_p010
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

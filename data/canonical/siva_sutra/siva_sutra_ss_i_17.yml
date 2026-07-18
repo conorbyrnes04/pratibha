@@ -65,6 +65,33 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: Both texts identify a structural shift where ordinary mental activity (thought/perception) ceases to obstruct
+      direct knowledge of the Self. In Plotinus, the soul's continuous act remains unrecognized because attention is trapped
+      in sense-experience; in Śiva Sūtra, reflection itself becomes transparent to Self-knowledge once thought stops blocking
+      awareness.
+    divergence: Plotinus locates the problem in misdirected perception toward the sensible; the Śiva Sūtra locates it in the
+      reflective faculty itself, which must be transmuted rather than redirected.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Pratyabhijnahrdayam — Sutra 10
+    resonance: Both passages assert that the individual soul, even in its limited condition, already performs the same fundamental
+      functions as the Supreme Self—suggesting that recognition (not transformation) is the operative move. The Śiva Sūtra's
+      'reflection becomes knowledge' parallels the Pratyabhijñā's emphasis on the individual already enacting divine functions
+      through self-recognition.
+    divergence: The Śiva Sūtra emphasizes the cognitive turn (reflection → knowledge) as the mechanism, while Pratyabhijñā
+      emphasizes the ontological continuity of function and the need for recognition of what already is.
+    passage_id: pratyabhijnahrdayam.phr_010
+  - citation: Tao Te Ching — The Paradox of Knowing
+    resonance: Both texts distinguish between a false knowing (thought that claims certainty) and a true knowing that operates
+      through a paradoxical inversion—in Tao Te Ching, knowing-without-claiming-to-know; in Śiva Sūtra, reflection that no
+      longer obstructs but becomes transparent to Self-knowledge. Both reverse the ordinary epistemic stance.
+    divergence: The Tao Te Ching frames this as a paradox of epistemological humility; the Śiva Sūtra frames it as a transmutation
+      of the reflective faculty itself into an instrument of Self-recognition.
+    passage_id: tao_te_ching.ttc_md_073
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

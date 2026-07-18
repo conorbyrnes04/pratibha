@@ -82,7 +82,7 @@ export function JournalPanel(props: JournalPanelProps) {
       </button>
       <div className="mt-4 space-y-3">
         {notes.length === 0 ? (
-          <p className="soft text-sm">No notes for this step yet.</p>
+          <p className="soft text-sm">No notes for this passage yet.</p>
         ) : (
           notes.slice(0, 3).map((note) => (
             <article key={note.id} className="citation-card p-3">

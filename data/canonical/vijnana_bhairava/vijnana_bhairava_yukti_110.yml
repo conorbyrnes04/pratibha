@@ -45,6 +45,36 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verses 8–12 · Om and the Fourfold Correspondence
+    resonance: 'Both texts dissolve multiplicity into a unified fourfold structure: Yukti 110 names four elements (mental
+      states, individuated consciousness, power, self) that dissolve into Bhairava-nature; Mandukya maps the three states
+      onto Om''s four quarters to reveal the Self as their ground. Each uses enumeration as a method to collapse distinction
+      into non-dual recognition.'
+    divergence: Mandukya uses phonetic-ontological correspondence (sound as gateway); Vijnana Bhairava uses direct dissolution
+      of consciousness-layers through attention-reversal. The Upanishad works through analogy; the Tantra through immediate
+      collapse.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_010
+  - citation: Siva Sutra — Āṇavopāya
+    resonance: 'Both assert that consciousness itself is the means of knowing the Self: Yukti 110 dissolves the four into
+      Bhairava-nature (pure consciousness); Siva Sutra states ''From consciousness, the Self is known.'' Both reverse the
+      ordinary subject-object split by making consciousness the transparent medium of self-recognition, not an object among
+      objects.'
+    divergence: Siva Sutra presents this as a terse aphorism of principle; Yukti 110 describes a phenomenological process
+      of dissolution. One is metaphysical assertion; the other is experiential instruction.
+    passage_id: siva_sutra.ss_iii_7
+  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 3
+    resonance: 'Both posit an ultimate principle beyond intellect and form that cannot be grasped by ordinary cognitive means:
+      Plotinus''s Unity transcends being and intellection; Bhairava-nature emerges when mental states and individuated consciousness
+      dissolve—i.e., when the apparatus of knowing-as-separation ceases. Both require a negation of the knowing subject''s
+      ordinary structure.'
+    divergence: Plotinus emphasizes transcendence and ascent toward the Good as a metaphysical hierarchy; Vijnana Bhairava
+      emphasizes inward collapse and recognition of what is already present. One is vertical ascent; the other is horizontal
+      dissolution.
+    passage_id: plotinus_enneads.enn_vi_9_03
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

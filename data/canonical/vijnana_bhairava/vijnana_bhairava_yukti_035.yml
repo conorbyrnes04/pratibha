@@ -55,6 +55,24 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a structural gap between continuous inner activity and ordinary awareness: the soul/awareness
+      continuously acts, but we miss it because attention is habitually absorbed in external content. The move is to redirect
+      perception from the object-stream back to the subject''s own nature.'
+    divergence: Plotinus frames this as a metaphysical problem of soul-perception; Vijnana Bhairava frames it as a practical
+      attention-discipline that interrupts the momentum of mental states themselves.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Tilopa Mahamudra — Look at the Looker
+    resonance: 'Both texts prescribe a deliberate pause in the flow of mental activity—a cessation of effort—followed by a
+      reorientation of awareness toward the knowing faculty itself. The structure is: stop the doing, then rest attention
+      on the doer.'
+    divergence: Tilopa emphasizes devotional surrender to the guru as the gateway to innate awareness; Vijnana Bhairava emphasizes
+      autonomous self-inquiry without external mediation.
+    passage_id: tilopa_mahamudra.til_003
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:

@@ -47,6 +47,23 @@ pratibha_layers:
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a structural inversion: the soul/awareness continuously performs its nature, but ordinary
+      perception misses it because attention is absorbed in external content. Redirecting attention inward reveals what was
+      always operating.'
+    divergence: Plotinus emphasizes the soul's continuous noetic activity as the remedy; Vijnana Bhairava uses prāṇa visualization
+      as the specific technique to redirect attention from content to the knower itself.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: 'Both texts use spatial metaphor to point beyond localization: the mind/awareness has no center, no circumference,
+      no boundary—like space itself. This boundlessness is revealed when attention stops fixing on particular objects.'
+    divergence: Tilopa uses apophatic negation (what mind is *not*) to indicate its nature; Vijnana Bhairava uses positive
+      visualization of light-rays dissolving upward to enact the same reorientation of awareness.
+    passage_id: tilopa_mahamudra.til_002
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:
