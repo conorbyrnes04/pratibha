@@ -62,7 +62,7 @@ export function buildCollectionOptions(items: VerseItem[], collections: string[]
   return collections.map((c) => ({
     value: c,
     icon: collectionIcon(c),
-    label: c === "all" ? "All collections" : displayCollectionName(c),
+    label: c === "all" ? "All texts" : displayCollectionName(c),
     hint: `${countForCollection(items, c)} passages`,
   }));
 }

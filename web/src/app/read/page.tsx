@@ -13,7 +13,7 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
 import { displayPassageTitle, patanjaliSutraRef, sortPassagesForLibrary } from "@/lib/passageTitles";
-import { layerText, maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
+import { layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 
 function reflectionPrompt(item: VerseItem): string {
   const t = (item.themes || [])[0];
@@ -25,6 +25,7 @@ function ReadPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [items, setItems] = useState<VerseItem[]>([]);
+  const [loadError, setLoadError] = useState("");
   const [q, setQ] = useState("");
   const [collection, setCollection] = useState(searchParams.get("collection") || "all");
   const [theme, setTheme] = useState(searchParams.get("theme") || "all");
@@ -32,7 +33,18 @@ function ReadPageContent() {
   const [includeDrafts, setIncludeDrafts] = useState(false);
 
   useEffect(() => {
-    getVerses(includeDrafts ? "all" : "strong_draft").then(setItems).catch(() => setItems([]));
+    setLoadError("");
+    getVerses(includeDrafts ? "all" : "strong_draft")
+      .then((rows) => {
+        setItems(rows);
+        if (rows.length === 0) {
+          setLoadError("The library API returned no passages. The backend may be waking up — wait a minute and refresh.");
+        }
+      })
+      .catch(() => {
+        setItems([]);
+        setLoadError("Could not reach the Pratibha API. Library and texts need https://pratibha-1.onrender.com to be online.");
+      });
   }, [includeDrafts]);
 
   useEffect(() => {
@@ -81,7 +93,7 @@ function ReadPageContent() {
           <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">
             {collection !== "all" ? displayCollectionName(collection) : "Library"}
           </h1>
-          <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">Move idea-to-idea: choose a collection, follow a theme thread, open a passage, then trace related concepts.</p>
+          <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">Move idea-to-idea: choose a text, follow a theme thread, open a passage, then trace related concepts.</p>
         </div>
       </section>
 
@@ -96,7 +108,7 @@ function ReadPageContent() {
           />
         </label>
         <FilterSelect
-          label="Collection"
+          label="Text"
           tone="gold"
           value={collection}
           onChange={(next) => {
@@ -127,6 +139,12 @@ function ReadPageContent() {
         Include rewrite and structural drafts
       </label>
 
+      {loadError ? (
+        <p className="mt-4 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-4 font-sans text-sm text-amber-100">
+          {loadError}
+        </p>
+      ) : null}
+
       <div className="mt-6 space-y-3">
         {filtered.slice(0, 300).map((x) => (
           <Link key={x._id} href={`/read/${encodeURIComponent(x._id)}`} className="card group block p-5 transition hover:-translate-y-0.5 hover:border-amber-300/30">
@@ -147,9 +165,6 @@ function ReadPageContent() {
                 <div className="flex flex-wrap justify-end gap-2">
                   <span className="rounded-full border border-amber-200/30 px-2 py-1 font-sans text-xs text-amber-100">
                     {x.themes.slice(0, 2).join(" · ")}
-                  </span>
-                  <span className="rounded-full border border-white/15 px-2 py-1 font-sans text-xs text-stone-300">
-                    {maturityLabel(x.editorial_maturity)}
                   </span>
                 </div>
               ) : null}

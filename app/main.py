@@ -101,13 +101,14 @@ def _valid_maturity(value: str | None) -> str | None:
 # ---- Data endpoints ----
 @app.get("/health")
 async def health():
+    # Keep this path free of corpus/DB work so Render cold-starts and load
+    # balancers always get a fast liveness signal.
     ready = corpus_ready()
     return {
         "ok": True,
         "ready": ready,
-        "items": len(get_all_verses()) if ready else 0,
+        "items": len(_cached_item_count()) if ready else 0,
         "load_stats": LOAD_STATS if ready else {},
-        # Presence flags only — never secret values. Helps verify Render env wiring.
         "config": {
             "openrouter": bool((settings.OPENROUTER_API_KEY or "").strip()),
             "openai": bool((settings.OPENAI_API_KEY or "").strip()),
@@ -117,6 +118,14 @@ async def health():
             "chat_provider": settings.chat_provider(),
         },
     }
+
+
+def _cached_item_count() -> int:
+    """Non-blocking count once the corpus is warm (never triggers a load)."""
+    from . import data_loader
+
+    verses = getattr(data_loader, "_cached_verses", None)
+    return len(verses) if isinstance(verses, list) else 0
 
 
 @app.get("/verses")

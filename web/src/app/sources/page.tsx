@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { getSources } from "@/lib/api";
 import { collectionIcon } from "@/lib/collectionIcons";
-import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
+import { collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
 import type { SourceAttribution } from "@/lib/types";
@@ -16,17 +16,14 @@ const LICENSE_TONE: Record<string, string> = {
   original_editorial: "text-stone-300",
 };
 
-const SELL_READY_TONE: Record<string, string> = {
-  green: "text-emerald-300/90",
-  yellow: "text-amber-200/90",
-  orange: "text-orange-200/85",
-  red: "text-red-300/85",
-};
+function publicLinks(item: SourceAttribution) {
+  return (item.links || []).filter((link) => Boolean(link.url && /^https?:\/\//i.test(link.url)));
+}
 
 function SourceCard({ item }: { item: SourceAttribution }) {
   const inCorpus = item.passages_in_corpus > 0;
   const licenseClass = LICENSE_TONE[item.license] || "text-stone-300";
-  const tierClass = SELL_READY_TONE[item.sell_ready_tier] || "text-stone-300";
+  const links = publicLinks(item);
 
   return (
     <article className={`manuscript-card overflow-hidden rounded-[22px] ${!inCorpus ? "opacity-75" : ""}`}>
@@ -39,103 +36,91 @@ function SourceCard({ item }: { item: SourceAttribution }) {
         <div className="art-overlay art-overlay--banner absolute inset-0" />
       </div>
       <div className="relative -mt-8 p-5 pt-0 sm:p-6 sm:pt-0">
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div className="flex items-start gap-3">
-          <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-amber-200/25 bg-[#0b0b14]/85 font-sans text-2xl text-amber-200/90 backdrop-blur-sm" aria-hidden>
-            {collectionIcon(item.collection)}
-          </span>
-          <div>
-            <h2 className="text-2xl font-semibold tracking-[-0.03em] text-stone-100">
-              {displayCollectionName(item.collection)}
-            </h2>
-            <p className="soft mt-1 font-sans text-sm">{item.tradition}</p>
-          </div>
-        </div>
-        <div className="flex flex-wrap gap-2 font-sans text-xs uppercase tracking-[0.14em]">
-          <span className={`rounded-full border border-amber-200/15 px-2.5 py-1 ${tierClass}`}>
-            {item.sell_ready_tier_label}
-          </span>
-          <span className={`rounded-full border border-amber-200/15 px-2.5 py-1 ${licenseClass}`}>
-            {item.license_label}
-          </span>
-          {item.status === "in_progress" ? (
-            <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-400">In progress</span>
-          ) : item.coverage ? (
-            <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-300">{item.coverage}</span>
-          ) : (
-            <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-300">
-              {item.passages_in_corpus} passages
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div className="flex items-start gap-3">
+            <span
+              className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-amber-200/25 bg-[#0b0b14]/85 font-sans text-2xl text-amber-200/90 backdrop-blur-sm"
+              aria-hidden
+            >
+              {collectionIcon(item.collection)}
             </span>
-          )}
-        </div>
-      </div>
-
-      <dl className="mt-5 space-y-3 font-sans text-sm leading-relaxed text-stone-300">
-        <div>
-          <dt className="layer-heading mb-1">Original work</dt>
-          <dd>{item.original_work}</dd>
-        </div>
-        {item.anchor_translation ? (
-          <div>
-            <dt className="layer-heading mb-1">Anchor translation / English basis</dt>
-            <dd>{item.anchor_translation}</dd>
+            <div>
+              <h2 className="text-2xl font-semibold tracking-[-0.03em] text-stone-100">
+                {displayCollectionName(item.collection)}
+              </h2>
+              <p className="soft mt-1 font-sans text-sm">{item.tradition}</p>
+            </div>
           </div>
-        ) : null}
-        {item.pd_alternative ? (
-          <div>
-            <dt className="layer-heading mb-1">Public-domain alternative</dt>
-            <dd className="text-stone-400">{item.pd_alternative}</dd>
-          </div>
-        ) : null}
-        {item.sanskrit_source ? (
-          <div>
-            <dt className="layer-heading mb-1">Source language</dt>
-            <dd>{item.sanskrit_source}</dd>
-          </div>
-        ) : null}
-        <div>
-          <dt className="layer-heading mb-1">Pratibha editorial</dt>
-          <dd className="text-stone-400">
-            {item.editorial_note}
-            {item.conceived_by_conor ? (
-              <span className="mt-1 block text-amber-200/80">
-                Original Pratibha work conceived by Conor Byrnes.
+          <div className="flex flex-wrap gap-2 font-sans text-xs uppercase tracking-[0.14em]">
+            <span className={`rounded-full border border-amber-200/15 px-2.5 py-1 ${licenseClass}`}>
+              {item.license_label}
+            </span>
+            {item.status === "in_progress" || !inCorpus ? (
+              <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-400">Coming soon</span>
+            ) : item.coverage ? (
+              <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-300">{item.coverage}</span>
+            ) : (
+              <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-300">
+                {item.passages_in_corpus} passages
               </span>
-            ) : null}
-          </dd>
+            )}
+          </div>
         </div>
-      </dl>
 
-      {item.links?.length ? (
-        <div className="mt-4 flex flex-wrap gap-3 font-sans text-sm">
-          {item.links.map((link) =>
-            link.url ? (
+        <dl className="mt-5 space-y-3 font-sans text-sm leading-relaxed text-stone-300">
+          <div>
+            <dt className="layer-heading mb-1">Original work</dt>
+            <dd>{item.original_work}</dd>
+          </div>
+          {item.anchor_translation ? (
+            <div>
+              <dt className="layer-heading mb-1">English basis</dt>
+              <dd>{item.anchor_translation}</dd>
+            </div>
+          ) : null}
+          {item.sanskrit_source ? (
+            <div>
+              <dt className="layer-heading mb-1">Source language</dt>
+              <dd>{item.sanskrit_source}</dd>
+            </div>
+          ) : null}
+          <div>
+            <dt className="layer-heading mb-1">Pratibha editorial</dt>
+            <dd className="text-stone-400">
+              {item.editorial_note}
+              {item.conceived_by_conor ? (
+                <span className="mt-1 block text-amber-200/80">
+                  Original Pratibha work conceived by Conor Byrnes.
+                </span>
+              ) : null}
+            </dd>
+          </div>
+        </dl>
+
+        {links.length ? (
+          <div className="mt-4 flex flex-wrap gap-3 font-sans text-sm">
+            {links.map((link) => (
               <a
                 key={link.label}
-                href={link.url}
+                href={link.url!}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-amber-200/90 underline decoration-amber-200/30 underline-offset-4 hover:text-amber-100"
               >
                 {link.label}
               </a>
-            ) : (
-              <span key={link.label} className="text-stone-500">
-                {link.label}
-              </span>
-            ),
-          )}
-        </div>
-      ) : null}
+            ))}
+          </div>
+        ) : null}
 
-      {inCorpus ? (
-        <Link
-          href={`/read?collection=${encodeURIComponent(item.collection)}`}
-          className="mt-5 inline-block font-sans text-sm text-amber-200/90 hover:text-amber-100"
-        >
-          Browse {displayCollectionName(item.collection)} in Library →
-        </Link>
-      ) : null}
+        {inCorpus ? (
+          <Link
+            href={`/read?collection=${encodeURIComponent(item.collection)}`}
+            className="mt-5 inline-block font-sans text-sm text-amber-200/90 hover:text-amber-100"
+          >
+            Browse {displayCollectionName(item.collection)} in Library →
+          </Link>
+        ) : null}
       </div>
     </article>
   );
@@ -147,7 +132,6 @@ export default function SourcesPage() {
     collections_documented: 0,
     collections_in_corpus: 0,
     total_passages: 0,
-    sell_ready_tiers: {} as Partial<Record<SourceAttribution["sell_ready_tier"], number>>,
   });
   const [error, setError] = useState("");
 
@@ -159,13 +143,17 @@ export default function SourcesPage() {
           return;
         }
         setItems(data.items);
-        setSummary({ ...data.summary, sell_ready_tiers: data.summary.sell_ready_tiers ?? {} });
+        setSummary({
+          collections_documented: data.summary.collections_documented,
+          collections_in_corpus: data.summary.collections_in_corpus,
+          total_passages: data.summary.total_passages,
+        });
       })
       .catch(() => setError("Could not load sources."));
   }, []);
 
   const inCorpus = useMemo(() => items.filter((i) => i.passages_in_corpus > 0), [items]);
-  const inProgress = useMemo(
+  const comingSoon = useMemo(
     () => items.filter((i) => i.status === "in_progress" || i.passages_in_corpus === 0),
     [items],
   );
@@ -182,44 +170,37 @@ export default function SourcesPage() {
       <section className="manuscript-card relative mt-8 overflow-hidden rounded-[22px] p-5 sm:p-6">
         <ArtBackdrop srcs={generatedArtPool("bg-sources")} variant="banner" />
         <div className="relative z-10">
-        <h2 className="text-2xl font-semibold text-stone-100">How Pratibha uses texts</h2>
-        <div className="soft mt-4 space-y-3 font-sans text-sm leading-relaxed">
-          <p>
-            <strong className="font-medium text-stone-200">Anchor passages</strong> reproduce or closely follow named
-            translations or public-domain editions where indicated. We do not claim copyright over those English renderings.
-          </p>
-          <p>
-            <strong className="font-medium text-stone-200">Pratibha layers</strong> — commentary, key terms, cross-tradition
-            resonances, and practice — are original editorial work unless a unit explicitly cites a traditional commentator.
-          </p>
-          <p>
-            <strong className="font-medium text-stone-200">Sanskrit and source scripts</strong> follow received or scholarly
-            editions noted per collection. Devanagari marked as editorial reconstruction is not manuscript-verified.
-          </p>
-          <p>
-            <strong className="font-medium text-stone-200">Sell-ready tier</strong> — green collections use public-domain
-            anchors or original Pratibha work; yellow means a PD alternative is listed; orange and red need Pratibha
-            English or a license before commercial use.
-          </p>
-          <p className="text-stone-400">
-            Pratibha is a study companion, not a substitute for primary editions. For citation, scholarship, or publication,
-            consult the listed translators and publishers directly.
-          </p>
-        </div>
-        {summary.total_passages > 0 ? (
-          <p className="mt-5 font-sans text-xs uppercase tracking-[0.18em] text-stone-500">
-            {summary.collections_in_corpus} collections live · {summary.total_passages} passages indexed
-            {summary.sell_ready_tiers?.green ? ` · ${summary.sell_ready_tiers.green} sell-ready` : ""}
-            {summary.sell_ready_tiers?.yellow ? ` · ${summary.sell_ready_tiers.yellow} PD swap pending` : ""}
-          </p>
-        ) : null}
+          <h2 className="text-2xl font-semibold text-stone-100">How Pratibha uses texts</h2>
+          <div className="soft mt-4 space-y-3 font-sans text-sm leading-relaxed">
+            <p>
+              <strong className="font-medium text-stone-200">Anchor passages</strong> reproduce or closely follow named
+              translations or public-domain editions where indicated. We do not claim copyright over those English renderings.
+            </p>
+            <p>
+              <strong className="font-medium text-stone-200">Pratibha layers</strong> — commentary, key terms, cross-tradition
+              resonances, and practice — are original editorial work unless a unit explicitly cites a traditional commentator.
+            </p>
+            <p>
+              <strong className="font-medium text-stone-200">Sanskrit and source scripts</strong> follow received or scholarly
+              editions noted per text. Devanagari marked as editorial reconstruction is not manuscript-verified.
+            </p>
+            <p className="text-stone-400">
+              Pratibha is a study companion, not a substitute for primary editions. For citation, scholarship, or publication,
+              consult the listed translators and publishers directly.
+            </p>
+          </div>
+          {summary.total_passages > 0 ? (
+            <p className="mt-5 font-sans text-xs uppercase tracking-[0.18em] text-stone-500">
+              {summary.collections_in_corpus} texts · {summary.total_passages} passages
+            </p>
+          ) : null}
         </div>
       </section>
 
       {error ? <p className="mt-6 font-sans text-sm text-red-300/90">{error}</p> : null}
 
       <section className="mt-10">
-        <h2 className="layer-heading mb-4">In the corpus</h2>
+        <h2 className="layer-heading mb-4">In the library</h2>
         <div className="space-y-5">
           {inCorpus.map((item) => (
             <SourceCard key={item.id} item={item} />
@@ -227,11 +208,11 @@ export default function SourcesPage() {
         </div>
       </section>
 
-      {inProgress.length > 0 ? (
+      {comingSoon.length > 0 ? (
         <section className="mt-12">
-          <h2 className="layer-heading mb-4">In progress or not yet ingested</h2>
+          <h2 className="layer-heading mb-4">Coming into the library</h2>
           <div className="space-y-5">
-            {inProgress.map((item) => (
+            {comingSoon.map((item) => (
               <SourceCard key={item.id} item={item} />
             ))}
           </div>

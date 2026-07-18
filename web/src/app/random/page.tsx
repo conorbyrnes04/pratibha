@@ -89,7 +89,7 @@ export default function RandomPage() {
       <div className="mt-5 flex flex-wrap items-end gap-3">
         <div className="min-w-[min(100%,18rem)] flex-1">
           <FilterSelect
-            label="Collection"
+            label="Text"
             tone="gold"
             value={collection}
             onChange={(value) => {

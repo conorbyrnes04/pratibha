@@ -12,7 +12,7 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop, ArtChip } from "@/components/ArtImage";
 import { displayPassageTitle } from "@/lib/passageTitles";
-import { maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
+import { passagePreview, practiceText } from "@/lib/verseLayers";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -253,7 +253,7 @@ export default function ChatPage() {
             <ArtChip
               src={collectionImageSrc(pinnedVerse.collection)}
               title={displayPassageTitle(pinnedVerse)}
-              subtitle={`${displayCollectionName(pinnedVerse.collection)}${pinnedVerse.section ? ` • ${pinnedVerse.section}` : ""} • ${maturityLabel(pinnedVerse.editorial_maturity)}`}
+              subtitle={`${displayCollectionName(pinnedVerse.collection)}${pinnedVerse.section ? ` • ${pinnedVerse.section}` : ""}`}
               className="mb-4"
             >
               <p className="soft mt-3 text-sm leading-relaxed">{passagePreview(pinnedVerse)}</p>
@@ -368,7 +368,7 @@ export default function ChatPage() {
               <div className="mt-3 grid gap-3 lg:grid-cols-2">
                 <div className="space-y-3">
                   <FilterSelect
-                    label="Voice A — collection"
+                    label="Voice A — text"
                     tone="gold"
                     value={compareA}
                     onChange={setCompareA}
@@ -385,7 +385,7 @@ export default function ChatPage() {
                 </div>
                 <div className="space-y-3">
                   <FilterSelect
-                    label="Voice B — collection"
+                    label="Voice B — text"
                     tone="lapis"
                     value={compareB}
                     onChange={setCompareB}

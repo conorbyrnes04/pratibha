@@ -60,7 +60,7 @@ export function ComparePassageSelect({
       >
         <span className="filter-select__value">
           <span className="filter-select__label">
-            {selected ? displayPassageTitle(selected) : "Any passage in collection"}
+            {selected ? displayPassageTitle(selected) : "Any passage in this text"}
           </span>
         </span>
         <span className="filter-select__chevron" aria-hidden>
@@ -73,7 +73,7 @@ export function ComparePassageSelect({
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder={`Search ${collection || "collection"}…`}
+            placeholder={`Search ${collection || "text"}…`}
             className="input-field mb-2 w-full rounded-xl px-3 py-2 text-sm"
             autoFocus
           />
@@ -90,7 +90,7 @@ export function ComparePassageSelect({
                 }}
                 className={`filter-select__option w-full${!value ? " filter-select__option--active" : ""}`}
               >
-                <span className="filter-select__option-text soft">Any passage (collection-wide retrieval)</span>
+                <span className="filter-select__option-text soft">Any passage (whole text)</span>
               </button>
             </li>
             {filtered.length === 0 ? (
