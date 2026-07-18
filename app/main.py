@@ -107,6 +107,14 @@ async def health():
         "ready": ready,
         "items": len(get_all_verses()) if ready else 0,
         "load_stats": LOAD_STATS if ready else {},
+        # Presence flags only — never secret values. Helps verify Render env wiring.
+        "config": {
+            "openrouter": bool((settings.OPENROUTER_API_KEY or "").strip()),
+            "openai": bool((settings.OPENAI_API_KEY or "").strip()),
+            "use_rag": bool(settings.USE_RAG),
+            "database_url": bool((settings.DATABASE_URL or "").strip()),
+            "chat_provider": settings.chat_provider(),
+        },
     }
 
 

@@ -774,7 +774,12 @@ async def retrieve_related_unit_ids(
     large text (e.g. the Yoga Sūtras) cannot flood the Related panel.
     """
     needle = (verse_id or "").strip()
-    if not needle or not settings.USE_RAG:
+    if not needle:
+        return []
+    # Related only needs the vector DB. Chat-default RAG is gated by USE_RAG, but
+    # the request can still force chat RAG when USE_RAG is false — Related should
+    # likewise work whenever DATABASE_URL is configured.
+    if not settings.USE_RAG and not settings.DATABASE_URL:
         return []
 
     floor = settings.RAG_MIN_SCORE if min_score is None else min_score
