@@ -1,35 +1,46 @@
-# Keep the backend build context small and free of secrets.
+# Keep the Render/Docker build context tiny. The image only needs
+# app/, data/canonical/, scripts/{start_api,ingest_pgvector}.py, db/, requirements.txt.
+
 .git
-.gitignore
+.github
+.cursor
 .venv
 venv
-env
-**/__pycache__
-**/*.pyc
-
-# Secrets / local env
+__pycache__
+*.pyc
 .env
 .env.*
-**/.env
-**/.env.*
+!.env.example
 
-# Frontend & mobile (deployed separately on Vercel / not part of the API image)
+# Frontend is deployed to Cloudflare — never bake it into the API image.
 web
 mobile
 node_modules
+.open-next
+.next
+.wrangler
 
-# Authoring inputs not needed at runtime (only data/canonical is baked in)
+# Authoring / bulk source material (not loaded at API runtime).
 data/raw_texts
 data/yaml
 data/pratibha_md
+data/booklet
+data/reports
+data/rework
+data/paths
 data/canonical.zip
-archive
-references
-docs
+dist-share
 
-# Misc
+# Local docs / tooling noise.
 *.md
-!DEPLOY.md
-.DS_Store
-.cursor
-Personal NOISE
+!requirements.txt
+docs
+tests
+scripts/*
+!scripts/start_api.sh
+!scripts/ingest_pgvector.py
+
+# Glyphs / art live on the frontend.
+**/.DS_Store
+**/*.pdf
+**/*.epub
