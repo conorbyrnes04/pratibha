@@ -107,7 +107,8 @@ async def health():
     return {
         "ok": True,
         "ready": ready,
-        "items": len(_cached_item_count()) if ready else 0,
+        # `_cached_item_count()` already returns an int — do not wrap in len().
+        "items": _cached_item_count() if ready else 0,
         "load_stats": LOAD_STATS if ready else {},
         "config": {
             "openrouter": bool((settings.OPENROUTER_API_KEY or "").strip()),
@@ -130,7 +131,53 @@ def _cached_item_count() -> int:
 
 @app.get("/verses")
 async def list_verses(min_maturity: str | None = None):
-    return {"items": filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity))}
+    """Library index — slim payloads so the browser isn't handed ~9MB of layers."""
+    items = filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity))
+    return {"items": [_verse_list_item(v) for v in items]}
+
+
+def _verse_list_item(v: dict[str, Any]) -> dict[str, Any]:
+    """Fields the Library / filters need; omit heavy appendix + full layer bodies."""
+    out: dict[str, Any] = {
+        "_id": v.get("_id"),
+        "collection": v.get("collection"),
+        "section": v.get("section"),
+        "title": v.get("title"),
+        "sutra_id": v.get("sutra_id"),
+        "reference": v.get("reference"),
+        "sequence": v.get("sequence"),
+        "work_id": v.get("work_id"),
+        "themes": v.get("themes") or [],
+        "editorial_maturity": v.get("editorial_maturity"),
+        "editorial_score": v.get("editorial_score"),
+        "translation": v.get("translation"),
+        "commentary": v.get("commentary"),
+        "practice": v.get("practice") or v.get("abhyasa"),
+        "insight": v.get("insight"),
+    }
+    # Keep only the layer kinds used for list previews / search blobs.
+    layers = v.get("pratibha_layers")
+    if isinstance(layers, list):
+        keep = {"translation", "commentary", "practice", "iast", "original"}
+        slim_layers = []
+        for layer in layers:
+            if not isinstance(layer, dict):
+                continue
+            kind = str(layer.get("kind") or "")
+            if kind not in keep:
+                continue
+            body = layer.get("body")
+            if isinstance(body, str) and len(body) > 1200:
+                body = body[:1200].rstrip() + "…"
+            slim_layers.append({
+                "kind": kind,
+                "label": layer.get("label"),
+                "body": body,
+            })
+        if slim_layers:
+            out["pratibha_layers"] = slim_layers
+    return out
+
 
 @app.get("/verse/{sid}")
 async def get_verse(sid: str):
