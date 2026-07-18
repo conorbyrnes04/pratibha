@@ -102,7 +102,7 @@ export function ThreadContextBar({
             onClick={() => next && onOpenBead(threadId, next.id)}
             className="rounded-full border border-amber-200/40 bg-amber-200/10 px-3 py-1.5 font-sans text-[10px] uppercase tracking-[0.14em] text-amber-100 disabled:opacity-30"
           >
-            {next ? "Next bead →" : "End of thread"}
+            {next ? "Next bead →" : "Last bead"}
           </button>
           <button
             type="button"

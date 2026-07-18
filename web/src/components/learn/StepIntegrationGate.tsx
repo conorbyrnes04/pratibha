@@ -7,9 +7,17 @@ type StepIntegrationGateProps = {
   integration: string;
   done: boolean;
   onComplete: () => void;
+  /** Override primary button label (e.g. thread auto-advance). */
+  completeLabel?: string;
 };
 
-export function StepIntegrationGate({ stepId, integration, done, onComplete }: StepIntegrationGateProps) {
+export function StepIntegrationGate({
+  stepId,
+  integration,
+  done,
+  onComplete,
+  completeLabel,
+}: StepIntegrationGateProps) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -37,7 +45,7 @@ export function StepIntegrationGate({ stepId, integration, done, onComplete }: S
         disabled={!ready}
         className="btn-primary mt-4 px-4 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-45"
       >
-        Mark complete
+        {completeLabel || "Mark complete"}
       </button>
     </div>
   );
