@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -616,8 +616,15 @@ select:focus-visible {
   line-height: 1.7;
 }
 
-.chat-markdown strong {
+.chat-markdown strong,
+.inline-markdown strong {
   color: var(--accent-bright);
+  font-weight: 700;
+}
+
+.chat-markdown em,
+.inline-markdown em {
+  font-style: italic;
 }
 
 .chat-markdown blockquote {

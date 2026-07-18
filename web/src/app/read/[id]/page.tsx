@@ -13,6 +13,7 @@ import { ArtBackdrop } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
+import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
 import { getStudyLayers, getAppendixLayers, getAnchorChapter, getResonances, layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 import { relatedPassages } from "@/lib/relatedPassages";
@@ -319,7 +320,7 @@ export default function VerseDetailPage() {
                           href={href}
                           className="group inline-flex items-center gap-1 text-sm text-amber-100 underline decoration-amber-200/30 underline-offset-2 transition hover:decoration-amber-200/70"
                         >
-                          {r.citation}
+                          <InlineMarkdown>{r.citation}</InlineMarkdown>
                           <span
                             aria-hidden
                             className="text-[10px] text-amber-200/60 transition group-hover:translate-x-0.5"
@@ -328,12 +329,17 @@ export default function VerseDetailPage() {
                           </span>
                         </Link>
                       ) : (
-                        <span className="text-sm text-amber-100">{r.citation}</span>
+                        <span className="text-sm text-amber-100">
+                          <InlineMarkdown>{r.citation}</InlineMarkdown>
+                        </span>
                       )}
-                      <p className="soft mt-1 text-xs leading-relaxed">{r.resonance}</p>
+                      <p className="soft mt-1 text-xs leading-relaxed">
+                        <InlineMarkdown>{r.resonance}</InlineMarkdown>
+                      </p>
                       {r.divergence ? (
                         <p className="mt-2 text-xs leading-relaxed text-stone-300">
-                          <span className="text-amber-100">Divergence:</span> {r.divergence}
+                          <span className="font-semibold text-amber-100">Divergence:</span>{" "}
+                          <InlineMarkdown>{r.divergence}</InlineMarkdown>
                         </p>
                       ) : null}
                     </article>

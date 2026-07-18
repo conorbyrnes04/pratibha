@@ -2,6 +2,7 @@ import type { KeyTerm, PratibhaLayer, Resonance } from "@/lib/types";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { containsDevanagari } from "@/lib/sanskritScript";
+import { InlineMarkdown } from "@/components/InlineMarkdown";
 
 /**
  * Pick the font treatment for an "Original" layer. Devanagari (or any Indic
@@ -82,8 +83,12 @@ function renderLayerBody(
       <div className="mt-4 space-y-3">
         {items.filter(isKeyTerm).map((term) => (
           <article key={term.term} className="citation-card p-3">
-            <h3 className="text-lg text-amber-100">{term.term}</h3>
-            <p className="soft mt-1 text-sm leading-relaxed">{term.definition}</p>
+            <h3 className="text-lg text-amber-100">
+              <InlineMarkdown>{term.term}</InlineMarkdown>
+            </h3>
+            <p className="soft mt-1 text-sm leading-relaxed">
+              <InlineMarkdown>{term.definition}</InlineMarkdown>
+            </p>
           </article>
         ))}
       </div>
@@ -94,11 +99,16 @@ function renderLayerBody(
       <div className="mt-4 space-y-3">
         {items.filter(isResonance).map((entry) => (
           <article key={entry.citation} className="citation-card p-3">
-            <h3 className="text-lg text-amber-100">{entry.citation}</h3>
-            <p className="soft mt-1 text-sm leading-relaxed">{entry.resonance}</p>
+            <h3 className="text-lg text-amber-100">
+              <InlineMarkdown>{entry.citation}</InlineMarkdown>
+            </h3>
+            <p className="soft mt-1 text-sm leading-relaxed">
+              <InlineMarkdown>{entry.resonance}</InlineMarkdown>
+            </p>
             {entry.divergence ? (
               <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                <span className="text-amber-100">Divergence:</span> {entry.divergence}
+                <span className="font-semibold text-amber-100">Divergence:</span>{" "}
+                <InlineMarkdown>{entry.divergence}</InlineMarkdown>
               </p>
             ) : null}
           </article>

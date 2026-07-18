@@ -29,6 +29,7 @@ const TRADITION_ORDER = [
   "Buddhist",
   "Daoist",
   "Greek",
+  "Christian",
   "Sufi",
   "Other",
 ] as const;
@@ -71,12 +72,14 @@ const TOME_META: TomeMeta[] = [
   { pattern: /milarepa|jetsun/i, tradition: "Buddhist", author: "Milarepa", authored: "c. 11th–12th c. CE", eraYear: 1100 },
   { pattern: /tilopa|maha.?mudra/i, tradition: "Buddhist", author: "Tilopa", authored: "c. 10th–11th c. CE", eraYear: 1000 },
   { pattern: /dogen|dōgen|shobogenzo|shōbōgenzō/i, tradition: "Buddhist", author: "Dōgen", authored: "c. 13th c. CE", eraYear: 1240 },
+  { pattern: /rumi|rūmī|mathnaw|masnavi/i, tradition: "Sufi", author: "Jalāl al-Dīn Rūmī", authored: "c. 1258–1273 CE", eraYear: 1265 },
   { pattern: /tao.?te.?ching|dao.?de.?jing|laozi|lao.?tzu/i, tradition: "Daoist", author: "Laozi (trad.)", authored: "c. 4th–3rd c. BCE", eraYear: -350 },
   { pattern: /zhuang|chuang/i, tradition: "Daoist", author: "Zhuangzi", authored: "c. 4th–3rd c. BCE", eraYear: -320 },
   { pattern: /heraclitus/i, tradition: "Greek", author: "Heraclitus", authored: "c. 500 BCE", eraYear: -500 },
   { pattern: /epictetus|enchiridion/i, tradition: "Greek", author: "Epictetus", authored: "c. 50–135 CE", eraYear: 100 },
   { pattern: /phaedo|plato/i, tradition: "Greek", author: "Plato", authored: "c. 360 BCE", eraYear: -360 },
   { pattern: /plotinus|ennead/i, tradition: "Greek", author: "Plotinus", authored: "c. 270 CE", eraYear: 270 },
+  { pattern: /eckhart|abegescheidenheit|abgeschiedenheit/i, tradition: "Christian", author: "Meister Eckhart", authored: "c. 1300 CE", eraYear: 1300 },
   { pattern: /ibn|arabi|balyani|know yourself/i, tradition: "Sufi", author: "Balyānī", authored: "c. 13th–14th c. CE", eraYear: 1300 },
 ];
 

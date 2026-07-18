@@ -25,6 +25,8 @@ const CANONICAL: Array<{ display: string; aliases: string[] }> = [
   { display: "Phaedo", aliases: ["phaedo (plato)", "phaedo plato", "phaedo_plato", "phaedo"] },
   { display: "Enneads", aliases: ["plotinus enneads", "plotinus_enneads", "plotinus", "enneads", "plotinus — enneads"] },
   { display: "Pratyabhijñāhṛdayam", aliases: ["pratyabhijnahrdayam", "pratyabhijñāhṛdayam", "pratyabhijna hrdayam", "heart of recognition"] },
+  { display: "Meister Eckhart", aliases: ["meister eckhart", "meister_eckhart", "eckhart", "von abegescheidenheit", "abegescheidenheit", "abgeschiedenheit"] },
+  { display: "Mathnawī", aliases: ["rumi mathnawi", "rumi_mathnawi", "rūmī — mathnawī-yi maʿnawī", "mathnawi", "mathnawī", "masnavi", "rumi", "rūmī"] },
   { display: "Śiva Sūtras", aliases: ["siva sutra", "siva_sutra", "śiva sūtra", "śiva_sūtra", "shiva sutra", "shiva_sutra", "śiva sūtra"] },
   { display: "Śvetāśvatara Upaniṣad", aliases: ["svetasvatara upanishad", "svetasvatara_upanishad", "śvetāśvatara upaniṣad", "svetasvatara"] },
   { display: "Tantrasāra", aliases: ["tantrasara", "tantrasāra", "tantrasara_sample", "abhinavagupta"] },
