@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const LINKS: Array<{ href: string; label: string }> = [
-  { href: "/read", label: "Read" },
+  { href: "/read", label: "Library" },
   { href: "/random", label: "Random" },
   { href: "/chat", label: "Study Chat" },
   { href: "/learn", label: "Paths" },
