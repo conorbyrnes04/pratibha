@@ -32,9 +32,9 @@ function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
       </span>
       <span className="tome__body">
         <span className="tome__title">{tome.displayName}</span>
+        <span className="tome__author">{tome.author}</span>
         <span className="tome__meta">
           {tome.count} {tome.count === 1 ? "passage" : "passages"}
-          {tome.themes.length > 0 ? ` · ${tome.themes.slice(0, 2).join(" · ")}` : ""}
         </span>
       </span>
       <span className="tome__foot">

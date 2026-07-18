@@ -1046,6 +1046,14 @@ select:focus-visible {
   hyphens: auto;
 }
 
+.tome__author {
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.84rem;
+  line-height: 1.25;
+  color: rgb(214 211 209);
+  overflow-wrap: anywhere;
+}
+
 .tome__meta {
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
   font-size: 0.78rem;

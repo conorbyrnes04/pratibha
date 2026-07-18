@@ -7,21 +7,21 @@ export type LibrarySort = "title" | "author" | "tradition";
 
 export type LibraryTome = {
   collection: string;
+  /** Work title only (no author prefix). */
   displayName: string;
-  /** Tradition family (Vedānta, Kashmir Śaiva, …) — shown on the card. */
+  /** Tradition family — shown in the card footer. */
   tradition: string;
-  /** Attributed author / school for sorting and display. */
+  /** Standardized author attribution — shown under the title. */
   author: string;
-  /** Human-readable estimated authorship date. */
+  /** Estimated authorship date — shown in the card footer. */
   authored: string;
-  /** Approximate midpoint year for optional chronology (negative = BCE). */
+  /** Approximate midpoint year (negative = BCE). */
   eraYear: number;
   count: number;
   glyph: GlyphSlug;
   themes: string[];
 };
 
-/** Shelf sections when sorting by tradition. */
 const TRADITION_ORDER = [
   "Vedānta",
   "Yoga",
@@ -41,29 +41,30 @@ export type TraditionShelf = {
 type TomeMeta = {
   pattern: RegExp;
   tradition: string;
+  /** Person or school name only — no dates here. */
   author: string;
   authored: string;
   eraYear: number;
 };
 
 /**
- * Scholarly-range estimates for the Library shelf footer.
- * Dates are approximate; prefer broad centuries over false precision.
+ * Author format: bare name, or "Name (trad.)" / "Name (attrib.)" when needed.
+ * Dates live only in `authored`. Titles live only in displayCollectionName.
  */
 const TOME_META: TomeMeta[] = [
   { pattern: /astavakra|ashtavakra|a[sṣ][tṭ][aā]vakra/i, tradition: "Vedānta", author: "Aṣṭāvakra (attrib.)", authored: "c. early CE (uncertain)", eraYear: 200 },
   { pattern: /bhagavad/i, tradition: "Vedānta", author: "Vyāsa (trad.)", authored: "c. 2nd c. BCE – 2nd c. CE", eraYear: -50 },
-  { pattern: /chandogya|chāndogya|khandogya/i, tradition: "Vedānta", author: "Vedic / Upaniṣadic", authored: "c. 8th–6th c. BCE", eraYear: -700 },
-  { pattern: /isavasya|īśāvāsya|isha.?upani|isa.?upani/i, tradition: "Vedānta", author: "Vedic / Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -400 },
-  { pattern: /svetasvatara|śvetāśvatara/i, tradition: "Vedānta", author: "Vedic / Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -350 },
+  { pattern: /chandogya|chāndogya|khandogya/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 8th–6th c. BCE", eraYear: -700 },
+  { pattern: /isavasya|īśāvāsya|isha.?upani|isa.?upani/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -400 },
+  { pattern: /svetasvatara|śvetāśvatara/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -350 },
   { pattern: /mandukya|māṇḍūkya|gaudapada|gauḍapāda/i, tradition: "Vedānta", author: "Gauḍapāda", authored: "c. 5th–6th c. CE", eraYear: 500 },
   { pattern: /patanjali|patañjali|yoga.?s[uū]tra/i, tradition: "Yoga", author: "Patañjali", authored: "c. 2nd–4th c. CE", eraYear: 300 },
-  { pattern: /vijnana.?bhairava|vijñāna.?bhairava/i, tradition: "Kashmir Śaiva", author: "Kashmir Śaiva (anon.)", authored: "c. 8th–9th c. CE", eraYear: 850 },
+  { pattern: /vijnana.?bhairava|vijñāna.?bhairava/i, tradition: "Kashmir Śaiva", author: "Anonymous", authored: "c. 8th–9th c. CE", eraYear: 850 },
   { pattern: /spanda/i, tradition: "Kashmir Śaiva", author: "Vasugupta / Kallaṭa", authored: "c. 9th c. CE", eraYear: 875 },
   { pattern: /siva.?s[uū]tra|śiva.?s[uū]tra|shiva.?sutra/i, tradition: "Kashmir Śaiva", author: "Vasugupta", authored: "c. 9th c. CE", eraYear: 850 },
   { pattern: /pratyabhij/i, tradition: "Kashmir Śaiva", author: "Kṣemarāja", authored: "c. 11th c. CE", eraYear: 1020 },
   { pattern: /tantras[aā]ra|abhinavagupta/i, tradition: "Kashmir Śaiva", author: "Abhinavagupta", authored: "c. 1000 CE", eraYear: 1000 },
-  { pattern: /heart.?s[uū]tra|prajnaparamita|prajñāpāramitā/i, tradition: "Buddhist", author: "Prajñāpāramitā (attrib.)", authored: "c. 1st–7th c. CE", eraYear: 350 },
+  { pattern: /heart.?s[uū]tra|prajnaparamita|prajñāpāramitā/i, tradition: "Buddhist", author: "Anonymous (attrib.)", authored: "c. 1st–7th c. CE", eraYear: 350 },
   { pattern: /nagarjuna|madhyamaka|mulamadhyamakakarika|mmk/i, tradition: "Buddhist", author: "Nāgārjuna", authored: "c. 2nd–3rd c. CE", eraYear: 200 },
   { pattern: /shantideva|śāntideva|bodhicary/i, tradition: "Buddhist", author: "Śāntideva", authored: "c. 8th c. CE", eraYear: 750 },
   { pattern: /milarepa|jetsun/i, tradition: "Buddhist", author: "Milarepa", authored: "c. 11th–12th c. CE", eraYear: 1100 },
@@ -75,7 +76,7 @@ const TOME_META: TomeMeta[] = [
   { pattern: /epictetus|enchiridion/i, tradition: "Greek", author: "Epictetus", authored: "c. 50–135 CE", eraYear: 100 },
   { pattern: /phaedo|plato/i, tradition: "Greek", author: "Plato", authored: "c. 360 BCE", eraYear: -360 },
   { pattern: /plotinus|ennead/i, tradition: "Greek", author: "Plotinus", authored: "c. 270 CE", eraYear: 270 },
-  { pattern: /ibn|arabi|balyani|know yourself/i, tradition: "Sufi", author: "Balyānī / Ibn ʿArabī trad.", authored: "c. 13th–14th c. CE", eraYear: 1300 },
+  { pattern: /ibn|arabi|balyani|know yourself/i, tradition: "Sufi", author: "Balyānī", authored: "c. 13th–14th c. CE", eraYear: 1300 },
 ];
 
 function metaFor(collection: string): Omit<TomeMeta, "pattern"> {
@@ -95,6 +96,25 @@ function metaFor(collection: string): Omit<TomeMeta, "pattern"> {
     authored: "date uncertain",
     eraYear: 0,
   };
+}
+
+/** Fold for title sort: strip diacritics, ignore leading "the ". */
+function titleSortKey(title: string): string {
+  return title
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/^the\s+/, "")
+    .trim();
+}
+
+function authorSortKey(author: string): string {
+  return author
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/\s*\((trad\.|attrib\.)\)\s*/g, "")
+    .trim();
 }
 
 /** Build clickable tomes from loaded verses, one per collection. */
@@ -145,7 +165,9 @@ export function sortTomes(tomes: LibraryTome[], sort: LibrarySort): LibraryTome[
   const copy = [...tomes];
   if (sort === "author") {
     return copy.sort(
-      (a, b) => a.author.localeCompare(b.author) || a.displayName.localeCompare(b.displayName),
+      (a, b) =>
+        authorSortKey(a.author).localeCompare(authorSortKey(b.author)) ||
+        titleSortKey(a.displayName).localeCompare(titleSortKey(b.displayName)),
     );
   }
   if (sort === "tradition") {
@@ -156,13 +178,12 @@ export function sortTomes(tomes: LibraryTome[], sort: LibrarySort): LibraryTome[
     return copy.sort(
       (a, b) =>
         rank(a.tradition) - rank(b.tradition) ||
-        a.displayName.localeCompare(b.displayName),
+        titleSortKey(a.displayName).localeCompare(titleSortKey(b.displayName)),
     );
   }
-  return copy.sort((a, b) => a.displayName.localeCompare(b.displayName));
+  return copy.sort((a, b) => titleSortKey(a.displayName).localeCompare(titleSortKey(b.displayName)));
 }
 
-/** Group tomes into tradition shelves (used when Sort = Tradition). */
 export function groupTomesByTradition(tomes: LibraryTome[]): TraditionShelf[] {
   const buckets = new Map<string, LibraryTome[]>();
   for (const tome of tomes) {
@@ -172,12 +193,14 @@ export function groupTomesByTradition(tomes: LibraryTome[]): TraditionShelf[] {
   }
   return TRADITION_ORDER.filter((t) => buckets.has(t)).map((tradition) => ({
     tradition,
-    tomes: (buckets.get(tradition) || []).sort((a, b) => a.displayName.localeCompare(b.displayName)),
+    tomes: (buckets.get(tradition) || []).sort((a, b) =>
+      titleSortKey(a.displayName).localeCompare(titleSortKey(b.displayName)),
+    ),
   }));
 }
 
 export const LIBRARY_SORT_OPTIONS: Array<{ value: LibrarySort; label: string; hint: string }> = [
-  { value: "title", label: "Title", hint: "A–Z by text name" },
-  { value: "author", label: "Author", hint: "A–Z by attributed author" },
+  { value: "title", label: "Title", hint: "A–Z by work title" },
+  { value: "author", label: "Author", hint: "A–Z by author" },
   { value: "tradition", label: "Tradition", hint: "Grouped by lineage" },
 ];
