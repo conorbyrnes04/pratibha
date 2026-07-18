@@ -1,0 +1,29 @@
+name: Validate learning paths
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+    paths:
+      - "web/src/lib/learningPaths.ts"
+      - "web/src/lib/learningThreads.ts"
+      - "scripts/validate_learning_paths.ts"
+      - "data/canonical/**"
+      - ".github/workflows/validate-learning-paths.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Install web deps (tsx)
+        working-directory: web
+        run: npm ci
+      - name: Validate path pins against corpus
+        working-directory: web
+        run: npm run validate:learning

@@ -58,7 +58,17 @@ function PassageLink({ item, primary = false, backHref }: { item: VerseItem; pri
 
 export default function LearnPage() {
   const router = useRouter();
-  const { progress, hydrated, toggle, resetTrack } = useLearnProgress();
+  const {
+    progress,
+    hydrated,
+    toggle,
+    resetTrack,
+    exportProgress,
+    importProgressFromFile,
+    openImportPicker,
+    fileInputRef,
+  } = useLearnProgress();
+  const [importStatus, setImportStatus] = useState<string | null>(null);
   const [items, setItems] = useState<VerseItem[]>([]);
   const [selectedTrackId, setSelectedTrackId] = useState(RECOMMENDED_SPINE[0]);
   const [openStepId, setOpenStepId] = useState<string | null>(null);
@@ -255,18 +265,73 @@ export default function LearnPage() {
               {track.level} · {track.estimatedSessions}
             </p>
           </div>
-          <button type="button" onClick={() => resetTrack(track.id, track)} className="btn-secondary px-4 py-2 text-sm">
-            Reset path
-          </button>
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              onClick={exportProgress}
+              disabled={!hydrated}
+              className="btn-secondary px-4 py-2 text-sm disabled:opacity-40"
+            >
+              Export progress
+            </button>
+            <button
+              type="button"
+              onClick={openImportPicker}
+              disabled={!hydrated}
+              className="btn-secondary px-4 py-2 text-sm disabled:opacity-40"
+            >
+              Import progress
+            </button>
+            <button
+              type="button"
+              disabled={!hydrated}
+              onClick={() => {
+                if (
+                  typeof window !== "undefined" &&
+                  window.confirm(`Reset progress on “${track.title}”? This cannot be undone.`)
+                ) {
+                  resetTrack(track.id, track);
+                }
+              }}
+              className="btn-secondary px-4 py-2 text-sm disabled:opacity-40"
+            >
+              Reset path
+            </button>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="application/json,.json"
+              className="hidden"
+              onChange={async (e) => {
+                const file = e.target.files?.[0];
+                e.target.value = "";
+                if (!file) return;
+                try {
+                  await importProgressFromFile(file);
+                  setImportStatus("Progress imported.");
+                } catch {
+                  setImportStatus("Could not import that file.");
+                }
+              }}
+            />
+          </div>
         </div>
+        {importStatus ? (
+          <p className="relative mt-3 font-sans text-xs text-amber-200/80" role="status">
+            {importStatus}
+          </p>
+        ) : null}
 
-        <div className="relative mt-6">
+        <div className={`relative mt-6 ${hydrated ? "" : "opacity-50"}`}>
           <div className="flex items-center justify-between font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
             <span>Progress</span>
-            <span>{completed}/{track.steps.length} complete</span>
+            <span>{hydrated ? `${completed}/${track.steps.length} complete` : "…"}</span>
           </div>
           <div className="mt-2 h-3 rounded-full bg-white/10">
-            <div className="h-3 rounded-full bg-amber-300" style={{ width: `${pct}%` }} />
+            <div
+              className={`h-3 rounded-full bg-amber-300 transition-[width] duration-300 ${hydrated ? "" : "animate-pulse"}`}
+              style={{ width: hydrated ? `${pct}%` : "12%" }}
+            />
           </div>
         </div>
 

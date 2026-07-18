@@ -209,6 +209,7 @@ const GLYPH_RULES: Array<{ pattern: RegExp; glyph: GlyphSlug }> = [
   { pattern: /pratyabhij/i, glyph: "mirror" },
   { pattern: /spanda/i, glyph: "tides" },
   { pattern: /tantras[aā]ra|abhinavagupta/i, glyph: "mandala" },
+  { pattern: /yogin[iī]h[rṛ]daya|yogini.?hrdaya|heart of the yogini/i, glyph: "yantra" },
   { pattern: /siva.?s[uū]tra|śiva.?s[uū]tra|shiva.?sutra/i, glyph: "shiva" },
   { pattern: /vijnana|bhairava|shiva|siva|tantra|spanda|yogin[iī]|yogini_hrdaya|pratyabhij/i, glyph: "shiva" },
   { pattern: /heraclitus|fragment/i, glyph: "fire" },

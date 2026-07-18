@@ -81,11 +81,11 @@ export const LEARNING_THREADS: LearningThread[] = [
       },
       {
         id: "light-yh",
-        tradition: "Māṇḍūkya / Trika return",
+        tradition: "Yoginīhṛdaya",
         insight: "Re-find the whole diagram in the body; climb to the partless summit.",
         trackId: "descent-of-the-cakra",
         stepId: "yh-interiorize",
-        passageId: "mandukya_upanishad_and_gaudapada_karika.muk_001",
+        passageId: "yoginihrdaya.yh_011",
       },
       {
         id: "light-ss",

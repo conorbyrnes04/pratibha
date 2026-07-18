@@ -28,6 +28,7 @@ const CANONICAL: Array<{ display: string; aliases: string[] }> = [
   { display: "Śiva Sūtras", aliases: ["siva sutra", "siva_sutra", "śiva sūtra", "śiva_sūtra", "shiva sutra", "shiva_sutra", "śiva sūtra"] },
   { display: "Śvetāśvatara Upaniṣad", aliases: ["svetasvatara upanishad", "svetasvatara_upanishad", "śvetāśvatara upaniṣad", "svetasvatara"] },
   { display: "Tantrasāra", aliases: ["tantrasara", "tantrasāra", "tantrasara_sample", "abhinavagupta"] },
+  { display: "Yoginīhṛdaya", aliases: ["yoginihrdaya", "yoginīhṛdaya", "yogini hrdaya", "yogini_hrdaya", "heart of the yogini"] },
   { display: "Tao Te Ching", aliases: ["tao te ching", "tao_te_ching", "dao de jing", "laozi", "lao tzu"] },
   { display: "Vijñāna Bhairava", aliases: ["vijnana bhairava", "vijnana_bhairava", "vijñāna bhairava", "vijñāna_bhairava", "vijnana bhairava yuktis", "vijnana_bhairava_yuktis", "vijnana bhairava tantra"] },
   { display: "Spandakārikā", aliases: ["yoga spandakarika", "yoga_spandakarika", "yoga spandakārikā", "spanda karika", "spandakarika"] },

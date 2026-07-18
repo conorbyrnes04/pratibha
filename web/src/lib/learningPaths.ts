@@ -47,11 +47,11 @@ export const LEARNING_TRACKS: LearningTrack[] = [
     level: "Intermediate",
     focus: "Śrī Vidyā: the śrīcakra as the body of the Goddess — and of you",
     outcome:
-      "Walk an initiatic Trika / Śrī Vidyā arc — from fitness and secrecy, through ritual as meeting-place and the cosmos arising from self-recognition, down into differentiation, and back inward through the subtle body — grounded in passages now in the Library (Tantrasāra, Spanda, Śiva Sūtra, VBT). Full Yoginīhṛdaya pins return when that corpus is ingested.",
+      "Walk the opening of the Yoginīhṛdaya as an initiation: from fitness and secrecy, through the threefold agreement and the cosmos arising from self-recognition, down into the diagram's unfolding, and back inward through the subtle body.",
     description:
-      "An initiatic descent-and-return path in the spirit of the Yoginīhṛdaya, walked gate by gate through Trika texts currently in the corpus.",
+      "An initiatic path through the Heart of the Yoginī (Cakrasaṃketa, ślokas 1–35), walked gate by gate.",
     arc:
-      "The Yoginīhṛdaya names its chapters saṃketas — appointed encounters. This path keeps that shape: you advance by passing a gate, not by skimming. Study passages are Trika anchors already in Pratibha (Tantrasāra, Spanda Kārikā, Śiva Sūtra, Vijñāna Bhairava, and kin) until the Yoginīhṛdaya units themselves are ingested. We begin by becoming askable, receive the agreement that ritual is meeting not representation, witness consciousness flashing as the world, trace descent into structure and earth, and finally reverse the current toward the partless summit.",
+      "The Yoginīhṛdaya does not call its chapters lessons but saṃketas — appointed encounters. So this path is itself a saṃketa: an agreed sequence of meetings through which the secret descends, ear to ear. You do not advance by reading the next step; you advance by passing a gate — a practice that must ripen first. We begin by becoming askable (fitness, secrecy, the sky-going heart), receive the threefold agreement and why understanding is itself authority, witness the cosmos flash into being from consciousness seeing its own radiance, trace the long descent of that light into structure, senses, world and earth, and finally reverse the current — re-finding the whole diagram in the body and climbing to the partless summit.",
     estimatedSessions: "11 gates · ~20 min each",
     steps: [
       {
@@ -64,7 +64,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "Truth is drawn out by desire and address, not seized. Begin by becoming askable.",
         misconception:
           "That a wise response would mean feeling certain. Here revelation opens with a question asked from fullness.",
-        passageId: "tantrasara.ts_001",
+        passageId: "yoginihrdaya.yh_001",
         supportingPassageIds: ["pratyabhijnahrdayam.phr_001"],
         theme: "self",
         chatMode: "explain",
@@ -87,7 +87,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "The 'sky' you learn to move in is the open void of the heart; knowing it is freedom.",
         misconception:
           "That khecaratā is merely a magic power of flight. The sky is the inner void of consciousness; moving in it is liberation.",
-        passageId: "vijnana_bhairava.yukti_001",
+        passageId: "yoginihrdaya.yh_002",
         supportingPassageIds: ["vijnana_bhairava.yukti_001"],
         theme: "secrecy",
         chatMode: "explain",
@@ -110,7 +110,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "A true symbol is a meeting-place you arrive at, not a sign you decode.",
         misconception:
           "That the diagram, mantra, and rite are representations of an absent deity. They are sites of real co-presence.",
-        passageId: "tantrasara.ts_013",
+        passageId: "yoginihrdaya.yh_003",
         supportingPassageIds: ["pratyabhijnahrdayam.phr_001"],
         theme: "ritual",
         chatMode: "explain",
@@ -133,7 +133,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "Where understanding is absent, authority is only borrowed; knowing the form makes you its conduit.",
         misconception:
           "That authority over a practice is conferred by permission or repetition. Here it is conferred by understanding.",
-        passageId: "siva_sutra.ss_i_1",
+        passageId: "yoginihrdaya.yh_004",
         supportingPassageIds: ["siva_sutra.ss_i_1"],
         theme: "self",
         chatMode: "question",
@@ -156,7 +156,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "You are not a thing but a standing pattern that emission and reabsorption keep making.",
         misconception:
           "That the diagram is a static figure. Its very existence is the live conjunction of outflow and return.",
-        passageId: "yoga_spandakarika.sp_02",
+        passageId: "yoginihrdaya.yh_005",
         supportingPassageIds: ["yoga_spandakarika.sp_02"],
         theme: "emanation",
         chatMode: "practice",
@@ -179,7 +179,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "Catching yourself in the act of being aware is the same flash from which a world springs.",
         misconception:
           "That the world is produced by the Goddess as an external object. It is her self-recognition taking form.",
-        passageId: "siva_sutra.ss_i_5",
+        passageId: "yoginihrdaya.yh_006",
         supportingPassageIds: ["pratyabhijnahrdayam.phr_001", "siva_sutra.ss_i_5"],
         theme: "light",
         chatMode: "practice",
@@ -202,7 +202,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "Subject, object, and the knowing between them are the cosmos's first children, not neutral givens.",
         misconception:
           "That the world is first physical and only later cognized. Here it is cognitive at its very root.",
-        passageId: "mandukya_upanishad_and_gaudapada_karika.muk_001",
+        passageId: "yoginihrdaya.yh_007",
         supportingPassageIds: ["mandukya_upanishad_and_gaudapada_karika.muk_001"],
         theme: "consciousness",
         chatMode: "explain",
@@ -225,7 +225,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "Perception is the cosmos perceiving itself — a local radiance, not a transaction with an outside.",
         misconception:
           "That the senses passively receive an independent world. Senses and their objects are co-emanated from the same point.",
-        passageId: "siva_sutra.ss_i_3",
+        passageId: "yoginihrdaya.yh_008",
         supportingPassageIds: ["siva_sutra.ss_i_1"],
         theme: "consciousness",
         chatMode: "practice",
@@ -248,7 +248,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "Solid matter is not the opposite of spirit but its outermost shining — traceable back to the source.",
         misconception:
           "That transcendence means height or escape from matter. Here transcendence is innerness, and matter is its outer edge.",
-        passageId: "isavasya_upanishad.isa_001",
+        passageId: "yoginihrdaya.yh_009",
         supportingPassageIds: ["isavasya_upanishad.isa_001"],
         theme: "emanation",
         chatMode: "explain",
@@ -271,7 +271,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "The same divinity saturates the busiest outer ring; reality's essence is generous overflow, not a still point.",
         misconception:
           "That depth always means withdrawing inward to stillness. The supreme equally pervades the outer, active periphery.",
-        passageId: "tantrasara.ts_007",
+        passageId: "yoginihrdaya.yh_010",
         supportingPassageIds: ["tao_te_ching.ttc_md_001"],
         theme: "eros",
         chatMode: "compare",
@@ -294,7 +294,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "Liberation is a controlled de-thickening of attention — from image, to sound, to a plenitude past form.",
         misconception:
           "That the formless summit is blankness or void-as-absence. It is self-beautiful, blissful, unbounded plenitude.",
-        passageId: "mandukya_upanishad_and_gaudapada_karika.muk_001",
+        passageId: "yoginihrdaya.yh_011",
         supportingPassageIds: ["vijnana_bhairava.yukti_001", "mandukya_upanishad_and_gaudapada_karika.muk_001"],
         theme: "practice",
         chatMode: "practice",
@@ -356,7 +356,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         misconception:
           "That creation requires raw material or external necessity. Here it is free self-display — painter and canvas as one.",
         passageId: "pratyabhijnahrdayam.phr_002",
-        supportingPassageIds: ["siva_sutra.ss_i_5"],
+        supportingPassageIds: ["yoginihrdaya.yh_006"],
         theme: "freedom",
         chatMode: "explain",
         chatPrompt:
@@ -448,7 +448,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         misconception:
           "That awakening is a dramatic acquisition. It is re-cognition — knowing again what was never absent.",
         passageId: "pratyabhijnahrdayam.phr_013",
-        supportingPassageIds: ["siva_sutra.ss_i_5", "siva_sutra.ss_i_5"],
+        supportingPassageIds: ["yoginihrdaya.yh_006", "siva_sutra.ss_i_5"],
         theme: "recognition",
         chatMode: "practice",
         chatPrompt:
@@ -777,7 +777,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         misconception:
           "That this is a breathing technique. It is the reverse: noticing the breath that breathes itself, without your management.",
         passageId: "vijnana_bhairava.yukti_001",
-        supportingPassageIds: ["tantrasara.ts_001", "pratyabhijnahrdayam.phr_017"],
+        supportingPassageIds: ["yoginihrdaya.yh_001", "pratyabhijnahrdayam.phr_017"],
         theme: "breath",
         chatMode: "practice",
         chatPrompt:
@@ -1045,7 +1045,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         misconception:
           "That creation depletes or divides the Source, or that it was a one-time event. The overflow is timeless, continuous, and costs the One nothing.",
         passageId: "plotinus_enneads.enn_v_1_06",
-        supportingPassageIds: ["pratyabhijnahrdayam.phr_002", "siva_sutra.ss_i_5"],
+        supportingPassageIds: ["pratyabhijnahrdayam.phr_002", "yoginihrdaya.yh_006"],
         theme: "emanation",
         chatMode: "explain",
         chatPrompt:
@@ -1160,7 +1160,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         misconception:
           "That you reach the Source by acquiring or grasping more. You reach it by becoming sunlike — chiselling away all that is not already the radiant form.",
         passageId: "plotinus_enneads.enn_i_6_09",
-        supportingPassageIds: ["mandukya_upanishad_and_gaudapada_karika.muk_001", "siva_sutra.ss_i_5"],
+        supportingPassageIds: ["yoginihrdaya.yh_011", "siva_sutra.ss_i_5"],
         theme: "ascent",
         chatMode: "practice",
         chatPrompt:

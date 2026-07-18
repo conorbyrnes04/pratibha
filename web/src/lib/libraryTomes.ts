@@ -64,6 +64,7 @@ const TOME_META: TomeMeta[] = [
   { pattern: /siva.?s[uū]tra|śiva.?s[uū]tra|shiva.?sutra/i, tradition: "Kashmir Śaiva", author: "Vasugupta", authored: "c. 9th c. CE", eraYear: 850 },
   { pattern: /pratyabhij/i, tradition: "Kashmir Śaiva", author: "Kṣemarāja", authored: "c. 11th c. CE", eraYear: 1020 },
   { pattern: /tantras[aā]ra|abhinavagupta/i, tradition: "Kashmir Śaiva", author: "Abhinavagupta", authored: "c. 1000 CE", eraYear: 1000 },
+  { pattern: /yogin[iī]h[rṛ]daya|yogini.?hrdaya|heart of the yogini/i, tradition: "Kashmir Śaiva", author: "Anonymous (Śrīvidyā)", authored: "c. 11th–13th c. CE", eraYear: 1150 },
   { pattern: /heart.?s[uū]tra|prajnaparamita|prajñāpāramitā/i, tradition: "Buddhist", author: "Anonymous (attrib.)", authored: "c. 1st–7th c. CE", eraYear: 350 },
   { pattern: /nagarjuna|madhyamaka|mulamadhyamakakarika|mmk/i, tradition: "Buddhist", author: "Nāgārjuna", authored: "c. 2nd–3rd c. CE", eraYear: 200 },
   { pattern: /shantideva|śāntideva|bodhicary/i, tradition: "Buddhist", author: "Śāntideva", authored: "c. 8th c. CE", eraYear: 750 },
