@@ -7,12 +7,14 @@ import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { stripMarkdown } from "@/lib/textPreview";
 import { displayCollectionName } from "@/lib/collectionLabels";
-import { collectionArtPool, collectionImageSrc } from "@/lib/collectionImages";
-import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
+import { collectionArtPool } from "@/lib/collectionImages";
+import { collectionGlyph } from "@/lib/glyphs";
+import { ArtBackdrop } from "@/components/ArtImage";
+import { Glyph } from "@/components/Glyph";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
 import { JournalPanel } from "@/components/JournalPanel";
-import { getStudyLayers, getAppendixLayers, getAnchorChapter, getResonances, layerText, maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
+import { getStudyLayers, getAppendixLayers, getAnchorChapter, getResonances, layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 import { relatedPassages } from "@/lib/relatedPassages";
 
 function practiceFallback(item: VerseItem): string {
@@ -169,13 +171,9 @@ export default function VerseDetailPage() {
         <ArtBackdrop srcs={collectionArtPool(item.collection)} variant="hero" priority />
         <div className="relative z-10 grid gap-6 lg:grid-cols-[1fr_15rem] lg:items-end">
           <div className="flex items-start gap-4">
-            <ArtThumb
-              src={collectionImageSrc(item.collection, item._id)}
-              alt=""
-              framed
-              className="mt-1 hidden h-[4.5rem] w-[4.5rem] shrink-0 rounded-2xl sm:block"
-              imgClassName="[object-position:center_28%]"
-            />
+            <span className="passage-hero__glyph mt-1 hidden sm:inline-flex" aria-hidden>
+              <Glyph name={collectionGlyph(item.collection)} size="lg" />
+            </span>
             <div>
               <p className="eyebrow">{displayCollectionName(item.collection) || "Pratibha"} {item.section ? ` / ${item.section}` : ""}</p>
               <h1 className="mt-3 max-w-4xl text-5xl font-semibold leading-[0.92] tracking-[-0.04em] text-stone-100 sm:text-6xl">
@@ -271,6 +269,10 @@ export default function VerseDetailPage() {
               Explore another random passage
             </Link>
           </div>
+
+          <div className="mt-6">
+            <JournalPanel passage={item} />
+          </div>
         </section>
 
         <aside className="card h-fit p-4">
@@ -279,9 +281,6 @@ export default function VerseDetailPage() {
             {relatedMode === "semantic"
               ? "Nearest teachings in meaning — across the corpus."
               : "The same insight echoing across traditions."}
-          </p>
-          <p className="mt-3 rounded-full border border-amber-200/20 px-3 py-1 font-sans text-xs text-amber-100">
-            {maturityLabel(item.editorial_maturity)}
           </p>
 
           {resonances.length > 0 ? (
@@ -340,7 +339,6 @@ export default function VerseDetailPage() {
               </Link>
             </div>
           ) : null}
-          <JournalPanel passage={item} />
         </aside>
       </div>
     </main>

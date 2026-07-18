@@ -10,8 +10,10 @@ import { FilterSelect } from "@/components/FilterSelect";
 import { ThemeConstellation } from "@/components/ThemeConstellation";
 import { buildCollectionOptions, filterPassages, topThemes, uniqueCollections } from "@/lib/corpusFilters";
 import { displayCollectionName } from "@/lib/collectionLabels";
-import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
-import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
+import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
+import { collectionGlyph } from "@/lib/glyphs";
+import { ArtBackdrop } from "@/components/ArtImage";
+import { Glyph } from "@/components/Glyph";
 import { displayPassageTitle, patanjaliSutraRef, sortPassagesForLibrary } from "@/lib/passageTitles";
 import { layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 
@@ -150,12 +152,9 @@ function ReadPageContent() {
           <Link key={x._id} href={`/read/${encodeURIComponent(x._id)}`} className="card group block p-5 transition hover:-translate-y-0.5 hover:border-amber-300/30">
             <div className="flex items-start justify-between gap-4">
               <div className="flex min-w-0 items-start gap-3">
-                <ArtThumb
-                  src={collectionImageSrc(x.collection, x._id)}
-                  framed
-                  className="library-row__thumb hidden sm:block"
-                  imgClassName="[object-position:center_28%]"
-                />
+                <span className="library-row__glyph hidden sm:inline-flex" aria-hidden>
+                  <Glyph name={collectionGlyph(x.collection)} size="md" />
+                </span>
                 <div className="min-w-0">
                   <h2 className="text-2xl leading-none text-amber-100">{displayPassageTitle(x)}</h2>
                   <p className="soft text-sm">{displayCollectionName(x.collection)} {x.section ? `• ${x.section}` : ""}</p>

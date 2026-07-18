@@ -1,6 +1,6 @@
 import type { VerseItem } from "./types";
+import { collectionIcon } from "./collectionIcons";
 import { displayCollectionName } from "./collectionLabels";
-import { collectionGlyph, type GlyphSlug } from "./glyphs";
 import { displayPassageTitle, isPatanjaliYogaSutras, passageSortKey, sortPassagesForLibrary } from "./passageTitles";
 export type ThemeCount = { theme: string; count: number };
 
@@ -29,9 +29,7 @@ export type CollectionFilterOption = {
   value: string;
   label: string;
   hint?: string;
-  /** Letter / script fallback when no Mythra glyph is mapped. */
   icon?: string;
-  glyph?: GlyphSlug;
 };
 
 export function uniqueCollections(items: VerseItem[]): string[] {
@@ -60,14 +58,10 @@ export function countForCollection(items: VerseItem[], collection: string): numb
   return pool.filter((x) => (x.collection || "").trim() === collection).length;
 }
 
-function collectionMark(c: string): Pick<CollectionFilterOption, "glyph"> {
-  return { glyph: collectionGlyph(c) };
-}
-
 export function buildCollectionOptions(items: VerseItem[], collections: string[]): CollectionFilterOption[] {
   return collections.map((c) => ({
     value: c,
-    ...collectionMark(c),
+    icon: collectionIcon(c),
     label: c === "all" ? "All texts" : displayCollectionName(c),
     hint: `${countForCollection(items, c)} passages`,
   }));
@@ -76,7 +70,7 @@ export function buildCollectionOptions(items: VerseItem[], collections: string[]
 export function buildNamedCollectionOptions(collections: string[]): CollectionFilterOption[] {
   return collections.map((c) => ({
     value: c,
-    ...collectionMark(c),
+    icon: collectionIcon(c),
     label: displayCollectionName(c),
   }));
 }
@@ -87,7 +81,7 @@ export function buildCompareCollectionOptions(
 ): CollectionFilterOption[] {
   return collections.map((c) => ({
     value: c,
-    ...collectionMark(c),
+    icon: collectionIcon(c),
     label: displayCollectionName(c),
     hint: `${countForCollection(items, c)} passages`,
   }));
