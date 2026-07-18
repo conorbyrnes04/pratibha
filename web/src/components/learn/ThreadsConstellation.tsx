@@ -1,7 +1,12 @@
 "use client";
 
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
-import { LEARNING_THREADS, type LearningThread, type ThreadStepRef } from "@/lib/learningThreads";
+import {
+  LEARNING_THREADS,
+  pathStepTitleForBead,
+  type LearningThread,
+  type ThreadStepRef,
+} from "@/lib/learningThreads";
 
 type ProgressMap = Record<string, boolean>;
 
@@ -19,34 +24,43 @@ type ThreadsConstellationProps = {
   progress: ProgressMap;
   /** Wait until localStorage progress has loaded to avoid SSR/client mismatch. */
   hydrated: boolean;
-  onOpenStep: (trackId: string, stepId: string) => void;
+  /** Currently traced thread (from URL / context bar). */
+  activeThreadId?: string | null;
+  activeBeadId?: string | null;
+  onOpenBead: (threadId: string, beadId: string) => void;
 };
 
 function ThreadBead({
   step,
   index,
   done,
+  active,
   hue,
   onOpen,
 }: {
   step: ThreadStepRef;
   index: number;
   done: boolean;
+  active: boolean;
   hue: number;
   onOpen: () => void;
 }) {
+  const gateTitle = pathStepTitleForBead(step);
   return (
     <button
       type="button"
       onClick={onOpen}
-      className="thread-bead group flex shrink-0 flex-col items-center gap-2 text-center"
+      className={`thread-bead group flex shrink-0 flex-col items-center gap-2 text-center ${active ? "thread-bead--active" : ""}`}
       style={{ animationDelay: `${index * 0.08}s` }}
+      aria-current={active ? "step" : undefined}
     >
       <span
         className={`thread-bead__orb relative flex h-12 w-12 items-center justify-center rounded-full border-2 font-sans text-[10px] font-bold uppercase tracking-wider transition duration-300 ${
           done
             ? "border-emerald-300/70 bg-emerald-300/15 text-emerald-200"
-            : "border-amber-200/35 bg-[#0b0b14]/60 text-amber-100/90 group-hover:border-amber-200/60"
+            : active
+              ? "border-amber-200/80 bg-amber-200/15 text-amber-50 shadow-[0_0_0_6px_rgb(240_201_121_/_0.12)]"
+              : "border-amber-200/35 bg-[#0b0b14]/60 text-amber-100/90 group-hover:border-amber-200/60"
         }`}
         style={
           done
@@ -61,7 +75,14 @@ function ThreadBead({
         />
         {index + 1}
       </span>
-      <span className="max-w-[5.5rem] font-sans text-[9px] uppercase tracking-[0.12em] text-amber-200/55">{step.tradition}</span>
+      <span className="max-w-[6.5rem] font-sans text-[9px] uppercase tracking-[0.12em] text-amber-200/55">
+        {step.tradition}
+      </span>
+      {gateTitle ? (
+        <span className="max-w-[6.5rem] line-clamp-2 font-sans text-[9px] leading-snug text-stone-400/90">
+          {gateTitle}
+        </span>
+      ) : null}
     </button>
   );
 }
@@ -70,14 +91,16 @@ function ThreadCard({
   thread,
   progress,
   expanded,
+  activeBeadId,
   onToggle,
-  onOpenStep,
+  onOpenBead,
 }: {
   thread: LearningThread;
   progress: ProgressMap;
   expanded: boolean;
+  activeBeadId?: string | null;
   onToggle: () => void;
-  onOpenStep: (trackId: string, stepId: string) => void;
+  onOpenBead: (threadId: string, beadId: string) => void;
 }) {
   const { done, total } = threadProgress(thread, progress);
   const pct = Math.round((done / Math.max(1, total)) * 100);
@@ -85,7 +108,8 @@ function ThreadCard({
 
   return (
     <article
-      className={`thread-card overflow-hidden rounded-3xl border transition duration-500 ${
+      id={`thread-${thread.id}`}
+      className={`thread-card scroll-mt-28 overflow-hidden rounded-3xl border transition duration-500 ${
         expanded ? "border-amber-200/40 bg-amber-100/[0.04]" : "border-white/10 bg-black/20"
       }`}
       style={{ ["--thread-hue" as string]: thread.hue }}
@@ -123,8 +147,9 @@ function ThreadCard({
                 step={step}
                 index={i}
                 done={!!progress[stepKey(step.trackId, step.stepId)]}
+                active={activeBeadId === step.id}
                 hue={thread.hue}
-                onOpen={() => onOpenStep(step.trackId, step.stepId)}
+                onOpen={() => onOpenBead(thread.id, step.id)}
               />
               {i < thread.steps.length - 1 ? (
                 <span
@@ -142,6 +167,9 @@ function ThreadCard({
             style={{ width: `${pct}%` }}
           />
         </div>
+        <p className="mt-2 font-sans text-[9px] uppercase tracking-[0.14em] text-stone-500">
+          Beads light when you complete their path gates
+        </p>
       </div>
 
       {expanded ? (
@@ -150,13 +178,19 @@ function ThreadCard({
           <ol className="mt-3 space-y-3">
             {thread.steps.map((step, i) => {
               const beadDone = !!progress[stepKey(step.trackId, step.stepId)];
+              const gateTitle = pathStepTitleForBead(step);
+              const isActive = activeBeadId === step.id;
               return (
                 <li key={step.id}>
                   <button
                     type="button"
-                    onClick={() => onOpenStep(step.trackId, step.stepId)}
+                    onClick={() => onOpenBead(thread.id, step.id)}
                     className={`thread-step-row w-full rounded-2xl border p-4 text-left transition hover:border-amber-200/35 ${
-                      beadDone ? "border-emerald-300/20 bg-emerald-300/5" : "border-white/8 bg-black/15"
+                      isActive
+                        ? "border-amber-200/45 bg-amber-200/10"
+                        : beadDone
+                          ? "border-emerald-300/20 bg-emerald-300/5"
+                          : "border-white/8 bg-black/15"
                     }`}
                   >
                     <div className="flex items-start gap-3">
@@ -168,10 +202,13 @@ function ThreadCard({
                         {beadDone ? "✓" : i + 1}
                       </span>
                       <div>
-                        <p className="font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/60">{step.tradition}</p>
+                        <p className="font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/60">
+                          {step.tradition}
+                          {gateTitle ? ` · ${gateTitle}` : ""}
+                        </p>
                         <p className="mt-1 leading-relaxed text-stone-200">{step.insight}</p>
                         <span className="mt-2 inline-block font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/45">
-                          Enter gate →
+                          {isActive ? "Current bead" : "Open on thread →"}
                         </span>
                       </div>
                     </div>
@@ -186,15 +223,19 @@ function ThreadCard({
   );
 }
 
-export function ThreadsConstellation({ progress, hydrated, onOpenStep }: ThreadsConstellationProps) {
-  const [expandedId, setExpandedId] = useState<string | null>(null);
+export function ThreadsConstellation({
+  progress,
+  hydrated,
+  activeThreadId = null,
+  activeBeadId = null,
+  onOpenBead,
+}: ThreadsConstellationProps) {
+  const [expandedId, setExpandedId] = useState<string | null>(activeThreadId || LEARNING_THREADS[0]?.id || null);
   const safeProgress = hydrated ? progress : {};
 
   useEffect(() => {
-    if (expandedId === null && LEARNING_THREADS[0]) {
-      setExpandedId(LEARNING_THREADS[0].id);
-    }
-  }, [expandedId]);
+    if (activeThreadId) setExpandedId(activeThreadId);
+  }, [activeThreadId]);
 
   const totalBeads = useMemo(
     () => LEARNING_THREADS.reduce((n, t) => n + t.steps.length, 0),
@@ -211,7 +252,7 @@ export function ThreadsConstellation({ progress, hydrated, onOpenStep }: Threads
   }, [safeProgress]);
 
   return (
-    <section className="threads-field relative mt-12 overflow-hidden rounded-[2rem] border border-amber-200/12 p-5 sm:p-8">
+    <section id="threads" className="threads-field relative mt-12 scroll-mt-24 overflow-hidden rounded-[2rem] border border-amber-200/12 p-5 sm:p-8">
       <div className="threads-field__glow pointer-events-none absolute inset-0" aria-hidden />
       <div className="relative">
         <div className="flex flex-wrap items-end justify-between gap-4">
@@ -219,12 +260,12 @@ export function ThreadsConstellation({ progress, hydrated, onOpenStep }: Threads
             <p className="eyebrow">Threads</p>
             <h2 className="mt-2 text-3xl font-semibold leading-none text-amber-100 sm:text-4xl">One theme, many traditions</h2>
             <p className="soft mt-3 max-w-xl text-base leading-relaxed">
-              A thread is a single insight traced across the corpus — like a golden sutra running through the diagram.
-              Each bead opens the gate where that tradition speaks it.
+              A thread is a horizontal cut across paths — one insight followed tradition by tradition.
+              Each bead opens that gate while keeping you on the thread (next bead, not the whole path).
             </p>
           </div>
           <p className="font-sans text-xs uppercase tracking-[0.18em] text-amber-200/50">
-            {litBeads}/{totalBeads} beads lit
+            {litBeads}/{totalBeads} beads lit via path gates
           </p>
         </div>
 
@@ -235,8 +276,9 @@ export function ThreadsConstellation({ progress, hydrated, onOpenStep }: Threads
               thread={thread}
               progress={safeProgress}
               expanded={expandedId === thread.id}
+              activeBeadId={activeThreadId === thread.id ? activeBeadId : null}
               onToggle={() => setExpandedId((id) => (id === thread.id ? null : thread.id))}
-              onOpenStep={onOpenStep}
+              onOpenBead={onOpenBead}
             />
           ))}
         </div>

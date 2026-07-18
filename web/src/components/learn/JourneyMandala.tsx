@@ -156,7 +156,7 @@ export function JourneyMandala({
       <p className="eyebrow">The journey</p>
       <p className="soft mt-2 max-w-2xl text-base leading-relaxed">
         Beginner at the inner ring, intermediate in the middle, advanced at the capstone — eight paths on one breathing
-        diagram. Hover a gate to read it; click to open. The golden thread shows the recommended order.
+        diagram. Hover a gate to read it; click to open. The recommended spine shows the suggested order of descent.
       </p>
 
       {/* Desktop: radial mandala */}

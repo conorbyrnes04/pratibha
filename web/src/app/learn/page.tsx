@@ -7,6 +7,7 @@ import { getVerses } from "@/lib/api";
 import { DailySitCard } from "@/components/learn/DailySitCard";
 import { JourneyMandala } from "@/components/learn/JourneyMandala";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
+import { ThreadContextBar } from "@/components/learn/ThreadContextBar";
 import { ThreadsConstellation } from "@/components/learn/ThreadsConstellation";
 import { YantraBreath } from "@/components/learn/YantraBreath";
 import { JournalPanel } from "@/components/JournalPanel";
@@ -18,9 +19,13 @@ import {
   LEARNING_REALMS,
   LEARNING_TRACKS,
   RECOMMENDED_SPINE,
-  type LearningStepSpec,
   type LearningTrack,
 } from "@/lib/learningPaths";
+import {
+  findBead,
+  findThread,
+  threadsForPathStep,
+} from "@/lib/learningThreads";
 import { learnStepContextId } from "@/lib/journalStorage";
 import { generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop } from "@/components/ArtImage";
@@ -72,6 +77,8 @@ export default function LearnPage() {
   const [items, setItems] = useState<VerseItem[]>([]);
   const [selectedTrackId, setSelectedTrackId] = useState(RECOMMENDED_SPINE[0]);
   const [openStepId, setOpenStepId] = useState<string | null>(null);
+  const [activeThreadId, setActiveThreadId] = useState<string | null>(null);
+  const [activeBeadId, setActiveBeadId] = useState<string | null>(null);
   const stepRefs = useRef<Record<string, HTMLElement | null>>({});
   const pathSectionRef = useRef<HTMLElement | null>(null);
   const pendingScrollRef = useRef<string | null>(null);
@@ -128,20 +135,47 @@ export default function LearnPage() {
   const heroRealmId =
     LEARNING_REALMS.find((r) => r.trackIds.includes(heroTrack.id))?.id ?? "foundations";
 
-  function syncUrl(trackId: string, stepId?: string | null) {
+  function syncUrl(
+    trackId: string,
+    stepId?: string | null,
+    thread?: { threadId?: string | null; beadId?: string | null } | null,
+  ) {
     if (!urlReadyRef.current) return;
-    router.replace(learnHref(trackId, stepId), { scroll: false });
+    const threadId = thread === null ? null : (thread?.threadId ?? activeThreadId);
+    const beadId = thread === null ? null : (thread?.beadId ?? activeBeadId);
+    router.replace(
+      learnHref({
+        trackId,
+        stepId,
+        threadId: threadId || null,
+        beadId: beadId || null,
+      }),
+      { scroll: false },
+    );
   }
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const { trackId, stepId } = parseLearnSearch(window.location.search);
+    const { trackId, stepId, threadId, beadId } = parseLearnSearch(window.location.search);
     if (trackId && LEARNING_TRACKS.some((x) => x.id === trackId)) {
       setSelectedTrackId(trackId);
     }
     if (stepId) {
       setOpenStepId(stepId);
       pendingScrollRef.current = stepId;
+    }
+    if (threadId && findThread(threadId)) {
+      setActiveThreadId(threadId);
+      const bead = beadId && findBead(findThread(threadId)!, beadId);
+      if (bead) {
+        setActiveBeadId(bead.id);
+        setSelectedTrackId(bead.trackId);
+        setOpenStepId(bead.stepId);
+        pendingScrollRef.current = bead.stepId;
+      } else if (findThread(threadId)!.steps[0]) {
+        const first = findThread(threadId)!.steps[0];
+        setActiveBeadId(first.id);
+      }
     }
     urlReadyRef.current = true;
   }, []);
@@ -156,20 +190,55 @@ export default function LearnPage() {
     }
   });
 
+  function clearThreadMode() {
+    setActiveThreadId(null);
+    setActiveBeadId(null);
+  }
+
   function selectTrack(trackId: string) {
+    clearThreadMode();
     setSelectedTrackId(trackId);
     setOpenStepId(null);
-    syncUrl(trackId, null);
+    syncUrl(trackId, null, null);
     requestAnimationFrame(() => {
       pathSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }
 
+  /** Path-mode jump (hero, daily sit, spine) — leaves any active thread. */
   function continueTo(trackId: string, stepId: string) {
+    clearThreadMode();
     setSelectedTrackId(trackId);
     setOpenStepId(stepId);
     pendingScrollRef.current = stepId;
-    syncUrl(trackId, stepId);
+    syncUrl(trackId, stepId, null);
+  }
+
+  /** Thread-mode jump — keeps horizontal context + next-bead chrome. */
+  function openBead(threadId: string, beadId: string) {
+    const thread = findThread(threadId);
+    const bead = thread && findBead(thread, beadId);
+    if (!thread || !bead) return;
+    setActiveThreadId(threadId);
+    setActiveBeadId(beadId);
+    setSelectedTrackId(bead.trackId);
+    setOpenStepId(bead.stepId);
+    pendingScrollRef.current = bead.stepId;
+    syncUrl(bead.trackId, bead.stepId, { threadId, beadId });
+  }
+
+  function leaveThread() {
+    clearThreadMode();
+    syncUrl(selectedTrackId, openStepId === "__none__" ? null : openStepId, null);
+  }
+
+  function backToThreadMap() {
+    requestAnimationFrame(() => {
+      document.getElementById("threads")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (activeThreadId) {
+        document.getElementById(`thread-${activeThreadId}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
   }
 
   function openStep(stepId: string, isOpen: boolean) {
@@ -179,7 +248,13 @@ export default function LearnPage() {
       return;
     }
     setOpenStepId(stepId);
-    syncUrl(selectedTrackId, stepId);
+    const thread = activeThreadId ? findThread(activeThreadId) : undefined;
+    const bead = thread && activeBeadId ? findBead(thread, activeBeadId) : undefined;
+    const stillOnBead = Boolean(
+      bead && bead.stepId === stepId && bead.trackId === selectedTrackId,
+    );
+    if (!stillOnBead) clearThreadMode();
+    syncUrl(selectedTrackId, stepId, stillOnBead ? undefined : null);
     requestAnimationFrame(() => {
       stepRefs.current[stepId]?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -241,7 +316,13 @@ export default function LearnPage() {
         />
       </section>
 
-      <ThreadsConstellation progress={progress} hydrated={hydrated} onOpenStep={continueTo} />
+      <ThreadsConstellation
+        progress={progress}
+        hydrated={hydrated}
+        activeThreadId={activeThreadId}
+        activeBeadId={activeBeadId}
+        onOpenBead={openBead}
+      />
 
       <JourneyMandala
         trackById={trackById}
@@ -255,9 +336,19 @@ export default function LearnPage() {
 
       <section ref={pathSectionRef} className="manuscript-card relative mt-8 scroll-mt-24 overflow-hidden p-5 sm:p-7">
         <YantraBreath className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 opacity-[0.18] sm:h-80 sm:w-80" />
+        {activeThreadId && activeBeadId ? (
+          <ThreadContextBar
+            threadId={activeThreadId}
+            beadId={activeBeadId}
+            progress={progress}
+            onOpenBead={openBead}
+            onLeaveThread={leaveThread}
+            onBackToThread={backToThreadMap}
+          />
+        ) : null}
         <div className="relative flex flex-wrap items-start justify-between gap-4">
           <div className="max-w-3xl">
-            <p className="eyebrow">Current path</p>
+            <p className="eyebrow">{activeThreadId ? "Path gate · on thread" : "Current path"}</p>
             <h2 className="mt-3 text-4xl font-semibold leading-none text-amber-100 sm:text-5xl">{track.title}</h2>
             <p className="soft mt-3 text-lg leading-relaxed">{track.outcome}</p>
             <p className="mt-4 leading-relaxed text-stone-300">{track.arc}</p>
@@ -345,7 +436,13 @@ export default function LearnPage() {
             const supporting = (s.supportingPassageIds || [])
               .map((id) => resolveById(items, id))
               .filter((v): v is VerseItem => Boolean(v));
-            const backHref = learnHref(track.id, s.id);
+            const memberships = threadsForPathStep(track.id, s.id);
+            const backHref = learnHref({
+              trackId: track.id,
+              stepId: s.id,
+              threadId: activeThreadId,
+              beadId: activeBeadId,
+            });
             const readHref = item
               ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
               : `/read`;
@@ -414,6 +511,30 @@ export default function LearnPage() {
                       </span>
                     ) : null}
                   </button>
+
+                  {memberships.length > 0 ? (
+                    <div className="mt-3 flex flex-wrap items-center gap-2">
+                      <span className="font-sans text-[9px] uppercase tracking-[0.14em] text-stone-500">Also on</span>
+                      {memberships.map(({ thread, bead }) => {
+                        const onThis =
+                          activeThreadId === thread.id && activeBeadId === bead.id;
+                        return (
+                          <button
+                            key={`${thread.id}:${bead.id}`}
+                            type="button"
+                            onClick={() => openBead(thread.id, bead.id)}
+                            className={`rounded-full border px-2.5 py-1 font-sans text-[10px] uppercase tracking-[0.12em] transition ${
+                              onThis
+                                ? "border-amber-200/50 bg-amber-200/15 text-amber-100"
+                                : "border-white/12 text-amber-200/70 hover:border-amber-200/35 hover:text-amber-100"
+                            }`}
+                          >
+                            {thread.glyph} {thread.title}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ) : null}
 
                   {isOpen ? (
                     <div className="mt-4 space-y-4">

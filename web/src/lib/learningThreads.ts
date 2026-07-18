@@ -1,3 +1,5 @@
+import { LEARNING_TRACKS } from "./learningPaths";
+
 /** A thread is one theme traced across traditions — a horizontal cut through
  *  the vertical paths. Each bead links to an existing path step. */
 export type ThreadStepRef = {
@@ -212,3 +214,39 @@ export const LEARNING_THREADS: LearningThread[] = [
     ],
   },
 ];
+
+export function findThread(threadId: string): LearningThread | undefined {
+  return LEARNING_THREADS.find((t) => t.id === threadId);
+}
+
+export function findBead(thread: LearningThread, beadId: string): ThreadStepRef | undefined {
+  return thread.steps.find((s) => s.id === beadId);
+}
+
+export function beadIndex(thread: LearningThread, beadId: string): number {
+  return thread.steps.findIndex((s) => s.id === beadId);
+}
+
+/** Path step title for a bead destination (for denser bead labels). */
+export function pathStepTitleForBead(bead: ThreadStepRef): string | null {
+  const track = LEARNING_TRACKS.find((t) => t.id === bead.trackId);
+  return track?.steps.find((s) => s.id === bead.stepId)?.title ?? null;
+}
+
+export type ThreadMembership = {
+  thread: LearningThread;
+  bead: ThreadStepRef;
+};
+
+/** Which threads include this path gate — for reverse links on path steps. */
+export function threadsForPathStep(trackId: string, stepId: string): ThreadMembership[] {
+  const out: ThreadMembership[] = [];
+  for (const thread of LEARNING_THREADS) {
+    for (const bead of thread.steps) {
+      if (bead.trackId === trackId && bead.stepId === stepId) {
+        out.push({ thread, bead });
+      }
+    }
+  }
+  return out;
+}

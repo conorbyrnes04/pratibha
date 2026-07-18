@@ -4,11 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const LINKS: Array<{ href: string; label: string }> = [
+const LINKS: Array<{ href: string; label: string; match?: string }> = [
   { href: "/read", label: "Library" },
   { href: "/random", label: "Random" },
   { href: "/chat", label: "Study Chat" },
-  { href: "/learn", label: "Paths" },
+  { href: "/learn", label: "Paths", match: "/learn" },
+  { href: "/learn#threads", label: "Threads", match: "/learn#threads" },
   { href: "/journal", label: "Journal" },
   { href: "/sources", label: "Sources" },
 ];
@@ -22,8 +23,10 @@ export function SiteNav() {
     setOpen(false);
   }, [pathname]);
 
-  function isActive(href: string): boolean {
-    return pathname === href || pathname.startsWith(`${href}/`);
+  function isActive(href: string, match?: string): boolean {
+    if (match === "/learn#threads") return false; // hash-only jump; Paths owns /learn current
+    const path = match || href;
+    return pathname === path || pathname.startsWith(`${path}/`);
   }
 
   return (
@@ -33,8 +36,8 @@ export function SiteNav() {
           <Link
             key={link.href}
             href={link.href}
-            aria-current={isActive(link.href) ? "page" : undefined}
-            className={`nav-link ${isActive(link.href) ? "text-amber-100" : ""}`}
+            aria-current={isActive(link.href, link.match) ? "page" : undefined}
+            className={`nav-link ${isActive(link.href, link.match) ? "text-amber-100" : ""}`}
           >
             {link.label}
           </Link>
@@ -62,8 +65,8 @@ export function SiteNav() {
               <Link
                 key={link.href}
                 href={link.href}
-                aria-current={isActive(link.href) ? "page" : undefined}
-                className={`nav-link rounded-lg px-2 py-3 text-base ${isActive(link.href) ? "text-amber-100" : ""}`}
+                aria-current={isActive(link.href, link.match) ? "page" : undefined}
+                className={`nav-link rounded-lg px-2 py-3 text-base ${isActive(link.href, link.match) ? "text-amber-100" : ""}`}
               >
                 {link.label}
               </Link>

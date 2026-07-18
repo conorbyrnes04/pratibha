@@ -820,6 +820,14 @@ select:focus-visible {
   background: linear-gradient(90deg, rgb(240 201 121 / 0.08), rgb(240 201 121 / 0.35), rgb(240 201 121 / 0.08));
 }
 
+.thread-bead--active .thread-bead__orb {
+  transform: scale(1.06);
+}
+
+.thread-context-bar {
+  border-color: rgb(240 201 121 / 0.32);
+}
+
 .thread-card__glyph {
   animation: bindu-pulse 6s ease-in-out infinite;
 }

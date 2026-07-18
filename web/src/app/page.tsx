@@ -39,9 +39,9 @@ const gateways = [
   },
   {
     href: "/learn",
-    label: "Follow a Path",
-    title: "Curriculum",
-    copy: "Move through guided sequences from concept to embodiment.",
+    label: "Enter guided study",
+    title: "Paths & Threads",
+    copy: "Descend gate by gate — or trace one theme across traditions.",
     art: "bg-paths",
     glyph: GATEWAY_GLYPHS.curriculum,
   },
