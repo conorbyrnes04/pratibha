@@ -551,15 +551,23 @@ select:focus-visible {
 }
 
 .glyph--zoom {
+  position: relative;
   overflow: hidden;
 }
 
+/* Scale from the box center so crop-zoom stays optically centered
+   (the old top/left negative margin pulled marks up and left). */
 .glyph--zoom img {
-  width: 160%;
-  height: 160%;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   max-width: none;
-  margin: -30% 0 0 -30%;
+  margin: 0;
   object-fit: contain;
+  object-position: center;
+  transform: scale(1.55);
+  transform-origin: center center;
 }
 
 .glyph--xs { width: 1.15rem; height: 1.15rem; }
@@ -1025,8 +1033,8 @@ select:focus-visible {
 }
 
 .tome__glyph .glyph {
-  width: 72%;
-  height: 72%;
+  width: 78%;
+  height: 78%;
 }
 
 .tome__body {
