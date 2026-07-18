@@ -52,7 +52,15 @@ export default function RootLayout({
                 Living Manuscript
               </span>
             </Link>
-            <SiteNav />
+            <div className="flex items-center gap-5">
+              <a
+                href="https://agniagama.com"
+                className="hidden font-sans text-xs uppercase tracking-[0.18em] text-stone-400 transition hover:text-amber-200 sm:inline"
+              >
+                Agni Agama
+              </a>
+              <SiteNav />
+            </div>
           </nav>
         </header>
         {children}
