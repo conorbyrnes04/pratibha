@@ -81,11 +81,11 @@ export const LEARNING_THREADS: LearningThread[] = [
       },
       {
         id: "light-yh",
-        tradition: "Yoginīhṛdaya",
+        tradition: "Māṇḍūkya / Trika return",
         insight: "Re-find the whole diagram in the body; climb to the partless summit.",
         trackId: "descent-of-the-cakra",
         stepId: "yh-interiorize",
-        passageId: "yoginihrdaya.yh_011",
+        passageId: "mandukya_upanishad_and_gaudapada_karika.muk_001",
       },
       {
         id: "light-ss",
@@ -110,9 +110,8 @@ export const LEARNING_THREADS: LearningThread[] = [
         insight: "The One overflows; Intellect turns back and beholds its source.",
         trackId: "the-one-and-the-many",
         stepId: "om-overflow",
-        passageId: "plotinus_enneads.enn_v_2_01",
-      },
-      {
+        passageId: "plotinus_enneads.enn_v_1_06",
+      },      {
         id: "er-phr",
         tradition: "Pratyabhijñāhṛdayam",
         insight: "She unfolds the universe on her own canvas, by free will.",

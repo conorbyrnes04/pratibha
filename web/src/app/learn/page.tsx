@@ -283,10 +283,11 @@ export default function LearnPage() {
             const backHref = learnHref(track.id, s.id);
             const readHref = item
               ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
-              : `/read${s.theme ? `?theme=${encodeURIComponent(s.theme)}` : ""}`;
+              : `/read`;
             const chatHref = item
               ? `/chat?verse_id=${encodeURIComponent(item._id)}&mode=${encodeURIComponent(s.chatMode || "question")}&q=${encodeURIComponent(s.chatPrompt)}`
               : `/chat?q=${encodeURIComponent(s.chatPrompt)}`;
+            const openLabel = item ? "Open in Library" : "Browse Library";
             return (
               <article
                 key={s.id}
@@ -371,7 +372,16 @@ export default function LearnPage() {
                           {item ? (
                             <PassageLink item={item} primary backHref={backHref} />
                           ) : (
-                            <p className="soft text-sm">Passage will appear once the library loads.</p>
+                            <p className="rounded-2xl border border-rose-300/25 bg-rose-300/5 p-3 font-sans text-sm text-stone-200">
+                              Primary passage missing from the Library
+                              {s.passageId ? (
+                                <>
+                                  {" "}
+                                  (<code className="text-rose-100/90">{s.passageId}</code>)
+                                </>
+                              ) : null}
+                              . Supporting texts below may still be available; the path pin needs a corpus fix.
+                            </p>
                           )}
                           {supporting.map((sv) => (
                             <PassageLink key={sv._id} item={sv} backHref={backHref} />
@@ -403,7 +413,7 @@ export default function LearnPage() {
 
                       <div className="flex flex-wrap gap-2 pt-1">
                         <Link href={readHref} className="btn-primary px-4 py-2 text-sm">
-                          Read passage
+                          {openLabel}
                         </Link>
                         <Link href={chatHref} className="btn-secondary px-4 py-2 text-sm">
                           {actionLabel(s.chatMode)}
