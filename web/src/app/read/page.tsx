@@ -12,7 +12,7 @@ import { buildCollectionOptions, filterPassages, topThemes, uniqueCollections } 
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
 import { collectionGlyph, unitGlyph } from "@/lib/glyphs";
-import { buildLibraryTomes, groupTomesByTradition } from "@/lib/libraryTomes";
+import { buildLibraryTomes, groupTomesByTradition, sortTomes, LIBRARY_SORT_OPTIONS, type LibrarySort, type LibraryTome } from "@/lib/libraryTomes";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
 import { displayPassageTitle, patanjaliSutraRef, sortPassagesForLibrary } from "@/lib/passageTitles";
@@ -22,6 +22,27 @@ function reflectionPrompt(item: VerseItem): string {
   const t = (item.themes || [])[0];
   if (t) return `Where do you notice "${t}" in direct experience today?`;
   return "What one shift in seeing does this passage invite right now?";
+}
+
+function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
+  return (
+    <button type="button" onClick={onOpen} className="tome">
+      <span className="tome__glyph" aria-hidden>
+        <Glyph name={tome.glyph} size="xl" zoom />
+      </span>
+      <span className="tome__body">
+        <span className="tome__title">{tome.displayName}</span>
+        <span className="tome__meta">
+          {tome.count} {tome.count === 1 ? "passage" : "passages"}
+          {tome.themes.length > 0 ? ` · ${tome.themes.slice(0, 2).join(" · ")}` : ""}
+        </span>
+      </span>
+      <span className="tome__foot">
+        <span className="tome__tradition">{tome.tradition}</span>
+        <span className="tome__authored">{tome.authored}</span>
+      </span>
+    </button>
+  );
 }
 
 function LibraryPageContent() {
@@ -34,6 +55,7 @@ function LibraryPageContent() {
   const [theme, setTheme] = useState(searchParams.get("theme") || "all");
   const [learningMode, setLearningMode] = useState(true);
   const [includeDrafts, setIncludeDrafts] = useState(false);
+  const [librarySort, setLibrarySort] = useState<LibrarySort>("title");
 
   useEffect(() => {
     setLoadError("");
@@ -59,19 +81,24 @@ function LibraryPageContent() {
   const collectionOptions = useMemo(() => buildCollectionOptions(items, collections), [collections, items]);
   const themeConstellation = useMemo(() => topThemes(items, 16), [items]);
 
-  const tomes = useMemo(() => buildLibraryTomes(items), [items]);
-  const shelves = useMemo(() => {
-    const filtered =
+  const tomes = useMemo(() => {
+    const all = buildLibraryTomes(items);
+    const themed =
       theme === "all"
-        ? tomes
-        : tomes.filter((tome) => {
-            return items.some(
+        ? all
+        : all.filter((tome) =>
+            items.some(
               (item) =>
                 (item.collection || "").trim() === tome.collection && (item.themes || []).includes(theme),
-            );
-          });
-    return groupTomesByTradition(filtered);
-  }, [tomes, theme, items]);
+            ),
+          );
+    return sortTomes(themed, librarySort);
+  }, [items, theme, librarySort]);
+
+  const shelves = useMemo(
+    () => (librarySort === "tradition" ? groupTomesByTradition(tomes) : null),
+    [tomes, librarySort],
+  );
 
   const filtered = useMemo(
     () =>
@@ -169,13 +196,22 @@ function LibraryPageContent() {
             options={collectionOptions}
           />
         ) : (
-          <div className="flex items-end">
-            <p className="soft pb-3 font-sans text-sm">
-              {tomes.length} texts · {items.length} passages
-            </p>
-          </div>
+          <FilterSelect
+            label="Sort"
+            tone="gold"
+            value={librarySort}
+            onChange={(next) => setLibrarySort(next as LibrarySort)}
+            options={LIBRARY_SORT_OPTIONS}
+          />
         )}
       </div>
+
+      {showShelf ? (
+        <p className="soft mt-3 font-sans text-sm">
+          {tomes.length} texts · {items.length} passages
+          {librarySort === "author" ? " · sorted by author" : librarySort === "tradition" ? " · grouped by tradition" : " · sorted by title"}
+        </p>
+      ) : null}
 
       <div className="mt-5">
         <ThemeConstellation
@@ -214,40 +250,30 @@ function LibraryPageContent() {
 
       {showShelf ? (
         <div className="mt-8 space-y-10">
-          {shelves.map((shelf) => (
-            <section key={shelf.tradition}>
-              <div className="mb-4 flex items-baseline justify-between gap-3">
-                <h2 className="layer-heading text-amber-100/90">{shelf.tradition}</h2>
-                <p className="soft font-sans text-xs">
-                  {shelf.tomes.length} {shelf.tomes.length === 1 ? "text" : "texts"}
-                </p>
-              </div>
-              <div className="tome-shelf">
-                {shelf.tomes.map((tome) => (
-                  <button
-                    key={tome.collection}
-                    type="button"
-                    onClick={() => openTome(tome.collection)}
-                    className="tome"
-                  >
-                    <span className="tome__glyph" aria-hidden>
-                      <Glyph name={tome.glyph} size="xl" zoom />
-                    </span>
-                    <span className="tome__body">
-                      <span className="tome__title">{tome.displayName}</span>
-                      <span className="tome__meta">
-                        {tome.count} {tome.count === 1 ? "passage" : "passages"}
-                      </span>
-                      {tome.themes.length > 0 ? (
-                        <span className="tome__themes">{tome.themes.join(" · ")}</span>
-                      ) : null}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </section>
-          ))}
-          {shelves.length === 0 ? (
+          {shelves ? (
+            shelves.map((shelf) => (
+              <section key={shelf.tradition}>
+                <div className="mb-4 flex items-baseline justify-between gap-3">
+                  <h2 className="layer-heading text-amber-100/90">{shelf.tradition}</h2>
+                  <p className="soft font-sans text-xs">
+                    {shelf.tomes.length} {shelf.tomes.length === 1 ? "text" : "texts"}
+                  </p>
+                </div>
+                <div className="tome-shelf">
+                  {shelf.tomes.map((tome) => (
+                    <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
+                  ))}
+                </div>
+              </section>
+            ))
+          ) : (
+            <div className="tome-shelf">
+              {tomes.map((tome) => (
+                <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
+              ))}
+            </div>
+          )}
+          {tomes.length === 0 ? (
             <p className="soft mt-6">No texts match this theme yet. Clear the theme filter to see the full shelf.</p>
           ) : null}
         </div>

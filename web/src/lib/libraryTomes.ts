@@ -3,16 +3,25 @@ import { displayCollectionName } from "./collectionLabels";
 import { countForCollection, preferStudyUnits } from "./corpusFilters";
 import type { VerseItem } from "./types";
 
+export type LibrarySort = "title" | "author" | "tradition";
+
 export type LibraryTome = {
   collection: string;
   displayName: string;
+  /** Tradition family (Vedānta, Kashmir Śaiva, …) — shown on the card. */
   tradition: string;
+  /** Attributed author / school for sorting and display. */
+  author: string;
+  /** Human-readable estimated authorship date. */
+  authored: string;
+  /** Approximate midpoint year for optional chronology (negative = BCE). */
+  eraYear: number;
   count: number;
   glyph: GlyphSlug;
   themes: string[];
 };
 
-/** Shelf sections — order is intentional (East → West → bridges). */
+/** Shelf sections when sorting by tradition. */
 const TRADITION_ORDER = [
   "Vedānta",
   "Yoga",
@@ -29,18 +38,63 @@ export type TraditionShelf = {
   tomes: LibraryTome[];
 };
 
-function traditionOf(collection: string): string {
-  const c = collection.toLowerCase();
-  if (/astavakra|ashtavakra|bhagavad|upanishad|upaniṣad|chandogya|isavasya|svetasvatara|mandukya/.test(c)) {
-    return "Vedānta";
+type TomeMeta = {
+  pattern: RegExp;
+  tradition: string;
+  author: string;
+  authored: string;
+  eraYear: number;
+};
+
+/**
+ * Scholarly-range estimates for the Library shelf footer.
+ * Dates are approximate; prefer broad centuries over false precision.
+ */
+const TOME_META: TomeMeta[] = [
+  { pattern: /astavakra|ashtavakra|a[sṣ][tṭ][aā]vakra/i, tradition: "Vedānta", author: "Aṣṭāvakra (attrib.)", authored: "c. early CE (uncertain)", eraYear: 200 },
+  { pattern: /bhagavad/i, tradition: "Vedānta", author: "Vyāsa (trad.)", authored: "c. 2nd c. BCE – 2nd c. CE", eraYear: -50 },
+  { pattern: /chandogya|chāndogya|khandogya/i, tradition: "Vedānta", author: "Vedic / Upaniṣadic", authored: "c. 8th–6th c. BCE", eraYear: -700 },
+  { pattern: /isavasya|īśāvāsya|isha.?upani|isa.?upani/i, tradition: "Vedānta", author: "Vedic / Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -400 },
+  { pattern: /svetasvatara|śvetāśvatara/i, tradition: "Vedānta", author: "Vedic / Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -350 },
+  { pattern: /mandukya|māṇḍūkya|gaudapada|gauḍapāda/i, tradition: "Vedānta", author: "Gauḍapāda", authored: "c. 5th–6th c. CE", eraYear: 500 },
+  { pattern: /patanjali|patañjali|yoga.?s[uū]tra/i, tradition: "Yoga", author: "Patañjali", authored: "c. 2nd–4th c. CE", eraYear: 300 },
+  { pattern: /vijnana.?bhairava|vijñāna.?bhairava/i, tradition: "Kashmir Śaiva", author: "Kashmir Śaiva (anon.)", authored: "c. 8th–9th c. CE", eraYear: 850 },
+  { pattern: /spanda/i, tradition: "Kashmir Śaiva", author: "Vasugupta / Kallaṭa", authored: "c. 9th c. CE", eraYear: 875 },
+  { pattern: /siva.?s[uū]tra|śiva.?s[uū]tra|shiva.?sutra/i, tradition: "Kashmir Śaiva", author: "Vasugupta", authored: "c. 9th c. CE", eraYear: 850 },
+  { pattern: /pratyabhij/i, tradition: "Kashmir Śaiva", author: "Kṣemarāja", authored: "c. 11th c. CE", eraYear: 1020 },
+  { pattern: /tantras[aā]ra|abhinavagupta/i, tradition: "Kashmir Śaiva", author: "Abhinavagupta", authored: "c. 1000 CE", eraYear: 1000 },
+  { pattern: /heart.?s[uū]tra|prajnaparamita|prajñāpāramitā/i, tradition: "Buddhist", author: "Prajñāpāramitā (attrib.)", authored: "c. 1st–7th c. CE", eraYear: 350 },
+  { pattern: /nagarjuna|madhyamaka|mulamadhyamakakarika|mmk/i, tradition: "Buddhist", author: "Nāgārjuna", authored: "c. 2nd–3rd c. CE", eraYear: 200 },
+  { pattern: /shantideva|śāntideva|bodhicary/i, tradition: "Buddhist", author: "Śāntideva", authored: "c. 8th c. CE", eraYear: 750 },
+  { pattern: /milarepa|jetsun/i, tradition: "Buddhist", author: "Milarepa", authored: "c. 11th–12th c. CE", eraYear: 1100 },
+  { pattern: /tilopa|maha.?mudra/i, tradition: "Buddhist", author: "Tilopa", authored: "c. 10th–11th c. CE", eraYear: 1000 },
+  { pattern: /dogen|dōgen|shobogenzo|shōbōgenzō/i, tradition: "Buddhist", author: "Dōgen", authored: "c. 13th c. CE", eraYear: 1240 },
+  { pattern: /tao.?te.?ching|dao.?de.?jing|laozi|lao.?tzu/i, tradition: "Daoist", author: "Laozi (trad.)", authored: "c. 4th–3rd c. BCE", eraYear: -350 },
+  { pattern: /zhuang|chuang/i, tradition: "Daoist", author: "Zhuangzi", authored: "c. 4th–3rd c. BCE", eraYear: -320 },
+  { pattern: /heraclitus/i, tradition: "Greek", author: "Heraclitus", authored: "c. 500 BCE", eraYear: -500 },
+  { pattern: /epictetus|enchiridion/i, tradition: "Greek", author: "Epictetus", authored: "c. 50–135 CE", eraYear: 100 },
+  { pattern: /phaedo|plato/i, tradition: "Greek", author: "Plato", authored: "c. 360 BCE", eraYear: -360 },
+  { pattern: /plotinus|ennead/i, tradition: "Greek", author: "Plotinus", authored: "c. 270 CE", eraYear: 270 },
+  { pattern: /ibn|arabi|balyani|know yourself/i, tradition: "Sufi", author: "Balyānī / Ibn ʿArabī trad.", authored: "c. 13th–14th c. CE", eraYear: 1300 },
+];
+
+function metaFor(collection: string): Omit<TomeMeta, "pattern"> {
+  for (const row of TOME_META) {
+    if (row.pattern.test(collection)) {
+      return {
+        tradition: row.tradition,
+        author: row.author,
+        authored: row.authored,
+        eraYear: row.eraYear,
+      };
+    }
   }
-  if (/patanjali|patañjali|yoga.?s[uū]tra/.test(c)) return "Yoga";
-  if (/vijnana|bhairava|siva|śiva|shiva|spanda|pratyabhij|tantras[aā]ra/.test(c)) return "Kashmir Śaiva";
-  if (/nagarjuna|heart|shantideva|milarepa|tilopa|maha.?mudra|dogen/.test(c)) return "Buddhist";
-  if (/tao|te.?ching|zhuang|chuang|lao/.test(c)) return "Daoist";
-  if (/heraclitus|epictetus|plotinus|phaedo|plato|ennead/.test(c)) return "Greek";
-  if (/ibn|arabi|balyani|know yourself/.test(c)) return "Sufi";
-  return "Other";
+  return {
+    tradition: "Other",
+    author: "Unknown",
+    authored: "date uncertain",
+    eraYear: 0,
+  };
 }
 
 /** Build clickable tomes from loaded verses, one per collection. */
@@ -70,20 +124,45 @@ export function buildLibraryTomes(items: VerseItem[]): LibraryTome[] {
       .slice(0, 3)
       .map(([t]) => t);
 
+    const meta = metaFor(collection);
     tomes.push({
       collection,
       displayName: displayCollectionName(collection),
-      tradition: traditionOf(collection),
+      tradition: meta.tradition,
+      author: meta.author,
+      authored: meta.authored,
+      eraYear: meta.eraYear,
       count: countForCollection(items, collection),
       glyph: collectionGlyph(collection),
       themes,
     });
   }
 
-  return tomes.sort((a, b) => a.displayName.localeCompare(b.displayName));
+  return sortTomes(tomes, "title");
 }
 
-/** Group tomes into tradition shelves for the Library landing. */
+export function sortTomes(tomes: LibraryTome[], sort: LibrarySort): LibraryTome[] {
+  const copy = [...tomes];
+  if (sort === "author") {
+    return copy.sort(
+      (a, b) => a.author.localeCompare(b.author) || a.displayName.localeCompare(b.displayName),
+    );
+  }
+  if (sort === "tradition") {
+    const rank = (t: string) => {
+      const i = (TRADITION_ORDER as readonly string[]).indexOf(t);
+      return i === -1 ? 99 : i;
+    };
+    return copy.sort(
+      (a, b) =>
+        rank(a.tradition) - rank(b.tradition) ||
+        a.displayName.localeCompare(b.displayName),
+    );
+  }
+  return copy.sort((a, b) => a.displayName.localeCompare(b.displayName));
+}
+
+/** Group tomes into tradition shelves (used when Sort = Tradition). */
 export function groupTomesByTradition(tomes: LibraryTome[]): TraditionShelf[] {
   const buckets = new Map<string, LibraryTome[]>();
   for (const tome of tomes) {
@@ -96,3 +175,9 @@ export function groupTomesByTradition(tomes: LibraryTome[]): TraditionShelf[] {
     tomes: (buckets.get(tradition) || []).sort((a, b) => a.displayName.localeCompare(b.displayName)),
   }));
 }
+
+export const LIBRARY_SORT_OPTIONS: Array<{ value: LibrarySort; label: string; hint: string }> = [
+  { value: "title", label: "Title", hint: "A–Z by text name" },
+  { value: "author", label: "Author", hint: "A–Z by attributed author" },
+  { value: "tradition", label: "Tradition", hint: "Grouped by lineage" },
+];
