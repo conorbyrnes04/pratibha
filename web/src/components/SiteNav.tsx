@@ -28,7 +28,7 @@ export function SiteNav() {
 
   return (
     <>
-      <div className="hidden items-center gap-5 text-sm sm:flex">
+      <div className="hidden items-center gap-5 text-base sm:flex">
         {LINKS.map((link) => (
           <Link
             key={link.href}

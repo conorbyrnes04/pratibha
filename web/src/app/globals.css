@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,9 +10,9 @@
   --surface: #171421;
   --surface-soft: #211a2a;
   --surface-gold: #2a211c;
-  --foreground: #f3ead8;
-  --muted: #b9ad98;
-  --muted-2: #897d6c;
+  --foreground: #f6efe4;
+  --muted: #d2c6b2;
+  --muted-2: #a89882;
   --accent: #d8a84a;
   --accent-bright: #f0c979;
   --vermillion: #b85b3d;
@@ -26,6 +26,9 @@
 
 html {
   background: var(--background);
+  /* Serif faces read smaller than sans at the same px — bump the root so
+     rem-based UI type (and Tailwind text-sm/xs) stays readable on phones. */
+  font-size: 112.5%; /* 18px when the browser default is 16px */
 }
 
 body {
@@ -36,7 +39,9 @@ body {
     radial-gradient(circle at 84% 0%, rgb(50 72 103 / 0.26), transparent 30rem),
     linear-gradient(135deg, #07070d 0%, #11101a 46%, #17101a 100%);
   font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  letter-spacing: 0.005em;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
 }
 
 body::before {
@@ -74,6 +79,7 @@ button {
   position: relative;
   color: var(--muted);
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.05rem;
   letter-spacing: 0.04em;
   transition: color 0.2s ease;
 }
@@ -122,9 +128,9 @@ button {
 .eyebrow {
   color: var(--accent-bright);
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
@@ -446,7 +452,7 @@ button {
   padding: 0.45rem 0.9rem;
   color: rgb(196 210 230);
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   letter-spacing: 0.04em;
   background:
     linear-gradient(135deg, rgb(50 72 103 / 0.16), transparent 58%),
@@ -470,7 +476,7 @@ button {
 
 .theme-constellation__count {
   color: var(--muted-2);
-  font-size: 0.62rem;
+  font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -498,14 +504,24 @@ select:focus-visible {
 .layer-heading {
   color: var(--accent-bright);
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
+/* Actual Devanagari (or other Indic) source text. */
 .source-script {
   font-family: "Noto Serif Devanagari", "Cormorant Garamond", serif;
+}
+
+/* Romanized / IAST source text. Noto Serif has complete Latin Extended
+   Additional coverage (ā ī ū ṛ ṝ ḥ ṃ ṅ ñ ṭ ḍ ṇ ś ṣ ...) so diacritics render
+   on a single consistent baseline instead of falling back glyph-by-glyph. */
+.source-script--latin {
+  font-family: "Noto Serif", "Gentium Plus", "Charis SIL", Georgia, serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  letter-spacing: 0.005em;
 }
 
 .ornament {
@@ -514,14 +530,16 @@ select:focus-visible {
 }
 
 .chat-markdown h2 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.4rem;
+  margin-top: 0.85rem;
+  margin-bottom: 0.45rem;
   color: var(--accent-bright);
-  font-size: 1.05rem;
+  font-size: 1.28rem;
 }
 
 .chat-markdown p {
-  margin: 0.45rem 0;
+  margin: 0.55rem 0;
+  font-size: 1.2rem;
+  line-height: 1.75;
 }
 
 .chat-markdown ul,
@@ -530,7 +548,9 @@ select:focus-visible {
 }
 
 .chat-markdown li {
-  margin: 0.2rem 0;
+  margin: 0.28rem 0;
+  font-size: 1.15rem;
+  line-height: 1.7;
 }
 
 .chat-markdown strong {
@@ -545,8 +565,8 @@ select:focus-visible {
 }
 
 .reading-prose {
-  font-size: 1.16rem;
-  line-height: 1.82;
+  font-size: 1.38rem;
+  line-height: 1.85;
 }
 
 .reading-prose p + p {

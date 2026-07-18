@@ -48,7 +48,7 @@ export default function RootLayout({
           <nav className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
             <Link href="/" className="group leading-none">
               <span className="block text-2xl font-semibold tracking-[-0.04em] text-amber-100">Pratibha</span>
-              <span className="mt-1 block font-sans text-[10px] uppercase tracking-[0.28em] text-stone-400 group-hover:text-amber-200">
+              <span className="mt-1 block font-sans text-xs uppercase tracking-[0.22em] text-stone-300 group-hover:text-amber-200">
                 Living Manuscript
               </span>
             </Link>

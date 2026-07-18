@@ -3,16 +3,17 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
-import { getVerse, getVerses } from "@/lib/api";
+import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { stripMarkdown } from "@/lib/textPreview";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, collectionImageSrc } from "@/lib/collectionImages";
 import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
-import { displayPassageTitle, passageSortKey } from "@/lib/passageTitles";
+import { displayPassageTitle } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
 import { JournalPanel } from "@/components/JournalPanel";
-import { getStudyLayers, getAppendixLayers, getAnchorChapter, layerText, maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
+import { getStudyLayers, getAppendixLayers, getAnchorChapter, getResonances, layerText, maturityLabel, passagePreview, practiceText } from "@/lib/verseLayers";
+import { relatedPassages } from "@/lib/relatedPassages";
 
 function practiceFallback(item: VerseItem): string {
   if ((item.themes || []).includes("witness")) {
@@ -57,6 +58,7 @@ export default function VerseDetailPage() {
   const params = useParams<{ id: string }>();
   const [item, setItem] = useState<VerseItem | null>(null);
   const [allItems, setAllItems] = useState<VerseItem[]>([]);
+  const [semanticRelated, setSemanticRelated] = useState<VerseItem[] | null>(null);
   const [learningMode, setLearningMode] = useState(true);
   const [showOriginal, setShowOriginal] = useState(true);
   const [compact, setCompact] = useState(false);
@@ -81,25 +83,32 @@ export default function VerseDetailPage() {
   useEffect(() => {
     getVerses("strong_draft").then(setAllItems).catch(() => setAllItems([]));
   }, []);
+  useEffect(() => {
+    let cancelled = false;
+    setSemanticRelated(null);
+    getRelatedVerses(id, 6)
+      .then((items) => {
+        if (!cancelled) setSemanticRelated(items);
+      })
+      .catch(() => {
+        if (!cancelled) setSemanticRelated([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [id]);
 
-  const related = useMemo(() => {
+  const themeRelated = useMemo(() => {
     if (!item) return [] as VerseItem[];
-    const mineThemes = new Set(item.themes || []);
-    const out = allItems.filter((v) => {
-      if (v._id === item._id) return false;
-      if (v.editorial_maturity === "needs_rewrite" || v.editorial_maturity === "structural_draft") return false;
-      const sameCollection = (v.collection || "") === (item.collection || "");
-      const overlap = (v.themes || []).some((t) => mineThemes.has(t));
-      return sameCollection || overlap;
-    });
-    out.sort((a, b) => {
-      const aSame = (a.collection || "") === (item.collection || "") ? 1 : 0;
-      const bSame = (b.collection || "") === (item.collection || "") ? 1 : 0;
-      if (bSame !== aSame) return bSame - aSame;
-      return passageSortKey(a) - passageSortKey(b);
-    });
-    return out.slice(0, 6);
+    return relatedPassages(item, allItems, 6);
   }, [allItems, item]);
+
+  // Prefer semantic neighbours from pgvector; fall back to theme overlap when
+  // RAG is offline or the unit isn't indexed yet.
+  const related = semanticRelated && semanticRelated.length > 0 ? semanticRelated : themeRelated;
+  const relatedMode = semanticRelated && semanticRelated.length > 0 ? "semantic" : "themes";
+
+  const resonances = useMemo(() => (item ? getResonances(item) : []), [item]);
 
   if (loading) {
     return <main className="page-shell soft">Opening the manuscript...</main>;
@@ -266,25 +275,63 @@ export default function VerseDetailPage() {
 
         <aside className="card h-fit p-4">
           <h2 className="text-2xl text-amber-100">Related ideas</h2>
-          <p className="soft mt-1 text-sm">Follow concept links across texts.</p>
+          <p className="soft mt-1 text-sm">
+            {relatedMode === "semantic"
+              ? "Nearest teachings in meaning — across the corpus."
+              : "The same insight echoing across traditions."}
+          </p>
           <p className="mt-3 rounded-full border border-amber-200/20 px-3 py-1 font-sans text-xs text-amber-100">
             {maturityLabel(item.editorial_maturity)}
           </p>
-          <div className="mt-3 space-y-3">
-            {related.length === 0 ? (
-              <p className="soft text-sm">No related passages yet.</p>
-            ) : (
-              related.map((r) => (
-                <Link key={r._id} href={`/read/${encodeURIComponent(r._id)}`} className="citation-card block p-3 hover:border-amber-300/30">
-                  <p className="text-sm text-amber-100">{displayPassageTitle(r)}</p>
-                  <p className="soft mt-1 text-xs">
-                    {displayCollectionName(r.collection)} {r.section ? `• ${r.section}` : ""}
-                  </p>
-                  <p className="soft mt-1 line-clamp-2 text-xs">{passagePreview(r)}</p>
-                </Link>
-              ))
-            )}
+
+          {resonances.length > 0 ? (
+            <div className="mt-4">
+              <p className="layer-heading">Cross-tradition resonances</p>
+              <div className="mt-2 space-y-3">
+                {resonances.map((r, idx) => (
+                  <article key={`${r.citation}-${idx}`} className="citation-card p-3">
+                    <p className="text-sm text-amber-100">{r.citation}</p>
+                    <p className="soft mt-1 text-xs leading-relaxed">{r.resonance}</p>
+                    {r.divergence ? (
+                      <p className="mt-2 text-xs leading-relaxed text-stone-300">
+                        <span className="text-amber-100">Divergence:</span> {r.divergence}
+                      </p>
+                    ) : null}
+                  </article>
+                ))}
+              </div>
+            </div>
+          ) : null}
+
+          <div className="mt-4">
+            <p className="layer-heading">Passages to explore</p>
+            <div className="mt-2 space-y-3">
+              {related.length === 0 ? (
+                <p className="soft text-sm">No related passages yet.</p>
+              ) : (
+                related.map((r) => {
+                  const crossTradition = (r.collection || "") !== (item.collection || "");
+                  return (
+                    <Link key={r._id} href={`/read/${encodeURIComponent(r._id)}`} className="citation-card block p-3 hover:border-amber-300/30">
+                      <div className="flex items-start justify-between gap-2">
+                        <p className="text-sm text-amber-100">{displayPassageTitle(r)}</p>
+                        {crossTradition ? (
+                          <span className="shrink-0 rounded-full border border-amber-200/25 px-2 py-0.5 font-sans text-[10px] uppercase tracking-wide text-amber-200/80">
+                            Cross-tradition
+                          </span>
+                        ) : null}
+                      </div>
+                      <p className="soft mt-1 text-xs">
+                        {displayCollectionName(r.collection)} {r.section ? `• ${r.section}` : ""}
+                      </p>
+                      <p className="soft mt-1 line-clamp-2 text-xs">{passagePreview(r)}</p>
+                    </Link>
+                  );
+                })
+              )}
+            </div>
           </div>
+
           {nextStep ? (
             <div className="practice-card mt-4 p-3">
               <p className="layer-heading">Next natural step</p>

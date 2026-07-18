@@ -1,4 +1,4 @@
-import type { PratibhaLayer, PratibhaLayerKind, VerseItem } from "@/lib/types";
+import type { PratibhaLayer, PratibhaLayerKind, Resonance, VerseItem } from "@/lib/types";
 import { firstSentence, stripMarkdown } from "@/lib/textPreview";
 import { humanizeTtcRefs, isTaoTeChing } from "@/lib/ttcRefs";
 import { passageUsesIast } from "@/lib/sanskritScript";
@@ -131,6 +131,16 @@ export function getLayer(item: VerseItem, kind: PratibhaLayerKind): PratibhaLaye
 
 export function layerText(item: VerseItem, kind: PratibhaLayerKind): string {
   return maybeHumanize(item, getLayer(item, kind)?.body);
+}
+
+/** Hand-authored cross-tradition resonances (the truest "related ideas"). */
+export function getResonances(item: VerseItem): Resonance[] {
+  const resonanceLayer = getVerseLayers(item).find((entry) => entry.kind === "resonances");
+  const items = Array.isArray(resonanceLayer?.items) ? resonanceLayer!.items : [];
+  return items.filter(
+    (entry): entry is Resonance =>
+      Boolean(entry && typeof entry === "object" && "citation" in entry && "resonance" in entry),
+  );
 }
 
 export function passagePreview(item: VerseItem): string {

@@ -1,6 +1,16 @@
 import type { KeyTerm, PratibhaLayer, Resonance } from "@/lib/types";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { containsDevanagari } from "@/lib/sanskritScript";
+
+/**
+ * Pick the font treatment for an "Original" layer. Devanagari (or any Indic
+ * script) gets the Devanagari serif; romanized/IAST text gets a Latin serif
+ * with full diacritic coverage so it doesn't render glyph-by-glyph.
+ */
+function originalScriptClass(body?: string): string {
+  return containsDevanagari(body) ? "source-script" : "source-script source-script--latin";
+}
 
 function isKeyTerm(item: unknown): item is KeyTerm {
   return Boolean(item && typeof item === "object" && "term" in item && "definition" in item);
@@ -40,7 +50,7 @@ export function LayerBlock({
           </summary>
           <div
             className={`chat-markdown mt-4 ${
-              isOriginal ? "source-script whitespace-pre-wrap text-2xl leading-relaxed text-stone-100" : compact ? "text-sm leading-relaxed" : "reading-prose"
+              isOriginal ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100` : compact ? "text-sm leading-relaxed" : "reading-prose"
             }`}
           >
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{layer.body || ""}</ReactMarkdown>
@@ -99,7 +109,7 @@ function renderLayerBody(
   return (
     <div
       className={`chat-markdown mt-4 ${
-        isOriginal ? "source-script whitespace-pre-wrap text-2xl leading-relaxed text-stone-100" : compact ? "text-sm leading-relaxed" : "reading-prose"
+        isOriginal ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100` : compact ? "text-sm leading-relaxed" : "reading-prose"
       }`}
     >
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{layer.body || ""}</ReactMarkdown>

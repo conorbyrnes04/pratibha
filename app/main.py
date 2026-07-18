@@ -22,7 +22,7 @@ from .chat_voice import (
 from .voice_examples import is_death_topic, select_few_shots
 from .config import settings
 from .llm import smart_chat, smart_chat_stream
-from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, detected_collections
+from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, retrieve_related_unit_ids, detected_collections
 from .data_loader import (
     LOAD_STATS,
     _humanize_collection,
@@ -121,11 +121,34 @@ async def get_verse(sid: str):
         raise HTTPException(404, "Not found")
     return v
 
+
+@app.get("/verse/{sid}/related")
+async def related_verses(sid: str, limit: int = 6):
+    """Semantic neighbours for the Related Ideas panel (pgvector + diversity)."""
+    verse = get_verse_by_id(sid)
+    if verse is None:
+        raise HTTPException(404, "Not found")
+    cap = max(1, min(limit, 12))
+    hits = await retrieve_related_unit_ids(str(verse.get("_id") or sid), limit=cap, per_collection=2)
+    items: list[dict[str, Any]] = []
+    for uid, score, _collection in hits:
+        neighbour = get_verse_by_id(uid)
+        if neighbour is None:
+            continue
+        # Skip raw drafts so we never send a reader to unfinished work.
+        maturity = normalize_maturity(neighbour.get("editorial_maturity"))
+        if maturity in {"needs_rewrite", "structural_draft"}:
+            continue
+        items.append({**neighbour, "related_score": round(score, 4)})
+        if len(items) >= cap:
+            break
+    return {"items": items, "mode": "semantic" if items else "empty"}
+
+
 @app.get("/daily")
 async def daily(min_maturity: str | None = "publishable"):
     v = pick_daily(min_maturity=_valid_maturity(min_maturity))
     return v or {}
-
 
 @app.get("/random")
 async def random_verse(collection: str | None = None, min_maturity: str | None = "strong_draft"):

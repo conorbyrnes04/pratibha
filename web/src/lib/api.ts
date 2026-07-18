@@ -27,6 +27,17 @@ export async function getVerse(id: string): Promise<VerseItem | null> {
   return (await res.json()) as VerseItem;
 }
 
+/** Semantic neighbours from pgvector; empty array when RAG is off / unavailable. */
+export async function getRelatedVerses(id: string, limit = 6): Promise<VerseItem[]> {
+  const res = await fetch(
+    `${API_BASE}/verse/${encodeURIComponent(id)}/related?limit=${limit}`,
+    { cache: "no-store" },
+  );
+  if (!res.ok) return [];
+  const data = await res.json();
+  return Array.isArray(data?.items) ? (data.items as VerseItem[]) : [];
+}
+
 export async function getDaily(minMaturity: EditorialMaturity | "all" = "strong_draft"): Promise<VerseItem | null> {
   const res = await fetch(withMaturity("/daily", minMaturity), { cache: "no-store" });
   if (!res.ok) return null;

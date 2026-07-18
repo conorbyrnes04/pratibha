@@ -757,6 +757,113 @@ async def retrieve_context_for_verse(verse_id: str, query: str, k: int = 4) -> L
     return _ensure_root_companions(pinned[:k], k)
 
 
+def _unit_id_from_meta(meta: dict) -> str:
+    return str(meta.get("_id") or meta.get("unit_id") or "").strip()
+
+
+async def retrieve_related_unit_ids(
+    verse_id: str,
+    *,
+    limit: int = 6,
+    per_collection: int = 2,
+    min_score: float | None = None,
+) -> list[tuple[str, float, str]]:
+    """Find other corpus units nearest to ``verse_id`` in embedding space.
+
+    Returns ``(unit_id, score, collection)`` with a per-collection cap so one
+    large text (e.g. the Yoga Sūtras) cannot flood the Related panel.
+    """
+    needle = (verse_id or "").strip()
+    if not needle or not settings.USE_RAG:
+        return []
+
+    floor = settings.RAG_MIN_SCORE if min_score is None else min_score
+    conn: asyncpg.Connection | None = None
+    try:
+        conn = await asyncpg.connect(**settings.asyncpg_kwargs())
+        # Prefer a translation/commentary chunk as the query vector — those are
+        # the layers that best represent the teaching for cross-tradition search.
+        seed = await conn.fetchrow(
+            """
+            SELECT embedding::text AS emb, metadata
+            FROM chunks
+            WHERE metadata->>'_id' = $1 OR metadata->>'unit_id' = $1
+            ORDER BY
+              CASE metadata->>'layer_kind'
+                WHEN 'translation' THEN 1
+                WHEN 'commentary' THEN 2
+                WHEN 'practice' THEN 3
+                WHEN 'resonances' THEN 4
+                ELSE 5
+              END,
+              COALESCE((metadata->>'chunk_index')::int, 999)
+            LIMIT 1
+            """,
+            needle,
+        )
+        if not seed or not seed["emb"]:
+            return []
+
+        # Fetch a generous neighbourhood of chunks, then collapse to unique units.
+        rows = await conn.fetch(
+            """
+            SELECT metadata, 1 - (embedding <=> $1::vector) AS score
+            FROM chunks
+            WHERE coalesce(metadata->>'_id', '') <> $2
+              AND coalesce(metadata->>'unit_id', '') <> $2
+            ORDER BY embedding <-> $1::vector
+            LIMIT $3
+            """,
+            seed["emb"],
+            needle,
+            max(limit * 24, 48),
+        )
+
+        best: dict[str, tuple[float, str]] = {}
+        for r in rows:
+            meta = _normalize_meta(r["metadata"])
+            uid = _unit_id_from_meta(meta)
+            if not uid:
+                continue
+            score = float(r["score"])
+            if score < floor:
+                continue
+            collection = str(meta.get("collection") or "").strip()
+            prev = best.get(uid)
+            if prev is None or score > prev[0]:
+                best[uid] = (score, collection)
+
+        ranked = sorted(best.items(), key=lambda kv: kv[1][0], reverse=True)
+        picked: list[tuple[str, float, str]] = []
+        per_col: dict[str, int] = {}
+        for uid, (score, collection) in ranked:
+            if len(picked) >= limit:
+                break
+            used = per_col.get(collection, 0)
+            if used >= per_collection:
+                continue
+            per_col[collection] = used + 1
+            picked.append((uid, score, collection))
+
+        # Top up ignoring the cap if themes/neighbourhood were sparse.
+        if len(picked) < limit:
+            chosen = {uid for uid, _, _ in picked}
+            for uid, (score, collection) in ranked:
+                if len(picked) >= limit:
+                    break
+                if uid in chosen:
+                    continue
+                picked.append((uid, score, collection))
+                chosen.add(uid)
+        return picked
+    except Exception:
+        logger.warning("retrieve_related_unit_ids failed for %r", needle, exc_info=True)
+        return []
+    finally:
+        if conn is not None:
+            await conn.close()
+
+
 async def retrieve_context_compare(
     query: str,
     collections: list[str],
