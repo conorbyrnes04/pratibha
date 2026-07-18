@@ -113,6 +113,7 @@ async def health():
             "openai": bool((settings.OPENAI_API_KEY or "").strip()),
             "use_rag": bool(settings.USE_RAG),
             "database_url": bool((settings.DATABASE_URL or "").strip()),
+            "pg_host": settings.PG_HOST or "",
             "chat_provider": settings.chat_provider(),
         },
     }
@@ -139,18 +140,31 @@ async def related_verses(sid: str, limit: int = 6):
     cap = max(1, min(limit, 12))
     hits = await retrieve_related_unit_ids(str(verse.get("_id") or sid), limit=cap, per_collection=2)
     items: list[dict[str, Any]] = []
+    skipped_missing = 0
+    skipped_maturity = 0
     for uid, score, _collection in hits:
         neighbour = get_verse_by_id(uid)
         if neighbour is None:
+            skipped_missing += 1
             continue
         # Skip raw drafts so we never send a reader to unfinished work.
         maturity = normalize_maturity(neighbour.get("editorial_maturity"))
         if maturity in {"needs_rewrite", "structural_draft"}:
+            skipped_maturity += 1
             continue
         items.append({**neighbour, "related_score": round(score, 4)})
         if len(items) >= cap:
             break
-    return {"items": items, "mode": "semantic" if items else "empty"}
+    payload: dict[str, Any] = {"items": items, "mode": "semantic" if items else "empty"}
+    if not items:
+        payload["debug"] = {
+            "hits": len(hits),
+            "skipped_missing": skipped_missing,
+            "skipped_maturity": skipped_maturity,
+            "use_rag": bool(settings.USE_RAG),
+            "database_url": bool((settings.DATABASE_URL or "").strip()),
+        }
+    return payload
 
 
 @app.get("/daily")
