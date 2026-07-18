@@ -6,6 +6,8 @@ type GlyphProps = {
   /** Decorative by default; set label for informative icons. */
   label?: string;
   size?: "xs" | "sm" | "md" | "lg" | "xl" | "hero";
+  /** Crop-zoom the SVG inside its box (library medallions). */
+  zoom?: boolean;
 };
 
 const SIZE_CLASS: Record<NonNullable<GlyphProps["size"]>, string> = {
@@ -18,10 +20,10 @@ const SIZE_CLASS: Record<NonNullable<GlyphProps["size"]>, string> = {
 };
 
 /** Mythra Glyphnet mark — gold SVG asset, sized for UI chrome. */
-export function Glyph({ name, className = "", label, size = "md" }: GlyphProps) {
+export function Glyph({ name, className = "", label, size = "md", zoom = false }: GlyphProps) {
   return (
     <span
-      className={`glyph ${SIZE_CLASS[size]} ${className}`.trim()}
+      className={`glyph ${SIZE_CLASS[size]} ${zoom ? "glyph--zoom" : ""} ${className}`.trim()}
       role={label ? "img" : "presentation"}
       aria-label={label}
       aria-hidden={label ? undefined : true}

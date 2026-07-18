@@ -11,7 +11,7 @@ import { ThemeConstellation } from "@/components/ThemeConstellation";
 import { buildCollectionOptions, filterPassages, topThemes, uniqueCollections } from "@/lib/corpusFilters";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
-import { collectionGlyph } from "@/lib/glyphs";
+import { unitGlyph } from "@/lib/glyphs";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
 import { displayPassageTitle, patanjaliSutraRef, sortPassagesForLibrary } from "@/lib/passageTitles";
@@ -153,7 +153,7 @@ function ReadPageContent() {
             <div className="flex items-start justify-between gap-4">
               <div className="flex min-w-0 items-start gap-3">
                 <span className="library-row__glyph hidden sm:inline-flex" aria-hidden>
-                  <Glyph name={collectionGlyph(x.collection)} size="md" />
+                  <Glyph name={unitGlyph(x._id)} size="md" zoom />
                 </span>
                 <div className="min-w-0">
                   <h2 className="text-2xl leading-none text-amber-100">{displayPassageTitle(x)}</h2>

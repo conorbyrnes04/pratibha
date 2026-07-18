@@ -77,6 +77,18 @@ export function collectionGlyph(name?: string): GlyphSlug {
   return "diamond";
 }
 
+/** Stable “random” glyph for a passage — same id always gets the same mark. */
+export function unitGlyph(seed?: string): GlyphSlug {
+  const key = (seed || "").trim() || "pratibha";
+  let h = 2166136261;
+  for (let i = 0; i < key.length; i += 1) {
+    h ^= key.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  const idx = Math.abs(h) % GLYPH_SLUGS.length;
+  return GLYPH_SLUGS[idx]!;
+}
+
 /** Home gateway / section ornaments. */
 export const GATEWAY_GLYPHS = {
   archive: "gateway",

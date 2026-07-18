@@ -8,7 +8,7 @@ import type { VerseItem } from "@/lib/types";
 import { stripMarkdown } from "@/lib/textPreview";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool } from "@/lib/collectionImages";
-import { collectionGlyph } from "@/lib/glyphs";
+import { unitGlyph } from "@/lib/glyphs";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
 import { displayPassageTitle } from "@/lib/passageTitles";
@@ -172,7 +172,7 @@ export default function VerseDetailPage() {
         <div className="relative z-10 grid gap-6 lg:grid-cols-[1fr_15rem] lg:items-end">
           <div className="flex items-start gap-4">
             <span className="passage-hero__glyph mt-1 hidden sm:inline-flex" aria-hidden>
-              <Glyph name={collectionGlyph(item.collection)} size="lg" />
+              <Glyph name={unitGlyph(item._id)} size="lg" zoom />
             </span>
             <div>
               <p className="eyebrow">{displayCollectionName(item.collection) || "Pratibha"} {item.section ? ` / ${item.section}` : ""}</p>
