@@ -36,21 +36,7 @@ commentary: 'The philosophical claim that the human condition is characterized b
   unchanging aspect of reality -> default translation misses the connotation of divine intellect.
 
   * **Soul (Ψυχή)** — from the Greek concept of breath and life -> refers to the animating principle of living beings -> default
-  translation misses the connotation of the soul as a divine, immortal entity.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.3.9:** The idea of the threefold nature of reality is echoed in the Katha Upanishad, which describes
-  the universe as consisting of three fundamental principles: the Absolute, the intellect, and the ego.
-
-  * **Phaedo, 67b-69d:** The concept of the soul as a divine, immortal entity is also found in Plato''s Phaedo, which describes
-  the soul as a separate, immaterial substance that exists before birth and after death.
-
-  * **Pratyabhijnahrdayam, 3:** The idea of recognizing the divine aspect of our nature and cultivating detachment from the
-  body is reflected in the Pratyabhijnahrdayam, which describes the process of self-realization as involving the recognition
-  of our true, divine nature.'
+  translation misses the connotation of the soul as a divine, immortal entity.'
 insight: The philosophical claim that the human condition is characterized by a threefold nature, reflecting the fundamental
   principles of the universe, is a counterintuitive move that challenges our conventional understanding of reality.
 practice: 'As you go about your daily activities, take a moment to reflect on your thoughts and emotions, and ask yourself:
@@ -115,21 +101,27 @@ pratibha_layers:
     and unchanging aspect of reality -> default translation misses the connotation of divine intellect.
 
     * **Soul (Ψυχή)** — from the Greek concept of breath and life -> refers to the animating principle of living beings ->
-    default translation misses the connotation of the soul as a divine, immortal entity.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.3.9:** The idea of the threefold nature of reality is echoed in the Katha Upanishad, which describes
-    the universe as consisting of three fundamental principles: the Absolute, the intellect, and the ego.
-
-    * **Phaedo, 67b-69d:** The concept of the soul as a divine, immortal entity is also found in Plato''s Phaedo, which describes
-    the soul as a separate, immaterial substance that exists before birth and after death.
-
-    * **Pratyabhijnahrdayam, 3:** The idea of recognizing the divine aspect of our nature and cultivating detachment from
-    the body is reflected in the Pratyabhijnahrdayam, which describes the process of self-realization as involving the recognition
-    of our true, divine nature.'
+    default translation misses the connotation of the soul as a divine, immortal entity.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.3.9
+    resonance: 'The idea of the threefold nature of reality is echoed in the Katha Upanishad, which describes the universe
+      as consisting of three fundamental principles: the Absolute, the intellect, and the ego.'
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 67b-69d
+    resonance: The concept of the soul as a divine, immortal entity is also found in Plato's Phaedo, which describes the soul
+      as a separate, immaterial substance that exists before birth and after death.
+    divergence: ''
+    passage_id: ''
+  - citation: Pratyabhijnahrdayam, 3
+    resonance: The idea of recognizing the divine aspect of our nature and cultivating detachment from the body is reflected
+      in the Pratyabhijnahrdayam, which describes the process of self-realization as involving the recognition of our true,
+      divine nature.
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_003
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your daily activities, take a moment to reflect on your thoughts and emotions, and ask yourself:

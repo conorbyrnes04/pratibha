@@ -44,21 +44,7 @@ commentary: 'The chapter asserts that the most decisive move in conflict is the 
 
   **dé (德)** — inner virtue, moral power -> the treasure lost when one lightly engages -> "virtue"
 
-  **zìrán (自然)** — nature’s spontaneous order -> the enemy’s self‑destructing aggression -> "naturalness"
-
-
-  Cross-Tradition Resonances:
-
-
-  **Sun Tzu, The Art of War, chapter 3 (The Planning of Attack):** Both texts emphasize the importance of strategic withdrawal
-  to conserve resources *Divergence:* Sun Tzu advocates careful calculation, while the Daoist text insists on spontaneous,
-  non‑calculative retreat
-
-  **Laozi, Tao Te Ching, chapter 48 (The Great Power):** Both highlight the power of softness over hardness *Divergence:*
-  Laozi speaks of cosmic softness, whereas the war chapter applies it to human conflict
-
-  **Confucius, Analects, 1.2 (The Master’s Teaching):** Both stress moral conduct in leadership *Divergence:* Confucius focuses
-  on benevolent governance, while the Daoist text focuses on strategic non‑action'
+  **zìrán (自然)** — nature’s spontaneous order -> the enemy’s self‑destructing aggression -> "naturalness"'
 insight: ''
 practice: Stand in a quiet posture, breathe slowly, and when a conflict arises, pause and withdraw a step before you advance.
   Observe the opponent’s reaction; if they overextend, let them exhaust themselves while you remain calm and uncommitted.
@@ -136,21 +122,23 @@ pratibha_layers:
 
     **dé (德)** — inner virtue, moral power -> the treasure lost when one lightly engages -> "virtue"
 
-    **zìrán (自然)** — nature’s spontaneous order -> the enemy’s self‑destructing aggression -> "naturalness"
-
-
-    Cross-Tradition Resonances:
-
-
-    **Sun Tzu, The Art of War, chapter 3 (The Planning of Attack):** Both texts emphasize the importance of strategic withdrawal
-    to conserve resources *Divergence:* Sun Tzu advocates careful calculation, while the Daoist text insists on spontaneous,
-    non‑calculative retreat
-
-    **Laozi, Tao Te Ching, chapter 48 (The Great Power):** Both highlight the power of softness over hardness *Divergence:*
-    Laozi speaks of cosmic softness, whereas the war chapter applies it to human conflict
-
-    **Confucius, Analects, 1.2 (The Master’s Teaching):** Both stress moral conduct in leadership *Divergence:* Confucius
-    focuses on benevolent governance, while the Daoist text focuses on strategic non‑action'
+    **zìrán (自然)** — nature’s spontaneous order -> the enemy’s self‑destructing aggression -> "naturalness"'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Sun Tzu, The Art of War, chapter 3 (The Planning of Attack)
+    resonance: Both texts emphasize the importance of strategic withdrawal to conserve resources
+    divergence: Sun Tzu advocates careful calculation, while the Daoist text insists on spontaneous, non‑calculative retreat
+    passage_id: ''
+  - citation: Laozi, Tao Te Ching, chapter 48 (The Great Power)
+    resonance: Both highlight the power of softness over hardness
+    divergence: Laozi speaks of cosmic softness, whereas the war chapter applies it to human conflict
+    passage_id: tao_te_ching.ttc_md_048
+  - citation: Confucius, Analects, 1.2 (The Master’s Teaching)
+    resonance: Both stress moral conduct in leadership
+    divergence: Confucius focuses on benevolent governance, while the Daoist text focuses on strategic non‑action
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand in a quiet posture, breathe slowly, and when a conflict arises, pause and withdraw a step before you advance.

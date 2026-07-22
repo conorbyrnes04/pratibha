@@ -47,28 +47,7 @@ commentary: 'The claim is methodological: explanatory elegance is insufficient i
 
 
   **arche (ἀρχή)** - ruling principle/origin -> soul functions as governing arche, not merely derivative state -> reducing
-  arche to temporal "beginning" misses normative force.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Bhagavad Gita 3.42-3.43:** Both depict layered psychology in which higher discernment can govern lower impulsive drives.
-
-  *Divergence:* Gita''s hierarchy culminates in Atman-devotion and disciplined action; *Phaedo* uses the same governance intuition
-  to refute a metaphysical model.
-
-
-  **Aristotle, De Anima II.1 and III.9-10:** Both resist simplistic material reduction and preserve explanatory roles for
-  psyche in action.
-
-  *Divergence:* Aristotle formalizes hylomorphic unity more strongly than Plato''s affinity-based dual emphasis.
-
-
-  **Vijnana Bhairava Tantra 24 and 39 (attentional interruption methods):** Both treat interruption of automatic mental movement
-  as gateway to deeper recognition.
-
-  *Divergence:* VBT is practice-manual and non-dual Shaiva; *Phaedo* is argumentative and post-mortem focused.'
+  arche to temporal "beginning" misses normative force.'
 insight: 'The claim is methodological: explanatory elegance is insufficient if it cannot account for lived agency.'
 practice: When a strong impulse appears today, wait one full breath before acting and state aloud one reason for acting or
   not acting; then choose deliberately.
@@ -142,28 +121,24 @@ pratibha_layers:
 
 
     **arche (ἀρχή)** - ruling principle/origin -> soul functions as governing arche, not merely derivative state -> reducing
-    arche to temporal "beginning" misses normative force.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Bhagavad Gita 3.42-3.43:** Both depict layered psychology in which higher discernment can govern lower impulsive drives.
-
-    *Divergence:* Gita''s hierarchy culminates in Atman-devotion and disciplined action; *Phaedo* uses the same governance
-    intuition to refute a metaphysical model.
-
-
-    **Aristotle, De Anima II.1 and III.9-10:** Both resist simplistic material reduction and preserve explanatory roles for
-    psyche in action.
-
-    *Divergence:* Aristotle formalizes hylomorphic unity more strongly than Plato''s affinity-based dual emphasis.
-
-
-    **Vijnana Bhairava Tantra 24 and 39 (attentional interruption methods):** Both treat interruption of automatic mental
-    movement as gateway to deeper recognition.
-
-    *Divergence:* VBT is practice-manual and non-dual Shaiva; *Phaedo* is argumentative and post-mortem focused.'
+    arche to temporal "beginning" misses normative force.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita 3.42-3.43
+    resonance: Both depict layered psychology in which higher discernment can govern lower impulsive drives.
+    divergence: Gita's hierarchy culminates in Atman-devotion and disciplined action; *Phaedo* uses the same governance intuition
+      to refute a metaphysical model.
+    passage_id: ''
+  - citation: Aristotle, De Anima II.1 and III.9-10
+    resonance: Both resist simplistic material reduction and preserve explanatory roles for psyche in action.
+    divergence: Aristotle formalizes hylomorphic unity more strongly than Plato's affinity-based dual emphasis.
+    passage_id: ''
+  - citation: Vijnana Bhairava Tantra 24 and 39 (attentional interruption methods)
+    resonance: Both treat interruption of automatic mental movement as gateway to deeper recognition.
+    divergence: VBT is practice-manual and non-dual Shaiva; *Phaedo* is argumentative and post-mortem focused.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: When a strong impulse appears today, wait one full breath before acting and state aloud one reason for acting or not

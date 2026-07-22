@@ -41,19 +41,7 @@ commentary: 'The counterintuitive move made in this passage is the suggestion th
 
   * **Satyam** (सत्यम) — etymology: "truth" -> tradition-specific meaning: the ultimate reality or essence of existence ->
   what default translation misses: the implication that truth is not just a static concept, but a living and dynamic presence
-  that underlies all existence.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 1:** structural homology: the idea that names and concepts are mere conventions and do not reflect
-  the true nature of reality. *Divergence:* the Tao Te Ching emphasizes the importance of embracing the mystery and uncertainty
-  of reality, while the Chāndogya Upaniṣad seeks to reveal a more profound understanding of the unity that underlies all things.
-
-  * **Plotinus, Enneads VI.9:** structural homology: the idea that the ultimate reality is a unified and undivided whole.
-  *Divergence:* Plotinus emphasizes the importance of the individual''s ascent to the higher levels of reality, while the
-  Chāndogya Upaniṣad emphasizes the importance of recognizing the unity that underlies all existence.'
+  that underlies all existence.'
 insight: The counterintuitive move made in this passage is the suggestion that true knowledge lies beyond the realm of Vedic
   studies.
 practice: 'As you go about your daily activities, notice the ways in which you assign names and concepts to things. Recognize
@@ -116,20 +104,22 @@ pratibha_layers:
 
     * **Satyam** (सत्यम) — etymology: "truth" -> tradition-specific meaning: the ultimate reality or essence of existence
     -> what default translation misses: the implication that truth is not just a static concept, but a living and dynamic
-    presence that underlies all existence.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 1:** structural homology: the idea that names and concepts are mere conventions and do not reflect
-    the true nature of reality. *Divergence:* the Tao Te Ching emphasizes the importance of embracing the mystery and uncertainty
-    of reality, while the Chāndogya Upaniṣad seeks to reveal a more profound understanding of the unity that underlies all
-    things.
-
-    * **Plotinus, Enneads VI.9:** structural homology: the idea that the ultimate reality is a unified and undivided whole.
-    *Divergence:* Plotinus emphasizes the importance of the individual''s ascent to the higher levels of reality, while the
-    Chāndogya Upaniṣad emphasizes the importance of recognizing the unity that underlies all existence.'
+    presence that underlies all existence.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 1
+    resonance: 'structural homology: the idea that names and concepts are mere conventions and do not reflect the true nature
+      of reality.'
+    divergence: the Tao Te Ching emphasizes the importance of embracing the mystery and uncertainty of reality, while the
+      Chāndogya Upaniṣad seeks to reveal a more profound understanding of the unity that underlies all things.
+    passage_id: tao_te_ching.ttc_md_001
+  - citation: Plotinus, Enneads VI.9
+    resonance: 'structural homology: the idea that the ultimate reality is a unified and undivided whole.'
+    divergence: Plotinus emphasizes the importance of the individual's ascent to the higher levels of reality, while the Chāndogya
+      Upaniṣad emphasizes the importance of recognizing the unity that underlies all existence.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your daily activities, notice the ways in which you assign names and concepts to things. Recognize

@@ -50,22 +50,7 @@ commentary: 'This chapter asserts that the Tao’s power is not in grand gesture
   stakes: action without harm
 
   **安平 (ān píng)** — graph: peace and calm; meaning: tranquility; Daoist sense: the state achieved by following the Tao; translation
-  stakes: the result of aligning with the Tao
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 35 (brief plain-English gloss):** Both texts emphasize the Tao’s subtle, non‑forceful influence that attracts
-  the world *Divergence:* Legge’s translation stresses "music and dainties" as distractions, whereas the Pratibha version
-  focuses on the Tao’s inherent quietness
-
-  **Zhuangzi, chapter 4 (brief plain-English gloss):** Both highlight the Tao’s ineffability and its ability to guide without
-  overt action *Divergence:* Zhuangzi describes the Tao as a "river of sound" that one cannot hear, while the Pratibha translation
-  frames it as tasteless and invisible
-
-  **Mencius, chapter 1 (brief plain-English gloss):** Both discuss the idea that virtue (or the Tao) is subtle yet powerful
-  *Divergence:* Mencius speaks of moral cultivation, whereas the Pratibha text speaks of the Tao’s inherent, effortless power'
+  stakes: the result of aligning with the Tao'
 insight: ''
 practice: Sit quietly for ten minutes, focusing on your breath. As thoughts arise, observe them without judgment, letting
   them pass like passing guests. This practice cultivates the subtle presence of the Tao, allowing you to act without force
@@ -137,23 +122,25 @@ pratibha_layers:
     stakes: action without harm
 
     **安平 (ān píng)** — graph: peace and calm; meaning: tranquility; Daoist sense: the state achieved by following the Tao;
-    translation stakes: the result of aligning with the Tao
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 35 (brief plain-English gloss):** Both texts emphasize the Tao’s subtle, non‑forceful influence that
-    attracts the world *Divergence:* Legge’s translation stresses "music and dainties" as distractions, whereas the Pratibha
-    version focuses on the Tao’s inherent quietness
-
-    **Zhuangzi, chapter 4 (brief plain-English gloss):** Both highlight the Tao’s ineffability and its ability to guide without
-    overt action *Divergence:* Zhuangzi describes the Tao as a "river of sound" that one cannot hear, while the Pratibha translation
-    frames it as tasteless and invisible
-
-    **Mencius, chapter 1 (brief plain-English gloss):** Both discuss the idea that virtue (or the Tao) is subtle yet powerful
-    *Divergence:* Mencius speaks of moral cultivation, whereas the Pratibha text speaks of the Tao’s inherent, effortless
-    power'
+    translation stakes: the result of aligning with the Tao'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 35 (brief plain-English gloss)
+    resonance: Both texts emphasize the Tao’s subtle, non‑forceful influence that attracts the world
+    divergence: Legge’s translation stresses "music and dainties" as distractions, whereas the Pratibha version focuses on
+      the Tao’s inherent quietness
+    passage_id: ''
+  - citation: Zhuangzi, chapter 4 (brief plain-English gloss)
+    resonance: Both highlight the Tao’s ineffability and its ability to guide without overt action
+    divergence: Zhuangzi describes the Tao as a "river of sound" that one cannot hear, while the Pratibha translation frames
+      it as tasteless and invisible
+    passage_id: ''
+  - citation: Mencius, chapter 1 (brief plain-English gloss)
+    resonance: Both discuss the idea that virtue (or the Tao) is subtle yet powerful
+    divergence: Mencius speaks of moral cultivation, whereas the Pratibha text speaks of the Tao’s inherent, effortless power
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit quietly for ten minutes, focusing on your breath. As thoughts arise, observe them without judgment, letting them

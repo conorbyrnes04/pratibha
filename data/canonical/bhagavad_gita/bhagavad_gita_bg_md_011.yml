@@ -49,25 +49,7 @@ commentary: 'The claim is that psychological states are patterned modalities of 
 
 
   **asanga (असङ्ग)** - non-attachment -> the "axe" cutting compulsive rootedness in conditioned identity -> detached indifference
-  is a distortion.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Yoga Sutra 2.18 and 2.25:** Both describe prakriti''s guna-play and liberation through discriminative disidentification.
-
-  *Divergence:* Sutra framework is dualist kaivalya; Gita extends toward theistic devotion to Purushottama.
-
-
-  **Buddhist Abhidharma (conditional factors):** Both map mental states as conditioned processes rather than eternal self.
-
-  *Divergence:* Abhidharma denies enduring self-substance; Gita retains atmanic continuity and divine relation.
-
-
-  **Marcus Aurelius, Meditations 12.26:** Both counsel observing impulses as events and returning to governing principle.
-
-  *Divergence:* Stoic lens is rational-ethical; Gita''s includes metaphysical guna taxonomy and devotional transcendence.'
+  is a distortion.'
 insight: The claim is that psychological states are patterned modalities of nature, not final identity.
 practice: When mood shifts today, name it as guna-language ("rajas rising," "tamas heavy"), then take one sattva-supporting
   action without self-judgment.
@@ -141,25 +123,23 @@ pratibha_layers:
 
 
     **asanga (असङ्ग)** - non-attachment -> the "axe" cutting compulsive rootedness in conditioned identity -> detached indifference
-    is a distortion.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Yoga Sutra 2.18 and 2.25:** Both describe prakriti''s guna-play and liberation through discriminative disidentification.
-
-    *Divergence:* Sutra framework is dualist kaivalya; Gita extends toward theistic devotion to Purushottama.
-
-
-    **Buddhist Abhidharma (conditional factors):** Both map mental states as conditioned processes rather than eternal self.
-
-    *Divergence:* Abhidharma denies enduring self-substance; Gita retains atmanic continuity and divine relation.
-
-
-    **Marcus Aurelius, Meditations 12.26:** Both counsel observing impulses as events and returning to governing principle.
-
-    *Divergence:* Stoic lens is rational-ethical; Gita''s includes metaphysical guna taxonomy and devotional transcendence.'
+    is a distortion.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Yoga Sutra 2.18 and 2.25
+    resonance: Both describe prakriti's guna-play and liberation through discriminative disidentification.
+    divergence: Sutra framework is dualist kaivalya; Gita extends toward theistic devotion to Purushottama.
+    passage_id: ''
+  - citation: Buddhist Abhidharma (conditional factors)
+    resonance: Both map mental states as conditioned processes rather than eternal self.
+    divergence: Abhidharma denies enduring self-substance; Gita retains atmanic continuity and divine relation.
+    passage_id: ''
+  - citation: Marcus Aurelius, Meditations 12.26
+    resonance: Both counsel observing impulses as events and returning to governing principle.
+    divergence: Stoic lens is rational-ethical; Gita's includes metaphysical guna taxonomy and devotional transcendence.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: When mood shifts today, name it as guna-language ("rajas rising," "tamas heavy"), then take one sattva-supporting

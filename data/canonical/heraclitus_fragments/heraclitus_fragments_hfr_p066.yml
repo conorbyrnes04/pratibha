@@ -36,24 +36,7 @@ commentary: 'Heraclitus makes the counterintuitive move of associating life with
 
   * **τὸξόν (tóxon)** — etymology: related to the bow -> Heraclitean meaning in this fragment: the instrument that embodies
   the paradox of life and death -> what default translation misses: the symbolic significance of the bow as a representation
-  of the harmony between opposing forces.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 27:** structural homology: the interplay between opposites, such as life and death, is a fundamental
-  aspect of the natural world. *Divergence:* while the Tao Te Ching emphasizes the cyclical nature of life and death, Heraclitus
-  highlights the paradoxical coexistence of these states.
-
-  * **Plotinus, Enneads, III.2.15:** structural homology: the idea that the universe is governed by a complex and multifaceted
-  principle that encompasses opposing forces. *Divergence:* while Plotinus develops a more systematic and metaphysical framework,
-  Heraclitus'' fragment presents a more enigmatic and poetic vision.
-
-  * **Chandogya Upanishad, 6.2.1:** structural homology: the concept of the interconnectedness of life and death, as well
-  as the idea that the ultimate reality transcends binary oppositions. *Divergence:* while the Chandogya Upanishad explores
-  the nature of the self and the ultimate reality, Heraclitus'' fragment focuses on the paradoxical relationship between life
-  and death.'
+  of the harmony between opposing forces.'
 insight: Heraclitus makes the counterintuitive move of associating life with an instrument of death, the bow, highlighting
   the inherent paradox of existence.
 practice: 'Contemplate the bow as a symbol of the paradoxical relationship between life and death, and ask yourself: how can
@@ -110,24 +93,29 @@ pratibha_layers:
 
     * **τὸξόν (tóxon)** — etymology: related to the bow -> Heraclitean meaning in this fragment: the instrument that embodies
     the paradox of life and death -> what default translation misses: the symbolic significance of the bow as a representation
-    of the harmony between opposing forces.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 27:** structural homology: the interplay between opposites, such as life and death, is a fundamental
-    aspect of the natural world. *Divergence:* while the Tao Te Ching emphasizes the cyclical nature of life and death, Heraclitus
-    highlights the paradoxical coexistence of these states.
-
-    * **Plotinus, Enneads, III.2.15:** structural homology: the idea that the universe is governed by a complex and multifaceted
-    principle that encompasses opposing forces. *Divergence:* while Plotinus develops a more systematic and metaphysical framework,
-    Heraclitus'' fragment presents a more enigmatic and poetic vision.
-
-    * **Chandogya Upanishad, 6.2.1:** structural homology: the concept of the interconnectedness of life and death, as well
-    as the idea that the ultimate reality transcends binary oppositions. *Divergence:* while the Chandogya Upanishad explores
-    the nature of the self and the ultimate reality, Heraclitus'' fragment focuses on the paradoxical relationship between
-    life and death.'
+    of the harmony between opposing forces.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 27
+    resonance: 'structural homology: the interplay between opposites, such as life and death, is a fundamental aspect of the
+      natural world.'
+    divergence: while the Tao Te Ching emphasizes the cyclical nature of life and death, Heraclitus highlights the paradoxical
+      coexistence of these states.
+    passage_id: tao_te_ching.ttc_md_027
+  - citation: Plotinus, Enneads, III.2.15
+    resonance: 'structural homology: the idea that the universe is governed by a complex and multifaceted principle that encompasses
+      opposing forces.'
+    divergence: while Plotinus develops a more systematic and metaphysical framework, Heraclitus' fragment presents a more
+      enigmatic and poetic vision.
+    passage_id: ''
+  - citation: Chandogya Upanishad, 6.2.1
+    resonance: 'structural homology: the concept of the interconnectedness of life and death, as well as the idea that the
+      ultimate reality transcends binary oppositions.'
+    divergence: while the Chandogya Upanishad explores the nature of the self and the ultimate reality, Heraclitus' fragment
+      focuses on the paradoxical relationship between life and death.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Contemplate the bow as a symbol of the paradoxical relationship between life and death, and ask yourself: how can

@@ -10,23 +10,12 @@ unit_type: sutra
 sanskrit_devanagari: तद्भूमिकाः सर्वदर्शनस्थितयः
 sanskrit_iast: tad-bhūmikāḥ sarva-darśana-sthitayaḥ
 translation_literal: The positions of all philosophical systems are only roles played by that — by Consciousness.
-commentary: 'A stunning ecumenical move. Every philosophical system — materialism, dualism, qualified non-dualism, strict
-  non-dualism, theism, atheism — is understood not as a competing claim about ultimate reality but as a *bhūmikā*, a stage
-  or role, within the self-expression of Consciousness. The Sāṁkhya, the Nyāya, the Buddhist, the Vedāntin — each has grasped
-  a genuine aspect of reality at a particular level of contraction. None is simply wrong; each is right from within its aperture.
-  This is not relativism — the text is clear that recognition (*pratyabhijñā*) of the full ground is the highest understanding.
-  But the fullness includes rather than rejects all partial views.
-
-
-  Cross-Tradition Resonance:
-
-  - Ken Wilber''s integral framework (modern): all philosophical positions as *partial* but valid perspectives within a larger
-  map.
-
-  - Dào Dé Jīng ch. 1: the named Tao is not the eternal Tao — all conceptual systems gesture at what exceeds them.
-
-  - Śiva Sūtra I.16: *āsanasthaḥ sukhaṁ hrade nimajjati* — the recognition that contains all states without being reduced
-  to any.'
+commentary: A stunning ecumenical move. Every philosophical system — materialism, dualism, qualified non-dualism, strict non-dualism,
+  theism, atheism — is understood not as a competing claim about ultimate reality but as a *bhūmikā*, a stage or role, within
+  the self-expression of Consciousness. The Sāṁkhya, the Nyāya, the Buddhist, the Vedāntin — each has grasped a genuine aspect
+  of reality at a particular level of contraction. None is simply wrong; each is right from within its aperture. This is not
+  relativism — the text is clear that recognition (*pratyabhijñā*) of the full ground is the highest understanding. But the
+  fullness includes rather than rejects all partial views.
 insight: A stunning ecumenical move.
 practice: Recall a philosophical or spiritual view you once held and have since revised. Notice that the previous view was
   not simply *wrong* — it was seeing something real from a contracted vantage. Can you honor both the contraction and the
@@ -67,23 +56,39 @@ pratibha_layers:
   body: The positions of all philosophical systems are only roles played by that — by Consciousness.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'A stunning ecumenical move. Every philosophical system — materialism, dualism, qualified non-dualism, strict non-dualism,
+  body: A stunning ecumenical move. Every philosophical system — materialism, dualism, qualified non-dualism, strict non-dualism,
     theism, atheism — is understood not as a competing claim about ultimate reality but as a *bhūmikā*, a stage or role, within
     the self-expression of Consciousness. The Sāṁkhya, the Nyāya, the Buddhist, the Vedāntin — each has grasped a genuine
     aspect of reality at a particular level of contraction. None is simply wrong; each is right from within its aperture.
     This is not relativism — the text is clear that recognition (*pratyabhijñā*) of the full ground is the highest understanding.
     But the fullness includes rather than rejects all partial views.
-
-
-    Cross-Tradition Resonance:
-
-    - Ken Wilber''s integral framework (modern): all philosophical positions as *partial* but valid perspectives within a
-    larger map.
-
-    - Dào Dé Jīng ch. 1: the named Tao is not the eternal Tao — all conceptual systems gesture at what exceeds them.
-
-    - Śiva Sūtra I.16: *āsanasthaḥ sukhaṁ hrade nimajjati* — the recognition that contains all states without being reduced
-    to any.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: bhūmikā
+    definition: role, stage, level; the ground or floor on which something stands; also a theatrical role
+  - term: darśana
+    definition: philosophical system, worldview; literally "seeing" or "vision"
+  - term: sthiti
+    definition: position, final conclusion; what a system ultimately asserts
+  - term: tad
+    definition: that; here referring to the Supreme Consciousness of Sūtra 1
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Ken Wilber's integral framework (modern)
+    resonance: all philosophical positions as *partial* but valid perspectives within a larger map.
+    divergence: ''
+    passage_id: ''
+  - citation: Dào Dé Jīng ch. 1
+    resonance: the named Tao is not the eternal Tao — all conceptual systems gesture at what exceeds them.
+    divergence: ''
+    passage_id: ''
+  - citation: Śiva Sūtra I.16
+    resonance: '*āsanasthaḥ sukhaṁ hrade nimajjati* — the recognition that contains all states without being reduced to any.'
+    divergence: ''
+    passage_id: siva_sutra.ss_i_16
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Recall a philosophical or spiritual view you once held and have since revised. Notice that the previous view was not

@@ -49,20 +49,7 @@ commentary: 'This chapter asserts that the pursuit of sensory pleasure is a misg
   **五味 (wǔ wèi)** — five tastes -> taste excess -> translation stakes: delight leading to distraction
 
   **去彼取此 (qù bǐ qǔ cǐ)** — to abandon that and take this -> active re‑prioritization -> translation stakes: shift from body
-  to mind
-
-
-  Cross-Tradition Resonances:
-
-
-  **chapter 1 (the Tao that can be named is not the eternal Tao):** both warn against the limits of language and sensory description
-  *Divergence:* chapter 12 focuses on practical re‑orientation rather than abstract principle
-
-  **chapter 34 (the Tao is like a well, used but never filled):** both emphasize the value of emptiness *Divergence:* chapter
-  12 speaks of abandoning external goods, chapter 34 speaks of internal emptiness
-
-  **chapter 56 (the Tao is the source of all things):** both highlight the Tao as underlying reality *Divergence:* chapter
-  12 presents the Tao as a guide to re‑ordering priorities, not as a universal source'
+  to mind'
 insight: ''
 practice: Stand in a quiet place, close your eyes, and breathe slowly. With each inhale, imagine the five senses dissolving
   into a single colorless field; with each exhale, feel the body’s hunger soften, allowing the mind to see beyond the immediate.
@@ -139,20 +126,23 @@ pratibha_layers:
     **五味 (wǔ wèi)** — five tastes -> taste excess -> translation stakes: delight leading to distraction
 
     **去彼取此 (qù bǐ qǔ cǐ)** — to abandon that and take this -> active re‑prioritization -> translation stakes: shift from body
-    to mind
-
-
-    Cross-Tradition Resonances:
-
-
-    **chapter 1 (the Tao that can be named is not the eternal Tao):** both warn against the limits of language and sensory
-    description *Divergence:* chapter 12 focuses on practical re‑orientation rather than abstract principle
-
-    **chapter 34 (the Tao is like a well, used but never filled):** both emphasize the value of emptiness *Divergence:* chapter
-    12 speaks of abandoning external goods, chapter 34 speaks of internal emptiness
-
-    **chapter 56 (the Tao is the source of all things):** both highlight the Tao as underlying reality *Divergence:* chapter
-    12 presents the Tao as a guide to re‑ordering priorities, not as a universal source'
+    to mind'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 1 (the Tao that can be named is not the eternal Tao)
+    resonance: both warn against the limits of language and sensory description
+    divergence: chapter 12 focuses on practical re‑orientation rather than abstract principle
+    passage_id: ''
+  - citation: chapter 34 (the Tao is like a well, used but never filled)
+    resonance: both emphasize the value of emptiness
+    divergence: chapter 12 speaks of abandoning external goods, chapter 34 speaks of internal emptiness
+    passage_id: ''
+  - citation: chapter 56 (the Tao is the source of all things)
+    resonance: both highlight the Tao as underlying reality
+    divergence: chapter 12 presents the Tao as a guide to re‑ordering priorities, not as a universal source
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand in a quiet place, close your eyes, and breathe slowly. With each inhale, imagine the five senses dissolving

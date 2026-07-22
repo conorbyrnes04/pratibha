@@ -60,20 +60,7 @@ commentary: 'This chapter asserts that the Daoist ideal of governance is rooted 
   accumulation as the path to mastery
 
   **shì (嗇)** — to yield or be modest -> the specific practice of restraint mentioned in the text -> translation presents
-  it as the first step toward virtue
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 2 (The Tao is the source of all things):** Both chapters emphasize the primacy of the Tao as the source
-  of order *Divergence:* Chapter 59 focuses on human governance, whereas chapter 2 speaks to cosmic principles
-
-  **Zhuangzi, chapter 5 (The Great Learning):** Both texts link moderation with the attainment of higher understanding *Divergence:*
-  Zhuangzi presents moderation as spontaneous, while chapter 59 presents it as a deliberate political strategy
-
-  **Confucius, Analects 1.1 (The Master said: "The gentleman is a man of integrity"):** Both texts value moral cultivation
-  for societal harmony *Divergence:* Confucianism emphasizes active duty, whereas chapter 59 elevates passive restraint'
+  it as the first step toward virtue'
 insight: ''
 practice: Stand before a mirror and, for one minute, observe your thoughts without reacting—let the mind settle. This simple
   exercise trains the heart to practice [wúwéi] in daily life, fostering the quiet strength that the chapter extols.
@@ -169,20 +156,23 @@ pratibha_layers:
     accumulation as the path to mastery
 
     **shì (嗇)** — to yield or be modest -> the specific practice of restraint mentioned in the text -> translation presents
-    it as the first step toward virtue
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 2 (The Tao is the source of all things):** Both chapters emphasize the primacy of the Tao as the source
-    of order *Divergence:* Chapter 59 focuses on human governance, whereas chapter 2 speaks to cosmic principles
-
-    **Zhuangzi, chapter 5 (The Great Learning):** Both texts link moderation with the attainment of higher understanding *Divergence:*
-    Zhuangzi presents moderation as spontaneous, while chapter 59 presents it as a deliberate political strategy
-
-    **Confucius, Analects 1.1 (The Master said: "The gentleman is a man of integrity"):** Both texts value moral cultivation
-    for societal harmony *Divergence:* Confucianism emphasizes active duty, whereas chapter 59 elevates passive restraint'
+    it as the first step toward virtue'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 2 (The Tao is the source of all things)
+    resonance: Both chapters emphasize the primacy of the Tao as the source of order
+    divergence: Chapter 59 focuses on human governance, whereas chapter 2 speaks to cosmic principles
+    passage_id: ''
+  - citation: Zhuangzi, chapter 5 (The Great Learning)
+    resonance: Both texts link moderation with the attainment of higher understanding
+    divergence: Zhuangzi presents moderation as spontaneous, while chapter 59 presents it as a deliberate political strategy
+    passage_id: ''
+  - citation: 'Confucius, Analects 1.1 (The Master said: "The gentleman is a man of integrity")'
+    resonance: Both texts value moral cultivation for societal harmony
+    divergence: Confucianism emphasizes active duty, whereas chapter 59 elevates passive restraint
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand before a mirror and, for one minute, observe your thoughts without reacting—let the mind settle. This simple

@@ -52,17 +52,7 @@ commentary: 'This chapter argues that true mastery of the Tao is not a matter of
 
   **dé (德)** — The moral virtue that arises from living in harmony with the Tao -> natural goodness -> "virtue"
 
-  **zìrán (自然)** — The natural state of being that is uncontrived and spontaneous -> inherent nature -> "naturalness"
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 2 (the Tao is like a hidden spring):** Both passages emphasize the hidden, unspoken nature of the Tao *Divergence:*
-  Chapter 15 insists on external appearances as paradoxical, whereas chapter 2 focuses on internal emptiness
-
-  **Zhuangzi, chapter 11 (the butterfly dream):** Both use paradox to reveal deeper truth *Divergence:* Zhuangzi’s narrative
-  is playful, while chapter 15 is austere and descriptive'
+  **zìrán (自然)** — The natural state of being that is uncontrived and spontaneous -> inherent nature -> "naturalness"'
 insight: ''
 practice: Stand in a quiet place for ten minutes, breathing slowly. Observe any thoughts that arise and let them pass like
   the muddy water becoming clear. When a thought lingers, gently return to your breath, allowing the mind to settle and the
@@ -169,17 +159,19 @@ pratibha_layers:
 
     **dé (德)** — The moral virtue that arises from living in harmony with the Tao -> natural goodness -> "virtue"
 
-    **zìrán (自然)** — The natural state of being that is uncontrived and spontaneous -> inherent nature -> "naturalness"
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 2 (the Tao is like a hidden spring):** Both passages emphasize the hidden, unspoken nature of the Tao
-    *Divergence:* Chapter 15 insists on external appearances as paradoxical, whereas chapter 2 focuses on internal emptiness
-
-    **Zhuangzi, chapter 11 (the butterfly dream):** Both use paradox to reveal deeper truth *Divergence:* Zhuangzi’s narrative
-    is playful, while chapter 15 is austere and descriptive'
+    **zìrán (自然)** — The natural state of being that is uncontrived and spontaneous -> inherent nature -> "naturalness"'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 2 (the Tao is like a hidden spring)
+    resonance: Both passages emphasize the hidden, unspoken nature of the Tao
+    divergence: Chapter 15 insists on external appearances as paradoxical, whereas chapter 2 focuses on internal emptiness
+    passage_id: ''
+  - citation: Zhuangzi, chapter 11 (the butterfly dream)
+    resonance: Both use paradox to reveal deeper truth
+    divergence: Zhuangzi’s narrative is playful, while chapter 15 is austere and descriptive
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand in a quiet place for ten minutes, breathing slowly. Observe any thoughts that arise and let them pass like the

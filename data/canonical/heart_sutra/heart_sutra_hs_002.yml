@@ -7,15 +7,12 @@ unit_id: heart_sutra.hs_002
 unit_label: No Attainment, and So No Fear
 title: No Attainment, and So No Fear
 unit_type: sutra
-sanskrit_devanagari: 'na jñānaṃ na prāptir nāprāptiḥ. tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya
-  viharaty acittāvaraṇaḥ. cittāvaraṇa-nāstitvād atrasto viparyāsātikrānto niṣṭhā-nirvāṇaḥ.
+sanskrit_devanagari: ''
+sanskrit_iast: 'na jñānaṃ na prāptir nāprāptiḥ. tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharaty
+  acittāvaraṇaḥ. cittāvaraṇa-nāstitvād atrasto viparyāsātikrānto niṣṭhā-nirvāṇaḥ.
 
 
   *(Sanskrit, IAST, source-verified from GRETIL shorter recension.)*'
-sanskrit_iast: na jñānaṃ (no knowledge) na prāptiḥ (no attainment) na aprāptiḥ (nor non-attainment). aprāptitvāt (because
-  of no-attainment) bodhisattvaḥ prajñāpāramitām āśritya (relying on the perfection of wisdom) viharati acitta-āvaraṇaḥ (dwells
-  without mental covering). citta-āvaraṇa-nāstitvāt (from the absence of mental covering) atrastaḥ (unafraid), viparyāsa-atikrāntaḥ
-  (having transcended distortion), niṣṭhā-nirvāṇaḥ (reaching final nirvāṇa).
 translation_literal: There is no knowing, no attaining, and no failing-to-attain. Precisely because there is nothing to be
   attained [aprāptitva], the bodhisattva leans on the perfection of wisdom and lives with a mind that has no covering over
   it [acittāvaraṇa]. Because there is no covering, there is nothing to be afraid of; having stepped clear of every inversion
@@ -48,29 +45,7 @@ commentary: 'The sūtra derives fearlessness from a subtraction. Ordinary spirit
   something new.
 
   **atrasta (अत्रस्त)** — Etymology: *a-* (not) + *trasta* (trembling, from *√tras*, to tremble). Fearlessness as the absence
-  of trembling once the grasped self is unfound—a negative, bodily word, not a triumphant one.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Epictetus, Enchiridion 1–2:** fear tracks what we treat as ours to gain or lose; freedom comes by relocating concern away
-  from externals. The Heart Sūtra radicalizes this by voiding the internal goal too.
-
-  *Divergence:* Epictetus keeps a firm agent (the *prohairesis*) that chooses rightly; the sūtra dissolves the very agent
-  whose choices Stoicism fortifies.
-
-  **Meister Eckhart, on *Abgeschiedenheit* (detachment):** the soul empty of "this and that," even empty of a wanted God,
-  becomes fearless and free—structurally the *acittāvaraṇa* move of an uncovered mind.
-
-  *Divergence:* Eckhart''s emptied ground opens onto God''s birth within; the sūtra''s uncovering opens onto no ground at
-  all, nirvāṇa as cessation of grasping rather than union.
-
-  **Tao Te Ching 48 ("do less and less until nothing is done"):** attainment by subtraction, freedom through the loss of grasping
-  aims.
-
-  *Divergence:* the Daoist telos is spontaneous accord with the Way (*ziran*); the sūtra''s telos is the extinction of the
-  distortions that project any "way" to arrive along.'
+  of trembling once the grasped self is unfound—a negative, bodily word, not a triumphant one.'
 insight: The sūtra derives fearlessness from a subtraction.
 practice: 'Sit and name, once, the thing you are quietly trying to attain in your practice—calm, insight, a state, an identity
   as "one who practices." Then set it down with the sentence: "there is nothing to attain." Notice whether a small fear or
@@ -96,17 +71,14 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
+  body: ''
+- kind: iast
+  label: IAST
   body: 'na jñānaṃ na prāptir nāprāptiḥ. tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharaty acittāvaraṇaḥ.
     cittāvaraṇa-nāstitvād atrasto viparyāsātikrānto niṣṭhā-nirvāṇaḥ.
 
 
     *(Sanskrit, IAST, source-verified from GRETIL shorter recension.)*'
-- kind: iast
-  label: IAST
-  body: na jñānaṃ (no knowledge) na prāptiḥ (no attainment) na aprāptiḥ (nor non-attainment). aprāptitvāt (because of no-attainment)
-    bodhisattvaḥ prajñāpāramitām āśritya (relying on the perfection of wisdom) viharati acitta-āvaraṇaḥ (dwells without mental
-    covering). citta-āvaraṇa-nāstitvāt (from the absence of mental covering) atrastaḥ (unafraid), viparyāsa-atikrāntaḥ (having
-    transcended distortion), niṣṭhā-nirvāṇaḥ (reaching final nirvāṇa).
 - kind: translation
   label: Pratibha Translation
   body: There is no knowing, no attaining, and no failing-to-attain. Precisely because there is nothing to be attained [aprāptitva],
@@ -143,29 +115,28 @@ pratibha_layers:
     not seeing something new.
 
     **atrasta (अत्रस्त)** — Etymology: *a-* (not) + *trasta* (trembling, from *√tras*, to tremble). Fearlessness as the absence
-    of trembling once the grasped self is unfound—a negative, bodily word, not a triumphant one.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Epictetus, Enchiridion 1–2:** fear tracks what we treat as ours to gain or lose; freedom comes by relocating concern
-    away from externals. The Heart Sūtra radicalizes this by voiding the internal goal too.
-
-    *Divergence:* Epictetus keeps a firm agent (the *prohairesis*) that chooses rightly; the sūtra dissolves the very agent
-    whose choices Stoicism fortifies.
-
-    **Meister Eckhart, on *Abgeschiedenheit* (detachment):** the soul empty of "this and that," even empty of a wanted God,
-    becomes fearless and free—structurally the *acittāvaraṇa* move of an uncovered mind.
-
-    *Divergence:* Eckhart''s emptied ground opens onto God''s birth within; the sūtra''s uncovering opens onto no ground at
-    all, nirvāṇa as cessation of grasping rather than union.
-
-    **Tao Te Ching 48 ("do less and less until nothing is done"):** attainment by subtraction, freedom through the loss of
-    grasping aims.
-
-    *Divergence:* the Daoist telos is spontaneous accord with the Way (*ziran*); the sūtra''s telos is the extinction of the
-    distortions that project any "way" to arrive along.'
+    of trembling once the grasped self is unfound—a negative, bodily word, not a triumphant one.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Epictetus, Enchiridion 1–2
+    resonance: fear tracks what we treat as ours to gain or lose; freedom comes by relocating concern away from externals.
+      The Heart Sūtra radicalizes this by voiding the internal goal too.
+    divergence: Epictetus keeps a firm agent (the *prohairesis*) that chooses rightly; the sūtra dissolves the very agent
+      whose choices Stoicism fortifies.
+    passage_id: ''
+  - citation: Meister Eckhart, on *Abgeschiedenheit* (detachment)
+    resonance: the soul empty of "this and that," even empty of a wanted God, becomes fearless and free—structurally the *acittāvaraṇa*
+      move of an uncovered mind.
+    divergence: Eckhart's emptied ground opens onto God's birth within; the sūtra's uncovering opens onto no ground at all,
+      nirvāṇa as cessation of grasping rather than union.
+    passage_id: ''
+  - citation: Tao Te Ching 48 ("do less and less until nothing is done")
+    resonance: attainment by subtraction, freedom through the loss of grasping aims.
+    divergence: the Daoist telos is spontaneous accord with the Way (*ziran*); the sūtra's telos is the extinction of the
+      distortions that project any "way" to arrive along.
+    passage_id: tao_te_ching.ttc_md_048
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Sit and name, once, the thing you are quietly trying to attain in your practice—calm, insight, a state, an identity

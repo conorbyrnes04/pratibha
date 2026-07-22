@@ -7,12 +7,11 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_24_18
 unit_label: Dependent Arising Is Emptiness Is the Middle Way
 title: Dependent Arising Is Emptiness Is the Middle Way
 unit_type: sutra
-sanskrit_devanagari: 'yaḥ pratītyasamutpādaḥ śūnyatāṃ tāṃ pracakṣmahe / sā prajñaptir upādāya pratipat saiva madhyamā //
+sanskrit_devanagari: ''
+sanskrit_iast: 'yaḥ pratītyasamutpādaḥ śūnyatāṃ tāṃ pracakṣmahe / sā prajñaptir upādāya pratipat saiva madhyamā //
 
 
   *(Sanskrit, IAST, source-verified from GRETIL MMK 24.18.)*'
-sanskrit_iast: yaḥ pratītya-samutpādaḥ (whatever is dependent arising) śūnyatāṃ tāṃ pracakṣmahe (that we declare to be emptiness);
-  sā prajñaptiḥ upādāya (it is a designation in dependence) pratipat sā eva madhyamā (and that itself is the middle way/practice).
 translation_literal: Whatever arises dependently [pratītyasamutpāda], that we call emptiness [śūnyatā]. It is a designation
   made in dependence [upādāya prajñapti], and this very thing is the middle way [madhyamā pratipad].
 commentary: 'This is the hinge verse of Madhyamaka, a threefold identity compressed into one line: dependent arising = emptiness
@@ -41,27 +40,7 @@ commentary: 'This is the hinge verse of Madhyamaka, a threefold identity compres
 
   **madhyamā pratipad (मध्यमा प्रतिपद्)** — Etymology: *madhyamā* (middle) + *pratipad* (path, mode of proceeding): "the middle
   way." Reframed from the ethical middle (between indulgence and austerity) to the ontological middle (between existence and
-  non-existence).
-
-
-  Cross-Tradition Resonances:
-
-
-  **Heart Sūtra (form is emptiness):** the same equation—appearance and emptiness are not two—stated as slogan there and as
-  argument here; this verse is the logic beneath that liturgy.
-
-  *Divergence:* the sūtra addresses the five aggregates devotionally; Nāgārjuna generalizes to all phenomena as a formal identity.
-
-  **Indra''s Net (Huayan / Avataṃsaka imagery):** each jewel reflects all others; nothing exists on its own, interdependence
-  all the way down.
-
-  *Divergence:* Huayan celebrates the plenary interpenetration of a real totality; Madhyamaka stresses the emptiness of every
-  node, resisting any reified whole.
-
-  **Spinoza (nothing exists independently except substance):** radical relationality of finite modes, none self-standing.
-
-  *Divergence:* Spinoza grounds all in one necessary Substance (God/Nature); Nāgārjuna denies any such self-existent ground,
-  emptiness included.'
+  non-existence).'
 insight: 'This is the hinge verse of Madhyamaka, a threefold identity compressed into one line: dependent arising = emptiness
   = dependent designation = the middle way.'
 practice: Take one object in front of you and, for two minutes, name aloud or silently the conditions it depends on—makers,
@@ -84,14 +63,13 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
+  body: ''
+- kind: iast
+  label: IAST
   body: 'yaḥ pratītyasamutpādaḥ śūnyatāṃ tāṃ pracakṣmahe / sā prajñaptir upādāya pratipat saiva madhyamā //
 
 
     *(Sanskrit, IAST, source-verified from GRETIL MMK 24.18.)*'
-- kind: iast
-  label: IAST
-  body: yaḥ pratītya-samutpādaḥ (whatever is dependent arising) śūnyatāṃ tāṃ pracakṣmahe (that we declare to be emptiness);
-    sā prajñaptiḥ upādāya (it is a designation in dependence) pratipat sā eva madhyamā (and that itself is the middle way/practice).
 - kind: translation
   label: Pratibha Translation
   body: Whatever arises dependently [pratītyasamutpāda], that we call emptiness [śūnyatā]. It is a designation made in dependence
@@ -124,28 +102,26 @@ pratibha_layers:
 
     **madhyamā pratipad (मध्यमा प्रतिपद्)** — Etymology: *madhyamā* (middle) + *pratipad* (path, mode of proceeding): "the
     middle way." Reframed from the ethical middle (between indulgence and austerity) to the ontological middle (between existence
-    and non-existence).
-
-
-    Cross-Tradition Resonances:
-
-
-    **Heart Sūtra (form is emptiness):** the same equation—appearance and emptiness are not two—stated as slogan there and
-    as argument here; this verse is the logic beneath that liturgy.
-
-    *Divergence:* the sūtra addresses the five aggregates devotionally; Nāgārjuna generalizes to all phenomena as a formal
-    identity.
-
-    **Indra''s Net (Huayan / Avataṃsaka imagery):** each jewel reflects all others; nothing exists on its own, interdependence
-    all the way down.
-
-    *Divergence:* Huayan celebrates the plenary interpenetration of a real totality; Madhyamaka stresses the emptiness of
-    every node, resisting any reified whole.
-
-    **Spinoza (nothing exists independently except substance):** radical relationality of finite modes, none self-standing.
-
-    *Divergence:* Spinoza grounds all in one necessary Substance (God/Nature); Nāgārjuna denies any such self-existent ground,
-    emptiness included.'
+    and non-existence).'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heart Sūtra (form is emptiness)
+    resonance: the same equation—appearance and emptiness are not two—stated as slogan there and as argument here; this verse
+      is the logic beneath that liturgy.
+    divergence: the sūtra addresses the five aggregates devotionally; Nāgārjuna generalizes to all phenomena as a formal identity.
+    passage_id: ''
+  - citation: Indra's Net (Huayan / Avataṃsaka imagery)
+    resonance: each jewel reflects all others; nothing exists on its own, interdependence all the way down.
+    divergence: Huayan celebrates the plenary interpenetration of a real totality; Madhyamaka stresses the emptiness of every
+      node, resisting any reified whole.
+    passage_id: ''
+  - citation: Spinoza (nothing exists independently except substance)
+    resonance: radical relationality of finite modes, none self-standing.
+    divergence: Spinoza grounds all in one necessary Substance (God/Nature); Nāgārjuna denies any such self-existent ground,
+      emptiness included.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Take one object in front of you and, for two minutes, name aloud or silently the conditions it depends on—makers,

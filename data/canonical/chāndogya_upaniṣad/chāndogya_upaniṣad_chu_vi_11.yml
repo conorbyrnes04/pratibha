@@ -36,19 +36,7 @@ commentary: 'The fundamental philosophical claim here is that the essence of all
   * **Prāṇa (प्राण)** — from *prā* (to fill) -> the life force, breath -> the vital energy that animates the body.
 
   * **Jīva (जीव)** — from *jīv* (to live) -> the living being, the individual -> emphasizes the living, embodied aspect of
-  the self.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 16:** The concept of the imperishable essence resonates with the Taoist idea of the unnamable,
-  eternal Tao that underlies all existence. *Divergence:* While the Tao Te Ching emphasizes the dynamic, ever-changing nature
-  of reality, the Chāndogya Upaniṣad focuses on the eternal, unchanging essence.
-
-  * **Plotinus, Enneads VI.9:** The idea of the imperishable Self is echoed in Plotinus'' concept of the eternal, unchanging
-  Intellect (Nous). *Divergence:* Plotinus'' emphasis on the Intellect as the source of all being differs from the Upaniṣad''s
-  focus on the individual Self as the ultimate reality.'
+  the self.'
 insight: The fundamental philosophical claim here is that the essence of all existence, the *Sat*, is imperishable and eternal,
   unlike the mortal frames it inhabits.
 practice: As you breathe in and out, contemplate the life force that animates your body, and consider the possibility that
@@ -110,19 +98,22 @@ pratibha_layers:
     * **Prāṇa (प्राण)** — from *prā* (to fill) -> the life force, breath -> the vital energy that animates the body.
 
     * **Jīva (जीव)** — from *jīv* (to live) -> the living being, the individual -> emphasizes the living, embodied aspect
-    of the self.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 16:** The concept of the imperishable essence resonates with the Taoist idea of the unnamable,
-    eternal Tao that underlies all existence. *Divergence:* While the Tao Te Ching emphasizes the dynamic, ever-changing nature
-    of reality, the Chāndogya Upaniṣad focuses on the eternal, unchanging essence.
-
-    * **Plotinus, Enneads VI.9:** The idea of the imperishable Self is echoed in Plotinus'' concept of the eternal, unchanging
-    Intellect (Nous). *Divergence:* Plotinus'' emphasis on the Intellect as the source of all being differs from the Upaniṣad''s
-    focus on the individual Self as the ultimate reality.'
+    of the self.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 16
+    resonance: The concept of the imperishable essence resonates with the Taoist idea of the unnamable, eternal Tao that underlies
+      all existence.
+    divergence: While the Tao Te Ching emphasizes the dynamic, ever-changing nature of reality, the Chāndogya Upaniṣad focuses
+      on the eternal, unchanging essence.
+    passage_id: tao_te_ching.ttc_md_016
+  - citation: Plotinus, Enneads VI.9
+    resonance: The idea of the imperishable Self is echoed in Plotinus' concept of the eternal, unchanging Intellect (Nous).
+    divergence: Plotinus' emphasis on the Intellect as the source of all being differs from the Upaniṣad's focus on the individual
+      Self as the ultimate reality.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: As you breathe in and out, contemplate the life force that animates your body, and consider the possibility that this

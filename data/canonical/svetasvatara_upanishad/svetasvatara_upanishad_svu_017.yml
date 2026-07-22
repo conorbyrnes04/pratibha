@@ -79,19 +79,7 @@ commentary: 'The text holds three levels together: phenomenology (inner signs), 
   **yoga-pravṛtti (योगप्रवृत्ति)** - active onset of yogic transformation.
 
 
-  **vita-shoka (वीतशोक)** - beyond grief through realized identity, not emotional suppression.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Patanjali’s cautions on siddhi-like phenomena:** experiences can distract from liberation.
-
-
-  **Franciscan sacramentality of nature:** divine presence in created forms. *Divergence:* distinct doctrinal frame.
-
-
-  **Daoist naturalness:** sacred process disclosed in elemental flow.'
+  **vita-shoka (वीतशोक)** - beyond grief through realized identity, not emotional suppression.'
 insight: 'The text holds three levels together: phenomenology (inner signs), embodiment (somatic refinement), and ontology
   (immanence of God in all forms).'
 practice: 'Track practice effects weekly under three headings: mind, body, conduct. If unusual experiences increase but greed/irritability
@@ -194,19 +182,23 @@ pratibha_layers:
     **yoga-pravṛtti (योगप्रवृत्ति)** - active onset of yogic transformation.
 
 
-    **vita-shoka (वीतशोक)** - beyond grief through realized identity, not emotional suppression.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Patanjali’s cautions on siddhi-like phenomena:** experiences can distract from liberation.
-
-
-    **Franciscan sacramentality of nature:** divine presence in created forms. *Divergence:* distinct doctrinal frame.
-
-
-    **Daoist naturalness:** sacred process disclosed in elemental flow.'
+    **vita-shoka (वीतशोक)** - beyond grief through realized identity, not emotional suppression.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patanjali’s cautions on siddhi-like phenomena
+    resonance: experiences can distract from liberation.
+    divergence: ''
+    passage_id: ''
+  - citation: Franciscan sacramentality of nature
+    resonance: divine presence in created forms.
+    divergence: distinct doctrinal frame.
+    passage_id: ''
+  - citation: Daoist naturalness
+    resonance: sacred process disclosed in elemental flow.
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Track practice effects weekly under three headings: mind, body, conduct. If unusual experiences increase but greed/irritability

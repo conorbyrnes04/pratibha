@@ -83,22 +83,7 @@ commentary: 'This cluster offers one of the most practical contemplative grammar
   **pranava (प्रणव)** - Om as sonic seed and orienting axis of contemplative attention.
 
 
-  **tapas (तपस्)** - heat, ardor, disciplined intensity that refines and reveals; not mere ascetic harshness.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Yoga Sutra 1.23 and 1.28:** Similar use of focused devotion and mantra repetition to steady and open awareness. *Divergence:*
-  Yoga Sutra is more technical-psychological, less explicitly ontological-theistic.
-
-
-  **Hesychasm (Jesus Prayer):** Repetition with embodied posture and breath for heart-centering awareness. *Divergence:* Christological
-  devotional frame differs from Om-centered Upaniṣadic language.
-
-
-  **Zen koan practice:** Repeated disciplined "friction" that burns through conceptual fixation. *Divergence:* Zen minimizes
-  metaphysical assertions that this passage explicitly affirms.'
+  **tapas (तपस्)** - heat, ardor, disciplined intensity that refines and reveals; not mere ascetic harshness.'
 insight: This cluster offers one of the most practical contemplative grammars in the Upaniṣads.
 practice: Sit upright for 12 minutes daily. On each inhale silently sound "O," on each exhale "M." Keep attention at the heart
   center and treat distractions as unlit wood. Continue until attention feels heated, steady, and quietly luminous.
@@ -211,22 +196,23 @@ pratibha_layers:
     **pranava (प्रणव)** - Om as sonic seed and orienting axis of contemplative attention.
 
 
-    **tapas (तपस्)** - heat, ardor, disciplined intensity that refines and reveals; not mere ascetic harshness.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Yoga Sutra 1.23 and 1.28:** Similar use of focused devotion and mantra repetition to steady and open awareness. *Divergence:*
-    Yoga Sutra is more technical-psychological, less explicitly ontological-theistic.
-
-
-    **Hesychasm (Jesus Prayer):** Repetition with embodied posture and breath for heart-centering awareness. *Divergence:*
-    Christological devotional frame differs from Om-centered Upaniṣadic language.
-
-
-    **Zen koan practice:** Repeated disciplined "friction" that burns through conceptual fixation. *Divergence:* Zen minimizes
-    metaphysical assertions that this passage explicitly affirms.'
+    **tapas (तपस्)** - heat, ardor, disciplined intensity that refines and reveals; not mere ascetic harshness.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Yoga Sutra 1.23 and 1.28
+    resonance: Similar use of focused devotion and mantra repetition to steady and open awareness.
+    divergence: Yoga Sutra is more technical-psychological, less explicitly ontological-theistic.
+    passage_id: ''
+  - citation: Hesychasm (Jesus Prayer)
+    resonance: Repetition with embodied posture and breath for heart-centering awareness.
+    divergence: Christological devotional frame differs from Om-centered Upaniṣadic language.
+    passage_id: ''
+  - citation: Zen koan practice
+    resonance: Repeated disciplined "friction" that burns through conceptual fixation.
+    divergence: Zen minimizes metaphysical assertions that this passage explicitly affirms.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit upright for 12 minutes daily. On each inhale silently sound "O," on each exhale "M." Keep attention at the heart

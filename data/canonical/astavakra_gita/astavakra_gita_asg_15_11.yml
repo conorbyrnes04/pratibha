@@ -27,17 +27,6 @@ commentary: 'Extended Translation:
   response to pleasure and pain; they simply recognize that the ocean is not enlarged or reduced by the wave.
 
 
-  Cross-Tradition Resonance:
-
-  - Pratyabhijñāhṛdayam 15: *viśvam ātmasāt karoti* — making the universe one''s own; the same ocean-recognition in active
-  voice
-
-  - Plotinus *Enneads* VI.5: the One is not increased by what proceeds from it, nor diminished; the perfect parallel
-
-  - Dào Dé Jīng ch. 16: "Returning to the root is stillness. Returning to the root is called returning to destiny" — the wave
-  returning to the ocean as the natural movement
-
-
   ## Chapters 16–18 · *The Liberated One*
 
 
@@ -89,23 +78,29 @@ pratibha_layers:
     suppress response to pleasure and pain; they simply recognize that the ocean is not enlarged or reduced by the wave.
 
 
-    Cross-Tradition Resonance:
-
-    - Pratyabhijñāhṛdayam 15: *viśvam ātmasāt karoti* — making the universe one''s own; the same ocean-recognition in active
-    voice
-
-    - Plotinus *Enneads* VI.5: the One is not increased by what proceeds from it, nor diminished; the perfect parallel
-
-    - Dào Dé Jīng ch. 16: "Returning to the root is stillness. Returning to the root is called returning to destiny" — the
-    wave returning to the ocean as the natural movement
-
-
     ## Chapters 16–18 · *The Liberated One*
 
 
     > *These chapters constitute the text''s portrait of the jīvanmukta — the one liberated while living. Rather than prescriptions,
     they are descriptions: phenomenological accounts of what liberation looks like from the outside and feels like from the
     inside. They function as a mirror for the reader''s own recognition.*'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijñāhṛdayam 15
+    resonance: '*viśvam ātmasāt karoti* — making the universe one''s own; the same ocean-recognition in active voice'
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_015
+  - citation: Plotinus *Enneads* VI.5
+    resonance: the One is not increased by what proceeds from it, nor diminished; the perfect parallel
+    divergence: ''
+    passage_id: ''
+  - citation: Dào Dé Jīng ch. 16
+    resonance: '"Returning to the root is stillness. Returning to the root is called returning to destiny" — the wave returning
+      to the ocean as the natural movement'
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

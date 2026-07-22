@@ -31,19 +31,7 @@ commentary: 'The philosophical claim here is that identity and change are intert
   translation misses: the idea that our actions are part of the dynamic process of change.
 
   * **Λόγος (Logos)** — etymology: reason, word -> Heraclitean meaning: the underlying principle of the universe -> what default
-  translation misses: the concept of Logos as a dynamic, harmonizing force.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 27:** structural homology: the idea that "the name that can be named is not the eternal name"
-  reflects the Heraclitean notion that our understanding of reality is always in flux. *Divergence:* while the Tao Te Ching
-  emphasizes the importance of embracing the unknown, Heraclitus focuses on the dynamic interplay between opposites.
-
-  * **Plotinus, Enneads, III.7.11:** structural homology: the concept of the "eternal now" resonates with Heraclitus'' idea
-  that we both step and do not step into the same river. *Divergence:* Plotinus'' emphasis on the timeless nature of the eternal
-  now differs from Heraclitus'' focus on the dynamic, ever-changing nature of reality.'
+  translation misses: the concept of Logos as a dynamic, harmonizing force.'
 insight: The philosophical claim here is that identity and change are intertwined, making it impossible to pinpoint a fixed
   state.
 practice: As you walk along a river or engage with any dynamic system, notice the ways in which you are both part of and separate
@@ -95,19 +83,23 @@ pratibha_layers:
     default translation misses: the idea that our actions are part of the dynamic process of change.
 
     * **Λόγος (Logos)** — etymology: reason, word -> Heraclitean meaning: the underlying principle of the universe -> what
-    default translation misses: the concept of Logos as a dynamic, harmonizing force.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 27:** structural homology: the idea that "the name that can be named is not the eternal name"
-    reflects the Heraclitean notion that our understanding of reality is always in flux. *Divergence:* while the Tao Te Ching
-    emphasizes the importance of embracing the unknown, Heraclitus focuses on the dynamic interplay between opposites.
-
-    * **Plotinus, Enneads, III.7.11:** structural homology: the concept of the "eternal now" resonates with Heraclitus'' idea
-    that we both step and do not step into the same river. *Divergence:* Plotinus'' emphasis on the timeless nature of the
-    eternal now differs from Heraclitus'' focus on the dynamic, ever-changing nature of reality.'
+    default translation misses: the concept of Logos as a dynamic, harmonizing force.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 27
+    resonance: 'structural homology: the idea that "the name that can be named is not the eternal name" reflects the Heraclitean
+      notion that our understanding of reality is always in flux.'
+    divergence: while the Tao Te Ching emphasizes the importance of embracing the unknown, Heraclitus focuses on the dynamic
+      interplay between opposites.
+    passage_id: tao_te_ching.ttc_md_027
+  - citation: Plotinus, Enneads, III.7.11
+    resonance: 'structural homology: the concept of the "eternal now" resonates with Heraclitus'' idea that we both step and
+      do not step into the same river.'
+    divergence: Plotinus' emphasis on the timeless nature of the eternal now differs from Heraclitus' focus on the dynamic,
+      ever-changing nature of reality.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: As you walk along a river or engage with any dynamic system, notice the ways in which you are both part of and separate

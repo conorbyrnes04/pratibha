@@ -61,23 +61,7 @@ commentary: 'This chapter asserts that the universe itself is a model of imperma
   as "virtue" or "moral power"
 
   **zìrán 自然** — the state of being in its natural, unforced condition; the spontaneous order of the cosmos; rendered "naturalness"
-  but here it stresses the uncontrived nature of reality
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 1 (the Tao is the source of all things, the unnamable, the beginning of all existence):** Both chapters
-  emphasize the ineffable nature of the Tao and its role as the underlying principle of reality. *Divergence:* Chapter 23
-  expands this to include the Tao’s relationship with failure, which is absent in chapter 1
-
-  **Zhuangzi, chapter 23 (the spontaneous nature of the universe, the folly of human striving):** Both texts celebrate the
-  spontaneous, effortless flow of the cosmos. *Divergence:* Zhuangzi’s chapter focuses on the absurdity of human ambition,
-  whereas chapter 23 frames failure as a harmonious state
-
-  **Confucius, Analects 2.17 (the importance of aligning with the moral order):** Both texts link moral alignment with a higher
-  order. *Divergence:* Confucius emphasizes social harmony and ritual, while chapter 23 presents a more individual, spontaneous
-  alignment with the Tao'
+  but here it stresses the uncontrived nature of reality'
 insight: ''
 practice: Stand in a quiet place, breathe slowly, and observe the natural rhythm of your own thoughts and feelings. Whenever
   you notice a sudden urge to act or to judge, pause and let the urge pass like a fleeting wind. In this way, you practice
@@ -183,23 +167,25 @@ pratibha_layers:
     translated as "virtue" or "moral power"
 
     **zìrán 自然** — the state of being in its natural, unforced condition; the spontaneous order of the cosmos; rendered "naturalness"
-    but here it stresses the uncontrived nature of reality
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 1 (the Tao is the source of all things, the unnamable, the beginning of all existence):** Both chapters
-    emphasize the ineffable nature of the Tao and its role as the underlying principle of reality. *Divergence:* Chapter 23
-    expands this to include the Tao’s relationship with failure, which is absent in chapter 1
-
-    **Zhuangzi, chapter 23 (the spontaneous nature of the universe, the folly of human striving):** Both texts celebrate the
-    spontaneous, effortless flow of the cosmos. *Divergence:* Zhuangzi’s chapter focuses on the absurdity of human ambition,
-    whereas chapter 23 frames failure as a harmonious state
-
-    **Confucius, Analects 2.17 (the importance of aligning with the moral order):** Both texts link moral alignment with a
-    higher order. *Divergence:* Confucius emphasizes social harmony and ritual, while chapter 23 presents a more individual,
-    spontaneous alignment with the Tao'
+    but here it stresses the uncontrived nature of reality'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 1 (the Tao is the source of all things, the unnamable, the beginning of all existence)
+    resonance: Both chapters emphasize the ineffable nature of the Tao and its role as the underlying principle of reality.
+    divergence: Chapter 23 expands this to include the Tao’s relationship with failure, which is absent in chapter 1
+    passage_id: ''
+  - citation: Zhuangzi, chapter 23 (the spontaneous nature of the universe, the folly of human striving)
+    resonance: Both texts celebrate the spontaneous, effortless flow of the cosmos.
+    divergence: Zhuangzi’s chapter focuses on the absurdity of human ambition, whereas chapter 23 frames failure as a harmonious
+      state
+    passage_id: ''
+  - citation: Confucius, Analects 2.17 (the importance of aligning with the moral order)
+    resonance: Both texts link moral alignment with a higher order.
+    divergence: Confucius emphasizes social harmony and ritual, while chapter 23 presents a more individual, spontaneous alignment
+      with the Tao
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand in a quiet place, breathe slowly, and observe the natural rhythm of your own thoughts and feelings. Whenever

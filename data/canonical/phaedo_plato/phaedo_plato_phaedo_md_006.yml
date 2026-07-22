@@ -46,26 +46,7 @@ commentary: 'The claim is that ontological identity has entailments. Socrates'' 
 
 
   **logos apodeiktikos (λόγος ἀποδεικτικός)** - demonstrative reasoning -> Socrates aims at necessity from agreed premises
-  -> absent this frame, the section appears as rhetorical flourish rather than proof attempt.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Phaedrus 245c-e (self-moving soul):** Both arguments seek soul''s deathlessness through its essential role rather than
-  empirical persistence.
-
-  *Divergence:* *Phaedrus* grounds in self-motion; *Phaedo* grounds in life-participation and contrary exclusion.
-
-
-  **Nyaya discussions on atman as substratum of cognition:** Both use inferential structure to establish a non-reducible self-principle.
-
-  *Divergence:* Nyaya is realist-analytic with different metaphysical primitives; Plato''s frame is Form-participation.
-
-
-  **Mundaka Upanishad 2.2.11:** Both claim contact with the imperishable requires recognition beyond changing composites.
-
-  *Divergence:* Upanishadic approach is contemplative-revelatory; Plato''s is dialectical-elenchic.'
+  -> absent this frame, the section appears as rhetorical flourish rather than proof attempt.'
 insight: The claim is that ontological identity has entailments.
 practice: 'Write one sentence beginning "What I take to be essential in me is..." then test it: can that claim remain coherent
   when status, mood, and body-state change?'
@@ -126,27 +107,23 @@ pratibha_layers:
 
 
     **logos apodeiktikos (λόγος ἀποδεικτικός)** - demonstrative reasoning -> Socrates aims at necessity from agreed premises
-    -> absent this frame, the section appears as rhetorical flourish rather than proof attempt.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Phaedrus 245c-e (self-moving soul):** Both arguments seek soul''s deathlessness through its essential role rather than
-    empirical persistence.
-
-    *Divergence:* *Phaedrus* grounds in self-motion; *Phaedo* grounds in life-participation and contrary exclusion.
-
-
-    **Nyaya discussions on atman as substratum of cognition:** Both use inferential structure to establish a non-reducible
-    self-principle.
-
-    *Divergence:* Nyaya is realist-analytic with different metaphysical primitives; Plato''s frame is Form-participation.
-
-
-    **Mundaka Upanishad 2.2.11:** Both claim contact with the imperishable requires recognition beyond changing composites.
-
-    *Divergence:* Upanishadic approach is contemplative-revelatory; Plato''s is dialectical-elenchic.'
+    -> absent this frame, the section appears as rhetorical flourish rather than proof attempt.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Phaedrus 245c-e (self-moving soul)
+    resonance: Both arguments seek soul's deathlessness through its essential role rather than empirical persistence.
+    divergence: '*Phaedrus* grounds in self-motion; *Phaedo* grounds in life-participation and contrary exclusion.'
+    passage_id: ''
+  - citation: Nyaya discussions on atman as substratum of cognition
+    resonance: Both use inferential structure to establish a non-reducible self-principle.
+    divergence: Nyaya is realist-analytic with different metaphysical primitives; Plato's frame is Form-participation.
+    passage_id: ''
+  - citation: Mundaka Upanishad 2.2.11
+    resonance: Both claim contact with the imperishable requires recognition beyond changing composites.
+    divergence: Upanishadic approach is contemplative-revelatory; Plato's is dialectical-elenchic.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Write one sentence beginning "What I take to be essential in me is..." then test it: can that claim remain coherent

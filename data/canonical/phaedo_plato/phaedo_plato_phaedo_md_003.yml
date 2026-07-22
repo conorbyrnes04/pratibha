@@ -46,27 +46,7 @@ commentary: 'The claim is that ontology and practice cannot be separated: what t
 
 
   **logos (λόγος)** - reasoned account -> the medium by which soul can align with what is stable -> translating as only "word"
-  obscures its structural role in truth-seeking.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Republic VI-VII (Sun/Line/Cave):** Both distinguish changing appearances from intelligible grounds and tie education to
-  turning the soul.
-
-  *Divergence:* *Republic* frames this politically and pedagogically; *Phaedo* frames it as preparation for death and post-mortem
-  destiny.
-
-
-  **Mundaka Upanishad 1.1.4-1.1.5:** Both differentiate lower knowledge of changing objects from higher knowledge of the imperishable.
-
-  *Divergence:* Mundaka''s pathway is Vedic-renunciatory revelation; Plato''s is dialogical argument and conceptual refinement.
-
-
-  **Plotinus, Enneads I.6 and IV.8:** Both insist the soul can recollect from dispersion into unity.
-
-  *Divergence:* Plotinus develops emanationist metaphysics beyond Plato''s dramatic-dialectical frame.'
+  obscures its structural role in truth-seeking.'
 insight: 'The claim is that ontology and practice cannot be separated: what the soul becomes like determines where and how
   it abides.'
 practice: 'At three points today, pause for one breath and label experience in two columns: "changing content" and "that which
@@ -138,28 +118,24 @@ pratibha_layers:
 
 
     **logos (λόγος)** - reasoned account -> the medium by which soul can align with what is stable -> translating as only
-    "word" obscures its structural role in truth-seeking.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Republic VI-VII (Sun/Line/Cave):** Both distinguish changing appearances from intelligible grounds and tie education
-    to turning the soul.
-
-    *Divergence:* *Republic* frames this politically and pedagogically; *Phaedo* frames it as preparation for death and post-mortem
-    destiny.
-
-
-    **Mundaka Upanishad 1.1.4-1.1.5:** Both differentiate lower knowledge of changing objects from higher knowledge of the
-    imperishable.
-
-    *Divergence:* Mundaka''s pathway is Vedic-renunciatory revelation; Plato''s is dialogical argument and conceptual refinement.
-
-
-    **Plotinus, Enneads I.6 and IV.8:** Both insist the soul can recollect from dispersion into unity.
-
-    *Divergence:* Plotinus develops emanationist metaphysics beyond Plato''s dramatic-dialectical frame.'
+    "word" obscures its structural role in truth-seeking.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Republic VI-VII (Sun/Line/Cave)
+    resonance: Both distinguish changing appearances from intelligible grounds and tie education to turning the soul.
+    divergence: '*Republic* frames this politically and pedagogically; *Phaedo* frames it as preparation for death and post-mortem
+      destiny.'
+    passage_id: ''
+  - citation: Mundaka Upanishad 1.1.4-1.1.5
+    resonance: Both differentiate lower knowledge of changing objects from higher knowledge of the imperishable.
+    divergence: Mundaka's pathway is Vedic-renunciatory revelation; Plato's is dialogical argument and conceptual refinement.
+    passage_id: ''
+  - citation: Plotinus, Enneads I.6 and IV.8
+    resonance: Both insist the soul can recollect from dispersion into unity.
+    divergence: Plotinus develops emanationist metaphysics beyond Plato's dramatic-dialectical frame.
+    passage_id: plotinus_enneads.enn_i_6_08
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'At three points today, pause for one breath and label experience in two columns: "changing content" and "that which

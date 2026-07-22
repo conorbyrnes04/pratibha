@@ -46,30 +46,7 @@ commentary: 'The claim is that explicit knowledge is necessary but insufficient:
 
 
   **dé (得)** - to obtain/realize -> implied in craft attainment beyond speech -> indicates lived acquisition through participation,
-  not conceptual possession.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Polanyi, *The Tacit Dimension*:** "we know more than we can tell" mirrors the wheelwright''s claim about non-propositional
-  mastery.
-
-  *Divergence:* Polanyi frames tacitness epistemologically within modern science/philosophy; Zhuangzi frames it existentially
-  within Daoist critique of conceptual fixation.
-
-
-  **Zen, "special transmission outside scriptures":** both stress direct realization beyond textual dependence.
-
-  *Divergence:* Zen embeds this in lineage and awakening discourse; Zhuangzi presents it through artisan-ruler dialogue without
-  institutional transmission structure.
-
-
-  **Aristotle, *Nicomachean Ethics* VI (phronesis):** practical wisdom is not deduction from universals but context-sensitive
-  judgment.
-
-  *Divergence:* Aristotle still systematizes practical reason; Zhuangzi emphasizes incommunicable immediacy and anti-systematic
-  attunement.'
+  not conceptual possession.'
 insight: 'The claim is that explicit knowledge is necessary but insufficient: living understanding includes a tacit dimension
   irreducible to propositions.'
 practice: Choose one idea you currently "agree with" intellectually, identify one concrete action that would embody it within
@@ -142,30 +119,26 @@ pratibha_layers:
 
 
     **dé (得)** - to obtain/realize -> implied in craft attainment beyond speech -> indicates lived acquisition through participation,
-    not conceptual possession.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Polanyi, *The Tacit Dimension*:** "we know more than we can tell" mirrors the wheelwright''s claim about non-propositional
-    mastery.
-
-    *Divergence:* Polanyi frames tacitness epistemologically within modern science/philosophy; Zhuangzi frames it existentially
-    within Daoist critique of conceptual fixation.
-
-
-    **Zen, "special transmission outside scriptures":** both stress direct realization beyond textual dependence.
-
-    *Divergence:* Zen embeds this in lineage and awakening discourse; Zhuangzi presents it through artisan-ruler dialogue
-    without institutional transmission structure.
-
-
-    **Aristotle, *Nicomachean Ethics* VI (phronesis):** practical wisdom is not deduction from universals but context-sensitive
-    judgment.
-
-    *Divergence:* Aristotle still systematizes practical reason; Zhuangzi emphasizes incommunicable immediacy and anti-systematic
-    attunement.'
+    not conceptual possession.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Polanyi, *The Tacit Dimension*
+    resonance: '"we know more than we can tell" mirrors the wheelwright''s claim about non-propositional mastery.'
+    divergence: Polanyi frames tacitness epistemologically within modern science/philosophy; Zhuangzi frames it existentially
+      within Daoist critique of conceptual fixation.
+    passage_id: ''
+  - citation: Zen, "special transmission outside scriptures"
+    resonance: both stress direct realization beyond textual dependence.
+    divergence: Zen embeds this in lineage and awakening discourse; Zhuangzi presents it through artisan-ruler dialogue without
+      institutional transmission structure.
+    passage_id: ''
+  - citation: Aristotle, *Nicomachean Ethics* VI (phronesis)
+    resonance: practical wisdom is not deduction from universals but context-sensitive judgment.
+    divergence: Aristotle still systematizes practical reason; Zhuangzi emphasizes incommunicable immediacy and anti-systematic
+      attunement.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one idea you currently "agree with" intellectually, identify one concrete action that would embody it within

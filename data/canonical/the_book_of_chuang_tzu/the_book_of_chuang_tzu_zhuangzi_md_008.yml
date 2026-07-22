@@ -61,31 +61,7 @@ commentary: 'The claim is that freedom is a physiological-ethical integration: o
 
 
   **bù yǐ rén zhù tiān (不以人助天)** - "do not use the human to ''help'' heaven/nature" -> in context, do not overmanage process
-  through anxious control -> default renderings can sound fatalistic; the point is calibrated non-interference, not helplessness.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Bhagavad Gita 2.56-57:** the steady one is not agitated in sorrow, not elated in gain, and remains free from compulsive
-  attachment and aversion. Structurally, both portray equanimity as embodied non-reactivity rather than concept-only discipline.
-
-  *Divergence:* The Gita frames stability within devotion, duty, and Self-knowledge; Zhuangzi frames it as natural process
-  alignment and de-intensification of selfing.
-
-
-  **Patanjali Yoga Sutra 2.49-2.53 (pranayama and citta-clarity):** both traditions link breath refinement with transformation
-  of mental fluctuation and perceptual clarity.
-
-  *Divergence:* Patanjali formalizes a staged technical system; Zhuangzi gives a poetic anthropological image without codifying
-  practice mechanics.
-
-
-  **Heidegger, *Gelassenheit* (releasement):** both counsel non-grasping relation to beings rather than constant calculative
-  control.
-
-  *Divergence:* Heidegger''s project is a modern philosophical critique of technological enframing; Zhuangzi''s is a cosmological-ethical
-  invitation grounded in Daoist naturalism.'
+  through anxious control -> default renderings can sound fatalistic; the point is calibrated non-interference, not helplessness.'
 insight: 'The claim is that freedom is a physiological-ethical integration: ontology, affect, and breath are not separate
   domains.'
 practice: 'Three times today, when you notice yourself rehearsing gain/loss scenarios, stop for ten breaths into the lower
@@ -175,31 +151,27 @@ pratibha_layers:
 
 
     **bù yǐ rén zhù tiān (不以人助天)** - "do not use the human to ''help'' heaven/nature" -> in context, do not overmanage process
-    through anxious control -> default renderings can sound fatalistic; the point is calibrated non-interference, not helplessness.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Bhagavad Gita 2.56-57:** the steady one is not agitated in sorrow, not elated in gain, and remains free from compulsive
-    attachment and aversion. Structurally, both portray equanimity as embodied non-reactivity rather than concept-only discipline.
-
-    *Divergence:* The Gita frames stability within devotion, duty, and Self-knowledge; Zhuangzi frames it as natural process
-    alignment and de-intensification of selfing.
-
-
-    **Patanjali Yoga Sutra 2.49-2.53 (pranayama and citta-clarity):** both traditions link breath refinement with transformation
-    of mental fluctuation and perceptual clarity.
-
-    *Divergence:* Patanjali formalizes a staged technical system; Zhuangzi gives a poetic anthropological image without codifying
-    practice mechanics.
-
-
-    **Heidegger, *Gelassenheit* (releasement):** both counsel non-grasping relation to beings rather than constant calculative
-    control.
-
-    *Divergence:* Heidegger''s project is a modern philosophical critique of technological enframing; Zhuangzi''s is a cosmological-ethical
-    invitation grounded in Daoist naturalism.'
+    through anxious control -> default renderings can sound fatalistic; the point is calibrated non-interference, not helplessness.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita 2.56-57
+    resonance: the steady one is not agitated in sorrow, not elated in gain, and remains free from compulsive attachment and
+      aversion. Structurally, both portray equanimity as embodied non-reactivity rather than concept-only discipline.
+    divergence: The Gita frames stability within devotion, duty, and Self-knowledge; Zhuangzi frames it as natural process
+      alignment and de-intensification of selfing.
+    passage_id: ''
+  - citation: Patanjali Yoga Sutra 2.49-2.53 (pranayama and citta-clarity)
+    resonance: both traditions link breath refinement with transformation of mental fluctuation and perceptual clarity.
+    divergence: Patanjali formalizes a staged technical system; Zhuangzi gives a poetic anthropological image without codifying
+      practice mechanics.
+    passage_id: ''
+  - citation: Heidegger, *Gelassenheit* (releasement)
+    resonance: both counsel non-grasping relation to beings rather than constant calculative control.
+    divergence: Heidegger's project is a modern philosophical critique of technological enframing; Zhuangzi's is a cosmological-ethical
+      invitation grounded in Daoist naturalism.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Three times today, when you notice yourself rehearsing gain/loss scenarios, stop for ten breaths into the lower body

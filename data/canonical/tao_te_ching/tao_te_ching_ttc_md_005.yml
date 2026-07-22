@@ -72,24 +72,7 @@ commentary: 'chapter 2 (beauty and ugliness arising together) is the *Dào Dé J
 
 
   **fú jū 弗居** — not dwelling, not occupying the achievement — why completed work "does not depart." To cling to success freezes
-  the process; release keeps the cycle open.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Nāgārjuna, *Mūlamadhyamakakārikā* 1.1:** dependent co-arising of all phenomena — opposites and designations arise together
-  without independent essence. *Divergence:* Nāgārjuna''s move is logical-ontological refutation; Lǎozǐ''s is observational
-  ethics of the sage who stops fixing categories.
-
-
-  **Gauḍapāda Kārikā 2.32:** waking and dream mutually define each other; neither is absolute. *Divergence:* Gauḍapāda resolves
-  in non-dual *Brahman*; chapter 2 (beauty and ugliness arising together) resolves in non-clinging conduct without positing
-  a witness.
-
-
-  **Heraclitus B67:** "God is day and night, winter and summer, war and peace, surfeit and hunger." *Divergence:* Heraclitus
-  stresses strife (*polemos*) as harmony''s engine; Lǎozǐ stresses non-dwelling release after completion.'
+  the process; release keeps the cycle open.'
 insight: 'chapter 2 (beauty and ugliness arising together) is the *Dào Dé Jīng*''s first sustained argument about relational
   knowing: nothing appears as what it is except against what it is not.'
 practice: Notice one judgment you made today ("this is good," "this is bad," "this went well"). Name the contrast it silently
@@ -186,24 +169,25 @@ pratibha_layers:
 
 
     **fú jū 弗居** — not dwelling, not occupying the achievement — why completed work "does not depart." To cling to success
-    freezes the process; release keeps the cycle open.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Nāgārjuna, *Mūlamadhyamakakārikā* 1.1:** dependent co-arising of all phenomena — opposites and designations arise together
-    without independent essence. *Divergence:* Nāgārjuna''s move is logical-ontological refutation; Lǎozǐ''s is observational
-    ethics of the sage who stops fixing categories.
-
-
-    **Gauḍapāda Kārikā 2.32:** waking and dream mutually define each other; neither is absolute. *Divergence:* Gauḍapāda resolves
-    in non-dual *Brahman*; chapter 2 (beauty and ugliness arising together) resolves in non-clinging conduct without positing
-    a witness.
-
-
-    **Heraclitus B67:** "God is day and night, winter and summer, war and peace, surfeit and hunger." *Divergence:* Heraclitus
-    stresses strife (*polemos*) as harmony''s engine; Lǎozǐ stresses non-dwelling release after completion.'
+    freezes the process; release keeps the cycle open.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nāgārjuna, *Mūlamadhyamakakārikā* 1.1
+    resonance: dependent co-arising of all phenomena — opposites and designations arise together without independent essence.
+    divergence: Nāgārjuna's move is logical-ontological refutation; Lǎozǐ's is observational ethics of the sage who stops
+      fixing categories.
+    passage_id: ''
+  - citation: Gauḍapāda Kārikā 2.32
+    resonance: waking and dream mutually define each other; neither is absolute.
+    divergence: Gauḍapāda resolves in non-dual *Brahman*; chapter 2 (beauty and ugliness arising together) resolves in non-clinging
+      conduct without positing a witness.
+    passage_id: ''
+  - citation: Heraclitus B67
+    resonance: '"God is day and night, winter and summer, war and peace, surfeit and hunger."'
+    divergence: Heraclitus stresses strife (*polemos*) as harmony's engine; Lǎozǐ stresses non-dwelling release after completion.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Notice one judgment you made today ("this is good," "this is bad," "this went well"). Name the contrast it silently

@@ -68,22 +68,7 @@ commentary: 'These verses are one of the clearest anti-reduction statements in t
   **abhidhyana (अभिध्यान)** - sustained contemplative attention charged with intentionality; more than casual reflection.
 
 
-  **aptakama (आप्तकाम)** - one whose fundamental lack has ended; fulfillment not dependent on acquisition.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Bhagavad Gita 15.16-18:** Similar mutable/immutable distinction completed in Supreme Person. *Divergence:* Gita embeds
-  this in dharma-action and devotion to Krishna.
-
-
-  **Mandukya Karika III:** Shared concern with dissolving superimposition. *Divergence:* Karika often de-emphasizes creator
-  language that Śvetāśvatara retains.
-
-
-  **Plotinus, Enneads VI:** Both distinguish changing process from higher immutable principle. *Divergence:* Plotinus frames
-  return as ascent of intellect; Śvetāśvatara integrates devotion to Hara.'
+  **aptakama (आप्तकाम)** - one whose fundamental lack has ended; fulfillment not dependent on acquisition.'
 insight: These verses are one of the clearest anti-reduction statements in the text.
 practice: 'Choose one recurring craving. For seven days, before acting on it, ask: What is perishable here, what feels imperishable,
   and who is the implied enjoyer? Act only after this threefold check.'
@@ -179,22 +164,23 @@ pratibha_layers:
     **abhidhyana (अभिध्यान)** - sustained contemplative attention charged with intentionality; more than casual reflection.
 
 
-    **aptakama (आप्तकाम)** - one whose fundamental lack has ended; fulfillment not dependent on acquisition.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Bhagavad Gita 15.16-18:** Similar mutable/immutable distinction completed in Supreme Person. *Divergence:* Gita embeds
-    this in dharma-action and devotion to Krishna.
-
-
-    **Mandukya Karika III:** Shared concern with dissolving superimposition. *Divergence:* Karika often de-emphasizes creator
-    language that Śvetāśvatara retains.
-
-
-    **Plotinus, Enneads VI:** Both distinguish changing process from higher immutable principle. *Divergence:* Plotinus frames
-    return as ascent of intellect; Śvetāśvatara integrates devotion to Hara.'
+    **aptakama (आप्तकाम)** - one whose fundamental lack has ended; fulfillment not dependent on acquisition.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita 15.16-18
+    resonance: Similar mutable/immutable distinction completed in Supreme Person.
+    divergence: Gita embeds this in dharma-action and devotion to Krishna.
+    passage_id: ''
+  - citation: Mandukya Karika III
+    resonance: Shared concern with dissolving superimposition.
+    divergence: Karika often de-emphasizes creator language that Śvetāśvatara retains.
+    passage_id: ''
+  - citation: Plotinus, Enneads VI
+    resonance: Both distinguish changing process from higher immutable principle.
+    divergence: Plotinus frames return as ascent of intellect; Śvetāśvatara integrates devotion to Hara.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Choose one recurring craving. For seven days, before acting on it, ask: What is perishable here, what feels imperishable,

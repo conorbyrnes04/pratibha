@@ -33,20 +33,7 @@ commentary: 'The fundamental claim here is that the soul is always active, even 
   translation misses the connotation of a higher state of awareness.
 
   * **Aisthēsis (αἰσθητικὴ)** — from Greek aisthēsis, meaning "perception" -> in Neoplatonism, refers to sense-experience
-  -> default translation misses the connotation of a lower aspect of the soul.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.1.1:** The idea of turning inward to access the soul''s continuous activity resonates with the Upanishad''s
-  concept of turning inward to access the [Ātman].
-
-  * **Phaedo, 64a-67e:** The idea of the soul''s immortality and its continuous activity resonates with Plato''s concept of
-  the soul''s pre-existence and its ability to access eternal knowledge.
-
-  * **Pratyabhijnahrdayam, Sutra 4:** The idea of recognizing one''s true nature and accessing inner wisdom resonates with
-  the concept of [Pratyābhijñā] in Kashmir Shaivism.'
+  -> default translation misses the connotation of a lower aspect of the soul.'
 insight: The fundamental claim here is that the soul is always active, even if we are not aware of it.
 practice: Turn your attention inward and focus on your breath, letting go of sense-perceptions and distractions, and cultivate
   inner perception to access the soul's continuous activity.
@@ -107,20 +94,26 @@ pratibha_layers:
     default translation misses the connotation of a higher state of awareness.
 
     * **Aisthēsis (αἰσθητικὴ)** — from Greek aisthēsis, meaning "perception" -> in Neoplatonism, refers to sense-experience
-    -> default translation misses the connotation of a lower aspect of the soul.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.1.1:** The idea of turning inward to access the soul''s continuous activity resonates with the
-    Upanishad''s concept of turning inward to access the [Ātman].
-
-    * **Phaedo, 64a-67e:** The idea of the soul''s immortality and its continuous activity resonates with Plato''s concept
-    of the soul''s pre-existence and its ability to access eternal knowledge.
-
-    * **Pratyabhijnahrdayam, Sutra 4:** The idea of recognizing one''s true nature and accessing inner wisdom resonates with
-    the concept of [Pratyābhijñā] in Kashmir Shaivism.'
+    -> default translation misses the connotation of a lower aspect of the soul.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.1.1
+    resonance: The idea of turning inward to access the soul's continuous activity resonates with the Upanishad's concept
+      of turning inward to access the [Ātman].
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 64a-67e
+    resonance: The idea of the soul's immortality and its continuous activity resonates with Plato's concept of the soul's
+      pre-existence and its ability to access eternal knowledge.
+    divergence: ''
+    passage_id: ''
+  - citation: Pratyabhijnahrdayam, Sutra 4
+    resonance: The idea of recognizing one's true nature and accessing inner wisdom resonates with the concept of [Pratyābhijñā]
+      in Kashmir Shaivism.
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_004
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Turn your attention inward and focus on your breath, letting go of sense-perceptions and distractions, and cultivate

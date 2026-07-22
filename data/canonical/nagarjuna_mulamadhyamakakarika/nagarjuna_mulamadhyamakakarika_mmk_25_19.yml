@@ -7,12 +7,11 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_25_19
 unit_label: Saṃsāra Is Not the Least Bit Apart from Nirvāṇa
 title: Saṃsāra Is Not the Least Bit Apart from Nirvāṇa
 unit_type: sutra
-sanskrit_devanagari: 'na saṃsārasya nirvāṇāt kiṃcid asti viśeṣaṇam / na nirvāṇasya saṃsārāt kiṃcid asti viśeṣaṇam //
+sanskrit_devanagari: ''
+sanskrit_iast: 'na saṃsārasya nirvāṇāt kiṃcid asti viśeṣaṇam / na nirvāṇasya saṃsārāt kiṃcid asti viśeṣaṇam //
 
 
   *(Sanskrit, IAST, source-verified from GRETIL MMK 25.19.)*'
-sanskrit_iast: na saṃsārasya (not of saṃsāra) nirvāṇāt (from nirvāṇa) kiṃcit asti viśeṣaṇam (is there any distinction); na
-  nirvāṇasya (not of nirvāṇa) saṃsārāt (from saṃsāra) kiṃcit asti viśeṣaṇam (is there any distinction).
 translation_literal: There is not the slightest distinguishing mark [viśeṣaṇa] that separates saṃsāra from nirvāṇa, and not
   the slightest that separates nirvāṇa from saṃsāra.
 commentary: 'This is perhaps the most vertiginous line in the treatise, and it follows rigorously from everything before it.
@@ -41,28 +40,7 @@ commentary: 'This is perhaps the most vertiginous line in the treatise, and it f
   property." Its total absence between saṃsāra and nirvāṇa is the verse''s radical claim.
 
   **koṭi (कोटि, from 25.20)** — Etymology: "tip, limit, endpoint." The limit of nirvāṇa is the limit of saṃsāra—no gap even
-  at the extremes—reinforcing 25.19.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Dōgen, Shōbōgenzō (practice and enlightenment are one; this very place is the Pure Land):** awakening is not elsewhere
-  but the un-deluded relation to just this.
-
-  *Divergence:* Dōgen affirms the full reality of "this" as buddha-nature manifest; Nāgārjuna reaches non-difference via mutual
-  emptiness rather than affirmed presence.
-
-  **Tao Te Ching 25 / the Way that is never left:** there is no exit from the Way to be sought; one returns to what was never
-  absent.
-
-  *Divergence:* the Dao is a sustaining source; nirvāṇa is emptiness, the extinction of grasping, with no source affirmed.
-
-  **Meister Eckhart (heaven is not a place but a condition of the released soul):** liberation as a transformed relation,
-  not a spatial relocation.
-
-  *Divergence:* Eckhart''s release opens onto union with God; Nāgārjuna''s opens onto the empty non-difference of world and
-  freedom.'
+  at the extremes—reinforcing 25.19.'
 insight: This is perhaps the most vertiginous line in the treatise, and it follows rigorously from everything before it.
 practice: Notice the subtle assumption that peace is somewhere else—later, deeper, after the retreat. Gently drop the "elsewhere."
   Look at the exact experience in front of you right now and ask, "if the far shore is here, what would change is only my
@@ -82,14 +60,13 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
+  body: ''
+- kind: iast
+  label: IAST
   body: 'na saṃsārasya nirvāṇāt kiṃcid asti viśeṣaṇam / na nirvāṇasya saṃsārāt kiṃcid asti viśeṣaṇam //
 
 
     *(Sanskrit, IAST, source-verified from GRETIL MMK 25.19.)*'
-- kind: iast
-  label: IAST
-  body: na saṃsārasya (not of saṃsāra) nirvāṇāt (from nirvāṇa) kiṃcit asti viśeṣaṇam (is there any distinction); na nirvāṇasya
-    (not of nirvāṇa) saṃsārāt (from saṃsāra) kiṃcit asti viśeṣaṇam (is there any distinction).
 - kind: translation
   label: Pratibha Translation
   body: There is not the slightest distinguishing mark [viśeṣaṇa] that separates saṃsāra from nirvāṇa, and not the slightest
@@ -122,28 +99,25 @@ pratibha_layers:
     property." Its total absence between saṃsāra and nirvāṇa is the verse''s radical claim.
 
     **koṭi (कोटि, from 25.20)** — Etymology: "tip, limit, endpoint." The limit of nirvāṇa is the limit of saṃsāra—no gap even
-    at the extremes—reinforcing 25.19.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Dōgen, Shōbōgenzō (practice and enlightenment are one; this very place is the Pure Land):** awakening is not elsewhere
-    but the un-deluded relation to just this.
-
-    *Divergence:* Dōgen affirms the full reality of "this" as buddha-nature manifest; Nāgārjuna reaches non-difference via
-    mutual emptiness rather than affirmed presence.
-
-    **Tao Te Ching 25 / the Way that is never left:** there is no exit from the Way to be sought; one returns to what was
-    never absent.
-
-    *Divergence:* the Dao is a sustaining source; nirvāṇa is emptiness, the extinction of grasping, with no source affirmed.
-
-    **Meister Eckhart (heaven is not a place but a condition of the released soul):** liberation as a transformed relation,
-    not a spatial relocation.
-
-    *Divergence:* Eckhart''s release opens onto union with God; Nāgārjuna''s opens onto the empty non-difference of world
-    and freedom.'
+    at the extremes—reinforcing 25.19.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Dōgen, Shōbōgenzō (practice and enlightenment are one; this very place is the Pure Land)
+    resonance: awakening is not elsewhere but the un-deluded relation to just this.
+    divergence: Dōgen affirms the full reality of "this" as buddha-nature manifest; Nāgārjuna reaches non-difference via mutual
+      emptiness rather than affirmed presence.
+    passage_id: ''
+  - citation: Tao Te Ching 25 / the Way that is never left
+    resonance: there is no exit from the Way to be sought; one returns to what was never absent.
+    divergence: the Dao is a sustaining source; nirvāṇa is emptiness, the extinction of grasping, with no source affirmed.
+    passage_id: tao_te_ching.ttc_md_025
+  - citation: Meister Eckhart (heaven is not a place but a condition of the released soul)
+    resonance: liberation as a transformed relation, not a spatial relocation.
+    divergence: Eckhart's release opens onto union with God; Nāgārjuna's opens onto the empty non-difference of world and
+      freedom.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Notice the subtle assumption that peace is somewhere else—later, deeper, after the retreat. Gently drop the "elsewhere."

@@ -51,20 +51,7 @@ commentary: 'This chapter asserts that the sage’s power lies in the *inner* ra
 
   **无为 (wúwéi)** — non‑action, effortless action -> Daoist sense: aligning with the natural flow -> translation: "non‑action"
 
-  **德 (dé)** — virtue, moral power -> Daoist sense: the power that arises from harmony with the Tao -> translation: "virtue"
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 3 (the Way is the source of all things):** Both emphasize the primacy of the Tao over human action *Divergence:*
-  Chapter 47 claims action is unnecessary, whereas chapter 3 presents action as a natural consequence of the Tao
-
-  **Zhuangzi, “The Great Learning” (the mind’s clarity leads to understanding):** Both link inner clarity to knowledge *Divergence:*
-  Zhuangzi stresses spontaneous insight, while chapter 47 stresses deliberate stillness
-
-  **Confucius, Analects 2.17 (knowledge through observation):** Both discuss knowledge acquisition *Divergence:* Confucius
-  values empirical observation, whereas chapter 47 denies its necessity'
+  **德 (dé)** — virtue, moral power -> Daoist sense: the power that arises from harmony with the Tao -> translation: "virtue"'
 insight: ''
 practice: Sit quietly in a corner of your home, close your eyes, and observe the rhythm of your breath. As you breathe, let
   thoughts arise and pass without judgment, cultivating a state of *wúwéi* that allows you to notice subtle shifts in your
@@ -138,20 +125,24 @@ pratibha_layers:
 
     **无为 (wúwéi)** — non‑action, effortless action -> Daoist sense: aligning with the natural flow -> translation: "non‑action"
 
-    **德 (dé)** — virtue, moral power -> Daoist sense: the power that arises from harmony with the Tao -> translation: "virtue"
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 3 (the Way is the source of all things):** Both emphasize the primacy of the Tao over human action *Divergence:*
-    Chapter 47 claims action is unnecessary, whereas chapter 3 presents action as a natural consequence of the Tao
-
-    **Zhuangzi, “The Great Learning” (the mind’s clarity leads to understanding):** Both link inner clarity to knowledge *Divergence:*
-    Zhuangzi stresses spontaneous insight, while chapter 47 stresses deliberate stillness
-
-    **Confucius, Analects 2.17 (knowledge through observation):** Both discuss knowledge acquisition *Divergence:* Confucius
-    values empirical observation, whereas chapter 47 denies its necessity'
+    **德 (dé)** — virtue, moral power -> Daoist sense: the power that arises from harmony with the Tao -> translation: "virtue"'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 3 (the Way is the source of all things)
+    resonance: Both emphasize the primacy of the Tao over human action
+    divergence: Chapter 47 claims action is unnecessary, whereas chapter 3 presents action as a natural consequence of the
+      Tao
+    passage_id: ''
+  - citation: Zhuangzi, “The Great Learning” (the mind’s clarity leads to understanding)
+    resonance: Both link inner clarity to knowledge
+    divergence: Zhuangzi stresses spontaneous insight, while chapter 47 stresses deliberate stillness
+    passage_id: ''
+  - citation: Confucius, Analects 2.17 (knowledge through observation)
+    resonance: Both discuss knowledge acquisition
+    divergence: Confucius values empirical observation, whereas chapter 47 denies its necessity
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit quietly in a corner of your home, close your eyes, and observe the rhythm of your breath. As you breathe, let

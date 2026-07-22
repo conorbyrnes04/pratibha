@@ -47,25 +47,7 @@ commentary: 'The claim is that contemplative stability is trainable through rhyt
 
 
   **atma-vinigraha (आत्मविनिग्रह)** - self-governance -> active regulation of inner movement toward steadiness -> weaker than
-  "self-control" if reduced to repression.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Yoga Sutra 1.12-1.14:** Structural homology is explicit: stabilization through practice and non-attachment.
-
-  *Divergence:* Sutra tradition systematizes citta-vritti cessation; Gita embeds the same dynamic in devotion and duty ethics.
-
-
-  **Vijnana Bhairava Tantra 24 and 28:** Both use repeated return to a subtle anchor to interrupt mental drift.
-
-  *Divergence:* VBT offers short direct-entry methods; Gita frames a broader integrated discipline.
-
-
-  **Marcus Aurelius, Meditations 5.1 and 8.12:** Both normalize mind-drift and insist on immediate return to governing principle.
-
-  *Divergence:* Stoic return centers logos-duty; Gita unites return with yogic absorption and Krishna-refuge.'
+  "self-control" if reduced to repression.'
 insight: The claim is that contemplative stability is trainable through rhythm, not force.
 practice: 'Set a 7-minute sit today: each time attention wanders, label it "wandering," return to breath once, and continue
   without self-critique.'
@@ -139,25 +121,23 @@ pratibha_layers:
 
 
     **atma-vinigraha (आत्मविनिग्रह)** - self-governance -> active regulation of inner movement toward steadiness -> weaker
-    than "self-control" if reduced to repression.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Yoga Sutra 1.12-1.14:** Structural homology is explicit: stabilization through practice and non-attachment.
-
-    *Divergence:* Sutra tradition systematizes citta-vritti cessation; Gita embeds the same dynamic in devotion and duty ethics.
-
-
-    **Vijnana Bhairava Tantra 24 and 28:** Both use repeated return to a subtle anchor to interrupt mental drift.
-
-    *Divergence:* VBT offers short direct-entry methods; Gita frames a broader integrated discipline.
-
-
-    **Marcus Aurelius, Meditations 5.1 and 8.12:** Both normalize mind-drift and insist on immediate return to governing principle.
-
-    *Divergence:* Stoic return centers logos-duty; Gita unites return with yogic absorption and Krishna-refuge.'
+    than "self-control" if reduced to repression.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Yoga Sutra 1.12-1.14
+    resonance: 'Structural homology is explicit: stabilization through practice and non-attachment.'
+    divergence: Sutra tradition systematizes citta-vritti cessation; Gita embeds the same dynamic in devotion and duty ethics.
+    passage_id: ''
+  - citation: Vijnana Bhairava Tantra 24 and 28
+    resonance: Both use repeated return to a subtle anchor to interrupt mental drift.
+    divergence: VBT offers short direct-entry methods; Gita frames a broader integrated discipline.
+    passage_id: ''
+  - citation: Marcus Aurelius, Meditations 5.1 and 8.12
+    resonance: Both normalize mind-drift and insist on immediate return to governing principle.
+    divergence: Stoic return centers logos-duty; Gita unites return with yogic absorption and Krishna-refuge.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Set a 7-minute sit today: each time attention wanders, label it "wandering," return to breath once, and continue

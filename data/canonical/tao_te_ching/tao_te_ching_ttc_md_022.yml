@@ -63,17 +63,7 @@ commentary: 'This chapter asserts that true virtue is the effortless, unselfish 
   of perception
 
   **德 (dé)** — virtue, moral power -> Daoist sense: the natural, unselfish force of the Tao -> translation stakes: the ultimate
-  quality of the sage
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 2 (the Tao is the source of all things):** Both chapters emphasize the Tao as the origin of all phenomena
-  *Divergence:* Chapter 10 focuses on personal cultivation rather than cosmological exposition
-
-  **Zhuangzi, chapter 4 (the sage is like a child):** Both texts compare the sage to a child to highlight innocence *Divergence:*
-  Laozi’s chapter stresses governance, while Zhuangzi’s is more about spontaneous freedom'
+  quality of the sage'
 insight: ''
 practice: Sit in stillness for ten minutes, breathing slowly and mindfully. As you inhale, imagine the breath becoming supple
   and childlike; as you exhale, visualize any thoughts dissolving like impurities. This simple somatic exercise cultivates
@@ -171,17 +161,19 @@ pratibha_layers:
     of perception
 
     **德 (dé)** — virtue, moral power -> Daoist sense: the natural, unselfish force of the Tao -> translation stakes: the ultimate
-    quality of the sage
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 2 (the Tao is the source of all things):** Both chapters emphasize the Tao as the origin of all phenomena
-    *Divergence:* Chapter 10 focuses on personal cultivation rather than cosmological exposition
-
-    **Zhuangzi, chapter 4 (the sage is like a child):** Both texts compare the sage to a child to highlight innocence *Divergence:*
-    Laozi’s chapter stresses governance, while Zhuangzi’s is more about spontaneous freedom'
+    quality of the sage'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 2 (the Tao is the source of all things)
+    resonance: Both chapters emphasize the Tao as the origin of all phenomena
+    divergence: Chapter 10 focuses on personal cultivation rather than cosmological exposition
+    passage_id: ''
+  - citation: Zhuangzi, chapter 4 (the sage is like a child)
+    resonance: Both texts compare the sage to a child to highlight innocence
+    divergence: Laozi’s chapter stresses governance, while Zhuangzi’s is more about spontaneous freedom
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit in stillness for ten minutes, breathing slowly and mindfully. As you inhale, imagine the breath becoming supple

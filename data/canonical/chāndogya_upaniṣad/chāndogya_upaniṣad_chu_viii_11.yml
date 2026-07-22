@@ -38,20 +38,7 @@ commentary: 'The counterintuitive move here is the suggestion that the state of 
   often associated with the creation of the universe.
 
   * **Maghavat (मघवत्)** — from *magha* "generous" -> a epithet of Indra, the god of the sky and thunder -> highlighting his
-  role as a generous and powerful deity.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 27:** The concept of the ultimate reality as the unchanging, all-encompassing essence is echoed
-  in the Tao Te Ching, where the Tao is described as the source of all things, yet remaining unchanged and unnamable.
-
-  * **Plotinus, Enneads VI.9:** The idea of the self as a unified, all-encompassing reality is also found in Plotinus'' concept
-  of the One, which is the ultimate source of all existence and the goal of the individual''s spiritual journey.
-
-  * **Bhagavad Gita, Chapter 2:** The concept of the immortal and fearless nature of the self is echoed in the Bhagavad Gita,
-  where Krishna describes the self as eternal and unchanging, beyond the limitations of the physical body.'
+  role as a generous and powerful deity.'
 insight: The counterintuitive move here is the suggestion that the state of dreamless sleep, often considered a state of unconsciousness,
   is actually the state of the Self, the immortal and fearless [Brahman].
 practice: As you sit in stillness, allow yourself to let go of all thoughts and perceptions, and simply rest in the awareness
@@ -121,20 +108,26 @@ pratibha_layers:
     often associated with the creation of the universe.
 
     * **Maghavat (मघवत्)** — from *magha* "generous" -> a epithet of Indra, the god of the sky and thunder -> highlighting
-    his role as a generous and powerful deity.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 27:** The concept of the ultimate reality as the unchanging, all-encompassing essence is echoed
-    in the Tao Te Ching, where the Tao is described as the source of all things, yet remaining unchanged and unnamable.
-
-    * **Plotinus, Enneads VI.9:** The idea of the self as a unified, all-encompassing reality is also found in Plotinus''
-    concept of the One, which is the ultimate source of all existence and the goal of the individual''s spiritual journey.
-
-    * **Bhagavad Gita, Chapter 2:** The concept of the immortal and fearless nature of the self is echoed in the Bhagavad
-    Gita, where Krishna describes the self as eternal and unchanging, beyond the limitations of the physical body.'
+    his role as a generous and powerful deity.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 27
+    resonance: The concept of the ultimate reality as the unchanging, all-encompassing essence is echoed in the Tao Te Ching,
+      where the Tao is described as the source of all things, yet remaining unchanged and unnamable.
+    divergence: ''
+    passage_id: tao_te_ching.ttc_md_027
+  - citation: Plotinus, Enneads VI.9
+    resonance: The idea of the self as a unified, all-encompassing reality is also found in Plotinus' concept of the One,
+      which is the ultimate source of all existence and the goal of the individual's spiritual journey.
+    divergence: ''
+    passage_id: ''
+  - citation: Bhagavad Gita, Chapter 2
+    resonance: The concept of the immortal and fearless nature of the self is echoed in the Bhagavad Gita, where Krishna describes
+      the self as eternal and unchanging, beyond the limitations of the physical body.
+    divergence: ''
+    passage_id: bhagavad_gita.bg_md_002
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: As you sit in stillness, allow yourself to let go of all thoughts and perceptions, and simply rest in the awareness

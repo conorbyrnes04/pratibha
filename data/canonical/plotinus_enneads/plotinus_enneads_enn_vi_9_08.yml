@@ -35,21 +35,7 @@ commentary: 'The philosophical claim that the soul''s movement is towards the Su
   with the Supreme is seen as the ultimate goal of human life.
 
   * **ἀγαθόν (agathón)** — from ἄγαν (agan), very or exceedingly, and θόν (thon), good -> in Neoplatonism, the good is seen
-  as the ultimate reality and the source of all being.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.24:** "The Self is not born, nor does it die; it is not produced, nor does it produce." This verse
-  resonates with the idea that the soul is a self-contained entity that owes its origin to the centre.
-
-  * **Phaedo, 79c-80a:** "The soul is immortal, and it is not possible for it to perish." This passage resonates with the
-  idea that the soul is a spiritual entity that is separate from the body, but connected to the Supreme.
-
-  * **Zhuangzi, Chapter 2:** "The sage''s mind is like a mirror, it reflects everything, but it does not retain anything."
-  This passage resonates with the idea that the soul should be uncontaminated and self-contained in order to attain its true
-  nature.'
+  as the ultimate reality and the source of all being.'
 insight: The philosophical claim that the soul's movement is towards the Supreme, and that this movement is a natural and
   necessary one, is a counterintuitive move in the context of Neoplatonism.
 practice: As you go about your daily activities, imagine that you are a circle, with your centre and circumference. Bring
@@ -106,21 +92,26 @@ pratibha_layers:
     with the Supreme is seen as the ultimate goal of human life.
 
     * **ἀγαθόν (agathón)** — from ἄγαν (agan), very or exceedingly, and θόν (thon), good -> in Neoplatonism, the good is seen
-    as the ultimate reality and the source of all being.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.24:** "The Self is not born, nor does it die; it is not produced, nor does it produce." This verse
-    resonates with the idea that the soul is a self-contained entity that owes its origin to the centre.
-
-    * **Phaedo, 79c-80a:** "The soul is immortal, and it is not possible for it to perish." This passage resonates with the
-    idea that the soul is a spiritual entity that is separate from the body, but connected to the Supreme.
-
-    * **Zhuangzi, Chapter 2:** "The sage''s mind is like a mirror, it reflects everything, but it does not retain anything."
-    This passage resonates with the idea that the soul should be uncontaminated and self-contained in order to attain its
-    true nature.'
+    as the ultimate reality and the source of all being.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.24
+    resonance: '"The Self is not born, nor does it die; it is not produced, nor does it produce." This verse resonates with
+      the idea that the soul is a self-contained entity that owes its origin to the centre.'
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 79c-80a
+    resonance: '"The soul is immortal, and it is not possible for it to perish." This passage resonates with the idea that
+      the soul is a spiritual entity that is separate from the body'
+    divergence: but connected to the Supreme.
+    passage_id: ''
+  - citation: Zhuangzi, Chapter 2
+    resonance: '"The sage''s mind is like a mirror, it reflects everything'
+    divergence: but it does not retain anything." This passage resonates with the idea that the soul should be uncontaminated
+      and self-contained in order to attain its true nature.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: As you go about your daily activities, imagine that you are a circle, with your centre and circumference. Bring your

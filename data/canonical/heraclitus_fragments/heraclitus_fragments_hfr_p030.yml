@@ -36,21 +36,7 @@ commentary: 'The philosophical claim that the cosmos is an eternal, self-regulat
 
   * **ἁρμονία (harmoniē)** — etymology: from ἁρμόζω (harmozō), to fit together -> Heraclitean meaning: the balance and cohesion
   that result from the self-regulating principles of the cosmos -> what default translation misses: the active, dynamic aspect
-  of harmony as a process of adjustment and balance.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 25:** structural homology in the concept of the self-regulating, eternal cosmos, where the Tao
-  is described as the ultimate reality that governs the universe. *Divergence:* while the Tao Te Ching emphasizes the effortless,
-  spontaneous nature of the Tao, Heraclitus'' concept of the ever-living fire highlights the dynamic, transformative aspect
-  of the cosmos.
-
-  * **Plotinus, Enneads, V.1.10:** structural homology in the concept of the eternal, self-regulating cosmos, where Plotinus
-  describes the universe as a unified, interconnected system governed by the One. *Divergence:* while Plotinus emphasizes
-  the transcendent, eternal nature of the One, Heraclitus'' concept of the ever-living fire highlights the immanent, dynamic
-  aspect of the cosmos.'
+  of harmony as a process of adjustment and balance.'
 insight: The philosophical claim that the cosmos is an eternal, self-regulating system makes a counterintuitive move by denying
   the role of divine or human creators.
 practice: As you breathe in and out, imagine the ever-living fire of the cosmos igniting and extinguishing within you, regulating
@@ -108,21 +94,23 @@ pratibha_layers:
 
     * **ἁρμονία (harmoniē)** — etymology: from ἁρμόζω (harmozō), to fit together -> Heraclitean meaning: the balance and cohesion
     that result from the self-regulating principles of the cosmos -> what default translation misses: the active, dynamic
-    aspect of harmony as a process of adjustment and balance.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 25:** structural homology in the concept of the self-regulating, eternal cosmos, where the Tao
-    is described as the ultimate reality that governs the universe. *Divergence:* while the Tao Te Ching emphasizes the effortless,
-    spontaneous nature of the Tao, Heraclitus'' concept of the ever-living fire highlights the dynamic, transformative aspect
-    of the cosmos.
-
-    * **Plotinus, Enneads, V.1.10:** structural homology in the concept of the eternal, self-regulating cosmos, where Plotinus
-    describes the universe as a unified, interconnected system governed by the One. *Divergence:* while Plotinus emphasizes
-    the transcendent, eternal nature of the One, Heraclitus'' concept of the ever-living fire highlights the immanent, dynamic
-    aspect of the cosmos.'
+    aspect of harmony as a process of adjustment and balance.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 25
+    resonance: structural homology in the concept of the self-regulating, eternal cosmos, where the Tao is described as the
+      ultimate reality that governs the universe.
+    divergence: while the Tao Te Ching emphasizes the effortless, spontaneous nature of the Tao, Heraclitus' concept of the
+      ever-living fire highlights the dynamic, transformative aspect of the cosmos.
+    passage_id: tao_te_ching.ttc_md_025
+  - citation: Plotinus, Enneads, V.1.10
+    resonance: structural homology in the concept of the eternal, self-regulating cosmos, where Plotinus describes the universe
+      as a unified, interconnected system governed by the One.
+    divergence: while Plotinus emphasizes the transcendent, eternal nature of the One, Heraclitus' concept of the ever-living
+      fire highlights the immanent, dynamic aspect of the cosmos.
+    passage_id: plotinus_enneads.enn_v_1_10
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: As you breathe in and out, imagine the ever-living fire of the cosmos igniting and extinguishing within you, regulating

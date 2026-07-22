@@ -47,17 +47,7 @@ commentary: 'This chapter asserts that true harmony cannot be forced; the sage�
   the other party -> "holding only the left part"
 
   **天道 (tiān dào)** — Way of Heaven -> the Dao’s impartial nature, favoring the good because it follows the natural order
-  -> "the Way of Heaven has no partiality"
-
-
-  Cross-Tradition Resonances:
-
-
-  **chapter 1 (the Way is quiet, the world is still):** both emphasize the power of non‑action and restraint *Divergence:*
-  chapter 79 demands active withholding, whereas chapter 1 merely observes
-
-  **chapter 42 (the sage is like a child):** both stress simplicity and naturalness in dealing with others *Divergence:* chapter
-  79 uses a specific contractual metaphor, while chapter 42 uses childlike simplicity'
+  -> "the Way of Heaven has no partiality"'
 insight: ''
 practice: When you must settle a dispute, write down only the part of the agreement that you can control. Hold it lightly,
   and let the other party act freely. If they fail, do not press them; instead, observe and adjust your own conduct, trusting
@@ -127,17 +117,19 @@ pratibha_layers:
     the other party -> "holding only the left part"
 
     **天道 (tiān dào)** — Way of Heaven -> the Dao’s impartial nature, favoring the good because it follows the natural order
-    -> "the Way of Heaven has no partiality"
-
-
-    Cross-Tradition Resonances:
-
-
-    **chapter 1 (the Way is quiet, the world is still):** both emphasize the power of non‑action and restraint *Divergence:*
-    chapter 79 demands active withholding, whereas chapter 1 merely observes
-
-    **chapter 42 (the sage is like a child):** both stress simplicity and naturalness in dealing with others *Divergence:*
-    chapter 79 uses a specific contractual metaphor, while chapter 42 uses childlike simplicity'
+    -> "the Way of Heaven has no partiality"'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 1 (the Way is quiet, the world is still)
+    resonance: both emphasize the power of non‑action and restraint
+    divergence: chapter 79 demands active withholding, whereas chapter 1 merely observes
+    passage_id: ''
+  - citation: chapter 42 (the sage is like a child)
+    resonance: both stress simplicity and naturalness in dealing with others
+    divergence: chapter 79 uses a specific contractual metaphor, while chapter 42 uses childlike simplicity
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: When you must settle a dispute, write down only the part of the agreement that you can control. Hold it lightly, and

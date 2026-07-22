@@ -51,19 +51,7 @@ commentary: 'This chapter asserts that the disappearance of the Great Tao does n
 
   **智慧 (zhì huì)** — wisdom -> Daoist understanding of insight beyond conventional knowledge -> "wisdom"
 
-  **偽 (wěi)** — falsehood, hypocrisy -> Daoist caution against deceptive imitation of virtue -> "great hypocrisy"
-
-
-  Cross-Tradition Resonances:
-
-
-  **Plato, Republic, Book VII – Allegory of the Cave:** Both texts suggest that apparent virtue or knowledge is merely a shadow
-  of true reality when the underlying principle (Tao or Forms) is absent. *Divergence:* Plato’s cave emphasizes enlightenment
-  through philosophical inquiry, whereas the Tao Te Ching warns that such apparent virtue is ultimately deceptive.
-
-  **Confucius, Analects 2.4 – “The Master said, ‘The gentleman is not a man who has no faults…’”:** Both comment on the emergence
-  of moral qualities in the absence of higher guidance. *Divergence:* Confucianism frames these qualities as cultivated through
-  education, while the Tao Te Ching presents them as reactive, lacking depth.'
+  **偽 (wěi)** — falsehood, hypocrisy -> Daoist caution against deceptive imitation of virtue -> "great hypocrisy"'
 insight: ''
 practice: Stand still in the quiet of a moment, observing the currents of your own thoughts. When you notice a surge of pride
   or judgment, gently let it pass without clinging, allowing the natural flow of the Tao to guide you back to equanimity.
@@ -133,19 +121,22 @@ pratibha_layers:
 
     **智慧 (zhì huì)** — wisdom -> Daoist understanding of insight beyond conventional knowledge -> "wisdom"
 
-    **偽 (wěi)** — falsehood, hypocrisy -> Daoist caution against deceptive imitation of virtue -> "great hypocrisy"
-
-
-    Cross-Tradition Resonances:
-
-
-    **Plato, Republic, Book VII – Allegory of the Cave:** Both texts suggest that apparent virtue or knowledge is merely a
-    shadow of true reality when the underlying principle (Tao or Forms) is absent. *Divergence:* Plato’s cave emphasizes enlightenment
-    through philosophical inquiry, whereas the Tao Te Ching warns that such apparent virtue is ultimately deceptive.
-
-    **Confucius, Analects 2.4 – “The Master said, ‘The gentleman is not a man who has no faults…’”:** Both comment on the
-    emergence of moral qualities in the absence of higher guidance. *Divergence:* Confucianism frames these qualities as cultivated
-    through education, while the Tao Te Ching presents them as reactive, lacking depth.'
+    **偽 (wěi)** — falsehood, hypocrisy -> Daoist caution against deceptive imitation of virtue -> "great hypocrisy"'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plato, Republic, Book VII – Allegory of the Cave
+    resonance: Both texts suggest that apparent virtue or knowledge is merely a shadow of true reality when the underlying
+      principle (Tao or Forms) is absent.
+    divergence: Plato’s cave emphasizes enlightenment through philosophical inquiry, whereas the Tao Te Ching warns that such
+      apparent virtue is ultimately deceptive.
+    passage_id: ''
+  - citation: Confucius, Analects 2.4 – “The Master said, ‘The gentleman is not a man who has no faults…’”
+    resonance: Both comment on the emergence of moral qualities in the absence of higher guidance.
+    divergence: Confucianism frames these qualities as cultivated through education, while the Tao Te Ching presents them
+      as reactive, lacking depth.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand still in the quiet of a moment, observing the currents of your own thoughts. When you notice a surge of pride

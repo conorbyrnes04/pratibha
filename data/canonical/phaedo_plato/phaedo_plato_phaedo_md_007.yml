@@ -46,26 +46,7 @@ commentary: 'The claim is that philosophical truth is verified in comportment un
 
 
   **asklepios (Ἀσκληπιός)** - god of healing -> invocation at death suggests healing is interpreted beyond bodily prolongation
-  -> this symbolic register is central to the dialogue''s closure.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Bhagavad Gita 2.55-2.72 (sthitaprajna profile):** Both portray steady consciousness under loss and mortality.
-
-  *Divergence:* Gita''s frame is warrior-duty and devotion; *Phaedo* stages civic execution and dialectical legacy.
-
-
-  **Marcus Aurelius, Meditations 2.17 and 3.3:** Both insist death should be met without panic and with attention to present
-  duty.
-
-  *Divergence:* Stoic cosmology is immanent-rational rather than Form-and-soul immortality centered.
-
-
-  **Zen death poems (jisei) tradition:** Both honor lucidity and concise final expression at death.
-
-  *Divergence:* Zen style often strips metaphysical argument; *Phaedo* culminates after prolonged dialectical justification.'
+  -> this symbolic register is central to the dialogue''s closure.'
 insight: The claim is that philosophical truth is verified in comportment under extremity.
 practice: Before sleep, write one unresolved obligation ("cock to Asclepius") and complete it within 24 hours, treating follow-through
   as contemplative integrity rather than productivity.
@@ -138,26 +119,23 @@ pratibha_layers:
 
 
     **asklepios (Ἀσκληπιός)** - god of healing -> invocation at death suggests healing is interpreted beyond bodily prolongation
-    -> this symbolic register is central to the dialogue''s closure.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Bhagavad Gita 2.55-2.72 (sthitaprajna profile):** Both portray steady consciousness under loss and mortality.
-
-    *Divergence:* Gita''s frame is warrior-duty and devotion; *Phaedo* stages civic execution and dialectical legacy.
-
-
-    **Marcus Aurelius, Meditations 2.17 and 3.3:** Both insist death should be met without panic and with attention to present
-    duty.
-
-    *Divergence:* Stoic cosmology is immanent-rational rather than Form-and-soul immortality centered.
-
-
-    **Zen death poems (jisei) tradition:** Both honor lucidity and concise final expression at death.
-
-    *Divergence:* Zen style often strips metaphysical argument; *Phaedo* culminates after prolonged dialectical justification.'
+    -> this symbolic register is central to the dialogue''s closure.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita 2.55-2.72 (sthitaprajna profile)
+    resonance: Both portray steady consciousness under loss and mortality.
+    divergence: Gita's frame is warrior-duty and devotion; *Phaedo* stages civic execution and dialectical legacy.
+    passage_id: ''
+  - citation: Marcus Aurelius, Meditations 2.17 and 3.3
+    resonance: Both insist death should be met without panic and with attention to present duty.
+    divergence: Stoic cosmology is immanent-rational rather than Form-and-soul immortality centered.
+    passage_id: ''
+  - citation: Zen death poems (jisei) tradition
+    resonance: Both honor lucidity and concise final expression at death.
+    divergence: Zen style often strips metaphysical argument; *Phaedo* culminates after prolonged dialectical justification.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Before sleep, write one unresolved obligation ("cock to Asclepius") and complete it within 24 hours, treating follow-through

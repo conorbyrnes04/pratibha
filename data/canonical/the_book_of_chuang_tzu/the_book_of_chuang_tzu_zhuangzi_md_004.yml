@@ -75,31 +75,7 @@ commentary: 'The philosophical claim is that transformation happens through empt
 
 
   **fú (符)** - sign, token, match-mark -> in this context, the mind''s tendency to stop at symbols and fixed interpretations
-  -> default translations omit it, losing the warning that cognition often mistakes labels for living reality.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Bhagavad Gita 6.25-26:** the mind is repeatedly returned to stillness and established in the Self through non-grasping
-  discipline. Structurally, both passages interrupt discursivity to allow a deeper ordering principle to guide action.
-
-  *Divergence:* The Gita stabilizes this process in Atman-realization and yogic concentration, while Zhuangzi emphasizes situational
-  receptivity and unforced responsiveness without a fixed metaphysical witness.
-
-
-  **Vijnana Bhairava Tantra, dharana on the gap between breaths:** both texts treat interior pause as operative, not empty
-  in the trivial sense. The gap becomes the access-point for a wider intelligence than conceptual mind.
-
-  *Divergence:* The VBT codifies explicit contemplative techniques tied to recognition of consciousness; Zhuangzi offers a
-  behavioral-epistemic instruction embedded in political/ethical encounter.
-
-
-  **Epictetus, Enchiridion §1 and §20:** both traditions train a pause between impression and reaction so freedom is exercised
-  before compulsion.
-
-  *Divergence:* Stoicism frames pause as rational assent-management by *prohairesis*; Zhuangzi frames it as emptying into
-  Tao so action emerges from attunement rather than deliberate control.'
+  -> default translations omit it, losing the warning that cognition often mistakes labels for living reality.'
 insight: The philosophical claim is that transformation happens through emptied receptivity, not through more strategic intention.
 practice: 'Before one difficult conversation today, sit for three minutes and notice each impulse to prepare your argument;
   with every impulse, exhale and silently say "empty," then enter the conversation with one task only: receive fully before
@@ -202,31 +178,28 @@ pratibha_layers:
 
 
     **fú (符)** - sign, token, match-mark -> in this context, the mind''s tendency to stop at symbols and fixed interpretations
-    -> default translations omit it, losing the warning that cognition often mistakes labels for living reality.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Bhagavad Gita 6.25-26:** the mind is repeatedly returned to stillness and established in the Self through non-grasping
-    discipline. Structurally, both passages interrupt discursivity to allow a deeper ordering principle to guide action.
-
-    *Divergence:* The Gita stabilizes this process in Atman-realization and yogic concentration, while Zhuangzi emphasizes
-    situational receptivity and unforced responsiveness without a fixed metaphysical witness.
-
-
-    **Vijnana Bhairava Tantra, dharana on the gap between breaths:** both texts treat interior pause as operative, not empty
-    in the trivial sense. The gap becomes the access-point for a wider intelligence than conceptual mind.
-
-    *Divergence:* The VBT codifies explicit contemplative techniques tied to recognition of consciousness; Zhuangzi offers
-    a behavioral-epistemic instruction embedded in political/ethical encounter.
-
-
-    **Epictetus, Enchiridion §1 and §20:** both traditions train a pause between impression and reaction so freedom is exercised
-    before compulsion.
-
-    *Divergence:* Stoicism frames pause as rational assent-management by *prohairesis*; Zhuangzi frames it as emptying into
-    Tao so action emerges from attunement rather than deliberate control.'
+    -> default translations omit it, losing the warning that cognition often mistakes labels for living reality.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita 6.25-26
+    resonance: the mind is repeatedly returned to stillness and established in the Self through non-grasping discipline. Structurally,
+      both passages interrupt discursivity to allow a deeper ordering principle to guide action.
+    divergence: The Gita stabilizes this process in Atman-realization and yogic concentration, while Zhuangzi emphasizes situational
+      receptivity and unforced responsiveness without a fixed metaphysical witness.
+    passage_id: ''
+  - citation: Vijnana Bhairava Tantra, dharana on the gap between breaths
+    resonance: both texts treat interior pause as operative, not empty in the trivial sense. The gap becomes the access-point
+      for a wider intelligence than conceptual mind.
+    divergence: The VBT codifies explicit contemplative techniques tied to recognition of consciousness; Zhuangzi offers a
+      behavioral-epistemic instruction embedded in political/ethical encounter.
+    passage_id: ''
+  - citation: Epictetus, Enchiridion §1 and §20
+    resonance: both traditions train a pause between impression and reaction so freedom is exercised before compulsion.
+    divergence: Stoicism frames pause as rational assent-management by *prohairesis*; Zhuangzi frames it as emptying into
+      Tao so action emerges from attunement rather than deliberate control.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Before one difficult conversation today, sit for three minutes and notice each impulse to prepare your argument;

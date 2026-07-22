@@ -7,13 +7,11 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_25_24
 unit_label: The Stilling of All Grasping Is Peace
 title: The Stilling of All Grasping Is Peace
 unit_type: sutra
-sanskrit_devanagari: 'sarvopalambhopaśamaḥ prapañcopaśamaḥ śivaḥ / na kva cit kasyacit kaścid dharmo buddhena deśitaḥ //
+sanskrit_devanagari: ''
+sanskrit_iast: 'sarvopalambhopaśamaḥ prapañcopaśamaḥ śivaḥ / na kva cit kasyacit kaścid dharmo buddhena deśitaḥ //
 
 
   *(Sanskrit, IAST, source-verified from GRETIL MMK 25.24, closing verse.)*'
-sanskrit_iast: sarva-upalambha-upaśamaḥ (the pacification of all apprehending/grasping) prapañca-upaśamaḥ (the pacification
-  of proliferation) śivaḥ (auspicious, blessed, peace); na kva cit (nowhere) kasyacit (to anyone) kaścit dharmaḥ (any dharma)
-  buddhena deśitaḥ (was taught by the Buddha).
 translation_literal: The stilling of all grasping [upalambha], the stilling of proliferation [prapañca]—this is peace [śiva].
   Nowhere, to no one, was any dharma ever taught by the Buddha.
 commentary: 'The treatise ends where practice ends: not in a final thesis but in the quieting of the thesis-making mind. Two
@@ -42,29 +40,7 @@ commentary: 'The treatise ends where practice ends: not in a final thesis but in
   of stilled grasping—blessedness without a metaphysical blesser.
 
   **prapañca (प्रपञ्च)** — Etymology: as in 18.5, "proliferation." The book opens (dedication) and closes on its stilling,
-  framing the whole as a therapy for the conceptualizing mind.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Vijñāna Bhairava / Śaiva "stilling" verses & Patañjali''s nirodha:** liberation as the settling of mental movement rather
-  than the gaining of a new object.
-
-  *Divergence:* those traditions rest in a positive fullness (Śiva-consciousness, kaivalya of puruṣa); Nāgārjuna rests in
-  empty peace with no substrate affirmed.
-
-  **Zhuangzi, "fasting of the mind" / "sitting in forgetfulness":** the mind that has emptied its grasping is at ease; and
-  the sage''s teaching finally points away from itself.
-
-  *Divergence:* Zhuangzi''s ease flows from harmony with the Dao; Nāgārjuna''s follows from the emptiness of Dao and teacher
-  alike.
-
-  **Wittgenstein (philosophy as therapy: "the real discovery is the one that lets me stop doing philosophy"):** the aim of
-  analysis is to bring the compulsive analyzing to rest.
-
-  *Divergence:* Wittgenstein dissolves conceptual confusions to return to ordinary life; Nāgārjuna dissolves them toward soteriological
-  peace and release from rebirth.'
+  framing the whole as a therapy for the conceptualizing mind.'
 insight: 'The treatise ends where practice ends: not in a final thesis but in the quieting of the thesis-making mind.'
 practice: 'At the close of a sitting, deliberately let go of even your practice: no technique, no goal, no "emptiness" to
   contemplate, no teaching to hold. For two minutes simply allow whatever arises to arise and pass without seizing it. If
@@ -90,15 +66,13 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
+  body: ''
+- kind: iast
+  label: IAST
   body: 'sarvopalambhopaśamaḥ prapañcopaśamaḥ śivaḥ / na kva cit kasyacit kaścid dharmo buddhena deśitaḥ //
 
 
     *(Sanskrit, IAST, source-verified from GRETIL MMK 25.24, closing verse.)*'
-- kind: iast
-  label: IAST
-  body: sarva-upalambha-upaśamaḥ (the pacification of all apprehending/grasping) prapañca-upaśamaḥ (the pacification of proliferation)
-    śivaḥ (auspicious, blessed, peace); na kva cit (nowhere) kasyacit (to anyone) kaścit dharmaḥ (any dharma) buddhena deśitaḥ
-    (was taught by the Buddha).
 - kind: translation
   label: Pratibha Translation
   body: The stilling of all grasping [upalambha], the stilling of proliferation [prapañca]—this is peace [śiva]. Nowhere,
@@ -131,29 +105,26 @@ pratibha_layers:
     peace of stilled grasping—blessedness without a metaphysical blesser.
 
     **prapañca (प्रपञ्च)** — Etymology: as in 18.5, "proliferation." The book opens (dedication) and closes on its stilling,
-    framing the whole as a therapy for the conceptualizing mind.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Vijñāna Bhairava / Śaiva "stilling" verses & Patañjali''s nirodha:** liberation as the settling of mental movement rather
-    than the gaining of a new object.
-
-    *Divergence:* those traditions rest in a positive fullness (Śiva-consciousness, kaivalya of puruṣa); Nāgārjuna rests in
-    empty peace with no substrate affirmed.
-
-    **Zhuangzi, "fasting of the mind" / "sitting in forgetfulness":** the mind that has emptied its grasping is at ease; and
-    the sage''s teaching finally points away from itself.
-
-    *Divergence:* Zhuangzi''s ease flows from harmony with the Dao; Nāgārjuna''s follows from the emptiness of Dao and teacher
-    alike.
-
-    **Wittgenstein (philosophy as therapy: "the real discovery is the one that lets me stop doing philosophy"):** the aim
-    of analysis is to bring the compulsive analyzing to rest.
-
-    *Divergence:* Wittgenstein dissolves conceptual confusions to return to ordinary life; Nāgārjuna dissolves them toward
-    soteriological peace and release from rebirth.'
+    framing the whole as a therapy for the conceptualizing mind.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Vijñāna Bhairava / Śaiva "stilling" verses & Patañjali's nirodha
+    resonance: liberation as the settling of mental movement rather than the gaining of a new object.
+    divergence: those traditions rest in a positive fullness (Śiva-consciousness, kaivalya of puruṣa); Nāgārjuna rests in
+      empty peace with no substrate affirmed.
+    passage_id: ''
+  - citation: Zhuangzi, "fasting of the mind" / "sitting in forgetfulness"
+    resonance: the mind that has emptied its grasping is at ease; and the sage's teaching finally points away from itself.
+    divergence: Zhuangzi's ease flows from harmony with the Dao; Nāgārjuna's follows from the emptiness of Dao and teacher
+      alike.
+    passage_id: ''
+  - citation: 'Wittgenstein (philosophy as therapy: "the real discovery is the one that lets me stop doing philosophy")'
+    resonance: the aim of analysis is to bring the compulsive analyzing to rest.
+    divergence: Wittgenstein dissolves conceptual confusions to return to ordinary life; Nāgārjuna dissolves them toward soteriological
+      peace and release from rebirth.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'At the close of a sitting, deliberately let go of even your practice: no technique, no goal, no "emptiness" to contemplate,

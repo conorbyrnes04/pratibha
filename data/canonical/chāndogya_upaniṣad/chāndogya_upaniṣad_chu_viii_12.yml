@@ -42,21 +42,7 @@ commentary: 'The counterintuitive move here is recognizing the Self as immortal 
 
   * **Tat Tvam Asi (तत्त्वमसि)** — etymology: *tat* meaning "that", *tvam* meaning "you", and *asi* meaning "are" -> tradition-specific
   meaning: the statement of identity between the individual self and the ultimate reality -> what default translation misses:
-  the depth of this identity as a pedagogical tool for realizing the true nature of the Self.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Plotinus, Enneads VI.9**: The idea of the Self transcending bodily limitations resonates with Plotinus''s concept of
-  the soul ascending to the realm of Intellect, where it realizes its true, eternal nature.
-
-  * **Tao Te Ching, Chapter 16**: The theme of recognizing and distinguishing the eternal, unchanging essence from the ephemeral,
-  changing world parallels the Taoist distinction between the constant Tao and the fleeting manifestations of the world.
-
-  * **Bhagavad Gita, Chapter 2**: The discussion of the body as mortal and the Self as immortal echoes the Gita''s teaching
-  on the distinction between the perishable body and the imperishable Self, emphasizing the pursuit of self-knowledge for
-  liberation.'
+  the depth of this identity as a pedagogical tool for realizing the true nature of the Self.'
 insight: The counterintuitive move here is recognizing the Self as immortal and beyond bodily pleasures and pains, a concept
   that challenges the ordinary perception of self as closely tied to the physical body.
 practice: Reflect on your daily experiences of pleasure and pain, recognizing how these sensations are tied to your bodily
@@ -133,21 +119,26 @@ pratibha_layers:
 
     * **Tat Tvam Asi (तत्त्वमसि)** — etymology: *tat* meaning "that", *tvam* meaning "you", and *asi* meaning "are" -> tradition-specific
     meaning: the statement of identity between the individual self and the ultimate reality -> what default translation misses:
-    the depth of this identity as a pedagogical tool for realizing the true nature of the Self.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Plotinus, Enneads VI.9**: The idea of the Self transcending bodily limitations resonates with Plotinus''s concept
-    of the soul ascending to the realm of Intellect, where it realizes its true, eternal nature.
-
-    * **Tao Te Ching, Chapter 16**: The theme of recognizing and distinguishing the eternal, unchanging essence from the ephemeral,
-    changing world parallels the Taoist distinction between the constant Tao and the fleeting manifestations of the world.
-
-    * **Bhagavad Gita, Chapter 2**: The discussion of the body as mortal and the Self as immortal echoes the Gita''s teaching
-    on the distinction between the perishable body and the imperishable Self, emphasizing the pursuit of self-knowledge for
-    liberation.'
+    the depth of this identity as a pedagogical tool for realizing the true nature of the Self.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus, Enneads VI.9
+    resonance: The idea of the Self transcending bodily limitations resonates with Plotinus's concept of the soul ascending
+      to the realm of Intellect, where it realizes its true, eternal nature.
+    divergence: ''
+    passage_id: ''
+  - citation: Tao Te Ching, Chapter 16
+    resonance: The theme of recognizing and distinguishing the eternal, unchanging essence from the ephemeral, changing world
+      parallels the Taoist distinction between the constant Tao and the fleeting manifestations of the world.
+    divergence: ''
+    passage_id: tao_te_ching.ttc_md_016
+  - citation: Bhagavad Gita, Chapter 2
+    resonance: The discussion of the body as mortal and the Self as immortal echoes the Gita's teaching on the distinction
+      between the perishable body and the imperishable Self, emphasizing the pursuit of self-knowledge for liberation.
+    divergence: ''
+    passage_id: bhagavad_gita.bg_md_002
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Reflect on your daily experiences of pleasure and pain, recognizing how these sensations are tied to your bodily existence.

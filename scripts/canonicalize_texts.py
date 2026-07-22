@@ -269,15 +269,21 @@ def _anchor_appendix(anchor: str, display: str, label: str) -> dict[str, str] | 
 
 
 def _layer_items(y: dict[str, Any], key: str) -> list[dict[str, str]] | None:
-    raw = y.get(key)
-    if not isinstance(raw, list) or not raw:
+    raw_values = [y.get(key)]
+    if key == "key_terms":
+        raw_values.append(y.get("glossary"))
+    raw = [entry for value in raw_values if isinstance(value, list) for entry in value]
+    if not raw:
         return None
     items: list[dict[str, str]] = []
     for entry in raw:
         if not isinstance(entry, dict):
             continue
-        if key == "key_terms" and entry.get("term"):
-            items.append({"term": txt(entry.get("term")), "definition": txt(entry.get("definition"))})
+        if key == "key_terms" and txt(entry.get("term")):
+            items.append({
+                "term": txt(entry.get("term")),
+                "definition": txt(entry.get("definition") or entry.get("meaning")),
+            })
         elif key == "resonances" and entry.get("citation"):
             item = {
                 "citation": txt(entry.get("citation")),

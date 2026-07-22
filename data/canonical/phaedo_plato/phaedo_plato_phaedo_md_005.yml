@@ -46,28 +46,7 @@ commentary: 'The claim is that explanation requires levels, and material conditi
 
 
   **to kalon (τὸ καλόν)** - the Beautiful-as-such -> not taste-preference but ontological/intelligible criterion -> "beauty"
-  in aesthetic-modern sense is too narrow.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Nagarjuna, MMK 24.18 (dependent designation and emptiness):** Both interrogate naive causal accounts and require conceptual
-  precision about explanatory levels.
-
-  *Divergence:* Nagarjuna deconstructs intrinsic essences; Plato secures intelligibility through Forms.
-
-
-  **Kant, Critique of Pure Reason (regulative use of reason):** Both distinguish empirical sequence from conditions of intelligibility
-  in judgment.
-
-  *Divergence:* Kant limits metaphysical knowledge claims; Plato treats intelligible realities as ontologically robust.
-
-
-  **Pratyabhijnahrdayam 1-3:** Both insist that surface phenomena require reference to deeper principles of manifestation/intelligibility.
-
-  *Divergence:* Pratyabhijna roots manifestation in free consciousness (citi); *Phaedo* frames via Form-participation and
-  dialectic.'
+  in aesthetic-modern sense is too narrow.'
 insight: The claim is that explanation requires levels, and material conditions are not identical with rational cause.
 practice: 'Pick one difficult life decision and write two columns: "conditions affecting this" and "the good I judge here";
   act from the second while acknowledging the first.'
@@ -128,28 +107,24 @@ pratibha_layers:
 
 
     **to kalon (τὸ καλόν)** - the Beautiful-as-such -> not taste-preference but ontological/intelligible criterion -> "beauty"
-    in aesthetic-modern sense is too narrow.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Nagarjuna, MMK 24.18 (dependent designation and emptiness):** Both interrogate naive causal accounts and require conceptual
-    precision about explanatory levels.
-
-    *Divergence:* Nagarjuna deconstructs intrinsic essences; Plato secures intelligibility through Forms.
-
-
-    **Kant, Critique of Pure Reason (regulative use of reason):** Both distinguish empirical sequence from conditions of intelligibility
-    in judgment.
-
-    *Divergence:* Kant limits metaphysical knowledge claims; Plato treats intelligible realities as ontologically robust.
-
-
-    **Pratyabhijnahrdayam 1-3:** Both insist that surface phenomena require reference to deeper principles of manifestation/intelligibility.
-
-    *Divergence:* Pratyabhijna roots manifestation in free consciousness (citi); *Phaedo* frames via Form-participation and
-    dialectic.'
+    in aesthetic-modern sense is too narrow.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nagarjuna, MMK 24.18 (dependent designation and emptiness)
+    resonance: Both interrogate naive causal accounts and require conceptual precision about explanatory levels.
+    divergence: Nagarjuna deconstructs intrinsic essences; Plato secures intelligibility through Forms.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_18
+  - citation: Kant, Critique of Pure Reason (regulative use of reason)
+    resonance: Both distinguish empirical sequence from conditions of intelligibility in judgment.
+    divergence: Kant limits metaphysical knowledge claims; Plato treats intelligible realities as ontologically robust.
+    passage_id: ''
+  - citation: Pratyabhijnahrdayam 1-3
+    resonance: Both insist that surface phenomena require reference to deeper principles of manifestation/intelligibility.
+    divergence: Pratyabhijna roots manifestation in free consciousness (citi); *Phaedo* frames via Form-participation and
+      dialectic.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Pick one difficult life decision and write two columns: "conditions affecting this" and "the good I judge here";

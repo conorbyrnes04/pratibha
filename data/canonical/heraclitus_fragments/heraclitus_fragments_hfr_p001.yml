@@ -34,19 +34,7 @@ commentary: 'The fundamental philosophical claim here is that true wisdom lies i
   what default translation misses: the implications of this unity for our understanding of reality and existence.
 
   * **ἁρμονία (harmoniē)** — etymology: from ἁρμόζω (harmozō), "to join" -> Heraclitean meaning: the underlying harmony or
-  balance that governs the universe -> what default translation misses: the dynamic and relational nature of this harmony.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 39:** structural homology in the idea of a universal principle (the Tao) that underlies all of
-  existence and governs the natural world. *Divergence:* while the Tao Te Ching emphasizes the spontaneity and non-action
-  of the Tao, Heraclitus'' Logos [Λόγος] is often associated with reason and intellect.
-
-  * **Plotinus, Enneads, V.1.10:** structural homology in the concept of the unity of all things and the idea of a universal
-  principle (the One) that underlies all of existence. *Divergence:* while Plotinus'' One is often seen as a transcendent
-  and eternal reality, Heraclitus'' unity is more immanent and dynamic.'
+  balance that governs the universe -> what default translation misses: the dynamic and relational nature of this harmony.'
 insight: The fundamental philosophical claim here is that true wisdom lies in recognizing the unity of all things.
 practice: Listen to the universal Logos [Λόγος] within yourself, and acknowledge the unity of all things by recognizing the
   interconnectedness of your own existence with the world around you.
@@ -98,19 +86,23 @@ pratibha_layers:
     -> what default translation misses: the implications of this unity for our understanding of reality and existence.
 
     * **ἁρμονία (harmoniē)** — etymology: from ἁρμόζω (harmozō), "to join" -> Heraclitean meaning: the underlying harmony
-    or balance that governs the universe -> what default translation misses: the dynamic and relational nature of this harmony.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 39:** structural homology in the idea of a universal principle (the Tao) that underlies all
-    of existence and governs the natural world. *Divergence:* while the Tao Te Ching emphasizes the spontaneity and non-action
-    of the Tao, Heraclitus'' Logos [Λόγος] is often associated with reason and intellect.
-
-    * **Plotinus, Enneads, V.1.10:** structural homology in the concept of the unity of all things and the idea of a universal
-    principle (the One) that underlies all of existence. *Divergence:* while Plotinus'' One is often seen as a transcendent
-    and eternal reality, Heraclitus'' unity is more immanent and dynamic.'
+    or balance that governs the universe -> what default translation misses: the dynamic and relational nature of this harmony.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 39
+    resonance: structural homology in the idea of a universal principle (the Tao) that underlies all of existence and governs
+      the natural world.
+    divergence: while the Tao Te Ching emphasizes the spontaneity and non-action of the Tao, Heraclitus' Logos [Λόγος] is
+      often associated with reason and intellect.
+    passage_id: tao_te_ching.ttc_md_039
+  - citation: Plotinus, Enneads, V.1.10
+    resonance: structural homology in the concept of the unity of all things and the idea of a universal principle (the One)
+      that underlies all of existence.
+    divergence: while Plotinus' One is often seen as a transcendent and eternal reality, Heraclitus' unity is more immanent
+      and dynamic.
+    passage_id: plotinus_enneads.enn_v_1_10
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Listen to the universal Logos [Λόγος] within yourself, and acknowledge the unity of all things by recognizing the

@@ -45,24 +45,7 @@ commentary: 'The philosophical claim that underlies this passage is that the ult
   * **Episteme (ἐπιστήμη)** — from the Greek word for knowledge, meaning a state of being that is characterized by understanding
   and comprehension -> in Neoplatonism, refers to the lower form of knowledge that is bound by dualistic thinking -> what
   default translation misses is the distinction between this lower form of knowledge and the higher form of understanding
-  that is characterized by unity and simplicity.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.24:** The ultimate reality is beyond human comprehension and can only be accessed through a direct
-  experience of unity. *Divergence:* While the Katha Upanishad emphasizes the importance of knowledge and understanding in
-  accessing the ultimate reality, Plotinus argues that these are limitations that must be transcended.
-
-  * **Phaedo, 66d-67a:** The soul must be purified of its attachment to the body and the senses in order to access the ultimate
-  reality. *Divergence:* While Plato emphasizes the importance of purification in accessing the ultimate reality, Plotinus
-  argues that this purification is not just a matter of separating the soul from the body, but rather, it requires a transcendence
-  of the dualistic thinking that characterizes human understanding.
-
-  * **Zhuangzi, Chapter 2:** The ultimate reality is beyond human comprehension and can only be accessed through a direct
-  experience of unity. *Divergence:* While Zhuangzi emphasizes the importance of embracing the uncertainty and ambiguity of
-  existence, Plotinus argues that this uncertainty and ambiguity can be transcended through a direct experience of unity.'
+  that is characterized by unity and simplicity.'
 insight: The philosophical claim that underlies this passage is that the ultimate reality, the One, is beyond human comprehension
   and can only be accessed through a direct experience of unity.
 practice: To access the ultimate reality, the One, let go of your attachment to knowledge and understanding, and instead,
@@ -135,24 +118,29 @@ pratibha_layers:
     * **Episteme (ἐπιστήμη)** — from the Greek word for knowledge, meaning a state of being that is characterized by understanding
     and comprehension -> in Neoplatonism, refers to the lower form of knowledge that is bound by dualistic thinking -> what
     default translation misses is the distinction between this lower form of knowledge and the higher form of understanding
-    that is characterized by unity and simplicity.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.24:** The ultimate reality is beyond human comprehension and can only be accessed through a direct
-    experience of unity. *Divergence:* While the Katha Upanishad emphasizes the importance of knowledge and understanding
-    in accessing the ultimate reality, Plotinus argues that these are limitations that must be transcended.
-
-    * **Phaedo, 66d-67a:** The soul must be purified of its attachment to the body and the senses in order to access the ultimate
-    reality. *Divergence:* While Plato emphasizes the importance of purification in accessing the ultimate reality, Plotinus
-    argues that this purification is not just a matter of separating the soul from the body, but rather, it requires a transcendence
-    of the dualistic thinking that characterizes human understanding.
-
-    * **Zhuangzi, Chapter 2:** The ultimate reality is beyond human comprehension and can only be accessed through a direct
-    experience of unity. *Divergence:* While Zhuangzi emphasizes the importance of embracing the uncertainty and ambiguity
-    of existence, Plotinus argues that this uncertainty and ambiguity can be transcended through a direct experience of unity.'
+    that is characterized by unity and simplicity.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.24
+    resonance: The ultimate reality is beyond human comprehension and can only be accessed through a direct experience of
+      unity.
+    divergence: While the Katha Upanishad emphasizes the importance of knowledge and understanding in accessing the ultimate
+      reality, Plotinus argues that these are limitations that must be transcended.
+    passage_id: ''
+  - citation: Phaedo, 66d-67a
+    resonance: The soul must be purified of its attachment to the body and the senses in order to access the ultimate reality.
+    divergence: While Plato emphasizes the importance of purification in accessing the ultimate reality, Plotinus argues that
+      this purification is not just a matter of separating the soul from the body, but rather, it requires a transcendence
+      of the dualistic thinking that characterizes human understanding.
+    passage_id: ''
+  - citation: Zhuangzi, Chapter 2
+    resonance: The ultimate reality is beyond human comprehension and can only be accessed through a direct experience of
+      unity.
+    divergence: While Zhuangzi emphasizes the importance of embracing the uncertainty and ambiguity of existence, Plotinus
+      argues that this uncertainty and ambiguity can be transcended through a direct experience of unity.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: To access the ultimate reality, the One, let go of your attachment to knowledge and understanding, and instead, cultivate

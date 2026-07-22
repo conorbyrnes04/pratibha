@@ -520,20 +520,7 @@ commentary: 'This chapter crystallizes the paradoxical nature of Taoist practice
 
   **dé 德** — inner virtue that flows from aligning with the Tao -> "virtue"
 
-  **zìrán 自然** — naturalness; the spontaneous order of the universe -> "naturalness"
-
-
-  Cross-Tradition Resonances:
-
-
-  **Heraclitus, "On the Unity of Opposites":** both emphasize that apparent contradictions are complementary *Divergence:*
-  Heraclitus frames change as constant, while Tao Te Ching frames harmony as stillness
-
-  **Confucius, Analects 2.1:** both value sincerity over rhetoric *Divergence:* Confucius stresses social order, Tao Te Ching
-  stresses natural order
-
-  **Buddha, Dhammapada 1.5:** both warn against attachment to words and possessions *Divergence:* Buddha focuses on mental
-  detachment, Tao Te Ching on external generosity'
+  **zìrán 自然** — naturalness; the spontaneous order of the universe -> "naturalness"'
 insight: ''
 practice: 'Stand barefoot on the earth for five minutes, feeling the ground beneath you. As you breathe, silently repeat:
   "I give, I receive, I am." Let each breath be an act of generosity toward yourself and the world.'
@@ -1085,20 +1072,23 @@ pratibha_layers:
 
     **dé 德** — inner virtue that flows from aligning with the Tao -> "virtue"
 
-    **zìrán 自然** — naturalness; the spontaneous order of the universe -> "naturalness"
-
-
-    Cross-Tradition Resonances:
-
-
-    **Heraclitus, "On the Unity of Opposites":** both emphasize that apparent contradictions are complementary *Divergence:*
-    Heraclitus frames change as constant, while Tao Te Ching frames harmony as stillness
-
-    **Confucius, Analects 2.1:** both value sincerity over rhetoric *Divergence:* Confucius stresses social order, Tao Te
-    Ching stresses natural order
-
-    **Buddha, Dhammapada 1.5:** both warn against attachment to words and possessions *Divergence:* Buddha focuses on mental
-    detachment, Tao Te Ching on external generosity'
+    **zìrán 自然** — naturalness; the spontaneous order of the universe -> "naturalness"'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus, "On the Unity of Opposites"
+    resonance: both emphasize that apparent contradictions are complementary
+    divergence: Heraclitus frames change as constant, while Tao Te Ching frames harmony as stillness
+    passage_id: ''
+  - citation: Confucius, Analects 2.1
+    resonance: both value sincerity over rhetoric
+    divergence: Confucius stresses social order, Tao Te Ching stresses natural order
+    passage_id: ''
+  - citation: Buddha, Dhammapada 1.5
+    resonance: both warn against attachment to words and possessions
+    divergence: Buddha focuses on mental detachment, Tao Te Ching on external generosity
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Stand barefoot on the earth for five minutes, feeling the ground beneath you. As you breathe, silently repeat: "I

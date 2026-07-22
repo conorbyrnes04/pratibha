@@ -56,23 +56,7 @@ commentary: 'chapter 25 (something formless before heaven and earth) is the *Dà
   for the *dào*.
 
 
-  **fǎ 法** — to model, take as standard — hierarchical alignment without domination.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Plotinus, Enneads V.1:** the One overflows to Intellect to Soul — descending chain of modeling. *Divergence:* Plotinus
-  personalizes the One; chapter 25 (something formless before heaven and earth) keeps the *dào* impersonal and adds *fǎn*
-  return.
-
-
-  **Tao Te Ching ch.16 / Pratyabhijñā emanation-return path:** cosmic circulation and human participation. *Divergence:* Śaiva
-  recognition vs Daoist modeling without identity claim.
-
-
-  **Spinoza, *Deus sive Natura*:** single substance expressing infinite modes. *Divergence:* rational geometric system vs
-  poetic naming under erasure.'
+  **fǎ 法** — to model, take as standard — hierarchical alignment without domination.'
 insight: 'chapter 25 (something formless before heaven and earth) is the *Dào Dé Jīng*''s cosmological naming poem: the *dào*
   is not an object among objects but the pre-cosmic whole that remains unchanged while circulating.'
 practice: Walk for five minutes without naming what you see (tree, sky, person). When a label arises, note it and return to
@@ -154,23 +138,24 @@ pratibha_layers:
     model for the *dào*.
 
 
-    **fǎ 法** — to model, take as standard — hierarchical alignment without domination.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Plotinus, Enneads V.1:** the One overflows to Intellect to Soul — descending chain of modeling. *Divergence:* Plotinus
-    personalizes the One; chapter 25 (something formless before heaven and earth) keeps the *dào* impersonal and adds *fǎn*
-    return.
-
-
-    **Tao Te Ching ch.16 / Pratyabhijñā emanation-return path:** cosmic circulation and human participation. *Divergence:*
-    Śaiva recognition vs Daoist modeling without identity claim.
-
-
-    **Spinoza, *Deus sive Natura*:** single substance expressing infinite modes. *Divergence:* rational geometric system vs
-    poetic naming under erasure.'
+    **fǎ 法** — to model, take as standard — hierarchical alignment without domination.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus, Enneads V.1
+    resonance: the One overflows to Intellect to Soul — descending chain of modeling.
+    divergence: Plotinus personalizes the One; chapter 25 (something formless before heaven and earth) keeps the *dào* impersonal
+      and adds *fǎn* return.
+    passage_id: ''
+  - citation: Tao Te Ching ch.16 / Pratyabhijñā emanation-return path
+    resonance: cosmic circulation and human participation.
+    divergence: Śaiva recognition vs Daoist modeling without identity claim.
+    passage_id: tao_te_ching.ttc_md_016
+  - citation: Spinoza, *Deus sive Natura*
+    resonance: single substance expressing infinite modes.
+    divergence: rational geometric system vs poetic naming under erasure.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Walk for five minutes without naming what you see (tree, sky, person). When a label arises, note it and return to

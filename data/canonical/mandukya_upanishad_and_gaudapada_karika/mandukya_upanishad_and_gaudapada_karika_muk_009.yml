@@ -79,27 +79,7 @@ commentary: 'This is the most important verse in the Upaniṣad — arguably one
 
   - **advaita** — without a second, non-dual; not a doctrine but a recognition: *a* (without) + *dvaita* (two-ness)
 
-  - **vijñeya** — to be known; not propositionally but through direct recognition
-
-
-  Cross-Tradition Resonances:
-
-
-  - Mūlamadhyamakakārikā (Nāgārjuna) 25.19–20: the convergence point. Nāgārjuna''s *śūnyavāda* (doctrine of emptiness) and
-  Gauḍapāda''s *ajātivāda* arrive at structurally similar positions — all phenomena lack independent origination — but from
-  opposite directions. Nāgārjuna deconstructs from the phenomenal side; Gauḍapāda proceeds from the standpoint of consciousness
-  as ground. This is the most productive dialogue in the Pratibhā corpus.
-
-  - Pseudo-Dionysius, *Mystical Theology*: "The simple absolute and immutable mysteries of divine knowledge... are hidden
-  in the transcendent darkness of hidden silence." Six apophatic negations followed by silence — the same method as Māṇḍūkya
-  7, arriving at the same impossibility of predication.
-
-  - Wittgenstein, *Tractatus* 7: "What we cannot speak about we must pass over in silence." The limit of language as the door
-  to what lies beyond — Wittgenstein as negative theologian arriving at the same boundary the Upaniṣad names *avyapadeśya*.
-
-  - Aṣṭāvakra Gītā 18.96: *na sukhī na ca vā duḥkhī na virakto na saṅgavān | na mumukṣur na vā muktā na kiñcin na ca kiñcana
-  ||* — the liberated one refuses every binary predication. Aṣṭāvakra is describing the lived phenomenology of what Māṇḍūkya
-  7 describes ontologically.'
+  - **vijñeya** — to be known; not propositionally but through direct recognition'
 insight: 'This is the most important verse in the Upaniṣad — arguably one of the most important single passages in the entire
   history of philosophy — and its method is pure *apophasis*: systematic negation of every possible characterization.'
 practice: 'The six negations of Verse 7 can be used as a meditation. In sitting practice: *nāntaḥprajñam* — I am not this
@@ -212,27 +192,34 @@ pratibha_layers:
 
     - **advaita** — without a second, non-dual; not a doctrine but a recognition: *a* (without) + *dvaita* (two-ness)
 
-    - **vijñeya** — to be known; not propositionally but through direct recognition
-
-
-    Cross-Tradition Resonances:
-
-
-    - Mūlamadhyamakakārikā (Nāgārjuna) 25.19–20: the convergence point. Nāgārjuna''s *śūnyavāda* (doctrine of emptiness) and
-    Gauḍapāda''s *ajātivāda* arrive at structurally similar positions — all phenomena lack independent origination — but from
-    opposite directions. Nāgārjuna deconstructs from the phenomenal side; Gauḍapāda proceeds from the standpoint of consciousness
-    as ground. This is the most productive dialogue in the Pratibhā corpus.
-
-    - Pseudo-Dionysius, *Mystical Theology*: "The simple absolute and immutable mysteries of divine knowledge... are hidden
-    in the transcendent darkness of hidden silence." Six apophatic negations followed by silence — the same method as Māṇḍūkya
-    7, arriving at the same impossibility of predication.
-
-    - Wittgenstein, *Tractatus* 7: "What we cannot speak about we must pass over in silence." The limit of language as the
-    door to what lies beyond — Wittgenstein as negative theologian arriving at the same boundary the Upaniṣad names *avyapadeśya*.
-
-    - Aṣṭāvakra Gītā 18.96: *na sukhī na ca vā duḥkhī na virakto na saṅgavān | na mumukṣur na vā muktā na kiñcin na ca kiñcana
-    ||* — the liberated one refuses every binary predication. Aṣṭāvakra is describing the lived phenomenology of what Māṇḍūkya
-    7 describes ontologically.'
+    - **vijñeya** — to be known; not propositionally but through direct recognition'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mūlamadhyamakakārikā (Nāgārjuna) 25.19–20
+    resonance: the convergence point. Nāgārjuna's *śūnyavāda* (doctrine of emptiness) and Gauḍapāda's *ajātivāda* arrive at
+      structurally similar positions — all phenomena lack independent origination
+    divergence: but from opposite directions. Nāgārjuna deconstructs from the phenomenal side; Gauḍapāda proceeds from the
+      standpoint of consciousness as ground. This is the most productive dialogue in the Pratibhā corpus.
+    passage_id: ''
+  - citation: Pseudo-Dionysius, *Mystical Theology
+    resonance: '"The simple absolute and immutable mysteries of divine knowledge... are hidden in the transcendent darkness
+      of hidden silence." Six apophatic negations followed by silence — the same method as Māṇḍūkya 7, arriving at the same
+      impossibility of predication.'
+    divergence: ''
+    passage_id: ''
+  - citation: Wittgenstein, *Tractatus* 7
+    resonance: '"What we cannot speak about we must pass over in silence." The limit of language as the door to what lies
+      beyond — Wittgenstein as negative theologian arriving at the same boundary the Upaniṣad names *avyapadeśya*.'
+    divergence: ''
+    passage_id: ''
+  - citation: Aṣṭāvakra Gītā 18.96
+    resonance: '*na sukhī na ca vā duḥkhī na virakto na saṅgavān | na mumukṣur na vā muktā na kiñcin na ca kiñcana ||* — the
+      liberated one refuses every binary predication. Aṣṭāvakra is describing the lived phenomenology of what Māṇḍūkya 7 describes
+      ontologically.'
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'The six negations of Verse 7 can be used as a meditation. In sitting practice: *nāntaḥprajñam* — I am not this inward

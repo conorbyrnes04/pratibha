@@ -42,21 +42,7 @@ commentary: 'The counterintuitive move made in this passage is the identificatio
 
   * **Pranava (प्रणव)** — from the Sanskrit words for "bow" or "salutation" -> another name for the syllable Om, often used
   in meditation and worship -> what default translation misses is the significance of pranava as a term for Om in the Upaniṣadic
-  tradition.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 1:** The Tao Te Ching also explores the idea of a single, underlying essence that gives rise to
-  all things, similar to the concept of Om in the Chāndogya Upaniṣad. *Divergence:* While the Tao Te Ching emphasizes the
-  idea of non-being and the empty space that gives rise to being, the Chāndogya Upaniṣad emphasizes the idea of a single,
-  underlying sound that gives rise to all things.
-
-  * **Plotinus, Enneads VI.9:** Plotinus also explores the idea of a single, underlying essence that gives rise to all things,
-  similar to the concept of Om in the Chāndogya Upaniṣad. *Divergence:* While Plotinus emphasizes the idea of a single, underlying
-  intellect that gives rise to all things, the Chāndogya Upaniṣad emphasizes the idea of a single, underlying sound that gives
-  rise to all things.'
+  tradition.'
 insight: The counterintuitive move made in this passage is the identification of the essence of all beings with the syllable
   Om, which is a sound that is often considered mere noise.
 practice: Meditate on the syllable Om, repeating it to yourself and focusing on its sound and significance, allowing yourself
@@ -119,21 +105,23 @@ pratibha_layers:
 
     * **Pranava (प्रणव)** — from the Sanskrit words for "bow" or "salutation" -> another name for the syllable Om, often used
     in meditation and worship -> what default translation misses is the significance of pranava as a term for Om in the Upaniṣadic
-    tradition.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 1:** The Tao Te Ching also explores the idea of a single, underlying essence that gives rise
-    to all things, similar to the concept of Om in the Chāndogya Upaniṣad. *Divergence:* While the Tao Te Ching emphasizes
-    the idea of non-being and the empty space that gives rise to being, the Chāndogya Upaniṣad emphasizes the idea of a single,
-    underlying sound that gives rise to all things.
-
-    * **Plotinus, Enneads VI.9:** Plotinus also explores the idea of a single, underlying essence that gives rise to all things,
-    similar to the concept of Om in the Chāndogya Upaniṣad. *Divergence:* While Plotinus emphasizes the idea of a single,
-    underlying intellect that gives rise to all things, the Chāndogya Upaniṣad emphasizes the idea of a single, underlying
-    sound that gives rise to all things.'
+    tradition.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 1
+    resonance: The Tao Te Ching also explores the idea of a single, underlying essence that gives rise to all things, similar
+      to the concept of Om in the Chāndogya Upaniṣad.
+    divergence: While the Tao Te Ching emphasizes the idea of non-being and the empty space that gives rise to being, the
+      Chāndogya Upaniṣad emphasizes the idea of a single, underlying sound that gives rise to all things.
+    passage_id: tao_te_ching.ttc_md_001
+  - citation: Plotinus, Enneads VI.9
+    resonance: Plotinus also explores the idea of a single, underlying essence that gives rise to all things, similar to the
+      concept of Om in the Chāndogya Upaniṣad.
+    divergence: While Plotinus emphasizes the idea of a single, underlying intellect that gives rise to all things, the Chāndogya
+      Upaniṣad emphasizes the idea of a single, underlying sound that gives rise to all things.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Meditate on the syllable Om, repeating it to yourself and focusing on its sound and significance, allowing yourself

@@ -49,23 +49,7 @@ commentary: 'This chapter asserts that the Tao is the ultimate source of all phe
   forced or artificial effort
 
   **zìrán 自然** — naturalness or spontaneity -> the spontaneous order that arises from the Tao -> living in accordance with
-  the natural flow of life
-
-
-  Cross-Tradition Resonances:
-
-
-  **chapter 1 (The Tao is the source of all things):** both chapters emphasize the Tao as the origin of all phenomena *Divergence:*
-  chapter 1 speaks of the Tao as the source, while chapter 62 speaks of the Tao as the hidden mystery that surpasses external
-  power
-
-  **chapter 21 (The Tao is the source of all things):** both chapters link the Tao with the idea that true virtue is not external
-  *Divergence:* chapter 21 focuses on the Tao as the source of all things, whereas chapter 62 focuses on the Tao as the hidden
-  source of all things
-
-  **chapter 48 (The Tao is the source of all things):** both chapters emphasize the Tao as the source of all phenomena *Divergence:*
-  chapter 48 describes the Tao as the source of all things, while chapter 62 describes the Tao as the hidden source of all
-  things'
+  the natural flow of life'
 insight: ''
 practice: Sit in quiet stillness for ten minutes each morning, observing your thoughts without attachment, and let the sense
   of the Tao guide your actions without force.
@@ -147,23 +131,26 @@ pratibha_layers:
     forced or artificial effort
 
     **zìrán 自然** — naturalness or spontaneity -> the spontaneous order that arises from the Tao -> living in accordance with
-    the natural flow of life
-
-
-    Cross-Tradition Resonances:
-
-
-    **chapter 1 (The Tao is the source of all things):** both chapters emphasize the Tao as the origin of all phenomena *Divergence:*
-    chapter 1 speaks of the Tao as the source, while chapter 62 speaks of the Tao as the hidden mystery that surpasses external
-    power
-
-    **chapter 21 (The Tao is the source of all things):** both chapters link the Tao with the idea that true virtue is not
-    external *Divergence:* chapter 21 focuses on the Tao as the source of all things, whereas chapter 62 focuses on the Tao
-    as the hidden source of all things
-
-    **chapter 48 (The Tao is the source of all things):** both chapters emphasize the Tao as the source of all phenomena *Divergence:*
-    chapter 48 describes the Tao as the source of all things, while chapter 62 describes the Tao as the hidden source of all
-    things'
+    the natural flow of life'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 1 (The Tao is the source of all things)
+    resonance: both chapters emphasize the Tao as the origin of all phenomena
+    divergence: chapter 1 speaks of the Tao as the source, while chapter 62 speaks of the Tao as the hidden mystery that surpasses
+      external power
+    passage_id: ''
+  - citation: chapter 21 (The Tao is the source of all things)
+    resonance: both chapters link the Tao with the idea that true virtue is not external
+    divergence: chapter 21 focuses on the Tao as the source of all things, whereas chapter 62 focuses on the Tao as the hidden
+      source of all things
+    passage_id: ''
+  - citation: chapter 48 (The Tao is the source of all things)
+    resonance: both chapters emphasize the Tao as the source of all phenomena
+    divergence: chapter 48 describes the Tao as the source of all things, while chapter 62 describes the Tao as the hidden
+      source of all things
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit in quiet stillness for ten minutes each morning, observing your thoughts without attachment, and let the sense

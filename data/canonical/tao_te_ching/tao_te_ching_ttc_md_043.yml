@@ -73,21 +73,7 @@ commentary: 'This chapter asserts that the Tao’s power is exercised without se
   -> rendered as "non‑doing" to highlight its active absence
 
   **zìrán 自然** — the spontaneous, self‑generated order of nature -> the state of being in harmony with the Tao -> often translated
-  as "naturalness" or "spontaneity"
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 1 (the Way is the source of all things):** Both chapters emphasize the Tao as the unseen source of all
-  existence. *Divergence:* Chapter 34 adds the idea that the Tao can be "named" selectively, which is absent in chapter 1
-
-  **Zhuangzi, chapter 6 (the subtle nature of the Tao):** Both texts portray the Tao as beyond human grasp yet present in
-  all things. *Divergence:* Zhuangzi focuses on paradoxical anecdotes, whereas chapter 34 presents a more declarative, almost
-  legalistic tone
-
-  **Confucius, Analects 2.1 (the importance of humility):** Both texts value humility as a virtue for achieving harmony. *Divergence:*
-  Confucius frames humility as a moral duty, while chapter 34 frames it as a natural consequence of aligning with the Tao'
+  as "naturalness" or "spontaneity"'
 insight: ''
 practice: Stand in a quiet place, close your eyes, and imagine the breath of the Tao flowing through you. As thoughts arise,
   gently observe them without attachment, allowing each to pass like a cloud. By practicing this mindful detachment, you embody
@@ -185,23 +171,25 @@ pratibha_layers:
     forcing -> rendered as "non‑doing" to highlight its active absence
 
     **zìrán 自然** — the spontaneous, self‑generated order of nature -> the state of being in harmony with the Tao -> often
-    translated as "naturalness" or "spontaneity"
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 1 (the Way is the source of all things):** Both chapters emphasize the Tao as the unseen source of all
-    existence. *Divergence:* Chapter 34 adds the idea that the Tao can be "named" selectively, which is absent in chapter
-    1
-
-    **Zhuangzi, chapter 6 (the subtle nature of the Tao):** Both texts portray the Tao as beyond human grasp yet present in
-    all things. *Divergence:* Zhuangzi focuses on paradoxical anecdotes, whereas chapter 34 presents a more declarative, almost
-    legalistic tone
-
-    **Confucius, Analects 2.1 (the importance of humility):** Both texts value humility as a virtue for achieving harmony.
-    *Divergence:* Confucius frames humility as a moral duty, while chapter 34 frames it as a natural consequence of aligning
-    with the Tao'
+    translated as "naturalness" or "spontaneity"'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 1 (the Way is the source of all things)
+    resonance: Both chapters emphasize the Tao as the unseen source of all existence.
+    divergence: Chapter 34 adds the idea that the Tao can be "named" selectively, which is absent in chapter 1
+    passage_id: ''
+  - citation: Zhuangzi, chapter 6 (the subtle nature of the Tao)
+    resonance: Both texts portray the Tao as beyond human grasp yet present in all things.
+    divergence: Zhuangzi focuses on paradoxical anecdotes, whereas chapter 34 presents a more declarative, almost legalistic
+      tone
+    passage_id: ''
+  - citation: Confucius, Analects 2.1 (the importance of humility)
+    resonance: Both texts value humility as a virtue for achieving harmony.
+    divergence: Confucius frames humility as a moral duty, while chapter 34 frames it as a natural consequence of aligning
+      with the Tao
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand in a quiet place, close your eyes, and imagine the breath of the Tao flowing through you. As thoughts arise,

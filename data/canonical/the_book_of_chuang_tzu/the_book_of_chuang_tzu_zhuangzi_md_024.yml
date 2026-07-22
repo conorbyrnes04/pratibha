@@ -55,29 +55,7 @@ commentary: 'Hsü Wu Kuei''s refusal of the Prince''s benevolent intentions enac
   whether the sage acts from a unified source or from fragmented intention
 
   **勞 lao** - to weary, to labor, to exhaust → here: to tire the prince''s false certainties into collapse → the stakes: whether
-  teaching happens through negation or affirmation
-
-
-  Cross-Tradition Resonances:
-
-
-  **Confucian Analects 15.32: ''The Master said, The superior man thinks always of virtue, the common man thinks of comfort'':**
-  Both texts posit a hierarchy of consciousness—the sage versus the ordinary. Hsü Wu Kuei''s ''highest class'' of horses (those
-  who have ''lost their one'') mirrors the sage who transcends deliberate virtue. *Divergence:* Confucius locates virtue in
-  constant reflection and self-cultivation; Zhuangzi locates it in the abandonment of the very faculty (the calculating mind)
-  that Confucius valorizes. For Confucius, virtue is achieved; for Zhuangzi, it emerges only when achievement ceases.
-
-  **Laozi, Daodejing 38: ''When the great Tao is forgotten, goodness and evil appear. When the body''s intelligence declines,
-  cleverness and cunning appear.'':** Both texts diagnose moral intentionality as a symptom of prior loss—the forgetting of
-  the Tao, the fracturing of unified being. Both reverse the hierarchy: what looks like progress (virtue, cleverness) is actually
-  decline. *Divergence:* The Daodejing offers a cosmological narrative of decline from unity; Zhuangzi offers a phenomenological
-  diagnosis of how the Prince''s *present* acts of will perpetuate fragmentation. Laozi is elegiac; Zhuangzi is surgical.
-
-  **Mencius 2A.2: ''If you let people follow their feelings, they can be brought to goodness.'':** Both texts trust a natural
-  human capacity that precedes moral training. Mencius calls it innate goodness; Zhuangzi calls it the sincerity in the chest
-  (胸中之誠). *Divergence:* Mencius believes this capacity must be *cultivated* through ritual and reflection; Zhuangzi insists
-  it emerges only when cultivation ceases. For Mencius, the path is inward discipline; for Zhuangzi, it is the dissolution
-  of the disciplining self.'
+  teaching happens through negation or affirmation'
 insight: 'Hsü Wu Kuei''s refusal of the Prince''s benevolent intentions enacts a radical inversion: moral programs (ren-yi
   仁義) are themselves the disease, not the cure.'
 practice: 'For one day, identify one deliberate act of kindness or justice you planned to perform. Before executing it, pause
@@ -160,30 +138,33 @@ pratibha_layers:
     whether the sage acts from a unified source or from fragmented intention
 
     **勞 lao** - to weary, to labor, to exhaust → here: to tire the prince''s false certainties into collapse → the stakes:
-    whether teaching happens through negation or affirmation
-
-
-    Cross-Tradition Resonances:
-
-
-    **Confucian Analects 15.32: ''The Master said, The superior man thinks always of virtue, the common man thinks of comfort'':**
-    Both texts posit a hierarchy of consciousness—the sage versus the ordinary. Hsü Wu Kuei''s ''highest class'' of horses
-    (those who have ''lost their one'') mirrors the sage who transcends deliberate virtue. *Divergence:* Confucius locates
-    virtue in constant reflection and self-cultivation; Zhuangzi locates it in the abandonment of the very faculty (the calculating
-    mind) that Confucius valorizes. For Confucius, virtue is achieved; for Zhuangzi, it emerges only when achievement ceases.
-
-    **Laozi, Daodejing 38: ''When the great Tao is forgotten, goodness and evil appear. When the body''s intelligence declines,
-    cleverness and cunning appear.'':** Both texts diagnose moral intentionality as a symptom of prior loss—the forgetting
-    of the Tao, the fracturing of unified being. Both reverse the hierarchy: what looks like progress (virtue, cleverness)
-    is actually decline. *Divergence:* The Daodejing offers a cosmological narrative of decline from unity; Zhuangzi offers
-    a phenomenological diagnosis of how the Prince''s *present* acts of will perpetuate fragmentation. Laozi is elegiac; Zhuangzi
-    is surgical.
-
-    **Mencius 2A.2: ''If you let people follow their feelings, they can be brought to goodness.'':** Both texts trust a natural
-    human capacity that precedes moral training. Mencius calls it innate goodness; Zhuangzi calls it the sincerity in the
-    chest (胸中之誠). *Divergence:* Mencius believes this capacity must be *cultivated* through ritual and reflection; Zhuangzi
-    insists it emerges only when cultivation ceases. For Mencius, the path is inward discipline; for Zhuangzi, it is the dissolution
-    of the disciplining self.'
+    whether teaching happens through negation or affirmation'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Confucian Analects 15.32: ''The Master said, The superior man thinks always of virtue, the common man thinks
+      of comfort'''
+    resonance: Both texts posit a hierarchy of consciousness—the sage versus the ordinary. Hsü Wu Kuei's 'highest class' of
+      horses (those who have 'lost their one') mirrors the sage who transcends deliberate virtue.
+    divergence: Confucius locates virtue in constant reflection and self-cultivation; Zhuangzi locates it in the abandonment
+      of the very faculty (the calculating mind) that Confucius valorizes. For Confucius, virtue is achieved; for Zhuangzi,
+      it emerges only when achievement ceases.
+    passage_id: ''
+  - citation: 'Laozi, Daodejing 38: ''When the great Tao is forgotten, goodness and evil appear. When the body''s intelligence
+      declines, cleverness and cunning appear.'''
+    resonance: 'Both texts diagnose moral intentionality as a symptom of prior loss—the forgetting of the Tao, the fracturing
+      of unified being. Both reverse the hierarchy: what looks like progress (virtue, cleverness) is actually decline.'
+    divergence: The Daodejing offers a cosmological narrative of decline from unity; Zhuangzi offers a phenomenological diagnosis
+      of how the Prince's *present* acts of will perpetuate fragmentation. Laozi is elegiac; Zhuangzi is surgical.
+    passage_id: ''
+  - citation: 'Mencius 2A.2: ''If you let people follow their feelings, they can be brought to goodness.'''
+    resonance: Both texts trust a natural human capacity that precedes moral training. Mencius calls it innate goodness; Zhuangzi
+      calls it the sincerity in the chest (胸中之誠).
+    divergence: Mencius believes this capacity must be *cultivated* through ritual and reflection; Zhuangzi insists it emerges
+      only when cultivation ceases. For Mencius, the path is inward discipline; for Zhuangzi, it is the dissolution of the
+      disciplining self.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'For one day, identify one deliberate act of kindness or justice you planned to perform. Before executing it, pause

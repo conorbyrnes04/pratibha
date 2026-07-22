@@ -17,19 +17,7 @@ commentary: 'A second set of names for the pañcakṛtya, each with a subtler ph
   significant term: self-recognition, the moment Consciousness knows itself through and as the experience — the *I-consciousness*
   (*ahaṁ*) illuminating from within. *Bījāvasthāpana* is the sowing of seeds — the impressional residue (*saṁskāra*) deposited
   for future arising. *Vilāpana* is dissolution — returning to the unmanifest. This second set reveals that the five cosmic
-  acts are simultaneously five moments in every single experience.
-
-
-  Cross-Tradition Resonance:
-
-  - Vijñāna Bhairava Tantra dhāraṇā 49: the practice of recognizing *vimarśa* — the self-luminous knowing — within ordinary
-  experience.
-
-  - Buddhist *momentariness* (*kṣaṇikavāda*): experience as a series of arising-abiding-passing moments; here reinterpreted
-  as Consciousness in five-fold play.
-
-  - Husserl''s phenomenology of time-consciousness: retention, primal impression, protention — a Western structural parallel
-  to the five-moment analysis.'
+  acts are simultaneously five moments in every single experience.'
 insight: A second set of names for the pañcakṛtya, each with a subtler phenomenological flavor.
 practice: 'Take one complete breath — one inhalation, one exhalation — and map the five moments onto it. *Ābhāsana*: the breath
   arising. *Rakti*: the fullness of the held breath. *Vimarśana*: the awareness that knows the breath, recognizing itself.
@@ -76,19 +64,37 @@ pratibha_layers:
     significant term: self-recognition, the moment Consciousness knows itself through and as the experience — the *I-consciousness*
     (*ahaṁ*) illuminating from within. *Bījāvasthāpana* is the sowing of seeds — the impressional residue (*saṁskāra*) deposited
     for future arising. *Vilāpana* is dissolution — returning to the unmanifest. This second set reveals that the five cosmic
-    acts are simultaneously five moments in every single experience.
-
-
-    Cross-Tradition Resonance:
-
-    - Vijñāna Bhairava Tantra dhāraṇā 49: the practice of recognizing *vimarśa* — the self-luminous knowing — within ordinary
-    experience.
-
-    - Buddhist *momentariness* (*kṣaṇikavāda*): experience as a series of arising-abiding-passing moments; here reinterpreted
-    as Consciousness in five-fold play.
-
-    - Husserl''s phenomenology of time-consciousness: retention, primal impression, protention — a Western structural parallel
-    to the five-moment analysis.'
+    acts are simultaneously five moments in every single experience.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ābhāsana
+    definition: manifestation, appearing, the act of shining forth; corresponds to *sṛṣṭi*
+  - term: rakti
+    definition: enjoyment, redness, affective coloring, savoring; corresponds to *sthiti*
+  - term: vimarśana
+    definition: self-recognition, reflexive awareness, the I-consciousness knowing itself; corresponds to *saṁhāra*
+  - term: bījāvasthāpana
+    definition: sowing of the seed; the implanting of *saṁskāra* (impression); corresponds to *vilaya*
+  - term: vilāpana
+    definition: dissolution, merging back into the unmanifest; corresponds to *anugraha*
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Vijñāna Bhairava Tantra dhāraṇā 49
+    resonance: the practice of recognizing *vimarśa* — the self-luminous knowing — within ordinary experience.
+    divergence: ''
+    passage_id: vijnana_bhairava.yukti_049
+  - citation: Buddhist *momentariness* (*kṣaṇikavāda*)
+    resonance: experience as a series of arising-abiding-passing moments; here reinterpreted as Consciousness in five-fold
+      play.
+    divergence: ''
+    passage_id: ''
+  - citation: Husserl's phenomenology of time-consciousness
+    resonance: retention, primal impression, protention — a Western structural parallel to the five-moment analysis.
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Take one complete breath — one inhalation, one exhalation — and map the five moments onto it. *Ābhāsana*: the breath

@@ -36,13 +36,7 @@ commentary: 'The Upanishad rejects one-sided absolutism. Pure activism without i
   **avidya** - pragmatic, world-engaged knowing at the empirical level (also ignorance in other contexts).
 
 
-  **vidya** - liberating knowledge of the Self.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Madhyamaka middle logic:** avoid extremes.'
+  **vidya** - liberating knowledge of the Self.'
 insight: The Upanishad rejects one-sided absolutism.
 practice: Balance one contemplative practice with one concrete act of service today.
 upaya: ''
@@ -103,13 +97,15 @@ pratibha_layers:
     **avidya** - pragmatic, world-engaged knowing at the empirical level (also ignorance in other contexts).
 
 
-    **vidya** - liberating knowledge of the Self.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Madhyamaka middle logic:** avoid extremes.'
+    **vidya** - liberating knowledge of the Self.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Madhyamaka middle logic
+    resonance: avoid extremes.
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Balance one contemplative practice with one concrete act of service today.

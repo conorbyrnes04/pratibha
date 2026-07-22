@@ -45,28 +45,7 @@ commentary: 'The claim is that much conflict concerns framing, rhythm, and felt 
 
 
   **yīn qí suǒ shì (因其所是)** - "following what is so for them" (conceptual gloss) -> contextual meaning: adapt expression to
-  the other''s actual pattern -> not capitulation, but fit.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Aristotle, *Rhetoric* II:** effective persuasion depends on audience disposition as much as formal argument.
-
-  *Divergence:* Aristotle codifies persuasive craft in civic rhetoric; Zhuangzi embeds adaptive framing in non-dominating
-  attunement and ontological perspectivism.
-
-
-  **Buddhist upaya (skillful means):** both permit variation in presentation while preserving deeper intent.
-
-  *Divergence:* Upaya serves explicit liberation pedagogy under doctrinal commitments; Zhuangzi''s adaptation is less doctrinal
-  and more ecological-relational.
-
-
-  **Epictetus, Discourses (pedagogy by temperament):** teachings are adjusted to student readiness.
-
-  *Divergence:* Stoic adaptation remains normatively tied to rational assent; Zhuangzi''s adjustment foregrounds fluid contextual
-  fit over a single universal method.'
+  the other''s actual pattern -> not capitulation, but fit.'
 insight: The claim is that much conflict concerns framing, rhythm, and felt sequencing rather than substance alone.
 practice: Before a difficult request today, rewrite it in two framings that preserve identical substance but different sequencing,
   then choose the version that best reduces defensiveness without hiding the truth.
@@ -132,28 +111,26 @@ pratibha_layers:
 
 
     **yīn qí suǒ shì (因其所是)** - "following what is so for them" (conceptual gloss) -> contextual meaning: adapt expression
-    to the other''s actual pattern -> not capitulation, but fit.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Aristotle, *Rhetoric* II:** effective persuasion depends on audience disposition as much as formal argument.
-
-    *Divergence:* Aristotle codifies persuasive craft in civic rhetoric; Zhuangzi embeds adaptive framing in non-dominating
-    attunement and ontological perspectivism.
-
-
-    **Buddhist upaya (skillful means):** both permit variation in presentation while preserving deeper intent.
-
-    *Divergence:* Upaya serves explicit liberation pedagogy under doctrinal commitments; Zhuangzi''s adaptation is less doctrinal
-    and more ecological-relational.
-
-
-    **Epictetus, Discourses (pedagogy by temperament):** teachings are adjusted to student readiness.
-
-    *Divergence:* Stoic adaptation remains normatively tied to rational assent; Zhuangzi''s adjustment foregrounds fluid contextual
-    fit over a single universal method.'
+    to the other''s actual pattern -> not capitulation, but fit.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Aristotle, *Rhetoric* II
+    resonance: effective persuasion depends on audience disposition as much as formal argument.
+    divergence: Aristotle codifies persuasive craft in civic rhetoric; Zhuangzi embeds adaptive framing in non-dominating
+      attunement and ontological perspectivism.
+    passage_id: ''
+  - citation: Buddhist upaya (skillful means)
+    resonance: both permit variation in presentation while preserving deeper intent.
+    divergence: Upaya serves explicit liberation pedagogy under doctrinal commitments; Zhuangzi's adaptation is less doctrinal
+      and more ecological-relational.
+    passage_id: ''
+  - citation: Epictetus, Discourses (pedagogy by temperament)
+    resonance: teachings are adjusted to student readiness.
+    divergence: Stoic adaptation remains normatively tied to rational assent; Zhuangzi's adjustment foregrounds fluid contextual
+      fit over a single universal method.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Before a difficult request today, rewrite it in two framings that preserve identical substance but different sequencing,

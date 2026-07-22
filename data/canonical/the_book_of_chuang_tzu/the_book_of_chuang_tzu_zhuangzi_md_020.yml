@@ -52,19 +52,7 @@ commentary: 'The contested move here is Zhuangzi''s refusal to resolve the parad
   through circumstance.
 
   **累 lèi** - entanglement/burden/constraint → existential weight of commitment to fixed positions. All moral stances, even
-  noble ones, become fetters.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Heraclitus, Fragment 49: ''One cannot step into the same river twice'':** Both reject static identity; both posit flux
-  as fundamental. The sage must *become* the river rather than stand on its bank. *Divergence:* Heraclitus emphasizes the
-  *logos* governing change; Zhuangzi emphasizes *non-action* (wu wei) within change—no principle, only responsiveness.
-
-  **Aristotle, Nicomachean Ethics II.6: virtue as the mean between extremes:** Both locate wisdom in a middle position. Zhuangzi''s
-  ''between'' (間) appears structurally similar to Aristotle''s mesotes. *Divergence:* Aristotle''s mean is *stable and knowable*;
-  Zhuangzi''s interval is *mobile and empty*—it cannot be fixed as a doctrine or habit.'
+  noble ones, become fetters.'
 insight: The contested move here is Zhuangzi's refusal to resolve the paradox through dialectical synthesis.
 practice: 'When facing a choice that seems to demand commitment to one side (useful/useless, right/wrong, success/failure),
   pause and ask: *What would it mean to embody both without choosing?* Sit with the tension for one full breath cycle. Notice
@@ -145,19 +133,23 @@ pratibha_layers:
     through circumstance.
 
     **累 lèi** - entanglement/burden/constraint → existential weight of commitment to fixed positions. All moral stances, even
-    noble ones, become fetters.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Heraclitus, Fragment 49: ''One cannot step into the same river twice'':** Both reject static identity; both posit flux
-    as fundamental. The sage must *become* the river rather than stand on its bank. *Divergence:* Heraclitus emphasizes the
-    *logos* governing change; Zhuangzi emphasizes *non-action* (wu wei) within change—no principle, only responsiveness.
-
-    **Aristotle, Nicomachean Ethics II.6: virtue as the mean between extremes:** Both locate wisdom in a middle position.
-    Zhuangzi''s ''between'' (間) appears structurally similar to Aristotle''s mesotes. *Divergence:* Aristotle''s mean is *stable
-    and knowable*; Zhuangzi''s interval is *mobile and empty*—it cannot be fixed as a doctrine or habit.'
+    noble ones, become fetters.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Heraclitus, Fragment 49: ''One cannot step into the same river twice'''
+    resonance: Both reject static identity; both posit flux as fundamental. The sage must *become* the river rather than stand
+      on its bank.
+    divergence: Heraclitus emphasizes the *logos* governing change; Zhuangzi emphasizes *non-action* (wu wei) within change—no
+      principle, only responsiveness.
+    passage_id: ''
+  - citation: 'Aristotle, Nicomachean Ethics II.6: virtue as the mean between extremes'
+    resonance: Both locate wisdom in a middle position. Zhuangzi's 'between' (間) appears structurally similar to Aristotle's
+      mesotes.
+    divergence: Aristotle's mean is *stable and knowable*; Zhuangzi's interval is *mobile and empty*—it cannot be fixed as
+      a doctrine or habit.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When facing a choice that seems to demand commitment to one side (useful/useless, right/wrong, success/failure),

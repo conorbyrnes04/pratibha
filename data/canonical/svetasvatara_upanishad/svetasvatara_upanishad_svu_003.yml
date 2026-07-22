@@ -75,23 +75,7 @@ commentary: 'The philosophical claim is precise: transcendence and immanence are
 
 
   **nityo nityānām (नित्यो नित्यानाम्)** - "the Eternal among the eternal" -> layered eternity: enduring entities may be relatively
-  eternal, but the ground is absolute eternity. This protects the distinction between cosmic durability and metaphysical ultimacy.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Kena Upaniṣad 1.2-1.4:** Both deny that ultimate knower is an object among knowns and locate it as condition of cognition
-  itself. *Divergence:* Kena is more apophatic and epistemic; Śvetāśvatara integrates explicit theistic language of Lordship.
-
-
-  **Spinoza, Ethics I:** Both hold one underlying reality appearing in many modes. *Divergence:* Spinoza rejects personal
-  divine agency and devotion; Śvetāśvatara sustains personal address, grace, and liberative relation to īśvara.
-
-
-  **Vijñāna Bhairava Tantra (opening frame):** Both imply that the witness is present through all states and activities. *Divergence:*
-  VBT prioritizes method through state-transitions and micro-practices; Śvetāśvatara foregrounds ontological declaration with
-  contemplative internalization.'
+  eternal, but the ground is absolute eternity. This protects the distinction between cosmic durability and metaphysical ultimacy.'
 insight: 'The philosophical claim is precise: transcendence and immanence are not competing attributes but one structure seen
   from two angles.'
 practice: 'In one ordinary interaction, hold two simultaneous recognitions: the moving roles, words, and reactions, and the
@@ -190,23 +174,25 @@ pratibha_layers:
 
     **nityo nityānām (नित्यो नित्यानाम्)** - "the Eternal among the eternal" -> layered eternity: enduring entities may be
     relatively eternal, but the ground is absolute eternity. This protects the distinction between cosmic durability and metaphysical
-    ultimacy.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Kena Upaniṣad 1.2-1.4:** Both deny that ultimate knower is an object among knowns and locate it as condition of cognition
-    itself. *Divergence:* Kena is more apophatic and epistemic; Śvetāśvatara integrates explicit theistic language of Lordship.
-
-
-    **Spinoza, Ethics I:** Both hold one underlying reality appearing in many modes. *Divergence:* Spinoza rejects personal
-    divine agency and devotion; Śvetāśvatara sustains personal address, grace, and liberative relation to īśvara.
-
-
-    **Vijñāna Bhairava Tantra (opening frame):** Both imply that the witness is present through all states and activities.
-    *Divergence:* VBT prioritizes method through state-transitions and micro-practices; Śvetāśvatara foregrounds ontological
-    declaration with contemplative internalization.'
+    ultimacy.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Kena Upaniṣad 1.2-1.4
+    resonance: Both deny that ultimate knower is an object among knowns and locate it as condition of cognition itself.
+    divergence: Kena is more apophatic and epistemic; Śvetāśvatara integrates explicit theistic language of Lordship.
+    passage_id: ''
+  - citation: Spinoza, Ethics I
+    resonance: Both hold one underlying reality appearing in many modes.
+    divergence: Spinoza rejects personal divine agency and devotion; Śvetāśvatara sustains personal address, grace, and liberative
+      relation to īśvara.
+    passage_id: ''
+  - citation: Vijñāna Bhairava Tantra (opening frame)
+    resonance: Both imply that the witness is present through all states and activities.
+    divergence: VBT prioritizes method through state-transitions and micro-practices; Śvetāśvatara foregrounds ontological
+      declaration with contemplative internalization.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'In one ordinary interaction, hold two simultaneous recognitions: the moving roles, words, and reactions, and the

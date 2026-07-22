@@ -35,22 +35,7 @@ commentary: 'The philosophical claim here is that true beauty is not a physical 
   is the source of all knowledge and wisdom.
 
   * **Arete (ἀρετή)** — from ar- (to fit) -> excellence, [virtue] -> in Neoplatonism, [virtue] is the cultivation of inner
-  excellence and [moral wisdom].
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.24:** the idea that the [Soul] can become tainted by bodily desires and lose its original [virtue]
-  is echoed in the Katha Upanishad, where it is said that the [Soul] is like a charioteer who must control the horses of the
-  senses to achieve liberation.
-
-  * **Phaedo, 67a:** the concept of the [Soul]''s descent into the physical world and its subsequent corruption is also found
-  in Plato''s Phaedo, where it is said that the [Soul] is immortal and divine, but becomes tainted by the body.
-
-  * **Zhuangzi, Chapter 2:** the idea that true beauty is not a physical quality, but rather a reflection of inner [virtue]
-  and [moral wisdom] is echoed in the Zhuangzi, where it is said that the [Sage] is like a tree that is beautiful because
-  of its inner [virtue], not its physical form.'
+  excellence and [moral wisdom].'
 insight: The philosophical claim here is that true beauty is not a physical quality, but rather a reflection of the [Soul]'s
   inner [virtue] and [moral wisdom].
 practice: 'As you go about your daily activities, take a moment to reflect on the presence of [grace] and [virtue] in the
@@ -115,22 +100,27 @@ pratibha_layers:
     is the source of all knowledge and wisdom.
 
     * **Arete (ἀρετή)** — from ar- (to fit) -> excellence, [virtue] -> in Neoplatonism, [virtue] is the cultivation of inner
-    excellence and [moral wisdom].
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.24:** the idea that the [Soul] can become tainted by bodily desires and lose its original [virtue]
-    is echoed in the Katha Upanishad, where it is said that the [Soul] is like a charioteer who must control the horses of
-    the senses to achieve liberation.
-
-    * **Phaedo, 67a:** the concept of the [Soul]''s descent into the physical world and its subsequent corruption is also
-    found in Plato''s Phaedo, where it is said that the [Soul] is immortal and divine, but becomes tainted by the body.
-
-    * **Zhuangzi, Chapter 2:** the idea that true beauty is not a physical quality, but rather a reflection of inner [virtue]
-    and [moral wisdom] is echoed in the Zhuangzi, where it is said that the [Sage] is like a tree that is beautiful because
-    of its inner [virtue], not its physical form.'
+    excellence and [moral wisdom].'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.24
+    resonance: the idea that the [Soul] can become tainted by bodily desires and lose its original [virtue] is echoed in the
+      Katha Upanishad, where it is said that the [Soul] is like a charioteer who must control the horses of the senses to
+      achieve liberation.
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 67a
+    resonance: the concept of the [Soul]'s descent into the physical world and its subsequent corruption is also found in
+      Plato's Phaedo, where it is said that the [Soul] is immortal and divine
+    divergence: but becomes tainted by the body.
+    passage_id: ''
+  - citation: Zhuangzi, Chapter 2
+    resonance: the idea that true beauty is not a physical quality
+    divergence: but rather a reflection of inner [virtue] and [moral wisdom] is echoed in the Zhuangzi, where it is said that
+      the [Sage] is like a tree that is beautiful because of its inner [virtue], not its physical form.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your daily activities, take a moment to reflect on the presence of [grace] and [virtue] in the world

@@ -28,18 +28,6 @@ commentary: 'Extended Translation:
   has dissolved along with the one who was asking it.
 
 
-  Cross-Tradition Resonance:
-
-  - Pratyabhijñāhṛdayam 20: *iti śivam* — the seal-phrase; both texts end in the dissolution of the teaching into the recognition
-  it was pointing toward
-
-  - Dào Dé Jīng ch. 1: the Tao that can be named is not the eternal Tao — the text begins where the Dào ends, in the dissolution
-  of all conceptual frames
-
-  - Wittgenstein, *Tractatus* 7: "What we cannot speak about we must pass over in silence" — a convergent endpoint from a
-  radically different intellectual tradition
-
-
   ## Appendix: Structural Notes for the Pratibhā Corpus
 
 
@@ -159,18 +147,6 @@ pratibha_layers:
     has dissolved along with the one who was asking it.
 
 
-    Cross-Tradition Resonance:
-
-    - Pratyabhijñāhṛdayam 20: *iti śivam* — the seal-phrase; both texts end in the dissolution of the teaching into the recognition
-    it was pointing toward
-
-    - Dào Dé Jīng ch. 1: the Tao that can be named is not the eternal Tao — the text begins where the Dào ends, in the dissolution
-    of all conceptual frames
-
-    - Wittgenstein, *Tractatus* 7: "What we cannot speak about we must pass over in silence" — a convergent endpoint from
-    a radically different intellectual tradition
-
-
     ## Appendix: Structural Notes for the Pratibhā Corpus
 
 
@@ -227,6 +203,36 @@ pratibha_layers:
     *॥ इति अष्टावक्रगीता समाप्ता ॥*
 
     *Thus ends the Aṣṭāvakra Gītā.*'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: svamahimni
+    definition: in one's own glory/power; *sva* (own) + *mahiman* (greatness, majesty, power); the Self's natural sovereignty
+      as the ground of the *kva* questions
+  - term: sthita
+    definition: established, steadfast; the quality of stable recognition
+  - term: kva advaitam
+    definition: where is even non-duality?; the self-dissolving move that prevents the teaching from becoming another object
+      of grasping
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijñāhṛdayam 20
+    resonance: '*iti śivam* — the seal-phrase; both texts end in the dissolution of the teaching into the recognition it was
+      pointing toward'
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_020
+  - citation: Dào Dé Jīng ch. 1
+    resonance: the Tao that can be named is not the eternal Tao — the text begins where the Dào ends, in the dissolution of
+      all conceptual frames
+    divergence: ''
+    passage_id: ''
+  - citation: Wittgenstein, *Tractatus* 7
+    resonance: '"What we cannot speak about we must pass over in silence" — a convergent endpoint from a radically different
+      intellectual tradition'
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'For one day, experiment with the following: do what arises to be done, without adding "I am doing this" on top. Not

@@ -45,29 +45,7 @@ commentary: 'The instruction makes a claim that overturns the whole logic of eff
   not produced but is born together with mind itself, already present beneath obscuration.
 
   **nirvikalpa (निर्विकल्प)** — Etymology: *nir-* (without) + *vikalpa* (conceptual construction): "non-conceptual." The mode
-  in which innate wisdom dawns—free of the discriminating thought that fabricates objects.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Nāgārjuna, MMK 18.5 & 25.24 (proliferation stilled in emptiness; the peace of un-grasping):** mahāmudrā''s "do not fabricate"
-  is the meditative face of Madhyamaka''s *prapañca-upaśama*—liberation as cessation of contriving, not addition of content.
-
-  *Divergence:* Nāgārjuna dismantles fabrication by dialectical analysis; Tilopa dissolves it by direct resting, bypassing
-  argument.
-
-  **Dōgen, Fukanzazengi ("do not think of good or bad; this is the art of non-thinking"):** zazen as non-contrived sitting
-  in which awakening is not manufactured but disclosed.
-
-  *Divergence:* Dōgen''s shikantaza affirms practice-realization as one act; Tilopa emphasizes an innate wisdom "dawning of
-  itself" once contrivance stops.
-
-  **Tao Te Ching 48 & wu wei (do less until nothing is forced, yet nothing is left undone):** attainment by non-action, the
-  natural condition disclosed when interference ceases.
-
-  *Divergence:* Daoist *ziran* accords with the Way as a cosmic source; mahāmudrā rests in empty awareness with no source
-  affirmed.'
+  in which innate wisdom dawns—free of the discriminating thought that fabricates objects.'
 insight: 'The instruction makes a claim that overturns the whole logic of effortful practice: the goal is undermined by the
   very act of trying to reach it.'
 practice: For the last few minutes of a sitting, drop every technique. Do not follow the breath, do not label thoughts, do
@@ -140,29 +118,27 @@ pratibha_layers:
     is not produced but is born together with mind itself, already present beneath obscuration.
 
     **nirvikalpa (निर्विकल्प)** — Etymology: *nir-* (without) + *vikalpa* (conceptual construction): "non-conceptual." The
-    mode in which innate wisdom dawns—free of the discriminating thought that fabricates objects.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Nāgārjuna, MMK 18.5 & 25.24 (proliferation stilled in emptiness; the peace of un-grasping):** mahāmudrā''s "do not fabricate"
-    is the meditative face of Madhyamaka''s *prapañca-upaśama*—liberation as cessation of contriving, not addition of content.
-
-    *Divergence:* Nāgārjuna dismantles fabrication by dialectical analysis; Tilopa dissolves it by direct resting, bypassing
-    argument.
-
-    **Dōgen, Fukanzazengi ("do not think of good or bad; this is the art of non-thinking"):** zazen as non-contrived sitting
-    in which awakening is not manufactured but disclosed.
-
-    *Divergence:* Dōgen''s shikantaza affirms practice-realization as one act; Tilopa emphasizes an innate wisdom "dawning
-    of itself" once contrivance stops.
-
-    **Tao Te Ching 48 & wu wei (do less until nothing is forced, yet nothing is left undone):** attainment by non-action,
-    the natural condition disclosed when interference ceases.
-
-    *Divergence:* Daoist *ziran* accords with the Way as a cosmic source; mahāmudrā rests in empty awareness with no source
-    affirmed.'
+    mode in which innate wisdom dawns—free of the discriminating thought that fabricates objects.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nāgārjuna, MMK 18.5 & 25.24 (proliferation stilled in emptiness; the peace of un-grasping)
+    resonance: mahāmudrā's "do not fabricate" is the meditative face of Madhyamaka's *prapañca-upaśama*—liberation as cessation
+      of contriving, not addition of content.
+    divergence: Nāgārjuna dismantles fabrication by dialectical analysis; Tilopa dissolves it by direct resting, bypassing
+      argument.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_18_05
+  - citation: Dōgen, Fukanzazengi ("do not think of good or bad; this is the art of non-thinking")
+    resonance: zazen as non-contrived sitting in which awakening is not manufactured but disclosed.
+    divergence: Dōgen's shikantaza affirms practice-realization as one act; Tilopa emphasizes an innate wisdom "dawning of
+      itself" once contrivance stops.
+    passage_id: ''
+  - citation: Tao Te Ching 48 & wu wei (do less until nothing is forced, yet nothing is left undone)
+    resonance: attainment by non-action, the natural condition disclosed when interference ceases.
+    divergence: Daoist *ziran* accords with the Way as a cosmic source; mahāmudrā rests in empty awareness with no source
+      affirmed.
+    passage_id: tao_te_ching.ttc_md_048
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: For the last few minutes of a sitting, drop every technique. Do not follow the breath, do not label thoughts, do not

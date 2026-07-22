@@ -55,24 +55,7 @@ commentary: 'This chapter presents the contested move of "the disease is itself 
 
   **疾病 (jíbìng)** — disease -> Daoist sense: the sickness of over‑thinking -> translation: ''disease''
 
-  **圣人 (shèngrén)** — sage -> Daoist sense: one who sees the nature of things -> translation: ''sage''
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 1 (The Way is the Way, the Way is not the Way):** Both chapters emphasize the paradoxical nature of the
-  Dao; the first introduces the idea that the Way is beyond ordinary understanding, while chapter 71 illustrates how knowing
-  can become a sickness. *Divergence:* Chapter 1 presents the paradox as a statement of the Dao’s ineffability, whereas chapter
-  71 treats it as a practical warning against the over‑use of knowledge.
-
-  **Zhuangzi, chapter 12 (The Great Learning):** Both texts warn against the dangers of rigid intellectualism; Zhuangzi uses
-  the story of a scholar who loses his sense of humor, while chapter 71 uses the metaphor of disease. *Divergence:* Zhuangzi’s
-  account is narrative, whereas chapter 71 is aphoristic and focuses on the self‑referential nature of disease.
-
-  **Confucius, Analects 2.17 (The Master’s Teachings):** Both emphasize the importance of humility in learning; Confucius
-  speaks of the need to recognize one’s ignorance, echoing the idea that not knowing can be a virtue. *Divergence:* Confucian
-  humility is framed as moral cultivation, while chapter 71 frames it as a means to avoid the sickness of over‑thinking.'
+  **圣人 (shèngrén)** — sage -> Daoist sense: one who sees the nature of things -> translation: ''sage'''
 insight: ''
 practice: Sit quietly for ten minutes, observe the thoughts that arise, and note when a thought about knowledge itself becomes
   a source of unease. When you feel that unease, gently let it pass, recognizing that the awareness of the thought is the
@@ -147,24 +130,29 @@ pratibha_layers:
 
     **疾病 (jíbìng)** — disease -> Daoist sense: the sickness of over‑thinking -> translation: ''disease''
 
-    **圣人 (shèngrén)** — sage -> Daoist sense: one who sees the nature of things -> translation: ''sage''
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 1 (The Way is the Way, the Way is not the Way):** Both chapters emphasize the paradoxical nature of the
-    Dao; the first introduces the idea that the Way is beyond ordinary understanding, while chapter 71 illustrates how knowing
-    can become a sickness. *Divergence:* Chapter 1 presents the paradox as a statement of the Dao’s ineffability, whereas
-    chapter 71 treats it as a practical warning against the over‑use of knowledge.
-
-    **Zhuangzi, chapter 12 (The Great Learning):** Both texts warn against the dangers of rigid intellectualism; Zhuangzi
-    uses the story of a scholar who loses his sense of humor, while chapter 71 uses the metaphor of disease. *Divergence:*
-    Zhuangzi’s account is narrative, whereas chapter 71 is aphoristic and focuses on the self‑referential nature of disease.
-
-    **Confucius, Analects 2.17 (The Master’s Teachings):** Both emphasize the importance of humility in learning; Confucius
-    speaks of the need to recognize one’s ignorance, echoing the idea that not knowing can be a virtue. *Divergence:* Confucian
-    humility is framed as moral cultivation, while chapter 71 frames it as a means to avoid the sickness of over‑thinking.'
+    **圣人 (shèngrén)** — sage -> Daoist sense: one who sees the nature of things -> translation: ''sage'''
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 1 (The Way is the Way, the Way is not the Way)
+    resonance: Both chapters emphasize the paradoxical nature of the Dao; the first introduces the idea that the Way is beyond
+      ordinary understanding, while chapter 71 illustrates how knowing can become a sickness.
+    divergence: Chapter 1 presents the paradox as a statement of the Dao’s ineffability, whereas chapter 71 treats it as a
+      practical warning against the over‑use of knowledge.
+    passage_id: ''
+  - citation: Zhuangzi, chapter 12 (The Great Learning)
+    resonance: Both texts warn against the dangers of rigid intellectualism; Zhuangzi uses the story of a scholar who loses
+      his sense of humor, while chapter 71 uses the metaphor of disease.
+    divergence: Zhuangzi’s account is narrative, whereas chapter 71 is aphoristic and focuses on the self‑referential nature
+      of disease.
+    passage_id: ''
+  - citation: Confucius, Analects 2.17 (The Master’s Teachings)
+    resonance: Both emphasize the importance of humility in learning; Confucius speaks of the need to recognize one’s ignorance,
+      echoing the idea that not knowing can be a virtue.
+    divergence: Confucian humility is framed as moral cultivation, while chapter 71 frames it as a means to avoid the sickness
+      of over‑thinking.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit quietly for ten minutes, observe the thoughts that arise, and note when a thought about knowledge itself becomes

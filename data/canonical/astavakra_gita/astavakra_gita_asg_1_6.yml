@@ -26,19 +26,7 @@ commentary: 'Extended Translation:
   mind, not of the Self. The implications are staggering: not that ethics is irrelevant, but that the Self is not constituted
   by its moral record. Similarly, experience happens — pleasure and pain arise — but they happen *to* the mind, not *to* the
   witness. *Mukta evāsi sarvadā* — you are ever free, always. Not will-be-free, not were-free-before-identification — *sarvadā*,
-  always. This is the text''s central declaration.
-
-
-  Cross-Tradition Resonance:
-
-  - Pratyabhijñāhṛdayam 9: the *saṁsārī* is covered by *mala* — the structural sense of being a doer; liberation is the recognition
-  that this sense of doership never belonged to the Self
-
-  - Epictetus on *prohairesis*: what is "up to us" vs. what is not — but here the reversal is more radical: even what seems
-  most "up to us" (our moral choices) is assigned to mind, not Self
-
-  - Śiva Sūtra II.6: *śakticakrasandhanāt* — the yogi who recognizes the source is no longer merely a *bhoktā* but the ground
-  from which experience arises'
+  always. This is the text''s central declaration.'
 insight: 'Extended Translation:
 
   Righteousness and unrighteousness, pleasure and pain — these belong to the mind, not to you, O All-pervading One.'
@@ -96,19 +84,39 @@ pratibha_layers:
     mind, not of the Self. The implications are staggering: not that ethics is irrelevant, but that the Self is not constituted
     by its moral record. Similarly, experience happens — pleasure and pain arise — but they happen *to* the mind, not *to*
     the witness. *Mukta evāsi sarvadā* — you are ever free, always. Not will-be-free, not were-free-before-identification
-    — *sarvadā*, always. This is the text''s central declaration.
-
-
-    Cross-Tradition Resonance:
-
-    - Pratyabhijñāhṛdayam 9: the *saṁsārī* is covered by *mala* — the structural sense of being a doer; liberation is the
-    recognition that this sense of doership never belonged to the Self
-
-    - Epictetus on *prohairesis*: what is "up to us" vs. what is not — but here the reversal is more radical: even what seems
-    most "up to us" (our moral choices) is assigned to mind, not Self
-
-    - Śiva Sūtra II.6: *śakticakrasandhanāt* — the yogi who recognizes the source is no longer merely a *bhoktā* but the ground
-    from which experience arises'
+    — *sarvadā*, always. This is the text''s central declaration.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dharma/adharma
+    definition: righteousness/unrighteousness; the moral poles of action; here assigned to mind, not Self
+  - term: mānasāni
+    definition: of the mind, mental; from *manas* (mind); the crucial assignment — these are mental events, not Self-events
+  - term: kartā
+    definition: doer, agent; the sense of being the originator of action
+  - term: bhoktā
+    definition: enjoyer, experiencer; the sense of being the one who receives experience
+  - term: mukta
+    definition: free, liberated; *mukta evāsi* — you *are* free, not you *will be* free
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijñāhṛdayam 9
+    resonance: the *saṁsārī* is covered by *mala* — the structural sense of being a doer; liberation is the recognition that
+      this sense of doership never belonged to the Self
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_009
+  - citation: Epictetus on *prohairesis
+    resonance: what is "up to us" vs. what is not
+    divergence: 'but here the reversal is more radical: even what seems most "up to us" (our moral choices) is assigned to
+      mind, not Self'
+    passage_id: ''
+  - citation: Śiva Sūtra II.6
+    resonance: '*śakticakrasandhanāt* — the yogi who recognizes the source is no longer merely a *bhoktā* but the ground from
+      which experience arises'
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Identify something you have been calling "my suffering" or "my joy." Notice the possessive. Now ask: who owns this?

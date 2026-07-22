@@ -51,23 +51,7 @@ commentary: 'This chapter asserts that leadership is a dance of contradictions: 
   to the source
 
   **朴 (pǔ)** — simplicity, unadorned nature -> Daoist sense: the uncarved block -> translation stakes: purity that becomes
-  a vessel
-
-
-  Cross-Tradition Resonances:
-
-
-  **chapter 1 (the world is a mirror of the [道] and the sage follows its example):** both chapters emphasize the primacy of
-  the [道] as the source of all order *Divergence:* chapter 28 focuses on the paradoxical nature of leadership, whereas chapter
-  1 presents the [道] as a passive mirror
-
-  **chapter 47 (the sage who knows the world’s emptiness is the ruler):** the idea that emptiness or the uncarved block leads
-  to authority appears in both chapters *Divergence:* chapter 28 frames emptiness as a vessel for action, while chapter 47
-  treats it as a state of non-interference
-
-  **chapter 64 (the sage who does not act is the greatest):** both highlight the virtue of non-action (wúwéi) as the path
-  to power *Divergence:* chapter 28 explicitly pairs action with the maintenance of opposites, whereas chapter 64 extols pure
-  non-action'
+  a vessel'
 insight: ''
 practice: Sit quietly for ten minutes, observing the breath. When thoughts of dominance or submission arise, note them without
   judgment and let them pass, returning to the breath. This simple practice cultivates the balance of [雄] and [雌] within,
@@ -148,23 +132,24 @@ pratibha_layers:
     return to the source
 
     **朴 (pǔ)** — simplicity, unadorned nature -> Daoist sense: the uncarved block -> translation stakes: purity that becomes
-    a vessel
-
-
-    Cross-Tradition Resonances:
-
-
-    **chapter 1 (the world is a mirror of the [道] and the sage follows its example):** both chapters emphasize the primacy
-    of the [道] as the source of all order *Divergence:* chapter 28 focuses on the paradoxical nature of leadership, whereas
-    chapter 1 presents the [道] as a passive mirror
-
-    **chapter 47 (the sage who knows the world’s emptiness is the ruler):** the idea that emptiness or the uncarved block
-    leads to authority appears in both chapters *Divergence:* chapter 28 frames emptiness as a vessel for action, while chapter
-    47 treats it as a state of non-interference
-
-    **chapter 64 (the sage who does not act is the greatest):** both highlight the virtue of non-action (wúwéi) as the path
-    to power *Divergence:* chapter 28 explicitly pairs action with the maintenance of opposites, whereas chapter 64 extols
-    pure non-action'
+    a vessel'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 1 (the world is a mirror of the [道] and the sage follows its example)
+    resonance: both chapters emphasize the primacy of the [道] as the source of all order
+    divergence: chapter 28 focuses on the paradoxical nature of leadership, whereas chapter 1 presents the [道] as a passive
+      mirror
+    passage_id: ''
+  - citation: chapter 47 (the sage who knows the world’s emptiness is the ruler)
+    resonance: the idea that emptiness or the uncarved block leads to authority appears in both chapters
+    divergence: chapter 28 frames emptiness as a vessel for action, while chapter 47 treats it as a state of non-interference
+    passage_id: ''
+  - citation: chapter 64 (the sage who does not act is the greatest)
+    resonance: both highlight the virtue of non-action (wúwéi) as the path to power
+    divergence: chapter 28 explicitly pairs action with the maintenance of opposites, whereas chapter 64 extols pure non-action
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit quietly for ten minutes, observing the breath. When thoughts of dominance or submission arise, note them without

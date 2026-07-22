@@ -51,21 +51,7 @@ commentary: 'The passage contests the assumption that intention and scale determ
   **斗升 dǒushēng** - a cup or ladle (unit of measure) → the minimal, immediate, actual need → stakes: sufficiency vs. grandiosity
 
   **常與 chángyǔ** - one''s constant element / native habitat → what sustains life in its ordinary mode → the irreplaceable
-  present condition
-
-
-  Cross-Tradition Resonances:
-
-
-  **Mencius, 1A7: ''If you love them, they do not believe you; if you benefit them, they do not come.'':** Both texts show
-  how benevolence divorced from present circumstance fails; both use the gap between intention and reception as philosophical
-  proof. *Divergence:* Mencius seeks to align intention with virtue; Zhuangzi abandons the category of intention altogether,
-  treating it as part of the problem.
-
-  **Daodejing 15: ''The ancient masters were profound and subtle... because they were subtle, they can only be described with
-  difficulty.'':** Both texts prize the minimal, the immediate, the non-grandiose; both distrust eloquent schemes. *Divergence:*
-  The Daodejing valorizes the sage''s subtle action; Zhuangzi here valorizes the fish''s blunt refusal—non-action is not enough;
-  one must speak the truth of contingency.'
+  present condition'
 insight: The passage contests the assumption that intention and scale determine efficacy.
 practice: 'When you are about to offer help or make a promise, pause and ask: ''Does this person need what I am offering now,
   or what I am promising later?'' If the answer is ''now,'' stop speaking and act. If you cannot act now, say nothing. Notice
@@ -127,21 +113,23 @@ pratibha_layers:
     **斗升 dǒushēng** - a cup or ladle (unit of measure) → the minimal, immediate, actual need → stakes: sufficiency vs. grandiosity
 
     **常與 chángyǔ** - one''s constant element / native habitat → what sustains life in its ordinary mode → the irreplaceable
-    present condition
-
-
-    Cross-Tradition Resonances:
-
-
-    **Mencius, 1A7: ''If you love them, they do not believe you; if you benefit them, they do not come.'':** Both texts show
-    how benevolence divorced from present circumstance fails; both use the gap between intention and reception as philosophical
-    proof. *Divergence:* Mencius seeks to align intention with virtue; Zhuangzi abandons the category of intention altogether,
-    treating it as part of the problem.
-
-    **Daodejing 15: ''The ancient masters were profound and subtle... because they were subtle, they can only be described
-    with difficulty.'':** Both texts prize the minimal, the immediate, the non-grandiose; both distrust eloquent schemes.
-    *Divergence:* The Daodejing valorizes the sage''s subtle action; Zhuangzi here valorizes the fish''s blunt refusal—non-action
-    is not enough; one must speak the truth of contingency.'
+    present condition'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Mencius, 1A7: ''If you love them, they do not believe you; if you benefit them, they do not come.'''
+    resonance: Both texts show how benevolence divorced from present circumstance fails; both use the gap between intention
+      and reception as philosophical proof.
+    divergence: Mencius seeks to align intention with virtue; Zhuangzi abandons the category of intention altogether, treating
+      it as part of the problem.
+    passage_id: ''
+  - citation: 'Daodejing 15: ''The ancient masters were profound and subtle... because they were subtle, they can only be
+      described with difficulty.'''
+    resonance: Both texts prize the minimal, the immediate, the non-grandiose; both distrust eloquent schemes.
+    divergence: The Daodejing valorizes the sage's subtle action; Zhuangzi here valorizes the fish's blunt refusal—non-action
+      is not enough; one must speak the truth of contingency.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you are about to offer help or make a promise, pause and ask: ''Does this person need what I am offering now,

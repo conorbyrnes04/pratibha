@@ -34,19 +34,7 @@ commentary: 'The fundamental philosophical claim here is that the universe is no
   -> what default translation misses: the [ātman] is not just a personal self, but a spark of the divine [Brahman].
 
   * **Sāṇḍilya (साण्डिल्य)** — etymology: descendant of Sāndilya -> tradition-specific meaning: a sage or teacher in the Upaniṣads
-  -> what default translation misses: the historical and cultural context of the [Sāṇḍilya] tradition.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 25:** structural homology: the concept of the universe as an interconnected, harmonious system.
-  *Divergence:* the Taoist emphasis on the dynamic balance of opposites, whereas the Upaniṣads focus on the non-dual nature
-  of [Brahman].
-
-  * **Bhagavad Gita, Chapter 11:** structural homology: the vision of the universe as a unified, divine whole. *Divergence:*
-  the Gita''s emphasis on the personal relationship between the individual self and the divine, whereas the Upaniṣads focus
-  on the impersonal, ultimate reality of [Brahman].'
+  -> what default translation misses: the historical and cultural context of the [Sāṇḍilya] tradition.'
 insight: The fundamental philosophical claim here is that the universe is non-dual, and all distinctions are ultimately illusory.
 practice: Meditate on the universe as a unified, undivided whole, and contemplate the [Brahman] as the essence of all existence,
   embracing both the smallest and largest scales of reality.
@@ -108,19 +96,21 @@ pratibha_layers:
     -> what default translation misses: the [ātman] is not just a personal self, but a spark of the divine [Brahman].
 
     * **Sāṇḍilya (साण्डिल्य)** — etymology: descendant of Sāndilya -> tradition-specific meaning: a sage or teacher in the
-    Upaniṣads -> what default translation misses: the historical and cultural context of the [Sāṇḍilya] tradition.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 25:** structural homology: the concept of the universe as an interconnected, harmonious system.
-    *Divergence:* the Taoist emphasis on the dynamic balance of opposites, whereas the Upaniṣads focus on the non-dual nature
-    of [Brahman].
-
-    * **Bhagavad Gita, Chapter 11:** structural homology: the vision of the universe as a unified, divine whole. *Divergence:*
-    the Gita''s emphasis on the personal relationship between the individual self and the divine, whereas the Upaniṣads focus
-    on the impersonal, ultimate reality of [Brahman].'
+    Upaniṣads -> what default translation misses: the historical and cultural context of the [Sāṇḍilya] tradition.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 25
+    resonance: 'structural homology: the concept of the universe as an interconnected, harmonious system.'
+    divergence: the Taoist emphasis on the dynamic balance of opposites, whereas the Upaniṣads focus on the non-dual nature
+      of [Brahman].
+    passage_id: tao_te_ching.ttc_md_025
+  - citation: Bhagavad Gita, Chapter 11
+    resonance: 'structural homology: the vision of the universe as a unified, divine whole.'
+    divergence: the Gita's emphasis on the personal relationship between the individual self and the divine, whereas the Upaniṣads
+      focus on the impersonal, ultimate reality of [Brahman].
+    passage_id: bhagavad_gita.bg_md_011
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Meditate on the universe as a unified, undivided whole, and contemplate the [Brahman] as the essence of all existence,

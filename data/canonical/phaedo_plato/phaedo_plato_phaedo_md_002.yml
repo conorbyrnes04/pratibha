@@ -47,29 +47,7 @@ commentary: 'The claim is that cognition contains a transcendence relation: empi
 
 
   **episteme (ἐπιστήμη)** - stable knowledge -> contrasted implicitly with shifting doxa -> "knowledge" without this stability
-  contrast flattens the argument.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Meno 81c-86c:** Structural continuity: questioning draws out latent intelligibility rather than depositing content from
-  outside.
-
-  *Divergence:* *Meno* demonstrates by geometrical elicitation; *Phaedo* connects the same structure to immortality and the
-  Forms.
-
-
-  **Augustine, De Magistro 11-12:** Both suggest that true teaching awakens an inner recognition rather than transferring
-  substance mechanically.
-
-  *Divergence:* Augustine grounds the "inner teacher" in Christic illumination; Plato grounds recollection in pre-existent
-  soul and Forms.
-
-
-  **Yoga Sutra 1.48-1.49:** Both distinguish direct, higher-order knowing from inferential accumulation.
-
-  *Divergence:* Patanjali''s frame is yogic-cognitive purification; Plato''s is dialectical-metaphysical argument.'
+  contrast flattens the argument.'
 insight: 'The claim is that cognition contains a transcendence relation: empirical instances are judged by standards they
   do not produce.'
 practice: Choose one ethical word ("justice," "truth," or "care"), write one concrete example from today, then ask what unstated
@@ -138,29 +116,25 @@ pratibha_layers:
 
 
     **episteme (ἐπιστήμη)** - stable knowledge -> contrasted implicitly with shifting doxa -> "knowledge" without this stability
-    contrast flattens the argument.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Meno 81c-86c:** Structural continuity: questioning draws out latent intelligibility rather than depositing content from
-    outside.
-
-    *Divergence:* *Meno* demonstrates by geometrical elicitation; *Phaedo* connects the same structure to immortality and
-    the Forms.
-
-
-    **Augustine, De Magistro 11-12:** Both suggest that true teaching awakens an inner recognition rather than transferring
-    substance mechanically.
-
-    *Divergence:* Augustine grounds the "inner teacher" in Christic illumination; Plato grounds recollection in pre-existent
-    soul and Forms.
-
-
-    **Yoga Sutra 1.48-1.49:** Both distinguish direct, higher-order knowing from inferential accumulation.
-
-    *Divergence:* Patanjali''s frame is yogic-cognitive purification; Plato''s is dialectical-metaphysical argument.'
+    contrast flattens the argument.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Meno 81c-86c
+    resonance: 'Structural continuity: questioning draws out latent intelligibility rather than depositing content from outside.'
+    divergence: '*Meno* demonstrates by geometrical elicitation; *Phaedo* connects the same structure to immortality and the
+      Forms.'
+    passage_id: ''
+  - citation: Augustine, De Magistro 11-12
+    resonance: Both suggest that true teaching awakens an inner recognition rather than transferring substance mechanically.
+    divergence: Augustine grounds the "inner teacher" in Christic illumination; Plato grounds recollection in pre-existent
+      soul and Forms.
+    passage_id: ''
+  - citation: Yoga Sutra 1.48-1.49
+    resonance: Both distinguish direct, higher-order knowing from inferential accumulation.
+    divergence: Patanjali's frame is yogic-cognitive purification; Plato's is dialectical-metaphysical argument.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one ethical word ("justice," "truth," or "care"), write one concrete example from today, then ask what unstated

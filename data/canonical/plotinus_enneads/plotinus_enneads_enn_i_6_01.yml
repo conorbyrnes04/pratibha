@@ -39,21 +39,7 @@ commentary: 'The philosophical claim that beauty is not solely derived from symm
   translation misses: the connection between virtue and beauty
 
   * **psyche (ψυχή)** — etymology: Greek concept of soul -> tradition-specific meaning: the seat of beauty and virtue -> what
-  default translation misses: the role of the soul in perceiving and experiencing beauty
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.2.13:** The concept of beauty as a unified principle is echoed in the Katha Upanishad, where the
-  ultimate reality is described as the source of all beauty and goodness.
-
-  * **Phaedo, 65a-66d:** Plato''s discussion of the immortality of the soul and the nature of beauty in the Phaedo resonates
-  with Plotinus'' idea of beauty as a transcendent principle that underlies all beautiful things.
-
-  * **Zhuangzi, Chapter 2:** The Zhuangzi''s concept of the "uncarved block" as a symbol of simplicity and beauty resonates
-  with Plotinus'' critique of symmetry as a definition of beauty, highlighting the importance of simplicity and unity in the
-  experience of beauty.'
+  default translation misses: the role of the soul in perceiving and experiencing beauty'
 insight: The philosophical claim that beauty is not solely derived from symmetry is a counterintuitive move that challenges
   the conventional understanding of aesthetics.
 practice: As you go about your day, pay attention to the ways in which beauty presents itself to you, not just through sight,
@@ -114,21 +100,27 @@ pratibha_layers:
     translation misses: the connection between virtue and beauty
 
     * **psyche (ψυχή)** — etymology: Greek concept of soul -> tradition-specific meaning: the seat of beauty and virtue ->
-    what default translation misses: the role of the soul in perceiving and experiencing beauty
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.2.13:** The concept of beauty as a unified principle is echoed in the Katha Upanishad, where the
-    ultimate reality is described as the source of all beauty and goodness.
-
-    * **Phaedo, 65a-66d:** Plato''s discussion of the immortality of the soul and the nature of beauty in the Phaedo resonates
-    with Plotinus'' idea of beauty as a transcendent principle that underlies all beautiful things.
-
-    * **Zhuangzi, Chapter 2:** The Zhuangzi''s concept of the "uncarved block" as a symbol of simplicity and beauty resonates
-    with Plotinus'' critique of symmetry as a definition of beauty, highlighting the importance of simplicity and unity in
-    the experience of beauty.'
+    what default translation misses: the role of the soul in perceiving and experiencing beauty'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.2.13
+    resonance: The concept of beauty as a unified principle is echoed in the Katha Upanishad, where the ultimate reality is
+      described as the source of all beauty and goodness.
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 65a-66d
+    resonance: Plato's discussion of the immortality of the soul and the nature of beauty in the Phaedo resonates with Plotinus'
+      idea of beauty as a transcendent principle that underlies all beautiful things.
+    divergence: ''
+    passage_id: ''
+  - citation: Zhuangzi, Chapter 2
+    resonance: The Zhuangzi's concept of the "uncarved block" as a symbol of simplicity and beauty resonates with Plotinus'
+      critique of symmetry as a definition of beauty, highlighting the importance of simplicity and unity in the experience
+      of beauty.
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: As you go about your day, pay attention to the ways in which beauty presents itself to you, not just through sight,

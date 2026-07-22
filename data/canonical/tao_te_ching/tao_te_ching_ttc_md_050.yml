@@ -36,23 +36,7 @@ commentary: 'This chapter argues that attachment—whether to names, bodies, or 
 
   **huò 貨** — wealth/commodities -> material possessions that can be lost -> translation: wealth
 
-  **dé 得** — gain/acquisition -> the act of obtaining, which can become a source of loss -> translation: gain
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 44 (contentment and restraint):** structural homology: both emphasize the virtue of moderation *Divergence:*
-  Laozi uses the term *zìjù* whereas this text uses *zhǐ* as the key practice
-
-  **Confucius, Analects 2.8 (the value of self‑control):** structural homology: self‑control preserves harmony *Divergence:*
-  Confucianism frames self‑control as duty to society, not personal endurance
-
-  **Mencius, Mencius 1.1 (the nature of wealth):** structural homology: wealth can corrupt *Divergence:* Mencius argues for
-  moral cultivation, while this chapter stresses the cost of attachment
-
-  **Zhuangzi, chapter 41 (the folly of attachment):** structural homology: attachment leads to loss *Divergence:* Zhuangzi
-  uses humor and paradox, whereas this chapter is concise and prescriptive'
+  **dé 得** — gain/acquisition -> the act of obtaining, which can become a source of loss -> translation: gain'
 insight: ''
 practice: 'Pause before making a purchase: ask yourself if the item will truly add lasting value or simply become another
   point of attachment. If it does not, refrain—practice restraint to preserve what you already have.'
@@ -116,23 +100,27 @@ pratibha_layers:
 
     **huò 貨** — wealth/commodities -> material possessions that can be lost -> translation: wealth
 
-    **dé 得** — gain/acquisition -> the act of obtaining, which can become a source of loss -> translation: gain
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 44 (contentment and restraint):** structural homology: both emphasize the virtue of moderation *Divergence:*
-    Laozi uses the term *zìjù* whereas this text uses *zhǐ* as the key practice
-
-    **Confucius, Analects 2.8 (the value of self‑control):** structural homology: self‑control preserves harmony *Divergence:*
-    Confucianism frames self‑control as duty to society, not personal endurance
-
-    **Mencius, Mencius 1.1 (the nature of wealth):** structural homology: wealth can corrupt *Divergence:* Mencius argues
-    for moral cultivation, while this chapter stresses the cost of attachment
-
-    **Zhuangzi, chapter 41 (the folly of attachment):** structural homology: attachment leads to loss *Divergence:* Zhuangzi
-    uses humor and paradox, whereas this chapter is concise and prescriptive'
+    **dé 得** — gain/acquisition -> the act of obtaining, which can become a source of loss -> translation: gain'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 44 (contentment and restraint)
+    resonance: 'structural homology: both emphasize the virtue of moderation'
+    divergence: Laozi uses the term *zìjù* whereas this text uses *zhǐ* as the key practice
+    passage_id: ''
+  - citation: Confucius, Analects 2.8 (the value of self‑control)
+    resonance: 'structural homology: self‑control preserves harmony'
+    divergence: Confucianism frames self‑control as duty to society, not personal endurance
+    passage_id: ''
+  - citation: Mencius, Mencius 1.1 (the nature of wealth)
+    resonance: 'structural homology: wealth can corrupt'
+    divergence: Mencius argues for moral cultivation, while this chapter stresses the cost of attachment
+    passage_id: ''
+  - citation: Zhuangzi, chapter 41 (the folly of attachment)
+    resonance: 'structural homology: attachment leads to loss'
+    divergence: Zhuangzi uses humor and paradox, whereas this chapter is concise and prescriptive
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Pause before making a purchase: ask yourself if the item will truly add lasting value or simply become another point

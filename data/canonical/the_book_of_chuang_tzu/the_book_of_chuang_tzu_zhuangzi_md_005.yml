@@ -67,31 +67,7 @@ commentary: 'The claim is that utility is perspective-bound, and narrow utility 
 
 
   **péng zhī xīn (蓬之心)** - "woolly/tangled mind" -> mind trapped in cramped assumptions of utility -> old translation''s insult
-  ("woolly inside") is colorful but hides the philosophical point: conceptual rigidity, not intelligence deficit, is the target.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Mundaka Upanishad 1.2.10-12 (lower and higher knowledge distinction):** both texts distinguish between knowledge valuable
-  for worldly operation and knowledge that opens freedom beyond instrumental ends.
-
-  *Divergence:* The Upanishadic distinction is explicitly soteriological and hierarchically ordered; Zhuangzi stages a perspectival
-  inversion in lived situations without erecting a fixed doctrinal ladder.
-
-
-  **Epictetus, Enchiridion §1:** both traditions relocate value away from socially prized externals and toward what preserves
-  inner freedom.
-
-  *Divergence:* Stoicism sharpens a binary of "up to us/not up to us," whereas Zhuangzi destabilizes binary utility itself
-  and emphasizes ecological fit and survivability through non-capture.
-
-
-  **Mahayana, Vimalakirti Nirdesa (non-dual skillful means):** both show that forms dismissed by conventional judgment can
-  become vehicles of liberation when seen from a wider frame.
-
-  *Divergence:* Vimalakirti''s inversion serves explicit bodhisattva pedagogy; Zhuangzi''s inversion serves spontaneous wandering
-  and protection from coercive social patterning.'
+  ("woolly inside") is colorful but hides the philosophical point: conceptual rigidity, not intelligence deficit, is the target.'
 insight: The claim is that utility is perspective-bound, and narrow utility can be life-destroying.
 practice: Pick one part of your day you currently treat as "wasted time," keep it intact for one week without optimizing it,
   and observe whether that preserved non-instrumental space increases clarity, resilience, or creativity in the rest of your
@@ -180,31 +156,28 @@ pratibha_layers:
 
     **péng zhī xīn (蓬之心)** - "woolly/tangled mind" -> mind trapped in cramped assumptions of utility -> old translation''s
     insult ("woolly inside") is colorful but hides the philosophical point: conceptual rigidity, not intelligence deficit,
-    is the target.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Mundaka Upanishad 1.2.10-12 (lower and higher knowledge distinction):** both texts distinguish between knowledge valuable
-    for worldly operation and knowledge that opens freedom beyond instrumental ends.
-
-    *Divergence:* The Upanishadic distinction is explicitly soteriological and hierarchically ordered; Zhuangzi stages a perspectival
-    inversion in lived situations without erecting a fixed doctrinal ladder.
-
-
-    **Epictetus, Enchiridion §1:** both traditions relocate value away from socially prized externals and toward what preserves
-    inner freedom.
-
-    *Divergence:* Stoicism sharpens a binary of "up to us/not up to us," whereas Zhuangzi destabilizes binary utility itself
-    and emphasizes ecological fit and survivability through non-capture.
-
-
-    **Mahayana, Vimalakirti Nirdesa (non-dual skillful means):** both show that forms dismissed by conventional judgment can
-    become vehicles of liberation when seen from a wider frame.
-
-    *Divergence:* Vimalakirti''s inversion serves explicit bodhisattva pedagogy; Zhuangzi''s inversion serves spontaneous
-    wandering and protection from coercive social patterning.'
+    is the target.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mundaka Upanishad 1.2.10-12 (lower and higher knowledge distinction)
+    resonance: both texts distinguish between knowledge valuable for worldly operation and knowledge that opens freedom beyond
+      instrumental ends.
+    divergence: The Upanishadic distinction is explicitly soteriological and hierarchically ordered; Zhuangzi stages a perspectival
+      inversion in lived situations without erecting a fixed doctrinal ladder.
+    passage_id: ''
+  - citation: Epictetus, Enchiridion §1
+    resonance: both traditions relocate value away from socially prized externals and toward what preserves inner freedom.
+    divergence: Stoicism sharpens a binary of "up to us/not up to us," whereas Zhuangzi destabilizes binary utility itself
+      and emphasizes ecological fit and survivability through non-capture.
+    passage_id: ''
+  - citation: Mahayana, Vimalakirti Nirdesa (non-dual skillful means)
+    resonance: both show that forms dismissed by conventional judgment can become vehicles of liberation when seen from a
+      wider frame.
+    divergence: Vimalakirti's inversion serves explicit bodhisattva pedagogy; Zhuangzi's inversion serves spontaneous wandering
+      and protection from coercive social patterning.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Pick one part of your day you currently treat as "wasted time," keep it intact for one week without optimizing it,

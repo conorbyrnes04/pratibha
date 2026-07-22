@@ -68,22 +68,7 @@ commentary: 'These verses make a strong claim: realization has ergonomics. Postu
   **prana (प्राण)** - vital breath-force linking somatic rhythm and mental state.
 
 
-  **apramatta (अप्रमत्त)** - non-negligent vigilance; alert steadiness without anxiety.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Bhagavad Gita 6.10-13:** Similar posture, place, and disciplined attention guidance. *Divergence:* Gita integrates duty-life
-  context more explicitly.
-
-
-  **Buddhist anapanasati:** Breath as stabilizing doorway to collectedness. *Divergence:* Śvetāśvatara frames this in Brahman/īśvara
-  language.
-
-
-  **Hatha Yoga Pradipika (later):** Develops technical postural and breath methods implied here. *Divergence:* later manuals
-  are more procedural and body-systematized.'
+  **apramatta (अप्रमत्त)** - non-negligent vigilance; alert steadiness without anxiety.'
 insight: 'These verses make a strong claim: realization has ergonomics.'
 practice: 'Create one fixed meditation spot used only for practice. Sit with chest-neck-head aligned for 10 minutes, then
   follow nasal breath for 108 counts. If mind runs, use the charioteer cue: firm, calm return - no self-criticism.'
@@ -181,22 +166,23 @@ pratibha_layers:
     **prana (प्राण)** - vital breath-force linking somatic rhythm and mental state.
 
 
-    **apramatta (अप्रमत्त)** - non-negligent vigilance; alert steadiness without anxiety.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Bhagavad Gita 6.10-13:** Similar posture, place, and disciplined attention guidance. *Divergence:* Gita integrates duty-life
-    context more explicitly.
-
-
-    **Buddhist anapanasati:** Breath as stabilizing doorway to collectedness. *Divergence:* Śvetāśvatara frames this in Brahman/īśvara
-    language.
-
-
-    **Hatha Yoga Pradipika (later):** Develops technical postural and breath methods implied here. *Divergence:* later manuals
-    are more procedural and body-systematized.'
+    **apramatta (अप्रमत्त)** - non-negligent vigilance; alert steadiness without anxiety.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita 6.10-13
+    resonance: Similar posture, place, and disciplined attention guidance.
+    divergence: Gita integrates duty-life context more explicitly.
+    passage_id: ''
+  - citation: Buddhist anapanasati
+    resonance: Breath as stabilizing doorway to collectedness.
+    divergence: Śvetāśvatara frames this in Brahman/īśvara language.
+    passage_id: ''
+  - citation: Hatha Yoga Pradipika (later)
+    resonance: Develops technical postural and breath methods implied here.
+    divergence: later manuals are more procedural and body-systematized.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Create one fixed meditation spot used only for practice. Sit with chest-neck-head aligned for 10 minutes, then follow

@@ -121,33 +121,7 @@ commentary: 'The song''s claim is that justified rage does not authorize retalia
   wrath. The song does not deny anger''s legitimacy; it relocates its resolution from retaliation to guru-devotion.
 
   **slong ba** — Etymology: to beg alms, solicit support. Returning to beg at the persecutor''s door is the song''s dramatic
-  knot: the mendicant needs food for practice from the very kin who ruined his family. Alms become sacrament of vow over vengeance.
-
-
-  Cross-Tradition Resonances:
-
-
-
-
-  **Epictetus, Enchiridion 1:** Structural homology: Milarepa names injuries yet refrains because a higher binding (guru command)
-  governs response—parallel to Epictetus''s insistence that events do not disturb unless judgment assents.
-
-  *Divergence:* Stoic assent is rational self-governance; Milarepa''s restraint is devotional obedience and grace-dependent
-  cooling of *khro ba*.
-
-
-  **Bhagavad Gītā 3.19 (action without attachment to fruit):** Milarepa acts (begging, practicing) without seizing the fruit
-  of revenge though he has cause—karmic action subordinated to religious vow.
-
-  *Divergence:* Arjuna''s frame is cosmic duty in war; Milarepa''s is biographical restitution within guru-disciple lineage
-  after crimes of black magic.
-
-
-  **Dōgen, Shōbōgenzō, Genjōkōan:** Suffering and impermanence are not denied but metabolized into practice rather than consolation—flowers
-  fall amid longing; orphans scatter amid vow.
-
-  *Divergence:* Dōgen''s move is epistemological reversal; Milarepa''s is narrative biography with explicit persecutor still
-  alive at the door.'
+  knot: the mendicant needs food for practice from the very kin who ruined his family. Alms become sacrament of vow over vengeance.'
 insight: ''
 practice: When someone who injured you speaks sharply, pause before crafting your case. Name internally what happened, then
   ask whether answering would serve truth or merely cool your injury with their humiliation. If a vow, promise, or discipline
@@ -323,33 +297,29 @@ pratibha_layers:
 
     **slong ba** — Etymology: to beg alms, solicit support. Returning to beg at the persecutor''s door is the song''s dramatic
     knot: the mendicant needs food for practice from the very kin who ruined his family. Alms become sacrament of vow over
-    vengeance.
-
-
-    Cross-Tradition Resonances:
-
-
-
-
-    **Epictetus, Enchiridion 1:** Structural homology: Milarepa names injuries yet refrains because a higher binding (guru
-    command) governs response—parallel to Epictetus''s insistence that events do not disturb unless judgment assents.
-
-    *Divergence:* Stoic assent is rational self-governance; Milarepa''s restraint is devotional obedience and grace-dependent
-    cooling of *khro ba*.
-
-
-    **Bhagavad Gītā 3.19 (action without attachment to fruit):** Milarepa acts (begging, practicing) without seizing the fruit
-    of revenge though he has cause—karmic action subordinated to religious vow.
-
-    *Divergence:* Arjuna''s frame is cosmic duty in war; Milarepa''s is biographical restitution within guru-disciple lineage
-    after crimes of black magic.
-
-
-    **Dōgen, Shōbōgenzō, Genjōkōan:** Suffering and impermanence are not denied but metabolized into practice rather than
-    consolation—flowers fall amid longing; orphans scatter amid vow.
-
-    *Divergence:* Dōgen''s move is epistemological reversal; Milarepa''s is narrative biography with explicit persecutor still
-    alive at the door.'
+    vengeance.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Epictetus, Enchiridion 1
+    resonance: 'Structural homology: Milarepa names injuries yet refrains because a higher binding (guru command) governs
+      response—parallel to Epictetus''s insistence that events do not disturb unless judgment assents.'
+    divergence: Stoic assent is rational self-governance; Milarepa's restraint is devotional obedience and grace-dependent
+      cooling of *khro ba*.
+    passage_id: ''
+  - citation: Bhagavad Gītā 3.19 (action without attachment to fruit)
+    resonance: Milarepa acts (begging, practicing) without seizing the fruit of revenge though he has cause—karmic action
+      subordinated to religious vow.
+    divergence: Arjuna's frame is cosmic duty in war; Milarepa's is biographical restitution within guru-disciple lineage
+      after crimes of black magic.
+    passage_id: ''
+  - citation: Dōgen, Shōbōgenzō, Genjōkōan
+    resonance: Suffering and impermanence are not denied but metabolized into practice rather than consolation—flowers fall
+      amid longing; orphans scatter amid vow.
+    divergence: Dōgen's move is epistemological reversal; Milarepa's is narrative biography with explicit persecutor still
+      alive at the door.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: When someone who injured you speaks sharply, pause before crafting your case. Name internally what happened, then

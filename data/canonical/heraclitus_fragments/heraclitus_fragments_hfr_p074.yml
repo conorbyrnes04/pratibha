@@ -31,19 +31,7 @@ commentary: 'The philosophical claim that the dry soul is the wisest and best pr
   translation misses: the idea that wisdom is not just a state of being but an active process of cultivation.
 
   * **Xērà (ξηρὰ)** — etymology: dry -> Heraclitean meaning in this fragment: unencumbered, clear -> what default translation
-  misses: the positive connotation of dryness as a desirable state.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 27:** structural homology in the idea of embracing simplicity and clarity as a means to achieve
-  wisdom. *Divergence:* While the Tao Te Ching emphasizes the importance of embracing the natural flow of life, Heraclitus
-  focuses on the cultivation of the dry soul as a means to achieve wisdom.
-
-  * **Epictetus, Discourses, Book 1, Chapter 1:** structural homology in the idea of cultivating inner strength and detachment
-  as a means to achieve freedom. *Divergence:* While Epictetus emphasizes the importance of reason and self-control, Heraclitus
-  focuses on the cultivation of the dry soul as a means to embody Logos [Λόγος].'
+  misses: the positive connotation of dryness as a desirable state.'
 insight: The philosophical claim that the dry soul is the wisest and best presents a counterintuitive move by Heraclitus,
   suggesting that a state of being unencumbered by excesses, such as desires or emotions, is preferable for achieving wisdom.
 practice: Observe your thoughts and emotions without attachment, allowing yourself to settle into a state of inner clarity,
@@ -96,19 +84,21 @@ pratibha_layers:
     translation misses: the idea that wisdom is not just a state of being but an active process of cultivation.
 
     * **Xērà (ξηρὰ)** — etymology: dry -> Heraclitean meaning in this fragment: unencumbered, clear -> what default translation
-    misses: the positive connotation of dryness as a desirable state.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 27:** structural homology in the idea of embracing simplicity and clarity as a means to achieve
-    wisdom. *Divergence:* While the Tao Te Ching emphasizes the importance of embracing the natural flow of life, Heraclitus
-    focuses on the cultivation of the dry soul as a means to achieve wisdom.
-
-    * **Epictetus, Discourses, Book 1, Chapter 1:** structural homology in the idea of cultivating inner strength and detachment
-    as a means to achieve freedom. *Divergence:* While Epictetus emphasizes the importance of reason and self-control, Heraclitus
-    focuses on the cultivation of the dry soul as a means to embody Logos [Λόγος].'
+    misses: the positive connotation of dryness as a desirable state.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 27
+    resonance: structural homology in the idea of embracing simplicity and clarity as a means to achieve wisdom.
+    divergence: While the Tao Te Ching emphasizes the importance of embracing the natural flow of life, Heraclitus focuses
+      on the cultivation of the dry soul as a means to achieve wisdom.
+    passage_id: tao_te_ching.ttc_md_027
+  - citation: Epictetus, Discourses, Book 1, Chapter 1
+    resonance: structural homology in the idea of cultivating inner strength and detachment as a means to achieve freedom.
+    divergence: While Epictetus emphasizes the importance of reason and self-control, Heraclitus focuses on the cultivation
+      of the dry soul as a means to embody Logos [Λόγος].
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Observe your thoughts and emotions without attachment, allowing yourself to settle into a state of inner clarity,

@@ -56,26 +56,7 @@ commentary: 'The contested move here is the inversion of mastery: perfect skill 
   better: ''the forgetting that happens''.
 
   **道 dào** - way/path/speak. Here: the hunchback''s ''way'' is not a method to be taught but a lived coherence. Not transmissible
-  as doctrine. Stakes: ''way'' preserves the ambiguity between method and being.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Aristotle, Nicomachean Ethics II.1-2: habituation and second nature:** Both argue that excellence becomes effortless through
-  practice until the deliberative mind withdraws. The hunchback''s unified spirit parallels Aristotle''s hexis (habit become
-  nature). *Divergence:* Aristotle sees this as the perfection of rational virtue; Zhuangzi sees it as the *abandonment* of
-  the rational discriminating mind. For Aristotle, virtue is still *choice*; for Zhuangzi, it is the cessation of choosing.
-
-  **Csikszentmihalyi, Flow: The Psychology of Optimal Experience—''flow state'':** The hunchback''s state mirrors flow: loss
-  of self-consciousness, merger with activity, effortless action. Both describe the unified attention that produces excellence.
-  *Divergence:* Flow theory grounds this in neurological optimization; Zhuangzi grounds it in cosmological alignment (与天为一).
-  Flow is psychological; Zhuangzi''s unity is ontological.
-
-  **Dogen, Shobogenzo ''Genjokoan'': ''to study the self is to forget the self'':** Both use the paradox of forgetting as
-  the gateway to authentic action. Both reject the subject-object split as the root of artificiality. *Divergence:* Dogen''s
-  forgetting leads to Buddha-nature; Zhuangzi''s leads to alignment with the uncarved block (pu). Dogen retains a metaphysical
-  ground; Zhuangzi remains agnostic.'
+  as doctrine. Stakes: ''way'' preserves the ambiguity between method and being.'
 insight: 'The contested move here is the inversion of mastery: perfect skill arises not from accumulated knowledge but from
   radical forgetting.'
 practice: 'For one week, choose a single repetitive action (pouring tea, walking a familiar path, washing dishes). Each time
@@ -162,26 +143,29 @@ pratibha_layers:
     better: ''the forgetting that happens''.
 
     **道 dào** - way/path/speak. Here: the hunchback''s ''way'' is not a method to be taught but a lived coherence. Not transmissible
-    as doctrine. Stakes: ''way'' preserves the ambiguity between method and being.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Aristotle, Nicomachean Ethics II.1-2: habituation and second nature:** Both argue that excellence becomes effortless
-    through practice until the deliberative mind withdraws. The hunchback''s unified spirit parallels Aristotle''s hexis (habit
-    become nature). *Divergence:* Aristotle sees this as the perfection of rational virtue; Zhuangzi sees it as the *abandonment*
-    of the rational discriminating mind. For Aristotle, virtue is still *choice*; for Zhuangzi, it is the cessation of choosing.
-
-    **Csikszentmihalyi, Flow: The Psychology of Optimal Experience—''flow state'':** The hunchback''s state mirrors flow:
-    loss of self-consciousness, merger with activity, effortless action. Both describe the unified attention that produces
-    excellence. *Divergence:* Flow theory grounds this in neurological optimization; Zhuangzi grounds it in cosmological alignment
-    (与天为一). Flow is psychological; Zhuangzi''s unity is ontological.
-
-    **Dogen, Shobogenzo ''Genjokoan'': ''to study the self is to forget the self'':** Both use the paradox of forgetting as
-    the gateway to authentic action. Both reject the subject-object split as the root of artificiality. *Divergence:* Dogen''s
-    forgetting leads to Buddha-nature; Zhuangzi''s leads to alignment with the uncarved block (pu). Dogen retains a metaphysical
-    ground; Zhuangzi remains agnostic.'
+    as doctrine. Stakes: ''way'' preserves the ambiguity between method and being.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Aristotle, Nicomachean Ethics II.1-2: habituation and second nature'
+    resonance: Both argue that excellence becomes effortless through practice until the deliberative mind withdraws. The hunchback's
+      unified spirit parallels Aristotle's hexis (habit become nature).
+    divergence: Aristotle sees this as the perfection of rational virtue; Zhuangzi sees it as the *abandonment* of the rational
+      discriminating mind. For Aristotle, virtue is still *choice*; for Zhuangzi, it is the cessation of choosing.
+    passage_id: ''
+  - citation: 'Csikszentmihalyi, Flow: The Psychology of Optimal Experience—''flow state'''
+    resonance: 'The hunchback''s state mirrors flow: loss of self-consciousness, merger with activity, effortless action.
+      Both describe the unified attention that produces excellence.'
+    divergence: Flow theory grounds this in neurological optimization; Zhuangzi grounds it in cosmological alignment (与天为一).
+      Flow is psychological; Zhuangzi's unity is ontological.
+    passage_id: ''
+  - citation: 'Dogen, Shobogenzo ''Genjokoan'': ''to study the self is to forget the self'''
+    resonance: Both use the paradox of forgetting as the gateway to authentic action. Both reject the subject-object split
+      as the root of artificiality.
+    divergence: Dogen's forgetting leads to Buddha-nature; Zhuangzi's leads to alignment with the uncarved block (pu). Dogen
+      retains a metaphysical ground; Zhuangzi remains agnostic.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'For one week, choose a single repetitive action (pouring tea, walking a familiar path, washing dishes). Each time

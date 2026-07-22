@@ -41,21 +41,7 @@ commentary: 'The philosophical claim that the Unity is beyond all human concepti
 
   * **Aoristos** (ἀόριστος) — from the Greek word for "indefinite" or "boundless" -> refers to the infinite and unbounded
   nature of the Unity -> what default translation misses is the nuance of this concept, which is not just a lack of boundaries,
-  but a positive and active principle that underlies all existence.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.2.13:** "The Self is not born, nor does it die; it is not produced, nor does it perish. It is unborn,
-  eternal, permanent, and ancient." This passage resonates with the idea of the Unity as infinite and unbounded, and suggests
-  a similar concept of the ultimate reality in Hinduism.
-
-  * **Phaedo, 78b-80c:** "The soul is immortal, and it is the source of all life and movement." This passage resonates with
-  the idea of the Unity as the source of all existence, and suggests a similar concept of the ultimate reality in Platonism.
-
-  * **Zhuangzi, Chapter 2:** "The Tao is the ultimate reality, and it is beyond all human conception." This passage resonates
-  with the idea of the Unity as beyond all human conception, and suggests a similar concept of the ultimate reality in Daoism.'
+  but a positive and active principle that underlies all existence.'
 insight: The philosophical claim that the Unity is beyond all human conception is a counterintuitive move, as it challenges
   our ordinary way of thinking about oneness and existence.
 practice: Sit in stillness and silence, and attempt to conceive of the Unity as infinite in power and depth, rather than in
@@ -121,21 +107,27 @@ pratibha_layers:
 
     * **Aoristos** (ἀόριστος) — from the Greek word for "indefinite" or "boundless" -> refers to the infinite and unbounded
     nature of the Unity -> what default translation misses is the nuance of this concept, which is not just a lack of boundaries,
-    but a positive and active principle that underlies all existence.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.2.13:** "The Self is not born, nor does it die; it is not produced, nor does it perish. It is unborn,
-    eternal, permanent, and ancient." This passage resonates with the idea of the Unity as infinite and unbounded, and suggests
-    a similar concept of the ultimate reality in Hinduism.
-
-    * **Phaedo, 78b-80c:** "The soul is immortal, and it is the source of all life and movement." This passage resonates with
-    the idea of the Unity as the source of all existence, and suggests a similar concept of the ultimate reality in Platonism.
-
-    * **Zhuangzi, Chapter 2:** "The Tao is the ultimate reality, and it is beyond all human conception." This passage resonates
-    with the idea of the Unity as beyond all human conception, and suggests a similar concept of the ultimate reality in Daoism.'
+    but a positive and active principle that underlies all existence.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.2.13
+    resonance: '"The Self is not born, nor does it die; it is not produced, nor does it perish. It is unborn, eternal, permanent,
+      and ancient." This passage resonates with the idea of the Unity as infinite and unbounded, and suggests a similar concept
+      of the ultimate reality in Hinduism.'
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 78b-80c
+    resonance: '"The soul is immortal, and it is the source of all life and movement." This passage resonates with the idea
+      of the Unity as the source of all existence, and suggests a similar concept of the ultimate reality in Platonism.'
+    divergence: ''
+    passage_id: ''
+  - citation: Zhuangzi, Chapter 2
+    resonance: '"The Tao is the ultimate reality, and it is beyond all human conception." This passage resonates with the
+      idea of the Unity as beyond all human conception, and suggests a similar concept of the ultimate reality in Daoism.'
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit in stillness and silence, and attempt to conceive of the Unity as infinite in power and depth, rather than in

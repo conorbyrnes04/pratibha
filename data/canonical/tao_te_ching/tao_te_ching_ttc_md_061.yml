@@ -51,17 +51,7 @@ commentary: 'This chapter asserts that true mastery of the Tao is achieved by wi
   **挫其銳 (cuò qí ruì)** — blunt his sharpness -> to soften egoic edges; Daoist sense: humility -> translation: ''dull his sharpness''
 
   **玄同 (xuán tóng)** — mysterious unity -> the state of harmonious alignment with the Tao; Daoist sense: ultimate unity ->
-  translation: ''mysterious unity''
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 2 (the Tao is the source of all things):** Both chapters emphasize the primacy of the Tao over human articulation
-  *Divergence:* Chapter 56 focuses on withdrawal and silence, whereas chapter 2 celebrates the Tao’s generative openness
-
-  **Zhuangzi, chapter 6 (the Great Sage’s silence):** Both texts portray the sage as one who refrains from speech *Divergence:*
-  Zhuangzi’s narrative uses humor and paradox, while chapter 56 presents a concise doctrinal statement'
+  translation: ''mysterious unity'''
 insight: ''
 practice: Sit in quiet meditation for ten minutes, focusing on the breath. Whenever a thought arises, observe it without judgment,
   then gently return to the breath, embodying the sage’s practice of sealing the mouth and uniting with the dust.
@@ -142,18 +132,19 @@ pratibha_layers:
     sharpness''
 
     **玄同 (xuán tóng)** — mysterious unity -> the state of harmonious alignment with the Tao; Daoist sense: ultimate unity
-    -> translation: ''mysterious unity''
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 2 (the Tao is the source of all things):** Both chapters emphasize the primacy of the Tao over human
-    articulation *Divergence:* Chapter 56 focuses on withdrawal and silence, whereas chapter 2 celebrates the Tao’s generative
-    openness
-
-    **Zhuangzi, chapter 6 (the Great Sage’s silence):** Both texts portray the sage as one who refrains from speech *Divergence:*
-    Zhuangzi’s narrative uses humor and paradox, while chapter 56 presents a concise doctrinal statement'
+    -> translation: ''mysterious unity'''
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 2 (the Tao is the source of all things)
+    resonance: Both chapters emphasize the primacy of the Tao over human articulation
+    divergence: Chapter 56 focuses on withdrawal and silence, whereas chapter 2 celebrates the Tao’s generative openness
+    passage_id: ''
+  - citation: Zhuangzi, chapter 6 (the Great Sage’s silence)
+    resonance: Both texts portray the sage as one who refrains from speech
+    divergence: Zhuangzi’s narrative uses humor and paradox, while chapter 56 presents a concise doctrinal statement
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit in quiet meditation for ten minutes, focusing on the breath. Whenever a thought arises, observe it without judgment,

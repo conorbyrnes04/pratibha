@@ -82,19 +82,7 @@ commentary: 'This chapter asserts that the truest form of virtue is its invisibl
   virtue is internal rather than performative.
 
   **lǐ 禮** — propriety or ritual. The text presents lǐ as the most superficial of the virtues, a thin imitation of loyalty
-  that leads to disorder.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 1 (the Tao is the source of all things):** Both chapters emphasize the primacy of the Tao as the underlying
-  reality. *Divergence:* Chapter 38 shifts from the Tao’s generative role to its loss, showing how the Tao’s absence creates
-  a cascade of superficial virtues.
-
-  **Laozi, chapter 54 (the decline of ritual leads to chaos):** Both chapters warn that ritual can become a source of disorder.
-  *Divergence:* Chapter 38 explicitly labels lǐ as the thinness of loyalty and the beginning of disorder, whereas chapter
-  54 focuses on the broader societal collapse.'
+  that leads to disorder.'
 insight: ''
 practice: Stand in silence for five minutes each morning, observing your thoughts without acting on them. When you feel the
   urge to perform a virtuous act, pause and note whether it arises from genuine intent or from a desire to display virtue.
@@ -234,19 +222,21 @@ pratibha_layers:
     virtue is internal rather than performative.
 
     **lǐ 禮** — propriety or ritual. The text presents lǐ as the most superficial of the virtues, a thin imitation of loyalty
-    that leads to disorder.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 1 (the Tao is the source of all things):** Both chapters emphasize the primacy of the Tao as the underlying
-    reality. *Divergence:* Chapter 38 shifts from the Tao’s generative role to its loss, showing how the Tao’s absence creates
-    a cascade of superficial virtues.
-
-    **Laozi, chapter 54 (the decline of ritual leads to chaos):** Both chapters warn that ritual can become a source of disorder.
-    *Divergence:* Chapter 38 explicitly labels lǐ as the thinness of loyalty and the beginning of disorder, whereas chapter
-    54 focuses on the broader societal collapse.'
+    that leads to disorder.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 1 (the Tao is the source of all things)
+    resonance: Both chapters emphasize the primacy of the Tao as the underlying reality.
+    divergence: Chapter 38 shifts from the Tao’s generative role to its loss, showing how the Tao’s absence creates a cascade
+      of superficial virtues.
+    passage_id: ''
+  - citation: Laozi, chapter 54 (the decline of ritual leads to chaos)
+    resonance: Both chapters warn that ritual can become a source of disorder.
+    divergence: Chapter 38 explicitly labels lǐ as the thinness of loyalty and the beginning of disorder, whereas chapter
+      54 focuses on the broader societal collapse.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand in silence for five minutes each morning, observing your thoughts without acting on them. When you feel the

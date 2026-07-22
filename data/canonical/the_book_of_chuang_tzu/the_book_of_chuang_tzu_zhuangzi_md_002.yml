@@ -52,31 +52,7 @@ commentary: 'The philosophical claim is sharper than "reality is uncertain." Zhu
 
   **zì yù (自喻)** - "self-satisfied, at ease in itself" -> describes butterfly-mode as fully immanent ease, not reflective
   self-awareness -> translated loosely as "conscious of following fancies," which misses the phenomenological point that one
-  can be complete in a mode without meta-certainty.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Gaudapada Karika 2.31 (Mandukya tradition):** waking and dream are both appearances within consciousness, differentiated
-  functionally but not absolutely. Structurally, both texts deny final reality-status to ordinary waking certainty.
-
-  *Divergence:* Gaudapada resolves the issue through nondual Atman as the unchanging witness; Zhuangzi does not posit an equivalent
-  permanent witness and keeps transformation foregrounded.
-
-
-  **Dhammapada / early Buddhist dream analogies for conditioned experience:** both traditions use dream imagery to expose
-  grasping at fixed identity and fixed world-claims.
-
-  *Divergence:* Buddhism links the analysis to dependent origination and no-self as a soteriological path with explicit ethical
-  architecture; Zhuangzi emphasizes perspectival play and ontological fluidity without the same doctrinal scaffold.
-
-
-  **Meister Eckhart, Sermon on detachment (Abgeschiedenheit):** Eckhart''s detachment from created forms parallels Zhuangzi''s
-  release of rigid identification with any single form.
-
-  *Divergence:* Eckhart''s movement is toward union with the divine ground, while Zhuangzi''s movement is toward unforced
-  participation in ceaseless transformation; one culminates in theological language, the other in process-language.'
+  can be complete in a mode without meta-certainty.'
 insight: 'The philosophical claim is sharper than "reality is uncertain." Zhuangzi is targeting identity-certainty itself:
   the self that claims to be the fixed subject of experience is retrospectively constructed from whichever standpoint is currently
   dominant.'
@@ -154,31 +130,28 @@ pratibha_layers:
 
     **zì yù (自喻)** - "self-satisfied, at ease in itself" -> describes butterfly-mode as fully immanent ease, not reflective
     self-awareness -> translated loosely as "conscious of following fancies," which misses the phenomenological point that
-    one can be complete in a mode without meta-certainty.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Gaudapada Karika 2.31 (Mandukya tradition):** waking and dream are both appearances within consciousness, differentiated
-    functionally but not absolutely. Structurally, both texts deny final reality-status to ordinary waking certainty.
-
-    *Divergence:* Gaudapada resolves the issue through nondual Atman as the unchanging witness; Zhuangzi does not posit an
-    equivalent permanent witness and keeps transformation foregrounded.
-
-
-    **Dhammapada / early Buddhist dream analogies for conditioned experience:** both traditions use dream imagery to expose
-    grasping at fixed identity and fixed world-claims.
-
-    *Divergence:* Buddhism links the analysis to dependent origination and no-self as a soteriological path with explicit
-    ethical architecture; Zhuangzi emphasizes perspectival play and ontological fluidity without the same doctrinal scaffold.
-
-
-    **Meister Eckhart, Sermon on detachment (Abgeschiedenheit):** Eckhart''s detachment from created forms parallels Zhuangzi''s
-    release of rigid identification with any single form.
-
-    *Divergence:* Eckhart''s movement is toward union with the divine ground, while Zhuangzi''s movement is toward unforced
-    participation in ceaseless transformation; one culminates in theological language, the other in process-language.'
+    one can be complete in a mode without meta-certainty.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Gaudapada Karika 2.31 (Mandukya tradition)
+    resonance: waking and dream are both appearances within consciousness, differentiated functionally but not absolutely.
+      Structurally, both texts deny final reality-status to ordinary waking certainty.
+    divergence: Gaudapada resolves the issue through nondual Atman as the unchanging witness; Zhuangzi does not posit an equivalent
+      permanent witness and keeps transformation foregrounded.
+    passage_id: ''
+  - citation: Dhammapada / early Buddhist dream analogies for conditioned experience
+    resonance: both traditions use dream imagery to expose grasping at fixed identity and fixed world-claims.
+    divergence: Buddhism links the analysis to dependent origination and no-self as a soteriological path with explicit ethical
+      architecture; Zhuangzi emphasizes perspectival play and ontological fluidity without the same doctrinal scaffold.
+    passage_id: ''
+  - citation: Meister Eckhart, Sermon on detachment (Abgeschiedenheit)
+    resonance: Eckhart's detachment from created forms parallels Zhuangzi's release of rigid identification with any single
+      form.
+    divergence: Eckhart's movement is toward union with the divine ground, while Zhuangzi's movement is toward unforced participation
+      in ceaseless transformation; one culminates in theological language, the other in process-language.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Tonight before sleep, write one identity statement you are gripping ("I am the one who..."), then in the morning rewrite

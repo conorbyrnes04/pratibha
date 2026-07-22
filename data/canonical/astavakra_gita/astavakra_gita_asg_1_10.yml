@@ -24,19 +24,7 @@ commentary: 'Extended Translation:
   never there. The world, similarly, does not disappear in liberation — it is recognized as what it always was: the one Consciousness
   appearing as multiplicity. *Yatra* — "where" — points not to a location but to the ground of recognition itself. That ground
   is *ānanda* — bliss — and specifically *paramānanda*, supreme bliss. Not the bliss of pleasant experience, which is a mental
-  event, but the intrinsic fullness of consciousness knowing itself. *Sa bodhaḥ tvaṃ* — that knowing is you.
-
-
-  Cross-Tradition Resonance:
-
-  - Pratyabhijñāhṛdayam 2: *svabhittau viśvam unmīlayati* — Consciousness unfolds the universe on its own canvas; the canvas
-  is *ānanda*, the painting is the *viśva*
-
-  - Vijñāna Bhairava Tantra Dhāraṇā 49: the practice of recognizing the universe as arising within the field of awareness,
-  like a reflection in a mirror
-
-  - Plotinus, *Enneads* I.6: the soul''s encounter with Beauty — not an object encountered but a recognition of what the soul
-  itself is'
+  event, but the intrinsic fullness of consciousness knowing itself. *Sa bodhaḥ tvaṃ* — that knowing is you.'
 insight: 'Extended Translation:
 
   Where this universe appears like an imagined rope-snake — there lies bliss, supreme bliss.'
@@ -95,19 +83,38 @@ pratibha_layers:
     Consciousness appearing as multiplicity. *Yatra* — "where" — points not to a location but to the ground of recognition
     itself. That ground is *ānanda* — bliss — and specifically *paramānanda*, supreme bliss. Not the bliss of pleasant experience,
     which is a mental event, but the intrinsic fullness of consciousness knowing itself. *Sa bodhaḥ tvaṃ* — that knowing is
-    you.
-
-
-    Cross-Tradition Resonance:
-
-    - Pratyabhijñāhṛdayam 2: *svabhittau viśvam unmīlayati* — Consciousness unfolds the universe on its own canvas; the canvas
-    is *ānanda*, the painting is the *viśva*
-
-    - Vijñāna Bhairava Tantra Dhāraṇā 49: the practice of recognizing the universe as arising within the field of awareness,
-    like a reflection in a mirror
-
-    - Plotinus, *Enneads* I.6: the soul''s encounter with Beauty — not an object encountered but a recognition of what the
-    soul itself is'
+    you.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: rajju-sarpa
+    definition: rope-snake; the paradigmatic Advaita illustration of *vivartavāda* (the doctrine of apparent transformation)
+  - term: kalpita
+    definition: imagined, superimposed; from *kḷp* (to arrange, to imagine); the universe as the mind's superimposition on
+      Consciousness
+  - term: bhāti
+    definition: appears, shines; from *bhā* (to shine); the universe as appearance within the light of awareness
+  - term: paramānanda
+    definition: supreme bliss; the intrinsic fullness of Consciousness, prior to and independent of all pleasant experience
+  - term: bodha
+    definition: knowing, pure consciousness; here as the locus of bliss, not merely the instrument of knowledge
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijñāhṛdayam 2
+    resonance: '*svabhittau viśvam unmīlayati* — Consciousness unfolds the universe on its own canvas; the canvas is *ānanda*,
+      the painting is the *viśva*'
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_002
+  - citation: Vijñāna Bhairava Tantra Dhāraṇā 49
+    resonance: the practice of recognizing the universe as arising within the field of awareness, like a reflection in a mirror
+    divergence: ''
+    passage_id: vijnana_bhairava.yukti_049
+  - citation: Plotinus, *Enneads* I.6
+    resonance: the soul's encounter with Beauty — not an object encountered but a recognition of what the soul itself is
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Look at any object in your environment. Now ask: what is the object *appearing in*? What is the field or space in

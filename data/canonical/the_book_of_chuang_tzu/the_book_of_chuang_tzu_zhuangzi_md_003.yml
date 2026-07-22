@@ -82,31 +82,7 @@ commentary: 'The claim is that true mastery is not increased force but refined n
 
 
   **yóu rèn (遊刃)** - literally "wandering blade" -> the easeful movement of the knife within available space, emblem of non-forced
-  action -> translations that flatten this to "room for the blade" miss the improvisational freedom implied by *you* (to roam/wander).
-
-
-  Cross-Tradition Resonances:
-
-
-  **Bhagavad Gita 2.50:** "Yoga is skill in action" (*yogah karmasu kausalam*). Both texts define excellence as a quality
-  of attuned action rather than mere output, and both link this to inner freedom from agitation.
-
-  *Divergence:* The Gita situates skill in action within duty and offering to the divine, while Zhuangzi situates it in spontaneous
-  conformity to pattern without duty-metaphysics.
-
-
-  **Epictetus, Enchiridion (discipline of assent and action):** Both traditions stress precision at the point of contact:
-  do not hack at externals; work where agency truly operates.
-
-  *Divergence:* Stoicism grounds this in rational governance of judgments (*prohairesis*), whereas Zhuangzi emphasizes fluid
-  embodied responsiveness that can precede discursive judgment.
-
-
-  **Zen tradition, Dogen''s tenzo instructions:** kitchen work as full-path practice parallels Cook Ding''s ordinary labor
-  becoming realization through total attention.
-
-  *Divergence:* Dogen frames practice in explicit monastic-vow and Buddha-dharma context; Zhuangzi frames it as Daoist naturalness
-  discovered in craft without institutional soteriology.'
+  action -> translations that flatten this to "room for the blade" miss the improvisational freedom implied by *you* (to roam/wander).'
 insight: ''
 practice: Choose one recurring task you usually "hack through," spend five minutes mapping its natural joints and transitions
   before starting, then perform it at 80% speed with full attention to where effort is actually needed and where you can move
@@ -219,31 +195,29 @@ pratibha_layers:
 
     **yóu rèn (遊刃)** - literally "wandering blade" -> the easeful movement of the knife within available space, emblem of
     non-forced action -> translations that flatten this to "room for the blade" miss the improvisational freedom implied by
-    *you* (to roam/wander).
-
-
-    Cross-Tradition Resonances:
-
-
-    **Bhagavad Gita 2.50:** "Yoga is skill in action" (*yogah karmasu kausalam*). Both texts define excellence as a quality
-    of attuned action rather than mere output, and both link this to inner freedom from agitation.
-
-    *Divergence:* The Gita situates skill in action within duty and offering to the divine, while Zhuangzi situates it in
-    spontaneous conformity to pattern without duty-metaphysics.
-
-
-    **Epictetus, Enchiridion (discipline of assent and action):** Both traditions stress precision at the point of contact:
-    do not hack at externals; work where agency truly operates.
-
-    *Divergence:* Stoicism grounds this in rational governance of judgments (*prohairesis*), whereas Zhuangzi emphasizes fluid
-    embodied responsiveness that can precede discursive judgment.
-
-
-    **Zen tradition, Dogen''s tenzo instructions:** kitchen work as full-path practice parallels Cook Ding''s ordinary labor
-    becoming realization through total attention.
-
-    *Divergence:* Dogen frames practice in explicit monastic-vow and Buddha-dharma context; Zhuangzi frames it as Daoist naturalness
-    discovered in craft without institutional soteriology.'
+    *you* (to roam/wander).'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita 2.50
+    resonance: '"Yoga is skill in action" (*yogah karmasu kausalam*). Both texts define excellence as a quality of attuned
+      action rather than mere output, and both link this to inner freedom from agitation.'
+    divergence: The Gita situates skill in action within duty and offering to the divine, while Zhuangzi situates it in spontaneous
+      conformity to pattern without duty-metaphysics.
+    passage_id: ''
+  - citation: Epictetus, Enchiridion (discipline of assent and action)
+    resonance: 'Both traditions stress precision at the point of contact: do not hack at externals; work where agency truly
+      operates.'
+    divergence: Stoicism grounds this in rational governance of judgments (*prohairesis*), whereas Zhuangzi emphasizes fluid
+      embodied responsiveness that can precede discursive judgment.
+    passage_id: ''
+  - citation: Zen tradition, Dogen's tenzo instructions
+    resonance: kitchen work as full-path practice parallels Cook Ding's ordinary labor becoming realization through total
+      attention.
+    divergence: Dogen frames practice in explicit monastic-vow and Buddha-dharma context; Zhuangzi frames it as Daoist naturalness
+      discovered in craft without institutional soteriology.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one recurring task you usually "hack through," spend five minutes mapping its natural joints and transitions

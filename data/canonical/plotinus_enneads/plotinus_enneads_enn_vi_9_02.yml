@@ -34,21 +34,7 @@ commentary: 'The philosophical claim that the Unity is distinct from the Intelle
   translation misses the connotation of a manifold that contains life, intelligence, and the Ideal Forms.
 
   * **Ousia (οὐσία)** — from Proto-Indo-European *es- -> being, essence -> Being, or Essential Being; the default translation
-  misses the connotation of a manifold that underlies all existence.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad 2.1.11:** "The Unity is the ultimate reality that underlies all existence, and it is the source of all
-  being." This passage resonates with the idea that the Unity is distinct from the Intellectual-Principle and Being.
-
-  * **Phaedo 78b:** "The Forms are the ultimate reality that underlies all existence, and they are the source of all being."
-  This passage resonates with the idea that the Intellectual-Principle is a manifold that contains life, intelligence, and
-  the Ideal Forms.
-
-  * **Zhuangzi 2.3:** "The ultimate reality is the Unity that underlies all existence, and it is the source of all being."
-  This passage resonates with the idea that the Unity is the ultimate reality that transcends all duality and multiplicity.'
+  misses the connotation of a manifold that underlies all existence.'
 insight: The philosophical claim that the Unity is distinct from the Intellectual-Principle and Being is a counterintuitive
   move that challenges the common notion that unity and being are identical.
 practice: 'As you go about your daily activities, take a moment to reflect on the underlying unity that gives rise to all
@@ -101,21 +87,27 @@ pratibha_layers:
     translation misses the connotation of a manifold that contains life, intelligence, and the Ideal Forms.
 
     * **Ousia (οὐσία)** — from Proto-Indo-European *es- -> being, essence -> Being, or Essential Being; the default translation
-    misses the connotation of a manifold that underlies all existence.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad 2.1.11:** "The Unity is the ultimate reality that underlies all existence, and it is the source of
-    all being." This passage resonates with the idea that the Unity is distinct from the Intellectual-Principle and Being.
-
-    * **Phaedo 78b:** "The Forms are the ultimate reality that underlies all existence, and they are the source of all being."
-    This passage resonates with the idea that the Intellectual-Principle is a manifold that contains life, intelligence, and
-    the Ideal Forms.
-
-    * **Zhuangzi 2.3:** "The ultimate reality is the Unity that underlies all existence, and it is the source of all being."
-    This passage resonates with the idea that the Unity is the ultimate reality that transcends all duality and multiplicity.'
+    misses the connotation of a manifold that underlies all existence.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad 2.1.11
+    resonance: '"The Unity is the ultimate reality that underlies all existence, and it is the source of all being." This
+      passage resonates with the idea that the Unity is distinct from the Intellectual-Principle and Being.'
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo 78b
+    resonance: '"The Forms are the ultimate reality that underlies all existence, and they are the source of all being." This
+      passage resonates with the idea that the Intellectual-Principle is a manifold that contains life, intelligence, and
+      the Ideal Forms.'
+    divergence: ''
+    passage_id: ''
+  - citation: Zhuangzi 2.3
+    resonance: '"The ultimate reality is the Unity that underlies all existence, and it is the source of all being." This
+      passage resonates with the idea that the Unity is the ultimate reality that transcends all duality and multiplicity.'
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your daily activities, take a moment to reflect on the underlying unity that gives rise to all existence.

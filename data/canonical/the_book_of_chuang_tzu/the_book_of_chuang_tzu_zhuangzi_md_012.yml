@@ -46,30 +46,7 @@ commentary: 'The claim is that scale-transformation should produce humility, not
 
 
   **hǎi (海)** - sea/ocean -> here a model of capacious non-reactivity under continual influx and efflux -> not mere size,
-  but stable openness.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Mundaka Upanishad 1.1.4-5 (higher/lower knowledge):** both recognize differing orders of understanding that are not interchangeable
-  by argument alone.
-
-  *Divergence:* Upanishadic framing is explicitly hierarchical toward Brahmavidya; Zhuangzi stresses contextual scope and
-  non-boastful expansion rather than fixed hierarchy.
-
-
-  **Stoic oikeiosis at cosmopolitan scale (Hierocles):** widening circles of concern parallels expansion from local to vast
-  perspective.
-
-  *Divergence:* Stoicism grounds this in rational moral universalism; Zhuangzi grounds it in fluid ecological perspectivism
-  without universal moral codification.
-
-
-  **Spinoza, *Ethics* V (sub specie aeternitatis):** larger perspective reduces reactive disturbance and personal inflation.
-
-  *Divergence:* Spinoza''s route is geometric rationalism; Zhuangzi''s is imagistic and dialogical, preserving paradox and
-  play.'
+  but stable openness.'
 insight: The claim is that scale-transformation should produce humility, not superiority.
 practice: 'When you feel either superior or inferior in a conversation today, pause and ask: "What is the size of the container
   each of us is speaking from?" then respond by widening the frame one notch instead of defending your rank.'
@@ -137,30 +114,25 @@ pratibha_layers:
 
 
     **hǎi (海)** - sea/ocean -> here a model of capacious non-reactivity under continual influx and efflux -> not mere size,
-    but stable openness.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Mundaka Upanishad 1.1.4-5 (higher/lower knowledge):** both recognize differing orders of understanding that are not
-    interchangeable by argument alone.
-
-    *Divergence:* Upanishadic framing is explicitly hierarchical toward Brahmavidya; Zhuangzi stresses contextual scope and
-    non-boastful expansion rather than fixed hierarchy.
-
-
-    **Stoic oikeiosis at cosmopolitan scale (Hierocles):** widening circles of concern parallels expansion from local to vast
-    perspective.
-
-    *Divergence:* Stoicism grounds this in rational moral universalism; Zhuangzi grounds it in fluid ecological perspectivism
-    without universal moral codification.
-
-
-    **Spinoza, *Ethics* V (sub specie aeternitatis):** larger perspective reduces reactive disturbance and personal inflation.
-
-    *Divergence:* Spinoza''s route is geometric rationalism; Zhuangzi''s is imagistic and dialogical, preserving paradox and
-    play.'
+    but stable openness.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mundaka Upanishad 1.1.4-5 (higher/lower knowledge)
+    resonance: both recognize differing orders of understanding that are not interchangeable by argument alone.
+    divergence: Upanishadic framing is explicitly hierarchical toward Brahmavidya; Zhuangzi stresses contextual scope and
+      non-boastful expansion rather than fixed hierarchy.
+    passage_id: ''
+  - citation: Stoic oikeiosis at cosmopolitan scale (Hierocles)
+    resonance: widening circles of concern parallels expansion from local to vast perspective.
+    divergence: Stoicism grounds this in rational moral universalism; Zhuangzi grounds it in fluid ecological perspectivism
+      without universal moral codification.
+    passage_id: ''
+  - citation: Spinoza, *Ethics* V (sub specie aeternitatis)
+    resonance: larger perspective reduces reactive disturbance and personal inflation.
+    divergence: Spinoza's route is geometric rationalism; Zhuangzi's is imagistic and dialogical, preserving paradox and play.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you feel either superior or inferior in a conversation today, pause and ask: "What is the size of the container

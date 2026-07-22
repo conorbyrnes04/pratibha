@@ -7,13 +7,11 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_18_05
 unit_label: Liberation as the Stilling of Fabrication
 title: Liberation as the Stilling of Fabrication
 unit_type: sutra
-sanskrit_devanagari: 'karmakleśakṣayān mokṣaḥ karmakleśā vikalpataḥ / te prapañcāt prapañcas tu śūnyatāyāṃ nirudhyate //
+sanskrit_devanagari: ''
+sanskrit_iast: 'karmakleśakṣayān mokṣaḥ karmakleśā vikalpataḥ / te prapañcāt prapañcas tu śūnyatāyāṃ nirudhyate //
 
 
   *(Sanskrit, IAST, source-verified from GRETIL MMK 18.5.)*'
-sanskrit_iast: karma-kleśa-kṣayāt (from the exhaustion of action and affliction) mokṣaḥ (release); karma-kleśāḥ (action and
-  affliction) vikalpataḥ (from conceptual discrimination); te (they) prapañcāt (from proliferation); prapañcaḥ tu (but proliferation)
-  śūnyatāyāṃ (in emptiness) nirudhyate (is stopped).
 translation_literal: Liberation [mokṣa] happens when karma and the afflictions [kleśa] run out. Karma and afflictions arise
   from conceptual construction [vikalpa]; construction arises from mental proliferation [prapañca]; and proliferation is halted—brought
   to rest—in emptiness [śūnyatā].
@@ -44,28 +42,7 @@ commentary: 'Nāgārjuna reverse-engineers bondage to locate its true root, and 
   their kin) that drive action; not sins but structural distortions.
 
   **mokṣa (मोक्ष)** — Etymology: from *√muc*, "to loosen, release." Freedom framed negatively as exhaustion of the karma-affliction
-  cycle rather than positively as a state gained—consistent with emptiness having nothing to add.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Patañjali, Yoga Sūtra 1.2 (*yogaś citta-vṛtti-nirodhaḥ*):** both make liberation the *cessation* (nirodha) of mental activity
-  rather than the acquisition of a content.
-
-  *Divergence:* Patañjali stills the *vṛttis* to isolate a real witness-puruṣa; Nāgārjuna stills *prapañca* by finding no
-  such essence anywhere, witness included.
-
-  **Heart Sūtra (no attainment, uncovered mind):** the same insight that grasping ceases when its object is seen as empty,
-  stated as slogan there and as causal analysis here.
-
-  *Divergence:* the sūtra performs the release liturgically; Nāgārjuna argues it link by link.
-
-  **Epictetus, Enchiridion 5 ("not things, but judgments about things, disturb us"):** disturbance is traced to a cognitive
-  act (assent / *vikalpa*) rather than to the world.
-
-  *Divergence:* the Stoic remedy trains right judgment; Nāgārjuna''s remedy dissolves the reality-status of what any judgment
-  is about.'
+  cycle rather than positively as a state gained—consistent with emptiness having nothing to add.'
 insight: 'Nāgārjuna reverse-engineers bondage to locate its true root, and the root is not desire or even ignorance in the
   abstract but *prapañca*: the mind''s compulsive spinning-out of a conceptualized world of fixed things and selves.'
 practice: 'When agitation arises in sitting, trace it one link back: from the feeling, to the judgment that named its object
@@ -98,15 +75,13 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
+  body: ''
+- kind: iast
+  label: IAST
   body: 'karmakleśakṣayān mokṣaḥ karmakleśā vikalpataḥ / te prapañcāt prapañcas tu śūnyatāyāṃ nirudhyate //
 
 
     *(Sanskrit, IAST, source-verified from GRETIL MMK 18.5.)*'
-- kind: iast
-  label: IAST
-  body: karma-kleśa-kṣayāt (from the exhaustion of action and affliction) mokṣaḥ (release); karma-kleśāḥ (action and affliction)
-    vikalpataḥ (from conceptual discrimination); te (they) prapañcāt (from proliferation); prapañcaḥ tu (but proliferation)
-    śūnyatāyāṃ (in emptiness) nirudhyate (is stopped).
 - kind: translation
   label: Pratibha Translation
   body: Liberation [mokṣa] happens when karma and the afflictions [kleśa] run out. Karma and afflictions arise from conceptual
@@ -142,28 +117,26 @@ pratibha_layers:
     and their kin) that drive action; not sins but structural distortions.
 
     **mokṣa (मोक्ष)** — Etymology: from *√muc*, "to loosen, release." Freedom framed negatively as exhaustion of the karma-affliction
-    cycle rather than positively as a state gained—consistent with emptiness having nothing to add.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Patañjali, Yoga Sūtra 1.2 (*yogaś citta-vṛtti-nirodhaḥ*):** both make liberation the *cessation* (nirodha) of mental
-    activity rather than the acquisition of a content.
-
-    *Divergence:* Patañjali stills the *vṛttis* to isolate a real witness-puruṣa; Nāgārjuna stills *prapañca* by finding no
-    such essence anywhere, witness included.
-
-    **Heart Sūtra (no attainment, uncovered mind):** the same insight that grasping ceases when its object is seen as empty,
-    stated as slogan there and as causal analysis here.
-
-    *Divergence:* the sūtra performs the release liturgically; Nāgārjuna argues it link by link.
-
-    **Epictetus, Enchiridion 5 ("not things, but judgments about things, disturb us"):** disturbance is traced to a cognitive
-    act (assent / *vikalpa*) rather than to the world.
-
-    *Divergence:* the Stoic remedy trains right judgment; Nāgārjuna''s remedy dissolves the reality-status of what any judgment
-    is about.'
+    cycle rather than positively as a state gained—consistent with emptiness having nothing to add.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali, Yoga Sūtra 1.2 (*yogaś citta-vṛtti-nirodhaḥ*)
+    resonance: both make liberation the *cessation* (nirodha) of mental activity rather than the acquisition of a content.
+    divergence: Patañjali stills the *vṛttis* to isolate a real witness-puruṣa; Nāgārjuna stills *prapañca* by finding no
+      such essence anywhere, witness included.
+    passage_id: ''
+  - citation: Heart Sūtra (no attainment, uncovered mind)
+    resonance: the same insight that grasping ceases when its object is seen as empty, stated as slogan there and as causal
+      analysis here.
+    divergence: the sūtra performs the release liturgically; Nāgārjuna argues it link by link.
+    passage_id: ''
+  - citation: Epictetus, Enchiridion 5 ("not things, but judgments about things, disturb us")
+    resonance: disturbance is traced to a cognitive act (assent / *vikalpa*) rather than to the world.
+    divergence: the Stoic remedy trains right judgment; Nāgārjuna's remedy dissolves the reality-status of what any judgment
+      is about.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When agitation arises in sitting, trace it one link back: from the feeling, to the judgment that named its object

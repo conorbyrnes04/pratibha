@@ -34,20 +34,7 @@ commentary: 'The philosophical claim here is that true understanding lies beyond
   default translation misses: the importance of interpretation and engagement with the signs.
 
   * **Λόγος (Logos)** — etymology: reason, word -> Heraclitean meaning in this fragment: the underlying principle of the universe
-  -> what default translation misses: the dynamic and relational nature of Logos.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 27:** structural homology: the idea that truth is often hidden in plain sight, and that one must
-  look beyond the surface level to understand the deeper reality. *Divergence:* while the Tao Te Ching emphasizes the importance
-  of non-action (wu-wei), Heraclitus focuses on the interpretive engagement with divine signs.
-
-  * **Plotinus, Enneads, V.3.14:** structural homology: the notion that the divine communicates through subtle and ambiguous
-  signs, requiring the individual to cultivate a deeper level of understanding and intuition. *Divergence:* while Plotinus
-  emphasizes the role of the intellect in understanding the divine, Heraclitus highlights the importance of embracing ambiguity
-  and complexity.'
+  -> what default translation misses: the dynamic and relational nature of Logos.'
 insight: The philosophical claim here is that true understanding lies beyond the dichotomy of clear revelation and complete
   concealment.
 practice: 'As you navigate the complexities of your daily life, take a moment to pause and reflect on the subtle signs and
@@ -103,20 +90,23 @@ pratibha_layers:
     what default translation misses: the importance of interpretation and engagement with the signs.
 
     * **Λόγος (Logos)** — etymology: reason, word -> Heraclitean meaning in this fragment: the underlying principle of the
-    universe -> what default translation misses: the dynamic and relational nature of Logos.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 27:** structural homology: the idea that truth is often hidden in plain sight, and that one
-    must look beyond the surface level to understand the deeper reality. *Divergence:* while the Tao Te Ching emphasizes the
-    importance of non-action (wu-wei), Heraclitus focuses on the interpretive engagement with divine signs.
-
-    * **Plotinus, Enneads, V.3.14:** structural homology: the notion that the divine communicates through subtle and ambiguous
-    signs, requiring the individual to cultivate a deeper level of understanding and intuition. *Divergence:* while Plotinus
-    emphasizes the role of the intellect in understanding the divine, Heraclitus highlights the importance of embracing ambiguity
-    and complexity.'
+    universe -> what default translation misses: the dynamic and relational nature of Logos.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 27
+    resonance: 'structural homology: the idea that truth is often hidden in plain sight, and that one must look beyond the
+      surface level to understand the deeper reality.'
+    divergence: while the Tao Te Ching emphasizes the importance of non-action (wu-wei), Heraclitus focuses on the interpretive
+      engagement with divine signs.
+    passage_id: tao_te_ching.ttc_md_027
+  - citation: Plotinus, Enneads, V.3.14
+    resonance: 'structural homology: the notion that the divine communicates through subtle and ambiguous signs, requiring
+      the individual to cultivate a deeper level of understanding and intuition.'
+    divergence: while Plotinus emphasizes the role of the intellect in understanding the divine, Heraclitus highlights the
+      importance of embracing ambiguity and complexity.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you navigate the complexities of your daily life, take a moment to pause and reflect on the subtle signs and ambiguities

@@ -59,26 +59,7 @@ commentary: 'Zhuangzi''s diagnosis is that *fragmentation is not mere disagreeme
   Zhuangzi''s term for anyone who masters a part while losing the whole. The stakes: expertise itself becomes a form of blindness.
 
   **tiandi zhi chun 天地之純** - the purity of Heaven-Earth, the undivided state. What the ancients (*gu zhi ren*) possessed and
-  later ages lost. Not a doctrine but a *condition*—prior to the split into subject and object, knower and known.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Plato, *Republic* Book VI, the divided line and the cave:** Both texts use optical/sensory metaphors to show how partial
-  knowledge mistakes itself for totality. The prisoners see shadows; the hundred schools see one color of the spectrum. *Divergence:*
-  Plato proposes dialectic and philosophy as the ascent to the Form of the Good. Zhuangzi proposes *forgetting* doctrine altogether
-  and returning to pre-reflective unity. Plato climbs; Zhuangzi descends.
-
-  **Confucian *Analects* 15.3: Confucius on the unity of his Way (*yi yi guan zhi*):** Both claim access to a prior unity.
-  Confucius says his Way is unified by *ren* (humaneness); Zhuangzi says the ancients were unified by *not separating from
-  the source*. *Divergence:* Confucius offers *ren* as the integrating principle; Zhuangzi rejects all principles as further
-  fragmentation. For Confucius, unity is *ethical*; for Zhuangzi, it is *pre-ethical*.
-
-  **Daoism''s later *Huangdi Neijing* (Yellow Emperor''s Inner Classic), the return to simplicity:** Both texts diagnose over-civilization
-  and over-knowledge as the disease. Both propose a return to an earlier, undifferentiated state. *Divergence:* The *Neijing*
-  offers specific practices (breathing, visualization) to recover unity. Zhuangzi offers no practice—only the recognition
-  that practice itself may deepen the split.'
+  later ages lost. Not a doctrine but a *condition*—prior to the split into subject and object, knower and known.'
 insight: Zhuangzi's diagnosis is that *fragmentation is not mere disagreement but the loss of a prior unity*—the ancients
   possessed an undivided vision (*tiandi zhi chun*, the purity of Heaven-Earth) that later schools have carved into mutually
   exclusive doctrines.
@@ -173,26 +154,29 @@ pratibha_layers:
     a form of blindness.
 
     **tiandi zhi chun 天地之純** - the purity of Heaven-Earth, the undivided state. What the ancients (*gu zhi ren*) possessed
-    and later ages lost. Not a doctrine but a *condition*—prior to the split into subject and object, knower and known.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Plato, *Republic* Book VI, the divided line and the cave:** Both texts use optical/sensory metaphors to show how partial
-    knowledge mistakes itself for totality. The prisoners see shadows; the hundred schools see one color of the spectrum.
-    *Divergence:* Plato proposes dialectic and philosophy as the ascent to the Form of the Good. Zhuangzi proposes *forgetting*
-    doctrine altogether and returning to pre-reflective unity. Plato climbs; Zhuangzi descends.
-
-    **Confucian *Analects* 15.3: Confucius on the unity of his Way (*yi yi guan zhi*):** Both claim access to a prior unity.
-    Confucius says his Way is unified by *ren* (humaneness); Zhuangzi says the ancients were unified by *not separating from
-    the source*. *Divergence:* Confucius offers *ren* as the integrating principle; Zhuangzi rejects all principles as further
-    fragmentation. For Confucius, unity is *ethical*; for Zhuangzi, it is *pre-ethical*.
-
-    **Daoism''s later *Huangdi Neijing* (Yellow Emperor''s Inner Classic), the return to simplicity:** Both texts diagnose
-    over-civilization and over-knowledge as the disease. Both propose a return to an earlier, undifferentiated state. *Divergence:*
-    The *Neijing* offers specific practices (breathing, visualization) to recover unity. Zhuangzi offers no practice—only
-    the recognition that practice itself may deepen the split.'
+    and later ages lost. Not a doctrine but a *condition*—prior to the split into subject and object, knower and known.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plato, *Republic* Book VI, the divided line and the cave
+    resonance: Both texts use optical/sensory metaphors to show how partial knowledge mistakes itself for totality. The prisoners
+      see shadows; the hundred schools see one color of the spectrum.
+    divergence: Plato proposes dialectic and philosophy as the ascent to the Form of the Good. Zhuangzi proposes *forgetting*
+      doctrine altogether and returning to pre-reflective unity. Plato climbs; Zhuangzi descends.
+    passage_id: ''
+  - citation: 'Confucian *Analects* 15.3: Confucius on the unity of his Way (*yi yi guan zhi*)'
+    resonance: Both claim access to a prior unity. Confucius says his Way is unified by *ren* (humaneness); Zhuangzi says
+      the ancients were unified by *not separating from the source*.
+    divergence: Confucius offers *ren* as the integrating principle; Zhuangzi rejects all principles as further fragmentation.
+      For Confucius, unity is *ethical*; for Zhuangzi, it is *pre-ethical*.
+    passage_id: ''
+  - citation: Daoism's later *Huangdi Neijing* (Yellow Emperor's Inner Classic), the return to simplicity
+    resonance: Both texts diagnose over-civilization and over-knowledge as the disease. Both propose a return to an earlier,
+      undifferentiated state.
+    divergence: The *Neijing* offers specific practices (breathing, visualization) to recover unity. Zhuangzi offers no practice—only
+      the recognition that practice itself may deepen the split.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'For one week, choose a domain where you hold strong views (politics, diet, parenting, art). Each day, identify one

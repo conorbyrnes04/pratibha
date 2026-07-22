@@ -39,21 +39,7 @@ commentary: 'The text opens not with an argument but with a declaration so total
 
   - **trikālātīta** — beyond the three times; the unconditioned ground that is not itself past, present, or future
 
-  - **upavyākhyāna** — exposition, detailed explanation; what follows is an unpacking of what the first sentence declares
-
-
-  Cross-Tradition Resonances:
-
-
-  - Pratyabhijñāhṛdayam 1: *citiḥ svatantrā viśvasiddhihetuḥ* — the sovereign Śakti is the cause of the universe''s manifestation.
-  Both texts open by locating the entire universe in consciousness; the Māṇḍūkya does it through Om as ground, the PHH through
-  Citi as cause.
-
-  - Dào Dé Jīng ch. 1: "The Tao that can be named is not the eternal Tao." The Māṇḍūkya takes the opposite risk: naming everything.
-  But "Om" as the name that contains all names approaches the same paradox from the other side.
-
-  - Heraclitus Fragment 50: "Listening not to me but to the Logos, it is wise to agree that all things are one." The Logos
-  as the structural equivalent of Om — the unifying ground beneath apparent multiplicity.'
+  - **upavyākhyāna** — exposition, detailed explanation; what follows is an unpacking of what the first sentence declares'
 insight: The text opens not with an argument but with a declaration so total it can barely be contained in grammar.
 practice: 'Sit in silence. Internally sound the syllable Om without vocal effort — just the internal resonance. Notice the
   three components: the opening of A (arising, manifestation), the middle of U (sustaining, the dream-like interior), and
@@ -110,21 +96,26 @@ pratibha_layers:
 
     - **trikālātīta** — beyond the three times; the unconditioned ground that is not itself past, present, or future
 
-    - **upavyākhyāna** — exposition, detailed explanation; what follows is an unpacking of what the first sentence declares
-
-
-    Cross-Tradition Resonances:
-
-
-    - Pratyabhijñāhṛdayam 1: *citiḥ svatantrā viśvasiddhihetuḥ* — the sovereign Śakti is the cause of the universe''s manifestation.
-    Both texts open by locating the entire universe in consciousness; the Māṇḍūkya does it through Om as ground, the PHH through
-    Citi as cause.
-
-    - Dào Dé Jīng ch. 1: "The Tao that can be named is not the eternal Tao." The Māṇḍūkya takes the opposite risk: naming
-    everything. But "Om" as the name that contains all names approaches the same paradox from the other side.
-
-    - Heraclitus Fragment 50: "Listening not to me but to the Logos, it is wise to agree that all things are one." The Logos
-    as the structural equivalent of Om — the unifying ground beneath apparent multiplicity.'
+    - **upavyākhyāna** — exposition, detailed explanation; what follows is an unpacking of what the first sentence declares'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijñāhṛdayam 1
+    resonance: '*citiḥ svatantrā viśvasiddhihetuḥ* — the sovereign Śakti is the cause of the universe''s manifestation. Both
+      texts open by locating the entire universe in consciousness; the Māṇḍūkya does it through Om as ground, the PHH through
+      Citi as cause.'
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_001
+  - citation: Dào Dé Jīng ch. 1
+    resonance: '"The Tao that can be named is not the eternal Tao." The Māṇḍūkya takes the opposite risk: naming everything.'
+    divergence: But "Om" as the name that contains all names approaches the same paradox from the other side.
+    passage_id: ''
+  - citation: Heraclitus Fragment 50
+    resonance: '"Listening not to me but to the Logos, it is wise to agree that all things are one." The Logos as the structural
+      equivalent of Om — the unifying ground beneath apparent multiplicity.'
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Sit in silence. Internally sound the syllable Om without vocal effort — just the internal resonance. Notice the three

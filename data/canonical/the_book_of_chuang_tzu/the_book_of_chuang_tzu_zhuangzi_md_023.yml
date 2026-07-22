@@ -58,22 +58,7 @@ commentary: 'The contested move here is the refusal of recognition itself as the
 
   **天道已行矣 tiānDào yǐ xíng yǐ** - The Tao has already moved/proceeded. Graph: heaven-path already-walk. Zhuangzi sense: causation
   without causer, transformation without transformer. Translation stakes: ''already moved'' captures the pastness of action—it
-  happened before intention, before naming.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Confucian Analects 15.5: ''The Master said, The superior man thinks always of virtue, the common man thinks of comfort.'':**
-  Both texts pit inner alignment against external recognition. Confucius valorizes virtue-thinking; Kêng Sang rejects even
-  that, since thinking-of-virtue is already a fall into deliberation. *Divergence:* Confucius assumes virtue can be cultivated
-  and displayed; Zhuangzi insists display corrupts the thing itself. For Confucius, shame is failure to live up to an ideal;
-  for Kêng Sang, shame is the sign that you''ve become an ideal.
-
-  **Daodejing 15: ''The ancient masters were subtle, mysterious, profound, responsive. The depth of their knowledge is unfathomable.'':**
-  Both texts use inscrutability as a mark of mastery. Both refuse to make the sage''s workings transparent or laudable. *Divergence:*
-  The DDJ celebrates the master''s inscrutability as a positive quality to cultivate; Kêng Sang''s shame suggests that *being
-  seen at all* is the problem. The DDJ still posits a sage-figure; Zhuangzi wants to dissolve the category.'
+  happened before intention, before naming.'
 insight: The contested move here is the refusal of recognition itself as the truest mark of attainment.
 practice: For three days, perform one ordinary task (cooking, walking, listening) while deliberately *not* tracking its effects.
   Notice when you want to check if anyone noticed, if it 'worked,' if you should be credited. Each time the impulse arises,
@@ -159,22 +144,25 @@ pratibha_layers:
 
     **天道已行矣 tiānDào yǐ xíng yǐ** - The Tao has already moved/proceeded. Graph: heaven-path already-walk. Zhuangzi sense: causation
     without causer, transformation without transformer. Translation stakes: ''already moved'' captures the pastness of action—it
-    happened before intention, before naming.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Confucian Analects 15.5: ''The Master said, The superior man thinks always of virtue, the common man thinks of comfort.'':**
-    Both texts pit inner alignment against external recognition. Confucius valorizes virtue-thinking; Kêng Sang rejects even
-    that, since thinking-of-virtue is already a fall into deliberation. *Divergence:* Confucius assumes virtue can be cultivated
-    and displayed; Zhuangzi insists display corrupts the thing itself. For Confucius, shame is failure to live up to an ideal;
-    for Kêng Sang, shame is the sign that you''ve become an ideal.
-
-    **Daodejing 15: ''The ancient masters were subtle, mysterious, profound, responsive. The depth of their knowledge is unfathomable.'':**
-    Both texts use inscrutability as a mark of mastery. Both refuse to make the sage''s workings transparent or laudable.
-    *Divergence:* The DDJ celebrates the master''s inscrutability as a positive quality to cultivate; Kêng Sang''s shame suggests
-    that *being seen at all* is the problem. The DDJ still posits a sage-figure; Zhuangzi wants to dissolve the category.'
+    happened before intention, before naming.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Confucian Analects 15.5: ''The Master said, The superior man thinks always of virtue, the common man thinks
+      of comfort.'''
+    resonance: Both texts pit inner alignment against external recognition. Confucius valorizes virtue-thinking; Kêng Sang
+      rejects even that, since thinking-of-virtue is already a fall into deliberation.
+    divergence: Confucius assumes virtue can be cultivated and displayed; Zhuangzi insists display corrupts the thing itself.
+      For Confucius, shame is failure to live up to an ideal; for Kêng Sang, shame is the sign that you've become an ideal.
+    passage_id: ''
+  - citation: 'Daodejing 15: ''The ancient masters were subtle, mysterious, profound, responsive. The depth of their knowledge
+      is unfathomable.'''
+    resonance: Both texts use inscrutability as a mark of mastery. Both refuse to make the sage's workings transparent or
+      laudable.
+    divergence: The DDJ celebrates the master's inscrutability as a positive quality to cultivate; Kêng Sang's shame suggests
+      that *being seen at all* is the problem. The DDJ still posits a sage-figure; Zhuangzi wants to dissolve the category.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: For three days, perform one ordinary task (cooking, walking, listening) while deliberately *not* tracking its effects.

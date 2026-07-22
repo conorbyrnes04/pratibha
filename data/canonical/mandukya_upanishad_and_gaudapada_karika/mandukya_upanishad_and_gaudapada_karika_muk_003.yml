@@ -33,20 +33,7 @@ commentary: 'Three sentences that could each be the sole content of a philosophi
   - **ātmā** — the Self; reflexive principle of self-awareness; here equated with Brahman, dissolving the distinction between
   individual and universal
 
-  - **catuṣpāt** — four-footed, four-quartered; *catuṣ* (four) + *pāt* (foot/quarter); the fourfold analytical schema
-
-
-  Cross-Tradition Resonances:
-
-
-  - Aṣṭāvakra Gītā 2.1: *aho nirañjanaḥ śānto bodho''haṃ prakṛteḥ paraḥ* — Janaka''s recognition "I am the stainless, peaceful
-  knowing beyond nature" is the lived form of *ayam ātmā brahma*. The Māṇḍūkya states it; the Aṣṭāvakra shows it being recognized.
-
-  - Pratyabhijñāhṛdayam 13: *tatparijñāne cittam evāntarmukhī-bhāvena cetanāpadādhyārohāc citiḥ* — the mind itself, through
-  introversion, becomes Citi. The Pratyabhijñā frames this as ascent; the Māṇḍūkya as recognition of what was always the case.
-
-  - Meister Eckhart, Sermon 52: "The ground of God and the ground of the soul are one ground." The closest Western parallel
-  to *ayam ātmā brahma* — individual ground and absolute ground as not two.'
+  - **catuṣpāt** — four-footed, four-quartered; *catuṣ* (four) + *pāt* (foot/quarter); the fourfold analytical schema'
 insight: Three sentences that could each be the sole content of a philosophical tradition.
 practice: Before any experience arises — before thought, before sensation — there is the simple fact of being aware. This
   bare awareness, which you cannot step outside of and examine as an object, is *ātmā*. The text says this is *brahma* — the
@@ -101,21 +88,26 @@ pratibha_layers:
     - **ātmā** — the Self; reflexive principle of self-awareness; here equated with Brahman, dissolving the distinction between
     individual and universal
 
-    - **catuṣpāt** — four-footed, four-quartered; *catuṣ* (four) + *pāt* (foot/quarter); the fourfold analytical schema
-
-
-    Cross-Tradition Resonances:
-
-
-    - Aṣṭāvakra Gītā 2.1: *aho nirañjanaḥ śānto bodho''haṃ prakṛteḥ paraḥ* — Janaka''s recognition "I am the stainless, peaceful
-    knowing beyond nature" is the lived form of *ayam ātmā brahma*. The Māṇḍūkya states it; the Aṣṭāvakra shows it being recognized.
-
-    - Pratyabhijñāhṛdayam 13: *tatparijñāne cittam evāntarmukhī-bhāvena cetanāpadādhyārohāc citiḥ* — the mind itself, through
-    introversion, becomes Citi. The Pratyabhijñā frames this as ascent; the Māṇḍūkya as recognition of what was always the
-    case.
-
-    - Meister Eckhart, Sermon 52: "The ground of God and the ground of the soul are one ground." The closest Western parallel
-    to *ayam ātmā brahma* — individual ground and absolute ground as not two.'
+    - **catuṣpāt** — four-footed, four-quartered; *catuṣ* (four) + *pāt* (foot/quarter); the fourfold analytical schema'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Aṣṭāvakra Gītā 2.1
+    resonance: '*aho nirañjanaḥ śānto bodho''haṃ prakṛteḥ paraḥ* — Janaka''s recognition "I am the stainless, peaceful knowing
+      beyond nature" is the lived form of *ayam ātmā brahma*. The Māṇḍūkya states it; the Aṣṭāvakra shows it being recognized.'
+    divergence: ''
+    passage_id: astavakra_gita.asg_2_1
+  - citation: Pratyabhijñāhṛdayam 13
+    resonance: '*tatparijñāne cittam evāntarmukhī-bhāvena cetanāpadādhyārohāc citiḥ* — the mind itself, through introversion,
+      becomes Citi. The Pratyabhijñā frames this as ascent; the Māṇḍūkya as recognition of what was always the case.'
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_013
+  - citation: Meister Eckhart, Sermon 52
+    resonance: '"The ground of God and the ground of the soul are one ground." The closest Western parallel to *ayam ātmā
+      brahma* — individual ground and absolute ground as not two.'
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Before any experience arises — before thought, before sensation — there is the simple fact of being aware. This bare

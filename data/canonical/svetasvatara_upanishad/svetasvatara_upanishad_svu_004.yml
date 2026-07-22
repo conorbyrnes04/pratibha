@@ -74,25 +74,7 @@ commentary: 'The claim is uncompromising: liberation is epistemic-realizational 
 
 
   **haṃsa (हंस)** - swan/goose, migratory principle, often symbol of the Self moving yet untouched. In this passage it signifies
-  unitary consciousness in the midst of plurality; not a decorative image but a doctrinal symbol of transcendence-in-immanence.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Muṇḍaka Upaniṣad 2.2.10:** The same "no sun, moon, or fire" luminosity formula appears, establishing the Self as condition
-  of all empirical light. *Divergence:* Muṇḍaka leans renunciatory and sacrificially critical; Śvetāśvatara integrates devotional
-  and theistic emphasis more overtly.
-
-
-  **Pseudo-Dionysius, Mystical Theology 1:** Both move beyond sensory/intellectual lights to a supra-luminous darkness in
-  which true knowing occurs. *Divergence:* Dionysian apophasis remains explicitly Trinitarian and ecclesial; Śvetāśvatara
-  frames the same movement through ātman-īśvara identity language.
-
-
-  **Gospel of John 1:4-9:** Both assert derivative luminosity of the world from a primordial Light. *Divergence:* Johannine
-  theology personalizes this in incarnation-history; Śvetāśvatara interiorizes it as contemplative realization of indwelling
-  divine ground.'
+  unitary consciousness in the midst of plurality; not a decorative image but a doctrinal symbol of transcendence-in-immanence.'
 insight: 'The claim is uncompromising: liberation is epistemic-realizational before it is ritual, social, or conceptual.'
 practice: At the end of the day, sit in a darkened room and notice each source of perceived illumination (screen-glow, memory-image,
   inner speech), then ask what is aware of all these lights without itself becoming an object, and remain there until the
@@ -193,25 +175,27 @@ pratibha_layers:
 
 
     **haṃsa (हंस)** - swan/goose, migratory principle, often symbol of the Self moving yet untouched. In this passage it signifies
-    unitary consciousness in the midst of plurality; not a decorative image but a doctrinal symbol of transcendence-in-immanence.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Muṇḍaka Upaniṣad 2.2.10:** The same "no sun, moon, or fire" luminosity formula appears, establishing the Self as condition
-    of all empirical light. *Divergence:* Muṇḍaka leans renunciatory and sacrificially critical; Śvetāśvatara integrates devotional
-    and theistic emphasis more overtly.
-
-
-    **Pseudo-Dionysius, Mystical Theology 1:** Both move beyond sensory/intellectual lights to a supra-luminous darkness in
-    which true knowing occurs. *Divergence:* Dionysian apophasis remains explicitly Trinitarian and ecclesial; Śvetāśvatara
-    frames the same movement through ātman-īśvara identity language.
-
-
-    **Gospel of John 1:4-9:** Both assert derivative luminosity of the world from a primordial Light. *Divergence:* Johannine
-    theology personalizes this in incarnation-history; Śvetāśvatara interiorizes it as contemplative realization of indwelling
-    divine ground.'
+    unitary consciousness in the midst of plurality; not a decorative image but a doctrinal symbol of transcendence-in-immanence.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Muṇḍaka Upaniṣad 2.2.10
+    resonance: The same "no sun, moon, or fire" luminosity formula appears, establishing the Self as condition of all empirical
+      light.
+    divergence: Muṇḍaka leans renunciatory and sacrificially critical; Śvetāśvatara integrates devotional and theistic emphasis
+      more overtly.
+    passage_id: ''
+  - citation: Pseudo-Dionysius, Mystical Theology 1
+    resonance: Both move beyond sensory/intellectual lights to a supra-luminous darkness in which true knowing occurs.
+    divergence: Dionysian apophasis remains explicitly Trinitarian and ecclesial; Śvetāśvatara frames the same movement through
+      ātman-īśvara identity language.
+    passage_id: ''
+  - citation: Gospel of John 1:4-9
+    resonance: Both assert derivative luminosity of the world from a primordial Light.
+    divergence: Johannine theology personalizes this in incarnation-history; Śvetāśvatara interiorizes it as contemplative
+      realization of indwelling divine ground.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: At the end of the day, sit in a darkened room and notice each source of perceived illumination (screen-glow, memory-image,

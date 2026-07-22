@@ -39,22 +39,7 @@ commentary: 'The philosophical claim that the soul has a unique capacity to perc
 
   * **Virtue** ([ἀρετή]) — etymology: ἀρετή (virtue) -> tradition-specific meaning: the cultivation of excellence and wisdom
   -> what default translation misses: the idea that virtue is not just a moral or ethical concept, but a spiritual and philosophical
-  one.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.20:** The idea that the soul has a unique capacity to perceive and experience eternal, spiritual
-  realities is echoed in the Katha Upanishad, which describes the self as a "seer" that beholds the eternal, unchanging reality
-  that underlies the fleeting, ephemeral world.
-
-  * **Phaedo, 65-66:** The concept of the [Soul''s sight] is also found in Plato''s Phaedo, which describes the soul as a
-  "spectator" that beholds the eternal, spiritual realities that underlie the physical world.
-
-  * **Pratyabhijnahrdayam, 4:** The idea that beauty is a profound and transformative experience that reveals the deeper,
-  eternal reality of existence is echoed in the Pratyabhijnahrdayam, which describes the experience of beauty as a "taste"
-  of the divine.'
+  one.'
 insight: The philosophical claim that the soul has a unique capacity to perceive and experience beauty beyond the sensory
   realm is a counterintuitive move, as it challenges the conventional understanding of beauty as solely a physical or material
   phenomenon.
@@ -117,22 +102,27 @@ pratibha_layers:
 
     * **Virtue** ([ἀρετή]) — etymology: ἀρετή (virtue) -> tradition-specific meaning: the cultivation of excellence and wisdom
     -> what default translation misses: the idea that virtue is not just a moral or ethical concept, but a spiritual and philosophical
-    one.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.20:** The idea that the soul has a unique capacity to perceive and experience eternal, spiritual
-    realities is echoed in the Katha Upanishad, which describes the self as a "seer" that beholds the eternal, unchanging
-    reality that underlies the fleeting, ephemeral world.
-
-    * **Phaedo, 65-66:** The concept of the [Soul''s sight] is also found in Plato''s Phaedo, which describes the soul as
-    a "spectator" that beholds the eternal, spiritual realities that underlie the physical world.
-
-    * **Pratyabhijnahrdayam, 4:** The idea that beauty is a profound and transformative experience that reveals the deeper,
-    eternal reality of existence is echoed in the Pratyabhijnahrdayam, which describes the experience of beauty as a "taste"
-    of the divine.'
+    one.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.20
+    resonance: The idea that the soul has a unique capacity to perceive and experience eternal, spiritual realities is echoed
+      in the Katha Upanishad, which describes the self as a "seer" that beholds the eternal, unchanging reality that underlies
+      the fleeting, ephemeral world.
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 65-66
+    resonance: The concept of the [Soul's sight] is also found in Plato's Phaedo, which describes the soul as a "spectator"
+      that beholds the eternal, spiritual realities that underlie the physical world.
+    divergence: ''
+    passage_id: ''
+  - citation: Pratyabhijnahrdayam, 4
+    resonance: The idea that beauty is a profound and transformative experience that reveals the deeper, eternal reality of
+      existence is echoed in the Pratyabhijnahrdayam, which describes the experience of beauty as a "taste" of the divine.
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_004
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your daily life, take a moment to pause and reflect on the beauty that surrounds you. Rather than

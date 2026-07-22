@@ -53,20 +53,7 @@ commentary: 'This chapter asserts that the Tao is beyond the reach of ordinary p
   **微 wēi** — tiny, faint -> Daoist sense: the infinitesimal, subtle presence of the Tao -> translation: ''tiny, faint''
 
   **無物 wúwù** — nothing, void -> Daoist sense: the ultimate return to the unconditioned, the source of all forms -> translation:
-  ''nothing''
-
-
-  Cross-Tradition Resonances:
-
-
-  **Heraclitus, Fragments 16 (The river is the same as it is not):** Both emphasize the unity of change and permanence *Divergence:*
-  Heraclitus asserts constant flux; Laozi presents a static, unnamable unity
-
-  **Plato, Phaedo (The Form of the Good):** Both posit an ideal, transcendent reality beyond sensory grasp *Divergence:* Plato’s
-  Form is intelligible; Laozi’s Tao resists all naming
-
-  **Buddha, Dhammapada (The unconditioned is beyond all dualities):** Both speak of a reality beyond dualistic categories
-  *Divergence:* Buddha’s ultimate is the cessation of suffering; Laozi’s is the eternal, unnamable Tao'
+  ''nothing'''
 insight: ''
 practice: Stand barefoot on the earth, close your eyes, and breathe slowly. As you inhale, imagine the Tao as a silent, unseen
   current flowing above you; as you exhale, feel it returning to the void. Repeat for five minutes, allowing the sense of
@@ -162,20 +149,23 @@ pratibha_layers:
     **微 wēi** — tiny, faint -> Daoist sense: the infinitesimal, subtle presence of the Tao -> translation: ''tiny, faint''
 
     **無物 wúwù** — nothing, void -> Daoist sense: the ultimate return to the unconditioned, the source of all forms -> translation:
-    ''nothing''
-
-
-    Cross-Tradition Resonances:
-
-
-    **Heraclitus, Fragments 16 (The river is the same as it is not):** Both emphasize the unity of change and permanence *Divergence:*
-    Heraclitus asserts constant flux; Laozi presents a static, unnamable unity
-
-    **Plato, Phaedo (The Form of the Good):** Both posit an ideal, transcendent reality beyond sensory grasp *Divergence:*
-    Plato’s Form is intelligible; Laozi’s Tao resists all naming
-
-    **Buddha, Dhammapada (The unconditioned is beyond all dualities):** Both speak of a reality beyond dualistic categories
-    *Divergence:* Buddha’s ultimate is the cessation of suffering; Laozi’s is the eternal, unnamable Tao'
+    ''nothing'''
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus, Fragments 16 (The river is the same as it is not)
+    resonance: Both emphasize the unity of change and permanence
+    divergence: Heraclitus asserts constant flux; Laozi presents a static, unnamable unity
+    passage_id: heraclitus_fragments.hfr_p016
+  - citation: Plato, Phaedo (The Form of the Good)
+    resonance: Both posit an ideal, transcendent reality beyond sensory grasp
+    divergence: Plato’s Form is intelligible; Laozi’s Tao resists all naming
+    passage_id: ''
+  - citation: Buddha, Dhammapada (The unconditioned is beyond all dualities)
+    resonance: Both speak of a reality beyond dualistic categories
+    divergence: Buddha’s ultimate is the cessation of suffering; Laozi’s is the eternal, unnamable Tao
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand barefoot on the earth, close your eyes, and breathe slowly. As you inhale, imagine the Tao as a silent, unseen

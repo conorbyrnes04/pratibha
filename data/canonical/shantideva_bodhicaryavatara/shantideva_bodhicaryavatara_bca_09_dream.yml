@@ -43,27 +43,7 @@ commentary: 'Śāntideva now runs the emptiness he has established through the t
   simile for the coreless, essence-less nature of phenomena and the aggregates.
 
   **nairātmya (नैरात्म्य)** — Etymology: *nir-* (without) + *ātman* (self) + *-ya*: "selflessness." The doctrine the passage
-  enacts by asking after subjects it cannot find.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Nāgārjuna, MMK 25.19 (no distinction between saṃsāra and nirvāṇa; and "who attains?"):** the same dissolution of the grasped
-  subject; Śāntideva applies it to the intimate register of birth, death, and kinship.
-
-  *Divergence:* Nāgārjuna argues structurally; Śāntideva works affectively, aiming the insight at grief and attachment.
-
-  **Zhuangzi, the butterfly dream (Book 2):** life''s course as dream, the fixed self-identity between waking and dreaming
-  rendered undecidable.
-
-  *Divergence:* Zhuangzi rests in the playful uncertainty of transformation; Śāntideva presses toward a definite selflessness
-  in service of compassion and release.
-
-  **Heart Sūtra (no birth, no death, no attainment):** the litany of negations dissolving the framework of gain/loss and birth/death.
-
-  *Divergence:* the sūtra chants the negations liturgically; Śāntideva stages them as searching questions that the reader
-  must fail to answer.'
+  enacts by asking after subjects it cannot find.'
 insight: Śāntideva now runs the emptiness he has established through the tender machinery of the self and its relations, and
   the effect is a cascade of dissolving questions.
 practice: 'Bring to mind a strong self-referring story you are carrying—"I lost," "I was slighted," "I will die." Gently pose
@@ -131,28 +111,26 @@ pratibha_layers:
     simile for the coreless, essence-less nature of phenomena and the aggregates.
 
     **nairātmya (नैरात्म्य)** — Etymology: *nir-* (without) + *ātman* (self) + *-ya*: "selflessness." The doctrine the passage
-    enacts by asking after subjects it cannot find.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Nāgārjuna, MMK 25.19 (no distinction between saṃsāra and nirvāṇa; and "who attains?"):** the same dissolution of the
-    grasped subject; Śāntideva applies it to the intimate register of birth, death, and kinship.
-
-    *Divergence:* Nāgārjuna argues structurally; Śāntideva works affectively, aiming the insight at grief and attachment.
-
-    **Zhuangzi, the butterfly dream (Book 2):** life''s course as dream, the fixed self-identity between waking and dreaming
-    rendered undecidable.
-
-    *Divergence:* Zhuangzi rests in the playful uncertainty of transformation; Śāntideva presses toward a definite selflessness
-    in service of compassion and release.
-
-    **Heart Sūtra (no birth, no death, no attainment):** the litany of negations dissolving the framework of gain/loss and
-    birth/death.
-
-    *Divergence:* the sūtra chants the negations liturgically; Śāntideva stages them as searching questions that the reader
-    must fail to answer.'
+    enacts by asking after subjects it cannot find.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nāgārjuna, MMK 25.19 (no distinction between saṃsāra and nirvāṇa; and "who attains?")
+    resonance: the same dissolution of the grasped subject; Śāntideva applies it to the intimate register of birth, death,
+      and kinship.
+    divergence: Nāgārjuna argues structurally; Śāntideva works affectively, aiming the insight at grief and attachment.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_25_19
+  - citation: Zhuangzi, the butterfly dream (Book 2)
+    resonance: life's course as dream, the fixed self-identity between waking and dreaming rendered undecidable.
+    divergence: Zhuangzi rests in the playful uncertainty of transformation; Śāntideva presses toward a definite selflessness
+      in service of compassion and release.
+    passage_id: ''
+  - citation: Heart Sūtra (no birth, no death, no attainment)
+    resonance: the litany of negations dissolving the framework of gain/loss and birth/death.
+    divergence: the sūtra chants the negations liturgically; Śāntideva stages them as searching questions that the reader
+      must fail to answer.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Bring to mind a strong self-referring story you are carrying—"I lost," "I was slighted," "I will die." Gently pose

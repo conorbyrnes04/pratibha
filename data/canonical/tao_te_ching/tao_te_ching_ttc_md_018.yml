@@ -50,20 +50,7 @@ commentary: 'This chapter presents the contested move of equating the impartiali
   harmony -> translation: "without effort"
 
   **zìrán (自然)** — nature or naturalness; the state of being in accord with the Tao -> Taoist sense: spontaneous, unforced
-  existence -> translation: "naturalness"
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 2 (The Tao is like a bellows):** The bellows image of an empty yet powerful space *Divergence:* Chapter
-  5 expands the image to a cosmic scale, applying it to Heaven and the sage
-
-  **Zhuangzi, “The Joy of Fishes”:** The idea that the Tao is indifferent to individual beings *Divergence:* Zhuangzi presents
-  indifference as playful, while Chapter 5 frames it as a moral stance
-
-  **Mencius, “The Great Learning”:** The notion that moral cultivation involves detachment from worldly concerns *Divergence:*
-  Mencius advocates active benevolence, whereas Chapter 5 advocates impartiality'
+  existence -> translation: "naturalness"'
 insight: ''
 practice: Stand in a quiet space, close your eyes, and breathe slowly. As you inhale, imagine the space between Heaven and
   Earth expanding like a bellows; as you exhale, feel the subtle flow of energy moving through you. Repeat until you sense
@@ -137,20 +124,23 @@ pratibha_layers:
     harmony -> translation: "without effort"
 
     **zìrán (自然)** — nature or naturalness; the state of being in accord with the Tao -> Taoist sense: spontaneous, unforced
-    existence -> translation: "naturalness"
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 2 (The Tao is like a bellows):** The bellows image of an empty yet powerful space *Divergence:* Chapter
-    5 expands the image to a cosmic scale, applying it to Heaven and the sage
-
-    **Zhuangzi, “The Joy of Fishes”:** The idea that the Tao is indifferent to individual beings *Divergence:* Zhuangzi presents
-    indifference as playful, while Chapter 5 frames it as a moral stance
-
-    **Mencius, “The Great Learning”:** The notion that moral cultivation involves detachment from worldly concerns *Divergence:*
-    Mencius advocates active benevolence, whereas Chapter 5 advocates impartiality'
+    existence -> translation: "naturalness"'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 2 (The Tao is like a bellows)
+    resonance: The bellows image of an empty yet powerful space
+    divergence: Chapter 5 expands the image to a cosmic scale, applying it to Heaven and the sage
+    passage_id: ''
+  - citation: Zhuangzi, “The Joy of Fishes”
+    resonance: The idea that the Tao is indifferent to individual beings
+    divergence: Zhuangzi presents indifference as playful, while Chapter 5 frames it as a moral stance
+    passage_id: ''
+  - citation: Mencius, “The Great Learning”
+    resonance: The notion that moral cultivation involves detachment from worldly concerns
+    divergence: Mencius advocates active benevolence, whereas Chapter 5 advocates impartiality
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand in a quiet space, close your eyes, and breathe slowly. As you inhale, imagine the space between Heaven and Earth

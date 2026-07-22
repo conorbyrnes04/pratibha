@@ -33,23 +33,7 @@ commentary: 'The philosophical claim that the world''s harmony arises from oppos
   -> default translation may not convey the full richness of the concept.
 
   * **Logos (Λόγος)** — etymology: word, reason, principle -> Heraclitean meaning: the governing principle of the universe
-  -> default translation often reduces Logos to a solely rational or intellectual concept.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 42:** structural homology in the idea that opposites are interconnected and interdependent, as
-  expressed in the phrase "The world is a sacred vessel, and it cannot be improved."
-
-  *Divergence:* While Heraclitus emphasizes the harmony that arises from oppositions, the Tao Te Ching tends to focus on the
-  cyclical, dynamic nature of reality, where opposites are seen as phases in a larger process.
-
-  * **Plotinus, Enneads, I.6.7:** structural homology in the concept of the unity of opposites, as Plotinus writes, "The One
-  is all things, and no one of them."
-
-  *Divergence:* Plotinus'' philosophy tends to emphasize the transcendent, unified nature of reality, whereas Heraclitus''
-  fragment highlights the dynamic, relational aspect of harmony in the world.'
+  -> default translation often reduces Logos to a solely rational or intellectual concept.'
 insight: The philosophical claim that the world's harmony arises from oppositions is a counterintuitive move, as one might
   expect harmony to result from the absence of conflict or tension.
 practice: 'As you navigate the complexities of your own life, take a moment to reflect on the opposing forces at play, and
@@ -102,23 +86,23 @@ pratibha_layers:
     -> default translation may not convey the full richness of the concept.
 
     * **Logos (Λόγος)** — etymology: word, reason, principle -> Heraclitean meaning: the governing principle of the universe
-    -> default translation often reduces Logos to a solely rational or intellectual concept.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 42:** structural homology in the idea that opposites are interconnected and interdependent,
-    as expressed in the phrase "The world is a sacred vessel, and it cannot be improved."
-
-    *Divergence:* While Heraclitus emphasizes the harmony that arises from oppositions, the Tao Te Ching tends to focus on
-    the cyclical, dynamic nature of reality, where opposites are seen as phases in a larger process.
-
-    * **Plotinus, Enneads, I.6.7:** structural homology in the concept of the unity of opposites, as Plotinus writes, "The
-    One is all things, and no one of them."
-
-    *Divergence:* Plotinus'' philosophy tends to emphasize the transcendent, unified nature of reality, whereas Heraclitus''
-    fragment highlights the dynamic, relational aspect of harmony in the world.'
+    -> default translation often reduces Logos to a solely rational or intellectual concept.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 42
+    resonance: structural homology in the idea that opposites are interconnected and interdependent, as expressed in the phrase
+      "The world is a sacred vessel, and it cannot be improved."
+    divergence: While Heraclitus emphasizes the harmony that arises from oppositions, the Tao Te Ching tends to focus on the
+      cyclical, dynamic nature of reality, where opposites are seen as phases in a larger process.
+    passage_id: tao_te_ching.ttc_md_042
+  - citation: Plotinus, Enneads, I.6.7
+    resonance: structural homology in the concept of the unity of opposites, as Plotinus writes, "The One is all things, and
+      no one of them."
+    divergence: Plotinus' philosophy tends to emphasize the transcendent, unified nature of reality, whereas Heraclitus' fragment
+      highlights the dynamic, relational aspect of harmony in the world.
+    passage_id: plotinus_enneads.enn_i_6_07
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you navigate the complexities of your own life, take a moment to reflect on the opposing forces at play, and consider

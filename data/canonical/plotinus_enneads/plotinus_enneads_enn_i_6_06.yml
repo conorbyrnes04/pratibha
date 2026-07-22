@@ -34,20 +34,7 @@ commentary: 'The philosophical claim that the soul''s ascent to beauty is rooted
   intellection and wisdom -> MacKenna''s translation as "Intellectual-Principle" captures the essence of this concept.
 
   * **Authentic-Existents** — from ὄν (being) and ἀλήθεια (truth) -> true being, reality -> MacKenna''s translation as "Authentic-Existents"
-  conveys the idea of true existence.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.24:** The idea of the soul''s ascent to a higher state of being through purification is echoed in
-  the Katha Upanishad, which describes the soul''s journey towards liberation as a process of purification and self-realization.
-
-  * **Phaedo, 69c-70a:** Plato''s concept of the soul''s immortality and its ascent to the realm of forms is similar to Plotinus''
-  idea of the soul''s ascent to the level of the Intellectual-Principle.
-
-  * **Pratyabhijnahrdayam, verse 3:** The idea of the soul''s inherent beauty and goodness is echoed in the Pratyabhijnahrdayam,
-  which describes the ultimate reality as a state of pure consciousness and bliss.'
+  conveys the idea of true existence.'
 insight: The philosophical claim that the soul's ascent to beauty is rooted in purification is a counterintuitive move, as
   it suggests that the pursuit of beauty and goodness requires a rejection of worldly desires and pleasures.
 practice: 'As you go about your daily activities, take a moment to reflect on the sources of pleasure and desire that drive
@@ -115,20 +102,26 @@ pratibha_layers:
     intellection and wisdom -> MacKenna''s translation as "Intellectual-Principle" captures the essence of this concept.
 
     * **Authentic-Existents** — from ὄν (being) and ἀλήθεια (truth) -> true being, reality -> MacKenna''s translation as "Authentic-Existents"
-    conveys the idea of true existence.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.24:** The idea of the soul''s ascent to a higher state of being through purification is echoed
-    in the Katha Upanishad, which describes the soul''s journey towards liberation as a process of purification and self-realization.
-
-    * **Phaedo, 69c-70a:** Plato''s concept of the soul''s immortality and its ascent to the realm of forms is similar to
-    Plotinus'' idea of the soul''s ascent to the level of the Intellectual-Principle.
-
-    * **Pratyabhijnahrdayam, verse 3:** The idea of the soul''s inherent beauty and goodness is echoed in the Pratyabhijnahrdayam,
-    which describes the ultimate reality as a state of pure consciousness and bliss.'
+    conveys the idea of true existence.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.24
+    resonance: The idea of the soul's ascent to a higher state of being through purification is echoed in the Katha Upanishad,
+      which describes the soul's journey towards liberation as a process of purification and self-realization.
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 69c-70a
+    resonance: Plato's concept of the soul's immortality and its ascent to the realm of forms is similar to Plotinus' idea
+      of the soul's ascent to the level of the Intellectual-Principle.
+    divergence: ''
+    passage_id: ''
+  - citation: Pratyabhijnahrdayam, verse 3
+    resonance: The idea of the soul's inherent beauty and goodness is echoed in the Pratyabhijnahrdayam, which describes the
+      ultimate reality as a state of pure consciousness and bliss.
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_003
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your daily activities, take a moment to reflect on the sources of pleasure and desire that drive

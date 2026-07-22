@@ -66,31 +66,7 @@ commentary: 'The philosophical claim is that highest craft is a relation, not an
 
 
   **yǐ tiān hé tiān (以天合天)** - "use the natural to join the natural" -> the core craft formula: de-distorted human capacity
-  aligns with material nature -> translation as "supernatural" misses that the point is radical naturalness, not occult intervention.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Dogen, *Tenzo Kyokun* (Instructions for the Cook):** both texts insist that quality of mind and quality of action are
-  inseparable in ordinary work, and that precision emerges from wholehearted, undistracted presence.
-
-  *Divergence:* Dogen frames this in explicit Zen monastic vows and Buddha-way realization, while Zhuangzi frames it in Daoist
-  spontaneity and non-coercive fit with material pattern.
-
-
-  **Bhagavad Gita 2.48-50:** action is performed with inward evenness and without clinging to result; excellence appears as
-  "skill in action."
-
-  *Divergence:* The Gita roots this in disciplined duty and offering to the divine, whereas Qing roots it in de-socialized
-  attentional clarity and direct responsiveness to the thing itself.
-
-
-  **Richard Sennett, *The Craftsman* (modern craft ethics):** both articulate that deep skill involves dialogue with materials
-  rather than domination by abstract plan.
-
-  *Divergence:* Sennett remains in sociological and practical terms; Zhuangzi radicalizes the account into a spiritual anthropology
-  of de-centered agency.'
+  aligns with material nature -> translation as "supernatural" misses that the point is radical naturalness, not occult intervention.'
 insight: 'The philosophical claim is that highest craft is a relation, not an imposition: form emerges when human attention
   and material pattern converge.'
 practice: Before your next focused work block, spend seven minutes in silence and deliberately set aside three motives in
@@ -185,31 +161,27 @@ pratibha_layers:
 
     **yǐ tiān hé tiān (以天合天)** - "use the natural to join the natural" -> the core craft formula: de-distorted human capacity
     aligns with material nature -> translation as "supernatural" misses that the point is radical naturalness, not occult
-    intervention.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Dogen, *Tenzo Kyokun* (Instructions for the Cook):** both texts insist that quality of mind and quality of action are
-    inseparable in ordinary work, and that precision emerges from wholehearted, undistracted presence.
-
-    *Divergence:* Dogen frames this in explicit Zen monastic vows and Buddha-way realization, while Zhuangzi frames it in
-    Daoist spontaneity and non-coercive fit with material pattern.
-
-
-    **Bhagavad Gita 2.48-50:** action is performed with inward evenness and without clinging to result; excellence appears
-    as "skill in action."
-
-    *Divergence:* The Gita roots this in disciplined duty and offering to the divine, whereas Qing roots it in de-socialized
-    attentional clarity and direct responsiveness to the thing itself.
-
-
-    **Richard Sennett, *The Craftsman* (modern craft ethics):** both articulate that deep skill involves dialogue with materials
-    rather than domination by abstract plan.
-
-    *Divergence:* Sennett remains in sociological and practical terms; Zhuangzi radicalizes the account into a spiritual anthropology
-    of de-centered agency.'
+    intervention.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Dogen, *Tenzo Kyokun* (Instructions for the Cook)
+    resonance: both texts insist that quality of mind and quality of action are inseparable in ordinary work, and that precision
+      emerges from wholehearted, undistracted presence.
+    divergence: Dogen frames this in explicit Zen monastic vows and Buddha-way realization, while Zhuangzi frames it in Daoist
+      spontaneity and non-coercive fit with material pattern.
+    passage_id: ''
+  - citation: Bhagavad Gita 2.48-50
+    resonance: action is performed with inward evenness and without clinging to result; excellence appears as "skill in action."
+    divergence: The Gita roots this in disciplined duty and offering to the divine, whereas Qing roots it in de-socialized
+      attentional clarity and direct responsiveness to the thing itself.
+    passage_id: ''
+  - citation: Richard Sennett, *The Craftsman* (modern craft ethics)
+    resonance: both articulate that deep skill involves dialogue with materials rather than domination by abstract plan.
+    divergence: Sennett remains in sociological and practical terms; Zhuangzi radicalizes the account into a spiritual anthropology
+      of de-centered agency.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Before your next focused work block, spend seven minutes in silence and deliberately set aside three motives in sequence

@@ -36,20 +36,7 @@ commentary: 'The philosophical claim here is that true knowledge of the Self lea
   misses: its ultimate identity with the universal Self.
 
   * **Mokṣa (मोक्ष)** — etymology: release -> tradition-specific meaning: liberation from the cycle of births and deaths ->
-  what default translation misses: the state of being free from the constraints of the material world.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 27:** The theme of truth and its liberating power resonates with the Taoist concept of embracing
-  the true nature of reality, where living in accordance with the Tao (the Way) leads to a form of liberation.
-
-  * **Plotinus, Enneads VI.9:** The idea of the soul''s journey towards the ultimate reality, and the concept of knowledge
-  as a means to achieve unity with this reality, parallels the Neoplatonic notion of the ascent of the soul towards the One.
-
-  * **Bhagavad Gita, Chapter 4:** The discussion on the importance of knowledge and the performance of actions without attachment
-  as a path to liberation echoes the Upaniṣadic theme of knowledge leading to freedom from cyclic existence.'
+  what default translation misses: the state of being free from the constraints of the material world.'
 insight: The philosophical claim here is that true knowledge of the Self leads to liberation from cyclic existence.
 practice: Reflect on your beliefs and perceptions about yourself and the world, recognizing that these conceptions can either
   bind you to a cycle of suffering or liberate you. Engage in self-inquiry, asking yourself, "What is my true nature?" and
@@ -115,21 +102,26 @@ pratibha_layers:
     misses: its ultimate identity with the universal Self.
 
     * **Mokṣa (मोक्ष)** — etymology: release -> tradition-specific meaning: liberation from the cycle of births and deaths
-    -> what default translation misses: the state of being free from the constraints of the material world.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 27:** The theme of truth and its liberating power resonates with the Taoist concept of embracing
-    the true nature of reality, where living in accordance with the Tao (the Way) leads to a form of liberation.
-
-    * **Plotinus, Enneads VI.9:** The idea of the soul''s journey towards the ultimate reality, and the concept of knowledge
-    as a means to achieve unity with this reality, parallels the Neoplatonic notion of the ascent of the soul towards the
-    One.
-
-    * **Bhagavad Gita, Chapter 4:** The discussion on the importance of knowledge and the performance of actions without attachment
-    as a path to liberation echoes the Upaniṣadic theme of knowledge leading to freedom from cyclic existence.'
+    -> what default translation misses: the state of being free from the constraints of the material world.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 27
+    resonance: The theme of truth and its liberating power resonates with the Taoist concept of embracing the true nature
+      of reality, where living in accordance with the Tao (the Way) leads to a form of liberation.
+    divergence: ''
+    passage_id: tao_te_ching.ttc_md_027
+  - citation: Plotinus, Enneads VI.9
+    resonance: The idea of the soul's journey towards the ultimate reality, and the concept of knowledge as a means to achieve
+      unity with this reality, parallels the Neoplatonic notion of the ascent of the soul towards the One.
+    divergence: ''
+    passage_id: ''
+  - citation: Bhagavad Gita, Chapter 4
+    resonance: The discussion on the importance of knowledge and the performance of actions without attachment as a path to
+      liberation echoes the Upaniṣadic theme of knowledge leading to freedom from cyclic existence.
+    divergence: ''
+    passage_id: bhagavad_gita.bg_md_004
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Reflect on your beliefs and perceptions about yourself and the world, recognizing that these conceptions can either

@@ -41,19 +41,7 @@ commentary: 'The fundamental claim here is that the true Self is beyond human li
   deity responsible for the creation of the universe and the progenitor of all living beings.
 
   * **Virocana (विरोचन)** — from *vi-*, apart, and *rocana-*, shining -> a demon or Asura, often depicted as a symbol of ignorance
-  or the unenlightened state.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Tao Te Ching, Chapter 27:** The Taoist concept of the unnamable, eternal Tao resonates with the Upaniṣadic notion of
-  the Self as beyond human limitations. *Divergence:* While the Tao Te Ching emphasizes the Tao as the source of all things,
-  the Chāndogya Upaniṣad focuses on the Self as the essence of the individual.
-
-  * **Plotinus, Enneads VI.9:** The Neoplatonic idea of the One as the ultimate, unchanging reality parallels the Upaniṣadic
-  concept of Brahman. *Divergence:* Plotinus''s emphasis on the One as the source of all being differs from the Chāndogya
-  Upaniṣad''s focus on the Self as the essence of the individual.'
+  or the unenlightened state.'
 insight: The fundamental claim here is that the true Self is beyond human limitations, untouched by sin, age, death, and suffering.
 practice: As you gaze into a mirror or a body of water, contemplate the reflection as a symbol of the Self, unbound by the
   limitations of the physical world. Recognize that the essence of your being is not confined to the reflected image, but
@@ -125,19 +113,22 @@ pratibha_layers:
     deity responsible for the creation of the universe and the progenitor of all living beings.
 
     * **Virocana (विरोचन)** — from *vi-*, apart, and *rocana-*, shining -> a demon or Asura, often depicted as a symbol of
-    ignorance or the unenlightened state.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Tao Te Ching, Chapter 27:** The Taoist concept of the unnamable, eternal Tao resonates with the Upaniṣadic notion
-    of the Self as beyond human limitations. *Divergence:* While the Tao Te Ching emphasizes the Tao as the source of all
-    things, the Chāndogya Upaniṣad focuses on the Self as the essence of the individual.
-
-    * **Plotinus, Enneads VI.9:** The Neoplatonic idea of the One as the ultimate, unchanging reality parallels the Upaniṣadic
-    concept of Brahman. *Divergence:* Plotinus''s emphasis on the One as the source of all being differs from the Chāndogya
-    Upaniṣad''s focus on the Self as the essence of the individual.'
+    ignorance or the unenlightened state.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching, Chapter 27
+    resonance: The Taoist concept of the unnamable, eternal Tao resonates with the Upaniṣadic notion of the Self as beyond
+      human limitations.
+    divergence: While the Tao Te Ching emphasizes the Tao as the source of all things, the Chāndogya Upaniṣad focuses on the
+      Self as the essence of the individual.
+    passage_id: tao_te_ching.ttc_md_027
+  - citation: Plotinus, Enneads VI.9
+    resonance: The Neoplatonic idea of the One as the ultimate, unchanging reality parallels the Upaniṣadic concept of Brahman.
+    divergence: Plotinus's emphasis on the One as the source of all being differs from the Chāndogya Upaniṣad's focus on the
+      Self as the essence of the individual.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: As you gaze into a mirror or a body of water, contemplate the reflection as a symbol of the Self, unbound by the limitations

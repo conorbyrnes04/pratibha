@@ -39,21 +39,7 @@ commentary: 'The philosophical claim that underlies this passage is that the uni
   the connotation of secondary derivation from unity.
 
   * **Intellectual-Principle (νοητὸς λόγος)** — from Greek νοητὸς λόγος, "intellect" -> refers to the divine, intelligible
-  principle that underlies all reality -> default translation misses the connotation of divine, intelligible reality.
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.1.11:** The idea that the ultimate reality is a unified, simple principle that gives rise to all
-  multiplicity is echoed in the Katha Upanishad, which states that the ultimate reality is "unborn, unchanging, and undying."
-
-  * **Phaedo, 78b-80b:** The idea that the soul is an active participant in the process of determination is echoed in Plato''s
-  Phaedo, which suggests that the soul is immortal and exists before birth, and that it is the source of all knowledge and
-  understanding.
-
-  * **Zhuangzi, Chapter 2:** The idea that the ultimate reality is a unified, simple principle that gives rise to all multiplicity
-  is echoed in the Zhuangzi, which states that "the Tao does nothing, and yet nothing is left undone."'
+  principle that underlies all reality -> default translation misses the connotation of divine, intelligible reality.'
 insight: The philosophical claim that underlies this passage is that the unity of the One is the source of all multiplicity
   and determination.
 practice: 'Contemplate the unity that underlies all multiplicity, and seek to understand how this unity gives rise to the
@@ -112,21 +98,26 @@ pratibha_layers:
     misses the connotation of secondary derivation from unity.
 
     * **Intellectual-Principle (νοητὸς λόγος)** — from Greek νοητὸς λόγος, "intellect" -> refers to the divine, intelligible
-    principle that underlies all reality -> default translation misses the connotation of divine, intelligible reality.
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.1.11:** The idea that the ultimate reality is a unified, simple principle that gives rise to all
-    multiplicity is echoed in the Katha Upanishad, which states that the ultimate reality is "unborn, unchanging, and undying."
-
-    * **Phaedo, 78b-80b:** The idea that the soul is an active participant in the process of determination is echoed in Plato''s
-    Phaedo, which suggests that the soul is immortal and exists before birth, and that it is the source of all knowledge and
-    understanding.
-
-    * **Zhuangzi, Chapter 2:** The idea that the ultimate reality is a unified, simple principle that gives rise to all multiplicity
-    is echoed in the Zhuangzi, which states that "the Tao does nothing, and yet nothing is left undone."'
+    principle that underlies all reality -> default translation misses the connotation of divine, intelligible reality.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.1.11
+    resonance: The idea that the ultimate reality is a unified, simple principle that gives rise to all multiplicity is echoed
+      in the Katha Upanishad, which states that the ultimate reality is "unborn, unchanging, and undying."
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 78b-80b
+    resonance: The idea that the soul is an active participant in the process of determination is echoed in Plato's Phaedo,
+      which suggests that the soul is immortal and exists before birth, and that it is the source of all knowledge and understanding.
+    divergence: ''
+    passage_id: ''
+  - citation: Zhuangzi, Chapter 2
+    resonance: The idea that the ultimate reality is a unified, simple principle that gives rise to all multiplicity is echoed
+      in the Zhuangzi, which states that "the Tao does nothing, and yet nothing is left undone."
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Contemplate the unity that underlies all multiplicity, and seek to understand how this unity gives rise to the diversity

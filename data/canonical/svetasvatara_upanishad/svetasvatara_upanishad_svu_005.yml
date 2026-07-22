@@ -56,22 +56,7 @@ commentary: 'These verses refuse simplistic cosmology. Instead of giving a linea
   as hydrodynamic movement, not static possession.
 
 
-  **moha (मोह)** - delusion, bewilderment, affective-cognitive mis-seeing. Here it is systemic, not merely intellectual error.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Bhagavad Gita 3.27 and 14.5:** Both describe action as guṇa-driven process in which ego misattributes authorship. *Divergence:*
-  Gita foregrounds karma-yoga ethics; Śvetāśvatara foregrounds symbolic metaphysics.
-
-
-  **Buddhist dependent origination (especially affect-cognition loops):** Both treat suffering as patterned and conditioned.
-  *Divergence:* Early Buddhism avoids an īśvara ground claim; Śvetāśvatara integrates one.
-
-
-  **Stoic psychology (impression-assent-habit):** Both map repeated suffering as structured process rather than bad luck.
-  *Divergence:* Stoicism keeps a rational-ethical frame; Upaniṣadic text pushes to ontological source.'
+  **moha (मोह)** - delusion, bewilderment, affective-cognitive mis-seeing. Here it is systemic, not merely intellectual error.'
 insight: These verses refuse simplistic cosmology.
 practice: 'When distress repeats, map it as a wheel: trigger, interpretation, body contraction, impulse, action, aftermath.
   Then map it as a river: where the current speeds up, where it eddies, where it can be redirected. Repeat for one week until
@@ -155,22 +140,23 @@ pratibha_layers:
 
 
     **moha (मोह)** - delusion, bewilderment, affective-cognitive mis-seeing. Here it is systemic, not merely intellectual
-    error.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Bhagavad Gita 3.27 and 14.5:** Both describe action as guṇa-driven process in which ego misattributes authorship. *Divergence:*
-    Gita foregrounds karma-yoga ethics; Śvetāśvatara foregrounds symbolic metaphysics.
-
-
-    **Buddhist dependent origination (especially affect-cognition loops):** Both treat suffering as patterned and conditioned.
-    *Divergence:* Early Buddhism avoids an īśvara ground claim; Śvetāśvatara integrates one.
-
-
-    **Stoic psychology (impression-assent-habit):** Both map repeated suffering as structured process rather than bad luck.
-    *Divergence:* Stoicism keeps a rational-ethical frame; Upaniṣadic text pushes to ontological source.'
+    error.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita 3.27 and 14.5
+    resonance: Both describe action as guṇa-driven process in which ego misattributes authorship.
+    divergence: Gita foregrounds karma-yoga ethics; Śvetāśvatara foregrounds symbolic metaphysics.
+    passage_id: ''
+  - citation: Buddhist dependent origination (especially affect-cognition loops)
+    resonance: Both treat suffering as patterned and conditioned.
+    divergence: Early Buddhism avoids an īśvara ground claim; Śvetāśvatara integrates one.
+    passage_id: ''
+  - citation: Stoic psychology (impression-assent-habit)
+    resonance: Both map repeated suffering as structured process rather than bad luck.
+    divergence: Stoicism keeps a rational-ethical frame; Upaniṣadic text pushes to ontological source.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When distress repeats, map it as a wheel: trigger, interpretation, body contraction, impulse, action, aftermath.

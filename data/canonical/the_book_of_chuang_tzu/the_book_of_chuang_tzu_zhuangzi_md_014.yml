@@ -45,27 +45,7 @@ commentary: 'The claim is that resilient skill emerges from attunement, not domi
 
 
   **yīn shùn (因順)** - "following along with" (conceptual gloss) -> contextual meaning: entering existent momentum without
-  surrendering responsiveness -> distinct from passivity.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Tao Te Ching 8 and 78 (water imagery):** highest efficacy resembles water, which overcomes through yielding.
-
-  *Divergence:* Laozi states principle aphoristically; Zhuangzi dramatizes it through embodied event and dialogue.
-
-
-  **Miyamoto Musashi, *Book of Five Rings* (timing and flow):** both stress timing with circumstance over rigid technique.
-
-  *Divergence:* Musashi retains strategic combat intentionality; Zhuangzi de-centers conquest and privileges non-oppositional
-  adaptation.
-
-
-  **Acceptance and Commitment Therapy (psychological flexibility):** both reduce suffering by ending futile control-struggle
-  and increasing values-aligned adaptive response.
-
-  *Divergence:* ACT is clinical and evidence-based in modern psychology; Zhuangzi is cosmological-poetic and non-clinical.'
+  surrendering responsiveness -> distinct from passivity.'
 insight: The claim is that resilient skill emerges from attunement, not domination.
 practice: In the next moment of resistance today, ask "What in this situation is already moving?" then make one move that
   cooperates with that movement instead of opposing it.
@@ -135,27 +115,24 @@ pratibha_layers:
 
 
     **yīn shùn (因順)** - "following along with" (conceptual gloss) -> contextual meaning: entering existent momentum without
-    surrendering responsiveness -> distinct from passivity.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Tao Te Ching 8 and 78 (water imagery):** highest efficacy resembles water, which overcomes through yielding.
-
-    *Divergence:* Laozi states principle aphoristically; Zhuangzi dramatizes it through embodied event and dialogue.
-
-
-    **Miyamoto Musashi, *Book of Five Rings* (timing and flow):** both stress timing with circumstance over rigid technique.
-
-    *Divergence:* Musashi retains strategic combat intentionality; Zhuangzi de-centers conquest and privileges non-oppositional
-    adaptation.
-
-
-    **Acceptance and Commitment Therapy (psychological flexibility):** both reduce suffering by ending futile control-struggle
-    and increasing values-aligned adaptive response.
-
-    *Divergence:* ACT is clinical and evidence-based in modern psychology; Zhuangzi is cosmological-poetic and non-clinical.'
+    surrendering responsiveness -> distinct from passivity.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching 8 and 78 (water imagery)
+    resonance: highest efficacy resembles water, which overcomes through yielding.
+    divergence: Laozi states principle aphoristically; Zhuangzi dramatizes it through embodied event and dialogue.
+    passage_id: ''
+  - citation: Miyamoto Musashi, *Book of Five Rings* (timing and flow)
+    resonance: both stress timing with circumstance over rigid technique.
+    divergence: Musashi retains strategic combat intentionality; Zhuangzi de-centers conquest and privileges non-oppositional
+      adaptation.
+    passage_id: ''
+  - citation: Acceptance and Commitment Therapy (psychological flexibility)
+    resonance: both reduce suffering by ending futile control-struggle and increasing values-aligned adaptive response.
+    divergence: ACT is clinical and evidence-based in modern psychology; Zhuangzi is cosmological-poetic and non-clinical.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: In the next moment of resistance today, ask "What in this situation is already moving?" then make one move that cooperates

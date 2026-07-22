@@ -56,23 +56,7 @@ commentary: 'This chapter asserts that the Tao is the sole source of virtue, yet
   its subtle essence
 
   **wúwéi 無為** — non‑action or effortless action -> the Tao’s way of being without contrivance -> translation underscores
-  its elusive nature
-
-
-  Cross-Tradition Resonances:
-
-
-  **Laozi, chapter 2 (the Tao is the source of all things, yet it is nameless):** both chapters emphasize the Tao as the origin
-  of all existence *Divergence:* chapter 21 introduces the idea of the Tao as a ''thing'' that is both vague and elusive,
-  whereas chapter 2 presents it as nameless and beyond description
-
-  **Zhuangzi, chapter 25 (the subtle essence of the Tao is beyond words):** both texts use nested metaphors to describe the
-  Tao’s hidden nature *Divergence:* chapter 21 explicitly lists a chain of images (image, thing, essence, truth, faith) that
-  Zhuangzi does not enumerate
-
-  **Confucius, Analects 2.1 (the sage’s virtue is rooted in the Tao):** both traditions link sage virtue to the Tao *Divergence:*
-  chapter 21 insists the Tao itself is a ''thing'' and paradoxically elusive, while Confucian thought treats the Tao as a
-  guiding principle rather than a tangible entity'
+  its elusive nature'
 insight: ''
 practice: Stand in a quiet place, close your eyes, and breathe slowly. With each inhale, imagine a subtle, luminous essence
   filling your body; with each exhale, feel that essence expand outward, touching the world. Repeat until you sense the Tao’s
@@ -167,23 +151,26 @@ pratibha_layers:
     highlights its subtle essence
 
     **wúwéi 無為** — non‑action or effortless action -> the Tao’s way of being without contrivance -> translation underscores
-    its elusive nature
-
-
-    Cross-Tradition Resonances:
-
-
-    **Laozi, chapter 2 (the Tao is the source of all things, yet it is nameless):** both chapters emphasize the Tao as the
-    origin of all existence *Divergence:* chapter 21 introduces the idea of the Tao as a ''thing'' that is both vague and
-    elusive, whereas chapter 2 presents it as nameless and beyond description
-
-    **Zhuangzi, chapter 25 (the subtle essence of the Tao is beyond words):** both texts use nested metaphors to describe
-    the Tao’s hidden nature *Divergence:* chapter 21 explicitly lists a chain of images (image, thing, essence, truth, faith)
-    that Zhuangzi does not enumerate
-
-    **Confucius, Analects 2.1 (the sage’s virtue is rooted in the Tao):** both traditions link sage virtue to the Tao *Divergence:*
-    chapter 21 insists the Tao itself is a ''thing'' and paradoxically elusive, while Confucian thought treats the Tao as
-    a guiding principle rather than a tangible entity'
+    its elusive nature'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 2 (the Tao is the source of all things, yet it is nameless)
+    resonance: both chapters emphasize the Tao as the origin of all existence
+    divergence: chapter 21 introduces the idea of the Tao as a 'thing' that is both vague and elusive, whereas chapter 2 presents
+      it as nameless and beyond description
+    passage_id: ''
+  - citation: Zhuangzi, chapter 25 (the subtle essence of the Tao is beyond words)
+    resonance: both texts use nested metaphors to describe the Tao’s hidden nature
+    divergence: chapter 21 explicitly lists a chain of images (image, thing, essence, truth, faith) that Zhuangzi does not
+      enumerate
+    passage_id: ''
+  - citation: Confucius, Analects 2.1 (the sage’s virtue is rooted in the Tao)
+    resonance: both traditions link sage virtue to the Tao
+    divergence: chapter 21 insists the Tao itself is a 'thing' and paradoxically elusive, while Confucian thought treats the
+      Tao as a guiding principle rather than a tangible entity
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: Stand in a quiet place, close your eyes, and breathe slowly. With each inhale, imagine a subtle, luminous essence

@@ -7,12 +7,11 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_24_14
 unit_label: For Whom Emptiness Works, Everything Works
 title: For Whom Emptiness Works, Everything Works
 unit_type: sutra
-sanskrit_devanagari: 'sarvaṃ ca yujyate tasya śūnyatā yasya yujyate / sarvaṃ na yujyate tasya śūnyaṃ yasya na yujyate //
+sanskrit_devanagari: ''
+sanskrit_iast: 'sarvaṃ ca yujyate tasya śūnyatā yasya yujyate / sarvaṃ na yujyate tasya śūnyaṃ yasya na yujyate //
 
 
   *(Sanskrit, IAST, source-verified from GRETIL MMK 24.14.)*'
-sanskrit_iast: sarvaṃ ca yujyate (everything is coherent/works) tasya (for whom) śūnyatā yasya yujyate (emptiness works);
-  sarvaṃ na yujyate (nothing works) tasya (for whom) śūnyaṃ yasya na yujyate (the empty does not work).
 translation_literal: For the one for whom emptiness [śūnyatā] holds good, everything holds good; for the one for whom emptiness
   does not hold good, nothing holds good.
 commentary: 'This verse turns the tables on Nāgārjuna''s opponent with a single elegant inversion. The realist had objected
@@ -38,28 +37,7 @@ commentary: 'This verse turns the tables on Nāgārjuna''s opponent with a singl
   change, causation, and efficacy—not a lack but a license.
 
   **svabhāva (स्वभाव, implied opposite)** — Etymology: *sva* (own) + *bhāva* (being): "own-being, intrinsic essence." The
-  thing Nāgārjuna denies; the verse''s force is that positing *svabhāva*, not denying it, is what makes reality incoherent.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Heraclitus, DK B12 / flux doctrine:** reality "works" precisely because nothing is statically self-identical; process,
-  not fixed substance, makes the world livable.
-
-  *Divergence:* Heraclitus grounds flux in an ordering Logos and fire; Nāgārjuna grounds functionality in the very absence
-  of any such grounding essence.
-
-  **Tao Te Ching 11 (usefulness of the empty hub, vessel, room):** it is the empty part that makes the wheel, pot, and room
-  function—emptiness as enabling condition.
-
-  *Divergence:* Laozi''s emptiness is a spatial/functional void within things; Nāgārjuna''s is the ontological absence of
-  essence in all things.
-
-  **Whitehead / process philosophy (actuality as becoming, not enduring substance):** what is real is what can become; substance-thinking
-  cannot account for change.
-
-  *Divergence:* process metaphysics still affirms real events with their own reality; Madhyamaka empties even events of own-being.'
+  thing Nāgārjuna denies; the verse''s force is that positing *svabhāva*, not denying it, is what makes reality incoherent.'
 insight: This verse turns the tables on Nāgārjuna's opponent with a single elegant inversion.
 practice: 'Bring to mind one thing about yourself you believe is fixed ("I am anxious," "I always fail at this"). Say: "if
   this were essential, it could never change; because it is empty, it can." Sit for a few breaths sensing the openness that
@@ -81,14 +59,13 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
+  body: ''
+- kind: iast
+  label: IAST
   body: 'sarvaṃ ca yujyate tasya śūnyatā yasya yujyate / sarvaṃ na yujyate tasya śūnyaṃ yasya na yujyate //
 
 
     *(Sanskrit, IAST, source-verified from GRETIL MMK 24.14.)*'
-- kind: iast
-  label: IAST
-  body: sarvaṃ ca yujyate (everything is coherent/works) tasya (for whom) śūnyatā yasya yujyate (emptiness works); sarvaṃ
-    na yujyate (nothing works) tasya (for whom) śūnyaṃ yasya na yujyate (the empty does not work).
 - kind: translation
   label: Pratibha Translation
   body: For the one for whom emptiness [śūnyatā] holds good, everything holds good; for the one for whom emptiness does not
@@ -118,29 +95,26 @@ pratibha_layers:
     change, causation, and efficacy—not a lack but a license.
 
     **svabhāva (स्वभाव, implied opposite)** — Etymology: *sva* (own) + *bhāva* (being): "own-being, intrinsic essence." The
-    thing Nāgārjuna denies; the verse''s force is that positing *svabhāva*, not denying it, is what makes reality incoherent.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Heraclitus, DK B12 / flux doctrine:** reality "works" precisely because nothing is statically self-identical; process,
-    not fixed substance, makes the world livable.
-
-    *Divergence:* Heraclitus grounds flux in an ordering Logos and fire; Nāgārjuna grounds functionality in the very absence
-    of any such grounding essence.
-
-    **Tao Te Ching 11 (usefulness of the empty hub, vessel, room):** it is the empty part that makes the wheel, pot, and room
-    function—emptiness as enabling condition.
-
-    *Divergence:* Laozi''s emptiness is a spatial/functional void within things; Nāgārjuna''s is the ontological absence of
-    essence in all things.
-
-    **Whitehead / process philosophy (actuality as becoming, not enduring substance):** what is real is what can become; substance-thinking
-    cannot account for change.
-
-    *Divergence:* process metaphysics still affirms real events with their own reality; Madhyamaka empties even events of
-    own-being.'
+    thing Nāgārjuna denies; the verse''s force is that positing *svabhāva*, not denying it, is what makes reality incoherent.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus, DK B12 / flux doctrine
+    resonance: reality "works" precisely because nothing is statically self-identical; process, not fixed substance, makes
+      the world livable.
+    divergence: Heraclitus grounds flux in an ordering Logos and fire; Nāgārjuna grounds functionality in the very absence
+      of any such grounding essence.
+    passage_id: ''
+  - citation: Tao Te Ching 11 (usefulness of the empty hub, vessel, room)
+    resonance: it is the empty part that makes the wheel, pot, and room function—emptiness as enabling condition.
+    divergence: Laozi's emptiness is a spatial/functional void within things; Nāgārjuna's is the ontological absence of essence
+      in all things.
+    passage_id: tao_te_ching.ttc_md_011
+  - citation: Whitehead / process philosophy (actuality as becoming, not enduring substance)
+    resonance: what is real is what can become; substance-thinking cannot account for change.
+    divergence: process metaphysics still affirms real events with their own reality; Madhyamaka empties even events of own-being.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Bring to mind one thing about yourself you believe is fixed ("I am anxious," "I always fail at this"). Say: "if this

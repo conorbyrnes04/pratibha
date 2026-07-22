@@ -38,23 +38,7 @@ commentary: 'The philosophical claim that the soul has forgotten its divine orig
 
   * **Hen (ἕν)** — one, unity -> the ultimate reality or supreme being, often referred to as the "One" or the "Source" in
   Neoplatonism -> the MacKenna translation often renders this term as "the One", but it can also imply a more general concept
-  of "unity" or "oneness".
-
-
-  Cross-Tradition Resonances:
-
-
-  * **Katha Upanishad, 2.24:** The idea that the soul has forgotten its true nature and must engage in a process of self-reflection
-  to rediscover it is reminiscent of the Katha Upanishad''s concept of the "two selves", where the individual self (jiva)
-  must recognize its true nature as the universal self (Atman).
-
-  * **Phaedo, 72e-77a:** The idea that the soul''s entanglement in the external world leads to ignorance and forgetfulness
-  of its true nature is similar to the Phaedo''s concept of the "prison of the body", where the soul is trapped in the physical
-  world and must be freed through philosophical contemplation.
-
-  * **Pratyabhijnahrdayam, 3:** The idea that the soul must engage in a process of self-reflection and introspection to rediscover
-  its true nature is similar to the Pratyabhijnahrdayam''s concept of "self-recognition" (pratyabhijna), where the individual
-  recognizes their true nature as the ultimate reality (Shiva).'
+  of "unity" or "oneness".'
 insight: The philosophical claim that the soul has forgotten its divine origin is a counterintuitive move, as it suggests
   that the soul's true nature is not immediately accessible to it.
 practice: 'As you go about your daily activities, take a moment to pause and reflect on your thoughts and desires. Ask yourself:
@@ -121,23 +105,29 @@ pratibha_layers:
 
     * **Hen (ἕν)** — one, unity -> the ultimate reality or supreme being, often referred to as the "One" or the "Source" in
     Neoplatonism -> the MacKenna translation often renders this term as "the One", but it can also imply a more general concept
-    of "unity" or "oneness".
-
-
-    Cross-Tradition Resonances:
-
-
-    * **Katha Upanishad, 2.24:** The idea that the soul has forgotten its true nature and must engage in a process of self-reflection
-    to rediscover it is reminiscent of the Katha Upanishad''s concept of the "two selves", where the individual self (jiva)
-    must recognize its true nature as the universal self (Atman).
-
-    * **Phaedo, 72e-77a:** The idea that the soul''s entanglement in the external world leads to ignorance and forgetfulness
-    of its true nature is similar to the Phaedo''s concept of the "prison of the body", where the soul is trapped in the physical
-    world and must be freed through philosophical contemplation.
-
-    * **Pratyabhijnahrdayam, 3:** The idea that the soul must engage in a process of self-reflection and introspection to
-    rediscover its true nature is similar to the Pratyabhijnahrdayam''s concept of "self-recognition" (pratyabhijna), where
-    the individual recognizes their true nature as the ultimate reality (Shiva).'
+    of "unity" or "oneness".'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upanishad, 2.24
+    resonance: The idea that the soul has forgotten its true nature and must engage in a process of self-reflection to rediscover
+      it is reminiscent of the Katha Upanishad's concept of the "two selves", where the individual self (jiva) must recognize
+      its true nature as the universal self (Atman).
+    divergence: ''
+    passage_id: ''
+  - citation: Phaedo, 72e-77a
+    resonance: The idea that the soul's entanglement in the external world leads to ignorance and forgetfulness of its true
+      nature is similar to the Phaedo's concept of the "prison of the body", where the soul is trapped in the physical world
+      and must be freed through philosophical contemplation.
+    divergence: ''
+    passage_id: ''
+  - citation: Pratyabhijnahrdayam, 3
+    resonance: The idea that the soul must engage in a process of self-reflection and introspection to rediscover its true
+      nature is similar to the Pratyabhijnahrdayam's concept of "self-recognition" (pratyabhijna), where the individual recognizes
+      their true nature as the ultimate reality (Shiva).
+    divergence: ''
+    passage_id: pratyabhijnahrdayam.phr_003
+  layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your daily activities, take a moment to pause and reflect on your thoughts and desires. Ask yourself:
