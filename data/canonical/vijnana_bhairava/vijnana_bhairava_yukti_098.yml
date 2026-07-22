@@ -5,7 +5,7 @@ work_id: vijnana_bhairava
 work_title: Vijnana Bhairava
 unit_id: vijnana_bhairava.yukti_098
 unit_label: 'Yukti #98'
-title: 'Yukti #98'
+title: Freedom Unfolds When Attachment Falls Away
 unit_type: verse
 sanskrit_devanagari: ''
 sanskrit_iast: ''
@@ -22,8 +22,20 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes: []
+themes:
+- non-attachment
+- detachment
+- awareness
+- freedom
+- equanimity
+- consciousness
 tags:
+- awareness
+- consciousness
+- detachment
+- equanimity
+- freedom
+- non-attachment
 - root_text
 - vijnana_bhairava
 quality_score: 0
@@ -43,6 +55,25 @@ pratibha_layers:
   label: Pratibha Commentary
   body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
     directly.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.33
+    resonance: 'Both texts prescribe a mental stance toward all circumstances that neutralizes reactive emotion: Patañjali
+      cultivates specific attitudes (friendliness, compassion, indifference, detachment) toward different conditions; Vijnana
+      Bhairava eliminates hatred and craving universally. Both achieve tranquility through equanimous reorientation rather
+      than suppression.'
+    divergence: Patañjali's method is graduated and categorical—matching attitude to circumstance type; Vijnana Bhairava's
+      is undifferentiated and absolute—a single negation across all conditions, reflecting Tantra's non-dual collapse of distinctions.
+    passage_id: patañjali_yoga_sūtras.ys_1_33
+  - citation: Bhagavad Gita — Renunciation Is Inner, Not Avoidant
+    resonance: 'Both texts locate freedom not in withdrawal from engagement but in a transformed inner relation to action:
+      the Gita teaches relinquishing possessiveness *within* action; Vijnana Bhairava cultivates non-attachment *in any circumstance*,
+      implying continued participation without clinging.'
+    divergence: The Gita grounds this in dharmic duty and the distinction between actor and fruit; Vijnana Bhairava grounds
+      it in direct awareness and the dissolution of subject-object duality itself.
+    passage_id: bhagavad_gita.bg_md_005
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

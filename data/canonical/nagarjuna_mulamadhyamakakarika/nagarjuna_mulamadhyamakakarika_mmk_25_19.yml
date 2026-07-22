@@ -7,11 +7,8 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_25_19
 unit_label: Saṃsāra Is Not the Least Bit Apart from Nirvāṇa
 title: Saṃsāra Is Not the Least Bit Apart from Nirvāṇa
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'na saṃsārasya nirvāṇāt kiṃcid asti viśeṣaṇam / na nirvāṇasya saṃsārāt kiṃcid asti viśeṣaṇam //
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL MMK 25.19.)*'
+sanskrit_devanagari: न संसारस्य निर्वाणात् किंचिद् अस्ति विशेषणम् । न निर्वाणस्य संसारात् किंचिद् अस्ति विशेषणम् ॥
+sanskrit_iast: na saṃsārasya nirvāṇāt kiṃcid asti viśeṣaṇam / na nirvāṇasya saṃsārāt kiṃcid asti viśeṣaṇam //
 translation_literal: There is not the slightest distinguishing mark [viśeṣaṇa] that separates saṃsāra from nirvāṇa, and not
   the slightest that separates nirvāṇa from saṃsāra.
 commentary: 'This is perhaps the most vertiginous line in the treatise, and it follows rigorously from everything before it.
@@ -60,13 +57,11 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: न संसारस्य निर्वाणात् किंचिद् अस्ति विशेषणम् । न निर्वाणस्य संसारात् किंचिद् अस्ति विशेषणम् ॥
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'na saṃsārasya nirvāṇāt kiṃcid asti viśeṣaṇam / na nirvāṇasya saṃsārāt kiṃcid asti viśeṣaṇam //
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL MMK 25.19.)*'
+  body: na saṃsārasya nirvāṇāt kiṃcid asti viśeṣaṇam / na nirvāṇasya saṃsārāt kiṃcid asti viśeṣaṇam //
 - kind: translation
   label: Pratibha Translation
   body: There is not the slightest distinguishing mark [viśeṣaṇa] that separates saṃsāra from nirvāṇa, and not the slightest

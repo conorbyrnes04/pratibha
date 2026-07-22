@@ -7,11 +7,8 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_24_08
 unit_label: The Two Truths
 title: The Two Truths
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'dve satye samupāśritya buddhānāṃ dharmadeśanā / lokasaṃvṛtisatyaṃ ca satyaṃ ca paramārthataḥ //
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL MMK 24.8.)*'
+sanskrit_devanagari: द्वे सत्ये समुपाश्रित्य बुद्धानां धर्मदेशना । लोकसंवृतिसत्यं च सत्यं च परमार्थतः ॥
+sanskrit_iast: dve satye samupāśritya buddhānāṃ dharmadeśanā / lokasaṃvṛtisatyaṃ ca satyaṃ ca paramārthataḥ //
 translation_literal: 'The dharma the buddhas teach rests entirely on two truths: the truth of worldly convention [saṃvṛti-satya]
   and the truth of the ultimate [paramārtha-satya].'
 commentary: 'Having spent twenty-three chapters dismantling every candidate for own-being, Nāgārjuna now blocks the natural
@@ -65,13 +62,11 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: द्वे सत्ये समुपाश्रित्य बुद्धानां धर्मदेशना । लोकसंवृतिसत्यं च सत्यं च परमार्थतः ॥
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'dve satye samupāśritya buddhānāṃ dharmadeśanā / lokasaṃvṛtisatyaṃ ca satyaṃ ca paramārthataḥ //
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL MMK 24.8.)*'
+  body: dve satye samupāśritya buddhānāṃ dharmadeśanā / lokasaṃvṛtisatyaṃ ca satyaṃ ca paramārthataḥ //
 - kind: translation
   label: Pratibha Translation
   body: 'The dharma the buddhas teach rests entirely on two truths: the truth of worldly convention [saṃvṛti-satya] and the

@@ -5,11 +5,17 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p084
 unit_label: A mixture separates when not kept in motion.
-title: A mixture separates when not kept in motion.
+title: Stillness Dissolves What Motion Holds
 unit_type: teaching_passage
 thesis: This aphorism compresses a cosmological claim into a single image or paradox.
 themes:
 - breath
+- awareness
+- stillness
+- transformation
+- harmony
+- impermanence
+- action
 source_excerpt: A mixture separates when not kept in motion.
 translation_literal: A mixture separates when not kept in motion.
 commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
@@ -22,9 +28,15 @@ practice: Memorize the fragment in one breath. Recite it once on waking and once
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
+- action
+- awareness
 - breath
 - commentary_text
+- harmony
 - heraclitus_fragments
+- impermanence
+- stillness
+- transformation
 quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
@@ -40,6 +52,27 @@ pratibha_layers:
     quiet. Anchor: George T.W. Patrick (1889), fragment 84 (Bywater Greek). Corpus index HFR_P084 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #1'
+    resonance: 'Both texts encode cosmic coherence through continuous motion or flow: Heraclitus''s mixture requires perpetual
+      motion to avoid separation; the Vijnana Bhairava''s Supreme Goddess articulates reality through the ceaseless oscillation
+      of breath (prāṇa and jīva). Stasis in both cases signals dissolution or loss of form.'
+    divergence: Heraclitus frames motion as a physical-cosmological necessity for unity; the Vijnana Bhairava locates the
+      same principle in conscious divine articulation and embodied breath-awareness, making motion an expression of divine
+      will rather than impersonal law.
+    passage_id: vijnana_bhairava.yukti_001
+  - citation: Tao Te Ching — The Ever‑Living Divine Root
+    resonance: 'Both passages locate ultimate reality in a principle that persists through apparent stillness or emptiness:
+      Heraclitus''s mixture requires motion to maintain coherence; the Tao Te Ching''s valley spirit ''never dies'' precisely
+      because it remains receptive and unmoved, a paradoxical constancy through non-action. Each invokes a paradox of preservation
+      through apparent negation.'
+    divergence: Heraclitus emphasizes active perpetual motion as the condition of unity; the Tao Te Ching emphasizes receptive
+      non-action (wu wei) and feminine passivity as the source of eternal renewal—opposite vectors toward the same metaphysical
+      insight.
+    passage_id: tao_te_ching.ttc_md_019
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance

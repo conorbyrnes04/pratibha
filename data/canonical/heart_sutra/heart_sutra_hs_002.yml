@@ -7,12 +7,10 @@ unit_id: heart_sutra.hs_002
 unit_label: No Attainment, and So No Fear
 title: No Attainment, and So No Fear
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'na jñānaṃ na prāptir nāprāptiḥ. tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharaty
+sanskrit_devanagari: न ज्ञानं न प्राप्तिर् नाप्राप्तिः. तस्माच् छारिपुत्र अप्राप्तित्वाद् बोधिसत्त्वस्य प्रज्ञापारमिताम् आश्रित्य
+  विहरत्य् अचित्तावरणः. चित्तावरण-नास्तित्वाद् अत्रस्तो विपर्यासातिक्रान्तो निष्ठा-निर्वाणः.
+sanskrit_iast: na jñānaṃ na prāptir nāprāptiḥ. tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharaty
   acittāvaraṇaḥ. cittāvaraṇa-nāstitvād atrasto viparyāsātikrānto niṣṭhā-nirvāṇaḥ.
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL shorter recension.)*'
 translation_literal: There is no knowing, no attaining, and no failing-to-attain. Precisely because there is nothing to be
   attained [aprāptitva], the bodhisattva leans on the perfection of wisdom and lives with a mind that has no covering over
   it [acittāvaraṇa]. Because there is no covering, there is nothing to be afraid of; having stepped clear of every inversion
@@ -71,14 +69,13 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: न ज्ञानं न प्राप्तिर् नाप्राप्तिः. तस्माच् छारिपुत्र अप्राप्तित्वाद् बोधिसत्त्वस्य प्रज्ञापारमिताम् आश्रित्य विहरत्य्
+    अचित्तावरणः. चित्तावरण-नास्तित्वाद् अत्रस्तो विपर्यासातिक्रान्तो निष्ठा-निर्वाणः.
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'na jñānaṃ na prāptir nāprāptiḥ. tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharaty acittāvaraṇaḥ.
+  body: na jñānaṃ na prāptir nāprāptiḥ. tasmāc chāriputra aprāptitvād bodhisattvasya prajñāpāramitām āśritya viharaty acittāvaraṇaḥ.
     cittāvaraṇa-nāstitvād atrasto viparyāsātikrānto niṣṭhā-nirvāṇaḥ.
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL shorter recension.)*'
 - kind: translation
   label: Pratibha Translation
   body: There is no knowing, no attaining, and no failing-to-attain. Precisely because there is nothing to be attained [aprāptitva],

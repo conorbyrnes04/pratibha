@@ -7,11 +7,8 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_24_18
 unit_label: Dependent Arising Is Emptiness Is the Middle Way
 title: Dependent Arising Is Emptiness Is the Middle Way
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'yaḥ pratītyasamutpādaḥ śūnyatāṃ tāṃ pracakṣmahe / sā prajñaptir upādāya pratipat saiva madhyamā //
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL MMK 24.18.)*'
+sanskrit_devanagari: यः प्रतीत्यसमुत्पादः शून्यतां तां प्रचक्ष्महे । सा प्रज्ञप्तिर् उपादाय प्रतिपत् सैव मध्यमा ॥
+sanskrit_iast: yaḥ pratītyasamutpādaḥ śūnyatāṃ tāṃ pracakṣmahe / sā prajñaptir upādāya pratipat saiva madhyamā //
 translation_literal: Whatever arises dependently [pratītyasamutpāda], that we call emptiness [śūnyatā]. It is a designation
   made in dependence [upādāya prajñapti], and this very thing is the middle way [madhyamā pratipad].
 commentary: 'This is the hinge verse of Madhyamaka, a threefold identity compressed into one line: dependent arising = emptiness
@@ -63,13 +60,11 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: यः प्रतीत्यसमुत्पादः शून्यतां तां प्रचक्ष्महे । सा प्रज्ञप्तिर् उपादाय प्रतिपत् सैव मध्यमा ॥
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'yaḥ pratītyasamutpādaḥ śūnyatāṃ tāṃ pracakṣmahe / sā prajñaptir upādāya pratipat saiva madhyamā //
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL MMK 24.18.)*'
+  body: yaḥ pratītyasamutpādaḥ śūnyatāṃ tāṃ pracakṣmahe / sā prajñaptir upādāya pratipat saiva madhyamā //
 - kind: translation
   label: Pratibha Translation
   body: Whatever arises dependently [pratītyasamutpāda], that we call emptiness [śūnyatā]. It is a designation made in dependence

@@ -5,7 +5,7 @@ work_id: vijnana_bhairava
 work_title: Vijnana Bhairava
 unit_id: vijnana_bhairava.yukti_044
 unit_label: 'Yukti #44'
-title: 'Yukti #44'
+title: Delight Transforms Into Sublime Consciousness
 unit_type: verse
 sanskrit_devanagari: ''
 sanskrit_iast: ''
@@ -22,9 +22,21 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes: []
+themes:
+- awareness
+- meditation
+- consciousness
+- shakti
+- transformation
+- spontaneity
 tags:
+- awareness
+- consciousness
+- meditation
 - root_text
+- shakti
+- spontaneity
+- transformation
 - vijnana_bhairava
 quality_score: 0
 editorial_maturity: strong_draft
@@ -43,6 +55,26 @@ pratibha_layers:
   label: Pratibha Commentary
   body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
     directly.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: 'Both texts instruct the practitioner to recognize a universal principle (Śakti / fullness-consciousness) already
+      present within ordinary sensory experience rather than transcending it. The move is: pause conceptual overlay and let
+      the sacred architecture of immediate experience disclose itself.'
+    divergence: Yukti 44 uses sensory delight (taste, pleasure) as the entry point to sublime consciousness, while Tantrasara
+      frames this recognition as learning to see Śakti's presence throughout the entire cognitive-experiential structure—more
+      architecturally systematic than phenomenologically immediate.
+    passage_id: tantrasara.ts_014
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: Both texts locate a transcendent state (the Fourth / sublime joy) as accessible within and continuous with
+      ordinary consciousness states (waking, dream, deep sleep / the delight of eating and drinking), not as a separate realm
+      to be attained.
+    divergence: Yukti 44 emphasizes the transformation of sensory pleasure itself into sublimity through meditative savoring,
+      while Siva Sutra positions the Fourth as a simultaneous availability that persists alongside the three ordinary states—a
+      co-presence rather than a transmutation.
+    passage_id: siva_sutra.ss_i_7
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

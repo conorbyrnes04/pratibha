@@ -5,11 +5,17 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p124
 unit_label: Night-roamers, Magians, bacchanals, revelers in wine, the initiated.
-title: Night-roamers, Magians, bacchanals, revelers in wine, the initiated.
+title: Ecstatic States Reveal Hidden Cosmic Order
 unit_type: teaching_passage
 thesis: This aphorism compresses a cosmological claim into a single image or paradox.
 themes:
 - breath
+- awareness
+- consciousness
+- silence
+- transformation
+- knowledge
+- spontaneity
 source_excerpt: Night-roamers, Magians, bacchanals, revelers in wine, the initiated. CX X.—Seneca, Epist. 12.
 translation_literal: Night-roamers, Magians, bacchanals, revelers in wine, the initiated. CX X.—Seneca, Epist. 12.
 commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
@@ -22,9 +28,15 @@ practice: Memorize the fragment in one breath. Recite it once on waking and once
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
+- awareness
 - breath
 - commentary_text
+- consciousness
 - heraclitus_fragments
+- knowledge
+- silence
+- spontaneity
+- transformation
 quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
@@ -40,6 +52,26 @@ pratibha_layers:
     quiet. Anchor: George T.W. Patrick (1889), fragment 124 (Bywater Greek). Corpus index HFR_P124 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #2'
+    resonance: 'Both texts compress a paradox of consciousness into a single image: Heraclitus names figures who embody simultaneous
+      states (night-roaming yet initiated, drunk yet aware), while Yukti 2 describes śakti revealed precisely at the point
+      where movement ceases—neither entering nor exiting. Each locates knowledge or power in a threshold state that dissolves
+      ordinary categories.'
+    divergence: Heraclitus presents the paradox as a cosmological riddle about human types and their hidden knowledge; the
+      Vijnana Bhairava grounds it in prāṇa and spatial centering as a direct yogic technique for realization.
+    passage_id: vijnana_bhairava.yukti_002
+  - citation: Yoginihrdaya — Cakrasaṃketa
+    resonance: 'Both texts compress a cosmological act into a single moment of self-recognition: Heraclitus''s ''initiated''
+      embody a knowledge that comes from witnessing transformation in darkness, while the Yoginihrdaya describes the Supreme
+      Power beholding her own ''flashing-forth'' (sphurattā)—consciousness recognizing itself through spontaneous manifestation.
+      Each locates initiation or realization in an act of self-witnessing.'
+    divergence: Heraclitus frames initiation as a human mystery accessible through paradox and night-wandering; the Yoginihrdaya
+      frames it as the cosmic feminine principle's self-luminous act of becoming and beholding.
+    passage_id: yoginihrdaya.yh_006
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance

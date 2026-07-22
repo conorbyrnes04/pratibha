@@ -7,11 +7,8 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_18_05
 unit_label: Liberation as the Stilling of Fabrication
 title: Liberation as the Stilling of Fabrication
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'karmakleśakṣayān mokṣaḥ karmakleśā vikalpataḥ / te prapañcāt prapañcas tu śūnyatāyāṃ nirudhyate //
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL MMK 18.5.)*'
+sanskrit_devanagari: कर्मक्लेशक्षयान् मोक्षः कर्मक्लेशा विकल्पतः । ते प्रपञ्चात् प्रपञ्चस् तु शून्यतायां निरुध्यते ॥
+sanskrit_iast: karmakleśakṣayān mokṣaḥ karmakleśā vikalpataḥ / te prapañcāt prapañcas tu śūnyatāyāṃ nirudhyate //
 translation_literal: Liberation [mokṣa] happens when karma and the afflictions [kleśa] run out. Karma and afflictions arise
   from conceptual construction [vikalpa]; construction arises from mental proliferation [prapañca]; and proliferation is halted—brought
   to rest—in emptiness [śūnyatā].
@@ -75,13 +72,11 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: कर्मक्लेशक्षयान् मोक्षः कर्मक्लेशा विकल्पतः । ते प्रपञ्चात् प्रपञ्चस् तु शून्यतायां निरुध्यते ॥
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'karmakleśakṣayān mokṣaḥ karmakleśā vikalpataḥ / te prapañcāt prapañcas tu śūnyatāyāṃ nirudhyate //
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL MMK 18.5.)*'
+  body: karmakleśakṣayān mokṣaḥ karmakleśā vikalpataḥ / te prapañcāt prapañcas tu śūnyatāyāṃ nirudhyate //
 - kind: translation
   label: Pratibha Translation
   body: Liberation [mokṣa] happens when karma and the afflictions [kleśa] run out. Karma and afflictions arise from conceptual

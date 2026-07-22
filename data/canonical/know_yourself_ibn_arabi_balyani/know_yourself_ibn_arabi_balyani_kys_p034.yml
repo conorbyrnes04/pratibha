@@ -5,11 +5,17 @@ work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p034
 unit_label: 'Pearl #34'
-title: 'Pearl #34'
+title: Your Being Cannot Relate to Anything
 unit_type: teaching_passage
 thesis: Your being is nothing and whatever is nothing cannot be placed in relationship to anything else, whether it is capable
   of passing away or not and whether it is existent or nonexistent.
-themes: []
+themes:
+- emptiness
+- self
+- death
+- knowledge
+- consciousness
+- non-attachment
 source_excerpt: Your being is nothing and whatever is nothing cannot be placed in relationship to anything else, whether it
   is capable of passing away or not and whether it is existent or nonexistent. The Prophet alluded to the fact that you are
   nonexistent now as you were nonexistent before creation, because now is eternity-without-beginning and now is eternity-without-end
@@ -31,7 +37,13 @@ sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
 - commentary_text
+- consciousness
+- death
+- emptiness
 - know_yourself_ibn_arabi_balyani
+- knowledge
+- non-attachment
+- self
 quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
@@ -50,6 +62,32 @@ pratibha_layers:
     now as you were nonexistent before creation, because now is eternity-without-beginning and now is eternity-without-end
     and now is timelessness. God is the very being of eternity-without-beginning, eternity-without-end and timelessness even
     though in reality there is no eternity-without-beginning, eternity-with-out-end or timelessness.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 7 · Turīya — The Fourth
+    resonance: Both texts negate all relational categories to point toward what cannot be objectified or placed in any conceptual
+      framework. Ibn Arabi states being 'cannot be placed in relationship to anything else'; Gaudapada negates all states
+      of consciousness (inward, outward, both, mass, consciousness itself, non-consciousness) to isolate Turīya as that which
+      transcends relational knowledge.
+    divergence: Ibn Arabi emphasizes ontological nothingness as the ground of human being; Gaudapada uses negation as a method
+      to isolate a transcendent fourth state that is pure awareness beyond all modification.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_009
+  - citation: Astavakra Gita — Verse 6.1
+    resonance: Both establish a radical asymmetry between the self and the world by declaring the self's infinite, unrelational
+      nature while the world remains finite and contained. Ibn Arabi's 'nothing' that cannot relate parallels Astavakra's
+      'I am infinite like space' with the material world as a bounded object within it.
+    divergence: Ibn Arabi grounds this in the nothingness of created being before God; Astavakra grounds it in the self's
+      intrinsic infinitude and the world's derivative, spatial containment.
+    passage_id: astavakra_gita.asg_6_1
+  - citation: Isavasya Upanishad — Vidya and Avidya Together
+    resonance: Both texts warn against exclusive attachment to a single mode of knowing or being. Ibn Arabi's statement that
+      being 'cannot be placed in relationship' suggests transcendence of dual categories (existent/nonexistent, perishable/imperishable);
+      the Isavasya warns that devotion to only knowledge or only ignorance leads to darkness.
+    divergence: Ibn Arabi points to the paradoxical non-relationality of the self; Isavasya prescribes a both/and integration
+      of knowledge and ignorance as the true path.
+    passage_id: isavasya_upanishad.isa_004
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

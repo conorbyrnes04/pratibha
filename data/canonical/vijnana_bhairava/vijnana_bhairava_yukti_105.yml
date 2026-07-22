@@ -5,7 +5,7 @@ work_id: vijnana_bhairava
 work_title: Vijnana Bhairava
 unit_id: vijnana_bhairava.yukti_105
 unit_label: 'Yukti #105'
-title: 'Yukti #105'
+title: The Magic Show Dissolves All Solidity
 unit_type: verse
 sanskrit_devanagari: ''
 sanskrit_iast: ''
@@ -22,8 +22,18 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes: []
+themes:
+- illusion
+- emptiness
+- knowledge
+- awareness
+- meditation
 tags:
+- awareness
+- emptiness
+- illusion
+- knowledge
+- meditation
 - root_text
 - vijnana_bhairava
 quality_score: 0
@@ -43,6 +53,33 @@ pratibha_layers:
   label: Pratibha Commentary
   body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
     directly.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heart Sutra — Form Is Emptiness, Emptiness Is Form
+    resonance: 'Both texts establish unreality as the fundamental structure of appearance: the Heart Sutra''s ''form is emptiness''
+      and Vijnana Bhairava''s ''universe as unreal as magic show'' both collapse the apparent solidity of phenomena into a
+      non-dual emptiness that is simultaneously their true nature.'
+    divergence: The Heart Sutra emphasizes the mutual interpenetration of form and emptiness as a Buddhist doctrine of śūnyatā,
+      while Vijnana Bhairava frames unreality as a direct contemplative pointer to non-dual awareness (Śiva-consciousness)
+      rather than a philosophical principle.
+    passage_id: heart_sutra.hs_001
+  - citation: Astavakra Gita — Key Verses from Chapters 3–7
+    resonance: 'Both use a wave-ocean metaphor to dissolve the apparent multiplicity of the universe into a unified substratum:
+      the Astavakra Gita''s ''universe manifests like waves in the ocean'' and Vijnana Bhairava''s ''magic show'' both point
+      to how individual forms arise from and return to an undifferentiated ground.'
+    divergence: Astavakra Gita emphasizes the non-dual identity of the self with this substratum ('so'ham asmi'), while Vijnana
+      Bhairava treats the unreality of appearance as a meditation technique to shift awareness rather than as a statement
+      of metaphysical identity.
+    passage_id: astavakra_gita.asg_sum_key_verses_from_chapters_3_7
+  - citation: 'Know Yourself (Ibn Arabi / Balyani) — Pearl #28'
+    resonance: 'Both dissolve the problem of negation by asserting that what lacks true existence cannot undergo transformation
+      or passing away: Ibn Arabi''s ''things have no existence and what does not exist cannot pass away'' and Vijnana Bhairava''s
+      ''universe as unreal'' both short-circuit logical objections by grounding unreality in the absence of independent being.'
+    divergence: Ibn Arabi's Sufi framework preserves God's absolute existence as the sole reality, while Vijnana Bhairava
+      points to non-dual awareness itself as the ground, without positing a transcendent creator-God.
+    passage_id: know_yourself_ibn_arabi_balyani.kys_p028
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

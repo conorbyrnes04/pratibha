@@ -7,11 +7,8 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_24_09
 unit_label: Missing the Division of the Truths
 title: Missing the Division of the Truths
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'ye ''nayor na vijānanti vibhāgaṃ satyayor dvayoḥ / te tattvaṃ na vijānanti gambhīraṃ buddhaśāsane //
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL MMK 24.9.)*'
+sanskrit_devanagari: ये ऽनयोर् न विजानन्ति विभागं सत्ययोर् द्वयोः । ते तत्त्वं न विजानन्ति गम्भीरं बुद्धशासने ॥
+sanskrit_iast: ye 'nayor na vijānanti vibhāgaṃ satyayor dvayoḥ / te tattvaṃ na vijānanti gambhīraṃ buddhaśāsane //
 translation_literal: Those who do not grasp how the two truths are distinguished do not grasp the profound reality [tattva]
   within the Buddha's teaching.
 commentary: 'This is Nāgārjuna''s warning label, and it cuts both ways. The word *vibhāga*—distinction, division—tells us
@@ -62,13 +59,11 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: ये ऽनयोर् न विजानन्ति विभागं सत्ययोर् द्वयोः । ते तत्त्वं न विजानन्ति गम्भीरं बुद्धशासने ॥
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'ye ''nayor na vijānanti vibhāgaṃ satyayor dvayoḥ / te tattvaṃ na vijānanti gambhīraṃ buddhaśāsane //
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL MMK 24.9.)*'
+  body: ye 'nayor na vijānanti vibhāgaṃ satyayor dvayoḥ / te tattvaṃ na vijānanti gambhīraṃ buddhaśāsane //
 - kind: translation
   label: Pratibha Translation
   body: Those who do not grasp how the two truths are distinguished do not grasp the profound reality [tattva] within the

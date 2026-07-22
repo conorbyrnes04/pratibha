@@ -405,6 +405,24 @@ pratibha_layers:
     excerpt. Full chapter text remains in the public-domain appendix for philological comparison; the display layers do not
     reproduce Giles wholesale.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching — Knowing, Winning, and Enduring
+    resonance: 'Both texts locate virtue in a reflexive turn: the Taoist sage knows himself (self-knowledge as intelligence),
+      while Zhuang Zi''s encounter with the mountain tree enacts a recognition of one''s own nature through observation of
+      what is naturally whole and uncarved.'
+    divergence: The Tao Te Ching frames self-knowledge as epistemological discernment; Zhuang Zi's method is phenomenological—virtue
+      emerges through direct, embodied encounter with the exemplary object rather than through rational self-examination.
+    passage_id: tao_te_ching.ttc_md_042
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VIII.7
+    resonance: 'Both texts describe a self freed from reactive desire and aversion: the Upanishadic Self desires only what
+      it ought to (normative spontaneity), and Zhuang Zi''s tree, by being useless to human schemes, embodies a state beyond
+      grasping and rejection.'
+    divergence: The Chāndogya Upaniṣad posits a transcendent Self already perfected and free; Zhuang Zi's tree is immanent
+      and natural, its freedom achieved through acceptance of limitation rather than through metaphysical transcendence.
+    passage_id: chāndogya_upaniṣad.chu_viii_07
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.

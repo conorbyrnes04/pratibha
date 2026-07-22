@@ -5,7 +5,7 @@ work_id: vijnana_bhairava
 work_title: Vijnana Bhairava
 unit_id: vijnana_bhairava.yukti_111
 unit_label: 'Yukti #111'
-title: 'Yukti #111'
+title: Understanding Dissolves Into Direct Recognition
 unit_type: verse
 sanskrit_devanagari: ''
 sanskrit_iast: ''
@@ -20,9 +20,25 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes: []
+themes:
+- awareness
+- consciousness
+- meditation
+- silence
+- knowledge
+- stillness
+- spontaneity
+- recognition
 tags:
+- awareness
+- consciousness
+- knowledge
+- meditation
+- recognition
 - root_text
+- silence
+- spontaneity
+- stillness
 - vijnana_bhairava
 quality_score: 0
 editorial_maturity: strong_draft
@@ -39,6 +55,35 @@ pratibha_layers:
   label: Pratibha Commentary
   body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
     directly.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 7 · Turīya — The Fourth
+    resonance: Both texts use systematic negation to point toward a non-dual awareness that transcends all categorical consciousness.
+      The Mandukya's 'not inwardly conscious, not outwardly conscious, not conscious in both directions, not consciousness,
+      not non-consciousness' mirrors the Vijnana Bhairava's method of dissolving conceptual layers to arrive at 'waveless'
+      stillness—each negates successive mental states to disclose what remains.
+    divergence: The Mandukya frames this negation as the discovery of Turīya (the Fourth), a permanent transcendent state;
+      the Vijnana Bhairava emphasizes spontaneous recognition and direct disclosure within present awareness, less concerned
+      with ontological stasis.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_009
+  - citation: 'Know Yourself (Ibn Arabi / Balyani) — Pearl #7'
+    resonance: 'Both passages enact self-recognition as the fundamental move: Ibn Arabi''s ''He knows Himself through Himself''
+      and the Vijnana Bhairava''s invitation to let insight ''disclose itself directly'' share the structure of consciousness
+      recognizing itself without mediation, collapsing the subject-object divide.'
+    divergence: Ibn Arabi grounds this in divine self-knowledge (theistic metaphysics); the Vijnana Bhairava locates it in
+      the practitioner's own awareness-principle, treating self-recognition as an accessible contemplative event rather than
+      an attribute of God.
+    passage_id: know_yourself_ibn_arabi_balyani.kys_p007
+  - citation: Patañjali Yoga Sūtras 3.17
+    resonance: Both texts identify a fundamental confusion—superimposition of layers—as the obstacle to direct knowledge.
+      Patañjali's 'word, meaning, and idea superimposed upon one another' parallels the Vijnana Bhairava's implicit diagnosis
+      that conceptual overlay obscures the waveless state; both propose clarity through disentanglement.
+    divergence: Patañjali treats this as a cognitive error to be corrected through discriminative knowledge (viveka); the
+      Vijnana Bhairava suggests spontaneous disclosure once interpretation is paused, emphasizing non-effort over analytical
+      precision.
+    passage_id: patañjali_yoga_sūtras.ys_3_17
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

@@ -5,11 +5,15 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p089
 unit_label: In thirty years aman may become a grandfather.
-title: In thirty years aman may become a grandfather.
+title: Time Collapses Into A Single Breath
 unit_type: teaching_passage
 thesis: This aphorism compresses a cosmological claim into a single image or paradox.
 themes:
 - breath
+- awareness
+- impermanence
+- transformation
+- silence
 source_excerpt: In thirty years aman may become a grandfather.
 translation_literal: In thirty years aman may become a grandfather.
 commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
@@ -22,9 +26,13 @@ practice: Memorize the fragment in one breath. Recite it once on waking and once
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
+- awareness
 - breath
 - commentary_text
 - heraclitus_fragments
+- impermanence
+- silence
+- transformation
 quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
@@ -40,6 +48,24 @@ pratibha_layers:
     quiet. Anchor: George T.W. Patrick (1889), fragment 89 (Bywater Greek). Corpus index HFR_P089 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 3.15
+    resonance: 'Both texts compress temporal transformation into a single structural principle: Heraclitus embeds cosmological
+      flux in the generational cycle (grandfather in thirty years), while Patañjali grounds successive transformations in
+      the succession of phases themselves—time as the engine of metamorphosis.'
+    divergence: Heraclitus presents transformation as paradoxical and aphoristic (a riddle of human finitude), whereas Patañjali
+      systematizes it as a logical law of phenomenal succession within a yogic epistemology.
+    passage_id: patañjali_yoga_sūtras.ys_3_15
+  - citation: 'Vijnana Bhairava — Yukti #1'
+    resonance: 'Both texts locate the fundamental principle of becoming in breath or vital flow: Heraclitus''s compressed
+      image of generational time mirrors the Vijnana Bhairava''s articulation of prāṇa and jīva as the constant oscillation
+      between exhalation and inhalation—the basic rhythm that generates embodied existence.'
+    divergence: Heraclitus treats breath implicitly through the paradox of human aging, while Vijnana Bhairava makes breath
+      (prāṇa) the explicit cosmological mechanism through which the Goddess articulates reality.
+    passage_id: vijnana_bhairava.yukti_001
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance

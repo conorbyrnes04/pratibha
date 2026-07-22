@@ -2,7 +2,7 @@
 
 _Read-only audit of original-language coverage across 1015 canonical units in 28 works (source: `data/canonical/index.jsonl`)._
 
-**Headline:** 603/1015 units (59%) carry complete, language-appropriate original text (Devanagari+IAST for Sanskrit; native script for Greek/Chinese/Persian/Arabic/Tibetan/Japanese/German).
+**Headline:** 614/1015 units (60%) carry complete, language-appropriate original text (Devanagari+IAST for Sanskrit; native script for Greek/Chinese/Persian/Arabic/Tibetan/Japanese/German).
 
 ## Per-work coverage
 
@@ -14,12 +14,10 @@ _Read-only audit of original-language coverage across 1015 canonical units in 28
 | `tantrasara` | sanskrit | 19 | 0 | 0% | No original text at all (no script, no IAST) (19) |
 | `bhagavad_gita` | sanskrit | 12 | 0 | 0% | Placeholder / source-language-basis note (no native script) (12) |
 | `phaedo_plato` | greek | 12 | 0 | 0% | Placeholder / source-language-basis note (no native script) (12) |
-| `nagarjuna_mulamadhyamakakarika` | sanskrit | 9 | 0 | 0% | Devanagari field holds romanized (IAST) text — malformed (9) |
 | `shantideva_bodhicaryavatara` | sanskrit | 8 | 0 | 0% | Placeholder / source-language-basis note (no native script) (8) |
 | `tilopa_mahamudra` | tibetan | 3 | 0 | 0% | Placeholder / source-language-basis note (no native script) (3) |
 | `milarepa_songs` | tibetan | 14 | 1 | 7% | Non-Sanskrit work missing its native source script (7) |
 | `heraclitus_fragments` | greek | 128 | 11 | 9% | Non-Sanskrit work missing its native source script (117) |
-| `heart_sutra` | sanskrit | 3 | 1 | 33% | Devanagari field holds romanized (IAST) text — malformed (2) |
 | `astavakra_gita` | sanskrit | 31 | 22 | 71% | No original text at all (no script, no IAST) (9) |
 | `mandukya_upanishad_and_gaudapada_karika` | sanskrit | 16 | 12 | 75% | No original text at all (no script, no IAST) (4) |
 | `pratyabhijnahrdayam` | sanskrit | 21 | 20 | 95% | No original text at all (no script, no IAST) (1) |
@@ -35,7 +33,9 @@ _Read-only audit of original-language coverage across 1015 canonical units in 28
 | `meister_eckhart` | german | 12 | 12 | 100% | — |
 | `dogen_shobogenzo` | japanese | 12 | 12 | 100% | — |
 | `yoginihrdaya` | sanskrit | 11 | 11 | 100% | — |
+| `nagarjuna_mulamadhyamakakarika` | sanskrit | 9 | 9 | 100% | — |
 | `epictetus_works` | greek | 3 | 3 | 100% | — |
+| `heart_sutra` | sanskrit | 3 | 3 | 100% | — |
 
 ## Worst offenders (by missing units)
 
@@ -50,35 +50,20 @@ _Read-only audit of original-language coverage across 1015 canonical units in 28
 | `bhagavad_gita` | sanskrit | 12 | 12 | Placeholder / source-language-basis note (no native script) (12) |
 | `phaedo_plato` | greek | 12 | 12 | Placeholder / source-language-basis note (no native script) (12) |
 | `astavakra_gita` | sanskrit | 31 | 9 | No original text at all (no script, no IAST) (9) |
-| `nagarjuna_mulamadhyamakakarika` | sanskrit | 9 | 9 | Devanagari field holds romanized (IAST) text — malformed (9) |
 | `shantideva_bodhicaryavatara` | sanskrit | 8 | 8 | Placeholder / source-language-basis note (no native script) (8) |
 | `mandukya_upanishad_and_gaudapada_karika` | sanskrit | 16 | 4 | No original text at all (no script, no IAST) (4) |
+| `the_book_of_chuang_tzu` | chinese | 66 | 3 | Placeholder / source-language-basis note (no native script) (3) |
 
 ## Problem classes & representative unit_ids
 
 - **No original text at all (no script, no IAST)** — 233 units. e.g. `astavakra_gita.asg_3_3`, `astavakra_gita.asg_6_1`, `astavakra_gita.asg_sum_01_13_01_20`, `astavakra_gita.asg_sum_02_02_02_07`, `astavakra_gita.asg_sum_02_08_02_16`, `astavakra_gita.asg_sum_08_01_08_04`
 - **Non-Sanskrit work missing its native source script** — 124 units. e.g. `heraclitus_fragments.hfr_p003`, `heraclitus_fragments.hfr_p004`, `heraclitus_fragments.hfr_p005`, `heraclitus_fragments.hfr_p006`, `heraclitus_fragments.hfr_p007`, `heraclitus_fragments.hfr_p008`
 - **Placeholder / source-language-basis note (no native script)** — 44 units. e.g. `bhagavad_gita.bg_md_001`, `bhagavad_gita.bg_md_002`, `bhagavad_gita.bg_md_003`, `bhagavad_gita.bg_md_004`, `bhagavad_gita.bg_md_005`, `bhagavad_gita.bg_md_006`
-- **Devanagari field holds romanized (IAST) text — malformed** — 11 units. e.g. `heart_sutra.hs_001`, `heart_sutra.hs_002`, `nagarjuna_mulamadhyamakakarika.mmk_18_05`, `nagarjuna_mulamadhyamakakarika.mmk_18_06`, `nagarjuna_mulamadhyamakakarika.mmk_24_08`, `nagarjuna_mulamadhyamakakarika.mmk_24_09`
 
 ## Corpus hygiene — empty / duplicate work directories
 
 These directories under `data/canonical/` contain zero unit files. Several are transliteration/name duplicates of populated works (e.g. `śiva_sūtra` vs `siva_sutra`, `vijñāna_bhairava` vs `vijnana_bhairava`, `chandogya_upanishad` vs `chāndogya_upaniṣad`).
 
-- `chandogya_upanishad/`
-- `know_yourself_an_explanation_of_the_oneness_of_being/`
-- `self_realization_manual/`
-- `shiva_sutra/`
-- `tantra_illuminated_the_philosophy_history_and_practice/`
-- `tantrasara_sample/`
-- `the_manual_for_self_realization_112_meditations_of_the/`
-- `the_ubiquitous_siva_somananda_s_sivadrsti_and_his_tantric/`
-- `utpaladeva_philosopher_of_recognition/`
-- `vbt_translation_wallis_2/`
-- `vijnana_bhairava_yuktis/`
-- `vijñāna_bhairava/`
-- `yoga_spandakarika_the_sacred_texts_at_the_origins_of/`
-- `śiva_sūtra/`
 
 ## Prioritized recommendations
 

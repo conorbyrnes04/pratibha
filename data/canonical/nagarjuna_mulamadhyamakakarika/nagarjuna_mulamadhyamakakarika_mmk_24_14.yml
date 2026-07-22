@@ -7,11 +7,8 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_24_14
 unit_label: For Whom Emptiness Works, Everything Works
 title: For Whom Emptiness Works, Everything Works
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'sarvaṃ ca yujyate tasya śūnyatā yasya yujyate / sarvaṃ na yujyate tasya śūnyaṃ yasya na yujyate //
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL MMK 24.14.)*'
+sanskrit_devanagari: सर्वं च युज्यते तस्य शून्यता यस्य युज्यते । सर्वं न युज्यते तस्य शून्यं यस्य न युज्यते ॥
+sanskrit_iast: sarvaṃ ca yujyate tasya śūnyatā yasya yujyate / sarvaṃ na yujyate tasya śūnyaṃ yasya na yujyate //
 translation_literal: For the one for whom emptiness [śūnyatā] holds good, everything holds good; for the one for whom emptiness
   does not hold good, nothing holds good.
 commentary: 'This verse turns the tables on Nāgārjuna''s opponent with a single elegant inversion. The realist had objected
@@ -59,13 +56,11 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: सर्वं च युज्यते तस्य शून्यता यस्य युज्यते । सर्वं न युज्यते तस्य शून्यं यस्य न युज्यते ॥
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'sarvaṃ ca yujyate tasya śūnyatā yasya yujyate / sarvaṃ na yujyate tasya śūnyaṃ yasya na yujyate //
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL MMK 24.14.)*'
+  body: sarvaṃ ca yujyate tasya śūnyatā yasya yujyate / sarvaṃ na yujyate tasya śūnyaṃ yasya na yujyate //
 - kind: translation
   label: Pratibha Translation
   body: For the one for whom emptiness [śūnyatā] holds good, everything holds good; for the one for whom emptiness does not

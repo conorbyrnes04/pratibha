@@ -5,13 +5,9 @@ title: They understand neither how to hear nor how to speak.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: They understand neither how to hear nor how to speak.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 6 (Bywater
-  Greek). Corpus index HFR_P006 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 6 (Bywater Greek). Corpus index HFR_P006 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 voice_of_siva: ''
-abhyasa: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
-  experience it actually rests on. Can you hear the claim, not only think it?
+abhyasa: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually rests on. Can you hear the claim, not only think it?
 modes:
   bhasya: ''
   doctrinal: ''
@@ -27,3 +23,17 @@ layer_provenance:
   commentary: template-assembled
   key_terms: template-assembled
   practice: template-assembled
+  resonances: generated_grounded
+resonances:
+- citation: Patañjali Yoga Sūtras 3.54
+  resonance: 'Both texts diagnose a failure of discernment: Heraclitus names those who cannot hear or speak (cannot perceive the logos); Patañjali names the faculty that distinguishes subtle differences between apparently identical objects. Each treats cognitive failure as a structural inability to discriminate what is actually present.'
+  divergence: Heraclitus frames this as a cosmic-ethical blindness to the universal logos; Patañjali frames it as a yogic faculty that can be cultivated through practice to reveal already-perfected knowledge in the subtle realm.
+  passage_id: patañjali_yoga_sūtras.ys_3_54
+- citation: Isavasya Upanishad — Mantra 12
+  resonance: 'Both texts use a paradoxical structure to expose a double bind in understanding: Heraclitus shows that those who cannot hear cannot speak (a reciprocal failure); Isavasya shows that devotion to only one pole (manifest or unmanifest) leads to darkness, implying that true knowledge requires holding both simultaneously.'
+  divergence: Heraclitus diagnoses a failure of attention to the logos itself; Isavasya prescribes a balanced path between two metaphysical poles, suggesting knowledge emerges from neither extreme alone.
+  passage_id: isavasya_upanishad.isa_018
+- citation: Svetasvatara Upanishad — Knowledge and Ignorance in the Imperishable
+  resonance: 'Both texts compress a fundamental epistemological problem into a single image: Heraclitus''s inability to hear or speak mirrors the Upanishad''s claim that knowledge and ignorance are both hidden in Brahman—each suggests that the capacity to know is itself obscured or paradoxical at the root.'
+  divergence: Heraclitus treats this as a failure of individual attention to what is universally available; the Upanishad treats it as a metaphysical structure inherent in the Absolute itself, not a failure of perception.
+  passage_id: svetasvatara_upanishad.svu_013

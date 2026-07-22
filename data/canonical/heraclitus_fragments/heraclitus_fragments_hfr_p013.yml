@@ -5,10 +5,15 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p013
 unit_label: Whatever concerns seeing, hearing, and learning, I particularly honor.’ ν΄
-title: Whatever concerns seeing, hearing, and learning, I particularly honor.’ ν΄
+title: Perception Becomes Philosophy When Opinion Falls Silent
 unit_type: teaching_passage
 thesis: This aphorism compresses a cosmological claim into a single image or paradox.
-themes: []
+themes:
+- awareness
+- knowledge
+- silence
+- practice
+- mind
 source_excerpt: Whatever concerns seeing, hearing, and learning, I particularly honor.’ ν΄
 translation_literal: Whatever concerns seeing, hearing, and learning, I particularly honor.’ ν΄
 commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
@@ -21,8 +26,13 @@ practice: Before arguing a point today, pause and write one sentence you hold as
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
+- awareness
 - commentary_text
 - heraclitus_fragments
+- knowledge
+- mind
+- practice
+- silence
 quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
@@ -38,6 +48,33 @@ pratibha_layers:
     quiet. Anchor: George T.W. Patrick (1889), fragment 13 (Bywater Greek). Corpus index HFR_P013 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 3.29
+    resonance: 'Both texts honor a direct perceptual method as the path to knowledge: Heraclitus privileges seeing and hearing
+      as worthy of honor; Patañjali teaches that focused bodily alignment on a sensory object (the pole star) yields astronomical
+      knowledge. Each makes perception itself—not abstract reasoning—the instrument of knowing.'
+    divergence: Heraclitus treats perception as cosmologically fundamental and self-justifying; Patañjali subordinates sensory
+      focus to a systematic yogic discipline aimed at liberation, making perception a controlled technique rather than an
+      autonomous faculty.
+    passage_id: patañjali_yoga_sūtras.ys_3_29
+  - citation: Shantideva Bodhicaryavatara — The Veiled and the Transcendent
+    resonance: 'Both passages establish a hierarchy of practices leading to a supreme faculty: Heraclitus honors seeing, hearing,
+      and learning as worthy pursuits; Shantideva states that all preceding disciplines exist for the sake of wisdom (prajñā),
+      positioning wisdom as the ultimate goal that justifies prior training.'
+    divergence: Heraclitus honors the sensory and intellectual faculties themselves as ends; Shantideva treats all disciplines
+      as instrumental means to transcendent wisdom that dissolves suffering, making wisdom soteriological rather than ontologically
+      primary.
+    passage_id: shantideva_bodhicaryavatara.bca_09_twotruths
+  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 4
+    resonance: 'Both texts describe awareness of ultimate reality as exceeding ordinary knowing: Heraclitus compresses cosmological
+      truth into a paradoxical image that honors perception yet implies its limits; Plotinus states that awareness of the
+      ultimate Principle transcends all knowledge and intellection, requiring a presence beyond multiplicity.'
+    divergence: Heraclitus grounds transcendence in the sensory world itself through paradox; Plotinus posits a radical discontinuity
+      between discursive intellection and a non-cognitive presence that surpasses the multiplicity of knowing.
+    passage_id: plotinus_enneads.enn_vi_9_04
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually

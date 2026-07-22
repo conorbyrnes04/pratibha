@@ -351,6 +351,25 @@ pratibha_layers:
     Full chapter text remains in the public-domain appendix for philological comparison; the display layers do not reproduce
     Giles wholesale.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching — The Paradox of Strengthening to Weaken
+    resonance: 'Both texts operate through paradoxical reversal: the Tao Te Ching''s principle that weakening requires prior
+      strengthening structurally mirrors Lieh Tzŭ''s paradoxical way-knowing, where apparent opposites (action/non-action,
+      presence/absence) are unified in a single movement of Tao.'
+    divergence: The Tao Te Ching frames paradox as strategic cosmological principle (the mechanism of change itself), while
+      Lieh Tzŭ emphasizes paradox as the marker of direct alignment with Tao beyond conceptual knowing.
+    passage_id: tao_te_ching.ttc_md_045
+  - citation: 'Vijnana Bhairava — Yukti #74'
+    resonance: Both invoke a shift in perception—seeing the world as illusory flux (magic show, painting, constant change)—that
+      dissolves ordinary subject-object distinction and aligns consciousness with the underlying nature of reality, mirroring
+      Lieh Tzŭ's way-knowing as perceptual transformation.
+    divergence: The Vijnana Bhairava explicitly names this as a yukti (technique) producing happiness through contemplative
+      practice, while Lieh Tzŭ's tradition suggests such seeing arises spontaneously from alignment with Tao rather than through
+      deliberate method.
+    passage_id: vijnana_bhairava.yukti_074
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.

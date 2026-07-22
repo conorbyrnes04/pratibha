@@ -5,11 +5,17 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p032
 unit_label: cerning the sun this cannot happen, since, being nourished in the same manner, as they sa...
-title: cerning the sun this cannot happen, since, being nourished in the same manner, as they sa...
+title: The Sun Renews Itself Continuously
 unit_type: teaching_passage
 thesis: This aphorism compresses a cosmological claim into a single image or paradox.
 themes:
 - breath
+- awareness
+- impermanence
+- transformation
+- stillness
+- knowledge
+- simplicity
 source_excerpt: cerning the sun this cannot happen, since, being nourished in the same manner, as they say, it is plain that
   the sun is not only, as Heraclitus says, new every day, but it is continually new. Olympiodorus in Meteor. 1. 1. fol. 30
   a.
@@ -26,9 +32,15 @@ practice: Memorize the fragment in one breath. Recite it once on waking and once
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
+- awareness
 - breath
 - commentary_text
 - heraclitus_fragments
+- impermanence
+- knowledge
+- simplicity
+- stillness
+- transformation
 quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
@@ -45,6 +57,27 @@ pratibha_layers:
     quiet. Anchor: George T.W. Patrick (1889), fragment 32 (Bywater Greek). Corpus index HFR_P032 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #1'
+    resonance: 'Both texts compress a cosmological principle into the continuous flux of a single natural process: Heraclitus
+      sees the sun as perpetually renewed through constant nourishment; the Vijnana Bhairava sees the divine articulated through
+      the ceaseless oscillation of breath (prāṇa and jīva). Each makes transformation itself the fundamental reality.'
+    divergence: Heraclitus grounds renewal in material nourishment and observable celestial mechanics; the Vijnana Bhairava
+      locates it in the conscious play (lila) of Śakti as the life-force itself, making transformation a divine self-expression
+      rather than a physical necessity.
+    passage_id: vijnana_bhairava.yukti_001
+  - citation: Patañjali Yoga Sūtras 1.10
+    resonance: 'Both texts paradoxically define a state through negation or absence: Heraclitus compresses the sun''s perpetual
+      newness into a single paradoxical claim (always new, yet the same sun); Patañjali defines sleep as ''transformation
+      based on non-existence,'' collapsing a state into its negation. Each uses logical compression to capture an ontological
+      shift.'
+    divergence: Heraclitus uses paradox to affirm continuous becoming as reality's nature; Patañjali uses negation to map
+      consciousness states within a framework of yogic transformation, treating non-existence as a specific phenomenological
+      condition rather than a cosmological principle.
+    passage_id: patañjali_yoga_sūtras.ys_1_10
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance

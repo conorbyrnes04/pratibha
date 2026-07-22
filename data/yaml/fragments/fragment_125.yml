@@ -5,14 +5,9 @@ title: For the things which are considered mysteries among men, they celebrate s
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: For the things which are considered mysteries among people, they celebrate sacrilegiously.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 125
-  (Bywater Greek). Corpus index HFR_P125 follows the Diels–Kranz-style numbering used in the Pratibha
-  pilot batch.'
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 125 (Bywater Greek). Corpus index HFR_P125 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
+abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
 modes:
   bhasya: ''
   doctrinal: ''
@@ -28,3 +23,17 @@ layer_provenance:
   commentary: template-assembled
   key_terms: template-assembled
   practice: template-assembled
+  resonances: generated_grounded
+resonances:
+- citation: Svetasvatara Upanishad — Knowledge and Ignorance in the Imperishable
+  resonance: 'Both texts compress a paradox of hidden opposites into a single cosmological claim: Heraclitus names the sacrilegious celebration of mysteries as a structural blindness to what is already present; the Svetasvatara names knowledge and ignorance as co-hidden within the imperishable, suggesting that the sacred and profane are inverted categories within a single ground.'
+  divergence: Heraclitus locates the error in human ritual practice and collective ignorance; the Upanishad locates it in the metaphysical structure of Brahman itself, where opposites are eternally bound rather than performatively confused.
+  passage_id: svetasvatara_upanishad.svu_013
+- citation: Isavasya Upanishad — Mantra 7
+  resonance: 'Both texts invert the expected relationship between seeing and knowing: Heraclitus suggests that those who celebrate mysteries sacrilegiously do not truly see what they handle; Isavasya asks what delusion remains for one who sees unity, implying that correct vision dissolves the category of mystery itself.'
+  divergence: Heraclitus emphasizes the gap between ritual performance and true knowledge as a failure of perception; Isavasya emphasizes the dissolution of duality as the fruit of unified vision, making delusion a function of multiplicity rather than ignorance.
+  passage_id: isavasya_upanishad.isa_013
+- citation: Siva Sutra — Śāmbhavopāya
+  resonance: 'Both texts paradoxically invert the value of knowledge: Heraclitus suggests that public celebration of mysteries is a sacrilegious mishandling of what should remain hidden; the Siva Sutra declares that knowledge itself becomes bondage, suggesting that the problem is not ignorance but a false or objectified knowing.'
+  divergence: Heraclitus critiques the profanation of sacred knowledge through improper ritual; the Siva Sutra critiques knowledge as a structural trap, implying that liberation requires transcendence of the subject-object distinction itself.
+  passage_id: siva_sutra.ss_i_2

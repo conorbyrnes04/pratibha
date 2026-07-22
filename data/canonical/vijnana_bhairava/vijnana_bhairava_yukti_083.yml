@@ -5,7 +5,7 @@ work_id: vijnana_bhairava
 work_title: Vijnana Bhairava
 unit_id: vijnana_bhairava.yukti_083
 unit_label: 'Yukti #83'
-title: 'Yukti #83'
+title: Stillness Emerges From Exhausted Motion
 unit_type: verse
 sanskrit_devanagari: ''
 sanskrit_iast: ''
@@ -22,9 +22,25 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes: []
+themes:
+- consciousness
+- shakti
+- stillness
+- spontaneity
+- transformation
+- surrender
+- awareness
+- meditation
 tags:
+- awareness
+- consciousness
+- meditation
 - root_text
+- shakti
+- spontaneity
+- stillness
+- surrender
+- transformation
 - vijnana_bhairava
 quality_score: 0
 editorial_maturity: strong_draft
@@ -43,6 +59,32 @@ pratibha_layers:
   label: Pratibha Commentary
   body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
     directly.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: 'Both texts identify a dynamic surge or movement of consciousness itself as the ultimate principle: Yukti 83
+      shows the Supreme State arising through cessation of excitation (śakti''s power), while Śiva Sūtra names this very surge
+      of awareness as Bhairava. Each treats consciousness not as static witness but as an active, self-recognizing force.'
+    divergence: Yukti 83 emphasizes the *cessation* of movement leading to revelation, whereas Śiva Sūtra identifies the surge
+      itself as divine; one privileges the still point after kinetic collapse, the other the pulsation as primary.
+    passage_id: siva_sutra.ss_i_5
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: Both employ embodied technique—whirling/falling in Yukti 83, aligned posture and sense-gathering in Śvetāśvatara—as
+      a method to cross from ordinary consciousness into a transcendent state. The body's organized action or surrender becomes
+      the gateway to the Supreme.
+    divergence: Yukti 83 uses spontaneous collapse and cessation of excitation as the trigger, while Śvetāśvatara prescribes
+      deliberate alignment and concentration; one is surrender through disorientation, the other disciplined gathering.
+    passage_id: svetasvatara_upanishad.svu_009
+  - citation: Patañjali Yoga Sūtras 1.46
+    resonance: 'Both point to a state in which the ordinary mind-function ceases and a higher consciousness emerges: Yukti
+      83''s Supreme State arises when excitation-power ends, and Patañjali''s samādhi is the state where the mind becomes
+      ''seeded'' (stabilized in its source). Each describes a threshold where conditioned mental activity yields to a deeper
+      principle.'
+    divergence: Patañjali frames this as the mind's own refined state (seeded in its own nature), while Yukti 83 emphasizes
+      śakti's power and its cessation as the mechanism; one is internalist, the other explicitly energetic.
+    passage_id: patañjali_yoga_sūtras.ys_1_46
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

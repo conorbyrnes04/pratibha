@@ -7,11 +7,8 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
 unit_label: The Ultimate Rides on the Conventional
 title: The Ultimate Rides on the Conventional
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'vyavahāram anāśritya paramārtho na deśyate / paramārtham anāgamya nirvāṇaṃ nādhigamyate //
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL MMK 24.10.)*'
+sanskrit_devanagari: व्यवहारम् अनाश्रित्य परमार्थो न देश्यते । परमार्थम् अनागम्य निर्वाणं नाधिगम्यते ॥
+sanskrit_iast: vyavahāram anāśritya paramārtho na deśyate / paramārtham anāgamya nirvāṇaṃ nādhigamyate //
 translation_literal: Without leaning on everyday convention [vyavahāra], the ultimate [paramārtha] cannot be pointed out;
   and without reaching the ultimate, nirvāṇa is not reached.
 commentary: 'Here Nāgārjuna states the double dependence that saves emptiness from becoming a ladder to be kicked away too
@@ -59,13 +56,11 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: व्यवहारम् अनाश्रित्य परमार्थो न देश्यते । परमार्थम् अनागम्य निर्वाणं नाधिगम्यते ॥
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'vyavahāram anāśritya paramārtho na deśyate / paramārtham anāgamya nirvāṇaṃ nādhigamyate //
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL MMK 24.10.)*'
+  body: vyavahāram anāśritya paramārtho na deśyate / paramārtham anāgamya nirvāṇaṃ nādhigamyate //
 - kind: translation
   label: Pratibha Translation
   body: Without leaning on everyday convention [vyavahāra], the ultimate [paramārtha] cannot be pointed out; and without reaching

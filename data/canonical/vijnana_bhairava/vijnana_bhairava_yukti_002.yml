@@ -5,7 +5,7 @@ work_id: vijnana_bhairava
 work_title: Vijnana Bhairava
 unit_id: vijnana_bhairava.yukti_002
 unit_label: 'Yukti #2'
-title: 'Yukti #2'
+title: Power Revealed When Breath Comes to Rest
 unit_type: verse
 sanskrit_devanagari: ''
 sanskrit_iast: ''
@@ -26,8 +26,22 @@ practice: Read this passage slowly three times. Pause for one minute and write o
 upaya: ''
 themes:
 - śakti
+- breath
+- stillness
+- consciousness
+- spontaneity
+- mind
+- awareness
+- silence
 tags:
+- awareness
+- breath
+- consciousness
+- mind
 - root_text
+- silence
+- spontaneity
+- stillness
 - vijnana_bhairava
 - śakti
 quality_score: 0
@@ -49,6 +63,24 @@ pratibha_layers:
   label: Pratibha Commentary
   body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
     directly.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: Both texts locate śakti not as an abstract principle but as recognizable within direct experience—the Vijnana
+      Bhairava reveals it through prāṇa's stillness at the Center, while Tantrasara teaches recognition of Śakti throughout
+      the entire architecture of lived experience.
+    divergence: Vijnana Bhairava emphasizes a singular point of revelation (the Center where movement ceases), whereas Tantrasara
+      distributes recognition across the whole field of consciousness.
+    passage_id: tantrasara.ts_014
+  - citation: Pratyabhijnahrdayam — Sutra 1
+    resonance: Both passages identify śakti as the operative principle underlying manifestation and dissolution—Vijnana Bhairava
+      shows it revealed when prāṇa comes to rest, while Pratyabhijnahrdayam identifies Śakti as the cause of the universe's
+      manifestation, maintenance, and dissolution.
+    divergence: Vijnana Bhairava grounds the revelation in a contemplative pause of vital energy, whereas Pratyabhijnahrdayam
+      presents śakti as a metaphysical first principle independent of the practitioner's state.
+    passage_id: pratyabhijnahrdayam.phr_001
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

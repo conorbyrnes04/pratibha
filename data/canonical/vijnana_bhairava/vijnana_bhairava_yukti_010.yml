@@ -5,7 +5,7 @@ work_id: vijnana_bhairava
 work_title: Vijnana Bhairava
 unit_id: vijnana_bhairava.yukti_010
 unit_label: 'Yukti #10'
-title: 'Yukti #10'
+title: The Goddess as Innermost Space Reveals God
 unit_type: verse
 sanskrit_devanagari: ''
 sanskrit_iast: ''
@@ -24,10 +24,26 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes: []
+themes:
+- consciousness
+- śakti
+- meditation
+- heart
+- emptiness
+- awareness
+- recognition
+- stillness
 tags:
+- awareness
+- consciousness
+- emptiness
+- heart
+- meditation
+- recognition
 - root_text
+- stillness
 - vijnana_bhairava
+- śakti
 quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
@@ -47,6 +63,26 @@ pratibha_layers:
   label: Pratibha Commentary
   body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
     directly.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 17
+    resonance: 'Both texts locate liberation or direct knowing in the ''middle'' or ''core''—Yukti #10 points to the central
+      channel as the seat of awareness, while Sutra 17 identifies the unfoldment of the middle as the gateway to Bliss of
+      Consciousness. Each treats a spatial-ontological center as the locus where consciousness recognizes itself.'
+    divergence: 'Yukti #10 emphasizes stillness and direct disclosure through pause, while Pratyabhijnahrdayam Sutra 17 emphasizes
+      active unfoldment and acquisition, reflecting Kashmir Shaivism''s recognition-based (pratyabhijña) rather than purely
+      receptive epistemology.'
+    passage_id: pratyabhijnahrdayam.phr_017
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 7 · Turīya — The Fourth
+    resonance: 'Both texts refuse positive predication to describe the ultimate: Yukti #10 points to the core beyond conceptual
+      elaboration, while Mandukya''s Turīya systematically negates all conscious and unconscious states to indicate what transcends
+      dualistic knowing. Each uses apophatic structure to gesture toward non-dual awareness.'
+    divergence: 'Yukti #10 anchors the pointer in the heart-center as a lived contemplative location, while Mandukya''s Turīya
+      operates through pure logical negation of states, reflecting Advaita Vedanta''s abstract metaphysical method versus
+      Tantric embodied phenomenology.'
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_009
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

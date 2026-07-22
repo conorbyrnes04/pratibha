@@ -5,7 +5,7 @@ work_id: vijnana_bhairava
 work_title: Vijnana Bhairava
 unit_id: vijnana_bhairava.yukti_033
 unit_label: 'Yukti #33'
-title: 'Yukti #33'
+title: Emptiness Dissolves the Mind's Churning
 unit_type: verse
 sanskrit_devanagari: ''
 sanskrit_iast: ''
@@ -24,9 +24,25 @@ insight: 'Read this line as a contemplative pointer: pause interpretation for a 
   directly.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes: []
+themes:
+- awareness
+- mind
+- meditation
+- stillness
+- emptiness
+- silence
+- consciousness
+- spontaneity
 tags:
+- awareness
+- consciousness
+- emptiness
+- meditation
+- mind
 - root_text
+- silence
+- spontaneity
+- stillness
 - vijnana_bhairava
 quality_score: 0
 editorial_maturity: strong_draft
@@ -47,6 +63,25 @@ pratibha_layers:
   label: Pratibha Commentary
   body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
     directly.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.46
+    resonance: 'Both texts describe a threshold state where mental content dissolves and a stable, unified consciousness emerges:
+      the Vijnana Bhairava''s dissolution of vṛtti into open awareness parallels Patañjali''s ''seeded samādhi'' as a foundational
+      shift in mental organization.'
+    divergence: Patañjali emphasizes samādhi as a structured, progressive state within a systematic eight-limb path; the Vijnana
+      Bhairava treats the dissolution as spontaneous and non-sequential, arising directly from perceptual release.
+    passage_id: patañjali_yoga_sūtras.ys_1_46
+  - citation: Heart Sutra — Form Is Emptiness, Emptiness Is Form
+    resonance: 'Both texts use a paradoxical identity statement to dismantle the subject-object split: form dissolving into
+      emptiness (Heart Sutra) mirrors mental-emotional churning dissolving into the open field (Vijnana Bhairava), revealing
+      that apparent opposites are non-dual.'
+    divergence: The Heart Sutra operates through doctrinal negation (śūnyatā as philosophical principle); the Vijnana Bhairava
+      uses direct perceptual practice (gazing on emptiness) to collapse the distinction through lived experience rather than
+      conceptual insight.
+    passage_id: heart_sutra.hs_001
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

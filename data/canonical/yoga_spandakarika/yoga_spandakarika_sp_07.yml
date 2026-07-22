@@ -39,6 +39,23 @@ pratibha_layers:
   label: Pratibha Commentary
   body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
     directly.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #1'
+    resonance: 'Both texts locate awakening within the oscillatory movement of breath itself: the Spandakarika''s ''vibration''
+      (spanda) and the Vijnana Bhairava''s prāṇa-jīva cycle both treat breath-movement as the primary site where consciousness
+      discloses itself directly, without mediation.'
+    divergence: The Vijnana Bhairava explicitly names the Goddess as the articulator of breath-flow, whereas the Spandakarika
+      grounds vibration in an impersonal cosmic pulse; one is theistic, the other non-theistic in framing.
+    passage_id: vijnana_bhairava.yukti_001
+  - citation: Tantrasara — Subtle Sound – Mantra as Breath of Śiva
+    resonance: 'Both texts treat breath-coordination with sacred sound as the foundational practice: the Spandakarika''s vibration-awareness
+      and the Tantrasara''s mantra-breath integration both use the breath-syllable nexus as the entry point to subtle recognition.'
+    divergence: The Tantrasara emphasizes the sequential, methodical path (Āṇava) of mouth-breath-syllable coordination, while
+      the Spandakarika invites non-methodical disclosure through pause and direct insight.
+    passage_id: tantrasara.ts_018
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Sit for 5 minutes and follow the breath naturally. At each inhale and exhale, notice the subtle vibration of awareness

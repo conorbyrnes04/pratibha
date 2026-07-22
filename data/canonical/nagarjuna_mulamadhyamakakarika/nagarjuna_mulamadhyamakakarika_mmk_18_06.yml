@@ -7,11 +7,9 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_18_06
 unit_label: Neither Self Nor Non-Self
 title: Neither Self Nor Non-Self
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'ātmety api prajñapitam anātmety api deśitam / buddhair nātmā na cānātmā kaścid ity api deśitam //
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL MMK 18.6.)*'
+sanskrit_devanagari: आत्मेत्य् अपि प्रज्ञपितम् अनात्मेत्य् अपि देशितम् । बुद्धैर् नात्मा न चानात्मा कश्चिद् इत्य् अपि देशितम्
+  ॥
+sanskrit_iast: ātmety api prajñapitam anātmety api deśitam / buddhair nātmā na cānātmā kaścid ity api deśitam //
 translation_literal: '"There is a self"—this has been provisionally taught. "There is no self"—this too has been taught. And
   the buddhas have also taught that there is neither any self nor any non-self whatsoever.'
 commentary: 'This verse is a small masterclass in pedagogical skill and its limits. Nāgārjuna records three teachings, not
@@ -68,13 +66,11 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: आत्मेत्य् अपि प्रज्ञपितम् अनात्मेत्य् अपि देशितम् । बुद्धैर् नात्मा न चानात्मा कश्चिद् इत्य् अपि देशितम् ॥
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'ātmety api prajñapitam anātmety api deśitam / buddhair nātmā na cānātmā kaścid ity api deśitam //
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL MMK 18.6.)*'
+  body: ātmety api prajñapitam anātmety api deśitam / buddhair nātmā na cānātmā kaścid ity api deśitam //
 - kind: translation
   label: Pratibha Translation
   body: '"There is a self"—this has been provisionally taught. "There is no self"—this too has been taught. And the buddhas

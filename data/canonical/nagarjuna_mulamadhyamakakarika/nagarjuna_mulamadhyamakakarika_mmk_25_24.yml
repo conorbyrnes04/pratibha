@@ -7,11 +7,8 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_25_24
 unit_label: The Stilling of All Grasping Is Peace
 title: The Stilling of All Grasping Is Peace
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: 'sarvopalambhopaśamaḥ prapañcopaśamaḥ śivaḥ / na kva cit kasyacit kaścid dharmo buddhena deśitaḥ //
-
-
-  *(Sanskrit, IAST, source-verified from GRETIL MMK 25.24, closing verse.)*'
+sanskrit_devanagari: सर्वोपलम्भोपशमः प्रपञ्चोपशमः शिवः । न क्व चित् कस्यचित् कश्चिद् धर्मो बुद्धेन देशितः ॥
+sanskrit_iast: sarvopalambhopaśamaḥ prapañcopaśamaḥ śivaḥ / na kva cit kasyacit kaścid dharmo buddhena deśitaḥ //
 translation_literal: The stilling of all grasping [upalambha], the stilling of proliferation [prapañca]—this is peace [śiva].
   Nowhere, to no one, was any dharma ever taught by the Buddha.
 commentary: 'The treatise ends where practice ends: not in a final thesis but in the quieting of the thesis-making mind. Two
@@ -66,13 +63,11 @@ editorial_score: 78
 pratibha_layers:
 - kind: original
   label: Original
-  body: ''
+  body: सर्वोपलम्भोपशमः प्रपञ्चोपशमः शिवः । न क्व चित् कस्यचित् कश्चिद् धर्मो बुद्धेन देशितः ॥
+  layer_provenance: transliterated_from_iast
 - kind: iast
   label: IAST
-  body: 'sarvopalambhopaśamaḥ prapañcopaśamaḥ śivaḥ / na kva cit kasyacit kaścid dharmo buddhena deśitaḥ //
-
-
-    *(Sanskrit, IAST, source-verified from GRETIL MMK 25.24, closing verse.)*'
+  body: sarvopalambhopaśamaḥ prapañcopaśamaḥ śivaḥ / na kva cit kasyacit kaścid dharmo buddhena deśitaḥ //
 - kind: translation
   label: Pratibha Translation
   body: The stilling of all grasping [upalambha], the stilling of proliferation [prapañca]—this is peace [śiva]. Nowhere,

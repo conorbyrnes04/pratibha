@@ -5,7 +5,7 @@ work_id: astavakra_gita
 work_title: Astavakra Gita
 unit_id: astavakra_gita.asg_3_3
 unit_label: Verse 3.3
-title: Verse 3.3
+title: 'Waves and Ocean: The Illusion of Separation'
 unit_type: sutra
 sanskrit_devanagari: ''
 sanskrit_iast: ''
@@ -23,10 +23,22 @@ insight: 'Extended Translation:
   The universe manifests like waves in the ocean.'
 practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
-themes: []
+themes:
+- consciousness
+- self
+- knowledge
+- illusion
+- non-attachment
+- awareness
 tags:
 - astavakra_gita
+- awareness
+- consciousness
+- illusion
+- knowledge
+- non-attachment
 - root_text
+- self
 quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
@@ -44,6 +56,32 @@ pratibha_layers:
     viśvaṃ sphurati yatredaṃ taraṅgā iva sāgare | so''ham asmīti vijñāya kiṃ dīna iva dhāvasi ||
 
     "The universe manifests like waves in the ocean. Knowing ''I am that'' — why do you run about like a miserable person?"'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Fluttering in the Brahma-Wheel
+    resonance: 'Both texts use a spatial metaphor of apparent separation within a unified whole: waves in ocean (Astavakra)
+      and the swan-self wandering as separate within the Brahma-wheel (Svetasvatara). Each depicts the manifest universe as
+      a play of differentiation that obscures underlying non-duality.'
+    divergence: Astavakra emphasizes the illusory nature of manifestation itself (waves as transient forms), while Svetasvatara
+      locates the problem in the self's false perception of separation from the Impeller (ignorance as misidentification rather
+      than unreality).
+    passage_id: svetasvatara_upanishad.svu_006
+  - citation: Isavasya Upanishad — Mantra 7
+    resonance: 'Both passages move from the metaphysical claim of unity to the soteriological consequence: recognizing the
+      wave-like universe as ocean-manifestation dissolves delusion, just as seeing unity dissolves sorrow and delusion in
+      Isavasya. The structure is: unity-recognition → cessation of suffering.'
+    divergence: Astavakra grounds liberation in direct perception of the universe's illusory form-nature, while Isavasya frames
+      it as the experiential result of non-dual vision without specifying the mechanism of manifestation.
+    passage_id: isavasya_upanishad.isa_013
+  - citation: 'Vijnana Bhairava — Yukti #97'
+    resonance: 'Both texts derive equanimity and non-attachment from recognizing an underlying sameness or plenitude pervading
+      all apparent differences: the ocean-substance identical in all waves parallels the Absolute''s total plenitude being
+      the same in all beings, yielding equal-mindedness toward opposites.'
+    divergence: Astavakra uses the wave-ocean metaphor to establish the unreality of differentiation itself, while Vijnana
+      Bhairava accepts the reality of beings but grounds equanimity in their shared participation in the Absolute's fullness.
+    passage_id: vijnana_bhairava.yukti_097
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.

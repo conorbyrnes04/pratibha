@@ -5,11 +5,19 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p020
 unit_label: This world, the same for all, neither any of
-title: This world, the same for all, neither any of
+title: One World Shared Beyond Individual Opinion
 unit_type: teaching_passage
 thesis: This aphorism compresses a cosmological claim into a single image or paradox.
 themes:
 - breath
+- awareness
+- consciousness
+- mind
+- silence
+- truth
+- stillness
+- harmony
+- simplicity
 source_excerpt: This world, the same for all, neither any of
 translation_literal: This world, the same for all, neither any of
 commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
@@ -22,9 +30,17 @@ practice: Memorize the fragment in one breath. Recite it once on waking and once
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
+- awareness
 - breath
 - commentary_text
+- consciousness
+- harmony
 - heraclitus_fragments
+- mind
+- silence
+- simplicity
+- stillness
+- truth
 quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
@@ -40,6 +56,23 @@ pratibha_layers:
     quiet. Anchor: George T.W. Patrick (1889), fragment 20 (Bywater Greek). Corpus index HFR_P020 follows the Diels–Kranz-style
     numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #33'
+    resonance: Both texts posit a unified perceptual field that becomes accessible when mental activity stills or dissolves.
+      Heraclitus's 'world, the same for all' and the Vijnana Bhairava's open field free of objects both describe a common
+      ground revealed through cessation of ordinary cognitive churning (vṛtti).
+    divergence: Heraclitus emphasizes the world as a cosmological constant accessible to rational logos; the Vijnana Bhairava
+      treats the open field as a phenomenological state achieved through deliberate meditative technique.
+    passage_id: vijnana_bhairava.yukti_033
+  - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
+    resonance: Both texts claim that a single utterance or principle (Heraclitus's aphorism, the Heart Sutra's mantra) encodes
+      a universal truth that transcends individual variation and 'quiets' or stills the ordinary mind's turbulence.
+    divergence: Heraclitus grounds universality in cosmic order (logos); the Heart Sutra grounds it in the emptiness of all
+      fixed categories (śūnyatā).
+    passage_id: heart_sutra.hs_003
+  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
   body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
