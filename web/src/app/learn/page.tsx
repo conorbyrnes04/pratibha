@@ -5,13 +5,14 @@ import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { getVerses } from "@/lib/api";
 import { DailySitCard } from "@/components/learn/DailySitCard";
-import { JourneyMandala } from "@/components/learn/JourneyMandala";
+import { PathTree } from "@/components/learn/PathTree";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
 import { ThreadCompleteCard } from "@/components/learn/ThreadCompleteCard";
 import { ThreadContextBar } from "@/components/learn/ThreadContextBar";
 import { ThreadsConstellation } from "@/components/learn/ThreadsConstellation";
 import { YantraBreath } from "@/components/learn/YantraBreath";
 import { JournalPanel } from "@/components/JournalPanel";
+import { Section } from "@/components/ui/Section";
 import { useLearnProgress } from "@/hooks/useLearnProgress";
 import { matchStepItem, resolveById } from "@/lib/learn/passages";
 import { stepKey, trackDoneCount } from "@/lib/learn/progress";
@@ -345,6 +346,8 @@ export default function LearnPage() {
 
   return (
     <main className="page-shell">
+      <div className="section-stack">
+      <div>
       <div className="relative">
         <Glyph
           name="mandala"
@@ -354,8 +357,8 @@ export default function LearnPage() {
         <p className="eyebrow">Guided study</p>
         <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Paths</h1>
         <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
-          Paths descend like a cakra — gate by gate. Threads trace one golden insight across traditions. Each step is a
-          practice, not a playlist item.
+          Descend a path gate by gate, or trace one insight across traditions with a thread. Each gate is a practice, not
+          a playlist item.
         </p>
       </div>
 
@@ -390,26 +393,27 @@ export default function LearnPage() {
           onBegin={() => continueTo(heroTrack.id, heroNextStep.id)}
         />
       </section>
+      </div>
 
-      <ThreadsConstellation
-        progress={progress}
-        hydrated={hydrated}
-        activeThreadId={activeThreadId}
-        activeBeadId={activeBeadId}
-        onOpenBead={openBead}
-      />
+      <Section
+        eyebrow="The map"
+        title="Your branching path"
+        lead="Start at the root, branch into a realm, then zoom into a path and descend it gate by gate. Nodes light up as you complete their gates."
+      >
+        <PathTree
+          realms={LEARNING_REALMS}
+          trackById={trackById}
+          progress={progress}
+          hydrated={hydrated}
+          selectedTrackId={selectedTrackId}
+          recommendedNextId={recommendedNextId}
+          anyProgress={hydrated && anyProgress}
+          onSelectTrack={selectTrack}
+          onOpenGate={continueTo}
+        />
+      </Section>
 
-      <JourneyMandala
-        trackById={trackById}
-        progress={progress}
-        hydrated={hydrated}
-        selectedTrackId={selectedTrackId}
-        recommendedNextId={recommendedNextId}
-        anyProgress={hydrated && anyProgress}
-        onSelectTrack={selectTrack}
-      />
-
-      <section ref={pathSectionRef} className="manuscript-card relative mt-8 scroll-mt-24 overflow-hidden p-5 sm:p-7">
+      <section ref={pathSectionRef} className="manuscript-card relative scroll-mt-24 overflow-hidden p-5 sm:p-7">
         <YantraBreath className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 opacity-[0.18] sm:h-80 sm:w-80" />
         {(threadMode || threadCeremonyId) && activeThreadId && activeBeadId ? (
           <ThreadContextBar
@@ -799,6 +803,15 @@ export default function LearnPage() {
           </>
         )}
       </section>
+
+      <ThreadsConstellation
+        progress={progress}
+        hydrated={hydrated}
+        activeThreadId={activeThreadId}
+        activeBeadId={activeBeadId}
+        onOpenBead={openBead}
+      />
+      </div>
     </main>
   );
 }

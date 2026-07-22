@@ -15,6 +15,7 @@ import { displayPassageTitle } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
+import { Disclosure } from "@/components/ui/Disclosure";
 import { getStudyLayers, getAppendixLayers, getAnchorChapter, getResonances, layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 import { relatedPassages } from "@/lib/relatedPassages";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
@@ -66,7 +67,6 @@ export default function VerseDetailPage() {
   const [learningMode, setLearningMode] = useState(true);
   const [showOriginal, setShowOriginal] = useState(true);
   const [compact, setCompact] = useState(false);
-  const [showSource, setShowSource] = useState(false);
   const [loading, setLoading] = useState(true);
   const [backHref, setBackHref] = useState<string | null>(null);
   const id = decodeURIComponent(params.id || "");
@@ -140,7 +140,19 @@ export default function VerseDetailPage() {
   const layers = getStudyLayers(item);
   const appendixLayers = getAppendixLayers(item);
   const anchorChapter = getAnchorChapter(item);
-  const visibleLayers = layers.filter((layer) => showOriginal || (layer.kind !== "original" && layer.kind !== "iast"));
+
+  // Progressive disclosure: the essentials (original / translation / practice)
+  // stay open so the reader lands on the passage first; everything denser is
+  // tucked behind a tap so the page isn't a wall of text.
+  const ESSENTIAL_KINDS = new Set(["original", "iast", "translation", "practice"]);
+  const essentialLayers = layers.filter(
+    (layer) => ESSENTIAL_KINDS.has(layer.kind) && (showOriginal || (layer.kind !== "original" && layer.kind !== "iast")),
+  );
+  const commentaryLayer = layers.find((layer) => layer.kind === "commentary");
+  const keyTermsLayer = layers.find((layer) => layer.kind === "key_terms");
+  const hasSource = appendixLayers.length > 0 || Boolean(anchorChapter);
+  const hasDeeperLayers = Boolean(commentaryLayer) || Boolean(keyTermsLayer) || hasSource;
+
   const translation = layerText(item, "translation");
   const commentary = layerText(item, "commentary");
   const used = new Set<string>();
@@ -200,6 +212,7 @@ export default function VerseDetailPage() {
             </div>
           </div>
           <div className="citation-card grid gap-2 border-amber-200/20 bg-[#0b0b14]/75 p-3 font-sans text-sm text-stone-300 backdrop-blur-sm">
+            <p className="eyebrow text-[0.68rem] text-amber-200/70">Reading options</p>
             <label className="flex items-center gap-3">
               <input type="checkbox" className="accent-amber-300" checked={learningMode} onChange={(e) => setLearningMode(e.target.checked)} />
               Learning guide
@@ -212,20 +225,14 @@ export default function VerseDetailPage() {
               <input type="checkbox" className="accent-amber-300" checked={compact} onChange={(e) => setCompact(e.target.checked)} />
               Compact commentary
             </label>
-            {(appendixLayers.length > 0 || anchorChapter) ? (
-              <label className="flex items-center gap-3">
-                <input type="checkbox" className="accent-amber-300" checked={showSource} onChange={(e) => setShowSource(e.target.checked)} />
-                Public-domain source (Giles / Patrick)
-              </label>
-            ) : null}
           </div>
         </div>
       </section>
 
-      <div className="mt-6 grid gap-5 lg:grid-cols-[2fr_1fr]">
+      <div className="mt-8 grid gap-6 lg:grid-cols-[2fr_1fr] lg:gap-8">
         <section>
           {learningMode ? (
-            <section className="practice-card mb-4 p-5">
+            <section className="practice-card p-5 sm:p-6">
               <h2 className="layer-heading">Learning guide</h2>
               <div className="mt-3 space-y-3 text-sm">
                 <p><span className="text-amber-100">Core idea:</span> {coreIdea}</p>
@@ -236,34 +243,90 @@ export default function VerseDetailPage() {
             </section>
           ) : null}
 
-          {visibleLayers.map((layer, idx) => (
-            <LayerBlock key={`${layer.kind}-${layer.label}-${idx}`} layer={layer} compact={compact && layer.kind === "commentary"} />
+          {/* Essentials — always open: original / translation / practice. */}
+          {essentialLayers.map((layer, idx) => (
+            <LayerBlock key={`${layer.kind}-${layer.label}-${idx}`} layer={layer} />
           ))}
 
-          {showSource ? (
-            <>
-              {appendixLayers.map((layer, idx) => (
-                <LayerBlock key={`appendix-${layer.label}-${idx}`} layer={layer} defaultCollapsed={Boolean(layer.body && layer.body.length > 1200)} />
-              ))}
-              {anchorChapter ? (
-                <LayerBlock
-                  layer={{ kind: "appendix", label: "Full chapter — public-domain translation", body: anchorChapter }}
-                  defaultCollapsed
-                />
-              ) : null}
-            </>
-          ) : (appendixLayers.length > 0 || anchorChapter) ? (
-            <button
-              type="button"
-              onClick={() => setShowSource(true)}
-              className="mt-4 w-full rounded-2xl border border-dashed border-amber-200/25 px-4 py-3 text-left font-sans text-sm text-amber-100/90 hover:border-amber-200/45"
-            >
-              Compare with public-domain translation (Giles 1889) — hidden by default so study stays focused.
-            </button>
+          {/* Go deeper — dense layers tucked behind a tap. */}
+          {hasDeeperLayers ? (
+            <div className="mt-8">
+              <p className="eyebrow mb-3 text-amber-200/70">Go deeper</p>
+              <div>
+                {commentaryLayer ? (
+                  <Disclosure summary="Commentary" hint="Pratibha">
+                    <LayerBlock layer={commentaryLayer} compact={compact} bare />
+                  </Disclosure>
+                ) : null}
+                {keyTermsLayer ? (
+                  <Disclosure summary="Key terms" hint={`${(keyTermsLayer.items || []).length || ""}`}>
+                    <LayerBlock layer={keyTermsLayer} bare />
+                  </Disclosure>
+                ) : null}
+                {resonances.length > 0 ? (
+                  <Disclosure summary="Cross-tradition resonances" hint={`${resonances.length}`}>
+                    <div className="space-y-3">
+                      {resonances.map((r, idx) => {
+                        const link = resonanceLinks[idx];
+                        const href =
+                          link?.kind === "passage"
+                            ? `/read/${encodeURIComponent(link.passageId)}`
+                            : link?.kind === "collection"
+                              ? `/read?collection=${encodeURIComponent(link.collection)}`
+                              : null;
+                        return (
+                          <article key={`${r.citation}-${idx}`} className="citation-card p-3">
+                            {href ? (
+                              <Link
+                                href={href}
+                                className="group inline-flex items-center gap-1 text-sm text-amber-100 underline decoration-amber-200/30 underline-offset-2 transition hover:decoration-amber-200/70"
+                              >
+                                <InlineMarkdown>{r.citation}</InlineMarkdown>
+                                <span aria-hidden className="text-[10px] text-amber-200/60 transition group-hover:translate-x-0.5">
+                                  {link?.kind === "passage" ? "↗" : "→"}
+                                </span>
+                              </Link>
+                            ) : (
+                              <span className="text-sm text-amber-100">
+                                <InlineMarkdown>{r.citation}</InlineMarkdown>
+                              </span>
+                            )}
+                            <p className="soft mt-1 text-sm leading-relaxed">
+                              <InlineMarkdown>{r.resonance}</InlineMarkdown>
+                            </p>
+                            {r.divergence ? (
+                              <p className="mt-2 text-sm leading-relaxed text-stone-300">
+                                <span className="font-semibold text-amber-100">Divergence:</span>{" "}
+                                <InlineMarkdown>{r.divergence}</InlineMarkdown>
+                              </p>
+                            ) : null}
+                          </article>
+                        );
+                      })}
+                    </div>
+                  </Disclosure>
+                ) : null}
+                {hasSource ? (
+                  <Disclosure summary="Public-domain source" hint="Giles / Patrick">
+                    <div className="space-y-4">
+                      {appendixLayers.map((layer, idx) => (
+                        <LayerBlock key={`appendix-${layer.label}-${idx}`} layer={layer} bare />
+                      ))}
+                      {anchorChapter ? (
+                        <div>
+                          <h3 className="layer-heading mb-2">Full chapter — public-domain translation</h3>
+                          <LayerBlock layer={{ kind: "appendix", label: "Full chapter", body: anchorChapter }} bare />
+                        </div>
+                      ) : null}
+                    </div>
+                  </Disclosure>
+                ) : null}
+              </div>
+            </div>
           ) : null}
 
           {item.themes && item.themes.length > 0 ? (
-            <section className="mt-4 flex flex-wrap gap-2">
+            <section className="mt-8 flex flex-wrap gap-2">
               {item.themes.map((t) => (
                 <Link
                   key={t}
@@ -293,65 +356,17 @@ export default function VerseDetailPage() {
           </div>
         </section>
 
-        <aside className="card h-fit p-4">
-          <h2 className="text-2xl text-amber-100">Related ideas</h2>
+        <aside className="card h-fit p-4 sm:p-5">
+          <h2 className="text-2xl text-amber-100">Where to go next</h2>
           <p className="soft mt-1 text-sm">
             {relatedMode === "semantic"
               ? "Nearest teachings in meaning — across the corpus."
               : "The same insight echoing across traditions."}
           </p>
 
-          {resonances.length > 0 ? (
-            <div className="mt-4">
-              <p className="layer-heading">Cross-tradition resonances</p>
-              <div className="mt-2 space-y-3">
-                {resonances.map((r, idx) => {
-                  const link = resonanceLinks[idx];
-                  const href =
-                    link?.kind === "passage"
-                      ? `/read/${encodeURIComponent(link.passageId)}`
-                      : link?.kind === "collection"
-                        ? `/read?collection=${encodeURIComponent(link.collection)}`
-                        : null;
-                  return (
-                    <article key={`${r.citation}-${idx}`} className="citation-card p-3">
-                      {href ? (
-                        <Link
-                          href={href}
-                          className="group inline-flex items-center gap-1 text-sm text-amber-100 underline decoration-amber-200/30 underline-offset-2 transition hover:decoration-amber-200/70"
-                        >
-                          <InlineMarkdown>{r.citation}</InlineMarkdown>
-                          <span
-                            aria-hidden
-                            className="text-[10px] text-amber-200/60 transition group-hover:translate-x-0.5"
-                          >
-                            {link?.kind === "passage" ? "↗" : "→"}
-                          </span>
-                        </Link>
-                      ) : (
-                        <span className="text-sm text-amber-100">
-                          <InlineMarkdown>{r.citation}</InlineMarkdown>
-                        </span>
-                      )}
-                      <p className="soft mt-1 text-xs leading-relaxed">
-                        <InlineMarkdown>{r.resonance}</InlineMarkdown>
-                      </p>
-                      {r.divergence ? (
-                        <p className="mt-2 text-xs leading-relaxed text-stone-300">
-                          <span className="font-semibold text-amber-100">Divergence:</span>{" "}
-                          <InlineMarkdown>{r.divergence}</InlineMarkdown>
-                        </p>
-                      ) : null}
-                    </article>
-                  );
-                })}
-              </div>
-            </div>
-          ) : null}
-
-          <div className="mt-4">
+          <div className="mt-5">
             <p className="layer-heading">Passages to explore</p>
-            <div className="mt-2 space-y-3">
+            <div className="mt-3 space-y-3">
               {related.length === 0 ? (
                 <p className="soft text-sm">No related passages yet.</p>
               ) : (

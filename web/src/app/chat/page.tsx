@@ -11,6 +11,7 @@ import { COMPARE_PRESETS } from "@/lib/comparePresets";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop, ArtChip } from "@/components/ArtImage";
+import { Disclosure } from "@/components/ui/Disclosure";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { passagePreview, practiceText } from "@/lib/verseLayers";
 import ReactMarkdown from "react-markdown";
@@ -247,8 +248,8 @@ export default function ChatPage() {
         </div>
       </section>
 
-      <div className="mt-6 grid gap-4 lg:grid-cols-[2fr_1fr]">
-        <section className="manuscript-card p-4 sm:p-5">
+      <div className="mt-8 grid gap-5 lg:grid-cols-[2fr_1fr]">
+        <section className="manuscript-card p-5 sm:p-6">
           {pinnedVerse ? (
             <ArtChip
               src={collectionImageSrc(pinnedVerse.collection)}
@@ -284,7 +285,7 @@ export default function ChatPage() {
               </div>
             </ArtChip>
           ) : null}
-          <div className="space-y-3">
+          <div className="space-y-4">
             {messages.length === 0 ? (
               <div className="citation-card p-5">
                 <p className="layer-heading">Begin</p>
@@ -327,84 +328,96 @@ export default function ChatPage() {
             )}
           </div>
 
-          <div className="mt-4 flex flex-wrap gap-2">
-            {suggestions.map((s) => (
-              <button key={s} onClick={() => setQ(s)} className="btn-secondary px-3 py-1 text-xs">
-                {s}
-              </button>
-            ))}
+          <div className="mt-6">
+            <p className="layer-heading mb-2">Try asking</p>
+            <div className="flex flex-wrap gap-2">
+              {suggestions.map((s) => (
+                <button key={s} onClick={() => setQ(s)} className="btn-secondary px-3 py-1 text-xs">
+                  {s}
+                </button>
+              ))}
+            </div>
           </div>
 
-          <label className="mt-4 block font-sans text-sm soft">
-            <input type="checkbox" checked={useRag} onChange={(e) => setUseRag(e.target.checked)} className="mr-2 accent-amber-300" />
-            Use source-grounded retrieval (recommended)
-          </label>
-          <label className="mt-2 block font-sans text-sm soft">
-            <input
-              type="checkbox"
-              checked={compareMode}
-              onChange={(e) => {
-                setCompareMode(e.target.checked);
-                if (e.target.checked) setChatMode("compare");
-              }}
-              className="mr-2 accent-amber-300"
-            />
-            Compare mode (debate/synthesis between two texts)
-          </label>
-          {compareMode && (
-            <>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {COMPARE_PRESETS.map((preset) => (
-                  <button
-                    key={preset.id}
-                    type="button"
-                    onClick={() => applyPreset(preset.id)}
-                    className="btn-secondary px-3 py-1 text-xs"
-                  >
-                    {preset.label}
-                  </button>
-                ))}
-              </div>
-              <div className="mt-3 grid gap-3 lg:grid-cols-2">
-                <div className="space-y-3">
-                  <FilterSelect
-                    label="Voice A — text"
-                    tone="gold"
-                    value={compareA}
-                    onChange={setCompareA}
-                    options={collectionOptions.map((o) => ({ ...o, label: `A · ${o.label}` }))}
-                  />
-                  <ComparePassageSelect
-                    label="Voice A — passage (optional)"
-                    tone="gold"
-                    collection={compareA}
-                    passages={passagesA}
-                    value={compareVerseA}
-                    onChange={setCompareVerseA}
-                  />
-                </div>
-                <div className="space-y-3">
-                  <FilterSelect
-                    label="Voice B — text"
-                    tone="lapis"
-                    value={compareB}
-                    onChange={setCompareB}
-                    options={collectionOptions.map((o) => ({ ...o, label: `B · ${o.label}` }))}
-                  />
-                  <ComparePassageSelect
-                    label="Voice B — passage (optional)"
-                    tone="lapis"
-                    collection={compareB}
-                    passages={passagesB}
-                    value={compareVerseB}
-                    onChange={setCompareVerseB}
-                  />
-                </div>
-              </div>
-            </>
-          )}
+          <div className="mt-4">
+            <Disclosure
+              summary="Retrieval & compare options"
+              hint={`${useRag ? "Grounded" : "Freeform"}${compareMode ? " · Compare" : ""}`}
+              defaultOpen={compareMode}
+            >
+              <label className="block font-sans text-sm soft">
+                <input type="checkbox" checked={useRag} onChange={(e) => setUseRag(e.target.checked)} className="mr-2 accent-amber-300" />
+                Use source-grounded retrieval (recommended)
+              </label>
+              <label className="mt-3 block font-sans text-sm soft">
+                <input
+                  type="checkbox"
+                  checked={compareMode}
+                  onChange={(e) => {
+                    setCompareMode(e.target.checked);
+                    if (e.target.checked) setChatMode("compare");
+                  }}
+                  className="mr-2 accent-amber-300"
+                />
+                Compare mode (debate/synthesis between two texts)
+              </label>
+              {compareMode && (
+                <>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {COMPARE_PRESETS.map((preset) => (
+                      <button
+                        key={preset.id}
+                        type="button"
+                        onClick={() => applyPreset(preset.id)}
+                        className="btn-secondary px-3 py-1 text-xs"
+                      >
+                        {preset.label}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="mt-4 grid gap-3 lg:grid-cols-2">
+                    <div className="space-y-3">
+                      <FilterSelect
+                        label="Voice A — text"
+                        tone="gold"
+                        value={compareA}
+                        onChange={setCompareA}
+                        options={collectionOptions.map((o) => ({ ...o, label: `A · ${o.label}` }))}
+                      />
+                      <ComparePassageSelect
+                        label="Voice A — passage (optional)"
+                        tone="gold"
+                        collection={compareA}
+                        passages={passagesA}
+                        value={compareVerseA}
+                        onChange={setCompareVerseA}
+                      />
+                    </div>
+                    <div className="space-y-3">
+                      <FilterSelect
+                        label="Voice B — text"
+                        tone="lapis"
+                        value={compareB}
+                        onChange={setCompareB}
+                        options={collectionOptions.map((o) => ({ ...o, label: `B · ${o.label}` }))}
+                      />
+                      <ComparePassageSelect
+                        label="Voice B — passage (optional)"
+                        tone="lapis"
+                        collection={compareB}
+                        passages={passagesB}
+                        value={compareVerseB}
+                        onChange={setCompareVerseB}
+                      />
+                    </div>
+                  </div>
+                </>
+              )}
+            </Disclosure>
+          </div>
+
           <textarea
-            className="input-field mt-3 w-full rounded-2xl p-3"
+            className="input-field mt-4 w-full rounded-2xl p-3"
             rows={4}
             value={q}
             onChange={(e) => setQ(e.target.value)}

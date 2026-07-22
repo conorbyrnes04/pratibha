@@ -6,10 +6,10 @@ import { useEffect, useState } from "react";
 
 const LINKS: Array<{ href: string; label: string; match?: string }> = [
   { href: "/read", label: "Library" },
-  { href: "/random", label: "Random" },
-  { href: "/chat", label: "Study Chat" },
   { href: "/learn", label: "Paths", match: "/learn" },
   { href: "/learn#threads", label: "Threads", match: "/learn#threads" },
+  { href: "/chat", label: "Study Chat" },
+  { href: "/random", label: "Oracle" },
   { href: "/journal", label: "Journal" },
   { href: "/sources", label: "Sources" },
 ];

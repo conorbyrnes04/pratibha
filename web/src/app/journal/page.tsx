@@ -62,53 +62,74 @@ export default function JournalPage() {
 
   return (
     <main className="page-shell">
-      <p className="eyebrow">Personal study memory</p>
-      <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Journal</h1>
-      <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">Saved reflections stay local in this browser and remain linked to their source passages. They are not synced — export a backup so you don&apos;t lose them if you clear your browser or switch devices.</p>
+      <header>
+        <p className="eyebrow">Personal study memory</p>
+        <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Journal</h1>
+        <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
+          Saved reflections stay local in this browser, linked to their source passages.
+        </p>
+      </header>
 
-      <div className="mt-6 flex flex-wrap items-center gap-3">
+      <div className="mt-8 flex flex-wrap items-center gap-3">
         <input
           value={q}
           onChange={(event) => setQ(event.target.value)}
-          className="input-field w-full max-w-xl rounded-lg px-3 py-2"
+          className="input-field min-w-0 flex-1 rounded-lg px-3 py-2"
           placeholder="Search notes, passages, prompts..."
         />
-        <button onClick={exportNotes} disabled={notes.length === 0} className="btn-secondary px-4 py-2 text-sm disabled:opacity-50">
-          Export backup
-        </button>
-        <button onClick={() => fileRef.current?.click()} className="btn-secondary px-4 py-2 text-sm">
-          Import
-        </button>
-        <input
-          ref={fileRef}
-          type="file"
-          accept="application/json,.json"
-          className="hidden"
-          onChange={(e) => {
-            const f = e.target.files?.[0];
-            if (f) importNotes(f);
-            e.target.value = "";
-          }}
-        />
+        <div className="flex shrink-0 items-center gap-2">
+          <button onClick={exportNotes} disabled={notes.length === 0} className="btn-secondary px-4 py-2 text-sm disabled:opacity-50">
+            Export
+          </button>
+          <button onClick={() => fileRef.current?.click()} className="btn-secondary px-4 py-2 text-sm">
+            Import
+          </button>
+          <input
+            ref={fileRef}
+            type="file"
+            accept="application/json,.json"
+            className="hidden"
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) importNotes(f);
+              e.target.value = "";
+            }}
+          />
+        </div>
       </div>
+      <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-500">
+        Notes aren&apos;t synced — export a backup so you don&apos;t lose them if you clear your browser or switch devices.
+      </p>
 
-      <div className="mt-6 space-y-4">
+      <div className="mt-8 space-y-4">
         {filtered.length === 0 ? (
-          <section className="card p-5">
-            <p className="soft">No notes yet. Save a reflection from a passage, learning step, or an Ask Pratibha response.</p>
+          <section className="card flex flex-col items-center gap-3 p-10 text-center">
+            <p className="text-2xl text-amber-100">
+              {notes.length === 0 ? "Your journal is empty" : "No matching notes"}
+            </p>
+            <p className="soft max-w-md">
+              {notes.length === 0
+                ? "Save a reflection from a passage, a learning step, or an Ask Pratibha response, and it will appear here."
+                : "Try a different search term to find your saved reflections."}
+            </p>
+            {notes.length === 0 ? (
+              <Link href="/read" className="btn-primary mt-2 px-5 py-2.5 text-sm">
+                Browse the library
+              </Link>
+            ) : null}
           </section>
         ) : (
           filtered.map((note) => (
-            <article key={note.id} className="card p-5">
+            <article key={note.id} className="card p-5 sm:p-6">
               <div className="flex flex-wrap items-start justify-between gap-3">
-                <div>
+                <div className="min-w-0">
                   <p className="layer-heading">{new Date(note.updatedAt).toLocaleString()}</p>
                   <h2 className="mt-2 text-2xl text-amber-100">{note.passageTitle}</h2>
                   {note.kind === "chat_response" && note.question ? (
                     <p className="soft mt-2 text-sm">You asked: {note.question}</p>
                   ) : null}
                 </div>
-                <div className="flex gap-2">
+                <div className="flex shrink-0 gap-2">
                   {journalSourceHref(note) ? (
                     <Link href={journalSourceHref(note)!} className="btn-secondary px-4 py-2 text-sm">
                       {sourceLabel(note)}
@@ -119,8 +140,20 @@ export default function JournalPage() {
                   </button>
                 </div>
               </div>
-              {note.prompt ? <p className="soft mt-3 text-sm">{note.prompt}</p> : null}
+              {note.prompt ? <p className="soft mt-4 text-sm">{note.prompt}</p> : null}
               <p className="mt-4 whitespace-pre-wrap leading-relaxed text-stone-200">{note.body}</p>
+              {note.tags.length > 0 ? (
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {note.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-amber-200/20 px-3 py-1 font-sans text-xs text-stone-400"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
             </article>
           ))
         )}

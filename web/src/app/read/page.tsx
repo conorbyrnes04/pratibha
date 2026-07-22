@@ -15,6 +15,7 @@ import { collectionGlyph, unitGlyph } from "@/lib/glyphs";
 import { buildLibraryTomes, groupTomesByTradition, sortTomes, LIBRARY_SORT_OPTIONS, type LibrarySort, type LibraryTome } from "@/lib/libraryTomes";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
+import { Disclosure } from "@/components/ui/Disclosure";
 import { displayPassageTitle, patanjaliSutraRef, sortPassagesForLibrary } from "@/lib/passageTitles";
 import { layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 
@@ -33,13 +34,12 @@ function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
       <span className="tome__body">
         <span className="tome__title">{tome.displayName}</span>
         <span className="tome__author">{tome.author}</span>
-        <span className="tome__meta">
-          {tome.count} {tome.count === 1 ? "passage" : "passages"}
-        </span>
       </span>
       <span className="tome__foot">
         <span className="tome__tradition">{tome.tradition}</span>
-        <span className="tome__authored">{tome.authored}</span>
+        <span className="tome__meta">
+          {tome.count} {tome.count === 1 ? "passage" : "passages"} · {tome.authored}
+        </span>
       </span>
     </button>
   );
@@ -174,82 +174,79 @@ function LibraryPageContent() {
         </div>
       </section>
 
-      <div className="mt-6 grid gap-4 lg:grid-cols-[2fr_1fr]">
-        <label className="block">
-          <p className="layer-heading mb-2">Search</p>
-          <input
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-            className="input-field w-full rounded-[18px] px-4 py-3"
-            placeholder={showShelf ? "Search across all texts..." : "Search passages in this text..."}
-          />
-        </label>
-        {!showShelf ? (
-          <FilterSelect
-            label="Text"
-            tone="gold"
-            value={collection}
-            onChange={(next) => {
-              setCollection(next);
-              syncReadUrl({ collection: next });
-            }}
-            options={collectionOptions}
-          />
-        ) : (
-          <FilterSelect
-            label="Sort"
-            tone="gold"
-            value={librarySort}
-            onChange={(next) => setLibrarySort(next as LibrarySort)}
-            options={LIBRARY_SORT_OPTIONS}
-          />
-        )}
-      </div>
+      <div className="section-stack section-stack--tight mt-8">
+        <div>
+          <div className="grid gap-4 lg:grid-cols-[2fr_1fr]">
+            <label className="block">
+              <p className="layer-heading mb-2">Search</p>
+              <input
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                className="input-field w-full rounded-[18px] px-4 py-3"
+                placeholder={showShelf ? "Search across all texts..." : "Search passages in this text..."}
+              />
+            </label>
+            {!showShelf ? (
+              <FilterSelect
+                label="Text"
+                tone="gold"
+                value={collection}
+                onChange={(next) => {
+                  setCollection(next);
+                  syncReadUrl({ collection: next });
+                }}
+                options={collectionOptions}
+              />
+            ) : (
+              <FilterSelect
+                label="Sort"
+                tone="gold"
+                value={librarySort}
+                onChange={(next) => setLibrarySort(next as LibrarySort)}
+                options={LIBRARY_SORT_OPTIONS}
+              />
+            )}
+          </div>
+
+          <div className="mt-5">
+            <ThemeConstellation
+              themes={themeConstellation}
+              active={theme}
+              onChange={(next) => {
+                setTheme(next);
+                syncReadUrl({ theme: next });
+              }}
+            />
+          </div>
+
+          <div className="mt-4">
+            <Disclosure summary="Display options" hint={includeDrafts ? "drafts on" : undefined}>
+              {!showShelf ? (
+                <label className="flex items-center gap-2 font-sans text-sm soft">
+                  <input type="checkbox" className="accent-amber-300" checked={learningMode} onChange={(e) => setLearningMode(e.target.checked)} />
+                  Learning mode previews (core idea · why it matters · practice)
+                </label>
+              ) : null}
+              <label className={`flex items-center gap-2 font-sans text-sm soft${!showShelf ? " mt-3" : ""}`}>
+                <input type="checkbox" className="accent-amber-300" checked={includeDrafts} onChange={(e) => setIncludeDrafts(e.target.checked)} />
+                Include rewrite and structural drafts
+              </label>
+            </Disclosure>
+          </div>
+
+          {loadError ? (
+            <p className="mt-4 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-4 font-sans text-sm text-amber-100">
+              {loadError}
+            </p>
+          ) : null}
+        </div>
 
       {showShelf ? (
-        <p className="soft mt-3 font-sans text-sm">
-          {tomes.length} texts · {items.length} passages
-          {librarySort === "author" ? " · sorted by author" : librarySort === "tradition" ? " · grouped by tradition" : " · sorted by title"}
-        </p>
-      ) : null}
-
-      <div className="mt-5">
-        <ThemeConstellation
-          themes={themeConstellation}
-          active={theme}
-          onChange={(next) => {
-            setTheme(next);
-            syncReadUrl({ theme: next });
-          }}
-        />
-      </div>
-
-      {!showShelf ? (
-        <>
-          <label className="mt-4 block font-sans text-sm soft">
-            <input type="checkbox" className="mr-2 accent-amber-300" checked={learningMode} onChange={(e) => setLearningMode(e.target.checked)} />
-            Learning mode previews
-          </label>
-          <label className="mt-2 block font-sans text-sm soft">
-            <input type="checkbox" className="mr-2 accent-amber-300" checked={includeDrafts} onChange={(e) => setIncludeDrafts(e.target.checked)} />
-            Include rewrite and structural drafts
-          </label>
-        </>
-      ) : (
-        <label className="mt-4 block font-sans text-sm soft">
-          <input type="checkbox" className="mr-2 accent-amber-300" checked={includeDrafts} onChange={(e) => setIncludeDrafts(e.target.checked)} />
-          Include rewrite and structural drafts
-        </label>
-      )}
-
-      {loadError ? (
-        <p className="mt-4 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-4 font-sans text-sm text-amber-100">
-          {loadError}
-        </p>
-      ) : null}
-
-      {showShelf ? (
-        <div className="mt-8 space-y-10">
+        <div className="space-y-10">
+          <p className="soft font-sans text-sm">
+            {tomes.length} texts · {items.length} passages
+            {librarySort === "author" ? " · sorted by author" : librarySort === "tradition" ? " · grouped by tradition" : " · sorted by title"}
+          </p>
           {shelves ? (
             shelves.map((shelf) => (
               <section key={shelf.tradition}>
@@ -278,7 +275,7 @@ function LibraryPageContent() {
           ) : null}
         </div>
       ) : (
-        <div className="mt-6 space-y-3">
+        <div className="space-y-3">
           {filtered.slice(0, 300).map((x) => (
             <Link key={x._id} href={`/read/${encodeURIComponent(x._id)}`} className="card group block p-5 transition hover:-translate-y-0.5 hover:border-amber-300/30">
               <div className="flex items-start justify-between gap-4">
@@ -321,6 +318,7 @@ function LibraryPageContent() {
           ) : null}
         </div>
       )}
+      </div>
     </main>
   );
 }

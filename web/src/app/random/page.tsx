@@ -86,7 +86,7 @@ export default function RandomPage() {
         </div>
       </section>
 
-      <div className="mt-5 flex flex-wrap items-end gap-3">
+      <div className="mt-6 flex flex-wrap items-end gap-3">
         <div className="min-w-[min(100%,18rem)] flex-1">
           <FilterSelect
             label="Text"
@@ -122,7 +122,7 @@ export default function RandomPage() {
           </div>
         </section>
       ) : item ? (
-        <section className="manuscript-card relative mt-6 overflow-hidden p-6">
+        <section className="manuscript-card relative mt-8 overflow-hidden p-6 sm:p-8">
           <ArtBackdrop srcs={collectionArtPool(item.collection)} variant="hero" />
           <div className="relative z-10">
             <h2 className="text-3xl leading-none text-amber-100">{displayPassageTitle(item)}</h2>

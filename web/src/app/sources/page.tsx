@@ -8,6 +8,8 @@ import { collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
+import { Section } from "@/components/ui/Section";
+import { Disclosure } from "@/components/ui/Disclosure";
 import type { SourceAttribution } from "@/lib/types";
 
 const LICENSE_TONE: Record<string, string> = {
@@ -69,38 +71,40 @@ function SourceCard({ item }: { item: SourceAttribution }) {
           </div>
         </div>
 
-        <dl className="mt-5 space-y-3 font-sans text-sm leading-relaxed text-stone-300">
-          <div>
-            <dt className="layer-heading mb-1">Original work</dt>
-            <dd>{item.original_work}</dd>
-          </div>
-          {item.anchor_translation ? (
-            <div>
-              <dt className="layer-heading mb-1">English basis</dt>
-              <dd>{item.anchor_translation}</dd>
-            </div>
-          ) : null}
-          {item.sanskrit_source ? (
-            <div>
-              <dt className="layer-heading mb-1">Source language</dt>
-              <dd>{item.sanskrit_source}</dd>
-            </div>
-          ) : null}
-          <div>
-            <dt className="layer-heading mb-1">Pratibha editorial</dt>
-            <dd className="text-stone-400">
-              {item.editorial_note}
-              {item.conceived_by_conor ? (
-                <span className="mt-1 block text-amber-200/80">
-                  Original Pratibha work conceived by Conor Byrnes.
-                </span>
-              ) : null}
-            </dd>
-          </div>
-        </dl>
+        <p className="mt-4 font-sans text-sm leading-relaxed text-stone-300">{item.original_work}</p>
 
-        {links.length ? (
-          <div className="mt-4 flex flex-wrap gap-3 font-sans text-sm">
+        <div className="mt-4">
+          <Disclosure summary="Edition & editorial details" hint={item.license_label}>
+            <dl className="space-y-3 font-sans text-sm leading-relaxed text-stone-300">
+              {item.anchor_translation ? (
+                <div>
+                  <dt className="layer-heading mb-1">English basis</dt>
+                  <dd>{item.anchor_translation}</dd>
+                </div>
+              ) : null}
+              {item.sanskrit_source ? (
+                <div>
+                  <dt className="layer-heading mb-1">Source language</dt>
+                  <dd>{item.sanskrit_source}</dd>
+                </div>
+              ) : null}
+              <div>
+                <dt className="layer-heading mb-1">Pratibha editorial</dt>
+                <dd className="text-stone-400">
+                  {item.editorial_note}
+                  {item.conceived_by_conor ? (
+                    <span className="mt-1 block text-amber-200/80">
+                      Original Pratibha work conceived by Conor Byrnes.
+                    </span>
+                  ) : null}
+                </dd>
+              </div>
+            </dl>
+          </Disclosure>
+        </div>
+
+        {links.length || inCorpus ? (
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 font-sans text-sm">
             {links.map((link) => (
               <a
                 key={link.label}
@@ -112,16 +116,15 @@ function SourceCard({ item }: { item: SourceAttribution }) {
                 {link.label}
               </a>
             ))}
+            {inCorpus ? (
+              <Link
+                href={`/read?collection=${encodeURIComponent(item.collection)}`}
+                className="text-amber-200/90 hover:text-amber-100"
+              >
+                Browse in Library →
+              </Link>
+            ) : null}
           </div>
-        ) : null}
-
-        {inCorpus ? (
-          <Link
-            href={`/read?collection=${encodeURIComponent(item.collection)}`}
-            className="mt-5 inline-block font-sans text-sm text-amber-200/90 hover:text-amber-100"
-          >
-            Browse {displayCollectionName(item.collection)} in Library →
-          </Link>
         ) : null}
       </div>
     </article>
@@ -162,72 +165,87 @@ export default function SourcesPage() {
 
   return (
     <main className="page-shell max-w-4xl">
-      <p className="eyebrow">Attribution</p>
-      <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Sources</h1>
-      <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
-        Translations, editions, and editorial layers used in Pratibha — so credit is clear and the study companion stays on
-        solid ground.
-      </p>
+      <div className="section-stack">
+        <header>
+          <p className="eyebrow">Attribution</p>
+          <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Sources</h1>
+          <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
+            Translations, editions, and editorial layers used in Pratibha — so credit is clear and the study companion stays on
+            solid ground.
+          </p>
 
-      <section className="manuscript-card relative mt-8 overflow-hidden rounded-[22px] p-5 sm:p-6">
-        <ArtBackdrop srcs={generatedArtPool("bg-sources")} variant="banner" />
-        <div className="relative z-10">
-          <h2 className="text-2xl font-semibold text-stone-100">How Pratibha uses texts</h2>
-          <div className="soft mt-4 space-y-3 font-sans text-sm leading-relaxed">
-            <p>
-              <strong className="font-medium text-stone-200">Anchor passages</strong> reproduce or closely follow named
-              translations or public-domain editions where indicated. We do not claim copyright over those English renderings.
-            </p>
-            <p>
-              <strong className="font-medium text-stone-200">Pratibha layers</strong> — commentary, key terms, cross-tradition
-              resonances, and practice — are original editorial work unless a unit explicitly cites a traditional commentator.
-            </p>
-            <p>
-              <strong className="font-medium text-stone-200">Sanskrit and source scripts</strong> follow received or scholarly
-              editions noted per text. Devanagari marked as editorial reconstruction is not manuscript-verified.
-            </p>
-            <p className="text-stone-400">
-              Pratibha is a study companion, not a substitute for primary editions. For citation, scholarship, or publication,
-              consult the listed translators and publishers directly.
-            </p>
-          </div>
-          {summary.total_passages > 0 ? (
-            <p className="mt-5 font-sans text-xs uppercase tracking-[0.18em] text-stone-500">
-              {summary.collections_in_corpus} texts · {summary.total_passages} passages
-            </p>
-          ) : null}
-        </div>
-      </section>
+          <section className="manuscript-card relative mt-8 overflow-hidden rounded-[22px] p-5 sm:p-6">
+            <ArtBackdrop srcs={generatedArtPool("bg-sources")} variant="banner" />
+            <div className="relative z-10">
+              <div className="flex flex-wrap items-baseline justify-between gap-3">
+                <h2 className="text-2xl font-semibold text-stone-100">How Pratibha uses texts</h2>
+                {summary.total_passages > 0 ? (
+                  <p className="font-sans text-xs uppercase tracking-[0.18em] text-stone-500">
+                    {summary.collections_in_corpus} texts · {summary.total_passages} passages
+                  </p>
+                ) : null}
+              </div>
+              <p className="soft mt-3 font-sans text-sm leading-relaxed">
+                Anchor passages credit their translators; Pratibha&apos;s own layers are original editorial work. The full
+                policy is below.
+              </p>
+              <div className="mt-4">
+                <Disclosure summary="How texts, translations & editorial layers are handled">
+                  <div className="space-y-3 font-sans text-sm leading-relaxed">
+                    <p>
+                      <strong className="font-medium text-stone-200">Anchor passages</strong> reproduce or closely follow named
+                      translations or public-domain editions where indicated. We do not claim copyright over those English
+                      renderings.
+                    </p>
+                    <p>
+                      <strong className="font-medium text-stone-200">Pratibha layers</strong> — commentary, key terms,
+                      cross-tradition resonances, and practice — are original editorial work unless a unit explicitly cites a
+                      traditional commentator.
+                    </p>
+                    <p>
+                      <strong className="font-medium text-stone-200">Sanskrit and source scripts</strong> follow received or
+                      scholarly editions noted per text. Devanagari marked as editorial reconstruction is not
+                      manuscript-verified.
+                    </p>
+                    <p className="text-stone-400">
+                      Pratibha is a study companion, not a substitute for primary editions. For citation, scholarship, or
+                      publication, consult the listed translators and publishers directly.
+                    </p>
+                  </div>
+                </Disclosure>
+              </div>
+            </div>
+          </section>
 
-      {error ? <p className="mt-6 font-sans text-sm text-red-300/90">{error}</p> : null}
+          {error ? <p className="mt-6 font-sans text-sm text-red-300/90">{error}</p> : null}
+        </header>
 
-      <section className="mt-10">
-        <h2 className="layer-heading mb-4">In the library</h2>
-        <div className="space-y-5">
-          {inCorpus.map((item) => (
-            <SourceCard key={item.id} item={item} />
-          ))}
-        </div>
-      </section>
-
-      {comingSoon.length > 0 ? (
-        <section className="mt-12">
-          <h2 className="layer-heading mb-4">Coming into the library</h2>
+        <Section title="In the library" as="h2">
           <div className="space-y-5">
-            {comingSoon.map((item) => (
+            {inCorpus.map((item) => (
               <SourceCard key={item.id} item={item} />
             ))}
           </div>
-        </section>
-      ) : null}
+        </Section>
 
-      <p className="soft mt-12 font-sans text-sm leading-relaxed">
-        See a missing or incorrect credit?{" "}
-        <Link href="/read" className="text-amber-200/90 underline decoration-amber-200/30 underline-offset-4">
-          Note it when saving a passage to your journal
-        </Link>
-        .
-      </p>
+        {comingSoon.length > 0 ? (
+          <Section title="Coming into the library" as="h2">
+            <div className="space-y-5">
+              {comingSoon.map((item) => (
+                <SourceCard key={item.id} item={item} />
+              ))}
+            </div>
+          </Section>
+        ) : null}
+
+        <p className="soft font-sans text-sm leading-relaxed">
+          See a missing or incorrect credit?{" "}
+          <Link href="/read" className="text-amber-200/90 underline decoration-amber-200/30 underline-offset-4">
+            Note it when saving a passage to your journal
+          </Link>
+          .
+        </p>
+      </div>
     </main>
   );
 }

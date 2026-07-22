@@ -25,10 +25,17 @@ export function LayerBlock({
   layer,
   compact = false,
   defaultCollapsed = false,
+  bare = false,
 }: {
   layer: PratibhaLayer;
   compact?: boolean;
   defaultCollapsed?: boolean;
+  /**
+   * Render only the layer body (no surrounding card, heading, or built-in
+   * collapse) so the block can live inside a <Disclosure> panel that already
+   * supplies its own chrome and progressive-disclosure behaviour.
+   */
+  bare?: boolean;
 }) {
   const items = Array.isArray(layer.items) ? layer.items : [];
   const isOriginal = layer.kind === "original";
@@ -36,10 +43,23 @@ export function LayerBlock({
   const isAppendix = layer.kind === "appendix";
   const cardClass = isOriginal ? "manuscript-card" : isPractice ? "practice-card" : "card";
   const longBody = (layer.body || "").length > 1200;
-  const startCollapsed = defaultCollapsed || (isAppendix && longBody);
+  const startCollapsed = !bare && (defaultCollapsed || (isAppendix && longBody));
+
+  if (bare) {
+    return (
+      <div>
+        {layer.kind === "translation" && layer.layer_provenance ? (
+          <p className="soft mb-3 font-sans text-xs leading-relaxed text-stone-400">
+            {layer.layer_provenance}
+          </p>
+        ) : null}
+        {renderLayerBody(layer, items, { compact, isOriginal })}
+      </div>
+    );
+  }
 
   return (
-    <section className={`${cardClass} mt-4 p-5 sm:p-6`}>
+    <section className={`${cardClass} mt-5 p-5 sm:mt-6 sm:p-6`}>
       {startCollapsed ? (
         <details className="group">
           <summary className="cursor-pointer list-none">
