@@ -5,6 +5,11 @@ export function containsDevanagari(text?: string): boolean {
   return /[\u0900-\u097F]/.test(text || "");
 }
 
+/** Tibetan block (U+0F00-0FFF) - Milarepa / Tilopa Uchen originals. */
+export function containsTibetan(text?: string): boolean {
+  return /[ༀ-࿿]/.test(text || "");
+}
+
 const NON_SANSKRIT_COLLECTION =
   /heraclitus|fragment|epictetus|enchiridion|meditations|phaedo|plato|plotinus|ennead|eckhart|ibn.?arabi|know.?yourself|balyani|rumi|mathnawi|tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|zhongyong|milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō/i;
 

@@ -1,7 +1,7 @@
 import type { KeyTerm, PratibhaLayer, Resonance } from "@/lib/types";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { containsDevanagari } from "@/lib/sanskritScript";
+import { containsDevanagari, containsTibetan } from "@/lib/sanskritScript";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 
 /**
@@ -10,7 +10,9 @@ import { InlineMarkdown } from "@/components/InlineMarkdown";
  * with full diacritic coverage so it doesn't render glyph-by-glyph.
  */
 function originalScriptClass(body?: string): string {
-  return containsDevanagari(body) ? "source-script" : "source-script source-script--latin";
+  if (containsTibetan(body)) return "source-script source-script--tibetan";
+  if (containsDevanagari(body)) return "source-script";
+  return "source-script source-script--latin";
 }
 
 function isKeyTerm(item: unknown): item is KeyTerm {
