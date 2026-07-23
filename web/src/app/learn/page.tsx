@@ -30,8 +30,6 @@ import {
   threadsForPathStep,
 } from "@/lib/learningThreads";
 import { learnStepContextId } from "@/lib/journalStorage";
-import { generatedArtPool } from "@/lib/collectionImages";
-import { ArtBackdrop } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
 import type { VerseItem } from "@/lib/types";
 import { passagePreview } from "@/lib/verseLayers";
@@ -289,11 +287,35 @@ export default function LearnPage() {
     });
   }
 
+  function goToStepIndex(targetIdx: number) {
+    const s = track.steps[targetIdx];
+    if (!s) return;
+    setOpenStepId(s.id);
+    pendingScrollRef.current = s.id;
+    syncUrl(track.id, s.id, null);
+  }
+
   function onGateComplete(trackId: string, stepId: string) {
     const key = stepKey(trackId, stepId);
     if (!progress[key]) toggle(trackId, stepId);
 
-    if (!activeThreadId || !activeBeadId) return;
+    if (!activeThreadId || !activeBeadId) {
+      // Path mode: flow straight into the next gate instead of leaving the
+      // reader to scroll down and expand another dropdown. A short beat lets
+      // the "complete" state register before the next gate opens in place.
+      const idx = track.steps.findIndex((x) => x.id === stepId);
+      const next = idx >= 0 ? track.steps[idx + 1] : undefined;
+      if (next) {
+        if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+        advanceTimerRef.current = setTimeout(() => {
+          setOpenStepId(next.id);
+          pendingScrollRef.current = next.id;
+          syncUrl(track.id, next.id, null);
+          advanceTimerRef.current = null;
+        }, 450);
+      }
+      return;
+    }
     const thread = findThread(activeThreadId);
     if (!thread) return;
     const idx = beadIndex(thread, activeBeadId);
@@ -368,7 +390,12 @@ export default function LearnPage() {
           onClick={() => continueTo(heroTrack.id, heroNextStep.id)}
           className="resume-hero card group w-full overflow-hidden border-amber-200/40 p-5 text-left transition hover:-translate-y-0.5 sm:p-6"
         >
-          <ArtBackdrop srcs={generatedArtPool("bg-paths")} variant="card" />
+          <img
+            src="/sumi/wash/mandala.webp"
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-16 top-1/2 h-[150%] w-auto max-w-none -translate-y-1/2 object-contain opacity-[0.16] mix-blend-screen [filter:invert(1)]"
+          />
           <div className="relative z-10">
             <p className="font-sans text-xs uppercase tracking-[0.18em] text-amber-200/80">{heroLabel}</p>
             <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
@@ -793,6 +820,35 @@ export default function LearnPage() {
                               All journal notes
                             </Link>
                           </div>
+
+                          {!threadMode ? (
+                            <div className="flex items-center justify-between gap-3 border-t border-white/10 pt-4">
+                              <button
+                                type="button"
+                                disabled={idx <= 0}
+                                onClick={() => goToStepIndex(idx - 1)}
+                                className="btn-secondary px-4 py-2 text-sm disabled:opacity-40"
+                              >
+                                ← Previous
+                              </button>
+                              <span className="font-sans text-[11px] uppercase tracking-[0.16em] text-stone-400">
+                                Gate {idx + 1} / {track.steps.length}
+                              </span>
+                              {idx < track.steps.length - 1 ? (
+                                <button
+                                  type="button"
+                                  onClick={() => goToStepIndex(idx + 1)}
+                                  className="btn-primary px-4 py-2 text-sm"
+                                >
+                                  {done ? "Next gate →" : "Skip to next →"}
+                                </button>
+                              ) : (
+                                <span className="font-sans text-[11px] uppercase tracking-[0.16em] text-amber-200/70">
+                                  Path end
+                                </span>
+                              )}
+                            </div>
+                          ) : null}
                         </div>
                       ) : null}
                     </div>

@@ -1,8 +1,6 @@
 "use client";
 
 import type { LearningStepSpec, LearningTrack } from "@/lib/learningPaths";
-import { realmImageSrc } from "@/lib/collectionImages";
-import { ArtBackdrop } from "@/components/ArtImage";
 
 type DailySitCardProps = {
   track: LearningTrack;
@@ -13,10 +11,15 @@ type DailySitCardProps = {
   realmId?: string;
 };
 
-export function DailySitCard({ track, step, stepIndex, onBegin, realmId }: DailySitCardProps) {
+export function DailySitCard({ track, step, stepIndex, onBegin }: DailySitCardProps) {
   return (
-    <section className="daily-sit card mt-5 border-amber-200/25 p-5 sm:p-6">
-      <ArtBackdrop src={realmImageSrc(realmId)} variant="subtle" position="center 35%" />
+    <section className="daily-sit card relative mt-5 overflow-hidden border-amber-200/25 p-5 sm:p-6">
+      <img
+        src="/sumi/wash/lotus.webp"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-10 -bottom-12 h-[150%] w-auto max-w-none object-contain opacity-[0.14] mix-blend-screen [filter:invert(1)]"
+      />
       <div className="relative z-10">
         <p className="eyebrow">Today&apos;s sit</p>
         <p className="soft mt-2 text-sm leading-relaxed">

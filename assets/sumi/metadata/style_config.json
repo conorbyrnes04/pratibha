@@ -1,0 +1,17 @@
+{
+  "style": "meru",
+  "description": "Sacred geometric symbols with cosmic and spiritual themes",
+  "prompts": {
+    "default": "Create a sacred geometric symbol representing {subject}. Use clean, precise lines and geometric shapes. The design should be symmetrical, abstract yet meaningful, with a sense of cosmic order and spiritual significance. Channel the energy of sacred geometry, mandalas, and spiritual art. No text, minimal color, strong silhouette, suitable for meditation and spiritual practice.",
+    "cosmic": "Create a cosmic geometric symbol representing {subject}. Use flowing, organic lines combined with precise geometric forms. The design should evoke the vastness of space, cosmic energy, and spiritual transcendence. Channel the energy of sacred geometry, cosmic art, and visionary experiences. No text, ethereal colors, dynamic composition, suitable for spiritual exploration."
+  },
+  "model_id": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+  "sizes": {
+    "64x64": "Distant symbols (zoom out)",
+    "128x128": "Medium distance symbols",
+    "256x256": "Close-up symbols",
+    "512x512": "High detail symbols",
+    "original": "Original full-size symbols"
+  },
+  "symbols": []
+}

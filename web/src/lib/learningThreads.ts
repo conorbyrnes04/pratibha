@@ -1,4 +1,5 @@
 import { LEARNING_TRACKS } from "./learningPaths";
+import type { SumiSlug } from "@/lib/sumiGlyphs";
 
 /** A thread is one theme traced across traditions — a horizontal cut through
  *  the vertical paths. Each bead links to an existing path step. */
@@ -11,14 +12,18 @@ export type ThreadStepRef = {
   trackId: string;
   stepId: string;
   passageId: string;
+  /** Optional explicit sumi ink mark; falls back to sumiGlyph(tradition). */
+  glyphSlug?: SumiSlug;
 };
 
 export type LearningThread = {
   id: string;
   title: string;
   subtitle: string;
-  /** Single character or short glyph for the bindu. */
+  /** Single character or short glyph for the bindu (used in membership chips elsewhere). */
   glyph: string;
+  /** Optional explicit sumi ink mark for the thread medallion; falls back to sumiGlyph(title). */
+  glyphSlug?: SumiSlug;
   /** Hue shift for this thread's accent (degrees). */
   hue: number;
   steps: ThreadStepRef[];
@@ -71,6 +76,7 @@ export const LEARNING_THREADS: LearningThread[] = [
     title: "Becoming Light",
     subtitle: "You cannot see the sun unless you have first become sunlike",
     glyph: "☀",
+    glyphSlug: "sun",
     hue: 28,
     steps: [
       {
@@ -104,6 +110,7 @@ export const LEARNING_THREADS: LearningThread[] = [
     title: "Emanation & Return",
     subtitle: "The One overflows into the many — and the many remember",
     glyph: "∞",
+    glyphSlug: "infinity",
     hue: 195,
     steps: [
       {
@@ -144,6 +151,7 @@ export const LEARNING_THREADS: LearningThread[] = [
     title: "Recognition",
     subtitle: "What was forgotten is remembered — not acquired",
     glyph: "ॐ",
+    glyphSlug: "star",
     hue: 55,
     steps: [
       {
@@ -177,6 +185,7 @@ export const LEARNING_THREADS: LearningThread[] = [
     title: "The Living Breath",
     subtitle: "Haṃsa — the Goddess uttering herself as you",
     glyph: "ॐ",
+    glyphSlug: "spiral",
     hue: 12,
     steps: [
       {

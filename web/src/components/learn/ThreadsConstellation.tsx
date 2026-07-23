@@ -7,6 +7,8 @@ import {
   type LearningThread,
   type ThreadStepRef,
 } from "@/lib/learningThreads";
+import { InkGlyph, SpandaMedallion } from "@/components/InkGlyph";
+import { sumiGlyph } from "@/lib/sumiGlyphs";
 
 type ProgressMap = Record<string, boolean>;
 
@@ -46,6 +48,7 @@ function ThreadBead({
   onOpen: () => void;
 }) {
   const gateTitle = pathStepTitleForBead(step);
+  const beadState = done ? "recognized" : active ? "arising" : "unmanifest";
   return (
     <button
       type="button"
@@ -55,7 +58,7 @@ function ThreadBead({
       aria-current={active ? "step" : undefined}
     >
       <span
-        className={`thread-bead__orb relative flex h-12 w-12 items-center justify-center rounded-full border-2 font-sans text-[10px] font-bold uppercase tracking-wider transition duration-300 ${
+        className={`thread-bead__orb relative flex h-12 w-12 items-center justify-center rounded-full border-2 transition duration-300 ${
           done
             ? "border-emerald-300/70 bg-emerald-300/15 text-emerald-200"
             : active
@@ -73,7 +76,11 @@ function ThreadBead({
           style={{ background: `radial-gradient(circle, hsl(${hue} 70% 55% / 0.28), transparent 70%)` }}
           aria-hidden
         />
-        {index + 1}
+        <InkGlyph
+          glyph={step.glyphSlug ?? sumiGlyph(step.tradition)}
+          state={beadState}
+          size="sm"
+        />
       </span>
       <span className="max-w-[6.5rem] font-sans text-[9px] uppercase tracking-[0.12em] text-amber-200/55">
         {step.tradition}
@@ -84,6 +91,28 @@ function ThreadBead({
         </span>
       ) : null}
     </button>
+  );
+}
+
+/** A short tapered ink ribbon linking two beads — a single ensō-style brush
+ *  stroke, thin at both ends and fullest in the middle. Lit (bone) once the
+ *  bead to its left is done; ash otherwise. */
+function ThreadConnector({ lit }: { lit: boolean }) {
+  return (
+    <svg
+      className="mt-6 hidden w-8 shrink-0 sm:block"
+      width="32"
+      height="10"
+      viewBox="0 0 32 10"
+      aria-hidden
+      focusable="false"
+    >
+      <path
+        d="M0,5 Q16,1 32,5 Q16,9 0,5 Z"
+        fill={lit ? "var(--ink-light)" : "var(--ink-ghost)"}
+        opacity={lit ? 0.85 : 0.6}
+      />
+    </svg>
   );
 }
 
@@ -118,9 +147,12 @@ function ThreadCard({
         <button type="button" onClick={onToggle} className="w-full text-left">
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-start gap-4">
-              <span className="thread-card__glyph flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-amber-200/25 bg-amber-100/5 text-xl text-amber-200/90">
-                {thread.glyph}
-              </span>
+              <SpandaMedallion
+                glyph={thread.glyphSlug ?? sumiGlyph(thread.title)}
+                state={complete ? "recognized" : "arising"}
+                size="md"
+                hue={thread.hue}
+              />
               <div>
                 <h3 className="text-2xl leading-none text-amber-100">{thread.title}</h3>
                 <p className="soft mt-2 text-sm leading-relaxed">{thread.subtitle}</p>
@@ -141,24 +173,22 @@ function ThreadCard({
           className="thread-constellation mt-5 flex items-start gap-2 overflow-x-auto pb-1"
           onClick={(e) => e.stopPropagation()}
         >
-          {thread.steps.map((step, i) => (
-            <div key={step.id} className="flex shrink-0 items-start gap-2">
-              <ThreadBead
-                step={step}
-                index={i}
-                done={!!progress[stepKey(step.trackId, step.stepId)]}
-                active={activeBeadId === step.id}
-                hue={thread.hue}
-                onOpen={() => onOpenBead(thread.id, step.id)}
-              />
-              {i < thread.steps.length - 1 ? (
-                <span
-                  className="thread-connector mt-6 hidden h-px w-8 shrink-0 sm:block"
-                  aria-hidden
+          {thread.steps.map((step, i) => {
+            const beadDone = !!progress[stepKey(step.trackId, step.stepId)];
+            return (
+              <div key={step.id} className="flex shrink-0 items-start gap-2">
+                <ThreadBead
+                  step={step}
+                  index={i}
+                  done={beadDone}
+                  active={activeBeadId === step.id}
+                  hue={thread.hue}
+                  onOpen={() => onOpenBead(thread.id, step.id)}
                 />
-              ) : null}
-            </div>
-          ))}
+                {i < thread.steps.length - 1 ? <ThreadConnector lit={beadDone} /> : null}
+              </div>
+            );
+          })}
         </div>
 
         <div className="mt-4 h-1 rounded-full bg-white/8">
@@ -176,7 +206,7 @@ function ThreadCard({
         <div className="border-t border-amber-200/10 px-5 pb-5 sm:px-6 sm:pb-6">
           <p className="layer-heading mt-4">Along the thread</p>
           <ol className="mt-3 space-y-3">
-            {thread.steps.map((step, i) => {
+            {thread.steps.map((step) => {
               const beadDone = !!progress[stepKey(step.trackId, step.stepId)];
               const gateTitle = pathStepTitleForBead(step);
               const isActive = activeBeadId === step.id;
@@ -195,11 +225,15 @@ function ThreadCard({
                   >
                     <div className="flex items-start gap-3">
                       <span
-                        className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full font-sans text-xs font-bold ${
-                          beadDone ? "bg-emerald-300/20 text-emerald-200" : "bg-amber-100/10 text-amber-200/80"
+                        className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${
+                          beadDone ? "bg-emerald-300/20" : "bg-amber-100/10"
                         }`}
                       >
-                        {beadDone ? "✓" : i + 1}
+                        <InkGlyph
+                          glyph={step.glyphSlug ?? sumiGlyph(step.tradition)}
+                          size="sm"
+                          state={beadDone ? "recognized" : isActive ? "arising" : "unmanifest"}
+                        />
                       </span>
                       <div>
                         <p className="font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/60">

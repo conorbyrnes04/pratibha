@@ -8,6 +8,8 @@ import {
 } from "@/lib/learningPaths";
 import { Glyph } from "@/components/Glyph";
 import type { GlyphSlug } from "@/lib/glyphs";
+import { InkGlyph, SpandaMedallion } from "@/components/InkGlyph";
+import { sumiGlyph, unitSumiGlyph, type SumiSlug } from "@/lib/sumiGlyphs";
 
 type ProgressMap = Record<string, boolean>;
 
@@ -41,6 +43,17 @@ const REALM_GLYPH: Record<string, GlyphSlug> = {
 
 function realmGlyph(id: string): GlyphSlug {
   return REALM_GLYPH[id] ?? "lotus";
+}
+
+const REALM_SUMI: Record<string, SumiSlug> = {
+  foundations: "tree",
+  trika: "eye",
+  vedanta: "circle",
+  bridges: "infinity",
+};
+
+function realmSumi(id: string): SumiSlug {
+  return REALM_SUMI[id] ?? "lotus";
 }
 
 function stepKey(trackId: string, stepId: string): string {
@@ -213,14 +226,14 @@ function BranchNode({
       <div className="relative flex w-11 shrink-0 flex-col items-center sm:w-12">
         <span
           aria-hidden
-          className={`w-px flex-none bg-gradient-to-b from-amber-200/25 to-amber-200/25 ${
+          className={`w-[1.5px] flex-none bg-gradient-to-b from-amber-200/25 to-amber-200/25 blur-[0.2px] ${
             isFirst ? "h-3 opacity-0" : "h-3"
           }`}
         />
         {medallion}
         <span
           aria-hidden
-          className={`w-px flex-1 bg-gradient-to-b from-amber-200/25 to-amber-200/10 ${
+          className={`w-[1.5px] flex-1 bg-gradient-to-b from-amber-200/25 to-amber-200/10 blur-[0.2px] ${
             isLast ? "opacity-0" : ""
           }`}
         />
@@ -422,7 +435,7 @@ function RootView({
       {/* Root node */}
       <div className="flex items-center gap-4 rounded-2xl border border-amber-200/20 bg-amber-100/[0.04] p-4 sm:p-5">
         <ProgressRing pct={hydrated ? overall.pct : 0} complete={overall.complete}>
-          <Glyph name="mandala" size="sm" />
+          <InkGlyph glyph="mandala" state="arising" size="sm" />
         </ProgressRing>
         <div className="min-w-0">
           <p className="eyebrow">Root · the whole journey</p>
@@ -455,7 +468,11 @@ function RootView({
               >
                 <div className="flex items-start justify-between gap-3">
                   <ProgressRing pct={agg.pct} complete={agg.complete} next={isNext}>
-                    {agg.complete ? "✓" : <Glyph name={realmGlyph(realm.id)} size="sm" />}
+                    <InkGlyph
+                      glyph={realmSumi(realm.id)}
+                      state={agg.complete ? "recognized" : isNext ? "arising" : "unmanifest"}
+                      size="sm"
+                    />
                   </ProgressRing>
                   <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-stone-400">
                     {realm.trackIds.length} paths
@@ -500,7 +517,7 @@ function RealmView({
     <div>
       <div className="flex items-center gap-4 rounded-2xl border border-amber-200/20 bg-amber-100/[0.04] p-4 sm:p-5">
         <ProgressRing pct={agg.pct} complete={agg.complete}>
-          {agg.complete ? "✓" : <Glyph name={realmGlyph(realm.id)} size="sm" />}
+          <InkGlyph glyph={realmSumi(realm.id)} state={agg.complete ? "recognized" : "arising"} size="sm" />
         </ProgressRing>
         <div className="min-w-0">
           <p className="eyebrow">Realm</p>
@@ -530,16 +547,20 @@ function RealmView({
               onClick={() => onOpenPath(tid)}
               ariaLabel={`Open path ${t.title}. ${pathAgg.done} of ${pathAgg.total} gates complete.`}
               medallion={
-                <span
-                  className={`z-10 flex h-11 w-11 items-center justify-center rounded-full border-2 font-sans text-sm font-bold sm:h-12 sm:w-12 ${
-                    pathAgg.complete
-                      ? "border-emerald-300/80 bg-emerald-300/90 text-slate-950"
-                      : isNext || isStart
-                        ? "border-amber-200 bg-amber-200/95 text-slate-950"
-                        : "border-amber-200/30 bg-[#0b0b14] text-amber-100"
-                  }`}
-                >
-                  {pathAgg.complete ? "✓" : spineN >= 0 ? spineN + 1 : "•"}
+                <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center sm:h-12 sm:w-12">
+                  <SpandaMedallion
+                    glyph={sumiGlyph(t.title)}
+                    state={pathAgg.complete ? "recognized" : isNext || isStart ? "arising" : "unmanifest"}
+                    size="md"
+                  />
+                  {spineN >= 0 ? (
+                    <span
+                      aria-hidden
+                      className="absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full border border-amber-200/30 bg-[#0b0b14] font-sans text-[9px] font-bold text-amber-200/70"
+                    >
+                      {spineN + 1}
+                    </span>
+                  ) : null}
                 </span>
               }
             >
@@ -628,17 +649,11 @@ function GateView({
               onClick={() => onOpenGate(s.id)}
               ariaLabel={`Open gate ${i + 1}: ${s.title}.${gateDone ? " Complete." : ""}`}
               medallion={
-                <span
-                  className={`z-10 flex h-11 w-11 items-center justify-center rounded-full border-2 font-sans text-sm font-bold sm:h-12 sm:w-12 ${
-                    gateDone
-                      ? "border-emerald-300/80 bg-emerald-300/90 text-slate-950"
-                      : isCurrent
-                        ? "border-amber-200 bg-amber-200/95 text-slate-950 shadow-[0_0_0_7px_rgb(240_201_121_/_0.10)]"
-                        : "border-amber-200/25 bg-[#0b0b14] text-amber-100/90"
-                  }`}
-                >
-                  {gateDone ? "✓" : i + 1}
-                </span>
+                <SpandaMedallion
+                  glyph={unitSumiGlyph(s.id)}
+                  state={gateDone ? "recognized" : isCurrent ? "arising" : "unmanifest"}
+                  size="md"
+                />
               }
             >
               <div className="flex items-start justify-between gap-3">
