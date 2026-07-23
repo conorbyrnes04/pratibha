@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_085
 unit_label: 'Yukti #85'
 title: Stillness of Gaze Reveals Radical Freedom
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: सम्प्रदायम् इमम् देवि शृणु सम्यग् वदाम्य् अहम् । कैवल्यं जायते सद्यो नेत्रयोः स्तब्धमात्रयोः ॥ ११३ ॥
+sanskrit_iast: sampradāyam imam devi śṛṇu samyag vadāmy aham | kaivalyaṃ jāyate sadyo netrayoḥ stabdhamātrayoḥ || 113 ||
 translation_literal: 'YUKTI #85
 
   O goddess, listen to this traditional teaching: I will speak it
@@ -42,6 +42,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: सम्प्रदायम् इमम् देवि शृणु सम्यग् वदाम्य् अहम् । कैवल्यं जायते सद्यो नेत्रयोः स्तब्धमात्रयोः ॥ ११३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: sampradāyam imam devi śṛṇu samyag vadāmy aham | kaivalyaṃ jāyate sadyo netrayoḥ stabdhamātrayoḥ || 113 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #85

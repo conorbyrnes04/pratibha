@@ -38,8 +38,8 @@ commentary: 'Immersed in ecstasy, the worshipper takes pleasure in the spatial f
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: इति वा यस्य संवित्तिः क्रीडात्वेनाखिलं जगत् । स पश्यन्सततं युक्तो जीवन्मुक्तो न संशयः ॥ ३० ॥
+sanskrit_iast: iti vā yasya saṃvittiḥ krīḍātvenākhilaṃ jagat | sa paśyansatataṃ yukto jīvanmukto na saṃśayaḥ || 30 ||
 tags:
 - action
 - commentary_text
@@ -54,6 +54,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: इति वा यस्य संवित्तिः क्रीडात्वेनाखिलं जगत् । स पश्यन्सततं युक्तो जीवन्मुक्तो न संशयः ॥ ३० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: iti vā yasya saṃvittiḥ krīḍātvenākhilaṃ jagat | sa paśyansatataṃ yukto jīvanmukto na saṃśayaḥ || 30 ||
 - kind: translation
   label: Pratibha Translation
   body: Always present to the reality that he perceives as the play of his own nature, the tantrika is liberated at the very

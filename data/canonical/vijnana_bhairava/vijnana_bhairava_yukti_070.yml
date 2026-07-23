@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_070
 unit_label: 'Yukti #70'
 title: Turn Desire Inward to Know the Self
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: इच्छायाम् अथवा ज्ञाने जाते चित्तं निवेशयेत् । आत्मबुद्ध्यानन्यचेतास् ततस् तत्त्वार्थदर्शनम् ॥ ९८ ॥
+sanskrit_iast: icchāyām athavā jñāne jāte cittaṃ niveśayet | ātmabuddhyānanyacetās tatas tattvārthadarśanam || 98 ||
 translation_literal: 'YUKTI #70
 
   Or, when desire and/or thought do arise, one should focus the
@@ -44,6 +44,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: इच्छायाम् अथवा ज्ञाने जाते चित्तं निवेशयेत् । आत्मबुद्ध्यानन्यचेतास् ततस् तत्त्वार्थदर्शनम् ॥ ९८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: icchāyām athavā jñāne jāte cittaṃ niveśayet | ātmabuddhyānanyacetās tatas tattvārthadarśanam || 98 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #70

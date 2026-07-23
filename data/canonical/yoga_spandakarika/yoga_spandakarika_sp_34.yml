@@ -25,8 +25,10 @@ commentary: 'Read this line as a contemplative pointer: pause interpretation for
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यथेच्छाभ्यर्थितो धाता जाग्रतोऽर्थान्हृदि स्थितान् । सोमसूर्योदयं कृत्वा सम्पादयति देहिनः ॥ ३३ ॥ तथा स्वप्नेऽप्यभीष्टार्थान्प्रणयस्यानतिक्रमात्
+  । नित्यं स्फुटतरं मध्ये स्थितोऽवश्यं प्रकाशयेत् ॥ ३४ ॥
+sanskrit_iast: yathecchābhyarthito dhātā jāgrato'rthānhṛdi sthitān | somasūryodayaṃ kṛtvā sampādayati dehinaḥ || 33 || tathā
+  svapne'pyabhīṣṭārthānpraṇayasyānatikramāt | nityaṃ sphuṭataraṃ madhye sthito'vaśyaṃ prakāśayet || 34 ||
 tags:
 - action
 - awareness
@@ -42,6 +44,13 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यथेच्छाभ्यर्थितो धाता जाग्रतोऽर्थान्हृदि स्थितान् । सोमसूर्योदयं कृत्वा सम्पादयति देहिनः ॥ ३३ ॥ तथा स्वप्नेऽप्यभीष्टार्थान्प्रणयस्यानतिक्रमात्
+    । नित्यं स्फुटतरं मध्ये स्थितोऽवश्यं प्रकाशयेत् ॥ ३४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yathecchābhyarthito dhātā jāgrato'rthānhṛdi sthitān | somasūryodayaṃ kṛtvā sampādayati dehinaḥ || 33 || tathā svapne'pyabhīṣṭārthānpraṇayasyānatikramāt
+    | nityaṃ sphuṭataraṃ madhye sthito'vaśyaṃ prakāśayet || 34 ||
 - kind: translation
   label: Pratibha Translation
   body: Shared source passage with Stanza 33. See Stanza 33 for the full translation and commentary.

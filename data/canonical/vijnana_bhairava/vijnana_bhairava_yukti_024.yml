@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_024
 unit_label: 'Yukti #24'
 title: Dissolving Mind Into The Knower's Summit
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: सर्वतः स्वशरीरस्य द्वादशान्ते मनोलयात् । दृढबुद्धेर् दृढीभूतं तत्त्वलक्ष्यम् प्रवर्तते ॥ ५० ॥
+sanskrit_iast: sarvataḥ svaśarīrasya dvādaśānte manolayāt | dṛḍhabuddher dṛḍhībhūtaṃ tattvalakṣyam pravartate || 50 ||
 translation_literal: 'YUKTI #24
 
   [Or,] completely dissolve the mind in the upper limit of one’s
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: सर्वतः स्वशरीरस्य द्वादशान्ते मनोलयात् । दृढबुद्धेर् दृढीभूतं तत्त्वलक्ष्यम् प्रवर्तते ॥ ५० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: sarvataḥ svaśarīrasya dvādaśānte manolayāt | dṛḍhabuddher dṛḍhībhūtaṃ tattvalakṣyam pravartate || 50 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #24

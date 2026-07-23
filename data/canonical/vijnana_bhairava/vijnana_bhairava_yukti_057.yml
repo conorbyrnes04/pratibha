@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_057
 unit_label: 'Yukti #57'
 title: Sky Dissolves Into Consciousness, Consciousness Becomes Sky
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: लीनं मूर्ध्नि वियत् सर्वम् भैरवत्वेन भावयेत् । तत् सर्वम् भैरवाकारतेजस्तत्त्वं समाविशेत् ॥ ८५ ॥
+sanskrit_iast: līnaṃ mūrdhni viyat sarvam bhairavatvena bhāvayet | tat sarvam bhairavākāratejastattvaṃ samāviśet || 85 ||
 translation_literal: 'YUKTI #57
 
   Imagine the entire sky as Bhairava, and that it is dissolved in
@@ -48,6 +48,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: लीनं मूर्ध्नि वियत् सर्वम् भैरवत्वेन भावयेत् । तत् सर्वम् भैरवाकारतेजस्तत्त्वं समाविशेत् ॥ ८५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: līnaṃ mūrdhni viyat sarvam bhairavatvena bhāvayet | tat sarvam bhairavākāratejastattvaṃ samāviśet || 85 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #57

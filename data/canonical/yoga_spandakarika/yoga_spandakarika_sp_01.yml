@@ -39,8 +39,8 @@ commentary: 'The Shakti is one with Shiva; the teaching is the joyous issue of t
 insight: ''
 practice: Sit for 5 minutes and follow the breath naturally. At each inhale and exhale, notice the subtle vibration of awareness
   before naming it.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यस्योन्मेषनिमेषाभ्यां जगतः प्रलयोदयौ । तं शक्तिचक्रविभवप्रभवं शङ्करं स्तुमः ॥ १ ॥
+sanskrit_iast: yasyonmeṣanimeṣābhyāṃ jagataḥ pralayodayau | taṃ śakticakravibhavaprabhavaṃ śaṅkaraṃ stumaḥ || 1 ||
 tags:
 - awareness
 - breath
@@ -56,6 +56,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यस्योन्मेषनिमेषाभ्यां जगतः प्रलयोदयौ । तं शक्तिचक्रविभवप्रभवं शङ्करं स्तुमः ॥ १ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yasyonmeṣanimeṣābhyāṃ jagataḥ pralayodayau | taṃ śakticakravibhavaprabhavaṃ śaṅkaraṃ stumaḥ || 1 ||
 - kind: translation
   label: Pratibha Translation
   body: The venerated Shankari (Shakti), source of energy, opens her eyes and the universe is reabsorbed in pure consciousness;

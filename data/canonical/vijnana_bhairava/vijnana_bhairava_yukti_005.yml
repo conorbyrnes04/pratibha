@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_005
 unit_label: 'Yukti #5'
 title: Knowing God Through Sequential Abandonment
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: क्रमद्वादशकं सम्यग् द्वादशाक्षरभेदितम् । स्थूलसूक्ष्मपरस्थित्या मुक्त्वा मुक्त्वान्ततः शिवः ॥ ३० ॥
+sanskrit_iast: kramadvādaśakaṃ samyag dvādaśākṣarabheditam | sthūlasūkṣmaparasthityā muktvā muktvāntataḥ śivaḥ || 30 ||
 translation_literal: 'YUKTI #5
 
   There are twelve [such centers] in sequence; properly
@@ -36,6 +36,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: क्रमद्वादशकं सम्यग् द्वादशाक्षरभेदितम् । स्थूलसूक्ष्मपरस्थित्या मुक्त्वा मुक्त्वान्ततः शिवः ॥ ३० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kramadvādaśakaṃ samyag dvādaśākṣarabheditam | sthūlasūkṣmaparasthityā muktvā muktvāntataḥ śivaḥ || 30 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #5

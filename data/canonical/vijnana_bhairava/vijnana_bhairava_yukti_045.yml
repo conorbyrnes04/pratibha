@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_045
 unit_label: 'Yukti #45'
 title: Dissolving Into Sound's Witness
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: गितादिविषयास्वादासमसौख्यैकतात्मनः । योगिनस् तन्मयत्वेन मनोरूढेस् तदात्मता ॥ ७३ ॥
+sanskrit_iast: gitādiviṣayāsvādāsamasaukhyaikatātmanaḥ | yoginas tanmayatvena manorūḍhes tadātmatā || 73 ||
 translation_literal: 'YUKTI #45
 
   The yogin who relishes music and song to the extent that s/he
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: गितादिविषयास्वादासमसौख्यैकतात्मनः । योगिनस् तन्मयत्वेन मनोरूढेस् तदात्मता ॥ ७३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: gitādiviṣayāsvādāsamasaukhyaikatātmanaḥ | yoginas tanmayatvena manorūḍhes tadātmatā || 73 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #45

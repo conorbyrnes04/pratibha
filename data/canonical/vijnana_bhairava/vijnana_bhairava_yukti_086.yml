@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_086
 unit_label: 'Yukti #86'
 title: Silence Reveals What Words Conceal
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: संकोचं कर्णयोः कृत्वा ह्य् अधोद्वारे तथैव च । अनच्कम् अहलं ध्यायन् विशेद् ब्रह्म सनातनम् ॥ ११४ ॥
+sanskrit_iast: saṃkocaṃ karṇayoḥ kṛtvā hy adhodvāre tathaiva ca | anackam ahalaṃ dhyāyan viśed brahma sanātanam || 114 ||
 translation_literal: 'YUKTI #86
 
   Closing the ears and likewise the ‘lower gate’, meditating on [the
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: संकोचं कर्णयोः कृत्वा ह्य् अधोद्वारे तथैव च । अनच्कम् अहलं ध्यायन् विशेद् ब्रह्म सनातनम् ॥ ११४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: saṃkocaṃ karṇayoḥ kṛtvā hy adhodvāre tathaiva ca | anackam ahalaṃ dhyāyan viśed brahma sanātanam || 114 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #86

@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_090
 unit_label: 'Yukti #90'
 title: Being Reveals Itself Between Desire's Edges
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: क्षुताद्यन्ते भये शोके गह्वरे वा रणाद् द्रुते । कुतूहलेक्षुधाद्यन्ते ब्रह्मसत्तामयी दशा ॥ ११८ ॥
+sanskrit_iast: kṣutādyante bhaye śoke gahvare vā raṇād drute | kutūhalekṣudhādyante brahmasattāmayī daśā || 118 ||
 translation_literal: 'YUKTI #90
 
   curiosity or wonder, at the onset and cessation of hunger: [in all
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: क्षुताद्यन्ते भये शोके गह्वरे वा रणाद् द्रुते । कुतूहलेक्षुधाद्यन्ते ब्रह्मसत्तामयी दशा ॥ ११८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kṣutādyante bhaye śoke gahvare vā raṇād drute | kutūhalekṣudhādyante brahmasattāmayī daśā || 118 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #90

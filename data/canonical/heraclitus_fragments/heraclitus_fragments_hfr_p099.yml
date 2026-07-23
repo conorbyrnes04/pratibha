@@ -29,7 +29,8 @@ commentary: 'The ''one'' is not mystical fusion but the single intelligible orde
 insight: ''
 practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
   arises — that resistance is part of the teaching.
-sanskrit_devanagari: ''
+sanskrit_devanagari: ὦ ἄνθροπε, ἀγνοεῖς ὅτι τὸ τοῦ Ἡρακλείτου εὖ ἔχει, ὡς ἄρα πιθήκων ὁ κάλλιστος αἰσχρὸς ἄλλῳ γένει συμβάλλειν,
+  καὶ χυτρῶν ἡ καλλίστη αἰσχρὰ παρθένων γένει συμβάλλειν, ὥς φησιν Ἱππίας ὁ σοφός.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - awareness
@@ -45,6 +46,10 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: ὦ ἄνθροπε, ἀγνοεῖς ὅτι τὸ τοῦ Ἡρακλείτου εὖ ἔχει, ὡς ἄρα πιθήκων ὁ κάλλιστος αἰσχρὸς ἄλλῳ γένει συμβάλλειν, καὶ χυτρῶν
+    ἡ καλλίστη αἰσχρὰ παρθένων γένει συμβάλλειν, ὥς φησιν Ἱππίας ὁ σοφός.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: my man, that there is a good saying of Heraclitus, to the effect that the most beautiful of apes is ugly when compared

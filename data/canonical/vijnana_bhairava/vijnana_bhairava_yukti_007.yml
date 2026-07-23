@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_007
 unit_label: 'Yukti #7'
 title: Peacock's Radiance Dissolves Into Heart
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: शिखिपक्षैश् चित्ररूपैर् मण्डलैः शून्यपञ्चकम् । ध्यायतोऽनुत्तरे शून्ये प्रवेशो हृदये भवेत् ॥ ३२ ॥
+sanskrit_iast: śikhipakṣaiś citrarūpair maṇḍalaiḥ śūnyapañcakam | dhyāyato'nuttare śūnye praveśo hṛdaye bhavet || 32 ||
 translation_literal: 'YUKTI #7
 
   Meditating on the Five Spaces as the colorful circles of the peacock’s feathers,
@@ -44,6 +44,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: शिखिपक्षैश् चित्ररूपैर् मण्डलैः शून्यपञ्चकम् । ध्यायतोऽनुत्तरे शून्ये प्रवेशो हृदये भवेत् ॥ ३२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: śikhipakṣaiś citrarūpair maṇḍalaiḥ śūnyapañcakam | dhyāyato'nuttare śūnye praveśo hṛdaye bhavet || 32 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #7

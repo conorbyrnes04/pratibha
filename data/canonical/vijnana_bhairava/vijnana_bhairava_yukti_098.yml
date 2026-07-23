@@ -7,8 +7,9 @@ unit_id: vijnana_bhairava.yukti_098
 unit_label: 'Yukti #98'
 title: Freedom Unfolds When Attachment Falls Away
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: न द्वेषम् भावयेत् क्वापि न रागम् भावयेत् क्वचित् । रागद्वेषविनिर्मुक्तौ मध्ये ब्रह्म प्रसर्पति ॥ १२६
+  ॥
+sanskrit_iast: na dveṣam bhāvayet kvāpi na rāgam bhāvayet kvacit | rāgadveṣavinirmuktau madhye brahma prasarpati || 126 ||
 translation_literal: 'YUKTI #98
 
   One should cultivate neither hatred nor craving in any
@@ -42,6 +43,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: न द्वेषम् भावयेत् क्वापि न रागम् भावयेत् क्वचित् । रागद्वेषविनिर्मुक्तौ मध्ये ब्रह्म प्रसर्पति ॥ १२६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: na dveṣam bhāvayet kvāpi na rāgam bhāvayet kvacit | rāgadveṣavinirmuktau madhye brahma prasarpati || 126 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #98

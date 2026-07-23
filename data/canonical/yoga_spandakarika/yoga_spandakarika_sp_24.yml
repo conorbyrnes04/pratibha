@@ -20,8 +20,10 @@ commentary: 'Read this line as a contemplative pointer: pause interpretation for
 insight: ''
 practice: Sit for 5 minutes and follow the breath naturally. At each inhale and exhale, notice the subtle vibration of awareness
   before naming it.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यामवस्थां समालम्ब्य यदयं मम वक्ष्यति । तदवश्यं करिष्येऽहमिति सङ्कल्प्य तिष्ठति ॥ २३ ॥ तामाश्रित्योर्ध्वमार्गेण
+  चन्द्रसूर्यावुभावपि । सौषुम्नेऽध्वन्यस्तमितो हित्वा ब्रह्माण्डगोचरम् ॥ २४ ॥
+sanskrit_iast: yāmavasthāṃ samālambya yadayaṃ mama vakṣyati | tadavaśyaṃ kariṣye'hamiti saṅkalpya tiṣṭhati || 23 || tāmāśrityordhvamārgeṇa
+  candrasūryāvubhāvapi | sauṣumne'dhvanyastamito hitvā brahmāṇḍagocaram || 24 ||
 tags:
 - awareness
 - breath
@@ -32,6 +34,13 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यामवस्थां समालम्ब्य यदयं मम वक्ष्यति । तदवश्यं करिष्येऽहमिति सङ्कल्प्य तिष्ठति ॥ २३ ॥ तामाश्रित्योर्ध्वमार्गेण चन्द्रसूर्यावुभावपि
+    । सौषुम्नेऽध्वन्यस्तमितो हित्वा ब्रह्माण्डगोचरम् ॥ २४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yāmavasthāṃ samālambya yadayaṃ mama vakṣyati | tadavaśyaṃ kariṣye'hamiti saṅkalpya tiṣṭhati || 23 || tāmāśrityordhvamārgeṇa
+    candrasūryāvubhāvapi | sauṣumne'dhvanyastamito hitvā brahmāṇḍagocaram || 24 ||
 - kind: translation
   label: Pratibha Translation
   body: Shared source passage with Stanza 23. See Stanza 23 for the full translation and commentary.

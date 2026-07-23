@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_084
 unit_label: 'Yukti #84'
 title: Knowing Itself Emerges When Effort Dissolves
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: आधारेष्व् अथवाऽशक्त्याऽज्ञानाच् चित्तलयेन वा । जातशक्तिसमावेशक्षोभान्ते भैरवं वपुः ॥ ११२ ॥
+sanskrit_iast: ādhāreṣv athavā'śaktyā'jñānāc cittalayena vā | jātaśaktisamāveśakṣobhānte bhairavaṃ vapuḥ || 112 ||
 translation_literal: 'YUKTI #84
 
   Through incapacity regarding the loci (ādhāras), or through the
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: आधारेष्व् अथवाऽशक्त्याऽज्ञानाच् चित्तलयेन वा । जातशक्तिसमावेशक्षोभान्ते भैरवं वपुः ॥ ११२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ādhāreṣv athavā'śaktyā'jñānāc cittalayena vā | jātaśaktisamāveśakṣobhānte bhairavaṃ vapuḥ || 112 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #84

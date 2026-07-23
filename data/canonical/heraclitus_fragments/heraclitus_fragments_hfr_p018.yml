@@ -22,7 +22,7 @@ commentary: 'Heraclitus insists that wisdom is auditory before it is argumentati
 insight: ''
 practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
   rests on. Can you hear the claim, not only think it?
-sanskrit_devanagari: ''
+sanskrit_devanagari: Ὁκόσων λόγους ἤκουσα οὐδεὶς ἀφικνέεται ἐς τοῦτο, ὥστε γινώσκειν ὅτι σοφόν ἐστι πάντων κεχωρισμένον.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
@@ -32,6 +32,9 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: Ὁκόσων λόγους ἤκουσα οὐδεὶς ἀφικνέεται ἐς τοῦτο, ὥστε γινώσκειν ὅτι σοφόν ἐστι πάντων κεχωρισμένον.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: Of all whose words I have heard, no one attains to this, to know that wisdom is apart from all.°

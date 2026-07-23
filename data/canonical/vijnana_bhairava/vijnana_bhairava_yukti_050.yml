@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_050
 unit_label: 'Yukti #50'
 title: Attention Returns to the Knower Itself
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: मृद्वासने स्फिजैकेन हस्तपादौ निराश्रयम् । निधाय तत्प्रसङ्गेन परा पूर्णा मतिर् भवेत् ॥ ७८ ॥
+sanskrit_iast: mṛdvāsane sphijaikena hastapādau nirāśrayam | nidhāya tatprasaṅgena parā pūrṇā matir bhavet || 78 ||
 translation_literal: 'YUKTI #50
 
   Situating oneself on a soft seat, with only the buttocks touching
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: मृद्वासने स्फिजैकेन हस्तपादौ निराश्रयम् । निधाय तत्प्रसङ्गेन परा पूर्णा मतिर् भवेत् ॥ ७८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: mṛdvāsane sphijaikena hastapādau nirāśrayam | nidhāya tatprasaṅgena parā pūrṇā matir bhavet || 78 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #50

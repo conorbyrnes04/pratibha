@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_068
 unit_label: 'Yukti #68'
 title: Desire Dissolves Into Its Own Source
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: झगितीच्छां समुत्पन्नाम् अवलोक्य शमं नयेत् । यत एव समुद्भूता ततस् तत्रैव लीयते ॥ ९६ ॥
+sanskrit_iast: jhagitīcchāṃ samutpannām avalokya śamaṃ nayet | yata eva samudbhūtā tatas tatraiva līyate || 96 ||
 translation_literal: 'YUKTI #68
 
   Observing (avalokya) a desire suddenly arising, one should lead it
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: झगितीच्छां समुत्पन्नाम् अवलोक्य शमं नयेत् । यत एव समुद्भूता ततस् तत्रैव लीयते ॥ ९६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: jhagitīcchāṃ samutpannām avalokya śamaṃ nayet | yata eva samudbhūtā tatas tatraiva līyate || 96 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #68

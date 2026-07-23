@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_011
 unit_label: 'Yukti #11'
 title: Blocking Perception Reveals the Bindu
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: कररुद्धदृगस्त्रेण भ्रूभेदाद् द्वाररोधनात् । दृष्टे बिन्दौ क्रमाल् लीने तन्मध्ये परमा स्थितिः ॥ ३६ ॥
+sanskrit_iast: kararuddhadṛgastreṇa bhrūbhedād dvārarodhanāt | dṛṣṭe bindau kramāl līne tanmadhye paramā sthitiḥ || 36 ||
 translation_literal: 'YUKTI #11
 
   [If the yogī] closes the doors [of the senses] with the ‘weapon’ by which
@@ -48,6 +48,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: कररुद्धदृगस्त्रेण भ्रूभेदाद् द्वाररोधनात् । दृष्टे बिन्दौ क्रमाल् लीने तन्मध्ये परमा स्थितिः ॥ ३६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kararuddhadṛgastreṇa bhrūbhedād dvārarodhanāt | dṛṣṭe bindau kramāl līne tanmadhye paramā sthitiḥ || 36 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #11

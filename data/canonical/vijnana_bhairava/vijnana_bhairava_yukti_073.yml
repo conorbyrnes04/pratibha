@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_073
 unit_label: 'Yukti #73'
 title: Stillness Reveals What Persists Beyond Emotion
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: कामक्रोधलोभमोहमदमात्सर्यगोचरे । बुद्धिं निस्तिमितां कृत्वा तत् तत्त्वम् अवशिष्यते ॥ १०१ ॥
+sanskrit_iast: kāmakrodhalobhamohamadamātsaryagocare | buddhiṃ nistimitāṃ kṛtvā tat tattvam avaśiṣyate || 101 ||
 translation_literal: 'YUKTI #73
 
   When in the field of craving, anger, greed, confusion, intoxicated
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: कामक्रोधलोभमोहमदमात्सर्यगोचरे । बुद्धिं निस्तिमितां कृत्वा तत् तत्त्वम् अवशिष्यते ॥ १०१ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kāmakrodhalobhamohamadamātsaryagocare | buddhiṃ nistimitāṃ kṛtvā tat tattvam avaśiṣyate || 101 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #73

@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_077
 unit_label: 'Yukti #77'
 title: Consciousness Pervades All Manifest Forms
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: घटादौ यच् च विज्ञानम् इच्छाद्यं वा ममान्तरे । नैव सर्वगतं जातम् भावयन् इति सर्वगः ॥ १०५ ॥
+sanskrit_iast: ghaṭādau yac ca vijñānam icchādyaṃ vā mamāntare | naiva sarvagataṃ jātam bhāvayan iti sarvagaḥ || 105 ||
 translation_literal: 'YUKTI #77
 
   “Consciousness, Will, and so on are not only in me, but are in
@@ -36,6 +36,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: घटादौ यच् च विज्ञानम् इच्छाद्यं वा ममान्तरे । नैव सर्वगतं जातम् भावयन् इति सर्वगः ॥ १०५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ghaṭādau yac ca vijñānam icchādyaṃ vā mamāntare | naiva sarvagataṃ jātam bhāvayan iti sarvagaḥ || 105 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #77

@@ -7,8 +7,9 @@ unit_id: vijnana_bhairava.yukti_006
 unit_label: 'Yukti #6'
 title: Attention Returns From Content To Knower
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: तयापूर्याशु मूर्धान्तं भङ्क्त्वा भ्रूक्षेपसेतुना । निर्विकल्पं मनः कृत्वा सर्वोर्ध्वे सर्वगोद्गमः ॥ ३१
+  ॥
+sanskrit_iast: tayāpūryāśu mūrdhāntaṃ bhaṅktvā bhrūkṣepasetunā | nirvikalpaṃ manaḥ kṛtvā sarvordhve sarvagodgamaḥ || 31 ||
 translation_literal: 'YUKTI #6
 
   Having quickly filled the body up to the head with that energy, and having
@@ -36,6 +37,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: तयापूर्याशु मूर्धान्तं भङ्क्त्वा भ्रूक्षेपसेतुना । निर्विकल्पं मनः कृत्वा सर्वोर्ध्वे सर्वगोद्गमः ॥ ३१ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: tayāpūryāśu mūrdhāntaṃ bhaṅktvā bhrūkṣepasetunā | nirvikalpaṃ manaḥ kṛtvā sarvordhve sarvagodgamaḥ || 31 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #6

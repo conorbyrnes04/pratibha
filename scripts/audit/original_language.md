@@ -2,13 +2,12 @@
 
 _Read-only audit of original-language coverage across 1015 canonical units in 28 works (source: `data/canonical/index.jsonl`)._
 
-**Headline:** 614/1015 units (60%) carry complete, language-appropriate original text (Devanagari+IAST for Sanskrit; native script for Greek/Chinese/Persian/Arabic/Tibetan/Japanese/German).
+**Headline:** 726/1015 units (72%) carry complete, language-appropriate original text (Devanagari+IAST for Sanskrit; native script for Greek/Chinese/Persian/Arabic/Tibetan/Japanese/German).
 
 ## Per-work coverage
 
 | Work | Lang | Units | Complete | % | Top problem (count) |
 |------|------|------:|---------:|--:|---------------------|
-| `vijnana_bhairava` | sanskrit | 112 | 0 | 0% | No original text at all (no script, no IAST) (112) |
 | `yoga_spandakarika` | sanskrit | 52 | 0 | 0% | No original text at all (no script, no IAST) (52) |
 | `know_yourself_ibn_arabi_balyani` | arabic | 36 | 0 | 0% | No original text at all (no script, no IAST) (36) |
 | `tantrasara` | sanskrit | 19 | 0 | 0% | No original text at all (no script, no IAST) (19) |
@@ -23,6 +22,7 @@ _Read-only audit of original-language coverage across 1015 canonical units in 28
 | `pratyabhijnahrdayam` | sanskrit | 21 | 20 | 95% | No original text at all (no script, no IAST) (1) |
 | `the_book_of_chuang_tzu` | chinese | 66 | 63 | 95% | Placeholder / source-language-basis note (no native script) (3) |
 | `patañjali_yoga_sūtras` | sanskrit | 195 | 195 | 100% | — |
+| `vijnana_bhairava` | sanskrit | 112 | 112 | 100% | — |
 | `tao_te_ching` | chinese | 81 | 81 | 100% | — |
 | `siva_sutra` | sanskrit | 47 | 47 | 100% | — |
 | `plotinus_enneads` | greek | 32 | 32 | 100% | — |
@@ -42,7 +42,6 @@ _Read-only audit of original-language coverage across 1015 canonical units in 28
 | Work | Lang | Units | Missing/incomplete | Dominant issue |
 |------|------|------:|-------------------:|----------------|
 | `heraclitus_fragments` | greek | 128 | 117 | Non-Sanskrit work missing its native source script (117) |
-| `vijnana_bhairava` | sanskrit | 112 | 112 | No original text at all (no script, no IAST) (112) |
 | `yoga_spandakarika` | sanskrit | 52 | 52 | No original text at all (no script, no IAST) (52) |
 | `know_yourself_ibn_arabi_balyani` | arabic | 36 | 36 | No original text at all (no script, no IAST) (36) |
 | `tantrasara` | sanskrit | 19 | 19 | No original text at all (no script, no IAST) (19) |
@@ -53,11 +52,12 @@ _Read-only audit of original-language coverage across 1015 canonical units in 28
 | `shantideva_bodhicaryavatara` | sanskrit | 8 | 8 | Placeholder / source-language-basis note (no native script) (8) |
 | `mandukya_upanishad_and_gaudapada_karika` | sanskrit | 16 | 4 | No original text at all (no script, no IAST) (4) |
 | `the_book_of_chuang_tzu` | chinese | 66 | 3 | Placeholder / source-language-basis note (no native script) (3) |
+| `tilopa_mahamudra` | tibetan | 3 | 3 | Placeholder / source-language-basis note (no native script) (3) |
 
 ## Problem classes & representative unit_ids
 
-- **No original text at all (no script, no IAST)** — 233 units. e.g. `astavakra_gita.asg_3_3`, `astavakra_gita.asg_6_1`, `astavakra_gita.asg_sum_01_13_01_20`, `astavakra_gita.asg_sum_02_02_02_07`, `astavakra_gita.asg_sum_02_08_02_16`, `astavakra_gita.asg_sum_08_01_08_04`
 - **Non-Sanskrit work missing its native source script** — 124 units. e.g. `heraclitus_fragments.hfr_p003`, `heraclitus_fragments.hfr_p004`, `heraclitus_fragments.hfr_p005`, `heraclitus_fragments.hfr_p006`, `heraclitus_fragments.hfr_p007`, `heraclitus_fragments.hfr_p008`
+- **No original text at all (no script, no IAST)** — 121 units. e.g. `astavakra_gita.asg_3_3`, `astavakra_gita.asg_6_1`, `astavakra_gita.asg_sum_01_13_01_20`, `astavakra_gita.asg_sum_02_02_02_07`, `astavakra_gita.asg_sum_02_08_02_16`, `astavakra_gita.asg_sum_08_01_08_04`
 - **Placeholder / source-language-basis note (no native script)** — 44 units. e.g. `bhagavad_gita.bg_md_001`, `bhagavad_gita.bg_md_002`, `bhagavad_gita.bg_md_003`, `bhagavad_gita.bg_md_004`, `bhagavad_gita.bg_md_005`, `bhagavad_gita.bg_md_006`
 
 ## Corpus hygiene — empty / duplicate work directories

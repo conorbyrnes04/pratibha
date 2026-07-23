@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_089
 unit_label: 'Yukti #89'
 title: Consciousness Returns to Itself Through the Senses
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यत्र यत्राक्षमार्गेण चैतन्यं व्यज्यते विभोः । तस्य तन्मात्रधर्मित्वाच् चिल्लयाद् भरितात्मता ॥ ११७ ॥
+sanskrit_iast: yatra yatrākṣamārgeṇa caitanyaṃ vyajyate vibhoḥ | tasya tanmātradharmitvāc cillayād bharitātmatā || 117 ||
 translation_literal: 'YUKTI #89
 
   Wherever [and whenever] the Consciousness of the all-pervasive
@@ -42,6 +42,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यत्र यत्राक्षमार्गेण चैतन्यं व्यज्यते विभोः । तस्य तन्मात्रधर्मित्वाच् चिल्लयाद् भरितात्मता ॥ ११७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yatra yatrākṣamārgeṇa caitanyaṃ vyajyate vibhoḥ | tasya tanmātradharmitvāc cillayād bharitātmatā || 117 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #89

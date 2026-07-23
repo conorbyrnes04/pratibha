@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_097
 unit_label: 'Yukti #97'
 title: Absolute Plenitude Dissolves Enemy and Friend
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: समः शत्रौ च मित्रे च समो मानावमानयोः ॥ ब्रह्मणः परिपूर्णत्वात् इति ज्ञात्वा सुखी भवेत् ॥ १२५ ॥
+sanskrit_iast: samaḥ śatrau ca mitre ca samo mānāvamānayoḥ || brahmaṇaḥ paripūrṇatvāt iti jñātvā sukhī bhavet || 125 ||
 translation_literal: 'YUKTI #97
 
   Knowing that because the total plenitude of the Absolute [is the
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: समः शत्रौ च मित्रे च समो मानावमानयोः ॥ ब्रह्मणः परिपूर्णत्वात् इति ज्ञात्वा सुखी भवेत् ॥ १२५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: samaḥ śatrau ca mitre ca samo mānāvamānayoḥ || brahmaṇaḥ paripūrṇatvāt iti jñātvā sukhī bhavet || 125 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #97

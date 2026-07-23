@@ -31,8 +31,8 @@ commentary: Absence from the world is almost the same as presence. The only diff
 insight: ''
 practice: For 3 minutes, watch inner speech without suppressing it. Each time words arise, return to the silent awareness
   that knows the words.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: अन्यथा तु स्वतन्त्रा स्यात्सृष्टिस्तद्धर्मकत्वतः । सततं लौकिकस्येव जाग्रत्स्वप्नपदद्वये ॥ ३५ ॥
+sanskrit_iast: anyathā tu svatantrā syātsṛṣṭistaddharmakatvataḥ | satataṃ laukikasyeva jāgratsvapnapadadvaye || 35 ||
 tags:
 - awareness
 - commentary_text
@@ -45,6 +45,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: अन्यथा तु स्वतन्त्रा स्यात्सृष्टिस्तद्धर्मकत्वतः । सततं लौकिकस्येव जाग्रत्स्वप्नपदद्वये ॥ ३५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: anyathā tu svatantrā syātsṛṣṭistaddharmakatvataḥ | satataṃ laukikasyeva jāgratsvapnapadadvaye || 35 ||
 - kind: translation
   label: Pratibha Translation
   body: But if he is not present, the tantrika will be wronged by the play of manifestation, and he will experience the illusory

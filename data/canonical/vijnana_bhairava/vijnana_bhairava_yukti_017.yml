@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_017
 unit_label: 'Yukti #17'
 title: Mantra's Subtle Ascent to Shiva Consciousness
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: पिण्डमन्त्रस्य सर्वस्य स्थूलवर्णक्रमेण तु । अर्धेन्दुबिन्दुनादान्तः शून्योच्चाराद् भवेच् छिवः ॥ ४२ ॥
+sanskrit_iast: piṇḍamantrasya sarvasya sthūlavarṇakrameṇa tu | ardhendubindunādāntaḥ śūnyoccārād bhavec chivaḥ || 42 ||
 translation_literal: 'YUKTI #17
 
   Through internal enunciation of an entire piṇḍa-mantra in accordance
@@ -38,6 +38,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: पिण्डमन्त्रस्य सर्वस्य स्थूलवर्णक्रमेण तु । अर्धेन्दुबिन्दुनादान्तः शून्योच्चाराद् भवेच् छिवः ॥ ४२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: piṇḍamantrasya sarvasya sthūlavarṇakrameṇa tu | ardhendubindunādāntaḥ śūnyoccārād bhavec chivaḥ || 42 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #17

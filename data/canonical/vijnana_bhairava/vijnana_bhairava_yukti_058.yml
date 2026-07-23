@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_058
 unit_label: 'Yukti #58'
 title: Turning From Objects To The Knower's Light
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: किञ्चिज् ज्ञातं द्वैतदायि बाह्यालोकस् तमः पुनः । विश्वादि भैरवं रूपं ज्ञात्वानन्तप्रकाशभृत् ॥ ८६ ॥
+sanskrit_iast: kiñcij jñātaṃ dvaitadāyi bāhyālokas tamaḥ punaḥ | viśvādi bhairavaṃ rūpaṃ jñātvānantaprakāśabhṛt || 86 ||
 translation_literal: 'YUKTI #58
 
   Having known the [three] states of ‘universe’ and so on –
@@ -38,6 +38,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: किञ्चिज् ज्ञातं द्वैतदायि बाह्यालोकस् तमः पुनः । विश्वादि भैरवं रूपं ज्ञात्वानन्तप्रकाशभृत् ॥ ८६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kiñcij jñātaṃ dvaitadāyi bāhyālokas tamaḥ punaḥ | viśvādi bhairavaṃ rūpaṃ jñātvānantaprakāśabhṛt || 86 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #58

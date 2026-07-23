@@ -27,7 +27,8 @@ commentary: 'This aphorism compresses a cosmological claim into a single image o
 insight: ''
 practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
   arises — that resistance is part of the teaching.
-sanskrit_devanagari: ''
+sanskrit_devanagari: Ἀνθρώποισι γίνεσθαι ὁκόσα θέλουσι οὐκ ἄμεινον. νοῦσος ὑγίειαν ἐποίησε ἡδὺ καὶ ἀγαθόν, λιμὸς κόρον, κάματος
+  ἀνάπαυσιν.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - awareness
@@ -43,6 +44,9 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: Ἀνθρώποισι γίνεσθαι ὁκόσα θέλουσι οὐκ ἄμεινον. νοῦσος ὑγίειαν ἐποίησε ἡδὺ καὶ ἀγαθόν, λιμὸς κόρον, κάματος ἀνάπαυσιν.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: For people to have whatever they wish, would not be well. Sickness makes health pleasant and good; hunger, satiety;

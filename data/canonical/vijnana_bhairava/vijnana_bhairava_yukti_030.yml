@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_030
 unit_label: 'Yukti #30'
 title: Consciousness Expands Until Recognition Dawns
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: अस्य सर्वस्य विश्वस्य पर्यन्तेषु समन्ततः । अध्वप्रक्रियया तत्त्वं शैवं ध्यत्वा महोदयः ॥ ५७ ॥
+sanskrit_iast: asya sarvasya viśvasya paryanteṣu samantataḥ | adhvaprakriyayā tattvaṃ śaivaṃ dhyatvā mahodayaḥ || 57 ||
 translation_literal: 'YUKTI #30
 
   Thoroughly meditating on the adhva-prakriyā, up to the limits of
@@ -42,6 +42,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: अस्य सर्वस्य विश्वस्य पर्यन्तेषु समन्ततः । अध्वप्रक्रियया तत्त्वं शैवं ध्यत्वा महोदयः ॥ ५७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: asya sarvasya viśvasya paryanteṣu samantataḥ | adhvaprakriyayā tattvaṃ śaivaṃ dhyatvā mahodayaḥ || 57 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #30

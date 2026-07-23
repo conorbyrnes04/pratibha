@@ -25,8 +25,10 @@ commentary: 'Read this line as a contemplative pointer: pause interpretation for
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: तन्मात्रोदयरूपेण मनोऽहम्बुद्धिवर्तिना । पुर्यष्टकेन संरुद्धस्तदुत्थं प्रत्ययोद्भवम् ॥ ४९ ॥ भुङ्क्ते परवशो
+  भोगं तद्भावात्संसरेदतः । संसृतिप्रलयस्यास्य कारणं सम्प्रचक्ष्महे ॥ ५० ॥
+sanskrit_iast: tanmātrodayarūpeṇa mano'hambuddhivartinā | puryaṣṭakena saṃruddhastadutthaṃ pratyayodbhavam || 49 || bhuṅkte
+  paravaśo bhogaṃ tadbhāvātsaṃsaredataḥ | saṃsṛtipralayasyāsya kāraṇaṃ sampracakṣmahe || 50 ||
 tags:
 - action
 - awareness
@@ -42,6 +44,13 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: तन्मात्रोदयरूपेण मनोऽहम्बुद्धिवर्तिना । पुर्यष्टकेन संरुद्धस्तदुत्थं प्रत्ययोद्भवम् ॥ ४९ ॥ भुङ्क्ते परवशो भोगं तद्भावात्संसरेदतः
+    । संसृतिप्रलयस्यास्य कारणं सम्प्रचक्ष्महे ॥ ५० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: tanmātrodayarūpeṇa mano'hambuddhivartinā | puryaṣṭakena saṃruddhastadutthaṃ pratyayodbhavam || 49 || bhuṅkte paravaśo
+    bhogaṃ tadbhāvātsaṃsaredataḥ | saṃsṛtipralayasyāsya kāraṇaṃ sampracakṣmahe || 50 ||
 - kind: translation
   label: Pratibha Translation
   body: Shared source passage with Stanza 49. See Stanza 49 for the full translation and commentary.

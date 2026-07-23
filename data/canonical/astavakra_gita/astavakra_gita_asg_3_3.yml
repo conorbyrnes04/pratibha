@@ -7,8 +7,14 @@ unit_id: astavakra_gita.asg_3_3
 unit_label: Verse 3.3
 title: 'Waves and Ocean: The Illusion of Separation'
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'विश्वं स्फुरति यत्रेदं तरङ्गा इव सागरे ।
+
+
+  सोऽहमस्मीति विज्ञाय किं दीन इव धावसि ॥'
+sanskrit_iast: 'viśvaṃ sphurati yatredaṃ taraṅgā iva sāgare |
+
+
+  so''hamasmīti vijñāya kiṃ dīna iva dhāvasi ||'
 translation_literal: The universe manifests like waves in the ocean.
 commentary: 'Extended Translation:
 
@@ -43,6 +49,17 @@ quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: 'विश्वं स्फुरति यत्रेदं तरङ्गा इव सागरे ।
+
+
+    सोऽहमस्मीति विज्ञाय किं दीन इव धावसि ॥'
+  layer_provenance: sourced
+- kind: iast
+  body: 'viśvaṃ sphurati yatredaṃ taraṅgā iva sāgare |
+
+
+    so''hamasmīti vijñāya kiṃ dīna iva dhāvasi ||'
 - kind: translation
   label: Pratibha Translation
   body: The universe manifests like waves in the ocean.

@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_060
 unit_label: 'Yukti #60'
 title: Darkness Reveals Itself Both Closed And Open
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: एवम् एव निमील्यादौ नेत्रे कृष्णाभम् अग्रतः । प्रसार्य भैरवं रूपम् भावयंस् तन्मयो भवेत् ॥ ८८ ॥
+sanskrit_iast: evam eva nimīlyādau netre kṛṣṇābham agrataḥ | prasārya bhairavaṃ rūpam bhāvayaṃs tanmayo bhavet || 88 ||
 translation_literal: 'YUKTI #60
 
   In just the same way [on a dark night, see verse 87], first close your
@@ -48,6 +48,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: एवम् एव निमील्यादौ नेत्रे कृष्णाभम् अग्रतः । प्रसार्य भैरवं रूपम् भावयंस् तन्मयो भवेत् ॥ ८८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: evam eva nimīlyādau netre kṛṣṇābham agrataḥ | prasārya bhairavaṃ rūpam bhāvayaṃs tanmayo bhavet || 88 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #60

@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_055
 unit_label: 'Yukti #55'
 title: Stillness Emerges When Attention Returns Inward
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: चलासने स्थितस्याथ शनैर् वा देहचालनात् । प्रशान्ते मानसे भावे देवि दिव्यौघम् आप्नुयात् ॥ ८३ ॥
+sanskrit_iast: calāsane sthitasyātha śanair vā dehacālanāt | praśānte mānase bhāve devi divyaugham āpnuyāt || 83 ||
 translation_literal: 'YUKTI #55
 
   Situated on a swing or moving seat [such as a chariot, elephant,
@@ -44,6 +44,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: चलासने स्थितस्याथ शनैर् वा देहचालनात् । प्रशान्ते मानसे भावे देवि दिव्यौघम् आप्नुयात् ॥ ८३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: calāsane sthitasyātha śanair vā dehacālanāt | praśānte mānase bhāve devi divyaugham āpnuyāt || 83 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #55

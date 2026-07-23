@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_059
 unit_label: 'Yukti #59'
 title: Darkness Reveals the Formless Absolute
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: एवम् एव दुर्निशायां कृष्णपक्षागमे चिरम् । तैमिरम् भावयन् रूपम् भैरवं रूपम् एष्यति ॥ ८७ ॥
+sanskrit_iast: evam eva durniśāyāṃ kṛṣṇapakṣāgame ciram | taimiram bhāvayan rūpam bhairavaṃ rūpam eṣyati || 87 ||
 translation_literal: 'YUKTI #59
 
   Similarly, on a dark & overcast moonless night, meditate on the
@@ -44,6 +44,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: एवम् एव दुर्निशायां कृष्णपक्षागमे चिरम् । तैमिरम् भावयन् रूपम् भैरवं रूपम् एष्यति ॥ ८७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: evam eva durniśāyāṃ kṛṣṇapakṣāgame ciram | taimiram bhāvayan rūpam bhairavaṃ rūpam eṣyati || 87 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #59

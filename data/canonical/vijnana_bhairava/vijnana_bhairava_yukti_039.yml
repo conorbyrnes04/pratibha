@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_039
 unit_label: 'Yukti #39'
 title: Joy Breaks Through When Pretense Dissolves
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: कुहनेन प्रयोगेण सद्य एव मृगेक्षणे । समुदेति महानन्दो येन तत्त्वं प्रकाशते ॥ ६६ ॥
+sanskrit_iast: kuhanena prayogeṇa sadya eva mṛgekṣaṇe | samudeti mahānando yena tattvaṃ prakāśate || 66 ||
 translation_literal: 'YUKTI #39
 
   O doe-eyed woman, by applying the ‘hypocritical method’, great
@@ -42,6 +42,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: कुहनेन प्रयोगेण सद्य एव मृगेक्षणे । समुदेति महानन्दो येन तत्त्वं प्रकाशते ॥ ६६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kuhanena prayogeṇa sadya eva mṛgekṣaṇe | samudeti mahānando yena tattvaṃ prakāśate || 66 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #39

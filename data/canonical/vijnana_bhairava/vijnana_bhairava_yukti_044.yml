@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_044
 unit_label: 'Yukti #44'
 title: Delight Transforms Into Sublime Consciousness
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: जग्धिपानकृतोल्लासरसानन्दविजृम्भणात् । भावयेद् भरितावस्थां महानन्दस् ततो भवेत् ॥ ७२ ॥
+sanskrit_iast: jagdhipānakṛtollāsarasānandavijṛmbhaṇāt | bhāvayed bharitāvasthāṃ mahānandas tato bhavet || 72 ||
 translation_literal: 'YUKTI #44
 
   One should meditate on the state of fullness that expands due
@@ -42,6 +42,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: जग्धिपानकृतोल्लासरसानन्दविजृम्भणात् । भावयेद् भरितावस्थां महानन्दस् ततो भवेत् ॥ ७२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: jagdhipānakṛtollāsarasānandavijṛmbhaṇāt | bhāvayed bharitāvasthāṃ mahānandas tato bhavet || 72 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #44

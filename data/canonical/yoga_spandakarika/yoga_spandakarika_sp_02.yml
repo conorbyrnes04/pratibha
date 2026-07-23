@@ -27,8 +27,8 @@ commentary: The most majestic tree is contained within a tiny seed. Similarly, t
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यत्र स्थितमिदं सर्वं कार्यं यस्माच्च निर्गतम् तस्यानावृतरूपत्वान्न निरोधोऽस्ति कुत्रचित् ॥ २ ॥
+sanskrit_iast: yatra sthitamidaṃ sarvaṃ kāryaṃ yasmācca nirgatam tasyānāvṛtarūpatvānna nirodho'sti kutracit || 2 ||
 tags:
 - action
 - commentary_text
@@ -40,6 +40,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यत्र स्थितमिदं सर्वं कार्यं यस्माच्च निर्गतम् तस्यानावृतरूपत्वान्न निरोधोऽस्ति कुत्रचित् ॥ २ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yatra sthitamidaṃ sarvaṃ kāryaṃ yasmācca nirgatam tasyānāvṛtarūpatvānna nirodho'sti kutracit || 2 ||
 - kind: translation
   label: Pratibha Translation
   body: The sacred tremor, the very place of creation and return, is completely limitless because its nature is formless.

@@ -7,8 +7,14 @@ unit_id: astavakra_gita.asg_6_1
 unit_label: Verse 6.1
 title: Infinity Dissolves All Renunciation
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'आकाशवदनन्तोऽहं घटवत् प्राकृतं जगत् ।
+
+
+  इति ज्ञानं तथैतस्य न त्यागो न ग्रहो लयः ॥'
+sanskrit_iast: 'ākāśavadananto''haṃ ghaṭavat prākṛtaṃ jagat |
+
+
+  iti jñānaṃ tathaitasya na tyāgo na graho layaḥ ||'
 translation_literal: I am infinite like space; the material world is like a pot in space.
 commentary: 'Extended Translation:
 
@@ -51,6 +57,17 @@ quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: 'आकाशवदनन्तोऽहं घटवत् प्राकृतं जगत् ।
+
+
+    इति ज्ञानं तथैतस्य न त्यागो न ग्रहो लयः ॥'
+  layer_provenance: sourced
+- kind: iast
+  body: 'ākāśavadananto''haṃ ghaṭavat prākṛtaṃ jagat |
+
+
+    iti jñānaṃ tathaitasya na tyāgo na graho layaḥ ||'
 - kind: translation
   label: Pratibha Translation
   body: I am infinite like space; the material world is like a pot in space.

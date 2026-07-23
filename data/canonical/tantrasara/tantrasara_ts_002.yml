@@ -60,8 +60,14 @@ commentary: 'Abhinavagupta recognizes the scale of Tantrāloka. It is an ocean o
   distills these layers into a single, lucid verse, thereby breaking the customary multi‑textual structure'
 insight: ''
 practice: Read the excerpt slowly, pause at one striking line, and reflect on its relevance to present experience.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'विततस्तन्त्रालोको विगाहितुं नैव शक्यते सर्वैः।
+
+
+  ऋजुवचनविरचितमिदं तु तन्त्रसारं ततः शृणुत॥२॥'
+sanskrit_iast: 'vitatastantrāloko vigāhituṃ naiva śakyate sarvaiḥ|
+
+
+  ṛjuvacanaviracitamidaṃ tu tantrasāraṃ tataḥ śṛṇuta||2||'
 tags:
 - commentary_text
 - mantra
@@ -72,6 +78,17 @@ quality_score: 0
 editorial_maturity: publishable
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: 'विततस्तन्त्रालोको विगाहितुं नैव शक्यते सर्वैः।
+
+
+    ऋजुवचनविरचितमिदं तु तन्त्रसारं ततः शृणुत॥२॥'
+  layer_provenance: sourced
+- kind: iast
+  body: 'vitatastantrāloko vigāhituṃ naiva śakyate sarvaiḥ|
+
+
+    ṛjuvacanaviracitamidaṃ tu tantrasāraṃ tataḥ śṛṇuta||2||'
 - kind: commentary
   label: Pratibha Commentary
   body: 'Abhinavagupta recognizes the scale of Tantrāloka. It is an ocean of mantra, ritual, ontology and subtle philosophy.

@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_023
 unit_label: 'Yukti #23'
 title: Dissolving Senses Into Heart's Innermost Space
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: हृद्याकाशे निलीनाक्षः पद्मसम्पुटमध्यगः । अनन्यचेताः सुभगे परं सौभाग्यम् आप्नुयात् ॥ ४९ ॥
+sanskrit_iast: hṛdyākāśe nilīnākṣaḥ padmasampuṭamadhyagaḥ | ananyacetāḥ subhage paraṃ saubhāgyam āpnuyāt || 49 ||
 translation_literal: 'YUKTI #23
 
   With one’s sense-faculties dissolved in the space of the Heart—in
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: हृद्याकाशे निलीनाक्षः पद्मसम्पुटमध्यगः । अनन्यचेताः सुभगे परं सौभाग्यम् आप्नुयात् ॥ ४९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: hṛdyākāśe nilīnākṣaḥ padmasampuṭamadhyagaḥ | ananyacetāḥ subhage paraṃ saubhāgyam āpnuyāt || 49 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #23

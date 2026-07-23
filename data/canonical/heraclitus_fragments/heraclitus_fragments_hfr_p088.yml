@@ -28,7 +28,9 @@ commentary: 'This aphorism compresses a cosmological claim into a single image o
 insight: ''
 practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
   rests on. Can you hear the claim, not only think it?
-sanskrit_devanagari: ''
+sanskrit_devanagari: ὁ τριάκοντα ἀριθμὸς φυσικώτατός ἐστιν· ὃ γὰρ ἐν μονάσι τριάς, τοῦτο ἐν δεκάσι τριακοντάς. ἐπεὶ καὶ ὁ
+  τοῦ μηνὸς κύκλος συνέστηκεν ἐκ τεσσάρων τῶν ἀπὸ μονάδος ἑξῆς τετραγώνων α´, δ´, θ´, ις´, ὅθεν οὐκ ἀπὸ σκοποῦ Ἡράκλειτος
+  γενεὰν τὸν μῆνα καλεῖ.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - awareness
@@ -43,6 +45,11 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: ὁ τριάκοντα ἀριθμὸς φυσικώτατός ἐστιν· ὃ γὰρ ἐν μονάσι τριάς, τοῦτο ἐν δεκάσι τριακοντάς. ἐπεὶ καὶ ὁ τοῦ μηνὸς κύκλος
+    συνέστηκεν ἐκ τεσσάρων τῶν ἀπὸ μονάδος ἑξῆς τετραγώνων α´, δ´, θ´, ις´, ὅθεν οὐκ ἀπὸ σκοποῦ Ἡράκλειτος γενεὰν τὸν μῆνα
+    καλεῖ.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: ed. Bonn. Thirty is the most natural number, for it bears the same relation to tens as three to units. Then again

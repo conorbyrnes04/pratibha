@@ -25,7 +25,7 @@ commentary: 'This aphorism compresses a cosmological claim into a single image o
 insight: ''
 practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
   rests on. Can you hear the claim, not only think it?
-sanskrit_devanagari: ''
+sanskrit_devanagari: Ἀξύνετοι ἀκούσαντες κωφοῖσι ἐοίκασι· φάτις αὐτοῖσι μαρτυρέει παρεόντας ἀπεῖναι.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
@@ -40,6 +40,9 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: Ἀξύνετοι ἀκούσαντες κωφοῖσι ἐοίκασι· φάτις αὐτοῖσι μαρτυρέει παρεόντας ἀπεῖναι.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are absent.’’'

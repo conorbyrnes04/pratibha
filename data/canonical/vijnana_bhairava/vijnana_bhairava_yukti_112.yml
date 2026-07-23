@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_112
 unit_label: 'Yukti #112'
 title: One Practice Opens All Powers
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: अत्र चैकतमे युक्तो जायते भैरवः स्वयम् । वाचा करोति कर्माणि शापानुग्रहकारकः ॥ १४० ॥
+sanskrit_iast: atra caikatame yukto jāyate bhairavaḥ svayam | vācā karoti karmāṇi śāpānugrahakārakaḥ || 140 ||
 translation_literal: 'YUKTI #112
 
   A practitioner who is [fully] connected (yukta) to even one [of these methods]
@@ -42,6 +42,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: अत्र चैकतमे युक्तो जायते भैरवः स्वयम् । वाचा करोति कर्माणि शापानुग्रहकारकः ॥ १४० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: atra caikatame yukto jāyate bhairavaḥ svayam | vācā karoti karmāṇi śāpānugrahakārakaḥ || 140 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #112

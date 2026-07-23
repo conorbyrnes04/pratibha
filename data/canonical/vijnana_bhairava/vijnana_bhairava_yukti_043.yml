@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_043
 unit_label: 'Yukti #43'
 title: Joy Dissolves the Boundary Between Knower and Known
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: आनन्दे महति प्राप्ते दृष्टे वा बान्धवे चिरात् । आनन्दम् उद्गतं ध्यात्वा तल्लयस् तन्मना भवेत् ॥ ७१ ॥
+sanskrit_iast: ānande mahati prāpte dṛṣṭe vā bāndhave cirāt | ānandam udgataṃ dhyātvā tallayas tanmanā bhavet || 71 ||
 translation_literal: 'YUKTI #43
 
   When you feel great joy, as when seeing a loved one after a long
@@ -32,6 +32,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: आनन्दे महति प्राप्ते दृष्टे वा बान्धवे चिरात् । आनन्दम् उद्गतं ध्यात्वा तल्लयस् तन्मना भवेत् ॥ ७१ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ānande mahati prāpte dṛṣṭe vā bāndhave cirāt | ānandam udgataṃ dhyātvā tallayas tanmanā bhavet || 71 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #43

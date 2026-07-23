@@ -7,8 +7,10 @@ unit_id: vijnana_bhairava.yukti_034
 unit_label: 'Yukti #34'
 title: The Knower Emerges Between Opposing States
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: उभयोर् भावयोर् ज्ञाने ध्यात्वा मध्यं समाश्रयेत् । युगपच् च द्वयं त्यक्त्वा मध्ये तत्त्वम् प्रकाशते ॥
+  ६१ ॥
+sanskrit_iast: ubhayor bhāvayor jñāne dhyātvā madhyaṃ samāśrayet | yugapac ca dvayaṃ tyaktvā madhye tattvam prakāśate || 61
+  ||
 translation_literal: 'YUKTI #34
 
   Contemplating the cognition of any two entities (bhāvas) or any
@@ -34,6 +36,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: उभयोर् भावयोर् ज्ञाने ध्यात्वा मध्यं समाश्रयेत् । युगपच् च द्वयं त्यक्त्वा मध्ये तत्त्वम् प्रकाशते ॥ ६१ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ubhayor bhāvayor jñāne dhyātvā madhyaṃ samāśrayet | yugapac ca dvayaṃ tyaktvā madhye tattvam prakāśate || 61 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #34

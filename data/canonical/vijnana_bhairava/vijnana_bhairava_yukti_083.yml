@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_083
 unit_label: 'Yukti #83'
 title: Stillness Emerges From Exhausted Motion
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: भ्रान्त्वा भ्रान्त्वा शरीरेण त्वरितम् भुवि पातनात् । क्षोभशक्तिविरामेण परा संजायते दशा ॥ १११ ॥
+sanskrit_iast: bhrāntvā bhrāntvā śarīreṇa tvaritam bhuvi pātanāt | kṣobhaśaktivirāmeṇa parā saṃjāyate daśā || 111 ||
 translation_literal: 'YUKTI #83
 
   Whirling quickly around and around with the body and then falling
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: भ्रान्त्वा भ्रान्त्वा शरीरेण त्वरितम् भुवि पातनात् । क्षोभशक्तिविरामेण परा संजायते दशा ॥ १११ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: bhrāntvā bhrāntvā śarīreṇa tvaritam bhuvi pātanāt | kṣobhaśaktivirāmeṇa parā saṃjāyate daśā || 111 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #83

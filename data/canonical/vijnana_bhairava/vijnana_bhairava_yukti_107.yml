@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_107
 unit_label: 'Yukti #107'
 title: The World Dissolves in Universal Mind
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: न मे बन्धो न मोक्षो मे भीतस्यैता विभीषिकाः । प्रतिबिम्बम् इदम् बुद्धेर् जलेष्व् इव विवस्वतः ॥ १३५ ॥
+sanskrit_iast: na me bandho na mokṣo me bhītasyaitā vibhīṣikāḥ | pratibimbam idam buddher jaleṣv iva vivasvataḥ || 135 ||
 translation_literal: 'YUKTI #107
 
   “For me there is no bondage; nor is there any [need for]
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: न मे बन्धो न मोक्षो मे भीतस्यैता विभीषिकाः । प्रतिबिम्बम् इदम् बुद्धेर् जलेष्व् इव विवस्वतः ॥ १३५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: na me bandho na mokṣo me bhītasyaitā vibhīṣikāḥ | pratibimbam idam buddher jaleṣv iva vivasvataḥ || 135 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #107

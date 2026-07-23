@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_100
 unit_label: 'Yukti #100'
 title: Dissolving Mind Into Boundless Space
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: नित्ये निराश्रये शून्ये व्यापके कलनोज्झिते । बाह्याकाशे मनः कृत्वा निराकाशं समाविशेत् ॥ १२८ ॥
+sanskrit_iast: nitye nirāśraye śūnye vyāpake kalanojjhite | bāhyākāśe manaḥ kṛtvā nirākāśaṃ samāviśet || 128 ||
 translation_literal: 'YUKTI #100
 
   Absorbing the mind in external space—which is eternal, needs no
@@ -32,6 +32,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: नित्ये निराश्रये शून्ये व्यापके कलनोज्झिते । बाह्याकाशे मनः कृत्वा निराकाशं समाविशेत् ॥ १२८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: nitye nirāśraye śūnye vyāpake kalanojjhite | bāhyākāśe manaḥ kṛtvā nirākāśaṃ samāviśet || 128 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #100

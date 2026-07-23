@@ -7,8 +7,9 @@ unit_id: vijnana_bhairava.yukti_028
 unit_label: 'Yukti #28'
 title: Śakti's Modulation Opens Dream Liberation
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: पिनां च दुर्बलां शक्तिं ध्यात्वा द्वादशगोचरे । प्रविश्य हृदये ध्यायन् मुक्तः स्वातन्त्र्यम् आप्नुयात्
+  ॥ ५५ ॥
+sanskrit_iast: pināṃ ca durbalāṃ śaktiṃ dhyātvā dvādaśagocare | praviśya hṛdaye dhyāyan muktaḥ svātantryam āpnuyāt || 55 ||
 translation_literal: 'YUKTI #28
 
   Having meditated on the śakti as thick and [then] weak in the
@@ -39,6 +40,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: पिनां च दुर्बलां शक्तिं ध्यात्वा द्वादशगोचरे । प्रविश्य हृदये ध्यायन् मुक्तः स्वातन्त्र्यम् आप्नुयात् ॥ ५५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: pināṃ ca durbalāṃ śaktiṃ dhyātvā dvādaśagocare | praviśya hṛdaye dhyāyan muktaḥ svātantryam āpnuyāt || 55 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #28

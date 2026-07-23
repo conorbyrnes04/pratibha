@@ -75,8 +75,14 @@ commentary: 'The teaching now becomes personal. The Self that each one says “I
   process to an ontological play of divine freedom.'
 insight: ''
 practice: Read the excerpt slowly, pause at one striking line, and reflect on its relevance to present experience.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'आत्मा प्रकाशवपुरेष शिवः स्वतन्त्रः स्वातन्त्र्यनर्मरभसेन निजं स्वरूपम्।
+
+
+  सञ्छाद्य यत्पुनरपि प्रथयेत पूर्णं तच्च क्रमाक्रमवशादथवा त्रिभेदात्॥५॥'
+sanskrit_iast: 'ātmā prakāśavapureṣa śivaḥ svatantraḥ svātantryanarmarabhasena nijaṃ svarūpam|
+
+
+  sañchādya yatpunarapi prathayeta pūrṇaṃ tacca kramākramavaśādathavā tribhedāt||5||'
 tags:
 - commentary_text
 - freedom
@@ -90,6 +96,17 @@ quality_score: 0
 editorial_maturity: publishable
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: 'आत्मा प्रकाशवपुरेष शिवः स्वतन्त्रः स्वातन्त्र्यनर्मरभसेन निजं स्वरूपम्।
+
+
+    सञ्छाद्य यत्पुनरपि प्रथयेत पूर्णं तच्च क्रमाक्रमवशादथवा त्रिभेदात्॥५॥'
+  layer_provenance: sourced
+- kind: iast
+  body: 'ātmā prakāśavapureṣa śivaḥ svatantraḥ svātantryanarmarabhasena nijaṃ svarūpam|
+
+
+    sañchādya yatpunarapi prathayeta pūrṇaṃ tacca kramākramavaśādathavā tribhedāt||5||'
 - kind: commentary
   label: Pratibha Commentary
   body: 'The teaching now becomes personal. The Self that each one says “I” to is none other than Śiva, a body of light, completely

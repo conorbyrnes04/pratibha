@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_047
 unit_label: 'Yukti #47'
 title: The Goddess Appears in Sensory Absence
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: अनागतायां निद्रायाम् प्रणष्टे बाह्यगोचरे । सावस्था मनसा गम्या परा देवी प्रकाशते ॥ ७५ ॥
+sanskrit_iast: anāgatāyāṃ nidrāyām praṇaṣṭe bāhyagocare | sāvasthā manasā gamyā parā devī prakāśate || 75 ||
 translation_literal: 'YUKTI #47
 
   When the external sensory field has disappeared but sleep has
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: अनागतायां निद्रायाम् प्रणष्टे बाह्यगोचरे । सावस्था मनसा गम्या परा देवी प्रकाशते ॥ ७५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: anāgatāyāṃ nidrāyām praṇaṣṭe bāhyagocare | sāvasthā manasā gamyā parā devī prakāśate || 75 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #47

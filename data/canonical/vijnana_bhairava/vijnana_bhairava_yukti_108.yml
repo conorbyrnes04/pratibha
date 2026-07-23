@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_108
 unit_label: 'Yukti #108'
 title: Return Attention From Objects To Knower
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: इन्द्रियद्वारकं सर्वं सुखदुःखादिसंगमम् । इतीन्द्रियाणि संत्यज्य स्वस्थः स्वात्मनि वर्तते ॥ १३६ ॥
+sanskrit_iast: indriyadvārakaṃ sarvaṃ sukhaduḥkhādisaṃgamam | itīndriyāṇi saṃtyajya svasthaḥ svātmani vartate || 136 ||
 translation_literal: 'YUKTI #108
 
   Union with pleasure, pain, and so on always occurs through the doors of
@@ -32,6 +32,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: इन्द्रियद्वारकं सर्वं सुखदुःखादिसंगमम् । इतीन्द्रियाणि संत्यज्य स्वस्थः स्वात्मनि वर्तते ॥ १३६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: indriyadvārakaṃ sarvaṃ sukhaduḥkhādisaṃgamam | itīndriyāṇi saṃtyajya svasthaḥ svātmani vartate || 136 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #108

@@ -27,8 +27,8 @@ commentary: When the inner gaze opens, sounds do nothing but caress the absolute
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: अतो विन्दुरतो नादो रूपमस्मादतो रसः । प्रवर्तन्तेऽचिरेणैव क्षोभकत्वेन देहिनः ॥ ४२ ॥
+sanskrit_iast: ato vindurato nādo rūpamasmādato rasaḥ | pravartante'cireṇaiva kṣobhakatvena dehinaḥ || 42 ||
 tags:
 - action
 - commentary_text
@@ -42,6 +42,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: अतो विन्दुरतो नादो रूपमस्मादतो रसः । प्रवर्तन्तेऽचिरेणैव क्षोभकत्वेन देहिनः ॥ ४२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ato vindurato nādo rūpamasmādato rasaḥ | pravartante'cireṇaiva kṣobhakatvena dehinaḥ || 42 ||
 - kind: translation
   label: Pratibha Translation
   body: Then, may light, sound, form, and taste come and impede the person who is still tied to the ego.

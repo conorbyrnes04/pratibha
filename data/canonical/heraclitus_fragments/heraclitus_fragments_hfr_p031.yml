@@ -21,7 +21,7 @@ commentary: 'The ''one'' is not mystical fusion but the single intelligible orde
 insight: ''
 practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
   arises — that resistance is part of the teaching.
-sanskrit_devanagari: ''
+sanskrit_devanagari: Εἰ μὴ ἥλιος ἦν, εὐφρόνη ἂν ἦν.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
@@ -31,6 +31,9 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: Εἰ μὴ ἥλιος ἦν, εὐφρόνη ἂν ἦν.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: If there were no sun, it would be night. one may escape the sensible light, but the intellectual it is impossible

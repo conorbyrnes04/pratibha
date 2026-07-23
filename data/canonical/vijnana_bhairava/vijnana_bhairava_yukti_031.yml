@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_031
 unit_label: 'Yukti #31'
 title: Mind Dissolves Into Its Own Emptiness
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: विश्वम् एतन् महादेवि शून्यभूतं विचिन्तयेत् । तत्रैव च मनो लीनं ततस् तल्लयभाजनम् ॥ ५८ ॥
+sanskrit_iast: viśvam etan mahādevi śūnyabhūtaṃ vicintayet | tatraiva ca mano līnaṃ tatas tallayabhājanam || 58 ||
 translation_literal: 'YUKTI #31
 
   O great Goddess, one may consider this universe as Empty Void;
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: विश्वम् एतन् महादेवि शून्यभूतं विचिन्तयेत् । तत्रैव च मनो लीनं ततस् तल्लयभाजनम् ॥ ५८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: viśvam etan mahādevi śūnyabhūtaṃ vicintayet | tatraiva ca mano līnaṃ tatas tallayabhājanam || 58 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #31

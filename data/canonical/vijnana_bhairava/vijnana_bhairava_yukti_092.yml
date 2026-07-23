@@ -7,8 +7,9 @@ unit_id: vijnana_bhairava.yukti_092
 unit_label: 'Yukti #92'
 title: Withdrawing Attention Reveals the Spacious Knower
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: क्वचिद् वस्तुनि विन्यस्य शनैर् दृष्टिं निवर्तयेत् । तज् ज्ञानं चित्तसहितं देवि शून्यालायो भवेत् ॥ १२०
+  ॥
+sanskrit_iast: kvacid vastuni vinyasya śanair dṛṣṭiṃ nivartayet | taj jñānaṃ cittasahitaṃ devi śūnyālāyo bhavet || 120 ||
 translation_literal: 'YUKTI #92
 
   Fix the gaze on some object, then slowly withdraw it, then the
@@ -34,6 +35,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: क्वचिद् वस्तुनि विन्यस्य शनैर् दृष्टिं निवर्तयेत् । तज् ज्ञानं चित्तसहितं देवि शून्यालायो भवेत् ॥ १२० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kvacid vastuni vinyasya śanair dṛṣṭiṃ nivartayet | taj jñānaṃ cittasahitaṃ devi śūnyālāyo bhavet || 120 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #92

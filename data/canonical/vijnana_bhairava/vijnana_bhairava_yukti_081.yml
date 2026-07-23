@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_081
 unit_label: 'Yukti #81'
 title: Becoming Śiva Through Conviction of Identity
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: सर्वज्ञः सर्वकर्ता च व्यापकः परमेश्वरः । स एवाहं शैवधर्मा इति दार्ढ्याच् छिवो भवेत् ॥ १०९ ॥
+sanskrit_iast: sarvajñaḥ sarvakartā ca vyāpakaḥ parameśvaraḥ | sa evāhaṃ śaivadharmā iti dārḍhyāc chivo bhavet || 109 ||
 translation_literal: 'YUKTI #81
 
   “The Highest Divinity is omniscient, omnipotent, and all-
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: सर्वज्ञः सर्वकर्ता च व्यापकः परमेश्वरः । स एवाहं शैवधर्मा इति दार्ढ्याच् छिवो भवेत् ॥ १०९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: sarvajñaḥ sarvakartā ca vyāpakaḥ parameśvaraḥ | sa evāhaṃ śaivadharmā iti dārḍhyāc chivo bhavet || 109 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #81

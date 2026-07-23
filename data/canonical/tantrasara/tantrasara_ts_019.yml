@@ -45,8 +45,14 @@ commentary: '(commentary pending)
   passage focuses on the mind’s internal pivot toward the body, highlighting a more inward, physiological orientation'
 insight: ''
 practice: Read the excerpt slowly, pause at one striking line, and reflect on its relevance to present experience.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'विकल्पः कस्यापि स्वयमनुपयन्पूर्णमयतामुपायात्संस्कारं व्रजति स उपायोऽत्र बहुधा।
+
+
+  धियि प्राणे देहे तदनु बहिरित्याणवतया स निर्णीतो नैषां परफलविधौ कापि हि भिदा॥'
+sanskrit_iast: 'vikalpaḥ kasyāpi svayamanupayanpūrṇamayatāmupāyātsaṃskāraṃ vrajati sa upāyo''tra bahudhā|
+
+
+  dhiyi prāṇe dehe tadanu bahirityāṇavatayā sa nirṇīto naiṣāṃ paraphalavidhau kāpi hi bhidā||'
 tags:
 - commentary_text
 - tantrasara
@@ -54,6 +60,17 @@ quality_score: 0
 editorial_maturity: publishable
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: 'विकल्पः कस्यापि स्वयमनुपयन्पूर्णमयतामुपायात्संस्कारं व्रजति स उपायोऽत्र बहुधा।
+
+
+    धियि प्राणे देहे तदनु बहिरित्याणवतया स निर्णीतो नैषां परफलविधौ कापि हि भिदा॥'
+  layer_provenance: sourced
+- kind: iast
+  body: 'vikalpaḥ kasyāpi svayamanupayanpūrṇamayatāmupāyātsaṃskāraṃ vrajati sa upāyo''tra bahudhā|
+
+
+    dhiyi prāṇe dehe tadanu bahirityāṇavatayā sa nirṇīto naiṣāṃ paraphalavidhau kāpi hi bhidā||'
 - kind: commentary
   label: Pratibha Commentary
   body: '(commentary pending)

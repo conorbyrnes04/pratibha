@@ -7,8 +7,10 @@ unit_id: vijnana_bhairava.yukti_105
 unit_label: 'Yukti #105'
 title: The Magic Show Dissolves All Solidity
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: अतत्त्वम् इन्द्रजालाभम् इदं सर्वम् अवस्थितम् । किं तत्त्वम् इन्द्रजालस्य इति दार्ढ्याच् छमं व्रजेत् ॥
+  १३३ ॥
+sanskrit_iast: atattvam indrajālābham idaṃ sarvam avasthitam | kiṃ tattvam indrajālasya iti dārḍhyāc chamaṃ vrajet || 133
+  ||
 translation_literal: 'YUKTI #105
 
   “It is established that this entire [universe] is as unreal as a magic
@@ -40,6 +42,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: अतत्त्वम् इन्द्रजालाभम् इदं सर्वम् अवस्थितम् । किं तत्त्वम् इन्द्रजालस्य इति दार्ढ्याच् छमं व्रजेत् ॥ १३३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: atattvam indrajālābham idaṃ sarvam avasthitam | kiṃ tattvam indrajālasya iti dārḍhyāc chamaṃ vrajet || 133 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #105

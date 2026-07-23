@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_018
 unit_label: 'Yukti #18'
 title: Body and Space Dissolve Into Oneness
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: निजदेहे सर्वदिक्कं युगपद् भावयेद् वियत् । निर्विकल्पमनास् तस्य वियत् सर्वम् प्रवर्तते ॥ ४३ ॥
+sanskrit_iast: nijadehe sarvadikkaṃ yugapad bhāvayed viyat | nirvikalpamanās tasya viyat sarvam pravartate || 43 ||
 translation_literal: 'YUKTI #18
 
   One may simultaneously contemplate all the parts of one’s own
@@ -38,6 +38,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: निजदेहे सर्वदिक्कं युगपद् भावयेद् वियत् । निर्विकल्पमनास् तस्य वियत् सर्वम् प्रवर्तते ॥ ४३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: nijadehe sarvadikkaṃ yugapad bhāvayed viyat | nirvikalpamanās tasya viyat sarvam pravartate || 43 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #18

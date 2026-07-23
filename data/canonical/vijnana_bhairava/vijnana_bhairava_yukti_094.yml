@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_094
 unit_label: 'Yukti #94'
 title: Emptiness Perceived Within Ongoing Perception
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: वस्त्वन्तरे वेद्यमाने सर्ववस्तुषु शून्यता । ताम् एव मनसा ध्यात्वा विदितोऽपि प्रशाम्यति ॥ १२२ ॥
+sanskrit_iast: vastvantare vedyamāne sarvavastuṣu śūnyatā | tām eva manasā dhyātvā vidito'pi praśāmyati || 122 ||
 translation_literal: 'YUKTI #94
 
   When another object is being perceived, the emptiness in all things
@@ -40,6 +40,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: वस्त्वन्तरे वेद्यमाने सर्ववस्तुषु शून्यता । ताम् एव मनसा ध्यात्वा विदितोऽपि प्रशाम्यति ॥ १२२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: vastvantare vedyamāne sarvavastuṣu śūnyatā | tām eva manasā dhyātvā vidito'pi praśāmyati || 122 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #94

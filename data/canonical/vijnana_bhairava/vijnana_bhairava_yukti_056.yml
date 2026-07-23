@@ -7,8 +7,9 @@ unit_id: vijnana_bhairava.yukti_056
 unit_label: 'Yukti #56'
 title: Stillness Dissolves Into Bhairava's Form
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: आकाशं विमलम् पश्यन् कृत्वा दृष्टिं निरन्तराम् । स्तब्धात्मा तत्क्षणाद् देवि भैरवं वपुर् आप्नुयात् ॥ ८४
+  ॥
+sanskrit_iast: ākāśaṃ vimalam paśyan kṛtvā dṛṣṭiṃ nirantarām | stabdhātmā tatkṣaṇād devi bhairavaṃ vapur āpnuyāt || 84 ||
 translation_literal: 'YUKTI #56
 
   Looking at the clear blue sky, with uninterrupted gaze,
@@ -46,6 +47,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: आकाशं विमलम् पश्यन् कृत्वा दृष्टिं निरन्तराम् । स्तब्धात्मा तत्क्षणाद् देवि भैरवं वपुर् आप्नुयात् ॥ ८४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ākāśaṃ vimalam paśyan kṛtvā dṛṣṭiṃ nirantarām | stabdhātmā tatkṣaṇād devi bhairavaṃ vapur āpnuyāt || 84 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #56

@@ -24,8 +24,8 @@ commentary: 'Read this line as a contemplative pointer: pause interpretation for
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: तमधिष्ठातृभावेन स्वभावमवलोकयन् । स्मयमान इवास्ते यस्तस्येयं कुसृतिः कुतः ॥ ११ ॥
+sanskrit_iast: tamadhiṣṭhātṛbhāvena svabhāvamavalokayan | smayamāna ivāste yastasyeyaṃ kusṛtiḥ kutaḥ || 11 ||
 tags:
 - action
 - commentary_text
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: तमधिष्ठातृभावेन स्वभावमवलोकयन् । स्मयमान इवास्ते यस्तस्येयं कुसृतिः कुतः ॥ ११ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: tamadhiṣṭhātṛbhāvena svabhāvamavalokayan | smayamāna ivāste yastasyeyaṃ kusṛtiḥ kutaḥ || 11 ||
 - kind: translation
   label: Pratibha Translation
   body: 'considers the subject of transmigration—which occurs occasionally in the Tantric texts—and asks clearly: “How can

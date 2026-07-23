@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_002
 unit_label: 'Yukti #2'
 title: Power Revealed When Breath Comes to Rest
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: न व्रजेन् न विशेच् छक्तिर् मरुद्रूपा विकासिते । निर्विकल्पतया मध्ये तया भैरवरूपता ॥ २६ ॥
+sanskrit_iast: na vrajen na viśec chaktir marudrūpā vikāsite | nirvikalpatayā madhye tayā bhairavarūpatā || 26 ||
 translation_literal: 'YUKTI #2
 
   Neither moving forth, nor entering in, the power (śakti) inherent in the prāṇa
@@ -48,6 +48,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: न व्रजेन् न विशेच् छक्तिर् मरुद्रूपा विकासिते । निर्विकल्पतया मध्ये तया भैरवरूपता ॥ २६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: na vrajen na viśec chaktir marudrūpā vikāsite | nirvikalpatayā madhye tayā bhairavarūpatā || 26 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #2

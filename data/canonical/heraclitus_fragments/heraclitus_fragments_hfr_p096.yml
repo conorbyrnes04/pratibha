@@ -28,7 +28,7 @@ commentary: 'This aphorism compresses a cosmological claim into a single image o
 insight: ''
 practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
   rests on. Can you hear the claim, not only think it?
-sanskrit_devanagari: ''
+sanskrit_devanagari: Ἦθος γὰρ ἀνθρώπειον μὲν οὐκ ἔχει γνώμας, θεῖον δὲ ἔχει.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
@@ -37,6 +37,9 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: Ἦθος γὰρ ἀνθρώπειον μὲν οὐκ ἔχει γνώμας, θεῖον δὲ ἔχει.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: 'For human nature does not possess understanding, but the divine does. thus statedly shown that we do and think everything

@@ -7,8 +7,9 @@ unit_id: vijnana_bhairava.yukti_020
 unit_label: 'Yukti #20'
 title: Three Spaces Dissolve Dualistic Mind
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: पृष्टशून्यं मूलशून्यं हृच्छून्यम् भावयेत् स्थिरम् । युगपन् निर्विकल्पत्वान् निर्विकल्पोदयस् ततः ॥ ४५
+  ॥
+sanskrit_iast: pṛṣṭaśūnyaṃ mūlaśūnyaṃ hṛcchūnyam bhāvayet sthiram | yugapan nirvikalpatvān nirvikalpodayas tataḥ || 45 ||
 translation_literal: 'YUKTI #20
 
   One may steadily contemplate the space above, the space in the
@@ -48,6 +49,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: पृष्टशून्यं मूलशून्यं हृच्छून्यम् भावयेत् स्थिरम् । युगपन् निर्विकल्पत्वान् निर्विकल्पोदयस् ततः ॥ ४५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: pṛṣṭaśūnyaṃ mūlaśūnyaṃ hṛcchūnyam bhāvayet sthiram | yugapan nirvikalpatvān nirvikalpodayas tataḥ || 45 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #20

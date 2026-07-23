@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_052
 unit_label: 'Yukti #52'
 title: Gaze Without Thought Reveals the Witness
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: स्थूलरूपस्य भावस्य स्तब्धां दृष्टिं निपात्य च । अचिरेण निराधारं मनः कृत्वा शिवं व्रजेत् ॥ ८० ॥
+sanskrit_iast: sthūlarūpasya bhāvasya stabdhāṃ dṛṣṭiṃ nipātya ca | acireṇa nirādhāraṃ manaḥ kṛtvā śivaṃ vrajet || 80 ||
 translation_literal: 'YUKTI #52
 
   Casting an unmoving gaze upon a being with a physical form and
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: स्थूलरूपस्य भावस्य स्तब्धां दृष्टिं निपात्य च । अचिरेण निराधारं मनः कृत्वा शिवं व्रजेत् ॥ ८० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: sthūlarūpasya bhāvasya stabdhāṃ dṛṣṭiṃ nipātya ca | acireṇa nirādhāraṃ manaḥ kṛtvā śivaṃ vrajet || 80 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #52

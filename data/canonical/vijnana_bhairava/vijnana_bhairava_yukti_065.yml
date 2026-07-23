@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_065
 unit_label: 'Yukti #65'
 title: Attention Returns to the Knower Within
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: किंचिद् अङ्गं विभिद्यादौ तीक्ष्णसूच्यादिना ततः । तत्रैव चेतनां युक्त्वा भैरवे निर्मला गतिः ॥ ९३ ॥
+sanskrit_iast: kiṃcid aṅgaṃ vibhidyādau tīkṣṇasūcyādinā tataḥ | tatraiva cetanāṃ yuktvā bhairave nirmalā gatiḥ || 93 ||
 translation_literal: 'YUKTI #65
 
   Having first pierced any part of the body with a sharp needle or
@@ -32,6 +32,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: किंचिद् अङ्गं विभिद्यादौ तीक्ष्णसूच्यादिना ततः । तत्रैव चेतनां युक्त्वा भैरवे निर्मला गतिः ॥ ९३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kiṃcid aṅgaṃ vibhidyādau tīkṣṇasūcyādinā tataḥ | tatraiva cetanāṃ yuktvā bhairave nirmalā gatiḥ || 93 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #65

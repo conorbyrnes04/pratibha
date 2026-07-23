@@ -7,8 +7,9 @@ unit_id: vijnana_bhairava.yukti_022
 unit_label: 'Yukti #22'
 title: Skin as Screen Dissolves Subject-Object
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: देहान्तरे त्वग्विभागम् भित्तिभूतं विचिन्तयेत् । न किंचिद् अन्तरे तस्य ध्यायन्न् अध्येयभाग् भवेत् ॥ ४८
+  ॥
+sanskrit_iast: dehāntare tvagvibhāgam bhittibhūtaṃ vicintayet | na kiṃcid antare tasya dhyāyann adhyeyabhāg bhavet || 48 ||
 translation_literal: 'YUKTI #22
 
   One may imagine that the ‘dividing wall’ of skin is [merely] a
@@ -36,6 +37,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: देहान्तरे त्वग्विभागम् भित्तिभूतं विचिन्तयेत् । न किंचिद् अन्तरे तस्य ध्यायन्न् अध्येयभाग् भवेत् ॥ ४८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: dehāntare tvagvibhāgam bhittibhūtaṃ vicintayet | na kiṃcid antare tasya dhyāyann adhyeyabhāg bhavet || 48 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #22

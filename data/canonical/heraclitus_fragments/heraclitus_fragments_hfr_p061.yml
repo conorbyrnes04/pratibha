@@ -27,7 +27,10 @@ commentary: 'Opposition is not a failure of order but its instrument. Heraclitus
 insight: ''
 practice: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the
   function? Write both pulls without trying to remove either.'
-sanskrit_devanagari: ''
+sanskrit_devanagari: ἀπρεπές φασιν, εἰ τέρπει τοὺς θεοὺς πολέμων θέα. ἀλλ' οὐκ ἀπρεπές· τὰ γὰρ γενναῖα ἔργα τέρπει. ἄλλως
+  τε πόλεμοι καὶ μάχαι ἡμῖν μὲν δεινὰ δοκεῖ, τῷ δὲ θεῷ οὐδὲ ταῦτα δεινά. συντελεῖ γὰρ ἅπαντα ὁ θεὸς πρὸς ἁρμονίαν τῶν ὅλων,
+  οἰκονομῶν τὰ συμφέροντα, ὅπερ καὶ Ἡράκλειτος λέγει, ὡς τῷ μὲν θεῷ καλὰ πάντα καὶ ἀγαθὰ καὶ δίκαια, ἄνθρωποι δὲ ἃ μὲν ἄδικα
+  ὑπειλήφασιν, ἃ δὲ δίκαια.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
@@ -37,6 +40,12 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: ἀπρεπές φασιν, εἰ τέρπει τοὺς θεοὺς πολέμων θέα. ἀλλ' οὐκ ἀπρεπές· τὰ γὰρ γενναῖα ἔργα τέρπει. ἄλλως τε πόλεμοι καὶ
+    μάχαι ἡμῖν μὲν δεινὰ δοκεῖ, τῷ δὲ θεῷ οὐδὲ ταῦτα δεινά. συντελεῖ γὰρ ἅπαντα ὁ θεὸς πρὸς ἁρμονίαν τῶν ὅλων, οἰκονομῶν τὰ
+    συμφέροντα, ὅπερ καὶ Ἡράκλειτος λέγει, ὡς τῷ μὲν θεῷ καλὰ πάντα καὶ ἀγαθὰ καὶ δίκαια, ἄνθρωποι δὲ ἃ μὲν ἄδικα ὑπειλήφασιν,
+    ἃ δὲ δίκαια.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: that it is unfitting that the sight of wars should please the gods. But it is notso. For noble works delight them,

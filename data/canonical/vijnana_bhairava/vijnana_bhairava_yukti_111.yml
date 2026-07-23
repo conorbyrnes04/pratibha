@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_111
 unit_label: 'Yukti #111'
 title: Understanding Dissolves Into Direct Recognition
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: निस्तरङ्गोपदेशानां शतम् उक्तं समासतः । द्वादशाभ्यधिकं देवि यज् ज्ञात्वा ज्ञानविज् जनः ॥ १३९ ॥
+sanskrit_iast: nistaraṅgopadeśānāṃ śatam uktaṃ samāsataḥ | dvādaśābhyadhikaṃ devi yaj jñātvā jñānavij janaḥ || 139 ||
 translation_literal: 'YUKTI #111
 
   O Goddess, I have taught 112 concise verses on how become ‘waveless’. One
@@ -44,6 +44,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: निस्तरङ्गोपदेशानां शतम् उक्तं समासतः । द्वादशाभ्यधिकं देवि यज् ज्ञात्वा ज्ञानविज् जनः ॥ १३९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: nistaraṅgopadeśānāṃ śatam uktaṃ samāsataḥ | dvādaśābhyadhikaṃ devi yaj jñātvā jñānavij janaḥ || 139 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #111

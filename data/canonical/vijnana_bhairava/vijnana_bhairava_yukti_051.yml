@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_051
 unit_label: 'Yukti #51'
 title: Attention Returns to the Knower Within
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: उपविश्यासने सम्यग् बाहू कृत्वार्धकुञ्चितौ । कक्षव्योम्नि मनः कुर्वन् शमम् आयाति तल्लयात् ॥ ७९ ॥
+sanskrit_iast: upaviśyāsane samyag bāhū kṛtvārdhakuñcitau | kakṣavyomni manaḥ kurvan śamam āyāti tallayāt || 79 ||
 translation_literal: 'YUKTI #51
 
   Settling oneself on a seat properly and half-bending the arms,
@@ -32,6 +32,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: उपविश्यासने सम्यग् बाहू कृत्वार्धकुञ्चितौ । कक्षव्योम्नि मनः कुर्वन् शमम् आयाति तल्लयात् ॥ ७९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: upaviśyāsane samyag bāhū kṛtvārdhakuñcitau | kakṣavyomni manaḥ kurvan śamam āyāti tallayāt || 79 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #51

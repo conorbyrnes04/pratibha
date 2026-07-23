@@ -32,8 +32,8 @@ commentary: Finally, silence settles in, the yogin and yogini reside there, and 
 insight: ''
 practice: For 3 minutes, watch inner speech without suppressing it. Each time words arise, return to the silent awareness
   that knows the words.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: दिदृक्षयेव सर्वार्थान्यदा व्याप्यावतिष्ठते । तदा किं बहुनोक्तेन स्वयमेवावभोत्स्यते ॥ ४३ ॥
+sanskrit_iast: didṛkṣayeva sarvārthānyadā vyāpyāvatiṣṭhate | tadā kiṃ bahunoktena svayamevāvabhotsyate || 43 ||
 tags:
 - awareness
 - commentary_text
@@ -48,6 +48,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: दिदृक्षयेव सर्वार्थान्यदा व्याप्यावतिष्ठते । तदा किं बहुनोक्तेन स्वयमेवावभोत्स्यते ॥ ४३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: didṛkṣayeva sarvārthānyadā vyāpyāvatiṣṭhate | tadā kiṃ bahunoktena svayamevāvabhotsyate || 43 ||
 - kind: translation
   label: Pratibha Translation
   body: When the tantrika pervades everything with his absolute desire, what use are words? He has this experience on his

@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_088
 unit_label: 'Yukti #88'
 title: The Mind Finds Only Śiva Everywhere
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यत्र यत्र मनो याति बाह्ये वाभ्यन्तरेऽपि वा । तत्र तत्र शिवावास्था व्यापकत्वात् क्व यास्यति ॥ ११६ ॥
+sanskrit_iast: yatra yatra mano yāti bāhye vābhyantare'pi vā | tatra tatra śivāvāsthā vyāpakatvāt kva yāsyati || 116 ||
 translation_literal: 'YUKTI #88
 
   Wherever the mind goes, externally or even internally, it
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यत्र यत्र मनो याति बाह्ये वाभ्यन्तरेऽपि वा । तत्र तत्र शिवावास्था व्यापकत्वात् क्व यास्यति ॥ ११६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yatra yatra mano yāti bāhye vābhyantare'pi vā | tatra tatra śivāvāsthā vyāpakatvāt kva yāsyati || 116 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #88

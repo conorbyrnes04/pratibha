@@ -7,8 +7,9 @@ unit_id: vijnana_bhairava.yukti_032
 unit_label: 'Yukti #32'
 title: Dissolving Into Spacious Awareness Through Empty Vessels
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: घतादिभाजने दृष्टिम् भित्तिस् त्यक्त्वा विनिक्षिपेत् । तल्लयं तत्क्षणाद् गत्वा तल्लयात् तन्मयो भवेत् ॥
+  ५९ ॥
+sanskrit_iast: ghatādibhājane dṛṣṭim bhittis tyaktvā vinikṣipet | tallayaṃ tatkṣaṇād gatvā tallayāt tanmayo bhavet || 59 ||
 translation_literal: 'YUKTI #32
 
   One may cast one’s gaze into a well-formed vessel, such as a pot
@@ -38,6 +39,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: घतादिभाजने दृष्टिम् भित्तिस् त्यक्त्वा विनिक्षिपेत् । तल्लयं तत्क्षणाद् गत्वा तल्लयात् तन्मयो भवेत् ॥ ५९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ghatādibhājane dṛṣṭim bhittis tyaktvā vinikṣipet | tallayaṃ tatkṣaṇād gatvā tallayāt tanmayo bhavet || 59 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #32

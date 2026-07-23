@@ -34,8 +34,8 @@ commentary: 'So, absolute freedom spontaneously gushes forth like a spring. Noth
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यदा त्वेकत्र संरूढस्तदा तस्य लयोदयौ । नियच्छन्भोक्तृतामेति ततश्चक्रेश्वरो भवेत् ॥ ५१ ॥
+sanskrit_iast: yadā tvekatra saṃrūḍhastadā tasya layodayau | niyacchanbhoktṛtāmeti tataścakreśvaro bhavet || 51 ||
 tags:
 - action
 - commentary_text
@@ -50,6 +50,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यदा त्वेकत्र संरूढस्तदा तस्य लयोदयौ । नियच्छन्भोक्तृतामेति ततश्चक्रेश्वरो भवेत् ॥ ५१ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yadā tvekatra saṃrūḍhastadā tasya layodayau | niyacchanbhoktṛtāmeti tataścakreśvaro bhavet || 51 ||
 - kind: translation
   label: Pratibha Translation
   body: But when the tantrika becomes established in the sacred tremor of reality, he liberates the flow of manifestation

@@ -29,7 +29,8 @@ commentary: 'Heraclitus insists that wisdom is auditory before it is argumentati
 insight: ''
 practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
   rests on. Can you hear the claim, not only think it?
-sanskrit_devanagari: ''
+sanskrit_devanagari: δοκεῖ δ' ἐνίοις ἡ καπνώδης ἀναθυμίασις εἶναι ὀσμή, οὖσα κοινὴ γῆς τε καὶ ἀέρος. καὶ πάντες ἐπιφέρονται
+  ἐπὶ τοῦτο περὶ ὀσμῆς· διὸ καὶ Ἡράκλειτος οὕτως εἴρηκεν, ὡς εἰ πάντα τὰ ὄντα καπνὸς γένοιτο, ῥῖνες ἂν διαγνοῖεν.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
@@ -40,6 +41,10 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: δοκεῖ δ' ἐνίοις ἡ καπνώδης ἀναθυμίασις εἶναι ὀσμή, οὖσα κοινὴ γῆς τε καὶ ἀέρος. καὶ πάντες ἐπιφέρονται ἐπὶ τοῦτο περὶ
+    ὀσμῆς· διὸ καὶ Ἡράκλειτος οὕτως εἴρηκεν, ὡς εἰ πάντα τὰ ὄντα καπνὸς γένοιτο, ῥῖνες ἂν διαγνοῖεν.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things are converted

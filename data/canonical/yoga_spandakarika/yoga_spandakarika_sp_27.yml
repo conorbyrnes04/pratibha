@@ -20,8 +20,10 @@ commentary: 'Read this line as a contemplative pointer: pause interpretation for
 insight: ''
 practice: Sit for 5 minutes and follow the breath naturally. At each inhale and exhale, notice the subtle vibration of awareness
   before naming it.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: तदाक्रम्य बलं मन्त्राः सर्वज्ञबलशालिनः । प्रवर्तन्तेऽधिकाराय करणानीव देहिनाम् ॥ २६ ॥ तत्रैव संप्रलीयन्ते
+  शान्तरूपा निरञ्जनाः । सहाराधकचित्तेन तेनैते शिवधर्मिणः ॥ २७ ॥
+sanskrit_iast: tadākramya balaṃ mantrāḥ sarvajñabalaśālinaḥ | pravartante'dhikārāya karaṇānīva dehinām || 26 || tatraiva saṃpralīyante
+  śāntarūpā nirañjanāḥ | sahārādhakacittena tenaite śivadharmiṇaḥ || 27 ||
 tags:
 - awareness
 - breath
@@ -32,6 +34,13 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: तदाक्रम्य बलं मन्त्राः सर्वज्ञबलशालिनः । प्रवर्तन्तेऽधिकाराय करणानीव देहिनाम् ॥ २६ ॥ तत्रैव संप्रलीयन्ते शान्तरूपा
+    निरञ्जनाः । सहाराधकचित्तेन तेनैते शिवधर्मिणः ॥ २७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: tadākramya balaṃ mantrāḥ sarvajñabalaśālinaḥ | pravartante'dhikārāya karaṇānīva dehinām || 26 || tatraiva saṃpralīyante
+    śāntarūpā nirañjanāḥ | sahārādhakacittena tenaite śivadharmiṇaḥ || 27 ||
 - kind: translation
   label: Pratibha Translation
   body: Shared source passage with Stanza 26. See Stanza 26 for the full translation and commentary.

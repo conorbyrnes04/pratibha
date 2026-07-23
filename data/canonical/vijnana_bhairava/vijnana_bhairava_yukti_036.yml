@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_036
 unit_label: 'Yukti #36'
 title: Consciousness Recognized As All That Is
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: सर्वं देहं चिन्मयं हि जगद् वा परिभावयेत् । युगपन् निर्विकल्पेन मनसा परमोदयः ॥ ६३ ॥
+sanskrit_iast: sarvaṃ dehaṃ cinmayaṃ hi jagad vā paribhāvayet | yugapan nirvikalpena manasā paramodayaḥ || 63 ||
 translation_literal: 'YUKTI #36
 
   One may contemplate [the Truth] that one’s entire body, or
@@ -38,6 +38,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: सर्वं देहं चिन्मयं हि जगद् वा परिभावयेत् । युगपन् निर्विकल्पेन मनसा परमोदयः ॥ ६३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: sarvaṃ dehaṃ cinmayaṃ hi jagad vā paribhāvayet | yugapan nirvikalpena manasā paramodayaḥ || 63 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #36

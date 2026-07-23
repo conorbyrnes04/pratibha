@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_046
 unit_label: 'Yukti #46'
 title: Bliss Reveals Itself Through Sustained Attention
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यत्र यत्र मनस् तुष्टिर् मनस् तत्रैव धारयेत् । तत्र तत्र परानन्दस्वारूपं सम्प्रवर्तते ॥ ७४ ॥
+sanskrit_iast: yatra yatra manas tuṣṭir manas tatraiva dhārayet | tatra tatra parānandasvārūpaṃ sampravartate || 74 ||
 translation_literal: 'YUKTI #46
 
   Wherever the mind delights, let your attention linger there [in
@@ -32,6 +32,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यत्र यत्र मनस् तुष्टिर् मनस् तत्रैव धारयेत् । तत्र तत्र परानन्दस्वारूपं सम्प्रवर्तते ॥ ७४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yatra yatra manas tuṣṭir manas tatraiva dhārayet | tatra tatra parānandasvārūpaṃ sampravartate || 74 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #46

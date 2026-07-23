@@ -30,8 +30,10 @@ commentary: 'The effort to understand from all angles is the abandonment of limi
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यथा ह्यर्थोऽस्फुटो दृष्टः सावधानेऽपि चेतसि । भूयः स्फुटतरो भाति स्वबलोद्योगभावितः ॥ ३६ ॥ तथा यत्परमार्थेन
+  येन यत्र यथा स्थितम् । तत्तथा बलमाक्रम्य न चिरात्सम्प्रवर्तते ॥ ३७ ॥
+sanskrit_iast: yathā hyartho'sphuṭo dṛṣṭaḥ sāvadhāne'pi cetasi | bhūyaḥ sphuṭataro bhāti svabalodyogabhāvitaḥ || 36 || tathā
+  yatparamārthena yena yatra yathā sthitam | tattathā balamākramya na cirātsampravartate || 37 ||
 tags:
 - action
 - attention
@@ -44,6 +46,13 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यथा ह्यर्थोऽस्फुटो दृष्टः सावधानेऽपि चेतसि । भूयः स्फुटतरो भाति स्वबलोद्योगभावितः ॥ ३६ ॥ तथा यत्परमार्थेन येन यत्र
+    यथा स्थितम् । तत्तथा बलमाक्रम्य न चिरात्सम्प्रवर्तते ॥ ३७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yathā hyartho'sphuṭo dṛṣṭaḥ sāvadhāne'pi cetasi | bhūyaḥ sphuṭataro bhāti svabalodyogabhāvitaḥ || 36 || tathā yatparamārthena
+    yena yatra yathā sthitam | tattathā balamākramya na cirātsampravartate || 37 ||
 - kind: translation
   label: Pratibha Translation
   body: Just as an object that escapes attention is more clearly perceived when we make the effort to see it better from all

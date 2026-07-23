@@ -28,8 +28,8 @@ commentary: In the unity of the uninterrupted flow of consciousness, the differe
 insight: ''
 practice: Close the eyes for 2 minutes and release all labels. Repeatedly return to the immediate sense 'I am aware' without
   adding any story.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: न दुःखं न सुखं यत्र न ग्राह्यं ग्राहकं न च । न चास्ति मूढभावोऽपि तदस्ति परमार्थतः ॥ ५ ॥
+sanskrit_iast: na duḥkhaṃ na sukhaṃ yatra na grāhyaṃ grāhakaṃ na ca | na cāsti mūḍhabhāvo'pi tadasti paramārthataḥ || 5 ||
 tags:
 - commentary_text
 - consciousness
@@ -41,6 +41,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: न दुःखं न सुखं यत्र न ग्राह्यं ग्राहकं न च । न चास्ति मूढभावोऽपि तदस्ति परमार्थतः ॥ ५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: na duḥkhaṃ na sukhaṃ yatra na grāhyaṃ grāhakaṃ na ca | na cāsti mūḍhabhāvo'pi tadasti paramārthataḥ || 5 ||
 - kind: translation
   label: Pratibha Translation
   body: In the absolute sense, pleasure and suffering, subject and object, are nothing other than the space of profound consciousness.

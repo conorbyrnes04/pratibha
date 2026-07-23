@@ -24,8 +24,10 @@ commentary: 'Read this line as a contemplative pointer: pause interpretation for
 insight: ''
 practice: Close the eyes for 2 minutes and release all labels. Repeatedly return to the immediate sense 'I am aware' without
   adding any story.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: न हीच्छानोदनस्यायं प्रेरकत्वेन वर्तते । अपि त्वात्मबलस्पर्शात्पुरुषस्तत्समो भवेत् ॥ ८ ॥ निजाशुद्ध्यासमर्थस्य
+  कर्तव्येष्वभिलाषिणः । यदा क्षोभः प्रलीयेत तदा स्यात्परमं पदम् ॥ ९ ॥
+sanskrit_iast: na hīcchānodanasyāyaṃ prerakatvena vartate | api tvātmabalasparśātpuruṣastatsamo bhavet || 8 || nijāśuddhyāsamarthasya
+  kartavyeṣvabhilāṣiṇaḥ | yadā kṣobhaḥ pralīyeta tadā syātparamaṃ padam || 9 ||
 tags:
 - awareness
 - commentary_text
@@ -40,6 +42,13 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: न हीच्छानोदनस्यायं प्रेरकत्वेन वर्तते । अपि त्वात्मबलस्पर्शात्पुरुषस्तत्समो भवेत् ॥ ८ ॥ निजाशुद्ध्यासमर्थस्य कर्तव्येष्वभिलाषिणः
+    । यदा क्षोभः प्रलीयेत तदा स्यात्परमं पदम् ॥ ९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: na hīcchānodanasyāyaṃ prerakatvena vartate | api tvātmabalasparśātpuruṣastatsamo bhavet || 8 || nijāśuddhyāsamarthasya
+    kartavyeṣvabhilāṣiṇaḥ | yadā kṣobhaḥ pralīyeta tadā syātparamaṃ padam || 9 ||
 - kind: translation
   label: Pratibha Translation
   body: Shared source passage with Stanza 8. See Stanza 8 for the full translation and commentary.

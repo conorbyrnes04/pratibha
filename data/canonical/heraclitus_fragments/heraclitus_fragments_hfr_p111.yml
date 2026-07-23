@@ -30,7 +30,8 @@ commentary: 'The ''one'' is not mystical fusion but the single intelligible orde
 insight: ''
 practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
   arises — that resistance is part of the teaching.
-sanskrit_devanagari: ''
+sanskrit_devanagari: Τίς γὰρ αὐτῶν νόος ἢ φρήν; [δήμων] ἀοιδοῖσι ἕπονται καὶ διδασκάλῳ χρέωνται ὁμίλῳ, οὐκ εἰδότες ὅτι πολλοὶ
+  κακοὶ ὀλίγοι δὲ ἀγαθοί. αἱρεῦνται γὰρ ἓν ἀντία πάντων οἱ ἄριστοι, κλέος ἀέναον θνητῶν, οἱ δὲ πολλοὶ κεκόρηνται ὅκωσπερ κτήνεα.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - awareness
@@ -47,6 +48,10 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: Τίς γὰρ αὐτῶν νόος ἢ φρήν; [δήμων] ἀοιδοῖσι ἕπονται καὶ διδασκάλῳ χρέωνται ὁμίλῳ, οὐκ εἰδότες ὅτι πολλοὶ κακοὶ ὀλίγοι
+    δὲ ἀγαθοί. αἱρεῦνται γὰρ ἓν ἀντία πάντων οἱ ἄριστοι, κλέος ἀέναον θνητῶν, οἱ δὲ πολλοὶ κεκόρηνται ὅκωσπερ κτήνεα.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: For what sense or understanding have they ὃ They follow minstrels and take the multitude for a teacher, not knowing

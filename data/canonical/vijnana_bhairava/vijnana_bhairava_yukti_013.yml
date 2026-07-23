@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_013
 unit_label: 'Yukti #13'
 title: Unstruck Sound Reveals Supreme Brahman
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: अनाहते पात्रकर्णेऽभग्नशब्दे सरिद्द्रुते । शब्दब्रह्मणि निष्णातः परम् ब्रह्माधिगच्छति ॥ ३८ ॥
+sanskrit_iast: anāhate pātrakarṇe'bhagnaśabde sariddrute | śabdabrahmaṇi niṣṇātaḥ param brahmādhigacchati || 38 ||
 translation_literal: 'YUKTI #13
 
   One who is steeped in the Brahman-that-is-sound, in the uninterrupted
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: अनाहते पात्रकर्णेऽभग्नशब्दे सरिद्द्रुते । शब्दब्रह्मणि निष्णातः परम् ब्रह्माधिगच्छति ॥ ३८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: anāhate pātrakarṇe'bhagnaśabde sariddrute | śabdabrahmaṇi niṣṇātaḥ param brahmādhigacchati || 38 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #13

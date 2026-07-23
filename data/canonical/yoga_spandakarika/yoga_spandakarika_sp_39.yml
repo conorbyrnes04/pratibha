@@ -32,8 +32,8 @@ commentary: 'Recognition of the heart is Mahamudra, the state of cosmic consciou
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: अनेनाधिष्ठिते देहे यथा सर्वज्ञतादयः । तथा स्वात्मन्यधिष्ठानात्सर्वत्रैवं भविष्यति ॥ ३९ ॥
+sanskrit_iast: anenādhiṣṭhite dehe yathā sarvajñatādayaḥ | tathā svātmanyadhiṣṭhānātsarvatraivaṃ bhaviṣyati || 39 ||
 tags:
 - action
 - commentary_text
@@ -49,6 +49,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: अनेनाधिष्ठिते देहे यथा सर्वज्ञतादयः । तथा स्वात्मन्यधिष्ठानात्सर्वत्रैवं भविष्यति ॥ ३९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: anenādhiṣṭhite dehe yathā sarvajñatādayaḥ | tathā svātmanyadhiṣṭhānātsarvatraivaṃ bhaviṣyati || 39 ||
 - kind: translation
   label: Pratibha Translation
   body: With his only support the recognition of the heart, the tantrika is omniscient and in harmony with the world.

@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_080
 unit_label: 'Yukti #80'
 title: Attention Returns to the Knower Itself
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: निराधारं मनः कृत्वा विकल्पान् न विकल्पयेत् । तदात्मपरमात्मत्वे भैरवो मृगलोचने ॥ १०८ ॥
+sanskrit_iast: nirādhāraṃ manaḥ kṛtvā vikalpān na vikalpayet | tadātmaparamātmatve bhairavo mṛgalocane || 108 ||
 translation_literal: 'YUKTI #80
 
   Making the mind supportless, one should not assemble mental
@@ -34,6 +34,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: निराधारं मनः कृत्वा विकल्पान् न विकल्पयेत् । तदात्मपरमात्मत्वे भैरवो मृगलोचने ॥ १०८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: nirādhāraṃ manaḥ kṛtvā vikalpān na vikalpayet | tadātmaparamātmatve bhairavo mṛgalocane || 108 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #80

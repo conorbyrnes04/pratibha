@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_049
 unit_label: 'Yukti #49'
 title: Mudra's Spontaneous Disclosure of Supreme Recognition
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: करङ्किण्या क्रोधनया भैरव्या लेलिहानया । खेचर्या दृष्टिकाले च परावाप्तिः प्रकाशते ॥ ७७ ॥
+sanskrit_iast: karaṅkiṇyā krodhanayā bhairavyā lelihānayā | khecaryā dṛṣṭikāle ca parāvāptiḥ prakāśate || 77 ||
 translation_literal: 'YUKTI #49
 
   Through karankinī [mudrā], through krodhanā, bhairavī, lelihānā
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: करङ्किण्या क्रोधनया भैरव्या लेलिहानया । खेचर्या दृष्टिकाले च परावाप्तिः प्रकाशते ॥ ७७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: karaṅkiṇyā krodhanayā bhairavyā lelihānayā | khecaryā dṛṣṭikāle ca parāvāptiḥ prakāśate || 77 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #49

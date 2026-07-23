@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_035
 unit_label: 'Yukti #35'
 title: Rest in the Knower Between States
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: भावे त्यक्ते निरुद्धा चिन् नैव भावान्तरं व्रजेत् । तदा तन्मध्यभावेन विकसत्यति भावना ॥ ६२ ॥
+sanskrit_iast: bhāve tyakte niruddhā cin naiva bhāvāntaraṃ vrajet | tadā tanmadhyabhāvena vikasatyati bhāvanā || 62 ||
 translation_literal: 'YUKTI #35
 
   When any mental-emotional state or mood (bhāva) has been
@@ -36,6 +36,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: भावे त्यक्ते निरुद्धा चिन् नैव भावान्तरं व्रजेत् । तदा तन्मध्यभावेन विकसत्यति भावना ॥ ६२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: bhāve tyakte niruddhā cin naiva bhāvāntaraṃ vrajet | tadā tanmadhyabhāvena vikasatyati bhāvanā || 62 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #35

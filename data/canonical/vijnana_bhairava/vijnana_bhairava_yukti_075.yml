@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_075
 unit_label: 'Yukti #75'
 title: The Knower Remains Beyond Pleasure and Pain
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: न चित्तं निक्षिपेद् दुःखे न सुखे वा परिक्षिपेत् । भैरवि ज्ञायतां मध्ये किं तत्त्वम् अवशिष्यते ॥ १०३ ॥
+sanskrit_iast: na cittaṃ nikṣiped duḥkhe na sukhe vā parikṣipet | bhairavi jñāyatāṃ madhye kiṃ tattvam avaśiṣyate || 103 ||
 translation_literal: 'YUKTI #75
 
   Do not abandon the heart-mind to either suffering or happiness,
@@ -36,6 +36,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: न चित्तं निक्षिपेद् दुःखे न सुखे वा परिक्षिपेत् । भैरवि ज्ञायतां मध्ये किं तत्त्वम् अवशिष्यते ॥ १०३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: na cittaṃ nikṣiped duḥkhe na sukhe vā parikṣipet | bhairavi jñāyatāṃ madhye kiṃ tattvam avaśiṣyate || 103 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #75

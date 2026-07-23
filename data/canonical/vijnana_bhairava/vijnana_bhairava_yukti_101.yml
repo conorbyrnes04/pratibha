@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_101
 unit_label: 'Yukti #101'
 title: Mind Becomes Waveless When Unmoored
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यत्र यत्र मनो याति तत् तत् तेनैव तत्क्षणम् । परित्यज्यानवस्थित्या निस्तरङ्गस् ततो भवेत् ॥ १२९ ॥
+sanskrit_iast: yatra yatra mano yāti tat tat tenaiva tatkṣaṇam | parityajyānavasthityā nistaraṅgas tato bhavet || 129 ||
 translation_literal: 'YUKTI #101
 
   Wherever the mind goes, in that very instant let it abandon
@@ -32,6 +32,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यत्र यत्र मनो याति तत् तत् तेनैव तत्क्षणम् । परित्यज्यानवस्थित्या निस्तरङ्गस् ततो भवेत् ॥ १२९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yatra yatra mano yāti tat tat tenaiva tatkṣaṇam | parityajyānavasthityā nistaraṅgas tato bhavet || 129 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #101

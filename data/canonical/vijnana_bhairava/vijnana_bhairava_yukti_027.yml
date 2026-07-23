@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_027
 unit_label: 'Yukti #27'
 title: Reality Dissolves Into Its Own Consciousness
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: स्वदेहे जगतो वापि सूक्ष्मसूक्ष्मतराणि च । तत्त्वानि यानि निलयं ध्यात्वान्ते व्यज्यते परा ॥ ५४ ॥
+sanskrit_iast: svadehe jagato vāpi sūkṣmasūkṣmatarāṇi ca | tattvāni yāni nilayaṃ dhyātvānte vyajyate parā || 54 ||
 translation_literal: 'YUKTI #27
 
   Meditating on the Principles of Reality (tattvas) dissolving, each
@@ -44,6 +44,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: स्वदेहे जगतो वापि सूक्ष्मसूक्ष्मतराणि च । तत्त्वानि यानि निलयं ध्यात्वान्ते व्यज्यते परा ॥ ५४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: svadehe jagato vāpi sūkṣmasūkṣmatarāṇi ca | tattvāni yāni nilayaṃ dhyātvānte vyajyate parā || 54 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #27

@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_104
 unit_label: 'Yukti #104'
 title: Self and Śiva Recognized Through Sacred Attributes
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: नित्यो विभुर् निराधारो व्यापकश् चाखिलाधिपः । शब्दान् प्रतिक्षणं ध्यायन् कृतार्थोऽर्थानुरूपतः ॥ १३२ ॥
+sanskrit_iast: nityo vibhur nirādhāro vyāpakaś cākhilādhipaḥ | śabdān pratikṣaṇaṃ dhyāyan kṛtārtho'rthānurūpataḥ || 132 ||
 translation_literal: 'YUKTI #104
 
   “Eternal, majestic, requiring no external support, all-pervasive,
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: नित्यो विभुर् निराधारो व्यापकश् चाखिलाधिपः । शब्दान् प्रतिक्षणं ध्यायन् कृतार्थोऽर्थानुरूपतः ॥ १३२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: nityo vibhur nirādhāro vyāpakaś cākhilādhipaḥ | śabdān pratikṣaṇaṃ dhyāyan kṛtārtho'rthānurūpataḥ || 132 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #104

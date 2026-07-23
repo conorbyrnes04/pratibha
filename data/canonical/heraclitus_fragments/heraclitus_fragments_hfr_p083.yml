@@ -18,7 +18,7 @@ commentary: 'This aphorism compresses a cosmological claim into a single image o
 insight: ''
 practice: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing, limit, exchange).
   Sit with that pattern for two minutes.
-sanskrit_devanagari: ''
+sanskrit_devanagari: Μεταβάλλον ἀναπαύεται.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
@@ -27,6 +27,9 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: Μεταβάλλον ἀναπαύεται.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: In change is rest.

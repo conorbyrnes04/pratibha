@@ -21,7 +21,7 @@ commentary: 'This aphorism compresses a cosmological claim into a single image o
 insight: ''
 practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
   arises — that resistance is part of the teaching.
-sanskrit_devanagari: ''
+sanskrit_devanagari: θάλασσα ὕδωρ καθαρώτατον καὶ μιαρώτατον, ἰχθύσι μὲν πότιμον καὶ σωτήριον, ἀνθρώποις δὲ ἄποτον καὶ ὀλέθριον.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
@@ -31,6 +31,9 @@ quality_score: 0
 editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: θάλασσα ὕδωρ καθαρώτατον καὶ μιαρώτατον, ἰχθύσι μὲν πότιμον καὶ σωτήριον, ἀνθρώποις δὲ ἄποτον καὶ ὀλέθριον.
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: Sea water is very pure and very foul, for, while to fishes it is drinkable and healthful, to people it is hurtful

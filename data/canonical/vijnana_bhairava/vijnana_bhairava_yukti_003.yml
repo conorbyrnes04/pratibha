@@ -7,8 +7,9 @@ unit_id: vijnana_bhairava.yukti_003
 unit_label: 'Yukti #3'
 title: Awareness Arises When Attention Returns Inward
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: आमूलात् किरणाभासां सूक्ष्मात् सूक्ष्मतरात्मिकम् । चिन्तयेत् तां द्विषट्कान्ते श्याम्यन्तीम् भैरवोदयः
+  ॥ २८ ॥
+sanskrit_iast: āmūlāt kiraṇābhāsāṃ sūkṣmāt sūkṣmatarātmikam | cintayet tāṃ dviṣaṭkānte śyāmyantīm bhairavodayaḥ || 28 ||
 translation_literal: 'YUKTI #3
 
   Imagine the subtlest possible form [of prāṇa] as rays of light shining upward
@@ -32,6 +33,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: आमूलात् किरणाभासां सूक्ष्मात् सूक्ष्मतरात्मिकम् । चिन्तयेत् तां द्विषट्कान्ते श्याम्यन्तीम् भैरवोदयः ॥ २८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: āmūlāt kiraṇābhāsāṃ sūkṣmāt sūkṣmatarātmikam | cintayet tāṃ dviṣaṭkānte śyāmyantīm bhairavodayaḥ || 28 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #3

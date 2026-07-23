@@ -38,8 +38,8 @@ commentary: 'The heart realizes that there is no distance between the divine and
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: तदास्याकृत्रिमो धर्मो ज्ञत्वकर्तृत्वलक्षणः । यतस्तदीप्सितं सर्वं जानाति च करोति च ॥ १० ॥
+sanskrit_iast: tadāsyākṛtrimo dharmo jñatvakartṛtvalakṣaṇaḥ | yatastadīpsitaṃ sarvaṃ jānāti ca karoti ca || 10 ||
 tags:
 - action
 - commentary_text
@@ -54,6 +54,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: तदास्याकृत्रिमो धर्मो ज्ञत्वकर्तृत्वलक्षणः । यतस्तदीप्सितं सर्वं जानाति च करोति च ॥ १० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: tadāsyākṛtrimo dharmo jñatvakartṛtvalakṣaṇaḥ | yatastadīpsitaṃ sarvaṃ jānāti ca karoti ca || 10 ||
 - kind: translation
   label: Pratibha Translation
   body: Then the heart realizes that the true innate nature is both the universal agent and the subjectivity that perceives

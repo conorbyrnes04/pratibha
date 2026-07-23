@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_082
 unit_label: 'Yukti #82'
 title: Waves Arise Lawfully From Their Source
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: जलस्येवोर्मयो वह्नेर् ज्वालाभङ्ग्यः प्रभा रवेः । ममैव भैरवस्यैता विश्वभङ्ग्यो विभेदिताः ॥ ११० ॥
+sanskrit_iast: jalasyevormayo vahner jvālābhaṅgyaḥ prabhā raveḥ | mamaiva bhairavasyaitā viśvabhaṅgyo vibheditāḥ || 110 ||
 translation_literal: 'YUKTI #82
 
   “Just as waves [arise] from water, undulating flames from fire, and light-
@@ -40,6 +40,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: जलस्येवोर्मयो वह्नेर् ज्वालाभङ्ग्यः प्रभा रवेः । ममैव भैरवस्यैता विश्वभङ्ग्यो विभेदिताः ॥ ११० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: jalasyevormayo vahner jvālābhaṅgyaḥ prabhā raveḥ | mamaiva bhairavasyaitā viśvabhaṅgyo vibheditāḥ || 110 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #82

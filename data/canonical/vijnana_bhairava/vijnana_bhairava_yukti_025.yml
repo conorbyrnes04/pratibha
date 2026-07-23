@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_025
 unit_label: 'Yukti #25'
 title: Burning Into Pure Tranquility
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: कालाग्निना कालपदाद् उत्थितेन स्वकम् पुरम् । प्लुष्टम् विचिन्तयेद् अन्ते शान्ताभासस् तदा भवेत् ॥ ५२ ॥
+sanskrit_iast: kālāgninā kālapadād utthitena svakam puram | pluṣṭam vicintayed ante śāntābhāsas tadā bhavet || 52 ||
 translation_literal: 'YUKTI #25
 
   One may imagine that one’s own body is incinerated by the Fire
@@ -44,6 +44,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: कालाग्निना कालपदाद् उत्थितेन स्वकम् पुरम् । प्लुष्टम् विचिन्तयेद् अन्ते शान्ताभासस् तदा भवेत् ॥ ५२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kālāgninā kālapadād utthitena svakam puram | pluṣṭam vicintayed ante śāntābhāsas tadā bhavet || 52 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #25

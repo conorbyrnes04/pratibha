@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_110
 unit_label: 'Yukti #110'
 title: Dissolving Multiplicity Into Unified Awareness
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: मानसं चेतना शक्तिर् आत्मा चेति चतुष्टयम् । यदा प्रिये परिक्षीणं तदा तद् भैरवं वपुः ॥ १३८ ॥
+sanskrit_iast: mānasaṃ cetanā śaktir ātmā ceti catuṣṭayam | yadā priye parikṣīṇaṃ tadā tad bhairavaṃ vapuḥ || 138 ||
 translation_literal: 'YUKTI #110
 
   O dear one, when these four—mental [states], individuated consciousness,
@@ -32,6 +32,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: मानसं चेतना शक्तिर् आत्मा चेति चतुष्टयम् । यदा प्रिये परिक्षीणं तदा तद् भैरवं वपुः ॥ १३८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: mānasaṃ cetanā śaktir ātmā ceti catuṣṭayam | yadā priye parikṣīṇaṃ tadā tad bhairavaṃ vapuḥ || 138 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #110

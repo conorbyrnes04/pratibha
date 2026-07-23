@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_019
 unit_label: 'Yukti #19'
 title: Attention to the Knower Empties the Mind
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: पृष्टशून्यं मूलशून्यं युगपद् भावयेच् च यः । शरीरनिरपेक्षिण्या शक्त्या शून्यमना भवेत् ॥ ४४ ॥
+sanskrit_iast: pṛṣṭaśūnyaṃ mūlaśūnyaṃ yugapad bhāvayec ca yaḥ | śarīranirapekṣiṇyā śaktyā śūnyamanā bhavet || 44 ||
 translation_literal: 'YUKTI #19
 
   One may contemplate the space above [at the crown of the
@@ -35,6 +35,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: पृष्टशून्यं मूलशून्यं युगपद् भावयेच् च यः । शरीरनिरपेक्षिण्या शक्त्या शून्यमना भवेत् ॥ ४४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: pṛṣṭaśūnyaṃ mūlaśūnyaṃ yugapad bhāvayec ca yaḥ | śarīranirapekṣiṇyā śaktyā śūnyamanā bhavet || 44 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #19

@@ -31,8 +31,8 @@ commentary: 'Man endlessly crosses the deserts looking for his eyes outside of h
 insight: ''
 practice: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest for one minute
   in the felt sense of simple presence.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: ग्लानिर्विलुण्ठिका देहे तस्याश्चाज्ञानतः सृतिः । तदुन्मेषविलुप्तं चेत्कुतः सा स्यादहेतुका ॥ ४० ॥
+sanskrit_iast: glānirviluṇṭhikā dehe tasyāścājñānataḥ sṛtiḥ | tadunmeṣaviluptaṃ cetkutaḥ sā syādahetukā || 40 ||
 tags:
 - action
 - commentary_text
@@ -46,6 +46,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: ग्लानिर्विलुण्ठिका देहे तस्याश्चाज्ञानतः सृतिः । तदुन्मेषविलुप्तं चेत्कुतः सा स्यादहेतुका ॥ ४० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: glānirviluṇṭhikā dehe tasyāścājñānataḥ sṛtiḥ | tadunmeṣaviluptaṃ cetkutaḥ sā syādahetukā || 40 ||
 - kind: translation
   label: Pratibha Translation
   body: If the body/mind is ravaged by discouragement due to ignorance, only the completely unlimited expansion of consciousness

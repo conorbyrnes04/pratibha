@@ -7,8 +7,8 @@ unit_id: vijnana_bhairava.yukti_015
 unit_label: 'Yukti #15'
 title: Syllable's Edge Dissolves Into Spaciousness
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: यस्य कस्यापि वर्णस्य पूर्वान्ताव् अनुभावयेत् । शून्यया शून्यभूतोऽसौ शून्याकारः पुमान् भवेत् ॥ ४० ॥
+sanskrit_iast: yasya kasyāpi varṇasya pūrvāntāv anubhāvayet | śūnyayā śūnyabhūto'sau śūnyākāraḥ pumān bhavet || 40 ||
 translation_literal: 'YUKTI #15
 
   A person who fosters the experience/perception of the [very]
@@ -48,6 +48,11 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  body: यस्य कस्यापि वर्णस्य पूर्वान्ताव् अनुभावयेत् । शून्यया शून्यभूतोऽसौ शून्याकारः पुमान् भवेत् ॥ ४० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yasya kasyāpi varṇasya pūrvāntāv anubhāvayet | śūnyayā śūnyabhūto'sau śūnyākāraḥ pumān bhavet || 40 ||
 - kind: translation
   label: Pratibha Translation
   body: 'YUKTI #15
