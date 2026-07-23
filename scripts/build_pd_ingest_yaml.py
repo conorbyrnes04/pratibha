@@ -891,7 +891,7 @@ def build_analects() -> int:
                 "English: James Legge, Confucian Analects (1861/1893), public domain (Gutenberg #3330). "
                 f"Passage {section}."
             ),
-            "editorial_maturity": "structural_draft",
+            "editorial_maturity": "strong_draft",
             "layer_provenance": {"translation": "public_domain", "original": "sourced"},
         }
         dump(out / f"{sid}.yml", unit)
@@ -1010,7 +1010,7 @@ def build_zhongyong() -> int:
                 "English: James Legge, The Doctrine of the Mean, public domain. "
                 f"{section}."
             ),
-            "editorial_maturity": "structural_draft",
+            "editorial_maturity": "strong_draft",
             "layer_provenance": {"translation": "public_domain", "original": "sourced"},
         }
         dump(out / f"{sid}.yml", unit)
