@@ -65,6 +65,10 @@ need = [
     {"key": "OPENROUTER_API_KEY", "value": vals["OPENROUTER_API_KEY"]},
     {"key": "OPENAI_API_KEY", "value": vals["OPENAI_API_KEY"]},
 ]
+if vals.get("SUPABASE_JWT_SECRET"):
+    need.append({"key": "SUPABASE_JWT_SECRET", "value": vals["SUPABASE_JWT_SECRET"]})
+if vals.get("SUPABASE_URL"):
+    need.append({"key": "SUPABASE_URL", "value": vals["SUPABASE_URL"]})
 print(json.dumps(need))
 PY
 )"

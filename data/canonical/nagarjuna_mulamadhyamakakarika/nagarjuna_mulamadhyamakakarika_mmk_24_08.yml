@@ -7,40 +7,54 @@ unit_id: nagarjuna_mulamadhyamakakarika.mmk_24_08
 unit_label: The Two Truths
 title: The Two Truths
 unit_type: sutra
-sanskrit_devanagari: द्वे सत्ये समुपाश्रित्य बुद्धानां धर्मदेशना । लोकसंवृतिसत्यं च सत्यं च परमार्थतः ॥
-sanskrit_iast: dve satye samupāśritya buddhānāṃ dharmadeśanā / lokasaṃvṛtisatyaṃ ca satyaṃ ca paramārthataḥ //
-translation_literal: 'The dharma the buddhas teach rests entirely on two truths: the truth of worldly convention [saṃvṛti-satya]
-  and the truth of the ultimate [paramārtha-satya].'
-commentary: 'Having spent twenty-three chapters dismantling every candidate for own-being, Nāgārjuna now blocks the natural
-  misreading that he is a nihilist who has abolished truth. His answer is the two-truths distinction, and its subtlety is
-  that these are two truths, not one truth and one falsehood. *Saṃvṛti* literally means a "covering," and the word is a double
-  entendre: conventional truth both conceals the ultimate and is the necessary veil through which the ultimate can be communicated
-  at all. Ordinary talk of persons, causes, paths, and buddhas is not error to be discarded; it is *satya*, valid within its
-  register, the only register in which teaching can occur. The counterintuitive move is that emptiness does not compete with
-  conventional reality but underwrites it: because things are empty of essence, they can arise dependently, function, and
-  be spoken of. The retreat-relevant payoff is a refusal of two opposite errors: the pious literalist who takes the path as
-  ultimately real and clings, and the clever nihilist who, having heard "all is empty," dismisses ethics and practice as illusion.
-  Both have failed to distinguish the truths. The middle way lives in holding them together—practicing wholeheartedly within
-  convention while knowing its emptiness.
+sanskrit_devanagari: द्वे सत्ये समुपाश्रित्य बुद्धानां धर्मदेशना । लोकसंवृतिसत्यं च सत्यं च परमार्थतः
+  ॥
+sanskrit_iast: dve satye samupāśritya buddhānāṃ dharmadeśanā / lokasaṃvṛtisatyaṃ ca satyaṃ ca paramārthataḥ
+  //
+translation_literal: 'The Buddha''s teaching of dharma rests upon two truths: the truth of worldly convention,
+  and the truth of what is ultimately real.'
+commentary: 'This verse is the foundation of Nāgārjuna''s entire philosophical project. He establishes
+  that Buddhist doctrine operates within a two-fold framework: lokasaṃvṛti-satya (the truth of how things
+  appear within conventional social and linguistic consensus) and paramārtha-satya (the truth of how things
+  actually stand when all conceptual overlay is removed).
 
 
-  Key Terms:
+  The critical move here is not to treat these as two separate realities, but as two perspectives on a
+  single reality. Nāgārjuna is not saying there are two different worlds. Rather, he is saying that any
+  coherent teaching must acknowledge both the level at which beings navigate everyday experience—using
+  language, causation, and identity—and the level at which ultimate analysis reveals the absence of intrinsic
+  nature (svabhāva) in all phenomena.
 
 
-  **saṃvṛti-satya (संवृतिसत्य)** — Etymology: *saṃvṛti* from *sam-√vṛ* (to cover, conceal, enclose), hence "concealing/conventional";
-  + *satya* (truth). The everyday truth of functioning appearances and language, which both hides the ultimate and conveys
-  it. "Relative truth" loses the crucial nuance of *covering*.
+  This verse preempts a common misreading of Madhyamaka as nihilism. By grounding the dharma-deśanā (the
+  Buddha''s proclamation of dharma) in both truths, Nāgārjuna preserves the validity of conventional truth:
+  ethics, causation, and the path to liberation all operate meaningfully at the conventional level. Simultaneously,
+  he insists that ultimate truth cannot be found in any fixed essence or independent self-nature.
 
-  **paramārtha-satya (परमार्थसत्य)** — Etymology: *parama* (highest) + *artha* (object, meaning) + *satya*: "truth of the
-  highest meaning." Not a hidden thing but the emptiness of all things; ultimate precisely because it cannot be superseded.
 
-  **samupāśritya (समुपाश्रित्य)** — Etymology: *sam-upa-ā-√śri* (to rest upon, take support): the teaching "leans on" both
-  truths together—neither is dispensable.'
-insight: Having spent twenty-three chapters dismantling every candidate for own-being, Nāgārjuna now blocks the natural misreading
-  that he is a nihilist who has abolished truth.
-practice: Pick one activity of your retreat day—eating, walking, bowing. Do it with full conventional care, as if it fully
-  matters (because conventionally it does). Midway, note silently, "and this is empty of own-being." Practice letting both
-  be true at once, without using the second thought to withdraw energy from the first.
+  The dependent origination (pratītyasamutpāda) that structures all phenomena is itself empty of svabhāva.
+  Things arise in dependence on conditions, which means they have no standing-alone nature. This is why
+  the two truths are inseparable: conventional truth is the appearance of dependent origination; ultimate
+  truth is the emptiness that makes that dependence possible.
+
+
+  Key Terms
+
+
+  **lokasaṃvṛti-satya** — the truth of worldly convention—how things appear and function within shared
+  linguistic, social, and perceptual frameworks
+
+  **paramārtha-satya** — the ultimate truth—the way things actually are when freed from conceptual elaboration
+  and seen as empty of intrinsic nature
+
+  **svabhāva** — intrinsic nature or self-nature; the independent, unchanging essence that Madhyamaka
+  refutes in all phenomena'
+insight: Having spent twenty-three chapters dismantling every candidate for own-being, Nāgārjuna now blocks
+  the natural misreading that he is a nihilist who has abolished truth.
+practice: 'When speaking with someone today, pause mid-sentence and notice: the words flowing out (conventional
+  truth—names, purposes, the social dance) and simultaneously the awareness itself that holds no fixed
+  position (ultimate truth). Let both be true at once without collapsing one into the other, then continue
+  speaking.'
 upaya: ''
 themes:
 - emptiness
@@ -59,67 +73,6 @@ tags:
 quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 78
-pratibha_layers:
-- kind: original
-  label: Original
-  body: द्वे सत्ये समुपाश्रित्य बुद्धानां धर्मदेशना । लोकसंवृतिसत्यं च सत्यं च परमार्थतः ॥
-  layer_provenance: transliterated_from_iast
-- kind: iast
-  label: IAST
-  body: dve satye samupāśritya buddhānāṃ dharmadeśanā / lokasaṃvṛtisatyaṃ ca satyaṃ ca paramārthataḥ //
-- kind: translation
-  label: Pratibha Translation
-  body: 'The dharma the buddhas teach rests entirely on two truths: the truth of worldly convention [saṃvṛti-satya] and the
-    truth of the ultimate [paramārtha-satya].'
-- kind: commentary
-  label: Pratibha Commentary
-  body: 'Having spent twenty-three chapters dismantling every candidate for own-being, Nāgārjuna now blocks the natural misreading
-    that he is a nihilist who has abolished truth. His answer is the two-truths distinction, and its subtlety is that these
-    are two truths, not one truth and one falsehood. *Saṃvṛti* literally means a "covering," and the word is a double entendre:
-    conventional truth both conceals the ultimate and is the necessary veil through which the ultimate can be communicated
-    at all. Ordinary talk of persons, causes, paths, and buddhas is not error to be discarded; it is *satya*, valid within
-    its register, the only register in which teaching can occur. The counterintuitive move is that emptiness does not compete
-    with conventional reality but underwrites it: because things are empty of essence, they can arise dependently, function,
-    and be spoken of. The retreat-relevant payoff is a refusal of two opposite errors: the pious literalist who takes the
-    path as ultimately real and clings, and the clever nihilist who, having heard "all is empty," dismisses ethics and practice
-    as illusion. Both have failed to distinguish the truths. The middle way lives in holding them together—practicing wholeheartedly
-    within convention while knowing its emptiness.
-
-
-    Key Terms:
-
-
-    **saṃvṛti-satya (संवृतिसत्य)** — Etymology: *saṃvṛti* from *sam-√vṛ* (to cover, conceal, enclose), hence "concealing/conventional";
-    + *satya* (truth). The everyday truth of functioning appearances and language, which both hides the ultimate and conveys
-    it. "Relative truth" loses the crucial nuance of *covering*.
-
-    **paramārtha-satya (परमार्थसत्य)** — Etymology: *parama* (highest) + *artha* (object, meaning) + *satya*: "truth of the
-    highest meaning." Not a hidden thing but the emptiness of all things; ultimate precisely because it cannot be superseded.
-
-    **samupāśritya (समुपाश्रित्य)** — Etymology: *sam-upa-ā-√śri* (to rest upon, take support): the teaching "leans on" both
-    truths together—neither is dispensable.'
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Śāntideva, Bodhicaryāvatāra IX.2 (the "Veiled Truth" and the "Transcendent")
-    resonance: an almost verbatim inheritance of the two-truths schema, applied to compassionate practice.
-    divergence: Śāntideva integrates it into the bodhisattva's affective path; Nāgārjuna keeps it as bare epistemology.
-    passage_id: ''
-  - citation: Plato, Republic (divided line / doxa vs. epistēmē)
-    resonance: a two-level account distinguishing appearance from a truer cognition.
-    divergence: Plato's higher level is a realm of fuller being (the Forms); Nāgārjuna's higher "truth" is the emptiness of
-      all being, so the hierarchy of reality is inverted.
-    passage_id: ''
-  - citation: Tao Te Ching 1 (nameable Way vs. constant Way)
-    resonance: the sayable and the unsayable held together, the former a doorway to the latter.
-    divergence: the Dao names an ineffable source; paramārtha names the absence of any such essence.
-    passage_id: tao_te_ching.ttc_md_001
-  layer_provenance: migrated_from_commentary
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Pick one activity of your retreat day—eating, walking, bowing. Do it with full conventional care, as if it fully matters
-    (because conventionally it does). Midway, note silently, "and this is empty of own-being." Practice letting both be true
-    at once, without using the second thought to withdraw energy from the first.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -127,3 +80,12 @@ provenance:
   section: teaching_passage
   original_id: MMK_24_08
   source_reference: Nāgārjuna, *Mūlamadhyamakakārikā* 24.8 (MMK_24_08; GRETIL Sanskrit / Pratibha English)
+translation: 'The Buddha''s teaching of dharma rests upon two truths: the truth of worldly convention,
+  and the truth of what is ultimately real.'
+abhyasa: 'When speaking with someone today, pause mid-sentence and notice: the words flowing out (conventional
+  truth—names, purposes, the social dance) and simultaneously the awareness itself that holds no fixed
+  position (ultimate truth). Let both be true at once without collapsing one into the other, then continue
+  speaking.'
+translation_provenance: Rendered from the public-domain source (Sanskrit (IAST)). Study rendering; not
+  a critical edition.
+practice_provenance: Practice re-authored for form diversity, grounded in the passage.

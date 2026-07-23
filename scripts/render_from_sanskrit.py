@@ -99,6 +99,34 @@ COLLECTIONS: dict[str, tuple[str, str]] = {
         "the Zhōngyōng 中庸 (the Doctrine of the Mean), a core Confucian classic",
         "how the passage develops centrality/equilibrium (zhōng 中), sincerity (chéng 誠), and the Way as following one's Heaven-conferred nature (xìng 性)",
     ),
+    "astavakra_gita": (
+        "the Aṣṭāvakra Gītā, a radical Advaita (non-dual) dialogue on the Self",
+        "how the verse points to the ever-free witness-Self (sākṣin, ātman) beyond doership and bondage",
+    ),
+    "chāndogya_upaniṣad": (
+        "the Chāndogya Upaniṣad, a foundational Vedānta text",
+        "the non-dual teaching the passage gives (tat tvam asi, the Self as the ground of all, the imperishable)",
+    ),
+    "mandukya_upanishad_and_gaudapada_karika": (
+        "the Māṇḍūkya Upaniṣad with Gauḍapāda's Kārikā",
+        "how the passage treats OM, the four states (waking/dream/deep-sleep/turīya) and non-origination (ajātivāda)",
+    ),
+    "nagarjuna_mulamadhyamakakarika": (
+        "Nāgārjuna's Mūlamadhyamakakārikā, the root text of Madhyamaka Buddhism",
+        "how the verse works its emptiness (śūnyatā) analysis — dependent origination, the two truths, the refutation of svabhāva",
+    ),
+    "pratyabhijnahrdayam": (
+        "Kṣemarāja's Pratyabhijñāhṛdayam ('The Heart of Recognition'), a Kashmir Śaiva Pratyabhijñā text",
+        "how the sūtra unfolds recognition (pratyabhijñā) of one's own Self as universal Consciousness (Cit), its freedom (svātantrya) and manifestation",
+    ),
+    "heart_sutra": (
+        "the Heart Sūtra (Prajñāpāramitā-hṛdaya)",
+        "how the passage turns on emptiness (śūnyatā) — form is emptiness, the negation of the skandhas, the mantra gate gate",
+    ),
+    "heraclitus_fragments": (
+        "the Fragments of Heraclitus of Ephesus",
+        "how the fragment's paradox or image works (the logos, the unity of opposites, ever-living fire, flux / panta rhei, the hidden harmony, the dry soul)",
+    ),
 }
 _DEFAULT_CTX = (
     "a Kashmir Śaiva / Śākta tantric text",
@@ -116,6 +144,8 @@ SOURCE_LANG: dict[str, tuple[str, str, str]] = {
                            "rén 仁, lǐ 禮, jūnzǐ 君子, dào 道, xiào 孝, tiān 天"),
     "zhongyong": ("sanskrit_devanagari", "Classical Chinese",
                   "zhōng 中, yōng 庸, chéng 誠, dào 道, xìng 性, tiān 天"),
+    "heraclitus_fragments": ("sanskrit_devanagari", "Ancient Greek",
+                             "λόγος logos, ἁρμονίη harmoníē, πῦρ pŷr (fire), φύσις phýsis"),
     "milarepa_songs": ("sanskrit_devanagari", "Tibetan (Uchen script)",
                        "phyag rgya chen po (mahāmudrā), rnal 'byor pa (yogin), ting nge 'dzin (samādhi)"),
     "tilopa_mahamudra": ("sanskrit_devanagari", "Tibetan (Uchen script)",
