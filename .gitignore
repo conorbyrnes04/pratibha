@@ -106,9 +106,10 @@ temp/
 *.mobi
 *.azw3
 
-# But allow specific processed files
-!data/raw_texts/*.pdf
-!data/raw_texts/*.epub
+# Source book binaries (epub/pdf/mobi) are NEVER tracked — many are
+# in-copyright editions kept only as a local, private reference for the
+# provenance divergence-check, not for distribution. Do not re-add negations
+# for data/raw_texts/*.pdf|*.epub here. Processed .txt extracts are fine:
 !data/raw_texts/*.txt
 
 # Docker
