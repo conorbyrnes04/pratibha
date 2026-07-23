@@ -1,0 +1,252 @@
+{
+  "_meta": {
+    "generated": "2026-07-23",
+    "purpose": "Provenance audit of English-text sourcing for the 24 live Pratibha collections, for copyright/asteya reconciliation.",
+    "tiers": {
+      "A": "Clean — own fresh rendering or genuine public-domain translation. Keep + attribute.",
+      "B": "PD-swappable — currently leans on a copyrighted translation, but a PD English alternative exists. Swap the anchor.",
+      "C": "Copyright-derived — derived from an in-copyright translation, no PD English exists. Re-render from source or reduce to short attributed quote + own commentary."
+    },
+    "primary_evidence": "app/sources_registry.py (SOURCES list, sell_ready_tier field) cross-checked against data/raw_texts manuscript headers and data/raw_texts/pd/manifest.yml"
+  },
+  "Aṣṭāvakra Gītā": {
+    "tier": "A",
+    "english_source": "Pratibha own rendering from received Sanskrit (verified in data/raw_texts/#Aṣṭāvakra Gītā manuscript: Devanāgarī + IAST + 'Pratibhā Translation' with no named copyrighted anchor)",
+    "rights_holder": "project (own work)",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Received Sanskrit text (traditional, public domain)",
+    "recommended_action": "keep+attribute",
+    "confidence": "high — registry (license: mixed, tier: green) plus direct manuscript inspection show no copyrighted English anchor; John Richards' 1994 English version was deliberately NOT used as anchor"
+  },
+  "Bhagavad Gītā": {
+    "tier": "A",
+    "english_source": "Sir Edwin Arnold, The Bhagavad Gita (1885; Project Gutenberg #2388, public domain)",
+    "rights_holder": "public domain",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Sanskrit (Mahābhārata, Bhīṣma Parvan) in Pratibha manuscript; also data/raw_texts/pd/indian/bhagavad_gita_arnold_gutenberg_2388.txt",
+    "recommended_action": "keep+attribute",
+    "confidence": "high — Arnold anchor is unambiguously PD and already on file"
+  },
+  "Chāndogya Upaniṣad": {
+    "tier": "A",
+    "english_source": "F. Max Müller, The Upanishads Part 1 (Sacred Books of the East vol. 1, 1879, public domain)",
+    "rights_holder": "public domain",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Received Chāndogya Sanskrit text; also data/raw_texts/pd/indian/chandogya_upanishad_muller_sbe01.txt",
+    "recommended_action": "keep+attribute",
+    "confidence": "high"
+  },
+  "Epictetus (Enchiridion)": {
+    "tier": "A",
+    "english_source": "Elizabeth Carter, All the Works of Epictetus (1758/1759, public domain)",
+    "rights_holder": "public domain",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Greek Enchiridion (via Arrian), ancient PD; supplementary PD Gutenberg files on file (Helms 1948 ed., George Long Discourses)",
+    "recommended_action": "keep+attribute",
+    "confidence": "high"
+  },
+  "Heart Sūtra": {
+    "tier": "A",
+    "english_source": "F. Max Müller, Buddhist Mahāyāna Texts (Sacred Books of the East vol. 49, 1894, public domain)",
+    "rights_holder": "public domain",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Sanskrit (shorter recension) source-verified via GRETIL",
+    "recommended_action": "keep+attribute",
+    "confidence": "high"
+  },
+  "Heraclitus (Fragments)": {
+    "tier": "A",
+    "english_source": "George T.W. Patrick, The Fragments of the Work of Heraclitus of Ephesus on Nature (1889, Bywater Greek text; public domain)",
+    "rights_holder": "public domain",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Greek fragments (Diels–Kranz numbering), ancient PD; on file at data/raw_texts/pd/greek/heraclitus_patrick_1889.txt",
+    "recommended_action": "keep+attribute",
+    "confidence": "high — note only 12 of 128 units are curated 'pilot' quality; remainder are structural_draft, an editorial-maturity issue rather than a provenance one"
+  },
+  "Īśāvāsya Upaniṣad": {
+    "tier": "B",
+    "english_source": "Pratibha editorial English, with Sanskrit mantras/transliteration sourced from Shlokam.org (a modern, non-PD web source of uncertain license)",
+    "rights_holder": "mixed — Shlokam.org (uncertain rights) informs current anchor per registry",
+    "pd_alternative": "Max Müller, Sacred Books of the East vol. 1 (Vājasaneyi / Īśā Upaniṣad, 1879, public domain)",
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Vedic Sanskrit (Śukla Yajurveda ch. 40), ancient PD",
+    "recommended_action": "swap-to-PD",
+    "confidence": "medium — registry itself flags this yellow/swap-recommended; direct manuscript excerpt read clean with no visible Shlokam-derived phrasing, so the risk may be lower than the yellow tag implies, but the Sanskrit-sourcing dependency on a non-PD website is real and should be replaced with Müller's PD Sanskrit + English"
+  },
+  "Know Yourself (Ibn ʿArabī/Balyānī)": {
+    "tier": "C",
+    "english_source": "Cecilia Twinch, Know Yourself: An Explanation of the Oneness of Being (Beshara Publications, 2021)",
+    "rights_holder": "Cecilia Twinch / Beshara Publications (copyrighted, 2021)",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Arabic original (al-Balyānī's Risālat al-Aḥadiyya, a short medieval treatise sometimes misattributed to Ibn ʿArabī) is centuries old and public domain, but not yet acquired/transcribed in data/raw_texts",
+    "recommended_action": "re-render-from-source",
+    "confidence": "high — registry marks this attributed_excerpt / sell_ready_tier red ('license required — no PD English'), and no PD English alternative exists; interim mitigation is to keep only short attributed Twinch quotes with Pratibha's own commentary until an Arabic-sourced fresh rendering exists"
+  },
+  "Māṇḍūkya Upaniṣad & Kārikā": {
+    "tier": "A",
+    "english_source": "Pratibha own rendering from received Sanskrit (verified in data/raw_texts/#Māṇḍūkya Upaniṣad with Gauḍapāda's Kārikā manuscript: no named copyrighted anchor)",
+    "rights_holder": "project (own work)",
+    "pd_alternative": "Max Müller, SBE vol. 34 (Māṇḍūkya, 1894) — noted in registry only as an optional PD comparative reference, not required",
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Received Upaniṣad + Kārikā Sanskrit, ancient PD",
+    "recommended_action": "keep+attribute",
+    "confidence": "high"
+  },
+  "Songs of Milarepa": {
+    "tier": "A",
+    "english_source": "Kazi Dawa-Samdup (trans.) / W.Y. Evans-Wentz (ed.), Tibet's Great Yogi Milarepa (1928, public domain — pre-1929 US publication, now confirmed PD)",
+    "rights_holder": "public domain",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Tibetan Jetsun-Kahbum source (traditional, PD); Evans-Wentz PD English on file at data/raw_texts/pd/tibetan/milarepa_evans_wentz_1928.txt",
+    "recommended_action": "keep+attribute",
+    "confidence": "high"
+  },
+  "Mūlamadhyamakakārikā (Nāgārjuna)": {
+    "tier": "A",
+    "english_source": "Pratibha original English rendering directly from the Sanskrit — registry explicitly states 'no public-domain English of these chapters exists' and that this is an original rendering",
+    "rights_holder": "project (own work)",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Sanskrit source-verified via GRETIL critical text (chs. 18, 24, 25); also cf. de la Vallée Poussin's Bibliotheca Buddhica edition (1903-13, PD)",
+    "recommended_action": "keep+attribute",
+    "confidence": "high for copyright provenance (own rendering, explicitly disclosed); registry's 'orange' flag is a separate scholarly-review-pending concern, not a copyright one"
+  },
+  "Yoga Sūtras (Patañjali)": {
+    "tier": "B",
+    "english_source": "Split: Pada 1 and Sādhana-pāda ≤2.30 use the Dvivedi (1890, PD) anchor; Sūtra 2.31 onward is Satchidananda-informed Pratibha English (Swami Satchidananda, The Yoga Sutras of Patanjali, Integral Yoga Publications, 1978 — in copyright)",
+    "rights_holder": "partly public domain (Dvivedi), partly Swami Satchidananda / Integral Yoga Publications (copyrighted, 1978) for 2.31–4.34",
+    "pd_alternative": "Manilal Nabhubhai Dvivedi (1890, public domain) or Swami Vivekananda, Raja Yoga (1896, public domain)",
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Sanskrit on file at data/raw_texts/pd/indian/yoga_sutras_gretil_iast_sanskrit.txt (GRETIL, PD); Dvivedi 1890 PDF also on file",
+    "recommended_action": "swap-to-PD",
+    "confidence": "high — registry explicitly documents the split and flags yellow/swap-recommended; remaining work is extending the existing Dvivedi/Vivekananda PD anchor across 2.31 through the end of Pada 4"
+  },
+  "Phaedo": {
+    "tier": "A",
+    "english_source": "Benjamin Jowett translation (Project Gutenberg #1658, public domain)",
+    "rights_holder": "public domain",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Greek text, ancient PD; Jowett PD English on file at data/raw_texts/pd/greek/phaedo_jowett_gutenberg_1658.txt",
+    "recommended_action": "keep+attribute",
+    "confidence": "high"
+  },
+  "Enneads (Plotinus)": {
+    "tier": "A",
+    "english_source": "Stephen MacKenna & B.S. Page translation (Internet Classics Archive / MIT Classics, treated as public domain)",
+    "rights_holder": "public domain (MacKenna's original 1917–1930 volumes); Page's 1962 Faber & Faber revision layer carries a separate, later copyright status that is less clear-cut",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Greek text, ancient PD; MacKenna/Page text on file at data/raw_texts/pd/greek/plotinus_mackenna_enneads.txt",
+    "recommended_action": "keep+attribute",
+    "confidence": "medium-high — MacKenna's core PD status is solid, but the 'Page' revision (1962) that the MIT/Delphi text is based on is a later edited layer whose own copyright status is not fully verified; worth a light legal check before wide commercial use"
+  },
+  "Pratyabhijñāhṛdayam": {
+    "tier": "A",
+    "english_source": "Pratibha own rendering from Sanskrit sūtras (verified in data/raw_texts/#Pratyabhijñāhṛdayam manuscript: Devanāgarī + IAST + 'Pratibhā Translation', no named copyrighted anchor, no Jaideva Singh file present anywhere in data/raw_texts)",
+    "rights_holder": "project (own work)",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "KSTS Sanskrit edition (1911/1918 series, public domain)",
+    "recommended_action": "keep+attribute",
+    "confidence": "medium-high — registry's own-rendering framing matches Nāgārjuna/Śiva Sūtra pattern and manuscript inspection corroborates it, but unlike Nāgārjuna it lacks an explicit 'original rendering, no PD English exists' disclosure sentence; the registry's pd_alternative note ('no PD English — Jaideva Singh is copyrighted') exists precisely to warn that Jaideva Singh's well-known 1980 translation must NOT be used as a crutch — worth a one-time editorial spot-check against Jaideva Singh's phrasing to rule out unconscious echo"
+  },
+  "Bodhicaryāvatāra (Śāntideva)": {
+    "tier": "A",
+    "english_source": "L.D. Barnett, The Path of Light (John Murray, 1909, public domain), lightly modernized by Pratibha",
+    "rights_holder": "public domain",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Sanskrit chs. VIII-IX, ancient PD; Barnett PD English on file at Internet Archive",
+    "recommended_action": "keep+attribute",
+    "confidence": "high"
+  },
+  "Śiva Sūtra": {
+    "tier": "A",
+    "english_source": "Conor Byrnes — original translation & commentary, conceived and authored in Pratibha",
+    "rights_holder": "project (own work — Conor Byrnes)",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Śiva Sūtras (attrib. Vasugupta, c. 9th c.), Sanskrit ancient PD",
+    "recommended_action": "keep+attribute",
+    "confidence": "high — explicitly confirmed as the project owner's own work (registry: conceived_by_conor: true); not copyright-derived"
+  },
+  "Śvetāśvatara Upaniṣad": {
+    "tier": "B",
+    "english_source": "Pratibha English explicitly built on 'Base translation context: S. Radhakrishnan' (S. Radhakrishnan, The Principal Upanishads, 1953, George Allen & Unwin — in copyright) 'with philological normalization and Pratibhā departures'",
+    "rights_holder": "S. Radhakrishnan estate / publisher (copyrighted, 1953) for the base layer",
+    "pd_alternative": "Max Müller, Sacred Books of the East vol. 15 (Śvetāśvatara, 1884, public domain)",
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Vedic Sanskrit, ancient PD",
+    "recommended_action": "swap-to-PD",
+    "confidence": "high — data/raw_texts/#Śvetāśvatara Upaniṣad manuscript header directly states Radhakrishnan as the base translation context, confirming a copyrighted anchor is currently in use despite 'departures'; Müller SBE 15 is a ready PD substitute"
+  },
+  "Tantrasāra": {
+    "tier": "A",
+    "english_source": "Conor Byrnes — own translation & commentary, 'informed by Christopher Wallis' (Wallis's Tantra Illuminated / Tantrasāra translation, both in copyright, are present in data/raw_texts as scholarly reference)",
+    "rights_holder": "project (own work — Conor Byrnes), with acknowledged scholarly influence from a copyrighted source",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Sanskrit (Abhinavagupta, c. 1000 CE) via KSTS / Trivandrum Sanskrit Series editions, pre-1929, public domain",
+    "recommended_action": "keep+attribute",
+    "confidence": "medium — registry marks this conceived_by_conor / sell_ready green like Śiva Sūtra, but unlike Śiva Sūtra it discloses being 'informed by' a named copyrighted scholar (Wallis); recommend a light independence check (no verbatim phrase overlap with Wallis's Tantrasāra/Tantra Illuminated) to fully clear this to bucket A with high confidence"
+  },
+  "Tao Te Ching": {
+    "tier": "B",
+    "english_source": "Pratibha editorial English with James Legge (1891, PD) as comparative reference; commentary also notes D.C. Lau and Stephen Mitchell (both in-copyright, Penguin/HarperCollins); a 2018 Penguin Tao Te Ching ebook is present in data/raw_texts (libgen), suggesting in-copyright material was consulted",
+    "rights_holder": "mixed — Legge (PD) available but Lau/Mitchell (copyrighted, referenced in commentary) create residual risk across 81 chapters, most of which are Wave-B LLM-generated",
+    "pd_alternative": "James Legge, Sacred Books of the East vol. 39 (1891) — Project Gutenberg #216",
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Classical Chinese, ancient PD; Legge PD English on file at data/raw_texts/pd/chinese/tao_te_ching_legge_gutenberg_216.txt",
+    "recommended_action": "swap-to-PD",
+    "confidence": "medium — registry explicitly flags yellow/swap-recommended; the exact degree to which Lau/Mitchell phrasing bled into the 69 Wave-B LLM-generated chapters (vs. the smaller curated Wave A pilot) is not verifiable from the registry alone and should be spot-checked chapter by chapter"
+  },
+  "Vijñāna Bhairava": {
+    "tier": "C",
+    "english_source": "Christopher D. Wallis's Vijñānabhairava translation, used directly from the project PDF data/raw_texts/VBT+translation+WALLIS-2.pdf",
+    "rights_holder": "Christopher D. Wallis (copyrighted)",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "KSTS Sanskrit edition (1918, public domain) — on file reference at Internet Archive (dli.ernet.242056)",
+    "recommended_action": "re-render-from-source",
+    "confidence": "high — registry names Wallis's translation as the literal anchor_translation and sell_ready_tier is orange/'no PD English'; Reps (1957) and Jaideva Singh (1979) are also copyrighted so there is no PD-swap shortcut — a fresh Pratibha rendering from the PD KSTS Sanskrit (as already done for Nāgārjuna MMK and Śiva Sūtra) is the only clean path for all 112 yuktis"
+  },
+  "Spandakārikā": {
+    "tier": "C",
+    "english_source": "Daniel Odier, Yoga Spandakarika (Inner Traditions, 2005), used from the project EPUB",
+    "rights_holder": "Daniel Odier / Inner Traditions (copyrighted, 2005)",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "KSTS Sanskrit edition, public domain",
+    "recommended_action": "re-render-from-source",
+    "confidence": "high — registry names Odier's translation directly as the anchor and states 'no PD English — Jaideva Singh (1980) is copyrighted' as well; re-render from PD KSTS Sanskrit is the only clean path"
+  },
+  "Yoginīhṛdaya": {
+    "tier": "C",
+    "english_source": "Hybrid: the 'Body' layer uses André Padoux & Roger-Orphé Jeanty, The Heart of the Yoginī (Oxford University Press, 2013, copyrighted) directly; a separate 'Pratibha Translation' layer is already a fresh own rendering",
+    "rights_holder": "André Padoux & Roger-Orphé Jeanty / Oxford University Press (copyrighted, 2013) for the Body layer",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Underlying Sanskrit Tantra text is ancient and in principle PD, but the readily available critical edition (Padoux/Dvivedi) is itself a modern in-copyright edition; a pre-1929 edition needs to be located to fully clear the Sanskrit-source layer",
+    "recommended_action": "quote+attribute+commentary",
+    "confidence": "medium — registry itself flags the fix already in hand: 'no PD English translation; Pratibha Translation layer is the sell-ready English' — the remaining work is editorial (reduce or remove verbatim Padoux Body-layer text down to short attributed quotes and foreground the existing Pratibha Translation layer as the primary rendering), not a from-scratch re-render"
+  },
+  "Zhuangzi": {
+    "tier": "A",
+    "english_source": "Herbert A. Giles, Chuang Tzu: Mystic, Moralist, and Social Reformer (1889, Project Gutenberg #59709, public domain)",
+    "rights_holder": "public domain",
+    "pd_alternative": null,
+    "pd_source_text_available": true,
+    "pd_source_text_note": "Classical Chinese, ancient PD; Giles PD English on file at data/raw_texts/pd/chinese/zhuangzi_giles_gutenberg_59709.txt (note: a copyrighted Martin Palmer/Penguin Book of Chuang Tzu epub also sits in data/raw_texts but is NOT the named anchor per registry)",
+    "recommended_action": "keep+attribute",
+    "confidence": "high — registry names Giles as the sole anchor for both ctz_* and zhuangzi_md_* units; the Palmer/Penguin epub in raw_texts appears to be reference material only, not cited as an anchor anywhere in the registry, but its mere presence is worth a quick grep-for-echoes spot check"
+  }
+}
