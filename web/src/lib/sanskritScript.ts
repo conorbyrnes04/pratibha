@@ -6,7 +6,7 @@ export function containsDevanagari(text?: string): boolean {
 }
 
 const NON_SANSKRIT_COLLECTION =
-  /heraclitus|fragment|epictetus|enchiridion|meditations|phaedo|plato|plotinus|ennead|eckhart|ibn.?arabi|know.?yourself|balyani|rumi|mathnawi|tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō/i;
+  /heraclitus|fragment|epictetus|enchiridion|meditations|phaedo|plato|plotinus|ennead|eckhart|ibn.?arabi|know.?yourself|balyani|rumi|mathnawi|tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|zhongyong|milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō/i;
 
 const SANSKRIT_COLLECTION =
   /upanishad|upaniṣad|chandogya|isavasya|svetasvatara|mandukya|bhagavad.?gita|astavakra|ashtavakra|aṣṭāvakra|patanjali|patañjali|yoga.?s[uū]tra|vijnana|bhairava|shiva|siva|tantra|spanda|yogin[iī]|pratyabhij|kashmir|nagarjuna|madhyamaka|mmk|shantideva|śāntideva|bodhicary|heart.?s[uū]tra|prajnaparamita|tilopa|maha.?mudra/i;

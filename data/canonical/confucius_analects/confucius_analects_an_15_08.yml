@@ -1,0 +1,73 @@
+source_file: data/yaml/confucius_analects/an_15_08.yml
+source_id: AN_15_08
+category: root_text
+work_id: confucius_analects
+work_title: Confucius — Analects
+unit_id: confucius_analects.an_15_08
+unit_label: Not to Speak to One Who Can Be Spoken To
+title: Not to Speak to One Who Can Be Spoken To
+unit_type: sutra
+sanskrit_devanagari: 子曰：「可與言而不與之言，失人；不可與言而與之言，失言。知者不失人，亦不失言。」
+sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
+translation_literal: The Master said, 'When a man may be spoken with, not to speak to him is to err in reference to the man.
+  When a man may not be spoken with, to speak to him is to err in reference to our words. The wise err neither in regard to
+  their man nor to their words.'
+commentary: '«Not to Speak to One Who Can Be Spoken To» treats cultivation as a public-and-private craft: virtue is not a
+  mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks
+  a living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force
+  lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of
+  a living tradition: insight without application remains incomplete. Return again to the original wording when the mind wants
+  to smooth the edge. Return again to the original wording when the mind wants to smooth the edge.'
+insight: '«Not to Speak to One Who Can Be Spoken To» treats cultivation as a public-and-private craft: virtue is not a mood
+  but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+upaya: ''
+themes:
+- action
+- attention
+- mind
+- practice
+- virtue
+tags:
+- action
+- attention
+- confucius_analects
+- mind
+- practice
+- root_text
+- virtue
+quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 子曰：「可與言而不與之言，失人；不可與言而與之言，失言。知者不失人，亦不失言。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: The Master said, 'When a man may be spoken with, not to speak to him is to err in reference to the man. When a man
+    may not be spoken with, to speak to him is to err in reference to our words. The wise err neither in regard to their man
+    nor to their words.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«Not to Speak to One Who Can Be Spoken To» treats cultivation as a public-and-private craft: virtue is not a mood
+    but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks
+    a living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force
+    lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is the demand
+    of a living tradition: insight without application remains incomplete. Return again to the original wording when the mind
+    wants to smooth the edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Confucius — Analects
+  section: Analects 15.8
+  original_id: AN_15_08
+  source_reference: ''

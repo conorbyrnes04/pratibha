@@ -1,0 +1,73 @@
+source_file: data/yaml/confucius_analects/an_12_02.yml
+source_id: AN_12_02
+category: root_text
+work_id: confucius_analects
+work_title: Confucius — Analects
+unit_id: confucius_analects.an_12_02
+unit_label: Do Not Do to Others What You Would Not Wish Done to Yourself
+title: Do Not Do to Others What You Would Not Wish Done to Yourself
+unit_type: sutra
+sanskrit_devanagari: 仲弓問仁。子曰：「出門如見大賓，使民如承大祭。己所不欲，勿施於人。在邦無怨，在家無怨。」
+sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
+translation_literal: Zhong Gong asked about perfect virtue. The Master said, 'It is, when you go abroad, to behave to every
+  one as if you were receiving a great guest; to employ the people as if you were assisting at a great sacrifice; not to do
+  to others as you would not wish done to yourself; to have no murmuring against you in the country, and none in the family.'
+commentary: '«Do Not Do to Others What You Would Not Wish Done to Yourself» treats cultivation as a public-and-private craft:
+  virtue is not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain.
+  The passage asks a living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument
+  until its force lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This
+  is the demand of a living tradition: insight without application remains incomplete. Return again to the original wording
+  when the mind wants to smooth the edge.'
+insight: '«Do Not Do to Others What You Would Not Wish Done to Yourself» treats cultivation as a public-and-private craft:
+  virtue is not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+upaya: ''
+themes:
+- action
+- attention
+- mind
+- practice
+- virtue
+tags:
+- action
+- attention
+- confucius_analects
+- mind
+- practice
+- root_text
+- virtue
+quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 仲弓問仁。子曰：「出門如見大賓，使民如承大祭。己所不欲，勿施於人。在邦無怨，在家無怨。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: Zhong Gong asked about perfect virtue. The Master said, 'It is, when you go abroad, to behave to every one as if you
+    were receiving a great guest; to employ the people as if you were assisting at a great sacrifice; not to do to others
+    as you would not wish done to yourself; to have no murmuring against you in the country, and none in the family.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«Do Not Do to Others What You Would Not Wish Done to Yourself» treats cultivation as a public-and-private craft:
+    virtue is not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain.
+    The passage asks a living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument
+    until its force lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This
+    is the demand of a living tradition: insight without application remains incomplete. Return again to the original wording
+    when the mind wants to smooth the edge.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Confucius — Analects
+  section: Analects 12.2
+  original_id: AN_12_02
+  source_reference: ''

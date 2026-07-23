@@ -1,0 +1,73 @@
+source_file: data/yaml/confucius_analects/an_06_20.yml
+source_id: AN_06_20
+category: root_text
+work_id: confucius_analects
+work_title: Confucius — Analects
+unit_id: confucius_analects.an_06_20
+unit_label: To Know, to Love, to Delight
+title: To Know, to Love, to Delight
+unit_type: sutra
+sanskrit_devanagari: 子曰：「知之者不如好之者，好之者不如樂之者。」
+sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
+translation_literal: The Master said, 'They who know the truth are not equal to those who love it, and they who love it are
+  not equal to those who delight in it.'
+commentary: '«To Know, to Love, to Delight» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+  pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living reader
+  to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands in attention,
+  then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+  insight without application remains incomplete. Return again to the original wording when the mind wants to smooth the edge.
+  Return again to the original wording when the mind wants to smooth the edge.'
+insight: '«To Know, to Love, to Delight» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+  pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+upaya: ''
+themes:
+- action
+- attention
+- mind
+- practice
+- truth
+- virtue
+tags:
+- action
+- attention
+- confucius_analects
+- mind
+- practice
+- root_text
+- truth
+- virtue
+quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 子曰：「知之者不如好之者，好之者不如樂之者。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: The Master said, 'They who know the truth are not equal to those who love it, and they who love it are not equal to
+    those who delight in it.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«To Know, to Love, to Delight» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+    pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living reader
+    to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands in attention,
+    then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+    insight without application remains incomplete. Return again to the original wording when the mind wants to smooth the
+    edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Confucius — Analects
+  section: Analects 6.20
+  original_id: AN_06_20
+  source_reference: ''

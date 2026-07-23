@@ -215,7 +215,7 @@ const GLYPH_RULES: Array<{ pattern: RegExp; glyph: GlyphSlug }> = [
   { pattern: /heraclitus|fragment/i, glyph: "fire" },
   { pattern: /patanjali|patañjali|yoga.?s[uū]tras?|raja.?yoga/i, glyph: "spiral" },
   { pattern: /ibn|arabi|know yourself/i, glyph: "mirror" },
-  { pattern: /confucius|analect/i, glyph: "tree" },
+  { pattern: /confucius|analect|zhongyong/i, glyph: "tree" },
   { pattern: /marcus|meditation/i, glyph: "sage" },
   { pattern: /rumi|poet/i, glyph: "spiral" },
   { pattern: /dogen|dōgen|shobogenzo|shōbōgenzō/i, glyph: "moon" },

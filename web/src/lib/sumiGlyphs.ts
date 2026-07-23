@@ -125,7 +125,7 @@ const SUMI_RULES: Array<{ pattern: RegExp; glyph: SumiSlug }> = [
   { pattern: /patanjali|patañjali|yoga.?s[uū]tras?|raja.?yoga/i, glyph: "spiral" },
   // mirror isn't in the sumi set; moon carries the reflective charge Ibn Arabi's imagery wants.
   { pattern: /ibn|arabi|know yourself/i, glyph: "moon" },
-  { pattern: /confucius|analect/i, glyph: "tree" },
+  { pattern: /confucius|analect|zhongyong/i, glyph: "tree" },
   { pattern: /marcus|meditation/i, glyph: "sage" },
   { pattern: /rumi|poet/i, glyph: "spiral" },
   { pattern: /dogen|dōgen|shobogenzo|shōbōgenzō/i, glyph: "moon" },

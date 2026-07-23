@@ -1,0 +1,75 @@
+source_file: data/yaml/confucius_analects/an_01_02.yml
+source_id: AN_01_02
+category: root_text
+work_id: confucius_analects
+work_title: Confucius — Analects
+unit_id: confucius_analects.an_01_02
+unit_label: Filial Piety Is the Root
+title: Filial Piety Is the Root
+unit_type: sutra
+sanskrit_devanagari: 有子曰：「其為人也孝弟，而好犯上者，鮮矣；不好犯上，而好作亂者，未之有也。君子務本，本立而道生。孝弟也者，其為仁之本與！」
+sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
+translation_literal: The philosopher You said, 'They are few who, being filial and fraternal, are fond of offending against
+  their superiors. There have been none, who, not liking to offend against their superiors, have been fond of stirring up
+  confusion. The superior man bends his attention to what is radical. That being established, all practical courses naturally
+  grow up. Filial piety and fraternal submission!—are they not the root of all benevolent actions?'
+commentary: '«Filial Piety Is the Root» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+  pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living reader
+  to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands in attention,
+  then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+  insight without application remains incomplete. Return again to the original wording when the mind wants to smooth the edge.
+  Return again to the original wording when the mind wants to smooth the edge.'
+insight: '«Filial Piety Is the Root» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+  pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+upaya: ''
+themes:
+- action
+- attention
+- mind
+- practice
+- virtue
+tags:
+- action
+- attention
+- confucius_analects
+- mind
+- practice
+- root_text
+- virtue
+quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 有子曰：「其為人也孝弟，而好犯上者，鮮矣；不好犯上，而好作亂者，未之有也。君子務本，本立而道生。孝弟也者，其為仁之本與！」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: The philosopher You said, 'They are few who, being filial and fraternal, are fond of offending against their superiors.
+    There have been none, who, not liking to offend against their superiors, have been fond of stirring up confusion. The
+    superior man bends his attention to what is radical. That being established, all practical courses naturally grow up.
+    Filial piety and fraternal submission!—are they not the root of all benevolent actions?'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«Filial Piety Is the Root» treats cultivation as a public-and-private craft: virtue is not a mood but a trained pattern
+    of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living reader to test
+    the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands in attention,
+    then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+    insight without application remains incomplete. Return again to the original wording when the mind wants to smooth the
+    edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Confucius — Analects
+  section: Analects 1.2
+  original_id: AN_01_02
+  source_reference: ''

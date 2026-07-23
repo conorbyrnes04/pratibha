@@ -1,0 +1,73 @@
+source_file: data/yaml/confucius_analects/an_12_22.yml
+source_id: AN_12_22
+category: root_text
+work_id: confucius_analects
+work_title: Confucius — Analects
+unit_id: confucius_analects.an_12_22
+unit_label: To Love Men; To Know Men
+title: To Love Men; To Know Men
+unit_type: sutra
+sanskrit_devanagari: 樊遲問仁。子曰：「愛人。」問知。子曰：「知人。」
+sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
+translation_literal: Fan Chi asked about benevolence. The Master said, 'It is to love all men.' He asked about knowledge.
+  The Master said, 'It is to know all men.'
+commentary: '«To Love Men; To Know Men» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+  pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living reader
+  to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands in attention,
+  then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+  insight without application remains incomplete. Return again to the original wording when the mind wants to smooth the edge.
+  Return again to the original wording when the mind wants to smooth the edge.'
+insight: '«To Love Men; To Know Men» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+  pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+upaya: ''
+themes:
+- action
+- attention
+- knowledge
+- mind
+- practice
+- virtue
+tags:
+- action
+- attention
+- confucius_analects
+- knowledge
+- mind
+- practice
+- root_text
+- virtue
+quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 樊遲問仁。子曰：「愛人。」問知。子曰：「知人。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: Fan Chi asked about benevolence. The Master said, 'It is to love all men.' He asked about knowledge. The Master said,
+    'It is to know all men.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«To Love Men; To Know Men» treats cultivation as a public-and-private craft: virtue is not a mood but a trained pattern
+    of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living reader to test
+    the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands in attention,
+    then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+    insight without application remains incomplete. Return again to the original wording when the mind wants to smooth the
+    edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Confucius — Analects
+  section: Analects 12.22
+  original_id: AN_12_22
+  source_reference: ''

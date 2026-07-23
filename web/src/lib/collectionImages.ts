@@ -16,7 +16,7 @@ function normalizeKey(name: string): string {
 const IMAGE_RULES: Array<{ pattern: RegExp; slug: string }> = [
   // Dedicated assets (order matters — more specific rules first)
   { pattern: /astavakra|ashtavakra|aṣṭāvakra/i, slug: "astavakra" },
-  { pattern: /tao|te.?ching|tao_te_ching|zhuang|chuang|lao.?tzu|confucius|analect/i, slug: "daoism" },
+  { pattern: /tao|te.?ching|tao_te_ching|zhuang|chuang|lao.?tzu|confucius|analect|zhongyong/i, slug: "daoism" },
   { pattern: /milarepa|jetsun|tibet.?s.?great.?yogi|rumi|mathnawi/i, slug: "milarepa" },
   { pattern: /tilopa|maha.?mudra|ganges.?mahamudra/i, slug: "tilopa" },
   { pattern: /heart.?s[uū]tra|prajnaparamita|prajñāpāramitā/i, slug: "heart-sutra" },

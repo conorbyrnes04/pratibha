@@ -1,0 +1,71 @@
+source_file: data/yaml/confucius_analects/an_09_28.yml
+source_id: AN_09_28
+category: root_text
+work_id: confucius_analects
+work_title: Confucius — Analects
+unit_id: confucius_analects.an_09_28
+unit_label: The Wise Are Free from Perplexities
+title: The Wise Are Free from Perplexities
+unit_type: sutra
+sanskrit_devanagari: 子曰：「知者不惑，仁者不憂，勇者不懼。」
+sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
+translation_literal: The Master said, 'The wise are free from perplexities; the virtuous from anxiety; and the bold from fear.'
+commentary: '«The Wise Are Free from Perplexities» treats cultivation as a public-and-private craft: virtue is not a mood
+  but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a
+  living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force
+  lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of
+  a living tradition: insight without application remains incomplete. Return again to the original wording when the mind wants
+  to smooth the edge. Return again to the original wording when the mind wants to smooth the edge.'
+insight: '«The Wise Are Free from Perplexities» treats cultivation as a public-and-private craft: virtue is not a mood but
+  a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+upaya: ''
+themes:
+- action
+- attention
+- fear
+- mind
+- practice
+- virtue
+tags:
+- action
+- attention
+- confucius_analects
+- fear
+- mind
+- practice
+- root_text
+- virtue
+quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 子曰：「知者不惑，仁者不憂，勇者不懼。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: The Master said, 'The wise are free from perplexities; the virtuous from anxiety; and the bold from fear.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«The Wise Are Free from Perplexities» treats cultivation as a public-and-private craft: virtue is not a mood but
+    a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living
+    reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands
+    in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a
+    living tradition: insight without application remains incomplete. Return again to the original wording when the mind wants
+    to smooth the edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Confucius — Analects
+  section: Analects 9.28
+  original_id: AN_09_28
+  source_reference: ''

@@ -1,0 +1,77 @@
+source_file: data/yaml/confucius_analects/an_07_08.yml
+source_id: AN_07_08
+category: root_text
+work_id: confucius_analects
+work_title: Confucius — Analects
+unit_id: confucius_analects.an_07_08
+unit_label: I Do Not Open Up the Truth to One Who Is Not Eager
+title: I Do Not Open Up the Truth to One Who Is Not Eager
+unit_type: sutra
+sanskrit_devanagari: 子曰：「不憤不啟，不悱不發。舉一隅不以三隅反，則不復也。」
+sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
+translation_literal: The Master said, 'I do not open up the truth to one who is not eager to get knowledge, nor help out any
+  one who is not anxious to explain himself. When I have presented one corner of a subject to any one, and he cannot from
+  it learn the other three, I do not repeat my lesson.'
+commentary: '«I Do Not Open Up the Truth to One Who Is Not Eager» treats cultivation as a public-and-private craft: virtue
+  is not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The
+  passage asks a living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument
+  until its force lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This
+  is the demand of a living tradition: insight without application remains incomplete. Return again to the original wording
+  when the mind wants to smooth the edge.'
+insight: '«I Do Not Open Up the Truth to One Who Is Not Eager» treats cultivation as a public-and-private craft: virtue is
+  not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+upaya: ''
+themes:
+- action
+- attention
+- knowledge
+- mind
+- practice
+- truth
+- virtue
+tags:
+- action
+- attention
+- confucius_analects
+- knowledge
+- mind
+- practice
+- root_text
+- truth
+- virtue
+quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 子曰：「不憤不啟，不悱不發。舉一隅不以三隅反，則不復也。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: The Master said, 'I do not open up the truth to one who is not eager to get knowledge, nor help out any one who is
+    not anxious to explain himself. When I have presented one corner of a subject to any one, and he cannot from it learn
+    the other three, I do not repeat my lesson.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«I Do Not Open Up the Truth to One Who Is Not Eager» treats cultivation as a public-and-private craft: virtue is
+    not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage
+    asks a living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until
+    its force lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is
+    the demand of a living tradition: insight without application remains incomplete. Return again to the original wording
+    when the mind wants to smooth the edge.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Confucius — Analects
+  section: Analects 7.8
+  original_id: AN_07_08
+  source_reference: ''

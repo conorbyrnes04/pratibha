@@ -1,0 +1,73 @@
+source_file: data/yaml/confucius_analects/an_04_15.yml
+source_id: AN_04_15
+category: root_text
+work_id: confucius_analects
+work_title: Confucius — Analects
+unit_id: confucius_analects.an_04_15
+unit_label: My Doctrine Is That of an All-Pervading Unity
+title: My Doctrine Is That of an All-Pervading Unity
+unit_type: sutra
+sanskrit_devanagari: 子曰：「參乎！吾道一以貫之。」曾子曰：「唯。」子出，門人問曰：「何謂也？」曾子曰：「夫子之道，忠恕而已矣。」
+sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
+translation_literal: The Master said, 'Shen, my doctrine is that of an all-pervading unity.' The disciple Zeng replied, 'Yes.'
+  The Master went out, and the other disciples asked, saying, 'What do his words mean?' Zeng said, 'The doctrine of our master
+  is to be true to the principles of our nature and the benevolent exercise of them to others,—this and nothing more.'
+commentary: '«My Doctrine Is That of an All-Pervading Unity» treats cultivation as a public-and-private craft: virtue is not
+  a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage
+  asks a living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its
+  force lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is the demand
+  of a living tradition: insight without application remains incomplete. Return again to the original wording when the mind
+  wants to smooth the edge. Return again to the original wording when the mind wants to smooth the edge.'
+insight: '«My Doctrine Is That of an All-Pervading Unity» treats cultivation as a public-and-private craft: virtue is not
+  a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+upaya: ''
+themes:
+- action
+- attention
+- mind
+- practice
+- virtue
+tags:
+- action
+- attention
+- confucius_analects
+- mind
+- practice
+- root_text
+- virtue
+quality_score: 0
+editorial_maturity: structural_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 子曰：「參乎！吾道一以貫之。」曾子曰：「唯。」子出，門人問曰：「何謂也？」曾子曰：「夫子之道，忠恕而已矣。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: The Master said, 'Shen, my doctrine is that of an all-pervading unity.' The disciple Zeng replied, 'Yes.' The Master
+    went out, and the other disciples asked, saying, 'What do his words mean?' Zeng said, 'The doctrine of our master is to
+    be true to the principles of our nature and the benevolent exercise of them to others,—this and nothing more.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«My Doctrine Is That of an All-Pervading Unity» treats cultivation as a public-and-private craft: virtue is not a
+    mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage
+    asks a living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until
+    its force lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is
+    the demand of a living tradition: insight without application remains incomplete. Return again to the original wording
+    when the mind wants to smooth the edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Confucius — Analects
+  section: Analects 4.15
+  original_id: AN_04_15
+  source_reference: ''
