@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { Glyph } from "@/components/Glyph";
-import type { GlyphSlug } from "@/lib/glyphs";
+import { InkGlyph } from "@/components/InkGlyph";
+import type { SumiSlug } from "@/lib/sumiGlyphs";
 
 export type ProductChip = {
   href: string;
   label: string;
-  /** One short line describing what this surface does. */
+  /** One short line for title/tooltip only — not rendered as body copy. */
   hint?: string;
-  glyph?: GlyphSlug;
+  glyph: SumiSlug;
 };
 
 type ProductSnapshotProps = {
@@ -18,27 +18,26 @@ type ProductSnapshotProps = {
 };
 
 /**
- * ProductSnapshot — a compact horizontal row of the app's surfaces
- * ("products across the top"). Gives users a glanceable map of what
- * Pratibha offers without reading dense prose.
+ * ProductSnapshot — quiet Sumi ink strip of app surfaces (not a card grid).
+ * One row on desktop; horizontal scroll on mobile so nothing orphans.
  */
 export function ProductSnapshot({ items, activeHref, className }: ProductSnapshotProps) {
   return (
-    <nav aria-label="Pratibha surfaces" className={`product-snapshot ${className ?? ""}`.trim()}>
+    <nav
+      aria-label="Pratibha surfaces"
+      className={`product-snapshot ${className ?? ""}`.trim()}
+    >
       {items.map((item) => {
         const active = activeHref === item.href;
         return (
           <Link
             key={item.href}
             href={item.href}
-            className="product-chip"
-            style={active ? { borderColor: "rgb(240 201 121 / 0.55)" } : undefined}
+            title={item.hint}
+            className={`product-chip${active ? " product-chip--active" : ""}`}
           >
-            <span className="flex items-center gap-2">
-              {item.glyph ? <Glyph name={item.glyph} size="sm" className="opacity-85" /> : null}
-              <span className="product-chip__label">{item.label}</span>
-            </span>
-            {item.hint ? <span className="product-chip__hint">{item.hint}</span> : null}
+            <InkGlyph glyph={item.glyph} state={active ? "recognized" : "arising"} size="sm" />
+            <span className="product-chip__label">{item.label}</span>
           </Link>
         );
       })}

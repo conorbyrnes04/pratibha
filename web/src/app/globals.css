@@ -1234,49 +1234,125 @@ select:focus-visible {
   color: var(--muted-2);
 }
 
-/* ---- Product snapshot: horizontal row of the app's surfaces ---- */
+/* ---- Product snapshot: quiet Sumi ink strip (no cards) ---- */
 .product-snapshot {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.7rem;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.35rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  padding: 0.15rem 0 0.35rem;
+  animation: product-strip-in 0.55s ease both;
 }
-@media (min-width: 640px) {
-  .product-snapshot {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.product-snapshot::-webkit-scrollbar {
+  display: none;
+}
+@keyframes product-strip-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.4rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 720px) {
   .product-snapshot {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    overflow: visible;
+    gap: 0.25rem;
   }
 }
 .product-chip {
   display: flex;
+  flex: 1 1 0;
+  min-width: 4.75rem;
   flex-direction: column;
-  gap: 0.45rem;
-  padding: 0.95rem 1rem 1.05rem;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background:
-    linear-gradient(160deg, rgb(255 255 255 / 0.04), transparent 60%),
-    rgb(13 13 24 / 0.55);
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.4rem;
+  scroll-snap-align: start;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted-2);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 .product-chip:hover {
-  transform: translateY(-2px);
-  border-color: rgb(240 201 121 / 0.45);
+  color: var(--seal);
+}
+.product-chip--active {
+  color: var(--seal);
 }
 .product-chip__label {
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.01em;
-  color: var(--foreground);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  color: inherit;
 }
-.product-chip__hint {
+
+/* Start-here steps: light links, not OverviewCards */
+.start-steps {
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 640px) {
+  .start-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+.start-step {
+  display: block;
+  padding: 0.25rem 0;
+  text-decoration: none;
+  color: inherit;
+  animation: product-strip-in 0.55s ease both;
+}
+.start-step:nth-child(2) {
+  animation-delay: 0.08s;
+}
+.start-step:nth-child(3) {
+  animation-delay: 0.16s;
+}
+.start-step:hover .start-step__title {
+  color: var(--seal);
+}
+.start-step__top {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.45rem;
+}
+.start-step__eyebrow {
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--seal);
+}
+.start-step__title {
+  font-family: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--foreground);
+  transition: color 0.2s ease;
+}
+.start-step__body {
   color: var(--muted-2);
-  font-size: 0.86rem;
-  line-height: 1.4;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  max-width: 22rem;
 }
 
 /* ---- Disclosure: styled progressive-disclosure <details> ---- */

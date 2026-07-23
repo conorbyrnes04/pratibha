@@ -8,28 +8,19 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { passagePreview, practiceText } from "@/lib/verseLayers";
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
-import type { GlyphSlug } from "@/lib/glyphs";
 import { ArtBackdrop } from "@/components/ArtImage";
-import { GlyphOrnament } from "@/components/Glyph";
+import { InkGlyph } from "@/components/InkGlyph";
 import { Section } from "@/components/ui/Section";
-import { OverviewCard } from "@/components/ui/OverviewCard";
 import { ProductSnapshot, type ProductChip } from "@/components/ui/ProductSnapshot";
 import { Disclosure } from "@/components/ui/Disclosure";
 
 const PRODUCTS: ProductChip[] = [
-  { href: "/read", label: "Library", hint: "Browse the full corpus", glyph: "gateway" },
+  { href: "/read", label: "Library", hint: "Browse the full corpus", glyph: "oak" },
   { href: "/chat", label: "Study Chat", hint: "Ask the texts anything", glyph: "eye" },
   { href: "/learn", label: "Paths", hint: "Guided gate-by-gate study", glyph: "labyrinth" },
   { href: "/learn#threads", label: "Threads", hint: "One theme, many traditions", glyph: "infinity" },
   { href: "/random", label: "Oracle", hint: "Draw an unexpected verse", glyph: "star" },
-  { href: "/journal", label: "Journal", hint: "Keep your own notes", glyph: "leaves" },
-];
-
-const EXPLORE: Array<{ href: string; title: string; body: string; glyph: GlyphSlug }> = [
-  { href: "/read", title: "Library", body: "The corpus by tradition, passage, and theme.", glyph: "gateway" },
-  { href: "/chat", title: "Study Chat", body: "Question the texts and compare traditions.", glyph: "eye" },
-  { href: "/learn", title: "Paths & Threads", body: "Descend gate by gate, or trace one theme.", glyph: "labyrinth" },
-  { href: "/random", title: "Oracle", body: "Let an unexpected verse interrupt you.", glyph: "star" },
+  { href: "/journal", label: "Journal", hint: "Keep your own notes", glyph: "lotus" },
 ];
 
 export default function Home() {
@@ -42,7 +33,9 @@ export default function Home() {
   const dailyTitle = daily ? displayPassageTitle(daily) : "A passage is waiting";
   const dailyCollection = displayCollectionName(daily?.collection);
   const dailyLine = daily ? passagePreview(daily) : "";
-  const dailyPractice = daily ? practiceText(daily) || "Read slowly, then carry one line into the next action." : "Read slowly, then carry one line into the next action.";
+  const dailyPractice = daily
+    ? practiceText(daily) || "Read slowly, then carry one line into the next action."
+    : "Read slowly, then carry one line into the next action.";
 
   const dailyArtPool = daily?.collection ? collectionArtPool(daily.collection) : generatedArtPool("bg-hero");
   const readHref = daily ? `/read/${encodeURIComponent(daily._id)}` : "/read";
@@ -51,14 +44,16 @@ export default function Home() {
   return (
     <main className="page-shell">
       <div className="section-stack">
-        {/* Daily hero */}
+        {/* Daily hero — one composition: brand signal + passage + CTAs + quiet surface strip */}
         <section id="daily" className="manuscript-card scroll-mt-24 overflow-hidden p-6 sm:p-8">
           <ArtBackdrop srcs={dailyArtPool} variant="hero" priority />
           <div className="relative z-10">
-            <p className="eyebrow">Today&apos;s passage</p>
+            <p className="eyebrow">Pratibha · Today&apos;s passage</p>
             <h1 className="mt-4 text-3xl font-semibold leading-none text-amber-100 sm:text-4xl">{dailyTitle}</h1>
             <p className="soft mt-2 font-sans text-sm">{dailyCollection || "Pratibha corpus"}</p>
-            <GlyphOrnament name="lotus" className="my-6 max-w-md" />
+            <div className="my-6">
+              <InkGlyph glyph="lotus" state="arising" size="lg" />
+            </div>
             <blockquote className="max-w-3xl text-2xl leading-snug text-stone-100">
               {dailyLine || "Open a passage, let it read you back, then practice one concrete shift."}
             </blockquote>
@@ -74,68 +69,46 @@ export default function Home() {
                 Ask about it
               </Link>
             </div>
+            <div className="mt-8 border-t border-white/10 pt-5">
+              <ProductSnapshot items={PRODUCTS} />
+            </div>
           </div>
         </section>
 
-        {/* Product snapshot — glanceable map of every surface */}
-        <ProductSnapshot items={PRODUCTS} activeHref="/" />
-
-        {/* First-run journey */}
+        {/* First-run journey — light steps, not cards */}
         <Section
           eyebrow="Start here"
           title="Three moves to begin"
           lead="New to Pratibha? Follow this path once and the rest opens up."
         >
-          <div className="grid gap-4 sm:grid-cols-3">
-            <OverviewCard
-              eyebrow="Step 1"
-              title="Read today's passage"
-              body="Sit with one source and its practice."
-              glyph="lotus"
-              href={readHref}
-            />
-            <OverviewCard
-              eyebrow="Step 2"
-              title="Follow a Path"
-              body="Descend a tradition gate by gate."
-              glyph="labyrinth"
-              href="/learn"
-            />
-            <OverviewCard
-              eyebrow="Step 3"
-              title="Ask Pratibha"
-              body="Question the texts in your own words."
-              glyph="eye"
-              href="/chat"
-            />
-          </div>
-        </Section>
-
-        {/* Explore all surfaces */}
-        <Section
-          eyebrow="Explore"
-          title="Ways in"
-          action={
-            <Link href="/read" className="btn-secondary px-4 py-2 text-sm">
-              Open the library
+          <div className="start-steps">
+            <Link href={readHref} className="start-step">
+              <div className="start-step__top">
+                <InkGlyph glyph="lotus" state="arising" size="sm" />
+                <span className="start-step__eyebrow">Step 1</span>
+              </div>
+              <h3 className="start-step__title">Read today&apos;s passage</h3>
+              <p className="start-step__body mt-2">Sit with one source and its practice.</p>
             </Link>
-          }
-        >
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {EXPLORE.map((item) => (
-              <OverviewCard
-                key={item.href}
-                title={item.title}
-                body={item.body}
-                glyph={item.glyph}
-                href={item.href}
-                stat="Continue"
-              />
-            ))}
+            <Link href="/learn" className="start-step">
+              <div className="start-step__top">
+                <InkGlyph glyph="labyrinth" state="arising" size="sm" />
+                <span className="start-step__eyebrow">Step 2</span>
+              </div>
+              <h3 className="start-step__title">Follow a Path</h3>
+              <p className="start-step__body mt-2">Descend a tradition gate by gate.</p>
+            </Link>
+            <Link href="/chat" className="start-step">
+              <div className="start-step__top">
+                <InkGlyph glyph="eye" state="arising" size="sm" />
+                <span className="start-step__eyebrow">Step 3</span>
+              </div>
+              <h3 className="start-step__title">Ask Pratibha</h3>
+              <p className="start-step__body mt-2">Question the texts in your own words.</p>
+            </Link>
           </div>
         </Section>
 
-        {/* Secondary prose, tucked behind progressive disclosure */}
         <Disclosure summary="What makes Pratibha different" hint="How it works">
           <p className="soft max-w-2xl text-lg leading-relaxed">
             Move from source to translation, from commentary to practice, and from one
