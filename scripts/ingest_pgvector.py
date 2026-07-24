@@ -266,7 +266,9 @@ def _embedding_client_and_model() -> tuple[AsyncOpenAI, str]:
     openai_key = os.getenv("OPENAI_API_KEY", "").strip()
     model = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small").strip() or "text-embedding-3-small"
     if openai_key:
-        return AsyncOpenAI(api_key=openai_key), model
+        # Pin OpenAI's endpoint so a stray OPENAI_BASE_URL (e.g. pointing at
+        # OpenRouter, which does not serve OpenAI embeddings) can't 401 us.
+        return AsyncOpenAI(api_key=openai_key, base_url="https://api.openai.com/v1"), model
 
     openrouter_key = os.getenv("OPENROUTER_API_KEY", "").strip()
     if openrouter_key:

@@ -205,7 +205,11 @@ _COLLECTION_HINTS = {
 def _embedding_client_and_model() -> tuple[AsyncOpenAI | None, str]:
     model = settings.EMBEDDING_MODEL
     if settings.OPENAI_API_KEY:
-        return AsyncOpenAI(api_key=settings.OPENAI_API_KEY), model
+        # Pin the OpenAI endpoint explicitly. The OpenAI SDK otherwise honours an
+        # OPENAI_BASE_URL env var, and if that points at OpenRouter (common when
+        # OpenRouter is used as an OpenAI-compatible chat proxy) embeddings 401,
+        # because OpenRouter does not serve the OpenAI embeddings endpoint.
+        return AsyncOpenAI(api_key=settings.OPENAI_API_KEY, base_url="https://api.openai.com/v1"), model
     if settings.OPENROUTER_API_KEY:
         headers = {}
         if settings.OPENROUTER_SITE_URL:
