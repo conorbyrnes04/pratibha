@@ -5,16 +5,14 @@
       "substantive": 1081
     },
     "commentary": {
-      "substantive": 1063,
-      "template": 2,
-      "thin": 16
+      "substantive": 1081
     },
     "practice_decisions": {
       "keep": 1081
     },
     "practice_generic_or_empty": 0,
     "practice_reauthor_form": 0,
-    "commentary_to_fix": 18,
+    "commentary_to_fix": 0,
     "converged_collections": {}
   },
   "by_collection": {
@@ -60,8 +58,7 @@
     },
     "mandukya_upanishad_and_gaudapada_karika": {
       "prac_substantive": 16,
-      "comm_substantive": 14,
-      "comm_template": 2
+      "comm_substantive": 16
     },
     "meister_eckhart": {
       "prac_substantive": 12,
@@ -101,8 +98,7 @@
     },
     "siva_sutra": {
       "prac_substantive": 47,
-      "comm_substantive": 32,
-      "comm_thin": 15
+      "comm_substantive": 47
     },
     "svetasvatara_upanishad": {
       "prac_substantive": 22,
@@ -110,8 +106,7 @@
     },
     "tantrasara": {
       "prac_substantive": 19,
-      "comm_substantive": 18,
-      "comm_thin": 1
+      "comm_substantive": 19
     },
     "tao_te_ching": {
       "prac_substantive": 81,
@@ -1619,7 +1614,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": false
+        "formulaic": true
       },
       "commentary": {
         "class": "substantive",
@@ -4478,8 +4473,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "template",
-        "decision": "reauthor"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -4562,8 +4557,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "template",
-        "decision": "reauthor"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -4657,7 +4652,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -4713,7 +4708,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -4727,7 +4722,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -4755,7 +4750,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -4769,7 +4764,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -4811,7 +4806,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -9322,8 +9317,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9336,8 +9331,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9350,8 +9345,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9364,8 +9359,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9378,8 +9373,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9392,8 +9387,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9406,8 +9401,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9784,8 +9779,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9812,8 +9807,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9840,8 +9835,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9896,8 +9891,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9910,8 +9905,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9924,8 +9919,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9938,8 +9933,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -9952,8 +9947,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -10526,8 +10521,8 @@
         "formulaic": false
       },
       "commentary": {
-        "class": "thin",
-        "decision": "review"
+        "class": "substantive",
+        "decision": "keep"
       },
       "grounded": null
     },
@@ -11685,7 +11680,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -11699,7 +11694,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -11727,7 +11722,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -11839,7 +11834,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -11895,7 +11890,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": false
+        "formulaic": true
       },
       "commentary": {
         "class": "substantive",
@@ -11909,7 +11904,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": false
+        "formulaic": true
       },
       "commentary": {
         "class": "substantive",
@@ -12021,7 +12016,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": false
+        "formulaic": true
       },
       "commentary": {
         "class": "substantive",
@@ -12063,7 +12058,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": false
+        "formulaic": true
       },
       "commentary": {
         "class": "substantive",
@@ -12091,7 +12086,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": false
+        "formulaic": true
       },
       "commentary": {
         "class": "substantive",
@@ -12105,7 +12100,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": false
+        "formulaic": true
       },
       "commentary": {
         "class": "substantive",
@@ -12133,7 +12128,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12147,7 +12142,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12161,7 +12156,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12175,7 +12170,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12189,7 +12184,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12203,7 +12198,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12245,7 +12240,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12273,7 +12268,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12287,7 +12282,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12301,7 +12296,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12343,7 +12338,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12357,7 +12352,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12385,7 +12380,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12413,7 +12408,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12427,7 +12422,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12441,7 +12436,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12455,7 +12450,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12469,7 +12464,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12497,7 +12492,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12525,7 +12520,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12539,7 +12534,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12553,7 +12548,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",
@@ -12581,7 +12576,7 @@
       "practice": {
         "class": "substantive",
         "decision": "keep",
-        "formulaic": true
+        "formulaic": false
       },
       "commentary": {
         "class": "substantive",

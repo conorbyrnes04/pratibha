@@ -10,8 +10,36 @@ unit_type: sutra
 sanskrit_devanagari: कलादीनां तत्त्वानामविवेको मायाया
 sanskrit_iast: kalādīnāṁ tattvānām aviveko māyāyāḥ
 translation_literal: Non-discrimination of the principles beginning with limitation is illusion.
-commentary: In Āṇavopāya, error is precise. Māyā operates when limitation (_kalā_ and the rest) is taken
-  as final rather than functional. The practitioner learns to see limitation as a condition, not an identity.
+commentary: 'This sūtra identifies the precise mechanism of bondage in Trika metaphysics: the collapse
+  of discrimination (_viveka_) between the principles of limitation and the self that experiences them.
+  The ''principles beginning with limitation'' (_kalādi tattva_) refer to the five _kañcukas_—kalā (limited
+  agency), vidyā (partial knowledge), rāga (desire), kāla (temporality), and niyati (necessity)—which
+  veil the infinite nature of Śiva-consciousness. These are not errors in themselves; they are structural
+  conditions through which consciousness operates in the bound state. The illusion (_moha_) arises specifically
+  when the practitioner mistakes these functional constraints for ontological identity—when limited agency
+  becomes ''I am only this agent,'' when partial knowledge becomes ''this is all I can know,'' when temporal
+  succession becomes ''I am a creature in time.'' The Āṇavopāya (the path of individual effort within
+  Śiva''s grace) makes this discrimination its central work. The practitioner must learn to recognize
+  each _kañcuka_ as a superimposed condition rather than an inherent property of the Self. This is not
+  rejection of the principles—they remain operative in manifestation—but a shift in perspective: from
+  identification to observation, from essential claim to functional role. The restoration of _viveka_
+  (discrimination) is simultaneously the recognition that these principles never actually bound the infinite
+  subject; they only appeared to do so through non-recognition. The sūtra thus points to the precise locus
+  where spiritual ignorance operates: not in the existence of limitation itself, but in the reification
+  of limitation into identity.
+
+
+  Key Terms
+
+
+  **viveka** — Discrimination; the capacity to distinguish between the Self and its conditions, or between
+  consciousness and the principles that veil it
+
+  **kañcuka** — Veiling principle; one of five sheaths (kalā, vidyā, rāga, kāla, niyati) that limit Śiva''s
+  infinite nature in the bound state
+
+  **Āṇavopāya** — The path of individual effort; the spiritual practice of the bound individual working
+  within grace to restore recognition of their Śiva-nature'
 insight: In Āṇavopāya, error is precise.
 practice: Whenever you encounter a limit today—a "no," a boundary, a lack, a rule—pause and whisper "functional,
   not final" while feeling the constraint loosen slightly in your body. Return to this phrase each time
@@ -32,55 +60,6 @@ tags:
 quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
-pratibha_layers:
-- kind: original
-  label: Original
-  body: कलादीनां तत्त्वानामविवेको मायाया
-- kind: iast
-  label: IAST
-  body: kalādīnāṁ tattvānām aviveko māyāyāḥ
-- kind: translation
-  label: Pratibha Translation
-  body: Non-discrimination of the principles beginning with limitation is illusion.
-- kind: commentary
-  label: Pratibha Commentary
-  body: In Āṇavopāya, error is precise. Māyā operates when limitation (_kalā_ and the rest) is taken as
-    final rather than functional. The practitioner learns to see limitation as a condition, not an identity.
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: kalā
-    definition: limiting power
-  - term: aviveka
-    definition: non-discrimination
-  - term: māyā
-    definition: misapprehension
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Pratyabhijnahrdayam — Sutra 6
-    resonance: 'Both texts identify illusion (māyā/aviveka) as a contraction or limitation of consciousness:
-      the Siva Sutra locates error in non-discrimination of the principles *beginning with limitation*
-      (kala), while Pratyabhijnahrdayam 6 defines the limited experient as one *ruled by Māyā* and characterized
-      by *contracted mind*. Each makes limitation itself the mechanism of illusion.'
-    divergence: The Siva Sutra emphasizes epistemic failure (aviveka, non-discrimination) as the root,
-      whereas Pratyabhijnahrdayam emphasizes ontological contraction of consciousness (cittasankoca) as
-      the defining feature of the bound state.
-    passage_id: pratyabhijnahrdayam.phr_006
-  - citation: Svetasvatara Upanishad — Māyā Is Dependence, Not a Second Reality
-    resonance: 'Both texts present illusion as a projection or constraint imposed by a cosmic principle:
-      the Siva Sutra''s non-discrimination of limiting principles generates illusion, while the Svetasvatara
-      describes māyā as the mechanism by which the Maker projects the world and constrains the individual
-      within it. Each locates illusion in a structural dependence on a limiting power.'
-    divergence: The Siva Sutra treats illusion as arising from cognitive error (aviveka) within Āṇavopāya
-      practice, whereas the Svetasvatara presents māyā as an ontological cosmic force that structures
-      reality itself, independent of individual discrimination.
-    passage_id: svetasvatara_upanishad.svu_002
-  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -94,3 +73,4 @@ abhyasa: Whenever you encounter a limit today—a "no," a boundary, a lack, a ru
   not final" while feeling the constraint loosen slightly in your body. Return to this phrase each time
   limitation tightens around you, letting it shift from a wall into a lens.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+commentary_provenance: Study commentary authored from the passage.

@@ -10,8 +10,43 @@ unit_type: sutra
 sanskrit_devanagari: ज्ञानं अन्नम्
 sanskrit_iast: jñānam annam
 translation_literal: Knowledge is nourishment.
-commentary: Understanding must now feed life rather than inflate identity. Knowledge that cannot be digested
-  becomes excess. Knowledge that nourishes strengthens clarity, compassion, and stability.
+commentary: 'This aphorism marks a crucial turn in Trika praxis: the distinction between jñāna as abstract
+  acquisition and jñāna as lived embodiment. In the Śākta framework, knowledge divorced from the body''s
+  capacity to metabolize it remains inert, a mere conceptual accumulation that obscures rather than illuminates
+  the non-dual recognition (pratyabhijñā) at the heart of practice. The verse asserts that authentic jñāna
+  must undergo a transformation analogous to digestion—it must be broken down, assimilated into the subtle
+  body''s energy channels (nāḍī), and converted into the vital force (prāṇa) that sustains both spiritual
+  clarity and embodied presence.
+
+
+  The Trika teaching here resists a common pitfall: the inflation of the ego through intellectual mastery
+  of doctrine. A practitioner may accumulate scriptural knowledge, memorize philosophical positions, even
+  articulate non-duality flawlessly—yet remain unmoved, unchanged, trapped in the vasanas (latent impressions)
+  that bind consciousness to limited identity. Such undigested knowledge becomes toxic excess, a blockage
+  in the subtle body''s flow.
+
+
+  By contrast, knowledge that is truly nourishing has been tested in meditation, integrated through the
+  body''s own wisdom (the Śakti''s knowing), and made available to perception and action. It strengthens
+  the three pillars of mature practice: clarity (the discriminative power to recognize consciousness in
+  all states), compassion (the natural overflow when the heart recognizes itself in all beings), and stability
+  (the unshakeable ground of non-dual awareness that persists through all conditions). This digestion
+  is not metaphorical; in Trika, the body is the laboratory where consciousness recognizes itself through
+  its own energy. Knowledge becomes nourishment when it feeds this recognition at every level—gross, subtle,
+  and transcendent.
+
+
+  Key Terms
+
+
+  **jñāna** — Liberating knowledge or direct recognition of non-dual consciousness; in Trika, distinguished
+  from mere intellectual understanding (parokṣa-jñāna) by its immediate, embodied realization (aparokṣa-jñāna)
+
+  **pratyabhijñā** — Recognition or recollection; the Trika''s central insight that consciousness recognizes
+  itself as the ground of all experience, free from subject-object duality
+
+  **Śakti** — The dynamic, conscious energy or power of manifestation; in Trika, inseparable from Śiva
+  and the means by which transcendent awareness becomes embodied and knowable'
 insight: Understanding must now feed life rather than inflate identity.
 practice: 'Before your next meal, pause and ask: What have I learned recently that I have not yet lived?
   Chew slowly enough that you taste nourishment rather than speed, letting each bite remind you that understanding,
@@ -30,52 +65,6 @@ tags:
 quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
-pratibha_layers:
-- kind: original
-  label: Original
-  body: ज्ञानं अन्नम्
-- kind: iast
-  label: IAST
-  body: jñānam annam
-- kind: translation
-  label: Pratibha Translation
-  body: Knowledge is nourishment.
-- kind: commentary
-  label: Pratibha Commentary
-  body: Understanding must now feed life rather than inflate identity. Knowledge that cannot be digested
-    becomes excess. Knowledge that nourishes strengthens clarity, compassion, and stability.
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: jñāna
-    definition: understanding
-  - term: anna
-    definition: food, nourishment
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
-    resonance: 'Both texts present knowledge as a transformative unification rather than accumulation:
-      the Chāndogya instructs that understanding ''all things are essentially one'' dissolves the subject-object
-      divide, while the Siva Sutra''s ''knowledge is nourishment'' reframes jñāna from abstract possession
-      into lived sustenance that integrates knower and known.'
-    divergence: The Chāndogya emphasizes epistemological method (hearing the inaudible through non-dual
-      perception), while the Siva Sutra emphasizes the ethical-existential consequence (knowledge must
-      feed life, not ego).
-    passage_id: chāndogya_upaniṣad.chu_vi_01
-  - citation: The Book of Chuang Tzu — chapter 19
-    resonance: 'Both texts measure knowledge by its practical integration into living rather than by its
-      theoretical scope: the Chuang Tzu''s sage ''devotes no attention to things which life cannot accomplish''
-      mirrors the Siva Sutra''s insistence that understanding must ''feed life rather than inflate identity''—knowledge
-      proves itself through what it enables, not what it claims.'
-    divergence: The Chuang Tzu operates through negation and non-action (wu-wei), while the Siva Sutra
-      operates through affirmation and embodied nourishment (anna as both literal and metaphorical sustenance).
-    passage_id: the_book_of_chuang_tzu.ctz_019
-  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -89,3 +78,4 @@ abhyasa: 'Before your next meal, pause and ask: What have I learned recently tha
   Chew slowly enough that you taste nourishment rather than speed, letting each bite remind you that understanding,
   like food, must be received into the body to matter.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+commentary_provenance: Study commentary authored from the passage.
