@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import type { JournalNote, VerseItem } from "@/lib/types";
+import { useAuth } from "@/components/AuthProvider";
+import { deleteJournalNoteRemote, pushJournalNote } from "@/lib/journalCloud";
 import { deleteJournalNote, notesForPassage, upsertJournalNote } from "@/lib/journalStorage";
 import { practiceText } from "@/lib/verseLayers";
 
@@ -29,6 +31,7 @@ function defaultPrompt(props: JournalPanelProps): string {
 }
 
 export function JournalPanel(props: JournalPanelProps) {
+  const { user } = useAuth();
   const key = storageKey(props);
   const prompt = defaultPrompt(props);
   const [notes, setNotes] = useState<JournalNote[]>([]);
@@ -47,22 +50,23 @@ export function JournalPanel(props: JournalPanelProps) {
   function save() {
     const clean = body.trim();
     if (!clean) return;
-    if ("passage" in props) {
-      upsertJournalNote({ passage: props.passage, body: clean, prompt });
-    } else {
-      upsertJournalNote({
-        contextId: props.contextId,
-        contextTitle: props.contextTitle,
-        body: clean,
-        prompt,
-      });
-    }
+    const note =
+      "passage" in props
+        ? upsertJournalNote({ passage: props.passage, body: clean, prompt })
+        : upsertJournalNote({
+            contextId: props.contextId,
+            contextTitle: props.contextTitle,
+            body: clean,
+            prompt,
+          });
+    if (user) void pushJournalNote(note, user.id);
     setBody("");
     refresh();
   }
 
   function remove(id: string) {
     deleteJournalNote(id);
+    if (user) void deleteJournalNoteRemote(id);
     refresh();
   }
 

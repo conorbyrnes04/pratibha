@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { askChatStream, getCollections, getVerse, getVerses } from "@/lib/api";
+import { useAuth } from "@/components/AuthProvider";
+import { pushJournalNote } from "@/lib/journalCloud";
 import { saveChatResponse } from "@/lib/journalStorage";
 import type { ChatMode, PratibhaLayerKind, Source, VerseItem } from "@/lib/types";
 import { FilterSelect } from "@/components/FilterSelect";
@@ -29,6 +31,7 @@ function sourcePassageLabel(metadata?: Record<string, unknown>): string {
 }
 
 export default function ChatPage() {
+  const { user } = useAuth();
   const [q, setQ] = useState("");
   const [useRag, setUseRag] = useState(true);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -170,12 +173,13 @@ export default function ChatPage() {
   function saveReply(index: number, content: string) {
     const question =
       index > 0 && messages[index - 1]?.role === "user" ? messages[index - 1].content : "";
-    saveChatResponse({
+    const note = saveChatResponse({
       answer: content,
       question,
       verse: pinnedVerse,
       chatMode,
     });
+    if (user) void pushJournalNote(note, user.id);
     setSavedReplies((prev) => new Set(prev).add(index));
   }
 

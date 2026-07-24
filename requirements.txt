@@ -9,6 +9,9 @@ pydantic==2.8.2
 pydantic-settings==2.3.4
 pytz==2024.1
 
+# Auth (Supabase JWT verification)
+PyJWT[crypto]==2.9.0
+
 # LLM + RAG
 langchain==0.2.14
 openai==1.43.0

@@ -49,6 +49,11 @@ services:
       # Shared secret for /admin/corpus-status (X-Admin-Token header).
       - key: ADMIN_TOKEN
         sync: false
+      # Supabase Auth JWT secret (Project Settings → API). Enables GET /me.
+      - key: SUPABASE_JWT_SECRET
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
 
 databases:
   - name: pratibha-db

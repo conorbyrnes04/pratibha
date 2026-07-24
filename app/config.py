@@ -46,6 +46,11 @@ class Settings(BaseSettings):
     # endpoints typically need. Internal/private networking can leave this off.
     PG_SSL: bool = False
 
+    # Supabase Auth — JWT secret from Project Settings → API (legacy HS256 secret).
+    # Required for /me and other Bearer-protected routes.
+    SUPABASE_URL: str | None = None
+    SUPABASE_JWT_SECRET: str | None = None
+
     @field_validator("OPENAI_API_KEY", "GROQ_API_KEY", "OPENROUTER_API_KEY", mode="before")
     @classmethod
     def normalize_keys(cls, v):

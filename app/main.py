@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, field_validator
@@ -20,6 +20,7 @@ from .chat_voice import (
     SOURCE_GROUNDING,
 )
 from .voice_examples import is_death_topic, select_few_shots
+from .auth import AuthUser, require_user
 from .config import settings
 from .llm import smart_chat, smart_chat_stream
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, retrieve_related_unit_ids, detected_collections
@@ -117,8 +118,15 @@ async def health():
             "database_url": bool((settings.DATABASE_URL or "").strip()),
             "pg_host": settings.PG_HOST or "",
             "chat_provider": settings.chat_provider(),
+            "supabase_auth": bool((settings.SUPABASE_URL or "").strip() or (settings.SUPABASE_JWT_SECRET or "").strip()),
         },
     }
+
+
+@app.get("/me")
+async def me(user: AuthUser = Depends(require_user)):
+    """Return the signed-in Supabase user (Authorization: Bearer <access_token>)."""
+    return {"id": user.id, "email": user.email}
 
 
 def _cached_item_count() -> int:

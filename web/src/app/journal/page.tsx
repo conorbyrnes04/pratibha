@@ -3,11 +3,15 @@
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { JournalNote } from "@/lib/types";
+import { useAuth } from "@/components/AuthProvider";
+import { deleteJournalNoteRemote, syncJournalWithCloud } from "@/lib/journalCloud";
 import { deleteJournalNote, journalSourceHref, loadJournalNotes, saveJournalNotes } from "@/lib/journalStorage";
 
 export default function JournalPage() {
+  const { user, loading: authLoading } = useAuth();
   const [notes, setNotes] = useState<JournalNote[]>([]);
   const [q, setQ] = useState("");
+  const [syncState, setSyncState] = useState<"idle" | "syncing" | "synced" | "local">("idle");
   const fileRef = useRef<HTMLInputElement>(null);
 
   function refresh() {
@@ -17,6 +21,24 @@ export default function JournalPage() {
   useEffect(() => {
     refresh();
   }, []);
+
+  useEffect(() => {
+    if (authLoading) return;
+    if (!user) {
+      setSyncState("local");
+      return;
+    }
+    let active = true;
+    setSyncState("syncing");
+    void syncJournalWithCloud(user.id).then((merged) => {
+      if (!active) return;
+      setNotes(merged.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)));
+      setSyncState("synced");
+    });
+    return () => {
+      active = false;
+    };
+  }, [user, authLoading]);
 
   function exportNotes() {
     const blob = new Blob([JSON.stringify(loadJournalNotes(), null, 2)], { type: "application/json" });
@@ -51,6 +73,7 @@ export default function JournalPage() {
 
   function remove(id: string) {
     deleteJournalNote(id);
+    if (user) void deleteJournalNoteRemote(id);
     refresh();
   }
 
@@ -66,8 +89,15 @@ export default function JournalPage() {
         <p className="eyebrow">Personal study memory</p>
         <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Journal</h1>
         <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
-          Saved reflections stay local in this browser, linked to their source passages.
+          {user
+            ? "Signed in — notes sync to your account and stay cached in this browser."
+            : "Saved reflections stay in this browser. Sign in to sync them across devices."}
         </p>
+        {!user && !authLoading ? (
+          <Link href="/login?next=/journal" className="btn-secondary mt-4 inline-flex px-4 py-2 text-sm">
+            Sign in to sync
+          </Link>
+        ) : null}
       </header>
 
       <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -98,7 +128,11 @@ export default function JournalPage() {
         </div>
       </div>
       <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-500">
-        Notes aren&apos;t synced — export a backup so you don&apos;t lose them if you clear your browser or switch devices.
+        {syncState === "syncing"
+          ? "Syncing journal with your account…"
+          : syncState === "synced"
+            ? "Synced with your account. Export still makes a handy local backup."
+            : "On this device only until you sign in. Export a backup if you clear the browser."}
       </p>
 
       <div className="mt-8 space-y-4">
