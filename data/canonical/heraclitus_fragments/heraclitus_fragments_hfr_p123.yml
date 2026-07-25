@@ -20,13 +20,14 @@ themes:
 - harmony
 source_excerpt: And those that are there shall arise and become guardians of the living and the dead.”
 translation_literal: And those that are there shall arise and become guardians of the living and the dead.”
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 123 (Bywater Greek). Corpus index HFR_P123 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 123
+  (Bywater Greek). Corpus index HFR_P123 follows the Diels–Kranz-style numbering used in the Pratibha
+  pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: Ἔνθαδε ἐόντας ἐπανίστασθαι καὶ φύλακας γίνεσθαι ἐγερτὶ ζώντων καὶ νεκρῶν.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -54,35 +55,38 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 123 (Bywater Greek). Corpus index HFR_P123 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 123
+    (Bywater Greek). Corpus index HFR_P123 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts compress a cosmological principle into the dynamics of breath as a guardian force: Heraclitus positions
-      breath as the sentinel between living and dead (states of being), while Vijnana Bhairava Yukti #1 articulates prāṇa
-      and jīva as the Supreme Goddess''s constant oscillation between exhalation (rising) and inhalation (descent into embodiment)—each
-      breath a threshold between transcendent and manifest.'
-    divergence: Heraclitus treats breath as an aphoristic paradox about cosmic order and mortality; the Tantric tradition
-      systematizes breath as the direct phenomenological access to divine creative pulsation (spanda), making it a yogic technology
-      rather than a metaphysical riddle.
+    resonance: 'Both texts compress a cosmological principle into the dynamics of breath as a guardian
+      force: Heraclitus positions breath as the sentinel between living and dead (states of being), while
+      Vijnana Bhairava Yukti #1 articulates prāṇa and jīva as the Supreme Goddess''s constant oscillation
+      between exhalation (rising) and inhalation (descent into embodiment)—each breath a threshold between
+      transcendent and manifest.'
+    divergence: Heraclitus treats breath as an aphoristic paradox about cosmic order and mortality; the
+      Tantric tradition systematizes breath as the direct phenomenological access to divine creative pulsation
+      (spanda), making it a yogic technology rather than a metaphysical riddle.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both passages invoke breath as the mediating substance between mortal and immortal realms: Heraclitus''s guardians
-      of living and dead operate through breath''s liminal function, while Isavasya Upanishad 17 explicitly returns breath
-      to immortal air as the body dissolves to ashes—breath as the vehicle of transition.'
-    divergence: Heraclitus emphasizes breath's active guardianship of both states simultaneously (paradox), whereas Isavasya
-      frames breath's return as a sequential release from embodiment into the eternal, privileging transcendence over paradoxical
-      simultaneity.
+    resonance: 'Both passages invoke breath as the mediating substance between mortal and immortal realms:
+      Heraclitus''s guardians of living and dead operate through breath''s liminal function, while Isavasya
+      Upanishad 17 explicitly returns breath to immortal air as the body dissolves to ashes—breath as
+      the vehicle of transition.'
+    divergence: Heraclitus emphasizes breath's active guardianship of both states simultaneously (paradox),
+      whereas Isavasya frames breath's return as a sequential release from embodiment into the eternal,
+      privileging transcendence over paradoxical simultaneity.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 appendixes: []
@@ -92,3 +96,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P123
   source_reference: Patrick (1889), frag. 123; corpus HFR_P123
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

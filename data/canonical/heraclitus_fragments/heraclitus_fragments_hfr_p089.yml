@@ -16,13 +16,13 @@ themes:
 - silence
 source_excerpt: In thirty years aman may become a grandfather.
 translation_literal: In thirty years aman may become a grandfather.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 89 (Bywater Greek). Corpus index HFR_P089 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 89 (Bywater
+  Greek). Corpus index HFR_P089 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -43,33 +43,37 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 89 (Bywater Greek). Corpus index HFR_P089 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 89
+    (Bywater Greek). Corpus index HFR_P089 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Patañjali Yoga Sūtras 3.15
-    resonance: 'Both texts compress temporal transformation into a single structural principle: Heraclitus embeds cosmological
-      flux in the generational cycle (grandfather in thirty years), while Patañjali grounds successive transformations in
-      the succession of phases themselves—time as the engine of metamorphosis.'
-    divergence: Heraclitus presents transformation as paradoxical and aphoristic (a riddle of human finitude), whereas Patañjali
-      systematizes it as a logical law of phenomenal succession within a yogic epistemology.
+    resonance: 'Both texts compress temporal transformation into a single structural principle: Heraclitus
+      embeds cosmological flux in the generational cycle (grandfather in thirty years), while Patañjali
+      grounds successive transformations in the succession of phases themselves—time as the engine of
+      metamorphosis.'
+    divergence: Heraclitus presents transformation as paradoxical and aphoristic (a riddle of human finitude),
+      whereas Patañjali systematizes it as a logical law of phenomenal succession within a yogic epistemology.
     passage_id: patañjali_yoga_sūtras.ys_3_15
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts locate the fundamental principle of becoming in breath or vital flow: Heraclitus''s compressed
-      image of generational time mirrors the Vijnana Bhairava''s articulation of prāṇa and jīva as the constant oscillation
-      between exhalation and inhalation—the basic rhythm that generates embodied existence.'
-    divergence: Heraclitus treats breath implicitly through the paradox of human aging, while Vijnana Bhairava makes breath
-      (prāṇa) the explicit cosmological mechanism through which the Goddess articulates reality.
+    resonance: 'Both texts locate the fundamental principle of becoming in breath or vital flow: Heraclitus''s
+      compressed image of generational time mirrors the Vijnana Bhairava''s articulation of prāṇa and
+      jīva as the constant oscillation between exhalation and inhalation—the basic rhythm that generates
+      embodied existence.'
+    divergence: Heraclitus treats breath implicitly through the paradox of human aging, while Vijnana
+      Bhairava makes breath (prāṇa) the explicit cosmological mechanism through which the Goddess articulates
+      reality.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -78,3 +82,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P089
   source_reference: Patrick (1889), frag. 89; corpus HFR_P089
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

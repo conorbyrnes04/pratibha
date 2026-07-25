@@ -7,20 +7,20 @@ unit_id: heraclitus_fragments.hfr_p067
 unit_label: There awaits men after death what they neither hope nor think.
 title: Death Exposes What Opinion Conceals
 unit_type: teaching_passage
-thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
-  things.'
+thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
+  that governs all things.'
 themes:
 - breath
 - death
 source_excerpt: There awaits men after death what they neither hope nor think.
 translation_literal: There awaits people after death what they neither hope nor think.
-commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs
-  all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
-  Anchor: George T.W. Patrick (1889), fragment 67 (Bywater Greek). Corpus index HFR_P067 follows the Diels–Kranz-style numbering
-  used in the Pratibha pilot batch.'
+commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
+  that governs all things. Mortality intensifies the question — finite life must choose whether to hear
+  the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889), fragment 67 (Bywater Greek).
+  Corpus index HFR_P067 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -38,33 +38,34 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
-    things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
-    Anchor: George T.W. Patrick (1889), fragment 67 (Bywater Greek). Corpus index HFR_P067 follows the Diels–Kranz-style numbering
-    used in the Pratibha pilot batch.'
+  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
+    that governs all things. Mortality intensifies the question — finite life must choose whether to hear
+    the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889), fragment 67 (Bywater Greek).
+    Corpus index HFR_P067 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: The Book of Chuang Tzu — chapter 8
-    resonance: 'Both texts displace personal expectation and hope as the measure of what is real or true: Heraclitus says
-      death brings what mortals ''neither hope nor think,'' while Chuang Tzu''s true persons ''do not glorify success'' and
-      refuse to construct identity through desire. Each makes ethical alignment depend on releasing the ego''s anticipatory
-      frame.'
-    divergence: Heraclitus grounds this displacement in a cosmic measure (logos) that governs all things; Chuang Tzu grounds
-      it in spontaneous non-action (wu wei) that flows with the Way's own emptiness.
+    resonance: 'Both texts displace personal expectation and hope as the measure of what is real or true:
+      Heraclitus says death brings what mortals ''neither hope nor think,'' while Chuang Tzu''s true persons
+      ''do not glorify success'' and refuse to construct identity through desire. Each makes ethical alignment
+      depend on releasing the ego''s anticipatory frame.'
+    divergence: Heraclitus grounds this displacement in a cosmic measure (logos) that governs all things;
+      Chuang Tzu grounds it in spontaneous non-action (wu wei) that flows with the Way's own emptiness.
     passage_id: the_book_of_chuang_tzu.ctz_008
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both passages mark death as a dissolution where individual breath returns to a universal element: Heraclitus
-      implies breath rejoins the cosmic order that exceeds mortal hope, while the Isavasya Upanishad explicitly returns breath
-      to ''immortal air'' and body to ashes. Each treats death as reintegration into what transcends the personal.'
-    divergence: Heraclitus emphasizes the ethical shock of what exceeds expectation; the Upanishad emphasizes the metaphysical
-      continuity of the immortal element itself.
+    resonance: 'Both passages mark death as a dissolution where individual breath returns to a universal
+      element: Heraclitus implies breath rejoins the cosmic order that exceeds mortal hope, while the
+      Isavasya Upanishad explicitly returns breath to ''immortal air'' and body to ashes. Each treats
+      death as reintegration into what transcends the personal.'
+    divergence: Heraclitus emphasizes the ethical shock of what exceeds expectation; the Upanishad emphasizes
+      the metaphysical continuity of the immortal element itself.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 - kind: appendix
@@ -79,3 +80,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P067
   source_reference: Patrick (1889), frag. 67; corpus HFR_P067
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

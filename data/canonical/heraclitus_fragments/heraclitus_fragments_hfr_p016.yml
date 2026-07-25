@@ -10,18 +10,19 @@ unit_type: teaching_passage
 thesis: The 'one' is not mystical fusion but the single intelligible order within apparent plurality.
 themes:
 - breath
-source_excerpt: Much learning does not teach one to have understanding, else it would have taught Hesiod and Pythagoras, and
-  again Xenophanes and Hecataeus.
-translation_literal: Much learning does not teach one to have understanding, else it would have taught Hesiod and Pythagoras,
-  and again Xenophanes and Hecataeus.
-commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that
-  all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
-  it. Anchor: George T.W. Patrick (1889), fragment 16 (Bywater Greek). Corpus index HFR_P016 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: Much learning does not teach one to have understanding, else it would have taught Hesiod
+  and Pythagoras, and again Xenophanes and Hecataeus.
+translation_literal: Much learning does not teach one to have understanding, else it would have taught
+  Hesiod and Pythagoras, and again Xenophanes and Hecataeus.
+commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
+  To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
+  the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 16 (Bywater
+  Greek). Corpus index HFR_P016 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
-sanskrit_devanagari: Πολυμαθίη νόον ἔχειν οὐ διδάσκει· Ἡσίοδον γὰρ ἂν ἐδίδαξε καὶ Πυθαγόρην αὖτις τε Ξενοφάνεα καὶ Ἑκαταῖον.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
+sanskrit_devanagari: Πολυμαθίη νόον ἔχειν οὐ διδάσκει· Ἡσίοδον γὰρ ἂν ἐδίδαξε καὶ Πυθαγόρην αὖτις τε Ξενοφάνεα
+  καὶ Ἑκαταῖον.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
@@ -32,42 +33,45 @@ editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
-  body: Πολυμαθίη νόον ἔχειν οὐ διδάσκει· Ἡσίοδον γὰρ ἂν ἐδίδαξε καὶ Πυθαγόρην αὖτις τε Ξενοφάνεα καὶ Ἑκαταῖον.
+  body: Πολυμαθίη νόον ἔχειν οὐ διδάσκει· Ἡσίοδον γὰρ ἂν ἐδίδαξε καὶ Πυθαγόρην αὖτις τε Ξενοφάνεα καὶ
+    Ἑκαταῖον.
   layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: Much learning does not teach one to have understanding, else it would have taught Hesiod and Pythagoras, and again
-    Xenophanes and Hecataeus.
+  body: Much learning does not teach one to have understanding, else it would have taught Hesiod and Pythagoras,
+    and again Xenophanes and Hecataeus.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all
-    things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
-    it. Anchor: George T.W. Patrick (1889), fragment 16 (Bywater Greek). Corpus index HFR_P016 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
+    To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
+    the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 16 (Bywater
+    Greek). Corpus index HFR_P016 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: Both texts reject accumulation of mere learning as a path to understanding; instead, they posit a single intelligible
-      order (Heraclitus's 'one') or two-fold dependency (Nagarjuna's conventional-ultimate) that cannot be grasped through
-      collection of doctrines alone but requires a structural insight into how apparent multiplicity relates to unified principle.
-    divergence: Heraclitus locates the 'one' as immanent logos within nature and breath; Nagarjuna frames it as a logical
-      interdependence between two truths, with nirvāṇa as the goal rather than natural intelligibility.
+    resonance: Both texts reject accumulation of mere learning as a path to understanding; instead, they
+      posit a single intelligible order (Heraclitus's 'one') or two-fold dependency (Nagarjuna's conventional-ultimate)
+      that cannot be grasped through collection of doctrines alone but requires a structural insight into
+      how apparent multiplicity relates to unified principle.
+    divergence: Heraclitus locates the 'one' as immanent logos within nature and breath; Nagarjuna frames
+      it as a logical interdependence between two truths, with nirvāṇa as the goal rather than natural
+      intelligibility.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: Patañjali Yoga Sūtras 1.49
-    resonance: Both distinguish between knowledge derived from external accumulation (hearing, inference, learning) and direct
-      knowledge of the unified principle; the move is to show that quantity of learning does not yield the qualitative shift
-      needed to grasp particulars in their true intelligible form.
-    divergence: Patañjali grounds this distinction in yogic epistemology where direct perception of subtle objects supersedes
-      inference; Heraclitus grounds it in the logos as a natural principle accessible through contemplation rather than systematic
-      study.
+    resonance: Both distinguish between knowledge derived from external accumulation (hearing, inference,
+      learning) and direct knowledge of the unified principle; the move is to show that quantity of learning
+      does not yield the qualitative shift needed to grasp particulars in their true intelligible form.
+    divergence: Patañjali grounds this distinction in yogic epistemology where direct perception of subtle
+      objects supersedes inference; Heraclitus grounds it in the logos as a natural principle accessible
+      through contemplation rather than systematic study.
     passage_id: patañjali_yoga_sūtras.ys_1_49
   layer_provenance: generated_grounded
 appendixes: []
@@ -77,3 +81,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P016
   source_reference: Patrick (1889), frag. 16; corpus HFR_P016
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

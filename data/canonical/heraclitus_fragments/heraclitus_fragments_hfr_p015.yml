@@ -16,19 +16,21 @@ themes:
 - knowledge
 - truth
 - mind
-source_excerpt: The eyes are more exact witnesses than the ears.* thousand years, because of the God. And Pindar saysthat
-  Cadmus heard from the God a kind of music neither pleasant nor soft nor melodious. For great holiness permits not the allurements
-  of pleasures. See also pseudo-Heraclitus, Epist. viii. ¥ XIII.—
-translation_literal: The eyes are more exact witnesses than the ears.* thousand years, because of the God. And Pindar saysthat
-  Cadmus heard from the God a kind of music neither pleasant nor soft nor melodious. For great holiness permits not the allurements
-  of pleasures. See also pseudo-Heraclitus, Epist. viii. ¥ XIII.—
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 15 (Bywater Greek). Corpus index HFR_P015 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: The eyes are more exact witnesses than the ears.* thousand years, because of the God.
+  And Pindar saysthat Cadmus heard from the God a kind of music neither pleasant nor soft nor melodious.
+  For great holiness permits not the allurements of pleasures. See also pseudo-Heraclitus, Epist. viii.
+  ¥ XIII.—
+translation_literal: The eyes are more exact witnesses than the ears.* thousand years, because of the
+  God. And Pindar saysthat Cadmus heard from the God a kind of music neither pleasant nor soft nor melodious.
+  For great holiness permits not the allurements of pleasures. See also pseudo-Heraclitus, Epist. viii.
+  ¥ XIII.—
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 15 (Bywater
+  Greek). Corpus index HFR_P015 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
-  rests on. Can you hear the claim, not only think it?
+practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
+  experience it actually rests on. Can you hear the claim, not only think it?
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -47,49 +49,54 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: The eyes are more exact witnesses than the ears.* thousand years, because of the God. And Pindar saysthat Cadmus heard
-    from the God a kind of music neither pleasant nor soft nor melodious. For great holiness permits not the allurements of
-    pleasures. See also pseudo-Heraclitus, Epist. viii. ¥ XIII.—
+  body: The eyes are more exact witnesses than the ears.* thousand years, because of the God. And Pindar
+    saysthat Cadmus heard from the God a kind of music neither pleasant nor soft nor melodious. For great
+    holiness permits not the allurements of pleasures. See also pseudo-Heraclitus, Epist. viii. ¥ XIII.—
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 15 (Bywater Greek). Corpus index HFR_P015 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 15
+    (Bywater Greek). Corpus index HFR_P015 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Bhagavad Gita — Field and Knower: The Anatomy of Liberation'
-    resonance: 'Both texts establish a hierarchy of knowing by distinguishing the instrument of perception from what is perceived:
-      Heraclitus privileges the eye as a more exact witness than the ear (sensory discrimination), while the Bhagavad Gita
-      distinguishes the field (observed contents) from the knower of the field (the observing principle). Each makes a structural
-      claim about which faculty or principle yields truer knowledge.'
-    divergence: Heraclitus ranks sensory modalities within empirical perception, whereas the Gita separates the entire phenomenal
-      field from a transcendent witnessing consciousness; Heraclitus remains epistemological, the Gita metaphysical and soteriological.
+    resonance: 'Both texts establish a hierarchy of knowing by distinguishing the instrument of perception
+      from what is perceived: Heraclitus privileges the eye as a more exact witness than the ear (sensory
+      discrimination), while the Bhagavad Gita distinguishes the field (observed contents) from the knower
+      of the field (the observing principle). Each makes a structural claim about which faculty or principle
+      yields truer knowledge.'
+    divergence: Heraclitus ranks sensory modalities within empirical perception, whereas the Gita separates
+      the entire phenomenal field from a transcendent witnessing consciousness; Heraclitus remains epistemological,
+      the Gita metaphysical and soteriological.
     passage_id: bhagavad_gita.bg_md_010
   - citation: Patañjali Yoga Sūtras 1.7
-    resonance: 'Both texts establish a taxonomy of valid knowledge-sources: Heraclitus implicitly ranks direct sensory witness
-      (the eye) above indirect report (the ear), while Patañjali explicitly lists direct cognition (pratyakṣa) as the first
-      of three valid means of knowledge. Each privileges immediate perception as the most reliable epistemic ground.'
-    divergence: Heraclitus makes a comparative claim about sensory modalities alone, while Patañjali systematically includes
-      inference and testimony as legitimate alternatives; Heraclitus is aphoristic and paradoxical, Patañjali is systematic
-      and inclusive.
+    resonance: 'Both texts establish a taxonomy of valid knowledge-sources: Heraclitus implicitly ranks
+      direct sensory witness (the eye) above indirect report (the ear), while Patañjali explicitly lists
+      direct cognition (pratyakṣa) as the first of three valid means of knowledge. Each privileges immediate
+      perception as the most reliable epistemic ground.'
+    divergence: Heraclitus makes a comparative claim about sensory modalities alone, while Patañjali systematically
+      includes inference and testimony as legitimate alternatives; Heraclitus is aphoristic and paradoxical,
+      Patañjali is systematic and inclusive.
     passage_id: patañjali_yoga_sūtras.ys_1_07
   layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
-  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
-    rests on. Can you hear the claim, not only think it?
+  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
+    experience it actually rests on. Can you hear the claim, not only think it?
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: Logos (λόγος)
-    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
-      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
-      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern
+      according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s
+      ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible
+      speech).'
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -98,3 +105,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P015
   source_reference: Patrick (1889), frag. 15; corpus HFR_P015
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

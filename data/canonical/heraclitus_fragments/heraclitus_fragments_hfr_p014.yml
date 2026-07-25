@@ -15,22 +15,24 @@ themes:
 - truth
 - silence
 - ignorance
-source_excerpt: Polybius iv. 40. Especially at the present time, when all places are accessible either by land or by water,
-  we should not accept poets and mythologists as witnesses of things that are unknown, since for the most part they furnish
-  us with unreliable testimony about disputed things, according to Heraclitus.
-translation_literal: Polybius iv. 40. Especially at the present time, when all places are accessible either by land or by
-  water, we should not accept poets and mythologists as witnesses of things that are unknown, since for the most part they
-  furnish us with unreliable testimony about disputed things, according to Heraclitus.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 14 (Bywater Greek). Corpus index HFR_P014 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: Polybius iv. 40. Especially at the present time, when all places are accessible either
+  by land or by water, we should not accept poets and mythologists as witnesses of things that are unknown,
+  since for the most part they furnish us with unreliable testimony about disputed things, according to
+  Heraclitus.
+translation_literal: Polybius iv. 40. Especially at the present time, when all places are accessible either
+  by land or by water, we should not accept poets and mythologists as witnesses of things that are unknown,
+  since for the most part they furnish us with unreliable testimony about disputed things, according to
+  Heraclitus.
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 14 (Bywater
+  Greek). Corpus index HFR_P014 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
-sanskrit_devanagari: τοῦτο γὰρ ἴδιόν ἐστι τῶν νῦν καιρῶν, ἐν οἷς πάντων πλωτῶν καὶ πορευτῶν γεγονότων οὐκ ἂν ἔτι πρέπον εἴη
-  ποιηταῖς καὶ μυθογράφοις χρῆσθαι μάρτυσι περὶ τῶν αγνοουμένων, ὅπερ οἱ πρὸ ἡμῶν περὶ τῶν πλείστων, ἀπίστους ἀμφισβητουμένων
-  παρεχόμενοι βεβαιωτὰς κατὰ τὸν Ἡράκλειτον.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
+sanskrit_devanagari: τοῦτο γὰρ ἴδιόν ἐστι τῶν νῦν καιρῶν, ἐν οἷς πάντων πλωτῶν καὶ πορευτῶν γεγονότων
+  οὐκ ἂν ἔτι πρέπον εἴη ποιηταῖς καὶ μυθογράφοις χρῆσθαι μάρτυσι περὶ τῶν αγνοουμένων, ὅπερ οἱ πρὸ ἡμῶν
+  περὶ τῶν πλείστων, ἀπίστους ἀμφισβητουμένων παρεχόμενοι βεβαιωτὰς κατὰ τὸν Ἡράκλειτον.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - awareness
@@ -46,45 +48,49 @@ editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
-  body: τοῦτο γὰρ ἴδιόν ἐστι τῶν νῦν καιρῶν, ἐν οἷς πάντων πλωτῶν καὶ πορευτῶν γεγονότων οὐκ ἂν ἔτι πρέπον εἴη ποιηταῖς καὶ
-    μυθογράφοις χρῆσθαι μάρτυσι περὶ τῶν αγνοουμένων, ὅπερ οἱ πρὸ ἡμῶν περὶ τῶν πλείστων, ἀπίστους ἀμφισβητουμένων παρεχόμενοι
-    βεβαιωτὰς κατὰ τὸν Ἡράκλειτον.
+  body: τοῦτο γὰρ ἴδιόν ἐστι τῶν νῦν καιρῶν, ἐν οἷς πάντων πλωτῶν καὶ πορευτῶν γεγονότων οὐκ ἂν ἔτι πρέπον
+    εἴη ποιηταῖς καὶ μυθογράφοις χρῆσθαι μάρτυσι περὶ τῶν αγνοουμένων, ὅπερ οἱ πρὸ ἡμῶν περὶ τῶν πλείστων,
+    ἀπίστους ἀμφισβητουμένων παρεχόμενοι βεβαιωτὰς κατὰ τὸν Ἡράκλειτον.
   layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: Polybius iv. 40. Especially at the present time, when all places are accessible either by land or by water, we should
-    not accept poets and mythologists as witnesses of things that are unknown, since for the most part they furnish us with
-    unreliable testimony about disputed things, according to Heraclitus.
+  body: Polybius iv. 40. Especially at the present time, when all places are accessible either by land
+    or by water, we should not accept poets and mythologists as witnesses of things that are unknown,
+    since for the most part they furnish us with unreliable testimony about disputed things, according
+    to Heraclitus.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 14 (Bywater Greek). Corpus index HFR_P014 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 14
+    (Bywater Greek). Corpus index HFR_P014 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts compress a cosmological principle into the rhythmic movement of breath itself: Heraclitus sees
-      breath as the paradoxical unity of opposites (the living fire), while Vijnana Bhairava locates the Supreme Goddess''s
-      creative articulation in the dual prāṇa-jīva cycle (exhale-inhale). Each makes breath the primary image where cosmic
-      principle becomes perceptible.'
-    divergence: Heraclitus treats breath as a metaphysical paradox revealing the nature of flux and unity; Vijnana Bhairava
-      treats breath as a yogic technique for recognizing divine consciousness through embodied practice.
+    resonance: 'Both texts compress a cosmological principle into the rhythmic movement of breath itself:
+      Heraclitus sees breath as the paradoxical unity of opposites (the living fire), while Vijnana Bhairava
+      locates the Supreme Goddess''s creative articulation in the dual prāṇa-jīva cycle (exhale-inhale).
+      Each makes breath the primary image where cosmic principle becomes perceptible.'
+    divergence: Heraclitus treats breath as a metaphysical paradox revealing the nature of flux and unity;
+      Vijnana Bhairava treats breath as a yogic technique for recognizing divine consciousness through
+      embodied practice.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both texts use breath as the vehicle for a fundamental transition or return: Heraclitus''s aphorism likely
-      concerns breath''s role in the cycle of becoming, while Isavasya Upanishad explicitly invokes breath''s return to the
-      immortal element as the dissolution of the individual body into cosmic principle.'
-    divergence: Heraclitus emphasizes breath as the living principle of continuous flux and paradox; Isavasya Upanishad emphasizes
-      breath's ultimate return to transcendence, marking the end of embodied existence.
+    resonance: 'Both texts use breath as the vehicle for a fundamental transition or return: Heraclitus''s
+      aphorism likely concerns breath''s role in the cycle of becoming, while Isavasya Upanishad explicitly
+      invokes breath''s return to the immortal element as the dissolution of the individual body into
+      cosmic principle.'
+    divergence: Heraclitus emphasizes breath as the living principle of continuous flux and paradox; Isavasya
+      Upanishad emphasizes breath's ultimate return to transcendence, marking the end of embodied existence.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 appendixes: []
@@ -94,3 +100,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P014
   source_reference: Patrick (1889), frag. 14; corpus HFR_P014
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

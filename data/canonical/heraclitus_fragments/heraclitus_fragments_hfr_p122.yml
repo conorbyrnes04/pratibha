@@ -7,20 +7,20 @@ unit_id: heraclitus_fragments.hfr_p122
 unit_label: There awaits men after death what they neither hope nor think.
 title: Death Reveals What Opinion Conceals
 unit_type: teaching_passage
-thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
-  things.'
+thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
+  that governs all things.'
 themes:
 - breath
 - death
 source_excerpt: There awaits men after death what they neither hope nor think.
 translation_literal: There awaits people after death what they neither hope nor think.
-commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs
-  all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
-  Anchor: George T.W. Patrick (1889), fragment 122 (Bywater Greek). Corpus index HFR_P122 follows the Diels–Kranz-style numbering
-  used in the Pratibha pilot batch.'
+commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
+  that governs all things. Mortality intensifies the question — finite life must choose whether to hear
+  the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889), fragment 122 (Bywater Greek).
+  Corpus index HFR_P122 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: Ἀνθρώπους μένει τελευτήσαντας ἅσσα οὐκ ἔλπονται οὐδὲ δοκέουσι.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -41,40 +41,42 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
-    things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
-    Anchor: George T.W. Patrick (1889), fragment 122 (Bywater Greek). Corpus index HFR_P122 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
+    that governs all things. Mortality intensifies the question — finite life must choose whether to hear
+    the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889), fragment 122 (Bywater Greek).
+    Corpus index HFR_P122 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: The Book of Chuang Tzu — chapter 8
-    resonance: 'Both texts refuse the ego''s constructed expectations as the measure of reality: Heraclitus says what awaits
-      after death escapes hope and thought; Chuang Tzu''s true persons do not construct plans as identity. Each denies the
-      private self''s anticipatory framework as access to what actually is.'
-    divergence: Heraclitus grounds this in a cosmic measure (logos) that governs all things; Chuang Tzu grounds it in spontaneous
-      alignment with the Way's non-action (wu wei), which has no external standard.
+    resonance: 'Both texts refuse the ego''s constructed expectations as the measure of reality: Heraclitus
+      says what awaits after death escapes hope and thought; Chuang Tzu''s true persons do not construct
+      plans as identity. Each denies the private self''s anticipatory framework as access to what actually
+      is.'
+    divergence: Heraclitus grounds this in a cosmic measure (logos) that governs all things; Chuang Tzu
+      grounds it in spontaneous alignment with the Way's non-action (wu wei), which has no external standard.
     passage_id: the_book_of_chuang_tzu.ctz_008
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts establish a structural interdependence between two orders of reality that cannot be collapsed:
-      Heraclitus''s ethical-cosmological turn requires alignment with the measure governing all things (not private hope);
-      Nagarjuna''s ultimate cannot be reached except through the conventional, and vice versa. Each refuses a single-level
-      account.'
-    divergence: Heraclitus treats the measure as a unified cosmic principle; Nagarjuna treats the two truths as mutually dependent
-      but ontologically distinct, with neither reducible to the other.
+    resonance: 'Both texts establish a structural interdependence between two orders of reality that cannot
+      be collapsed: Heraclitus''s ethical-cosmological turn requires alignment with the measure governing
+      all things (not private hope); Nagarjuna''s ultimate cannot be reached except through the conventional,
+      and vice versa. Each refuses a single-level account.'
+    divergence: Heraclitus treats the measure as a unified cosmic principle; Nagarjuna treats the two
+      truths as mutually dependent but ontologically distinct, with neither reducible to the other.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both texts mark death as a dissolution where breath/life returns to a larger principle: Heraclitus''s awaiting
-      after death aligns with the cosmological measure; Isavasya''s breath returns to immortal air. Each treats death not
-      as annihilation but as reintegration into what governs the living.'
-    divergence: Heraclitus emphasizes the ethical surprise (what is neither hoped nor thought); Isavasya emphasizes ritual
-      acceptance and the metaphysical continuity of breath into the universal element.
+    resonance: 'Both texts mark death as a dissolution where breath/life returns to a larger principle:
+      Heraclitus''s awaiting after death aligns with the cosmological measure; Isavasya''s breath returns
+      to immortal air. Each treats death not as annihilation but as reintegration into what governs the
+      living.'
+    divergence: Heraclitus emphasizes the ethical surprise (what is neither hoped nor thought); Isavasya
+      emphasizes ritual acceptance and the metaphysical continuity of breath into the universal element.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 - kind: appendix
@@ -89,3 +91,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P122
   source_reference: Patrick (1889), frag. 122; corpus HFR_P122
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

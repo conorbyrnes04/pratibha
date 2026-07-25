@@ -15,16 +15,17 @@ themes:
 - attention
 - mind
 - knowledge
-source_excerpt: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are absent.’’'
-translation_literal: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are
-  absent.’’'
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 3 (Bywater Greek). Corpus index HFR_P003 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘
+  Present, they are absent.’’'
+translation_literal: 'Those who hear and do not understand are like the deaf. Of them the proverb says:
+  ‘‘ Present, they are absent.’’'
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 3 (Bywater
+  Greek). Corpus index HFR_P003 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
-  rests on. Can you hear the claim, not only think it?
+practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
+  experience it actually rests on. Can you hear the claim, not only think it?
 sanskrit_devanagari: Ἀξύνετοι ἀκούσαντες κωφοῖσι ἐοίκασι· φάτις αὐτοῖσι μαρτυρέει παρεόντας ἀπεῖναι.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -45,38 +46,42 @@ pratibha_layers:
   layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are absent.’’'
+  body: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present,
+    they are absent.’’'
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 3 (Bywater Greek). Corpus index HFR_P003 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 3
+    (Bywater Greek). Corpus index HFR_P003 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Isavasya Upanishad — Mantra 12
-    resonance: 'Both texts use a paradoxical inversion to expose a failure of perception: those who engage with one mode (hearing
-      without understanding; devotion to only the unmanifest or only the manifest) find themselves in a state functionally
-      equivalent to its opposite (deafness; darkness). The structure is: apparent engagement masks actual deprivation.'
-    divergence: Heraclitus frames this as a problem of logos and attention in a unified cosmos; the Isavasya Upanishad frames
-      it as a metaphysical error of exclusive devotion, requiring balance between complementary principles.
+    resonance: 'Both texts use a paradoxical inversion to expose a failure of perception: those who engage
+      with one mode (hearing without understanding; devotion to only the unmanifest or only the manifest)
+      find themselves in a state functionally equivalent to its opposite (deafness; darkness). The structure
+      is: apparent engagement masks actual deprivation.'
+    divergence: Heraclitus frames this as a problem of logos and attention in a unified cosmos; the Isavasya
+      Upanishad frames it as a metaphysical error of exclusive devotion, requiring balance between complementary
+      principles.
     passage_id: isavasya_upanishad.isa_018
   - citation: Patañjali Yoga Sūtras 3.54
-    resonance: Both texts locate true knowledge in the capacity to discern subtle distinctions that ordinary perception conflates.
-      Heraclitus's paradox hinges on the gap between hearing (physical reception) and understanding (discrimination); Patañjali's
-      aphorism hinges on discerning what 'appears alike' but differs in subtle marks—both make discrimination the threshold
-      of knowledge.
-    divergence: Heraclitus treats this as a cosmological condition embedded in the logos itself; Patañjali treats it as a
-      yogic faculty developed through systematic practice on the subtle body.
+    resonance: Both texts locate true knowledge in the capacity to discern subtle distinctions that ordinary
+      perception conflates. Heraclitus's paradox hinges on the gap between hearing (physical reception)
+      and understanding (discrimination); Patañjali's aphorism hinges on discerning what 'appears alike'
+      but differs in subtle marks—both make discrimination the threshold of knowledge.
+    divergence: Heraclitus treats this as a cosmological condition embedded in the logos itself; Patañjali
+      treats it as a yogic faculty developed through systematic practice on the subtle body.
     passage_id: patañjali_yoga_sūtras.ys_3_54
   layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
-  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
-    rests on. Can you hear the claim, not only think it?
+  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
+    experience it actually rests on. Can you hear the claim, not only think it?
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -85,3 +90,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P003
   source_reference: Patrick (1889), frag. 3; corpus HFR_P003
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

@@ -16,15 +16,18 @@ themes:
 - transformation
 - knowledge
 - spontaneity
-source_excerpt: Night-roamers, Magians, bacchanals, revelers in wine, the initiated. CX X.—Seneca, Epist. 12.
-translation_literal: Night-roamers, Magians, bacchanals, revelers in wine, the initiated. CX X.—Seneca, Epist. 12.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 124 (Bywater Greek). Corpus index HFR_P124 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: Night-roamers, Magians, bacchanals, revelers in wine, the initiated. CX X.—Seneca, Epist.
+  12.
+translation_literal: Night-roamers, Magians, bacchanals, revelers in wine, the initiated. CX X.—Seneca,
+  Epist. 12.
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 124
+  (Bywater Greek). Corpus index HFR_P124 follows the Diels–Kranz-style numbering used in the Pratibha
+  pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: Νυκτιπόλοι, μάγοι, βάκχοι, λῆναι, μύσται.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -50,35 +53,39 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 124 (Bywater Greek). Corpus index HFR_P124 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 124
+    (Bywater Greek). Corpus index HFR_P124 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #2'
-    resonance: 'Both texts compress a paradox of consciousness into a single image: Heraclitus names figures who embody simultaneous
-      states (night-roaming yet initiated, drunk yet aware), while Yukti 2 describes śakti revealed precisely at the point
-      where movement ceases—neither entering nor exiting. Each locates knowledge or power in a threshold state that dissolves
-      ordinary categories.'
-    divergence: Heraclitus presents the paradox as a cosmological riddle about human types and their hidden knowledge; the
-      Vijnana Bhairava grounds it in prāṇa and spatial centering as a direct yogic technique for realization.
+    resonance: 'Both texts compress a paradox of consciousness into a single image: Heraclitus names figures
+      who embody simultaneous states (night-roaming yet initiated, drunk yet aware), while Yukti 2 describes
+      śakti revealed precisely at the point where movement ceases—neither entering nor exiting. Each locates
+      knowledge or power in a threshold state that dissolves ordinary categories.'
+    divergence: Heraclitus presents the paradox as a cosmological riddle about human types and their hidden
+      knowledge; the Vijnana Bhairava grounds it in prāṇa and spatial centering as a direct yogic technique
+      for realization.
     passage_id: vijnana_bhairava.yukti_002
   - citation: Yoginihrdaya — Cakrasaṃketa
-    resonance: 'Both texts compress a cosmological act into a single moment of self-recognition: Heraclitus''s ''initiated''
-      embody a knowledge that comes from witnessing transformation in darkness, while the Yoginihrdaya describes the Supreme
-      Power beholding her own ''flashing-forth'' (sphurattā)—consciousness recognizing itself through spontaneous manifestation.
-      Each locates initiation or realization in an act of self-witnessing.'
-    divergence: Heraclitus frames initiation as a human mystery accessible through paradox and night-wandering; the Yoginihrdaya
-      frames it as the cosmic feminine principle's self-luminous act of becoming and beholding.
+    resonance: 'Both texts compress a cosmological act into a single moment of self-recognition: Heraclitus''s
+      ''initiated'' embody a knowledge that comes from witnessing transformation in darkness, while the
+      Yoginihrdaya describes the Supreme Power beholding her own ''flashing-forth'' (sphurattā)—consciousness
+      recognizing itself through spontaneous manifestation. Each locates initiation or realization in
+      an act of self-witnessing.'
+    divergence: Heraclitus frames initiation as a human mystery accessible through paradox and night-wandering;
+      the Yoginihrdaya frames it as the cosmic feminine principle's self-luminous act of becoming and
+      beholding.
     passage_id: yoginihrdaya.yh_006
   layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -87,3 +94,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P124
   source_reference: Patrick (1889), frag. 124; corpus HFR_P124
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

@@ -10,15 +10,17 @@ unit_type: teaching_passage
 thesis: The 'one' is not mystical fusion but the single intelligible order within apparent plurality.
 themes:
 - breath
-source_excerpt: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
-translation_literal: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
-commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that
-  all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
-  it. Anchor: George T.W. Patrick (1889), fragment 116 (Bywater Greek). Corpus index HFR_P116 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: There is one wisdom, to understand the intelligent will by which all things are governed
+  through 8.11.5
+translation_literal: There is one wisdom, to understand the intelligent will by which all things are governed
+  through 8.11.5
+commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
+  To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
+  the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 116 (Bywater
+  Greek). Corpus index HFR_P116 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -31,39 +33,42 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
+  body: There is one wisdom, to understand the intelligent will by which all things are governed through
+    8.11.5
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all
-    things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
-    it. Anchor: George T.W. Patrick (1889), fragment 116 (Bywater Greek). Corpus index HFR_P116 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
+    To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
+    the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 116 (Bywater
+    Greek). Corpus index HFR_P116 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts posit a single intelligible order that cannot be grasped directly but only through a necessary
-      duality: Heraclitus''s ''one wisdom'' governing apparent plurality mirrors Nagarjuna''s ultimate (paramārtha) that can
-      only be ''pointed out'' through conventional reality (vyavahāra). Each tradition insists the apparent multiplicity is
-      not illusory but the necessary vehicle for understanding the singular principle.'
-    divergence: Heraclitus treats the one as an immanent rational principle (logos) structuring the cosmos; Nagarjuna treats
-      the ultimate as emptiness (śūnyatā) that transcends both conventional and ultimate as conceptual categories, making
-      the relationship between levels more radically non-dual.
+    resonance: 'Both texts posit a single intelligible order that cannot be grasped directly but only
+      through a necessary duality: Heraclitus''s ''one wisdom'' governing apparent plurality mirrors Nagarjuna''s
+      ultimate (paramārtha) that can only be ''pointed out'' through conventional reality (vyavahāra).
+      Each tradition insists the apparent multiplicity is not illusory but the necessary vehicle for understanding
+      the singular principle.'
+    divergence: Heraclitus treats the one as an immanent rational principle (logos) structuring the cosmos;
+      Nagarjuna treats the ultimate as emptiness (śūnyatā) that transcends both conventional and ultimate
+      as conceptual categories, making the relationship between levels more radically non-dual.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts locate the governing principle in breath as the fundamental articulation of order: Heraclitus''s
-      ''intelligent will by which all things are governed'' operates through pneuma (breath); the Vijnana Bhairava locates
-      the Supreme Goddess''s constant articulation in the prāṇa-jīva cycle. Each makes breath the primary manifestation of
-      an ordering intelligence.'
-    divergence: Heraclitus treats breath as the cosmic principle itself (the logos becoming physical); the Vijnana Bhairava
-      treats breath as the Goddess's expression—a conscious, embodied play (līlā) rather than an impersonal rational order.
+    resonance: 'Both texts locate the governing principle in breath as the fundamental articulation of
+      order: Heraclitus''s ''intelligent will by which all things are governed'' operates through pneuma
+      (breath); the Vijnana Bhairava locates the Supreme Goddess''s constant articulation in the prāṇa-jīva
+      cycle. Each makes breath the primary manifestation of an ordering intelligence.'
+    divergence: Heraclitus treats breath as the cosmic principle itself (the logos becoming physical);
+      the Vijnana Bhairava treats breath as the Goddess's expression—a conscious, embodied play (līlā)
+      rather than an impersonal rational order.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []
@@ -73,3 +78,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P116
   source_reference: Patrick (1889), frag. 116; corpus HFR_P116
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

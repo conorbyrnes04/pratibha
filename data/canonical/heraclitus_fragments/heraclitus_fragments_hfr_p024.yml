@@ -12,19 +12,20 @@ themes:
 - death
 - earth
 - transformation
-source_excerpt: Craving and Satiety.™ XX V.—Fire lives in the death of earth, air lives in the death of fire, water lives
-  in the death of air, and earth in the death of water."
-translation_literal: Craving and Satiety.™ XX V.—Fire lives in the death of earth, air lives in the death of fire, water lives
-  in the death of air, and earth in the death of water."
-commentary: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation. What looks
-  like destruction is often conversion governed by proportion — a physics of becoming that refuses both chaos and immobility.
-  The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all things.
-  Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion. Anchor:
-  George T.W. Patrick (1889), fragment 24 (Bywater Greek). Corpus index HFR_P024 follows the Diels–Kranz-style numbering used
-  in the Pratibha pilot batch.'
+source_excerpt: Craving and Satiety.™ XX V.—Fire lives in the death of earth, air lives in the death of
+  fire, water lives in the death of air, and earth in the death of water."
+translation_literal: Craving and Satiety.™ XX V.—Fire lives in the death of earth, air lives in the death
+  of fire, water lives in the death of air, and earth in the death of water."
+commentary: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation.
+  What looks like destruction is often conversion governed by proportion — a physics of becoming that
+  refuses both chaos and immobility. The turn is ethical-cosmological: character is not private style
+  but alignment with the measure that governs all things. Mortality intensifies the question — finite
+  life must choose whether to hear the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889),
+  fragment 24 (Bywater Greek). Corpus index HFR_P024 follows the Diels–Kranz-style numbering used in the
+  Pratibha pilot batch.'
 insight: ''
-practice: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing, limit, exchange).
-  Sit with that pattern for two minutes.
+practice: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing,
+  limit, exchange). Sit with that pattern for two minutes.
 sanskrit_devanagari: Χρησμοσύνη . . . κόρος.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -42,55 +43,59 @@ pratibha_layers:
   layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: Craving and Satiety.™ XX V.—Fire lives in the death of earth, air lives in the death of fire, water lives in the death
-    of air, and earth in the death of water."
+  body: Craving and Satiety.™ XX V.—Fire lives in the death of earth, air lives in the death of fire,
+    water lives in the death of air, and earth in the death of water."
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation. What looks like
-    destruction is often conversion governed by proportion — a physics of becoming that refuses both chaos and immobility.
-    The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all things.
-    Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion. Anchor:
-    George T.W. Patrick (1889), fragment 24 (Bywater Greek). Corpus index HFR_P024 follows the Diels–Kranz-style numbering
+  body: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation.
+    What looks like destruction is often conversion governed by proportion — a physics of becoming that
+    refuses both chaos and immobility. The turn is ethical-cosmological: character is not private style
+    but alignment with the measure that governs all things. Mortality intensifies the question — finite
+    life must choose whether to hear the pattern or merely repeat opinion. Anchor: George T.W. Patrick
+    (1889), fragment 24 (Bywater Greek). Corpus index HFR_P024 follows the Diels–Kranz-style numbering
     used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing, limit, exchange). Sit
-    with that pattern for two minutes.
+  body: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing,
+    limit, exchange). Sit with that pattern for two minutes.
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: pyr / cosmic fire
-    definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation — exchange (πυρὸς τροπαὶ)
-      governed by proportion. Fire names process, not a static element.
+    definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation —
+      exchange (πυρὸς τροπαὶ) governed by proportion. Fire names process, not a static element.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.8
-    resonance: Both texts map a cascading dissolution through elemental stages—Heraclitus through fire, air, water, earth
-      as mutual transformations; Chāndogya through speech→mind→life force→heat→Ultimate Reality. Each names a lawful sequence
-      where one state dies into the next, constituting the fabric of reality itself.
-    divergence: Heraclitus treats the cycle as perpetual and self-sustaining (fire lives in death); Chāndogya frames it as
-      a one-directional resorption at death into a transcendent ground (Brahman), not an eternal reciprocal exchange.
+    resonance: Both texts map a cascading dissolution through elemental stages—Heraclitus through fire,
+      air, water, earth as mutual transformations; Chāndogya through speech→mind→life force→heat→Ultimate
+      Reality. Each names a lawful sequence where one state dies into the next, constituting the fabric
+      of reality itself.
+    divergence: Heraclitus treats the cycle as perpetual and self-sustaining (fire lives in death); Chāndogya
+      frames it as a one-directional resorption at death into a transcendent ground (Brahman), not an
+      eternal reciprocal exchange.
     passage_id: chāndogya_upaniṣad.chu_vi_08
   - citation: 'Vijnana Bhairava — Yukti #82'
-    resonance: 'Both use elemental emergence as the structural principle of manifestation: Heraclitus shows elements arising
-      from and returning to one another in measured transformation; Vijnana Bhairava shows waves, flames, and light-rays arising
-      from their respective sources (water, fire, sun) as the model for how the universe emanates from Bhairava.'
-    divergence: Heraclitus emphasizes the death-into-life cycle as impersonal cosmic law; Vijnana Bhairava frames emergence
-      as conscious emanation from a divine non-dual source, making the process an expression of divine self-manifestation
-      rather than mechanical transformation.
+    resonance: 'Both use elemental emergence as the structural principle of manifestation: Heraclitus
+      shows elements arising from and returning to one another in measured transformation; Vijnana Bhairava
+      shows waves, flames, and light-rays arising from their respective sources (water, fire, sun) as
+      the model for how the universe emanates from Bhairava.'
+    divergence: Heraclitus emphasizes the death-into-life cycle as impersonal cosmic law; Vijnana Bhairava
+      frames emergence as conscious emanation from a divine non-dual source, making the process an expression
+      of divine self-manifestation rather than mechanical transformation.
     passage_id: vijnana_bhairava.yukti_082
   - citation: Patañjali Yoga Sūtras 4.2
-    resonance: 'Both identify transformation as the fundamental operation of reality: Heraclitus through the death-into-life
-      sequence of elements; Patañjali through the overflow of nature causing one species to change into another. Each treats
-      change not as accidental but as intrinsic to the nature of manifestation.'
-    divergence: Heraclitus grounds change in the logos (rational measure) governing elemental exchange; Patañjali grounds
-      it in prakṛti (nature's inherent creative overflow), which yoga seeks to transcend rather than understand as cosmic
-      law.
+    resonance: 'Both identify transformation as the fundamental operation of reality: Heraclitus through
+      the death-into-life sequence of elements; Patañjali through the overflow of nature causing one species
+      to change into another. Each treats change not as accidental but as intrinsic to the nature of manifestation.'
+    divergence: Heraclitus grounds change in the logos (rational measure) governing elemental exchange;
+      Patañjali grounds it in prakṛti (nature's inherent creative overflow), which yoga seeks to transcend
+      rather than understand as cosmic law.
     passage_id: patañjali_yoga_sūtras.ys_4_02
   layer_provenance: generated_grounded
 appendixes: []
@@ -100,3 +105,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P024
   source_reference: Patrick (1889), frag. 24; corpus HFR_P024
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

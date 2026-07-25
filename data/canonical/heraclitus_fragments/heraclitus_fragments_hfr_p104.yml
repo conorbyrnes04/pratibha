@@ -16,19 +16,20 @@ themes:
 - transformation
 - equanimity
 - suffering
-source_excerpt: For men to have whatever they wish, would not be well. Sickness makes health pleasant and good; hunger, satiety;
-  weariness, rest.
-translation_literal: For people to have whatever they wish, would not be well. Sickness makes health pleasant and good; hunger,
-  satiety; weariness, rest.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 104 (Bywater Greek). Corpus index HFR_P104 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: For men to have whatever they wish, would not be well. Sickness makes health pleasant
+  and good; hunger, satiety; weariness, rest.
+translation_literal: For people to have whatever they wish, would not be well. Sickness makes health pleasant
+  and good; hunger, satiety; weariness, rest.
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 104
+  (Bywater Greek). Corpus index HFR_P104 follows the Diels–Kranz-style numbering used in the Pratibha
+  pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
-sanskrit_devanagari: Ἀνθρώποισι γίνεσθαι ὁκόσα θέλουσι οὐκ ἄμεινον. νοῦσος ὑγίειαν ἐποίησε ἡδὺ καὶ ἀγαθόν, λιμὸς κόρον, κάματος
-  ἀνάπαυσιν.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
+sanskrit_devanagari: Ἀνθρώποισι γίνεσθαι ὁκόσα θέλουσι οὐκ ἄμεινον. νοῦσος ὑγίειαν ἐποίησε ἡδὺ καὶ ἀγαθόν,
+  λιμὸς κόρον, κάματος ἀνάπαυσιν.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - awareness
@@ -45,55 +46,60 @@ editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
-  body: Ἀνθρώποισι γίνεσθαι ὁκόσα θέλουσι οὐκ ἄμεινον. νοῦσος ὑγίειαν ἐποίησε ἡδὺ καὶ ἀγαθόν, λιμὸς κόρον, κάματος ἀνάπαυσιν.
+  body: Ἀνθρώποισι γίνεσθαι ὁκόσα θέλουσι οὐκ ἄμεινον. νοῦσος ὑγίειαν ἐποίησε ἡδὺ καὶ ἀγαθόν, λιμὸς κόρον,
+    κάματος ἀνάπαυσιν.
   layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: For people to have whatever they wish, would not be well. Sickness makes health pleasant and good; hunger, satiety;
-    weariness, rest.
+  body: For people to have whatever they wish, would not be well. Sickness makes health pleasant and good;
+    hunger, satiety; weariness, rest.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 104 (Bywater Greek). Corpus index HFR_P104 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 104
+    (Bywater Greek). Corpus index HFR_P104 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Astavakra Gita — 8.1 — 8.4
-    resonance: Both texts bind flourishing (liberation or well-being) to the cessation of craving and aversion rather than
-      their satisfaction. Heraclitus denies that wish-fulfillment conduces to the good; Astavakra identifies bondage with
-      the mind that desires and grieves, liberation with the mind that neither desires nor grieves.
-    divergence: Heraclitus frames this as a cosmological paradox about the nature of the good itself; Astavakra frames it
-      as a phenomenological map of consciousness and its liberation from mental modification.
+    resonance: Both texts bind flourishing (liberation or well-being) to the cessation of craving and
+      aversion rather than their satisfaction. Heraclitus denies that wish-fulfillment conduces to the
+      good; Astavakra identifies bondage with the mind that desires and grieves, liberation with the mind
+      that neither desires nor grieves.
+    divergence: Heraclitus frames this as a cosmological paradox about the nature of the good itself;
+      Astavakra frames it as a phenomenological map of consciousness and its liberation from mental modification.
     passage_id: astavakra_gita.asg_sum_08_01_08_04
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: Both texts locate a transformative threshold at the point of cessation or pause—where ordinary flow (breath,
-      desire) momentarily stops and a different order of consciousness emerges. Heraclitus's paradox suggests that deprivation
-      of wish is the condition for well-being; Vijnana Bhairava's Yukti 37 locates equality-consciousness at the termination
-      of the breath-pause.
-    divergence: Heraclitus treats the paradox as an aphorism about cosmic justice and balance; the Vijnana Bhairava treats
-      the pause as a technical yogic gateway to non-dual awareness through prāṇa manipulation.
+    resonance: Both texts locate a transformative threshold at the point of cessation or pause—where ordinary
+      flow (breath, desire) momentarily stops and a different order of consciousness emerges. Heraclitus's
+      paradox suggests that deprivation of wish is the condition for well-being; Vijnana Bhairava's Yukti
+      37 locates equality-consciousness at the termination of the breath-pause.
+    divergence: Heraclitus treats the paradox as an aphorism about cosmic justice and balance; the Vijnana
+      Bhairava treats the pause as a technical yogic gateway to non-dual awareness through prāṇa manipulation.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 - kind: appendix
   label: Public-domain anchor (Patrick 1889)
-  body: For men to have whatever they wish, would not be well. Sickness makes health pleasant and good; hunger, satiety; weariness,
-    rest.
+  body: For men to have whatever they wish, would not be well. Sickness makes health pleasant and good;
+    hunger, satiety; weariness, rest.
 appendixes:
 - commentator: Public-domain anchor (Patrick 1889)
-  text: For men to have whatever they wish, would not be well. Sickness makes health pleasant and good; hunger, satiety; weariness,
-    rest.
+  text: For men to have whatever they wish, would not be well. Sickness makes health pleasant and good;
+    hunger, satiety; weariness, rest.
 anchor_chapter: ''
 provenance:
   collection: Heraclitus Fragments
   section: wisdom_pearl
   original_id: HFR_P104
   source_reference: Patrick (1889), frag. 104; corpus HFR_P104
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

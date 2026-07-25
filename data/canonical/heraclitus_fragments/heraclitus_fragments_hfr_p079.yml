@@ -16,17 +16,17 @@ themes:
 - spontaneity
 - impermanence
 - simplicity
-source_excerpt: Time is a child playing at draughts, a child’s kingdom. Musonius from Stob. Floril. xvii. 48. Immort. anim.
-  viii. 13.
-translation_literal: Time is a child playing at draughts, a child’s kingdom. Musonius from Stob. Floril. xvii. 48. Immort.
-  anim. viii. 13.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 79 (Bywater Greek). Corpus index HFR_P079 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: Time is a child playing at draughts, a child’s kingdom. Musonius from Stob. Floril. xvii.
+  48. Immort. anim. viii. 13.
+translation_literal: Time is a child playing at draughts, a child’s kingdom. Musonius from Stob. Floril.
+  xvii. 48. Immort. anim. viii. 13.
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 79 (Bywater
+  Greek). Corpus index HFR_P079 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: Αἰὼν παῖς ἐστι παίζων πεσσεύων· παιδὸς ἡ βασιληίη.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -48,38 +48,41 @@ pratibha_layers:
   layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: Time is a child playing at draughts, a child’s kingdom. Musonius from Stob. Floril. xvii. 48. Immort. anim. viii.
-    13.
+  body: Time is a child playing at draughts, a child’s kingdom. Musonius from Stob. Floril. xvii. 48.
+    Immort. anim. viii. 13.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 79 (Bywater Greek). Corpus index HFR_P079 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 79
+    (Bywater Greek). Corpus index HFR_P079 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #33'
-    resonance: Both texts locate truth in the dissolution of mental activity into an open, undifferentiated field—Heraclitus
-      through time's spontaneous play, Vijnana Bhairava through the mind dissolving into a treeless, wall-less expanse where
-      vṛtti ceases. Each treats the cessation of mental churning as the condition for a higher state.
-    divergence: Heraclitus frames this as cosmological necessity (time itself is the player), while Vijnana Bhairava frames
-      it as a yogic technique requiring deliberate gaze-practice to access the underlying śakti.
+    resonance: Both texts locate truth in the dissolution of mental activity into an open, undifferentiated
+      field—Heraclitus through time's spontaneous play, Vijnana Bhairava through the mind dissolving into
+      a treeless, wall-less expanse where vṛtti ceases. Each treats the cessation of mental churning as
+      the condition for a higher state.
+    divergence: Heraclitus frames this as cosmological necessity (time itself is the player), while Vijnana
+      Bhairava frames it as a yogic technique requiring deliberate gaze-practice to access the underlying
+      śakti.
     passage_id: vijnana_bhairava.yukti_033
   - citation: Tilopa Mahamudra — Do Not Contrive, and Wisdom Dawns
-    resonance: 'Both reject conceptual grasping as the path to truth: Heraclitus compresses cosmology into paradox (a child''s
-      play cannot be rationalized), and Tilopa insists Mahāmudrā cannot be pointed to by symbol or grasped as object. Each
-      denies that ordinary mind-categories can capture what is.'
-    divergence: Heraclitus presents this as an ontological claim about time's nature, while Tilopa presents it as a methodological
-      warning against reifying the ultimate through language or conceptual thought.
+    resonance: 'Both reject conceptual grasping as the path to truth: Heraclitus compresses cosmology
+      into paradox (a child''s play cannot be rationalized), and Tilopa insists Mahāmudrā cannot be pointed
+      to by symbol or grasped as object. Each denies that ordinary mind-categories can capture what is.'
+    divergence: Heraclitus presents this as an ontological claim about time's nature, while Tilopa presents
+      it as a methodological warning against reifying the ultimate through language or conceptual thought.
     passage_id: tilopa_mahamudra.til_001
   layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -88,3 +91,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P079
   source_reference: Patrick (1889), frag. 79; corpus HFR_P079
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

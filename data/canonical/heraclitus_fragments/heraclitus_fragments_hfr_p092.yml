@@ -15,17 +15,17 @@ themes:
 - mind
 - silence
 - truth
-source_excerpt: Although the Law of Reason is common, the majority of people live as though they had an understanding of their
-  own.
-translation_literal: Although the Law of Reason is common, the majority of people live as though they had an understanding
-  of their own.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 92 (Bywater Greek). Corpus index HFR_P092 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: Although the Law of Reason is common, the majority of people live as though they had an
+  understanding of their own.
+translation_literal: Although the Law of Reason is common, the majority of people live as though they
+  had an understanding of their own.
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 92 (Bywater
+  Greek). Corpus index HFR_P092 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
-  rests on. Can you hear the claim, not only think it?
+practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
+  experience it actually rests on. Can you hear the claim, not only think it?
 sanskrit_devanagari: Τοῦ λόγου δ' ἐόντος ξυνοῦ, ζώουσι οἱ πολλοὶ ὡς ἰδίην ἔχοντες φρόνησιν.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -46,45 +46,50 @@ pratibha_layers:
   layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: Although the Law of Reason is common, the majority of people live as though they had an understanding of their own.
+  body: Although the Law of Reason is common, the majority of people live as though they had an understanding
+    of their own.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 92 (Bywater Greek). Corpus index HFR_P092 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 92
+    (Bywater Greek). Corpus index HFR_P092 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Phaedo (Plato) — Knowledge as Recollection
-    resonance: Both texts posit that true knowledge is not a novel acquisition but a re-cognition of what the mind already
-      possesses or measures by. Heraclitus claims the common Logos is available to all yet most live as though they have private
-      understanding; Plato's recollection doctrine holds that learning re-recognizes standards the mind already carries.
-    divergence: Heraclitus emphasizes the paradox of universal access paired with willful ignorance; Plato locates the problem
-      in forgetting and the need for dialectical recovery of innate forms.
+    resonance: Both texts posit that true knowledge is not a novel acquisition but a re-cognition of what
+      the mind already possesses or measures by. Heraclitus claims the common Logos is available to all
+      yet most live as though they have private understanding; Plato's recollection doctrine holds that
+      learning re-recognizes standards the mind already carries.
+    divergence: Heraclitus emphasizes the paradox of universal access paired with willful ignorance; Plato
+      locates the problem in forgetting and the need for dialectical recovery of innate forms.
     passage_id: phaedo_plato.phaedo_md_002
   - citation: Isavasya Upanishad — Mantra 12
-    resonance: 'Both texts diagnose a structural trap: exclusive commitment to one pole (unmanifest or manifest; private understanding
-      or the common Logos) leads to darkness or error. The problem is not lack of access but misdirected attention or false
-      choice.'
-    divergence: Heraclitus frames the error as living by private opinion despite universal availability; the Isavasya frames
-      it as devotion to only one metaphysical dimension, requiring balance between both.
+    resonance: 'Both texts diagnose a structural trap: exclusive commitment to one pole (unmanifest or
+      manifest; private understanding or the common Logos) leads to darkness or error. The problem is
+      not lack of access but misdirected attention or false choice.'
+    divergence: Heraclitus frames the error as living by private opinion despite universal availability;
+      the Isavasya frames it as devotion to only one metaphysical dimension, requiring balance between
+      both.
     passage_id: isavasya_upanishad.isa_018
   layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
-  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
-    rests on. Can you hear the claim, not only think it?
+  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
+    experience it actually rests on. Can you hear the claim, not only think it?
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: Logos (λόγος)
-    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
-      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
-      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern
+      according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s
+      ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible
+      speech).'
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -93,3 +98,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P092
   source_reference: Patrick (1889), frag. 92; corpus HFR_P092
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

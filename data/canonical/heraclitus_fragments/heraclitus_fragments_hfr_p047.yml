@@ -14,13 +14,13 @@ themes:
 - awareness
 source_excerpt: The hidden harmony is better than the visible, 2248
 translation_literal: The hidden harmony is better than the visible, 2248
-commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that
-  tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony
-  audible. Anchor: George T.W. Patrick (1889), fragment 47 (Bywater Greek). Corpus index HFR_P047 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow,
+  lyre) to show that tension generates stable function. Peace as mere absence of conflict would collapse
+  the very structures that make harmony audible. Anchor: George T.W. Patrick (1889), fragment 47 (Bywater
+  Greek). Corpus index HFR_P047 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the
-  function? Write both pulls without trying to remove either.'
+practice: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what
+  two pulls create the function? Write both pulls without trying to remove either.'
 sanskrit_devanagari: Ἁρμονίη ἀφανὴς φανερῆς κρείσσων.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -42,39 +42,41 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
-    generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
-    Anchor: George T.W. Patrick (1889), fragment 47 (Bywater Greek). Corpus index HFR_P047 follows the Diels–Kranz-style numbering
-    used in the Pratibha pilot batch.'
+  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre)
+    to show that tension generates stable function. Peace as mere absence of conflict would collapse the
+    very structures that make harmony audible. Anchor: George T.W. Patrick (1889), fragment 47 (Bywater
+    Greek). Corpus index HFR_P047 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the function?
-    Write both pulls without trying to remove either.'
+  body: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two
+    pulls create the function? Write both pulls without trying to remove either.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: harmoniē (ἁρμονίη)
-    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
-      difference. This is Heraclitus's answer to those who expect peace as sameness.
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic,
+      not the removal of difference. This is Heraclitus's answer to those who expect peace as sameness.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Yoga Spandakarika — First Flow
-    resonance: Both texts locate harmony not in the absence of opposition but in a unified field that contains and transcends
-      apparent dualities. Heraclitus makes opposition the instrument of hidden harmony; Spandakarika reveals pleasure/suffering
-      and subject/object as expressions of a single consciousness-space.
-    divergence: Heraclitus grounds harmony in dynamic flux and strife as generative principle, while Spandakarika grounds
-      it in static absolute consciousness that subsumes all polarities.
+    resonance: Both texts locate harmony not in the absence of opposition but in a unified field that
+      contains and transcends apparent dualities. Heraclitus makes opposition the instrument of hidden
+      harmony; Spandakarika reveals pleasure/suffering and subject/object as expressions of a single consciousness-space.
+    divergence: Heraclitus grounds harmony in dynamic flux and strife as generative principle, while Spandakarika
+      grounds it in static absolute consciousness that subsumes all polarities.
     passage_id: yoga_spandakarika.sp_05
   - citation: Phaedo (Plato) — Refuting the Harmony Theory of Soul
-    resonance: 'Both texts use harmony as a structural concept to probe the nature of order: Heraclitus asserts that hidden
-      harmony surpasses visible harmony, while Plato''s Simmias proposes harmony as an invisible principle that organizes
-      visible structure—each making harmony the deeper explanatory layer.'
-    divergence: Heraclitus privileges hidden harmony through opposition and becoming, whereas Plato (via Simmias) treats harmony
-      as a dependent property of physical substrate, ultimately rejecting it as insufficient for explaining the soul's independence.
+    resonance: 'Both texts use harmony as a structural concept to probe the nature of order: Heraclitus
+      asserts that hidden harmony surpasses visible harmony, while Plato''s Simmias proposes harmony as
+      an invisible principle that organizes visible structure—each making harmony the deeper explanatory
+      layer.'
+    divergence: Heraclitus privileges hidden harmony through opposition and becoming, whereas Plato (via
+      Simmias) treats harmony as a dependent property of physical substrate, ultimately rejecting it as
+      insufficient for explaining the soul's independence.
     passage_id: phaedo_plato.phaedo_md_004
   layer_provenance: generated_grounded
 appendixes: []
@@ -84,3 +86,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P047
   source_reference: Patrick (1889), frag. 47; corpus HFR_P047
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

@@ -16,13 +16,13 @@ themes:
 - mind
 source_excerpt: Whatever concerns seeing, hearing, and learning, I particularly honor.’ ν΄
 translation_literal: Whatever concerns seeing, hearing, and learning, I particularly honor.’ ν΄
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 13 (Bywater Greek). Corpus index HFR_P013 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 13 (Bywater
+  Greek). Corpus index HFR_P013 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
-  rests on. Can you hear the claim, not only think it?
+practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
+  experience it actually rests on. Can you hear the claim, not only think it?
 sanskrit_devanagari: Ὅσων ὄψις ἀκοὴ μάθησις, ταῦτα ἐγὼ προτιμέω.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -46,50 +46,56 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 13 (Bywater Greek). Corpus index HFR_P013 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 13
+    (Bywater Greek). Corpus index HFR_P013 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Patañjali Yoga Sūtras 3.29
-    resonance: 'Both texts honor a direct perceptual method as the path to knowledge: Heraclitus privileges seeing and hearing
-      as worthy of honor; Patañjali teaches that focused bodily alignment on a sensory object (the pole star) yields astronomical
-      knowledge. Each makes perception itself—not abstract reasoning—the instrument of knowing.'
-    divergence: Heraclitus treats perception as cosmologically fundamental and self-justifying; Patañjali subordinates sensory
-      focus to a systematic yogic discipline aimed at liberation, making perception a controlled technique rather than an
-      autonomous faculty.
+    resonance: 'Both texts honor a direct perceptual method as the path to knowledge: Heraclitus privileges
+      seeing and hearing as worthy of honor; Patañjali teaches that focused bodily alignment on a sensory
+      object (the pole star) yields astronomical knowledge. Each makes perception itself—not abstract
+      reasoning—the instrument of knowing.'
+    divergence: Heraclitus treats perception as cosmologically fundamental and self-justifying; Patañjali
+      subordinates sensory focus to a systematic yogic discipline aimed at liberation, making perception
+      a controlled technique rather than an autonomous faculty.
     passage_id: patañjali_yoga_sūtras.ys_3_29
   - citation: Shantideva Bodhicaryavatara — The Veiled and the Transcendent
-    resonance: 'Both passages establish a hierarchy of practices leading to a supreme faculty: Heraclitus honors seeing, hearing,
-      and learning as worthy pursuits; Shantideva states that all preceding disciplines exist for the sake of wisdom (prajñā),
-      positioning wisdom as the ultimate goal that justifies prior training.'
-    divergence: Heraclitus honors the sensory and intellectual faculties themselves as ends; Shantideva treats all disciplines
-      as instrumental means to transcendent wisdom that dissolves suffering, making wisdom soteriological rather than ontologically
-      primary.
+    resonance: 'Both passages establish a hierarchy of practices leading to a supreme faculty: Heraclitus
+      honors seeing, hearing, and learning as worthy pursuits; Shantideva states that all preceding disciplines
+      exist for the sake of wisdom (prajñā), positioning wisdom as the ultimate goal that justifies prior
+      training.'
+    divergence: Heraclitus honors the sensory and intellectual faculties themselves as ends; Shantideva
+      treats all disciplines as instrumental means to transcendent wisdom that dissolves suffering, making
+      wisdom soteriological rather than ontologically primary.
     passage_id: shantideva_bodhicaryavatara.bca_09_twotruths
   - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 4
-    resonance: 'Both texts describe awareness of ultimate reality as exceeding ordinary knowing: Heraclitus compresses cosmological
-      truth into a paradoxical image that honors perception yet implies its limits; Plotinus states that awareness of the
-      ultimate Principle transcends all knowledge and intellection, requiring a presence beyond multiplicity.'
-    divergence: Heraclitus grounds transcendence in the sensory world itself through paradox; Plotinus posits a radical discontinuity
-      between discursive intellection and a non-cognitive presence that surpasses the multiplicity of knowing.
+    resonance: 'Both texts describe awareness of ultimate reality as exceeding ordinary knowing: Heraclitus
+      compresses cosmological truth into a paradoxical image that honors perception yet implies its limits;
+      Plotinus states that awareness of the ultimate Principle transcends all knowledge and intellection,
+      requiring a presence beyond multiplicity.'
+    divergence: Heraclitus grounds transcendence in the sensory world itself through paradox; Plotinus
+      posits a radical discontinuity between discursive intellection and a non-cognitive presence that
+      surpasses the multiplicity of knowing.
     passage_id: plotinus_enneads.enn_vi_9_04
   layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
-  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually
-    rests on. Can you hear the claim, not only think it?
+  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
+    experience it actually rests on. Can you hear the claim, not only think it?
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: Logos (λόγος)
-    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
-      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
-      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern
+      according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s
+      ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible
+      speech).'
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -98,3 +104,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P013
   source_reference: Patrick (1889), frag. 13; corpus HFR_P013
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

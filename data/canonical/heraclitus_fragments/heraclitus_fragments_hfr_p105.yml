@@ -18,13 +18,14 @@ themes:
 - truth
 source_excerpt: It is hard to contend against passion, for whatever it craves it buys with its life.
 translation_literal: It is hard to contend against passion, for whatever it craves it buys with its life.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 105 (Bywater Greek). Corpus index HFR_P105 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 105
+  (Bywater Greek). Corpus index HFR_P105 follows the Diels–Kranz-style numbering used in the Pratibha
+  pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: Θυμῷ μάχεσθαι χαλεπόν· ὅ τι γὰρ ἂν χρηίζῃ γίνεσθαι, ψυχῆς ὠνέεται.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -50,33 +51,35 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 105 (Bywater Greek). Corpus index HFR_P105 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 105
+    (Bywater Greek). Corpus index HFR_P105 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Astavakra Gita — 8.1 — 8.4
-    resonance: 'Both texts identify a paradoxical binding mechanism: Heraclitus shows passion purchasing its own satisfaction
-      at the cost of life-force; Astavakra identifies bondage as the mind''s craving and sorrow, liberation as the cessation
-      of both. Each locates unfreedom in the structure of desire itself, not in external constraint.'
-    divergence: Heraclitus frames this as a cosmological law of exchange (breath/life spent); Astavakra frames it as a reversible
-      mental state amenable to direct recognition and release.
+    resonance: 'Both texts identify a paradoxical binding mechanism: Heraclitus shows passion purchasing
+      its own satisfaction at the cost of life-force; Astavakra identifies bondage as the mind''s craving
+      and sorrow, liberation as the cessation of both. Each locates unfreedom in the structure of desire
+      itself, not in external constraint.'
+    divergence: Heraclitus frames this as a cosmological law of exchange (breath/life spent); Astavakra
+      frames it as a reversible mental state amenable to direct recognition and release.
     passage_id: astavakra_gita.asg_sum_08_01_08_04
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: 'Both texts compress a paradox of vital expenditure into transformative knowledge: Heraclitus shows life bought
-      by passion''s craving; Vijnana Bhairava #37 shows equality-consciousness arising precisely at the termination-point
-      of breath-tension, where the prāṇas'' dynamic opposition reaches its limit. Each locates insight at the threshold where
-      vital force reaches its extreme.'
-    divergence: Heraclitus treats this as an inescapable law of nature; Vijnana Bhairava treats it as a deliberate yogic technique
-      for accessing non-dual awareness.
+    resonance: 'Both texts compress a paradox of vital expenditure into transformative knowledge: Heraclitus
+      shows life bought by passion''s craving; Vijnana Bhairava #37 shows equality-consciousness arising
+      precisely at the termination-point of breath-tension, where the prāṇas'' dynamic opposition reaches
+      its limit. Each locates insight at the threshold where vital force reaches its extreme.'
+    divergence: Heraclitus treats this as an inescapable law of nature; Vijnana Bhairava treats it as
+      a deliberate yogic technique for accessing non-dual awareness.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 appendixes: []
@@ -86,3 +89,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P105
   source_reference: Patrick (1889), frag. 105; corpus HFR_P105
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

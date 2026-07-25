@@ -127,6 +127,10 @@ COLLECTIONS: dict[str, tuple[str, str]] = {
         "the Fragments of Heraclitus of Ephesus",
         "how the fragment's paradox or image works (the logos, the unity of opposites, ever-living fire, flux / panta rhei, the hidden harmony, the dry soul)",
     ),
+    "tantrasara": (
+        "Abhinavagupta's Tantrasāra, the condensed essence of the Tantrāloka (Kashmir Śaiva Trika)",
+        "the upāya (means) or metaphysical point the passage develops (anupāya, śāmbhava, śākta, āṇava; svātantrya, prakāśa-vimarśa, the recognition of Śiva-consciousness)",
+    ),
 }
 _DEFAULT_CTX = (
     "a Kashmir Śaiva / Śākta tantric text",

@@ -11,19 +11,19 @@ thesis: The 'one' is not mystical fusion but the single intelligible order withi
 themes:
 - breath
 - knowledge
-source_excerpt: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge, who indeed did
-  not know day and night. For they are one.®
-translation_literal: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge, who indeed
-  did not know day and night. For they are one.®
-commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that
-  all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
-  it. Anchor: George T.W. Patrick (1889), fragment 35 (Bywater Greek). Corpus index HFR_P035 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+source_excerpt: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge,
+  who indeed did not know day and night. For they are one.®
+translation_literal: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest
+  knowledge, who indeed did not know day and night. For they are one.®
+commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
+  To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
+  the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 35 (Bywater
+  Greek). Corpus index HFR_P035 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
-sanskrit_devanagari: Διδάσκαλος δὲ πλείστων Ἡσίοδος· τοῦτον ἐπίστανται πλείστα εἰδέναι, ὅστις ἡμέρην καὶ εὐφρόνην οὐκ ἐγίνωσκε·
-  ἔστι γὰρ ἕν.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
+sanskrit_devanagari: Διδάσκαλος δὲ πλείστων Ἡσίοδος· τοῦτον ἐπίστανται πλείστα εἰδέναι, ὅστις ἡμέρην καὶ
+  εὐφρόνην οὐκ ἐγίνωσκε· ἔστι γὰρ ἕν.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
@@ -35,42 +35,45 @@ editorial_maturity: structural_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
-  body: Διδάσκαλος δὲ πλείστων Ἡσίοδος· τοῦτον ἐπίστανται πλείστα εἰδέναι, ὅστις ἡμέρην καὶ εὐφρόνην οὐκ ἐγίνωσκε· ἔστι γὰρ
-    ἕν.
+  body: Διδάσκαλος δὲ πλείστων Ἡσίοδος· τοῦτον ἐπίστανται πλείστα εἰδέναι, ὅστις ἡμέρην καὶ εὐφρόνην οὐκ
+    ἐγίνωσκε· ἔστι γὰρ ἕν.
   layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge, who indeed did not know
-    day and night. For they are one.®
+  body: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge,
+    who indeed did not know day and night. For they are one.®
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all
-    things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes
-    it. Anchor: George T.W. Patrick (1889), fragment 35 (Bywater Greek). Corpus index HFR_P035 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
+    To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
+    the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 35 (Bywater
+    Greek). Corpus index HFR_P035 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Patañjali Yoga Sūtras 1.48
-    resonance: Both texts posit a single intelligible order (cosmic order / logos) that sustains knowledge, rejecting the
-      notion that truth emerges from masses of particular opinions or sensory plurality. Knowledge is grounded in an overarching
-      structural principle, not aggregated from individual perspectives.
-    divergence: Heraclitus emphasizes the logos as the rational principle underlying flux and critique of false teachers;
-      Patañjali locates sustained knowledge within a yogic metaphysics of cosmic order accessible through disciplined practice.
+    resonance: Both texts posit a single intelligible order (cosmic order / logos) that sustains knowledge,
+      rejecting the notion that truth emerges from masses of particular opinions or sensory plurality.
+      Knowledge is grounded in an overarching structural principle, not aggregated from individual perspectives.
+    divergence: Heraclitus emphasizes the logos as the rational principle underlying flux and critique
+      of false teachers; Patañjali locates sustained knowledge within a yogic metaphysics of cosmic order
+      accessible through disciplined practice.
     passage_id: patañjali_yoga_sūtras.ys_1_48
   - citation: 'The Book of Chuang Tzu — The River Spirit''s Humbling: Perspective and the Infinite'
-    resonance: Both texts use the image of limitation (the well-frog's narrow sphere / Hesiod teaching the masses) to expose
-      how conventional knowledge and popular instruction fail to grasp the true order. The critique targets the boundary between
-      what appears intelligible within a restricted frame and what actually is.
-    divergence: Heraclitus critiques Hesiod's authority as a teacher of masses; Zhuangzi uses the frog to illustrate the impossibility
-      of perspective-transcendence itself, leaning toward radical incommensurability rather than a single intelligible order.
+    resonance: Both texts use the image of limitation (the well-frog's narrow sphere / Hesiod teaching
+      the masses) to expose how conventional knowledge and popular instruction fail to grasp the true
+      order. The critique targets the boundary between what appears intelligible within a restricted frame
+      and what actually is.
+    divergence: Heraclitus critiques Hesiod's authority as a teacher of masses; Zhuangzi uses the frog
+      to illustrate the impossibility of perspective-transcendence itself, leaning toward radical incommensurability
+      rather than a single intelligible order.
     passage_id: the_book_of_chuang_tzu.zhuangzi_md_017
   layer_provenance: generated_grounded
 appendixes: []
@@ -80,3 +83,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P035
   source_reference: Patrick (1889), frag. 35; corpus HFR_P035
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

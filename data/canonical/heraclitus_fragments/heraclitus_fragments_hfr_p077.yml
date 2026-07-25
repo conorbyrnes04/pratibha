@@ -7,24 +7,24 @@ unit_id: heraclitus_fragments.hfr_p077
 unit_label: Man, as a light at night, is lighted and extinguished.* For when is death not present wit...
 title: Opposites Are Transmutations of Each Other
 unit_type: teaching_passage
-thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
-  things.'
+thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
+  that governs all things.'
 themes:
 - breath
 - death
-source_excerpt: 'Man, as a light at night, is lighted and extinguished.* For when is death not present with us? As indeed
-  Heraclitus says: Living and dead, awake and asleep, young and old, are the same. For these several states are transmutations
-  of each other.'
-translation_literal: 'Man, as a light at night, is lighted and extinguished.* For when is death not present with us? As indeed
-  Heraclitus says: Living and dead, awake and asleep, young and old, are the same. For these several states are transmutations
-  of each other.'
-commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs
-  all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
-  Anchor: George T.W. Patrick (1889), fragment 77 (Bywater Greek). Corpus index HFR_P077 follows the Diels–Kranz-style numbering
-  used in the Pratibha pilot batch.'
+source_excerpt: 'Man, as a light at night, is lighted and extinguished.* For when is death not present
+  with us? As indeed Heraclitus says: Living and dead, awake and asleep, young and old, are the same.
+  For these several states are transmutations of each other.'
+translation_literal: 'Man, as a light at night, is lighted and extinguished.* For when is death not present
+  with us? As indeed Heraclitus says: Living and dead, awake and asleep, young and old, are the same.
+  For these several states are transmutations of each other.'
+commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
+  that governs all things. Mortality intensifies the question — finite life must choose whether to hear
+  the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889), fragment 77 (Bywater Greek).
+  Corpus index HFR_P077 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: Ἄνθρωπος, ὅκως ἐν εὐφρόνῃ φάος, ἅπτεται ἀποσβέννυται.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -41,40 +41,41 @@ pratibha_layers:
   layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: 'Man, as a light at night, is lighted and extinguished.* For when is death not present with us? As indeed Heraclitus
-    says: Living and dead, awake and asleep, young and old, are the same. For these several states are transmutations of each
-    other.'
+  body: 'Man, as a light at night, is lighted and extinguished.* For when is death not present with us?
+    As indeed Heraclitus says: Living and dead, awake and asleep, young and old, are the same. For these
+    several states are transmutations of each other.'
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all
-    things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion.
-    Anchor: George T.W. Patrick (1889), fragment 77 (Bywater Greek). Corpus index HFR_P077 follows the Diels–Kranz-style numbering
-    used in the Pratibha pilot batch.'
+  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
+    that governs all things. Mortality intensifies the question — finite life must choose whether to hear
+    the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889), fragment 77 (Bywater Greek).
+    Corpus index HFR_P077 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both texts use the breath-body cycle as the fundamental measure of human existence: Heraclitus sees the individual
-      as a light that cycles through ignition and extinction (life and death), while Isavasya Upanishad traces breath''s return
-      to the immortal air and body to ashes—each marking a dissolution into a larger cosmic element.'
-    divergence: Heraclitus frames this cycle as an ethical-cosmological alignment with universal measure (logos), whereas
-      the Upanishad frames it as a metaphysical return to the immortal principle (brahman), emphasizing transcendence rather
-      than participatory attunement.
+    resonance: 'Both texts use the breath-body cycle as the fundamental measure of human existence: Heraclitus
+      sees the individual as a light that cycles through ignition and extinction (life and death), while
+      Isavasya Upanishad traces breath''s return to the immortal air and body to ashes—each marking a
+      dissolution into a larger cosmic element.'
+    divergence: Heraclitus frames this cycle as an ethical-cosmological alignment with universal measure
+      (logos), whereas the Upanishad frames it as a metaphysical return to the immortal principle (brahman),
+      emphasizing transcendence rather than participatory attunement.
     passage_id: isavasya_upanishad.isa_023
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts locate the fundamental rhythm of human existence in breath itself: Heraclitus''s lighted-and-extinguished
-      man mirrors the Vijnana Bhairava''s prāṇa (exhale/rising) and jīva (inhale/descending) as the constant articulation
-      of life—a cyclical pulsation that defines embodied presence.'
-    divergence: Heraclitus treats the cycle as a measure of mortality and ethical alignment, while the Vijnana Bhairava treats
-      it as a gateway to recognition of the Supreme Goddess and non-dual consciousness, making breath a path to liberation
-      rather than a sign of transience.
+    resonance: 'Both texts locate the fundamental rhythm of human existence in breath itself: Heraclitus''s
+      lighted-and-extinguished man mirrors the Vijnana Bhairava''s prāṇa (exhale/rising) and jīva (inhale/descending)
+      as the constant articulation of life—a cyclical pulsation that defines embodied presence.'
+    divergence: Heraclitus treats the cycle as a measure of mortality and ethical alignment, while the
+      Vijnana Bhairava treats it as a gateway to recognition of the Supreme Goddess and non-dual consciousness,
+      making breath a path to liberation rather than a sign of transience.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []
@@ -84,3 +85,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P077
   source_reference: Patrick (1889), frag. 77; corpus HFR_P077
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

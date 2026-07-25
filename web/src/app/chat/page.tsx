@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { askChatStream, getCollections, getVerse, getVerses } from "@/lib/api";
 import { useAuth } from "@/components/AuthProvider";
@@ -28,6 +29,16 @@ function sourcePassageLabel(metadata?: Record<string, unknown>): string {
   if (ref && title) return `${ref} — ${title}`;
   if (title) return title;
   return "";
+}
+
+/** Passage id from RAG chunk metadata → `/read/[id]`. */
+function sourcePassageHref(metadata?: Record<string, unknown>): string | null {
+  if (!metadata) return null;
+  for (const key of ["_id", "unit_id", "verse_id"] as const) {
+    const value = String(metadata[key] || "").trim();
+    if (value) return `/read/${encodeURIComponent(value)}`;
+  }
+  return null;
 }
 
 export default function ChatPage() {
@@ -442,11 +453,17 @@ export default function ChatPage() {
           <h2 className="text-2xl text-amber-100">Source shelf</h2>
           <p className="soft mt-1 text-sm">Supporting passages appear here when retrieval is enabled.</p>
           {pinnedVerse ? (
-            <article className="practice-card mt-3 p-3">
+            <Link
+              href={`/read/${encodeURIComponent(pinnedVerse._id)}`}
+              className="practice-card mt-3 block p-3 transition hover:border-amber-200/35 hover:bg-white/[0.03]"
+            >
               <p className="layer-heading">Primary source</p>
-              <p className="mt-2 text-sm text-amber-100">{displayPassageTitle(pinnedVerse)}</p>
+              <p className="mt-2 text-sm text-amber-100 underline-offset-2 group-hover:underline">
+                {displayPassageTitle(pinnedVerse)}
+              </p>
               <p className="soft mt-1 line-clamp-4 text-sm">{passagePreview(pinnedVerse)}</p>
-            </article>
+              <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.16em] text-amber-200/80">Open passage →</p>
+            </Link>
           ) : null}
           {compareMode && compareWarning ? (
             <p className="mt-2 rounded-md border border-amber-300/40 bg-amber-300/10 p-2 text-xs text-amber-100">
@@ -457,32 +474,62 @@ export default function ChatPage() {
             {sources.length === 0 ? (
               <p className="soft text-sm">No sources shown yet.</p>
             ) : (
-              sources.map((s) => (
-                <article key={`source-${s.rank}`} className="citation-card p-3">
-                  <p className="layer-heading">
-                    Source {s.rank}
-                  </p>
-                  {(() => {
-                    const side = (s.metadata?.compare_side as string | undefined) || "";
-                    return side ? (
-                    <p className="mt-1 font-sans text-[11px] uppercase tracking-wide text-amber-200">
-                      Voice {side}
+              sources.map((s) => {
+                const href = sourcePassageHref(s.metadata);
+                const side = (s.metadata?.compare_side as string | undefined) || "";
+                const heading = (
+                  <>
+                    <p className="layer-heading">Source {s.rank}</p>
+                    {side ? (
+                      <p className="mt-1 font-sans text-[11px] uppercase tracking-wide text-amber-200">
+                        Voice {side}
+                      </p>
+                    ) : null}
+                    <p className="mt-2 text-sm text-amber-100">
+                      {displayCollectionName(String((s.metadata?.collection as string) || ""))}
+                      {sourcePassageLabel(s.metadata)
+                        ? ` • ${sourcePassageLabel(s.metadata)}`
+                        : s.metadata?.title
+                          ? ` • ${String(s.metadata.title)}`
+                          : ""}
+                      {s.metadata?.section ? ` • ${String(s.metadata.section)}` : ""}
                     </p>
-                    ) : null;
-                  })()}
-                  <p className="mt-2 text-sm text-amber-100">
-                    {displayCollectionName(String((s.metadata?.collection as string) || ""))}
-                    {sourcePassageLabel(s.metadata) ? ` • ${sourcePassageLabel(s.metadata)}` : s.metadata?.title ? ` • ${String(s.metadata.title)}` : ""}
-                    {s.metadata?.section ? ` • ${String(s.metadata.section)}` : ""}
-                  </p>
-                  {Array.isArray(s.metadata?.themes) && (s.metadata?.themes as unknown[]).length > 0 ? (
-                    <p className="mt-2 text-[11px] soft">
-                      Themes: {(s.metadata?.themes as unknown[]).slice(0, 3).map((t) => String(t)).join(", ")}
-                    </p>
-                  ) : null}
-                  <p className="soft mt-2 line-clamp-6 whitespace-pre-wrap text-sm leading-relaxed">{s.text || ""}</p>
-                </article>
-              ))
+                  </>
+                );
+                const body = (
+                  <>
+                    {Array.isArray(s.metadata?.themes) && (s.metadata?.themes as unknown[]).length > 0 ? (
+                      <p className="mt-2 text-[11px] soft">
+                        Themes: {(s.metadata?.themes as unknown[]).slice(0, 3).map((t) => String(t)).join(", ")}
+                      </p>
+                    ) : null}
+                    <p className="soft mt-2 line-clamp-6 whitespace-pre-wrap text-sm leading-relaxed">{s.text || ""}</p>
+                  </>
+                );
+
+                if (href) {
+                  return (
+                    <Link
+                      key={`source-${s.rank}`}
+                      href={href}
+                      className="citation-card block p-3 transition hover:border-amber-200/35 hover:bg-white/[0.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200/50"
+                    >
+                      {heading}
+                      {body}
+                      <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.16em] text-amber-200/80">
+                        Open passage →
+                      </p>
+                    </Link>
+                  );
+                }
+
+                return (
+                  <article key={`source-${s.rank}`} className="citation-card p-3">
+                    {heading}
+                    {body}
+                  </article>
+                );
+              })
             )}
           </div>
         </aside>

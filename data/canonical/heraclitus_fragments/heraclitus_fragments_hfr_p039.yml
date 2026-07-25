@@ -13,13 +13,13 @@ themes:
 - harmony
 source_excerpt: Cold becomes warm, and warm, cold; wet becomes dry, and dry, wet.
 translation_literal: Cold becomes warm, and warm, cold; wet becomes dry, and dry, wet.
-commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that
-  tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony
-  audible. Anchor: George T.W. Patrick (1889), fragment 39 (Bywater Greek). Corpus index HFR_P039 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow,
+  lyre) to show that tension generates stable function. Peace as mere absence of conflict would collapse
+  the very structures that make harmony audible. Anchor: George T.W. Patrick (1889), fragment 39 (Bywater
+  Greek). Corpus index HFR_P039 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: Τὰ ψυχρὰ θέρεται, θερμὸν ψύχεται, ὑγρὸν αὐαίνεται, καρφαλέον νοτίζεται.
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -40,47 +40,49 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension
-    generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible.
-    Anchor: George T.W. Patrick (1889), fragment 39 (Bywater Greek). Corpus index HFR_P039 follows the Diels–Kranz-style numbering
-    used in the Pratibha pilot batch.'
+  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre)
+    to show that tension generates stable function. Peace as mere absence of conflict would collapse the
+    very structures that make harmony audible. Anchor: George T.W. Patrick (1889), fragment 39 (Bywater
+    Greek). Corpus index HFR_P039 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: harmoniē (ἁρμονίη)
-    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
-      difference. This is Heraclitus's answer to those who expect peace as sameness.
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic,
+      not the removal of difference. This is Heraclitus's answer to those who expect peace as sameness.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Tao Te Ching — The Mysterious Virtue of the Unbound One
-    resonance: 'Both texts locate harmony in the dynamic holding-together of opposing forces: Heraclitus makes opposition
-      itself the instrument of order (cold↔warm, wet↔dry), while the Tao Te Ching describes the intelligent and animal souls
-      held in unified embrace as the condition for coherence. Each treats complementary pairs as generative rather than destructive.'
-    divergence: Heraclitus emphasizes perpetual flux and transformation between opposites, while the Tao Te Ching emphasizes
-      stillness and non-separation as the ground of harmony.
+    resonance: 'Both texts locate harmony in the dynamic holding-together of opposing forces: Heraclitus
+      makes opposition itself the instrument of order (cold↔warm, wet↔dry), while the Tao Te Ching describes
+      the intelligent and animal souls held in unified embrace as the condition for coherence. Each treats
+      complementary pairs as generative rather than destructive.'
+    divergence: Heraclitus emphasizes perpetual flux and transformation between opposites, while the Tao
+      Te Ching emphasizes stillness and non-separation as the ground of harmony.
     passage_id: tao_te_ching.ttc_md_022
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both passages make breath the primary medium through which opposition generates order: Heraclitus''s cold/warm
-      and wet/dry are the elemental oppositions that structure reality through breath (pneuma), while Vijnana Bhairava Yukti
-      #1 makes prāṇa (exhale) and jīva (inhale) the fundamental oscillation that articulates the Supreme Goddess''s creative
-      flow.'
-    divergence: Heraclitus treats opposition as cosmological principle governing all matter, while the Vijnana Bhairava locates
-      breath-opposition within conscious embodiment and divine articulation.
+    resonance: 'Both passages make breath the primary medium through which opposition generates order:
+      Heraclitus''s cold/warm and wet/dry are the elemental oppositions that structure reality through
+      breath (pneuma), while Vijnana Bhairava Yukti #1 makes prāṇa (exhale) and jīva (inhale) the fundamental
+      oscillation that articulates the Supreme Goddess''s creative flow.'
+    divergence: Heraclitus treats opposition as cosmological principle governing all matter, while the
+      Vijnana Bhairava locates breath-opposition within conscious embodiment and divine articulation.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts refuse to collapse one pole into the other, instead requiring both terms to remain in tension for
-      truth to emerge: Heraclitus insists opposition is the instrument of order (not its negation), while Nagarjuna insists
-      the ultimate cannot be reached without the conventional, and vice versa—neither can be abandoned.'
-    divergence: Heraclitus grounds this in natural/physical process, while Nagarjuna grounds it in epistemological and soteriological
-      necessity (the two truths framework).
+    resonance: 'Both texts refuse to collapse one pole into the other, instead requiring both terms to
+      remain in tension for truth to emerge: Heraclitus insists opposition is the instrument of order
+      (not its negation), while Nagarjuna insists the ultimate cannot be reached without the conventional,
+      and vice versa—neither can be abandoned.'
+    divergence: Heraclitus grounds this in natural/physical process, while Nagarjuna grounds it in epistemological
+      and soteriological necessity (the two truths framework).
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   layer_provenance: generated_grounded
 appendixes: []
@@ -90,3 +92,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P039
   source_reference: Patrick (1889), frag. 39; corpus HFR_P039
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.

@@ -13,13 +13,14 @@ themes:
 - self
 source_excerpt: ; It pertains to all men to know themselves and to learn self-control.+
 translation_literal: ; It pertains to all people to know themselves and to learn self-control.+
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not
-  offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion
-  falls quiet. Anchor: George T.W. Patrick (1889), fragment 106 (Bywater Greek). Corpus index HFR_P106 follows the Diels–Kranz-style
-  numbering used in the Pratibha pilot batch.'
+commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 106
+  (Bywater Greek). Corpus index HFR_P106 follows the Diels–Kranz-style numbering used in the Pratibha
+  pilot batch.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-  arises — that resistance is part of the teaching.
+practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+  what image or resistance arises — that resistance is part of the teaching.
 sanskrit_devanagari: †Ἀνθρώποισι πᾶσι μέτεστι γιγνώσκειν ἑαυτοὺς καὶ σωφρονεῖν.†
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -40,32 +41,36 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering
-    a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls
-    quiet. Anchor: George T.W. Patrick (1889), fragment 106 (Bywater Greek). Corpus index HFR_P106 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
+    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
+    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 106
+    (Bywater Greek). Corpus index HFR_P106 follows the Diels–Kranz-style numbering used in the Pratibha
+    pilot batch.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance
-    arises — that resistance is part of the teaching.
+  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
+    what image or resistance arises — that resistance is part of the teaching.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 5
-    resonance: 'Both texts compress a cosmological or metaphysical claim into an imperative about self-recognition: Heraclitus
-      makes knowing oneself the universal human task that mirrors cosmic order (breath/logos), while Plotinus makes the longing
-      to recognize one''s true self (divine origin) the engine of virtue and liberation from the physical.'
-    divergence: Heraclitus grounds self-knowledge in the immanent logos shared by all; Plotinus grounds it in a transcendent
-      divine origin the soul has forgotten and must recover through ascent.
+    resonance: 'Both texts compress a cosmological or metaphysical claim into an imperative about self-recognition:
+      Heraclitus makes knowing oneself the universal human task that mirrors cosmic order (breath/logos),
+      while Plotinus makes the longing to recognize one''s true self (divine origin) the engine of virtue
+      and liberation from the physical.'
+    divergence: Heraclitus grounds self-knowledge in the immanent logos shared by all; Plotinus grounds
+      it in a transcendent divine origin the soul has forgotten and must recover through ascent.
     passage_id: plotinus_enneads.enn_i_6_05
   - citation: Astavakra Gita — 8.1 — 8.4
-    resonance: 'Both texts use a paradoxical inversion to teach self-mastery: Heraclitus compresses the cosmological principle
-      into the aphorism that knowing oneself is universal law; Astavakra teaches that bondage and liberation hinge on the
-      mind''s stance (desire/sorrow vs. non-desire/non-sorrow), making self-control the pivot of freedom.'
-    divergence: Heraclitus treats self-knowledge as alignment with an objective cosmic principle (logos); Astavakra treats
-      liberation as a shift in the mind's internal relationship to phenomena, independent of external order.
+    resonance: 'Both texts use a paradoxical inversion to teach self-mastery: Heraclitus compresses the
+      cosmological principle into the aphorism that knowing oneself is universal law; Astavakra teaches
+      that bondage and liberation hinge on the mind''s stance (desire/sorrow vs. non-desire/non-sorrow),
+      making self-control the pivot of freedom.'
+    divergence: Heraclitus treats self-knowledge as alignment with an objective cosmic principle (logos);
+      Astavakra treats liberation as a shift in the mind's internal relationship to phenomena, independent
+      of external order.
     passage_id: astavakra_gita.asg_sum_08_01_08_04
   layer_provenance: generated_grounded
 - kind: appendix
@@ -80,3 +85,5 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P106
   source_reference: Patrick (1889), frag. 106; corpus HFR_P106
+translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
+  public domain; Greek per Bywater. Study rendering.
