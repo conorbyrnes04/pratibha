@@ -11,7 +11,8 @@ export default function JournalPage() {
   const { user, loading: authLoading } = useAuth();
   const [notes, setNotes] = useState<JournalNote[]>([]);
   const [q, setQ] = useState("");
-  const [syncState, setSyncState] = useState<"idle" | "syncing" | "synced" | "local">("idle");
+  const [syncState, setSyncState] = useState<"idle" | "syncing" | "synced" | "local" | "error">("idle");
+  const [syncError, setSyncError] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
   function refresh() {
@@ -26,14 +27,17 @@ export default function JournalPage() {
     if (authLoading) return;
     if (!user) {
       setSyncState("local");
+      setSyncError(null);
       return;
     }
     let active = true;
     setSyncState("syncing");
-    void syncJournalWithCloud(user.id).then((merged) => {
+    setSyncError(null);
+    void syncJournalWithCloud(user.id).then((result) => {
       if (!active) return;
-      setNotes(merged.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)));
-      setSyncState("synced");
+      setNotes(result.notes.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)));
+      setSyncState(result.status);
+      setSyncError(result.error ?? null);
     });
     return () => {
       active = false;
@@ -132,7 +136,9 @@ export default function JournalPage() {
           ? "Syncing journal with your account…"
           : syncState === "synced"
             ? "Synced with your account. Export still makes a handy local backup."
-            : "On this device only until you sign in. Export a backup if you clear the browser."}
+            : syncState === "error"
+              ? `Cloud sync unavailable${syncError ? ` (${syncError})` : ""}. Notes stay on this device for now.`
+              : "On this device only until you sign in. Export a backup if you clear the browser."}
       </p>
 
       <div className="mt-8 space-y-4">

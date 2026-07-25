@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import { AuthGate } from "@/components/AuthGate";
 import { AuthMenu } from "@/components/AuthMenu";
 import { AuthProvider } from "@/components/AuthProvider";
 import { Glyph } from "@/components/Glyph";
@@ -71,7 +72,7 @@ export default function RootLayout({
               </div>
             </nav>
           </header>
-          {children}
+          <AuthGate>{children}</AuthGate>
         </AuthProvider>
       </body>
     </html>

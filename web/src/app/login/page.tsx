@@ -9,18 +9,25 @@ import { isSupabaseConfigured } from "@/lib/supabaseClient";
 function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
-  const next = params.get("next") || "/journal";
+  const next = params.get("next") || "/";
   const { user, loading, signInWithPassword, signUpWithPassword, signInWithGoogle } = useAuth();
-  const [mode, setMode] = useState<"signin" | "signup">("signin");
+  const [mode, setMode] = useState<"signin" | "signup">(
+    params.get("mode") === "signup" ? "signup" : "signin",
+  );
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(params.get("error"));
   const [info, setInfo] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
     if (!loading && user) router.replace(next);
   }, [loading, user, router, next]);
+
+  useEffect(() => {
+    const fromQuery = params.get("error");
+    if (fromQuery) setError(fromQuery);
+  }, [params]);
 
   if (!isSupabaseConfigured()) {
     return (
@@ -80,7 +87,7 @@ function LoginForm() {
       <p className="font-sans text-xs uppercase tracking-[0.22em] text-stone-400">Pratibha</p>
       <h1 className="mt-2 text-4xl text-amber-100">{mode === "signin" ? "Sign in" : "Create account"}</h1>
       <p className="soft mt-3 font-sans text-sm">
-        Save your journal across devices. The library stays open without an account.
+        Sign in to open the library, paths, study chat, and your journal.
       </p>
 
       <div className="mt-8 space-y-4">

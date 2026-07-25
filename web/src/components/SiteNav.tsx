@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useAuth } from "@/components/AuthProvider";
 
 const LINKS: Array<{ href: string; label: string; match?: string }> = [
   { href: "/read", label: "Library" },
@@ -16,15 +17,20 @@ const LINKS: Array<{ href: string; label: string; match?: string }> = [
 
 export function SiteNav() {
   const pathname = usePathname();
+  const { configured, loading, user } = useAuth();
   const [open, setOpen] = useState(false);
 
-  // Close the mobile menu whenever the route changes.
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
+  // Hide library nav until signed in (when auth is on).
+  if (configured && (loading || !user)) {
+    return null;
+  }
+
   function isActive(href: string, match?: string): boolean {
-    if (match === "/learn#threads") return false; // hash-only jump; Paths owns /learn current
+    if (match === "/learn#threads") return false;
     const path = match || href;
     return pathname === path || pathname.startsWith(`${path}/`);
   }

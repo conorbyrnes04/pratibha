@@ -2,7 +2,12 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import type { Session, User } from "@supabase/supabase-js";
-import { getSupabase, isSupabaseConfigured } from "@/lib/supabaseClient";
+import {
+  getSupabase,
+  isSupabaseConfigured,
+  mirrorCodeVerifierToLocalStorage,
+  waitForCodeVerifier,
+} from "@/lib/supabaseClient";
 
 type AuthContextValue = {
   configured: boolean;
@@ -67,11 +72,25 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const supabase = getSupabase();
     if (!supabase) return "Supabase is not configured.";
     const redirectTo = `${window.location.origin}/auth/callback`;
-    const { error } = await supabase.auth.signInWithOAuth({
+    // skipBrowserRedirect so we can confirm the PKCE verifier is persisted
+    // before leaving the page (avoids the empty-verifier race on OAuth return).
+    const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "google",
-      options: { redirectTo, queryParams: { prompt: "select_account" } },
+      options: {
+        redirectTo,
+        skipBrowserRedirect: true,
+        queryParams: { prompt: "select_account" },
+      },
     });
-    return error?.message ?? null;
+    if (error) return error.message;
+    if (!data.url) return "No OAuth URL returned from Supabase.";
+    const ready = await waitForCodeVerifier();
+    if (!ready) {
+      return "Could not prepare sign-in (PKCE verifier missing). Try again, or use email sign-in.";
+    }
+    mirrorCodeVerifierToLocalStorage();
+    window.location.assign(data.url);
+    return null;
   }, []);
 
   const signOut = useCallback(async () => {

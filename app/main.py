@@ -76,9 +76,17 @@ app = FastAPI(title="Pratibha API", version="0.9", lifespan=lifespan)
 
 def _cors_origins() -> list[str]:
     raw = (os.environ.get("CORS_ALLOW_ORIGINS") or "").strip()
-    if not raw or raw == "*":
+    if raw == "*":
         return ["*"]
-    return [o.strip() for o in raw.split(",") if o.strip()]
+    if raw:
+        return [o.strip() for o in raw.split(",") if o.strip()]
+    # Safer production default than "*" when the env var was never set on Render.
+    return [
+        "https://pratibha.agniagama.com",
+        "https://pratibha.conorbyrnes04.workers.dev",
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ]
 
 
 _origins = _cors_origins()

@@ -13,6 +13,7 @@ import { InkGlyph } from "@/components/InkGlyph";
 import { Section } from "@/components/ui/Section";
 import { ProductSnapshot, type ProductChip } from "@/components/ui/ProductSnapshot";
 import { Disclosure } from "@/components/ui/Disclosure";
+import { useAuth } from "@/components/AuthProvider";
 
 const PRODUCTS: ProductChip[] = [
   { href: "/read", label: "Library", hint: "Browse the full corpus", glyph: "oak" },
@@ -24,11 +25,45 @@ const PRODUCTS: ProductChip[] = [
 ];
 
 export default function Home() {
+  const { configured, loading, user } = useAuth();
+  const signedIn = !configured || Boolean(user);
   const [daily, setDaily] = useState<VerseItem | null>(null);
 
   useEffect(() => {
+    if (!signedIn || loading) return;
     getDaily("strong_draft").then(setDaily).catch(() => setDaily(null));
-  }, []);
+  }, [signedIn, loading]);
+
+  if (configured && !loading && !user) {
+    return (
+      <main className="page-shell">
+        <section className="manuscript-card overflow-hidden p-6 sm:p-10">
+          <ArtBackdrop srcs={generatedArtPool("bg-hero")} variant="hero" priority />
+          <div className="relative z-10 max-w-2xl">
+            <p className="eyebrow">Pratibha</p>
+            <h1 className="mt-4 text-4xl font-semibold leading-none text-amber-100 sm:text-5xl">
+              Living Manuscript of World Wisdom
+            </h1>
+            <p className="soft mt-5 max-w-xl font-sans text-base leading-relaxed sm:text-lg">
+              Layered canonical texts — original, translation, commentary, and practice —
+              across traditions, with a source-grounded study companion.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/login" className="btn-primary px-5 py-2.5">
+                Sign in to enter
+              </Link>
+              <Link href="/login?mode=signup" className="btn-secondary px-5 py-2.5">
+                Create an account
+              </Link>
+            </div>
+            <p className="soft mt-6 font-sans text-sm">
+              Library, Paths, Study Chat, Journal, and the rest unlock after you sign in.
+            </p>
+          </div>
+        </section>
+      </main>
+    );
+  }
 
   const dailyTitle = daily ? displayPassageTitle(daily) : "A passage is waiting";
   const dailyCollection = displayCollectionName(daily?.collection);
@@ -44,7 +79,6 @@ export default function Home() {
   return (
     <main className="page-shell">
       <div className="section-stack">
-        {/* Daily hero — one composition: brand signal + passage + CTAs + quiet surface strip */}
         <section id="daily" className="manuscript-card scroll-mt-24 overflow-hidden p-6 sm:p-8">
           <ArtBackdrop srcs={dailyArtPool} variant="hero" priority />
           <div className="relative z-10">
@@ -75,7 +109,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* First-run journey — light steps, not cards */}
         <Section
           eyebrow="Start here"
           title="Three moves to begin"

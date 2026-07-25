@@ -18,6 +18,12 @@ type Row = {
   updated_at: string;
 };
 
+export type JournalSyncResult = {
+  notes: JournalNote[];
+  status: "synced" | "local" | "error";
+  error?: string;
+};
+
 function rowToNote(row: Row): JournalNote {
   return {
     id: row.id,
@@ -64,18 +70,17 @@ function mergeByUpdated(local: JournalNote[], remote: JournalNote[]): JournalNot
 
 /**
  * Pull remote notes, merge with local (newest updatedAt wins), push the union,
- * and persist locally. Safe no-op when signed out or table missing.
+ * and persist locally.
  */
-export async function syncJournalWithCloud(userId: string): Promise<JournalNote[]> {
+export async function syncJournalWithCloud(userId: string): Promise<JournalSyncResult> {
   const supabase = getSupabase();
   const local = loadJournalNotes();
-  if (!supabase) return local;
+  if (!supabase) return { notes: local, status: "local" };
 
   const { data, error } = await supabase.from("journal_notes").select("*").eq("user_id", userId);
   if (error) {
-    // Table not created yet, or RLS misconfigured — keep local only.
     console.warn("journal sync pull failed:", error.message);
-    return local;
+    return { notes: local, status: "error", error: error.message };
   }
 
   const remote = (data as Row[]).map(rowToNote);
@@ -85,10 +90,13 @@ export async function syncJournalWithCloud(userId: string): Promise<JournalNote[
   if (merged.length) {
     const payload = merged.map((n) => noteToRow(n, userId));
     const { error: upsertError } = await supabase.from("journal_notes").upsert(payload, { onConflict: "id" });
-    if (upsertError) console.warn("journal sync push failed:", upsertError.message);
+    if (upsertError) {
+      console.warn("journal sync push failed:", upsertError.message);
+      return { notes: merged, status: "error", error: upsertError.message };
+    }
   }
 
-  return merged;
+  return { notes: merged, status: "synced" };
 }
 
 export async function pushJournalNote(note: JournalNote, userId: string): Promise<void> {
