@@ -14,9 +14,13 @@ import type { SourceAttribution } from "@/lib/types";
 
 const LICENSE_TONE: Record<string, string> = {
   public_domain: "text-emerald-300/90",
-  attributed_excerpt: "text-amber-200/90",
-  mixed: "text-sky-200/80",
-  original_editorial: "text-stone-300",
+  original_editorial: "text-amber-200/90",
+};
+
+const TIER_TONE: Record<string, string> = {
+  pd_render: "text-emerald-300/80",
+  pd_adapted: "text-sky-200/80",
+  original: "text-amber-200/90",
 };
 
 function publicLinks(item: SourceAttribution) {
@@ -59,6 +63,13 @@ function SourceCard({ item }: { item: SourceAttribution }) {
             <span className={`rounded-full border border-amber-200/15 px-2.5 py-1 ${licenseClass}`}>
               {item.license_label}
             </span>
+            {item.provenance_tier_label ? (
+              <span
+                className={`rounded-full border border-amber-200/15 px-2.5 py-1 ${TIER_TONE[item.provenance_tier] || "text-stone-300"}`}
+              >
+                {item.provenance_tier_label}
+              </span>
+            ) : null}
             {item.status === "in_progress" || !inCorpus ? (
               <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-400">Coming soon</span>
             ) : item.coverage ? (
@@ -167,18 +178,18 @@ export default function SourcesPage() {
     <main className="page-shell max-w-4xl">
       <div className="section-stack">
         <header>
-          <p className="eyebrow">Attribution</p>
+          <p className="eyebrow">Attribution · Asteya</p>
           <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Sources</h1>
           <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
-            Translations, editions, and editorial layers used in Pratibha — so credit is clear and the study companion stays on
-            solid ground.
+            Pratibha is offered freely to students, so it must be built without stealing. Every English rendering here stands on
+            a public-domain source or original authorship — and each text says exactly where it comes from.
           </p>
 
           <section className="manuscript-card relative mt-8 overflow-hidden rounded-[22px] p-5 sm:p-6">
             <ArtBackdrop srcs={generatedArtPool("bg-sources")} variant="banner" />
             <div className="relative z-10">
               <div className="flex flex-wrap items-baseline justify-between gap-3">
-                <h2 className="text-2xl font-semibold text-stone-100">How Pratibha uses texts</h2>
+                <h2 className="text-2xl font-semibold text-stone-100">How this corpus was reconciled</h2>
                 {summary.total_passages > 0 ? (
                   <p className="font-sans text-xs uppercase tracking-[0.18em] text-stone-500">
                     {summary.collections_in_corpus} texts · {summary.total_passages} passages
@@ -186,30 +197,37 @@ export default function SourcesPage() {
                 ) : null}
               </div>
               <p className="soft mt-3 font-sans text-sm leading-relaxed">
-                Anchor passages credit their translators; Pratibha&apos;s own layers are original editorial work. The full
-                policy is below.
+                Earlier drafts of some texts leaned on copyrighted modern translations. Those were removed and re-grounded: the
+                English is now rendered from public-domain source-language texts, or follows a public-domain translation by name.
+                Nothing under copyright is reproduced.
               </p>
               <div className="mt-4">
-                <Disclosure summary="How texts, translations & editorial layers are handled">
+                <Disclosure summary="How the renderings were made">
                   <div className="space-y-3 font-sans text-sm leading-relaxed">
                     <p>
-                      <strong className="font-medium text-stone-200">Anchor passages</strong> reproduce or closely follow named
-                      translations or public-domain editions where indicated. We do not claim copyright over those English
-                      renderings.
+                      <strong className="font-medium text-stone-200">Rendered from the source.</strong> For most texts the English
+                      is generated afresh from a public-domain original — Sanskrit, Classical Chinese, Tibetan, Persian, Middle
+                      High German, classical Japanese, or Greek — rather than copied from a modern translation.
                     </p>
                     <p>
-                      <strong className="font-medium text-stone-200">Pratibha layers</strong> — commentary, key terms,
-                      cross-tradition resonances, and practice — are original editorial work unless a unit explicitly cites a
-                      traditional commentator.
+                      <strong className="font-medium text-stone-200">Adapted from public-domain translations.</strong> Where a
+                      text rests on an out-of-copyright English translation (Arnold, Carter, Jowett, MacKenna, Patrick, Weir,
+                      Evans-Wentz), that translator is credited by name on the text.
                     </p>
                     <p>
-                      <strong className="font-medium text-stone-200">Sanskrit and source scripts</strong> follow received or
-                      scholarly editions noted per text. Devanagari marked as editorial reconstruction is not
-                      manuscript-verified.
+                      <strong className="font-medium text-stone-200">Checked against copyrighted editions, never copied from
+                      them.</strong> Renderings were compared to existing translations only to catch errors and echoed phrasing;
+                      shared wording was rewritten so the English is genuinely independent.
+                    </p>
+                    <p>
+                      <strong className="font-medium text-stone-200">Original work is marked as such.</strong> The Śiva Sūtra and
+                      Tantrasāra are original translation and commentary. Across every text, Pratibha&apos;s commentary, key
+                      terms, resonances, and practice are original editorial work.
                     </p>
                     <p className="text-stone-400">
-                      Pratibha is a study companion, not a substitute for primary editions. For citation, scholarship, or
-                      publication, consult the listed translators and publishers directly.
+                      Pratibha is a study companion offered as a gift, not a substitute for primary editions. For citation or
+                      scholarship, consult the source texts and the named translators directly. See a credit that looks wrong?
+                      Please flag it.
                     </p>
                   </div>
                 </Disclosure>

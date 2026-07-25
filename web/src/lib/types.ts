@@ -89,7 +89,7 @@ export type ChatOptions = {
 
 export type JournalNoteKind = "reflection" | "chat_response";
 
-export type SellReadyTier = "green" | "yellow" | "orange" | "red";
+export type ProvenanceTier = "pd_render" | "pd_adapted" | "original";
 
 export type SourceAttribution = {
   id: string;
@@ -101,11 +101,10 @@ export type SourceAttribution = {
   editorial_note: string;
   conceived_by_conor?: boolean;
   coverage?: string | null;
-  license: "public_domain" | "attributed_excerpt" | "mixed" | "original_editorial";
+  license: "public_domain" | "original_editorial";
   license_label: string;
-  sell_ready_tier: SellReadyTier;
-  sell_ready_tier_label: string;
-  pd_alternative?: string | null;
+  provenance_tier: ProvenanceTier;
+  provenance_tier_label: string;
   status: "in_corpus" | "in_progress";
   passages_in_corpus: number;
   links?: Array<{ label: string; url: string | null }>;
@@ -117,7 +116,7 @@ export type SourcesPayload = {
     collections_documented: number;
     collections_in_corpus: number;
     total_passages: number;
-    sell_ready_tiers?: Partial<Record<SellReadyTier, number>>;
+    provenance_tiers?: Partial<Record<ProvenanceTier, number>>;
   };
 };
 
