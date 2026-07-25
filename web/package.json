@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "validate:learning": "npx tsx ../scripts/validate_learning_paths.ts",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "predeploy": "node ./scripts/assert-prod-env.mjs",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
