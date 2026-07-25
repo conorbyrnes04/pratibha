@@ -5,81 +5,89 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p101
 unit_label: Greater fates gain greater rewards.
-title: Tension Generates The Harmony It Seems To Threaten
+title: Greater fates gain greater rewards.
 unit_type: teaching_passage
-thesis: Opposition is not a failure of order but its instrument.
+thesis: This fragment arrests us at the threshold between fate (aisa) and reward (geras)—not as moral ledger but as proportional
+  intensification.
 themes:
-- breath
-- harmony
+- action
+- fate
 source_excerpt: Greater fates gain greater rewards.
 translation_literal: Greater fates gain greater rewards.
-commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow,
-  lyre) to show that tension generates stable function. Peace as mere absence of conflict would collapse
-  the very structures that make harmony audible. The turn is ethical-cosmological: character is not private
-  style but alignment with the measure that governs all things. Mortality intensifies the question — finite
-  life must choose whether to hear the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889),
-  fragment 101 (Bywater Greek). Corpus index HFR_P101 follows the Diels–Kranz-style numbering used in
-  the Pratibha pilot batch.'
+commentary: 'This fragment arrests us at the threshold between fate (aisa) and reward (geras)—not as moral ledger but as proportional
+  intensification. The greater the fate assigned to you, the greater the return it demands and generates. Heraclitus is not
+  consoling; he is anatomizing a structure. Where most read ''fate'' as external imposition, the fragment''s logic suggests
+  fate and reward are not sequential (first you suffer fate, then you receive compensation) but *co-extensive*—the same force
+  that constitutes your necessity also constitutes your capacity. The bow and lyre appear elsewhere in his work as images
+  of this paradox: maximum tension (the drawn bow, the taut string) produces maximum function (the arrow''s flight, the note''s
+  clarity). A ''greater fate'' is not a heavier burden imposed on a passive substrate; it is an expanded field of potential
+  already resident in the person. The reward is not deferred to an afterlife or a future moment of rest. It accrues *within*
+  the very friction that defines the fate. To live a greater fate is to live at higher voltage—the reward is the capacity
+  itself, the sharpened perception and agency that emerges from refusing to collapse under tension. The fragment thus inverts
+  pity: those assigned greater fates are not victims awaiting compensation but agents whose very constraint is their multiplication.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Μόροι γὰρ μέζονες μέζονας μοίρας λαγχάνουσι.
+practice: 'When you face a decision or demand that feels disproportionate to your usual capacity, hold the tension without
+  immediately seeking relief or certainty. Notice the exact point where you want to diminish the stakes or declare yourself
+  unequal to them. Instead, ask: what reward—what sharpened perception, what new reach—is *already present* in this very friction?
+  Speak it aloud once, then move into the demand as though the answer and the action are the same.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- breath
+- action
 - commentary_text
-- harmony
+- fate
 - heraclitus_fragments
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Μόροι γὰρ μέζονες μέζονας μοίρας λαγχάνουσι.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: Greater fates gain greater rewards.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre)
-    to show that tension generates stable function. Peace as mere absence of conflict would collapse the
-    very structures that make harmony audible. The turn is ethical-cosmological: character is not private
-    style but alignment with the measure that governs all things. Mortality intensifies the question —
-    finite life must choose whether to hear the pattern or merely repeat opinion. Anchor: George T.W.
-    Patrick (1889), fragment 101 (Bywater Greek). Corpus index HFR_P101 follows the Diels–Kranz-style
-    numbering used in the Pratibha pilot batch.'
+  body: 'This fragment arrests us at the threshold between fate (aisa) and reward (geras)—not as moral ledger but as proportional
+    intensification. The greater the fate assigned to you, the greater the return it demands and generates. Heraclitus is
+    not consoling; he is anatomizing a structure. Where most read ''fate'' as external imposition, the fragment''s logic suggests
+    fate and reward are not sequential (first you suffer fate, then you receive compensation) but *co-extensive*—the same
+    force that constitutes your necessity also constitutes your capacity. The bow and lyre appear elsewhere in his work as
+    images of this paradox: maximum tension (the drawn bow, the taut string) produces maximum function (the arrow''s flight,
+    the note''s clarity). A ''greater fate'' is not a heavier burden imposed on a passive substrate; it is an expanded field
+    of potential already resident in the person. The reward is not deferred to an afterlife or a future moment of rest. It
+    accrues *within* the very friction that defines the fate. To live a greater fate is to live at higher voltage—the reward
+    is the capacity itself, the sharpened perception and agency that emerges from refusing to collapse under tension. The
+    fragment thus inverts pity: those assigned greater fates are not victims awaiting compensation but agents whose very constraint
+    is their multiplication.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'When you face a decision or demand that feels disproportionate to your usual capacity, hold the tension without immediately
+    seeking relief or certainty. Notice the exact point where you want to diminish the stakes or declare yourself unequal
+    to them. Instead, ask: what reward—what sharpened perception, what new reach—is *already present* in this very friction?
+    Speak it aloud once, then move into the demand as though the answer and the action are the same.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: harmoniē (ἁρμονίη)
-    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic,
-      not the removal of difference. This is Heraclitus's answer to those who expect peace as sameness.
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Tao Te Ching — The Mysterious Virtue of the Unbound One
-    resonance: Both texts treat opposition or duality (intelligent/animal souls; opposing forces) as a
-      unified functional whole rather than a defect—holding contraries together in dynamic equilibrium
-      generates order rather than disorder.
-    divergence: Heraclitus grounds this in cosmic strife and reward through struggle; the Taoist passage
-      emphasizes non-action and embrace as the method of holding opposites without forcing them.
+    resonance: Both texts treat opposition or duality (intelligent/animal souls; opposing forces) as a unified functional
+      whole rather than a defect—holding contraries together in dynamic equilibrium generates order rather than disorder.
+    divergence: Heraclitus grounds this in cosmic strife and reward through struggle; the Taoist passage emphasizes non-action
+      and embrace as the method of holding opposites without forcing them.
     passage_id: tao_te_ching.ttc_md_022
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: Both invoke breath (prāṇa/pneuma) as the fundamental instrument through which harmony or
-      order manifests—not as a static property but as a living oscillation (exhale/inhale; the flux of
-      becoming).
-    divergence: Heraclitus treats breath as the cosmic principle underlying all change and reward; the
-      Vijnana Bhairava localizes it as the Goddess's articulation within embodied consciousness, a path
-      to recognition rather than cosmic law.
+    resonance: Both invoke breath (prāṇa/pneuma) as the fundamental instrument through which harmony or order manifests—not
+      as a static property but as a living oscillation (exhale/inhale; the flux of becoming).
+    divergence: Heraclitus treats breath as the cosmic principle underlying all change and reward; the Vijnana Bhairava localizes
+      it as the Goddess's articulation within embodied consciousness, a path to recognition rather than cosmic law.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []
@@ -89,5 +97,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P101
   source_reference: Patrick (1889), frag. 101; corpus HFR_P101
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

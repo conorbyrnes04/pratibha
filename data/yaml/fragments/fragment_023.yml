@@ -4,23 +4,43 @@ section: wisdom_pearl
 title: The harmony of the world is a harmony of oppositions, as in the case of the bow and of th...
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: The harmony of the world is a harmony of oppositions, as in the case of the bow and of the lyre.
-commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible. Anchor: George T.W. Patrick (1889), fragment 23 (Bywater Greek). Corpus index HFR_P023 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: The harmony of the world is a harmony of oppositions, as in the case of the bow and of the
+  lyre.
+commentary: 'Heraclitus does not say harmony *despite* oppositions or *above* them—he says it *is* a harmony
+  *of* oppositions. The bow and lyre are not metaphors for conflict resolution; they are the very mechanism.
+  A bow''s power lies in the counter-pull: wood bends one way, string pulls the opposite way, and from
+  this precise antagonism comes the arrow''s flight. The lyre''s strings are tuned to different tensions—each
+  one resists the frame differently—and only this differentiated resistance produces pitch and music.
+  The word harmonia (ἁρμονία) itself means a fitting-together, a joining of unlike things. Heraclitus
+  is not offering consolation that opposites can coexist; he is showing that opposition *is* the structure
+  of function itself. Remove the tension from the bow, and you have wood and string lying separate. Remove
+  the tension from the lyre, and you have silence. The world''s order (kosmos) is not a neutral field
+  where opposites happen to balance; it is actively *made* by the perpetual strain between them. This
+  is not compromise. It is the discovery that what we call ''harmony'' is not the absence of pulling apart,
+  but the precise calibration of it.'
 voice_of_siva: ''
-abhyasa: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the function? Write both pulls without trying to remove either.'
+abhyasa: 'Pluck a string or strike a drum, and while the sound decays, attend to the exact moment when
+  vibration becomes silence—the point where the string''s resistance to air and its own inertia are still
+  in conversation. Do this three times, each time trying to hear not the note but the *work* happening
+  inside it: the material pushing back against itself. Then apply the same listening to one moment today
+  when you feel pulled in two directions—not to resolve it, but to notice what function, what actual output,
+  emerges only because both pulls remain live.'
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: The harmony of the world is a harmony of oppositions, as in the case of the bow and of the lyre.
+anchor_translation: The harmony of the world is a harmony of oppositions, as in the case of the bow and
+  of the lyre.
 source_reference: Patrick (1889), frag. 23; corpus HFR_P023
-pratibha_translation: The harmony of the world is a harmony of oppositions, as in the case of the bow and of the lyre.
+pratibha_translation: The harmony of the world is a harmony of oppositions, as in the case of the bow
+  and of the lyre.
 key_terms:
 - term: harmoniē (ἁρμονίη)
-  definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of difference. This is Heraclitus's answer to those who expect peace as sameness.
-editorial_maturity: structural_draft
+  definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic,
+    not the removal of difference. This is Heraclitus's answer to those who expect peace as sameness.
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -29,10 +49,26 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Yoga Spandakarika — First Flow
-  resonance: Both texts locate harmony not in the elimination of opposites but in their recognition as unified within a single encompassing principle—Heraclitus through the bow and lyre's tension, the Spandakarika through pleasure and suffering as expressions of one consciousness.
-  divergence: Heraclitus grounds harmony in dynamic opposition as structural necessity; the Spandakarika grounds it in non-dual consciousness where opposites are revealed as illusory distinctions within absolute awareness.
+  resonance: Both texts locate harmony not in the elimination of opposites but in their recognition as
+    unified within a single encompassing principle—Heraclitus through the bow and lyre's tension, the
+    Spandakarika through pleasure and suffering as expressions of one consciousness.
+  divergence: Heraclitus grounds harmony in dynamic opposition as structural necessity; the Spandakarika
+    grounds it in non-dual consciousness where opposites are revealed as illusory distinctions within
+    absolute awareness.
   passage_id: yoga_spandakarika.sp_05
 - citation: Bhagavad Gita — Beyond Gunas and the Inverted Tree
-  resonance: Both texts propose that apparent order emerges from the interplay of distinct principles or forces—Heraclitus through opposing tensions, the Bhagavad Gita through the three gunas as constitutive modalities of embodied existence.
-  divergence: Heraclitus treats opposition as the instrument of cosmic harmony itself; the Gita treats the gunas as conditioning factors from which liberation requires transcendence rather than integration.
+  resonance: Both texts propose that apparent order emerges from the interplay of distinct principles
+    or forces—Heraclitus through opposing tensions, the Bhagavad Gita through the three gunas as constitutive
+    modalities of embodied existence.
+  divergence: Heraclitus treats opposition as the instrument of cosmic harmony itself; the Gita treats
+    the gunas as conditioning factors from which liberation requires transcendence rather than integration.
   passage_id: bhagavad_gita.bg_md_011
+themes:
+- tension as generative
+- harmonia and opposition
+- craft knowledge
+- structure through strain
+- bow and lyre
+- kosmos as active
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

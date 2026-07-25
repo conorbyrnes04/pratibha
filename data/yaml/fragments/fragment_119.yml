@@ -6,14 +6,22 @@ sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: ealled the obscure, and Hermodorus, of whom Heraclitus himself said, “ὙΠΟ Ephesians deserve,’’
   ete. Cicero, Tusc. v. 105. Musonius from Stob. Floril. xl. 9. Pseudo-Diogenes, Epist. 28, 6.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 119
-  (Bywater Greek). Corpus index HFR_P119 follows the Diels–Kranz-style numbering used in the Pratibha
-  pilot batch.'
+commentary: 'The fragment naming Hermodorus—''whom Heraclitus himself said the Ephesians deserve''—operates
+  as a compressed judgment that refuses explanation. Heraclitus does not argue why Hermodorus is unfit
+  or what he lacks; he states a desert (ἄξιος) as though it were self-evident, as though the man and the
+  city had already revealed their measure to anyone watching. This is the method of the obscure: not to
+  prove but to name, to let the gap between what is claimed and what is shown do the work. The saying
+  works like a bow or a lyre—its power lies in the tension between the statement and its silence about
+  reasons. We are left holding the claim without its justification, forced to ask whether Hermodorus failed
+  the city or the city failed to recognize him. That ambiguity is not a flaw but the fragment''s own logos:
+  it teaches that judgment (and self-judgment) happens in the space between desert and actuality, between
+  what we claim we deserve and what we actually receive or become. The Ephesians ''deserve'' him—meaning
+  they get what matches them, or they merit his departure. The word holds both.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
+abhyasa: Speak one judgment about another person or a group aloud without explanation—a single sentence
+  of desert or unfitness—then sit with the silence that follows, noticing whether you feel compelled to
+  defend it, whether the reasons flood in afterward, whether the judgment hardens or dissolves under its
+  own weight.
 modes:
   bhasya: ''
   doctrinal: ''
@@ -27,9 +35,18 @@ source_reference: Patrick (1889), frag. 119; corpus HFR_P119
 pratibha_translation: ealled the obscure, and Hermodorus, of whom Heraclitus himself said, “ὙΠΟ Ephesians
   deserve,’’ ete. Cicero, Tusc. v. 105. Musonius from Stob. Floril. xl. 9. Pseudo-Diogenes, Epist. 28,
   6.
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
   key_terms: template-assembled
   practice: template-assembled
+themes:
+- judgment without reason
+- desert and measure
+- the obscure method
+- tension and bow
+- self-revelation
+- what we deserve
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

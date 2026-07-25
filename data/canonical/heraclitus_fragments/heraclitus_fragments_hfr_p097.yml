@@ -5,74 +5,81 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p097
 unit_label: The thoughtless man understands the voice of the Deity as little as the child understands...
-title: Unthinking Mind Cannot Hear the Divine
+title: The thoughtless man understands the voice of the Deity as little as the child understands...
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: Heraclitus does not compare understanding to understanding.
 themes:
-- breath
-source_excerpt: The thoughtless man understands the voice of the Deity as little as the child understands
-  the man.”
-translation_literal: The thoughtless man understands the voice of the Deity as little as the child understands
-  the man.”
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 97 (Bywater
-  Greek). Corpus index HFR_P097 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+- ignorance
+- knowledge
+source_excerpt: The thoughtless man understands the voice of the Deity as little as the child understands the man.”
+translation_literal: The thoughtless man understands the voice of the Deity as little as the child understands the man.”
+commentary: 'Heraclitus does not compare understanding to understanding. He compares *gaps*—the distance between thoughtless
+  man and deity, child and man. The voice of the Deity (theos phōnē) is already sounding; the child already hears the man.
+  What fails is not the voice but the ear that meets it. The fragment''s force lies in its refusal of equivalence: a child''s
+  incomprehension of an adult is not mere ignorance but a structural mismatch of scale, temporality, and capacity. The thoughtless
+  man (aphron) stands in the same relation to divine speech as the child to human speech—not absent from the sound, but unable
+  to discern its articulation, its logos. This is not pessimism about knowledge but precision about what listening requires:
+  a proportional readiness, a tuning of the receiver to the frequency being transmitted. The fragment teaches by withholding:
+  it does not tell you what the Deity says, only that you may already be missing it, standing exactly where the child stands,
+  ears open but unmatched to what they receive.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Ἀνὴρ νήπιος ἤκουσε πρὸς δαίμονος ὅκωσπερ παῖς πρὸς ἀνδρός.
+practice: In conversation with one person today, listen for the moment when you recognize you have not understood—not missed
+  a word, but felt the gap between what was said and what you grasped. Pause there without rushing to fill it. Notice whether
+  the speaker continues, repeats, or waits; notice your own impulse to nod, to agree, to move past. That gap is the child
+  hearing the man.
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- breath
 - commentary_text
 - heraclitus_fragments
+- ignorance
+- knowledge
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Ἀνὴρ νήπιος ἤκουσε πρὸς δαίμονος ὅκωσπερ παῖς πρὸς ἀνδρός.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: The thoughtless man understands the voice of the Deity as little as the child understands the
-    man.”
+  body: The thoughtless man understands the voice of the Deity as little as the child understands the man.”
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 97
-    (Bywater Greek). Corpus index HFR_P097 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'Heraclitus does not compare understanding to understanding. He compares *gaps*—the distance between thoughtless man
+    and deity, child and man. The voice of the Deity (theos phōnē) is already sounding; the child already hears the man. What
+    fails is not the voice but the ear that meets it. The fragment''s force lies in its refusal of equivalence: a child''s
+    incomprehension of an adult is not mere ignorance but a structural mismatch of scale, temporality, and capacity. The thoughtless
+    man (aphron) stands in the same relation to divine speech as the child to human speech—not absent from the sound, but
+    unable to discern its articulation, its logos. This is not pessimism about knowledge but precision about what listening
+    requires: a proportional readiness, a tuning of the receiver to the frequency being transmitted. The fragment teaches
+    by withholding: it does not tell you what the Deity says, only that you may already be missing it, standing exactly where
+    the child stands, ears open but unmatched to what they receive.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: In conversation with one person today, listen for the moment when you recognize you have not understood—not missed
+    a word, but felt the gap between what was said and what you grasped. Pause there without rushing to fill it. Notice whether
+    the speaker continues, repeats, or waits; notice your own impulse to nod, to agree, to move past. That gap is the child
+    hearing the man.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Svetasvatara Upanishad — Beyond Image, Known in the Heart
-    resonance: 'Both texts compress a cosmological claim into an aphorism about the limits of ordinary
-      perception: Heraclitus uses the child-man analogy to show how the unthinking mind cannot grasp the
-      divine voice, while Svetasvatara uses spatial negation (above, across, between) to show how the
-      Ultimate escapes conventional localization. Each moves from a perceptual failure to a metaphysical
-      insight.'
-    divergence: Heraclitus grounds the failure in lack of thought (noesis), treating it as a developmental
-      or intellectual problem; Svetasvatara treats it as an ontological problem—the Self transcends spatial
-      categories altogether, not merely human comprehension.
+    resonance: 'Both texts compress a cosmological claim into an aphorism about the limits of ordinary perception: Heraclitus
+      uses the child-man analogy to show how the unthinking mind cannot grasp the divine voice, while Svetasvatara uses spatial
+      negation (above, across, between) to show how the Ultimate escapes conventional localization. Each moves from a perceptual
+      failure to a metaphysical insight.'
+    divergence: Heraclitus grounds the failure in lack of thought (noesis), treating it as a developmental or intellectual
+      problem; Svetasvatara treats it as an ontological problem—the Self transcends spatial categories altogether, not merely
+      human comprehension.
     passage_id: svetasvatara_upanishad.svu_012
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts establish a paradoxical two-level structure: Heraclitus shows that the thoughtless
-      cannot hear the divine voice (a gap between levels of understanding), while Nagarjuna shows that
-      the ultimate cannot be pointed out without leaning on the conventional (a necessary interdependence
-      between levels). Each refuses a simple hierarchy and instead binds lower and higher together.'
-    divergence: Heraclitus emphasizes the failure of perception at the lower level to access the higher;
-      Nagarjuna emphasizes the logical necessity of both levels for any meaningful discourse about liberation
-      itself.
+    resonance: 'Both texts establish a paradoxical two-level structure: Heraclitus shows that the thoughtless cannot hear
+      the divine voice (a gap between levels of understanding), while Nagarjuna shows that the ultimate cannot be pointed
+      out without leaning on the conventional (a necessary interdependence between levels). Each refuses a simple hierarchy
+      and instead binds lower and higher together.'
+    divergence: Heraclitus emphasizes the failure of perception at the lower level to access the higher; Nagarjuna emphasizes
+      the logical necessity of both levels for any meaningful discourse about liberation itself.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   layer_provenance: generated_grounded
 appendixes: []
@@ -82,5 +89,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P097
   source_reference: Patrick (1889), frag. 97; corpus HFR_P097
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

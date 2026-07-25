@@ -5,9 +5,24 @@ title: ; It pertains to all men to know themselves and to learn self-control.+
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: ; It pertains to all people to know themselves and to learn self-control.+
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 26 (Bywater Greek). Corpus index HFR_P026 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment does not separate self-knowledge from self-control—it binds them as a single
+  act of *gnōmē*, recognition. ''To know oneself'' (gnōnai heauton) is not introspection or inventory;
+  it is to recognize the measure that already governs you, the logos operating through appetite, speech,
+  and choice. Self-control (sōphrosynē) is not restraint imposed from outside but the clarity that comes
+  when you see the pattern you embody. Heraclitus places this recognition as *pertaining to all*—not a
+  privilege of philosophers but a necessity woven into human nature itself. The aphorism''s force lies
+  in its refusal to separate the cognitive from the ethical: you cannot know yourself without simultaneously
+  knowing your limit, your proper measure. The ''and'' (kai) is not additive but revelatory—the moment
+  you see what you are, you see what you must not exceed. This is why the fragment opens with ''it pertains''—not
+  a command but a statement of structural fact, like gravity. To ignore it is not to rebel but to remain
+  asleep to your own nature.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: 'When you feel the impulse to speak—in argument, boast, complaint, or correction—pause and name
+  aloud the specific desire driving the words: *I want to win, to be seen, to hurt, to matter*. Do not
+  suppress it. Speak the desire plainly to yourself, then choose whether to speak the original words.
+  Repeat this three times in one day, in three different moments. The practice is not silence but the
+  microscopic space between impulse and utterance—where self-knowledge and self-measure become the same
+  act.'
 modes:
   bhasya: ''
   doctrinal: ''
@@ -17,7 +32,7 @@ glossary: []
 anchor_translation: ; It pertains to all men to know themselves and to learn self-control.+
 source_reference: Patrick (1889), frag. 26; corpus HFR_P026
 pratibha_translation: ; It pertains to all people to know themselves and to learn self-control.+
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +41,29 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 5
-  resonance: 'Both texts compress a cosmological or metaphysical claim into an imperative about self-recognition: Heraclitus demands that all people know themselves as the condition for understanding universal order (breath/logos), while Plotinus describes the soul''s longing to recognize and merge with its true divine nature as the path to liberation from external illusion.'
-  divergence: Heraclitus grounds self-knowledge in rational mastery and cosmic participation (breath as shared principle), whereas Plotinus grounds it in a vertical ascent from sensory entanglement to transcendent unity with the divine source.
+  resonance: 'Both texts compress a cosmological or metaphysical claim into an imperative about self-recognition:
+    Heraclitus demands that all people know themselves as the condition for understanding universal order
+    (breath/logos), while Plotinus describes the soul''s longing to recognize and merge with its true
+    divine nature as the path to liberation from external illusion.'
+  divergence: Heraclitus grounds self-knowledge in rational mastery and cosmic participation (breath as
+    shared principle), whereas Plotinus grounds it in a vertical ascent from sensory entanglement to transcendent
+    unity with the divine source.
   passage_id: plotinus_enneads.enn_i_6_05
 - citation: Astavakra Gita — 8.1 — 8.4
-  resonance: 'Both texts use a paradoxical inversion to teach self-mastery: Heraclitus compresses the cosmological principle into the paradox that knowing oneself is universal duty, while Astavakra teaches that bondage and liberation are determined by the mind''s posture toward desire and sorrow—making self-knowledge (cittam) the pivot of freedom.'
-  divergence: Heraclitus emphasizes self-control as alignment with universal logos and breath, whereas Astavakra locates liberation in the mind's non-attachment to mental states themselves, a more radical negation of the desiring subject.
+  resonance: 'Both texts use a paradoxical inversion to teach self-mastery: Heraclitus compresses the
+    cosmological principle into the paradox that knowing oneself is universal duty, while Astavakra teaches
+    that bondage and liberation are determined by the mind''s posture toward desire and sorrow—making
+    self-knowledge (cittam) the pivot of freedom.'
+  divergence: Heraclitus emphasizes self-control as alignment with universal logos and breath, whereas
+    Astavakra locates liberation in the mind's non-attachment to mental states themselves, a more radical
+    negation of the desiring subject.
   passage_id: astavakra_gita.asg_sum_08_01_08_04
+themes:
+- self-knowledge as measure
+- logos and human nature
+- the unity of knowing and restraint
+- waking to pattern
+- necessity and freedom
+- the common law
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

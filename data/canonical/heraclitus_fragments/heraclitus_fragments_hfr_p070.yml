@@ -5,34 +5,46 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p070
 unit_label: /jThe dry beam is the wisest and best soul.
-title: Character Aligns With The Universal Measure
+title: /jThe dry beam is the wisest and best soul.
 unit_type: teaching_passage
-thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
-  that governs all things.'
+thesis: 'The fragment arrests us with a stark equivalence: dryness and wisdom are one.'
 themes:
-- breath
+- death
+- desire
+- knowledge
+- recognition
+- self
 - soul
 source_excerpt: /jThe dry beam is the wisest and best soul.
 translation_literal: /jThe dry beam is the wisest and best soul.
-commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
-  that governs all things. Mortality intensifies the question — finite life must choose whether to hear
-  the pattern or merely repeat opinion. The ''one'' is not mystical fusion but the single intelligible
-  order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics
-  — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick
-  (1889), fragment 70 (Bywater Greek). Corpus index HFR_P070 follows the Diels–Kranz-style numbering used
-  in the Pratibha pilot batch.'
+commentary: 'The fragment arrests us with a stark equivalence: dryness and wisdom are one. Not metaphorically—the beam (xylon)
+  that has been stripped of moisture, that has undergone a kind of death or emptying, *is* the wisest soul (psyche). This
+  is not praise of asceticism as moral choice but recognition of a condition. The dry beam has lost what makes it supple,
+  heavy, clinging; it has shed the weight that binds it to mere persistence. Heraclitus elsewhere names fire as the most alive
+  and wisest element—fire consumes, transforms, reveals through burning away. The dry beam, desiccated, approaches that state:
+  it no longer resists its own nature or clings to form. The soul (psyche) that achieves this dryness—this loss of the fluid,
+  the private, the self-protective—becomes aligned with the logos, the measure that cuts through all things. Wisdom here is
+  not accumulation but subtraction, not gaining knowledge but losing the weight that prevents one from *moving* with the pattern.
+  The beam does not choose dryness; it submits to it. The paradox: to become wisest, the soul must become least—least swollen
+  with opinion, least defended, least wet with the desire to remain as it is.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
+practice: Hold a piece of dry wood or bone in your palm for several minutes without shifting your grip, feeling its lightness
+  and hardness, its refusal to absorb or yield. Notice what in your own body wants to soften, to add moisture, to protect
+  itself—then deliberately do not. Speak one sentence aloud about something you believe, then subtract every qualifier, hedge,
+  and emotional buffer until only the bare claim remains; speak that skeleton version and feel what hardens and what breaks.
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- breath
 - commentary_text
+- death
+- desire
 - heraclitus_fragments
+- knowledge
+- recognition
+- self
 - soul
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
 - kind: translation
@@ -41,46 +53,50 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
-    that governs all things. Mortality intensifies the question — finite life must choose whether to hear
-    the pattern or merely repeat opinion. The ''one'' is not mystical fusion but the single intelligible
-    order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics
-    — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick
-    (1889), fragment 70 (Bywater Greek). Corpus index HFR_P070 follows the Diels–Kranz-style numbering
-    used in the Pratibha pilot batch.'
+  body: 'The fragment arrests us with a stark equivalence: dryness and wisdom are one. Not metaphorically—the beam (xylon)
+    that has been stripped of moisture, that has undergone a kind of death or emptying, *is* the wisest soul (psyche). This
+    is not praise of asceticism as moral choice but recognition of a condition. The dry beam has lost what makes it supple,
+    heavy, clinging; it has shed the weight that binds it to mere persistence. Heraclitus elsewhere names fire as the most
+    alive and wisest element—fire consumes, transforms, reveals through burning away. The dry beam, desiccated, approaches
+    that state: it no longer resists its own nature or clings to form. The soul (psyche) that achieves this dryness—this loss
+    of the fluid, the private, the self-protective—becomes aligned with the logos, the measure that cuts through all things.
+    Wisdom here is not accumulation but subtraction, not gaining knowledge but losing the weight that prevents one from *moving*
+    with the pattern. The beam does not choose dryness; it submits to it. The paradox: to become wisest, the soul must become
+    least—least swollen with opinion, least defended, least wet with the desire to remain as it is.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: Hold a piece of dry wood or bone in your palm for several minutes without shifting your grip, feeling its lightness
+    and hardness, its refusal to absorb or yield. Notice what in your own body wants to soften, to add moisture, to protect
+    itself—then deliberately do not. Speak one sentence aloud about something you believe, then subtract every qualifier,
+    hedge, and emotional buffer until only the bare claim remains; speak that skeleton version and feel what hardens and what
+    breaks.
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: psychē (ψυχή)
-    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate.
-      The fragment turns ethics into cosmology: how you live is how you align (or fail) with measure.'
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Phaedo (Plato) — The Soul's Affinity With the Unseen
-    resonance: 'Both texts ground ethical excellence in structural alignment: Heraclitus ties wisdom to
-      dryness (a cosmological principle of measure and clarity), while Plato ties the soul''s endurance
-      to simplicity and intelligibility. Each makes character depend on conformity to a universal order
-      rather than individual preference.'
-    divergence: Heraclitus locates this order in a dynamic cosmic flux (the logos governing all things),
-      while Plato locates it in a static intelligible realm; Heraclitus emphasizes the physical substrate
-      (dryness as breath-quality), Plato the immaterial form.
+    resonance: 'Both texts ground ethical excellence in structural alignment: Heraclitus ties wisdom to dryness (a cosmological
+      principle of measure and clarity), while Plato ties the soul''s endurance to simplicity and intelligibility. Each makes
+      character depend on conformity to a universal order rather than individual preference.'
+    divergence: Heraclitus locates this order in a dynamic cosmic flux (the logos governing all things), while Plato locates
+      it in a static intelligible realm; Heraclitus emphasizes the physical substrate (dryness as breath-quality), Plato the
+      immaterial form.
     passage_id: phaedo_plato.phaedo_md_003
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts identify the soul''s excellence with a subtle, continuous vital principle:
-      Heraclitus with the dry beam (pneuma refined through desiccation), the Vijnana Bhairava with prāṇa
-      as the articulated life-flow. Each treats the soul not as a substance but as a dynamic measure or
-      rhythm.'
-    divergence: Heraclitus frames dryness as a cosmological virtue tied to wisdom and cosmic order, while
-      the Vijnana Bhairava frames breath-flow as a phenomenological gateway to recognition of the Supreme;
-      Heraclitus is epistemological, the Tantric text is soteriological.
+    resonance: 'Both texts identify the soul''s excellence with a subtle, continuous vital principle: Heraclitus with the
+      dry beam (pneuma refined through desiccation), the Vijnana Bhairava with prāṇa as the articulated life-flow. Each treats
+      the soul not as a substance but as a dynamic measure or rhythm.'
+    divergence: Heraclitus frames dryness as a cosmological virtue tied to wisdom and cosmic order, while the Vijnana Bhairava
+      frames breath-flow as a phenomenological gateway to recognition of the Supreme; Heraclitus is epistemological, the Tantric
+      text is soteriological.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []
@@ -90,5 +106,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P070
   source_reference: Patrick (1889), frag. 70; corpus HFR_P070
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

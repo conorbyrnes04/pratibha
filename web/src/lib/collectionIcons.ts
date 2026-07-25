@@ -22,6 +22,9 @@ const ICON_RULES: Array<{ pattern: RegExp; icon: string }> = [
   // Kashmir Śaiva / Tantra — Yoginīhṛdaya, Vijñāna Bhairava, Spanda, etc.
   { pattern: /vijnana|bhairava|shiva|siva|tantra|spanda|yogin[iī]|yogini_hrdaya|pratyabhij/i, icon: "श" },
   { pattern: /heraclitus|fragment/i, icon: "λ" },
+  { pattern: /parmenides/i, icon: "ἐ" },
+  { pattern: /dhammapada|dhammapāda/i, icon: "ध" },
+  { pattern: /cloud.?of.?unknowing/i, icon: "◌" },
   // Patañjali Yoga Sūtras — puruṣa–prakṛti duality (Sāṃkhya epistemology)
   { pattern: /patanjali|patañjali|yoga.?s[uū]tras?|raja.?yoga/i, icon: "◐" },
   { pattern: /ibn|arabi|know yourself/i, icon: "◈" },
@@ -32,6 +35,8 @@ const ICON_RULES: Array<{ pattern: RegExp; icon: string }> = [
   { pattern: /dogen|dōgen|shobogenzo|shōbōgenzō/i, icon: "空" },
   // Meister Eckhart — Christian mysticism (parallel register to Ibn Arabi ◈)
   { pattern: /eckhart|meister_eckhart|abegescheidenheit|abgeschiedenheit/i, icon: "☩" },
+  // Pseudo-Dionysius — apophatic theology
+  { pattern: /dionysius|areopagite|mystical.?theology|divine.?names|pseudo_dionysius/i, icon: "✦" },
 ];
 
 export function collectionIcon(name?: string): string {

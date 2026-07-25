@@ -5,72 +5,91 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p106
 unit_label: ; It pertains to all men to know themselves and to learn self-control.+
-title: Self-Knowledge as Perceptual Training, Not Doctrine
+title: ; It pertains to all men to know themselves and to learn self-control.+
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: 'The fragment''s force lies not in exhortation but in a doubled bind: to know oneself (gnōnai heauton) is already
+  to learn self-control (sōphrosunē), yet the phrasing separates them as though they were two tasks.'
 themes:
-- breath
+- attention
+- knowledge
+- mind
 - self
+- silence
+- soul
 source_excerpt: ; It pertains to all men to know themselves and to learn self-control.+
 translation_literal: ; It pertains to all people to know themselves and to learn self-control.+
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 106
-  (Bywater Greek). Corpus index HFR_P106 follows the Diels–Kranz-style numbering used in the Pratibha
-  pilot batch.'
+commentary: 'The fragment''s force lies not in exhortation but in a doubled bind: to know oneself (gnōnai heauton) is already
+  to learn self-control (sōphrosunē), yet the phrasing separates them as though they were two tasks. This is the trap. Most
+  readers hear a moral command—*you ought to*—but Heraclitus is naming a structural fact about attention itself. When you
+  turn the gaze inward with any rigor, you immediately encounter the thing that needs controlling: the scattered, reactive,
+  appetite-driven motion of thought and impulse. You cannot know yourself without seeing this motion. The moment of seeing
+  *is* the moment of restraint beginning. The fragment does not promise that self-control will follow knowledge; it says they
+  are one act witnessed from two angles. The archaic Greek gnōnai carries the sense of *coming to know through direct encounter*,
+  not abstract reflection. And sōphrosunē is not mere temperance but the soundness of mind that comes from alignment with
+  what is—a tuning. The aphorism compresses cosmology into psychology: just as fire (the cosmic principle in Heraclitus) requires
+  measure and exchange to sustain itself, so the individual soul requires the discipline of turning attention back on itself.
+  Without that turning, you remain asleep in the common world, mistaking private appetite for shared logos.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: †Ἀνθρώποισι πᾶσι μέτεστι γιγνώσκειν ἑαυτοὺς καὶ σωφρονεῖν.†
+practice: 'When an impulse arises—to speak, to reach, to judge—pause and name it aloud in the second person: *you want to
+  interrupt; you are afraid of silence; you are reaching for certainty*. Do not suppress or indulge the impulse. Hold it in
+  language for three breaths, watching the distance between the one who names and the one who is named. That gap is self-knowledge
+  and self-control happening at once.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- breath
+- attention
 - commentary_text
 - heraclitus_fragments
+- knowledge
+- mind
 - self
+- silence
+- soul
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: †Ἀνθρώποισι πᾶσι μέτεστι γιγνώσκειν ἑαυτοὺς καὶ σωφρονεῖν.†
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: ; It pertains to all people to know themselves and to learn self-control.+
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 106
-    (Bywater Greek). Corpus index HFR_P106 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'The fragment''s force lies not in exhortation but in a doubled bind: to know oneself (gnōnai heauton) is already
+    to learn self-control (sōphrosunē), yet the phrasing separates them as though they were two tasks. This is the trap. Most
+    readers hear a moral command—*you ought to*—but Heraclitus is naming a structural fact about attention itself. When you
+    turn the gaze inward with any rigor, you immediately encounter the thing that needs controlling: the scattered, reactive,
+    appetite-driven motion of thought and impulse. You cannot know yourself without seeing this motion. The moment of seeing
+    *is* the moment of restraint beginning. The fragment does not promise that self-control will follow knowledge; it says
+    they are one act witnessed from two angles. The archaic Greek gnōnai carries the sense of *coming to know through direct
+    encounter*, not abstract reflection. And sōphrosunē is not mere temperance but the soundness of mind that comes from alignment
+    with what is—a tuning. The aphorism compresses cosmology into psychology: just as fire (the cosmic principle in Heraclitus)
+    requires measure and exchange to sustain itself, so the individual soul requires the discipline of turning attention back
+    on itself. Without that turning, you remain asleep in the common world, mistaking private appetite for shared logos.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'When an impulse arises—to speak, to reach, to judge—pause and name it aloud in the second person: *you want to interrupt;
+    you are afraid of silence; you are reaching for certainty*. Do not suppress or indulge the impulse. Hold it in language
+    for three breaths, watching the distance between the one who names and the one who is named. That gap is self-knowledge
+    and self-control happening at once.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 5
-    resonance: 'Both texts compress a cosmological or metaphysical claim into an imperative about self-recognition:
-      Heraclitus makes knowing oneself the universal human task that mirrors cosmic order (breath/logos),
-      while Plotinus makes the longing to recognize one''s true self (divine origin) the engine of virtue
-      and liberation from the physical.'
-    divergence: Heraclitus grounds self-knowledge in the immanent logos shared by all; Plotinus grounds
-      it in a transcendent divine origin the soul has forgotten and must recover through ascent.
+    resonance: 'Both texts compress a cosmological or metaphysical claim into an imperative about self-recognition: Heraclitus
+      makes knowing oneself the universal human task that mirrors cosmic order (breath/logos), while Plotinus makes the longing
+      to recognize one''s true self (divine origin) the engine of virtue and liberation from the physical.'
+    divergence: Heraclitus grounds self-knowledge in the immanent logos shared by all; Plotinus grounds it in a transcendent
+      divine origin the soul has forgotten and must recover through ascent.
     passage_id: plotinus_enneads.enn_i_6_05
   - citation: Astavakra Gita — 8.1 — 8.4
-    resonance: 'Both texts use a paradoxical inversion to teach self-mastery: Heraclitus compresses the
-      cosmological principle into the aphorism that knowing oneself is universal law; Astavakra teaches
-      that bondage and liberation hinge on the mind''s stance (desire/sorrow vs. non-desire/non-sorrow),
-      making self-control the pivot of freedom.'
-    divergence: Heraclitus treats self-knowledge as alignment with an objective cosmic principle (logos);
-      Astavakra treats liberation as a shift in the mind's internal relationship to phenomena, independent
-      of external order.
+    resonance: 'Both texts use a paradoxical inversion to teach self-mastery: Heraclitus compresses the cosmological principle
+      into the aphorism that knowing oneself is universal law; Astavakra teaches that bondage and liberation hinge on the
+      mind''s stance (desire/sorrow vs. non-desire/non-sorrow), making self-control the pivot of freedom.'
+    divergence: Heraclitus treats self-knowledge as alignment with an objective cosmic principle (logos); Astavakra treats
+      liberation as a shift in the mind's internal relationship to phenomena, independent of external order.
     passage_id: astavakra_gita.asg_sum_08_01_08_04
   layer_provenance: generated_grounded
 - kind: appendix
@@ -85,5 +104,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P106
   source_reference: Patrick (1889), frag. 106; corpus HFR_P106
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

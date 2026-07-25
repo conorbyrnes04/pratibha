@@ -5,9 +5,23 @@ title: Corpses are more worthless than excrement.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: Corpses are more worthless than excrement.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 85 (Bywater Greek). Corpus index HFR_P085 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'Heraclitus does not rank corpses below excrement as moral judgment or mere shock. He isolates
+  a threshold where the living body—still exchanging fire with the cosmos, still participating in flux—drops
+  into absolute stillness. Excrement, by contrast, retains a kind of metabolic dignity: it is transformation
+  still occurring, matter still *doing* something in the world, still part of the cycle. A corpse is not
+  merely dead; it is *finished with exchange*. It no longer burns. The fragment forces a reversal of ordinary
+  disgust-logic: we recoil from excrement because it signals life''s messy continuation; we honor corpses
+  because we mistake stillness for dignity. But for Heraclitus, the corpse is the true waste—matter that
+  has fallen out of the logos entirely, no longer even *useful* to the cosmic fire. The aphorism is not
+  morbid philosophy; it is a precise diagnosis of what happens when the tension that *is* life ceases.
+  To understand this is to recognize that your own living body''s constant shedding, sweating, digesting—its
+  refusal to be clean or finished—is what keeps you in the game.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: 'When you urinate or defecate, pause before flushing and observe without averting: this is still
+  you, still warm, still part of the continuous work of staying alive. Notice the instinct to erase it,
+  to call it waste. Then sit with a photograph or memory of someone recently dead—their stillness, the
+  absolute halt. Let the contrast teach: the body that still produces, still transforms, still stinks
+  with life is closer to the fire than any monument.'
 modes:
   bhasya: ''
   doctrinal: ''
@@ -17,7 +31,7 @@ glossary: []
 anchor_translation: Corpses are more worthless than excrement.
 source_reference: Patrick (1889), frag. 85; corpus HFR_P085
 pratibha_translation: Corpses are more worthless than excrement.
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +40,29 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Isavasya Upanishad — Mantra 17
-  resonance: 'Both texts use the dissolution of the body (corpse/ashes) as the pivot point for revealing what persists or matters cosmologically: Heraclitus inverts value by showing the dead body''s worthlessness, while the Isavasya Upanishad shows the body''s return to ashes as the condition for breath''s return to the immortal. Each treats bodily decay as the threshold where the essential (breath/prāṇa, or the principle of life) becomes visible.'
-  divergence: Heraclitus emphasizes the paradoxical inversion of worth through a single stark image; the Upanishad frames dissolution as a ritual or metaphysical transition toward the immortal, grounding it in continuity rather than negation.
+  resonance: 'Both texts use the dissolution of the body (corpse/ashes) as the pivot point for revealing
+    what persists or matters cosmologically: Heraclitus inverts value by showing the dead body''s worthlessness,
+    while the Isavasya Upanishad shows the body''s return to ashes as the condition for breath''s return
+    to the immortal. Each treats bodily decay as the threshold where the essential (breath/prāṇa, or the
+    principle of life) becomes visible.'
+  divergence: Heraclitus emphasizes the paradoxical inversion of worth through a single stark image; the
+    Upanishad frames dissolution as a ritual or metaphysical transition toward the immortal, grounding
+    it in continuity rather than negation.
   passage_id: isavasya_upanishad.isa_023
 - citation: 'Vijnana Bhairava — Yukti #1'
-  resonance: 'Both passages make breath (prāṇa/pneuma) the fundamental cosmological articulation: Heraclitus''s aphorism hinges on breath as the marker of life''s presence and absence (corpses lack it), while the Vijnana Bhairava explicitly names prāṇa as the Supreme Goddess''s constant utterance—the living flow that distinguishes the animate from the inert.'
-  divergence: Heraclitus uses breath's absence to invert value judgments about the body; the Vijnana Bhairava treats breath as the active divine principle itself, accessible through yogic practice and recognition.
+  resonance: 'Both passages make breath (prāṇa/pneuma) the fundamental cosmological articulation: Heraclitus''s
+    aphorism hinges on breath as the marker of life''s presence and absence (corpses lack it), while the
+    Vijnana Bhairava explicitly names prāṇa as the Supreme Goddess''s constant utterance—the living flow
+    that distinguishes the animate from the inert.'
+  divergence: Heraclitus uses breath's absence to invert value judgments about the body; the Vijnana Bhairava
+    treats breath as the active divine principle itself, accessible through yogic practice and recognition.
   passage_id: vijnana_bhairava.yukti_001
+themes:
+- death and stillness
+- metabolic life
+- exchange and flux
+- dignity of process
+- the living body
+- cosmic fire
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

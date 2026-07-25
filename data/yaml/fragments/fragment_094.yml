@@ -5,9 +5,21 @@ title: We ought not to act and speak as though we were asleep.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: We ought not to act and speak as though we were asleep.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 94 (Bywater Greek). Corpus index HFR_P094 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'Heraclitus does not say we are asleep—he says we act and speak *as though* we were. The conditional
+  lodges a knife between being and seeming. To act as-if-asleep is to move through the shared world (koinós)
+  as though it were private dream, to speak without hearing the logos that runs through all things, to
+  treat the waking cosmos as mere backdrop to an interior monologue. The fragment''s force lies in its
+  diagnosis of a peculiar wakefulness that mimics sleep: eyes open, mouth moving, yet deaf to the fire
+  that kindles thought and binds opposites. ''Ought not'' is not moral scolding but a call to recognition—you
+  are already doing this, already half-asleep in the marketplace, in your own house. The teaching is not
+  to *become* awake (as though waking were a future state) but to notice the specific texture of this
+  somnolence: the way we speak without listening to what we say, act without witnessing our own action.
+  The paradox cuts both ways: genuine waking is not escape from sleep but a radical attentiveness to the
+  fact that we *are* the ones who might speak as sleepers do.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: 'Interrupt one ordinary utterance today—mid-sentence, mid-complaint, mid-explanation to another
+  person—and ask aloud: ''Am I asleep right now?'' Do not answer. Return to speech only when the question
+  has made the air strange.'
 modes:
   bhasya: ''
   doctrinal: ''
@@ -17,7 +29,7 @@ glossary: []
 anchor_translation: We ought not to act and speak as though we were asleep.
 source_reference: Patrick (1889), frag. 94; corpus HFR_P094
 pratibha_translation: We ought not to act and speak as though we were asleep.
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +38,26 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Svetasvatara Upanishad — Savitr and the Birth of Sacred Attention
-  resonance: Both texts command a deliberate yoking of mental faculties toward truth as the antidote to a default state of inattention. Heraclitus warns against acting 'as though asleep'; Savitṛ 'yokes mind and intelligence toward truth,' implying that without this active yoking, one remains in obscurity.
-  divergence: Heraclitus frames wakefulness as an ethical imperative rooted in cosmological participation; the Upanishad frames it as a sacred ritual act of drawing forth hidden knowledge through a deity's agency.
+  resonance: Both texts command a deliberate yoking of mental faculties toward truth as the antidote to
+    a default state of inattention. Heraclitus warns against acting 'as though asleep'; Savitṛ 'yokes
+    mind and intelligence toward truth,' implying that without this active yoking, one remains in obscurity.
+  divergence: Heraclitus frames wakefulness as an ethical imperative rooted in cosmological participation;
+    the Upanishad frames it as a sacred ritual act of drawing forth hidden knowledge through a deity's
+    agency.
   passage_id: svetasvatara_upanishad.svu_016
 - citation: 'Vijnana Bhairava — Yukti #37'
-  resonance: Both passages locate awakening in a precise physiological or phenomenological threshold—a moment of transition where ordinary consciousness shifts. Heraclitus's image of sleep/waking marks the boundary between ignorance and truth; the breath-pause (prāṇa termination) marks where 'equality-consciousness' arises.
-  divergence: Heraclitus treats wakefulness as a permanent ethical stance; the Tantra locates it in a discrete, repeatable somatic event accessible through prāṇāyāma technique.
+  resonance: Both passages locate awakening in a precise physiological or phenomenological threshold—a
+    moment of transition where ordinary consciousness shifts. Heraclitus's image of sleep/waking marks
+    the boundary between ignorance and truth; the breath-pause (prāṇa termination) marks where 'equality-consciousness'
+    arises.
+  divergence: Heraclitus treats wakefulness as a permanent ethical stance; the Tantra locates it in a
+    discrete, repeatable somatic event accessible through prāṇāyāma technique.
   passage_id: vijnana_bhairava.yukti_037
+themes:
+- waking and sleep
+- logos and private speech
+- the shared world
+- self-recognition
+- the paradox of seeming
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

@@ -5,93 +5,97 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p069
 unit_label: The way upward and downward are one and the same.
-title: Tension Sustains the Unified Order
+title: The way upward and downward are one and the same.
 unit_type: teaching_passage
-thesis: Opposition is not a failure of order but its instrument.
+thesis: 'The fragment arrests thought at a threshold: not that opposites reconcile into unity (a later Neoplatonic softening),
+  but that the *path itself* is identical whether traced upward or downward.'
 themes:
-- breath
-- harmony
+- attention
+- soul
 - way
 source_excerpt: The way upward and downward are one and the same. Hierocles in Aur. carm. 24.
 translation_literal: The way upward and downward are one and the same. Hierocles in Aur. carm. 24.
-commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow,
-  lyre) to show that tension generates stable function. Peace as mere absence of conflict would collapse
-  the very structures that make harmony audible. The ''one'' is not mystical fusion but the single intelligible
-  order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics
-  — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick
-  (1889), fragment 69 (Bywater Greek). Corpus index HFR_P069 follows the Diels–Kranz-style numbering used
-  in the Pratibha pilot batch.'
+commentary: 'The fragment arrests thought at a threshold: not that opposites reconcile into unity (a later Neoplatonic softening),
+  but that the *path itself* is identical whether traced upward or downward. Directionality collapses. A climber and a descender
+  on the same mountain traverse one route, not two. The Greek *hodos* (way, path) names not a metaphysical principle but a
+  *traversable terrain*—singular, shared, indifferent to the walker''s intention. This is not mystical merger but geometric
+  fact. What makes this radical is that Heraclitus refuses to privilege ascent (the soul''s supposed natural motion, as Plato
+  will later claim). The path does not become meaningful through direction; direction becomes secondary to the path''s own
+  structure. For anyone moving—whether toward wisdom or away from it, toward fire or toward water—the same resistances, the
+  same footholds, the same exhaustion apply. The fragment thus dismantles the moral hierarchy embedded in ''up'' and ''down''
+  while preserving their phenomenological reality. One walks; the terrain is one; the work of walking is what matters, not
+  the compass bearing.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Ὁδὸς ἄνω κάτω μία καὶ ὡυτή.
+practice: 'Walk a familiar route—stairs, a hallway, a street—and reverse it without changing your attention: descending, notice
+  what the ascent demanded of your legs, lungs, and gaze that you now experience inverted. Where did you push? Where did you
+  brace? Repeat this reversal three times, each time asking not ''What is different?'' but ''What is the same path showing
+  me now?'''
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- breath
+- attention
 - commentary_text
-- harmony
 - heraclitus_fragments
+- soul
 - way
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Ὁδὸς ἄνω κάτω μία καὶ ὡυτή.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: The way upward and downward are one and the same. Hierocles in Aur. carm. 24.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre)
-    to show that tension generates stable function. Peace as mere absence of conflict would collapse the
-    very structures that make harmony audible. The ''one'' is not mystical fusion but the single intelligible
-    order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics
-    — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick
-    (1889), fragment 69 (Bywater Greek). Corpus index HFR_P069 follows the Diels–Kranz-style numbering
-    used in the Pratibha pilot batch.'
+  body: 'The fragment arrests thought at a threshold: not that opposites reconcile into unity (a later Neoplatonic softening),
+    but that the *path itself* is identical whether traced upward or downward. Directionality collapses. A climber and a descender
+    on the same mountain traverse one route, not two. The Greek *hodos* (way, path) names not a metaphysical principle but
+    a *traversable terrain*—singular, shared, indifferent to the walker''s intention. This is not mystical merger but geometric
+    fact. What makes this radical is that Heraclitus refuses to privilege ascent (the soul''s supposed natural motion, as
+    Plato will later claim). The path does not become meaningful through direction; direction becomes secondary to the path''s
+    own structure. For anyone moving—whether toward wisdom or away from it, toward fire or toward water—the same resistances,
+    the same footholds, the same exhaustion apply. The fragment thus dismantles the moral hierarchy embedded in ''up'' and
+    ''down'' while preserving their phenomenological reality. One walks; the terrain is one; the work of walking is what matters,
+    not the compass bearing.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'Walk a familiar route—stairs, a hallway, a street—and reverse it without changing your attention: descending, notice
+    what the ascent demanded of your legs, lungs, and gaze that you now experience inverted. Where did you push? Where did
+    you brace? Repeat this reversal three times, each time asking not ''What is different?'' but ''What is the same path showing
+    me now?'''
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: harmoniē (ἁρμονίη)
-    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic,
-      not the removal of difference. This is Heraclitus's answer to those who expect peace as sameness.
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: The Book of Chuang Tzu — Uselessness and the Middle Way
-    resonance: 'Both texts locate truth or proper functioning in the middle point between apparent opposites:
-      Heraclitus makes the upward and downward path identical, while Chuang Tzu''s speaker ''rests halfway
-      between the two,'' treating opposition itself as the site of balance rather than contradiction.'
-    divergence: Heraclitus emphasizes opposition as the *instrument* of cosmic order (dynamic tension),
-      while Chuang Tzu emphasizes non-action and release from the poles themselves (wu-wei transcendence
-      of dualism).
+    resonance: 'Both texts locate truth or proper functioning in the middle point between apparent opposites: Heraclitus makes
+      the upward and downward path identical, while Chuang Tzu''s speaker ''rests halfway between the two,'' treating opposition
+      itself as the site of balance rather than contradiction.'
+    divergence: Heraclitus emphasizes opposition as the *instrument* of cosmic order (dynamic tension), while Chuang Tzu emphasizes
+      non-action and release from the poles themselves (wu-wei transcendence of dualism).
     passage_id: the_book_of_chuang_tzu.zhuangzi_md_020
   - citation: Tao Te Ching — The Tao’s Generative Cycle
-    resonance: 'Both texts present a generative unfolding where unity and multiplicity are not opposed
-      but sequential stages of the same process: Heraclitus''s ''way upward and downward'' as a single
-      path, and the Tao Te Ching''s cascade from One to Two to Three to All things as a single productive
-      movement.'
-    divergence: Heraclitus stresses the *simultaneity* and *reversibility* of opposites (upward-downward
-      as one), while the Tao Te Ching presents a *linear emanation* from undifferentiated source through
-      differentiation.
+    resonance: 'Both texts present a generative unfolding where unity and multiplicity are not opposed but sequential stages
+      of the same process: Heraclitus''s ''way upward and downward'' as a single path, and the Tao Te Ching''s cascade from
+      One to Two to Three to All things as a single productive movement.'
+    divergence: Heraclitus stresses the *simultaneity* and *reversibility* of opposites (upward-downward as one), while the
+      Tao Te Ching presents a *linear emanation* from undifferentiated source through differentiation.
     passage_id: tao_te_ching.ttc_md_049
   - citation: 'Vijnana Bhairava — Yukti #60'
-    resonance: 'Both employ a paradoxical reversal where closing and opening, or negation and affirmation,
-      yield the same insight: Heraclitus''s unified path that moves both ways, and the Vijnana Bhairava''s
-      instruction to see blackness with eyes closed and open as identical, arriving at ''His nature''
-      through the non-difference.'
-    divergence: Heraclitus grounds this in cosmic logos and opposition as ontological principle, while
-      the Vijnana Bhairava treats it as a phenomenological technique for recognizing non-dual consciousness.
+    resonance: 'Both employ a paradoxical reversal where closing and opening, or negation and affirmation, yield the same
+      insight: Heraclitus''s unified path that moves both ways, and the Vijnana Bhairava''s instruction to see blackness with
+      eyes closed and open as identical, arriving at ''His nature'' through the non-difference.'
+    divergence: Heraclitus grounds this in cosmic logos and opposition as ontological principle, while the Vijnana Bhairava
+      treats it as a phenomenological technique for recognizing non-dual consciousness.
     passage_id: vijnana_bhairava.yukti_060
   layer_provenance: generated_grounded
 appendixes: []
@@ -101,5 +105,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P069
   source_reference: Patrick (1889), frag. 69; corpus HFR_P069
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

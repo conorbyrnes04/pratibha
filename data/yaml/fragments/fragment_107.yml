@@ -4,20 +4,37 @@ section: wisdom_pearl
 title: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act...
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act according to nature.7}*
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 107 (Bywater Greek). Corpus index HFR_P107 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act
+  according to nature.7}*
+commentary: 'This fragment does not rank virtues in a hierarchy but names self-control (sophrosyne) as
+  the *condition* under which wisdom becomes possible—and wisdom itself is not knowledge but a double
+  action: speaking truth and *consciously* acting according to nature (kata physin). The weight falls
+  on ''consciously'' (heko, or the sense of deliberate alignment). Heraclitus is not separating virtue
+  from nature or consciousness from action; he is saying that to speak truth requires first the restraint
+  to listen to what is (self-control), and to act according to nature requires the wakefulness to perceive
+  nature''s own logos—its pattern, its fire, its constant measure. The fragment dissolves the modern split
+  between virtue (inner discipline) and wisdom (outer knowledge). You cannot speak truth while your appetites
+  and fears speak through you; you cannot act according to nature while asleep to it. Self-control is
+  not repression but the clearing away of noise so that logos—the shared rational principle running through
+  all things—can be heard and followed. The ''and'' connecting truth-speaking and nature-acting is not
+  a list but a single movement: conscious alignment with what is.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: When you are about to speak, pause at the threshold of your words and feel the pull of what you
+  want to say (comfort, victory, concealment, speed). Name it silently without judgment, then speak only
+  what remains when that pull is set aside—notice whether what emerges is thinner or truer. Repeat this
+  threshold-pause for three days, tracking whether the quality of your listening to others shifts.
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act according to nature.7}*
+anchor_translation: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously
+  to act according to nature.7}*
 source_reference: Patrick (1889), frag. 107; corpus HFR_P107
-pratibha_translation: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act according to nature.7}*
-editorial_maturity: structural_draft
+pratibha_translation: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously
+  to act according to nature.7}*
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,14 +43,35 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: The Book of Chuang Tzu — chapter 11
-  resonance: 'Both texts locate virtue in a principle of non-interference or non-action that aligns with natural order: Heraclitus ties self-control to acting ''according to nature,'' while Zhuang Zi asserts that ''letting mankind alone'' (wu wei) is the only authentic governance, making restraint itself the highest wisdom.'
-  divergence: Heraclitus frames this as individual moral virtue achieved through conscious rational control, whereas Zhuang Zi dissolves the distinction between self and nature, treating non-action as spontaneous alignment rather than disciplined choice.
+  resonance: 'Both texts locate virtue in a principle of non-interference or non-action that aligns with
+    natural order: Heraclitus ties self-control to acting ''according to nature,'' while Zhuang Zi asserts
+    that ''letting mankind alone'' (wu wei) is the only authentic governance, making restraint itself
+    the highest wisdom.'
+  divergence: Heraclitus frames this as individual moral virtue achieved through conscious rational control,
+    whereas Zhuang Zi dissolves the distinction between self and nature, treating non-action as spontaneous
+    alignment rather than disciplined choice.
   passage_id: the_book_of_chuang_tzu.ctz_011
 - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
-  resonance: Both passages identify wisdom with a utterance or principle that 'does not lie'—Heraclitus's wisdom as 'speaking truth' and the Heart Sutra's prajñāpāramitā as 'true for the plain reason that it does not lie'—making truth-telling itself the vehicle of liberation or virtue.
-  divergence: Heraclitus grounds truth in conscious alignment with cosmic logos through individual virtue, while the Heart Sutra locates truth in the emptiness of conceptual proliferation, where the mantra's power lies in transcending propositional meaning.
+  resonance: Both passages identify wisdom with a utterance or principle that 'does not lie'—Heraclitus's
+    wisdom as 'speaking truth' and the Heart Sutra's prajñāpāramitā as 'true for the plain reason that
+    it does not lie'—making truth-telling itself the vehicle of liberation or virtue.
+  divergence: Heraclitus grounds truth in conscious alignment with cosmic logos through individual virtue,
+    while the Heart Sutra locates truth in the emptiness of conceptual proliferation, where the mantra's
+    power lies in transcending propositional meaning.
   passage_id: heart_sutra.hs_003
 - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 4
-  resonance: 'Both texts structure virtue as an ascent from sensory perception to a higher order of knowing: Heraclitus''s ''wisdom'' requires conscious action according to nature (a transcendence of mere appetite), and Plotinus''s soul must ''ascend, leaving the senses behind'' to perceive loftier beauties.'
-  divergence: Heraclitus emphasizes rational self-control and alignment with cosmic order, while Plotinus emphasizes mystical ascent and the soul's direct intuition of transcendent beauty independent of rational deliberation.
+  resonance: 'Both texts structure virtue as an ascent from sensory perception to a higher order of knowing:
+    Heraclitus''s ''wisdom'' requires conscious action according to nature (a transcendence of mere appetite),
+    and Plotinus''s soul must ''ascend, leaving the senses behind'' to perceive loftier beauties.'
+  divergence: Heraclitus emphasizes rational self-control and alignment with cosmic order, while Plotinus
+    emphasizes mystical ascent and the soul's direct intuition of transcendent beauty independent of rational
+    deliberation.
   passage_id: plotinus_enneads.enn_i_6_04
+themes:
+- sophrosyne and logos
+- wakefulness as prerequisite
+- nature and conscious alignment
+- truth as restraint
+- the unified act
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

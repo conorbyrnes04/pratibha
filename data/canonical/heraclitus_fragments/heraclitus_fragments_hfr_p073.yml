@@ -5,38 +5,46 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p073
 unit_label: It is hard to contend against passion, for whatever it craves it buys with its life.
-title: Desire Spends the Self as Currency
+title: It is hard to contend against passion, for whatever it craves it buys with its life.
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: The fragment does not counsel restraint or virtue; it names a structural truth about desire itself.
 themes:
-- breath
+- action
+- attention
 - desire
-- awareness
+- recognition
 - self
-- suffering
-- transformation
+- truth
+- virtue
 source_excerpt: It is hard to contend against passion, for whatever it craves it buys with its life.
 translation_literal: It is hard to contend against passion, for whatever it craves it buys with its life.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 73 (Bywater
-  Greek). Corpus index HFR_P073 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment does not counsel restraint or virtue; it names a structural truth about desire itself. Passion (thymos)
+  is not a force external to the self that can be ''contended against'' as though from a position of neutral ground. Rather,
+  the contention *is* the passion—the struggle to resist is already the payment. ''Whatever it craves it buys with its life''
+  inverts the logic of transaction: the cost is not deferred or external; it is immediate and identical with the craving itself.
+  Each moment of wanting is already a spending. The paradox cuts deeper than moral warning. Heraclitus shows that to fight
+  passion is to remain within passion''s economy, to keep paying the price by the very act of refusal. The hard truth is not
+  that passion is powerful, but that the self attempting to contend against it has already surrendered its life-force to the
+  very struggle. There is no neutral observer, no ''I'' standing apart from thymos. The fragment teaches recognition, not
+  resistance—to see that the buying happens whether we name it or not.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
+practice: 'When you notice yourself wanting something—food, approval, distraction, certainty—pause and ask: what am I spending
+  right now, in this moment of craving, before any action follows? Speak aloud the specific texture of that cost: attention,
+  ease, presence, time. Do this three times in a single day, at different moments of desire, without trying to stop the wanting.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- awareness
-- breath
+- action
+- attention
 - commentary_text
 - desire
 - heraclitus_fragments
+- recognition
 - self
-- suffering
-- transformation
+- truth
+- virtue
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
 - kind: translation
@@ -45,36 +53,39 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 73
-    (Bywater Greek). Corpus index HFR_P073 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'The fragment does not counsel restraint or virtue; it names a structural truth about desire itself. Passion (thymos)
+    is not a force external to the self that can be ''contended against'' as though from a position of neutral ground. Rather,
+    the contention *is* the passion—the struggle to resist is already the payment. ''Whatever it craves it buys with its life''
+    inverts the logic of transaction: the cost is not deferred or external; it is immediate and identical with the craving
+    itself. Each moment of wanting is already a spending. The paradox cuts deeper than moral warning. Heraclitus shows that
+    to fight passion is to remain within passion''s economy, to keep paying the price by the very act of refusal. The hard
+    truth is not that passion is powerful, but that the self attempting to contend against it has already surrendered its
+    life-force to the very struggle. There is no neutral observer, no ''I'' standing apart from thymos. The fragment teaches
+    recognition, not resistance—to see that the buying happens whether we name it or not.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'When you notice yourself wanting something—food, approval, distraction, certainty—pause and ask: what am I spending
+    right now, in this moment of craving, before any action follows? Speak aloud the specific texture of that cost: attention,
+    ease, presence, time. Do this three times in a single day, at different moments of desire, without trying to stop the
+    wanting.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Astavakra Gita — 8.1 — 8.4
-    resonance: 'Both texts identify bondage with craving/desire (vāñchati) and liberation with the cessation
-      of that same movement. Heraclitus compresses this into a paradox of passion ''buying'' with life;
-      Astavakra makes explicit the causal structure: bondage arises when mind desires or grieves, freedom
-      when it neither desires nor grieves.'
-    divergence: Heraclitus frames the paradox cosmologically (passion as a force that consumes itself),
-      while Astavakra treats it as a psychological-metaphysical principle of consciousness independent
-      of external circumstance.
+    resonance: 'Both texts identify bondage with craving/desire (vāñchati) and liberation with the cessation of that same
+      movement. Heraclitus compresses this into a paradox of passion ''buying'' with life; Astavakra makes explicit the causal
+      structure: bondage arises when mind desires or grieves, freedom when it neither desires nor grieves.'
+    divergence: Heraclitus frames the paradox cosmologically (passion as a force that consumes itself), while Astavakra treats
+      it as a psychological-metaphysical principle of consciousness independent of external circumstance.
     passage_id: astavakra_gita.asg_sum_08_01_08_04
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: Both texts locate a transformative threshold at the point of breath-tension or pause. Heraclitus's
-      paradox of passion 'buying with life' mirrors the yogic principle where the dynamic tension (sanghaṭṭa)
-      of prāṇas at breath-termination generates a shift in consciousness—the cost of craving becomes the
-      gateway to equality-consciousness.
-    divergence: Heraclitus presents this as an ironic law of nature (what passion craves destroys it),
-      while Vijnana Bhairava frames it as a deliberate yogic technique to harness that tension for liberation.
+    resonance: Both texts locate a transformative threshold at the point of breath-tension or pause. Heraclitus's paradox
+      of passion 'buying with life' mirrors the yogic principle where the dynamic tension (sanghaṭṭa) of prāṇas at breath-termination
+      generates a shift in consciousness—the cost of craving becomes the gateway to equality-consciousness.
+    divergence: Heraclitus presents this as an ironic law of nature (what passion craves destroys it), while Vijnana Bhairava
+      frames it as a deliberate yogic technique to harness that tension for liberation.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 appendixes: []
@@ -84,5 +95,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P073
   source_reference: Patrick (1889), frag. 73; corpus HFR_P073
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

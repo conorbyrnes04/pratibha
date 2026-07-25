@@ -5,9 +5,23 @@ title: The straight and crooked way of the woolcarders is one and the same.”
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: The straight and crooked way of the woolcarders is one and the same.”
-commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 50 (Bywater Greek). Corpus index HFR_P050 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The woolcarder''s straight and crooked paths produce the same finished thread. Heraclitus
+  does not collapse distinctions into mystical oneness here; he names a *functional identity* that emerges
+  through opposing motions. The straight pull and the crooked pull are not the same *appearance*—they
+  look and feel opposite—yet they serve one work, one logos. This is not ''everything is one'' but rather:
+  the path of opposition *is* the path of production. The crooked way is not a detour from the straight
+  way; it is the method by which the straight way gets made. What seems like contradiction at the level
+  of motion (forward, back, twist, release) becomes coherence at the level of outcome. The fragment refuses
+  both naive monism and naive pluralism. It asks: where do you locate the ''one''? Not in the erasure
+  of difference, but in the single necessity that binds opposites into work. The woolcarder does not choose
+  between straight and crooked; the wool itself demands both. This is the hidden attunement (harmonia)
+  that Heraclitus praises elsewhere—not harmony as smoothness, but as the tension that holds.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: While washing dishes or folding cloth, deliberately reverse your usual hand-motion every third
+  repetition—if you scrub in circles, switch to straight strokes; if you fold left-to-right, fold right-to-left—and
+  notice whether the task completes itself through the opposition rather than despite it. Do this for
+  one full session without trying to make sense of it, then sit and write what the reversal revealed about
+  necessity.
 modes:
   bhasya: ''
   doctrinal: ''
@@ -17,7 +31,7 @@ glossary: []
 anchor_translation: The straight and crooked way of the woolcarders is one and the same.”
 source_reference: Patrick (1889), frag. 50; corpus HFR_P050
 pratibha_translation: The straight and crooked way of the woolcarders is one and the same.”
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +40,29 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-  resonance: Both texts posit that apparent opposites (straight/crooked path; conventional/ultimate truth) are inseparable within a single intelligible order—neither can be grasped or traversed without the other. The 'one' in Heraclitus and the two truths in Nagarjuna are not mystical fusions but structural necessities within a coherent system.
-  divergence: Heraclitus grounds this unity in logos as cosmic intelligibility; Nagarjuna grounds it in the interdependence of linguistic convention and ultimate emptiness, making the relationship explicitly soteriological rather than merely ontological.
+  resonance: Both texts posit that apparent opposites (straight/crooked path; conventional/ultimate truth)
+    are inseparable within a single intelligible order—neither can be grasped or traversed without the
+    other. The 'one' in Heraclitus and the two truths in Nagarjuna are not mystical fusions but structural
+    necessities within a coherent system.
+  divergence: Heraclitus grounds this unity in logos as cosmic intelligibility; Nagarjuna grounds it in
+    the interdependence of linguistic convention and ultimate emptiness, making the relationship explicitly
+    soteriological rather than merely ontological.
   passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
 - citation: Tao Te Ching — The Tao’s Generative Cycle
-  resonance: 'Both texts describe a generative unfolding where apparent multiplicity emerges from and remains ordered by a single principle: Heraclitus''s single intelligible order within the straight-and-crooked, and the Tao''s production of One, Two, Three, and All things. The many are not chaotic but intelligibly derived.'
-  divergence: Heraclitus emphasizes the simultaneity and paradox of opposites within one order; the Tao Te Ching emphasizes sequential emanation and the primacy of non-being (the invisible Way) as source, making it more cosmogonic than paradoxical.
+  resonance: 'Both texts describe a generative unfolding where apparent multiplicity emerges from and
+    remains ordered by a single principle: Heraclitus''s single intelligible order within the straight-and-crooked,
+    and the Tao''s production of One, Two, Three, and All things. The many are not chaotic but intelligibly
+    derived.'
+  divergence: Heraclitus emphasizes the simultaneity and paradox of opposites within one order; the Tao
+    Te Ching emphasizes sequential emanation and the primacy of non-being (the invisible Way) as source,
+    making it more cosmogonic than paradoxical.
   passage_id: tao_te_ching.ttc_md_049
+themes:
+- opposition as method
+- functional unity
+- hidden attunement
+- work and logos
+- the crooked path
+- apparent vs intelligible
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

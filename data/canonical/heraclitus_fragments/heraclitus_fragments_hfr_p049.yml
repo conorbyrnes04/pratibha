@@ -5,49 +5,67 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p049
 unit_label: Philosophers must be learned in very many things.
-title: Perception Requires Learning Many Things
+title: Philosophers must be learned in very many things.
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: This fragment cuts against the grain of what 'philosophy' has come to mean.
 themes:
-- breath
+- attention
+- soul
+- way
 source_excerpt: Philosophers must be learned in very many things.
 translation_literal: Philosophers must be learned in very many things.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 49 (Bywater
-  Greek). Corpus index HFR_P049 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'This fragment cuts against the grain of what ''philosophy'' has come to mean. Heraclitus does not say philosophers
+  must be *wise* or must *think deeply*—he says they must be *learned in very many things* (πολυμαθίη, polymathie). The move
+  is radical: wisdom is not a unified system or a single insight grasped once and held. It demands multiplicity, a restless
+  accumulation of particular knowledges. Yet the fragment does not celebrate mere collection. The word *learned* (δεῖ, dei—must,
+  is necessary) carries necessity, not choice. A philosopher cannot avoid the many; the many are constitutive of the philosophical
+  posture itself. This inverts the Platonic ascent from shadows to Forms. For Heraclitus, the philosopher does not escape
+  the particular for the universal—the philosopher must *dwell in* the particular, must know fire and water and strife and
+  sleep, must know how the bow and lyre work, must know the waking city and the sleeping soul. The paradox: depth is achieved
+  not by penetration to a single principle but by fidelity to multiplicity. One cannot think the *logos*—the underlying measure
+  or account—without first being saturated in the many things that the logos governs. Polymathie is not distraction; it is
+  the necessary texture of attention.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Χρὴ εὖ μάλα πολλῶν ἵστορας φιλοσόφους ἄνδρας εἶναι.
+practice: Over three days, each morning name aloud one small thing you do not yet understand about your immediate surroundings—a
+  neighbor's habit, the exact sequence of sounds in your street, the way light moves across a wall at a particular hour, the
+  grammar of a gesture you repeat without thinking. Do not research or resolve it. Carry the not-knowing as a deliberate weight,
+  as material for thought rather than a gap to fill.
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- breath
+- attention
 - commentary_text
 - heraclitus_fragments
+- soul
+- way
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Χρὴ εὖ μάλα πολλῶν ἵστορας φιλοσόφους ἄνδρας εἶναι.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: Philosophers must be learned in very many things.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 49
-    (Bywater Greek). Corpus index HFR_P049 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'This fragment cuts against the grain of what ''philosophy'' has come to mean. Heraclitus does not say philosophers
+    must be *wise* or must *think deeply*—he says they must be *learned in very many things* (πολυμαθίη, polymathie). The
+    move is radical: wisdom is not a unified system or a single insight grasped once and held. It demands multiplicity, a
+    restless accumulation of particular knowledges. Yet the fragment does not celebrate mere collection. The word *learned*
+    (δεῖ, dei—must, is necessary) carries necessity, not choice. A philosopher cannot avoid the many; the many are constitutive
+    of the philosophical posture itself. This inverts the Platonic ascent from shadows to Forms. For Heraclitus, the philosopher
+    does not escape the particular for the universal—the philosopher must *dwell in* the particular, must know fire and water
+    and strife and sleep, must know how the bow and lyre work, must know the waking city and the sleeping soul. The paradox:
+    depth is achieved not by penetration to a single principle but by fidelity to multiplicity. One cannot think the *logos*—the
+    underlying measure or account—without first being saturated in the many things that the logos governs. Polymathie is not
+    distraction; it is the necessary texture of attention.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: Over three days, each morning name aloud one small thing you do not yet understand about your immediate surroundings—a
+    neighbor's habit, the exact sequence of sounds in your street, the way light moves across a wall at a particular hour,
+    the grammar of a gesture you repeat without thinking. Do not research or resolve it. Carry the not-knowing as a deliberate
+    weight, as material for thought rather than a gap to fill.
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -56,5 +74,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P049
   source_reference: Patrick (1889), frag. 49; corpus HFR_P049
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

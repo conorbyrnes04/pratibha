@@ -5,9 +5,24 @@ title: A man’s character is his daemon.®
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: A man’s character is his daemon.®
-commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889), fragment 121 (Bywater Greek). Corpus index HFR_P121 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'Heraclitus does not say character *expresses* daemon or *reflects* it—he says character *is*
+  daemon. The move collapses the distance between inner nature and governing force. Daemon (daimōn) in
+  early Greek thought names the allotment, the portion of cosmic order assigned to each being; it is not
+  a separate spirit-guide but the very grain of one''s existence. To say a man''s character is his daemon
+  is to say: what you *do* repeatedly, how you *choose* under pressure, the shape of your attention and
+  refusal—this is not decoration over some truer self. It *is* the daemon. There is no hidden essence
+  waiting to be discovered; there is only the daemon-character actively being lived or evaded. The fragment
+  cuts against the later Platonic split between soul and body, between true nature and false appearance.
+  For Heraclitus, the daemon is not what you *have*; it is what you *are becoming* through each act. The
+  ethical weight lands here: you cannot blame fate or invoke a better self elsewhere. The daemon is the
+  measure you embody—and you are always already embodying it, whether you wake to it or sleep through
+  it.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: When you catch yourself justifying an action by saying 'that's just how I am' or 'that's my nature,'
+  stop and name aloud the specific choice or habit you just performed—not as a trait but as a present
+  act (I spoke harshly; I looked away; I chose comfort). Repeat the act-name three times, each time feeling
+  the weight of it as daemon, not excuse, until the boundary between 'I' and 'my character' dissolves
+  into one continuous, accountable presence.
 modes:
   bhasya: ''
   doctrinal: ''
@@ -19,8 +34,9 @@ source_reference: Patrick (1889), frag. 121; corpus HFR_P121
 pratibha_translation: A man’s character is his daemon.®
 key_terms:
 - term: psychē (ψυχή)
-  definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns ethics into cosmology: how you live is how you align (or fail) with measure.'
-editorial_maturity: structural_draft
+  definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate.
+    The fragment turns ethics into cosmology: how you live is how you align (or fail) with measure.'
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -29,10 +45,27 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 5
-  resonance: 'Both texts make character/virtue the vehicle for recognizing and aligning with a transcendent principle: Heraclitus locates daemon (cosmic measure) within ethos (character), while Plotinus locates the soul''s true nature through the experience of virtue in action—each treats ethical formation as simultaneous self-discovery and cosmic attunement.'
-  divergence: Heraclitus emphasizes character as already-present alignment with an impersonal, universal logos; Plotinus frames virtue as a recovery of forgotten divine origin, requiring a break from the physical and a reorientation toward the transcendent One.
+  resonance: 'Both texts make character/virtue the vehicle for recognizing and aligning with a transcendent
+    principle: Heraclitus locates daemon (cosmic measure) within ethos (character), while Plotinus locates
+    the soul''s true nature through the experience of virtue in action—each treats ethical formation as
+    simultaneous self-discovery and cosmic attunement.'
+  divergence: Heraclitus emphasizes character as already-present alignment with an impersonal, universal
+    logos; Plotinus frames virtue as a recovery of forgotten divine origin, requiring a break from the
+    physical and a reorientation toward the transcendent One.
   passage_id: plotinus_enneads.enn_i_6_05
 - citation: The Book of Chuang Tzu — chapter 11
-  resonance: 'Both reject imposed external governance in favor of a natural, self-ordering principle: Heraclitus''s daemon as intrinsic measure parallels Zhuangzi''s refusal of deliberate governing, each positing that authentic order emerges from non-interference with what is already aligned.'
-  divergence: Heraclitus grounds this in a cosmic logos that character must consciously embody; Zhuangzi grounds it in wu-wei (non-action), where the absence of imposed order allows spontaneous rightness to manifest.
+  resonance: 'Both reject imposed external governance in favor of a natural, self-ordering principle:
+    Heraclitus''s daemon as intrinsic measure parallels Zhuangzi''s refusal of deliberate governing, each
+    positing that authentic order emerges from non-interference with what is already aligned.'
+  divergence: Heraclitus grounds this in a cosmic logos that character must consciously embody; Zhuangzi
+    grounds it in wu-wei (non-action), where the absence of imposed order allows spontaneous rightness
+    to manifest.
   passage_id: the_book_of_chuang_tzu.ctz_011
+themes:
+- character as cosmos
+- daemon and choice
+- no hidden self
+- measure and embodiment
+- waking to one's own nature
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

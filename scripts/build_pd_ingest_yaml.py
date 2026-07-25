@@ -575,36 +575,15 @@ DIONYSIUS = [
 
 
 def build_dionysius() -> int:
-    out = YAML / "pseudo_dionysius_mystical_theology"
-    n = 0
-    for item in DIONYSIUS:
-        unit = {
-            "sutra_id": item["id"].upper(),
-            "collection": "Pseudo-Dionysius — Mystical Theology",
-            "section": item["section"],
-            "title": item["title"],
-            "sanskrit": item["greek"],
-            "transliteration": "Greek (corpus original field).",
-            "translation": item["english"],
-            "commentary": commentary(
-                f"«{item['title']}» presses apophatic theology to its limit: God is reached not by adding "
-                "predicates but by a disciplined unknowing that refuses both crude affirmation and crude denial."
-            ),
-            "abhyasa": "Sit ten minutes in wordless attention. When a theological image arises, gently release it without replacing it by another.",
-            "themes": ["knowledge", "ignorance", "stillness", "silence", "attention", "grace"],
-            "glossary": [],
-            "source": (
-                "English: C.E. Rolt, Dionysius the Areopagite on the Divine Names and Mystical Theology "
-                "(SPCK, 1920), public domain. Greek lemmas from the traditional Mystical Theology text "
-                "tradition (PG / critical editions); short incipits sourced for alignment. "
-                f"{item['section']}."
-            ),
-            "editorial_maturity": "structural_draft",
-            "layer_provenance": {"translation": "public_domain", "original": "sourced"},
-        }
-        dump(out / f"{item['id']}.yml", unit)
-        n += 1
-    return n
+    """Delegate to the expanded ~20-unit builder (MT + Divine Names)."""
+    import importlib.util
+
+    path = Path(__file__).resolve().parent / "build_dionysius_yaml.py"
+    spec = importlib.util.spec_from_file_location("build_dionysius_yaml", path)
+    mod = importlib.util.module_from_spec(spec)
+    assert spec and spec.loader
+    spec.loader.exec_module(mod)
+    return int(mod.build())
 
 
 # Curated Analects: traditional Chinese + James Legge (Gutenberg #3330 / #4094), public domain.

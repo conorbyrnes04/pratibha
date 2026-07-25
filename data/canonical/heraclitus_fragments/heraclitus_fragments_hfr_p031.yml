@@ -7,70 +7,83 @@ unit_id: heraclitus_fragments.hfr_p031
 unit_label: If there were no sun, it would be night.
 title: If there were no sun, it would be night.
 unit_type: teaching_passage
-thesis: The 'one' is not mystical fusion but the single intelligible order within apparent plurality.
+thesis: 'The fragment''s paradox turns on a doubled negation: the sensible sun can be escaped (close your eyes, enter a cave,
+  die), but the intelligible sun—the logos, the ordering principle that *is* the sun''s necessity—cannot.'
 themes:
+- attention
 - breath
-source_excerpt: If there were no sun, it would be night. one may escape the sensible light, but the intellectual
-  it is impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never sets Ὁ XX
-  VIII.—
-translation_literal: If there were no sun, it would be night. one may escape the sensible light, but the
-  intellectual it is impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never
-  sets Ὁ XX VIII.—
-commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
-  To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
-  the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 31 (Bywater
-  Greek). Corpus index HFR_P031 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+source_excerpt: If there were no sun, it would be night. one may escape the sensible light, but the intellectual it is impossible
+  to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never sets Ὁ XX VIII.—
+translation_literal: If there were no sun, it would be night. one may escape the sensible light, but the intellectual it is
+  impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never sets Ὁ XX VIII.—
+commentary: 'The fragment''s paradox turns on a doubled negation: the sensible sun can be escaped (close your eyes, enter
+  a cave, die), but the intelligible sun—the logos, the ordering principle that *is* the sun''s necessity—cannot. Heraclitus
+  does not mean a mystical fusion or hidden god. He means that the rational structure binding all things (that which makes
+  the sun rise, makes fire burn, makes justice hold) has no eclipse. You can refuse to see it; you cannot refuse its operation.
+  The phrase ''never sets'' (ἀδύνατος, unable to go down) is not poetic ornament—it names the very condition of intelligibility
+  itself. What ''sets'' is the particular orb; what remains is the *principle* that makes setting and rising intelligible
+  as a single order. To say ''if there were no sun, it would be night'' is to say: remove the visible source, and you remove
+  only appearance. The deeper sun—the law of alternation, of measure, of the one-in-many—persists precisely because it is
+  not an object you can remove. The old commentary''s error was to soften this into fusion. Heraclitus insists on clarity:
+  the one is not mystical but *structural*, visible in every particular that obeys it, yet never itself an object among objects.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Εἰ μὴ ἥλιος ἦν, εὐφρόνη ἂν ἦν.
+practice: 'At the moment you notice you have stopped paying attention—mid-conversation, mid-scroll, mid-thought—name aloud
+  or internally what you *cannot* unsee about the present moment: the light on a surface, the rhythm of breath, the fact that
+  you are aware. Do not try to hold it. Return to the task. Repeat this three times in a single day, each time noting whether
+  the ''light'' you named was easier or harder to forget than the thing you were distracted by.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
+- attention
 - breath
 - commentary_text
 - heraclitus_fragments
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Εἰ μὴ ἥλιος ἦν, εὐφρόνη ἂν ἦν.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: If there were no sun, it would be night. one may escape the sensible light, but the intellectual
-    it is impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never sets Ὁ
-    XX VIII.—
+  body: If there were no sun, it would be night. one may escape the sensible light, but the intellectual it is impossible
+    to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never sets Ὁ XX VIII.—
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
-    To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
-    the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 31 (Bywater
-    Greek). Corpus index HFR_P031 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+  body: 'The fragment''s paradox turns on a doubled negation: the sensible sun can be escaped (close your eyes, enter a cave,
+    die), but the intelligible sun—the logos, the ordering principle that *is* the sun''s necessity—cannot. Heraclitus does
+    not mean a mystical fusion or hidden god. He means that the rational structure binding all things (that which makes the
+    sun rise, makes fire burn, makes justice hold) has no eclipse. You can refuse to see it; you cannot refuse its operation.
+    The phrase ''never sets'' (ἀδύνατος, unable to go down) is not poetic ornament—it names the very condition of intelligibility
+    itself. What ''sets'' is the particular orb; what remains is the *principle* that makes setting and rising intelligible
+    as a single order. To say ''if there were no sun, it would be night'' is to say: remove the visible source, and you remove
+    only appearance. The deeper sun—the law of alternation, of measure, of the one-in-many—persists precisely because it is
+    not an object you can remove. The old commentary''s error was to soften this into fusion. Heraclitus insists on clarity:
+    the one is not mystical but *structural*, visible in every particular that obeys it, yet never itself an object among
+    objects.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'At the moment you notice you have stopped paying attention—mid-conversation, mid-scroll, mid-thought—name aloud or
+    internally what you *cannot* unsee about the present moment: the light on a surface, the rhythm of breath, the fact that
+    you are aware. Do not try to hold it. Return to the task. Repeat this three times in a single day, each time noting whether
+    the ''light'' you named was easier or harder to forget than the thing you were distracted by.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts establish that apparent duality (sun/night, conventional/ultimate) is not a
-      contradiction but a single intelligible order: Heraclitus shows night depends on sun''s absence
-      as a unified logical structure; Nagarjuna shows conventional and ultimate are inseparable poles
-      of one non-dual pointing.'
-    divergence: Heraclitus grounds unity in cosmic logos and sensible order; Nagarjuna grounds it in emptiness
-      (śūnyatā) and the impossibility of independent reference.
+    resonance: 'Both texts establish that apparent duality (sun/night, conventional/ultimate) is not a contradiction but a
+      single intelligible order: Heraclitus shows night depends on sun''s absence as a unified logical structure; Nagarjuna
+      shows conventional and ultimate are inseparable poles of one non-dual pointing.'
+    divergence: Heraclitus grounds unity in cosmic logos and sensible order; Nagarjuna grounds it in emptiness (śūnyatā) and
+      the impossibility of independent reference.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: 'Both texts locate intelligible order within a dynamic tension or opposition: Heraclitus''s
-      ''one'' emerges from the tension of opposites (day/night); Yukti #37 shows equality-consciousness
-      arises from the dynamic tension (sanghaṭṭa) of the two prāṇas at their termination.'
-    divergence: Heraclitus treats tension as the eternal structure of logos itself; the Vijnana Bhairava
-      treats it as a yogic technique for accessing non-dual awareness through breath manipulation.
+    resonance: 'Both texts locate intelligible order within a dynamic tension or opposition: Heraclitus''s ''one'' emerges
+      from the tension of opposites (day/night); Yukti #37 shows equality-consciousness arises from the dynamic tension (sanghaṭṭa)
+      of the two prāṇas at their termination.'
+    divergence: Heraclitus treats tension as the eternal structure of logos itself; the Vijnana Bhairava treats it as a yogic
+      technique for accessing non-dual awareness through breath manipulation.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 appendixes: []
@@ -80,5 +93,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P031
   source_reference: Patrick (1889), frag. 31; corpus HFR_P031
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

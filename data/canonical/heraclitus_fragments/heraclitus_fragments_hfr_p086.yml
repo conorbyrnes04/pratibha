@@ -5,85 +5,81 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p086
 unit_label: Being born, they will only to live and die, or rather to find rest, and they leave childr...
-title: Mortality Reveals the Single Intelligible Order
+title: Being born, they will only to live and die, or rather to find rest, and they leave childr...
 unit_type: teaching_passage
-thesis: The 'one' is not mystical fusion but the single intelligible order within apparent plurality.
+thesis: This fragment strips away all consolation.
 themes:
-- breath
-- impermanence
 - death
-- transformation
-- harmony
-- awareness
-- knowledge
-source_excerpt: Being born, they will only to live and die, or rather to find rest, and they leave children
-  who likewise are to die.
-translation_literal: Being born, they will only to live and die, or rather to find rest, and they leave
-  children who likewise are to die.
-commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
-  To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
-  the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 86 (Bywater
-  Greek). Corpus index HFR_P086 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+- soul
+- virtue
+source_excerpt: Being born, they will only to live and die, or rather to find rest, and they leave children who likewise are
+  to die.
+translation_literal: Being born, they will only to live and die, or rather to find rest, and they leave children who likewise
+  are to die.
+commentary: 'This fragment strips away all consolation. Birth is not arrival; it is conscription into a single trajectory—live,
+  die, reproduce, die again. The word ''rest'' (anapausis) appears as the only relief, yet it comes only through death, not
+  through any philosophical insight or virtue. Heraclitus does not soften this with promise of immortal soul or eternal return;
+  he names the bare fact: we are born into a debt we cannot refuse, and we pass that debt to our children. The repetition—''likewise
+  are to die''—is not rhetorical flourish but the structure itself: each generation receives the same sentence. What makes
+  this fragment radical is not that it announces mortality (any sophist could do that) but that it refuses to distinguish
+  the human from the cyclical. We are not fallen from a higher state; we are the pattern itself. To understand this is not
+  to transcend it but to stop pretending the pattern is anything other than what it is. The teaching lies in the refusal of
+  uplift.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Γενόμενοι ζώειν ἐθέλουσι μόρους τ' ἔχειν· μᾶλλον δὲ ἀναπαύεσθαι, καὶ παῖδας καταλείπουσι
-  μόρους γενέσθαι.
+practice: 'At the moment you notice you are planning—for a child, a project, a legacy, a name to endure—pause and name aloud
+  what you are doing: ''I am arranging for something to die.'' Do not turn away from the phrase; let it stand without softening
+  or reframing. Return to the immediate act in front of you.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- awareness
-- breath
 - commentary_text
 - death
-- harmony
 - heraclitus_fragments
-- impermanence
-- knowledge
-- transformation
+- soul
+- virtue
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Γενόμενοι ζώειν ἐθέλουσι μόρους τ' ἔχειν· μᾶλλον δὲ ἀναπαύεσθαι, καὶ παῖδας καταλείπουσι μόρους
-    γενέσθαι.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: Being born, they will only to live and die, or rather to find rest, and they leave children who
-    likewise are to die.
+  body: Being born, they will only to live and die, or rather to find rest, and they leave children who likewise are to die.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
-    To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
-    the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 86 (Bywater
-    Greek). Corpus index HFR_P086 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+  body: 'This fragment strips away all consolation. Birth is not arrival; it is conscription into a single trajectory—live,
+    die, reproduce, die again. The word ''rest'' (anapausis) appears as the only relief, yet it comes only through death,
+    not through any philosophical insight or virtue. Heraclitus does not soften this with promise of immortal soul or eternal
+    return; he names the bare fact: we are born into a debt we cannot refuse, and we pass that debt to our children. The repetition—''likewise
+    are to die''—is not rhetorical flourish but the structure itself: each generation receives the same sentence. What makes
+    this fragment radical is not that it announces mortality (any sophist could do that) but that it refuses to distinguish
+    the human from the cyclical. We are not fallen from a higher state; we are the pattern itself. To understand this is not
+    to transcend it but to stop pretending the pattern is anything other than what it is. The teaching lies in the refusal
+    of uplift.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'At the moment you notice you are planning—for a child, a project, a legacy, a name to endure—pause and name aloud
+    what you are doing: ''I am arranging for something to die.'' Do not turn away from the phrase; let it stand without softening
+    or reframing. Return to the immediate act in front of you.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts locate a single intelligible order within the apparent cycle of life and death
-      through the mechanism of breath: Heraclitus sees the ''one'' as the order within mortality''s plurality;
-      the Vijnana Bhairava sees the Supreme articulating itself through the dual prāṇa-jīva rhythm (exhale-inhale)
-      as the fundamental life-pattern.'
-    divergence: Heraclitus treats breath as the metaphysical substrate of transience itself; the Vijnana
-      Bhairava treats breath as the goddess's conscious self-articulation, making it a vehicle for recognition
-      and non-dual consciousness rather than mere natural law.
+    resonance: 'Both texts locate a single intelligible order within the apparent cycle of life and death through the mechanism
+      of breath: Heraclitus sees the ''one'' as the order within mortality''s plurality; the Vijnana Bhairava sees the Supreme
+      articulating itself through the dual prāṇa-jīva rhythm (exhale-inhale) as the fundamental life-pattern.'
+    divergence: Heraclitus treats breath as the metaphysical substrate of transience itself; the Vijnana Bhairava treats breath
+      as the goddess's conscious self-articulation, making it a vehicle for recognition and non-dual consciousness rather
+      than mere natural law.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both passages mark the dissolution of individual breath into a universal element as the
-      natural endpoint of embodied existence: Heraclitus''s ''find rest'' through death parallels the
-      Isavasya''s return of breath to immortal air and body to ashes.'
-    divergence: Heraclitus frames this as the inevitable cycle within a single intelligible order; the
-      Isavasya frames it as a ritual invocation of liberation, treating the dissolution as spiritually
-      significant rather than merely structural.
+    resonance: 'Both passages mark the dissolution of individual breath into a universal element as the natural endpoint of
+      embodied existence: Heraclitus''s ''find rest'' through death parallels the Isavasya''s return of breath to immortal
+      air and body to ashes.'
+    divergence: Heraclitus frames this as the inevitable cycle within a single intelligible order; the Isavasya frames it
+      as a ritual invocation of liberation, treating the dissolution as spiritually significant rather than merely structural.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 appendixes: []
@@ -93,5 +89,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P086
   source_reference: Patrick (1889), frag. 86; corpus HFR_P086
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

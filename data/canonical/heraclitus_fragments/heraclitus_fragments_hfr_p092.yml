@@ -5,92 +5,88 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p092
 unit_label: Although the Law of Reason is common, the majority of people live as though they had an u...
-title: The Common Logos Remains Unheard
+title: Although the Law of Reason is common, the majority of people live as though they had an u...
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: 'The fragment''s force lies not in condemning stupidity but in naming a specific blindness: the *logos* (law, ratio,
+  intelligibility) is *xynos*—shared, common, available to all—yet people treat understanding as *idion*, their own private
+  possession.'
 themes:
-- awareness
-- ignorance
-- knowledge
-- mind
-- silence
-- truth
-source_excerpt: Although the Law of Reason is common, the majority of people live as though they had an
-  understanding of their own.
-translation_literal: Although the Law of Reason is common, the majority of people live as though they
-  had an understanding of their own.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 92 (Bywater
-  Greek). Corpus index HFR_P092 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+- consciousness
+- self
+source_excerpt: Although the Law of Reason is common, the majority of people live as though they had an understanding of their
+  own.
+translation_literal: Although the Law of Reason is common, the majority of people live as though they had an understanding
+  of their own.
+commentary: 'The fragment''s force lies not in condemning stupidity but in naming a specific blindness: the *logos* (law,
+  ratio, intelligibility) is *xynos*—shared, common, available to all—yet people treat understanding as *idion*, their own
+  private possession. Heraclitus is not saying most people are dumb; he is saying they mistake the universal for the particular,
+  the found-in-common for the self-generated. The paradox cuts deeper than mere disagreement: it exposes a structural delusion
+  in how consciousness operates. You inherit language, rhythm, the very structure of thought from the world, yet experience
+  it as *yours*. The logos speaks through you; you hear it as your voice. This is not moral failing but the default mode of
+  waking life—a kind of sleepwalking through the shared while naming it private. The fragment asks: can you notice the moment
+  when a thought arrives *before* you claim it? When does understanding cease to be *common* and become *mine*?'
 insight: ''
-practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
-  experience it actually rests on. Can you hear the claim, not only think it?
-sanskrit_devanagari: Τοῦ λόγου δ' ἐόντος ξυνοῦ, ζώουσι οἱ πολλοὶ ὡς ἰδίην ἔχοντες φρόνησιν.
+practice: Speak aloud a strong conviction—one you've held for years—then stop mid-sentence and listen to the rhythm, cadence,
+  and phrasing as though hearing it for the first time. Whose speech-patterns are moving through your mouth? Whose images,
+  whose turns of phrase? Continue speaking but track the borrowed architecture underneath the personal certainty.
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- awareness
 - commentary_text
+- consciousness
 - heraclitus_fragments
-- ignorance
-- knowledge
-- mind
-- silence
-- truth
+- self
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Τοῦ λόγου δ' ἐόντος ξυνοῦ, ζώουσι οἱ πολλοὶ ὡς ἰδίην ἔχοντες φρόνησιν.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: Although the Law of Reason is common, the majority of people live as though they had an understanding
-    of their own.
+  body: Although the Law of Reason is common, the majority of people live as though they had an understanding of their own.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 92
-    (Bywater Greek). Corpus index HFR_P092 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'The fragment''s force lies not in condemning stupidity but in naming a specific blindness: the *logos* (law, ratio,
+    intelligibility) is *xynos*—shared, common, available to all—yet people treat understanding as *idion*, their own private
+    possession. Heraclitus is not saying most people are dumb; he is saying they mistake the universal for the particular,
+    the found-in-common for the self-generated. The paradox cuts deeper than mere disagreement: it exposes a structural delusion
+    in how consciousness operates. You inherit language, rhythm, the very structure of thought from the world, yet experience
+    it as *yours*. The logos speaks through you; you hear it as your voice. This is not moral failing but the default mode
+    of waking life—a kind of sleepwalking through the shared while naming it private. The fragment asks: can you notice the
+    moment when a thought arrives *before* you claim it? When does understanding cease to be *common* and become *mine*?'
   layer_provenance: template-assembled
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Phaedo (Plato) — Knowledge as Recollection
-    resonance: Both texts posit that true knowledge is not a novel acquisition but a re-cognition of what
-      the mind already possesses or measures by. Heraclitus claims the common Logos is available to all
-      yet most live as though they have private understanding; Plato's recollection doctrine holds that
-      learning re-recognizes standards the mind already carries.
-    divergence: Heraclitus emphasizes the paradox of universal access paired with willful ignorance; Plato
-      locates the problem in forgetting and the need for dialectical recovery of innate forms.
-    passage_id: phaedo_plato.phaedo_md_002
-  - citation: Isavasya Upanishad — Mantra 12
-    resonance: 'Both texts diagnose a structural trap: exclusive commitment to one pole (unmanifest or
-      manifest; private understanding or the common Logos) leads to darkness or error. The problem is
-      not lack of access but misdirected attention or false choice.'
-    divergence: Heraclitus frames the error as living by private opinion despite universal availability;
-      the Isavasya frames it as devotion to only one metaphysical dimension, requiring balance between
-      both.
-    passage_id: isavasya_upanishad.isa_018
-  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
-  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
-    experience it actually rests on. Can you hear the claim, not only think it?
+  body: Speak aloud a strong conviction—one you've held for years—then stop mid-sentence and listen to the rhythm, cadence,
+    and phrasing as though hearing it for the first time. Whose speech-patterns are moving through your mouth? Whose images,
+    whose turns of phrase? Continue speaking but track the borrowed architecture underneath the personal certainty.
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: Logos (λόγος)
-    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern
-      according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s
-      ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible
-      speech).'
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Phaedo (Plato) — Knowledge as Recollection
+    resonance: Both texts posit that true knowledge is not a novel acquisition but a re-cognition of what the mind already
+      possesses or measures by. Heraclitus claims the common Logos is available to all yet most live as though they have private
+      understanding; Plato's recollection doctrine holds that learning re-recognizes standards the mind already carries.
+    divergence: Heraclitus emphasizes the paradox of universal access paired with willful ignorance; Plato locates the problem
+      in forgetting and the need for dialectical recovery of innate forms.
+    passage_id: phaedo_plato.phaedo_md_002
+  - citation: Isavasya Upanishad — Mantra 12
+    resonance: 'Both texts diagnose a structural trap: exclusive commitment to one pole (unmanifest or manifest; private understanding
+      or the common Logos) leads to darkness or error. The problem is not lack of access but misdirected attention or false
+      choice.'
+    divergence: Heraclitus frames the error as living by private opinion despite universal availability; the Isavasya frames
+      it as devotion to only one metaphysical dimension, requiring balance between both.
+    passage_id: isavasya_upanishad.isa_018
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -98,5 +94,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P092
   source_reference: Patrick (1889), frag. 92; corpus HFR_P092
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

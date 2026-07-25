@@ -4,20 +4,38 @@ section: wisdom_pearl
 title: The majority of people have no understanding of the things with which they daily meet, no...
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: The majority of people have no understanding of the things with which they daily meet, nor, when instructed, do they have any right knowledge of them, although to themselves they seem to have.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 5 (Bywater Greek). Corpus index HFR_P005 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: The majority of people have no understanding of the things with which they daily meet, nor,
+  when instructed, do they have any right knowledge of them, although to themselves they seem to have.
+commentary: 'Heraclitus does not say people lack intelligence; he says they lack *synesis*—a gathering-together,
+  a holding-in-mind of what appears. The fragment''s sting lies in its middle clause: ''nor, when instructed,
+  do they have any right knowledge of them.'' Instruction changes nothing. Why? Because the problem is
+  not ignorance but a peculiar blindness-while-seeing. People *seem to themselves* to understand the daily—the
+  cup, the threshold, the face across the table. This seeming-to-oneself is the trap. It forecloses inquiry.
+  The fragment does not mourn stupidity; it diagnoses a confidence that prevents perception. To meet something
+  daily is to be in constant contact with it, yet that constancy breeds a kind of sleep. The logos (the
+  intelligible pattern, the account) that runs through all things remains unheard precisely where it is
+  most audible—in the ordinary. Instruction cannot penetrate this because instruction arrives as *new*
+  knowledge, and the listener already believes they possess what is being offered. The teaching, then,
+  is not doctrinal but diagnostic: it asks you to notice the exact moment when familiarity becomes opacity,
+  when daily contact becomes daily absence.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: Spend one hour with a single ordinary object you use without thought—a doorknob, a cup, a key—and
+  write down three things you notice about it that you had never seen before, no matter how small. Then
+  notice what resistance or impatience arose while you were looking.
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: The majority of people have no understanding of the things with which they daily meet, nor, when instructed, do they have any right knowledge of them, although to themselves they seem to have.
+anchor_translation: The majority of people have no understanding of the things with which they daily meet,
+  nor, when instructed, do they have any right knowledge of them, although to themselves they seem to
+  have.
 source_reference: Patrick (1889), frag. 5; corpus HFR_P005
-pratibha_translation: The majority of people have no understanding of the things with which they daily meet, nor, when instructed, do they have any right knowledge of them, although to themselves they seem to have.
-editorial_maturity: structural_draft
+pratibha_translation: The majority of people have no understanding of the things with which they daily
+  meet, nor, when instructed, do they have any right knowledge of them, although to themselves they seem
+  to have.
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,14 +44,33 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
-  resonance: 'Both texts identify a structural blindness: people perform or undergo a continuous act (soul''s characteristic activity, or daily encounters with things) yet remain fundamentally unaware of it because attention is misdirected—toward sense-experience in Plotinus, toward mere seeming-to-know in Heraclitus.'
-  divergence: Plotinus locates the problem in the soul's divided attention between intelligible and sensible realms; Heraclitus grounds it in a failure to grasp the logos operative in ordinary phenomena themselves.
+  resonance: 'Both texts identify a structural blindness: people perform or undergo a continuous act (soul''s
+    characteristic activity, or daily encounters with things) yet remain fundamentally unaware of it because
+    attention is misdirected—toward sense-experience in Plotinus, toward mere seeming-to-know in Heraclitus.'
+  divergence: Plotinus locates the problem in the soul's divided attention between intelligible and sensible
+    realms; Heraclitus grounds it in a failure to grasp the logos operative in ordinary phenomena themselves.
   passage_id: plotinus_enneads.enn_v_1_12
 - citation: 'The Book of Chuang Tzu — The River Spirit''s Humbling: Perspective and the Infinite'
-  resonance: 'Both use a spatial or perspectival constraint to expose the limits of ordinary understanding: the well-frog cannot comprehend the ocean due to its narrow sphere; the majority cannot understand daily things because they lack the requisite scope of perception or logos-attunement.'
-  divergence: Zhuangzi emphasizes incommensurability of scales and frames of reference; Heraclitus emphasizes a universal logos that people fail to recognize despite encountering it constantly.
+  resonance: 'Both use a spatial or perspectival constraint to expose the limits of ordinary understanding:
+    the well-frog cannot comprehend the ocean due to its narrow sphere; the majority cannot understand
+    daily things because they lack the requisite scope of perception or logos-attunement.'
+  divergence: Zhuangzi emphasizes incommensurability of scales and frames of reference; Heraclitus emphasizes
+    a universal logos that people fail to recognize despite encountering it constantly.
   passage_id: the_book_of_chuang_tzu.zhuangzi_md_017
 - citation: 'Know Yourself (Ibn Arabi / Balyani) — Pearl #26'
-  resonance: 'Both diagnose a false or inverted knowledge-claim: most people who profess understanding (of God, or of things met daily) are actually caught in a misconception or error about what knowledge requires, mistaking a derivative or negated state for true knowing.'
-  divergence: Ibn Arabi identifies the error as making knowledge dependent on annihilation of existence; Heraclitus identifies it as mistaking subjective seeming-to-know for objective understanding of the logos.
+  resonance: 'Both diagnose a false or inverted knowledge-claim: most people who profess understanding
+    (of God, or of things met daily) are actually caught in a misconception or error about what knowledge
+    requires, mistaking a derivative or negated state for true knowing.'
+  divergence: Ibn Arabi identifies the error as making knowledge dependent on annihilation of existence;
+    Heraclitus identifies it as mistaking subjective seeming-to-know for objective understanding of the
+    logos.
   passage_id: know_yourself_ibn_arabi_balyani.kys_p026
+themes:
+- seeming vs. knowing
+- the familiar as invisible
+- instruction's limit
+- daily blindness
+- logos in the ordinary
+- confidence as obstacle
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

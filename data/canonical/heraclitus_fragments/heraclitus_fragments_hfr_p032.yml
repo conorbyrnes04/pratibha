@@ -5,90 +5,87 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p032
 unit_label: cerning the sun this cannot happen, since, being nourished in the same manner, as they sa...
-title: The Sun Renews Itself Continuously
+title: cerning the sun this cannot happen, since, being nourished in the same manner, as they sa...
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: The sun is not merely renewed each day—it is *continuously* new, each moment a fresh ignition.
 themes:
-- breath
-- awareness
-- impermanence
-- transformation
-- stillness
-- knowledge
-- simplicity
-source_excerpt: cerning the sun this cannot happen, since, being nourished in the same manner, as they
-  say, it is plain that the sun is not only, as Heraclitus says, new every day, but it is continually
-  new. Olympiodorus in Meteor. 1. 1. fol. 30 a.
-translation_literal: cerning the sun this cannot happen, since, being nourished in the same manner, as
-  they say, it is plain that the sun is not only, as Heraclitus says, new every day, but it is continually
-  new. Olympiodorus in Meteor. 1. 1. fol. 30 a.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 32 (Bywater
-  Greek). Corpus index HFR_P032 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+- self
+- witness
+source_excerpt: cerning the sun this cannot happen, since, being nourished in the same manner, as they say, it is plain that
+  the sun is not only, as Heraclitus says, new every day, but it is continually new. Olympiodorus in Meteor. 1. 1. fol. 30
+  a.
+translation_literal: cerning the sun this cannot happen, since, being nourished in the same manner, as they say, it is plain
+  that the sun is not only, as Heraclitus says, new every day, but it is continually new. Olympiodorus in Meteor. 1. 1. fol.
+  30 a.
+commentary: 'The sun is not merely renewed each day—it is *continuously* new, each moment a fresh ignition. Olympiodorus preserves
+  what Heraclitus saw: nourishment (trophe) is the mechanism. The sun feeds on what sustains it, and in that feeding, it ceases
+  to be the sun of the previous instant. This is not metaphor about change or flux in the abstract. It is a claim about *identity
+  through discontinuity*. The same sun, yes—we call it by one name—but never the same sun twice. The paradox cuts deeper than
+  ''everything flows'': it asks whether sameness and newness are opposites at all, or whether they name the same process seen
+  from different angles. To say the sun is ''continually new'' is to say that continuity *is* the structure of perpetual difference.
+  Heraclitus does not console us with the idea that things persist; he shows us that persistence *requires* the annihilation
+  of what was. The sun''s nourishment is its self-erasure. We live under a fire that cannot hold itself.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Νέος ἐφ' ἡμέρῃ ἥλιος.
+practice: At the moment the sun breaks the horizon or crosses your line of sight, name aloud one thing you were certain of
+  yesterday that you no longer are—not a belief abandoned, but a fact of your body or circumstance that has genuinely altered.
+  Do not search for profundity; the shift may be microscopic. Repeat this each dawn or noon for seven days, and on the eighth
+  day, notice whether you have become the one who changes, or whether you remain the witness to change.
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- awareness
-- breath
 - commentary_text
 - heraclitus_fragments
-- impermanence
-- knowledge
-- simplicity
-- stillness
-- transformation
+- self
+- witness
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Νέος ἐφ' ἡμέρῃ ἥλιος.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: cerning the sun this cannot happen, since, being nourished in the same manner, as they say, it
-    is plain that the sun is not only, as Heraclitus says, new every day, but it is continually new. Olympiodorus
-    in Meteor. 1. 1. fol. 30 a.
+  body: cerning the sun this cannot happen, since, being nourished in the same manner, as they say, it is plain that the sun
+    is not only, as Heraclitus says, new every day, but it is continually new. Olympiodorus in Meteor. 1. 1. fol. 30 a.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 32
-    (Bywater Greek). Corpus index HFR_P032 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'The sun is not merely renewed each day—it is *continuously* new, each moment a fresh ignition. Olympiodorus preserves
+    what Heraclitus saw: nourishment (trophe) is the mechanism. The sun feeds on what sustains it, and in that feeding, it
+    ceases to be the sun of the previous instant. This is not metaphor about change or flux in the abstract. It is a claim
+    about *identity through discontinuity*. The same sun, yes—we call it by one name—but never the same sun twice. The paradox
+    cuts deeper than ''everything flows'': it asks whether sameness and newness are opposites at all, or whether they name
+    the same process seen from different angles. To say the sun is ''continually new'' is to say that continuity *is* the
+    structure of perpetual difference. Heraclitus does not console us with the idea that things persist; he shows us that
+    persistence *requires* the annihilation of what was. The sun''s nourishment is its self-erasure. We live under a fire
+    that cannot hold itself.'
+  layer_provenance: template-assembled
+- kind: practice
+  label: Practice (Abhyasa)
+  body: At the moment the sun breaks the horizon or crosses your line of sight, name aloud one thing you were certain of yesterday
+    that you no longer are—not a belief abandoned, but a fact of your body or circumstance that has genuinely altered. Do
+    not search for profundity; the shift may be microscopic. Repeat this each dawn or noon for seven days, and on the eighth
+    day, notice whether you have become the one who changes, or whether you remain the witness to change.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts compress a cosmological principle into the continuous flux of a single natural
-      process: Heraclitus sees the sun as perpetually renewed through constant nourishment; the Vijnana
-      Bhairava sees the divine articulated through the ceaseless oscillation of breath (prāṇa and jīva).
-      Each makes transformation itself the fundamental reality.'
-    divergence: Heraclitus grounds renewal in material nourishment and observable celestial mechanics;
-      the Vijnana Bhairava locates it in the conscious play (lila) of Śakti as the life-force itself,
-      making transformation a divine self-expression rather than a physical necessity.
+    resonance: 'Both texts compress a cosmological principle into the continuous flux of a single natural process: Heraclitus
+      sees the sun as perpetually renewed through constant nourishment; the Vijnana Bhairava sees the divine articulated through
+      the ceaseless oscillation of breath (prāṇa and jīva). Each makes transformation itself the fundamental reality.'
+    divergence: Heraclitus grounds renewal in material nourishment and observable celestial mechanics; the Vijnana Bhairava
+      locates it in the conscious play (lila) of Śakti as the life-force itself, making transformation a divine self-expression
+      rather than a physical necessity.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Patañjali Yoga Sūtras 1.10
-    resonance: 'Both texts paradoxically define a state through negation or absence: Heraclitus compresses
-      the sun''s perpetual newness into a single paradoxical claim (always new, yet the same sun); Patañjali
-      defines sleep as ''transformation based on non-existence,'' collapsing a state into its negation.
-      Each uses logical compression to capture an ontological shift.'
-    divergence: Heraclitus uses paradox to affirm continuous becoming as reality's nature; Patañjali uses
-      negation to map consciousness states within a framework of yogic transformation, treating non-existence
-      as a specific phenomenological condition rather than a cosmological principle.
+    resonance: 'Both texts paradoxically define a state through negation or absence: Heraclitus compresses the sun''s perpetual
+      newness into a single paradoxical claim (always new, yet the same sun); Patañjali defines sleep as ''transformation
+      based on non-existence,'' collapsing a state into its negation. Each uses logical compression to capture an ontological
+      shift.'
+    divergence: Heraclitus uses paradox to affirm continuous becoming as reality's nature; Patañjali uses negation to map
+      consciousness states within a framework of yogic transformation, treating non-existence as a specific phenomenological
+      condition rather than a cosmological principle.
     passage_id: patañjali_yoga_sūtras.ys_1_10
   layer_provenance: generated_grounded
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
-  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -96,5 +93,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P032
   source_reference: Patrick (1889), frag. 32; corpus HFR_P032
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

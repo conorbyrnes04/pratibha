@@ -5,9 +5,23 @@ title: The people must fight for their law as for their walls.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: The people must fight for their law as for their walls.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 100 (Bywater Greek). Corpus index HFR_P100 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment does not argue that law and walls are equivalent; it stages their equivalence
+  as a shock to perception. Nomos (law, custom, the shared order) and teichos (wall, boundary, the visible
+  rampart) belong to different registers—one invisible, one stone. Yet Heraclitus binds them with the
+  same verb: fight. The move is not metaphorical but phenomenological. A wall defends by its mere standing;
+  law defends by its constant reassertion in speech and deed. Both require the people''s active body.
+  Remove the fighting and both dissolve. The fragment thus inverts the usual hierarchy: the wall seems
+  solid, law seems abstract. Heraclitus reverses this. Law is what actually holds; the wall is only its
+  shadow. But the deeper paradox lies in the word ''must'' (chrē). It is not a command from above but
+  a necessity that arises from within the people themselves—as if the fighting for law were not imposed
+  but discovered as the condition of their own coherence. The fragment teaches that order is not a thing
+  to be possessed but a perpetual act, and that the people who cease to defend their nomos have already
+  abandoned their walls.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: 'Walk a familiar route—street, corridor, path—and at three points stop and ask aloud or in clear
+  internal speech: What law am I defending here by my presence? What invisible boundary holds because
+  I move through it as if it matters? Do not answer; let the question reshape the ordinary space into
+  one where your motion becomes a form of vigilance.'
 modes:
   bhasya: ''
   doctrinal: ''
@@ -17,7 +31,7 @@ glossary: []
 anchor_translation: The people must fight for their law as for their walls.
 source_reference: Patrick (1889), frag. 100; corpus HFR_P100
 pratibha_translation: The people must fight for their law as for their walls.
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +40,28 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-  resonance: 'Both texts compress a paradox of interdependence into a single claim: Heraclitus binds law to walls (the conventional boundary that protects the polis), just as Nagarjuna binds the ultimate to the conventional (vyavahāra)—neither can be grasped or defended without the other. Each tradition uses a structural necessity (law needs walls; nirvāṇa needs convention) to collapse a false hierarchy.'
-  divergence: Heraclitus treats the law-wall bond as a political-cosmological imperative demanding active struggle, while Nagarjuna treats the ultimate-conventional bond as a logical-soteriological interdependence requiring philosophical insight, not combat.
+  resonance: 'Both texts compress a paradox of interdependence into a single claim: Heraclitus binds law
+    to walls (the conventional boundary that protects the polis), just as Nagarjuna binds the ultimate
+    to the conventional (vyavahāra)—neither can be grasped or defended without the other. Each tradition
+    uses a structural necessity (law needs walls; nirvāṇa needs convention) to collapse a false hierarchy.'
+  divergence: Heraclitus treats the law-wall bond as a political-cosmological imperative demanding active
+    struggle, while Nagarjuna treats the ultimate-conventional bond as a logical-soteriological interdependence
+    requiring philosophical insight, not combat.
   passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
 - citation: 'Vijnana Bhairava — Yukti #37'
-  resonance: 'Both texts locate transformative power in a dynamic tension or opposition held in place: Heraclitus''s law and walls are distinct yet inseparable (the people must defend both as one), and Vijnana Bhairava''s two prāṇas generate equality-consciousness through their sanghaṭṭa (dynamic tension). Each identifies a threshold where opposing forces, held together, produce a new state.'
-  divergence: Heraclitus frames this as a political duty requiring collective action, while the Vijnana Bhairava frames it as an internal yogic event where breath-tension yields non-dual consciousness.
+  resonance: 'Both texts locate transformative power in a dynamic tension or opposition held in place:
+    Heraclitus''s law and walls are distinct yet inseparable (the people must defend both as one), and
+    Vijnana Bhairava''s two prāṇas generate equality-consciousness through their sanghaṭṭa (dynamic tension).
+    Each identifies a threshold where opposing forces, held together, produce a new state.'
+  divergence: Heraclitus frames this as a political duty requiring collective action, while the Vijnana
+    Bhairava frames it as an internal yogic event where breath-tension yields non-dual consciousness.
   passage_id: vijnana_bhairava.yukti_037
+themes:
+- nomos and physis
+- collective persistence
+- invisible order
+- boundary and defense
+- the people as agent
+- law as act not thing
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

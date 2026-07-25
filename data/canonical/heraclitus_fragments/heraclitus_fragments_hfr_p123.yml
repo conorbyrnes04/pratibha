@@ -5,88 +5,85 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p123
 unit_label: And those that are there shall arise and become guardians of the living and the dead.”
-title: The Dead Guard What Still Breathes
+title: And those that are there shall arise and become guardians of the living and the dead.”
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: 'This fragment arrests on a single pivot: *those that are there*—a radical ambiguity.'
 themes:
-- breath
-- awareness
-- consciousness
-- transformation
-- stillness
 - death
-- truth
-- silence
-- harmony
+- practice
 source_excerpt: And those that are there shall arise and become guardians of the living and the dead.”
 translation_literal: And those that are there shall arise and become guardians of the living and the dead.”
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 123
-  (Bywater Greek). Corpus index HFR_P123 follows the Diels–Kranz-style numbering used in the Pratibha
-  pilot batch.'
+commentary: 'This fragment arrests on a single pivot: *those that are there*—a radical ambiguity. Are ''they'' the dead themselves?
+  Daemons? Principles? Heraclitus refuses to name. What matters is the verb: *arise* (ἀνίστημι)—to stand up, to be roused
+  into function. The fragment does not describe a static hierarchy or afterlife geography. It describes *activation*. Those
+  presences (however we parse them) do not passively exist in some realm; they *become* guardians—they take on office, responsibility,
+  the work of tending. And what do they tend? Both the living *and* the dead—no separation, no final rest. The living and
+  dead form a single domain requiring vigilance. This is not metaphysics dressed as poetry. It is a claim about *continuous
+  tension*: the boundary between life and death is not a wall but a threshold that requires constant watching. To be alive
+  is already to be watched over by what has passed. To die is not to leave the sphere of guardianship but to enter it from
+  another angle. The fragment trains the ear away from comfort—away from the notion that death ends obligation or presence.
+  It asks: who or what is already standing guard over your life, over what you have inherited, over what you will leave? The
+  answer is not reassuring. It is structural.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Ἔνθαδε ἐόντας ἐπανίστασθαι καὶ φύλακας γίνεσθαι ἐγερτὶ ζώντων καὶ νεκρῶν.
+practice: 'Walk a route you know well—home to work, or a familiar neighborhood loop—and at three unmarked points stop and
+  ask aloud or in a whisper: *What is being guarded here?* Not metaphorically. Attend to the literal threshold: a doorway,
+  a corner, a tree. Notice what has passed through it, what remains, what is tended or neglected. Do this without resolving
+  the question. The practice is not to answer but to let the question remake your perception of ordinary space.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- awareness
-- breath
 - commentary_text
-- consciousness
 - death
-- harmony
 - heraclitus_fragments
-- silence
-- stillness
-- transformation
-- truth
+- practice
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Ἔνθαδε ἐόντας ἐπανίστασθαι καὶ φύλακας γίνεσθαι ἐγερτὶ ζώντων καὶ νεκρῶν.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: And those that are there shall arise and become guardians of the living and the dead.”
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 123
-    (Bywater Greek). Corpus index HFR_P123 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'This fragment arrests on a single pivot: *those that are there*—a radical ambiguity. Are ''they'' the dead themselves?
+    Daemons? Principles? Heraclitus refuses to name. What matters is the verb: *arise* (ἀνίστημι)—to stand up, to be roused
+    into function. The fragment does not describe a static hierarchy or afterlife geography. It describes *activation*. Those
+    presences (however we parse them) do not passively exist in some realm; they *become* guardians—they take on office, responsibility,
+    the work of tending. And what do they tend? Both the living *and* the dead—no separation, no final rest. The living and
+    dead form a single domain requiring vigilance. This is not metaphysics dressed as poetry. It is a claim about *continuous
+    tension*: the boundary between life and death is not a wall but a threshold that requires constant watching. To be alive
+    is already to be watched over by what has passed. To die is not to leave the sphere of guardianship but to enter it from
+    another angle. The fragment trains the ear away from comfort—away from the notion that death ends obligation or presence.
+    It asks: who or what is already standing guard over your life, over what you have inherited, over what you will leave?
+    The answer is not reassuring. It is structural.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'Walk a route you know well—home to work, or a familiar neighborhood loop—and at three unmarked points stop and ask
+    aloud or in a whisper: *What is being guarded here?* Not metaphorically. Attend to the literal threshold: a doorway, a
+    corner, a tree. Notice what has passed through it, what remains, what is tended or neglected. Do this without resolving
+    the question. The practice is not to answer but to let the question remake your perception of ordinary space.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts compress a cosmological principle into the dynamics of breath as a guardian
-      force: Heraclitus positions breath as the sentinel between living and dead (states of being), while
-      Vijnana Bhairava Yukti #1 articulates prāṇa and jīva as the Supreme Goddess''s constant oscillation
-      between exhalation (rising) and inhalation (descent into embodiment)—each breath a threshold between
-      transcendent and manifest.'
-    divergence: Heraclitus treats breath as an aphoristic paradox about cosmic order and mortality; the
-      Tantric tradition systematizes breath as the direct phenomenological access to divine creative pulsation
-      (spanda), making it a yogic technology rather than a metaphysical riddle.
+    resonance: 'Both texts compress a cosmological principle into the dynamics of breath as a guardian force: Heraclitus positions
+      breath as the sentinel between living and dead (states of being), while Vijnana Bhairava Yukti #1 articulates prāṇa
+      and jīva as the Supreme Goddess''s constant oscillation between exhalation (rising) and inhalation (descent into embodiment)—each
+      breath a threshold between transcendent and manifest.'
+    divergence: Heraclitus treats breath as an aphoristic paradox about cosmic order and mortality; the Tantric tradition
+      systematizes breath as the direct phenomenological access to divine creative pulsation (spanda), making it a yogic technology
+      rather than a metaphysical riddle.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both passages invoke breath as the mediating substance between mortal and immortal realms:
-      Heraclitus''s guardians of living and dead operate through breath''s liminal function, while Isavasya
-      Upanishad 17 explicitly returns breath to immortal air as the body dissolves to ashes—breath as
-      the vehicle of transition.'
-    divergence: Heraclitus emphasizes breath's active guardianship of both states simultaneously (paradox),
-      whereas Isavasya frames breath's return as a sequential release from embodiment into the eternal,
-      privileging transcendence over paradoxical simultaneity.
+    resonance: 'Both passages invoke breath as the mediating substance between mortal and immortal realms: Heraclitus''s guardians
+      of living and dead operate through breath''s liminal function, while Isavasya Upanishad 17 explicitly returns breath
+      to immortal air as the body dissolves to ashes—breath as the vehicle of transition.'
+    divergence: Heraclitus emphasizes breath's active guardianship of both states simultaneously (paradox), whereas Isavasya
+      frames breath's return as a sequential release from embodiment into the eternal, privileging transcendence over paradoxical
+      simultaneity.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 appendixes: []
@@ -96,5 +93,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P123
   source_reference: Patrick (1889), frag. 123; corpus HFR_P123
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

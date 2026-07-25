@@ -5,9 +5,21 @@ title: ;Where the land is dry, the soul is wisest and best.}”
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: ;Where the land is dry, the soul is wisest and best.}”
-commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure that governs all things. Mortality intensifies the question — finite life must choose whether to hear the pattern or merely repeat opinion. The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 38 (Bywater Greek). Corpus index HFR_P038 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment arrests us with a paradox of deprivation: dryness—absence, scarcity, the parched—becomes
+  the condition of wisdom and excellence (aretē). This is not metaphorical uplift but a cosmological claim
+  about the soul''s attunement. Heraclitus elsewhere binds soul to fire and moisture; here, he inverts
+  the intuition that wetness (life-fluid, the moist) sustains. Where moisture withdraws, the soul''s measure
+  sharpens. The dry land is not hostile terrain but a teacher. It strips away the soft, the diffuse, the
+  merely comfortable. Wisdom (sophia) and ''best'' (aristē) emerge not from abundance but from necessity—from
+  the soul''s forced clarity when external richness fails. This echoes the bow and lyre: tension, not
+  slack, generates the note. The soul becomes wisest precisely where it cannot rely on the world''s generosity,
+  where it must listen harder to its own logos, its own inner measure. Dryness is thus a crucible, not
+  a curse. The teaching inverts the common hunger for plenty and asks: what does scarcity teach the soul
+  that satiation cannot?'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: Walk a deliberately barren or austere route—a concrete path, a stripped room, a winter garden—and
+  with each step, notice where your attention sharpens, where you stop reaching outward and begin listening
+  inward. Name one small clarity that arises only in that sparse place.
 modes:
   bhasya: ''
   doctrinal: ''
@@ -19,8 +31,9 @@ source_reference: Patrick (1889), frag. 38; corpus HFR_P038
 pratibha_translation: ;Where the land is dry, the soul is wisest and best.}”
 key_terms:
 - term: psychē (ψυχή)
-  definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns ethics into cosmology: how you live is how you align (or fail) with measure.'
-editorial_maturity: structural_draft
+  definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate.
+    The fragment turns ethics into cosmology: how you live is how you align (or fail) with measure.'
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -29,10 +42,26 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Phaedo (Plato) — The Soul's Affinity With the Unseen
-  resonance: 'Both texts establish character/wisdom through structural alignment: Heraclitus ties the soul''s excellence to dryness (a cosmological condition), while Plato ties the soul''s endurance to simplicity and intelligibility (a metaphysical condition). Each makes virtue a function of conformity to an ordering principle, not individual will.'
-  divergence: Heraclitus grounds alignment in a physical-elemental measure (dryness as cosmic attunement), whereas Plato grounds it in a transcendent intelligible order that the soul naturally resembles.
+  resonance: 'Both texts establish character/wisdom through structural alignment: Heraclitus ties the
+    soul''s excellence to dryness (a cosmological condition), while Plato ties the soul''s endurance to
+    simplicity and intelligibility (a metaphysical condition). Each makes virtue a function of conformity
+    to an ordering principle, not individual will.'
+  divergence: Heraclitus grounds alignment in a physical-elemental measure (dryness as cosmic attunement),
+    whereas Plato grounds it in a transcendent intelligible order that the soul naturally resembles.
   passage_id: phaedo_plato.phaedo_md_003
 - citation: 'Vijnana Bhairava — Yukti #1'
-  resonance: 'Both passages make breath (prāṇa/pneuma) the vehicle of wisdom and selfhood: Heraclitus implies the soul''s dryness relates to breath''s clarity and measure, while the Vijnana Bhairava makes prāṇa the constant articulation through which the divine and embodied self are unified. Each treats breath as the living measure that constitutes consciousness.'
-  divergence: Heraclitus treats dryness as a condition for wisdom's emergence, whereas the Vijnana Bhairava treats breath-flow as the active, perpetual manifestation of non-dual consciousness itself.
+  resonance: 'Both passages make breath (prāṇa/pneuma) the vehicle of wisdom and selfhood: Heraclitus
+    implies the soul''s dryness relates to breath''s clarity and measure, while the Vijnana Bhairava makes
+    prāṇa the constant articulation through which the divine and embodied self are unified. Each treats
+    breath as the living measure that constitutes consciousness.'
+  divergence: Heraclitus treats dryness as a condition for wisdom's emergence, whereas the Vijnana Bhairava
+    treats breath-flow as the active, perpetual manifestation of non-dual consciousness itself.
   passage_id: vijnana_bhairava.yukti_001
+themes:
+- dryness and clarity
+- soul and measure
+- necessity as teacher
+- tension and attunement
+- scarcity and wisdom
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

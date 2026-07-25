@@ -5,47 +5,69 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p083
 unit_label: In change is rest.
-title: Perceiving Stability Within Flux
+title: In change is rest.
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
-themes: []
+thesis: 'The fragment reverses the expected hierarchy: rest is not the absence of change but its interior.'
+themes:
+- action
+- breath
+- stillness
+- vibration
+- way
 source_excerpt: In change is rest.
 translation_literal: In change is rest.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 83 (Bywater
-  Greek). Corpus index HFR_P083 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment reverses the expected hierarchy: rest is not the absence of change but its interior. Heraclitus
+  does not mean that change eventually settles into stillness, nor that beneath flux lies a static ground. Rather, he names
+  a simultaneity—the way a river maintains its character precisely through constant flow, the way a musical note persists
+  only in its sounding, the way a body''s health consists in the continuous exchange of elements. The Greek anapausis (rest,
+  cessation) here is not negation but *poise*—the stable proportion that *is* the changing itself. This inverts how we typically
+  parse experience: we assume change threatens rest, that flux erodes form. Heraclitus asks us to perceive differently: the
+  lyre''s tension does not oppose its music; the tension *is* what allows music to exist. In change—not after it, not beneath
+  it, not despite it—rest abides. The paradox dissolves only when perception stops treating change and rest as opposites and
+  recognizes them as a single rhythm. This is not metaphysics but phenomenology: watch what actually holds steady.'
 insight: ''
-practice: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing,
-  limit, exchange). Sit with that pattern for two minutes.
-sanskrit_devanagari: Μεταβάλλον ἀναπαύεται.
+practice: 'During a routine action with inherent rhythm—walking, breathing, pouring water, speaking a familiar phrase—attend
+  to what *persists* only because it is changing: the stride that remains balanced only through continuous adjustment, the
+  breath that maintains oxygen only through perpetual exchange, the voice that holds a note only through sustained vibration.
+  Notice the instant you try to *stop* the action to examine it; the rest vanishes. The stability was never in freezing the
+  moment but in the motion itself.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
+- action
+- breath
 - commentary_text
 - heraclitus_fragments
+- stillness
+- vibration
+- way
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Μεταβάλλον ἀναπαύεται.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: In change is rest.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 83
-    (Bywater Greek). Corpus index HFR_P083 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'The fragment reverses the expected hierarchy: rest is not the absence of change but its interior. Heraclitus does
+    not mean that change eventually settles into stillness, nor that beneath flux lies a static ground. Rather, he names a
+    simultaneity—the way a river maintains its character precisely through constant flow, the way a musical note persists
+    only in its sounding, the way a body''s health consists in the continuous exchange of elements. The Greek anapausis (rest,
+    cessation) here is not negation but *poise*—the stable proportion that *is* the changing itself. This inverts how we typically
+    parse experience: we assume change threatens rest, that flux erodes form. Heraclitus asks us to perceive differently:
+    the lyre''s tension does not oppose its music; the tension *is* what allows music to exist. In change—not after it, not
+    beneath it, not despite it—rest abides. The paradox dissolves only when perception stops treating change and rest as opposites
+    and recognizes them as a single rhythm. This is not metaphysics but phenomenology: watch what actually holds steady.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Choose one situation that feels chaotic. Name one measure or proportion hidden in it (timing,
-    limit, exchange). Sit with that pattern for two minutes.
+  body: 'During a routine action with inherent rhythm—walking, breathing, pouring water, speaking a familiar phrase—attend
+    to what *persists* only because it is changing: the stride that remains balanced only through continuous adjustment, the
+    breath that maintains oxygen only through perpetual exchange, the voice that holds a note only through sustained vibration.
+    Notice the instant you try to *stop* the action to examine it; the rest vanishes. The stability was never in freezing
+    the moment but in the motion itself.'
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -54,5 +76,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P083
   source_reference: Patrick (1889), frag. 83; corpus HFR_P083
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

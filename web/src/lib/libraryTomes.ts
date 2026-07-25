@@ -60,6 +60,13 @@ const TOME_META: TomeMeta[] = [
   { pattern: /isavasya|īśāvāsya|isha.?upani|isa.?upani/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -400 },
   { pattern: /svetasvatara|śvetāśvatara/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -350 },
   { pattern: /mandukya|māṇḍūkya|gaudapada|gauḍapāda/i, tradition: "Vedānta", author: "Gauḍapāda", authored: "c. 5th–6th c. CE", eraYear: 500 },
+  { pattern: /katha|kaṭha/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -400 },
+  { pattern: /brihad|bṛhadāraṇyaka|brihadaranyaka/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 7th–5th c. BCE", eraYear: -600 },
+  { pattern: /mundaka|muṇḍaka/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -400 },
+  { pattern: /dhammapada|dhammapāda/i, tradition: "Buddhist", author: "Anonymous (Tipiṭaka)", authored: "c. 3rd c. BCE", eraYear: -250 },
+  { pattern: /marcus|meditations/i, tradition: "Greek", author: "Marcus Aurelius", authored: "c. 170–180 CE", eraYear: 175 },
+  { pattern: /cloud.?of.?unknowing/i, tradition: "Christian", author: "Anonymous (English mystic)", authored: "c. 14th c. CE", eraYear: 1375 },
+  { pattern: /parmenides/i, tradition: "Greek", author: "Parmenides", authored: "c. 5th c. BCE", eraYear: -475 },
   { pattern: /patanjali|patañjali|yoga.?s[uū]tra/i, tradition: "Yoga", author: "Patañjali", authored: "c. 2nd–4th c. CE", eraYear: 300 },
   { pattern: /vijnana.?bhairava|vijñāna.?bhairava/i, tradition: "Kashmir Śaiva", author: "Anonymous", authored: "c. 8th–9th c. CE", eraYear: 850 },
   { pattern: /spanda/i, tradition: "Kashmir Śaiva", author: "Vasugupta / Kallaṭa", authored: "c. 9th c. CE", eraYear: 875 },
@@ -83,6 +90,7 @@ const TOME_META: TomeMeta[] = [
   { pattern: /phaedo|plato/i, tradition: "Greek", author: "Plato", authored: "c. 360 BCE", eraYear: -360 },
   { pattern: /plotinus|ennead/i, tradition: "Greek", author: "Plotinus", authored: "c. 270 CE", eraYear: 270 },
   { pattern: /eckhart|abegescheidenheit|abgeschiedenheit/i, tradition: "Christian", author: "Meister Eckhart", authored: "c. 1300 CE", eraYear: 1300 },
+  { pattern: /dionysius|areopagite|mystical.?theology|divine.?names/i, tradition: "Christian", author: "Pseudo-Dionysius", authored: "c. 5th–6th c. CE", eraYear: 500 },
   { pattern: /ibn|arabi|balyani|know yourself/i, tradition: "Sufi", author: "Balyānī", authored: "c. 13th–14th c. CE", eraYear: 1300 },
 ];
 

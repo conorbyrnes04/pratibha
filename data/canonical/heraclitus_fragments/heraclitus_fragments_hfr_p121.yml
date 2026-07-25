@@ -5,92 +5,96 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p121
 unit_label: A man’s character is his daemon.®
-title: Character Aligns With Cosmic Measure
+title: A man’s character is his daemon.®
 unit_type: teaching_passage
-thesis: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
-  that governs all things.'
+thesis: Heraclitus does not say character *expresses* daemon or *reflects* it—he says character *is* daemon.
 themes:
-- breath
-- self
-- virtue
-- de
-- awareness
+- action
+- attention
 - fate
-- truth
-- harmony
+- self
+- soul
 source_excerpt: A man’s character is his daemon.®
 translation_literal: A man’s character is his daemon.®
-commentary: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
-  that governs all things. Mortality intensifies the question — finite life must choose whether to hear
-  the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889), fragment 121 (Bywater Greek).
-  Corpus index HFR_P121 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'Heraclitus does not say character *expresses* daemon or *reflects* it—he says character *is* daemon. The move
+  collapses the distance between inner nature and governing force. Daemon (daimōn) in early Greek thought names the allotment,
+  the portion of cosmic order assigned to each being; it is not a separate spirit-guide but the very grain of one''s existence.
+  To say a man''s character is his daemon is to say: what you *do* repeatedly, how you *choose* under pressure, the shape
+  of your attention and refusal—this is not decoration over some truer self. It *is* the daemon. There is no hidden essence
+  waiting to be discovered; there is only the daemon-character actively being lived or evaded. The fragment cuts against the
+  later Platonic split between soul and body, between true nature and false appearance. For Heraclitus, the daemon is not
+  what you *have*; it is what you *are becoming* through each act. The ethical weight lands here: you cannot blame fate or
+  invoke a better self elsewhere. The daemon is the measure you embody—and you are always already embodying it, whether you
+  wake to it or sleep through it.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Ἦθος ἀνθρώπῳ δαίμων.
+practice: When you catch yourself justifying an action by saying 'that's just how I am' or 'that's my nature,' stop and name
+  aloud the specific choice or habit you just performed—not as a trait but as a present act (I spoke harshly; I looked away;
+  I chose comfort). Repeat the act-name three times, each time feeling the weight of it as daemon, not excuse, until the boundary
+  between 'I' and 'my character' dissolves into one continuous, accountable presence.
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- awareness
-- breath
+- action
+- attention
 - commentary_text
-- de
 - fate
-- harmony
 - heraclitus_fragments
 - self
-- truth
-- virtue
+- soul
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Ἦθος ἀνθρώπῳ δαίμων.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: A man’s character is his daemon.®
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The turn is ethical-cosmological: character is not private style but alignment with the measure
-    that governs all things. Mortality intensifies the question — finite life must choose whether to hear
-    the pattern or merely repeat opinion. Anchor: George T.W. Patrick (1889), fragment 121 (Bywater Greek).
-    Corpus index HFR_P121 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+  body: 'Heraclitus does not say character *expresses* daemon or *reflects* it—he says character *is* daemon. The move collapses
+    the distance between inner nature and governing force. Daemon (daimōn) in early Greek thought names the allotment, the
+    portion of cosmic order assigned to each being; it is not a separate spirit-guide but the very grain of one''s existence.
+    To say a man''s character is his daemon is to say: what you *do* repeatedly, how you *choose* under pressure, the shape
+    of your attention and refusal—this is not decoration over some truer self. It *is* the daemon. There is no hidden essence
+    waiting to be discovered; there is only the daemon-character actively being lived or evaded. The fragment cuts against
+    the later Platonic split between soul and body, between true nature and false appearance. For Heraclitus, the daemon is
+    not what you *have*; it is what you *are becoming* through each act. The ethical weight lands here: you cannot blame fate
+    or invoke a better self elsewhere. The daemon is the measure you embody—and you are always already embodying it, whether
+    you wake to it or sleep through it.'
   layer_provenance: template-assembled
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 5
-    resonance: 'Both texts make character/virtue the vehicle for recognizing and aligning with a transcendent
-      principle: Heraclitus locates daemon (cosmic measure) within ethos (character), while Plotinus locates
-      the soul''s true nature through the experience of virtue in action—each treats ethical formation
-      as simultaneous self-discovery and cosmic attunement.'
-    divergence: Heraclitus emphasizes character as already-present alignment with an impersonal, universal
-      logos; Plotinus frames virtue as a recovery of forgotten divine origin, requiring a break from the
-      physical and a reorientation toward the transcendent One.
-    passage_id: plotinus_enneads.enn_i_6_05
-  - citation: The Book of Chuang Tzu — chapter 11
-    resonance: 'Both reject imposed external governance in favor of a natural, self-ordering principle:
-      Heraclitus''s daemon as intrinsic measure parallels Zhuangzi''s refusal of deliberate governing,
-      each positing that authentic order emerges from non-interference with what is already aligned.'
-    divergence: Heraclitus grounds this in a cosmic logos that character must consciously embody; Zhuangzi
-      grounds it in wu-wei (non-action), where the absence of imposed order allows spontaneous rightness
-      to manifest.
-    passage_id: the_book_of_chuang_tzu.ctz_011
-  layer_provenance: generated_grounded
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: When you catch yourself justifying an action by saying 'that's just how I am' or 'that's my nature,' stop and name
+    aloud the specific choice or habit you just performed—not as a trait but as a present act (I spoke harshly; I looked away;
+    I chose comfort). Repeat the act-name three times, each time feeling the weight of it as daemon, not excuse, until the
+    boundary between 'I' and 'my character' dissolves into one continuous, accountable presence.
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: psychē (ψυχή)
-    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate.
-      The fragment turns ethics into cosmology: how you live is how you align (or fail) with measure.'
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
   layer_provenance: template-assembled
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 5
+    resonance: 'Both texts make character/virtue the vehicle for recognizing and aligning with a transcendent principle: Heraclitus
+      locates daemon (cosmic measure) within ethos (character), while Plotinus locates the soul''s true nature through the
+      experience of virtue in action—each treats ethical formation as simultaneous self-discovery and cosmic attunement.'
+    divergence: Heraclitus emphasizes character as already-present alignment with an impersonal, universal logos; Plotinus
+      frames virtue as a recovery of forgotten divine origin, requiring a break from the physical and a reorientation toward
+      the transcendent One.
+    passage_id: plotinus_enneads.enn_i_6_05
+  - citation: The Book of Chuang Tzu — chapter 11
+    resonance: 'Both reject imposed external governance in favor of a natural, self-ordering principle: Heraclitus''s daemon
+      as intrinsic measure parallels Zhuangzi''s refusal of deliberate governing, each positing that authentic order emerges
+      from non-interference with what is already aligned.'
+    divergence: Heraclitus grounds this in a cosmic logos that character must consciously embody; Zhuangzi grounds it in wu-wei
+      (non-action), where the absence of imposed order allows spontaneous rightness to manifest.
+    passage_id: the_book_of_chuang_tzu.ctz_011
+  layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -98,5 +102,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P121
   source_reference: Patrick (1889), frag. 121; corpus HFR_P121
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

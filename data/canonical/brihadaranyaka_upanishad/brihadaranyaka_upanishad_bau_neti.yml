@@ -1,0 +1,81 @@
+source_file: data/yaml/brihadaranyaka_upanishad/bau_neti.yml
+source_id: BAU_NETI
+category: root_text
+work_id: brihadaranyaka_upanishad
+work_title: Brihadaranyaka Upanishad
+unit_id: brihadaranyaka_upanishad.bau_neti
+unit_label: Not This, Not This
+title: Not This, Not This
+unit_type: sutra
+sanskrit_devanagari: अथात आदेशो नेति नेति / न ह्य् एतस्माद् इति नेत्य् अन्यत् परम् अस्ति
+sanskrit_iast: athāta ādeśo neti neti / na hy etasmād iti nety anyat param asti
+translation_literal: 'Hence there is the teaching: Not this, not this. For there is nothing higher than this ''not this.'''
+commentary: 'The neti neti teaching is not a ladder of negations meant to exhaust the Absolute into silence. Rather, it is
+  the *only* remaining move when all positive predication—''it is this, it is that''—has been tried and failed to land. Yājñavalkya''s
+  phrase ''न ह्य् एतस्माद् इति नेत्य् अन्यत् परम् अस्ति'' (there is nothing higher than this ''not this'') reverses the usual
+  hierarchy: the negation itself becomes the highest teaching, not because negation is clever or because the Self is blank,
+  but because the Self cannot be *caught* in the net of ''this''—subject-object structure, name-form, the duality that makes
+  ''something'' graspable. The adeśa (teaching, instruction) is not abstract doctrine; it is a *method of release* from the
+  compulsion to make the Self into an object of knowledge. Each ''not this'' is a cutting away of a false second—a posited
+  boundary, a claimed other—until the listener stops trying to know *it* and recognizes the knower itself. The passage''s
+  force lies in its refusal to offer a substitute object (even a ''higher'' one). It teaches by subtraction, not addition,
+  and that subtraction is itself the highest because it undoes the root error: the splitting of reality into knower and known.'
+insight: The neti neti teaching is not a ladder of negations meant to exhaust the Absolute into silence.
+practice: 'When you reach for certainty about who or what you are—a name, a role, a quality, a flaw—pause and speak aloud
+  or inwardly: ''Not this.'' Then, without rushing to the next thought, notice the *gap* where the answer would have landed.
+  Repeat the negation only if a new self-definition tries to fill that space. The practice is not to accumulate negations
+  but to let each one widen the space where no second thing can stand.'
+upaya: ''
+themes:
+- knowledge
+- practice
+- self
+- silence
+tags:
+- brihadaranyaka_upanishad
+- knowledge
+- practice
+- root_text
+- self
+- silence
+quality_score: 0
+editorial_maturity: strong_draft
+editorial_score: 0
+pratibha_layers:
+- kind: original
+  label: Original
+  body: अथात आदेशो नेति नेति / न ह्य् एतस्माद् इति नेत्य् अन्यत् परम् अस्ति
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: athāta ādeśo neti neti / na hy etasmād iti nety anyat param asti
+- kind: translation
+  label: Pratibha Translation
+  body: 'Hence there is the teaching: Not this, not this. For there is nothing higher than this ''not this.'''
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The neti neti teaching is not a ladder of negations meant to exhaust the Absolute into silence. Rather, it is the
+    *only* remaining move when all positive predication—''it is this, it is that''—has been tried and failed to land. Yājñavalkya''s
+    phrase ''न ह्य् एतस्माद् इति नेत्य् अन्यत् परम् अस्ति'' (there is nothing higher than this ''not this'') reverses the
+    usual hierarchy: the negation itself becomes the highest teaching, not because negation is clever or because the Self
+    is blank, but because the Self cannot be *caught* in the net of ''this''—subject-object structure, name-form, the duality
+    that makes ''something'' graspable. The adeśa (teaching, instruction) is not abstract doctrine; it is a *method of release*
+    from the compulsion to make the Self into an object of knowledge. Each ''not this'' is a cutting away of a false second—a
+    posited boundary, a claimed other—until the listener stops trying to know *it* and recognizes the knower itself. The passage''s
+    force lies in its refusal to offer a substitute object (even a ''higher'' one). It teaches by subtraction, not addition,
+    and that subtraction is itself the highest because it undoes the root error: the splitting of reality into knower and
+    known.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'When you reach for certainty about who or what you are—a name, a role, a quality, a flaw—pause and speak aloud or
+    inwardly: ''Not this.'' Then, without rushing to the next thought, notice the *gap* where the answer would have landed.
+    Repeat the negation only if a new self-definition tries to fill that space. The practice is not to accumulate negations
+    but to let each one widen the space where no second thing can stand.'
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Brihadaranyaka Upanishad
+  section: 2.3.6 / 3.9.26 (neti neti)
+  original_id: BAU_NETI
+  source_reference: ''

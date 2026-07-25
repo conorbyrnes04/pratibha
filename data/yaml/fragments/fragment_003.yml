@@ -4,20 +4,37 @@ section: wisdom_pearl
 title: Those who hear and do not understand are like the deaf.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are absent.’’'
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 3 (Bywater Greek). Corpus index HFR_P003 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present,
+  they are absent.’’'
+commentary: 'Heraclitus does not soften the blow: hearing without understanding is deafness. The paradox
+  cuts deeper than mere inattention. To hear is to have the physical capacity—the ear receives vibration,
+  the body registers presence. Yet understanding (noesis, grasping the logos) requires a different organ
+  altogether, one that most people do not exercise. The fragment''s second movement—''Present, they are
+  absent''—names the specific wound: the body stands in the room, the ear admits sound, yet the person
+  is not there. This is not metaphor but diagnosis of a common condition. Heraclitus watches people move
+  through the world as though sleepwalking, their senses open but their participation closed. The proverb
+  he cites does not console; it confirms. What makes this unbearable is that presence and absence are
+  not opposites here but simultaneous states. You can be fully present in flesh and utterly absent in
+  attention, in receptivity, in the capacity to let what you hear change the shape of your thinking. The
+  fragment trains the ear not to hear better but to recognize when hearing has stopped—when sound enters
+  but nothing is received, when words pass through without landing.'
 voice_of_siva: ''
-abhyasa: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually rests on. Can you hear the claim, not only think it?
+abhyasa: In conversation, notice the moment your mouth begins forming a response before the other person
+  has finished speaking—that instant when your presence inverts into absence. Pause there. Return your
+  attention to the actual words still arriving, as though hearing them for the first time, and let your
+  reply wait until the silence after they speak has fully settled.
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are absent.’’'
-pratibha_translation: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are absent.’’'
+anchor_translation: 'Those who hear and do not understand are like the deaf. Of them the proverb says:
+  ‘‘ Present, they are absent.’’'
+pratibha_translation: 'Those who hear and do not understand are like the deaf. Of them the proverb says:
+  ‘‘ Present, they are absent.’’'
 source_reference: Patrick (1889), frag. 3; corpus HFR_P003
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +43,28 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Isavasya Upanishad — Mantra 12
-  resonance: 'Both texts use a paradoxical inversion to expose a failure of perception: those who engage with one mode (hearing without understanding; devotion to only the unmanifest or only the manifest) find themselves in a state functionally equivalent to its opposite (deafness; darkness). The structure is: apparent engagement masks actual deprivation.'
-  divergence: Heraclitus frames this as a problem of logos and attention in a unified cosmos; the Isavasya Upanishad frames it as a metaphysical error of exclusive devotion, requiring balance between complementary principles.
+  resonance: 'Both texts use a paradoxical inversion to expose a failure of perception: those who engage
+    with one mode (hearing without understanding; devotion to only the unmanifest or only the manifest)
+    find themselves in a state functionally equivalent to its opposite (deafness; darkness). The structure
+    is: apparent engagement masks actual deprivation.'
+  divergence: Heraclitus frames this as a problem of logos and attention in a unified cosmos; the Isavasya
+    Upanishad frames it as a metaphysical error of exclusive devotion, requiring balance between complementary
+    principles.
   passage_id: isavasya_upanishad.isa_018
 - citation: Patañjali Yoga Sūtras 3.54
-  resonance: Both texts locate true knowledge in the capacity to discern subtle distinctions that ordinary perception conflates. Heraclitus's paradox hinges on the gap between hearing (physical reception) and understanding (discrimination); Patañjali's aphorism hinges on discerning what 'appears alike' but differs in subtle marks—both make discrimination the threshold of knowledge.
-  divergence: Heraclitus treats this as a cosmological condition embedded in the logos itself; Patañjali treats it as a yogic faculty developed through systematic practice on the subtle body.
+  resonance: Both texts locate true knowledge in the capacity to discern subtle distinctions that ordinary
+    perception conflates. Heraclitus's paradox hinges on the gap between hearing (physical reception)
+    and understanding (discrimination); Patañjali's aphorism hinges on discerning what 'appears alike'
+    but differs in subtle marks—both make discrimination the threshold of knowledge.
+  divergence: Heraclitus treats this as a cosmological condition embedded in the logos itself; Patañjali
+    treats it as a yogic faculty developed through systematic practice on the subtle body.
   passage_id: patañjali_yoga_sūtras.ys_3_54
+themes:
+- presence and absence
+- hearing vs understanding
+- the logos
+- attention as practice
+- the sleeper awake
+- participation
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

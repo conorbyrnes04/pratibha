@@ -7,85 +7,93 @@ unit_id: heraclitus_fragments.hfr_p058
 unit_label: evil (scil.
 title: evil (scil.
 unit_type: teaching_passage
-thesis: Opposition is not a failure of order but its instrument.
+thesis: The fragment's corrupted state—'evil (scil.
 themes:
-- breath
+- action
+- death
 - harmony
-source_excerpt: evil (scil. are one). The physicians, therefore, says turing the sick, complain that the
-  patients do not pay them fitting reward for thus effecting these benefits— yand sufferings.t
-translation_literal: evil (scil. are one). The physicians, therefore, says turing the sick, complain that
-  the patients do not pay them fitting reward for thus effecting these benefits— yand sufferings.t
-commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow,
-  lyre) to show that tension generates stable function. Peace as mere absence of conflict would collapse
-  the very structures that make harmony audible. The ''one'' is not mystical fusion but the single intelligible
-  order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics
-  — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick
-  (1889), fragment 58 (Bywater Greek). Corpus index HFR_P058 follows the Diels–Kranz-style numbering used
-  in the Pratibha pilot batch.'
+- suffering
+source_excerpt: evil (scil. are one). The physicians, therefore, says turing the sick, complain that the patients do not pay
+  them fitting reward for thus effecting these benefits— yand sufferings.t
+translation_literal: evil (scil. are one). The physicians, therefore, says turing the sick, complain that the patients do
+  not pay them fitting reward for thus effecting these benefits— yand sufferings.t
+commentary: 'The fragment''s corrupted state—''evil (scil. are one)''—is itself the teaching. Heraclitus does not say evil
+  and good are one in some metaphysical unity; he says they *are* (einai), they have being, they function. The physicians''
+  complaint in the garbled text points to the paradox: the same action that heals produces complaint; the benefit and the
+  suffering arrive together, inseparable as the two ends of a bow-string. What appears as opposition—sickness and cure, payment
+  and ingratitude—is not a collision between separate forces but the *tension itself* that holds the living body upright.
+  The physician does not eliminate suffering; he transforms its quality, redirects it. The patient''s resistance to paying
+  ''fitting reward'' mirrors the resistance of matter to the physician''s art. This is not harmony as smoothness. The logos
+  here is the *ratio* of forces in strain: the bow that shoots true because both wood and string pull against each other with
+  exact measure. Remove either tension, and the instrument becomes useless wood. Heraclitus sees in the physician''s ungrateful
+  patient the same principle that governs fire, sleep, waking, death—the refusal to acknowledge that what opposes also sustains.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: καὶ ἀγαθὸν καὶ κακόν (scil. ἕν ἐστι)· οἱ γοῦν ἰατροί, φησὶν ὁ Ἡράκλειτος, τέμνοντες
-  καίοντες πάντη βασανίζοντες κακῶς τοὺς ἀρρωστοῦντας ἐπαιτιῶνται μηδέν' ἄξιον μισθὸν λαμβάνειν παρὰ τῶν
-  ἀρρωστούντων, ταῦτα ἐργαζόμενοι τὰ ἀγαθὰ καὶ †τὰς νόσους.†
+practice: 'When next you feel resistance to a necessary action—fatigue before exercise, reluctance before a difficult conversation,
+  friction with someone you must work beside—pause and locate the exact point of strain in your body (jaw, chest, hands).
+  Name aloud what pulls against what: ''fatigue pulls against purpose'' or ''pride pulls against need.'' Hold that naming
+  for three full breaths without trying to resolve it, feeling the tension as a bow-string feels the archer''s draw. Only
+  then act.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- breath
+- action
 - commentary_text
+- death
 - harmony
 - heraclitus_fragments
+- suffering
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: καὶ ἀγαθὸν καὶ κακόν (scil. ἕν ἐστι)· οἱ γοῦν ἰατροί, φησὶν ὁ Ἡράκλειτος, τέμνοντες καίοντες πάντη
-    βασανίζοντες κακῶς τοὺς ἀρρωστοῦντας ἐπαιτιῶνται μηδέν' ἄξιον μισθὸν λαμβάνειν παρὰ τῶν ἀρρωστούντων,
-    ταῦτα ἐργαζόμενοι τὰ ἀγαθὰ καὶ †τὰς νόσους.†
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: evil (scil. are one). The physicians, therefore, says turing the sick, complain that the patients
-    do not pay them fitting reward for thus effecting these benefits— yand sufferings.t
+  body: evil (scil. are one). The physicians, therefore, says turing the sick, complain that the patients do not pay them
+    fitting reward for thus effecting these benefits— yand sufferings.t
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre)
-    to show that tension generates stable function. Peace as mere absence of conflict would collapse the
-    very structures that make harmony audible. The ''one'' is not mystical fusion but the single intelligible
-    order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics
-    — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick
-    (1889), fragment 58 (Bywater Greek). Corpus index HFR_P058 follows the Diels–Kranz-style numbering
-    used in the Pratibha pilot batch.'
+  body: 'The fragment''s corrupted state—''evil (scil. are one)''—is itself the teaching. Heraclitus does not say evil and
+    good are one in some metaphysical unity; he says they *are* (einai), they have being, they function. The physicians''
+    complaint in the garbled text points to the paradox: the same action that heals produces complaint; the benefit and the
+    suffering arrive together, inseparable as the two ends of a bow-string. What appears as opposition—sickness and cure,
+    payment and ingratitude—is not a collision between separate forces but the *tension itself* that holds the living body
+    upright. The physician does not eliminate suffering; he transforms its quality, redirects it. The patient''s resistance
+    to paying ''fitting reward'' mirrors the resistance of matter to the physician''s art. This is not harmony as smoothness.
+    The logos here is the *ratio* of forces in strain: the bow that shoots true because both wood and string pull against
+    each other with exact measure. Remove either tension, and the instrument becomes useless wood. Heraclitus sees in the
+    physician''s ungrateful patient the same principle that governs fire, sleep, waking, death—the refusal to acknowledge
+    that what opposes also sustains.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'When next you feel resistance to a necessary action—fatigue before exercise, reluctance before a difficult conversation,
+    friction with someone you must work beside—pause and locate the exact point of strain in your body (jaw, chest, hands).
+    Name aloud what pulls against what: ''fatigue pulls against purpose'' or ''pride pulls against need.'' Hold that naming
+    for three full breaths without trying to resolve it, feeling the tension as a bow-string feels the archer''s draw. Only
+    then act.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: harmoniē (ἁρμονίη)
-    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic,
-      not the removal of difference. This is Heraclitus's answer to those who expect peace as sameness.
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Tao Te Ching — The Mysterious Virtue of the Unbound One
-    resonance: Both texts treat opposition or duality (intelligent/animal souls; opposing forces) as structurally
-      necessary to maintain a unified whole—not as defects but as the dynamic principle that sustains
-      order itself.
-    divergence: Heraclitus grounds opposition in cosmic strife and flux as the engine of being; the Tao
-      Te Ching grounds it in complementary yin-yang polarity held in equilibrium without conflict.
+    resonance: Both texts treat opposition or duality (intelligent/animal souls; opposing forces) as structurally necessary
+      to maintain a unified whole—not as defects but as the dynamic principle that sustains order itself.
+    divergence: Heraclitus grounds opposition in cosmic strife and flux as the engine of being; the Tao Te Ching grounds it
+      in complementary yin-yang polarity held in equilibrium without conflict.
     passage_id: tao_te_ching.ttc_md_022
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: Both invoke breath (prāṇa/pneuma) as the fundamental medium through which opposition or
-      duality (exhale/inhale, rising/descending) generates and sustains a living harmony.
-    divergence: Heraclitus treats opposition as the abstract principle of cosmic order; the Vijnana Bhairava
-      treats breath-duality as the concrete embodied practice through which consciousness recognizes its
-      own flow.
+    resonance: Both invoke breath (prāṇa/pneuma) as the fundamental medium through which opposition or duality (exhale/inhale,
+      rising/descending) generates and sustains a living harmony.
+    divergence: Heraclitus treats opposition as the abstract principle of cosmic order; the Vijnana Bhairava treats breath-duality
+      as the concrete embodied practice through which consciousness recognizes its own flow.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []
@@ -95,5 +103,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P058
   source_reference: Patrick (1889), frag. 58; corpus HFR_P058
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

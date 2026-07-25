@@ -5,88 +5,90 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p018
 unit_label: Of all whose words I have heard, no one attains to this, to know that wisdom is apart fro...
-title: Wisdom Stands Apart From All Words
+title: Of all whose words I have heard, no one attains to this, to know that wisdom is apart fro...
 unit_type: teaching_passage
-thesis: 'Heraclitus insists that wisdom is auditory before it is argumentative: the Logos is already at
-  work in how things happen, yet people live as if they had no prior encounter with it.'
+thesis: Heraclitus marks a fracture between hearing and knowing.
 themes:
-- consciousness
-source_excerpt: Of all whose words I have heard, no one attains to this, to know that wisdom is apart
-  from all.°
-translation_literal: Of all whose words I have heard, no one attains to this, to know that wisdom is apart
-  from all.°
-commentary: 'Heraclitus insists that wisdom is auditory before it is argumentative: the Logos is already
-  at work in how things happen, yet people live as if they had no prior encounter with it. The complaint
-  is not elitism but phenomenology — most consciousness is forgetful, whether in sleep or in ''waking''
-  busyness. The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
-  To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
-  the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 18 (Bywater
-  Greek). Corpus index HFR_P018 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+- recognition
+- transformation
+- way
+source_excerpt: Of all whose words I have heard, no one attains to this, to know that wisdom is apart from all.°
+translation_literal: Of all whose words I have heard, no one attains to this, to know that wisdom is apart from all.°
+commentary: 'Heraclitus marks a fracture between hearing and knowing. The fragment does not say wisdom is hard to find or
+  requires training—it says wisdom *is apart from all*, separated by a kind of categorical distance. The complaint is sharper:
+  those who have *heard* his words (and by extension, heard the Logos working through speech, through the river, through fire''s
+  transformation) still do not *attain to* the recognition that wisdom cannot be gathered, accumulated, or possessed as a
+  thing among things. The Greek *chōris* (apart, separate) is not metaphorical distance but ontological difference. What makes
+  this wisdom inaccessible is not obscurity but its very nature as *apartness*—it is not a doctrine to be mastered but a recognition
+  that understanding itself must be radically different from the grasping, collecting posture of the intellect. The bitterness
+  in ''no one'' is not disappointment in human stupidity but the structural impossibility: to know wisdom truly is to know
+  it as that which cannot be known in the ordinary way. The paradox is not resolved but inhabited—one must hear the Logos
+  *as* the very condition that prevents wisdom from being made into a possession.'
 insight: ''
-practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
-  experience it actually rests on. Can you hear the claim, not only think it?
-sanskrit_devanagari: Ὁκόσων λόγους ἤκουσα οὐδεὶς ἀφικνέεται ἐς τοῦτο, ὥστε γινώσκειν ὅτι σοφόν ἐστι πάντων
-  κεχωρισμένον.
+practice: 'When you catch yourself explaining something you believe you understand, stop mid-sentence and ask aloud: what
+  am I keeping separate from this explanation? Sit with the gap between the words leaving your mouth and the thing itself,
+  without rushing to close it.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
-- consciousness
 - heraclitus_fragments
+- recognition
+- transformation
+- way
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Ὁκόσων λόγους ἤκουσα οὐδεὶς ἀφικνέεται ἐς τοῦτο, ὥστε γινώσκειν ὅτι σοφόν ἐστι πάντων κεχωρισμένον.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: Of all whose words I have heard, no one attains to this, to know that wisdom is apart from all.°
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus insists that wisdom is auditory before it is argumentative: the Logos is already at
-    work in how things happen, yet people live as if they had no prior encounter with it. The complaint
-    is not elitism but phenomenology — most consciousness is forgetful, whether in sleep or in ''waking''
-    busyness. The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
-    To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
-    the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 18 (Bywater
-    Greek). Corpus index HFR_P018 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+  body: 'Heraclitus marks a fracture between hearing and knowing. The fragment does not say wisdom is hard to find or requires
+    training—it says wisdom *is apart from all*, separated by a kind of categorical distance. The complaint is sharper: those
+    who have *heard* his words (and by extension, heard the Logos working through speech, through the river, through fire''s
+    transformation) still do not *attain to* the recognition that wisdom cannot be gathered, accumulated, or possessed as
+    a thing among things. The Greek *chōris* (apart, separate) is not metaphorical distance but ontological difference. What
+    makes this wisdom inaccessible is not obscurity but its very nature as *apartness*—it is not a doctrine to be mastered
+    but a recognition that understanding itself must be radically different from the grasping, collecting posture of the intellect.
+    The bitterness in ''no one'' is not disappointment in human stupidity but the structural impossibility: to know wisdom
+    truly is to know it as that which cannot be known in the ordinary way. The paradox is not resolved but inhabited—one must
+    hear the Logos *as* the very condition that prevents wisdom from being made into a possession.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
-    experience it actually rests on. Can you hear the claim, not only think it?
+  body: 'When you catch yourself explaining something you believe you understand, stop mid-sentence and ask aloud: what am
+    I keeping separate from this explanation? Sit with the gap between the words leaving your mouth and the thing itself,
+    without rushing to close it.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: Logos (λόγος)
-    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern
-      according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s
-      ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible
-      speech).'
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Astavakra Gita — The Threefold Certainty That Liberates While Living
-    resonance: 'Both texts identify a gap between intellectual knowledge and lived realization: Heraclitus
-      says people fail to recognize wisdom already at work in the Logos despite encountering it; Astavakra
-      says one must know ''I am pure consciousness'' and live from that certainty, yet notes how rarely
-      this is seen actualized. Each diagnoses a failure of recognition despite prior exposure.'
-    divergence: Heraclitus locates wisdom in the auditory encounter with cosmic Logos operating in external
-      events; Astavakra locates it in direct self-knowledge of consciousness as one's true nature, independent
-      of body and world.
+    resonance: 'Both texts identify a gap between intellectual knowledge and lived realization: Heraclitus says people fail
+      to recognize wisdom already at work in the Logos despite encountering it; Astavakra says one must know ''I am pure consciousness''
+      and live from that certainty, yet notes how rarely this is seen actualized. Each diagnoses a failure of recognition
+      despite prior exposure.'
+    divergence: Heraclitus locates wisdom in the auditory encounter with cosmic Logos operating in external events; Astavakra
+      locates it in direct self-knowledge of consciousness as one's true nature, independent of body and world.
     passage_id: astavakra_gita.asg_11_6
   - citation: Siva Sutra — Śāmbhavopāya
-    resonance: 'Both texts posit that a higher mode of consciousness or wisdom operates continuously beneath
-      ordinary awareness: Heraclitus insists the Logos is already at work in how things happen; the Siva
-      Sutra teaches that the Fourth (transcendent consciousness) is available within the three ordinary
-      states. Each asserts a prior, ever-present ground that people fail to recognize.'
-    divergence: Heraclitus emphasizes the Logos as the rational principle governing external flux and
-      events; the Siva Sutra treats the Fourth as a non-dual consciousness accessible through yogic reorientation
-      of the three states themselves.
+    resonance: 'Both texts posit that a higher mode of consciousness or wisdom operates continuously beneath ordinary awareness:
+      Heraclitus insists the Logos is already at work in how things happen; the Siva Sutra teaches that the Fourth (transcendent
+      consciousness) is available within the three ordinary states. Each asserts a prior, ever-present ground that people
+      fail to recognize.'
+    divergence: Heraclitus emphasizes the Logos as the rational principle governing external flux and events; the Siva Sutra
+      treats the Fourth as a non-dual consciousness accessible through yogic reorientation of the three states themselves.
     passage_id: siva_sutra.ss_i_7
   layer_provenance: generated_grounded
 appendixes: []
@@ -96,5 +98,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P018
   source_reference: Patrick (1889), frag. 18; corpus HFR_P018
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

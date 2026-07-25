@@ -5,88 +5,79 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p020
 unit_label: This world, the same for all, neither any of
-title: One World Shared Beyond Individual Opinion
+title: This world, the same for all, neither any of
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: The fragment arrests mid-thought—'neither any of' trails into silence, forcing the reader into the gap.
 themes:
-- breath
-- awareness
-- consciousness
-- mind
+- attention
 - silence
-- truth
-- stillness
-- harmony
-- simplicity
 source_excerpt: This world, the same for all, neither any of
 translation_literal: This world, the same for all, neither any of
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 20 (Bywater
-  Greek). Corpus index HFR_P020 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment arrests mid-thought—''neither any of'' trails into silence, forcing the reader into the gap. Heraclitus
+  does not complete the negation. What is not any of what? The world is ''the same for all'' (to auto pasi), yet immediately
+  that sameness fractures. The move is not logical but phenomenological: he names the shared cosmos, then withdraws the completion,
+  leaving the listener suspended in the very condition he describes. The world appears identical to all who inhabit it—the
+  sun rises, fire burns, water flows—yet each perceives it through an unrepeatable position, an irreducible singularity of
+  sense and time. ''Neither any of'' may mean: neither any god, neither any mortal, neither any one thing owns or exhausts
+  it. The fragment does not resolve the paradox; it performs it. By cutting off mid-utterance, Heraclitus makes the reader''s
+  incompletion mirror the incompleteness of any single perspective on the shared world. The teaching is not in doctrine but
+  in the texture of the saying itself—in what it withholds.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Κόσμον τόνδε τὸν αὐτὸν ἁπάντων οὔτε τις θεῶν οὔτε ἀνθρώπων ἐποίησε, ἀλλ' ἦν αἰεὶ
-  καὶ ἔστι καὶ ἔσται πῦρ ἀείζωον, ἁπτόμενον μέτρα καὶ ἀποσβεννύμενον μέτρα.
+practice: 'Stand in a place where others also stand or pass (street corner, doorway, park bench). For ten minutes, notice
+  one specific detail—a shadow, a sound, a texture—and hold it steady in attention. Then ask: what do I see that someone else
+  standing here does not? Then ask: what do they see that I cannot? Do not try to answer; let the questions work as a lens,
+  sharpening the boundary between the shared world and the irreducibly private angle from which each of us inhabits it.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- awareness
-- breath
+- attention
 - commentary_text
-- consciousness
-- harmony
 - heraclitus_fragments
-- mind
 - silence
-- simplicity
-- stillness
-- truth
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Κόσμον τόνδε τὸν αὐτὸν ἁπάντων οὔτε τις θεῶν οὔτε ἀνθρώπων ἐποίησε, ἀλλ' ἦν αἰεὶ καὶ ἔστι καὶ
-    ἔσται πῦρ ἀείζωον, ἁπτόμενον μέτρα καὶ ἀποσβεννύμενον μέτρα.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: This world, the same for all, neither any of
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 20
-    (Bywater Greek). Corpus index HFR_P020 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'The fragment arrests mid-thought—''neither any of'' trails into silence, forcing the reader into the gap. Heraclitus
+    does not complete the negation. What is not any of what? The world is ''the same for all'' (to auto pasi), yet immediately
+    that sameness fractures. The move is not logical but phenomenological: he names the shared cosmos, then withdraws the
+    completion, leaving the listener suspended in the very condition he describes. The world appears identical to all who
+    inhabit it—the sun rises, fire burns, water flows—yet each perceives it through an unrepeatable position, an irreducible
+    singularity of sense and time. ''Neither any of'' may mean: neither any god, neither any mortal, neither any one thing
+    owns or exhausts it. The fragment does not resolve the paradox; it performs it. By cutting off mid-utterance, Heraclitus
+    makes the reader''s incompletion mirror the incompleteness of any single perspective on the shared world. The teaching
+    is not in doctrine but in the texture of the saying itself—in what it withholds.'
+  layer_provenance: template-assembled
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Stand in a place where others also stand or pass (street corner, doorway, park bench). For ten minutes, notice one
+    specific detail—a shadow, a sound, a texture—and hold it steady in attention. Then ask: what do I see that someone else
+    standing here does not? Then ask: what do they see that I cannot? Do not try to answer; let the questions work as a lens,
+    sharpening the boundary between the shared world and the irreducibly private angle from which each of us inhabits it.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #33'
-    resonance: Both texts posit a unified perceptual field that becomes accessible when mental activity
-      stills or dissolves. Heraclitus's 'world, the same for all' and the Vijnana Bhairava's open field
-      free of objects both describe a common ground revealed through cessation of ordinary cognitive churning
-      (vṛtti).
-    divergence: Heraclitus emphasizes the world as a cosmological constant accessible to rational logos;
-      the Vijnana Bhairava treats the open field as a phenomenological state achieved through deliberate
-      meditative technique.
+    resonance: Both texts posit a unified perceptual field that becomes accessible when mental activity stills or dissolves.
+      Heraclitus's 'world, the same for all' and the Vijnana Bhairava's open field free of objects both describe a common
+      ground revealed through cessation of ordinary cognitive churning (vṛtti).
+    divergence: Heraclitus emphasizes the world as a cosmological constant accessible to rational logos; the Vijnana Bhairava
+      treats the open field as a phenomenological state achieved through deliberate meditative technique.
     passage_id: vijnana_bhairava.yukti_033
   - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
-    resonance: Both texts claim that a single utterance or principle (Heraclitus's aphorism, the Heart
-      Sutra's mantra) encodes a universal truth that transcends individual variation and 'quiets' or stills
-      the ordinary mind's turbulence.
-    divergence: Heraclitus grounds universality in cosmic order (logos); the Heart Sutra grounds it in
-      the emptiness of all fixed categories (śūnyatā).
+    resonance: Both texts claim that a single utterance or principle (Heraclitus's aphorism, the Heart Sutra's mantra) encodes
+      a universal truth that transcends individual variation and 'quiets' or stills the ordinary mind's turbulence.
+    divergence: Heraclitus grounds universality in cosmic order (logos); the Heart Sutra grounds it in the emptiness of all
+      fixed categories (śūnyatā).
     passage_id: heart_sutra.hs_003
   layer_provenance: generated_grounded
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
-  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -94,5 +85,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P020
   source_reference: Patrick (1889), frag. 20; corpus HFR_P020
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

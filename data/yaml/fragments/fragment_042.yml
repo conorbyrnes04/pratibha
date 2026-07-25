@@ -5,9 +5,24 @@ title: A mixture separates when not kept in motion.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: A mixture separates when not kept in motion.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 42 (Bywater Greek). Corpus index HFR_P042 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment arrests us at the threshold between stasis and dissolution. A mixture—not a
+  thing, but a held relation, a temporary truce between elements that want to fall apart—persists only
+  through kinesis, through the continuous labor of motion. Heraclitus does not say the mixture *will*
+  separate or *should* separate; he states it as a simple conditional fact: separation is what happens
+  when motion ceases. The image cuts deeper than physics. It names the cost of coherence. Any unity—a
+  body, a friendship, a thought, a city—is not a substance but a verb. The moment you stop stirring, stop
+  walking, stop speaking into the space between, the elements resume their natural drift. What appears
+  as stability is revealed as exhaustion: you are always already in motion, or you are already coming
+  undone. The fragment does not console. It does not offer a way to achieve permanent mixture. It simply
+  shows the price of whatever wholeness you claim: eternal vigilance, eternal motion, the refusal of rest.
+  This is not tragedy but clarity—the recognition that what we call a self or a world is not a thing to
+  be possessed but a rhythm to be maintained.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: Stir a cup of water with a spoon in a steady, deliberate circle for two minutes, watching the
+  small debris or color move as a unified spiral; then stop and hold the cup still, observing without
+  moving it how quickly the pattern dissolves and the particles settle back into separation—repeat this
+  cycle three times, each time noting the exact moment motion ceases and fragmentation begins, until the
+  image of your own stillness becomes visible.
 modes:
   bhasya: ''
   doctrinal: ''
@@ -17,7 +32,7 @@ glossary: []
 anchor_translation: A mixture separates when not kept in motion.
 source_reference: Patrick (1889), frag. 42; corpus HFR_P042
 pratibha_translation: A mixture separates when not kept in motion.
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +41,29 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: 'Vijnana Bhairava — Yukti #1'
-  resonance: 'Both texts encode cosmological continuity through perpetual motion: Heraclitus''s mixture requires constant motion to avoid separation; the Vijnana Bhairava''s Supreme Goddess articulates reality through the ceaseless oscillation of breath (prāṇa and jīva). Stillness or cessation in either system leads to dissolution or loss of coherence.'
-  divergence: Heraclitus frames motion as a physical necessity for maintaining composite unity; the Vijnana Bhairava frames breath-motion as the conscious divine play (lila) through which the Goddess manifests embodied reality.
+  resonance: 'Both texts encode cosmological continuity through perpetual motion: Heraclitus''s mixture
+    requires constant motion to avoid separation; the Vijnana Bhairava''s Supreme Goddess articulates
+    reality through the ceaseless oscillation of breath (prāṇa and jīva). Stillness or cessation in either
+    system leads to dissolution or loss of coherence.'
+  divergence: Heraclitus frames motion as a physical necessity for maintaining composite unity; the Vijnana
+    Bhairava frames breath-motion as the conscious divine play (lila) through which the Goddess manifests
+    embodied reality.
   passage_id: vijnana_bhairava.yukti_001
 - citation: Tao Te Ching — The Ever‑Living Divine Root
-  resonance: 'Both passages locate the ground of continuity in an invisible, dynamic principle that resists stasis: Heraclitus''s mixture requires motion to persist; the Tao Te Ching''s valley spirit ''never dies'' precisely because it remains in perpetual, formless flow. Both reject the notion that being can be secured through fixity.'
-  divergence: Heraclitus emphasizes the paradox of separation-through-stillness as a logical cosmological law; the Tao Te Ching emphasizes the feminine, receptive, and nameless character of the principle that sustains continuity.
+  resonance: 'Both passages locate the ground of continuity in an invisible, dynamic principle that resists
+    stasis: Heraclitus''s mixture requires motion to persist; the Tao Te Ching''s valley spirit ''never
+    dies'' precisely because it remains in perpetual, formless flow. Both reject the notion that being
+    can be secured through fixity.'
+  divergence: Heraclitus emphasizes the paradox of separation-through-stillness as a logical cosmological
+    law; the Tao Te Ching emphasizes the feminine, receptive, and nameless character of the principle
+    that sustains continuity.
   passage_id: tao_te_ching.ttc_md_019
+themes:
+- motion as necessity
+- mixture and dissolution
+- the cost of coherence
+- kinesis and being
+- rest as unraveling
+- vigilance
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

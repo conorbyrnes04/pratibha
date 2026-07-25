@@ -5,9 +5,22 @@ title: The hidden harmony is better than the visible, 2248
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: The hidden harmony is better than the visible, 2248
-commentary: 'Opposition is not a failure of order but its instrument. Heraclitus uses craft images (bow, lyre) to show that tension generates stable function. Peace as mere absence of conflict would collapse the very structures that make harmony audible. Anchor: George T.W. Patrick (1889), fragment 47 (Bywater Greek). Corpus index HFR_P047 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment pivots on a reversal of common sense: what we cannot see outranks what we can.
+  Heraclitus is not celebrating obscurity for its own sake, but isolating the *structure* that visibility
+  obscures. The hidden harmony (harmoniē aphanēs) is the logos-proportioned tension itself—the ratio,
+  the tuning, the held opposition that *produces* the visible result. A bow drawn and held: the archer
+  sees the curve, the arrow''s readiness, but not the invisible reciprocal strain between wood and string
+  that makes the bow a bow rather than a stick. Remove that tension and visibility collapses into uselessness.
+  The visible is the *effect*; the hidden harmony is the *cause*. This is not mysticism but mechanics—Heraclitus
+  insists that order (kosmos) is not imposed from outside but *generated* by the very opposition that
+  appears, to the untrained eye, as disorder or mere conflict. The superiority of the hidden is not moral
+  but ontological: it is prior, generative, and more real because it sustains the visible without being
+  seen. To know this is to stop mistaking surface peace for true stability.'
 voice_of_siva: ''
-abhyasa: 'Identify a tension in your life that you treat as pure conflict. Reframe it as a bow: what two pulls create the function? Write both pulls without trying to remove either.'
+abhyasa: 'Observe your own breathing for three cycles without trying to change it, then notice which phase—inhale,
+  exhale, or the pause—feels most active to you. Reverse your answer: the phase you did not name is the
+  hidden harmony. Return to it across the day, attending to its work while the other phases claim your
+  attention.'
 modes:
   bhasya: ''
   doctrinal: ''
@@ -19,8 +32,9 @@ source_reference: Patrick (1889), frag. 47; corpus HFR_P047
 pratibha_translation: The hidden harmony is better than the visible, 2248
 key_terms:
 - term: harmoniē (ἁρμονίη)
-  definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of difference. This is Heraclitus's answer to those who expect peace as sameness.
-editorial_maturity: structural_draft
+  definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic,
+    not the removal of difference. This is Heraclitus's answer to those who expect peace as sameness.
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -29,10 +43,27 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Yoga Spandakarika — First Flow
-  resonance: Both texts locate harmony not in the absence of opposition but in a unified field that contains and transcends apparent dualities. Heraclitus makes opposition the instrument of hidden harmony; Spandakarika reveals pleasure/suffering and subject/object as expressions of a single consciousness-space.
-  divergence: Heraclitus grounds harmony in dynamic flux and strife as generative principle, while Spandakarika grounds it in static absolute consciousness that subsumes all polarities.
+  resonance: Both texts locate harmony not in the absence of opposition but in a unified field that contains
+    and transcends apparent dualities. Heraclitus makes opposition the instrument of hidden harmony; Spandakarika
+    reveals pleasure/suffering and subject/object as expressions of a single consciousness-space.
+  divergence: Heraclitus grounds harmony in dynamic flux and strife as generative principle, while Spandakarika
+    grounds it in static absolute consciousness that subsumes all polarities.
   passage_id: yoga_spandakarika.sp_05
 - citation: Phaedo (Plato) — Refuting the Harmony Theory of Soul
-  resonance: 'Both texts use harmony as a structural concept to probe the nature of order: Heraclitus asserts that hidden harmony surpasses visible harmony, while Plato''s Simmias proposes harmony as an invisible principle that organizes visible structure—each making harmony the deeper explanatory layer.'
-  divergence: Heraclitus privileges hidden harmony through opposition and becoming, whereas Plato (via Simmias) treats harmony as a dependent property of physical substrate, ultimately rejecting it as insufficient for explaining the soul's independence.
+  resonance: 'Both texts use harmony as a structural concept to probe the nature of order: Heraclitus
+    asserts that hidden harmony surpasses visible harmony, while Plato''s Simmias proposes harmony as
+    an invisible principle that organizes visible structure—each making harmony the deeper explanatory
+    layer.'
+  divergence: Heraclitus privileges hidden harmony through opposition and becoming, whereas Plato (via
+    Simmias) treats harmony as a dependent property of physical substrate, ultimately rejecting it as
+    insufficient for explaining the soul's independence.
   passage_id: phaedo_plato.phaedo_md_004
+themes:
+- hidden structure
+- tension as order
+- logos and proportion
+- visibility vs. causation
+- bow and lyre
+- reciprocal strain
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

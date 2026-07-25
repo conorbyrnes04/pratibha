@@ -5,78 +5,78 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p051
 unit_label: Asses would choose stubble rather than gold.
-title: Perception Reveals What Opinion Obscures
+title: Asses would choose stubble rather than gold.
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
-themes:
-- breath
-- awareness
-- truth
-- illusion
-- simplicity
-- naturalness
+thesis: The fragment arrests us not through moral judgment but through a collision of value-scales.
+themes: []
 source_excerpt: Asses would choose stubble rather than gold.
 translation_literal: Asses would choose stubble rather than gold.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 51 (Bywater
-  Greek). Corpus index HFR_P051 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment arrests us not through moral judgment but through a collision of value-scales. An ass—creature of
+  appetite and necessity—encounters two objects: stubble (what sustains the body, what is already at hand, what requires no
+  interpretation) and gold (what humans have agreed to call precious, what demands belief in absence, what cannot be eaten).
+  The ass chooses stubble. Heraclitus does not mock the ass. He suspends us in the moment of that choice and asks: what does
+  the ass know that the gold-seeker has forgotten? The teaching is not ''be like an ass'' but rather: notice that value is
+  not intrinsic to the object but emerges from the body''s actual condition and need. Gold is gold only for a creature whose
+  hunger has been abstracted, whose survival no longer depends on what the mouth can use. The fragment does not separate wisdom
+  from appetite—it suggests that true perception requires returning to what the body already recognizes. To read this is to
+  feel the pull of both objects and to notice which one your own organism, stripped of social noise, would actually reach
+  for in the dark.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Ὄνοι σύρματ' ἂν ἕλοιντο μᾶλλον ἢ χρυσόν.
+practice: 'Walk through a space where you normally move with purpose (home, workplace, street) and pause before three ordinary
+  objects you typically ignore or pass through—a doorframe, a worn tool, a patch of ground. For each, ask without answering:
+  what would I need to become in order to want this instead of what I''m chasing? Notice the quality of the question itself;
+  do not resolve it into an answer.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- awareness
-- breath
 - commentary_text
 - heraclitus_fragments
-- illusion
-- naturalness
-- simplicity
-- truth
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Ὄνοι σύρματ' ἂν ἕλοιντο μᾶλλον ἢ χρυσόν.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: Asses would choose stubble rather than gold.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 51
-    (Bywater Greek). Corpus index HFR_P051 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'The fragment arrests us not through moral judgment but through a collision of value-scales. An ass—creature of appetite
+    and necessity—encounters two objects: stubble (what sustains the body, what is already at hand, what requires no interpretation)
+    and gold (what humans have agreed to call precious, what demands belief in absence, what cannot be eaten). The ass chooses
+    stubble. Heraclitus does not mock the ass. He suspends us in the moment of that choice and asks: what does the ass know
+    that the gold-seeker has forgotten? The teaching is not ''be like an ass'' but rather: notice that value is not intrinsic
+    to the object but emerges from the body''s actual condition and need. Gold is gold only for a creature whose hunger has
+    been abstracted, whose survival no longer depends on what the mouth can use. The fragment does not separate wisdom from
+    appetite—it suggests that true perception requires returning to what the body already recognizes. To read this is to feel
+    the pull of both objects and to notice which one your own organism, stripped of social noise, would actually reach for
+    in the dark.'
+  layer_provenance: template-assembled
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Walk through a space where you normally move with purpose (home, workplace, street) and pause before three ordinary
+    objects you typically ignore or pass through—a doorframe, a worn tool, a patch of ground. For each, ask without answering:
+    what would I need to become in order to want this instead of what I''m chasing? Notice the quality of the question itself;
+    do not resolve it into an answer.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Tao Te Ching — The Veiled Path of Virtue
-    resonance: 'Both texts use a paradoxical inversion of value-hierarchy to reveal truth: the sage''s
-      emptiness (being a vessel) mirrors the ass''s indifference to gold, each exposing how conventional
-      worth obscures natural alignment with what is.'
-    divergence: Heraclitus embeds the inversion in sensory appetite to challenge human judgment; the Tao
-      Te Ching frames it as deliberate spiritual posture—receptivity as method rather than naive preference.
+    resonance: 'Both texts use a paradoxical inversion of value-hierarchy to reveal truth: the sage''s emptiness (being a
+      vessel) mirrors the ass''s indifference to gold, each exposing how conventional worth obscures natural alignment with
+      what is.'
+    divergence: Heraclitus embeds the inversion in sensory appetite to challenge human judgment; the Tao Te Ching frames it
+      as deliberate spiritual posture—receptivity as method rather than naive preference.
     passage_id: tao_te_ching.ttc_md_031
   - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
-    resonance: 'Both compress a cosmological insight into a single perceptual move: Heraclitus''s ass-and-gold
-      reveals the illusion of separate valuations; the Chāndogya''s instruction reveals the illusion of
-      separate things—each collapses apparent multiplicity into underlying unity.'
-    divergence: Heraclitus uses sensory preference as the vehicle for exposing illusion; the Upanishad
-      uses meditative instruction to transcend the perceptible toward the imperceptible One.
+    resonance: 'Both compress a cosmological insight into a single perceptual move: Heraclitus''s ass-and-gold reveals the
+      illusion of separate valuations; the Chāndogya''s instruction reveals the illusion of separate things—each collapses
+      apparent multiplicity into underlying unity.'
+    divergence: Heraclitus uses sensory preference as the vehicle for exposing illusion; the Upanishad uses meditative instruction
+      to transcend the perceptible toward the imperceptible One.
     passage_id: chāndogya_upaniṣad.chu_vi_01
   layer_provenance: generated_grounded
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
-  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -84,5 +84,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P051
   source_reference: Patrick (1889), frag. 51; corpus HFR_P051
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

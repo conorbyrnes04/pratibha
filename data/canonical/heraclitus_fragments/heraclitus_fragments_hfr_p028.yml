@@ -5,75 +5,84 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p028
 unit_label: Lightning rules all.
-title: Cosmos Governed By Measured Transformation
+title: Lightning rules all.
 unit_type: teaching_passage
-thesis: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation.'
+thesis: Lightning does not merely illuminate or destroy; it *rules*—it is the governing principle, the arche that Heraclitus
+  names as fire (pyr).
 themes:
-- breath
 - transformation
 source_excerpt: Lightning rules all.
 translation_literal: Lightning rules all.
-commentary: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation.
-  What looks like destruction is often conversion governed by proportion — a physics of becoming that
-  refuses both chaos and immobility. Anchor: George T.W. Patrick (1889), fragment 28 (Bywater Greek).
-  Corpus index HFR_P028 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'Lightning does not merely illuminate or destroy; it *rules*—it is the governing principle, the arche that Heraclitus
+  names as fire (pyr). But this is not fire as substance; it is fire as *logos*, the rational measure by which all things
+  hold their proportion and exchange. Lightning''s rule is its instantaneity: it appears and vanishes, yet in that flash the
+  whole order becomes legible. The fragment refuses to separate governance from velocity, law from discontinuity. What ''rules''
+  is not a static throne but a perpetual strike—the cosmos organized not by a distant lawgiver but by the very rhythm of rupture
+  and rebalancing. To say lightning rules is to say that transformation itself has structure, that chaos and order are not
+  opposites but the same event seen at different speeds. The ruled thing (all) is not passive; it obeys by participating in
+  the same fiery metabolism. This is not metaphor for political power or moral authority; it is the claim that reality''s
+  deepest grammar is the grammar of the flash.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Τὰ δὲ πάντα οἰακίζει κεραυνός.
+practice: 'Watch for the moment when a decision arrives—not after deliberation, but the instant before you know you''ve decided.
+  Freeze there. Notice whether you can locate the ''rule'' in that instant: is it a reason, a feeling, a sudden clarity, or
+  the very impossibility of hesitation? Return to that threshold three times this week without trying to change it; let the
+  lightning show you its own governance.'
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- breath
 - commentary_text
 - heraclitus_fragments
 - transformation
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Τὰ δὲ πάντα οἰακίζει κεραυνός.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: Lightning rules all.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Fire-language names lawful change: the cosmos is not static substance but measured transformation.
-    What looks like destruction is often conversion governed by proportion — a physics of becoming that
-    refuses both chaos and immobility. Anchor: George T.W. Patrick (1889), fragment 28 (Bywater Greek).
-    Corpus index HFR_P028 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+  body: 'Lightning does not merely illuminate or destroy; it *rules*—it is the governing principle, the arche that Heraclitus
+    names as fire (pyr). But this is not fire as substance; it is fire as *logos*, the rational measure by which all things
+    hold their proportion and exchange. Lightning''s rule is its instantaneity: it appears and vanishes, yet in that flash
+    the whole order becomes legible. The fragment refuses to separate governance from velocity, law from discontinuity. What
+    ''rules'' is not a static throne but a perpetual strike—the cosmos organized not by a distant lawgiver but by the very
+    rhythm of rupture and rebalancing. To say lightning rules is to say that transformation itself has structure, that chaos
+    and order are not opposites but the same event seen at different speeds. The ruled thing (all) is not passive; it obeys
+    by participating in the same fiery metabolism. This is not metaphor for political power or moral authority; it is the
+    claim that reality''s deepest grammar is the grammar of the flash.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'Watch for the moment when a decision arrives—not after deliberation, but the instant before you know you''ve decided.
+    Freeze there. Notice whether you can locate the ''rule'' in that instant: is it a reason, a feeling, a sudden clarity,
+    or the very impossibility of hesitation? Return to that threshold three times this week without trying to change it; let
+    the lightning show you its own governance.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: pyr / cosmic fire
-    definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation —
-      exchange (πυρὸς τροπαὶ) governed by proportion. Fire names process, not a static element.
+    definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation — exchange (πυρὸς τροπαὶ)
+      governed by proportion. Fire names process, not a static element.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts name cosmic order through breath-movement: Heraclitus uses fire-language to
-      articulate lawful transformation; Vijnana Bhairava articulates the Supreme through prāṇa''s measured
-      rise and descent. Each makes a dynamic principle (fire/breath) the fundamental articulation of reality.'
-    divergence: Heraclitus grounds lawfulness in impersonal cosmic fire as the measure of change; Vijnana
-      Bhairava grounds it in conscious divine articulation (uccaret) through embodied breath-flow.
+    resonance: 'Both texts name cosmic order through breath-movement: Heraclitus uses fire-language to articulate lawful transformation;
+      Vijnana Bhairava articulates the Supreme through prāṇa''s measured rise and descent. Each makes a dynamic principle
+      (fire/breath) the fundamental articulation of reality.'
+    divergence: Heraclitus grounds lawfulness in impersonal cosmic fire as the measure of change; Vijnana Bhairava grounds
+      it in conscious divine articulation (uccaret) through embodied breath-flow.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Svetasvatara Upanishad — Savitr and the Birth of Sacred Attention
-    resonance: 'Both texts invoke a hidden generative power (fire) that must be drawn forth through ordered
-      attention: Heraclitus''s lightning rules as the measure of transformation; Savitṛ yokes mind toward
-      truth by drawing forth hidden fire. Each names a principle that orders reality through active extraction
-      or revelation.'
-    divergence: Heraclitus presents fire as the impersonal law already ruling; Svetasvatara presents fire
-      as latent potential requiring yogic extraction through directed intelligence.
+    resonance: 'Both texts invoke a hidden generative power (fire) that must be drawn forth through ordered attention: Heraclitus''s
+      lightning rules as the measure of transformation; Savitṛ yokes mind toward truth by drawing forth hidden fire. Each
+      names a principle that orders reality through active extraction or revelation.'
+    divergence: Heraclitus presents fire as the impersonal law already ruling; Svetasvatara presents fire as latent potential
+      requiring yogic extraction through directed intelligence.
     passage_id: svetasvatara_upanishad.svu_016
   layer_provenance: generated_grounded
 appendixes: []
@@ -83,5 +92,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P028
   source_reference: Patrick (1889), frag. 28; corpus HFR_P028
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

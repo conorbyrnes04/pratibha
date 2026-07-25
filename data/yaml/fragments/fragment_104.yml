@@ -4,20 +4,38 @@ section: wisdom_pearl
 title: For men to have whatever they wish, would not be well.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: For people to have whatever they wish, would not be well. Sickness makes health pleasant and good; hunger, satiety; weariness, rest.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 104 (Bywater Greek). Corpus index HFR_P104 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: For people to have whatever they wish, would not be well. Sickness makes health pleasant
+  and good; hunger, satiety; weariness, rest.
+commentary: 'Heraclitus does not console the sufferer here; he inverts the logic of desire itself. The
+  fragment turns on a single hinge: *not having* is the condition for the value of *having*. Sickness
+  does not merely precede health as a temporal stage—it constitutes health''s intelligibility. Without
+  the body''s collapse, ''health'' remains a blank word, unregistered by sense or soul. The same inversion
+  holds for hunger and satiety, weariness and rest. Each pair names not a sequence but a *dyadic perception*—the
+  second term cannot be felt, cannot even exist as a quality, except through the absence that precedes
+  it. This is not pessimism dressed as wisdom. Heraclitus is describing the structure of sensation itself:
+  contrast is the medium of all knowing. The aphorism''s real claim is sharper than ''accept suffering.''
+  It says: *you cannot know what you possess while you possess it*. The moment of satiety is already the
+  beginning of forgetting hunger. The wish to have ''whatever we wish''—to possess without lack—is the
+  wish to be numb, to live in a perpetual present without depth or distinction. The logos at work here
+  is not ''everything flows'' but something more precise: *the opposites are teachers*. They teach by
+  withdrawal, by the very deprivation Heraclitus names.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: 'When hunger arrives—before eating—pause and name aloud what you notice in the body: the specific
+  texture of the want, the location of the sensation, its color or weight if it had one. Eat normally,
+  then at the moment satiety registers, repeat the naming with the same attention to what has changed.
+  Do this once daily for a week, building a vocabulary of contrast rather than a judgment about appetite.'
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: For men to have whatever they wish, would not be well. Sickness makes health pleasant and good; hunger, satiety; weariness, rest.
+anchor_translation: For men to have whatever they wish, would not be well. Sickness makes health pleasant
+  and good; hunger, satiety; weariness, rest.
 source_reference: Patrick (1889), frag. 104; corpus HFR_P104
-pratibha_translation: For people to have whatever they wish, would not be well. Sickness makes health pleasant and good; hunger, satiety; weariness, rest.
-editorial_maturity: structural_draft
+pratibha_translation: For people to have whatever they wish, would not be well. Sickness makes health
+  pleasant and good; hunger, satiety; weariness, rest.
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +44,27 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Astavakra Gita — 8.1 — 8.4
-  resonance: Both texts bind flourishing (liberation or well-being) to the cessation of craving and aversion rather than their satisfaction. Heraclitus denies that wish-fulfillment conduces to the good; Astavakra identifies bondage with the mind that desires and grieves, liberation with the mind that neither desires nor grieves.
-  divergence: Heraclitus frames this as a cosmological paradox about the nature of the good itself; Astavakra frames it as a phenomenological map of consciousness and its liberation from mental modification.
+  resonance: Both texts bind flourishing (liberation or well-being) to the cessation of craving and aversion
+    rather than their satisfaction. Heraclitus denies that wish-fulfillment conduces to the good; Astavakra
+    identifies bondage with the mind that desires and grieves, liberation with the mind that neither desires
+    nor grieves.
+  divergence: Heraclitus frames this as a cosmological paradox about the nature of the good itself; Astavakra
+    frames it as a phenomenological map of consciousness and its liberation from mental modification.
   passage_id: astavakra_gita.asg_sum_08_01_08_04
 - citation: 'Vijnana Bhairava — Yukti #37'
-  resonance: Both texts locate a transformative threshold at the point of cessation or pause—where ordinary flow (breath, desire) momentarily stops and a different order of consciousness emerges. Heraclitus's paradox suggests that deprivation of wish is the condition for well-being; Vijnana Bhairava's Yukti 37 locates equality-consciousness at the termination of the breath-pause.
-  divergence: Heraclitus treats the paradox as an aphorism about cosmic justice and balance; the Vijnana Bhairava treats the pause as a technical yogic gateway to non-dual awareness through prāṇa manipulation.
+  resonance: Both texts locate a transformative threshold at the point of cessation or pause—where ordinary
+    flow (breath, desire) momentarily stops and a different order of consciousness emerges. Heraclitus's
+    paradox suggests that deprivation of wish is the condition for well-being; Vijnana Bhairava's Yukti
+    37 locates equality-consciousness at the termination of the breath-pause.
+  divergence: Heraclitus treats the paradox as an aphorism about cosmic justice and balance; the Vijnana
+    Bhairava treats the pause as a technical yogic gateway to non-dual awareness through prāṇa manipulation.
   passage_id: vijnana_bhairava.yukti_037
+themes:
+- opposition and perception
+- lack as teacher
+- the logos of sensation
+- satiety and hunger
+- the unexamined present
+- desire inverted
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

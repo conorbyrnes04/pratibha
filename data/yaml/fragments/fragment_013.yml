@@ -5,9 +5,26 @@ title: Whatever concerns seeing, hearing, and learning, I particularly honor.’
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: Whatever concerns seeing, hearing, and learning, I particularly honor.’ ν΄
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 13 (Bywater Greek). Corpus index HFR_P013 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'Heraclitus does not say ''I honor wisdom'' or ''I honor truth.'' He honors *whatever concerns*—the
+  very act of sensory encounter and its aftermath. The fragment pivots on a peculiar grammar: not the
+  objects seen, heard, or learned, but the *concernment itself*, the friction and pull that arises when
+  eye meets world, ear meets sound, mind meets resistance. This is not epistemology dressed as virtue.
+  To honor what *concerns* seeing is to honor the disturbance, the claim that perception makes on you
+  before you''ve decided what you think. Heraclitus brackets the content and elevates the contact—the
+  moment sight troubles you, hearing unsettles certainty, learning forces a crack in what you thought
+  settled. The Greek *τιμάω* (timao) means to honor, to price, to hold as precious; he is assigning worth
+  not to knowledge as possession but to the *event* of being seized by the sensible. This is why the fragment
+  feels sparse, almost austere: it is not celebrating learning as achievement but as the raw fact of being
+  addressed by what is outside you. The three senses named—sight, hearing, learning—are not a list but
+  a descent: from the most immediate (seeing), through the temporal (hearing unfolds), to the most resistant
+  (learning requires surrender of what you thought you knew). To practice this is to reverse the usual
+  motion: not to use the senses as tools for gathering truth, but to let them remain as thresholds where
+  you are not in control.'
 voice_of_siva: ''
-abhyasa: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually rests on. Can you hear the claim, not only think it?
+abhyasa: 'When you encounter a claim—in conversation, text, or thought—listen to it aloud or read it twice
+  without response, letting it land as sound and shape before sense. Notice where your body tightens,
+  where breath catches, where you feel the pull to agree or reject: that concernment, not the proposition
+  itself, is what you honor in this moment.'
 modes:
   bhasya: ''
   doctrinal: ''
@@ -19,8 +36,11 @@ source_reference: Patrick (1889), frag. 13; corpus HFR_P013
 pratibha_translation: Whatever concerns seeing, hearing, and learning, I particularly honor.’ ν΄
 key_terms:
 - term: Logos (λόγος)
-  definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
-editorial_maturity: structural_draft
+  definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern
+    according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s
+    ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible
+    speech).'
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -29,14 +49,37 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Patañjali Yoga Sūtras 3.29
-  resonance: 'Both texts honor a direct perceptual method as the path to knowledge: Heraclitus privileges seeing and hearing as worthy of honor; Patañjali teaches that focused bodily alignment on a sensory object (the pole star) yields astronomical knowledge. Each makes perception itself—not abstract reasoning—the instrument of knowing.'
-  divergence: Heraclitus treats perception as cosmologically fundamental and self-justifying; Patañjali subordinates sensory focus to a systematic yogic discipline aimed at liberation, making perception a controlled technique rather than an autonomous faculty.
+  resonance: 'Both texts honor a direct perceptual method as the path to knowledge: Heraclitus privileges
+    seeing and hearing as worthy of honor; Patañjali teaches that focused bodily alignment on a sensory
+    object (the pole star) yields astronomical knowledge. Each makes perception itself—not abstract reasoning—the
+    instrument of knowing.'
+  divergence: Heraclitus treats perception as cosmologically fundamental and self-justifying; Patañjali
+    subordinates sensory focus to a systematic yogic discipline aimed at liberation, making perception
+    a controlled technique rather than an autonomous faculty.
   passage_id: patañjali_yoga_sūtras.ys_3_29
 - citation: Shantideva Bodhicaryavatara — The Veiled and the Transcendent
-  resonance: 'Both passages establish a hierarchy of practices leading to a supreme faculty: Heraclitus honors seeing, hearing, and learning as worthy pursuits; Shantideva states that all preceding disciplines exist for the sake of wisdom (prajñā), positioning wisdom as the ultimate goal that justifies prior training.'
-  divergence: Heraclitus honors the sensory and intellectual faculties themselves as ends; Shantideva treats all disciplines as instrumental means to transcendent wisdom that dissolves suffering, making wisdom soteriological rather than ontologically primary.
+  resonance: 'Both passages establish a hierarchy of practices leading to a supreme faculty: Heraclitus
+    honors seeing, hearing, and learning as worthy pursuits; Shantideva states that all preceding disciplines
+    exist for the sake of wisdom (prajñā), positioning wisdom as the ultimate goal that justifies prior
+    training.'
+  divergence: Heraclitus honors the sensory and intellectual faculties themselves as ends; Shantideva
+    treats all disciplines as instrumental means to transcendent wisdom that dissolves suffering, making
+    wisdom soteriological rather than ontologically primary.
   passage_id: shantideva_bodhicaryavatara.bca_09_twotruths
 - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 4
-  resonance: 'Both texts describe awareness of ultimate reality as exceeding ordinary knowing: Heraclitus compresses cosmological truth into a paradoxical image that honors perception yet implies its limits; Plotinus states that awareness of the ultimate Principle transcends all knowledge and intellection, requiring a presence beyond multiplicity.'
-  divergence: Heraclitus grounds transcendence in the sensory world itself through paradox; Plotinus posits a radical discontinuity between discursive intellection and a non-cognitive presence that surpasses the multiplicity of knowing.
+  resonance: 'Both texts describe awareness of ultimate reality as exceeding ordinary knowing: Heraclitus
+    compresses cosmological truth into a paradoxical image that honors perception yet implies its limits;
+    Plotinus states that awareness of the ultimate Principle transcends all knowledge and intellection,
+    requiring a presence beyond multiplicity.'
+  divergence: Heraclitus grounds transcendence in the sensory world itself through paradox; Plotinus posits
+    a radical discontinuity between discursive intellection and a non-cognitive presence that surpasses
+    the multiplicity of knowing.
   passage_id: plotinus_enneads.enn_vi_9_04
+themes:
+- sensory encounter
+- concernment over content
+- learning as disturbance
+- threshold consciousness
+- the event of perception
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

@@ -5,98 +5,97 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p080
 unit_label: was a pupil of no one, but he said he inquired of himself and learned everything by himself.
-title: Self-Inquiry as Path to Universal Order
+title: was a pupil of no one, but he said he inquired of himself and learned everything by himself.
 unit_type: teaching_passage
-thesis: The 'one' is not mystical fusion but the single intelligible order within apparent plurality.
+thesis: Heraclitus's self-inquiry (ἱστορία ἑαυτοῦ) is not introspection but a relentless turning of logos back upon itself—the
+  same faculty that reads fire and flux in the world turned inward as method.
 themes:
-- breath
+- attention
+- mind
 - self
-- knowledge
-- awareness
-- truth
-- harmony
-- simplicity
-source_excerpt: was a pupil of no one, but he said he inquired of himself and learned everything by himself.
-  though he had been engaged in some great and solemn task, said, ‘“T have been seeking myself.’’ And
-  of the sentences at Delphi, he thought the ‘‘ Know thyself’ to be the most divine. Suidas, under word
-  Ποστοῦμος,
-translation_literal: was a pupil of no one, but he said he inquired of himself and learned everything
-  by himself. though he had been engaged in some great and solemn task, said, ‘“T have been seeking myself.’’
-  And of the sentences at Delphi, he thought the ‘‘ Know thyself’ to be the most divine. Suidas, under
-  word Ποστοῦμος,
-commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
-  To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
-  the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 80 (Bywater
-  Greek). Corpus index HFR_P080 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+source_excerpt: was a pupil of no one, but he said he inquired of himself and learned everything by himself. though he had
+  been engaged in some great and solemn task, said, ‘“T have been seeking myself.’’ And of the sentences at Delphi, he thought
+  the ‘‘ Know thyself’ to be the most divine. Suidas, under word Ποστοῦμος,
+translation_literal: was a pupil of no one, but he said he inquired of himself and learned everything by himself. though he
+  had been engaged in some great and solemn task, said, ‘“T have been seeking myself.’’ And of the sentences at Delphi, he
+  thought the ‘‘ Know thyself’ to be the most divine. Suidas, under word Ποστοῦμος,
+commentary: 'Heraclitus''s self-inquiry (ἱστορία ἑαυτοῦ) is not introspection but a relentless turning of logos back upon
+  itself—the same faculty that reads fire and flux in the world turned inward as method. The fragment pivots on a paradox:
+  to learn ''everything by himself'' is not isolation but to recognize that the inquiring mind and the inquired-into world
+  share a single intelligible structure. When he says he ''sought himself,'' the self is not a private interior but the point
+  where the universal order becomes legible. The Delphic maxim ''Know thyself'' is divine precisely because it is not psychological
+  but ontological—to know oneself is to know the logos that moves through all things. Heraclitus refuses the teacher-pupil
+  hierarchy not from arrogance but from the conviction that the boundary between knower and known, self and cosmos, is where
+  the real work happens. He is pupil of no one because he is pupil of the fire itself, the ever-living principle that requires
+  no external instruction, only relentless attention to its own movement. The ''great and solemn task'' is the task of thinking
+  itself—not accumulation but the perpetual self-examination of the logos that thinks through him.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
-sanskrit_devanagari: Ἐδιζησάμην ἐμεωυτόν.
+practice: When you catch yourself explaining something to another person, stop mid-sentence and ask aloud what you are actually
+  saying—not to them, but as if the words themselves must answer. Repeat the core claim three times, each time listening for
+  what shifts or breaks in your own utterance, until you cannot tell whether you are teaching or being taught by the sentence.
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- awareness
-- breath
+- attention
 - commentary_text
-- harmony
 - heraclitus_fragments
-- knowledge
+- mind
 - self
-- simplicity
-- truth
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Ἐδιζησάμην ἐμεωυτόν.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: was a pupil of no one, but he said he inquired of himself and learned everything by himself. though
-    he had been engaged in some great and solemn task, said, ‘“T have been seeking myself.’’ And of the
-    sentences at Delphi, he thought the ‘‘ Know thyself’ to be the most divine. Suidas, under word Ποστοῦμος,
+  body: was a pupil of no one, but he said he inquired of himself and learned everything by himself. though he had been engaged
+    in some great and solemn task, said, ‘“T have been seeking myself.’’ And of the sentences at Delphi, he thought the ‘‘
+    Know thyself’ to be the most divine. Suidas, under word Ποστοῦμος,
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality.
-    To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies
-    the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 80 (Bywater
-    Greek). Corpus index HFR_P080 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+  body: 'Heraclitus''s self-inquiry (ἱστορία ἑαυτοῦ) is not introspection but a relentless turning of logos back upon itself—the
+    same faculty that reads fire and flux in the world turned inward as method. The fragment pivots on a paradox: to learn
+    ''everything by himself'' is not isolation but to recognize that the inquiring mind and the inquired-into world share
+    a single intelligible structure. When he says he ''sought himself,'' the self is not a private interior but the point
+    where the universal order becomes legible. The Delphic maxim ''Know thyself'' is divine precisely because it is not psychological
+    but ontological—to know oneself is to know the logos that moves through all things. Heraclitus refuses the teacher-pupil
+    hierarchy not from arrogance but from the conviction that the boundary between knower and known, self and cosmos, is where
+    the real work happens. He is pupil of no one because he is pupil of the fire itself, the ever-living principle that requires
+    no external instruction, only relentless attention to its own movement. The ''great and solemn task'' is the task of thinking
+    itself—not accumulation but the perpetual self-examination of the logos that thinks through him.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: When you catch yourself explaining something to another person, stop mid-sentence and ask aloud what you are actually
+    saying—not to them, but as if the words themselves must answer. Repeat the core claim three times, each time listening
+    for what shifts or breaks in your own utterance, until you cannot tell whether you are teaching or being taught by the
+    sentence.
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: Logos (λόγος)
-    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern
-      according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s
-      ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible
-      speech).'
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts locate self-knowledge in the direct observation of a single, continuous principle:
-      Heraclitus finds the intelligible order through inquiry into the one; the Vijnana Bhairava locates
-      supreme consciousness in the constant articulation of prāṇa as the life-giving flow. Each treats
-      this principle as self-revealing rather than externally taught.'
-    divergence: Heraclitus grounds knowledge in rational inquiry into a cosmic logos; the Vijnana Bhairava
-      grounds it in embodied breath-awareness as the goddess's manifestation, making the body itself the
-      text of recognition.
+    resonance: 'Both texts locate self-knowledge in the direct observation of a single, continuous principle: Heraclitus finds
+      the intelligible order through inquiry into the one; the Vijnana Bhairava locates supreme consciousness in the constant
+      articulation of prāṇa as the life-giving flow. Each treats this principle as self-revealing rather than externally taught.'
+    divergence: Heraclitus grounds knowledge in rational inquiry into a cosmic logos; the Vijnana Bhairava grounds it in embodied
+      breath-awareness as the goddess's manifestation, making the body itself the text of recognition.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Svetasvatara Upanishad — Beyond Image, Known in the Heart
-    resonance: Both texts assert that the ultimate principle cannot be grasped through conventional means
-      of knowing (sensory, relational, or positional). Heraclitus's 'one' resists ordinary plurality;
-      Svetasvatara's 'Him' resists spatial or relational capture—each demands a shift in the mode of inquiry
-      itself.
-    divergence: Heraclitus emphasizes the intelligible order discoverable through rational self-inquiry;
-      Svetasvatara emphasizes the transcendence of the principle beyond all conceptual frameworks, pointing
-      toward a knowing that exceeds intellectual grasp.
+    resonance: Both texts assert that the ultimate principle cannot be grasped through conventional means of knowing (sensory,
+      relational, or positional). Heraclitus's 'one' resists ordinary plurality; Svetasvatara's 'Him' resists spatial or relational
+      capture—each demands a shift in the mode of inquiry itself.
+    divergence: Heraclitus emphasizes the intelligible order discoverable through rational self-inquiry; Svetasvatara emphasizes
+      the transcendence of the principle beyond all conceptual frameworks, pointing toward a knowing that exceeds intellectual
+      grasp.
     passage_id: svetasvatara_upanishad.svu_012
   layer_provenance: generated_grounded
 appendixes: []
@@ -106,5 +105,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P080
   source_reference: Patrick (1889), frag. 80; corpus HFR_P080
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

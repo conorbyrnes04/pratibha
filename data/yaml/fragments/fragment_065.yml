@@ -4,20 +4,38 @@ section: wisdom_pearl
 title: clitus’ writing, ‘‘There is only one supreme Wisdom.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: clitus’ writing, ‘‘There is only one supreme Wisdom. It wills and wills not to be called by the name of Zeus.’’ And again, ‘‘ Law is to obey the will of one’’ (= frag. 110).
-commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 65 (Bywater Greek). Corpus index HFR_P065 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: clitus’ writing, ‘‘There is only one supreme Wisdom. It wills and wills not to be called
+  by the name of Zeus.’’ And again, ‘‘ Law is to obey the will of one’’ (= frag. 110).
+commentary: 'The fragment pivots on a paradox of naming: Wisdom is singular and supreme, yet it simultaneously
+  wills and wills *not* to be called Zeus. This is not mystical obscurity but a precise epistemological
+  claim. Heraclitus refuses the anthropomorphic god-name not out of piety but because naming—fixing a
+  term to a concept—betrays the very nature of what is being named. Wisdom (sophia) is the intelligible
+  principle that *orders* all things, the logos that makes sense of flux and opposition. To call it ''Zeus''
+  is to domesticate it into the pantheon, to make it one god among many, subject to myth and genealogy.
+  The second statement—''Law is to obey the will of one''—clarifies: there is one nomos (law, order, custom)
+  that governs all becoming. Not tyranny, but the single rational necessity that runs through fire, war,
+  justice, and sleep alike. The ''one'' here is not unity-as-merger but unity-as-principle: the unifying
+  force that *remains* while all things pass. To think this requires resisting the comfort of names, the
+  illusion that to name something is to know it. Wisdom wills not to be called, because the moment you
+  call it, you have already lost it to language.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: When you are about to name something—a feeling, a person, a situation—pause at the threshold
+  of the word and notice what happens in that gap between the thing and its label. Speak the name aloud,
+  then sit with the silence after, attending to what the name *excluded* or *simplified*. Repeat this
+  three times with three different objects, letting each naming feel like a small betrayal you are learning
+  to see.
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: clitus’ writing, ‘‘There is only one supreme Wisdom. It wills and wills not to be called by the name of Zeus.’’ And again, ‘‘ Law is to obey the will of one’’ (= frag. 110).
+anchor_translation: clitus’ writing, ‘‘There is only one supreme Wisdom. It wills and wills not to be
+  called by the name of Zeus.’’ And again, ‘‘ Law is to obey the will of one’’ (= frag. 110).
 source_reference: Patrick (1889), frag. 65; corpus HFR_P065
-pratibha_translation: clitus’ writing, ‘‘There is only one supreme Wisdom. It wills and wills not to be called by the name of Zeus.’’ And again, ‘‘ Law is to obey the will of one’’ (= frag. 110).
-editorial_maturity: structural_draft
+pratibha_translation: clitus’ writing, ‘‘There is only one supreme Wisdom. It wills and wills not to be
+  called by the name of Zeus.’’ And again, ‘‘ Law is to obey the will of one’’ (= frag. 110).
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +44,28 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-  resonance: 'Both texts posit a single intelligible order that cannot be grasped apart from its manifestation in plurality: Heraclitus''s ''one supreme Wisdom'' within apparent flux parallels Nagarjuna''s claim that the ultimate (paramārtha) cannot be pointed out without leaning on everyday convention (vyavahāra)—the singular order is inseparable from its conventional expression.'
-  divergence: Heraclitus treats the one as an immanent rational principle (logos) structuring becoming; Nagarjuna treats the ultimate and conventional as mutually dependent but ontologically empty, requiring no underlying substance.
+  resonance: 'Both texts posit a single intelligible order that cannot be grasped apart from its manifestation
+    in plurality: Heraclitus''s ''one supreme Wisdom'' within apparent flux parallels Nagarjuna''s claim
+    that the ultimate (paramārtha) cannot be pointed out without leaning on everyday convention (vyavahāra)—the
+    singular order is inseparable from its conventional expression.'
+  divergence: Heraclitus treats the one as an immanent rational principle (logos) structuring becoming;
+    Nagarjuna treats the ultimate and conventional as mutually dependent but ontologically empty, requiring
+    no underlying substance.
   passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
 - citation: Svetasvatara Upanishad — Beyond Image, Known in the Heart
-  resonance: Both texts refuse to locate the supreme principle in spatial or hierarchical terms—Heraclitus's 'one Wisdom' is not a mystical fusion but an intelligible order that transcends plurality; Svetasvatara's 'No one grasps Him above, across, or in between' similarly negates spatial localization of the transcendent principle.
-  divergence: Heraclitus emphasizes the rational intelligibility of the order within flux; Svetasvatara emphasizes the principle's transcendence of all spatial and conceptual frameworks, pointing toward non-dual realization.
+  resonance: Both texts refuse to locate the supreme principle in spatial or hierarchical terms—Heraclitus's
+    'one Wisdom' is not a mystical fusion but an intelligible order that transcends plurality; Svetasvatara's
+    'No one grasps Him above, across, or in between' similarly negates spatial localization of the transcendent
+    principle.
+  divergence: Heraclitus emphasizes the rational intelligibility of the order within flux; Svetasvatara
+    emphasizes the principle's transcendence of all spatial and conceptual frameworks, pointing toward
+    non-dual realization.
   passage_id: svetasvatara_upanishad.svu_012
+themes:
+- naming and concealment
+- the one and the many
+- logos as ordering principle
+- resistance to anthropomorphism
+- the gap between word and thing
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

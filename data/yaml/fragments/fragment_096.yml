@@ -11,13 +11,24 @@ translation: 'For human nature does not possess understanding, but the divine do
   an understanding of their own. But this is nothing else than an explanation of the mode of the universal
   disposition. As far, therefore, as we participate in the memory of this, we are true; but in as far
   as we act individually, we are false.'
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 96 (Bywater
-  Greek). Corpus index HFR_P096 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment''s central move is not epistemological ranking but a diagnosis of *participation*.
+  Heraclitus does not say humans lack reason; he says human nature does not *possess* it—a crucial difference.
+  Possession implies ownership, mastery, a thing held. But reason (logos) is not a possession; it is a
+  common element we move *through*, like air or fire. The paradox sharpens when he names the consequence:
+  we do and think everything *by participation in divine reason*. This is not mysticism but anatomical
+  clarity. The divine reason is not distant; it is the medium of thinking itself. Yet most people live
+  as though they had an understanding of their own—as though the logos were private property, a faculty
+  they own and control. Here is the fracture. To follow the common (ξυνὸς) is not to obey a rule but to
+  *align with the structure already at work*. The test is stark: insofar as we participate in *memory*
+  of this shared reason, we are true (aletheia—unhidden, unconcealed). Insofar as we act individually,
+  we are false (pseudos—hidden, concealed from the real). The fragment does not condemn individuality;
+  it exposes what happens when individual action severs itself from the common current. Truth is not belief;
+  it is *resonance with what is already moving through us*.'
 voice_of_siva: ''
-abhyasa: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
-  experience it actually rests on. Can you hear the claim, not only think it?
+abhyasa: 'Speak a decision aloud as though it were yours alone—a choice, a judgment, a plan—then listen
+  to the words as they leave your mouth and trace backward: what conversation, what overheard phrase,
+  what shared habit, what collective assumption is already speaking through it? Name one element that
+  is not your own invention.'
 modes:
   bhasya: ''
   doctrinal: ''
@@ -45,9 +56,18 @@ key_terms:
     according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s
     ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible
     speech).'
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
   key_terms: template-assembled
   practice: template-assembled
+themes:
+- participation not possession
+- the common logos
+- truth as alignment
+- false individuality
+- memory and resonance
+- concealment and unconcealment
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

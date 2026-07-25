@@ -409,6 +409,28 @@ def infer_root_like(y: dict[str, Any], path: Path) -> bool:
         return False
     if any(k in p for k in ["siva_sutra", "vijnana_bhairava", "yukti"]):
         return True
+    # PD Christian / Neoplatonic root treatises (English may stand alone when Greek is pending)
+    if "dionysius" in coll or "dionysius" in p or "areopagite" in coll:
+        return True
+    # Other PD contemplative roots promoted from data/yaml structural→strong drafts
+    if any(
+        k in coll or k in p
+        for k in (
+            "dhammapada",
+            "katha",
+            "kaṭha",
+            "brihad",
+            "bṛhad",
+            "mundaka",
+            "muṇḍaka",
+            "parmenides",
+            "marcus",
+            "meditations",
+            "cloud of unknowing",
+            "cloud_of_unknowing",
+        )
+    ):
+        return True
     if "sutra" in coll or "bhairava" in coll:
         return True
     if sid.startswith("ss_") or sid.startswith("yukti_"):

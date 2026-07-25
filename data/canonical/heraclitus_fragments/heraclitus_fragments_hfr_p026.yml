@@ -5,30 +5,46 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p026
 unit_label: ; It pertains to all men to know themselves and to learn self-control.+
-title: Self-Knowledge as Perception Training, Not Doctrine
+title: ; It pertains to all men to know themselves and to learn self-control.+
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: The fragment does not separate self-knowledge from self-control—it binds them as a single act of *gnōmē*, recognition.
 themes:
-- breath
+- desire
+- knowledge
+- practice
+- recognition
 - self
+- silence
 source_excerpt: ; It pertains to all men to know themselves and to learn self-control.+
 translation_literal: ; It pertains to all people to know themselves and to learn self-control.+
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 26 (Bywater
-  Greek). Corpus index HFR_P026 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'The fragment does not separate self-knowledge from self-control—it binds them as a single act of *gnōmē*, recognition.
+  ''To know oneself'' (gnōnai heauton) is not introspection or inventory; it is to recognize the measure that already governs
+  you, the logos operating through appetite, speech, and choice. Self-control (sōphrosynē) is not restraint imposed from outside
+  but the clarity that comes when you see the pattern you embody. Heraclitus places this recognition as *pertaining to all*—not
+  a privilege of philosophers but a necessity woven into human nature itself. The aphorism''s force lies in its refusal to
+  separate the cognitive from the ethical: you cannot know yourself without simultaneously knowing your limit, your proper
+  measure. The ''and'' (kai) is not additive but revelatory—the moment you see what you are, you see what you must not exceed.
+  This is why the fragment opens with ''it pertains''—not a command but a statement of structural fact, like gravity. To ignore
+  it is not to rebel but to remain asleep to your own nature.'
 insight: ''
-practice: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-  what image or resistance arises — that resistance is part of the teaching.
+practice: 'When you feel the impulse to speak—in argument, boast, complaint, or correction—pause and name aloud the specific
+  desire driving the words: *I want to win, to be seen, to hurt, to matter*. Do not suppress it. Speak the desire plainly
+  to yourself, then choose whether to speak the original words. Repeat this three times in one day, in three different moments.
+  The practice is not silence but the microscopic space between impulse and utterance—where self-knowledge and self-measure
+  become the same act.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
-- breath
 - commentary_text
+- desire
 - heraclitus_fragments
+- knowledge
+- practice
+- recognition
 - self
+- silence
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
 - kind: translation
@@ -37,37 +53,41 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 26
-    (Bywater Greek). Corpus index HFR_P026 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'The fragment does not separate self-knowledge from self-control—it binds them as a single act of *gnōmē*, recognition.
+    ''To know oneself'' (gnōnai heauton) is not introspection or inventory; it is to recognize the measure that already governs
+    you, the logos operating through appetite, speech, and choice. Self-control (sōphrosynē) is not restraint imposed from
+    outside but the clarity that comes when you see the pattern you embody. Heraclitus places this recognition as *pertaining
+    to all*—not a privilege of philosophers but a necessity woven into human nature itself. The aphorism''s force lies in
+    its refusal to separate the cognitive from the ethical: you cannot know yourself without simultaneously knowing your limit,
+    your proper measure. The ''and'' (kai) is not additive but revelatory—the moment you see what you are, you see what you
+    must not exceed. This is why the fragment opens with ''it pertains''—not a command but a statement of structural fact,
+    like gravity. To ignore it is not to rebel but to remain asleep to your own nature.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching
-    what image or resistance arises — that resistance is part of the teaching.
+  body: 'When you feel the impulse to speak—in argument, boast, complaint, or correction—pause and name aloud the specific
+    desire driving the words: *I want to win, to be seen, to hurt, to matter*. Do not suppress it. Speak the desire plainly
+    to yourself, then choose whether to speak the original words. Repeat this three times in one day, in three different moments.
+    The practice is not silence but the microscopic space between impulse and utterance—where self-knowledge and self-measure
+    become the same act.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 5
-    resonance: 'Both texts compress a cosmological or metaphysical claim into an imperative about self-recognition:
-      Heraclitus demands that all people know themselves as the condition for understanding universal
-      order (breath/logos), while Plotinus describes the soul''s longing to recognize and merge with its
-      true divine nature as the path to liberation from external illusion.'
-    divergence: Heraclitus grounds self-knowledge in rational mastery and cosmic participation (breath
-      as shared principle), whereas Plotinus grounds it in a vertical ascent from sensory entanglement
-      to transcendent unity with the divine source.
+    resonance: 'Both texts compress a cosmological or metaphysical claim into an imperative about self-recognition: Heraclitus
+      demands that all people know themselves as the condition for understanding universal order (breath/logos), while Plotinus
+      describes the soul''s longing to recognize and merge with its true divine nature as the path to liberation from external
+      illusion.'
+    divergence: Heraclitus grounds self-knowledge in rational mastery and cosmic participation (breath as shared principle),
+      whereas Plotinus grounds it in a vertical ascent from sensory entanglement to transcendent unity with the divine source.
     passage_id: plotinus_enneads.enn_i_6_05
   - citation: Astavakra Gita — 8.1 — 8.4
-    resonance: 'Both texts use a paradoxical inversion to teach self-mastery: Heraclitus compresses the
-      cosmological principle into the paradox that knowing oneself is universal duty, while Astavakra
-      teaches that bondage and liberation are determined by the mind''s posture toward desire and sorrow—making
-      self-knowledge (cittam) the pivot of freedom.'
-    divergence: Heraclitus emphasizes self-control as alignment with universal logos and breath, whereas
-      Astavakra locates liberation in the mind's non-attachment to mental states themselves, a more radical
-      negation of the desiring subject.
+    resonance: 'Both texts use a paradoxical inversion to teach self-mastery: Heraclitus compresses the cosmological principle
+      into the paradox that knowing oneself is universal duty, while Astavakra teaches that bondage and liberation are determined
+      by the mind''s posture toward desire and sorrow—making self-knowledge (cittam) the pivot of freedom.'
+    divergence: Heraclitus emphasizes self-control as alignment with universal logos and breath, whereas Astavakra locates
+      liberation in the mind's non-attachment to mental states themselves, a more radical negation of the desiring subject.
     passage_id: astavakra_gita.asg_sum_08_01_08_04
   layer_provenance: generated_grounded
 - kind: appendix
@@ -82,5 +102,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P026
   source_reference: Patrick (1889), frag. 26; corpus HFR_P026
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

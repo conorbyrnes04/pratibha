@@ -5,84 +5,84 @@ work_id: heraclitus_fragments
 work_title: Heraclitus Fragments
 unit_id: heraclitus_fragments.hfr_p003
 unit_label: Those who hear and do not understand are like the deaf.
-title: Presence Without Hearing Is Absence
+title: Those who hear and do not understand are like the deaf.
 unit_type: teaching_passage
-thesis: This aphorism compresses a cosmological claim into a single image or paradox.
+thesis: 'Heraclitus does not soften the blow: hearing without understanding is deafness.'
 themes:
-- awareness
-- ignorance
-- silence
 - attention
-- mind
-- knowledge
-source_excerpt: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘
-  Present, they are absent.’’'
-translation_literal: 'Those who hear and do not understand are like the deaf. Of them the proverb says:
-  ‘‘ Present, they are absent.’’'
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-  Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-  experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 3 (Bywater
-  Greek). Corpus index HFR_P003 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+- silence
+- vibration
+source_excerpt: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are absent.’’'
+translation_literal: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are
+  absent.’’'
+commentary: 'Heraclitus does not soften the blow: hearing without understanding is deafness. The paradox cuts deeper than
+  mere inattention. To hear is to have the physical capacity—the ear receives vibration, the body registers presence. Yet
+  understanding (noesis, grasping the logos) requires a different organ altogether, one that most people do not exercise.
+  The fragment''s second movement—''Present, they are absent''—names the specific wound: the body stands in the room, the
+  ear admits sound, yet the person is not there. This is not metaphor but diagnosis of a common condition. Heraclitus watches
+  people move through the world as though sleepwalking, their senses open but their participation closed. The proverb he cites
+  does not console; it confirms. What makes this unbearable is that presence and absence are not opposites here but simultaneous
+  states. You can be fully present in flesh and utterly absent in attention, in receptivity, in the capacity to let what you
+  hear change the shape of your thinking. The fragment trains the ear not to hear better but to recognize when hearing has
+  stopped—when sound enters but nothing is received, when words pass through without landing.'
 insight: ''
-practice: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
-  experience it actually rests on. Can you hear the claim, not only think it?
-sanskrit_devanagari: Ἀξύνετοι ἀκούσαντες κωφοῖσι ἐοίκασι· φάτις αὐτοῖσι μαρτυρέει παρεόντας ἀπεῖναι.
+practice: In conversation, notice the moment your mouth begins forming a response before the other person has finished speaking—that
+  instant when your presence inverts into absence. Pause there. Return your attention to the actual words still arriving,
+  as though hearing them for the first time, and let your reply wait until the silence after they speak has fully settled.
+sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
-- awareness
 - commentary_text
 - heraclitus_fragments
-- ignorance
-- knowledge
-- mind
 - silence
+- vibration
 quality_score: 0
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  body: Ἀξύνετοι ἀκούσαντες κωφοῖσι ἐοίκασι· φάτις αὐτοῖσι μαρτυρέει παρεόντας ἀπεῖναι.
-  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
-  body: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present,
-    they are absent.’’'
+  body: 'Those who hear and do not understand are like the deaf. Of them the proverb says: ‘‘ Present, they are absent.’’'
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly:
-    Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what
-    experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 3
-    (Bywater Greek). Corpus index HFR_P003 follows the Diels–Kranz-style numbering used in the Pratibha
-    pilot batch.'
+  body: 'Heraclitus does not soften the blow: hearing without understanding is deafness. The paradox cuts deeper than mere
+    inattention. To hear is to have the physical capacity—the ear receives vibration, the body registers presence. Yet understanding
+    (noesis, grasping the logos) requires a different organ altogether, one that most people do not exercise. The fragment''s
+    second movement—''Present, they are absent''—names the specific wound: the body stands in the room, the ear admits sound,
+    yet the person is not there. This is not metaphor but diagnosis of a common condition. Heraclitus watches people move
+    through the world as though sleepwalking, their senses open but their participation closed. The proverb he cites does
+    not console; it confirms. What makes this unbearable is that presence and absence are not opposites here but simultaneous
+    states. You can be fully present in flesh and utterly absent in attention, in receptivity, in the capacity to let what
+    you hear change the shape of your thinking. The fragment trains the ear not to hear better but to recognize when hearing
+    has stopped—when sound enters but nothing is received, when words pass through without landing.'
+  layer_provenance: template-assembled
+- kind: practice
+  label: Practice (Abhyasa)
+  body: In conversation, notice the moment your mouth begins forming a response before the other person has finished speaking—that
+    instant when your presence inverts into absence. Pause there. Return your attention to the actual words still arriving,
+    as though hearing them for the first time, and let your reply wait until the silence after they speak has fully settled.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Isavasya Upanishad — Mantra 12
-    resonance: 'Both texts use a paradoxical inversion to expose a failure of perception: those who engage
-      with one mode (hearing without understanding; devotion to only the unmanifest or only the manifest)
-      find themselves in a state functionally equivalent to its opposite (deafness; darkness). The structure
-      is: apparent engagement masks actual deprivation.'
-    divergence: Heraclitus frames this as a problem of logos and attention in a unified cosmos; the Isavasya
-      Upanishad frames it as a metaphysical error of exclusive devotion, requiring balance between complementary
-      principles.
+    resonance: 'Both texts use a paradoxical inversion to expose a failure of perception: those who engage with one mode (hearing
+      without understanding; devotion to only the unmanifest or only the manifest) find themselves in a state functionally
+      equivalent to its opposite (deafness; darkness). The structure is: apparent engagement masks actual deprivation.'
+    divergence: Heraclitus frames this as a problem of logos and attention in a unified cosmos; the Isavasya Upanishad frames
+      it as a metaphysical error of exclusive devotion, requiring balance between complementary principles.
     passage_id: isavasya_upanishad.isa_018
   - citation: Patañjali Yoga Sūtras 3.54
-    resonance: Both texts locate true knowledge in the capacity to discern subtle distinctions that ordinary
-      perception conflates. Heraclitus's paradox hinges on the gap between hearing (physical reception)
-      and understanding (discrimination); Patañjali's aphorism hinges on discerning what 'appears alike'
-      but differs in subtle marks—both make discrimination the threshold of knowledge.
-    divergence: Heraclitus treats this as a cosmological condition embedded in the logos itself; Patañjali
-      treats it as a yogic faculty developed through systematic practice on the subtle body.
+    resonance: Both texts locate true knowledge in the capacity to discern subtle distinctions that ordinary perception conflates.
+      Heraclitus's paradox hinges on the gap between hearing (physical reception) and understanding (discrimination); Patañjali's
+      aphorism hinges on discerning what 'appears alike' but differs in subtle marks—both make discrimination the threshold
+      of knowledge.
+    divergence: Heraclitus treats this as a cosmological condition embedded in the logos itself; Patañjali treats it as a
+      yogic faculty developed through systematic practice on the subtle body.
     passage_id: patañjali_yoga_sūtras.ys_3_54
   layer_provenance: generated_grounded
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what
-    experience it actually rests on. Can you hear the claim, not only think it?
-  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -90,5 +90,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P003
   source_reference: Patrick (1889), frag. 3; corpus HFR_P003
-translation_provenance: English adapted from George T. W. Patrick, *The Fragments of Heraclitus* (1889),
-  public domain; Greek per Bywater. Study rendering.

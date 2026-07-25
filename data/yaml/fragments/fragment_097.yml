@@ -4,20 +4,35 @@ section: wisdom_pearl
 title: The thoughtless man understands the voice of the Deity as little as the child understands...
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: The thoughtless man understands the voice of the Deity as little as the child understands the man.”
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 97 (Bywater Greek). Corpus index HFR_P097 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: The thoughtless man understands the voice of the Deity as little as the child understands
+  the man.”
+commentary: 'Heraclitus does not compare understanding to understanding. He compares *gaps*—the distance
+  between thoughtless man and deity, child and man. The voice of the Deity (theos phōnē) is already sounding;
+  the child already hears the man. What fails is not the voice but the ear that meets it. The fragment''s
+  force lies in its refusal of equivalence: a child''s incomprehension of an adult is not mere ignorance
+  but a structural mismatch of scale, temporality, and capacity. The thoughtless man (aphron) stands in
+  the same relation to divine speech as the child to human speech—not absent from the sound, but unable
+  to discern its articulation, its logos. This is not pessimism about knowledge but precision about what
+  listening requires: a proportional readiness, a tuning of the receiver to the frequency being transmitted.
+  The fragment teaches by withholding: it does not tell you what the Deity says, only that you may already
+  be missing it, standing exactly where the child stands, ears open but unmatched to what they receive.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: In conversation with one person today, listen for the moment when you recognize you have not
+  understood—not missed a word, but felt the gap between what was said and what you grasped. Pause there
+  without rushing to fill it. Notice whether the speaker continues, repeats, or waits; notice your own
+  impulse to nod, to agree, to move past. That gap is the child hearing the man.
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: The thoughtless man understands the voice of the Deity as little as the child understands the man.”
+anchor_translation: The thoughtless man understands the voice of the Deity as little as the child understands
+  the man.”
 source_reference: Patrick (1889), frag. 97; corpus HFR_P097
-pratibha_translation: The thoughtless man understands the voice of the Deity as little as the child understands the man.”
-editorial_maturity: structural_draft
+pratibha_translation: The thoughtless man understands the voice of the Deity as little as the child understands
+  the man.”
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +41,29 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Svetasvatara Upanishad — Beyond Image, Known in the Heart
-  resonance: 'Both texts compress a cosmological claim into an aphorism about the limits of ordinary perception: Heraclitus uses the child-man analogy to show how the unthinking mind cannot grasp the divine voice, while Svetasvatara uses spatial negation (above, across, between) to show how the Ultimate escapes conventional localization. Each moves from a perceptual failure to a metaphysical insight.'
-  divergence: Heraclitus grounds the failure in lack of thought (noesis), treating it as a developmental or intellectual problem; Svetasvatara treats it as an ontological problem—the Self transcends spatial categories altogether, not merely human comprehension.
+  resonance: 'Both texts compress a cosmological claim into an aphorism about the limits of ordinary perception:
+    Heraclitus uses the child-man analogy to show how the unthinking mind cannot grasp the divine voice,
+    while Svetasvatara uses spatial negation (above, across, between) to show how the Ultimate escapes
+    conventional localization. Each moves from a perceptual failure to a metaphysical insight.'
+  divergence: Heraclitus grounds the failure in lack of thought (noesis), treating it as a developmental
+    or intellectual problem; Svetasvatara treats it as an ontological problem—the Self transcends spatial
+    categories altogether, not merely human comprehension.
   passage_id: svetasvatara_upanishad.svu_012
 - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-  resonance: 'Both texts establish a paradoxical two-level structure: Heraclitus shows that the thoughtless cannot hear the divine voice (a gap between levels of understanding), while Nagarjuna shows that the ultimate cannot be pointed out without leaning on the conventional (a necessary interdependence between levels). Each refuses a simple hierarchy and instead binds lower and higher together.'
-  divergence: Heraclitus emphasizes the failure of perception at the lower level to access the higher; Nagarjuna emphasizes the logical necessity of both levels for any meaningful discourse about liberation itself.
+  resonance: 'Both texts establish a paradoxical two-level structure: Heraclitus shows that the thoughtless
+    cannot hear the divine voice (a gap between levels of understanding), while Nagarjuna shows that the
+    ultimate cannot be pointed out without leaning on the conventional (a necessary interdependence between
+    levels). Each refuses a simple hierarchy and instead binds lower and higher together.'
+  divergence: Heraclitus emphasizes the failure of perception at the lower level to access the higher;
+    Nagarjuna emphasizes the logical necessity of both levels for any meaningful discourse about liberation
+    itself.
   passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
+themes:
+- listening and capacity
+- structural mismatch
+- the unheard voice
+- readiness
+- logos and incomprehension
+- the gap between scales
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

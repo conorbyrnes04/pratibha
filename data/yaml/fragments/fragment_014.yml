@@ -4,20 +4,45 @@ section: wisdom_pearl
 title: Polybius iv.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: Polybius iv. 40. Especially at the present time, when all places are accessible either by land or by water, we should not accept poets and mythologists as witnesses of things that are unknown, since for the most part they furnish us with unreliable testimony about disputed things, according to Heraclitus.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 14 (Bywater Greek). Corpus index HFR_P014 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: Polybius iv. 40. Especially at the present time, when all places are accessible either by
+  land or by water, we should not accept poets and mythologists as witnesses of things that are unknown,
+  since for the most part they furnish us with unreliable testimony about disputed things, according to
+  Heraclitus.
+commentary: 'Polybius invokes Heraclitus here not as a cosmologist but as a court of appeal against testimony
+  itself—against the poet''s claim to witness what lies beyond direct access. The move is sharp: accessibility
+  (all places now reachable) has made the old excuse for myth obsolete. Yet Heraclitus'' name appears
+  not to settle the matter but to sharpen it. What Heraclitus teaches, in this citation, is that unreliability
+  is not accidental but structural to reported speech about the disputed, the contested, the far-away.
+  The fragment turns on a quiet recognition: when many accounts collide, when poets offer competing visions
+  of what happened in Troy or the underworld, the problem is not that we lack better poets—it is that
+  testimony about the absent thing is inherently unstable, shot through with the speaker''s own fire,
+  their own logos. Heraclitus appears here as the one who saw that contradiction and flux are not flaws
+  in knowledge but its signature when knowledge claims to cross the boundary from the seen to the unseen.
+  To accept poets as witnesses is to mistake eloquence for access. Heraclitus'' point, filtered through
+  Polybius, is colder: the more distant the thing, the more the account belongs to the speaker, not to
+  what is spoken of.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: Read a historical or mythological account you half-believe (a news report from a place you cannot
+  verify, a family story told by someone not present, a sacred text about invisible events), and mark
+  every claim that rests on someone else's testimony rather than on what you or the speaker directly encountered.
+  Notice which gaps you fill with your own inference, which you leave blank. Repeat this marking three
+  times with different texts, watching whether your tolerance for the unmarked gaps grows or shrinks.
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: Polybius iv. 40. Especially at the present time, when all places are accessible either by land or by water, we should not accept poets and mythologists as witnesses of things that are unknown, since for the most part they furnish us with unreliable testimony about disputed things, according to Heraclitus.
+anchor_translation: Polybius iv. 40. Especially at the present time, when all places are accessible either
+  by land or by water, we should not accept poets and mythologists as witnesses of things that are unknown,
+  since for the most part they furnish us with unreliable testimony about disputed things, according to
+  Heraclitus.
 source_reference: Patrick (1889), frag. 14; corpus HFR_P014
-pratibha_translation: Polybius iv. 40. Especially at the present time, when all places are accessible either by land or by water, we should not accept poets and mythologists as witnesses of things that are unknown, since for the most part they furnish us with unreliable testimony about disputed things, according to Heraclitus.
-editorial_maturity: structural_draft
+pratibha_translation: Polybius iv. 40. Especially at the present time, when all places are accessible
+  either by land or by water, we should not accept poets and mythologists as witnesses of things that
+  are unknown, since for the most part they furnish us with unreliable testimony about disputed things,
+  according to Heraclitus.
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +51,28 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: 'Vijnana Bhairava — Yukti #1'
-  resonance: 'Both texts compress a cosmological principle into the rhythmic movement of breath itself: Heraclitus sees breath as the paradoxical unity of opposites (the living fire), while Vijnana Bhairava locates the Supreme Goddess''s creative articulation in the dual prāṇa-jīva cycle (exhale-inhale). Each makes breath the primary image where cosmic principle becomes perceptible.'
-  divergence: Heraclitus treats breath as a metaphysical paradox revealing the nature of flux and unity; Vijnana Bhairava treats breath as a yogic technique for recognizing divine consciousness through embodied practice.
+  resonance: 'Both texts compress a cosmological principle into the rhythmic movement of breath itself:
+    Heraclitus sees breath as the paradoxical unity of opposites (the living fire), while Vijnana Bhairava
+    locates the Supreme Goddess''s creative articulation in the dual prāṇa-jīva cycle (exhale-inhale).
+    Each makes breath the primary image where cosmic principle becomes perceptible.'
+  divergence: Heraclitus treats breath as a metaphysical paradox revealing the nature of flux and unity;
+    Vijnana Bhairava treats breath as a yogic technique for recognizing divine consciousness through embodied
+    practice.
   passage_id: vijnana_bhairava.yukti_001
 - citation: Isavasya Upanishad — Mantra 17
-  resonance: 'Both texts use breath as the vehicle for a fundamental transition or return: Heraclitus''s aphorism likely concerns breath''s role in the cycle of becoming, while Isavasya Upanishad explicitly invokes breath''s return to the immortal element as the dissolution of the individual body into cosmic principle.'
-  divergence: Heraclitus emphasizes breath as the living principle of continuous flux and paradox; Isavasya Upanishad emphasizes breath's ultimate return to transcendence, marking the end of embodied existence.
+  resonance: 'Both texts use breath as the vehicle for a fundamental transition or return: Heraclitus''s
+    aphorism likely concerns breath''s role in the cycle of becoming, while Isavasya Upanishad explicitly
+    invokes breath''s return to the immortal element as the dissolution of the individual body into cosmic
+    principle.'
+  divergence: Heraclitus emphasizes breath as the living principle of continuous flux and paradox; Isavasya
+    Upanishad emphasizes breath's ultimate return to transcendence, marking the end of embodied existence.
   passage_id: isavasya_upanishad.isa_023
+themes:
+- testimony and distance
+- the limits of witness
+- flux in reported speech
+- accessibility and myth
+- the speaker's fire
+- disputed knowledge
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

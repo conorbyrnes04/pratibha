@@ -4,20 +4,41 @@ section: wisdom_pearl
 title: If there were no sun, it would be night.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: If there were no sun, it would be night. one may escape the sensible light, but the intellectual it is impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never sets Ὁ XX VIII.—
-commentary: 'The ''one'' is not mystical fusion but the single intelligible order within apparent plurality. To confess that all things are one is to refuse piecemeal metaphysics — yet Heraclitus never denies the visibility of difference; he reframes it. Anchor: George T.W. Patrick (1889), fragment 31 (Bywater Greek). Corpus index HFR_P031 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: If there were no sun, it would be night. one may escape the sensible light, but the intellectual
+  it is impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never sets Ὁ XX
+  VIII.—
+commentary: 'The fragment''s paradox turns on a doubled negation: the sensible sun can be escaped (close
+  your eyes, enter a cave, die), but the intelligible sun—the logos, the ordering principle that *is*
+  the sun''s necessity—cannot. Heraclitus does not mean a mystical fusion or hidden god. He means that
+  the rational structure binding all things (that which makes the sun rise, makes fire burn, makes justice
+  hold) has no eclipse. You can refuse to see it; you cannot refuse its operation. The phrase ''never
+  sets'' (ἀδύνατος, unable to go down) is not poetic ornament—it names the very condition of intelligibility
+  itself. What ''sets'' is the particular orb; what remains is the *principle* that makes setting and
+  rising intelligible as a single order. To say ''if there were no sun, it would be night'' is to say:
+  remove the visible source, and you remove only appearance. The deeper sun—the law of alternation, of
+  measure, of the one-in-many—persists precisely because it is not an object you can remove. The old commentary''s
+  error was to soften this into fusion. Heraclitus insists on clarity: the one is not mystical but *structural*,
+  visible in every particular that obeys it, yet never itself an object among objects.'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: 'At the moment you notice you have stopped paying attention—mid-conversation, mid-scroll, mid-thought—name
+  aloud or internally what you *cannot* unsee about the present moment: the light on a surface, the rhythm
+  of breath, the fact that you are aware. Do not try to hold it. Return to the task. Repeat this three
+  times in a single day, each time noting whether the ''light'' you named was easier or harder to forget
+  than the thing you were distracted by.'
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: If there were no sun, it would be night. one may escape the sensible light, but the intellectual it is impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never sets Ὁ XX VIII.—
+anchor_translation: If there were no sun, it would be night. one may escape the sensible light, but the
+  intellectual it is impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never
+  sets Ὁ XX VIII.—
 source_reference: Patrick (1889), frag. 31; corpus HFR_P031
-pratibha_translation: If there were no sun, it would be night. one may escape the sensible light, but the intellectual it is impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which never sets Ὁ XX VIII.—
-editorial_maturity: structural_draft
+pratibha_translation: If there were no sun, it would be night. one may escape the sensible light, but
+  the intellectual it is impossible to escape. Or, as Heraclitus says, ‘‘ How can one escape that which
+  never sets Ὁ XX VIII.—
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +47,24 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-  resonance: 'Both texts establish that apparent duality (sun/night, conventional/ultimate) is not a contradiction but a single intelligible order: Heraclitus shows night depends on sun''s absence as a unified logical structure; Nagarjuna shows conventional and ultimate are inseparable poles of one non-dual pointing.'
-  divergence: Heraclitus grounds unity in cosmic logos and sensible order; Nagarjuna grounds it in emptiness (śūnyatā) and the impossibility of independent reference.
+  resonance: 'Both texts establish that apparent duality (sun/night, conventional/ultimate) is not a contradiction
+    but a single intelligible order: Heraclitus shows night depends on sun''s absence as a unified logical
+    structure; Nagarjuna shows conventional and ultimate are inseparable poles of one non-dual pointing.'
+  divergence: Heraclitus grounds unity in cosmic logos and sensible order; Nagarjuna grounds it in emptiness
+    (śūnyatā) and the impossibility of independent reference.
   passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
 - citation: 'Vijnana Bhairava — Yukti #37'
-  resonance: 'Both texts locate intelligible order within a dynamic tension or opposition: Heraclitus''s ''one'' emerges from the tension of opposites (day/night); Yukti #37 shows equality-consciousness arises from the dynamic tension (sanghaṭṭa) of the two prāṇas at their termination.'
-  divergence: Heraclitus treats tension as the eternal structure of logos itself; the Vijnana Bhairava treats it as a yogic technique for accessing non-dual awareness through breath manipulation.
+  resonance: 'Both texts locate intelligible order within a dynamic tension or opposition: Heraclitus''s
+    ''one'' emerges from the tension of opposites (day/night); Yukti #37 shows equality-consciousness
+    arises from the dynamic tension (sanghaṭṭa) of the two prāṇas at their termination.'
+  divergence: Heraclitus treats tension as the eternal structure of logos itself; the Vijnana Bhairava
+    treats it as a yogic technique for accessing non-dual awareness through breath manipulation.
   passage_id: vijnana_bhairava.yukti_037
+themes:
+- intelligibility
+- the one that does not set
+- escape and necessity
+- visible and invisible order
+- logos as principle not object
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

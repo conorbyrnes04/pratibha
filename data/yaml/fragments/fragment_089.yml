@@ -5,9 +5,23 @@ title: In thirty years aman may become a grandfather.
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 translation: In thirty years aman may become a grandfather.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 89 (Bywater Greek). Corpus index HFR_P089 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+commentary: 'This fragment collapses three orders of time into a single measure: the biological span (thirty
+  years), the genealogical leap (man to grandfather), and the implicit cosmological rhythm beneath both.
+  Heraclitus does not state ''time passes'' or ''all things age''—he names a specific threshold where
+  a man becomes *other* while remaining himself, where continuity and rupture occupy the same body. The
+  fragment trains the eye to see that thirty years is not a neutral duration but a *generative interval*,
+  a time-knot where the same flesh that was young becomes the vessel of ancestry. Notice: he does not
+  say ''a man ages into a grandfather'' but ''may become''—the contingency is crucial. Death, infertility,
+  accident, discontinuity all press against this possibility. Yet the fragment''s very utterance assumes
+  the listener knows this threshold intimately, has witnessed it, carries it forward. The teaching is
+  not metaphorical. It asks: what *is* the thirty-year rhythm in your own body, your own house? What generation-shift
+  are you already inside, whether as the man or as the one who will inherit his name?'
 voice_of_siva: ''
-abhyasa: Memorize the fragment in one breath. Recite it once on waking and once before sleep, watching what image or resistance arises — that resistance is part of the teaching.
+abhyasa: 'Mark on a calendar or in a notebook the date thirty years from today, then write the name or
+  initials of someone you know who was born thirty years ago—someone now old enough to have grandchildren.
+  Over the next week, each time you pass that mark or name, pause and feel the weight of that interval
+  in your chest: not as abstraction but as the actual span between your current hands and the hands of
+  someone not yet born who will carry forward what you do now.'
 modes:
   bhasya: ''
   doctrinal: ''
@@ -17,7 +31,7 @@ glossary: []
 anchor_translation: In thirty years aman may become a grandfather.
 source_reference: Patrick (1889), frag. 89; corpus HFR_P089
 pratibha_translation: In thirty years aman may become a grandfather.
-editorial_maturity: structural_draft
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -26,10 +40,26 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Patañjali Yoga Sūtras 3.15
-  resonance: 'Both texts compress temporal transformation into a single structural principle: Heraclitus embeds cosmological flux in the generational cycle (grandfather in thirty years), while Patañjali grounds successive transformations in the succession of phases themselves—time as the engine of metamorphosis.'
-  divergence: Heraclitus presents transformation as paradoxical and aphoristic (a riddle of human finitude), whereas Patañjali systematizes it as a logical law of phenomenal succession within a yogic epistemology.
+  resonance: 'Both texts compress temporal transformation into a single structural principle: Heraclitus
+    embeds cosmological flux in the generational cycle (grandfather in thirty years), while Patañjali
+    grounds successive transformations in the succession of phases themselves—time as the engine of metamorphosis.'
+  divergence: Heraclitus presents transformation as paradoxical and aphoristic (a riddle of human finitude),
+    whereas Patañjali systematizes it as a logical law of phenomenal succession within a yogic epistemology.
   passage_id: patañjali_yoga_sūtras.ys_3_15
 - citation: 'Vijnana Bhairava — Yukti #1'
-  resonance: 'Both texts locate the fundamental principle of becoming in breath or vital flow: Heraclitus''s compressed image of generational time mirrors the Vijnana Bhairava''s articulation of prāṇa and jīva as the constant oscillation between exhalation and inhalation—the basic rhythm that generates embodied existence.'
-  divergence: Heraclitus treats breath implicitly through the paradox of human aging, while Vijnana Bhairava makes breath (prāṇa) the explicit cosmological mechanism through which the Goddess articulates reality.
+  resonance: 'Both texts locate the fundamental principle of becoming in breath or vital flow: Heraclitus''s
+    compressed image of generational time mirrors the Vijnana Bhairava''s articulation of prāṇa and jīva
+    as the constant oscillation between exhalation and inhalation—the basic rhythm that generates embodied
+    existence.'
+  divergence: Heraclitus treats breath implicitly through the paradox of human aging, while Vijnana Bhairava
+    makes breath (prāṇa) the explicit cosmological mechanism through which the Goddess articulates reality.
   passage_id: vijnana_bhairava.yukti_001
+themes:
+- time-threshold
+- genealogy and rupture
+- the body's measure
+- contingency and continuity
+- generation
+- the lived cosmology
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).

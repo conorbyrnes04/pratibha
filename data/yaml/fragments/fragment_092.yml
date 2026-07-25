@@ -4,23 +4,41 @@ section: wisdom_pearl
 title: Although the Law of Reason is common, the majority of people live as though they had an u...
 sanskrit: ''
 transliteration: '*(Greek original not in corpus; see Patrick/Bywater.)*'
-translation: Although the Law of Reason is common, the majority of people live as though they had an understanding of their own.
-commentary: 'This aphorism compresses a cosmological claim into a single image or paradox. Read it slowly: Heraclitus is not offering a syllogism but training perception. The fragment asks you to notice what experience already shows once opinion falls quiet. Anchor: George T.W. Patrick (1889), fragment 92 (Bywater Greek). Corpus index HFR_P092 follows the Diels–Kranz-style numbering used in the Pratibha pilot batch.'
+translation: Although the Law of Reason is common, the majority of people live as though they had an understanding
+  of their own.
+commentary: 'The fragment''s force lies not in condemning stupidity but in naming a specific blindness:
+  the *logos* (law, ratio, intelligibility) is *xynos*—shared, common, available to all—yet people treat
+  understanding as *idion*, their own private possession. Heraclitus is not saying most people are dumb;
+  he is saying they mistake the universal for the particular, the found-in-common for the self-generated.
+  The paradox cuts deeper than mere disagreement: it exposes a structural delusion in how consciousness
+  operates. You inherit language, rhythm, the very structure of thought from the world, yet experience
+  it as *yours*. The logos speaks through you; you hear it as your voice. This is not moral failing but
+  the default mode of waking life—a kind of sleepwalking through the shared while naming it private. The
+  fragment asks: can you notice the moment when a thought arrives *before* you claim it? When does understanding
+  cease to be *common* and become *mine*?'
 voice_of_siva: ''
-abhyasa: Before arguing a point today, pause and write one sentence you hold as obvious — then ask what experience it actually rests on. Can you hear the claim, not only think it?
+abhyasa: Speak aloud a strong conviction—one you've held for years—then stop mid-sentence and listen to
+  the rhythm, cadence, and phrasing as though hearing it for the first time. Whose speech-patterns are
+  moving through your mouth? Whose images, whose turns of phrase? Continue speaking but track the borrowed
+  architecture underneath the personal certainty.
 modes:
   bhasya: ''
   doctrinal: ''
   comparative: ''
   sadhana: Hold this fragment in awareness through the day; return to it whenever reactivity appears.
 glossary: []
-anchor_translation: Although the Law of Reason is common, the majority of people live as though they had an understanding of their own.
+anchor_translation: Although the Law of Reason is common, the majority of people live as though they had
+  an understanding of their own.
 source_reference: Patrick (1889), frag. 92; corpus HFR_P092
-pratibha_translation: Although the Law of Reason is common, the majority of people live as though they had an understanding of their own.
+pratibha_translation: Although the Law of Reason is common, the majority of people live as though they
+  had an understanding of their own.
 key_terms:
 - term: Logos (λόγος)
-  definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
-editorial_maturity: structural_draft
+  definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern
+    according to which all things occur — not a private doctrine but the world''s articulation. Patrick''s
+    ''Reason'' is a Victorian gloss; we use Logos to preserve the Greek range (cosmic order + intelligible
+    speech).'
+editorial_maturity: strong_draft
 layer_provenance:
   translation: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
   commentary: template-assembled
@@ -29,10 +47,25 @@ layer_provenance:
   resonances: generated_grounded
 resonances:
 - citation: Phaedo (Plato) — Knowledge as Recollection
-  resonance: Both texts posit that true knowledge is not a novel acquisition but a re-cognition of what the mind already possesses or measures by. Heraclitus claims the common Logos is available to all yet most live as though they have private understanding; Plato's recollection doctrine holds that learning re-recognizes standards the mind already carries.
-  divergence: Heraclitus emphasizes the paradox of universal access paired with willful ignorance; Plato locates the problem in forgetting and the need for dialectical recovery of innate forms.
+  resonance: Both texts posit that true knowledge is not a novel acquisition but a re-cognition of what
+    the mind already possesses or measures by. Heraclitus claims the common Logos is available to all
+    yet most live as though they have private understanding; Plato's recollection doctrine holds that
+    learning re-recognizes standards the mind already carries.
+  divergence: Heraclitus emphasizes the paradox of universal access paired with willful ignorance; Plato
+    locates the problem in forgetting and the need for dialectical recovery of innate forms.
   passage_id: phaedo_plato.phaedo_md_002
 - citation: Isavasya Upanishad — Mantra 12
-  resonance: 'Both texts diagnose a structural trap: exclusive commitment to one pole (unmanifest or manifest; private understanding or the common Logos) leads to darkness or error. The problem is not lack of access but misdirected attention or false choice.'
-  divergence: Heraclitus frames the error as living by private opinion despite universal availability; the Isavasya frames it as devotion to only one metaphysical dimension, requiring balance between both.
+  resonance: 'Both texts diagnose a structural trap: exclusive commitment to one pole (unmanifest or manifest;
+    private understanding or the common Logos) leads to darkness or error. The problem is not lack of
+    access but misdirected attention or false choice.'
+  divergence: Heraclitus frames the error as living by private opinion despite universal availability;
+    the Isavasya frames it as devotion to only one metaphysical dimension, requiring balance between both.
   passage_id: isavasya_upanishad.isa_018
+themes:
+- logos and idion
+- the shared made private
+- blindness to origin
+- waking sleep
+- the structure of possession
+commentary_provenance: Study commentary from maturity upgrade (passage-specific).
+practice_provenance: Practice from maturity upgrade (form diversity).
