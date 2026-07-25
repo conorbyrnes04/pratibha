@@ -204,13 +204,16 @@ def aliases_for_selection(selection: str) -> set[str]:
 
 
 def meta_collection_slug(metadata: dict) -> str:
-    coll = slugify(str((metadata or {}).get("collection", "")))
-    if coll:
-        return coll
-    source_file = str((metadata or {}).get("source_file", "")).lower()
-    m = re.search(r"data/(?:yaml|canonical)/([^/]+)/", source_file)
-    if m:
-        return slugify(m.group(1))
+    """Canonical collection slug for diversity caps / compare filters.
+
+    Display labels like ``Chāndogya Upaniṣad`` and folder slugs like
+    ``chandogya_upanishad`` must collapse to one key, or per-collection
+    caps count them as different traditions.
+    """
+    coll = str((metadata or {}).get("collection", "") or "")
+    source_file = str((metadata or {}).get("source_file", "") or "")
+    if coll or source_file:
+        return canonical_slug(coll, source_file)
     return ""
 
 

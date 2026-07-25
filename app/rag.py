@@ -40,6 +40,8 @@ _STOPWORDS = {
     "the", "and", "for", "that", "with", "this", "from", "into", "your", "what",
     "when", "where", "which", "about", "have", "will", "would", "could", "should",
     "then", "than", "they", "them", "their", "there", "here", "also", "just",
+    "does", "did", "say", "says", "said", "tell", "how", "why", "who", "can",
+    "are", "was", "were", "been", "being", "has", "had", "its", "our", "out",
 }
 
 _COLLECTION_HINTS = {
@@ -209,7 +211,11 @@ def _embedding_client_and_model() -> tuple[AsyncOpenAI | None, str]:
         # OPENAI_BASE_URL env var, and if that points at OpenRouter (common when
         # OpenRouter is used as an OpenAI-compatible chat proxy) embeddings 401,
         # because OpenRouter does not serve the OpenAI embeddings endpoint.
-        return AsyncOpenAI(api_key=settings.OPENAI_API_KEY, base_url="https://api.openai.com/v1"), model
+        return AsyncOpenAI(
+            api_key=settings.OPENAI_API_KEY,
+            base_url="https://api.openai.com/v1",
+            max_retries=0,
+        ), model
     if settings.OPENROUTER_API_KEY:
         headers = {}
         if settings.OPENROUTER_SITE_URL:
@@ -223,6 +229,7 @@ def _embedding_client_and_model() -> tuple[AsyncOpenAI | None, str]:
                 api_key=settings.OPENROUTER_API_KEY,
                 base_url="https://openrouter.ai/api/v1",
                 default_headers=headers or None,
+                max_retries=0,
             ),
             model,
         )
@@ -647,12 +654,11 @@ def _diversify(
     return selected
 
 
-async def _embed_query(client: AsyncOpenAI, model: str, query: str, attempts: int = 3) -> list[float]:
-    """Embed the query with bounded exponential backoff.
+async def _embed_query(client: AsyncOpenAI, model: str, query: str, attempts: int = 2) -> list[float]:
+    """Embed the query with a short retry, then fall back to lexical quickly.
 
-    A single transient failure (e.g. OpenRouter free-tier rate limiting) must
-    not silently demote retrieval to lexical fallback, so we retry briefly
-    before letting the exception propagate.
+    Long OpenAI 500 backoff stacks used to burn the chat budget and leave the
+    shelf empty when lexical never ran in time.
     """
     last_exc: Exception | None = None
     for attempt in range(attempts):
@@ -662,7 +668,7 @@ async def _embed_query(client: AsyncOpenAI, model: str, query: str, attempts: in
         except Exception as exc:  # noqa: BLE001 - retry transient embedding failures
             last_exc = exc
             if attempt + 1 < attempts:
-                await asyncio.sleep(0.5 * (2 ** attempt))
+                await asyncio.sleep(0.35 * (2 ** attempt))
     raise last_exc if last_exc else RuntimeError("embedding failed")
 
 
@@ -691,29 +697,41 @@ async def _vector_candidates(conn: asyncpg.Connection, query: str, fetch_k: int)
 
 
 async def _keyword_candidates(conn: asyncpg.Connection, query: str, fetch_k: int) -> list[tuple[str, dict, float]]:
-    """Lexical fallback. Cap score and per-collection so heap order cannot dominate.
+    """Lexical fallback with per-collection sampling.
 
-    Postgres ``LIKE … LIMIT N`` without ``ORDER BY`` returns early heap pages.
-    The first-ingested collection (Aṣṭāvakra) often fills that window for common
-    Advaita tokens, then lexical scores up to 0.8 beat vector hits. Fetch a
-    wider window, score in Python, cap per collection, and keep lexical below
-    typical vector scores so it remains a fallback.
+    Postgres ``LIKE … LIMIT N`` without ``ORDER BY`` returns early heap pages
+    (Aṣṭāvakra / Heraclitus often dominate). Partition in SQL so every matching
+    collection can contribute, then score in Python below typical vector scores.
     """
     tokens = _tokenize(query)
     if not tokens:
         return []
     patterns = [f"%{t}%" for t in tokens]
-    # Wide fetch: early heap pages are biased; we rebalance in Python.
-    fetch_limit = max(fetch_k * 20, 200)
+    per_collection_sql = 4
     rows = await conn.fetch(
         """
+        WITH matched AS (
+          SELECT
+            body,
+            metadata,
+            row_number() OVER (
+              PARTITION BY lower(coalesce(metadata->>'collection', ''))
+              ORDER BY (
+                SELECT count(*)::int
+                FROM unnest($1::text[]) AS p(pat)
+                WHERE lower(body) LIKE p.pat
+              ) DESC,
+              length(body) ASC
+            ) AS rn
+          FROM chunks
+          WHERE lower(body) LIKE ANY($1::text[])
+        )
         SELECT body, metadata
-        FROM chunks
-        WHERE lower(body) LIKE ANY($1::text[])
-        LIMIT $2
+        FROM matched
+        WHERE rn <= $2
         """,
         patterns,
-        fetch_limit,
+        per_collection_sql,
     )
     scored: list[tuple[str, dict, float]] = []
     for r in rows:
@@ -726,19 +744,17 @@ async def _keyword_candidates(conn: asyncpg.Connection, query: str, fetch_k: int
         scored.append((r["body"], _normalize_meta(r["metadata"]), score))
     scored.sort(key=lambda x: x[2], reverse=True)
 
-    # Cap how many lexical hits any one collection may contribute.
     per_collection = max(2, fetch_k // 3)
     picked: list[tuple[str, dict, float]] = []
     per_col: dict[str, int] = {}
     for body, meta, score in scored:
-        coll = meta_collection_slug(meta)
+        coll = meta_collection_slug(meta) or "_"
         if per_col.get(coll, 0) >= per_collection:
             continue
         picked.append((body, meta, score))
         per_col[coll] = per_col.get(coll, 0) + 1
         if len(picked) >= fetch_k:
             break
-    # Sparse top-up ignoring the cap.
     if len(picked) < fetch_k:
         seen = {(b or "").strip().lower() for b, _, _ in picked}
         for body, meta, score in scored:
@@ -770,8 +786,19 @@ async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, floa
         hinted = _collection_hint(query)
         if hinted:
             matching = [c for c in merged if _matches_hint(c[1], hinted)]
+            # Named texts in the query must appear even if vector/lexical missed them.
+            if len(matching) < max(2, k // 2):
+                aliases = aliases_for_selection(hinted)
+                fallback = await _collection_fallback_candidates(conn, aliases, max(3, k))
+                if not fallback:
+                    fallback = _corpus_lexical_candidates(query, aliases, max(3, k))
+                if not fallback:
+                    fallback = _corpus_collection_candidates(aliases, max(3, k))
+                # Prefer explicit collection hits, then global merge.
+                merged = sorted([*fallback, *matching, *merged], key=lambda x: x[2], reverse=True)
+                matching = [c for c in merged if _matches_hint(c[1], hinted)]
             if matching:
-                chosen = _diversify(matching, k)
+                chosen = _diversify(matching, k, per_collection=max(2, k // 2))
                 if len(chosen) < k:
                     chosen.extend(_diversify(merged, k))
                 # Deduplicate while preserving order.
