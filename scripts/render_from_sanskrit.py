@@ -306,7 +306,7 @@ async def render_unit(item: dict, system: str, source_field: str, source_label: 
     ]
     # Long source passages (Zhuangzi, Dōgen fascicles) produce a long translation
     # + commentary + practice; too small a cap truncates the JSON mid-output.
-    budget = 4000 if len(src) > 500 else 1700
+    budget = 8000 if len(src) > 3000 else 4000 if len(src) > 500 else 1700
     text = await smart_chat(msgs, temperature=0.5, max_tokens=budget)
     return _extract_json(text)
 
