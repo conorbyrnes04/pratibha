@@ -434,7 +434,7 @@ def _unit_id_from_meta(metadata: dict) -> str:
     return ""
 
 
-def _verse_root_chunks(verse: dict) -> list[tuple[str, dict, float]]:
+def _verse_root_chunks(verse: dict, *, score: float = 0.55) -> list[tuple[str, dict, float]]:
     """Root verse / translation rows for a unit — concrete language the model can use."""
     rows: list[tuple[str, dict, float]] = []
     base_meta = {
@@ -457,7 +457,7 @@ def _verse_root_chunks(verse: dict) -> list[tuple[str, dict, float]]:
             body = str(layer.get("body") or "").strip()
             if body:
                 meta = {**base_meta, "layer_kind": kind, "section": layer.get("label") or kind}
-                rows.append((body, meta, 0.95))
+                rows.append((body, meta, score))
     if rows:
         return rows
     for key, kind in (
@@ -469,7 +469,7 @@ def _verse_root_chunks(verse: dict) -> list[tuple[str, dict, float]]:
         text = str(verse.get(key) or "").strip()
         if text:
             meta = {**base_meta, "layer_kind": kind, "section": key}
-            rows.append((text, meta, 0.95))
+            rows.append((text, meta, score))
     return rows
 
 
@@ -477,7 +477,11 @@ def _ensure_root_companions(
     selected: list[tuple[str, dict, float]],
     k: int,
 ) -> list[tuple[str, dict, float]]:
-    """When commentary chunks are selected, prepend root translation/original from the same unit."""
+    """When commentary is selected, attach one root translation/original from that unit.
+
+    Companions inherit the child chunk's score (not a fixed 0.95) so they cannot
+    flood the shelf ahead of stronger vector hits from other traditions.
+    """
     from .data_loader import get_verse_by_id
 
     if not selected:
@@ -486,37 +490,59 @@ def _ensure_root_companions(
     out = list(selected)
     seen_body = {(body or "").strip().lower() for body, _, _ in out}
     present_by_unit: dict[str, set[str]] = {}
-    units_needing_root: set[str] = set()
+    units_needing_root: dict[str, float] = {}
 
-    for _, meta, _ in out:
+    for _, meta, score in out:
         uid = _unit_id_from_meta(meta)
         if not uid:
             continue
         kind = str(meta.get("layer_kind") or "").strip().lower()
         present_by_unit.setdefault(uid, set()).add(kind)
         if kind not in _ROOT_LAYER_KINDS:
-            units_needing_root.add(uid)
+            # Keep the best child score for this unit.
+            prev = units_needing_root.get(uid)
+            if prev is None or score > prev:
+                units_needing_root[uid] = float(score)
 
-    prepend: list[tuple[str, dict, float]] = []
-    for uid in sorted(units_needing_root):
+    companions: list[tuple[str, dict, float]] = []
+    for uid, child_score in units_needing_root.items():
         kinds = present_by_unit.get(uid, set())
         if kinds & _ROOT_LAYER_KINDS:
             continue
         verse = get_verse_by_id(uid)
         if not verse:
             continue
-        for body, meta, score in _verse_root_chunks(verse):
+        for body, meta, _ in _verse_root_chunks(verse, score=max(0.35, min(child_score, 0.6))):
             key = body.strip().lower()
             if not key or key in seen_body:
                 continue
-            prepend.append((body, meta, score))
+            companions.append((body, meta, max(0.35, min(child_score, 0.6))))
             seen_body.add(key)
             break
 
-    if not prepend:
+    if not companions:
         return out[:k]
-    merged = [*prepend, *out]
-    return merged[: max(k, len(prepend) + min(len(out), k))]
+    # Interleave: keep retrieval order, insert each companion after its unit's first hit.
+    by_unit_companion = {_unit_id_from_meta(m): (b, m, s) for b, m, s in companions}
+    merged: list[tuple[str, dict, float]] = []
+    inserted: set[str] = set()
+    for body, meta, score in out:
+        merged.append((body, meta, score))
+        uid = _unit_id_from_meta(meta)
+        if uid and uid in by_unit_companion and uid not in inserted:
+            merged.append(by_unit_companion[uid])
+            inserted.add(uid)
+        if len(merged) >= k:
+            break
+    if len(merged) < k:
+        for body, meta, score in out:
+            key = (body or "").strip().lower()
+            if key in {(b or "").strip().lower() for b, _, _ in merged}:
+                continue
+            merged.append((body, meta, score))
+            if len(merged) >= k:
+                break
+    return merged[:k]
 
 
 def _dedupe_argument_redundancy(candidates: list[tuple[str, dict, float]]) -> list[tuple[str, dict, float]]:
@@ -555,14 +581,26 @@ def _normalize_meta(value) -> dict:
     return {}
 
 
-def _diversify(candidates: list[tuple[str, dict, float]], k: int) -> list[tuple[str, dict, float]]:
+def _diversify(
+    candidates: list[tuple[str, dict, float]],
+    k: int,
+    *,
+    per_collection: int = 2,
+) -> list[tuple[str, dict, float]]:
+    """Pick top chunks with section + collection caps.
+
+    Without a per-collection cap, one early-ingested text (e.g. Aṣṭāvakra Gītā)
+    can fill the whole shelf when lexical search returns heap-ordered rows.
+    """
     candidates = _rank_by_relevance_and_imagery(_dedupe_argument_redundancy(candidates))
-    # First pass: prefer one chunk per logical source/section.
+    # First pass: prefer one chunk per logical source/section, capped per collection.
     selected: list[tuple[str, dict, float]] = []
     seen_source: set[tuple[str, str, str]] = set()
     seen_body: set[str] = set()
+    per_col: dict[str, int] = {}
     for body, metadata, score in candidates:
         meta = _normalize_meta(metadata)
+        coll = meta_collection_slug(meta)
         source_key = (
             str(meta.get("collection", "")),
             str(meta.get("sutra_id", "")),
@@ -573,13 +611,31 @@ def _diversify(candidates: list[tuple[str, dict, float]], k: int) -> list[tuple[
             continue
         if source_key in seen_source:
             continue
+        if per_col.get(coll, 0) >= max(1, per_collection):
+            continue
         selected.append((body, meta, score))
         seen_source.add(source_key)
         seen_body.add(body_key)
+        per_col[coll] = per_col.get(coll, 0) + 1
         if len(selected) >= k:
             return selected
 
-    # Second pass: fill remaining slots with highest-scoring leftovers.
+    # Second pass: fill remaining slots, still preferring new collections first.
+    for body, metadata, score in candidates:
+        meta = _normalize_meta(metadata)
+        coll = meta_collection_slug(meta)
+        body_key = body.strip().lower()
+        if not body_key or body_key in seen_body:
+            continue
+        if per_col.get(coll, 0) >= max(1, per_collection):
+            continue
+        selected.append((body, meta, score))
+        seen_body.add(body_key)
+        per_col[coll] = per_col.get(coll, 0) + 1
+        if len(selected) >= k:
+            return selected
+
+    # Third pass: ignore the collection cap only if the neighbourhood is sparse.
     for body, metadata, score in candidates:
         body_key = body.strip().lower()
         if not body_key or body_key in seen_body:
@@ -635,10 +691,20 @@ async def _vector_candidates(conn: asyncpg.Connection, query: str, fetch_k: int)
 
 
 async def _keyword_candidates(conn: asyncpg.Connection, query: str, fetch_k: int) -> list[tuple[str, dict, float]]:
+    """Lexical fallback. Cap score and per-collection so heap order cannot dominate.
+
+    Postgres ``LIKE … LIMIT N`` without ``ORDER BY`` returns early heap pages.
+    The first-ingested collection (Aṣṭāvakra) often fills that window for common
+    Advaita tokens, then lexical scores up to 0.8 beat vector hits. Fetch a
+    wider window, score in Python, cap per collection, and keep lexical below
+    typical vector scores so it remains a fallback.
+    """
     tokens = _tokenize(query)
     if not tokens:
         return []
     patterns = [f"%{t}%" for t in tokens]
+    # Wide fetch: early heap pages are biased; we rebalance in Python.
+    fetch_limit = max(fetch_k * 20, 200)
     rows = await conn.fetch(
         """
         SELECT body, metadata
@@ -647,7 +713,7 @@ async def _keyword_candidates(conn: asyncpg.Connection, query: str, fetch_k: int
         LIMIT $2
         """,
         patterns,
-        max(fetch_k * 2, 30),
+        fetch_limit,
     )
     scored: list[tuple[str, dict, float]] = []
     for r in rows:
@@ -655,11 +721,35 @@ async def _keyword_candidates(conn: asyncpg.Connection, query: str, fetch_k: int
         hits = sum(1 for t in tokens if t in body)
         if hits == 0:
             continue
-        # Heuristic score range ~[0.2, 0.8] for lexical fallback.
-        score = 0.2 + min(0.6, hits / max(1, len(tokens)))
+        # Keep lexical below typical vector scores (~0.5–0.7).
+        score = 0.15 + min(0.30, 0.30 * hits / max(1, len(tokens)))
         scored.append((r["body"], _normalize_meta(r["metadata"]), score))
     scored.sort(key=lambda x: x[2], reverse=True)
-    return scored[:fetch_k]
+
+    # Cap how many lexical hits any one collection may contribute.
+    per_collection = max(2, fetch_k // 3)
+    picked: list[tuple[str, dict, float]] = []
+    per_col: dict[str, int] = {}
+    for body, meta, score in scored:
+        coll = meta_collection_slug(meta)
+        if per_col.get(coll, 0) >= per_collection:
+            continue
+        picked.append((body, meta, score))
+        per_col[coll] = per_col.get(coll, 0) + 1
+        if len(picked) >= fetch_k:
+            break
+    # Sparse top-up ignoring the cap.
+    if len(picked) < fetch_k:
+        seen = {(b or "").strip().lower() for b, _, _ in picked}
+        for body, meta, score in scored:
+            key = (body or "").strip().lower()
+            if not key or key in seen:
+                continue
+            picked.append((body, meta, score))
+            seen.add(key)
+            if len(picked) >= fetch_k:
+                break
+    return picked
 
 
 async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, float]]:
