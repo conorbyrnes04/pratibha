@@ -1,0 +1,46 @@
+id: samhara
+maturity: strong_draft
+scripts:
+  iast: saṃhāra
+  devanagari: संहार
+aliases:
+- samhara
+- samhaara
+- samharaḥ
+- withdrawal
+- reabsorption
+- dissolution
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: sandhana
+  relation: related_as
+  note: śakticakra-sandhāna gathers powers; viśva-saṃhāra is the consequent withdrawal of the world’s grip.
+- lemma_id: sakti
+  relation: related_as
+  note: Reabsorption is śakti drawing manifestation back—not an alien destroyer acting on Śiva.
+- lemma_id: spanda
+  relation: related_as
+  note: Withdrawal and emergence are alternating modes of the throb (unmeṣa/nimeṣa), not one-time apocalypse.
+- lemma_id: maya
+  relation: related_as
+  note: Cosmic saṃhāra pairs with veiling and grace among the five functions; it is display-management, not nihilism.
+senses:
+- id: samhara.shaiva
+  label: Withdrawal / reabsorption (Śaiva)
+  short: drawing manifested content back into the source so phenomena lose their compulsive grip
+  etymology: sam- + √hṛ ‘take, seize’ → drawing together, withdrawal, dissolution, reabsorption
+  traps:
+  - cosmic annihilation as the spiritual goal
+  - equating saṃhāra with physical death alone
+  - reading withdrawal as hatred of the world rather than reintegration
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_6
+  - siva_sutra.ss_ii_10
+  - pratyabhijnahrdayam.phr_010
+  body: |
+    In śakticakra-sandhāne viśva-saṃhāraḥ, gathering the wheels of power does not smash the universe; the world is withdrawn
+    as grip. Among the five functions, saṃhāra is the phase of taking-back—sleep, ending, reabsorption—return of content into
+    awareness rather than loss of being.

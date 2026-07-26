@@ -40,11 +40,16 @@ senses:
     From Heraclitus through Stoicism logos names the shared rational order. Philosophy is learning to speak and live in accordance with it.
 - id: logos.johannine
   label: Johannine Word
-  short: the divine Word through whom all things come to be
+  short: the divine Word through whom all things come to be (divergence note; not yet corpus-attested)
   etymology: Greek λόγος in John 1; theological reception of earlier senses
   traps:
   - collapsing into Greek philosophy without Christology
   - collapsing into slogan ‘Jesus = logic’
+  - inventing Johannine passage ids when none exist in Pratibha
+  - treating Heraclitean logos exemplars as Gospel of John attestation
   traditions:
   - christianity
   exemplars: []
+  body: |
+    Divergence note: Johannine λόγος receives Greek senses into Christology (Word through whom all things come to be).
+    Honesty: not yet attested in the Pratibha corpus — no Johannine units; exemplars deliberately empty until real passage ids exist.

@@ -1,0 +1,44 @@
+id: sarira
+maturity: strong_draft
+scripts:
+  iast: śarīra
+  devanagari: शरीर
+aliases:
+- sarira
+- shareera
+- body
+- form
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: sankoca
+  relation: related_as
+  note: śarīra is localized form; saṅkoca is the free narrowing that makes localization experientially sticky.
+- lemma_id: jiva
+  relation: related_as
+  note: jīva is the contracted experiencer; śarīra names the organized body/form through which that standpoint appears.
+- lemma_id: cit
+  relation: related_as
+  note: In Trika, the body is not foreign to cit; dṛśya coheres as śarīra—consciousness appearing locally.
+- lemma_id: vidya
+  relation: related_as
+  note: When knowing becomes śarīra-sattā, vidyā is no longer floating doctrine but embodied presence.
+senses:
+- id: sarira.shaiva
+  label: Body as localized form (Śaiva)
+  short: organized appearance of consciousness as bounded, coherent form
+  etymology: √śri / śarīr- stem → body, frame; that which is supported as a living organism of form
+  traps:
+  - inert matter opposed to spirit
+  - body as mere obstacle to discard
+  - reducing śarīra to the physical carcass alone (ignoring body-as-appearance)
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_14
+  - siva_sutra.ss_i_3
+  - siva_sutra.ss_ii_3
+  - siva_sutra.ss_ii_8
+  body: |
+    Śiva Sūtra I.14 (dṛśyaṃ śarīram) collapses the gap between seer and seen: what appears coheres as body—not as alien stuff,
+    but as consciousness localized. Differentiation into form is not yet bondage; mistaking the local standpoint for the whole is.

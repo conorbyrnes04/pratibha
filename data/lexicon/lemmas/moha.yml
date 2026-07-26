@@ -1,0 +1,45 @@
+id: moha
+maturity: strong_draft
+scripts:
+  iast: moha
+  devanagari: मोह
+aliases:
+- moha
+- delusion
+- bewilderment
+- confusion
+traditions:
+- kashmir_shaivism
+- advaita_vedanta
+- yoga
+related:
+- lemma_id: maya
+  relation: related_as
+  note: māyā is structural veiling/display; moha is the lived bewilderment that takes the veil as exhaustive.
+- lemma_id: aviveka
+  relation: related_as
+  note: 'Closely kin: aviveka names failed discernment; moha the confused swoon that results.'
+- lemma_id: bandha
+  relation: related_as
+  note: Delusion is a mode of binding—identity hardened around what confusion presents as obvious.
+- lemma_id: jnana
+  relation: diverges_from
+  note: Liberative knowing undoes moha; possessed ‘insights’ can still feed bewilderment if they harden identity.
+senses:
+- id: moha.shaiva_advaita
+  label: Delusion / bewilderment
+  short: confused swooning that mistakes limited appearance for the whole of what one is
+  etymology: √muh ‘be bewildered, astray’ → delusion, infatuation, loss of clear orientation
+  traps:
+  - only moral ‘stupidity’ or low IQ
+  - a demon of delusion outside awareness
+  - equating all emotion with moha
+  traditions:
+  - kashmir_shaivism
+  - advaita_vedanta
+  exemplars:
+  - siva_sutra.ss_iii_12
+  - astavakra_gita.asg_2_1
+  body: |
+    Moha is not a second reality attacking consciousness; it is consciousness disoriented—bewildered about what stands and
+    what is merely persuasive appearance. In both Śaiva and Advaita frames, the cure is recognition, not accumulation of opinions.

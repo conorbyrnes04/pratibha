@@ -1,5 +1,5 @@
 id: theosis
-maturity: strong_draft
+maturity: structural_draft
 scripts:
   greek: θέωσις
   latin: theosis
@@ -18,19 +18,20 @@ related:
 senses:
 - id: theosis.christian
   label: Deification
-  short: participation in divine life without identity of essence
+  short: participation in divine life without identity of essence (neighbor attestation only)
   etymology: θεός ‘god’ + -ωσις process
   traps:
   - becoming a god by nature
   - self-apotheosis ego inflation
   - erasing creaturehood
+  - reading Eckhart’s ‘become what God is by grace’ as essence-identity
+  - treating every union/participation passage as technical θέωσις
   traditions:
   - christian_mysticism
   - eastern_orthodoxy
   exemplars:
-  - meister_eckhart.eck_011
+  - meister_eckhart.eck_001
   - pseudo_dionysius.pd_dn_03
-  - pseudo_dionysius.pd_mt_04
-  - meister_eckhart.eck_010
   body: |
     Classical formula: God became human that the human might become god—by grace and participation (energies), not by collapsing the essence distinction.
+    Honesty: θέωσις is not yet a headword key term in the corpus; exemplars are deification / participation neighbors (Eckhart’s grace-formula; Dionysian participation and resemblance).

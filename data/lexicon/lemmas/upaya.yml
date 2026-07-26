@@ -1,0 +1,60 @@
+id: upaya
+maturity: strong_draft
+scripts:
+  iast: upāya
+  devanagari: उपाय
+aliases:
+- upaya
+- upaaya
+- means
+- method
+- skillful means
+traditions:
+- kashmir_shaivism
+- mahayana
+related:
+- lemma_id: pratyabhijna
+  relation: related_as
+  note: In Trika, upāya is how recognition is triggered and stabilized—not a substitute for recognition itself.
+- lemma_id: yoga
+  relation: related_as
+  note: Yogic disciplines can function as upāya; Trika classifies means by how closely they approach non-means.
+- lemma_id: vikalpa
+  relation: related_as
+  note: Conceptual supports can be upāya (śuddha-vikalpa) when they point back; they bind when taken as destination.
+- lemma_id: samadhi
+  relation: related_as
+  note: Collected states may appear among means; neither tradition treats technique as the ultimate truth.
+senses:
+- id: upaya.shaiva
+  label: Means / method (Śaiva)
+  short: effective pathway by which recognition is mirrored, corrected, and stabilized
+  etymology: upa- + √i ‘go, approach’ → approach, expedient, means
+  traps:
+  - reducing Trika to Mahāyāna ‘skillful means’ rhetoric alone
+  - collecting techniques as spiritual consumer goods
+  - treating the guru/method as an authority-idol rather than a function that interrupts self-deception
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_ii_6
+  - pratyabhijnahrdayam.phr_018
+  body: |
+    In Śaiva usage, upāya names the effective means—guru-function, breath-endpoints, dissolution of vikalpa—through which
+    what is already the case becomes recognizable. The classical triad (śāmbhava, śākta, āṇava) grades means by how much
+    support they require; the destination is anupāya, not endless method.
+- id: upaya.mahayana
+  label: Skillful means (Mahāyāna)
+  short: pedagogically adapted teaching that leads without being ultimate truth
+  etymology: same upāya; in Mahāyāna, often paired with prajñā as expedient adapted to capacity
+  traps:
+  - ‘anything goes’ relativism licensed as skillful means
+  - collapsing Śaiva upāya systems into Buddhist upāya-kauśalya without noting the different maps
+  - treating skillful means as a license to deceive rather than as compassionate pedagogy
+  traditions:
+  - mahayana
+  exemplars:
+  - nagarjuna_mulamadhyamakakarika.mmk_18_06
+  body: |
+    Nāgārjuna’s pedagogical framing uses upāya for teachings that work relative to the hearer without being final ontology.
+    Keep this sense distinct from Trika’s graded means to recognition: shared etymology, different doctrinal job.

@@ -1,0 +1,42 @@
+id: anusandhana
+maturity: strong_draft
+scripts:
+  iast: anusandhāna
+  devanagari: अनुसन्धान
+aliases:
+- anusandhana
+- anusandhaana
+- sustained recollection
+- sustained inquiry
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: sandhana
+  relation: related_as
+  note: sandhāna gathers/aligns powers; anusandhāna is the sustained re-entering and recollection that keeps recognition from leaking.
+- lemma_id: pratyabhijna
+  relation: related_as
+  note: Recognition dawns; anusandhāna is how it is kept present amid movement rather than lost as a peak.
+- lemma_id: yoga
+  relation: related_as
+  note: Both stress return of attention; anusandhāna in Trika names lucid re-collection of the principle, not generic effort alone.
+- lemma_id: samadhi
+  relation: rough_analogue
+  note: Collected stillness can support anusandhāna; the lemma stresses continuity of recollection more than absorption as end-state.
+senses:
+- id: anusandhana.shaiva
+  label: Sustained recollection / re-entering (Śaiva)
+  short: lucid, repeated entering into the principle so recognition does not dissipate
+  etymology: anu- + sam- + √dhā ‘place, set’ → following along in joining; sustained inquiry, recollection, re-application
+  traps:
+  - grim willpower grind without lucidity
+  - confusing with sandhāna (gathering of śakti) as if identical
+  - one-off insight treated as finished practice
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_ii_2
+  - siva_sutra.ss_i_22
+  body: |
+    In śāktopāya, what matters is whether awareness is recollected again and again without drama. Anusandhāna is not heroism;
+    it is how grace is kept from leaking away—sustained re-entering of the principle amid the momentum of habit.

@@ -1,0 +1,46 @@
+id: aviveka
+maturity: strong_draft
+scripts:
+  iast: aviveka
+  devanagari: अविवेक
+aliases:
+- aviveka
+- non-discrimination
+- lack of discernment
+- non-discernment
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: maya
+  relation: related_as
+  note: aviveko māyā-sauṣuptam—non-discrimination is named as māyā’s deep-sleep mode.
+- lemma_id: moha
+  relation: related_as
+  note: Moha is the bewildered swoon; aviveka is the failed discrimination that lets the swoon stand.
+- lemma_id: vidya
+  relation: diverges_from
+  note: Vidyā returns attention to source; aviveka is the habit of misplacing it.
+- lemma_id: jnana
+  relation: diverges_from
+  note: Articulated knowing can still fail at viveka; liberative clarity is precisely what aviveka lacks.
+- lemma_id: vikalpa
+  relation: related_as
+  note: Floods of constructs without discernment of their status is a lived form of aviveka.
+senses:
+- id: aviveka.shaiva
+  label: Lack of discernment (Śaiva)
+  short: collapse of discrimination in which awareness remains but goes unrecognized
+  etymology: a- + viveka ‘discrimination, discernment’ → absence of clear distinguishing
+  traps:
+  - moralistic ‘you’re not smart enough’
+  - equating all non-dual teaching with anti-discrimination mush
+  - treating deep sleep only physiologically (missing the metaphor of unrecognized awareness)
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_10
+  - siva_sutra.ss_iii_5
+  body: |
+    Aviveka is not the absence of awareness but the absence of recognition—consciousness still present, yet collapsed into
+    a sleep of non-discrimination. Māyā operates most efficiently where viveka fails: one does not see what stands as Self
+    versus what stands as persuasive limit.

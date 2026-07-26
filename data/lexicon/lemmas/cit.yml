@@ -5,6 +5,8 @@ scripts:
   devanagari: चित्
 aliases:
 - chit
+- citi
+- chiti
 - consciousness
 - awareness
 traditions:
@@ -14,6 +16,9 @@ traditions:
 related:
 - lemma_id: caitanya
   relation: related_as
+- lemma_id: citta
+  relation: diverges_from
+  note: cit / citi is unbounded knowingness; citta is that field contracted into object-grasping mind.
 - lemma_id: nous
   relation: rough_analogue
   note: Both name knowing as ontological; nous is more intellective, cit more bare awareness.
@@ -26,12 +31,29 @@ senses:
   - thoughts
   - attention as a spotlight skill
   - IQ / intellect
+  - importing Śaiva citi-as-universe-cause into Advaita witness language
   traditions:
   - advaita_vedanta
   - upanishads
   exemplars:
   - astavakra_gita.asg_1_4
+  - astavakra_gita.asg_1_3
+  body: |
+    Cit is the light in which mental events appear. Confusing cit with manas (mind) is the standard beginner error: mind is seen; cit is that by which seeing is possible.
+    Aṣṭāvakra’s *citi* (locative) and *cid-rūpa* mark the witnessing Self, not Pratyabhijñā’s free universal citi.
+- id: cit.shaiva
+  label: Consciousness (citi)
+  short: free Consciousness as the cause and substance of manifestation
+  etymology: citi as technical Śaiva form from √cit; active/operative Consciousness
+  traps:
+  - private mental states
+  - collapsing citi into citta (contracted mind)
+  - reading Śaiva citi as Advaita’s merely witnessing brahman without śakti
+  traditions:
+  - kashmir_shaivism
+  exemplars:
   - pratyabhijnahrdayam.phr_001
   - pratyabhijnahrdayam.phr_014
   body: |
-    Cit is the light in which mental events appear. Confusing cit with manas (mind) is the standard beginner error: mind is seen; cit is that by which seeing is possible.
+    In Pratyabhijñā, *citiḥ svatantrā* names Consciousness as free cause of the universe’s accomplishment (*viśva-siddhi*), not a passive backdrop.
+    *Citi-vahni* (fire of Consciousness) marks the same luminosity still burning even in descent. Alias *citi* on this lemma is for linker attachment.

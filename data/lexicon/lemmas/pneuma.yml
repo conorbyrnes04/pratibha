@@ -1,5 +1,5 @@
 id: pneuma
-maturity: strong_draft
+maturity: structural_draft
 scripts:
   greek: πνεῦμα
   latin: pneuma
@@ -19,18 +19,20 @@ related:
 senses:
 - id: pneuma.stoic
   label: Stoic pneuma
-  short: tensioned breath-fire that structures cosmos and soul
+  short: tensioned breath-fire that structures cosmos and soul (weak corpus attestation)
   etymology: πνέω ‘breathe’ → breath, wind, spirit
   traps:
   - ghostly spook
   - only Christian Holy Spirit
   - air as chemistry only
+  - treating Heraclitean soul-fragments as Stoic technical πνεῦμα glosses
+  - equating every ‘breath’ resonance with Stoic pneumatic physics
   traditions:
   - stoicism
   - greek
   exemplars:
-  - heraclitus_fragments.hfr_p109
-  - heraclitus_fragments.hfr_p062
-  - heraclitus_fragments.hfr_p116
+  - heraclitus_fragments.hfr_p075
+  - heraclitus_fragments.hfr_p053
   body: |
     Stoic pneuma is a physical yet rational continuum. Later Christian pneumatology reuses the word in a different ontology.
+    Honesty: Pratibha does not yet gloss πνεῦμα as a headword key term; the exemplars are Heraclitean dry-soul / fiery-soul neighbors through which Stoic pneumatic reading is often projected, not Stoic pneuma treatises.

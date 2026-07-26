@@ -6,30 +6,47 @@ scripts:
 aliases:
 - pratibha
 - pratibhaa
+- prātibhā
 - flash of insight
 - intuition
 traditions:
 - kashmir_shaivism
 - sanskrit_poetics
+- yoga
 related:
 - lemma_id: pratyabhijna
   relation: related_as
   note: Both involve sudden illumined knowing; pratibhā often names creative flash, pratyabhijñā doctrinal
     recognition.
 senses:
+- id: pratibha.yoga
+  label: Yogic intuitive knowing
+  short: spontaneous luminous insight arising as a siddhi of clarified citta
+  etymology: prati- + √bhā ‘shine toward / appear’; YS form often prātibhā
+  traps:
+  - gut feeling
+  - psychic parlor trick as the doctrine
+  - equating YS siddhi-insight with Kaśmir Śaiva pratibhā
+  traditions:
+  - yoga
+  exemplars:
+  - patañjali_yoga_sūtras.ys_3_33
+  - patañjali_yoga_sūtras.ys_3_36
+  body: |
+    In Yoga Sūtra Vibhūti Pāda, prātibhā names intuitive / luminous knowing that arises when citta is refined—knowledge of “all,” and heightened sense-report—not Kaśmir Śaiva ontology of awareness’s creative flash.
 - id: pratibha.shaiva
-  label: Flash of insight
+  label: Flash of insight (Śaiva / poetic)
   short: spontaneous illumined knowing; creative intuition of consciousness
   etymology: prati- + √bhā ‘shine toward / appear’
   traps:
   - gut feeling
   - artistic talent only
   - brand name without doctrine
+  - using Pātañjala YS passages as Śaiva exemplars
   traditions:
   - kashmir_shaivism
   - sanskrit_poetics
-  exemplars:
-  - patañjali_yoga_sūtras.ys_3_33
-  - patañjali_yoga_sūtras.ys_3_36
+  exemplars: []
   body: |
     In poetics pratibhā is the poet’s creative flash; in Śaiva thought it can name the innate illuminating capacity of awareness itself.
+    Honesty: no Kaśmir Śaiva (or alaṅkāra) unit in the present corpus yet attests pratibhā as a headword; exemplars left empty rather than borrowed from Yoga Sūtra.

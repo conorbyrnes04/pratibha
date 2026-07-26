@@ -1,0 +1,43 @@
+id: bheda
+maturity: strong_draft
+scripts:
+  iast: bheda
+  devanagari: भेद
+aliases:
+- bheda
+- distinction
+- differentiation
+- difference
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: vikalpa
+  relation: related_as
+  note: vikalpa is the constructive naming that hardens distinction; bheda is the differentiation itself.
+- lemma_id: maya
+  relation: related_as
+  note: māyā enables finite standpoints; bheda is the structured many-ness of knower/known without requiring ontological rupture.
+- lemma_id: sankoca
+  relation: related_as
+  note: Contraction localizes; bheda articulates the field into distinguishable poles (grāhya/grāhaka, etc.).
+- lemma_id: kala
+  relation: related_as
+  note: kalā portions power into measurable agency; bheda is the broader fact of differentiation those portions inhabit.
+senses:
+- id: bheda.shaiva
+  label: Differentiation without rupture (Śaiva)
+  short: distinction and multiplicity appearing within consciousness without splitting its ground
+  etymology: √bhid ‘split, cleave’ → difference, distinction; in Trika, differentiation that need not mean ontological break
+  traps:
+  - dualism as two substances forever apart
+  - treating all distinction as bondage (flattening the display)
+  - confusing bheda with violent rupture or fall from unity
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_3
+  - pratyabhijnahrdayam.phr_003
+  body: |
+    Śiva Sūtra I.3 marks how sources cohere into organized form: differentiation is structurally possible before it is mistaken.
+    Pratyabhijñāhṛdayam 3 maps mutual adaptation of many knowers and knowns—bheda as viewpoint-articulation within one field,
+    not a cosmic crack.

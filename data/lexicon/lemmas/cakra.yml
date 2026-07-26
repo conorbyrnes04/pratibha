@@ -1,0 +1,48 @@
+id: cakra
+maturity: strong_draft
+scripts:
+  iast: cakra
+  devanagari: चक्र
+aliases:
+- cakra
+- chakra
+- wheel
+- wheel of powers
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: sakti
+  relation: related_as
+  note: śakticakra is the totality of powers—senses, mental movements, cosmic forces—turning as one wheel.
+- lemma_id: sandhana
+  relation: related_as
+  note: Practice gathers the wheel (sandhāna); sovereignty is intimacy with its turning, not domination from outside.
+- lemma_id: matrika
+  relation: related_as
+  note: mātṛkācakra names the phonemic wheel in which awakening can dawn.
+- lemma_id: siddhi
+  relation: related_as
+  note: With śuddha-vidyā, siddhi is fulfilled participation in the wheel—not a catalog of parlor tricks.
+- lemma_id: spanda
+  relation: related_as
+  note: The wheel’s turning is spanda distributed as many powers, not a static diagram.
+senses:
+- id: cakra.shaiva
+  label: Wheel of forces (Śaiva)
+  short: the revolving totality of powers—sensory, mental, phonemic, cosmic—as one dynamic field
+  etymology: cakra ‘wheel, circle, discus’ → cycle and revolving assembly of forces
+  traps:
+  - New Age chakra tourism (rainbow body-map gadgets, crystal shopping)
+  - treating cakras as fixed anatomical organs one ‘activates’ like switches
+  - reducing śakticakra to a seven-point spine chart imported from popular yoga media
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_6
+  - siva_sutra.ss_i_21
+  - siva_sutra.ss_ii_7
+  - pratyabhijnahrdayam.phr_020
+  body: |
+    In Trika, cakra is the wheel of energies—śakti in revolving multiplicity. Lordship (I.21) is not control-freak mastery but
+    effortless participation when pure knowledge dissolves division. Keep the phonemic and power-wheels distinct from pop-chakra
+    anatomy charts.

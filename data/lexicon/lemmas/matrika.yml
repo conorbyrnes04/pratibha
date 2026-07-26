@@ -1,0 +1,47 @@
+id: matrika
+maturity: strong_draft
+scripts:
+  iast: mātṛkā
+  devanagari: मातृका
+aliases:
+- matrika
+- matrka
+- matrikaa
+- phonemic matrix
+- alphabet goddesses
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: sakti
+  relation: related_as
+  note: mātṛkā is śakti as phonemic/letter-power—the vibratory lattice of articulation.
+- lemma_id: spanda
+  relation: related_as
+  note: Letters and meanings are movements of the throb, not neutral signs pasted onto silence.
+- lemma_id: vikalpa
+  relation: related_as
+  note: Thought-constructs ride the phonemic matrix; bondage persists when knowing remains only mediated through structure.
+- lemma_id: logos
+  relation: rough_analogue
+  note: Both name a structuring principle of articulation; mātṛkā is explicitly phonemic/śākta, not Greek cosmic reason.
+- lemma_id: cakra
+  relation: related_as
+  note: mātṛkācakra is the wheel of phonemic powers in which awakening can dawn (II.7).
+senses:
+- id: matrika.shaiva
+  label: Phonemic matrix (Śaiva)
+  short: the alphabetic / phonemic power-lattice that grounds and shapes all knowing and speech
+  etymology: mātṛkā ‘little mother’; the matrix/mothers of letters—phonemes as generative powers
+  traps:
+  - alphabet mysticism as letter-magic superstition
+  - reducing mātṛkā to Sanskrit grammar trivia
+  - New Age ‘sacred sound’ tourism without the bondage/release dialectic
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_4
+  - siva_sutra.ss_ii_7
+  body: |
+    Jñānādhiṣṭhānaṃ mātṛkā: knowledge does not float freely—it takes form through a phonemic medium. The same matrix that
+    circumscribes knowing also carries the seed of release, because it arises from consciousness and can be recognized as
+    such when awakening dawns within the wheel of letter-powers.

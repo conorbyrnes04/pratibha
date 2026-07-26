@@ -1,0 +1,45 @@
+id: svapna
+maturity: strong_draft
+scripts:
+  iast: svapna
+  devanagari: स्वप्न
+aliases:
+- svapna
+- swapna
+- dream
+- dreaming
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: maya
+  relation: related_as
+  note: Dreamlike vividness is one way māyā’s display persuades; svapna names the mode of appearing, not ‘mere fake.’
+- lemma_id: citta
+  relation: related_as
+  note: Heart-collision of citta can throw up dṛśya as dreamlike appearance (I.15).
+- lemma_id: vikalpa
+  relation: related_as
+  note: Dream and waking both host constructive ideation; neither state is privileged as finally real.
+- lemma_id: qi_wu
+  relation: rough_analogue
+  note: Zhuangzi’s leveling of waking/dreaming dissolves absolute privilege of one state—kin to Trika’s non-privilege of jāgrat.
+senses:
+- id: svapna.shaiva
+  label: Dream / dreamlike appearance (Śaiva)
+  short: the dream-state and the dreamlike vividness of appearances arising in awareness
+  etymology: √svap ‘sleep, dream’ → dream, dreaming; also dreamlike showing of the seen
+  traps:
+  - ‘life is just a dream’ nihilism that voids ethical and yogic responsibility
+  - only the REM sleep state, ignoring dreamlike quality of waking appearance
+  - equating dream with falsehood while treating waking as solid reality
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_15
+  - siva_sutra.ss_i_7
+  - siva_sutra.ss_i_9
+  - siva_sutra.ss_ii_4
+  body: |
+    In Trika, svapna is both a classical state (with jāgrat and suṣupta) and a diagnostic: appearances can arise with dreamlike
+    persuasiveness when citta stirs in the heart. The point is not to despise the world as unreal, but to stop granting any
+    single state absolute ontological privilege.

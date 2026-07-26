@@ -1,0 +1,50 @@
+id: samskara
+maturity: strong_draft
+scripts:
+  iast: saṃskāra
+  devanagari: संस्कार
+aliases:
+- samskara
+- samskaara
+- samskāra
+- impression
+- habitual momentum
+- latent tendency
+traditions:
+- kashmir_shaivism
+- yoga
+related:
+- lemma_id: karma
+  relation: related_as
+  note: Action leaves formative traces; saṃskāra is the residual momentum that shapes subsequent experience.
+- lemma_id: anusandhana
+  relation: related_as
+  note: Habitual momentum leaks practice; anusandhāna is the lucid counter-rhythm of return.
+- lemma_id: vikalpa
+  relation: related_as
+  note: Constructs sediment into habit; undigested ideation becomes automatic patterning.
+- lemma_id: bandha
+  relation: related_as
+  note: Binding often feels like ‘just how I am’ because saṃskāra has made contraction automatic.
+- lemma_id: citta
+  relation: related_as
+  note: Citta carries and elaborates impressions; purifying or recognizing mind is partly working with saṃskāra.
+senses:
+- id: samskara.habit
+  label: Habitual momentum / latent impression
+  short: residual formative imprint that propels perception, effort, and reaction along familiar grooves
+  etymology: sam- + √kṛ ‘make, do’ → putting-together, refinement, impression; in yoga/śaiva psychology, latent formative trace
+  traps:
+  - only Hindu life-cycle ‘samskaras’ (rites of passage)
+  - fatalist ‘my karma made me do it’ that voids lucid effort
+  - treating impressions as indelible soul-stains
+  traditions:
+  - kashmir_shaivism
+  - yoga
+  exemplars:
+  - siva_sutra.ss_ii_2
+  - pratyabhijnahrdayam.phr_019
+  body: |
+    Practice slackens when saṃskāra runs the loop unnoticed. In śāktopāya, lucid effort (prayatna) meets habitual momentum
+    without melodrama: impressions are real as patterning, not as a second self that owns the future. Recognition includes
+    seeing the groove—and returning anyway.
