@@ -28,6 +28,7 @@ export function LayerBlock({
   compact = false,
   defaultCollapsed = false,
   bare = false,
+  variant = "card",
 }: {
   layer: PratibhaLayer;
   compact?: boolean;
@@ -38,6 +39,8 @@ export function LayerBlock({
    * supplies its own chrome and progressive-disclosure behaviour.
    */
   bare?: boolean;
+  /** plain = typographic section without card chrome (study reading flow). */
+  variant?: "card" | "plain";
 }) {
   const items = Array.isArray(layer.items) ? layer.items : [];
   const isOriginal = layer.kind === "original";
@@ -45,7 +48,7 @@ export function LayerBlock({
   const isAppendix = layer.kind === "appendix";
   const cardClass = isOriginal ? "manuscript-card" : isPractice ? "practice-card" : "card";
   const longBody = (layer.body || "").length > 1200;
-  const startCollapsed = !bare && (defaultCollapsed || (isAppendix && longBody));
+  const startCollapsed = !bare && variant === "card" && (defaultCollapsed || (isAppendix && longBody));
 
   if (bare) {
     return (
@@ -57,6 +60,24 @@ export function LayerBlock({
         ) : null}
         {renderLayerBody(layer, items, { compact, isOriginal })}
       </div>
+    );
+  }
+
+  if (variant === "plain") {
+    const shell =
+      isPractice
+        ? "passage-practice"
+        : `passage-layer passage-layer--${layer.kind}`;
+    return (
+      <section className={shell}>
+        <h2 className="layer-heading">{layer.label}</h2>
+        {layer.kind === "translation" && layer.layer_provenance ? (
+          <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-400">
+            {layer.layer_provenance}
+          </p>
+        ) : null}
+        {renderLayerBody(layer, items, { compact, isOriginal })}
+      </section>
     );
   }
 
@@ -141,7 +162,11 @@ function renderLayerBody(
   return (
     <div
       className={`chat-markdown mt-4 ${
-        isOriginal ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100` : compact ? "text-sm leading-relaxed" : "reading-prose"
+        isOriginal
+          ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100`
+          : compact
+            ? "text-sm leading-relaxed"
+            : "reading-prose"
       }`}
     >
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{layer.body || ""}</ReactMarkdown>

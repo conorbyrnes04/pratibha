@@ -5,7 +5,6 @@ import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
-import { stripMarkdown } from "@/lib/textPreview";
 import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool } from "@/lib/collectionImages";
 import { unitGlyph } from "@/lib/glyphs";
@@ -13,10 +12,19 @@ import { ArtBackdrop } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
 import { displayPassageTitle, sortPassagesInText } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
+import { CommentaryTeaser } from "@/components/CommentaryTeaser";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
 import { Disclosure } from "@/components/ui/Disclosure";
-import { getStudyLayers, getAppendixLayers, getAnchorChapter, getResonances, layerText, passagePreview, practiceText } from "@/lib/verseLayers";
+import {
+  getStudyLayers,
+  getAppendixLayers,
+  getAnchorChapter,
+  getResonances,
+  layerText,
+  passagePreview,
+  practiceText,
+} from "@/lib/verseLayers";
 import { relatedPassages } from "@/lib/relatedPassages";
 import { preferStudyUnits } from "@/lib/corpusFilters";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
@@ -31,49 +39,16 @@ function practiceFallback(item: VerseItem): string {
   return "Read once slowly, then pause for one minute before your next action.";
 }
 
-function reflectionPrompt(item: VerseItem): string {
-  const t = (item.themes || [])[0];
-  if (t) return `How does "${t}" show up in your life today?`;
-  return "What changes if this passage is treated as instruction, not just information?";
-}
-
-function sentenceCandidates(input?: string): string[] {
-  const clean = stripMarkdown(input || "");
-  if (!clean) return [];
-  return clean
-    .split(/(?<=[.!?])\s+/)
-    .map((s) => s.trim())
-    .filter((s) => s.length > 0);
-}
-
-function normalizeSentence(s: string): string {
-  return s.replace(/\s+/g, " ").trim().toLowerCase();
-}
-
-function pickDistinct(candidates: string[], used: Set<string>): string {
-  for (const s of candidates) {
-    const n = normalizeSentence(s);
-    if (!n || used.has(n)) continue;
-    used.add(n);
-    return s;
-  }
-  return "";
-}
-
 export default function VerseDetailPage() {
   const params = useParams<{ id: string }>();
   const [item, setItem] = useState<VerseItem | null>(null);
   const [allItems, setAllItems] = useState<VerseItem[]>([]);
   const [semanticRelated, setSemanticRelated] = useState<VerseItem[] | null>(null);
-  const [learningMode, setLearningMode] = useState(true);
   const [showOriginal, setShowOriginal] = useState(true);
-  const [compact, setCompact] = useState(false);
   const [loading, setLoading] = useState(true);
   const [backHref, setBackHref] = useState<string | null>(null);
   const id = decodeURIComponent(params.id || "");
 
-  // If we arrived from a guided path (/read/<id>?back=/learn?...), offer a link
-  // straight back to that exact step. Only honor internal paths.
   useEffect(() => {
     if (typeof window === "undefined") return;
     const b = new URLSearchParams(window.location.search).get("back");
@@ -108,8 +83,6 @@ export default function VerseDetailPage() {
     return relatedPassages(item, allItems, 6);
   }, [allItems, item]);
 
-  // Prefer semantic neighbours from pgvector; fall back to theme overlap when
-  // RAG is offline or the unit isn't indexed yet.
   const related = semanticRelated && semanticRelated.length > 0 ? semanticRelated : themeRelated;
   const relatedMode = semanticRelated && semanticRelated.length > 0 ? "semantic" : "themes";
 
@@ -131,15 +104,11 @@ export default function VerseDetailPage() {
   }
 
   const resonances = useMemo(() => (item ? getResonances(item) : []), [item]);
-
-  // Turn free-text resonance citations into links into the corpus when they
-  // point at a passage/collection we actually hold.
   const citationIndex = useMemo(() => buildCitationIndex(allItems), [allItems]);
   const knownIds = useMemo(() => new Set(allItems.map((v) => v._id)), [allItems]);
   const resonanceLinks = useMemo<CitationResolution[]>(
     () =>
       resonances.map((r) => {
-        // Prefer an exact, grounded passage_id when the pipeline supplied one.
         if (r.passage_id && knownIds.has(r.passage_id)) {
           return { kind: "passage", passageId: r.passage_id, collection: "" };
         }
@@ -159,52 +128,19 @@ export default function VerseDetailPage() {
   const appendixLayers = getAppendixLayers(item);
   const anchorChapter = getAnchorChapter(item);
 
-  // Progressive disclosure: the essentials (original / translation / practice)
-  // stay open so the reader lands on the passage first; everything denser is
-  // tucked behind a tap so the page isn't a wall of text.
-  const ESSENTIAL_KINDS = new Set(["original", "iast", "translation", "practice"]);
-  const essentialLayers = layers.filter(
-    (layer) => ESSENTIAL_KINDS.has(layer.kind) && (showOriginal || (layer.kind !== "original" && layer.kind !== "iast")),
-  );
-  const commentaryLayer = layers.find((layer) => layer.kind === "commentary");
-  const keyTermsLayer = layers.find((layer) => layer.kind === "key_terms");
-  const hasSource = appendixLayers.length > 0 || Boolean(anchorChapter);
-  const hasDeeperLayers = Boolean(commentaryLayer) || Boolean(keyTermsLayer) || hasSource;
-
-  const translation = layerText(item, "translation");
-  const commentary = layerText(item, "commentary");
-  const used = new Set<string>();
-  const coreIdea =
-    pickDistinct(
-      [
-        ...sentenceCandidates(item.thesis),
-        ...sentenceCandidates(translation),
-        ...sentenceCandidates(commentary),
-        ...sentenceCandidates(item.source_excerpt),
-      ],
-      used,
-    ) || passagePreview(item);
-  const plain =
-    pickDistinct(
-      [
-        ...sentenceCandidates(item.source_excerpt),
-        ...sentenceCandidates(commentary),
-        ...sentenceCandidates(translation),
-        ...sentenceCandidates(item.thesis),
-      ],
-      used,
-    ) || "This passage asks for slower reading so the practical move is clear.";
+  const originalLayer = layers.find((l) => l.kind === "original");
+  const iastLayer = layers.find((l) => l.kind === "iast");
+  const translationLayer = layers.find((l) => l.kind === "translation");
+  const commentaryBody = layerText(item, "commentary");
+  const keyTermsLayer = layers.find((l) => l.kind === "key_terms");
   const practice = practiceText(item) || practiceFallback(item);
-  const reflection = reflectionPrompt(item);
-
-  const nextStep = related[0] || null;
+  const hasSource = appendixLayers.length > 0 || Boolean(anchorChapter);
+  const hasDeeper =
+    Boolean(keyTermsLayer) || resonances.length > 0 || hasSource;
 
   const textNav =
     siblings.length > 1 ? (
-      <nav
-        className="flex flex-wrap items-center justify-between gap-3 font-sans text-sm"
-        aria-label="Passages in this text"
-      >
+      <nav className="passage-reading__nav" aria-label="Passages in this text">
         {prevPassage ? (
           <Link
             href={passageHref(prevPassage._id)}
@@ -218,8 +154,6 @@ export default function VerseDetailPage() {
         )}
         <span className="soft tabular-nums">
           {siblingIndex >= 0 ? siblingIndex + 1 : "—"} of {siblings.length}
-          <span className="mx-1.5 text-amber-200/30">·</span>
-          {displayCollectionName(item.collection)}
         </span>
         {nextPassage ? (
           <Link
@@ -235,169 +169,176 @@ export default function VerseDetailPage() {
       </nav>
     ) : null;
 
+  const collectionHref = item.collection
+    ? `/read?collection=${encodeURIComponent(item.collection)}`
+    : "/read";
+
   return (
     <main className="page-shell">
-      {backHref ? (
-        <div className="flex flex-wrap items-center gap-4">
+      <div className="flex flex-wrap items-center gap-4">
+        {backHref ? (
           <Link href={backHref} className="font-sans text-sm text-amber-200 hover:text-amber-100">
             ← Back to path
           </Link>
-          <Link
-            href={`/read?collection=${encodeURIComponent(item.collection || "")}`}
-            className="soft font-sans text-sm hover:text-amber-100"
-          >
-            Back to text
-          </Link>
-        </div>
-      ) : (
-        <div className="flex flex-wrap items-center gap-4">
-          <Link
-            href={
-              item.collection
-                ? `/read?collection=${encodeURIComponent(item.collection)}`
-                : "/read"
-            }
-            className="soft font-sans text-sm hover:text-amber-100"
-          >
-            ← Back to text
-          </Link>
-          <Link href="/read" className="soft font-sans text-sm hover:text-amber-100">
-            Library
-          </Link>
-        </div>
-      )}
-      <section className="passage-hero manuscript-card mt-4 p-6 sm:p-8">
-        <ArtBackdrop srcs={collectionArtPool(item.collection)} variant="hero" priority />
-        <div className="relative z-10 grid gap-6 lg:grid-cols-[1fr_15rem] lg:items-end">
-          <div className="flex items-start gap-4">
-            <span className="passage-hero__glyph mt-1 hidden sm:inline-flex" aria-hidden>
-              <Glyph name={unitGlyph(item._id)} size="lg" zoom />
-            </span>
-            <div>
-              <p className="eyebrow">{displayCollectionName(item.collection) || "Pratibha"} {item.section ? ` / ${item.section}` : ""}</p>
-              <h1 className="mt-3 max-w-4xl text-5xl font-semibold leading-[0.92] tracking-[-0.04em] text-stone-100 sm:text-6xl">
+        ) : null}
+        <Link href={collectionHref} className="soft font-sans text-sm hover:text-amber-100">
+          ← Back to text
+        </Link>
+        <Link href="/read" className="soft font-sans text-sm hover:text-amber-100">
+          Library
+        </Link>
+      </div>
+
+      <div className="passage-reading mt-4">
+        <header className="passage-reading__hero relative overflow-hidden rounded-[1.5rem]">
+          <ArtBackdrop srcs={collectionArtPool(item.collection)} variant="banner" priority />
+          <div className="relative z-10 px-4 py-8 sm:px-8">
+            <div className="mx-auto flex max-w-xl flex-col items-center gap-3">
+              <span className="passage-hero__glyph inline-flex" aria-hidden>
+                <Glyph name={unitGlyph(item._id)} size="md" zoom />
+              </span>
+              <p className="eyebrow">
+                {displayCollectionName(item.collection) || "Pratibha"}
+                {item.section ? ` · ${item.section}` : ""}
+                {siblings.length > 1 && siblingIndex >= 0
+                  ? ` · ${siblingIndex + 1} of ${siblings.length}`
+                  : ""}
+              </p>
+              <h1 className="text-3xl font-semibold leading-[1.1] tracking-[-0.03em] text-stone-100 sm:text-4xl">
                 {displayPassageTitle(item)}
               </h1>
             </div>
           </div>
-          <div className="citation-card grid gap-2 border-amber-200/20 bg-[#0b0b14]/75 p-3 font-sans text-sm text-stone-300 backdrop-blur-sm">
-            <p className="eyebrow text-[0.68rem] text-amber-200/70">Reading options</p>
-            <label className="flex items-center gap-3">
-              <input type="checkbox" className="accent-amber-300" checked={learningMode} onChange={(e) => setLearningMode(e.target.checked)} />
-              Learning guide
-            </label>
-            <label className="flex items-center gap-3">
-              <input type="checkbox" className="accent-amber-300" checked={showOriginal} onChange={(e) => setShowOriginal(e.target.checked)} />
-              Original language
-            </label>
-            <label className="flex items-center gap-3">
-              <input type="checkbox" className="accent-amber-300" checked={compact} onChange={(e) => setCompact(e.target.checked)} />
-              Compact commentary
-            </label>
+        </header>
+
+        {originalLayer || iastLayer ? (
+          <div className="mt-2 text-center">
+            <button
+              type="button"
+              className="soft font-sans text-xs tracking-wide hover:text-amber-100"
+              onClick={() => setShowOriginal((v) => !v)}
+            >
+              {showOriginal ? "Hide original" : "Show original"}
+            </button>
           </div>
-        </div>
-      </section>
+        ) : null}
 
-      {textNav ? <div className="mt-5">{textNav}</div> : null}
+        {showOriginal && originalLayer ? (
+          <LayerBlock layer={originalLayer} variant="plain" />
+        ) : null}
+        {showOriginal && iastLayer ? (
+          <LayerBlock layer={iastLayer} variant="plain" />
+        ) : null}
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-[2fr_1fr] lg:gap-8">
-        <section>
-          {learningMode ? (
-            <section className="practice-card p-5 sm:p-6">
-              <h2 className="layer-heading">Learning guide</h2>
-              <div className="mt-3 space-y-3 text-sm">
-                <p><span className="text-amber-100">Core idea:</span> {coreIdea}</p>
-                <p><span className="text-amber-100">Why it matters:</span> {plain}</p>
-                <p><span className="text-amber-100">Practice now:</span> {practice}</p>
-                <p><span className="text-amber-100">Reflect:</span> {reflection}</p>
-              </div>
-            </section>
-          ) : null}
+        {translationLayer ? (
+          <LayerBlock layer={translationLayer} variant="plain" />
+        ) : (
+          <section className="passage-layer passage-layer--translation">
+            <h2 className="layer-heading">Translation</h2>
+            <p className="reading-prose mt-4">{passagePreview(item)}</p>
+          </section>
+        )}
 
-          {/* Essentials — always open: original / translation / practice. */}
-          {essentialLayers.map((layer, idx) => (
-            <LayerBlock key={`${layer.kind}-${layer.label}-${idx}`} layer={layer} />
-          ))}
+        {practice ? (
+          <section className="passage-practice">
+            <h2 className="layer-heading">Practice</h2>
+            <p className="mt-3 text-[1.05rem] leading-relaxed text-stone-200">{practice}</p>
+          </section>
+        ) : null}
 
-          {/* Go deeper — dense layers tucked behind a tap. */}
-          {hasDeeperLayers ? (
-            <div className="mt-8">
-              <p className="eyebrow mb-3 text-amber-200/70">Go deeper</p>
-              <div>
-                {commentaryLayer ? (
-                  <Disclosure summary="Commentary" hint="Pratibha">
-                    <LayerBlock layer={commentaryLayer} compact={compact} bare />
-                  </Disclosure>
-                ) : null}
-                {keyTermsLayer ? (
-                  <Disclosure summary="Key terms" hint={`${(keyTermsLayer.items || []).length || ""}`}>
-                    <LayerBlock layer={keyTermsLayer} bare />
-                  </Disclosure>
-                ) : null}
-                {resonances.length > 0 ? (
-                  <Disclosure summary="Cross-tradition resonances" hint={`${resonances.length}`}>
-                    <div className="space-y-3">
-                      {resonances.map((r, idx) => {
-                        const link = resonanceLinks[idx];
-                        const href =
-                          link?.kind === "passage"
-                            ? `/read/${encodeURIComponent(link.passageId)}`
-                            : link?.kind === "collection"
-                              ? `/read?collection=${encodeURIComponent(link.collection)}`
-                              : null;
-                        return (
-                          <article key={`${r.citation}-${idx}`} className="citation-card p-3">
-                            {href ? (
-                              <Link
-                                href={href}
-                                className="group inline-flex items-center gap-1 text-sm text-amber-100 underline decoration-amber-200/30 underline-offset-2 transition hover:decoration-amber-200/70"
-                              >
-                                <InlineMarkdown>{r.citation}</InlineMarkdown>
-                                <span aria-hidden className="text-[10px] text-amber-200/60 transition group-hover:translate-x-0.5">
-                                  {link?.kind === "passage" ? "↗" : "→"}
-                                </span>
-                              </Link>
-                            ) : (
-                              <span className="text-sm text-amber-100">
-                                <InlineMarkdown>{r.citation}</InlineMarkdown>
+        {commentaryBody ? <CommentaryTeaser body={commentaryBody} /> : null}
+
+        {textNav}
+
+        {hasDeeper ? (
+          <div className="passage-reading__secondary">
+            <p className="eyebrow mb-3 text-amber-200/70">Go deeper</p>
+            <div className="disclosure-stack">
+              {keyTermsLayer ? (
+                <Disclosure summary="Key terms" hint={`${(keyTermsLayer.items || []).length || ""}`}>
+                  <LayerBlock layer={keyTermsLayer} bare />
+                </Disclosure>
+              ) : null}
+              {resonances.length > 0 ? (
+                <Disclosure summary="Cross-tradition resonances" hint={`${resonances.length}`}>
+                  <div className="space-y-3">
+                    {resonances.map((r, idx) => {
+                      const link = resonanceLinks[idx];
+                      const href =
+                        link?.kind === "passage"
+                          ? `/read/${encodeURIComponent(link.passageId)}`
+                          : link?.kind === "collection"
+                            ? `/read?collection=${encodeURIComponent(link.collection)}`
+                            : null;
+                      return (
+                        <article key={`${r.citation}-${idx}`} className="citation-card p-3">
+                          {href ? (
+                            <Link
+                              href={href}
+                              className="group inline-flex items-center gap-1 text-sm text-amber-100 underline decoration-amber-200/30 underline-offset-2 transition hover:decoration-amber-200/70"
+                            >
+                              <InlineMarkdown>{r.citation}</InlineMarkdown>
+                              <span aria-hidden className="text-[10px] text-amber-200/60 transition group-hover:translate-x-0.5">
+                                {link?.kind === "passage" ? "↗" : "→"}
                               </span>
-                            )}
-                            <p className="soft mt-1 text-sm leading-relaxed">
-                              <InlineMarkdown>{r.resonance}</InlineMarkdown>
+                            </Link>
+                          ) : (
+                            <span className="text-sm text-amber-100">
+                              <InlineMarkdown>{r.citation}</InlineMarkdown>
+                            </span>
+                          )}
+                          <p className="soft mt-1 text-sm leading-relaxed">
+                            <InlineMarkdown>{r.resonance}</InlineMarkdown>
+                          </p>
+                          {r.divergence ? (
+                            <p className="mt-2 text-sm leading-relaxed text-stone-300">
+                              <span className="font-semibold text-amber-100">Divergence:</span>{" "}
+                              <InlineMarkdown>{r.divergence}</InlineMarkdown>
                             </p>
-                            {r.divergence ? (
-                              <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                                <span className="font-semibold text-amber-100">Divergence:</span>{" "}
-                                <InlineMarkdown>{r.divergence}</InlineMarkdown>
-                              </p>
-                            ) : null}
-                          </article>
-                        );
-                      })}
-                    </div>
-                  </Disclosure>
-                ) : null}
-                {hasSource ? (
-                  <Disclosure summary="Public-domain source" hint="Giles / Patrick">
-                    <div className="space-y-4">
-                      {appendixLayers.map((layer, idx) => (
-                        <LayerBlock key={`appendix-${layer.label}-${idx}`} layer={layer} bare />
-                      ))}
-                      {anchorChapter ? (
-                        <div>
-                          <h3 className="layer-heading mb-2">Full chapter — public-domain translation</h3>
-                          <LayerBlock layer={{ kind: "appendix", label: "Full chapter", body: anchorChapter }} bare />
-                        </div>
-                      ) : null}
-                    </div>
-                  </Disclosure>
-                ) : null}
-              </div>
+                          ) : null}
+                        </article>
+                      );
+                    })}
+                  </div>
+                </Disclosure>
+              ) : null}
+              {hasSource ? (
+                <Disclosure summary="Public-domain source">
+                  <div className="space-y-4">
+                    {appendixLayers.map((layer, idx) => (
+                      <LayerBlock key={`appendix-${layer.label}-${idx}`} layer={layer} bare />
+                    ))}
+                    {anchorChapter ? (
+                      <div>
+                        <h3 className="layer-heading mb-2">Full chapter — public-domain translation</h3>
+                        <LayerBlock layer={{ kind: "appendix", label: "Full chapter", body: anchorChapter }} bare />
+                      </div>
+                    ) : null}
+                  </div>
+                </Disclosure>
+              ) : null}
             </div>
-          ) : null}
+          </div>
+        ) : null}
+
+        <div className="passage-reading__secondary">
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain`}
+              className="btn-primary px-5 py-2.5"
+            >
+              Guided Study
+            </Link>
+            <Link
+              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=practice`}
+              className="btn-secondary px-5 py-2.5"
+            >
+              Practice chat
+            </Link>
+          </div>
 
           {item.themes && item.themes.length > 0 ? (
-            <section className="mt-8 flex flex-wrap gap-2">
+            <div className="mt-6 flex flex-wrap gap-2">
               {item.themes.map((t) => (
                 <Link
                   key={t}
@@ -407,76 +348,40 @@ export default function VerseDetailPage() {
                   {t}
                 </Link>
               ))}
-            </section>
+            </div>
           ) : null}
 
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain`} className="btn-primary px-5 py-2.5">
-              Guided Study
-            </Link>
-            <Link href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=practice`} className="btn-secondary px-5 py-2.5">
-              Practice chat
-            </Link>
-            <Link href="/random" className="btn-secondary px-5 py-2.5">
-              Explore another random passage
-            </Link>
-          </div>
-
-          {textNav ? <div className="mt-8 border-t border-amber-200/15 pt-6">{textNav}</div> : null}
-
-          <div className="mt-6">
+          <div className="mt-8">
             <JournalPanel passage={item} />
           </div>
-        </section>
 
-        <aside className="card h-fit p-4 sm:p-5">
-          <h2 className="text-2xl text-amber-100">Where to go next</h2>
-          <p className="soft mt-1 text-sm">
-            {relatedMode === "semantic"
-              ? "Nearest teachings in meaning — across the corpus."
-              : "The same insight echoing across traditions."}
-          </p>
-
-          <div className="mt-5">
-            <p className="layer-heading">Passages to explore</p>
-            <div className="mt-3 space-y-3">
-              {related.length === 0 ? (
-                <p className="soft text-sm">No related passages yet.</p>
-              ) : (
-                related.map((r) => {
-                  const crossTradition = (r.collection || "") !== (item.collection || "");
-                  return (
-                    <Link key={r._id} href={`/read/${encodeURIComponent(r._id)}`} className="citation-card block p-3 hover:border-amber-300/30">
-                      <div className="flex items-start justify-between gap-2">
-                        <p className="text-sm text-amber-100">{displayPassageTitle(r)}</p>
-                        {crossTradition ? (
-                          <span className="shrink-0 rounded-full border border-amber-200/25 px-2 py-0.5 font-sans text-[10px] uppercase tracking-wide text-amber-200/80">
-                            Cross-tradition
-                          </span>
-                        ) : null}
-                      </div>
-                      <p className="soft mt-1 text-xs">
-                        {displayCollectionName(r.collection)} {r.section ? `• ${r.section}` : ""}
-                      </p>
-                      <p className="soft mt-1 line-clamp-2 text-xs">{passagePreview(r)}</p>
-                    </Link>
-                  );
-                })
-              )}
-            </div>
-          </div>
-
-          {nextStep ? (
-            <div className="practice-card mt-4 p-3">
-              <p className="layer-heading">Next natural step</p>
-              <Link href={`/read/${encodeURIComponent(nextStep._id)}`} className="mt-1 block text-sm text-amber-100 hover:underline">
-                {displayPassageTitle(nextStep)}
-              </Link>
+          {related.length > 0 ? (
+            <div className="mt-10">
+              <h2 className="layer-heading text-amber-100">Related passages</h2>
+              <p className="soft mt-1 text-sm">
+                {relatedMode === "semantic"
+                  ? "Nearest in meaning across the corpus."
+                  : "Shared themes across traditions."}
+              </p>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                {related.slice(0, 4).map((r) => (
+                  <Link
+                    key={r._id}
+                    href={`/read/${encodeURIComponent(r._id)}`}
+                    className="citation-card block p-3 hover:border-amber-300/30"
+                  >
+                    <p className="text-sm text-amber-100">{displayPassageTitle(r)}</p>
+                    <p className="soft mt-1 text-xs">
+                      {displayCollectionName(r.collection)}
+                      {r.section ? ` · ${r.section}` : ""}
+                    </p>
+                  </Link>
+                ))}
+              </div>
             </div>
           ) : null}
-        </aside>
+        </div>
       </div>
     </main>
   );
 }
-
