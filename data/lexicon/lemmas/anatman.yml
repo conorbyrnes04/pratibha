@@ -1,0 +1,35 @@
+id: anatman
+maturity: strong_draft
+scripts:
+  iast: anātman
+  devanagari: अनात्मन्
+aliases:
+- anatman
+- anatta
+- no-self
+- non-self
+traditions:
+- theravada
+- mahayana
+related:
+- lemma_id: atman
+  relation: diverges_from
+  note: Direct negation of a permanent personal Self as refuge; not always a denial of awareness language
+    in later schools.
+- lemma_id: sunyata
+  relation: related_as
+senses:
+- id: anatman.buddhist
+  label: Non-self
+  short: no permanent, independent self in persons (or, later, in dharmas)
+  etymology: an- + ātman; Pali anattā
+  traps:
+  - there is no experience / no person at all
+  - nihilism
+  - contradicting Upaniṣadic ātman without noticing different questions
+  traditions:
+  - theravada
+  - mahayana
+  exemplars: []
+  body: |
+    Anātman targets appropriation: the grasping ‘this is me / mine / my self.’ It is a soteriological scalpel, not a metaphysical shrug.

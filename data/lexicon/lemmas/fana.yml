@@ -1,0 +1,35 @@
+id: fana
+maturity: strong_draft
+scripts:
+  arabic: فناء
+  latin: fana
+aliases:
+- fana
+- fanaa
+- fanā
+- annihilation
+traditions:
+- sufism
+- islam
+related:
+- lemma_id: tawhid
+  relation: related_as
+  note: Fanāʾ clears the false self so tawḥīd can be lived, not only asserted.
+- lemma_id: gelassenheit
+  relation: rough_analogue
+- lemma_id: nirvana
+  relation: rough_analogue
+senses:
+- id: fana.sufi
+  label: Annihilation in God
+  short: passing away of the egoic claim before the Real
+  etymology: Arabic fanāʾ ‘passing away, evanescence’
+  traps:
+  - self-harm or dissociation
+  - quietism as duty-abandonment
+  - permanent unconsciousness
+  traditions:
+  - sufism
+  exemplars: []
+  body: |
+    Fanāʾ is paired with baqāʾ (subsistence): the servant passes away as independent center and remains in God. Ibn ʿArabī frames it within waḥdat al-wujūd debates.

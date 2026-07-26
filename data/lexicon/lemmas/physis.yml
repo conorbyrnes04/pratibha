@@ -1,0 +1,33 @@
+id: physis
+maturity: strong_draft
+scripts:
+  greek: φύσις
+  latin: physis
+aliases:
+- physis
+- phusis
+- nature
+traditions:
+- greek
+- presocratic
+- stoicism
+related:
+- lemma_id: ziran
+  relation: rough_analogue
+- lemma_id: dao
+  relation: rough_analogue
+senses:
+- id: physis.greek
+  label: Nature / emerging
+  short: the growing-forth of what a thing is; nature as principle of appearing
+  etymology: φύω ‘grow, bring forth’
+  traps:
+  - Nature as scenic outdoors
+  - modern ‘laws of physics’ only
+  - natural = morally good
+  traditions:
+  - greek
+  - presocratic
+  exemplars: []
+  body: |
+    Early physis thinking asks how things come to presence. Later Stoicism ethicalizes life ‘according to nature.’

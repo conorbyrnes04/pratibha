@@ -1,0 +1,35 @@
+id: samsara
+maturity: strong_draft
+scripts:
+  iast: saṃsāra
+  devanagari: संसार
+aliases:
+- samsara
+- sangsara
+- cycle of rebirth
+traditions:
+- hinduism
+- buddhism
+- upanishads
+related:
+- lemma_id: moksa
+  relation: diverges_from
+- lemma_id: nirvana
+  relation: diverges_from
+- lemma_id: karma
+  relation: related_as
+senses:
+- id: samsara.indic
+  label: Wandering cycle
+  short: conditioned cycling of birth, death, and re-becoming under ignorance
+  etymology: sam- + √sṛ ‘flow together / wander’
+  traps:
+  - only literal reincarnation talk
+  - ‘life is suffering’ as mood
+  - world-hatred
+  traditions:
+  - hinduism
+  - buddhism
+  exemplars: []
+  body: |
+    Saṃsāra names bondage as process. Contemplative use can mean the looping of appropriation even within one life—not only cosmology.

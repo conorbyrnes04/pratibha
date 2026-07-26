@@ -1,0 +1,46 @@
+id: logos
+maturity: strong_draft
+scripts:
+  greek: λόγος
+  latin: logos
+aliases:
+- logos
+- word
+- reason
+- account
+traditions:
+- greek
+- stoicism
+- christianity
+- heraclitus
+related:
+- lemma_id: dao
+  relation: rough_analogue
+- lemma_id: dharma
+  relation: rough_analogue
+senses:
+- id: logos.greek
+  label: Greek logos
+  short: account, reason, and the intelligible articulation of what is
+  etymology: λέγω ‘say, gather, recount’ → speech, ratio, principle
+  traps:
+  - only ‘logic’
+  - only the Johannine Word
+  - mere chatter
+  traditions:
+  - greek
+  - heraclitus
+  - stoicism
+  exemplars: []
+  body: |
+    From Heraclitus through Stoicism logos names the shared rational order. Philosophy is learning to speak and live in accordance with it.
+- id: logos.johannine
+  label: Johannine Word
+  short: the divine Word through whom all things come to be
+  etymology: Greek λόγος in John 1; theological reception of earlier senses
+  traps:
+  - collapsing into Greek philosophy without Christology
+  - collapsing into slogan ‘Jesus = logic’
+  traditions:
+  - christianity
+  exemplars: []

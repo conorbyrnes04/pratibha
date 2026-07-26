@@ -1,0 +1,33 @@
+id: vimarsa
+maturity: strong_draft
+scripts:
+  iast: vimarśa
+  devanagari: विमर्श
+aliases:
+- vimarsha
+- vimarsa
+- self-reflection
+- reflexivity
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: prakasa
+  relation: related_as
+  note: 'prakāśa–vimarśa are polar: light and the light’s self-grasping.'
+- lemma_id: pratyabhijna
+  relation: related_as
+  note: pratyabhijñā is vimarśa recovered at full scale—recognition of authorship.
+senses:
+- id: vimarsa.shaiva
+  label: Reflexive awareness
+  short: consciousness tasting itself as ‘I’ within appearance
+  etymology: vi- + √mṛś ‘touch, consider, handle’ → reflective handling/savoring
+  traps:
+  - introspection as psychology
+  - discursive self-talk
+  - second-order thought about thought
+  traditions:
+  - kashmir_shaivism
+  exemplars: []
+  body: |
+    Without vimarśa, prakāśa would be blind shining. Vimarśa is the ‘I am’ savor that makes illumination self-aware and free.

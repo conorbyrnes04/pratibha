@@ -1,0 +1,34 @@
+id: cit
+maturity: strong_draft
+scripts:
+  iast: cit
+  devanagari: चित्
+aliases:
+- chit
+- consciousness
+- awareness
+traditions:
+- advaita_vedanta
+- kashmir_shaivism
+- upanishads
+related:
+- lemma_id: caitanya
+  relation: related_as
+- lemma_id: nous
+  relation: rough_analogue
+  note: Both name knowing as ontological; nous is more intellective, cit more bare awareness.
+senses:
+- id: cit.vedanta
+  label: Awareness (cit)
+  short: knowingness itself, not a content of mind
+  etymology: √cit ‘perceive, notice, be conscious’
+  traps:
+  - thoughts
+  - attention as a spotlight skill
+  - IQ / intellect
+  traditions:
+  - advaita_vedanta
+  - upanishads
+  exemplars: []
+  body: |
+    Cit is the light in which mental events appear. Confusing cit with manas (mind) is the standard beginner error: mind is seen; cit is that by which seeing is possible.

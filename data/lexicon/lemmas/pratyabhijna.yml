@@ -1,0 +1,32 @@
+id: pratyabhijna
+maturity: strong_draft
+scripts:
+  iast: pratyabhijñā
+  devanagari: प्रत्यभिज्ञा
+aliases:
+- pratyabhijna
+- pratyabhijnā
+- recognition
+- re-cognition
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: vimarsa
+  relation: related_as
+- lemma_id: anuttara
+  relation: related_as
+  note: Recognition returns the contracted self to anuttara, the unsurpassed.
+senses:
+- id: pratyabhijna.shaiva
+  label: Recognition
+  short: recollecting that this awareness is Śiva’s own authorship
+  etymology: prati- + abhi- + √jñā ‘know again / recognize’
+  traps:
+  - learning a new belief
+  - mystical peak as trophy
+  - intellectual assent alone
+  traditions:
+  - kashmir_shaivism
+  exemplars: []
+  body: |
+    Pratyabhijñā is not acquiring what was absent but ceasing to overlook what was always operative: the Self as free agent of knowing and appearing.

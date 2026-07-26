@@ -1,0 +1,35 @@
+id: nous
+maturity: strong_draft
+scripts:
+  greek: νοῦς
+  latin: nous
+aliases:
+- nous
+- intellect
+- mind
+traditions:
+- greek
+- platonism
+- neoplatonism
+related:
+- lemma_id: cit
+  relation: rough_analogue
+- lemma_id: logos
+  relation: related_as
+- lemma_id: henosis
+  relation: related_as
+senses:
+- id: nous.neoplatonic
+  label: Intellect (Plotinian)
+  short: 'divine Intellect: knowing that is identical with the intelligibles'
+  etymology: νόος / νοῦς ‘mind, intellect’
+  traps:
+  - IQ
+  - discursive reasoning (dianoia)
+  - brain
+  traditions:
+  - neoplatonism
+  - platonism
+  exemplars: []
+  body: |
+    For Plotinus, Nous is the second hypostasis: the One’s first outflow as self-thinking thought. Human nous can turn upward by purification.

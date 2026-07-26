@@ -1,0 +1,32 @@
+id: prakasa
+maturity: strong_draft
+scripts:
+  iast: prakāśa
+  devanagari: प्रकाश
+aliases:
+- prakasha
+- prakasa
+- light
+- illumination
+traditions:
+- kashmir_shaivism
+- advaita_vedanta
+related:
+- lemma_id: vimarsa
+  relation: related_as
+- lemma_id: cit
+  relation: related_as
+senses:
+- id: prakasa.shaiva
+  label: Illuminating presence
+  short: the light-aspect of consciousness that makes anything appear
+  etymology: pra- + √kāś ‘shine forth’
+  traps:
+  - physical light
+  - mystical glow experiences
+  - clarity as a mood
+  traditions:
+  - kashmir_shaivism
+  exemplars: []
+  body: |
+    Prakāśa is not a lamp in a dark room; it is the condition under which ‘room’ and ‘dark’ can show up at all. Paired with vimarśa it is never mute luminosity.

@@ -35,6 +35,7 @@ from .data_loader import (
     normalize_maturity,
     pick_daily,
 )
+from .lexicon_api import find_lemma_passages, get_lemma, get_lexicon, list_lemmas
 from .collection_aliases import (
     belongs_to_selection,
     meta_collection_slug,
@@ -63,6 +64,8 @@ async def lifespan(_app: FastAPI):
     async def _load() -> None:
         verses = await asyncio.to_thread(get_all_verses)
         _warn_missing_aliases(verses)
+        # Warm lexicon cache (empty until Agent A seeds data/lexicon/lemmas).
+        await asyncio.to_thread(get_lexicon)
 
     task = asyncio.create_task(_load())
     try:
@@ -272,6 +275,41 @@ async def sources():
     from .sources_registry import build_sources_payload
 
     return build_sources_payload(get_all_verses())
+
+
+@app.get("/lexicon")
+async def lexicon_list(
+    q: str | None = None,
+    tradition: str | None = None,
+    limit: int = 100,
+):
+    """Browse / search lexicon lemmas (cached from data/lexicon/lemmas)."""
+    if limit < 0:
+        limit = 0
+    if limit > 500:
+        limit = 500
+    return list_lemmas(q=q, tradition=tradition, limit=limit)
+
+
+@app.get("/lexicon/{lemma_id}/passages")
+async def lexicon_lemma_passages(lemma_id: str, limit: int = 30):
+    """Slim verse refs whose key_terms mention this lemma (cap ~30)."""
+    if get_lemma(lemma_id) is None:
+        raise HTTPException(status_code=404, detail="Lemma not found")
+    if limit < 0:
+        limit = 0
+    if limit > 30:
+        limit = 30
+    return {"items": find_lemma_passages(lemma_id, limit=limit)}
+
+
+@app.get("/lexicon/{lemma_id}")
+async def lexicon_lemma(lemma_id: str):
+    """Full lemma document (senses, related, scripts, …)."""
+    lemma = get_lemma(lemma_id)
+    if lemma is None:
+        raise HTTPException(status_code=404, detail="Lemma not found")
+    return lemma
 
 
 @app.get("/admin/corpus-status")

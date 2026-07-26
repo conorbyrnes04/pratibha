@@ -1,0 +1,33 @@
+id: wuwei
+maturity: strong_draft
+scripts:
+  chinese: 無為
+  pinyin: wúwéi
+aliases:
+- wuwei
+- wu-wei
+- non-action
+- nondoing
+traditions:
+- daoism
+- chinese
+related:
+- lemma_id: ziran
+  relation: related_as
+- lemma_id: gelassenheit
+  relation: rough_analogue
+  note: Both release forced willing; gelassenheit is more theistic-mystical letting-be.
+senses:
+- id: wuwei.daoist
+  label: Non-forcing action
+  short: acting without aggressive contrivance; non-interference with the Way
+  etymology: 無 ‘without’ + 為 ‘doing / making / deeming’
+  traps:
+  - laziness
+  - passivity
+  - zero activity
+  traditions:
+  - daoism
+  exemplars: []
+  body: |
+    Wúwéi is skilled non-imposition. The ruler, butcher, or mind that does not strain against the pattern accomplishes more with less residue.

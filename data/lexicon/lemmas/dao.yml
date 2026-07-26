@@ -1,0 +1,35 @@
+id: dao
+maturity: strong_draft
+scripts:
+  chinese: 道
+  pinyin: dào
+aliases:
+- dao
+- tao
+- the way
+traditions:
+- daoism
+- chinese
+related:
+- lemma_id: de
+  relation: related_as
+  note: dé is the Way’s efficacious power/virtue in a thing or person.
+- lemma_id: logos
+  relation: rough_analogue
+  note: Both can name ordering principle; dào resists full naming more programmatically.
+- lemma_id: brahman
+  relation: rough_analogue
+senses:
+- id: dao.daoist
+  label: The Way
+  short: the nameless source-and-course of the myriad things
+  etymology: 道 ‘path, way, to speak/lead’
+  traps:
+  - a deity named Tao
+  - lifestyle brand
+  - mere ‘method’ or technique
+  traditions:
+  - daoism
+  exemplars: []
+  body: |
+    Daodejing 1: the dào that can be dào-ed is not the constant dào. The term oscillates between cosmogonic source and the way of acting that accords with it.

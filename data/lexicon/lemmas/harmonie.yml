@@ -1,0 +1,33 @@
+id: harmonie
+maturity: strong_draft
+scripts:
+  greek: ἁρμονίη
+  latin: harmonia
+aliases:
+- harmonie
+- harmonia
+- harmony
+traditions:
+- greek
+- heraclitus
+- pythagoreanism
+related:
+- lemma_id: logos
+  relation: related_as
+- lemma_id: li
+  relation: rough_analogue
+senses:
+- id: harmonie.heraclitean
+  label: Fitting-together
+  short: tensioned unity of opposites; attunement rather than bland agreement
+  etymology: ἁρμονίη ‘joint, fastening, musical attunement’
+  traps:
+  - nice vibes / conflict-avoidance
+  - only musical metaphor
+  - static balance
+  traditions:
+  - greek
+  - heraclitus
+  exemplars: []
+  body: |
+    Heraclitus’s bow and lyre: harmony is back-stretched opposition. Unity is not the erasure of difference.

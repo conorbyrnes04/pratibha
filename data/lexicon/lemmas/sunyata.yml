@@ -1,0 +1,33 @@
+id: sunyata
+maturity: strong_draft
+scripts:
+  iast: śūnyatā
+  devanagari: शून्यता
+aliases:
+- shunyata
+- sunyata
+- emptiness
+traditions:
+- mahayana
+- madhyamaka
+related:
+- lemma_id: sunya
+  relation: related_as
+- lemma_id: anatman
+  relation: related_as
+  note: Emptiness of dharmas extends anātman beyond persons to phenomena.
+senses:
+- id: sunyata.madhyamaka
+  label: Emptiness (Madhyamaka)
+  short: lack of intrinsic, independent nature (svabhāva) in all phenomena
+  etymology: śūnya + -tā abstract → emptiness
+  traps:
+  - things don’t exist at all
+  - void mysticism as aesthetic blank
+  - relativism (‘nothing matters’)
+  traditions:
+  - mahayana
+  - madhyamaka
+  exemplars: []
+  body: |
+    Śūnyatā is a middle: not eternalism, not annihilation. Phenomena appear dependently; the error is reifying them as self-standing essences.

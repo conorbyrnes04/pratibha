@@ -1,0 +1,33 @@
+id: spanda
+maturity: strong_draft
+scripts:
+  iast: spanda
+  devanagari: स्पन्द
+aliases:
+- spand
+- vibration
+- throb
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: vimarsa
+  relation: related_as
+  note: spanda is the throb of manifestation; vimarśa the reflexive savoring that makes the throb self-aware.
+- lemma_id: qi
+  relation: rough_analogue
+  note: Both suggest dynamic continuum rather than static substance; spanda is explicitly consciousness-vibration,
+    qì more cosmological/physiological.
+senses:
+- id: spanda.shaiva
+  label: Creative throb
+  short: the subtle vibration by which consciousness appears as world
+  etymology: √spand ‘to quiver, throb, pulse’
+  traps:
+  - physical vibration only
+  - New Age ‘energy tingling’
+  - mere metaphor with no doctrine
+  traditions:
+  - kashmir_shaivism
+  exemplars: []
+  body: |
+    Spanda doctrine refuses a static Absolute. Even stillness is a mode of the throb; bondage is mistaking a contracted pulse for the whole field.

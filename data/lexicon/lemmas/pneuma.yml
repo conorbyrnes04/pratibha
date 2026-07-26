@@ -1,0 +1,33 @@
+id: pneuma
+maturity: strong_draft
+scripts:
+  greek: πνεῦμα
+  latin: pneuma
+aliases:
+- pneuma
+- spirit
+- breath
+traditions:
+- greek
+- stoicism
+- christianity
+related:
+- lemma_id: qi
+  relation: rough_analogue
+- lemma_id: psyche
+  relation: related_as
+senses:
+- id: pneuma.stoic
+  label: Stoic pneuma
+  short: tensioned breath-fire that structures cosmos and soul
+  etymology: πνέω ‘breathe’ → breath, wind, spirit
+  traps:
+  - ghostly spook
+  - only Christian Holy Spirit
+  - air as chemistry only
+  traditions:
+  - stoicism
+  - greek
+  exemplars: []
+  body: |
+    Stoic pneuma is a physical yet rational continuum. Later Christian pneumatology reuses the word in a different ontology.

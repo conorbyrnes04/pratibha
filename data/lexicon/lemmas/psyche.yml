@@ -1,0 +1,36 @@
+id: psyche
+maturity: strong_draft
+scripts:
+  greek: ψυχή
+  latin: psyche
+aliases:
+- psyche
+- psuche
+- soul
+- mind
+traditions:
+- greek
+- platonism
+- stoicism
+related:
+- lemma_id: atman
+  relation: rough_analogue
+- lemma_id: jiva
+  relation: rough_analogue
+- lemma_id: pneuma
+  relation: related_as
+senses:
+- id: psyche.platonic
+  label: Platonic soul
+  short: the living, knowing principle that can turn toward the Forms or the body
+  etymology: ψυχή ‘breath, life, soul’
+  traps:
+  - modern psychology’s ‘psyche’
+  - ghost in the machine
+  - immortal ego personality
+  traditions:
+  - greek
+  - platonism
+  exemplars: []
+  body: |
+    In the Phaedo psychē is argued as kin to the invisible and deathless. Care of the soul is philosophy’s work—not mood management.

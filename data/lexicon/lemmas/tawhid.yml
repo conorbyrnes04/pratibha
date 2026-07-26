@@ -1,0 +1,33 @@
+id: tawhid
+maturity: strong_draft
+scripts:
+  arabic: توحيد
+  latin: tawhid
+aliases:
+- tawhid
+- tawheed
+- tauhid
+- oneness of god
+traditions:
+- islam
+- sufism
+related:
+- lemma_id: fana
+  relation: related_as
+- lemma_id: henosis
+  relation: rough_analogue
+senses:
+- id: tawhid.islamic
+  label: Divine unity
+  short: affirmation and realization of God’s absolute oneness
+  etymology: Arabic tawḥīd from waḥḥada ‘to make one / declare one’
+  traps:
+  - mere monotheistic slogan
+  - pantheism collapse
+  - abstract number ‘one’
+  traditions:
+  - islam
+  - sufism
+  exemplars: []
+  body: |
+    Exoteric tawḥīd is creed; mystical reading intensifies it as the Real’s sole agency—so that ascribing independent power to the self becomes a subtle shirk.

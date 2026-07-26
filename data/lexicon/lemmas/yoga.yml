@@ -1,0 +1,41 @@
+id: yoga
+maturity: strong_draft
+scripts:
+  iast: yoga
+  devanagari: योग
+aliases:
+- yoga
+- yogi
+- union
+traditions:
+- yoga
+- upanishads
+- kashmir_shaivism
+related:
+- lemma_id: samadhi
+  relation: related_as
+  note: samādhi is a culminating absorption within classical yoga’s path.
+senses:
+- id: yoga.classical
+  label: Classical yoga
+  short: disciplined yoking of mind toward stillness and liberation
+  etymology: √yuj ‘yoke, join, harness’
+  traps:
+  - posture class / fitness brand
+  - union as romantic merger fantasy
+  - only physical practice
+  traditions:
+  - yoga
+  exemplars: []
+  body: |
+    Patañjali: yogaś citta-vṛtti-nirodhaḥ — yoga is the stilling of the turnings of mind. Āsana is one limb, not the definition.
+- id: yoga.shaiva
+  label: Śaiva yoga
+  short: methods that return contracted awareness to recognition
+  etymology: same √yuj; means include āṇava, śākta, śāmbhava upāyas
+  traps:
+  - technique collection without view
+  - forcing bliss states
+  traditions:
+  - kashmir_shaivism
+  exemplars: []

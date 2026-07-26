@@ -1,0 +1,32 @@
+id: jiva
+maturity: strong_draft
+scripts:
+  iast: jīva
+  devanagari: जीव
+aliases:
+- jiva
+- jeeva
+- soul
+- individual self
+traditions:
+- advaita_vedanta
+- kashmir_shaivism
+- hinduism
+related:
+- lemma_id: atman
+  relation: diverges_from
+- lemma_id: psyche
+  relation: rough_analogue
+senses:
+- id: jiva.vedanta
+  label: Individual living self
+  short: the embodied experiencer under limiting adjuncts
+  etymology: √jīv ‘to live’
+  traps:
+  - immortal soul-substance identical to Western psyche
+  - the true Self (ātman) already
+  traditions:
+  - advaita_vedanta
+  exemplars: []
+  body: |
+    Jīva is ātman as if limited by body-mind. The teaching aims to dissolve the ‘as if,’ not annihilate life.

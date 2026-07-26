@@ -1,0 +1,29 @@
+id: samadhi
+maturity: strong_draft
+scripts:
+  iast: samādhi
+  devanagari: समाधि
+aliases:
+- samadhi
+- absorption
+- enstasy
+traditions:
+- yoga
+- buddhism
+related:
+- lemma_id: yoga
+  relation: related_as
+senses:
+- id: samadhi.yoga
+  label: Meditative absorption
+  short: collected mind in which subject–object friction falls quiet
+  etymology: sam-ā-√dhā ‘put together, settle completely’
+  traps:
+  - trance as entertainment
+  - unconsciousness
+  - guaranteed enlightenment
+  traditions:
+  - yoga
+  exemplars: []
+  body: |
+    Classical yoga distinguishes grades (samprajñāta / asamprajñāta). Absorption is a means and fruit, not a synonym for liberation itself.

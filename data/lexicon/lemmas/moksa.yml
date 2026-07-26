@@ -1,0 +1,37 @@
+id: moksa
+maturity: strong_draft
+scripts:
+  iast: mokṣa
+  devanagari: मोक्ष
+aliases:
+- moksha
+- moksa
+- mukti
+- liberation
+traditions:
+- upanishads
+- advaita_vedanta
+- hinduism
+related:
+- lemma_id: nirvana
+  relation: rough_analogue
+  note: Both name release from bondage; mokṣa often framed as Self-realization, nirvāṇa as extinguishing
+    craving/clinging.
+- lemma_id: fana
+  relation: rough_analogue
+  note: Both involve passing away of a false center; fanāʾ is theistic-mystical annihilation in God.
+senses:
+- id: moksa.vedanta
+  label: Liberation
+  short: freedom from saṃsāra through knowledge of the Self
+  etymology: √muc ‘release, free’
+  traps:
+  - afterlife ticket
+  - escape from embodiment as hatred of world
+  - achievement badge
+  traditions:
+  - advaita_vedanta
+  - upanishads
+  exemplars: []
+  body: |
+    Mokṣa is less relocation than re-identification: the end of taking the limited self as ultimate.

@@ -1,0 +1,29 @@
+id: anuttara
+maturity: strong_draft
+scripts:
+  iast: anuttara
+  devanagari: अनुत्तर
+aliases:
+- anuttara
+- unsurpassed
+- absolute
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: pratyabhijna
+  relation: related_as
+- lemma_id: brahman
+  relation: rough_analogue
+senses:
+- id: anuttara.shaiva
+  label: The Unsurpassed
+  short: the highest; consciousness beyond which nothing stands
+  etymology: an- + uttara ‘not higher / nothing beyond’
+  traps:
+  - a spatial ‘above’ location
+  - a rank among deities
+  traditions:
+  - kashmir_shaivism
+  exemplars: []
+  body: |
+    Anuttara names the non-dual absolute of Trika: not a peak to climb toward as object, but what one always already is.

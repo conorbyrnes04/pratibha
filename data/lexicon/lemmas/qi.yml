@@ -1,0 +1,36 @@
+id: qi
+maturity: strong_draft
+scripts:
+  chinese: 氣
+  pinyin: qì
+aliases:
+- qi
+- chi
+- ch'i
+- ki
+- vital energy
+traditions:
+- chinese
+- daoism
+- confucianism
+related:
+- lemma_id: spanda
+  relation: rough_analogue
+- lemma_id: pneuma
+  relation: rough_analogue
+  note: Both can mean breath/vital air with cosmological reach; doctrines diverge.
+senses:
+- id: qi.chinese
+  label: Qì
+  short: psycho-physical breath-energy; the dynamic stuff of cosmos and body
+  etymology: 氣 ‘vapor, breath, air’
+  traps:
+  - New Age ‘energy’
+  - electricity metaphor
+  - only medical qi without cosmology
+  traditions:
+  - chinese
+  - daoism
+  exemplars: []
+  body: |
+    Qì spans weather, vitality, mood, and cosmogony. Contemplative reading tracks how refined or turbid qì shapes clarity of heart-mind (xīn).

@@ -1,0 +1,36 @@
+id: karma
+maturity: strong_draft
+scripts:
+  iast: karma
+  devanagari: कर्म
+aliases:
+- karma
+- kamma
+- action
+- deed
+traditions:
+- hinduism
+- buddhism
+- upanishads
+- yoga
+related:
+- lemma_id: samsara
+  relation: related_as
+- lemma_id: dharma
+  relation: related_as
+senses:
+- id: karma.indic
+  label: Action and its binding
+  short: intentional action and the formative consequences that shape experience
+  etymology: √kṛ ‘do, make’
+  traps:
+  - cosmic payback / moral scorekeeping
+  - fate that cancels agency
+  - ‘good vibes’ folklore
+  traditions:
+  - hinduism
+  - buddhism
+  - yoga
+  exemplars: []
+  body: |
+    Karma is not primarily superstition about accidents; it is a theory of how intention sediments character and world. Schools disagree on mechanism and on whether knowledge burns seed-karma.

@@ -1,0 +1,33 @@
+id: caitanya
+maturity: strong_draft
+scripts:
+  iast: caitanya
+  devanagari: चैतन्य
+aliases:
+- chaitanya
+- cetana
+- consciousness
+traditions:
+- kashmir_shaivism
+- advaita_vedanta
+related:
+- lemma_id: cit
+  relation: related_as
+  note: cit is the root noun ‘awareness’; caitanya often names living, operative consciousness.
+- lemma_id: prakasa
+  relation: related_as
+  note: prakāśa is consciousness as illuminating presence; caitanya the fact of being conscious.
+senses:
+- id: caitanya.shaiva
+  label: Living consciousness
+  short: awareness as the sole reality that knows and appears
+  etymology: from cetana / √cit ‘to notice, be aware’ + -ya abstract/relational
+  traps:
+  - brain-generated epiphenomenon
+  - a mood or alertness level
+  - mere sentience of organisms
+  traditions:
+  - kashmir_shaivism
+  exemplars: []
+  body: |
+    In Śaiva usage caitanya is not a property of a substance; it is the ground that can appear as knower, knowing, and known without ceasing to be one.

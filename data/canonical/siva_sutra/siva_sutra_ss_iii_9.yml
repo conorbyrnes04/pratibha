@@ -10,39 +10,36 @@ unit_type: sutra
 sanskrit_devanagari: स्वशक्त्यावस्थानं विश्वम्
 sanskrit_iast: sva-śakty-avasthānaṁ viśvam
 translation_literal: The universe is the resting of one’s own power.
-commentary: 'This aphorism condenses the Trika''s non-dual metaphysics into a single claim: the cosmos
-  is not a separate creation external to consciousness, but rather the self-reposing of Śakti—the dynamic,
-  creative power intrinsic to Awareness itself. The Sanskrit term śakti carries the sense of both potency
-  and actualization; it is not mere potential but the living force through which the absolute (Paramaśiva,
-  in Trika terminology) knows and manifests itself. To say the universe ''rests'' (viśrānti) in this power
-  is to assert that all apparent multiplicity—forms, beings, processes—constitutes the settled, crystallized
-  expression of a single conscious energy. This is not pantheism but rather a refined non-dualism: the
-  world is neither illusory nor ontologically separate; it is the power of awareness taking form while
-  remaining entirely within awareness''s own nature. The practitioner''s task is to reverse the habitual
-  perception that treats the world as alien or inert. Instead, one must recognize each phenomenon—each
-  sensation, thought, object—as a modulation of one''s own śakti. This recognition is not merely intellectual;
-  it requires a shift in direct perception (pratyabhijñā, recognition) such that the boundary between
-  subject and object, knower and known, dissolves into the seamless play of conscious energy. The aphorism
-  thus functions as both metaphysical statement and contemplative instruction: see the world not as something
-  to escape but as the very power through which you are aware, resting in its own fullness.
+commentary: 'This aphorism condenses the Trika''s non-dual metaphysics into a single claim: the cosmos is not a separate creation
+  external to consciousness, but rather the self-reposing of Śakti—the dynamic, creative power intrinsic to Awareness itself.
+  The Sanskrit term śakti carries the sense of both potency and actualization; it is not mere potential but the living force
+  through which the absolute (Paramaśiva, in Trika terminology) knows and manifests itself. To say the universe ''rests''
+  (viśrānti) in this power is to assert that all apparent multiplicity—forms, beings, processes—constitutes the settled, crystallized
+  expression of a single conscious energy. This is not pantheism but rather a refined non-dualism: the world is neither illusory
+  nor ontologically separate; it is the power of awareness taking form while remaining entirely within awareness''s own nature.
+  The practitioner''s task is to reverse the habitual perception that treats the world as alien or inert. Instead, one must
+  recognize each phenomenon—each sensation, thought, object—as a modulation of one''s own śakti. This recognition is not merely
+  intellectual; it requires a shift in direct perception (pratyabhijñā, recognition) such that the boundary between subject
+  and object, knower and known, dissolves into the seamless play of conscious energy. The aphorism thus functions as both
+  metaphysical statement and contemplative instruction: see the world not as something to escape but as the very power through
+  which you are aware, resting in its own fullness.
 
 
   Key Terms
 
 
-  **śakti** — The dynamic, conscious power or potency of awareness; in Trika, the feminine principle through
-  which the absolute manifests as the universe while remaining non-dual.
+  **śakti** — The dynamic, conscious power or potency of awareness; in Trika, the feminine principle through which the absolute
+  manifests as the universe while remaining non-dual.
 
-  **pratyabhijñā** — Recognition; the direct realization that the individual self and universal consciousness
-  are identical, central to Kashmir Śaivism''s path of liberation.
+  **pratyabhijñā** — Recognition; the direct realization that the individual self and universal consciousness are identical,
+  central to Kashmir Śaivism''s path of liberation.
 
-  **viśrānti** — Resting, reposing, settling; the state in which multiplicity is understood as the self-manifestation
-  of a single conscious principle.'
+  **viśrānti** — Resting, reposing, settling; the state in which multiplicity is understood as the self-manifestation of a
+  single conscious principle.'
 insight: The world is re-seen as stabilized energy.
-practice: 'Let your body settle into stillness for one breath, then feel the weight of your bones and
-  flesh as the universe resting—not as separate from you, but as your own power taking the form of sitting,
-  breathing, living. Carry this sensing into your next conversation or task: each action you take is the
-  universe at rest within itself.'
+practice: 'Let your body settle into stillness for one breath, then feel the weight of your bones and flesh as the universe
+  resting—not as separate from you, but as your own power taking the form of sitting, breathing, living. Carry this sensing
+  into your next conversation or task: each action you take is the universe at rest within itself.'
 upaya: ''
 themes:
 - awareness
@@ -64,11 +61,60 @@ provenance:
   section: Āṇavopāya
   original_id: SS_III.9
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS
-  edition, public domain).
-abhyasa: 'Let your body settle into stillness for one breath, then feel the weight of your bones and flesh
-  as the universe resting—not as separate from you, but as your own power taking the form of sitting,
-  breathing, living. Carry this sensing into your next conversation or task: each action you take is the
-  universe at rest within itself.'
+translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
+  domain).
+abhyasa: 'Let your body settle into stillness for one breath, then feel the weight of your bones and flesh as the universe
+  resting—not as separate from you, but as your own power taking the form of sitting, breathing, living. Carry this sensing
+  into your next conversation or task: each action you take is the universe at rest within itself.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 commentary_provenance: Study commentary authored from the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: स्वशक्त्यावस्थानं विश्वम्
+- kind: iast
+  label: IAST
+  body: sva-śakty-avasthānaṁ viśvam
+- kind: translation
+  label: Pratibha Translation
+  body: The universe is the resting of one’s own power.
+- kind: commentary
+  label: Pratibha Commentary
+  body: The world is re-seen as stabilized energy. Nothing stands outside awareness; everything stands _within_ its play.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śakti
+    definition: power
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  - term: viśva
+    definition: world
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 1
+    resonance: 'Both texts identify a singular power (Śakti/Consciousness) as the generative principle underlying the universe''s
+      three phases: manifestation, maintenance, and dissolution. The target sees the world as ''resting'' energy; Pratyabhijnahrdayam
+      sees Śakti as the active cause of these same cosmic operations.'
+    divergence: The Siva Sutra emphasizes the universe as a stabilized or resting state of power, whereas Pratyabhijnahrdayam
+      foregrounds Śakti's dynamic causality across cyclical cosmic functions.
+    passage_id: pratyabhijnahrdayam.phr_001
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: Both texts reframe perception of the world by recognizing a single principle (Śakti) operating throughout the
+      entire structure of experience. The target 're-sees' the universe as stabilized energy; Tantrasara teaches recognition
+      of Śakti 'in the entire architecture of your experience.'
+    divergence: The Siva Sutra presents this recognition as a metaphysical fact about the universe itself, while Śāktopāya
+      frames it as a methodological practice of learning to recognize what is already present in consciousness.
+    passage_id: tantrasara.ts_014
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 2
+    resonance: 'Both texts make a non-dual identification: the target collapses the distinction between the universe and one''s
+      own power; the Mandukya identifies all manifestation as Brahman. Each asserts that apparent multiplicity is fundamentally
+      one principle.'
+    divergence: The Siva Sutra emphasizes Śakti as dynamic power and resting energy, while the Mandukya emphasizes Brahman
+      as undifferentiated being, approaching non-duality through ontological rather than energetic language.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_003
+  layer_provenance: generated_grounded

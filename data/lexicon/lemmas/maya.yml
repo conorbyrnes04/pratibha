@@ -1,0 +1,45 @@
+id: maya
+maturity: strong_draft
+scripts:
+  iast: māyā
+  devanagari: माया
+aliases:
+- maya
+- illusion
+- maayaa
+traditions:
+- advaita_vedanta
+- upanishads
+- kashmir_shaivism
+related:
+- lemma_id: vikalpa
+  relation: related_as
+- lemma_id: brahman
+  relation: diverges_from
+  note: Māyā names the display/veiling relative to brahman’s unconditioned reality (Advaita framing).
+senses:
+- id: maya.advaita
+  label: Advaita māyā
+  short: the inexplicable power by which the One appears as many
+  etymology: √mā ‘measure, form’ → artifice, wonder-working power
+  traps:
+  - world is fake / hallucination only
+  - evil demiurge
+  - optical illusion metaphor taken literally
+  traditions:
+  - advaita_vedanta
+  exemplars: []
+  body: |
+    Māyā is anirvacanīya in classical Advaita: neither simply real nor simply unreal. The pedagogical point is to stop taking names-and-forms as absolute.
+- id: maya.shaiva
+  label: Śaiva māyā
+  short: limiting power that contracts universal consciousness into individuality
+  etymology: same stem; one of the kañcukas / limiting sheaths in the tattva map
+  traps:
+  - purely negative illusion
+  - something foreign to Śiva
+  traditions:
+  - kashmir_shaivism
+  exemplars: []
+  body: |
+    Here māyā is Śiva’s own power of self-limitation—real as display, binding when forgotten as play.

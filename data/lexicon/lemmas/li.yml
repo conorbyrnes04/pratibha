@@ -1,0 +1,34 @@
+id: li
+maturity: strong_draft
+scripts:
+  chinese: 理
+  pinyin: lǐ
+aliases:
+- li
+- principle
+- pattern
+traditions:
+- chinese
+- confucianism
+- neo_confucianism
+related:
+- lemma_id: dao
+  relation: related_as
+  note: In some Neo-Confucian maps lǐ is patterned principle; dào the encompassing Way.
+- lemma_id: logos
+  relation: rough_analogue
+senses:
+- id: li.principle
+  label: Pattern / principle
+  short: the intelligible pattern or principle in things and affairs
+  etymology: 理 ‘veins in jade; to order; principle’
+  traps:
+  - Platonic Form imported wholesale
+  - ritual li 禮 (different word)
+  - abstract law without things
+  traditions:
+  - neo_confucianism
+  - confucianism
+  exemplars: []
+  body: |
+    Do not confuse 理 lǐ (principle) with 禮 lǐ (ritual propriety). Zhongyong and later lixue elevate patterned coherence as cultivate-able insight.

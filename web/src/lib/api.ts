@@ -1,4 +1,5 @@
 import type { ChatOptions, EditorialMaturity, Source, SourcesPayload, VerseItem } from "@/lib/types";
+import type { Lemma, LemmaPassageRef, LexiconListItem, LexiconListResponse } from "@/lib/lexiconTypes";
 
 // Set NEXT_PUBLIC_API_BASE to the deployed backend URL (baked in at build time).
 // The localhost fallback only applies in development so a misconfigured
@@ -65,6 +66,44 @@ export async function getSources(): Promise<SourcesPayload | null> {
   const res = await fetch(`${API_BASE}/sources`, { cache: "no-store" });
   if (!res.ok) return null;
   return (await res.json()) as SourcesPayload;
+}
+
+/** Browse lexicon lemmas. Backend: `GET /lexicon?q=&tradition=&limit=`. */
+export async function getLexicon(opts: {
+  q?: string;
+  tradition?: string;
+  limit?: number;
+} = {}): Promise<LexiconListResponse> {
+  const params = new URLSearchParams();
+  if (opts.q?.trim()) params.set("q", opts.q.trim());
+  if (opts.tradition?.trim() && opts.tradition !== "all") params.set("tradition", opts.tradition.trim());
+  if (opts.limit != null) params.set("limit", String(opts.limit));
+  const qs = params.toString();
+  const res = await fetch(`${API_BASE}/lexicon${qs ? `?${qs}` : ""}`, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Failed to load lexicon (${res.status})`);
+  const data = await res.json();
+  const items = Array.isArray(data?.items) ? (data.items as LexiconListItem[]) : [];
+  const total = typeof data?.total === "number" ? data.total : items.length;
+  return { items, total };
+}
+
+/** Full lemma document. Backend: `GET /lexicon/{id}`. */
+export async function getLemma(id: string): Promise<Lemma | null> {
+  const res = await fetch(`${API_BASE}/lexicon/${encodeURIComponent(id)}`, { cache: "no-store" });
+  if (!res.ok) return null;
+  return (await res.json()) as Lemma;
+}
+
+/** Passages that use this lemma. Backend: `GET /lexicon/{id}/passages`. */
+export async function getLemmaPassages(id: string): Promise<LemmaPassageRef[]> {
+  const res = await fetch(`${API_BASE}/lexicon/${encodeURIComponent(id)}/passages`, {
+    cache: "no-store",
+  });
+  if (!res.ok) return [];
+  const data = await res.json();
+  if (Array.isArray(data)) return data as LemmaPassageRef[];
+  if (Array.isArray(data?.items)) return data.items as LemmaPassageRef[];
+  return [];
 }
 
 export async function askChat(

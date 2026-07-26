@@ -1,0 +1,52 @@
+id: atman
+maturity: strong_draft
+scripts:
+  iast: ātman
+  devanagari: आत्मन्
+aliases:
+- atma
+- ātmā
+- atmaa
+- self
+traditions:
+- upanishads
+- advaita_vedanta
+- kashmir_shaivism
+related:
+- lemma_id: brahman
+  relation: related_as
+  note: Not identical; Upaniṣadic teaching often equates them, but ātman names the subject-pole.
+- lemma_id: jiva
+  relation: diverges_from
+  note: jīva is the contracted, embodied experiencer; ātman is what remains when contraction is seen through.
+- lemma_id: psyche
+  relation: rough_analogue
+  note: Both name an interior principle of life/awareness; Greek psychē is more soul-as-animating-form
+    than irreducible subject.
+senses:
+- id: atman.upanishadic
+  label: Upaniṣadic Self
+  short: the irreducible subject; never an object of experience
+  etymology: √an ‘breathe’ → that which animates; later ‘self’ as innermost principle
+  traps:
+  - soul (too Christian/Cartesian)
+  - ego (too psychological)
+  - personality
+  traditions:
+  - upanishads
+  - advaita_vedanta
+  exemplars: []
+  body: |
+    In the early Upaniṣads, ātman is what remains when body, breath, mind, and even deep sleep are set aside as not-self. The pedagogical move is neti-neti: refuse every objectified candidate.
+- id: atman.shaiva
+  label: Śaiva Self as Śiva
+  short: consciousness recognizing itself as the sole agent of experience
+  etymology: same stem; reframed as Śiva’s own self-awareness
+  traps:
+  - a private soul trapped in a body
+  - an immortal substance separate from the world
+  traditions:
+  - kashmir_shaivism
+  exemplars: []
+  body: |
+    In non-dual Śaivism the Self is not a quiet witness behind manifestation but the vibrating, reflexive awareness that is manifestation. Recognition (pratyabhijñā) is ātman’s recovery of its authorship.

@@ -1,0 +1,34 @@
+id: sunya
+maturity: strong_draft
+scripts:
+  iast: śūnya
+  devanagari: शून्य
+aliases:
+- shunya
+- sunya
+- empty
+- void
+traditions:
+- kashmir_shaivism
+- mahayana
+related:
+- lemma_id: sunyata
+  relation: related_as
+  note: śūnya is the adjective/noun ‘empty/void’; śūnyatā is the doctrinal emptiness of intrinsic nature.
+- lemma_id: apophasis
+  relation: rough_analogue
+  note: Both clear away false determinations; Śaiva śūnya may still affirm plenitude of consciousness.
+senses:
+- id: sunya.shaiva
+  label: Void as open awareness
+  short: emptiness of limited content; the open field of consciousness
+  etymology: śūnya ‘empty, void, zero’
+  traps:
+  - nihilistic nothingness
+  - blank mental state as goal
+  - depression-as-emptiness
+  traditions:
+  - kashmir_shaivism
+  exemplars: []
+  body: |
+    In Śaiva contexts śūnya often names the sky-like openness in which forms arise—not the denial that awareness is real.

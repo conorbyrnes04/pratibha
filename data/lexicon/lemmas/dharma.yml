@@ -1,0 +1,51 @@
+id: dharma
+maturity: strong_draft
+scripts:
+  iast: dharma
+  devanagari: धर्म
+aliases:
+- dharma
+- dhamma
+- duty
+- law
+traditions:
+- upanishads
+- hinduism
+- theravada
+- mahayana
+related:
+- lemma_id: dao
+  relation: rough_analogue
+  note: Both can mean right order/way; dharma often carries duty and cosmic law, dào the nameless Way
+    of nature.
+- lemma_id: logos
+  relation: rough_analogue
+  note: Shared sense of intelligible order; logos more speech/reason, dharma more holding/rightness.
+senses:
+- id: dharma.brahmanical
+  label: Brahmanical dharma
+  short: that which upholds; right order, duty, and cosmic law
+  etymology: √dhṛ ‘to hold, support’
+  traps:
+  - religion as a brand label
+  - mere social convention
+  - legalism without cosmos
+  traditions:
+  - hinduism
+  - upanishads
+  exemplars: []
+  body: |
+    In epic and smṛti contexts dharma binds person to role and cosmos. In contemplative reading it can also mean the order that makes liberation intelligible.
+- id: dharma.buddhist
+  label: Buddhist dharma / dhamma
+  short: the teaching; also a momentary phenomenon
+  etymology: same √dhṛ; Pali dhamma
+  traps:
+  - ‘Buddhism’ as institutional label only
+  - thing-substance (‘a dharma’ as atom without doctrine)
+  traditions:
+  - theravada
+  - mahayana
+  exemplars: []
+  body: |
+    Two load-bearing uses: (1) the Buddha’s teaching and path; (2) dharmas as the fleeting factors of experience analyzed in Abhidharma.

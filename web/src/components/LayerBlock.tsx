@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { KeyTerm, PratibhaLayer, Resonance } from "@/lib/types";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -125,9 +126,21 @@ function renderLayerBody(
     return (
       <div className="mt-4 space-y-3">
         {items.filter(isKeyTerm).map((term) => (
-          <article key={term.term} className="citation-card p-3">
+          <article key={`${term.lemma_id || ""}:${term.term}`} className="citation-card p-3">
             <h3 className="text-lg text-amber-100">
-              <InlineMarkdown>{term.term}</InlineMarkdown>
+              {term.lemma_id ? (
+                <Link
+                  href={`/glossary/${encodeURIComponent(term.lemma_id)}`}
+                  className="inline-flex items-center gap-1 underline decoration-amber-200/30 underline-offset-2 transition hover:decoration-amber-200/70"
+                >
+                  <InlineMarkdown>{term.term}</InlineMarkdown>
+                  <span aria-hidden className="text-[10px] text-amber-200/60">
+                    →
+                  </span>
+                </Link>
+              ) : (
+                <InlineMarkdown>{term.term}</InlineMarkdown>
+              )}
             </h3>
             <p className="soft mt-1 text-sm leading-relaxed">
               <InlineMarkdown>{term.definition}</InlineMarkdown>

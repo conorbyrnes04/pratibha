@@ -1,0 +1,41 @@
+id: de
+maturity: strong_draft
+scripts:
+  chinese: 德
+  pinyin: dé
+aliases:
+- de
+- te
+- virtue
+- potency
+traditions:
+- daoism
+- chinese
+- confucianism
+related:
+- lemma_id: dao
+  relation: related_as
+senses:
+- id: de.daoist
+  label: Potency / virtue (Daoist)
+  short: the particular efficacy of a thing when it accords with the Way
+  etymology: 德 ‘virtue, power, accrued character’
+  traps:
+  - Victorian moralism
+  - charisma
+  - merit points
+  traditions:
+  - daoism
+  exemplars: []
+  body: |
+    Dé is not rule-keeping. In Daoist reading it is the soft power of unforced functioning—what a being ‘can’ when not contorted by artifice.
+- id: de.confucian
+  label: Moral charisma (Ruist)
+  short: exemplary virtue that transforms others without coercion
+  etymology: same graph; Ruist emphasis on cultivated moral power
+  traps:
+  - authoritarian prestige
+  - private piety without social effect
+  traditions:
+  - confucianism
+  exemplars: []

@@ -1,0 +1,34 @@
+id: apophasis
+maturity: strong_draft
+scripts:
+  greek: ἀπόφασις
+  latin: apophasis
+aliases:
+- apophasis
+- apophatic
+- via_negativa
+- negative theology
+traditions:
+- christian_mysticism
+- neoplatonism
+- pseudo_dionysius
+related:
+- lemma_id: sunya
+  relation: rough_analogue
+- lemma_id: gelassenheit
+  relation: related_as
+senses:
+- id: apophasis.christian
+  label: Negative theology
+  short: 'unsaying: approaching the divine by denying inadequate affirmations'
+  etymology: ἀπό + φάσις ‘speaking away / denial’
+  traps:
+  - atheism
+  - vague mysticism without discipline
+  - word-games only
+  traditions:
+  - christian_mysticism
+  - pseudo_dionysius
+  exemplars: []
+  body: |
+    Pseudo-Dionysius: God is beyond every name. Apophasis is not silence as void but the intellect’s disciplined failure before the beyond-being.

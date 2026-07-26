@@ -1,0 +1,34 @@
+id: brahman
+maturity: strong_draft
+scripts:
+  iast: brahman
+  devanagari: ब्रह्मन्
+aliases:
+- brahma
+- brahm
+- absolute
+traditions:
+- upanishads
+- advaita_vedanta
+related:
+- lemma_id: atman
+  relation: related_as
+  note: tat tvam asi equates them pedagogically; brahman names totality, ātman the subject-pole.
+- lemma_id: dao
+  relation: rough_analogue
+  note: Both name an ultimate order/ground; brahman is more explicitly sat-cit, dào more processual Way.
+senses:
+- id: brahman.upanishadic
+  label: Upaniṣadic Absolute
+  short: the unconditioned ground of being and knowing
+  etymology: √bṛh ‘to swell, expand’ → the vast; later the Absolute
+  traps:
+  - a creator god among gods
+  - an abstract philosophical ‘substance’ with no experiential claim
+  - Brahma the demiurge (brahmā)
+  traditions:
+  - upanishads
+  - advaita_vedanta
+  exemplars: []
+  body: |
+    Brahman is not an object among objects. Classical formulations stress sat (being), cit (awareness), and sometimes ānanda—not as properties glued on, but as what remains when finite determinations fall away.

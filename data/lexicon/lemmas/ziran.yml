@@ -1,0 +1,33 @@
+id: ziran
+maturity: strong_draft
+scripts:
+  chinese: 自然
+  pinyin: zìrán
+aliases:
+- ziran
+- tzu-jan
+- naturalness
+- self-so
+traditions:
+- daoism
+- chinese
+related:
+- lemma_id: wuwei
+  relation: related_as
+- lemma_id: physis
+  relation: rough_analogue
+  note: Both oppose forced artifice; physis is nature as growth-principle, zìrán ‘self-so’ spontaneity.
+senses:
+- id: ziran.daoist
+  label: Self-so
+  short: spontaneity; being so of itself without forced contrivance
+  etymology: 自 ‘self’ + 然 ‘so / thus’
+  traps:
+  - wilderness romanticism
+  - do-whatever impulse
+  - biological ‘natural’ as moral
+  traditions:
+  - daoism
+  exemplars: []
+  body: |
+    Zìrán is the grain of things. Practice aims less at inventing a self than at ceasing to sand against that grain.

@@ -1,0 +1,33 @@
+id: henosis
+maturity: strong_draft
+scripts:
+  greek: ἕνωσις
+  latin: henosis
+aliases:
+- henosis
+- union
+- oneness
+traditions:
+- neoplatonism
+- greek
+related:
+- lemma_id: theosis
+  relation: rough_analogue
+- lemma_id: fana
+  relation: rough_analogue
+- lemma_id: moksa
+  relation: rough_analogue
+senses:
+- id: henosis.plotinian
+  label: Unification
+  short: return to unity with the One beyond Intellect
+  etymology: ἕν ‘one’ + -ωσις process → making-one
+  traps:
+  - emotional merger fantasy
+  - erasure of ethics
+  - psychedelic peak as equivalent
+  traditions:
+  - neoplatonism
+  exemplars: []
+  body: |
+    Henosis is the end of the ascent: not more content in Nous, but contact with the One from which even Intellect proceeds.

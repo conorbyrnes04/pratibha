@@ -22,6 +22,8 @@ export type PratibhaLayerKind =
 export type KeyTerm = {
   term: string;
   definition: string;
+  lemma_id?: string;
+  sense_id?: string;
 };
 
 export type Resonance = {

@@ -12,6 +12,7 @@ const LINKS: Array<{ href: string; label: string; match?: string }> = [
   { href: "/chat", label: "Study Chat" },
   { href: "/random", label: "Oracle" },
   { href: "/journal", label: "Journal" },
+  { href: "/glossary", label: "Glossary" },
   { href: "/sources", label: "Sources" },
 ];
 

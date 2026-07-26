@@ -1,0 +1,32 @@
+id: theosis
+maturity: strong_draft
+scripts:
+  greek: θέωσις
+  latin: theosis
+aliases:
+- theosis
+- deification
+- divinization
+traditions:
+- christian_mysticism
+- eastern_orthodoxy
+related:
+- lemma_id: henosis
+  relation: rough_analogue
+- lemma_id: moksa
+  relation: rough_analogue
+senses:
+- id: theosis.christian
+  label: Deification
+  short: participation in divine life without identity of essence
+  etymology: θεός ‘god’ + -ωσις process
+  traps:
+  - becoming a god by nature
+  - self-apotheosis ego inflation
+  - erasing creaturehood
+  traditions:
+  - christian_mysticism
+  - eastern_orthodoxy
+  exemplars: []
+  body: |
+    Classical formula: God became human that the human might become god—by grace and participation (energies), not by collapsing the essence distinction.

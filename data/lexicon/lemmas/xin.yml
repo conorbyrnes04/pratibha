@@ -1,0 +1,37 @@
+id: xin
+maturity: strong_draft
+scripts:
+  chinese: 心
+  pinyin: xīn
+aliases:
+- xin
+- hsin
+- heart-mind
+- mind
+traditions:
+- chinese
+- daoism
+- confucianism
+- chan
+related:
+- lemma_id: cit
+  relation: rough_analogue
+  note: Xīn is heart-mind as organ of feeling-thought; cit is bare awareness. Overlap is partial.
+- lemma_id: psyche
+  relation: rough_analogue
+senses:
+- id: xin.chinese
+  label: Heart-mind
+  short: the seat of thought, feeling, and moral responsiveness
+  etymology: 心 ‘heart’ — not split from mind in classical Chinese
+  traps:
+  - brain-only cognition
+  - sentimentality
+  - Cartesian inner theater
+  traditions:
+  - chinese
+  - confucianism
+  - daoism
+  exemplars: []
+  body: |
+    Xīn is where Daoist emptying and Confucian cultivation both operate. Translating only as ‘mind’ loses the affective-moral center.

@@ -1,0 +1,32 @@
+id: vikalpa
+maturity: strong_draft
+scripts:
+  iast: vikalpa
+  devanagari: विकल्प
+aliases:
+- vikalpa
+- conceptualization
+- thought-construct
+traditions:
+- kashmir_shaivism
+- yoga
+- mahayana
+related:
+- lemma_id: maya
+  relation: related_as
+  note: 'vikalpa is a mechanism of maya’s differentiation: naming and dualizing.'
+senses:
+- id: vikalpa.shaiva
+  label: Thought-construct
+  short: differentiating ideation that splits seamless awareness into ‘this/that’
+  etymology: vi- + √kḷp ‘arrange, fashion’ → alternative construction
+  traps:
+  - all thinking is evil
+  - mere daydreaming
+  - logical fallacy only
+  traditions:
+  - kashmir_shaivism
+  - yoga
+  exemplars: []
+  body: |
+    Vikalpa can be binding when taken as ultimate, or used as a ladder (śuddha-vikalpa) when concepts point back to recognition. The issue is absolutizing the construct.
