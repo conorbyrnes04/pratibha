@@ -9,7 +9,7 @@ import { firstSentence } from "@/lib/textPreview";
 import { FilterSelect } from "@/components/FilterSelect";
 import { ThemeConstellation } from "@/components/ThemeConstellation";
 import { buildCollectionOptions, filterPassages, topThemes, uniqueCollections } from "@/lib/corpusFilters";
-import { displayCollectionName } from "@/lib/collectionLabels";
+import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
 import { collectionGlyph, unitGlyph } from "@/lib/glyphs";
 import { buildLibraryTomes, groupTomesByTradition, sortTomes, LIBRARY_SORT_OPTIONS, type LibrarySort, type LibraryTome } from "@/lib/libraryTomes";
@@ -89,7 +89,7 @@ function LibraryPageContent() {
         : all.filter((tome) =>
             items.some(
               (item) =>
-                (item.collection || "").trim() === tome.collection && (item.themes || []).includes(theme),
+                collectionsMatch(item.collection, tome.collection) && (item.themes || []).includes(theme),
             ),
           );
     return sortTomes(themed, librarySort);
@@ -136,7 +136,8 @@ function LibraryPageContent() {
 
   const headerArtPool =
     collection !== "all" ? collectionArtPool(collection) : generatedArtPool("bg-library");
-  const openTomeMeta = collection !== "all" ? tomes.find((t) => t.collection === collection) : null;
+  const openTomeMeta =
+    collection !== "all" ? tomes.find((t) => collectionsMatch(t.collection, collection)) : null;
 
   return (
     <main className="page-shell">

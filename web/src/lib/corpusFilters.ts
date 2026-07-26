@@ -1,6 +1,6 @@
 import type { VerseItem } from "./types";
 import { collectionIcon } from "./collectionIcons";
-import { displayCollectionName } from "./collectionLabels";
+import { collectionsMatch, displayCollectionName } from "./collectionLabels";
 import { displayPassageTitle, isPatanjaliYogaSutras, passageSortKey, sortPassagesForLibrary } from "./passageTitles";
 export type ThemeCount = { theme: string; count: number };
 
@@ -55,7 +55,7 @@ export function topThemes(items: VerseItem[], limit = 16): ThemeCount[] {
 export function countForCollection(items: VerseItem[], collection: string): number {
   const pool = preferStudyUnits(items);
   if (collection === "all") return pool.length;
-  return pool.filter((x) => (x.collection || "").trim() === collection).length;
+  return pool.filter((x) => collectionsMatch(x.collection, collection)).length;
 }
 
 export function buildCollectionOptions(items: VerseItem[], collections: string[]): CollectionFilterOption[] {
@@ -90,7 +90,7 @@ export function buildCompareCollectionOptions(
 export function passagesInCollection(items: VerseItem[], collection: string): VerseItem[] {
   const target = (collection || "").trim();
   if (!target) return [];
-  return preferStudyUnits(items).filter((item) => (item.collection || "").trim() === target);
+  return preferStudyUnits(items).filter((item) => collectionsMatch(item.collection, target));
 }
 
 export function sortComparePassages(items: VerseItem[], collection: string): VerseItem[] {
@@ -113,7 +113,7 @@ export function filterPassages(
   const collection = opts.collection || "all";
   const theme = opts.theme || "all";
   return preferStudyUnits(items).filter((x) => {
-    if (collection !== "all" && (x.collection || "").trim() !== collection) return false;
+    if (collection !== "all" && !collectionsMatch(x.collection, collection)) return false;
     if (theme !== "all" && !(x.themes || []).includes(theme)) return false;
     if (!needle) return true;
     const blob = opts.blob ? opts.blob(x) : [x.title, x.sutra_id, x.collection].join(" ");

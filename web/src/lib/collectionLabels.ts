@@ -48,3 +48,25 @@ export function displayCollectionName(name?: string): string {
   if (!raw) return "";
   return LOOKUP.get(norm(raw)) ?? raw;
 }
+
+/** Fold for equality: strip diacritics and non-alphanumerics. */
+function foldKey(s: string): string {
+  return s
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
+}
+
+/**
+ * True when two collection labels refer to the same text.
+ * Handles display vs corpus mismatches (e.g. Yoginīhṛdaya vs Yoginihrdaya).
+ */
+export function collectionsMatch(a?: string, b?: string): boolean {
+  const left = (a || "").trim();
+  const right = (b || "").trim();
+  if (!left || !right) return false;
+  if (left === right) return true;
+  if (displayCollectionName(left) === displayCollectionName(right)) return true;
+  return foldKey(left) === foldKey(right);
+}
