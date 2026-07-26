@@ -4,7 +4,7 @@ import "./globals.css";
 import { AuthGate } from "@/components/AuthGate";
 import { AuthMenu } from "@/components/AuthMenu";
 import { AuthProvider } from "@/components/AuthProvider";
-import { Glyph } from "@/components/Glyph";
+import { BrandMark } from "@/components/BrandMark";
 import { SiteNav } from "@/components/SiteNav";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pratibha.agniagama.com";
@@ -52,7 +52,10 @@ export default function RootLayout({
           <header className="sticky top-0 z-40 border-b border-[rgb(240_201_121_/_0.12)] bg-[#090912]/82 backdrop-blur-xl">
             <nav className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
               <Link href="/" className="group flex items-center gap-3 leading-none">
-                <Glyph name="lotus" size="md" className="glyph--brand opacity-90 transition group-hover:opacity-100" label="Pratibha" />
+                <BrandMark
+                  size="md"
+                  className="opacity-95 transition group-hover:opacity-100 group-hover:brightness-110"
+                />
                 <span>
                   <span className="block text-2xl font-semibold tracking-[-0.04em] text-amber-100">Pratibha</span>
                   <span className="mt-1 block font-sans text-xs uppercase tracking-[0.22em] text-stone-300 group-hover:text-amber-200">
