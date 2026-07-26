@@ -10,17 +10,16 @@ unit_type: sutra
 sanskrit_devanagari: विद्या अविद्या
 sanskrit_iast: vidyā avidyā
 translation_literal: Knowledge and ignorance.
-commentary: 'At this level, the distinction must be named plainly. Some ways of knowing clarify; others
-  obscure. The practitioner learns discernment not as judgment, but as orientation.
+commentary: 'At this level, the distinction must be named plainly. Some ways of knowing clarify; others obscure. The practitioner
+  learns discernment not as judgment, but as orientation.
 
 
-  Ignorance here is not the absence of information, but the habit of misplacing attention. Knowledge is
-  whatever returns awareness toward its source, even provisionally.'
+  Ignorance here is not the absence of information, but the habit of misplacing attention. Knowledge is whatever returns awareness
+  toward its source, even provisionally.'
 insight: At this level, the distinction must be named plainly.
-practice: 'Throughout today, pause the moment you notice yourself reaching for information—a news headline,
-  a text, a thought about someone else—and ask: does this pull my attention outward or return it inward?
-  Then choose one action: scroll, or breathe and notice what drew you. Repeat this discernment without
-  judgment each time the habit arises.'
+practice: 'Throughout today, pause the moment you notice yourself reaching for information—a news headline, a text, a thought
+  about someone else—and ask: does this pull my attention outward or return it inward? Then choose one action: scroll, or
+  breathe and notice what drew you. Repeat this discernment without judgment each time the habit arises.'
 upaya: ''
 themes:
 - attention
@@ -53,52 +52,49 @@ pratibha_layers:
   body: Knowledge and ignorance.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'At this level, the distinction must be named plainly. Some ways of knowing clarify; others obscure.
-    The practitioner learns discernment not as judgment, but as orientation.
+  body: 'At this level, the distinction must be named plainly. Some ways of knowing clarify; others obscure. The practitioner
+    learns discernment not as judgment, but as orientation.
 
 
-    Ignorance here is not the absence of information, but the habit of misplacing attention. Knowledge
-    is whatever returns awareness toward its source, even provisionally.'
+    Ignorance here is not the absence of information, but the habit of misplacing attention. Knowledge is whatever returns
+    awareness toward its source, even provisionally.'
 - kind: key_terms
   label: Key Terms
   items:
   - term: vidyā
     definition: clarifying knowledge
+    lemma_id: vidya
+    sense_id: vidya.shaiva
   - term: avidyā
     definition: obscuring habit
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Svetasvatara Upanishad — Knowledge and Ignorance in the Imperishable
-    resonance: Both texts posit knowledge and ignorance as a fundamental binary pair that must be explicitly
-      named and distinguished. The Siva Sutra's plain naming of the distinction mirrors the Svetasvatara's
-      declaration that these two are 'hidden' in Brahman—both treat the knowledge/ignorance dyad as the
-      primary structural problem requiring articulation.
-    divergence: The Svetasvatara embeds the pair within an ontological substrate (the imperishable Brahman),
-      whereas the Siva Sutra treats the distinction as an epistemological threshold to be recognized through
-      attention, without grounding it in a transcendent absolute.
+    resonance: Both texts posit knowledge and ignorance as a fundamental binary pair that must be explicitly named and distinguished.
+      The Siva Sutra's plain naming of the distinction mirrors the Svetasvatara's declaration that these two are 'hidden'
+      in Brahman—both treat the knowledge/ignorance dyad as the primary structural problem requiring articulation.
+    divergence: The Svetasvatara embeds the pair within an ontological substrate (the imperishable Brahman), whereas the Siva
+      Sutra treats the distinction as an epistemological threshold to be recognized through attention, without grounding it
+      in a transcendent absolute.
     passage_id: svetasvatara_upanishad.svu_013
   - citation: Tao Te Ching — The Paradox of Knowing
-    resonance: 'Both texts establish a precise distinction between authentic and false knowledge by inverting
-      conventional expectation: the Siva Sutra names knowledge and ignorance plainly as a necessary move,
-      while the Tao Te Ching identifies the disease of mistaking ignorance for knowledge and true knowledge
-      for ignorance—both require a reversal of ordinary perception to see the actual distinction.'
-    divergence: The Tao Te Ching frames the distinction as a paradox of knowing (a logical inversion),
-      whereas the Siva Sutra treats it as a direct phenomenological naming requiring heightened attention
-      rather than conceptual paradox.
+    resonance: 'Both texts establish a precise distinction between authentic and false knowledge by inverting conventional
+      expectation: the Siva Sutra names knowledge and ignorance plainly as a necessary move, while the Tao Te Ching identifies
+      the disease of mistaking ignorance for knowledge and true knowledge for ignorance—both require a reversal of ordinary
+      perception to see the actual distinction.'
+    divergence: The Tao Te Ching frames the distinction as a paradox of knowing (a logical inversion), whereas the Siva Sutra
+      treats it as a direct phenomenological naming requiring heightened attention rather than conceptual paradox.
     passage_id: tao_te_ching.ttc_md_073
   - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
-    resonance: 'Both identify ignorance as a failure of attention or perception rather than an absence
-      of knowledge: the soul''s characteristic act continues unperceived because attention is misdirected
-      to sense-experiences, paralleling how the Siva Sutra''s plain naming requires redirected attention
-      to distinguish knowledge from ignorance.'
-    divergence: Plotinus locates the problem in the soul's divided attention between intelligible and
-      sensible realms, whereas the Siva Sutra frames it as a direct epistemological distinction that attention
-      itself must clarify.
+    resonance: 'Both identify ignorance as a failure of attention or perception rather than an absence of knowledge: the soul''s
+      characteristic act continues unperceived because attention is misdirected to sense-experiences, paralleling how the
+      Siva Sutra''s plain naming requires redirected attention to distinguish knowledge from ignorance.'
+    divergence: Plotinus locates the problem in the soul's divided attention between intelligible and sensible realms, whereas
+      the Siva Sutra frames it as a direct epistemological distinction that attention itself must clarify.
     passage_id: plotinus_enneads.enn_v_1_12
   layer_provenance: generated_grounded
 appendixes: []
@@ -108,10 +104,9 @@ provenance:
   section: Āṇavopāya
   original_id: SS_III.4
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS
-  edition, public domain).
-abhyasa: 'Throughout today, pause the moment you notice yourself reaching for information—a news headline,
-  a text, a thought about someone else—and ask: does this pull my attention outward or return it inward?
-  Then choose one action: scroll, or breathe and notice what drew you. Repeat this discernment without
-  judgment each time the habit arises.'
+translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
+  domain).
+abhyasa: 'Throughout today, pause the moment you notice yourself reaching for information—a news headline, a text, a thought
+  about someone else—and ask: does this pull my attention outward or return it inward? Then choose one action: scroll, or
+  breathe and notice what drew you. Repeat this discernment without judgment each time the habit arises.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.

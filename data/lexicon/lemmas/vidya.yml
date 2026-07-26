@@ -1,0 +1,43 @@
+id: vidya
+maturity: strong_draft
+scripts:
+  iast: vidyā
+  devanagari: विद्या
+aliases:
+- vidya
+- vidyaa
+- wisdom
+- knowing
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: jnana
+  relation: related_as
+  note: Overlap is real; in Trika, vidyā often stresses continuity/embodiment of knowing, while jñāna can name binding articulation.
+- lemma_id: pratyabhijna
+  relation: related_as
+  note: Stable vidyā culminates as recognition; śuddha-vidyā dawns as undivided knowing of Self as Śiva.
+- lemma_id: maya
+  relation: diverges_from
+  note: As kañcuka, limited vidyā is a sheath of partial knowledge under māyā; liberative vidyā returns attention to source.
+- lemma_id: vikalpa
+  relation: related_as
+  note: Embodied vidyā reorganizes how constructs inhabit the body; undigested doctrine remains inert vikalpa.
+senses:
+- id: vidya.shaiva
+  label: Embodied / clarifying knowing (Śaiva)
+  short: knowing that becomes bodily presence and returns awareness to its source
+  etymology: √vid ‘know, find’ → knowledge, lore; in Trika, knowing as lived continuity, not data
+  traps:
+  - generic ‘knowledge’ mush interchangeable with jñāna everywhere
+  - academic mastery of doctrine without embodiment
+  - only the kañcuka of partial knowledge (ignoring śuddha-vidyā)
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_ii_3
+  - siva_sutra.ss_ii_5
+  - siva_sutra.ss_iii_4
+  body: |
+    In Śiva Sūtra II, vidyā becomes śarīra-sattā—knowledge as embodied presence—and then flowers as natural discipline.
+    At III.4, vidyā/avidyā marks orientation: knowledge is whatever returns attention toward its source; ignorance is the habit of misplacing it.

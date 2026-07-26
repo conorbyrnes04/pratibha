@@ -1,0 +1,50 @@
+id: wu_hua
+maturity: strong_draft
+scripts:
+  chinese: 物化
+  pinyin: wù huà
+aliases:
+- wu_hua
+- wuhua
+- wu hua
+- wù huà
+- 物化
+- transformation of things
+- thing-transformation
+traditions:
+- daoism
+- chinese
+- zhuangzi
+related:
+- lemma_id: qi_wu
+  relation: related_as
+  note: Equalizing standpoints prepares the ground; wù huà is the processual shift of identity-forms across conditions.
+- lemma_id: ziran
+  relation: related_as
+  note: Transformation of things is how the self-so moves—forms change without a forced fixed owner.
+- lemma_id: dao
+  relation: related_as
+  note: The Way’s course shows as things transforming into one another rather than as static substances.
+- lemma_id: physis
+  relation: rough_analogue
+  note: Both name becoming rather than static being; physis is Greek growth-principle, wù huà Zhuangzian identity-shift.
+- lemma_id: samsara
+  relation: diverges_from
+  note: Do not read wù huà as karmic transmigration doctrine; Zhuangzi’s term is broader processual transformation.
+senses:
+- id: wu_hua.zhuangzi
+  label: Transformation of things (Zhuangzi)
+  short: shifts of identity-form across conditions without a fixed core self as owner
+  etymology: 物 ‘thing, being’ + 化 ‘transform, change’
+  traps:
+  - metempsychosis / soul transmigration doctrine
+  - mere costume-change metaphor with no epistemic bite
+  - biological metamorphosis only
+  traditions:
+  - daoism
+  - zhuangzi
+  exemplars:
+  - the_book_of_chuang_tzu.ctz_002
+  body: |
+    In the butterfly passage and its neighbors, wù huà names how ‘I’ and ‘other’ reorganize across waking and dream without
+    proving a permanent owner-self. ‘Metempsychosis’ over-psychologizes; the claim is processual, not a soul-travel creed.

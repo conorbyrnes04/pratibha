@@ -10,18 +10,16 @@ unit_type: sutra
 sanskrit_devanagari: ज्ञानं बन्धः
 sanskrit_iast: jñānaṁ bandhaḥ
 translation_literal: Knowledge is bondage.
-commentary: 'The refrain returns, but its meaning shifts. In Āṇavopāya, knowledge binds not because it
-  is articulated, but because it is habitually misused. Concepts are clung to for security. Understanding
-  replaces presence.
+commentary: 'The refrain returns, but its meaning shifts. In Āṇavopāya, knowledge binds not because it is articulated, but
+  because it is habitually misused. Concepts are clung to for security. Understanding replaces presence.
 
 
-  Here the practitioner must learn restraint. Knowing is not abolished, but loosened. What binds is not
-  information, but identification with it.'
+  Here the practitioner must learn restraint. Knowing is not abolished, but loosened. What binds is not information, but identification
+  with it.'
 insight: The refrain returns, but its meaning shifts.
-practice: When you reach for an explanation or certainty about something today—a person's motives, an
-  outcome, your own worth—pause and feel the grip in your chest or jaw, then deliberately soften your
-  hold on that thought without replacing it with another. Let the not-knowing sit there, undefended, for
-  three breaths.
+practice: When you reach for an explanation or certainty about something today—a person's motives, an outcome, your own worth—pause
+  and feel the grip in your chest or jaw, then deliberately soften your hold on that thought without replacing it with another.
+  Let the not-knowing sit there, undefended, for three breaths.
 upaya: ''
 themes:
 - knowledge
@@ -48,53 +46,48 @@ pratibha_layers:
   body: Knowledge is bondage.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The refrain returns, but its meaning shifts. In Āṇavopāya, knowledge binds not because it is
-    articulated, but because it is habitually misused. Concepts are clung to for security. Understanding
-    replaces presence.
+  body: 'The refrain returns, but its meaning shifts. In Āṇavopāya, knowledge binds not because it is articulated, but because
+    it is habitually misused. Concepts are clung to for security. Understanding replaces presence.
 
 
-    Here the practitioner must learn restraint. Knowing is not abolished, but loosened. What binds is
-    not information, but identification with it.'
+    Here the practitioner must learn restraint. Knowing is not abolished, but loosened. What binds is not information, but
+    identification with it.'
 - kind: key_terms
   label: Key Terms
   items:
   - term: jñāna
     definition: conceptual knowing
+    lemma_id: jnana
   - term: bandha
     definition: bondage through fixation
+    lemma_id: bandha
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Know Yourself (Ibn Arabi / Balyani) — Pearl #26'
-    resonance: 'Both texts invert the conventional understanding of knowledge as liberation: Ibn Arabi
-      identifies a false knowledge (one dependent on annihilation of existence) as error, while the Siva
-      Sutra names knowledge itself as bondage—each tradition diagnoses a corrupted or incomplete epistemic
-      state as the actual obstacle.'
-    divergence: Ibn Arabi locates the error in a specific metaphysical misconception about God's relation
-      to existence; the Siva Sutra treats knowledge categorically as bondage, suggesting the problem is
-      structural to discursive knowing itself rather than to particular doctrinal content.
+    resonance: 'Both texts invert the conventional understanding of knowledge as liberation: Ibn Arabi identifies a false
+      knowledge (one dependent on annihilation of existence) as error, while the Siva Sutra names knowledge itself as bondage—each
+      tradition diagnoses a corrupted or incomplete epistemic state as the actual obstacle.'
+    divergence: Ibn Arabi locates the error in a specific metaphysical misconception about God's relation to existence; the
+      Siva Sutra treats knowledge categorically as bondage, suggesting the problem is structural to discursive knowing itself
+      rather than to particular doctrinal content.
     passage_id: know_yourself_ibn_arabi_balyani.kys_p026
   - citation: The Book of Chuang Tzu — chapter 22
-    resonance: 'Both texts stage knowledge as a seeker confronting its own inadequacy: Chuang Tzu''s Knowledge
-      asks how Tao can be known through thought and cognition, while the Siva Sutra''s refrain suggests
-      that the very faculty of knowing may perpetuate bondage—each questions whether the instrument of
-      knowledge can access its own ground.'
-    divergence: Chuang Tzu's dialogue opens toward a non-conceptual answer (Do-nothing Say-nothing's response);
-      the Siva Sutra asserts knowledge as bondage without offering a redemptive alternative, emphasizing
-      paradox over resolution.
+    resonance: 'Both texts stage knowledge as a seeker confronting its own inadequacy: Chuang Tzu''s Knowledge asks how Tao
+      can be known through thought and cognition, while the Siva Sutra''s refrain suggests that the very faculty of knowing
+      may perpetuate bondage—each questions whether the instrument of knowledge can access its own ground.'
+    divergence: Chuang Tzu's dialogue opens toward a non-conceptual answer (Do-nothing Say-nothing's response); the Siva Sutra
+      asserts knowledge as bondage without offering a redemptive alternative, emphasizing paradox over resolution.
     passage_id: the_book_of_chuang_tzu.ctz_022
   - citation: 'Vijnana Bhairava — Yukti #58'
-    resonance: 'Both texts identify limited, dualistic knowledge as a form of bondage or constraint: the
-      Vijnana Bhairava names ''limited knowledge producing duality'' as one state to be recognized and
-      transcended, while the Siva Sutra declares knowledge itself bondage—each diagnoses ordinary cognition
-      as a binding condition.'
-    divergence: The Vijnana Bhairava offers a yogic method of recognition and transformation (becoming
-      one with Bhairava); the Siva Sutra presents the paradox without prescribing a practice, leaving
-      the reversal of meaning suspended.
+    resonance: 'Both texts identify limited, dualistic knowledge as a form of bondage or constraint: the Vijnana Bhairava
+      names ''limited knowledge producing duality'' as one state to be recognized and transcended, while the Siva Sutra declares
+      knowledge itself bondage—each diagnoses ordinary cognition as a binding condition.'
+    divergence: The Vijnana Bhairava offers a yogic method of recognition and transformation (becoming one with Bhairava);
+      the Siva Sutra presents the paradox without prescribing a practice, leaving the reversal of meaning suspended.
     passage_id: vijnana_bhairava.yukti_058
   layer_provenance: generated_grounded
 appendixes: []
@@ -104,9 +97,9 @@ provenance:
   section: Āṇavopāya
   original_id: SS_III.2
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS
-  edition, public domain).
-abhyasa: When you reach for an explanation or certainty about something today—a person's motives, an outcome,
-  your own worth—pause and feel the grip in your chest or jaw, then deliberately soften your hold on that
-  thought without replacing it with another. Let the not-knowing sit there, undefended, for three breaths.
+translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
+  domain).
+abhyasa: When you reach for an explanation or certainty about something today—a person's motives, an outcome, your own worth—pause
+  and feel the grip in your chest or jaw, then deliberately soften your hold on that thought without replacing it with another.
+  Let the not-knowing sit there, undefended, for three breaths.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.

@@ -1,0 +1,47 @@
+id: siddhi
+maturity: strong_draft
+scripts:
+  iast: siddhi
+  devanagari: सिद्धि
+aliases:
+- siddhi
+- siddhis
+- accomplishment
+- fulfillment
+- attainment
+traditions:
+- kashmir_shaivism
+- yoga
+related:
+- lemma_id: sakti
+  relation: related_as
+  note: Cosmic siddhi is śakti’s free accomplishment of appearing, sustaining, and withdrawing the world.
+- lemma_id: pratyabhijna
+  relation: related_as
+  note: Recognition sees that the universe’s siddhi is one’s own freedom appearing—not a trophy earned by the ego.
+- lemma_id: cit
+  relation: related_as
+  note: citiḥ … viśva-siddhi-hetuḥ—consciousness is the cause of the universe’s accomplishment.
+- lemma_id: yoga
+  relation: related_as
+  note: Yogic literature often lists siddhis as powers; Trika primary sense is fulfillment of process, with powers as side-effect risk.
+senses:
+- id: siddhi.shaiva
+  label: Fulfillment / cosmic accomplishment (Śaiva)
+  short: the free accomplishment of manifestation—and of practice ripening—not a catalog of magic powers
+  etymology: √sidh ‘succeed, accomplish’ → fulfillment, perfection, successful completion
+  traps:
+  - popular ‘supernormal powers’ as the main meaning
+  - ego trophies / occult flex
+  - equating siddhi with mere worldly success
+  - ignoring viśva-siddhi as the universe’s own coming-to-be in citi
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - pratyabhijnahrdayam.phr_001
+  - siva_sutra.ss_i_21
+  - siva_sutra.ss_ii_11
+  body: |
+    In Pratyabhijñāhṛdayam 1, viśva-siddhi is the universe’s accomplishment through free consciousness—sṛṣṭi, sthiti, saṁhāra
+    as citi’s own process. In the Sūtras, siddhi also names sovereignty and ripening through kāla-yajña. Powers may appear;
+    taking them as the point is the classic trap.

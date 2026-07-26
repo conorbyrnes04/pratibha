@@ -1,0 +1,61 @@
+id: jnana
+maturity: strong_draft
+scripts:
+  iast: jñāna
+  devanagari: ज्ञान
+aliases:
+- jnana
+- jñana
+- gyaan
+- gyana
+- knowledge
+traditions:
+- kashmir_shaivism
+- advaita_vedanta
+- upanishads
+related:
+- lemma_id: cit
+  relation: related_as
+  note: cit is knowingness itself; jñāna names a mode or act of knowing that can liberate or bind.
+- lemma_id: pratyabhijna
+  relation: related_as
+  note: Pratyabhijñā is recognition of authorship; liberative jñāna is close but not identical terminology.
+- lemma_id: vikalpa
+  relation: related_as
+  note: Articulated jñāna often rides on vikalpa; when the construct hardens into ‘my knowledge,’ bondage follows.
+- lemma_id: moksa
+  relation: related_as
+  note: In Advaita streams, jñāna is the means (or identity) of mokṣa; Śaiva texts warn that the wrong jñāna binds.
+senses:
+- id: jnana.shaiva
+  label: Articulated knowing (Śaiva)
+  short: structured knowing-about that contracts free awareness when taken as final
+  etymology: √jñā ‘know, recognize’ → knowledge as determinate cognition
+  traps:
+  - all knowledge is bondage (anti-intellectual nihilism)
+  - equating jñāna with cit / caitanya
+  - spiritual information-hoarding as awakening
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_2
+  - siva_sutra.ss_ii_9
+  body: |
+    In Śiva Sūtra I.2, jñānaṁ bandhaḥ names knowing that has hardened into possessed content—this/that, insight as trophy.
+    Later (II.9) the same stem can nourish when metabolized into embodied presence. The issue is not knowing, but fixation.
+- id: jnana.advaita
+  label: Liberative recognition (Aṣṭāvakra / Advaita)
+  short: direct recognition of the Self that is itself liberation, not a stepping-stone
+  etymology: same √jñā; framed as collapse of the false knower rather than acquisition of content
+  traps:
+  - book-learning about non-duality
+  - a future attainment the ego will own
+  - confusing jñāna with information or IQ
+  traditions:
+  - advaita_vedanta
+  - upanishads
+  exemplars:
+  - astavakra_gita.asg_1_1
+  body: |
+    Janaka’s opening question assumes jñāna is something to obtain. Aṣṭāvakra’s teaching collapses that grammar: liberative
+    knowing is recognition that the Self was never bound—not a new faculty bolted onto the seeker.

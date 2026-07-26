@@ -1,0 +1,58 @@
+id: pyr
+maturity: strong_draft
+scripts:
+  greek: πῦρ
+  latin: pyr
+aliases:
+- pyr
+- πυρ
+- pur
+- cosmic fire
+- fire
+- pyros
+- pyr / cosmic fire
+- pyr/cosmic fire
+- cosmic_fire
+traditions:
+- greek
+- heraclitus
+related:
+- lemma_id: logos
+  relation: related_as
+  note: Fire’s exchanges proceed by measure; logos is the intelligible articulation of that measured order.
+- lemma_id: physis
+  relation: related_as
+  note: πῦρ names the cosmos’s living process of appearing/transforming; physis is nature as growth-principle.
+- lemma_id: harmonie
+  relation: related_as
+  note: Measured becoming of fire is tensioned order, not bland stasis—kin to Heraclitean harmoniē.
+- lemma_id: pneuma
+  relation: rough_analogue
+  note: Later Stoic pneuma is tensioned breath-fire; Heraclitean πῦρ is more the world-process itself
+    than psychic continuum.
+- lemma_id: spanda
+  relation: rough_analogue
+  note: Both refuse a static Absolute; spanda is consciousness-throb, πῦρ measured cosmic transformation.
+senses:
+- id: pyr.heraclitean
+  label: Cosmic fire (Heraclitus)
+  short: world-ruling fire as measured transformation, not mythic flame alone
+  etymology: πῦρ ‘fire’; in Heraclitus, πυρὸς τροπαί—turnings/exchanges of fire under proportion
+  traps:
+  - literal campfire or elemental chemistry only
+  - chaotic flux without measure (metron)
+  - mere metaphor with no cosmological claim
+  traditions:
+  - greek
+  - heraclitus
+  exemplars:
+  - heraclitus_fragments.hfr_p021
+  - heraclitus_fragments.hfr_p022
+  - heraclitus_fragments.hfr_p024
+  - heraclitus_fragments.hfr_p025
+  body: 'Heraclitean fire is a process-name: sea, earth, and lightning-flash are fire’s own turnings under
+    ratio.
+
+    Order and change are one act—the cosmos maintains its arithmetic even as forms transmute.
+
+    '

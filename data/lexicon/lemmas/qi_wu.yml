@@ -1,0 +1,52 @@
+id: qi_wu
+maturity: strong_draft
+scripts:
+  chinese: 齊物
+  pinyin: qí wù
+aliases:
+- qi_wu
+- qiwu
+- qi wu
+- qí wù
+- 齊物
+- equalizing things
+- identity of contraries
+traditions:
+- daoism
+- chinese
+- zhuangzi
+related:
+- lemma_id: dao
+  relation: related_as
+  note: Equalizing things loosens standpoint absolutism so the nameless course can show through.
+- lemma_id: ziran
+  relation: related_as
+  note: Once contraries are un-privileged, things can be self-so rather than forced into a winner’s frame.
+- lemma_id: wuwei
+  relation: related_as
+  note: 'Epistemic leveling and non-interference travel together: stop forcing right/wrong from one seat of judgment.'
+- lemma_id: xin
+  relation: related_as
+  note: The mind that wars over right/wrong is what qí wù de-centers.
+- lemma_id: sunyata
+  relation: rough_analogue
+  note: Both undercut intrinsic privilege of fixed natures/standpoints; Madhyamaka emptiness is more ontological-analytic.
+senses:
+- id: qi_wu.zhuangzi
+  label: Equalizing things (Zhuangzi)
+  short: leveling standpoint claims so this/that and waking/dreaming lose absolute privilege
+  etymology: 齊 ‘level, make even’ + 物 ‘things, beings’
+  traps:
+  - abstract logical identity of opposites only
+  - moral relativism as ‘anything goes’
+  - translating as mere ‘harmony’ or bland agreement
+  traditions:
+  - daoism
+  - zhuangzi
+  exemplars:
+  - the_book_of_chuang_tzu.ctz_002
+  - the_book_of_chuang_tzu.ctz_010
+  - the_book_of_chuang_tzu.ctz_011
+  body: |
+    Zhuangzi’s qí wù is experiential equalization of perspectives, not a theorem that A = not-A.
+    Default glosses like ‘identity of contraries’ can sound abstract; the move is lived de-privileging of rigid this/that.

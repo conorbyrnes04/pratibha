@@ -26,7 +26,10 @@ senses:
   - merit points
   traditions:
   - daoism
-  exemplars: []
+  exemplars:
+  - tao_te_ching.ttc_md_046
+  - tao_te_ching.ttc_md_056
+  - the_book_of_chuang_tzu.ctz_005
   body: |
     Dé is not rule-keeping. In Daoist reading it is the soft power of unforced functioning—what a being ‘can’ when not contorted by artifice.
 - id: de.confucian
@@ -38,4 +41,8 @@ senses:
   - private piety without social effect
   traditions:
   - confucianism
-  exemplars: []
+  exemplars:
+  - confucius_analects.an_05_11
+  - confucius_analects.an_07_06
+  - confucius_analects.an_07_29
+  - zhongyong.zy_14

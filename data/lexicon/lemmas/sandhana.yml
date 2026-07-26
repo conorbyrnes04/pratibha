@@ -1,0 +1,48 @@
+id: sandhana
+maturity: strong_draft
+scripts:
+  iast: sandhāna
+  devanagari: सन्धान
+aliases:
+- sandhana
+- sandhaana
+- sandhan
+- alignment
+- joining
+- convergence
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: sakti
+  relation: related_as
+  note: śakticakra-sandhāna gathers the circles of power back into intensity.
+- lemma_id: spanda
+  relation: related_as
+  note: Alignment is a yogic gathering of the throb’s dispersed currents, not extinction of vibration.
+- lemma_id: yoga
+  relation: related_as
+  note: Both name joining; sandhāna in Trika often stresses convergence/resting of powers rather than generic discipline.
+- lemma_id: samadhi
+  relation: rough_analogue
+  note: Both can name collected stillness; sandhāna emphasizes joining/alignment of śakti-currents more than quietude alone.
+- lemma_id: pratyabhijna
+  relation: related_as
+  note: Sustained alignment opens the field in which recognition can stabilize.
+senses:
+- id: sandhana.shaiva
+  label: Alignment / gathering (Śaiva)
+  short: joining or converging powers so dispersed multiplicity resolves into intensity
+  etymology: sam- + √dhā ‘place, set’ → joining together, connection, alignment
+  traps:
+  - cosmic destruction as annihilation of the world
+  - mere concentration technique without śakti doctrine
+  - confusing with anusandhāna (sustained inquiry) without noting the related family
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_6
+  - siva_sutra.ss_i_16
+  - siva_sutra.ss_i_19
+  body: |
+    In śakticakra-sandhāne viśva-saṁhāraḥ, gathering the wheels of power does not smash the universe; phenomena lose their grip
+    through reintegration. Sandhāna is alignment and resting of currents—dispersion reversed into intensity.

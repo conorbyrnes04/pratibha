@@ -1,0 +1,47 @@
+id: cidananda
+maturity: strong_draft
+scripts:
+  iast: cidānanda
+  devanagari: चिदानन्द
+aliases:
+- cidananda
+- cid-ananda
+- chidananda
+- cit ananda
+- consciousness-bliss
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: cit
+  relation: related_as
+  note: cidānanda is cit inseparable from its intrinsic fullness (ānanda), not cit plus a mood.
+- lemma_id: prakasa
+  relation: related_as
+  note: prakāśa is the light-aspect; cidānanda names that light’s native delight when recognized.
+- lemma_id: vimarsa
+  relation: related_as
+  note: Reflexive savoring (vimarśa) tastes the bliss that prakāśa/cit already are.
+- lemma_id: pratyabhijna
+  relation: related_as
+  note: Obtaining cidānanda is recovery through recognition, not acquisition of a new object-state.
+- lemma_id: anuttara
+  relation: related_as
+  note: Stable cidānanda is lived as jīvanmukti within anuttara’s unsurpassed field.
+senses:
+- id: cidananda.shaiva
+  label: Consciousness-bliss (Pratyabhijñā)
+  short: the intrinsic fullness of recognized awareness; not euphoria contingent on objects
+  etymology: cit ‘awareness’ + ānanda ‘bliss, delight’ → compound naming their inseparability
+  traps:
+  - peak euphoria / dopamine high
+  - object-dependent happiness
+  - a trance that requires the world to disappear
+  - Vedāntic slogan without Trika’s jīvanmukti claim
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - pratyabhijnahrdayam.phr_016
+  - pratyabhijnahrdayam.phr_017
+  body: |
+    In PHR 16, cit-ānanda-lābha is obtaining what was never absent: awareness’s native delight. Freedom holds even while
+    body and objects continue to be perceived—firm recognition that they are one with Consciousness is jīvanmukti.

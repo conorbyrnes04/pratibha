@@ -1,0 +1,44 @@
+id: sankoca
+maturity: strong_draft
+scripts:
+  iast: saṅkoca
+  devanagari: सङ्कोच
+aliases:
+- sankoca
+- sankocha
+- samkoca
+- saṅkoca
+- contraction
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: maya
+  relation: related_as
+  note: māyā is the limiting power; saṅkoca is the lived narrowing of universal citi into individuality.
+- lemma_id: jiva
+  relation: related_as
+  note: jīva is the contracted experiencer; saṅkoca names the process/condition of that contraction.
+- lemma_id: cit
+  relation: related_as
+  note: saṅkoca does not leave cit; it is citi’s free self-limitation appearing as finite awareness.
+- lemma_id: spanda
+  relation: related_as
+  note: Expansion and contraction are modes of the throb; saṅkoca is the inward/limiting pulse mistaken for the whole.
+senses:
+- id: sankoca.shaiva
+  label: Contraction of consciousness
+  short: the free narrowing by which universal citi appears as individual awareness
+  etymology: sam- + √kuc ‘contract, draw in’ → constriction, limitation
+  traps:
+  - metaphysical fall or corruption of the Absolute
+  - permanent loss of infinite capacity
+  - purely psychological ‘feeling small’
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - pratyabhijnahrdayam.phr_004
+  - pratyabhijnahrdayam.phr_009
+  - siva_sutra.ss_i_2
+  body: |
+    Pratyabhijñā insists contraction is modulation, not fragmentation: even as cetana, consciousness remains saṅkucita-viśva-maya—
+    still universe-containing. Bondage begins when the contracted standpoint is taken as exhaustive of what one is.

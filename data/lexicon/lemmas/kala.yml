@@ -1,0 +1,62 @@
+id: kala
+maturity: strong_draft
+scripts:
+  iast: kalā / kāla
+  devanagari: कला / काल
+aliases:
+- kala
+- kalaa
+- kaala
+- kalā
+- kāla
+- limitation
+- time
+- portion
+traditions:
+- kashmir_shaivism
+related:
+- lemma_id: maya
+  relation: related_as
+  note: Both kalā (limited agency) and kāla (temporality) function among the kañcukas under māyā’s limiting play.
+- lemma_id: sakti
+  relation: related_as
+  note: kalā is a measured articulation of power; śakti is the unmeasured capacity that can appear as portion.
+- lemma_id: spanda
+  relation: related_as
+  note: Differentiation into portions is a mode of the throb’s display, not a foreign imposition.
+- lemma_id: siddhi
+  relation: related_as
+  note: kāla-yajña (sacrifice to time) ripens siddhi; time as consuming power digests effort into fulfillment.
+senses:
+- id: kala.portion
+  label: Portion / limited agency (kalā)
+  short: a measured portion of power; the limiting articulation that makes finite agency possible
+  etymology: kalā ‘part, digit, small portion of the moon; art/skill’ → in Trika, limited capacity (kañcuka)
+  traps:
+  - collapsing kalā into kāla (time)
+  - mere ‘art skill’ without the tattva/kañcuka sense
+  - treating limitation as foreign to Śiva
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_3
+  - siva_sutra.ss_iii_5
+  body: |
+    In yonivargaḥ kalāśarīram, kalā is the portioning by which differentiation coheres as a body of form.
+    Among the kalādi tattvas, kalā is limited agency—real as functional sheath, binding when mistaken for identity.
+- id: kala.time
+  label: Time as consuming power (kāla)
+  short: time as the power that digests effort, succession, and all finite forms
+  etymology: kāla ‘time, season, death’s appointed hour’ ← often linked folk-etymologically with ‘that which calculates/consumes’
+  traps:
+  - collapsing kāla into kalā (portion/limitation)
+  - clock-time only, without the consuming/ripening force
+  - time as enemy to conquer rather than crucible of practice
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_ii_11
+  - siva_sutra.ss_iii_5
+  body: |
+    Distinct stem and diacritic from kalā. As kañcuka, kāla is temporality that veils the timeless.
+    In kāla-yajñāt siddhiḥ, time is the altar: accomplishment ripens through surrender to duration, not through intensity alone.

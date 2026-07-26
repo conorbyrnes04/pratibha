@@ -1,0 +1,58 @@
+id: bandha
+maturity: strong_draft
+scripts:
+  iast: bandha
+  devanagari: बन्ध
+aliases:
+- bandha
+- bondage
+- binding
+- fetter
+traditions:
+- kashmir_shaivism
+- advaita_vedanta
+related:
+- lemma_id: moksa
+  relation: diverges_from
+  note: bandha names the bind; mokṣa the release—often two descriptions of one mis/recognition.
+- lemma_id: maya
+  relation: related_as
+  note: In Śaiva framing, māyā’s limiting play is the structural condition; bandha is living as if the limit were absolute.
+- lemma_id: jiva
+  relation: related_as
+  note: jīva is the bound experiencer; bandha is the binding error or contracted condition itself.
+- lemma_id: samsara
+  relation: related_as
+  note: saṃsāra is the cycling field of conditioned becoming; bandha is the knot that keeps one identified within it.
+senses:
+- id: bandha.shaiva
+  label: Bondage as contracted knowing (Śaiva)
+  short: the binding that arises when knowing hardens into limited identity
+  etymology: √bandh ‘bind, fasten’ → bondage, fetter, contraction
+  traps:
+  - only moral sin or karmic debt ledger
+  - cosmic jailer outside consciousness
+  - equating embodiment itself with bondage
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - siva_sutra.ss_i_2
+  - siva_sutra.ss_iii_8
+  body: |
+    Śiva Sūtra I.2 pairs jñāna and bandha: bondage is not merely ignorance but fixation—consciousness mirroring itself as
+    enclosed form. Limitation is Śiva’s own capacity; bondage is forgetting that capacity as play.
+- id: bandha.advaita
+  label: Bondage as mis-seeing the witness (Aṣṭāvakra)
+  short: the single error of seeing the witness-Self as other than itself
+  etymology: same √bandh; here the knot is reflexive objectification of the seer
+  traps:
+  - bondage as a pile of many equal errors
+  - needing the world to vanish before freedom
+  - treating the Self as a bound soul-substance
+  traditions:
+  - advaita_vedanta
+  exemplars:
+  - astavakra_gita.asg_1_7
+  body: |
+    Aṣṭāvakra locates the bind with radical precision: you are already nearly free; bondage is seeing the draṣṭṛ as itara—
+    as an object among objects. One reflexive mistake, not a complex accumulation.

@@ -1,0 +1,47 @@
+id: citta
+maturity: strong_draft
+scripts:
+  iast: citta
+  devanagari: चित्त
+aliases:
+- citta
+- chitta
+- mind
+- mental activity
+traditions:
+- kashmir_shaivism
+- yoga
+related:
+- lemma_id: cit
+  relation: diverges_from
+  note: cit is unbounded knowingness; citta is that same field contracted into object-grasping mind.
+- lemma_id: caitanya
+  relation: related_as
+  note: caitanya names living consciousness; citta is its individuated, objectifying modulation.
+- lemma_id: jiva
+  relation: related_as
+  note: jīva is the embodied experiencer; citta is the mental apparatus through which that contraction operates.
+- lemma_id: vikalpa
+  relation: related_as
+  note: citta traffics in vikalpas; recognition sees citta as citi’s own play, not a foreign enemy.
+- lemma_id: xin
+  relation: rough_analogue
+  note: Both name the seat of thought/feeling; Chinese xīn is more moral-affective, Śaiva citta more contraction-of-citi.
+senses:
+- id: citta.shaiva
+  label: Contracted mind (Śaiva)
+  short: mind as citi narrowed into an object-grasping subject
+  etymology: from √cit ‘perceive’ → that which has been noticed/set as mental continuum; in Trika, citi contracted
+  traps:
+  - brain software only
+  - an enemy to destroy rather than recognize
+  - permanent second substance beside consciousness
+  traditions:
+  - kashmir_shaivism
+  exemplars:
+  - pratyabhijnahrdayam.phr_005
+  - siva_sutra.ss_i_15
+  - siva_sutra.ss_iii_1
+  body: |
+    Kṣemarāja’s formula is surgical: citi itself, descending from pure awareness and contracting around objectivity, is citta.
+    Mind is not other than Consciousness; it is Consciousness wearing the mask of a grasper. Liberation is recognition, not exile from mind.

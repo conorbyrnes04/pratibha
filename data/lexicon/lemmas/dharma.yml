@@ -33,7 +33,10 @@ senses:
   traditions:
   - hinduism
   - upanishads
-  exemplars: []
+  exemplars:
+  - astavakra_gita.asg_1_6
+  - isavasya_upanishad.isa_006
+  - bhagavad_gita.bg_md_003
   body: |
     In epic and smṛti contexts dharma binds person to role and cosmos. In contemplative reading it can also mean the order that makes liberation intelligible.
 - id: dharma.buddhist
@@ -46,6 +49,9 @@ senses:
   traditions:
   - theravada
   - mahayana
-  exemplars: []
+  exemplars:
+  - dhammapada.dhp_ch01
+  - dogen_shobogenzo.dog_001
+  - heart_sutra.hs_001
   body: |
     Two load-bearing uses: (1) the Buddha’s teaching and path; (2) dharmas as the fleeting factors of experience analyzed in Abhidharma.
