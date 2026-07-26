@@ -82,11 +82,17 @@ export type Source = {
 
 export type ChatMode = "question" | "explain" | "compare" | "practice";
 
+export type ChatDepth = "simple" | "deep";
+
 export type ChatOptions = {
   verseId?: string;
   compareVerseIds?: string[];
   layerFocus?: PratibhaLayerKind;
   chatMode?: ChatMode;
+  /** Optional override; when omitted, backend maps question→simple and deep modes→deep. */
+  depth?: ChatDepth;
+  /** Bearer token so daily cap can key by user id when signed in. */
+  accessToken?: string | null;
 };
 
 export type JournalNoteKind = "reflection" | "chat_response";

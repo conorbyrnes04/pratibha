@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useMemo, useState } from "react";
-import { getVerses } from "@/lib/api";
+import { getVerses, pingHealth } from "@/lib/api";
+import { catalogMaturityKey, readCatalogCache } from "@/lib/catalogCache";
 import type { VerseItem } from "@/lib/types";
 import { firstSentence } from "@/lib/textPreview";
 import { FilterSelect } from "@/components/FilterSelect";
@@ -18,6 +19,9 @@ import { Glyph } from "@/components/Glyph";
 import { Disclosure } from "@/components/ui/Disclosure";
 import { displayPassageTitle, patanjaliSutraRef, sortPassagesForLibrary } from "@/lib/passageTitles";
 import { layerText, passagePreview, practiceText } from "@/lib/verseLayers";
+
+/** Library catalog lifecycle — never treat cold/fail as a true empty shelf. */
+type LibraryStatus = "loading" | "waking" | "ready" | "error";
 
 function reflectionPrompt(item: VerseItem): string {
   const t = (item.themes || [])[0];
@@ -49,7 +53,10 @@ function LibraryPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [items, setItems] = useState<VerseItem[]>([]);
+  const [status, setStatus] = useState<LibraryStatus>("loading");
   const [loadError, setLoadError] = useState("");
+  const [showingStale, setShowingStale] = useState(false);
+  const [retryToken, setRetryToken] = useState(0);
   const [q, setQ] = useState("");
   const [collection, setCollection] = useState(searchParams.get("collection") || "all");
   const [theme, setTheme] = useState(searchParams.get("theme") || "all");
@@ -58,19 +65,72 @@ function LibraryPageContent() {
   const [librarySort, setLibrarySort] = useState<LibrarySort>("title");
 
   useEffect(() => {
-    setLoadError("");
-    getVerses(includeDrafts ? "all" : "strong_draft")
+    const maturity = includeDrafts ? "all" : "strong_draft";
+    const cacheKey = catalogMaturityKey(maturity);
+    const cached = readCatalogCache(cacheKey);
+    const hasCachedItems = Boolean(cached && cached.items.length > 0);
+
+    if (hasCachedItems && cached) {
+      setItems(cached.items);
+      setShowingStale(true);
+      setStatus("ready");
+      setLoadError("");
+    } else {
+      setItems([]);
+      setShowingStale(false);
+      setStatus("loading");
+      setLoadError("");
+    }
+
+    const ac = new AbortController();
+    let servedFromCache = false;
+    // Nudge Render awake before the heavier /verses payload.
+    void pingHealth(ac.signal);
+
+    getVerses(maturity, {
+      signal: ac.signal,
+      onStatus: (s) => {
+        if (ac.signal.aborted) return;
+        if (!hasCachedItems) setStatus(s);
+      },
+      onMeta: (meta) => {
+        servedFromCache = Boolean(meta.fromCache);
+      },
+    })
       .then((rows) => {
+        if (ac.signal.aborted) return;
         setItems(rows);
-        if (rows.length === 0) {
-          setLoadError("The library API returned no passages. The backend may be waking up — wait a minute and refresh.");
+        setStatus("ready");
+        if (servedFromCache) {
+          setShowingStale(true);
+          setLoadError(
+            "Couldn’t refresh the library — showing a saved catalog. Retry when the API is awake.",
+          );
+        } else {
+          setShowingStale(false);
+          setLoadError("");
         }
       })
       .catch(() => {
-        setItems([]);
-        setLoadError("Could not reach the Pratibha API. Library and texts need https://pratibha-1.onrender.com to be online.");
+        if (ac.signal.aborted) return;
+        if (hasCachedItems) {
+          setStatus("ready");
+          setShowingStale(true);
+          setLoadError(
+            "Couldn’t refresh the library — showing a saved catalog. Retry when the API is awake.",
+          );
+        } else {
+          setItems([]);
+          setShowingStale(false);
+          setStatus("error");
+          setLoadError(
+            "The library API is waking up or unreachable. This is not an empty corpus — wait a moment and try again.",
+          );
+        }
       });
-  }, [includeDrafts]);
+
+    return () => ac.abort();
+  }, [includeDrafts, retryToken]);
 
   useEffect(() => {
     setCollection(searchParams.get("collection") || "all");
@@ -116,6 +176,14 @@ function LibraryPageContent() {
 
   // Shelf of tomes when browsing the whole library; passage list once a text is open or search is active.
   const showShelf = collection === "all" && !q.trim();
+  const hasItems = items.length > 0;
+  const isBooting = (status === "loading" || status === "waking") && !hasItems;
+  const isHardError = status === "error" && !hasItems;
+  const isTrueEmpty = status === "ready" && !hasItems && !loadError;
+
+  function retryCatalog() {
+    setRetryToken((n) => n + 1);
+  }
 
   function syncReadUrl(next: { collection?: string; theme?: string }) {
     const params = new URLSearchParams(searchParams.toString());
@@ -235,45 +303,90 @@ function LibraryPageContent() {
             </Disclosure>
           </div>
 
-          {loadError ? (
-            <p className="mt-4 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-4 font-sans text-sm text-amber-100">
-              {loadError}
-            </p>
+          {isBooting ? (
+            <div className="mt-4 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-4 font-sans text-sm text-amber-100">
+              <p className="font-medium">
+                {status === "waking" ? "Waking the library…" : "Opening the library…"}
+              </p>
+              <p className="mt-2 soft text-amber-100/80">
+                The API may be cold-starting. This is not an empty shelf — passages will appear when the catalog is ready.
+              </p>
+            </div>
+          ) : null}
+
+          {isHardError ? (
+            <div className="mt-4 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-4 font-sans text-sm text-amber-100">
+              <p>{loadError}</p>
+              <button
+                type="button"
+                onClick={retryCatalog}
+                className="mt-3 rounded-full border border-amber-200/40 px-4 py-2 font-sans text-xs tracking-wide text-amber-50 transition hover:border-amber-100/70 hover:bg-amber-300/10"
+              >
+                Retry
+              </button>
+            </div>
+          ) : null}
+
+          {showingStale && hasItems && loadError ? (
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-amber-300/20 bg-amber-300/5 p-4 font-sans text-sm text-amber-100/90">
+              <p>{loadError}</p>
+              <button
+                type="button"
+                onClick={retryCatalog}
+                className="shrink-0 rounded-full border border-amber-200/40 px-4 py-2 font-sans text-xs tracking-wide text-amber-50 transition hover:border-amber-100/70 hover:bg-amber-300/10"
+              >
+                Retry
+              </button>
+            </div>
           ) : null}
         </div>
 
-      {showShelf ? (
+      {isBooting || isHardError ? null : showShelf ? (
         <div className="space-y-10">
-          <p className="soft font-sans text-sm">
-            {tomes.length} texts · {items.length} passages
-            {librarySort === "author" ? " · sorted by author" : librarySort === "tradition" ? " · grouped by tradition" : " · sorted by title"}
-          </p>
-          {shelves ? (
-            shelves.map((shelf) => (
-              <section key={shelf.tradition}>
-                <div className="mb-4 flex items-baseline justify-between gap-3">
-                  <h2 className="layer-heading text-amber-100/90">{shelf.tradition}</h2>
-                  <p className="soft font-sans text-xs">
-                    {shelf.tomes.length} {shelf.tomes.length === 1 ? "text" : "texts"}
-                  </p>
-                </div>
+          {isTrueEmpty ? (
+            <p className="soft mt-2">
+              The catalog loaded successfully but has no passages yet. If you expected texts here, check that the
+              backend corpus finished loading.
+            </p>
+          ) : (
+            <>
+              <p className="soft font-sans text-sm">
+                {tomes.length} texts · {items.length} passages
+                {showingStale && loadError ? " · saved catalog" : ""}
+                {librarySort === "author"
+                  ? " · sorted by author"
+                  : librarySort === "tradition"
+                    ? " · grouped by tradition"
+                    : " · sorted by title"}
+              </p>
+              {shelves ? (
+                shelves.map((shelf) => (
+                  <section key={shelf.tradition}>
+                    <div className="mb-4 flex items-baseline justify-between gap-3">
+                      <h2 className="layer-heading text-amber-100/90">{shelf.tradition}</h2>
+                      <p className="soft font-sans text-xs">
+                        {shelf.tomes.length} {shelf.tomes.length === 1 ? "text" : "texts"}
+                      </p>
+                    </div>
+                    <div className="tome-shelf">
+                      {shelf.tomes.map((tome) => (
+                        <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
+                      ))}
+                    </div>
+                  </section>
+                ))
+              ) : (
                 <div className="tome-shelf">
-                  {shelf.tomes.map((tome) => (
+                  {tomes.map((tome) => (
                     <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
                   ))}
                 </div>
-              </section>
-            ))
-          ) : (
-            <div className="tome-shelf">
-              {tomes.map((tome) => (
-                <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
-              ))}
-            </div>
+              )}
+              {tomes.length === 0 ? (
+                <p className="soft mt-6">No texts match this theme yet. Clear the theme filter to see the full shelf.</p>
+              ) : null}
+            </>
           )}
-          {tomes.length === 0 ? (
-            <p className="soft mt-6">No texts match this theme yet. Clear the theme filter to see the full shelf.</p>
-          ) : null}
         </div>
       ) : (
         <div className="space-y-3">

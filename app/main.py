@@ -1,9 +1,10 @@
 from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel, field_validator
 from typing import Any, List
 from contextlib import asynccontextmanager
+from datetime import datetime, timezone
 import asyncio
 import json
 import logging
@@ -20,7 +21,7 @@ from .chat_voice import (
     SOURCE_GROUNDING,
 )
 from .voice_examples import is_death_topic, select_few_shots
-from .auth import AuthUser, require_user
+from .auth import AuthUser, optional_user, require_user
 from .config import settings
 from .llm import smart_chat, smart_chat_stream
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, retrieve_related_unit_ids, detected_collections
@@ -101,6 +102,7 @@ app.add_middleware(
     allow_credentials=_origins != ["*"],
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["X-Chat-Daily-Limit", "X-Chat-Daily-Remaining"],
 )
 
 def _valid_maturity(value: str | None) -> str | None:
@@ -152,7 +154,11 @@ def _cached_item_count() -> int:
 async def list_verses(min_maturity: str | None = None):
     """Library index — slim payloads so the browser isn't handed ~9MB of layers."""
     items = filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity))
-    return {"items": [_verse_list_item(v) for v in items]}
+    # Short CDN/browser freshness; the web client also keeps a localStorage catalog.
+    return JSONResponse(
+        content={"items": [_verse_list_item(v) for v in items]},
+        headers={"Cache-Control": "public, max-age=60, stale-while-revalidate=300"},
+    )
 
 
 def _verse_list_item(v: dict[str, Any]) -> dict[str, Any]:
@@ -383,8 +389,12 @@ async def corpus_status(request: Request):
 # Lightweight in-process per-IP rate limit. Protects the metered LLM from a
 # single abusive client. For multi-instance deploys, move this to Redis; for a
 # single Render web service it is sufficient.
+# Soft daily cap (CHAT_DAILY_MAX) is keyed by authenticated user id when a
+# Bearer token is present, otherwise by client IP — same in-memory style.
 _CHAT_RATE_MAX = int(os.environ.get("CHAT_RATE_MAX_PER_MIN", "20") or "20")
 _chat_hits: dict[str, list[float]] = {}
+_chat_daily: dict[str, int] = {}
+_chat_daily_day: str = ""
 
 
 def _client_ip(request: Request) -> str:
@@ -412,6 +422,100 @@ def _rate_limited(request: Request) -> bool:
     return False
 
 
+def _utc_day() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+def _chat_identity(request: Request, user: AuthUser | None) -> str:
+    if user and user.id:
+        return f"user:{user.id}"
+    return f"ip:{_client_ip(request)}"
+
+
+def _daily_cap_limit() -> int:
+    return int(getattr(settings, "CHAT_DAILY_MAX", 40) or 0)
+
+
+def _daily_usage(identity: str) -> tuple[int, int]:
+    """Return (used, remaining) for today's soft daily cap. remaining is -1 when disabled."""
+    limit = _daily_cap_limit()
+    if limit <= 0:
+        return 0, -1
+    global _chat_daily_day
+    day = _utc_day()
+    if day != _chat_daily_day:
+        _chat_daily.clear()
+        _chat_daily_day = day
+    used = int(_chat_daily.get(identity, 0))
+    return used, max(0, limit - used)
+
+
+def _check_daily_cap(identity: str) -> JSONResponse | None:
+    """If over the soft daily cap, return a 429 JSONResponse; else None (and count this hit)."""
+    limit = _daily_cap_limit()
+    if limit <= 0:
+        return None
+    used, remaining = _daily_usage(identity)
+    if used >= limit:
+        return JSONResponse(
+            status_code=429,
+            content={
+                "detail": (
+                    "You've reached today's study chat limit. "
+                    "Return tomorrow — or continue reading the manuscript."
+                ),
+                "code": "daily_cap",
+                "limit": limit,
+                "remaining": 0,
+            },
+            headers={
+                "X-Chat-Daily-Limit": str(limit),
+                "X-Chat-Daily-Remaining": "0",
+            },
+        )
+    _chat_daily[identity] = used + 1
+    return None
+
+
+def _daily_remaining_headers(identity: str) -> dict[str, str]:
+    limit = _daily_cap_limit()
+    if limit <= 0:
+        return {}
+    _, remaining = _daily_usage(identity)
+    return {
+        "X-Chat-Daily-Limit": str(limit),
+        "X-Chat-Daily-Remaining": str(remaining),
+    }
+
+
+def _chat_depth_is_simple(req: "ChatReq") -> bool:
+    """True when we should use the simple (cheaper) model + shorter context."""
+    depth = (getattr(req, "depth", None) or "").strip().lower()
+    if depth == "deep":
+        return False
+    if depth == "simple":
+        return True
+    mode = (req.chat_mode or "question").strip().lower()
+    # question → simple; explain | compare | practice → deep
+    return mode not in {"explain", "compare", "practice"}
+
+
+def _resolve_chat_model(req: "ChatReq") -> str:
+    """Pick SIMPLE vs DEEP model. Explicit req.model still wins when set."""
+    if (req.model or "").strip():
+        m = req.model.strip()
+        return m if m.startswith("openrouter/") else f"openrouter/{m}"
+    if _chat_depth_is_simple(req):
+        return settings.effective_chat_model_simple()
+    return settings.effective_chat_model_deep()
+
+
+def _resolve_chat_max_tokens(req: "ChatReq") -> int | None:
+    if _chat_depth_is_simple(req):
+        return int(getattr(settings, "CHAT_SIMPLE_MAX_TOKENS", 500) or settings.CHAT_MAX_TOKENS)
+    return None
+
+
 class ChatReq(BaseModel):
     messages: List[dict]
     model: str | None = None
@@ -423,6 +527,9 @@ class ChatReq(BaseModel):
     verse_id: str | None = None
     layer_focus: str | None = None
     chat_mode: str | None = None
+    # Optional override: "simple" → CHAT_MODEL_SIMPLE; "deep" → CHAT_MODEL_DEEP.
+    # When omitted, chat_mode maps question→simple and explain|compare|practice→deep.
+    depth: str | None = None
 
     @field_validator("messages")
     @classmethod
@@ -442,6 +549,16 @@ class ChatReq(BaseModel):
         if not 0.0 <= value <= 2.0:
             raise ValueError("temperature must be between 0 and 2")
         return value
+
+    @field_validator("depth")
+    @classmethod
+    def _validate_depth(cls, value: str | None) -> str | None:
+        if value is None or value == "":
+            return None
+        v = value.strip().lower()
+        if v not in {"simple", "deep"}:
+            raise ValueError("depth must be 'simple' or 'deep'")
+        return v
 
 _COMPARE_CUE_RE = re.compile(
     r"\b(vs\.?|versus|compare|comparison|contrast|debate|dialogue|between .+ and)\b",
@@ -769,7 +886,11 @@ async def _assemble_chat_messages(
 
     sources: list[dict[str, Any]] = []
     compare_warning = ""
-    rag_k = 6 if (compare_enabled or exploratory) else 4
+    # Slightly shorter retrieval context for simple/question routing.
+    if _chat_depth_is_simple(req) and not compare_enabled:
+        rag_k = 3
+    else:
+        rag_k = 6 if (compare_enabled or exploratory) else 4
 
     if _use_rag_flag(req):
         q = latest_user
@@ -854,11 +975,25 @@ def _needs_voice_retry(answer: str, query: str) -> bool:
 
 
 @app.post("/chat")
-async def chat(req: ChatReq, request: Request):
+async def chat(req: ChatReq, request: Request, user: AuthUser | None = Depends(optional_user)):
     if _rate_limited(request):
         raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
+    identity = _chat_identity(request, user)
+    capped = _check_daily_cap(identity)
+    if capped is not None:
+        return capped
+    quota_headers = _daily_remaining_headers(identity)
+    _, remaining = _daily_usage(identity)
+
     latest_user = next((m["content"] for m in reversed(req.messages) if m["role"] == "user"), "")
     msgs, sources, compare_warning, temperature = await _assemble_chat_messages(req)
+    model = _resolve_chat_model(req)
+    max_tokens = _resolve_chat_max_tokens(req)
+
+    def _ok(payload: dict) -> JSONResponse:
+        body = {**payload, "remaining": remaining if remaining >= 0 else None}
+        return JSONResponse(content=body, headers=quota_headers)
+
     if not _llm_configured():
         fallback = (
             "Study chat is not fully configured yet because no LLM API key is set. "
@@ -868,55 +1003,73 @@ async def chat(req: ChatReq, request: Request):
             fallback += "\n\nMeanwhile, here is a relevant source passage:\n\n" + (sources[0].get("text") or "")
         else:
             fallback += "\n\nYou can still use Read/Random pages to study the imported texts."
-        return {"answer": fallback, "sources": sources, "compare_warning": compare_warning}
+        return _ok({"answer": fallback, "sources": sources, "compare_warning": compare_warning})
     try:
         text = await smart_chat(
             msgs,
-            primary_model=req.model or settings.effective_default_model(),
+            primary_model=model,
             temperature=temperature,
+            max_tokens=max_tokens,
         )
         if _needs_voice_retry(text, latest_user):
             retry_msgs = [*msgs, {"role": "system", "content": _VOICE_RETRY_NUDGE}]
             text = await smart_chat(
                 retry_msgs,
-                primary_model=req.model or settings.effective_default_model(),
+                primary_model=model,
                 temperature=temperature,
+                max_tokens=max_tokens,
             )
-        return {"answer": text, "sources": sources, "compare_warning": compare_warning}
+        return _ok({"answer": text, "sources": sources, "compare_warning": compare_warning})
     except Exception as e:
         err = str(e)
-        return {
+        return _ok({
             "answer": _chat_failure_message(err),
             "sources": sources,
             "compare_warning": compare_warning,
-        }
+        })
 
 def _sse(payload: dict) -> str:
     return f"data: {json.dumps(payload, ensure_ascii=False)}\n\n"
 
 
 @app.post("/chat.stream")
-async def chat_stream(req: ChatReq, request: Request):
+async def chat_stream(req: ChatReq, request: Request, user: AuthUser | None = Depends(optional_user)):
     if _rate_limited(request):
         raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
+    identity = _chat_identity(request, user)
+    capped = _check_daily_cap(identity)
+    if capped is not None:
+        return capped
+    quota_headers = _daily_remaining_headers(identity)
+    _, remaining = _daily_usage(identity)
+
     msgs, sources, compare_warning, temperature = await _assemble_chat_messages(req)
+    model = _resolve_chat_model(req)
+    max_tokens = _resolve_chat_max_tokens(req)
 
     if not _llm_configured():
         async def no_key_gen():
             yield _sse({"type": "sources", "sources": sources, "compare_warning": compare_warning})
+            if remaining >= 0:
+                yield _sse({"type": "quota", "remaining": remaining, "limit": _daily_cap_limit()})
             yield _sse({"type": "error", "message": _chat_failure_message("missing key")})
             yield _sse({"type": "done"})
-        return StreamingResponse(no_key_gen(), media_type="text/event-stream")
+        return StreamingResponse(
+            no_key_gen(), media_type="text/event-stream", headers=quota_headers
+        )
 
     async def gen():
         # Send sources + any compare warning up front so the UI can render the
         # source shelf while the answer streams in.
         yield _sse({"type": "sources", "sources": sources, "compare_warning": compare_warning})
+        if remaining >= 0:
+            yield _sse({"type": "quota", "remaining": remaining, "limit": _daily_cap_limit()})
         try:
             resp = await smart_chat_stream(
                 msgs,
-                primary_model=req.model or settings.effective_default_model(),
+                primary_model=model,
                 temperature=temperature,
+                max_tokens=max_tokens,
             )
         except Exception as e:
             yield _sse({"type": "error", "message": _chat_failure_message(str(e))})
@@ -942,4 +1095,4 @@ async def chat_stream(req: ChatReq, request: Request):
             await resp.aclose()
         yield _sse({"type": "done"})
 
-    return StreamingResponse(gen(), media_type="text/event-stream")
+    return StreamingResponse(gen(), media_type="text/event-stream", headers=quota_headers)

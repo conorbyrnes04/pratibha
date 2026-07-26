@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { askChatStream, getCollections, getVerse, getVerses } from "@/lib/api";
+import { askChatStream, ChatApiError, getCollections, getVerse, getVerses } from "@/lib/api";
 import { useAuth } from "@/components/AuthProvider";
 import { pushJournalNote } from "@/lib/journalCloud";
 import { saveChatResponse } from "@/lib/journalStorage";
@@ -41,8 +41,11 @@ function sourcePassageHref(metadata?: Record<string, unknown>): string | null {
   return null;
 }
 
+const DAILY_CAP_MESSAGE =
+  "You've reached today's study chat limit. Return tomorrow — or continue reading the manuscript.";
+
 export default function ChatPage() {
-  const { user } = useAuth();
+  const { user, accessToken } = useAuth();
   const [q, setQ] = useState("");
   const [useRag, setUseRag] = useState(true);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -60,6 +63,8 @@ export default function ChatPage() {
   const [chatMode, setChatMode] = useState<ChatMode>("question");
   const [layerFocus, setLayerFocus] = useState<PratibhaLayerKind | "">("");
   const [savedReplies, setSavedReplies] = useState<Set<number>>(new Set());
+  const [chatRemaining, setChatRemaining] = useState<number | null>(null);
+  const [dailyCapHit, setDailyCapHit] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -195,7 +200,7 @@ export default function ChatPage() {
   }
 
   async function ask() {
-    if (!q.trim() || busy) return;
+    if (!q.trim() || busy || dailyCapHit) return;
     const next: ChatMessage[] = [...messages, { role: "user", content: q.trim() }];
     // Add an empty assistant message we fill as tokens stream in.
     setMessages([...next, { role: "assistant", content: "" }]);
@@ -213,7 +218,13 @@ export default function ChatPage() {
         useRag,
         compareMode,
         selected,
-        { verseId: pinnedVerse?._id, compareVerseIds, layerFocus: layerFocus || undefined, chatMode },
+        {
+          verseId: pinnedVerse?._id,
+          compareVerseIds,
+          layerFocus: layerFocus || undefined,
+          chatMode,
+          accessToken,
+        },
         {
           onSources: (srcs, warning) => {
             setSources(srcs || []);
@@ -228,6 +239,7 @@ export default function ChatPage() {
           },
         },
       );
+      if (typeof data.remaining === "number") setChatRemaining(data.remaining);
       // Ensure final state matches (covers the no-delta error path).
       setMessages((prev) => {
         const copy = [...prev];
@@ -235,10 +247,22 @@ export default function ChatPage() {
         return copy;
       });
     } catch (err) {
-      const msg = err instanceof Error ? err.message : "Unknown error";
+      const isDailyCap = err instanceof ChatApiError && err.code === "daily_cap";
+      if (isDailyCap) {
+        setDailyCapHit(true);
+        setChatRemaining(0);
+      }
+      const msg = isDailyCap
+        ? DAILY_CAP_MESSAGE
+        : err instanceof Error
+          ? err.message
+          : "Unknown error";
       setMessages((prev) => {
         const copy = [...prev];
-        copy[assistantIdx] = { role: "assistant", content: `I hit an error: ${msg}` };
+        copy[assistantIdx] = {
+          role: "assistant",
+          content: isDailyCap ? msg : `I hit an error: ${msg}`,
+        };
         return copy;
       });
       setSources([]);
@@ -431,21 +455,35 @@ export default function ChatPage() {
             </Disclosure>
           </div>
 
+          {dailyCapHit ? (
+            <p className="mt-4 rounded-2xl border border-amber-200/25 bg-amber-100/5 p-4 text-sm leading-relaxed text-stone-200">
+              {DAILY_CAP_MESSAGE}{" "}
+              <Link href="/read" className="text-amber-100 underline-offset-2 hover:underline">
+                Continue reading →
+              </Link>
+            </p>
+          ) : null}
           <textarea
             className="input-field mt-4 w-full rounded-2xl p-3"
             rows={4}
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="Ask about this chapter, ask for practice guidance, or compare two traditions..."
+            disabled={dailyCapHit}
           />
-          <div className="mt-3">
+          <div className="mt-3 flex flex-wrap items-center gap-3">
             <button
               onClick={ask}
-              disabled={busy}
+              disabled={busy || dailyCapHit}
               className="btn-primary px-6 py-2.5 disabled:opacity-50"
             >
               {busy ? "Thinking..." : "Ask"}
             </button>
+            {chatRemaining != null && chatRemaining >= 0 && !dailyCapHit ? (
+              <p className="soft font-sans text-xs">
+                {chatRemaining} study chat{chatRemaining === 1 ? "" : "s"} left today
+              </p>
+            ) : null}
           </div>
         </section>
 

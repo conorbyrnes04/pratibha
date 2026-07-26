@@ -109,11 +109,14 @@ async def smart_chat_stream(
     primary_model: str | None = None,
     fallback_model: str | None = None,
     temperature: float = 0.2,
+    max_tokens: int | None = None,
 ):
     last_error: Exception | None = None
     for model in _model_candidates(primary_model, fallback_model):
         try:
-            return await chat_completion(messages, model, temperature, stream=True)
+            return await chat_completion(
+                messages, model, temperature, stream=True, max_tokens=max_tokens
+            )
         except Exception as e:
             last_error = e
             continue

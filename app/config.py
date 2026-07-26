@@ -31,6 +31,20 @@ class Settings(BaseSettings):
     RAG_MIN_SCORE: float = 0.2
     COMPARE_MIN_SCORE: float = 0.35
 
+    # ---- Study chat cost controls (soft caps + model routing) ----
+    # CHAT_DAILY_MAX: soft daily message cap per IP (or authenticated user id).
+    #   0 disables. Exceeded → HTTP 429 with code "daily_cap".
+    # CHAT_MODEL_SIMPLE: OpenRouter id for chat_mode=question / depth=simple
+    #   (defaults to DEFAULT_MODEL / Haiku).
+    # CHAT_MODEL_DEEP: OpenRouter id for explain|compare|practice / depth=deep
+    #   (defaults to DEFAULT_MODEL; set e.g. openrouter/anthropic/claude-sonnet-4
+    #   in .env when you want a stronger model for deep modes).
+    # CHAT_SIMPLE_MAX_TOKENS: shorter completion budget for simple routing.
+    CHAT_DAILY_MAX: int = 40
+    CHAT_MODEL_SIMPLE: str = ""
+    CHAT_MODEL_DEEP: str = ""
+    CHAT_SIMPLE_MAX_TOKENS: int = 500
+
     PG_HOST: str = "localhost"
     PG_PORT: int = 5432
     PG_DB: str = "pratibha"
@@ -121,5 +135,19 @@ class Settings(BaseSettings):
             return model
         # Any non-OpenRouter id (legacy Groq/OpenAI) falls back to the OpenRouter default.
         return self.OPENROUTER_MODEL
+
+    def _normalize_openrouter_model(self, model: str | None) -> str:
+        m = (model or "").strip()
+        if not m:
+            return self.effective_default_model()
+        return m if m.startswith("openrouter/") else f"openrouter/{m}"
+
+    def effective_chat_model_simple(self) -> str:
+        """Cheaper/faster model for open questions (defaults to DEFAULT_MODEL)."""
+        return self._normalize_openrouter_model(self.CHAT_MODEL_SIMPLE) if (self.CHAT_MODEL_SIMPLE or "").strip() else self.effective_default_model()
+
+    def effective_chat_model_deep(self) -> str:
+        """Stronger model for explain/compare/practice (defaults to DEFAULT_MODEL)."""
+        return self._normalize_openrouter_model(self.CHAT_MODEL_DEEP) if (self.CHAT_MODEL_DEEP or "").strip() else self.effective_default_model()
 
 settings = Settings()
