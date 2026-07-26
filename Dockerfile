@@ -16,9 +16,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app ./app
 
 # The API loads the corpus from disk (data/canonical preferred). Only the
-# canonical corpus is baked in; the larger raw_texts/yaml/pratibha_md trees are
-# authoring inputs and are not needed at runtime.
+# canonical corpus + lexicon are baked in; the larger raw_texts/yaml/pratibha_md
+# trees are authoring inputs and are not needed at runtime.
 COPY data/canonical ./data/canonical
+COPY data/lexicon ./data/lexicon
 
 # Ingest script + DB schema (handy for one-off jobs / reference inside the image).
 COPY scripts/ingest_pgvector.py ./scripts/ingest_pgvector.py
