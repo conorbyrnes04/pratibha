@@ -6,18 +6,19 @@ import { useEffect, useMemo, useState } from "react";
 import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { stripMarkdown } from "@/lib/textPreview";
-import { displayCollectionName } from "@/lib/collectionLabels";
+import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool } from "@/lib/collectionImages";
 import { unitGlyph } from "@/lib/glyphs";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
-import { displayPassageTitle } from "@/lib/passageTitles";
+import { displayPassageTitle, sortPassagesInText } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
 import { Disclosure } from "@/components/ui/Disclosure";
 import { getStudyLayers, getAppendixLayers, getAnchorChapter, getResonances, layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 import { relatedPassages } from "@/lib/relatedPassages";
+import { preferStudyUnits } from "@/lib/corpusFilters";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
 
 function practiceFallback(item: VerseItem): string {
@@ -112,6 +113,23 @@ export default function VerseDetailPage() {
   const related = semanticRelated && semanticRelated.length > 0 ? semanticRelated : themeRelated;
   const relatedMode = semanticRelated && semanticRelated.length > 0 ? "semantic" : "themes";
 
+  const siblings = useMemo(() => {
+    if (!item?.collection) return [] as VerseItem[];
+    const pool = preferStudyUnits(allItems).filter((v) => collectionsMatch(v.collection, item.collection));
+    return sortPassagesInText(pool);
+  }, [allItems, item]);
+
+  const siblingIndex = item ? siblings.findIndex((v) => v._id === item._id) : -1;
+  const prevPassage = siblingIndex > 0 ? siblings[siblingIndex - 1] : null;
+  const nextPassage =
+    siblingIndex >= 0 && siblingIndex < siblings.length - 1 ? siblings[siblingIndex + 1] : null;
+
+  function passageHref(passageId: string): string {
+    const base = `/read/${encodeURIComponent(passageId)}`;
+    if (!backHref) return base;
+    return `${base}?back=${encodeURIComponent(backHref)}`;
+  }
+
   const resonances = useMemo(() => (item ? getResonances(item) : []), [item]);
 
   // Turn free-text resonance citations into links into the corpus when they
@@ -181,6 +199,42 @@ export default function VerseDetailPage() {
 
   const nextStep = related[0] || null;
 
+  const textNav =
+    siblings.length > 1 ? (
+      <nav
+        className="flex flex-wrap items-center justify-between gap-3 font-sans text-sm"
+        aria-label="Passages in this text"
+      >
+        {prevPassage ? (
+          <Link
+            href={passageHref(prevPassage._id)}
+            className="btn-secondary px-4 py-2"
+            aria-label={`Previous: ${displayPassageTitle(prevPassage)}`}
+          >
+            ← Previous
+          </Link>
+        ) : (
+          <span className="soft px-1">Start of text</span>
+        )}
+        <span className="soft tabular-nums">
+          {siblingIndex >= 0 ? siblingIndex + 1 : "—"} of {siblings.length}
+          <span className="mx-1.5 text-amber-200/30">·</span>
+          {displayCollectionName(item.collection)}
+        </span>
+        {nextPassage ? (
+          <Link
+            href={passageHref(nextPassage._id)}
+            className="btn-primary px-4 py-2"
+            aria-label={`Next: ${displayPassageTitle(nextPassage)}`}
+          >
+            Next →
+          </Link>
+        ) : (
+          <span className="soft px-1">End of text</span>
+        )}
+      </nav>
+    ) : null;
+
   return (
     <main className="page-shell">
       {backHref ? (
@@ -188,14 +242,29 @@ export default function VerseDetailPage() {
           <Link href={backHref} className="font-sans text-sm text-amber-200 hover:text-amber-100">
             ← Back to path
           </Link>
-          <Link href="/read" className="soft font-sans text-sm hover:text-amber-100">
-            Back to library
+          <Link
+            href={`/read?collection=${encodeURIComponent(item.collection || "")}`}
+            className="soft font-sans text-sm hover:text-amber-100"
+          >
+            Back to text
           </Link>
         </div>
       ) : (
-        <Link href="/read" className="soft font-sans text-sm hover:text-amber-100">
-          ← Back to library
-        </Link>
+        <div className="flex flex-wrap items-center gap-4">
+          <Link
+            href={
+              item.collection
+                ? `/read?collection=${encodeURIComponent(item.collection)}`
+                : "/read"
+            }
+            className="soft font-sans text-sm hover:text-amber-100"
+          >
+            ← Back to text
+          </Link>
+          <Link href="/read" className="soft font-sans text-sm hover:text-amber-100">
+            Library
+          </Link>
+        </div>
       )}
       <section className="passage-hero manuscript-card mt-4 p-6 sm:p-8">
         <ArtBackdrop srcs={collectionArtPool(item.collection)} variant="hero" priority />
@@ -228,6 +297,8 @@ export default function VerseDetailPage() {
           </div>
         </div>
       </section>
+
+      {textNav ? <div className="mt-5">{textNav}</div> : null}
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[2fr_1fr] lg:gap-8">
         <section>
@@ -350,6 +421,8 @@ export default function VerseDetailPage() {
               Explore another random passage
             </Link>
           </div>
+
+          {textNav ? <div className="mt-8 border-t border-amber-200/15 pt-6">{textNav}</div> : null}
 
           <div className="mt-6">
             <JournalPanel passage={item} />

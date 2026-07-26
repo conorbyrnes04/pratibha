@@ -1,7 +1,7 @@
 import type { VerseItem } from "./types";
 import { collectionIcon } from "./collectionIcons";
 import { collectionsMatch, displayCollectionName } from "./collectionLabels";
-import { displayPassageTitle, isPatanjaliYogaSutras, passageSortKey, sortPassagesForLibrary } from "./passageTitles";
+import { sortPassagesInText } from "./passageTitles";
 export type ThemeCount = { theme: string; count: number };
 
 const SUMMARY_SOURCE_RE = /^(?:ASG|PHR)_SUM_/i;
@@ -94,15 +94,7 @@ export function passagesInCollection(items: VerseItem[], collection: string): Ve
 }
 
 export function sortComparePassages(items: VerseItem[], collection: string): VerseItem[] {
-  const pool = passagesInCollection(items, collection);
-  if (pool.length === 0) return pool;
-  if (pool.every(isPatanjaliYogaSutras)) return sortPassagesForLibrary(pool);
-  return [...pool].sort((a, b) => {
-    const seqA = typeof a.sequence === "number" ? a.sequence : passageSortKey(a);
-    const seqB = typeof b.sequence === "number" ? b.sequence : passageSortKey(b);
-    if (seqA !== seqB) return seqA - seqB;
-    return displayPassageTitle(a).localeCompare(displayPassageTitle(b));
-  });
+  return sortPassagesInText(passagesInCollection(items, collection));
 }
 
 export function filterPassages(

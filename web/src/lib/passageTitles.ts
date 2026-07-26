@@ -48,8 +48,59 @@ export function passageSortKey(item: VerseWithRef): number {
   return pada * 100 + num;
 }
 
-/** Sort Patanjali units by pada.num when the list is a single YS collection view. */
+function naturalParts(s: string): Array<string | number> {
+  return s
+    .toLowerCase()
+    .split(/(\d+)/)
+    .filter(Boolean)
+    .map((p) => (/^\d+$/.test(p) ? Number(p) : p));
+}
+
+function compareNatural(a: string, b: string): number {
+  const ap = naturalParts(a);
+  const bp = naturalParts(b);
+  const n = Math.max(ap.length, bp.length);
+  for (let i = 0; i < n; i++) {
+    const x = ap[i];
+    const y = bp[i];
+    if (x === undefined) return -1;
+    if (y === undefined) return 1;
+    if (typeof x === "number" && typeof y === "number") {
+      if (x !== y) return x - y;
+      continue;
+    }
+    const c = String(x).localeCompare(String(y));
+    if (c) return c;
+  }
+  return 0;
+}
+
+/** Reading order within one text: sequence → sutra/id natural order → title. */
+export function sortPassagesInText(items: VerseItem[]): VerseItem[] {
+  if (items.length <= 1) return items;
+  const allPatanjali = items.every(isPatanjaliYogaSutras);
+  return [...items].sort((a, b) => {
+    const seqA = typeof a.sequence === "number" && a.sequence > 0 ? a.sequence : null;
+    const seqB = typeof b.sequence === "number" && b.sequence > 0 ? b.sequence : null;
+    if (seqA != null && seqB != null && seqA !== seqB) return seqA - seqB;
+    if (seqA != null && seqB == null) return -1;
+    if (seqB != null && seqA == null) return 1;
+
+    if (allPatanjali) {
+      const ka = passageSortKey(a);
+      const kb = passageSortKey(b);
+      if (ka !== kb) return ka - kb;
+    }
+
+    const idA = a.sutra_id || a._id || "";
+    const idB = b.sutra_id || b._id || "";
+    const byId = compareNatural(idA, idB);
+    if (byId) return byId;
+    return displayPassageTitle(a).localeCompare(displayPassageTitle(b));
+  });
+}
+
+/** Sort passages for library/list views (same reading order as in-text navigation). */
 export function sortPassagesForLibrary(items: VerseItem[]): VerseItem[] {
-  if (items.length === 0 || !items.every(isPatanjaliYogaSutras)) return items;
-  return [...items].sort((a, b) => passageSortKey(a) - passageSortKey(b));
+  return sortPassagesInText(items);
 }
