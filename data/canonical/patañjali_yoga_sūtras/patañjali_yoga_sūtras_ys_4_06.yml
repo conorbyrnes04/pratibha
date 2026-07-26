@@ -83,3 +83,101 @@ abhyasa: 'When a clear insight or understanding arrives during your meditation�
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: तत्र ध्यायनजम् अनाशयम्
+- kind: iast
+  label: IAST
+  body: tatra dhyānajam anāśayam
+- kind: translation
+  label: Pratibha Translation
+  body: There, the mind that is born of meditation is free of karmic residue.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim that liberation is achieved by a mind that is *born* through meditation is a decisive
+    philosophical move: it elevates the act of meditative birth to the very threshold of kaivalya, rather
+    than treating it as a mere preparatory stage. In the Yoga and Sāṃkhya traditions, *dhyāna* is the
+    deepening of *citta*’s focus, while *jam* (birth) signals a new ontological status. Here, the sūtra
+    asserts that *jam* is not a passive occurrence but an active transformation that purges *karmic* *pratītyāna*
+    (impressions). The phrase *anāśaya*—free of residue—underscores that this freedom is not a gradual
+    shedding but an instantaneous cessation of *vipākāra* (causal residue). This aligns with the Sāṃkhya
+    notion that *purusha* becomes distinct from *prakṛti* when the latter’s *vipākāra* is annihilated.
+    The existential application is clear: one must cultivate a meditative state that *birthing* a mind
+    devoid of karmic imprint, thereby realizing *kaivalya* as an ontological shift rather than a mere
+    state of calm. The Satchidananda commentary’s brief note that the mind is “born of meditation” echoes
+    this, but the Pratibha analysis insists that the *birth* itself is the vehicle of liberation, not
+    the practice alone. Thus, the sūtra invites practitioners to view meditation not just as a technique
+    but as a transformative act that reconfigures the very nature of consciousness, aligning with the
+    Yoga Sutra’s broader thesis that *samādhi* is the culmination of purifying *citta* from *vipākāra*.
+
+
+    Key Terms
+
+
+    **dhyāna (ध्यान)** — from dhā (to think) + -na (instrument) -> meditation; in tradition, the deepening
+    of citta’s focus, beyond mere concentration
+
+
+    **jam (जम्)** — from jā (to be born) -> birth; in this context, ontological rebirth of mind free from
+    karmic residue
+
+
+    **anāśaya (अनाशय)** — from an (without) + āśaya (residue) -> free of residue; signals complete annihilation
+    of karmic imprint
+
+
+    **karma (कर्म)** — action; in this sūtra, the residue of action that must be shed for liberation
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sutra 2.50:** Both sutras state that the mind is free when it is not influenced by karmic impressions;
+    2.50 uses ‘samādhi’ while 4.6 uses ‘jam’ to denote the same state
+
+    *Divergence:* 4.6 replaces the abstract notion of samādhi with the concrete act of being born, emphasizing
+    ontological change over psychological attainment
+
+
+    **Bṛhadāraṇyaka Upaniṣad 2.1.1:** Both describe liberation as the mind being untainted by past actions
+
+    *Divergence:* The Upaniṣad speaks of *moksha* as a state of knowledge, whereas 4.6 frames it as a
+    birth free of residue, highlighting the Yoga emphasis on experiential transformation
+
+
+    **Śaṅkara, *Brahmasūtra* 3.1.1:** Both link liberation to the cessation of *vipākāra*
+
+    *Divergence:* Śaṅkara’s sutra uses metaphysical causality, while 4.6 employs a more practical, meditative
+    birth metaphor'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dhyāna (ध्यान)
+    definition: '√dhyā ‘contemplate’ → unbroken flow toward the object -> in “Meditation‑Born Freedom”:
+      in tradition, the deepening of citta’s focus, beyond mere concentration -> not ‘thinking about’;
+      continuous single-current cognizing that deepens dhāraṇā'
+  - term: jam (जम्)
+    definition: 'jā (to be born) -> birth -> in “Meditation‑Born Freedom”: in this context, ontological
+      rebirth of mind free from karmic residue -> default English flattens the technical work this term
+      does here'
+  - term: anāśaya (अनाशय)
+    definition: 'an (without) + āśaya (residue) -> free of residue -> in “Meditation‑Born Freedom”: signals
+      complete annihilation of karmic imprint -> default English flattens the technical work this term
+      does here'
+  - term: karma (कर्म)
+    definition: '√kṛ ‘do’ → action and its formative result-structure -> in “Meditation‑Born Freedom”:
+      in this sūtra, the residue of action that must be shed for liberation -> not cosmic scorekeeping
+      cartoon; action-deposit that conditions birth, span, and experience'
+    lemma_id: karma
+    sense_id: karma.indic
+  - term: āśaya
+    definition: 'source-term āśaya -> in “Meditation‑Born Freedom”: the embedded tendency or vasana that
+      shapes future experience -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Meditate until you are born free of karmic residue.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: Only the minds born of meditation are free from karmic

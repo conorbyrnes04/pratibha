@@ -89,3 +89,90 @@ abhyasa: Whisper 'nowhere, for no one' each time you catch yourself explaining, 
 translation_provenance: Rendered from the public-domain source (Sanskrit (IAST)). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: सर्वोपलम्भोपशमः प्रपञ्चोपशमः शिवः । न क्व चित् कस्यचित् कश्चिद् धर्मो बुद्धेन देशितः ॥
+  layer_provenance: transliterated_from_iast
+- kind: iast
+  label: IAST
+  body: sarvopalambhopaśamaḥ prapañcopaśamaḥ śivaḥ / na kva cit kasyacit kaścid dharmo buddhena deśitaḥ
+    //
+- kind: translation
+  label: Pratibha Translation
+  body: The stilling of all grasping [upalambha], the stilling of proliferation [prapañca]—this is peace
+    [śiva]. Nowhere, to no one, was any dharma ever taught by the Buddha.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The treatise ends where practice ends: not in a final thesis but in the quieting of the thesis-making
+    mind. Two things are stilled—*upalambha*, the act of apprehending or seizing an object, and *prapañca*,
+    the proliferation that spins objects into a solid world—and their cessation is named *śiva*: peace,
+    blessedness, the auspicious. Nāgārjuna deliberately closes with a word that in the wider culture names
+    the divine, but here it names simply the rest that remains when grasping stops. Then comes the astonishing
+    last line, which folds the entire book back on itself: "nowhere, to no one, was any dharma ever taught
+    by the Buddha." Having used four hundred verses of argument, Nāgārjuna denies that any fixed teaching
+    was ever transmitted—because every teaching is empty, conventional, a raft, an *upādāya prajñapti*.
+    To take even Madhyamaka as a doctrine to hold would be to reinstate the grasping the whole text works
+    to still. This is the ultimate anti-dogmatic gesture: the medicine dissolves itself so no residue
+    can become a new sickness. For the retreatant it is the perfect resting place: after all the analysis,
+    nothing is left to grip—not the self, not emptiness, not the teaching, not even "no teaching." What
+    remains is *śiva*, the peace of an unclutching mind.
+
+
+    Key Terms:
+
+
+    **upalambha (उपलम्भ)** — Etymology: from *upa-√labh* (to get, apprehend): "apprehension, grasping-at
+    an object as real." Its total pacification—not the end of perception, but the end of seizing—is peace.
+
+    **upaśama (उपशम)** — Etymology: *upa-√śam* (to become quiet, be extinguished): "calming, stilling,
+    pacification." The operative verb of the closing: liberation as a settling-down, not an achievement.
+
+    **śiva (शिव)** — Etymology: "auspicious, benign, blessed" (also the divine name). Nāgārjuna repurposes
+    it for the bare peace of stilled grasping—blessedness without a metaphysical blesser.
+
+    **prapañca (प्रपञ्च)** — Etymology: as in 18.5, "proliferation." The book opens (dedication) and closes
+    on its stilling, framing the whole as a therapy for the conceptualizing mind.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: upalambha (उपलम्भ)
+    definition: 'Etymology: from *upa-√labh* (to get, apprehend): "apprehension, grasping-at an object
+      as real." Its total pacification—not the end of perception, but the end of seizing—is peace.'
+  - term: upaśama (उपशम)
+    definition: 'Etymology: *upa-√śam* (to become quiet, be extinguished): "calming, stilling, pacification."
+      The operative verb of the closing: liberation as a settling-down, not an achievement.'
+  - term: śiva (शिव)
+    definition: 'Etymology: "auspicious, benign, blessed" (also the divine name). Nāgārjuna repurposes
+      it for the bare peace of stilled grasping—blessedness without a metaphysical blesser.'
+  - term: prapañca (प्रपञ्च)
+    definition: 'Etymology: as in 18.5, "proliferation." The book opens (dedication) and closes on its
+      stilling, framing the whole as a therapy for the conceptualizing mind.'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Vijñāna Bhairava / Śaiva "stilling" verses & Patañjali's nirodha
+    resonance: liberation as the settling of mental movement rather than the gaining of a new object.
+    divergence: those traditions rest in a positive fullness (Śiva-consciousness, kaivalya of puruṣa);
+      Nāgārjuna rests in empty peace with no substrate affirmed.
+    passage_id: ''
+  - citation: Zhuangzi, "fasting of the mind" / "sitting in forgetfulness"
+    resonance: the mind that has emptied its grasping is at ease; and the sage's teaching finally points
+      away from itself.
+    divergence: Zhuangzi's ease flows from harmony with the Dao; Nāgārjuna's follows from the emptiness
+      of Dao and teacher alike.
+    passage_id: ''
+  - citation: 'Wittgenstein (philosophy as therapy: "the real discovery is the one that lets me stop doing
+      philosophy")'
+    resonance: the aim of analysis is to bring the compulsive analyzing to rest.
+    divergence: Wittgenstein dissolves conceptual confusions to return to ordinary life; Nāgārjuna dissolves
+      them toward soteriological peace and release from rebirth.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'At the close of a sitting, deliberately let go of even your practice: no technique, no goal,
+    no "emptiness" to contemplate, no teaching to hold. For two minutes simply allow whatever arises to
+    arise and pass without seizing it. If the mind reaches for something to grasp—even the idea of not-grasping—let
+    that go too, and rest in the quiet that remains.'

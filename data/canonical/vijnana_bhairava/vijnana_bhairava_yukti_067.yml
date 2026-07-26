@@ -84,3 +84,70 @@ abhyasa: 'Sit quietly and pick one clear sense of limitation you feel right now 
   of this?'' whenever you get pulled back into the story.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: माया विमोहिनी नाम कलायाः कलनं स्थितम् । इत्यादिधर्मं तत्त्वानां कलयन् न पृथग् भवेत् ॥ ९५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: māyā vimohinī nāma kalāyāḥ kalanaṃ sthitam | ityādidharmaṃ tattvānāṃ kalayan na pṛthag bhavet
+    || 95 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #67
+
+    Māyā (the Divine’s power of self-concealment-in-plurality) is indeed
+
+    bewildering; She is established as that which effects (kalana) the limited
+
+    powers (kalā) of the embodied self. Knowing (kalayan) the primordial
+
+    property (ādi-dharma) of the Principles of Reality, one will no longer
+
+    experience separation. || 95'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: māyā (माया)
+    definition: √mā ‘measure/form’ → measuring display-power → the power of consciousness that bewilders
+      and makes the one Self appear as many separate, disconnected things → ‘illusion’ as fake world misses
+      māyā as Śiva’s own freeness to appear as many
+    lemma_id: maya
+    sense_id: maya.shaiva
+  - term: kalā (कला)
+    definition: √kal → finite portion/power-aspect → the principle of limitation that parcels the unbounded
+      into finite, measured portions (of agency, knowledge, etc.) → ‘art/digit’ misses the limiting principle
+      that measures unbounded agency
+    lemma_id: kala
+    sense_id: kala.portion
+  - term: tattva (तत्त्व)
+    definition: tat + -tva → that-ness/principle → A constitutive principle or level of reality in the
+      Śaiva unfolding of the universe from pure consciousness → ‘element/truth’ flattens a constitutive
+      principle in the Śaiva map—or true reality vs construct
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Māyā Is Dependence, Not a Second Reality
+    resonance: Both texts identify māyā as the mechanism by which a transcendent principle (the Maker/Divine)
+      projects limited individual powers or perspectives into manifestation. The knower becomes constrained
+      within a field of appearance that obscures the source.
+    divergence: Vijnana Bhairava treats māyā's bewildering power as the starting point for inward attention
+      to recover the knower; Svetasvatara emphasizes the cosmological structure of constraint itself,
+      with less focus on the method of return.
+    passage_id: svetasvatara_upanishad.svu_002
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts locate the problem in attention: the soul/self continuously enacts its nature,
+      but remains unaware because perception is absorbed in external content rather than turned toward
+      the knowing subject itself.'
+    divergence: Plotinus frames this as a natural but unexamined condition of soul; Vijnana Bhairava frames
+      it as māyā's active concealment, requiring deliberate inward redirection of attention to the knower.
+    passage_id: plotinus_enneads.enn_v_1_12
+  layer_provenance: generated_grounded

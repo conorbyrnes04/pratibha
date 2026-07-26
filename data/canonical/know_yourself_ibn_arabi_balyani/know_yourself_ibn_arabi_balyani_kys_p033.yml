@@ -96,3 +96,35 @@ abhyasa: 'Whisper the words "knows himself" — not "annihilates himself" — on
   correction land: there is no self here to first build up and then destroy, only a knowing that was never
   a thing beside God.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away, evanescence’ → passing-away of the egoic claim before the
+      Real Here: To insist on annihilation is therefore to smuggle in a second existence alongside God
+      — a hidden polytheism (shirk). Trap: self-erasure as quietism or dissociation rather than clearing
+      of false independence'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: wujūd (وجود)
+    definition: 'Arabic wujūd ‘finding/being found; existence’ → being as what is found in God alone;
+      creatures have no independent wujūd Here: This passage strikes at the heart of the treatise''s teaching
+      on waḥdat al-wujūd, the oneness of being. Trap: treating ‘existence’ as a neutral metaphysical predicate
+      shared equally by God and world'
+  - term: waḥdat al-wujūd
+    definition: '‘unity of being/finding’ → the Real’s being is one; multiplicity is relational appearance,
+      not rival substances Here: This passage strikes at the heart of the treatise''s teaching on waḥdat
+      al-wujūd, the oneness of being. Trap: pantheist collapse that erases servant/Lord distinction'
+  - term: tawḥīd (توحيد)
+    definition: 'Arabic tawḥīd from waḥḥada ‘to make/declare one’ → absolute oneness of the Real, radicalized
+      here as sole agency and sole being Here: But such affirmation is exactly what tawḥīd forbids. Trap:
+      hearing a creedal slogan rather than ontological exclusivity of wujūd'
+    lemma_id: tawhid
+    sense_id: tawhid.islamic
+  - term: shirk (شرك)
+    definition: '‘association/partnership’ → ascribing independent power or being to what is other-than-God
+      Here: To insist on annihilation is therefore to smuggle in a second existence alongside God — a
+      hidden polytheism (shirk). Trap: narrowing to idol-worship while missing subtle self-ascription
+      of agency'
+  layer_provenance: editorial-enriched

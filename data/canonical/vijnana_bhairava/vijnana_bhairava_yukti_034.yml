@@ -75,3 +75,76 @@ abhyasa: 'Sit and let two clearly different sensations become available at once�
   plain fact of being aware. Rest there for as long as it holds, and repeat whenever the mind reattaches.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: उभयोर् भावयोर् ज्ञाने ध्यात्वा मध्यं समाश्रयेत् । युगपच् च द्वयं त्यक्त्वा मध्ये तत्त्वम् प्रकाशते
+    ॥ ६१ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ubhayor bhāvayor jñāne dhyātvā madhyaṃ samāśrayet | yugapac ca dvayaṃ tyaktvā madhye tattvam prakāśate
+    || 61 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #34
+
+    Contemplating the cognition of any two entities (bhāvas) or any
+
+    two states of mind or body (bhāvas), take refuge in the center
+
+    [between them] & rest in the center. Releasing both
+
+    simultaneously, Reality shines in the Center. || 61'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: madhya (मध्य)
+    definition: madhya ‘middle/center’ → the middle or interval between two states, where awareness is
+      momentarily free of any object → ‘center’ as geometry misses the still hinge between movements where
+      awareness opens
+  - term: tattva (तत्त्व)
+    definition: tat + -tva → that-ness/principle → the real, the essential nature of consciousness itself
+      as knowing subject → ‘element/truth’ flattens a constitutive principle in the Śaiva map—or true
+      reality vs construct
+  - term: yugapat (युगपत्)
+    definition: yugapad variant → simultaneously → simultaneously, at once—here, releasing both states
+      in the same instant rather than one after the other → simultaneity as practice claim, not multitasking
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: 'Both texts prescribe a deliberate redirecting of attention from dispersed content back
+      to a stable center or ground—Yukti 34 through contemplating the gap between two cognitions, Bhagavad
+      Gita through iterative return of attention from distraction to center. The move is identical: attention
+      itself becomes the instrument of stabilization.'
+    divergence: Yukti 34 locates the center as the knower (consciousness itself) between mental states;
+      Bhagavad Gita frames the return as a disciplinary habit of body and mind, emphasizing gradual mastery
+      rather than direct recognition of the witnessing principle.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Shantideva Bodhicaryavatara — Stillness Before Insight
+    resonance: 'Both texts identify scattered attention as the root vulnerability to affliction, and both
+      prescribe gathered concentration as the antidote—Yukti 34 through resting in the center between
+      cognitions, Bodhicaryavatara through building energy and steadying the mind in concentration. The
+      structural move is: dispersal = danger; gathering = liberation.'
+    divergence: Yukti 34 emphasizes inward turn to the knower as the mechanism; Bodhicaryavatara emphasizes
+      the sequential cultivation of energy (vīrya) before concentration, grounding the practice in ethical
+      and energetic preparation rather than direct recognition.
+    passage_id: shantideva_bodhicaryavatara.bca_08_solitude
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: Both texts refuse to locate the ultimate principle (mind/consciousness) within spatial
+      or conceptual boundaries—Yukti 34 by resting in the center between two entities (implying the center
+      is not locatable as an object), Mahamudra by declaring mind has no center and no circumference.
+      Both dissolve the search for a fixed position.
+    divergence: Yukti 34 uses the between-space as a practical gateway to the knower; Mahamudra uses spatial
+      negation to point directly to the unlocatable nature of mind itself, emphasizing non-conceptual
+      recognition over meditative technique.
+    passage_id: tilopa_mahamudra.til_002
+  layer_provenance: generated_grounded

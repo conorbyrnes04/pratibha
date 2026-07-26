@@ -83,3 +83,108 @@ abhyasa: Each time you notice yourself striving toward a result—tightening aro
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: अभ्यासवैराग्याभ्यम् तन्निरोधः
+- kind: iast
+  label: IAST
+  body: abhyāsavairāgyābhyāṃ tannirodhaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The suppression of the mind’s fluctuations is secured by sustained practice and by detachment.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The core claim of this sutra is that the cessation of the mind’s vṛtti (mental modifications)
+    is not a passive event but an active, sustained effort that couples disciplined practice (abhyāsa)
+    with the cultivation of vairagya (detachment). In the Yoga and Sāṃkhya frameworks, the mind’s restless
+    activity is seen as a product of prakṛti’s inherent dynamism; only through disciplined abhyāsa can
+    one begin to tame this dynamism, and only through vairagya can one prevent its re‑ignition. This sutra
+    therefore presents a two‑step process: first, the practitioner must engage in continuous, focused
+    practice that trains the mind to remain still; second, the practitioner must develop a state of non‑attachment
+    that dissolves the underlying causes (rāga, dvesha, asmita) that fuel vṛtti. The Dvivedi commentary’s
+    emphasis on “non‑attachment” rather than “dispossession” highlights the existential dimension: it
+    is not the loss of external objects that matters, but the loss of the mind’s craving for them. This
+    aligns with the Sāṃkhya notion that the mind’s fluctuations arise from misidentification of puruṣa
+    with prakṛti. By practicing and cultivating vairagya, one re‑establishes the proper distinction, allowing
+    samādhi to arise as a state of pure awareness. The sutra’s brevity masks a profound pedagogical strategy:
+    practice is the means, detachment is the end condition; together they form a self‑sustaining cycle
+    that leads to the ultimate liberation of puruṣa from prakṛti’s bondage.
+
+
+    Key Terms
+
+
+    **abhyāsa (अभ्यास)** — root: ‘to practice, to train’; Sāṃkhya: disciplined effort to control prakṛti;
+    Yoga: sustained meditation practice; default translation ‘practice’ omits its role as a preparatory
+    condition for samādhi.
+
+
+    **vairagya (वैराग्य)** — root: ‘to renounce, to detach’; Sāṃkhya: absence of attachment (rāga); Yoga:
+    non‑attachment that dissolves vṛtti; default ‘detachment’ misses its active, transformative quality.
+
+
+    **vṛtti (वृत्ति)** — root: ‘modification, activity’; Sāṃkhya: mental modifications arising from prakṛti;
+    Yoga: fluctuations of the mind that must be suppressed; default ‘fluctuation’ fails to convey its
+    causal link to prakṛti.
+
+
+    **samādhi (समाधि)** — root: ‘union, absorption’; Sāṃkhya: state where puruṣa is free from prakṛti;
+    Yoga: culmination of abhyāsa and vairagya; default ‘concentration’ underplays its transcendental nature.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 1.12:** Structural homology: suppression (tannirodhaḥ) parallels suppression of prakṛti
+    in 1.1; both require active effort.
+
+    *Divergence:* While 1.1 speaks of stopping prakṛti’s activity, 1.12 specifies the mind’s vṛtti, highlighting
+    a shift from external to internal focus.
+
+
+    **Sāṃkhya Karika 1.2:** Both texts link practice (abhyāsa) with the cessation of mental activity;
+    1.2 emphasizes puruṣa’s discrimination.
+
+    *Divergence:* Sāṃkhya Karika does not explicitly mention vairagya as a necessary condition, making
+    1.12 a more complete prescription.
+
+
+    **Dvivedi Commentary on YS 1.12:** Dvivedi interprets vairagya as non‑attachment, aligning with Sāṃkhya’s
+    notion of disidentification.
+
+    *Divergence:* Dvivedi’s translation of vairagya as ‘non‑attachment’ rather than ‘dispossession’ diverges
+    from earlier commentaries, emphasizing the existential rather than material aspect.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: nirodha (निरोध)
+    definition: 'ni + √rudh ‘obstruct, restrain’ → cessation/stilling -> in “Suppression Secured by Practice
+      and Detachment”: cessation, stilling, or the settling of mental fluctuations into a state of transparent,
+      undisturbed awareness -> not annihilation of mind; settling of flux so awareness is no longer hijacked'
+  - term: vairāgya (वैराग्य)
+    definition: 'vi-rāga ‘dispassion / fading of coloring’ -> in “Suppression Secured by Practice and
+      Detachment”: default ‘detachment’ misses its active, transformative quality -> not cold indifference;
+      mastery of thirst so objects lose compulsive pull'
+  - term: abhyāsa (अभ्यास)
+    definition: 'abhi-√ās ‘sit toward’ → sustained practice -> in “Suppression Secured by Practice and
+      Detachment”: disciplined effort to control prakṛti -> not sporadic effort; long, uninterrupted,
+      earnest cultivation of stability'
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Suppression Secured by Practice
+      and Detachment”: default ‘fluctuation’ fails to convey its causal link to prakṛti -> not ‘bad thoughts’
+      only — any cognitive wave (valid cognition, error, fantasy, sleep, memory)'
+  - term: samādhi (समाधि)
+    definition: 'sam-ā-√dhā ‘settle completely together’ -> in “Suppression Secured by Practice and Detachment”:
+      state where puruṣa is free from prakṛti -> not trance-entertainment or unconsciousness; graded absorption
+      where subject–object friction quiets'
+    lemma_id: samadhi
+    sense_id: samadhi.yoga
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Apply focused, sustained meditation, observing each thought as it arises and letting it pass without
+    attachment, thereby suppressing the mind’s fluctuations.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: Its suppresion is secured by application and

@@ -150,3 +150,92 @@ section: VI.723–730
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'جان بسی کندی و اندر پرده‌ای /// زانک مردن اصل بد ناورده‌ای
+
+    تا نمیری نیست جان کندن تمام /// بی‌کمال نردبان نایی به بام
+
+    چون ز صد پایه دو پایه کم بود /// بام را کوشنده نامحرم بود
+
+    چون رسن یک گز ز صد گز کم بود /// آب اندر دلو از چه کی رود
+
+    غرق این کشتی نیابی ای امیر /// تا بننهی اندرو من الاخیر
+
+    من آخر اصل دان کو طارقست /// کشتی وسواس و غی را غارقست
+
+    آفتاب گنبد ازرق شود /// کشتی هش چونک مستغرق شود
+
+    چون نمردی گشت جان کندن دراز /// مات شو در صبح ای شمع طراز'
+- kind: iast
+  label: Transliteration note
+  body: Persian — see Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: 'You have suffered much agony, yet you are still in the veil — because dying (to self) was the
+    root principle, and you have not fulfilled it. Your agony is not finished till you die: without completing
+    the ladder you cannot reach the roof. When two rungs out of a hundred are wanting, the striver remains
+    barred from the roof. When the rope lacks one ell of a hundred, how should water rise from the well
+    into the bucket? O Amīr, you will not find the wreck of this ship until you put into it the last *mann*.
+    Know that last *mann* as fundamental — the night-star that wrecks the ship of whisper and error. When
+    the ship of (self-)consciousness is utterly sunk, it becomes the sun in the blue vault. Since you
+    have not died, your agony has been prolonged: be extinguished in the dawn, O candle of Tīrāz!'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Spiritual effort without *mawt* (dying to the self-claim) is incomplete labor: ninety-eight rungs
+    still leave the roof forbidden. The hadith *mūtū qabla an tamūtū* is not metaphor for mild restraint;
+    Rūmī treats voluntary death as the missing last measure without which the ship of ego never wrecks
+    into light. Existentially: name the rung you keep refusing — the last *mann* you will not load.
+
+
+    Key Terms
+
+
+    **مردن murdan** — dying (to self); the *aṣl* (root) left undone.
+
+
+    **جان کندن jān kandan** — agony / soul-labor; unfinished until death.
+
+
+    **من آخر mann-e ākhir** — the last measure that sinks the ship of self.
+
+
+    **مات شو māt shaw** — be extinguished / checkmated; dawn-death of the candle-ego.
+
+
+    Cross-Tradition Resonances
+
+
+    **Meister Eckhart, *Von Abegescheidenheit*:** Both make detachment (or dying) the condition without
+    which spiritual technique remains veiled labor.
+
+    *Divergence:* Eckhart frames *abegescheidenheit* as Gelassenheit toward God; Rūmī insists on shipwreck
+    of the conscious self (*kashtī-ye hush*).
+
+
+    **Bhagavad Gītā 2.55–57 (sthita-prajña):** Both describe a completed inner death that ends restless
+    striving.
+
+    *Divergence:* Kṛṣṇa stabilizes desire; Rūmī demands the last rung — incompleteness itself is the barrier.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: Your Agony
+      Is Not Finished Till You Die Your Agony Is Not Finished Till You Die جان بسی کندی و اندر پرده‌ای
+      /// زانک مردن اصل بد ناورده‌ای تا نمیری نیست جان کن… Trap: erotic fusion fantasy without the discipline
+      of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: rūḥ (روح)
+    definition: '‘spirit’ → the living breath that remembers God and suffers exile in form Here: Since
+      you have not died, your agony has been prolonged: be extinguished in the dawn, O candle of Tīrāz!
+      Spiritual effort without *mawt* (dying to the self-clai… Trap: ghostly ‘spirit’ without ethical/ontological
+      force'
+    lemma_id: psyche
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: 'Name one practice you treat as “almost complete.” For three breaths, ask: what is the last *mann*
+    I refuse to load? Do not load it yet — only feel the refusal.'

@@ -88,3 +88,64 @@ abhyasa: 'Sit near another living being — a person, or even a pet or a person 
   belonging to neither. A few minutes daily; over days the boundary loosens on its own.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: स्ववद् अन्यशरीरेऽपि संवित्तिम् अनुभावयेत् । अपेक्षां स्वशरीरस्य त्यक्त्वा व्यापी दिनैर् भवेत्
+    ॥ १०७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: svavad anyaśarīre'pi saṃvittim anubhāvayet | apekṣāṃ svaśarīrasya tyaktvā vyāpī dinair bhavet
+    || 107 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #79
+
+    Cultivate the felt-sense that the consciousness in another’s body
+
+    is the same as one’s own. Releasing obsession with one’s own
+
+    body, one experiences one’s all-pervasiveness within days. || 107'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: saṃvitti (संवित्ति)
+    definition: 'sam- + √vid → unified awareness → sentient awareness, the living fact of being conscious
+      — here recognized as one, not many → same as samvitti: whole knowing, not a mental content'
+  - term: vyāpin (व्यापिन्)
+    definition: pervader → pervasive, all-extending; the natural condition of consciousness once its bodily
+      limit is dropped → ‘that which pervades’—awareness as pervader, not a substance spread in space
+  - term: apekṣā (अपेक्षा)
+    definition: apa- + √īkṣ ‘look toward’ → dependence/expectation → dependence or reference-point; the
+      mental anchoring of awareness to 'my body,' which the practice releases → ‘expectation’ as psychology
+      misses ontological reliance that binds awareness
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 15
+    resonance: 'Both texts move from recognizing consciousness as universal to assimilating or identifying
+      with that universality: Yukti 79 cultivates felt-sense of identical consciousness across bodies;
+      Pratyabhijnahrdayam 15 describes obtaining the Power of Consciousness and assimilating the universe
+      to oneself through unity-experience.'
+    divergence: Yukti 79 emphasizes the immediate felt-sense of sameness in another's body as the method;
+      Pratyabhijnahrdayam frames this as a power obtained and then extended outward to assimilate the
+      universe, making it more cosmological than phenomenological.
+    passage_id: pratyabhijnahrdayam.phr_015
+  - citation: Astavakra Gita — Verse 15.7
+    resonance: 'Both texts use a structural reversal: instead of consciousness being located in the body,
+      the body/universe appears within consciousness. Yukti 79 shifts attention from content to knower;
+      Astavakra Gita 15.7 reframes the universe as appearance within you (like waves in ocean), inverting
+      the usual subject-object relation.'
+    divergence: Yukti 79 works through intersubjective recognition (consciousness in another); Astavakra
+      Gita works through a non-dual collapse of inside/outside, making the universe itself the appearance
+      rather than focusing on shared consciousness between persons.
+    passage_id: astavakra_gita.asg_15_7
+  layer_provenance: generated_grounded

@@ -94,3 +94,103 @@ abhyasa: Keep your supply wagon visible. Place one object that represents your u
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '重為輕根，靜為躁君。
+
+    是以聖人終日行不離輜重。
+
+    雖有榮觀，燕處超然。
+
+    奈何萬乘之主，而以身輕天下？
+
+    輕則失本，躁則失君。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Gravity is the root of lightness; stillness, the ruler of movement.
+
+
+    Therefore a wise prince, marching the whole day, does not go far from his baggage waggons.
+
+
+    Although he may have brilliant prospects to look at, he quietly remains (in his proper place), indifferent
+    to them.
+
+
+    How should the lord of a myriad chariots carry himself lightly before the kingdom?
+
+
+    If he do act lightly, he has lost his root (of gravity); if he proceed to active movement, he will
+    lose his throne.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that the paradox of leadership lies in the balance between gravity (重) and
+    stillness (靜). The contested move is the ruler’s attempt to carry himself lightly (輕) while governing
+    a vast realm (萬乘之主). The Tao warns that such lightness erodes the very root (本) of authority, while
+    restlessness (躁) shatters the throne (君). The lesson is that a wise sovereign must remain tethered
+    to his responsibilities, neither drifting away nor becoming rigidly fixed, but moving with a measured,
+    grounded rhythm that sustains both the realm and the ruler’s integrity.
+
+
+    Key Terms:
+
+
+    **zhòng (重)** — weight, gravity -> the Taoist sense of foundational solidity -> grounding in leadership
+
+    **qìng (靜)** — stillness, calm -> the Taoist sense of inner quiet -> steady governance
+
+    **zhǔ (主)** — lord, ruler -> the Taoist sense of sovereign authority -> the one who must balance
+
+    **bǎn (本)** — root, origin -> the Taoist sense of essential nature -> the core of power'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Weight of Leadership”: Gravity is the root of lightness;
+      stillness, the ruler of movement. -> not mere possession; the named/manifest pole that co-arises
+      with wú'
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “The Weight of Leadership”: Gravity is the root of
+      lightness; stillness, the ruler of movement. -> not canonized saint; the one who acts by emptying
+      self-assertion so the world orders itself'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Weight of Leadership”:
+      Gravity is the root of lightness; stillness, the ruler of movement. -> not only ‘the world’ as map;
+      the realm that cannot be seized by contrivance'
+  - term: jìng (靜)
+    definition: '靜 ‘still/quiet’ -> in “The Weight of Leadership”: load-bearing in “”; stakes the argument
+      of: Gravity is the root of lightness; stillness, the ruler of movement. -> not inert silence; stillness
+      that masters restlessness and returns things to root'
+  - term: shēn (身)
+    definition: '身 ‘body/person/self-as-lived’ -> in “The Weight of Leadership”: Gravity is the root of
+      lightness; stillness, the ruler of movement. -> not corpse anatomy only; the vulnerable personhood
+      one can lose by clinging to empire/self'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 3 (The Tao is the source of all things)
+    resonance: Both chapters emphasize the primacy of the Tao as the source of all action, whether in
+      nature or governance.
+    divergence: Chapter 26 focuses on the physicality of weight and stillness, while chapter 3 speaks
+      more abstractly of the Tao as a metaphysical principle
+    passage_id: ''
+  - citation: chapter 48 (The Tao is the source of all things)
+    resonance: Both chapters highlight the idea that the Tao is the root of all phenomena, including human
+      affairs.
+    divergence: Chapter 26 uses concrete metaphors of weight and movement, whereas chapter 48 presents
+      a more poetic, universal statement
+    passage_id: ''
+  - citation: chapter 55 (The Tao is the source of all things)
+    resonance: Both chapters remind leaders to align with the Tao to maintain harmony.
+    divergence: Chapter 26 deals with the practical balance of lightness and stillness, while chapter
+      55 emphasizes the broader concept of the Tao as the source of all action
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet space with your feet firmly planted on the ground. Close your eyes, breathe slowly,
+    and imagine the weight of your body anchoring you to the earth. As you inhale, feel the gravity of
+    responsibility; as you exhale, release any restless thoughts. Repeat for five minutes, cultivating
+    a steady, grounded presence that mirrors the Taoist ideal of balanced leadership.

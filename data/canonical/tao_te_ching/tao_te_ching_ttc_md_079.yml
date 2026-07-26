@@ -108,3 +108,95 @@ abhyasa: 'Hold the left tally without unfolding it: identify one person from who
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '和大怨，必有餘怨；
+
+    安可以為善？
+
+    是以聖人執左契，而不責於人。
+
+    有德司契，無德司徹。
+
+    天道無親，常與善人。'
+- kind: translation
+  label: Pratibha Translation
+  body: When a reconciliation is effected after a great animosity, there is sure to be a lingering grudge;
+    how can this be a good thing? Therefore the sage keeps the left‑hand part of the contract, and does
+    not insist on the other party’s compliance. The one who has virtue governs the contract, the one who
+    lacks virtue governs the dissolution. The Way of Heaven has no partiality; it is always with the good
+    man.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that true harmony cannot be forced; the sage’s strategy is to hold only
+    the *left* portion of the agreement—symbolic of restraint—rather than demanding immediate fulfillment.
+    The contested move is the *left‑hand* retention: it is a subtle way of letting the other party act
+    freely while the sage remains detached. By doing so, the sage avoids the trap of *wúwéi* (non‑action)
+    that would otherwise lead to resentment. The passage also contrasts the *de* (virtue) of the sage,
+    who governs the contract, with the *de* of the unvirtuous, who governs dissolution—highlighting that
+    virtue is the true regulator of agreements, not force.
+
+
+    The text echoes the Daoist principle that the Way of Heaven (*tiān dào*) is impartial, favoring the
+    good simply because the good aligns with the natural order. Yet the chapter diverges from the ideal
+    of *zìrán* (naturalness) by acknowledging that human emotions persist; the sage’s quiet hand is a
+    pragmatic concession to the reality of *yǔn* (resentment). Thus, the chapter blends ideal Daoist impartiality
+    with a realistic, compassionate strategy for dealing with human frailty.
+
+
+    Key Terms:
+
+
+    **左契 (zuǒ qì)** — left‑hand part of a contract -> a symbolic restraint, a partial commitment that
+    preserves freedom for the other party -> "holding only the left part"
+
+    **天道 (tiān dào)** — Way of Heaven -> the Dao’s impartial nature, favoring the good because it follows
+    the natural order -> "the Way of Heaven has no partiality"'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: cháng (常)
+    definition: '常 ‘constant/enduring’ -> in “Reconciliation and the Sage’s Quiet Hand”: When a reconciliation
+      is effected after a great animosity, there is sure to be a lingering grudge; how can this be a …
+      -> not theological eternity with start/stop brackets — what persists through change without being
+      used up'
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “Reconciliation and the Sage’s Quiet Hand”: When a
+      reconciliation is effected after a great animosity, there is sure to be a lingering grudge; how
+      can this be a … -> not a deity named Tao or a lifestyle brand — source-and-course that resists full
+      naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “Reconciliation and the Sage’s Quiet Hand”: When a reconciliation
+      is effected after a great animosity, there is sure to be a lingering grudge; how can this be a …
+      -> not mere possession; the named/manifest pole that co-arises with wú'
+  - term: dé (德)
+    definition: '德 ‘virtue/potency/accrued power’ -> in “Reconciliation and the Sage’s Quiet Hand”: the
+      lived expression of alignment with dào -> not Victorian moralism — a thing’s unforced efficacy when
+      it accords with dào'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: wú (無)
+    definition: '無 ‘without / not-have’ -> in “Reconciliation and the Sage’s Quiet Hand”: When a reconciliation
+      is effected after a great animosity, there is sure to be a lingering grudge; how can this be a …
+      -> not nihilistic void; generative absence (of forcing, name, desire) that opens function'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 1 (the Way is quiet, the world is still)
+    resonance: both emphasize the power of non‑action and restraint
+    divergence: chapter 79 demands active withholding, whereas chapter 1 merely observes
+    passage_id: ''
+  - citation: chapter 42 (the sage is like a child)
+    resonance: both stress simplicity and naturalness in dealing with others
+    divergence: chapter 79 uses a specific contractual metaphor, while chapter 42 uses childlike simplicity
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: When you must settle a dispute, write down only the part of the agreement that you can control.
+    Hold it lightly, and let the other party act freely. If they fail, do not press them; instead, observe
+    and adjust your own conduct, trusting that the Way of Heaven will guide the good toward harmony.

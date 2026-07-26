@@ -9,32 +9,27 @@ title: Is Virtue a Thing Remote
 unit_type: sutra
 sanskrit_devanagari: 子曰：「仁遠乎哉？我欲仁，斯仁至矣。」
 sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
-translation_literal: 'The Master said: "Is rén 仁 really so far away? The moment I want rén, it is right
-  here."'
-commentary: 'This brief remark overturns any notion that moral excellence is a distant summit reached
-  only by rare sages after decades of struggle. Confucius locates rén 仁 — humaneness, the fullest expression
-  of caring conduct toward others — not in external circumstances or special talent, but in the will.
-  What separates a person from rén is not distance but desire: the genuine wish to act humanely already
-  begins the humane act. The teaching does not claim that mastering rén is effortless; elsewhere Confucius
-  treats it as the work of a lifetime. Rather, it insists that the starting point is always immediately
-  available. Every situation offers a fresh chance to choose consideration over indifference, and that
-  choice belongs entirely to us. The passage thus places responsibility squarely on the individual while
-  offering real encouragement: the good you aim at is never locked away somewhere else, waiting on conditions
-  you cannot control.
+translation_literal: 'The Master said: "Is rén 仁 really so far away? The moment I want rén, it is right here."'
+commentary: 'This brief remark overturns any notion that moral excellence is a distant summit reached only by rare sages after
+  decades of struggle. Confucius locates rén 仁 — humaneness, the fullest expression of caring conduct toward others — not
+  in external circumstances or special talent, but in the will. What separates a person from rén is not distance but desire:
+  the genuine wish to act humanely already begins the humane act. The teaching does not claim that mastering rén is effortless;
+  elsewhere Confucius treats it as the work of a lifetime. Rather, it insists that the starting point is always immediately
+  available. Every situation offers a fresh chance to choose consideration over indifference, and that choice belongs entirely
+  to us. The passage thus places responsibility squarely on the individual while offering real encouragement: the good you
+  aim at is never locked away somewhere else, waiting on conditions you cannot control.
 
 
   Key Terms
 
 
-  **rén 仁** — Humaneness or benevolence; the disposition to treat others with genuine care and consideration,
-  the central virtue in Confucius''s teaching.'
-insight: '«Is Virtue a Thing Remote» treats cultivation as a public-and-private craft: virtue is not a
-  mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper
-  gain.'
-practice: 'The moment you feel indifference rising toward someone—a dismissal, an urge to turn away—pause
-  and whisper aloud or under your breath: "The moment I want it, it is right here." Then turn toward that
-  person with one small act of attention: a direct look, a question, a word of care. Let the wanting itself
-  be the practice.'
+  **rén 仁** — Humaneness or benevolence; the disposition to treat others with genuine care and consideration, the central
+  virtue in Confucius''s teaching.'
+insight: '«Is Virtue a Thing Remote» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+  pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'The moment you feel indifference rising toward someone—a dismissal, an urge to turn away—pause and whisper aloud
+  or under your breath: "The moment I want it, it is right here." Then turn toward that person with one small act of attention:
+  a direct look, a question, a word of care. Let the wanting itself be the practice.'
 upaya: ''
 themes:
 - action
@@ -61,10 +56,41 @@ provenance:
   original_id: AN_07_29
   source_reference: ''
 translation: 'The Master said: "Is rén 仁 really so far away? The moment I want rén, it is right here."'
-abhyasa: 'The moment you feel indifference rising toward someone—a dismissal, an urge to turn away—pause
-  and whisper aloud or under your breath: "The moment I want it, it is right here." Then turn toward that
-  person with one small act of attention: a direct look, a question, a word of care. Let the wanting itself
-  be the practice.'
-translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
-  a critical edition.
+abhyasa: 'The moment you feel indifference rising toward someone—a dismissal, an urge to turn away—pause and whisper aloud
+  or under your breath: "The moment I want it, it is right here." Then turn toward that person with one small act of attention:
+  a direct look, a question, a word of care. Let the wanting itself be the practice.'
+translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 子曰：「仁遠乎哉？我欲仁，斯仁至矣。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: The Master said, 'Is virtue a thing remote? I wish to be virtuous, and lo! virtue is at hand.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«Is Virtue a Thing Remote» treats cultivation as a public-and-private craft: virtue is not a mood but a trained pattern
+    of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living reader to test
+    the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands in attention,
+    then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+    insight without application remains incomplete. Return again to the original wording when the mind wants to smooth the
+    edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: rén (仁)
+    definition: 'humaneness → is it far? I desire it and it is here → trap: instant self-help'
+  - term: yù rén (欲仁)
+    definition: 'desiring humaneness → proximity of the virtue → trap: wishing equals having'
+  - term: sī rén zhì yǐ (斯仁至矣)
+    definition: 'rén arrives → immediacy of moral presence → trap: magical arrival'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'

@@ -137,3 +137,108 @@ abhyasa: Pick a self-description you rely on for safety — 'I'm the reliable on
   to what is actually in front of you rather than to the rule you carried in.
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '莊子行於山中，見大木，枝葉盛茂。
+
+    伐木者止其旁而不取也。
+
+    問其故，曰：「無所可用。
+
+    」莊子曰：「此木以不材得終其天年。
+
+    」夫子出於山，舍於故人之家。
+
+    故人喜，命豎子殺雁而烹之。
+
+    豎子請曰：「其一能鳴，其一不能鳴，請奚殺？
+
+    」主人曰：「殺不能鳴者。
+
+    」明日，弟子問於莊子曰：「昨日山中之木，以不材得終其天年；
+
+    今主人之雁，以不材死。
+
+    先生將何處？'
+- kind: translation
+  label: Pratibha Translation
+  body: 'I rest halfway between the two. In that position, appearing to be what I am not, it is impossible
+    to avoid the troubles of mortality. But if one is charioted upon Tao and floats far above, this is
+    not so. Without praise, without blame—now a dragon, now a serpent—transforming with the times, never
+    insisting on a single form. Rising and falling, using harmony as the measure, floating in the ancestor
+    of all things: when you embody things without being possessed by things, how could harm ever catch
+    you? This is the law of Shen Nong and the Yellow Emperor.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The contested move here is Zhuangzi''s refusal to resolve the paradox through dialectical synthesis.
+    He does not argue that uselessness is secretly useful, nor that utility conceals danger. Instead,
+    he abandons the binary frame itself by inhabiting the *interval* (間) between positions—a space of
+    perpetual non-commitment. This is not indifference but radical responsiveness: the sage moves with
+    circumstance rather than against it, embodying what the text calls ''emptiness'' (虛). The practical
+    stakes are high: to choose sides (useless or useful, life or death) is to become *entangled* (累),
+    trapped in the very categories that generate suffering.
+
+
+    Key Terms:
+
+
+    **材 cái** - timber/material/talent → fitness for use → in Zhuangzi: the trap of being *defined by
+    function*. Uselessness (不材) is not mere negation but freedom from instrumental capture.
+
+    **虛 xū** - emptiness/hollowness → receptivity → the condition of non-obstruction. The sage empties
+    the self to float unimpeded through circumstance.
+
+    **累 lèi** - entanglement/burden/constraint → existential weight of commitment to fixed positions.
+    All moral stances, even noble ones, become fetters.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: wúyòng (無用)
+    definition: '無用 “without use” — the great use of the useless -> in this passage (uselessness and the
+      Middle Way), uselessness as survival and freedom: what cannot be extracted escapes the axe -> trap:
+      mere inefficiency; Zhuangzi’s wúyòng is strategic non-instrumentality'
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (uselessness and the Middle Way), the nameless source-and-course that lets beings move
+      by their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed doctrine one can
+      possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (uselessness and the Middle Way), unforced congruence with conditions: skill that does not
+      obstruct the work -> trap: “non-action” as passivity; wúwéi can be highly skilled activity without
+      strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: zìrán (自然)
+    definition: '自然 “self-so” — thus-of-itself, not “picturesque nature” -> in this passage (uselessness
+      and the Middle Way), spontaneous so-ness: things unfolding without forced contrivance -> trap: Romantic
+      wilderness aesthetics; zìrán is ontological non-forcing, not scenery'
+    lemma_id: ziran
+    sense_id: ziran.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Heraclitus, Fragment 49: ''One cannot step into the same river twice'''
+    resonance: Both reject static identity; both posit flux as fundamental. The sage must *become* the
+      river rather than stand on its bank.
+    divergence: Heraclitus emphasizes the *logos* governing change; Zhuangzi emphasizes *non-action* (wu
+      wei) within change—no principle, only responsiveness.
+    passage_id: ''
+  - citation: 'Aristotle, Nicomachean Ethics II.6: virtue as the mean between extremes'
+    resonance: Both locate wisdom in a middle position. Zhuangzi's 'between' (間) appears structurally
+      similar to Aristotle's mesotes.
+    divergence: Aristotle's mean is *stable and knowable*; Zhuangzi's interval is *mobile and empty*—it
+      cannot be fixed as a doctrine or habit.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'When facing a choice that seems to demand commitment to one side (useful/useless, right/wrong,
+    success/failure), pause and ask: *What would it mean to embody both without choosing?* Sit with the
+    tension for one full breath cycle. Notice how the pressure to decide dissolves when you stop treating
+    the categories as real. Move through your next decision from this emptiness, responding to what the
+    moment requires rather than what your position demands.'

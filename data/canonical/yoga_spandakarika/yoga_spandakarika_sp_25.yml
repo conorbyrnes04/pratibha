@@ -80,3 +80,60 @@ abhyasa: 'Several times today, catch the natural pause at the end of your out-br
   — present and luminous in the silence rather than absent in it.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: तदा तस्मिन्महाव्योम्नि प्रलीनशशिभास्करे । सौषुप्तपदवन्मूढः प्रबुद्धः स्यादनावृतः ॥ २५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: tadā tasminmahāvyomni pralīnaśaśibhāskare | sauṣuptapadavanmūḍhaḥ prabuddhaḥ syādanāvṛtaḥ || 25
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: At that moment, when in the sky the sun and the moon disappear, the awakened person remains lucid,
+    whereas the ordinary person sinks into unconsciousness.
+- kind: commentary
+  label: Pratibha Commentary
+  body: When consciousness reveals itself to the unconscious person whose actions are automatic and whose
+    distraction from the source is permanent, there no longer exists a division between the states. The
+    sun and the moon suddenly appear in the space of the infinite body of the yogi and the yogini. Water
+    it with the water of worship In the fullness of the action.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: mahāvyoman (महाव्योमन्)
+    definition: maha + vyoman ‘sky’ → the 'great space' or vast expanse of pure awareness into which the
+      flows of experience dissolve → ‘great space’ physicalizes the vast open of consciousness
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness that persists even
+      when perception and breath fall silent → ‘vibration/energy’ physicalizes or New-Ages the throb of
+      consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: anāvṛta (अनावृत)
+    definition: an- + āvṛta ‘covered’ → unveiled, uncovered — awareness revealed without its usual coverings
+      of duality → ‘uncovered’ is weak—the ground that cannot be veiled even when ignored
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — 11.1 — 11.8 (Selected)
+    resonance: 'Both texts establish a diagnostic principle: the awakened person recognizes the *source*
+      of suffering/unconsciousness (worry, the nature of change) and thereby remains lucid through apparent
+      dissolution, while the unawakened person is trapped in automatic reactivity to that same condition.'
+    divergence: Astavakra Gita locates liberation in intellectual certainty about causation (worry causes
+      suffering), while Spandakarika locates it in direct consciousness-revelation that dissolves the
+      division between states themselves—a non-dual recognition rather than a logical inference.
+    passage_id: astavakra_gita.asg_sum_11_01_11_08
+  - citation: Isavasya Upanishad — Mantra 10
+    resonance: 'Both texts posit a fundamental bifurcation in human capacity: vidya (knowledge/lucidity)
+      and avidya (ignorance/unconsciousness) yield structurally opposite outcomes—one liberative, one
+      binding—and this division is irreducible at the level of ordinary consciousness.'
+    divergence: Isavasya Upanishad treats vidya and avidya as distinct paths with different fruits, maintaining
+      their duality; Spandakarika's commentary suggests that awakening *dissolves* the division between
+      states, implying a non-dual resolution rather than permanent bifurcation.
+    passage_id: isavasya_upanishad.isa_016
+  layer_provenance: generated_grounded

@@ -80,3 +80,74 @@ abhyasa: Sit comfortably and close your eyes. Bring your attention gently to the
   is the marker the verse points to.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: कपालान्तर् मनो न्यस्य तिष्ठन् मीलितलोचनः । क्रमेण मनसो दार्ढ्यात् लक्षयेत् लष्यम् उत्तमम् ॥ ३४
+    ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kapālāntar mano nyasya tiṣṭhan mīlitalocanaḥ | krameṇa manaso dārḍhyāt lakṣayet laṣyam uttamam
+    || 34 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #9
+
+    Remaining with eyes closed, fix your attention inside the cranium (kapāla); by
+
+    means of gradually increasing steadiness of mind, you will perceive that which
+
+    is most worthy of being perceived. || 34'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kapālāntar (कपालान्तर)
+    definition: kapāla ‘skull’ + antar ‘within’ → 'within the skull' — the felt interior space of the
+      cranium used as the meditative locus → ‘inside the skull’ literalism misses the cranial vault as
+      awareness-cavity
+  - term: krameṇa (क्रमेण)
+    definition: instrumental of krama → by stages → gradually, step by step — signaling this is a progressive
+      practice, not an instant result → ‘gradually’ softens the precise stepwise logic the verse asserts
+  - term: lakṣyam uttamam (लक्ष्यम् उत्तमम्)
+    definition: lakṣya ‘target’ + uttama ‘highest’ → the highest goal or target — here, recognition of
+      one's own conscious nature → ‘highest goal’ as achievement misses the supreme aim that is recognition
+      itself
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts prescribe iterative return of attention to an interior center as the method
+      for stabilizing mind. Yukti 9 directs steadiness inward to the cranium; Bhagavad Gita 10 frames
+      yoga-mastery as repeatedly returning attention from dispersion to center. Both treat attention-discipline
+      as gradual and cyclical rather than instantaneous.
+    divergence: Yukti 9 locates the object of perception within a specific anatomical locus (kapāla) and
+      promises direct perception of the ultimate; Bhagavad Gita emphasizes habit-formation and behavioral
+      regulation as the means, without claiming metaphysical revelation.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Shantideva Bodhicaryavatara — Stillness Before Insight
+    resonance: 'Both texts identify mental steadiness (gathered concentration) as prerequisite and protective:
+      Yukti 9 requires ''gradually increasing steadiness of mind'' to perceive the worthy; Bodhicaryavatara
+      frames steadied concentration as defense against the afflictions that prey on scattered mind. Both
+      treat stability as both method and safeguard.'
+    divergence: Yukti 9 grounds steadiness in inward anatomical focus and promises direct perception;
+      Bodhicaryavatara treats steadiness as ethical protection and prerequisite for insight into emptiness,
+      without privileging a specific bodily locus.
+    passage_id: shantideva_bodhicaryavatara.bca_08_solitude
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: 'Both texts employ the paradox of effort-through-attention: Yukti 9 uses ''gradually increasing
+      steadiness'' to perceive what is most worthy; Yoga Spandakarika 5 uses ''ardent striving'' and angular
+      attention to reveal the supreme tremor. Both suggest that intensified, directed attention makes
+      manifest what was obscured.'
+    divergence: Yukti 9 locates the object internally (in the cranium) and emphasizes inward closure;
+      Yoga Spandakarika 5 uses external analogy (viewing an object from all angles) and suggests the sacred
+      tremor is already present but requires recognition through effort.
+    passage_id: yoga_spandakarika.sp_36
+  layer_provenance: generated_grounded

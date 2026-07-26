@@ -82,3 +82,66 @@ abhyasa: 'Sit comfortably and let your eyes remain softly open, gaze unfocused, 
   again without frustration.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: निराधारं मनः कृत्वा विकल्पान् न विकल्पयेत् । तदात्मपरमात्मत्वे भैरवो मृगलोचने ॥ १०८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: nirādhāraṃ manaḥ kṛtvā vikalpān na vikalpayet | tadātmaparamātmatve bhairavo mṛgalocane || 108
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #80
+
+    Making the mind supportless, one should not assemble mental
+
+    constructs. O doe-eyed goddess, [the state called] Bhairava is that
+
+    of [experiencing] the supreme Self in oneself. || 108'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: nirādhāra (निराधार)
+    definition: nir- + ādhāra ‘support’ → supportless; the mind deprived of any object or prop to rest
+      upon → ‘unsupported’ as precarious misses abiding without extrinsic prop
+  - term: vikalpa (विकल्प)
+    definition: vi- + √kḷp ‘fashion’ → alternative construct → a mental construct or discursive thought;
+      the faculty that divides awareness into this-and-that → ‘thought’ is too broad; dualizing ideation
+      that splits seamless awareness
+    lemma_id: vikalpa
+    sense_id: vikalpa.shaiva
+  - term: paramātman (परमात्मन्)
+    definition: parama + ātman → the supreme Self, recognized as identical with one's own individual self
+      (ātman) → Vedāntic ‘Higher Self’ baggage may over-specify this verse’s pointer
+    lemma_id: atman
+    sense_id: atman.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: Both texts dissolve the constructed scaffolding of mind by redirecting attention away from
+      bounded form toward an unbounded, centerless awareness. Vijnana Bhairava's 'making the mind supportless'
+      and Tilopa's 'mind has no center and no circumference' share the move of negating structural containment
+      as the path to clarity.
+    divergence: Vijnana Bhairava emphasizes the cessation of mental construct-assembly as technique, while
+      Tilopa uses spatial metaphor (space, sky) to point directly to the nature of mind itself—one is
+      procedural, the other descriptive-pointing.
+    passage_id: tilopa_mahamudra.til_002
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: Both texts locate liberation in a reversal of attention from external content to the knower's
+      own nature. Vijnana Bhairava's 'clarity grows when attention returns to the knower' and Spandakarika's
+      'reveals to the tantrika his own nature' both make the self-disclosure of consciousness the fruit
+      of redirected awareness.
+    divergence: Vijnana Bhairava frames this as negation (unsupporting the mind), while Spandakarika frames
+      it as positive attainment ('supreme nectar, immortality')—one via subtraction, one via fullness.
+    passage_id: yoga_spandakarika.sp_32
+  layer_provenance: generated_grounded

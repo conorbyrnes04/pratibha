@@ -67,3 +67,87 @@ abhyasa: 'Notice one thing in your day that has reached its peak and is starting
   be the tool.'
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 反者道之動；弱者道之用。天下萬物生於有，有生於無。
+- kind: translation
+  label: Pratibha Translation
+  body: 'Reversal [*fǎn* 反] is the movement of the *dào*.
+
+    Weakness [*ruò* 弱] is the use of the *dào*.
+
+
+    The world''s ten thousand things are born from being [*yǒu* 有];
+
+    being is born from non-being [*wú* 無].'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'chapter 40 (the Way moves by reversal) is the text''s metaphysical haiku — four lines that compress
+    chapter 16''s cycle and chapter 11''s priority of *wú*. *Fǎn* is not accident but the *dào*''s characteristic
+    motion: excess turns, peak returns, hardness overextends and breaks. *Ruò* is not moral preference
+    for weakness but the operational mode that does not exhaust itself by rigid opposition.
+
+
+    The final couplet inverts ordinary creation stories: manifest things come from *yǒu*, but *yǒu* itself
+    arises from *wú*. This is not nihilism — it is genealogy. Form is second; enabling absence is first.
+    Read with chapter 11 (the empty hub at the center of the wheel) and chapter 16 (all things arise and
+    return to the root), chapter 40 (the Way moves by reversal) is the theoretical spine of the entire
+    book.
+
+
+    Key Terms:
+
+
+    **fǎn 反** — return, reversal — dynamic of the *dào*; related to *fǎn* in chapter 78''s "true words
+    seem inverted."
+
+
+    **ruò 弱** — weakness, yielding — functional modality of the *dào*, not vice.
+
+
+    **yǒu wú 有無** — being/non-being pair — ontological priority of *wú* as generative ground.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Dao Moves by Reversal”: Reversal [*fǎn* 反] is
+      the movement of the *dào*. -> not a deity named Tao or a lifestyle brand — source-and-course that
+      resists full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Dao Moves by Reversal”: Presence/being and absence/nothingness
+      -> not mere possession; the named/manifest pole that co-arises with wú'
+  - term: wú (無)
+    definition: '無 ‘without / not-have’ -> in “The Dao Moves by Reversal”: Reversal [*fǎn* 反] is the movement
+      of the *dào*. -> not nihilistic void; generative absence (of forcing, name, desire) that opens function'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Dao Moves by Reversal”:
+      Reversal [*fǎn* 反] is the movement of the *dào*. -> not only ‘the world’ as map; the realm that
+      cannot be seized by contrivance'
+  - term: wànwù (萬物)
+    definition: '萬 ‘myriad’ + 物 ‘things’ -> in “The Dao Moves by Reversal”: Reversal [*fǎn* 反] is the
+      movement of the *dào*. -> not a zoo inventory; the whole differentiated field born once naming divides'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus B126
+    resonance: '"Cold things warm up, warm cools off, wet dries, parched moistens."'
+    divergence: cosmic flux without Daoist political application.
+    passage_id: ''
+  - citation: Yījīng hexagram *Fù* (Return)
+    resonance: turning point of yang at solstice.
+    divergence: divination structure vs philosophical distillation.
+    passage_id: ''
+  - citation: Śūnyatā as ground of form (Nāgārjuna)
+    resonance: being lacks independent birth; emptiness enables arising.
+    divergence: rigorous dialectic vs aphoristic cosmology.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: At the peak of inhalation, notice the inevitable reversal into exhalation. Stay with the turn
+    three breaths without forcing either phase. Name one life-cycle where you are resisting the *fǎn*
+    that is already underway.

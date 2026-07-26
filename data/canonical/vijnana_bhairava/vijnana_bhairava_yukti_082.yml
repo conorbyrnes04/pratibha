@@ -95,3 +95,67 @@ abhyasa: 'Sit somewhere with things happening around you—sounds, light, moveme
   seeing—noticing whether the hard line between you and the world has softened.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: जलस्येवोर्मयो वह्नेर् ज्वालाभङ्ग्यः प्रभा रवेः । ममैव भैरवस्यैता विश्वभङ्ग्यो विभेदिताः ॥ ११०
+    ॥
+  layer_provenance: sourced
+- kind: iast
+  body: jalasyevormayo vahner jvālābhaṅgyaḥ prabhā raveḥ | mamaiva bhairavasyaitā viśvabhaṅgyo vibheditāḥ
+    || 110 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #82
+
+    “Just as waves [arise] from water, undulating flames from fire, and light-
+
+    rays from the sun, the various kinds of ‘waves’ of the universe arise
+
+    from me, Bhairava.” || 110'
+- kind: commentary
+  label: Pratibha Commentary
+  body: The teaching frames change as lawful and intelligible, inviting steadiness within transformation.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: bhaṅgī (भङ्गी)
+    definition: √bhañj ‘break’ → inflection/curve/mode → a bend, curl, or mode; here the world as an inflection
+      or wave-form of consciousness rather than a separate substance → ‘gesture/style’ aestheticizes the
+      subtle mode by which spanda appears
+  - term: vibheditāḥ (विभेदिताः)
+    definition: vi- + √bhid → divided/differentiated (pl.) → made distinct or differentiated—the many
+      appearances are genuinely diversified expressions of the one, not illusory → ‘divided’ as broken
+      misses differentiation within undivided ground
+    lemma_id: bheda
+    sense_id: bheda.shaiva
+  - term: Bhairava (भैरव)
+    definition: 'Trika absolute: terrifyingly free consciousness → the absolute consciousness that is
+      the practitioner''s own true self, from which all appearances stream forth → not a sectarian deity-badge—the
+      very form of awareness the practice discloses'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus Fragments
+    resonance: 'Both texts model transformation as lawful emanation from a single source-element: fire
+      transmutes into sea, earth, lightning (Heraclitus); waves, flames, and light-rays emanate from water,
+      fire, and sun respectively (Bhairava). Each uses elemental cascades to render multiplicity intelligible
+      as ordered process, not chaos.'
+    divergence: Heraclitus grounds transformation in cosmic conflict and strife (polemos); Bhairava grounds
+      it in non-dual consciousness (Bhairava as source) and treats change as a play of manifestation rather
+      than agonistic necessity.
+    passage_id: heraclitus_fragments.hfr_p021
+  - citation: Patañjali Yoga Sūtras 3.15
+    resonance: 'Both texts locate the intelligibility of transformation in succession and phase-structure:
+      Patañjali identifies successive phases as the cause of successive transformations; Bhairava frames
+      the universe''s waves as arising lawfully from a single source, inviting steadiness *within* transformation
+      by grasping its structural order.'
+    divergence: Patañjali's framework is epistemological and technical (explaining how yogic perception
+      grasps transformation); Bhairava's is metaphysical and devotional (asserting the non-dual source
+      from which all phases emanate).
+    passage_id: patañjali_yoga_sūtras.ys_3_15
+  layer_provenance: generated_grounded

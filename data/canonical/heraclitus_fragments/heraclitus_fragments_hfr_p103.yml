@@ -16,20 +16,23 @@ themes:
 - way
 source_excerpt: Corpses are more worthless than excrement.
 translation_literal: Corpses are more worthless than excrement.
-commentary: 'Heraclitus does not rank corpses below excrement out of disgust or moral judgment. He is marking a threshold
-  in the economy of transformation. Excrement still participates in the living process—it moves, breaks down, feeds soil and
-  flies, continues the cycle. A corpse, by contrast, has fallen out of flux (rhei). It no longer exchanges with its environment;
-  it merely decays as inert matter. The fragment inverts ordinary revulsion to expose a harder truth: what we call ''worthless''
-  is precisely what has stopped moving, stopped being useful to the logos that animates all things. Excrement stinks but works.
-  A corpse does neither—it is pure remainder, the image of having quit the fire. This is not contempt for the dead but a diagnosis
-  of stillness itself. To say corpses are ''more worthless'' is to say they have fallen further from the generative principle
-  that Heraclitus elsewhere calls the common measure, the way up and down. The paradox cuts both directions: it revalues excrement
-  as still-living, still-necessary, and it reveals death not as transition but as the ultimate loss of participation in becoming.'
+commentary: 'Heraclitus does not rank corpses below excrement out of disgust or moral judgment. He is
+  marking a threshold in the economy of transformation. Excrement still participates in the living process—it
+  moves, breaks down, feeds soil and flies, continues the cycle. A corpse, by contrast, has fallen out
+  of flux (rhei). It no longer exchanges with its environment; it merely decays as inert matter. The fragment
+  inverts ordinary revulsion to expose a harder truth: what we call ''worthless'' is precisely what has
+  stopped moving, stopped being useful to the logos that animates all things. Excrement stinks but works.
+  A corpse does neither—it is pure remainder, the image of having quit the fire. This is not contempt
+  for the dead but a diagnosis of stillness itself. To say corpses are ''more worthless'' is to say they
+  have fallen further from the generative principle that Heraclitus elsewhere calls the common measure,
+  the way up and down. The paradox cuts both directions: it revalues excrement as still-living, still-necessary,
+  and it reveals death not as transition but as the ultimate loss of participation in becoming.'
 insight: ''
-practice: 'Over three days, track one thing you discard as waste—coffee grounds, a broken pen, a worn cloth—and follow where
-  it actually goes: compost pile, landfill, recycling bin, shelf. On the fourth day, sit with something genuinely dead in
-  your vicinity (fallen branch, shed skin, old photograph) and notice the difference in how your body responds to something
-  that has stopped moving versus something that is still being consumed or transformed.'
+practice: 'Over three days, track one thing you discard as waste—coffee grounds, a broken pen, a worn
+  cloth—and follow where it actually goes: compost pile, landfill, recycling bin, shelf. On the fourth
+  day, sit with something genuinely dead in your vicinity (fallen branch, shed skin, old photograph) and
+  notice the difference in how your body responds to something that has stopped moving versus something
+  that is still being consumed or transformed.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -50,42 +53,76 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus does not rank corpses below excrement out of disgust or moral judgment. He is marking a threshold in the
-    economy of transformation. Excrement still participates in the living process—it moves, breaks down, feeds soil and flies,
-    continues the cycle. A corpse, by contrast, has fallen out of flux (rhei). It no longer exchanges with its environment;
-    it merely decays as inert matter. The fragment inverts ordinary revulsion to expose a harder truth: what we call ''worthless''
-    is precisely what has stopped moving, stopped being useful to the logos that animates all things. Excrement stinks but
-    works. A corpse does neither—it is pure remainder, the image of having quit the fire. This is not contempt for the dead
-    but a diagnosis of stillness itself. To say corpses are ''more worthless'' is to say they have fallen further from the
-    generative principle that Heraclitus elsewhere calls the common measure, the way up and down. The paradox cuts both directions:
-    it revalues excrement as still-living, still-necessary, and it reveals death not as transition but as the ultimate loss
-    of participation in becoming.'
+  body: 'Heraclitus does not rank corpses below excrement out of disgust or moral judgment. He is marking
+    a threshold in the economy of transformation. Excrement still participates in the living process—it
+    moves, breaks down, feeds soil and flies, continues the cycle. A corpse, by contrast, has fallen out
+    of flux (rhei). It no longer exchanges with its environment; it merely decays as inert matter. The
+    fragment inverts ordinary revulsion to expose a harder truth: what we call ''worthless'' is precisely
+    what has stopped moving, stopped being useful to the logos that animates all things. Excrement stinks
+    but works. A corpse does neither—it is pure remainder, the image of having quit the fire. This is
+    not contempt for the dead but a diagnosis of stillness itself. To say corpses are ''more worthless''
+    is to say they have fallen further from the generative principle that Heraclitus elsewhere calls the
+    common measure, the way up and down. The paradox cuts both directions: it revalues excrement as still-living,
+    still-necessary, and it reveals death not as transition but as the ultimate loss of participation
+    in becoming.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (corpses are more worthless than excrement.), the shared pattern according to which all
+      things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic,
+      or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: πῦρ (pyr)
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
+      (corpses are more worthless than excrement.), world-ruling fire as measured transformation and exchange,
+      not mythic flame alone -> trap: treating fire as a static elemental substance rather than lawful
+      becoming'
+    lemma_id: pyr
+    sense_id: pyr.heraclitean
+  - term: βίος / θάνατος (bios / thanatos)
+    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying ->
+      in this passage (corpses are more worthless than excrement.), life and death as reciprocal: one
+      element lives the death of another; hope cannot prefigure what awaits -> trap: afterlife tourism
+      or simple annihilation; the point is structural exchange and limit of anticipation'
+  - term: κοινός (koinos)
+    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage
+      (corpses are more worthless than excrement.), the common Logos: waking rationality is shared; private
+      dream-opinion is not a world -> trap: mere social consensus; koinos here is cosmological shareability,
+      not majority vote'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Over three days, track one thing you discard as waste—coffee grounds, a broken pen, a worn cloth—and follow where
-    it actually goes: compost pile, landfill, recycling bin, shelf. On the fourth day, sit with something genuinely dead in
-    your vicinity (fallen branch, shed skin, old photograph) and notice the difference in how your body responds to something
-    that has stopped moving versus something that is still being consumed or transformed.'
+  body: 'Over three days, track one thing you discard as waste—coffee grounds, a broken pen, a worn cloth—and
+    follow where it actually goes: compost pile, landfill, recycling bin, shelf. On the fourth day, sit
+    with something genuinely dead in your vicinity (fallen branch, shed skin, old photograph) and notice
+    the difference in how your body responds to something that has stopped moving versus something that
+    is still being consumed or transformed.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both texts use the dissolution of the body (corpse/ashes) as the pivot point for revealing what persists or
-      matters cosmologically: Heraclitus inverts value by showing the dead body''s worthlessness, while the Isavasya Upanishad
-      shows the body''s return to ashes as the condition for breath''s return to the immortal. Each treats bodily decay as
-      the threshold where the essential (breath/prāṇa, or cosmic principle) is disclosed.'
-    divergence: Heraclitus emphasizes the paradoxical inversion of worth through a single image of degradation; the Upanishad
-      frames dissolution as a ritual or metaphysical transition toward the eternal, not as a revaluation of the worthless.
+    resonance: 'Both texts use the dissolution of the body (corpse/ashes) as the pivot point for revealing
+      what persists or matters cosmologically: Heraclitus inverts value by showing the dead body''s worthlessness,
+      while the Isavasya Upanishad shows the body''s return to ashes as the condition for breath''s return
+      to the immortal. Each treats bodily decay as the threshold where the essential (breath/prāṇa, or
+      cosmic principle) is disclosed.'
+    divergence: Heraclitus emphasizes the paradoxical inversion of worth through a single image of degradation;
+      the Upanishad frames dissolution as a ritual or metaphysical transition toward the eternal, not
+      as a revaluation of the worthless.
     passage_id: isavasya_upanishad.isa_023
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both passages make breath (prāṇa/pneuma) the primary cosmological articulation: Heraclitus''s aphorism hinges
-      on breath as the marker of life and value (the corpse lacks it), while the Vijnana Bhairava explicitly names prāṇa as
-      the constant utterance through which the Supreme Goddess articulates reality itself. Each treats breath as the fundamental
-      generative principle.'
-    divergence: Heraclitus uses breath absence to invert value judgments about the body; the Vijnana Bhairava treats breath
-      as the positive, conscious articulation of divine creative power, not as a measure of degradation.
+    resonance: 'Both passages make breath (prāṇa/pneuma) the primary cosmological articulation: Heraclitus''s
+      aphorism hinges on breath as the marker of life and value (the corpse lacks it), while the Vijnana
+      Bhairava explicitly names prāṇa as the constant utterance through which the Supreme Goddess articulates
+      reality itself. Each treats breath as the fundamental generative principle.'
+    divergence: Heraclitus uses breath absence to invert value judgments about the body; the Vijnana Bhairava
+      treats breath as the positive, conscious articulation of divine creative power, not as a measure
+      of degradation.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []

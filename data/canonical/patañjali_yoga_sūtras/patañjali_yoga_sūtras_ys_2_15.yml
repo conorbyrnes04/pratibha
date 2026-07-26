@@ -157,3 +157,116 @@ abhyasa: '**Three-Point Recognition Practice (15 minutes)**
   the guṇas but in recognizing the puruṣa—the Self—that is prior to all of them.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: परिणामतापसंस्कारदुःखैः गुणवृत्तिविरोधाच्च दुःखम् एव सर्वं विवेकिनः
+- kind: iast
+  label: IAST
+  body: pariṇāmatāpasaṃskāraduḥkhair guṇavṛttivirodhāc ca duḥkham eva sarvaṃ vivekinaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: All things are misery for the enlightened, because of consequences, anxiety, and impressions,
+    and also because of the opposition of the actions of the qualities.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The passage asserts that the enlightened, i.e. the one who has attained a sharp discernment of
+    the eternal and the illusory, perceives every phenomenon as a source of misery. This claim is not
+    a mere pessimistic observation but a diagnostic tool: it reveals that the enlightened mind, freed
+    from ignorance, sees the very fabric of experience—its causal chains, its anxieties, its latent impressions—as
+    a web that inevitably leads to suffering. The key insight is that misery is not an external condition
+    but an internal recognition of the inescapable interplay of the three gunas. The enlightened mind,
+    having transcended ignorance, is aware that each action of sattva, rajas, or tamas produces a counter‑action,
+    and that the resultant vṛtti (mental fluctuation) is a source of pain. In the Yoga and Sāṃkhya tradition,
+    this is a critical step toward samādhi: by recognizing the root of misery, one can detach from the
+    vṛtti and attain a state of equanimity. The Dvivedi commentary elaborates on the four causes—consequences,
+    anxiety, impressions, and opposition of gunas—yet the Pratibha reading emphasizes that the enlightened
+    mind does not merely catalog causes but internalizes the structural pattern of misery. This internalization
+    is the first move toward liberation: by seeing the world as a source of suffering, the practitioner
+    is motivated to seek a state where the mind is no longer bound by vṛtti. The existential application
+    is clear: one must cultivate the same discernment that reveals misery, thereby using it as a catalyst
+    to withdraw from the cycle of craving and aversion. The ultimate goal is to reach a state where the
+    mind, no longer entangled in the vṛtti of gunas, experiences samādhi and thus freedom from all suffering.
+
+
+    Key Terms
+
+
+    **citta (चित्त)** — citta: ‘mind’ as the organ of perception and cognition; in Sāṃkhya, the dynamic
+    aspect of consciousness that processes prakṛti; the term’s default translation as ‘mind’ omits its
+    role as the locus of vṛtti and the target of samādhi
+
+
+    **vṛtti (वृत्ति)** — vṛtti: ‘fluctuation’ or ‘mental modification’; in Yoga, the oscillations of citta
+    that bind the soul; the term’s common translation as ‘thought’ fails to convey its causal power in
+    generating bondage
+
+
+    **prakṛti (प्रकृति)** — prakṛti: the primal, material reality composed of the three gunas; it is the
+    substrate of all change; translating it simply as ‘nature’ obscures its dynamic, causative nature
+
+
+    **samādhi (समाधि)** — samādhi: the highest state of meditative absorption where citta is still but
+    not subject to vṛtti; the term’s literal meaning ‘union’ is insufficient to capture its role as liberation
+    from prakṛti
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.10:** Both 2.10 and 2.15 attribute misery to the interplay of gunas; 2.10 lists the
+    three gunas as sources of suffering, while 2.15 expands to include consequences, anxiety, and impressions
+
+    *Divergence:* 2.10 focuses on the inherent nature of gunas, whereas 2.15 introduces external factors
+    (consequences, anxiety) that amplify misery
+
+
+    **Sāṃkhya Karika 1.1:** The Karika’s assertion that prakṛti’s action produces vṛtti parallels 2.15’s
+    claim that the opposition of gunas causes misery
+
+    *Divergence:* Karika presents the process as a deterministic chain, while 2.15 frames it as a recognition
+    that leads to liberation
+
+
+    **Yoga Sūtra 1.3:** Both 1.3 and 2.15 emphasize the role of ignorance (avidyā) in binding the soul
+    to misery
+
+    *Divergence:* 1.3 speaks of ignorance as the root of all bondage, whereas 2.15 specifies the mechanisms
+    (consequences, anxiety, impressions) through which ignorance manifests'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “All Is Misery to the Enlightened”:
+      the term’s common translation as ‘thought’ fails to convey its causal power in generating bondage
+      -> not ‘bad thoughts’ only — any cognitive wave (valid cognition, error, fantasy, sleep, memory)'
+  - term: saṃskāra (संस्कार)
+    definition: 'sam-√kṛ ‘put together / impress’ → formative latent imprint -> in “All Is Misery to the
+      Enlightened”: the subtle residue of past actions and experiences that shapes present perception
+      and behavior -> not only life-cycle rites; residual grooves that propel future citta movement'
+    lemma_id: samskara
+    sense_id: samskara.habit
+  - term: pariṇāma (परिणाम)
+    definition: 'pari-√nam ‘bend around / transform’ → transformation -> in “All Is Misery to the Enlightened”:
+      All things are misery for the enlightened, because of consequences, anxiety, and impressions, and
+      also because of the… -> not random change; structured transformation of dharma/lakṣaṇa/avasthā that
+      saṃyama can know'
+  - term: duḥkha (दुःख)
+    definition: 'dus + kha ‘bad axle-hole’ → suffering/friction -> in “All Is Misery to the Enlightened”:
+      All things are misery for the enlightened, because of consequences, anxiety, and impressions, and
+      also because of the… -> not only acute pain; the structural unsatisfactoriness yogins see even in
+      pleasure’s change'
+  - term: guṇa (गुण)
+    definition: '‘strand/quality’ — sattva, rajas, tamas as constitutive modes -> in “All Is Misery to
+      the Enlightened”: The three qualities or modes of prakṛti: sattva (clarity, harmony), rajas (activity,
+      passion), tamas (inertia, darkness) -> not optional personality traits; the dynamic constitution
+      of all prakṛtic phenomena'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe each experience you have and note the consequence, anxiety, or impression that follows,
+    then consciously step back to witness it without attachment.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: To the enlightened all is misery, on account of consequences, anxiety, and impressions; as also
+    on account of the opposition of the action of qualities.

@@ -82,3 +82,105 @@ abhyasa: When you witness someone else's struggle today—grief, confusion, or r
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: कृतार्थं प्रतिप्रत्याशा नष्टं अपि नष्टः तदन्यसाधारणत्वात्
+- kind: iast
+  label: IAST
+  body: kṛtārthaṃ prati naṣṭam apy anaṣṭaṃ tadanyasādhāraṇatvāt
+- kind: translation
+  label: Pratibha Translation
+  body: When the purpose is fulfilled, the object of action is destroyed for the doer, yet it remains
+    undestroyed for others; thus the object is ordinarily common to all.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The Sūtra asserts that the destruction of an object by a practitioner does not entail its universal
+    annihilation. The contested move is the distinction between the *purūṣa* who has realized the *saṃkhyā*
+    of *prakṛti* and the *purūṣas* who have not. In the Sāṃkhya framework, *prakṛti* is a singular, eternal
+    nature whose manifestations are manifold. The Sūtra resolves the paradox of a single *purūṣa* attaining
+    liberation while *prakṛti* persists for the rest. It does so by positing that the *purūṣa*’s realization
+    renders *prakṛti* inert in his experience, but the inert *prakṛti* continues to act upon the other
+    *purūṣas*. This preserves the integrity of the *saṃkhyā* of *prakṛti* without violating its indestructibility.
+    The Dvivedi commentary echoes this by noting that the *purūṣa*’s cessation of action does not negate
+    *prakṛti*’s universal effects. Existentially, the passage reminds practitioners that liberation is
+    a personal, not a universal, transformation; the world’s continued functioning does not diminish one’s
+    attainment. It encourages a disciplined practice that recognizes the dual reality of personal liberation
+    and collective persistence, thereby fostering a balanced, non-egoistic approach to *saṃkhyā* and *samādhi*.
+
+
+    Key Terms
+
+
+    **purūṣa (पुरूष)** — purūṣa (Sāṃkhya) – the conscious principle, distinct from prakṛti; default translation
+    ‘person’ omits its metaphysical role as the observer and the locus of liberation.
+
+
+    **prakṛti (प्रकृति)** — prakṛti (Sāṃkhya) – the primal, generative nature, eternal and indestructible;
+    default translation ‘nature’ fails to convey its role as the dynamic substrate of all manifestations.
+
+
+    **saṃkhyā (संख्या)** — saṃkhyā (Sāṃkhya) – the enumeration of elements (purūṣa, prakṛti, and their
+    constituents); default translation ‘count’ overlooks its ontological significance.
+
+
+    **samādhi (समाधि)** — samādhi (Yoga) – a state of meditative absorption and union; default translation
+    ‘concentration’ misses its transcendental aspect.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.22:** Structural homology with 2.21: both address the fate of objects post-action,
+    using the same grammatical construction (kṛtārthaṃ…apya…nashṭam).
+
+    *Divergence:* While 2.21 speaks of the object’s destruction for the doer, 2.22 extends this to the
+    object’s continued existence for others, highlighting a broader communal implication.
+
+
+    **Sāṃkhya Kārikā 2.10:** Both texts discuss the inertness of *prakṛti* after *purūṣa*’s realization,
+    employing the term *nashṭam* to denote cessation of effect.
+
+    *Divergence:* The Sūtra frames this in the context of personal liberation, whereas the Kārikā presents
+    it as a metaphysical principle affecting all *purūṣas*.
+
+
+    **Dvivedi Commentary 2.22:** Dvivedi parallels the Sūtra’s claim with the idea that *prakṛti* remains
+    active for other *purūṣas*.
+
+    *Divergence:* Dvivedi introduces the notion of *ptsrums* (inherent qualities) to explain multiplicity,
+    a nuance absent in the terse Sūtra.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dhāraṇā (धारणा)
+    definition: '√dhṛ ‘hold’ → binding mind to a place -> in “Purushic Continuity Amidst Destruction”:
+      When the purpose is fulfilled, the object of action is destroyed for the doer, yet it remains undestroyed
+      for others;… -> not casual focus; deliberate localization of citta that begins saṃyama'
+  - term: puruṣa (पुरुष)
+    definition: '‘person/witness’ in Sāṃkhya — pure awareness as seer -> in “Purushic Continuity Amidst
+      Destruction”: the conscious principle, distinct from prakṛti -> not ‘person’ as social self; the
+      unchanging witness distinct from prakṛti’s display'
+  - term: prakṛti (प्रकृति)
+    definition: 'pra-√kṛ ‘bring forth’ → productive nature/matter -> in “Purushic Continuity Amidst Destruction”:
+      the primal, generative nature, eternal and indestructible -> not pastoral ‘Nature’; the tri-guṇa
+      matrix generating all experience including mind'
+  - term: saṃkhyā (संख्या)
+    definition: 'source-term saṃkhyā -> in “Purushic Continuity Amidst Destruction”: load-bearing in “”;
+      stakes the argument of: When the purpose is fulfilled, the object of action is destroyed for the
+      doer, yet it remains undestroyed for others;… -> ‘count’ overlooks its ontological significance'
+  - term: samādhi (समाधि)
+    definition: 'sam-ā-√dhā ‘settle completely together’ -> in “Purushic Continuity Amidst Destruction”:
+      a state of meditative absorption and union -> not trance-entertainment or unconsciousness; graded
+      absorption where subject–object friction quiets'
+    lemma_id: samadhi
+    sense_id: samadhi.yoga
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Feel the object of your current action as it dissolves for you, yet recognize it remains present
+    for others; let this awareness guide you to act with detached compassion.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: It, though destroyed in the ease of him whose purpose has been fulfilled, is yet not destroyed
+    for it is common to others besides him.

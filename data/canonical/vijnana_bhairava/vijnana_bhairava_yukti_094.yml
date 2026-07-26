@@ -88,3 +88,66 @@ abhyasa: 'Sit quietly and let your gaze rest on a single ordinary object in fron
   not chase any experience; simply let the mind grow quiet in the open field where objects have subsided.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: वस्त्वन्तरे वेद्यमाने सर्ववस्तुषु शून्यता । ताम् एव मनसा ध्यात्वा विदितोऽपि प्रशाम्यति ॥ १२२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: vastvantare vedyamāne sarvavastuṣu śūnyatā | tām eva manasā dhyātvā vidito'pi praśāmyati || 122
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #94
+
+    When another object is being perceived, the emptiness in all things
+
+    [may be perceived]. Meditating on that emptiness alone, though [the
+
+    object] is still perceived, one settles down & becomes peaceful. || 122'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śūnyatā (शून्यता)
+    definition: śūnya + -tā → emptiness → emptiness or vacancy; here the perceptual blankness where un-attended
+      objects reside, used as a doorway to open awareness → Madhyamaka import may over-specify; here emptiness
+      as lived open of awareness
+    lemma_id: sunyata
+    sense_id: sunyata.madhyamaka
+  - term: praśama / praśāmyati (प्रशम / प्रशाम्यति)
+    definition: pra- + √śam ‘be quiet’ → calming / it settles → quieting, coming to rest; the settling
+      of the mind's restless movement from object to object → ‘peace’ mood-word misses active settling
+      of agitation
+  - term: vedya (वेद्य)
+    definition: √vid → knowable → the knowable, the object of perception—that which normally props up
+      the sense of a separate perceiver → ‘knowable object’ is what the teaching relativizes
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heart Sutra — Form Is Emptiness, Emptiness Is Form
+    resonance: 'Both texts use the perception of a concrete object or form as the direct gateway to recognizing
+      emptiness itself. The Heart Sutra''s ''form is emptiness'' and Yukti 94''s ''when another object
+      is being perceived, the emptiness in all things [may be perceived]'' share the same contemplative
+      move: emptiness is not abstract but disclosed through engagement with appearance.'
+    divergence: The Heart Sutra states the identity of form and emptiness as a metaphysical principle,
+      while Yukti 94 frames it as a phenomenological pointer—a moment of perceptual shift during actual
+      observation.
+    passage_id: heart_sutra.hs_001
+  - citation: Tao Te Ching — The Axle-Hole and the Use of Absence
+    resonance: 'Both passages locate functional reality in what appears absent or empty: the Tao Te Ching''s
+      empty hub-space makes the wheel work; Yukti 94''s emptiness perceived within objects is the ground
+      of perception itself. Each identifies emptiness not as negation but as the operative principle within
+      manifestation.'
+    divergence: The Tao Te Ching emphasizes emptiness as structural necessity for function (cosmological),
+      while Yukti 94 emphasizes it as a direct contemplative insight accessible through perceptual pause
+      (phenomenological).
+    passage_id: tao_te_ching.ttc_md_002
+  layer_provenance: generated_grounded

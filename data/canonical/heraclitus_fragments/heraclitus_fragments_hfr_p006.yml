@@ -14,21 +14,24 @@ themes:
 - way
 source_excerpt: They understand neither how to hear nor how to speak.
 translation_literal: They understand neither how to hear nor how to speak.
-commentary: 'Heraclitus does not diagnose stupidity; he diagnoses a rupture in the organ of understanding itself. To ''understand''
-  (xunienai) is to gather-together (xun-), to hold the logos—but those he addresses cannot do it because they neither hear
-  nor speak in the way the logos demands. The fragment turns on a paradox of simultaneity: one cannot hear without already
-  speaking (internally, in thought-formation), and one cannot speak without having truly heard. Most people, he suggests,
-  move through language as though it were a neutral medium, a vessel for pre-formed ideas. They mistake the sound for the
-  hearing, the utterance for the speaking. The logos is not the words; it is the living tension between what emerges and what
-  resists emergence. To hear is to let the world speak through you; to speak is to let the world listen through you. When
-  Heraclitus says they understand neither, he is saying they have never inhabited that threshold. They have ears but do not
-  listen (as he says elsewhere); they have mouths but do not speak—they only phoneme, only produce noise. The aphorism is
-  not a judgment but a description of a specific failure: the failure to recognize that understanding requires a doubled attention,
-  an inward listening that shapes outward utterance.'
+commentary: 'Heraclitus does not diagnose stupidity; he diagnoses a rupture in the organ of understanding
+  itself. To ''understand'' (xunienai) is to gather-together (xun-), to hold the logos—but those he addresses
+  cannot do it because they neither hear nor speak in the way the logos demands. The fragment turns on
+  a paradox of simultaneity: one cannot hear without already speaking (internally, in thought-formation),
+  and one cannot speak without having truly heard. Most people, he suggests, move through language as
+  though it were a neutral medium, a vessel for pre-formed ideas. They mistake the sound for the hearing,
+  the utterance for the speaking. The logos is not the words; it is the living tension between what emerges
+  and what resists emergence. To hear is to let the world speak through you; to speak is to let the world
+  listen through you. When Heraclitus says they understand neither, he is saying they have never inhabited
+  that threshold. They have ears but do not listen (as he says elsewhere); they have mouths but do not
+  speak—they only phoneme, only produce noise. The aphorism is not a judgment but a description of a specific
+  failure: the failure to recognize that understanding requires a doubled attention, an inward listening
+  that shapes outward utterance.'
 insight: ''
-practice: 'In the middle of your next conversation, stop mid-sentence and notice: what am I hearing right now—the words, or
-  the silence between them? Then speak your next sentence as though you are listening to it emerge, not retrieving it from
-  storage. Do this three times in one exchange without announcing it.'
+practice: 'In the middle of your next conversation, stop mid-sentence and notice: what am I hearing right
+  now—the words, or the silence between them? Then speak your next sentence as though you are listening
+  to it emerge, not retrieving it from storage. Do this three times in one exchange without announcing
+  it.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -47,47 +50,84 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus does not diagnose stupidity; he diagnoses a rupture in the organ of understanding itself. To ''understand''
-    (xunienai) is to gather-together (xun-), to hold the logos—but those he addresses cannot do it because they neither hear
-    nor speak in the way the logos demands. The fragment turns on a paradox of simultaneity: one cannot hear without already
-    speaking (internally, in thought-formation), and one cannot speak without having truly heard. Most people, he suggests,
-    move through language as though it were a neutral medium, a vessel for pre-formed ideas. They mistake the sound for the
-    hearing, the utterance for the speaking. The logos is not the words; it is the living tension between what emerges and
-    what resists emergence. To hear is to let the world speak through you; to speak is to let the world listen through you.
-    When Heraclitus says they understand neither, he is saying they have never inhabited that threshold. They have ears but
-    do not listen (as he says elsewhere); they have mouths but do not speak—they only phoneme, only produce noise. The aphorism
-    is not a judgment but a description of a specific failure: the failure to recognize that understanding requires a doubled
+  body: 'Heraclitus does not diagnose stupidity; he diagnoses a rupture in the organ of understanding
+    itself. To ''understand'' (xunienai) is to gather-together (xun-), to hold the logos—but those he
+    addresses cannot do it because they neither hear nor speak in the way the logos demands. The fragment
+    turns on a paradox of simultaneity: one cannot hear without already speaking (internally, in thought-formation),
+    and one cannot speak without having truly heard. Most people, he suggests, move through language as
+    though it were a neutral medium, a vessel for pre-formed ideas. They mistake the sound for the hearing,
+    the utterance for the speaking. The logos is not the words; it is the living tension between what
+    emerges and what resists emergence. To hear is to let the world speak through you; to speak is to
+    let the world listen through you. When Heraclitus says they understand neither, he is saying they
+    have never inhabited that threshold. They have ears but do not listen (as he says elsewhere); they
+    have mouths but do not speak—they only phoneme, only produce noise. The aphorism is not a judgment
+    but a description of a specific failure: the failure to recognize that understanding requires a doubled
     attention, an inward listening that shapes outward utterance.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (they understand neither how to hear nor how to speak.), the shared pattern according to
+      which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine,
+      mere logic, or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: σύνεσις (synesis)
+    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in
+      this passage (they understand neither how to hear nor how to speak.), understanding as holding-together
+      what daily contact already offers — not new information alone -> trap: IQ or book-learning; synesis
+      fails when familiarity becomes opacity'
+  - term: ἁρμονίη (harmoniē)
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
+      passage (they understand neither how to hear nor how to speak.), tensioned unity of opposites —
+      bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
+      or static balance'
+    lemma_id: harmonie
+    sense_id: harmonie.heraclitean
+  - term: σοφόν (sophon)
+    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in
+      this passage (they understand neither how to hear nor how to speak.), wisdom apart from polymathy:
+      knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning
+      (πολυμαθίη) or reputation for knowledge'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'In the middle of your next conversation, stop mid-sentence and notice: what am I hearing right now—the words, or
-    the silence between them? Then speak your next sentence as though you are listening to it emerge, not retrieving it from
-    storage. Do this three times in one exchange without announcing it.'
+  body: 'In the middle of your next conversation, stop mid-sentence and notice: what am I hearing right
+    now—the words, or the silence between them? Then speak your next sentence as though you are listening
+    to it emerge, not retrieving it from storage. Do this three times in one exchange without announcing
+    it.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Patañjali Yoga Sūtras 3.54
-    resonance: 'Both texts diagnose a failure of discernment: Heraclitus names those who cannot hear or speak (cannot perceive
-      the logos); Patañjali names the faculty that distinguishes subtle differences between apparently identical objects.
-      Each treats cognitive failure as a structural inability to discriminate what is actually present.'
-    divergence: Heraclitus frames this as a cosmic-ethical blindness to the universal logos; Patañjali frames it as a yogic
-      faculty that can be cultivated through practice to reveal already-perfected knowledge in the subtle realm.
+    resonance: 'Both texts diagnose a failure of discernment: Heraclitus names those who cannot hear or
+      speak (cannot perceive the logos); Patañjali names the faculty that distinguishes subtle differences
+      between apparently identical objects. Each treats cognitive failure as a structural inability to
+      discriminate what is actually present.'
+    divergence: Heraclitus frames this as a cosmic-ethical blindness to the universal logos; Patañjali
+      frames it as a yogic faculty that can be cultivated through practice to reveal already-perfected
+      knowledge in the subtle realm.
     passage_id: patañjali_yoga_sūtras.ys_3_54
   - citation: Isavasya Upanishad — Mantra 12
-    resonance: 'Both texts use a paradoxical structure to expose a double bind in understanding: Heraclitus shows that those
-      who cannot hear cannot speak (a reciprocal failure); Isavasya shows that devotion to only one pole (manifest or unmanifest)
-      leads to darkness, implying that true knowledge requires holding both simultaneously.'
-    divergence: Heraclitus diagnoses a failure of attention to the logos itself; Isavasya prescribes a balanced path between
-      two metaphysical poles, suggesting knowledge emerges from neither extreme alone.
+    resonance: 'Both texts use a paradoxical structure to expose a double bind in understanding: Heraclitus
+      shows that those who cannot hear cannot speak (a reciprocal failure); Isavasya shows that devotion
+      to only one pole (manifest or unmanifest) leads to darkness, implying that true knowledge requires
+      holding both simultaneously.'
+    divergence: Heraclitus diagnoses a failure of attention to the logos itself; Isavasya prescribes a
+      balanced path between two metaphysical poles, suggesting knowledge emerges from neither extreme
+      alone.
     passage_id: isavasya_upanishad.isa_018
   - citation: Svetasvatara Upanishad — Knowledge and Ignorance in the Imperishable
-    resonance: 'Both texts compress a fundamental epistemological problem into a single image: Heraclitus''s inability to
-      hear or speak mirrors the Upanishad''s claim that knowledge and ignorance are both hidden in Brahman—each suggests that
-      the capacity to know is itself obscured or paradoxical at the root.'
-    divergence: Heraclitus treats this as a failure of individual attention to what is universally available; the Upanishad
-      treats it as a metaphysical structure inherent in the Absolute itself, not a failure of perception.
+    resonance: 'Both texts compress a fundamental epistemological problem into a single image: Heraclitus''s
+      inability to hear or speak mirrors the Upanishad''s claim that knowledge and ignorance are both
+      hidden in Brahman—each suggests that the capacity to know is itself obscured or paradoxical at the
+      root.'
+    divergence: Heraclitus treats this as a failure of individual attention to what is universally available;
+      the Upanishad treats it as a metaphysical structure inherent in the Absolute itself, not a failure
+      of perception.
     passage_id: svetasvatara_upanishad.svu_013
   layer_provenance: generated_grounded
 appendixes: []

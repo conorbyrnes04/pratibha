@@ -82,3 +82,75 @@ abhyasa: Play a single sustained tone — a bowed string, a struck singing bowl,
   to the quality of the awareness that remains when there is nothing left to hear.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: तन्त्र्यादिवाद्यशब्देषु दीर्घेषु क्रमसंस्थितेः । अनन्यचेताः प्रत्यन्ते परव्योमवपुर् भवेत् ॥ ४१
+    ॥
+  layer_provenance: sourced
+- kind: iast
+  body: tantryādivādyaśabdeṣu dīrgheṣu kramasaṃsthiteḥ | ananyacetāḥ pratyante paravyomavapur bhavet ||
+    41 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #16
+
+    One whose heart-mind is completely focused on the prolonged
+
+    sounds of a musical instrument such as a tantrī (a stringed instrument
+
+    like a vīnā), through the duration of the phases [of their resonance],
+
+    at the limit [of the perceptible sound], one’s beautiful form becomes
+
+    that of the [formless] supreme Void. || 41'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: paravyoman (परव्योमन्)
+    definition: para + vyoman → the supreme space or void; boundless, objectless consciousness that is
+      one's true nature → ‘highest sky’ physicalizes the supreme open of awareness
+  - term: nāda (नाद)
+    definition: √nad ‘sound’ → resonance → sound or vibration, ranging from audible tone to the subtle
+      inner resonance of consciousness → ‘sound’ as acoustic misses subtle resonance prior to ordinary
+      hearing
+  - term: ananyacetas (अनन्यचेतस्)
+    definition: an-anya ‘not other’ + cetas ‘mind’ → having the mind on nothing else; complete one-pointed
+      absorption in a single object → ‘one-pointed’ understates mind that admits no second object
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: Both texts direct attention inward to a bodily center (heart in Svetasvatara, heart-mind
+      in Vijnana Bhairava) as the locus where sensory-mental content dissolves and a transcendent state
+      becomes accessible. The gathering of faculties into the heart is the operative move in both.
+    divergence: Svetasvatara frames this as crossing fear through Brahman (Vedantic liberation), while
+      Vijnana Bhairava frames it as the form becoming the formless Void through sustained attention to
+      sound's limit (non-dual Kashmir Shaivism).
+    passage_id: svetasvatara_upanishad.svu_009
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: Both texts posit that when attention turns from external content to the heart-mind itself,
+      the nature of appearance transforms—in Siva Sutra, appearances arise like dreams from the collision
+      of mind in the heart; in Vijnana Bhairava, the form becomes the formless Void when attention reaches
+      the limit of sound. The reversal from object-focus to subject-focus is the shared structure.
+    divergence: Siva Sutra emphasizes the dream-like illusory nature of appearances once the heart-mind
+      is recognized, while Vijnana Bhairava emphasizes the positive transformation of form into formlessness
+      through sustained perceptual attention.
+    passage_id: siva_sutra.ss_i_15
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: 'Both texts describe a paradoxical intensification of perception: sustained, ardent attention
+      to a subtle object (sound at its limit in Vijnana Bhairava; the supreme tremor in Yoga Spandakarika)
+      reveals what ordinarily escapes notice, yielding a non-ordinary state of consciousness.'
+    divergence: Yoga Spandakarika uses the analogy of seeing an object more clearly through effort, grounding
+      the insight in perceptual mechanics, while Vijnana Bhairava treats the dissolution of form into
+      Void as the direct fruit of attention itself.
+    passage_id: yoga_spandakarika.sp_36
+  layer_provenance: generated_grounded

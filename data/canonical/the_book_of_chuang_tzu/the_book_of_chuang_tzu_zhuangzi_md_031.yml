@@ -133,3 +133,117 @@ abhyasa: 'Loosen one thing—your collar, your grip on your phone, the tightness
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '孔子遊乎緇帷之林，休坐乎杏壇之上。
+
+    弟子讀書，孔子弦歌鼓琴。
+
+    奏曲未半。
+
+    有漁父者，下船而來，須眉交白，被髮揄袂，行原以上，距陸而止，左手據膝，右手持頤以聽。
+
+    曲終而招子貢、子路，二人俱對。
+
+    客指孔子曰：「彼何為者也？
+
+    」子路對曰：「魯之君子也。
+
+    」客問其族。
+
+    子路對曰：「族孔氏。
+
+    」客曰：「孔氏者何治也？
+
+    」子路未應，子貢對曰：「孔氏者，性服忠信，身行仁義，飾禮樂，選人倫，上以忠於世主，下以化於齊民，將以利天下。
+
+    此孔氏之所治也。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'There is a man who fears his shadow and hates his footprint, so he runs away from them. But the
+    more he lifts his feet, the more footprints appear. The faster he runs, the closer the shadow clings
+    to his body. He thinks he is still too slow, so he runs without stopping until his strength fails
+    and he dies. He does not know: stay in shade and the shadow vanishes; stay still and the footprint
+    ceases. You examine the boundaries of benevolence and righteousness, observe where sameness and difference
+    meet, watch how movement and stillness transform—only then do you approach not being caught. Guard
+    your genuine nature carefully, return what is natural to things and people, and nothing will burden
+    you.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The fisherman''s teaching inverts the Confucian axiom that self-cultivation prevents social disorder.
+    His contested move: the claim that *pursuing* virtue creates the very fragmentation it claims to heal.
+    By fleeing the shadow (seeking external validation through ritual, reform, loyalty), Confucius multiplies
+    the traces he wishes to erase. The paradox is not that virtue fails, but that *intentional virtue*—the
+    deliberate performance of ren and li—becomes the mechanism of self-entanglement. The fisherman does
+    not reject benevolence; he rejects the *project* of benevolence as method, replacing it with non-action
+    (wu wei) and the preservation of original simplicity (zhen).
+
+
+    Key Terms:
+
+
+    **zhen 真** - authenticity, genuineness, original nature → in Zhuangzi, the uncarved wholeness prior
+    to social differentiation → what is lost when virtue becomes a deliberate practice rather than spontaneous
+    response
+
+    **ying 影** - shadow, image, reflection → the trace of self-consciousness → in this passage, the unintended
+    consequence of chasing one''s own projection
+
+    **wu wei 無為** - non-action, non-forcing, actionless action → not passivity but alignment with natural
+    process → the fisherman''s alternative to Confucian deliberate reform'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: zìrán (自然)
+    definition: '自然 “self-so” — thus-of-itself, not “picturesque nature” -> in this passage (the Shadow
+      Cannot Be Outrun), spontaneous so-ness: things unfolding without forced contrivance -> trap: Romantic
+      wilderness aesthetics; zìrán is ontological non-forcing, not scenery'
+    lemma_id: ziran
+    sense_id: ziran.daoist
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (the Shadow Cannot Be Outrun), unforced congruence with conditions: skill that does not
+      obstruct the work -> trap: “non-action” as passivity; wúwéi can be highly skilled activity without
+      strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (the Shadow Cannot Be Outrun), the nameless source-and-course that lets beings move
+      by their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed doctrine one can
+      possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: xīn (心)
+    definition: '心 “heart-mind” — thought, feeling, and responsiveness undivided -> in this passage (the
+      Shadow Cannot Be Outrun), the heart-mind to be emptied, still, or freed from right/wrong warfare
+      -> trap: brain-only “mind” or sentimental “heart”; xīn is the whole affective-cognitive center'
+    lemma_id: xin
+    sense_id: xin.chinese
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Zhuangzi, Inner Chapters, 'Free and Easy Wandering' (Xiaoyao You)
+    resonance: Both passages use flight/pursuit as metaphor for the self-defeating nature of ambition.
+      The Peng bird that tries to fly to the sky versus the quail that stays low; here, the man who runs
+      from his shadow.
+    divergence: Xiaoyao You celebrates transcendence through scale-shifting (becoming vast). The fisherman
+      teaches transcendence through *cessation*—not flying higher but standing still.
+    passage_id: ''
+  - citation: 'Laozi, Daodejing 15: ''The ancient masters were subtle, mysterious, profound, responsive.
+      The depth of their knowledge is unfathomable.'''
+    resonance: Both texts privilege a knowing that does not announce itself, a virtue that operates without
+      display. Both critique the Confucian insistence on visible ritual propriety.
+    divergence: Laozi emphasizes the sage's inscrutability as power. The fisherman emphasizes it as *freedom
+      from burden*—the ethical stakes differ.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'For one week, identify one deliberate virtue-performance in your daily life (a kindness done
+    to be seen, a rule followed to demonstrate correctness). Each time you notice it, pause and ask: What
+    shadow am I creating by chasing this image? Then perform the same action—or its opposite—without the
+    internal audience. Observe whether the action becomes lighter or whether the absence of witness makes
+    it impossible.'

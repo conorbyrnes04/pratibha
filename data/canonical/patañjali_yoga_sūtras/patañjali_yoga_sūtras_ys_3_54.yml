@@ -126,3 +126,119 @@ abhyasa: '**The Simultaneous Witness Practice (15 minutes)**
   sees through and beyond all objects while remaining whole.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: तारकं सर्वविषयं सर्वथाविषयम् अकर्मण् चति विवेकजं ज्ञानम्
+- kind: iast
+  label: IAST
+  body: tārakaṃ sarvaviṣayaṃ sarvathāviṣayam akramaṃ ceti vivekajaṃ jñānam
+- kind: translation
+  label: Pratibha Translation
+  body: You discern the subtle differences between objects that appear alike in kind, characteristic marks,
+    and positions; this discernment is the faculty of intellect, the knowledge that distinguishes.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sutra asserts that the mind’s discriminative faculty (viveka) is the means by which the apparent
+    sameness of objects is broken into distinct realities. It claims that the very act of distinguishing
+    is itself a form of knowledge (jñānam) that operates on the level of the subtle, for the ordinary
+    senses cannot separate such close likenesses. In the Yoga and Sāṃkhya tradition, this process is not
+    merely epistemic but existential: it restores the individual’s awareness of its unique relationship
+    to the universal (puruṣa) and the material (prakṛti). The sutra’s structure—tārakaṃ sarvaviṣayaṃ sarvathāviṣayam
+    akramaṃ ceti vivekajaṃ jñānam—mirrors the earlier passage (YS 3.53) where the mind’s capacity to discriminate
+    is introduced, but here it is sharpened to the point of distinguishing even the most subtle differences.
+    This sharpened discrimination is the gateway to samādhi, for only when the mind is free from the confusion
+    of indistinguishability can it rest in its true nature. The commentary of Satchidananda, though brief,
+    underscores that this discernment is not a passive observation but an active, intentional act of the
+    intellect, which aligns with the Sāṃkhya view that cognition is the means of separating prakṛti into
+    its constituent qualities. Thus, the sutra invites the practitioner to cultivate a disciplined, discerning
+    mind as the first step toward liberation.
+
+
+    Key Terms
+
+
+    **tāraka (तारक)** — etymology: root ‘tar’ (to cross) + ‘ka’ (instrument) -> ‘one that crosses’; tradition:
+    a discriminating faculty that crosses the veil of ignorance; default translation ‘pointer’ misses
+    its dynamic, active role in cutting through illusion.
+
+
+    **akrama (अक्रमण्)** — etymology: ‘a-’ (not) + ‘krama’ (step, order) -> ‘not in order’; tradition:
+    the state of mind that is not in a fixed sequence, allowing spontaneous discrimination; default translation
+    ‘unsteady’ overlooks its purposive, non-linear nature.
+
+
+    **viveka (विवेकज)** — etymology: ‘vi’ (apart) + ‘beka’ (to discern) -> ‘separating discernment’; tradition:
+    the faculty that distinguishes subtle differences; default translation ‘intellect’ is too broad, missing
+    its specific role in differentiating alike objects.
+
+
+    **jñānam (ज्ञानम्)** — etymology: ‘jñā’ (to know) + ‘nam’ (noun marker) -> ‘knowledge’; tradition:
+    the knowledge that arises from viveka, not merely information but a transformative realization; default
+    translation ‘knowledge’ omits its experiential, liberating character.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 3.53, 3.54:** Both sutras employ the pattern ‘[noun] sarvaviṣayaṃ sarvathāviṣayam …’
+    to describe the mind’s capacity to perceive all qualities and all states; the structural homology
+    highlights the progressive sharpening of discrimination.
+
+    *Divergence:* In 3.53 the focus is on the mind’s general ability to perceive, whereas 3.54 narrows
+    it to the ability to distinguish subtle differences, thus moving from potential to actualized knowledge.
+
+
+    **Yoga Sūtra 3.55:** The next sutra continues the pattern by stating that this discrimination leads
+    to ‘samādhi’, showing a causal chain from discrimination to absorption.
+
+    *Divergence:* While 3.54 remains descriptive, 3.55 introduces a teleological outcome, indicating that
+    the sutras are building toward a goal rather than merely describing a faculty.
+
+
+    **Sāṃkhya Kārikā 1.1:** Both texts emphasize the role of intellect (buddhi) in distinguishing between
+    puruṣa and prakṛti.
+
+    *Divergence:* Sāṃkhya’s Kārikā presents this distinction as a metaphysical fact, whereas the Yoga
+    Sūtra frames it as an active, experiential process.
+
+
+    **Yoga Sūtra 1.1:** The opening sutra declares that the mind is the means of knowledge, establishing
+    the epistemological framework that 3.54 operates within.
+
+    *Divergence:* While 1.1 is declarative, 3.54 provides a specific method (viveka) for realizing that
+    declaration.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: viveka (विवेक)
+    definition: 'vi-√vic ‘discriminate apart’ → discernment -> in “Distinguishing the Indistinguishable”:
+      the faculty that distinguishes subtle differences -> not intellectual nitpicking; seeing the difference
+      between puruṣa and sattva/prakṛti'
+    lemma_id: aviveka
+  - term: atha (अथ)
+    definition: 'atha ‘now’ — auspicious commencement particle -> in “Distinguishing the Indistinguishable”:
+      You discern the subtle differences between objects that appear alike in kind, characteristic marks,
+      and positions; th… -> not filler ‘now then’; marks readiness and the opening of authorized instruction'
+  - term: yama (यम)
+    definition: '√yam ‘restrain’ → outer ethical restraints -> in “Distinguishing the Indistinguishable”:
+      You discern the subtle differences between objects that appear alike in kind, characteristic marks,
+      and positions; th… -> not optional etiquette; first limb establishing non-harm etc. as practice
+      ground'
+  - term: tāraka (तारक)
+    definition: 'root ‘tar’ (to cross) + ‘ka’ (instrument) -> ‘one that crosses’ -> in “Distinguishing
+      the Indistinguishable”: a discriminating faculty that crosses the veil of ignorance -> ‘pointer’
+      misses its dynamic, active role in cutting through illusion'
+  - term: akrama (अक्रमण्)
+    definition: '‘a-’ (not) + ‘krama’ (step, order) -> ‘not in order’ -> in “Distinguishing the Indistinguishable”:
+      the state of mind that is not in a fixed sequence, allowing spontaneous discrimination -> ‘unsteady’
+      overlooks its purposive, non-linear nature'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You focus your mind on the subtle differences between objects that appear alike, using your intellect
+    to discern their unique qualities.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: Thus, the indistinguishable differences between objects that are alike in species, characteristic
+    marks and positions become distinguishable.

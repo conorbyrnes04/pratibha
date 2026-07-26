@@ -88,3 +88,69 @@ abhyasa: 'Today, catch one small involuntary jolt — the flash before a sneeze,
   as long as it naturally lingers.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: क्षुताद्यन्ते भये शोके गह्वरे वा रणाद् द्रुते । कुतूहलेक्षुधाद्यन्ते ब्रह्मसत्तामयी दशा ॥ ११८
+    ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kṣutādyante bhaye śoke gahvare vā raṇād drute | kutūhalekṣudhādyante brahmasattāmayī daśā || 118
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #90
+
+    curiosity or wonder, at the onset and cessation of hunger: [in all
+
+    these states and more], the state replete with Being of the Absolute
+
+    [is available]. || 118'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: brahmasattā (ब्रह्मसत्ता)
+    definition: brahman + sattā ‘being-ness’ → the pure fact or presence of Being, absolute reality shining
+      as one's own awareness → ‘Being of Brahman’ scholasticizes the sheer is-ness the verse points to
+    lemma_id: brahman
+    sense_id: brahman.upanishadic
+  - term: daśā (दशा)
+    definition: daśā ‘state/phase/condition’ → a state or condition — here the particular condition of
+      consciousness revealed at emotional extremes → ‘stage’ as progress ladder misses a lived phase of
+      consciousness
+  - term: vikalpa (विकल्प)
+    definition: vi- + √kḷp ‘fashion’ → alternative construct → conceptual thought that divides experience
+      into subject and object; suspended in these intense moments → ‘thought’ is too broad; dualizing
+      ideation that splits seamless awareness
+    lemma_id: vikalpa
+    sense_id: vikalpa.shaiva
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 7 · Turīya — The Fourth
+    resonance: Both texts use radical negation to point toward a non-dual awareness that transcends ordinary
+      consciousness categories. Yukti 90 discloses the Absolute 'in' hunger's onset and cessation; Mandukya's
+      Turīya negates inward, outward, and dual consciousness to isolate what remains—a fourth state beyond
+      mental states.
+    divergence: Mandukya employs systematic negation (neti neti) as philosophical method; Vijnana Bhairava
+      uses spontaneous recognition through ordinary sensations as the gateway, privileging direct disclosure
+      over logical elimination.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_009
+  - citation: Pratyabhijnahrdayam — Sutra 13
+    resonance: Both passages locate liberation through recognition (pratyabhijña/recognition) of one's
+      own nature as consciousness itself. Yukti 90 invites direct insight into the Absolute's presence;
+      Pratyabhijnahrdayam 13 describes how complete recognition of authorship transforms the mind into
+      Supreme Consciousness through introversion.
+    divergence: Vijnana Bhairava emphasizes spontaneous wonder at natural transitions (hunger's flux);
+      Pratyabhijnahrdayam grounds recognition in the metaphysical doctrine of Śiva's authorship and requires
+      deliberate introversion as method.
+    passage_id: pratyabhijnahrdayam.phr_013
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

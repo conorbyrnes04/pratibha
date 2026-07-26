@@ -151,3 +151,85 @@ section: I.3480–3489
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'بعد از آن آمد به سوی رومیان /// پرده را بالا کشیدند از میان
+
+    عکس آن تصویر و آن کردارها /// زد بر این صافی شده دیوارها
+
+    هر چه آن جا دید اینجا به نمود /// دیده را از دیده خانه می‌ربود
+
+    رومیان آن صوفیانند ای پدر /// بی‌ز تکرار و کتاب و بی‌هنر
+
+    لیک صیقل کرده‌اند آن سینه‌ها /// پاک از آز و حرص و بخل و کینه‌ها
+
+    آن صفای آینه وصف دل است /// کاو نقوش بی‌عدد را قابل است
+
+    صورت بی‌صورت بی‌حد غیب /// ز آینه‌ی دل تافت بر موسی ز جیب
+
+    عقل اینجا ساکت آمد یا مضل /// ز آنکه دل با اوست یا خود اوست دل'
+- kind: iast
+  label: Transliteration note
+  body: Persian — see Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: 'Then the king came to the Greeks; they raised the curtain. The reflection of those pictures struck
+    the purified walls. Whatever he had seen there appeared here more beautifully — snatching the eye
+    from its socket. The Greeks, O father, are the Sufis: without study, books, or craft — yet they have
+    burnished their breasts clean of greed, avarice, stinginess, and hatreds. That mirror-purity is the
+    heart''s attribute, able to receive countless forms. The formless infinite form of the Unseen shone
+    from the heart''s mirror upon Moses from the bosom. Here intellect falls silent or errs — because
+    the heart is with Him, or rather the heart is He.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Sufism is redefined as burnished breast, not erudition. The heart as unbounded mirror receives
+    what heaven cannot contain. The climax risks identity language: the heart is with God, or is God —
+    a flash of union that must not become slogan. Existentially: polish one envy or hatred until something
+    can reflect that you did not paint.
+
+
+    Key Terms
+
+
+    **آینه‌ی دل** — mirror of the heart.
+
+
+    **صورت بی‌صورت** — formless form; the Unseen''s paradox.
+
+
+    **صفا ṣafā** — purity/clarity of the mirror.
+
+
+    Cross-Tradition Resonances
+
+
+    **Eckhart (God writing on blank tablet):** Both need a cleared receptacle for the Absolute.
+
+    *Divergence:* Eckhart''s tablet awaits inscription; Rūmī''s mirror reflects already-painted forms
+    more truly.
+
+
+    **Know Yourself / Balyānī (only the One is):** Both press heart-identity language.
+
+    *Divergence:* Balyānī is more absolute in denying otherness; Rūmī keeps the narrative of polish and
+    reflection.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: The climax
+      risks identity language: the heart is with God, or is God — a flash of union that must not become
+      slogan. Trap: erotic fusion fantasy without the discipline of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: nay / reed (نی)
+    definition: 'Persian nay ‘reed flute’ → the cut reed whose complaint is longing for the reed-bed—origin
+      remembered as wound Here: The Greeks, O father, are the Sufis: without study, books, or craft —
+      yet they have burnished their breasts clean of greed, avarice, stinginess, and hatreds. Trap: sentimental
+      music imagery without the metaphysics of separation'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: 'Sit facing a wall or closed eyes. Imagine burnishing the breast once per breath — greed, haste,
+    resentment as rust. End with: may what I did not paint appear.'

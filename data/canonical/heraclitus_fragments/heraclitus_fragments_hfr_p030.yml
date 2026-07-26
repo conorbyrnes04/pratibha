@@ -127,6 +127,37 @@ pratibha_layers:
     cosmos, where Plotinus describes the universe as a unified, interconnected system governed by the
     One. *Divergence:* while Plotinus emphasizes the transcendent, eternal nature of the One, Heraclitus''
     concept of the ever-living fire highlights the immanent, dynamic aspect of the cosmos.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ἁρμονίη (harmoniē)
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
+      passage (the Eternal, Self-Regulating Cosmos), tensioned unity of opposites — bow and lyre held
+      by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance or static
+      balance'
+    lemma_id: harmonie
+    sense_id: harmonie.heraclitean
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (the Eternal, Self-Regulating Cosmos), the shared pattern according to which all things
+      occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or
+      only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: πῦρ (pyr)
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
+      (the Eternal, Self-Regulating Cosmos), world-ruling fire as measured transformation and exchange,
+      not mythic flame alone -> trap: treating fire as a static elemental substance rather than lawful
+      becoming'
+    lemma_id: pyr
+    sense_id: pyr.heraclitean
+  - term: ψυχή (psychē)
+    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage
+      (the Eternal, Self-Regulating Cosmos), the soul whose depth, dryness, or rudeness decides whether
+      senses can witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
+    lemma_id: psyche
+    sense_id: psyche.platonic
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: As you breathe in and out, imagine the ever-living fire of the cosmos igniting and extinguishing

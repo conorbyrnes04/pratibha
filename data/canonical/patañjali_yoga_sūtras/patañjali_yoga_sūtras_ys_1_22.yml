@@ -102,3 +102,102 @@ abhyasa: During your next meditation or focused activity, deliberately notice th
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: मृदुमध्यमध्यिमात्रत्वात ततः अपि विशेषः
+- kind: iast
+  label: IAST
+  body: mṛdumadhyādhimātratvāt tato 'pi viśeṣaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The samādhi state is mild, moderate, and excessive, and it is also special.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim here is that the depth of samādhi is not a single continuum but a triadic classification
+    that mirrors the threefold gradations of effort and feeling found in the preceding verses. The contested
+    move is the inference that the same three categories apply to both the means (the practice) and the
+    resulting state, a reading that some commentators treat as an overextension of the earlier enumeration
+    of ‘tivra, madhyam, mṛdu’. In the Yoga and Sāṃkhya framework, samādhi is the culmination of the pratyāhāra–pratyakṣa–pratyābhyās
+    cycle, and its quality is determined by the degree of detachment (tivra) and the intensity of concentration
+    (madhyam). The present verse invites the practitioner to recognize that the same gradations that govern
+    the practice also govern the attainment; a mild practice yields a mild samādhi, a moderate practice
+    a moderate samādhi, and an intense practice an excessive samādhi. This mirrors the Sāṃkhya notion
+    that the same principle (pratyakṣa) manifests in varying degrees depending on the interaction of puruṣa
+    and prakṛti. The existential implication is that one need not aim for an unattainable ‘excessive’
+    samādhi if one is in a mild or moderate state of mind; the practice should be calibrated to the practitioner’s
+    current disposition. Dvivedi’s commentary, which enumerates nine classes of yogins based on the combination
+    of means and feeling, reinforces this triadic structure and underscores the necessity of aligning
+    effort with inner disposition to achieve proportional concentration. Thus, the verse functions as
+    a practical diagnostic: observe your current level of effort and feeling, and adjust your practice
+    so that the resulting samādhi matches the intended depth.
+
+
+    Key Terms
+
+
+    **mṛdu (मृदु)** — mṛdu (soft, mild) – in Sāṃkhya, the subtle, gentle aspect of prakṛti; in Yoga, the
+    gentle, non-assertive mode of practice
+
+
+    **tivra (तिव्र)** — tivra (intense, acute) – the sharp, ardent aspect of samvega; in Sāṃkhya, the
+    active, dynamic facet of prakṛti; in Yoga, the forceful, penetrating mode of concentration
+
+
+    **samādhi (समाधि)** — samādhi (union, absorption) – the final apāna of the eight limbs; the state
+    where citta is still, yet aware; the point of convergence of puruṣa and prakṛti
+
+
+    Cross-Tradition Resonances
+
+
+    **Patanjali, Yoga Sūtra 1.1:** Both verses classify the nature of the mind’s activity (mṛdu, madhyam,
+    tivra) and link it to the quality of samādhi, mirroring the tripartite structure of the first chapter
+
+    *Divergence:* While 1.1 focuses on the mind’s activity, 1.22 directly ties those categories to the
+    resulting samādhi, extending the classification to the outcome rather than the process
+
+
+    **Sāṃkhya Karika 4.1:** The triadic division of prakṛti (sattva, rajas, tamas) parallels the mild‑moderate‑excessive
+    gradations here, suggesting a shared ontological schema
+
+    *Divergence:* Sāṃkhya’s triad is ontological, whereas the Yoga Sūtra applies it phenomenologically
+    to practice and attainment
+
+
+    **Dvivedi, Commentary on Yoga Sūtra 1.22:** Dvivedi explicitly enumerates nine classes of yogins,
+    echoing the combinatorial logic of the triadic structure
+
+    *Divergence:* Dvivedi’s ninefold schema introduces an additional layer (combining means and feeling)
+    that the terse sūtra itself does not articulate'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: samādhi (समाधि)
+    definition: 'sam-ā-√dhā ‘settle completely together’ -> in “Mild, Moderate, Excessive Samādhi”: the
+      state where citta is still, yet aware -> not trance-entertainment or unconsciousness; graded absorption
+      where subject–object friction quiets'
+    lemma_id: samadhi
+    sense_id: samadhi.yoga
+  - term: mṛdu (मृदु)
+    definition: 'source-term mṛdu -> in “Mild, Moderate, Excessive Samādhi”: in Yoga, the gentle, non-assertive
+      mode of practice -> default English flattens the technical work this term does here'
+  - term: tivra (तिव्र)
+    definition: 'source-term tivra -> in “Mild, Moderate, Excessive Samādhi”: in Yoga, the forceful, penetrating
+      mode of concentration -> default English flattens the technical work this term does here'
+  - term: madhya
+    definition: 'source-term madhya -> in “Mild, Moderate, Excessive Samādhi”: in samādhi, a steady, balanced
+      state of attention with sustained focus on the object -> default English flattens the technical
+      work this term does here'
+  - term: adhimātra
+    definition: 'source-term adhimātra -> in “Mild, Moderate, Excessive Samādhi”: in samādhi, a powerful,
+      unwavering absorption marked by vivid direct knowing -> default English flattens the technical work
+      this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Focus your attention on a single point, allowing it to settle gently, then deepen, then intensify,
+    observing how the inner stillness shifts with each level.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: A further distinction arises on account of

@@ -82,3 +82,90 @@ abhyasa: The moment you notice your attention has already settled naturally on s
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: यथाभिमतध्यानाद् वा
+- kind: iast
+  label: IAST
+  body: yathābhimatadhyānād vā
+- kind: translation
+  label: Pratibha Translation
+  body: Meditate according to your own inclination, or by habitual focus
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this sutra is that the essence of samādhi is not a fixed external object
+    but the disciplined, self‑chosen focus of the mind. Patanjali’s earlier verses articulate the goal—citta‑vṛtti‑nirodhaḥ
+    (the stilling of the mind‑stream)—while here he supplies the operative principle: the mind must be
+    habituated to remain absorbed in a chosen object. This is a contested move, because some commentators
+    read the sutra as merely a method, while others see it as a doctrinal assertion that the object of
+    meditation is itself a product of the mind’s volition. In the Sāṃkhya‑Yoga framework, the mind (citta)
+    is a function of prakṛti, and its vṛtti (tendencies) are regulated by the disciplined practice of
+    yoga. By choosing an object, the practitioner exercises control over the mind’s fluctuations, thereby
+    aligning with the Sāṃkhya notion of puruṣa’s discernment over prakṛti. The existential import is that
+    liberation is not a passive absorption but an active, intentional cultivation of attention. Dvivedi’s
+    commentary underscores the indifference to the specific object; what matters is the habitual, sustained
+    engagement. This aligns with the broader Yoga principle that the path is as much about the practitioner’s
+    inner discipline as it is about external techniques. Thus, the sutra invites the seeker to internalize
+    the practice: by repeatedly directing attention to a chosen focus, one trains the mind to remain steady,
+    which is the very hallmark of samādhi.
+
+
+    Key Terms
+
+
+    **yathā (यथा)** — etymology: ‘as’, ‘like’; Sāṃkhya tradition: denotes the relative, conditioned nature
+    of phenomena; default translation ‘as’ misses the modal nuance of conditioned resemblance
+
+
+    **bhimā (भिम्)** — etymology: ‘to be chosen’; Sāṃkhya tradition: refers to the volitional aspect of
+    puruṣa’s discernment; default translation ‘according to’ omits the active agency of the chooser
+
+
+    **dhyāna (ध्यान)** — etymology: ‘to contemplate’; Sāṃkhya tradition: a state of focused attention
+    that suspends vṛtti; default translation ‘meditation’ overlooks its function as a regulative practice
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 1.1, 1.39:** Both verses frame the relationship between yoga and the mind’s fluctuations;
+    1.1 defines the goal (citta‑vṛtti‑nirodhaḥ) while 1.39 supplies the method (habitual focus).
+
+    *Divergence:* 1.1 is declarative, 1.39 prescriptive, reflecting a shift from abstract definition to
+    concrete practice
+
+
+    **Yoga Sūtra 1.42, 1.39:** 1.42 states that samādhi is the result of sustained attention, echoing
+    1.39’s emphasis on habitual focus.
+
+    *Divergence:* 1.42 describes the state achieved, whereas 1.39 prescribes the means to attain it, highlighting
+    the progression from method to outcome'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dhyāna (ध्यान)
+    definition: '√dhyā ‘contemplate’ → unbroken flow toward the object -> in “Meditation by Habit”: a
+      state of focused attention that suspends vṛtti -> not ‘thinking about’; continuous single-current
+      cognizing that deepens dhāraṇā'
+  - term: atha (अथ)
+    definition: 'atha ‘now’ — auspicious commencement particle -> in “Meditation by Habit”: Meditate according
+      to your own inclination, or by habitual focus -> not filler ‘now then’; marks readiness and the
+      opening of authorized instruction'
+  - term: yathā (यथा)
+    definition: '‘as’, ‘like’ -> in “Meditation by Habit”: denotes the relative, conditioned nature of
+      phenomena -> ‘as’ misses the modal nuance of conditioned resemblance'
+  - term: bhimā (भिम्)
+    definition: '‘to be chosen’ -> in “Meditation by Habit”: refers to the volitional aspect of puruṣa’s
+      discernment -> ‘according to’ omits the active agency of the chooser'
+  - term: yathābhimata
+    definition: 'source-term yathābhimata -> in “Meditation by Habit”: according to one''s own preference
+      or inclination -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose an object that resonates with you and maintain steady, uninterrupted attention on it, allowing
+    the mind to settle into a single point of focus.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: Or by meditating according to one's

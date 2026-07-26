@@ -134,3 +134,79 @@ section: I.3467–3477
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'چینیان گفتند ما نقاش‌تر /// رومیان گفتند ما را کر و فر
+
+    چینیان صد رنگ از شه خواستند /// پس خزینه باز کرد آن ارجمند
+
+    رومیان گفتند نی نقش و نه رنگ /// در خور آید کار را جز دفع زنگ
+
+    در فرو بستند و صیقل می‌زدند /// همچو گردون ساده و صافی شدند
+
+    از دو صد رنگی به بی‌رنگی رهی است /// رنگ چون ابر است و بی‌رنگی مهی است
+
+    هر چه اندر ابر ضو بینی و تاب /// آن ز اختر دان و ماه و آفتاب'
+- kind: iast
+  label: Transliteration note
+  body: Persian — see Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: 'The Chinese said, "We are the better painters"; the Greeks said, "Excellence and power are ours."
+    The Chinese asked the king for a hundred colours; the treasury opened. The Greeks said, "Neither design
+    nor colour is fit for our work — only removing rust." They shut the door and burnished, becoming clear
+    and pure as the sky. There is a way from two hundred colours to colourlessness: colour is cloud; colourlessness
+    is moon. Whatever light you see in cloud comes from star, moon, and sun.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Two spiritual technologies: accumulation of forms vs polishing the receptacle. The contested
+    claim is that colourlessness is not blankness but maximal receptivity — moon receiving light. Existentially:
+    are you adding more colours to the room, or removing rust?
+
+
+    Key Terms
+
+
+    **صیقل ṣayqal** — burnishing/polish; Sufi purification of the breast.
+
+
+    **بی‌رنگی** — colourlessness; the clear mirror-state.
+
+
+    **دفع زنگ** — removing rust; clearing the heart''s tarnish.
+
+
+    Cross-Tradition Resonances
+
+
+    **Pratyabhijñāhṛdayam (recognition vs accumulation):** Both privilege clearing over adding content.
+
+    *Divergence:* Recognition reclaims authorship of display; Rūmī''s Greeks become mirrors of another''s
+    art.
+
+
+    **Dōgen (forgetting the self):** Both empty the clutching subject.
+
+    *Divergence:* Dōgen''s forgetting is verified by myriad dharmas; Rūmī''s polish mirrors painted forms
+    more beautifully.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: Chinese
+      Colour, Greek Polish — From Many Colours to Colourlessness Chinese Colour, Greek Polish — From Many
+      Colours to Colourlessness چینیان گفتند ما نقاش‌تر /… Trap: erotic fusion fantasy without the discipline
+      of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: rūḥ (روح)
+    definition: '‘spirit’ → the living breath that remembers God and suffers exile in form Here: Two spiritual
+      technologies: accumulation of forms vs polishing the receptacle. Trap: ghostly ‘spirit’ without
+      ethical/ontological force'
+    lemma_id: psyche
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: 'Choose one habit of spiritual "colour collecting" (books, opinions, techniques). For one day,
+    practice only rust-removal: drop one reactive pattern each time it appears.'

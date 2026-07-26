@@ -98,3 +98,100 @@ abhyasa: 'Reverse-engineer one action today: pick a moment when you acted with w
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '大道廢，有仁義；
+
+    智慧出，有大偽；
+
+    六親不和，有孝慈；
+
+    國家昏亂，有忠臣。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'When the Great Way [*dàdào* 大道] (Way or Method) ceased to be observed, benevolence and righteousness
+    came into vogue.
+
+
+    (Then) appeared wisdom and shrewdness, and there ensued great hypocrisy.
+
+
+    When harmony no longer prevailed throughout the six kinships, filial sons found their manifestation;
+    when the states and clans fell into disorder, loyal ministers appeared.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that the disappearance of the Great Tao does not leave a vacuum but replaces
+    it with a counterfeit moral order. The contested move is the claim that benevolence and righteousness
+    surface only when the Tao is lost, suggesting that these virtues are contingent rather than intrinsic.
+    The text warns that such emergent qualities are merely echoing the Tao’s former presence, yet they
+    lack its depth and become prone to hypocrisy. The pattern of virtue rising from decline mirrors the
+    Taoist critique of institutionalized morality, which gains power when the natural order is absent,
+    but ultimately remains an imitation that cannot sustain itself.
+
+
+    The passage also highlights the paradoxical emergence of loyalty and filial piety in times of familial
+    and national disarray. While these traits are traditionally seen as stabilizing forces, the chapter
+    implies they are reactive, arising as a compensatory response to disorder rather than as proactive
+    guardians of harmony. Thus, the text invites readers to discern the difference between genuine virtue
+    rooted in the Tao and its superficial counterparts that surface in crisis.
+
+
+    Key Terms:
+
+
+    **大道 (dàdào)** — Great Way -> the ultimate, unchanging principle of the cosmos -> "Great Tao"
+
+    **仁義 (rén yì)** — benevolence and righteousness -> Daoist sense of compassionate moral action -> "benevolence
+    and righteousness"
+
+    **智慧 (zhì huì)** — wisdom -> Daoist understanding of insight beyond conventional knowledge -> "wisdom"
+
+    **偽 (wěi)** — falsehood, hypocrisy -> Daoist caution against deceptive imitation of virtue -> "great
+    hypocrisy"'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dà dào (大道)
+    definition: '大+道 ‘great way’ -> in “The Rise of Virtue Amid Decline”: Great Way -> the ultimate, unchanging
+      principle of the cosmos -> "Great Tao -> not highway metaphor only; the broad way people abandon
+      for side-paths of cleverness'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Rise of Virtue Amid Decline”: When the Great Way [*dàdào*
+      大道] (Way or Method) ceased to be observed, benevolence and righteousness came into vogue. -> not
+      mere possession; the named/manifest pole that co-arises with wú'
+  - term: rén yì (仁義)
+    definition: 'source-term rén yì -> in “The Rise of Virtue Amid Decline”: benevolence and righteousness
+      -> Daoist sense of compassionate moral action -> "benevolence and righteousness -> default English
+      flattens the technical work this term does here'
+  - term: zhì huì (智慧)
+    definition: 'source-term zhì huì -> in “The Rise of Virtue Amid Decline”: wisdom -> Daoist understanding
+      of insight beyond conventional knowledge -> "wisdom -> default English flattens the technical work
+      this term does here'
+  - term: wěi (偽)
+    definition: 'source-term wěi -> in “The Rise of Virtue Amid Decline”: falsehood, hypocrisy -> Daoist
+      caution against deceptive imitation of virtue -> "great hypocrisy -> default English flattens the
+      technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plato, Republic, Book VII – Allegory of the Cave
+    resonance: Both texts suggest that apparent virtue or knowledge is merely a shadow of true reality
+      when the underlying principle (Tao or Forms) is absent.
+    divergence: Plato’s cave emphasizes enlightenment through philosophical inquiry, whereas the Tao Te
+      Ching warns that such apparent virtue is ultimately deceptive.
+    passage_id: ''
+  - citation: Confucius, Analects 2.4 – “The Master said, ‘The gentleman is not a man who has no faults…’”
+    resonance: Both comment on the emergence of moral qualities in the absence of higher guidance.
+    divergence: Confucianism frames these qualities as cultivated through education, while the Tao Te
+      Ching presents them as reactive, lacking depth.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand still in the quiet of a moment, observing the currents of your own thoughts. When you notice
+    a surge of pride or judgment, gently let it pass without clinging, allowing the natural flow of the
+    Tao to guide you back to equanimity.

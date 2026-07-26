@@ -88,3 +88,74 @@ abhyasa: 'Sit and let a mild pleasant sensation arise on its own — the comfort
   many times.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: न चित्तं निक्षिपेद् दुःखे न सुखे वा परिक्षिपेत् । भैरवि ज्ञायतां मध्ये किं तत्त्वम् अवशिष्यते
+    ॥ १०३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: na cittaṃ nikṣiped duḥkhe na sukhe vā parikṣipet | bhairavi jñāyatāṃ madhye kiṃ tattvam avaśiṣyate
+    || 103 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #75
+
+    Do not abandon the heart-mind to either suffering or happiness,
+
+    O Bhairavī! In the Center is that reality which remains: let it be
+
+    known. || 103'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: citta (चित्त)
+    definition: √cit → mind-stream/functional mind → the individuated, fluctuating mind that identifies
+      with passing states → ‘mind’ blurs citta (stream) with cit (knowingness)
+    lemma_id: citta
+    sense_id: citta.shaiva
+  - term: madhya (मध्य)
+    definition: madhya ‘middle/center’ → the middle or central ground between two poles, here the awareness
+      underlying both pleasure and pain → ‘center’ as geometry misses the still hinge between movements
+      where awareness opens
+  - term: tattva (तत्त्व)
+    definition: tat + -tva → that-ness/principle → reality or essential principle; here the abiding consciousness
+      that remains when the mind stops swinging → ‘element/truth’ flattens a constitutive principle in
+      the Śaiva map—or true reality vs construct
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — Verse 11.5
+    resonance: Both texts locate the root of suffering not in external conditions (happiness/suffering
+      themselves) but in the mind's relationship to them—Astavakra traces suffering to worry/judgment,
+      Vijnana Bhairava instructs non-abandonment to either pole, redirecting attention to the witnessing
+      consciousness rather than content.
+    divergence: Astavakra emphasizes cognitive recognition (knowing suffering's cause dissolves it), while
+      Vijnana Bhairava emphasizes sustained non-dual attention to the heart-mind itself as the locus of
+      clarity.
+    passage_id: astavakra_gita.asg_11_5
+  - citation: Yoga Spandakarika — First Flow
+    resonance: Both dissolve the binary of pleasure and suffering into a unified ground—Yoga Spandakarika
+      names this ground 'profound consciousness' where opposites are revealed as non-dual, and Vijnana
+      Bhairava's instruction not to abandon to either state similarly points toward a consciousness that
+      transcends the duality.
+    divergence: Yoga Spandakarika makes an ontological claim (pleasure/suffering are inherently non-dual),
+      while Vijnana Bhairava prescribes a practice of non-abandonment that reveals this non-duality through
+      attention.
+    passage_id: yoga_spandakarika.sp_05
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: Both direct attention inward to the heart as the seat where mind and senses gather, and
+      both frame this gathering as the means by which one transcends affliction—the Svetasvatara through
+      embodied alignment, Vijnana Bhairava through non-dual resting in the heart-mind.
+    divergence: Svetasvatara emphasizes somatic technique (alignment of body, neck, head) as the method,
+      while Vijnana Bhairava emphasizes the non-dual stance of not-abandoning as the direct means.
+    passage_id: svetasvatara_upanishad.svu_009
+  layer_provenance: generated_grounded

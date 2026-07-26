@@ -74,3 +74,100 @@ abhyasa: Release your current meditation object—whether breath, mantra, or ima
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: ना च त त् साःलम्बनं तस्याविषयिभूतत्वात्
+- kind: iast
+  label: IAST
+  body: na ca tat sālambanaṃ tasyāviṣayībhūtatvāt
+- kind: translation
+  label: Pratibha Translation
+  body: And not that support, from that object of being.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sutra asserts that the true support for the practitioner is not an external or mental aid
+    but the intrinsic object of being itself. In the Yoga‑Sāṃkhya framework, the mind’s vṛtti (mental
+    fluctuations) are often treated as supports that can be harnessed or discarded. Here, Patanjali explicitly
+    rejects such a strategy, insisting that the only reliable anchor is the pure, unconditioned reality
+    of the self—purusha—expressed in the phrase tasyāviṣayībhūtatvāt (from that object of being). This
+    move is contested in the tradition because many commentators (e.g., the Śānti‑Sūtra) interpret the
+    “support” as the meditative concentration (dhyāna) that steadies the mind. Patanjali’s stance, however,
+    elevates the ontological status of purusha above all mental techniques, implying that samādhi is achieved
+    by aligning with the self’s inherent nature rather than by cultivating external aids. The existential
+    implication is profound: the practitioner must abandon reliance on thoughts, motives, or external
+    conditions and instead turn inward to the self’s own being. This aligns with Satchidananda’s observation
+    that the motive behind a thought is not the object of samyama; the true object is the self’s unchanging
+    essence. By internalizing this principle, one learns to let go of the illusion of support and to rest
+    in the self’s own presence, thereby advancing toward liberation.
+
+
+    Key Terms
+
+
+    **sālambanaṃ (साःलम्बनम्)** — sā (support) + laṃana (to lean) -> support; in Yoga, often refers to
+    external aids or mental focus; here it is negated, indicating that external aids are not the true
+    support.
+
+
+    **tasyāviṣayībhūtatvāt (तस्याविषयिभूतत्वात्)** — tasyā (that) + viṣaya (object) + bhūta (being) +
+    tva (essence) + āt (from) -> from that object of being; denotes the intrinsic reality of purusha,
+    the only true anchor.
+
+
+    **na ca (ना च)** — na (not) + ca (and) -> conjunction of negation; signals that the preceding clause
+    is excluded from the list of supports.
+
+
+    Cross-Tradition Resonances
+
+
+    **Patanjali, Yoga Sūtra 3.20:** Explicit negation of external support mirrors the Sankhya principle
+    that purusha is independent of prakṛti; only purusha is the true support.
+
+    *Divergence:* While Sankhya treats support as inherent in purusha, Patanjali’s sutra emphasizes the
+    need to discard all external aids, highlighting a more radical inward focus.
+
+
+    **Śānti‑Sūtra 1.2:** The Śānti‑Sūtra speaks of dhyana as the support for samādhi, structurally similar
+    to the idea of a support.
+
+    *Divergence:* Patanjali’s negation turns this support into a falsehood, underscoring that dhyana is
+    a tool, not the ultimate anchor.
+
+
+    **Bhaṭṭa, Yoga Vāsiṣṭha 2.3:** Bhaṭṭa describes the mind’s fluctuations as potential supports if properly
+    harnessed.
+
+    *Divergence:* Patanjali rejects this harnessing, insisting that reliance on vṛtti is insufficient
+    for true samādhi.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ālambana (आलम्बन)
+    definition: 'ā-√lamb ‘lean on’ → support/object of meditation -> in “Reject External Support”: And
+      not that support, from that object of being. -> not crutch in a weak sense; the chosen support that
+      citta rests upon in practice'
+  - term: sālambanaṃ (साःलम्बनम्)
+    definition: 'source-term sālambanaṃ -> in “Reject External Support”: here it is negated, indicating
+      that external aids are not the true support -> default English flattens the technical work this
+      term does here'
+  - term: tasyāviṣayībhūtatvāt (तस्याविषयिभूतत्वात्)
+    definition: ') -> from that object of being -> in “Reject External Support”: + viṣaya (object) + bhūta
+      (being) + tva (essence) + āt (from) -> from that object of being -> default English flattens the
+      technical work this term does here'
+  - term: na ca (ना च)
+    definition: 'the list of supports. -> in “Reject External Support”: signals that the preceding clause
+      is excluded from the list of supports -> default English flattens the technical work this term does
+      here'
+  - term: sālambana
+    definition: 'source-term sālambana -> in “Reject External Support”: a meditation object outside consciousness
+      that serves as an anchor -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Do not rely on external or mental aids; instead, anchor yourself in the pure object of being.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: But this does not include the support in the person’s mind [such as the motive behind the thought,
+    etc.], as that is not the object of the saṁyama.

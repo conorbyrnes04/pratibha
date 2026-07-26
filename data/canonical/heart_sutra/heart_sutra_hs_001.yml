@@ -93,3 +93,103 @@ abhyasa: 'Pick up or touch something ordinary right now—a cup, your phone, fab
 translation_provenance: Rendered from the public-domain source (Sanskrit (IAST)). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: रूपं शून्यता शून्यतैव रूपं, रूपान् न पृथक् शून्यता शून्यताया न पृथग् रूपं, यद् रूपं सा शून्यता
+    या शून्यता तद् रूपं; एवम् एव वेदना-संज्ञा-संस्कार-विज्ञानम्.
+  layer_provenance: transliterated_from_iast
+- kind: iast
+  label: IAST
+  body: rūpaṃ śūnyatā śūnyataiva rūpaṃ, rūpān na pṛthak śūnyatā śūnyatāyā na pṛthag rūpaṃ, yad rūpaṃ sā
+    śūnyatā yā śūnyatā tad rūpaṃ; evam eva vedanā-saṃjñā-saṃskāra-vijñānam.
+- kind: translation
+  label: Pratibha Translation
+  body: 'Here, Śāriputra: form is emptiness [śūnyatā], and emptiness is exactly form. Emptiness is not
+    something standing apart from form; form is not something standing apart from emptiness. What we call
+    form simply is emptiness; what we call emptiness simply is form. And it is the same for the other
+    four aggregates [skandha]—feeling, perception, mental formations, and consciousness.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is an identity, not a ranking: emptiness is not a truer thing hidden behind the false
+    screen of form, and form is not a consolation prize beneath a higher void. Śāntideva''s later school
+    will call this the refusal of both extremes, but the sūtra states it as flat equation—*rūpaṃ śūnyatā*,
+    *śūnyataiva rūpaṃ*—and the counterintuitive move is the second half. It is easy to hear "form is empty"
+    as world-denial; the sūtra immediately reverses direction so that emptiness cannot congeal into a
+    new absolute to escape into. Emptiness here means *svabhāva-śūnya*, empty of own-being: nothing carries
+    a self-standing essence, because everything arises dependently. To see the five aggregates as empty
+    is not to watch them vanish but to stop mistaking their momentum for a solid, defensible self. In
+    the Prajñāpāramitā context this is Avalokiteśvara''s "deep practice"—wisdom that liberates precisely
+    by leaving appearances exactly where they are while dissolving the grasping that clutches them. Existentially,
+    it undercuts the retreatant''s temptation to treat meditation as an exit from experience: there is
+    no elsewhere to reach, only this—seen without the fiction of a core.
+
+
+    Key Terms:
+
+
+    **śūnyatā (शून्यता)** — Etymology: from *śūnya* (swollen/hollow, hence "empty, zero") + abstract suffix
+    *-tā*. In Prajñāpāramitā it never means blank nothingness; it names the absence of independent essence
+    (*svabhāva*) in things that nonetheless appear and function. Default "emptiness" invites nihilism;
+    the sūtra''s grammar of identity blocks that reading by equating it with form itself.
+
+    **rūpa (रूप)** — Etymology: "shape, visible form," the first of the five *skandhas*. Here it stands
+    in for the whole material-experiential world. The point is not that matter is illusion but that its
+    apparent solidity is borrowed, relational, and therefore unclutchable.
+
+    **skandha (स्कन्ध)** — Etymology: "heap, bundle, trunk of a tree." The five heaps (form, feeling,
+    perception, formations, consciousness) are the disassembly kit of the self: the sūtra runs the emptiness-equation
+    through each so no residue is left to hide a "me."'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śūnyatā (शून्यता)
+    definition: 'Etymology: from *śūnya* (swollen/hollow, hence "empty, zero") + abstract suffix *-tā*.
+      In Prajñāpāramitā it never means blank nothingness; it names the absence of independent essence
+      (*svabhāva*) in things that nonetheless appear and function. Default "emptiness" invites nihilism;
+      the sūtra''s grammar of identity blocks that reading by equating it with form itself.'
+    lemma_id: sunyata
+    sense_id: sunyata.madhyamaka
+  - term: rūpa (रूप)
+    definition: 'Etymology: "shape, visible form," the first of the five *skandhas*. Here it stands in
+      for the whole material-experiential world. The point is not that matter is illusion but that its
+      apparent solidity is borrowed, relational, and therefore unclutchable.'
+  - term: skandha (स्कन्ध)
+    definition: 'Etymology: "heap, bundle, trunk of a tree." The five heaps (form, feeling, perception,
+      formations, consciousness) are the disassembly kit of the self: the sūtra runs the emptiness-equation
+      through each so no residue is left to hide a "me."'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nāgārjuna, MMK 24.18 (dependent arising = emptiness)
+    resonance: Both texts identify emptiness with the very things that appear rather than with a realm
+      behind them; Nāgārjuna supplies the argument (dependent arising) for which the sūtra gives the meditative
+      slogan.
+    divergence: the sūtra is liturgical and performative (spoken to Śāriputra as instruction), whereas
+      Nāgārjuna is dialectical, dismantling essence through explicit reductio.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_18
+  - citation: Heraclitus, DK B12 (river)
+    resonance: the river is real and steppable yet has no fixed substance to step into twice—an early
+      Western intuition that identity is process, resonant with form-as-emptiness.
+    divergence: Heraclitus keeps a governing Logos ordering flux; the Heart Sūtra removes any such underlying
+      ordering principle as itself empty.
+    passage_id: ''
+  - citation: Chāndogya Upaniṣad 6.8 (tat tvam asi)
+    resonance: both climax in a terse identity-formula meant to collapse the seeker's distance from reality.
+    divergence: the Upaniṣad affirms a fullest Self (ātman/Brahman) as what you are; the sūtra denies
+      exactly such a self-substance, making the two formulas mirror-opposite in metaphysics though twinned
+      in function.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Choose one solid-seeming object in the room and one solid-seeming feeling in the body. For each,
+    say silently: "this is form, and this is emptiness—not two." Do not try to make either disappear;
+    only notice the exact moment your mind reaches to grip it as a fixed thing, and let that grip open
+    by a fraction. Rest there for three breaths.'
+- kind: appendix
+  label: Public-domain anchor (Müller 1894)
+  body: Here, Śāriputra, form is emptiness and emptiness is form; emptiness is not other than form, form
+    is not other than emptiness. Whatever is form, that is emptiness; whatever is emptiness, that is form.
+    The same holds for feeling, perception, formations, and consciousness.

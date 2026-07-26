@@ -91,3 +91,79 @@ abhyasa: 'Sit comfortably and let the breath move without any control — do not
   does, stop reaching for the next breath-point and simply remain in that fullness for as long as it lasts.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: ऊर्ध्वे प्राणो ह्य् अधो जीवो विसर्गात्मा परोच्चरेत् । उत्पत्तिद्वितयस्थाने भरणाद् भरिता स्थितिः
+    ॥ २४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ūrdhve prāṇo hy adho jīvo visargātmā paroccaret | utpattidvitayasthāne bharaṇād bharitā sthitiḥ
+    || 24 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #1
+
+    The Supreme Goddess constantly articulates (uccaret) as the life-giving flow of
+
+    breath: prāṇa (exhale) rising up, and jīva (inhale)—the movement into
+
+    embodiment—descending. By pausing at the two places where they arise, and
+
+
+    filling10 those points [with silent awareness], one abides in the state of inner
+
+    fullness (bharitā). || 24'
+- kind: commentary
+  label: Pratibha Commentary
+  body: The teaching frames change as lawful and intelligible, inviting steadiness within transformation.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: prāṇa / jīva (प्राण / जीव)
+    definition: prāṇa as rising current; jīva/apāna as descending living in-breath → the upward-moving
+      outbreath and the downward-moving inbreath — the two currents whose turning-points are the focus
+      here → ‘breath/life’ flattens the twin currents whose turning-points are the yukti
+  - term: visarga (विसर्ग)
+    definition: 'vi- + √sṛj ‘emit’ → release/emission (also : mark) → the outward-flowing, letting-go
+      character of the breath, echoing the phonetic '':'' symbol of expansion → ‘exhale/release’ alone
+      misses emission as the outward character of breath and phoneme'
+  - term: bharitā sthiti (भरिता स्थिति)
+    definition: √bhṛ ‘fill’ + sthiti ‘abiding’ → the 'filled' or 'saturated' abiding state — fullness
+      of consciousness reached by fully attending to the breath's origination points → ‘full state’ sounds
+      like satiety; here saturated abiding of consciousness
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming
+    experience.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 3.15
+    resonance: 'Both texts ground transformation in intelligible succession: the Vijnana Bhairava frames
+      breath''s dual movement (exhale/inhale) as lawful articulation of the Goddess, while Patañjali identifies
+      successive phases as the causal mechanism of transformation itself. Each makes change knowable through
+      ordered sequence rather than chaos.'
+    divergence: The Vijnana Bhairava locates transformation within conscious embodied flow (prāṇa as divine
+      utterance), whereas Patañjali systematizes transformation as a logical property of elements and
+      senses independent of devotional recognition.
+    passage_id: patañjali_yoga_sūtras.ys_3_15
+  - citation: Siva Sutra — Śāktopāya
+    resonance: 'Both passages use breath-centered attention as the gateway to simultaneous dissolution
+      and expansion: the Vijnana Bhairava presents prāṇa''s dual movement (rising/descending) as the Goddess''s
+      constant articulation, while the Siva Sutra locates steady attention at the nostrils as the trigger
+      for dissolution-expansion. Each treats respiratory awareness as the operative hinge of transformation.'
+    divergence: The Vijnana Bhairava emphasizes the *lawful intelligibility* of breath's inherent duality,
+      whereas the Siva Sutra emphasizes *focused attention* as the active agent that precipitates the
+      shift from contraction to expansion.
+    passage_id: siva_sutra.ss_ii_13
+  - citation: Pratyabhijnahrdayam — Sutra 11
+    resonance: 'Both texts frame transformation as a recognizable cycle of five or dual functions: the
+      Vijnana Bhairava presents prāṇa and jīva as complementary movements within a single articulation,
+      while Pratyabhijnahrdayam lists five named functions (Manifestation through Dissolution) as the
+      Goddess''s continuous play. Each treats change as intelligible enumeration of divine activity.'
+    divergence: The Vijnana Bhairava grounds transformation in the *breath itself* as the medium of divine
+      utterance, whereas Pratyabhijnahrdayam abstracts transformation into five metaphysical *functions*
+      of consciousness independent of physiological process.
+    passage_id: pratyabhijnahrdayam.phr_011
+  layer_provenance: generated_grounded

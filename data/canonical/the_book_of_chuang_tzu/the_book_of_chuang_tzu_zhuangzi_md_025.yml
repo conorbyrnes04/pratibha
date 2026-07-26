@@ -121,3 +121,118 @@ abhyasa: 'For one full day, each time you are about to ask someone for help or a
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '則陽游於楚，夷節言之於王，王未之見。
+
+    夷節歸。
+
+    彭陽見王果曰：「夫子何不譚我於王？
+
+    」王果曰：「我不若公閱休。
+
+    」彭陽曰：「公閱休奚為者邪？
+
+    」曰：「冬則擉鱉於江，夏則休乎山樊。
+
+    有過而問者，曰：「此予宅也。
+
+    」夫夷節已不能，而況我乎！
+
+    吾又不若夷節。
+
+    夫夷節之為人也，無德而有知，不自許，以之神其交，固，顛冥乎富貴之地。
+
+    非相助以德，相助消也。'
+- kind: translation
+  label: Pratibha Translation
+  body: The true Sage, when in obscurity, causes those around him to forget their poverty. When in power,
+    he causes princes to forget ranks and emoluments, and to become as though of low estate. He rejoices
+    exceedingly in all creation. Thus, although silent, he can infuse others with harmony. Standing beside
+    people, he causes them to transform—as a father and son naturally accord. His effect on the human
+    heart is so distant, so subtle, that it operates beyond knowing and not-knowing.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The contested move here is the inversion of influence: the sage does not persuade the prince
+    through speech or credentials, but through a paradoxical absence of intention. Wang Kuo refuses the
+    role of intermediary precisely because true transformation requires no intermediary—it operates in
+    the gap between self and other, in what Zhuangzi calls the "environment of non-action" (wuwei). The
+    sage''s silence is not passivity but a radical permeability that allows the prince to forget the very
+    scaffolding of power that binds him. This dissolves the problem of access: there is no "getting in"
+    because there is no barrier to dissolve, only a mutual forgetting of the positions that seemed to
+    require mediation.
+
+
+    Key Terms:
+
+
+    **無言 wuyan** - wordlessness; not mere silence but the cessation of the will-to-persuade. In Zhuangzi,
+    wuyan names the condition where influence operates through resonance rather than transmission. Translation
+    stakes: ''wordless'' risks suggesting mere muteness; the term means the withdrawal of the speaking
+    subject itself.
+
+    **化 hua** - transformation; metamorphosis; the spontaneous alteration of one being by proximity to
+    another without coercion. Zhuangzi''s hua is not moral education but a kind of contagion of being.
+    Stakes: ''transform'' or ''convert'' can suggest intentional reshaping; hua is involuntary, like dye
+    spreading through water.
+
+    **遠 yuan** - distant; far; also: subtle, imperceptible. The sage''s effect on hearts is yuan—so remote
+    it seems not to operate at all, yet it is total. Stakes: ''distant'' suggests separation; yuan means
+    a proximity so complete it becomes invisible.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (the Sage''s Wordless Influence), unforced congruence with conditions: skill that does not
+      obstruct the work -> trap: “non-action” as passivity; wúwéi can be highly skilled activity without
+      strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (the Sage''s Wordless Influence), the nameless source-and-course that lets beings move
+      by their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed doctrine one can
+      possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: zhī yán (卮言)
+    definition: '卮言 “goblet words” — speech that tips and rights itself, inexhaustible like a wine vessel
+      -> in this passage (the Sage''s Wordless Influence), language that does not harden into fixed theses;
+      words that pour with the situation -> trap: relativist chatter; goblet words are a disciplined flexible
+      speaking, not empty irony'
+  - term: dé (德)
+    definition: '德 “potency, virtue, obtained power” — how the Way is efficacious in a particular being
+      -> in this passage (the Sage''s Wordless Influence), inner potency that shows as unforced efficacy
+      rather than moral display -> trap: Victorian “virtue” as propriety; dé is charismatic power of alignment,
+      not rule-keeping'
+    lemma_id: de
+    sense_id: de.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Laozi, *Daodejing* 15: "The ancient masters were subtle, mysterious, profound, responsive."'
+    resonance: Both texts posit a sage-power that operates through imperceptibility rather than visibility;
+      both refuse the model of the sage as teacher or exemplar.
+    divergence: Laozi emphasizes the sage's own obscurity as a shield; Zhuangzi emphasizes the sage's
+      capacity to make *others* forget their conditions. The Laozi sage withdraws; the Zhuangzi sage dissolves
+      the boundary between self and other.
+    passage_id: ''
+  - citation: 'Confucian *Lunyu* 15.5: "The Master said, ''The people can be made to follow a path, but
+      cannot be made to understand it.''"'
+    resonance: Both acknowledge a gap between outer compliance and inner transformation; both suggest
+      limits to didactic authority.
+    divergence: Confucius accepts this gap as a permanent condition requiring ritual and hierarchy to
+      manage it; Zhuangzi suggests the gap itself is the site of true transformation, requiring its *deepening*
+      rather than its closure.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Sit in the presence of another person (friend, family, stranger in a public space) for ten minutes
+    without speaking, without the intention to influence or teach. Notice the moment when you stop *trying*
+    to be perceived as wise, helpful, or present. What shifts in the other person''s bearing when your
+    will-to-matter releases? This is the sage''s wordless influence: not achieved but discovered in the
+    cessation of the effort to achieve.'

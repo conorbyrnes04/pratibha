@@ -86,3 +86,35 @@ abhyasa: 'Catch yourself in the middle of saying ''I did this'' or ''I want that
   the assumption dissolve without replacing it with anything, neither a self that vanishes nor a self
   that remains: only He, without limitation.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: waḥdat al-wujūd
+    definition: '‘unity of being/finding’ → the Real’s being is one; multiplicity is relational appearance,
+      not rival substances Here: This passage stands at the heart of the treatise''s teaching on the oneness
+      of being (waḥdat al-wujūd) and self-knowledge as the direct gateway to knowledge of… Trap: pantheist
+      collapse that erases servant/Lord distinction'
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away, evanescence’ → passing-away of the egoic claim before the
+      Real Here: Second—and this is the passage''s most striking move—he refuses the common Sufi framing
+      that one must ''cease to be'' (fanāʾ) in order to reach God. Trap: self-erasure as quietism or dissociation
+      rather than clearing of false independence'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: wujūd (وجود)
+    definition: 'Arabic wujūd ‘finding/being found; existence’ → being as what is found in God alone;
+      creatures have no independent wujūd Here: This passage stands at the heart of the treatise''s teaching
+      on the oneness of being (waḥdat al-wujūd) and self-knowledge as the direct gateway to knowledge
+      of… Trap: treating ‘existence’ as a neutral metaphysical predicate shared equally by God and world'
+  - term: maʿrifa (معرفة)
+    definition: 'from ʿarafa ‘to know/recognize’ → gnosis as recognition of the Real’s sole agency, not
+      informational theology Trap: equating mystical knowing with accumulated doctrine'
+  - term: tawḥīd (توحيد)
+    definition: 'Arabic tawḥīd from waḥḥada ‘to make/declare one’ → absolute oneness of the Real, radicalized
+      here as sole agency and sole being Here: This passage stands at the heart of the treatise''s teaching
+      on the oneness of being (waḥdat al-wujūd) and self-knowledge as the direct gateway to knowledge
+      of… Trap: hearing a creedal slogan rather than ontological exclusivity of wujūd'
+    lemma_id: tawhid
+    sense_id: tawhid.islamic
+  layer_provenance: editorial-enriched

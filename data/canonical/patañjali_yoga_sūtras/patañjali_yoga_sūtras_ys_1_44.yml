@@ -98,3 +98,96 @@ abhyasa: 'Choose a subtle object of meditation—for instance, the concept of ''
   experience of the two modes Patañjali describes and trains the mind to move between them with intention.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: एतायिव सविचारः नीरविचारः च सूक्ष्मविषयः व्याख्याता
+- kind: iast
+  label: IAST
+  body: etayaiva savicārā nirvicārā ca sūkṣmaviṣayā vyākhyātā
+- kind: translation
+  label: Pratibha Translation
+  body: By these, the deliberative and non‑deliberative [concentrations] that refer to the subtle elements
+    are also explained.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sūtra asserts that the same duality of concentration—deliberative (sādhana) and non‑deliberative
+    (nir‑sādhana)—applies not only to the gross elements but also to the subtle ones. This is a decisive
+    claim that extends the Sāṃkhya‑Yoga schema of vṛtti (mental modifications) to the realm of subtle
+    objects (ātmā‑sūkṣma, prāṇā‑sūkṣma, etc.). The contested move is the identification of the subtle
+    elements with the same two modes of concentration that govern the gross (kāraṇa‑sādhana, kāraṇa‑nir‑sādhana).
+    In the Yoga tradition, this mirrors the principle that samādhi is achieved by mastering both the gross
+    and subtle vṛtti, thereby purifying the mind. The Dvivedi commentary, by naming sananda and sāmita
+    as the two subtle modes, reinforces this duality and emphasizes that the subtle elements are not merely
+    passive but actively participate in the process of concentration. Existentially, this means that a
+    practitioner must cultivate awareness of both the tangible and intangible aspects of experience; only
+    by doing so can one attain the stable, unshakable state of samādhi. The sūtra thus bridges the external
+    and internal, the gross and subtle, underscoring the Yoga goal of complete integration of puruṣa with
+    prakṛti’s subtle manifestations.
+
+
+    Key Terms
+
+
+    **sādhana (साधना)** — from ‘to do’ → intentional practice; default translation ‘practice’ omits the
+    active, deliberate aspect
+
+
+    **nir‑sādhana (निरसाधना)** — from ‘not to do’ → non‑deliberate or spontaneous focus; default ‘non‑practice’
+    misses its role as an inherent, automatic mode of concentration
+
+
+    **sūkṣma (सूक्ष्म)** — ‘subtle’ → refers to the subtle elements (ātmā‑sūkṣma, prāṇā‑sūkṣma); default
+    ‘fine’ overlooks its ontological status as part of prakṛti
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 1.44:** dual modes of concentration applied to subtle elements
+
+    *Divergence:* Unlike 1.43, which restricts duality to gross elements, 1.44 extends it, showing a structural
+    expansion rather than repetition
+
+
+    **Sāṃkhya Karika 1.2:** dual nature of prakṛti (gross vs subtle) reflected in vṛtti
+
+    *Divergence:* Karika speaks of prakṛti’s duality; the sūtra applies the same duality to mental states,
+    creating a novel mapping
+
+
+    **Dvivedi 1.44:** identification of sananda and sāmita as subtle modes
+
+    *Divergence:* Dvivedi names specific subtle modes, whereas the sūtra remains abstract, allowing broader
+    interpretive flexibility'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vicāra (विचार)
+    definition: 'vi-√car ‘move through’ → subtle reflective engagement -> in “Deliberation on the Subtle”:
+      By these, the deliberative and non‑deliberative [concentrations] that refer to the subtle elements
+      are also explained. -> not ordinary rumination; subtler samprajñāta level beyond gross vitarka'
+  - term: sādhana (साधना)
+    definition: '‘to do’ → intentional practice -> in “Deliberation on the Subtle”: ‘to do’ → intentional
+      practice -> ‘practice’ omits the active, deliberate aspect'
+  - term: nir‑sādhana (निरसाधना)
+    definition: '‘not to do’ → non‑deliberate or spontaneous focus -> in “Deliberation on the Subtle”:
+      default ‘non‑practice’ misses its role as an inherent, automatic mode of concentration -> default
+      English flattens the technical work this term does here'
+  - term: sūkṣma (सूक्ष्म)
+    definition: 'source-term sūkṣma -> in “Deliberation on the Subtle”: ‘subtle’ → refers to the subtle
+      elements (ātmā‑sūkṣma, prāṇā‑sūkṣma) -> default English flattens the technical work this term does
+      here'
+  - term: savicāra
+    definition: 'source-term savicāra -> in “Deliberation on the Subtle”: meditative engagement in which
+      thought-activity examines and turns over the object -> default English flattens the technical work
+      this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Focus your awareness on a subtle element—such as the breath’s subtle rise—and maintain deliberate
+    concentration while simultaneously allowing non‑deliberate awareness to coexist.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: By these, the deliberative and non-delibera- tive having reference to the subtile elements are
+    also explained.

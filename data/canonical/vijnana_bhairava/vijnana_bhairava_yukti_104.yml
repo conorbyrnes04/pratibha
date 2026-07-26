@@ -92,3 +92,71 @@ abhyasa: 'Sit quietly and take one word: ''all-pervading.'' Don''t just say it �
   by letting the attributes dissolve into a wordless sense of open, boundless presence.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: नित्यो विभुर् निराधारो व्यापकश् चाखिलाधिपः । शब्दान् प्रतिक्षणं ध्यायन् कृतार्थोऽर्थानुरूपतः ॥
+    १३२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: nityo vibhur nirādhāro vyāpakaś cākhilādhipaḥ | śabdān pratikṣaṇaṃ dhyāyan kṛtārtho'rthānurūpataḥ
+    || 132 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #104
+
+    “Eternal, majestic, requiring no external support, all-pervasive,
+
+    and Lord of All”—meditating on these words [as applying equally
+
+    to God and to oneself] every possible moment, one attains the
+
+    goal in accordance with their meaning. || 132'
+- kind: commentary
+  label: Pratibha Commentary
+  body: This line points to a deeper order that is received through attentive listening rather than conceptual
+    noise.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: arthānurūpataḥ (अर्थानुरूपतः)
+    definition: artha ‘meaning’ + anurūpa ‘conformable’ + -taḥ → in accordance with the meaning — meditating
+      on the actual sense of each word, not just its sound → not ‘literally’—meditating the sense-force
+      of each word as it discloses reality
+  - term: pratikṣaṇam (प्रतिक्षणम्)
+    definition: prati + kṣaṇa ‘moment’ → moment by moment, continuously — signaling ongoing return rather
+      than a single event → ‘every moment’ as slogans misses continuous return, not a single event
+  - term: kṛtārtha (कृतार्थ)
+    definition: kṛta ‘done’ + artha ‘aim’ → one whose purpose is accomplished; fulfilled, having reached
+      the goal → ‘successful’ understates one whose purpose is fulfilled in recognition
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
+    resonance: Both texts posit that a unifying principle (Brahman in Chāndogya, the identity of God and
+      self in Vijnana Bhairava) becomes accessible through a mode of receptive knowing that transcends
+      ordinary perception—hearing the inaudible, perceiving beyond sensory noise.
+    divergence: Chāndogya emphasizes epistemological transformation (knowing the unknowable through unity),
+      while Vijnana Bhairava emphasizes meditative identification with divine attributes as the direct
+      path to realization.
+    passage_id: chāndogya_upaniṣad.chu_vi_01
+  - citation: Heraclitus Fragments — Fragment 2
+    resonance: Both texts identify a universal principle (Logos in Heraclitus, the eternal all-pervasive
+      Lord in Vijnana Bhairava) that exists continuously but requires attentive listening or awareness
+      to be recognized—people remain unaware despite its constant presence.
+    divergence: Heraclitus frames this as a cognitive gap in human perception of an external universal
+      order, while Vijnana Bhairava frames it as recognition of one's own identity with that principle
+      through meditative attention.
+    passage_id: heraclitus_fragments.hfr_p002
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 2
+    resonance: Both texts assert a non-dual identity statement (all is Brahman; God and self are identical)
+      that functions as the foundation for direct realization when held in awareness rather than merely
+      as conceptual knowledge.
+    divergence: Mandukya presents this as a metaphysical axiom about reality's nature, while Vijnana Bhairava
+      presents it as a meditative practice where the statement becomes transformative through sustained
+      attention.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_003
+  layer_provenance: generated_grounded

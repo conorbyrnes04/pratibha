@@ -102,3 +102,63 @@ abhyasa: 'Pick something in your visual field that is genuinely faint — a dist
   spanda.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: यथा ह्यर्थोऽस्फुटो दृष्टः सावधानेऽपि चेतसि । भूयः स्फुटतरो भाति स्वबलोद्योगभावितः ॥ ३६ ॥ तथा यत्परमार्थेन
+    येन यत्र यथा स्थितम् । तत्तथा बलमाक्रम्य न चिरात्सम्प्रवर्तते ॥ ३७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yathā hyartho'sphuṭo dṛṣṭaḥ sāvadhāne'pi cetasi | bhūyaḥ sphuṭataro bhāti svabalodyogabhāvitaḥ
+    || 36 || tathā yatparamārthena yena yatra yathā sthitam | tattathā balamākramya na cirātsampravartate
+    || 37 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Shared source passage with Stanza 36. See Stanza 36 for the full translation and commentary.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness that underlies and
+      enables every perception, thought, and act of recognition → ‘vibration/energy’ physicalizes or New-Ages
+      the throb of consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: svabala-udyoga (स्वबलोद्योग)
+    definition: sva-bala ‘own power’ + udyoga ‘application’ → the exertion or mustering of one's own inner
+      energy — the deliberate surge that turns vague awareness into vivid clarity → ‘self-effort’ grit
+      misses applying one’s own innate power
+  - term: balam ākramya (बलम् आक्रम्य)
+    definition: bala + ā-√kram ‘step upon/assault’ → 'Having seized the force' — the pivotal act of taking
+      hold of one's innate power, by which what is latent becomes fully manifest → not ‘using willpower’—seizing
+      and inhabiting one’s own power as the practice move
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #106'
+    resonance: 'Both texts pause conceptual elaboration to pose a direct question that dissolves the questioner''s
+      habitual frame: the Spandakarika invites insight to disclose itself by suspending interpretation,
+      while Vijnana Bhairava''s yukti interrogates how the unchanging Self can be locus of action, forcing
+      recognition of a paradox that cannot be resolved through discursive thought alone.'
+    divergence: The Spandakarika emphasizes receptive disclosure through contemplative pause, while Vijnana
+      Bhairava uses dialectical negation (how *can* it be?) to shatter conceptual categories and reveal
+      non-dual reality.
+    passage_id: vijnana_bhairava.yukti_106
+  - citation: Patañjali Yoga Sūtras 2.22
+    resonance: 'Both texts examine action through a doubled perspective: the Spandakarika''s pointer to
+      direct insight parallels Patañjali''s claim that an object is simultaneously destroyed for the doer
+      yet undestroyed for others—each reveals how the same action yields incommensurable truths depending
+      on the standpoint from which it is viewed.'
+    divergence: Patañjali grounds this doubling in metaphysical pluralism (different experiencers, different
+      realities), while the Spandakarika's contemplative pause suggests a non-dual recognition that transcends
+      subject-object division itself.
+    passage_id: patañjali_yoga_sūtras.ys_2_22
+  layer_provenance: generated_grounded

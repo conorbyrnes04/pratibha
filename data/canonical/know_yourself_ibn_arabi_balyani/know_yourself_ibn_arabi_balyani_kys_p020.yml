@@ -98,3 +98,35 @@ abhyasa: Say aloud the word 'I,' then pause and ask what it named — was there 
   exit, or vanish? Let the question hang unanswered, and go about your next task without stopping to locate
   the one who acts.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away, evanescence’ → passing-away of the egoic claim before the
+      Real Here: What is striking is the double negation applied to the self — you are neither an existent
+      nor something ''ceasing to be'' (fanāʾ). Trap: self-erasure as quietism or dissociation rather than
+      clearing of false independence'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: wujūd (وجود)
+    definition: 'Arabic wujūd ‘finding/being found; existence’ → being as what is found in God alone;
+      creatures have no independent wujūd Here: The teaching of waḥdat al-wujūd (the oneness of being)
+      is more radical: there are not two things to be related at all. Trap: treating ‘existence’ as a
+      neutral metaphysical predicate shared equally by God and world'
+  - term: waḥdat al-wujūd
+    definition: '‘unity of being/finding’ → the Real’s being is one; multiplicity is relational appearance,
+      not rival substances Here: The teaching of waḥdat al-wujūd (the oneness of being) is more radical:
+      there are not two things to be related at all. Trap: pantheist collapse that erases servant/Lord
+      distinction'
+  - term: maʿrifa (معرفة)
+    definition: 'from ʿarafa ‘to know/recognize’ → gnosis as recognition of the Real’s sole agency, not
+      informational theology Here: The author''s polemic against the Sufis who make annihilation a precondition
+      of gnosis rests precisely here: to ''cease to be'' you would first have to genuinely… Trap: equating
+      mystical knowing with accumulated doctrine'
+  - term: shirk (شرك)
+    definition: '‘association/partnership’ → ascribing independent power or being to what is other-than-God
+      Here: The author''s polemic against the Sufis who make annihilation a precondition of gnosis rests
+      precisely here: to ''cease to be'' you would first have to genuinely… Trap: narrowing to idol-worship
+      while missing subtle self-ascription of agency'
+  layer_provenance: editorial-enriched

@@ -98,3 +98,109 @@ abhyasa: Throughout one day, notice the exact moment your body shifts from strai
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: रूपलावण्यबलवज्रसंधनानन्त्वानी काया संपत
+- kind: iast
+  label: IAST
+  body: rūpalāvaṇyabalavajrasaṃhananatvāni kāyasaṃpat
+- kind: translation
+  label: Pratibha Translation
+  body: The body, when its form, ornament, and strength are united with the indestructible, produces the
+    dissolution of all obstacles, and the body attains perfection.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim that the body itself, through the integration of rupa (form), lāvaṇa (ornament), and
+    bala (strength), can generate the dissolution of all impediments, is a radical re‑orientation of the
+    traditional view that siddhis arise from mental control alone. In the Yoga‑Sāṃkhya synthesis, the
+    body is usually seen as a passive vessel for the mind’s activity; here, however, the body is an active
+    agent that, when aligned with the vajra‑like indestructibility of the prāṇa‑driven life‑force, can
+    itself dissolve the very obstacles that bind the mind. The contested move is the elevation of bodily
+    qualities to the status of a causal agent in the attainment of siddhis, a step that some commentators
+    reject as anthropomorphizing the body. Yet the Satchidananda commentary’s mention of the “eight major
+    siddhis”—which include bodily perfection—supports the idea that the body can be a locus of supernatural
+    attainment. This perspective invites an existential application: by cultivating a disciplined, ornamented,
+    and strong physical practice (yoga asanas, breath control, and diet), one can directly influence the
+    dissolution of mental and karmic obstacles, thereby accelerating liberation. The implication is that
+    liberation is not merely a metaphysical detachment but an embodied transformation that can be consciously
+    directed through disciplined bodily practice.
+
+
+    Key Terms
+
+
+    **rūpa (रूप)** — root: ‘form’; Sāṃkhya: the external manifestation of prakṛti; Yoga: the body’s visible
+    shape; the translation ‘form’ misses the idea of the body as a dynamic, evolving entity rather than
+    a static image.
+
+
+    **lāvaṇa (लावण)** — root: ‘ornament’; Sāṃkhya: the aesthetic quality of prakṛti; Yoga: the adornment
+    of the body through posture and breath; the term ‘ornament’ understates the functional role of aesthetic
+    alignment in spiritual practice.
+
+
+    **bala (बल)** — root: ‘strength’; Sāṃkhya: the force of prakṛti; Yoga: the physical and energetic
+    power cultivated through asana and pranāyaṇa; ‘strength’ alone omits the subtle energetic dimension.
+
+
+    **vajra (वज्र)** — root: ‘indestructible’; Sāṃkhya: the unchanging principle of consciousness; Yoga:
+    the vajra‑like steadiness of the mind; ‘indestructible’ fails to convey the dynamic, unyielding quality
+    of the prāṇa.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga‑Sūtra 1.15:** Both passages link the body’s qualities (rupa, bala) with the attainment of siddhi;
+    the structure of ‘body + qualities → siddhi’ is mirrored.
+
+    *Divergence:* In 1.15 the body is a passive instrument, whereas here it is an active agent, breaking
+    the conventional hierarchy of mind over body.
+
+
+    **Brahma‑Sūtra 3.23:** The Brahma‑Sūtra also speaks of the dissolution of obstacles (saṃhāna) through
+    a subtle process; the structural pattern of ‘obstacle dissolution → perfection’ aligns.
+
+    *Divergence:* The Brahma‑Sūtra attributes dissolution to the mind’s clarity, while this passage attributes
+    it to the body’s integration with vajra, showing a shift from mental to bodily agency.
+
+
+    **Yogācārabhūti 1.10:** Both texts discuss the role of prakṛti’s qualities (bala, vajra) in transforming
+    the mind; the homology lies in the triadic structure of body + quality + dissolution.
+
+    *Divergence:* Yogācārabhūti emphasizes the mind’s transformation through perception, whereas this
+    passage emphasizes bodily transformation through physical alignment.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: hāna (हान)
+    definition: '√hā ‘abandon’ → cessation/abandonment as goal -> in “Body‑Anchored Siddhi”: The body,
+      when its form, ornament, and strength are united with the indestructible, produces the dissolution
+      of all o… -> not repression; the ending of future suffering’s cause through viveka'
+  - term: siddhi (सिद्धि)
+    definition: '√sidh ‘accomplish’ → accomplishment/power -> in “Body‑Anchored Siddhi”: perfection, power,
+      or accomplishment that arises naturally from sustained yogic discipline -> not the goal; attainments
+      that can distract from kaivalya if clung to'
+    lemma_id: siddhi
+    sense_id: siddhi.indic
+  - term: rūpa (रूप)
+    definition: '‘form’ -> in “Body‑Anchored Siddhi”: the translation ‘form’ misses the idea of the body
+      as a dynamic, evolving entity rather than a static image -> default English flattens the technical
+      work this term does here'
+  - term: lāvaṇa (लावण)
+    definition: '‘ornament’ -> in “Body‑Anchored Siddhi”: the term ‘ornament’ understates the functional
+      role of aesthetic alignment in spiritual practice -> default English flattens the technical work
+      this term does here'
+  - term: bala (बल)
+    definition: '‘strength’ -> in “Body‑Anchored Siddhi”: the physical and energetic power cultivated
+      through asana and pranāyaṇa -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You align your posture, adorn your body with mindful breath, and strengthen your limbs so that
+    the body itself dissolves obstacles and attains perfection.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: From that comes attainment of anima and other siddhis, bodily perfection and the non-obstruction
+    of bodily functions by the influence of the elements.

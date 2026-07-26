@@ -78,3 +78,91 @@ abhyasa: Before the day scatters into reaction, trace backward from one sufferin
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: हेयं दुःखं अनागतम्
+- kind: iast
+  label: IAST
+  body: heyaṃ duḥkham anāgatam
+- kind: translation
+  label: Pratibha Translation
+  body: This misery that has not yet arrived is to be prevented.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The Sūtra asserts that the foremost object of yogic practice is the preemptive avoidance of suffering
+    that has not yet manifested. By declaring the misery as "heyaṃ duḥkham anāgatam," it foregrounds the
+    proactive stance of Yoga: one does not wait for pain to arise before taking action. This stance aligns
+    with the Sāṃkhya notion of puruṣa’s discernment over prakṛti, yet it diverges from the passive acceptance
+    of suffering found in some other traditions. The Sūtra’s emphasis on prevention invites the practitioner
+    to cultivate vigilance (vṛtti‑nigraha) and discernment (viśeṣaṇa) as the first steps of sādhana. The
+    Dvivedi commentary’s observation that "heya" can mean both ‘to be warded off’ and ‘possible to be
+    warded off’ reinforces the idea that the yogic path is not merely reactive but anticipatory. In practice,
+    this translates to a disciplined observation of one’s thoughts and habits, identifying those that
+    could lead to future distress, and consciously altering them before they manifest. Thus, the Sūtra
+    provides an existential prescription: by preemptively guarding against future misery, one cultivates
+    a state of equanimity that ultimately supports the attainment of samādhi.
+
+
+    Key Terms
+
+
+    **heya (हेय)** — heya (हेय) – from root ‘he’ meaning ‘to ward off, to prevent’; in this context it
+    denotes the proactive act of preventing misery; the default translation ‘to be warded off’ omits the
+    active preventive nuance
+
+
+    **duḥkha (दुःख)** — duḥkha (दुःख) – from root ‘duḥ’ meaning ‘pain’; in Sāṃkhya it denotes the afflictive
+    states of prakṛti; the default ‘misery’ captures the experiential aspect but not the ontological breadth
+    of suffering as a manifestation of ignorance
+
+
+    **anāgata (अनागत)** — anāgata (अनागत) – from ‘an’ (not) + ‘āgata’ (arrived); in Yoga it specifies
+    the future aspect of suffering; the common translation ‘not yet arrived’ fails to emphasize its potentiality
+    and the urgency of preemptive action
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.16:** Structural homology: the Sūtra presents a negated future event (misery) as the
+    object of action (preventing), mirroring the later Sūtra 2.20 where suffering is to be transformed;
+    both use a future-tense predicate to establish an anticipatory practice
+
+    *Divergence:* Unlike 2.20, which focuses on transformation after occurrence, 2.16 insists on prevention
+    before occurrence, highlighting a distinct strategic priority within the Sādhana Pāda
+
+
+    **Bhaṭṭa, Yogabhāṣā 1.1:** Both texts emphasize the importance of preemptive control over the mind;
+    Bhaṭṭa speaks of ‘prevention of afflictions’ in the context of meditation, paralleling 2.16’s preventive
+    stance
+
+    *Divergence:* Bhaṭṭa’s approach is more meditative, whereas 2.16 is prescriptive, underscoring the
+    procedural aspect of Yoga practice rather than contemplative insight'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: duḥkha (दुःख)
+    definition: 'dus + kha ‘bad axle-hole’ → suffering/friction -> in “Prevention of Unarrived Misery”:
+      the default ‘misery’ captures the experiential aspect but not the ontological breadth of suffering
+      as a manifestation of ignorance -> not only acute pain; the structural unsatisfactoriness yogins
+      see even in pleasure’s change'
+  - term: atha (अथ)
+    definition: 'atha ‘now’ — auspicious commencement particle -> in “Prevention of Unarrived Misery”:
+      This misery that has not yet arrived is to be prevented. -> not filler ‘now then’; marks readiness
+      and the opening of authorized instruction'
+  - term: heya (हेय)
+    definition: '√hā ‘abandon’ → that which is to be discarded (future suffering) -> in “Prevention of
+      Unarrived Misery”: in this context it denotes the proactive act of preventing misery -> not past
+      pain fixation; the avoidable future duḥkha that viveka aims to cut'
+  - term: anāgata (अनागत)
+    definition: '‘an’ (not) + ‘āgata’ (arrived) -> in “Prevention of Unarrived Misery”: the common translation
+      ‘not yet arrived’ fails to emphasize its potentiality and the urgency of preemptive action -> ‘not
+      yet arrived’ fails to emphasize its potentiality and the urgency of preemptive action'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe your thoughts and habits now, and consciously alter any that could lead to future suffering.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: That misery which is not yet come is to be

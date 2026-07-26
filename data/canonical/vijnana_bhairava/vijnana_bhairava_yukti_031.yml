@@ -82,3 +82,68 @@ abhyasa: 'Sit comfortably and close your eyes. For a minute, simply notice every
   and let attention sink back. Five to ten minutes is enough.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: विश्वम् एतन् महादेवि शून्यभूतं विचिन्तयेत् । तत्रैव च मनो लीनं ततस् तल्लयभाजनम् ॥ ५८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: viśvam etan mahādevi śūnyabhūtaṃ vicintayet | tatraiva ca mano līnaṃ tatas tallayabhājanam ||
+    58 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #31
+
+    O great Goddess, one may consider this universe as Empty Void;
+
+    the mind dissolves in that very [Emptiness], then one shares in its
+
+    dissolution (or: becomes a worthy vessel of its dissolution). || 58'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śūnya (शून्य)
+    definition: śūnya ‘empty/void’ → emptiness or void; in Trika, the transparent ground of awareness
+      rather than a nihilistic blank → English ‘void’ suggests blank vacancy; here a threshold that can
+      disclose knowing
+    lemma_id: sunya
+    sense_id: sunya.shaiva
+  - term: laya (लय)
+    definition: √lī ‘melt/cling’ → dissolution/merging → dissolution or merging, the settling of mind
+      and object into their source → ‘dissolution’ as annihilation misses melting-back into source
+  - term: manas (मनस्)
+    definition: √man ‘think’ → mind → the discursive mind that grasps objects; here it is dissolved rather
+      than suppressed → ‘mind’ as brain-function misses manas as the coordinating sense-mind
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: Both texts dissolve the mind into a boundless, unlocalized emptiness—Vijnana Bhairava through
+      the universe as Void, Tilopa through mind as spacious and centerless. In each, the knower's attention
+      turns inward and discovers no fixed locus, only infinite openness.
+    divergence: Vijnana Bhairava emphasizes dissolution as a vessel receiving the Void's grace; Tilopa
+      stresses the mind's intrinsic nature as already spacious, requiring recognition rather than transformation.
+    passage_id: tilopa_mahamudra.til_002
+  - citation: Shantideva Bodhicaryavatara — Who Is Born, Who Dies?
+    resonance: Both texts use emptiness (śūnyatā/Void) as the ground from which attachment and grasping
+      dissolve. The mind's dissolution into emptiness and the recognition that forms are empty both collapse
+      the subject-object duality that sustains suffering.
+    divergence: Vijnana Bhairava treats emptiness as a direct experiential state achieved through attention;
+      Shantideva frames it as logical insight into the nature of phenomena, leading to ethical non-grasping.
+    passage_id: shantideva_bodhicaryavatara.bca_09_dream
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts locate mastery in the *return* of attention—Vijnana Bhairava turns attention
+      from content to the knower; Bhagavad Gita repeatedly returns attention from dispersion to center.
+      The move is iterative and inward, not a single leap.
+    divergence: Vijnana Bhairava's return dissolves the knower into Void; Bhagavad Gita's return establishes
+      stable yoga-mastery through disciplined habit and embodied practice.
+    passage_id: bhagavad_gita.bg_md_006
+  layer_provenance: generated_grounded

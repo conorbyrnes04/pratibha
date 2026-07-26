@@ -99,3 +99,63 @@ abhyasa: When you next reach for something you want — a cup, a person's attent
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: यथेच्छाभ्यर्थितो धाता जाग्रतोऽर्थान्हृदि स्थितान् । सोमसूर्योदयं कृत्वा सम्पादयति देहिनः ॥ ३३
+    ॥ तथा स्वप्नेऽप्यभीष्टार्थान्प्रणयस्यानतिक्रमात् । नित्यं स्फुटतरं मध्ये स्थितोऽवश्यं प्रकाशयेत् ॥
+    ३४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yathecchābhyarthito dhātā jāgrato'rthānhṛdi sthitān | somasūryodayaṃ kṛtvā sampādayati dehinaḥ
+    || 33 || tathā svapne'pyabhīṣṭārthānpraṇayasyānatikramāt | nityaṃ sphuṭataraṃ madhye sthito'vaśyaṃ
+    prakāśayet || 34 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Shared source passage with Stanza 33. See Stanza 33 for the full translation and commentary.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: madhya (मध्य)
+    definition: madhya ‘middle/center’ → the center or gap — the vibrating still-point between prāṇa and
+      apāna, and between any two states, where spanda is directly recognized → ‘center’ as geometry misses
+      the still hinge between movements where awareness opens
+  - term: prāṇa / apāna (प्राण / अपान)
+    definition: '√an ‘breathe’: upward/outward vs downward/eliminative currents → the outgoing and incoming
+      vital breaths, imaged here as sun and moon, whose interplay generates the appearance of objects
+      → English ‘breath’ erases the directional polarity the practice uses as a gate'
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle creative throb of consciousness that projects both
+      the dreamt world and the waking world from within → ‘vibration/energy’ physicalizes or New-Ages
+      the throb of consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — 8.1 — 8.4
+    resonance: 'Both texts use a pause-and-disclose method: the Spandakarika invites direct insight by
+      suspending conceptual interpretation, while Astavakra Gita 8.1–8.4 presents the bondage/liberation
+      distinction as a direct recognition that arises when mental grasping ceases—not through reasoning
+      but through immediate seeing.'
+    divergence: Spandakarika emphasizes the disclosure of insight through contemplative pause within action
+      itself, while Astavakra Gita locates liberation in the cessation of mental desire and sorrow, treating
+      it as a state of consciousness rather than an active unfolding.
+    passage_id: astavakra_gita.asg_sum_08_01_08_04
+  - citation: 'Vijnana Bhairava — Yukti #106'
+    resonance: 'Both texts interrupt conventional understanding by posing a paradox that dissolves when
+      direct insight replaces conceptual analysis: Spandakarika suspends interpretation to let truth disclose
+      itself, while Vijnana Bhairava''s Yukti #106 asks how the unchanging Self can be the locus of action,
+      forcing abandonment of subject-object duality through the question itself.'
+    divergence: Spandakarika works through contemplative pause within embodied action, whereas Vijnana
+      Bhairava uses logical paradox to deconstruct the very framework of agency and cognition.
+    passage_id: vijnana_bhairava.yukti_106
+  layer_provenance: generated_grounded

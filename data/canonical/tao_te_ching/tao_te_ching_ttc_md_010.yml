@@ -79,3 +79,89 @@ abhyasa: 'Watch water find its way around an obstacle — under a door, through 
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 天下之至柔，馳騁天下之至堅。無有入無間。吾是以知無為之有益。不言之教，無為之益，天下希及之。
+- kind: translation
+  label: Pratibha Translation
+  body: 'The softest under heaven runs through the hardest under heaven.
+
+    What has no fixed being [*wú yǒu* 無有] enters where there is no gap [*wú jiàn* 無間].
+
+
+    Therefore I know the benefit of *wúwéi*.
+
+    Teaching without words, the benefit of non-action —
+
+    under heaven, few attain it.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'chapter 43 (the soft enters where nothing can) compresses chapter 78''s water-and-rock thesis
+    into metaphysical language: the soft does not break the hard head-on; it enters where rigidity has
+    no room to receive. *Wú yǒu* — "without fixed being" — names water, breath, attention: what adapts
+    shape enters where structure cannot admit force.
+
+
+    The closing lament (*xī jí* 希及) matches chapter 78 (water overcomes hardness; true words seem backward):
+    insight is common, embodiment rare. Wordless teaching is not silence as technique but transmission
+    that does not clog the learner with fixed names — parallel to chapter 2''s "wordless instruction."
+
+
+    Key Terms:
+
+
+    **wú yǒu 無有** — without fixed being — subtle existence that penetrates because it does not insist
+    on form.
+
+
+    **wú jiàn 無間** — no gap, no crevice — rigidity''s hidden openings only the soft can use.
+
+
+    **bù yán zhī jiào 不言之教** — teaching without words — pedagogical correlate of *wúwéi*.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: wúwéi (無為)
+    definition: '無 ‘without’ + 為 ‘doing/making/deeming’ -> in “The Soft Enters Where Nothing Can”: effective
+      action that does not force outcomes -> not laziness or zero activity — skilled non-imposition that
+      leaves nothing undone'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Soft Enters Where Nothing Can”: The softest under heaven
+      runs through the hardest under heaven. -> not mere possession; the named/manifest pole that co-arises
+      with wú'
+  - term: róu (柔)
+    definition: '柔 ‘soft/supple’ -> in “The Soft Enters Where Nothing Can”: The softest under heaven runs
+      through the hardest under heaven. -> not weakness as failure; yielding strength that outlasts the
+      hard'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Soft Enters Where Nothing
+      Can”: The softest under heaven runs through the hardest under heaven. -> not only ‘the world’ as
+      map; the realm that cannot be seized by contrivance'
+  - term: wú yǒu (無有)
+    definition: 'source-term wú yǒu -> in “The Soft Enters Where Nothing Can”: subtle existence that penetrates
+      because it does not insist on form -> default English flattens the technical work this term does
+      here'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Vijñāna Bhairava, pre-phonemic dissolution
+    resonance: entering before articulation.
+    divergence: initiatory method vs aphoristic observation.
+    passage_id: ''
+  - citation: Zhuangzi butterfly dream (ch.2)
+    resonance: identity without fixed being crosses boundaries of self/other.
+    divergence: epistemic parable vs physical penetration image.
+    passage_id: ''
+  - citation: Jesus, "narrow gate" (Matthew 7:13)
+    resonance: 'difficult entry — inverted: here the soft enters because it does not carry bulk.'
+    divergence: ''
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: In a tense conversation, stop adding arguments (hard force). Ask one open question and listen
+    without preparing rebuttal. Notice whether the situation opens a gap that pressure had sealed.

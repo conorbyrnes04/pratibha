@@ -105,3 +105,90 @@ abhyasa: Release one small thing you habitually clutch today—a decision you wo
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '民之飢，以其上食稅之多，是以飢。
+
+    民之難治，以其上之有為，是以難治。
+
+    民之輕死，以其求生之厚，是以輕死。
+
+    夫唯無以生為者，是賢於貴生。'
+- kind: translation
+  label: Pratibha Translation
+  body: The people suffer from famine, because their superiors eat a great many taxes; that is why they
+    are hungry. The people are difficult to govern, because their superiors are very active; that is why
+    they are difficult to govern. The people take death lightly, because they seek life with great intensity;
+    that is why they take death lightly. The only way to be wise is to leave life itself out of sight,
+    and to value it less.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'In this chapter the Taoist critique of statecraft hinges on the contested move that the ruler’s
+    excessive intervention—whether in the form of taxes, governance, or moral pressure—creates the very
+    problems it seeks to solve. The text asserts that the paradox of governance is that the more the ruler
+    tries to secure the people’s well‑being, the more the people suffer. This claim challenges the conventional
+    wisdom that a ruler’s active role is inherently benevolent. The chapter’s argument rests on the idea
+    that the Tao’s virtue (dé) is achieved not by imposing order, but by withdrawing from the illusion
+    of life (zìrán), thereby allowing the natural order to unfold. By contrast, the ruler’s interventions
+    disturb the natural flow, leading to famine, unrest, and a distorted view of death.
+
+
+    Key Terms:
+
+
+    **wúwéi (無為)** — non‑action or effortless action -> Taoist sense of acting without forcing -> translation:
+    "without forcing"
+
+    **dé (德)** — virtue or moral power -> Taoist sense of inherent goodness -> translation: "virtue"
+
+    **zìrán (自然)** — nature or naturalness -> Taoist sense of spontaneous order -> translation: "naturalness"'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Paradox of Governance”: The people suffer from famine,
+      because their superiors eat a great many taxes; that is why they are hungry. -> not mere possession;
+      the named/manifest pole that co-arises with wú'
+  - term: wú (無)
+    definition: '無 ‘without / not-have’ -> in “The Paradox of Governance”: The people suffer from famine,
+      because their superiors eat a great many taxes; that is why they are hungry. -> not nihilistic void;
+      generative absence (of forcing, name, desire) that opens function'
+  - term: wúwéi (無為)
+    definition: '無 ‘without’ + 為 ‘doing/making/deeming’ -> in “The Paradox of Governance”: non‑action
+      or effortless action -> Taoist sense of acting without forcing -> translation: "without forcing
+      -> not laziness or zero activity — skilled non-imposition that leaves nothing undone'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: dé (德)
+    definition: '德 ‘virtue/potency/accrued power’ -> in “The Paradox of Governance”: virtue or moral power
+      -> Taoist sense of inherent goodness -> translation: "virtue -> not Victorian moralism — a thing’s
+      unforced efficacy when it accords with dào'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: zìrán (自然)
+    definition: '自 ‘self’ + 然 ‘so/thus’ → self-so -> in “The Paradox of Governance”: nature or naturalness
+      -> Taoist sense of spontaneous order -> translation: "naturalness -> not wilderness romanticism
+      or do-whatever impulse — being so of itself without forced sanding'
+    lemma_id: ziran
+    sense_id: ziran.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 1 (the Tao is the source of all things)
+    resonance: Both chapters emphasize the primacy of the Tao over human intervention
+    divergence: Chapter 75 argues that intervention itself is the source of disorder, whereas chapter
+      1 presents intervention as a natural expression of the Tao
+    passage_id: ''
+  - citation: chapter 41 (the wise ruler does not govern by force)
+    resonance: Both chapters advocate minimal interference
+    divergence: Chapter 75 focuses on the consequences of excessive taxation and governance, while chapter
+      41 frames it as a moral stance against coercion
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet place, close your eyes, and breathe slowly. As you inhale, imagine the weight
+    of the world lifting from your shoulders; as you exhale, feel the tension of expectations dissolving.
+    Repeat until you sense a gentle release of the need to control every outcome.

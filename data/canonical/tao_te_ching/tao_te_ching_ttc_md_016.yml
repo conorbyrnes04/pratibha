@@ -123,3 +123,79 @@ abhyasa: Walk through your living space and identify one object or image current
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '不尚賢，使民不爭；
+
+    不貴難得之貨，使民不為盜；
+
+    不見可欲，使心不亂。
+
+    是以聖人之治，虛其心，實其腹，弱其志，強其骨。
+
+    常使民無知無欲。
+
+    使天知者不敢為也。
+
+    為無為，則無不治。'
+- kind: translation
+  label: Pratibha Translation
+  body: Not to honour the virtuous, so that the people do not quarrel; not to prize rare goods, so that
+    the people do not steal; not to show the tempting, so that the heart does not become confused. Therefore
+    the sage’s rule empties the mind, fills the belly, weakens the will, strengthens the bones. He keeps
+    the people ignorant and untroubled; where the knowing are present, he keeps them from daring to act.
+    When the world follows wu‑wei, nothing goes ungoverned.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that true governance is achieved by *reducing* the people’s desires and
+    knowledge, not by imposing strict laws. The contested move is the paradoxical instruction to "weakens
+    the will"—the sage deliberately curtails ambition to prevent conflict. By emptying the mind and filling
+    the belly, the ruler creates a space where the people’s natural inclinations are soothed, allowing
+    wu‑wei to flourish. The text implies that order arises not from force but from the deliberate removal
+    of excess, a subtle inversion of conventional political theory.
+
+
+    Key Terms:
+
+
+    **wúwéi (無為)** — the principle of non‑intervention -> Daoist sense: action without effort -> translation
+    stakes: governance by doing nothing'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: wúwéi (無為)
+    definition: '無 ‘without’ + 為 ‘doing/making/deeming’ -> in “The Quiet Sovereign”: the principle of
+      non‑intervention -> Daoist sense: action without effort -> -> not laziness or zero activity — skilled
+      non-imposition that leaves nothing undone'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: cháng (常)
+    definition: '常 ‘constant/enduring’ -> in “The Quiet Sovereign”: Not to honour the virtuous, so that
+      the people do not quarrel; not to prize rare goods, so that the people do not ste… -> not theological
+      eternity with start/stop brackets — what persists through change without being used up'
+  - term: wúyù (無欲)
+    definition: '無+欲 ‘without desire/craving stance’ -> in “The Quiet Sovereign”: Not to honour the virtuous,
+      so that the people do not quarrel; not to prize rare goods, so that the people do not ste… -> not
+      numbness; sustained non-grasping attention that perceives miào'
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “The Quiet Sovereign”: The sage or realized person,
+      here the ideal ruler who governs by subtraction rather than command -> not canonized saint; the
+      one who acts by emptying self-assertion so the world orders itself'
+  - term: bùzhēng (不爭)
+    definition: '不 ‘not’ + 爭 ‘contend/strive’ -> in “The Quiet Sovereign”: Not to honour the virtuous,
+      so that the people do not quarrel; not to prize rare goods, so that the people do not ste… -> not
+      conflict-avoidant niceness; non-contention as the mode that none can contend with'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Huang‑Tao, "The Empty State" (2020)
+    resonance: parallels the idea of minimal intervention
+    divergence: Huang‑Tao emphasizes active guidance, whereas the Tao Te Ching advocates passive emptiness
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit in stillness for ten minutes, observing the breath; let thoughts arise and dissolve, practicing
+    wu‑wei in the present moment.

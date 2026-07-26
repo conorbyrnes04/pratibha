@@ -88,3 +88,76 @@ abhyasa: Let your eyes rest on whatever is directly before you, and feel the wan
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: दिदृक्षयेव सर्वार्थान्यदा व्याप्यावतिष्ठते । तदा किं बहुनोक्तेन स्वयमेवावभोत्स्यते ॥ ४३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: didṛkṣayeva sarvārthānyadā vyāpyāvatiṣṭhate | tadā kiṃ bahunoktena svayamevāvabhotsyate || 43
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: When the tantrika pervades everything with his absolute desire, what use are words? He has this
+    experience on his own.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Finally, silence settles in, the yogin and yogini reside there, and desire palpitates within like
+    the energy of love. Everything manifested comes rushing into the heart of those who are inhabited
+    by this absolute desire. Rain and snow fall in the heart, the sun and the moon make their way across
+    the heart, rainbows unfurl in the limitless space of the body. The Real cannot be compared to anything
+    since it is absolute. The throne of awakening is joy that takes pleasure in the Real. Awakening is
+    the result because one keeps oneself at the summit of the Real. What use are words? The energy of
+    sounds and language are related to the garland of letters. The yoga of the garland of letters is a
+    very interesting practice. Abhinavagupta wrote a whole text on this subject and said that making use
+    of it consists of deconstructing language. There also exists a Tantra that is wholly dedicated to
+    the garland of letters. It is a minuscule, meticulous study of what happens through language, of the
+    how and the why of our connection to words, of how the mind works with images and the words we use.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: didṛkṣā (दिदृक्षा)
+    definition: desiderative of √dṛś ‘see’ → desire to see → the desire or longing to see; here, intensified
+      attention that pervades its object completely → ‘curiosity’ trivializes the urge that opens vision
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness underlying every act
+      of perception and desire → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness
+      itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: vyāpya (व्याप्य)
+    definition: to-be-pervaded → having pervaded or filled; awareness saturating the whole field of objects
+      rather than isolating them → the field pervaded—without dualizing pervader and pervaded as two things
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 3 minutes, watch inner speech without suppressing it. Each time words arise, return to the
+    silent awareness that knows the words.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #69'
+    resonance: Both texts use the cessation of desire and thought as a gateway to a non-dual awareness
+      that transcends verbal articulation. The Spandakarika's 'what use are words?' and Vijnana Bhairava's
+      'who am I?' both mark the point where conceptual mind dissolves and direct presence emerges.
+    divergence: The Spandakarika emphasizes desire itself as the pervading absolute energy (spanda) that
+      settles into silence, while Vijnana Bhairava treats the absence of desire and thought as the condition
+      for self-inquiry; one sanctifies desire, the other transcends it.
+    passage_id: vijnana_bhairava.yukti_069
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 12 · The Silence — Turīya as Amātrā
+    resonance: Both passages locate a transcendent state beyond measure and conceptual framework where
+      silence and non-duality are primary. The Spandakarika's silence where 'yogin and yogini reside'
+      structurally parallels turīya as 'without measure, beyond practical dealings, without a second.'
+    divergence: The Spandakarika grounds this silence in the palpitation of desire-energy (spanda), while
+      the Mandukya describes turīya as a static, fourth state beyond all phenomena; one is dynamic, the
+      other transcends dynamism itself.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_015
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: Both texts locate the arising of manifestation (appearances, desire-energy) within an interior
+      collision or pulsation of consciousness in the heart-center. The Spandakarika's 'desire palpitates
+      within like the energy of love' mirrors the Siva Sutra's 'collision of mind in the heart' as the
+      generative source.
+    divergence: The Spandakarika treats this palpitation as the ultimate absolute desire to be pervaded
+      and rested in, while the Siva Sutra presents the heart-collision as the mechanical origin of dream-like
+      appearances to be recognized as such.
+    passage_id: siva_sutra.ss_i_15
+  layer_provenance: generated_grounded

@@ -76,3 +76,109 @@ abhyasa: 'Whenever you notice yourself filtering experience through judgment, pr
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: सत्त्वपुरुषयोः शुद्धिसाम्ये कियव्यम् इति
+- kind: iast
+  label: IAST
+  body: sattvapuruṣayoḥ śuddhisāmye kaivalyam iti
+- kind: translation
+  label: Pratibha Translation
+  body: The pure Purusha, by the purity of its sameness, is liberation.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this sutra is that liberation (kaivalyam) is not an external attainment
+    but the very *purity* of the *Purusha*’s own sameness. In the Yoga–Sāṃkhya framework, *Purusha* is
+    the unchanging witness, and *prakṛti* the mutable material world. The sutra asserts that when the
+    *Purusha* realizes its own *sattva*—its inherent purity—there is no need for external purification
+    or practice; the *Purusha* itself is already liberated. This view contests the more common move that
+    liberation requires the elimination of *vṛtti* (mental modifications) through disciplined practice.
+    Here, *vṛtti* is not a hindrance but a manifestation of *prakṛti* that the *Purusha* simply observes
+    with *viveka* (discriminative knowledge). The *Purusha*’s purity is thus the ultimate *samādhi*, a
+    state where the mind is fully still and the self is fully known. This insight aligns with the Satchidananda
+    aphorism that “the discriminative knowledge” simultaneously comprehends all objects in all conditions,
+    thereby dissolving the illusion of duality. Practically, this sutra invites the practitioner to shift
+    focus from external rituals to an inner inquiry: to recognize that the very witness of experience
+    is already pure and liberated. By cultivating *viveka*—the ability to discern the self from the manifold
+    *vṛtti*—one experiences the *Purusha*’s inherent *kaivalyam*.
+
+
+    Key Terms
+
+
+    **purusha (पुरुष)** — purusha -> ‘self’ or ‘consciousness’ in Sāṃkhya; default translation ‘person’
+    overlooks its role as the witnessing principle, not merely an individual body‑mind.
+
+
+    **vṛtti (वृत्ति)** — vṛtti -> ‘mental modification’ in Yoga; tradition sees it as the source of bondage,
+    but here it is simply a manifestation of prakṛti that the Purusha observes.
+
+
+    **samādhi (समाधि)** — samādhi -> ‘union’ or ‘absorption’; traditionally a meditative state, but in
+    this sutra it denotes the Purusha’s inherent stillness, the state of liberation itself.
+
+
+    **viveka (विवेक)** — viveka -> ‘discriminative knowledge’; tradition uses it for discernment, but
+    here it is the intuitive awareness that simultaneously apprehends all objects, leading directly to
+    kaivalyam.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 3.55:** Structural homology: the sutra parallels 1.1 ‘Yogaḥ karmasu kaushalam’ in asserting
+    a fundamental quality (purity) as the essence of yoga, but diverges by stating that the quality is
+    inherent in Purusha rather than cultivated through action.
+
+
+    **Sāṃkhya Kārikā 2.1:** Both texts emphasize the primacy of Purusha over prakṛti; divergence: Sāṃkhya
+    treats Purusha as passive observer, whereas this sutra elevates its purity to the very condition of
+    liberation.
+
+
+    **Vātsyāyana Upaniṣad 2.1:** The Upaniṣad’s claim that the Self is pure and unchanging mirrors the
+    sutra’s assertion of Purusha’s purity; divergence: the Upaniṣad presents this as a metaphysical truth,
+    while the sutra frames it as an experiential realization that directly yields kaivalyam.
+
+
+    **Bādarāyana Upaniṣad 3.1:** Both texts link discriminative knowledge to liberation; divergence: Bādarāyana
+    sees knowledge as an intellectual process, whereas this sutra presents it as an intuitive, immediate
+    awareness of Purusha’s sameness.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kaivalya (कैवल्य)
+    definition: 'kevala ‘alone/absolute’ → aloneness/independence of puruṣa -> in “Liberation by Discriminative
+      Knowledge”: The pure Purusha, by the purity of its sameness, is liberation. -> not lonely isolation;
+      establishment in own-form when guṇas reverse and citi-śakti stands as itself'
+    lemma_id: moksa
+  - term: puruṣa (पुरुष)
+    definition: '‘person/witness’ in Sāṃkhya — pure awareness as seer -> in “Liberation by Discriminative
+      Knowledge”: in Sāṃkhya, the principle of pure awareness distinct from all of nature (prakṛti) ->
+      not ‘person’ as social self; the unchanging witness distinct from prakṛti’s display'
+  - term: sattva (सत्त्व)
+    definition: 'sat + tva ‘being-ness / luminosity-clarity strand’ -> in “Liberation by Discriminative
+      Knowledge”: when refined to its highest degree, it becomes transparent and no longer obscures the
+      light of puruṣa -> not moral ‘goodness’ alone; the guṇa of clarity that can still bind if identified
+      with'
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Liberation by Discriminative Knowledge”:
+      tradition sees it as the source of bondage, but here it is simply a manifestation of prakṛti that
+      the Purusha observes -> not ‘bad thoughts’ only — any cognitive wave (valid cognition, error, fantasy,
+      sleep, memory)'
+  - term: samādhi (समाधि)
+    definition: 'sam-ā-√dhā ‘settle completely together’ -> in “Liberation by Discriminative Knowledge”:
+      traditionally a meditative state, but in this sutra it denotes the Purusha’s inherent stillness,
+      the state of liberation itself -> not trance-entertainment or unconsciousness; graded absorption
+      where subject–object friction quiets'
+    lemma_id: samadhi
+    sense_id: samadhi.yoga
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You observe your thoughts as passing events, and in that observation you recognize that the witness
+    itself is pure and already liberated.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: The discriminative knowledge

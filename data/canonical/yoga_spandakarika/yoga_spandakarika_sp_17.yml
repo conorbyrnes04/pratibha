@@ -81,3 +81,82 @@ abhyasa: Throughout tomorrow, whisper "spanda" the instant you notice any transi
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: तस्योपलब्धिः सततं त्रिपदाव्यभिचारिणी । नित्यं स्यात्सुप्रबुद्धस्य तदाद्यन्ते परस्य तु ॥ १७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: tasyopalabdhiḥ satataṃ tripadāvyabhicāriṇī | nityaṃ syātsuprabuddhasya tadādyante parasya tu ||
+    17 ||
+- kind: translation
+  label: Pratibha Translation
+  body: The awakened tantrika realizes this continuous sacred tremor throughout the three states.
+- kind: commentary
+  label: Pratibha Commentary
+  body: The Ultimate Path is simple and easy—it is just a matter simply of whether you abandon things
+    or pursue them. Those who would experience the Path should think deeply on this. The three states
+    that stanza 17 speaks of are waking, dreaming, and deep sleep. It is very often said that deep sleep
+    is a state of nonconsciousness. But long before any research was done on dreams and sleep, the tantrikas
+    always said that once sacred tremor occurs, consciousness pervades deep sleep as well. There is no
+    more interruption, and the continued stream of consciousness pervades absolutely everything that we
+    live. The sacred tremoring does not cease, even for a single moment. The power of the Shakti subsists
+    through the three states and continually infuses the feeling of being alive. Dreams are very important
+    in the Tantric quest, as they are the prelude to the teachings that one receives directly in the form
+    of dreams. It is a surprising moment in the relationship with our master when suddenly we begin not
+    only to dream about him, but to receive his teachings in dreams. Dreams are the love chamber of the
+    master and disciple. This sudden incandescence of dreams always comes when practice is intense. We
+    even have the impression that we are dreaming the whole night through. Upon waking, we are tired,
+    because an evacuation has taken place during these dreams, allowing buried issues to emerge.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse or throb of consciousness underlying
+      all experience → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: upalabdhi (उपलब्धि)
+    definition: upa- + √labh → apprehension/obtaining → recognition or direct apprehension — here, the
+      noticing of spanda → ‘perception’ generic misses obtaining-as-experience
+  - term: tripada (त्रिपद)
+    definition: tri + pada → three stations → the 'three states' — waking (jāgrat), dream (svapna), and
+      deep sleep (suṣupti) → ‘three steps’ literalism misses three stations of reality/experience
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — 11.1 — 11.8 (Selected)
+    resonance: Both texts locate liberation in a shift from pursuing/abandoning the changing contents
+      of experience to recognizing an unchanging witness-consciousness that persists through all states.
+      The Spandakarika's 'continuous sacred tremor throughout the three states' and Astavakra's 'one certain
+      that changes are simply nature of things—remains unchanging' both posit a stable ground of awareness
+      that transcends the flux of waking, dream, and deep sleep.
+    divergence: Astavakra emphasizes non-dual knowledge and cessation of suffering through recognition
+      of the changeless Self; Spandakarika emphasizes active realization of Shakti's vibration as the
+      dynamic ground, making liberation an embodied, energetic recognition rather than purely cognitive.
+    passage_id: astavakra_gita.asg_sum_11_01_11_08
+  - citation: Bhagavad Gita — Yajna as the Ecology of Action
+    resonance: 'Both texts resolve the apparent paradox of action and freedom through a shift in orientation:
+      the Spandakarika''s ''whether you abandon things or pursue them'' mirrors the Bhagavad Gita''s distinction
+      between binding and liberative action. Both teach that the same act becomes either binding or liberating
+      depending on whether it is done from ego-attachment or from alignment with a larger sacred order
+      (Shakti/yajna).'
+    divergence: The Gita frames this through ritual duty (yajna) and cosmic reciprocity; Spandakarika
+      frames it through the continuous recognition of Shakti's tremor, making the shift one of energetic
+      attunement rather than ritual intention.
+    passage_id: bhagavad_gita.bg_md_003
+  - citation: Pratyabhijnahrdayam — Sutra 14
+    resonance: Both texts describe consciousness as a fire that remains active and transformative even
+      when apparently obscured or limited. The Spandakarika's 'awakened tantrika realizes this continuous
+      sacred tremor' and Pratyabhijnahrdayam's 'Fire of Consciousness, though covered in the inferior
+      stage, partially consumes the fuel of knowables' both posit an inherent, self-luminous power that
+      works through all conditions.
+    divergence: Pratyabhijnahrdayam emphasizes the gradual unveiling of consciousness's inherent recognition
+      (pratyabhijna); Spandakarika emphasizes the direct, continuous realization of Shakti's vibration
+      as already present and accessible to the awakened practitioner.
+    passage_id: pratyabhijnahrdayam.phr_014
+  layer_provenance: generated_grounded

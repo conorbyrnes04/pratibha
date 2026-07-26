@@ -94,3 +94,36 @@ abhyasa: Whisper the line 'You are He, without you' on a slow out-breath, and no
   simply undo a mistaken assumption, the way admitting a sum was wrong changes nothing in the world but
   only corrects your reading of it.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away, evanescence’ → passing-away of the egoic claim before the
+      Real Here: The author corrects a subtle but pervasive error among spiritual seekers: the belief
+      that one must first exist as a separate self and then annihilate that self… Trap: self-erasure as
+      quietism or dissociation rather than clearing of false independence'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: waḥdat al-wujūd
+    definition: '‘unity of being/finding’ → the Real’s being is one; multiplicity is relational appearance,
+      not rival substances Here: This passage strikes at the heart of the treatise''s teaching on waḥdat
+      al-wujūd (the oneness of being). Trap: pantheist collapse that erases servant/Lord distinction'
+  - term: tawḥīd (توحيد)
+    definition: 'Arabic tawḥīd from waḥḥada ‘to make/declare one’ → absolute oneness of the Real, radicalized
+      here as sole agency and sole being Here: True tawḥīd leaves no residue of a second existence, not
+      even in the mode of something that once was and then ceased. Trap: hearing a creedal slogan rather
+      than ontological exclusivity of wujūd'
+    lemma_id: tawhid
+    sense_id: tawhid.islamic
+  - term: wujūd (وجود)
+    definition: 'Arabic wujūd ‘finding/being found; existence’ → being as what is found in God alone;
+      creatures have no independent wujūd Here: This passage strikes at the heart of the treatise''s teaching
+      on waḥdat al-wujūd (the oneness of being). Trap: treating ‘existence’ as a neutral metaphysical
+      predicate shared equally by God and world'
+  - term: nafs (نفس)
+    definition: '‘self/soul/breath’ → the claiming self that must be known so its independence can be
+      seen through Here: And it is not meant by this that you are something that exists, or that your
+      attributes are something that exists; rather, it is meant that you never were, nor… Trap: psychologizing
+      as ego-therapy without ontological stakes'
+  layer_provenance: editorial-enriched

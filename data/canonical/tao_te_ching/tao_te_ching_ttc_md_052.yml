@@ -99,3 +99,100 @@ abhyasa: When you reach for something today—a purchase, a upgrade, a new posse
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '天下有道，卻走馬以糞。
+
+    天下無道，戎馬生於郊。
+
+    禍莫大於不知足；
+
+    咎莫大於欲得。
+
+    故知足之足，常足矣。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'When the Way [*dào* 道] prevails in the world, they send back their swift horses to (draw) the
+    dung-carts.
+
+
+    When the Way is disregarded in the world, the war-horses breed in the border lands.
+
+
+    There is no guilt greater than to sanction ambition; no calamity greater than to be discontented with
+    one''s lot; no fault greater than the wish to be getting.
+
+
+    Therefore the sufficiency of contentment is an enduring and unchanging sufficiency.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter argues that true power lies in the quiet acceptance of what is, rather than in the
+    restless pursuit of more. The contested move is the claim that the Tao’s presence forces even the
+    most vigorous horse to return to the dung cart, a metaphor that reverses the usual image of the horse
+    as a symbol of strength and freedom. By subverting this image, the text suggests that the Tao’s virtue
+    is to humble even the most potent forces, turning them into humble servants of the earth. The paradoxical
+    reversal invites readers to reconsider the relationship between power and humility, and to question
+    whether the Tao truly diminishes or simply redirects energy.
+
+
+    Key Terms:
+
+
+    **道 (dào)** — The ultimate principle that governs the cosmos -> the source of all natural order ->
+    "the Way"
+
+    **不知足 (bù zhī zú)** — Not knowing contentment -> a state of endless desire -> "unfulfilled longing"
+
+    **欲得 (yù dé)** — Desire to obtain -> an insatiable ambition -> "to seek more"
+
+    **足 (zú)** — Sufficiency, fullness -> the state of being content -> "enough"'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: cháng (常)
+    definition: '常 ‘constant/enduring’ -> in “The Road of Contentment”: When the Way [*dào* 道] prevails
+      in the world, they send back their swift horses to (draw) the dung-carts. -> not theological eternity
+      with start/stop brackets — what persists through change without being used up'
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Road of Contentment”: the natural order that,
+      when followed, turns force into nourishment -> not a deity named Tao or a lifestyle brand — source-and-course
+      that resists full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Road of Contentment”: When the Way [*dào* 道] prevails
+      in the world, they send back their swift horses to (draw) the dung-carts. -> not mere possession;
+      the named/manifest pole that co-arises with wú'
+  - term: wú (無)
+    definition: '無 ‘without / not-have’ -> in “The Road of Contentment”: When the Way [*dào* 道] prevails
+      in the world, they send back their swift horses to (draw) the dung-carts. -> not nihilistic void;
+      generative absence (of forcing, name, desire) that opens function'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Road of Contentment”:
+      When the Way [*dào* 道] prevails in the world, they send back their swift horses to (draw) the dung-carts.
+      -> not only ‘the world’ as map; the realm that cannot be seized by contrivance'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Chuang Tzu, 1 (the horse that is not ridden)
+    resonance: Both texts use the horse as a symbol of power turned into humility
+    divergence: Chuang Tzu emphasizes spontaneous freedom, whereas this chapter forces the horse to return
+      to the dung cart
+    passage_id: ''
+  - citation: Confucius, Analects 1.1
+    resonance: Both stress the importance of contentment for moral order
+    divergence: Confucius frames contentment as virtue, while the Tao Te Ching frames it as a natural
+      consequence of following the Tao
+    passage_id: ''
+  - citation: Laozi, chapter 42 (the gentle horse)
+    resonance: Both depict the horse as a metaphor for human ambition
+    divergence: Chapter 42 presents the horse as a gentle, obedient creature; chapter 46 presents it as
+      a tool that must be humbled
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Stand barefoot on the ground for five minutes, feeling the earth’s weight. In that stillness,
+    silently affirm: "I am enough as I am."'

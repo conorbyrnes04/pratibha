@@ -87,3 +87,103 @@ abhyasa: 'Throughout today, pause at the exact moment you notice something chang
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: परिणामतयासंयमाद् अतितानागतज्ञनम्
+- kind: iast
+  label: IAST
+  body: pariṇāmatrayasaṃyamād atītānāgatajñānam
+- kind: translation
+  label: Pratibha Translation
+  body: By applying disciplined restraint to the three evolutionary stages, one attains knowledge of the
+    past and the future.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this sutra is that disciplined practice (saṁyama) is not merely a present‑moment
+    technique but a transformative process that bridges the past, present, and future. Patañjali’s use
+    of the triad (traya) signals that evolution is a tripartite progression—birth, maturation, and dissolution—each
+    requiring its own form of restraint. The contested move lies in the implicit assumption that the same
+    saṁyama can be applied uniformly across these distinct stages; some commentators argue that the nature
+    of restraint must differ between the nascent and the mature mind. Within the Yoga and Sāṃkhya traditions,
+    this sutra situates the practitioner as an agent who, through disciplined observation, can access
+    the accumulated knowledge of prior states (atīta) and anticipate future states (anāgata). The existential
+    application is clear: by mastering saṁyama, one transcends the linear experience of time, thereby
+    dissolving the illusion of a fixed self. Satchidananda’s brief aphorism underscores this by highlighting
+    the practical anchor—body‑centered practice—as the vehicle for such transcendence. The sutra thus
+    invites a holistic engagement with the mind’s evolution, urging the yogi to cultivate restraint not
+    as a static rule but as a dynamic, evolving discipline that unlocks temporal knowledge.
+
+
+    Key Terms
+
+
+    **saṁyama (सम्यमा)** — from ‘sam’ (together) + ‘yama’ (to restrain); in Sāṃkhya it denotes disciplined
+    control of the mind’s fluctuations; in Yoga it becomes the foundational practice for attaining samādhi
+
+
+    **traya (त्रय)** — etymologically ‘three’; in this context refers to the three evolutionary stages—birth,
+    maturation, dissolution; signals a triadic structure in yogic progress
+
+
+    **atīta (अतीत)** — past; in Yoga it represents accumulated experiential knowledge that can be accessed
+    through disciplined practice
+
+
+    **anāgata (अनागत)** — future; denotes potential states yet to be realized, accessible via the same
+    disciplined restraint
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 3.15:** Both sutras employ the triad to frame evolutionary stages, using saṁyama as the
+    connecting practice
+
+    *Divergence:* While 3.15 focuses on the threefold nature of the mind (citta, vṛtti, puruṣa), 3.16
+    extends the triad to temporal evolution, broadening the scope of saṁyama
+
+
+    **Sāṃkhya Kārikā 1.3:** The notion of transformation (parinama) aligns with the Sāṃkhya idea of prakṛti’s
+    evolution through its three gunas
+
+    *Divergence:* Sāṃkhya attributes change to the interplay of gunas, whereas Patañjali attributes it
+    to disciplined restraint
+
+
+    **Yoga Sūtra 2.20:** Both sutras link saṁyama to the attainment of higher knowledge (jñāna)
+
+    *Divergence:* 2.20 emphasizes the internal, meditative aspect of saṁyama, whereas 3.16 highlights
+    its temporal, evolutionary dimension'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: saṃyama (संयम)
+    definition: 'sam-√yam ‘hold together’ → the triad dhāraṇā-dhyāna-samādhi as one -> in “Three‑Stage
+      Evolutionary Insight”: in Sāṃkhya it denotes disciplined control of the mind’s fluctuations -> not
+      generic self-control; technical confluence that yields prajñā and siddhis'
+  - term: pariṇāma (परिणाम)
+    definition: 'pari-√nam ‘bend around / transform’ → transformation -> in “Three‑Stage Evolutionary
+      Insight”: The three-fold transformation: latent potential (dharma), manifest present (lakṣaṇa),
+      and dissolving transition (avasthā) through which all phenomena move -> not random change; structured
+      transformation of dharma/lakṣaṇa/avasthā that saṃyama can know'
+  - term: atha (अथ)
+    definition: 'atha ‘now’ — auspicious commencement particle -> in “Three‑Stage Evolutionary Insight”:
+      By applying disciplined restraint to the three evolutionary stages, one attains knowledge of the
+      past and the future. -> not filler ‘now then’; marks readiness and the opening of authorized instruction'
+  - term: traya (त्रय)
+    definition: 'source-term traya -> in “Three‑Stage Evolutionary Insight”: in this context refers to
+      the three evolutionary stages -> default English flattens the technical work this term does here'
+  - term: atīta (अतीत)
+    definition: 'source-term atīta -> in “Three‑Stage Evolutionary Insight”: in Yoga it represents accumulated
+      experiential knowledge that can be accessed through disciplined practice -> default English flattens
+      the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Apply disciplined restraint to your thoughts, actions, and sensations as you move through each
+    stage of your daily life, observing how this practice reveals knowledge of past patterns and future
+    possibilities.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: By practicing saṁyama on the three stages of evolution

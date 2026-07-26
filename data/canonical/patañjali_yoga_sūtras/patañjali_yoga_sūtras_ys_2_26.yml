@@ -97,3 +97,91 @@ abhyasa: 'Throughout your day, pause three times (morning, midday, evening) for 
   reality, not just an idea.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: विवेकाख्यातिर अविप्लवाः हानोपायः
+- kind: iast
+  label: IAST
+  body: vivekakhyātir aviplavā hānopāyaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The means of dissolution is continuous discrimination.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim here is that true dissolution of ignorance is achieved not by sporadic moments
+    of insight but by a sustained, unbroken practice of discrimination. In the Yoga and Sāṃkhya framework,
+    discrimination (viveka) is the faculty that separates the eternal Purusha (the witness) from the mutable
+    Prakṛti (the material world). The sutra asserts that merely having the capacity for discrimination
+    is insufficient; it must become a habitual, living process that does not allow even a fleeting lapse.
+    This insistence on continuity echoes the Sāṃkhya principle that the mind’s vṛtti (mental fluctuations)
+    must be subdued to reveal the unchanging Self. The Dvivedi commentary reinforces this by noting that
+    true discrimination causes all senses to turn inward, perceiving only the soul. The existential implication
+    is that one’s daily life must be structured so that every action, thought, and perception is filtered
+    through this discriminative lens, thereby preventing the re‑entanglement with ignorance. The sutra
+    therefore invites a disciplined, continuous practice that aligns with the Yoga goal of samādhi, the
+    state of complete absorption in Purusha. This disciplined approach is what ultimately dissolves the
+    ignorance that binds the individual to the cycle of experience.
+
+
+    Key Terms
+
+
+    **viveka (विवेक)** — viveka (discrimination) -> in Sāṃkhya, the discernment between Purusha and Prakṛti;
+    in Yoga, the practice that leads to samādhi; the sutra elevates it to a continuous process rather
+    than a one‑time act.
+
+
+    **aviplava (अविप्लव)** — aviplava (continuous) -> from ‘viplava’ (to flow) with negation; denotes
+    an unbroken flow of discriminative activity; contrasts with intermittent or sporadic practice.
+
+
+    **hāna (हण)** — hāna (dissolution) -> not merely destruction but the removal of ignorance; in Yoga,
+    the dissolution of the false identification of the self with Prakṛti.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.26:** The sutra’s structure mirrors the earlier 2.24, where ‘sampatti’ (wealth) is
+    described as a continuous process; both emphasize continuity as a prerequisite for attainment.
+
+    *Divergence:* While 2.24 speaks of accumulating wealth, 2.26 speaks of dissolving ignorance; the shift
+    from accumulation to dissolution reflects a transition from external to internal focus.
+
+
+    **Sāṃkhya Kāṇḍa 1.1:** Both texts identify discrimination as the key to separating Purusha from Prakṛti,
+    using similar terminology.
+
+    *Divergence:* Sāṃkhya presents discrimination as a conceptual understanding, whereas the Yoga sutra
+    demands an active, continuous practice.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: viveka-khyāti (विवेकख्याति)
+    definition: 'discernment + khyāti ‘clear appearing’ -> in “Continuous Discrimination”: from prakṛti
+      (nature and its modifications) -> not a belief that one is the Self; uninterrupted discriminative
+      revelation ending kaivalya’s approach'
+  - term: viveka (विवेक)
+    definition: 'vi-√vic ‘discriminate apart’ → discernment -> in “Continuous Discrimination”: the sutra
+      elevates it to a continuous process rather than a one‑time act -> not intellectual nitpicking; seeing
+      the difference between puruṣa and sattva/prakṛti'
+    lemma_id: aviveka
+  - term: aviplava (अविप्लव)
+    definition: '‘viplava’ (to flow) with negation -> in “Continuous Discrimination”: > from ‘viplava’
+      (to flow) with negation -> default English flattens the technical work this term does here'
+  - term: hāna (हान)
+    definition: '√hā ‘abandon’ → cessation/abandonment as goal -> in “Continuous Discrimination”: in Yoga,
+      the dissolution of the false identification of the self with Prakṛti -> not repression; the ending
+      of future suffering’s cause through viveka'
+  - term: hānopāya
+    definition: 'source-term hānopāya -> in “Continuous Discrimination”: and false identification are
+      removed -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You continuously apply discriminative awareness to every thought and sensation, ensuring no moment
+    of ignorance slips through.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: The means of dissolving is continuous dis-

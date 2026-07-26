@@ -89,3 +89,92 @@ abhyasa: 'Sit upright in a comfortable posture. Close your eyes. Inhale slowly t
   preferably in the early morning.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: तस्य वाचकः प्राणवः
+- kind: iast
+  label: IAST
+  body: tasya vācakaḥ praṇavaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: His indicator is the word of glory.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this brief aphorism is that the very essence of all spiritual practice is
+    encapsulated in a single utterance—OM. By designating OM as the "indicator," the Yoga Sūtra asserts
+    that the path to liberation is not a series of external actions but an inward attunement to the primordial
+    sound that animates reality. This move—identifying a phonetic symbol as the locus of all experience—has
+    been contested by some commentators who argue that the Sūtra merely points to a mnemonic device rather
+    than a metaphysical reality. However, within the Sāṃkhya‑Yoga framework, the sound is not a mere mnemonic;
+    it is the dynamic principle (prāṇa) that bridges the inert prakṛti and the active puruṣa. The Sūtra’s
+    brevity invites the practitioner to experience OM as a living witness (īśvara) that both sustains
+    and transcends the mind’s fluctuations (vṛtti). In practice, this means that the practitioner should
+    not merely recite OM, but should feel its resonance as the very vibration of the self, thereby dissolving
+    the distinction between the speaker and the spoken. The Dvivedi commentary’s emphasis on OM as the
+    "secret of secrets" dovetails with the Mandukya Upanishad’s depiction of the syllable as the gateway
+    to the three states of consciousness, reinforcing the idea that the word itself is a map of the psyche.
+    Thus, the Sūtra invites an existential application: by aligning one’s breath and awareness with OM,
+    one aligns the individual self with the universal sound, thereby achieving samādhi.
+
+
+    Key Terms
+
+
+    **vācaka (वाचकः)** — etymology: ‘indicator, speaker’ -> Sāṃkhya tradition: the element that signifies
+    the presence of puruṣa within prakṛti -> the translation ‘indicator’ misses the idea that it is the
+    very medium through which puruṣa is made manifest in the world
+
+
+    **praṇava (प्राणवः)** — etymology: ‘source of breath, sound’ -> in Yoga tradition: the sacred syllable
+    OM, the primal vibration of the universe -> the term ‘word of glory’ in translation obscures its role
+    as the dynamic principle that unites mind, body, and cosmos
+
+
+    Cross-Tradition Resonances
+
+
+    **Mandukya Upanishad, 1.1:** Both texts treat OM as the ultimate reality, with the Upanishad describing
+    its three states (AUM, A, U, M) and the Sūtra condensing this into the notion of an indicator.
+
+    *Divergence:* The Upanishad elaborates on the experiential states, whereas the Sūtra presents a single,
+    functional designation, thereby streamlining the concept for practical application
+
+
+    **Bhagavad Gita, 4.34:** Both texts link the sound to the divine principle that permeates creation.
+
+    *Divergence:* The Gita frames the sound as a means of worship and knowledge, while the Sūtra presents
+    it as the very instrument of liberation, emphasizing its role as a marker rather than a tool
+
+
+    **Yoga Vasistha, 1.2:** Both treat OM as the bridge between the finite mind and the infinite self.
+
+    *Divergence:* The Vasistha expands into narrative allegory, whereas the Sūtra remains aphoristic,
+    focusing solely on the ontological function'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: praṇava / oṃ (प्रणव)
+    definition: 'praṇava as the voiced designator of īśvara -> in “Indicator of the Word”: ‘source of
+      breath, sound’ -> in Yoga tradition: the sacred syllable OM, the primal vibration of the universe
+      -> the term ‘word of glory’ in translation obscures its role as the dynamic principle that unites
+      mind, body… -> not a lucky charm syllable; sonic support for japa and meaning-absorption (tad-artha-bhāvana)'
+  - term: vācaka (वाचकः)
+    definition: '‘indicator, speaker’ -> Sāṃkhya tradition: the element that signifies the presence of
+      puruṣa within prakṛti -> the translation ‘indicator’ misses the idea that it is the very medium
+      through which puruṣa is made manifest in the world -> in “Indicator of the Word”: ‘indicator, speaker’
+      -> Sāṃkhya tradition: the element that signifies the presence of puruṣa within prakṛti -> the translation
+      ‘indicator’ misses the idea that it is the very medium through which puruṣa is made manife… -> default
+      English flattens the technical work this term does here'
+  - term: īśvara (ईश्वर)
+    definition: '√īś ‘rule, be capable’ → the special puruṣa untouched by kleśa/karma -> in “Indicator
+      of the Word”: The supreme conscious principle, untouched by suffering or karma -> not necessarily
+      a creator-god dogma; Patañjali’s omniscient special puruṣa as object of praṇidhāna'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Recite the syllable OM with mindful awareness of its glory, letting each breath resonate with
+    its vibration.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: His indicator is the " word of glory."

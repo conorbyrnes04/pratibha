@@ -150,3 +150,75 @@ section: III.1262–1267
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'آن یکی را کف به خرطوم اوفتاد /// گفت همچون ناودانست این نهاد
+
+    آن یکی را دست بر گوشش رسید /// آن برو چون بادبیزن شد پدید
+
+    آن یکی را کف چو بر پایش بسود /// گفت شکل پیل دیدم چون عمود
+
+    آن یکی بر پشت او بنهاد دست /// گفت خود این پیل چون تختی بدست
+
+    همچنین هر یک به جزوی که رسید /// فهم آن می‌کرد هر جا می‌شنید
+
+    از نظرگه گفتشان شد مختلف /// آن یکی دالش لقب داد این الف'
+- kind: iast
+  label: Transliteration note
+  body: Persian — see Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: 'One''s palm fell on the trunk — "This being is like a water-spout." Another''s hand reached the
+    ear — it seemed a fan. Another felt the leg — "I found the elephant''s shape like a pillar." Another
+    laid a hand on the back — "Truly this elephant is like a throne." Each understood according to the
+    part touched. Their words differed by viewpoint: one nicknamed it *dāl*, another *alif*.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Conflict is often not about different elephants but different grips. The contested pastoral use
+    is irenic without relativism: disagreement is explained by *naẓargāh* (viewing-place), not by denying
+    a whole. Existentially: in your next argument, ask what part each hand is on.
+
+
+    Key Terms
+
+
+    **جزو juzʾ** — part; the fragment mistaken for the whole.
+
+
+    **نظرگه naẓargāh** — viewing-place; the stand that shapes speech.
+
+
+    **دال / الف** — letter-shapes as rival nicknames for one animal.
+
+
+    Cross-Tradition Resonances
+
+
+    **Jain anekāntavāda (many-sidedness):** Both honor partial standpoints.
+
+    *Divergence:* Jain thought systematizes standpoints; Rūmī presses toward a shared light that ends
+    quarrel.
+
+
+    **Zhuangzi (pipes of heaven / each thing its own right):** Both relativize forced consensus.
+
+    *Divergence:* Zhuangzi often rests in perspectival ease; Rūmī wants the candle that ends difference.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: Trunk,
+      Ear, Leg, Back — Each Names a Different Elephant Trunk, Ear, Leg, Back — Each Names a Different
+      Elephant آن یکی را کف به خرطوم اوفتاد /// گفت همچون ناود… Trap: erotic fusion fantasy without the
+      discipline of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: nay / reed (نی)
+    definition: 'Persian nay ‘reed flute’ → the cut reed whose complaint is longing for the reed-bed—origin
+      remembered as wound Trap: sentimental music imagery without the metaphysics of separation'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: Write two opposing descriptions of the same hard situation as if each were a palm on a different
+    limb. Do not pick a winner. Sit one minute with the elephant still dark.

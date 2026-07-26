@@ -9,19 +9,18 @@ title: To Love Men; To Know Men
 unit_type: sutra
 sanskrit_devanagari: 樊遲問仁。子曰：「愛人。」問知。子曰：「知人。」
 sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
-translation_literal: 'Fan Chi asked about rén (benevolence). The Master said: "Care for other people."
-  He asked about wisdom. The Master said: "Understand other people."'
-commentary: 'This exchange strips two of Confucius''s central concepts down to their simplest human core.
-  Rén 仁, often rendered with weighty abstractions, is here defined by an action anyone can grasp: love
-  or care directed toward others. Wisdom (zhì 知) is likewise not book-knowledge or cleverness but the
-  capacity to truly know people — to read character, understand motives, and see others as they are. The
-  pairing is deliberate and mutually reinforcing: you cannot care well for people you do not understand,
-  and understanding people without care becomes cold manipulation. Confucius tailors his answers to Fan
-  Chi, a disciple portrayed elsewhere as practical-minded and sometimes slow to grasp the finer points,
-  so the Master offers direct, concrete definitions rather than elaborate theory. Notably, both virtues
-  point outward, away from the self and toward the community. For Confucius, moral cultivation is never
-  a private, inward project alone; it is realized in how one treats and comprehends the people around
-  one. The two answers together sketch a whole ethical posture: warmth of heart joined to clarity of sight.
+translation_literal: 'Fan Chi asked about rén (benevolence). The Master said: "Care for other people." He asked about wisdom.
+  The Master said: "Understand other people."'
+commentary: 'This exchange strips two of Confucius''s central concepts down to their simplest human core. Rén 仁, often rendered
+  with weighty abstractions, is here defined by an action anyone can grasp: love or care directed toward others. Wisdom (zhì
+  知) is likewise not book-knowledge or cleverness but the capacity to truly know people — to read character, understand motives,
+  and see others as they are. The pairing is deliberate and mutually reinforcing: you cannot care well for people you do not
+  understand, and understanding people without care becomes cold manipulation. Confucius tailors his answers to Fan Chi, a
+  disciple portrayed elsewhere as practical-minded and sometimes slow to grasp the finer points, so the Master offers direct,
+  concrete definitions rather than elaborate theory. Notably, both virtues point outward, away from the self and toward the
+  community. For Confucius, moral cultivation is never a private, inward project alone; it is realized in how one treats and
+  comprehends the people around one. The two answers together sketch a whole ethical posture: warmth of heart joined to clarity
+  of sight.
 
 
   Key Terms
@@ -30,13 +29,11 @@ commentary: 'This exchange strips two of Confucius''s central concepts down to t
   **rén 仁** — benevolence or humaneness; here defined simply as caring for others
 
   **zhì 知** — wisdom or knowing; here the ability to understand people'
-insight: '«To Love Men; To Know Men» treats cultivation as a public-and-private craft: virtue is not a
-  mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper
-  gain.'
-practice: 'During your next conversation with someone, pause before you speak and ask yourself: "What
-  do I not yet understand about why they said that?" Then listen to their answer as if you were learning
-  a language you''ve never heard before, attending to tone and hesitation as much as words—this listening
-  is the understanding Confucius names, and it is itself the care.'
+insight: '«To Love Men; To Know Men» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+  pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'During your next conversation with someone, pause before you speak and ask yourself: "What do I not yet understand
+  about why they said that?" Then listen to their answer as if you were learning a language you''ve never heard before, attending
+  to tone and hesitation as much as words—this listening is the understanding Confucius names, and it is itself the care.'
 upaya: ''
 themes:
 - action
@@ -64,12 +61,44 @@ provenance:
   section: Analects 12.22
   original_id: AN_12_22
   source_reference: ''
-translation: 'Fan Chi asked about rén (benevolence). The Master said: "Care for other people." He asked
-  about wisdom. The Master said: "Understand other people."'
-abhyasa: 'During your next conversation with someone, pause before you speak and ask yourself: "What do
-  I not yet understand about why they said that?" Then listen to their answer as if you were learning
-  a language you''ve never heard before, attending to tone and hesitation as much as words—this listening
-  is the understanding Confucius names, and it is itself the care.'
-translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
-  a critical edition.
+translation: 'Fan Chi asked about rén (benevolence). The Master said: "Care for other people." He asked about wisdom. The
+  Master said: "Understand other people."'
+abhyasa: 'During your next conversation with someone, pause before you speak and ask yourself: "What do I not yet understand
+  about why they said that?" Then listen to their answer as if you were learning a language you''ve never heard before, attending
+  to tone and hesitation as much as words—this listening is the understanding Confucius names, and it is itself the care.'
+translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 樊遲問仁。子曰：「愛人。」問知。子曰：「知人。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: Fan Chi asked about benevolence. The Master said, 'It is to love all men.' He asked about knowledge. The Master said,
+    'It is to know all men.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«To Love Men; To Know Men» treats cultivation as a public-and-private craft: virtue is not a mood but a trained pattern
+    of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living reader to test
+    the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands in attention,
+    then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+    insight without application remains incomplete. Return again to the original wording when the mind wants to smooth the
+    edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: rén (仁)
+    definition: 'to love persons (ài rén) → trap: universal sentimentality'
+  - term: zhī (知)
+    definition: 'to know persons → paired with loving → trap: profiling'
+  - term: ài (愛)
+    definition: 'love/care → rén’s brief gloss → trap: romance'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'

@@ -85,3 +85,65 @@ abhyasa: 'Sit upright and settle the breath. Imagine a fine thread of light stan
   in the fade rather than the light.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: आमूलात् किरणाभासां सूक्ष्मात् सूक्ष्मतरात्मिकम् । चिन्तयेत् तां द्विषट्कान्ते श्याम्यन्तीम् भैरवोदयः
+    ॥ २८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: āmūlāt kiraṇābhāsāṃ sūkṣmāt sūkṣmatarātmikam | cintayet tāṃ dviṣaṭkānte śyāmyantīm bhairavodayaḥ
+    || 28 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #3
+
+    Imagine the subtlest possible form [of prāṇa] as rays of light shining upward
+
+    from the root [of the central channel] and peacefully dissolving in the highest
+
+    center above the crown; then Bhairava (spacious awareness) arises. || 28'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dvādaśānta (द्वादशान्त)
+    definition: dvi-ṣaṭka ‘two sixes’ + anta ‘end’ → the 'end of the twelve' — a subtle point twelve finger-widths
+      beyond the crown or at the terminus of the breath, where rising energy dissolves → measurement jargon
+      misses the upper terminus where breath and mantra thin into the open
+  - term: śakti (शक्ति)
+    definition: √śak ‘be able’ → power/capacity → the radiant, outward-flowing power of consciousness;
+      here visualized as a rising thread of light → ‘energy/empowerment’ misses Śiva’s own capacity to
+      appear, know, and act as world
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  - term: bhairavodaya (भैरवोदय)
+    definition: bhairava + udaya ‘rising’ → the 'dawning of Bhairava' — the emergence of unbounded pure
+      awareness once its object fades → ‘rising of Bhairava’ is not theophany theater—the dawn of recognition
+      in awareness
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a structural inversion: the soul/awareness continuously performs its
+      nature, but ordinary perception misses it because attention is absorbed in external content. Redirecting
+      attention inward reveals what was always operating.'
+    divergence: Plotinus emphasizes the soul's continuous noetic activity as the remedy; Vijnana Bhairava
+      uses prāṇa visualization as the specific technique to redirect attention from content to the knower
+      itself.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: 'Both texts use spatial metaphor to point beyond localization: the mind/awareness has no
+      center, no circumference, no boundary—like space itself. This boundlessness is revealed when attention
+      stops fixing on particular objects.'
+    divergence: Tilopa uses apophatic negation (what mind is *not*) to indicate its nature; Vijnana Bhairava
+      uses positive visualization of light-rays dissolving upward to enact the same reorientation of awareness.
+    passage_id: tilopa_mahamudra.til_002
+  layer_provenance: generated_grounded

@@ -92,3 +92,72 @@ abhyasa: Sit in a genuinely quiet place, eyes closed, in the evening or early mo
   minutes is enough to begin.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: अनाहते पात्रकर्णेऽभग्नशब्दे सरिद्द्रुते । शब्दब्रह्मणि निष्णातः परम् ब्रह्माधिगच्छति ॥ ३८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: anāhate pātrakarṇe'bhagnaśabde sariddrute | śabdabrahmaṇi niṣṇātaḥ param brahmādhigacchati ||
+    38 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #13
+
+    One who is steeped in the Brahman-that-is-sound, in the uninterrupted
+
+    Unstruck [Sound], [like] a rushing river in the vessel of the ear, attains
+
+    supreme Brahman. || 38'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: anāhata (अनाहत)
+    definition: an- + āhata ‘struck’ → the 'unstruck' sound — an inner tone not caused by physical striking,
+      heard in deep stillness → ‘unstruck sound’ New-Age glow misses the unconditioned resonance prior
+      to contact
+  - term: śabdabrahman (शब्दब्रह्मन्)
+    definition: śabda ‘sound/word’ + brahman → the Absolute experienced as sound or vibration, the sonic
+      dimension of ultimate Reality → ‘Word-Brahman’ theology misses sonic absolute as mantra-reality
+    lemma_id: brahman
+    sense_id: brahman.upanishadic
+  - term: niṣṇāta (निष्णात)
+    definition: ni- + √snā ‘bathe’ → skilled/versed → fully immersed or steeped, as if bathed completely
+      in something → ‘expert’ careerizes immersion-deep skill in the Real
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 7 · Turīya — The Fourth
+    resonance: Both texts use systematic negation to point toward a consciousness that transcends all
+      categorical description—the Vijnana Bhairava dissolves the listener into the Unstruck Sound beyond
+      conceptual grasp, while the Mandukya's Turīya negates all states (inward, outward, both, mass, consciousness,
+      non-consciousness) to isolate what remains.
+    divergence: The Vijnana Bhairava uses sonic/vibrational immediacy as the gateway to recognition, whereas
+      the Mandukya employs logical negation of states to isolate the fourth principle; one is phenomenological,
+      the other metaphysical.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_009
+  - citation: 'Know Yourself (Ibn Arabi / Balyani) — Pearl #7'
+    resonance: Both passages enact a self-reflexive loop where consciousness knows itself through its
+      own nature—Ibn Arabi's 'He knows Himself through Himself' mirrors the Vijnana Bhairava's absorption
+      into Brahman-as-sound, where awareness recognizes itself in the uninterrupted vibration.
+    divergence: Ibn Arabi frames this as divine self-knowledge (theistic), while the Vijnana Bhairava
+      treats it as the practitioner's direct merger with impersonal Brahman (non-dual); the locus of recognition
+      differs.
+    passage_id: know_yourself_ibn_arabi_balyani.kys_p007
+  - citation: Yoginihrdaya — Cakrasaṃketa
+    resonance: Both texts locate the arising of manifestation in a moment of self-beholding—the Yoginihrdaya's
+      Supreme Power 'beholds her own flashing-forth' parallels the Vijnana Bhairava's listener becoming
+      steeped in the Unstruck Sound, where consciousness recognizes itself in its own vibration.
+    divergence: The Yoginihrdaya emphasizes the feminine creative power (Śakti) and the cakra's formation,
+      while the Vijnana Bhairava focuses on the listener's absorption into formless Brahman; one privileges
+      manifestation, the other transcendence.
+    passage_id: yoginihrdaya.yh_006
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

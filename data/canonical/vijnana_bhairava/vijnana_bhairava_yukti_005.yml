@@ -84,3 +84,75 @@ abhyasa: 'Sit and choose a simple ascending scan of the body-breath: pick a hand
   out of places to go. Whatever is aware in that pointless, objectless moment: rest as that.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: क्रमद्वादशकं सम्यग् द्वादशाक्षरभेदितम् । स्थूलसूक्ष्मपरस्थित्या मुक्त्वा मुक्त्वान्ततः शिवः ॥
+    ३० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kramadvādaśakaṃ samyag dvādaśākṣarabheditam | sthūlasūkṣmaparasthityā muktvā muktvāntataḥ śivaḥ
+    || 30 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #5
+
+    There are twelve [such centers] in sequence; properly
+
+    associated with twelve vowels. By fixing awareness on
+
+    each one, in successively coarse, subtle, and supreme
+
+    forms, and then abandoning each, in the end, [one
+
+    knows] God. || 30'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: krama (क्रम)
+    definition: √kram ‘step’ → sequence/order → sequence or graded progression; here the ordered movement
+      through twelve stations → ‘sequence’ as checklist misses ordered unfolding as a power of consciousness
+  - term: sthūla / sūkṣma / para (स्थूल / सूक्ष्म / पर)
+    definition: gross / subtle / supreme → gross, subtle, and supreme — three deepening registers in which
+      each station is experienced → three-level map—not ‘body/mind/spirit’ pop tiers
+  - term: muktvā (मुक्त्वा)
+    definition: √muc absolutive → having released → having released or let go; the repeated act of abandonment
+      that is the heart of the method → ‘having let go’ as self-help misses precise release named in the
+      verse
+    lemma_id: moksa
+    sense_id: moksa.vedanta
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a structural inversion: the soul/awareness continuously performs its
+      characteristic act (attention to the knower), but ordinary perception remains obstructed by fixation
+      on external content. Clarity emerges when perception redirects from sense-objects to the source
+      of perception itself.'
+    divergence: Plotinus frames this as a metaphysical problem of soul-consciousness alignment; Vijnana
+      Bhairava treats it as a yogic technique using sequential centers and vowels to systematically retrain
+      attention inward.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Tilopa Mahamudra — Look at the Looker
+    resonance: 'Both texts prescribe a reversal of attention''s habitual direction: from the seen (external
+      content) to the seer (the knower/looker), with the understanding that this reorientation reveals
+      an innate or intrinsic nature already present but obscured by outward focus.'
+    divergence: Tilopa emphasizes guru-devotion and sudden recognition of the sahaja (innate); Vijnana
+      Bhairava uses systematic meditative sequencing through centers and vowels as the method of reorientation.
+    passage_id: tilopa_mahamudra.til_003
+  - citation: The Book of Chuang Tzu — chapter 19
+    resonance: Both texts redirect attention away from what cannot be accomplished or what is transient
+      (passing content, external things) toward what is stable and intrinsic—a reordering of where consciousness
+      naturally aligns itself.
+    divergence: Chuang Tzu emphasizes non-action and acceptance of life's limits; Vijnana Bhairava prescribes
+      active, structured inward attention through embodied centers and vowel-sound correspondences.
+    passage_id: the_book_of_chuang_tzu.ctz_019
+  layer_provenance: generated_grounded

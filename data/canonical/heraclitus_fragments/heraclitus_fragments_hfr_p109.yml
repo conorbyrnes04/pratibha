@@ -15,21 +15,23 @@ themes:
 - way
 source_excerpt: 7; It is better to conceal ignorance than to expose it.
 translation_literal: 7; It is better to conceal ignorance than to expose it.
-commentary: 'This fragment cuts against the grain of what we assume wisdom demands. We expect the philosopher to speak, to
-  illuminate, to expose error—yet Heraclitus names silence as superior. The paradox is not moral but *epistemological*: to
-  conceal ignorance is not to hide a known lack (which would require knowing what you lack), but to refrain from the gesture
-  of speech itself. The moment you expose ignorance—name it, articulate it, perform the confession—you have already claimed
-  a position from which to see it. You have made ignorance into an object, a thing you possess and can display. Concealment
-  here means something closer to *not-yet-speaking*, the withholding of the premature word. Heraclitus teaches that the unspoken
-  gap is wiser than the spoken one. This is why he speaks in fragments at all: each aphorism is a boundary, not a bridge.
-  The exposure of ignorance is an act of false mastery—a way of pretending you have already stepped outside what you don''t
-  know. Concealment preserves the actual condition: you remain *inside* the not-knowing, unseparated from it, and thus closer
-  to what logos (the underlying pattern) actually is. The fragment asks: what happens to your listening when you stop performing
-  understanding?'
+commentary: 'This fragment cuts against the grain of what we assume wisdom demands. We expect the philosopher
+  to speak, to illuminate, to expose error—yet Heraclitus names silence as superior. The paradox is not
+  moral but *epistemological*: to conceal ignorance is not to hide a known lack (which would require knowing
+  what you lack), but to refrain from the gesture of speech itself. The moment you expose ignorance—name
+  it, articulate it, perform the confession—you have already claimed a position from which to see it.
+  You have made ignorance into an object, a thing you possess and can display. Concealment here means
+  something closer to *not-yet-speaking*, the withholding of the premature word. Heraclitus teaches that
+  the unspoken gap is wiser than the spoken one. This is why he speaks in fragments at all: each aphorism
+  is a boundary, not a bridge. The exposure of ignorance is an act of false mastery—a way of pretending
+  you have already stepped outside what you don''t know. Concealment preserves the actual condition: you
+  remain *inside* the not-knowing, unseparated from it, and thus closer to what logos (the underlying
+  pattern) actually is. The fragment asks: what happens to your listening when you stop performing understanding?'
 insight: ''
-practice: In the next conversation where you feel the pull to explain something you sense but cannot yet articulate, pause
-  at the threshold and speak only a question or a bare observation—then wait in the silence that follows, noticing the other
-  person's face and your own breath, without rushing to fill the gap with clarification.
+practice: In the next conversation where you feel the pull to explain something you sense but cannot yet
+  articulate, pause at the threshold and speak only a question or a bare observation—then wait in the
+  silence that follows, noticing the other person's face and your own breath, without rushing to fill
+  the gap with clarification.
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -49,39 +51,75 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This fragment cuts against the grain of what we assume wisdom demands. We expect the philosopher to speak, to illuminate,
-    to expose error—yet Heraclitus names silence as superior. The paradox is not moral but *epistemological*: to conceal ignorance
-    is not to hide a known lack (which would require knowing what you lack), but to refrain from the gesture of speech itself.
-    The moment you expose ignorance—name it, articulate it, perform the confession—you have already claimed a position from
-    which to see it. You have made ignorance into an object, a thing you possess and can display. Concealment here means something
-    closer to *not-yet-speaking*, the withholding of the premature word. Heraclitus teaches that the unspoken gap is wiser
-    than the spoken one. This is why he speaks in fragments at all: each aphorism is a boundary, not a bridge. The exposure
-    of ignorance is an act of false mastery—a way of pretending you have already stepped outside what you don''t know. Concealment
-    preserves the actual condition: you remain *inside* the not-knowing, unseparated from it, and thus closer to what logos
-    (the underlying pattern) actually is. The fragment asks: what happens to your listening when you stop performing understanding?'
+  body: 'This fragment cuts against the grain of what we assume wisdom demands. We expect the philosopher
+    to speak, to illuminate, to expose error—yet Heraclitus names silence as superior. The paradox is
+    not moral but *epistemological*: to conceal ignorance is not to hide a known lack (which would require
+    knowing what you lack), but to refrain from the gesture of speech itself. The moment you expose ignorance—name
+    it, articulate it, perform the confession—you have already claimed a position from which to see it.
+    You have made ignorance into an object, a thing you possess and can display. Concealment here means
+    something closer to *not-yet-speaking*, the withholding of the premature word. Heraclitus teaches
+    that the unspoken gap is wiser than the spoken one. This is why he speaks in fragments at all: each
+    aphorism is a boundary, not a bridge. The exposure of ignorance is an act of false mastery—a way of
+    pretending you have already stepped outside what you don''t know. Concealment preserves the actual
+    condition: you remain *inside* the not-knowing, unseparated from it, and thus closer to what logos
+    (the underlying pattern) actually is. The fragment asks: what happens to your listening when you stop
+    performing understanding?'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (7; It is better to conceal ignorance than to expose it.), the shared pattern according
+      to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine,
+      mere logic, or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: φύσις (physis)
+    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop ->
+      in this passage (7; It is better to conceal ignorance than to expose it.), nature that loves to
+      hide — the self-showing of things that also resists crude disclosure -> trap: equating physis with
+      “the outdoors” or a finished inventory of objects'
+    lemma_id: physis
+    sense_id: physis.greek
+  - term: σοφόν (sophon)
+    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in
+      this passage (7; It is better to conceal ignorance than to expose it.), wisdom apart from polymathy:
+      knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning
+      (πολυμαθίη) or reputation for knowledge'
+  - term: σύνεσις (synesis)
+    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in
+      this passage (7; It is better to conceal ignorance than to expose it.), understanding as holding-together
+      what daily contact already offers — not new information alone -> trap: IQ or book-learning; synesis
+      fails when familiarity becomes opacity'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: In the next conversation where you feel the pull to explain something you sense but cannot yet articulate, pause at
-    the threshold and speak only a question or a bare observation—then wait in the silence that follows, noticing the other
-    person's face and your own breath, without rushing to fill the gap with clarification.
+  body: In the next conversation where you feel the pull to explain something you sense but cannot yet
+    articulate, pause at the threshold and speak only a question or a bare observation—then wait in the
+    silence that follows, noticing the other person's face and your own breath, without rushing to fill
+    the gap with clarification.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Siva Sutra — Śāmbhavopāya
-    resonance: 'Both texts compress a paradox into a single aphorism: concealing ignorance is better than exposing it (Heraclitus)
-      and knowledge itself is bondage (Śiva Sūtra). Each reverses the expected valorization of its key term—ignorance and
-      knowledge respectively—by showing how the apparent good contains a hidden cost or trap.'
-    divergence: Heraclitus treats concealment as a practical wisdom about social exposure, while Śāmbhavopāya identifies knowledge
-      as metaphysical bondage; Heraclitus is epistemological-pragmatic, the Śiva Sūtra is ontological.
+    resonance: 'Both texts compress a paradox into a single aphorism: concealing ignorance is better than
+      exposing it (Heraclitus) and knowledge itself is bondage (Śiva Sūtra). Each reverses the expected
+      valorization of its key term—ignorance and knowledge respectively—by showing how the apparent good
+      contains a hidden cost or trap.'
+    divergence: Heraclitus treats concealment as a practical wisdom about social exposure, while Śāmbhavopāya
+      identifies knowledge as metaphysical bondage; Heraclitus is epistemological-pragmatic, the Śiva
+      Sūtra is ontological.
     passage_id: siva_sutra.ss_i_2
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both passages ground their teaching in breath as the primary medium of truth: Heraclitus''s aphorism on ignorance
-      invokes breath (pneuma) as the cosmological principle that must remain concealed, while the Vijnana Bhairava articulates
-      the Supreme through the constant oscillation of prāṇa and jīva in breath itself.'
-    divergence: Heraclitus uses breath as a metaphor for hidden cosmic order that should not be exposed, while the Vijnana
-      Bhairava uses breath as the direct vehicle of recognition and conscious articulation of the divine.
+    resonance: 'Both passages ground their teaching in breath as the primary medium of truth: Heraclitus''s
+      aphorism on ignorance invokes breath (pneuma) as the cosmological principle that must remain concealed,
+      while the Vijnana Bhairava articulates the Supreme through the constant oscillation of prāṇa and
+      jīva in breath itself.'
+    divergence: Heraclitus uses breath as a metaphor for hidden cosmic order that should not be exposed,
+      while the Vijnana Bhairava uses breath as the direct vehicle of recognition and conscious articulation
+      of the divine.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []

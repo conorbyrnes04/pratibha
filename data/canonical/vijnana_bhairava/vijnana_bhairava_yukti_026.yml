@@ -84,3 +84,73 @@ abhyasa: 'Sit and take a few slow breaths. Then, deliberately and slowly, imagin
   awake presence.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: एवम् एव जगत् सर्वं दग्धं ध्यात्वा विकल्पतः । अनन्यचेतसः पुंसः पुम्भावः परमो भवेत् ॥ ५३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: evam eva jagat sarvaṃ dagdhaṃ dhyātvā vikalpataḥ | ananyacetasaḥ puṃsaḥ pumbhāvaḥ paramo bhavet
+    || 53 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #26
+
+    In the same way, imagining the whole world incinerated [by
+
+    fire], a person of disciplined mind experiences the supreme state
+
+    of the soul. || 53'
+- kind: commentary
+  label: Pratibha Commentary
+  body: The teaching frames change as lawful and intelligible, inviting steadiness within transformation.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vikalpa (विकल्प)
+    definition: vi- + √kḷp ‘fashion’ → alternative construct → constructive thought or mental imagining;
+      here used intentionally as the instrument of practice → ‘thought’ is too broad; dualizing ideation
+      that splits seamless awareness
+    lemma_id: vikalpa
+    sense_id: vikalpa.shaiva
+  - term: puṃbhāva (पुंभाव)
+    definition: puṃs ‘person/male’ + bhāva → the state of pure subjecthood — being conscious with no object,
+      awareness resting in itself → ‘manhood’ is wrong—the finite person-stance of the bound experient
+  - term: ananyacetas (अनन्यचेतस्)
+    definition: an-anya ‘not other’ + cetas ‘mind’ → 'with the mind on nothing else'; undistracted, single-pointed
+      attention → ‘one-pointed’ understates mind that admits no second object
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 4.2
+    resonance: 'Both texts frame transformation as a lawful overflow or natural process: Yukti #26 uses
+      incineration as a disciplined imaginative practice that reveals the supreme state, while Patañjali
+      4.2 describes species-change arising from nature''s overflow. Each treats radical change not as
+      rupture but as intelligible unfolding.'
+    divergence: 'Yukti #26 emphasizes the mind''s disciplined imaginative act as the gateway to transformation,
+      whereas Patañjali locates transformation in the intrinsic overflow of prakṛti itself—a difference
+      between volitional visualization and natural causation.'
+    passage_id: patañjali_yoga_sūtras.ys_4_02
+  - citation: Epictetus Works — Disturbance Has Only One Author
+    resonance: 'Both texts locate the seat of transformation in a shift of inner stance rather than external
+      circumstance: Yukti #26 shows that imagining incineration (not actual destruction) produces the
+      supreme state, just as Epictetus argues that disturbance arises from judgments, not things themselves.
+      The move is identical—reality''s power lies in how consciousness frames it.'
+    divergence: 'Yukti #26 aims at transcendent realization of the soul''s supreme nature through imaginative
+      dissolution, while Epictetus targets ethical freedom and equanimity through rational discrimination
+      of what lies within one''s control—different metaphysical endpoints.'
+    passage_id: epictetus_works.epi_enc_002
+  - citation: Nagarjuna Mulamadhyamakakarika — Dependent Arising Is Emptiness Is the Middle Way
+    resonance: 'Both texts use a radical negation or dissolution as the method to reveal what is fundamentally
+      real: Yukti #26 incinerates the world to access the supreme soul-state, while Nagarjuna identifies
+      emptiness (śūnyatā) as the ultimate nature revealed through dependent arising. Each dissolves apparent
+      solidity to disclose the ground.'
+    divergence: 'Yukti #26 dissolves the world to reveal a transcendent supreme state of the soul, whereas
+      Nagarjuna''s emptiness is not a transcendent ground but the very nature of interdependent phenomena—no
+      hidden essence, only relationality.'
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_18
+  layer_provenance: generated_grounded

@@ -75,3 +75,72 @@ abhyasa: Find a real vantage over depth where you can be safe — a high window,
   open, uncommenting quality of awareness with your eyes closed.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: कूपादिके महागर्ते स्थित्वोपरि निरीक्षणात् । अविकल्पमतेः सम्यक् सद्यस् चित्तलयः स्फुटम् ॥ ११५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kūpādike mahāgarte sthitvopari nirīkṣaṇāt | avikalpamateḥ samyak sadyas cittalayaḥ sphuṭam ||
+    115 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #87
+
+    Standing above a deep well, chasm, or the like and gazing into it,
+
+    one’s mind becomes completely free of thought, and suddenly
+
+    dissolves into clarity. || 115'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vikalpa (विकल्प)
+    definition: vi- + √kḷp ‘fashion’ → alternative construct → the mind's habitual conceptual activity
+      — naming, dividing, judging; here the technique targets the mind already loosened from it (avikalpa)
+      → ‘thought’ is too broad; dualizing ideation that splits seamless awareness
+    lemma_id: vikalpa
+    sense_id: vikalpa.shaiva
+  - term: cittalaya (चित्तलय)
+    definition: citta + laya ‘dissolution’ → the dissolving or melting away of the busy thinking mind
+      into its silent ground → ‘mind-dissolution’ can sound blank-out; here functional mind settles into
+      source
+    lemma_id: citta
+    sense_id: citta.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts locate liberation in the iterative return of attention from dispersed content
+      to a stable center or knower. Yukti 87 dissolves thought by redirecting gaze inward; the Gita prescribes
+      repeated restoration of attention from dispersion to center as the method of yoga-mastery.
+    divergence: The Gita emphasizes disciplined habituation and bodily regulation as scaffolding for attention;
+      Yukti 87 relies on a spontaneous precipice-induced collapse of thought into clarity, requiring no
+      prior practice.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: Both texts describe the knower or mind as boundless and unlocatable—without circumference
+      or fixed position. Yukti 87's clarity emerges when attention turns to the knower itself; Tilopa's
+      mind has no center and no circumference, resisting spatial or conceptual containment.
+    divergence: Tilopa uses spatial negation (space as metaphor) to point to mind's nature; Yukti 87 uses
+      a concrete perceptual technique (gazing into a void) to trigger the experiential recognition of
+      that boundlessness.
+    passage_id: tilopa_mahamudra.til_002
+  - citation: Shantideva Bodhicaryavatara — Stillness Before Insight
+    resonance: Both texts identify scattered attention as the root vulnerability to suffering and prescribe
+      gathered concentration as the remedy. Shantideva warns that a scattered mind lives 'between the
+      fangs of the afflictions'; Yukti 87 shows how focused inward attention dissolves the thought-content
+      that binds consciousness.
+    divergence: Shantideva frames concentration as a prerequisite built through vīrya (energy/effort)
+      within a moral framework; Yukti 87 presents it as an immediate, spontaneous outcome of a specific
+      perceptual gesture.
+    passage_id: shantideva_bodhicaryavatara.bca_08_solitude
+  layer_provenance: generated_grounded

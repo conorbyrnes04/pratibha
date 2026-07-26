@@ -108,3 +108,96 @@ abhyasa: Wear or carry something small today that matters to you but remains hid
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '吾言甚易知，甚易行。
+
+    天下莫能知，莫能行。
+
+    言有宗，事有君。
+
+    夫唯無知，是以不我知。
+
+    知我者希，則我者貴。
+
+    是以聖人被褐懷玉。'
+- kind: translation
+  label: Pratibha Translation
+  body: I speak in a way that is very easy to know, very easy to do. Yet the world cannot know it, cannot
+    do it. The words have a root, the deeds have a ruler. It is because they do not know this that they
+    do not know me. Those who know me are few; I am therefore precious. That is why the sage wears a humble
+    robe and keeps jade in his heart.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The chapter presents a classic Daoist paradox: simplicity in principle versus difficulty in practice.
+    The contested move is the claim that the sage’s words are both "very easy to know" and yet "no one
+    can know or do them." This tension underscores the Daoist critique of conventional knowledge: true
+    understanding transcends intellectual grasp. The sage’s humility—wearing a plain robe while holding
+    precious jade—illustrates the paradox: the outward simplicity masks inner value, and the rare knowledge
+    of the Tao is prized precisely because it is elusive.
+
+
+    Key Terms:
+
+
+    **dào (道)** — the ultimate principle that underlies all reality; in this chapter it is the source
+    of the sage’s words and actions
+
+    **wúwéi (無為)** — non-action or effortless action; the sage’s practice of the Tao is effortless, yet
+    it is difficult for others to emulate
+
+    **dé (德)** — the virtue or power that flows from aligning with the Tao; the sage’s virtue is prized
+    because it is rare
+
+    **zìrán (自然)** — naturalness or spontaneity; the sage’s simple garb reflects his natural state, unadorned
+    by social pretension'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Paradox of Simplicity”: I speak in a way that is very
+      easy to know, very easy to do. -> not mere possession; the named/manifest pole that co-arises with
+      wú'
+  - term: wú (無)
+    definition: '無 ‘without / not-have’ -> in “The Paradox of Simplicity”: I speak in a way that is very
+      easy to know, very easy to do. -> not nihilistic void; generative absence (of forcing, name, desire)
+      that opens function'
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “The Paradox of Simplicity”: I speak in a way that
+      is very easy to know, very easy to do. -> not canonized saint; the one who acts by emptying self-assertion
+      so the world orders itself'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Paradox of Simplicity”:
+      I speak in a way that is very easy to know, very easy to do. -> not only ‘the world’ as map; the
+      realm that cannot be seized by contrivance'
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Paradox of Simplicity”: in this chapter it is
+      the source of the sage’s words and actions -> not a deity named Tao or a lifestyle brand — source-and-course
+      that resists full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 2 (The Tao is the source of all things)
+    resonance: Both chapters emphasize the unknowable source of reality
+    divergence: Chapter 70 asserts that the source is easy to know, whereas chapter 2 presents it as beyond
+      all comprehension
+    passage_id: ''
+  - citation: Confucius, Analects 2.17 (The sage is a man of virtue)
+    resonance: Both texts value the sage’s virtue and humility
+    divergence: Confucius focuses on moral cultivation, while Laozi highlights the paradox of simplicity
+    passage_id: ''
+  - citation: Zhuangzi, chapter 28 (The Great Learning)
+    resonance: Both discuss the difficulty of attaining true knowledge
+    divergence: Zhuangzi frames it as a playful critique, whereas Laozi presents it as a solemn paradox
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit in quiet stillness for ten minutes, observing your breath without trying to control it. When
+    thoughts arise, let them pass like clouds, returning gently to the breath. This simple practice embodies
+    the Taoist principle that true action is effortless and that understanding comes from within, not
+    from forceful effort.

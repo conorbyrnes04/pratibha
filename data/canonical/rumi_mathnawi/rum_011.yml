@@ -159,3 +159,83 @@ section: Moses & Shepherd 3
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'تو برای وصل کردن آمدی /// یا برای فَصل کردن آمدی؟
+
+    تا توانی پا مَنِه اندر فَراق /// اَبْغَضُ الْاَشْیاء عِندي الطَّلاق
+
+    هر کسی را سیرتی بنهاده‌ام /// هر کسی را اصطلاحی داده‌ام
+
+    ما بَری از پاک و ناپاکی همه /// از گِرانجانی و چالاکی همه
+
+    ما زبان را نَنْگریم و قال را /// ما روان را بنگریم و حال را
+
+    ناظرِ قلبیم اگر خاشِع بوَد /// گرچه گفتِ لَفظ، ناخاضِع رُوَد
+
+    زانک دل جَوهر بوَد، گفتن عَرَض /// پس طُفَیل آمد عَرَض، جَوهرْ غَرَض
+
+    چند ازین اَلفاظ و اِضْمار و مَجاز؟ /// سوزْ خواهمْ سوز، با آن سوزْ ساز'
+- kind: iast
+  label: Transliteration note
+  body: See Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: 'The shepherd tore his cloak, sighed hot, and fled to the desert. Revelation came to Moses: You
+    have separated Our servant from Us. Did you come to join or to split? Do not step into separation
+    if you can help it — divorce is most hateful to Me. I have given each a way and a tongue…'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'God''s rebuke relocates criteria from verbal purity to relational effect: unite or divide. Existentially:
+    measure speech by whether it joins or splits lovers from the Beloved.
+
+
+    Key Terms
+
+
+    **حال / قال ḥāl / qāl** — state / speech.
+
+
+    **سوز sūz** — burning.
+
+
+    **ملت عشق** — the creed/community of love.
+
+
+    Cross-Tradition Resonances
+
+
+    **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal
+    perfection.
+
+    *Divergence:* The Gītā keeps varṇa-dharma frames; Rūmī''s love-creed speaks across forms.
+
+
+    **Eckhart (silence / not naming detachment):** Both warn that correct speech can spoil intimacy.
+
+    *Divergence:* Eckhart''s worry is exiting the ground by naming; Rūmī''s is shaming the lover''s tongue.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ʿishq (عشق)
+    definition: '‘passionate love’ → transformative love that burns form for the Beloved Here: Existentially:
+      measure speech by whether it joins or splits lovers from the Beloved. Trap: soft affection or romance
+      only'
+  - term: firāq (فراق)
+    definition: 'Arabic/Persian ‘separation, parting’ → existential distance from origin that generates
+      yearning speech Here: Did you come to join or to split? Do not step into separation if you can help
+      it — divorce is most hateful to Me. Trap: romance breakup rather than ontological exile from the
+      source'
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: God Rebukes
+      Moses — You Came to Unite, Not Divide God Rebukes Moses — You Came to Unite, Not Divide تو برای
+      وصل کردن آمدی /// یا برای فَصل کردن آمدی؟ تا توانی… Trap: erotic fusion fantasy without the discipline
+      of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute
+    in burning without words. Notice which felt more true.

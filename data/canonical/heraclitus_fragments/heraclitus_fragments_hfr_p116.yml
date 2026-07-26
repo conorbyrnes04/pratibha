@@ -15,23 +15,28 @@ themes:
 - mind
 - soul
 - way
-source_excerpt: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
-translation_literal: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
-commentary: 'Heraclitus does not say ''all things are one'' here; he says there is one wisdom—singular, not unified. The move
-  is epistemological, not ontological. To understand the intelligent will (gnōmē, the mind-like ordering principle) that governs
-  all things is not to merge into undifferentiated being but to recognize a single *intelligibility* threading through irreducible
-  multiplicity. The fragment refuses both atomism (things as separate) and mystical collapse (things as identical). The ''intelligent
-  will'' is not a god or consciousness external to things; it is the *way* things cohere and differentiate simultaneously—the
-  logos as both law and speech. What makes this wisdom ''one'' is that it cannot be fragmented into competing logics: you
-  cannot understand fire''s behavior, the polis''s structure, and the soul''s nature through three separate principles. Yet
-  this unity is not felt or intuited; it is *understood*—grasped through rigorous attention to how things actually work. The
-  old commentary''s fear of ''mystical fusion'' misses the precision: Heraclitus is claiming that intelligibility itself has
-  a single structure, even though the things it orders remain perpetually distinct, in tension, and in flux.'
+source_excerpt: There is one wisdom, to understand the intelligent will by which all things are governed
+  through 8.11.5
+translation_literal: There is one wisdom, to understand the intelligent will by which all things are governed
+  through 8.11.5
+commentary: 'Heraclitus does not say ''all things are one'' here; he says there is one wisdom—singular,
+  not unified. The move is epistemological, not ontological. To understand the intelligent will (gnōmē,
+  the mind-like ordering principle) that governs all things is not to merge into undifferentiated being
+  but to recognize a single *intelligibility* threading through irreducible multiplicity. The fragment
+  refuses both atomism (things as separate) and mystical collapse (things as identical). The ''intelligent
+  will'' is not a god or consciousness external to things; it is the *way* things cohere and differentiate
+  simultaneously—the logos as both law and speech. What makes this wisdom ''one'' is that it cannot be
+  fragmented into competing logics: you cannot understand fire''s behavior, the polis''s structure, and
+  the soul''s nature through three separate principles. Yet this unity is not felt or intuited; it is
+  *understood*—grasped through rigorous attention to how things actually work. The old commentary''s fear
+  of ''mystical fusion'' misses the precision: Heraclitus is claiming that intelligibility itself has
+  a single structure, even though the things it orders remain perpetually distinct, in tension, and in
+  flux.'
 insight: ''
-practice: 'Observe one process—a river, a conversation, a meal digesting, a thought forming—and identify two opposite movements
-  within it that cannot be separated: the thing''s coherence and its constant alteration, its unity and its plurality. Name
-  these opposites aloud without resolving them, and notice whether your mind tries to collapse them or hold them apart; that
-  resistance is the shape of your current understanding.'
+practice: 'Observe one process—a river, a conversation, a meal digesting, a thought forming—and identify
+  two opposite movements within it that cannot be separated: the thing''s coherence and its constant alteration,
+  its unity and its plurality. Name these opposites aloud without resolving them, and notice whether your
+  mind tries to collapse them or hold them apart; that resistance is the shape of your current understanding.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -49,47 +54,84 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
+  body: There is one wisdom, to understand the intelligent will by which all things are governed through
+    8.11.5
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus does not say ''all things are one'' here; he says there is one wisdom—singular, not unified. The move
-    is epistemological, not ontological. To understand the intelligent will (gnōmē, the mind-like ordering principle) that
-    governs all things is not to merge into undifferentiated being but to recognize a single *intelligibility* threading through
-    irreducible multiplicity. The fragment refuses both atomism (things as separate) and mystical collapse (things as identical).
-    The ''intelligent will'' is not a god or consciousness external to things; it is the *way* things cohere and differentiate
-    simultaneously—the logos as both law and speech. What makes this wisdom ''one'' is that it cannot be fragmented into competing
-    logics: you cannot understand fire''s behavior, the polis''s structure, and the soul''s nature through three separate
-    principles. Yet this unity is not felt or intuited; it is *understood*—grasped through rigorous attention to how things
-    actually work. The old commentary''s fear of ''mystical fusion'' misses the precision: Heraclitus is claiming that intelligibility
-    itself has a single structure, even though the things it orders remain perpetually distinct, in tension, and in flux.'
+  body: 'Heraclitus does not say ''all things are one'' here; he says there is one wisdom—singular, not
+    unified. The move is epistemological, not ontological. To understand the intelligent will (gnōmē,
+    the mind-like ordering principle) that governs all things is not to merge into undifferentiated being
+    but to recognize a single *intelligibility* threading through irreducible multiplicity. The fragment
+    refuses both atomism (things as separate) and mystical collapse (things as identical). The ''intelligent
+    will'' is not a god or consciousness external to things; it is the *way* things cohere and differentiate
+    simultaneously—the logos as both law and speech. What makes this wisdom ''one'' is that it cannot
+    be fragmented into competing logics: you cannot understand fire''s behavior, the polis''s structure,
+    and the soul''s nature through three separate principles. Yet this unity is not felt or intuited;
+    it is *understood*—grasped through rigorous attention to how things actually work. The old commentary''s
+    fear of ''mystical fusion'' misses the precision: Heraclitus is claiming that intelligibility itself
+    has a single structure, even though the things it orders remain perpetually distinct, in tension,
+    and in flux.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ἕν (hen)
+    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (There is
+      one wisdom, to understand the intelligent will by which all things are governed through 8.11.5),
+      the one that all things are: not mystical mush but a single order inside visible difference -> trap:
+      erasing plurality; Heraclitus’s hen keeps tension and exchange inside unity'
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (There is one wisdom, to understand the intelligent will by which all things are governed
+      through 8.11.5), the shared pattern according to which all things occur — heard before it is argued
+      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: ἁρμονίη (harmoniē)
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
+      passage (There is one wisdom, to understand the intelligent will by which all things are governed
+      through 8.11.5), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement
+      -> trap: reading “harmony” as conflict-avoidance or static balance'
+    lemma_id: harmonie
+    sense_id: harmonie.heraclitean
+  - term: ψυχή (psychē)
+    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage
+      (There is one wisdom, to understand the intelligent will by which all things are governed through
+      8.11.5), the soul whose depth, dryness, or rudeness decides whether senses can witness truly ->
+      trap: modern psychology’s “psyche,” or immortal ego-personality'
+    lemma_id: psyche
+    sense_id: psyche.platonic
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Observe one process—a river, a conversation, a meal digesting, a thought forming—and identify two opposite movements
-    within it that cannot be separated: the thing''s coherence and its constant alteration, its unity and its plurality. Name
-    these opposites aloud without resolving them, and notice whether your mind tries to collapse them or hold them apart;
-    that resistance is the shape of your current understanding.'
+  body: 'Observe one process—a river, a conversation, a meal digesting, a thought forming—and identify
+    two opposite movements within it that cannot be separated: the thing''s coherence and its constant
+    alteration, its unity and its plurality. Name these opposites aloud without resolving them, and notice
+    whether your mind tries to collapse them or hold them apart; that resistance is the shape of your
+    current understanding.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts posit a single intelligible order that cannot be grasped directly but only through a necessary
-      duality: Heraclitus''s ''one wisdom'' governing apparent plurality mirrors Nagarjuna''s ultimate (paramārtha) that can
-      only be ''pointed out'' through conventional reality (vyavahāra). Each tradition insists the apparent multiplicity is
-      not illusory but the necessary vehicle for understanding the singular principle.'
-    divergence: Heraclitus treats the one as an immanent rational principle (logos) structuring the cosmos; Nagarjuna treats
-      the ultimate as emptiness (śūnyatā) that transcends both conventional and ultimate as conceptual categories, making
-      the relationship between levels more radically non-dual.
+    resonance: 'Both texts posit a single intelligible order that cannot be grasped directly but only
+      through a necessary duality: Heraclitus''s ''one wisdom'' governing apparent plurality mirrors Nagarjuna''s
+      ultimate (paramārtha) that can only be ''pointed out'' through conventional reality (vyavahāra).
+      Each tradition insists the apparent multiplicity is not illusory but the necessary vehicle for understanding
+      the singular principle.'
+    divergence: Heraclitus treats the one as an immanent rational principle (logos) structuring the cosmos;
+      Nagarjuna treats the ultimate as emptiness (śūnyatā) that transcends both conventional and ultimate
+      as conceptual categories, making the relationship between levels more radically non-dual.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts locate the governing principle in breath as the fundamental articulation of order: Heraclitus''s
-      ''intelligent will by which all things are governed'' operates through pneuma (breath); the Vijnana Bhairava locates
-      the Supreme Goddess''s constant articulation in the prāṇa-jīva cycle. Each makes breath the primary manifestation of
-      an ordering intelligence.'
-    divergence: Heraclitus treats breath as the cosmic principle itself (the logos becoming physical); the Vijnana Bhairava
-      treats breath as the Goddess's expression—a conscious, embodied play (līlā) rather than an impersonal rational order.
+    resonance: 'Both texts locate the governing principle in breath as the fundamental articulation of
+      order: Heraclitus''s ''intelligent will by which all things are governed'' operates through pneuma
+      (breath); the Vijnana Bhairava locates the Supreme Goddess''s constant articulation in the prāṇa-jīva
+      cycle. Each makes breath the primary manifestation of an ordering intelligence.'
+    divergence: Heraclitus treats breath as the cosmic principle itself (the logos becoming physical);
+      the Vijnana Bhairava treats breath as the Goddess's expression—a conscious, embodied play (līlā)
+      rather than an impersonal rational order.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []

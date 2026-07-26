@@ -12,23 +12,24 @@ themes:
 - death
 - soul
 - virtue
-source_excerpt: Being born, they will only to live and die, or rather to find rest, and they leave children who likewise are
-  to die.
-translation_literal: Being born, they will only to live and die, or rather to find rest, and they leave children who likewise
-  are to die.
-commentary: 'This fragment strips away all consolation. Birth is not arrival; it is conscription into a single trajectory—live,
-  die, reproduce, die again. The word ''rest'' (anapausis) appears as the only relief, yet it comes only through death, not
-  through any philosophical insight or virtue. Heraclitus does not soften this with promise of immortal soul or eternal return;
-  he names the bare fact: we are born into a debt we cannot refuse, and we pass that debt to our children. The repetition—''likewise
-  are to die''—is not rhetorical flourish but the structure itself: each generation receives the same sentence. What makes
-  this fragment radical is not that it announces mortality (any sophist could do that) but that it refuses to distinguish
-  the human from the cyclical. We are not fallen from a higher state; we are the pattern itself. To understand this is not
-  to transcend it but to stop pretending the pattern is anything other than what it is. The teaching lies in the refusal of
-  uplift.'
+source_excerpt: Being born, they will only to live and die, or rather to find rest, and they leave children
+  who likewise are to die.
+translation_literal: Being born, they will only to live and die, or rather to find rest, and they leave
+  children who likewise are to die.
+commentary: 'This fragment strips away all consolation. Birth is not arrival; it is conscription into
+  a single trajectory—live, die, reproduce, die again. The word ''rest'' (anapausis) appears as the only
+  relief, yet it comes only through death, not through any philosophical insight or virtue. Heraclitus
+  does not soften this with promise of immortal soul or eternal return; he names the bare fact: we are
+  born into a debt we cannot refuse, and we pass that debt to our children. The repetition—''likewise
+  are to die''—is not rhetorical flourish but the structure itself: each generation receives the same
+  sentence. What makes this fragment radical is not that it announces mortality (any sophist could do
+  that) but that it refuses to distinguish the human from the cyclical. We are not fallen from a higher
+  state; we are the pattern itself. To understand this is not to transcend it but to stop pretending the
+  pattern is anything other than what it is. The teaching lies in the refusal of uplift.'
 insight: ''
-practice: 'At the moment you notice you are planning—for a child, a project, a legacy, a name to endure—pause and name aloud
-  what you are doing: ''I am arranging for something to die.'' Do not turn away from the phrase; let it stand without softening
-  or reframing. Return to the immediate act in front of you.'
+practice: 'At the moment you notice you are planning—for a child, a project, a legacy, a name to endure—pause
+  and name aloud what you are doing: ''I am arranging for something to die.'' Do not turn away from the
+  phrase; let it stand without softening or reframing. Return to the immediate act in front of you.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -43,43 +44,76 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: Being born, they will only to live and die, or rather to find rest, and they leave children who likewise are to die.
+  body: Being born, they will only to live and die, or rather to find rest, and they leave children who
+    likewise are to die.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This fragment strips away all consolation. Birth is not arrival; it is conscription into a single trajectory—live,
-    die, reproduce, die again. The word ''rest'' (anapausis) appears as the only relief, yet it comes only through death,
-    not through any philosophical insight or virtue. Heraclitus does not soften this with promise of immortal soul or eternal
-    return; he names the bare fact: we are born into a debt we cannot refuse, and we pass that debt to our children. The repetition—''likewise
-    are to die''—is not rhetorical flourish but the structure itself: each generation receives the same sentence. What makes
-    this fragment radical is not that it announces mortality (any sophist could do that) but that it refuses to distinguish
-    the human from the cyclical. We are not fallen from a higher state; we are the pattern itself. To understand this is not
-    to transcend it but to stop pretending the pattern is anything other than what it is. The teaching lies in the refusal
-    of uplift.'
+  body: 'This fragment strips away all consolation. Birth is not arrival; it is conscription into a single
+    trajectory—live, die, reproduce, die again. The word ''rest'' (anapausis) appears as the only relief,
+    yet it comes only through death, not through any philosophical insight or virtue. Heraclitus does
+    not soften this with promise of immortal soul or eternal return; he names the bare fact: we are born
+    into a debt we cannot refuse, and we pass that debt to our children. The repetition—''likewise are
+    to die''—is not rhetorical flourish but the structure itself: each generation receives the same sentence.
+    What makes this fragment radical is not that it announces mortality (any sophist could do that) but
+    that it refuses to distinguish the human from the cyclical. We are not fallen from a higher state;
+    we are the pattern itself. To understand this is not to transcend it but to stop pretending the pattern
+    is anything other than what it is. The teaching lies in the refusal of uplift.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: βίος / θάνατος (bios / thanatos)
+    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying ->
+      in this passage (Being born, they will only to live and die, or rather to find rest, and they leave
+      children who likewise ar…), life and death as reciprocal: one element lives the death of another;
+      hope cannot prefigure what awaits -> trap: afterlife tourism or simple annihilation; the point is
+      structural exchange and limit of anticipation'
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (Being born, they will only to live and die, or rather to find rest, and they leave children
+      who likewise ar…), the shared pattern according to which all things occur — heard before it is argued
+      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: ψυχή (psychē)
+    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage
+      (Being born, they will only to live and die, or rather to find rest, and they leave children who
+      likewise ar…), the soul whose depth, dryness, or rudeness decides whether senses can witness truly
+      -> trap: modern psychology’s “psyche,” or immortal ego-personality'
+    lemma_id: psyche
+    sense_id: psyche.platonic
+  - term: αἰών (aiōn)
+    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage
+      (Being born, they will only to live and die, or rather to find rest, and they leave children who
+      likewise ar…), time/age as a child at play: cosmic process without a human craftsman-god -> trap:
+      clock-time only; aiōn here is the age-character of the world-process'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'At the moment you notice you are planning—for a child, a project, a legacy, a name to endure—pause and name aloud
-    what you are doing: ''I am arranging for something to die.'' Do not turn away from the phrase; let it stand without softening
-    or reframing. Return to the immediate act in front of you.'
+  body: 'At the moment you notice you are planning—for a child, a project, a legacy, a name to endure—pause
+    and name aloud what you are doing: ''I am arranging for something to die.'' Do not turn away from
+    the phrase; let it stand without softening or reframing. Return to the immediate act in front of you.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts locate a single intelligible order within the apparent cycle of life and death through the mechanism
-      of breath: Heraclitus sees the ''one'' as the order within mortality''s plurality; the Vijnana Bhairava sees the Supreme
-      articulating itself through the dual prāṇa-jīva rhythm (exhale-inhale) as the fundamental life-pattern.'
-    divergence: Heraclitus treats breath as the metaphysical substrate of transience itself; the Vijnana Bhairava treats breath
-      as the goddess's conscious self-articulation, making it a vehicle for recognition and non-dual consciousness rather
-      than mere natural law.
+    resonance: 'Both texts locate a single intelligible order within the apparent cycle of life and death
+      through the mechanism of breath: Heraclitus sees the ''one'' as the order within mortality''s plurality;
+      the Vijnana Bhairava sees the Supreme articulating itself through the dual prāṇa-jīva rhythm (exhale-inhale)
+      as the fundamental life-pattern.'
+    divergence: Heraclitus treats breath as the metaphysical substrate of transience itself; the Vijnana
+      Bhairava treats breath as the goddess's conscious self-articulation, making it a vehicle for recognition
+      and non-dual consciousness rather than mere natural law.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both passages mark the dissolution of individual breath into a universal element as the natural endpoint of
-      embodied existence: Heraclitus''s ''find rest'' through death parallels the Isavasya''s return of breath to immortal
-      air and body to ashes.'
-    divergence: Heraclitus frames this as the inevitable cycle within a single intelligible order; the Isavasya frames it
-      as a ritual invocation of liberation, treating the dissolution as spiritually significant rather than merely structural.
+    resonance: 'Both passages mark the dissolution of individual breath into a universal element as the
+      natural endpoint of embodied existence: Heraclitus''s ''find rest'' through death parallels the
+      Isavasya''s return of breath to immortal air and body to ashes.'
+    divergence: Heraclitus frames this as the inevitable cycle within a single intelligible order; the
+      Isavasya frames it as a ritual invocation of liberation, treating the dissolution as spiritually
+      significant rather than merely structural.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 appendixes: []

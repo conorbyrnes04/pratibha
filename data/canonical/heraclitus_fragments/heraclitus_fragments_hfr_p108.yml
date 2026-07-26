@@ -18,21 +18,25 @@ themes:
 - self
 - silence
 source_excerpt: It is better to conceal ignorance, but it is hard to do so in relaxation and over wine.
-translation_literal: It is better to conceal ignorance, but it is hard to do so in relaxation and over wine.
-commentary: 'Heraclitus does not counsel silence as virtue. He names a gap: between what one knows and what one claims, and
-  between the vigilance required to hold that gap and the conditions—leisure, wine, warmth—that dissolve it. The fragment''s
-  force lies in its admission of difficulty, not its prescription. *Skepsis* (concealment, covering) is ''better,'' yet the
-  very relaxation that makes life livable—the symposium, the untensed body, the loosened tongue—makes concealment nearly impossible.
-  This is not a moral failing to correct but a structural fact about attention and embodiment. Wine does not make us dishonest;
-  it makes us *present*, and presence without discipline leaks truth. The teaching is not ''drink less'' but ''notice what
-  you cannot hold.'' The hard thing is not the concealment itself but the sustained self-knowledge that would make concealment
-  necessary—and the recognition that such sustained knowledge may be incompatible with the relaxation that makes us human.
-  Heraclitus is describing the cost of *logos*: to speak truly requires a tension that cannot be maintained in repose.'
+translation_literal: It is better to conceal ignorance, but it is hard to do so in relaxation and over
+  wine.
+commentary: 'Heraclitus does not counsel silence as virtue. He names a gap: between what one knows and
+  what one claims, and between the vigilance required to hold that gap and the conditions—leisure, wine,
+  warmth—that dissolve it. The fragment''s force lies in its admission of difficulty, not its prescription.
+  *Skepsis* (concealment, covering) is ''better,'' yet the very relaxation that makes life livable—the
+  symposium, the untensed body, the loosened tongue—makes concealment nearly impossible. This is not a
+  moral failing to correct but a structural fact about attention and embodiment. Wine does not make us
+  dishonest; it makes us *present*, and presence without discipline leaks truth. The teaching is not ''drink
+  less'' but ''notice what you cannot hold.'' The hard thing is not the concealment itself but the sustained
+  self-knowledge that would make concealment necessary—and the recognition that such sustained knowledge
+  may be incompatible with the relaxation that makes us human. Heraclitus is describing the cost of *logos*:
+  to speak truly requires a tension that cannot be maintained in repose.'
 insight: ''
-practice: In conversation over food or drink, speak one complete thought without qualification or hedge, then pause and notice
-  what impulse arises—to soften it, expand it, take it back, or fill the silence. Do not act on the impulse. Repeat this three
-  times in a single gathering, marking each time whether the impulse came from fear of judgment, desire to seem wiser, or
-  genuine uncertainty about what you had just said.
+practice: In conversation over food or drink, speak one complete thought without qualification or hedge,
+  then pause and notice what impulse arises—to soften it, expand it, take it back, or fill the silence.
+  Do not act on the impulse. Repeat this three times in a single gathering, marking each time whether
+  the impulse came from fear of judgment, desire to seem wiser, or genuine uncertainty about what you
+  had just said.
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -56,39 +60,73 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus does not counsel silence as virtue. He names a gap: between what one knows and what one claims, and between
-    the vigilance required to hold that gap and the conditions—leisure, wine, warmth—that dissolve it. The fragment''s force
-    lies in its admission of difficulty, not its prescription. *Skepsis* (concealment, covering) is ''better,'' yet the very
-    relaxation that makes life livable—the symposium, the untensed body, the loosened tongue—makes concealment nearly impossible.
-    This is not a moral failing to correct but a structural fact about attention and embodiment. Wine does not make us dishonest;
-    it makes us *present*, and presence without discipline leaks truth. The teaching is not ''drink less'' but ''notice what
-    you cannot hold.'' The hard thing is not the concealment itself but the sustained self-knowledge that would make concealment
-    necessary—and the recognition that such sustained knowledge may be incompatible with the relaxation that makes us human.
-    Heraclitus is describing the cost of *logos*: to speak truly requires a tension that cannot be maintained in repose.'
+  body: 'Heraclitus does not counsel silence as virtue. He names a gap: between what one knows and what
+    one claims, and between the vigilance required to hold that gap and the conditions—leisure, wine,
+    warmth—that dissolve it. The fragment''s force lies in its admission of difficulty, not its prescription.
+    *Skepsis* (concealment, covering) is ''better,'' yet the very relaxation that makes life livable—the
+    symposium, the untensed body, the loosened tongue—makes concealment nearly impossible. This is not
+    a moral failing to correct but a structural fact about attention and embodiment. Wine does not make
+    us dishonest; it makes us *present*, and presence without discipline leaks truth. The teaching is
+    not ''drink less'' but ''notice what you cannot hold.'' The hard thing is not the concealment itself
+    but the sustained self-knowledge that would make concealment necessary—and the recognition that such
+    sustained knowledge may be incompatible with the relaxation that makes us human. Heraclitus is describing
+    the cost of *logos*: to speak truly requires a tension that cannot be maintained in repose.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ἁρμονίη (harmoniē)
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
+      passage (it is better to conceal ignorance, but it is hard to do so in relaxation and over wine.),
+      tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading
+      “harmony” as conflict-avoidance or static balance'
+    lemma_id: harmonie
+    sense_id: harmonie.heraclitean
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (it is better to conceal ignorance, but it is hard to do so in relaxation and over wine.),
+      the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
+      Logos into private doctrine, mere logic, or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: φύσις (physis)
+    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop ->
+      in this passage (it is better to conceal ignorance, but it is hard to do so in relaxation and over
+      wine.), nature that loves to hide — the self-showing of things that also resists crude disclosure
+      -> trap: equating physis with “the outdoors” or a finished inventory of objects'
+    lemma_id: physis
+    sense_id: physis.greek
+  - term: σοφόν (sophon)
+    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in
+      this passage (it is better to conceal ignorance, but it is hard to do so in relaxation and over
+      wine.), wisdom apart from polymathy: knowing the one intelligent will that steers all things ->
+      trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: In conversation over food or drink, speak one complete thought without qualification or hedge, then pause and notice
-    what impulse arises—to soften it, expand it, take it back, or fill the silence. Do not act on the impulse. Repeat this
-    three times in a single gathering, marking each time whether the impulse came from fear of judgment, desire to seem wiser,
-    or genuine uncertainty about what you had just said.
+  body: In conversation over food or drink, speak one complete thought without qualification or hedge,
+    then pause and notice what impulse arises—to soften it, expand it, take it back, or fill the silence.
+    Do not act on the impulse. Repeat this three times in a single gathering, marking each time whether
+    the impulse came from fear of judgment, desire to seem wiser, or genuine uncertainty about what you
+    had just said.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Siva Sutra — Śāmbhavopāya
-    resonance: 'Both texts invert the expected value of knowledge: Heraclitus claims ignorance must be concealed (implying
-      knowledge of one''s ignorance is the real burden), while Śiva Sūtra declares ''Knowledge is bondage''—each treats cognitive
-      states as traps rather than liberations.'
-    divergence: Heraclitus frames the problem as social (concealment fails in relaxation), whereas Śāmbhavopāya identifies
-      knowledge itself as the ontological obstacle to freedom.
+    resonance: 'Both texts invert the expected value of knowledge: Heraclitus claims ignorance must be
+      concealed (implying knowledge of one''s ignorance is the real burden), while Śiva Sūtra declares
+      ''Knowledge is bondage''—each treats cognitive states as traps rather than liberations.'
+    divergence: Heraclitus frames the problem as social (concealment fails in relaxation), whereas Śāmbhavopāya
+      identifies knowledge itself as the ontological obstacle to freedom.
     passage_id: siva_sutra.ss_i_2
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both passages anchor a philosophical claim in breath as the primary register: Heraclitus embeds his aphorism
-      about ignorance in the physiological state of relaxation (breath unguarded), while Vijnana Bhairava makes prāṇa the
-      constant articulation through which reality is known.'
-    divergence: Heraclitus uses breath-state as the condition where ignorance leaks out (a failure of concealment), whereas
-      Vijnana Bhairava treats breath as the direct vehicle of supreme knowledge itself.
+    resonance: 'Both passages anchor a philosophical claim in breath as the primary register: Heraclitus
+      embeds his aphorism about ignorance in the physiological state of relaxation (breath unguarded),
+      while Vijnana Bhairava makes prāṇa the constant articulation through which reality is known.'
+    divergence: Heraclitus uses breath-state as the condition where ignorance leaks out (a failure of
+      concealment), whereas Vijnana Bhairava treats breath as the direct vehicle of supreme knowledge
+      itself.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []

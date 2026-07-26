@@ -95,3 +95,73 @@ abhyasa: The moment a thought crystallizes—'this,' 'that,' 'I want'—pause an
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: परामृतरसापायस्तस्य यः प्रत्ययोद्भवः । तेनास्वतन्त्रतामेति स च तन्मात्रगोचरः ॥ ४६ ॥ स्वरूपावरणे
+    चास्य शक्तयः सततोत्थिताः । यतः शब्दानुवेधेन न विना प्रत्ययोद्भवः ॥ ४७ ॥ सेयं क्रियात्मिका शक्तिः शिवस्य
+    पशुवर्तिनी । बन्धयित्री स्वमार्गस्था ज्ञाता सिद्ध्युपपादिका ॥ ४८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: parāmṛtarasāpāyastasya yaḥ pratyayodbhavaḥ | tenāsvatantratāmeti sa ca tanmātragocaraḥ || 46 ||
+    svarūpāvaraṇe cāsya śaktayaḥ satatotthitāḥ | yataḥ śabdānuvedhena na vinā pratyayodbhavaḥ || 47 ||
+    seyaṃ kriyātmikā śaktiḥ śivasya paśuvartinī | bandhayitrī svamārgasthā jñātā siddhyupapādikā || 48
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: Caught in the field of subtle energies and mental representations, the supreme ambrosia is dissolved,
+    and the person forgets his innate freedom.
+- kind: commentary
+  label: Pratibha Commentary
+  body: The power of the word is always ready to veil the profound nature of the Self because no mental
+    representation can free itself from language. The energy of the sacred tremor that passes through
+    the vulgar person enslaves him, whereas this same energy liberates the person who is on the path.
+    When we direct our powerfulness outwardly, we fall into the nets of mental representations, we create
+    limited objectives, and then we seek to attain them—thereby losing the memory itself of original completeness.
+    Words, teachings, viewpoints, all come along to enchain us always more tightly to the limited. Everything
+    is adulterated by the mental processes, which instantaneously transform the absolute teaching into
+    an object to be seized. And the teaching of Mahamudra cannot be seized; it can only emerge from our
+    own heart in the grace and the lightness of total abandon.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: pratyaya (प्रत्यय)
+    definition: prati + √i → cognition/mental presentation → A determinate, object-directed cognition
+      or thought — the discrete mental content that narrows awareness onto a single thing → ‘idea/belief’
+      flattens a momentary knowing that arises and passes
+  - term: śabdānuvedha (शब्दानुवेध)
+    definition: śabda + anuvedha ‘piercing/through-and-through’ → the 'threading' or permeation of every
+      thought by language; the way words structure and thereby limit all cognition → ‘pierced by sound’—mantric
+      permeation, not loud noise
+  - term: kriyāśakti (क्रियाशक्ति)
+    definition: kriyā + śakti → the power of action; the one energy of consciousness that binds when turned
+      outward but liberates when recognized as resting in its own source (Śiva) → not ‘ability to act’—the
+      free power-to-enact of consciousness
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 12
+    resonance: 'Both texts locate bondage in a forgetting of one''s own authorial power: the Spandakarika
+      shows the Self forgetting its innate freedom when caught in mental representations, while the Pratyabhijnahrdayam
+      identifies transmigration as bewilderment by one''s own powers through ignorance of one''s authorship
+      of the fivefold act. Each describes a self-imposed veiling of agency.'
+    divergence: The Spandakarika emphasizes the entanglement in subtle energies and language as the mechanism
+      of forgetting, while Pratyabhijnahrdayam frames it as ignorance of one's role as the author of cosmic
+      manifestation itself—a metaphysical rather than phenomenological account.
+    passage_id: pratyabhijnahrdayam.phr_012
+  - citation: Astavakra Gita — Verse 2.7
+    resonance: Both texts identify bondage as a condition of mental reactivity—the Spandakarika shows
+      freedom lost through capture in mental representations, while the Astavakra Gita defines bondage
+      as the mind's oscillation between desire, grief, grasping, and anger. Each locates the binding mechanism
+      in the mind's entanglement with its own movements.
+    divergence: The Spandakarika emphasizes the role of subtle energies and language in veiling the Self's
+      nature, whereas the Astavakra Gita treats bondage as purely a function of mental states independent
+      of energetic or linguistic mediation.
+    passage_id: astavakra_gita.asg_2_7
+  layer_provenance: generated_grounded

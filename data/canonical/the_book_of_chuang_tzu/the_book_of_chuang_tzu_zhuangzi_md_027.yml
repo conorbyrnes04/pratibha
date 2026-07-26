@@ -132,3 +132,114 @@ abhyasa: 'When someone speaks to you today, listen for the moment you feel yours
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '寓言十九，重言十七，卮言日出，和以天倪。
+
+    寓言十九，藉外論之。
+
+    親父不為其子媒。
+
+    親父譽之，不若非其父者也；
+
+    非吾罪也，人之罪也。
+
+    與己同則應，不與己同則反；
+
+    同於己為是之，異於己為非之。
+
+    重言十七，所以己言也。
+
+    是為耆艾，年先矣，而無經緯本末以期年耆者，是非先也。
+
+    人而無以先人，無人道也；
+
+    人而無人道，是之謂陳人。
+
+    卮言日出，和以天倪，因以曼衍，所以窮年。
+
+    不言則齊，齊與言不齊，言與齊不齊也。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Goblet words pour forth day by day, harmonized with heaven''s unmarked limit. Because they spread
+    on all sides, they endure through the year. Without words, all things equalize; equalization and words
+    are not equalized, words and equalization are not equalized. Therefore it is said: ''No words.'' To
+    speak of no-words—speaking all your life, you never cease speaking; not speaking all your life, you
+    never cease speaking. There is a self that can be, a self that cannot be; a self that is so, a self
+    that is not so. Where does this so-ness come from? It comes from so-ness itself. Where does this not-so-ness
+    come from? It comes from not-so-ness itself.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Zhuangzi claims that language achieves permanence only when it abandons the speaker''s authority
+    and flows from an inexhaustible source aligned with heaven''s unmarked boundaries (tiān nì 天倪). The
+    contested move here is the paradox of utterance: speaking and not-speaking become indistinguishable
+    because both emerge from a self that is neither the subject''s possession nor its negation. This dissolves
+    the Confucian anxiety about authenticity—the speaker need not guarantee truth because the goblet empties
+    itself.
+
+
+    Key Terms:
+
+
+    **卮言 zhī yán** - goblet-words; utterance from an inexhaustible vessel → language that flows without
+    the speaker''s intentional control → the stakes: abandoning authorial responsibility as a condition
+    of linguistic permanence
+
+    **天倪 tiān nì** - heaven''s seam/unmarked boundary; the imperceptible hinge where distinctions arise
+    → alignment with natural process → the stakes: speech harmonizes with what precedes differentiation
+    itself
+
+    **齊 qí** - equalize/make uniform; to render all things as one → the state prior to language''s divisive
+    work → the stakes: returning utterance to undifferentiated potential'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: zhī yán (卮言)
+    definition: '卮言 “goblet words” — speech that tips and rights itself, inexhaustible like a wine vessel
+      -> in this passage (the Goblet Words: Speaking from the Inexhaustible), language that does not harden
+      into fixed theses; words that pour with the situation -> trap: relativist chatter; goblet words
+      are a disciplined flexible speaking, not empty irony'
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (the Goblet Words: Speaking from the Inexhaustible), the nameless source-and-course
+      that lets beings move by their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed
+      doctrine one can possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: qí wù (齊物)
+    definition: '齊 “level/make even” + 物 “things/beings” -> in this passage (the Goblet Words: Speaking
+      from the Inexhaustible), equalizing things: leveling standpoint claims so this/that lose absolute
+      privilege -> trap: abstract logical identity of opposites; qí wù is perspectival liberation, not
+      flattening reality'
+    lemma_id: qi_wu
+    sense_id: qi_wu.zhuangzi
+  - term: zìrán (自然)
+    definition: '自然 “self-so” — thus-of-itself, not “picturesque nature” -> in this passage (the Goblet
+      Words: Speaking from the Inexhaustible), spontaneous so-ness: things unfolding without forced contrivance
+      -> trap: Romantic wilderness aesthetics; zìrán is ontological non-forcing, not scenery'
+    lemma_id: ziran
+    sense_id: ziran.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Heraclitus, Fragment 50: ''listening not to me but to the logos'''
+    resonance: both thinkers locate truth in an impersonal flow that precedes the speaker's claim; both
+      use paradox (speaking/not-speaking; listening to logos not Heraclitus) to mark this displacement
+    divergence: Heraclitus preserves a cosmic rational principle (logos); Zhuangzi's tiān nì is unmarked
+      and prior to rationality itself
+    passage_id: ''
+  - citation: 'Daoism, Daodejing 1: ''The Dao that can be spoken is not the eternal Dao'''
+    resonance: both reject language's capacity to capture ultimate reality; both propose silence or paradoxical
+      utterance as the only honest response
+    divergence: Zhuangzi's goblet words *do* speak endlessly without contradiction; the DDJ maintains
+      an absolute gap between naming and being
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'For one week, when you speak, notice the moment before words arrive—the pause where you have
+    not yet chosen which words to use. Do not try to ''speak from the goblet'' or ''align with heaven''s
+    boundary.'' Simply observe: are you the author of the words, or do they flow through you? Record one
+    instance where you spoke and could not afterward explain why those words came.'

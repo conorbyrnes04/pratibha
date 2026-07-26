@@ -12,20 +12,23 @@ themes:
 - desire
 source_excerpt: Every animal is driven by blows.”
 translation_literal: Every animal is driven by blows.”
-commentary: 'The fragment arrests us with a single verb: *driven* (ἐλαύνεται). Not reasoned into motion, not choosing—driven.
-  Heraclitus refuses the comfort of agency. Every animal, not some, not the base ones: the claim is total and includes the
-  observer. What does it mean to be driven by blows (πληγαί)? Not metaphorically soft pressure, but impact—collision, rupture,
-  the force that breaks stasis. The fragment does not say animals are *made* by blows or *shaped* by them; it says they are
-  *driven*—perpetually in motion because perpetually struck. This inverts the usual hierarchy: the blow is not accident or
-  punishment but the fundamental condition. To be animal is to be the recipient of force, to be always already in response.
-  The logos here is not a law of becoming but a diagnosis of what it means to live: no creature moves from its own center.
-  The teaching cuts deeper than mechanism—it names a kind of humility written into flesh itself. Heraclitus does not console.
-  He asks: what happens when you stop pretending you are the source of your own motion?'
+commentary: 'The fragment arrests us with a single verb: *driven* (ἐλαύνεται). Not reasoned into motion,
+  not choosing—driven. Heraclitus refuses the comfort of agency. Every animal, not some, not the base
+  ones: the claim is total and includes the observer. What does it mean to be driven by blows (πληγαί)?
+  Not metaphorically soft pressure, but impact—collision, rupture, the force that breaks stasis. The fragment
+  does not say animals are *made* by blows or *shaped* by them; it says they are *driven*—perpetually
+  in motion because perpetually struck. This inverts the usual hierarchy: the blow is not accident or
+  punishment but the fundamental condition. To be animal is to be the recipient of force, to be always
+  already in response. The logos here is not a law of becoming but a diagnosis of what it means to live:
+  no creature moves from its own center. The teaching cuts deeper than mechanism—it names a kind of humility
+  written into flesh itself. Heraclitus does not console. He asks: what happens when you stop pretending
+  you are the source of your own motion?'
 insight: ''
-practice: 'When struck by irritation, pain, desire, or sudden thought today—when you feel the blow—pause and name it aloud
-  or internally: *this is the driving force now*. Do not resist it or claim it; do not spiritualize it into lesson. Notice
-  instead the exact shape of the impact: where in the body, what texture, what it compels you toward. Repeat this naming three
-  times through the day, each time meeting the blow as the primary fact, not as interruption.'
+practice: 'When struck by irritation, pain, desire, or sudden thought today—when you feel the blow—pause
+  and name it aloud or internally: *this is the driving force now*. Do not resist it or claim it; do not
+  spiritualize it into lesson. Notice instead the exact shape of the impact: where in the body, what texture,
+  what it compels you toward. Repeat this naming three times through the day, each time meeting the blow
+  as the primary fact, not as interruption.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -42,39 +45,63 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment arrests us with a single verb: *driven* (ἐλαύνεται). Not reasoned into motion, not choosing—driven.
-    Heraclitus refuses the comfort of agency. Every animal, not some, not the base ones: the claim is total and includes the
-    observer. What does it mean to be driven by blows (πληγαί)? Not metaphorically soft pressure, but impact—collision, rupture,
-    the force that breaks stasis. The fragment does not say animals are *made* by blows or *shaped* by them; it says they
-    are *driven*—perpetually in motion because perpetually struck. This inverts the usual hierarchy: the blow is not accident
-    or punishment but the fundamental condition. To be animal is to be the recipient of force, to be always already in response.
-    The logos here is not a law of becoming but a diagnosis of what it means to live: no creature moves from its own center.
-    The teaching cuts deeper than mechanism—it names a kind of humility written into flesh itself. Heraclitus does not console.
-    He asks: what happens when you stop pretending you are the source of your own motion?'
+  body: 'The fragment arrests us with a single verb: *driven* (ἐλαύνεται). Not reasoned into motion, not
+    choosing—driven. Heraclitus refuses the comfort of agency. Every animal, not some, not the base ones:
+    the claim is total and includes the observer. What does it mean to be driven by blows (πληγαί)? Not
+    metaphorically soft pressure, but impact—collision, rupture, the force that breaks stasis. The fragment
+    does not say animals are *made* by blows or *shaped* by them; it says they are *driven*—perpetually
+    in motion because perpetually struck. This inverts the usual hierarchy: the blow is not accident or
+    punishment but the fundamental condition. To be animal is to be the recipient of force, to be always
+    already in response. The logos here is not a law of becoming but a diagnosis of what it means to live:
+    no creature moves from its own center. The teaching cuts deeper than mechanism—it names a kind of
+    humility written into flesh itself. Heraclitus does not console. He asks: what happens when you stop
+    pretending you are the source of your own motion?'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (every animal is driven by blows.”), the shared pattern according to which all things occur
+      — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only
+      the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: δίκη (dikē)
+    definition: 'δίκη “justice, due order, right allotment” -> in this passage (every animal is driven
+      by blows.”), cosmic justice that polices measures — the Erinyes as helpers when bounds are overstepped
+      -> trap: courtroom morality alone; here dikē is cosmological proportion, not only human law'
+  - term: νόμος (nomos)
+    definition: 'νόμος “law, custom, allotted order” -> in this passage (every animal is driven by blows.”),
+      civic/cosmic law worth defending as walls are — shared order that makes a people -> trap: arbitrary
+      statute; Heraclitus binds nomos to divine/common measure'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'When struck by irritation, pain, desire, or sudden thought today—when you feel the blow—pause and name it aloud or
-    internally: *this is the driving force now*. Do not resist it or claim it; do not spiritualize it into lesson. Notice
-    instead the exact shape of the impact: where in the body, what texture, what it compels you toward. Repeat this naming
-    three times through the day, each time meeting the blow as the primary fact, not as interruption.'
+  body: 'When struck by irritation, pain, desire, or sudden thought today—when you feel the blow—pause
+    and name it aloud or internally: *this is the driving force now*. Do not resist it or claim it; do
+    not spiritualize it into lesson. Notice instead the exact shape of the impact: where in the body,
+    what texture, what it compels you toward. Repeat this naming three times through the day, each time
+    meeting the blow as the primary fact, not as interruption.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: 'Both texts locate transformative consciousness in the body''s dynamic tension or pressure: Heraclitus compresses
-      all animal motion into ''blows'' (external force), while Yukti #37 locates awakening in the sanghaṭṭa (dynamic tension)
-      between prāṇas at the breath''s termination. Each makes bodily constraint or impact the engine of awareness.'
-    divergence: Heraclitus treats blows as cosmic necessity driving all beings; the Vijnana Bhairava treats prāṇic tension
-      as a yogic technique the practitioner consciously harnesses for liberation.
+    resonance: 'Both texts locate transformative consciousness in the body''s dynamic tension or pressure:
+      Heraclitus compresses all animal motion into ''blows'' (external force), while Yukti #37 locates
+      awakening in the sanghaṭṭa (dynamic tension) between prāṇas at the breath''s termination. Each makes
+      bodily constraint or impact the engine of awareness.'
+    divergence: Heraclitus treats blows as cosmic necessity driving all beings; the Vijnana Bhairava treats
+      prāṇic tension as a yogic technique the practitioner consciously harnesses for liberation.
     passage_id: vijnana_bhairava.yukti_037
   - citation: Bhagavad Gita — Yajna as the Ecology of Action
-    resonance: 'Both texts reframe compulsion or external force as the condition for consciousness and liberation: Heraclitus''s
-      ''blows'' drive every animal; the Gita''s yajna reframes action-as-compulsion into liberative participation when redirected
-      toward the larger order. Each moves from passive suffering to active alignment.'
-    divergence: Heraclitus presents blows as impersonal cosmic fact; the Gita offers a voluntary ethical reorientation of
-      action toward reciprocal duty and cosmic order.
+    resonance: 'Both texts reframe compulsion or external force as the condition for consciousness and
+      liberation: Heraclitus''s ''blows'' drive every animal; the Gita''s yajna reframes action-as-compulsion
+      into liberative participation when redirected toward the larger order. Each moves from passive suffering
+      to active alignment.'
+    divergence: Heraclitus presents blows as impersonal cosmic fact; the Gita offers a voluntary ethical
+      reorientation of action toward reciprocal duty and cosmic order.
     passage_id: bhagavad_gita.bg_md_003
   layer_provenance: generated_grounded
 appendixes: []

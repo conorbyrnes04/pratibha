@@ -157,3 +157,82 @@ section: III.1268–1274
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'در کف هر کس اگر شمعی بدی /// اختلاف از گفتشان بیرون شدی
+
+    چشم حس همچون کف دستست و بس /// نیست کف را بر همه‌ی او دست‌رس
+
+    چشم دریا دیگرست و کف دگر /// کف بهل وز دیده‌ی دریا نگر
+
+    جنبش کفها ز دریا روز و شب /// کف همی‌بینی و دریا نه عجب
+
+    ما چو کشتیها بهم بر می‌زنیم /// تیره‌چشمیم و در آب روشنیم
+
+    ای تو در کشتی تن رفته به خواب /// آب را دیدی نگر در آب آب
+
+    آب را آبیست کو می‌راندش /// روح را روحیست کو می‌خواندش'
+- kind: iast
+  label: Transliteration note
+  body: Persian — see Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: 'If each had held a candle, difference would have left their speech. The sense-eye is only a palm
+    — the palm cannot reach the whole. The Sea''s eye is one thing, foam another: leave the foam and look
+    with the Sea''s eye. Foam moves from the Sea day and night — you see foam, not Sea: marvel! We collide
+    like boats, dark-eyed though in clear water. O you asleep in the body''s boat — you have seen water;
+    look at the Water of water. Water has a Water that drives it; spirit has a Spirit that calls it.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The candle is shared illumination; the Sea''s eye is a different organ than sense. Nested waters
+    and spirits refuse stopping at the first layer. Existentially: stop polishing foam-arguments; ask
+    for the seeing that makes quarrel unnecessary.
+
+
+    Key Terms
+
+
+    **شمع shamʿ** — candle; shared light ending quarrel.
+
+
+    **چشم دریا** — Sea''s eye; non-partial vision.
+
+
+    **آب آب** — Water of water; source within source.
+
+
+    **روح را روحی** — a Spirit calling the spirit.
+
+
+    Cross-Tradition Resonances
+
+
+    **Plotinus (One beyond intellect / nested procession):** Both push past surface seeing.
+
+    *Divergence:* Plotinus''s ascent is contemplative stripping; Rūmī''s images stay narrative and oceanic.
+
+
+    **Eckhart (empty for God''s writing):** Both require a cleared receptive organ.
+
+    *Divergence:* Eckhart''s blank tablet is readiness; Rūmī''s candle is communal illumination of one
+    elephant.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: Return
+      to this shift whenever you find yourself in disagreement today: palm-sight versus sea-sight. Trap:
+      erotic fusion fantasy without the discipline of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: rūḥ (روح)
+    definition: '‘spirit’ → the living breath that remembers God and suffers exile in form Here: Water
+      has a Water that drives it; spirit has a Spirit that calls it. Trap: ghostly ‘spirit’ without ethical/ontological
+      force'
+    lemma_id: psyche
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: 'In silence for five minutes, each time a partial judgment arises, whisper: foam. Return to breath
+    as if looking for the Water of water.'

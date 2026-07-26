@@ -93,3 +93,100 @@ abhyasa: Throughout today, whisper "I do not harm" each time you notice yourself
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: अहिंसासत्यास्तेयब्रह्मचार्यापरिग्रहाः यमाः
+- kind: iast
+  label: IAST
+  body: ahiṃsāsatyāsteyabrahmacaryāparigrahā yamāḥ
+- kind: translation
+  label: Pratibha Translation
+  body: You practice non‑violence, truth, celibacy, and restraint, thereby abstaining from killing, lying,
+    theft, incontinence, and greed.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim here is that the yama of ahimsa is not merely a set of prohibitions but a dynamic regulation
+    of mind, body, and speech that aligns the practitioner with the subtle order of prakṛti. The contested
+    move is the identification of ‘killing’ with the broader notion of ‘harming the self‑sustaining life‑force’
+    rather than literal murder. In the Sāṃkhya framework, ahimsa functions as a gatekeeper that prevents
+    the mind from re‑entangling with the material world, thereby preserving the purity of puruṣa. This
+    aligns with the Dvivedi emphasis on abstaining from animal food, which he sees as a direct violation
+    of ahimsa. Yet, unlike the Dvivedi, I read the injunction as a preventive measure against the *inward*
+    violence that arises when one feeds the ego’s cravings. The existential application is clear: by mastering
+    the yama, one cultivates a mental state that is free from the habitual *vṛtti* of craving and aversion,
+    thereby opening the path to samādhi. This is consistent with the Yoga Sutra’s broader aim of purifying
+    the mind so that it can perceive the true nature of puruṣa, untainted by prakṛti’s fluctuations.
+
+
+    Key Terms
+
+
+    **ahimsa (अहिंसा)** — ‘non‑violence’ -> Sāṃkhya: avoidance of harm to all living beings; Yoga: regulation
+    of mind, body, speech to prevent re‑entanglement with prakṛti
+
+
+    **yama (यम)** — ‘ethical restraint’ -> Sāṃkhya: external conditions that preserve puruṣa’s distinctness;
+    Yoga: five moral precepts that purify the mind
+
+
+    **prakṛti (प्रकृति)** — ‘primordial nature’ -> Sāṃkhya: material cause of all phenomena; Yoga: the
+    dynamic aspect that must be subdued for samādhi
+
+
+    **purusha (पुरुष)** — ‘consciousness’ -> Sāṃkhya: the passive, unchanging witness; Yoga: the subject
+    that observes the mind’s fluctuations
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sutra 1.1, 1.2:** Both sutras introduce the foundational distinction between puruṣa and prakṛti,
+    establishing the need for ethical discipline to prevent the mind from re‑entanglement
+
+    *Divergence:* While 1.1 focuses on the *definition* of puruṣa, 2.30 specifies the *practical means*
+    (yama) to maintain that distinction
+
+
+    **Sāṃkhya Karika 4.1:** Both texts emphasize the role of ahimsa in preserving the purity of puruṣa
+
+    *Divergence:* Karika presents ahimsa as a philosophical principle, whereas YS 2.30 frames it as a
+    lived practice
+
+
+    **Māyāyāna Yogācāra, Vijnaptivāda 2.1:** Both treat the mind’s fluctuations (vṛtti) as obstacles to
+    liberation
+
+    *Divergence:* Yogācāra attributes the cause to ignorance (avidyā), while YS 2.30 attributes it to
+    the failure of yama'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: brahmacarya (ब्रह्मचर्य)
+    definition: 'brahman + carya ‘moving in the sacred/continuum’ -> in “Forbearance in Practice”: You
+      practice non‑violence, truth, celibacy, and restraint, thereby abstaining from killing, lying, theft,
+      incontinenc… -> not only celibacy slogan; energy-conservation and fidelity of orientation'
+  - term: aparigraha (अपरिग्रह)
+    definition: 'a- + pari-graha ‘non-grasping/hoarding’ -> in “Forbearance in Practice”: freedom from
+      possessiveness, greed, and the compulsive accumulation of objects or relationships -> not aesthetic
+      minimalism; release of acquisitive clutch that clarifies why one is born as one is'
+  - term: ahiṃsā (अहिंसा)
+    definition: 'a- + hiṃsā ‘non-injury’ -> in “Forbearance in Practice”: regulation of mind, body, speech
+      to prevent re‑entanglement with prakṛti -> not passivity; active non-harm that ripens into ambient
+      safety (pratishṭhā)'
+  - term: asteya (अस्तेय)
+    definition: 'a- + steya ‘non-stealing’ -> in “Forbearance in Practice”: You practice non‑violence,
+      truth, celibacy, and restraint, thereby abstaining from killing, lying, theft, incontinenc… -> not
+      only property law; non-appropriation that includes subtle taking of credit/energy'
+  - term: satya (सत्य)
+    definition: 'sat ‘what is’ → truthfulness aligned with being -> in “Forbearance in Practice”: You
+      practice non‑violence, truth, celibacy, and restraint, thereby abstaining from killing, lying, theft,
+      incontinenc… -> not bluntness; speech and knowing that do not distort what is'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You abstain from actions, words, and thoughts that harm any living being, thereby cultivating
+    non‑violence in body, speech, and mind.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: Forbearance consists in abstaining from

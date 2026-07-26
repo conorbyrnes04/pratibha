@@ -108,3 +108,102 @@ abhyasa: Walk to the lowest point in your home or a nearby space—a basement, g
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '江海所以能為百谷王者，以其善下之，故能為百谷王。
+
+    是以聖人欲上民，必以言下之；
+
+    欲先民，必以身後之。
+
+    是以聖人處上而民不重，處前而民不害。
+
+    是以天下樂推而不厭。
+
+    以其不爭，故天下莫能與之爭。'
+- kind: translation
+  label: Pratibha Translation
+  body: The river and the sea are able to be the kings of all the valleys because they are good at being
+    lower than them; therefore they are the kings of all the valleys. Thus the sage, wishing to be above
+    the people, must put his words below them; wishing to be before the people, he must put his body behind
+    them. Thus the sage, when he is above, the people do not feel his weight; when he is before, the people
+    do not feel harm. Thus the world delights in praising him and never tires of him. Because he does
+    not contend, the world cannot contend with him.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that true authority is exercised through humility and withdrawal, a stance
+    that has long been contested by political theorists who favor assertive leadership. The move—placing
+    one’s words and deeds below or behind the people—turns conventional power dynamics on their head,
+    suggesting that the most effective ruler is one who is unseen and unthreatening. By aligning his speech
+    beneath the populace and his actions behind them, the sage mirrors the river’s yielding nature, thereby
+    inviting the world to follow without resistance. The paradox lies in the idea that the highest position
+    is attained by the lowest posture, a concept that challenges the dominant narratives of active domination
+    in governance.
+
+
+    The passage also offers a subtle critique of forceful leadership. When the sage refrains from conflict,
+    he creates an environment where people willingly submit, not out of fear but because there is no perceived
+    threat. This resonates with contemporary discussions on soft power, where influence is exerted through
+    attraction rather than coercion. The text’s insistence on non‑confrontation as a source of lasting
+    authority underscores the Daoist belief that the most enduring power is that which does not seek to
+    impose itself.
+
+
+    Key Terms:
+
+
+    **dào (道)** — the fundamental principle of the universe; the way that all things follow
+
+    **wúwéi (無爲)** — non‑action; the art of acting without forcing; aligning with natural flow
+
+    **dé (德)** — virtue or moral power that arises from living in harmony with dào
+
+    **zìrán (自然)** — nature; spontaneous order; the state of being in accord with the natural world'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “The Quiet Sovereign”: The sage or realized person,
+      the ideal of one who acts in accord with the dào -> not canonized saint; the one who acts by emptying
+      self-assertion so the world orders itself'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Quiet Sovereign”: The
+      river and the sea are able to be the kings of all the valleys because they are good at being lower
+      than them; the… -> not only ‘the world’ as map; the realm that cannot be seized by contrivance'
+  - term: bùzhēng (不爭)
+    definition: '不 ‘not’ + 爭 ‘contend/strive’ -> in “The Quiet Sovereign”: declining to compete or struggle
+      for position, which paradoxically makes one unopposable -> not conflict-avoidant niceness; non-contention
+      as the mode that none can contend with'
+  - term: shēn (身)
+    definition: '身 ‘body/person/self-as-lived’ -> in “The Quiet Sovereign”: The river and the sea are
+      able to be the kings of all the valleys because they are good at being lower than them; the… ->
+      not corpse anatomy only; the vulnerable personhood one can lose by clinging to empire/self'
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Quiet Sovereign”: the fundamental principle of
+      the universe -> not a deity named Tao or a lifestyle brand — source-and-course that resists full
+      naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus, ‘On the Nature of Things’
+    resonance: Both emphasize that true power is found in yielding rather than force
+    divergence: Heraclitus speaks of flux; Tao Te Ching speaks of stillness
+    passage_id: ''
+  - citation: Confucius, Analects 2.17
+    resonance: Both discuss the ruler’s relationship to the people
+    divergence: Confucius advocates active benevolence; Tao Te Ching advocates passive humility
+    passage_id: ''
+  - citation: Machiavelli, The Prince, chapter 15
+    resonance: Both address the appearance of power
+    divergence: Machiavelli endorses deception; Tao Te Ching endorses genuine humility
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet place, breathe slowly, and imagine your words and actions flowing like a river
+    beneath the surface. When you speak or act, do so with the awareness that you are supporting rather
+    than dominating, allowing others to feel unburdened by your presence.

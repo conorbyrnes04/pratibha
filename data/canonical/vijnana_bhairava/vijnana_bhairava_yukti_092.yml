@@ -82,3 +82,76 @@ abhyasa: Sit comfortably and let your eyes rest on a single object a few feet aw
   even when it isn't knowing any particular thing. Stay there as long as it holds.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: क्वचिद् वस्तुनि विन्यस्य शनैर् दृष्टिं निवर्तयेत् । तज् ज्ञानं चित्तसहितं देवि शून्यालायो भवेत्
+    ॥ १२० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kvacid vastuni vinyasya śanair dṛṣṭiṃ nivartayet | taj jñānaṃ cittasahitaṃ devi śūnyālāyo bhavet
+    || 120 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #92
+
+    Fix the gaze on some object, then slowly withdraw it, then the
+
+    cognitive impression of it, then the heart-mind [itself]: O Goddess,
+
+    one [who practices this] becomes an abode of spaciousness (śūnya). || 120'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śūnya (शून्य)
+    definition: śūnya ‘empty/void’ → emptiness or open spaciousness—not mere absence, but the contentless
+      ground of awareness itself → English ‘void’ suggests blank vacancy; here a threshold that can disclose
+      knowing
+    lemma_id: sunya
+    sense_id: sunya.shaiva
+  - term: citta (चित्त)
+    definition: √cit → mind-stream/functional mind → the mind or mental faculty that fastens onto and
+      processes objects of perception → ‘mind’ blurs citta (stream) with cit (knowingness)
+    lemma_id: citta
+    sense_id: citta.shaiva
+  - term: śūnyālaya (शून्यालय)
+    definition: śūnya + ālaya ‘abode’ → 'Abode of emptiness'—the state of becoming the dwelling place
+      of that open spaciousness rather than merely observing it → ‘abode of void’—resting in emptiness
+      as home, not annihilatory blank
+    lemma_id: sunya
+    sense_id: sunya.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: Both texts prescribe a sequential gathering of attention inward—Yukti 92 withdraws gaze→impression→heart-mind;
+      Svetasvatara gathers senses and mind into the heart—culminating in a unified interior state (spaciousness
+      vs. crossing fear via Brahman's boat).
+    divergence: Yukti 92 emphasizes the knower's self-recognition through negation of content; Svetasvatara
+      frames the gathering as alignment of body-neck-head toward a transcendent principle (Brahman) rather
+      than resting in the subject itself.
+    passage_id: svetasvatara_upanishad.svu_009
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: 'Both locate the generative moment in the heart-mind: Yukti 92 rests awareness in the heart-mind
+      to become spaciousness; Siva Sutra identifies the heart as the collision-point where mind''s movement
+      produces all appearances (like dreams).'
+    divergence: Yukti 92 treats the heart-mind as the stable ground of emptiness; Siva Sutra treats it
+      as the dynamic locus of manifestation, where appearances continuously arise from mind's collision.
+    passage_id: siva_sutra.ss_i_15
+  - citation: Shantideva Bodhicaryavatara — Stillness Before Insight
+    resonance: 'Both establish a prerequisite inward steadying before insight: Yukti 92''s withdrawal
+      of attention to the knower parallels Shantideva''s gathering of energy into concentrated mind as
+      the foundation for liberation from affliction.'
+    divergence: Yukti 92 emphasizes the direct recognition of the subject-as-spaciousness; Shantideva
+      frames steadiness as a defensive posture against the kleśas, requiring sustained vīrya before insight
+      can arise.
+    passage_id: shantideva_bodhicaryavatara.bca_08_solitude
+  layer_provenance: generated_grounded

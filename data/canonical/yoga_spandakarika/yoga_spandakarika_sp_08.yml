@@ -99,3 +99,76 @@ abhyasa: Beneath your next moment of restlessness or the feeling that something 
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: न हीच्छानोदनस्यायं प्रेरकत्वेन वर्तते । अपि त्वात्मबलस्पर्शात्पुरुषस्तत्समो भवेत् ॥ ८ ॥ निजाशुद्ध्यासमर्थस्य
+    कर्तव्येष्वभिलाषिणः । यदा क्षोभः प्रलीयेत तदा स्यात्परमं पदम् ॥ ९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: na hīcchānodanasyāyaṃ prerakatvena vartate | api tvātmabalasparśātpuruṣastatsamo bhavet || 8 ||
+    nijāśuddhyāsamarthasya kartavyeṣvabhilāṣiṇaḥ | yadā kṣobhaḥ pralīyeta tadā syātparamaṃ padam || 9
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: Therefore, the person who rediscovers this essential sacred tremor of consciousness escapes the
+    dim confusion of limited desire. Liberated in this way from the multiplicity of impulses tied to the
+    ego, he experiences the supreme state.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Desire, liberated from its ties to the ego, realizes that it has no other aspiration than the
+    fullness of Mahamudra and, as it sees in the same impulse that this plenitude is innate and limitless,
+    it no longer aspires to any realization whatsoever. There is no longer anything but intimate vibration,
+    continuous sacred tremoring, and the absence of localization in time and space. This is the integration
+    of Mahamudra. Right from the start, situate yourself outside of spiritual progression, Outside of
+    meditation on the divinities,
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness underlying every perception,
+      feeling, and gap in experience → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness
+      itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: ātmabala (आत्मबल)
+    definition: ātman + bala → the strength or power of the Self; the felt vitality of one's own being,
+      contact with which awakens identity with spanda → ‘willpower’ misses the innate power of the Self
+    lemma_id: atman
+    sense_id: atman.shaiva
+  - term: kṣobha (क्षोभ)
+    definition: √kṣubh ‘shake’ → agitation → agitation or churning of the mind that muddies clear awareness;
+      its dissolution reveals the supreme state → ‘stress’ psychologizes the shake that can reveal or
+      obscure spanda
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Close the eyes for 2 minutes and release all labels. Repeatedly return to the immediate sense
+    'I am aware' without adding any story.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 4.24
+    resonance: 'Both texts locate desire''s liberation in recognition of a transcendent principle that
+      desire serves: the Spandakarika shows desire realizing it aspires only to Mahamudra''s fullness,
+      while Patañjali shows mind-stuff existing ''for another purpose'' (Puruṣa), revealing desire''s
+      true object lies beyond itself.'
+    divergence: The Spandakarika frames this as desire's self-recognition of its own innate plenitude,
+      while Patañjali posits an ontological duality where mind-stuff serves an external, witnessing consciousness.
+    passage_id: patañjali_yoga_sūtras.ys_4_24
+  - citation: Astavakra Gita — Verse 1.9
+    resonance: 'Both employ a direct realization that dissolves the ego-bound confusion of limited desire:
+      the Spandakarika describes escaping ''dim confusion of limited desire'' through rediscovering sacred
+      tremor, while Astavakra prescribes burning ignorance with the certainty ''I am pure consciousness,''
+      both treating ego-contraction as the obstacle and non-dual recognition as the liberation.'
+    divergence: The Spandakarika emphasizes vibration and innate plenitude as the vehicle of recognition,
+      while Astavakra employs the fire of intellectual certainty and negation of the forest of ignorance.
+    passage_id: astavakra_gita.asg_1_9
+  - citation: 'Vijnana Bhairava — Yukti #77'
+    resonance: 'Both move from limited, localized consciousness to recognition of consciousness as all-pervasive
+      and undivided: the Spandakarika shows desire recognizing the ''limitless'' fullness of Mahamudra,
+      while Vijnana Bhairava''s Yukti 77 contemplates consciousness as manifest everywhere, dissolving
+      the boundary between self and all.'
+    divergence: The Spandakarika grounds this in desire's own aspiration and innate nature, while Vijnana
+      Bhairava uses deliberate contemplative technique (yukti) to deconstruct the illusion of localization.
+    passage_id: vijnana_bhairava.yukti_077
+  layer_provenance: generated_grounded

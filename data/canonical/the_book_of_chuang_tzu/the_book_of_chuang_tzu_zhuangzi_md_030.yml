@@ -121,3 +121,105 @@ abhyasa: 'Hold the object of your fixation (the habit, craving, or grievance) in
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '昔趙文王喜劍，劍士夾門而客三千餘人，日夜相擊於前，死傷者歲百餘人，好之不厭。
+
+    如是三年，國衰，諸侯謀之。
+
+    太子悝患之，募左右曰：「孰能說王之意止劍士者，賜之千金。
+
+    」左右曰：「莊子當能。
+
+    」太子乃使人以千金奉莊子。
+
+    莊子弗受，與使者俱，往見太子，曰：「太子何以教周，賜周千金？
+
+    」太子曰：「聞夫子明聖，謹奉千金以幣從者。
+
+    夫子弗受，悝尚何敢言﹗」莊子曰：「聞太子所欲用周者，欲絕王之喜好也。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'The sage said: "I possess three swords. Which shall the king employ? First, the Celestial Sword:
+    its point is the stone of Yan-creek, its edge the peaks of Qi, its spine the ridges of Jin-Wei, its
+    crossguard the lands of Zhou-Song, its grip the territories of Han-Zhao. Wrapped in the four quarters,
+    bound by the four seasons, girdled by the Bohai Sea, belted by Constant Mountain—forged by the five
+    phases, ordered by punishment and virtue, opened by yin-yang, held by spring-summer, moved by autumn-winter.
+    This sword, when thrust forward, meets no resistance; when raised, nothing stands above; when pressed
+    down, nothing lies beneath; when turned, nothing blocks its path. Above it severs floating clouds;
+    below it cuts the earth''s measure. Used once, it aligns all lords and the world submits. This is
+    the Celestial Sword."'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Zhuangzi''s contested move is the substitution of *metaphor for mimesis*—he refuses to demonstrate
+    sword-skill and instead performs a radical category-shift. The king arrives expecting a master swordsman;
+    he receives a cosmologist. The three swords (tianzi jian, zhuhou jian, shuren jian) are not weapons
+    but *modes of ordering*: celestial (cosmic harmony), princely (virtuous governance), and common (mere
+    violence). By naming the king''s obsession as the lowest category—indistinguishable from cock-fighting—Zhuangzi
+    inverts the hierarchy without confrontation. The king''s desire is not denied but *elevated and then
+    abandoned*. This is persuasion through recontextualization: the problem dissolves when its frame expands.
+
+
+    Key Terms:
+
+
+    **jian 劍** - blade/sword → in Zhuangzi: instrument of order (cosmic, political, or base) → translation
+    stakes: is it weapon, metaphor, or principle?
+
+    **shuo 說** - speak/persuade → to explain by reframing rather than arguing → the art of making the
+    opponent see through your eyes
+
+    **xu 虛** - emptiness/void → the receptive space where transformation occurs → prerequisite for receiving
+    new meaning'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dé (德)
+    definition: '德 “potency, virtue, obtained power” — how the Way is efficacious in a particular being
+      -> in this passage (the Three Swords: Redirecting Power Through Recontextualization), inner potency
+      that shows as unforced efficacy rather than moral display -> trap: Victorian “virtue” as propriety;
+      dé is charismatic power of alignment, not rule-keeping'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (the Three Swords: Redirecting Power Through Recontextualization), the nameless source-and-course
+      that lets beings move by their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed
+      doctrine one can possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: zhī yán (卮言)
+    definition: '卮言 “goblet words” — speech that tips and rights itself, inexhaustible like a wine vessel
+      -> in this passage (the Three Swords: Redirecting Power Through Recontextualization), language that
+      does not harden into fixed theses; words that pour with the situation -> trap: relativist chatter;
+      goblet words are a disciplined flexible speaking, not empty irony'
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (the Three Swords: Redirecting Power Through Recontextualization), unforced congruence with
+      conditions: skill that does not obstruct the work -> trap: “non-action” as passivity; wúwéi can
+      be highly skilled activity without strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plato, Symposium, Diotima's ladder of love
+    resonance: both ascend through nested categories (physical desire → honor → wisdom → the Form itself);
+      both use erotic/martial fixation as entry-point
+    divergence: Plato's ladder is transcendent (away from body); Zhuangzi's is immanent (the celestial
+      sword *includes* the earthly, not escapes it)
+    passage_id: ''
+  - citation: 'Sun Tzu, Art of War, Chapter 3: victory without battle'
+    resonance: both prize the dissolution of conflict through superior positioning; both redefine 'winning'
+    divergence: Sun Tzu seeks tactical advantage; Zhuangzi seeks ontological reframing—the opponent's
+      desire itself becomes transparent
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Identify one fixation or compulsion in your own life (a habit, ambition, or craving). Name it
+    as Zhuangzi names the swordsmen—without judgment. Then ask: what *larger order* does this fixation
+    serve? What would it mean to recontextualize it as the lowest tier of a three-tiered system? Sit with
+    the discomfort of that reframing for one day without acting. Notice what shifts.'

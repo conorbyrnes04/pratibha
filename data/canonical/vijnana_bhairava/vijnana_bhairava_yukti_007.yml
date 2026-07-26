@@ -99,3 +99,67 @@ abhyasa: 'Find an image of a peacock feather, or recall one clearly. Look at it 
   variety as the surface of a single silent ground.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: शिखिपक्षैश् चित्ररूपैर् मण्डलैः शून्यपञ्चकम् । ध्यायतोऽनुत्तरे शून्ये प्रवेशो हृदये भवेत् ॥ ३२
+    ॥
+  layer_provenance: sourced
+- kind: iast
+  body: śikhipakṣaiś citrarūpair maṇḍalaiḥ śūnyapañcakam | dhyāyato'nuttare śūnye praveśo hṛdaye bhavet
+    || 32 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #7
+
+    Meditating on the Five Spaces as the colorful circles of the peacock’s feathers,
+
+    one enters the Heart, the Supreme Space. || 32'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śūnyapañcaka (शून्यपञ्चक)
+    definition: śūnya + pañcaka ‘set of five’ → the fivefold void — the five elements or sense-domains
+      resolved into their empty, ground-consciousness → ‘five voids’ checklist misses the five emptiness-gates
+      the practice traverses
+    lemma_id: sunya
+    sense_id: sunya.shaiva
+  - term: anuttara śūnya (अनुत्तर शून्य)
+    definition: anuttara ‘unsurpassed’ + śūnya ‘empty’ → the supreme or unsurpassed void; the plenary
+      emptiness of consciousness itself, not mere blankness → ‘highest void’ sounds nihilist; here emptiness
+      is the unsurpassed fullness of awareness
+    lemma_id: anuttara
+    sense_id: anuttara.shaiva
+  - term: hṛdaya (हृदय)
+    definition: hṛd ‘heart’ → the heart — the innermost core where perceiver, perceiving, and perceived
+      converge into one source → sentimental ‘heart’ misses the center of awareness (not cardiac tissue)
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — The Cosmic Person Beyond and Within
+    resonance: 'Both passages locate the Supreme or ultimate reality within the heart-space as the dwelling-place
+      of transcendent consciousness. Yukti #7 enters ''the Heart, the Supreme Space'' through meditation
+      on the Five Spaces; Svetasvatara identifies the heart-cave as where ''The Lord dwells...all-pervading.''
+      Both use the heart as the gateway to non-dual realization.'
+    divergence: Vijnana Bhairava employs sensory-aesthetic meditation (peacock feathers, colored circles)
+      as the method of entry, while Svetasvatara emphasizes metaphysical recognition of Śiva's omnipresence;
+      one is phenomenological, the other ontological.
+    passage_id: svetasvatara_upanishad.svu_018
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: 'Both texts identify the heart as the generative locus where consciousness crystallizes
+      into manifestation. Yukti #7 enters the Heart to access the Supreme Space; Siva Sutra describes
+      how ''from the collision of mind in the heart, appearances arise like dreams''—the heart as the
+      threshold where formless consciousness becomes form.'
+    divergence: Vijnana Bhairava treats heart-entry as ascent to transcendence, while Siva Sutra emphasizes
+      the heart as the mechanism of cosmic emanation and dream-like appearance; one is soteriological,
+      the other cosmological.
+    passage_id: siva_sutra.ss_i_15
+  layer_provenance: generated_grounded

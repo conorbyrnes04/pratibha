@@ -72,3 +72,95 @@ abhyasa: Notice one transformation you are currently undergoing—a shift in hab
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: क्रमाण्यत्वं परिनामाण्यत्वे कारणः
+- kind: iast
+  label: IAST
+  body: kramānyatvaṃ pariṇāmānyatve hetuḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The succession of different phases is the cause of their successive transformations.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The statement that the succession of phases itself is the cause of their transformations foregrounds
+    a dynamic, processual ontology: causality is not a static, one‑to‑one mapping but a temporal unfolding.
+    In the Yoga and Sāṃkhya traditions, this resonates with the idea that *kramā* (sequence) is a fundamental
+    principle of reality, as seen in the Sāṃkhya triad of *prakṛti*, *puruṣa*, and *kṛti*. Here, the *kramā*
+    of evolutionary stages (*anyatva*) is not merely descriptive but generative; it is the *hetu* that
+    propels *parināma* (transformation). This mirrors the Yogic notion that *samādhi* is attained through
+    a progressive alignment of *citta* and *vṛtti*, each stage conditioning the next. The commentary invites
+    an existential application: by recognizing that our own mental states evolve in succession, we can
+    consciously direct the causal chain toward higher states of consciousness. The Satchidananda aphorism
+    underscores that the differences in stages are themselves the engine of change, a subtle reminder
+    that variation is not a hindrance but the very mechanism of evolution. Thus, the sutra teaches that
+    awareness of the *kramā* enables us to become active agents in our own transformation.
+
+
+    Key Terms
+
+
+    **kramā (क्रम)** — kramā (क्रम) -> ''sequence, succession'' in Sāṃkhya; in Yoga, the ordered unfolding
+    of states; the sutra treats it as causal
+
+
+    **anyatva (अन्यत्व)** — anyatva (अन्यत्व) -> ''difference, otherness''; in Sāṃkhya, the diversity
+    of prakṛti; here, the distinct phases that generate change
+
+
+    **parināma (परिनामा)** — parināma (परिनामा) -> ''transformation, evolution''; in Yoga, the development
+    of consciousness; the sutra links it to the causal succession
+
+
+    **hetu (हेतु)** — hetu (हेतु) -> ''cause''; in Sāṃkhya, the principle of causation; here, the succession
+    itself is the cause
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 3.15:** Explicit claim that kramā (sequence) is the cause of parināma (transformation)
+
+    *Divergence:* Unlike Sāṃkhya''s triadic causality where *kṛti* is the agent, here the process itself
+    is the agent
+
+
+    **Bhaṭṭārāyaṇa, Yogaśāstra, 3.15:** Parallels the idea that evolution is self‑causal
+
+    *Divergence:* Bhaṭṭārāyaṇa emphasizes *purusha* as the observer, whereas the sutra abstracts to the
+    process
+
+
+    **Mādhava, Yogaśāstra, 3.16:** Extends the causal chain to the final *samādhi*
+
+    *Divergence:* Mādhava introduces *samādhi* as the endpoint, whereas 3.15 stops at the generative process
+
+
+    **Sāṃkhya Kārikā 2.3:** Describes *anyatva* as the variety in prakṛti
+
+    *Divergence:* The Kārikā treats *anyatva* as a static property, not a causal mechanism'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: pariṇāma (परिणाम)
+    definition: 'pari-√nam ‘bend around / transform’ → transformation -> in “Successive Phases as Cause”:
+      the sutra links it to the causal succession -> not random change; structured transformation of dharma/lakṣaṇa/avasthā
+      that saṃyama can know'
+  - term: hetu (हेतु)
+    definition: '‘cause/reason’ -> in “Successive Phases as Cause”: here, the succession itself is the
+      cause -> not vague ‘reason why’; the causal factor (often saṃyoga of seer/seen) producing heya'
+  - term: kramā (क्रम)
+    definition: 'source-term kramā -> in “Successive Phases as Cause”: the sutra treats it as causal ->
+      default English flattens the technical work this term does here'
+  - term: anyatva (अन्यत्व)
+    definition: 'source-term anyatva -> in “Successive Phases as Cause”: here, the distinct phases that
+      generate change -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe each mental phase as it arises, noting how its distinct qualities give rise to the next;
+    consciously let the succession flow toward a calmer, more unified state.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: The succession of these different phases is the cause of the

@@ -95,3 +95,68 @@ abhyasa: Sit comfortably and simply watch your breathing without controlling it.
   of that thought-free center becomes recognizable and familiar.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: न व्रजेन् न विशेच् छक्तिर् मरुद्रूपा विकासिते । निर्विकल्पतया मध्ये तया भैरवरूपता ॥ २६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: na vrajen na viśec chaktir marudrūpā vikāsite | nirvikalpatayā madhye tayā bhairavarūpatā || 26
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #2
+
+    Neither moving forth, nor entering in, the power (śakti) inherent in the prāṇa
+
+    is revealed in the Center [where it comes to rest]. Through the [spontaneous]
+
+    dissolution of thought-forms by means of that power, the Bhairava-state
+
+    [appears]. || 26'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: madhya (मध्य)
+    definition: madhya ‘middle/center’ → the center or middle — here the still point where breath neither
+      enters nor exits, energetically the central channel (suṣumnā) → ‘center’ as geometry misses the
+      still hinge between movements where awareness opens
+  - term: nirvikalpa (निर्विकल्प)
+    definition: nir- + vikalpa ‘construct’ → a state free of conceptual construction; direct awareness
+      without mental labeling or the split into subject and object → ‘no thoughts’ quietism misses freedom
+      from dualizing constructs while knowing remains
+    lemma_id: vikalpa
+    sense_id: vikalpa.shaiva
+  - term: śakti (शक्ति)
+    definition: √śak ‘be able’ → power/capacity → power or energy; here the vital force appearing as breath
+      (marud-rūpā, 'in the form of air') → ‘energy/empowerment’ misses Śiva’s own capacity to appear,
+      know, and act as world
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: Both texts locate śakti not as an abstract principle but as recognizable within direct
+      experience—the Vijnana Bhairava reveals it through prāṇa's stillness at the Center, while Tantrasara
+      teaches recognition of Śakti throughout the entire architecture of lived experience.
+    divergence: Vijnana Bhairava emphasizes a singular point of revelation (the Center where movement
+      ceases), whereas Tantrasara distributes recognition across the whole field of consciousness.
+    passage_id: tantrasara.ts_014
+  - citation: Pratyabhijnahrdayam — Sutra 1
+    resonance: Both passages identify śakti as the operative principle underlying manifestation and dissolution—Vijnana
+      Bhairava shows it revealed when prāṇa comes to rest, while Pratyabhijnahrdayam identifies Śakti
+      as the cause of the universe's manifestation, maintenance, and dissolution.
+    divergence: Vijnana Bhairava grounds the revelation in a contemplative pause of vital energy, whereas
+      Pratyabhijnahrdayam presents śakti as a metaphysical first principle independent of the practitioner's
+      state.
+    passage_id: pratyabhijnahrdayam.phr_001
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

@@ -118,3 +118,113 @@ abhyasa: '**The Five-State Audit (Pañca-Avasthā Sākṣī)**: For one day, car
   habitual mental patterns.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: प्रमाणविपर्ययविकलपिन्ड्रास्मृतयः
+- kind: iast
+  label: IAST
+  body: pramāṇaviparyayavikalpanidrāsmṛtayaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: They are [right knowledge], [wrong knowledge], [fancied], [sleeping], and [memory].
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this passage is that the five categories listed are the only valid modes
+    of cognition, each representing a distinct epistemic state that the practitioner must recognize and
+    transcend. The contested move lies in the identification of ‘fancied’ (vikalpa) and ‘sleeping’ (indra)
+    as epistemic states rather than mere mental activities; this aligns with the Samkhya notion that ignorance
+    (avidya) manifests in multiple guises, yet it diverges from the later Yoga commentaries that treat
+    indra solely as a sensory faculty. In the Yoga–Samkhya framework, pramāṇa (knowledge) is the vehicle
+    of liberation, but only when it is untainted by viparyaya (misconception) or vikalpa (imagination).
+    Dvivedi’s brief mention of ‘fancy, sleep, and memory’ underscores the practical reality that our mind
+    constantly oscillates among these states, thereby sustaining the illusion of duality. By systematically
+    identifying and labeling each state, the practitioner gains the awareness necessary to detach from
+    the fluctuating mind (citta) and approach samādhi, the stillness that reveals puruṣa’s true nature.
+    This exercise is existentially relevant: it teaches that liberation is not a distant ideal but a present
+    practice of discerning the quality of each thought as it arises, thereby reducing the grip of prakṛti
+    and moving toward the realization of the self as pure awareness.
+
+
+    Key Terms
+
+
+    **pramāṇa (प्रमाण)** — root: prā (to go) + māṇa (to measure) -> measurement; in Samkhya, pramāṇa is
+    the means of valid cognition, encompassing perception, inference, and testimony; the term’s literal
+    sense of ‘measure’ is lost when it is treated merely as a tool rather than the result of cognition.
+
+
+    **viparyaya (विपर्यय)** — vip (in) + ary (to change) -> change or reversal; in Yoga, viparyaya denotes
+    the misapprehension that arises when the mind reverses the true nature of objects, leading to ignorance;
+    the term’s etymology highlights the dynamic reversal of perception.
+
+
+    **vikalpa (विकलप)** — vik (to turn) + alp (small) -> small turning; in Samkhya, vikalpa is the mental
+    fabrication that turns the mind away from reality, creating a false image; the term’s literal sense
+    of turning is crucial to understanding its role as a deceptive cognitive state.
+
+
+    **smṛti (स्मृति)** — root: smṛ (to remember) -> remembrance; in Yoga, smṛti refers to the residual
+    imprint of past cognition that influences present perception; its etymology underscores continuity,
+    which is why smṛti can both preserve knowledge and perpetuate ignorance.
+
+
+    Cross-Tradition Resonances
+
+
+    **Patanjali, Yoga Sūtra 1.1:** Both passages enumerate the five pramāṇas, establishing a structural
+    homology in listing epistemic categories.
+
+    *Divergence:* While Patanjali lists perception, inference, testimony, intuition, and non-cognition,
+    YS 1.6 replaces inference and testimony with wrong knowledge, fancied, sleeping, and memory, reflecting
+    a more phenomenological focus.
+
+
+    **Kapila Samkhya Karika 1.2:** Kapila also distinguishes between right and wrong knowledge, but frames
+    them in terms of puruṣa and prakṛti interaction.
+
+    *Divergence:* YS 1.6 abstracts the categories into mental states rather than ontological categories,
+    thereby making the doctrine more immediately applicable to meditative practice.
+
+
+    **Dvivedi, Commentary on YS 1.6:** Dvivedi explicitly identifies the five states as ‘fancy, sleep,
+    and memory’, mirroring the YS wording.
+
+    *Divergence:* Dvivedi’s commentary expands the list with an implicit reference to ‘wrong knowledge’,
+    whereas the original sūtra lists it explicitly, suggesting a later editorial addition.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: viparyaya (विपर्यय)
+    definition: 'vi-pari-√i ‘go the wrong way’ → misconception -> in “Right Knowledge and Its Forms”:
+      in Yoga, viparyaya denotes the misapprehension that arises when the mind reverses the true nature
+      of objects, leading to ignorance -> not mere mistake of detail; false cognition mistaking the form
+      of something for what it is not'
+  - term: pramāṇa (प्रमाण)
+    definition: 'pra-√mā ‘measure accurately’ → valid means of knowing -> in “Right Knowledge and Its
+      Forms”: the term’s literal sense of ‘measure’ is lost when it is treated merely as a tool rather
+      than the result of cognition -> not ‘proof’ in courtroom sense alone; perception, inference, testimony
+      as vṛtti-types'
+  - term: vikalpa (विकल्प)
+    definition: 'vi-√kḷp ‘fashion alternately’ → verbal/constructive ideation -> in “Right Knowledge and
+      Its Forms”: in Samkhya, vikalpa is the mental fabrication that turns the mind away from reality,
+      creating a false image -> not all thinking; cognition following words without a corresponding object
+      present'
+    lemma_id: vikalpa
+    sense_id: vikalpa.shaiva
+  - term: nidrā (निद्रा)
+    definition: 'ni-√drā ‘sleep’ → sleep as a distinct vṛtti -> in “Right Knowledge and Its Forms”: They
+      are [right knowledge], [wrong knowledge], [fancied], [sleeping], and [memory]. -> not mere rest;
+      a cognition of absence that still counts as mental modification to be stilled'
+  - term: heya (हेय)
+    definition: '√hā ‘abandon’ → that which is to be discarded (future suffering) -> in “Right Knowledge
+      and Its Forms”: They are [right knowledge], [wrong knowledge], [fancied], [sleeping], and [memory].
+      -> not past pain fixation; the avoidable future duḥkha that viveka aims to cut'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Recognize each arising thought as either right knowledge, wrong knowledge, fancied, sleeping,
+    or memory, and consciously let it pass without attachment.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: (They are) Right knowledge, wrong knowledge,

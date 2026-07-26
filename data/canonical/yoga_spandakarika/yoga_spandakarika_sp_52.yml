@@ -79,3 +79,72 @@ abhyasa: When caught in a loop of doubt about something, speak aloud a single se
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: अगाधसंशयाम्भोधिसमुत्तरणतारिणीम् । वन्दे विचित्रार्थपदां चित्रां तां गुरुभारतीम् ॥ ५२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: agādhasaṃśayāmbhodhisamuttaraṇatāriṇīm | vande vicitrārthapadāṃ citrāṃ tāṃ gurubhāratīm || 52
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: I venerate the spontaneous, tremoring, and wonderful words of my master who had me cross the Ocean
+    of doubt.
+- kind: commentary
+  label: Pratibha Commentary
+  body: May this jewel of knowledge lead all beings to reach the true nature of reality, and may they
+    keep this jewel in the deepest part of their heart. The Union of Joy and Emptiness Tilopa is one of
+    the Kashmiri siddhas who ensured the transmission of Mahamudra by passing it on to his disciple Naropa,
+    who in turn transmitted it to the ninth-century Tibetans. To this day, we can still see one of his
+    hermitages in the village of Tilokpur, near Dharmsala, in India. Here is a song of his, as recounted
+    by Chogyam Trungpa.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: gurubhāratī (गुरुभारती)
+    definition: guru + bhāratī ‘speech/Sarasvatī’ → the speech or word of the teacher—transmission that
+      carries meaning beyond information → ‘guru’s speech’ as lecture misses empowered transmission-word
+  - term: saṃśaya (संशय)
+    definition: sam- + √śī → doubt → doubt, wavering; the mind's oscillation that direct recognition dissolves
+      → ‘doubt’ as indecision misses the split that blocks recognition
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness underlying all experience,
+      including the gaps within doubt → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness
+      itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.20
+    resonance: 'Both texts posit that crossing a threshold of doubt or confusion requires a prior condition—faith
+      and energy in Patañjali, the master''s tremoring words in Spandakarika—that precedes and enables
+      the realization of true nature. The structure is: prerequisite catalyst → samadhi/knowledge.'
+    divergence: Patañjali emphasizes internal psychological faculties (faith, energy) as the prerequisite,
+      while Spandakarika locates the catalyst in transmitted wisdom from a master, making the path relational
+      rather than intrapsychic.
+    passage_id: patañjali_yoga_sūtras.ys_1_20
+  - citation: Vijnana Bhairava — The Bindu of Subtle Fire at the Radiant Abode
+    resonance: Both texts lodge transformative knowledge in the heart as a subtle, luminous point of dissolution—the
+      jewel of knowledge kept in the deepest heart (Spandakarika) parallels the Bindu dissolving into
+      pure Presence when meditated upon in the heart (Vijnana Bhairava). Knowledge and presence converge
+      at the cardiac center.
+    divergence: Spandakarika emphasizes the jewel as a conceptual or transmitted teaching held in the
+      heart, while Vijnana Bhairava prescribes a specific meditative technique on the subtle fire-point
+      itself, making one textual and the other procedural.
+    passage_id: vijnana_bhairava.yukti_012
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VIII.7
+    resonance: 'Both passages describe a state of knowledge or realization characterized by freedom from
+      doubt and mental turbulence—the Self free from confusion and desire (Chandogya) mirrors crossing
+      the Ocean of doubt to reach true nature (Spandakarika). The move is: knowledge = liberation from
+      mental obstruction.'
+    divergence: Chandogya frames this as the eternal, unchanging nature of the Self itself, while Spandakarika
+      frames it as an achievement reached through the master's teaching, making one metaphysical and the
+      other pedagogical.
+    passage_id: chāndogya_upaniṣad.chu_viii_07
+  layer_provenance: generated_grounded

@@ -101,3 +101,80 @@ abhyasa: 'Watch your hand move through space — reaching for water, touching yo
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: यतः करणवर्गोऽयं विमूढोऽमूढवत्स्वयम् । सहान्तरेण चक्रेण प्रवृत्तिस्थितिसंहृतीः ॥ ६ ॥ लभते तत्प्रयत्नेन
+    परीक्ष्यं तत्त्वमादरात् । यतः स्वतन्त्रता तस्य सर्वत्रेयमकृत्रिमा ॥ ७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yataḥ karaṇavargo'yaṃ vimūḍho'mūḍhavatsvayam | sahāntareṇa cakreṇa pravṛttisthitisaṃhṛtīḥ || 6
+    || labhate tatprayatnena parīkṣyaṃ tattvamādarāt | yataḥ svatantratā tasya sarvatreyamakṛtrimā ||
+    7 ||
+- kind: translation
+  label: Pratibha Translation
+  body: To grasp this fundamental truth is to see absolute freedom everywhere. Thus, the activity of the
+    senses itself dwells in this fundamental freedom and pours forth from it.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'In this way, the world of the yogin and yogini is a world of fullness where no manifestation
+    is considered to be separate from the absolute condition. Everything is the manifestation of the Shakti-Shiva
+    union. Nothing is a threat to the unlimited, because everything resides within it, just as the divine
+    embryo resides in our hearts. Every act, every perception, every movement of the senses is the actualization
+    of the divine. This activity of the senses that liberates the tantrika is not different from the process
+    that binds, ever more profoundly, the person who has not yet realized her divine nature. The pleasures
+    of the senses tied to the ego empty the limited person’s heart, and her divine energy becomes foreign
+    to her; whereas these pleasures endlessly fill the heart of the yogin and yogini, whose ego, reaching
+    toward the infinite, is nothing other than absolute nature. The goddesses unceasingly bring back to
+    our heart the whole manifestation in a continual offering to the intertwined Bhairava and Bhairavi.
+    The heart is ultimate consciousness, the unequaled, the foundation of everything that exists, the
+    Shaktichakra, the wheel where the goddesses blossom out, unceasingly going out to harvest the world
+    in order to offer its essence to the divine in the temple of the heart. The heart quivers, tremors,
+    blazes: This is the continual manifestation of the Spanda. Everything that brings pleasure to the
+    heart tunes the cosmic instrument of consciousness. The person whose heart overflows no longer aspires
+    to any kind of realization. Centered on the goddess, she allows all that is manifested to flow within
+    her and in this way reaches the unlimited. This is the great expansion where the flames of the heart
+    carry each sensation to its incandescence, and then offer them to the...'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness underlying every arising,
+      persisting, and dissolving of experience → ‘vibration/energy’ physicalizes or New-Ages the throb
+      of consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: svatantratā (स्वतन्त्रता)
+    definition: svatantra + -tā → autonomy → the unconditioned, self-dependent freedom of consciousness
+      — native and unmade (akṛtrimā), not produced by any effort → ‘freedom’ generic misses technical
+      self-dependence (svātantrya)
+  - term: karaṇavarga (करणवर्ग)
+    definition: karaṇa ‘instrument’ + varga ‘group’ → the collective set of instruments — outer senses
+      and inner mental organs — that seem to perceive but are themselves inert → ‘sense-group’ taxonomy
+      misses the instrumental complex the practice gathers
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit for 5 minutes and follow the breath naturally. At each inhale and exhale, notice the subtle
+    vibration of awareness before naming it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — World as Reflection in the Sky of Awareness
+    resonance: 'Both texts posit a direct, non-dual recognition where awareness itself is the operative
+      principle: the Spandakarika grounds freedom in grasping the fundamental truth of non-separation,
+      while Tantrasara locates recognition through a sharp tilt of awareness that bypasses elaborated
+      mediation. Each makes awareness the instrument and the revelation simultaneously.'
+    divergence: Tantrasara emphasizes the *method* of direct tilt (śāmbhavopāya) as the path, whereas
+      Spandakarika emphasizes the *result*—the fullness of manifestation seen as non-separate from the
+      absolute—as the fruit of grasping.
+    passage_id: tantrasara.ts_010
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad III.14
+    resonance: 'Both texts make a non-dual identity claim: Spandakarika asserts that no manifestation
+      is separate from the absolute condition, while Chāndogya directly states the entire universe is
+      Brahman. Each collapses the apparent distinction between the manifest world and ultimate reality
+      into a single non-dual assertion.'
+    divergence: Spandakarika grounds this non-duality in the *dynamic freedom* of consciousness recognizing
+      itself through manifestation, whereas Chāndogya grounds it in *being*—the universe *is* Brahman
+      as a statement of identity.
+    passage_id: chāndogya_upaniṣad.chu_iii_14
+  layer_provenance: generated_grounded

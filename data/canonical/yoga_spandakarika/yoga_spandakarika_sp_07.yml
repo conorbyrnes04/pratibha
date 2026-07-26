@@ -95,3 +95,61 @@ abhyasa: 'Pick a single act of perception and watch its three phases directly. C
   awareness already running through every perception.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: यतः करणवर्गोऽयं विमूढोऽमूढवत्स्वयम् । सहान्तरेण चक्रेण प्रवृत्तिस्थितिसंहृतीः ॥ ६ ॥ लभते तत्प्रयत्नेन
+    परीक्ष्यं तत्त्वमादरात् । यतः स्वतन्त्रता तस्य सर्वत्रेयमकृत्रिमा ॥ ७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yataḥ karaṇavargo'yaṃ vimūḍho'mūḍhavatsvayam | sahāntareṇa cakreṇa pravṛttisthitisaṃhṛtīḥ || 6
+    || labhate tatprayatnena parīkṣyaṃ tattvamādarāt | yataḥ svatantratā tasya sarvatreyamakṛtrimā ||
+    7 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Shared source passage with Stanza 6. See Stanza 6 for the full translation and commentary.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: karaṇavarga (करणवर्ग)
+    definition: karaṇa ‘instrument’ + varga ‘group’ → the collection of instruments — sense organs, organs
+      of action, and inner faculties — through which experience is processed → ‘sense-group’ taxonomy
+      misses the instrumental complex the practice gathers
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness that animates the
+      otherwise insentient instruments of perception → ‘vibration/energy’ physicalizes or New-Ages the
+      throb of consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: svatantratā (स्वतन्त्रता)
+    definition: svatantra + -tā → autonomy → the innate, uncontrived freedom or autonomy of consciousness,
+      present everywhere and requiring no manufacture → ‘freedom’ generic misses technical self-dependence
+      (svātantrya)
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #1'
+    resonance: 'Both texts locate awakening within the oscillatory movement of breath itself: the Spandakarika''s
+      ''vibration'' (spanda) and the Vijnana Bhairava''s prāṇa-jīva cycle both treat breath-movement as
+      the primary site where consciousness discloses itself directly, without mediation.'
+    divergence: The Vijnana Bhairava explicitly names the Goddess as the articulator of breath-flow, whereas
+      the Spandakarika grounds vibration in an impersonal cosmic pulse; one is theistic, the other non-theistic
+      in framing.
+    passage_id: vijnana_bhairava.yukti_001
+  - citation: Tantrasara — Subtle Sound – Mantra as Breath of Śiva
+    resonance: 'Both texts treat breath-coordination with sacred sound as the foundational practice: the
+      Spandakarika''s vibration-awareness and the Tantrasara''s mantra-breath integration both use the
+      breath-syllable nexus as the entry point to subtle recognition.'
+    divergence: The Tantrasara emphasizes the sequential, methodical path (Āṇava) of mouth-breath-syllable
+      coordination, while the Spandakarika invites non-methodical disclosure through pause and direct
+      insight.
+    passage_id: tantrasara.ts_018
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit for 5 minutes and follow the breath naturally. At each inhale and exhale, notice the subtle
+    vibration of awareness before naming it.

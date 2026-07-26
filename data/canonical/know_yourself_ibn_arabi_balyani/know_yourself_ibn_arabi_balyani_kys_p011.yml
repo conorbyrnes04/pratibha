@@ -105,3 +105,51 @@ abhyasa: As you exhale, let the word 'He' ride out on the breath — not as some
   breath saying itself through you. When the next breath comes without your ordering it, feel that the
   breathing was never yours to do.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: No one other than He sees Him. No sent prophet, perfect saint or angel brought close knows Him.
+    His prophet is He, His messenger is He, His message is He and His word is He. He sent Himself from
+    Himself, through Himself to Himself.
+- kind: commentary
+  label: Pratibha Commentary
+  body: This line points to a deeper order that is received through attentive listening rather than conceptual
+    noise.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: tawḥīd (توحيد)
+    definition: 'Arabic tawḥīd from waḥḥada ‘to make/declare one’ → absolute oneness of the Real, radicalized
+      here as sole agency and sole being Trap: hearing a creedal slogan rather than ontological exclusivity
+      of wujūd'
+    lemma_id: tawhid
+    sense_id: tawhid.islamic
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away, evanescence’ → passing-away of the egoic claim before the
+      Real Trap: self-erasure as quietism or dissociation rather than clearing of false independence'
+    lemma_id: fana
+    sense_id: fana.sufi
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus Fragments — Fragment 2
+    resonance: Both texts posit a universal principle (Logos/Divine Reality) that exists perpetually but
+      remains inaccessible to ordinary perception; the barrier is not the principle's absence but humanity's
+      habitual inattention to what is always already present.
+    divergence: Heraclitus emphasizes the universal Logos as rational order that people fail to recognize
+      despite hearing it; Ibn Arabi locates the barrier in the ego-self's inability to perceive the Divine
+      except through receptive listening, a more explicitly mystical epistemology.
+    passage_id: heraclitus_fragments.hfr_p002
+  - citation: 'Vijnana Bhairava — Yukti #104'
+    resonance: Both propose that sustained meditative attention to a principle—whether words naming the
+      Divine or the Divine itself—collapses the distinction between knower and known, allowing direct
+      realization rather than conceptual understanding.
+    divergence: Yukti 104 uses verbal formulas and their meaning as the vehicle for non-dual recognition;
+      Ibn Arabi's 'attentive listening' operates through silence and receptivity rather than active meditation
+      on conceptual content.
+    passage_id: vijnana_bhairava.yukti_104
+  layer_provenance: generated_grounded

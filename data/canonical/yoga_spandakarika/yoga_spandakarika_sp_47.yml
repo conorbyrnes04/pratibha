@@ -93,3 +93,66 @@ abhyasa: 'The moment you name something—''this is wrong,'' ''I want that,'' ''
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: परामृतरसापायस्तस्य यः प्रत्ययोद्भवः । तेनास्वतन्त्रतामेति स च तन्मात्रगोचरः ॥ ४६ ॥ स्वरूपावरणे
+    चास्य शक्तयः सततोत्थिताः । यतः शब्दानुवेधेन न विना प्रत्ययोद्भवः ॥ ४७ ॥ सेयं क्रियात्मिका शक्तिः शिवस्य
+    पशुवर्तिनी । बन्धयित्री स्वमार्गस्था ज्ञाता सिद्ध्युपपादिका ॥ ४८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: parāmṛtarasāpāyastasya yaḥ pratyayodbhavaḥ | tenāsvatantratāmeti sa ca tanmātragocaraḥ || 46 ||
+    svarūpāvaraṇe cāsya śaktayaḥ satatotthitāḥ | yataḥ śabdānuvedhena na vinā pratyayodbhavaḥ || 47 ||
+    seyaṃ kriyātmikā śaktiḥ śivasya paśuvartinī | bandhayitrī svamārgasthā jñātā siddhyupapādikā || 48
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: Shared source passage with Stanza 46. See Stanza 46 for the full translation and commentary.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: pratyaya (प्रत्यय)
+    definition: prati + √i → cognition/mental presentation → A determinate thought or fixed cognition;
+      the mental construct whose arising eclipses open awareness → ‘idea/belief’ flattens a momentary
+      knowing that arises and passes
+  - term: śakti (शक्ति)
+    definition: √śak ‘be able’ → power/capacity → the power of consciousness; the same energy that veils
+      the self when unrecognized and liberates when recognized → ‘energy/empowerment’ misses Śiva’s own
+      capacity to appear, know, and act as world
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of awareness underlying and giving
+      rise to every cognition and its gaps → ‘vibration/energy’ physicalizes or New-Ages the throb of
+      consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #106'
+    resonance: 'Both texts pause conceptual analysis to let a paradox disclose itself directly: the Spandakarika
+      instructs the reader to suspend interpretation and allow insight to emerge, while Vijnana Bhairava
+      poses an unanswerable question (how can the unchanging Self be the locus of action?) as a contemplative
+      pointer that short-circuits rational thought.'
+    divergence: The Spandakarika suspends interpretation to access the spanda (vibration/pulsation) of
+      consciousness-in-action, while Vijnana Bhairava uses the paradox to dissolve the subject-object
+      distinction and reveal the Self as untouched by cognition or action.
+    passage_id: vijnana_bhairava.yukti_106
+  - citation: 'Phaedo (Plato) — The Second Sailing: Forms as True Causes'
+    resonance: 'Both texts enact a methodological reversal: Socrates abandons sensory-physical explanation
+      for intelligible causes, and the Spandakarika instructs the reader to abandon interpretive scaffolding
+      to let direct disclosure occur—each marks a shift from mediated to immediate knowing.'
+    divergence: Plato's second sailing ascends to transcendent Forms as stable intelligible objects, while
+      the Spandakarika's pause allows the spanda itself (dynamic vibration) to self-reveal without reification
+      into object-form.
+    passage_id: phaedo_plato.phaedo_md_005
+  layer_provenance: generated_grounded

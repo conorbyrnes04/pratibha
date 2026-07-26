@@ -86,3 +86,72 @@ abhyasa: 'Sit quietly and simply watch your breath without controlling it for a 
   unmoving awareness is what the verse points to. Let it be noticed rather than achieved.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: वायुद्वयस्य संघट्टाद् अन्तर् वा बहिर् अन्ततः । योगी समत्वविज्ञानसमुद्गमनभाजनम् ॥ ६४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: vāyudvayasya saṃghaṭṭād antar vā bahir antataḥ | yogī samatvavijñānasamudgamanabhājanam || 64
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #37
+
+    Due to the dynamic tension (sanghaṭṭa) of the two prāṇas, either
+
+    externally or internally, at the termination [of the breath-pause]
+
+    the yogī becomes a vessel for the arising of equality-
+
+    consciousness. || 64'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: saṃghaṭṭa (संघट्ट)
+    definition: sam- + √ghaṭṭ ‘strike’ → impact/friction → the striking or fusion together of the two
+      breath-currents at their turning point → ‘conflict’ understates the creative clash where energies
+      meet
+  - term: samatva (समत्व)
+    definition: sama + -tva → evenness → equilibrium, the balanced state where neither in-breath nor out-breath
+      dominates → Stoic ‘equanimity’ import is close but misses Śaiva evenness in spanda
+  - term: prāṇa / apāna (प्राण / अपान)
+    definition: '√an ‘breathe’: upward/outward vs downward/eliminative currents → the outgoing (upward)
+      and incoming (downward) breath currents whose junction is the object of this practice → English
+      ‘breath’ erases the directional polarity the practice uses as a gate'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming
+    experience.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a shift in perceptual focus as the key to recognizing an already-present
+      consciousness: the soul''s characteristic act (Plotinus) and equality-consciousness (Vijnana Bhairava)
+      remain unnoticed until attention redirects from external content to the knowing faculty itself.'
+    divergence: Plotinus frames this as a correction of misplaced perception within a unified soul; Vijnana
+      Bhairava locates the shift in the somatic dynamics of prāṇa and breath-pause, grounding consciousness
+      in embodied practice rather than intellectual reorientation.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Siva Sutra — Śāktopāya
+    resonance: Both texts use precise somatic location (nostrils in Siva Sutra, the tension-point of prāṇa
+      in Vijnana Bhairava) as the fulcrum where sustained attention triggers a shift in consciousness—dissolution/expansion
+      and equality-consciousness respectively—through concentrated inward focus.
+    divergence: Siva Sutra emphasizes the spatial center and the dual outcome of dissolution and expansion;
+      Vijnana Bhairava stresses the dynamic tension between opposing forces and the arising of equanimity,
+      making the mechanism more relational than locational.
+    passage_id: siva_sutra.ss_ii_13
+  - citation: Patañjali Yoga Sūtras 1.3
+    resonance: 'Both texts describe a return to the seer''s or knower''s own nature as the fruit of practice:
+      when attention ceases to follow the object-stream, the subject recognizes its intrinsic nature—equality-consciousness
+      in Vijnana Bhairava, the seer''s own nature in Patañjali.'
+    divergence: Patañjali's formulation is apophatic and minimal; Vijnana Bhairava specifies the mechanism
+      (breath-tension) and the quality of the result (equality), embedding the insight in embodied technique
+      rather than leaving it as a bare principle.
+    passage_id: patañjali_yoga_sūtras.ys_1_03
+  layer_provenance: generated_grounded

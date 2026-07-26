@@ -98,3 +98,107 @@ abhyasa: 'Lift one object—a cup, stone, or book—and hold it steady in both h
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: तद् असंख्येयवासनाभिः चित्रम् अपि परार्थं समहत्वकृत्वात्
+- kind: iast
+  label: IAST
+  body: tad asaṃkhyeyavāsanābhiś citram api parārthaṃ saṃhatyakāritvāt
+- kind: translation
+  label: Pratibha Translation
+  body: The mind‑stuff, though it has countless desires, exists for another purpose because it can act
+    only in association with that other [the Puruṣa].
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sutra asserts that the mind’s multiplicity of desires does not constitute independent agency;
+    rather, it is a dependent phenomenon that exists only in relation to the Self. This is a contested
+    move in the Yoga tradition: some commentators, following the Sāṃkhya view, treat the mind as a function
+    of prakṛti, while others, such as the Yoga‑Māyā school, emphasize its subordination to the puruṣa.
+    Here, the sutra aligns with the latter, underscoring that the mind’s activity is purposive only when
+    it is in communion with the puruṣa. The phrase “parārthaṃ” signals that the mind’s ultimate aim is
+    not self‑satisfaction but the realization of the other, the unchanging witness. In practical terms,
+    this invites the practitioner to recognize that every thought and desire is a signpost pointing toward
+    the Self, and that the only way to transform these impulses is to cultivate a relationship with the
+    puruṣa through disciplined meditation and ethical conduct. By internalizing this relational dynamic,
+    one learns to detach from the mind’s fleeting cravings and to direct its energy toward the unconditioned
+    awareness that is the true object of yoga.
+
+
+    Key Terms
+
+
+    **asaṃkhyeya (असंख्येय)** — ‘countless’ (from aśaṃkhyeya) → ‘unlimited’; the sutra uses it to emphasize
+    the boundless nature of desires, a point that is often glossed over as merely ‘many’.
+
+
+    **vāsanā (वासना)** — ‘desire’ (from vāṣa) → ‘longing’; here it denotes the mind’s habitual tendencies
+    that bind it to prakṛti.
+
+
+    **citram (चित्रम्)** — ‘mind‑stuff’ (from cit) → ‘consciousness’; the sutra treats it as a dependent
+    phenomenon.
+
+
+    **parārtha (परार्थ)** — ‘other purpose’ (from para + artha) → ‘for another reason’; it signals the
+    mind’s ultimate aim toward the puruṣa.
+
+
+    **saṃhatyakāritvāt (समहत्वकृत्वात्)** — ‘because it can act only in association’ (from samha + tv
+    + kṛtvāt); this clause is crucial because it explains the causal relation between mind and puruṣa.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga‑Māyā, Vāsiṣṭha, 1.1.1:** Both sutras emphasize that the mind’s activity is contingent upon
+    the puruṣa, using the term ‘parārtha’ to denote other‑purpose existence.
+
+    *Divergence:* Yoga‑Māyā introduces an explicit reference to the ‘I‑sense’ (ahamkāra) as the mediator,
+    whereas the current sutra omits it, focusing solely on the puruṣa–mind relationship.
+
+
+    **Sāṃkhya, Taittiriya Upaniṣad, 3.2.4:** Both texts discuss the mind’s dependence on prakṛti, yet
+    both use the term ‘asaṃkhyeya’ to describe the boundlessness of desires.
+
+    *Divergence:* The Sāṃkhya passage treats desires as inherent to prakṛti, whereas the Yoga sutra frames
+    them as instrumental for realizing the puruṣa.
+
+
+    **Yoga‑Sūtra, 4.24:** The phrase ‘saṃhatyakāritvāt’ parallels the later sutra 4.25’s ‘saṃhatyakāryaḥ’,
+    both highlighting the mind’s associative action.
+
+    *Divergence:* While 4.25 expands on the mechanism of association, 4.24 remains concise, leaving the
+    reader to infer the underlying process.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: puruṣa (पुरुष)
+    definition: '‘person/witness’ in Sāṃkhya — pure awareness as seer -> in “Desires, Mind, and the Other”:
+      The Self, pure consciousness, the eternal witnessing principle that is distinct from and independent
+      of the mind-body complex -> not ‘person’ as social self; the unchanging witness distinct from prakṛti’s
+      display'
+  - term: vāsanā (वासना)
+    definition: '√vas ‘dwell’ → lingering scent/habit-tendency -> in “Desires, Mind, and the Other”: here
+      it denotes the mind’s habitual tendencies that bind it to prakṛti -> not vague ‘vibes’; subliminal
+      residue that can fruit when conditions align'
+  - term: atha (अथ)
+    definition: 'atha ‘now’ — auspicious commencement particle -> in “Desires, Mind, and the Other”: The
+      mind‑stuff, though it has countless desires, exists for another purpose because it can act only
+      in association wi… -> not filler ‘now then’; marks readiness and the opening of authorized instruction'
+  - term: asaṃkhyeya (असंख्येय)
+    definition: 'aśaṃkhyeya) → ‘unlimited’ -> in “Desires, Mind, and the Other”: the sutra uses it to
+      emphasize the boundless nature of desires, a point that is often glossed over as merely ‘many’ ->
+      default English flattens the technical work this term does here'
+  - term: citram (चित्रम्)
+    definition: 'cit) → ‘consciousness’ -> in “Desires, Mind, and the Other”: the sutra treats it as a
+      dependent phenomenon -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe each thought as a fleeting desire and consciously redirect its energy toward the awareness
+    of the Self, noting that the mind’s purpose is only realized when it is in association with that awareness.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: Though having countless desires, the mind-stuff exists for the sake of another [the Puruṣa] because
+    it can act only in association with It.

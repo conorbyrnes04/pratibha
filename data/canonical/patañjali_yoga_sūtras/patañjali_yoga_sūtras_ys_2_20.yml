@@ -84,3 +84,106 @@ abhyasa: 'Hold your gaze on a fixed point—a candle flame, a leaf, a crack in t
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: द्रष्टा दृशिमात्रः शुद्धोऽपि प्रत्ययानुपश्यः
+- kind: iast
+  label: IAST
+  body: draṣṭā dṛśimātraḥ śuddho 'pi pratyayānupaśyaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The seer is pure gnosis, and though pure, he observes only the appearance of the object.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The passage asserts that the seer (puruṣa) is inherently pure gnosis, yet his act of seeing is
+    limited to the appearance of the object, mediated by intellect. This claim foregrounds the distinction
+    between the unchanging self and the changing world, a core Sāṃkhya dualism. The contested move is
+    the assertion that the seer’s observation is only of appearances, not of the object itself; Dvivedi
+    interprets this as seeing through intellect, but the Pratibha reading emphasizes that the seer’s pure
+    awareness does not participate in the evolutionary process of prakṛti. In the Yoga tradition, this
+    aligns with the idea that samādhi is the state where the mind’s vṛtti is still, yet the seer remains
+    untouched by it. The existential application is that one may cultivate a state of pure awareness that
+    observes phenomena without being altered by them, thereby achieving liberation. The commentary integrates
+    Dvivedi’s note that the seer “appears to cognise through the intellect” by suggesting that the intellect
+    is merely a vehicle, not the locus of true knowing. Thus, the seer’s pure gnosis is a constant, unchanging
+    witness, while the intellect merely facilitates the appearance of knowing.
+
+
+    Key Terms
+
+
+    **puruṣa (पुरुष)** — puruṣa: from *pur* ‘to be’ + *-ṣa* ‘having’; in Sāṃkhya it denotes the conscious
+    principle, distinct from prakṛti; the translation ‘seer’ captures the role but omits the ontological
+    distinction between self and nature.
+
+
+    **prakṛti (प्रकृति)** — prakṛti: from *pra* ‘before’ + *kṛti* ‘made’; in Sāṃkhya it is the evolving,
+    material principle; the translation ‘nature’ misses its dynamic, generative aspect.
+
+
+    **vṛtti (वृत्ति)** — vṛtti: from *vṛ* ‘to turn’ + *tti* ‘action’; denotes the fluctuations of mind;
+    the translation ‘appearance’ omits its psychological nuance.
+
+
+    **samādhi (समाधि)** — samādhi: from *sam* ‘together’ + *ā* ‘to’ + *dhi* ‘to hold’; denotes the state
+    of meditative absorption where vṛtti is still; the translation ‘concentration’ fails to convey its
+    transcendental quality.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.20:** Both the Yoga Sūtra and the Bhagavad Gītā (2.50) describe the seer as pure and
+    unaltered by the world, yet the Gītā emphasizes devotion (bhakti) as the path to seeing the divine,
+    whereas the Sūtra focuses on self‑observation.
+
+    *Divergence:* The Gītā introduces the element of surrender to īśvara, which the Sūtra omits, thereby
+    narrowing the focus to internal witnessing.
+
+
+    **Sāṃkhya Kāṇḍa 1.3:** Both texts distinguish puruṣa and prakṛti, but the Sāṃkhya Kāṇḍa elaborates
+    the evolutionary process of prakṛti, whereas the Sūtra merely states that the seer does not evolve.
+
+    *Divergence:* The Sūtra’s brevity leaves the mechanism of evolution implicit, making it more accessible
+    to practitioners.
+
+
+    **Yoga Sūtra 2.20:** The structure ‘seer is pure, yet observes only appearance’ mirrors the Patanjali’s
+    6.1 ‘the mind is the source of all suffering’, highlighting the role of perception.
+
+    *Divergence:* Unlike Patanjali, the Sūtra does not attribute suffering to the mind, but rather to
+    its vṛtti, thereby providing a more neutral stance.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: pratyaya (प्रत्यय)
+    definition: 'prati-√i ‘go toward’ → cognitive content/presentation -> in “Pure Gnosis of the Seer”:
+      Mental impression, thought-form, or content of consciousness -> not grammatical ‘suffix’; the mind’s
+      object-presenting content in a given moment'
+  - term: puruṣa (पुरुष)
+    definition: '‘person/witness’ in Sāṃkhya — pure awareness as seer -> in “Pure Gnosis of the Seer”:
+      the translation ‘seer’ captures the role but omits the ontological distinction between self and
+      nature -> not ‘person’ as social self; the unchanging witness distinct from prakṛti’s display'
+  - term: prakṛti (प्रकृति)
+    definition: 'pra-√kṛ ‘bring forth’ → productive nature/matter -> in “Pure Gnosis of the Seer”: the
+      translation ‘nature’ misses its dynamic, generative aspect -> not pastoral ‘Nature’; the tri-guṇa
+      matrix generating all experience including mind'
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Pure Gnosis of the Seer”: the translation
+      ‘appearance’ omits its psychological nuance -> not ‘bad thoughts’ only — any cognitive wave (valid
+      cognition, error, fantasy, sleep, memory)'
+  - term: samādhi (समाधि)
+    definition: 'sam-ā-√dhā ‘settle completely together’ -> in “Pure Gnosis of the Seer”: denotes the
+      state of meditative absorption where vṛtti is still -> not trance-entertainment or unconsciousness;
+      graded absorption where subject–object friction quiets'
+    lemma_id: samadhi
+    sense_id: samadhi.yoga
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe the world as it appears, noting that your awareness remains unchanged and pure, regardless
+    of the objects you perceive.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: The seer is pure gnosis, and though pure

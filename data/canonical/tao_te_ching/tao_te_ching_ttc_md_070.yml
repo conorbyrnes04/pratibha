@@ -102,3 +102,93 @@ abhyasa: The next time you're about to give an order or make a decision that aff
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '善為士者，不武；
+
+    善戰者，不怒；
+
+    善勝敵者，不與；
+
+    善用人者，為之下。
+
+    是謂不爭之德，是謂用人之力，是謂配天古之極。'
+- kind: translation
+  label: Pratibha Translation
+  body: The best warrior is not warlike; the best fighter does not rage; the best victor does not contend;
+    the best employer puts himself below others. This is called the virtue [*dé* 德] of non-contention;
+    this is called using the strength of others; this is called matching heaven — the highest of the ancients.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that the highest form of leadership is a quiet, non‑assertive one that avoids
+    conflict and does not seek personal glory. The contested move is the claim that a true warrior should
+    not be armed and that a true victor should not cling to victory—an inversion of conventional martial
+    values. By redefining power as humility and strategic cooperation, the text challenges the reader
+    to re‑evaluate what it means to "win" and to see mastery as a harmony with the Tao rather than a triumph
+    over it.
+
+
+    The passage echoes the Taoist theme that the most effective action is often the least visible. It
+    reminds us that the most potent influence is exercised from a place of gentle guidance rather than
+    overt force. The lesson is that true strength is measured by the ability to bring people together
+    and to act without ego, thereby aligning with the ancient principle of the Tao.
+
+
+    Key Terms:
+
+
+    **shàn 壮** — good, virtuous -> in Taoist sense, moral excellence achieved through non‑action -> translation:
+    "good"
+
+    **bù zhēng 不爭** — non‑contention -> the Taoist stance of avoiding conflict and competition -> translation:
+    "non‑contention"
+
+    **pèi 配** — to align or match -> aligning with the Tao’s ancient principle -> translation: "align"'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dé (德)
+    definition: '德 ‘virtue/potency/accrued power’ -> in “The Virtue of Gentle Mastery”: The best warrior
+      is not warlike; the best fighter does not rage; the best victor does not contend; the best employer
+      … -> not Victorian moralism — a thing’s unforced efficacy when it accords with dào'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: bùzhēng (不爭)
+    definition: '不 ‘not’ + 爭 ‘contend/strive’ -> in “The Virtue of Gentle Mastery”: non‑contention ->
+      the Taoist stance of avoiding conflict and competition -> translation: "non‑contention -> not conflict-avoidant
+      niceness; non-contention as the mode that none can contend with'
+  - term: tiān (天)
+    definition: '天 ‘heaven/sky’ — cosmic order above human forcing -> in “The Virtue of Gentle Mastery”:
+      the natural order or cosmic pattern that the sage aims to accord with -> not a personal sky-god
+      by default; impersonal heaven-pattern the sage aligns with'
+  - term: yòng (用)
+    definition: '用 ‘use/function’ -> in “The Virtue of Gentle Mastery”: The best warrior is not warlike;
+      the best fighter does not rage; the best victor does not contend; the best employer … -> not utilitarianism;
+      function that often arises from emptiness (wú) as the wheel hub'
+  - term: shàn (壮)
+    definition: 'source-term shàn -> in “The Virtue of Gentle Mastery”: good, virtuous -> in Taoist sense,
+      moral excellence achieved through non‑action -> translation: "good -> default English flattens the
+      technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 3 (The Tao is the source of all things)
+    resonance: Both emphasize the power of the unassuming, the Tao as the source of true strength
+    divergence: Chapter 3 speaks of the Tao as a cosmic principle, while chapter 68 focuses on human conduct
+    passage_id: ''
+  - citation: Confucius, Analects 2.4 (The superior man is one who is good at learning)
+    resonance: Both value virtue over force
+    divergence: Confucius emphasizes learning, whereas the Taoist text emphasizes humility and non‑contention
+    passage_id: ''
+  - citation: Sun Tzu, The Art of War 3 (Know the enemy and know yourself)
+    resonance: Both discuss strategy and the use of others
+    divergence: Sun Tzu advocates decisive action, while the Taoist passage advocates restraint
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet space, breathe slowly, and imagine yourself as a conductor of a silent orchestra.
+    When a conflict arises, pause, listen to all voices, and guide the situation toward harmony without
+    asserting dominance or demanding victory.

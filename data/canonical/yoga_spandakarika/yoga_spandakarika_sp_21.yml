@@ -88,3 +88,65 @@ abhyasa: Throughout ordinary waking life today, pause at the exact moment betwee
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: अतः सततमुद्युक्तः स्पन्दतत्त्वविविक्तये । जाग्रदेव निजं भावमचिरेणाधिगच्छति ॥ २१ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ataḥ satatamudyuktaḥ spandatattvaviviktaye | jāgradeva nijaṃ bhāvamacireṇādhigacchati || 21 ||
+- kind: translation
+  label: Pratibha Translation
+  body: The person who with fieriness tends toward the profound sacred tremor reaches his true nature
+    even within activity.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Our yoga is not a yoga that is separated from the world. It is actualized in action. Meditation
+    is a state, not an activity. For the person who enters the nonmeditation of Mahamudra, all is meditation,
+    and action is as peaceful as sitting in solitude. At the heart of the great effervescence of the world,
+    the person who has reached silence goes through life without the least trouble. There is nothing in
+    my experience that is not true. If there were anything at all untrue, how could I presume to guide
+    others? When I affirm my truth, there is no affirming mind and no affirmed objects; that is why I
+    dare tell people. For those who have attained the Way, there is nothing that is not the Way. You must
+    wait for complete nakedness before attaining realization. If you want to be in harmony with a master,
+    simply know your own mind!
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse or throb of consciousness underlying
+      every perception, movement, and state → ‘vibration/energy’ physicalizes or New-Ages the throb of
+      consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: vivikti (विविक्ति)
+    definition: vi- + √vic → separation/isolation → discernment; the act of distinguishing the ever-present
+      awareness from the objects it reveals → ‘isolation’ as loneliness misses discriminative separation
+      that frees
+  - term: jāgrat (जाग्रत्)
+    definition: √jāgṛ ‘be awake’ → waking state → the ordinary waking state, here affirmed as itself the
+      field where realization occurs → ‘waking’ as sleep’s opposite misses a formal state among three
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts locate realization not in withdrawal from activity but in sustained attentional
+      return *within* ongoing engagement—the Spandakarika through 'fieriness' tending toward tremor amid
+      activity, the Gita through iterative yoga-mastery that repeatedly gathers dispersed attention back
+      to center.
+    divergence: The Spandakarika emphasizes a sacred tremor (spanda) as the vehicle of recognition, while
+      the Gita frames the work as disciplined habituation and mental regulation—one mystical, one methodological.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Tao Te Ching — The Sage’s Unfixed Mind
+    resonance: 'Both reject a fixed, individual will as the locus of truth: the Spandakarika''s ''true
+      nature'' emerges through surrender to the profound tremor rather than ego-driven action, and the
+      Taoist sage abandons his ''invariable mind'' to become transparent to the people''s mind.'
+    divergence: The Spandakarika grounds this surrender in a cosmic sacred vibration (spanda), while the
+      Tao Te Ching grounds it in responsive emptiness and non-action (wu wei)—one theistic-mystical, one
+      naturalistic-cosmological.
+    passage_id: tao_te_ching.ttc_md_054
+  layer_provenance: generated_grounded

@@ -84,3 +84,111 @@ abhyasa: 'Throughout one ordinary activity today—eating, walking, or speaking�
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: एतना भूतेंद्रियेṣu धर्मलक्षणावस्था परिवर्तनाः व्याख्याताḥ
+- kind: iast
+  label: IAST
+  body: etena bhūtendriyeṣu dharmalakṣaṇāvasthāpariṇāmā vyākhyātāḥ
+- kind: translation
+  label: Pratibha Translation
+  body: By what has been stated in the preceding three sutras, the transformations of the visible characteristics,
+    time factors and conditions of the elements and senses are also explained.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this sutra is that the same causal principles that govern the mind’s fluctuations
+    also govern the sensory apparatus. Patanjali’s system is not limited to the mind; it is a universal
+    law of change that applies to all phenomena, including the senses. Here the contested move is the
+    extension of the notion of ‘parinam’ (transformation) from the mental to the physical domain. While
+    some commentators have treated this as a mere technical remark, I argue that it is a profound ontological
+    statement: the senses are not fixed instruments but dynamic participants in the play of prakṛti. In
+    the Sāṃkhya framework, the senses are part of the material world (prakṛti) and are thus subject to
+    the same evolutionary processes that produce the mind’s vṛtti. This sutra therefore bridges the gap
+    between the two systems, showing that the same causal matrix operates across the spectrum of reality.
+    Existentially, it invites the practitioner to recognize that by observing the subtle changes in sensory
+    experience, one can map the unfolding of the mind’s patterns. The Satchidananda aphorism underscores
+    this by pointing out that the transformations of the senses are as much a part of the yogic path as
+    the transformations of the mind. By consciously noting how the characteristics of the senses shift
+    with different actions, one cultivates a deeper awareness that is essential for progressing toward
+    samādhi.
+
+
+    Key Terms
+
+
+    **bhūtendriya (भूतेंद्रिय)** — etymology: bhūti (element) + endriya (sense) -> the senses as elements
+    of the body; tradition meaning: the five sensory organs; default translation ''senses'' omits the
+    material aspect that makes them part of prakṛti.
+
+
+    **dharmalakṣaṇa (धर्मलक्षण)** — etymology: dharm (law) + lakṣaṇa (characteristic) -> the lawful characteristics
+    that define each element; tradition meaning: the inherent properties that determine how an element
+    behaves; default translation ''characteristics'' misses the normative, causal dimension.
+
+
+    **avastha (अवस्था)** — etymology: ava (down) + sthā (to stand) -> a state or condition; tradition
+    meaning: the dynamic condition of a phenomenon at a given moment; default translation ''state'' can
+    read as static.
+
+
+    **parinam (परिणाम)** — etymology: pari (around) + n (to go) -> transformation; tradition meaning:
+    the result of a causal chain; default translation ''transformation'' may underplay the causal process.
+
+
+    Cross-Tradition Resonances
+
+
+    **Patanjali, Yoga Sūtra 1.1:** etena ... vyākhyātāḥ parallels the opening clause ‘Yogaś citta‑vṛtti‑nirodhaḥ’
+    in that both use a demonstrative to refer back to a preceding statement and conclude with a verb of
+    explanation.
+
+    *Divergence:* While 1.1 focuses on the mind’s cessation, 3.13 extends the explanatory scope to the
+    sensory apparatus, thereby broadening the domain of yoga’s causal analysis.
+
+
+    **Patanjali, Yoga Sūtra 3.12:** The structure ‘etena ... vyākhyātāḥ’ mirrors the earlier sutra’s use
+    of ‘etena’ to link the present statement with the previous three, creating a cumulative explanatory
+    chain.
+
+    *Divergence:* In 3.12 the focus is on the transformation of the mind’s vṛtti, whereas 3.13 shifts
+    to the transformation of the senses, highlighting a parallel but distinct causal pathway.
+
+
+    **Sāṃkhya Kāṇḍa, Tattva‑vyākhyā:** Both texts employ the term ‘parinam’ to denote change within the
+    material realm, underscoring the shared ontology of change.
+
+    *Divergence:* Sāṃkhya’s parinam is purely material, while Patanjali’s includes the subtle interplay
+    with the mind, illustrating yoga’s integrative approach.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: pariṇāma (परिणाम)
+    definition: 'pari-√nam ‘bend around / transform’ → transformation -> in “Transformations of Senses”:
+      the lawful unfolding of prakṛti through successive modifications of form, quality, and state ->
+      not random change; structured transformation of dharma/lakṣaṇa/avasthā that saṃyama can know'
+  - term: dharma (धर्म)
+    definition: '√dhṛ ‘uphold’ → property/quality upheld by a substrate -> in “Transformations of Senses”:
+      Intrinsic quality, essential characteristic, or defining form of a thing -> not only ‘duty/religion’;
+      here often a property-phase of an underlying dharmin'
+    lemma_id: dharma
+  - term: atha (अथ)
+    definition: 'atha ‘now’ — auspicious commencement particle -> in “Transformations of Senses”: By what
+      has been stated in the preceding three sutras, the transformations of the visible characteristics,
+      time facto… -> not filler ‘now then’; marks readiness and the opening of authorized instruction'
+  - term: bhūtendriya (भूतेंद्रिय)
+    definition: 'bhūti (element) + endriya (sense) -> the senses as elements of the body -> in “Transformations
+      of Senses”: tradition meaning: the five sensory organs -> ''senses'' omits the material aspect that
+      makes them part of prakṛti'
+  - term: dharmalakṣaṇa (धर्मलक्षण)
+    definition: 'dharm (law) + lakṣaṇa (characteristic) -> the lawful characteristics that define each
+      element -> in “Transformations of Senses”: tradition meaning: the inherent properties that determine
+      how an element behaves -> ''characteristics'' misses the normative, causal dimension'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe how the characteristics of your senses change with your actions, and note these changes.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: By this [what has been said in the preceding three sūtras], the transformations of the visible
+    characteristics, time factors and conditions of elements and senses are also described.

@@ -129,3 +129,125 @@ abhyasa: 'Take the list Zhuangzi recites to the skull and turn it on yourself. S
   is the skull''s teaching, available to you today.'
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '莊子之楚，見空髑髏，髐然有形。
+
+    撽以馬捶，因而問之，曰：「夫子貪生失理，而為此乎？
+
+    將子有亡國之事、斧鋮之誅，而為此乎？
+
+    將子有不善之行，愧遺父母妻子之醜而為此乎？
+
+    將子有凍餒之患，而為此乎？
+
+    將子之春秋故及此乎？
+
+    」於是語卒，援髑髏，枕而臥。
+
+    夜半，髑髏見夢曰：「子之談者似辯士，視子所言，皆生人之累也，死則無此矣。
+
+    子欲聞死之說乎？'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Zhuangzi traveled to Chu and saw an empty skull, bleached and formed. He struck it with his whip
+    and asked: ''Did you lose the Way through greed for life? Did you fall to execution? Did shame over
+    unfilial conduct bring you here? Or did hunger and cold do this? Or simply the turning of seasons?''
+    When he finished speaking, he took the skull as a pillow and slept. At midnight the skull appeared
+    in dream and said: ''Your words seem like a debater''s—all you mentioned are the burdens of the living.
+    In death, none of these exist. Would you hear the account of death?'' Zhuangzi said: ''Yes.'' The
+    skull said: ''In death, there is no ruler above, no minister below, no tasks of four seasons. I follow
+    Heaven and Earth as my spring and autumn. Even a king facing south in glory cannot surpass this.''
+    When Zhuangzi offered to restore the skull to human form, it wrinkled its brow and said: ''How could
+    I abandon the joy of a southern-facing king to return to human toil?'''
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The contested move here is Zhuangzi''s inversion of the life/death hierarchy: he treats the skull
+    not as cautionary memento but as sage-teacher. The skull''s refusal to be resurrected—even as a king—challenges
+    the Confucian assumption that prolonged life and social status constitute goods. This passage performs
+    what it teaches: by letting the dead speak, Zhuangzi suspends the living world''s value-system (富貴壽善)
+    and reveals it as a self-imposed prison of ''toil'' (勞). The philosophical claim is that perfect happiness
+    (至樂) requires abandoning the very metrics by which happiness is measured. The contested move is whether
+    this represents genuine liberation or escapist denial—Zhuangzi''s text never resolves this, instead
+    letting the skull''s laughter hang unanswered.
+
+
+    Key Terms:
+
+
+    **無為 wúwéi** - non-action/non-forcing. In this passage: the skull''s state of being-without-striving.
+    Zhuangzi sense: not passivity but alignment with transformation itself. Translation stakes: ''non-action''
+    risks suggesting laziness; ''effortlessness'' risks suggesting ease. Here it means: cessation of the
+    ego''s projects.
+
+    **至樂 zhìlè** - perfect/ultimate happiness. Graph: 至 (arrive at) + 樂 (joy). Zhuangzi sense: not accumulation
+    of pleasures but the happiness that comes from no longer *seeking* happiness. Translation stakes:
+    ''perfect happiness'' suggests achievement; ''ultimate joy'' suggests transcendence. The passage shows
+    it as *subtraction*.
+
+    **勞 láo** - toil/burden/exertion. In context: the skull rejects 人間之勞—human-world toil. Zhuangzi sense:
+    not mere physical labor but the existential exhaustion of maintaining identity, status, fear. Translation
+    stakes: ''labor'' is too narrow; ''suffering'' too broad. Here: the *work* of being human.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: wù huà (物化)
+    definition: '物 “thing/being” + 化 “transform” -> in this passage (the Skull''s Laughter: Death as Liberation
+      from Human Toil), transformation of things: identity-forms shift across conditions without a fixed
+      owner-self -> trap: karmic transmigration doctrine; wù huà is broader processual metamorphosis (butterfly,
+      Kun/Peng)'
+    lemma_id: wu_hua
+    sense_id: wu_hua.zhuangzi
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (the Skull''s Laughter: Death as Liberation from Human Toil), the nameless source-and-course
+      that lets beings move by their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed
+      doctrine one can possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: zìrán (自然)
+    definition: '自然 “self-so” — thus-of-itself, not “picturesque nature” -> in this passage (the Skull''s
+      Laughter: Death as Liberation from Human Toil), spontaneous so-ness: things unfolding without forced
+      contrivance -> trap: Romantic wilderness aesthetics; zìrán is ontological non-forcing, not scenery'
+    lemma_id: ziran
+    sense_id: ziran.daoist
+  - term: xīn (心)
+    definition: '心 “heart-mind” — thought, feeling, and responsiveness undivided -> in this passage (the
+      Skull''s Laughter: Death as Liberation from Human Toil), the heart-mind to be emptied, still, or
+      freed from right/wrong warfare -> trap: brain-only “mind” or sentimental “heart”; xīn is the whole
+      affective-cognitive center'
+    lemma_id: xin
+    sense_id: xin.chinese
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Epicurus, Letter to Menoeceus: ''When we say pleasure is the goal of life, we mean not
+      the pleasures of the debauched...but freedom from bodily pain and mental anguish.'''
+    resonance: 'Both texts invert hedonism: true pleasure comes from *reduction* of desire, not multiplication.
+      Both use the body as measure of what is necessary.'
+    divergence: Epicurus seeks a stable state of minimal pain; Zhuangzi's skull suggests that *transformation
+      itself* (變) is the baseline. Epicurus builds a philosophy; Zhuangzi lets the dead laugh at philosophy.
+    passage_id: ''
+  - citation: 'Montaigne, Essays III.12 ''A Custom of the Isle of Cea'': death-acceptance as freedom from
+      social performance.'
+    resonance: Both use death-imagery to expose the artificiality of social rank and mourning rituals.
+      Both suggest the dead have already achieved what the living pursue.
+    divergence: 'Montaigne argues for rational acceptance of mortality; Zhuangzi''s skull actively *prefers*
+      death to kingship. The difference: resignation vs. affirmation.'
+    passage_id: ''
+  - citation: 'Daoism (later): the xian (immortal) who transcends the human realm through wu-wei.'
+    resonance: Zhuangzi's skull is a kind of xian—one who has shed all human burdens and now dwells in
+      cosmic transformation.
+    divergence: Later Daoism seeks to *achieve* immortality through practice; Zhuangzi's text suggests
+      death *is* the immortal state—no effort required.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'For three days, each morning upon waking, before rising: lie still and imagine you are the skull.
+    Observe what anxieties, plans, and social roles arise in your mind. Do not suppress them. Simply notice:
+    which of these would the skull refuse? Which persist even in the imagination of being dead? This is
+    not morbidity but clarity. The skull teaches by subtraction: what remains when you remove rank, beauty,
+    appetite, legacy? Rest in that remainder.'

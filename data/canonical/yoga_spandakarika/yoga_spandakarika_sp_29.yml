@@ -96,3 +96,66 @@ abhyasa: 'In the next conversation you have, listen until you hear a word that s
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: यस्मात्सर्वमयो जीवः सर्वभावसमुद्भवात् । तत्संवेदनरूपेण तादात्म्यप्रतिपत्तितः ॥ २८ ॥ तस्माच्छब्दार्थचिन्तासु
+    न सावस्था न या शिवः । भोक्तैव भोग्यभावेन सदा सर्वत्र संस्थितः ॥ २९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yasmātsarvamayo jīvaḥ sarvabhāvasamudbhavāt | tatsaṃvedanarūpeṇa tādātmyapratipattitaḥ || 28 ||
+    tasmācchabdārthacintāsu na sāvasthā na yā śivaḥ | bhoktaiva bhogyabhāvena sadā sarvatra saṃsthitaḥ
+    || 29 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Shared source passage with Stanza 28. See Stanza 28 for the full translation and commentary.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: jīva (जीव)
+    definition: √jīv ‘live’ → living being → the individual living self; here shown to be composed of
+      the whole, not a separate fragment → ‘soul’ dualizes; here the contracted experiencer (and in VBT,
+      the in-breath current)
+    lemma_id: jiva
+    sense_id: jiva.vedanta
+  - term: bhoktṛ / bhogya (भोक्तृ / भोग्य)
+    definition: √bhuj ‘enjoy’ → enjoyer / enjoyed → the experiencer and the experienced; the verse collapses
+      them into one — the experienced is the experiencer in disguise → ‘subject/object’ logic misses the
+      experiential pair the practice unbinds
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness that appears as every
+      word, meaning, and thought → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness
+      itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — 8.1 — 8.4
+    resonance: Both texts use a direct, aphoristic pause to disclose the nature of bondage and liberation
+      through immediate insight rather than discursive reasoning. The Spandakarika's 'let the insight
+      disclose itself directly' mirrors the Astavakra Gita's stark binary formulation (bondage when mind
+      desires/grieves; liberation when it does not) as a contemplative pointer meant to arrest conceptual
+      mind.
+    divergence: The Astavakra Gita locates the pivot in mental content (desire and sorrow), while Spandakarika
+      emphasizes the vibratory pulse (spanda) of consciousness itself as the ground of action—a more ontological
+      than psychological framing.
+    passage_id: astavakra_gita.asg_sum_08_01_08_04
+  - citation: 'Vijnana Bhairava — Yukti #106'
+    resonance: Both texts suspend ordinary causal logic by posing a paradoxical question that forces the
+      reader to abandon conceptual frameworks. Vijnana Bhairava's 'How can the unchanging Self be the
+      locus of cognition or action?' and Spandakarika's instruction to 'pause interpretation and let insight
+      disclose itself' both use aporia as a gateway to non-dual recognition.
+    divergence: Vijnana Bhairava emphasizes the logical impossibility (unchanging Self cannot be locus),
+      while Spandakarika emphasizes the phenomenological disclosure of action itself as the teaching—one
+      is via negation, the other via direct presence.
+    passage_id: vijnana_bhairava.yukti_106
+  layer_provenance: generated_grounded

@@ -194,3 +194,97 @@ section: Genjōkōan
 translation_provenance: Rendered from the public-domain source (Classical Japanese/Chinese (kanbun)).
   Study rendering; not a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Japanese)
+  body: '自己をはこびて万法を修、証するを迷とす。
+
+    万法すすみて自己を修、証するは、さとりなり。
+
+    迷を大悟するは諸仏なり。
+
+    悟に大迷なるは衆生なり。
+
+    さらに悟上に得悟する漢あり。
+
+    迷中又迷の漢あり。
+
+    諸仏の、まさしく諸仏なるときは、自己は諸仏なり、と覚知することをもちいず。
+
+    しかあれども、証仏なり。
+
+    仏を証しもってゆく。
+
+    身心を挙して色を見取し、身心を挙して声を聴取するに、したしく会取すれども、かがみにかげをやどすがごとくにあらず。
+
+    水と月とのごとくにあらず。
+
+    一方を証するときは一方はくらし。'
+- kind: iast
+  label: Transliteration note
+  body: See Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: To carry the self forward and practice-realize the myriad dharmas is delusion. That the myriad
+    dharmas come forth and practice-realize the self is awakening. Those who greatly awaken to delusion
+    are buddhas. Those who are greatly deluded about awakening are sentient beings. Further, there are
+    those who attain awakening beyond awakening, and those who are deluded within delusion. When buddhas
+    are truly buddhas, they do not need to be aware that they are buddhas — yet they are verified buddhas,
+    and they go on verifying buddha.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Delusion is self-as-agent pushing into the world; awakening is the world verifying the self.
+    The contested inversion refuses spiritual athleticism as the essence of the path. Buddhas need not
+    self-congratulate as buddhas — verification continues without that identity-claim. Existentially:
+    notice when practice is you carrying a project called enlightenment; soften into being practiced by
+    what appears.
+
+
+    Key Terms
+
+
+    **修証 shushō** — "practice-realization." Not practice then later realization; one compound.
+
+
+    **迷 / 悟 mei / go** — delusion / awakening as modes of relation to the myriad dharmas.
+
+
+    Cross-Tradition Resonances
+
+
+    **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality
+    of accumulation.
+
+    *Divergence:* Eckhart empties for God''s occupancy; Dōgen''s forgetting is verified by the myriad
+    dharmas.
+
+
+    **Zhuangzi (forgetting the self / useless tree):** Both loosen fixed self-measure.
+
+    *Divergence:* Zhuangzi often ends in spontaneous ease; Dōgen binds forgetting to practice-realization.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: shushō (修証)
+    definition: '‘practice-realization’ → practice and enlightenment are not two stages—doing is already
+      verification Here: To carry the self forward and practice-realize the myriad dharmas is delusion.
+      Trap: practice-as-means toward a later prize'
+  - term: delusion / awakening
+    definition: 'Japanese meigo / satori polarity in Dōgen → not two realms—delusion and awakening mutually
+      intimate in practice Here: delusion / awakening as modes of relation to the myriad dharmas. Trap:
+      binary conversion narrative'
+  - term: dharma (法)
+    definition: '‘phenomenon / Buddha-dharma’ → each thing as teaching and as event of awakening Here:
+      To carry the self forward and practice-realize the myriad dharmas is delusion. Trap: doctrine-only
+      reading'
+    lemma_id: dharma
+  - term: mushin / no-self
+    definition: '‘without self’ → myriad dharmas without a grasping self that carries them Here: Carrying
+      the Self Is Delusion; Being Confirmed by the Myriad Things Is Awakening Carrying the Self Is Delusion;
+      Being Confirmed by the Myriad Things Is Awakeni… Trap: personality deletion'
+    lemma_id: anatman
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story.
+    Then write one sentence: what verified me just now?'

@@ -82,3 +82,70 @@ abhyasa: 'Right now, place your hand on your chest and feel the pulse beneath yo
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: इयमेवामृतप्राप्तिरयमेवात्मनो ग्रहः । इयं निर्वाणदीक्षा च शिवसद्भावदायिनी ॥ ३२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: iyamevāmṛtaprāptirayamevātmano grahaḥ | iyaṃ nirvāṇadīkṣā ca śivasadbhāvadāyinī || 32 ||
+- kind: translation
+  label: Pratibha Translation
+  body: This is the attainment of the supreme nectar, the immortality of samadhi, which reveals to the
+    tantrika his own nature.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Eyes open on space, without blinking, the body relaxed, thought at rest, there no longer exists
+    anything but ineffable reality flowing in the open space of our body, a vast mass grave where fertile
+    chaos decomposes, where the yogin and the yogini love to stroll, their reflections crisscrossing:
+    gods and goddesses, dakinis and dakas, dancing in the sky. No hope, no needs, nothing lacking, No
+    projection, no expectations, no personal history,'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: amṛta (अमृत)
+    definition: a- + mṛta ‘dead’ → deathless nectar → the 'deathless' or nectar of immortality; here,
+      the recognition that awareness itself is beyond birth and death → ‘immortality drink’ mythicizes
+      what is tasted as undying awareness-flavor
+  - term: nirvāṇa-dīkṣā (निर्वाणदीक्षा)
+    definition: nirvāṇa + dīkṣā ‘initiation’ → the initiation leading to liberation — here relocated from
+      external ritual to the inner event of self-recognition → Buddhist ‘nirvāṇa’ import + ritual ‘initiation’—here
+      a liberative initiation named in Śaiva key
+    lemma_id: nirvana
+    sense_id: nirvana.buddhist
+  - term: śiva-sadbhāva (शिवसद्भाव)
+    definition: Śiva + sad-bhāva ‘true being’ → the 'true being' or real existent-nature of Śiva, which
+      is disclosed as one's own nature rather than granted from outside → ‘true existence of Śiva’ theism
+      misses abiding in Śiva’s real nature
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read the stanza slowly three times. Keep one line in attention through the day, and return to
+    it whenever the mind contracts.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #9'
+    resonance: Both texts prescribe a disciplined inward attention (eyes closed or open without blinking)
+      directed into cranial/bodily space as the method for perceiving transcendent reality. The body becomes
+      the vessel through which ineffable consciousness is accessed via concentrated gaze.
+    divergence: The Spandakarika emphasizes eyes-open receptivity to space-as-fertile-chaos with divine
+      presences; the Vijnana Bhairava uses eyes-closed internal focus on the cranium as a more austere,
+      interiorized technique for perception.
+    passage_id: vijnana_bhairava.yukti_009
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: Both texts use spatial metaphor—open space, sky, boundlessness—to describe the nature of
+      mind itself when thought ceases. The mind is not a container but a dimensionless expanse that cannot
+      be circumscribed or located.
+    divergence: The Spandakarika grounds this boundlessness in the body's 'open space' as a lived, embodied
+      experience; Tilopa's Mahamudra treats mind-as-sky as a purely metaphysical principle independent
+      of somatic location.
+    passage_id: tilopa_mahamudra.til_002
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts frame the attainment of samadhi/yoga-mastery as iterative return of attention
+      rather than sudden breakthrough—a repeated discipline of steadying the mind and drawing it back
+      from dispersion to center.
+    divergence: The Spandakarika emphasizes the revelation of one's own nature through this process; the
+      Bhagavad Gita frames it as a practical mastery of body and habit without metaphysical claims about
+      self-revelation.
+    passage_id: bhagavad_gita.bg_md_006
+  layer_provenance: generated_grounded

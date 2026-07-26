@@ -81,3 +81,69 @@ abhyasa: 'Sit quietly for ten minutes. Do not choose an object to focus on — l
   as long as it lasts.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: यत्र यत्र मनो याति तत् तत् तेनैव तत्क्षणम् । परित्यज्यानवस्थित्या निस्तरङ्गस् ततो भवेत् ॥ १२९
+    ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yatra yatra mano yāti tat tat tenaiva tatkṣaṇam | parityajyānavasthityā nistaraṅgas tato bhavet
+    || 129 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #101
+
+    Wherever the mind goes, in that very instant let it abandon
+
+    whatever [it has alighted upon]. Due to having nothing to hang on
+
+    to, it then becomes ‘waveless’. || 129'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: nistaraṅga (निस्तरङ्ग)
+    definition: nis- + taraṅga ‘wave’ → waveless, without ripples — the mind's natural stillness when
+      it stops grasping → ‘waveless’ as flatline misses stillness that is not dead but unrippled
+  - term: anavasthiti (अनवस्थिति)
+    definition: an- + avasthiti ‘standing/state’ → non-abiding; refusing to settle or take up residence
+      anywhere → ‘instability’ misses the teaching’s refusal of any fixed foothold as ultimate
+  - term: tatkṣaṇam (तत्क्षणम्)
+    definition: 'tat + kṣaṇa → in that very moment → in that very instant — the immediacy required: release
+      the landing point the moment it forms → ‘instantly’ ads miss the verse’s claim of immediate fruition'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts prescribe iterative withdrawal of attention from dispersed content back to a
+      stable center or ground. Yukti 101 instructs the mind to abandon whatever it alights upon; the Gita
+      describes yoga-mastery as repeatedly returning attention from dispersion to center.
+    divergence: The Gita frames this as establishing body and regulating habit (a gradual stabilization
+      practice), while Yukti 101 emphasizes instantaneous abandonment and inward reversion to the knower
+      itself, a more radical discontinuity with content.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Shantideva Bodhicaryavatara — Stillness Before Insight
+    resonance: Both identify scattered attention as the gateway to suffering and prescribe gathered concentration
+      as the remedy. Yukti 101 implies that clarity arises when attention turns from content to the knower;
+      Shantideva warns that a scattered mind lives in the fangs of afflictions and prescribes steady concentration.
+    divergence: Shantideva emphasizes energy (vīrya) as the prerequisite for concentration and frames
+      the problem in terms of afflictions (kleśa), while Yukti 101 focuses on the immediate structural
+      move of attention itself, independent of energetic cultivation.
+    passage_id: shantideva_bodhicaryavatara.bca_08_solitude
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: Both point toward a ground of awareness that transcends the subject-object duality of content.
+      Yukti 101 directs attention to the knower beyond what is known; Tilopa describes mind's nature as
+      boundless and uncentered, like space itself.
+    divergence: Tilopa uses spatial metaphor and negation (no center, no circumference) to indicate mind's
+      nature, while Yukti 101 uses the phenomenological move of abandonment and reversion to the knower,
+      a more active epistemic gesture.
+    passage_id: tilopa_mahamudra.til_002
+  layer_provenance: generated_grounded

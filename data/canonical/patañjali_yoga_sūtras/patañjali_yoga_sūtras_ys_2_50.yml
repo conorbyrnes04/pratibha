@@ -84,3 +84,97 @@ abhyasa: On your next inhale, trace the breath's path upward through a single ch
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: बाह्याभ्यन्तरस्तम्भवृत्तिर् देशकालसंख्या भिः परिदृश्यो दीर्घसूक्ष्मः
+- kind: iast
+  label: IAST
+  body: bāhyābhyantarastambhavṛttir deśakālasaṃkhyābhiḥ paridṛṣṭo dīrghasūkṣmaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The breath, whether external, internal, or steady, is regulated by place, time, and number; it
+    can be long or short.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this passage is that pranāyāma is not merely a physical exercise but a systematic
+    modulation of the subtle energies that constitute the mind’s activity. By framing breath in terms
+    of *bāhyā*, *abhyaṃtara*, and *stambha*, the sutra situates the practice within the Sāṃkhya dualism
+    of *puruṣa* and *prakṛti*: the external and internal breaths correspond to the interplay of consciousness
+    and materiality, while the *stambha* (steady) breath represents the moment of stillness where *citta*
+    suspends its *vṛtti*. The sutra’s insistence on regulation through *deśa* (place), *kāla* (time),
+    and *saṃkhyā* (number) echoes the Samkhya notion of *saṃkhyā* as a quantitative principle governing
+    the evolution of *prakṛti*. The duality of long and short breaths mirrors the duality of *sūkṣma*
+    and *dīrgha* aspects of *citta*, offering a practical means to balance the subtle and gross. This
+    regulation is essential for achieving *samādhi*, as it aligns the breath with the *prāṇa* and *apāna*
+    channels, thereby purifying the *citta* and allowing *puruṣa* to observe without attachment. The sutra’s
+    brevity masks a profound methodological framework that integrates physiological control with metaphysical
+    insight, a hallmark of the Yoga tradition’s synthesis of body and mind.
+
+
+    Key Terms
+
+
+    **bāhyā (बाह्य)** — bāhyā -> ‘external’; in Sāṃkhya, it denotes the external aspect of *prakṛti*,
+    contrasting with the internal (*abhyaṃtara*), highlighting the duality of materiality.
+
+
+    **abhyaṃtara (आभ्यन्तर)** — abhyaṃtara -> ‘internal’; represents the internal processes of *prakṛti*,
+    encompassing subtle energies that influence *citta*.
+
+
+    **stambha (स्तम्भ)** — stambha -> ‘steady’; signifies the stabilized state of breath, aligning with
+    the Sāṃkhya principle of *saṃkhyā* as a quantitative regulator of *prakṛti*.
+
+
+    **kāla (काल)** — kāla -> ‘time’; in Yoga, time is a dimension of *saṃkhyā* that structures the evolution
+    of *citta*’s *vṛtti*.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.50:** Regulation of breath by place, time, and number mirrors the Sāṃkhya triad of
+    *puruṣa*, *prakṛti*, and *saṃkhyā*; the sutra’s structure parallels the Samkhya enumeration of principles.
+
+
+    **Patanjali, Yoga Sūtra 2.1:** Both sutras emphasize the importance of breath in controlling *citta*;
+    however, 2.50 diverges by explicitly linking breath to *saṃkhyā* (number), whereas 2.1 focuses on
+    the qualitative aspect of *prāṇa*.
+
+
+    **Vātsyāyana, Vātsyāyana Bṛhadāraṇyaka 1.2:** The idea of regulating breath by *deśa* (place) aligns
+    with Vātsyāyana’s discussion of *prāṇa* channels; the divergence lies in the sutra’s omission of specific
+    channel names, offering a more abstract framework.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Regulated Breath in Sādhana”: The
+      breath, whether external, internal, or steady, is regulated by place, time, and number; it can be
+      long or short. -> not ‘bad thoughts’ only — any cognitive wave (valid cognition, error, fantasy,
+      sleep, memory)'
+  - term: hāna (हान)
+    definition: '√hā ‘abandon’ → cessation/abandonment as goal -> in “Regulated Breath in Sādhana”: The
+      breath, whether external, internal, or steady, is regulated by place, time, and number; it can be
+      long or short. -> not repression; the ending of future suffering’s cause through viveka'
+  - term: bāhyā (बाह्य)
+    definition: 'source-term bāhyā -> in “Regulated Breath in Sādhana”: in Sāṃkhya, it denotes the external
+      aspect of *prakṛti*, contrasting with the internal (*abhyaṃtara*), highlighting the duality of materiality
+      -> default English flattens the technical work this term does here'
+  - term: abhyaṃtara (आभ्यन्तर)
+    definition: 'source-term abhyaṃtara -> in “Regulated Breath in Sādhana”: represents the internal processes
+      of *prakṛti*, encompassing subtle energies that influence *citta* -> default English flattens the
+      technical work this term does here'
+  - term: stambha (स्तम्भ)
+    definition: 'source-term stambha -> in “Regulated Breath in Sādhana”: signifies the stabilized state
+      of breath, aligning with the Sāṃkhya principle of *saṃkhyā* as a quantitative regulator of *prakṛti*
+      -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Regulate your breath by choosing an external, internal, or steady pattern, and adjust its length
+    and frequency according to the place, time, and number you set for yourself.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: (It is) external, internal, or steady; regulated

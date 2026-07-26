@@ -84,3 +84,65 @@ abhyasa: 'Sit quietly and choose one sense to suspend. The easiest is hearing: p
   object has been withdrawn.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: यस्य कस्येन्द्रियस्यापि व्याघाताच् च निरोधतः । प्रविष्टस्याद्वये शून्ये तत्रैवात्मा प्रकाशते ॥
+    ८९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yasya kasyendriyasyāpi vyāghātāc ca nirodhataḥ | praviṣṭasyādvaye śūnye tatraivātmā prakāśate
+    || 89 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #61
+
+    enter into the nondual Void—exactly there [the true nature of] the Self
+
+    manifests. || 89'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: indriya (इन्द्रिय)
+    definition: √ind ‘be powerful’ → sense faculty → a sense faculty (seeing, hearing, touch, etc.); the
+      channel through which consciousness contacts objects → ‘senses’ as organs miss faculties as powers
+      of consciousness
+  - term: śūnya (शून्य)
+    definition: śūnya ‘empty/void’ → emptiness or void — here the open, contentless space that appears
+      when a sense stops delivering objects → English ‘void’ suggests blank vacancy; here a threshold
+      that can disclose knowing
+    lemma_id: sunya
+    sense_id: sunya.shaiva
+  - term: advaya (अद्वय)
+    definition: a- + dvaya ‘two’ → nondual; free of the split between perceiver and perceived, where awareness
+      rests without an object to grasp → ‘nondual’ as slogan misses operative collapse of subject–object
+      split in this verse
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 8
+    resonance: 'Both texts locate the Self''s manifestation through a turning of attention inward to a
+      center or source: Plotinus describes the soul''s natural revolution around its own centre as the
+      source of being; Yukti 61 describes the Self manifesting when attention enters the nondual Void.
+      Each treats inward reorientation as revelatory of true nature.'
+    divergence: Plotinus frames this as the soul's continuous natural movement that we fail to perceive;
+      Vijnana Bhairava frames it as an intentional meditative entry into the Void that reveals what was
+      obscured by outward attention.
+    passage_id: plotinus_enneads.enn_vi_9_08
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: 'Both use the metaphor of boundlessness (Void, open sky) to describe the nature of consciousness/mind
+      when attention ceases to impose conceptual limits: the Self manifests in the nondual Void; mind''s
+      nature has no center and no circumference, resisting spatial indication.'
+    divergence: Vijnana Bhairava emphasizes entry into Void as the condition for Self-manifestation; Tilopa
+      emphasizes the impossibility of indicating or containing mind's nature, stressing its transcendence
+      of all demarcation rather than its revelatory presence.
+    passage_id: tilopa_mahamudra.til_002
+  layer_provenance: generated_grounded

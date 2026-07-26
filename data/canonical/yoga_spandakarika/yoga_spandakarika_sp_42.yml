@@ -85,3 +85,60 @@ abhyasa: 'When an inner light, sound, taste, or image arises unbidden during you
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: अतो विन्दुरतो नादो रूपमस्मादतो रसः । प्रवर्तन्तेऽचिरेणैव क्षोभकत्वेन देहिनः ॥ ४२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ato vindurato nādo rūpamasmādato rasaḥ | pravartante'cireṇaiva kṣobhakatvena dehinaḥ || 42 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Then, may light, sound, form, and taste come and impede the person who is still tied to the ego.
+- kind: commentary
+  label: Pratibha Commentary
+  body: When the inner gaze opens, sounds do nothing but caress the absolute substance of things, and
+    the ego loosens to the point where it becomes the Self. How can one call the act of disciplining the
+    mind This is for the person who has not understood the preceding stanza. Poor him! Hindered, tied
+    hand and foot, in total paralysis! And yet even this hindering, if we live it completely, is the key
+    to our liberation. The senses kill us or liberate us. The sensorial quest can be the tragic site of
+    illusion—or the expression of the divine within us. Do the gods know this inconceivable freedom? Do
+    we know it? Here again is an opportunity for healthy doubt. Why did we create the gods?
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: bindu (बिन्दु)
+    definition: bindu ‘drop/point’ → A concentrated point of inner light experienced in contemplative
+      absorption → ‘dot’ is trivial; here the condensed point of consciousness-light
+  - term: nāda (नाद)
+    definition: √nad ‘sound’ → resonance → subtle inner sound arising spontaneously within awareness →
+      ‘sound’ as acoustic misses subtle resonance prior to ordinary hearing
+  - term: kṣobha (क्षोभ)
+    definition: √kṣubh ‘shake’ → agitation → agitation or disturbance; the unsettling of the mind when
+      phenomena are grasped rather than witnessed → ‘stress’ psychologizes the shake that can reveal or
+      obscure spanda
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Astavakra Gita — Verse 1.8
+    resonance: 'Both texts diagnose ego-identification as a poisonous constraint (''bitten by the serpent
+      of egoism'' / ''tied to the ego'') and prescribe a shift in self-understanding as the antidote:
+      from ''I am the doer'' to non-doership, or from ego-bound perception to the Self. The move is identical:
+      reframe identity to dissolve bondage.'
+    divergence: Astavakra frames this as a sudden reversal of conviction (drinking nectar), while Spandakarika
+      describes a gradual opening of inner gaze where sensory objects cease to obstruct; one emphasizes
+      intellectual inversion, the other phenomenological transformation.
+    passage_id: astavakra_gita.asg_1_8
+  - citation: Patañjali Yoga Sūtras 4.4
+    resonance: 'Both isolate the ego-sense (ahaṃkāra) as the generative principle: Patañjali states it
+      alone creates minds; Spandakarika identifies it as the binding force that sensory impressions reinforce.
+      Each treats ego as the structural root of fragmentation and bondage.'
+    divergence: Patañjali's sūtra is metaphysical and causal (ego generates mental multiplicity), while
+      Spandakarika's commentary is phenomenological and relational (ego loosens when inner gaze opens
+      to the absolute substance of things).
+    passage_id: patañjali_yoga_sūtras.ys_4_04
+  layer_provenance: generated_grounded

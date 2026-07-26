@@ -11,23 +11,25 @@ thesis: The Sibyl's mouth does not whisper or refine—it rages (mainomenē).
 themes:
 - desire
 - truth
-source_excerpt: But the Sibyl with raging mouth uttering things solemn, rude and unadorned, reaches with her voice over a
-  thousand years, because of the God.
-translation_literal: But the Sibyl with raging mouth uttering things solemn, rude and unadorned, reaches with her voice over
-  a thousand years, because of the God.
-commentary: 'The Sibyl''s mouth does not whisper or refine—it rages (mainomenē). Her utterance is solemn, rude, unadorned
-  (semna, trachea, akosmeta): the words arrive stripped of ornament, resistant to easy hearing. Yet this very rawness, this
-  refusal of polish, is what allows her voice to traverse a thousand years. The paradox is not that truth endures despite
-  its harshness, but that the harshness *is* the condition of its reach. A smooth, decorated utterance would dissolve in time;
-  only what cuts—what offends the ear''s comfort—persists. Heraclitus here inverts the sophistic equation: eloquence does
-  not guarantee transmission; rather, the unadorned word, spoken from divine necessity (dia ton theon), carries further than
-  any rhetoric. The fragment teaches that authority and longevity belong not to what flatters or persuades, but to what remains
-  intractable, what refuses the listener''s desire for ease. The Sibyl''s raging is not emotion but precision—the sound of
-  meaning that will not bend to the age that hears it.'
+source_excerpt: But the Sibyl with raging mouth uttering things solemn, rude and unadorned, reaches with
+  her voice over a thousand years, because of the God.
+translation_literal: But the Sibyl with raging mouth uttering things solemn, rude and unadorned, reaches
+  with her voice over a thousand years, because of the God.
+commentary: 'The Sibyl''s mouth does not whisper or refine—it rages (mainomenē). Her utterance is solemn,
+  rude, unadorned (semna, trachea, akosmeta): the words arrive stripped of ornament, resistant to easy
+  hearing. Yet this very rawness, this refusal of polish, is what allows her voice to traverse a thousand
+  years. The paradox is not that truth endures despite its harshness, but that the harshness *is* the
+  condition of its reach. A smooth, decorated utterance would dissolve in time; only what cuts—what offends
+  the ear''s comfort—persists. Heraclitus here inverts the sophistic equation: eloquence does not guarantee
+  transmission; rather, the unadorned word, spoken from divine necessity (dia ton theon), carries further
+  than any rhetoric. The fragment teaches that authority and longevity belong not to what flatters or
+  persuades, but to what remains intractable, what refuses the listener''s desire for ease. The Sibyl''s
+  raging is not emotion but precision—the sound of meaning that will not bend to the age that hears it.'
 insight: ''
-practice: Speak one necessary thing aloud each day without rehearsal, without softening its edges for the listener's comfort—a
-  correction, a refusal, an unpopular observation—and notice whether you feel the urge to retract it, to add a joke or qualifier.
-  Let that urge arise and pass without acting on it. Observe what happens to the words once they leave your mouth unadorned.
+practice: Speak one necessary thing aloud each day without rehearsal, without softening its edges for
+  the listener's comfort—a correction, a refusal, an unpopular observation—and notice whether you feel
+  the urge to retract it, to add a joke or qualifier. Let that urge arise and pass without acting on it.
+  Observe what happens to the words once they leave your mouth unadorned.
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -41,43 +43,65 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: But the Sibyl with raging mouth uttering things solemn, rude and unadorned, reaches with her voice over a thousand
-    years, because of the God.
+  body: But the Sibyl with raging mouth uttering things solemn, rude and unadorned, reaches with her voice
+    over a thousand years, because of the God.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The Sibyl''s mouth does not whisper or refine—it rages (mainomenē). Her utterance is solemn, rude, unadorned (semna,
-    trachea, akosmeta): the words arrive stripped of ornament, resistant to easy hearing. Yet this very rawness, this refusal
-    of polish, is what allows her voice to traverse a thousand years. The paradox is not that truth endures despite its harshness,
-    but that the harshness *is* the condition of its reach. A smooth, decorated utterance would dissolve in time; only what
-    cuts—what offends the ear''s comfort—persists. Heraclitus here inverts the sophistic equation: eloquence does not guarantee
-    transmission; rather, the unadorned word, spoken from divine necessity (dia ton theon), carries further than any rhetoric.
-    The fragment teaches that authority and longevity belong not to what flatters or persuades, but to what remains intractable,
-    what refuses the listener''s desire for ease. The Sibyl''s raging is not emotion but precision—the sound of meaning that
-    will not bend to the age that hears it.'
+  body: 'The Sibyl''s mouth does not whisper or refine—it rages (mainomenē). Her utterance is solemn,
+    rude, unadorned (semna, trachea, akosmeta): the words arrive stripped of ornament, resistant to easy
+    hearing. Yet this very rawness, this refusal of polish, is what allows her voice to traverse a thousand
+    years. The paradox is not that truth endures despite its harshness, but that the harshness *is* the
+    condition of its reach. A smooth, decorated utterance would dissolve in time; only what cuts—what
+    offends the ear''s comfort—persists. Heraclitus here inverts the sophistic equation: eloquence does
+    not guarantee transmission; rather, the unadorned word, spoken from divine necessity (dia ton theon),
+    carries further than any rhetoric. The fragment teaches that authority and longevity belong not to
+    what flatters or persuades, but to what remains intractable, what refuses the listener''s desire for
+    ease. The Sibyl''s raging is not emotion but precision—the sound of meaning that will not bend to
+    the age that hears it.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (But the Sibyl with raging mouth uttering things solemn, rude and unadorned, reaches with
+      her voice over a t…), the shared pattern according to which all things occur — heard before it is
+      argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine
+      Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: αἰών (aiōn)
+    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage
+      (But the Sibyl with raging mouth uttering things solemn, rude and unadorned, reaches with her voice
+      over a t…), time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time
+      only; aiōn here is the age-character of the world-process'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: Speak one necessary thing aloud each day without rehearsal, without softening its edges for the listener's comfort—a
-    correction, a refusal, an unpopular observation—and notice whether you feel the urge to retract it, to add a joke or qualifier.
-    Let that urge arise and pass without acting on it. Observe what happens to the words once they leave your mouth unadorned.
+  body: Speak one necessary thing aloud each day without rehearsal, without softening its edges for the
+    listener's comfort—a correction, a refusal, an unpopular observation—and notice whether you feel the
+    urge to retract it, to add a joke or qualifier. Let that urge arise and pass without acting on it.
+    Observe what happens to the words once they leave your mouth unadorned.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 4
-    resonance: Both texts posit that ultimate truth-bearing utterance or awareness transcends ordinary knowledge and intellection—the
-      Sibyl's voice reaches across time through divine possession, while Plotinus describes awareness of the ultimate Principle
-      as surpassing the multiplicity of knowing itself.
-    divergence: Heraclitus grounds transcendent utterance in ecstatic speech (the raging mouth), whereas Plotinus locates
-      it in a presence or contemplative state that explicitly negates discursive knowing.
+    resonance: Both texts posit that ultimate truth-bearing utterance or awareness transcends ordinary
+      knowledge and intellection—the Sibyl's voice reaches across time through divine possession, while
+      Plotinus describes awareness of the ultimate Principle as surpassing the multiplicity of knowing
+      itself.
+    divergence: Heraclitus grounds transcendent utterance in ecstatic speech (the raging mouth), whereas
+      Plotinus locates it in a presence or contemplative state that explicitly negates discursive knowing.
     passage_id: plotinus_enneads.enn_vi_9_04
   - citation: Yoginihrdaya — Cakrasaṃketa
-    resonance: 'Both texts compress cosmological generation into a single paradoxical act of self-recognition or self-beholding:
-      the Sibyl''s voice reaches across time through divine agency, and the Supreme Power''s self-beholding (sphurattā) generates
-      the entire cakra—each makes manifestation itself an act of reflexive awareness.'
-    divergence: Heraclitus emphasizes the temporal reach and simplicity of utterance, while the Yoginihrdaya emphasizes the
-      spatial and energetic unfolding of divine self-perception through śakti.
+    resonance: 'Both texts compress cosmological generation into a single paradoxical act of self-recognition
+      or self-beholding: the Sibyl''s voice reaches across time through divine agency, and the Supreme
+      Power''s self-beholding (sphurattā) generates the entire cakra—each makes manifestation itself an
+      act of reflexive awareness.'
+    divergence: Heraclitus emphasizes the temporal reach and simplicity of utterance, while the Yoginihrdaya
+      emphasizes the spatial and energetic unfolding of divine self-perception through śakti.
     passage_id: yoginihrdaya.yh_006
   layer_provenance: generated_grounded
 appendixes: []

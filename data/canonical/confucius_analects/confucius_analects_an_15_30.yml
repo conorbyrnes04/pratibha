@@ -9,36 +9,32 @@ title: I Have Been the Whole Day Without Eating
 unit_type: sutra
 sanskrit_devanagari: 子曰：「吾嘗終日不食，終夜不寢，以思，無益，不如學也。」
 sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
-translation_literal: 'The Master said: I once spent an entire day without eating and a whole night without
-  sleeping, just to think — but it did no good. Better to learn.'
-commentary: 'Confucius here reflects on his own experiment with pure, unaided reflection. He deliberately
-  deprived himself of food and rest to devote himself entirely to thinking, and found the effort barren.
-  The lesson is not that thought is worthless — elsewhere he warns that learning without reflection leaves
-  one lost — but that thinking cut off from study runs in circles, feeding on nothing but itself. Genuine
-  understanding requires an outside source: the accumulated wisdom of texts, teachers, and inherited example.
-  Xué 學, learning, is not passive absorption; it is the discipline of encountering what others have discovered
-  so that one''s own reflection has material to work on. Notice too that Confucius offers this as personal
-  testimony rather than abstract doctrine. He speaks as someone who tried the harder, lonelier path and
-  reports honestly that it failed. This is characteristic of his teaching style: he does not merely command
-  study, he confesses the poverty of its alternative. The exemplary person values effort but directs it
-  wisely, and here wisdom means humility — recognizing that one cannot spin all truth from oneself.
+translation_literal: 'The Master said: I once spent an entire day without eating and a whole night without sleeping, just
+  to think — but it did no good. Better to learn.'
+commentary: 'Confucius here reflects on his own experiment with pure, unaided reflection. He deliberately deprived himself
+  of food and rest to devote himself entirely to thinking, and found the effort barren. The lesson is not that thought is
+  worthless — elsewhere he warns that learning without reflection leaves one lost — but that thinking cut off from study runs
+  in circles, feeding on nothing but itself. Genuine understanding requires an outside source: the accumulated wisdom of texts,
+  teachers, and inherited example. Xué 學, learning, is not passive absorption; it is the discipline of encountering what others
+  have discovered so that one''s own reflection has material to work on. Notice too that Confucius offers this as personal
+  testimony rather than abstract doctrine. He speaks as someone who tried the harder, lonelier path and reports honestly that
+  it failed. This is characteristic of his teaching style: he does not merely command study, he confesses the poverty of its
+  alternative. The exemplary person values effort but directs it wisely, and here wisdom means humility — recognizing that
+  one cannot spin all truth from oneself.
 
 
   Key Terms
 
 
-  **學 (xué)** — learning or study — the disciplined intake of knowledge from outside oneself, from texts,
-  teachers, and example.
+  **學 (xué)** — learning or study — the disciplined intake of knowledge from outside oneself, from texts, teachers, and example.
 
-  **思 (sī)** — thinking or reflection — inner mental effort, which Confucius says is fruitless when detached
-  from learning.'
-insight: '«I Have Been the Whole Day Without Eating» treats cultivation as a public-and-private craft:
-  virtue is not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted
-  by improper gain.'
-practice: 'The next time you are stuck on a problem and find yourself endlessly turning it over in your
-  head, stop. Set a timer for the loop you are in, and instead of thinking harder, go learn something:
-  read one relevant article, ask a person who knows more, or open a book on the subject. Notice whether
-  the fresh input moves you further in ten minutes than an hour of solitary rumination did.'
+  **思 (sī)** — thinking or reflection — inner mental effort, which Confucius says is fruitless when detached from learning.'
+insight: '«I Have Been the Whole Day Without Eating» treats cultivation as a public-and-private craft: virtue is not a mood
+  but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'The next time you are stuck on a problem and find yourself endlessly turning it over in your head, stop. Set a
+  timer for the loop you are in, and instead of thinking harder, go learn something: read one relevant article, ask a person
+  who knows more, or open a book on the subject. Notice whether the fresh input moves you further in ten minutes than an hour
+  of solitary rumination did.'
 upaya: ''
 themes:
 - action
@@ -64,11 +60,44 @@ provenance:
   section: Analects 15.30
   original_id: AN_15_30
   source_reference: ''
-translation: 'The Master said: I once spent an entire day without eating and a whole night without sleeping,
-  just to think — but it did no good. Better to learn.'
-abhyasa: 'The next time you are stuck on a problem and find yourself endlessly turning it over in your
-  head, stop. Set a timer for the loop you are in, and instead of thinking harder, go learn something:
-  read one relevant article, ask a person who knows more, or open a book on the subject. Notice whether
-  the fresh input moves you further in ten minutes than an hour of solitary rumination did.'
-translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
-  a critical edition.
+translation: 'The Master said: I once spent an entire day without eating and a whole night without sleeping, just to think
+  — but it did no good. Better to learn.'
+abhyasa: 'The next time you are stuck on a problem and find yourself endlessly turning it over in your head, stop. Set a timer
+  for the loop you are in, and instead of thinking harder, go learn something: read one relevant article, ask a person who
+  knows more, or open a book on the subject. Notice whether the fresh input moves you further in ten minutes than an hour
+  of solitary rumination did.'
+translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not a critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 子曰：「吾嘗終日不食，終夜不寢，以思，無益，不如學也。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: The Master said, 'I have been the whole day without eating, and the whole night without sleeping:— occupied with thinking.
+    It was of no use. The better plan is to learn.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«I Have Been the Whole Day Without Eating» treats cultivation as a public-and-private craft: virtue is not a mood
+    but a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks
+    a living reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force
+    lands in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is the demand
+    of a living tradition: insight without application remains incomplete. Return again to the original wording when the mind
+    wants to smooth the edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: sī (思)
+    definition: 'thinking all day/night without eating/sleeping → useless alone → trap: anti-intellectualism'
+  - term: xué (學)
+    definition: 'learning → must pair with thought → trap: cram school'
+  - term: wú yì (無益)
+    definition: 'of no benefit → pure rumination’s verdict → trap: productivity metric'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'

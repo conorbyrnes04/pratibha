@@ -75,3 +75,71 @@ abhyasa: 'Throughout today, whenever you notice something stopping — a convers
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: यत्र स्थितमिदं सर्वं कार्यं यस्माच्च निर्गतम् तस्यानावृतरूपत्वान्न निरोधोऽस्ति कुत्रचित् ॥ २ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yatra sthitamidaṃ sarvaṃ kāryaṃ yasmācca nirgatam tasyānāvṛtarūpatvānna nirodho'sti kutracit ||
+    2 ||
+- kind: translation
+  label: Pratibha Translation
+  body: The sacred tremor, the very place of creation and return, is completely limitless because its
+    nature is formless.
+- kind: commentary
+  label: Pratibha Commentary
+  body: The most majestic tree is contained within a tiny seed. Similarly, the Self, the heart revealed
+    by the sacred tremor, possesses the capacity to be the universal seed. All the worlds reside in the
+    kernel of the heart. The heart is limitless and, as it has no form, it can contain totality. When,
+    to us, things seem to be exterior, this is because the heart is still deaf to limitlessness. If the
+    world were not within us, from where would it emerge, in what place would it be dissolved? The sacred
+    tremor is completely limitless because its form is so fleeting that we cannot apprehend it. Nothing
+    can keep the yogini and the yogin from experiencing this on their own. Once a person becomes peaceful,
+    her unlimited nature emerges, and the whole cosmos recognizes her. There are no ties other than the
+    differentiating constructions of thought. Return to the source, and you will find the sacred tremor
+    of absolute freedom.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kārya (कार्य)
+    definition: √kṛ → that which is to be done/effect → the effected, produced world; the totality of
+      manifest objects and phenomena → ‘effect/product’ misses the whole manifested field as effect of
+      consciousness
+  - term: anāvṛta (अनावृत)
+    definition: an- + āvṛta ‘covered’ → un-veiled, uncoverable; describing the ground whose nature can
+      never be concealed → ‘uncovered’ is weak—the ground that cannot be veiled even when ignored
+  - term: nirodha (निरोध)
+    definition: ni- + √rudh ‘obstruct’ → cessation/block → obstruction, blocking, cessation — here denied
+      of the spanda ground → Pātañjala ‘suppression’ is too violent for this verse’s sense of non-obstruction/cessation
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 7
+    resonance: 'Both texts posit a singular, formless source that paradoxically generates infinite differentiation:
+      the Spandakarika''s ''limitless'' tremor contains all creation within formlessness, while Pratyabhijnahrdayam''s
+      One Supreme Self becomes multiple (double, triple, fourfold, etc.) without losing unity.'
+    divergence: Spandakarika emphasizes the *vibration* or *pulsation* (spanda) as the generative mechanism,
+      whereas Pratyabhijnahrdayam stresses *recognition* (pratyabhijna) of the Self's inherent power of
+      manifestation as the philosophical framework.
+    passage_id: pratyabhijnahrdayam.phr_007
+  - citation: Patañjali Yoga Sūtras 4.34
+    resonance: 'Both describe liberation as a return to formless independence: the Spandakarika''s ''completely
+      limitless'' nature mirrors Patañjali''s supreme state where consciousness settles ''in its own pure
+      nature'' after the guṇas dissolve, each marking freedom as reversion to undifferentiated essence.'
+    divergence: Spandakarika locates this freedom within the creative tremor itself (non-dual), while
+      Patañjali's Yoga posits a dualism where Purusha's independence requires separation from Prakṛti's
+      qualities.
+    passage_id: patañjali_yoga_sūtras.ys_4_34
+  - citation: Tao Te Ching — The Unnamed Way
+    resonance: 'Both identify the ultimate reality as formless and beyond naming: the Spandakarika''s
+      tremor is ''formless'' and the source of all form, paralleling the Tao Te Ching''s Way (dào) which
+      ''has no name'' yet generates the named world.'
+    divergence: Spandakarika frames formlessness as dynamic creative vibration rooted in consciousness,
+      while Tao Te Ching presents it as a non-conscious, impersonal principle of natural process.
+    passage_id: tao_te_ching.ttc_md_041
+  layer_provenance: generated_grounded

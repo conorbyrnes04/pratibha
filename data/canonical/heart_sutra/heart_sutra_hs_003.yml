@@ -105,3 +105,110 @@ abhyasa: 'Walk forward without destination—each step a ''gate,'' each threshol
 translation_provenance: Rendered from the public-domain source (Sanskrit (IAST)). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'prajñāpāramitā mahā-mantraḥ ... sarva-duḥkha-praśamanaḥ satyam amithyatvāt. tadyathā: **gate
+    gate pāragate pārasaṃgate bodhi svāhā.**
+
+
+    Devanagari (mantra, source-verified): गते गते पारगते पारसंगते बोधि स्वाहा
+
+
+    *(Sanskrit, IAST, source-verified from GRETIL; mantra Devanagari cross-checked.)*'
+- kind: iast
+  label: IAST
+  body: 'gate (gone) gate (gone) pāragate (gone beyond) pārasaṃgate (gone wholly beyond) bodhi (awakening)
+    svāhā (so be it / hail). Frame: *mahā-mantraḥ* (great mantra), *sarva-duḥkha-praśamanaḥ* (stiller
+    of all suffering), *satyam amithyatvāt* (true because not false).'
+- kind: translation
+  label: Pratibha Translation
+  body: 'So the perfection of wisdom [prajñāpāramitā] is to be known as the great mantra—the utterance
+    that quiets all suffering, and is true for the plain reason that it does not lie. This is the mantra
+    it speaks: *gate gate pāragate pārasaṃgate bodhi svāhā*—gone, gone, gone over, gone entirely over
+    to the far shore; awakening; so be it.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'After pages of relentless negation—no form, no attainment, no path—the sūtra ends not in silence
+    but in a chant, and the shift is the teaching. Wisdom that has emptied every object now condenses
+    into a verb of motion repeated to exhaustion: *gate, gate*—gone, gone. The counterintuitive claim
+    embedded in *satyam amithyatvāt* ("true because not false") is that this mantra''s truth is not correspondence
+    to a fact but the performance of release; it works the way a threshold works, by being crossed. The
+    grammar matters: *gate* is feminine vocative/locative, addressed to wisdom herself or spoken from
+    the far shore looking back, so the line enacts the crossing it names rather than describing it from
+    safety. *Pārasaṃgata*—"gone completely beyond"—closes the door on any residue of a beyond still held
+    as a place, and then *bodhi* lands: awakening is not a further destination but the recognition that
+    the going and the gone were never two. For a retreatant the pastoral point is decisive: analysis has
+    a floor, and past it wisdom becomes something you say with the body and breath, a rhythm that carries
+    what argument cannot. *Svāhā* seals it—the ritual "amen" that hands the whole movement over and stops
+    the mind from re-grasping even the mantra.
+
+
+    Key Terms:
+
+
+    **mantra (मन्त्र)** — Etymology: often glossed *man* (mind, from *√man*, to think) + *-tra* (instrument):
+    "that which protects/carries the mind." Here the whole perfection of wisdom is compressed into a *mahā-mantra*,
+    marking the passage from discursive insight to performative utterance.
+
+    **pāra / pāragata (पार / पारगत)** — Etymology: *pāra*, "the far bank, the further shore"; *pāra-gata*,
+    "gone to the far shore." The classic image of liberation as crossing a river; *pārasaṃgata* intensifies
+    it to "gone wholly across," refusing any half-measure or lingering.
+
+    **bodhi (बोधि)** — Etymology: from *√budh*, "to wake, to know." Not a doctrine but an awakening; placed
+    after all the "gone"s, it reveals that the crossing was awakening all along, not its prerequisite.
+
+    **svāhā (स्वाहा)** — Etymology: ancient Vedic ritual exclamation of offering into fire, "hail! / so
+    be it!" It consecrates and releases the mantra, ending grasping even at wisdom by giving the utterance
+    away.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: mantra (मन्त्र)
+    definition: 'Etymology: often glossed *man* (mind, from *√man*, to think) + *-tra* (instrument): "that
+      which protects/carries the mind." Here the whole perfection of wisdom is compressed into a *mahā-mantra*,
+      marking the passage from discursive insight to performative utterance.'
+  - term: pāra / pāragata (पार / पारगत)
+    definition: 'Etymology: *pāra*, "the far bank, the further shore"; *pāra-gata*, "gone to the far shore."
+      The classic image of liberation as crossing a river; *pārasaṃgata* intensifies it to "gone wholly
+      across," refusing any half-measure or lingering.'
+  - term: bodhi (बोधि)
+    definition: 'Etymology: from *√budh*, "to wake, to know." Not a doctrine but an awakening; placed
+      after all the "gone"s, it reveals that the crossing was awakening all along, not its prerequisite.'
+  - term: svāhā (स्वाहा)
+    definition: 'Etymology: ancient Vedic ritual exclamation of offering into fire, "hail! / so be it!"
+      It consecrates and releases the mantra, ending grasping even at wisdom by giving the utterance away.'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus, Enneads VI.9 (the flight of the alone to the Alone)
+    resonance: both end philosophy in a movement of ascent/crossing that exceeds discursive reason and
+      must finally be undergone, not argued.
+    divergence: Plotinus arrives at the plenitude of the One; the sūtra arrives at emptiness and awakening
+      with no One to arrive at—crossing into no-thing rather than into fullness.
+    passage_id: ''
+  - citation: Tao Te Ching 1 ("the way that can be spoken is not the constant Way")
+    resonance: language is honored yet marked as a threshold to be passed; the mantra is speech that dismantles
+      reliance on speech.
+    divergence: the Daoist gesture rests in wordless naturalness; the Buddhist mantra remains a spoken
+      ritual act performed within a path of awakening.
+    passage_id: tao_te_ching.ttc_md_001
+  - citation: Rūmī, Mathnawī (the reed torn from the reed-bed, longing for return)
+    resonance: wisdom voiced as chant/song that carries the practitioner across a separation words alone
+      cannot bridge.
+    divergence: Rūmī's crossing is reunion of lover and Beloved; the sūtra's crossing dissolves the lover-Beloved
+      duality itself as empty.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Recite *gate gate pāragate pārasaṃgate bodhi svāhā* slowly nine times, letting the breath, not
+    the meaning, carry it. On each "gate," release one thing you are holding—a plan, a grievance, a self-image—so
+    the chant becomes an actual letting-go rather than a description of one. End on *svāhā* and sit for
+    one silent minute without reaching for anything, including the mantra.
+- kind: appendix
+  label: Public-domain anchor (Müller 1894)
+  body: 'Therefore the perfection of wisdom is to be known as the great mantra, the mantra that stills
+    all suffering, true because it is not false. The mantra proclaimed in the perfection of wisdom runs:
+    gate gate pāragate pārasaṃgate bodhi svāhā.'

@@ -124,3 +124,129 @@ abhyasa: 'The next time you feel pulled toward satisfying a desire or resisting 
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '徐無鬼因女商見魏武侯，武侯勞之曰：「先生病矣，苦於山林之勞，故乃肯見於寡人。
+
+    」徐無鬼曰：「我則勞於君，君有何勞於我！
+
+    君將盈耆欲，長好惡，則性命之情病矣；
+
+    君將黜耆欲，掔好惡，則耳目病矣。
+
+    我將勞君，君有何勞於我！
+
+    」武侯超然不對。
+
+    少焉，徐無鬼曰：「嘗語君，吾相狗也。
+
+    下之質執飽而止，是狸德也；
+
+    中之質若視日；
+
+    上之質若亡其一。
+
+    吾相狗，又不若吾相馬也。'
+- kind: translation
+  label: Pratibha Translation
+  body: The Prince said, 'I have long wished to see you, Sir. I desire to love my people and practice
+    righteousness to end warfare—is this possible?' Hsü Wu Kuei replied, 'It is not possible. To love
+    the people is the beginning of harming them; to practice righteousness to end warfare is the root
+    of making war. If you proceed from this, you will not succeed. All perfection is a tool; even if you
+    practice benevolence and righteousness, it will nearly become false. Form shapes form; accomplishment
+    carries boasting; change wages external battle. Do not fill your terraces with cranes, do not move
+    swift horses to your palace, do not store cunning in your gains. Do not use cleverness to overcome
+    others, do not use schemes to overcome others, do not use warfare to overcome others. Cultivate the
+    sincerity in your chest to respond to Heaven-and-Earth's nature without obstruction. The people are
+    already freed by death—what use then have you for ending warfare?'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Hsü Wu Kuei''s refusal of the Prince''s benevolent intentions enacts a radical inversion: moral
+    programs (ren-yi 仁義) are themselves the disease, not the cure. The contested move is the claim that
+    intentional virtue *generates* the very harm it claims to remedy—that ''loving the people'' initiates
+    their injury because it introduces a calculating subject between spontaneous response and circumstance.
+    This is not cynicism but a diagnosis of how the will to do good fractures the sage''s alignment with
+    what-is. The passage dissolves the Prince''s entire framework of rulership by showing that every deliberate
+    act of governance—even righteous ones—perpetuates the split between ruler and ruled, intention and
+    outcome.
+
+
+    Key Terms:
+
+
+    **仁義 ren-yi** - benevolence-righteousness (Confucian cardinal virtues) → in Zhuangzi, deliberate moral
+    programs that *create* the conditions they claim to remedy → the stakes: whether virtue can be practiced
+    or only embodied
+
+    **誠 cheng** - sincerity, authenticity, the unforced center → cultivating the genuine within the chest
+    (胸中) → the stakes: whether the sage acts from a unified source or from fragmented intention
+
+    **勞 lao** - to weary, to labor, to exhaust → here: to tire the prince''s false certainties into collapse
+    → the stakes: whether teaching happens through negation or affirmation'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (the Sage Exhausts the Prince''s Pretense), the nameless source-and-course that lets
+      beings move by their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed doctrine
+      one can possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: dé (德)
+    definition: '德 “potency, virtue, obtained power” — how the Way is efficacious in a particular being
+      -> in this passage (the Sage Exhausts the Prince''s Pretense), inner potency that shows as unforced
+      efficacy rather than moral display -> trap: Victorian “virtue” as propriety; dé is charismatic power
+      of alignment, not rule-keeping'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (the Sage Exhausts the Prince''s Pretense), unforced congruence with conditions: skill that
+      does not obstruct the work -> trap: “non-action” as passivity; wúwéi can be highly skilled activity
+      without strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: zhī yán (卮言)
+    definition: '卮言 “goblet words” — speech that tips and rights itself, inexhaustible like a wine vessel
+      -> in this passage (the Sage Exhausts the Prince''s Pretense), language that does not harden into
+      fixed theses; words that pour with the situation -> trap: relativist chatter; goblet words are a
+      disciplined flexible speaking, not empty irony'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Confucian Analects 15.32: ''The Master said, The superior man thinks always of virtue,
+      the common man thinks of comfort'''
+    resonance: Both texts posit a hierarchy of consciousness—the sage versus the ordinary. Hsü Wu Kuei's
+      'highest class' of horses (those who have 'lost their one') mirrors the sage who transcends deliberate
+      virtue.
+    divergence: Confucius locates virtue in constant reflection and self-cultivation; Zhuangzi locates
+      it in the abandonment of the very faculty (the calculating mind) that Confucius valorizes. For Confucius,
+      virtue is achieved; for Zhuangzi, it emerges only when achievement ceases.
+    passage_id: ''
+  - citation: 'Laozi, Daodejing 38: ''When the great Tao is forgotten, goodness and evil appear. When
+      the body''s intelligence declines, cleverness and cunning appear.'''
+    resonance: 'Both texts diagnose moral intentionality as a symptom of prior loss—the forgetting of
+      the Tao, the fracturing of unified being. Both reverse the hierarchy: what looks like progress (virtue,
+      cleverness) is actually decline.'
+    divergence: The Daodejing offers a cosmological narrative of decline from unity; Zhuangzi offers a
+      phenomenological diagnosis of how the Prince's *present* acts of will perpetuate fragmentation.
+      Laozi is elegiac; Zhuangzi is surgical.
+    passage_id: ''
+  - citation: 'Mencius 2A.2: ''If you let people follow their feelings, they can be brought to goodness.'''
+    resonance: Both texts trust a natural human capacity that precedes moral training. Mencius calls it
+      innate goodness; Zhuangzi calls it the sincerity in the chest (胸中之誠).
+    divergence: Mencius believes this capacity must be *cultivated* through ritual and reflection; Zhuangzi
+      insists it emerges only when cultivation ceases. For Mencius, the path is inward discipline; for
+      Zhuangzi, it is the dissolution of the disciplining self.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'For one day, identify one deliberate act of kindness or justice you planned to perform. Before
+    executing it, pause and ask: ''Am I doing this from the sincerity in my chest, or from an image of
+    myself as benevolent?'' If the latter, do not perform the act. Instead, place yourself in the situation
+    without intention and notice what response arises unbidden. Record whether the outcome was more aligned
+    with actual need than your planned intervention would have been.'

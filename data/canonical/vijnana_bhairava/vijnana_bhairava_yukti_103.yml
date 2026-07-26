@@ -85,3 +85,75 @@ abhyasa: 'Sit quietly and pick up a single thought or sensation you''re currentl
   conclusion, lets the quiet arrive on its own.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: अहं ममेदम् इत्यादि प्रतिपत्तिप्रसङ्गतः । निराधारे मनो याति तद्ध्यानप्रेरणाच् छमी ॥ १३१ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ahaṃ mamedam ityādi pratipattiprasaṅgataḥ | nirādhāre mano yāti taddhyānapreraṇāc chamī || 131
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #103
+
+    In everyday life, when one hears oneself saying phrases like ‘I am . . .’
+
+    or ‘this is mine’, seize the opportunity to inquire into what these
+
+    words (‘I’ or ‘my’) refer to. The mind tries to find a referent, but it
+
+    cannot. Impelled [toward the truth] by this meditative contemplation,
+
+    one becomes peaceful. || 131'
+- kind: commentary
+  label: Pratibha Commentary
+  body: This line points to a deeper order that is received through attentive listening rather than conceptual
+    noise.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: nirādhāra (निराधार)
+    definition: nir- + ādhāra ‘support’ → without support or foundation; the state where the mind finds
+      nothing to rest its claims upon → ‘unsupported’ as precarious misses abiding without extrinsic prop
+  - term: pratipatti (प्रतिपत्ति)
+    definition: prati + √pad → understanding/application → investigation or ascertainment; here, the act
+      of inquiring into what notions like 'I' and 'mine' actually refer to → ‘comprehension’ can be inert;
+      here enacted recognition
+  - term: śamī (शमी)
+    definition: √śam → she who quiets / quieting (fem.) → one who becomes calm or tranquil; the settling
+      of mental agitation when grasping ceases → not a tree-name here—the quieting power/figure the verse
+      invokes
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Savitr and the Birth of Sacred Attention
+    resonance: 'Both texts locate truth-access through a reorientation of attention itself: Yukti 103
+      listens past conceptual noise to a deeper order, while Svetasvatara''s Savitṛ ''yokes mind and intelligence
+      toward truth,'' drawing forth what is already present but obscured. Each makes attentive listening/yoking
+      the method, not reasoning.'
+    divergence: Svetasvatara frames this as a cosmic principle (Savitṛ as solar deity yoking faculties),
+      while Vijnana Bhairava grounds it in the immediate phenomenology of self-utterance and the listener's
+      own awareness.
+    passage_id: svetasvatara_upanishad.svu_016
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
+    resonance: 'Both passages teach that ordinary perception must be inverted or transcended to access
+      a non-dual ground: Chāndogya instructs how to ''hear the inaudible'' and ''know the unknowable''
+      through recognition of essential unity, while Yukti 103 listens beneath everyday speech to a deeper
+      order. Both treat perception-beyond-sense as the gateway.'
+    divergence: Chāndogya emphasizes metaphysical unity (all things are one), whereas Vijnana Bhairava
+      emphasizes the immediate, non-conceptual listening to one's own utterance as the method of recognition.
+    passage_id: chāndogya_upaniṣad.chu_vi_01
+  - citation: Phaedo (Plato) — Knowledge as Recollection
+    resonance: 'Both texts reject the notion that knowledge is manufactured anew through conceptual effort:
+      Phaedo''s recollection model holds that the mind ''re-recognizes standards it already measures by,''
+      and Yukti 103 implies that truth is ''received through attentive listening'' rather than constructed
+      through ''conceptual noise.'' Each locates knowing as remembering or uncovering, not building.'
+    divergence: Phaedo frames recollection as metaphysical (pre-existing Forms), while Vijnana Bhairava
+      frames it as phenomenological—the direct, non-dual listening to awareness itself in the present
+      moment.
+    passage_id: phaedo_plato.phaedo_md_002
+  layer_provenance: generated_grounded

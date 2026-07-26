@@ -7,27 +7,29 @@ unit_id: heraclitus_fragments.hfr_p110
 unit_label: It is law, also, to obey the will of one.®
 title: It is law, also, to obey the will of one.®
 unit_type: teaching_passage
-thesis: 'The fragment arrests at a paradox: law (nomos) and will (of one) appear opposed—law as universal constraint, will
-  as singular assertion—yet Heraclitus binds them.'
+thesis: 'The fragment arrests at a paradox: law (nomos) and will (of one) appear opposed—law as universal
+  constraint, will as singular assertion—yet Heraclitus binds them.'
 themes:
 - recognition
 - silence
 source_excerpt: It is law, also, to obey the will of one.®
 translation_literal: It is law, also, to obey the will of one.®
-commentary: 'The fragment arrests at a paradox: law (nomos) and will (of one) appear opposed—law as universal constraint,
-  will as singular assertion—yet Heraclitus binds them. The ''one'' is not a ruler or god imposing from outside, but the intelligible
-  order (logos) that *is* the law itself. To obey the will of the one is not submission to a tyrant but alignment with the
-  single rational principle that runs through all things, the very structure that makes multiplicity coherent rather than
-  chaotic. The shock lies here: obedience is not servitude but recognition. When you obey the one, you obey what you already
-  are—the logos that thinks through you. The fragment cuts against two errors at once: the democrat who believes law emerges
-  from many voices, and the mystic who imagines the one as transcendent silence. For Heraclitus, the one is immanent, audible,
-  *necessarily* singular because intelligibility itself cannot be plural. To resist this is to fragment yourself into opinion,
-  appetite, noise.'
+commentary: 'The fragment arrests at a paradox: law (nomos) and will (of one) appear opposed—law as universal
+  constraint, will as singular assertion—yet Heraclitus binds them. The ''one'' is not a ruler or god
+  imposing from outside, but the intelligible order (logos) that *is* the law itself. To obey the will
+  of the one is not submission to a tyrant but alignment with the single rational principle that runs
+  through all things, the very structure that makes multiplicity coherent rather than chaotic. The shock
+  lies here: obedience is not servitude but recognition. When you obey the one, you obey what you already
+  are—the logos that thinks through you. The fragment cuts against two errors at once: the democrat who
+  believes law emerges from many voices, and the mystic who imagines the one as transcendent silence.
+  For Heraclitus, the one is immanent, audible, *necessarily* singular because intelligibility itself
+  cannot be plural. To resist this is to fragment yourself into opinion, appetite, noise.'
 insight: ''
-practice: 'When you encounter a rule or instruction that irritates you—a social norm, a constraint, a demand—pause and trace
-  it backward to its root principle rather than its surface form. Ask: what single intelligible order does this rule protect
-  or express? Does it align with the logos you recognize in yourself, or does it contradict it? Speak the principle aloud,
-  not the rule, and notice whether obedience becomes recognition.'
+practice: 'When you encounter a rule or instruction that irritates you—a social norm, a constraint, a
+  demand—pause and trace it backward to its root principle rather than its surface form. Ask: what single
+  intelligible order does this rule protect or express? Does it align with the logos you recognize in
+  yourself, or does it contradict it? Speak the principle aloud, not the rule, and notice whether obedience
+  becomes recognition.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -45,39 +47,69 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment arrests at a paradox: law (nomos) and will (of one) appear opposed—law as universal constraint, will
-    as singular assertion—yet Heraclitus binds them. The ''one'' is not a ruler or god imposing from outside, but the intelligible
-    order (logos) that *is* the law itself. To obey the will of the one is not submission to a tyrant but alignment with the
-    single rational principle that runs through all things, the very structure that makes multiplicity coherent rather than
-    chaotic. The shock lies here: obedience is not servitude but recognition. When you obey the one, you obey what you already
-    are—the logos that thinks through you. The fragment cuts against two errors at once: the democrat who believes law emerges
-    from many voices, and the mystic who imagines the one as transcendent silence. For Heraclitus, the one is immanent, audible,
-    *necessarily* singular because intelligibility itself cannot be plural. To resist this is to fragment yourself into opinion,
-    appetite, noise.'
+  body: 'The fragment arrests at a paradox: law (nomos) and will (of one) appear opposed—law as universal
+    constraint, will as singular assertion—yet Heraclitus binds them. The ''one'' is not a ruler or god
+    imposing from outside, but the intelligible order (logos) that *is* the law itself. To obey the will
+    of the one is not submission to a tyrant but alignment with the single rational principle that runs
+    through all things, the very structure that makes multiplicity coherent rather than chaotic. The shock
+    lies here: obedience is not servitude but recognition. When you obey the one, you obey what you already
+    are—the logos that thinks through you. The fragment cuts against two errors at once: the democrat
+    who believes law emerges from many voices, and the mystic who imagines the one as transcendent silence.
+    For Heraclitus, the one is immanent, audible, *necessarily* singular because intelligibility itself
+    cannot be plural. To resist this is to fragment yourself into opinion, appetite, noise.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (it is law, also, to obey the will of one.®), the shared pattern according to which all
+      things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic,
+      or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: νόμος (nomos)
+    definition: 'νόμος “law, custom, allotted order” -> in this passage (it is law, also, to obey the
+      will of one.®), civic/cosmic law worth defending as walls are — shared order that makes a people
+      -> trap: arbitrary statute; Heraclitus binds nomos to divine/common measure'
+  - term: ἁρμονίη (harmoniē)
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
+      passage (it is law, also, to obey the will of one.®), tensioned unity of opposites — bow and lyre
+      held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance or static
+      balance'
+    lemma_id: harmonie
+    sense_id: harmonie.heraclitean
+  - term: δίκη (dikē)
+    definition: 'δίκη “justice, due order, right allotment” -> in this passage (it is law, also, to obey
+      the will of one.®), cosmic justice that polices measures — the Erinyes as helpers when bounds are
+      overstepped -> trap: courtroom morality alone; here dikē is cosmological proportion, not only human
+      law'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'When you encounter a rule or instruction that irritates you—a social norm, a constraint, a demand—pause and trace
-    it backward to its root principle rather than its surface form. Ask: what single intelligible order does this rule protect
-    or express? Does it align with the logos you recognize in yourself, or does it contradict it? Speak the principle aloud,
-    not the rule, and notice whether obedience becomes recognition.'
+  body: 'When you encounter a rule or instruction that irritates you—a social norm, a constraint, a demand—pause
+    and trace it backward to its root principle rather than its surface form. Ask: what single intelligible
+    order does this rule protect or express? Does it align with the logos you recognize in yourself, or
+    does it contradict it? Speak the principle aloud, not the rule, and notice whether obedience becomes
+    recognition.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: Both texts establish that a single intelligible order (Heraclitus's 'one,' Nagarjuna's paramārtha) cannot be
-      grasped in isolation from its apparent multiplicity (Heraclitus's plurality, Nagarjuna's vyavahāra); the 'law' or necessity
-      is that understanding moves through both registers simultaneously.
-    divergence: Heraclitus treats the one as an eternal rational principle governing flux; Nagarjuna treats the ultimate and
-      conventional as mutually dependent conceptual frameworks with no independent essence.
+    resonance: Both texts establish that a single intelligible order (Heraclitus's 'one,' Nagarjuna's
+      paramārtha) cannot be grasped in isolation from its apparent multiplicity (Heraclitus's plurality,
+      Nagarjuna's vyavahāra); the 'law' or necessity is that understanding moves through both registers
+      simultaneously.
+    divergence: Heraclitus treats the one as an eternal rational principle governing flux; Nagarjuna treats
+      the ultimate and conventional as mutually dependent conceptual frameworks with no independent essence.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: Both passages locate intelligible order not in static unity but in the dynamic tension or balance of opposing
-      forces—Heraclitus's 'will of one' as the law governing apparent conflict, and the Vijnana Bhairava's sanghaṭṭa (dynamic
-      tension of prāṇas) as the condition for equality-consciousness.
-    divergence: Heraclitus emphasizes obedience to an impersonal rational order; the Vijnana Bhairava locates the same principle
-      within embodied breath-practice as a path to direct realization.
+    resonance: Both passages locate intelligible order not in static unity but in the dynamic tension
+      or balance of opposing forces—Heraclitus's 'will of one' as the law governing apparent conflict,
+      and the Vijnana Bhairava's sanghaṭṭa (dynamic tension of prāṇas) as the condition for equality-consciousness.
+    divergence: Heraclitus emphasizes obedience to an impersonal rational order; the Vijnana Bhairava
+      locates the same principle within embodied breath-practice as a path to direct realization.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 appendixes: []

@@ -7,30 +7,35 @@ unit_id: heraclitus_fragments.hfr_p019
 unit_label: There is one wisdom, to understand the intelligent will by which all things are governed...
 title: There is one wisdom, to understand the intelligent will by which all things are governed...
 unit_type: teaching_passage
-thesis: Heraclitus does not say 'all things are one' here—he says there is one wisdom, and that wisdom consists in understanding
-  a single intelligent will (gnômê) that steers all things.
+thesis: Heraclitus does not say 'all things are one' here—he says there is one wisdom, and that wisdom
+  consists in understanding a single intelligent will (gnômê) that steers all things.
 themes:
 - action
 - breath
 - way
-source_excerpt: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
-translation_literal: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
-commentary: 'Heraclitus does not say ''all things are one'' here—he says there is one wisdom, and that wisdom consists in
-  understanding a single intelligent will (gnômê) that steers all things. The move is lateral, not vertical: not collapsing
-  multiplicity into undifferentiated unity, but recognizing the *governance* running through apparent disorder. The will is
-  not separate from things; it is the logos operating *through* them, the way a helmsman''s intention moves through the ship''s
-  timber and sail without being identical to either. What makes this wisdom singular is not that it erases difference but
-  that it perceives the *one pattern of necessity* that makes difference intelligible rather than chaotic. To understand this
-  gnômê is to stop treating events, bodies, and choices as autonomous fragments and instead to read them as expressions of
-  a single steering principle. The paradox: the more clearly you see this one will at work, the more vividly the particular
-  things it governs come into focus—not less. Blindness to the logos makes the world appear as collision and accident; sight
-  of it makes the world appear as articulated necessity. The wisdom is not mystical union but the hard clarity of seeing how
-  governance works.'
+source_excerpt: There is one wisdom, to understand the intelligent will by which all things are governed
+  through 8.11.5
+translation_literal: There is one wisdom, to understand the intelligent will by which all things are governed
+  through 8.11.5
+commentary: 'Heraclitus does not say ''all things are one'' here—he says there is one wisdom, and that
+  wisdom consists in understanding a single intelligent will (gnômê) that steers all things. The move
+  is lateral, not vertical: not collapsing multiplicity into undifferentiated unity, but recognizing the
+  *governance* running through apparent disorder. The will is not separate from things; it is the logos
+  operating *through* them, the way a helmsman''s intention moves through the ship''s timber and sail
+  without being identical to either. What makes this wisdom singular is not that it erases difference
+  but that it perceives the *one pattern of necessity* that makes difference intelligible rather than
+  chaotic. To understand this gnômê is to stop treating events, bodies, and choices as autonomous fragments
+  and instead to read them as expressions of a single steering principle. The paradox: the more clearly
+  you see this one will at work, the more vividly the particular things it governs come into focus—not
+  less. Blindness to the logos makes the world appear as collision and accident; sight of it makes the
+  world appear as articulated necessity. The wisdom is not mystical union but the hard clarity of seeing
+  how governance works.'
 insight: ''
-practice: 'Observe one deliberate action you perform today—pouring water, speaking a difficult sentence, moving your hand
-  to your face—and pause mid-action to notice: what single intention is steering this? Not the thought about it, but the actual
-  current moving through your limbs and breath. Repeat this three times during the day, each time catching the moment before
-  the action solidifies into habit, so you feel the gnômê (the intelligent will) as it happens, not as memory.'
+practice: 'Observe one deliberate action you perform today—pouring water, speaking a difficult sentence,
+  moving your hand to your face—and pause mid-action to notice: what single intention is steering this?
+  Not the thought about it, but the actual current moving through your limbs and breath. Repeat this three
+  times during the day, each time catching the moment before the action solidifies into habit, so you
+  feel the gnômê (the intelligent will) as it happens, not as memory.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -45,46 +50,79 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
+  body: There is one wisdom, to understand the intelligent will by which all things are governed through
+    8.11.5
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus does not say ''all things are one'' here—he says there is one wisdom, and that wisdom consists in understanding
-    a single intelligent will (gnômê) that steers all things. The move is lateral, not vertical: not collapsing multiplicity
-    into undifferentiated unity, but recognizing the *governance* running through apparent disorder. The will is not separate
-    from things; it is the logos operating *through* them, the way a helmsman''s intention moves through the ship''s timber
-    and sail without being identical to either. What makes this wisdom singular is not that it erases difference but that
-    it perceives the *one pattern of necessity* that makes difference intelligible rather than chaotic. To understand this
-    gnômê is to stop treating events, bodies, and choices as autonomous fragments and instead to read them as expressions
-    of a single steering principle. The paradox: the more clearly you see this one will at work, the more vividly the particular
-    things it governs come into focus—not less. Blindness to the logos makes the world appear as collision and accident; sight
-    of it makes the world appear as articulated necessity. The wisdom is not mystical union but the hard clarity of seeing
+  body: 'Heraclitus does not say ''all things are one'' here—he says there is one wisdom, and that wisdom
+    consists in understanding a single intelligent will (gnômê) that steers all things. The move is lateral,
+    not vertical: not collapsing multiplicity into undifferentiated unity, but recognizing the *governance*
+    running through apparent disorder. The will is not separate from things; it is the logos operating
+    *through* them, the way a helmsman''s intention moves through the ship''s timber and sail without
+    being identical to either. What makes this wisdom singular is not that it erases difference but that
+    it perceives the *one pattern of necessity* that makes difference intelligible rather than chaotic.
+    To understand this gnômê is to stop treating events, bodies, and choices as autonomous fragments and
+    instead to read them as expressions of a single steering principle. The paradox: the more clearly
+    you see this one will at work, the more vividly the particular things it governs come into focus—not
+    less. Blindness to the logos makes the world appear as collision and accident; sight of it makes the
+    world appear as articulated necessity. The wisdom is not mystical union but the hard clarity of seeing
     how governance works.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ἕν (hen)
+    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (There is
+      one wisdom, to understand the intelligent will by which all things are governed through 8.11.5),
+      the one that all things are: not mystical mush but a single order inside visible difference -> trap:
+      erasing plurality; Heraclitus’s hen keeps tension and exchange inside unity'
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (There is one wisdom, to understand the intelligent will by which all things are governed
+      through 8.11.5), the shared pattern according to which all things occur — heard before it is argued
+      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: σοφόν (sophon)
+    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in
+      this passage (There is one wisdom, to understand the intelligent will by which all things are governed
+      through 8.11.5), wisdom apart from polymathy: knowing the one intelligent will that steers all things
+      -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
+  - term: σύνεσις (synesis)
+    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in
+      this passage (There is one wisdom, to understand the intelligent will by which all things are governed
+      through 8.11.5), understanding as holding-together what daily contact already offers — not new information
+      alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Observe one deliberate action you perform today—pouring water, speaking a difficult sentence, moving your hand to
-    your face—and pause mid-action to notice: what single intention is steering this? Not the thought about it, but the actual
-    current moving through your limbs and breath. Repeat this three times during the day, each time catching the moment before
-    the action solidifies into habit, so you feel the gnômê (the intelligent will) as it happens, not as memory.'
+  body: 'Observe one deliberate action you perform today—pouring water, speaking a difficult sentence,
+    moving your hand to your face—and pause mid-action to notice: what single intention is steering this?
+    Not the thought about it, but the actual current moving through your limbs and breath. Repeat this
+    three times during the day, each time catching the moment before the action solidifies into habit,
+    so you feel the gnômê (the intelligent will) as it happens, not as memory.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts posit a single intelligible order that cannot be grasped directly but only through a mediating
-      structure: Heraclitus''s ''intelligent will'' governs apparent plurality through a unified logos; Nagarjuna''s ultimate
-      can only be ''pointed out'' through conventional reality, not bypassed.'
-    divergence: Heraclitus treats the one as an immanent rational principle organizing the cosmos; Nagarjuna treats the two
-      truths as epistemologically interdependent but ontologically empty, requiring neither a governing intelligence nor a
-      cosmos.
+    resonance: 'Both texts posit a single intelligible order that cannot be grasped directly but only
+      through a mediating structure: Heraclitus''s ''intelligent will'' governs apparent plurality through
+      a unified logos; Nagarjuna''s ultimate can only be ''pointed out'' through conventional reality,
+      not bypassed.'
+    divergence: Heraclitus treats the one as an immanent rational principle organizing the cosmos; Nagarjuna
+      treats the two truths as epistemologically interdependent but ontologically empty, requiring neither
+      a governing intelligence nor a cosmos.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: 'Both identify a governing principle that operates through dynamic tension or oscillation: Heraclitus''s logos
-      governs ''all things'' through an intelligible order; the Vijnana Bhairava yukti locates consciousness-arising in the
-      dynamic tension (sanghaṭṭa) between opposing prāṇas at the breath-pause.'
-    divergence: Heraclitus posits a static intelligible order underlying flux; the Vijnana Bhairava locates the principle
-      in the rhythmic pause itself—a non-dual recognition arising from embodied oscillation, not rational comprehension.
+    resonance: 'Both identify a governing principle that operates through dynamic tension or oscillation:
+      Heraclitus''s logos governs ''all things'' through an intelligible order; the Vijnana Bhairava yukti
+      locates consciousness-arising in the dynamic tension (sanghaṭṭa) between opposing prāṇas at the
+      breath-pause.'
+    divergence: Heraclitus posits a static intelligible order underlying flux; the Vijnana Bhairava locates
+      the principle in the rhythmic pause itself—a non-dual recognition arising from embodied oscillation,
+      not rational comprehension.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 appendixes: []

@@ -102,3 +102,71 @@ section: I.3447 / painters frame
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'علم چون بر دل زند یاری شود /// علم چون بر تن زند باری شود
+
+    علمهای اهل دل حمالشان /// علمهای اهل تن احمالشان
+
+    ور مثالی خواهی از علم نهان /// قصه گو از رومیان و چینیان'
+- kind: iast
+  label: Transliteration note
+  body: Persian — see Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: When knowledge strikes the heart, it becomes a helper; when knowledge strikes the body, it becomes
+    a burden. The knowledges of the people of heart carry them; the knowledges of the people of body are
+    loads upon them. If you want a parable of hidden knowledge, tell the story of the Greeks and the Chinese.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Not anti-intellectual: location of knowledge decides whether it carries or crushes. The painters''
+    tale is the parable of *ʿilm-e nahān* (hidden knowledge). Existentially: inventory your learning —
+    what sits in the chest as help, what sits on the neck as load?
+
+
+    Key Terms
+
+
+    **علم ʿilm** — knowledge; heart-struck vs body-struck.
+
+
+    **یاری / باری** — helper / burden (punning pair).
+
+
+    **علم نهان** — hidden/esoteric knowledge.
+
+
+    Cross-Tradition Resonances
+
+
+    **Śaiva recognition vs scholastic accumulation:** Both distinguish living knowing from dead information.
+
+    *Divergence:* Śaiva frames often reclaim Consciousness as knower; Rūmī frames the heart as the organ
+    that lightens the load.
+
+
+    **Paul (letter kills, spirit gives life):** Both relocate saving knowledge.
+
+    *Divergence:* Paul''s contrast is covenant-letter vs Spirit; Rūmī''s is heart vs body as target of
+    learning.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: Knowledge
+      on the Heart Helps; Knowledge on the Body Burdens Knowledge on the Heart Helps; Knowledge on the
+      Body Burdens علم چون بر دل زند یاری شود /// علم چون… Trap: erotic fusion fantasy without the discipline
+      of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: rūḥ (روح)
+    definition: '‘spirit’ → the living breath that remembers God and suffers exile in form Here: **Paul
+      (letter kills, spirit gives life):** Both relocate saving knowledge. Trap: ghostly ‘spirit’ without
+      ethical/ontological force'
+    lemma_id: psyche
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: 'Take one book or doctrine you "know." Spend five minutes letting it strike the heart: how would
+    it help a living choice today? If it only burdens, set it down for a week.'

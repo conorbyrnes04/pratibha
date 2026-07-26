@@ -93,3 +93,98 @@ abhyasa: Over the next three hours, whisper the word "pratyakṣa" each time you
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: प्रत्यक्षानुमानागमाः प्रमाणानि
+- kind: iast
+  label: IAST
+  body: pratyakṣānumānāgamāḥ pramāṇāni
+- kind: translation
+  label: Pratibha Translation
+  body: Direct cognition, inference, and testimony are the three valid means of knowledge.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The Yoga Sutra asserts that only three pramāṇas are legitimate: pratyakṣa (direct perception),
+    anumāna (inference), and śabda (testimony). This triad is not merely a list but a claim that all cognition,
+    even the most abstract, ultimately reduces to one of these modes. The sutra’s brevity masks a profound
+    ontological stance: the world is apprehended through the interplay of sense, reason, and language,
+    each of which is a manifestation of the mind’s activity. The contested move here is the exclusion
+    of other Nyāya pramāṇas such as upamāṇa (analogy) and arthapatti (postulation). By limiting the sources,
+    the Yoga tradition elevates the primacy of direct experience and authoritative testimony, thereby
+    aligning with the Sankhya view that the mind (citta) is the locus of all cognition. Practically, this
+    means that one must cultivate a disciplined sensory awareness, develop logical inference skills, and
+    critically evaluate the reliability of verbal information. The Dvivedi commentary’s mention of Veda
+    as the highest śabda underscores the Yoga emphasis on internalizing sacred knowledge as a means to
+    transcend ordinary perception. Thus, the sutra invites practitioners to recognize that every insight—whether
+    a fleeting sensory impression or a profound doctrinal truth—originates from one of these three pramāṇas,
+    and that mastery over them is the path to samādhi.
+
+
+    Key Terms
+
+
+    **pratyakṣa (प्रत्यक्ष)** — direct perception -> immediate sensory contact -> foundational for all
+    subsequent cognition
+
+
+    **anumāna (अनुमान)** — inference -> logical deduction from known relations -> bridges sensory data
+    and abstract concepts
+
+
+    **śabda (शब्द)** — testimony -> reliable verbal transmission -> especially the Veda as supreme source
+
+
+    Cross-Tradition Resonances
+
+
+    **Nyāya Sūtras, 1.1:** Both Nyāya and Yoga enumerate pratyakṣa, anumāna, śabda as pramāṇas, showing
+    structural homology in the triadic schema
+
+    *Divergence:* Nyāya includes upamāṇa, whereas Yoga omits it, reflecting a stricter epistemological
+    boundary
+
+
+    **Mīmāṃsā Prakāśa, 2.3:** Mīmāṃsā’s addition of arthapatti parallels Yoga’s inclusion of śabda as
+    a means of knowledge
+
+    *Divergence:* Mīmāṃsā treats arthapatti as a distinct pramāṇa, whereas Yoga subsumes it within śabda,
+    indicating a different ontological prioritization
+
+
+    **Vedānta Śāstra, 5.2:** Vedānta’s identification of Veda as the highest śabda echoes Yoga’s elevation
+    of śabda
+
+    *Divergence:* Vedānta allows for non-vedic śabda in certain contexts, whereas Yoga restricts śabda
+    to Vedic testimony'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: pramāṇa (प्रमाण)
+    definition: 'pra-√mā ‘measure accurately’ → valid means of knowing -> in “Sources of Right Knowledge”:
+      Direct cognition, inference, and testimony are the three valid means of knowledge. -> not ‘proof’
+      in courtroom sense alone; perception, inference, testimony as vṛtti-types'
+  - term: pratyakṣa (प्रत्यक्ष)
+    definition: 'source-term pratyakṣa -> in “Sources of Right Knowledge”: direct perception -> immediate
+      sensory contact -> foundational for all subsequent cognition -> default English flattens the technical
+      work this term does here'
+  - term: anumāna (अनुमान)
+    definition: 'known relations -> bridges sensory data and abstract concepts -> in “Sources of Right
+      Knowledge”: inference -> logical deduction from known relations -> bridges sensory data and abstract
+      concepts -> default English flattens the technical work this term does here'
+  - term: śabda (शब्द)
+    definition: 'source-term śabda -> in “Sources of Right Knowledge”: testimony -> reliable verbal transmission
+      -> especially the Veda as supreme source -> default English flattens the technical work this term
+      does here'
+  - term: āgama
+    definition: 'authoritative sources, texts, and teachers. -> in “Sources of Right Knowledge”: reliable
+      transmission of knowledge from authoritative sources, texts, and teachers -> default English flattens
+      the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe your senses attentively, noting each direct perception as it arises, and consciously evaluate
+    whether it is a true pratyakṣa, a logical inference, or a trustworthy testimony.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: Right knowledge (is) direct cognition or in-

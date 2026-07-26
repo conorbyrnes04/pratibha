@@ -69,3 +69,97 @@ abhyasa: 'Throughout your day, the moment you catch yourself absorbed in a thoug
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: विशेषदर्शिन आत्माभावभावनानिवृत्तिḥ
+- kind: iast
+  label: IAST
+  body: viśeṣadarśina ātmabhāvabhāvanānivṛttiḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The one who distinguishes the Self from the mind ceases all mental activity forever.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this aphorism is that the cessation of all mental activity (vinivṛttiḥ)
+    follows directly from the act of distinguishing the Self (ātmā) from the mind (citta). In the Yoga–Sāṃkhya
+    framework, the mind is a manifestation of prakṛti, while the Self is the immutable puruṣa. The contested
+    move here is the assertion that a single act of distinction is sufficient for the permanent cessation
+    of vṛtti. Some commentators argue that sustained practice is required, whereas others accept the immediacy
+    of the distinction. The practice of consciously observing the mind’s activity and noting its transient
+    nature aligns with the Sāṃkhya doctrine of puruṣa–prakṛti duality. By recognizing that thoughts are
+    merely projections of the mind and not the Self, one liberates the puruṣa from the cycle of mental
+    fluctuations. This existential application is not merely theoretical; it offers a concrete method
+    for the practitioner to detach from the continuous stream of thoughts, thereby achieving kaivalya.
+    The Satchidananda commentary’s brief note that “the thoughts of mind as the Ātman cease forever” echoes
+    this immediacy, underscoring the transformative power of the distinction itself.
+
+
+    Key Terms
+
+
+    **viśeṣa (विशेष)** — ‘distinction’ – from ‘viśeṣa’ meaning ‘special, distinct’; in Sāṃkhya it denotes
+    the act of discerning puruṣa from prakṛti, a move that is often glossed over as merely epistemic but
+    here is ontological
+
+
+    **darśinḥ (दर्शिन्)** — ‘one who sees’ – the observer; in Yoga it is the puruṣa that perceives, not
+    the mind; the term highlights the active role of consciousness in the distinction
+
+
+    **ātmabhāva (आत्माभाव)** — ‘Self‑being’ – a compound of ātmā (Self) and bhāva (being/manifestation);
+    it underscores that the Self is not a passive entity but an active, existing reality distinct from
+    mental states
+
+
+    **vinivṛttiḥ (निवृत्तिḥ)** — ‘ceasing forever’ – from vinivṛtti (cessation); the term implies an irreversible
+    termination of vṛtti, not merely a temporary pause
+
+
+    Cross-Tradition Resonances
+
+
+    **Patanjali, Yoga Sūtra 4.1:** Both verses assert that the cessation of vṛtti follows from the distinction
+    between puruṣa and prakṛti; the structural pattern of ‘distinction … ceases’ is mirrored
+
+    *Divergence:* In 4.1 the cessation is linked to the cessation of all vṛtti, whereas 4.25 specifies
+    the cessation of the mind’s activity alone, narrowing the scope
+
+
+    **Kapila Samhita, 2.3:** The idea that the Self, once distinguished, is free from mental activity
+    appears in Kapila’s exposition of puruṣa’s liberation
+
+    *Divergence:* Kapila emphasizes a gradual unfolding of puruṣa’s awareness, while 4.25 presents the
+    distinction as a singular, decisive act'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Distinction of Self and Mind”: The
+      one who distinguishes the Self from the mind ceases all mental activity forever. -> not ‘bad thoughts’
+      only — any cognitive wave (valid cognition, error, fantasy, sleep, memory)'
+  - term: viśeṣa (विशेष)
+    definition: '‘viśeṣa’ meaning ‘special, distinct’ -> in “Distinction of Self and Mind”: in Sāṃkhya
+      it denotes the act of discerning puruṣa from prakṛti, a move that is often glossed over as merely
+      epistemic but here is ontological -> default English flattens the technical work this term does
+      here'
+  - term: darśinḥ (दर्शिन्)
+    definition: 'source-term darśinḥ -> in “Distinction of Self and Mind”: the term highlights the active
+      role of consciousness in the distinction -> default English flattens the technical work this term
+      does here'
+  - term: ātmabhāva (आत्माभाव)
+    definition: 'mental states -> in “Distinction of Self and Mind”: it underscores that the Self is not
+      a passive entity but an active, existing reality distinct from mental states -> default English
+      flattens the technical work this term does here'
+  - term: vinivṛttiḥ (निवृत्तिḥ)
+    definition: 'vinivṛtti (cessation) -> in “Distinction of Self and Mind”: the term implies an irreversible
+      termination of vṛtti, not merely a temporary pause -> default English flattens the technical work
+      this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe your thoughts; consciously note that they are mental activity, not the Self, and affirm
+    that the Self remains unchanged.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: To one who sees the distinction between the mind and the

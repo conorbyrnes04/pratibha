@@ -109,3 +109,102 @@ abhyasa: Through the day, each time you feel a sharp edge rising—irritation, t
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '知者不言，言者不知。
+
+    塞其兑，閉其門，挫其銳，解其分，和其光，同其塵，是謂玄同。
+
+    故不可得而親，不可得而踈；
+
+    不可得而利，不可得而害；
+
+    不可得而貴，不可得而賤。
+
+    故為天下貴。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'He who knows (the Way [*dào* 道]) does not (care to) speak (about it); he who is (ever ready to)
+    speak about it does not know it.
+
+
+    He (who knows it) will keep his mouth shut and close the portals (of his nostrils).
+
+
+    He will blunt his sharp points and unravel the complications of things; he will attemper his brightness,
+    and bring himself into agreement with the obscurity (of others).
+
+
+    This is called ''the Mysterious Agreement.'' (Such an one) cannot be treated familiarly or distantly;
+    he is beyond all consideration of profit or injury; of nobility or meanness:--he is the noblest man
+    under Heaven [*tiān* 天].'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that true mastery of the Tao is achieved by withdrawal from the world of
+    words and distinctions. The contested move is the paradoxical injunction that the knowing one must
+    not speak, while the speaking one is ignorant. By sealing the mouth and blunting sharpness, the sage
+    dissolves egoic separations and aligns with the natural flow, thereby becoming beyond conventional
+    judgments of value. The text thus elevates the quiet, unadorned presence of the sage as the highest
+    nobility, contrasting sharply with worldly notions of power and status.
+
+
+    Key Terms:
+
+
+    **塞其兑 (sāi qí duì)** — seal the mouth -> to refrain from speaking; Daoist sense: silence as a means
+    of preserving truth -> translation: ''seal his mouth''
+
+    **閉其門 (bì qí mén)** — close the nostrils -> to withdraw from external stimuli; Daoist sense: inward
+    focus -> translation: ''close his nostrils''
+
+    **挫其銳 (cuò qí ruì)** — blunt his sharpness -> to soften egoic edges; Daoist sense: humility -> translation:
+    ''dull his sharpness''
+
+    **玄同 (xuán tóng)** — mysterious unity -> the state of harmonious alignment with the Tao; Daoist sense:
+    ultimate unity -> translation: ''mysterious unity'''
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: xuán (玄)
+    definition: '玄 ‘deep dark / reddish-black of depth’ -> in “The Quiet Mastery of the Tao”: He who knows
+      (the Way [*dào* 道]) does not (care to) speak (about it); he who is (ever ready to) speak about it
+      does n… -> not romantic ‘mystery’; structural depth that cannot be exhausted by one approach'
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Quiet Mastery of the Tao”: He who knows (the Way
+      [*dào* 道]) does not (care to) speak (about it); he who is (ever ready to) speak about it does n…
+      -> not a deity named Tao or a lifestyle brand — source-and-course that resists full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Quiet Mastery of the Tao”:
+      He who knows (the Way [*dào* 道]) does not (care to) speak (about it); he who is (ever ready to)
+      speak about it does n… -> not only ‘the world’ as map; the realm that cannot be seized by contrivance'
+  - term: sāi qí (塞其兑)
+    definition: 'speaking -> in “The Quiet Mastery of the Tao”: Daoist sense: silence as a means of preserving
+      truth -> translation: ''seal his mouth'' -> default English flattens the technical work this term
+      does here'
+  - term: bì qí (閉其門)
+    definition: 'external stimuli -> in “The Quiet Mastery of the Tao”: Daoist sense: inward focus ->
+      translation: ''close his nostrils'' -> default English flattens the technical work this term does
+      here'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 2 (the Tao is the source of all things)
+    resonance: Both chapters emphasize the primacy of the Tao over human articulation
+    divergence: Chapter 56 focuses on withdrawal and silence, whereas chapter 2 celebrates the Tao’s generative
+      openness
+    passage_id: ''
+  - citation: Zhuangzi, chapter 6 (the Great Sage’s silence)
+    resonance: Both texts portray the sage as one who refrains from speech
+    divergence: Zhuangzi’s narrative uses humor and paradox, while chapter 56 presents a concise doctrinal
+      statement
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit in quiet meditation for ten minutes, focusing on the breath. Whenever a thought arises, observe
+    it without judgment, then gently return to the breath, embodying the sage’s practice of sealing the
+    mouth and uniting with the dust.

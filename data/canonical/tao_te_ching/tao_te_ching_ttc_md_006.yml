@@ -94,3 +94,115 @@ abhyasa: Before your next meal, pour water into a cup and watch it settle into t
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '上善若水。水善利萬物而不爭，處眾人之所惡，故幾於道。
+
+    居善地，心善淵，與善仁，言善信，政善治，事善能，動善時。
+
+    夫唯不爭，故無尤。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Supreme goodness [*shàng shàn* 上善] is like water.
+
+    Water excels at benefiting the ten thousand things without contending [*bù zhēng* 不爭].
+
+    It settles where people disdain to go — therefore it is close to the *dào*.
+
+
+    In dwelling: be like earth well chosen;
+
+    in mind: be like an abyss [*yuān* 淵];
+
+    in giving: be like heaven''s kindness;
+
+    in speech: be like trustworthy words;
+
+    in governing: be like good order;
+
+    in work: be like skilled competence;
+
+    in movement: be like timely action.
+
+
+    Only by not contending — therefore without fault [*wú yóu* 無尤].'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'chapter 8 (the highest good is like water) makes water the normative image for *dé* (power/virtue)
+    before chapter 78''s political paradox. The claim is not moral sentimentalism about gentleness but
+    strategic alignment: water wins by taking the low, benefiting all, and refusing rivalry. *Jǐ yú dào*
+    (幾於道) — "close to the *dào*" — means water approximates the world''s operative pattern, not that water
+    is sacred symbolically.
+
+
+    The sevenfold list (dwelling, mind, giving, speech, governance, work, movement) is a complete ethics
+    of capacity without domination. Each line names excellence that does not require defeating others.
+    The hinge remains *bù zhēng*: contention forces you out of the low place and into expenditure against
+    resistance. chapter 8 (the highest good is like water) prepares chapter 78''s "everyone knows soft
+    overcomes hard but cannot enact it" — here is the enactable sketch.
+
+
+    Key Terms:
+
+
+    **shàng shàn 上善** — highest/supreme goodness — not moral scorekeeping but alignment with *dào*-like
+    efficacy.
+
+
+    **bù zhēng 不爭** — non-contention — central Daoist political-ethical term; avoids rivalry that wastes
+    the low position''s advantage.
+
+
+    **yuān 淵** — abyss, deep pool — mind-quality of depth that does not surface-flutter; holds without
+    spilling.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Highest Good Is Like Water”: the underlying pattern
+      of reality that water ''comes close to'' by flowing downward and benefiting all without struggle
+      -> not a deity named Tao or a lifestyle brand — source-and-course that resists full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: wú (無)
+    definition: '無 ‘without / not-have’ -> in “The Highest Good Is Like Water”: Supreme goodness [*shàng
+      shàn* 上善] is like water. -> not nihilistic void; generative absence (of forcing, name, desire) that
+      opens function'
+  - term: bùzhēng (不爭)
+    definition: '不 ‘not’ + 爭 ‘contend/strive’ -> in “The Highest Good Is Like Water”: yielding rather
+      than forcing, the core virtue of this chapter -> not conflict-avoidant niceness; non-contention
+      as the mode that none can contend with'
+  - term: wànwù (萬物)
+    definition: '萬 ‘myriad’ + 物 ‘things’ -> in “The Highest Good Is Like Water”: Supreme goodness [*shàng
+      shàn* 上善] is like water. -> not a zoo inventory; the whole differentiated field born once naming
+      divides'
+  - term: shuǐ (水)
+    definition: '水 ‘water’ — paradigmatic soft that benefits all -> in “The Highest Good Is Like Water”:
+      Supreme goodness [*shàng shàn* 上善] is like water. -> not decorative nature image; ethical-cosmic
+      model for dwelling low without contention'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gītā 12.13–15
+    resonance: gentle, non-harming, free from contention among divine qualities.
+    divergence: Gītā lists cultivatable virtues; chapter 8 (the highest good is like water) derives them
+      from water's impersonal pattern.
+    passage_id: ''
+  - citation: Zhuangzi, Peng and cicada (ch.1)
+    resonance: scale and depth of medium determine capacity.
+    divergence: Zhuangzi dramatizes perspective; chapter 8 (the highest good is like water) gives concise
+      normative image.
+    passage_id: ''
+  - citation: Jesus, Sermon on the Mount (Matthew 5:5)
+    resonance: '"Blessed are the meek."'
+    divergence: beatitude theology vs impersonal *dào* cosmology — no eschatological reward structure
+      in chapter 8 (the highest good is like water).
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, in one conversation, deliberately take the lower position: listen longer, claim less,
+    let someone else''s point finish without correction. Notice whether contention was about truth or
+    about position.'

@@ -78,3 +78,107 @@ abhyasa: The next time you catch yourself striving—tensing toward a goal, grip
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: समाधिसिद्धिर् इश्वरप्रणिधानात्
+- kind: iast
+  label: IAST
+  body: samādhisiddhir īśvarapraṇidhānāt
+- kind: translation
+  label: Pratibha Translation
+  body: By total surrender to God, samādhi is attained.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sūtra asserts that samādhi, the supreme state of absorption, is achieved through complete
+    surrender to Īśvara. This claim situates the practice within the Sāṃkhya‑Yoga synthesis: the mind’s
+    vṛtti (mental fluctuations) are quelled when the practitioner aligns their will with the supreme principle,
+    thereby dissolving the illusion of individual agency. The contested move here is the identification
+    of surrender (praṇidhāna) with the act of offering all that one possesses—both material and mental—to
+    Īśvara. While some commentators read this as a literal relinquishment of possessions, the Pratibha
+    reading interprets it as a psychological detachment: the mind no longer clings to outcomes, and the
+    ego dissolves into the universal consciousness. This aligns with the Sāṃkhya distinction between puruṣa
+    (consciousness) and prakṛti (matter); when puruṣa fully identifies with Īśvara, prakṛti’s vṛtti cease.
+    Existentially, the sūtra invites the practitioner to view every action—washing dishes, working, speaking—as
+    a form of worship, thereby transforming ordinary life into a continuous yogic practice. The insight
+    that “every act can become a meditation” echoes the Satchidananda observation that devotion itself
+    is a form of contemplation. By internalizing this, one cultivates a state where the mind remains still
+    not through external restraint, but through internal surrender, achieving the very samādhi the sūtra
+    promises.
+
+
+    Key Terms
+
+
+    **samādhisiddhir (समाधिसिद्धिर्)** — samādhi (contemplation) + siddhiḥ (attainment) → attainment of
+    contemplation; the term signals that samādhi is a realized state, not merely a practice
+
+
+    **īśvarapraṇidhānāt (इश्वरप्रणिधानात्)** — īśvara (God) + praṇidhāna (surrender) + -āt (from) → from
+    total surrender to God; emphasizes the causal relationship between surrender and samādhi
+
+
+    **samādhi (समाधि)** — Sāṃkhya: a state of complete absorption of the mind in a single object; Yoga:
+    the highest state of meditative absorption; the term bridges both traditions
+
+
+    **praṇidhāna (प्रणिधान)** — Sāṃkhya: complete dedication of will; Yoga: surrender of the mind to a
+    higher principle; the term’s dual meaning underpins the sūtra’s claim
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.44:** Both 2.44 and 2.45 employ the causal construction ‘X from Y’ to link a practice
+    with its result, underscoring the systematic progression of the Sādhana Pāda
+
+    *Divergence:* While 2.44 speaks of purification (śuddhi) from desire, 2.45 specifies attainment (siddhi)
+    from surrender, shifting focus from internal cleansing to external realization
+
+
+    **Yoga Sūtra 2.46:** The triadic pattern of ‘purity → practice → result’ recurs, mirroring the sūtra’s
+    structure of surrender leading to samādhi
+
+    *Divergence:* 2.46 introduces the notion of ‘sādhana’ (practice) as a prerequisite, whereas 2.45 presents
+    surrender as the sole sufficient condition, highlighting a more direct path
+
+
+    **Sāṃkhya Karika 1.1:** Both texts posit that the ultimate goal is the dissolution of prakṛti’s vṛtti
+    through puruṣa’s identification with Īśvara
+
+    *Divergence:* Karika frames the goal as liberation (mokṣa) from the material cycle, whereas the Yoga
+    Sūtra frames it as the attainment of samādhi, a more immediate meditative state'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: samādhi (समाधि)
+    definition: 'sam-ā-√dhā ‘settle completely together’ -> in “Surrender Leads to Samādhi”: a state of
+      complete absorption of the mind in a single object -> not trance-entertainment or unconsciousness;
+      graded absorption where subject–object friction quiets'
+    lemma_id: samadhi
+    sense_id: samadhi.yoga
+  - term: praṇidhāna (प्रणिधान)
+    definition: 'pra-ni-√dhā ‘place thoroughly toward’ → dedicated surrender/orientation -> in “Surrender
+      Leads to Samādhi”: the term’s dual meaning underpins the sūtra’s claim -> not fatalistic resignation;
+      active offering of practice-mind toward īśvara'
+  - term: īśvara (ईश्वर)
+    definition: '√īś ‘rule, be capable’ → the special puruṣa untouched by kleśa/karma -> in “Surrender
+      Leads to Samādhi”: In Patañjali''s system, the transcendent, eternally liberated consciousness,
+      untouched by affliction, action, or karmic consequence -> not necessarily a creator-god dogma; Patañjali’s
+      omniscient special puruṣa as object of praṇidhāna'
+  - term: siddhi (सिद्धि)
+    definition: '√sidh ‘accomplish’ → accomplishment/power -> in “Surrender Leads to Samādhi”: By total
+      surrender to God, samādhi is attained. -> not the goal; attainments that can distract from kaivalya
+      if clung to'
+    lemma_id: siddhi
+    sense_id: siddhi.indic
+  - term: samādhisiddhir (समाधिसिद्धिर्)
+    definition: 'source-term samādhisiddhir -> in “Surrender Leads to Samādhi”: + siddhiḥ (attainment)
+      → attainment of contemplation -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Surrender every thought, action, and desire to Īśvara, and you will experience samādhi.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: By total surrender to God, samādhi is attained.

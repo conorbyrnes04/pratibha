@@ -9,19 +9,17 @@ title: To Know, to Love, to Delight
 unit_type: sutra
 sanskrit_devanagari: 子曰：「知之者不如好之者，好之者不如樂之者。」
 sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
-translation_literal: 'The Master said: Those who merely know something cannot match those who love it;
-  and those who love it cannot match those who take joy in it.'
-commentary: 'This short saying maps three levels of engagement with anything worth pursuing—the dào 道,
-  learning, virtue, or a craft. First comes knowing (zhī 知): grasping a thing intellectually, being able
-  to describe it. Above that stands loving it (hào 好): a genuine attraction that draws a person back to
-  it willingly. Highest of all is taking joy in it (lè 樂): the state where the activity has become its
-  own reward, no longer requiring effort of will because the doing itself is satisfying. Confucius is
-  describing not three kinds of people so much as three depths a single person can reach. Elsewhere he
-  says of himself that he was so absorbed in study he forgot to eat and did not notice old age coming
-  on—that is the joy level. The teaching quietly warns against stopping at mere knowledge, which is common
-  and shallow, and points toward a maturity in which what is good is also what is delightful. For the
-  jūnzǐ 君子, the exemplary person, the goal is not grim duty but a life in which right conduct has become
-  a source of pleasure.
+translation_literal: 'The Master said: Those who merely know something cannot match those who love it; and those who love
+  it cannot match those who take joy in it.'
+commentary: 'This short saying maps three levels of engagement with anything worth pursuing—the dào 道, learning, virtue, or
+  a craft. First comes knowing (zhī 知): grasping a thing intellectually, being able to describe it. Above that stands loving
+  it (hào 好): a genuine attraction that draws a person back to it willingly. Highest of all is taking joy in it (lè 樂): the
+  state where the activity has become its own reward, no longer requiring effort of will because the doing itself is satisfying.
+  Confucius is describing not three kinds of people so much as three depths a single person can reach. Elsewhere he says of
+  himself that he was so absorbed in study he forgot to eat and did not notice old age coming on—that is the joy level. The
+  teaching quietly warns against stopping at mere knowledge, which is common and shallow, and points toward a maturity in
+  which what is good is also what is delightful. For the jūnzǐ 君子, the exemplary person, the goal is not grim duty but a life
+  in which right conduct has become a source of pleasure.
 
 
   Key Terms
@@ -32,12 +30,11 @@ commentary: 'This short saying maps three levels of engagement with anything wor
   **好 hào** — to love or be fond of; an active liking that surpasses mere knowledge
 
   **樂 lè** — to take joy or delight in; the deepest stage, where the activity is its own reward'
-insight: '«To Know, to Love, to Delight» treats cultivation as a public-and-private craft: virtue is not
-  a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by improper
-  gain.'
-practice: 'The next time you practice or study something you know well, pause and ask aloud: ''Where is
-  the joy in this?'' Then continue the activity listening for the moment when effort dissolves—when knowing
-  and loving meet in the body as delight—and mark that threshold by placing your hand on your heart.'
+insight: '«To Know, to Love, to Delight» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+  pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+practice: 'The next time you practice or study something you know well, pause and ask aloud: ''Where is the joy in this?''
+  Then continue the activity listening for the moment when effort dissolves—when knowing and loving meet in the body as delight—and
+  mark that threshold by placing your hand on your heart.'
 upaya: ''
 themes:
 - action
@@ -65,11 +62,44 @@ provenance:
   section: Analects 6.20
   original_id: AN_06_20
   source_reference: ''
-translation: 'The Master said: Those who merely know something cannot match those who love it; and those
-  who love it cannot match those who take joy in it.'
-abhyasa: 'The next time you practice or study something you know well, pause and ask aloud: ''Where is
-  the joy in this?'' Then continue the activity listening for the moment when effort dissolves—when knowing
-  and loving meet in the body as delight—and mark that threshold by placing your hand on your heart.'
-translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
-  a critical edition.
+translation: 'The Master said: Those who merely know something cannot match those who love it; and those who love it cannot
+  match those who take joy in it.'
+abhyasa: 'The next time you practice or study something you know well, pause and ask aloud: ''Where is the joy in this?''
+  Then continue the activity listening for the moment when effort dissolves—when knowing and loving meet in the body as delight—and
+  mark that threshold by placing your hand on your heart.'
+translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 子曰：「知之者不如好之者，好之者不如樂之者。」
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Classical Chinese; see Pinyin study editions for pronunciation.
+- kind: translation
+  label: Pratibha Translation
+  body: The Master said, 'They who know the truth are not equal to those who love it, and they who love it are not equal to
+    those who delight in it.'
+  layer_provenance: public_domain
+- kind: commentary
+  label: Pratibha Commentary
+  body: '«To Know, to Love, to Delight» treats cultivation as a public-and-private craft: virtue is not a mood but a trained
+    pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living reader
+    to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands in attention,
+    then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+    insight without application remains incomplete. Return again to the original wording when the mind wants to smooth the
+    edge. Return again to the original wording when the mind wants to smooth the edge.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: zhī (知)
+    definition: 'know the Way → lowest of three intensities → trap: cognition suffices'
+  - term: hào (好)
+    definition: 'love it → middle → trap: fandom'
+  - term: lè (樂)
+    definition: 'delight/joy in it → highest → trap: hedonism; joy is formed pleasure in the Way'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'

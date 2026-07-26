@@ -111,3 +111,101 @@ abhyasa: 'When you next automatically protect your hand from harm—pulling it b
 translation_provenance: Rendered from the public-domain Sanskrit (GRETIL, BCA 8.111,8.112,8.113,8.114,8.115).
   Study rendering.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Dhyāna chapter, *parātma-parivartana*
+    section). English anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
+- kind: iast
+  label: IAST
+  body: 'Key terms in IAST: *parātma-parivartana* (the exchange of self and other), *ahaṃkāra* (the "I"-making),
+    *abhyāsa* ("constant use," habituation), *aṅga* (limb, member), *sattva* (living being).'
+- kind: translation
+  label: Pratibha Translation
+  body: Through sheer habit [abhyāsa], the sense of "I" has fastened onto foreign drops of seed and blood,
+    though no such self really exists there. So why should I not, in the same way, regard my neighbor's
+    body as my own self? I will stop living as a self and take other beings as my self. We love our hands
+    and other limbs as parts of one body—so why not love all living beings as members of one universe?
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Here Śāntideva pushes past equality to *parātma-parivartana*, the outright exchange of self and
+    other, and the argument turns on a startling observation about how selfhood is manufactured. The "I"
+    is not a discovery but a habit (*abhyāsa*): by constant repetition, awareness has learned to identify
+    with "foreign drops of seed and blood"—this particular body, which was never intrinsically "me" and
+    contains no findable self. If the self is merely a habit of identification projected onto a random
+    assemblage, then the crucial insight follows: the same habit can be re-aimed. What made this body
+    "mine" was repetition, and repetition can make another''s welfare equally "mine." The limb analogy
+    seals it: I do not calculate whether to help my hand when it hurts, because I have identified with
+    it as part of one body; the bodhisattva simply extends that reflexive care to all beings as limbs
+    of a single living whole. The counterintuitive and even vertiginous claim is that egoism rests on
+    no metaphysical foundation at all—only on where habit has drawn the boundary—so compassion is not
+    a heroic overcoming of nature but a re-training of an arbitrary habit. This is why it sits in the
+    meditation chapter: it is a discipline of repeated imaginative practice, not a one-time resolve. For
+    the retreatant it converts emptiness-of-self from a cool insight into a warm engine: because there
+    is no fixed self, love can flow past the old fence without limit.
+
+
+    Key Terms:
+
+
+    **parātma-parivartana (परात्मपरिवर्तन)** — Etymology: *para* (other) + *ātma* (self) + *parivartana*
+    (turning-around, exchange): "the exchange of self and other." The advanced practice of taking others''
+    welfare as one''s own and one''s self-cherishing as the enemy.
+
+    **abhyāsa (अभ्यास)** — Etymology: from *abhi-√as*, "to repeat, practice." "Constant use"; the mechanism
+    by which the self-sense was built and by which it can be re-built toward others.
+
+    **ahaṃkāra (अहंकार)** — Etymology: *aham* (I) + *kāra* (making): "the I-maker." The habitual act of
+    appropriating a body as "me"—exposed here as groundless and therefore re-directable.
+
+    **aṅga (अङ्ग)** — Etymology: "limb, member, part." The image of beings as limbs of one body/universe,
+    grounding non-arbitrary care for all.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: parātma-parivartana (परात्मपरिवर्तन)
+    definition: 'Etymology: *para* (other) + *ātma* (self) + *parivartana* (turning-around, exchange):
+      "the exchange of self and other." The advanced practice of taking others'' welfare as one''s own
+      and one''s self-cherishing as the enemy.'
+  - term: abhyāsa (अभ्यास)
+    definition: 'Etymology: from *abhi-√as*, "to repeat, practice." "Constant use"; the mechanism by which
+      the self-sense was built and by which it can be re-built toward others.'
+  - term: ahaṃkāra (अहंकार)
+    definition: 'Etymology: *aham* (I) + *kāra* (making): "the I-maker." The habitual act of appropriating
+      a body as "me"—exposed here as groundless and therefore re-directable.'
+  - term: aṅga (अङ्ग)
+    definition: 'Etymology: "limb, member, part." The image of beings as limbs of one body/universe, grounding
+      non-arbitrary care for all.'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nāgārjuna, MMK 18.6 (self is a provisional designation, not a found entity)
+    resonance: the "I" as *prajñapti*/habit rather than essence is the metaphysical premise Śāntideva
+      puts to compassionate work.
+    divergence: Nāgārjuna argues the emptiness of self dialectically; Śāntideva operationalizes it as
+      a devotional-meditative exchange.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_18_06
+  - citation: '1 Corinthians 12 (the body of Christ: "the members should have the same care one for another")'
+    resonance: an almost exact structural image—many members, one body, mutual care as natural, not calculated.
+    divergence: Paul's unity is membership in the mystical body of Christ; Śāntideva's is the empty, boundary-less
+      field of all sentient beings.
+    passage_id: ''
+  - citation: Ibn ʿArabī / "know yourself" traditions (the self one defends is a veil, not a substance)
+    resonance: dissolving the reified self opens boundless identification.
+    divergence: the Sufi dissolution opens onto the Real (al-Ḥaqq); Śāntideva's opens onto emptiness and
+      the welfare of beings.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'For three minutes, practice the exchange literally on the breath: breathing in, imagine taking
+    in a specific person''s difficulty as if it were your own limb aching; breathing out, send them your
+    ease. When the mind protests "but that''s them, not me," recall that "me" is only a habit—and keep
+    re-aiming the habit outward.'
+- kind: appendix
+  label: Public-domain anchor (Barnett 1909)
+  body: By constant use the idea of an "I" attaches itself to foreign drops of seed and blood, although
+    the thing exists not. Then why should I not conceive my fellow's body as my own self? I will cease
+    to live as self, and will take as my self my fellow-creatures. We love our hands and other limbs,
+    as members of the body; then why not love other living beings, as members of the universe?

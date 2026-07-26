@@ -83,3 +83,60 @@ abhyasa: At your next meal or when you drink something you genuinely enjoy, slow
   the food gave you.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: जग्धिपानकृतोल्लासरसानन्दविजृम्भणात् । भावयेद् भरितावस्थां महानन्दस् ततो भवेत् ॥ ७२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: jagdhipānakṛtollāsarasānandavijṛmbhaṇāt | bhāvayed bharitāvasthāṃ mahānandas tato bhavet || 72
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #44
+
+    One should meditate on the state of fullness that expands due
+
+    to the delight of savoring good food and drink; and that joy will
+
+    become sublime. || 72'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: rasa (रस)
+    definition: √ras ‘taste’ → savor/essence → taste/flavor; also the felt essence or savor of an experience
+      → ‘flavor/emotion’ aestheticizes the tasted essence of awareness
+  - term: bharitāvasthā (भरितावस्था)
+    definition: bharita + avasthā → the 'filled' or completely full state — a condition of overflowing
+      satisfaction → ‘filled condition’ understates the abiding plenum the breath-gates open
+  - term: mahānanda (महानन्द)
+    definition: maha + ānanda ‘bliss’ → the great, boundless bliss of consciousness itself, beyond any
+      external cause → ‘great bliss’ hedonizes the expansive joy of unbound awareness
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: 'Both texts instruct the practitioner to recognize a universal principle (Śakti / fullness-consciousness)
+      already present within ordinary sensory experience rather than transcending it. The move is: pause
+      conceptual overlay and let the sacred architecture of immediate experience disclose itself.'
+    divergence: Yukti 44 uses sensory delight (taste, pleasure) as the entry point to sublime consciousness,
+      while Tantrasara frames this recognition as learning to see Śakti's presence throughout the entire
+      cognitive-experiential structure—more architecturally systematic than phenomenologically immediate.
+    passage_id: tantrasara.ts_014
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: Both texts locate a transcendent state (the Fourth / sublime joy) as accessible within
+      and continuous with ordinary consciousness states (waking, dream, deep sleep / the delight of eating
+      and drinking), not as a separate realm to be attained.
+    divergence: Yukti 44 emphasizes the transformation of sensory pleasure itself into sublimity through
+      meditative savoring, while Siva Sutra positions the Fourth as a simultaneous availability that persists
+      alongside the three ordinary states—a co-presence rather than a transmutation.
+    passage_id: siva_sutra.ss_i_7
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

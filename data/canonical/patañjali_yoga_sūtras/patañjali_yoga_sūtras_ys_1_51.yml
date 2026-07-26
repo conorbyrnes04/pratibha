@@ -88,3 +88,109 @@ abhyasa: In your next meditation, when you notice the subtle sense of 'I am obse
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: तस्यापि निरोधे सर्वनिरोधान् निरबीजः समाधिः
+- kind: iast
+  label: IAST
+  body: tasyāpi nirodhe sarvanirodhān nirbījaḥ samādhiḥ
+- kind: translation
+  label: Pratibha Translation
+  body: You, even in the state of complete cessation, attain samādhi that is free of any seed or idea.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The core claim of this sutra is that the practitioner, by annihilating the very act of cessation
+    itself, reaches a samādhi that is unconditioned and devoid of any seed (bīja). This is a radical departure
+    from the conventional view that samādhi is a state achieved through sustained concentration on a particular
+    object. Here, the cessation of all mental activity—nirbīja—becomes the very means to transcend the
+    duality of action and non-action. The Sāṃkhya framework distinguishes between puruṣa (the observer)
+    and prakṛti (the material world). In this passage, the puruṣa, by eliminating the vṛtti (impressions)
+    that arise from prakṛti, dissolves the very notion of ‘seeding’ within the mind. The Dvivedi commentary’s
+    mention of “not-this, not-that” echoes this idea of negation, but the Pratibha reading emphasizes
+    that the negation itself is the vehicle, not merely a negated object. Existentially, this instructs
+    the seeker to practice a form of non-attachment that is not passive withdrawal but active annihilation
+    of all mental content. By doing so, the mind exhausts itself, leaving only the pure awareness of puruṣa,
+    which shines in perfect bliss and peace. This aligns with the Sāṃkhya doctrine that liberation (moksha)
+    is achieved when puruṣa is disentangled from prakṛti’s fluctuations. The sutra thus bridges the experiential
+    practice of samādhi with the metaphysical goal of liberation, offering a concrete method: annihilate
+    the very act of cessation to attain a seedless, absolute samādhi.
+
+
+    Key Terms
+
+
+    **nirodha (निरोध)** — ‘cancellation’ (from ni- ‘not’ + roha ‘to rise’) → in Yoga, the cessation of
+    mental fluctuations, distinct from the Sāṃkhya notion of ‘cancellation’ of prakṛti’s activity
+
+
+    **sarvanirodha (सर्वनिरोध)** — ‘total cessation’ → all vṛtti are stopped, not just selective ones;
+    contrasts with selective samādhi
+
+
+    **nirbīja (निरबीज)** — ‘seedless’; literally ‘without seed’ → denotes a state devoid of any mental
+    imprint, unlike the usual samādhi that retains a seed
+
+
+    **samādhi (समाधि)** — union/absorption; here specifically the ultimate, seedless absorption that transcends
+    even the act of absorption itself
+
+
+    Cross-Tradition Resonances
+
+
+    **Bhagavad Gita 2.50:** Both sutras describe a state where the mind is free from action and its fruits;
+    Gita speaks of ‘samyak vichara’ (right contemplation) while YS speaks of ‘nirbīja samādhi’ (seedless
+    absorption).
+
+    *Divergence:* Gita’s samādhi is achieved through sustained action without attachment, whereas YS’s
+    samādhi requires the annihilation of the very act of cessation, a more radical negation.
+
+
+    **Yoga Vasistha 1.1:** Both texts claim that ultimate liberation is attained when the mind is devoid
+    of all impressions; YS emphasizes the method of annihilating the act of cessation, Vasistha focuses
+    on the dissolution of desire.
+
+    *Divergence:* Vasistha’s method is gradual and experiential, while YS’s method is a direct negation
+    of the process itself.
+
+
+    **Sāṃkhya Kāṇḍa 1.1:** Both traditions distinguish puruṣa from prakṛti; YS applies this by having
+    puruṣa annihilate all vṛtti.
+
+    *Divergence:* Sāṃkhya treats annihilation as a metaphysical separation, whereas YS treats it as a
+    practical meditative technique.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: nirodha (निरोध)
+    definition: 'ni + √rudh ‘obstruct, restrain’ → cessation/stilling -> in “Samādhi Without Seed”: ‘cancellation’
+      (from ni- ‘not’ + roha ‘to rise’) → in Yoga, the cessation of mental fluctuations, distinct from
+      the Sāṃkhya notion of ‘cancellation’ of prakṛti’s activity -> not annihilation of mind; settling
+      of flux so awareness is no longer hijacked'
+  - term: samādhi (समाधि)
+    definition: 'sam-ā-√dhā ‘settle completely together’ -> in “Samādhi Without Seed”: here specifically
+      the ultimate, seedless absorption that transcends even the act of absorption itself -> not trance-entertainment
+      or unconsciousness; graded absorption where subject–object friction quiets'
+    lemma_id: samadhi
+    sense_id: samadhi.yoga
+  - term: nirbīja (निर्बीज)
+    definition: 'nir + bīja ‘seedless’ -> in “Samādhi Without Seed”: the highest meditative state in which
+      all mental impressions and their generative potential are dissolved, leaving only pure witness-consciousness
+      -> not blank nihilism; absorption without residual object-seed, toward ultimate restraint'
+  - term: sarvanirodha (सर्वनिरोध)
+    definition: 'source-term sarvanirodha -> in “Samādhi Without Seed”: ‘total cessation’ → all vṛtti
+      are stopped, not just selective ones -> default English flattens the technical work this term does
+      here'
+  - term: bīja (बीज)
+    definition: '‘seed’ — latent causal potency -> in “Samādhi Without Seed”: the latent impression or
+      saṃskāra that carries the potential to generate future mental activity and rebirth -> not metaphor
+      for ‘potential’ vaguely; technical seed of kleśa/karma/object in absorption theory'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You deliberately extinguish every mental impression, so that even the act of cessation becomes
+    empty, and you enter a samādhi that has no seed.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: The prevention of that even, leads to the pre-

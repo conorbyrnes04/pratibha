@@ -84,3 +84,21 @@ abhyasa: 'Sit quietly and let a single thought or image arise on its own — don
   presence that never left.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: madhya (मध्य)
+    definition: madhya ‘middle/center’ → the middle or in-between; the interval between two states, breaths,
+      or thoughts, held as a doorway into pure awareness → ‘center’ as geometry misses the still hinge
+      between movements where awareness opens
+  - term: cit (चित्)
+    definition: √cit ‘perceive/be aware’ → consciousness itself — the knowing presence that remains when
+      all objects of knowledge fall away → ‘mind/thought’ is the trap; cit is knowingness as such
+    lemma_id: cit
+    sense_id: cit.shaiva
+  - term: bhāvanā (भावना)
+    definition: √bhū causative → bringing-into-being / creative contemplation → sustained contemplative
+      dwelling or cultivation; here, the meditative awareness that unfolds in the gap → ‘meditation’ is
+      too generic; here imaginative saturation that makes real
+  layer_provenance: editorial-enriched

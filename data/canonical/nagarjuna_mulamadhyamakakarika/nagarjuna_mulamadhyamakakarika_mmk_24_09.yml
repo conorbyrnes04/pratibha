@@ -84,3 +84,92 @@ abhyasa: 'Throughout one day, each time you name something (a person, object, em
 translation_provenance: Rendered from the public-domain source (Sanskrit (IAST)). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: ये ऽनयोर् न विजानन्ति विभागं सत्ययोर् द्वयोः । ते तत्त्वं न विजानन्ति गम्भीरं बुद्धशासने ॥
+  layer_provenance: transliterated_from_iast
+- kind: iast
+  label: IAST
+  body: ye 'nayor na vijānanti vibhāgaṃ satyayor dvayoḥ / te tattvaṃ na vijānanti gambhīraṃ buddhaśāsane
+    //
+- kind: translation
+  label: Pratibha Translation
+  body: Those who do not grasp how the two truths are distinguished do not grasp the profound reality
+    [tattva] within the Buddha's teaching.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This is Nāgārjuna''s warning label, and it cuts both ways. The word *vibhāga*—distinction, division—tells
+    us that wisdom is not merely knowing that there are two truths but knowing how to keep them properly
+    apart and properly joined. Collapse them one way and you get eternalism: convention is mistaken for
+    the ultimate, and passing things are treated as bearers of real essence. Collapse them the other way
+    and you get nihilism: the ultimate is mistaken for a denial of convention, and the world''s functioning,
+    along with ethics and the path, is dismissed as unreal. Both collapses miss *tattva*, "thatness,"
+    the profound point. The counterintuitive teaching is that the *depth* of Buddhism is not a secret
+    content but a competence—the trained ability to move between registers without confusing them. This
+    reframes the whole spiritual project: enlightenment is less an exotic experience than a cured double
+    vision, in which one no longer reifies appearances nor annihilates them. For the retreatant, this
+    verse is a mirror held up to spiritual bypassing: the temptation, after tasting emptiness, to float
+    above ordinary obligations as "ultimately empty." Nāgārjuna says flatly that this is not depth but
+    a failure to understand the division—the beginner''s error dressed as insight.
+
+
+    Key Terms:
+
+
+    **vibhāga (विभाग)** — Etymology: *vi-* (apart) + *√bhaj* (to divide, apportion): "distinction, correct
+    division." Wisdom as the skill of distinguishing the registers of truth—neither fusing nor severing
+    them.
+
+    **tattva (तत्त्व)** — Etymology: *tat* ("that") + abstract *-tva*: literally "that-ness," reality-as-such.
+    Here the profound point is not a doctrine but the correct handling of the two truths.
+
+    **gambhīra (गम्भीर)** — Etymology: "deep, profound," used of oceans and of the dharma. Marks the two-truths
+    teaching as the deep water in which the unwary drown (cf. 24.11, emptiness wrongly grasped as a snake
+    wrongly held).
+
+    **śāsana (शासन)** — Etymology: from *√śās* (to instruct, rule): "teaching, dispensation." The whole
+    body of the Buddha''s instruction, whose depth is at stake.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vibhāga (विभाग)
+    definition: 'Etymology: *vi-* (apart) + *√bhaj* (to divide, apportion): "distinction, correct division."
+      Wisdom as the skill of distinguishing the registers of truth—neither fusing nor severing them.'
+  - term: tattva (तत्त्व)
+    definition: 'Etymology: *tat* ("that") + abstract *-tva*: literally "that-ness," reality-as-such.
+      Here the profound point is not a doctrine but the correct handling of the two truths.'
+  - term: gambhīra (गम्भीर)
+    definition: 'Etymology: "deep, profound," used of oceans and of the dharma. Marks the two-truths teaching
+      as the deep water in which the unwary drown (cf. 24.11, emptiness wrongly grasped as a snake wrongly
+      held).'
+  - term: śāsana (शासन)
+    definition: 'Etymology: from *√śās* (to instruct, rule): "teaching, dispensation." The whole body
+      of the Buddha''s instruction, whose depth is at stake.'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Chāndogya Upaniṣad, teacher–student dialogues (Uddālaka and Śvetaketu)
+    resonance: depth is transmitted as a discernment the student must be brought to *see*, not a fact
+      to be stored.
+    divergence: the Upaniṣad's depth culminates in identity with Being (*tat tvam asi*); Nāgārjuna's culminates
+      in the emptiness of any such being.
+    passage_id: ''
+  - citation: Aristotle, Nicomachean Ethics (*phronēsis*, practical wisdom as knowing how, not just what)
+    resonance: the highest knowing is a trained competence of application, not information.
+    divergence: Aristotle's *phronēsis* aims at right action in a real world of ends; Nāgārjuna's discernment
+      aims at right seeing across the empty/conventional divide.
+    passage_id: ''
+  - citation: Zhuangzi (the danger of using words as if they fixed reality)
+    resonance: those who confuse the register of speech with the register of the Way miss the point entirely.
+    divergence: Zhuangzi dissolves distinctions playfully; Nāgārjuna insists a precise distinction (vibhāga)
+      is exactly what must be preserved.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Notice one place today where you are tempted to use "it''s all empty anyway" to excuse withdrawal
+    from a real responsibility, or where you grip an outcome as if it were ultimately solid. Name which
+    of the two truths you are collapsing. Then re-enter the situation holding both: act as if it matters,
+    know that it is empty.'

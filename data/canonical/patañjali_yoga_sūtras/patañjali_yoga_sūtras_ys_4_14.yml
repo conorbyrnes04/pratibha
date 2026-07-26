@@ -79,3 +79,94 @@ abhyasa: Watch one substance transform across three states today—water to stea
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: परिणामैकत्वाद् वस्तुतत्त्वम्
+- kind: iast
+  label: IAST
+  body: pariṇāmaikatvād vastutattvam
+- kind: translation
+  label: Pratibha Translation
+  body: The reality of things arises from the uniformity of the gunas.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this sutra is that the ontological status of all objects is grounded in
+    the homogeneous distribution of the three gunas—sattva, rajas, and tamas—within them. In the Yoga–Sāṃkhya
+    framework, this stands in contrast to the dualistic insistence that only puruṣa (consciousness) and
+    prakṛti (matter) are fundamental. Here, the sutra asserts that prakṛti’s manifestation, its ‘vastu’,
+    is not an arbitrary assemblage but a coherent whole whose essence, or tattva, is the very sameness
+    of its constituent gunas. This sameness is not a passive sameness but an active, dynamic unity that
+    gives rise to the observable reality. The implication for practice is that the practitioner must cultivate
+    an awareness of this internal uniformity, recognizing that the perceived multiplicity of objects is
+    a surface phenomenon superimposed upon an underlying oneness. By aligning one’s mind with this uniformity—through
+    meditation on the sameness of the gunas—one can dissolve the illusion of separateness, thereby moving
+    toward kaivalya. The sutra’s brevity masks a profound ontological claim: that the very fabric of reality
+    is woven from the consistent interplay of the gunas, and that liberation is achieved by perceiving
+    this weave as a single, indivisible truth.
+
+
+    Key Terms
+
+
+    **परिणाम (परिणाम)** — परिणाम (transformation) -> in Yoga, denotes the dynamic unfolding of prakṛti;
+    default translation ‘change’ misses its role as the process that reveals the unity of gunas
+
+
+    **एकत्व (एकत्व)** — एकत्व (oneness) -> in Sāṃkhya, refers to the uniformity of gunas within prakṛti;
+    default ‘unity’ overlooks its specific implication for the sameness that grounds reality
+
+
+    **वस्तु (वस्तु)** — वस्तु (thing) -> in Yoga, signifies the manifested object of prakṛti; default
+    ‘object’ neglects its ontological status as the concrete expression of gunic uniformity
+
+
+    **तत्त्व (तत्त्व)** — तत्त्व (that‑ness) -> in Sāṃkhya, denotes the essential nature of prakṛti; default
+    ‘nature’ omits its function as the defining reality of the object
+
+
+    Cross-Tradition Resonances
+
+
+    **Patanjali Yoga Sutra 2.1:** Both sutras posit that the essence of objects is derived from an underlying
+    unity; 2.1 speaks of the mind’s power to transform perception, mirroring the transformation implied
+    by ‘परिणाम’
+
+    *Divergence:* Patanjali focuses on mental activity, whereas this sutra attributes reality to the intrinsic
+    uniformity of gunas, shifting agency from mind to prakṛti
+
+
+    **Samkhya Karika 2.1:** Both texts emphasize the role of prakṛti’s gunas in constituting reality;
+    the Karika describes the three gunas as the basis of all change
+
+    *Divergence:* The Karika presents gunas as independent qualities, whereas here they are presented
+    as a unified whole that grants reality to objects
+
+
+    **Bhaṭṭārāyaṇa Yoga Sutra 2.2:** Both sutras discuss the transformation of perception into reality
+    through the mind’s activity
+
+    *Divergence:* Bhaṭṭārāyaṇa emphasizes the mind’s role in creating illusion, while this sutra underscores
+    the inherent uniformity of gunas as the source of reality'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: pariṇāma (परिणाम)
+    definition: 'pari-√nam ‘bend around / transform’ → transformation -> in “Uniformity of Gunas”: the
+      process by which substance changes form while remaining essentially itself -> not random change;
+      structured transformation of dharma/lakṣaṇa/avasthā that saṃyama can know'
+  - term: guṇa (गुण)
+    definition: '‘strand/quality’ — sattva, rajas, tamas as constitutive modes -> in “Uniformity of Gunas”:
+      whose permutations produce all phenomenal change -> not optional personality traits; the dynamic
+      constitution of all prakṛtic phenomena'
+  - term: vastu-tattva
+    definition: 'source-term vastu-tattva -> in “Uniformity of Gunas”: the true nature or essential reality
+      of a substance -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe each object you encounter and consciously note the uniform presence of sattva, rajas,
+    and tamas within it, recognizing that this sameness is the true reality.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: The reality of things is due to the uniformity of the guṇas’

@@ -99,3 +99,61 @@ abhyasa: In the moment you wake tomorrow, before opening your eyes, notice the s
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: अवस्थायुगलं चात्र कार्यकर्तृत्वशब्दितम् । कार्यता क्षयिणी तत्र कर्तृत्वं पुनरक्षयम् ॥ १४ ॥ कार्योन्मुखः
+    प्रयत्नो यः केवलं सोऽत्र लुप्यते । तस्मिंल्लुप्ते विलुप्तोऽस्मीत्यबुधः प्रतिपद्यते ॥ १५ ॥ न तु योऽन्तर्मुखो
+    भावः सर्वज्ञत्वगुणास्पदम् । तस्य लोपः कदाचित्स्यादन्यस्यानुपलम्भनात् ॥ १६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: avasthāyugalaṃ cātra kāryakartṛtvaśabditam | kāryatā kṣayiṇī tatra kartṛtvaṃ punarakṣayam || 14
+    || kāryonmukhaḥ prayatno yaḥ kevalaṃ so'tra lupyate | tasmiṃllupte vilupto'smītyabudhaḥ pratipadyate
+    || 15 || na tu yo'ntarmukho bhāvaḥ sarvajñatvaguṇāspadam | tasya lopaḥ kadācitsyādanyasyānupalambhanāt
+    || 16 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Shared source passage with Stanza 14. See Stanza 14 for the full translation and commentary.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kartṛtva (कर्तृत्व)
+    definition: kartṛ ‘doer’ + -tva → the agency or capacity of the knowing subject; here described as
+      undecaying and never lost → ‘agency’ abstractly misses the felt claim ‘I do’ that contracts freedom
+  - term: prayatna (प्रयत्न)
+    definition: pra- + √yat → effort → the outward-directed effort or exertion that reaches toward objects;
+      what actually ceases in deep sleep → ‘effort’ as strain misses the precise exertion the verse names
+      or releases
+  - term: sarvajñatva (सर्वज्ञत्व)
+    definition: sarvajña + -tva → omniscience → all-knowing-ness; the quality of unlimited awareness that
+      is the ground of the inward-facing self → ‘omniscience’ as info-total misses all-knowing as freedom
+      of awareness
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #106'
+    resonance: 'Both texts pause conceptual elaboration to let a paradox disclose itself directly: the
+      Spandakarika invites interpretive suspension to allow insight to emerge; Vijnana Bhairava poses
+      an aporia (How can the unchanging Self be the locus of action?) that dissolves only through non-dual
+      recognition rather than logical resolution.'
+    divergence: The Spandakarika suspends interpretation to access the vibration (spanda) of consciousness-in-action;
+      Vijnana Bhairava uses the paradox as a gateway to recognize the Self's transcendence of subject-object
+      duality, emphasizing non-dual awareness over dynamic participation.
+    passage_id: vijnana_bhairava.yukti_106
+  - citation: 'Phaedo (Plato) — The Second Sailing: Forms as True Causes'
+    resonance: 'Both texts enact a methodological reversal: Socrates abandons sensory-physical explanation
+      for intelligible causes; the Spandakarika asks the reader to abandon discursive interpretation and
+      allow direct disclosure—both move from mediated knowledge to immediate apprehension.'
+    divergence: Plato's second sailing ascends to transcendent Forms outside the flux of becoming; the
+      Spandakarika's pause discloses the spanda (pulsation) within action itself, grounding insight in
+      immanent dynamism rather than transcendent intelligibility.
+    passage_id: phaedo_plato.phaedo_md_005
+  layer_provenance: generated_grounded

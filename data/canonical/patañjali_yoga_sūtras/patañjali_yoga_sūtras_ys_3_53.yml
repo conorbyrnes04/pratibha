@@ -74,3 +74,111 @@ abhyasa: 'Look at two objects side by side—a cup and a stone, a leaf and a coi
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: जाटिलाक्षणादेशैः अन्यतांवच्छेदात् तुल्यायः ततः प्रतिपत्तिḥ
+- kind: iast
+  label: IAST
+  body: jātilakṣaṇadeśair anyatānavacchedāt tulyayos tataḥ pratipattiḥ
+- kind: translation
+  label: Pratibha Translation
+  body: You discern each fleeting moment as a single, distinct unit, recognizing its sameness with all
+    others and thereby establishing it as a point of realization.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sūtra asserts that by treating every moment as a unique, indivisible entity, one can achieve
+    a unified perception of reality. This claim hinges on the contested move that a moment, though fleeting,
+    possesses an inherent identity that can be recognized through disciplined observation. In the Yoga
+    and Sāṃkhya traditions, this aligns with the idea that *citta* (mind) can be trained to see *prakṛti*
+    (nature) without distortion. The sūtra’s emphasis on *tulyā*—the equality of moments—mirrors the Sāṃkhya
+    doctrine that all moments of *citta* are ultimately identical in their underlying *purusha* nature,
+    yet distinct in their *vṛtti* (mental modifications). The Satchidananda commentary’s focus on “discriminative
+    knowledge” underscores the necessity of *viveka* (discernment) in this process. By applying this principle,
+    one learns to anchor attention in the present, thereby reducing the tendency of *vṛtti* to wander.
+    The existential application is clear: when each moment is treated as a separate, pure point of awareness,
+    the habitual cycle of craving and aversion dissolves, leading to *samādhi* (concentration) and ultimately
+    liberation. This sūtra thus serves as a practical guide for cultivating moment-to-moment mindfulness,
+    a cornerstone of yogic practice.
+
+
+    Key Terms
+
+
+    **jātilakṣaṇa (जाटिलाक्षण)** — जाटिलाक्षण: ‘flickering moment’ (जाटि ‘flicker’ + अक्षण ‘moment’) →
+    indicates the transient, observable unit of experience; the term foregrounds the fleeting nature of
+    consciousness that yoga seeks to stabilize.
+
+
+    **anyatā (अन्यत)** — अन्यत: ‘otherness’ (अन्य ‘other’) → contrasts the singular moment with all others,
+    emphasizing the distinct identity of each instance; this contrasts with the Sāṃkhya notion of *tulya*
+    (equality) that all moments share a common essence.
+
+
+    **vacchedā (वच्छेद)** — वच्छेद: ‘separation, division’ (वच् ‘to divide’) → denotes the analytic act
+    of distinguishing one moment from another; it is the operative tool of *viveka* (discernment) in yogic
+    praxis.
+
+
+    **tulyā (तुल्य)** — तुल्य: ‘equal’ (तुल् ‘to compare’) → asserts that, despite their distinctness,
+    all moments are fundamentally identical in their *purusha* nature; this is a key point of convergence
+    with Sāṃkhya metaphysics.
+
+
+    **pratipatti (प्रतिपत्ति)** — प्रतिपत्ति: ‘establishment, realization’ (प्रतिपद् ‘to come to’) → the
+    culmination of the discriminative process, where the moment is fully recognized and integrated into
+    the yogic awareness.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 3.52:** Both 3.52 and 3.53 use the structure ‘X‑Y‑Z‑tataḥ pratipattiḥ’, linking a descriptive
+    clause to the realization of a moment.
+
+    *Divergence:* While 3.52 focuses on the *citta*’s capacity to recognize its own nature, 3.53 specifically
+    targets the *moment* itself, thereby narrowing the scope from mental states to temporal units.
+
+
+    **Sāṃkhya Kāṇḍa 1.12:** The idea that each moment is *tulyā* echoes the Sāṃkhya assertion that all
+    *vṛtti* are ultimately identical in *purusha* nature.
+
+    *Divergence:* Sāṃkhya treats *tulyā* as a universal principle, whereas the sūtra applies it to the
+    concrete practice of moment‑to‑moment observation.
+
+
+    **Yoga Sūtra 3.54:** The progression from 3.53 to 3.54 mirrors the shift from momentary discrimination
+    to the consolidation of that discrimination into a stable *samādhi*.
+
+    *Divergence:* 3.54 introduces the notion of *saṁyama* (control) as a continuous process, whereas 3.53
+    presents a snapshot of the initial discriminative act.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: jātilakṣaṇa (जाटिलाक्षण)
+    definition: 'source-term jātilakṣaṇa -> in “Momentary Discrimination”: जाटिलाक्षण: ‘flickering moment’
+      (जाटि ‘flicker’ + अक्षण ‘moment’) → indicates the transient, observable unit of experience -> default
+      English flattens the technical work this term does here'
+  - term: anyatā (अन्यत)
+    definition: 'source-term anyatā -> in “Momentary Discrimination”: this contrasts with the Sāṃkhya
+      notion of *tulya* (equality) that all moments share a common essence -> default English flattens
+      the technical work this term does here'
+  - term: vacchedā (वच्छेद)
+    definition: 'another -> in “Momentary Discrimination”: वच्छेद: ‘separation, division’ (वच् ‘to divide’)
+      → denotes the analytic act of distinguishing one moment from another -> default English flattens
+      the technical work this term does here'
+  - term: tulyā (तुल्य)
+    definition: 'source-term tulyā -> in “Momentary Discrimination”: this is a key point of convergence
+      with Sāṃkhya metaphysics -> default English flattens the technical work this term does here'
+  - term: pratipatti (प्रतिपत्ति)
+    definition: 'source-term pratipatti -> in “Momentary Discrimination”: प्रतिपत्ति: ‘establishment,
+      realization’ (प्रतिपद् ‘to come to’) → the culmination of the discriminative process, where the
+      moment is fully recognized and integrated into the yogic awareness -> default English flattens the
+      technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You observe each fleeting moment as a single, distinct unit, discerning its nature without distraction.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: B y saṁyama on single moments

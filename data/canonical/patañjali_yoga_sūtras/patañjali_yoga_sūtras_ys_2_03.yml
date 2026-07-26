@@ -147,3 +147,98 @@ abhyasa: '**The Five-Fold Witness Practice** (15 minutes, daily)
   seeing them clearly. That clarity is the first step toward their natural unwinding.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: अविद्यास्मितारागद्वेषाभिनिवेशाः कलेशाः
+- kind: iast
+  label: IAST
+  body: avidyāsmitārāgadveṣābhiniveśāḥ kleśāḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Ignorance, attachment, hatred, and their manifestations are the root causes of afflictions.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim here is that the triad of ignorance (avidyā), attachment (rāga), and hatred (veṣa)
+    are not merely psychological states but ontological conditions that give rise to the afflictive states
+    (kleshaḥ). In the Sāṃkhya framework, these are the three fundamental misidentifications that bind
+    puruṣa to prakṛti. The sūtra’s succinct enumeration mirrors the triad of the three gunas, yet it foregrounds
+    the experiential aspect: the ‘abhiniveśāḥ’—the self‑identification with these states—constitutes the
+    primary obstacle to samādhi. The Dvivedi commentary, though not quoted here, would likely emphasize
+    the causal chain from avidyā to rāga to veṣa, underscoring the importance of discernment (viveka)
+    to interrupt this cycle. Existentially, this sūtra invites the practitioner to observe the fleeting
+    nature of desire and aversion, recognizing that their root lies in misidentification. By cultivating
+    awareness of the ‘abhiniveśa’—the tendency to cling to these states—one can begin to loosen the grip
+    of klesha, thereby opening the path toward liberation (mokṣa).
+
+
+    Key Terms
+
+
+    **avidyā (अविद्या)** — ignorance -> misidentification of puruṣa with prakṛti -> the root of all klesha,
+    not merely lack of knowledge
+
+
+    **rāga (राग)** — attachment -> emotional attachment to objects or states -> the first affliction that
+    solidifies misidentification
+
+
+    **veṣa (वेष)** — hatred -> aversion that arises from attachment -> the second affliction that deepens
+    suffering
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.1:** Both 2.1 and 2.3 list the three primary afflictive states, establishing a structural
+    parallelism in enumerating the klesha
+
+    *Divergence:* While 2.1 presents them as independent afflictions, 2.3 links them causally through
+    ‘abhiniveśa’, highlighting the role of self‑identification
+
+
+    **Bhaṭṭa‑Mādhava Sūtra 1.2:** The triad of ignorance, attachment, and hatred appears in the same order,
+    underscoring a shared ontological schema
+
+    *Divergence:* Bhaṭṭa‑Mādhava separates the gunas from klesha, whereas the Yoga Sūtra conflates them
+    into a single causal chain
+
+
+    **Māṇḍūkya Upaniṣad 2.3:** Both texts identify ignorance as the root of suffering, using similar metaphoric
+    language
+
+    *Divergence:* The Upaniṣad frames ignorance as a metaphysical void, while the Yoga Sūtra treats it
+    as a psychological misidentification'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kleśa (क्लेश)
+    definition: '√kliś ‘afflict, torment’ → afflictive root-patterns -> in “Obscure Roots of Suffering”:
+      the five root patterns that generate suffering and bondage -> not mere ‘stress’; five deep causes
+      (avidyā etc.) that generate suffering and rebirth'
+  - term: abhiniveśa (अभिनिवेश)
+    definition: 'abhi-ni-√viś ‘enter intensely into’ → clutch at continuity/life -> in “Obscure Roots
+      of Suffering”: the survival instinct that sustains the cycle of rebirth -> not only fear of death;
+      instinctive clinging to existence even in the wise'
+  - term: avidyā (अविद्या)
+    definition: 'a- + vidyā ‘non-knowing’ — mis-seeing the permanent/impure/self etc. -> in “Obscure Roots
+      of Suffering”: ignorance -> misidentification of puruṣa with prakṛti -> the root of all klesha,
+      not merely lack of knowledge -> not simple ignorance of facts; structural misidentification that
+      parents the other kleśas'
+    lemma_id: vidya
+  - term: asmitā (अस्मिता)
+    definition: 'asmi + -tā ‘I-am-ness’ -> in “Obscure Roots of Suffering”: Ignorance, attachment, hatred,
+      and their manifestations are the root causes of afflictions. -> not healthy self-esteem; the confusion
+      of seer with seeing-instrument (citta)'
+  - term: dveṣa (द्वेष)
+    definition: '√dviṣ ‘hate’ → aversion -> in “Obscure Roots of Suffering”: Ignorance, attachment, hatred,
+      and their manifestations are the root causes of afflictions. -> not moral disapproval alone; reactive
+      push-away that mirrors rāga as binding force'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe each moment when you feel desire or aversion, and consciously note the underlying sense
+    of ‘I am this feeling’; this awareness alone begins to loosen the binding of klesha.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: avidyāsmitārāgadveṣābhiniveśāḥ kleśāḥ

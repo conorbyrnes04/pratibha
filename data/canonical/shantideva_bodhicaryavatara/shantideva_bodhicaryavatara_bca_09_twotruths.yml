@@ -124,3 +124,102 @@ abhyasa: Throughout this day, whisper 'illusion-like' each time you catch yourse
 translation_provenance: Rendered from the public-domain Sanskrit (GRETIL, BCA 9.1,9.2,9.3,9.4,9.5). Study
   rendering.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Prajñā-pāramitā chapter, IX.1–2).
+    English anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
+- kind: iast
+  label: IAST
+  body: 'Key terms in IAST: *prajñā* (wisdom), *satya-dvaya* (the two truths), *saṃvṛti-satya* ("Veiled
+    Truth," conventional truth), *paramārtha-satya* ("Transcendent Reality," ultimate truth), *buddhi*
+    (the understanding/intellect).'
+- kind: translation
+  label: Pratibha Translation
+  body: 'All the preceding disciplines were ordained by the Sage for the sake of wisdom [prajñā]; so whoever
+    wishes to still suffering must acquire wisdom. We hold that there are two truths [satya-dvaya]: the
+    veiled, conventional truth [saṃvṛti] and the ultimate reality [paramārtha]. The ultimate lies beyond
+    the reach of the ordinary intellect [buddhi]; the intellect''s own domain is called the veiled truth.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'With this verse Śāntideva opens the wisdom chapter and states the frame on which all his emptiness-analysis
+    will hang—the same two-truths structure Nāgārjuna gave, now placed at the summit of the bodhisattva''s
+    training. The opening line makes an emphatic claim about priority: the entire "equipment" of the path—giving,
+    ethics, patience, energy, meditation, the five perfections already treated—exists "for the sake of
+    wisdom." Merit and method are not ends; they are scaffolding for *prajñā*, because only wisdom actually
+    "stills sorrow" at the root. Then the distinction: *saṃvṛti*, the veiled truth, is the whole domain
+    of the intellect (*buddhi*)—the world of persons, things, and causes as ordinarily cognized—while
+    *paramārtha*, the ultimate, "is beyond the range of the understanding." The counterintuitive and slightly
+    dangerous move is that last clause: the ultimate is defined as what the discriminating intellect *cannot*
+    reach. This is not anti-rationalism—Śāntideva will use fierce reasoning for the rest of the chapter—but
+    a recognition that reasoning functions to bring the intellect to its own limit, where conceptual grasping
+    gives out and emptiness is realized non-conceptually. For a retreatant it clarifies the purpose of
+    study and analysis: they are not the destination but the raft, sharpening the mind precisely so it
+    can recognize where its own competence ends. Wisdom begins as thinking and matures into the silence
+    past thinking.
+
+
+    Key Terms:
+
+
+    **prajñā (प्रज्ञा)** — Etymology: *pra-* (forth, deeply) + *√jñā* (to know): "wisdom, deep knowing."
+    The sixth perfection and the aim of all the others; the direct realization of emptiness that alone
+    uproots suffering.
+
+    **saṃvṛti-satya (संवृतिसत्य)** — Etymology: *saṃvṛti* (covering, from *sam-√vṛ*) + *satya* (truth):
+    "veiled/conventional truth." Barnett''s "Veiled Truth"; the domain of the intellect and everyday appearance.
+
+    **paramārtha-satya (परमार्थसत्य)** — Etymology: *parama* (highest) + *artha* (meaning) + *satya*:
+    "ultimate truth." Barnett''s "Transcendent Reality"; emptiness, defined as beyond the discriminating
+    intellect''s reach.
+
+    **buddhi (बुद्धि)** — Etymology: from *√budh* (to awaken, know): "intellect, discriminating understanding."
+    Its proper domain is the conventional; wisdom uses it to reach the border of its own capacity.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: prajñā (प्रज्ञा)
+    definition: 'Etymology: *pra-* (forth, deeply) + *√jñā* (to know): "wisdom, deep knowing." The sixth
+      perfection and the aim of all the others; the direct realization of emptiness that alone uproots
+      suffering.'
+  - term: saṃvṛti-satya (संवृतिसत्य)
+    definition: 'Etymology: *saṃvṛti* (covering, from *sam-√vṛ*) + *satya* (truth): "veiled/conventional
+      truth." Barnett''s "Veiled Truth"; the domain of the intellect and everyday appearance.'
+  - term: paramārtha-satya (परमार्थसत्य)
+    definition: 'Etymology: *parama* (highest) + *artha* (meaning) + *satya*: "ultimate truth." Barnett''s
+      "Transcendent Reality"; emptiness, defined as beyond the discriminating intellect''s reach.'
+  - term: buddhi (बुद्धि)
+    definition: 'Etymology: from *√budh* (to awaken, know): "intellect, discriminating understanding."
+      Its proper domain is the conventional; wisdom uses it to reach the border of its own capacity.'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nāgārjuna, MMK 24.8–10 (the two truths and their necessary interdependence)
+    resonance: Śāntideva inherits the schema wholesale and installs it as the gateway to the bodhisattva's
+      wisdom.
+    divergence: Nāgārjuna presents it as bare epistemology; Śāntideva embeds it in a devotional path whose
+      whole prior "equipment" serves it.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_08
+  - citation: Plato, Republic VI–VII (divided line; the Good beyond being, grasped past discursive thought)
+    resonance: a higher reality lying beyond the reach of ordinary reasoning.
+    divergence: Plato's beyond is a supreme fullness of being; Śāntideva's is emptiness—the absence of
+      own-being, not a higher entity.
+    passage_id: ''
+  - citation: Pseudo-Dionysius / apophatic mysticism (the divine dark beyond the concepts)
+    resonance: the ultimate defined precisely as what the understanding cannot capture.
+    divergence: apophasis approaches a superessential God; Śāntideva approaches the emptiness of all essence,
+      God included.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Take a question you have been trying to *think* your way through in practice ("what is awareness?"
+    "who am I?"). Reason about it honestly for a few minutes—then deliberately notice the point where
+    the intellect spins without gaining ground. Instead of pushing harder, rest at that border in silence,
+    letting the mind's limit be the doorway rather than a defeat.
+- kind: appendix
+  label: Public-domain anchor (Barnett 1909)
+  body: All this equipment the Sage has ordained for the sake of wisdom; so he that seeks to still sorrow
+    must get him wisdom. We deem that there are two verities, the Veiled Truth and the Transcendent Reality.
+    The Reality is beyond the range of the understanding; the understanding is called Veiled Truth.

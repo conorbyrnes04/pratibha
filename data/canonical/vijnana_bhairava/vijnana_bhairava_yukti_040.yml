@@ -84,3 +84,69 @@ abhyasa: 'Sit comfortably with the spine upright and unforced. Take a few minute
   to begin.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: सर्वस्रोतोनिबन्धेन प्राणशक्त्योर्ध्वया शनैः । पिपीलस्पर्शवेलायाम् प्रथते परमं सुखम् ॥ ६७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: sarvasrotonibandhena prāṇaśaktyordhvayā śanaiḥ | pipīlasparśavelāyām prathate paramaṃ sukham ||
+    67 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #40
+
+    The practitioner who stops all the streams of prāṇa-śakti [from
+
+    flowing out through the senses and orifices] will experience it
+
+    [enter the central channel and] slowly rise upward. In time he
+
+    will experience a sensation [like the crawling] of ants [on his
+
+    skin]; then supreme happiness (/pleasure) manifests. || 67'
+- kind: commentary
+  label: Pratibha Commentary
+  body: The teaching frames change as lawful and intelligible, inviting steadiness within transformation.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: prāṇaśakti (प्राणशक्ति)
+    definition: prāṇa + śakti → the energy of the breath understood as the living current of consciousness,
+      not merely physical air → ‘breath energy’ wellness-speak misses consciousness-power as vital current
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  - term: sarvasrotas (सर्वस्रोतस्)
+    definition: sarva + srotas ‘current/stream’ → 'All the channels/gates' — the outward-flowing senses
+      through which awareness normally escapes toward objects → ‘all channels’ anatomy misses every stream
+      of sensing/knowing
+  - term: madhya (मध्य)
+    definition: madhya ‘middle/center’ → the central axis or middle channel along which the reversed energy
+      rises when the senses are stilled → ‘center’ as geometry misses the still hinge between movements
+      where awareness opens
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 3.13
+    resonance: 'Both texts frame transformation as intelligible and lawful: Patañjali explains that successive
+      phases of elements and senses follow a causal logic ("succession of different phases is the cause"),
+      while Yukti 40 presents the arrest and redirection of prāṇa-śakti as an orderly process that yields
+      predictable ascent. Each treats change as structured, not chaotic.'
+    divergence: Patañjali analyzes transformation from the standpoint of external manifestation (visible
+      characteristics, time, conditions), whereas Vijnana Bhairava locates transformation in the internal
+      energetic body and consciousness itself.
+    passage_id: patañjali_yoga_sūtras.ys_3_13
+  - citation: Pratyabhijnahrdayam — Sutra 1
+    resonance: 'Both texts posit Śakti/Consciousness as the active principle governing transformation:
+      Pratyabhijnahrdayam identifies sovereign Śakti as the cause of manifestation, maintenance, and dissolution,
+      while Yukti 40 works with prāṇa-śakti as the force whose redirection enables the practitioner''s
+      ascent. Both treat Śakti as the intelligible engine of change.'
+    divergence: Pratyabhijnahrdayam emphasizes Śakti's cosmic role in universal cycles, whereas Vijnana
+      Bhairava focuses on the practitioner's direct manipulation of Śakti for individual transformation
+      and liberation.
+    passage_id: pratyabhijnahrdayam.phr_001
+  layer_provenance: generated_grounded

@@ -81,3 +81,110 @@ abhyasa: As you lie down tonight, let your attention sink with your body into th
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: अभावप्रत्यालम्बनः वृत्तिर निद्रा
+- kind: iast
+  label: IAST
+  body: abhāvapratyayālambanā vṛttir nidrā
+- kind: translation
+  label: Pratibha Translation
+  body: The transformation that is based on non-existence is sleep.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sūtra asserts that sleep is a transformation rooted in the absence of change. It claims that
+    the mind’s activity ceases not because it stops transforming, but because all its transformations
+    collapse into nothingness. This is a contested move: many commentators treat sleep as a form of *samādhi*
+    (concentration), but here it is distinguished by its *non‑transformation* character. The claim is
+    that sleep is a *transformation* that has no *vṛtti*—the mind’s habitual fluctuations are suppressed,
+    yet the mind remains active in a different mode. In the Yoga and Sāṃkhya traditions, *samādhi* is
+    the cessation of *vṛtti*, whereas sleep is a state where *vṛtti* is not merely absent but is transformed
+    into a state of *abhāva* (non‑existence). This distinction has existential import: it suggests that
+    true stillness is not the mere absence of thought but the conversion of all thought into a non‑existent
+    form that still retains a latent potential for remembrance. The Dvivedi commentary reinforces this
+    by noting that the remembrance of sleep (“I slept sound”) follows because the state itself is a transformation;
+    if it were pure cessation, no memory would arise. Thus, sleep is a unique *samādhi* that preserves
+    the capacity for recall, indicating a subtle continuity between waking and resting states. The philosophical
+    claim is that *abhāvapratyayālambanā* is a higher form of *vṛtti* suppression, wherein the mind’s
+    processes are not merely halted but are re‑oriented toward non‑existence, allowing for a deeper integration
+    of experience and rest.
+
+
+    Key Terms
+
+
+    **abhāva (अभाव)** — from ‘abha’ (absence) + ‘-va’ (possessive suffix); in Sāṃkhya it denotes the non‑existence
+    of a quality, here the non‑existence of transformation; the default translation ‘nothingness’ misses
+    the active process of becoming non‑existent
+
+
+    **vṛtti (वृत्ति)** — Sāṃkhya term for the mind’s habitual fluctuations; traditionally defined as the
+    ‘movement’ of the mind; here it is the target of suppression
+
+
+    **samādhi (समाधि)** — Sāṃkhya concept of the cessation of vṛtti; the sūtra distinguishes sleep as
+    a form of samādhi that is a transformation rather than pure cessation
+
+
+    **pratyālaṃbana (प्रत्यालम्बन)** — IAST ‘pratyālaṃbana’ means ‘reliance upon’; here it indicates that
+    the transformation relies on the state of non‑existence
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 1.9:** Both 1.9 and 1.10 describe states where vṛtti is suppressed; 1.9 speaks of *kāla*
+    (time) as a transformation, 1.10 uses *abhāva* as the basis
+
+    *Divergence:* 1.9 frames the suppression in terms of temporal transformation, while 1.10 frames it
+    in terms of non‑existence, highlighting a shift from a dynamic to a static basis
+
+
+    **Bhaṭṭa’s Ātmarūpaśāstra, 1.2:** Both texts treat sleep as a form of samādhi that preserves memory
+
+    *Divergence:* Bhaṭṭa emphasizes the experiential continuity, whereas the Yoga Sūtra focuses on the
+    ontological transformation of vṛtti
+
+
+    **Śaṅkara, *Brahmasūtra* 1.1:** Both invoke the idea that ultimate reality is beyond transformation
+
+    *Divergence:* Śaṇkara’s Brahmasūtra speaks of *nirvikalpa* (without modification) as absolute, while
+    the Yoga Sūtra speaks of *abhāva* as a temporary, conditioned transformation
+
+
+    **Dvivedi, *Yogaśāstra* 1.10:** Dvivedi’s commentary explicitly contrasts sleep with *samādhi* as
+    pure cessation
+
+    *Divergence:* Dvivedi adds the experiential detail of remembrance, which the sūtra itself omits'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Sleep as Transformation”: here it
+      is the target of suppression -> not ‘bad thoughts’ only — any cognitive wave (valid cognition, error,
+      fantasy, sleep, memory)'
+  - term: pratyaya (प्रत्यय)
+    definition: 'prati-√i ‘go toward’ → cognitive content/presentation -> in “Sleep as Transformation”:
+      here, the ''knowing'' of absence itself -> not grammatical ‘suffix’; the mind’s object-presenting
+      content in a given moment'
+  - term: ālambana (आलम्बन)
+    definition: 'ā-√lamb ‘lean on’ → support/object of meditation -> in “Sleep as Transformation”: The
+      transformation that is based on non-existence is sleep. -> not crutch in a weak sense; the chosen
+      support that citta rests upon in practice'
+  - term: nidrā (निद्रा)
+    definition: 'ni-√drā ‘sleep’ → sleep as a distinct vṛtti -> in “Sleep as Transformation”: The transformation
+      that is based on non-existence is sleep. -> not mere rest; a cognition of absence that still counts
+      as mental modification to be stilled'
+  - term: abhāva (अभाव)
+    definition: '‘abha’ (absence) + ‘-va’ (possessive suffix) -> in “Sleep as Transformation”: in Sāṃkhya
+      it denotes the non‑existence of a quality, here the non‑existence of transformation -> ‘nothingness’
+      misses the active process of becoming non‑existent'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Notice when your thoughts cease and the mind settles into a state of stillness; acknowledge that
+    this stillness is a transformation rooted in non‑existence, and remain present in that awareness.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: That transformation which has nothingness

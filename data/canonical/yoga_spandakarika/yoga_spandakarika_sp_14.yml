@@ -93,3 +93,86 @@ abhyasa: 'In your next moment of waking from deep sleep or a blank gap in memory
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: अवस्थायुगलं चात्र कार्यकर्तृत्वशब्दितम् । कार्यता क्षयिणी तत्र कर्तृत्वं पुनरक्षयम् ॥ १४ ॥ कार्योन्मुखः
+    प्रयत्नो यः केवलं सोऽत्र लुप्यते । तस्मिंल्लुप्ते विलुप्तोऽस्मीत्यबुधः प्रतिपद्यते ॥ १५ ॥ न तु योऽन्तर्मुखो
+    भावः सर्वज्ञत्वगुणास्पदम् । तस्य लोपः कदाचित्स्यादन्यस्यानुपलम्भनात् ॥ १६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: avasthāyugalaṃ cātra kāryakartṛtvaśabditam | kāryatā kṣayiṇī tatra kartṛtvaṃ punarakṣayam || 14
+    || kāryonmukhaḥ prayatno yaḥ kevalaṃ so'tra lupyate | tasmiṃllupte vilupto'smītyabudhaḥ pratipadyate
+    || 15 || na tu yo'ntarmukho bhāvaḥ sarvajñatvaguṇāspadam | tasya lopaḥ kadācitsyādanyasyānupalambhanāt
+    || 16 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Actor and action are united, but when action is dissolved by abandoning the fruits of the act,
+    the very dynamic that is tied to the ego exhausts itself, and the tantrika who is absorbed in this
+    profound contemplation discovers the divine tremor liberated from its ties to the ego. The profound
+    nature of action is thus revealed, and he who has interiorized the movement of desire no longer knows
+    dissolution. He cannot cease to exist because he has returned to the profound source.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Thus, in this great unity, everything touches everything else. A world, a movement of the body,
+    where emotions pour out from the infinite, navigate through the infinite, end in the infinite, only
+    to give rise to another movement. Act and actor, subject and object, perception and perceiver are
+    united. This is the realization of Mahamudra. All actions are like a feather floating at the will
+    of the breeze in a parade of mountains. They never cease crossing the sky. At the profound source,
+    everything rediscovers the nature of space. Mahasitha Shang specified that aspirants on this path
+    should behave as follows: A wounded deer shuns companions and shows no interest in anything else.
+    Thus a meditator should live by himself, not depending on friends, and should abandon any material
+    aims for this life, aims that would help vanquish his enemies, protect his friends, and flatter his
+    benefactors.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kartṛtva / kāryatā (कर्तृत्व / कार्यता)
+    definition: doership / effect-hood → the state of being the doer/knower versus the state of being
+      an effect or object; the first is undecaying, the second perishable → not scholastic pair alone—the
+      binding poles of actor and product
+  - term: antarmukha (अन्तर्मुख)
+    definition: antar ‘inner’ + mukha ‘face’ → inward-facing; the awareness turned toward its own source
+      rather than outward toward objects, which is the ground of all-knowing → ‘inward-facing’ is postural
+      in English; here it is the orientation of awareness itself
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness that remains present
+      even in the gap where object-directed effort dissolves → ‘vibration/energy’ physicalizes or New-Ages
+      the throb of consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 4.30
+    resonance: 'Both texts describe a cessation mechanism: the Spandakarika dissolves action by abandoning
+      fruit-attachment, which exhausts ego-tied dynamism; Patañjali 4.30 states that from samādhi, afflictions
+      and karmic actions cease. Each posits that a specific contemplative state or reorientation terminates
+      the generative cycle of action-and-consequence.'
+    divergence: The Spandakarika locates liberation in the *recognition* of divine tremor freed from ego-binding
+      within action itself; Patañjali locates it in the *transcendence* of action through samādhi as a
+      state of consciousness separate from the karmic field.
+    passage_id: patañjali_yoga_sūtras.ys_4_30
+  - citation: Nagarjuna Mulamadhyamakakarika — Liberation as the Stilling of Fabrication
+    resonance: 'Both texts identify liberation as the exhaustion of a dual engine: the Spandakarika describes
+      the ego-tied dynamic exhausting itself when fruit-attachment is abandoned; Nagarjuna states mokṣa
+      occurs when karma and afflictions (kleśa) run out. Each treats liberation as the natural cessation
+      of a self-perpetuating mechanism rather than an external intervention.'
+    divergence: The Spandakarika emphasizes the *unity* of actor and action persisting even as ego-binding
+      dissolves, revealing divine tremor; Nagarjuna emphasizes the *emptiness* of all fabrications, with
+      no residual divine or transcendent ground remaining.
+    passage_id: nagarjuna_mulamadhyamakakarika.mmk_18_05
+  - citation: The Book of Chuang Tzu — chapter 3
+    resonance: 'Both texts describe action perfected through the dissolution of deliberate ego-will: Cook
+      Ding''s blade never dulls because his skill has ripened into non-forcing, where the distinction
+      between actor and action vanishes; the Spandakarika''s tantrika discovers divine tremor when ego-attachment
+      to action dissolves. Each shows mastery emerging from the surrender of willful control.'
+    divergence: Cook Ding's non-action (wu-wei) is pragmatic and immanent—skill perfected within the natural
+      grain of things; the Spandakarika's liberation is metaphysical and transcendent—ego-dissolution
+      revealing the divine tremor underlying all action.
+    passage_id: the_book_of_chuang_tzu.ctz_003
+  layer_provenance: generated_grounded

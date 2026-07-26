@@ -102,3 +102,73 @@ section: Ney-nāmeh 4
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'سرِّ من از نالهٔ من دور نیست /// لیک چشم و گوش را آن نور نیست
+
+    تن ز جان و جان ز تن مستور نیست /// لیک کس را دیدِ جان دستور نیست'
+- kind: iast
+  label: Transliteration note
+  body: See Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: My secret is not far from my cry — but eye and ear lack that light. Body is not veiled from soul,
+    nor soul from body — yet none is authorized to see the soul.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Intimacy of body-soul is given; visionary permission is not. Existentially: stop demanding proof
+    of the soul as an object; attend the cry that already speaks it. The reed is the human spirit cut
+    from the divine reed-bed; complaint is theology in the mode of music.
+
+
+    Key Terms
+
+
+    **نی nay** — reed flute; the human as hollowed instrument.
+
+
+    **فراق / وصل firāq / waṣl** — separation / union.
+
+
+    **اصل aṣl** — origin/root.
+
+
+    Cross-Tradition Resonances
+
+
+    **Heart Sūtra (form/emptiness as path-song):** Both carry insight as more than proposition.
+
+    *Divergence:* The Heart Sūtra''s emptiness is marklessness; Rūmī''s cry is erotic longing for the
+    Origin.
+
+
+    **Milarepa (song as vehicle):** Both use song to cross what argument cannot.
+
+    *Divergence:* Milarepa''s songs are often instructional; the nay is primarily ontological lament.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: nay / reed (نی)
+    definition: 'Persian nay ‘reed flute’ → the cut reed whose complaint is longing for the reed-bed—origin
+      remembered as wound Here: The reed is the human spirit cut from the divine reed-bed; complaint is
+      theology in the mode of music. Trap: sentimental music imagery without the metaphysics of separation'
+  - term: firāq (فراق)
+    definition: 'Arabic/Persian ‘separation, parting’ → existential distance from origin that generates
+      yearning speech Here: separation / union. Trap: romance breakup rather than ontological exile from
+      the source'
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: separation
+      / union. Trap: erotic fusion fantasy without the discipline of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: rūḥ (روح)
+    definition: '‘spirit’ → the living breath that remembers God and suffers exile in form Here: The reed
+      is the human spirit cut from the divine reed-bed; complaint is theology in the mode of music. Trap:
+      ghostly ‘spirit’ without ethical/ontological force'
+    lemma_id: psyche
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel the
+    cut from the bed. Do not explain it — let the tone complain.

@@ -120,3 +120,102 @@ abhyasa: When you feel the impulse to advance your position in the next disagree
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '用兵有言：吾不敢為主，而為客；
+
+    不敢進寸，而退尺。
+
+    是謂行無行；
+
+    攘無臂；
+
+    扔無敵；
+
+    執無兵。
+
+    禍莫大於輕敵，輕敵幾喪吾寶。
+
+    故抗兵相加，哀者勝矣。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'A master of war says: I do not dare to be the host, but I am the guest; I do not dare to advance
+    an inch, but I retreat a foot. This is called moving without moving; marching without arms; throwing
+    without an enemy; grasping without a weapon. Disaster is greater than lightly engaging the enemy;
+    lightly engaging the enemy nearly costs me my treasure. Therefore, when opposing forces clash, the
+    one who mourns the loss of the enemy wins.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The chapter asserts that the most decisive move in conflict is the *contested move* of retreating—surrendering
+    the initiative to preserve the subtle force of *dào* and *dé*. By refusing to engage, the strategist
+    turns the enemy’s aggression into a self‑destructive act, thereby gaining victory without bloodshed.
+    This principle echoes the Daoist ideal that true power is exercised through non‑action, yet it challenges
+    conventional military doctrine that prizes bold offense. The chapter’s paradox—"retreat a foot before
+    advancing an inch"—reveals that the most effective strategy is to let the opponent exhaust themselves
+    while the strategist remains untouched.
+
+
+    Key Terms:
+
+
+    **dào (道)** — the natural, unforced path of the universe -> the strategist’s quiet, non‑interfering
+    stance -> "the way" of war
+
+    **wúwéi (無為)** — actionless action, effortless yielding -> the retreat that preserves strength ->
+    "non‑action"
+
+    **dé (德)** — inner virtue, moral power -> the treasure lost when one lightly engages -> "virtue"
+
+    **zìrán (自然)** — nature’s spontaneous order -> the enemy’s self‑destructing aggression -> "naturalness"'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Quiet Strategist”: A master of war says: I do not dare
+      to be the host, but I am the guest; I do not dare to advance an inch, but I retre… -> not mere possession;
+      the named/manifest pole that co-arises with wú'
+  - term: wú (無)
+    definition: '無 ‘without / not-have’ -> in “The Quiet Strategist”: A master of war says: I do not dare
+      to be the host, but I am the guest; I do not dare to advance an inch, but I retre… -> not nihilistic
+      void; generative absence (of forcing, name, desire) that opens function'
+  - term: yòng (用)
+    definition: '用 ‘use/function’ -> in “The Quiet Strategist”: A master of war says: I do not dare to
+      be the host, but I am the guest; I do not dare to advance an inch, but I retre… -> not utilitarianism;
+      function that often arises from emptiness (wú) as the wheel hub'
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Quiet Strategist”: the natural, unforced path
+      of the universe -> the strategist’s quiet, non‑interfering stance -> "the way" of war -> not a deity
+      named Tao or a lifestyle brand — source-and-course that resists full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: wúwéi (無為)
+    definition: '無 ‘without’ + 為 ‘doing/making/deeming’ -> in “The Quiet Strategist”: actionless action,
+      effortless yielding -> the retreat that preserves strength -> "non‑action -> not laziness or zero
+      activity — skilled non-imposition that leaves nothing undone'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Sun Tzu, The Art of War, chapter 3 (The Planning of Attack)
+    resonance: Both texts emphasize the importance of strategic withdrawal to conserve resources
+    divergence: Sun Tzu advocates careful calculation, while the Daoist text insists on spontaneous, non‑calculative
+      retreat
+    passage_id: ''
+  - citation: Laozi, Tao Te Ching, chapter 48 (The Great Power)
+    resonance: Both highlight the power of softness over hardness
+    divergence: Laozi speaks of cosmic softness, whereas the war chapter applies it to human conflict
+    passage_id: tao_te_ching.ttc_md_048
+  - citation: Confucius, Analects, 1.2 (The Master’s Teaching)
+    resonance: Both stress moral conduct in leadership
+    divergence: Confucius focuses on benevolent governance, while the Daoist text focuses on strategic
+      non‑action
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet posture, breathe slowly, and when a conflict arises, pause and withdraw a step
+    before you advance. Observe the opponent’s reaction; if they overextend, let them exhaust themselves
+    while you remain calm and uncommitted.

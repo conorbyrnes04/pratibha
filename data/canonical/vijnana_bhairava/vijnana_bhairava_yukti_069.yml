@@ -84,3 +84,66 @@ abhyasa: 'Sit quietly and let a small want arise naturally — perhaps the urge 
   the looker and the looking quietly settle into the same thing.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: यदा ममेच्छा नोत्पन्ना ज्ञानं वा कस् तदास्मि वै । तत्त्वतोऽहं तथाभूतस् तल्लीनस् तन्मना भवेत् ॥
+    ९७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yadā mamecchā notpannā jñānaṃ vā kas tadāsmi vai | tattvato'haṃ tathābhūtas tallīnas tanmanā bhavet
+    || 97 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #69
+
+    “When neither desire nor thought arise, who am I? Truly, I am
+
+    just as I actually am.” Having realized oneself in this way, one’s
+
+    mind becomes one with That [essence-nature] and merges into
+
+    That. || 97'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: icchā (इच्छा)
+    definition: '√iṣ ‘wish’ → will/desire → the power of will or desire; the first stirring by which consciousness
+      moves toward an object → ‘desire’ as craving misses icchā-śakti: free will-to-appear of consciousness'
+  - term: jñāna (ज्ञान)
+    definition: √jñā ‘know’ → knowledge or cognition; the act by which a specific object is grasped and
+      known → ‘knowledge’ as information misses structured knowing that can contract free awareness
+    lemma_id: jnana
+    sense_id: jnana.shaiva
+  - term: tallīna (तल्लीन)
+    definition: tat + līna → merged into that → dissolved or absorbed into that; the merging of the mind
+      into its own source → merged into that (not into blankness)
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.15
+    resonance: 'Both texts locate liberation through the cessation of desire: Yukti 69 asks ''who am I?''
+      when desire ceases, while Patañjali defines non-attachment as the consciousness of mastery over
+      desire for perceptible objects. Each makes the withdrawal of craving the threshold to self-recognition.'
+    divergence: Patañjali frames non-attachment as a discriminative mental state (viveka-khyāti), whereas
+      Vijnana Bhairava points to a direct inquiry into the knower itself when mental content stills—emphasizing
+      immediate self-presence over cognitive mastery.
+    passage_id: patañjali_yoga_sūtras.ys_1_15
+  - citation: Astavakra Gita — 18.96 — 18.97 (The Paradoxical State)
+    resonance: 'Both texts use negation to dissolve the seeker''s identity: Yukti 69 suspends desire and
+      thought to ask ''who am I?'', while Astavakra 18.96 negates happiness, suffering, detachment, attachment,
+      liberation-seeking, and liberation itself—each using the collapse of conceptual opposites to reveal
+      what remains.'
+    divergence: Astavakra employs systematic negation of all states and conditions to establish non-dual
+      being, whereas Vijnana Bhairava uses the specific suspension of desire and thought as a gateway
+      to the knower, maintaining a more phenomenological focus on attention's reversal.
+    passage_id: astavakra_gita.asg_sum_18_96_18_97
+  layer_provenance: generated_grounded

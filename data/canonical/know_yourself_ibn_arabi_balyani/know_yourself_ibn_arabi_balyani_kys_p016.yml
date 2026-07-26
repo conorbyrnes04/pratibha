@@ -91,3 +91,52 @@ abhyasa: Look at your own hand and try to locate the one who is looking — trac
   source until you find that no separate seer waits behind it. Let the searching itself dissolve, not
   because you have annihilated a self, but because there was never a second one there to remove.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: There is no existence to any other who could pass away, or have a name or be named. Because of
+    this, the Prophet, God bless him and give him peace, said, Whoever knows their self, knows their Lord.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away, evanescence’ → passing-away of the egoic claim before the
+      Real Here: Self-Knowledge Dissolves the Illusion of Other Pearl #16 There is no existence to any
+      other who could pass away, or have a name or be named. Trap: self-erasure as quietism or dissociation
+      rather than clearing of false independence'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: wujūd (وجود)
+    definition: 'Arabic wujūd ‘finding/being found; existence’ → being as what is found in God alone;
+      creatures have no independent wujūd Here: Self-Knowledge Dissolves the Illusion of Other Pearl #16
+      There is no existence to any other who could pass away, or have a name or be named. Trap: treating
+      ‘existence’ as a neutral metaphysical predicate shared equally by God and world'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts locate the problem in *misdirected attention*: the soul/self continuously manifests
+      its true nature, but remains obscured because consciousness is absorbed in transient content (sense-experiences,
+      passing phenomena). Clarity requires a reversal of attention back to the knower itself.'
+    divergence: Plotinus frames this as a metaphysical fact about the soul's continuous activity; Ibn
+      Arabi emphasizes the ontological non-existence of the 'other' (passing content), making the inward
+      turn a recognition of what never truly was.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: 'Vijnana Bhairava — Yukti #61'
+    resonance: 'Both propose that entry into a non-dual or void state reveals the Self''s true nature
+      directly. The structural move is: dissolve the multiplicity of named/passing things, and the Self
+      manifests as what remains—the unchanging knower.'
+    divergence: Vijnana Bhairava locates this in nondual consciousness as the ground of manifestation;
+      Ibn Arabi denies existence to the 'other' entirely, making the inward turn a negation of false attribution
+      rather than an ascent to a higher state.
+    passage_id: vijnana_bhairava.yukti_061
+  layer_provenance: generated_grounded

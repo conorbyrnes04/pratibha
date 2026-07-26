@@ -112,3 +112,130 @@ abhyasa: When you next feel the impulse to explain, convince, or correct someone
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '古之善為道者，非以明民，將以愚之。
+
+    民之難治，以其智多。
+
+    故以智治國，國之賊；
+
+    不以智治國，國之福。
+
+    知此兩者亦𥡴式。
+
+    常知𥡴式，是謂玄德。
+
+    玄德深矣，遠矣，與物反矣，然後乃至大順。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'The ancients who showed their skill in practising the Way [*dào* 道] did so, not to enlighten
+    the people, but rather to make them simple and ignorant.
+
+
+    The difficulty in governing the people arises from their having much knowledge.
+
+
+    He who (tries to) govern a state by his wisdom is a scourge to it; while he who does not (try to)
+    do so is a blessing.
+
+
+    He who knows these two things finds in them also his model and rule.
+
+
+    Ability to know this model and rule constitutes what we call the mysterious excellence (of a governor).
+
+
+    Deep and far-reaching is such mysterious excellence, showing indeed its possessor as opposite to others,
+    but leading them to a great conformity to him.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that the most effective rulers are those who practice a form of counterintuitive
+    simplicity, a stance that has long been contested in Daoist scholarship. The contested move is the
+    deliberate use of ignorance (愚) as a governing tool, which some interpret as a form of political deception,
+    while others see it as a profound alignment with the spontaneous order of the world. The text frames
+    this ignorance not as a lack of skill but as a strategic withdrawal of excessive wisdom, thereby allowing
+    the state to function in harmony with the natural flow. By contrast, the chapter warns that overreliance
+    on cleverness (智) turns the ruler into a tyrant, disrupting the very order he seeks to maintain. The
+    mysterious excellence (玄德) described here is thus not a static virtue but a dynamic, paradoxical state
+    that transcends conventional moral judgments and aligns the ruler with the deeper currents of the
+    cosmos.
+
+
+    Key Terms:
+
+
+    **道 (dào)** — The fundamental principle of the universe; the ultimate reality that transcends all
+    dualities. In Daoist practice, aligning with the dào means following the natural, uncontrived flow
+    of life. The translation emphasizes that the sages’ mastery of the dào is not about imposing order
+    but about embodying it.
+
+    **德 (dé)** — The manifestation of the dào in the world; the moral force that arises when one lives
+    in harmony with the natural order. The mysterious excellence (玄德) is a paradoxical virtue that appears
+    contrary to conventional wisdom yet produces profound societal harmony.
+
+    **愚 (yú)** — Intentionally simple or ignorant; here it denotes a deliberate withdrawal of excessive
+    cleverness to allow the natural order to prevail. The term challenges the conventional association
+    of wisdom with power.
+
+    **智 (zhì)** — Cleverness or intellectual mastery; in this context, an overreliance on zhì is destructive
+    to the state. The text contrasts zhì with the subtle, non-intellectual approach of the dào.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: xuán dé (玄德)
+    definition: '玄+德 ‘dark/deep potency’ -> in “The Paradox of Wisdom in Governance”: virtue that works
+      beneath appearances rather than by display -> not secret magic power; virtue so unadvertised it
+      seems obscure yet generative'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: cháng (常)
+    definition: '常 ‘constant/enduring’ -> in “The Paradox of Wisdom in Governance”: The ancients who showed
+      their skill in practising the Way [*dào* 道] did so, not to enlighten the people, but rather t… ->
+      not theological eternity with start/stop brackets — what persists through change without being used
+      up'
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Paradox of Wisdom in Governance”: the ultimate
+      reality that transcends all dualities. In Daoist practice, aligning with the dào means following
+      the natural, uncontrived flow of life. The translation emphasizes that the sages’ mastery of the
+      dào is not… -> not a deity named Tao or a lifestyle brand — source-and-course that resists full
+      naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: fǎn (反)
+    definition: '反 ‘return/reverse’ -> in “The Paradox of Wisdom in Governance”: The ancients who showed
+      their skill in practising the Way [*dào* 道] did so, not to enlighten the people, but rather t… ->
+      not mere opposition; the dào’s movement of reversal/return as structural law'
+  - term: yú (愚)
+    definition: '愚 ‘foolish/simple-seeming’ -> in “The Paradox of Wisdom in Governance”: here it denotes
+      a deliberate withdrawal of excessive cleverness to allow the natural order to prevail. The term
+      challenges the conventional association of wisdom with power -> not stupidity as defect; cultivated
+      uncarved seeming that refuses clever fragmentation'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 3 (The Way of the Uncarved Block)
+    resonance: Both chapters emphasize the virtue of simplicity and the dangers of over‑intellectualization.
+    divergence: While chapter 3 celebrates spontaneous action (wu‑wei), chapter 65 explicitly endorses
+      deliberate ignorance as a political strategy.
+    passage_id: ''
+  - citation: Zhuangzi, chapter 12 (The Joy of Fishes)
+    resonance: Both texts highlight the paradoxical nature of wisdom and the value of aligning with the
+      natural world.
+    divergence: Zhuangzi’s playful narrative contrasts with the more prescriptive tone of chapter 65,
+      which frames ignorance as a governance tool rather than a philosophical stance.
+    passage_id: ''
+  - citation: The Analects, 2.4 (Confucian view of governance)
+    resonance: Both traditions discuss the role of the ruler in society.
+    divergence: Confucianism advocates active moral cultivation, whereas chapter 65 warns against the
+      ruler’s overuse of intellectual control.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet space, close your eyes, and breathe slowly. As you inhale, imagine the world’s
+    natural rhythms; as you exhale, let go of any urge to impose your own clever plans. By practicing
+    this mindful release of over‑intellectual control, you cultivate a subtle alignment with the natural
+    flow, echoing the chapter’s call for governance by the mysterious excellence of the dào.

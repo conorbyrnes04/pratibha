@@ -99,3 +99,21 @@ abhyasa: 'Take five minutes with the next strong ''I have to'' that arises today
   desire; you are recognizing the power that was mistaken for it.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ātmabala (आत्मबल)
+    definition: ātman + bala → the inherent strength or power of the Self — the native force of awareness
+      itself → ‘willpower’ misses the innate power of the Self
+    lemma_id: atman
+    sense_id: atman.shaiva
+  - term: kṣobha (क्षोभ)
+    definition: √kṣubh ‘shake’ → agitation → agitation or churning disturbance of the mind arising from
+      craving and forgetting one's own power → ‘stress’ psychologizes the shake that can reveal or obscure
+      spanda
+  - term: paramaṃ padam (परमं पदम्)
+    definition: parama ‘supreme’ + pada → the supreme state or highest ground, revealed when agitation
+      dissolves rather than attained by effort → ‘highest state’ as trophy misses the supreme station
+      that is awareness itself
+  layer_provenance: editorial-enriched

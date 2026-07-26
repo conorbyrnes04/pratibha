@@ -79,3 +79,107 @@ abhyasa: 'Follow your chosen meditation object—breath, mantra, or light—inwa
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: सूक्ष्मविषयत्वं चालीङ्गपर्यवसाम्
+- kind: iast
+  label: IAST
+  body: sūkṣmaviṣayatvaṃ cāliṅgaparyavasānam
+- kind: translation
+  label: Pratibha Translation
+  body: The subtle object of concentration ends in the state of the subtle, where the object ceases to
+    be a distinct entity and merges with the observer.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim here is that the ultimate goal of samādhi is not merely a cessation of mental activity
+    but a dissolution of the very object of focus into the observer’s awareness. Patanjali’s wording—‘sūkṣmaviṣayatvaṃ
+    cāliṅgaparyavasānam’—conveys that the subtle (sūkṣma) object (viṣaya) reaches its culmination (paryavasāna)
+    in the subtle state (cāliṅga). This subtle state is the same that the Samkhya tradition calls Pradhana,
+    the indissoluble principle that cannot be divided further. Dvivedi’s commentary underscores this by
+    linking the indissoluble to the ultimate reality, noting that mastery over the four stages of concentration
+    culminates in Pradhana. The philosophical tension lies in whether this culmination is a mere intellectual
+    attainment or an experiential dissolution. The former reads the passage as a description of a mental
+    state; the latter interprets it as a metaphysical transition. The existential application is that
+    a practitioner, by sustaining concentration on a subtle object, can transcend ordinary duality and
+    experience the unity of observer and observed. This aligns with the Yoga aim of realizing the Purusha’s
+    true nature, distinct from the Prakriti that manifests as the subtle object. The commentary therefore
+    invites the practitioner to view the end of concentration not as an end of practice but as a gateway
+    to the indissoluble reality of the self.
+
+
+    Key Terms
+
+
+    **sūkṣma (सूक्ष्म)** — ‘small’ or ‘subtle’ in Sanskrit; in Yoga it denotes the most refined aspect
+    of Prakriti, the Tanmatras; the term’s literal meaning of ‘small’ misses the philosophical implication
+    that it is the most subtle, yet most potent, element of reality
+
+
+    **viṣaya (विषय)** — ‘object’ or ‘subject matter’; in Patanjali’s context it refers to the focus of
+    attention in meditation; the ordinary translation as ‘topic’ overlooks its role as the locus of consciousness
+
+
+    **cāliṅga (चालीङ्ग)** — ‘the subtle state’ or ‘the subtle condition’; traditionally associated with
+    the final stage of samādhi where the object dissolves; the word’s etymology from ‘cāliṅga’ (to be
+    subtle) highlights the transition from gross to subtle
+
+
+    **paryavasāna (पर्यवसाम)** — ‘conclusion’ or ‘termination’; in Yoga it marks the culmination of a
+    process, here the culmination of concentration; the literal sense of ‘ending’ is insufficient without
+    noting its connotation of final, irreversible attainment
+
+
+    Cross-Tradition Resonances
+
+
+    **Patanjali, Yoga Sūtra 1.45:** Both texts describe the culmination of concentration in a subtle state;
+    the structure ‘subtle object ends in subtle state’ is mirrored.
+
+    *Divergence:* Patanjali’s wording is terse, whereas Dvivedi expands the idea to include the indissoluble
+    Pradhana, thereby adding a metaphysical layer absent in the original sutra
+
+
+    **Samkhya Karika 2.12:** The notion of an indissoluble principle (Pradhana) parallels the sutra’s
+    subtle end; both treat the ultimate reality as beyond division.
+
+    *Divergence:* Samkhya presents Pradhana as a static principle, while the sutra frames it as the dynamic
+    culmination of meditative practice
+
+
+    **Dvivedi, Commentary on Yoga Sūtra 1.45:** Dvivedi explicitly connects the sutra’s subtle end to
+    the four stages of concentration and the indissoluble Pradhana.
+
+    *Divergence:* Dvivedi’s commentary introduces the idea of mastery over stages, which Patanjali does
+    not mention, thereby extending the practical implications'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vāsanā (वासना)
+    definition: '√vas ‘dwell’ → lingering scent/habit-tendency -> in “Subtle End of Concentration”: The
+      subtle object of concentration ends in the state of the subtle, where the object ceases to be a
+      distinct entity a… -> not vague ‘vibes’; subliminal residue that can fruit when conditions align'
+  - term: sūkṣma (सूक्ष्म)
+    definition: 'source-term sūkṣma -> in “Subtle End of Concentration”: the term’s literal meaning of
+      ‘small’ misses the philosophical implication that it is the most subtle, yet most potent, element
+      of reality -> default English flattens the technical work this term does here'
+  - term: viṣaya (विषय)
+    definition: 'source-term viṣaya -> in “Subtle End of Concentration”: the ordinary translation as ‘topic’
+      overlooks its role as the locus of consciousness -> default English flattens the technical work
+      this term does here'
+  - term: cāliṅga (चालीङ्ग)
+    definition: 'from ‘cāliṅga’ (to be subtle) highlights the transition from gross to subtle -> in “Subtle
+      End of Concentration”: traditionally associated with the final stage of samādhi where the object
+      dissolves -> default English flattens the technical work this term does here'
+  - term: paryavasāna (पर्यवसाम)
+    definition: 'source-term paryavasāna -> in “Subtle End of Concentration”: in Yoga it marks the culmination
+      of a process, here the culmination of concentration -> default English flattens the technical work
+      this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Focus your attention on a subtle object until it ceases to be a distinct entity, merging with
+    your awareness.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: The province of the subtile ends with the

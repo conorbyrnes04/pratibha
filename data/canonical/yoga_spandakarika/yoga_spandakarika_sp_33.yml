@@ -91,3 +91,75 @@ abhyasa: Abide steadily at the center (madhye) — locate that still point betwe
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: यथेच्छाभ्यर्थितो धाता जाग्रतोऽर्थान्हृदि स्थितान् । सोमसूर्योदयं कृत्वा सम्पादयति देहिनः ॥ ३३
+    ॥ तथा स्वप्नेऽप्यभीष्टार्थान्प्रणयस्यानतिक्रमात् । नित्यं स्फुटतरं मध्ये स्थितोऽवश्यं प्रकाशयेत् ॥
+    ३४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yathecchābhyarthito dhātā jāgrato'rthānhṛdi sthitān | somasūryodayaṃ kṛtvā sampādayati dehinaḥ
+    || 33 || tathā svapne'pyabhīṣṭārthānpraṇayasyānatikramāt | nityaṃ sphuṭataraṃ madhye sthito'vaśyaṃ
+    prakāśayet || 34 ||
+- kind: translation
+  label: Pratibha Translation
+  body: The ardor toward Shiva/Shakti that manifests the universe allows the tantrika to be fulfilled.
+    Over the course of the dream, the sun and the moon appear in his heart and all his wishes are granted.
+- kind: commentary
+  label: Pratibha Commentary
+  body: The tantrika then discovers that only the blaze of ardor is required, and that all forms, all
+    rituals, all practices are only aspects of divine play, of the creativity of Shiva/Shakti. Then there
+    is nothing to do but abandon oneself to the great fire of/in the heart where the sun and the moon
+    touch lips and, in the midnight blue sky, are united both night and day in the reality of the dream,
+    and in the dream of Reality. All matters are matters of the Heart All names are names of the Heart
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: madhya (मध्य)
+    definition: madhya ‘middle/center’ → the center or middle — the pulse-point between the breath currents
+      where spanda is directly experienced → ‘center’ as geometry misses the still hinge between movements
+      where awareness opens
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory throb of consciousness that gives rise to
+      and sustains all experience → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness
+      itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: soma-sūrya (सोम-सूर्य)
+    definition: soma–sun pair (channels/breaths) → the lunar and solar currents, apāna and prāṇa, whose
+      rhythmic rising and falling generates the flow of perception → not planetary worship—the lunar/solar
+      prāṇic pair
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — The Heart Born of the Divine Pair
+    resonance: 'Both texts locate fulfillment in the primordial union of Śakti and Śiva as the generative
+      source: the Spandakarika sees ardor toward this pair as the engine of manifestation and liberation,
+      while Tantrasara opens at this embrace as the foundational beginning from which all unfolds.'
+    divergence: Spandakarika emphasizes the tantrika's *experiential ardor* as the operative principle,
+      whereas Tantrasara treats the divine embrace as the metaphysical *ground* from which practice derives.
+    passage_id: tantrasara.ts_001
+  - citation: Bhagavad Gita — Bhakti as Relational Non-Dual Practice
+    resonance: 'Both traditions present a heart-centered orientation toward the Divine as the complete
+      path for embodied practitioners: the Spandakarika locates fulfillment in ardor (a movement of the
+      heart) toward Śakti/Śiva, while the Gita frames bhakti as steadfast orientation of heart and mind
+      toward the Divine, integrating ethical and devotional texture.'
+    divergence: The Spandakarika grounds fulfillment in the *blaze* of ardor itself and the dissolution
+      of ritual forms into divine play, whereas the Gita emphasizes bhakti as *ethical orientation* expressed
+      through non-hatred and compassion, maintaining the integrity of dharmic action.
+    passage_id: bhagavad_gita.bg_md_009
+  - citation: 'Vijnana Bhairava — Yukti #7'
+    resonance: 'Both texts use spatial-sensory meditation on the heart as the gateway to supreme realization:
+      the Spandakarika''s tantrika discovers fulfillment through ardor that manifests the universe, while
+      Vijnana Bhairava Yukti 7 prescribes meditation on the Heart as the Supreme Space, accessed through
+      contemplation of subtle form.'
+    divergence: Spandakarika privileges *emotional ardor* and the dissolution of forms into divine play
+      as the method, whereas Vijnana Bhairava employs precise *geometric visualization* (peacock feathers
+      as cosmic circles) as the technique for entering the Heart.
+    passage_id: vijnana_bhairava.yukti_007
+  layer_provenance: generated_grounded

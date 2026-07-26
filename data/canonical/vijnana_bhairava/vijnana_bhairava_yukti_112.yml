@@ -91,3 +91,61 @@ abhyasa: 'Choose a single technique — say, resting attention in the pause betw
   mechanical begins to hold you rather than you holding it — that shift is the meaning of yukta.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: अत्र चैकतमे युक्तो जायते भैरवः स्वयम् । वाचा करोति कर्माणि शापानुग्रहकारकः ॥ १४० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: atra caikatame yukto jāyate bhairavaḥ svayam | vācā karoti karmāṇi śāpānugrahakārakaḥ || 140 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #112
+
+    A practitioner who is [fully] connected (yukta) to even one [of these methods]
+
+    becomes Bhairava himself. S/he performs actions by the [power of his] word,
+
+    effecting both curses and blessings. || 140'
+- kind: commentary
+  label: Pratibha Commentary
+  body: This line points to a deeper order that is received through attentive listening rather than conceptual
+    noise.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: yukta (युक्त)
+    definition: √yuj ‘yoke’ → joined/yoked → yoked or fully established in a practice, to the point of
+      union with it → ‘connected/skilled’ misses being yoked to the Real in yoga’s sense
+    lemma_id: yoga
+    sense_id: yoga.shaiva
+  - term: vāc (वाच्)
+    definition: √vac ‘speak’ → Speech → speech; in Trika, the creative word that is not separate from
+      what it manifests → ‘speech/words’ misses Vāc as levels of language-power from Parā down
+  - term: anugraha (अनुग्रह)
+    definition: anu- + √grah ‘seize’ → grace/favor → grace or favor — the revealing, expansive power of
+      consciousness, paired here with its opposite, śāpa (curse/concealment) → ‘grace’ as gift-from-outside
+      misses recognition descending as one’s own power
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus Fragments — Fragment 2
+    resonance: Both texts posit a universal principle (Bhairava/Logos) that exists continuously but requires
+      attentive reception rather than passive exposure; hearing or connection must be active and conscious
+      to constitute genuine knowing.
+    divergence: Heraclitus emphasizes the paradox of people's structural inability to recognize what they
+      hear, while Vijnana Bhairava emphasizes the practitioner's capacity for transformative union through
+      proper attunement.
+    passage_id: heraclitus_fragments.hfr_p002
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
+    resonance: Both propose that a specific mode of instruction or practice (yukti/upanishadic teaching)
+      grants access to what ordinarily remains imperceptible, and that this access reveals an underlying
+      unity or non-duality.
+    divergence: The Chāndogya grounds this in the metaphysical doctrine that all things ARE essentially
+      one (Brahman), while Vijnana Bhairava emphasizes the practitioner's identification with Bhairava
+      through method rather than doctrine.
+    passage_id: chāndogya_upaniṣad.chu_vi_01
+  layer_provenance: generated_grounded

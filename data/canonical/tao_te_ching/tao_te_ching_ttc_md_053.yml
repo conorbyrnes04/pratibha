@@ -98,3 +98,106 @@ abhyasa: Close one door or window in your home—literally—and sit with a sing
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '不出戶知天下；
+
+    不闚牖見天道。
+
+    其出彌遠，其知彌少。
+
+    是以聖人不行而知，不見而名，不為而成。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Without going outside his door, one understands (all that takes place) under the sky; without
+    looking out from his window, one sees Heaven [*tiān* 天]''s Way [*tiān dào* 天道].
+
+
+    The farther that one goes out (from himself), the less he knows.
+
+
+    Therefore the sages got their knowledge without travelling; gave their (right) names to things without
+    seeing them; and accomplished their ends without any purpose of doing so.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that the sage’s power lies in the *inner* rather than the external. The
+    contested move is the claim that one can name and accomplish things without seeing them—an inversion
+    of ordinary epistemic practice. By refusing to act outwardly, the sage attains a kind of *wúwéi* (non‑action)
+    that paradoxically produces results. The text invites us to reconsider the relationship between observation,
+    naming, and action: knowledge is not a product of sensory input but of a disciplined, inward attention
+    that aligns with the *dào*.
+
+
+    The passage also gestures toward a broader Daoist critique of ambition. The sage’s success without
+    effort is not a call to laziness but to a different kind of effort—an effort that is *wúwéi* yet effective.
+    In this way, the chapter mirrors the paradoxes of the *Tao Te Ching*: the more one seeks, the less
+    one finds; the more one acts, the less one achieves. The lesson is that the path to mastery is to
+    let go of the illusion that external action alone can bring true understanding.
+
+
+    Key Terms:
+
+
+    **天下 (tiānxià)** — world, all that takes place under the sky -> Daoist sense: the totality of existence
+    -> translation: "the world"
+
+    **道 (dào)** — the Way, ultimate principle -> Daoist sense: the natural order of the universe -> translation:
+    "the Tao"
+
+    **无为 (wúwéi)** — non‑action, effortless action -> Daoist sense: aligning with the natural flow ->
+    translation: "non‑action"
+
+    **德 (dé)** — virtue, moral power -> Daoist sense: the power that arises from harmony with the Tao
+    -> translation: "virtue"'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “Knowing from Within”: the underlying pattern that
+      runs through all things and can be known inwardly -> not a deity named Tao or a lifestyle brand
+      — source-and-course that resists full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: míng (名)
+    definition: '名 ‘name/fame/designation’ -> in “Knowing from Within”: Without going outside his door,
+      one understands (all that takes place) under the sky; without looking out from his wi… -> not mere
+      label; the carving power that mothers the ten thousand things into distinctness'
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “Knowing from Within”: Without going outside his door,
+      one understands (all that takes place) under the sky; without looking out from his wi… -> not canonized
+      saint; the one who acts by emptying self-assertion so the world orders itself'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “Knowing from Within”: world,
+      all that takes place under the sky -> Daoist sense: the totality of existence -> translation: "the
+      world -> not only ‘the world’ as map; the realm that cannot be seized by contrivance'
+  - term: wúwéi (無為)
+    definition: '無 ‘without’ + 為 ‘doing/making/deeming’ -> in “Knowing from Within”: non‑action, effortless
+      action -> Daoist sense: aligning with the natural flow -> translation: "non‑action -> not laziness
+      or zero activity — skilled non-imposition that leaves nothing undone'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 3 (the Way is the source of all things)
+    resonance: Both emphasize the primacy of the Tao over human action
+    divergence: Chapter 47 claims action is unnecessary, whereas chapter 3 presents action as a natural
+      consequence of the Tao
+    passage_id: ''
+  - citation: Zhuangzi, “The Great Learning” (the mind’s clarity leads to understanding)
+    resonance: Both link inner clarity to knowledge
+    divergence: Zhuangzi stresses spontaneous insight, while chapter 47 stresses deliberate stillness
+    passage_id: ''
+  - citation: Confucius, Analects 2.17 (knowledge through observation)
+    resonance: Both discuss knowledge acquisition
+    divergence: Confucius values empirical observation, whereas chapter 47 denies its necessity
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit quietly in a corner of your home, close your eyes, and observe the rhythm of your breath.
+    As you breathe, let thoughts arise and pass without judgment, cultivating a state of *wúwéi* that
+    allows you to notice subtle shifts in your surroundings and in your own inner landscape. Repeat this
+    for ten minutes each morning to anchor yourself in the practice of knowing from within.

@@ -90,3 +90,91 @@ abhyasa: 'Trace backward through one thing you''re using right now—your phone,
 translation_provenance: Rendered from the public-domain source (Sanskrit (IAST)). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: यः प्रतीत्यसमुत्पादः शून्यतां तां प्रचक्ष्महे । सा प्रज्ञप्तिर् उपादाय प्रतिपत् सैव मध्यमा ॥
+  layer_provenance: transliterated_from_iast
+- kind: iast
+  label: IAST
+  body: yaḥ pratītyasamutpādaḥ śūnyatāṃ tāṃ pracakṣmahe / sā prajñaptir upādāya pratipat saiva madhyamā
+    //
+- kind: translation
+  label: Pratibha Translation
+  body: Whatever arises dependently [pratītyasamutpāda], that we call emptiness [śūnyatā]. It is a designation
+    made in dependence [upādāya prajñapti], and this very thing is the middle way [madhyamā pratipad].
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This is the hinge verse of Madhyamaka, a threefold identity compressed into one line: dependent
+    arising = emptiness = dependent designation = the middle way. Its genius is to show that these are
+    not four doctrines but four faces of one insight. Because a thing arises only in dependence on causes,
+    conditions, and parts, it has no independent essence—so "dependently arisen" and "empty of own-being"
+    say the same thing from two sides. Emptiness is therefore not a void behind the world but the flip
+    side of interdependence itself. The third term, *upādāya prajñapti* ("dependent designation"), guards
+    against nihilism: empty things are not nothing, they are *conventionally designated in dependence*—the
+    chariot is real as a designation upon its parts, not as an essence and not as a nonentity. And this
+    whole configuration is the *madhyamā pratipad*, the middle way, now given a metaphysical rather than
+    merely ethical sense: the path between the extreme of existence (essence) and the extreme of non-existence
+    (nihilism). The counterintuitive achievement is that Nāgārjuna makes emptiness and dependent arising
+    synonyms, so that the more deeply one sees interconnection, the more one sees emptiness, and vice
+    versa. For the retreatant this is the still point: to contemplate how each thing leans on everything
+    else *is* to contemplate emptiness, and that contemplation is itself already the middle way, not a
+    preliminary to it.
+
+
+    Key Terms:
+
+
+    **pratītyasamutpāda (प्रतीत्यसमुत्पाद)** — Etymology: *pratītya* (having depended, from *prati-√i*)
+    + *samutpāda* (arising together): "dependent co-arising." The Buddha''s core teaching, here identified
+    outright with emptiness.
+
+    **upādāya prajñapti (उपादाय प्रज्ञप्ति)** — Etymology: *upādāya* (having taken up, in dependence,
+    from *upa-ā-√dā*) + *prajñapti* (designation): "designation in dependence." The middle status of empty
+    things—neither essence nor nothing, but conventionally posited upon a basis.
+
+    **madhyamā pratipad (मध्यमा प्रतिपद्)** — Etymology: *madhyamā* (middle) + *pratipad* (path, mode
+    of proceeding): "the middle way." Reframed from the ethical middle (between indulgence and austerity)
+    to the ontological middle (between existence and non-existence).'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: pratītyasamutpāda (प्रतीत्यसमुत्पाद)
+    definition: 'Etymology: *pratītya* (having depended, from *prati-√i*) + *samutpāda* (arising together):
+      "dependent co-arising." The Buddha''s core teaching, here identified outright with emptiness.'
+  - term: upādāya prajñapti (उपादाय प्रज्ञप्ति)
+    definition: 'Etymology: *upādāya* (having taken up, in dependence, from *upa-ā-√dā*) + *prajñapti*
+      (designation): "designation in dependence." The middle status of empty things—neither essence nor
+      nothing, but conventionally posited upon a basis.'
+  - term: madhyamā pratipad (मध्यमा प्रतिपद्)
+    definition: 'Etymology: *madhyamā* (middle) + *pratipad* (path, mode of proceeding): "the middle way."
+      Reframed from the ethical middle (between indulgence and austerity) to the ontological middle (between
+      existence and non-existence).'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heart Sūtra (form is emptiness)
+    resonance: the same equation—appearance and emptiness are not two—stated as slogan there and as argument
+      here; this verse is the logic beneath that liturgy.
+    divergence: the sūtra addresses the five aggregates devotionally; Nāgārjuna generalizes to all phenomena
+      as a formal identity.
+    passage_id: ''
+  - citation: Indra's Net (Huayan / Avataṃsaka imagery)
+    resonance: each jewel reflects all others; nothing exists on its own, interdependence all the way
+      down.
+    divergence: Huayan celebrates the plenary interpenetration of a real totality; Madhyamaka stresses
+      the emptiness of every node, resisting any reified whole.
+    passage_id: ''
+  - citation: Spinoza (nothing exists independently except substance)
+    resonance: radical relationality of finite modes, none self-standing.
+    divergence: Spinoza grounds all in one necessary Substance (God/Nature); Nāgārjuna denies any such
+      self-existent ground, emptiness included.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Take one object in front of you and, for two minutes, name aloud or silently the conditions it
+    depends on—makers, materials, sunlight, your own perceiving mind. As the list lengthens, feel the
+    object's "solid thereness" thin into a web of relations. Rest in that thinning; note that seeing this
+    dependence and seeing its emptiness are the same seeing.

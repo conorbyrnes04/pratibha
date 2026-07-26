@@ -98,3 +98,101 @@ abhyasa: Fill a bowl with water and set it on a table. Stir it with your finger,
   register without your commentary distorting it.
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '水靜則明燭鬚眉，平中準。
+
+    人心靜則天地之鑑也，萬物之鏡也。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Still water reflects exactly. Disturbed water distorts.
+
+
+    So too with mind: when stilled, it mirrors things as they are; when agitated, it overlays projection.
+    The sage''s repose is not lethargy but lucid equilibrium.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that epistemic clarity depends on affective stillness. The counterintuitive move
+    is to treat tranquility not as a moral ornament but as a condition of accurate perception. In most
+    modern settings, agitation is mistaken for seriousness and speed for intelligence. Zhuangzi reverses
+    this: turbulence reduces fidelity of contact. Mirror mind does not mean empty blankness; it means
+    non-retentive responsiveness - receiving without clinging.
+
+
+    Within Daoist thought, stillness and action are not opposites. Stillness is the calibration condition
+    from which unforced action becomes possible. If calibration is absent, action multiplies error. This
+    is why Zhuangzi links repose to cosmic "level": it is a reference alignment, like a true waterline
+    used to set measurement.
+
+
+    Existentially, the passage offers a rigorous practice for decision fatigue and reactivity. Before
+    judging the object, assess the mirror. If inner water is whipped by fear, vanity, resentment, or urgency,
+    perceived facts will already be bent. The solution is not to stop living until perfectly calm. It
+    is to include micro-stilling as part of action itself. A few seconds of genuine settling can prevent
+    hours of compensatory correction. Clarity is economical.
+
+
+    Key Terms:
+
+
+    **jìng (靜)** - stillness, quiet equilibrium -> in this passage, condition for accurate contact rather
+    than withdrawal -> default "quietism" misses operational precision.
+
+
+    **jìng (鏡)** - mirror -> contextual meaning: non-clinging reflective capacity of awareness -> not
+    passive recording, but clean reception without residual grasping.
+
+
+    **wú wéi (無為)** - non-forcing action -> here implied as action downstream of calibrated stillness
+    -> not inactivity, but reduction of distortive interference.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: xīn (心)
+    definition: '心 “heart-mind” — thought, feeling, and responsiveness undivided -> in this passage (still
+      Water, Mirror Mind), the heart-mind to be emptied, still, or freed from right/wrong warfare -> trap:
+      brain-only “mind” or sentimental “heart”; xīn is the whole affective-cognitive center'
+    lemma_id: xin
+    sense_id: xin.chinese
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (still Water, Mirror Mind), unforced congruence with conditions: skill that does not obstruct
+      the work -> trap: “non-action” as passivity; wúwéi can be highly skilled activity without strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: xū (虛)
+    definition: '虛 “empty, void, spacious receptivity” -> in this passage (still Water, Mirror Mind),
+      emptiness that can receive: the heart-mind cleared so the Way can guest there -> trap: nihilistic
+      void; xū is fertile vacancy, like a bellows or empty room'
+  - term: zìrán (自然)
+    definition: '自然 “self-so” — thus-of-itself, not “picturesque nature” -> in this passage (still Water,
+      Mirror Mind), spontaneous so-ness: things unfolding without forced contrivance -> trap: Romantic
+      wilderness aesthetics; zìrán is ontological non-forcing, not scenery'
+    lemma_id: ziran
+    sense_id: ziran.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita 6.19
+    resonance: mind in meditation is compared to a lamp in windless place, steady and undisturbed.
+    divergence: The Gita uses this stillness within formal yoga toward Self-realization; Zhuangzi emphasizes
+      spontaneous worldly functioning from mirror-like mind.
+    passage_id: ''
+  - citation: Patanjali Yoga Sutra 1.2-1.4
+    resonance: when mental fluctuations settle, seer abides in own form; when not, identity fuses with
+      fluctuations.
+    divergence: Patanjali codifies technical path stages; Zhuangzi presents imagistic phenomenology and
+      anti-systematic flexibility.
+    passage_id: ''
+  - citation: Spinoza, *Ethics* V (adequate ideas and affect regulation)
+    resonance: clarity increases as passive affects diminish and understanding stabilizes.
+    divergence: Spinoza arrives by rational geometrical method; Zhuangzi by organic metaphor and contemplative-natural
+      attunement.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Before sending any consequential message today, pause for five slow breaths, relax jaw and throat,
+    and read it once from "mirror mind" asking only: "What here is projection, and what is actually present?"'

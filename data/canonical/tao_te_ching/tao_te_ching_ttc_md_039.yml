@@ -121,3 +121,125 @@ abhyasa: 'When you''ve achieved what you set out to do today—finished the task
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '以道佐人主者，不以兵強天下。
+
+    其事好還。
+
+    師之所處，荊棘生焉。
+
+    大軍之後，必有凶年。
+
+    善有果而已，不敢以取強。
+
+    果而勿矜，果而勿伐，果而勿驕。
+
+    果而不得已，果而勿強。
+
+    物壯則老，是謂不道，不道早已。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'He who would assist a lord of men in harmony with the Way [*dào* 道] will not assert his mastery
+    in the kingdom by force of arms.
+
+
+    Such a course is sure to meet with its proper return.
+
+
+    Wherever a host is stationed, briars and thorns spring up.
+
+
+    In the sequence of great armies there are sure to be bad years.
+
+
+    A skilful (commander) strikes a decisive blow, and stops.
+
+
+    He does not dare (by continuing his operations) to assert and complete his mastery.
+
+
+    He will strike the blow, but will be on his guard against being [*yǒu* 有] vain or boastful or arrogant
+    in consequence of it.
+
+
+    He strikes it as a matter of necessity; he strikes it, but not from a wish for mastery.
+
+
+    When things have attained their strong maturity they become old.
+
+
+    This may be said to be not in accordance with the Way: and what is not in accordance with it soon
+    comes to an end.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that the Taoist ideal of leadership is one of *wúwéi*—action without force
+    or overreach. The contested move is the commander’s decision to strike a decisive blow and then cease,
+    refusing to extend power beyond what is necessary. By doing so, he avoids the pitfalls of pride, overextension,
+    and the eventual decay that follows unchecked strength. The text warns that a great army’s presence
+    inevitably brings hardship, and that the natural cycle of growth and decline is a reminder that power,
+    when forced, is unsustainable. The lesson is that true authority is exercised in harmony with the
+    Dao, allowing outcomes to arise from the natural order rather than from coercion.
+
+
+    Key Terms:
+
+
+    **道 (Dao)** — the ultimate principle of natural order and harmony -> the guiding force behind all
+    action -> translation: "the Way"
+
+    **荆棘 (jīngjǐ)** — briar, thorn -> symbol of obstacles that arise when power is imposed -> translation:
+    "briar"
+
+    **无为 (wúwéi)** — action without force or interference -> the Taoist strategy of non-assertion -> translation:
+    "non-action"
+
+    **老 (lǎo)** — to age, to become old -> metaphor for the decline of unchecked strength -> translation:
+    "age"'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Quiet Power of the Unforced Victory”: the ultimate
+      principle of natural order and harmony -> the guiding force behind all action -> translation: "the
+      Way -> not a deity named Tao or a lifestyle brand — source-and-course that resists full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Quiet Power of the Unforced Victory”: He who would assist
+      a lord of men in harmony with the Way [*dào* 道] will not assert his mastery in the kingdom by for…
+      -> not mere possession; the named/manifest pole that co-arises with wú'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Quiet Power of the Unforced
+      Victory”: He who would assist a lord of men in harmony with the Way [*dào* 道] will not assert his
+      mastery in the kingdom by for… -> not only ‘the world’ as map; the realm that cannot be seized by
+      contrivance'
+  - term: qiáng (強)
+    definition: '強 ‘strong/forceful’ -> in “The Quiet Power of the Unforced Victory”: He who would assist
+      a lord of men in harmony with the Way [*dào* 道] will not assert his mastery in the kingdom by for…
+      -> not virtue of dominance; often the stiff strength that dies first, opposite of living soft'
+  - term: jīngjǐ (荆棘)
+    definition: 'source-term jīngjǐ -> in “The Quiet Power of the Unforced Victory”: briar, thorn -> symbol
+      of obstacles that arise when power is imposed -> translation: "briar -> default English flattens
+      the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus, "On the Unity of Opposites"
+    resonance: Both emphasize that strength is transient and that true power is found in balance
+    divergence: Heraclitus sees change as constant, whereas the Taoist text warns against the instability
+      caused by force
+    passage_id: ''
+  - citation: Sun Tzu, "The Art of War", chapter 3 (The Attack by Stratagem)
+    resonance: Both advise against overreaching and the dangers of a prolonged campaign
+    divergence: Sun Tzu focuses on strategic advantage, while the Taoist chapter stresses moral restraint
+      and the natural order
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet place, close your eyes, and breathe slowly. Visualize a situation where you might
+    be tempted to assert power. Notice the urge to act forcefully, then consciously let it pass, returning
+    to a state of calm and letting the outcome unfold naturally.

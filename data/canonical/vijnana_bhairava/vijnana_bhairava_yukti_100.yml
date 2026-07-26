@@ -88,3 +88,73 @@ abhyasa: 'Find an unobstructed view of open sky — a rooftop, a window, a hillt
   not duration.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: नित्ये निराश्रये शून्ये व्यापके कलनोज्झिते । बाह्याकाशे मनः कृत्वा निराकाशं समाविशेत् ॥ १२८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: nitye nirāśraye śūnye vyāpake kalanojjhite | bāhyākāśe manaḥ kṛtvā nirākāśaṃ samāviśet || 128
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #100
+
+    Absorbing the mind in external space—which is eternal, needs no
+
+    support, void, all-pervasive, and free of limitations—one becomes
+
+    completely immersed in spacelessness. || 128'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kalanā (कलना)
+    definition: √kal ‘count/measure’ → measuring/parceling → the mind's activity of measuring, dividing,
+      and construing reality into separate objects; here it is what one lets fall away → ‘calculation’
+      is too cognitive—the act that finitudes the infinite
+    lemma_id: kala
+    sense_id: kala.portion
+  - term: nirākāśa (निराकाश)
+    definition: nir- + ākāśa — beyond/without (ordinary) space → 'spaceless' — the state beyond even the
+      concept of space, the dimensionless openness of pure awareness → not ‘no space’ nihilism—free of
+      spatialization as limit
+  - term: samāveśa (समावेश)
+    definition: sam- + ā- + √viś ‘enter’ → immersion/possession → absorption or immersion into the ground
+      of consciousness, the goal of these techniques → ‘possession’ occultizes free immersion of awareness
+      in its own fullness
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: 'Both texts use spatial unboundedness (space without center/circumference, external space
+      without limitations) as the vehicle for dissolving the mind''s ordinary structure into a non-localized
+      awareness. The move is: attend to what has no boundary, and the bounded mind dissolves.'
+    divergence: Tilopa emphasizes the metaphor of mind-as-space to reveal intrinsic nature; Vijnana Bhairava
+      uses external space as an object of absorption that paradoxically leads to spacelessness—a more
+      methodological, practice-oriented approach.
+    passage_id: tilopa_mahamudra.til_002
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: 'Both texts locate transformation not in a single breakthrough but in the iterative return
+      of attention from dispersion to a stable center or ground. The structural move is: repeated redirection
+      of attention itself becomes the practice.'
+    divergence: The Bhagavad Gita frames this as yoga-mastery through habit and body-regulation; Vijnana
+      Bhairava frames it as inward clarification through the knower itself, emphasizing consciousness
+      rather than embodied discipline.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Shantideva Bodhicaryavatara — Stillness Before Insight
+    resonance: 'Both texts identify scattered attention as the condition that binds one to suffering (afflictions/kleśa),
+      and both prescribe gathered concentration as the antidote. The move is: mind''s coherence is liberation;
+      its fragmentation is bondage.'
+    divergence: Shantideva emphasizes energy [vīrya] as the prerequisite and frames stillness as defense
+      against afflictions; Vijnana Bhairava emphasizes the knower's clarity and frames absorption in space
+      as the direct path to spacelessness.
+    passage_id: shantideva_bodhicaryavatara.bca_08_solitude
+  layer_provenance: generated_grounded

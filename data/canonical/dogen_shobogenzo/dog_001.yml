@@ -126,3 +126,85 @@ section: Genjōkōan
 translation_provenance: Rendered from the public-domain source (Classical Japanese/Chinese (kanbun)).
   Study rendering; not a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Japanese)
+  body: '諸法の仏法なる時節、すなわち、迷悟あり、修行あり、生あり死あり、諸仏あり衆生あり。
+
+    万法ともに、われにあらざる時節、まどいなく、さとりなく、諸仏なく衆生なく、生なく滅なし。
+
+    仏道もとより豊倹より跳出せるゆえに、生滅あり、迷悟あり、生仏あり。
+
+    しかも、かくのごとくなりといえども、華は愛惜にちり、草は棄嫌におうるのみなり。'
+- kind: iast
+  label: Transliteration note
+  body: See Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: When all dharmas are the Buddha-dharma, then there is delusion and realization, practice, birth
+    and death, buddhas and sentient beings. When the myriad dharmas are without self, there is no delusion,
+    no realization, no buddhas, no beings, no birth, no extinction. The Buddha Way originally leaps clear
+    of abundance and lack; therefore there is birth and extinction, delusion and realization, beings and
+    buddhas. And yet flowers fall amid our longing, and weeds grow amid our loathing.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Dōgen opens by holding two truths without neutralizing either: within Buddha-dharma, the whole
+    drama of practice appears; without self, none of that drama obtains as ownership. The contested move
+    is refusing a quietism that denies birth-death while also refusing a dualism that treats practice
+    as acquiring something missing. Flowers fall and weeds grow — longing and aversion do not cease to
+    shape appearance. Existentially: stop waiting for a mood in which practice would be unnecessary; practice
+    is how the Way leaps clear inside abundance and lack.
+
+
+    Key Terms
+
+
+    **現成公案 genjōkōan** — "presencing the absolute matter" / the case actualized now. Not a koan as riddle
+    only; the absolute as this.
+
+
+    **諸法 shohō** — "all dharmas." The total field of phenomena.
+
+
+    Cross-Tradition Resonances
+
+
+    **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality
+    of accumulation.
+
+    *Divergence:* Eckhart empties for God''s occupancy; Dōgen''s forgetting is verified by the myriad
+    dharmas.
+
+
+    **Zhuangzi (forgetting the self / useless tree):** Both loosen fixed self-measure.
+
+    *Divergence:* Zhuangzi often ends in spontaneous ease; Dōgen binds forgetting to practice-realization.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: genjōkōan (現成公案)
+    definition: '‘presencing of the absolute / realized kōan’ → the absolute realized as this very appearance
+      Here: Not a koan as riddle only; the absolute as this. Trap: intellectual puzzle-kōan culture only'
+  - term: shushō (修証)
+    definition: '‘practice-realization’ → practice and enlightenment are not two stages—doing is already
+      verification Here: *Divergence:* Zhuangzi often ends in spontaneous ease; Dōgen binds forgetting
+      to practice-realization. Trap: practice-as-means toward a later prize'
+  - term: dharma (法)
+    definition: '‘phenomenon / Buddha-dharma’ → each thing as teaching and as event of awakening Here:
+      When All Dharmas Are the Buddha-Dharma When All Dharmas Are the Buddha-Dharma 諸法の仏法なる時節、すなわち、迷悟あり、修行あり、生あり死あり、諸仏あり衆生あり。
+      万法ともに、われにあらざる時節、まどいなく、さとりなく、諸仏なく衆生なく、生な… Trap: doctrine-only reading'
+    lemma_id: dharma
+  - term: mushin / no-self
+    definition: '‘without self’ → myriad dharmas without a grasping self that carries them Here: When
+      the myriad dharmas are without self, there is no delusion, no realization, no buddhas, no beings,
+      no birth, no extinction. Trap: personality deletion'
+    lemma_id: anatman
+  - term: uji (有時)
+    definition: '‘being-time’ → time as existential presence of each dharma, not a container clock Here:
+      The next time you notice yourself clinging to something pleasant or rejecting something unwanted,
+      pause and whisper: ''flowers fall, weeds spring up, and that i… Trap: physics of time speculation'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story.
+    Then write one sentence: what verified me just now?'

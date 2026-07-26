@@ -75,3 +75,103 @@ abhyasa: Stop mid-thought on a deliberate question or problem you're turning ove
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: नीरविचारवायशारदये 'ध्यात्मप्रसादः
+- kind: iast
+  label: IAST
+  body: nirvicāravaiśāradye 'dhyātmaprasādaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The purity of the non‑deliberative being is the bliss of the mind.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sūtra declares that when the mind ceases to engage in deliberative activity (nirvicāra) it
+    attains a state of absolute purity (prasāda) that is the very bliss of the mind (dhyātmā). This is
+    not a passive withdrawal but an active, sustained non‑analysis that allows the true nature of the
+    self to be directly perceived. The claim is that the mind’s own capacity for bliss is unlocked when
+    it is freed from the oscillations of thought and judgment. In the Yoga and Sāṃkhya traditions, this
+    aligns with the idea that the Purusha, when untainted by Prakṛti’s modes, experiences its own inherent
+    bliss. The sūtra’s structure—nirvicāra‑vāi‑śāradye dhyātmā‑prasādaḥ—mirrors the earlier 1.46, where
+    the mind’s rest is described, but it diverges by emphasizing the *purity* of that rest rather than
+    its mere cessation. The existential implication is that the practitioner can, by cultivating non‑analysis,
+    access a state of contentment that is not dependent on external conditions. This is the practical
+    gateway to the higher samādhi, where the mind’s inherent bliss becomes the anchor for sustained meditation.
+    The Dvivedi commentary’s mention of “complete intellectuality” is a misreading; the sūtra speaks of
+    *non‑intellectual* purity, a point that the commentator overlooks. By recognizing that the mind’s
+    own bliss is its highest function, the sūtra invites the practitioner to let go of analytical thought
+    and experience the pure, unmediated joy that is the mind’s true nature.
+
+
+    Key Terms
+
+
+    **nirvicāra (नीरविचार)** — from ‘nir’ (not) + ‘vicāra’ (deliberation) -> ‘non‑deliberative’. In Patanjali,
+    this denotes the mind’s state of stillness, distinct from mere silence; it is the active cessation
+    of mental fluctuations.
+
+
+    **dhyātmā (ध्यात्मा)** — literally ‘that which is meditated upon’. In Yoga, it refers to the mind
+    itself, the object of meditation; the sūtra treats it as the locus of bliss when purified.
+
+
+    **prasāda (प्रसाद)** — etymologically ‘gift’ or ‘bliss’. In this context it means the inherent bliss
+    that arises when the mind is free from deliberation, a quality that cannot be cultivated by external
+    effort alone.
+
+
+    Cross-Tradition Resonances
+
+
+    **Patanjali, Yoga Sūtra 1.46:** Both sutras describe the mind’s rest as a precondition for higher
+    samādhi; 1.46 states the mind’s rest (śānti) and 1.47 specifies that this rest is pure bliss.
+
+    *Divergence:* While 1.46 focuses on the cessation of mental activity, 1.47 emphasizes the *quality*
+    of that cessation—purity—highlighting a deeper experiential layer.
+
+
+    **Sāṃkhya Kāṇḍa 2.1:** The idea that Purusha experiences its own bliss when untainted by Prakṛti’s
+    modes parallels the sūtra’s claim of bliss arising from non‑deliberative purity.
+
+    *Divergence:* Sāṃkhya speaks of Purusha’s inherent bliss, whereas the sūtra frames it as a state achieved
+    through disciplined meditation, thus linking metaphysics with praxis.
+
+
+    **Dvivedi, Commentary 27:** Dvivedi’s assertion of ‘complete intellectuality’ echoes the sūtra’s reference
+    to the mind’s contentment, but he misinterprets the non‑intellectual nature of the bliss.
+
+    *Divergence:* Dvivedi’s focus on intellectual content contrasts with the sūtra’s emphasis on pure,
+    non‑analytical bliss, revealing a divergent pedagogical angle.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vicāra (विचार)
+    definition: 'vi-√car ‘move through’ → subtle reflective engagement -> in “Purity of the Non-Deliberative
+      Mind”: The purity of the non‑deliberative being is the bliss of the mind. -> not ordinary rumination;
+      subtler samprajñāta level beyond gross vitarka'
+  - term: nirvicāra (नीरविचार)
+    definition: '‘nir’ (not) + ‘vicāra’ (deliberation) -> ‘non‑deliberative’. In Patanjali, this denotes
+      the mind’s state of stillness, distinct from mere silence -> in “Purity of the Non-Deliberative
+      Mind”: it is the active cessation of mental fluctuations -> default English flattens the technical
+      work this term does here'
+  - term: dhyātmā (ध्यात्मा)
+    definition: '‘that which is meditated upon’. In Yoga, it refers to the mind itself, the object of
+      meditation -> in “Purity of the Non-Deliberative Mind”: the sūtra treats it as the locus of bliss
+      when purified -> default English flattens the technical work this term does here'
+  - term: prasāda (प्रसाद)
+    definition: 'deliberation, a quality that cannot be cultivated by external effort alone. -> in “Purity
+      of the Non-Deliberative Mind”: etymologically ‘gift’ or ‘bliss’. In this context it means the inherent
+      bliss that arises when the mind is free from deliberation, a quality that cannot be cultivated by
+      external effort alone -> default English flattens the technical work this term does here'
+  - term: adhyātma
+    definition: 'source-term adhyātma -> in “Purity of the Non-Deliberative Mind”: intrinsic rather than
+      external -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit with your eyes closed, let thoughts arise and fall away without analysis, and feel the pure
+    bliss that emerges when your mind is free from deliberation.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: The purity of the non-deliberative being

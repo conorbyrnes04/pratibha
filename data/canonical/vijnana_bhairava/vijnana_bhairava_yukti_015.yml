@@ -93,3 +93,72 @@ abhyasa: Sit and choose a single simple sound — the syllable 'ah' works well, 
   enough.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: यस्य कस्यापि वर्णस्य पूर्वान्ताव् अनुभावयेत् । शून्यया शून्यभूतोऽसौ शून्याकारः पुमान् भवेत् ॥
+    ४० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yasya kasyāpi varṇasya pūrvāntāv anubhāvayet | śūnyayā śūnyabhūto'sau śūnyākāraḥ pumān bhavet
+    || 40 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #15
+
+    A person who fosters the experience/perception of the [very]
+
+    beginning and/or ending of any syllable whatsoever, becomes, by
+
+    means of the void, empty, open, and spacious, his very form [nothing
+
+    but] spaciousness. || 40'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śūnya (शून्य)
+    definition: śūnya ‘empty/void’ → emptiness or spaciousness — not blankness but the open, contentless
+      ground of awareness → English ‘void’ suggests blank vacancy; here a threshold that can disclose
+      knowing
+    lemma_id: sunya
+    sense_id: sunya.shaiva
+  - term: varṇa (वर्ण)
+    definition: √vṛ ‘cover/choose’ → phoneme/color/class → A spoken sound, syllable, or letter used here
+      as the object of contemplation → ‘letter/color’ misses phonemic power in mantra cosmology
+  - term: pūrvānta (पूर्वान्त)
+    definition: pūrva ‘prior’ + anta ‘end/limit’ → the 'beginning and end' (pūrva + anta) — the silent
+      thresholds bracketing any sound → ‘beginning’ chronology misses the prior limit of a breath or cognition
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: Both texts locate direct realization through penetration into a subtle dimension—the Vijnana
+      Bhairava via the void-space at syllable-boundaries, the Siva Sutra via 'great depth'—where mantra's
+      power becomes self-evident rather than conceptually grasped.
+    divergence: The Vijnana Bhairava emphasizes emptiness and spaciousness as the result of this penetration,
+      while the Siva Sutra emphasizes the direct knowing of mantra's power itself as the fruit.
+    passage_id: siva_sutra.ss_i_22
+  - citation: Tantrasara — The One for Whom No Means Is Needed
+    resonance: 'Both passages point toward a non-methodical or spontaneous realization: the Vijnana Bhairava''s
+      ''by means of the void'' operates without deliberate technique, mirroring Abhinavagupta''s anupāya,
+      the pathless path where no external means is required.'
+    divergence: The Vijnana Bhairava grounds spontaneity in the structure of sound and silence (syllable-boundaries),
+      while anupāya is presented as a radical transcendence of all method and structure.
+    passage_id: tantrasara.ts_008
+  - citation: Patañjali Yoga Sūtras 3.12
+    resonance: Both texts describe a transformation of consciousness into a unified state where apparent
+      opposites (repressed/revived in Patañjali; beginning/ending in Vijnana Bhairava) are held simultaneously
+      without collapse into duality.
+    divergence: Patañjali frames this as a transformation of mind-condition into unity through samadhi,
+      while the Vijnana Bhairava frames it as the direct perception of emptiness that dissolves the perceiver
+      into spaciousness itself.
+    passage_id: patañjali_yoga_sūtras.ys_3_12
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

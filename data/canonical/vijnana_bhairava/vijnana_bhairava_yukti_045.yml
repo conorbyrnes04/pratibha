@@ -84,3 +84,76 @@ abhyasa: 'Choose a piece of music that reliably moves you — one that gives you
   lasts. That residue of unclaimed, objectless delight is what the verse points to.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: गितादिविषयास्वादासमसौख्यैकतात्मनः । योगिनस् तन्मयत्वेन मनोरूढेस् तदात्मता ॥ ७३ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: gitādiviṣayāsvādāsamasaukhyaikatātmanaḥ | yoginas tanmayatvena manorūḍhes tadātmatā || 73 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #45
+
+    The yogin who relishes music and song to the extent that s/he
+
+    merges with it becomes filled with unparalleled happiness,
+
+    attains heightened awareness, and experiences oneness with
+
+    the Divine. || 73'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: tanmayatva (तन्मयत्व)
+    definition: tanmaya + -tva → the state of becoming completely identified with something through total
+      absorption in it → the state of consisting-of-that, not temporary fascination
+  - term: manorūḍhi (मनोरूढि)
+    definition: manas + rūḍhi ‘ascent/establishment’ → the 'ascending' or settling of the mind wholly
+      upon its object, until subject and object merge → ‘mental elevation’ misses establishment of mind
+      in its ground
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle inner vibration or pulse of consciousness, felt here
+      as the true source of aesthetic joy → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness
+      itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts identify a structural inversion: the soul/awareness continuously performs its
+      characteristic act (union, consciousness), but ordinary perception misses it because attention is
+      absorbed in external content. The move is to redirect perception from the object-stream back to
+      the subject-act itself.'
+    divergence: Plotinus frames this as a metaphysical fact about the soul's eternal activity; Vijnana
+      Bhairava frames it as a yogic technique of absorption (rasa) that generates happiness and divine
+      union through deliberate attentional reorientation.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Pratyabhijnahrdayam — Sutra 15
+    resonance: 'Both texts describe a shift in consciousness where the knower recognizes itself as the
+      universal principle: merging with music/the Divine (Yukti 45) parallels assimilating the universe
+      to oneself through Power of Consciousness (Sutra 15). The structure is: individual awareness recognizes
+      its identity with totality.'
+    divergence: Yukti 45 emphasizes the affective gateway (relishing, happiness) through sensory absorption;
+      Pratyabhijnahrdayam emphasizes metaphysical recognition of the Power (Shakti) of Consciousness as
+      the mechanism of this assimilation.
+    passage_id: pratyabhijnahrdayam.phr_015
+  - citation: Tilopa Mahamudra — Look at the Looker
+    resonance: 'Both texts locate the key move as a reversal of attention: from the object of experience
+      back to the experiencer/looker. Yukti 45''s ''clarity grows when attention returns to the knower''
+      mirrors ''Look at the Looker''—a direct instruction to collapse the subject-object split by attending
+      to awareness itself.'
+    divergence: Tilopa's instruction is apophatic and guru-dependent (devotion as the gateway); Vijnana
+      Bhairava's method is phenomenological and immanent (using sensory absorption as the vehicle for
+      this inversion).
+    passage_id: tilopa_mahamudra.til_003
+  layer_provenance: generated_grounded

@@ -95,3 +95,72 @@ abhyasa: Tonight, lie down to sleep as usual and let the body settle completely.
   seconds of recognizing 'awareness present, objects absent' is the practice.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: अनागतायां निद्रायाम् प्रणष्टे बाह्यगोचरे । सावस्था मनसा गम्या परा देवी प्रकाशते ॥ ७५ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: anāgatāyāṃ nidrāyām praṇaṣṭe bāhyagocare | sāvasthā manasā gamyā parā devī prakāśate || 75 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #47
+
+    When the external sensory field has disappeared but sleep has
+
+    not yet come, that [liminal] mental state is attainable in which
+
+    the Supreme Goddess (Parā Devī) manifests. || 75'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: parā devī (परा देवी)
+    definition: 'supreme Goddess → the supreme Goddess; here, consciousness-as-power (śakti) shining on
+      its own without any object → devotional epithet that is also technical: consciousness as Goddess'
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  - term: bāhyagocara (बाह्यगोचर)
+    definition: bāhya ‘outer’ + gocara ‘range’ → the outer range or field of the senses — the domain of
+      external objects that normally occupies attention → ‘external sense-field’—not ‘outside world’ as
+      mind-independent stuff
+  - term: avasthā (अवस्था)
+    definition: ava- + √sthā ‘stand’ → state/condition → a state or condition of consciousness; here the
+      in-between threshold state itself becomes the site of realization → ‘state’ as mood misses a structured
+      mode of consciousness the practice enters
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 7 · Turīya — The Fourth
+    resonance: 'Both texts locate the ultimate state in a liminal zone defined by negation of ordinary
+      consciousness: Yukti 47 suspends sensory field and sleep-onset, while Turīya negates inward/outward/dual
+      consciousness and consciousness itself. Each uses threshold-crossing (neither-nor) as the method
+      to disclose what transcends categorical mind.'
+    divergence: Mandukya's Turīya is a permanent fourth state underlying all experience; Yukti 47 treats
+      the liminal moment as a transient gateway where Śakti manifests, emphasizing dynamic access rather
+      than ontological permanence.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_009
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: 'Both identify the ultimate reality as a surge or flow of awareness itself rather than
+      an inert absolute: Yukti 47''s manifestation of Parā Devī and Śiva Sutra''s ''surge of awareness
+      is Bhairava'' both locate divinity in the living pulse of consciousness, not in transcendence beyond
+      it.'
+    divergence: Yukti 47 emphasizes the feminine principle (Parā Devī) and the specific phenomenological
+      condition (sensory cessation), while Śiva Sutra grounds the surge directly in Bhairava's non-dual
+      awareness without gendered specification.
+    passage_id: siva_sutra.ss_i_5
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: 'Both reframe the contemplative task as recognition rather than acquisition: Yukti 47 points
+      to a state already present in the liminal gap (requiring only pause and disclosure), and Śāktopāya
+      teaches recognizing Śakti already operative in experience''s architecture, not constructing it anew.'
+    divergence: Yukti 47 isolates a specific phenomenological threshold, while Śāktopāya extends recognition
+      across the entire lived structure of experience as an ongoing epistemological practice.
+    passage_id: tantrasara.ts_014
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

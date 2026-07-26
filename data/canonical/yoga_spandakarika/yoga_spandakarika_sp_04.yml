@@ -90,3 +90,76 @@ abhyasa: 'Set a timer for five minutes. Sit and finish this sentence silently th
   aware ground it appears within.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: अहं सुखी च दुःखी च रक्तश्चेत्यादिसंविदः । सुखाद्यवस्थानुस्यूते वर्तन्तेऽन्यत्र ताः स्फुटम् ॥ ४
+    ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ahaṃ sukhī ca duḥkhī ca raktaścetyādisaṃvidaḥ | sukhādyavasthānusyūte vartante'nyatra tāḥ sphuṭam
+    || 4 ||
+- kind: translation
+  label: Pratibha Translation
+  body: All the relative notions tied to the ego rediscover their peaceful source deeply buried under
+    all the different states.
+- kind: commentary
+  label: Pratibha Commentary
+  body: To establish a truth, an ego is necessary. Without an ego, the truth is all truths together. When
+    we believe that all is true, we find the peaceful source where images dissolve one after the other.
+    The space of our thought becomes infinite, a place to pass through, a riverbed that no longer seeks
+    to know if the leaves and the twigs are “true.” Hence, in this flow, relative notions get lost in
+    the sky of totality. Who would want to fight, who would want to win? Waking, dreaming, and profound
+    sleep are united by the absence of contradictory truths. Everything is true, everything is illusory,
+    everything is real. This reality encompasses the material and the immaterial, the movable and the
+    immovable. Consciousness is the river of unity; there is no longer any division in the yogini and
+    yogin’s life. One neither looks elsewhere for nonconceptual mind Nor searches for its natural qualities
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: saṃvid (संविद्)
+    definition: sam- + √vid → consciousness/knowing → awareness or consciousness; here the momentary knowing
+      that identifies with a mood → ‘consciousness’ topic-noun misses intact knowing as such
+  - term: anusyūta (अनुस्यूत)
+    definition: anu- + √siv/syū ‘sew’ → threaded through → threaded or sewn through — the states are strung
+      upon a continuous underlying awareness like beads on a cord → ‘pervading’ is static; the image is
+      continuous stitching through all states
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness that persists unchanged
+      beneath all shifting experiences → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness
+      itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Before sleep and upon waking, pause for 30 seconds and ask: what is unchanged across waking,
+    dream, and sleep? Rest in that recognition.'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijnahrdayam — Sutra 13
+    resonance: 'Both texts posit that recognition of one''s own authorship or agency—a reflexive turn
+      toward the source of mental constructs—dissolves the ego-bound notions and reveals the mind as identical
+      with supreme consciousness. The move is: ego-structures collapse when their originating consciousness
+      is recognized.'
+    divergence: Spandakarika emphasizes the peaceful source 'buried under states' (a depth-model of consciousness),
+      while Pratyabhijnahrdayam stresses active recognition and introversion as the mechanism of identity-realization
+      (a recognition-model).
+    passage_id: pratyabhijnahrdayam.phr_013
+  - citation: 'Vijnana Bhairava — Yukti #66'
+    resonance: 'Both texts work by negation of the mental apparatus itself: Spandakarika traces ego-notions
+      back to their source, while Vijnana Bhairava explicitly dismantles the ''mental apparatus'' (mind,
+      ego, etc.) through contemplation of its absence, freeing one from constructed selfhood.'
+    divergence: Spandakarika locates the source as a peaceful ground underlying states, whereas Vijnana
+      Bhairava achieves freedom through direct negation of mental constructs rather than descent to a
+      buried source.
+    passage_id: vijnana_bhairava.yukti_066
+  - citation: Astavakra Gita — Verse 1.9
+    resonance: Both texts invoke a singular, luminous recognition—'I am pure consciousness' or the ego
+      rediscovering its source—as the transformative act that burns away or dissolves the obscuring layer
+      (ignorance or relative notions) and liberates.
+    divergence: Astavakra Gita frames this as a direct, sudden fire of certainty that incinerates ignorance,
+      while Spandakarika describes a gentle rediscovery of a buried peaceful source, suggesting different
+      phenomenologies of the same realization.
+    passage_id: astavakra_gita.asg_1_9
+  layer_provenance: generated_grounded

@@ -12,23 +12,26 @@ themes:
 - desire
 - recognition
 - way
-source_excerpt: proach Heraclitus for saying, ‘‘ A stupid man loves,”’ etc. CX VIII.—Clement of Alex. Strom. v. 1, p.649.
-translation_literal: proach Heraclitus for saying, ‘‘ A stupid man loves,”’ etc. CX VIII.—Clement of Alex. Strom. v. 1, p.649.
-commentary: 'The fragment arrives truncated—''A stupid man loves''—yet this incompleteness is itself the teaching. Heraclitus
-  does not complete the thought because completion would domesticate it into doctrine. What does the stupid man love? The
-  fragment suspends us in that gap. To be stupid (ἀνόητος) in Heraclitus''s lexicon is to remain asleep to the logos, to mistake
-  the private flux of desire for the shared rational order. The stupid man loves *something*—a possession, a reputation, a
-  fixed identity—as though it were stable ground. But Heraclitus''s cosmos offers no such ground. Fire consumes what it feeds
-  on. The lover clings; the logos moves. The aphorism does not condemn love itself but exposes the stupidity of loving as
-  though the beloved were immune to the very flux that constitutes all things. To read this fragment is to feel the sting
-  of recognition: in what way do I love stupidly? Not as moral judgment but as optical correction—a sharpening of sight toward
-  what is actually happening in the act of loving. The truncation forces you to supply the object, and in that supply, you
-  discover your own sleep.'
+source_excerpt: proach Heraclitus for saying, ‘‘ A stupid man loves,”’ etc. CX VIII.—Clement of Alex.
+  Strom. v. 1, p.649.
+translation_literal: proach Heraclitus for saying, ‘‘ A stupid man loves,”’ etc. CX VIII.—Clement of Alex.
+  Strom. v. 1, p.649.
+commentary: 'The fragment arrives truncated—''A stupid man loves''—yet this incompleteness is itself the
+  teaching. Heraclitus does not complete the thought because completion would domesticate it into doctrine.
+  What does the stupid man love? The fragment suspends us in that gap. To be stupid (ἀνόητος) in Heraclitus''s
+  lexicon is to remain asleep to the logos, to mistake the private flux of desire for the shared rational
+  order. The stupid man loves *something*—a possession, a reputation, a fixed identity—as though it were
+  stable ground. But Heraclitus''s cosmos offers no such ground. Fire consumes what it feeds on. The lover
+  clings; the logos moves. The aphorism does not condemn love itself but exposes the stupidity of loving
+  as though the beloved were immune to the very flux that constitutes all things. To read this fragment
+  is to feel the sting of recognition: in what way do I love stupidly? Not as moral judgment but as optical
+  correction—a sharpening of sight toward what is actually happening in the act of loving. The truncation
+  forces you to supply the object, and in that supply, you discover your own sleep.'
 insight: ''
-practice: 'Attend to one moment today when you reach for something—a person, an outcome, a comfort—and hold the reaching without
-  completing it. Notice the texture of the grasping itself: the tightness, the story you tell about why this thing must be
-  yours, the way you defend against its absence. Do not try to release it. Simply let the stupid man''s love show itself in
-  your own hands.'
+practice: 'Attend to one moment today when you reach for something—a person, an outcome, a comfort—and
+  hold the reaching without completing it. Notice the texture of the grasping itself: the tightness, the
+  story you tell about why this thing must be yours, the way you defend against its absence. Do not try
+  to release it. Simply let the stupid man''s love show itself in your own hands.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -43,27 +46,59 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: proach Heraclitus for saying, ‘‘ A stupid man loves,”’ etc. CX VIII.—Clement of Alex. Strom. v. 1, p.649.
+  body: proach Heraclitus for saying, ‘‘ A stupid man loves,”’ etc. CX VIII.—Clement of Alex. Strom. v.
+    1, p.649.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment arrives truncated—''A stupid man loves''—yet this incompleteness is itself the teaching. Heraclitus
-    does not complete the thought because completion would domesticate it into doctrine. What does the stupid man love? The
-    fragment suspends us in that gap. To be stupid (ἀνόητος) in Heraclitus''s lexicon is to remain asleep to the logos, to
-    mistake the private flux of desire for the shared rational order. The stupid man loves *something*—a possession, a reputation,
-    a fixed identity—as though it were stable ground. But Heraclitus''s cosmos offers no such ground. Fire consumes what it
-    feeds on. The lover clings; the logos moves. The aphorism does not condemn love itself but exposes the stupidity of loving
-    as though the beloved were immune to the very flux that constitutes all things. To read this fragment is to feel the sting
-    of recognition: in what way do I love stupidly? Not as moral judgment but as optical correction—a sharpening of sight
-    toward what is actually happening in the act of loving. The truncation forces you to supply the object, and in that supply,
-    you discover your own sleep.'
+  body: 'The fragment arrives truncated—''A stupid man loves''—yet this incompleteness is itself the teaching.
+    Heraclitus does not complete the thought because completion would domesticate it into doctrine. What
+    does the stupid man love? The fragment suspends us in that gap. To be stupid (ἀνόητος) in Heraclitus''s
+    lexicon is to remain asleep to the logos, to mistake the private flux of desire for the shared rational
+    order. The stupid man loves *something*—a possession, a reputation, a fixed identity—as though it
+    were stable ground. But Heraclitus''s cosmos offers no such ground. Fire consumes what it feeds on.
+    The lover clings; the logos moves. The aphorism does not condemn love itself but exposes the stupidity
+    of loving as though the beloved were immune to the very flux that constitutes all things. To read
+    this fragment is to feel the sting of recognition: in what way do I love stupidly? Not as moral judgment
+    but as optical correction—a sharpening of sight toward what is actually happening in the act of loving.
+    The truncation forces you to supply the object, and in that supply, you discover your own sleep.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (proach Heraclitus for saying, ‘‘ A stupid man loves,”’ etc.), the shared pattern according
+      to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine,
+      mere logic, or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: πῦρ (pyr)
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
+      (proach Heraclitus for saying, ‘‘ A stupid man loves,”’ etc.), world-ruling fire as measured transformation
+      and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance rather
+      than lawful becoming'
+    lemma_id: pyr
+    sense_id: pyr.heraclitean
+  - term: κοινός (koinos)
+    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage
+      (proach Heraclitus for saying, ‘‘ A stupid man loves,”’ etc.), the common Logos: waking rationality
+      is shared; private dream-opinion is not a world -> trap: mere social consensus; koinos here is cosmological
+      shareability, not majority vote'
+  - term: πνεῦμα (pneuma)
+    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (proach Heraclitus
+      for saying, ‘‘ A stupid man loves,”’ etc.), breath-life as the medium through which waking, sleep,
+      and soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics alone,
+      or to mere oxygen'
+    lemma_id: pneuma
+    sense_id: pneuma.stoic
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Attend to one moment today when you reach for something—a person, an outcome, a comfort—and hold the reaching without
-    completing it. Notice the texture of the grasping itself: the tightness, the story you tell about why this thing must
-    be yours, the way you defend against its absence. Do not try to release it. Simply let the stupid man''s love show itself
-    in your own hands.'
+  body: 'Attend to one moment today when you reach for something—a person, an outcome, a comfort—and hold
+    the reaching without completing it. Notice the texture of the grasping itself: the tightness, the
+    story you tell about why this thing must be yours, the way you defend against its absence. Do not
+    try to release it. Simply let the stupid man''s love show itself in your own hands.'
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''

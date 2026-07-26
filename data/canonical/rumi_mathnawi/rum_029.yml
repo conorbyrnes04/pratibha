@@ -99,3 +99,31 @@ abhyasa: 'Choose one piece of music today — instrumental if possible — and l
   on its own.'
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away’ → ego’s claim burned so only the Beloved’s life remains in
+      speech and act Here: This is the first spiritual signal in the passage — the language of losing
+      oneself (bī-khwud, ''beside oneself'') is the vocabulary of ecstasy and fanā, the anni… Trap: nihilistic
+      self-destruction'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: ʿishq (عشق)
+    definition: '‘passionate love’ → transformative love that burns form for the Beloved Here: Rūmī opens
+      one of the Mathnawī''s most beloved parables by rooting it in a specific, almost legendary time
+      — ''the age of ʿUmar,'' the second caliph, a period rem… Trap: soft affection or romance only'
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: Sound becomes
+      a vehicle for the divine breath that returns the soul to the body. Trap: erotic fusion fantasy without
+      the discipline of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: rūḥ (روح)
+    definition: '‘spirit’ → the living breath that remembers God and suffers exile in form Here: This
+      is the first spiritual signal in the passage — the language of losing oneself (bī-khwud, ''beside
+      oneself'') is the vocabulary of ecstasy and fanā, the anni… Trap: ghostly ‘spirit’ without ethical/ontological
+      force'
+    lemma_id: psyche
+  layer_provenance: editorial-enriched

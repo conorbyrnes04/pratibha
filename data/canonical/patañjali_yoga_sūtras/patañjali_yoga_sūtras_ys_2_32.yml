@@ -103,3 +103,98 @@ abhyasa: Before eating your next meal, pause and name one thing about this food 
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: शौचसंतोषतपःस्वाध्यायेश्वरप्रणिधानानि नियमाः
+- kind: iast
+  label: IAST
+  body: śaucasaṃtoṣatapaḥsvādhyāyeśvarapraṇidhānāni niyamāḥ
+- kind: translation
+  label: Pratibha Translation
+  body: Purity, contentment, mortification, study, and resignation to Isvara are the observances of this
+    chapter.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The passage asserts that the duties described here are of commission, not omission, and therefore
+    they constitute the active practice of the yogic path. The first term, *śaucā*, is not merely bodily
+    cleanliness but the cultivation of a mind that is free from attachment and aversion, a state that
+    the Sāṃkhya epistemology regards as the first step toward *samādhi*. The second term, *saṃtoṣa*, is
+    a profound equanimity that allows the practitioner to remain satisfied with the present moment, thereby
+    preventing the *vṛtti* of the mind from spiralling into desire or aversion. The third term, *tapaḥ*,
+    is a disciplined mortification that purges the *prāṇā* and aligns the *citta* with the *puruṣa*. The
+    fourth, *svādhyāya*, is the study of the scriptures and the self, which in the Sāṃkhya framework is
+    the method for discerning *prakṛti* from *puruṣa*. Finally, *śivā*—the resignation to Isvara—serves
+    as the ultimate surrender that dissolves the egoic *citta* into the absolute *puruṣa*. This sequence
+    mirrors the Sāṃkhya triad of *prāṇā*, *citta*, and *puruṣa*, and it provides an existential roadmap:
+    by purifying the body and mind, cultivating contentment, mortifying the ego, studying the self, and
+    surrendering to the divine, one removes the *vṛtti* that obscures *puruṣa* and thereby achieves *samādhi*.
+
+
+    Key Terms
+
+
+    **śaucā (शौच)** — śaucā (purity) derives from the root *śuc-* meaning ‘clean’. In Sāṃkhya, it denotes
+    the mental state of equanimity and non-attachment, beyond mere physical hygiene.
+
+
+    **saṃtoṣa (सन्तोष)** — saṃtoṣa (contentment) comes from *toṣ-* ‘to satisfy’. In Yoga, it is the inner
+    satisfaction that prevents the mind from seeking external gratifications.
+
+
+    **tapaḥ (तपः)** — tapaḥ (mortification) stems from *tap-* ‘to burn’. It refers to disciplined austerity
+    that purges *prāṇā* and aligns *citta* with *puruṣa*.
+
+
+    **svādhyāya (स्वाध्याय)** — svādhyāya (study) combines *svā-* ‘self’ and *adhyāya* ‘study’. It is
+    the systematic inquiry into the self and scriptures, essential for discerning *prakṛti* from *puruṣa*.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 1.1:** Both passages begin with a list of observances that are foundational to the yogic
+    path, emphasizing purity and discipline.
+
+    *Divergence:* While 1.1 lists *śauca* and *śānti*, 2.32 expands to include *tapaḥ* and *svādhyāya*,
+    showing a deeper commitment to internal purification.
+
+
+    **Bhaṭṭa Śāstrīya 1.5:** Both texts treat *tapaḥ* as a central practice for purifying the mind and
+    body.
+
+    *Divergence:* Bhaṭṭa’s passage focuses on external austerities, whereas 2.32 integrates *tapaḥ* with
+    *svādhyāya* and *śivā*, indicating a more holistic approach.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: praṇidhāna (प्रणिधान)
+    definition: 'pra-ni-√dhā ‘place thoroughly toward’ → dedicated surrender/orientation -> in “Observances
+      of Purity and Resignation”: Purity, contentment, mortification, study, and resignation to Isvara
+      are the observances of this chapter. -> not fatalistic resignation; active offering of practice-mind
+      toward īśvara'
+  - term: saṃtoṣa (संतोष)
+    definition: 'sam-√tuṣ ‘be content’ -> in “Observances of Purity and Resignation”: comes from *toṣ-*
+      ‘to satisfy’. In Yoga, it is the inner satisfaction that prevents the mind from seeking external
+      gratifications -> not complacency; contentment that yields unsurpassed happiness as practice-fruit'
+  - term: īśvara (ईश्वर)
+    definition: '√īś ‘rule, be capable’ → the special puruṣa untouched by kleśa/karma -> in “Observances
+      of Purity and Resignation”: orientation of all practice toward the eternal, unchanging consciousness
+      -> not necessarily a creator-god dogma; Patañjali’s omniscient special puruṣa as object of praṇidhāna'
+  - term: niyama (नियम)
+    definition: 'ni-√yam ‘bind down / observe’ → observances -> in “Observances of Purity and Resignation”:
+      Purity, contentment, mortification, study, and resignation to Isvara are the observances of this
+      chapter. -> not self-help habits only; purity, contentment, tapas, study, īśvara-praṇidhāna as limbs'
+  - term: śauca (शौच)
+    definition: '√śuc ‘be clean/bright’ → purity -> in “Observances of Purity and Resignation”: derives
+      from the root *śuc-* meaning ‘clean’. In Sāṃkhya, it denotes the mental state of equanimity and
+      non-attachment, beyond mere physical hygiene -> not hygiene alone; outer/inner cleansing that breeds
+      distaste for bodily identification and clarity of sattva'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Purify your body and mind, cultivate contentment, mortify egoistic desires, study the scriptures,
+    and surrender to Isvara.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: Observances consist in j)urity, con- tentment, mortification, study, and resignation to Isvara.

@@ -95,3 +95,74 @@ abhyasa: Find a clear, safe space with a soft floor or a bed nearby, and remove 
   and returning thought is the doorway.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: भ्रान्त्वा भ्रान्त्वा शरीरेण त्वरितम् भुवि पातनात् । क्षोभशक्तिविरामेण परा संजायते दशा ॥ १११ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: bhrāntvā bhrāntvā śarīreṇa tvaritam bhuvi pātanāt | kṣobhaśaktivirāmeṇa parā saṃjāyate daśā ||
+    111 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #83
+
+    Whirling quickly around and around with the body and then falling
+
+    to the ground, by the cessation of the power of excitation, the
+
+    Supreme State arises. || 111'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kṣobha-śakti (क्षोभशक्ति)
+    definition: agitation + power → the energy of agitation or churning; here the physical and mental
+      disturbance deliberately provoked and then allowed to subside → not ‘anxiety energy’—the power of
+      stir as a face of Śakti
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  - term: virāma (विराम)
+    definition: vi- + √ram → pause/cessation → cessation, the falling away or coming to rest of activity
+      — the crucial pause in which awareness opens → ‘pause’ as break misses the rest-point that discloses
+      the ground
+  - term: parā daśā (परा दशा)
+    definition: parā + daśā → the supreme state or highest condition of consciousness that arises when
+      agitation stops → ‘highest stage’ ladder-think misses the supreme phase of consciousness
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Śāmbhavopāya
+    resonance: 'Both texts identify a dynamic surge or movement of consciousness itself as the ultimate
+      principle: Yukti 83 shows the Supreme State arising through cessation of excitation (śakti''s power),
+      while Śiva Sūtra names this very surge of awareness as Bhairava. Each treats consciousness not as
+      static witness but as an active, self-recognizing force.'
+    divergence: Yukti 83 emphasizes the *cessation* of movement leading to revelation, whereas Śiva Sūtra
+      identifies the surge itself as divine; one privileges the still point after kinetic collapse, the
+      other the pulsation as primary.
+    passage_id: siva_sutra.ss_i_5
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: Both employ embodied technique—whirling/falling in Yukti 83, aligned posture and sense-gathering
+      in Śvetāśvatara—as a method to cross from ordinary consciousness into a transcendent state. The
+      body's organized action or surrender becomes the gateway to the Supreme.
+    divergence: Yukti 83 uses spontaneous collapse and cessation of excitation as the trigger, while Śvetāśvatara
+      prescribes deliberate alignment and concentration; one is surrender through disorientation, the
+      other disciplined gathering.
+    passage_id: svetasvatara_upanishad.svu_009
+  - citation: Patañjali Yoga Sūtras 1.46
+    resonance: 'Both point to a state in which the ordinary mind-function ceases and a higher consciousness
+      emerges: Yukti 83''s Supreme State arises when excitation-power ends, and Patañjali''s samādhi is
+      the state where the mind becomes ''seeded'' (stabilized in its source). Each describes a threshold
+      where conditioned mental activity yields to a deeper principle.'
+    divergence: Patañjali frames this as the mind's own refined state (seeded in its own nature), while
+      Yukti 83 emphasizes śakti's power and its cessation as the mechanism; one is internalist, the other
+      explicitly energetic.
+    passage_id: patañjali_yoga_sūtras.ys_1_46
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

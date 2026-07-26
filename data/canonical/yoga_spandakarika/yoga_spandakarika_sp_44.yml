@@ -84,3 +84,70 @@ abhyasa: 'For one ordinary activity today — washing dishes, walking, listening
   to that one field of knowing, the sense of being harassed by outside events softens.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: प्रबुद्धः सर्वदा तिष्ठेज्ज्ञानेनालोक्य गोचरम् । एकत्रारोपयेत्सर्वं ततोऽन्येन न पीड्यते ॥ ४४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: prabuddhaḥ sarvadā tiṣṭhejjñānenālokya gocaram | ekatrāropayetsarvaṃ tato'nyena na pīḍyate ||
+    44 ||
+- kind: translation
+  label: Pratibha Translation
+  body: May the tantrika remain present, his senses vigilantly sown in reality, and may he know stability.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'In presence is found the spontaneous meditation of Mahamudra. This is why we speak of nonmeditation.
+    Nothing to do, nothing to elaborate, nothing to seek: everything flows naturally from the essence
+    of the mind. When the tension of the mind that is brought on by the ego ceases, duality collapses,
+    and we taste the unique flavor of all things. In this great abandon lies the secret that no one believes
+    in because it is of a revolting simplicity. It is the negation of all the paths, of all ascendancy
+    over people, of all hope, of all trajectory. The Ruby of the Heart is manifested within you in this
+    instant. Nothing can veil or obscure it. The absence of struggle is in itself liberation. Stability
+    is an exhilarating state that is tied to the real. No longer anything contained, no longer anything
+    mental. The body explodes toward the unlimited. What more is there to say?'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: prabuddha (प्रबुद्ध)
+    definition: pra- + √budh → awakened → awake, alert; the state of continuous conscious presence within
+      experience → ‘enlightened person’ status misses the awakened mode of intellect/awareness
+  - term: gocara (गोचर)
+    definition: go ‘cow/sense’ + cara ‘range’ → sense-field → the field or range of sense-experience;
+      all that appears to perception → ‘range’ is vague—the field in which an object can be known
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of consciousness underlying every perception
+      and change → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: 'Both texts present meditation/yoga as iterative return of attention to center rather than
+      a single achievement: the Spandakarika''s ''vigilantly sown senses'' and ''stability'' parallel
+      the Gita''s repeated return of attention from dispersion to center through embodied practice.'
+    divergence: The Gita frames this as mastery through disciplined habit-regulation, while Spandakarika
+      locates stability in spontaneous Mahamudra presence—effort versus effortlessness as the operative
+      mode.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Patañjali Yoga Sūtras 1.43
+    resonance: 'Both describe a state where the mind''s ordinary operations dissolve and direct presence
+      to reality emerges: Patañjali''s samādhi where ''memory of name, form, meaning has dissolved'' structurally
+      mirrors the Spandakarika''s senses ''sown in reality'' with stability found in non-conceptual presence.'
+    divergence: Patañjali emphasizes the cessation of mental arguments and the object's isolated nature,
+      while Spandakarika emphasizes the tantrika's vigilant presence itself as the locus of spontaneous
+      meditation.
+    passage_id: patañjali_yoga_sūtras.ys_1_43
+  - citation: Svetasvatara Upanishad — Yoga as Embodied Crossing
+    resonance: 'Both employ embodied gathering—of senses and mind—as the method for crossing into a higher
+      state: the Spandakarika''s ''senses vigilantly sown'' and the Svetasvatara''s ''gathering senses
+      and mind into the heart'' share the same structural move of sensory integration as gateway.'
+    divergence: Svetasvatara frames this as crossing fear through Brahman's boat (cosmological liberation),
+      while Spandakarika frames it as spontaneous meditation in presence (non-dual immediacy).
+    passage_id: svetasvatara_upanishad.svu_009
+  layer_provenance: generated_grounded

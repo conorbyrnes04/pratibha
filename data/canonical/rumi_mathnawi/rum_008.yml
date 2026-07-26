@@ -107,3 +107,81 @@ section: Ney-nāmeh 8
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'در غمِ ما روزها بیگاه شد /// روزها با سوزها همراه شد
+
+    روزها گر رفت گو رو باک نیست /// تو بمان ای آنک چون تو پاک نیست
+
+    هر که جز ماهی ز آبش سیر شد /// هرکه بی روزیست روزش دیر شد'
+- kind: iast
+  label: Transliteration note
+  body: See Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: In our grief the days grew late; days traveled with burnings. If the days are gone, say go — no
+    fear; You remain, You who are pure like this. Whoever is not a fish tires of this water; whoever lacks
+    daily bread finds the day long. The raw cannot grasp the state of the cooked — so the speech must
+    be short, and peace.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Maturity is qualitative, not accumulative information. Existentially: stop arguing the cooked
+    into the raw; keep the word short and burn. The reed is the human spirit cut from the divine reed-bed;
+    complaint is theology in the mode of music.
+
+
+    Key Terms
+
+
+    **نی nay** — reed flute; the human as hollowed instrument.
+
+
+    **فراق / وصل firāq / waṣl** — separation / union.
+
+
+    **اصل aṣl** — origin/root.
+
+
+    Cross-Tradition Resonances
+
+
+    **Heart Sūtra (form/emptiness as path-song):** Both carry insight as more than proposition.
+
+    *Divergence:* The Heart Sūtra''s emptiness is marklessness; Rūmī''s cry is erotic longing for the
+    Origin.
+
+
+    **Milarepa (song as vehicle):** Both use song to cross what argument cannot.
+
+    *Divergence:* Milarepa''s songs are often instructional; the nay is primarily ontological lament.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: nay / reed (نی)
+    definition: 'Persian nay ‘reed flute’ → the cut reed whose complaint is longing for the reed-bed—origin
+      remembered as wound Here: The reed is the human spirit cut from the divine reed-bed; complaint is
+      theology in the mode of music. Trap: sentimental music imagery without the metaphysics of separation'
+  - term: firāq (فراق)
+    definition: 'Arabic/Persian ‘separation, parting’ → existential distance from origin that generates
+      yearning speech Here: separation / union. Trap: romance breakup rather than ontological exile from
+      the source'
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: separation
+      / union. Trap: erotic fusion fantasy without the discipline of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: ʿishq (عشق)
+    definition: '‘passionate love’ → transformative love that burns form for the Beloved Here: At the
+      moment you notice a day or hour feeling long, dragging, or heavy with time, stop and ask aloud or
+      inwardly: ''Am I a fish in water, or am I thirsting on… Trap: soft affection or romance only'
+  - term: rūḥ (روح)
+    definition: '‘spirit’ → the living breath that remembers God and suffers exile in form Here: The reed
+      is the human spirit cut from the divine reed-bed; complaint is theology in the mode of music. Trap:
+      ghostly ‘spirit’ without ethical/ontological force'
+    lemma_id: psyche
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel the
+    cut from the bed. Do not explain it — let the tone complain.

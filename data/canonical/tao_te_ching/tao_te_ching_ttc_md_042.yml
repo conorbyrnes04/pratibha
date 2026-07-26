@@ -104,3 +104,105 @@ abhyasa: Whisper to yourself, 'I have enough,' each time you reach for something
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '知人者智，自知者明。
+
+    勝人者有力，自勝者強。
+
+    知足者富。
+
+    強行者有志。
+
+    不失其所者久。
+
+    死而不亡者壽。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'He who knows other men is discerning; he who knows himself is intelligent.
+
+
+    He who overcomes others is strong; he who overcomes himself is mighty.
+
+
+    He who is satisfied with his lot is rich; he who goes on acting with energy has a (firm) will.
+
+
+    He who does not fail in the requirements of his position, continues long; he who dies and yet does
+    not perish, has longevity.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that true power and lasting life arise not from external conquest but from
+    mastery over the self. The contested move is the claim that "he who dies and yet does not perish has
+    longevity," which may be read as a paradoxical affirmation of spiritual death versus physical death.
+    The text juxtaposes external and internal victories, suggesting that the latter yields greater, more
+    enduring strength. It also links contentment with wealth, implying that inner satisfaction is the
+    truest form of abundance. The final couplet elevates the idea that a life lived in alignment with
+    one’s nature—"not failing in the requirements of his position"—is the path to longevity, echoing the
+    Taoist principle of wu‑wei, or effortless action.
+
+
+    The chapter’s structure mirrors the Taoist triad of knowing, winning, and enduring. By compressing
+    complex ideas into six short lines, it invites the reader to contemplate the hierarchy of virtues
+    and the paradox of death as a form of immortality. The emphasis on self‑knowledge as the highest virtue
+    aligns with the broader Taoist canon, yet the specific phrasing of longevity as a result of "dying
+    and yet not perishing" remains a point of debate among commentators.
+
+
+    Key Terms:
+
+
+    **zhì 知** — to know; discernment -> Daoist sense: awareness of others'' nature; translation: discerning
+
+    **míng 明** — to know; clarity -> Daoist sense: self‑illumination; translation: intelligent
+
+    **yǒu lì 有力** — to have power; strength -> Daoist sense: external force; translation: strong
+
+    **qiáng 強** — to be strong; mighty -> Daoist sense: internal mastery; translation: mighty'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “Knowing, Winning, and Enduring”: He who knows other men
+      is discerning; he who knows himself is intelligent. -> not mere possession; the named/manifest pole
+      that co-arises with wú'
+  - term: qiáng (強)
+    definition: '強 ‘strong/forceful’ -> in “Knowing, Winning, and Enduring”: here the power to master
+      oneself rather than to force others -> not virtue of dominance; often the stiff strength that dies
+      first, opposite of living soft'
+  - term: míng (明)
+    definition: '明 ‘bright/clear/illumine’ -> in “Knowing, Winning, and Enduring”: clarity -> Daoist sense:
+      self‑illumination -> not IQ brightness; lucid seeing that often comes from yielding rather than
+      glare'
+  - term: zhì (知)
+    definition: 'source-term zhì -> in “Knowing, Winning, and Enduring”: discernment -> Daoist sense:
+      awareness of others'' nature -> default English flattens the technical work this term does here'
+  - term: yǒu lì (有力)
+    definition: 'source-term yǒu lì -> in “Knowing, Winning, and Enduring”: strength -> Daoist sense:
+      external force -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 8 (the subtle power of the Tao)
+    resonance: Both chapters emphasize the superiority of internal over external power
+    divergence: chapter 33 explicitly links contentment to wealth, whereas chapter 8 focuses on the Tao
+      itself
+    passage_id: ''
+  - citation: chapter 57 (the gentle way of the Tao)
+    resonance: Both discuss the virtue of wu‑wei and effortless action
+    divergence: chapter 33 frames wu‑wei as not failing in one’s role, while chapter 57 presents it as
+      yielding to the natural flow
+    passage_id: ''
+  - citation: chapter 73 (the longevity of the sage)
+    resonance: Both associate longevity with inner harmony
+    divergence: chapter 33 uses the paradox of dying yet not perishing, whereas chapter 73 speaks of living
+      in harmony with the Tao
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand still for one minute, breathe slowly, and silently ask yourself, "What am I truly missing
+    in my current role?" Let the answer arise without judgment, and then act on it with gentle, intentional
+    movement.

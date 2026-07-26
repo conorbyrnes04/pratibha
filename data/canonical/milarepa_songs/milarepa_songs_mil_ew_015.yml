@@ -161,3 +161,31 @@ provenance:
 editorial_maturity: strong_draft
 translation_provenance: Modernized from the public-domain Evans-Wentz / Kazi Dawa-Samdup translation (1928).
   Study rendering.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: bla ma / guru
+    definition: '‘heavy one / lama’ → Marpa-lineage master as living command and grace-source Here: This
+      song is sung by Marpa the Translator to Milarepa at the moment of their parting, and it distills
+      the essence of the transmission from guru to disciple. Trap: generic spiritual coach'
+  - term: sems (mind)
+    definition: 'Tibetan sems → mind as field to be tilled; neither discarded nor reified Here: To desire
+      much brings a troubled mind; So store within your heart these precepts wise: Many seeming ''Thats''
+      are not the ''That''; Many trees bear no fruit at all… Trap: brain or mood'
+    lemma_id: citta
+  - term: dben pa (solitude)
+    definition: 'Tibetan dben pa ‘isolation’ → mountain solitude as laboratory of mind, not scenic retreat
+      Here: Forsake the weeping, sorrow-burdened world; Make lonely caves your ancestral home, And solitude
+      your paradise. Trap: romantic loneliness'
+  - term: samsara / 'khor ba
+    definition: '‘cyclic existence’ → wearisome round worn by karma—concrete exhaustion, not abstract
+      cosmology Here: His subsequent words, that ''all composite things are alike liable to dissolution,''
+      place even the pain of parting within the frame of impermanence, showing tha… Trap: rebirth folklore
+      only'
+    lemma_id: samsara
+  - term: snying rje (compassion)
+    definition: 'snying + rje ‘heart-lord’ → compassion as sovereign attitude that tramples demon-talk
+      Here: His subsequent words, that ''all composite things are alike liable to dissolution,'' place
+      even the pain of parting within the frame of impermanence, showing tha… Trap: pity'
+  layer_provenance: editorial-enriched

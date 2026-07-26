@@ -89,3 +89,102 @@ abhyasa: When you next make a decision, pause and notice the gap between your in
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: ततो मनोजवित्वं विकरणभावः प्रमुखजयः च
+- kind: iast
+  label: IAST
+  body: tato manojavitvaṃ vikaraṇabhāvaḥ pradhānajayaś ca
+- kind: translation
+  label: Pratibha Translation
+  body: Thereafter, the mind’s subtle power of perception, the state of differentiation, and the principal
+    victories become evident.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sūtra asserts that once the mind’s subtle power of perception (manojavitva) is harnessed,
+    the very process of differentiation (vikaraṇabhāva) and the ensuing principal victories (pradhānajaya)
+    naturally unfold. This claim foregrounds the Yoga school’s epistemic priority: the mind, when disciplined,
+    is the primary instrument of liberation. The contested move here is the implicit causal link between
+    perception and victory; while Sāṃkhya treats prakṛti’s differentiation as autonomous, Yoga posits
+    that disciplined perception can preempt and direct this process. The sūtra thus bridges the two systems,
+    suggesting that the mind’s mastery can steer prakṛti’s unfolding toward samādhi. In practice, this
+    translates to focused attention on the subtle sensations within the body, aligning with the Satchidananda
+    emphasis on “body anchor.” By mastering the ego sense and the purpose of the sense organs, one cultivates
+    a disciplined perception that yields the principal victories—inner stillness, clarity, and ultimately
+    liberation. The sūtra’s structure—mind’s power, differentiation, victory—mirrors the triadic progression
+    of Yoga: pratyahara, dharana, and samādhi, underscoring the existential applicability of disciplined
+    perception as a gateway to liberation.
+
+
+    Key Terms
+
+
+    **manojavitva (मनोजवित्व)** — etymology: ‘mind’s subtle power’ -> Sāṃkhya tradition: subtle mind (citta)
+    as a distinct faculty -> Yoga: disciplined perception as the means to control prakṛti’s differentiation
+
+
+    **vikaraṇabhāva (विकरणभाव)** — etymology: ‘state of differentiation’ -> Sāṃkhya: prakṛti’s inherent
+    differentiation -> Yoga: differentiation as a process that can be guided by disciplined perception
+
+
+    **pradhānajaya (प्रमुखजय)** — etymology: ‘principal victories’ -> Sāṃkhya: ultimate liberation (moksha)
+    as the final victory -> Yoga: the culmination of disciplined perception leading to samādhi and liberation
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 3.48:** mind’s power of perception precedes differentiation and victory
+
+    *Divergence:* Sāṃkhya treats differentiation as autonomous; Yoga posits it as contingent on disciplined
+    perception
+
+
+    **Yoga Sūtra 2.23:** pratyahara (withdrawal) leads to dharana (concentration) and then samādhi
+
+    *Divergence:* 3.48 places mind’s power before these stages, suggesting a more proactive role
+
+
+    **Yoga Sūtra 4.1:** samādhi as the ultimate victory
+
+    *Divergence:* 3.48 introduces ‘principal victories’ earlier, implying intermediate victories within
+    the process'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: hāna (हान)
+    definition: '√hā ‘abandon’ → cessation/abandonment as goal -> in “Mastery of Perception”: Thereafter,
+      the mind’s subtle power of perception, the state of differentiation, and the principal victories
+      become e… -> not repression; the ending of future suffering’s cause through viveka'
+  - term: manojavitva (मनोजवित्व)
+    definition: '‘mind’s subtle power’ -> Sāṃkhya tradition: subtle mind (citta) as a distinct faculty
+      -> Yoga: disciplined perception as the means to control prakṛti’s differentiation -> in “Mastery
+      of Perception”: ‘mind’s subtle power’ -> Sāṃkhya tradition: subtle mind (citta) as a distinct faculty
+      -> Yoga: disciplined perception as the means to control prakṛti’s differentiation -> default English
+      flattens the technical work this term does here'
+  - term: vikaraṇabhāva (विकरणभाव)
+    definition: '‘state of differentiation’ -> Sāṃkhya: prakṛti’s inherent differentiation -> Yoga: differentiation
+      as a process that can be guided by disciplined perception -> in “Mastery of Perception”: ‘state
+      of differentiation’ -> Sāṃkhya: prakṛti’s inherent differentiation -> Yoga: differentiation as a
+      process that can be guided by disciplined perception -> default English flattens the technical work
+      this term does here'
+  - term: pradhānajaya (प्रमुखजय)
+    definition: '‘principal victories’ -> Sāṃkhya: ultimate liberation (moksha) as the final victory ->
+      Yoga: the culmination of disciplined perception leading to samādhi and liberation -> in “Mastery
+      of Perception”: ‘principal victories’ -> Sāṃkhya: ultimate liberation (moksha) as the final victory
+      -> Yoga: the culmination of disciplined perception leading to samādhi and liberation -> default
+      English flattens the technical work this term does here'
+  - term: pradhāna
+    definition: 'substance from which all manifest reality unfolds. -> in “Mastery of Perception”: the
+      root substance from which all manifest reality unfolds -> default English flattens the technical
+      work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You focus your attention on the subtle sensations within your body, consciously mastering the
+    ego sense and aligning the purpose of your sense organs, thereby exercising disciplined perception.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: By saṁyama on the power of perception and on the essential nature, correlation with the ego sense
+    and purpose of the sense organs, mastery over them is gained.

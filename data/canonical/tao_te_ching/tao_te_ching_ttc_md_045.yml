@@ -124,3 +124,106 @@ abhyasa: The next time you feel the urge to convince someone of something, let y
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '將欲歙之，必固張之；
+
+    將欲弱之，必固強之；
+
+    將欲廢之，必固興之；
+
+    將欲奪之，必固與之。
+
+    是謂微明。
+
+    柔弱勝剛強。
+
+    魚不可脫於淵，國之利器不可以示人。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'When one is about to take an inspiration, he is sure to make a (previous) expiration; when he
+    is going to weaken another, he will first strengthen him; when he is going to overthrow another, he
+    will first have raised him up; when he is going to despoil another, he will first have made gifts
+    to him:--this is called ''Hiding the light (of his procedure).'' The soft overcomes the hard; and
+    the weak the strong.
+
+
+    Fishes should not be taken from the deep; instruments for the profit of a state should not be shown
+    to the people.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this chapter is that the Tao teaches a paradoxical strategy of empowerment
+    as a means of subversion. The contested move is the idea that to weaken or destroy one must first
+    strengthen or elevate the target. This inversion of conventional logic is a hallmark of Taoist strategy,
+    echoing the principle of *wúwéi* (non‑action) that the Taoist sage employs to achieve results without
+    forceful intervention. By presenting the paradox, the text invites the reader to abandon linear cause
+    and effect and to recognize that apparent power is a façade; true influence is exercised through subtle,
+    counterintuitive means.
+
+
+    Key Terms:
+
+
+    **歙 (shè)** — to shut, to close -> Taoist sense: to suppress or end -> translation: shut
+
+    **張 (zhāng)** — to extend, to open -> Taoist sense: to expand influence -> translation: extend
+
+    **弱 (ruò)** — weak, to diminish -> Taoist sense: to reduce power -> translation: weaken
+
+    **強 (qiáng)** — strong, to strengthen -> Taoist sense: to increase power -> translation: strengthen
+
+    **微明 (wēi míng)** — subtle illumination, hidden light -> Taoist sense: the subtle way of action ->
+    translation: subtle illumination'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: róu (柔)
+    definition: '柔 ‘soft/supple’ -> in “The Paradox of Strengthening to Weaken”: When one is about to
+      take an inspiration, he is sure to make a (previous) expiration; when he is going to weaken anot…
+      -> not weakness as failure; yielding strength that outlasts the hard'
+  - term: wēi míng (微明)
+    definition: '微 ‘subtle’ + 明 ‘clarity’ -> in “The Paradox of Strengthening to Weaken”: subtle illumination,
+      hidden light -> Taoist sense: the subtle way of action -> translation: subtle illumination -> not
+      dim lightbulb; subtle clarity that sees soft/weak strategies before force does'
+  - term: qiáng (強)
+    definition: '強 ‘strong/forceful’ -> in “The Paradox of Strengthening to Weaken”: strong, to strengthen
+      -> Taoist sense: to increase power -> translation: strengthen -> not virtue of dominance; often
+      the stiff strength that dies first, opposite of living soft'
+  - term: ruò (弱)
+    definition: '弱 ‘weak/pliant’ -> in “The Paradox of Strengthening to Weaken”: weak, to diminish ->
+      Taoist sense: to reduce power -> translation: weaken -> not pathetic frailty; strategic pliancy
+      aligned with water’s way'
+  - term: shè (歙)
+    definition: 'source-term shè -> in “The Paradox of Strengthening to Weaken”: to shut, to close ->
+      Taoist sense: to suppress or end -> translation: shut -> default English flattens the technical
+      work this term does here'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Zhuangzi, ch. 2 (The Joy of Fishes)
+    resonance: Both texts emphasize the futility of removing fish from their natural deep pool, illustrating
+      the Taoist view that entities thrive when left in their natural state.
+    divergence: Zhuangzi frames it as a moral lesson about non‑interference, while the Tao Te Ching presents
+      it as a strategic warning about revealing state power.
+    passage_id: ''
+  - citation: Laozi, ch. 48 (The Great Way)
+    resonance: Both chapters warn against exposing the state’s weapons, underscoring the principle of
+      *zìrán* (naturalness) in governance.
+    divergence: Chapter 48 uses the image of the tiger’s claws to illustrate hidden strength, whereas
+      chapter 36 uses the fish to illustrate hidden vulnerability.
+    passage_id: ''
+  - citation: Confucius, Analects 12:13 (The Master’s Teaching)
+    resonance: Both texts discuss the idea of strengthening before weakening, aligning with the Confucian
+      strategy of cultivating virtue before reforming society.
+    divergence: Confucianism frames it as moral cultivation, whereas Taoism frames it as a subtle, almost
+      deceptive strategy.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet place and imagine a problem you wish to solve. Instead of confronting it head‑on,
+    first add a small, supportive action—perhaps offering a compliment or a small gift—to the situation.
+    Observe how this act of giving or strengthening the problem’s context can shift the dynamics, allowing
+    you to address the issue more gently and effectively.

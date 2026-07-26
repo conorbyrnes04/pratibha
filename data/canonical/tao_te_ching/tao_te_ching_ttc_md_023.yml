@@ -109,3 +109,97 @@ abhyasa: 'At the moment you reach for something beautiful or stimulating—a son
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '五色令人目盲；
+
+    五音令人耳聾；
+
+    五味令人口爽；
+
+    馳騁田獵，令人心發狂；
+
+    難得之貨，令人行妨。
+
+    是以聖人為腹不為目，故去彼取此。'
+- kind: translation
+  label: Pratibha Translation
+  body: The five colors make the eye blind; the five sounds make the ear deaf; the five tastes make the
+    mouth delighted; the chase of wild beasts makes the heart wild; the rare goods make the feet hindered.
+    Therefore the sage does not seek the belly, but the eye, and so he abandons the former for the latter.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that the pursuit of sensory pleasure is a misguided path that blinds the
+    soul. The contested move is the sage’s reversal of priorities—he values the eye over the belly, meaning
+    he seeks insight rather than physical sustenance. By doing so, he demonstrates that true nourishment
+    comes from perception, not consumption. The passage invites readers to reconsider the hierarchy of
+    needs, suggesting that spiritual vision supersedes bodily hunger.
+
+
+    The text echoes the Taoist theme that external stimuli can distort inner harmony. Yet it diverges
+    from the usual emphasis on wu‑wei (non‑action) by prescribing a deliberate shift in focus rather than
+    passive withdrawal. The sage’s act of “去彼取此” (to abandon that and take this) is an active choice to
+    re‑orient values, contrasting with the more common Taoist suggestion to simply let go of desire.
+
+
+    The chapter’s critique of sensory excess also anticipates later Taoist warnings about the corrupting
+    influence of the five senses, but it frames the solution in terms of a re‑ordering of priorities rather
+    than complete renunciation.
+
+
+    Key Terms:
+
+
+    **五色 (wǔ sè)** — five colors -> symbol of sensory illusion -> translation stakes: blindness of perception
+
+    **五音 (wǔ yīn)** — five sounds -> auditory overload -> translation stakes: deafness of hearing
+
+    **五味 (wǔ wèi)** — five tastes -> taste excess -> translation stakes: delight leading to distraction
+
+    **去彼取此 (qù bǐ qǔ cǐ)** — to abandon that and take this -> active re‑prioritization -> translation
+    stakes: shift from body to mind'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “The Blindness of Sensory Excess”: The five colors
+      make the eye blind; the five sounds make the ear deaf; the five tastes make the mouth delighted;
+      the … -> not canonized saint; the one who acts by emptying self-assertion so the world orders itself'
+  - term: qù bǐ qǔ cǐ (去彼取此)
+    definition: '去彼 ‘leave that’ + 取此 ‘take this’ -> in “The Blindness of Sensory Excess”: ''Discard that,
+      take this'' -> not consumer choice; reject sensory overstimulation for the belly/root sufficiency'
+  - term: xīn (心)
+    definition: '心 ‘heart-mind’ (thought-feeling undivided) -> in “The Blindness of Sensory Excess”: The
+      heart-mind, seat of both feeling and thought, here shown being agitated by craving -> not brain-only
+      mind or soft sentiment; the seat emptied or filled in Daoist/Confucian work'
+    lemma_id: xin
+    sense_id: xin.chinese
+  - term: wǔ sè (五色)
+    definition: 'source-term wǔ sè -> in “The Blindness of Sensory Excess”: five colors -> symbol of sensory
+      illusion -> -> blindness of perception'
+  - term: wǔ yīn (五音)
+    definition: 'source-term wǔ yīn -> in “The Blindness of Sensory Excess”: five sounds -> auditory overload
+      -> -> deafness of hearing'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 1 (the Tao that can be named is not the eternal Tao)
+    resonance: both warn against the limits of language and sensory description
+    divergence: chapter 12 focuses on practical re‑orientation rather than abstract principle
+    passage_id: ''
+  - citation: chapter 34 (the Tao is like a well, used but never filled)
+    resonance: both emphasize the value of emptiness
+    divergence: chapter 12 speaks of abandoning external goods, chapter 34 speaks of internal emptiness
+    passage_id: ''
+  - citation: chapter 56 (the Tao is the source of all things)
+    resonance: both highlight the Tao as underlying reality
+    divergence: chapter 12 presents the Tao as a guide to re‑ordering priorities, not as a universal source
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet place, close your eyes, and breathe slowly. With each inhale, imagine the five
+    senses dissolving into a single colorless field; with each exhale, feel the body’s hunger soften,
+    allowing the mind to see beyond the immediate.

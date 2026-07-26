@@ -16,21 +16,24 @@ themes:
 - way
 source_excerpt: In change is rest.
 translation_literal: In change is rest.
-commentary: 'The fragment reverses the expected hierarchy: rest is not the absence of change but its interior. Heraclitus
-  does not mean that change eventually settles into stillness, nor that beneath flux lies a static ground. Rather, he names
-  a simultaneity—the way a river maintains its character precisely through constant flow, the way a musical note persists
-  only in its sounding, the way a body''s health consists in the continuous exchange of elements. The Greek anapausis (rest,
-  cessation) here is not negation but *poise*—the stable proportion that *is* the changing itself. This inverts how we typically
-  parse experience: we assume change threatens rest, that flux erodes form. Heraclitus asks us to perceive differently: the
-  lyre''s tension does not oppose its music; the tension *is* what allows music to exist. In change—not after it, not beneath
-  it, not despite it—rest abides. The paradox dissolves only when perception stops treating change and rest as opposites and
-  recognizes them as a single rhythm. This is not metaphysics but phenomenology: watch what actually holds steady.'
+commentary: 'The fragment reverses the expected hierarchy: rest is not the absence of change but its interior.
+  Heraclitus does not mean that change eventually settles into stillness, nor that beneath flux lies a
+  static ground. Rather, he names a simultaneity—the way a river maintains its character precisely through
+  constant flow, the way a musical note persists only in its sounding, the way a body''s health consists
+  in the continuous exchange of elements. The Greek anapausis (rest, cessation) here is not negation but
+  *poise*—the stable proportion that *is* the changing itself. This inverts how we typically parse experience:
+  we assume change threatens rest, that flux erodes form. Heraclitus asks us to perceive differently:
+  the lyre''s tension does not oppose its music; the tension *is* what allows music to exist. In change—not
+  after it, not beneath it, not despite it—rest abides. The paradox dissolves only when perception stops
+  treating change and rest as opposites and recognizes them as a single rhythm. This is not metaphysics
+  but phenomenology: watch what actually holds steady.'
 insight: ''
-practice: 'During a routine action with inherent rhythm—walking, breathing, pouring water, speaking a familiar phrase—attend
-  to what *persists* only because it is changing: the stride that remains balanced only through continuous adjustment, the
-  breath that maintains oxygen only through perpetual exchange, the voice that holds a note only through sustained vibration.
-  Notice the instant you try to *stop* the action to examine it; the rest vanishes. The stability was never in freezing the
-  moment but in the motion itself.'
+practice: 'During a routine action with inherent rhythm—walking, breathing, pouring water, speaking a
+  familiar phrase—attend to what *persists* only because it is changing: the stride that remains balanced
+  only through continuous adjustment, the breath that maintains oxygen only through perpetual exchange,
+  the voice that holds a note only through sustained vibration. Notice the instant you try to *stop* the
+  action to examine it; the rest vanishes. The stability was never in freezing the moment but in the motion
+  itself.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -51,23 +54,52 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment reverses the expected hierarchy: rest is not the absence of change but its interior. Heraclitus does
-    not mean that change eventually settles into stillness, nor that beneath flux lies a static ground. Rather, he names a
-    simultaneity—the way a river maintains its character precisely through constant flow, the way a musical note persists
-    only in its sounding, the way a body''s health consists in the continuous exchange of elements. The Greek anapausis (rest,
-    cessation) here is not negation but *poise*—the stable proportion that *is* the changing itself. This inverts how we typically
-    parse experience: we assume change threatens rest, that flux erodes form. Heraclitus asks us to perceive differently:
-    the lyre''s tension does not oppose its music; the tension *is* what allows music to exist. In change—not after it, not
-    beneath it, not despite it—rest abides. The paradox dissolves only when perception stops treating change and rest as opposites
-    and recognizes them as a single rhythm. This is not metaphysics but phenomenology: watch what actually holds steady.'
+  body: 'The fragment reverses the expected hierarchy: rest is not the absence of change but its interior.
+    Heraclitus does not mean that change eventually settles into stillness, nor that beneath flux lies
+    a static ground. Rather, he names a simultaneity—the way a river maintains its character precisely
+    through constant flow, the way a musical note persists only in its sounding, the way a body''s health
+    consists in the continuous exchange of elements. The Greek anapausis (rest, cessation) here is not
+    negation but *poise*—the stable proportion that *is* the changing itself. This inverts how we typically
+    parse experience: we assume change threatens rest, that flux erodes form. Heraclitus asks us to perceive
+    differently: the lyre''s tension does not oppose its music; the tension *is* what allows music to
+    exist. In change—not after it, not beneath it, not despite it—rest abides. The paradox dissolves only
+    when perception stops treating change and rest as opposites and recognizes them as a single rhythm.
+    This is not metaphysics but phenomenology: watch what actually holds steady.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ἁρμονίη (harmoniē)
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
+      passage (in change is rest.), tensioned unity of opposites — bow and lyre held by counter-pull,
+      not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
+    lemma_id: harmonie
+    sense_id: harmonie.heraclitean
+  - term: ποταμός (potamos)
+    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage
+      (in change is rest.), flux as identity-in-process: you cannot step twice into the same river because
+      waters renew -> trap: slogan “everything changes” without the logos that measures the flow'
+  - term: ψυχή (psychē)
+    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage
+      (in change is rest.), the soul whose depth, dryness, or rudeness decides whether senses can witness
+      truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
+    lemma_id: psyche
+    sense_id: psyche.platonic
+  - term: πῦρ (pyr)
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
+      (in change is rest.), world-ruling fire as measured transformation and exchange, not mythic flame
+      alone -> trap: treating fire as a static elemental substance rather than lawful becoming'
+    lemma_id: pyr
+    sense_id: pyr.heraclitean
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'During a routine action with inherent rhythm—walking, breathing, pouring water, speaking a familiar phrase—attend
-    to what *persists* only because it is changing: the stride that remains balanced only through continuous adjustment, the
-    breath that maintains oxygen only through perpetual exchange, the voice that holds a note only through sustained vibration.
-    Notice the instant you try to *stop* the action to examine it; the rest vanishes. The stability was never in freezing
-    the moment but in the motion itself.'
+  body: 'During a routine action with inherent rhythm—walking, breathing, pouring water, speaking a familiar
+    phrase—attend to what *persists* only because it is changing: the stride that remains balanced only
+    through continuous adjustment, the breath that maintains oxygen only through perpetual exchange, the
+    voice that holds a note only through sustained vibration. Notice the instant you try to *stop* the
+    action to examine it; the rest vanishes. The stability was never in freezing the moment but in the
+    motion itself.'
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''

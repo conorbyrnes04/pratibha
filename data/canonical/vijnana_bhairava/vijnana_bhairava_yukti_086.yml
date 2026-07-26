@@ -98,3 +98,73 @@ abhyasa: Sit upright in a quiet place. Gently press your palms or thumbs against
   the seals and sit for a moment in the quiet that remains.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: संकोचं कर्णयोः कृत्वा ह्य् अधोद्वारे तथैव च । अनच्कम् अहलं ध्यायन् विशेद् ब्रह्म सनातनम् ॥ ११४
+    ॥
+  layer_provenance: sourced
+- kind: iast
+  body: saṃkocaṃ karṇayoḥ kṛtvā hy adhodvāre tathaiva ca | anackam ahalaṃ dhyāyan viśed brahma sanātanam
+    || 114 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #86
+
+    Closing the ears and likewise the ‘lower gate’, meditating on [the
+
+    sound] without vowel or consonant [? ahala], one may enter the
+
+    eternal Absolute. || 114'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: anackam ahalam
+    definition: an-ac ‘without vowels’ + a-hal ‘without consonants’ → 'without vowel, without consonant'
+      — sound prior to articulation, the unstruck resonance underlying all speech → not linguistic trivia—the
+      phonemic void where mantra dissolves into pure resonance
+  - term: adhodvāra (अधोद्वार)
+    definition: adhas ‘below’ + dvāra ‘door’ → the 'lower gate' at the base of the trunk (muladhara region),
+      sealed to stop the downward leak of prāṇa → not a mere anatomical lower aperture—the practice gate
+      at the root
+  - term: nāda (नाद)
+    definition: √nad ‘sound’ → resonance → inner subtle sound; here the undivided vibration of consciousness
+      that becomes audible when external hearing is stilled → ‘sound’ as acoustic misses subtle resonance
+      prior to ordinary hearing
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 7 · Turīya — The Fourth
+    resonance: Both texts use systematic negation to point toward a non-dual awareness that transcends
+      all categorical divisions (sensory, conceptual, dualistic). The Vijnana Bhairava's 'sound without
+      vowel or consonant' and the Mandukya's 'not inwardly conscious, not outwardly conscious' both dissolve
+      the subject-object distinction through apophatic precision.
+    divergence: The Mandukya employs a fourfold negation to isolate turīya (the fourth state) as a metaphysical
+      category; the Vijnana Bhairava uses sensory closure as a direct contemplative method to collapse
+      the distinction itself in lived experience.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_009
+  - citation: Pratyabhijnahrdayam — Sutra 13
+    resonance: Both texts locate liberation in a sudden recognition (pratyabhijñā / direct disclosure)
+      where the meditator realizes their own authorship or agency as consciousness itself, collapsing
+      the gap between knower and known through introversion.
+    divergence: The Pratyabhijnahrdayam emphasizes intellectual recognition of authorship leading to ascent;
+      the Vijnana Bhairava uses sensory negation and silence as the portal, privileging non-conceptual
+      disclosure over cognitive realization.
+    passage_id: pratyabhijnahrdayam.phr_013
+  - citation: Patañjali Yoga Sūtras 3.12
+    resonance: Both passages describe a transformation of mental condition into unified consciousness
+      where opposites (repressed/revived, sound/silence, multiplicity/unity) become equally present and
+      transparent to awareness without hierarchy or preference.
+    divergence: Patañjali frames this as a sequential state-transformation within samādhi; the Vijnana
+      Bhairava treats it as immediate recognition through sensory closure, emphasizing simultaneity over
+      progression.
+    passage_id: patañjali_yoga_sūtras.ys_3_12
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

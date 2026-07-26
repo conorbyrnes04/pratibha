@@ -90,3 +90,75 @@ abhyasa: Lean your whole body toward one thing that remains unclear to you right
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  body: यथा ह्यर्थोऽस्फुटो दृष्टः सावधानेऽपि चेतसि । भूयः स्फुटतरो भाति स्वबलोद्योगभावितः ॥ ३६ ॥ तथा यत्परमार्थेन
+    येन यत्र यथा स्थितम् । तत्तथा बलमाक्रम्य न चिरात्सम्प्रवर्तते ॥ ३७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yathā hyartho'sphuṭo dṛṣṭaḥ sāvadhāne'pi cetasi | bhūyaḥ sphuṭataro bhāti svabalodyogabhāvitaḥ
+    || 36 || tathā yatparamārthena yena yatra yathā sthitam | tattathā balamākramya na cirātsampravartate
+    || 37 ||
+- kind: translation
+  label: Pratibha Translation
+  body: Just as an object that escapes attention is more clearly perceived when we make the effort to
+    see it better from all angles, so the supreme sacred tremor appears to the tantrika when he ardently
+    strives toward it. In this way, everything is in tune with the essence of his true nature.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The effort to understand from all angles is the abandonment of limits, the letting go of the
+    body-mind. Then the great fluctuation is established, we hear ourselves, and we come back toward our
+    center without ever leaving the original source. Every point of the movement then becomes immensity
+    itself, and the wave of the Real does not find its fall dizzying, nor its ascension fleeting as it
+    breaks into silver foam in the space of the sky. There is no treasure besides a luminous pearl It
+    is passion for deliverance that is the principal means of salvation, and it is the man animated by
+    this passion who is the true believer. The way to reach supreme deliverance is to desire it passionately.
+    To believe that this passion has become total and exclusive: no other means is required.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: svabalodyoga (स्वबलोद्योग)
+    definition: 'sva-bala + udyoga (compound) → the exertion or deliberate application of one''s own inner
+      force behind attention → same: exertion of own power, not borrowed technique-energy'
+  - term: bala (बल)
+    definition: √bal ‘be strong’ → power/force → the energizing power of consciousness that, when seized
+      and directed, brings any reality into full clarity → ‘strength’ muscularizes the innate potency
+      of awareness (ātma-bala)
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle vibratory pulse of awareness underlying all perception,
+      thought, and manifestation → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness
+      itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.21
+    resonance: 'Both texts posit that intense, sustained effort or ardor (tapas/feeling) draws the practitioner
+      into direct contact with a transcendent reality. The Spandakarika''s ''ardent striving'' and Patañjali''s
+      ''most ardent feeling'' name the same mechanism: heightened affective intensity as the gateway to
+      realization.'
+    divergence: Patañjali locates this intensity within the samadhi-path of classical yoga (withdrawal
+      from objects), while Spandakarika locates it within tantric embodied practice (the tremor as immanent
+      divine vibration).
+    passage_id: patañjali_yoga_sūtras.ys_1_21
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts describe realization as iterative return of attention rather than sudden breakthrough.
+      The Spandakarika's 'effort to see from all angles' and the Bhagavad Gita's 'repeatedly return attention
+      from dispersion to center' share the structure of cyclical re-engagement with a focal point.
+    divergence: Spandakarika emphasizes the abandonment of limits through multi-angled perception, while
+      the Gita emphasizes regulated habit and bodily establishment as the ground of return.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: 'Vijnana Bhairava — Yukti #70'
+    resonance: Both texts instruct the practitioner to redirect attention *into* the arising content (desire,
+      thought, tremor) rather than suppress it, treating the energy itself as the path. Vijnana Bhairava
+      Yukti 70 and Spandakarika both make the obstacle transparent to the sacred force it contains.
+    divergence: Yukti 70 focuses on stabilizing consciousness within the energy of desire/thought as śakti,
+      while Spandakarika frames the effort itself as the means by which the tremor becomes perceptible.
+    passage_id: vijnana_bhairava.yukti_070
+  layer_provenance: generated_grounded

@@ -71,3 +71,104 @@ abhyasa: Reverse the sequence of one complaint forming in your mind right now—
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 朝三暮四
+- kind: translation
+  label: Pratibha Translation
+  body: 'The monkey trainer says: "Three chestnuts in the morning, four at night." The monkeys rage. He
+    says: "Fine - four in the morning, three at night." The monkeys rejoice.
+
+
+    Nothing in the total changes. Only sequence changes. Affect changes everything.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that much conflict concerns framing, rhythm, and felt sequencing rather than substance
+    alone. The counterintuitive move is that Zhuangzi does not present this as mere trickery; he presents
+    it as adaptive intelligence in relational governance. The trainer does not alter the total ration.
+    He alters temporal presentation to meet the animals'' experiential bias. Rationally identical distributions
+    can produce radically different responses depending on when and how they are delivered.
+
+
+    In Daoist context, this exemplifies flexible response without losing structural clarity. The sage
+    sees both total and perspective: he does not become trapped by surface preference, yet he does not
+    disdain it. This is not cynical manipulation if the underlying allocation remains fair and non-exploitative;
+    it is tact grounded in awareness of conditioned cognition.
+
+
+    Existentially, the passage applies to communication, leadership, parenting, and self-regulation. People
+    often argue at the level of "facts" while ignoring temporal-emotional architecture. Zhuangzi''s point:
+    if you ignore lived sequencing, you misunderstand how meaning lands. Skillful framing can reduce unnecessary
+    resistance without falsifying substance. The warning is equally clear: framing can pacify without
+    justice if used to mask inequity. Daoist flexibility must be tethered to non-coercion.
+
+
+    Key Terms:
+
+
+    **zhāo sān mù sì (朝三暮四)** - "three in morning, four at night" -> in this passage, the gap between
+    arithmetic invariance and experiential reception -> now idiomatic for sophistical reframing, but Zhuangzi''s
+    usage is subtler: adaptive perspectival skill.
+
+
+    **qí wù (齊物)** - equalizing things -> here the capacity to hold invariant total and variant perspective
+    simultaneously -> default renderings underplay practical relational intelligence.
+
+
+    **yīn qí suǒ shì (因其所是)** - "following what is so for them" (conceptual gloss) -> contextual meaning:
+    adapt expression to the other''s actual pattern -> not capitulation, but fit.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: qí wù (齊物)
+    definition: '齊 “level/make even” + 物 “things/beings” -> in this passage (reframing Without Changing
+      the Total), equalizing things: leveling standpoint claims so this/that lose absolute privilege ->
+      trap: abstract logical identity of opposites; qí wù is perspectival liberation, not flattening reality'
+    lemma_id: qi_wu
+    sense_id: qi_wu.zhuangzi
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (reframing Without Changing the Total), the nameless source-and-course that lets beings
+      move by their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed doctrine one
+      can possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (reframing Without Changing the Total), unforced congruence with conditions: skill that
+      does not obstruct the work -> trap: “non-action” as passivity; wúwéi can be highly skilled activity
+      without strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: xīn (心)
+    definition: '心 “heart-mind” — thought, feeling, and responsiveness undivided -> in this passage (reframing
+      Without Changing the Total), the heart-mind to be emptied, still, or freed from right/wrong warfare
+      -> trap: brain-only “mind” or sentimental “heart”; xīn is the whole affective-cognitive center'
+    lemma_id: xin
+    sense_id: xin.chinese
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Aristotle, *Rhetoric* II
+    resonance: effective persuasion depends on audience disposition as much as formal argument.
+    divergence: Aristotle codifies persuasive craft in civic rhetoric; Zhuangzi embeds adaptive framing
+      in non-dominating attunement and ontological perspectivism.
+    passage_id: ''
+  - citation: Buddhist upaya (skillful means)
+    resonance: both permit variation in presentation while preserving deeper intent.
+    divergence: Upaya serves explicit liberation pedagogy under doctrinal commitments; Zhuangzi's adaptation
+      is less doctrinal and more ecological-relational.
+    passage_id: ''
+  - citation: Epictetus, Discourses (pedagogy by temperament)
+    resonance: teachings are adjusted to student readiness.
+    divergence: Stoic adaptation remains normatively tied to rational assent; Zhuangzi's adjustment foregrounds
+      fluid contextual fit over a single universal method.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Before a difficult request today, rewrite it in two framings that preserve identical substance
+    but different sequencing, then choose the version that best reduces defensiveness without hiding the
+    truth.

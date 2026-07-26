@@ -119,3 +119,113 @@ abhyasa: When someone disappoints you today, whisper 'I treat them as good' befo
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '聖人無常心，以百姓心為心。
+
+    善者，吾善之；
+
+    不善者，吾亦善之；
+
+    德善。
+
+    信者，吾信之；
+
+    不信者，吾亦信之；
+
+    德信。
+
+    聖人在天下，歙歙為天下渾其心，百姓皆注其耳目，聖人皆孩之。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'The sage [*shèng rén* 聖人] has no invariable mind of his own; he makes the mind of the people
+    his mind.
+
+
+    To those who are good (to me), I am good; and to those who are not good (to me), I am also good;--and
+    thus (all) get to be good.
+
+
+    To those who are sincere (with me), I am sincere; and to those who are not sincere (with me), I am
+    also sincere;--and thus (all) get to be sincere.
+
+
+    The sage has in the world an appearance of indecision, and keeps his mind in a state of indifference
+    to all.
+
+
+    The people all keep their eyes and ears directed to him, and he deals with them all as his children.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter claims that true virtue arises not from imposing one’s will but from mirroring the
+    collective heart. The contested move—"the sage has no fixed heart"—suggests that the sage’s power
+    lies in dissolving ego and aligning with the people’s will. By declaring himself good or sincere to
+    all, regardless of their current state, the sage demonstrates that virtue is a universal potential
+    that can be activated through empathy and reflection. The text therefore redefines leadership as a
+    participatory, non‑authoritarian act that invites the masses to co‑create moral order.
+
+
+    The passage’s emphasis on the sage’s indifference and the people’s reverence echoes the Daoist principle
+    that true authority is exercised through subtlety and humility. Yet, unlike the rigid hierarchy of
+    conventional governance, here the sage’s authority is derived from his capacity to become the people’s
+    mirror, not their ruler. This inversion of power dynamics invites readers to reconsider the nature
+    of influence and the possibility of a society where virtue is cultivated through mutual reflection
+    rather than coercion.
+
+
+    Key Terms:
+
+
+    **dào 道** — the Way; the ultimate principle of natural order and moral alignment -> "the sage’s unfixed
+    heart"
+
+    **wúwéi 無為** — non‑action or effortless action; the sage’s indifference to external forces -> "appears
+    indecisive"
+
+    **zìrán 自然** — nature; spontaneous harmony; the sage’s quiet presence -> "all‑embracing harmony"'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: cháng (常)
+    definition: '常 ‘constant/enduring’ -> in “The Sage’s Unfixed Mind”: The sage [*shèng rén* 聖人] has
+      no invariable mind of his own; he makes the mind of the people his mind. -> not theological eternity
+      with start/stop brackets — what persists through change without being used up'
+  - term: dé (德)
+    definition: '德 ‘virtue/potency/accrued power’ -> in “The Sage’s Unfixed Mind”: here, the effective
+      virtue that meets even the undeserving with goodness and trust -> not Victorian moralism — a thing’s
+      unforced efficacy when it accords with dào'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: wú (無)
+    definition: '無 ‘without / not-have’ -> in “The Sage’s Unfixed Mind”: The sage [*shèng rén* 聖人] has
+      no invariable mind of his own; he makes the mind of the people his mind. -> not nihilistic void;
+      generative absence (of forcing, name, desire) that opens function'
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “The Sage’s Unfixed Mind”: The sage [*shèng rén* 聖人]
+      has no invariable mind of his own; he makes the mind of the people his mind. -> not canonized saint;
+      the one who acts by emptying self-assertion so the world orders itself'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Sage’s Unfixed Mind”:
+      The sage [*shèng rén* 聖人] has no invariable mind of his own; he makes the mind of the people his
+      mind. -> not only ‘the world’ as map; the realm that cannot be seized by contrivance'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 1 (The Way is the source of all things)
+    resonance: Both chapters emphasize the primacy of the Way (dào) as the source of all action.
+    divergence: Chapter 49 focuses on interpersonal mirroring rather than cosmological origin.
+    passage_id: ''
+  - citation: Confucius, Analects 2.15 (The Master’s humility)
+    resonance: Both texts value humility and the alignment of personal virtue with communal values.
+    divergence: Confucius stresses active cultivation of virtue, whereas Laozi presents it as spontaneous
+      reflection.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet space and observe the thoughts of those around you without judgment. Let your
+    own reactions mirror theirs—if someone speaks kindly, respond kindly; if someone speaks harshly, respond
+    calmly. By practicing this reflective listening, you cultivate an unfixed heart that harmonizes with
+    the collective.

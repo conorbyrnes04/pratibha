@@ -81,3 +81,117 @@ abhyasa: The moment you notice yourself caught between tracking a body sensation
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: बाह्याभ्यन्तरविषयाक्षेपी चतुर्थः
+- kind: iast
+  label: IAST
+  body: bāhyābhyantaraviṣayākṣepī caturthaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The fourth is that which refers to the internal or external position of the breath.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim that the fourth sutra concerns the breath’s position—internal or external—constitutes
+    a pivotal point in the Yoga system: it bridges the phenomenological description of pranāyāma with
+    the metaphysical distinction between puruṣa and prakṛti. In the Sāṃkhya framework, the breath is a
+    manifestation of prakṛti’s subtle elements, and its manipulation is a means to purify the mind (citta).
+    By specifying internal versus external, the sutra acknowledges that the same physiological act can
+    be experienced differently: internally as a subtle oscillation within the nadīs, externally as the
+    observable inhalation and exhalation. This duality mirrors the dual nature of puruṣa’s awareness of
+    prakṛti, and the practice becomes an existential exercise: one learns to perceive the same phenomenon
+    from two complementary perspectives, thereby loosening attachment to a single mode of experience.
+    Dvivedi’s commentary, which mentions the “steady kind of pranāyāma called humbhaka,” underscores the
+    practical aspect—stopping the breath—yet it also hints at the subtle gradations of the breath’s length
+    corresponding to the tattvas. The sutra’s emphasis on the first udghāta (initial exhalation) as a
+    marker of completion aligns with the broader Yoga goal of achieving samādhi: a state where the mind’s
+    fluctuations (vṛtti) are still, and the breath’s movement is no longer a source of distraction. Thus,
+    the fourth sutra is not merely a technical instruction but a philosophical reminder that the same
+    act can be both a tool and a mirror, inviting the practitioner to witness the interplay of body and
+    mind, and to recognize that the external and internal are not separate but two facets of the same
+    reality.
+
+
+    Key Terms
+
+
+    **bāhyā (बाह्य)** — from ‘bāhya’ meaning ‘outside’; in Yoga, denotes external aspects of the body
+    or phenomena; the term highlights the duality of experience that the sutra later references
+
+
+    **abhyaṃtar (अभ्यन्तर)** — from ‘abhyaṃtar’ meaning ‘inside’; in Sāṃkhya, refers to the internal,
+    subtle aspects of prakṛti, especially the breath’s movement within the nadīs
+
+
+    **vṛtti (वृत्ति)** — the fluctuations of citta; the sutra’s focus on breath position is a technique
+    to curb vṛtti, thereby moving toward samādhi
+
+
+    **prāṇāyāma (प्राणायाम)** — the regulation of breath; the sutra’s reference to internal/external positions
+    is a specific form of prāṇāyāma aimed at purifying the subtle channels
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.51:** explicitly distinguishes internal and external breath positions, mirroring the
+    dual nature of puruṣa’s awareness of prakṛti
+
+    *Divergence:* Unlike later commentaries that treat the breath as a single entity, this sutra insists
+    on a bifurcation, underscoring the importance of perspective in practice
+
+
+    **Yoga Sūtra 2.52:** follows the fourth sutra by detailing the stages of breath control, structurally
+    building on the internal/external distinction
+
+    *Divergence:* While 2.51 introduces the distinction, 2.52 focuses on the procedural aspects, thereby
+    shifting from conceptual to practical emphasis
+
+
+    **Sāṃkhya Kārikā 1.1:** both texts acknowledge the duality of prakṛti’s manifestations (internal vs
+    external)
+
+    *Divergence:* Sāṃkhya presents the duality as a metaphysical principle, whereas the Yoga sutra applies
+    it directly to a yogic technique
+
+
+    **Dvivedi Commentary on 2.51:** expands on the sutra by linking breath length to tattvas, echoing
+    the internal/external theme
+
+    *Divergence:* Dvivedi introduces additional layers (tattva-specific lengths) that are absent in the
+    terse sutra, illustrating how commentaries elaborate on the core idea'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: bāhyā (बाह्य)
+    definition: '‘bāhya’ meaning ‘outside’ -> in “Fourth Reference to Internal or External Position”:
+      the term highlights the duality of experience that the sutra later references -> default English
+      flattens the technical work this term does here'
+  - term: abhyaṃtar (अभ्यन्तर)
+    definition: '‘abhyaṃtar’ meaning ‘inside’ -> in “Fourth Reference to Internal or External Position”:
+      in Sāṃkhya, refers to the internal, subtle aspects of prakṛti, especially the breath’s movement
+      within the nadīs -> default English flattens the technical work this term does here'
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Fourth Reference to Internal or
+      External Position”: the sutra’s focus on breath position is a technique to curb vṛtti, thereby moving
+      toward samādhi -> not ‘bad thoughts’ only — any cognitive wave (valid cognition, error, fantasy,
+      sleep, memory)'
+  - term: prāṇāyāma (प्राणायाम)
+    definition: 'prāṇa + āyāma ‘extension/regulation of breath-life’ -> in “Fourth Reference to Internal
+      or External Position”: the sutra’s reference to internal/external positions is a specific form of
+      prāṇāyāma aimed at purifying the subtle channels -> not breath tricks for calm apps; interruption
+      of inhalation/exhalation that thins the covering of light'
+  - term: bāhyābhyantara
+    definition: 'source-term bāhyābhyantara -> in “Fourth Reference to Internal or External Position”:
+      the duality of outer sensory fields and inner mental/subtle domains -> default English flattens
+      the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You observe the breath as it enters and leaves the body, consciously noting whether it feels internal
+    (within the nadīs) or external (visible inhalation/exhalation), and pause at the first exhalation
+    to mark completion.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: The fourth is that which has reference to the

@@ -121,3 +121,103 @@ abhyasa: 'When you next face a choice that calls you to act—a confrontation, a
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '勇於敢則殺，勇於不敢則活。
+
+    此兩者，或利或害。
+
+    天之所惡，孰知其故？
+
+    是以聖人猶難之。
+
+    天之道，不爭而善勝，不言而善應，不召而自來，繟然而善謀。
+
+    天網恢恢，踈而不失。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'He whose boldness appears in his daring (to do wrong, in defiance of the laws) is put to death;
+    he whose boldness appears in his not daring (to do so) lives on.
+
+
+    Of these two cases the one appears to be advantageous, and the other to be injurious.
+
+
+    But When Heaven [*tiān* 天]''s anger smites a man, Who the cause shall truly scan?
+
+
+    On this account the sage [*shèng rén* 聖人] feels a difficulty (as to what to do in the former case).
+
+
+    It is the Way [*dào* 道] of Heaven not to strive, and yet it skilfully overcomes; not to speak, and
+    yet it is skilful in obtaining a reply; does not call, and yet men come to it of themselves.
+
+
+    Its demonstrations are quiet, and yet its plans are skilful and effective.
+
+
+    The meshes of the net of Heaven are large; far apart, but letting nothing escape.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter wrestles with the Daoist paradox of courage: daring can lead to death, restraint
+    to survival. The contested move is the sage’s dilemma—whether to act boldly or to hold back. The text
+    suggests that true wisdom lies in aligning with Heaven’s non‑confrontational, yet effective, method.
+    By observing the subtlety of Heaven’s non‑intervention, the sage learns that the most powerful action
+    is often the one that is invisible, allowing outcomes to unfold naturally without force.
+
+
+    Key Terms:
+
+
+    **勇於 (yǒngyú)** — 勇 (courage) + 于 (in) -> to act with courage; Daoist sense: boldness that aligns
+    with the natural flow; translation stakes: distinguishing between reckless daring and courageous restraint
+
+    **不爭 (bùzhēng)** — 不 (not) + 爭 (strive) -> not to compete; Daoist sense: non‑contention; translation
+    stakes: contrasts active struggle with passive harmony
+
+    **踈 (chū)** — to let slip; in Daoist sense: the net is wide but catches all; translation stakes: illustrating
+    the paradox of freedom and containment'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “Courage and Consequence”: the way, the path, the fundamental
+      process of reality -> not a deity named Tao or a lifestyle brand — source-and-course that resists
+      full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “Courage and Consequence”: He whose boldness appears
+      in his daring (to do wrong, in defiance of the laws) is put to death; he whose boldness app… ->
+      not canonized saint; the one who acts by emptying self-assertion so the world orders itself'
+  - term: bùzhēng (不爭)
+    definition: '不 ‘not’ + 爭 ‘contend/strive’ -> in “Courage and Consequence”: + 爭 (strive) -> not to
+      compete -> not conflict-avoidant niceness; non-contention as the mode that none can contend with'
+  - term: tiān (天)
+    definition: '天 ‘heaven/sky’ — cosmic order above human forcing -> in “Courage and Consequence”: the
+      natural order, the cosmos as an intelligent, responsive system (not a deity, but a principle) ->
+      not a personal sky-god by default; impersonal heaven-pattern the sage aligns with'
+  - term: yǒngyú (勇於)
+    definition: 'source-term yǒngyú -> in “Courage and Consequence”: Daoist sense: boldness that aligns
+      with the natural flow -> distinguishing between reckless daring and courageous restraint'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 1 (The Way is not a thing to be grasped)
+    resonance: Both emphasize non‑action (wúwéi) as a means to achieve more than force
+    divergence: Chapter 73 focuses on the moral peril of courage, whereas chapter 1 presents a broader
+      cosmological principle
+    passage_id: ''
+  - citation: Zhuangzi, chapter 6 (The Great Learning of the Great River)
+    resonance: Both use natural imagery (net, river) to explain subtle control
+    divergence: Zhuangzi’s passage celebrates spontaneous freedom, while chapter 73 warns against the
+      dangers of misapplied boldness
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand in a quiet place, breathe slowly, and observe your impulses. When a bold idea arises, pause
+    and ask whether it aligns with your inner harmony. If it does, act gently; if not, let it pass like
+    a leaf on the wind.

@@ -133,3 +133,80 @@ section: Genjōkōan
 translation_provenance: Rendered from the public-domain source (Classical Japanese/Chinese (kanbun)).
   Study rendering; not a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Japanese)
+  body: '人、はじめて法をもとむるとき、はるかに法の辺際を離却せり。
+
+    法、すでに、おのれに正伝するとき、すみやかに本分人なり。
+
+    人、舟にのりてゆくに、目をめぐらして、きしをみれば、きしのうつる、とあやまる。
+
+    めをしたしく、ふねにつくれば、ふねのすすむをしるがごとく、身心を乱想して万法を弁肯するには、自心自性は常住なるか？　とあやまる。
+
+    もし行李をしたしくして箇裏に帰すれば、万法のわれにあらぬ道理あきらけし。'
+- kind: iast
+  label: Transliteration note
+  body: See Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: When you first seek the dharma, you are far from its environs. When the dharma is correctly transmitted
+    to you, you are immediately your original person. When you ride a boat and look at the shore, you
+    may mistakenly think the shore is moving. But when you keep your eyes closely on the boat, you know
+    the boat moves. Likewise, when you confuse body and mind and discern the myriad dharmas, you mistakenly
+    think mind and nature are permanent. If you practice intimately and return here, the truth that the
+    myriad dharmas are without self is clear.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Seeking begins as distance; transmission collapses distance into original person. The boat image
+    diagnoses projection: permanence attributed to mind is often the shore illusion. Existentially: where
+    are you calling the world unstable while treating your viewpoint as fixed land?
+
+
+    Key Terms
+
+
+    **本分人** — "original person." What you are when dharma is transmitted, not manufactured.
+
+
+    **常住** — "permanence." The error of attributing fixity to self while seeing flux only outside.
+
+
+    Cross-Tradition Resonances
+
+
+    **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality
+    of accumulation.
+
+    *Divergence:* Eckhart empties for God''s occupancy; Dōgen''s forgetting is verified by the myriad
+    dharmas.
+
+
+    **Zhuangzi (forgetting the self / useless tree):** Both loosen fixed self-measure.
+
+    *Divergence:* Zhuangzi often ends in spontaneous ease; Dōgen binds forgetting to practice-realization.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: shushō (修証)
+    definition: '‘practice-realization’ → practice and enlightenment are not two stages—doing is already
+      verification Here: *Divergence:* Zhuangzi often ends in spontaneous ease; Dōgen binds forgetting
+      to practice-realization. Trap: practice-as-means toward a later prize'
+  - term: dharma (法)
+    definition: '‘phenomenon / Buddha-dharma’ → each thing as teaching and as event of awakening Here:
+      When you first seek the dharma, you are far from its environs. Trap: doctrine-only reading'
+    lemma_id: dharma
+  - term: mushin / no-self
+    definition: '‘without self’ → myriad dharmas without a grasping self that carries them Here: If you
+      practice intimately and return here, the truth that the myriad dharmas are without self is clear.
+      Trap: personality deletion'
+    lemma_id: anatman
+  - term: uji (有時)
+    definition: '‘being-time’ → time as existential presence of each dharma, not a container clock Here:
+      Fix your gaze on your hands as you work through one ordinary task — washing, writing, cooking, or
+      moving objects — and notice the exact moment you stop perceiv… Trap: physics of time speculation'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story.
+    Then write one sentence: what verified me just now?'

@@ -93,3 +93,78 @@ abhyasa: 'Sit quietly and let a small desire come up on its own — a wish for t
   or two, several times a day, whenever a wish naturally surfaces.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: इच्छायाम् अथवा ज्ञाने जाते चित्तं निवेशयेत् । आत्मबुद्ध्यानन्यचेतास् ततस् तत्त्वार्थदर्शनम् ॥
+    ९८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: icchāyām athavā jñāne jāte cittaṃ niveśayet | ātmabuddhyānanyacetās tatas tattvārthadarśanam ||
+    98 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #70
+
+    Or, when desire and/or thought do arise, one should focus the
+
+    mind [on the energy of that desire or thought] and let
+
+    consciousness be unwavering in considering that energy as [an
+
+    essential śakti of] the Self. Then one will gain insight into the true
+
+    nature of reality. || 98'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: icchā (इच्छा)
+    definition: '√iṣ ‘wish’ → will/desire → will or desire; in Trika, the first creative power (śakti)
+      by which consciousness stirs toward manifestation → ‘desire’ as craving misses icchā-śakti: free
+      will-to-appear of consciousness'
+  - term: jñāna (ज्ञान)
+    definition: √jñā ‘know’ → knowing or cognition; the second power of consciousness, by which what is
+      willed becomes clear → ‘knowledge’ as information misses structured knowing that can contract free
+      awareness
+    lemma_id: jnana
+    sense_id: jnana.shaiva
+  - term: ananyacetāḥ (अनन्यचेताः)
+    definition: an-anya + cetas (nom. pl./adj.) → 'with the mind on nothing else' — undivided attention
+      that does not stray to the object → not mere concentration—consciousness that has no elsewhere to
+      go
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: Both texts redirect attention from content (thought, desire, mental objects) to the underlying
+      śakti or energy structure itself. Yukti 70 instructs consciousness to recognize desire-energy as
+      śakti of the Self; Tantrasara 6 teaches recognizing Śakti in the entire architecture of experience—a
+      shift from what arises to the power that animates arising.
+    divergence: Yukti 70 emphasizes unwavering focus on the knower's perspective; Tantrasara frames this
+      as learning to recognize Śakti architecturally across all experience, a more systemic epistemology.
+    passage_id: tantrasara.ts_014
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: 'Both employ a paradox of attention: clarity emerges not by suppressing or ignoring content,
+      but by ardent, focused engagement with it from a shifted vantage. Yukti 70 focuses mind on desire-energy
+      itself; Spandakarika describes the sacred tremor appearing through ardent striving—attention intensified
+      reveals what was obscured.'
+    divergence: Yukti 70 locates the shift inward (to the knower); Spandakarika locates it in the object
+      of perception itself (the tremor), though both converge on non-dual recognition.
+    passage_id: yoga_spandakarika.sp_36
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: 'Both use a spatial or structural metaphor to describe consciousness beyond fixation: mind
+      has no center or circumference (Tilopa); Yukti 70''s unwavering consciousness recognizes śakti as
+      Self-energy, not as bounded content. Both dissolve the subject-object boundary through attention.'
+    divergence: Tilopa emphasizes the open, unbounded nature of mind itself; Yukti 70 emphasizes the energetic
+      recognition of desire-thought as śakti, maintaining a non-dual but still phenomenologically engaged
+      stance.
+    passage_id: tilopa_mahamudra.til_002
+  layer_provenance: generated_grounded

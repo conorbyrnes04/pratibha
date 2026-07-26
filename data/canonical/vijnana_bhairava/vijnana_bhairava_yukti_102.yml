@@ -84,3 +84,74 @@ abhyasa: 'Sit and begin repeating the word ''Bhairava'' slowly, aloud or under t
   gently resume the continuous utterance.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: भया सर्वं रवयति सर्वदो व्यापकोऽखिले । इति भैरवशब्दस्य सन्ततोच्चारणाच् छिवः ॥ १३० ॥
+  layer_provenance: sourced
+- kind: iast
+  body: bhayā sarvaṃ ravayati sarvado vyāpako'khile | iti bhairavaśabdasya santatoccāraṇāc chivaḥ || 130
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #102
+
+    One who constantly utters (uccāra.na) the word ‘Bhairava’,
+
+    understanding that it means “That which supports (BH.R) everything,
+
+    that which produces (RAc) everything, which grants all [blessings] and
+
+    pervades (VyĀp) the whole”, becomes Śiva. || 130'
+- kind: commentary
+  label: Pratibha Commentary
+  body: This line points to a deeper order that is received through attentive listening rather than conceptual
+    noise.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: uccāraṇa (उच्चारण)
+    definition: ud- + √car → enunciation/upward movement → the utterance or 'rising up' of a mantra, spanning
+      audible sound to inner vibration → ‘pronunciation’ alone misses uccāra as upward life-movement of
+      mantra/breath
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle self-vibration of consciousness underlying all sound
+      and movement → ‘vibration/energy’ physicalizes or New-Ages the throb of consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: Bhairava (भैरव)
+    definition: 'Trika absolute: terrifyingly free consciousness → here, the name of ultimate consciousness
+      itself — that which sustains, gives forth, and pervades all things → not a sectarian deity-badge—the
+      very form of awareness the practice discloses'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Svetasvatara Upanishad — Cutting the Cords of Death
+    resonance: Both texts identify a supreme principle through its cosmological functions—supporting,
+      governing, and pervading all existence—and posit that recognizing this principle (through discernment
+      in Svetasvatara, through utterance in Bhairava) grants liberation or peace.
+    divergence: Svetasvatara emphasizes discernment of the Lord as giver of grace leading to peace; Bhairava
+      emphasizes constant utterance and semantic understanding of the name as the path to becoming Śiva,
+      collapsing subject-object distinction.
+    passage_id: svetasvatara_upanishad.svu_020
+  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
+    resonance: 'Both passages locate knowledge through a reversal of ordinary perception: Chāndogya teaches
+      hearing the inaudible and knowing the unknowable through unity-recognition; Bhairava teaches that
+      attentive listening (not conceptual noise) receives a deeper order encoded in the name''s semantic
+      layers.'
+    divergence: Chāndogya grounds this reversal in non-dual metaphysics (all things are one Brahman);
+      Bhairava grounds it in the phonetic-semantic structure of the mantra itself as a vehicle for recognition
+      of Śiva's functions.
+    passage_id: chāndogya_upaniṣad.chu_vi_01
+  - citation: Heraclitus Fragments — Fragment 2
+    resonance: Both texts posit a universal principle (Logos, Bhairava) that is always present yet requires
+      active attentive engagement to be recognized; mere hearing or utterance without understanding leaves
+      one unaware.
+    divergence: Heraclitus emphasizes the paradox of universal presence despite human inattention; Bhairava
+      emphasizes that semantic understanding of the utterance itself becomes the means of transformation
+      into Śiva.
+    passage_id: heraclitus_fragments.hfr_p002
+  layer_provenance: generated_grounded

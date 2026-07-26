@@ -83,3 +83,72 @@ abhyasa: 'Sit comfortably and close your eyes. First, get a clear felt sense of 
   its coordinates, simply repeat the simultaneous release on the next exhale.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: पृष्टशून्यं मूलशून्यं युगपद् भावयेच् च यः । शरीरनिरपेक्षिण्या शक्त्या शून्यमना भवेत् ॥ ४४ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: pṛṣṭaśūnyaṃ mūlaśūnyaṃ yugapad bhāvayec ca yaḥ | śarīranirapekṣiṇyā śaktyā śūnyamanā bhavet ||
+    44 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #19
+
+    One may contemplate the space above [at the crown of the
+
+    head] and the space in the root [of the body] simultaneously.
+
+
+    Through the Power that is independent of the body, one’s mind
+
+    will become empty & spacious. || 44'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śūnya (शून्य)
+    definition: śūnya ‘empty/void’ → void or emptiness; here an emptied region of the body-field used
+      as a meditative entry point → English ‘void’ suggests blank vacancy; here a threshold that can disclose
+      knowing
+    lemma_id: sunya
+    sense_id: sunya.shaiva
+  - term: śakti (शक्ति)
+    definition: √śak ‘be able’ → power/capacity → the animating power of awareness; here acting 'indifferent
+      to the body,' independent of physical support → ‘energy/empowerment’ misses Śiva’s own capacity
+      to appear, know, and act as world
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  - term: yugapad (युगपद्)
+    definition: yuga ‘yoke’ + pad → simultaneously → simultaneously, all at once — the crucial instruction
+      to dissolve both loci in the same instant → ‘at once’ misses technical simultaneity (vs sequential
+      krama)
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: 'Both texts make attention itself the operative mechanism: Yukti 19 returns awareness to
+      the knower (the witnessing subject) rather than content, while Bhagavad Gita 10 describes yoga as
+      iterative return of attention from dispersion to center. In both, the *movement* of attention—not
+      a state achieved—is the practice.'
+    divergence: Yukti 19 uses spatial simultaneity (crown and root) as the method to collapse subject-object
+      duality, while Gita 10 emphasizes temporal rhythm and habituation; Bhairava is non-dual, Gita remains
+      dualistic (self and center).
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Tilopa Mahamudra — Mind Is Like the Open Sky
+    resonance: 'Both texts use spatial negation to point toward the nature of consciousness itself: Yukti
+      19 contemplates ''space'' (śūnya) at crown and root as a way to access the knower beyond form, while
+      Tilopa describes mind as spacious, without center or circumference—both dissolving localization
+      to reveal boundless awareness.'
+    divergence: Yukti 19 uses dual spatial anchors (crown-root polarity) to generate non-dual insight,
+      while Tilopa uses the single metaphor of open sky; Bhairava remains embodied and tantric, Mahamudra
+      is more purely phenomenological.
+    passage_id: tilopa_mahamudra.til_002
+  layer_provenance: generated_grounded

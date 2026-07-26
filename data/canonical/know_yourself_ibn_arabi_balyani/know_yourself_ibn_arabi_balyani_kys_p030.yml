@@ -105,3 +105,61 @@ abhyasa: 'The next time you try to quiet or erase your ego—straining to make t
   if it was never there to begin with? Let the striving fall slack, not because the self ceased, but because
   there was never a self to cease.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: If you know yourself without existing and passing away, then you know God, and if not, then not.
+    By making the knowledge of God dependent on the passing away of your existence and the passing away
+    of that passing away, there is an affirmation of something other than God.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away, evanescence’ → passing-away of the egoic claim before the
+      Real Here: Knowing God Through Annihilation of Self Pearl #30 If you know yourself without existing
+      and passing away, then you know God, and if not, then not. Trap: self-erasure as quietism or dissociation
+      rather than clearing of false independence'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: nafs (نفس)
+    definition: '‘self/soul/breath’ → the claiming self that must be known so its independence can be
+      seen through Here: Knowing God Through Annihilation of Self Pearl #30 If you know yourself without
+      existing and passing away, then you know God, and if not, then not. Trap: psychologizing as ego-therapy
+      without ontological stakes'
+  - term: wujūd (وجود)
+    definition: 'Arabic wujūd ‘finding/being found; existence’ → being as what is found in God alone;
+      creatures have no independent wujūd Here: By making the knowledge of God dependent on the passing
+      away of your existence and the passing away of that passing away, there is an affirmation of something…
+      Trap: treating ‘existence’ as a neutral metaphysical predicate shared equally by God and world'
+  - term: shirk (شرك)
+    definition: '‘association/partnership’ → ascribing independent power or being to what is other-than-God
+      Trap: narrowing to idol-worship while missing subtle self-ascription of agency'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 7
+    resonance: 'Both texts locate knowledge in a reorientation of attention away from external objects
+      toward an inner principle that is always present but obscured by habitual perception. The move is
+      identical: turn inward, and what was hidden becomes known.'
+    divergence: Ibn Arabi grounds this inward turn in the paradox of self-knowledge without ontological
+      persistence (fana), while Plotinus grounds it in the soul's continuous intelligible activity that
+      sense-perception merely obscures.
+    passage_id: plotinus_enneads.enn_vi_9_07
+  - citation: Siva Sutra — Śāktopāya
+    resonance: 'Both texts collapse the distinction between attention and knowledge: sustained or focused
+      attention is itself the act of knowing, not a means to it. The knower and the knowing are unified
+      through the quality of attention itself.'
+    divergence: The Siva Sutra formulates this as a metaphysical principle of consciousness (Śāktopāya),
+      while Ibn Arabi frames it as a paradoxical condition of self-annihilation (fana) that reveals divine
+      knowledge.
+    passage_id: siva_sutra.ss_ii_12
+  layer_provenance: generated_grounded

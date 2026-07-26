@@ -94,3 +94,71 @@ abhyasa: Find a source of broken, moving light. Late-afternoon sun coming throug
   with no separate object is what the verse points to. Five to ten minutes is enough.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: तेजसा सूर्यदीपादेर् आकाशे शबलीकृते । दृष्टिर् निवेश्या तत्रैव स्वात्मरूपम् प्रकाशते ॥ ७६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: tejasā sūryadīpāder ākāśe śabalīkṛte | dṛṣṭir niveśyā tatraiva svātmarūpam prakāśate || 76 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #48
+
+    Let the gaze come to rest on a space that is dappled with the
+
+    light of the sun or a lamp or suchlike; in that very [experience],
+
+    the nature of one’s innate being may manifest. || 76'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śabala (शबल)
+    definition: śabala ‘variegated/mottled’ → variegated, mottled, dappled — light broken into flecks
+      and shifting patches rather than an even glow → ‘mixed’ understates mottled appearance veiling the
+      simple Real
+  - term: prakāśa (प्रकाश)
+    definition: pra- + √kāś ‘shine forth’ → the self-luminous shining that is the very nature of consciousness;
+      here met in outer light and recognized as one's own → ‘light’ as glow/mood misses the condition
+      under which anything appears
+    lemma_id: prakasa
+    sense_id: prakasa.shaiva
+  - term: svātmarūpa (स्वात्मरूप)
+    definition: sva-ātman + rūpa ‘form’ → the form or essential nature of one's own Self, which the practice
+      reveals → ‘form of the Self’—appearance as one’s own Self, not a body-image
+    lemma_id: atman
+    sense_id: atman.shaiva
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — The Heart-Lotus Opened by the Guru’s Light
+    resonance: Both texts use luminous external phenomena (dappled light / guru's sun-rays) as a direct
+      catalyst for inner recognition or opening; the sensory object becomes transparent to consciousness
+      without interpretive mediation.
+    divergence: Vijnana Bhairava treats the light-object as self-disclosing innate being through spontaneous
+      gaze; Tantrasara frames it as guru-transmitted grace melting resistance, emphasizing the teacher's
+      role.
+    passage_id: tantrasara.ts_003
+  - citation: Astavakra Gita — Verse 1.12
+    resonance: Both identify consciousness as the witnessing principle that remains unchanged and all-pervading
+      while phenomena (including the gaze and its object) arise within it; recognition occurs through
+      this witnessing stance.
+    divergence: Astavakra Gita emphasizes the Self's absolute inactivity and freedom from all content;
+      Vijnana Bhairava uses the active gaze-pause as the method to disclose this witnessing nature.
+    passage_id: astavakra_gita.asg_1_12
+  - citation: Pratyabhijnahrdayam — Sutra 11
+    resonance: Both invoke 'self-recognition' (pratyabhijna / recognition of innate being) as a distinct
+      function or movement within consciousness; the insight arises not through effort but through a specific
+      contemplative orientation.
+    divergence: Pratyabhijnahrdayam systematizes recognition as one of five cosmic functions; Vijnana
+      Bhairava presents it as spontaneous manifestation through a simple sensory pause.
+    passage_id: pratyabhijnahrdayam.phr_011
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

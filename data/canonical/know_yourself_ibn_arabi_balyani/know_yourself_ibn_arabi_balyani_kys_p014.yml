@@ -96,3 +96,60 @@ abhyasa: 'Repeat under your breath through the day the line ''you are not you: y
   interrupt each moment you feel most solidly yourself. Do not try to erase the ''you'' — simply let the
   phrase remind you there was never a separate self there to erase.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: translation
+  label: Pratibha Translation
+  body: There is no difference between the sender, that which is sent and the one to whom it is sent.
+    The very existence of the prophetic message is His existence. There is no existence to any other who
+    could pass away, or have a name or be named. Because of this, the Prophet, God bless him and give
+    him peace, said, Whoever knows their self, knows their Lord.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away, evanescence’ → passing-away of the egoic claim before the
+      Real Here: There is no existence to any other who could pass away, or have a name or be named. Trap:
+      self-erasure as quietism or dissociation rather than clearing of false independence'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: wujūd (وجود)
+    definition: 'Arabic wujūd ‘finding/being found; existence’ → being as what is found in God alone;
+      creatures have no independent wujūd Here: The very existence of the prophetic message is His existence.
+      Trap: treating ‘existence’ as a neutral metaphysical predicate shared equally by God and world'
+  - term: nafs (نفس)
+    definition: '‘self/soul/breath’ → the claiming self that must be known so its independence can be
+      seen through Here: Repeat under your breath through the day the line ''you are not you: you are
+      He,'' letting it interrupt each moment you feel most solidly yourself. Trap: psychologizing as ego-therapy
+      without ontological stakes'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both texts locate the problem of self-knowledge in a misdirection of attention: the soul/self
+      continuously acts or manifests, but remains unrecognized because awareness is absorbed in external
+      content (sense-experiences, passing phenomena). Clarity requires redirecting attention inward to
+      the source itself.'
+    divergence: Plotinus frames this as a perceptual blindness within a hierarchical emanationist cosmos;
+      Ibn Arabi's formulation collapses the distinction between knower, knowing, and known into radical
+      non-duality, making the inward turn a dissolution of subject-object structure rather than a reorientation
+      within it.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: 'Vijnana Bhairava — Yukti #61'
+    resonance: 'Both passages point to a recognition that occurs when attention ceases to track multiplicity
+      and returns to undifferentiated ground: the Self manifests in the Void precisely as the collapse
+      of sender-sent-receiver distinctions; nonduality reveals itself when the apparatus of differentiation
+      is suspended.'
+    divergence: The Vijnana Bhairava frames this as entry into a phenomenological state (the Void); Ibn
+      Arabi's formulation is more radically metaphysical—it asserts an ontological non-difference that
+      was always already the case, not a state to be entered.
+    passage_id: vijnana_bhairava.yukti_061
+  layer_provenance: generated_grounded

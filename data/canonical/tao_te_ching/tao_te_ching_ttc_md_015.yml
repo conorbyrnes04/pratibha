@@ -94,3 +94,93 @@ abhyasa: 'Notice one place today where you are being rigid — a fixed opinion y
   on top.'
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 人之生也柔弱，其死也堅強。萬物草木之生也柔脆，其死也枯槁。故堅強者死之徒，柔弱者生之徒。是以兵強則滅，木強則共。強大處下，柔弱處上。
+- kind: translation
+  label: Pratibha Translation
+  body: 'In life, people are supple and weak;
+
+    in death, hard and strong.
+
+    Living grasses and trees are tender and fragile;
+
+    dead, they are withered and dry.
+
+
+    Therefore: the hard and strong belong to death''s company;
+
+    the soft and weak belong to life''s company.
+
+
+    An army that will not yield — perishes;
+
+    a tree too hard — is felled.
+
+
+    The hard and great take the lower place;
+
+    the soft and weak take the higher place.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'chapter 76 (living is soft, death is hard) pairs with chapter 78 (water overcomes hardness; true
+    words seem backward) as the biological proof of water''s politics: vitality is softness that can bend;
+    death is rigidity. The inversion at the close — soft "above," hard "below" — repeats chapter 8''s
+    low-place wisdom: what appears superior (hardness, force) is ontologically downstream from what lives.
+
+
+    This is not counsel to be weak in a moralizing sense but diagnosis of life-process. Rigidity is already
+    the beginning of death. The army and tree examples ground the claim in observable catastrophe when
+    yielding is refused.
+
+
+    Key Terms:
+
+
+    **róu ruò 柔弱** — soft and weak — markers of living process (linked to chapter 78 (water overcomes
+    hardness; true words seem backward)).
+
+
+    **kū gǎo 枯槁** — withered, dried up — death-state of plants; image of post-vital rigidity.
+
+
+    **sǐ zhī tú 死之徒** — companions of death — those aligned with rigidity''s trajectory.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: róu (柔)
+    definition: '柔 ‘soft/supple’ -> in “Living Soft, Dead Hard”: In life, people are supple and weak;
+      in death, hard and strong. -> not weakness as failure; yielding strength that outlasts the hard'
+  - term: wànwù (萬物)
+    definition: '萬 ‘myriad’ + 物 ‘things’ -> in “Living Soft, Dead Hard”: all living beings and phenomena
+      of the natural world -> not a zoo inventory; the whole differentiated field born once naming divides'
+  - term: qiáng (強)
+    definition: '強 ‘strong/forceful’ -> in “Living Soft, Dead Hard”: In life, people are supple and weak;
+      in death, hard and strong. -> not virtue of dominance; often the stiff strength that dies first,
+      opposite of living soft'
+  - term: ruò (弱)
+    definition: '弱 ‘weak/pliant’ -> in “Living Soft, Dead Hard”: In life, people are supple and weak;
+      in death, hard and strong. -> not pathetic frailty; strategic pliancy aligned with water’s way'
+  - term: róu ruò (柔弱)
+    definition: 'source-term róu ruò -> in “Living Soft, Dead Hard”: markers of living process (linked
+      to chapter 78 (water overcomes hardness -> default English flattens the technical work this term
+      does here'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tao Te Ching chapter 78 (water overcomes hardness; true words seem backward)
+    resonance: water overcomes rock; soft overcomes hard.
+    divergence: political paradox vs biological demonstration.
+    passage_id: tao_te_ching.ttc_md_078
+  - citation: Yoga *hatha* principle
+    resonance: supple body, alive breath; stiffness as blockage.
+    divergence: somatic technology vs classical aphorism. **Jesus, "unless you become like children."
+      *Divergence:* kingdom ethics vs impersonal life-process observation.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Scan the body for one held tension (jaw, shoulders, belly). Soften it deliberately without collapsing
+    posture. Ask: where am I choosing hardness where life wants supple response?'

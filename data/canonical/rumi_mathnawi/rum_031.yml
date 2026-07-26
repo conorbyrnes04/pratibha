@@ -88,3 +88,24 @@ abhyasa: 'Today, notice one moment when you feel the impulse to correct someone,
   — the thing I have never learned to survive?" Let the silence humble you rather than the other person.'
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: fanāʾ (فناء)
+    definition: 'Arabic fanāʾ ‘passing away’ → ego’s claim burned so only the Beloved’s life remains in
+      speech and act Here: The Grammarian and the Boatman The Grammarian and the Boatman آن یکی نحوی به
+      کشتی در نشست /// رو به کشتیبان نهاد آن خودپرست گفت هیچ از نحو خواندی گفت لا /// گف… Trap: nihilistic
+      self-destruction'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: dil (دل)
+    definition: 'Persian ‘heart’ → the organ of mystical perception and wound; site where longing becomes
+      knowing Here: The Grammarian and the Boatman The Grammarian and the Boatman آن یکی نحوی به کشتی
+      در نشست /// رو به کشتیبان نهاد آن خودپرست گفت هیچ از نحو خواندی گفت لا /// گف… Trap: cardiac sentimentality'
+  - term: rūḥ (روح)
+    definition: '‘spirit’ → the living breath that remembers God and suffers exile in form Here: This
+      is adab, spiritual restraint — he does not repay arrogance with argument. Trap: ghostly ‘spirit’
+      without ethical/ontological force'
+    lemma_id: psyche
+  layer_provenance: editorial-enriched

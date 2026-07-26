@@ -109,3 +109,93 @@ abhyasa: 'When you reach for an explanation you cannot fully see—mid-sentence,
 translation_provenance: Rendered from the public-domain source (Tibetan (Uchen script)). Study rendering;
   not a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '*Source-language basis:* Tibetan not line-aligned in this pass; body follows Evans-Wentz / Dawa-Samdup
+    English.'
+- kind: iast
+  label: IAST
+  body: See Key Terms (Wylie / Sanskritized) in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: In the celestial palaces of the gods of Tuṣita, spiritual truths are not prized — scientific truths
+    are. In the nāga realms below, profound truths are not prized — riches are. In this human world, the
+    wise and learned are not prized — liars are. In Ü, Tsang, and the four districts, meditation is not
+    prized — exposition is. In these dreg-like remainder times of darkness, good men are not prized —
+    the wicked are.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Milarepa maps value-inversion across realms: each domain has a preferred currency that displaces
+    truth. Gods prize the scientific over the spiritual; nāgas prize riches over profundity; humans prize
+    liars over the wise. Tibet''s own religious culture is not exempt — exposition over meditation — and
+    late times prize the wicked over the good. The contested move is to treat market preference as diagnosis,
+    not fate. Satire becomes a practice instruction: if your culture pays for talk, you will starve meditation
+    unless you deliberately reverse payment. Existentially: name the currency your circle pays for, and
+    what it quietly demotes. Then notice where you yourself have begun to sell the demoted good for applause.
+    The song does not ask you to hate the market; it asks you to stop mistaking its prices for reality.
+    The passage asks for recognition before consolation. The passage asks for recognition before consolation.
+    The passage asks for recognition before consolation.
+
+
+    Key Terms
+
+
+    **exposition (bshad)** — talk about Dharma displacing practice.
+
+
+    **meditation (sgom)** — the demoted good in late times.
+
+
+    **snyigs ma''i dus** — degenerate/dreg-age as moral climate, not calendar fatalism.
+
+
+    Cross-Tradition Resonances
+
+
+    **Laozi, *Dao De Jing* 18–20:** Both diagnose cultures that reward the wrong virtues.
+
+    *Divergence:* Laozi withdraws into uncarved simplicity; Milarepa stays a singing critic inside the
+    market.
+
+
+    **Plato, *Republic* 8–9 (timocracy to tyranny):** Both track cascading value-degradation.
+
+    *Divergence:* Plato offers constitutional typology; Milarepa offers realm-by-realm satire ending in
+    practice.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: exposition (bshad)
+    definition: talk about Dharma displacing practice.
+  - term: meditation (sgom)
+    definition: the demoted good in late times.
+  - term: snyigs ma'i dus
+    definition: degenerate/dreg-age as moral climate, not calendar fatalism.
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: List three things your community applauds. Mark which one most often replaces quiet integrity.
+    Refuse one applause-bid today.
+- kind: appendix
+  label: Public-domain anchor
+  body: 'In the Palaces Celestial of the Gahdan Gods,!
+
+    Truths Spiritual are prized not, but Truths Scientific are ;
+
+    In the Regions Lower, in the Naga’s Palaced City,
+
+    Truths Profound and Deep are prized not, but Riches are ;?
+
+    In this World of Human Beings,
+
+    The Wise and Learned are not prized, but Liars are.
+
+
+    In the Provinces of U and Tsang and the Four Districts,
+
+    Meditation is not prized, but Exposition is ;
+
+    In the dreg-like remainder of these evil times [of Darkness],
+
+    Good men are not prized, but the wicked are.'

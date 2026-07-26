@@ -87,3 +87,34 @@ abhyasa: 'Stop mid-action the next time you feel yourself pushing hard against r
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: cháng (常)
+    definition: '常 ‘constant/enduring’ -> in “The Paradox of Mortal Authority”: When people do not fear
+      death, how can you threaten them with death? -> not theological eternity with start/stop brackets
+      — what persists through change without being used up'
+  - term: yǒu (有)
+    definition: '有 ‘there-is / having’ -> in “The Paradox of Mortal Authority”: When people do not fear
+      death, how can you threaten them with death? -> not mere possession; the named/manifest pole that
+      co-arises with wú'
+  - term: wúwéi (無為)
+    definition: '無 ‘without’ + 為 ‘doing/making/deeming’ -> in “The Paradox of Mortal Authority”: alignment
+      with the grain of things rather than imposition of will -> not laziness or zero activity — skilled
+      non-imposition that leaves nothing undone'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: dào (道)
+    definition: '道 ‘path/way; to speak/lead’ -> in “The Paradox of Mortal Authority”: The way, the underlying
+      order or principle that moves through all things -> not a deity named Tao or a lifestyle brand —
+      source-and-course that resists full naming'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: dé (德)
+    definition: '德 ‘virtue/potency/accrued power’ -> in “The Paradox of Mortal Authority”: the manifestation
+      of dào in the world -> not Victorian moralism — a thing’s unforced efficacy when it accords with
+      dào'
+    lemma_id: de
+    sense_id: de.daoist
+  layer_provenance: editorial-enriched

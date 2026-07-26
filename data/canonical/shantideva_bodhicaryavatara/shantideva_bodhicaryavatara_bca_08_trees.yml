@@ -104,3 +104,101 @@ abhyasa: Choose a single tree and sit with it for ten minutes daily for a week. 
   without needing praise and leaving without fearing blame.
 translation_provenance: Rendered from the public-domain Sanskrit (GRETIL, BCA 8.26,8.27,8.28,8.29,8.33).
   Study rendering.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Dhyāna-pāramitā chapter). English
+    anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
+- kind: iast
+  label: IAST
+  body: 'Key terms in IAST: *vana* (forest), *viveka* (solitude/discernment), *araṇya* (wilderness, hermitage),
+    *aparigraha* (non-possession), *ekākin* (alone, solitary).'
+- kind: translation
+  label: Pratibha Translation
+  body: Trees hold no scorn and demand no wearying courtship—gladly would I keep company with such gentle
+    friends! Gladly would I live in some abandoned shrine, beneath a tree or in a cave, free to walk without
+    care and never glance behind. Gladly would I dwell in nature's own wide and ownerless country, a homeless
+    wanderer with nothing to defend. Alone we are born and alone we die; no one else can take a share
+    of our sorrow.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This is Śāntideva''s love song to the forest, and its argument is carried by an unexpected comparison:
+    trees make better companions than people because they are free of the two afflictions that poison
+    human company—scorn and neediness. "They ask for no toilsome wooing": relationship with the natural
+    world imposes no economy of flattery, status, and reciprocal demand. The counterintuitive claim beneath
+    the lyricism is that solitude is not deprivation of company but exchange of one kind of company for
+    a cleaner kind. The phrase "lordless lands" (*a-svāmika*, ownerless) is doctrinally loaded: in the
+    wilderness the whole machinery of possession and territory, and the anxious self that runs it, has
+    nothing to grip. And the closing line refuses romantic consolation—"alone man is born, alone he dies"—not
+    as nihilistic despair but as sober realism that dissolves the fantasy that others can carry our existential
+    weight. For the Mahāyāna this is not misanthropy; the same Śāntideva who flees people here will, a
+    few verses later, take all beings as his own self. The solitude is instrumental: one withdraws from
+    the transactional crowd precisely in order to cultivate the boundless compassion that transactional
+    life makes impossible. Retreat, then, is not rejection of others but preparation to love them without
+    the distortions of need.
+
+
+    Key Terms:
+
+
+    **viveka (विवेक)** — Etymology: from *vi-√vic*, "to separate, discern." Both physical solitude and
+    the discernment it fosters; the double meaning is deliberate—outer seclusion serves inner discrimination.
+
+    **araṇya (अरण्य)** — Etymology: "wilderness, forest," the classic Indian site of renunciant practice.
+    Barnett''s "deserted sanctuary" and "lordless lands" render its ownerless, uncultivated freedom.
+
+    **aparigraha (अपरिग्रह)** — Etymology: *a-* (non) + *parigraha* (grasping, possession): "non-possessiveness."
+    The "homeless wanderer free of will" embodies it—nothing owned, nothing to guard.
+
+    **ekākin / eka (एकाकिन्)** — Etymology: from *eka*, "one, alone." The stark truth of solitary birth
+    and death that undercuts reliance on others to bear one''s sorrow.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: viveka (विवेक)
+    definition: 'Etymology: from *vi-√vic*, "to separate, discern." Both physical solitude and the discernment
+      it fosters; the double meaning is deliberate—outer seclusion serves inner discrimination.'
+  - term: araṇya (अरण्य)
+    definition: 'Etymology: "wilderness, forest," the classic Indian site of renunciant practice. Barnett''s
+      "deserted sanctuary" and "lordless lands" render its ownerless, uncultivated freedom.'
+  - term: aparigraha (अपरिग्रह)
+    definition: 'Etymology: *a-* (non) + *parigraha* (grasping, possession): "non-possessiveness." The
+      "homeless wanderer free of will" embodies it—nothing owned, nothing to guard.'
+  - term: ekākin / eka (एकाकिन्)
+    definition: 'Etymology: from *eka*, "one, alone." The stark truth of solitary birth and death that
+      undercuts reliance on others to bear one''s sorrow.'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Milarepa, Songs of the Caves (the five comforts; the yogin who prefers the mountain to the
+      crowd)
+    resonance: near-identical Tibetan inheritance—the practitioner extols wilderness solitude as superior
+      to human society.
+    divergence: Milarepa's solitude is fierce tantric asceticism under a guru's command; Śāntideva's is
+      a gentler, argued preference within monastic Mahāyāna.
+    passage_id: ''
+  - citation: Thoreau, Walden ("I never found the companion that was so companionable as solitude")
+    resonance: the forest as a purer society than the human marketplace.
+    divergence: Thoreau seeks self-reliant authenticity; Śāntideva seeks the emptying of self that enables
+      universal compassion.
+    passage_id: ''
+  - citation: Zhuangzi, the useless tree (Book 1)
+    resonance: the tree flourishes precisely because it stands outside human demand and utility.
+    divergence: Zhuangzi prizes uselessness as spontaneous accord with the Dao; Śāntideva prizes the forest
+      as a disciplined means to bodhisattva insight.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Go to the least "useful" natural thing near you—a tree, a patch of sky, a stone. Spend five minutes
+    in its company making no demand of it and offering no performance. Notice how it neither scorns nor
+    needs you. Let that undemanding companionship show you, by contrast, one way you habitually seek approval,
+    and set that seeking down for the rest of the day.
+- kind: appendix
+  label: Public-domain anchor (Barnett 1909)
+  body: Trees are not disdainful, and ask for no toilsome wooing; fain would I consort with those sweet
+    companions! Fain would I dwell in some deserted sanctuary, beneath a tree or in caves, that I might
+    walk without heed, looking never behind! Fain would I abide in nature's own spacious and lordless
+    lands, a homeless wanderer free of will. Alone man is born, alone he dies; no other has a share in
+    his sorrows.

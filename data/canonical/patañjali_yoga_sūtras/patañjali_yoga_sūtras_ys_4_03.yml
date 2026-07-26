@@ -115,3 +115,93 @@ abhyasa: '**Barrier-Sensing Breath (5–10 minutes daily):**
   system the difference between striving and allowing.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: निमित्तं अप्रयोजकं प्रकृतीनां वरणभेदस तु ततः क्षेत्रिकवत्
+- kind: iast
+  label: IAST
+  body: nimittam aprayojakaṃ prakṛtīnāṃ varaṇabhedas tu tataḥ kṣetrikavat
+- kind: translation
+  label: Pratibha Translation
+  body: The cause is not a useless factor of nature; the differences in its description are, therefore,
+    like a field.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The passage asserts that the causal factor of evolution is not an extraneous or futile element
+    of prakṛti, but rather that the distinctions we observe in nature are merely the field‑like manifestations
+    of that same causal principle. This is a decisive move in the Yoga‑Sāṃkhya dialogue: Patañjali denies
+    that the causal factor is a separate, ineffable principle (iśvara) and instead grounds it within prakṛti
+    itself, thereby preserving the dualism of puruṣa and prakṛti while keeping the causal chain internal.
+    The analogy of the farmer removing obstacles from a watercourse is not a mere illustration; it is
+    a philosophical claim that liberation (kaivalya) is achieved by clearing the mental impediments that
+    block the natural flow of consciousness, not by introducing a new external force. In the Sāṃkhya framework,
+    the field (kṣetra) is the arena where prakṛti’s intrinsic tendencies play out; the farmer’s action
+    is the yogic practice (prāṇāyāma, dhāraṇā) that removes vṛtti, allowing citta to return to its original,
+    unaltered state. This view has existential import: it suggests that one’s own effort, guided by a
+    teacher, is sufficient to restore the natural order, echoing the Satchidananda metaphor of the farmer
+    and the water. The passage thus reaffirms the Yoga school’s commitment to self‑effort and the internalization
+    of causality, while still acknowledging the necessity of removing obstacles to realize the true nature
+    of the self.
+
+
+    Key Terms
+
+
+    **nimitta (निमित्त)** — nimitta: from nim+itta ‘to cause’; in Sāṃkhya, the causal factor of evolution;
+    here it is affirmed as inherent to prakṛti, not an external iśvara
+
+
+    **aprāyōjaka (अप्रयोजक)** — aprāyōjaka: ‘not useful’; traditionally applied to the impersonal iśvara,
+    but Patañjali reclaims it to describe the causal factor that is not a useless external force
+
+
+    **kṣetra (क्षेत्र)** — kṣetra: ‘field’; in Sāṃkhya, the arena of prakṛti’s activity; here it is used
+    metaphorically to describe the mental field that must be cleared for consciousness to flow
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 4.3, Patañjali:** Both the Sūtra and the Sāṃkhya Nyāya treat the causal factor as internal
+    to prakṛti, using the field analogy to explain the flow of consciousness
+
+    *Divergence:* Unlike Nyāya’s emphasis on epistemic inference, Patañjali focuses on experiential clearing
+    of obstacles, underscoring praxis over theory
+
+
+    **Samkhya Karika 1.2, Kapila:** Kapila’s Karika also speaks of the field (kṣetra) as the site of prakṛti’s
+    activity
+
+    *Divergence:* Kapila does not explicitly link the field to the removal of obstacles; Patañjali’s use
+    of the farmer metaphor introduces a pedagogical dimension absent in Kapila'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: prakṛti (प्रकृति)
+    definition: 'pra-√kṛ ‘bring forth’ → productive nature/matter -> in “Obstacles and Flow”: the dynamic
+      principle of manifestation in Sāṃkhya -> not pastoral ‘Nature’; the tri-guṇa matrix generating all
+      experience including mind'
+  - term: nimitta (निमित्त)
+    definition: 'nim+itta ‘to cause’ -> in “Obstacles and Flow”: here it is affirmed as inherent to prakṛti,
+      not an external iśvara -> default English flattens the technical work this term does here'
+  - term: aprāyōjaka (अप्रयोजक)
+    definition: 'source-term aprāyōjaka -> in “Obstacles and Flow”: traditionally applied to the impersonal
+      iśvara, but Patañjali reclaims it to describe the causal factor that is not a useless external force
+      -> default English flattens the technical work this term does here'
+  - term: kṣetra (क्षेत्र)
+    definition: 'source-term kṣetra -> in “Obstacles and Flow”: here it is used metaphorically to describe
+      the mental field that must be cleared for consciousness to flow -> default English flattens the
+      technical work this term does here'
+  - term: nimittam
+    definition: 'source-term nimittam -> in “Obstacles and Flow”: in yoga, the yogi''s conscious effort
+      or intention -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Identify a mental obstacle that blocks your awareness of the present moment and remove it by consciously
+    shifting your attention to the breath.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: Incidental events do not directly cause natural evolution; they just remove the obstacles as a
+    farmer [removes the obstacles in the water course running to the field].

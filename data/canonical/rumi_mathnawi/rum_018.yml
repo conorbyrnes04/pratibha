@@ -138,3 +138,83 @@ section: I.1547–1558
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'بود بازرگانی او را طوطیی /// در قفس محبوس زیبا طوطیی
+
+    گفت طوطی را چه خواهی ارمغان /// کارمت از خطه‌ی هندوستان
+
+    گفتش آن طوطی که آن جا طوطیان /// چون ببینی کن ز حال من بیان
+
+    کان فلان طوطی که مشتاق شماست /// از قضای آسمان در حبس ماست
+
+    بر شما کرد او سلام و داد خواست /// وز شما چاره و ره ارشاد خواست
+
+    این روا باشد که من در بند سخت /// گه شما بر سبزه گاهی بر درخت
+
+    این چنین باشد وفای دوستان /// من در این حبس و شما در بوستان'
+- kind: iast
+  label: Transliteration note
+  body: Persian — see Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: 'A merchant had a beautiful parrot imprisoned in a cage. "What gift shall I bring you from India?"
+    The parrot said: when you see the parrots there, tell my state — that such-and-such a parrot, longing
+    for you, is in our prison by heaven''s decree. She sends greeting and seeks justice and a way of guidance.
+    Is it right that I am in hard bondage while you are now on green, now on trees? Is this friends''
+    loyalty — I in this prison and you in the garden?'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The soul''s cry is addressed to free birds who may have forgotten cages. The contested sting
+    is friendship that enjoys the garden while ignoring the imprisoned. Existentially: who are you free
+    with, and whom have you left narrating from a cage?
+
+
+    Key Terms
+
+
+    **قفس qafas** — cage; body/ego-confinement.
+
+
+    **طوطی ṭūṭī** — parrot; the soul that can still speak.
+
+
+    **فراق firāq** — separation; the ache that sends the message.
+
+
+    Cross-Tradition Resonances
+
+
+    **Milarepa (songs from hardship):** Both voice exile as teaching.
+
+    *Divergence:* Milarepa''s cage is often karmic ordeal he owns; Rūmī''s parrot petitions the free for
+    a method of release.
+
+
+    **Reed-flute opening (Mathnawī I):** Both are instruments of separation-speech.
+
+    *Divergence:* The reed sings ontology; the parrot requests a practical path (*rah-e irshād*).'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: firāq (فراق)
+    definition: 'Arabic/Persian ‘separation, parting’ → existential distance from origin that generates
+      yearning speech Here: separation; the ache that sends the message. Trap: romance breakup rather
+      than ontological exile from the source'
+  - term: nay / reed (نی)
+    definition: 'Persian nay ‘reed flute’ → the cut reed whose complaint is longing for the reed-bed—origin
+      remembered as wound Here: **Reed-flute opening (Mathnawī I):** Both are instruments of separation-speech.
+      Trap: sentimental music imagery without the metaphysics of separation'
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: The Caged
+      Parrot''s Message to the Free The Caged Parrot''s Message to the Free بود بازرگانی او را طوطیی ///
+      در قفس محبوس زیبا طوطیی گفت طوطی را چه خواهی ارمغان… Trap: erotic fusion fantasy without the discipline
+      of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: Write a three-line message from a caged part of yourself to a freer part (or to friends). Do not
+    fix it — just deliver the greeting and the ask for a way.

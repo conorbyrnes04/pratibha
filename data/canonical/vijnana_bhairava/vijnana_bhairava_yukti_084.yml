@@ -86,3 +86,74 @@ abhyasa: 'Choose any single object of attention — the breath at the nostrils, 
   and to stay awake in the open, unmanufactured awareness that remains once the churning has settled.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: आधारेष्व् अथवाऽशक्त्याऽज्ञानाच् चित्तलयेन वा । जातशक्तिसमावेशक्षोभान्ते भैरवं वपुः ॥ ११२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: ādhāreṣv athavā'śaktyā'jñānāc cittalayena vā | jātaśaktisamāveśakṣobhānte bhairavaṃ vapuḥ || 112
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #84
+
+    Through incapacity regarding the loci (ādhāras), or through the
+
+    dissolution of the mind due to unknowing, [then,] at the end of the
+
+    excitation of absorption in energy produced [by trying to figure it
+
+    out], Bhairava-nature [is revealed]. || 112'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ādhāra (आधार)
+    definition: ā- + √dhṛ → support/base → inner support-centers along the body's axis where breath and
+      awareness can be gathered and held → ‘support’ as prop misses the base the practice uses or relinquishes
+  - term: cittalaya (चित्तलय)
+    definition: citta + laya ‘dissolution’ → dissolution or absorption of mental activity, the settling
+      of the thinking mind into stillness → ‘mind-dissolution’ can sound blank-out; here functional mind
+      settles into source
+    lemma_id: citta
+    sense_id: citta.shaiva
+  - term: samāveśa (समावेश)
+    definition: sam- + ā- + √viś ‘enter’ → immersion/possession → immersion or absorption; here the spontaneous
+      influx of śakti that occurs when effortful grasping ceases → ‘possession’ occultizes free immersion
+      of awareness in its own fullness
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts locate realization through iterative return of attention to a stable center
+      rather than through dramatic cognitive breakthrough. Yukti 84 reveals Bhairava-nature when mental
+      excitation dissolves and attention turns inward to the knower; Bhagavad Gita describes yoga-mastery
+      as repeatedly returning attention from dispersion to center.
+    divergence: Vijnana Bhairava emphasizes the cessation of effort and unknowing as the gateway, while
+      Bhagavad Gita stresses disciplined habituation and regulated practice as the method.
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: 'Both texts paradoxically describe how striving toward the ultimate reveals it: Yukti 84
+      shows that dissolution of mental effort (unknowing) at the end of absorption-excitation reveals
+      Bhairava-nature; Yoga Spandakarika describes how ardent striving toward the supreme tremor makes
+      it appear, like an object seen more clearly through focused effort.'
+    divergence: Vijnana Bhairava frames the revelation as occurring through the *cessation* of excitation
+      and unknowing, while Yoga Spandakarika frames it as the fruit of sustained ardent striving.
+    passage_id: yoga_spandakarika.sp_36
+  - citation: Shantideva Bodhicaryavatara — Stillness Before Insight
+    resonance: Both texts identify the inward stabilization of attention as the pivot between affliction
+      and liberation. Yukti 84 turns attention from content to knower; Bodhicaryavatara warns that a scattered
+      mind lives in affliction and prescribes gathered concentration as the remedy.
+    divergence: Vijnana Bhairava emphasizes the spontaneous revelation of one's nature through this turn,
+      while Shantideva emphasizes the ethical and soteriological necessity of building energy and steadying
+      the mind against kleśa.
+    passage_id: shantideva_bodhicaryavatara.bca_08_solitude
+  layer_provenance: generated_grounded

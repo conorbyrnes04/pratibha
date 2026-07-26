@@ -7,29 +7,31 @@ unit_id: heraclitus_fragments.hfr_p087
 unit_label: Aeneas, Gaz.
 title: Aeneas, Gaz.
 unit_type: teaching_passage
-thesis: The reference to Aeneas and Theophrast places this fragment in the tradition of those who witnessed or recorded Heraclitus's
-  teaching, yet the actual saying remains obscured—a fitting condition for a thinker who claimed that most people sleep through
-  the logos they inhabit.
+thesis: The reference to Aeneas and Theophrast places this fragment in the tradition of those who witnessed
+  or recorded Heraclitus's teaching, yet the actual saying remains obscured—a fitting condition for a
+  thinker who claimed that most people sleep through the logos they inhabit.
 themes:
 - attention
 - truth
 source_excerpt: Aeneas, Gaz. Theophrast. p. 9.
 translation_literal: Aeneas, Gaz. Theophrast. p. 9.
-commentary: 'The reference to Aeneas and Theophrast places this fragment in the tradition of those who witnessed or recorded
-  Heraclitus''s teaching, yet the actual saying remains obscured—a fitting condition for a thinker who claimed that most people
-  sleep through the logos they inhabit. What matters is not the lost words but the structure of transmission itself: wisdom
-  arrives fragmented, attributed, second-hand, passed through Gaz''s compilation. This mirrors Heraclitus''s own claim that
-  the logos is common (xynos) yet each person lives as though possessing private understanding. The fragment''s very incompleteness—its
-  appearance here as citation rather than direct utterance—enacts what it likely taught: that truth does not reside in the
-  thing said but in the listener''s capacity to recognize the same fire burning in different mouths. The teaching survives
-  not as doctrine but as a break, a gap that forces the reader to become active, to supply the missing word from their own
-  waking attention. To study this fragment is to study the condition of studying fragments—to notice how authority dissolves
-  and responsibility for understanding shifts entirely to the one who reads.'
+commentary: 'The reference to Aeneas and Theophrast places this fragment in the tradition of those who
+  witnessed or recorded Heraclitus''s teaching, yet the actual saying remains obscured—a fitting condition
+  for a thinker who claimed that most people sleep through the logos they inhabit. What matters is not
+  the lost words but the structure of transmission itself: wisdom arrives fragmented, attributed, second-hand,
+  passed through Gaz''s compilation. This mirrors Heraclitus''s own claim that the logos is common (xynos)
+  yet each person lives as though possessing private understanding. The fragment''s very incompleteness—its
+  appearance here as citation rather than direct utterance—enacts what it likely taught: that truth does
+  not reside in the thing said but in the listener''s capacity to recognize the same fire burning in different
+  mouths. The teaching survives not as doctrine but as a break, a gap that forces the reader to become
+  active, to supply the missing word from their own waking attention. To study this fragment is to study
+  the condition of studying fragments—to notice how authority dissolves and responsibility for understanding
+  shifts entirely to the one who reads.'
 insight: ''
-practice: 'When you encounter a teaching secondhand—in a book, from another''s mouth, in a paraphrase or translation—pause
-  before accepting or rejecting it, and ask aloud: what am I actually hearing, and from whom? Speak the name of the intermediary
-  (the translator, the friend, the source) and notice whether the teaching changes shape when you restore its actual path
-  to you.'
+practice: 'When you encounter a teaching secondhand—in a book, from another''s mouth, in a paraphrase
+  or translation—pause before accepting or rejecting it, and ask aloud: what am I actually hearing, and
+  from whom? Speak the name of the intermediary (the translator, the friend, the source) and notice whether
+  the teaching changes shape when you restore its actual path to you.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -47,40 +49,72 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The reference to Aeneas and Theophrast places this fragment in the tradition of those who witnessed or recorded Heraclitus''s
-    teaching, yet the actual saying remains obscured—a fitting condition for a thinker who claimed that most people sleep
-    through the logos they inhabit. What matters is not the lost words but the structure of transmission itself: wisdom arrives
-    fragmented, attributed, second-hand, passed through Gaz''s compilation. This mirrors Heraclitus''s own claim that the
-    logos is common (xynos) yet each person lives as though possessing private understanding. The fragment''s very incompleteness—its
-    appearance here as citation rather than direct utterance—enacts what it likely taught: that truth does not reside in the
-    thing said but in the listener''s capacity to recognize the same fire burning in different mouths. The teaching survives
-    not as doctrine but as a break, a gap that forces the reader to become active, to supply the missing word from their own
-    waking attention. To study this fragment is to study the condition of studying fragments—to notice how authority dissolves
-    and responsibility for understanding shifts entirely to the one who reads.'
+  body: 'The reference to Aeneas and Theophrast places this fragment in the tradition of those who witnessed
+    or recorded Heraclitus''s teaching, yet the actual saying remains obscured—a fitting condition for
+    a thinker who claimed that most people sleep through the logos they inhabit. What matters is not the
+    lost words but the structure of transmission itself: wisdom arrives fragmented, attributed, second-hand,
+    passed through Gaz''s compilation. This mirrors Heraclitus''s own claim that the logos is common (xynos)
+    yet each person lives as though possessing private understanding. The fragment''s very incompleteness—its
+    appearance here as citation rather than direct utterance—enacts what it likely taught: that truth
+    does not reside in the thing said but in the listener''s capacity to recognize the same fire burning
+    in different mouths. The teaching survives not as doctrine but as a break, a gap that forces the reader
+    to become active, to supply the missing word from their own waking attention. To study this fragment
+    is to study the condition of studying fragments—to notice how authority dissolves and responsibility
+    for understanding shifts entirely to the one who reads.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (aeneas, Gaz.), the shared pattern according to which all things occur — heard before it
+      is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine
+      Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: σοφόν (sophon)
+    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in
+      this passage (aeneas, Gaz.), wisdom apart from polymathy: knowing the one intelligent will that
+      steers all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
+  - term: σύνεσις (synesis)
+    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in
+      this passage (aeneas, Gaz.), understanding as holding-together what daily contact already offers
+      — not new information alone -> trap: IQ or book-learning; synesis fails when familiarity becomes
+      opacity'
+  - term: πῦρ (pyr)
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
+      (aeneas, Gaz.), world-ruling fire as measured transformation and exchange, not mythic flame alone
+      -> trap: treating fire as a static elemental substance rather than lawful becoming'
+    lemma_id: pyr
+    sense_id: pyr.heraclitean
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'When you encounter a teaching secondhand—in a book, from another''s mouth, in a paraphrase or translation—pause before
-    accepting or rejecting it, and ask aloud: what am I actually hearing, and from whom? Speak the name of the intermediary
-    (the translator, the friend, the source) and notice whether the teaching changes shape when you restore its actual path
-    to you.'
+  body: 'When you encounter a teaching secondhand—in a book, from another''s mouth, in a paraphrase or
+    translation—pause before accepting or rejecting it, and ask aloud: what am I actually hearing, and
+    from whom? Speak the name of the intermediary (the translator, the friend, the source) and notice
+    whether the teaching changes shape when you restore its actual path to you.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts compress cosmological process into the rhythm of breath itself: Heraclitus embeds the paradox of
-      unity-in-flux into a single respiratory image, while Vijnana Bhairava #1 articulates the Supreme Goddess through the
-      dual movement of prāṇa (exhale) and jīva (inhale) as the fundamental articulation of reality.'
-    divergence: Heraclitus treats breath as the image of a logical paradox about being and becoming; the Tantric text treats
-      breath as the direct manifestation of divine consciousness (Śakti) and the gateway to recognition of non-duality.
+    resonance: 'Both texts compress cosmological process into the rhythm of breath itself: Heraclitus
+      embeds the paradox of unity-in-flux into a single respiratory image, while Vijnana Bhairava #1 articulates
+      the Supreme Goddess through the dual movement of prāṇa (exhale) and jīva (inhale) as the fundamental
+      articulation of reality.'
+    divergence: Heraclitus treats breath as the image of a logical paradox about being and becoming; the
+      Tantric text treats breath as the direct manifestation of divine consciousness (Śakti) and the gateway
+      to recognition of non-duality.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both texts use breath as the vehicle for articulating a transition between orders of reality: Heraclitus embeds
-      this transition in the paradoxical image of breath itself, while Isavasya Upanishad 17 explicitly returns breath to
-      the immortal air, marking the dissolution of the individual into the cosmic principle.'
-    divergence: Heraclitus presents breath as the living paradox of becoming; the Upanishad presents it as the mechanism of
-      return to the transcendent, with a clear metaphysical hierarchy between mortal body and immortal principle.
+    resonance: 'Both texts use breath as the vehicle for articulating a transition between orders of reality:
+      Heraclitus embeds this transition in the paradoxical image of breath itself, while Isavasya Upanishad
+      17 explicitly returns breath to the immortal air, marking the dissolution of the individual into
+      the cosmic principle.'
+    divergence: Heraclitus presents breath as the living paradox of becoming; the Upanishad presents it
+      as the mechanism of return to the transcendent, with a clear metaphysical hierarchy between mortal
+      body and immortal principle.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 appendixes: []

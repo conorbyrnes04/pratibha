@@ -119,3 +119,104 @@ abhyasa: Throughout one conversation today, speak only to what the other person 
 translation_provenance: Rendered from the public-domain source (Middle High German). Study rendering;
   not a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Middle High German)
+  body: 'Ich hân der geschrift vil gelesen, beidiu von den heidenischen meistern und von den wîssagen
+    und von der alten und niuwen ê, und hân mit ernste und mit ganzem vlîze gesuochet, welhiu diu hœhste
+    und diu beste tugent sî, dâ mite der mensche sich ze got allermeist und aller næhest gevüegen müge
+    und mit der der mensche von gnâden werden müge, daz got ist von natûre, und dâ mite der mensche aller
+    glîchest stande dem bilde, als er in gote was, in dem zwischen im und gote kein underscheit was, ê
+    daz got die crêatûre geschuof. Und sô ich alle die geschrift durchgründe, als verre mîn vernunft erziugen
+    und bekennen mac, sô envinde ich niht anders, wan daz lûteriu abegescheidenheit ob allen dingen sî,
+    wan alle tugende hânt etwaz ûfsehennes ûf die crêatûre, sô stât abegescheidenheit ledic aller crêatûren.
+    Dar umbe sprach unser herre ze Marthâ: ''unum est necessarium'', daz ist als vil gesprochen: Marthâ,
+    wer unbetrüebet und lûter welle sîn, der muoz haben einez, daz ist abegescheidenheit.'
+- kind: iast
+  label: Transliteration note
+  body: Middle High German — see Original.
+- kind: translation
+  label: Pratibha Translation
+  body: 'I have read many writings — of the pagan masters and of the prophets, of the old covenant and
+    the new — and I have sought with earnestness and whole diligence which is the highest and best virtue
+    by which a human being can join most nearly to God, and by which one may become by grace what God
+    is by nature, and stand most like the image one was in God when there was no distinction between oneself
+    and God before creatures were made. And as far as reason can search and know, I find nothing other
+    than this: pure detachment [*lûteriu abegescheidenheit*] stands above all things. For every virtue
+    still looks somehow toward creatures, while detachment stands free of all creatures. That is why our
+    Lord said to Martha: *unum est necessarium* — which means: Martha, whoever would be untroubled and
+    pure must have one thing, and that is detachment.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Detachment is not one virtue among others but the condition that empties the field so that God
+    alone can fill it. Eckhart''s contested move is to rank *abegescheidenheit* above the whole catalogue
+    of Christian excellences — not because love, humility, or mercy are false, but because each still
+    orients toward creatures (the neighbor to help, the lowliness to perform, the suffering to endure).
+    Detachment alone is *ledic aller crêatûren*: free of creatures as such. The citation of Luke 10:42
+    relocates Martha''s "one necessary thing" from busy service to a single ontological posture. The goal
+    named at the opening is radical: to become by grace what God is by nature, and to stand again in the
+    pre-creational image where no *underscheit* (distinction) obtained between the soul and God. For the
+    practitioner this means the spiritual life is not primarily the accumulation of worthy acts but the
+    clearing of the looking-toward that keeps the heart busy with what is not God.
+
+
+    Key Terms
+
+
+    **abegescheidenheit (MHG)** — *abe* ("off, away") + *scheiden* ("to separate, cut") + abstract noun.
+    Not mere emotional coolness or Stoic indifference; a standing free of creatures so that nothing created
+    occupies the receptive place. Default "detachment" underplays how near this word sits to *niht* (nothingness).
+
+
+    **lûter (MHG)** — "pure, clear, unmixed." Qualifies detachment as undiluted; impure detachment would
+    still smuggle a creaturely looking-toward.
+
+
+    **underscheit (MHG)** — "distinction, difference." The pre-creational image is defined by the *absence*
+    of distinction between the soul and God — the metaphysical target of the treatise.
+
+
+    Cross-Tradition Resonances
+
+
+    **Aṣṭāvakra Gītā 1.4 / 15.1 (detachment as condition of recognition):** Both treat release from object-clinging
+    as the condition for standing as what one already is, not as a new acquisition.
+
+    *Divergence:* Aṣṭāvakra''s release opens onto the Self as awareness; Eckhart''s opens onto union with
+    the God who alone can occupy a heart emptied of creatures.
+
+
+    **Pratyabhijñāhṛdayam sūtra 5 (contraction into the small self):** Both map a fall from undivided
+    ground into creaturely looking; Eckhart''s cure is emptying that looking.
+
+    *Divergence:* Kṣemarāja frames contraction as Consciousness''s free play reclaimable by recognition;
+    Eckhart frames creaturely looking as what must be vacated for grace.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: abegescheidenheit (MHG)
+    definition: '*abe* ("off, away") + *scheiden* ("to separate, cut") + abstract noun. Not mere emotional
+      coolness or Stoic indifference; a standing free of creatures so that nothing created occupies the
+      receptive place. Default "detachment" underplays how near this word sits to *niht* (nothingness).'
+    lemma_id: gelassenheit
+    sense_id: gelassenheit.eckhart
+  - term: lûter (MHG)
+    definition: '"pure, clear, unmixed." Qualifies detachment as undiluted; impure detachment would still
+      smuggle a creaturely looking-toward.'
+  - term: underscheit (MHG)
+    definition: '"distinction, difference." The pre-creational image is defined by the *absence* of distinction
+      between the soul and God — the metaphysical target of the treatise.'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice three moments when attention leans toward a creature — a person, outcome, or status
+    — as if that lean were necessary. For each, pause one breath and ask: what remains if I do not look
+    toward it? Rest there without forcing an answer.'
+- kind: appendix
+  label: MHG source (Quint DW 5 / eckhart.de digital; Pfeiffer 1857 PD registry)
+  body: Ich hân der geschrift vil gelesen, beidiu von den heidenischen meistern und von den wîssagen und
+    von der alten und niuwen ê, und hân mit ernste und mit ganzem vlîze gesuochet, welhiu diu hœhste und
+    diu beste tugent sî, dâ mite der mensche sich ze got allermeist und aller næhest gevüegen müge und
+    mit der der mensche von gnâden werden müge, daz got ist von natûre, und dâ mite der mensche aller
+    glîchest stande dem bilde, als er in gote was, in dem zwischen im und gote kein underscheit was, ê
+    daz go…

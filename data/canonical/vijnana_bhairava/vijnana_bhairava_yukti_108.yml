@@ -76,3 +76,65 @@ abhyasa: 'Sit quietly and let any sensation arise — a sound, an itch, a feelin
   sensation loosens, and the sense of simply being aware, at ease in yourself, grows more stable.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: इन्द्रियद्वारकं सर्वं सुखदुःखादिसंगमम् । इतीन्द्रियाणि संत्यज्य स्वस्थः स्वात्मनि वर्तते ॥ १३६
+    ॥
+  layer_provenance: sourced
+- kind: iast
+  body: indriyadvārakaṃ sarvaṃ sukhaduḥkhādisaṃgamam | itīndriyāṇi saṃtyajya svasthaḥ svātmani vartate
+    || 136 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #108
+
+    Union with pleasure, pain, and so on always occurs through the doors of
+
+    perception. With this in mind, let go [of attachment to] the senses and be at
+
+    ease in the natural state (svastha), abiding in oneself. || 136'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: indriya (इन्द्रिय)
+    definition: √ind ‘be powerful’ → sense faculty → the sense faculties; here called 'doorways' (dvāra)
+      through which experience enters → ‘senses’ as organs miss faculties as powers of consciousness
+  - term: svastha (स्वस्थ)
+    definition: sva + stha ‘standing in oneself’ → 'abiding in oneself'; at ease and self-established,
+      undistracted by outer objects → ‘healthy/well’ medicalizes abiding at ease in one’s own ground
+  - term: svātman (स्वात्मन्)
+    definition: sva + ātman → one’s own Self → one's own Self — the aware subject that remains when attention
+      is withdrawn from sense-objects → ‘true self’ branding misses the aware subject left when objects
+      withdraw
+    lemma_id: atman
+    sense_id: atman.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Bhagavad Gita — Mastery of Mind and the Return of Attention
+    resonance: Both texts locate transformation in the *iterative redirection of attention* from dispersed
+      content back to a stable center or knower. Yukti 108 emphasizes clarity through returning attention
+      to the knower; Bhagavad Gita 10 prescribes repeatedly returning attention from dispersion to center
+      as the method of yoga-mastery.
+    divergence: Vijnana Bhairava frames this as a perceptual inversion (knower vs. content); Bhagavad
+      Gita frames it as embodied habit-regulation (body, breath, and iterative practice).
+    passage_id: bhagavad_gita.bg_md_006
+  - citation: Yoga Spandakarika — Third Flow
+    resonance: 'Both texts describe a paradoxical intensification of perception through *sustained, ardent
+      attention*: the object becomes clearer when effort is applied to perceive it better (Yoga Spandakarika);
+      clarity grows when attention returns to the knower (Yukti 108). Both treat attention itself as the
+      operative principle.'
+    divergence: Yoga Spandakarika uses the analogy of external perception refined by effort; Vijnana Bhairava
+      inverts the vector entirely—clarity comes from withdrawing attention from external doors of perception
+      to the knower behind them.
+    passage_id: yoga_spandakarika.sp_36
+  layer_provenance: generated_grounded

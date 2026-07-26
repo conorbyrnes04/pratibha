@@ -76,3 +76,105 @@ abhyasa: Each time you receive something—a gift, a compliment, an opportunity,
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: अस्तेयप्रतिṣ्ठायां सर्वरत्नोऽपस्ठाम्
+- kind: iast
+  label: IAST
+  body: asteyapratiṣṭhāyāṃ sarvaratnopasthānam
+- kind: translation
+  label: Pratibha Translation
+  body: When one is firmly established in non‑stealing, all wealth approaches him.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this sūtra is that ethical restraint—specifically, the negation of theft—constitutes
+    the foundational condition for the natural influx of prosperity. In the Sāṃkhya‑Yoga framework, the
+    puruṣa’s liberation is achieved by purifying the mind of vṛtti, and the sūtra posits that the vṛtti
+    of avarice, manifested as stealing, blocks the flow of prakṛti’s bounty. The contested move here is
+    the identification of non‑stealing not merely as a moral precept but as a causal agent that opens
+    the channels of wealth; some commentators treat it as a symbolic virtue, others as a literal mechanism.
+    By situating the sūtra within the broader Yoga canon, we see a parallel with the earlier aphorism
+    that “the mind is the source of all wealth” (YS 2.35), yet this sūtra adds a concrete behavioral injunction.
+    The existential import is that the practitioner’s daily conduct—whether in work, consumption, or interpersonal
+    relations—directly influences the material and spiritual sustenance that follows. Thus, the sūtra
+    invites a lived ethic: cultivate non‑stealing not as a distant ideal but as an active, present‑moment
+    practice that invites abundance to flow naturally.
+
+
+    Key Terms
+
+
+    **asteya (अस्तेय)** — root: asti (to be) + -eya (negation) -> non‑stealing; in Sāṃkhya, it denotes
+    the cessation of the vṛtti of avarice, which is essential for puruṣa’s freedom; the ordinary translation
+    ‘not stealing’ omits its role as a purifying practice
+
+
+    **pratiṣṭhāyām (प्रतिष्ठायाम्)** — pra (forth) + iṣṭhā (establish) -> upon having established; in
+    Yoga, it signifies a firm, sustained state of ethical discipline, not merely a momentary act
+
+
+    **sarva (सर्व)** — all; in Sāṃkhya, it implies the totality of prakṛti’s manifestations, indicating
+    that the benefit is not selective but universal
+
+
+    **ratna (रत्न)** — gem; metaphor for wealth, encompassing material, spiritual, and relational riches;
+    the term’s literal sense of precious stone highlights the preciousness of what is received
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.35 – ‘cittaḥ sarvasattāṃ sarvabhūtāḥ’:** Both sūtras link the mind’s purity to the
+    influx of wealth; 2.35 speaks of the mind as the source, while 2.37 specifies the condition (non‑stealing)
+    that activates this source
+
+    *Divergence:* 2.35 is abstract, 2.37 is prescriptive; the latter grounds the former in ethical practice
+
+
+    **Buddhism, Abhidharma, ‘Khandhāyāna’ – ‘non‑stealing as a precondition for prosperity’:** Structural
+    similarity: a precondition (non‑stealing) leading to a positive outcome (prosperity)
+
+    *Divergence:* Buddhist account frames theft as a hindrance to mental clarity, whereas the Yoga text
+    frames it as a blockage to material influx
+
+
+    **Māyāyāna, ‘Brahma Sutra 1.2.5’ – ‘the world is a reflection of the mind’:** Both texts assert that
+    external reality (wealth) is a reflection of internal state (non‑stealing)
+
+    *Divergence:* Brahma Sutra emphasizes metaphysical causality, Yoga sūtra emphasizes practical ethics
+
+
+    **Ānanda, ‘Yoga Vāsiṣṭha 1.1’ – ‘the mind is the source of all wealth’:** Parallel claim that the
+    mind generates wealth; the Vāsiṣṭha is more metaphysical, the sūtra is more behavioral'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: hāna (हान)
+    definition: '√hā ‘abandon’ → cessation/abandonment as goal -> in “Wealth through Non-Stealing”: When
+      one is firmly established in non‑stealing, all wealth approaches him. -> not repression; the ending
+      of future suffering’s cause through viveka'
+  - term: asteya (अस्तेय)
+    definition: 'a- + steya ‘non-stealing’ -> in “Wealth through Non-Stealing”: in Sāṃkhya, it denotes
+      the cessation of the vṛtti of avarice, which is essential for puruṣa’s freedom -> not only property
+      law; non-appropriation that includes subtle taking of credit/energy'
+  - term: pratiṣṭhāyām (प्रतिष्ठायाम्)
+    definition: 'source-term pratiṣṭhāyām -> in “Wealth through Non-Stealing”: in Yoga, it signifies a
+      firm, sustained state of ethical discipline, not merely a momentary act -> default English flattens
+      the technical work this term does here'
+  - term: sarva (सर्व)
+    definition: 'source-term sarva -> in “Wealth through Non-Stealing”: in Sāṃkhya, it implies the totality
+      of prakṛti’s manifestations, indicating that the benefit is not selective but universal -> default
+      English flattens the technical work this term does here'
+  - term: ratna (रत्न)
+    definition: 'source-term ratna -> in “Wealth through Non-Stealing”: the term’s literal sense of precious
+      stone highlights the preciousness of what is received -> default English flattens the technical
+      work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe each moment and refuse to take what is not freely given, so that wealth may naturally
+    approach you.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: To one established in non-stealing, all wealth comes.

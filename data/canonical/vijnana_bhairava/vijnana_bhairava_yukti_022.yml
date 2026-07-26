@@ -81,3 +81,66 @@ abhyasa: Sit quietly and bring attention to the felt sensation of your skin — 
   of awareness. Stay there as long as the recognition holds.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: देहान्तरे त्वग्विभागम् भित्तिभूतं विचिन्तयेत् । न किंचिद् अन्तरे तस्य ध्यायन्न् अध्येयभाग् भवेत्
+    ॥ ४८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: dehāntare tvagvibhāgam bhittibhūtaṃ vicintayet | na kiṃcid antare tasya dhyāyann adhyeyabhāg bhavet
+    || 48 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #22
+
+    One may imagine that the ‘dividing wall’ of skin is [merely] a
+
+    screen, within which there there is nothing; meditating [in this
+
+    way], one directly senses that which can never be an object of
+
+    meditation. || 48'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: bhitti (भित्ति)
+    definition: √bhid ‘split’ → wall/screen → a wall, partition, or screen — here the skin treated as
+      a mere dividing surface → ‘wall’ as barrier misses the screen on which world-images are cast
+  - term: adhyeya (अध्येय)
+    definition: adhi- + √i ‘go toward’ → to be studied/approached → an object of meditation; 'adhyeyabhāg'
+      means becoming one with that which is beyond being meditated upon → ‘object of study’ misses that
+      it names what cannot be objectified
+  - term: ānava mala (आणव मल)
+    definition: āṇava ‘atomic/finite’ + mala ‘stain’ → the innate contraction that makes consciousness
+      feel like a small, bounded, incomplete self → ‘ego impurity’ moral stain-language misses the finitude-contraction
+      of universal I
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Shantideva Bodhicaryavatara — Take Others as Your Self
+    resonance: 'Both texts use imaginative dissolution of a false boundary (skin as screen / ''I'' fastened
+      to foreign matter) to reveal that what appears as a solid, continuous self is actually a habitual
+      construction without intrinsic reality. The move is: deconstruct the apparent object to access what
+      lies beneath or beyond it.'
+    divergence: Vijnana Bhairava uses the boundary dissolution to point toward the unmediated (that which
+      can never be an object), while Shantideva uses it to establish emptiness of self as a basis for
+      ethical reorientation toward others.
+    passage_id: shantideva_bodhicaryavatara.bca_08_exchange
+  - citation: Isavasya Upanishad — Sambhuti and Asambhuti
+    resonance: 'Both texts reject exclusive fixation on a single pole (manifest or unmanifest in Isavasya;
+      the skin-boundary as screen in Bhairava) and instead point toward a non-dual recognition that transcends
+      the dichotomy itself. The move is: neither-nor as a gateway to direct knowing.'
+    divergence: Isavasya frames this as a warning against epistemic error (darkness from one-sided knowledge),
+      while Vijnana Bhairava frames it as a contemplative technique that bypasses meditation-as-object
+      to access the unobjectifiable.
+    passage_id: isavasya_upanishad.isa_005
+  layer_provenance: generated_grounded

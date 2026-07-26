@@ -108,3 +108,75 @@ section: Moses & Shepherd 4
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'آتشی از عشق در جانْ بَر فُروز /// سَر بِسَر فکر و عبارت را بسوز
+
+    ملتِ عشق از همه دینها جداست /// عاشقان را ملت و مذهب خداست
+
+    لَعْل را گر مُهر نبوَد باک نیست /// عشق در دریای غم، غمناک نیست'
+- kind: iast
+  label: Transliteration note
+  body: See Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: We do not look at tongue and speech; We look at spirit and state. If the heart is humble, even
+    if the wording is not. The heart is substance; speech is accident. How long words and metaphors? I
+    want burning — burn thought and expression. Kindle love's fire in the soul. The religion of love is
+    apart from all religions; for lovers, religion and rite are God. A ruby needs no seal; love in a sea
+    of grief is not grief-stricken.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The climax: God reads ḥāl (state) over qāl (speech). Love''s creed relativizes confessional borders
+    without abolishing heat. Existentially: prefer one degree of burning to ten pages of correct theology.
+
+
+    Key Terms
+
+
+    **حال / قال ḥāl / qāl** — state / speech.
+
+
+    **سوز sūz** — burning.
+
+
+    **ملت عشق** — the creed/community of love.
+
+
+    Cross-Tradition Resonances
+
+
+    **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal
+    perfection.
+
+    *Divergence:* The Gītā keeps varṇa-dharma frames; Rūmī''s love-creed speaks across forms.
+
+
+    **Eckhart (silence / not naming detachment):** Both warn that correct speech can spoil intimacy.
+
+    *Divergence:* Eckhart''s worry is exiting the ground by naming; Rūmī''s is shaming the lover''s tongue.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ʿishq (عشق)
+    definition: '‘passionate love’ → transformative love that burns form for the Beloved Here: The religion
+      of love is apart from all religions; for lovers, religion and rite are God. Trap: soft affection
+      or romance only'
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: We Look
+      at the Heart and the State — Not the Words We Look at the Heart and the State — Not the Words آتشی
+      از عشق در جانْ بَر فُروز /// سَر بِسَر فکر و عبارت ر… Trap: erotic fusion fantasy without the discipline
+      of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  - term: rūḥ (روح)
+    definition: '‘spirit’ → the living breath that remembers God and suffers exile in form Here: We do
+      not look at tongue and speech; We look at spirit and state. Trap: ghostly ‘spirit’ without ethical/ontological
+      force'
+    lemma_id: psyche
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute
+    in burning without words. Notice which felt more true.

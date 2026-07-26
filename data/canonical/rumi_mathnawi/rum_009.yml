@@ -141,3 +141,74 @@ section: Moses & Shepherd 1
 translation_provenance: Rendered from the public-domain source (Persian). Study rendering; not a critical
   edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Persian)
+  body: 'دید موسی یک شبانی را به راه /// کو همی‌گفت ای گزیننده اله
+
+    تو کجایی تا شوم من چاکرت /// چارقت دوزم کنم شانه سرت
+
+    جامه‌ات شویم شپشهاات کُشم /// شیر پیشت آورم ای محتشم
+
+    دستکت بوسم بمالم پایکت /// وقت خواب آید بروبم جایکت
+
+    ای فدای تو همه بزهای من /// ای بیادت هیهی و هیهای من
+
+    این نمط بیهوده می‌گفت آن شبان /// گفت موسی با کی است این ای فلان'
+- kind: iast
+  label: Transliteration note
+  body: See Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: 'Moses saw a shepherd on the road saying: O God who chooses — where are You, that I may become
+    Your servant, mend Your shoe, comb Your head, wash Your clothes, kill Your lice, bring You milk, kiss
+    Your hand, rub Your feet, sweep Your place at sleep — O all my goats are Your sacrifice…'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The shepherd''s prayer is anthropomorphic, intimate, "crude." Its contested holiness is precisely
+    that heat. Existentially: notice when your prayer becomes correct and cold.
+
+
+    Key Terms
+
+
+    **حال / قال ḥāl / qāl** — state / speech.
+
+
+    **سوز sūz** — burning.
+
+
+    **ملت عشق** — the creed/community of love.
+
+
+    Cross-Tradition Resonances
+
+
+    **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal
+    perfection.
+
+    *Divergence:* The Gītā keeps varṇa-dharma frames; Rūmī''s love-creed speaks across forms.
+
+
+    **Eckhart (silence / not naming detachment):** Both warn that correct speech can spoil intimacy.
+
+    *Divergence:* Eckhart''s worry is exiting the ground by naming; Rūmī''s is shaming the lover''s tongue.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ʿishq (عشق)
+    definition: '‘passionate love’ → transformative love that burns form for the Beloved Here: *Divergence:*
+      Eckhart''s worry is exiting the ground by naming; Rūmī''s is shaming the lover''s tongue. Trap:
+      soft affection or romance only'
+  - term: waṣl / union (وصل)
+    definition: '‘joining, arrival, union’ → return toward the origin the reed remembers Here: Moses Hears
+      the Shepherd''s Rough Prayer Moses Hears the Shepherd''s Rough Prayer دید موسی یک شبانی را به راه
+      /// کو همی‌گفت ای گزیننده اله تو کجایی تا شوم من چا… Trap: erotic fusion fantasy without the discipline
+      of longing'
+    lemma_id: fana
+    sense_id: fana.sufi
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute
+    in burning without words. Notice which felt more true.

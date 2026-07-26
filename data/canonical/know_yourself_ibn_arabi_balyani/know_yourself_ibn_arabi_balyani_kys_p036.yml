@@ -101,3 +101,25 @@ abhyasa: Draw a single line on paper and let your finger rest at its exact midpo
   and know that 'before' and 'after' are only this. Let the line be time, the point be now, and your resting
   finger be the only real.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: tawḥīd (توحيد)
+    definition: 'Arabic tawḥīd from waḥḥada ‘to make/declare one’ → absolute oneness of the Real, radicalized
+      here as sole agency and sole being Here: But tawḥīd admits no such second reality. Trap: hearing
+      a creedal slogan rather than ontological exclusivity of wujūd'
+    lemma_id: tawhid
+    sense_id: tawhid.islamic
+  - term: shirk (شرك)
+    definition: '‘association/partnership’ → ascribing independent power or being to what is other-than-God
+      Here: For if it were not so, He would not be by Himself without any partner, and it is indispensable
+      that He should be by Himself without any partner. Trap: narrowing to idol-worship while missing
+      subtle self-ascription of agency'
+  - term: wujūd (وجود)
+    definition: 'Arabic wujūd ‘finding/being found; existence’ → being as what is found in God alone;
+      creatures have no independent wujūd Here: And God (whose name be exalted) is the very existence
+      of past eternity and the existence of future eternity and the existence of past time — yet without
+      past e… Trap: treating ‘existence’ as a neutral metaphysical predicate shared equally by God and
+      world'
+  layer_provenance: editorial-enriched

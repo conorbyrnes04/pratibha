@@ -15,19 +15,22 @@ themes:
 - virtue
 source_excerpt: To me, one is ten thousand if he be the best.
 translation_literal: To me, one is ten thousand if he be the best.
-commentary: 'Heraclitus does not flatten hierarchy into undifferentiated oneness. The fragment performs a radical revaluation:
-  numerical measure—the ten thousand, the multitude, the countable mass—collapses before *quality*, before *arete* (excellence,
-  virtue-in-act). One *best* outweighs ten thousand mediocre. This is not mysticism but a claim about intelligibility itself.
-  The ten thousand are noise, mere quantity; the one who *is* the best embodies the logos, the rational principle that makes
-  things legible. The fragment cuts against democratic leveling and against the assumption that more is better. It says: attend
-  to what stands out, what demonstrates order and necessity, what *shows* the structure of things. The ''best'' here is not
-  subjective preference but the one whose nature or action reveals necessity—the one through whom the hidden harmony becomes
-  visible. To me—the speaker claims a singular vantage—this one *is* (not merely seems) ten thousand. The equation is not
-  metaphorical softness but a hard inversion: quality defeats quantity in the court of understanding.'
+commentary: 'Heraclitus does not flatten hierarchy into undifferentiated oneness. The fragment performs
+  a radical revaluation: numerical measure—the ten thousand, the multitude, the countable mass—collapses
+  before *quality*, before *arete* (excellence, virtue-in-act). One *best* outweighs ten thousand mediocre.
+  This is not mysticism but a claim about intelligibility itself. The ten thousand are noise, mere quantity;
+  the one who *is* the best embodies the logos, the rational principle that makes things legible. The
+  fragment cuts against democratic leveling and against the assumption that more is better. It says: attend
+  to what stands out, what demonstrates order and necessity, what *shows* the structure of things. The
+  ''best'' here is not subjective preference but the one whose nature or action reveals necessity—the
+  one through whom the hidden harmony becomes visible. To me—the speaker claims a singular vantage—this
+  one *is* (not merely seems) ten thousand. The equation is not metaphorical softness but a hard inversion:
+  quality defeats quantity in the court of understanding.'
 insight: ''
-practice: 'When you encounter a crowd, a list, a proliferation of options or voices, stop and ask aloud or in writing: *Which
-  one carries the logos here?* Not which is loudest or most numerous, but which one—person, idea, gesture, silence—actually
-  shows you something true about the situation. Speak or write that one thing, and let the ten thousand fall away.'
+practice: 'When you encounter a crowd, a list, a proliferation of options or voices, stop and ask aloud
+  or in writing: *Which one carries the logos here?* Not which is loudest or most numerous, but which
+  one—person, idea, gesture, silence—actually shows you something true about the situation. Speak or write
+  that one thing, and let the ten thousand fall away.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -47,40 +50,72 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus does not flatten hierarchy into undifferentiated oneness. The fragment performs a radical revaluation:
-    numerical measure—the ten thousand, the multitude, the countable mass—collapses before *quality*, before *arete* (excellence,
-    virtue-in-act). One *best* outweighs ten thousand mediocre. This is not mysticism but a claim about intelligibility itself.
-    The ten thousand are noise, mere quantity; the one who *is* the best embodies the logos, the rational principle that makes
-    things legible. The fragment cuts against democratic leveling and against the assumption that more is better. It says:
-    attend to what stands out, what demonstrates order and necessity, what *shows* the structure of things. The ''best'' here
-    is not subjective preference but the one whose nature or action reveals necessity—the one through whom the hidden harmony
-    becomes visible. To me—the speaker claims a singular vantage—this one *is* (not merely seems) ten thousand. The equation
-    is not metaphorical softness but a hard inversion: quality defeats quantity in the court of understanding.'
+  body: 'Heraclitus does not flatten hierarchy into undifferentiated oneness. The fragment performs a
+    radical revaluation: numerical measure—the ten thousand, the multitude, the countable mass—collapses
+    before *quality*, before *arete* (excellence, virtue-in-act). One *best* outweighs ten thousand mediocre.
+    This is not mysticism but a claim about intelligibility itself. The ten thousand are noise, mere quantity;
+    the one who *is* the best embodies the logos, the rational principle that makes things legible. The
+    fragment cuts against democratic leveling and against the assumption that more is better. It says:
+    attend to what stands out, what demonstrates order and necessity, what *shows* the structure of things.
+    The ''best'' here is not subjective preference but the one whose nature or action reveals necessity—the
+    one through whom the hidden harmony becomes visible. To me—the speaker claims a singular vantage—this
+    one *is* (not merely seems) ten thousand. The equation is not metaphorical softness but a hard inversion:
+    quality defeats quantity in the court of understanding.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (to me, one is ten thousand if he be the best.), the shared pattern according to which all
+      things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic,
+      or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  - term: σύνεσις (synesis)
+    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in
+      this passage (to me, one is ten thousand if he be the best.), understanding as holding-together
+      what daily contact already offers — not new information alone -> trap: IQ or book-learning; synesis
+      fails when familiarity becomes opacity'
+  - term: ἁρμονίη (harmoniē)
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
+      passage (to me, one is ten thousand if he be the best.), tensioned unity of opposites — bow and
+      lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
+      or static balance'
+    lemma_id: harmonie
+    sense_id: harmonie.heraclitean
+  - term: ἕν (hen)
+    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (to me,
+      one is ten thousand if he be the best.), the one that all things are: not mystical mush but a single
+      order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange
+      inside unity'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'When you encounter a crowd, a list, a proliferation of options or voices, stop and ask aloud or in writing: *Which
-    one carries the logos here?* Not which is loudest or most numerous, but which one—person, idea, gesture, silence—actually
-    shows you something true about the situation. Speak or write that one thing, and let the ten thousand fall away.'
+  body: 'When you encounter a crowd, a list, a proliferation of options or voices, stop and ask aloud
+    or in writing: *Which one carries the logos here?* Not which is loudest or most numerous, but which
+    one—person, idea, gesture, silence—actually shows you something true about the situation. Speak or
+    write that one thing, and let the ten thousand fall away.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts establish a single intelligible principle that orders apparent multiplicity: Heraclitus locates
-      the ''one'' as the rational order beneath flux; Nagarjuna locates the ultimate (paramārtha) as the non-dual ground that
-      conventional reality points toward. Each refuses mystical collapse while insisting on a structural unity that makes
-      knowledge possible.'
-    divergence: Heraclitus grounds unity in logos as cosmic fire and breath; Nagarjuna grounds it in śūnyatā (emptiness) and
-      the interdependence of conventional and ultimate truths, a metaphysical inversion of substance-based monism.
+    resonance: 'Both texts establish a single intelligible principle that orders apparent multiplicity:
+      Heraclitus locates the ''one'' as the rational order beneath flux; Nagarjuna locates the ultimate
+      (paramārtha) as the non-dual ground that conventional reality points toward. Each refuses mystical
+      collapse while insisting on a structural unity that makes knowledge possible.'
+    divergence: Heraclitus grounds unity in logos as cosmic fire and breath; Nagarjuna grounds it in śūnyatā
+      (emptiness) and the interdependence of conventional and ultimate truths, a metaphysical inversion
+      of substance-based monism.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: 'Both texts prize the singular excellence or capacity that emerges from tension or opposition: Heraclitus values
-      the ''one'' who is best precisely through standing apart; the Vijnana Bhairava locates equality-consciousness arising
-      from the dynamic tension (sanghaṭṭa) of opposing prāṇas at the breath-pause. Excellence and insight crystallize at the
-      point of unified opposition.'
-    divergence: Heraclitus emphasizes individual virtue and rational discernment; the Vijnana Bhairava emphasizes embodied
-      breath-work and non-dual consciousness as the vehicle for that crystallization.
+    resonance: 'Both texts prize the singular excellence or capacity that emerges from tension or opposition:
+      Heraclitus values the ''one'' who is best precisely through standing apart; the Vijnana Bhairava
+      locates equality-consciousness arising from the dynamic tension (sanghaṭṭa) of opposing prāṇas at
+      the breath-pause. Excellence and insight crystallize at the point of unified opposition.'
+    divergence: Heraclitus emphasizes individual virtue and rational discernment; the Vijnana Bhairava
+      emphasizes embodied breath-work and non-dual consciousness as the vehicle for that crystallization.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 appendixes: []

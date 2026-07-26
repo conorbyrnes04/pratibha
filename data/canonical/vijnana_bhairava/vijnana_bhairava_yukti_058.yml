@@ -85,3 +85,79 @@ abhyasa: 'Sit and let your gaze rest naturally on an ordinary object in front of
   letting the felt boundary between ''you'' and ''the object'' soften into a single field of seeing.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: किञ्चिज् ज्ञातं द्वैतदायि बाह्यालोकस् तमः पुनः । विश्वादि भैरवं रूपं ज्ञात्वानन्तप्रकाशभृत् ॥
+    ८६ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kiñcij jñātaṃ dvaitadāyi bāhyālokas tamaḥ punaḥ | viśvādi bhairavaṃ rūpaṃ jñātvānantaprakāśabhṛt
+    || 86 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #58
+
+    Having known the [three] states of ‘universe’ and so on –
+
+    consisting of limited knowledge producing duality, illumination
+
+    of the external, and darkness respectively – as the very form of
+
+    Bhairava, he becomes one who carries within the infinite Light
+
+    of Consciousness. || 86'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: bhairava (भैरव)
+    definition: 'bhi ‘terror’ + rava ‘roar’ (folk); Trika: the terrifyingly free Absolute → the absolute
+      consciousness of the Trika, here identified as the true form of the entire universe → ‘fierce god’
+      mythologizes Bhairava as the form of unbound consciousness itself'
+  - term: prakāśa (प्रकाश)
+    definition: pra- + √kāś ‘shine forth’ → the self-luminous light of awareness that reveals all things
+      and is itself the knower → ‘light’ as glow/mood misses the condition under which anything appears
+    lemma_id: prakasa
+    sense_id: prakasa.shaiva
+  - term: dvaita (द्वैत)
+    definition: dvi ‘two’ → duality → duality; the split into subject and object produced by grasping
+      particular things → ‘dualism’ as philosophy-label misses lived two-ness the practice undoes
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Mandukya Upanishad and Gaudapada Karika — Verses 3–6 · The Three States
+    resonance: Both texts systematically examine the three states of consciousness (waking, dream, deep
+      sleep) as the primary analytical framework for understanding the nature of mind and reality. Each
+      state is treated as a distinct modality through which consciousness manifests, and recognition of
+      their structure becomes the gateway to transcendent knowledge.
+    divergence: The Mandukya grounds the three states in the syllable OM and leads toward the fourth state
+      (Turiya) as the unchanging witness; Yukti 58 recognizes the three states as forms of Bhairava itself
+      and emphasizes the inward turn to the knower as the operative move.
+    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_004
+  - citation: Siva Sutra — Śāktopāya
+    resonance: Both passages identify sustained attention or focused inward-turning as the direct means
+      of knowledge. The Siva Sutra equates attention itself with knowledge; Yukti 58 describes how clarity
+      grows when attention returns from content to the knower—both treating attentional reorientation
+      as constitutive of knowing.
+    divergence: The Siva Sutra presents attention as a simple aphoristic principle of non-dual recognition;
+      Yukti 58 embeds this move within a prior recognition of the three states as Bhairava's forms, making
+      the inward turn a secondary refinement rather than the primary method.
+    passage_id: siva_sutra.ss_ii_12
+  - citation: Patañjali Yoga Sūtras 4.17
+    resonance: Both texts locate the determinacy of knowledge in the subject's conditioning or perspective
+      rather than in the object itself. Yukti 58 recognizes the three states as 'forms of Bhairava' only
+      when attention shifts to the knower; Patañjali notes that an object's knowability depends on the
+      mind's conditioning—both making the observer's state constitutive of what is known.
+    divergence: Patañjali treats this as a technical principle of epistemology within the yoga system;
+      Yukti 58 frames it as a recognition that dissolves the subject-object duality by revealing all states
+      as manifestations of consciousness itself.
+    passage_id: patañjali_yoga_sūtras.ys_4_17
+  layer_provenance: generated_grounded

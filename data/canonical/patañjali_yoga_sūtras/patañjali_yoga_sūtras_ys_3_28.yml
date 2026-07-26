@@ -135,3 +135,102 @@ abhyasa: 'Choose a simple, tangible object: a candle flame, a stone, a single wo
   tadgati-jñānam beginning to unfold.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: ध्रुवे तदगतिज्ञानम्
+- kind: iast
+  label: IAST
+  body: dhruve tadgatijñānam
+- kind: translation
+  label: Pratibha Translation
+  body: The knowledge that is fixed is that which is known.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sutra asserts that true knowledge is not a fleeting insight but a stable, unchanging awareness
+    of what is already known. It claims that the mind’s grasp on a particular truth becomes fixed only
+    when it is fully realized, thereby transcending the oscillatory patterns of cognition. This move—identifying
+    ‘fixedness’ (ध्रुवे) with ‘knowledge’ (गतिज्ञानम्)—is contested in the sense that other commentators
+    have read it as a description of the mind’s settled state rather than an ontological claim. Within
+    the Yoga and Sāṃkhya framework, the sutra positions knowledge (gati) as a distinct faculty that, when
+    stabilized, becomes the vehicle for liberation. The existential implication is that one must cultivate
+    a steady awareness of the self’s inherent truth, thereby quieting the restless fluctuations (vṛtti)
+    that bind the Purusha to Prakṛti. The Satchidananda commentary’s emphasis on the “arrangement” of
+    stars on the moon echoes this idea: just as the moon’s fixed position allows the stars to be perceived,
+    a fixed awareness makes the truth of the self visible. Thus, the sutra invites practitioners to anchor
+    their attention on the immutable knowledge already present within, thereby aligning with the broader
+    Yoga goal of samādhi and the realization of īśvara‑like stillness.
+
+
+    Key Terms
+
+
+    **dhruve (ध्रुवे)** — ध्रुवः (fixed, steady) → in Yoga Sutra it denotes the unchanging state of realized
+    knowledge, contrasting with the mutable mind (citta) and its fluctuations (vṛtti).
+
+
+    **tad (तद्)** — तद् (that) → here it specifies the particular knowledge that has become fixed, pointing
+    to the object of realization rather than abstract truth.
+
+
+    **gati (गतिः)** — गति (knowledge, realization) → in this sutra it is the faculty that, when fixed,
+    becomes the basis for liberation; the term’s use underscores the transition from mere cognition to
+    stable awareness.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sutra 1.1 – "Yogaś citta‑vṛtti‑nirodhaḥ":** Both sutras use a single word to denote the essential
+    quality of the practice (Yoga vs. dhruve) and pair it with a noun that captures the object of the
+    practice (citta‑vṛtti‑nirodhaḥ vs. tad‑gati).
+
+    *Divergence:* While 1.1 frames Yoga as the cessation of mind‑fluctuations, 3.28 frames the result
+    as the fixedness of knowledge, shifting the focus from process to state.
+
+
+    **Brahma Sutra 1.1.1 – "Brahman‑as‑the‑ultimate‑real‑truth":** Both sutras employ a concise two‑word
+    construction that juxtaposes a quality (dhruve) with an object (tad‑gati), mirroring the Brahma Sutra’s
+    pairing of Brahman with its defining attribute.
+
+    *Divergence:* The Brahma Sutra’s construction is metaphysical, whereas 3.28 is phenomenological, concerned
+    with the experiential stability of knowledge.
+
+
+    **Samkhya Karika 1.1 – "Puruṣa‑prākṛti‑duality":** The sutra’s emphasis on fixed knowledge parallels
+    the Samkhya delineation of Purusha as the unchanging witness, contrasting with Prakriti’s flux.
+
+    *Divergence:* Where Samkhya presents a dualistic ontology, 3.28 operates within the Yoga framework,
+    treating fixed knowledge as a means to dissolve the duality.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dhruve (ध्रुवे)
+    definition: 'source-term dhruve -> in “Fixed Knowledge of That Which Is Known”: ध्रुवः (fixed, steady)
+      → in Yoga Sutra it denotes the unchanging state of realized knowledge, contrasting with the mutable
+      mind (citta) and its fluctuations (vṛtti) -> default English flattens the technical work this term
+      does here'
+  - term: tad (तद्)
+    definition: 'source-term tad -> in “Fixed Knowledge of That Which Is Known”: तद् (that) → here it
+      specifies the particular knowledge that has become fixed, pointing to the object of realization
+      rather than abstract truth -> default English flattens the technical work this term does here'
+  - term: gati (गतिः)
+    definition: 'mere cognition to stable awareness. -> in “Fixed Knowledge of That Which Is Known”: गति
+      (knowledge, realization) → in this sutra it is the faculty that, when fixed, becomes the basis for
+      liberation -> default English flattens the technical work this term does here'
+  - term: tadgati-jñānam
+    definition: 'intimate, non-mediated contact with what is observed. -> in “Fixed Knowledge of That
+      Which Is Known”: knowledge that arises from intimate, non-mediated contact with what is observed
+      -> default English flattens the technical work this term does here'
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Fixed Knowledge of That Which Is
+      Known”: the restless, habitual patterns of thought that obscure clear perception -> not ‘bad thoughts’
+      only — any cognitive wave (valid cognition, error, fantasy, sleep, memory)'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You fix your awareness on the knowledge that is already known, maintaining it as a steady point
+    of focus.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: B y saṁyama on the moon, comes knowledge of the stars’

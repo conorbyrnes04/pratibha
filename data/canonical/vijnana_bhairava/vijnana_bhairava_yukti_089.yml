@@ -84,3 +84,80 @@ abhyasa: 'Choose one sense and one strong, simple stimulus — the first sip of 
   isn''t dependent on the stimulus at all — that residual openness is what the verse points to.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: यत्र यत्राक्षमार्गेण चैतन्यं व्यज्यते विभोः । तस्य तन्मात्रधर्मित्वाच् चिल्लयाद् भरितात्मता ॥
+    ११७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: yatra yatrākṣamārgeṇa caitanyaṃ vyajyate vibhoḥ | tasya tanmātradharmitvāc cillayād bharitātmatā
+    || 117 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #89
+
+    Wherever [and whenever] the Consciousness of the all-pervasive
+
+    Lord is manifested through the pathway of the eyes [or other
+
+    senses], then, because it is that [very Consciousness] which
+
+    [actually] possesses the qualities of the [apparently objective]
+
+    perceptible [such as sound, sensation, color etc.], it dissolves into
+
+    [pure] Awareness; then the state of the fulfilled self [arises]. || 117'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: caitanya (चैतन्य)
+    definition: from cetana → consciousness/aliveness → living, sentient awareness — consciousness in
+      its active, self-aware aspect → ‘consciousness’ as topic misses living sentience as the sole Real
+    lemma_id: caitanya
+    sense_id: caitanya.shaiva
+  - term: tanmātra-dharmitva (तन्मात्रधर्मित्व)
+    definition: having the nature of tanmātras → the quality by which awareness takes on the form/character
+      of the sense-object it perceives → scholastic compound—experiencing as reducible to sensory quanta
+  - term: bharitātmatā (भरितात्मता)
+    definition: bharita + ātman + -tā → the state of being utterly full or complete, wanting nothing —
+      Bhairava's own plenitude → not emotional fullness—being whose essence is saturation with awareness
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali Yoga Sūtras 1.45
+    resonance: 'Both texts describe a collapse of subject-object duality through refined attention: the
+      subtle object ''merges with the observer'' (Patañjali), just as sensory content ''dissolves into
+      [pure] Awareness'' when attention turns to the knower rather than the known (Vijnana Bhairava).
+      In both, the movement is from object-fixation to recognition of the observing principle.'
+    divergence: Patañjali frames this as a progressive refinement of samadhi through systematic meditation
+      practice, while Vijnana Bhairava presents it as an immediate recognition that Consciousness already
+      possesses the apparent qualities of objects—a non-dual collapse rather than a cultivated state.
+    passage_id: patañjali_yoga_sūtras.ys_1_45
+  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
+    resonance: 'Both identify a fundamental perceptual inversion: the soul/Consciousness continuously
+      acts (or manifests), but we miss it because attention is absorbed in sense-content. Recognition
+      requires redirecting awareness from the sensory stream to the underlying conscious principle that
+      animates perception itself.'
+    divergence: Plotinus frames this as the soul's continuous noetic activity obscured by sensory distraction,
+      emphasizing a Neoplatonic hierarchy of being; Vijnana Bhairava treats it as the non-dual Consciousness
+      already present in all manifestation, requiring only a shift of attention, not ascent through levels.
+    passage_id: plotinus_enneads.enn_v_1_12
+  - citation: Astavakra Gita — Verse 1.12
+    resonance: Both define the Self as a witnessing consciousness that is all-pervading and inactive—the
+      stable principle that observes without being modified by content. The Vijnana Bhairava's 'fulfilled
+      self' and Astavakra's 'witness, all-pervading, full, one...consciousness, and inactive' name the
+      same recognition of consciousness as the unchanging ground of experience.
+    divergence: Astavakra emphasizes negation and enumeration of what the Self is not and is, using a
+      declarative metaphysical framework; Vijnana Bhairava describes a phenomenological process of dissolution
+      whereby this recognition arises through the inversion of attention.
+    passage_id: astavakra_gita.asg_1_12
+  layer_provenance: generated_grounded

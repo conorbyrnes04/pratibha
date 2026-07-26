@@ -121,3 +121,111 @@ abhyasa: 'When you next find yourself about to praise someone—at work, at home
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '田子方侍坐於魏文侯，數稱谿工。
+
+    文侯曰：谿工，子之師邪？
+
+    」子方曰：「非也，無擇之里人也。
+
+    稱道數當故無擇稱之。
+
+    」文侯曰：「然則子無師邪？
+
+    」子方曰：「有。
+
+    」曰：「子之師誰邪？
+
+    」子方曰：「東郭順子。
+
+    」文侯曰：「然則夫子何故未嘗稱之？
+
+    」子方曰：「其為人也真。
+
+    人貌而天虛，緣而葆真，清而容物。
+
+    物無道，正容以悟之，使人之意也消。
+
+    無擇何足以稱之！'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Tzŭ Fang said: "His nature is authentic. In form he appears human; in essence he is empty like
+    heaven. Unconditioned himself, he preserves the genuine by flowing with conditions. Pure in himself,
+    he contains all things. When people lack Tao, he corrects them through presence alone, causing their
+    striving-minds to dissolve. How could such a one be praised? Praise requires an object to praise—but
+    he leaves no trace for the mouth to grasp."'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The contested move here is the claim that perfection becomes invisible to language. Fang asserts
+    that Donguo Shunzi''s virtue is *precisely* inexpressible because it operates through 真 (zhēn: authenticity/genuineness)
+    rather than through knowable acts. This inverts the Confucian assumption that virtue must be demonstrated,
+    named, and transmitted through discourse. The Prince''s subsequent paralysis—body relaxed, mouth sealed—is
+    not failure but initiation: he experiences the vertigo of encountering a teaching that cannot be taught,
+    only transmitted through the dissolution of the student''s habitual frameworks.
+
+
+    Key Terms:
+
+
+    **真 zhēn** - authenticity, genuineness, the uncarved state → in Zhuangzi: the original nature prior
+    to social conditioning → translation stakes: ''genuine'' risks implying a hidden essence; better:
+    the non-resistant responsiveness to what-is
+
+    **虛 xū** - emptiness, void, openness → in Zhuangzi: not negation but receptive capacity → translation
+    stakes: ''empty'' suggests lack; better: ''spacious'' or ''unobstructed''
+
+    **緣 yuán** - to follow along, to accord with conditions, causation → in Zhuangzi: non-willful adaptation
+    to circumstance → translation stakes: ''condition'' is passive; better: ''flowing with'''
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dé (德)
+    definition: '德 “potency, virtue, obtained power” — how the Way is efficacious in a particular being
+      -> in this passage (the Master Beyond Praise), inner potency that shows as unforced efficacy rather
+      than moral display -> trap: Victorian “virtue” as propriety; dé is charismatic power of alignment,
+      not rule-keeping'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: zhēn rén (真人)
+    definition: '真人 “true/genuine person” — one whose breath and sleep are not driven by ordinary striving
+      -> in this passage (the Master Beyond Praise), the genuine person who does not injure the Way with
+      the heart-mind’s schemes -> trap: saintly moral hero; zhēn rén is ontological authenticity, not
+      public virtue theater'
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (the Master Beyond Praise), unforced congruence with conditions: skill that does not obstruct
+      the work -> trap: “non-action” as passivity; wúwéi can be highly skilled activity without strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (the Master Beyond Praise), the nameless source-and-course that lets beings move by
+      their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed doctrine one can possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Confucian Analects, 15.28: ''The Master said, I do not open the truth to one who is not
+      eager to get it'''
+    resonance: Both texts privilege a student's readiness over transmission of doctrine; both suggest
+      that true teaching occurs through non-verbal encounter
+    divergence: Confucius still assumes a truth to be 'opened'; Zhuangzi suggests the master's virtue
+      *dissolves* the student's capacity to grasp, leaving no truth-object behind
+    passage_id: ''
+  - citation: 'Daodejing 15: ''The ancient masters were profound and subtle... because they were subtle,
+      they must be described with difficulty'''
+    resonance: Both texts struggle to name the nameless; both use apophatic language (what cannot be said)
+    divergence: The Daodejing still attempts description ('profound, subtle'); Zhuangzi's Fang refuses
+      even this—praise itself becomes the obstacle
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'For one week, identify one person in your life whose presence calms your striving-mind. Do not
+    praise them or name their virtues aloud. Instead, notice: when you are near them, what dissolves?
+    What stops needing to be said? At week''s end, sit in silence for ten minutes and let that dissolution
+    teach you what words cannot.'

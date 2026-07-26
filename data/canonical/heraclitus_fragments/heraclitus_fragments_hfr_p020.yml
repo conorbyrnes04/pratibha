@@ -7,26 +7,30 @@ unit_id: heraclitus_fragments.hfr_p020
 unit_label: This world, the same for all, neither any of
 title: This world, the same for all, neither any of
 unit_type: teaching_passage
-thesis: The fragment arrests mid-thought—'neither any of' trails into silence, forcing the reader into the gap.
+thesis: The fragment arrests mid-thought—'neither any of' trails into silence, forcing the reader into
+  the gap.
 themes:
 - attention
 - silence
 source_excerpt: This world, the same for all, neither any of
 translation_literal: This world, the same for all, neither any of
-commentary: 'The fragment arrests mid-thought—''neither any of'' trails into silence, forcing the reader into the gap. Heraclitus
-  does not complete the negation. What is not any of what? The world is ''the same for all'' (to auto pasi), yet immediately
-  that sameness fractures. The move is not logical but phenomenological: he names the shared cosmos, then withdraws the completion,
-  leaving the listener suspended in the very condition he describes. The world appears identical to all who inhabit it—the
-  sun rises, fire burns, water flows—yet each perceives it through an unrepeatable position, an irreducible singularity of
-  sense and time. ''Neither any of'' may mean: neither any god, neither any mortal, neither any one thing owns or exhausts
-  it. The fragment does not resolve the paradox; it performs it. By cutting off mid-utterance, Heraclitus makes the reader''s
-  incompletion mirror the incompleteness of any single perspective on the shared world. The teaching is not in doctrine but
-  in the texture of the saying itself—in what it withholds.'
+commentary: 'The fragment arrests mid-thought—''neither any of'' trails into silence, forcing the reader
+  into the gap. Heraclitus does not complete the negation. What is not any of what? The world is ''the
+  same for all'' (to auto pasi), yet immediately that sameness fractures. The move is not logical but
+  phenomenological: he names the shared cosmos, then withdraws the completion, leaving the listener suspended
+  in the very condition he describes. The world appears identical to all who inhabit it—the sun rises,
+  fire burns, water flows—yet each perceives it through an unrepeatable position, an irreducible singularity
+  of sense and time. ''Neither any of'' may mean: neither any god, neither any mortal, neither any one
+  thing owns or exhausts it. The fragment does not resolve the paradox; it performs it. By cutting off
+  mid-utterance, Heraclitus makes the reader''s incompletion mirror the incompleteness of any single perspective
+  on the shared world. The teaching is not in doctrine but in the texture of the saying itself—in what
+  it withholds.'
 insight: ''
-practice: 'Stand in a place where others also stand or pass (street corner, doorway, park bench). For ten minutes, notice
-  one specific detail—a shadow, a sound, a texture—and hold it steady in attention. Then ask: what do I see that someone else
-  standing here does not? Then ask: what do they see that I cannot? Do not try to answer; let the questions work as a lens,
-  sharpening the boundary between the shared world and the irreducibly private angle from which each of us inhabits it.'
+practice: 'Stand in a place where others also stand or pass (street corner, doorway, park bench). For
+  ten minutes, notice one specific detail—a shadow, a sound, a texture—and hold it steady in attention.
+  Then ask: what do I see that someone else standing here does not? Then ask: what do they see that I
+  cannot? Do not try to answer; let the questions work as a lens, sharpening the boundary between the
+  shared world and the irreducibly private angle from which each of us inhabits it.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -44,38 +48,69 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment arrests mid-thought—''neither any of'' trails into silence, forcing the reader into the gap. Heraclitus
-    does not complete the negation. What is not any of what? The world is ''the same for all'' (to auto pasi), yet immediately
-    that sameness fractures. The move is not logical but phenomenological: he names the shared cosmos, then withdraws the
-    completion, leaving the listener suspended in the very condition he describes. The world appears identical to all who
-    inhabit it—the sun rises, fire burns, water flows—yet each perceives it through an unrepeatable position, an irreducible
-    singularity of sense and time. ''Neither any of'' may mean: neither any god, neither any mortal, neither any one thing
-    owns or exhausts it. The fragment does not resolve the paradox; it performs it. By cutting off mid-utterance, Heraclitus
-    makes the reader''s incompletion mirror the incompleteness of any single perspective on the shared world. The teaching
-    is not in doctrine but in the texture of the saying itself—in what it withholds.'
+  body: 'The fragment arrests mid-thought—''neither any of'' trails into silence, forcing the reader into
+    the gap. Heraclitus does not complete the negation. What is not any of what? The world is ''the same
+    for all'' (to auto pasi), yet immediately that sameness fractures. The move is not logical but phenomenological:
+    he names the shared cosmos, then withdraws the completion, leaving the listener suspended in the very
+    condition he describes. The world appears identical to all who inhabit it—the sun rises, fire burns,
+    water flows—yet each perceives it through an unrepeatable position, an irreducible singularity of
+    sense and time. ''Neither any of'' may mean: neither any god, neither any mortal, neither any one
+    thing owns or exhausts it. The fragment does not resolve the paradox; it performs it. By cutting off
+    mid-utterance, Heraclitus makes the reader''s incompletion mirror the incompleteness of any single
+    perspective on the shared world. The teaching is not in doctrine but in the texture of the saying
+    itself—in what it withholds.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: κοινός (koinos)
+    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage
+      (this world, the same for all, neither any of), the common Logos: waking rationality is shared;
+      private dream-opinion is not a world -> trap: mere social consensus; koinos here is cosmological
+      shareability, not majority vote'
+  - term: πῦρ (pyr)
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
+      (this world, the same for all, neither any of), world-ruling fire as measured transformation and
+      exchange, not mythic flame alone -> trap: treating fire as a static elemental substance rather than
+      lawful becoming'
+    lemma_id: pyr
+    sense_id: pyr.heraclitean
+  - term: ποταμός (potamos)
+    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage
+      (this world, the same for all, neither any of), flux as identity-in-process: you cannot step twice
+      into the same river because waters renew -> trap: slogan “everything changes” without the logos
+      that measures the flow'
+  - term: αἰών (aiōn)
+    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage
+      (this world, the same for all, neither any of), time/age as a child at play: cosmic process without
+      a human craftsman-god -> trap: clock-time only; aiōn here is the age-character of the world-process'
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Stand in a place where others also stand or pass (street corner, doorway, park bench). For ten minutes, notice one
-    specific detail—a shadow, a sound, a texture—and hold it steady in attention. Then ask: what do I see that someone else
-    standing here does not? Then ask: what do they see that I cannot? Do not try to answer; let the questions work as a lens,
-    sharpening the boundary between the shared world and the irreducibly private angle from which each of us inhabits it.'
+  body: 'Stand in a place where others also stand or pass (street corner, doorway, park bench). For ten
+    minutes, notice one specific detail—a shadow, a sound, a texture—and hold it steady in attention.
+    Then ask: what do I see that someone else standing here does not? Then ask: what do they see that
+    I cannot? Do not try to answer; let the questions work as a lens, sharpening the boundary between
+    the shared world and the irreducibly private angle from which each of us inhabits it.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #33'
-    resonance: Both texts posit a unified perceptual field that becomes accessible when mental activity stills or dissolves.
-      Heraclitus's 'world, the same for all' and the Vijnana Bhairava's open field free of objects both describe a common
-      ground revealed through cessation of ordinary cognitive churning (vṛtti).
-    divergence: Heraclitus emphasizes the world as a cosmological constant accessible to rational logos; the Vijnana Bhairava
-      treats the open field as a phenomenological state achieved through deliberate meditative technique.
+    resonance: Both texts posit a unified perceptual field that becomes accessible when mental activity
+      stills or dissolves. Heraclitus's 'world, the same for all' and the Vijnana Bhairava's open field
+      free of objects both describe a common ground revealed through cessation of ordinary cognitive churning
+      (vṛtti).
+    divergence: Heraclitus emphasizes the world as a cosmological constant accessible to rational logos;
+      the Vijnana Bhairava treats the open field as a phenomenological state achieved through deliberate
+      meditative technique.
     passage_id: vijnana_bhairava.yukti_033
   - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
-    resonance: Both texts claim that a single utterance or principle (Heraclitus's aphorism, the Heart Sutra's mantra) encodes
-      a universal truth that transcends individual variation and 'quiets' or stills the ordinary mind's turbulence.
-    divergence: Heraclitus grounds universality in cosmic order (logos); the Heart Sutra grounds it in the emptiness of all
-      fixed categories (śūnyatā).
+    resonance: Both texts claim that a single utterance or principle (Heraclitus's aphorism, the Heart
+      Sutra's mantra) encodes a universal truth that transcends individual variation and 'quiets' or stills
+      the ordinary mind's turbulence.
+    divergence: Heraclitus grounds universality in cosmic order (logos); the Heart Sutra grounds it in
+      the emptiness of all fixed categories (śūnyatā).
     passage_id: heart_sutra.hs_003
   layer_provenance: generated_grounded
 appendixes: []

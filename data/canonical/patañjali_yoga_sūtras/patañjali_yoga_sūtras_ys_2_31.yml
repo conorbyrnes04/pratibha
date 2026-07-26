@@ -66,3 +66,94 @@ abhyasa: Whisper the phrase 'unrestricted, universal' the moment you notice your
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: जातिदेशकालसमयानवच्छिन्नाः सर्वभूमा महाव्रतम्
+- kind: iast
+  label: IAST
+  body: jātideśakālasamayānavacchinnāḥ sārvabhaumā mahāvratam
+- kind: translation
+  label: Pratibha Translation
+  body: These vows, unqualified by class, place, time, or utility, are the great vows, universal in nature.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The Sūtra asserts that only those vows which are free from any limiting conditions—no reference
+    to caste, locality, era, or instrumental value—constitute the true great vows. This establishes a
+    radical egalitarian principle: the ethical commitment is not a function of social status or pragmatic
+    calculation but a universal, absolute obligation. The claim is that such universal vows are the only
+    ones that can truly purify the mind and lead to liberation. The contested move here is the exclusion
+    of all conditioned vows, even those that may appear morally sound, arguing that their conditionality
+    undermines their efficacy. In the Yoga and Sāṃkhya tradition, this reflects the idea that *purusha*
+    (consciousness) is distinct from *prakṛti* (matter) and that only the pure, unconditioned will can
+    transcend *vṛtti* (mental modifications). This Sūtra invites practitioners to transcend the ordinary,
+    socially constructed moral codes and adopt a vow that aligns with the ultimate reality. The Dvivedi
+    commentary echoes this by emphasizing that qualified vows, even if they serve a useful end, are insufficient.
+    The existential application is clear: one must cultivate a vow that is not contingent on external
+    circumstances but rooted in the universal principle of *īśvara*—the supreme, unchanging reality—thereby
+    ensuring that the practice remains steadfast regardless of changing conditions.
+
+
+    Key Terms
+
+
+    **jātideśakāla (जातिदेशकाल)** — (जाति) caste + (देश) place + (काल) time -> a composite of social categories;
+    tradition uses it to denote the conditioned, limited sphere of human activity; default translation
+    ''class, place, time'' misses the nuance of the intertwined social fabric
+
+
+    **mahāvrata (महाव्रत)** — (मह) great + (व्रत) vow -> a vow of supreme magnitude; tradition interprets
+    it as a vow that transcends all conditions; default translation ''great vow'' misses the sense of
+    universal, absolute commitment
+
+
+    **sādhana (साधना)** — practice or discipline; tradition uses it to denote the systematic cultivation
+    of the mind; default translation ''practice'' omits its connotative sense of disciplined effort
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 2.31:** Structural homology: universal vow = universal action; both lack qualifiers
+
+    *Divergence:* Unlike later texts that allow conditioned vows, this Sūtra rejects any conditionality
+
+
+    **Bhaṭṭākara, Yogaśāstra, 2.31:** Both texts emphasize the need for unconditional vows
+
+    *Divergence:* Bhaṭṭākara expands to include the role of *samādhi* in sustaining the vow
+
+
+    **Kapila Samhita, 1.4:** Both assert that true vows are free from *prakṛti* influence
+
+    *Divergence:* Kapila Samhita focuses on *purusha*''s detachment, whereas this Sūtra focuses on the
+    vow''s universality'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: jātideśakāla (जातिदेशकाल)
+    definition: 'source-term jātideśakāla -> in “Universal Great Vows”: tradition uses it to denote the
+      conditioned, limited sphere of human activity -> ''class, place, time'' misses the nuance of the
+      intertwined social fabric'
+  - term: mahāvrata (महाव्रत)
+    definition: 'source-term mahāvrata -> in “Universal Great Vows”: tradition interprets it as a vow
+      that transcends all conditions -> ''great vow'' misses the sense of universal, absolute commitment'
+  - term: sādhana (साधना)
+    definition: 'source-term sādhana -> in “Universal Great Vows”: tradition uses it to denote the systematic
+      cultivation of the mind -> ''practice'' omits its connotative sense of disciplined effort'
+  - term: anavacchinnāḥ
+    definition: 'source-term anavacchinnāḥ -> in “Universal Great Vows”: Unrestricted, unconditioned,
+      not cut off or limited by boundaries -> default English flattens the technical work this term does
+      here'
+  - term: sārvabhaumā
+    definition: 'source-term sārvabhaumā -> in “Universal Great Vows”: Universal, all-pervasive, applicable
+      everywhere and to all beings without exception -> default English flattens the technical work this
+      term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You now bind yourself to a vow that is free from any reference to caste, place, time, or utility,
+    and maintain it consistently in all circumstances.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: These, not qualified by class, place, time,

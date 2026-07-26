@@ -94,3 +94,66 @@ abhyasa: 'Sit comfortably and bring your attention to the soles of your feet. Vi
   points to.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: कालाग्निना कालपदाद् उत्थितेन स्वकम् पुरम् । प्लुष्टम् विचिन्तयेद् अन्ते शान्ताभासस् तदा भवेत्
+    ॥ ५२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: kālāgninā kālapadād utthitena svakam puram | pluṣṭam vicintayed ante śāntābhāsas tadā bhavet ||
+    52 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #25
+
+    One may imagine that one’s own body is incinerated by the Fire
+
+    of Time rising from the ‘time-foot’; at the end [of this process]
+
+    there is the radiant shining of pure tranquillity. || 52'
+- kind: commentary
+  label: Pratibha Commentary
+  body: The teaching frames change as lawful and intelligible, inviting steadiness within transformation.
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kālāgni (कालाग्नि)
+    definition: kāla ‘time/death’ + agni ‘fire’ → the 'fire of time' that consumes all forms at the end
+      of a cosmic cycle; here used as an inner visualization to dissolve the body → apocalyptic ‘fire
+      of time’ imagery misses the dissolving fire at the cosmic end used as practice support
+    lemma_id: kala
+    sense_id: kala.portion
+  - term: śāntābhāsa (शान्ताभास)
+    definition: śānta + ābhāsa ‘apparition/shine’ → 'Peaceful shining' — the tranquil radiance of pure
+      awareness that remains once all objects of identification are dissolved → ‘appearance of peace’—the
+      quiet shining the verse names, not a mood halo
+  - term: svakam puram (स्वकं पुरम्)
+    definition: svaka ‘one’s own’ + pura ‘city’ → 'One's own city' — a term for the body understood as
+      the fortified structure of personal identity → ‘one’s own city’—the body-field as one’s city, not
+      urban metaphor for fun
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Heraclitus Fragments
+    resonance: Both texts frame radical transformation (incineration/transmutation) as a lawful, intelligible
+      process governed by a universal principle (Time-Fire in Bhairava; Fire's ordered transmutations
+      in Heraclitus). The endpoint is not chaos but a refined state—tranquility in one, the ordered cascade
+      of elements in the other.
+    divergence: Heraclitus treats transmutation as cosmological necessity and perpetual flux; Vijnana
+      Bhairava treats it as a meditative technique for achieving stable non-dual awareness, making transformation
+      a path to stillness rather than an eternal condition.
+    passage_id: heraclitus_fragments.hfr_p021
+  - citation: Svetasvatara Upanishad — Yogic Signs, Vision, and the God in All Directions
+    resonance: Both texts describe luminous phenomena arising within a transformative process—radiant
+      shining of pure tranquility in Bhairava; lights, firelike flashes, and moonlike brilliance in Svetasvatara.
+      Both treat these as intelligible markers within a structured yogic unfolding, not random visions.
+    divergence: Svetasvatara presents these lights as precursors or signs to be transcended; Vijnana Bhairava
+      identifies the radiant shining itself as the culmination of the incineration process, making luminosity
+      the goal rather than a waypoint.
+    passage_id: svetasvatara_upanishad.svu_017
+  layer_provenance: generated_grounded

@@ -94,3 +94,68 @@ abhyasa: 'Sit upright and take an easy breath. On the out-breath, chant OM aloud
   interest from the loud beginning of the syllable to that vanishing tail-end, which is the true doorway.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: प्रणवादिसमुच्चारात् प्लुतान्ते शून्यभावानात् । शून्यया परया शक्त्या शून्यताम् एति भैरवि ॥ ३९ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: praṇavādisamuccārāt plutānte śūnyabhāvānāt | śūnyayā parayā śaktyā śūnyatām eti bhairavi || 39
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #14
+
+    O Goddess, by performing complete uccāra of the praṇava and meditating on
+
+    the void at the end of its protracted (saturated) sound, one enters into the
+
+    Spacious Openness by means of the void which is the Supreme Power (parā
+
+    śakti). || 39'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: praṇava (प्रणव)
+    definition: pra- + √nu ‘sound/praise’ → OṂ → the syllable OM, the primal mantra used here as the starting
+      sound → ‘Om chant’ ritualizes the primordial resonating seed
+  - term: pluta (प्लुत)
+    definition: √plu ‘float’ → protracted (vowel) → the prolonged, triple-length vowel; here, the drawn-out
+      final tone stretched until it fades → phonetic ‘prolated vowel’ is also a practice elongation into
+      the open
+  - term: śūnyā parā śakti (शून्या परा शक्ति)
+    definition: empty + supreme + power → the 'empty supreme power' — consciousness-energy free of objective
+      content, which carries one into contentless awareness → ‘empty supreme power’ paradox—emptiness
+      as the highest Śakti, not nihilism
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — Riding the Five Prāṇas – The Six Stages of Bliss
+    resonance: 'Both texts locate liberation through a prāṇic practice that operates as recognition rather
+      than acquisition: Yukti 14 enters Spacious Openness via void-meditation on saturated sound, while
+      Tantrasara 1 describes prāṇāyāma as recognition itself—both treat the breath-sound continuum as
+      the direct gateway to śakti-consciousness.'
+    divergence: Yukti 14 emphasizes the void (śūnya) as the terminal point of sonic saturation, whereas
+      Tantrasara 1 frames prāṇa-work as continuous recognition across all five prāṇas, making the method
+      more systemic than punctual.
+    passage_id: tantrasara.ts_017
+  - citation: Pratyabhijnahrdayam — Sutra 1
+    resonance: 'Both texts identify śakti as the operative principle of manifestation and the ground of
+      consciousness: Yukti 14 enters the Spacious Openness ''by means of the void which is the Supreme
+      Power,'' while Pratyabhijnahrdayam 1 declares śakti (absolute Consciousness) as the cause of all
+      manifestation—both make śakti the fundamental causal and revelatory force.'
+    divergence: Yukti 14 approaches śakti through a phenomenological practice (uccāra and void-meditation),
+      whereas Pratyabhijnahrdayam 1 states śakti metaphysically as the eternal cause, treating it as principle
+      rather than experiential method.
+    passage_id: pratyabhijnahrdayam.phr_001
+  layer_provenance: generated_grounded

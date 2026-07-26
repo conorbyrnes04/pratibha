@@ -98,3 +98,65 @@ abhyasa: 'Sit and take three slow breaths to settle. Then begin to expand your s
   the whole field looking.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: अस्य सर्वस्य विश्वस्य पर्यन्तेषु समन्ततः । अध्वप्रक्रियया तत्त्वं शैवं ध्यत्वा महोदयः ॥ ५७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: asya sarvasya viśvasya paryanteṣu samantataḥ | adhvaprakriyayā tattvaṃ śaivaṃ dhyatvā mahodayaḥ
+    || 57 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #30
+
+    Thoroughly meditating on the adhva-prakriyā, up to the limits of
+
+    this entire universe, then on the Śaiva Tattva, there comes the
+
+    Great Dawn of liberation (cf. v. 29). || 57'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: adhvan (अध्वन्)
+    definition: √adh ‘undertake’ → course/path → the 'path' or graded ordering of the cosmos; the six
+      unfoldings (of sound and reality) mapping how the one consciousness becomes the many levels of manifestation
+      → English ‘path’ suggests a road to elsewhere; here the cosmic course is a mode of consciousness
+      itself
+  - term: tattva (तत्त्व)
+    definition: tat + -tva → that-ness/principle → a 'reality-level' or principle; the 36 tattvas are
+      the stages from pure Śiva-consciousness down to gross matter → ‘element/truth’ flattens a constitutive
+      principle in the Śaiva map—or true reality vs construct
+  - term: mahodaya (महोदय)
+    definition: maha ‘great’ + udaya ‘rising’ → the 'great rising' or great awakening — the sudden expansion
+      of consciousness when the divide between self and universe dissolves → ‘great rising’ eventizes
+      what is the dawning of expanded recognition
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 4
+    resonance: 'Both texts describe a final cognitive move that transcends ordinary knowledge: Yukti #30
+      progresses through meditation on cosmic structure (adhva-prakriyā) to culminate in direct recognition
+      beyond conceptual knowing (''Great Dawn''), while Plotinus describes awareness of the ultimate Principle
+      that ''transcends all knowledge and intellection'' through a presence beyond multiplicity.'
+    divergence: Plotinus emphasizes transcendence of intellection itself as the method, whereas Vijnana
+      Bhairava uses structured meditation on tattva-levels as the gateway to recognition—knowledge is
+      not abandoned but transmuted into direct disclosure.
+    passage_id: plotinus_enneads.enn_vi_9_04
+  - citation: Patañjali Yoga Sūtras 1.3
+    resonance: 'Both texts mark a threshold moment where the meditator''s ordinary consciousness resolves
+      into recognition of intrinsic nature: Yukti #30''s ''Great Dawn of liberation'' mirrors Patañjali''s
+      ''seer remains in his own nature''—a return to unmediated self-recognition after the contemplative
+      process.'
+    divergence: Patañjali emphasizes the seer's unchanging nature as the fruit, while Vijnana Bhairava
+      frames the outcome as a luminous dawn—a sudden disclosure rather than a return to what already is.
+    passage_id: patañjali_yoga_sūtras.ys_1_03
+  layer_provenance: generated_grounded
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.

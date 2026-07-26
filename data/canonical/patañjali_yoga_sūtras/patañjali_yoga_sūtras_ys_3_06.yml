@@ -102,3 +102,103 @@ abhyasa: 'Select a simple object of samyama appropriate to your current capacity
   of ''I-ness'' itself. Let the practice itself show you when to advance.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: तस्य भूमिषु विनियोगः
+- kind: iast
+  label: IAST
+  body: tasya bhūmiṣu viniyogaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: It is applied by stages.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sūtra asserts that Samyama is not a monolithic act but a graduated process, a claim that
+    situates the practice within the broader Yoga and Sāṃkhya framework where knowledge unfolds through
+    successive levels of refinement. The contested move is the implication that one cannot immediately
+    attain the highest form of Samyama; rather, one must traverse the bhūmis—gross, subtle, and absolute—much
+    like the Sāṃkhya evolution of prakṛti from gross to subtle to pure consciousness. This staged approach
+    mirrors the Yogic principle that the mind’s vṛtti (mental modifications) must be purified incrementally
+    before the self (puruṣa) can be fully realized. Dvivedi’s commentary reinforces this by illustrating
+    the progressive dismantling of an image, from its gross form to its essential unity with the self.
+    The existential application lies in the disciplined, stepwise cultivation of awareness: one does not
+    leap to transcendence but methodically dissects the mind’s layers, thereby aligning with the Yoga
+    Sutra’s emphasis on systematic practice. This gradual method also safeguards against the pitfalls
+    of premature attachment to the illusion of immediate insight, ensuring that the practitioner’s experience
+    remains grounded in the evolving nature of consciousness.
+
+
+    Key Terms
+
+
+    **samāyama (समायाम)** — from ‘sam’ (together) + ‘āyama’ (extension) – the unified, extended awareness
+    of a specific object; default translation ‘concentration’ omits the integrative, progressive nature
+    of the process.
+
+
+    **bhūmi (भूमि)** — etymology: ‘earth, ground’ → in Yoga, the successive planes of experience (gross,
+    subtle, absolute); default translation ‘ground’ fails to convey the hierarchical stages of realization.
+
+
+    **vṛtti (वृत्ति)** — etymology: ‘turning, modification’ → the fluctuations of mind; default translation
+    ‘mental modification’ misses its role as the dynamic field that Samyama must purify.
+
+
+    **puruṣa (पुरुष)** — etymology: ‘person, self’ → the pure, unchanging consciousness; default translation
+    ‘self’ neglects its distinction from prakṛti and its ultimate role as the witness of all bhūmis.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sutra 1.1, 1.2:** Both sutras establish the foundational distinction between puruṣa and prakṛti,
+    setting the stage for the later claim that Samyama operates within the bhūmis of prakṛti.
+
+    *Divergence:* While 1.1 and 1.2 present the dichotomy, 3.6 specifies the procedural application of
+    Samyama, thereby extending the abstract distinction into concrete practice.
+
+
+    **Yoga Sutra 2.23:** The notion of gradual purification of vṛtti is echoed in the discussion of samādhi
+    as a progressive absorption.
+
+    *Divergence:* 2.23 focuses on the attainment of samādhi itself, whereas 3.6 delineates the method
+    (staged Samyama) that leads to that absorption.
+
+
+    **Sāṃkhya Kāṇḍa 2.1:** Both texts describe the evolution of prakṛti through bhūmis.
+
+    *Divergence:* Sāṃkhya presents the evolution as a metaphysical unfolding, while 3.6 frames it as a
+    practical, meditative methodology.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: saṃyama (संयम)
+    definition: 'sam-√yam ‘hold together’ → the triad dhāraṇā-dhyāna-samādhi as one -> in “Staged Application
+      of Samyama”: meditation (dhyāna), and absorption (samādhi) -> not generic self-control; technical
+      confluence that yields prajñā and siddhis'
+  - term: yoga (योग)
+    definition: '√yuj ‘yoke, harness, join’ -> in “Staged Application of Samyama”: It is applied by stages.
+      -> not a posture class or romantic ‘union’ fantasy — technical stilling/harnessing of mind'
+    lemma_id: yoga
+    sense_id: yoga.classical
+  - term: samāyama (समायाम)
+    definition: '‘sam’ (together) + ‘āyama’ (extension) -> in “Staged Application of Samyama”: the unified,
+      extended awareness of a specific object -> ‘concentration’ omits the integrative, progressive nature
+      of the process'
+  - term: bhūmi (भूमि)
+    definition: '‘earth, ground’ → in Yoga, the successive planes of experience (gross, subtle, absolute)
+      -> in “Staged Application of Samyama”: ‘earth, ground’ → in Yoga, the successive planes of experience
+      (gross, subtle, absolute) -> ‘ground’ fails to convey the hierarchical stages of realization'
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Staged Application of Samyama”:
+      ‘turning, modification’ → the fluctuations of mind -> not ‘bad thoughts’ only — any cognitive wave
+      (valid cognition, error, fantasy, sleep, memory)'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Apply Samyama progressively through the bhūmis, beginning with the gross form, then the subtle,
+    and finally the absolute, ensuring each stage is fully integrated before proceeding.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: It is used by stages.

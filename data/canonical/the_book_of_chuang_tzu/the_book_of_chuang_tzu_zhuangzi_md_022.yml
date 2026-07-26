@@ -121,3 +121,110 @@ abhyasa: Catch yourself mid-explanation today—when you're about to tell someon
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '知不得問，反於白水之南，登狐闋之上，而睹狂屈焉。
+
+    知以之言也問乎狂屈。
+
+    狂屈曰：「唉！
+
+    予知之，將語若。
+
+    」中欲言而忘其所欲言。
+
+    知不得問，反於帝宮，見黃帝而問焉。
+
+    黃帝曰：「無思無慮始知道，無處無服始安道，無從無道始得道。
+
+    」知問黃帝曰：「我與若知之，彼與彼不知也，其孰是邪？
+
+    」黃帝曰：「彼無為謂真是也，狂屈似之，我與汝終不近也。
+
+    夫知者不言，言者不知，故聖人行不言之教。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'Knowledge asked Do-nothing Say-nothing: "By what thoughts, what cogitations is the Way known?
+    In what rest, what accord is the Way approached? Following what, pursuing what is the Way attained?"
+    Do-nothing Say-nothing did not answer—not from unwillingness but from inability. The Yellow Emperor
+    said: "By no thoughts, no cogitations the Way is known. By resting in nothing, according in nothing
+    the Way is approached. By following nothing, pursuing nothing the Way is attained." Knowledge then
+    asked: "You and I know this; those two do not. Who is right?" The Yellow Emperor replied: "That one
+    speaks genuine truth through not knowing. This one approximates it through forgetting. You and I—we
+    do not approach it at all. Those who know do not speak; those who speak do not know."'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The passage enacts a performative refutation of the question itself. Knowledge''s three-part
+    inquiry assumes the Way is an object to be located through correct method—a category error that the
+    Yellow Emperor''s paradox exposes. The contested move is the inversion of epistemic authority: Do-nothing
+    Say-nothing''s silence and the Mad Cripple''s forgetting are revealed as truer responses than the
+    Yellow Emperor''s articulate negations. Speaking about the Way, even negatively, already misses it.
+    The teaching cannot be transmitted as content; it can only be embodied through the abandonment of
+    the very desire to know that structures Knowledge''s quest.
+
+
+    Key Terms:
+
+
+    **道 dào** - path/way/speak → in Zhuangzi: the unnameable generative principle that precedes all distinction
+    → translation stakes: ''Way'' risks reifying what must remain unobjectifiable
+
+    **無為 wúwéi** - non-action/non-forcing → actionless action that aligns with spontaneous unfolding →
+    translation stakes: ''non-action'' suggests passivity; ''non-interference'' better captures the active
+    receptivity
+
+    **知 zhī** - knowledge/knowing/wisdom → in this chapter: the character Knowledge (知) embodies the trap
+    of seeking → translation stakes: personifying ''Knowledge'' as a seeker reveals how the cognitive
+    drive itself obstructs the Way'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (the Paradox of Knowing the Way), the nameless source-and-course that lets beings move
+      by their own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed doctrine one can
+      possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (the Paradox of Knowing the Way), unforced congruence with conditions: skill that does not
+      obstruct the work -> trap: “non-action” as passivity; wúwéi can be highly skilled activity without
+      strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: zhī yán (卮言)
+    definition: '卮言 “goblet words” — speech that tips and rights itself, inexhaustible like a wine vessel
+      -> in this passage (the Paradox of Knowing the Way), language that does not harden into fixed theses;
+      words that pour with the situation -> trap: relativist chatter; goblet words are a disciplined flexible
+      speaking, not empty irony'
+  - term: zìrán (自然)
+    definition: '自然 “self-so” — thus-of-itself, not “picturesque nature” -> in this passage (the Paradox
+      of Knowing the Way), spontaneous so-ness: things unfolding without forced contrivance -> trap: Romantic
+      wilderness aesthetics; zìrán is ontological non-forcing, not scenery'
+    lemma_id: ziran
+    sense_id: ziran.daoist
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Laozi, Daodejing 1: "The Way that can be spoken is not the eternal Way"'
+    resonance: both texts establish speech as a fundamental barrier to accessing the Way; both privilege
+      silence as truer than articulation
+    divergence: Laozi frames this as cosmological principle (the Way precedes naming); Zhuangzi dramatizes
+      it through character failure, making the paradox performative rather than declarative
+    passage_id: ''
+  - citation: 'Wittgenstein, Tractatus 7: "Whereof one cannot speak, thereof one must be silent"'
+    resonance: both identify a limit to propositional knowledge; both suggest the unsayable is not thereby
+      unknowable
+    divergence: Wittgenstein preserves a mystical realm beyond language; Zhuangzi suggests the Way operates
+      *through* forgetting and non-knowing as active modes, not as silent remainder
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: When you next feel compelled to explain something you deeply understand, pause. Notice the impulse
+    to translate inner knowing into words. Instead, perform one deliberate action related to that knowing—a
+    gesture, a silence, a reorientation of attention—without commentary. Observe whether the other person
+    grasps something through your non-explanation that speech would have obscured.

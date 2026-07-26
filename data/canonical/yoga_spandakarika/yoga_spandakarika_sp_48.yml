@@ -119,3 +119,65 @@ abhyasa: 'Pick an ordinary object in front of you right now — a cup, a doorkno
   same force from a fetter into an opening.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: परामृतरसापायस्तस्य यः प्रत्ययोद्भवः । तेनास्वतन्त्रतामेति स च तन्मात्रगोचरः ॥ ४६ ॥ स्वरूपावरणे
+    चास्य शक्तयः सततोत्थिताः । यतः शब्दानुवेधेन न विना प्रत्ययोद्भवः ॥ ४७ ॥ सेयं क्रियात्मिका शक्तिः शिवस्य
+    पशुवर्तिनी । बन्धयित्री स्वमार्गस्था ज्ञाता सिद्ध्युपपादिका ॥ ४८ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: parāmṛtarasāpāyastasya yaḥ pratyayodbhavaḥ | tenāsvatantratāmeti sa ca tanmātragocaraḥ || 46 ||
+    svarūpāvaraṇe cāsya śaktayaḥ satatotthitāḥ | yataḥ śabdānuvedhena na vinā pratyayodbhavaḥ || 47 ||
+    seyaṃ kriyātmikā śaktiḥ śivasya paśuvartinī | bandhayitrī svamārgasthā jñātā siddhyupapādikā || 48
+    ||
+- kind: translation
+  label: Pratibha Translation
+  body: Shared source passage with Stanza 46. See Stanza 46 for the full translation and commentary.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: pratyaya (प्रत्यय)
+    definition: prati + √i → cognition/mental presentation → A determinate mental construct or definite
+      cognition — the moment a thought 'lands' on a specific object → ‘idea/belief’ flattens a momentary
+      knowing that arises and passes
+  - term: śabdānuvedha (शब्दानुवेध)
+    definition: śabda + anuvedha ‘piercing/through-and-through’ → the interpenetration of cognition by
+      word/language, whereby every thought is inseparably threaded with naming and concept → ‘pierced
+      by sound’—mantric permeation, not loud noise
+  - term: kriyātmikā śakti (क्रियात्मिका शक्ति)
+    definition: kriyā ‘action’ + ātmikā ‘whose self is’ + śakti → the activity-power of consciousness;
+      the same creative energy that binds the unaware soul and frees the one who recognizes its source
+      as Śiva → ‘power of action’ flattens Śakti whose very essence is creative doing
+    lemma_id: sakti
+    sense_id: sakti.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 'Vijnana Bhairava — Yukti #106'
+    resonance: 'Both texts pause conceptual elaboration to pose a direct question that dissolves the questioner''s
+      ordinary framework: the Spandakarika invites insight to disclose itself by suspending interpretation,
+      while Vijnana Bhairava 106 asks ''How can the unchanging Self be the locus of cognition or action?''—a
+      koan-like inquiry that short-circuits logical analysis to trigger non-dual recognition.'
+    divergence: The Spandakarika emphasizes the spontaneous disclosure of insight through cessation of
+      interpretive effort, while Vijnana Bhairava uses paradox as a deliberate contemplative technique
+      to expose the impossibility of subject-object duality.
+    passage_id: vijnana_bhairava.yukti_106
+  - citation: Astavakra Gita — 8.1 — 8.4
+    resonance: 'Both texts use a structural reversal to point toward liberation: the Spandakarika''s instruction
+      to pause interpretation and let insight disclose itself mirrors the Astavakra Gita''s recognition
+      that bondage arises when the mind desires or grieves, and freedom arises when the mind neither desires
+      nor grieves—both locate the shift in a cessation of mental movement rather than in action.'
+    divergence: The Astavakra Gita frames this as a direct teaching about the mind's oscillation between
+      bondage and freedom, while the Spandakarika frames it as a contemplative method (pause, let disclose)
+      that presupposes the spontaneous nature of insight.
+    passage_id: astavakra_gita.asg_sum_08_01_08_04
+  layer_provenance: generated_grounded

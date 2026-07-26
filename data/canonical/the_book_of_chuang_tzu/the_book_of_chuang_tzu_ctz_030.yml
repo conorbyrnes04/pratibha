@@ -319,6 +319,33 @@ pratibha_layers:
     for a modern, source-honest excerpt. Full chapter text remains in the public-domain appendix for philological
     comparison; the display layers do not reproduce Giles wholesale.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dé (德)
+    definition: '德 “potency, virtue, obtained power” — how the Way is efficacious in a particular being
+      -> in this passage (on Swords.), inner potency that shows as unforced efficacy rather than moral
+      display -> trap: Victorian “virtue” as propriety; dé is charismatic power of alignment, not rule-keeping'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (on Swords.), the nameless source-and-course that lets beings move by their own measure
+      -> trap: a deity named Tao, a lifestyle brand, or a fixed doctrine one can possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: zhī yán (卮言)
+    definition: '卮言 “goblet words” — speech that tips and rights itself, inexhaustible like a wine vessel
+      -> in this passage (on Swords.), language that does not harden into fixed theses; words that pour
+      with the situation -> trap: relativist chatter; goblet words are a disciplined flexible speaking,
+      not empty irony'
+  - term: wúwéi (無為)
+    definition: '無 “without” + 為 “contrived doing” — action without aggressive interference -> in this
+      passage (on Swords.), unforced congruence with conditions: skill that does not obstruct the work
+      -> trap: “non-action” as passivity; wúwéi can be highly skilled activity without strain'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.

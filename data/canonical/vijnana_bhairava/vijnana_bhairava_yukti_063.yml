@@ -83,3 +83,61 @@ abhyasa: Sit comfortably and take a normal breath. On the exhale, softly voice a
   mind wanders, that is fine — simply return to riding the next exhale to its vanishing.
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: वर्णस्य सविसर्गस्य विसर्गान्तं चितिं कुरु । निराधारेण चित्तेन स्पृशेद् ब्रह्म सनातनम् ॥ ९१ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: varṇasya savisargasya visargāntaṃ citiṃ kuru | nirādhāreṇa cittena spṛśed brahma sanātanam ||
+    91 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #63
+
+    Focus awareness on the end of the visarga sound of a [mantric]
+
+    syllable that has a visarga; when the mind has become
+
+    ‘supportless’, one may touch the eternal Absolute. || 91'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: visarga (विसर्ग)
+    definition: 'vi- + √sṛj ‘emit’ → release/emission (also : mark) → the soft aspirate breath ('':'')
+      closing a Sanskrit syllable; symbolically, the outpouring of consciousness that then returns → ‘exhale/release’
+      alone misses emission as the outward character of breath and phoneme'
+  - term: nirādhāra (निराधार)
+    definition: nir- + ādhāra ‘support’ → 'Without support' — a mind resting on no object, free of any
+      content to grip → ‘unsupported’ as precarious misses abiding without extrinsic prop
+  - term: citi (चिति)
+    definition: √cit → conscious power (Śakti as citi) → pure consciousness or the act of awareing, here
+      directed to the point where sound dissolves → not ‘intellect’—the autonomous power of consciousness
+    lemma_id: cit
+    sense_id: cit.shaiva
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tilopa Mahamudra — Look at the Looker
+    resonance: Both texts redirect attention from external content (the visarga sound's end, the guru's
+      form) to the knower itself; clarity arises when awareness turns inward to its own nature rather
+      than remaining bound to what is known.
+    divergence: Yukti 63 uses sonic/mantric technique to achieve supportlessness; Tilopa emphasizes devotional
+      surrender and the guru's grace as the gateway to innate awareness.
+    passage_id: tilopa_mahamudra.til_003
+  - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 8
+    resonance: Both prescribe withdrawal from sensory and material engagement as the method to access
+      a transcendent principle (the eternal Absolute, Beauty); the inward turn is the necessary negation
+      that permits vision.
+    divergence: Yukti 63 employs a precise sonic anchor and internal focus; Plotinus emphasizes a mystical
+      ascent through intellectual negation and contemplative reversion to the One.
+    passage_id: plotinus_enneads.enn_i_6_08
+  layer_provenance: generated_grounded

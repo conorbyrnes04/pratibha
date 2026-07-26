@@ -115,3 +115,83 @@ abhyasa: In your next conversation where you feel the urge to steer or correct, 
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '將欲取天下而為之，吾見其不得已。
+
+    天下神器，不可為也，為者敗之，執者失之。
+
+    故物或行或隨；
+
+    或歔或吹；
+
+    或強或羸；
+
+    或挫或隳。
+
+    是以聖人去甚，去奢，去泰。'
+- kind: translation
+  label: Pratibha Translation
+  body: 1. When one wishes to seize the world and act to obtain it, I see that it cannot be done. The
+    world’s spirit‑like power is not for the making of the doer; the one who tries to make it destroys
+    it, the one who holds it loses it. 2. Thus things either move or follow; either are crushed or blown;
+    either are strong or weak; either are broken or toppled. Therefore the sage abandons excess, extravagance,
+    and complacency.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This chapter asserts that the Tao of the world is a spirit‑like force that resists active conquest;
+    the contested move is the attempt to "take the kingdom" by force. The sage’s response—removing excess,
+    extravagance, and complacency—mirrors the earlier teaching that one should act without striving. By
+    refusing to impose will on the natural order, the sage preserves the world’s integrity, allowing it
+    to unfold without collapse. The passage thus illustrates the paradox that the more one tries to control,
+    the more one loses, and that true mastery lies in non‑action (wúwéi).
+
+
+    Key Terms:
+
+
+    **天下神器** — world’s spirit‑like power -> Taoist sense: the inherent, spontaneous force of the cosmos
+    -> translation stakes: cannot be grasped by force
+
+    **去甚** — to abandon excess -> Taoist sense: to let go of over‑indulgence -> translation stakes: a
+    call to simplicity'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “The Unattainable Kingdom”: does philosophical work
+      in this passage -> not canonized saint; the one who acts by emptying self-assertion so the world
+      orders itself'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “The Unattainable Kingdom”:
+      does philosophical work in this passage -> not only ‘the world’ as map; the realm that cannot be
+      seized by contrivance'
+  - term: tiānxià shénqì (天下神器)
+    definition: '天下 ‘all-under-heaven’ + 神器 ‘spirit-like vessel/instrument’ -> in “The Unattainable Kingdom”:
+      the world seen as something with its own integrity, not raw material to be shaped -> not a sacred
+      object to seize; the world’s holy implement that breaks when forced'
+  - term: qiáng (強)
+    definition: '強 ‘strong/forceful’ -> in “The Unattainable Kingdom”: does philosophical work in this
+      passage -> not virtue of dominance; often the stiff strength that dies first, opposite of living
+      soft'
+  - term: 去甚
+    definition: 'source-term 去甚 -> in “The Unattainable Kingdom”: to abandon excess -> Taoist sense: to
+      let go of over‑indulgence -> -> a call to simplicity'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: chapter 2 (The Tao is the source of all things)
+    resonance: both chapters emphasize the Tao’s spontaneous nature
+    divergence: chapter 29 focuses on political ambition, chapter 2 on cosmological origin
+    passage_id: ''
+  - citation: chapter 48 (The sage is the child of the world)
+    resonance: both warn against over‑control
+    divergence: chapter 48 uses childlike trust, chapter 29 uses political metaphor
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand still in a quiet place, breathe deeply, and let thoughts of ambition drift away like wind.
+    Notice how the mind loosens when you stop forcing outcomes.

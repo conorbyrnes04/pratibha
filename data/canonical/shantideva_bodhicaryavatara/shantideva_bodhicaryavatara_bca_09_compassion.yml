@@ -118,3 +118,105 @@ abhyasa: 'Walk through your day and each time you catch yourself flaring up in r
 translation_provenance: Rendered from the public-domain Sanskrit (GRETIL, BCA 9.155,9.156,9.157,9.164,9.166,9.167,9.168).
   Study rendering.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Prajñā-pāramitā chapter, closing
+    aspiration). English anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
+- kind: iast
+  label: IAST
+  body: 'Key terms in IAST: *śūnyatā* ("the void," emptiness), *karuṇā* (compassion), *praṇidhāna* (aspiration,
+    vow), *saṃvṛti* ("the Veiled Truth"), *duḥkhāgni* ("the fire of sorrow," fire of suffering).'
+- kind: translation
+  label: Pratibha Translation
+  body: If only my fellow beings could understand that all is empty [śūnyatā]! When will the day come
+    when I may bring peace, with gentle care, to those tormented in the fire of sorrow—when I may reverently
+    show the beings who imagine a solid, real world that all is empty, and that merit is gathered by seeing
+    past the veiled truth [saṃvṛti]?
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Śāntideva ends his wisdom chapter not with a proof but with a vow, and this is the decisive move
+    that saves Madhyamaka emptiness from cold detachment. Having spent the chapter dismantling the solidity
+    of self, world, and relations, he does not conclude "therefore nothing matters." He concludes with
+    an ache of compassion so intense it takes the form of a longing question: "when will the day come...?"
+    The counterintuitive and profoundly important claim is that the realization of emptiness *intensifies*
+    rather than dissolves compassion. One might expect that seeing beings as empty would make caring for
+    them absurd—why comfort a dream-figure? Śāntideva''s answer, embodied rather than argued, is that
+    beings suffer precisely *because* they "imagine a real world," reifying self and things and so generating
+    the fire of sorrow (*duḥkhāgni*). Their suffering is real at the conventional level even though its
+    cause is a mistake about the ultimate—and the bodhisattva''s tears are for exactly that: intelligent
+    beings tormenting themselves over what does not exist as they take it to. The vow, then, unites the
+    two truths in a single act: he will comfort them "with sweetness" (conventional compassion) *and*
+    show them emptiness (ultimate wisdom), because only the second finally extinguishes the fire the first
+    can only soothe. This is the summit of the pilot''s arc: emptiness and bodhicitta are not two projects
+    but one. Wisdom without compassion is arid; compassion without wisdom cannot heal the root. For the
+    retreatant it is the answer to the fear that emptiness leads to nihilism or indifference—Śāntideva
+    shows that the deepest seeing of the void arrives as the most tender wish to free all beings.
+
+
+    Key Terms:
+
+
+    **śūnyatā (शून्यता)** — Etymology: *śūnya* (empty) + *-tā*: "emptiness." Here the object of an aspiration
+    to be *shared*—the bodhisattva longs for others to realize it, since it alone finally frees them.
+
+    **karuṇā (करुणा)** — Etymology: compassion, the wish to remove suffering. Shown here fused with wisdom
+    rather than opposed to it—emptiness realized *as* boundless care.
+
+    **praṇidhāna (प्रणिधान)** — Etymology: *pra-ni-√dhā*, "to set down before, resolve": "aspiration,
+    vow." The chapter culminates in this forward-leaning vow, converting insight into a commitment to
+    act for all beings.
+
+    **duḥkhāgni (दुःखाग्नि)** — Etymology: *duḥkha* (suffering) + *agni* (fire): "the fire of sorrow."
+    Barnett''s "fire of sorrow"; the self-inflicted burning of beings who reify a world that is empty.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śūnyatā (शून्यता)
+    definition: 'Etymology: *śūnya* (empty) + *-tā*: "emptiness." Here the object of an aspiration to
+      be *shared*—the bodhisattva longs for others to realize it, since it alone finally frees them.'
+    lemma_id: sunyata
+    sense_id: sunyata.madhyamaka
+  - term: karuṇā (करुणा)
+    definition: 'Etymology: compassion, the wish to remove suffering. Shown here fused with wisdom rather
+      than opposed to it—emptiness realized *as* boundless care.'
+  - term: praṇidhāna (प्रणिधान)
+    definition: 'Etymology: *pra-ni-√dhā*, "to set down before, resolve": "aspiration, vow." The chapter
+      culminates in this forward-leaning vow, converting insight into a commitment to act for all beings.'
+  - term: duḥkhāgni (दुःखाग्नि)
+    definition: 'Etymology: *duḥkha* (suffering) + *agni* (fire): "the fire of sorrow." Barnett''s "fire
+      of sorrow"; the self-inflicted burning of beings who reify a world that is empty.'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Milarepa, "Compassion Tramples Demon Talk"
+    resonance: the union of hard-won solitary realization with active compassion turned back toward the
+      very beings (even hostile kin) who suffer in delusion.
+    divergence: Milarepa's compassion is expressed through tantric song and biographical drama; Śāntideva's
+      through a formal bodhisattva vow closing a philosophical chapter.
+    passage_id: ''
+  - citation: Plotinus, Enneads (the sage who, having seen the One, returns to order and care for the
+      lower)
+    resonance: vision of the ultimate issuing in beneficent return, not withdrawal.
+    divergence: Plotinus's return flows from plenitude descending; Śāntideva's flows from emptiness realized
+      as compassion, with beings to be actively freed.
+    passage_id: ''
+  - citation: Boddhisattva vow / Avalokiteśvara motif (delaying one's own peace for all beings)
+    resonance: the refusal to rest in private liberation while others burn.
+    divergence: here the vow is explicitly welded to *emptiness*—the compassion is for beings who suffer
+      by mistaking the empty for the real, so wisdom is the ultimate form the compassion takes.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'End a period of emptiness-contemplation by turning it outward: picture one person you know who
+    is "tortured in the fire of sorrow" by taking some empty thing as terribly solid. Silently make Śāntideva''s
+    twofold wish for them—"may you be comforted, and may you see that this is empty." Let the insight
+    you have touched become, in this moment, a vow rather than a possession.'
+- kind: appendix
+  label: Public-domain anchor (Barnett 1909)
+  body: Would that my fellow-creatures should understand that all is as the void! Then when will the day
+    come when I may bring peace to them that are tortured in the fire of sorrow by my ministrations of
+    sweetness, and when I may reverently declare to the souls who imagine a real world that all is void,
+    and righteousness is gathered by looking beyond the Veiled Truth?

@@ -80,3 +80,64 @@ abhyasa: 'Sit and let your gaze rest on any single object — a cup, a leaf, the
   calmly turn it once more toward the one who is aware. Five to ten minutes is enough.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: ज्ञानप्रकाशकं सर्वं सर्वेणात्मा प्रकाशकः । एकम् एकस्वभावत्वात् ज्ञानं ज्ञेयं विभाव्यते ॥ १३७ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: jñānaprakāśakaṃ sarvaṃ sarveṇātmā prakāśakaḥ | ekam ekasvabhāvatvāt jñānaṃ jñeyaṃ vibhāvyate ||
+    137 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'YUKTI #109
+
+    Everything is revealed by insight (or consciousness), and the self is revealed by
+
+    everything. Due to there being only one essential nature, knowables are [to be]
+
+    contemplated as [consisting of] One Consciousness. || 137'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: prakāśa (प्रकाश)
+    definition: pra- + √kāś ‘shine forth’ → the self-luminous light of consciousness by which everything
+      is revealed → ‘light’ as glow/mood misses the condition under which anything appears
+    lemma_id: prakasa
+    sense_id: prakasa.shaiva
+  - term: jñeya (ज्ञेय)
+    definition: √jñā + -ya → knowable → the known, the object of awareness — here shown to be inseparable
+      from the knowing → ‘object of knowledge’ is exactly what this teaching relativizes
+    lemma_id: jnana
+    sense_id: jnana.shaiva
+  - term: ekasvabhāva (एकस्वभाव)
+    definition: eka ‘one’ + svabhāva ‘own-being’ → having a single nature; the shared identity of knower
+      and known as one consciousness → ‘one nature’ slogans miss single own-being shared by all that appears
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Siva Sutra — Āṇavopāya
+    resonance: 'Both texts establish a reflexive structure where consciousness itself becomes the instrument
+      of self-knowledge: in Yukti 109, ''everything is revealed by insight'' and ''the self is revealed
+      by everything'' creates a bidirectional loop; Siva Sutra states ''From consciousness, the Self is
+      known,'' making consciousness the gateway to self-recognition rather than an object among objects.'
+    divergence: Vijnana Bhairava emphasizes the reversal of attention (from content back to knower) as
+      the operative move, while Siva Sutra presents consciousness as a direct epistemic principle or aphoristic
+      axiom.
+    passage_id: siva_sutra.ss_iii_7
+  - citation: 'Know Yourself (Ibn Arabi / Balyani) — Pearl #14'
+    resonance: 'Both dissolve the subject-object duality that ordinarily structures knowledge: Yukti 109''s
+      claim that ''the self is revealed by everything'' parallels Ibn Arabi''s ''no difference between
+      sender, sent, and receiver''—in both, the triadic separation collapses into non-dual recognition.'
+    divergence: The Vijnana Bhairava passage works through the reversal of attention within consciousness
+      itself, while the Sufi formulation operates through the metaphysical unity of divine manifestation.
+    passage_id: know_yourself_ibn_arabi_balyani.kys_p014
+  layer_provenance: generated_grounded

@@ -87,3 +87,70 @@ abhyasa: 'The next time a strong emotion actually seizes you today — a spike o
   the places you were told to avoid.'
 translation_provenance: Rendered from the public-domain KSTS Sanskrit (IAST). Study rendering; not a critical
   edition.
+pratibha_layers:
+- kind: original
+  body: अतिक्रुद्धः प्रहृष्टो वा किं करोमीति वा मृशन् । धावन्वा यत्पदं गच्छेत्तत्र स्पन्दः प्रतिष्ठितः
+    ॥ २२ ॥
+  layer_provenance: sourced
+- kind: iast
+  body: atikruddhaḥ prahṛṣṭo vā kiṃ karomīti vā mṛśan | dhāvanvā yatpadaṃ gacchettatra spandaḥ pratiṣṭhitaḥ
+    || 22 ||
+- kind: translation
+  label: Pratibha Translation
+  body: 'The profound and stable sacred tremor can be reached in extreme states: anger, intense joy, mental
+    wandering, or the drive toward survival.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'These states are vast moments of unity. The tantrika welcomes them without losing awareness of
+    the source, and all the manifestations autoliberate themselves in the Mahamudra. Certain disciples
+    choose to ignore the danger by renouncing the powerful states and the larger emotions; others transform
+    the disturbances by focusing on the divine. The tantrika takes all things as the manifestation of
+    the infinite and, in this way, sees all emergences right from the start as the sacred path of illumination,
+    as the expression of the limitless. It is no longer even necessary to wait for the disturbances to
+    return to the source in order to be liberated: they are, in essence, liberation. In this very place,
+    so richly adorned by sacred gatherings (tshogs-kyi ‘khor-lo) , [Being’s nothingness replete with everything
+    in highest'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: spanda (स्पन्द)
+    definition: √spand ‘quiver/throb’ → the subtle throb or vibration of consciousness — its self-stirring
+      — that underlies and enlivens all experience → ‘vibration/energy’ physicalizes or New-Ages the throb
+      of consciousness itself
+    lemma_id: spanda
+    sense_id: spanda.shaiva
+  - term: pada (पद)
+    definition: √pad ‘go’ → station/word/footing → A 'place' or state; here, the condition of heightened
+      intensity in which spanda becomes evident → ‘word/step’ ambiguity—here a station or level of reality
+  - term: pratiṣṭhita (प्रतिष्ठित)
+    definition: prati + √sthā → established → firmly established or grounded; indicating that spanda is
+      the stable base revealed within the extreme state → ‘established’ as credential misses being firmly
+      seated in the Real
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it fully without seeking an outcome. Afterward, rest
+    for one minute in the felt sense of simple presence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Tantrasara — The Three Śaktis and the Twelve Kālīs
+    resonance: Both texts locate a unified awareness within the full spectrum of experience—Spandakarika
+      finds the sacred tremor (spanda) accessible through extreme emotional states, while Tantrasara teaches
+      recognition of Śakti operative across the entire architecture of experience. Each makes the move
+      of dissolving the boundary between ordinary and transcendent by revealing the divine principle already
+      active in all conditions.
+    divergence: Spandakarika emphasizes the *intensity* of emotional extremity as the gateway, whereas
+      Tantrasara emphasizes *recognition* of the principle already present; one privileges the rupture
+      of affect, the other the shift in perception.
+    passage_id: tantrasara.ts_014
+  - citation: Pratyabhijnahrdayam — Sutra 12
+    resonance: Both texts identify a fundamental ignorance that obscures the recognition of one's own
+      authorship or agency within experience. Spandakarika's commentary frames extreme states as moments
+      of unity accessible through awareness, while Pratyabhijnahrdayam locates bondage in bewilderment
+      about one's own powers—both point to a veiling of inherent capacity that can be unveiled.
+    divergence: Spandakarika treats the extreme states themselves as direct access points to unity, whereas
+      Pratyabhijnahrdayam diagnoses ignorance as the primary obstacle requiring intellectual recognition
+      of authorship rather than affective intensity.
+    passage_id: pratyabhijnahrdayam.phr_012
+  layer_provenance: generated_grounded

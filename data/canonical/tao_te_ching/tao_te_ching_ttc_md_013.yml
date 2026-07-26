@@ -94,3 +94,99 @@ abhyasa: 'The next time you dismiss something as ''easy'' or ''small'' — a nag
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 為無為，事無事，味無味。大小多少，報怨以德。圖難於其易，為大於其細。天下難事，必作於易；天下大事，必作於細。是以聖人終不為大，故能成其大。夫輕諾必寡信，多易必多難。是以聖人猶難之，故終無難矣。
+- kind: translation
+  label: Pratibha Translation
+  body: 'Do *wúwéi*; handle affairs by non-affairs; taste what has no flavor.
+
+    See the small as great, the few as many; repay ill will with *dé* [*bào yuàn yǐ dé* 報怨以德].
+
+
+    Plan difficulty in its easy phase;
+
+    accomplish the great while it is still small.
+
+
+    Under heaven, hard tasks start from easy ones;
+
+    great deeds start from small ones.
+
+
+    Therefore the sage never does "the great" — and so completes what is great.
+
+    Light promises — few keep trust;
+
+    treating too much as easy — much difficulty follows.
+
+
+    Therefore the sage still treats things as difficult — and in the end has no difficulty.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'chapter 63 (do the great while it is still small) is the book''s practical ethics of scale: greatness
+    is not a separate category of action but the accumulation of unattended smallness. The opening triad
+    (*wúwéi*, non-affairs, flavorless tasting) resets attention away from drama toward subtle work.
+
+
+    *Bào yuàn yǐ dé* — repaying injury with *dé* — shocks readers expecting retaliation. *Dé* here is
+    not moral score but responsive power that does not reproduce the injury''s logic. The promise/trust
+    warning grounds mysticism in credibility: spiritual ease that skips steps creates hidden debt.
+
+
+    Key Terms:
+
+
+    **bào yuàn yǐ dé 報怨以德** — repay enmity with *dé* — non-reciprocal response that breaks violence cycles.
+
+
+    **tú nán yú qí yì 圖難於其易** — plan difficulty in the easy stage — temporal strategy of early intervention.
+
+
+    **wèi wú wèi 味無味** — taste the flavorless — attunement to subtle, non-spectacular reality.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: wúwéi (無為)
+    definition: '無 ‘without’ + 為 ‘doing/making/deeming’ -> in “Do the Great While It Is Still Small”:
+      doing that works with the grain of things rather than against it -> not laziness or zero activity
+      — skilled non-imposition that leaves nothing undone'
+    lemma_id: wuwei
+    sense_id: wuwei.daoist
+  - term: wúshì (無事)
+    definition: '無+事 ‘without (meddling) affairs’ -> in “Do the Great While It Is Still Small”: Do *wúwéi*;
+      handle affairs by non-affairs; taste what has no flavor. -> not unemployment; governing by not stirring
+      needless business'
+  - term: dé (德)
+    definition: '德 ‘virtue/potency/accrued power’ -> in “Do the Great While It Is Still Small”: here,
+      the resource one draws on to answer resentment without escalating it -> not Victorian moralism —
+      a thing’s unforced efficacy when it accords with dào'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “Do the Great While It Is Still Small”: Do *wúwéi*;
+      handle affairs by non-affairs; taste what has no flavor. -> not canonized saint; the one who acts
+      by emptying self-assertion so the world orders itself'
+  - term: tiānxià (天下)
+    definition: '天+下 ‘all under heaven’ — the political-cosmic whole -> in “Do the Great While It Is Still
+      Small”: Do *wúwéi*; handle affairs by non-affairs; taste what has no flavor. -> not only ‘the world’
+      as map; the realm that cannot be seized by contrivance'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Gītā 2.31–38
+    resonance: do your duty without attachment to scale of outcome.
+    divergence: dharma war context vs sage administration.
+    passage_id: ''
+  - citation: Buddhist "small mindful acts" (Theravāda commentary tradition)
+    resonance: great practice from momentary attention.
+    divergence: soteriological frame vs political craft. **Epictetus, "practice at small things first."
+      *Divergence:* prohairesis training vs cosmological *dào* alignment.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Take one "large" task you are avoiding. Identify the smallest physical step (open file, one sentence,
+    one call). Do only that step now. Do not escalate until tomorrow.

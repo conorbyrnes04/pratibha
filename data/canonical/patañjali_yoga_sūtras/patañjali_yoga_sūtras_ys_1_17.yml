@@ -90,3 +90,112 @@ abhyasa: Throughout your day, pause the moment you notice yourself reasoning abo
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: वितर्कविचारानन्दस्मितारूपानुगमात् संप्रज्ञातः
+- kind: iast
+  label: IAST
+  body: vitarkavicārānandāsmitārūpānugamāt saṃprajñātaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: The conscious one is that which is attended by argumentation, deliberation, joy, and the sense
+    of being.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sūtra declares that samādhi is not merely a passive absorption but a dynamic, tri‑modal awareness
+    that simultaneously engages the mind in argument (savitrāka), deliberation (savichara), and the experiential
+    sense of being (asmita). This triad is a philosophical claim that consciousness is an active, self‑reflective
+    process rather than a static state. The contested move lies in the identification of ‘samādhi’ with
+    ‘samprajñātaḥ’—the idea that the very nature of samādhi is to be known, not merely attained. In the
+    Yoga and Sāṃkhya framework, this aligns with the notion that puruṣa (the knower) is distinct from
+    prakṛti (the known), yet their union in samādhi is the ultimate realization. The sūtra’s emphasis
+    on joy (ananda) as a component of consciousness anticipates later Yogic texts that treat joy as a
+    necessary quality for true samādhi. The Dvivedi commentary’s distinction between ‘savitrāka’ (argumentative)
+    and ‘savichara’ (deliberative) meditation is echoed here, but the sūtra’s wording collapses them into
+    a single, unified conscious experience. Practically, this means that a practitioner should cultivate
+    a mind that not only observes but also interrogates and delights in the very act of observation, thereby
+    transcending mere passive absorption. This existential application invites the practitioner to live
+    in a state of continuous, joyful self‑reflection, which is the hallmark of true samādhi.
+
+
+    Key Terms
+
+
+    **samprajñātaḥ (सम्प्रज्ञातः)** — samprajñātaḥ (conscious) → Sāṃkhya: the knower’s knowledge; Yoga:
+    the state of samādhi where consciousness is aware of itself and its objects; default translation ‘conscious’
+    misses the self‑reflective quality
+
+
+    **asmita (अस्मिता)** — asmita (sense of being) → Sāṃkhya: pure consciousness; Yoga: the realization
+    of ‘I am’ without ego; default translation ‘sense of being’ omits its role as the ultimate marker
+    of samādhi
+
+
+    **savitrāka (सवित्राक)** — savitrāka (argumentative meditation) → Sāṃkhya: deliberation on distinctions;
+    Yoga: a mode of samādhi involving logical inquiry; default translation ‘argumentation’ lacks the meditative
+    nuance
+
+
+    **savichara (सविचार)** — savichara (deliberative meditation) → Sāṃkhya: contemplation of relations;
+    Yoga: a mode of samādhi involving reflective thought; default translation ‘deliberation’ misses its
+    contemplative depth
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 1.17 – 1.18:** Both verses describe samādhi as a state where consciousness is attended
+    by argumentation, deliberation, joy, and the sense of being, mirroring the tri‑modal structure of
+    Sāṃkhya’s puruṣa‑prakṛti distinction.
+
+    *Divergence:* While the Sūtra condenses the four qualities into a single phrase, later commentaries
+    separate them into distinct meditative modes, suggesting a more granular practice
+
+
+    **Bhaṭṭa’s Ātmarūpaśāstra 1.1:** Bhaṭṭa also links samādhi with the sense of being (asmita) and joy,
+    emphasizing the experiential aspect of consciousness.
+
+    *Divergence:* Bhaṭṭa’s text places greater emphasis on the experiential bliss of samādhi, whereas
+    the Sūtra presents it as a necessary component of consciousness rather than an end in itself
+
+
+    **Dvivedi’s Commentary on YS 1.17:** Dvivedi elaborates on savitrāka and savichara, aligning with
+    the Sūtra’s mention of argumentation and deliberation.
+
+    *Divergence:* Dvivedi’s commentary expands the sūtra’s terse statement into four distinct meditative
+    states, thereby providing a more detailed pedagogical framework'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: samprajñāta (सम्प्रज्ञात)
+    definition: 'sam-pra-√jñā ‘known together with’ → cognitive samādhi with support -> in “Consciousness
+      of Argument and Joy”: meditative unity in which the object, process, and sense of individual ''I''
+      remain present, distinguishing it from seedless (asaṃprajñāta) absorption -> not ‘lower failure’;
+      valid staged absorption still involving vitarka/vicāra/ānanda/asmitā supports'
+  - term: vitarka (वितर्क)
+    definition: 'vi-√tark ‘reason about’ → gross discursive engagement with object -> in “Consciousness
+      of Argument and Joy”: the initial, gross phase of meditative absorption in which the mind grasps
+      an object through conceptual thought and verbal formulation -> not idle argument; a level of samprajñāta
+      still working with gross object-aspect'
+  - term: asmitā (अस्मिता)
+    definition: 'asmi + -tā ‘I-am-ness’ -> in “Consciousness of Argument and Joy”: → Sāṃkhya: pure consciousness
+      -> not healthy self-esteem; the confusion of seer with seeing-instrument (citta)'
+  - term: vicāra (विचार)
+    definition: 'vi-√car ‘move through’ → subtle reflective engagement -> in “Consciousness of Argument
+      and Joy”: the subtle phase of absorption in which the object is perceived directly without verbal
+      mediation, as pure quality or essence -> not ordinary rumination; subtler samprajñāta level beyond
+      gross vitarka'
+  - term: ānanda (आनन्द)
+    definition: 'ā-√nand ‘rejoice’ → bliss-tone of certain samādhi -> in “Consciousness of Argument and
+      Joy”: The conscious one is that which is attended by argumentation, deliberation, joy, and the sense
+      of being. -> not hedonism; a support-level of absorption, still not final kaivalya'
+    lemma_id: cidananda
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Attend to your thoughts with active questioning, deliberate reflection, and joyful awareness,
+    so that your consciousness becomes fully engaged in the present moment.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: Conscious is that which is attended by argumentation, deliberation, joy, and the sense of being.

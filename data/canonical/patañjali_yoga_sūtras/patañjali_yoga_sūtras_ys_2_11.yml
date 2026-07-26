@@ -100,3 +100,80 @@ abhyasa: 'Choose a simple, stable object of meditation: the natural breath, a vi
   proof.'
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: ध्यानहेयस् तद्वृत्तयाḥ
+- kind: iast
+  label: IAST
+  body: dhyānaheyās tadvṛttayaḥ
+- kind: translation
+  label: Pratibha Translation
+  body: You suppress the transformations of the mind by meditation.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this verse is that the mind’s habitual modifications—its vṛtti—must be quelled
+    through the practice of dhyāna. In the Yoga and Sāṃkhya framework, vṛtti refers to the fluctuations
+    that obscure the true nature of puruṣa. The verse presupposes that these fluctuations arise from the
+    thinking principle (citta) and that their suppression is essential for the realization of samādhi.
+    The contested move here is the identification of ‘dhyāna’ with a direct means of suppression, rather
+    than a passive state of absorption. Dvivedi’s commentary emphasizes the bodily anchor of meditation,
+    suggesting that the practitioner must actively engage the body to counter the gross distractions.
+    This aligns with the Sāṃkhya notion that prakṛti’s transformations are mediated by the mind, and that
+    only through disciplined practice can one achieve the stillness required for the discernment of puruṣa.
+    Existentially, the verse invites the practitioner to confront the restless mind and to employ meditation
+    as a disciplined tool, thereby transforming the habitual patterns that bind one to ignorance. The
+    implication is that without this suppression, the practitioner remains entangled in the cycle of desire
+    and aversion, unable to perceive the unchanging awareness that is puruṣa.
+
+
+    Key Terms
+
+
+    **vṛtti (वृत्ति)** — etymology: ‘to turn, to change’ -> Sāṃkhya tradition: mental fluctuations that
+    obscure puruṣa -> default translation ‘fluctuation’ misses the dynamic, cyclical nature of the mind’s
+    activity.
+
+
+    **dhyāna (ध्यान)** — etymology: ‘to look at, to observe’ -> Yoga tradition: a sustained, focused meditation
+    that suspends vṛtti -> default translation ‘meditation’ omits its active, suppressive function.
+
+
+    Cross-Tradition Resonances
+
+
+    **Yoga Sūtra 1.28:** Both verses use a single verb to denote the suppression of vṛtti (yāyāśa in 1.28,
+    dhyānaheyās in 2.11).
+
+    *Divergence:* In 1.28 the suppression is achieved by the practice of yāyāśa (sustained attention),
+    whereas in 2.11 the method is specifically dhyāna, indicating a shift from general attention to deeper
+    absorption.
+
+
+    **Sāṃkhya Kāṇḍa 2.5:** The notion that transformations of prakṛti are to be suppressed aligns with
+    the Sāṃkhya view that puruṣa must remain unaltered.
+
+    *Divergence:* Sāṃkhya focuses on the conceptual suppression of prakṛti’s activity, while the Yoga
+    verse emphasizes the bodily and experiential method of dhyāna.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dhyāna (ध्यान)
+    definition: '√dhyā ‘contemplate’ → unbroken flow toward the object -> in “Suppressing Transformations”:
+      ‘to look at, to observe’ -> Yoga tradition: a sustained, focused meditation that suspends vṛtti
+      -> -> not ‘thinking about’; continuous single-current cognizing that deepens dhāraṇā'
+  - term: heya (हेय)
+    definition: '√hā ‘abandon’ → that which is to be discarded (future suffering) -> in “Suppressing Transformations”:
+      That which is to be removed, eliminated, or overcome -> not past pain fixation; the avoidable future
+      duḥkha that viveka aims to cut'
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Suppressing Transformations”: ‘to
+      turn, to change’ -> Sāṃkhya tradition: mental fluctuations that obscure puruṣa -> -> not ‘bad thoughts’
+      only — any cognitive wave (valid cognition, error, fantasy, sleep, memory)'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: You suppress the mind’s fluctuations by engaging in focused meditation.
+- kind: appendix
+  label: Manilal Nabhubhai Dvivedi (1890, PD anchor)
+  body: Their transformations are to be suppressed by

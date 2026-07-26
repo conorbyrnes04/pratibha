@@ -108,3 +108,84 @@ section: Von Abegescheidenheit
 translation_provenance: Rendered from the public-domain source (Middle High German). Study rendering;
   not a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original (Middle High German)
+  body: 'Ich lobe ouch abegescheidenheit vür alle barmherzicheit, wan barmherzicheit enist niht anders,
+    wan daz der mensche ûz im selber gât ûf sînes ebenmenschen gebresten und dâ von sîn herze betrüebet
+    wirt. Des stât abegescheidenheit ledic und blîbet in ir selber und lât sich kein dinc betrüeben; wan
+    alle die wîle dehein dinc den menschen mac betrüeben, sô enist dem menschen niht reht. Kürzlîchen
+    geredet: wenne ich alle tugende anesihe, sô envinde ich keine sô gar âne gebresten und ze gote zuovüegic,
+    als abegescheidenheit ist.'
+- kind: iast
+  label: Transliteration note
+  body: See Original; key terms in commentary.
+- kind: translation
+  label: Pratibha Translation
+  body: 'I also praise detachment above all mercifulness, for mercifulness is nothing other than a person
+    going out of oneself toward a neighbor''s shortcomings, and through this the heart becomes troubled.
+    Detachment stands free of this, remains in itself, and lets nothing trouble it — for as long as anything
+    can trouble a person, things are not right with them. In short: when I regard all virtues, I find
+    none so without defect and so joining us to God as detachment.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Mercy''s going-out is ethically precious and still, for Eckhart, a motion that can trouble the
+    heart. The contested ranking does not abolish compassion; it refuses to let troubledness define the
+    highest union. Detachment remains the unblemished joining-to-God because it does not exit into the
+    neighbor''s wound as its occupying content. Existentially: help without letting the helping become
+    the hinge''s swing.
+
+
+    Key Terms
+
+
+    **barmherzicheit (MHG)** — "mercy/compassion." Defined here as going-out that troubles the heart.
+
+
+    **betrüeben (MHG)** — "to trouble/sadden." Diagnostic: if anything can still trouble you, detachment
+    is incomplete.
+
+
+    Cross-Tradition Resonances
+
+
+    **Bodhicaryāvatāra (compassion without self-clinging):** Both want care without self-occupation.
+
+    *Divergence:* Śāntideva intensifies compassion as the path; Eckhart subordinates troubled mercy to
+    immovable detachment.
+
+
+    **Aṣṭāvakra (equanimity amid the world''s play):** Both refuse being undone by circumstance.
+
+    *Divergence:* Aṣṭāvakra''s equanimity is Self-recognition; Eckhart''s is readiness for God.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: abegescheidenheit (MHG)
+    definition: 'abe (‘off’) + scheiden (‘separate’) + abstract noun → standing free of creatures so nothing
+      created occupies the receptive place Here: Mercy Still Goes Out; Detachment Remains Mercy Still
+      Goes Out; Detachment Remains Ich lobe ouch abegescheidenheit vür alle barmherzicheit, wan barmherzicheit
+      e… Trap: Stoic coolness or emotional numbness; underplays nearness to niht (nothingness)'
+    lemma_id: gelassenheit
+    sense_id: gelassenheit.eckhart
+  - term: niht / nothing (MHG)
+    definition: '‘nothing’ → creaturely emptiness that is the condition for divine in-birth Here: I also
+      praise detachment above all mercifulness, for mercifulness is nothing other than a person going
+      out of oneself toward a neighbor''s shortcomings, and thr… Trap: nihilism; missing that nothingness
+      is receptive, not annihilative only'
+  - term: Gelassenheit
+    definition: 'from lassen ‘to let / leave’ → releasement of possessiveness so God can be born in the
+      soul Here: Existentially: help without letting the helping become the hinge''s swing. Trap: apathy,
+      grit rebranded, quietism without love'
+    lemma_id: gelassenheit
+    sense_id: gelassenheit.eckhart
+  - term: grunt (ground)
+    definition: 'MHG grunt ‘ground, bottom’ → the soul’s ground identical in operation with God’s ground—birthplace
+      of the Word Here: When you feel your chest tighten or your thoughts scatter because of another person''s
+      trouble, pause and notice: where has your center gone? Then, without with… Trap: psychological ‘core
+      self’ without Eckhart’s birth-of-God claim'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice
+  body: 'Do one act of concrete help today. Afterward, sit one minute: did helping swing the hinge into
+    troubledness? Return to remaining-within without withdrawing care.'

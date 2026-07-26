@@ -280,6 +280,35 @@ pratibha_layers:
     translation for a modern, source-honest excerpt. Full chapter text remains in the public-domain appendix
     for philological comparison; the display layers do not reproduce Giles wholesale.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: zìrán (自然)
+    definition: '自然 “self-so” — thus-of-itself, not “picturesque nature” -> in this passage (exercise
+      of Faculties.), spontaneous so-ness: things unfolding without forced contrivance -> trap: Romantic
+      wilderness aesthetics; zìrán is ontological non-forcing, not scenery'
+    lemma_id: ziran
+    sense_id: ziran.daoist
+  - term: dé (德)
+    definition: '德 “potency, virtue, obtained power” — how the Way is efficacious in a particular being
+      -> in this passage (exercise of Faculties.), inner potency that shows as unforced efficacy rather
+      than moral display -> trap: Victorian “virtue” as propriety; dé is charismatic power of alignment,
+      not rule-keeping'
+    lemma_id: de
+    sense_id: de.daoist
+  - term: dào (道)
+    definition: '道 “path/way” and “to speak/guide” — course that can be walked and barely named -> in
+      this passage (exercise of Faculties.), the nameless source-and-course that lets beings move by their
+      own measure -> trap: a deity named Tao, a lifestyle brand, or a fixed doctrine one can possess'
+    lemma_id: dao
+    sense_id: dao.daoist
+  - term: xīn (心)
+    definition: '心 “heart-mind” — thought, feeling, and responsiveness undivided -> in this passage (exercise
+      of Faculties.), the heart-mind to be emptied, still, or freed from right/wrong warfare -> trap:
+      brain-only “mind” or sentimental “heart”; xīn is the whole affective-cognitive center'
+    lemma_id: xin
+    sense_id: xin.chinese
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.

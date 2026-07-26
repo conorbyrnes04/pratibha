@@ -92,3 +92,116 @@ abhyasa: Turn your gaze inward as you would aim a lamp into darkness, and watch 
 translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a
   critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: प्रवृत्तिआलोकनयासात् सूक्ष्मव्यवहितविप्रक्रष्टज्ञानम्
+- kind: iast
+  label: IAST
+  body: pravṛttyālokanyāsāt sūkṣmavyavahitaviprakṛṣṭajñānam
+- kind: translation
+  label: Pratibha Translation
+  body: You observe the mind’s subtle fluctuations, and the knowledge that is already perfected in the
+    subtle realm becomes evident.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The sūtra asserts that by applying the yogic discipline of observation to the mind’s subtle fluctuations,
+    one can immediately access the perfected knowledge that resides within the subtle realm. This claim
+    foregrounds the epistemic power of samādhi: the mind, when steadied, reveals the truth that has always
+    been present. The contested move here is the inference that observation alone suffices to bring forth
+    perfected knowledge without further purification or practice. In the Sāṃkhya–Yoga framework, the mind’s
+    vṛtti (fluctuations) are the primary obstacle to realizing puruṣa’s true nature; the sūtra posits
+    that a focused, sustained observation can subdue these vṛtti, allowing the subtle knowledge to surface.
+    This aligns with the Sāṃkhya doctrine that puruṣa is distinct from prakṛti and that liberation is
+    achieved when puruṣa is recognized as the unchanging witness. The sūtra’s implication is existential:
+    a practitioner need not seek external aids; by mastering the internal observation, one can attain
+    the same clarity that an external “strength” might suggest. This resonates with the Satchidananda
+    commentary’s metaphor of “strength of elephants,” which, while vivid, ultimately points to the same
+    internal capacity: the power of focused attention to transform one’s experience. By emphasizing the
+    internal, the sūtra invites practitioners to cultivate a disciplined, present‑moment awareness that
+    directly accesses the subtle, perfected knowledge inherent in puruṣa.
+
+
+    Key Terms
+
+
+    **vṛtti (वृत्ति)** — ‘fluctuation’ -> Sāṃkhya: mental modifications of citta; Yoga: obstacles to samādhi;
+    default translation ‘activity’ misses the epistemic role of vṛtti as the source of ignorance
+
+
+    **puruṣa (पुरुष)** — ‘consciousness’ -> Sāṃkhya: eternal, passive witness; Yoga: the true self; default
+    translation ‘person’ omits its role as the unchanging observer
+
+
+    **prakṛti (प्रकृति)** — ‘nature’ -> Sāṃkhya: material, dynamic reality; Yoga: the source of vṛtti;
+    default translation ‘nature’ neglects its dual role as both cause and condition of mind
+
+
+    **samādhi (समाधि)** — ‘absorption’ -> Yoga: state of focused, undistracted awareness; Sāṃkhya: the
+    realization of puruṣa’s distinction; default translation ‘concentration’ underplays its transcendental
+    quality
+
+
+    Cross-Tradition Resonances
+
+
+    **Patanjali, Yoga Sūtra 1.2:** Both passages link observation (āloka) with the cessation of vṛtti
+    to reveal knowledge; 1.2 speaks of ‘samādhi’ as the stillness of mind, while 3.25 specifies the subtle
+    realm as the locus of perfected knowledge.
+
+    *Divergence:* 1.2 emphasizes the process of attaining samādhi, whereas 3.25 assumes it is already
+    achieved through observation alone, thereby bypassing preparatory practices
+
+
+    **Bhartrhari, Vṛtti‑śāstra 2.4:** Both treat vṛtti as the obstacle to knowledge; Bhartrhari’s text
+    describes vṛtti as ‘mental noise’, while 3.25 treats it as a subtle realm that can be observed to
+    access perfected knowledge.
+
+    *Divergence:* Bhartrhari’s account is descriptive, not prescriptive; 3.25 prescribes a yogic method
+    to subdue vṛtti, suggesting a more proactive stance
+
+
+    **Kapila Samhita 3.1:** Both affirm the dualism of puruṣa and prakṛti; Kapila speaks of puruṣa’s transcendence,
+    while 3.25 situates the knowledge within the subtle realm of prakṛti’s fluctuations.
+
+    *Divergence:* Kapila’s Samhita focuses on metaphysical distinction, whereas 3.25 integrates this distinction
+    into a practical yogic technique
+
+
+    **Satchidananda, Commentary on YS 3.25:** Both use the metaphor of ‘strength of elephants’ to illustrate
+    the power of focused attention; Satchidananda’s metaphor is literal, 3.25 is symbolic.
+
+    *Divergence:* Satchidananda’s commentary expands the sūtra into experiential anecdotes, whereas the
+    sūtra remains concise and abstract'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vṛtti (वृत्ति)
+    definition: '√vṛt ‘turn, revolve’ → a turning/modification -> in “Strength of Observation”: ‘fluctuation’
+      -> Sāṃkhya: mental modifications of citta -> not ‘bad thoughts’ only — any cognitive wave (valid
+      cognition, error, fantasy, sleep, memory)'
+  - term: puruṣa (पुरुष)
+    definition: '‘person/witness’ in Sāṃkhya — pure awareness as seer -> in “Strength of Observation”:
+      ‘consciousness’ -> Sāṃkhya: eternal, passive witness -> not ‘person’ as social self; the unchanging
+      witness distinct from prakṛti’s display'
+  - term: prakṛti (प्रकृति)
+    definition: 'pra-√kṛ ‘bring forth’ → productive nature/matter -> in “Strength of Observation”: ‘nature’
+      -> Sāṃkhya: material, dynamic reality -> not pastoral ‘Nature’; the tri-guṇa matrix generating all
+      experience including mind'
+  - term: samādhi (समाधि)
+    definition: 'sam-ā-√dhā ‘settle completely together’ -> in “Strength of Observation”: ‘absorption’
+      -> Yoga: state of focused, undistracted awareness -> not trance-entertainment or unconsciousness;
+      graded absorption where subject–object friction quiets'
+    lemma_id: samadhi
+    sense_id: samadhi.yoga
+  - term: pravṛtti
+    definition: 'source-term pravṛtti -> in “Strength of Observation”: here, the continuous arising and
+      passing of mental events -> default English flattens the technical work this term does here'
+  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Observe your mind’s subtle fluctuations with steady, undistracted attention, and let the perfected
+    knowledge that already resides in that subtle realm unfold.
+- kind: appendix
+  label: Swami Satchidananda (1978, attributed aphorism)
+  body: B y saṁyama on the strength of elephants and other such

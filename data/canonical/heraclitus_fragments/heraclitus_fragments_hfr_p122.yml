@@ -18,22 +18,23 @@ themes:
 - way
 source_excerpt: There awaits men after death what they neither hope nor think.
 translation_literal: There awaits people after death what they neither hope nor think.
-commentary: 'Heraclitus suspends us in the gap between expectation and arrival. The fragment does not console; it refuses
-  both hope and thought as instruments of preparation. What ''awaits'' (μένει) is not hidden knowledge to be decoded but a
-  radical disjunction—the dead discover what no living imagination, no matter how disciplined or cynical, could have framed.
-  The force lies in the double negation: neither hope (which projects forward) nor thought (which calculates and schemes)
-  reaches it. This is not mysticism but a precise claim about the limits of anticipation itself. For Heraclitus, who elsewhere
-  insists that ''all things flow'' and that ''character is fate'' (ἦθος δαίμων), this fragment cuts deeper: your ethos, your
-  habitual way of being, does not survive death intact into some knowable state. The measure you live by—the logos that governs
-  waking life—does not extend its authority past the threshold. Death is not continuity of self under new conditions; it is
-  the arrival of what the self cannot think toward. The teaching is not about the afterlife but about the present moment''s
-  true poverty: we are always already unprepared, and that unpreparedness is not a failure but the precise shape of being
-  alive.'
+commentary: 'Heraclitus suspends us in the gap between expectation and arrival. The fragment does not
+  console; it refuses both hope and thought as instruments of preparation. What ''awaits'' (μένει) is
+  not hidden knowledge to be decoded but a radical disjunction—the dead discover what no living imagination,
+  no matter how disciplined or cynical, could have framed. The force lies in the double negation: neither
+  hope (which projects forward) nor thought (which calculates and schemes) reaches it. This is not mysticism
+  but a precise claim about the limits of anticipation itself. For Heraclitus, who elsewhere insists that
+  ''all things flow'' and that ''character is fate'' (ἦθος δαίμων), this fragment cuts deeper: your ethos,
+  your habitual way of being, does not survive death intact into some knowable state. The measure you
+  live by—the logos that governs waking life—does not extend its authority past the threshold. Death is
+  not continuity of self under new conditions; it is the arrival of what the self cannot think toward.
+  The teaching is not about the afterlife but about the present moment''s true poverty: we are always
+  already unprepared, and that unpreparedness is not a failure but the precise shape of being alive.'
 insight: ''
-practice: 'When you catch yourself rehearsing an outcome—a conversation, a decision, a fear about what comes next—stop the
-  narrative thread and name aloud one concrete thing you cannot imagine about that moment: not what you fear, but what you
-  genuinely cannot picture. Return to the breath. Do this three times in one day, each time letting the admission sit without
-  resolution.'
+practice: 'When you catch yourself rehearsing an outcome—a conversation, a decision, a fear about what
+  comes next—stop the narrative thread and name aloud one concrete thing you cannot imagine about that
+  moment: not what you fear, but what you genuinely cannot picture. Return to the breath. Do this three
+  times in one day, each time letting the admission sit without resolution.'
 sanskrit_devanagari: ''
 sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
@@ -56,48 +57,81 @@ pratibha_layers:
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus suspends us in the gap between expectation and arrival. The fragment does not console; it refuses both
-    hope and thought as instruments of preparation. What ''awaits'' (μένει) is not hidden knowledge to be decoded but a radical
-    disjunction—the dead discover what no living imagination, no matter how disciplined or cynical, could have framed. The
-    force lies in the double negation: neither hope (which projects forward) nor thought (which calculates and schemes) reaches
-    it. This is not mysticism but a precise claim about the limits of anticipation itself. For Heraclitus, who elsewhere insists
-    that ''all things flow'' and that ''character is fate'' (ἦθος δαίμων), this fragment cuts deeper: your ethos, your habitual
-    way of being, does not survive death intact into some knowable state. The measure you live by—the logos that governs waking
-    life—does not extend its authority past the threshold. Death is not continuity of self under new conditions; it is the
-    arrival of what the self cannot think toward. The teaching is not about the afterlife but about the present moment''s
-    true poverty: we are always already unprepared, and that unpreparedness is not a failure but the precise shape of being
+  body: 'Heraclitus suspends us in the gap between expectation and arrival. The fragment does not console;
+    it refuses both hope and thought as instruments of preparation. What ''awaits'' (μένει) is not hidden
+    knowledge to be decoded but a radical disjunction—the dead discover what no living imagination, no
+    matter how disciplined or cynical, could have framed. The force lies in the double negation: neither
+    hope (which projects forward) nor thought (which calculates and schemes) reaches it. This is not mysticism
+    but a precise claim about the limits of anticipation itself. For Heraclitus, who elsewhere insists
+    that ''all things flow'' and that ''character is fate'' (ἦθος δαίμων), this fragment cuts deeper:
+    your ethos, your habitual way of being, does not survive death intact into some knowable state. The
+    measure you live by—the logos that governs waking life—does not extend its authority past the threshold.
+    Death is not continuity of self under new conditions; it is the arrival of what the self cannot think
+    toward. The teaching is not about the afterlife but about the present moment''s true poverty: we are
+    always already unprepared, and that unpreparedness is not a failure but the precise shape of being
     alive.'
   layer_provenance: template-assembled
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ἦθος (ēthos)
+    definition: 'ἦθος “custom, habitual character, dwelling” — how one habitually lives -> in this passage
+      (there awaits men after death what they neither hope nor think.), character as destiny’s shape:
+      the habitual measure you are, not a costume you wear -> trap: soft “ethics” as rules-of-niceness
+      rather than lived configuration of soul'
+  - term: ψυχή (psychē)
+    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage
+      (there awaits men after death what they neither hope nor think.), the soul whose depth, dryness,
+      or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,” or immortal
+      ego-personality'
+    lemma_id: psyche
+    sense_id: psyche.platonic
+  - term: βίος / θάνατος (bios / thanatos)
+    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying ->
+      in this passage (there awaits men after death what they neither hope nor think.), life and death
+      as reciprocal: one element lives the death of another; hope cannot prefigure what awaits -> trap:
+      afterlife tourism or simple annihilation; the point is structural exchange and limit of anticipation'
+  - term: λόγος (logos)
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
+      passage (there awaits men after death what they neither hope nor think.), the shared pattern according
+      to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine,
+      mere logic, or only the later Johannine Word'
+    lemma_id: logos
+    sense_id: logos.greek
+  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'When you catch yourself rehearsing an outcome—a conversation, a decision, a fear about what comes next—stop the narrative
-    thread and name aloud one concrete thing you cannot imagine about that moment: not what you fear, but what you genuinely
-    cannot picture. Return to the breath. Do this three times in one day, each time letting the admission sit without resolution.'
+  body: 'When you catch yourself rehearsing an outcome—a conversation, a decision, a fear about what comes
+    next—stop the narrative thread and name aloud one concrete thing you cannot imagine about that moment:
+    not what you fear, but what you genuinely cannot picture. Return to the breath. Do this three times
+    in one day, each time letting the admission sit without resolution.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: The Book of Chuang Tzu — chapter 8
-    resonance: 'Both texts refuse the ego''s constructed expectations as the measure of reality: Heraclitus says what awaits
-      after death escapes hope and thought; Chuang Tzu''s true persons do not construct plans as identity. Each denies the
-      private self''s anticipatory framework as access to what actually is.'
-    divergence: Heraclitus grounds this in a cosmic measure (logos) that governs all things; Chuang Tzu grounds it in spontaneous
-      alignment with the Way's non-action (wu wei), which has no external standard.
+    resonance: 'Both texts refuse the ego''s constructed expectations as the measure of reality: Heraclitus
+      says what awaits after death escapes hope and thought; Chuang Tzu''s true persons do not construct
+      plans as identity. Each denies the private self''s anticipatory framework as access to what actually
+      is.'
+    divergence: Heraclitus grounds this in a cosmic measure (logos) that governs all things; Chuang Tzu
+      grounds it in spontaneous alignment with the Way's non-action (wu wei), which has no external standard.
     passage_id: the_book_of_chuang_tzu.ctz_008
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts establish a structural interdependence between two orders of reality that cannot be collapsed:
-      Heraclitus''s ethical-cosmological turn requires alignment with the measure governing all things (not private hope);
-      Nagarjuna''s ultimate cannot be reached except through the conventional, and vice versa. Each refuses a single-level
-      account.'
-    divergence: Heraclitus treats the measure as a unified cosmic principle; Nagarjuna treats the two truths as mutually dependent
-      but ontologically distinct, with neither reducible to the other.
+    resonance: 'Both texts establish a structural interdependence between two orders of reality that cannot
+      be collapsed: Heraclitus''s ethical-cosmological turn requires alignment with the measure governing
+      all things (not private hope); Nagarjuna''s ultimate cannot be reached except through the conventional,
+      and vice versa. Each refuses a single-level account.'
+    divergence: Heraclitus treats the measure as a unified cosmic principle; Nagarjuna treats the two
+      truths as mutually dependent but ontologically distinct, with neither reducible to the other.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both texts mark death as a dissolution where breath/life returns to a larger principle: Heraclitus''s awaiting
-      after death aligns with the cosmological measure; Isavasya''s breath returns to immortal air. Each treats death not
-      as annihilation but as reintegration into what governs the living.'
-    divergence: Heraclitus emphasizes the ethical surprise (what is neither hoped nor thought); Isavasya emphasizes ritual
-      acceptance and the metaphysical continuity of breath into the universal element.
+    resonance: 'Both texts mark death as a dissolution where breath/life returns to a larger principle:
+      Heraclitus''s awaiting after death aligns with the cosmological measure; Isavasya''s breath returns
+      to immortal air. Each treats death not as annihilation but as reintegration into what governs the
+      living.'
+    divergence: Heraclitus emphasizes the ethical surprise (what is neither hoped nor thought); Isavasya
+      emphasizes ritual acceptance and the metaphysical continuity of breath into the universal element.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 - kind: appendix

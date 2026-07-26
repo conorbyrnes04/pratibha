@@ -115,3 +115,128 @@ abhyasa: 'Notice one thing today that you instinctively want to discard or dismi
 translation_provenance: Rendered from the public-domain source (Classical Chinese). Study rendering; not
   a critical edition.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: '善行無轍迹，善言無瑕讁；
+
+    善數不用籌策；
+
+    善閉無關楗而不可開，善結無繩約而不可解。
+
+    是以聖人常善救人，故無棄人；
+
+    常善救物，故無棄物。
+
+    是謂襲明。
+
+    故善人者，不善人之師；
+
+    不善人者，善人之資。
+
+    不貴其師，不愛其資，雖智大迷，是謂要妙。'
+- kind: translation
+  label: Pratibha Translation
+  body: 'The skilful traveller leaves no traces of his wheels or footsteps; the skilful speaker says nothing
+    that can be found fault with or blamed; the skilful reckoner uses no tallies; the skilful closer needs
+    no bolts or bars, while to open what he has shut will be impossible; the skilful binder uses no strings
+    or knots, while to unloose what he has bound will be impossible.
+
+
+    In the same way the sage [*shèng rén* 聖人] is always skilful at saving men, and so he does not cast
+    away any man; he is always skilful at saving things, and so he does not cast away anything.
+
+
+    This is called ''Hiding the light of his procedure.'' Therefore the man of skill is a master (to be
+    looked up to) by him who has not the skill; and he who has not the skill is the helper of (the reputation
+    of) him who has the skill.
+
+
+    If the one did not honour his master, and the other did not rejoice in his helper, an (observer),
+    though intelligent, might greatly err about them.
+
+
+    This is called ''The utmost degree of mystery.'''
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The central claim of this chapter is that true skill is invisible and non‑instrumental; it does
+    not rely on tools, words, or visible signs. The contested move is the assertion that a sage’s actions
+    are simultaneously effective and utterly untraceable—"善行無轍迹" and its equivalents. This paradox challenges
+    ordinary notions of causality and authority: the sage’s mastery is not demonstrated through conventional
+    means but through the absence of any need for them. The chapter therefore invites readers to reconsider
+    what it means to be a master and a helper, suggesting that the highest wisdom lies in the ability
+    to act without leaving a mark, to save without discarding, and to guide without imposing.
+
+
+    The text’s structure mirrors the Daoist ideal of wu‑wei (non‑action) and the concept of zìrán (naturalness).
+    By refusing to use instruments—no wheels, no bolts, no strings—the sage embodies the principle that
+    the most profound interventions are those that do not disturb the natural order. The commentary also
+    highlights the tension between the sage’s apparent invisibility and his undeniable influence, a tension
+    that Daoist literature often resolves by framing the sage’s power as an emergent property of aligning
+    with the Dao rather than exerting force.
+
+
+    Key Terms:
+
+
+    **dào (道)** — the fundamental principle of the universe -> Daoist sense: the ultimate reality that
+    is both source and pattern of all things -> translation stakes: ''the way'' or ''the path''
+
+    **wúwéi (無為)** — non‑action or effortless action -> Daoist sense: acting in harmony with the Dao without
+    forcing outcomes -> translation stakes: ''non‑doing''
+
+    **dé (德)** — virtue or moral power -> Daoist sense: the natural power that flows from aligning with
+    the Dao -> translation stakes: ''virtue''
+
+    **zìrán (自然)** — naturalness or spontaneity -> Daoist sense: the state of being in accordance with
+    the Dao -> translation stakes: ''naturalness'''
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: cháng (常)
+    definition: '常 ‘constant/enduring’ -> in “The Untraced Skill of the Sage”: The skilful traveller leaves
+      no traces of his wheels or footsteps; the skilful speaker says nothing that can be found… -> not
+      theological eternity with start/stop brackets — what persists through change without being used
+      up'
+  - term: wú (無)
+    definition: '無 ‘without / not-have’ -> in “The Untraced Skill of the Sage”: The skilful traveller
+      leaves no traces of his wheels or footsteps; the skilful speaker says nothing that can be found…
+      -> not nihilistic void; generative absence (of forcing, name, desire) that opens function'
+  - term: shèngrén (聖人)
+    definition: '聖 ‘sage-adept’ + 人 ‘person’ -> in “The Untraced Skill of the Sage”: The skilful traveller
+      leaves no traces of his wheels or footsteps; the skilful speaker says nothing that can be found…
+      -> not canonized saint; the one who acts by emptying self-assertion so the world orders itself'
+  - term: miào (妙)
+    definition: '妙 ‘subtle/fine/wonderful’ -> in “The Untraced Skill of the Sage”: The skilful traveller
+      leaves no traces of his wheels or footsteps; the skilful speaker says nothing that can be found…
+      -> not vague mysticism; interior fine-grain of the real as seen from non-desire'
+  - term: yòng (用)
+    definition: '用 ‘use/function’ -> in “The Untraced Skill of the Sage”: The skilful traveller leaves
+      no traces of his wheels or footsteps; the skilful speaker says nothing that can be found… -> not
+      utilitarianism; function that often arises from emptiness (wú) as the wheel hub'
+  layer_provenance: editorial-enriched
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Laozi, chapter 2 (The Way is not a good name)
+    resonance: Both chapters emphasize the ineffability of the Dao and the futility of naming it.
+    divergence: Chapter 27 insists on the practical invisibility of skill, whereas chapter 2 focuses on
+      the impossibility of describing the Dao itself.
+    passage_id: ''
+  - citation: Zhuangzi, chapter 4 (The Joy of Fishes)
+    resonance: Both texts celebrate the freedom of acting without tools or constraints.
+    divergence: Zhuangzi’s fish are playful and spontaneous; Chapter 27’s sage is methodical and bound
+      by the Dao’s subtlety.
+    passage_id: ''
+  - citation: Confucius, Analects 2.1 (The Master’s Virtue)
+    resonance: Both discuss the role of a teacher and the importance of humility.
+    divergence: Confucius emphasizes ritual and social order, while Chapter 27 stresses the invisibility
+      and non‑instrumental nature of true skill.
+    passage_id: ''
+  layer_provenance: migrated_from_commentary
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit in a quiet space for five minutes, close your eyes, and observe your breath. Whenever a thought
+    or sensation arises, acknowledge it without judgment and let it pass, as if you were a skilful binder
+    who does not tie knots. This simple act of mindful non‑interference cultivates the subtle, untraced
+    skill that the sage embodies.
