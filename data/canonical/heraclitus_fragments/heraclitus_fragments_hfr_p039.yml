@@ -24,8 +24,8 @@ insight: ''
 practice: Place one hand in warm water and the other in cold water for two minutes, then plunge both into room-temperature
   water simultaneously and hold still, attending to the contradictory sensation each hand reports of the same medium. Repeat
   three times, and notice whether the boundary between the sensations sharpens or dissolves.
-sanskrit_devanagari: Τὰ ψυχρὰ θέρεται, θερμὸν ψύχεται, ὑγρὸν αὐαίνεται, καρφαλέον νοτίζεται.
-sanskrit_iast: Ta psuchra theretai, thermon psuchetai, hugron auainetai, karphaleon notizetai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -33,14 +33,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Τὰ ψυχρὰ θέρεται, θερμὸν ψύχεται, ὑγρὸν αὐαίνεται, καρφαλέον νοτίζεται.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 39'
-- kind: iast
-  label: IAST
-  body: Ta psuchra theretai, thermon psuchetai, hugron auainetai, karphaleon notizetai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Cold becomes warm, and warm, cold; wet becomes dry, and dry, wet.
@@ -66,31 +58,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (cold becomes
-      warm, and warm, cold ; wet becomes dry, and dry, wet.), the shared pattern according to which all things occur — heard
-      before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (cold becomes
-      warm, and warm, cold ; wet becomes dry, and dry, wet.), tensioned unity of opposites — bow and lyre held by counter-pull,
-      not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (cold becomes warm,
-      and warm, cold ; wet becomes dry, and dry, wet.), the soul whose depth, dryness, or rudeness decides whether senses
-      can witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (cold becomes warm,
-      and warm, cold ; wet becomes dry, and dry, wet.), world-ruling fire as measured transformation and exchange, not mythic
-      flame alone -> trap: treating fire as a static elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -124,6 +95,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P039
   source_reference: Patrick (1889), frag. 39; corpus HFR_P039
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 39'
-  iast: transliterated_from_greek

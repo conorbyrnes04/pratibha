@@ -5,7 +5,7 @@ work_id: isavasya_upanishad
 work_title: Isavasya Upanishad
 unit_id: isavasya_upanishad.isa_015
 unit_label: Mantra 9
-title: Both Knowledge and Ignorance Require Balance
+title: Mantra 9
 unit_type: sutra
 sanskrit_devanagari: 'अन्धन्तमः प्रविशन्ति येऽविद्यामुपासते ।
 
@@ -13,45 +13,22 @@ sanskrit_devanagari: 'अन्धन्तमः प्रविशन्ति
 sanskrit_iast: 'andham tamah pravisanti ye''vidyam upasate |
 
   tato bhuya iva te tamo ya u vidyayam ratah || 9 ||'
-translation_literal: Those who worship ignorance enter into blind darkness. Into even greater darkness, it seems, go those
-  who are absorbed in knowledge alone.
-commentary: 'This verse presents one of the Upaniṣad''s most paradoxical teachings: that exclusive pursuit of either ignorance
-  (avidyā) or knowledge (vidyā) leads to darkness. The word andham—blind, unseeing—modifies tamah (darkness), suggesting not
-  mere absence of light but active obscuration of vision. Those who upasate (worship, cultivate, serve) avidyā fall into this
-  blind darkness straightforwardly.
+translation_literal: Those devoted only to avidya enter darkness; those devoted only to vidya enter deeper darkness.
+commentary: 'Exclusive one-sidedness - worldly or spiritual - binds.
 
 
-  But the second half cuts deeper. The phrase tato bhuya iva—"into even greater darkness, it seems"—warns that those ratah
-  (absorbed, delighted, fixed) in vidyā alone descend into *more* darkness still. This is not condemning intellectual knowledge
-  (vidyā often means scriptural learning, discrimination, or conceptual understanding), but rather the mistake of treating
-  it as final.
+  Key Terms:
 
 
-  The Īśā teaches a non-dual vision in which the Self (Ātman) pervades all existence. Avidyā—ignorance of this unity—binds
-  us to the illusion of separation and multiplicity. But vidyā, if it remains merely intellectual or dualistic (knowing *about*
-  Brahman rather than being Brahman), becomes another trap: the ego appropriates knowledge as its possession, creating subtle
-  pride and continued separation from lived realization.
+  **avidya/vidya** - empirical/ultimate knowing modes.
 
 
-  The verse points to a middle way: knowledge must mature into direct recognition (aparavidyā to paravidyā, lower to higher
-  knowledge). The Upaniṣad teaches this in verse 11: "Knowledge and ignorance together—he who knows both together crosses
-  death through ignorance and attains immortality through knowledge." The balance is not indifference but integration: using
-  discrimination and study as a raft to cross, then releasing the raft on the other shore.
+  Cross-Tradition Resonances:
 
 
-  Key Terms
-
-
-  **avidyā** — Ignorance; the forgetting or non-recognition of the non-dual Self pervading all; the root of bondage and suffering.
-
-  **vidyā** — Knowledge, learning, discrimination; here, conceptual or intellectual understanding that, if not integrated
-  into direct realization, becomes another form of blindness.
-
-  **tamah** — Darkness, obscuration, delusion; in Vedānta, the veil that conceals the unity of Ātman and Brahman.'
+  Middle-way anti-extremism.'
 insight: Exclusive one-sidedness - worldly or spiritual - binds.
-practice: 'Between your next two thoughts, pause and ask: *What am I knowing right now?* Then drop the answer and feel the
-  knowing itself—the bare awareness that holds both knowledge and its absence. Repeat this three times today, each time letting
-  the question dissolve into the space where neither ignorance nor knowledge claims dominion.'
+practice: Balance one practical duty and one contemplative period today.
 upaya: ''
 themes:
 - duty
@@ -64,20 +41,6 @@ tags:
 quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
-appendixes: []
-anchor_chapter: ''
-provenance:
-  collection: Isavasya Upanishad
-  section: teaching_passage
-  original_id: ISA_015
-  source_reference: ''
-translation: Those who worship ignorance enter into blind darkness. Into even greater darkness, it seems, go those who are
-  absorbed in knowledge alone.
-abhyasa: 'Between your next two thoughts, pause and ask: *What am I knowing right now?* Then drop the answer and feel the
-  knowing itself—the bare awareness that holds both knowledge and its absence. Repeat this three times today, each time letting
-  the question dissolve into the space where neither ignorance nor knowledge claims dominion.'
-translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a critical edition.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
 - kind: original
   label: Original
@@ -100,20 +63,13 @@ pratibha_layers:
     Key Terms:
 
 
-    **avidya/vidya** - empirical/ultimate knowing modes.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: avidyā (अविद्या)
-    definition: 'exclusive empirical knowing → enters darkness → trap: anti-intellectualism'
-    lemma_id: vidya
-  - term: vidyā (विद्या)
-    definition: 'exclusive liberating knowing → deeper darkness when isolated → trap: spiritual bypass of the world'
-    lemma_id: vidya
-    sense_id: vidya.shaiva
-  - term: andham tamaḥ (अन्धं तमः)
-    definition: 'blind darkness → both one-sided paths → trap: moral condemnation of learners'
-  layer_provenance: editorial-enriched
+    **avidya/vidya** - empirical/ultimate knowing modes.
+
+
+    Cross-Tradition Resonances:
+
+
+    Middle-way anti-extremism.'
 - kind: practice
   label: Practice (Abhyasa)
   body: Balance one practical duty and one contemplative period today.
@@ -136,5 +92,12 @@ pratibha_layers:
       framing = different metaphysical result.'
     divergence: The Upanishad diagnoses the problem as one-sidedness itself (a cognitive error); the Gita prescribes a positive
       reorientation toward duty-as-offering (a relational reframing of agency).
-    passage_id: bhagavad_gita.bg_md_003
+    passage_id: bhagavad_gita.bg_03_09
   layer_provenance: generated_grounded
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Isavasya Upanishad
+  section: teaching_passage
+  original_id: ISA_015
+  source_reference: ''

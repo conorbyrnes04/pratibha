@@ -29,8 +29,8 @@ practice: 'Walk a route you know well—home to work, or a familiar neighborhood
   ask aloud or in a whisper: *What is being guarded here?* Not metaphorically. Attend to the literal threshold: a doorway,
   a corner, a tree. Notice what has passed through it, what remains, what is tended or neglected. Do this without resolving
   the question. The practice is not to answer but to let the question remake your perception of ordinary space.'
-sanskrit_devanagari: Ἔνθαδε ἐόντας ἐπανίστασθαι καὶ φύλακας γίνεσθαι ἐγερτὶ ζώντων καὶ νεκρῶν.
-sanskrit_iast: Enthade eontas epanistasthai kai phulakas ginesthai egerti zōntōn kai nekrōn.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - death
@@ -40,14 +40,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἔνθαδε ἐόντας ἐπανίστασθαι καὶ φύλακας γίνεσθαι ἐγερτὶ ζώντων καὶ νεκρῶν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 123'
-- kind: iast
-  label: IAST
-  body: Enthade eontas epanistasthai kai phulakas ginesthai egerti zōntōn kai nekrōn.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: And those that are there shall arise and become guardians of the living and the dead.”
@@ -66,21 +58,6 @@ pratibha_layers:
     It asks: who or what is already standing guard over your life, over what you have inherited, over what you will leave?
     The answer is not reassuring. It is structural.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (and
-      those that are there shall arise and become guardians of the living and the dead.”), life and death as reciprocal: one
-      element lives the death of another; hope cannot prefigure what awaits -> trap: afterlife tourism or simple annihilation;
-      the point is structural exchange and limit of anticipation'
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (and those
-      that are there shall arise and become guardians of the living and the dead.”), tensioned unity of opposites — bow and
-      lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Walk a route you know well—home to work, or a familiar neighborhood loop—and at three unmarked points stop and ask
@@ -116,6 +93,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P123
   source_reference: Patrick (1889), frag. 123; corpus HFR_P123
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 123'
-  iast: transliterated_from_greek

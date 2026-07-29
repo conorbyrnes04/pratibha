@@ -23,47 +23,28 @@ sanskrit_iast: 'andham tamah pravisanti ye''vidyam upasate |
   vidyam cavidyam ca yas tad vedobhayam saha |
 
   avidyaya mrtyum tirtva vidyayamrtam asnute || 11 ||'
-translation_literal: 'Those who worship ignorance enter into blind darkness; into even greater darkness, it seems, go those
-  absorbed in knowledge alone.
+translation_literal: 'Those devoted only to ignorance enter darkness; those devoted only to knowledge enter deeper darkness.
+
+  One who knows both together crosses death through avidya and attains immortality through vidya.'
+commentary: 'The Upanishad rejects one-sided absolutism. Pure activism without insight binds. Pure knowledge-talk without
+  embodied duty also binds. Integration is the discipline: practice in the world with insight into the Real.
 
 
-  Whoever knows both knowledge and ignorance together—through ignorance crossing over death, by knowledge attaining the deathless—that
-  one partakes of immortality.'
-commentary: 'These paired verses form the heart of the Īśā''s non-dual teaching. Verse 9 shatters a common misconception:
-  that intellectual knowledge (vidyā) alone liberates. The text warns that clinging to conceptual knowledge without understanding
-  its ground in the non-dual Self leads to a subtler, more dangerous blindness than outright ignorance (avidyā). One becomes
-  trapped in the realm of distinctions, multiplicity, and the sense of separation—what the Upaniṣad calls ''greater darkness.''
+  Key Terms:
 
 
-  Verse 11 reveals the resolution. The word ''both'' (ubhayam) is crucial: it is not knowledge *or* ignorance, but their integration.
-  ''Ignorance'' here means acceptance of the relative world''s apparent reality—the conventional sphere of names, forms, and
-  causation. ''Knowledge'' means direct recognition of the Self (Ātman) as the non-dual ground pervading all. Neither alone
-  suffices. Avidyā, when traversed (tīrtvā) with understanding, becomes the gateway to recognizing the play of Īśā. Vidyā,
-  when grounded in non-dual realization, reveals that the world''s multiplicity is the Self''s own manifestation.
+  **avidya** - pragmatic, world-engaged knowing at the empirical level (also ignorance in other contexts).
 
 
-  The phrase ''attaining the deathless'' (amṛtam aśnute) does not mean escape from the world, but the realization that the
-  witnessing consciousness—the Self—is untouched by time, change, and death. This is the vision of Īśā pervading all: the
-  eternal Subject recognizing itself in every object, every moment.
+  **vidya** - liberating knowledge of the Self.
 
 
-  The ethical import is clear: genuine wisdom includes humble engagement with the world and its laws, not rejection of it.
-  The liberated person acts, thinks, and participates—but without the illusion of separate agency or attachment to outcomes.
+  Cross-Tradition Resonances:
 
 
-  Key Terms
-
-
-  **vidyā** — Knowledge; here, direct realization of the non-dual Self (Ātman) as the ground of all existence.
-
-  **avidyā** — Ignorance or nescience; not mere stupidity, but the apparent reality of the world of names and forms; the relative,
-  conventional sphere.
-
-  **amṛta** — The deathless, immortal; the eternal, unchanging Self or consciousness, beyond time and decay.'
+  **Madhyamaka middle logic:** avoid extremes.'
 insight: The Upanishad rejects one-sided absolutism.
-practice: When you next encounter something you feel certain about—a belief, a judgment, a conclusion—pause and whisper its
-  opposite, letting both statements hang equally real in your mind without choosing. Notice the ground beneath them both that
-  neither statement touches. Return to your day carrying both, like holding water in cupped hands.
+practice: Balance one contemplative practice with one concrete act of service today.
 upaya: ''
 themes:
 - death
@@ -84,24 +65,6 @@ tags:
 quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
-appendixes: []
-anchor_chapter: ''
-provenance:
-  collection: Isavasya Upanishad
-  section: teaching_passage
-  original_id: ISA_004
-  source_reference: ''
-translation: 'Those who worship ignorance enter into blind darkness; into even greater darkness, it seems, go those absorbed
-  in knowledge alone.
-
-
-  Whoever knows both knowledge and ignorance together—through ignorance crossing over death, by knowledge attaining the deathless—that
-  one partakes of immortality.'
-abhyasa: When you next encounter something you feel certain about—a belief, a judgment, a conclusion—pause and whisper its
-  opposite, letting both statements hang equally real in your mind without choosing. Notice the ground beneath them both that
-  neither statement touches. Return to your day carrying both, like holding water in cupped hands.
-translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a critical edition.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
 - kind: original
   label: Original
@@ -140,31 +103,20 @@ pratibha_layers:
     **avidya** - pragmatic, world-engaged knowing at the empirical level (also ignorance in other contexts).
 
 
-    **vidya** - liberating knowledge of the Self.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: avidyā (अविद्या)
-    definition: 'a- + vidyā → here empirical/world-engaged knowing; exclusive devotion to it is darkness → trap: ‘ignorance’
-      as mere stupidity'
-    lemma_id: vidya
-  - term: vidyā (विद्या)
-    definition: '√vid ‘know’ → liberating Self-knowledge; alone it also becomes a subtler darkness → trap: book-learning as
-      salvation'
-    lemma_id: vidya
-    sense_id: vidya.shaiva
-  - term: ubhayam saha (उभयं सह)
-    definition: 'both together → the text’s method: hold empirical and liberating knowing jointly → trap: syncretism without
-      distinction'
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Madhyamaka middle logic
-    resonance: avoid extremes.
-    divergence: ''
-    passage_id: ''
-  layer_provenance: migrated_from_commentary
+    **vidya** - liberating knowledge of the Self.
+
+
+    Cross-Tradition Resonances:
+
+
+    **Madhyamaka middle logic:** avoid extremes.'
 - kind: practice
   label: Practice (Abhyasa)
   body: Balance one contemplative practice with one concrete act of service today.
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Isavasya Upanishad
+  section: teaching_passage
+  original_id: ISA_004
+  source_reference: ''

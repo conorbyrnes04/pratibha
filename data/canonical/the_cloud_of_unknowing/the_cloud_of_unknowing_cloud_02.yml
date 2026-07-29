@@ -53,17 +53,14 @@ editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
-  label: Original (Middle English)
+  label: Original
   body: And yif ever thou schalt come to this cloude and dwelle and wirche therin as I bid thee, thee behoveth, as this cloude
     of unknowyng is aboven thee, bitwix thee and thi God, right so put a cloude of forgetyng bineth thee, bitwix thee and
     alle the cretures that ever ben maad.
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  layer_provenance: sourced
 - kind: iast
   label: IAST
   body: Middle English (original language of the work).
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
 - kind: translation
   label: Pratibha Translation
   body: If ever you shall come to this cloud and dwell and work therein as I bid you, you must—as this cloud of unknowing
@@ -83,35 +80,6 @@ pratibha_layers:
     things—must rise into the working mind where naked intent toward God operates. The two clouds form a sealed chamber. This
     is not dissociation but disciplined attention: the cloud of forgetting is the price of the cloud of unknowing. One cannot
     pierce the veil above while trailing the weight of creation below.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: cloud of unknowing
-    definition: 'Middle English contemplative idiom → the dark between you and God where conceptual knowing of God fails and
-      love pierces Here: If ever you shall come to this cloud and dwell and work therein as I bid you, you must—as this cloud
-      of unknowing is above you, between you and your God—likewi… Trap: vague foggy mysticism without the disciplined ‘work’
-      of piercing love'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: cloud of forgetting
-    definition: 'paired discipline with unknowing → active putting-below of creatures and even God’s works so attention can
-      pierce upward Here: If ever you shall come to this cloud and dwell and work therein as I bid you, you must—as this cloud
-      of unknowing is above you, between you and your God—likewi… Trap: ordinary forgetfulness or repression'
-  - term: nakid entent (naked intent)
-    definition: 'ME ‘bare / naked intention’ → stripped willing toward God alone, without images or discursive props Here:
-      By positioning them below, the practitioner creates a psychological and spiritual floor: nothing living—no image, no
-      feeling, no memory of beloved persons or b… Trap: willpower striving; misses the bareness of intention'
-  - term: werk (work of contemplation)
-    definition: 'ME werk → the specific contemplative labor of holding naked intent in the cloud Here: Look That Nothing Live
-      in Thy Working Mind Look That Nothing Live in Thy Working Mind And yif ever thou schalt come to this cloude and dwelle
-      and wirche therin… Trap: generic spiritual busywork'
-  - term: apophasis
-    definition: 'ἀπόφασις ‘unsaying’ → approach to God by denying inadequate knowing—here practiced as cloud-work Here: Look
-      That Nothing Live in Thy Working Mind Look That Nothing Live in Thy Working Mind And yif ever thou schalt come to this
-      cloude and dwelle and wirche therin… Trap: atheism or anti-intellectual pose'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When sitting in silence, notice what creature-thought or memory surfaces (a face, a worry, a pleasure), and rather
@@ -124,7 +92,4 @@ provenance:
   collection: The Cloud of Unknowing
   section: Ch. 4
   original_id: CLOUD_02
-  source_reference: Underhill 1912 PD Middle English edition (corpus ME in Original layer).
-layer_provenance:
-  original: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912 (and earlier
-    ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  source_reference: ''

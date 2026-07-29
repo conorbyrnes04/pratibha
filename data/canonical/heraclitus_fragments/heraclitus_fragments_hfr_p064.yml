@@ -38,8 +38,8 @@ practice: 'At the moment you notice yourself most alert—reading, listening, de
   and texture of your hands. Name one thing you are *spending* in that moment: attention, breath, the cells of your fingertips.
   Do not resolve the naming. Return to the task and carry the spending forward, conscious that the sharpness of your waking
   is also your continuous small dying.'
-sanskrit_devanagari: Θάνατός ἐστι ὁκόσα ἐγερθέντες ὁρέομεν, ὁκόσα δὲ εὕδοντες ὕπνος.
-sanskrit_iast: THanatos esti hokosa egerthentes horeomen, hokosa de ehudontes hupnos.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - awareness
@@ -53,14 +53,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Θάνατός ἐστι ὁκόσα ἐγερθέντες ὁρέομεν, ὁκόσα δὲ εὕδοντες ὕπνος.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 64'
-- kind: iast
-  label: IAST
-  body: THanatos esti hokosa egerthentes horeomen, hokosa de ehudontes hupnos.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Death is what we see waking. What we see in sleep is a dream.” LX V.—There is only one supreme Wisdom. It wills and
@@ -92,27 +84,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (death is
-      what we see waking.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap:
-      reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (death is what
-      we see waking.), time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time only;
-      aiōn here is the age-character of the world-process'
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (death
-      is what we see waking.), life and death as reciprocal: one element lives the death of another; hope cannot prefigure
-      what awaits -> trap: afterlife tourism or simple annihilation; the point is structural exchange and limit of anticipation'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (death is
-      what we see waking.), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
-      Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  layer_provenance: editorial-enriched
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -137,6 +112,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P064
   source_reference: Patrick (1889), frag. 64; corpus HFR_P064
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 64'
-  iast: transliterated_from_greek

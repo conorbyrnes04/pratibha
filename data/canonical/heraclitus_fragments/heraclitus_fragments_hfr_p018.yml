@@ -28,8 +28,8 @@ insight: ''
 practice: 'When you catch yourself explaining something you believe you understand, stop mid-sentence and ask aloud: what
   am I keeping separate from this explanation? Sit with the gap between the words leaving your mouth and the thing itself,
   without rushing to close it.'
-sanskrit_devanagari: Ὁκόσων λόγους ἤκουσα οὐδεὶς ἀφικνέεται ἐς τοῦτο, ὥστε γινώσκειν ὅτι σοφόν ἐστι πάντων κεχωρισμένον.
-sanskrit_iast: HOkosōn logous ēkousa oudeis aphikneetai es touto, hōste ginōskein hoti sophon esti pantōn kechōrismenon.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -40,14 +40,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ὁκόσων λόγους ἤκουσα οὐδεὶς ἀφικνέεται ἐς τοῦτο, ὥστε γινώσκειν ὅτι σοφόν ἐστι πάντων κεχωρισμένον.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 18'
-- kind: iast
-  label: IAST
-  body: HOkosōn logous ēkousa oudeis aphikneetai es touto, hōste ginōskein hoti sophon esti pantōn kechōrismenon.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Of all whose words I have heard, no one attains to this, to know that wisdom is apart from all.°
@@ -74,30 +66,11 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (Of all whose
-      words I have heard, no one attains to this, to know that wisdom is apart from all.°), the shared pattern according to
-      which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only
-      the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (Of all
-      whose words I have heard, no one attains to this, to know that wisdom is apart from all.°), wisdom apart from polymathy:
-      knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation
-      for knowledge'
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (Of all
-      whose words I have heard, no one attains to this, to know that wisdom is apart from all.°), understanding as holding-together
-      what daily contact already offers — not new information alone -> trap: IQ or book-learning; synesis fails when familiarity
-      becomes opacity'
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (Of all whose words
-      I have heard, no one attains to this, to know that wisdom is apart from all.°), world-ruling fire as measured transformation
-      and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
+  - term: Logos (λόγος)
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -125,6 +98,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P018
   source_reference: Patrick (1889), frag. 18; corpus HFR_P018
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 18'
-  iast: transliterated_from_greek

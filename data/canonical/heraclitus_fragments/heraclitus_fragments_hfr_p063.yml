@@ -31,8 +31,8 @@ practice: Speak aloud one decision you made today—a choice that felt free, spo
   Do not conclude; let the tracing itself show you the mesh of what was already moving before the moment you called 'choice.'
   Repeat this three times with different decisions, each time noticing where the boundary between 'destined' and 'free' actually
   dissolves.
-sanskrit_devanagari: Ἔστι γὰρ εἱμαρμένα πάντως ...
-sanskrit_iast: Esti gar ehimarmena pantōs ...
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - commentary_text
@@ -45,14 +45,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἔστι γὰρ εἱμαρμένα πάντως ...
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 63'
-- kind: iast
-  label: IAST
-  body: Esti gar ehimarmena pantōs ...
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: For it is wholly destined
@@ -69,20 +61,6 @@ pratibha_layers:
     from the outside (necessity, pattern, recurrence) is the very thing that makes coherence, meaning, and action possible.
     Without the destined structure, there would be no ''you'' to rebel against it.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (for it is
-      wholly destined), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
-      Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ἦθος (ēthos)
-    definition: 'ἦθος “custom, habitual character, dwelling” — how one habitually lives -> in this passage (for it is wholly
-      destined), character as destiny’s shape: the habitual measure you are, not a costume you wear -> trap: soft “ethics”
-      as rules-of-niceness rather than lived configuration of soul'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Speak aloud one decision you made today—a choice that felt free, spontaneous, yours—then trace backward through the
@@ -117,6 +95,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P063
   source_reference: Patrick (1889), frag. 63; corpus HFR_P063
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 63'
-  iast: transliterated_from_greek

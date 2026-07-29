@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_ii_3
 unit_label: Knowledge becomes embodied reality; this is the secret of mantra.
-title: Understanding Becomes Presence Through Embodied Mantra
+title: Knowledge becomes embodied reality; this is the secret of mantra.
 unit_type: sutra
 sanskrit_devanagari: विद्या शरीरसत्ता मन्त्ररहस्यम्
 sanskrit_iast: vidyā śarīra-sattā mantra-rahasyam
@@ -17,9 +17,7 @@ commentary: 'Here knowledge is no longer abstract. When understanding permeates 
   The secret is not hidden by secrecy, but by superficial engagement. Without embodiment, mantra remains external. When knowledge
   becomes bodily, mantra reveals its power.'
 insight: Here knowledge is no longer abstract.
-practice: Whisper a single line from a teaching you know to be true, then pause and feel where that knowledge lives in your
-  chest, throat, or hands—not as idea but as warmth, tension, or aliveness—and let your next breath move from that place rather
-  than from thought.
+practice: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 upaya: ''
 themes:
 - awareness
@@ -60,20 +58,18 @@ pratibha_layers:
 
     The secret is not hidden by secrecy, but by superficial engagement. Without embodiment, mantra remains external. When
     knowledge becomes bodily, mantra reveals its power.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 - kind: key_terms
   label: Key Terms
   items:
   - term: vidyā
     definition: integrative knowledge
-    lemma_id: vidya
-    sense_id: vidya.shaiva
   - term: śarīra-sattā
     definition: embodied reality, lived presence
   - term: mantra-rahasya
     definition: the inner secret of mantra
-- kind: practice
-  label: Practice (Abhyasa)
-  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -99,9 +95,3 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.3
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: Whisper a single line from a teaching you know to be true, then pause and feel where that knowledge lives in your
-  chest, throat, or hands—not as idea but as warmth, tension, or aliveness—and let your next breath move from that place rather
-  than from thought.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

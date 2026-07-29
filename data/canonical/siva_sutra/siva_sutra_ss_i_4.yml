@@ -5,10 +5,10 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_4
 unit_label: The ground of knowledge is the matrix of sound.
-title: Knowledge Crystallizes Through Sound's Differentiation
+title: The ground of knowledge is the matrix of sound.
 unit_type: sutra
 sanskrit_devanagari: ज्ञानाधिष्ठानं मातृका
-sanskrit_iast: jñānādhiṣṭhānaṃ mātṛkā
+sanskrit_iast: jñānādhiṣṭhānaṁ mātr̥kā
 translation_literal: The ground of knowledge is the matrix of sound.
 commentary: 'All knowing rests upon articulation. Beneath every concept, perception, and thought lies a subtle ordering power
   — the field of phonemic potential known as _mātr̥kā_. This is not merely language as speech, but language as **the structuring
@@ -24,9 +24,7 @@ commentary: 'All knowing rests upon articulation. Beneath every concept, percept
   structure, it remains circumscribed. Yet the same matrix that binds also carries the seed of release, for it arises from
   consciousness and returns to it.'
 insight: All knowing rests upon articulation.
-practice: Whisper a single word aloud—any word—and hold your attention on the vibration itself rather than its meaning. Let
-  that vibration continue silently in your body for several breaths, feeling how it structures the space around and within
-  you. Return to this whenever language arises today, tracing the sound beneath the sense.
+practice: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 upaya: ''
 themes:
 - awareness
@@ -74,6 +72,9 @@ pratibha_layers:
     This sūtra quietly discloses why bondage can persist even in refined understanding. As long as knowing is mediated through
     structure, it remains circumscribed. Yet the same matrix that binds also carries the seed of release, for it arises from
     consciousness and returns to it.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 - kind: key_terms
   label: Key Terms
   items:
@@ -81,15 +82,10 @@ pratibha_layers:
     definition: foundation or support of knowledge
   - term: mātr̥kā
     definition: phonemic matrix, alphabetic power
-    lemma_id: matrika
-    sense_id: matrika.shaiva
   - term: nāda
     definition: subtle sound (implicit)
   - term: vāc
     definition: speech as cosmic principle (implicit)
-- kind: practice
-  label: Practice (Abhyasa)
-  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -125,9 +121,3 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.4
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: Whisper a single word aloud—any word—and hold your attention on the vibration itself rather than its meaning. Let
-  that vibration continue silently in your body for several breaths, feeling how it structures the space around and within
-  you. Return to this whenever language arises today, tracing the sound beneath the sense.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

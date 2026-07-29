@@ -32,8 +32,8 @@ insight: ''
 practice: 'When reading or studying something—a text, a problem, a person''s account—pause after thirty minutes and ask aloud:
   "What am I *not* seeing by accumulating these details?" Write down one sentence that names what the details *obscure*, then
   return to reading with that sentence held lightly in mind, as a lens rather than a filter.'
-sanskrit_devanagari: Πολυμαθίη νόον ἔχειν οὐ διδάσκει· Ἡσίοδον γὰρ ἂν ἐδίδαξε καὶ Πυθαγόρην αὖτις τε Ξενοφάνεα καὶ Ἑκαταῖον.
-sanskrit_iast: Polumathiē noon echein ou didaskei. HĒsiodon gar an edidaxe kai Puthagorēn autis te Xenophanea kai HEkataion.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -45,14 +45,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Πολυμαθίη νόον ἔχειν οὐ διδάσκει· Ἡσίοδον γὰρ ἂν ἐδίδαξε καὶ Πυθαγόρην αὖτις τε Ξενοφάνεα καὶ Ἑκαταῖον.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 16'
-- kind: iast
-  label: IAST
-  body: Polumathiē noon echein ou didaskei. HĒsiodon gar an edidaxe kai Puthagorēn autis te Xenophanea kai HEkataion.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Much learning does not teach one to have understanding, else it would have taught Hesiod and Pythagoras, and again
@@ -72,34 +64,6 @@ pratibha_layers:
     one''s craft does not guarantee the shift from collecting to *seeing*. The sting is that you cannot think your way into
     this by adding more thoughts.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (Much learning
-      does not teach one to have understanding, else it would have taught Hesiod and Pythagoras, an…), wisdom apart from polymathy:
-      knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation
-      for knowledge'
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (Much
-      learning does not teach one to have understanding, else it would have taught Hesiod and Pythagoras, an…), understanding
-      as holding-together what daily contact already offers — not new information alone -> trap: IQ or book-learning; synesis
-      fails when familiarity becomes opacity'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (Much learning
-      does not teach one to have understanding, else it would have taught Hesiod and Pythagoras, an…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (Much learning
-      does not teach one to have understanding, else it would have taught Hesiod and Pythagoras, an…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When reading or studying something—a text, a problem, a person''s account—pause after thirty minutes and ask aloud:
@@ -132,6 +96,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P016
   source_reference: Patrick (1889), frag. 16; corpus HFR_P016
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 16'
-  iast: transliterated_from_greek

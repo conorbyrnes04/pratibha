@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_iii_1
 unit_label: The mind is the Self.
-title: Mind as the Nearest Mirror of Consciousness
+title: The mind is the Self.
 unit_type: sutra
 sanskrit_devanagari: आत्मा चित्तम्
 sanskrit_iast: ātmā cittaṁ
@@ -18,8 +18,7 @@ commentary: 'At first glance this contradicts the opening of the text. But here 
   mirror of consciousness available to one who has not yet stabilized recognition. To work skillfully with mind is to work
   with the Self in its most accessible form.'
 insight: At first glance this contradicts the opening of the text.
-practice: 'Catch your mind mid-thought today—any thought—and instead of pushing it away, ask it directly: *What awareness
-  are you reflecting right now?* Hold the thought like a mirror and look through it to the consciousness looking back.'
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - awareness
@@ -61,19 +60,16 @@ pratibha_layers:
     Rather than rejecting thought, Āṇavopāya begins by dignifying it. Mind is not an obstacle to be eliminated, but the nearest
     mirror of consciousness available to one who has not yet stabilized recognition. To work skillfully with mind is to work
     with the Self in its most accessible form.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
   - term: ātmā
     definition: Self, here approached indirectly
-    lemma_id: atman
   - term: citta
     definition: mind as reflective field
-    lemma_id: citta
-    sense_id: citta.shaiva
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -99,8 +95,3 @@ provenance:
   section: Āṇavopāya
   original_id: SS_III.1
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: 'Catch your mind mid-thought today—any thought—and instead of pushing it away, ask it directly: *What awareness are
-  you reflecting right now?* Hold the thought like a mirror and look through it to the consciousness looking back.'
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

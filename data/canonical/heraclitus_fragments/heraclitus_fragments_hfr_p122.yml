@@ -34,8 +34,8 @@ practice: 'When you catch yourself rehearsing an outcome—a conversation, a dec
   narrative thread and name aloud one concrete thing you cannot imagine about that moment: not what you fear, but what you
   genuinely cannot picture. Return to the breath. Do this three times in one day, each time letting the admission sit without
   resolution.'
-sanskrit_devanagari: Ἀνθρώπους μένει τελευτήσαντας ἅσσα οὐκ ἔλπονται οὐδὲ δοκέουσι.
-sanskrit_iast: Anthrōpous menei teleutēsantas hassa ouk elpontai oude dokeousi.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
 - commentary_text
@@ -50,14 +50,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἀνθρώπους μένει τελευτήσαντας ἅσσα οὐκ ἔλπονται οὐδὲ δοκέουσι.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 122'
-- kind: iast
-  label: IAST
-  body: Anthrōpous menei teleutēsantas hassa ouk elpontai oude dokeousi.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: There awaits people after death what they neither hope nor think.
@@ -76,31 +68,6 @@ pratibha_layers:
     true poverty: we are always already unprepared, and that unpreparedness is not a failure but the precise shape of being
     alive.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἦθος (ēthos)
-    definition: 'ἦθος “custom, habitual character, dwelling” — how one habitually lives -> in this passage (there awaits men
-      after death what they neither hope nor think.), character as destiny’s shape: the habitual measure you are, not a costume
-      you wear -> trap: soft “ethics” as rules-of-niceness rather than lived configuration of soul'
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (there awaits men
-      after death what they neither hope nor think.), the soul whose depth, dryness, or rudeness decides whether senses can
-      witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (there
-      awaits men after death what they neither hope nor think.), life and death as reciprocal: one element lives the death
-      of another; hope cannot prefigure what awaits -> trap: afterlife tourism or simple annihilation; the point is structural
-      exchange and limit of anticipation'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (there awaits
-      men after death what they neither hope nor think.), the shared pattern according to which all things occur — heard before
-      it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you catch yourself rehearsing an outcome—a conversation, a decision, a fear about what comes next—stop the narrative
@@ -145,6 +112,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P122
   source_reference: Patrick (1889), frag. 122; corpus HFR_P122
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 122'
-  iast: transliterated_from_greek

@@ -26,8 +26,8 @@ practice: 'Walk through a space where you normally move with purpose (home, work
   objects you typically ignore or pass through—a doorframe, a worn tool, a patch of ground. For each, ask without answering:
   what would I need to become in order to want this instead of what I''m chasing? Notice the quality of the question itself;
   do not resolve it into an answer.'
-sanskrit_devanagari: Ὄνοι σύρματ' ἂν ἕλοιντο μᾶλλον ἢ χρυσόν.
-sanskrit_iast: Onoi surmat' an helointo mallon ē chruson.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -35,14 +35,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ὄνοι σύρματ' ἂν ἕλοιντο μᾶλλον ἢ χρυσόν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 51'
-- kind: iast
-  label: IAST
-  body: Onoi surmat' an helointo mallon ē chruson.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Asses would choose stubble rather than gold.
@@ -60,20 +52,6 @@ pratibha_layers:
     the pull of both objects and to notice which one your own organism, stripped of social noise, would actually reach for
     in the dark.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (asses would
-      choose stubble rather than gold.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement
-      -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (asses
-      would choose stubble rather than gold.), wisdom apart from polymathy: knowing the one intelligent will that steers all
-      things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Walk through a space where you normally move with purpose (home, workplace, street) and pause before three ordinary
@@ -106,6 +84,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P051
   source_reference: Patrick (1889), frag. 51; corpus HFR_P051
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 51'
-  iast: transliterated_from_greek

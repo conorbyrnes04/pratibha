@@ -28,8 +28,8 @@ insight: ''
 practice: Stir a cup of cream and coffee together, then set it down and watch without touching it for three minutes, marking
   the precise moment separation begins—the brown deepening at the edges, the cream rising in threads—and notice what in you
   wants to stir again, and what in you wants to let it finish separating.
-sanskrit_devanagari: Καὶ ὁ κυκεὼν διίσταται μὴ κινεόμενος.
-sanskrit_iast: Kai ho kukeōn diistatai mē kineomenos.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - breath
@@ -40,14 +40,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Καὶ ὁ κυκεὼν διίσταται μὴ κινεόμενος.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 84'
-- kind: iast
-  label: IAST
-  body: Kai ho kukeōn diistatai mē kineomenos.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: A mixture separates when not kept in motion.
@@ -65,30 +57,6 @@ pratibha_layers:
     is not distant. It is your own attention, your own breath, your own will—each one a krasis that fragments the moment you
     stop tending it.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (a mixture
-      separates when not kept in motion.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement
-      -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: ποταμός (potamos)
-    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage (a mixture separates
-      when not kept in motion.), flux as identity-in-process: you cannot step twice into the same river because waters renew
-      -> trap: slogan “everything changes” without the logos that measures the flow'
-  - term: κοινός (koinos)
-    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage (a mixture separates
-      when not kept in motion.), the common Logos: waking rationality is shared; private dream-opinion is not a world -> trap:
-      mere social consensus; koinos here is cosmological shareability, not majority vote'
-  - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (a mixture separates when not
-      kept in motion.), breath-life as the medium through which waking, sleep, and soul-measure become intelligible -> trap:
-      reducing pneuma to later Stoic technical physics alone, or to mere oxygen'
-    lemma_id: pneuma
-    sense_id: pneuma.stoic
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Stir a cup of cream and coffee together, then set it down and watch without touching it for three minutes, marking
@@ -123,6 +91,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P084
   source_reference: Patrick (1889), frag. 84; corpus HFR_P084
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 84'
-  iast: transliterated_from_greek

@@ -26,8 +26,8 @@ insight: ''
 practice: 'Identify one small thing you discarded today—a scrap, a word you took back, a plan abandoned—and trace it forward:
   where does it go, what does it feed, what becomes possible because you released it? Speak this chain aloud, slowly, as if
   accounting to the thing itself.'
-sanskrit_devanagari: Ἄκεα.
-sanskrit_iast: Akea.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - earth
@@ -37,14 +37,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἄκεα.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 129'
-- kind: iast
-  label: IAST
-  body: Akea.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Atonements.*
@@ -62,30 +54,6 @@ pratibha_layers:
     is lost, only transferred. To understand this is to stop seeking escape from time and to recognize that your own decay
     is already someone else''s nourishment.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (atonements.*),
-      the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing Logos into private
-      doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (atonements.*),
-      world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static
-      elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (atonements.*), cosmic justice that polices
-      measures — the Erinyes as helpers when bounds are overstepped -> trap: courtroom morality alone; here dikē is cosmological
-      proportion, not only human law'
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (atonements.*),
-      time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time only; aiōn here is the
-      age-character of the world-process'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Identify one small thing you discarded today—a scrap, a word you took back, a plan abandoned—and trace it forward:
@@ -117,6 +85,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P129
   source_reference: Patrick (1889), frag. 129; corpus HFR_P129
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 129'
-  iast: transliterated_from_greek

@@ -30,8 +30,8 @@ insight: ''
 practice: In the next conversation where you feel the pull to explain something you sense but cannot yet articulate, pause
   at the threshold and speak only a question or a bare observation—then wait in the silence that follows, noticing the other
   person's face and your own breath, without rushing to fill the gap with clarification.
-sanskrit_devanagari: Κρύπτειν ἀμαθίην κρέσσον ἢ ἐς τὸ μέσον φέρειν .
-sanskrit_iast: Kruptein amathiēn kresson ē es to meson pherein .
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
 - commentary_text
@@ -43,14 +43,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Κρύπτειν ἀμαθίην κρέσσον ἢ ἐς τὸ μέσον φέρειν .
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 109'
-- kind: iast
-  label: IAST
-  body: Kruptein amathiēn kresson ē es to meson pherein .
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: 7; It is better to conceal ignorance than to expose it.
@@ -68,30 +60,6 @@ pratibha_layers:
     preserves the actual condition: you remain *inside* the not-knowing, unseparated from it, and thus closer to what logos
     (the underlying pattern) actually is. The fragment asks: what happens to your listening when you stop performing understanding?'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (7; It is
-      better to conceal ignorance than to expose it.), the shared pattern according to which all things occur — heard before
-      it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (7;
-      It is better to conceal ignorance than to expose it.), nature that loves to hide — the self-showing of things that also
-      resists crude disclosure -> trap: equating physis with “the outdoors” or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (7; It
-      is better to conceal ignorance than to expose it.), wisdom apart from polymathy: knowing the one intelligent will that
-      steers all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (7; It
-      is better to conceal ignorance than to expose it.), understanding as holding-together what daily contact already offers
-      — not new information alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: In the next conversation where you feel the pull to explain something you sense but cannot yet articulate, pause at
@@ -123,6 +91,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P109
   source_reference: Patrick (1889), frag. 109; corpus HFR_P109
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 109'
-  iast: transliterated_from_greek

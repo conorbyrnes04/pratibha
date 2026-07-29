@@ -92,12 +92,20 @@ def parse_markdown(path: Path) -> list[dict]:
         source = source_match.group(1).strip() if source_match else ""
 
         fields = _extract_subsections(block)
-        original = fields.get("original", "")
+        # Skill uses ### Devanagari; older drafts used ### Original.
+        original = (
+            fields.get("devanagari", "")
+            or fields.get("original", "")
+            or fields.get("sanskrit", "")
+        )
         iast = fields.get("iast", "")
         translation = fields.get("pratibha_translation", "") or fields.get("translation", "")
         commentary = fields.get("pratibha_commentary", "") or fields.get("commentary", "")
         key_terms = fields.get("key_terms", "")
-        resonances = fields.get("cross_tradition_resonances", "")
+        resonances = (
+            fields.get("cross_tradition_resonances", "")
+            or fields.get("resonances", "")
+        )
         practice = fields.get("practice_abhyasa", "") or fields.get("practice", "")
 
         if not translation:
@@ -110,12 +118,22 @@ def parse_markdown(path: Path) -> list[dict]:
             long_parts.append(f"Cross-Tradition Resonances:\n\n{resonances}")
         long_commentary = "\n\n".join(p.strip() for p in long_parts if p.strip())
 
-        unit_num = len(units) + 1
+        # Verse-stable IDs (avoid colliding with retired thematic BG_MD_001..012 hubs).
+        # Source examples: "Bhagavad Gītā 2.47" / "Bhagavad Gītā 1.2–1.4"
+        ch, start_v, end_v = _verse_span(source)
+        if ch and start_v:
+            if end_v and end_v != start_v:
+                sutra_id = f"BG_{ch:02d}_{start_v:02d}_{end_v:02d}"
+            else:
+                sutra_id = f"BG_{ch:02d}_{start_v:02d}"
+        else:
+            sutra_id = f"BG_MD_{len(units) + 1:03d}"
+
         units.append(
             {
-                "sutra_id": f"BG_MD_{unit_num:03d}",
+                "sutra_id": sutra_id,
                 "collection": "Bhagavad Gita",
-                "section": "teaching_passage",
+                "section": f"chapter_{ch:02d}" if ch else "teaching_passage",
                 "title": title,
                 "sanskrit": original,
                 "transliteration": iast,
@@ -137,6 +155,25 @@ def parse_markdown(path: Path) -> list[dict]:
     return units
 
 
+def _verse_span(source: str) -> tuple[int, int, int]:
+    """Return (chapter, start_verse, end_verse) from a Source line."""
+    m = re.search(
+        r"(\d+)\s*\.\s*(\d+)\s*[–—-]\s*(?:(\d+)\s*\.\s*)?(\d+)",
+        source or "",
+    )
+    if m:
+        ch = int(m.group(1))
+        start = int(m.group(2))
+        end = int(m.group(4))
+        return ch, start, end
+    m = re.search(r"(\d+)\s*\.\s*(\d+)", source or "")
+    if m:
+        ch = int(m.group(1))
+        v = int(m.group(2))
+        return ch, v, v
+    return 0, 0, 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Convert Bhagavad Gita Pratibha markdown to YAML files.")
     ap.add_argument("input_md", type=Path)
@@ -149,8 +186,8 @@ def main() -> int:
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
     for rec in records:
-        idx = rec["sutra_id"].split("_")[-1]
-        out = args.output_dir / f"bg_md_{idx}.yml"
+        slug = rec["sutra_id"].lower()
+        out = args.output_dir / f"{slug}.yml"
         out.write_text(
             yaml.safe_dump(rec, allow_unicode=True, sort_keys=False, default_flow_style=False),
             encoding="utf-8",

@@ -28,8 +28,8 @@ insight: ''
 practice: When you find yourself about to speak a judgment about something that matters—another person's character, a political
   claim, the meaning of an event—pause and name aloud what you *don't yet know* about it, then speak nothing further on that
   subject for the rest of the day, returning to it only through questions.
-sanskrit_devanagari: Μὴ εἰκῆ περὶ τῶν μεγίστων συμβαλώμεθα.
-sanskrit_iast: Mē eikē peri tōn megistōn sumbalōmetha.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -40,14 +40,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Μὴ εἰκῆ περὶ τῶν μεγίστων συμβαλώμεθα.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 48'
-- kind: iast
-  label: IAST
-  body: Mē eikē peri tōn megistōn sumbalōmetha.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Let us not draw conclusions rashly about the greatest things.
@@ -65,20 +57,6 @@ pratibha_layers:
     and the dead weight of settled opinion. To obey this fragment is to notice, in real time, the moment when your own mind
     wants to *finish* a thought about something large, and to deliberately not finish it.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (let us not draw
-      conclusions rashly about the greatest things.), time/age as a child at play: cosmic process without a human craftsman-god
-      -> trap: clock-time only; aiōn here is the age-character of the world-process'
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (let
-      us not draw conclusions rashly about the greatest things.), nature that loves to hide — the self-showing of things that
-      also resists crude disclosure -> trap: equating physis with “the outdoors” or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When you find yourself about to speak a judgment about something that matters—another person's character, a political
@@ -112,6 +90,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P048
   source_reference: Patrick (1889), frag. 48; corpus HFR_P048
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 48'
-  iast: transliterated_from_greek

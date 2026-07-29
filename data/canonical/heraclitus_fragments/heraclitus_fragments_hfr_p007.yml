@@ -28,8 +28,8 @@ insight: ''
 practice: When faced with a task or inquiry that feels pointless or already lost, pause and name aloud what you are *not*
   hoping for in that moment—be specific and honest. Then, without forcing belief, speak one sentence of genuine hope about
   it, however fragile or strange that hope feels. Notice whether the thing itself has changed, or only your access to it.
-sanskrit_devanagari: Ἐὰν μὴ ἔλπηαι, ἀνέλπιστον οὐκ ἐξευρήσει, ἀνεξερεύνητον ἐὸν καὶ ἄπορον.
-sanskrit_iast: Ean mē elpēai, anelpiston ouk exeurēsei, anexereunēton eon kai aporon.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - desire
@@ -39,14 +39,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἐὰν μὴ ἔλπηαι, ἀνέλπιστον οὐκ ἐξευρήσει, ἀνεξερεύνητον ἐὸν καὶ ἄπορον.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 7'
-- kind: iast
-  label: IAST
-  body: Ean mē elpēai, anelpiston ouk exeurēsei, anexereunēton eon kai aporon.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: If you do not hope, you will not win that which is not hoped for, since it is unattainable and inaccessible.
@@ -64,32 +56,6 @@ pratibha_layers:
     what are you already excluding by your refusal to hope? What becomes inaccessible not because it is distant, but because
     you have turned away from the threshold?'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (If you do
-      not hope, you will not win that which is not hoped for, since it is unattainable and inaccessible.), tensioned unity
-      of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (If
-      you do not hope, you will not win that which is not hoped for, since it is unattainable and inaccessible.), life and
-      death as reciprocal: one element lives the death of another; hope cannot prefigure what awaits -> trap: afterlife tourism
-      or simple annihilation; the point is structural exchange and limit of anticipation'
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (If you do not hope, you will
-      not win that which is not hoped for, since it is unattainable and inaccessible.), the one that all things are: not mystical
-      mush but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange
-      inside unity'
-  - term: κοινός (koinos)
-    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage (If you do not hope,
-      you will not win that which is not hoped for, since it is unattainable and inaccessible.), the common Logos: waking
-      rationality is shared; private dream-opinion is not a world -> trap: mere social consensus; koinos here is cosmological
-      shareability, not majority vote'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When faced with a task or inquiry that feels pointless or already lost, pause and name aloud what you are *not* hoping
@@ -123,6 +89,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P007
   source_reference: Patrick (1889), frag. 7; corpus HFR_P007
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 7'
-  iast: transliterated_from_greek

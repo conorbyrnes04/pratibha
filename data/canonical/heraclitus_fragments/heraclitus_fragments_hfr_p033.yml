@@ -25,8 +25,8 @@ insight: ''
 practice: 'In a moment of disagreement with someone close to you—a difference about fairness, time, or priority—pause before
   responding and ask aloud or silently: *Which law am I defending here, and which wall?* Then speak only after you have named
   one concrete principle you are willing to stand for, not merely to win the exchange.'
-sanskrit_devanagari: Μάχεσθαι χρὴ τὸν δῆμον ὑπὲρ τοῦ νόμου ὅκως ὑπὲρ τείχεος.
-sanskrit_iast: Machesthai chrē ton dēmon huper tou nomou hokōs huper teicheos.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -35,14 +35,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Μάχεσθαι χρὴ τὸν δῆμον ὑπὲρ τοῦ νόμου ὅκως ὑπὲρ τείχεος.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 100'
-- kind: iast
-  label: IAST
-  body: Machesthai chrē ton dēmon huper tou nomou hokōs huper teicheos.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: The people must fight for their law as for their walls.
@@ -60,18 +52,6 @@ pratibha_layers:
     the political from the cosmic; he shows that order (kosmos) is not given but defended, moment by moment, by those who
     inhabit it.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: νόμος (nomos)
-    definition: 'νόμος “law, custom, allotted order” -> in this passage (the people must fight for their law as for their
-      walls.), civic/cosmic law worth defending as walls are — shared order that makes a people -> trap: arbitrary statute;
-      Heraclitus binds nomos to divine/common measure'
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (the people must fight for their law as for
-      their walls.), cosmic justice that polices measures — the Erinyes as helpers when bounds are overstepped -> trap: courtroom
-      morality alone; here dikē is cosmological proportion, not only human law'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'In a moment of disagreement with someone close to you—a difference about fairness, time, or priority—pause before
@@ -107,6 +87,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P033
   source_reference: Patrick (1889), frag. 33; corpus HFR_P033
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 100'
-  iast: transliterated_from_greek

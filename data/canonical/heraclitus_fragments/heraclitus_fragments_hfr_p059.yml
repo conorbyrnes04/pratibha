@@ -31,8 +31,8 @@ practice: Attend to a single disagreement you are currently holding — a confli
   and equally necessary. Repeat this exchange three times, listening for the point where neither position collapses but both
   become sharper, more precise, more alive in their opposition. Notice what understanding emerges not from choosing between
   them but from holding them both awake.
-sanskrit_devanagari: Συνάψειας οὖλα καὶ οὐχὶ οὖλα, συμφερόμενον διαφερόμενον, συνᾷδον διᾷδον· ἐκ πάντων ἓν καὶ ἐξ ἑνὸς πάντα.
-sanskrit_iast: Sunapseias oula kai ouchi oula, sumpheromenon diapheromenon, sunadon diadon. ek pantōn hen kai ex henos panta.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -41,14 +41,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Συνάψειας οὖλα καὶ οὐχὶ οὖλα, συμφερόμενον διαφερόμενον, συνᾷδον διᾷδον· ἐκ πάντων ἓν καὶ ἐξ ἑνὸς πάντα.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 59'
-- kind: iast
-  label: IAST
-  body: Sunapseias oula kai ouchi oula, sumpheromenon diapheromenon, sunadon diadon. ek pantōn hen kai ex henos panta.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Unite whole and part, agreement and disagreement, accordant and discordant; —— all comes one, and from one all.
@@ -67,36 +59,6 @@ pratibha_layers:
     to choose. To understand this is to stop asking whether things are ultimately one or many, and instead to see how the
     question itself arises from the logos working through us.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (Unite whole
-      and part, agreement and disagreement, accordant and discordant; —— all comes one, and from one…), tensioned unity of
-      opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (Unite whole
-      and part, agreement and disagreement, accordant and discordant; —— all comes one, and from one…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (Unite whole and
-      part, agreement and disagreement, accordant and discordant; —— all comes one, and from one…), world-ruling fire as measured
-      transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance rather than
-      lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (Unite whole and part, agreement
-      and disagreement, accordant and discordant; —— all comes one, and from one…), the one that all things are: not mystical
-      mush but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange
-      inside unity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Attend to a single disagreement you are currently holding — a conflict with another person, or an internal contradiction
@@ -132,6 +94,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P059
   source_reference: Patrick (1889), frag. 59; corpus HFR_P059
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 59'
-  iast: transliterated_from_greek

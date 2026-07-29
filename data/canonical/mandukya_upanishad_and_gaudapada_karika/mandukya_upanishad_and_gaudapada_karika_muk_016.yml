@@ -8,15 +8,7 @@ unit_label: 'Gauḍapāda''s Kārikā: Extended Philosophical Commentary'
 title: 'Gauḍapāda''s Kārikā: Extended Philosophical Commentary'
 unit_type: teaching_passage
 thesis: The first prakaraṇa closely follows the Upaniṣad's analysis.
-themes:
-- consciousness
-- self
-- awareness
-- knowledge
-- ignorance
-- emptiness
-- freedom
-- meditation
+themes: []
 source_excerpt: Āgama Prakaraṇa — Tradition · 29 Verses
 translation_literal: Āgama Prakaraṇa — Tradition · 29 Verses
 commentary: 'The first prakaraṇa closely follows the Upaniṣad''s analysis. Its distinctive contributions are:
@@ -25,74 +17,16 @@ commentary: 'The first prakaraṇa closely follows the Upaniṣad''s analysis. I
   The causality diagnosis (I.11–12): establishing that the first three quarters are conditioned (by cause and effect, or cause
   alone) while Turīya alone is uncaused — not one term in the causal chain but the ground in which causality appears.'
 insight: ''
-practice: 'Trace backward through your next decision or action: name the cause that prompted it, then the cause before that,
-  then the one before—until you reach a moment where you cannot name what moved you to begin. Rest there, in that unnamed
-  ground, for three breaths, and notice what arises without causality.'
-sanskrit_devanagari: 'कार्यकारणबद्धौ ताव् इष्येते विश्वतैजसौ ।
-
-  प्राज्ञः कारणबद्धस् तु द्वौ तौ तुर्ये न सिध्यतः ॥ ११ ॥
-
-
-  नात्मानं न परांश् चैव न सत्यं नापि चानृतम् ।
-
-  प्राज्ञः किंचन संवेत्ति तुर्यं तत् सर्वदृक् सदा ॥ १२ ॥
-
-  '
-sanskrit_iast: 'kāryakāraṇabaddhau tāv iṣyete viśvataijasau |
-
-  prājñaḥ kāraṇabaddhas tu dvau tau turye na sidhyataḥ || 11 ||
-
-
-  nātmānaṃ na parāṃś caiva na satyaṃ nāpi cānṛtam |
-
-  prājñaḥ kiṃcana saṃvetti turyaṃ tat sarvadṛk sadā || 12 ||
-
-  '
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+sanskrit_devanagari: ''
+sanskrit_iast: ''
 tags:
-- awareness
 - commentary_text
-- consciousness
-- emptiness
-- freedom
-- ignorance
-- knowledge
 - mandukya_upanishad_and_gaudapada_karika
-- meditation
-- self
 quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Devanagari
-  body: 'कार्यकारणबद्धौ ताव् इष्येते विश्वतैजसौ ।
-
-    प्राज्ञः कारणबद्धस् तु द्वौ तौ तुर्ये न सिध्यतः ॥ ११ ॥
-
-
-    नात्मानं न परांश् चैव न सत्यं नापि चानृतम् ।
-
-    प्राज्ञः किंचन संवेत्ति तुर्यं तत् सर्वदृक् सदा ॥ १२ ॥
-
-    '
-  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
-    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Gauḍapāda Kārikā Āgama I.11–12 (verses cited
-    in unit commentary); standard PD ancient text via IAST→Devanagari.'
-- kind: iast
-  label: IAST
-  body: 'kāryakāraṇabaddhau tāv iṣyete viśvataijasau |
-
-    prājñaḥ kāraṇabaddhas tu dvau tau turye na sidhyataḥ || 11 ||
-
-
-    nātmānaṃ na parāṃś caiva na satyaṃ nāpi cānṛtam |
-
-    prājñaḥ kiṃcana saṃvetti turyaṃ tat sarvadṛk sadā || 12 ||
-
-    '
-  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
-    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Gauḍapāda Kārikā Āgama I.11–12 (verses cited
-    in unit commentary); standard PD ancient text via IAST→Devanagari.'
 - kind: translation
   label: Pratibha Translation
   body: Āgama Prakaraṇa — Tradition · 29 Verses
@@ -103,23 +37,9 @@ pratibha_layers:
 
     The causality diagnosis (I.11–12): establishing that the first three quarters are conditioned (by cause and effect, or
     cause alone) while Turīya alone is uncaused — not one term in the causal chain but the ground in which causality appears.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ajāta (अजात)
-    definition: 'unborn → Gauḍapāda’s non-origination framing → trap: denial that anything appears'
-    lemma_id: brahman
-    sense_id: brahman.upanishadic
-  - term: kārikā (कारिका)
-    definition: 'verse commentary → philosophical expansion of Māṇḍūkya → trap: optional notes'
-  - term: māyā (माया)
-    definition: 'appearance-power in the kārikā’s analysis of states → trap: world is fake'
-    lemma_id: maya
-    sense_id: maya.advaita
-  - term: advaita (अद्वैत)
-    definition: 'non-duality as the kārikā’s destination → trap: monism as theory only'
-    lemma_id: bheda
-  layer_provenance: editorial-enriched
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -145,9 +65,6 @@ pratibha_layers:
       non-duality perpetuates bondage.
     passage_id: siva_sutra.ss_i_2
   layer_provenance: generated_grounded
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -155,12 +72,3 @@ provenance:
   section: teaching_passage
   original_id: MUK_016
   source_reference: ''
-abhyasa: 'Trace backward through your next decision or action: name the cause that prompted it, then the cause before that,
-  then the one before—until you reach a moment where you cannot name what moved you to begin. Rest there, in that unnamed
-  ground, for three breaths, and notice what arises without causality.'
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
-translation_provenance: Original Pratibha editorial summary.
-layer_provenance:
-  original: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard PD
-    Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Gauḍapāda Kārikā Āgama I.11–12 (verses cited in
-    unit commentary); standard PD ancient text via IAST→Devanagari.'

@@ -26,8 +26,8 @@ practice: Sit across from someone in conversation and deliberately *mute* the im
   words and tone for the first full exchange; instead, listen for the *rhythm* beneath the words—the hesitations, the cadence,
   the gaps—as if you were tuning an instrument rather than collecting evidence. After, notice what you could not have known
   from eyes and ears alone.
-sanskrit_devanagari: Κακοὶ μάρτυρες ἀνθρώποισι ὀφθαλμοὶ καὶ ὦτα, βαρβάρους ψυχὰς ἐχόντων.
-sanskrit_iast: Kakoi martures anthrōpoisi ophthalmoi kai ōta, barbarous psuchas echontōn.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -36,14 +36,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Κακοὶ μάρτυρες ἀνθρώποισι ὀφθαλμοὶ καὶ ὦτα, βαρβάρους ψυχὰς ἐχόντων.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 4'
-- kind: iast
-  label: IAST
-  body: Kakoi martures anthrōpoisi ophthalmoi kai ōta, barbarous psuchas echontōn.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Kyes and ears are bad witnesses to people having rude souls.
@@ -70,23 +62,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (kyes and
-      ears are bad witnesses to men having rude souls.), the shared pattern according to which all things occur — heard before
-      it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (kyes and ears are
-      bad witnesses to men having rude souls.), the soul whose depth, dryness, or rudeness decides whether senses can witness
-      truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (kyes and ears are bad witnesses to men having
-      rude souls.), the proportion that governs exchange, fire, and speech — what rude witnessing cannot attest -> trap: quantitative
-      metric alone; Heraclitus’s measure is ontological fittingness'
-  layer_provenance: editorial-enriched
+  - term: psychē (ψυχή)
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -119,6 +98,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P004
   source_reference: Patrick (1889), frag. 4; corpus HFR_P004
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 4'
-  iast: transliterated_from_greek

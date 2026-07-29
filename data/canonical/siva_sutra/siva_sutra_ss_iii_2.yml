@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_iii_2
 unit_label: Knowledge is bondage.
-title: Identification With Knowledge Binds, Not Knowledge Itself
+title: Knowledge is bondage.
 unit_type: sutra
 sanskrit_devanagari: ज्ञानं बन्धः
 sanskrit_iast: jñānaṁ bandhaḥ
@@ -17,9 +17,7 @@ commentary: 'The refrain returns, but its meaning shifts. In Āṇavopāya, know
   Here the practitioner must learn restraint. Knowing is not abolished, but loosened. What binds is not information, but identification
   with it.'
 insight: The refrain returns, but its meaning shifts.
-practice: When you reach for an explanation or certainty about something today—a person's motives, an outcome, your own worth—pause
-  and feel the grip in your chest or jaw, then deliberately soften your hold on that thought without replacing it with another.
-  Let the not-knowing sit there, undefended, for three breaths.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - knowledge
@@ -52,18 +50,16 @@ pratibha_layers:
 
     Here the practitioner must learn restraint. Knowing is not abolished, but loosened. What binds is not information, but
     identification with it.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
   - term: jñāna
     definition: conceptual knowing
-    lemma_id: jnana
   - term: bandha
     definition: bondage through fixation
-    lemma_id: bandha
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -97,9 +93,3 @@ provenance:
   section: Āṇavopāya
   original_id: SS_III.2
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: When you reach for an explanation or certainty about something today—a person's motives, an outcome, your own worth—pause
-  and feel the grip in your chest or jaw, then deliberately soften your hold on that thought without replacing it with another.
-  Let the not-knowing sit there, undefended, for three breaths.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

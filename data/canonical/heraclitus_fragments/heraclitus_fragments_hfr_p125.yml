@@ -27,8 +27,8 @@ insight: ''
 practice: Speak aloud something you hold as true or precious—a conviction, a memory, a value—then listen to how it sounds
   in your own ears and in the room. Notice what dies in the speaking, what hardens, what becomes false simply by becoming
   audible. Do not correct or defend it; let the desecration stand as information.
-sanskrit_devanagari: Τὰ γὰρ νομιζόμενα κατ' ἀνθρώπους μυστήρια ἀνιερωστὶ μυεῦνται.
-sanskrit_iast: Ta gar nomizomena kat' anthrōpous mustēria anierōsti mueuntai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -37,14 +37,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Τὰ γὰρ νομιζόμενα κατ' ἀνθρώπους μυστήρια ἀνιερωστὶ μυεῦνται.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 125'
-- kind: iast
-  label: IAST
-  body: Ta gar nomizomena kat' anthrōpous mustēria anierōsti mueuntai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: For the things which are considered mysteries among people, they celebrate sacrilegiously.
@@ -62,31 +54,6 @@ pratibha_layers:
     is unworthy, but because the sacred and the celebrated are structurally opposed. Heraclitus watches this happen and names
     it without judgment, as one names a law of fire.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: κοινός (koinos)
-    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage (for the things which
-      are considered mysteries among men, they celebrate sacrilegiously.), the common Logos: waking rationality is shared;
-      private dream-opinion is not a world -> trap: mere social consensus; koinos here is cosmological shareability, not majority
-      vote'
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (for the
-      things which are considered mysteries among men, they celebrate sacrilegiously.), tensioned unity of opposites — bow
-      and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (for the things
-      which are considered mysteries among men, they celebrate sacrilegiously.), world-ruling fire as measured transformation
-      and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (for the things which are considered mysteries
-      among men, they celebrate sacrilegiously.), cosmic justice that polices measures — the Erinyes as helpers when bounds
-      are overstepped -> trap: courtroom morality alone; here dikē is cosmological proportion, not only human law'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Speak aloud something you hold as true or precious—a conviction, a memory, a value—then listen to how it sounds in
@@ -132,6 +99,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P125
   source_reference: Patrick (1889), frag. 125; corpus HFR_P125
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 125'
-  iast: transliterated_from_greek

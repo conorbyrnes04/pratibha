@@ -38,8 +38,8 @@ practice: 'At the moment you notice the body shifting—a breath deepening, atte
   and name both poles aloud without choosing: ''I am here and I am leaving; I am waking and I am sleeping.'' Repeat this three
   times, slowly, feeling the truth of simultaneity rather than fighting it. The point is not resignation but the precise recognition
   that these are not sequential but woven now.'
-sanskrit_devanagari: Ἄνθρωπος, ὅκως ἐν εὐφρόνῃ φάος, ἅπτεται ἀποσβέννυται.
-sanskrit_iast: Anthrōpos, hokōs en euphronē phaos, haptetai aposbennutai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - breath
@@ -54,14 +54,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἄνθρωπος, ὅκως ἐν εὐφρόνῃ φάος, ἅπτεται ἀποσβέννυται.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 77'
-- kind: iast
-  label: IAST
-  body: Anthrōpos, hokōs en euphronē phaos, haptetai aposbennutai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: 'Man, as a light at night, is lighted and extinguished.* For when is death not present with us? As indeed Heraclitus
@@ -82,36 +74,6 @@ pratibha_layers:
     despair but to stop dividing oneself into the living part (which I protect) and the dead part (which I deny). The teaching
     is structural, not sentimental.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (Man,
-      as a light at night, is lighted and extinguished.* For when is death not present with us? As indeed He…), life and death
-      as reciprocal: one element lives the death of another; hope cannot prefigure what awaits -> trap: afterlife tourism
-      or simple annihilation; the point is structural exchange and limit of anticipation'
-  - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (Man, as a light at night, is
-      lighted and extinguished.* For when is death not present with us? As indeed He…), breath-life as the medium through
-      which waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics
-      alone, or to mere oxygen'
-    lemma_id: pneuma
-    sense_id: pneuma.stoic
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (Man, as
-      a light at night, is lighted and extinguished.* For when is death not present with us? As indeed He…), tensioned unity
-      of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (Man, as a
-      light at night, is lighted and extinguished.* For when is death not present with us? As indeed He…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'At the moment you notice the body shifting—a breath deepening, attention wandering, fatigue touching the eyes—pause
@@ -146,6 +108,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P077
   source_reference: Patrick (1889), frag. 77; corpus HFR_P077
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 77'
-  iast: transliterated_from_greek

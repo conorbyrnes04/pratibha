@@ -39,8 +39,8 @@ practice: 'When handling money, food, time, or attention today, pause at one mom
   where to look) and ask: what is the hidden rate at which I am trading this for that? Name the two things and the measure
   between them—not as judgment, but as a merchant would, neutrally. Repeat the names three times aloud or in thought to feel
   the balance.'
-sanskrit_devanagari: Πυρὸς ἀνταμείβεται πάντα καὶ πῦρ ἁπάντων, ὥσπερ χρυσοῦ χρήματα καὶ χρημάτων χρυσός.
-sanskrit_iast: Puros antameibetai panta kai pur hapantōn, hōsper chrusou chrēmata kai chrēmatōn chrusos.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -50,14 +50,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Πυρὸς ἀνταμείβεται πάντα καὶ πῦρ ἁπάντων, ὥσπερ χρυσοῦ χρήματα καὶ χρημάτων χρυσός.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 22'
-- kind: iast
-  label: IAST
-  body: Puros antameibetai panta kai pur hapantōn, hōsper chrusou chrēmata kai chrēmatōn chrusos.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: All things are exchanged for fire and fire for all things, just as wares for gold and gold for wares. that there is
@@ -90,29 +82,13 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (All things
-      are exchanged for fire and fire for all things, just as wares for gold and gold for wares. that…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (All things are
-      exchanged for fire and fire for all things, just as wares for gold and gold for wares. that…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (All things are exchanged for fire and fire for
-      all things, just as wares for gold and gold for wares. that…), the proportion that governs exchange, fire, and speech
-      — what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (All things are
-      exchanged for fire and fire for all things, just as wares for gold and gold for wares. that…), time/age as a child at
-      play: cosmic process without a human craftsman-god -> trap: clock-time only; aiōn here is the age-character of the world-process'
-  layer_provenance: editorial-enriched
+  - term: pyr / cosmic fire
+    definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation — exchange (πυρὸς τροπαὶ)
+      governed by proportion. Fire names process, not a static element.
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -141,6 +117,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P022
   source_reference: Patrick (1889), frag. 22; corpus HFR_P022
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 22'
-  iast: transliterated_from_greek

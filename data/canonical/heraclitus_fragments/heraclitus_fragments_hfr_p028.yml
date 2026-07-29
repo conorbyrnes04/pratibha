@@ -27,8 +27,8 @@ practice: 'Watch for the moment when a decision arrives—not after deliberation
   Freeze there. Notice whether you can locate the ''rule'' in that instant: is it a reason, a feeling, a sudden clarity, or
   the very impossibility of hesitation? Return to that threshold three times this week without trying to change it; let the
   lightning show you its own governance.'
-sanskrit_devanagari: Τὰ δὲ πάντα οἰακίζει κεραυνός.
-sanskrit_iast: Ta de panta oiakizei keraunos.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -37,14 +37,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Τὰ δὲ πάντα οἰακίζει κεραυνός.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 28'
-- kind: iast
-  label: IAST
-  body: Ta de panta oiakizei keraunos.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Lightning rules all.
@@ -71,29 +63,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (lightning rules
-      all.), world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap: treating fire as a
-      static elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (lightning
-      rules all.), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
-      Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (lightning rules all.), the proportion that governs
-      exchange, fire, and speech — what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure
-      is ontological fittingness'
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (lightning
-      rules all.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading
-      “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  layer_provenance: editorial-enriched
+  - term: pyr / cosmic fire
+    definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation — exchange (πυρὸς τροπαὶ)
+      governed by proportion. Fire names process, not a static element.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -119,6 +92,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P028
   source_reference: Patrick (1889), frag. 28; corpus HFR_P028
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 28'
-  iast: transliterated_from_greek

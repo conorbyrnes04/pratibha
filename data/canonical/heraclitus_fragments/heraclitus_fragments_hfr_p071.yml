@@ -34,8 +34,8 @@ practice: 'Walk a route you know by heart—your home to a familiar place—but 
   the next turn before your conscious mind names it. Notice: the decision happens in the body, not retrievable as a thought
   you can isolate or retrace. Repeat this walk three times in one day, each time trying to *catch* the instant the choice
   emerges. You will not succeed. That failure is the practice.'
-sanskrit_devanagari: Ψυχῆς πείρατα οὐκ ἂν ἐξεύροιο πᾶσαν ἐπιπορευόμενος ὁδόν.
-sanskrit_iast: PSuchēs peirata ouk an exeuroio pasan epiporeuomenos hodon.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - de
@@ -51,14 +51,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ψυχῆς πείρατα οὐκ ἂν ἐξεύροιο πᾶσαν ἐπιπορευόμενος ὁδόν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 71'
-- kind: iast
-  label: IAST
-  body: PSuchēs peirata ouk an exeuroio pasan epiporeuomenos hodon.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: also says, ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so deep lies its principle
@@ -85,29 +77,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (also says,
-      ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so deep lies i…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (also says, ‘‘ The limits of the soul you would
-      not find out though you traverse every way,’’ so deep lies i…), the proportion that governs exchange, fire, and speech
-      — what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (also says, ‘‘ The
-      limits of the soul you would not find out though you traverse every way,’’ so deep lies i…), the soul whose depth, dryness,
-      or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (also says,
-      ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so deep lies i…), wisdom apart from
-      polymathy: knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη)
-      or reputation for knowledge'
-  layer_provenance: editorial-enriched
+  - term: psychē (ψυχή)
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -133,6 +106,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P071
   source_reference: Patrick (1889), frag. 71; corpus HFR_P071
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 71'
-  iast: transliterated_from_greek

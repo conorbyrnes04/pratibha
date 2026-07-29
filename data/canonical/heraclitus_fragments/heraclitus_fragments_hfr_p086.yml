@@ -29,8 +29,8 @@ insight: ''
 practice: 'At the moment you notice you are planning—for a child, a project, a legacy, a name to endure—pause and name aloud
   what you are doing: ''I am arranging for something to die.'' Do not turn away from the phrase; let it stand without softening
   or reframing. Return to the immediate act in front of you.'
-sanskrit_devanagari: Γενόμενοι ζώειν ἐθέλουσι μόρους τ' ἔχειν· μᾶλλον δὲ ἀναπαύεσθαι, καὶ παῖδας καταλείπουσι μόρους γενέσθαι.
-sanskrit_iast: Genomenoi zōein ethelousi morous t' echein. mallon de anapauesthai, kai paidas kataleipousi morous genesthai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - death
@@ -41,14 +41,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Γενόμενοι ζώειν ἐθέλουσι μόρους τ' ἔχειν· μᾶλλον δὲ ἀναπαύεσθαι, καὶ παῖδας καταλείπουσι μόρους γενέσθαι.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 86'
-- kind: iast
-  label: IAST
-  body: Genomenoi zōein ethelousi morous t' echein. mallon de anapauesthai, kai paidas kataleipousi morous genesthai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Being born, they will only to live and die, or rather to find rest, and they leave children who likewise are to die.
@@ -65,32 +57,6 @@ pratibha_layers:
     to transcend it but to stop pretending the pattern is anything other than what it is. The teaching lies in the refusal
     of uplift.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (Being
-      born, they will only to live and die, or rather to find rest, and they leave children who likewise ar…), life and death
-      as reciprocal: one element lives the death of another; hope cannot prefigure what awaits -> trap: afterlife tourism
-      or simple annihilation; the point is structural exchange and limit of anticipation'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (Being born,
-      they will only to live and die, or rather to find rest, and they leave children who likewise ar…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (Being born, they
-      will only to live and die, or rather to find rest, and they leave children who likewise ar…), the soul whose depth,
-      dryness, or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (Being born, they
-      will only to live and die, or rather to find rest, and they leave children who likewise ar…), time/age as a child at
-      play: cosmic process without a human craftsman-god -> trap: clock-time only; aiōn here is the age-character of the world-process'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'At the moment you notice you are planning—for a child, a project, a legacy, a name to endure—pause and name aloud
@@ -123,6 +89,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P086
   source_reference: Patrick (1889), frag. 86; corpus HFR_P086
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 86'
-  iast: transliterated_from_greek

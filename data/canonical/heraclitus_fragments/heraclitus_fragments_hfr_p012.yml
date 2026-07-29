@@ -28,10 +28,8 @@ insight: ''
 practice: Speak one necessary thing aloud each day without rehearsal, without softening its edges for the listener's comfort—a
   correction, a refusal, an unpopular observation—and notice whether you feel the urge to retract it, to add a joke or qualifier.
   Let that urge arise and pass without acting on it. Observe what happens to the words once they leave your mouth unadorned.
-sanskrit_devanagari: Σίβυλλα δὲ μαινομένῳ στόματι ἀγέλαστα καὶ ἀκαλλώπιστα καὶ ἀμύριστα φθεγγομένη χιλίων ἐτέων ἐξικνέεται
-  τῇ φωνῇ διὰ τὸν θεόν.
-sanskrit_iast: Sibulla de mainomenō stomati agelasta kai akallōpista kai amurista phthengomenē chiliōn eteōn exikneetai tē
-  phōnē dia ton theon.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - desire
@@ -41,16 +39,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Σίβυλλα δὲ μαινομένῳ στόματι ἀγέλαστα καὶ ἀκαλλώπιστα καὶ ἀμύριστα φθεγγομένη χιλίων ἐτέων ἐξικνέεται τῇ φωνῇ διὰ
-    τὸν θεόν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 12'
-- kind: iast
-  label: IAST
-  body: Sibulla de mainomenō stomati agelasta kai akallōpista kai amurista phthengomenē chiliōn eteōn exikneetai tē phōnē
-    dia ton theon.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: But the Sibyl with raging mouth uttering things solemn, rude and unadorned, reaches with her voice over a thousand
@@ -68,22 +56,6 @@ pratibha_layers:
     what refuses the listener''s desire for ease. The Sibyl''s raging is not emotion but precision—the sound of meaning that
     will not bend to the age that hears it.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (But the Sibyl
-      with raging mouth uttering things solemn, rude and unadorned, reaches with her voice over a t…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (But the Sibyl
-      with raging mouth uttering things solemn, rude and unadorned, reaches with her voice over a t…), time/age as a child
-      at play: cosmic process without a human craftsman-god -> trap: clock-time only; aiōn here is the age-character of the
-      world-process'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Speak one necessary thing aloud each day without rehearsal, without softening its edges for the listener's comfort—a
@@ -115,6 +87,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P012
   source_reference: Patrick (1889), frag. 12; corpus HFR_P012
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 12'
-  iast: transliterated_from_greek

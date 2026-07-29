@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_2
 unit_label: Knowledge is bondage.
-title: Conceptual Knowledge Contracts Awareness
+title: Knowledge is bondage.
 unit_type: sutra
 sanskrit_devanagari: ज्ञानं बन्धः
 sanskrit_iast: jñānaṁ bandhaḥ
@@ -40,9 +40,7 @@ commentary: 'Encountering this suitra may Startle intially, and Perhaps it does 
   the Self — yet knowledge can bind. What liberates is not the accumulation of insight, but the recognition of the ground
   from which all insight arises.'
 insight: Encountering this suitra may Startle intially, and Perhaps it does intentionally So.
-practice: 'The next time you name something—''this is a tree,'' ''that''s anger,'' ''it''s Monday''—pause and whisper the
-  opposite category it also is: rain, sun, soil; also peace; also timeless. Let the naming crack open until the thing exceeds
-  your word for it.'
+practice: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 upaya: ''
 themes:
 - action
@@ -108,28 +106,22 @@ pratibha_layers:
     Placed beside the first sūtra, a tension is introduced that will quietly structure the entire chapter. Consciousness is
     the Self — yet knowledge can bind. What liberates is not the accumulation of insight, but the recognition of the ground
     from which all insight arises.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 - kind: key_terms
   label: Key Terms
   items:
   - term: jñāna
     definition: articulated knowledge; knowing in structured form
-    lemma_id: jnana
   - term: bandha
     definition: bondage, contraction, limitation
-    lemma_id: bandha
   - term: vikalpa
     definition: conceptual differentiation (implicit)
-    lemma_id: vikalpa
-    sense_id: vikalpa.shaiva
   - term: saṅkoca
     definition: contraction of consciousness (implicit)
-    lemma_id: sankoca
-    sense_id: sankoca.shaiva
   - term: smṛti-bhraṁśa
     definition: forgetting of one’s source (implicit)
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -162,9 +154,3 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.2
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: 'The next time you name something—''this is a tree,'' ''that''s anger,'' ''it''s Monday''—pause and whisper the opposite
-  category it also is: rain, sun, soil; also peace; also timeless. Let the naming crack open until the thing exceeds your
-  word for it.'
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

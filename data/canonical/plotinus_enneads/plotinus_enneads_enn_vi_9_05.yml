@@ -8,7 +8,7 @@ unit_label: The Unity Beyond Being and Intellect
 title: The Unity Beyond Being and Intellect
 unit_type: sutra
 sanskrit_devanagari: Πῶς οὖν λέγομεν ἕν, καὶ πῶς τῆι νοήσει ἐφαρμοστέον;
-sanskrit_iast: Pōs oun legomen hen, kai pōs tēi noēsei epharmosteon?
+sanskrit_iast: 'N/A, key terms: **Hen** (ἕν) — unity -> ultimate reality -> often mistranslated as mere numerical unity.'
 translation_literal: We approach the mystery of the Unity by transcending the limitations of our reasoning faculty, recognizing
   that the Unity is not a being but the source of all existence, and that our understanding of it is not through direct knowledge
   but through its effects on the Intellectual-Principle and Being.
@@ -28,7 +28,20 @@ commentary: 'The philosophical claim here is that the Unity, or the ultimate rea
 
   * **Nous** (νοῦς) — intellect -> the faculty of higher understanding -> not just rational thinking.
 
-  * **Ousia** (οὐσία) — being -> existence -> not just physical reality.'
+  * **Ousia** (οὐσία) — being -> existence -> not just physical reality.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Katha Upanishad, 2.14-15:** The concept of the Unity as the ultimate reality is echoed in the Katha Upanishad, where
+  it is described as the unchanging and all-pervading essence of the universe.
+
+  * **Phaedo, 78b-84b:** Plato''s concept of the Forms, which are eternal and unchanging, resonates with Plotinus''s idea
+  of the Intellectual-Principle and the Unity.
+
+  * **Zhuangzi, Chapter 2:** The Zhuangzi''s concept of the "Ultimate Reality" or "Tao" as the source of all existence and
+  the goal of human aspiration is similar to Plotinus''s concept of the Unity.'
 insight: The philosophical claim here is that the Unity, or the ultimate reality, transcends all existence and intellect.
 practice: 'As you sit in stillness, focus on the concept of the Unity, and ask yourself: what is the source of all existence,
   and how can I approach it? Allow your mind to transcend its limitations and strive for a higher level of understanding and
@@ -81,53 +94,20 @@ pratibha_layers:
 
     * **Nous** (νοῦς) — intellect -> the faculty of higher understanding -> not just rational thinking.
 
-    * **Ousia** (οὐσία) — being -> existence -> not just physical reality.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: nous (νοῦς)
-    definition: '‘intellect’ → second hypostasis: self-thinking thought identical with intelligibles Here: * **Nous** (νοῦς)
-      — intellect -> the faculty of higher understanding -> not just rational thinking. Trap: IQ / discursive brain-mind (dianoia)'
-    lemma_id: nous
-    sense_id: nous.neoplatonic
-  - term: to hen / the One (τὸ ἕν)
-    definition: 'ἕν ‘one’ → source beyond being and intellect; not a countable unit Here: The Unity Beyond Being and Intellect
-      The Unity Beyond Being and Intellect Πῶς οὖν λέγομεν ἕν, καὶ πῶς τῆι νοήσει ἐφαρμοστέον; N/A, key terms: **Hen** (ἕν)
-      — un… Trap: monotheistic person-God or mathematical oneness'
-    lemma_id: henosis
-    sense_id: henosis.plotinian
-  - term: psychē (ψυχή)
-    definition: '‘soul’ → living knowing that can turn toward Nous or toward body Here: In Neoplatonism, this Unity is the
-      ultimate goal of human aspiration, and understanding it requires a deep introspection into the nature of the soul and
-      the In… Trap: ghost in the machine; mere psychology'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: apophasis / beyond
-    definition: 'unsaying what the One is not → the One exceeds every predicate including ‘being’ Here: The Unity Beyond Being
-      and Intellect The Unity Beyond Being and Intellect Πῶς οὖν λέγομεν ἕν, καὶ πῶς τῆι νοήσει ἐφαρμοστέον; N/A, key terms:
-      **Hen** (ἕν) — un… Trap: vague ineffability without the hypostatic order'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Katha Upanishad, 2.14-15
-    resonance: The concept of the Unity as the ultimate reality is echoed in the Katha Upanishad, where it is described as
-      the unchanging and all-pervading essence of the universe.
-    divergence: ''
-    passage_id: ''
-  - citation: Phaedo, 78b-84b
-    resonance: Plato's concept of the Forms, which are eternal and unchanging, resonates with Plotinus's idea of the Intellectual-Principle
-      and the Unity.
-    divergence: ''
-    passage_id: ''
-  - citation: Zhuangzi, Chapter 2
-    resonance: The Zhuangzi's concept of the "Ultimate Reality" or "Tao" as the source of all existence and the goal of human
-      aspiration is similar to Plotinus's concept of the Unity.
-    divergence: ''
-    passage_id: ''
-  layer_provenance: migrated_from_commentary
+    * **Ousia** (οὐσία) — being -> existence -> not just physical reality.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Katha Upanishad, 2.14-15:** The concept of the Unity as the ultimate reality is echoed in the Katha Upanishad, where
+    it is described as the unchanging and all-pervading essence of the universe.
+
+    * **Phaedo, 78b-84b:** Plato''s concept of the Forms, which are eternal and unchanging, resonates with Plotinus''s idea
+    of the Intellectual-Principle and the Unity.
+
+    * **Zhuangzi, Chapter 2:** The Zhuangzi''s concept of the "Ultimate Reality" or "Tao" as the source of all existence and
+    the goal of human aspiration is similar to Plotinus''s concept of the Unity.'
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you sit in stillness, focus on the concept of the Unity, and ask yourself: what is the source of all existence,
@@ -233,4 +213,3 @@ provenance:
   section: Ennead VI, Tractate 9, Section 5
   original_id: ENN_VI_9_05
   source_reference: ''
-translation_provenance: English adapted from Stephen MacKenna & B. S. Page, *The Enneads* (public domain). Study rendering.

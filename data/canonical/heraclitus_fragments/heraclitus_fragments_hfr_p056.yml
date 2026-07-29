@@ -7,8 +7,8 @@ unit_id: heraclitus_fragments.hfr_p056
 unit_label: Harmony of Opposites
 title: Harmony of Opposites
 unit_type: sutra
-sanskrit_devanagari: Παλίντροπος ἁρμονίη κόσμου ὅκωσπερ λύρης καὶ τόξου.
-sanskrit_iast: Palintropos harmoniē kosmou hokōsper lurēs kai toxou.
+sanskrit_devanagari: ἡ ἁρμονία ἡ τοῦ κόσμου ἁρμονία ἐστὶν ὡς τοξικοῦ καὶ κιθαρῳδοῦ.
+sanskrit_iast: hē harmoniā hē tou kosmou harmoniā estin hōs toxikou kai kitharōidou.
 translation_literal: The world's harmony is a harmony of opposites, as seen in the bow and the lyre, where tension and release,
   or discord and concord, coexist in a unified whole, illustrating the concept of harmoniē [ἁρμονία].
 commentary: 'The philosophical claim that the world''s harmony arises from oppositions is a counterintuitive move, as one
@@ -70,12 +70,10 @@ editorial_score: 72
 pratibha_layers:
 - kind: original
   label: Original
-  body: Παλίντροπος ἁρμονίη κόσμου ὅκωσπερ λύρης καὶ τόξου.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 56'
+  body: ἡ ἁρμονία ἡ τοῦ κόσμου ἁρμονία ἐστὶν ὡς τοξικοῦ καὶ κιθαρῳδοῦ.
 - kind: iast
   label: IAST
-  body: Palintropos harmoniē kosmou hokōsper lurēs kai toxou.
-  layer_provenance: transliterated_from_greek
+  body: hē harmoniā hē tou kosmou harmoniā estin hōs toxikou kai kitharōidou.
 - kind: translation
   label: Pratibha Translation
   body: The world's harmony is a harmony of opposites, as seen in the bow and the lyre, where tension and release, or discord
@@ -121,32 +119,6 @@ pratibha_layers:
 
     *Divergence:* Plotinus'' philosophy tends to emphasize the transcendent, unified nature of reality, whereas Heraclitus''
     fragment highlights the dynamic, relational aspect of harmony in the world.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (harmony
-      of Opposites), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading
-      “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (harmony of
-      Opposites), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing Logos
-      into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (harmony of Opposites),
-      the soul whose depth, dryness, or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,”
-      or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (harmony of Opposites), the
-      one that all things are: not mystical mush but a single order inside visible difference -> trap: erasing plurality;
-      Heraclitus’s hen keeps tension and exchange inside unity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you navigate the complexities of your own life, take a moment to reflect on the opposing forces at play, and consider
@@ -164,6 +136,3 @@ provenance:
   section: Fragment 56
   original_id: HFR_P056
   source_reference: Heraclitus, *Fragments* (HFR_P056; DK B54; Patrick 1889 / Bywater Greek)
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 56'
-  iast: transliterated_from_greek

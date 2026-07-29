@@ -7,10 +7,10 @@ unit_id: heraclitus_fragments.hfr_p044
 unit_label: Conflict as Universal Genesis
 title: Conflict as Universal Genesis
 unit_type: sutra
-sanskrit_devanagari: Πόλεμος πάντων μὲν πατήρ ἐστι πάντων δὲ βασιλεύς, καὶ τοὺς μὲν θεοὺς ἔδειξε τοὺς δὲ ἀνθρώπους, τοὺς μὲν
-  δούλους ἐποίησε τοὺς δὲ ἐλευθέρους.
-sanskrit_iast: Polemos pantōn men patēr esti pantōn de basileus, kai tous men theous edeixe tous de anthrōpous, tous men doulous
-  epoiēse tous de eleutherous.
+sanskrit_devanagari: Πόλεμος πάντων μέν ἐστι πατήρ καὶ βασιλεύς, καὶ τοὺς μὲν θεοὺς ἔθηκε τοὺς δὲ ἀνθρώπους, τοὺς μὲν δούλους
+  ἐποίησε τοὺς δὲ ἐλευθέρους.
+sanskrit_iast: Pólemos pántōn mén esti patḗr kaì basileús, kaì toùs mèn theoùs éthēke toùs dè anthrōpous, toùs mèn doúlous
+  epoíēse toùs dè eleuthérous.
 translation_literal: Conflict is the father and king of everything, and it has brought forth some as divine and others as
   human, making some into slaves and others into free beings, all through the agency of Logos [Λόγος].
 commentary: 'The philosophical claim that conflict is the fundamental generator of all things presents a counterintuitive
@@ -71,14 +71,12 @@ editorial_score: 72
 pratibha_layers:
 - kind: original
   label: Original
-  body: Πόλεμος πάντων μὲν πατήρ ἐστι πάντων δὲ βασιλεύς, καὶ τοὺς μὲν θεοὺς ἔδειξε τοὺς δὲ ἀνθρώπους, τοὺς μὲν δούλους ἐποίησε
-    τοὺς δὲ ἐλευθέρους.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 44'
+  body: Πόλεμος πάντων μέν ἐστι πατήρ καὶ βασιλεύς, καὶ τοὺς μὲν θεοὺς ἔθηκε τοὺς δὲ ἀνθρώπους, τοὺς μὲν δούλους ἐποίησε τοὺς
+    δὲ ἐλευθέρους.
 - kind: iast
   label: IAST
-  body: Polemos pantōn men patēr esti pantōn de basileus, kai tous men theous edeixe tous de anthrōpous, tous men doulous
-    epoiēse tous de eleutherous.
-  layer_provenance: transliterated_from_greek
+  body: Pólemos pántōn mén esti patḗr kaì basileús, kaì toùs mèn theoùs éthēke toùs dè anthrōpous, toùs mèn doúlous epoíēse
+    toùs dè eleuthérous.
 - kind: translation
   label: Pratibha Translation
   body: Conflict is the father and king of everything, and it has brought forth some as divine and others as human, making
@@ -123,32 +121,6 @@ pratibha_layers:
     generator of all things, as both suggest that the world is characterized by an ongoing process of transformation and generation.
     *Divergence:* The Zhuangzi tends to emphasize the individual''s adaptation to this process, whereas Heraclitus presents
     a more universal and metaphysical perspective.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (conflict
-      as Universal Genesis), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap:
-      reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (conflict
-      as Universal Genesis), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
-      Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πόλεμος (polemos)
-    definition: 'πόλεμος “war, conflict” — strife as generative, not only destructive -> in this passage (conflict as Universal
-      Genesis), war/strife as father of things: opposition that produces order rather than mere chaos -> trap: glorifying
-      violence, or reading strife as a failure of order instead of its instrument'
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (conflict
-      as Universal Genesis), nature that loves to hide — the self-showing of things that also resists crude disclosure ->
-      trap: equating physis with “the outdoors” or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Embrace conflict as an opportunity for growth and transformation, recognizing that it is through the interplay of
@@ -168,6 +140,3 @@ provenance:
   section: Fragment 44
   original_id: HFR_P044
   source_reference: Heraclitus, *Fragments* (HFR_P044; DK B53; Patrick 1889 / Bywater Greek)
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 44'
-  iast: transliterated_from_greek

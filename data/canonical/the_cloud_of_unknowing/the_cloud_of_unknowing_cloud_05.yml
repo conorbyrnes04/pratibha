@@ -50,15 +50,12 @@ editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
-  label: Original (Middle English)
+  label: Original
   body: And therfore travaile fast against alle sodeyn thoughtes that come of thees, and put hem down as oft as thou mai.
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  layer_provenance: sourced
 - kind: iast
   label: IAST
   body: Middle English (original language of the work).
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
 - kind: translation
   label: Pratibha Translation
   body: And therefore travail hard against all sudden thoughts that come from these, and put them down as often as you may.
@@ -76,33 +73,6 @@ pratibha_layers:
     constant, seductive in their apparent significance. Yet each return, each small act of putting-down, deepens the soul''s
     capacity to dwell in unknowing. The frequency (''as oft as thou mai'') suggests not perfection but fidelity; the practice
     is measured not by stillness achieved but by willingness renewed.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: cloud of forgetting
-    definition: 'paired discipline with unknowing → active putting-below of creatures and even God’s works so attention can
-      pierce upward Here: What makes this apophatic is the refusal to engage the thought''s content or origin; the meditator
-      does not analyze why the thought arose (''these''—the senses, i… Trap: ordinary forgetfulness or repression'
-  - term: cloud of unknowing
-    definition: 'Middle English contemplative idiom → the dark between you and God where conceptual knowing of God fails and
-      love pierces Here: Yet each return, each small act of putting-down, deepens the soul''s capacity to dwell in unknowing.
-      Trap: vague foggy mysticism without the disciplined ‘work’ of piercing love'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: nakid entent (naked intent)
-    definition: 'ME ‘bare / naked intention’ → stripped willing toward God alone, without images or discursive props Here:
-      The ''naked intent'' toward God (the unseen, unnamed reality) can only persist when the mind stops furnishing itself
-      with images, concepts, and the small narrati… Trap: willpower striving; misses the bareness of intention'
-  - term: apophasis
-    definition: 'ἀπόφασις ‘unsaying’ → approach to God by denying inadequate knowing—here practiced as cloud-work Here: Yet
-      each return, each small act of putting-down, deepens the soul''s capacity to dwell in unknowing. Trap: atheism or anti-intellectual
-      pose'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: werk (work of contemplation)
-    definition: 'ME werk → the specific contemplative labor of holding naked intent in the cloud Here: Middle English (original
-      language of the work). Trap: generic spiritual busywork'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When a thought arrives fully formed—a memory, a worry, a phrase, a face—name it once in a whisper or inner word (grief,
@@ -114,7 +84,4 @@ provenance:
   collection: The Cloud of Unknowing
   section: Ch. 32
   original_id: CLOUD_05
-  source_reference: Underhill 1912 PD Middle English edition (corpus ME in Original layer).
-layer_provenance:
-  original: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912 (and earlier
-    ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  source_reference: ''

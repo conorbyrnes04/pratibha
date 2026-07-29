@@ -32,8 +32,8 @@ practice: At the moment the light shifts—dawn to morning, noon to afternoon, d
   leaving and what you see arriving, then speak them as a single word (e.g., 'day-night,' 'light-shadow,' 'waking-sleeping').
   Do this without trying to merge them philosophically; let the single utterance hold both as one rhythm, and notice whether
   the opposition sharpens or dissolves in your mouth.
-sanskrit_devanagari: Σκίδνησι καὶ συνάγει, πρόσεισι καὶ ἄπεισι.
-sanskrit_iast: Skidnēsi kai sunagei, proseisi kai apeisi.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -43,14 +43,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Σκίδνησι καὶ συνάγει, πρόσεισι καὶ ἄπεισι.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 40'
-- kind: iast
-  label: IAST
-  body: Skidnēsi kai sunagei, proseisi kai apeisi.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: 'lIt disperses and gathers, it comes and goes.’® Hesiod because he knew [not] day and night, for day and night, he
@@ -70,36 +62,6 @@ pratibha_layers:
     day and night as independent facts and instead witnessing the single fire-principle that generates both through its own
     rhythm of concealment and revelation.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (lIt disperses
-      and gathers, it comes and goes.’® Hesiod because he knew [not] day and night, for day and nig…), tensioned unity of
-      opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (lIt disperses and gathers,
-      it comes and goes.’® Hesiod because he knew [not] day and night, for day and nig…), the one that all things are: not
-      mystical mush but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension
-      and exchange inside unity'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (lIt disperses
-      and gathers, it comes and goes.’® Hesiod because he knew [not] day and night, for day and nig…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (lIt disperses
-      and gathers, it comes and goes.’® Hesiod because he knew [not] day and night, for day and nig…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: At the moment the light shifts—dawn to morning, noon to afternoon, dusk to dark—pause and name aloud what you see
@@ -133,6 +95,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P040
   source_reference: Patrick (1889), frag. 40; corpus HFR_P040
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 40'
-  iast: transliterated_from_greek

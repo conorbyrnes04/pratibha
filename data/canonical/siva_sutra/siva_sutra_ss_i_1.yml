@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_1
 unit_label: Consciousness is the Self.
-title: Consciousness Cannot Be Otherwise Than Self
+title: Consciousness is the Self.
 unit_type: sutra
 sanskrit_devanagari: चैतन्यमात्मा
 sanskrit_iast: caitanyam ātmā
@@ -35,9 +35,7 @@ commentary: 'The sūtra does not instruct; it states ontological necessity: what
   is made up of two essential movements, a shining outwards, refered to as prakasa, and a reflection back, referred to as
   vimarśa. Most simply is knowing and being aware of knowing. The light and the mirror that reflects it back.'
 insight: 'The sūtra does not instruct; it states ontological necessity: what cannot be otherwise.'
-practice: 'Throughout today, each time you catch yourself saying or thinking "I am" followed by a description (tired, thinking,
-  worried, happy), pause and notice: the consciousness aware of that state is not separate from what is aware of the "I" claiming
-  it. Let the assumed distance between observer and observed silently collapse, returning to the ground that requires no name.'
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - awareness
@@ -99,25 +97,22 @@ pratibha_layers:
     It is important now to dive into the essential philosophical qualities attributed to caitanya in Tantrik Saivisim. Consciousness
     is made up of two essential movements, a shining outwards, refered to as prakasa, and a reflection back, referred to as
     vimarśa. Most simply is knowing and being aware of knowing. The light and the mirror that reflects it back.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
   - term: caitanya
     definition: luminous awareness, knowing that is not acquired
-    lemma_id: caitanya
-    sense_id: caitanya.shaiva
   - term: ātmā
     definition: the irreducible Self, never an object of experience
-    lemma_id: atman
   - term: tādātmya
     definition: identity beyond relation
   - term: Śāmbhavopāya
     definition: the path of direct recognition
   - term: svaprakāśa
     definition: that which reveals itself by being itself
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -151,9 +146,3 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.1
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: 'Throughout today, each time you catch yourself saying or thinking "I am" followed by a description (tired, thinking,
-  worried, happy), pause and notice: the consciousness aware of that state is not separate from what is aware of the "I" claiming
-  it. Let the assumed distance between observer and observed silently collapse, returning to the ground that requires no name.'
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

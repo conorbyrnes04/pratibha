@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_ii_4
 unit_label: In the womb of awareness, mind unfolds as undifferentiated knowing, like a dream.
-title: Knowledge Gestates Before Crystallizing Into Form
+title: In the womb of awareness, mind unfolds as undifferentiated knowing, like a dream.
 unit_type: sutra
 sanskrit_devanagari: गर्भे चित्तविकासोऽविशिष्टविद्यास्वप्नः
 sanskrit_iast: garbhe citta-vikāso’viśiṣṭa-vidyā-svapnaḥ
@@ -17,9 +17,7 @@ commentary: 'As practice matures, mind is reabsorbed into its source. Differenti
   The dream here is luminous, not delusive. It marks a phase where knowledge has not yet crystallized into concepts, and therefore
   remains potent.'
 insight: As practice matures, mind is reabsorbed into its source.
-practice: 'Let your gaze soften on whatever appears before you now—a face, a room, a thought—and hold it as you would a dream
-  image: luminous but ungraspable, known but not named. When the urge arises to pin it down with a word or judgment, return
-  instead to the quality of seeing itself, undifferentiated and fluid.'
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - awareness
@@ -62,6 +60,9 @@ pratibha_layers:
 
     The dream here is luminous, not delusive. It marks a phase where knowledge has not yet crystallized into concepts, and
     therefore remains potent.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -73,11 +74,6 @@ pratibha_layers:
     definition: undifferentiated knowing
   - term: svapna
     definition: luminous dream
-    lemma_id: svapna
-    sense_id: svapna.shaiva
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -112,9 +108,3 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.4
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: 'Let your gaze soften on whatever appears before you now—a face, a room, a thought—and hold it as you would a dream
-  image: luminous but ungraspable, known but not named. When the urge arises to pin it down with a word or judgment, return
-  instead to the quality of seeing itself, undifferentiated and fluid.'
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

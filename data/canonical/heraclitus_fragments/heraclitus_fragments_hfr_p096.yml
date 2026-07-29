@@ -38,8 +38,8 @@ insight: ''
 practice: 'Speak a decision aloud as though it were yours alone—a choice, a judgment, a plan—then listen to the words as they
   leave your mouth and trace backward: what conversation, what overheard phrase, what shared habit, what collective assumption
   is already speaking through it? Name one element that is not your own invention.'
-sanskrit_devanagari: Ἦθος γὰρ ἀνθρώπειον μὲν οὐκ ἔχει γνώμας, θεῖον δὲ ἔχει.
-sanskrit_iast: Ēthos gar anthrōpeion men ouk echei gnōmas, theion de echei.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - commentary_text
@@ -49,14 +49,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἦθος γὰρ ἀνθρώπειον μὲν οὐκ ἔχει γνώμας, θεῖον δὲ ἔχει.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 96'
-- kind: iast
-  label: IAST
-  body: Ēthos gar anthrōpeion men ouk echei gnōmas, theion de echei.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: 'For human nature does not possess understanding, but the divine does. thus statedly shown that we do and think everything
@@ -89,28 +81,11 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (for human
-      nature does not possess understanding, but the divine does.), the shared pattern according to which all things occur
-      — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine
-      Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: κοινός (koinos)
-    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage (for human nature does
-      not possess understanding, but the divine does.), the common Logos: waking rationality is shared; private dream-opinion
-      is not a world -> trap: mere social consensus; koinos here is cosmological shareability, not majority vote'
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (for
-      human nature does not possess understanding, but the divine does.), nature that loves to hide — the self-showing of
-      things that also resists crude disclosure -> trap: equating physis with “the outdoors” or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (for
-      human nature does not possess understanding, but the divine does.), understanding as holding-together what daily contact
-      already offers — not new information alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
-  layer_provenance: editorial-enriched
+  - term: Logos (λόγος)
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+  layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -118,6 +93,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P096
   source_reference: Patrick (1889), frag. 96; corpus HFR_P096
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 96'
-  iast: transliterated_from_greek

@@ -8,7 +8,7 @@ unit_label: The Inner Activity of the Soul
 title: The Inner Activity of the Soul
 unit_type: sutra
 sanskrit_devanagari: ἐὰν δὲ μὴ μεταδῶμεν αὐτὰ τῇ αἰσθητικῇ, οὐ διῆλθεν ἐν τῇ ψυχῇ· λανθάνομεν, ὅτι ἄνθρωπος αἰσθητικὴν περιλαμβάνει.
-sanskrit_iast: ean de mē metadōmen auta tē aisthētikē, ou diēlthen en tē psychē; lanthanomen, hoti anthrōpos aisthētikēn perilambanei.
+sanskrit_iast: N/A, but key terms include [Ātman] (ἄνθρωπος, man) and [Jñāna] (γνῶσις, knowledge).
 translation_literal: The soul continuously executes its characteristic act, but we remain unaware because our perception is
   focused on sense-experiences. To perceive the inner activity, we must turn our attention inward and let go of sense-perceptions,
   except when necessary, and keep our inner perception sharp and alert to the subtle sounds from above.
@@ -33,7 +33,20 @@ commentary: 'The fundamental claim here is that the soul is always active, even 
   translation misses the connotation of a higher state of awareness.
 
   * **Aisthēsis (αἰσθητικὴ)** — from Greek aisthēsis, meaning "perception" -> in Neoplatonism, refers to sense-experience
-  -> default translation misses the connotation of a lower aspect of the soul.'
+  -> default translation misses the connotation of a lower aspect of the soul.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Katha Upanishad, 2.1.1:** The idea of turning inward to access the soul''s continuous activity resonates with the Upanishad''s
+  concept of turning inward to access the [Ātman].
+
+  * **Phaedo, 64a-67e:** The idea of the soul''s immortality and its continuous activity resonates with Plato''s concept of
+  the soul''s pre-existence and its ability to access eternal knowledge.
+
+  * **Pratyabhijnahrdayam, Sutra 4:** The idea of recognizing one''s true nature and accessing inner wisdom resonates with
+  the concept of [Pratyābhijñā] in Kashmir Shaivism.'
 insight: The fundamental claim here is that the soul is always active, even if we are not aware of it.
 practice: Turn your attention inward and focus on your breath, letting go of sense-perceptions and distractions, and cultivate
   inner perception to access the soul's continuous activity.
@@ -94,52 +107,20 @@ pratibha_layers:
     default translation misses the connotation of a higher state of awareness.
 
     * **Aisthēsis (αἰσθητικὴ)** — from Greek aisthēsis, meaning "perception" -> in Neoplatonism, refers to sense-experience
-    -> default translation misses the connotation of a lower aspect of the soul.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: nous (νοῦς)
-    definition: '‘intellect’ → second hypostasis: self-thinking thought identical with intelligibles Here: The higher aspect
-      is always engaged in intellectual activity, while the lower aspect is focused on sense-experiences. Trap: IQ / discursive
-      brain-mind (dianoia)'
-    lemma_id: nous
-    sense_id: nous.neoplatonic
-  - term: psychē (ψυχή)
-    definition: '‘soul’ → living knowing that can turn toward Nous or toward body Here: The Inner Activity of the Soul The
-      Inner Activity of the Soul ἐὰν δὲ μὴ μεταδῶμεν αὐτὰ τῇ αἰσθητικῇ, οὐ διῆλθεν ἐν τῇ ψυχῇ· λανθάνομεν, ὅτι ἄνθρωπος αἰσθητικὴν…
-      Trap: ghost in the machine; mere psychology'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: epistrophē (ἐπιστροφή)
-    definition: '‘turning back / reversion’ → soul’s conversion upward toward its source Here: To perceive the inner activity,
-      we must turn our attention inward and let go of sense-perceptions, except when necessary, and keep our inner perception
-      sharp a… Trap: moral ‘conversion’ narrative only'
-  - term: apophasis / beyond
-    definition: 'unsaying what the One is not → the One exceeds every predicate including ‘being’ Here: To perceive the inner
-      activity, we must turn our attention inward and let go of sense-perceptions, except when necessary, and keep our inner
-      perception sharp a… Trap: vague ineffability without the hypostatic order'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Katha Upanishad, 2.1.1
-    resonance: The idea of turning inward to access the soul's continuous activity resonates with the Upanishad's concept
-      of turning inward to access the [Ātman].
-    divergence: ''
-    passage_id: ''
-  - citation: Phaedo, 64a-67e
-    resonance: The idea of the soul's immortality and its continuous activity resonates with Plato's concept of the soul's
-      pre-existence and its ability to access eternal knowledge.
-    divergence: ''
-    passage_id: ''
-  - citation: Pratyabhijnahrdayam, Sutra 4
-    resonance: The idea of recognizing one's true nature and accessing inner wisdom resonates with the concept of [Pratyābhijñā]
-      in Kashmir Shaivism.
-    divergence: ''
-    passage_id: pratyabhijnahrdayam.phr_004
-  layer_provenance: migrated_from_commentary
+    -> default translation misses the connotation of a lower aspect of the soul.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Katha Upanishad, 2.1.1:** The idea of turning inward to access the soul''s continuous activity resonates with the
+    Upanishad''s concept of turning inward to access the [Ātman].
+
+    * **Phaedo, 64a-67e:** The idea of the soul''s immortality and its continuous activity resonates with Plato''s concept
+    of the soul''s pre-existence and its ability to access eternal knowledge.
+
+    * **Pratyabhijnahrdayam, Sutra 4:** The idea of recognizing one''s true nature and accessing inner wisdom resonates with
+    the concept of [Pratyābhijñā] in Kashmir Shaivism.'
 - kind: practice
   label: Practice (Abhyasa)
   body: Turn your attention inward and focus on your breath, letting go of sense-perceptions and distractions, and cultivate
@@ -188,4 +169,3 @@ provenance:
   section: Ennead V, Tractate 1, Section 12
   original_id: ENN_V_1_12
   source_reference: ''
-translation_provenance: English adapted from Stephen MacKenna & B. S. Page, *The Enneads* (public domain). Study rendering.

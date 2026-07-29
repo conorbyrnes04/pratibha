@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_ii_2
 unit_label: Effort is the practitioner.
-title: Effort as Intelligent Energy Gathering
+title: Effort is the practitioner.
 unit_type: sutra
 sanskrit_devanagari: प्रयत्नः साधकः
 sanskrit_iast: prayatnaḥ sādhakaḥ
@@ -35,9 +35,7 @@ commentary: 'With this sūtra, the text makes a decisive turn. Recognition alone
 
   Effort here is not opposed to grace. It is how grace is _kept from leaking away_.'
 insight: With this sūtra, the text makes a decisive turn.
-practice: Through this day, each time you notice attention scattering or energy flagging—mid-conversation, mid-task, mid-thought—gather
-  yourself by whispering "effort is the practitioner" and feel your breath, posture, and gaze realign as one continuous shape,
-  not a self correcting itself but effort itself becoming present.
+practice: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
 upaya: ''
 themes:
 - action
@@ -98,6 +96,9 @@ pratibha_layers:
 
 
     Effort here is not opposed to grace. It is how grace is _kept from leaking away_.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
 - kind: key_terms
   label: Key Terms
   items:
@@ -107,19 +108,12 @@ pratibha_layers:
     definition: practitioner as function, not identity
   - term: anusandhāna
     definition: sustained recollection (implicit)
-    lemma_id: anusandhana
-    sense_id: anusandhana.shaiva
   - term: saṁskāra
     definition: habitual momentum (implicit)
-    lemma_id: samskara
-    sense_id: samskara.habit
   - term: prayatna
     definition: intentional effort, directed application
   - term: sādhaka
     definition: practitioner, one engaged in means
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -129,7 +123,7 @@ pratibha_layers:
       re-establishment of attention from dispersion to center. In both, the *act of returning* constitutes the practice.'
     divergence: The Siva Sutra emphasizes effort as recognition of one's own nature (non-dual awareness), while the Bhagavad
       Gita frames the return as disciplined habituation of body and mind within a dualistic framework of mastery.
-    passage_id: bhagavad_gita.bg_md_006
+    passage_id: bhagavad_gita.bg_06_26
   - citation: Tilopa Mahamudra — Look at the Looker
     resonance: 'Both texts bind effort to a threshold moment where effort itself dissolves into a higher state: Tilopa''s
       teaching that complete effort followed by devotional rest reveals the innate mirrors the Siva Sutra''s decisive turn
@@ -152,9 +146,3 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.2
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: Through this day, each time you notice attention scattering or energy flagging—mid-conversation, mid-task, mid-thought—gather
-  yourself by whispering "effort is the practitioner" and feel your breath, posture, and gaze realign as one continuous shape,
-  not a self correcting itself but effort itself becoming present.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

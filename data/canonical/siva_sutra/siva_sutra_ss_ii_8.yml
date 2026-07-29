@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_ii_8
 unit_label: The body is the offering.
-title: Flesh Becomes the Sacred Vessel
+title: The body is the offering.
 unit_type: sutra
 sanskrit_devanagari: शरीरं हविः
 sanskrit_iast: śarīraṁ haviḥ
@@ -16,9 +16,7 @@ commentary: 'Practice now enters the flesh. The body is no longer an obstacle to
 
   To offer the body is to allow sensation, posture, and breath to become vehicles of awareness. Nothing is excluded.'
 insight: Practice now enters the flesh.
-practice: 'Stand and feel the weight of your body pressing into the ground — your feet, legs, torso, all of it held by the
-  earth. For the next hour, each time you move (reaching, turning, sitting, standing), pause for one breath and sense that
-  movement as an offering: your body given to the moment, nothing withheld or protected.'
+practice: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
 upaya: ''
 themes:
 - awareness
@@ -54,18 +52,16 @@ pratibha_layers:
 
 
     To offer the body is to allow sensation, posture, and breath to become vehicles of awareness. Nothing is excluded.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
 - kind: key_terms
   label: Key Terms
   items:
   - term: śarīra
     definition: body
-    lemma_id: sarira
-    sense_id: sarira.shaiva
   - term: havis
     definition: sacrificial offering
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -94,9 +90,3 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.8
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: 'Stand and feel the weight of your body pressing into the ground — your feet, legs, torso, all of it held by the
-  earth. For the next hour, each time you move (reaching, turning, sitting, standing), pause for one breath and sense that
-  movement as an offering: your body given to the moment, nothing withheld or protected.'
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

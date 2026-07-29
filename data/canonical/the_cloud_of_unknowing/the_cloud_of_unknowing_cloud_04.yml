@@ -43,16 +43,13 @@ editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
-  label: Original (Middle English)
+  label: Original
   body: And therfore smite apon that thicke cloude of unknowyng with a scharp darte of longing love, and go not thens for
     thing that befalleth.
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  layer_provenance: sourced
 - kind: iast
   label: IAST
   body: Middle English (original language of the work).
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
 - kind: translation
   label: Pratibha Translation
   body: And therefore strike upon that thick cloud of unknowing with a sharp dart of longing love, and do not go thence for
@@ -71,34 +68,6 @@ pratibha_layers:
     maintain naked intent as a continuous act of will against the gravitational pull of creature-thoughts and the mind''s
     hunger for form. This is apophatic not because it denies God''s reality but because it refuses all mediation except the
     raw fact of longing itself.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: cloud of unknowing
-    definition: 'Middle English contemplative idiom → the dark between you and God where conceptual knowing of God fails and
-      love pierces Here: Beat Upon That Thick Cloud of Unknowing Beat Upon That Thick Cloud of Unknowing And therfore smite
-      apon that thicke cloude of unknowyng with a scharp darte of… Trap: vague foggy mysticism without the disciplined ‘work’
-      of piercing love'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: nakid entent (naked intent)
-    definition: 'ME ‘bare / naked intention’ → stripped willing toward God alone, without images or discursive props Here:
-      The discipline is not to clarify or penetrate intellectually, but to keep the dart moving—to maintain naked intent as
-      a continuous act of will against the grav… Trap: willpower striving; misses the bareness of intention'
-  - term: love / charite
-    definition: 'ME contemplative love → the dart that alone can pierce the cloud where knowledge cannot Here: Beat Upon That
-      Thick Cloud of Unknowing Beat Upon That Thick Cloud of Unknowing And therfore smite apon that thicke cloude of unknowyng
-      with a scharp darte of… Trap: sentimental affection replacing contemplative work'
-  - term: apophasis
-    definition: 'ἀπόφασις ‘unsaying’ → approach to God by denying inadequate knowing—here practiced as cloud-work Here: Beat
-      Upon That Thick Cloud of Unknowing Beat Upon That Thick Cloud of Unknowing And therfore smite apon that thicke cloude
-      of unknowyng with a scharp darte of… Trap: atheism or anti-intellectual pose'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: werk (work of contemplation)
-    definition: 'ME werk → the specific contemplative labor of holding naked intent in the cloud Here: Middle English (original
-      language of the work). Trap: generic spiritual busywork'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When restlessness arrives during prayer—the itch to shift, the urge to think of someone, the sudden memory—drive the
@@ -110,7 +79,4 @@ provenance:
   collection: The Cloud of Unknowing
   section: Ch. 7
   original_id: CLOUD_04
-  source_reference: Underhill 1912 PD Middle English edition (corpus ME in Original layer).
-layer_provenance:
-  original: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912 (and earlier
-    ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  source_reference: ''

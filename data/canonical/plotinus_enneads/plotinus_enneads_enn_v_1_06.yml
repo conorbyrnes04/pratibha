@@ -10,7 +10,7 @@ unit_type: sutra
 sanskrit_devanagari: Ἀλλὰ πῶς καὶ τί ὁ νοητὸς νοεῖ, καὶ μάλιστα πῶς ἐξ ἐκείνου γέγονεν ὃ ἑαυτῷ γίνεται θεατός; (But how and
   what does the Intellectual-Principle see and, especially, how has it sprung from that which is to become the object of its
   vision?)
-sanskrit_iast: Alla pōs kai ti ho noētos noei, kai malista pōs ex ekeinou gegonen ho heautō ginetai theatos?
+sanskrit_iast: N/A, as the key terms are already provided in the translation.
 translation_literal: 'The Intellectual-Principle [buddhi] perceives and understands, but how does it arise from the [Brahman],
   which becomes its object of perception? The mind [manas] demands the existence of these beings, but it is still troubled
   by the problem debated by ancient philosophers: how does anything come into existence from the unity of the [Brahman], which
@@ -39,7 +39,20 @@ commentary: 'The philosophical claim that the Intellectual-Principle arises from
   all subsequent existence -> implies a realm of abstract thought and intellect.
 
   * **Hypostasis (ὑπόστασις)** — from Greek "hypostasis", meaning substance or underlying reality -> a level of reality or
-  existence, in Neoplatonism, the hypostases are the One, the Intellectual-Principle, and the Soul.'
+  existence, in Neoplatonism, the hypostases are the One, the Intellectual-Principle, and the Soul.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Katha Upanishad, 2.2.13:** "The [Brahman] is the source of all existence, and it is the ultimate reality." This passage
+  resonates with Plotinus''s idea of the One as the source of all existence.
+
+  * **Phaedo, 79d-80a:** "The soul is immortal, and it exists before birth and after death." This passage resonates with Plotinus''s
+  idea of the soul as an image of the Intellectual-Principle.
+
+  * **Zhuangzi, Chapter 2:** "The Tao is the source of all existence, and it is the ultimate reality." This passage resonates
+  with Plotinus''s idea of the One as the source of all existence.'
 insight: The philosophical claim that the Intellectual-Principle arises from the unity of the One is a counterintuitive move,
   as it seems to imply that the One, being perfect and complete, should not have any need to generate anything else.
 practice: As you sit in stillness, imagine the One as the source of all existence, and the Intellectual-Principle as the first
@@ -103,55 +116,20 @@ pratibha_layers:
     of all subsequent existence -> implies a realm of abstract thought and intellect.
 
     * **Hypostasis (ὑπόστασις)** — from Greek "hypostasis", meaning substance or underlying reality -> a level of reality
-    or existence, in Neoplatonism, the hypostases are the One, the Intellectual-Principle, and the Soul.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: to hen / the One (τὸ ἕν)
-    definition: 'ἕν ‘one’ → source beyond being and intellect; not a countable unit Here: The Emanation of the Intellectual-Principle
-      from The One The Emanation of the Intellectual-Principle from The One Ἀλλὰ πῶς καὶ τί ὁ νοητὸς νοεῖ, καὶ μάλιστα πῶ…
-      Trap: monotheistic person-God or mathematical oneness'
-    lemma_id: henosis
-    sense_id: henosis.plotinian
-  - term: nous (νοῦς)
-    definition: '‘intellect’ → second hypostasis: self-thinking thought identical with intelligibles Here: The Emanation of
-      the Intellectual-Principle from The One The Emanation of the Intellectual-Principle from The One Ἀλλὰ πῶς καὶ τί ὁ νοητὸς
-      νοεῖ, καὶ μάλιστα πῶ… Trap: IQ / discursive brain-mind (dianoia)'
-    lemma_id: nous
-    sense_id: nous.neoplatonic
-  - term: epistrophē (ἐπιστροφή)
-    definition: '‘turning back / reversion’ → soul’s conversion upward toward its source Here: The Intellectual-Principle,
-      in turn, generates the soul and the material world, which are imperfect and changing. Trap: moral ‘conversion’ narrative
-      only'
-  - term: psychē (ψυχή)
-    definition: '‘soul’ → living knowing that can turn toward Nous or toward body Here: The Intellectual-Principle, in turn,
-      generates the soul and the material world, which are imperfect and changing. Trap: ghost in the machine; mere psychology'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: eros (ἔρως)
-    definition: '‘desire, love’ → philosophical longing that climbs from bodies to the Good Here: The existential application
-      of this idea is that the human soul, being an image of the Intellectual-Principle, must seek and love the One, which
-      is the highest… Trap: romance or appetite only'
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Katha Upanishad, 2.2.13
-    resonance: '"The [Brahman] is the source of all existence, and it is the ultimate reality." This passage resonates with
-      Plotinus''s idea of the One as the source of all existence.'
-    divergence: ''
-    passage_id: ''
-  - citation: Phaedo, 79d-80a
-    resonance: '"The soul is immortal, and it exists before birth and after death." This passage resonates with Plotinus''s
-      idea of the soul as an image of the Intellectual-Principle.'
-    divergence: ''
-    passage_id: ''
-  - citation: Zhuangzi, Chapter 2
-    resonance: '"The Tao is the source of all existence, and it is the ultimate reality." This passage resonates with Plotinus''s
-      idea of the One as the source of all existence.'
-    divergence: ''
-    passage_id: ''
-  layer_provenance: migrated_from_commentary
+    or existence, in Neoplatonism, the hypostases are the One, the Intellectual-Principle, and the Soul.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Katha Upanishad, 2.2.13:** "The [Brahman] is the source of all existence, and it is the ultimate reality." This passage
+    resonates with Plotinus''s idea of the One as the source of all existence.
+
+    * **Phaedo, 79d-80a:** "The soul is immortal, and it exists before birth and after death." This passage resonates with
+    Plotinus''s idea of the soul as an image of the Intellectual-Principle.
+
+    * **Zhuangzi, Chapter 2:** "The Tao is the source of all existence, and it is the ultimate reality." This passage resonates
+    with Plotinus''s idea of the One as the source of all existence.'
 - kind: practice
   label: Practice (Abhyasa)
   body: As you sit in stillness, imagine the One as the source of all existence, and the Intellectual-Principle as the first
@@ -282,4 +260,3 @@ provenance:
   section: Ennead V, Tractate 1, Section 6
   original_id: ENN_V_1_06
   source_reference: ''
-translation_provenance: English adapted from Stephen MacKenna & B. S. Page, *The Enneads* (public domain). Study rendering.

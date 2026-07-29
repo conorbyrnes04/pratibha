@@ -35,8 +35,8 @@ practice: When you are about to speak, pause at the threshold of your words and 
   victory, concealment, speed). Name it silently without judgment, then speak only what remains when that pull is set aside—notice
   whether what emerges is thinner or truer. Repeat this threshold-pause for three days, tracking whether the quality of your
   listening to others shifts.
-sanskrit_devanagari: Σωφρονεῖν ἀρετὴ μεγίστη· καὶ σοφίη ἀληθέα λέγειν καὶ ποιεῖν κατὰ φύσιν ἐπαΐοντας .
-sanskrit_iast: Sōphronein aretē megistē. kai sophiē alēthea legein kai poiein kata phusin epaiontas .
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - commentary_text
@@ -50,14 +50,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Σωφρονεῖν ἀρετὴ μεγίστη· καὶ σοφίη ἀληθέα λέγειν καὶ ποιεῖν κατὰ φύσιν ἐπαΐοντας .
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 107'
-- kind: iast
-  label: IAST
-  body: Sōphronein aretē megistē. kai sophiē alēthea legein kai poiein kata phusin epaiontas .
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act according to nature.7}*
@@ -75,36 +67,6 @@ pratibha_layers:
     shared rational principle running through all things—can be heard and followed. The ''and'' connecting truth-speaking
     and nature-acting is not a list but a single movement: conscious alignment with what is.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (; Self-control
-      is the highest virtue, and wisdom is to speak truth and consciously to act according to natu…), the shared pattern according
-      to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or
-      only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (; Self-control is the highest
-      virtue, and wisdom is to speak truth and consciously to act according to natu…), breath-life as the medium through which
-      waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics alone,
-      or to mere oxygen'
-    lemma_id: pneuma
-    sense_id: pneuma.stoic
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (; Self-control
-      is the highest virtue, and wisdom is to speak truth and consciously to act according to natu…), wisdom apart from polymathy:
-      knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation
-      for knowledge'
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (; Self-control
-      is the highest virtue, and wisdom is to speak truth and consciously to act according to natu…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When you are about to speak, pause at the threshold of your words and feel the pull of what you want to say (comfort,
@@ -146,6 +108,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P107
   source_reference: Patrick (1889), frag. 107; corpus HFR_P107
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 107'
-  iast: transliterated_from_greek

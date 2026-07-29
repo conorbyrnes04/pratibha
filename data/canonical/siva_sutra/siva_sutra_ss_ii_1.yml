@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_ii_1
 unit_label: Mind is mantra.
-title: Aligned Thought Becomes Sacred Sound
+title: Mind is mantra.
 unit_type: sutra
 sanskrit_devanagari: चित्तं मन्त्रः
 sanskrit_iast: cittaṁ mantraḥ
@@ -17,9 +17,7 @@ commentary: 'Once recognition has occurred, thought is no longer merely noise. T
   Here the task is no longer to dissolve mind, but to hear it. When thought aligns with awareness, it becomes a vehicle rather
   than a veil.'
 insight: Once recognition has occurred, thought is no longer merely noise.
-practice: Speak one sentence aloud—any true thought arising now—and listen to its vibration as it fades into silence. Let
-  that vibration be the mantra; repeat it silently three times, feeling how the same thought shapes the space differently
-  each time it moves through you.
+practice: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 upaya: ''
 themes:
 - attention
@@ -60,18 +58,16 @@ pratibha_layers:
 
     Here the task is no longer to dissolve mind, but to hear it. When thought aligns with awareness, it becomes a vehicle
     rather than a veil.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 - kind: key_terms
   label: Key Terms
   items:
   - term: citta
     definition: mind, field of thought
-    lemma_id: citta
-    sense_id: citta.shaiva
   - term: mantra
     definition: instrument of awareness, vibratory form
-- kind: practice
-  label: Practice (Abhyasa)
-  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -104,9 +100,3 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.1
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: Speak one sentence aloud—any true thought arising now—and listen to its vibration as it fades into silence. Let that
-  vibration be the mantra; repeat it silently three times, feeling how the same thought shapes the space differently each
-  time it moves through you.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

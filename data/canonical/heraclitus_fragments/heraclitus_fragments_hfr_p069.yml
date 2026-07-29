@@ -30,8 +30,8 @@ practice: 'Walk a familiar route—stairs, a hallway, a street—and reverse it 
   what the ascent demanded of your legs, lungs, and gaze that you now experience inverted. Where did you push? Where did you
   brace? Repeat this reversal three times, each time asking not ''What is different?'' but ''What is the same path showing
   me now?'''
-sanskrit_devanagari: Ὁδὸς ἄνω κάτω μία καὶ ὡυτή.
-sanskrit_iast: HOdos anō katō mia kai hōutē.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -42,14 +42,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ὁδὸς ἄνω κάτω μία καὶ ὡυτή.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 69'
-- kind: iast
-  label: IAST
-  body: HOdos anō katō mia kai hōutē.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: The way upward and downward are one and the same. Hierocles in Aur. carm. 24.
@@ -77,29 +69,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (the way
-      upward and downward are one and the same.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland
-      agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (the way upward
-      and downward are one and the same.), the soul whose depth, dryness, or rudeness decides whether senses can witness truly
-      -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (the way upward
-      and downward are one and the same.), world-ruling fire as measured transformation and exchange, not mythic flame alone
-      -> trap: treating fire as a static elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (the way upward and downward
-      are one and the same.), the one that all things are: not mystical mush but a single order inside visible difference
-      -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange inside unity'
-  layer_provenance: editorial-enriched
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -132,6 +105,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P069
   source_reference: Patrick (1889), frag. 69; corpus HFR_P069
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 69'
-  iast: transliterated_from_greek

@@ -50,17 +50,14 @@ editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
-  label: Original (Middle English)
+  label: Original
   body: For of alle other creatures and theire werkes—ye, and of the werkes of God self—may a man thorou grace have fulheed
     of knowing, and wel to kon thinke on hem; bot of God him-self can no man thinke. And therfore I wolde leve al that thing
     that I can think, and chese to my love that thing that I cannot think.
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  layer_provenance: sourced
 - kind: iast
   label: IAST
   body: Middle English (original language of the work).
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
 - kind: translation
   label: Pratibha Translation
   body: Of all other creatures and their works—yes, and of the works of God himself—a person may through grace have fullness
@@ -80,34 +77,6 @@ pratibha_layers:
     (intent stripped of image, concept, mediation), directed toward what cannot be thought. This is the apophatic wager: that
     love pierces where cognition cannot follow, that the will''s bare directedness toward the unthinkable God is not confusion
     but the truest fidelity. The cloud of unknowing is not imposed; it is chosen, preferred, *loved*.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: cloud of unknowing
-    definition: 'Middle English contemplative idiom → the dark between you and God where conceptual knowing of God fails and
-      love pierces Here: A Cloud of Unknowing Between You and God A Cloud of Unknowing Between You and God For of alle other
-      creatures and theire werkes—ye, and of the werkes of God se… Trap: vague foggy mysticism without the disciplined ‘work’
-      of piercing love'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: apophasis
-    definition: 'ἀπόφασις ‘unsaying’ → approach to God by denying inadequate knowing—here practiced as cloud-work Here: A
-      Cloud of Unknowing Between You and God A Cloud of Unknowing Between You and God For of alle other creatures and theire
-      werkes—ye, and of the werkes of God se… Trap: atheism or anti-intellectual pose'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: nakid entent (naked intent)
-    definition: 'ME ‘bare / naked intention’ → stripped willing toward God alone, without images or discursive props Here:
-      What replaces thinking is "naked intent" (intent stripped of image, concept, mediation), directed toward what cannot
-      be thought. Trap: willpower striving; misses the bareness of intention'
-  - term: love / charite
-    definition: 'ME contemplative love → the dart that alone can pierce the cloud where knowledge cannot Here: And therfore
-      I wolde leve al that thing that I can think, and chese to my love that thing that I cannot think. Trap: sentimental
-      affection replacing contemplative work'
-  - term: werk (work of contemplation)
-    definition: 'ME werk → the specific contemplative labor of holding naked intent in the cloud Here: Middle English (original
-      language of the work). Trap: generic spiritual busywork'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When a thought of God arises—any image, name, attribute, or theological claim—do not suppress it but consciously set
@@ -120,7 +89,4 @@ provenance:
   collection: The Cloud of Unknowing
   section: Ch. 3
   original_id: CLOUD_01
-  source_reference: Underhill 1912 PD Middle English edition (corpus ME in Original layer).
-layer_provenance:
-  original: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912 (and earlier
-    ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  source_reference: ''

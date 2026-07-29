@@ -31,12 +31,8 @@ insight: ''
 practice: 'Count thirty of anything over a full lunar month—thirty breaths at dawn, thirty steps on the same path, thirty
   words written, thirty moments of noticing the same tree—and mark where you perceive the pattern: not the arithmetic, but
   the return, the rhythm becoming visible through repetition itself.'
-sanskrit_devanagari: ὁ τριάκοντα ἀριθμὸς φυσικώτατός ἐστιν· ὃ γὰρ ἐν μονάσι τριάς, τοῦτο ἐν δεκάσι τριακοντάς. ἐπεὶ καὶ ὁ
-  τοῦ μηνὸς κύκλος συνέστηκεν ἐκ τεσσάρων τῶν ἀπὸ μονάδος ἑξῆς τετραγώνων α´, δ´, θ´, ις´, ὅθεν οὐκ ἀπὸ σκοποῦ Ἡράκλειτος
-  γενεὰν τὸν μῆνα καλεῖ
-sanskrit_iast: ho triakonta arithmos phusikōtatos estin. ho gar en monasi trias, touto en dekasi triakontas. epei kai ho tou
-  mēnos kuklos sunestēken ek tessarōn tōn apo monados hexēs tetragōnōn a´, d´, th´, is´, hothen ouk apo skopou HĒrakleitos
-  genean ton mēna kalei
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -46,18 +42,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: ὁ τριάκοντα ἀριθμὸς φυσικώτατός ἐστιν· ὃ γὰρ ἐν μονάσι τριάς, τοῦτο ἐν δεκάσι τριακοντάς. ἐπεὶ καὶ ὁ τοῦ μηνὸς κύκλος
-    συνέστηκεν ἐκ τεσσάρων τῶν ἀπὸ μονάδος ἑξῆς τετραγώνων α´, δ´, θ´, ις´, ὅθεν οὐκ ἀπὸ σκοποῦ Ἡράκλειτος γενεὰν τὸν μῆνα
-    καλεῖ
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 88'
-- kind: iast
-  label: IAST
-  body: ho triakonta arithmos phusikōtatos estin. ho gar en monasi trias, touto en dekasi triakontas. epei kai ho tou mēnos
-    kuklos sunestēken ek tessarōn tōn apo monados hexēs tetragōnōn a´, d´, th´, is´, hothen ouk apo skopou HĒrakleitos genean
-    ton mēna kalei
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: ed. Bonn. Thirty is the most natural number, for it bears the same relation to tens as three to units. Then again
@@ -86,23 +70,11 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (ed.), the
-      shared pattern according to which all things occur — heard before it is argued -> trap: collapsing Logos into private
-      doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (ed.), time/age
-      as a child at play: cosmic process without a human craftsman-god -> trap: clock-time only; aiōn here is the age-character
-      of the world-process'
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (ed.),
-      nature that loves to hide — the self-showing of things that also resists crude disclosure -> trap: equating physis with
-      “the outdoors” or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  layer_provenance: editorial-enriched
+  - term: Logos (λόγος)
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -135,6 +107,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P088
   source_reference: Patrick (1889), frag. 88; corpus HFR_P088
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 88'
-  iast: transliterated_from_greek

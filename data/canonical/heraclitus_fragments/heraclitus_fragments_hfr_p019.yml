@@ -31,8 +31,8 @@ practice: 'Observe one deliberate action you perform today—pouring water, spea
   to your face—and pause mid-action to notice: what single intention is steering this? Not the thought about it, but the actual
   current moving through your limbs and breath. Repeat this three times during the day, each time catching the moment before
   the action solidifies into habit, so you feel the gnômê (the intelligent will) as it happens, not as memory.'
-sanskrit_devanagari: Ἓν τὸ σοφόν, ἐπίστασθαι γνώμην ᾗ κυβερνᾶται πάντα διὰ πάντων.
-sanskrit_iast: HEn to sophon, epistasthai gnōmēn hē kubernatai panta dia pantōn.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - breath
@@ -43,14 +43,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἓν τὸ σοφόν, ἐπίστασθαι γνώμην ᾗ κυβερνᾶται πάντα διὰ πάντων.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 19'
-- kind: iast
-  label: IAST
-  body: HEn to sophon, epistasthai gnōmēn hē kubernatai panta dia pantōn.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
@@ -69,32 +61,6 @@ pratibha_layers:
     of it makes the world appear as articulated necessity. The wisdom is not mystical union but the hard clarity of seeing
     how governance works.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (There is one wisdom, to understand
-      the intelligent will by which all things are governed through 8.11.5), the one that all things are: not mystical mush
-      but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange
-      inside unity'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (There is
-      one wisdom, to understand the intelligent will by which all things are governed through 8.11.5), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (There
-      is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5), wisdom apart from
-      polymathy: knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη)
-      or reputation for knowledge'
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (There
-      is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5), understanding as
-      holding-together what daily contact already offers — not new information alone -> trap: IQ or book-learning; synesis
-      fails when familiarity becomes opacity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Observe one deliberate action you perform today—pouring water, speaking a difficult sentence, moving your hand to
@@ -128,6 +94,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P019
   source_reference: Patrick (1889), frag. 19; corpus HFR_P019
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 19'
-  iast: transliterated_from_greek

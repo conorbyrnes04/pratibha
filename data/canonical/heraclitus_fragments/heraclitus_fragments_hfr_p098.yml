@@ -34,10 +34,8 @@ practice: 'Stand before something you have mastered—a skill, a text, a problem
   is my grasp of this an ape''s grasp? Do not answer quickly. Let the question work through your hands, your breath, the specific
   memory of how you came to think you understood it. Notice where resistance rises—where you want to defend the realness of
   your knowledge. That resistance is the threshold.'
-sanskrit_devanagari: ἢ οὐ καὶ Ἡράκλειτος ταὐτὸν τοῦτο λέγει, ὃν σὺ ἐπάγει, ὅτι ἀνθρώπων ὁ σοφώτατος πρὸς θεὸν πίθηκος φανεῖται
-  καὶ σοφίᾳ καὶ κάλλει καὶ τοῖς ἄλλοις πᾶσιν;
-sanskrit_iast: ē ou kai HĒrakleitos tauton touto legei, hon su epagei, hoti anthrōpōn ho sophōtatos pros theon pithēkos phaneitai
-  kai sophia kai kallei kai tois allois pasin;
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
 - commentary_text
@@ -50,16 +48,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: ἢ οὐ καὶ Ἡράκλειτος ταὐτὸν τοῦτο λέγει, ὃν σὺ ἐπάγει, ὅτι ἀνθρώπων ὁ σοφώτατος πρὸς θεὸν πίθηκος φανεῖται καὶ σοφίᾳ
-    καὶ κάλλει καὶ τοῖς ἄλλοις πᾶσιν;
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 98'
-- kind: iast
-  label: IAST
-  body: ē ou kai HĒrakleitos tauton touto legei, hon su epagei, hoti anthrōpōn ho sophōtatos pros theon pithēkos phaneitai
-    kai sophia kai kallei kai tois allois pasin;
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: that the wisest of people compared with God appears an ape in wisdom and in beauty and in all other things? ἱ
@@ -78,30 +66,6 @@ pratibha_layers:
     refinement of thought, or virtue can bridge the order of difference. Wisdom, in Heraclitus, begins when this disproportion
     is no longer theoretical but *seen*.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (that the
-      wisest of people compared with God appears an ape in wisdom and in beauty and in all other things? ἱ), wisdom apart
-      from polymathy: knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning
-      (πολυμαθίη) or reputation for knowledge'
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (that
-      the wisest of people compared with God appears an ape in wisdom and in beauty and in all other things? ἱ), understanding
-      as holding-together what daily contact already offers — not new information alone -> trap: IQ or book-learning; synesis
-      fails when familiarity becomes opacity'
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (that the wisest
-      of people compared with God appears an ape in wisdom and in beauty and in all other things? ἱ), the soul whose depth,
-      dryness, or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (that the wisest of people compared with God appears
-      an ape in wisdom and in beauty and in all other things? ἱ), the proportion that governs exchange, fire, and speech —
-      what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Stand before something you have mastered—a skill, a text, a problem you have solved—and ask aloud: in what way is
@@ -142,6 +106,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P098
   source_reference: Patrick (1889), frag. 98; corpus HFR_P098
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 98'
-  iast: transliterated_from_greek

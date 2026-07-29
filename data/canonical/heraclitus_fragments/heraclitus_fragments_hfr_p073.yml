@@ -31,8 +31,8 @@ insight: ''
 practice: 'When you notice yourself wanting something—food, approval, distraction, certainty—pause and ask: what am I spending
   right now, in this moment of craving, before any action follows? Speak aloud the specific texture of that cost: attention,
   ease, presence, time. Do this three times in a single day, at different moments of desire, without trying to stop the wanting.'
-sanskrit_devanagari: Θυμῷ μάχεσθαι χαλεπόν· ὅ τι γὰρ ἂν χρηίζῃ γίνεσθαι, ψυχῆς ὠνέεται.
-sanskrit_iast: THumō machesthai chalepon. ho ti gar an chrēizē ginesthai, psuchēs ōneetai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - attention
@@ -47,14 +47,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Θυμῷ μάχεσθαι χαλεπόν· ὅ τι γὰρ ἂν χρηίζῃ γίνεσθαι, ψυχῆς ὠνέεται.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 105'
-- kind: iast
-  label: IAST
-  body: THumō machesthai chalepon. ho ti gar an chrēizē ginesthai, psuchēs ōneetai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: It is hard to contend against passion, for whatever it craves it buys with its life.
@@ -71,24 +63,6 @@ pratibha_layers:
     life-force to the very struggle. There is no neutral observer, no ''I'' standing apart from thymos. The fragment teaches
     recognition, not resistance—to see that the buying happens whether we name it or not.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (it is hard
-      to contend against passion, for whatever it craves it buys with its life.), the shared pattern according to which all
-      things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later
-      Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (it
-      is hard to contend against passion, for whatever it craves it buys with its life.), nature that loves to hide — the
-      self-showing of things that also resists crude disclosure -> trap: equating physis with “the outdoors” or a finished
-      inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you notice yourself wanting something—food, approval, distraction, certainty—pause and ask: what am I spending
@@ -121,6 +95,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P073
   source_reference: Patrick (1889), frag. 73; corpus HFR_P073
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 105'
-  iast: transliterated_from_greek

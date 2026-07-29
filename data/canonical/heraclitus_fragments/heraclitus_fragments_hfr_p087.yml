@@ -30,10 +30,8 @@ practice: 'When you encounter a teaching secondhand—in a book, from another''s
   before accepting or rejecting it, and ask aloud: what am I actually hearing, and from whom? Speak the name of the intermediary
   (the translator, the friend, the source) and notice whether the teaching changes shape when you restore its actual path
   to you.'
-sanskrit_devanagari: οἱ μὲν "ἡβώντος" ἀναγινώσκοντες (apud Hesiod. fr. 163 Goettling) ἔτη τριάκοντα ποιοῦσι τὴν γενεὰν καθ'
-  Ἡράκλειτον· ἐν ᾧ χρόνῳ γεννῶντα παρέχει τὸν ἐξ αὐτοῦ γεγεννημένον ὁ γεννήσας
-sanskrit_iast: ohi men "hēbōntos" anaginōskontes (apud Hesiod. fr. 163 Goettling) etē triakonta poiousi tēn genean kath' HĒrakleiton.
-  en hō chronō gennōnta parechei ton ex autou gegennēmenon ho gennēsas
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -43,16 +41,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: οἱ μὲν "ἡβώντος" ἀναγινώσκοντες (apud Hesiod. fr. 163 Goettling) ἔτη τριάκοντα ποιοῦσι τὴν γενεὰν καθ' Ἡράκλειτον·
-    ἐν ᾧ χρόνῳ γεννῶντα παρέχει τὸν ἐξ αὐτοῦ γεγεννημένον ὁ γεννήσας
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 87'
-- kind: iast
-  label: IAST
-  body: ohi men "hēbōntos" anaginōskontes (apud Hesiod. fr. 163 Goettling) etē triakonta poiousi tēn genean kath' HĒrakleiton.
-    en hō chronō gennōnta parechei ton ex autou gegennēmenon ho gennēsas
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Aeneas, Gaz. Theophrast. p. 9.
@@ -70,30 +58,6 @@ pratibha_layers:
     waking attention. To study this fragment is to study the condition of studying fragments—to notice how authority dissolves
     and responsibility for understanding shifts entirely to the one who reads.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (aeneas, Gaz.),
-      the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing Logos into private
-      doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (aeneas,
-      Gaz.), wisdom apart from polymathy: knowing the one intelligent will that steers all things -> trap: equating wisdom
-      with much-learning (πολυμαθίη) or reputation for knowledge'
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (aeneas,
-      Gaz.), understanding as holding-together what daily contact already offers — not new information alone -> trap: IQ or
-      book-learning; synesis fails when familiarity becomes opacity'
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (aeneas, Gaz.),
-      world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static
-      elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you encounter a teaching secondhand—in a book, from another''s mouth, in a paraphrase or translation—pause before
@@ -126,6 +90,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P087
   source_reference: Patrick (1889), frag. 87; corpus HFR_P087
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 87'
-  iast: transliterated_from_greek

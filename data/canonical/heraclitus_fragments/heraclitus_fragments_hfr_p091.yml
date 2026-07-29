@@ -35,12 +35,8 @@ practice: When you notice yourself measuring time by your own breath or heartbea
   backward through three longer lifespans than your own (a tree, a civilization, a stone formation), then forward through
   three shorter (a mayfly, a flame, a thought), without trying to reconcile them into a single scale. Return to your breath.
   The logos is what remains constant while all these measures move.
-sanskrit_devanagari: Ξυνόν ἐστι πᾶσι τὸ φρονέειν. ξὺν νόῳ λέγοντας ἰσχυρίζεσθαι χρὴ τῷ ξυνῷ πάντων, ὅκωσπερ νόμῳ πόλις καὶ
-  πολὺ ἰσχυροτέρως. τρέφονται γὰρ πάντες οἱ ἀνθρώπειοι νόμοι ὑπὸ ἑνὸς τοῦ θείου· κρατέει γὰρ τοσοῦτον ὁκόσον ἐθέλει καὶ ἐξαρκέει
-  πᾶσι καὶ περιγίνεται.
-sanskrit_iast: Xunon esti pasi to phroneein. xun noō legontas ischurizesthai chrē tō xunō pantōn, hokōsper nomō polis kai
-  polu ischuroterōs. trephontai gar pantes ohi anthrōpeioi nomoi hupo henos tou theiou. krateei gar tosouton hokoson ethelei
-  kai exarkeei pasi kai periginetai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
 - commentary_text
@@ -50,18 +46,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ξυνόν ἐστι πᾶσι τὸ φρονέειν. ξὺν νόῳ λέγοντας ἰσχυρίζεσθαι χρὴ τῷ ξυνῷ πάντων, ὅκωσπερ νόμῳ πόλις καὶ πολὺ ἰσχυροτέρως.
-    τρέφονται γὰρ πάντες οἱ ἀνθρώπειοι νόμοι ὑπὸ ἑνὸς τοῦ θείου· κρατέει γὰρ τοσοῦτον ὁκόσον ἐθέλει καὶ ἐξαρκέει πᾶσι καὶ
-    περιγίνεται.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 91'
-- kind: iast
-  label: IAST
-  body: Xunon esti pasi to phroneein. xun noō legontas ischurizesthai chrē tō xunō pantōn, hokōsper nomō polis kai polu ischuroterōs.
-    trephontai gar pantes ohi anthrōpeioi nomoi hupo henos tou theiou. krateei gar tosouton hokoson ethelei kai exarkeei pasi
-    kai periginetai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: The Law of Understanding is common to all. Those who speak with intelligence must hold fast to that which is common
@@ -84,29 +68,6 @@ pratibha_layers:
     The riddle trains the mind to stop collapsing into private sensation and to hold multiple temporal scales in a single
     act of understanding.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (the Law of
-      Understanding is common to all.), the shared pattern according to which all things occur — heard before it is argued
-      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (the
-      Law of Understanding is common to all.), understanding as holding-together what daily contact already offers — not new
-      information alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (the Law of Understanding
-      is common to all.), time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time only;
-      aiōn here is the age-character of the world-process'
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (the
-      Law of Understanding is common to all.), life and death as reciprocal: one element lives the death of another; hope
-      cannot prefigure what awaits -> trap: afterlife tourism or simple annihilation; the point is structural exchange and
-      limit of anticipation'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When you notice yourself measuring time by your own breath or heartbeat—hurrying, waiting, aging—deliberately count
@@ -141,6 +102,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P091
   source_reference: Patrick (1889), frag. 91; corpus HFR_P091
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 91'
-  iast: transliterated_from_greek

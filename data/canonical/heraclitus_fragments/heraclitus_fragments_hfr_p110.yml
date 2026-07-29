@@ -28,8 +28,8 @@ practice: 'When you encounter a rule or instruction that irritates you—a socia
   it backward to its root principle rather than its surface form. Ask: what single intelligible order does this rule protect
   or express? Does it align with the logos you recognize in yourself, or does it contradict it? Speak the principle aloud,
   not the rule, and notice whether obedience becomes recognition.'
-sanskrit_devanagari: Νόμος καὶ βουλῇ πείθεσθαι ἑνός.
-sanskrit_iast: Nomos kai boulē peithesthai henos.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -39,14 +39,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Νόμος καὶ βουλῇ πείθεσθαι ἑνός.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 110'
-- kind: iast
-  label: IAST
-  body: Nomos kai boulē peithesthai henos.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: It is law, also, to obey the will of one.®
@@ -63,30 +55,6 @@ pratibha_layers:
     *necessarily* singular because intelligibility itself cannot be plural. To resist this is to fragment yourself into opinion,
     appetite, noise.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (it is law,
-      also, to obey the will of one.®), the shared pattern according to which all things occur — heard before it is argued
-      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: νόμος (nomos)
-    definition: 'νόμος “law, custom, allotted order” -> in this passage (it is law, also, to obey the will of one.®), civic/cosmic
-      law worth defending as walls are — shared order that makes a people -> trap: arbitrary statute; Heraclitus binds nomos
-      to divine/common measure'
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (it is law,
-      also, to obey the will of one.®), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement
-      -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (it is law, also, to obey the will of one.®),
-      cosmic justice that polices measures — the Erinyes as helpers when bounds are overstepped -> trap: courtroom morality
-      alone; here dikē is cosmological proportion, not only human law'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you encounter a rule or instruction that irritates you—a social norm, a constraint, a demand—pause and trace
@@ -119,6 +87,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P110
   source_reference: Patrick (1889), frag. 110; corpus HFR_P110
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 110'
-  iast: transliterated_from_greek

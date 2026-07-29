@@ -30,10 +30,8 @@ practice: 'Walk through a space where you work or gather regularly, and notice o
   three days, observe how the collective responds to this difference: what is the texture of the resistance? Where does leveling
   language appear (''we''re all equal,'' ''don''t make waves,'' ''who do you think you are'')? On the fourth day, ask yourself
   whether you have been complicit in that suppression, and whether you are still.'
-sanskrit_devanagari: Ἄξιον Ἐφεσίοις ἡβηδὸν ἀπάγξασθαι πᾶσι καὶ τοῖς ἀνήβοις τὴν πόλιν καταλιπεῖν, οἵτινες Ἑῥμόδωρον ἄνδρα
-  ἑωυτῶν ὀνήιστον ἐξέβαλον, φάντες· ἡμέων μηδὲ εἷς ὀνήιστος ἔστω, εἰ δὲ μή, ἄλλῃ τε καὶ μετ' ἄλλον.
-sanskrit_iast: Axion Ephesiois hēbēdon apanxasthai pasi kai tois anēbois tēn polin katalipein, ohitines HEhrmodōron andra
-  heōutōn onēiston exebalon, phantes. hēmeōn mēde ehis onēistos estō, ei de mē, allē te kai met' allon.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - death
@@ -42,16 +40,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἄξιον Ἐφεσίοις ἡβηδὸν ἀπάγξασθαι πᾶσι καὶ τοῖς ἀνήβοις τὴν πόλιν καταλιπεῖν, οἵτινες Ἑῥμόδωρον ἄνδρα ἑωυτῶν ὀνήιστον
-    ἐξέβαλον, φάντες· ἡμέων μηδὲ εἷς ὀνήιστος ἔστω, εἰ δὲ μή, ἄλλῃ τε καὶ μετ' ἄλλον.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 114'
-- kind: iast
-  label: IAST
-  body: Axion Ephesiois hēbēdon apanxasthai pasi kai tois anēbois tēn polin katalipein, ohitines HEhrmodōron andra heōutōn
-    onēiston exebalon, phantes. hēmeōn mēde ehis onēistos estō, ei de mē, allē te kai met' allon.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: 'The Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have banished Hermodorus,
@@ -70,34 +58,6 @@ pratibha_layers:
     possibility. The logos that holds all things in tension requires difference, requires the exceptional. To exile it is
     to exile the very principle by which a city remains alive.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (The Ephesians
-      deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have bani…), tensioned unity of
-      opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (The Ephesians
-      deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have bani…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (The
-      Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have bani…), life and
-      death as reciprocal: one element lives the death of another; hope cannot prefigure what awaits -> trap: afterlife tourism
-      or simple annihilation; the point is structural exchange and limit of anticipation'
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (The Ephesians deserve, man
-      for man, to be hung, and the youth to leave the city, inasmuch as they have bani…), the one that all things are: not
-      mystical mush but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension
-      and exchange inside unity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Walk through a space where you work or gather regularly, and notice one person or one contribution that stands out—either
@@ -134,6 +94,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P114
   source_reference: Patrick (1889), frag. 114; corpus HFR_P114
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 114'
-  iast: transliterated_from_greek

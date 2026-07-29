@@ -32,10 +32,8 @@ insight: ''
 practice: At the moment of thirst—when you reach for water—pause and drink it as the thing that would unmake you if you surrendered
   to it completely, then swallow and feel the boundary between your form and its formlessness reassert itself in your throat
   and belly; repeat this three times over three days, each time noting whether the boundary feels more fragile or more precise.
-sanskrit_devanagari: Ψυχῇσι γὰρ θάνατος ὕδωρ γενέσθαι, ὕδατι δὲ θάνατος γῆν γενέσθαι· ἐκ γῆς δὲ ὕδωρ γίνεται, ἐξ ὕδατος δὲ
-  ψυχή.
-sanskrit_iast: PSuchēsi gar thanatos hudōr genesthai, hudati de thanatos gēn genesthai. ek gēs de hudōr ginetai, ex hudatos
-  de psuchē.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - death
@@ -47,14 +45,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ψυχῇσι γὰρ θάνατος ὕδωρ γενέσθαι, ὕδατι δὲ θάνατος γῆν γενέσθαι· ἐκ γῆς δὲ ὕδωρ γίνεται, ἐξ ὕδατος δὲ ψυχή.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 68'
-- kind: iast
-  label: IAST
-  body: PSuchēsi gar thanatos hudōr genesthai, hudati de thanatos gēn genesthai. ek gēs de hudōr ginetai, ex hudatos de psuchē.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: To souls it is death to become water, and to water it is death to become earth, but from earth comes water, and from
@@ -83,32 +73,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (To souls
-      it is death to become water, and to water it is death to become earth, but from earth comes water,…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (To souls
-      it is death to become water, and to water it is death to become earth, but from earth comes water,…), tensioned unity
-      of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (To souls it is
-      death to become water, and to water it is death to become earth, but from earth comes water,…), the soul whose depth,
-      dryness, or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: ποταμός (potamos)
-    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage (To souls it is
-      death to become water, and to water it is death to become earth, but from earth comes water,…), flux as identity-in-process:
-      you cannot step twice into the same river because waters renew -> trap: slogan “everything changes” without the logos
-      that measures the flow'
-  layer_provenance: editorial-enriched
+  - term: psychē (ψυχή)
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -134,6 +102,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P068
   source_reference: Patrick (1889), frag. 68; corpus HFR_P068
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 68'
-  iast: transliterated_from_greek

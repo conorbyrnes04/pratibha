@@ -32,10 +32,8 @@ insight: ''
 practice: 'Before speaking any request aloud—to a person, a situation, or into silence—pause and name aloud what you do not
   know about what you are addressing: ''I do not know if you hear me. I do not know what you are.'' Speak the unknowing first,
   then speak the prayer or question. Notice whether the admission changes the weight or texture of what follows.'
-sanskrit_devanagari: Καὶ τοῖς ἀγάλμασι τουτέοισι εὔχονται, ὁκοῖον εἴ τις τοῖς δόμοισι λεσχηνεύοιτο, οὔ τι γινώσκων θεοὺς οὐδ'
-  ἥρωας, οἵτινές εἰσι.
-sanskrit_iast: Kai tois agalmasi touteoisi euchontai, hokoion ei tis tois domoisi leschēneuoito, ou ti ginōskōn theous oud'
-  hērōas, ohitines eisi.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - emptiness
@@ -47,16 +45,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Καὶ τοῖς ἀγάλμασι τουτέοισι εὔχονται, ὁκοῖον εἴ τις τοῖς δόμοισι λεσχηνεύοιτο, οὔ τι γινώσκων θεοὺς οὐδ' ἥρωας, οἵτινές
-    εἰσι.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 126'
-- kind: iast
-  label: IAST
-  body: Kai tois agalmasi touteoisi euchontai, hokoion ei tis tois domoisi leschēneuoito, ou ti ginōskōn theous oud' hērōas,
-    ohitines eisi.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: And to these images they pray, as if one should prattle with the houses knowing nothing of gods or heroes, who they
@@ -75,31 +63,6 @@ pratibha_layers:
     work of actually coming to know what one invokes. The one who prays without first asking ''who are you?'' has already
     failed the primary task of logos: to discriminate, to see clearly what stands before one.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (And to these
-      images they pray, as if one should prattle with the houses knowing nothing of gods or heroes,…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (And to these images they pray,
-      as if one should prattle with the houses knowing nothing of gods or heroes,…), the one that all things are: not mystical
-      mush but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange
-      inside unity'
-  - term: νόμος (nomos)
-    definition: 'νόμος “law, custom, allotted order” -> in this passage (And to these images they pray, as if one should prattle
-      with the houses knowing nothing of gods or heroes,…), civic/cosmic law worth defending as walls are — shared order that
-      makes a people -> trap: arbitrary statute; Heraclitus binds nomos to divine/common measure'
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (And to
-      these images they pray, as if one should prattle with the houses knowing nothing of gods or heroes,…), wisdom apart
-      from polymathy: knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning
-      (πολυμαθίη) or reputation for knowledge'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Before speaking any request aloud—to a person, a situation, or into silence—pause and name aloud what you do not
@@ -131,6 +94,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P126
   source_reference: Patrick (1889), frag. 126; corpus HFR_P126
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 126'
-  iast: transliterated_from_greek

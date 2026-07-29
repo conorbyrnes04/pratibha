@@ -30,8 +30,8 @@ practice: At the moment the sun breaks the horizon or crosses your line of sight
   yesterday that you no longer are—not a belief abandoned, but a fact of your body or circumstance that has genuinely altered.
   Do not search for profundity; the shift may be microscopic. Repeat this each dawn or noon for seven days, and on the eighth
   day, notice whether you have become the one who changes, or whether you remain the witness to change.
-sanskrit_devanagari: Νέος ἐφ' ἡμέρῃ ἥλιος.
-sanskrit_iast: Neos eph' hēmerē hēlios.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -41,14 +41,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Νέος ἐφ' ἡμέρῃ ἥλιος.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 32'
-- kind: iast
-  label: IAST
-  body: Neos eph' hēmerē hēlios.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: cerning the sun this cannot happen, since, being nourished in the same manner, as they say, it is plain that the sun
@@ -66,29 +58,6 @@ pratibha_layers:
     persistence *requires* the annihilation of what was. The sun''s nourishment is its self-erasure. We live under a fire
     that cannot hold itself.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (cerning
-      the sun this cannot happen, since, being nourished in the same manner, as they say, it is plain tha…), tensioned unity
-      of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (cerning the sun
-      this cannot happen, since, being nourished in the same manner, as they say, it is plain tha…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: ποταμός (potamos)
-    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage (cerning the sun
-      this cannot happen, since, being nourished in the same manner, as they say, it is plain tha…), flux as identity-in-process:
-      you cannot step twice into the same river because waters renew -> trap: slogan “everything changes” without the logos
-      that measures the flow'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: At the moment the sun breaks the horizon or crosses your line of sight, name aloud one thing you were certain of yesterday
@@ -124,6 +93,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P032
   source_reference: Patrick (1889), frag. 32; corpus HFR_P032
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 32'
-  iast: transliterated_from_greek

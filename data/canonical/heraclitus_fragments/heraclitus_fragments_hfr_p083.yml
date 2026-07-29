@@ -31,8 +31,8 @@ practice: 'During a routine action with inherent rhythm—walking, breathing, po
   breath that maintains oxygen only through perpetual exchange, the voice that holds a note only through sustained vibration.
   Notice the instant you try to *stop* the action to examine it; the rest vanishes. The stability was never in freezing the
   moment but in the motion itself.'
-sanskrit_devanagari: Μεταβάλλον ἀναπαύεται.
-sanskrit_iast: Metaballon anapauetai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - breath
@@ -45,14 +45,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Μεταβάλλον ἀναπαύεται.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 83'
-- kind: iast
-  label: IAST
-  body: Metaballon anapauetai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: In change is rest.
@@ -69,32 +61,6 @@ pratibha_layers:
     beneath it, not despite it—rest abides. The paradox dissolves only when perception stops treating change and rest as opposites
     and recognizes them as a single rhythm. This is not metaphysics but phenomenology: watch what actually holds steady.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (in change
-      is rest.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony”
-      as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: ποταμός (potamos)
-    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage (in change is rest.),
-      flux as identity-in-process: you cannot step twice into the same river because waters renew -> trap: slogan “everything
-      changes” without the logos that measures the flow'
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (in change is rest.),
-      the soul whose depth, dryness, or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,”
-      or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (in change is rest.),
-      world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static
-      elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'During a routine action with inherent rhythm—walking, breathing, pouring water, speaking a familiar phrase—attend
@@ -110,6 +76,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P083
   source_reference: Patrick (1889), frag. 83; corpus HFR_P083
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 83'
-  iast: transliterated_from_greek

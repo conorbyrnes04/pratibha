@@ -32,8 +32,8 @@ practice: 'Observe one process—a river, a conversation, a meal digesting, a th
   within it that cannot be separated: the thing''s coherence and its constant alteration, its unity and its plurality. Name
   these opposites aloud without resolving them, and notice whether your mind tries to collapse them or hold them apart; that
   resistance is the shape of your current understanding.'
-sanskrit_devanagari: Ἓν τὸ σοφόν, ἐπίστασθαι γνώμην ᾗ κυβερνᾶται πάντα διὰ πάντων.
-sanskrit_iast: HEn to sophon, epistasthai gnōmēn hē kubernatai panta dia pantōn.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -47,14 +47,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἓν τὸ σοφόν, ἐπίστασθαι γνώμην ᾗ κυβερνᾶται πάντα διὰ πάντων.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 19'
-- kind: iast
-  label: IAST
-  body: HEn to sophon, epistasthai gnōmēn hē kubernatai panta dia pantōn.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: There is one wisdom, to understand the intelligent will by which all things are governed through 8.11.5
@@ -72,35 +64,6 @@ pratibha_layers:
     actually work. The old commentary''s fear of ''mystical fusion'' misses the precision: Heraclitus is claiming that intelligibility
     itself has a single structure, even though the things it orders remain perpetually distinct, in tension, and in flux.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (There is one wisdom, to understand
-      the intelligent will by which all things are governed through 8.11.5), the one that all things are: not mystical mush
-      but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange
-      inside unity'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (There is
-      one wisdom, to understand the intelligent will by which all things are governed through 8.11.5), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (There is
-      one wisdom, to understand the intelligent will by which all things are governed through 8.11.5), tensioned unity of
-      opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (There is one wisdom,
-      to understand the intelligent will by which all things are governed through 8.11.5), the soul whose depth, dryness,
-      or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Observe one process—a river, a conversation, a meal digesting, a thought forming—and identify two opposite movements
@@ -136,6 +99,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P116
   source_reference: Patrick (1889), frag. 116; corpus HFR_P116
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 19'
-  iast: transliterated_from_greek

@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_8
 unit_label: Knowledge belongs to the waking state.
-title: Waking Knowledge Reaches Only Outward
+title: Knowledge belongs to the waking state.
 unit_type: sutra
 sanskrit_devanagari: ज्ञानं जाग्रत्
 sanskrit_iast: jñānaṁ jāgrat
@@ -16,8 +16,7 @@ commentary: 'Ordinary knowing arises with orientation toward objects. In waking,
 
   The sūtra quietly limits its scope. What is most intimate is not grasped here.'
 insight: Ordinary knowing arises with orientation toward objects.
-practice: The moment you name something today—a person, emotion, problem, or object—pause and notice what naming just excluded.
-  Hold that unnamed remainder in awareness for three breaths without trying to know it.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - consciousness
@@ -51,6 +50,9 @@ pratibha_layers:
 
 
     The sūtra quietly limits its scope. What is most intimate is not grasped here.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -58,10 +60,6 @@ pratibha_layers:
     definition: waking consciousness
   - term: jñāna
     definition: object-oriented knowing
-    lemma_id: jnana
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -82,7 +80,7 @@ pratibha_layers:
     divergence: The Siva Sutra describes ordinary knowing as inherently object-oriented without judgment, whereas the Gita's
       framework requires discernment to separate the knower from the field—implying that ordinary knowing conflates them and
       liberation requires their differentiation.
-    passage_id: bhagavad_gita.bg_md_010
+    passage_id: bhagavad_gita.bg_13_02
   layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
@@ -91,8 +89,3 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.8
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: The moment you name something today—a person, emotion, problem, or object—pause and notice what naming just excluded.
-  Hold that unnamed remainder in awareness for three breaths without trying to know it.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

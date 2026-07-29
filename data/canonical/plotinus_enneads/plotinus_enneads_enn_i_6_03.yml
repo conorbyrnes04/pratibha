@@ -8,7 +8,7 @@ unit_label: The Soul's Intrinsic Faculty for Beauty
 title: The Soul's Intrinsic Faculty for Beauty
 unit_type: sutra
 sanskrit_devanagari: Ἡ ψυχὴ δὲ ἔχει τὸ κρίνειν τὸ καλὸν ἰδίᾳ, καὶ οὐκ ἄλλοθεν ἢ ἀπὸ αὑτῆς, ὅταν τὸ καλὸν φαίνηται αὐτῇ.
-sanskrit_iast: Hē psychē de echei to krinein to kalon idia, kai ouk allothen ē apo hautēs, hotan to kalon phainētai autē.
+sanskrit_iast: N/A, as the focus is on Plotinus' philosophical ideas rather than specific Greek terms in this passage.
 translation_literal: The soul possesses an intrinsic faculty for discerning beauty, one that is unwavering and unshakeable,
   never doubting its own judgement when confronted with something lovely. This faculty operates by affirming the beautiful
   whenever it encounters something that resonates with the [Ideal-Form] within itself, using this idea as a standard for accuracy
@@ -36,7 +36,23 @@ commentary: 'The philosophical claim that the soul has an intrinsic faculty for 
 
   * **Rational-Principle (λόγος)** — from the Greek concept of "reason" or "word" -> refers to the divine, creative principle
   that underlies all of existence -> what is often missed in translation is the idea that this principle is not just a static
-  concept, but rather a dynamic, living force that shapes and guides the world.'
+  concept, but rather a dynamic, living force that shapes and guides the world.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Katha Upanishad, 2.2.13:** The idea that the soul has an intrinsic faculty for discerning beauty resonates with the
+  concept of [satyam] or truth in the Katha Upanishad, which suggests that the ultimate reality is not just a static concept,
+  but rather a dynamic, living principle that underlies all of existence.
+
+  * **Phaedo, 74-75:** The idea that the [Ideal-Forms] are eternal and perfect templates that underlie all of existence resonates
+  with the concept of the [eidos] in the Phaedo, which suggests that the ultimate reality is not just a physical, material
+  world, but rather a world of eternal, perfect forms.
+
+  * **Zhuangzi, Chapter 2:** The idea that the experience of beauty is closely tied to the experience of ultimate reality
+  resonates with the concept of [wu wei] or effortless action in the Zhuangzi, which suggests that the ultimate reality is
+  not just a static concept, but rather a dynamic, living principle that guides and shapes the world.'
 insight: The philosophical claim that the soul has an intrinsic faculty for beauty makes a counterintuitive move by suggesting
   that our experience of beauty is not solely a product of external stimuli, but rather an expression of the soul's inner
   nature.
@@ -99,42 +115,23 @@ pratibha_layers:
 
     * **Rational-Principle (λόγος)** — from the Greek concept of "reason" or "word" -> refers to the divine, creative principle
     that underlies all of existence -> what is often missed in translation is the idea that this principle is not just a static
-    concept, but rather a dynamic, living force that shapes and guides the world.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: kalon (καλόν)
-    definition: '‘the beautiful’ → beauty as trace of the One that awakens eros for ascent Here: The Soul''s Intrinsic Faculty
-      for Beauty The Soul''s Intrinsic Faculty for Beauty Ἡ ψυχὴ δὲ ἔχει τὸ κρίνειν τὸ καλὸν ἰδίᾳ, καὶ οὐκ ἄλλοθεν ἢ ἀπὸ αὑτῆς,
-      ὅταν τὸ κ… Trap: aesthetic taste or symmetry alone'
-  - term: psychē (ψυχή)
-    definition: '‘soul’ → living knowing that can turn toward Nous or toward body Here: The Soul''s Intrinsic Faculty for
-      Beauty The Soul''s Intrinsic Faculty for Beauty Ἡ ψυχὴ δὲ ἔχει τὸ κρίνειν τὸ καλὸν ἰδίᾳ, καὶ οὐκ ἄλλοθεν ἢ ἀπὸ αὑτῆς,
-      ὅταν τὸ κ… Trap: ghost in the machine; mere psychology'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Katha Upanishad, 2.2.13
-    resonance: The idea that the soul has an intrinsic faculty for discerning beauty resonates with the concept of [satyam]
-      or truth in the Katha Upanishad, which suggests that the ultimate reality is not just a static concept
-    divergence: but rather a dynamic, living principle that underlies all of existence.
-    passage_id: ''
-  - citation: Phaedo, 74-75
-    resonance: The idea that the [Ideal-Forms] are eternal and perfect templates that underlie all of existence resonates
-      with the concept of the [eidos] in the Phaedo, which suggests that the ultimate reality is not just a physical, material
-      world
-    divergence: but rather a world of eternal, perfect forms.
-    passage_id: ''
-  - citation: Zhuangzi, Chapter 2
-    resonance: The idea that the experience of beauty is closely tied to the experience of ultimate reality resonates with
-      the concept of [wu wei] or effortless action in the Zhuangzi, which suggests that the ultimate reality is not just a
-      static concept
-    divergence: but rather a dynamic, living principle that guides and shapes the world.
-    passage_id: ''
-  layer_provenance: migrated_from_commentary
+    concept, but rather a dynamic, living force that shapes and guides the world.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Katha Upanishad, 2.2.13:** The idea that the soul has an intrinsic faculty for discerning beauty resonates with the
+    concept of [satyam] or truth in the Katha Upanishad, which suggests that the ultimate reality is not just a static concept,
+    but rather a dynamic, living principle that underlies all of existence.
+
+    * **Phaedo, 74-75:** The idea that the [Ideal-Forms] are eternal and perfect templates that underlie all of existence
+    resonates with the concept of the [eidos] in the Phaedo, which suggests that the ultimate reality is not just a physical,
+    material world, but rather a world of eternal, perfect forms.
+
+    * **Zhuangzi, Chapter 2:** The idea that the experience of beauty is closely tied to the experience of ultimate reality
+    resonates with the concept of [wu wei] or effortless action in the Zhuangzi, which suggests that the ultimate reality
+    is not just a static concept, but rather a dynamic, living principle that guides and shapes the world.'
 - kind: practice
   label: Practice (Abhyasa)
   body: As you go about your day, take a moment to pause and reflect on the beauty that surrounds you. Notice the way that
@@ -237,4 +234,3 @@ provenance:
   section: Ennead I, Tractate 6, Section 3
   original_id: ENN_I_6_03
   source_reference: ''
-translation_provenance: English adapted from Stephen MacKenna & B. S. Page, *The Enneads* (public domain). Study rendering.

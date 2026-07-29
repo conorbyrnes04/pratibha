@@ -36,8 +36,8 @@ practice: 'When you catch yourself repeating a habitual response to a recurring 
   the same self-criticism after a mistake, the same avoidance of a task—stop and name aloud what you are doing: ''I am using
   mud to wash mud.'' Do not proceed until you identify one action, phrase, or silence that *breaks* the pattern rather than
   cycles within it.'
-sanskrit_devanagari: Καθαίρονται δὲ αἵματι μιαινόμενοι ὥσπερ ἂν εἴ τις ἐς πηλὸν ἐμβὰς πηλῷ ἀπονίροιτο.
-sanskrit_iast: Kathairontai de ahimati miainomenoi hōsper an ei tis es pēlon embas pēlō aponiroito.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - commentary_text
@@ -52,14 +52,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Καθαίρονται δὲ αἵματι μιαινόμενοι ὥσπερ ἂν εἴ τις ἐς πηλὸν ἐμβὰς πηλῷ ἀπονίροιτο.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 130'
-- kind: iast
-  label: IAST
-  body: Kathairontai de ahimati miainomenoi hōsper an ei tis es pēlon embas pēlō aponiroito.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: When defiled, they purify themselves with blood, just as if any one who had fallen into the mud should wash himself
@@ -79,33 +71,6 @@ pratibha_layers:
     a break in the chain of like-with-like. This is why Heraclitus elsewhere speaks of fire as the measure: not because fire
     is mystical, but because it *consumes* what it touches, refusing the logic of the mud-in-mud.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (When defiled,
-      they purify themselves with blood, just as if any one who had fallen into the mud should wash…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (When defiled,
-      they purify themselves with blood, just as if any one who had fallen into the mud should wash…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (When defiled, they purify themselves
-      with blood, just as if any one who had fallen into the mud should wash…), the one that all things are: not mystical
-      mush but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange
-      inside unity'
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (When defiled, they purify themselves with blood,
-      just as if any one who had fallen into the mud should wash…), the proportion that governs exchange, fire, and speech
-      — what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you catch yourself repeating a habitual response to a recurring problem—the same argument with a partner, the
@@ -138,6 +103,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P130
   source_reference: Patrick (1889), frag. 130; corpus HFR_P130
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 130'
-  iast: transliterated_from_greek

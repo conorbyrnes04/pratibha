@@ -30,8 +30,8 @@ practice: When you find yourself defending a position against someone who oppose
   debate—pause mid-sentence and notice the exact moment the opposing view sharpens your own claim. Do not resolve the tension
   or declare victory; instead, hold both positions in awareness for three full breaths, feeling how each one requires the
   other to have any meaning at all.
-sanskrit_devanagari: Δίκης οὔνομα οὐκ ἂν ᾔδεσαν, εἰ ταῦτα μὴ ἦν.
-sanskrit_iast: Dikēs ounoma ouk an ēdesan, ei tauta mē ēn.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - awareness
 - commentary_text
@@ -43,14 +43,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Δίκης οὔνομα οὐκ ἂν ᾔδεσαν, εἰ ταῦτα μὴ ἦν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 60'
-- kind: iast
-  label: IAST
-  body: Dikēs ounoma ouk an ēdesan, ei tauta mē ēn.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: They would not know the name of justice, were it not for these things.”
@@ -68,30 +60,6 @@ pratibha_layers:
     is not ''justice exists in conflict'' but rather: your very ability to *recognize* justice depends on your willingness
     to stop treating the name as sufficient and to enter the unnamed field where opposites hold each other in place.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (they would
-      not know the name of justice, were it not for these things.”), tensioned unity of opposites — bow and lyre held by counter-pull,
-      not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (they would not know the name of justice, were
-      it not for these things.”), cosmic justice that polices measures — the Erinyes as helpers when bounds are overstepped
-      -> trap: courtroom morality alone; here dikē is cosmological proportion, not only human law'
-  - term: πόλεμος (polemos)
-    definition: 'πόλεμος “war, conflict” — strife as generative, not only destructive -> in this passage (they would not know
-      the name of justice, were it not for these things.”), war/strife as father of things: opposition that produces order
-      rather than mere chaos -> trap: glorifying violence, or reading strife as a failure of order instead of its instrument'
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (they would not
-      know the name of justice, were it not for these things.”), the soul whose depth, dryness, or rudeness decides whether
-      senses can witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When you find yourself defending a position against someone who opposes it—in argument, negotiation, or even internal
@@ -124,6 +92,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P081
   source_reference: Patrick (1889), frag. 81; corpus HFR_P081
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 60'
-  iast: transliterated_from_greek

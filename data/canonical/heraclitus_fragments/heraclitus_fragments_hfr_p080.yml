@@ -33,8 +33,8 @@ insight: ''
 practice: When you catch yourself explaining something to another person, stop mid-sentence and ask aloud what you are actually
   saying—not to them, but as if the words themselves must answer. Repeat the core claim three times, each time listening for
   what shifts or breaks in your own utterance, until you cannot tell whether you are teaching or being taught by the sentence.
-sanskrit_devanagari: Ἐδιζησάμην ἐμεωυτόν.
-sanskrit_iast: Edizēsamēn emeōuton.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -45,14 +45,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἐδιζησάμην ἐμεωυτόν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 80'
-- kind: iast
-  label: IAST
-  body: Edizēsamēn emeōuton.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: was a pupil of no one, but he said he inquired of himself and learned everything by himself. though he had been engaged
@@ -82,26 +74,11 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (was a pupil
-      of no one, but he said he inquired of himself and learned everything by himself. though he had…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (was a pupil of
-      no one, but he said he inquired of himself and learned everything by himself. though he had…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: κοινός (koinos)
-    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage (was a pupil of no
-      one, but he said he inquired of himself and learned everything by himself. though he had…), the common Logos: waking
-      rationality is shared; private dream-opinion is not a world -> trap: mere social consensus; koinos here is cosmological
-      shareability, not majority vote'
-  layer_provenance: editorial-enriched
+  - term: Logos (λόγος)
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -128,6 +105,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P080
   source_reference: Patrick (1889), frag. 80; corpus HFR_P080
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 80'
-  iast: transliterated_from_greek

@@ -10,8 +10,13 @@ unit_type: sutra
 sanskrit_devanagari: 'Ἀλλὰ τοῦτο μὲν οὖν θεῖον ὄν, ἔτι θειώτερον ἄνωθεν ἔχει: τὸ δὲ ἄνωθεν τοῦ ψυχικοῦ, αὐτὸς ὁ νοητὸς λόγος
   ἐστιν. (But over this divine, there is still a diviner: the upward neighbour of the soul, its prior and source, is the Intellectual-Principle
   itself.)'
-sanskrit_iast: 'Alla touto men oun theion on, eti theiōteron anōthen echei: to de anōthen tou psychikou, autos ho noētos logos
-  estin.'
+sanskrit_iast: 'N/A, as the key terms are primarily in English. However, some relevant Greek terms include:
+
+  * Νοῦς (Nous) - Intellect or Intelligence
+
+  * Ψυχή (Psychē) - Soul
+
+  * Λόγος (Logos) - Reason or Word'
 translation_literal: As you recognize the Soul's precious and divine nature, you may have faith that you are nearing God through
   its possession. In the strength of this power, strive upwards towards the Divine. The Soul, though great, is still secondary
   to the Intellectual-Principle, which is its source and prior. The Soul's substantial existence and reasoning ability come
@@ -36,7 +41,26 @@ commentary: 'The philosophical claim that the Intellectual-Principle is the sour
   misses: the Soul''s role as an intermediary between the Intellectual-Principle and the material world.
 
   * **Logos (Λόγος)** — from legein (λέγειν), to speak -> Reason or Word, the expression of the Intellectual-Principle ->
-  what default translation misses: the complex and multifaceted nature of the Logos.'
+  what default translation misses: the complex and multifaceted nature of the Logos.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Katha Upanishad, 2.3.9:** The idea of the Soul''s inferiority to a higher principle is echoed in the Katha Upanishad,
+  where the individual self (jiva) is described as being subordinate to the universal Self (Brahman). *Divergence:* While
+  the Katha Upanishad emphasizes the ultimate unity of the individual self with Brahman, Plotinus maintains a distinction
+  between the Soul and the Intellectual-Principle.
+
+  * **Phaedo, 79d-80d:** The concept of the Soul''s immortality and its relationship to the world of Forms is discussed in
+  the Phaedo, where Socrates argues that the Soul exists before birth and will continue to exist after death. *Divergence:*
+  While Plato''s theory of Forms is similar to Plotinus'' concept of the Intellectual-Principle, the Phaedo does not explicitly
+  discuss the relationship between the Soul and the Intellectual-Principle.
+
+  * **Pratyabhijnahrdayam, verse 3:** The idea of the Soul''s connection to a higher principle is echoed in the Pratyabhijnahrdayam,
+  where the individual self (jiva) is described as being connected to the ultimate reality (Shiva). *Divergence:* While the
+  Pratyabhijnahrdayam emphasizes the ultimate unity of the individual self with Shiva, Plotinus maintains a distinction between
+  the Soul and the Intellectual-Principle.'
 insight: The philosophical claim that the Intellectual-Principle is the source of the Soul's divinity is a counterintuitive
   move, as it suggests that the Soul, despite its greatness, is still inferior to a higher principle.
 practice: As you strive to perfect yourself, contemplate the Intellectual-Principle as the source of your Soul's divinity,
@@ -45,24 +69,10 @@ practice: As you strive to perfect yourself, contemplate the Intellectual-Princi
 upaya: ''
 themes:
 - soul
-- consciousness
-- knowledge
-- self
-- awareness
-- meditation
-- transformation
-- recognition
 tags:
-- awareness
-- consciousness
-- knowledge
-- meditation
 - plotinus_enneads
-- recognition
 - root_text
-- self
 - soul
-- transformation
 quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 70
@@ -109,51 +119,26 @@ pratibha_layers:
     translation misses: the Soul''s role as an intermediary between the Intellectual-Principle and the material world.
 
     * **Logos (Λόγος)** — from legein (λέγειν), to speak -> Reason or Word, the expression of the Intellectual-Principle ->
-    what default translation misses: the complex and multifaceted nature of the Logos.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: nous (νοῦς)
-    definition: '‘intellect’ → second hypostasis: self-thinking thought identical with intelligibles Here: However, some relevant
-      Greek terms include: * Νοῦς (Nous) - Intellect or Intelligence * Ψυχή (Psychē) - Soul * Λόγος (Logos) - Reason or Word
-      As you recognize… Trap: IQ / discursive brain-mind (dianoia)'
-    lemma_id: nous
-    sense_id: nous.neoplatonic
-  - term: psychē (ψυχή)
-    definition: '‘soul’ → living knowing that can turn toward Nous or toward body Here: * from psychein (ψύχειν), to breathe
-      -> Soul, the third hypostasis in Neoplatonism -> what default translation misses: the Soul''s role as an intermediary
-      betwe… Trap: ghost in the machine; mere psychology'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: to hen / the One (τὸ ἕν)
-    definition: 'ἕν ‘one’ → source beyond being and intellect; not a countable unit Here: This idea is situated within the
-      Neoplatonic framework, where the Intellectual-Principle is the second hypostasis, emanating from the One. Trap: monotheistic
-      person-God or mathematical oneness'
-    lemma_id: henosis
-    sense_id: henosis.plotinian
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Katha Upanishad, 2.3.9
-    resonance: The idea of the Soul's inferiority to a higher principle is echoed in the Katha Upanishad, where the individual
-      self (jiva) is described as being subordinate to the universal Self (Brahman).
-    divergence: While the Katha Upanishad emphasizes the ultimate unity of the individual self with Brahman, Plotinus maintains
-      a distinction between the Soul and the Intellectual-Principle.
-    passage_id: ''
-  - citation: Phaedo, 79d-80d
-    resonance: The concept of the Soul's immortality and its relationship to the world of Forms is discussed in the Phaedo,
-      where Socrates argues that the Soul exists before birth and will continue to exist after death.
-    divergence: While Plato's theory of Forms is similar to Plotinus' concept of the Intellectual-Principle, the Phaedo does
-      not explicitly discuss the relationship between the Soul and the Intellectual-Principle.
-    passage_id: ''
-  - citation: Pratyabhijnahrdayam, verse 3
-    resonance: The idea of the Soul's connection to a higher principle is echoed in the Pratyabhijnahrdayam, where the individual
-      self (jiva) is described as being connected to the ultimate reality (Shiva).
-    divergence: While the Pratyabhijnahrdayam emphasizes the ultimate unity of the individual self with Shiva, Plotinus maintains
-      a distinction between the Soul and the Intellectual-Principle.
-    passage_id: pratyabhijnahrdayam.phr_003
-  layer_provenance: migrated_from_commentary
+    what default translation misses: the complex and multifaceted nature of the Logos.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Katha Upanishad, 2.3.9:** The idea of the Soul''s inferiority to a higher principle is echoed in the Katha Upanishad,
+    where the individual self (jiva) is described as being subordinate to the universal Self (Brahman). *Divergence:* While
+    the Katha Upanishad emphasizes the ultimate unity of the individual self with Brahman, Plotinus maintains a distinction
+    between the Soul and the Intellectual-Principle.
+
+    * **Phaedo, 79d-80d:** The concept of the Soul''s immortality and its relationship to the world of Forms is discussed
+    in the Phaedo, where Socrates argues that the Soul exists before birth and will continue to exist after death. *Divergence:*
+    While Plato''s theory of Forms is similar to Plotinus'' concept of the Intellectual-Principle, the Phaedo does not explicitly
+    discuss the relationship between the Soul and the Intellectual-Principle.
+
+    * **Pratyabhijnahrdayam, verse 3:** The idea of the Soul''s connection to a higher principle is echoed in the Pratyabhijnahrdayam,
+    where the individual self (jiva) is described as being connected to the ultimate reality (Shiva). *Divergence:* While
+    the Pratyabhijnahrdayam emphasizes the ultimate unity of the individual self with Shiva, Plotinus maintains a distinction
+    between the Soul and the Intellectual-Principle.'
 - kind: practice
   label: Practice (Abhyasa)
   body: As you strive to perfect yourself, contemplate the Intellectual-Principle as the source of your Soul's divinity, and
@@ -231,4 +216,3 @@ provenance:
   section: Ennead V, Tractate 1, Section 3
   original_id: ENN_V_1_03
   source_reference: ''
-translation_provenance: English adapted from Stephen MacKenna & B. S. Page, *The Enneads* (public domain). Study rendering.

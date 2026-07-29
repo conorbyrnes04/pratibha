@@ -5,40 +5,15 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_15
 unit_label: From the collision of mind in the heart, appearances arise like dreams.
-title: Mind's Collision Births the Dreamlike World
+title: From the collision of mind in the heart, appearances arise like dreams.
 unit_type: sutra
 sanskrit_devanagari: हृदये चित्तसंघट्टाद्दृश्यस्वापदर्शनम्
-sanskrit_iast: hṛdaye cittasaṃghaṭṭāddṛśyasvāpadarśanam
+sanskrit_iast: hr̥daye citta-saṅghaṭṭād dr̥śya-svāpa-darśanam
 translation_literal: From the collision of mind in the heart, appearances arise like dreams.
-commentary: 'This verse articulates a cardinal insight of Trika metaphysics: the world is not a static external given but
-  an emergent phenomenon born from the dynamic collision (saṃghāta) of consciousness with itself in the subtle organ of the
-  heart (hṛdaya). The term ''mind'' here denotes not discursive thought but citta—the subtle, reflective capacity of awareness
-  that, when it ''collides'' or encounters its own nature, generates the appearance of multiplicity. The heart functions as
-  the pivot-point where Śiva''s absolute consciousness (paramśiva) and Śakti''s creative power meet and differentiate into
-  subject-object duality. The comparison to dreams is not merely poetic: it establishes the ontological status of phenomenal
-  appearance as neither wholly real nor wholly unreal, but as a dependent, consciousness-dependent manifestation. Just as
-  a dream requires a dreamer yet possesses vivid phenomenological force while dreaming occurs, so too does the cosmos arise
-  from and depend upon the collision of awareness with its own reflective capacity. This teaching has immediate practical
-  consequence: if the world''s apparent solidity and externality stem from this internal collision, the practitioner''s task
-  is not to reject appearances but to recognize their source and thereby penetrate the mechanics of their own consciousness.
-  By investigating the heart-space where this collision occurs—through practices of introspection and subtle perception—the
-  adept learns to witness the arising of experience itself, gradually loosening identification with the dream-content and
-  recognizing the dreamer''s nature as non-dual, self-luminous awareness.
-
-
-  Key Terms
-
-
-  **hṛdaya** — The heart-center; in Trika, the subtle organ where consciousness and creative power meet, generating subject-object
-  differentiation
-
-  **citta** — The reflective, subtle aspect of mind; the capacity of awareness to know itself and thereby generate appearance
-
-  **saṃghāta** — Collision or encounter; the dynamic meeting of consciousness with itself that produces phenomenal manifestation'
+commentary: The heart is the meeting place of awareness and form. When mind stirs there, the world appears — vivid, persuasive,
+  dreamlike.
 insight: The heart is the meeting place of awareness and form.
-practice: Place your hand on your heart and notice one object in your visual field—a wall, a person, a tree—watching how it
-  shifts and sharpens as your attention touches it, then fades slightly when you look away, repeating this three times to
-  sense the dreamlike arising that happens at the collision point between your awareness and what appears.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - awareness
@@ -59,20 +34,6 @@ tags:
 quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
-appendixes: []
-anchor_chapter: ''
-provenance:
-  collection: Siva Sutra
-  section: Śāmbhavopāya
-  original_id: SS_I.15
-  source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: Place your hand on your heart and notice one object in your visual field—a wall, a person, a tree—watching how it
-  shifts and sharpens as your attention touches it, then fades slightly when you look away, repeating this three times to
-  sense the dreamlike arising that happens at the collision point between your awareness and what appears.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
-commentary_provenance: Study commentary authored from the passage.
 pratibha_layers:
 - kind: original
   label: Original
@@ -87,6 +48,9 @@ pratibha_layers:
   label: Pratibha Commentary
   body: The heart is the meeting place of awareness and form. When mind stirs there, the world appears — vivid, persuasive,
     dreamlike.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -94,15 +58,8 @@ pratibha_layers:
     definition: heart, center
   - term: citta
     definition: mind
-    lemma_id: citta
-    sense_id: citta.shaiva
   - term: svapna
     definition: dreamlike appearance
-    lemma_id: svapna
-    sense_id: svapna.shaiva
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -128,3 +85,10 @@ pratibha_layers:
       emphasizes the practitioner's direct penetration to source through sustained subjectivity.
     passage_id: yoga_spandakarika.sp_03
   layer_provenance: generated_grounded
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Siva Sutra
+  section: Śāmbhavopāya
+  original_id: SS_I.15
+  source_reference: ''

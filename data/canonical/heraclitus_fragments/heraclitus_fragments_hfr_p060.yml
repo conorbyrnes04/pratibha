@@ -27,8 +27,8 @@ insight: ''
 practice: When next you use the word 'justice'—in conversation, thought, complaint—stop and trace backward to the specific
   injury, unfairness, or imbalance that made you reach for that word. Name the thing itself before you name the principle.
   Repeat this reversal until the word and the wound are no longer separate.
-sanskrit_devanagari: Δίκης οὔνομα οὐκ ἂν ᾔδεσαν, εἰ ταῦτα μὴ ἦν.
-sanskrit_iast: Dikēs ounoma ouk an ēdesan, ei tauta mē ēn.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heaven
@@ -39,14 +39,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Δίκης οὔνομα οὐκ ἂν ᾔδεσαν, εἰ ταῦτα μὴ ἦν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 60'
-- kind: iast
-  label: IAST
-  body: Dikēs ounoma ouk an ēdesan, ei tauta mē ēn.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: They would not know the name of justice, were it not for these things.”
@@ -63,31 +55,6 @@ pratibha_layers:
     the word. To read this slowly is to notice how often we invoke ''justice'' without having felt the specific wound that
     forced the name into existence. Heraclitus asks: do you know what you are naming?'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (they would
-      not know the name of justice, were it not for these things.”), tensioned unity of opposites — bow and lyre held by counter-pull,
-      not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (they would
-      not know the name of justice, were it not for these things.”), the shared pattern according to which all things occur
-      — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine
-      Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (they would not know the name of justice, were
-      it not for these things.”), cosmic justice that polices measures — the Erinyes as helpers when bounds are overstepped
-      -> trap: courtroom morality alone; here dikē is cosmological proportion, not only human law'
-  - term: πόλεμος (polemos)
-    definition: 'πόλεμος “war, conflict” — strife as generative, not only destructive -> in this passage (they would not know
-      the name of justice, were it not for these things.”), war/strife as father of things: opposition that produces order
-      rather than mere chaos -> trap: glorifying violence, or reading strife as a failure of order instead of its instrument'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When next you use the word 'justice'—in conversation, thought, complaint—stop and trace backward to the specific injury,
@@ -119,6 +86,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P060
   source_reference: Patrick (1889), frag. 60; corpus HFR_P060
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 60'
-  iast: transliterated_from_greek

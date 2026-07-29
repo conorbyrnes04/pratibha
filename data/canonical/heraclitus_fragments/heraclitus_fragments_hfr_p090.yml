@@ -7,8 +7,10 @@ unit_id: heraclitus_fragments.hfr_p090
 unit_label: The Paradox of Identity and Change
 title: The Paradox of Identity and Change
 unit_type: sutra
-sanskrit_devanagari: Ποταμοῖσι τοῖσι αὐτοῖσι ἐμβαίνομέν τε καὶ οὐκ ἐμβαίνομεν, εἶμέν τε καὶ οὐκ εἶμεν.
-sanskrit_iast: Potamoisi toisi autoisi embainomen te kai ouk embainomen, eimen te kai ouk eimen.
+sanskrit_devanagari: 'The key line is based on the Greek script: στοῦ ἑαυτοῦ ποταμοῦ οὔτε ἐμβαίνεις οὔτε μὴ ἐμβαίνεις (stou
+  heautou potamou oute embaineis oute mē embaineis).'
+sanskrit_iast: 'The transliterated Greek with diacritics is: stoû heautoû potamoû oúte embaineis oúte mḗ embaineis. Key terms
+  include ποταμοῦ (potamou, river) and ἐμβαίνεις (embaineis, step into).'
 translation_literal: We step and do not step into the same river. We both exist and do not exist.
 commentary: 'The philosophical claim here is that identity and change are intertwined, making it impossible to pinpoint a
   fixed state. Heraclitus makes the counterintuitive move of asserting that we can both step and not step into the same river,
@@ -63,12 +65,12 @@ editorial_score: 72
 pratibha_layers:
 - kind: original
   label: Original
-  body: Ποταμοῖσι τοῖσι αὐτοῖσι ἐμβαίνομέν τε καὶ οὐκ ἐμβαίνομεν, εἶμέν τε καὶ οὐκ εἶμεν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 81'
+  body: 'The key line is based on the Greek script: στοῦ ἑαυτοῦ ποταμοῦ οὔτε ἐμβαίνεις οὔτε μὴ ἐμβαίνεις (stou heautou potamou
+    oute embaineis oute mē embaineis).'
 - kind: iast
   label: IAST
-  body: Potamoisi toisi autoisi embainomen te kai ouk embainomen, eimen te kai ouk eimen.
-  layer_provenance: transliterated_from_greek
+  body: 'The transliterated Greek with diacritics is: stoû heautoû potamoû oúte embaineis oúte mḗ embaineis. Key terms include
+    ποταμοῦ (potamou, river) and ἐμβαίνεις (embaineis, step into).'
 - kind: translation
   label: Pratibha Translation
   body: We step and do not step into the same river. We both exist and do not exist.
@@ -106,30 +108,6 @@ pratibha_layers:
     * **Plotinus, Enneads, III.7.11:** structural homology: the concept of the "eternal now" resonates with Heraclitus'' idea
     that we both step and do not step into the same river. *Divergence:* Plotinus'' emphasis on the timeless nature of the
     eternal now differs from Heraclitus'' focus on the dynamic, ever-changing nature of reality.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (the Paradox
-      of Identity and Change), the shared pattern according to which all things occur — heard before it is argued -> trap:
-      collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ποταμός (potamos)
-    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage (the Paradox of
-      Identity and Change), flux as identity-in-process: you cannot step twice into the same river because waters renew ->
-      trap: slogan “everything changes” without the logos that measures the flow'
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (the Paradox
-      of Identity and Change), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap:
-      reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (the
-      Paradox of Identity and Change), understanding as holding-together what daily contact already offers — not new information
-      alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: As you walk along a river or engage with any dynamic system, notice the ways in which you are both part of and separate
@@ -146,6 +124,3 @@ provenance:
   section: Fragment 90
   original_id: HFR_P090
   source_reference: Heraclitus, *Fragments* (HFR_P090; DK B49a; Patrick 1889 / Bywater Greek)
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 81'
-  iast: transliterated_from_greek

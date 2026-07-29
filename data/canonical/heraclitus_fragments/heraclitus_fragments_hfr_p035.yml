@@ -31,10 +31,8 @@ practice: 'At the exact moment the light changes—dusk or dawn—stand still an
   speak the color, the temperature, the sound, the quality of the air as a *single thing* rather than as ''day becoming night''
   or ''night becoming day.'' Repeat this threshold-naming for three mornings or three evenings, and notice whether the pairs
   you habitually separate begin to show their common measure.'
-sanskrit_devanagari: Διδάσκαλος δὲ πλείστων Ἡσίοδος· τοῦτον ἐπίστανται πλείστα εἰδέναι, ὅστις ἡμέρην καὶ εὐφρόνην οὐκ ἐγίνωσκε·
-  ἔστι γὰρ ἕν.
-sanskrit_iast: Didaskalos de pleistōn HĒsiodos. touton epistantai pleista eidenai, hostis hēmerēn kai euphronēn ouk eginōske.
-  esti gar hen.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -43,16 +41,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Διδάσκαλος δὲ πλείστων Ἡσίοδος· τοῦτον ἐπίστανται πλείστα εἰδέναι, ὅστις ἡμέρην καὶ εὐφρόνην οὐκ ἐγίνωσκε· ἔστι γὰρ
-    ἕν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 35'
-- kind: iast
-  label: IAST
-  body: Didaskalos de pleistōn HĒsiodos. touton epistantai pleista eidenai, hostis hēmerēn kai euphronēn ouk eginōske. esti
-    gar hen.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge, who indeed did not know
@@ -72,30 +60,6 @@ pratibha_layers:
     a hidden essence but the very intelligibility of their relation, visible to anyone who refuses to treat opposites as fundamentally
     separate.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (hesiod is a teacher of the
-      masses.), the one that all things are: not mystical mush but a single order inside visible difference -> trap: erasing
-      plurality; Heraclitus’s hen keeps tension and exchange inside unity'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (hesiod is
-      a teacher of the masses.), the shared pattern according to which all things occur — heard before it is argued -> trap:
-      collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (hesiod is
-      a teacher of the masses.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement ->
-      trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (hesiod is a teacher of the masses.), cosmic
-      justice that polices measures — the Erinyes as helpers when bounds are overstepped -> trap: courtroom morality alone;
-      here dikē is cosmological proportion, not only human law'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'At the exact moment the light changes—dusk or dawn—stand still and name aloud what you see without the word ''transition'':
@@ -128,6 +92,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P035
   source_reference: Patrick (1889), frag. 35; corpus HFR_P035
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 35'
-  iast: transliterated_from_greek

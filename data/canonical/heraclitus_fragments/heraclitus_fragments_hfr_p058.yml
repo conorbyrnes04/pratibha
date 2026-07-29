@@ -33,12 +33,8 @@ practice: 'When next you feel resistance to a necessary action—fatigue before 
   Name aloud what pulls against what: ''fatigue pulls against purpose'' or ''pride pulls against need.'' Hold that naming
   for three full breaths without trying to resolve it, feeling the tension as a bow-string feels the archer''s draw. Only
   then act.'
-sanskrit_devanagari: καὶ ἀγαθὸν καὶ κακόν (scil. ἕν ἐστι)· οἱ γοῦν ἰατροί, φησὶν ὁ Ἡράκλειτος, τέμνοντες καίοντες πάντη βασανίζοντες
-  κακῶς τοὺς ἀρρωστοῦντας ἐπαιτιῶνται μηδέν' ἄξιον μισθὸν λαμβάνειν παρὰ τῶν ἀρρωστούντων, ταῦτα ἐργαζόμενοι τὰ ἀγαθὰ καὶ
-  τὰς νόσους.
-sanskrit_iast: kai agathon kai kakon (scil. hen esti). ohi goun iatroi, phēsin ho HĒrakleitos, temnontes kaiontes pantē basanizontes
-  kakōs tous arrōstountas epaitiōntai mēden' axion misthon lambanein para tōn arrōstountōn, tauta ergazomenoi ta agatha kai
-  tas nosous.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - commentary_text
@@ -50,18 +46,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: καὶ ἀγαθὸν καὶ κακόν (scil. ἕν ἐστι)· οἱ γοῦν ἰατροί, φησὶν ὁ Ἡράκλειτος, τέμνοντες καίοντες πάντη βασανίζοντες κακῶς
-    τοὺς ἀρρωστοῦντας ἐπαιτιῶνται μηδέν' ἄξιον μισθὸν λαμβάνειν παρὰ τῶν ἀρρωστούντων, ταῦτα ἐργαζόμενοι τὰ ἀγαθὰ καὶ τὰς
-    νόσους.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 58'
-- kind: iast
-  label: IAST
-  body: kai agathon kai kakon (scil. hen esti). ohi goun iatroi, phēsin ho HĒrakleitos, temnontes kaiontes pantē basanizontes
-    kakōs tous arrōstountas epaitiōntai mēden' axion misthon lambanein para tōn arrōstountōn, tauta ergazomenoi ta agatha
-    kai tas nosous.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: evil (scil. are one). The physicians, therefore, says turing the sick, complain that the patients do not pay them
@@ -92,29 +76,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (evil (scil.),
-      tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as
-      conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (evil (scil.),
-      the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing Logos into private
-      doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (evil (scil.),
-      world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static
-      elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (evil
-      (scil.), life and death as reciprocal: one element lives the death of another; hope cannot prefigure what awaits ->
-      trap: afterlife tourism or simple annihilation; the point is structural exchange and limit of anticipation'
-  layer_provenance: editorial-enriched
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -138,6 +103,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P058
   source_reference: Patrick (1889), frag. 58; corpus HFR_P058
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 58'
-  iast: transliterated_from_greek

@@ -5,7 +5,7 @@ work_id: isavasya_upanishad
 work_title: Isavasya Upanishad
 unit_id: isavasya_upanishad.isa_016
 unit_label: Mantra 10
-title: Knowledge and Ignorance Yield Divergent Paths
+title: Mantra 10
 unit_type: sutra
 sanskrit_devanagari: 'अन्यदेवाहुर्विद्ययाऽन्यदाहुरविद्यया ।
 
@@ -13,48 +13,22 @@ sanskrit_devanagari: 'अन्यदेवाहुर्विद्यया�
 sanskrit_iast: 'anyad evahur vidyaya anyad ahur avidyaya |
 
   iti susruma dhiranam ye nas tad vicacaksire || 10 ||'
-translation_literal: They say that knowledge and ignorance lead to different outcomes—knowledge to one result, ignorance to
-  another. This much we have heard from the wise ones, those who have explained this truth to us.
-commentary: 'This verse marks a pivot in the Īśāvāsya''s teaching. After establishing that the Self (Īśa) pervades all and
-  that renunciation and action are reconciled in non-attachment, the text now addresses a common misunderstanding: the belief
-  that knowledge (vidyā) and ignorance (avidyā) are two separate paths yielding opposite destinations.
+translation_literal: Wise teachers say vidya and avidya yield different results.
+commentary: 'The text insists on disciplined differentiation before integration.
 
 
-  The verse does not reject this conventional distinction—it acknowledges it as something "heard from the wise." But the acknowledgment
-  is subtle. By framing it as received teaching (śuśruma), the text creates space for what follows: a deeper non-dual vision
-  that transcends the binary itself.
+  Key Terms:
 
 
-  In Advaita Vedānta, vidyā is not mere intellectual learning but direct recognition of the Self as the sole reality. Avidyā
-  is not mere ignorance but the false identification with the body-mind and the world as separate from the Self. The verse
-  honors this distinction while preparing the reader for the realization that both paths—when traced to their source—reveal
-  the same non-dual ground.
+  **dhira** - steady seers/teachers.
 
 
-  The ethical import is immediate: one cannot dismiss conventional morality or the pursuit of knowledge as meaningless. Yet
-  one must eventually see through the dualism that sustains the distinction itself. The wise (dhīrāṇām) are those who understand
-  both levels: the practical reality of karma and knowledge, and the transcendent unity beneath.
+  Cross-Tradition Resonances:
 
 
-  For the modern seeker, this verse dissolves the false choice between "spiritual" and "worldly" pursuits. It validates the
-  search for understanding while hinting that ultimate freedom lies not in choosing one path over another, but in recognizing
-  the Self that witnesses both.
-
-
-  Key Terms
-
-
-  **vidyā** — Knowledge, specifically the direct recognition of the Self (Ātman) as non-dual reality; not mere information
-  but liberating insight.
-
-  **avidyā** — Ignorance or nescience; the false identification with the body-mind and perception of multiplicity as ultimately
-  real.
-
-  **dhīrāṇām** — Of the wise ones; those of steady intellect who have realized the truth and transmit it to others.'
+  Pedagogical gradation in Upanishadic teaching.'
 insight: The text insists on disciplined differentiation before integration.
-practice: 'Listen to someone speak today about what they know or believe, and as they talk, silently ask: ''Is this the knowledge
-  that leads, or the ignorance that leads?'' Do not answer the question—let it hover without judgment, watching how the distinction
-  dissolves the longer you hold both possibilities at once.'
+practice: List what action addresses and what contemplation addresses in your current life.
 upaya: ''
 themes:
 - action
@@ -67,20 +41,6 @@ tags:
 quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
-appendixes: []
-anchor_chapter: ''
-provenance:
-  collection: Isavasya Upanishad
-  section: teaching_passage
-  original_id: ISA_016
-  source_reference: ''
-translation: They say that knowledge and ignorance lead to different outcomes—knowledge to one result, ignorance to another.
-  This much we have heard from the wise ones, those who have explained this truth to us.
-abhyasa: 'Listen to someone speak today about what they know or believe, and as they talk, silently ask: ''Is this the knowledge
-  that leads, or the ignorance that leads?'' Do not answer the question—let it hover without judgment, watching how the distinction
-  dissolves the longer you hold both possibilities at once.'
-translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a critical edition.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
 - kind: original
   label: Original
@@ -103,18 +63,13 @@ pratibha_layers:
     Key Terms:
 
 
-    **dhira** - steady seers/teachers.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: vidyā / avidyā (विद्या / अविद्या)
-    definition: 'distinct results taught by the wise → not interchangeable → trap: relativism that erases the distinction'
-    lemma_id: vidya
-  - term: dhīra (धीर)
-    definition: 'steady seers → transmitters of the double teaching → trap: mere scholars'
-  - term: anyad (अन्यद्)
-    definition: 'different → fruits diverge → trap: same path under two names'
-  layer_provenance: editorial-enriched
+    **dhira** - steady seers/teachers.
+
+
+    Cross-Tradition Resonances:
+
+
+    Pedagogical gradation in Upanishadic teaching.'
 - kind: practice
   label: Practice (Abhyasa)
   body: List what action addresses and what contemplation addresses in your current life.
@@ -136,3 +91,10 @@ pratibha_layers:
       it in the ontological structure of perception itself (elements, organs, illumination).
     passage_id: patañjali_yoga_sūtras.ys_2_18
   layer_provenance: generated_grounded
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Isavasya Upanishad
+  section: teaching_passage
+  original_id: ISA_016
+  source_reference: ''

@@ -43,12 +43,8 @@ practice: In the next conversation where you find yourself performing agreement 
   or mid-word and name silently what you actually know to be true in that moment—the gap between your outer compliance and
   your inner sense. Do not correct the outer action; simply hold both visible and invisible at once, and notice what fire
   (clarity, discomfort, recognition) that holding produces.
-sanskrit_devanagari: θυσιῶν τοίνυν τίθημι διττὰ εἴδη· τὰ μὲν τῶν ἀποκεκαθαρμένων παντάπασιν ἀνθρώπων, οἷα ἐφ' ἑνὸς ἄν ποτε
-  γένοιτο σπανίως. ὥς φησιν Ἡράκλειτος, ἤ τινων ὀλίγων εὐαριθμήτων ἀνδρῶν· τὰ δ' ἔνυλα καὶ σωματοειδῆ καὶ διὰ μεταβολῆς συνιστάμενα,
-  οἷα τοῖς ἔτι κατεχομένοις ὑπὸ τοῦ σώματος ἁρμόζει
-sanskrit_iast: thusiōn toinun tithēmi ditta eidē. ta men tōn apokekatharmenōn pantapasin anthrōpōn, ohia eph' henos an pote
-  genoito spaniōs. hōs phēsin HĒrakleitos, ē tinōn oligōn euarithmētōn andrōn. ta d' enula kai sōmatoeidē kai dia metabolēs
-  sunistamena, ohia tois eti katechomenois hupo tou sōmatos harmozei
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - commentary_text
@@ -60,18 +56,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: θυσιῶν τοίνυν τίθημι διττὰ εἴδη· τὰ μὲν τῶν ἀποκεκαθαρμένων παντάπασιν ἀνθρώπων, οἷα ἐφ' ἑνὸς ἄν ποτε γένοιτο σπανίως.
-    ὥς φησιν Ἡράκλειτος, ἤ τινων ὀλίγων εὐαριθμήτων ἀνδρῶν· τὰ δ' ἔνυλα καὶ σωματοειδῆ καὶ διὰ μεταβολῆς συνιστάμενα, οἷα
-    τοῖς ἔτι κατεχομένοις ὑπὸ τοῦ σώματος ἁρμόζει
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 128'
-- kind: iast
-  label: IAST
-  body: thusiōn toinun tithēmi ditta eidē. ta men tōn apokekatharmenōn pantapasin anthrōpōn, ohia eph' henos an pote genoito
-    spaniōs. hōs phēsin HĒrakleitos, ē tinōn oligōn euarithmētōn andrōn. ta d' enula kai sōmatoeidē kai dia metabolēs sunistamena,
-    ohia tois eti katechomenois hupo tou sōmatos harmozei
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: guish two kinds of sacrifices. First, those of people wholly purified, such as would rarely happen in the case of
@@ -106,29 +90,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (guish
-      two kinds of sacrifices.), life and death as reciprocal: one element lives the death of another; hope cannot prefigure
-      what awaits -> trap: afterlife tourism or simple annihilation; the point is structural exchange and limit of anticipation'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (guish two
-      kinds of sacrifices.), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
-      Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (guish two kinds of sacrifices.),
-      breath-life as the medium through which waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma
-      to later Stoic technical physics alone, or to mere oxygen'
-    lemma_id: pneuma
-    sense_id: pneuma.stoic
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (guish two
-      kinds of sacrifices.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap:
-      reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  layer_provenance: editorial-enriched
+  - term: pyr / cosmic fire
+    definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation — exchange (πυρὸς τροπαὶ)
+      governed by proportion. Fire names process, not a static element.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -170,6 +135,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P128
   source_reference: Patrick (1889), frag. 128; corpus HFR_P128
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 128'
-  iast: transliterated_from_greek

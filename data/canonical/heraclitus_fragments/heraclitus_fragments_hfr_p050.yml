@@ -28,8 +28,8 @@ practice: While washing dishes or folding cloth, deliberately reverse your usual
   scrub in circles, switch to straight strokes; if you fold left-to-right, fold right-to-left—and notice whether the task
   completes itself through the opposition rather than despite it. Do this for one full session without trying to make sense
   of it, then sit and write what the reversal revealed about necessity.
-sanskrit_devanagari: Γναφέων ὁδὸς εὐθεῖα καὶ σκολιὴ μία ἐστὶ καὶ ἡ αὐτή.
-sanskrit_iast: Gnapheōn hodos eutheia kai skoliē mia esti kai hē autē.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - harmony
@@ -39,14 +39,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Γναφέων ὁδὸς εὐθεῖα καὶ σκολιὴ μία ἐστὶ καὶ ἡ αὐτή.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 50'
-- kind: iast
-  label: IAST
-  body: Gnapheōn hodos eutheia kai skoliē mia esti kai hē autē.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: The straight and crooked way of the woolcarders is one and the same.”
@@ -64,22 +56,6 @@ pratibha_layers:
     demands both. This is the hidden attunement (harmonia) that Heraclitus praises elsewhere—not harmony as smoothness, but
     as the tension that holds.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (the straight
-      and crooked way of the woolcarders is one and the same.”), tensioned unity of opposites — bow and lyre held by counter-pull,
-      not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (the straight
-      and crooked way of the woolcarders is one and the same.”), the shared pattern according to which all things occur —
-      heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: While washing dishes or folding cloth, deliberately reverse your usual hand-motion every third repetition—if you scrub
@@ -113,6 +89,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P050
   source_reference: Patrick (1889), frag. 50; corpus HFR_P050
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 50'
-  iast: transliterated_from_greek

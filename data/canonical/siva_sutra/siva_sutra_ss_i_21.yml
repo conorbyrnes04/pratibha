@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_21
 unit_label: With the rise of pure knowledge, sovereignty over the wheel is fulfilled.
-title: Knowledge Dissolves Division Into Effortless Mastery
+title: With the rise of pure knowledge, sovereignty over the wheel is fulfilled.
 unit_type: sutra
 sanskrit_devanagari: शुद्धविद्योदयाच्चक्रेशत्वसिद्धिः
 sanskrit_iast: śuddha-vidyodayāc cakreśatva-siddhiḥ
@@ -16,9 +16,7 @@ commentary: 'Pure knowledge does not accumulate facts; it dissolves division. Wh
 
   Lordship here is not domination, but effortless participation in the whole.'
 insight: Pure knowledge does not accumulate facts; it dissolves division.
-practice: When you next feel yourself pushing against a situation—a conversation, a task, a resistance in your body—pause
-  and let your exhale be longer than your inhale, three times. With each long exhale, sense the wheel turning without your
-  grip, and notice what moves freely when you stop steering it.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - knowledge
@@ -52,6 +50,9 @@ pratibha_layers:
 
 
     Lordship here is not domination, but effortless participation in the whole.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -59,15 +60,8 @@ pratibha_layers:
     definition: pure, undivided knowledge
   - term: cakra
     definition: wheel, totality of powers
-    lemma_id: cakra
-    sense_id: cakra.shaiva
   - term: siddhi
     definition: fulfillment, completion
-    lemma_id: siddhi
-    sense_id: siddhi.shaiva
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -101,9 +95,3 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.21
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: When you next feel yourself pushing against a situation—a conversation, a task, a resistance in your body—pause and
-  let your exhale be longer than your inhale, three times. With each long exhale, sense the wheel turning without your grip,
-  and notice what moves freely when you stop steering it.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

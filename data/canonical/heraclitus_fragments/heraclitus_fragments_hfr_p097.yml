@@ -27,8 +27,8 @@ practice: In conversation with one person today, listen for the moment when you 
   a word, but felt the gap between what was said and what you grasped. Pause there without rushing to fill it. Notice whether
   the speaker continues, repeats, or waits; notice your own impulse to nod, to agree, to move past. That gap is the child
   hearing the man.
-sanskrit_devanagari: Ἀνὴρ νήπιος ἤκουσε πρὸς δαίμονος ὅκωσπερ παῖς πρὸς ἀνδρός.
-sanskrit_iast: Anēr nēpios ēkouse pros daimonos hokōsper pais pros andros.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -38,14 +38,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἀνὴρ νήπιος ἤκουσε πρὸς δαίμονος ὅκωσπερ παῖς πρὸς ἀνδρός.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 97'
-- kind: iast
-  label: IAST
-  body: Anēr nēpios ēkouse pros daimonos hokōsper pais pros andros.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: The thoughtless man understands the voice of the Deity as little as the child understands the man.”
@@ -62,31 +54,6 @@ pratibha_layers:
     by withholding: it does not tell you what the Deity says, only that you may already be missing it, standing exactly where
     the child stands, ears open but unmatched to what they receive.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (The thoughtless
-      man understands the voice of the Deity as little as the child understands the man.”), the shared pattern according to
-      which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only
-      the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (The thoughtless
-      man understands the voice of the Deity as little as the child understands the man.”), wisdom apart from polymathy: knowing
-      the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation
-      for knowledge'
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (The
-      thoughtless man understands the voice of the Deity as little as the child understands the man.”), understanding as holding-together
-      what daily contact already offers — not new information alone -> trap: IQ or book-learning; synesis fails when familiarity
-      becomes opacity'
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (The thoughtless
-      man understands the voice of the Deity as little as the child understands the man.”), time/age as a child at play: cosmic
-      process without a human craftsman-god -> trap: clock-time only; aiōn here is the age-character of the world-process'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: In conversation with one person today, listen for the moment when you recognize you have not understood—not missed
@@ -122,6 +89,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P097
   source_reference: Patrick (1889), frag. 97; corpus HFR_P097
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 97'
-  iast: transliterated_from_greek

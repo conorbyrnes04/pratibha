@@ -29,8 +29,8 @@ practice: 'Attend to one repeated gesture or sensation you perform without thoug
   of your feet on the floor during a meeting, the exact angle your jaw tightens when concentrating—and for three days, each
   time you notice it, pause and ask: *Is this mine? Am I doing this or is it doing me?* Do not answer. Let the question lodge
   in the act itself.'
-sanskrit_devanagari: ᾯ μάλιστα διηνεκέως ὁμιλέουσι, τούτῳ διαφέρονται.
-sanskrit_iast: HŌ malista diēnekeōs homileousi, toutō diapherontai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
 - commentary_text
@@ -42,14 +42,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: ᾯ μάλιστα διηνεκέως ὁμιλέουσι, τούτῳ διαφέρονται.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 93'
-- kind: iast
-  label: IAST
-  body: HŌ malista diēnekeōs homileousi, toutō diapherontai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: They are at variance with that with which they are in most continual association.
@@ -66,22 +58,6 @@ pratibha_layers:
     life, where the most constant companion—one''s own flesh, one''s own thinking, the air—remains fundamentally strange,
     resistant, unreconciled. To read this is to feel the ground shift beneath what seemed solid.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (they are
-      at variance with that with which they are in most continual association.), tensioned unity of opposites — bow and lyre
-      held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (they are at variance with that
-      with which they are in most continual association.), breath-life as the medium through which waking, sleep, and soul-measure
-      become intelligible -> trap: reducing pneuma to later Stoic technical physics alone, or to mere oxygen'
-    lemma_id: pneuma
-    sense_id: pneuma.stoic
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Attend to one repeated gesture or sensation you perform without thought—the way you grip your coffee cup, the pressure
@@ -115,6 +91,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P093
   source_reference: Patrick (1889), frag. 93; corpus HFR_P093
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 93'
-  iast: transliterated_from_greek

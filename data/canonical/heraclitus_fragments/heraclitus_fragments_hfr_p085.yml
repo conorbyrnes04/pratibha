@@ -28,8 +28,8 @@ practice: 'When you urinate or defecate, pause before flushing and observe witho
   still part of the continuous work of staying alive. Notice the instinct to erase it, to call it waste. Then sit with a photograph
   or memory of someone recently dead—their stillness, the absolute halt. Let the contrast teach: the body that still produces,
   still transforms, still stinks with life is closer to the fire than any monument.'
-sanskrit_devanagari: Νέκυες κοπρίων ἐκβλητότεροι.
-sanskrit_iast: Nekues kopriōn ekblētoteroi.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -39,14 +39,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Νέκυες κοπρίων ἐκβλητότεροι.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 85'
-- kind: iast
-  label: IAST
-  body: Nekues kopriōn ekblētoteroi.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Corpses are more worthless than excrement.
@@ -64,32 +56,6 @@ pratibha_layers:
     your own living body''s constant shedding, sweating, digesting—its refusal to be clean or finished—is what keeps you in
     the game.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (corpses are more
-      worthless than excrement.), world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap:
-      treating fire as a static elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (corpses
-      are more worthless than excrement.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement
-      -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (corpses are
-      more worthless than excrement.), the shared pattern according to which all things occur — heard before it is argued
-      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (corpses
-      are more worthless than excrement.), understanding as holding-together what daily contact already offers — not new information
-      alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you urinate or defecate, pause before flushing and observe without averting: this is still you, still warm,
@@ -123,6 +89,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P085
   source_reference: Patrick (1889), frag. 85; corpus HFR_P085
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 85'
-  iast: transliterated_from_greek

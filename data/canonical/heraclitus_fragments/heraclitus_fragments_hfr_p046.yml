@@ -38,12 +38,8 @@ practice: 'Locate a repeated friction in your body—jaw clench, shoulder hunch,
   real (not one as the problem and one as the solution). Tense the pattern slightly tighter, feeling how the opposition itself
   creates the form, then release. Repeat this three times, each time noticing whether the friction, when consciously held
   as a *bow*, reveals a function rather than a flaw.'
-sanskrit_devanagari: καὶ περὶ αὐτῶν τούτων ἀνώτερον ἐπιζητοῦσι καὶ φυσικώτερον· Εὐριπίδης μὲν φάσκων ἐρᾶν μὲν ὄμβρου γαῖαν
-  ξηρανθεῖσαν, ἐρᾶν δὲ σεμνὸν οὐρανὸν πληρούμενον ὄμβρου πεσεῖν ἐς γαῖαν· καὶ Ἡράκλειτος τὸ ἀντίξουν συμφέρον, καὶ ἐκ τῶν
-  διαφερόντων καλλίστην ἁρμονίαν, καὶ πάντα κατ' ἔριν γίνεσθαι
-sanskrit_iast: kai peri autōn toutōn anōteron epizētousi kai phusikōteron. Euripidēs men phaskōn eran men ombrou gaian xērantheisan,
-  eran de semnon ouranon plēroumenon ombrou pesein es gaian. kai HĒrakleitos to antixoun sumpheron, kai ek tōn diapherontōn
-  kallistēn harmonian, kai panta kat' erin ginesthai
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
 - commentary_text
@@ -55,18 +51,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: καὶ περὶ αὐτῶν τούτων ἀνώτερον ἐπιζητοῦσι καὶ φυσικώτερον· Εὐριπίδης μὲν φάσκων ἐρᾶν μὲν ὄμβρου γαῖαν ξηρανθεῖσαν,
-    ἐρᾶν δὲ σεμνὸν οὐρανὸν πληρούμενον ὄμβρου πεσεῖν ἐς γαῖαν· καὶ Ἡράκλειτος τὸ ἀντίξουν συμφέρον, καὶ ἐκ τῶν διαφερόντων
-    καλλίστην ἁρμονίαν, καὶ πάντα κατ' ἔριν γίνεσθαι
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 46'
-- kind: iast
-  label: IAST
-  body: kai peri autōn toutōn anōteron epizētousi kai phusikōteron. Euripidēs men phaskōn eran men ombrou gaian xērantheisan,
-    eran de semnon ouranon plēroumenon ombrou pesein es gaian. kai HĒrakleitos to antixoun sumpheron, kai ek tōn diapherontōn
-    kallistēn harmonian, kai panta kat' erin ginesthai
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: reference to these things, some seek for deeper principles and more in accordance with nature. Euripides says, ‘“‘
@@ -99,33 +83,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (reference
-      to these things, some seek for deeper principles and more in accordance with nature. Euripides sa…), tensioned unity
-      of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (reference
-      to these things, some seek for deeper principles and more in accordance with nature. Euripides sa…), nature that loves
-      to hide — the self-showing of things that also resists crude disclosure -> trap: equating physis with “the outdoors”
-      or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (reference to these things, some
-      seek for deeper principles and more in accordance with nature. Euripides sa…), breath-life as the medium through which
-      waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics alone,
-      or to mere oxygen'
-    lemma_id: pneuma
-    sense_id: pneuma.stoic
-  - term: πόλεμος (polemos)
-    definition: 'πόλεμος “war, conflict” — strife as generative, not only destructive -> in this passage (reference to these
-      things, some seek for deeper principles and more in accordance with nature. Euripides sa…), war/strife as father of
-      things: opposition that produces order rather than mere chaos -> trap: glorifying violence, or reading strife as a failure
-      of order instead of its instrument'
-  layer_provenance: editorial-enriched
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -135,7 +96,7 @@ pratibha_layers:
       opposition instruments cosmic order.
     divergence: Heraclitus treats opposition as the eternal dynamic principle itself, while the Bhagavad Gita presents the
       gunas as conditional modalities that can be transcended through discriminative knowledge.
-    passage_id: bhagavad_gita.bg_md_011
+    passage_id: bhagavad_gita.bg_15_01
   - citation: Yoga Spandakarika — First Flow
     resonance: Both dissolve apparent dualities (pleasure/suffering, subject/object for Spandakarika; opposing forces for
       Heraclitus) into a unified ground or principle—consciousness/logos—where opposition ceases to be contradictory and becomes
@@ -157,6 +118,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P046
   source_reference: Patrick (1889), frag. 46; corpus HFR_P046
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 46'
-  iast: transliterated_from_greek

@@ -5,7 +5,7 @@ work_id: isavasya_upanishad
 work_title: Isavasya Upanishad
 unit_id: isavasya_upanishad.isa_008
 unit_label: Mantra 2
-title: Action Binds Only Through Attachment
+title: Mantra 2
 unit_type: sutra
 sanskrit_devanagari: 'कुर्वन्नेवेह कर्माणि जिजीविषेच्छतं समाः ।
 
@@ -13,45 +13,22 @@ sanskrit_devanagari: 'कुर्वन्नेवेह कर्माणि
 sanskrit_iast: 'kurvanneveha karmani jijivisec chatam samah |
 
   evam tvayi nanyatheto''sti na karma lipyate nare || 2 ||'
-translation_literal: Performing actions here, one may wish to live a hundred years. In this way—through you, there is no other
-  path—action does not cling to a human being.
-commentary: 'This verse presents the paradox at the heart of non-dual action: engagement in the world need not bind the self.
-  The opening phrase ''kurvan neveha karmani'' (performing actions here) establishes that renunciation is not withdrawal from
-  activity but transformation of consciousness during activity. The wish to live a hundred years is not mere longevity but
-  a symbol of full, unbroken participation in life without fear or haste.
+translation_literal: Living fully through action, one may wish to live a hundred years; only this way action does not bind.
+commentary: 'The text does not reject karma; it purifies agency through non-attachment.
 
 
-  The critical turn comes with ''evam tvayi''—''in this way, through you.'' The pronoun ''tvayi'' (in/through you) points
-  to the unchanging witness-consciousness that remains untouched by action. This is the Īśā''s central teaching: the Self
-  (ātman) pervades all action as the eternal ground, yet remains unbound by it. Action ''lipyate'' (clings, adheres, stains)
-  only when the doer identifies with the ego-sense of agency—the false ''I'' that claims ownership of results.
+  Key Terms:
 
 
-  The phrase ''nanyatheto''sti'' (there is no other way than this) underscores that this is not one option among many but
-  the only coherent vision. When you recognize yourself as the unchanging presence in which all action unfolds—neither the
-  actor nor the acted-upon—karma loses its binding power. The human being (''nare'') who lives from this recognition may engage
-  fully in the world, yet remains inwardly free.
+  **karma lipyate** - action sticking/binding.
 
 
-  This verse dissolves the false choice between action and liberation. It invites the reader to perform duties, pursue legitimate
-  aims, even desire longevity—but to do so from the ground of non-identification with the separate doer. The result: action
-  becomes a play of consciousness rather than a chain of bondage.
+  Cross-Tradition Resonances:
 
 
-  Key Terms
-
-
-  **karma** — Action and its binding consequences; here, the mechanism by which action binds only through identification with
-  agency
-
-  **lipyate** — Clings, adheres, stains; the verb expressing how karma attaches to the sense of separate doership
-
-  **tvayi** — In/through you; the unchanging Self-consciousness that pervades and witnesses all action without being bound
-  by it'
+  Nishkama karma framework.'
 insight: The text does not reject karma; it purifies agency through non-attachment.
-practice: During your next routine action—eating, working, speaking—hold the phrase 'through me, not by me' silently as a
-  steady undercurrent beneath the activity, neither pushing nor grasping, until the action completes itself and you notice
-  whether the sense of 'doer' has loosened even slightly.
+practice: 'Before acting, set intention: "I offer this action; I do not own its fruits."'
 upaya: ''
 themes:
 - action
@@ -68,20 +45,6 @@ tags:
 quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
-appendixes: []
-anchor_chapter: ''
-provenance:
-  collection: Isavasya Upanishad
-  section: teaching_passage
-  original_id: ISA_008
-  source_reference: ''
-translation: Performing actions here, one may wish to live a hundred years. In this way—through you, there is no other path—action
-  does not cling to a human being.
-abhyasa: During your next routine action—eating, working, speaking—hold the phrase 'through me, not by me' silently as a steady
-  undercurrent beneath the activity, neither pushing nor grasping, until the action completes itself and you notice whether
-  the sense of 'doer' has loosened even slightly.
-translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a critical edition.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
 - kind: original
   label: Original
@@ -104,19 +67,13 @@ pratibha_layers:
     Key Terms:
 
 
-    **karma lipyate** - action sticking/binding.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: kurvanneveha karmāṇi (कुर्वन्नेवेह कर्माणि)
-    definition: 'only by doing actions here → full life of action as the non-binding path → trap: quietism'
-    lemma_id: karma
-    sense_id: karma.indic
-  - term: na karma lipyate (न कर्म लिप्यते)
-    definition: 'action does not smear/stick → binding is attachment-mode, not action itself → trap: karma as inevitable stain'
-  - term: jijīviṣet (जिजीविषेत्)
-    definition: 'may one wish to live → affirmation of a hundred years of engaged life → trap: life-denying holiness'
-  layer_provenance: editorial-enriched
+    **karma lipyate** - action sticking/binding.
+
+
+    Cross-Tradition Resonances:
+
+
+    Nishkama karma framework.'
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Before acting, set intention: "I offer this action; I do not own its fruits."'
@@ -129,7 +86,7 @@ pratibha_layers:
       move is purification of agency, not its abandonment.
     divergence: The Isavasya emphasizes temporal endurance ('hundred years') as the field for this purified action, while
       the Gita frames it as a metaphysical reorientation to the gunas and duty (dharma).
-    passage_id: bhagavad_gita.bg_md_005
+    passage_id: bhagavad_gita.bg_05_01_03
   - citation: Astavakra Gita — Verse 1.8
     resonance: 'Both texts identify a false identification—with doership in the Astavakra, with attachment to action''s binding
       in the Isavasya—and prescribe a cognitive shift (drinking the nectar of ''I am not the doer'' vs. acting without binding)
@@ -138,3 +95,10 @@ pratibha_layers:
       to action's fruits, making the latter more concerned with karma's mechanics than ontological delusion.
     passage_id: astavakra_gita.asg_1_8
   layer_provenance: generated_grounded
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Isavasya Upanishad
+  section: teaching_passage
+  original_id: ISA_008
+  source_reference: ''

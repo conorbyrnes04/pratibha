@@ -7,8 +7,10 @@ unit_id: heraclitus_fragments.hfr_p041
 unit_label: Impermanence of All Things
 title: Impermanence of All Things
 unit_type: sutra
-sanskrit_devanagari: Ποταμοῖσι δὶς τοῖσι αὐτοῖσι οὐκ ἂν ἐμβαίης· ἕτερα γὰρ ἐπιρρέει ὕδατα.
-sanskrit_iast: Potamoisi dis toisi autoisi ouk an embaiēs. hetera gar epirreei hudata.
+sanskrit_devanagari: 'The key line in Greek script is: ποταμοῦ τοῦ αὐτοῦ οὐκ ἄν ποτε ἐμβῇς δὶς, ἀλλ’ ἕτερα καὶ ἕτερα ὕδατα
+  ἐπιρρεῖ.'
+sanskrit_iast: 'The transliterated Greek with diacritics is: potamoû tou autou ouk an pote embēs dis, all’ hetera kai hetera
+  húdata epirreî. Key terms include ποταμοῦ (potamoû, river) and ὕδατα (húdata, waters).'
 translation_literal: You cannot step into the same river twice, because other and still other waters are constantly flowing.
   For those who step into the same rivers, different waters flow each time.
 commentary: 'The philosophical claim that all things are in a state of constant flux is a fundamental concept in Heraclitus''
@@ -67,12 +69,11 @@ editorial_score: 72
 pratibha_layers:
 - kind: original
   label: Original
-  body: Ποταμοῖσι δὶς τοῖσι αὐτοῖσι οὐκ ἂν ἐμβαίης· ἕτερα γὰρ ἐπιρρέει ὕδατα.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 41'
+  body: 'The key line in Greek script is: ποταμοῦ τοῦ αὐτοῦ οὐκ ἄν ποτε ἐμβῇς δὶς, ἀλλ’ ἕτερα καὶ ἕτερα ὕδατα ἐπιρρεῖ.'
 - kind: iast
   label: IAST
-  body: Potamoisi dis toisi autoisi ouk an embaiēs. hetera gar epirreei hudata.
-  layer_provenance: transliterated_from_greek
+  body: 'The transliterated Greek with diacritics is: potamoû tou autou ouk an pote embēs dis, all’ hetera kai hetera húdata
+    epirreî. Key terms include ποταμοῦ (potamoû, river) and ὕδατα (húdata, waters).'
 - kind: translation
   label: Pratibha Translation
   body: You cannot step into the same river twice, because other and still other waters are constantly flowing. For those
@@ -117,30 +118,6 @@ pratibha_layers:
     * **Dōgen Shōbōgenzō, Genjōkōan:** structural homology can be seen in the concept of the impermanence of all things, as
     expressed in the Zen idea of the fleeting nature of reality. *Divergence:* while Heraclitus emphasizes the constant flux,
     Dōgen emphasizes the importance of awakening to the present moment.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ποταμός (potamos)
-    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage (impermanence of
-      All Things), flux as identity-in-process: you cannot step twice into the same river because waters renew -> trap: slogan
-      “everything changes” without the logos that measures the flow'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (impermanence
-      of All Things), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
-      Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (impermanence
-      of All Things), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading
-      “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (impermanence
-      of All Things), understanding as holding-together what daily contact already offers — not new information alone -> trap:
-      IQ or book-learning; synesis fails when familiarity becomes opacity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Observe the flow of your breath, noticing how each inhale and exhale is unique and never repeated, and reflect on
@@ -159,6 +136,3 @@ provenance:
   section: Fragment 41
   original_id: HFR_P041
   source_reference: Heraclitus, *Fragments* (HFR_P041; DK B12; Patrick 1889 / Bywater Greek)
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 41'
-  iast: transliterated_from_greek

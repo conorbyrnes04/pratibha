@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_ii_5
 unit_label: Disciplines arise from established knowledge.
-title: Understanding Flowers Into Natural Discipline
+title: Disciplines arise from established knowledge.
 unit_type: sutra
 sanskrit_devanagari: विद्यासनातन्त्राणि
 sanskrit_iast: vidyāsanā-tantrāṇi
@@ -17,9 +17,7 @@ commentary: 'Once knowledge has become embodied, it naturally expresses itself a
   These disciplines are not rigid systems. They are responsive forms shaped by clarity. When knowledge is partial, discipline
   becomes compulsive. When knowledge is stable, discipline becomes fluid.'
 insight: Once knowledge has become embodied, it naturally expresses itself as discipline.
-practice: Notice one action you perform today—how you hold a cup, respond to a question, walk across a room—and pause mid-motion
-  to feel whether it arises from habit or from something you actually know. Repeat this noticing three times through the day
-  until you sense the difference in your body.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - knowledge
@@ -56,20 +54,18 @@ pratibha_layers:
 
     These disciplines are not rigid systems. They are responsive forms shaped by clarity. When knowledge is partial, discipline
     becomes compulsive. When knowledge is stable, discipline becomes fluid.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
   - term: vidyā
     definition: embodied knowing
-    lemma_id: vidya
-    sense_id: vidya.shaiva
   - term: āsana
     definition: stable abiding, posture
   - term: tantra
     definition: method, woven continuity
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -102,9 +98,3 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.5
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: Notice one action you perform today—how you hold a cup, respond to a question, walk across a room—and pause mid-motion
-  to feel whether it arises from habit or from something you actually know. Repeat this noticing three times through the day
-  until you sense the difference in your body.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

@@ -32,8 +32,8 @@ practice: 'Pour salt water into a cup and fresh water into another. Drink neithe
   in sequence—not tasting fully but registering the salt''s sting and the fresh''s neutrality as they sit on the surface.
   Then ask: which is the water? Hold the question without answering, letting the sameness and difference occupy the same moment
   of attention.'
-sanskrit_devanagari: Ἀρηιφάτους θεοὶ τιμῶσι καὶ ἄνθρωποι.
-sanskrit_iast: Arēiphatous theoi timōsi kai anthrōpoi.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -43,14 +43,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἀρηιφάτους θεοὶ τιμῶσι καὶ ἄνθρωποι.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 102'
-- kind: iast
-  label: IAST
-  body: Arēiphatous theoi timōsi kai anthrōpoi.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: fresh, he (Heraclitus) says, are one and the same. And drinkable and undrinkable are one and the same. ‘‘Sea water,’’
@@ -70,32 +62,6 @@ pratibha_layers:
     through the body''s particular nature, through what can and cannot drink. The fragment teaches that unity and multiplicity
     are not problems to solve but the very structure of how meaning moves through the world.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (fresh, he
-      (Heraclitus) says, are one and the same.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland
-      agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (fresh, he (Heraclitus) says,
-      are one and the same.), the one that all things are: not mystical mush but a single order inside visible difference
-      -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange inside unity'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (fresh, he
-      (Heraclitus) says, are one and the same.), the shared pattern according to which all things occur — heard before it
-      is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (fresh,
-      he (Heraclitus) says, are one and the same.), nature that loves to hide — the self-showing of things that also resists
-      crude disclosure -> trap: equating physis with “the outdoors” or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Pour salt water into a cup and fresh water into another. Drink neither yet. Place your tongue at the rim of each
@@ -128,6 +94,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P102
   source_reference: Patrick (1889), frag. 102; corpus HFR_P102
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 102'
-  iast: transliterated_from_greek

@@ -30,8 +30,8 @@ practice: 'Drink water from three different sources—tap, rain-collected, seawa
   After each, notice not whether it tastes good or bad, but what in your own body is responding: your thirst, your habit,
   your chemistry, your memory of what water should be. Write one sentence for each about what made it drinkable or undrinkable,
   naming only the meeting point between the water and you.'
-sanskrit_devanagari: θάλασσα ὕδωρ καθαρώτατον καὶ μιαρώτατον, ἰχθύσι μὲν πότιμον καὶ σωτήριον, ἀνθρώποις δὲ ἄποτον καὶ ὀλέθριον.
-sanskrit_iast: thalassa hudōr katharōtaton kai miarōtaton, ichthusi men potimon kai sōtērion, anthrōpois de apoton kai olethrion.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -39,14 +39,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: θάλασσα ὕδωρ καθαρώτατον καὶ μιαρώτατον, ἰχθύσι μὲν πότιμον καὶ σωτήριον, ἀνθρώποις δὲ ἄποτον καὶ ὀλέθριον.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 52'
-- kind: iast
-  label: IAST
-  body: thalassa hudōr katharōtaton kai miarōtaton, ichthusi men potimon kai sōtērion, anthrōpois de apoton kai olethrion.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Sea water is very pure and very foul, for, while to fishes it is drinkable and healthful, to people it is hurtful
@@ -66,33 +58,6 @@ pratibha_layers:
     is to speak in a void. Wisdom lies in seeing the sea as it is—neither pure nor foul, but a medium that *becomes* one or
     the other only in the encounter.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (Sea water
-      is very pure and very foul, for, while to fishes it is drinkable and healthful, to people it is h…), tensioned unity
-      of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (Sea water
-      is very pure and very foul, for, while to fishes it is drinkable and healthful, to people it is h…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (Sea water is very pure and very foul, for,
-      while to fishes it is drinkable and healthful, to people it is h…), cosmic justice that polices measures — the Erinyes
-      as helpers when bounds are overstepped -> trap: courtroom morality alone; here dikē is cosmological proportion, not
-      only human law'
-  - term: νόμος (nomos)
-    definition: 'νόμος “law, custom, allotted order” -> in this passage (Sea water is very pure and very foul, for, while
-      to fishes it is drinkable and healthful, to people it is h…), civic/cosmic law worth defending as walls are — shared
-      order that makes a people -> trap: arbitrary statute; Heraclitus binds nomos to divine/common measure'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Drink water from three different sources—tap, rain-collected, seawater if accessible—without judgment beforehand.
@@ -132,6 +97,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P052
   source_reference: Patrick (1889), frag. 52; corpus HFR_P052
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 52'
-  iast: transliterated_from_greek

@@ -31,8 +31,8 @@ practice: While pouring tea or water, watch the stream without naming it—follo
   and where it begins to scatter on impact, noticing the threshold where motion alone determines whether the mixture holds
   or breaks apart; repeat this three times over three days, each time starting the pour at a different height, and mark in
   a single word what changes in your seeing when you vary only the speed and distance.
-sanskrit_devanagari: Καὶ ὁ κυκεὼν διίσταται μὴ κινεόμενος.
-sanskrit_iast: Kai ho kukeōn diistatai mē kineomenos.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -44,14 +44,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Καὶ ὁ κυκεὼν διίσταται μὴ κινεόμενος.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 84'
-- kind: iast
-  label: IAST
-  body: Kai ho kukeōn diistatai mē kineomenos.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: A mixture separates when not kept in motion.
@@ -70,32 +62,6 @@ pratibha_layers:
     it as doctrine and recognizing it in the body: the moment you stop actively holding your attention, your sense of wholeness
     dissolves.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (a mixture
-      separates when not kept in motion.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement
-      -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (a mixture
-      separates when not kept in motion.), understanding as holding-together what daily contact already offers — not new information
-      alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (a mixture
-      separates when not kept in motion.), the shared pattern according to which all things occur — heard before it is argued
-      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (a mixture separates
-      when not kept in motion.), the soul whose depth, dryness, or rudeness decides whether senses can witness truly -> trap:
-      modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: While pouring tea or water, watch the stream without naming it—follow the exact boundary where liquid stays coherent
@@ -130,6 +96,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P072
   source_reference: Patrick (1889), frag. 72; corpus HFR_P072
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 84'
-  iast: transliterated_from_greek

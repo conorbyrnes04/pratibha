@@ -29,8 +29,8 @@ insight: ''
 practice: 'In the middle of your next conversation, stop mid-sentence and notice: what am I hearing right now—the words, or
   the silence between them? Then speak your next sentence as though you are listening to it emerge, not retrieving it from
   storage. Do this three times in one exchange without announcing it.'
-sanskrit_devanagari: Ἀκοῦσαι οὐκ ἐπιστάμενοι οὐδ' εἰπεῖν.
-sanskrit_iast: Akousai ouk epistamenoi oud' eipein.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -41,14 +41,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Ἀκοῦσαι οὐκ ἐπιστάμενοι οὐδ' εἰπεῖν.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 6'
-- kind: iast
-  label: IAST
-  body: Akousai ouk epistamenoi oud' eipein.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: They understand neither how to hear nor how to speak.
@@ -67,30 +59,6 @@ pratibha_layers:
     is not a judgment but a description of a specific failure: the failure to recognize that understanding requires a doubled
     attention, an inward listening that shapes outward utterance.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (they understand
-      neither how to hear nor how to speak.), the shared pattern according to which all things occur — heard before it is
-      argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (they
-      understand neither how to hear nor how to speak.), understanding as holding-together what daily contact already offers
-      — not new information alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (they understand
-      neither how to hear nor how to speak.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland
-      agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (they understand
-      neither how to hear nor how to speak.), wisdom apart from polymathy: knowing the one intelligent will that steers all
-      things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'In the middle of your next conversation, stop mid-sentence and notice: what am I hearing right now—the words, or
@@ -129,6 +97,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P006
   source_reference: Patrick (1889), frag. 6; corpus HFR_P006
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 6'
-  iast: transliterated_from_greek

@@ -7,8 +7,12 @@ unit_id: heraclitus_fragments.hfr_p066
 unit_label: The Paradox of Life and Death
 title: The Paradox of Life and Death
 unit_type: sutra
-sanskrit_devanagari: Τοῦ βιοῦ οὔνομα βίος, ἔργον δὲ θάνατος.
-sanskrit_iast: Tou biou ounoma bios, ergon de thanatos.
+sanskrit_devanagari: 'Greek script for the key line: τὸξόν τοξον ὀνόματι βίος, ἔργον δὲ θάνατος
+
+  Source-language basis: Bywater Greek'
+sanskrit_iast: 'tóxon toxon onómati bíos, érgon dè thánatos
+
+  Key terms in Greek letters with transliteration: βίος (bíos) - life, θάνατος (thánatos) - death'
 translation_literal: The bow's name is life, yet its function is death.
 commentary: 'Heraclitus makes the counterintuitive move of associating life with an instrument of death, the bow, highlighting
   the inherent paradox of existence. In the pre-Socratic context, this fragment challenges the conventional understanding
@@ -70,12 +74,14 @@ editorial_score: 72
 pratibha_layers:
 - kind: original
   label: Original
-  body: Τοῦ βιοῦ οὔνομα βίος, ἔργον δὲ θάνατος.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 66'
+  body: 'Greek script for the key line: τὸξόν τοξον ὀνόματι βίος, ἔργον δὲ θάνατος
+
+    Source-language basis: Bywater Greek'
 - kind: iast
   label: IAST
-  body: Tou biou ounoma bios, ergon de thanatos.
-  layer_provenance: transliterated_from_greek
+  body: 'tóxon toxon onómati bíos, érgon dè thánatos
+
+    Key terms in Greek letters with transliteration: βίος (bíos) - life, θάνατος (thánatos) - death'
 - kind: translation
   label: Pratibha Translation
   body: The bow's name is life, yet its function is death.
@@ -122,30 +128,6 @@ pratibha_layers:
     as the idea that the ultimate reality transcends binary oppositions. *Divergence:* while the Chandogya Upanishad explores
     the nature of the self and the ultimate reality, Heraclitus'' fragment focuses on the paradoxical relationship between
     life and death.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (the Paradox
-      of Life and Death), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading
-      “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (the Paradox
-      of Life and Death), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
-      Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (the
-      Paradox of Life and Death), life and death as reciprocal: one element lives the death of another; hope cannot prefigure
-      what awaits -> trap: afterlife tourism or simple annihilation; the point is structural exchange and limit of anticipation'
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (the
-      Paradox of Life and Death), understanding as holding-together what daily contact already offers — not new information
-      alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Contemplate the bow as a symbol of the paradoxical relationship between life and death, and ask yourself: how can
@@ -163,6 +145,3 @@ provenance:
   section: Fragment 66
   original_id: HFR_P066
   source_reference: Heraclitus, *Fragments* (HFR_P066; DK B48; Patrick 1889 / Bywater Greek)
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 66'
-  iast: transliterated_from_greek

@@ -41,8 +41,8 @@ commentary: 'Heraclitus compresses an entire epistemology into five words. *Phý
 insight: ''
 practice: Choose one natural process today — a plant, a flame, your own breath. Ask not what it is but how it hides its own
   working. Watch for the moment concealment itself becomes visible as a mode of showing.
-sanskrit_devanagari: Φύσις κρύπτεσθαι φιλεῖ
-sanskrit_iast: PHusis kruptesthai philei
+sanskrit_devanagari: ''
+sanskrit_iast: phýsis krýptesthai phileî (φύσις κρύπτεσθαι φιλεῖ)
 tags:
 - breath
 - commentary_text
@@ -54,14 +54,9 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Φύσις κρύπτεσθαι φιλεῖ
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 10'
 - kind: iast
   label: IAST
-  body: PHusis kruptesthai philei
-  layer_provenance: transliterated_from_greek
+  body: phýsis krýptesthai phileî (φύσις κρύπτεσθαι φιλεῖ)
 - kind: translation
   label: Pratibha Translation
   body: Nature loves to conceal herself.
@@ -90,32 +85,6 @@ pratibha_layers:
 
     - Wittgenstein, Tractatus 6.44: "Not how the world is, is the mystical, but that it is" — the hiddenness of being as such,
     not as puzzle to solve.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (nature
-      Loves to Hide), nature that loves to hide — the self-showing of things that also resists crude disclosure -> trap: equating
-      physis with “the outdoors” or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (nature Loves
-      to Hide), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing Logos
-      into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (nature
-      Loves to Hide), wisdom apart from polymathy: knowing the one intelligent will that steers all things -> trap: equating
-      wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (nature Loves
-      to Hide), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony”
-      as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one natural process today — a plant, a flame, your own breath. Ask not what it is but how it hides its own
@@ -127,6 +96,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P010
   source_reference: Patrick (1889), frag. 10 (B10); Greek φύσις κρύπτεσθαι φιλεῖ
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 10'
-  iast: transliterated_from_greek

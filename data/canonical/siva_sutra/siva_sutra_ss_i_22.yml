@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_22
 unit_label: By entering the great depth, the power of mantra is directly known.
-title: Mantra Potency Emerges From Conscious Depth
+title: By entering the great depth, the power of mantra is directly known.
 unit_type: sutra
 sanskrit_devanagari: महाह्रदानुसन्धानान्मन्त्रवीर्यानुभवः
 sanskrit_iast: mahā-hradānusandhānān mantra-vīryānubhavaḥ
@@ -17,9 +17,7 @@ commentary: 'The chapter closes by returning to depth rather than ascent. The gr
   What is known here cannot be taught. It is tasted. With this, Śāmbhavopāya completes its arc: from identity, through manifestation,
   back into immeasurable depth.'
 insight: The chapter closes by returning to depth rather than ascent.
-practice: Descend into silence until sound itself becomes unnecessary—let your awareness sink beneath thought, breath, and
-  sensation into the still lake where mantra lives as pure potency, not as words you speak but as the vibration you already
-  are.
+practice: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 upaya: ''
 themes:
 - attention
@@ -62,6 +60,9 @@ pratibha_layers:
 
     What is known here cannot be taught. It is tasted. With this, Śāmbhavopāya completes its arc: from identity, through manifestation,
     back into immeasurable depth.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 - kind: key_terms
   label: Key Terms
   items:
@@ -69,13 +70,8 @@ pratibha_layers:
     definition: the great lake, depth of consciousness
   - term: anusandhāna
     definition: sustained entering, deep investigation
-    lemma_id: anusandhana
-    sense_id: anusandhana.shaiva
   - term: mantra-vīrya
     definition: the living power of mantra
-- kind: practice
-  label: Practice (Abhyasa)
-  body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -108,9 +104,3 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.22
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: Descend into silence until sound itself becomes unnecessary—let your awareness sink beneath thought, breath, and
-  sensation into the still lake where mantra lives as pure potency, not as words you speak but as the vibration you already
-  are.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

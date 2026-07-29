@@ -30,8 +30,8 @@ practice: 'When you hear yourself say ''that makes no sense'' or feel the impuls
   and ask: what exactly am I not perceiving? Name one concrete detail of the thing you rejected—its texture, its sound, its
   motion—without judgment, as though describing it to someone who has never encountered it. Repeat this naming three times,
   each time slower.'
-sanskrit_devanagari: Κύνες καὶ βαΰζουσι ὃν ἂν μὴ γινώσκωσι.
-sanskrit_iast: Kunes kai bauzousi hon an mē ginōskōsi.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -42,14 +42,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Κύνες καὶ βαΰζουσι ὃν ἂν μὴ γινώσκωσι.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 115'
-- kind: iast
-  label: IAST
-  body: Kunes kai bauzousi hon an mē ginōskōsi.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Dogs, also, bark at what they do not know. CX VI.—By its incredibility, it escapes their knowledge.* CX VII.—A stupid
@@ -68,20 +60,6 @@ pratibha_layers:
     you to recognize the bark in yourself, the moment when you reject what you have not yet learned to perceive. That recognition
     is the threshold.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (dogs, also,
-      bark at what they do not know.), the shared pattern according to which all things occur — heard before it is argued
-      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (dogs,
-      also, bark at what they do not know.), wisdom apart from polymathy: knowing the one intelligent will that steers all
-      things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you hear yourself say ''that makes no sense'' or feel the impulse to dismiss a claim or image as absurd, pause
@@ -121,6 +99,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P115
   source_reference: Patrick (1889), frag. 115; corpus HFR_P115
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 115'
-  iast: transliterated_from_greek

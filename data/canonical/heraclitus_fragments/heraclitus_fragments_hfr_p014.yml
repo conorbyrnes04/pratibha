@@ -36,12 +36,8 @@ practice: Read a historical or mythological account you half-believe (a news rep
   testimony rather than on what you or the speaker directly encountered. Notice which gaps you fill with your own inference,
   which you leave blank. Repeat this marking three times with different texts, watching whether your tolerance for the unmarked
   gaps grows or shrinks.
-sanskrit_devanagari: τοῦτο γὰρ ἴδιόν ἐστι τῶν νῦν καιρῶν, ἐν οἷς πάντων πλωτῶν καὶ πορευτῶν γεγονότων οὐκ ἂν ἔτι πρέπον εἴη
-  ποιηταῖς καὶ μυθογράφοις χρῆσθαι μάρτυσι περὶ τῶν αγνοουμένων, ὅπερ οἱ πρὸ ἡμῶν περὶ τῶν πλείστων, ἀπίστους ἀμφισβητουμένων
-  παρεχόμενοι βεβαιωτὰς κατὰ τὸν Ἡράκλειτον
-sanskrit_iast: touto gar idion esti tōn nun kairōn, en ohis pantōn plōtōn kai poreutōn gegonotōn ouk an eti prepon eiē poiētais
-  kai muthographois chrēsthai martusi peri tōn agnooumenōn, hoper ohi pro hēmōn peri tōn pleistōn, apistous amphisbētoumenōn
-  parechomenoi bebaiōtas kata ton HĒrakleiton
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -52,18 +48,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: τοῦτο γὰρ ἴδιόν ἐστι τῶν νῦν καιρῶν, ἐν οἷς πάντων πλωτῶν καὶ πορευτῶν γεγονότων οὐκ ἂν ἔτι πρέπον εἴη ποιηταῖς καὶ
-    μυθογράφοις χρῆσθαι μάρτυσι περὶ τῶν αγνοουμένων, ὅπερ οἱ πρὸ ἡμῶν περὶ τῶν πλείστων, ἀπίστους ἀμφισβητουμένων παρεχόμενοι
-    βεβαιωτὰς κατὰ τὸν Ἡράκλειτον
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 14'
-- kind: iast
-  label: IAST
-  body: touto gar idion esti tōn nun kairōn, en ohis pantōn plōtōn kai poreutōn gegonotōn ouk an eti prepon eiē poiētais kai
-    muthographois chrēsthai martusi peri tōn agnooumenōn, hoper ohi pro hēmōn peri tōn pleistōn, apistous amphisbētoumenōn
-    parechomenoi bebaiōtas kata ton HĒrakleiton
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Polybius iv. 40. Especially at the present time, when all places are accessible either by land or by water, we should
@@ -84,30 +68,6 @@ pratibha_layers:
     for access. Heraclitus'' point, filtered through Polybius, is colder: the more distant the thing, the more the account
     belongs to the speaker, not to what is spoken of.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (polybius
-      iv.), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing Logos into
-      private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (polybius iv.),
-      world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static
-      elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (polybius iv.),
-      time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time only; aiōn here is the
-      age-character of the world-process'
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (polybius iv.), the one that
-      all things are: not mystical mush but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s
-      hen keeps tension and exchange inside unity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Read a historical or mythological account you half-believe (a news report from a place you cannot verify, a family
@@ -142,6 +102,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P014
   source_reference: Patrick (1889), frag. 14; corpus HFR_P014
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 14'
-  iast: transliterated_from_greek

@@ -27,10 +27,8 @@ practice: 'Stand in a place where others also stand or pass (street corner, door
   one specific detail—a shadow, a sound, a texture—and hold it steady in attention. Then ask: what do I see that someone else
   standing here does not? Then ask: what do they see that I cannot? Do not try to answer; let the questions work as a lens,
   sharpening the boundary between the shared world and the irreducibly private angle from which each of us inhabits it.'
-sanskrit_devanagari: Κόσμον τὸν αὐτὸν ἁπάντων οὔτε τις θεῶν οὔτε ἀνθρώπων ἐποίησε, ἀλλ' ἦν αἰεὶ καὶ ἔστι καὶ ἔσται πῦρ ἀείζωον,
-  ἁπτόμενον μέτρα καὶ ἀποσβεννύμενον μέτρα.
-sanskrit_iast: Kosmon ton auton hapantōn oute tis theōn oute anthrōpōn epoiēse, all' ēn aiei kai esti kai estai pur aeizōon,
-  haptomenon metra kai aposbennumenon metra.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -40,16 +38,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Κόσμον τὸν αὐτὸν ἁπάντων οὔτε τις θεῶν οὔτε ἀνθρώπων ἐποίησε, ἀλλ' ἦν αἰεὶ καὶ ἔστι καὶ ἔσται πῦρ ἀείζωον, ἁπτόμενον
-    μέτρα καὶ ἀποσβεννύμενον μέτρα.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 20'
-- kind: iast
-  label: IAST
-  body: Kosmon ton auton hapantōn oute tis theōn oute anthrōpōn epoiēse, all' ēn aiei kai esti kai estai pur aeizōon, haptomenon
-    metra kai aposbennumenon metra.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: This world, the same for all, neither any of
@@ -66,28 +54,6 @@ pratibha_layers:
     makes the reader''s incompletion mirror the incompleteness of any single perspective on the shared world. The teaching
     is not in doctrine but in the texture of the saying itself—in what it withholds.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: κοινός (koinos)
-    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage (this world, the same
-      for all, neither any of), the common Logos: waking rationality is shared; private dream-opinion is not a world -> trap:
-      mere social consensus; koinos here is cosmological shareability, not majority vote'
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (this world, the
-      same for all, neither any of), world-ruling fire as measured transformation and exchange, not mythic flame alone ->
-      trap: treating fire as a static elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: ποταμός (potamos)
-    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage (this world, the
-      same for all, neither any of), flux as identity-in-process: you cannot step twice into the same river because waters
-      renew -> trap: slogan “everything changes” without the logos that measures the flow'
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (this world, the
-      same for all, neither any of), time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time
-      only; aiōn here is the age-character of the world-process'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Stand in a place where others also stand or pass (street corner, doorway, park bench). For ten minutes, notice one
@@ -119,6 +85,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P020
   source_reference: Patrick (1889), frag. 20; corpus HFR_P020
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 20'
-  iast: transliterated_from_greek

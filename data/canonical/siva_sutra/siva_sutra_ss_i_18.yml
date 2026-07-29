@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_18
 unit_label: The bliss of the world is the joy of samādhi.
-title: Bliss Circulates Through the World Itself
+title: The bliss of the world is the joy of samādhi.
 unit_type: sutra
 sanskrit_devanagari: लोकानन्दः समाधिसुखम्
 sanskrit_iast: lokānandaḥ samādhi-sukham
@@ -16,9 +16,7 @@ commentary: 'Samādhi here is not withdrawal from the world, but intimacy with i
 
   What was previously sought as escape now unfolds as participation. The world is not left behind; it is suffused with awareness.'
 insight: Samādhi here is not withdrawal from the world, but intimacy with it.
-practice: During any ordinary activity today—washing, walking, eating—pause mid-motion and let your awareness spread outward
-  to include both the sensation in your body and the texture, color, or temperature of what you're touching or moving through,
-  holding them as one undivided aliveness until the moment naturally completes.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - awareness
@@ -52,6 +50,9 @@ pratibha_layers:
 
 
     What was previously sought as escape now unfolds as participation. The world is not left behind; it is suffused with awareness.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -59,13 +60,8 @@ pratibha_layers:
     definition: worldly bliss
   - term: samādhi
     definition: collected awareness
-    lemma_id: samadhi
-    sense_id: samadhi.yoga
   - term: sukha
     definition: ease, joy
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -90,9 +86,3 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.18
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: During any ordinary activity today—washing, walking, eating—pause mid-motion and let your awareness spread outward
-  to include both the sensation in your body and the texture, color, or temperature of what you're touching or moving through,
-  holding them as one undivided aliveness until the moment naturally completes.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

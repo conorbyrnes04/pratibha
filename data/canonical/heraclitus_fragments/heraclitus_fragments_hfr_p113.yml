@@ -28,8 +28,8 @@ insight: ''
 practice: 'When you encounter a crowd, a list, a proliferation of options or voices, stop and ask aloud or in writing: *Which
   one carries the logos here?* Not which is loudest or most numerous, but which one—person, idea, gesture, silence—actually
   shows you something true about the situation. Speak or write that one thing, and let the ten thousand fall away.'
-sanskrit_devanagari: Εἷς ἐμοὶ μύριοι, ἐὰν ἄριστος ᾖ.
-sanskrit_iast: Ehis emoi murioi, ean aristos ē.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - commentary_text
@@ -41,14 +41,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Εἷς ἐμοὶ μύριοι, ἐὰν ἄριστος ᾖ.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 113'
-- kind: iast
-  label: IAST
-  body: Ehis emoi murioi, ean aristos ē.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: To me, one is ten thousand if he be the best.
@@ -65,30 +57,6 @@ pratibha_layers:
     becomes visible. To me—the speaker claims a singular vantage—this one *is* (not merely seems) ten thousand. The equation
     is not metaphorical softness but a hard inversion: quality defeats quantity in the court of understanding.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (to me, one
-      is ten thousand if he be the best.), the shared pattern according to which all things occur — heard before it is argued
-      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (to me,
-      one is ten thousand if he be the best.), understanding as holding-together what daily contact already offers — not new
-      information alone -> trap: IQ or book-learning; synesis fails when familiarity becomes opacity'
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (to me, one
-      is ten thousand if he be the best.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement
-      -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (to me, one is ten thousand
-      if he be the best.), the one that all things are: not mystical mush but a single order inside visible difference ->
-      trap: erasing plurality; Heraclitus’s hen keeps tension and exchange inside unity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you encounter a crowd, a list, a proliferation of options or voices, stop and ask aloud or in writing: *Which
@@ -122,6 +90,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P113
   source_reference: Patrick (1889), frag. 113; corpus HFR_P113
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 113'
-  iast: transliterated_from_greek

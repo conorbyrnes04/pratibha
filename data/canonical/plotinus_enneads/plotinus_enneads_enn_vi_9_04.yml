@@ -10,17 +10,8 @@ unit_type: sutra
 sanskrit_devanagari: Ὅστις οἴεται τὰ ὄντα τύχηι καὶ τῶι αὐτομάτωι διοι- κεῖσθαι καὶ σωματικαῖς συνέχεσθαι αἰτίαις, οὗτος πόρρω
   ἀπελήλαται καὶ θεοῦ καὶ ἐννοίας ἑνός, καὶ ὁ λόγος οὐ πρὸς τούτους, ἀλλὰ πρὸς τοὺς ἄλλην φύσιν παρὰ τὰ σώματα τιθεμένους
   καὶ ἀνιόντας ἐπὶ ψυχήν.
-sanskrit_iast: 'Hostis oietai ta onta tychēi kai tōi automatōi dioi-
-
-  keisthai kai sōmatikais synechesthai aitiais, houtos
-
-  porrō apelēlatai kai theou kai ennoias henos, kai
-
-  ho logos ou pros toutous, alla pros tous allēn
-
-  physin para ta sōmata tithemenous kai aniontas epi
-
-  psychēn.'
+sanskrit_iast: 'N/A, as the key terms are primarily in Greek, but can be transliterated as needed: *hen* (ἕν) meaning one,
+  *nous* (νοῦς) meaning intellect or mind.'
 translation_literal: The awareness of the ultimate Principle transcends all knowledge and intellection, requiring a presence
   that surpasses the multiplicity of knowing. To attain this, one must abandon the duality of subject and object, and instead,
   become unified with the Principle. This unity is not something that can be known or understood through the intellect, but
@@ -54,7 +45,24 @@ commentary: 'The philosophical claim that underlies this passage is that the ult
   * **Episteme (ἐπιστήμη)** — from the Greek word for knowledge, meaning a state of being that is characterized by understanding
   and comprehension -> in Neoplatonism, refers to the lower form of knowledge that is bound by dualistic thinking -> what
   default translation misses is the distinction between this lower form of knowledge and the higher form of understanding
-  that is characterized by unity and simplicity.'
+  that is characterized by unity and simplicity.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Katha Upanishad, 2.24:** The ultimate reality is beyond human comprehension and can only be accessed through a direct
+  experience of unity. *Divergence:* While the Katha Upanishad emphasizes the importance of knowledge and understanding in
+  accessing the ultimate reality, Plotinus argues that these are limitations that must be transcended.
+
+  * **Phaedo, 66d-67a:** The soul must be purified of its attachment to the body and the senses in order to access the ultimate
+  reality. *Divergence:* While Plato emphasizes the importance of purification in accessing the ultimate reality, Plotinus
+  argues that this purification is not just a matter of separating the soul from the body, but rather, it requires a transcendence
+  of the dualistic thinking that characterizes human understanding.
+
+  * **Zhuangzi, Chapter 2:** The ultimate reality is beyond human comprehension and can only be accessed through a direct
+  experience of unity. *Divergence:* While Zhuangzi emphasizes the importance of embracing the uncertainty and ambiguity of
+  existence, Plotinus argues that this uncertainty and ambiguity can be transcended through a direct experience of unity.'
 insight: The philosophical claim that underlies this passage is that the ultimate reality, the One, is beyond human comprehension
   and can only be accessed through a direct experience of unity.
 practice: To access the ultimate reality, the One, let go of your attachment to knowledge and understanding, and instead,
@@ -127,57 +135,24 @@ pratibha_layers:
     * **Episteme (ἐπιστήμη)** — from the Greek word for knowledge, meaning a state of being that is characterized by understanding
     and comprehension -> in Neoplatonism, refers to the lower form of knowledge that is bound by dualistic thinking -> what
     default translation misses is the distinction between this lower form of knowledge and the higher form of understanding
-    that is characterized by unity and simplicity.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: nous (νοῦς)
-    definition: '‘intellect’ → second hypostasis: self-thinking thought identical with intelligibles Here: N/A, as the key
-      terms are primarily in Greek, but can be transliterated as needed: *hen* (ἕν) meaning one, *nous* (νοῦς) meaning intellect
-      or mind. Trap: IQ / discursive brain-mind (dianoia)'
-    lemma_id: nous
-    sense_id: nous.neoplatonic
-  - term: apophasis / beyond
-    definition: 'unsaying what the One is not → the One exceeds every predicate including ‘being’ Here: The philosophical
-      claim that underlies this passage is that the ultimate reality, the One, is beyond human comprehension and can only
-      be accessed through a dir… Trap: vague ineffability without the hypostatic order'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: to hen / the One (τὸ ἕν)
-    definition: 'ἕν ‘one’ → source beyond being and intellect; not a countable unit Here: The Ineffable Nature of the One
-      The Ineffable Nature of the One Ὅστις οἴεται τὰ ὄντα τύχηι καὶ τῶι αὐτομάτωι διοι- κεῖσθαι καὶ σωματικαῖς συνέχεσθαι
-      αἰτίαις, ο… Trap: monotheistic person-God or mathematical oneness'
-    lemma_id: henosis
-    sense_id: henosis.plotinian
-  - term: psychē (ψυχή)
-    definition: '‘soul’ → living knowing that can turn toward Nous or toward body Here: The Ineffable Nature of the One The
-      Ineffable Nature of the One Ὅστις οἴεται τὰ ὄντα τύχηι καὶ τῶι αὐτομάτωι διοι- κεῖσθαι καὶ σωματικαῖς συνέχεσθαι αἰτίαις,
-      ο… Trap: ghost in the machine; mere psychology'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Katha Upanishad, 2.24
-    resonance: The ultimate reality is beyond human comprehension and can only be accessed through a direct experience of
-      unity.
-    divergence: While the Katha Upanishad emphasizes the importance of knowledge and understanding in accessing the ultimate
-      reality, Plotinus argues that these are limitations that must be transcended.
-    passage_id: ''
-  - citation: Phaedo, 66d-67a
-    resonance: The soul must be purified of its attachment to the body and the senses in order to access the ultimate reality.
-    divergence: While Plato emphasizes the importance of purification in accessing the ultimate reality, Plotinus argues that
-      this purification is not just a matter of separating the soul from the body, but rather, it requires a transcendence
-      of the dualistic thinking that characterizes human understanding.
-    passage_id: ''
-  - citation: Zhuangzi, Chapter 2
-    resonance: The ultimate reality is beyond human comprehension and can only be accessed through a direct experience of
-      unity.
-    divergence: While Zhuangzi emphasizes the importance of embracing the uncertainty and ambiguity of existence, Plotinus
-      argues that this uncertainty and ambiguity can be transcended through a direct experience of unity.
-    passage_id: ''
-  layer_provenance: migrated_from_commentary
+    that is characterized by unity and simplicity.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Katha Upanishad, 2.24:** The ultimate reality is beyond human comprehension and can only be accessed through a direct
+    experience of unity. *Divergence:* While the Katha Upanishad emphasizes the importance of knowledge and understanding
+    in accessing the ultimate reality, Plotinus argues that these are limitations that must be transcended.
+
+    * **Phaedo, 66d-67a:** The soul must be purified of its attachment to the body and the senses in order to access the ultimate
+    reality. *Divergence:* While Plato emphasizes the importance of purification in accessing the ultimate reality, Plotinus
+    argues that this purification is not just a matter of separating the soul from the body, but rather, it requires a transcendence
+    of the dualistic thinking that characterizes human understanding.
+
+    * **Zhuangzi, Chapter 2:** The ultimate reality is beyond human comprehension and can only be accessed through a direct
+    experience of unity. *Divergence:* While Zhuangzi emphasizes the importance of embracing the uncertainty and ambiguity
+    of existence, Plotinus argues that this uncertainty and ambiguity can be transcended through a direct experience of unity.'
 - kind: practice
   label: Practice (Abhyasa)
   body: To access the ultimate reality, the One, let go of your attachment to knowledge and understanding, and instead, cultivate
@@ -255,4 +230,3 @@ provenance:
   section: Ennead VI, Tractate 9, Section 4
   original_id: ENN_VI_9_04
   source_reference: ''
-translation_provenance: English adapted from Stephen MacKenna & B. S. Page, *The Enneads* (public domain). Study rendering.

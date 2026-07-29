@@ -5,7 +5,7 @@ work_id: astavakra_gita
 work_title: Astavakra Gita
 unit_id: astavakra_gita.asg_1_1
 unit_label: Verse 1.1
-title: The Three Doors of Liberation Open
+title: Verse 1.1
 unit_type: sutra
 sanskrit_devanagari: 'कथं ज्ञानमवाप्नोति कथं मुक्तिर्भविष्यति ।
 
@@ -13,40 +13,35 @@ sanskrit_devanagari: 'कथं ज्ञानमवाप्नोति क�
 sanskrit_iast: 'kathaṃ jñānam avāpnoti kathaṃ muktir bhaviṣyati |
 
   vairāgyaṃ ca kathaṃ prāptam etad brūhi mama prabho ||'
-translation_literal: How does knowledge arise? How will liberation come to be? And how is dispassion obtained? Tell me this,
-  O Lord.
-commentary: 'This verse opens the Aṣṭāvakra Gītā with King Janaka''s direct questions—the perennial inquiry of the sincere
-  seeker. He asks three things that appear sequential but point to a single realization.
+translation_literal: 'Janaka said: How is knowledge attained?'
+commentary: 'Extended Translation:
+
+  Janaka said: How is knowledge attained? How does liberation come? How is dispassion reached? Tell me this, O Lord.
 
 
-  The questioner assumes knowledge, liberation, and dispassion are *attainments*—things to be acquired through effort or grace.
-  Yet the teaching that follows reveals they are not acquisitions at all, but recognitions of what already is. Jñāna (knowledge)
-  is not a new faculty but the collapse of the false knower. Mukti (liberation) is not a future state but the ever-present
-  freedom of the witness-Self (sākṣin), which was never bound. Vairāgya (dispassion) is not renunciation of objects but the
-  natural falling away of identification when the Self is seen as untouched by experience.
+  The text opens with the three questions that frame every spiritual tradition: epistemology (*jñāna* — how do we know?),
+  soteriology (*mukti* — how are we freed?), and the psychology of renunciation (*vairāgya* — how does attachment loosen?).
+  Janaka is asking as a genuine seeker. What is remarkable is how rapidly Aṣṭāvakra answers — not with a teaching program
+  but with a single declaration that makes the questions obsolete. The questions assume liberation is somewhere to be reached.
+  The answer reveals it was never absent.
 
 
-  Janaka''s humility—calling Aṣṭāvakra ''prabho'' (Lord, though the sage is a hunchbacked boy)—signals readiness. He does
-  not assume he knows the answer. This openness is itself the gateway. The teaching will show that all three questions collapse
-  into one: the recognition that the Self is eternally free, untouched by knowledge or ignorance, action or bondage. The ''how''
-  of the question dissolves when it is seen that there is no one to acquire anything and nowhere to go.
+  Cross-Tradition Resonance:
 
+  - Pratyabhijñāhṛdayam Sūtra 1: *citiḥ svatantrā* — Consciousness is already sovereign; the question of "how to attain" is
+  the first obstacle.
 
-  Key Terms
+  - Dào Dé Jīng ch. 48: "In pursuit of learning, every day something is acquired. In pursuit of Tao, every day something is
+  dropped." Janaka is still acquiring; Aṣṭāvakra will show him what to drop.
 
-
-  **jñāna** — Knowledge; direct, non-conceptual recognition of the Self''s nature as ever-free consciousness.
-
-  **mukti** — Liberation; the realization that the Self was never bound, only apparently identified with body and mind.
-
-  **vairāgya** — Dispassion; the natural cessation of identification with objects and experiences when the Self is recognized
-  as their unchanging witness.'
+  - Meister Eckhart, Sermon 52: "If you want the kernel, you must break the shell" — the shell here is precisely Janaka''s
+  three questions.'
 insight: 'Extended Translation:
 
   Janaka said: How is knowledge attained?'
-practice: 'Whisper aloud the three questions—''How does knowledge arise? How will liberation come? How is dispassion obtained?''—then
-  pause and notice: which one tugs at you as if it''s still missing, still ahead? Hold that tugging sensation in your chest
-  without moving toward it, and let it show you the assumption that you are the one who must acquire it.'
+practice: 'Sit with the question "how?" — any "how?" currently alive in your spiritual life. Notice the shape of the question:
+  it assumes a gap between here and there, between seeker and sought. Can you sense, even faintly, a presence that does not
+  belong to the question? That presence is what Aṣṭāvakra will point to.'
 upaya: ''
 themes:
 - knowledge
@@ -65,19 +60,6 @@ tags:
 quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
-appendixes: []
-anchor_chapter: ''
-provenance:
-  collection: Astavakra Gita
-  section: verse
-  original_id: ASG_1_1
-  source_reference: ''
-translation: How does knowledge arise? How will liberation come to be? And how is dispassion obtained? Tell me this, O Lord.
-abhyasa: 'Whisper aloud the three questions—''How does knowledge arise? How will liberation come? How is dispassion obtained?''—then
-  pause and notice: which one tugs at you as if it''s still missing, still ahead? Hold that tugging sensation in your chest
-  without moving toward it, and let it show you the assumption that you are the one who must acquire it.'
-translation_provenance: Rendered from the public-domain source (Sanskrit (IAST)). Study rendering; not a critical edition.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
 - kind: original
   label: Original
@@ -103,37 +85,38 @@ pratibha_layers:
     soteriology (*mukti* — how are we freed?), and the psychology of renunciation (*vairāgya* — how does attachment loosen?).
     Janaka is asking as a genuine seeker. What is remarkable is how rapidly Aṣṭāvakra answers — not with a teaching program
     but with a single declaration that makes the questions obsolete. The questions assume liberation is somewhere to be reached.
-    The answer reveals it was never absent.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: jñāna
-    definition: knowledge; here the non-dual recognition that is itself liberation, not a stepping-stone toward it
-    lemma_id: jnana
-  - term: mukti / mokṣa
-    definition: liberation, release; the text will argue this cannot be "attained" because the Self is already free
-  - term: vairāgya
-    definition: dispassion, non-attachment; from *vi* (away) + *rāga* (coloring, passion); the fading of compulsive engagement
-      with objects
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Pratyabhijñāhṛdayam Sūtra 1
-    resonance: '*citiḥ svatantrā* — Consciousness is already sovereign; the question of "how to attain" is the first obstacle.'
-    divergence: ''
-    passage_id: pratyabhijnahrdayam.phr_001
-  - citation: Dào Dé Jīng ch. 48
-    resonance: '"In pursuit of learning, every day something is acquired. In pursuit of Tao, every day something is dropped."
-      Janaka is still acquiring; Aṣṭāvakra will show him what to drop.'
-    divergence: ''
-    passage_id: ''
-  - citation: Meister Eckhart, Sermon 52
-    resonance: '"If you want the kernel, you must break the shell" — the shell here is precisely Janaka''s three questions.'
-    divergence: ''
-    passage_id: ''
-  layer_provenance: migrated_from_commentary
+    The answer reveals it was never absent.
+
+
+    Cross-Tradition Resonance:
+
+    - Pratyabhijñāhṛdayam Sūtra 1: *citiḥ svatantrā* — Consciousness is already sovereign; the question of "how to attain"
+    is the first obstacle.
+
+    - Dào Dé Jīng ch. 48: "In pursuit of learning, every day something is acquired. In pursuit of Tao, every day something
+    is dropped." Janaka is still acquiring; Aṣṭāvakra will show him what to drop.
+
+    - Meister Eckhart, Sermon 52: "If you want the kernel, you must break the shell" — the shell here is precisely Janaka''s
+    three questions.'
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Sit with the question "how?" — any "how?" currently alive in your spiritual life. Notice the shape of the question:
     it assumes a gap between here and there, between seeker and sought. Can you sense, even faintly, a presence that does
     not belong to the question? That presence is what Aṣṭāvakra will point to.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: jñāna
+    definition: knowledge; here the non-dual recognition that is itself liberation, not a stepping-stone toward it
+  - term: mukti / mokṣa
+    definition: liberation, release; the text will argue this cannot be "attained" because the Self is already free
+  - term: vairāgya
+    definition: dispassion, non-attachment; from *vi* (away) + *rāga* (coloring, passion); the fading of compulsive engagement
+      with objects
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Astavakra Gita
+  section: verse
+  original_id: ASG_1_1
+  source_reference: ''

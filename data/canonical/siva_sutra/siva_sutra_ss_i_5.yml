@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_5
 unit_label: The surge of awareness is Bhairava.
-title: Consciousness Recognizes Itself as Living Surge
+title: The surge of awareness is Bhairava.
 unit_type: sutra
 sanskrit_devanagari: उद्यमो भैरवः
 sanskrit_iast: udyamo bhairavaḥ
@@ -21,9 +21,7 @@ commentary: 'Here the text names the living pulse within consciousness itself. 
   This sūtra corrects a subtle misunderstanding: liberation is not stillness opposed to movement. The surge is not an error.
   When recognized, it is freedom itself.'
 insight: Here the text names the living pulse within consciousness itself.
-practice: When you feel a sudden impulse to act or speak—a moment of inner quickening—pause and let your awareness ride that
-  surge itself without dampening or directing it. Notice how the aliveness of that impulse *is* the knowing, not something
-  separate from it. Let it crest and fall like a wave, recognizing in its very intensity the freedom Bhairava names.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - awareness
@@ -68,6 +66,9 @@ pratibha_layers:
 
     This sūtra corrects a subtle misunderstanding: liberation is not stillness opposed to movement. The surge is not an error.
     When recognized, it is freedom itself.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -77,11 +78,6 @@ pratibha_layers:
     definition: consciousness in dynamic self-recognition
   - term: spanda
     definition: pulsation of awareness (implicit)
-    lemma_id: spanda
-    sense_id: spanda.shaiva
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -117,9 +113,3 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.5
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: When you feel a sudden impulse to act or speak—a moment of inner quickening—pause and let your awareness ride that
-  surge itself without dampening or directing it. Notice how the aliveness of that impulse *is* the knowing, not something
-  separate from it. Let it crest and fall like a wave, recognizing in its very intensity the freedom Bhairava names.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

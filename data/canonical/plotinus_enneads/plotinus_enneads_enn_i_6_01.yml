@@ -11,10 +11,7 @@ sanskrit_devanagari: Ἡ τοῦ κάλλους ἐνέργεια πρὸς τ�
   καὶ ἐν πᾶσι τοῖς μουσικοῖς, ὡς ἐν μελωδίαις καὶ ῥυθμοῖς· καὶ αἱ ψυχαὶ αἱ ἀναβιβασθέντες ἐπὶ τὸ ὑπερκείμενον τῆς αἰσθήσεως
   εἰς τὸ ἄνω κρείττον, γινώσκουσιν τὸ καλὸν ἐν βίῳ, ἐν πράξεσι, ἐν ἠθικῇ, ἐν νοητικῇ· καὶ ἡ τῶν ἀρετῶν καλλονή. Τί δὲ ἄλλο
   κρείττον τοιοῦτόν ἐστιν, ἡμῖν δὲ ἡ λόγος φανερώσει.
-sanskrit_iast: Hē tou kallous energeia pros tēn opsin rhēteon, alla kai hē tou akroatou hēdonē en tais synthesesi tōn logōn
-  kai en pasi tois mousikois, hōs en melōdiais kai rhythmois; kai hai psychai hai anabibasthentes epi to hyperkeimenon tēs
-  aisthēseōs eis to anō kreitton, ginōskousin to kalon en biō, en praxesi, en ēthikē, en noētikē; kai hē tōn aretōn kallonē.
-  Ti de allo kreitton toiouton estin, hēmin de hē logos phanerōsei.
+sanskrit_iast: 'N/A, with key terms: [kalon] (καλόν) -> beauty, [arete] (ἀρετή) -> virtue, [psyche] (ψυχή) -> soul'
 translation_literal: Beauty is presenting itself primarily to our sight, yet there is also a beauty that is perceived through
   hearing, as in the combination of words and in all kinds of music, for melodies and rhythms are beautiful. Minds that elevate
   themselves above the sensory realm to a higher order are aware of beauty in the conduct of life, in actions, in character,
@@ -42,7 +39,21 @@ commentary: 'The philosophical claim that beauty is not solely derived from symm
   translation misses: the connection between virtue and beauty
 
   * **psyche (ψυχή)** — etymology: Greek concept of soul -> tradition-specific meaning: the seat of beauty and virtue -> what
-  default translation misses: the role of the soul in perceiving and experiencing beauty'
+  default translation misses: the role of the soul in perceiving and experiencing beauty
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Katha Upanishad, 2.2.13:** The concept of beauty as a unified principle is echoed in the Katha Upanishad, where the
+  ultimate reality is described as the source of all beauty and goodness.
+
+  * **Phaedo, 65a-66d:** Plato''s discussion of the immortality of the soul and the nature of beauty in the Phaedo resonates
+  with Plotinus'' idea of beauty as a transcendent principle that underlies all beautiful things.
+
+  * **Zhuangzi, Chapter 2:** The Zhuangzi''s concept of the "uncarved block" as a symbol of simplicity and beauty resonates
+  with Plotinus'' critique of symmetry as a definition of beauty, highlighting the importance of simplicity and unity in the
+  experience of beauty.'
 insight: The philosophical claim that beauty is not solely derived from symmetry is a counterintuitive move that challenges
   the conventional understanding of aesthetics.
 practice: As you go about your day, pay attention to the ways in which beauty presents itself to you, not just through sight,
@@ -103,53 +114,21 @@ pratibha_layers:
     translation misses: the connection between virtue and beauty
 
     * **psyche (ψυχή)** — etymology: Greek concept of soul -> tradition-specific meaning: the seat of beauty and virtue ->
-    what default translation misses: the role of the soul in perceiving and experiencing beauty'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: kalon (καλόν)
-    definition: '‘the beautiful’ → beauty as trace of the One that awakens eros for ascent Here: Beauty as a Unified Principle
-      Beyond Symmetry Beauty as a Unified Principle Beyond Symmetry Ἡ τοῦ κάλλους ἐνέργεια πρὸς τὴν ὄψιν ῥητέον, ἀλλὰ καὶ
-      ἡ τοῦ ἀκροατο… Trap: aesthetic taste or symmetry alone'
-  - term: psychē (ψυχή)
-    definition: '‘soul’ → living knowing that can turn toward Nous or toward body Here: N/A, with key terms: [kalon] (καλόν)
-      -> beauty, [arete] (ἀρετή) -> virtue, [psyche] (ψυχή) -> soul Beauty is presenting itself primarily to our sight, yet
-      ther… Trap: ghost in the machine; mere psychology'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: apophasis / beyond
-    definition: 'unsaying what the One is not → the One exceeds every predicate including ‘being’ Here: Beauty as a Unified
-      Principle Beyond Symmetry Beauty as a Unified Principle Beyond Symmetry Ἡ τοῦ κάλλους ἐνέργεια πρὸς τὴν ὄψιν ῥητέον,
-      ἀλλὰ καὶ ἡ τοῦ ἀκροατο… Trap: vague ineffability without the hypostatic order'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: nous (νοῦς)
-    definition: '‘intellect’ → second hypostasis: self-thinking thought identical with intelligibles Here: Minds that elevate
-      themselves above the sensory realm to a higher order are aware of beauty in the conduct of life, in actions, in character,
-      in intellectual p… Trap: IQ / discursive brain-mind (dianoia)'
-    lemma_id: nous
-    sense_id: nous.neoplatonic
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Katha Upanishad, 2.2.13
-    resonance: The concept of beauty as a unified principle is echoed in the Katha Upanishad, where the ultimate reality is
-      described as the source of all beauty and goodness.
-    divergence: ''
-    passage_id: ''
-  - citation: Phaedo, 65a-66d
-    resonance: Plato's discussion of the immortality of the soul and the nature of beauty in the Phaedo resonates with Plotinus'
-      idea of beauty as a transcendent principle that underlies all beautiful things.
-    divergence: ''
-    passage_id: ''
-  - citation: Zhuangzi, Chapter 2
-    resonance: The Zhuangzi's concept of the "uncarved block" as a symbol of simplicity and beauty resonates with Plotinus'
-      critique of symmetry as a definition of beauty, highlighting the importance of simplicity and unity in the experience
-      of beauty.
-    divergence: ''
-    passage_id: ''
-  layer_provenance: migrated_from_commentary
+    what default translation misses: the role of the soul in perceiving and experiencing beauty
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Katha Upanishad, 2.2.13:** The concept of beauty as a unified principle is echoed in the Katha Upanishad, where the
+    ultimate reality is described as the source of all beauty and goodness.
+
+    * **Phaedo, 65a-66d:** Plato''s discussion of the immortality of the soul and the nature of beauty in the Phaedo resonates
+    with Plotinus'' idea of beauty as a transcendent principle that underlies all beautiful things.
+
+    * **Zhuangzi, Chapter 2:** The Zhuangzi''s concept of the "uncarved block" as a symbol of simplicity and beauty resonates
+    with Plotinus'' critique of symmetry as a definition of beauty, highlighting the importance of simplicity and unity in
+    the experience of beauty.'
 - kind: practice
   label: Practice (Abhyasa)
   body: As you go about your day, pay attention to the ways in which beauty presents itself to you, not just through sight,
@@ -306,4 +285,3 @@ provenance:
   section: Ennead I, Tractate 6, Section 1
   original_id: ENN_I_6_01
   source_reference: ''
-translation_provenance: English adapted from Stephen MacKenna & B. S. Page, *The Enneads* (public domain). Study rendering.

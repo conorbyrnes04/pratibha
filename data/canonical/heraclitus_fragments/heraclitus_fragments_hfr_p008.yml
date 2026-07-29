@@ -28,8 +28,8 @@ practice: 'In the next three days, choose one small thing you need or want—a t
   everything that had to occur, be made, be discarded, or fail for that one thing to reach you. Write or speak aloud the chain
   of what-was-not-it: the materials rejected, the paths not taken, the people whose no made your yes possible. Do not rush
   to gratitude; stay in the proportion itself, the weight of the *much* that surrounds the *little*.'
-sanskrit_devanagari: Χρυσὸν οἱ διζήμενοι γῆν πολλὴν ὀρύσσουσι καὶ εὑρίσκουσι ὀλίγον.
-sanskrit_iast: CHruson ohi dizēmenoi gēn pollēn orussousi kai ehuriskousi oligon.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -39,14 +39,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Χρυσὸν οἱ διζήμενοι γῆν πολλὴν ὀρύσσουσι καὶ εὑρίσκουσι ὀλίγον.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 8'
-- kind: iast
-  label: IAST
-  body: CHruson ohi dizēmenoi gēn pollēn orussousi kai ehuriskousi oligon.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Gold-seekers dig over much earth and find little gold. TX.—Debate.
@@ -64,30 +56,6 @@ pratibha_layers:
     a vastness of concealment. The miner''s spade becomes an instrument for learning the structure of manifestation itself:
     *much* precedes *little*. Abundance of absence precedes presence. This is why the fragment belongs to wisdom, not to economics.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (gold-seekers
-      dig over much earth and find little gold.), the shared pattern according to which all things occur — heard before it
-      is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (gold-seekers dig over much earth and find little
-      gold.), the proportion that governs exchange, fire, and speech — what rude witnessing cannot attest -> trap: quantitative
-      metric alone; Heraclitus’s measure is ontological fittingness'
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (gold-seekers
-      dig over much earth and find little gold.), nature that loves to hide — the self-showing of things that also resists
-      crude disclosure -> trap: equating physis with “the outdoors” or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (gold-seekers
-      dig over much earth and find little gold.), wisdom apart from polymathy: knowing the one intelligent will that steers
-      all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'In the next three days, choose one small thing you need or want—a tool, a word, a decision—and trace backward through
@@ -124,6 +92,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P008
   source_reference: Patrick (1889), frag. 8; corpus HFR_P008
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 8'
-  iast: transliterated_from_greek

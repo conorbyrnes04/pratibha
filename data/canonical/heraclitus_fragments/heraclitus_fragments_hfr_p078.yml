@@ -26,10 +26,8 @@ practice: Light a candle or observe a flame for three minutes without naming wha
   ('it flickers,' 'it's orange,' 'it's beautiful'), pause and notice instead the exact moment the flame ceases to be what
   it just was—the precise edge where one form dissolves into the next. After, sit in darkness for two minutes and attend to
   what remains intelligible without light.
-sanskrit_devanagari: πότε γὰρ ἐν ἡμῖν αὐτοῖς οὐκ ἔστιν ὁ θάνατος; καὶ ᾗ φησιν Ἡράκλειτος, ταὔτ' εἶναι ζῶν καὶ τεθνηκός, καὶ
-  τὸ ἐγρηγορὸς καὶ τὸ καθεῦδον, καὶ νέον καὶ γηραιόν· τάδε γὰρ μεταπεσόντα ἐκεῖνά ἐστι κἀκεῖνα πάλιν μεταπεσόντα ταῦτα.
-sanskrit_iast: pote gar en hēmin autois ouk estin ho thanatos; kai hē phēsin HĒrakleitos, taut' einai zōn kai tethnēkos, kai
-  to egrēgoros kai to katheudon, kai neon kai gēraion. tade gar metapesonta ekeina esti kakeina palin metapesonta tauta.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -37,16 +35,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: πότε γὰρ ἐν ἡμῖν αὐτοῖς οὐκ ἔστιν ὁ θάνατος; καὶ ᾗ φησιν Ἡράκλειτος, ταὔτ' εἶναι ζῶν καὶ τεθνηκός, καὶ τὸ ἐγρηγορὸς
-    καὶ τὸ καθεῦδον, καὶ νέον καὶ γηραιόν· τάδε γὰρ μεταπεσόντα ἐκεῖνά ἐστι κἀκεῖνα πάλιν μεταπεσόντα ταῦτα.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 78'
-- kind: iast
-  label: IAST
-  body: pote gar en hēmin autois ouk estin ho thanatos; kai hē phēsin HĒrakleitos, taut' einai zōn kai tethnēkos, kai to egrēgoros
-    kai to katheudon, kai neon kai gēraion. tade gar metapesonta ekeina esti kakeina palin metapesonta tauta.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Tzetze’s Chil. 11. 722.
@@ -63,30 +51,6 @@ pratibha_layers:
     is not ''accept flux.'' It is: notice that your own clarity—your ability to think at all—depends on a consuming that you
     cannot arrest.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (tzetze’s
-      Chil.), understanding as holding-together what daily contact already offers — not new information alone -> trap: IQ
-      or book-learning; synesis fails when familiarity becomes opacity'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (tzetze’s
-      Chil.), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing Logos
-      into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (tzetze’s Chil.),
-      world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static
-      elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (tzetze’s
-      Chil.), wisdom apart from polymathy: knowing the one intelligent will that steers all things -> trap: equating wisdom
-      with much-learning (πολυμαθίη) or reputation for knowledge'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Light a candle or observe a flame for three minutes without naming what you see. When the urge to interpret arises
@@ -101,6 +65,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P078
   source_reference: Patrick (1889), frag. 78; corpus HFR_P078
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 78'
-  iast: transliterated_from_greek

@@ -37,10 +37,8 @@ practice: 'Hold a door handle or the edge of a table and press your palm against
   equally; notice how the stability of your hand depends entirely on this mutual pushing. Reverse the frame: you are not fighting
   the object but co-creating its stillness through opposition. Repeat this with three different surfaces—wood, metal, stone—and
   attend to how the quality of the tension changes while the principle remains: nothing holds without the push-back.'
-sanskrit_devanagari: καὶ Ἡράκλειτος ἐπιτιμᾷ τῷ ποιήσαντι· ὡς ἔρις ἔκ τε θεῶν καὶ ἀνθρώπων ἀπόλοιτο· οὐ γὰρ ἂν εἶναι ἁρμονίαν
-  μὴ ὄντος ὀξέος καὶ βαρέος, οὐδὲ τὰ ζῷα ἄνευ θήλεος καὶ ἄρρενος, ἐναντίων ὄντων
-sanskrit_iast: kai HĒrakleitos epitima tō poiēsanti. hōs eris ek te theōn kai anthrōpōn apoloito. ou gar an einai harmonian
-  mē ontos oxeos kai bareos, oude ta zōa aneu thēleos kai arrenos, enantiōn ontōn
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - harmony
@@ -53,16 +51,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: καὶ Ἡράκλειτος ἐπιτιμᾷ τῷ ποιήσαντι· ὡς ἔρις ἔκ τε θεῶν καὶ ἀνθρώπων ἀπόλοιτο· οὐ γὰρ ἂν εἶναι ἁρμονίαν μὴ ὄντος ὀξέος
-    καὶ βαρέος, οὐδὲ τὰ ζῷα ἄνευ θήλεος καὶ ἄρρενος, ἐναντίων ὄντων
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 43'
-- kind: iast
-  label: IAST
-  body: kai HĒrakleitos epitima tō poiēsanti. hōs eris ek te theōn kai anthrōpōn apoloito. ou gar an einai harmonian mē ontos
-    oxeos kai bareos, oude ta zōa aneu thēleos kai arrenos, enantiōn ontōn
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: in plain terms calls war the father and king and lord of all (= frag. 44), and he says that Homer, when he prayed—“
@@ -94,17 +82,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (in plain
-      terms calls war the father and king and lord of all (= frag.), tensioned unity of opposites — bow and lyre held by counter-pull,
-      not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: πόλεμος (polemos)
-    definition: 'πόλεμος “war, conflict” — strife as generative, not only destructive -> in this passage (in plain terms calls
-      war the father and king and lord of all (= frag.), war/strife as father of things: opposition that produces order rather
-      than mere chaos -> trap: glorifying violence, or reading strife as a failure of order instead of its instrument'
-  layer_provenance: editorial-enriched
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -114,7 +95,7 @@ pratibha_layers:
       with duty, producing clarity rather than paralysis.'
     divergence: Heraclitus universalizes opposition as cosmic principle; the Gita localizes it within ethical action and the
       agent's transformation through duty-bound struggle.
-    passage_id: bhagavad_gita.bg_md_001
+    passage_id: bhagavad_gita.bg_01_26_28
   - citation: 'Vijnana Bhairava — Yukti #82'
     resonance: 'Both posit a unified source from which differentiated manifestations arise: Heraclitus''s war as father generates
       all things through opposition; Bhairava''s undulating waves, flames, and rays emanate from a singular ground, each form
@@ -139,6 +120,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P043
   source_reference: Patrick (1889), frag. 43; corpus HFR_P043
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 43'
-  iast: transliterated_from_greek

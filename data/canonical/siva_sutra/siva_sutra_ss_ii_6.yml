@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_ii_6
 unit_label: The guru is the means.
-title: Recognition Requires The Mirror Of Another
+title: The guru is the means.
 unit_type: sutra
 sanskrit_devanagari: गुरुरुपायः
 sanskrit_iast: gurur upāyaḥ
@@ -17,9 +17,7 @@ commentary: 'At this stage, guidance becomes essential. Not as authority, but as
   What cannot yet be sustained alone is reflected back through another. The guru is not a person to be followed, but a function
   that interrupts self-deception.'
 insight: At this stage, guidance becomes essential.
-practice: When you next feel certain about something—a decision, a judgment, a belief about yourself—pause and speak it aloud
-  to another person, listening carefully to how your own words sound reflected back. Notice what shifts in the speaking itself,
-  before they even respond.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - recognition
@@ -54,6 +52,9 @@ pratibha_layers:
 
     What cannot yet be sustained alone is reflected back through another. The guru is not a person to be followed, but a function
     that interrupts self-deception.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -61,10 +62,6 @@ pratibha_layers:
     definition: that which dispels confusion
   - term: upāya
     definition: effective means, method
-    lemma_id: upaya
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -89,9 +86,3 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.6
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: When you next feel certain about something—a decision, a judgment, a belief about yourself—pause and speak it aloud
-  to another person, listening carefully to how your own words sound reflected back. Notice what shifts in the speaking itself,
-  before they even respond.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

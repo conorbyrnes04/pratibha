@@ -7,8 +7,8 @@ unit_id: heraclitus_fragments.hfr_p045
 unit_label: Unity in Opposition
 title: Unity in Opposition
 unit_type: sutra
-sanskrit_devanagari: Οὐ ξυνίασι ὅκως διαφερόμενον ἑωυτῷ ὁμολογέει· παλίντροπος ἁρμονίη ὅκωσπερ τόξου καὶ λύρης.
-sanskrit_iast: Ou xuniasi hokōs diapheromenon heōutō homologeei. palintropos harmoniē hokōsper toxou kai lurēs.
+sanskrit_devanagari: ἀγνοέουσιν ὅκωσπερ τὸ διαφερόμενόν ἐαυτῷ οἰακίζει. ἁρμονίη παλίντονος, ὡς τόξου ὡς καὶ λύρας.
+sanskrit_iast: agnóeousin hókōspēr tò diapheroménón heautōi oiakízei. harmoníē palíntōnos, hōs tóxou hōs kaì lúrās.
 translation_literal: They fail to grasp how the very thing that sets apart [diapheroménón] ultimately unites with itself.
   This is a [harmoníē] of opposing forces, as seen in the bow and the lyre, where tension creates harmony.
 commentary: 'The philosophical claim that oppositional forces can give rise to unity is a counterintuitive move that challenges
@@ -67,12 +67,10 @@ editorial_score: 72
 pratibha_layers:
 - kind: original
   label: Original
-  body: Οὐ ξυνίασι ὅκως διαφερόμενον ἑωυτῷ ὁμολογέει· παλίντροπος ἁρμονίη ὅκωσπερ τόξου καὶ λύρης.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 45'
+  body: ἀγνοέουσιν ὅκωσπερ τὸ διαφερόμενόν ἐαυτῷ οἰακίζει. ἁρμονίη παλίντονος, ὡς τόξου ὡς καὶ λύρας.
 - kind: iast
   label: IAST
-  body: Ou xuniasi hokōs diapheromenon heōutō homologeei. palintropos harmoniē hokōsper toxou kai lurēs.
-  layer_provenance: transliterated_from_greek
+  body: agnóeousin hókōspēr tò diapheroménón heautōi oiakízei. harmoníē palíntōnos, hōs tóxou hōs kaì lúrās.
 - kind: translation
   label: Pratibha Translation
   body: They fail to grasp how the very thing that sets apart [diapheroménón] ultimately unites with itself. This is a [harmoníē]
@@ -118,30 +116,6 @@ pratibha_layers:
     * **Dōgen, Shōbōgenzō, Genjōkōan:** structural homology: the idea that harmony and unity can be found in the midst of
     opposition and conflict. *Divergence:* Dōgen emphasizes the importance of non-dual thinking and the rejection of conceptual
     distinctions.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (unity in
-      Opposition), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading
-      “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (unity in Opposition),
-      time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time only; aiōn here is the
-      age-character of the world-process'
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (unity in Opposition), the one
-      that all things are: not mystical mush but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s
-      hen keeps tension and exchange inside unity'
-  - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (unity
-      in Opposition), nature that loves to hide — the self-showing of things that also resists crude disclosure -> trap: equating
-      physis with “the outdoors” or a finished inventory of objects'
-    lemma_id: physis
-    sense_id: physis.greek
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your day, notice the ways in which oppositional forces are at work in your life, and try to cultivate
@@ -161,6 +135,3 @@ provenance:
   section: Fragment 45
   original_id: HFR_P045
   source_reference: Heraclitus, *Fragments* (HFR_P045; DK B51; Patrick 1889 / Bywater Greek)
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 45'
-  iast: transliterated_from_greek

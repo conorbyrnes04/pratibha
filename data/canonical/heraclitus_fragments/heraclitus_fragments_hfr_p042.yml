@@ -30,8 +30,8 @@ practice: Stir a cup of water with a spoon in a steady, deliberate circle for tw
   move as a unified spiral; then stop and hold the cup still, observing without moving it how quickly the pattern dissolves
   and the particles settle back into separation—repeat this cycle three times, each time noting the exact moment motion ceases
   and fragmentation begins, until the image of your own stillness becomes visible.
-sanskrit_devanagari: Καὶ ὁ κυκεὼν διίσταται μὴ κινεόμενος.
-sanskrit_iast: Kai ho kukeōn diistatai mē kineomenos.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -43,14 +43,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Καὶ ὁ κυκεὼν διίσταται μὴ κινεόμενος.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 84'
-- kind: iast
-  label: IAST
-  body: Kai ho kukeōn diistatai mē kineomenos.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: A mixture separates when not kept in motion.
@@ -68,18 +60,6 @@ pratibha_layers:
     eternal motion, the refusal of rest. This is not tragedy but clarity—the recognition that what we call a self or a world
     is not a thing to be possessed but a rhythm to be maintained.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (a mixture separates
-      when not kept in motion.), time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time
-      only; aiōn here is the age-character of the world-process'
-  - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (a mixture separates when not
-      kept in motion.), the one that all things are: not mystical mush but a single order inside visible difference -> trap:
-      erasing plurality; Heraclitus’s hen keeps tension and exchange inside unity'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Stir a cup of water with a spoon in a steady, deliberate circle for two minutes, watching the small debris or color
@@ -112,6 +92,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P042
   source_reference: Patrick (1889), frag. 42; corpus HFR_P042
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 84'
-  iast: transliterated_from_greek

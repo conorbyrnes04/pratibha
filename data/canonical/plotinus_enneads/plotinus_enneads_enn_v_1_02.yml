@@ -9,8 +9,7 @@ title: The Soul as the Author of All Living Things
 unit_type: sutra
 sanskrit_devanagari: ἐκεῖνο δὲ τὸ πᾶσι ζῷα καὶ φυτὰ καὶ πάντα τὰ ὄντα ψυχὴν ἐμβάλλουσαν, καὶ ἡλίου καὶ ἀστέρων καὶ οὐρανοῦ
   καὶ γῆς καὶ θαλάττης καὶ ἀέρος ψυχὴν ἐμβάλλουσαν.
-sanskrit_iast: ekeino de to pasi zōa kai phyta kai panta ta onta psychēn emballousan, kai hēliou kai asterōn kai ouranou kai
-  gēs kai thalattēs kai aeros psychēn emballousan.
+sanskrit_iast: 'N/A, with key terms: ψυχὴ (psychē) - soul, ζῷα (zōia) - living things, φυτὰ (phytà) - plants.'
 translation_literal: The soul is the source of all life, infusing it into every living being, from the smallest creature to
   the vast expanse of the heavens, and it is the soul that gives life to the sun, stars, earth, sea, and air. As the soul
   permeates all of existence, it brings light and immortality to the material world, transforming it into a living, blessed,
@@ -40,7 +39,24 @@ commentary: 'The philosophical claim that the soul is the author of all living t
 
   * **ἡλίου (hēliou)** — from ἥλιος (hēlios), sun, highlighting the soul''s role in illuminating and energizing the world
   -> in Neoplatonism, the sun is often seen as a symbol of the soul''s life-giving power and its ability to illuminate the
-  world -> the default translation of "sun" often misses the symbolic and metaphysical significance of ἡλίου.'
+  world -> the default translation of "sun" often misses the symbolic and metaphysical significance of ἡλίου.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Katha Upanishad, 2.2.13:** The idea that the soul is the source of all life and animation is echoed in the Katha Upanishad,
+  where the soul is described as the "inner controller" that guides the body and the senses. *Divergence:* While the Katha
+  Upanishad emphasizes the individual soul''s role in guiding the body, Plotinus emphasizes the universal soul''s role in
+  animating the entire cosmos.
+
+  * **Phaedo, 79c-80a:** The concept of the soul as the source of life and immortality is also explored in Plato''s Phaedo,
+  where Socrates argues that the soul is immortal and imperishable. *Divergence:* While Plato''s Phaedo focuses on the individual
+  soul''s immortality, Plotinus expands this idea to include the universal soul''s role in creating and sustaining the cosmos.
+
+  * **Pratyabhijnahrdayam, 4:** The idea that the soul is the source of all existence and the ultimate reality is also found
+  in the Pratyabhijnahrdayam, a key text of Kashmir Shaivism. *Divergence:* While the Pratyabhijnahrdayam emphasizes the soul''s
+  role as the ultimate reality, Plotinus emphasizes the soul''s role as the source of life and animation.'
 insight: The philosophical claim that the soul is the author of all living things is a counterintuitive move that challenges
   the conventional understanding of the relationship between the soul and the material world.
 practice: 'As you go about your daily activities, take a moment to reflect on the soul''s role in animating all living things,
@@ -102,43 +118,24 @@ pratibha_layers:
 
     * **ἡλίου (hēliou)** — from ἥλιος (hēlios), sun, highlighting the soul''s role in illuminating and energizing the world
     -> in Neoplatonism, the sun is often seen as a symbol of the soul''s life-giving power and its ability to illuminate the
-    world -> the default translation of "sun" often misses the symbolic and metaphysical significance of ἡλίου.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: psychē (ψυχή)
-    definition: '‘soul’ → living knowing that can turn toward Nous or toward body Here: N/A, with key terms: ψυχὴ (psychē)
-      - soul, ζῷα (zōia) - living things, φυτὰ (phytà) - plants. Trap: ghost in the machine; mere psychology'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: to hen / the One (τὸ ἕν)
-    definition: 'ἕν ‘one’ → source beyond being and intellect; not a countable unit Trap: monotheistic person-God or mathematical
-      oneness'
-    lemma_id: henosis
-    sense_id: henosis.plotinian
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Katha Upanishad, 2.2.13
-    resonance: The idea that the soul is the source of all life and animation is echoed in the Katha Upanishad, where the
-      soul is described as the "inner controller" that guides the body and the senses.
-    divergence: While the Katha Upanishad emphasizes the individual soul's role in guiding the body, Plotinus emphasizes the
-      universal soul's role in animating the entire cosmos.
-    passage_id: ''
-  - citation: Phaedo, 79c-80a
-    resonance: The concept of the soul as the source of life and immortality is also explored in Plato's Phaedo, where Socrates
-      argues that the soul is immortal and imperishable.
-    divergence: While Plato's Phaedo focuses on the individual soul's immortality, Plotinus expands this idea to include the
-      universal soul's role in creating and sustaining the cosmos.
-    passage_id: ''
-  - citation: Pratyabhijnahrdayam, 4
-    resonance: The idea that the soul is the source of all existence and the ultimate reality is also found in the Pratyabhijnahrdayam,
-      a key text of Kashmir Shaivism.
-    divergence: While the Pratyabhijnahrdayam emphasizes the soul's role as the ultimate reality, Plotinus emphasizes the
-      soul's role as the source of life and animation.
-    passage_id: pratyabhijnahrdayam.phr_004
-  layer_provenance: migrated_from_commentary
+    world -> the default translation of "sun" often misses the symbolic and metaphysical significance of ἡλίου.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Katha Upanishad, 2.2.13:** The idea that the soul is the source of all life and animation is echoed in the Katha Upanishad,
+    where the soul is described as the "inner controller" that guides the body and the senses. *Divergence:* While the Katha
+    Upanishad emphasizes the individual soul''s role in guiding the body, Plotinus emphasizes the universal soul''s role in
+    animating the entire cosmos.
+
+    * **Phaedo, 79c-80a:** The concept of the soul as the source of life and immortality is also explored in Plato''s Phaedo,
+    where Socrates argues that the soul is immortal and imperishable. *Divergence:* While Plato''s Phaedo focuses on the individual
+    soul''s immortality, Plotinus expands this idea to include the universal soul''s role in creating and sustaining the cosmos.
+
+    * **Pratyabhijnahrdayam, 4:** The idea that the soul is the source of all existence and the ultimate reality is also found
+    in the Pratyabhijnahrdayam, a key text of Kashmir Shaivism. *Divergence:* While the Pratyabhijnahrdayam emphasizes the
+    soul''s role as the ultimate reality, Plotinus emphasizes the soul''s role as the source of life and animation.'
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your daily activities, take a moment to reflect on the soul''s role in animating all living things,
@@ -243,4 +240,3 @@ provenance:
   section: Ennead V, Tractate 1, Section 2
   original_id: ENN_V_1_02
   source_reference: ''
-translation_provenance: English adapted from Stephen MacKenna & B. S. Page, *The Enneads* (public domain). Study rendering.

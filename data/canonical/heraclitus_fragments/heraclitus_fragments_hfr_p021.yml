@@ -29,8 +29,8 @@ insight: ''
 practice: 'Watch a fire or candle flame for three minutes without naming what you see. Then reverse: trace backwards from
   ash to coal to wood to tree to soil. Speak aloud one transmutation you notice (smoke to air, heat to light, solid to gas),
   then ask: where does the measure hide—what stays constant as the form changes?'
-sanskrit_devanagari: Πυρὸς τροπαὶ πρῶτον θάλασσα· θαλάσσης δὲ τὸ μὲν ἥμισυ γῆ, τὸ δὲ ἥμισυ πρηστήρ.
-sanskrit_iast: Puros tropai prōton thalassa. thalassēs de to men hēmisu gē, to de hēmisu prēstēr.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - earth
@@ -41,14 +41,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Πυρὸς τροπαὶ πρῶτον θάλασσα· θαλάσσης δὲ τὸ μὲν ἥμισυ γῆ, τὸ δὲ ἥμισυ πρηστήρ.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 21'
-- kind: iast
-  label: IAST
-  body: Puros tropai prōton thalassa. thalassēs de to men hēmisu gē, to de hēmisu prēstēr.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: The transmutations of fire are, first, the sea; and of the sea, half is earth, and half the lightning fiash.$
@@ -76,30 +68,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (The transmutations
-      of fire are, first, the sea; and of the sea, half is earth, and half the lightning fiash.$), the shared pattern according
-      to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or
-      only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (The transmutations
-      of fire are, first, the sea; and of the sea, half is earth, and half the lightning fiash.$), world-ruling fire as measured
-      transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance rather than
-      lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (The transmutations of fire are, first, the
-      sea; and of the sea, half is earth, and half the lightning fiash.$), cosmic justice that polices measures — the Erinyes
-      as helpers when bounds are overstepped -> trap: courtroom morality alone; here dikē is cosmological proportion, not
-      only human law'
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (The transmutations of fire are, first, the sea;
-      and of the sea, half is earth, and half the lightning fiash.$), the proportion that governs exchange, fire, and speech
-      — what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
-  layer_provenance: editorial-enriched
+  - term: pyr / cosmic fire
+    definition: Heraclitus's world-ruling fire is not mythic flame alone but measured transformation — exchange (πυρὸς τροπαὶ)
+      governed by proportion. Fire names process, not a static element.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -126,6 +98,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P021
   source_reference: Patrick (1889), frag. 21; corpus HFR_P021
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 21'
-  iast: transliterated_from_greek

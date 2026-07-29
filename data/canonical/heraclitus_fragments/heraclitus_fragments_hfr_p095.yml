@@ -29,9 +29,8 @@ practice: Upon waking, before moving, listen without naming—to the room's ambi
   quality of light—as though encountering a world that was already there, already ordered, waiting for no permission. Do this
   for the duration of three full breaths, then rise. Repeat the same listening at the threshold of sleep, noting whether the
   world recedes or whether you do.
-sanskrit_devanagari: ὁ Ἡράκλειτός φησι, τοῖς ἐγρηγορόσιν ἕνα καὶ κοινὸν κόσμον εἶναι, τῶν δὲ κοιμωμένων ἕκαστον εἰς ἴδιον
-  ἀποστρέφεσθαι
-sanskrit_iast: ho HĒrakleitos phēsi, tois egrēgorosin hena kai koinon kosmon einai, tōn de koimōmenōn hekaston eis idion apostrephesthai
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - consciousness
@@ -40,14 +39,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: ὁ Ἡράκλειτός φησι, τοῖς ἐγρηγορόσιν ἕνα καὶ κοινὸν κόσμον εἶναι, τῶν δὲ κοιμωμένων ἕκαστον εἰς ἴδιον ἀποστρέφεσθαι
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 95'
-- kind: iast
-  label: IAST
-  body: ho HĒrakleitos phēsi, tois egrēgorosin hena kai koinon kosmon einai, tōn de koimōmenōn hekaston eis idion apostrephesthai
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: 'says: To those who are awake, there is one world in common, but of those who are asleep, each is withdrawn to a private
@@ -65,38 +56,6 @@ pratibha_layers:
     wait for agreement or feeling. This is why waking and sleeping are not psychological states but ontological positions:
     to sleep is to lose access to the kosmos itself, not merely to lose alertness.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (says: To
-      those who are awake, there is one world in common, but of those who are asleep, each is withdrawn…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (says: To
-      those who are awake, there is one world in common, but of those who are asleep, each is withdrawn…), tensioned unity
-      of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (says: To those who are awake,
-      there is one world in common, but of those who are asleep, each is withdrawn…), breath-life as the medium through which
-      waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics alone,
-      or to mere oxygen'
-    lemma_id: pneuma
-    sense_id: pneuma.stoic
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (says: To those
-      who are awake, there is one world in common, but of those who are asleep, each is withdrawn…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Upon waking, before moving, listen without naming—to the room's ambient sound, the body's weight on the bed, the quality
@@ -132,6 +91,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P095
   source_reference: Patrick (1889), frag. 95; corpus HFR_P095
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 95'
-  iast: transliterated_from_greek

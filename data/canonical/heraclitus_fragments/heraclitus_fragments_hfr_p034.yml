@@ -36,14 +36,8 @@ practice: 'Watch the shadow cast by a fixed object (doorframe, pole, window-edge
   it is the sun''s proclamation of time''s structure made visible. Return to the same spot tomorrow and notice: the pattern
   repeats, yet never identically. This is Heraclitus''s ordered change—the cosmos announcing its own measure through what
   moves and what stays.'
-sanskrit_devanagari: οὕτως οὖν ἀναγκαίαν πρὸς τὸν οὐρανὸν ἔχων συμπλοκὴν καὶ συναρμογὴν ὁ χρόνος οὐκ ἁπλῶς ἐστι κίνησις ἀλλ',
-  ὥσπερ εἴρηται, κίνησις ἐν τάξει μετρον ἐχούσῃ καὶ πέρατα καὶ περιόδους. ὧν ὁ ἥλιος ἐπιστάτης ὢν καὶ σκοπός, ὁρίξειν καὶ
-  βραβευειν καὶ ἀναδεικνύναι καὶ ἀναφαίνειν μεταβολὰς καὶ ὥρας αἳ πάντα φέρουσι, καθ' Ἡράκλειτον, οὐδὲ φαύλων οὐδὲ μικρῶν,
-  ἀλλὰ τῶν μεγίστων καὶ κυριωτάτων τῷ ἡγεμόνι καὶ πρώτῳ θεῷ γίνεται συνεργός
-sanskrit_iast: ohutōs oun anankaian pros ton ouranon echōn sumplokēn kai sunarmogēn ho chronos ouk haplōs esti kinēsis all',
-  hōsper eirētai, kinēsis en taxei metron echousē kai perata kai periodous. hōn ho hēlios epistatēs ōn kai skopos, horixein
-  kai brabeuein kai anadeiknunai kai anaphainein metabolas kai hōras ahi panta pherousi, kath' HĒrakleiton, oude phaulōn oude
-  mikrōn, alla tōn megistōn kai kuriōtatōn tō hēgemoni kai prōtō theō ginetai sunergos
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heaven
@@ -53,20 +47,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: οὕτως οὖν ἀναγκαίαν πρὸς τὸν οὐρανὸν ἔχων συμπλοκὴν καὶ συναρμογὴν ὁ χρόνος οὐκ ἁπλῶς ἐστι κίνησις ἀλλ', ὥσπερ εἴρηται,
-    κίνησις ἐν τάξει μετρον ἐχούσῃ καὶ πέρατα καὶ περιόδους. ὧν ὁ ἥλιος ἐπιστάτης ὢν καὶ σκοπός, ὁρίξειν καὶ βραβευειν καὶ
-    ἀναδεικνύναι καὶ ἀναφαίνειν μεταβολὰς καὶ ὥρας αἳ πάντα φέρουσι, καθ' Ἡράκλειτον, οὐδὲ φαύλων οὐδὲ μικρῶν, ἀλλὰ τῶν μεγίστων
-    καὶ κυριωτάτων τῷ ἡγεμόνι καὶ πρώτῳ θεῷ γίνεται συνεργός
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 34'
-- kind: iast
-  label: IAST
-  body: ohutōs oun anankaian pros ton ouranon echōn sumplokēn kai sunarmogēn ho chronos ouk haplōs esti kinēsis all', hōsper
-    eirētai, kinēsis en taxei metron echousē kai perata kai periodous. hōn ho hēlios epistatēs ōn kai skopos, horixein kai
-    brabeuein kai anadeiknunai kai anaphainein metabolas kai hōras ahi panta pherousi, kath' HĒrakleiton, oude phaulōn oude
-    mikrōn, alla tōn megistōn kai kuriōtatōn tō hēgemoni kai prōtō theō ginetai sunergos
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Time, having a necessary union and connection with heaven, is not simple motion, but, so to speak, motion in an order,
@@ -88,35 +68,6 @@ pratibha_layers:
     role as ''helper of the leader and first God'' means the visible, recurring measure (solstice, equinox, day-length) participates
     in divine governance. Time becomes knowable, inhabitable, *real* only through this marriage of motion and limit.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (Time, having
-      a necessary union and connection with heaven, is not simple motion, but, so to speak, motion i…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (Time, having a necessary union and connection
-      with heaven, is not simple motion, but, so to speak, motion i…), the proportion that governs exchange, fire, and speech
-      — what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (Time, having
-      a necessary union and connection with heaven, is not simple motion, but, so to speak, motion i…), tensioned unity of
-      opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (Time, having a
-      necessary union and connection with heaven, is not simple motion, but, so to speak, motion i…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Watch the shadow cast by a fixed object (doorframe, pole, window-edge) at three moments across a single day—morning,
@@ -157,6 +108,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P034
   source_reference: Patrick (1889), frag. 34; corpus HFR_P034
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 34'
-  iast: transliterated_from_greek

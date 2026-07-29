@@ -47,17 +47,14 @@ editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
 - kind: original
-  label: Original (Middle English)
+  label: Original
   body: 'Bot now thou askest me and seiest: ''How schal I think on himself, and what is hee?'' And to this I cannot answere
     thee bot thus: ''I wote never.'' For thou hast brought me with thi question into that same derknes, and into that same
     cloude of unknowyng that I wolde thou were in thiself.'
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  layer_provenance: sourced
 - kind: iast
   label: IAST
   body: Middle English (original language of the work).
-  layer_provenance: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912
-    (and earlier ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
 - kind: translation
   label: Pratibha Translation
   body: 'But now you ask me and say, ''How shall I think on himself, and what is he?'' And to this I can answer only thus:
@@ -76,30 +73,6 @@ pratibha_layers:
     feels the ground of rational certainty give way. The cloud of unknowing is not a veil to penetrate but the very medium
     in which authentic longing moves. To think on God is to abandon the thought of thinking and to let the question itself
     become the prayer.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: cloud of unknowing
-    definition: 'Middle English contemplative idiom → the dark between you and God where conceptual knowing of God fails and
-      love pierces Here: '' For you have brought me with your question into that same darkness, and into that same cloud of
-      unknowing, that I would you were in yourself. Trap: vague foggy mysticism without the disciplined ‘work’ of piercing
-      love'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: nakid entent (naked intent)
-    definition: 'ME ‘bare / naked intention’ → stripped willing toward God alone, without images or discursive props Here:
-      Nothing but a Naked Intent Stretching unto God Nothing but a Naked Intent Stretching unto God Bot now thou askest me
-      and seiest: ''How schal I think on himself,… Trap: willpower striving; misses the bareness of intention'
-  - term: apophasis
-    definition: 'ἀπόφασις ‘unsaying’ → approach to God by denying inadequate knowing—here practiced as cloud-work Here: ''
-      For thou hast brought me with thi question into that same derknes, and into that same cloude of unknowyng that I wolde
-      thou were in thiself. Trap: atheism or anti-intellectual pose'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  - term: werk (work of contemplation)
-    definition: 'ME werk → the specific contemplative labor of holding naked intent in the cloud Here: Middle English (original
-      language of the work). Trap: generic spiritual busywork'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: When someone asks you a question about ultimate things—God, meaning, the nature of consciousness—answer first with
@@ -112,7 +85,4 @@ provenance:
   collection: The Cloud of Unknowing
   section: Ch. 6
   original_id: CLOUD_03
-  source_reference: Underhill 1912 PD Middle English edition (corpus ME in Original layer).
-layer_provenance:
-  original: 'middle_english: The Cloud of Unknowing — curated ME already in unit; PD edition Evelyn Underhill 1912 (and earlier
-    ME manuscript tradition). Manifest id cloud_of_unknowing_underhill_1912. Not a diplomatic MS edition.'
+  source_reference: ''

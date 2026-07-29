@@ -5,41 +5,32 @@ work_id: pratyabhijnahrdayam
 work_title: Pratyabhijnahrdayam
 unit_id: pratyabhijnahrdayam.phr_003
 unit_label: Sutra 3
-title: Consciousness Differentiates Through Paired Subjects and Objects
+title: Sutra 3
 unit_type: sutra
 sanskrit_devanagari: तन्नानानुरूपग्राह्यग्राहकभेदात्
 sanskrit_iast: tad-nānā-anurūpa-grāhya-grāhaka-bhedāt
-translation_literal: Through the differentiation of objects-to-be-grasped and subjects-that-grasp, each suited to its own
-  particular form, that [Consciousness manifests as] multiplicity.
-commentary: 'This sūtra distills the mechanics of manifestation (abhāsa) at the heart of Pratyabhijñā recognition. Kṣemarāja
-  is explaining how the One Consciousness (Cit), which is non-dual and undivided, appears as the infinite variety of experiential
-  worlds through a single principle: the pairing of grāhya (the object, that which is perceived) and grāhaka (the subject,
-  the perceiver). The word tad-nānā—''that multiplicity''—refers back to the cosmic display itself; anurūpa means ''in accordance
-  with'' or ''suited to''; bhedāt, ''through differentiation'' or ''by means of distinction.'' The sūtra is not saying that
-  Consciousness becomes divided; rather, it reveals that the appearance of division arises through the spontaneous play (līlā)
-  of Consciousness taking on the role of both knower and known, each adapted to its particular manifestation. A subject perceives
-  only objects suited to its capacity; a human eye sees light and form, a bat perceives echolocation, a stone experiences
-  nothing—yet all are modifications within one sentient field. This differentiation is not imposed from outside but flows
-  from Consciousness''s own freedom (svātantrya) to limit and express itself. Recognition (pratyabhijñā) begins when the meditator
-  sees through this apparent duality and recognizes both subject and object as movements within a single, self-aware Presence.
-  The teaching points to a radical shift: rather than being trapped in the subject-object split, one awakens to the Consciousness
-  that freely plays both roles simultaneously.
+translation_literal: The universe is multiple because of the differentiation of reciprocally adapted objects and subjects.
+commentary: 'Multiplicity is not a mistake. The one Consciousness does not fragment — it differentiates. *Grāhya* (the knowable)
+  and *grāhaka* (the knower) arise together, paired, co-constitutive. There is no object without a subject oriented toward
+  it; no subject without an object it takes up. This pairing — *anurūpa*, "mutually adapted" — is what generates the texture
+  of experience. The whole phenomenal world is a vast ecology of perceiving and perceived, each form of awareness calling
+  forth its corresponding objects. Kṣemarāja insists this diversity does not contradict non-duality: the one canvas supports
+  infinite paintings without itself being divided.
 
 
-  Key Terms
+  Cross-Tradition Resonance:
 
+  - Leibniz''s monadology: each monad perceives the whole universe from its own perspective — multiplicity as viewpoint-differentiation
+  within a single field.
 
-  **grāhya-grāhaka** — The object-to-be-grasped and the subject-that-grasps; the fundamental pair through which Consciousness
-  manifests multiplicity
+  - Indra''s Net (*Avataṁsaka Sūtra*): each jewel reflects all others; multiplicity as mutual reflection within a unified
+  field.
 
-  **bhedāt** — Through differentiation or distinction; the mechanism by which non-dual Consciousness appears as many
-
-  **svātantrya** — The absolute freedom or autonomy of Consciousness to limit and express itself in infinite forms'
+  - Heraclitus Fragment 50: the one and the many, the logos that unifies what appears divided.'
 insight: Multiplicity is not a mistake.
-practice: 'Pick an object in your immediate environment and hold your gaze on it for three breaths. Then, without looking
-  away, notice the ''I'' that is aware of it—not as a thought, but as the subtle sense of presence that makes the seeing possible.
-  Reverse the gaze: let your awareness turn inward and recognize that same ''I'' as the source from which both the object
-  and the seeing arise, suited to each other like two sides of a single act.'
+practice: In conversation today, notice the moment of contact between your knowing and another's being. What is the quality
+  of that gap — perceiver and perceived? Can you sense both poles as arising within the same field of awareness, rather than
+  as two separate substances meeting?
 upaya: ''
 themes:
 - awareness
@@ -62,21 +53,6 @@ tags:
 quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
-appendixes: []
-anchor_chapter: ''
-provenance:
-  collection: Pratyabhijnahrdayam
-  section: sutra
-  original_id: PHR_003
-  source_reference: ''
-translation: Through the differentiation of objects-to-be-grasped and subjects-that-grasp, each suited to its own particular
-  form, that [Consciousness manifests as] multiplicity.
-abhyasa: 'Pick an object in your immediate environment and hold your gaze on it for three breaths. Then, without looking away,
-  notice the ''I'' that is aware of it—not as a thought, but as the subtle sense of presence that makes the seeing possible.
-  Reverse the gaze: let your awareness turn inward and recognize that same ''I'' as the source from which both the object
-  and the seeing arise, suited to each other like two sides of a single act.'
-translation_provenance: Rendered from the public-domain source (Sanskrit (IAST)). Study rendering; not a critical edition.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
 - kind: original
   label: Original
@@ -94,7 +70,23 @@ pratibha_layers:
     it; no subject without an object it takes up. This pairing — *anurūpa*, "mutually adapted" — is what generates the texture
     of experience. The whole phenomenal world is a vast ecology of perceiving and perceived, each form of awareness calling
     forth its corresponding objects. Kṣemarāja insists this diversity does not contradict non-duality: the one canvas supports
-    infinite paintings without itself being divided.'
+    infinite paintings without itself being divided.
+
+
+    Cross-Tradition Resonance:
+
+    - Leibniz''s monadology: each monad perceives the whole universe from its own perspective — multiplicity as viewpoint-differentiation
+    within a single field.
+
+    - Indra''s Net (*Avataṁsaka Sūtra*): each jewel reflects all others; multiplicity as mutual reflection within a unified
+    field.
+
+    - Heraclitus Fragment 50: the one and the many, the logos that unifies what appears divided.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: In conversation today, notice the moment of contact between your knowing and another's being. What is the quality
+    of that gap — perceiver and perceived? Can you sense both poles as arising within the same field of awareness, rather
+    than as two separate substances meeting?
 - kind: key_terms
   label: Key Terms
   items:
@@ -108,27 +100,10 @@ pratibha_layers:
     definition: the knower, the subject of experience
   - term: bheda
     definition: differentiation, division, distinction
-    lemma_id: bheda
-    sense_id: bheda.shaiva
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Leibniz's monadology
-    resonance: each monad perceives the whole universe from its own perspective — multiplicity as viewpoint-differentiation
-      within a single field.
-    divergence: ''
-    passage_id: ''
-  - citation: Indra's Net (*Avataṁsaka Sūtra*)
-    resonance: each jewel reflects all others; multiplicity as mutual reflection within a unified field.
-    divergence: ''
-    passage_id: ''
-  - citation: Heraclitus Fragment 50
-    resonance: the one and the many, the logos that unifies what appears divided.
-    divergence: ''
-    passage_id: ''
-  layer_provenance: migrated_from_commentary
-- kind: practice
-  label: Practice (Abhyasa)
-  body: In conversation today, notice the moment of contact between your knowing and another's being. What is the quality
-    of that gap — perceiver and perceived? Can you sense both poles as arising within the same field of awareness, rather
-    than as two separate substances meeting?
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Pratyabhijnahrdayam
+  section: sutra
+  original_id: PHR_003
+  source_reference: ''

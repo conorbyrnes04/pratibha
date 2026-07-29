@@ -29,8 +29,8 @@ practice: 'Hold a piece of dry wood or bone in your palm for several minutes, fe
   Notice what you habitually want to add to it—polish, meaning, use, beauty. Each time the impulse arises, return attention
   to what is already gone from it, what it no longer holds. At day''s end, sit with the object once more and ask: what in
   me still clings, still swells with wanting to be other than what remains?'
-sanskrit_devanagari: Αὐγὴ ξηρὴ ψυχὴ σοφωτάτη καὶ ἀρίστη .
-sanskrit_iast: Augē xērē psuchē sophōtatē kai aristē .
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - attention
 - commentary_text
@@ -41,14 +41,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Αὐγὴ ξηρὴ ψυχὴ σοφωτάτη καὶ ἀρίστη .
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 75'
-- kind: iast
-  label: IAST
-  body: Augē xērē psuchē sophōtatē kai aristē .
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: /jThe dry beam is the wisest and best soul.
@@ -76,31 +68,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (/jThe dry beam
-      is the wisest and best soul.), the soul whose depth, dryness, or rudeness decides whether senses can witness truly ->
-      trap: modern psychology’s “psyche,” or immortal ego-personality'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (/jThe dry
-      beam is the wisest and best soul.), the shared pattern according to which all things occur — heard before it is argued
-      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (/jThe dry
-      beam is the wisest and best soul.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement
-      -> trap: reading “harmony” as conflict-avoidance or static balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (/jThe dry beam
-      is the wisest and best soul.), world-ruling fire as measured transformation and exchange, not mythic flame alone ->
-      trap: treating fire as a static elemental substance rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  layer_provenance: editorial-enriched
+  - term: psychē (ψυχή)
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -126,6 +97,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P053
   source_reference: Patrick (1889), frag. 53; corpus HFR_P053
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 75'
-  iast: transliterated_from_greek

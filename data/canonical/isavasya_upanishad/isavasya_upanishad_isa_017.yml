@@ -5,7 +5,7 @@ work_id: isavasya_upanishad
 work_title: Isavasya Upanishad
 unit_id: isavasya_upanishad.isa_017
 unit_label: Mantra 11
-title: Both Knowledge and Action Transcend Death
+title: Mantra 11
 unit_type: sutra
 sanskrit_devanagari: 'विद्यां चाविद्यां च यस्तद्वेदोभयं सह ।
 
@@ -13,49 +13,22 @@ sanskrit_devanagari: 'विद्यां चाविद्यां च य�
 sanskrit_iast: 'vidyam cavidyam ca yas tad vedobhayam saha |
 
   avidyaya mrtyum tirtva vidyayamrtam asnute || 11 ||'
-translation_literal: Whoever knows both knowledge and ignorance together—through ignorance crossing over death, through knowledge
-  attaining immortality.
-commentary: 'This verse presents one of Vedānta''s most radical teachings: that neither knowledge (vidyā) nor ignorance (avidyā)
-  is to be rejected outright, but both must be understood in their proper function and relationship to the Self.
+translation_literal: Knowing both together, one crosses death through avidya and attains immortality through vidya.
+commentary: 'Integration, not exclusion, is the teaching climax of this triad.
 
 
-  The verse operates on multiple levels. Literally, it teaches that one who comprehends *both* vidyā and avidyā—not as absolute
-  opposites but as complementary aspects of manifestation—gains mastery over death and reaches the deathless.
+  Key Terms:
 
 
-  Avidyā (ignorance) here is not mere stupidity but the cosmic principle of limitation, differentiation, and form-making (māyā).
-  It is the power by which the infinite appears as finite, the eternal as temporal. Through avidyā, the world of multiplicity
-  arises; through it, individual death appears real. Yet the verse says one must "cross over" (tīrtvā) death *via* avidyā—not
-  by denying it, but by understanding its nature and limits. When ignorance is seen clearly for what it is—a veil, not ultimate
-  reality—its grip on consciousness loosens.
+  **ubhayam saha** - both together.
 
 
-  Vidyā (knowledge) is direct recognition of the Self (Ātman) as the unchanging witness pervading all. This is not intellectual
-  knowledge but immediate knowing. Through this recognition, one attains amṛta—immortality, the deathless state. Not that
-  the body becomes eternal, but the identification with the body-mind complex dissolves, revealing what was never born and
-  cannot die.
+  Cross-Tradition Resonances:
 
 
-  The genius of the verse lies in its both/and logic. One does not escape the world by denying avidyā; one transcends it by
-  seeing through it. Knowledge and ignorance are not enemies but partners in the spiritual journey. The person who grasps
-  this paradox—who can function in the world of form (avidyā) while resting in the Self (vidyā)—lives the fullness of existence.
-  This is the non-dual vision: the Self pervading both the manifest and unmanifest, both knowledge and its apparent opposite,
-  both time and the timeless.
-
-
-  Key Terms
-
-
-  **vidyā** — Knowledge; direct, non-dual recognition of the Self (Ātman) as the eternal, unchanging witness
-
-  **avidyā** — Ignorance; the cosmic principle of limitation and differentiation through which the infinite appears as finite
-  form
-
-  **amṛta** — Immortality; the deathless state realized through knowledge of the Self, beyond time and change'
+  Karma-jnana synthesis debates.'
 insight: Integration, not exclusion, is the teaching climax of this triad.
-practice: In conversation today, when you feel certain you know what someone means, pause and ask them to say more—deliberately
-  crossing through your knowledge into the ignorance of what you don't yet understand. Notice how the conversation deepens,
-  and how by embracing what you don't know, you touch something truer than your first certainty.
+practice: Pair your meditation with one concrete ethical action immediately after.
 upaya: ''
 themes:
 - action
@@ -72,20 +45,6 @@ tags:
 quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
-appendixes: []
-anchor_chapter: ''
-provenance:
-  collection: Isavasya Upanishad
-  section: teaching_passage
-  original_id: ISA_017
-  source_reference: ''
-translation: Whoever knows both knowledge and ignorance together—through ignorance crossing over death, through knowledge
-  attaining immortality.
-abhyasa: In conversation today, when you feel certain you know what someone means, pause and ask them to say more—deliberately
-  crossing through your knowledge into the ignorance of what you don't yet understand. Notice how the conversation deepens,
-  and how by embracing what you don't know, you touch something truer than your first certainty.
-translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a critical edition.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
 - kind: original
   label: Original
@@ -108,18 +67,13 @@ pratibha_layers:
     Key Terms:
 
 
-    **ubhayam saha** - both together.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: avidyayā mṛtyuṃ tīrtvā (अविद्यया मृत्युं तीर्त्वा)
-    definition: 'crossing death by avidyā → empirical skill/engagement as mortality-crossing means → trap: ignorance saves'
-  - term: vidyayāmṛtam aśnute (विद्ययामृतम् अश्नुते)
-    definition: 'by vidyā one attains the deathless → trap: information confers immortality'
-    lemma_id: vidya
-  - term: ubhayaṃ saha (उभयं सह)
-    definition: 'both together → the Upaniṣad’s signature method → trap: sequential stages only'
-  layer_provenance: editorial-enriched
+    **ubhayam saha** - both together.
+
+
+    Cross-Tradition Resonances:
+
+
+    Karma-jnana synthesis debates.'
 - kind: practice
   label: Practice (Abhyasa)
   body: Pair your meditation with one concrete ethical action immediately after.
@@ -148,3 +102,10 @@ pratibha_layers:
       as the mechanical means, locating agency in practice rather than gnosis.
     passage_id: svetasvatara_upanishad.svu_008
   layer_provenance: generated_grounded
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Isavasya Upanishad
+  section: teaching_passage
+  original_id: ISA_017
+  source_reference: ''

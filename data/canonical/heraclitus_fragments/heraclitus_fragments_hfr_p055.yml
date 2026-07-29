@@ -26,8 +26,8 @@ practice: 'When struck by irritation, pain, desire, or sudden thought today—wh
   or internally: *this is the driving force now*. Do not resist it or claim it; do not spiritualize it into lesson. Notice
   instead the exact shape of the impact: where in the body, what texture, what it compels you toward. Repeat this naming three
   times through the day, each time meeting the blow as the primary fact, not as interruption.'
-sanskrit_devanagari: Πᾶν ἑπρετὸν πληγῇ νέμεται.
-sanskrit_iast: Pan hepreton plēgē nemetai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - desire
@@ -36,14 +36,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Πᾶν ἑπρετὸν πληγῇ νέμεται.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 55'
-- kind: iast
-  label: IAST
-  body: Pan hepreton plēgē nemetai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Every animal is driven by blows.”
@@ -60,24 +52,6 @@ pratibha_layers:
     The teaching cuts deeper than mechanism—it names a kind of humility written into flesh itself. Heraclitus does not console.
     He asks: what happens when you stop pretending you are the source of your own motion?'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (every animal
-      is driven by blows.”), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
-      Logos into private doctrine, mere logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (every animal is driven by blows.”), cosmic
-      justice that polices measures — the Erinyes as helpers when bounds are overstepped -> trap: courtroom morality alone;
-      here dikē is cosmological proportion, not only human law'
-  - term: νόμος (nomos)
-    definition: 'νόμος “law, custom, allotted order” -> in this passage (every animal is driven by blows.”), civic/cosmic
-      law worth defending as walls are — shared order that makes a people -> trap: arbitrary statute; Heraclitus binds nomos
-      to divine/common measure'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When struck by irritation, pain, desire, or sudden thought today—when you feel the blow—pause and name it aloud or
@@ -101,7 +75,7 @@ pratibha_layers:
       toward the larger order. Each moves from passive suffering to active alignment.'
     divergence: Heraclitus presents blows as impersonal cosmic fact; the Gita offers a voluntary ethical reorientation of
       action toward reciprocal duty and cosmic order.
-    passage_id: bhagavad_gita.bg_md_003
+    passage_id: bhagavad_gita.bg_03_09
   layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
@@ -110,6 +84,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P055
   source_reference: Patrick (1889), frag. 55; corpus HFR_P055
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 55'
-  iast: transliterated_from_greek

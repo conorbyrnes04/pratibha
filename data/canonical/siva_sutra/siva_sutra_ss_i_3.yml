@@ -5,7 +5,7 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_i_3
 unit_label: The multitude of sources coheres as the body of differentiation.
-title: Consciousness Articulates Through Plural Generative Points
+title: The multitude of sources coheres as the body of differentiation.
 unit_type: sutra
 sanskrit_devanagari: योनिवर्गः कलाशरीरम्
 sanskrit_iast: yonivargaḥ kalāśarīram
@@ -31,9 +31,7 @@ commentary: 'Here the text turns, almost imperceptibly, from pure identity towar
 
   Nothing here is yet mistaken. Differentiation is not the problem. Forgetting the ground of differentiation will be.'
 insight: Here the text turns, almost imperceptibly, from pure identity toward manifestation.
-practice: 'Trace the outline of your hand slowly, feeling each finger as a separate source that belongs to one body. As you
-  trace, whisper: "Many origins, one coherence" — then reverse the direction, letting the multiplicity dissolve back into
-  undivided sensation.'
+practice: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 upaya: ''
 themes:
 - action
@@ -90,6 +88,9 @@ pratibha_layers:
 
 
     Nothing here is yet mistaken. Differentiation is not the problem. Forgetting the ground of differentiation will be.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 - kind: key_terms
   label: Key Terms
   items:
@@ -99,18 +100,10 @@ pratibha_layers:
     definition: group, class, multiplicity
   - term: kalā
     definition: portion, limitation, articulating power
-    lemma_id: kala
   - term: śarīra
     definition: body, organized form
-    lemma_id: sarira
-    sense_id: sarira.shaiva
   - term: bheda
     definition: differentiation without rupture (implicit)
-    lemma_id: bheda
-    sense_id: bheda.shaiva
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Choose one ordinary action today and perform it without haste or self-narration. End with one breath of gratitude.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -136,9 +129,3 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.3
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS edition, public
-  domain).
-abhyasa: 'Trace the outline of your hand slowly, feeling each finger as a separate source that belongs to one body. As you
-  trace, whisper: "Many origins, one coherence" — then reverse the direction, letting the multiplicity dissolve back into
-  undivided sensation.'
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

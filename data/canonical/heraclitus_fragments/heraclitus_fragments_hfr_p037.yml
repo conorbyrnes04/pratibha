@@ -37,10 +37,8 @@ practice: Breathe in slowly through your nostrils and hold the breath while nami
   (a person, a rule, a fear). As you exhale, notice what dissolves—what certainty was actually just the shape of your own
   exhalation, borrowed back to you as knowledge. Repeat until the boundary between what you 'know' and what you merely inhabit
   becomes permeable.
-sanskrit_devanagari: δοκεῖ δ' ἐνίοις ἡ καπνώδης ἀναθυμίασις εἶναι ὀσμή, οὖσα κοινὴ γῆς τε καὶ ἀέρος. καὶ πάντες ἐπιφέρονται
-  ἐπὶ τοῦτο περὶ ὀσμῆς· διὸ καὶ Ἡράκλειτος οὕτως εἴρηκεν, ὡς εἰ πάντα τὰ ὄντα καπνὸς γένοιτο, ῥῖνες ἂν διαγνοῖεν
-sanskrit_iast: dokei d' eniois hē kapnōdēs anathumiasis einai osmē, ousa koinē gēs te kai aeros. kai pantes epipherontai epi
-  touto peri osmēs. dio kai HĒrakleitos ohutōs eirēken, hōs ei panta ta onta kapnos genoito, hrines an diagnoien
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - breath
 - commentary_text
@@ -53,16 +51,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: δοκεῖ δ' ἐνίοις ἡ καπνώδης ἀναθυμίασις εἶναι ὀσμή, οὖσα κοινὴ γῆς τε καὶ ἀέρος. καὶ πάντες ἐπιφέρονται ἐπὶ τοῦτο περὶ
-    ὀσμῆς· διὸ καὶ Ἡράκλειτος οὕτως εἴρηκεν, ὡς εἰ πάντα τὰ ὄντα καπνὸς γένοιτο, ῥῖνες ἂν διαγνοῖεν
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 37'
-- kind: iast
-  label: IAST
-  body: dokei d' eniois hē kapnōdēs anathumiasis einai osmē, ousa koinē gēs te kai aeros. kai pantes epipherontai epi touto
-    peri osmēs. dio kai HĒrakleitos ohutōs eirēken, hōs ei panta ta onta kapnos genoito, hrines an diagnoien
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: think that odor consists in smoky exhalation, common to earth and air, and that for smell all things are converted
@@ -94,33 +82,14 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (think that
-      odor consists in smoky exhalation, common to earth and air, and that for smell all things are co…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (think that odor consists in smoky
-      exhalation, common to earth and air, and that for smell all things are co…), breath-life as the medium through which
-      waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics alone,
-      or to mere oxygen'
-    lemma_id: pneuma
-    sense_id: pneuma.stoic
-  - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (think that odor
-      consists in smoky exhalation, common to earth and air, and that for smell all things are co…), world-ruling fire as
-      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
-      rather than lawful becoming'
-    lemma_id: pyr
-    sense_id: pyr.heraclitean
-  - term: κοινός (koinos)
-    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage (think that odor consists
-      in smoky exhalation, common to earth and air, and that for smell all things are co…), the common Logos: waking rationality
-      is shared; private dream-opinion is not a world -> trap: mere social consensus; koinos here is cosmological shareability,
-      not majority vote'
-  layer_provenance: editorial-enriched
+  - term: Logos (λόγος)
+    definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
+      all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
+      we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+  - term: psychē (ψυχή)
+    definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
+      ethics into cosmology: how you live is how you align (or fail) with measure.'
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -155,6 +124,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P037
   source_reference: Patrick (1889), frag. 37; corpus HFR_P037
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 37'
-  iast: transliterated_from_greek

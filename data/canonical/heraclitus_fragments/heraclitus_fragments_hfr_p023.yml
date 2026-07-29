@@ -31,8 +31,8 @@ practice: 'Pluck a string or strike a drum, and while the sound decays, attend t
   each time trying to hear not the note but the *work* happening inside it: the material pushing back against itself. Then
   apply the same listening to one moment today when you feel pulled in two directions—not to resolve it, but to notice what
   function, what actual output, emerges only because both pulls remain live.'
-sanskrit_devanagari: Παλίντροπος ἁρμονίη κόσμου ὅκωσπερ λύρης καὶ τόξου.
-sanskrit_iast: Palintropos harmoniē kosmou hokōsper lurēs kai toxou.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - harmony
@@ -44,14 +44,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Παλίντροπος ἁρμονίη κόσμου ὅκωσπερ λύρης καὶ τόξου.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 56'
-- kind: iast
-  label: IAST
-  body: Palintropos harmoniē kosmou hokōsper lurēs kai toxou.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: The harmony of the world is a harmony of oppositions, as in the case of the bow and of the lyre.
@@ -80,26 +72,10 @@ pratibha_layers:
 - kind: key_terms
   label: Key Terms
   items:
-  - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (The harmony
-      of the world is a harmony of oppositions, as in the case of the bow and of the lyre.), tensioned unity of opposites
-      — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance or static
-      balance'
-    lemma_id: harmonie
-    sense_id: harmonie.heraclitean
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (The harmony
-      of the world is a harmony of oppositions, as in the case of the bow and of the lyre.), the shared pattern according
-      to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or
-      only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: πόλεμος (polemos)
-    definition: 'πόλεμος “war, conflict” — strife as generative, not only destructive -> in this passage (The harmony of the
-      world is a harmony of oppositions, as in the case of the bow and of the lyre.), war/strife as father of things: opposition
-      that produces order rather than mere chaos -> trap: glorifying violence, or reading strife as a failure of order instead
-      of its instrument'
-  layer_provenance: editorial-enriched
+  - term: harmoniē (ἁρμονίη)
+    definition: Harmony here is tension held in proportion — the bent bow, tuned lyre. Unity is dynamic, not the removal of
+      difference. This is Heraclitus's answer to those who expect peace as sameness.
+  layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
@@ -115,7 +91,7 @@ pratibha_layers:
       through opposing tensions, the Bhagavad Gita through the three gunas as constitutive modalities of embodied existence.
     divergence: Heraclitus treats opposition as the instrument of cosmic harmony itself; the Gita treats the gunas as conditioning
       factors from which liberation requires transcendence rather than integration.
-    passage_id: bhagavad_gita.bg_md_011
+    passage_id: bhagavad_gita.bg_15_01
   layer_provenance: generated_grounded
 appendixes: []
 anchor_chapter: ''
@@ -124,6 +100,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P023
   source_reference: Patrick (1889), frag. 23; corpus HFR_P023
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 56'
-  iast: transliterated_from_greek

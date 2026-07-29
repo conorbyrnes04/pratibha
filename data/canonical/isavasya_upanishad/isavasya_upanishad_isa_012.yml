@@ -5,7 +5,7 @@ work_id: isavasya_upanishad
 work_title: Isavasya Upanishad
 unit_id: isavasya_upanishad.isa_012
 unit_label: Mantra 6
-title: Unified Vision Dissolves the Roots of Hatred
+title: Mantra 6
 unit_type: sutra
 sanskrit_devanagari: 'यस्तु सर्वाणि भूतान्यात्मन्येवानुपश्यति ।
 
@@ -13,45 +13,22 @@ sanskrit_devanagari: 'यस्तु सर्वाणि भूतान्�
 sanskrit_iast: 'yas tu sarvani bhutany atmany evanupasyati |
 
   sarvabhutesu catmanam tato na vijugupsate || 6 ||'
-translation_literal: Whoever sees all beings within the Self alone, and the Self within all beings—from that vision, no aversion
-  arises.
-commentary: 'This verse stands at the heart of the Īśā Upaniṣad''s teaching: the dissolution of hatred through direct perception
-  of non-duality. The word sarvāṇi bhūtāni (all beings) encompasses every creature, every form of life—not as separate objects
-  but as expressions of a single conscious presence. The verb anupasyati means to perceive continuously, to behold with sustained
-  attention; it is not intellectual belief but lived seeing.
+translation_literal: Who sees all beings in the Self and the Self in all beings does not shrink in hatred.
+commentary: 'Realization has an ethical signature: non-hatred.
 
 
-  The structure is reciprocal: beings are perceived within ātman (the Self), and simultaneously ātman is perceived within
-  all beings. This is not mystical poetry but a precise description of the collapse of subject-object duality. When this vision
-  stabilizes, vijugupsate (aversion, disgust, revulsion) cannot arise. Hatred requires a felt separation between self and
-  other—a sense that some being is fundamentally alien or threatening. But if the same consciousness looks out through every
-  eye, if the same life-force animates every form, then whom would one hate? Whom would one harm?
+  Key Terms:
 
 
-  This is not sentimentality. It is the logical and experiential consequence of seeing clearly. The verse does not command
-  love as an ethical duty; it describes what becomes impossible when the illusion of separation dissolves. Vijugupsate also
-  carries the sense of disgust or contempt—the turning away from what we judge as low, unworthy, or other. All such turning
-  away requires the fiction of fundamental otherness. Remove that fiction, and the roots of hatred wither.
+  **anupasyati** - sustained seeing.
 
 
-  The ethical revolution here is radical: morality does not flow from rules imposed from outside, but from the direct perception
-  that harming another is harming oneself—not as metaphor, but as lived truth.
+  Cross-Tradition Resonances:
 
 
-  Key Terms
-
-
-  **ātman** — The Self; the innermost consciousness that is identical in all beings and non-different from Brahman.
-
-  **anupasyati** — To perceive, behold, or witness continuously; to see with sustained, direct attention rather than conceptual
-  knowledge.
-
-  **vijugupsate** — Aversion, disgust, revulsion, or turning away; the emotional-volitional response of rejection based on
-  perceived otherness.'
+  Advaitic compassion logic.'
 insight: 'Realization has an ethical signature: non-hatred.'
-practice: When you encounter someone who triggers aversion—irritation, disgust, or rejection—pause and hold your gaze on their
-  eyes or face for three full breaths, silently tracing the single consciousness that animates both their form and yours,
-  the same Self looking out from behind their eyes as from behind your own. Let the felt separation thin with each exhale.
+practice: 'When aversion arises, ask: what shared being am I refusing to see?'
 upaya: ''
 themes:
 - mantra
@@ -64,19 +41,6 @@ tags:
 quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
-appendixes: []
-anchor_chapter: ''
-provenance:
-  collection: Isavasya Upanishad
-  section: teaching_passage
-  original_id: ISA_012
-  source_reference: ''
-translation: Whoever sees all beings within the Self alone, and the Self within all beings—from that vision, no aversion arises.
-abhyasa: When you encounter someone who triggers aversion—irritation, disgust, or rejection—pause and hold your gaze on their
-  eyes or face for three full breaths, silently tracing the single consciousness that animates both their form and yours,
-  the same Self looking out from behind their eyes as from behind your own. Let the felt separation thin with each exhale.
-translation_provenance: Rendered from the public-domain Sanskrit source (IAST). Study rendering; not a critical edition.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
 - kind: original
   label: Original
@@ -99,19 +63,13 @@ pratibha_layers:
     Key Terms:
 
 
-    **anupasyati** - sustained seeing.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: anupaśyati (अनुपश्यति)
-    definition: 'sustained seeing → sees all beings in Self and Self in all → trap: sentimental oneness'
-  - term: ātman (आत्मन्)
-    definition: 'Self as the field of non-hatred → trap: ego enlargement'
-    lemma_id: atman
-    sense_id: atman.upanishadic
-  - term: na vijugupsate (न विजुगुप्सते)
-    definition: 'does not shrink in disgust/hatred → ethical fruit of unity-vision → trap: moral indifference'
-  layer_provenance: editorial-enriched
+    **anupasyati** - sustained seeing.
+
+
+    Cross-Tradition Resonances:
+
+
+    Advaitic compassion logic.'
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When aversion arises, ask: what shared being am I refusing to see?'
@@ -134,3 +92,10 @@ pratibha_layers:
       of inherent nature (śūnyatā), a fundamentally different metaphysical ground for the same functional outcome.
     passage_id: heart_sutra.hs_003
   layer_provenance: generated_grounded
+appendixes: []
+anchor_chapter: ''
+provenance:
+  collection: Isavasya Upanishad
+  section: teaching_passage
+  original_id: ISA_012
+  source_reference: ''

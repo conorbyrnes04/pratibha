@@ -31,8 +31,8 @@ insight: ''
 practice: Spend one hour with a single ordinary object you use without thought—a doorknob, a cup, a key—and write down three
   things you notice about it that you had never seen before, no matter how small. Then notice what resistance or impatience
   arose while you were looking.
-sanskrit_devanagari: Οὐ φρονέουσι τοιαῦτα πολλοὶ ὁκόσοισι ἐγκυρέουσι οὐδὲ μαθόντες γινώσκουσι, ἑωυτοῖσι δὲ δοκέουσι.
-sanskrit_iast: Ou phroneousi toiauta polloi hokosoisi enkureousi oude mathontes ginōskousi, heōutoisi de dokeousi.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -43,14 +43,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Οὐ φρονέουσι τοιαῦτα πολλοὶ ὁκόσοισι ἐγκυρέουσι οὐδὲ μαθόντες γινώσκουσι, ἑωυτοῖσι δὲ δοκέουσι.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 5'
-- kind: iast
-  label: IAST
-  body: Ou phroneousi toiauta polloi hokosoisi enkureousi oude mathontes ginōskousi, heōutoisi de dokeousi.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: The majority of people have no understanding of the things with which they daily meet, nor, when instructed, do they
@@ -69,27 +61,6 @@ pratibha_layers:
     believes they possess what is being offered. The teaching, then, is not doctrinal but diagnostic: it asks you to notice
     the exact moment when familiarity becomes opacity, when daily contact becomes daily absence.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: σύνεσις (synesis)
-    definition: 'συνίημι “to send together, understand” → σύνεσις as gathering-into-comprehension -> in this passage (The
-      majority of people have no understanding of the things with which they daily meet, nor, when instructed…), understanding
-      as holding-together what daily contact already offers — not new information alone -> trap: IQ or book-learning; synesis
-      fails when familiarity becomes opacity'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (The majority
-      of people have no understanding of the things with which they daily meet, nor, when instructed…), the shared pattern
-      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (The majority
-      of people have no understanding of the things with which they daily meet, nor, when instructed…), wisdom apart from
-      polymathy: knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη)
-      or reputation for knowledge'
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Spend one hour with a single ordinary object you use without thought—a doorknob, a cup, a key—and write down three
@@ -128,6 +99,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P005
   source_reference: Patrick (1889), frag. 5; corpus HFR_P005
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 5'
-  iast: transliterated_from_greek

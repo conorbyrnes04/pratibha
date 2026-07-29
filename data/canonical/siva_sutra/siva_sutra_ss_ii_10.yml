@@ -5,20 +5,18 @@ work_id: siva_sutra
 work_title: Siva Sutra
 unit_id: siva_sutra.ss_ii_10
 unit_label: When knowledge withdraws, dreamlike perception arises from it.
-title: Knowledge's Dissolution Opens Imaginal Perception
+title: When knowledge withdraws, dreamlike perception arises from it.
 unit_type: sutra
 sanskrit_devanagari: विद्यासंहारे तदुत्थस्वप्नदर्शनम्
 sanskrit_iast: vidyā-saṁhāre tad-uttha-svapna-darśanam
 translation_literal: When knowledge withdraws, dreamlike perception arises from it.
-commentary: 'Even refined knowledge must eventually loosen. As conceptual knowing subsides, perception
-  becomes imaginal once more — fluid, symbolic, and suggestive.
+commentary: 'Even refined knowledge must eventually loosen. As conceptual knowing subsides, perception becomes imaginal once
+  more — fluid, symbolic, and suggestive.
 
 
   This is not regression but transition. Awareness prepares to move beyond structured support.'
 insight: Even refined knowledge must eventually loosen.
-practice: Release one certainty you held this morning—a firm opinion, a fixed plan, a known answer—and
-  notice what fluid, half-formed perception arises in its place during the next hour. Let the dreamlike
-  quality linger without rushing to rebuild knowledge around it.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 upaya: ''
 themes:
 - awareness
@@ -47,11 +45,14 @@ pratibha_layers:
   body: When knowledge withdraws, dreamlike perception arises from it.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Even refined knowledge must eventually loosen. As conceptual knowing subsides, perception becomes
-    imaginal once more — fluid, symbolic, and suggestive.
+  body: 'Even refined knowledge must eventually loosen. As conceptual knowing subsides, perception becomes imaginal once more
+    — fluid, symbolic, and suggestive.
 
 
     This is not regression but transition. Awareness prepares to move beyond structured support.'
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -59,39 +60,30 @@ pratibha_layers:
     definition: withdrawal of knowledge
   - term: svapna-darśana
     definition: dreamlike seeing
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Svetasvatara Upanishad — Knowledge and Ignorance in the Imperishable
-    resonance: 'Both texts posit a fundamental duality hidden within or prior to manifest reality: the
-      Siva Sutra describes knowledge withdrawing to reveal dreamlike perception, while the Svetasvatara
-      names knowledge and ignorance as two principles concealed in the imperishable Brahman. Each treats
-      the withdrawal or concealment of one epistemic mode as generative of another.'
-    divergence: The Siva Sutra emphasizes the dynamic withdrawal of refined knowledge as a lived phenomenological
-      event, whereas the Svetasvatara presents knowledge and ignorance as static metaphysical principles
-      eternally hidden in Brahman's nature.
+    resonance: 'Both texts posit a fundamental duality hidden within or prior to manifest reality: the Siva Sutra describes
+      knowledge withdrawing to reveal dreamlike perception, while the Svetasvatara names knowledge and ignorance as two principles
+      concealed in the imperishable Brahman. Each treats the withdrawal or concealment of one epistemic mode as generative
+      of another.'
+    divergence: The Siva Sutra emphasizes the dynamic withdrawal of refined knowledge as a lived phenomenological event, whereas
+      the Svetasvatara presents knowledge and ignorance as static metaphysical principles eternally hidden in Brahman's nature.
     passage_id: svetasvatara_upanishad.svu_013
   - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 4
-    resonance: 'Both texts describe a threshold where ordinary knowledge must cease or be transcended:
-      the Siva Sutra shows knowledge withdrawing to allow dreamlike perception to arise, and Plotinus
-      describes awareness of the ultimate Principle as transcending all knowledge and intellection, requiring
-      a presence beyond knowing.'
-    divergence: The Siva Sutra treats the withdrawal as a natural loosening within consciousness itself,
-      while Plotinus frames transcendence as a radical rupture from the multiplicity of knowing into a
-      singular, non-dual presence.
+    resonance: 'Both texts describe a threshold where ordinary knowledge must cease or be transcended: the Siva Sutra shows
+      knowledge withdrawing to allow dreamlike perception to arise, and Plotinus describes awareness of the ultimate Principle
+      as transcending all knowledge and intellection, requiring a presence beyond knowing.'
+    divergence: The Siva Sutra treats the withdrawal as a natural loosening within consciousness itself, while Plotinus frames
+      transcendence as a radical rupture from the multiplicity of knowing into a singular, non-dual presence.
     passage_id: plotinus_enneads.enn_vi_9_04
   - citation: Tao Te Ching — The Paradox of Knowing
-    resonance: 'Both texts invert the conventional hierarchy of knowledge: the Siva Sutra suggests that
-      refined knowledge must loosen for a subtler perception to emerge, and the Tao Te Ching teaches that
-      knowing one does not know is highest attainment, while claiming to know is disease. Each reverses
-      what appears as epistemic gain into epistemic error.'
-    divergence: The Siva Sutra grounds this inversion in the structure of consciousness itself (vidya-samhara),
-      while the Tao Te Ching frames it as an ethical and practical paradox about the limits of discursive
-      knowing.
+    resonance: 'Both texts invert the conventional hierarchy of knowledge: the Siva Sutra suggests that refined knowledge
+      must loosen for a subtler perception to emerge, and the Tao Te Ching teaches that knowing one does not know is highest
+      attainment, while claiming to know is disease. Each reverses what appears as epistemic gain into epistemic error.'
+    divergence: The Siva Sutra grounds this inversion in the structure of consciousness itself (vidya-samhara), while the
+      Tao Te Ching frames it as an ethical and practical paradox about the limits of discursive knowing.
     passage_id: tao_te_ching.ttc_md_073
   layer_provenance: generated_grounded
 appendixes: []
@@ -101,9 +93,3 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.10
   source_reference: ''
-translation_provenance: Original English translation and commentary by the author, from the Sanskrit (KSTS
-  edition, public domain).
-abhyasa: Release one certainty you held this morning—a firm opinion, a fixed plan, a known answer—and
-  notice what fluid, half-formed perception arises in its place during the next hour. Let the dreamlike
-  quality linger without rushing to rebuild knowledge around it.
-practice_provenance: Practice re-authored for form diversity, grounded in the passage.

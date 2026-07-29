@@ -31,8 +31,8 @@ practice: Return to one repetitive task you perform daily—washing, typing, wal
   you move through it, feel for the exact moment when the action shifts from something you are doing to something that is
   doing you, or when both occur simultaneously. Do not try to change it. Mark where the weariness lives—in the body, the attention,
   the will—and whether it has a texture or a weight. Repeat this noticing for three days without commentary.
-sanskrit_devanagari: Κάματός ἐστι τοῖς αὐτοῖς μοχθεῖν καὶ ἄρχεσθαι.
-sanskrit_iast: Kamatos esti tois autois mochthein kai archesthai.
+sanskrit_devanagari: ''
+sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
 tags:
 - action
 - attention
@@ -43,14 +43,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: Κάματός ἐστι τοῖς αὐτοῖς μοχθεῖν καὶ ἄρχεσθαι.
-  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 82'
-- kind: iast
-  label: IAST
-  body: Kamatos esti tois autois mochthein kai archesthai.
-  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: It is weariness upon the same things to labor and by them to be controlled.” Iamblichus from Stob. Eel. 11. 1, Ὁ.
@@ -68,21 +60,6 @@ pratibha_layers:
     laboring'' but ''notice the exact topology of this exhaustion''—how the same things that demand your work are the same
     things that limit your freedom. This is not despair. It is the beginning of seeing what actually moves.'
   layer_provenance: template-assembled
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (It is weariness upon the same things to labor
-      and by them to be controlled.” Iamblichus from Stob. Eel. 11.…), the proportion that governs exchange, fire, and speech
-      — what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
-  - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (It is weariness
-      upon the same things to labor and by them to be controlled.” Iamblichus from Stob. Eel. 11.…), the shared pattern according
-      to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or
-      only the later Johannine Word'
-    lemma_id: logos
-    sense_id: logos.greek
-  layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
   body: Return to one repetitive task you perform daily—washing, typing, walking a familiar route, tending something. As you
@@ -124,6 +101,3 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P082
   source_reference: Patrick (1889), frag. 82; corpus HFR_P082
-layer_provenance:
-  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 82'
-  iast: transliterated_from_greek

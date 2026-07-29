@@ -8,7 +8,7 @@ unit_label: The Threefold Nature of Reality and the Human Condition
 title: The Threefold Nature of Reality and the Human Condition
 unit_type: sutra
 sanskrit_devanagari: Ἐπὶ μὲν οὖν τοῦ ὄντος ἕνεκα τούτου ἡ τοιαύτη ἀνάγκη (Enneads V.1.10, line 1)
-sanskrit_iast: Epi men oun tou ontos heneka toutou hē toiautē ananakē (Enneads V.1.10, line 1)
+sanskrit_iast: N/A, as the passage does not contain specific Greek terms that require transliteration.
 translation_literal: The human condition is characterized by a threefold nature, reflecting the fundamental principles of
   the universe. We have a divine aspect, which transcends the material realm and is connected to the [Intellectual-Principle].
   Our soul is a divine entity, belonging to a higher order than the senses, and it contains the [Intellectual-Principle] with
@@ -36,7 +36,21 @@ commentary: 'The philosophical claim that the human condition is characterized b
   unchanging aspect of reality -> default translation misses the connotation of divine intellect.
 
   * **Soul (Ψυχή)** — from the Greek concept of breath and life -> refers to the animating principle of living beings -> default
-  translation misses the connotation of the soul as a divine, immortal entity.'
+  translation misses the connotation of the soul as a divine, immortal entity.
+
+
+  Cross-Tradition Resonances:
+
+
+  * **Katha Upanishad, 2.3.9:** The idea of the threefold nature of reality is echoed in the Katha Upanishad, which describes
+  the universe as consisting of three fundamental principles: the Absolute, the intellect, and the ego.
+
+  * **Phaedo, 67b-69d:** The concept of the soul as a divine, immortal entity is also found in Plato''s Phaedo, which describes
+  the soul as a separate, immaterial substance that exists before birth and after death.
+
+  * **Pratyabhijnahrdayam, 3:** The idea of recognizing the divine aspect of our nature and cultivating detachment from the
+  body is reflected in the Pratyabhijnahrdayam, which describes the process of self-realization as involving the recognition
+  of our true, divine nature.'
 insight: The philosophical claim that the human condition is characterized by a threefold nature, reflecting the fundamental
   principles of the universe, is a counterintuitive move that challenges our conventional understanding of reality.
 practice: 'As you go about your daily activities, take a moment to reflect on your thoughts and emotions, and ask yourself:
@@ -101,60 +115,21 @@ pratibha_layers:
     and unchanging aspect of reality -> default translation misses the connotation of divine intellect.
 
     * **Soul (Ψυχή)** — from the Greek concept of breath and life -> refers to the animating principle of living beings ->
-    default translation misses the connotation of the soul as a divine, immortal entity.'
-- kind: key_terms
-  label: Key Terms
-  items:
-  - term: nous (νοῦς)
-    definition: '‘intellect’ → second hypostasis: self-thinking thought identical with intelligibles Here: We have a divine
-      aspect, which transcends the material realm and is connected to the [Intellectual-Principle]. Trap: IQ / discursive
-      brain-mind (dianoia)'
-    lemma_id: nous
-    sense_id: nous.neoplatonic
-  - term: to hen / the One (τὸ ἕν)
-    definition: 'ἕν ‘one’ → source beyond being and intellect; not a countable unit Trap: monotheistic person-God or mathematical
-      oneness'
-    lemma_id: henosis
-    sense_id: henosis.plotinian
-  - term: psychē (ψυχή)
-    definition: '‘soul’ → living knowing that can turn toward Nous or toward body Here: Our soul is a divine entity, belonging
-      to a higher order than the senses, and it contains the [Intellectual-Principle] with its dual aspects of reasoning and
-      p… Trap: ghost in the machine; mere psychology'
-    lemma_id: psyche
-    sense_id: psyche.platonic
-  - term: henosis (ἕνωσις)
-    definition: 'process of making-one → return to unity with the One beyond even Intellect Here: The reasoning aspect of
-      our soul is separate from the body and exists in a realm beyond space, untouched by the material world. Trap: emotional
-      merger / psychedelic peak as equivalent'
-    lemma_id: henosis
-    sense_id: henosis.plotinian
-  - term: apophasis / beyond
-    definition: 'unsaying what the One is not → the One exceeds every predicate including ‘being’ Here: The reasoning aspect
-      of our soul is separate from the body and exists in a realm beyond space, untouched by the material world. Trap: vague
-      ineffability without the hypostatic order'
-    lemma_id: apophasis
-    sense_id: apophasis.christian
-  layer_provenance: editorial-enriched
-- kind: resonances
-  label: Cross-Tradition Resonances
-  items:
-  - citation: Katha Upanishad, 2.3.9
-    resonance: 'The idea of the threefold nature of reality is echoed in the Katha Upanishad, which describes the universe
-      as consisting of three fundamental principles: the Absolute, the intellect, and the ego.'
-    divergence: ''
-    passage_id: ''
-  - citation: Phaedo, 67b-69d
-    resonance: The concept of the soul as a divine, immortal entity is also found in Plato's Phaedo, which describes the soul
-      as a separate, immaterial substance that exists before birth and after death.
-    divergence: ''
-    passage_id: ''
-  - citation: Pratyabhijnahrdayam, 3
-    resonance: The idea of recognizing the divine aspect of our nature and cultivating detachment from the body is reflected
-      in the Pratyabhijnahrdayam, which describes the process of self-realization as involving the recognition of our true,
-      divine nature.
-    divergence: ''
-    passage_id: pratyabhijnahrdayam.phr_003
-  layer_provenance: migrated_from_commentary
+    default translation misses the connotation of the soul as a divine, immortal entity.
+
+
+    Cross-Tradition Resonances:
+
+
+    * **Katha Upanishad, 2.3.9:** The idea of the threefold nature of reality is echoed in the Katha Upanishad, which describes
+    the universe as consisting of three fundamental principles: the Absolute, the intellect, and the ego.
+
+    * **Phaedo, 67b-69d:** The concept of the soul as a divine, immortal entity is also found in Plato''s Phaedo, which describes
+    the soul as a separate, immaterial substance that exists before birth and after death.
+
+    * **Pratyabhijnahrdayam, 3:** The idea of recognizing the divine aspect of our nature and cultivating detachment from
+    the body is reflected in the Pratyabhijnahrdayam, which describes the process of self-realization as involving the recognition
+    of our true, divine nature.'
 - kind: practice
   label: Practice (Abhyasa)
   body: 'As you go about your daily activities, take a moment to reflect on your thoughts and emotions, and ask yourself:
@@ -221,4 +196,3 @@ provenance:
   section: Ennead V, Tractate 1, Section 10
   original_id: ENN_V_1_10
   source_reference: ''
-translation_provenance: English adapted from Stephen MacKenna & B. S. Page, *The Enneads* (public domain). Study rendering.
