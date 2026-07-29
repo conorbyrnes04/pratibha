@@ -7,16 +7,14 @@ unit_id: dhammapada.dhp_ch25
 unit_label: Restraint of Eye Is Good
 title: Restraint of Eye Is Good
 unit_type: sutra
-sanskrit_devanagari: '(360) Cakkhunā saṁvaro sādhu, sādhu sotena saṁvaro; Ghānena saṁvaro sādhu, sādhu
-  jivhāya saṁvaro.
+sanskrit_devanagari: '(360) चक्खुना संवरो साधु, साधु सोतेन संवरो; घानेन संवरो साधु, साधु जिव्हाय संवरो.
 
 
-  (361) Kāyena saṁvaro sādhu, sādhu vācāya saṁvaro; Manasā saṁvaro sādhu, sādhu sabbattha saṁvaro; Sabbattha
-  saṁvuto bhikkhu, sabbadukkhā pamuccati.
+  (361) कायेन संवरो साधु, साधु वाचाय संवरो; मनसा संवरो साधु, साधु सब्बत्थ संवरो; सब्बत्थ संवुतो भिक्खु,
+  सब्बदुक्खा पमुच्चति.
 
 
-  (362) Hatthasaṁyato pādasaṁyato, Vācāsaṁyato saṁyatuttamo; Ajjhattarato samāhito, Eko santusito tamāhu
-  bhikkhuṁ.'
+  (362) हत्थसंयतो पादसंयतो, वाचासंयतो संयतुत्तमो; अज्झत्तरतो समाहितो, एको सन्तुसितो तमाहु भिक्खुं.'
 sanskrit_iast: '(360) Cakkhunā saṁvaro sādhu, sādhu sotena saṁvaro; Ghānena saṁvaro sādhu, sādhu jivhāya
   saṁvaro.
 
@@ -77,15 +75,14 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(360) Cakkhunā saṁvaro sādhu, sādhu sotena saṁvaro; Ghānena saṁvaro sādhu, sādhu jivhāya saṁvaro.
+  body: '(360) चक्खुना संवरो साधु, साधु सोतेन संवरो; घानेन संवरो साधु, साधु जिव्हाय संवरो.
 
 
-    (361) Kāyena saṁvaro sādhu, sādhu vācāya saṁvaro; Manasā saṁvaro sādhu, sādhu sabbattha saṁvaro; Sabbattha
-    saṁvuto bhikkhu, sabbadukkhā pamuccati.
+    (361) कायेन संवरो साधु, साधु वाचाय संवरो; मनसा संवरो साधु, साधु सब्बत्थ संवरो; सब्बत्थ संवुतो भिक्खु,
+    सब्बदुक्खा पमुच्चति.
 
 
-    (362) Hatthasaṁyato pādasaṁyato, Vācāsaṁyato saṁyatuttamo; Ajjhattarato samāhito, Eko santusito tamāhu
-    bhikkhuṁ.'
+    (362) हत्थसंयतो पादसंयतो, वाचासंयतो संयतुत्तमो; अज्झत्तरतो समाहितो, एको सन्तुसितो तमाहु भिक्खुं.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -98,6 +95,7 @@ pratibha_layers:
 
     (362) Hatthasaṁyato pādasaṁyato, Vācāsaṁyato saṁyatuttamo; Ajjhattarato samāhito, Eko santusito tamāhu
     bhikkhuṁ.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(360) Restraint in the eye is good, good is restraint in the ear, in the nose restraint is good,
@@ -155,4 +153,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 25 — The Bhikkhu (Bhikkhuvagga), vv. 360–382
   original_id: DHP_CH25
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

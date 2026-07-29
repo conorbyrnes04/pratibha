@@ -7,14 +7,13 @@ unit_id: dhammapada.dhp_ch11
 unit_label: Looking for the Maker of This House
 title: Looking for the Maker of This House
 unit_type: sutra
-sanskrit_devanagari: '(146) Ko nu hāso kimānando, niccaṁ pajjalite sati; Andhakārena onaddhā, padīpaṁ
-  na gavesatha.
+sanskrit_devanagari: '(146) को नु हासो किमानन्दो, निच्चं पज्जलिते सति; अन्धकारेन ओनद्धा, पदीपं न गवेसथ.
 
 
-  (147) Passa cittakataṁ bimbaṁ, arukāyaṁ samussitaṁ; Āturaṁ bahusaṅkappaṁ, yassa natthi dhuvaṁ ṭhiti.
+  (147) पस्स चित्तकतं बिम्बं, अरुकायं समुस्सितं; आतुरं बहुसङ्कप्पं, यस्स नत्थि धुवं ठिति.
 
 
-  (148) Parijiṇṇamidaṁ rūpaṁ, roganīḷaṁ pabhaṅguraṁ; Bhijjati pūtisandeho, maraṇantañhi jīvitaṁ.'
+  (148) परिजिण्णमिदं रूपं, रोगनीऌअं पभङ्गुरं; भिज्जति पूतिसन्देहो, मरणन्तञ्हि जीवितं.'
 sanskrit_iast: '(146) Ko nu hāso kimānando, niccaṁ pajjalite sati; Andhakārena onaddhā, padīpaṁ na gavesatha.
 
 
@@ -75,13 +74,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(146) Ko nu hāso kimānando, niccaṁ pajjalite sati; Andhakārena onaddhā, padīpaṁ na gavesatha.
+  body: '(146) को नु हासो किमानन्दो, निच्चं पज्जलिते सति; अन्धकारेन ओनद्धा, पदीपं न गवेसथ.
 
 
-    (147) Passa cittakataṁ bimbaṁ, arukāyaṁ samussitaṁ; Āturaṁ bahusaṅkappaṁ, yassa natthi dhuvaṁ ṭhiti.
+    (147) पस्स चित्तकतं बिम्बं, अरुकायं समुस्सितं; आतुरं बहुसङ्कप्पं, यस्स नत्थि धुवं ठिति.
 
 
-    (148) Parijiṇṇamidaṁ rūpaṁ, roganīḷaṁ pabhaṅguraṁ; Bhijjati pūtisandeho, maraṇantañhi jīvitaṁ.'
+    (148) परिजिण्णमिदं रूपं, रोगनीऌअं पभङ्गुरं; भिज्जति पूतिसन्देहो, मरणन्तञ्हि जीवितं.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -92,6 +91,7 @@ pratibha_layers:
 
 
     (148) Parijiṇṇamidaṁ rūpaṁ, roganīḷaṁ pabhaṅguraṁ; Bhijjati pūtisandeho, maraṇantañhi jīvitaṁ.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(146) How is there laughter, how is there joy, as this world is always burning? Why do you not
@@ -149,4 +149,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 11 — Old Age (Jarāvagga), vv. 146–156
   original_id: DHP_CH11
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

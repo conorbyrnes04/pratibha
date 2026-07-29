@@ -7,14 +7,14 @@ unit_id: dhammapada.dhp_ch20
 unit_label: The Eightfold Path Is Best of Ways
 title: The Eightfold Path Is Best of Ways
 unit_type: sutra
-sanskrit_devanagari: '(273) Maggānaṭṭhaṅgiko seṭṭho, saccānaṁ caturo padā; Virāgo seṭṭho dhammānaṁ, dvipadānañca
-  cakkhumā.
+sanskrit_devanagari: '(273) मग्गानट्ठङ्गिको सेट्ठो, सच्चानं चतुरो पदा; विरागो सेट्ठो धम्मानं, द्विपदानञ्च
+  चक्खुमा.
 
 
-  (274) Eseva maggo natthañño, Dassanassa visuddhiyā; Etañhi tumhe paṭipajjatha, Mārassetaṁ pamohanaṁ.
+  (274) एसेव मग्गो नत्थञ्ञो, दस्सनस्स विसुद्धिया; एतञ्हि तुम्हे पटिपज्जथ, मारस्सेतं पमोहनं.
 
 
-  (275) Etañhi tumhe paṭipannā, dukkhassantaṁ karissatha; Akkhāto vo mayā maggo, aññāya sallakantanaṁ.'
+  (275) एतञ्हि तुम्हे पटिपन्ना, दुक्खस्सन्तं करिस्सथ; अक्खातो वो मया मग्गो, अञ्ञाय सल्लकन्तनं.'
 sanskrit_iast: '(273) Maggānaṭṭhaṅgiko seṭṭho, saccānaṁ caturo padā; Virāgo seṭṭho dhammānaṁ, dvipadānañca
   cakkhumā.
 
@@ -81,13 +81,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(273) Maggānaṭṭhaṅgiko seṭṭho, saccānaṁ caturo padā; Virāgo seṭṭho dhammānaṁ, dvipadānañca cakkhumā.
+  body: '(273) मग्गानट्ठङ्गिको सेट्ठो, सच्चानं चतुरो पदा; विरागो सेट्ठो धम्मानं, द्विपदानञ्च चक्खुमा.
 
 
-    (274) Eseva maggo natthañño, Dassanassa visuddhiyā; Etañhi tumhe paṭipajjatha, Mārassetaṁ pamohanaṁ.
+    (274) एसेव मग्गो नत्थञ्ञो, दस्सनस्स विसुद्धिया; एतञ्हि तुम्हे पटिपज्जथ, मारस्सेतं पमोहनं.
 
 
-    (275) Etañhi tumhe paṭipannā, dukkhassantaṁ karissatha; Akkhāto vo mayā maggo, aññāya sallakantanaṁ.'
+    (275) एतञ्हि तुम्हे पटिपन्ना, दुक्खस्सन्तं करिस्सथ; अक्खातो वो मया मग्गो, अञ्ञाय सल्लकन्तनं.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -98,6 +98,7 @@ pratibha_layers:
 
 
     (275) Etañhi tumhe paṭipannā, dukkhassantaṁ karissatha; Akkhāto vo mayā maggo, aññāya sallakantanaṁ.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(273) The best of ways is the eightfold; the best of truths the four words; the best of virtues
@@ -158,4 +159,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 20 — The Way (Maggavagga), vv. 273–289
   original_id: DHP_CH20
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

@@ -7,14 +7,14 @@ unit_id: dhammapada.dhp_ch19
 unit_label: Not by Silence Is One a Sage
 title: Not by Silence Is One a Sage
 unit_type: sutra
-sanskrit_devanagari: '(256) Na tena hoti dhammaṭṭho, yenatthaṁ sāhasā naye; Yo ca atthaṁ anatthañca, ubho
-  niccheyya paṇḍito.
+sanskrit_devanagari: '(256) न तेन होति धम्मट्ठो, येनत्थं साहसा नये; यो च अत्थं अनत्थञ्च, उभो निच्छेय्य
+  पण्डितो.
 
 
-  (257) Asāhasena dhammena, samena nayatī pare; Dhammassa gutto medhāvī, “dhammaṭṭho”ti pavuccati.
+  (257) असाहसेन धम्मेन, समेन नयती परे; धम्मस्स गुत्तो मेधावी, “धम्मट्ठो”ति पवुच्चति.
 
 
-  (258) Na tena paṇḍito hoti, yāvatā bahu bhāsati; Khemī averī abhayo, “paṇḍito”ti pavuccati.'
+  (258) न तेन पण्डितो होति, यावता बहु भासति; खेमी अवेरी अभयो, “पण्डितो”ति पवुच्चति.'
 sanskrit_iast: '(256) Na tena hoti dhammaṭṭho, yenatthaṁ sāhasā naye; Yo ca atthaṁ anatthañca, ubho niccheyya
   paṇḍito.
 
@@ -78,14 +78,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(256) Na tena hoti dhammaṭṭho, yenatthaṁ sāhasā naye; Yo ca atthaṁ anatthañca, ubho niccheyya
-    paṇḍito.
+  body: '(256) न तेन होति धम्मट्ठो, येनत्थं साहसा नये; यो च अत्थं अनत्थञ्च, उभो निच्छेय्य पण्डितो.
 
 
-    (257) Asāhasena dhammena, samena nayatī pare; Dhammassa gutto medhāvī, “dhammaṭṭho”ti pavuccati.
+    (257) असाहसेन धम्मेन, समेन नयती परे; धम्मस्स गुत्तो मेधावी, “धम्मट्ठो”ति पवुच्चति.
 
 
-    (258) Na tena paṇḍito hoti, yāvatā bahu bhāsati; Khemī averī abhayo, “paṇḍito”ti pavuccati.'
+    (258) न तेन पण्डितो होति, यावता बहु भासति; खेमी अवेरी अभयो, “पण्डितो”ति पवुच्चति.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -97,6 +96,7 @@ pratibha_layers:
 
 
     (258) Na tena paṇḍito hoti, yāvatā bahu bhāsati; Khemī averī abhayo, “paṇḍito”ti pavuccati.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(256) [English alignment pending for this verse; Pali sourced.]
@@ -152,4 +152,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 19 — The Just (Dhammaṭṭhavagga), vv. 256–272
   original_id: DHP_CH19
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

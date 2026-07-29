@@ -7,8 +7,15 @@ unit_id: shantideva_bodhicaryavatara.bca_09_dream
 unit_label: Who Is Born, Who Dies?
 title: Who Is Born, Who Dies?
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Prajñā-pāramitā chapter). English
-  anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
+sanskrit_devanagari: '9.151: स्वप्नोपमास्तु गतयो विचारे कदलीसमाः निर्वृतानिर्वृतानां च विशेषो नास्ति वस्तुतः
+
+  9.152: एवं शून्येषु धर्मेषु किं लब्धं किं हृतं भवेत् सत्कृतः परिभूतो वा केन कः संभविष्यति
+
+  9.153: कुतः सुखं वा दुःखं वा किं प्रियं वा किमप्रियम् का तृष्णा कुत्र सा तृष्णा मृग्यमाणा स्वभावतः
+
+  9.154: विचारे जीवलोकः कः को नामात्र मरिष्यति को भविष्यति को भूतः को बन्धुः कस्य कः सुहृत्
+
+  '
 sanskrit_iast: '9.151: svapnopamāstu gatayo vicāre kadalīsamāḥ nirvṛtānirvṛtānāṃ ca viśeṣo nāsti vastutaḥ
 
   9.152: evaṃ śūnyeṣu dharmeṣu kiṃ labdhaṃ kiṃ hṛtaṃ bhavet satkṛtaḥ paribhūto vā kena kaḥ saṃbhaviṣyati
@@ -17,7 +24,7 @@ sanskrit_iast: '9.151: svapnopamāstu gatayo vicāre kadalīsamāḥ nirvṛtān
 
   9.154: vicāre jīvalokaḥ kaḥ ko nāmātra mariṣyati ko bhaviṣyati ko bhūtaḥ ko bandhuḥ kasya kaḥ suhṛt
 
-  9.155: sarvamākāśasaṃkāśaṃ parigṛhṇantu madvidhāḥ prakupyanti prahṛṣyanti kalahotsavahetubhiḥ'
+  '
 translation_literal: The realms of existence, when examined, are like dreams (svapna), like the hollow plantain stalk (kadalī);
   in truth there is no difference between those who have passed into nirvāṇa and those who have not. When all things (dharma)
   are thus empty (śūnya), what is there to gain and what to lose? Who will be honored, and who despised, and by whom? From
@@ -80,6 +87,7 @@ provenance:
   section: teaching_passage
   original_id: BCA_09_DREAM
   source_reference: Śāntideva, *Bodhicaryāvatāra* IX (prajñā-pāramitā), emptiness of persons (BCA_09_DREAM; Barnett 1909 anchor)
+  sanskrit_source: GRETIL BCA IAST → Devanagari; verses 9.151,9.152,9.153,9.154
 translation: The realms of existence, when examined, are like dreams (svapna), like the hollow plantain stalk (kadalī); in
   truth there is no difference between those who have passed into nirvāṇa and those who have not. When all things (dharma)
   are thus empty (śūnya), what is there to gain and what to lose? Who will be honored, and who despised, and by whom? From
@@ -95,12 +103,30 @@ practice_provenance: Practice re-authored for form diversity, grounded in the pa
 pratibha_layers:
 - kind: original
   label: Original
-  body: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Prajñā-pāramitā chapter). English anchor from Barnett
-    1909; per-verse Devanagari not source-verified for this pilot.'
+  body: '9.151: स्वप्नोपमास्तु गतयो विचारे कदलीसमाः निर्वृतानिर्वृतानां च विशेषो नास्ति वस्तुतः
+
+    9.152: एवं शून्येषु धर्मेषु किं लब्धं किं हृतं भवेत् सत्कृतः परिभूतो वा केन कः संभविष्यति
+
+    9.153: कुतः सुखं वा दुःखं वा किं प्रियं वा किमप्रियम् का तृष्णा कुत्र सा तृष्णा मृग्यमाणा स्वभावतः
+
+    9.154: विचारे जीवलोकः कः को नामात्र मरिष्यति को भविष्यति को भूतः को बन्धुः कस्य कः सुहृत्
+
+    '
+  layer_provenance: 'sanskrit: GRETIL Bodhicaryāvatāra IAST (Minayeff/Vaidya PD lineage; data/raw_texts/pd/indian/bodhicaryavatara_gretil_iast_sanskrit.txt)
+    → Devanagari via indic_transliteration; verse tags curated to unit English (Barnett 1909 PD locator).'
 - kind: iast
   label: IAST
-  body: 'Key terms in IAST: *śūnya* (empty), *svapna* (dream), *kadalī* (plantain/banana tree, hollow-trunked), *janman* (birth),
-    *maraṇa* (death), *nairātmya* (selflessness).'
+  body: '9.151: svapnopamāstu gatayo vicāre kadalīsamāḥ nirvṛtānirvṛtānāṃ ca viśeṣo nāsti vastutaḥ
+
+    9.152: evaṃ śūnyeṣu dharmeṣu kiṃ labdhaṃ kiṃ hṛtaṃ bhavet satkṛtaḥ paribhūto vā kena kaḥ saṃbhaviṣyati
+
+    9.153: kutaḥ sukhaṃ vā duḥkhaṃ vā kiṃ priyaṃ vā kimapriyam kā tṛṣṇā kutra sā tṛṣṇā mṛgyamāṇā svabhāvataḥ
+
+    9.154: vicāre jīvalokaḥ kaḥ ko nāmātra mariṣyati ko bhaviṣyati ko bhūtaḥ ko bandhuḥ kasya kaḥ suhṛt
+
+    '
+  layer_provenance: 'sanskrit: GRETIL Bodhicaryāvatāra IAST (Minayeff/Vaidya PD lineage; data/raw_texts/pd/indian/bodhicaryavatara_gretil_iast_sanskrit.txt)
+    → Devanagari via indic_transliteration; verse tags curated to unit English (Barnett 1909 PD locator).'
 - kind: translation
   label: Pratibha Translation
   body: 'Since the forms of existence are empty [śūnya], what is there to gain and what to lose? Who can be honored or despised,
@@ -189,3 +215,7 @@ pratibha_layers:
     whom? Whence should come joy or sorrow? What is sweet, what bitter? If thou considerest the world of living things, who
     shall die therein? who shall be born, who is born? who is a kinsman and who a friend, and to whom? Life's courses, if
     thou considerest them, are like dreams and as the plantain's branches.
+layer_provenance:
+  original: 'sanskrit: GRETIL Bodhicaryāvatāra IAST (Minayeff/Vaidya PD lineage; data/raw_texts/pd/indian/bodhicaryavatara_gretil_iast_sanskrit.txt)
+    → Devanagari via indic_transliteration; verse tags curated to unit English (Barnett 1909 PD locator).'
+  iast: gretil_bca_iast

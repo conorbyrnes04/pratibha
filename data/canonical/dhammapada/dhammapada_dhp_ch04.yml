@@ -7,16 +7,15 @@ unit_id: dhammapada.dhp_ch04
 unit_label: Who Will Examine This Flower-Like Body
 title: Who Will Examine This Flower-Like Body
 unit_type: sutra
-sanskrit_devanagari: '(44) Ko imaṁ pathaviṁ vicessati, Yamalokañca imaṁ sadevakaṁ; Ko dhammapadaṁ sudesitaṁ,
-  Kusalo pupphamiva pacessati.
+sanskrit_devanagari: '(44) को इमं पथविं विचेस्सति, यमलोकञ्च इमं सदेवकं; को धम्मपदं सुदेसितं, कुसलो पुप्फमिव
+  पचेस्सति.
 
 
-  (45) Sekho pathaviṁ vicessati, Yamalokañca imaṁ sadevakaṁ; Sekho dhammapadaṁ sudesitaṁ, Kusalo pupphamiva
-  pacessati.
+  (45) सेखो पथविं विचेस्सति, यमलोकञ्च इमं सदेवकं; सेखो धम्मपदं सुदेसितं, कुसलो पुप्फमिव पचेस्सति.
 
 
-  (46) Pheṇūpamaṁ kāyamimaṁ viditvā, Marīcidhammaṁ abhisambudhāno; Chetvāna mārassa papupphakāni, Adassanaṁ
-  maccurājassa gacche.'
+  (46) फेणूपमं कायमिमं विदित्वा, मरीचिधम्मं अभिसम्बुधानो; छेत्वान मारस्स पपुप्फकानि, अदस्सनं मच्चुराजस्स
+  गच्छे.'
 sanskrit_iast: '(44) Ko imaṁ pathaviṁ vicessati, Yamalokañca imaṁ sadevakaṁ; Ko dhammapadaṁ sudesitaṁ,
   Kusalo pupphamiva pacessati.
 
@@ -80,16 +79,14 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(44) Ko imaṁ pathaviṁ vicessati, Yamalokañca imaṁ sadevakaṁ; Ko dhammapadaṁ sudesitaṁ, Kusalo
-    pupphamiva pacessati.
+  body: '(44) को इमं पथविं विचेस्सति, यमलोकञ्च इमं सदेवकं; को धम्मपदं सुदेसितं, कुसलो पुप्फमिव पचेस्सति.
 
 
-    (45) Sekho pathaviṁ vicessati, Yamalokañca imaṁ sadevakaṁ; Sekho dhammapadaṁ sudesitaṁ, Kusalo pupphamiva
-    pacessati.
+    (45) सेखो पथविं विचेस्सति, यमलोकञ्च इमं सदेवकं; सेखो धम्मपदं सुदेसितं, कुसलो पुप्फमिव पचेस्सति.
 
 
-    (46) Pheṇūpamaṁ kāyamimaṁ viditvā, Marīcidhammaṁ abhisambudhāno; Chetvāna mārassa papupphakāni, Adassanaṁ
-    maccurājassa gacche.'
+    (46) फेणूपमं कायमिमं विदित्वा, मरीचिधम्मं अभिसम्बुधानो; छेत्वान मारस्स पपुप्फकानि, अदस्सनं मच्चुराजस्स
+    गच्छे.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -103,6 +100,7 @@ pratibha_layers:
 
     (46) Pheṇūpamaṁ kāyamimaṁ viditvā, Marīcidhammaṁ abhisambudhāno; Chetvāna mārassa papupphakāni, Adassanaṁ
     maccurājassa gacche.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(44) Who shall overcome this earth, and the world of Yama (the lord of the departed), and the
@@ -158,4 +156,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 4 — Flowers (Pupphavagga), vv. 44–59
   original_id: DHP_CH04
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

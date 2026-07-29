@@ -7,14 +7,14 @@ unit_id: dhammapada.dhp_ch09
 unit_label: Make Haste Toward the Good
 title: Make Haste Toward the Good
 unit_type: sutra
-sanskrit_devanagari: '(116) Abhittharetha kalyāṇe, pāpā cittaṁ nivāraye; Dandhañhi karoto puññaṁ, pāpasmiṁ
-  ramatī mano.
+sanskrit_devanagari: '(116) अभित्थरेथ कल्याणे, पापा चित्तं निवारये; दन्धञ्हि करोतो पुञ्ञं, पापस्मिं रमती
+  मनो.
 
 
-  (117) Pāpañce puriso kayirā, Na naṁ kayirā punappunaṁ; Na tamhi chandaṁ kayirātha, Dukkho pāpassa uccayo.
+  (117) पापञ्चे पुरिसो कयिरा, न नं कयिरा पुनप्पुनं; न तम्हि छन्दं कयिराथ, दुक्खो पापस्स उच्चयो.
 
 
-  (118) Puññañce puriso kayirā, kayirā naṁ punappunaṁ; Tamhi chandaṁ kayirātha, sukho puññassa uccayo.'
+  (118) पुञ्ञञ्चे पुरिसो कयिरा, कयिरा नं पुनप्पुनं; तम्हि छन्दं कयिराथ, सुखो पुञ्ञस्स उच्चयो.'
 sanskrit_iast: '(116) Abhittharetha kalyāṇe, pāpā cittaṁ nivāraye; Dandhañhi karoto puññaṁ, pāpasmiṁ ramatī
   mano.
 
@@ -78,14 +78,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(116) Abhittharetha kalyāṇe, pāpā cittaṁ nivāraye; Dandhañhi karoto puññaṁ, pāpasmiṁ ramatī mano.
+  body: '(116) अभित्थरेथ कल्याणे, पापा चित्तं निवारये; दन्धञ्हि करोतो पुञ्ञं, पापस्मिं रमती मनो.
 
 
-    (117) Pāpañce puriso kayirā, Na naṁ kayirā punappunaṁ; Na tamhi chandaṁ kayirātha, Dukkho pāpassa
-    uccayo.
+    (117) पापञ्चे पुरिसो कयिरा, न नं कयिरा पुनप्पुनं; न तम्हि छन्दं कयिराथ, दुक्खो पापस्स उच्चयो.
 
 
-    (118) Puññañce puriso kayirā, kayirā naṁ punappunaṁ; Tamhi chandaṁ kayirātha, sukho puññassa uccayo.'
+    (118) पुञ्ञञ्चे पुरिसो कयिरा, कयिरा नं पुनप्पुनं; तम्हि छन्दं कयिराथ, सुखो पुञ्ञस्स उच्चयो.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -97,6 +96,7 @@ pratibha_layers:
 
 
     (118) Puññañce puriso kayirā, kayirā naṁ punappunaṁ; Tamhi chandaṁ kayirātha, sukho puññassa uccayo.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(116) If a man would hasten towards the good, he should keep his thought away from evil; if a
@@ -159,4 +159,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 9 — Evil (Pāpavagga), vv. 116–128
   original_id: DHP_CH09
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

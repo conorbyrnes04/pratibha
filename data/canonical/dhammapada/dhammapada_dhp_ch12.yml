@@ -7,14 +7,14 @@ unit_id: dhammapada.dhp_ch12
 unit_label: Self Is Lord of Self
 title: Self Is Lord of Self
 unit_type: sutra
-sanskrit_devanagari: '(157) Attānañce piyaṁ jaññā, rakkheyya naṁ surakkhitaṁ; Tiṇṇaṁ aññataraṁ yāmaṁ,
-  paṭijaggeyya paṇḍito.
+sanskrit_devanagari: '(157) अत्तानञ्चे पियं जञ्ञा, रक्खेय्य नं सुरक्खितं; तिण्णं अञ्ञतरं यामं, पटिजग्गेय्य
+  पण्डितो.
 
 
-  (158) Attānameva paṭhamaṁ, patirūpe nivesaye; Athaññamanusāseyya, na kilisseyya paṇḍito.
+  (158) अत्तानमेव पठमं, पतिरूपे निवेसये; अथञ्ञमनुसासेय्य, न किलिस्सेय्य पण्डितो.
 
 
-  (159) Attānañce tathā kayirā, yathāññamanusāsati; Sudanto vata dametha, attā hi kira duddamo.'
+  (159) अत्तानञ्चे तथा कयिरा, यथाञ्ञमनुसासति; सुदन्तो वत दमेथ, अत्ता हि किर दुद्दमो.'
 sanskrit_iast: '(157) Attānañce piyaṁ jaññā, rakkheyya naṁ surakkhitaṁ; Tiṇṇaṁ aññataraṁ yāmaṁ, paṭijaggeyya
   paṇḍito.
 
@@ -81,14 +81,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(157) Attānañce piyaṁ jaññā, rakkheyya naṁ surakkhitaṁ; Tiṇṇaṁ aññataraṁ yāmaṁ, paṭijaggeyya
-    paṇḍito.
+  body: '(157) अत्तानञ्चे पियं जञ्ञा, रक्खेय्य नं सुरक्खितं; तिण्णं अञ्ञतरं यामं, पटिजग्गेय्य पण्डितो.
 
 
-    (158) Attānameva paṭhamaṁ, patirūpe nivesaye; Athaññamanusāseyya, na kilisseyya paṇḍito.
+    (158) अत्तानमेव पठमं, पतिरूपे निवेसये; अथञ्ञमनुसासेय्य, न किलिस्सेय्य पण्डितो.
 
 
-    (159) Attānañce tathā kayirā, yathāññamanusāsati; Sudanto vata dametha, attā hi kira duddamo.'
+    (159) अत्तानञ्चे तथा कयिरा, यथाञ्ञमनुसासति; सुदन्तो वत दमेथ, अत्ता हि किर दुद्दमो.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -100,6 +99,7 @@ pratibha_layers:
 
 
     (159) Attānañce tathā kayirā, yathāññamanusāsati; Sudanto vata dametha, attā hi kira duddamo.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(157) If a man hold himself dear, let him watch himself carefully; during one at least out of
@@ -163,4 +163,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 12 — Self (Attavagga), vv. 157–166
   original_id: DHP_CH12
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

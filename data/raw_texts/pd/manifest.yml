@@ -300,6 +300,19 @@ sources:
         url: https://archive.org/details/dli.ministry.06735
     note: "Pilot: 8 Chapter X songs (Meditation in Solitude). Snow Song, Six Bardos, Lingwa demoness chapters are summarized in Ch. XI but not fully translated in this 1928 edition."
 
+  - id: milarepa_songs_wylie_restore
+    collection: milarepa_songs
+    editor: Pratibha editorial Wylie witness
+    year: 2026
+    work: "Jetsün-Kahbum song-cycle Wylie (editorial) for pilot units"
+    license: public_domain_tradition
+    local_path: tibetan/milarepa_songs_wylie_restore.yml
+    status: in_corpus_pilot
+    note: >
+      EWTS Wylie for milarepa_songs MIL_SORROW_001–MIL_ILLNESS_014, converted
+      to Unicode Tibetan by scripts/restore_milarepa_tibetan.py (pyewts).
+      English locator: Evans-Wentz 1928 PD. Not a critical xylograph edition.
+
   - id: pseudo_dionysius_rolt_1920
     collection: pseudo_dionysius
     translator: C.E. Rolt
@@ -442,6 +455,21 @@ sources:
         url: https://archive.org/search?query=stanbrook+interior+castle+teresa+1921
     note: "Spanish original also via Biblioteca Virtual Miguel de Cervantes. Priority: crystal castle (1M.1), prayer of quiet (4M), silkworm/chrysalis (5M), spiritual marriage (7M). Est. 8-12 units."
 
+  - id: dhammapada_fausboll_1900
+    collection: dhammapada
+    editor: V. Fausböll
+    year: 1900
+    work: "The Dhammapada (2nd ed., Luzac) — Pali in Latin script"
+    license: public_domain
+    local_path: pali/dhammapada_fausboll_1900_pali.txt
+    status: sourced
+    links:
+      - label: ETCBC transcription
+        url: https://github.com/ETCBC/dhammapada
+      - label: Internet Archive (1855 ed.)
+        url: https://archive.org/details/dhammapadam00buddgoog
+    note: "PD Fausböll 1900 Pali used to verify stanza identity for Devanagari restore. See pali/SOURCE_dhammapada.md."
+
   - id: dhammapada_muller_1881
     collection: dhammapada
     translator: F. Max Müller
@@ -455,7 +483,7 @@ sources:
         url: https://sacred-texts.com/bud/sbe10/index.htm
       - label: Project Gutenberg
         url: https://www.gutenberg.org/ebooks/2017
-    note: "423 verses, 26 chapters. Priority: 'mind is the forerunner' (1.1-2), 'hatred ceases by love' (1.5), 'ridgepole broken' (11.153-154), tilakkhaṇa (21.277-279). Est. 12-16 units."
+    note: "423 verses, 26 chapters. English for unit translations (already in corpus). Priority Pali restore uses Fausböll 1900."
 
 # Not downloaded in full — URL references for future swap or side-by-side study
 references:

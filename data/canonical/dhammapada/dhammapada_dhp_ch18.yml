@@ -7,16 +7,14 @@ unit_id: dhammapada.dhp_ch18
 unit_label: Life Is Easy for the Shameless
 title: Life Is Easy for the Shameless
 unit_type: sutra
-sanskrit_devanagari: '(235) Paṇḍupalāsova dānisi, Yamapurisāpi ca te upaṭṭhitā; Uyyogamukhe ca tiṭṭhasi,
-  Pātheyyampi ca te na vijjati.
+sanskrit_devanagari: '(235) पण्डुपलासोव दानिसि, यमपुरिसापि च ते उपट्ठिता; उय्योगमुखे च तिट्ठसि, पाथेय्यम्पि
+  च ते न विज्जति.
 
 
-  (236) So karohi dīpamattano, Khippaṁ vāyama paṇḍito bhava; Niddhantamalo anaṅgaṇo, Dibbaṁ ariyabhūmiṁ
-  upehisi.
+  (236) सो करोहि दीपमत्तनो, खिप्पं वायम पण्डितो भव; निद्धन्तमलो अनङ्गणो, दिब्बं अरियभूमिं उपेहिसि.
 
 
-  (237) Upanītavayo ca dānisi, Sampayātosi yamassa santikaṁ; Vāso te natthi antarā, Pātheyyampi ca te
-  na vijjati.'
+  (237) उपनीतवयो च दानिसि, सम्पयातोसि यमस्स सन्तिकं; वासो ते नत्थि अन्तरा, पाथेय्यम्पि च ते न विज्जति.'
 sanskrit_iast: '(235) Paṇḍupalāsova dānisi, Yamapurisāpi ca te upaṭṭhitā; Uyyogamukhe ca tiṭṭhasi, Pātheyyampi
   ca te na vijjati.
 
@@ -79,16 +77,14 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(235) Paṇḍupalāsova dānisi, Yamapurisāpi ca te upaṭṭhitā; Uyyogamukhe ca tiṭṭhasi, Pātheyyampi
-    ca te na vijjati.
+  body: '(235) पण्डुपलासोव दानिसि, यमपुरिसापि च ते उपट्ठिता; उय्योगमुखे च तिट्ठसि, पाथेय्यम्पि च ते न
+    विज्जति.
 
 
-    (236) So karohi dīpamattano, Khippaṁ vāyama paṇḍito bhava; Niddhantamalo anaṅgaṇo, Dibbaṁ ariyabhūmiṁ
-    upehisi.
+    (236) सो करोहि दीपमत्तनो, खिप्पं वायम पण्डितो भव; निद्धन्तमलो अनङ्गणो, दिब्बं अरियभूमिं उपेहिसि.
 
 
-    (237) Upanītavayo ca dānisi, Sampayātosi yamassa santikaṁ; Vāso te natthi antarā, Pātheyyampi ca te
-    na vijjati.'
+    (237) उपनीतवयो च दानिसि, सम्पयातोसि यमस्स सन्तिकं; वासो ते नत्थि अन्तरा, पाथेय्यम्पि च ते न विज्जति.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -102,6 +98,7 @@ pratibha_layers:
 
     (237) Upanītavayo ca dānisi, Sampayātosi yamassa santikaṁ; Vāso te natthi antarā, Pātheyyampi ca te
     na vijjati.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(235) Thou art now like a sear leaf, the messengers of death (Yama) have come near to thee; thou
@@ -158,4 +155,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 18 — Impurity (Malavagga), vv. 235–255
   original_id: DHP_CH18
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

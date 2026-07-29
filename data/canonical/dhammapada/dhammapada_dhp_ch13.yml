@@ -7,14 +7,13 @@ unit_id: dhammapada.dhp_ch13
 unit_label: Do Not Follow the Evil Law
 title: Do Not Follow the Evil Law
 unit_type: sutra
-sanskrit_devanagari: '(167) Hīnaṁ dhammaṁ na seveyya, pamādena na saṁvase; Micchādiṭṭhiṁ na seveyya, na
-  siyā lokavaḍḍhano.
+sanskrit_devanagari: '(167) हीनं धम्मं न सेवेय्य, पमादेन न संवसे; मिच्छादिट्ठिं न सेवेय्य, न सिया लोकवड्ढनो.
 
 
-  (168) Uttiṭṭhe nappamajjeyya, dhammaṁ sucaritaṁ care; Dhammacārī sukhaṁ seti, asmiṁ loke paramhi ca.
+  (168) उत्तिट्ठे नप्पमज्जेय्य, धम्मं सुचरितं चरे; धम्मचारी सुखं सेति, अस्मिं लोके परम्हि च.
 
 
-  (169) Dhammaṁ care sucaritaṁ, na naṁ duccaritaṁ care; Dhammacārī sukhaṁ seti, asmiṁ loke paramhi ca.'
+  (169) धम्मं चरे सुचरितं, न नं दुच्चरितं चरे; धम्मचारी सुखं सेति, अस्मिं लोके परम्हि च.'
 sanskrit_iast: '(167) Hīnaṁ dhammaṁ na seveyya, pamādena na saṁvase; Micchādiṭṭhiṁ na seveyya, na siyā
   lokavaḍḍhano.
 
@@ -77,13 +76,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(167) Hīnaṁ dhammaṁ na seveyya, pamādena na saṁvase; Micchādiṭṭhiṁ na seveyya, na siyā lokavaḍḍhano.
+  body: '(167) हीनं धम्मं न सेवेय्य, पमादेन न संवसे; मिच्छादिट्ठिं न सेवेय्य, न सिया लोकवड्ढनो.
 
 
-    (168) Uttiṭṭhe nappamajjeyya, dhammaṁ sucaritaṁ care; Dhammacārī sukhaṁ seti, asmiṁ loke paramhi ca.
+    (168) उत्तिट्ठे नप्पमज्जेय्य, धम्मं सुचरितं चरे; धम्मचारी सुखं सेति, अस्मिं लोके परम्हि च.
 
 
-    (169) Dhammaṁ care sucaritaṁ, na naṁ duccaritaṁ care; Dhammacārī sukhaṁ seti, asmiṁ loke paramhi ca.'
+    (169) धम्मं चरे सुचरितं, न नं दुच्चरितं चरे; धम्मचारी सुखं सेति, अस्मिं लोके परम्हि च.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -94,6 +93,7 @@ pratibha_layers:
 
 
     (169) Dhammaṁ care sucaritaṁ, na naṁ duccaritaṁ care; Dhammacārī sukhaṁ seti, asmiṁ loke paramhi ca.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(167) Do not follow the evil law! Do not live on in thoughtlessness! Do not follow false doctrine!
@@ -161,4 +161,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 13 — The World (Lokavagga), vv. 167–178
   original_id: DHP_CH13
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

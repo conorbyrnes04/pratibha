@@ -7,9 +7,21 @@ unit_id: the_book_of_chuang_tzu.zhuangzi_md_014
 unit_label: Entering the Current Without Fighting It
 title: Entering the Current Without Fighting It
 unit_type: sutra
-sanskrit_devanagari: '*(Source-language basis: this unit uses the Herbert Giles English excerpt from `ChaungTzuRaw`;
-  Chinese lineation not verified in this pass.)*'
-sanskrit_iast: '*(Chinese source text tradition; no Sanskrit original. Pinyin terms are given in Key Terms.)*'
+sanskrit_devanagari: '孔子觀於呂梁，縣水三十仞，流沫四十里，黿鼉魚鼈之所不能游也。見一丈夫游之，以為有苦而欲死也，使弟子並流而拯之。數百步而出，被髮行歌而游於塘下。
+
+
+  孔子從而問焉，曰：「吾以子為鬼，察子則人也。請問，蹈水有道乎？」
+
+
+  曰：「亡，吾無道。吾始乎故，長乎性，成乎命。與齊俱入，與汩偕出，從水之道而不為私焉。此吾所以蹈之也。」
+
+
+  孔子曰：「何謂始乎故，長乎性，成乎命？」
+
+
+  曰：「吾生於陵而安於陵，故也；長於水而安於水，性也；不知吾所以然而然，命也。」'
+sanskrit_iast: '*(Chinese source text; no Sanskrit original. Pinyin with tones for key terms is provided
+  in Key Terms.)*'
 translation_literal: 'Confucius sees an old swimmer survive impossible rapids and asks for technique.
 
 
@@ -77,8 +89,21 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '*(Source-language basis: this unit uses the Herbert Giles English excerpt from `ChaungTzuRaw`;
-    Chinese lineation not verified in this pass.)*'
+  body: '孔子觀於呂梁，縣水三十仞，流沫四十里，黿鼉魚鼈之所不能游也。見一丈夫游之，以為有苦而欲死也，使弟子並流而拯之。數百步而出，被髮行歌而游於塘下。
+
+
+    孔子從而問焉，曰：「吾以子為鬼，察子則人也。請問，蹈水有道乎？」
+
+
+    曰：「亡，吾無道。吾始乎故，長乎性，成乎命。與齊俱入，與汩偕出，從水之道而不為私焉。此吾所以蹈之也。」
+
+
+    孔子曰：「何謂始乎故，長乎性，成乎命？」
+
+
+    曰：「吾生於陵而安於陵，故也；長於水而安於水，性也；不知吾所以然而然，命也。」'
+  layer_provenance: restored from PD Classical Chinese (Wikisource 莊子 / Haodoo 好讀 traditional); passage
+    matched to unit English
 - kind: translation
   label: Pratibha Translation
   body: 'Confucius sees an old swimmer survive impossible rapids and asks for technique.
@@ -183,6 +208,7 @@ provenance:
   collection: The Book of Chuang Tzu
   section: teaching_passage
   original_id: ZHUANGZI_MD_014
-  source_reference: ''
+  source_reference: Zhuangzi 達生 (Lüliang swimmer); PD Chinese via Wikisource 莊子/達生 and Haodoo 好讀 (andy0130tw.github.io/zhuangzi
+    ch.19)
 translation_provenance: English follows Herbert A. Giles, *Chuang Tzu* (1889, public domain), with Pratibha
   editorial expansion from the Classical Chinese.

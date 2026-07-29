@@ -7,14 +7,13 @@ unit_id: dhammapada.dhp_ch08
 unit_label: Better Than a Thousand Empty Words
 title: Better Than a Thousand Empty Words
 unit_type: sutra
-sanskrit_devanagari: '(100) Sahassamapi ce vācā, anatthapadasaṁhitā; Ekaṁ atthapadaṁ seyyo, yaṁ sutvā
-  upasammati.
+sanskrit_devanagari: '(100) सहस्समपि चे वाचा, अनत्थपदसंहिता; एकं अत्थपदं सेय्यो, यं सुत्वा उपसम्मति.
 
 
-  (101) Sahassamapi ce gāthā, anatthapadasaṁhitā; Ekaṁ gāthāpadaṁ seyyo, yaṁ sutvā upasammati.
+  (101) सहस्समपि चे गाथा, अनत्थपदसंहिता; एकं गाथापदं सेय्यो, यं सुत्वा उपसम्मति.
 
 
-  (102) Yo ca gāthā sataṁ bhāse, anatthapadasaṁhitā; Ekaṁ dhammapadaṁ seyyo, yaṁ sutvā upasammati.'
+  (102) यो च गाथा सतं भासे, अनत्थपदसंहिता; एकं धम्मपदं सेय्यो, यं सुत्वा उपसम्मति.'
 sanskrit_iast: '(100) Sahassamapi ce vācā, anatthapadasaṁhitā; Ekaṁ atthapadaṁ seyyo, yaṁ sutvā upasammati.
 
 
@@ -72,13 +71,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(100) Sahassamapi ce vācā, anatthapadasaṁhitā; Ekaṁ atthapadaṁ seyyo, yaṁ sutvā upasammati.
+  body: '(100) सहस्समपि चे वाचा, अनत्थपदसंहिता; एकं अत्थपदं सेय्यो, यं सुत्वा उपसम्मति.
 
 
-    (101) Sahassamapi ce gāthā, anatthapadasaṁhitā; Ekaṁ gāthāpadaṁ seyyo, yaṁ sutvā upasammati.
+    (101) सहस्समपि चे गाथा, अनत्थपदसंहिता; एकं गाथापदं सेय्यो, यं सुत्वा उपसम्मति.
 
 
-    (102) Yo ca gāthā sataṁ bhāse, anatthapadasaṁhitā; Ekaṁ dhammapadaṁ seyyo, yaṁ sutvā upasammati.'
+    (102) यो च गाथा सतं भासे, अनत्थपदसंहिता; एकं धम्मपदं सेय्यो, यं सुत्वा उपसम्मति.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -89,6 +88,7 @@ pratibha_layers:
 
 
     (102) Yo ca gāthā sataṁ bhāse, anatthapadasaṁhitā; Ekaṁ dhammapadaṁ seyyo, yaṁ sutvā upasammati.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(100) Even though a speech be a thousand (of words), but made up of senseless words, one word
@@ -143,4 +143,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 8 — The Thousands (Sahassavagga), vv. 100–115
   original_id: DHP_CH08
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

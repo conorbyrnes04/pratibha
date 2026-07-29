@@ -7,14 +7,14 @@ unit_id: dhammapada.dhp_ch10
 unit_label: All Tremble at Punishment
 title: All Tremble at Punishment
 unit_type: sutra
-sanskrit_devanagari: '(129) Sabbe tasanti daṇḍassa, sabbe bhāyanti maccuno; Attānaṁ upamaṁ katvā, na haneyya
-  na ghātaye.
+sanskrit_devanagari: '(129) सब्बे तसन्ति दण्डस्स, सब्बे भायन्ति मच्चुनो; अत्तानं उपमं कत्वा, न हनेय्य
+  न घातये.
 
 
-  (130) Sabbe tasanti daṇḍassa, sabbesaṁ jīvitaṁ piyaṁ; Attānaṁ upamaṁ katvā, na haneyya na ghātaye.
+  (130) सब्बे तसन्ति दण्डस्स, सब्बेसं जीवितं पियं; अत्तानं उपमं कत्वा, न हनेय्य न घातये.
 
 
-  (131) Sukhakāmāni bhūtāni, yo daṇḍena vihiṁsati; Attano sukhamesāno, pecca so na labhate sukhaṁ.'
+  (131) सुखकामानि भूतानि, यो दण्डेन विहिंसति; अत्तनो सुखमेसानो, पेच्च सो न लभते सुखं.'
 sanskrit_iast: '(129) Sabbe tasanti daṇḍassa, sabbe bhāyanti maccuno; Attānaṁ upamaṁ katvā, na haneyya
   na ghātaye.
 
@@ -81,13 +81,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(129) Sabbe tasanti daṇḍassa, sabbe bhāyanti maccuno; Attānaṁ upamaṁ katvā, na haneyya na ghātaye.
+  body: '(129) सब्बे तसन्ति दण्डस्स, सब्बे भायन्ति मच्चुनो; अत्तानं उपमं कत्वा, न हनेय्य न घातये.
 
 
-    (130) Sabbe tasanti daṇḍassa, sabbesaṁ jīvitaṁ piyaṁ; Attānaṁ upamaṁ katvā, na haneyya na ghātaye.
+    (130) सब्बे तसन्ति दण्डस्स, सब्बेसं जीवितं पियं; अत्तानं उपमं कत्वा, न हनेय्य न घातये.
 
 
-    (131) Sukhakāmāni bhūtāni, yo daṇḍena vihiṁsati; Attano sukhamesāno, pecca so na labhate sukhaṁ.'
+    (131) सुखकामानि भूतानि, यो दण्डेन विहिंसति; अत्तनो सुखमेसानो, पेच्च सो न लभते सुखं.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -98,6 +98,7 @@ pratibha_layers:
 
 
     (131) Sukhakāmāni bhūtāni, yo daṇḍena vihiṁsati; Attano sukhamesāno, pecca so na labhate sukhaṁ.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(129) All men tremble at punishment, all men fear death; remember that you are like unto them,
@@ -159,4 +160,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 10 — Punishment (Daṇḍavagga), vv. 129–145
   original_id: DHP_CH10
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

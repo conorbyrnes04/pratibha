@@ -7,9 +7,9 @@ unit_id: the_book_of_chuang_tzu.zhuangzi_md_010
 unit_label: The Great Awakening Beyond Certainty
 title: The Great Awakening Beyond Certainty
 unit_type: sutra
-sanskrit_devanagari: '*(Source-language basis: this unit uses the Herbert Giles English excerpt from `ChaungTzuRaw`;
-  Chinese lineation not verified in this pass.)*'
-sanskrit_iast: '*(Chinese source text tradition; no Sanskrit original. Pinyin terms are given in Key Terms.)*'
+sanskrit_devanagari: 夢飲酒者，旦而哭泣；夢哭泣者，旦而田獵。方其夢也，不知其夢也。夢之中又占其夢焉，覺而後知其夢也。且有大覺而後知此其大夢也，而愚者自以為覺，竊竊然知之。
+sanskrit_iast: '*(Chinese source text; no Sanskrit original. Pinyin with tones for key terms is provided
+  in Key Terms.)*'
 translation_literal: 'Those who dream of feasting wake grieving; those who dream of grief wake into pursuit
   and excitement. In dream they do not know they dream. Some even interpret the dream while still inside
   it. Only on waking do they know it was dream.
@@ -74,8 +74,9 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '*(Source-language basis: this unit uses the Herbert Giles English excerpt from `ChaungTzuRaw`;
-    Chinese lineation not verified in this pass.)*'
+  body: 夢飲酒者，旦而哭泣；夢哭泣者，旦而田獵。方其夢也，不知其夢也。夢之中又占其夢焉，覺而後知其夢也。且有大覺而後知此其大夢也，而愚者自以為覺，竊竊然知之。
+  layer_provenance: restored from PD Classical Chinese (Wikisource 莊子 / Haodoo 好讀 traditional); passage
+    matched to unit English
 - kind: translation
   label: Pratibha Translation
   body: 'Those who dream of feasting wake grieving; those who dream of grief wake into pursuit and excitement.
@@ -181,6 +182,7 @@ provenance:
   collection: The Book of Chuang Tzu
   section: teaching_passage
   original_id: ZHUANGZI_MD_010
-  source_reference: ''
+  source_reference: Zhuangzi 齊物論; PD Chinese via Wikisource 莊子/齊物論 and Haodoo 好讀 (andy0130tw.github.io/zhuangzi
+    ch.2)
 translation_provenance: English follows Herbert A. Giles, *Chuang Tzu* (1889, public domain), with Pratibha
   editorial expansion from the Classical Chinese.

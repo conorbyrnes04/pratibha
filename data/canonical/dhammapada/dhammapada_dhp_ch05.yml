@@ -7,14 +7,13 @@ unit_id: dhammapada.dhp_ch05
 unit_label: Long Is the Night for the Watchful Fool
 title: Long Is the Night for the Watchful Fool
 unit_type: sutra
-sanskrit_devanagari: '(60) Dīghā jāgarato ratti, dīghaṁ santassa yojanaṁ; Dīgho bālāna saṁsāro, saddhammaṁ
-  avijānataṁ.
+sanskrit_devanagari: '(60) दीघा जागरतो रत्ति, दीघं सन्तस्स योजनं; दीघो बालान संसारो, सद्धम्मं अविजानतं.
 
 
-  (61) Carañce nādhigaccheyya, Seyyaṁ sadisamattano; Ekacariyaṁ daḷhaṁ kayirā, Natthi bāle sahāyatā.
+  (61) चरञ्चे नाधिगच्छेय्य, सेय्यं सदिसमत्तनो; एकचरियं दऌहं कयिरा, नत्थि बाले सहायता.
 
 
-  (62) Puttā matthi dhanaṁ matthi, iti bālo vihaññati; Attā hi attano natthi, kuto puttā kuto dhanaṁ.'
+  (62) पुत्ता मत्थि धनं मत्थि, इति बालो विहञ्ञति; अत्ता हि अत्तनो नत्थि, कुतो पुत्ता कुतो धनं.'
 sanskrit_iast: '(60) Dīghā jāgarato ratti, dīghaṁ santassa yojanaṁ; Dīgho bālāna saṁsāro, saddhammaṁ avijānataṁ.
 
 
@@ -74,13 +73,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(60) Dīghā jāgarato ratti, dīghaṁ santassa yojanaṁ; Dīgho bālāna saṁsāro, saddhammaṁ avijānataṁ.
+  body: '(60) दीघा जागरतो रत्ति, दीघं सन्तस्स योजनं; दीघो बालान संसारो, सद्धम्मं अविजानतं.
 
 
-    (61) Carañce nādhigaccheyya, Seyyaṁ sadisamattano; Ekacariyaṁ daḷhaṁ kayirā, Natthi bāle sahāyatā.
+    (61) चरञ्चे नाधिगच्छेय्य, सेय्यं सदिसमत्तनो; एकचरियं दऌहं कयिरा, नत्थि बाले सहायता.
 
 
-    (62) Puttā matthi dhanaṁ matthi, iti bālo vihaññati; Attā hi attano natthi, kuto puttā kuto dhanaṁ.'
+    (62) पुत्ता मत्थि धनं मत्थि, इति बालो विहञ्ञति; अत्ता हि अत्तनो नत्थि, कुतो पुत्ता कुतो धनं.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -91,6 +90,7 @@ pratibha_layers:
 
 
     (62) Puttā matthi dhanaṁ matthi, iti bālo vihaññati; Attā hi attano natthi, kuto puttā kuto dhanaṁ.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(60) Long is the night to him who is awake; long is a mile to him who is tired; long is life
@@ -147,4 +147,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 5 — The Fool (Bālavagga), vv. 60–75
   original_id: DHP_CH05
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

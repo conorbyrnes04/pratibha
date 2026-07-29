@@ -7,14 +7,14 @@ unit_id: dhammapada.dhp_ch22
 unit_label: The Liar Goes to a State of Woe
 title: The Liar Goes to a State of Woe
 unit_type: sutra
-sanskrit_devanagari: '(306) Abhūtavādī nirayaṁ upeti, Yo vāpi katvā na karomi cāha; Ubhopi te pecca samā
-  bhavanti, Nihīnakammā manujā parattha.
+sanskrit_devanagari: '(306) अभूतवादी निरयं उपेति, यो वापि कत्वा न करोमि चाह; उभोपि ते पेच्च समा भवन्ति,
+  निहीनकम्मा मनुजा परत्थ.
 
 
-  (307) Kāsāvakaṇṭhā bahavo, pāpadhammā asaññatā; Pāpā pāpehi kammehi, nirayaṁ te upapajjare.
+  (307) कासावकण्ठा बहवो, पापधम्मा असञ्ञता; पापा पापेहि कम्मेहि, निरयं ते उपपज्जरे.
 
 
-  (308) Seyyo ayoguḷo bhutto, tatto aggisikhūpamo; Yañce bhuñjeyya dussīlo, raṭṭhapiṇḍamasaññato.'
+  (308) सेय्यो अयोगुऌओ भुत्तो, तत्तो अग्गिसिखूपमो; यञ्चे भुञ्जेय्य दुस्सीलो, रट्ठपिण्डमसञ्ञतो.'
 sanskrit_iast: '(306) Abhūtavādī nirayaṁ upeti, Yo vāpi katvā na karomi cāha; Ubhopi te pecca samā bhavanti,
   Nihīnakammā manujā parattha.
 
@@ -75,14 +75,14 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(306) Abhūtavādī nirayaṁ upeti, Yo vāpi katvā na karomi cāha; Ubhopi te pecca samā bhavanti,
-    Nihīnakammā manujā parattha.
+  body: '(306) अभूतवादी निरयं उपेति, यो वापि कत्वा न करोमि चाह; उभोपि ते पेच्च समा भवन्ति, निहीनकम्मा
+    मनुजा परत्थ.
 
 
-    (307) Kāsāvakaṇṭhā bahavo, pāpadhammā asaññatā; Pāpā pāpehi kammehi, nirayaṁ te upapajjare.
+    (307) कासावकण्ठा बहवो, पापधम्मा असञ्ञता; पापा पापेहि कम्मेहि, निरयं ते उपपज्जरे.
 
 
-    (308) Seyyo ayoguḷo bhutto, tatto aggisikhūpamo; Yañce bhuñjeyya dussīlo, raṭṭhapiṇḍamasaññato.'
+    (308) सेय्यो अयोगुऌओ भुत्तो, तत्तो अग्गिसिखूपमो; यञ्चे भुञ्जेय्य दुस्सीलो, रट्ठपिण्डमसञ्ञतो.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -94,6 +94,7 @@ pratibha_layers:
 
 
     (308) Seyyo ayoguḷo bhutto, tatto aggisikhūpamo; Yañce bhuñjeyya dussīlo, raṭṭhapiṇḍamasaññato.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(306) He who says what is not, goes to hell; he also who, having done a thing, says I have not
@@ -151,4 +152,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 22 — The Downward Course (Nirayavagga), vv. 306–319
   original_id: DHP_CH22
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'

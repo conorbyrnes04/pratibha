@@ -7,9 +7,27 @@ unit_id: the_book_of_chuang_tzu.zhuangzi_md_013
 unit_label: Knowledge That Cannot Be Written Down
 title: Knowledge That Cannot Be Written Down
 unit_type: sutra
-sanskrit_devanagari: '*(Source-language basis: this unit uses the Herbert Giles English excerpt from `ChaungTzuRaw`;
-  Chinese lineation not verified in this pass.)*'
-sanskrit_iast: '*(Chinese source text tradition; no Sanskrit original. Pinyin terms are given in Key Terms.)*'
+sanskrit_devanagari: '桓公讀書於堂上，輪扁斲輪於堂下，釋椎鑿而上，問桓公曰：「敢問公之所讀者何言邪？」
+
+
+  公曰：「聖人之言也。」
+
+
+  曰：「聖人在乎？」
+
+
+  公曰：「已死矣。」
+
+
+  曰：「然則君之所讀者，古人之糟魄已夫！」
+
+
+  桓公曰：「寡人讀書，輪人安得議乎？有說則可，無說則死。」
+
+
+  輪扁曰：「臣也以臣之事觀之。斲輪，徐則甘而不固，疾則苦而不入。不徐不疾，得之於手而應於心，口不能言，有數存焉於其間。臣不能以喻臣之子，臣之子亦不能受之於臣，是以行年七十而老斲輪。古之人與其不可傳也死矣，然則君之所讀者，古人之糟魄已夫！」'
+sanskrit_iast: '*(Chinese source text; no Sanskrit original. Pinyin with tones for key terms is provided
+  in Key Terms.)*'
 translation_literal: 'The wheelwright tells the ruler: what you read are traces, not living transmission.
   In craft there is a precise fit that fails if rushed and fails if slowed. It cannot be fully verbalized,
   even by one who practices it for life.
@@ -82,8 +100,27 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '*(Source-language basis: this unit uses the Herbert Giles English excerpt from `ChaungTzuRaw`;
-    Chinese lineation not verified in this pass.)*'
+  body: '桓公讀書於堂上，輪扁斲輪於堂下，釋椎鑿而上，問桓公曰：「敢問公之所讀者何言邪？」
+
+
+    公曰：「聖人之言也。」
+
+
+    曰：「聖人在乎？」
+
+
+    公曰：「已死矣。」
+
+
+    曰：「然則君之所讀者，古人之糟魄已夫！」
+
+
+    桓公曰：「寡人讀書，輪人安得議乎？有說則可，無說則死。」
+
+
+    輪扁曰：「臣也以臣之事觀之。斲輪，徐則甘而不固，疾則苦而不入。不徐不疾，得之於手而應於心，口不能言，有數存焉於其間。臣不能以喻臣之子，臣之子亦不能受之於臣，是以行年七十而老斲輪。古之人與其不可傳也死矣，然則君之所讀者，古人之糟魄已夫！」'
+  layer_provenance: restored from PD Classical Chinese (Wikisource 莊子 / Haodoo 好讀 traditional); passage
+    matched to unit English
 - kind: translation
   label: Pratibha Translation
   body: 'The wheelwright tells the ruler: what you read are traces, not living transmission. In craft
@@ -186,7 +223,8 @@ provenance:
   collection: The Book of Chuang Tzu
   section: teaching_passage
   original_id: ZHUANGZI_MD_013
-  source_reference: ''
+  source_reference: Zhuangzi 天道 (Wheelwright Bian); PD Chinese via Wikisource 莊子/天道 and Haodoo 好讀 (andy0130tw.github.io/zhuangzi
+    ch.13)
 abhyasa: Pick a skill you have practiced for years—cooking, writing, playing an instrument, fixing things—and
   perform it while narrating aloud every decision and adjustment you make. Notice where language fails,
   where your hands know something your words cannot catch, where slowing down to explain actually breaks

@@ -7,14 +7,13 @@ unit_id: dhammapada.dhp_ch26
 unit_label: Him I Call a Brāhmaṇa
 title: Him I Call a Brāhmaṇa
 unit_type: sutra
-sanskrit_devanagari: '(383) Chinda sotaṁ parakkamma, kāme panuda brāhmaṇa; Saṅkhārānaṁ khayaṁ ñatvā, akataññūsi
-  brāhmaṇa.
+sanskrit_devanagari: '(383) छिन्द सोतं परक्कम्म, कामे पनुद ब्राह्मण; सङ्खारानं खयं ञत्वा, अकतञ्ञूसि ब्राह्मण.
 
 
-  (384) Yadā dvayesu dhammesu, pāragū hoti brāhmaṇo; Athassa sabbe saṁyogā, atthaṁ gacchanti jānato.
+  (384) यदा द्वयेसु धम्मेसु, पारगू होति ब्राह्मणो; अथस्स सब्बे संयोगा, अत्थं गच्छन्ति जानतो.
 
 
-  (385) Yassa pāraṁ apāraṁ vā, pārāpāraṁ na vijjati; Vītaddaraṁ visaṁyuttaṁ, tamahaṁ brūmi brāhmaṇaṁ.'
+  (385) यस्स पारं अपारं वा, पारापारं न विज्जति; वीतद्दरं विसंयुत्तं, तमहं ब्रूमि ब्राह्मणं.'
 sanskrit_iast: '(383) Chinda sotaṁ parakkamma, kāme panuda brāhmaṇa; Saṅkhārānaṁ khayaṁ ñatvā, akataññūsi
   brāhmaṇa.
 
@@ -69,13 +68,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '(383) Chinda sotaṁ parakkamma, kāme panuda brāhmaṇa; Saṅkhārānaṁ khayaṁ ñatvā, akataññūsi brāhmaṇa.
+  body: '(383) छिन्द सोतं परक्कम्म, कामे पनुद ब्राह्मण; सङ्खारानं खयं ञत्वा, अकतञ्ञूसि ब्राह्मण.
 
 
-    (384) Yadā dvayesu dhammesu, pāragū hoti brāhmaṇo; Athassa sabbe saṁyogā, atthaṁ gacchanti jānato.
+    (384) यदा द्वयेसु धम्मेसु, पारगू होति ब्राह्मणो; अथस्स सब्बे संयोगा, अत्थं गच्छन्ति जानतो.
 
 
-    (385) Yassa pāraṁ apāraṁ vā, pārāpāraṁ na vijjati; Vītaddaraṁ visaṁyuttaṁ, tamahaṁ brūmi brāhmaṇaṁ.'
+    (385) यस्स पारं अपारं वा, पारापारं न विज्जति; वीतद्दरं विसंयुत्तं, तमहं ब्रूमि ब्राह्मणं.'
   layer_provenance: sourced
 - kind: iast
   label: IAST
@@ -86,6 +85,7 @@ pratibha_layers:
 
 
     (385) Yassa pāraṁ apāraṁ vā, pārāpāraṁ na vijjati; Vītaddaraṁ visaṁyuttaṁ, tamahaṁ brūmi brāhmaṇaṁ.'
+  layer_provenance: sourced
 - kind: translation
   label: Pratibha Translation
   body: '(383) Stop the stream valiantly, drive away the desires, O Brahmana! When you have understood
@@ -141,4 +141,7 @@ provenance:
   collection: Dhammapada
   section: Chapter 26 — The Brāhmaṇa (Brāhmaṇavagga), vv. 383–423
   original_id: DHP_CH26
-  source_reference: ''
+  source_reference: 'Pali: V. Fausböll, The Dhammapada, 2nd ed. (London: Luzac, 1900), PD Latin-script
+    text via ETCBC etcbc/dhammapada sources/pali.txt (data/raw_texts/pd/pali/dhammapada_fausboll_1900_pali.txt).
+    Devanagari restored by IAST→Devanagari transliteration of unit romanization after stanza-number match
+    to Fausböll. English: F. Max Müller, SBE vol. 10 (1881).'
