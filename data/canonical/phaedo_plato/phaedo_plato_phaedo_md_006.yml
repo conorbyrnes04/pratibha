@@ -7,54 +7,102 @@ unit_id: phaedo_plato.phaedo_md_006
 unit_label: Soul as Bearer of Life and Therefore Deathless
 title: Soul as Bearer of Life and Therefore Deathless
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Greek source text not yet line-aligned in this manuscript
-  pass; passage body follows Jowett''s English rendering.'
-sanskrit_iast: Not applicable (Greek text). Key Greek terms are given in script and transliteration in
-  Key Terms.
-translation_literal: 'Socrates'' final argument turns on essential contraries: what bears life cannot
-  admit death while remaining what it is. Since soul is that by which bodies live, soul belongs to the
-  class that excludes death. Immortality is argued not by sentiment, but by the logic of participation
-  and incompatibility.'
-commentary: 'The claim is that ontological identity has entailments. Socrates'' counterintuitive move
-  is to link immortality not to soul''s duration alone but to soul''s formal role as life-bearer. The
-  argument''s architecture is technical: opposites exclude each other; things that inseparably carry one
-  opposite exclude the contrary. Fire excludes cold, odd excludes even, soul-as-life excludes death.
+sanskrit_devanagari: ἀσφαλῆ σοι ἐρῶ ἀπόκρισιν ἐκείνην τὴν ἀμαθῆ, ὅτι ᾧ ἂν θερμότης, ἀλλὰ κομψοτέραν ἐκ τῶν νῦν, ὅτι ᾧ ἂν πῦρ·
+  οὐδὲ ἂν ἔρῃ ᾧ ἂν σώματι τί ἐγγένηται νοσήσει, οὐκ ἐρῶ ὅτι ᾧ ἂν νόσος, ἀλλ’ ᾧ ἂν πυρετός· οὐδ’ ᾧ ἂν ἀριθμῷ τί ἐγγένηται περιττὸς
+  ἔσται, οὐκ ἐρῶ ᾧ ἂν περιττότης, ἀλλ’ ᾧ ἂν μονάς, καὶ τἆλλα οὕτως. ἀλλ’ ὅρα εἰ ἤδη ἱκανῶς οἶσθ’ ὅτι βούλομαι. ἀλλὰ πάνυ ἱκανῶς,
+  ἔφη. ἀποκρίνου δή, ἦ δ’ ὅς, ᾧ ἂν τί ἐγγένηται σώματι ζῶν ἔσται; ὧι ἂν ψυχή, ἔφη. οὐκοῦν ἀεὶ τοῦτο οὕτως ἔχει; πῶς γὰρ οὐχί;
+  ἦ δ’ ὅς. ψυχὴ ἄρα ὅτι ἂν αὐτὴ κατάσχῃ, ἀεὶ ἥκει ἐπ’ ἐκεῖνο φέρουσα ζωήν; ἥκει μέντοι, ἔφη. πότερον δ’ ἔστι τι ζωῇ ἐναντίον
+  ἢ οὐδέν; ἔστιν, ἔφη. τί; θάνατος. οὐκοῦν ψυχὴ τὸ ἐναντίον ᾧ αὐτὴ ἐπιφέρει ἀεὶ οὐ μή ποτε δέξηται, ὡς ἐκ τῶν πρόσθεν ὡμολόγηται;
+  καὶ μάλα σφόδρα, ἔφη ὁ Κέβης. τί οὖν; τὸ μὴ δεχόμενον τὴν τοῦ ἀρτίου ἰδέαν τί νυνδὴ ὠνομάζομεν; ἀνάρτιον, ἔφη. τὸ δὲ δίκαιον
+  μὴ δεχόμενον καὶ ὃ ἂν μουσικὸν μὴ δέχηται; ἄμουσον, ἔφη, τὸ δὲ ἄδικον. εἶεν· ὃ δ’ ἂν θάνατον μὴ δέχηται τί καλοῦμεν; ἀθάνατον,
+  ἔφη. οὐκοῦν ψυχὴ οὐ δέχεται θάνατον; οὔ. ἀθάνατον ἄρα ψυχή. ἀθάνατον. εἶεν, ἔφη· τοῦτο μὲν δὴ ἀποδεδεῖχθαι φῶμεν; ἢ πῶς
+  δοκεῖ; καὶ μάλα γε ἱκανῶς, ὦ Σώκρατες. ΦΑΙΔ. τί οὖν, ἦ δ’ ὅς, ὦ Κέβης; εἰ τῷ ἀναρτίῳ ἀναγκαῖον ἦν ἀνωλέθρῳ εἶναι, ἄλλο τι
+  τὰ τρία ἢ ἀνώλεθρα ἂν ἦν; πῶς γὰρ οὔ; οὐκοῦν εἰ καὶ τὸ ἄθερμον ἀναγκαῖον ἦν ἀνώλεθρον εἶναι, ὁπότε τις ἐπὶ χιόνα θερμὸν
+  ἐπάγοι, ὑπεξῄει ἂν ἡ χιὼν οὖσα σῶς καὶ ἄτηκτος; οὐ γὰρ ἂν ἀπώλετό γε, οὐδ’ αὖ ὑπομένουσα ἐδέξατο ἂν τὴν θερμότητα. ἀληθῆ,
+  ἔφη, λέγεις. ὣς δ’ αὔτως οἶμαι κἂν εἰ τὸ ἄψυκτον ἀνώλεθρον ἦν, ὁπότε ἐπὶ τὸ πῦρ ψυχρόν τι ἐπῄει, οὔποτ’ ἂν ἀπεσβέννυτο οὐδ’
+  ἀπώλλυτο, ἀλλὰ σῶν ἂν ἀπελθὸν ᾤχετο. ἀνάγκη, ἔφη. οὐκοῦν καὶ ὧδε, ἔφη, ἀνάγκη περὶ τοῦ ἀθανάτου εἰπεῖν; εἰ μὲν τὸ ἀθάνατον
+  καὶ ἀνώλεθρόν ἐστιν, ἀδύνατον ψυχῇ, ὅταν θάνατος ἐπ’ αὐτὴν ἴῃ, ἀπόλλυσθαι· θάνατον μὲν γὰρ δὴ ἐκ τῶν προειρημένων οὐ δέξεται
+  οὐδ’ ἔσται τεθνηκυῖα, ὥσπερ τὰ τρία οὐκ ἔσται, ἔφαμεν, ἄρτιον, οὐδέ γ’ αὖ τὸ περιττόν, οὐδὲ δὴ πῦρ ψυχρόν, οὐδέ γε ἡ ἐν
+  τῷ πυρὶ θερμότης. ἀλλὰ τί κωλύει, φαίη ἄν τις, ἄρτιον μὲν τὸ περιττὸν μὴ γίγνεσθαι ἐπιόντος τοῦ ἀρτίου, ὥσπερ ὡμολόγηται,
+  ἀπολομένου δὲ αὐτοῦ ἀντ’ ἐκείνου ἄρτιον γεγονέναι; τῷ ταῦτα λέγοντι οὐκ ἂν ἔχοιμεν διαμαχέσασθαι ὅτι οὐκ ἀπόλλυται· τὸ γὰρ
+  ἀνάρτιον οὐκ ἀνώλεθρόν ἐστιν· ἐπεὶ εἰ τοῦτο ὡμολόγητο ἡμῖν, ῥᾳδίως ἂν διεμαχόμεθα ὅτι ἐπελθόντος τοῦ ἀρτίου τὸ περιττὸν
+  καὶ τὰ τρία οἴχεται ἀπιόντα· καὶ περὶ πυρὸς καὶ θερμοῦ καὶ τῶν ἄλλων οὕτως ἂν διεμαχόμεθα. ἢ οὔ; πάνυ μὲν οὖν. οὐκοῦν καὶ
+  νῦν περὶ τοῦ ἀθανάτου, εἰ μὲν ἡμῖν ὁμολογεῖται καὶ ἀνώλεθρον εἶναι, ψυχὴ ἂν εἴη πρὸς τῷ ἀθάνατος εἶναι καὶ ἀνώλεθρος· εἰ
+  δὲ μή, ἄλλου ἂν δέοι λόγου. ἀλλ’ οὐδὲν δεῖ, ἔφη, τούτου γε ἕνεκα· σχολῇ γὰρ ἄν τι ἄλλο φθορὰν μὴ δέχοιτο, εἰ τό γε ἀθάνατον
+  ἀίδιον ὂν φθορὰν δέξεται. ὁ δέ γε θεὸς οἶμαι, ἔφη ὁ Σωκράτης, καὶ αὐτὸ τὸ τῆς ζωῆς εἶδος καὶ εἴ τι ἄλλο ἀθάνατόν ἐστιν,
+  παρὰ πάντων ἂν ὁμολογηθείη μηδέποτε ἀπόλλυσθαι. παρὰ πάντων μέντοι νὴ Δί᾽, ἔφη, ἀνθρώπων τέ γε καὶ ἔτι μᾶλλον, ὡς ἐγᾦμαι,
+  παρὰ θεῶν. ὁπότε δὴ τὸ ἀθάνατον καὶ ἀδιάφθορόν ἐστιν, ἄλλο τι ψυχὴ ἤ, εἰ ἀθάνατος τυγχάνει οὖσα, καὶ ἀνώλεθρος ἂν εἴη; πολλὴ
+  ἀνάγκη. ἐπιόντος ἄρα θανάτου ἐπὶ τὸν ἄνθρωπον τὸ μὲν θνητόν, ὡς ἔοικεν, αὐτοῦ ἀποθνῄσκει, τὸ δ’ ἀθάνατον σῶν καὶ ἀδιάφθορον
+  οἴχεται ἀπιόν, ὑπεκχωρῆσαν τῷ θανάτῳ. φαίνεται. ΦΑΙΔ. παντὸς μᾶλλον ἄρα, ἔφη, ὦ Κέβης, ψυχὴ ἀθάνατον καὶ
+sanskrit_iast: asphalē soi erō apokrisin ekeinēn tēn amathē, hoti hō an thermotēs, alla kompsoteran ek tōn nyn, hoti hō an
+  pyr; oyde an erē hō an sōmati ti engenētai nosēsei, oyk erō hoti hō an nosos, all’ hō an pyretos; oyd’ hō an arithmō ti
+  engenētai perittos estai, oyk erō hō an perittotēs, all’ hō an monas, kai talla oytōs. all’ hora ei ēdē hikanōs oisth’ hoti
+  boylomai. alla pany hikanōs, ephē. apokrinoy dē, ē d’ hos, hō an ti engenētai sōmati zōn estai; hōi an psychē, ephē. oykoyn
+  aei toyto oytōs echei; pōs gar oychi; ē d’ hos. psychē ara hoti an aytē kataschē, aei hēkei ep’ ekeino pheroysa zōēn; hēkei
+  mentoi, ephē. poteron d’ esti ti zōē enantion ē oyden; estin, ephē. ti; thanatos. oykoyn psychē to enantion hō aytē epipherei
+  aei oy mē pote dexētai, hōs ek tōn prosthen hōmologētai; kai mala sphodra, ephē ho Kebēs. ti oyn; to mē dechomenon tēn toy
+  artioy idean ti nyndē ōnomazomen; anartion, ephē. to de dikaion mē dechomenon kai ho an moysikon mē dechētai; amoyson, ephē,
+  to de adikon. eien; ho d’ an thanaton mē dechētai ti kaloymen; athanaton, ephē. oykoyn psychē oy dechetai thanaton; oy.
+  athanaton ara psychē. athanaton. eien, ephē; toyto men dē apodedeichthai phōmen; ē pōs dokei; kai mala ge hikanōs, ō Sōkrates.
+  PhAID. ti oyn, ē d’ hos, ō Kebēs; ei tō anartiō anankaion ēn anōlethrō einai, allo ti ta tria ē anōlethra an ēn; pōs gar
+  oy; oykoyn ei kai to athermon anankaion ēn anōlethron einai, hopote tis epi chiona thermon epagoi, hypexēei an hē chiōn
+  oysa sōs kai atēktos; oy gar an apōleto ge, oyd’ ay hypomenoysa edexato an tēn thermotēta. alēthē, ephē, legeis. hōs d’
+  aytōs oimai kan ei to apsykton anōlethron ēn, hopote epi to pyr psychron ti epēei, oypot’ an apesbennyto oyd’ apōllyto,
+  alla sōn an apelthon ōcheto. anankē, ephē. oykoyn kai hōde, ephē, anankē peri toy athanatoy eipein; ei men to athanaton
+  kai anōlethron estin, adynaton psychē, hotan thanatos ep’ aytēn iē, apollysthai; thanaton men gar dē ek tōn proeirēmenōn
+  oy dexetai oyd’ estai tethnēkyia, hōsper ta tria oyk estai, ephamen, artion, oyde g’ ay to peritton, oyde dē pyr psychron,
+  oyde ge hē en tō pyri thermotēs. alla ti kōlyei, phaiē an tis, artion men to peritton mē gignesthai epiontos toy artioy,
+  hōsper hōmologētai, apolomenoy de aytoy ant’ ekeinoy artion gegonenai; tō tayta legonti oyk an echoimen diamachesasthai
+  hoti oyk apollytai; to gar anartion oyk anōlethron estin; epei ei toyto hōmologēto hēmin, rhadiōs an diemachometha hoti
+  epelthontos toy artioy to peritton kai ta tria oichetai apionta; kai peri pyros kai thermoy kai tōn allōn oytōs an diemachometha.
+  ē oy; pany men oyn. oykoyn kai nyn peri toy athanatoy, ei men hēmin homologeitai kai anōlethron einai, psychē an eiē pros
+  tō athanatos einai kai anōlethros; ei de mē, alloy an deoi logoy. all’ oyden dei, ephē, toytoy ge heneka; scholē gar an
+  ti allo phthoran mē dechoito, ei to ge athanaton aidion on phthoran dexetai. ho de ge theos oimai, ephē ho Sōkratēs, kai
+  ayto to tēs zōēs eidos kai ei ti allo athanaton estin, para pantōn an homologētheiē mēdepote apollysthai. para pantōn mentoi
+  nē Di, ephē, anthrōpōn te ge kai eti mallon, hōs egōmai, para theōn. hopote dē to athanaton kai adiaphthoron estin, allo
+  ti psychē ē, ei athanatos tynchanei oysa, kai anōlethros an eiē; pollē anankē. epiontos ara thanatoy epi ton anthrōpon to
+  men thnēton, hōs eoiken, aytoy apothnēskei, to d’ athanaton sōn kai adiaphthoron oichetai apion, hypekchōrēsan tō thanatō.
+  phainetai. PhAID. pantos mallon ara, ephē, ō Kebēs, psychē athanaton kai
+translation_literal: 'Socrates'' final argument turns on essential contraries: what bears life cannot admit death while remaining
+  what it is. Since soul is that by which bodies live, soul belongs to the class that excludes death. Immortality is argued
+  not by sentiment, but by the logic of participation and incompatibility.'
+commentary: 'The claim is that ontological identity has entailments. Socrates'' counterintuitive move is to link immortality
+  not to soul''s duration alone but to soul''s formal role as life-bearer. The argument''s architecture is technical: opposites
+  exclude each other; things that inseparably carry one opposite exclude the contrary. Fire excludes cold, odd excludes even,
+  soul-as-life excludes death.
 
 
-  Whether one accepts the conclusion, the method is exemplary in one respect: it seeks necessity, not
-  psychological consolation. Socrates knows his situation tempts rhetorical comfort, yet he insists on
-  argumentative accountability. That ethical commitment to reason under mortal pressure is itself part
-  of the teaching.
+  Whether one accepts the conclusion, the method is exemplary in one respect: it seeks necessity, not psychological consolation.
+  Socrates knows his situation tempts rhetorical comfort, yet he insists on argumentative accountability. That ethical commitment
+  to reason under mortal pressure is itself part of the teaching.
 
 
-  Existentially, this passage challenges contemporary habits of treating metaphysical claims as pure preference.
-  Plato models another stance: if we claim something ultimate, we should articulate the structural commitments
-  it entails. For practitioners, the practical lesson is less "win the proof" than "live answerably to
-  your deepest metaphysical commitments." A life built on unexamined assumptions fractures under crisis;
-  a life trained in reasoned commitment becomes coherent under finality.
+  Existentially, this passage challenges contemporary habits of treating metaphysical claims as pure preference. Plato models
+  another stance: if we claim something ultimate, we should articulate the structural commitments it entails. For practitioners,
+  the practical lesson is less "win the proof" than "live answerably to your deepest metaphysical commitments." A life built
+  on unexamined assumptions fractures under crisis; a life trained in reasoned commitment becomes coherent under finality.
 
 
   Key Terms:
 
 
-  **athanatos (ἀθάνατος)** - deathless/immortal -> not merely very long-lasting but structurally non-admitting
-  of death -> translating as "immortal" without this logical force weakens the argument.
+  **athanatos (ἀθάνατος)** - deathless/immortal -> not merely very long-lasting but structurally non-admitting of death ->
+  translating as "immortal" without this logical force weakens the argument.
 
 
-  **zoe (ζωή)** - life -> here treated as inseparable predicate borne by soul -> reducing to biological
-  vitality misses formal role in argument.
+  **zoe (ζωή)** - life -> here treated as inseparable predicate borne by soul -> reducing to biological vitality misses formal
+  role in argument.
 
 
-  **enantia (ἐναντία)** - contraries -> foundational logical mechanism driving the proof -> if taken loosely
-  as "different," argument precision is lost.
+  **enantia (ἐναντία)** - contraries -> foundational logical mechanism driving the proof -> if taken loosely as "different,"
+  argument precision is lost.
 
 
-  **logos apodeiktikos (λόγος ἀποδεικτικός)** - demonstrative reasoning -> Socrates aims at necessity
-  from agreed premises -> absent this frame, the section appears as rhetorical flourish rather than proof
-  attempt.'
+  **logos apodeiktikos (λόγος ἀποδεικτικός)** - demonstrative reasoning -> Socrates aims at necessity from agreed premises
+  -> absent this frame, the section appears as rhetorical flourish rather than proof attempt.'
 insight: The claim is that ontological identity has entailments.
-practice: 'Write one sentence beginning "What I take to be essential in me is..." then test it: can that
-  claim remain coherent when status, mood, and body-state change?'
+practice: 'Write one sentence beginning "What I take to be essential in me is..." then test it: can that claim remain coherent
+  when status, mood, and body-state change?'
 upaya: ''
 themes:
 - death
@@ -70,63 +118,120 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '*Source-language basis:* Greek source text not yet line-aligned in this manuscript pass; passage
-    body follows Jowett''s English rendering.'
+  body: ἀσφαλῆ σοι ἐρῶ ἀπόκρισιν ἐκείνην τὴν ἀμαθῆ, ὅτι ᾧ ἂν θερμότης, ἀλλὰ κομψοτέραν ἐκ τῶν νῦν, ὅτι ᾧ ἂν πῦρ· οὐδὲ ἂν ἔρῃ
+    ᾧ ἂν σώματι τί ἐγγένηται νοσήσει, οὐκ ἐρῶ ὅτι ᾧ ἂν νόσος, ἀλλ’ ᾧ ἂν πυρετός· οὐδ’ ᾧ ἂν ἀριθμῷ τί ἐγγένηται περιττὸς ἔσται,
+    οὐκ ἐρῶ ᾧ ἂν περιττότης, ἀλλ’ ᾧ ἂν μονάς, καὶ τἆλλα οὕτως. ἀλλ’ ὅρα εἰ ἤδη ἱκανῶς οἶσθ’ ὅτι βούλομαι. ἀλλὰ πάνυ ἱκανῶς,
+    ἔφη. ἀποκρίνου δή, ἦ δ’ ὅς, ᾧ ἂν τί ἐγγένηται σώματι ζῶν ἔσται; ὧι ἂν ψυχή, ἔφη. οὐκοῦν ἀεὶ τοῦτο οὕτως ἔχει; πῶς γὰρ
+    οὐχί; ἦ δ’ ὅς. ψυχὴ ἄρα ὅτι ἂν αὐτὴ κατάσχῃ, ἀεὶ ἥκει ἐπ’ ἐκεῖνο φέρουσα ζωήν; ἥκει μέντοι, ἔφη. πότερον δ’ ἔστι τι ζωῇ
+    ἐναντίον ἢ οὐδέν; ἔστιν, ἔφη. τί; θάνατος. οὐκοῦν ψυχὴ τὸ ἐναντίον ᾧ αὐτὴ ἐπιφέρει ἀεὶ οὐ μή ποτε δέξηται, ὡς ἐκ τῶν πρόσθεν
+    ὡμολόγηται; καὶ μάλα σφόδρα, ἔφη ὁ Κέβης. τί οὖν; τὸ μὴ δεχόμενον τὴν τοῦ ἀρτίου ἰδέαν τί νυνδὴ ὠνομάζομεν; ἀνάρτιον,
+    ἔφη. τὸ δὲ δίκαιον μὴ δεχόμενον καὶ ὃ ἂν μουσικὸν μὴ δέχηται; ἄμουσον, ἔφη, τὸ δὲ ἄδικον. εἶεν· ὃ δ’ ἂν θάνατον μὴ δέχηται
+    τί καλοῦμεν; ἀθάνατον, ἔφη. οὐκοῦν ψυχὴ οὐ δέχεται θάνατον; οὔ. ἀθάνατον ἄρα ψυχή. ἀθάνατον. εἶεν, ἔφη· τοῦτο μὲν δὴ ἀποδεδεῖχθαι
+    φῶμεν; ἢ πῶς δοκεῖ; καὶ μάλα γε ἱκανῶς, ὦ Σώκρατες. ΦΑΙΔ. τί οὖν, ἦ δ’ ὅς, ὦ Κέβης; εἰ τῷ ἀναρτίῳ ἀναγκαῖον ἦν ἀνωλέθρῳ
+    εἶναι, ἄλλο τι τὰ τρία ἢ ἀνώλεθρα ἂν ἦν; πῶς γὰρ οὔ; οὐκοῦν εἰ καὶ τὸ ἄθερμον ἀναγκαῖον ἦν ἀνώλεθρον εἶναι, ὁπότε τις
+    ἐπὶ χιόνα θερμὸν ἐπάγοι, ὑπεξῄει ἂν ἡ χιὼν οὖσα σῶς καὶ ἄτηκτος; οὐ γὰρ ἂν ἀπώλετό γε, οὐδ’ αὖ ὑπομένουσα ἐδέξατο ἂν τὴν
+    θερμότητα. ἀληθῆ, ἔφη, λέγεις. ὣς δ’ αὔτως οἶμαι κἂν εἰ τὸ ἄψυκτον ἀνώλεθρον ἦν, ὁπότε ἐπὶ τὸ πῦρ ψυχρόν τι ἐπῄει, οὔποτ’
+    ἂν ἀπεσβέννυτο οὐδ’ ἀπώλλυτο, ἀλλὰ σῶν ἂν ἀπελθὸν ᾤχετο. ἀνάγκη, ἔφη. οὐκοῦν καὶ ὧδε, ἔφη, ἀνάγκη περὶ τοῦ ἀθανάτου εἰπεῖν;
+    εἰ μὲν τὸ ἀθάνατον καὶ ἀνώλεθρόν ἐστιν, ἀδύνατον ψυχῇ, ὅταν θάνατος ἐπ’ αὐτὴν ἴῃ, ἀπόλλυσθαι· θάνατον μὲν γὰρ δὴ ἐκ τῶν
+    προειρημένων οὐ δέξεται οὐδ’ ἔσται τεθνηκυῖα, ὥσπερ τὰ τρία οὐκ ἔσται, ἔφαμεν, ἄρτιον, οὐδέ γ’ αὖ τὸ περιττόν, οὐδὲ δὴ
+    πῦρ ψυχρόν, οὐδέ γε ἡ ἐν τῷ πυρὶ θερμότης. ἀλλὰ τί κωλύει, φαίη ἄν τις, ἄρτιον μὲν τὸ περιττὸν μὴ γίγνεσθαι ἐπιόντος τοῦ
+    ἀρτίου, ὥσπερ ὡμολόγηται, ἀπολομένου δὲ αὐτοῦ ἀντ’ ἐκείνου ἄρτιον γεγονέναι; τῷ ταῦτα λέγοντι οὐκ ἂν ἔχοιμεν διαμαχέσασθαι
+    ὅτι οὐκ ἀπόλλυται· τὸ γὰρ ἀνάρτιον οὐκ ἀνώλεθρόν ἐστιν· ἐπεὶ εἰ τοῦτο ὡμολόγητο ἡμῖν, ῥᾳδίως ἂν διεμαχόμεθα ὅτι ἐπελθόντος
+    τοῦ ἀρτίου τὸ περιττὸν καὶ τὰ τρία οἴχεται ἀπιόντα· καὶ περὶ πυρὸς καὶ θερμοῦ καὶ τῶν ἄλλων οὕτως ἂν διεμαχόμεθα. ἢ οὔ;
+    πάνυ μὲν οὖν. οὐκοῦν καὶ νῦν περὶ τοῦ ἀθανάτου, εἰ μὲν ἡμῖν ὁμολογεῖται καὶ ἀνώλεθρον εἶναι, ψυχὴ ἂν εἴη πρὸς τῷ ἀθάνατος
+    εἶναι καὶ ἀνώλεθρος· εἰ δὲ μή, ἄλλου ἂν δέοι λόγου. ἀλλ’ οὐδὲν δεῖ, ἔφη, τούτου γε ἕνεκα· σχολῇ γὰρ ἄν τι ἄλλο φθορὰν
+    μὴ δέχοιτο, εἰ τό γε ἀθάνατον ἀίδιον ὂν φθορὰν δέξεται. ὁ δέ γε θεὸς οἶμαι, ἔφη ὁ Σωκράτης, καὶ αὐτὸ τὸ τῆς ζωῆς εἶδος
+    καὶ εἴ τι ἄλλο ἀθάνατόν ἐστιν, παρὰ πάντων ἂν ὁμολογηθείη μηδέποτε ἀπόλλυσθαι. παρὰ πάντων μέντοι νὴ Δί᾽, ἔφη, ἀνθρώπων
+    τέ γε καὶ ἔτι μᾶλλον, ὡς ἐγᾦμαι, παρὰ θεῶν. ὁπότε δὴ τὸ ἀθάνατον καὶ ἀδιάφθορόν ἐστιν, ἄλλο τι ψυχὴ ἤ, εἰ ἀθάνατος τυγχάνει
+    οὖσα, καὶ ἀνώλεθρος ἂν εἴη; πολλὴ ἀνάγκη. ἐπιόντος ἄρα θανάτου ἐπὶ τὸν ἄνθρωπον τὸ μὲν θνητόν, ὡς ἔοικεν, αὐτοῦ ἀποθνῄσκει,
+    τὸ δ’ ἀθάνατον σῶν καὶ ἀδιάφθορον οἴχεται ἀπιόν, ὑπεκχωρῆσαν τῷ θανάτῳ. φαίνεται. ΦΑΙΔ. παντὸς μᾶλλον ἄρα, ἔφη, ὦ Κέβης,
+    ψυχὴ ἀθάνατον καὶ
+  layer_provenance: 'Greek: Burnet OCT (1900) via Perseus urn:cts:greekLit:tlg0059.tlg004.perseus-grc2 (CC BY-SA); Stephanus
+    105c–106e (soul brings life / athanatos)'
+- kind: iast
+  label: IAST
+  body: asphalē soi erō apokrisin ekeinēn tēn amathē, hoti hō an thermotēs, alla kompsoteran ek tōn nyn, hoti hō an pyr; oyde
+    an erē hō an sōmati ti engenētai nosēsei, oyk erō hoti hō an nosos, all’ hō an pyretos; oyd’ hō an arithmō ti engenētai
+    perittos estai, oyk erō hō an perittotēs, all’ hō an monas, kai talla oytōs. all’ hora ei ēdē hikanōs oisth’ hoti boylomai.
+    alla pany hikanōs, ephē. apokrinoy dē, ē d’ hos, hō an ti engenētai sōmati zōn estai; hōi an psychē, ephē. oykoyn aei
+    toyto oytōs echei; pōs gar oychi; ē d’ hos. psychē ara hoti an aytē kataschē, aei hēkei ep’ ekeino pheroysa zōēn; hēkei
+    mentoi, ephē. poteron d’ esti ti zōē enantion ē oyden; estin, ephē. ti; thanatos. oykoyn psychē to enantion hō aytē epipherei
+    aei oy mē pote dexētai, hōs ek tōn prosthen hōmologētai; kai mala sphodra, ephē ho Kebēs. ti oyn; to mē dechomenon tēn
+    toy artioy idean ti nyndē ōnomazomen; anartion, ephē. to de dikaion mē dechomenon kai ho an moysikon mē dechētai; amoyson,
+    ephē, to de adikon. eien; ho d’ an thanaton mē dechētai ti kaloymen; athanaton, ephē. oykoyn psychē oy dechetai thanaton;
+    oy. athanaton ara psychē. athanaton. eien, ephē; toyto men dē apodedeichthai phōmen; ē pōs dokei; kai mala ge hikanōs,
+    ō Sōkrates. PhAID. ti oyn, ē d’ hos, ō Kebēs; ei tō anartiō anankaion ēn anōlethrō einai, allo ti ta tria ē anōlethra
+    an ēn; pōs gar oy; oykoyn ei kai to athermon anankaion ēn anōlethron einai, hopote tis epi chiona thermon epagoi, hypexēei
+    an hē chiōn oysa sōs kai atēktos; oy gar an apōleto ge, oyd’ ay hypomenoysa edexato an tēn thermotēta. alēthē, ephē, legeis.
+    hōs d’ aytōs oimai kan ei to apsykton anōlethron ēn, hopote epi to pyr psychron ti epēei, oypot’ an apesbennyto oyd’ apōllyto,
+    alla sōn an apelthon ōcheto. anankē, ephē. oykoyn kai hōde, ephē, anankē peri toy athanatoy eipein; ei men to athanaton
+    kai anōlethron estin, adynaton psychē, hotan thanatos ep’ aytēn iē, apollysthai; thanaton men gar dē ek tōn proeirēmenōn
+    oy dexetai oyd’ estai tethnēkyia, hōsper ta tria oyk estai, ephamen, artion, oyde g’ ay to peritton, oyde dē pyr psychron,
+    oyde ge hē en tō pyri thermotēs. alla ti kōlyei, phaiē an tis, artion men to peritton mē gignesthai epiontos toy artioy,
+    hōsper hōmologētai, apolomenoy de aytoy ant’ ekeinoy artion gegonenai; tō tayta legonti oyk an echoimen diamachesasthai
+    hoti oyk apollytai; to gar anartion oyk anōlethron estin; epei ei toyto hōmologēto hēmin, rhadiōs an diemachometha hoti
+    epelthontos toy artioy to peritton kai ta tria oichetai apionta; kai peri pyros kai thermoy kai tōn allōn oytōs an diemachometha.
+    ē oy; pany men oyn. oykoyn kai nyn peri toy athanatoy, ei men hēmin homologeitai kai anōlethron einai, psychē an eiē pros
+    tō athanatos einai kai anōlethros; ei de mē, alloy an deoi logoy. all’ oyden dei, ephē, toytoy ge heneka; scholē gar an
+    ti allo phthoran mē dechoito, ei to ge athanaton aidion on phthoran dexetai. ho de ge theos oimai, ephē ho Sōkratēs, kai
+    ayto to tēs zōēs eidos kai ei ti allo athanaton estin, para pantōn an homologētheiē mēdepote apollysthai. para pantōn
+    mentoi nē Di, ephē, anthrōpōn te ge kai eti mallon, hōs egōmai, para theōn. hopote dē to athanaton kai adiaphthoron estin,
+    allo ti psychē ē, ei athanatos tynchanei oysa, kai anōlethros an eiē; pollē anankē. epiontos ara thanatoy epi ton anthrōpon
+    to men thnēton, hōs eoiken, aytoy apothnēskei, to d’ athanaton sōn kai adiaphthoron oichetai apion, hypekchōrēsan tō thanatō.
+    phainetai. PhAID. pantos mallon ara, ephē, ō Kebēs, psychē athanaton kai
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
-  body: 'Socrates'' final argument turns on essential contraries: what bears life cannot admit death while
-    remaining what it is. Since soul is that by which bodies live, soul belongs to the class that excludes
-    death. Immortality is argued not by sentiment, but by the logic of participation and incompatibility.'
+  body: 'Socrates'' final argument turns on essential contraries: what bears life cannot admit death while remaining what
+    it is. Since soul is that by which bodies live, soul belongs to the class that excludes death. Immortality is argued not
+    by sentiment, but by the logic of participation and incompatibility.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The claim is that ontological identity has entailments. Socrates'' counterintuitive move is to
-    link immortality not to soul''s duration alone but to soul''s formal role as life-bearer. The argument''s
-    architecture is technical: opposites exclude each other; things that inseparably carry one opposite
-    exclude the contrary. Fire excludes cold, odd excludes even, soul-as-life excludes death.
+  body: 'The claim is that ontological identity has entailments. Socrates'' counterintuitive move is to link immortality not
+    to soul''s duration alone but to soul''s formal role as life-bearer. The argument''s architecture is technical: opposites
+    exclude each other; things that inseparably carry one opposite exclude the contrary. Fire excludes cold, odd excludes
+    even, soul-as-life excludes death.
 
 
-    Whether one accepts the conclusion, the method is exemplary in one respect: it seeks necessity, not
-    psychological consolation. Socrates knows his situation tempts rhetorical comfort, yet he insists
-    on argumentative accountability. That ethical commitment to reason under mortal pressure is itself
-    part of the teaching.
+    Whether one accepts the conclusion, the method is exemplary in one respect: it seeks necessity, not psychological consolation.
+    Socrates knows his situation tempts rhetorical comfort, yet he insists on argumentative accountability. That ethical commitment
+    to reason under mortal pressure is itself part of the teaching.
 
 
-    Existentially, this passage challenges contemporary habits of treating metaphysical claims as pure
-    preference. Plato models another stance: if we claim something ultimate, we should articulate the
-    structural commitments it entails. For practitioners, the practical lesson is less "win the proof"
-    than "live answerably to your deepest metaphysical commitments." A life built on unexamined assumptions
-    fractures under crisis; a life trained in reasoned commitment becomes coherent under finality.
+    Existentially, this passage challenges contemporary habits of treating metaphysical claims as pure preference. Plato models
+    another stance: if we claim something ultimate, we should articulate the structural commitments it entails. For practitioners,
+    the practical lesson is less "win the proof" than "live answerably to your deepest metaphysical commitments." A life built
+    on unexamined assumptions fractures under crisis; a life trained in reasoned commitment becomes coherent under finality.
 
 
     Key Terms:
 
 
-    **athanatos (ἀθάνατος)** - deathless/immortal -> not merely very long-lasting but structurally non-admitting
-    of death -> translating as "immortal" without this logical force weakens the argument.
+    **athanatos (ἀθάνατος)** - deathless/immortal -> not merely very long-lasting but structurally non-admitting of death
+    -> translating as "immortal" without this logical force weakens the argument.
 
 
-    **zoe (ζωή)** - life -> here treated as inseparable predicate borne by soul -> reducing to biological
-    vitality misses formal role in argument.
+    **zoe (ζωή)** - life -> here treated as inseparable predicate borne by soul -> reducing to biological vitality misses
+    formal role in argument.
 
 
-    **enantia (ἐναντία)** - contraries -> foundational logical mechanism driving the proof -> if taken
-    loosely as "different," argument precision is lost.
+    **enantia (ἐναντία)** - contraries -> foundational logical mechanism driving the proof -> if taken loosely as "different,"
+    argument precision is lost.
 
 
-    **logos apodeiktikos (λόγος ἀποδεικτικός)** - demonstrative reasoning -> Socrates aims at necessity
-    from agreed premises -> absent this frame, the section appears as rhetorical flourish rather than
-    proof attempt.'
+    **logos apodeiktikos (λόγος ἀποδεικτικός)** - demonstrative reasoning -> Socrates aims at necessity from agreed premises
+    -> absent this frame, the section appears as rhetorical flourish rather than proof attempt.'
 - kind: key_terms
   label: Key Terms
   items:
   - term: meletē thanatou
-    definition: '‘practice/rehearsal of death’ → philosophy as training to loosen identity with the perishable
-      Here: Soul as Bearer of Life and Therefore Deathless Soul as Bearer of Life and Therefore Deathless
-      *Source-language basis:* Greek source text not yet line-aligned i… Trap: morbid death-obsession'
+    definition: '‘practice/rehearsal of death’ → philosophy as training to loosen identity with the perishable Here: Soul
+      as Bearer of Life and Therefore Deathless Soul as Bearer of Life and Therefore Deathless *Source-language basis:* Greek
+      source text not yet line-aligned i… Trap: morbid death-obsession'
   - term: psychē (ψυχή)
-    definition: '‘soul, life-principle’ → immortal knowing principle separable in practice from body Here:
-      Soul as Bearer of Life and Therefore Deathless Soul as Bearer of Life and Therefore Deathless *Source-language
-      basis:* Greek source text not yet line-aligned i… Trap: Cartesian ghost; modern psychology'
+    definition: '‘soul, life-principle’ → immortal knowing principle separable in practice from body Here: Soul as Bearer
+      of Life and Therefore Deathless Soul as Bearer of Life and Therefore Deathless *Source-language basis:* Greek source
+      text not yet line-aligned i… Trap: Cartesian ghost; modern psychology'
     lemma_id: psyche
     sense_id: 1.5
   layer_provenance: editorial-enriched
@@ -134,10 +239,8 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Phaedrus 245c-e (self-moving soul)
-    resonance: Both arguments seek soul's deathlessness through its essential role rather than empirical
-      persistence.
-    divergence: '*Phaedrus* grounds in self-motion; *Phaedo* grounds in life-participation and contrary
-      exclusion.'
+    resonance: Both arguments seek soul's deathlessness through its essential role rather than empirical persistence.
+    divergence: '*Phaedrus* grounds in self-motion; *Phaedo* grounds in life-participation and contrary exclusion.'
     passage_id: ''
   - citation: Nyaya discussions on atman as substratum of cognition
     resonance: Both use inferential structure to establish a non-reducible self-principle.
@@ -150,14 +253,18 @@ pratibha_layers:
   layer_provenance: migrated_from_commentary
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Write one sentence beginning "What I take to be essential in me is..." then test it: can that
-    claim remain coherent when status, mood, and body-state change?'
+  body: 'Write one sentence beginning "What I take to be essential in me is..." then test it: can that claim remain coherent
+    when status, mood, and body-state change?'
 appendixes: []
 anchor_chapter: ''
 provenance:
   collection: Phaedo (Plato)
   section: teaching_passage
   original_id: PHAEDO_MD_006
-  source_reference: ''
-translation_provenance: English adapted from Benjamin Jowett's translation of the *Phaedo* (public domain).
-  Study rendering.
+  source_reference: 'Greek: Burnet OCT (1900) via Perseus urn:cts:greekLit:tlg0059.tlg004.perseus-grc2 (CC BY-SA); Stephanus
+    105c–106e (soul brings life / athanatos)'
+translation_provenance: English adapted from Benjamin Jowett's translation of the *Phaedo* (public domain). Study rendering.
+layer_provenance:
+  original: 'Greek: Burnet OCT (1900) via Perseus urn:cts:greekLit:tlg0059.tlg004.perseus-grc2 (CC BY-SA); Stephanus 105c–106e
+    (soul brings life / athanatos)'
+  iast: transliterated_from_greek

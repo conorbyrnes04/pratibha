@@ -52,12 +52,12 @@ LOCI: dict[str, dict[str, Any]] = {
         "cite": "64a–65d; 67d–e",
         "note": "melete thanatou / soul-body separation",
     },
-    # Recollection / equals (core argument, not full closure)
+    # Recollection / equals (core argument)
     "phaedo_md_002": {
-        "start": "72e",
+        "start": "73c",
         "end": "75e",
-        "anchor": "καὶ κατ’ ἐκεῖνόν γε τὸν λόγον",
-        "cite": "72e–75e",
+        "anchor": "οὐκοῦν ὁμολογοῦμεν",
+        "cite": "73c–75e",
         "note": "anamnesis / Equality",
     },
     # Affinity with invisible / simple
@@ -70,6 +70,7 @@ LOCI: dict[str, dict[str, Any]] = {
     # Harmony theory: Simmias' proposal + soul-as-ruler refutation
     "phaedo_md_004": {
         "parts": [("85e", "86d"), ("94b", "94e")],
+        "part_anchors": {"85e": "ταύτῃ ἔμοιγε"},
         "cite": "85e–86d; 94b–e",
         "note": "harmonia analogy + soul governs body",
     },
@@ -100,6 +101,7 @@ LOCI: dict[str, dict[str, Any]] = {
     "phaedo_md_008": {
         "start": "61c",
         "end": "62e",
+        "anchor": "πῶς τοῦτο λέγεις",
         "cite": "61c–62e",
         "note": "gods' possession / may not open the door",
     },
@@ -107,6 +109,7 @@ LOCI: dict[str, dict[str, Any]] = {
     "phaedo_md_009": {
         "start": "70c",
         "end": "72a",
+        "anchor": "σκεψώμεθα δὲ αὐτὸ τῇδέ πῃ",
         "cite": "70c–72a",
         "note": "cycle of opposites / souls exist",
     },
@@ -114,6 +117,7 @@ LOCI: dict[str, dict[str, Any]] = {
     "phaedo_md_010": {
         "start": "69a",
         "end": "69d",
+        "anchor": "ὦ μακάριε Σιμμία",
         "cite": "69a–d",
         "note": "true exchange / narthēkophoroi",
     },
@@ -128,6 +132,7 @@ LOCI: dict[str, dict[str, Any]] = {
     "phaedo_md_012": {
         "start": "109a",
         "end": "110a",
+        "anchor": "ἔτι τοίνυν, ἔφη, πάμμεγά τι εἶναι",
         "cite": "109a–110a",
         "note": "true earth / ants or frogs",
     },
