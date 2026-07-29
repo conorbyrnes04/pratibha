@@ -2,18 +2,14 @@
 
 _Read-only audit of original-language coverage across 1160 canonical units in 38 works (source: `data/canonical/index.jsonl`)._
 
-**Headline:** 1129/1160 units (97%) carry complete, language-appropriate original text (Devanagari+IAST for Sanskrit; native script for Greek/Chinese/Persian/Arabic/Tibetan/Japanese/German).
+**Headline:** 1131/1160 units (98%) carry complete, language-appropriate original text (Devanagari+IAST for Sanskrit; native script for Greek/Chinese/Persian/Arabic/Tibetan/Japanese/German).
 
 ## Per-work coverage
 
 | Work | Lang | Units | Complete | % | Top problem (count) |
 |------|------|------:|---------:|--:|---------------------|
-| `phaedo_plato` | greek | 12 | 0 | 0% | Placeholder / source-language-basis note (no native script) (12) |
-| `shantideva_bodhicaryavatara` | sanskrit | 8 | 0 | 0% | Placeholder / source-language-basis note (no native script) (8) |
-| `tilopa_mahamudra` | tibetan | 3 | 0 | 0% | Placeholder / source-language-basis note (no native script) (3) |
-| `mandukya_upanishad_and_gaudapada_karika` | sanskrit | 16 | 12 | 75% | No original text at all (no script, no IAST) (4) |
+| `dhammapada` | unknown | 26 | 0 | 0% | Placeholder / source-language-basis note (no native script) (26) |
 | `pratyabhijnahrdayam` | sanskrit | 21 | 20 | 95% | No original text at all (no script, no IAST) (1) |
-| `astavakra_gita` | sanskrit | 31 | 30 | 97% | No original text at all (no script, no IAST) (1) |
 | `heraclitus_fragments` | greek | 128 | 126 | 98% | Non-Sanskrit work missing its native source script (2) |
 | `patañjali_yoga_sūtras` | sanskrit | 195 | 195 | 100% | — |
 | `vijnana_bhairava` | sanskrit | 112 | 112 | 100% | — |
@@ -24,46 +20,46 @@ _Read-only audit of original-language coverage across 1160 canonical units in 38
 | `confucius_analects` | unknown | 45 | 45 | 100% | — |
 | `know_yourself_ibn_arabi_balyani` | arabic | 36 | 36 | 100% | — |
 | `plotinus_enneads` | greek | 32 | 32 | 100% | — |
-| `dhammapada` | unknown | 26 | 26 | 100% | — |
+| `astavakra_gita` | sanskrit | 31 | 31 | 100% | — |
 | `isavasya_upanishad` | sanskrit | 24 | 24 | 100% | — |
 | `svetasvatara_upanishad` | sanskrit | 22 | 22 | 100% | — |
 | `rumi_mathnawi` | persian | 22 | 22 | 100% | — |
 | `pseudo_dionysius` | unknown | 20 | 20 | 100% | — |
 | `tantrasara` | sanskrit | 19 | 19 | 100% | — |
+| `mandukya_upanishad_and_gaudapada_karika` | sanskrit | 16 | 16 | 100% | — |
 | `milarepa_songs` | tibetan | 14 | 14 | 100% | — |
 | `zhongyong` | unknown | 14 | 14 | 100% | — |
 | `bhagavad_gita` | sanskrit | 12 | 12 | 100% | — |
 | `chāndogya_upaniṣad` | sanskrit | 12 | 12 | 100% | — |
+| `phaedo_plato` | greek | 12 | 12 | 100% | — |
 | `meister_eckhart` | german | 12 | 12 | 100% | — |
 | `dogen_shobogenzo` | japanese | 12 | 12 | 100% | — |
 | `marcus_aurelius_meditations` | unknown | 12 | 12 | 100% | — |
 | `yoginihrdaya` | sanskrit | 11 | 11 | 100% | — |
 | `nagarjuna_mulamadhyamakakarika` | sanskrit | 9 | 9 | 100% | — |
 | `katha_upanishad` | unknown | 9 | 9 | 100% | — |
+| `shantideva_bodhicaryavatara` | sanskrit | 8 | 8 | 100% | — |
 | `brihadaranyaka_upanishad` | unknown | 5 | 5 | 100% | — |
 | `the_cloud_of_unknowing` | unknown | 5 | 5 | 100% | — |
 | `mundaka_upanishad` | unknown | 5 | 5 | 100% | — |
 | `parmenides_fragments` | unknown | 4 | 4 | 100% | — |
 | `epictetus_works` | greek | 3 | 3 | 100% | — |
 | `heart_sutra` | sanskrit | 3 | 3 | 100% | — |
+| `tilopa_mahamudra` | tibetan | 3 | 3 | 100% | — |
 
 ## Worst offenders (by missing units)
 
 | Work | Lang | Units | Missing/incomplete | Dominant issue |
 |------|------|------:|-------------------:|----------------|
-| `phaedo_plato` | greek | 12 | 12 | Placeholder / source-language-basis note (no native script) (12) |
-| `shantideva_bodhicaryavatara` | sanskrit | 8 | 8 | Placeholder / source-language-basis note (no native script) (8) |
-| `mandukya_upanishad_and_gaudapada_karika` | sanskrit | 16 | 4 | No original text at all (no script, no IAST) (4) |
-| `tilopa_mahamudra` | tibetan | 3 | 3 | Placeholder / source-language-basis note (no native script) (3) |
+| `dhammapada` | ? | 26 | 26 | Placeholder / source-language-basis note (no native script) (26) |
 | `heraclitus_fragments` | greek | 128 | 2 | Non-Sanskrit work missing its native source script (2) |
-| `astavakra_gita` | sanskrit | 31 | 1 | No original text at all (no script, no IAST) (1) |
 | `pratyabhijnahrdayam` | sanskrit | 21 | 1 | No original text at all (no script, no IAST) (1) |
 
 ## Problem classes & representative unit_ids
 
-- **Placeholder / source-language-basis note (no native script)** — 23 units. e.g. `phaedo_plato.phaedo_md_001`, `phaedo_plato.phaedo_md_002`, `phaedo_plato.phaedo_md_003`, `phaedo_plato.phaedo_md_004`, `phaedo_plato.phaedo_md_005`, `phaedo_plato.phaedo_md_006`
-- **No original text at all (no script, no IAST)** — 6 units. e.g. `astavakra_gita.asg_sum_11_01_11_08`, `mandukya_upanishad_and_gaudapada_karika.muk_001`, `mandukya_upanishad_and_gaudapada_karika.muk_004`, `mandukya_upanishad_and_gaudapada_karika.muk_010`, `mandukya_upanishad_and_gaudapada_karika.muk_016`, `pratyabhijnahrdayam.phr_sum_appendix`
+- **Placeholder / source-language-basis note (no native script)** — 26 units. e.g. `dhammapada.dhp_ch01`, `dhammapada.dhp_ch02`, `dhammapada.dhp_ch03`, `dhammapada.dhp_ch04`, `dhammapada.dhp_ch05`, `dhammapada.dhp_ch06`
 - **Non-Sanskrit work missing its native source script** — 2 units. e.g. `heraclitus_fragments.hfr_p089`, `heraclitus_fragments.hfr_p120`
+- **No original text at all (no script, no IAST)** — 1 units. e.g. `pratyabhijnahrdayam.phr_sum_appendix`
 
 ## Corpus hygiene — empty / duplicate work directories
 

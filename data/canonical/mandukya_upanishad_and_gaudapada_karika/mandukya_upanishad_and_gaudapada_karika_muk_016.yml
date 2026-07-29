@@ -28,8 +28,26 @@ insight: ''
 practice: 'Trace backward through your next decision or action: name the cause that prompted it, then the cause before that,
   then the one before—until you reach a moment where you cannot name what moved you to begin. Rest there, in that unnamed
   ground, for three breaths, and notice what arises without causality.'
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'कार्यकारणबद्धौ ताव् इष्येते विश्वतैजसौ ।
+
+  प्राज्ञः कारणबद्धस् तु द्वौ तौ तुर्ये न सिध्यतः ॥ ११ ॥
+
+
+  नात्मानं न परांश् चैव न सत्यं नापि चानृतम् ।
+
+  प्राज्ञः किंचन संवेत्ति तुर्यं तत् सर्वदृक् सदा ॥ १२ ॥
+
+  '
+sanskrit_iast: 'kāryakāraṇabaddhau tāv iṣyete viśvataijasau |
+
+  prājñaḥ kāraṇabaddhas tu dvau tau turye na sidhyataḥ || 11 ||
+
+
+  nātmānaṃ na parāṃś caiva na satyaṃ nāpi cānṛtam |
+
+  prājñaḥ kiṃcana saṃvetti turyaṃ tat sarvadṛk sadā || 12 ||
+
+  '
 tags:
 - awareness
 - commentary_text
@@ -45,6 +63,36 @@ quality_score: 100
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Devanagari
+  body: 'कार्यकारणबद्धौ ताव् इष्येते विश्वतैजसौ ।
+
+    प्राज्ञः कारणबद्धस् तु द्वौ तौ तुर्ये न सिध्यतः ॥ ११ ॥
+
+
+    नात्मानं न परांश् चैव न सत्यं नापि चानृतम् ।
+
+    प्राज्ञः किंचन संवेत्ति तुर्यं तत् सर्वदृक् सदा ॥ १२ ॥
+
+    '
+  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
+    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Gauḍapāda Kārikā Āgama I.11–12 (verses cited
+    in unit commentary); standard PD ancient text via IAST→Devanagari.'
+- kind: iast
+  label: IAST
+  body: 'kāryakāraṇabaddhau tāv iṣyete viśvataijasau |
+
+    prājñaḥ kāraṇabaddhas tu dvau tau turye na sidhyataḥ || 11 ||
+
+
+    nātmānaṃ na parāṃś caiva na satyaṃ nāpi cānṛtam |
+
+    prājñaḥ kiṃcana saṃvetti turyaṃ tat sarvadṛk sadā || 12 ||
+
+    '
+  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
+    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Gauḍapāda Kārikā Āgama I.11–12 (verses cited
+    in unit commentary); standard PD ancient text via IAST→Devanagari.'
 - kind: translation
   label: Pratibha Translation
   body: Āgama Prakaraṇa — Tradition · 29 Verses
@@ -112,3 +160,7 @@ abhyasa: 'Trace backward through your next decision or action: name the cause th
   ground, for three breaths, and notice what arises without causality.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 translation_provenance: Original Pratibha editorial summary.
+layer_provenance:
+  original: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard PD
+    Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Gauḍapāda Kārikā Āgama I.11–12 (verses cited in
+    unit commentary); standard PD ancient text via IAST→Devanagari.'

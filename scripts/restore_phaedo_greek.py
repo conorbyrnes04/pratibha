@@ -393,6 +393,83 @@ def short_id(unit_id: str) -> str:
     return unit_id.split(".", 1)[-1]
 
 
+def sync_indexes(updated_docs: dict[str, dict[str, Any]]) -> set[str]:
+    """Rebuild collection index from YAML; patch main index rows in place."""
+    coll_keys = [
+        "source_file",
+        "source_id",
+        "category",
+        "work_id",
+        "work_title",
+        "unit_id",
+        "unit_label",
+        "title",
+        "unit_type",
+        "sanskrit_devanagari",
+        "sanskrit_iast",
+        "translation_literal",
+        "commentary",
+        "insight",
+        "practice",
+        "upaya",
+        "themes",
+        "tags",
+        "quality_score",
+        "appendixes",
+        "provenance",
+    ]
+
+    def to_coll(doc: dict[str, Any]) -> dict[str, Any]:
+        row: dict[str, Any] = {}
+        for k in coll_keys:
+            if k in doc:
+                row[k] = doc[k]
+            elif k == "appendixes":
+                row[k] = []
+            elif k in ("themes", "tags"):
+                row[k] = doc.get(k) or []
+            elif k == "upaya":
+                row[k] = doc.get(k) or ""
+            elif k == "quality_score":
+                row[k] = doc.get(k) or 0
+        return row
+
+    coll_rows: list[str] = []
+    for path in sorted(CANON.glob("phaedo_plato_phaedo_md_*.yml")):
+        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        coll_rows.append(json.dumps(to_coll(doc), ensure_ascii=False) + "\n")
+    atomic_write(COLL_INDEX, "".join(coll_rows))
+
+    main_lines = MAIN_INDEX.read_text(encoding="utf-8").splitlines(keepends=True)
+    new_main: list[str] = []
+    seen: set[str] = set()
+    for line in main_lines:
+        if not line.strip():
+            new_main.append(line)
+            continue
+        row = json.loads(line)
+        uid = str(row.get("unit_id") or "")
+        if uid.startswith("phaedo_plato.") or row.get("work_id") == WORK:
+            sid = short_id(uid)
+            if sid in updated_docs:
+                doc = updated_docs[sid]
+                row["sanskrit_devanagari"] = doc["sanskrit_devanagari"]
+                row["sanskrit_iast"] = doc["sanskrit_iast"]
+                row["pratibha_layers"] = doc["pratibha_layers"]
+                if "layer_provenance" in doc:
+                    row["layer_provenance"] = doc["layer_provenance"]
+                if "provenance" in doc:
+                    row["provenance"] = doc["provenance"]
+                new_main.append(json.dumps(row, ensure_ascii=False) + "\n")
+                seen.add(sid)
+            else:
+                new_main.append(line)
+        else:
+            new_main.append(line)
+    atomic_write(MAIN_INDEX, "".join(new_main))
+    return seen
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--write", action="store_true", help="Apply updates to YAML + indexes")
@@ -497,55 +574,7 @@ def main() -> int:
         atomic_write(path, dump_yaml(data))
         updated_docs[plan["sid"]] = data
 
-    # --- collection index (no pratibha_layers in current schema) ---
-    coll_lines = COLL_INDEX.read_text(encoding="utf-8").splitlines(keepends=True)
-    new_coll: list[str] = []
-    for line in coll_lines:
-        if not line.strip():
-            new_coll.append(line)
-            continue
-        row = json.loads(line)
-        sid = short_id(str(row.get("unit_id") or ""))
-        if sid in updated_docs:
-            doc = updated_docs[sid]
-            row["sanskrit_devanagari"] = doc["sanskrit_devanagari"]
-            row["sanskrit_iast"] = doc["sanskrit_iast"]
-            if isinstance(row.get("provenance"), dict) or "provenance" in doc:
-                row["provenance"] = doc.get("provenance")
-            new_coll.append(json.dumps(row, ensure_ascii=False) + "\n")
-        else:
-            new_coll.append(line)
-    atomic_write(COLL_INDEX, "".join(new_coll))
-
-    # --- main index ---
-    main_lines = MAIN_INDEX.read_text(encoding="utf-8").splitlines(keepends=True)
-    new_main: list[str] = []
-    seen: set[str] = set()
-    for line in main_lines:
-        if not line.strip():
-            new_main.append(line)
-            continue
-        row = json.loads(line)
-        uid = str(row.get("unit_id") or "")
-        if uid.startswith("phaedo_plato.") or row.get("work_id") == WORK:
-            sid = short_id(uid)
-            if sid in updated_docs:
-                doc = updated_docs[sid]
-                # Prefer YAML as source of truth for synced fields
-                row["sanskrit_devanagari"] = doc["sanskrit_devanagari"]
-                row["sanskrit_iast"] = doc["sanskrit_iast"]
-                row["pratibha_layers"] = doc["pratibha_layers"]
-                if "layer_provenance" in doc:
-                    row["layer_provenance"] = doc["layer_provenance"]
-                if "provenance" in doc:
-                    row["provenance"] = doc["provenance"]
-                new_main.append(json.dumps(row, ensure_ascii=False) + "\n")
-                seen.add(sid)
-            else:
-                new_main.append(line)
-        else:
-            new_main.append(line)
-    atomic_write(MAIN_INDEX, "".join(new_main))
+    seen = sync_indexes(updated_docs)
 
     after = 0
     for path in yaml_paths:

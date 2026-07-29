@@ -63,8 +63,28 @@ practice: Beginning with the first line, listen to each phrase aloud—whether w
   themselves shape your ears and awareness, then move through each subsequent line letting your body remain steady and your
   limbs at ease, until you reach the triple śāntiḥ and allow that repetition to dissolve any remaining fragmentation between
   what you hear, see, and embody.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'ॐ भद्रं कर्णेभिः शृणुयाम देवाः ।
+
+  भद्रं पश्येमाक्षभिर्यजत्राः ।
+
+  स्थिरैरङ्गैस्तुष्टुवागंसस्तनूभिः ।
+
+  व्यशेम देवहितं यदायूः ।
+
+  ॐ शान्तिः शान्तिः शान्तिः ॥
+
+  '
+sanskrit_iast: 'oṃ bhadraṃ karṇebhiḥ śṛṇuyāma devāḥ |
+
+  bhadraṃ paśyemākṣabhir yajatrāḥ |
+
+  sthirair aṅgais tuṣṭuvāgaṃsas tanūbhiḥ |
+
+  vyaśema devahitaṃ yad āyūḥ |
+
+  oṃ śāntiḥ śāntiḥ śāntiḥ ||
+
+  '
 tags:
 - commentary_text
 - mandukya_upanishad_and_gaudapada_karika
@@ -72,6 +92,36 @@ quality_score: 90
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Devanagari
+  body: 'ॐ भद्रं कर्णेभिः शृणुयाम देवाः ।
+
+    भद्रं पश्येमाक्षभिर्यजत्राः ।
+
+    स्थिरैरङ्गैस्तुष्टुवागंसस्तनूभिः ।
+
+    व्यशेम देवहितं यदायूः ।
+
+    ॐ शान्तिः शान्तिः शान्तिः ॥
+
+    '
+  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
+    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Extracted from unit thesis (śāntiḥ pāṭha).'
+- kind: iast
+  label: IAST
+  body: 'oṃ bhadraṃ karṇebhiḥ śṛṇuyāma devāḥ |
+
+    bhadraṃ paśyemākṣabhir yajatrāḥ |
+
+    sthirair aṅgais tuṣṭuvāgaṃsas tanūbhiḥ |
+
+    vyaśema devahitaṃ yad āyūḥ |
+
+    oṃ śāntiḥ śāntiḥ śāntiḥ ||
+
+    '
+  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
+    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Extracted from unit thesis (śāntiḥ pāṭha).'
 - kind: translation
   label: Pratibha Translation
   body: Peace Invocation (Śāntiḥ Pāṭha)
@@ -127,3 +177,6 @@ abhyasa: Beginning with the first line, listen to each phrase aloud—whether wh
   what you hear, see, and embody.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 translation_provenance: Original Pratibha editorial summary.
+layer_provenance:
+  original: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard PD
+    Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Extracted from unit thesis (śāntiḥ pāṭha).'

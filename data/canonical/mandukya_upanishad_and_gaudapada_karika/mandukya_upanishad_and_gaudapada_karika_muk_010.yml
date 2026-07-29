@@ -50,8 +50,41 @@ insight: ''
 practice: Whisper 'Om' three times, letting each syllable map onto a layer of your awareness—first sound, then the silence
   between sounds, then the listener who hears both—until you recognize that the one who knows the sound is the same one who
   knows your thoughts, your breath, your sense of 'I'.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'सोऽयमात्माध्यक्षरमोङ्कारोऽधिमात्रं पादा मात्रा मात्राश्च पादा अकार उकारो मकार इति ॥ ८ ॥
+
+
+  जागरितस्थानो वैश्वानरोऽकारः प्रथमा मात्राऽऽप्तेरादिमत्त्वाद्वाऽऽप्नोति ह वै सर्वान्कामानादिश्च भवति य एवं वेद ॥ ९ ॥
+
+
+  स्वप्नस्थानस्तैजस उकारो द्वितीया मात्रोत्कर्षादुभयत्वाद्वोत्कर्षति ह वै ज्ञानसन्ततिं समानश्च भवति नास्याब्रह्मवित्कुले भवति
+  य एवं वेद ॥ १० ॥
+
+
+  सुषुप्तस्थानः प्राज्ञो मकारस्तृतीया मात्रा मितेरपीतेर्वा मिनोति ह वा इदं सर्वमपीतिश्च भवति य एवं वेद ॥ ११ ॥
+
+
+  अमात्रश्चतुर्थोऽव्यवहार्यः प्रपञ्चोपशमः शिवोऽद्वैत एवमोङ्कार आत्मैव संविशत्यात्मनाऽऽत्मानं य एवं वेद ॥ १२ ॥
+
+  '
+sanskrit_iast: 'so ''yam ātmādhyakṣaram oṅkāro ''dhimātraṃ pādā mātrā mātrāś ca pādā akāra ukāro makāra iti || 8 ||
+
+
+  jāgaritasthāno vaiśvānaro ''kāraḥ prathamā mātrā āpter ādimattvād vā āpnoti ha vai sarvān kāmān ādiś ca bhavati ya evaṃ
+  veda || 9 ||
+
+
+  svapnasthānas taijasa ukāro dvitīyā mātrā utkarṣād ubhayatvād vā utkarṣati ha vai jñānasantatiṃ samānaś ca bhavati nāsyābrahmavit
+  kule bhavati ya evaṃ veda || 10 ||
+
+
+  suṣuptasthānaḥ prājño makāras tṛtīyā mātrā miter apīter vā minoti ha vā idaṃ sarvam apītiś ca bhavati ya evaṃ veda || 11
+  ||
+
+
+  amātras caturtho ''vyavahāryaḥ prapañcopaśamaḥ śivo ''dvaita evam oṅkāra ātmaiva saṃviśaty ātmanātmānaṃ ya evaṃ veda ||
+  12 ||
+
+  '
 tags:
 - attention
 - commentary_text
@@ -75,6 +108,51 @@ practice_provenance: Practice re-authored for form diversity, grounded in the pa
 commentary_provenance: Study commentary authored from the passage.
 translation_provenance: Rendered from the public-domain Sanskrit (IAST). Study rendering; not a critical edition.
 pratibha_layers:
+- kind: original
+  label: Devanagari
+  body: 'सोऽयमात्माध्यक्षरमोङ्कारोऽधिमात्रं पादा मात्रा मात्राश्च पादा अकार उकारो मकार इति ॥ ८ ॥
+
+
+    जागरितस्थानो वैश्वानरोऽकारः प्रथमा मात्राऽऽप्तेरादिमत्त्वाद्वाऽऽप्नोति ह वै सर्वान्कामानादिश्च भवति य एवं वेद ॥ ९ ॥
+
+
+    स्वप्नस्थानस्तैजस उकारो द्वितीया मात्रोत्कर्षादुभयत्वाद्वोत्कर्षति ह वै ज्ञानसन्ततिं समानश्च भवति नास्याब्रह्मवित्कुले
+    भवति य एवं वेद ॥ १० ॥
+
+
+    सुषुप्तस्थानः प्राज्ञो मकारस्तृतीया मात्रा मितेरपीतेर्वा मिनोति ह वा इदं सर्वमपीतिश्च भवति य एवं वेद ॥ ११ ॥
+
+
+    अमात्रश्चतुर्थोऽव्यवहार्यः प्रपञ्चोपशमः शिवोऽद्वैत एवमोङ्कार आत्मैव संविशत्यात्मनाऽऽत्मानं य एवं वेद ॥ १२ ॥
+
+    '
+  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
+    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Composite of muk_011–015 (Upaniṣad vv.8–12)
+    for overview unit.'
+- kind: iast
+  label: IAST
+  body: 'so ''yam ātmādhyakṣaram oṅkāro ''dhimātraṃ pādā mātrā mātrāś ca pādā akāra ukāro makāra iti || 8 ||
+
+
+    jāgaritasthāno vaiśvānaro ''kāraḥ prathamā mātrā āpter ādimattvād vā āpnoti ha vai sarvān kāmān ādiś ca bhavati ya evaṃ
+    veda || 9 ||
+
+
+    svapnasthānas taijasa ukāro dvitīyā mātrā utkarṣād ubhayatvād vā utkarṣati ha vai jñānasantatiṃ samānaś ca bhavati nāsyābrahmavit
+    kule bhavati ya evaṃ veda || 10 ||
+
+
+    suṣuptasthānaḥ prājño makāras tṛtīyā mātrā miter apīter vā minoti ha vā idaṃ sarvam apītiś ca bhavati ya evaṃ veda ||
+    11 ||
+
+
+    amātras caturtho ''vyavahāryaḥ prapañcopaśamaḥ śivo ''dvaita evam oṅkāra ātmaiva saṃviśaty ātmanātmānaṃ ya evaṃ veda ||
+    12 ||
+
+    '
+  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
+    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Composite of muk_011–015 (Upaniṣad vv.8–12)
+    for overview unit.'
 - kind: translation
   label: Pratibha Translation
   body: 'Overview
@@ -129,3 +207,7 @@ pratibha_layers:
       method, whereas Plotinus treats it as the soul's natural trajectory.
     passage_id: plotinus_enneads.enn_vi_9_08
   layer_provenance: generated_grounded
+layer_provenance:
+  original: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard PD
+    Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Composite of muk_011–015 (Upaniṣad vv.8–12) for
+    overview unit.'

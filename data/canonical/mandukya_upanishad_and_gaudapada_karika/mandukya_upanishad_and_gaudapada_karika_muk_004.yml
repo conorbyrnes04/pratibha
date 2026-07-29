@@ -63,8 +63,32 @@ insight: ''
 practice: 'As you move through waking, dreaming, and deep sleep tonight, pause at each transition and ask: "What remains aware
   of this change?" — not analyzing the states themselves, but turning attention toward the unchanging consciousness that witnesses
   all three.'
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'जागरितस्थानो बहिष्प्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः स्थूलभुग्वैश्वानरः प्रथमः पादः ॥ ३ ॥
+
+
+  स्वप्नस्थानोऽन्तःप्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः प्रविविक्तभुक्तैजसो द्वितीयः पादः ॥ ४ ॥
+
+
+  यत्र सुप्तो न कञ्चन कामं कामयते न कञ्चन स्वप्नं पश्यति तत्सुषुप्तम् । सुषुप्तस्थान एकीभूतः प्रज्ञानघन एवानन्दमयो ह्यानन्दभुक्
+  चेतोमुखः प्राज्ञस्तृतीयः पादः ॥ ५ ॥
+
+
+  एष सर्वेश्वरः एष सर्वज्ञ एषोऽन्तर्याम्येष योनिः सर्वस्य प्रभवाप्ययौ हि भूतानाम् ॥ ६ ॥
+
+  '
+sanskrit_iast: 'jāgaritasthāno bahiṣprajñaḥ saptāṅga ekonaviṃśatimukhaḥ sthūlabhug vaiśvānaraḥ prathamaḥ pādaḥ || 3 ||
+
+
+  svapnasthāno ''ntaḥprajñaḥ saptāṅga ekonaviṃśatimukhaḥ praviviktabhuk taijaso dvitīyaḥ pādaḥ || 4 ||
+
+
+  yatra supto na kañcana kāmaṃ kāmayate na kañcana svapnaṃ paśyati tat suṣuptam | suṣuptasthāna ekībhūtaḥ prajñānaghana evānandamayo
+  hy ānandabhuk cetomukhaḥ prājñas tṛtīyaḥ pādaḥ || 5 ||
+
+
+  eṣa sarveśvaraḥ eṣa sarvajñaḥ eṣo ''ntaryāmy eṣa yoniḥ sarvasya prabhavāpyayau hi bhūtānām || 6 ||
+
+  '
 tags:
 - attention
 - commentary_text
@@ -88,6 +112,42 @@ practice_provenance: Practice re-authored for form diversity, grounded in the pa
 commentary_provenance: Study commentary authored from the passage.
 translation_provenance: Rendered from the public-domain Sanskrit (IAST). Study rendering; not a critical edition.
 pratibha_layers:
+- kind: original
+  label: Devanagari
+  body: 'जागरितस्थानो बहिष्प्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः स्थूलभुग्वैश्वानरः प्रथमः पादः ॥ ३ ॥
+
+
+    स्वप्नस्थानोऽन्तःप्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः प्रविविक्तभुक्तैजसो द्वितीयः पादः ॥ ४ ॥
+
+
+    यत्र सुप्तो न कञ्चन कामं कामयते न कञ्चन स्वप्नं पश्यति तत्सुषुप्तम् । सुषुप्तस्थान एकीभूतः प्रज्ञानघन एवानन्दमयो ह्यानन्दभुक्
+    चेतोमुखः प्राज्ञस्तृतीयः पादः ॥ ५ ॥
+
+
+    एष सर्वेश्वरः एष सर्वज्ञ एषोऽन्तर्याम्येष योनिः सर्वस्य प्रभवाप्ययौ हि भूतानाम् ॥ ६ ॥
+
+    '
+  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
+    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Composite of muk_005–008 (Upaniṣad vv.3–6) for
+    overview unit.'
+- kind: iast
+  label: IAST
+  body: 'jāgaritasthāno bahiṣprajñaḥ saptāṅga ekonaviṃśatimukhaḥ sthūlabhug vaiśvānaraḥ prathamaḥ pādaḥ || 3 ||
+
+
+    svapnasthāno ''ntaḥprajñaḥ saptāṅga ekonaviṃśatimukhaḥ praviviktabhuk taijaso dvitīyaḥ pādaḥ || 4 ||
+
+
+    yatra supto na kañcana kāmaṃ kāmayate na kañcana svapnaṃ paśyati tat suṣuptam | suṣuptasthāna ekībhūtaḥ prajñānaghana
+    evānandamayo hy ānandabhuk cetomukhaḥ prājñas tṛtīyaḥ pādaḥ || 5 ||
+
+
+    eṣa sarveśvaraḥ eṣa sarvajñaḥ eṣo ''ntaryāmy eṣa yoniḥ sarvasya prabhavāpyayau hi bhūtānām || 6 ||
+
+    '
+  layer_provenance: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard
+    PD Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Composite of muk_005–008 (Upaniṣad vv.3–6) for
+    overview unit.'
 - kind: translation
   label: Pratibha Translation
   body: 'Overview
@@ -140,3 +200,7 @@ pratibha_layers:
       alignment and crossing fear through the boat of Brahman. One is contemplative-analytical; the other is yogic-soteriological.
     passage_id: svetasvatara_upanishad.svu_009
   layer_provenance: generated_grounded
+layer_provenance:
+  original: 'devanagari: Māṇḍūkya Upaniṣad / Gauḍapāda Kārikā — restored from in-corpus sibling verse units or standard PD
+    Upaniṣad/Kārikā text (ancient; not a critical edition). IAST mirrored. Composite of muk_005–008 (Upaniṣad vv.3–6) for
+    overview unit.'
