@@ -1,0 +1,44 @@
+id: guna
+maturity: strong_draft
+scripts:
+  iast: guṇa
+  devanagari: गुण
+aliases:
+- guna
+- guṇa
+- gunas
+- guṇas
+- quality
+- strand
+traditions:
+- hinduism
+- samkhya
+- bhagavad_gita
+- yoga
+related:
+- lemma_id: prakrti
+  relation: related_as
+- lemma_id: yoga
+  relation: related_as
+senses:
+- id: guna.triguna
+  label: Three strands
+  short: sattva, rajas, and tamas — the qualitative engines of conditioned experience
+  etymology: guṇa ‘strand, quality, secondary property’
+  traps:
+  - personality types as fixed brands
+  - moral labels only (good/bad people)
+  - optional psychology bolted onto metaphysics
+  traditions:
+  - samkhya
+  - bhagavad_gita
+  exemplars:
+  - bhagavad_gita.bg_14_05
+  - bhagavad_gita.bg_14_09_11
+  - bhagavad_gita.bg_17_03
+  - bhagavad_gita.bg_18_40_42
+  body: 'Guṇas are not personality quizzes. They are the ways prakṛti binds: clarity-attachment (sattva),
+    restless drive (rajas), and inertia/concealment (tamas). Freedom is not collecting a preferred guṇa
+    but going beyond their ownership.
+
+    '

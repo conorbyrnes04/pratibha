@@ -1,0 +1,41 @@
+id: sanga
+maturity: strong_draft
+scripts:
+  iast: saṅga
+  devanagari: सङ्ग
+aliases:
+- sanga
+- saṅga
+- attachment
+- clinging
+- contact
+traditions:
+- hinduism
+- bhagavad_gita
+- yoga
+related:
+- lemma_id: karma
+  relation: related_as
+  note: Saṅga is the clinging that turns karma into bondage.
+- lemma_id: yoga
+  relation: related_as
+senses:
+- id: sanga.gita
+  label: Binding attachment
+  short: sticky appropriation — contact that becomes claim and then bondage
+  etymology: sam- + √añj/√saj ‘stick together; adhere’
+  traps:
+  - only romantic attachment
+  - mere social connection
+  - neutral ‘association’ without binding force
+  traditions:
+  - bhagavad_gita
+  - yoga
+  exemplars:
+  - bhagavad_gita.bg_02_47
+  - bhagavad_gita.bg_02_62
+  - bhagavad_gita.bg_05_10
+  body: 'In the Gītā, saṅga is the adhesive that makes fruit, sense-objects, and even inaction into mine.
+    Yoga loosens saṅga without cancelling action.
+
+    '

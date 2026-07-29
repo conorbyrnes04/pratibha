@@ -25,34 +25,7 @@ commentary: 'The method is twofold and simultaneous: ādhāya karmāṇi brahma�
   not distance from the pond. Depositing actions on Brahman without abandoning attachment is unfinished consecration; abandoning
   attachment without the deposit can become dry indifference. The lotus image needs both: contact with the wet world and non-wetting
   structure. Pāpa-stain is adhesion, not mere proximity to difficulty. Act inside messy necessity with the twin moves until
-  the leaf’s logic becomes your habit. The pond is not the enemy; soaking is.
-
-
-  Key Terms:
-
-
-  **brahmaṇy ādhāya (ब्रह्मण्याधाय)** — having placed upon Brahman -> consecrating deposit of deeds -> more than mood; metaphysical
-  relocation of ownership
-
-
-  **padmapatra (पद्मपत्र)** — lotus leaf -> classic image of non-adhesion amid contact -> purity as non-wetting, not as non-contact
-
-
-  **saṅga (सङ्ग)** — attachment/adhesion -> what must be abandoned for the leaf-effect -> the wetting agent in moral psychology
-
-
-  Cross-Tradition Resonances:
-
-
-  **Christian “in the world but not of it”:** Structural homology in contact without constitutive capture.
-
-  *Divergence:* Christian framing is ecclesial-eschatological in Christ; here the deposit is onto Brahman with explicit saṅga-tyāga.
-
-
-  **Lotus symbolism in Buddhism:** Structural homology in blooming unstained from mud/water.
-
-  *Divergence:* Buddhist lotus often figures purity of mind amid saṃsāra; the Gītā ties the image specifically to brahman-deposit
-  of karma.'
+  the leaf’s logic becomes your habit. The pond is not the enemy; soaking is.'
 insight: 'The method is twofold and simultaneous: ādhāya karmāṇi brahmaṇi — depositing actions on Brahman — and saṅgaṃ tyaktvā
   — abandoning attachment — while still acting.'
 practice: Before a messy necessary task, mentally place the action on Brahman, release one adhesive hope or fear, then act
@@ -96,36 +69,33 @@ pratibha_layers:
     from the pond. Depositing actions on Brahman without abandoning attachment is unfinished consecration; abandoning attachment
     without the deposit can become dry indifference. The lotus image needs both: contact with the wet world and non-wetting
     structure. Pāpa-stain is adhesion, not mere proximity to difficulty. Act inside messy necessity with the twin moves until
-    the leaf’s logic becomes your habit. The pond is not the enemy; soaking is.
-
-
-    Key Terms:
-
-
-    **brahmaṇy ādhāya (ब्रह्मण्याधाय)** — having placed upon Brahman -> consecrating deposit of deeds -> more than mood; metaphysical
-    relocation of ownership
-
-
-    **padmapatra (पद्मपत्र)** — lotus leaf -> classic image of non-adhesion amid contact -> purity as non-wetting, not as
-    non-contact
-
-
-    **saṅga (सङ्ग)** — attachment/adhesion -> what must be abandoned for the leaf-effect -> the wetting agent in moral psychology
-
-
-    Cross-Tradition Resonances:
-
-
-    **Christian “in the world but not of it”:** Structural homology in contact without constitutive capture.
-
-    *Divergence:* Christian framing is ecclesial-eschatological in Christ; here the deposit is onto Brahman with explicit
-    saṅga-tyāga.
-
-
-    **Lotus symbolism in Buddhism:** Structural homology in blooming unstained from mud/water.
-
-    *Divergence:* Buddhist lotus often figures purity of mind amid saṃsāra; the Gītā ties the image specifically to brahman-deposit
-    of karma.'
+    the leaf’s logic becomes your habit. The pond is not the enemy; soaking is.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: brahmaṇy ādhāya (ब्रह्मण्याधाय)
+    definition: having placed upon Brahman -> consecrating deposit of deeds -> more than mood; metaphysical relocation of
+      ownership
+  - term: padmapatra (पद्मपत्र)
+    definition: lotus leaf -> classic image of non-adhesion amid contact -> purity as non-wetting, not as non-contact
+  - term: saṅga (सङ्ग)
+    definition: attachment/adhesion -> what must be abandoned for the leaf-effect -> the wetting agent in moral psychology
+    lemma_id: sanga
+    sense_id: sanga.gita
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Christian “in the world but not of it”
+    resonance: Structural homology in contact without constitutive capture.
+    passage_id: ''
+    divergence: Christian framing is ecclesial-eschatological in Christ; here the deposit is onto Brahman with explicit saṅga-tyāga.
+  - citation: Lotus symbolism in Buddhism
+    resonance: Structural homology in blooming unstained from mud/water.
+    passage_id: ''
+    divergence: Buddhist lotus often figures purity of mind amid saṃsāra; the Gītā ties the image specifically to brahman-deposit
+      of karma.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Before a messy necessary task, mentally place the action on Brahman, release one adhesive hope or fear, then act —

@@ -1,0 +1,35 @@
+id: adhikara
+maturity: strong_draft
+scripts:
+  iast: adhikāra
+  devanagari: अधिकार
+aliases:
+- adhikara
+- adhikāra
+- entitlement
+- jurisdiction
+- claim
+traditions:
+- hinduism
+- bhagavad_gita
+related:
+- lemma_id: karma
+  relation: related_as
+  note: Adhikāra names the sphere of rightful agency within karma-yoga.
+- lemma_id: dharma
+  relation: related_as
+senses:
+- id: adhikara.gita
+  label: Sphere of claim
+  short: what rightly falls in your jurisdiction — entitlement to act, not to fruit
+  etymology: adhi- + √kṛ ‘superintend; have authority over’
+  traps:
+  - modern ‘rights’ liberalism
+  - entitlement as greed
+  - office without responsibility
+  traditions:
+  - bhagavad_gita
+  exemplars:
+  - bhagavad_gita.bg_02_47
+  body: |
+    2.47 makes adhikāra precise: you have standing in action, not ownership of results. The term is jurisdictional, not motivational pep-talk.

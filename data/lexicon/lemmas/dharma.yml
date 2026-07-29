@@ -8,11 +8,14 @@ aliases:
 - dhamma
 - duty
 - law
+- svadharma
+- sva-dharma
 traditions:
 - upanishads
 - hinduism
 - theravada
 - mahayana
+- bhagavad_gita
 related:
 - lemma_id: dao
   relation: rough_analogue
@@ -21,6 +24,10 @@ related:
 - lemma_id: logos
   relation: rough_analogue
   note: Shared sense of intelligible order; logos more speech/reason, dharma more holding/rightness.
+- lemma_id: karma
+  relation: related_as
+- lemma_id: yajna
+  relation: related_as
 senses:
 - id: dharma.brahmanical
   label: Brahmanical dharma
@@ -37,8 +44,29 @@ senses:
   - astavakra_gita.asg_1_6
   - isavasya_upanishad.isa_006
   - bhagavad_gita.bg_03_09
-  body: |
-    In epic and smṛti contexts dharma binds person to role and cosmos. In contemplative reading it can also mean the order that makes liberation intelligible.
+  body: 'In epic and smṛti contexts dharma binds person to role and cosmos. In contemplative reading it
+    can also mean the order that makes liberation intelligible.
+
+    '
+- id: dharma.svadharma
+  label: Own-dharma (Gītā)
+  short: the vocation-shaped responsibility that is yours to uphold, not a generic moral slogan
+  etymology: sva ‘own’ + dharma
+  traps:
+  - caste essentialism as final word
+  - ‘do whatever feels authentic’
+  - rigid role without discernment
+  traditions:
+  - bhagavad_gita
+  - hinduism
+  exemplars:
+  - bhagavad_gita.bg_03_35
+  - bhagavad_gita.bg_02_31_33
+  - bhagavad_gita.bg_18_47_49
+  body: 'Svadharma in the Gītā is the non-transferable claim of your situation and formation. Better imperfect
+    fidelity to that claim than glamorous imitation of another’s path (3.35).
+
+    '
 - id: dharma.buddhist
   label: Buddhist dharma / dhamma
   short: the teaching; also a momentary phenomenon
@@ -53,5 +81,7 @@ senses:
   - dhammapada.dhp_ch01
   - dogen_shobogenzo.dog_001
   - heart_sutra.hs_001
-  body: |
-    Two load-bearing uses: (1) the Buddha’s teaching and path; (2) dharmas as the fleeting factors of experience analyzed in Abhidharma.
+  body: 'Two load-bearing uses: (1) the Buddha’s teaching and path; (2) dharmas as the fleeting factors
+    of experience analyzed in Abhidharma.
+
+    '

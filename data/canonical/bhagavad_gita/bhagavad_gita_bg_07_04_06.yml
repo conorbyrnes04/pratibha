@@ -55,37 +55,7 @@ commentary: 'Matter and life are not rivals to God; they are *His* natures, rank
   of treating "my mind" as a neutral flashlight inspecting matter. Even the flashlight is prakṛti. The higher living nature
   upholds the world, yet still is not the Lord Himself; thus personhood is sacred without being absolute. Practice becomes
   lucid humility: inhabit life fully, refuse to crown either chemistry or ego as God, and return both matrices to their Source
-  in recognition.
-
-
-  Key Terms:
-
-
-  **prakṛti (प्रकृति)** — *pra-* + *kṛ* ("to make") -> productive nature; here split into lower (eightfold) and higher (*jīva*)
-  as Kṛṣṇa''s own -> "nature" misses ownership and the dual ranking.
-
-
-  **ahaṅkāra (अहङ्कार)** — "I-maker" -> ego-function within lower *prakṛti*, not the Self -> "ego" as personality psychology
-  understates its cosmological place in the eightfold list.
-
-
-  **jīva-bhūtā (जीवभूता)** — living-being as higher *prakṛti* -> the world-upholding life-principle belonging to the Lord
-  -> "soul" as immortal spark misses that it is still *prakṛti*, not the Lord Himself.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Sāṃkhya-kārikā (eightfold *prakṛti* / *tattva* enumeration):** Same inventory of manifesting principles.
-
-  *Divergence:* Sāṃkhya keeps *puruṣa* plural and separate; Gītā folds both natures into Kṛṣṇa''s self-disclosure and adds
-  a higher living *prakṛti*.
-
-
-  **Dao De Jing 42 ("Dao generates One…"):** Both situate manifold beings in a generative matrix prior to their independence.
-
-  *Divergence:* Daoist language is non-theistic process; Gītā names personal origin and dissolution (*prabhava*/*pralaya*)
-  as "I."'
+  in recognition.'
 insight: Matter and life are not rivals to God; they are *His* natures, ranked.
 practice: 'Name one sensation (earth/water/fire/air/space), one mental event, and one "I"-thought today; silently mark each:
   "lower nature — not mine to own." Then feel the simple fact of being alive and mark: "higher nature — still not mine to
@@ -169,37 +139,33 @@ pratibha_layers:
     spiritual move of treating "my mind" as a neutral flashlight inspecting matter. Even the flashlight is prakṛti. The higher
     living nature upholds the world, yet still is not the Lord Himself; thus personhood is sacred without being absolute.
     Practice becomes lucid humility: inhabit life fully, refuse to crown either chemistry or ego as God, and return both matrices
-    to their Source in recognition.
-
-
-    Key Terms:
-
-
-    **prakṛti (प्रकृति)** — *pra-* + *kṛ* ("to make") -> productive nature; here split into lower (eightfold) and higher (*jīva*)
-    as Kṛṣṇa''s own -> "nature" misses ownership and the dual ranking.
-
-
-    **ahaṅkāra (अहङ्कार)** — "I-maker" -> ego-function within lower *prakṛti*, not the Self -> "ego" as personality psychology
-    understates its cosmological place in the eightfold list.
-
-
-    **jīva-bhūtā (जीवभूता)** — living-being as higher *prakṛti* -> the world-upholding life-principle belonging to the Lord
-    -> "soul" as immortal spark misses that it is still *prakṛti*, not the Lord Himself.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Sāṃkhya-kārikā (eightfold *prakṛti* / *tattva* enumeration):** Same inventory of manifesting principles.
-
-    *Divergence:* Sāṃkhya keeps *puruṣa* plural and separate; Gītā folds both natures into Kṛṣṇa''s self-disclosure and adds
-    a higher living *prakṛti*.
-
-
-    **Dao De Jing 42 ("Dao generates One…"):** Both situate manifold beings in a generative matrix prior to their independence.
-
-    *Divergence:* Daoist language is non-theistic process; Gītā names personal origin and dissolution (*prabhava*/*pralaya*)
-    as "I."'
+    to their Source in recognition.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: prakṛti (प्रकृति)
+    definition: '*pra-* + *kṛ* ("to make") -> productive nature; here split into lower (eightfold) and higher (*jīva*) as
+      Kṛṣṇa''s own -> "nature" misses ownership and the dual ranking'
+    lemma_id: prakrti
+    sense_id: prakrti.samkhya_gita
+  - term: ahaṅkāra (अहङ्कार)
+    definition: '"I-maker" -> ego-function within lower *prakṛti*, not the Self -> "ego" as personality psychology understates
+      its cosmological place in the eightfold list'
+    lemma_id: ahankara
+    sense_id: ahankara.gita
+  - term: jīva-bhūtā (जीवभूता)
+    definition: living-being as higher *prakṛti* -> the world-upholding life-principle belonging to the Lord -> "soul" as
+      immortal spark misses that it is still *prakṛti*, not the Lord Himself
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Dao De Jing 42 ("Dao generates One…")
+    resonance: Both situate manifold beings in a generative matrix prior to their independence.
+    passage_id: ''
+    divergence: Daoist language is non-theistic process; Gītā names personal origin and dissolution (*prabhava*/*pralaya*)
+      as "I."
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Name one sensation (earth/water/fire/air/space), one mental event, and one "I"-thought today; silently mark each:

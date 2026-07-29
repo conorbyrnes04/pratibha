@@ -32,34 +32,7 @@ commentary: 'Yoga is defined as *samatva* — evenness — not as withdrawal or 
   is not yet yoga.
 
 
-  Inspect evenness after a metric flip; residue of clinging is the real score of whether yoga was present.
-
-
-  Key Terms:
-
-
-  **yoga-stha (योगस्थ)** — standing established in yoga → abiding in the yoked state while acting → “being in yoga” is vague;
-  *stha* stresses stable station.
-
-
-  **saṅga (सङ्ग)** — attachment/sticking → adhesive bonding to fruit or role → “attachment” is right; stickiness is the feel.
-
-
-  **samatva (समत्व)** — evenness/equanimity → yoga’s definition here → “balance” can sound lifestyle; this is parity across
-  success/failure.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Patañjali, Yoga Sūtra 1.33:** Both cultivate even affective stance as yogic stabilization.
-
-  *Divergence:* YS lists friendliness etc. as mind-clarifiers; Gītā defines yoga itself as evenness in action’s results.
-
-
-  **Zhuangzi, “Fasting of the Mind”:** Both prize a non-stuck responsiveness.
-
-  *Divergence:* Zhuangzi empties toward spontaneous Dao; the Gītā evenness serves dharma-performance.'
+  Inspect evenness after a metric flip; residue of clinging is the real score of whether yoga was present.'
 insight: Yoga is defined as *samatva* — evenness — not as withdrawal or posture.
 practice: 'On one task, pre-commit: “Success and failure are equal for my clinging.” Check your body at the end for evenness,
   not for the score.'
@@ -111,35 +84,32 @@ pratibha_layers:
     is not yet yoga.
 
 
-    Inspect evenness after a metric flip; residue of clinging is the real score of whether yoga was present.
-
-
-    Key Terms:
-
-
-    **yoga-stha (योगस्थ)** — standing established in yoga → abiding in the yoked state while acting → “being in yoga” is vague;
-    *stha* stresses stable station.
-
-
-    **saṅga (सङ्ग)** — attachment/sticking → adhesive bonding to fruit or role → “attachment” is right; stickiness is the
-    feel.
-
-
-    **samatva (समत्व)** — evenness/equanimity → yoga’s definition here → “balance” can sound lifestyle; this is parity across
-    success/failure.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Patañjali, Yoga Sūtra 1.33:** Both cultivate even affective stance as yogic stabilization.
-
-    *Divergence:* YS lists friendliness etc. as mind-clarifiers; Gītā defines yoga itself as evenness in action’s results.
-
-
-    **Zhuangzi, “Fasting of the Mind”:** Both prize a non-stuck responsiveness.
-
-    *Divergence:* Zhuangzi empties toward spontaneous Dao; the Gītā evenness serves dharma-performance.'
+    Inspect evenness after a metric flip; residue of clinging is the real score of whether yoga was present.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: yoga-stha (योगस्थ)
+    definition: standing established in yoga → abiding in the yoked state while acting → “being in yoga” is vague; *stha*
+      stresses stable station
+  - term: saṅga (सङ्ग)
+    definition: attachment/sticking → adhesive bonding to fruit or role → “attachment” is right; stickiness is the feel
+    lemma_id: sanga
+    sense_id: sanga.gita
+  - term: samatva (समत्व)
+    definition: evenness/equanimity → yoga’s definition here → “balance” can sound lifestyle; this is parity across success/failure
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali, Yoga Sūtra 1.33
+    resonance: Both cultivate even affective stance as yogic stabilization.
+    passage_id: ''
+    divergence: YS lists friendliness etc. as mind-clarifiers; Gītā defines yoga itself as evenness in action’s results.
+  - citation: Zhuangzi, “Fasting of the Mind”
+    resonance: Both prize a non-stuck responsiveness.
+    passage_id: ''
+    divergence: Zhuangzi empties toward spontaneous Dao; the Gītā evenness serves dharma-performance.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'On one task, pre-commit: “Success and failure are equal for my clinging.” Check your body at the end for evenness,

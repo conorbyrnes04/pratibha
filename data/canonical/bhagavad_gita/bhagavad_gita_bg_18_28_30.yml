@@ -29,36 +29,7 @@ commentary: 'Tamasic kartā is a cluster of dysfunction: ayukta, stubborn, crook
   desire, and refuge, not as a museum label on a doctrine. The existential stake is that this teaching must change how you
   inhabit the next hour, not only how you narrate metaphysics. The existential stake is that this teaching must change how
   you inhabit the next hour, not only how you narrate metaphysics. The existential stake is that this teaching must change
-  how you inhabit the next hour, not only how you narrate metaphysics.
-
-
-  Key Terms:
-
-
-  **dīrghasūtrī (दीर्घसूत्री)** — long-threaded / procrastinating -> tamasic agent mark -> ''process-oriented'' can be a mask.
-
-  **buddhi (बुद्धि)** — intelligence/discernment -> guṇa-threefold -> ''IQ'' is a category error.
-
-  **pravṛtti-nivṛtti (प्रवृत्ति-निवृत्ति)** — engagement-withdrawal -> sattvic buddhi’s first pair -> ''go/stop'' misses dharma
-  discernment.
-
-  **bandha-mokṣa (बन्ध-मोक्ष)** — bondage-liberation -> essential sattvic discernment -> ''stuck/free vibes'' is thinner.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Gītā 16.7]:** Āsuric not knowing pravṛtti/nivṛtti foreshadows sattvic buddhi’s excellence.
-
-  *Divergence:* 18.30 makes that discernment the definition of sattvic intelligence.
-
-  **[Aristotle’s phronēsis]:** Practical wisdom discerning what is to be done resonates.
-
-  *Divergence:* Phronēsis aims at ethical flourishing; sattvic buddhi includes bondage/liberation explicitly.
-
-  **[Ignatian discernment of spirits]:** Discriminating movements toward freedom vs bondage resonates.
-
-  *Divergence:* Ignatian frame is Christic; here guṇas structure the buddhi types.'
+  how you inhabit the next hour, not only how you narrate metaphysics.'
 insight: 'Tamasic kartā is a cluster of dysfunction: ayukta, stubborn, crooked, lazy, viṣādī, dīrghasūtrī.'
 practice: 'In one decision today, explicitly sort: engagement or withdrawal; duty or not; fear’s counsel vs fearlessness;
   bondage vs liberation.'
@@ -107,37 +78,37 @@ pratibha_layers:
     desire, and refuge, not as a museum label on a doctrine. The existential stake is that this teaching must change how you
     inhabit the next hour, not only how you narrate metaphysics. The existential stake is that this teaching must change how
     you inhabit the next hour, not only how you narrate metaphysics. The existential stake is that this teaching must change
-    how you inhabit the next hour, not only how you narrate metaphysics.
-
-
-    Key Terms:
-
-
-    **dīrghasūtrī (दीर्घसूत्री)** — long-threaded / procrastinating -> tamasic agent mark -> ''process-oriented'' can be a
-    mask.
-
-    **buddhi (बुद्धि)** — intelligence/discernment -> guṇa-threefold -> ''IQ'' is a category error.
-
-    **pravṛtti-nivṛtti (प्रवृत्ति-निवृत्ति)** — engagement-withdrawal -> sattvic buddhi’s first pair -> ''go/stop'' misses
-    dharma discernment.
-
-    **bandha-mokṣa (बन्ध-मोक्ष)** — bondage-liberation -> essential sattvic discernment -> ''stuck/free vibes'' is thinner.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Gītā 16.7]:** Āsuric not knowing pravṛtti/nivṛtti foreshadows sattvic buddhi’s excellence.
-
-    *Divergence:* 18.30 makes that discernment the definition of sattvic intelligence.
-
-    **[Aristotle’s phronēsis]:** Practical wisdom discerning what is to be done resonates.
-
-    *Divergence:* Phronēsis aims at ethical flourishing; sattvic buddhi includes bondage/liberation explicitly.
-
-    **[Ignatian discernment of spirits]:** Discriminating movements toward freedom vs bondage resonates.
-
-    *Divergence:* Ignatian frame is Christic; here guṇas structure the buddhi types.'
+    how you inhabit the next hour, not only how you narrate metaphysics.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dīrghasūtrī (दीर्घसूत्री)
+    definition: long-threaded / procrastinating -> tamasic agent mark -> 'process-oriented' can be a mask
+  - term: buddhi (बुद्धि)
+    definition: intelligence/discernment -> guṇa-threefold -> 'IQ' is a category error
+    lemma_id: buddhi
+    sense_id: buddhi.gita
+  - term: pravṛtti-nivṛtti (प्रवृत्ति-निवृत्ति)
+    definition: engagement-withdrawal -> sattvic buddhi’s first pair -> 'go/stop' misses dharma discernment
+  - term: bandha-mokṣa (बन्ध-मोक्ष)
+    definition: bondage-liberation -> essential sattvic discernment -> 'stuck/free vibes' is thinner
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Gītā 16.7]'
+    resonance: Āsuric not knowing pravṛtti/nivṛtti foreshadows sattvic buddhi’s excellence.
+    passage_id: ''
+    divergence: 18.30 makes that discernment the definition of sattvic intelligence.
+  - citation: '[Aristotle’s phronēsis]'
+    resonance: Practical wisdom discerning what is to be done resonates.
+    passage_id: ''
+    divergence: Phronēsis aims at ethical flourishing; sattvic buddhi includes bondage/liberation explicitly.
+  - citation: '[Ignatian discernment of spirits]'
+    resonance: Discriminating movements toward freedom vs bondage resonates.
+    passage_id: ''
+    divergence: Ignatian frame is Christic; here guṇas structure the buddhi types.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'In one decision today, explicitly sort: engagement or withdrawal; duty or not; fear’s counsel vs fearlessness; bondage

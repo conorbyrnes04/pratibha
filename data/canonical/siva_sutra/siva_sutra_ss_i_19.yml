@@ -62,8 +62,12 @@ pratibha_layers:
   items:
   - term: śakti
     definition: power, dynamic energy
+    lemma_id: sakti
+    sense_id: sakti.shaiva
   - term: sandhāna
     definition: convergence, alignment
+    lemma_id: sandhana
+    sense_id: sandhana.shaiva
   - term: śarīra-utpatti
     definition: arising of form
 - kind: resonances

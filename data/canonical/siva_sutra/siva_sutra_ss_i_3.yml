@@ -100,10 +100,15 @@ pratibha_layers:
     definition: group, class, multiplicity
   - term: kalā
     definition: portion, limitation, articulating power
+    lemma_id: kala
   - term: śarīra
     definition: body, organized form
+    lemma_id: sarira
+    sense_id: sarira.shaiva
   - term: bheda
     definition: differentiation without rupture (implicit)
+    lemma_id: bheda
+    sense_id: bheda.shaiva
 - kind: resonances
   label: Cross-Tradition Resonances
   items:

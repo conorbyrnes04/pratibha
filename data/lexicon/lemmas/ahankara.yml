@@ -1,0 +1,45 @@
+id: ahankara
+maturity: strong_draft
+scripts:
+  iast: ahaṅkāra
+  devanagari: अहङ्कार
+aliases:
+- ahankara
+- ahamkara
+- ahaṅkāra
+- ego
+- I-maker
+traditions:
+- hinduism
+- samkhya
+- bhagavad_gita
+- yoga
+related:
+- lemma_id: buddhi
+  relation: related_as
+- lemma_id: atman
+  relation: diverges_from
+  note: Ahaṅkāra fabricates limited I-ness; ātman is not that fabricated center.
+- lemma_id: prakrti
+  relation: related_as
+senses:
+- id: ahankara.gita
+  label: I-making
+  short: the faculty that claims ‘I/mine’ and appropriates action and fruit
+  etymology: aham ‘I’ + kāra ‘maker’
+  traps:
+  - ego as pop-psych self-esteem
+  - only vanity / arrogance
+  - a little soul-homunculus
+  traditions:
+  - bhagavad_gita
+  - samkhya
+  - yoga
+  exemplars:
+  - bhagavad_gita.bg_03_27
+  - bhagavad_gita.bg_07_04_06
+  - bhagavad_gita.bg_18_53
+  body: 'Ahaṅkāra is less ‘being egotistical’ than the mechanism that turns processes into a proprietary
+    self. Karma-yoga and jñāna both aim to loosen that appropriation.
+
+    '

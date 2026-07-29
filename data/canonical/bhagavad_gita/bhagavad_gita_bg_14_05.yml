@@ -18,34 +18,7 @@ commentary: 'Here the chapter’s engine starts: the three guṇas, born of prak
   this explains why insight alone does not free: the straps are affective-behavioral climates, not mere opinions. The dehin
   remains imperishable while living as if perishable under guṇa-bondage. Freedom begins when binding is correctly named as
   binding, not as identity. Naming the straps correctly is already a sattvic act—so long as one does not cling to the naming
-  as a new identity.
-
-
-  Key Terms:
-
-
-  **guṇa (गुण)** — strand / quality -> constitutive mode of prakṛti that binds -> ''quality'' as adjective misses binding
-  force.
-
-  **nibadhnanti (निबध्नन्ति)** — they bind -> active fastening of the embodied to body -> ''influence'' softens captivity.
-
-  **dehin (देहिन्)** — embodied one -> the one possessing a body, imperishable yet bindable -> ''soul'' can float free of
-  embodiment.
-
-  **avyaya (अव्यय)** — imperishable -> undecaying subject of bondage -> ''eternal soul'' can sound immune in the wrong way.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Sāṃkhya Kārikā 12–14]:** Tripartite guṇa theory is the direct structural ancestor.
-
-  *Divergence:* Classical Sāṃkhya aims at puruṣa’s isolation; the Gītā will teach transcendence into divine being through
-  non-attachment and bhakti.
-
-  **[Aristotle, Nicomachean Ethics on hexeis]:** Enduring dispositions shaping action parallel guṇa climates.
-
-  *Divergence:* Aristotelian ethics seeks virtuous mean; guṇas are cosmological binders before they are character styles.'
+  as a new identity.'
 insight: 'Here the chapter’s engine starts: the three guṇas, born of prakṛti, bind the imperishable embodied one (dehin) to
   the body.'
 practice: 'For one day, when you feel ''stuck,'' ask: ''Which climate is binding me—clarity-attachment, restless drive, or
@@ -86,34 +59,34 @@ pratibha_layers:
     Existentially, this explains why insight alone does not free: the straps are affective-behavioral climates, not mere opinions.
     The dehin remains imperishable while living as if perishable under guṇa-bondage. Freedom begins when binding is correctly
     named as binding, not as identity. Naming the straps correctly is already a sattvic act—so long as one does not cling
-    to the naming as a new identity.
-
-
-    Key Terms:
-
-
-    **guṇa (गुण)** — strand / quality -> constitutive mode of prakṛti that binds -> ''quality'' as adjective misses binding
-    force.
-
-    **nibadhnanti (निबध्नन्ति)** — they bind -> active fastening of the embodied to body -> ''influence'' softens captivity.
-
-    **dehin (देहिन्)** — embodied one -> the one possessing a body, imperishable yet bindable -> ''soul'' can float free of
-    embodiment.
-
-    **avyaya (अव्यय)** — imperishable -> undecaying subject of bondage -> ''eternal soul'' can sound immune in the wrong way.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Sāṃkhya Kārikā 12–14]:** Tripartite guṇa theory is the direct structural ancestor.
-
-    *Divergence:* Classical Sāṃkhya aims at puruṣa’s isolation; the Gītā will teach transcendence into divine being through
-    non-attachment and bhakti.
-
-    **[Aristotle, Nicomachean Ethics on hexeis]:** Enduring dispositions shaping action parallel guṇa climates.
-
-    *Divergence:* Aristotelian ethics seeks virtuous mean; guṇas are cosmological binders before they are character styles.'
+    to the naming as a new identity.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: guṇa (गुण)
+    definition: strand / quality -> constitutive mode of prakṛti that binds -> 'quality' as adjective misses binding force
+    lemma_id: guna
+    sense_id: guna.triguna
+  - term: nibadhnanti (निबध्नन्ति)
+    definition: they bind -> active fastening of the embodied to body -> 'influence' softens captivity
+  - term: dehin (देहिन्)
+    definition: embodied one -> the one possessing a body, imperishable yet bindable -> 'soul' can float free of embodiment
+  - term: avyaya (अव्यय)
+    definition: imperishable -> undecaying subject of bondage -> 'eternal soul' can sound immune in the wrong way
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Sāṃkhya Kārikā 12–14]'
+    resonance: Tripartite guṇa theory is the direct structural ancestor.
+    passage_id: ''
+    divergence: Classical Sāṃkhya aims at puruṣa’s isolation; the Gītā will teach transcendence into divine being through
+      non-attachment and bhakti.
+  - citation: '[Aristotle, Nicomachean Ethics on hexeis]'
+    resonance: Enduring dispositions shaping action parallel guṇa climates.
+    passage_id: ''
+    divergence: Aristotelian ethics seeks virtuous mean; guṇas are cosmological binders before they are character styles.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'For one day, when you feel ''stuck,'' ask: ''Which climate is binding me—clarity-attachment, restless drive, or dull

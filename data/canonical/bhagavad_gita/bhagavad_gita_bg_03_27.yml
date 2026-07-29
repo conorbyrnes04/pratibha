@@ -26,38 +26,7 @@ commentary: 'The doer-claim is a cognitive delusion layered onto processes alrea
   does not erase care, apology, or learning; it erases the metaphysical inflation that turns every outcome into self-mythology.
   The guṇas will still move — hunger, speech, planning, courage — but the ahaṅkāra’s story can be declined. That decline is
   the beginning of karma-yoga’s inner technology. Without it, even sacrificial language becomes another way for the ego to
-  star in its own purification drama. Honesty about process is already a moral act.
-
-
-  Key Terms:
-
-
-  **ahaṅkāra (अहङ्कार)** — I-making -> the ego-function that appropriates experience as mine/me-as-doer -> “ego” as vanity
-  is too shallow; it is a structural misattribution engine
-
-
-  **guṇa (गुण)** — strand/quality -> sattva, rajas, tamas as nature’s operative forces -> “qualities” can sound adjectival;
-  here they are agents of kriyamāṇa karma
-
-
-  **kartāham (कर्ताऽहम्)** — “I am the doer” -> the concise formula of delusion -> the thought-form yoga must see through
-  while action continues
-
-
-  Cross-Tradition Resonances:
-
-
-  **David Hume (bundle theory of self) / modern no-self psychology:** Structural homology in questioning a simple owner behind
-  actions.
-
-  *Divergence:* Hume remains skeptical-empirical; the Gītā embeds the insight in prakṛti-guṇa metaphysics aimed at non-attachment
-  and liberation.
-
-
-  **Nāgārjuna, MMK (on agent and action):** Structural homology in prying apart naive agent-action substantiality.
-
-  *Divergence:* Madhyamaka empties both into dependent designation; the Gītā retains prakṛti’s positive productivity while
-  denying ego’s authorship claim.'
+  star in its own purification drama. Honesty about process is already a moral act.'
 insight: The doer-claim is a cognitive delusion layered onto processes already underway in prakṛti.
 practice: 'During one completed task, replay the moment of the thought “I did this,” and restate quietly: “qualities of nature
   are performing,” without dropping responsibility for care.'
@@ -107,38 +76,38 @@ pratibha_layers:
     does not erase care, apology, or learning; it erases the metaphysical inflation that turns every outcome into self-mythology.
     The guṇas will still move — hunger, speech, planning, courage — but the ahaṅkāra’s story can be declined. That decline
     is the beginning of karma-yoga’s inner technology. Without it, even sacrificial language becomes another way for the ego
-    to star in its own purification drama. Honesty about process is already a moral act.
-
-
-    Key Terms:
-
-
-    **ahaṅkāra (अहङ्कार)** — I-making -> the ego-function that appropriates experience as mine/me-as-doer -> “ego” as vanity
-    is too shallow; it is a structural misattribution engine
-
-
-    **guṇa (गुण)** — strand/quality -> sattva, rajas, tamas as nature’s operative forces -> “qualities” can sound adjectival;
-    here they are agents of kriyamāṇa karma
-
-
-    **kartāham (कर्ताऽहम्)** — “I am the doer” -> the concise formula of delusion -> the thought-form yoga must see through
-    while action continues
-
-
-    Cross-Tradition Resonances:
-
-
-    **David Hume (bundle theory of self) / modern no-self psychology:** Structural homology in questioning a simple owner
-    behind actions.
-
-    *Divergence:* Hume remains skeptical-empirical; the Gītā embeds the insight in prakṛti-guṇa metaphysics aimed at non-attachment
-    and liberation.
-
-
-    **Nāgārjuna, MMK (on agent and action):** Structural homology in prying apart naive agent-action substantiality.
-
-    *Divergence:* Madhyamaka empties both into dependent designation; the Gītā retains prakṛti’s positive productivity while
-    denying ego’s authorship claim.'
+    to star in its own purification drama. Honesty about process is already a moral act.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ahaṅkāra (अहङ्कार)
+    definition: I-making -> the ego-function that appropriates experience as mine/me-as-doer -> “ego” as vanity is too shallow;
+      it is a structural misattribution engine
+    lemma_id: ahankara
+    sense_id: ahankara.gita
+  - term: guṇa (गुण)
+    definition: strand/quality -> sattva, rajas, tamas as nature’s operative forces -> “qualities” can sound adjectival; here
+      they are agents of kriyamāṇa karma
+    lemma_id: guna
+    sense_id: guna.triguna
+  - term: kartāham (कर्ताऽहम्)
+    definition: “I am the doer” -> the concise formula of delusion -> the thought-form yoga must see through while action
+      continues
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: David Hume (bundle theory of self) / modern no-self psychology
+    resonance: Structural homology in questioning a simple owner behind actions.
+    passage_id: ''
+    divergence: Hume remains skeptical-empirical; the Gītā embeds the insight in prakṛti-guṇa metaphysics aimed at non-attachment
+      and liberation.
+  - citation: Nāgārjuna, MMK (on agent and action)
+    resonance: Structural homology in prying apart naive agent-action substantiality.
+    passage_id: ''
+    divergence: Madhyamaka empties both into dependent designation; the Gītā retains prakṛti’s positive productivity while
+      denying ego’s authorship claim.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'During one completed task, replay the moment of the thought “I did this,” and restate quietly: “qualities of nature

@@ -25,31 +25,7 @@ commentary: 'After cosmic scales and double unmanifests, the method is startling
   Practice becomes fidelity without provincialism. The line-level force of the teaching is practical, not ornamental: what
   it claims about reality is meant to reshape how you attend, choose, and depart. If the claim does not alter rehearsal in
   ordinary time, it will not hold when time thins. Existential uptake is therefore part of fidelity to the argument, not an
-  optional aftertaste.
-
-
-  Key Terms:
-
-
-  **ananya bhakti (अनन्य भक्ति)** — devotion with no other -> the means of attaining the supreme Person -> "loyalty" understates
-  exclusivity of relational aim.
-
-
-  **tatam (ततम्)** — spread/pervaded -> all this stretched through by the Person -> "present everywhere" is close but misses
-  the woven-through sense.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Shema (love the Lord with all heart):** Both demand unpartitioned devotion.
-
-  *Divergence:* Biblical monotheism''s covenant frame differs from Gītā''s Person-within-whom-beings-stand ontology.
-
-
-  **Bhāgavata bhakti theology:** Structural kinship in exclusive devotion.
-
-  *Divergence:* Later elaborations expand rasa; here the claim is compressed beside cosmic pervading.'
+  optional aftertaste.'
 insight: 'After cosmic scales and double unmanifests, the method is startlingly intimate: ananya bhakti.'
 practice: Name the "other" that most often rivals devotion (work, image, anxiety). For one hour, practice devotion as if that
   rival were not the center — without pretending the rival does not exist.
@@ -92,31 +68,31 @@ pratibha_layers:
     Practice becomes fidelity without provincialism. The line-level force of the teaching is practical, not ornamental: what
     it claims about reality is meant to reshape how you attend, choose, and depart. If the claim does not alter rehearsal
     in ordinary time, it will not hold when time thins. Existential uptake is therefore part of fidelity to the argument,
-    not an optional aftertaste.
-
-
-    Key Terms:
-
-
-    **ananya bhakti (अनन्य भक्ति)** — devotion with no other -> the means of attaining the supreme Person -> "loyalty" understates
-    exclusivity of relational aim.
-
-
-    **tatam (ततम्)** — spread/pervaded -> all this stretched through by the Person -> "present everywhere" is close but misses
-    the woven-through sense.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Shema (love the Lord with all heart):** Both demand unpartitioned devotion.
-
-    *Divergence:* Biblical monotheism''s covenant frame differs from Gītā''s Person-within-whom-beings-stand ontology.
-
-
-    **Bhāgavata bhakti theology:** Structural kinship in exclusive devotion.
-
-    *Divergence:* Later elaborations expand rasa; here the claim is compressed beside cosmic pervading.'
+    not an optional aftertaste.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ananya bhakti (अनन्य भक्ति)
+    definition: devotion with no other -> the means of attaining the supreme Person -> "loyalty" understates exclusivity of
+      relational aim
+    lemma_id: bhakti
+    sense_id: bhakti.gita
+  - term: tatam (ततम्)
+    definition: spread/pervaded -> all this stretched through by the Person -> "present everywhere" is close but misses the
+      woven-through sense
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Shema (love the Lord with all heart)
+    resonance: Both demand unpartitioned devotion.
+    passage_id: ''
+    divergence: Biblical monotheism's covenant frame differs from Gītā's Person-within-whom-beings-stand ontology.
+  - citation: Bhāgavata bhakti theology
+    resonance: Structural kinship in exclusive devotion.
+    passage_id: ''
+    divergence: Later elaborations expand rasa; here the claim is compressed beside cosmic pervading.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Name the "other" that most often rivals devotion (work, image, anxiety). For one hour, practice devotion as if that

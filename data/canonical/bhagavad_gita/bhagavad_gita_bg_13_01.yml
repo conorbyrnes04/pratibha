@@ -31,48 +31,7 @@ commentary: 'Liberation begins when the seeker stops asking for consoling images
   and jñeya then refuse the fantasy that “knowledge” is a pile of facts; knowledge is a way of seeing, and the knowable is
   what that seeing opens. In the Gītā’s pedagogy, this chapter turns the battlefield inward. Before Krishna can teach freedom
   from action’s binding, he must teach the distinction that makes freedom intelligible. Existentially, the verse invites a
-  ruthless inventory: which of my crises are field-events, and which confusion comes from mistaking the knower for the known?
-
-
-  Key Terms:
-
-
-  **prakṛti (प्रकृति)** — pra- + kṛ, “that which brings forth” -> productive nature as the matrix of experience -> “nature”
-  as scenery misses its role as the active generator of thought, desire, and form.
-
-  **puruṣa (पुरुष)** — “person / dwelling in the city (of the body)” -> the witnessing principle amid prakṛti’s play -> “soul”
-  as a ghostly substance misses its functional definition as knower.
-
-  **kṣetra (क्षेत्र)** — “field / cultivated ground” -> the body-world as experiential terrain -> softens into “body” alone
-  and loses the agricultural metaphor of what can be worked and known.
-
-  **kṣetrajña (क्षेत्रज्ञ)** — “knower of the field” -> consciousness as that which cognizes the field -> “soul in the body”
-  misses the epistemic cut the chapter will radicalize.
-
-  **jñeya (ज्ञेय)** — “that which is to be known” -> the ultimate knowable, later identified with Brahman -> “object of knowledge”
-  flattens the soteriological stakes.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Patañjali, Yoga Sūtra I.2–3]:** Both texts open liberation by distinguishing citta-vṛtti from the seer’s resting in its
-  own form.
-
-  *Divergence:* Patañjali’s seer is defined through stillness of fluctuation; Krishna answers Arjuna by expanding the field
-  into a full ontology of nature, person, and knowable.
-
-  **[Plotinus, Enneads IV.3.9]:** The soul’s relation to body as a kind of habitation parallels kṣetra/kṣetrajña as terrain
-  and dweller-knower.
-
-  *Divergence:* Plotinus climbs toward the One by ascent; the Gītā will keep the knower immanent in every field while still
-  calling for discriminative seeing.
-
-  **[Zhuangzi, “Discussion on Making All Things Equal”]:** Both unsettle naive subject-object certainty before teaching a
-  freer stance amid phenomena.
-
-  *Divergence:* Zhuangzi dissolves fixed standpoints into perspectival play; Krishna preserves a stable knower-field distinction
-  as the condition of release.'
+  ruthless inventory: which of my crises are field-events, and which confusion comes from mistaking the knower for the known?'
 insight: Liberation begins when the seeker stops asking for consoling images and asks instead for a map of experience itself.
 practice: For one hour, label every strong experience as either “field” (sensation, thought, story, body-event) or “knowing”
   (the simple fact of awareness). Do not fix anything; only refuse to collapse the two.
@@ -134,48 +93,49 @@ pratibha_layers:
     is what that seeing opens. In the Gītā’s pedagogy, this chapter turns the battlefield inward. Before Krishna can teach
     freedom from action’s binding, he must teach the distinction that makes freedom intelligible. Existentially, the verse
     invites a ruthless inventory: which of my crises are field-events, and which confusion comes from mistaking the knower
-    for the known?
-
-
-    Key Terms:
-
-
-    **prakṛti (प्रकृति)** — pra- + kṛ, “that which brings forth” -> productive nature as the matrix of experience -> “nature”
-    as scenery misses its role as the active generator of thought, desire, and form.
-
-    **puruṣa (पुरुष)** — “person / dwelling in the city (of the body)” -> the witnessing principle amid prakṛti’s play ->
-    “soul” as a ghostly substance misses its functional definition as knower.
-
-    **kṣetra (क्षेत्र)** — “field / cultivated ground” -> the body-world as experiential terrain -> softens into “body” alone
-    and loses the agricultural metaphor of what can be worked and known.
-
-    **kṣetrajña (क्षेत्रज्ञ)** — “knower of the field” -> consciousness as that which cognizes the field -> “soul in the body”
-    misses the epistemic cut the chapter will radicalize.
-
-    **jñeya (ज्ञेय)** — “that which is to be known” -> the ultimate knowable, later identified with Brahman -> “object of
-    knowledge” flattens the soteriological stakes.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Patañjali, Yoga Sūtra I.2–3]:** Both texts open liberation by distinguishing citta-vṛtti from the seer’s resting in
-    its own form.
-
-    *Divergence:* Patañjali’s seer is defined through stillness of fluctuation; Krishna answers Arjuna by expanding the field
-    into a full ontology of nature, person, and knowable.
-
-    **[Plotinus, Enneads IV.3.9]:** The soul’s relation to body as a kind of habitation parallels kṣetra/kṣetrajña as terrain
-    and dweller-knower.
-
-    *Divergence:* Plotinus climbs toward the One by ascent; the Gītā will keep the knower immanent in every field while still
-    calling for discriminative seeing.
-
-    **[Zhuangzi, “Discussion on Making All Things Equal”]:** Both unsettle naive subject-object certainty before teaching
-    a freer stance amid phenomena.
-
-    *Divergence:* Zhuangzi dissolves fixed standpoints into perspectival play; Krishna preserves a stable knower-field distinction
-    as the condition of release.'
+    for the known?'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: prakṛti (प्रकृति)
+    definition: pra- + kṛ, “that which brings forth” -> productive nature as the matrix of experience -> “nature” as scenery
+      misses its role as the active generator of thought, desire, and form
+    lemma_id: prakrti
+    sense_id: prakrti.samkhya_gita
+  - term: puruṣa (पुरुष)
+    definition: “person / dwelling in the city (of the body)” -> the witnessing principle amid prakṛti’s play -> “soul” as
+      a ghostly substance misses its functional definition as knower
+    lemma_id: purusa
+    sense_id: purusa.samkhya_gita
+  - term: kṣetra (क्षेत्र)
+    definition: “field / cultivated ground” -> the body-world as experiential terrain -> softens into “body” alone and loses
+      the agricultural metaphor of what can be worked and known
+  - term: kṣetrajña (क्षेत्रज्ञ)
+    definition: “knower of the field” -> consciousness as that which cognizes the field -> “soul in the body” misses the epistemic
+      cut the chapter will radicalize
+  - term: jñeya (ज्ञेय)
+    definition: “that which is to be known” -> the ultimate knowable, later identified with Brahman -> “object of knowledge”
+      flattens the soteriological stakes
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Patañjali, Yoga Sūtra I.2–3]'
+    resonance: Both texts open liberation by distinguishing citta-vṛtti from the seer’s resting in its own form.
+    passage_id: ''
+    divergence: Patañjali’s seer is defined through stillness of fluctuation; Krishna answers Arjuna by expanding the field
+      into a full ontology of nature, person, and knowable.
+  - citation: '[Plotinus, Enneads IV.3.9]'
+    resonance: The soul’s relation to body as a kind of habitation parallels kṣetra/kṣetrajña as terrain and dweller-knower.
+    passage_id: ''
+    divergence: Plotinus climbs toward the One by ascent; the Gītā will keep the knower immanent in every field while still
+      calling for discriminative seeing.
+  - citation: '[Zhuangzi, “Discussion on Making All Things Equal”]'
+    resonance: Both unsettle naive subject-object certainty before teaching a freer stance amid phenomena.
+    passage_id: ''
+    divergence: Zhuangzi dissolves fixed standpoints into perspectival play; Krishna preserves a stable knower-field distinction
+      as the condition of release.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: For one hour, label every strong experience as either “field” (sensation, thought, story, body-event) or “knowing”

@@ -1,201 +1,434 @@
 # Regenerable fast index of lexicon lemmas (id, short, traditions).
 # Source of truth: data/lexicon/lemmas/<id>.yml
 lemmas:
+- id: adhikara
+  short: what rightly falls in your jurisdiction — entitlement to act, not to fruit
+  traditions:
+  - hinduism
+  - bhagavad_gita
+- id: ahankara
+  short: the faculty that claims ‘I/mine’ and appropriates action and fruit
+  traditions:
+  - hinduism
+  - samkhya
+  - bhagavad_gita
+  - yoga
 - id: anatman
   short: no permanent, independent self in persons (or, later, in dharmas)
-  traditions: [theravada, mahayana]
-- id: anuttara
-  short: the highest; consciousness beyond which nothing stands
-  traditions: [kashmir_shaivism]
-- id: apophasis
-  short: 'unsaying: approaching the divine by denying inadequate affirmations'
-  traditions: [christian_mysticism, neoplatonism, pseudo_dionysius]
-- id: atman
-  short: the irreducible subject; never an object of experience
-  traditions: [upanishads, advaita_vedanta, kashmir_shaivism]
-- id: brahman
-  short: the unconditioned ground of being and knowing
-  traditions: [upanishads, advaita_vedanta]
-- id: caitanya
-  short: awareness as the sole reality that knows and appears
-  traditions: [kashmir_shaivism, advaita_vedanta]
-- id: cit
-  short: knowingness itself, not a content of mind
-  traditions: [advaita_vedanta, kashmir_shaivism, upanishads]
-- id: dao
-  short: the nameless source-and-course of the myriad things
-  traditions: [daoism, chinese]
-- id: de
-  short: the particular efficacy of a thing when it accords with the Way
-  traditions: [daoism, chinese, confucianism]
-- id: dharma
-  short: that which upholds; right order, duty, and cosmic law
-  traditions: [upanishads, hinduism, theravada, mahayana]
-- id: fana
-  short: passing away of the egoic claim before the Real
-  traditions: [sufism, islam]
-- id: gelassenheit
-  short: letting-go of possessiveness so God can be born in the soul
-  traditions: [christian_mysticism, meister_eckhart]
-- id: harmonie
-  short: tensioned unity of opposites; attunement rather than bland agreement
-  traditions: [greek, heraclitus, pythagoreanism]
-- id: henosis
-  short: return to unity with the One beyond Intellect
-  traditions: [neoplatonism, greek]
-- id: jiva
-  short: the embodied experiencer under limiting adjuncts
-  traditions: [advaita_vedanta, kashmir_shaivism, hinduism]
-- id: karma
-  short: intentional action and the formative consequences that shape experience
-  traditions: [hinduism, buddhism, upanishads, yoga]
-- id: li
-  short: the intelligible pattern or principle in things and affairs
-  traditions: [chinese, confucianism, neo_confucianism]
-- id: logos
-  short: account, reason, and the intelligible articulation of what is
-  traditions: [greek, stoicism, christianity, heraclitus]
-- id: maya
-  short: the inexplicable power by which the One appears as many
-  traditions: [advaita_vedanta, upanishads, kashmir_shaivism]
-- id: moksa
-  short: freedom from saṃsāra through knowledge of the Self
-  traditions: [upanishads, advaita_vedanta, hinduism]
-- id: nirvana
-  short: the blowing-out of greed, hatred, and delusion; unconditioned freedom
-  traditions: [theravada, mahayana]
-- id: nous
-  short: 'divine Intellect: knowing that is identical with the intelligibles'
-  traditions: [greek, platonism, neoplatonism]
-- id: physis
-  short: the growing-forth of what a thing is; nature as principle of appearing
-  traditions: [greek, presocratic, stoicism]
-- id: pneuma
-  short: tensioned breath-fire that structures cosmos and soul
-  traditions: [greek, stoicism, christianity]
-- id: prakasa
-  short: the light-aspect of consciousness that makes anything appear
-  traditions: [kashmir_shaivism, advaita_vedanta]
-- id: pratibha
-  short: spontaneous illumined knowing; creative intuition of consciousness
-  traditions: [kashmir_shaivism, sanskrit_poetics]
-- id: pratyabhijna
-  short: recollecting that this awareness is Śiva’s own authorship
-  traditions: [kashmir_shaivism]
-- id: psyche
-  short: the living, knowing principle that can turn toward the Forms or the body
-  traditions: [greek, platonism, stoicism]
-- id: qi
-  short: psycho-physical breath-energy; the dynamic stuff of cosmos and body
-  traditions: [chinese, daoism, confucianism]
-- id: sakti
-  short: Śiva’s own capacity to appear, know, and act as world
-  traditions: [kashmir_shaivism, tantra]
-- id: samadhi
-  short: collected mind in which subject–object friction falls quiet
-  traditions: [yoga, buddhism]
-- id: samsara
-  short: conditioned cycling of birth, death, and re-becoming under ignorance
-  traditions: [hinduism, buddhism, upanishads]
-- id: spanda
-  short: the subtle vibration by which consciousness appears as world
-  traditions: [kashmir_shaivism]
-- id: sunya
-  short: emptiness of limited content; the open field of consciousness
-  traditions: [kashmir_shaivism, mahayana]
-- id: sunyata
-  short: lack of intrinsic, independent nature (svabhāva) in all phenomena
-  traditions: [mahayana, madhyamaka]
-- id: tawhid
-  short: affirmation and realization of God’s absolute oneness
-  traditions: [islam, sufism]
-- id: theosis
-  short: participation in divine life without identity of essence
-  traditions: [christian_mysticism, eastern_orthodoxy]
-- id: vikalpa
-  short: differentiating ideation that splits seamless awareness into ‘this/that’
-  traditions: [kashmir_shaivism, yoga, mahayana]
-- id: vimarsa
-  short: consciousness tasting itself as ‘I’ within appearance
-  traditions: [kashmir_shaivism]
-- id: wuwei
-  short: acting without aggressive contrivance; non-interference with the Way
-  traditions: [daoism, chinese]
-- id: xin
-  short: the seat of thought, feeling, and moral responsiveness
-  traditions: [chinese, daoism, confucianism, chan]
-- id: yoga
-  short: disciplined yoking of mind toward stillness and liberation
-  traditions: [yoga, upanishads, kashmir_shaivism]
-- id: ziran
-  short: spontaneity; being so of itself without forced contrivance
-  traditions: [daoism, chinese]
-- id: jnana
-  short: structured knowing-about that contracts free awareness when taken as final
-  traditions: [kashmir_shaivism, advaita_vedanta, upanishads]
-- id: citta
-  short: mind as citi narrowed into an object-grasping subject
-  traditions: [kashmir_shaivism, yoga]
-- id: bandha
-  short: the binding that arises when knowing hardens into limited identity
-  traditions: [kashmir_shaivism, advaita_vedanta]
-- id: sankoca
-  short: the free narrowing by which universal citi appears as individual awareness
-  traditions: [kashmir_shaivism]
-- id: vidya
-  short: knowing that becomes bodily presence and returns awareness to its source
-  traditions: [kashmir_shaivism]
-- id: kala
-  short: a measured portion of power; the limiting articulation that makes finite agency possible
-  traditions: [kashmir_shaivism]
-- id: pyr
-  short: world-ruling fire as measured transformation, not mythic flame alone
-  traditions: [greek, heraclitus]
-- id: qi_wu
-  short: leveling standpoint claims so this/that and waking/dreaming lose absolute privilege
-  traditions: [daoism, chinese, zhuangzi]
-- id: wu_hua
-  short: shifts of identity-form across conditions without a fixed core self as owner
-  traditions: [daoism, chinese, zhuangzi]
-- id: sandhana
-  short: joining or converging powers so dispersed multiplicity resolves into intensity
-  traditions: [kashmir_shaivism]
-- id: siddhi
-  short: the free accomplishment of manifestation—and of practice ripening—not a catalog of magic powers
-  traditions: [kashmir_shaivism, yoga]
-- id: cidananda
-  short: the intrinsic fullness of recognized awareness; not euphoria contingent on objects
-  traditions: [kashmir_shaivism]
-- id: sarira
-  short: organized appearance of consciousness as bounded, coherent form
-  traditions: [kashmir_shaivism]
-- id: svapna
-  short: the dream-state and the dreamlike vividness of appearances arising in awareness
-  traditions: [kashmir_shaivism]
-- id: bheda
-  short: distinction and multiplicity appearing within consciousness without splitting its ground
-  traditions: [kashmir_shaivism]
+  traditions:
+  - theravada
+  - mahayana
 - id: anusandhana
   short: lucid, repeated entering into the principle so recognition does not dissipate
-  traditions: [kashmir_shaivism]
-- id: moha
-  short: confused swooning that mistakes limited appearance for the whole of what one is
-  traditions: [kashmir_shaivism, advaita_vedanta, yoga]
-- id: upaya
-  short: effective pathway by which recognition is mirrored, corrected, and stabilized
-  traditions: [kashmir_shaivism, mahayana]
-- id: matrika
-  short: the alphabetic / phonemic power-lattice that grounds and shapes all knowing and speech
-  traditions: [kashmir_shaivism]
-- id: samhara
-  short: drawing manifested content back into the source so phenomena lose their compulsive grip
-  traditions: [kashmir_shaivism]
-- id: samskara
-  short: residual formative imprint that propels perception, effort, and reaction along familiar grooves
-  traditions: [kashmir_shaivism, yoga]
+  traditions:
+  - kashmir_shaivism
+- id: anuttara
+  short: the highest; consciousness beyond which nothing stands
+  traditions:
+  - kashmir_shaivism
+- id: apophasis
+  short: 'unsaying: approaching the divine by denying inadequate affirmations'
+  traditions:
+  - christian_mysticism
+  - neoplatonism
+  - pseudo_dionysius
+- id: atman
+  short: the irreducible subject; never an object of experience
+  traditions:
+  - upanishads
+  - advaita_vedanta
+  - kashmir_shaivism
 - id: aviveka
   short: collapse of discrimination in which awareness remains but goes unrecognized
-  traditions: [kashmir_shaivism]
+  traditions:
+  - kashmir_shaivism
+- id: bandha
+  short: the binding that arises when knowing hardens into limited identity
+  traditions:
+  - kashmir_shaivism
+  - advaita_vedanta
+- id: bhakti
+  short: relational non-dual practice — offering mind, act, and fruit to Kṛṣṇa
+  traditions:
+  - hinduism
+  - bhagavad_gita
+  - bhakti
+- id: bheda
+  short: distinction and multiplicity appearing within consciousness without splitting
+    its ground
+  traditions:
+  - kashmir_shaivism
+- id: brahman
+  short: the unconditioned ground of being and knowing
+  traditions:
+  - upanishads
+  - advaita_vedanta
+- id: buddhi
+  short: the determinative faculty that can yoke action to clarity rather than craving
+  traditions:
+  - hinduism
+  - samkhya
+  - bhagavad_gita
+  - yoga
+- id: caitanya
+  short: awareness as the sole reality that knows and appears
+  traditions:
+  - kashmir_shaivism
+  - advaita_vedanta
 - id: cakra
-  short: the revolving totality of powers—sensory, mental, phonemic, cosmic—as one dynamic field
-  traditions: [kashmir_shaivism]
+  short: the revolving totality of powers—sensory, mental, phonemic, cosmic—as one
+    dynamic field
+  traditions:
+  - kashmir_shaivism
+- id: cidananda
+  short: the intrinsic fullness of recognized awareness; not euphoria contingent on
+    objects
+  traditions:
+  - kashmir_shaivism
+- id: cit
+  short: knowingness itself, not a content of mind
+  traditions:
+  - advaita_vedanta
+  - kashmir_shaivism
+  - upanishads
+- id: citta
+  short: mind as citi narrowed into an object-grasping subject
+  traditions:
+  - kashmir_shaivism
+  - yoga
+- id: dao
+  short: the nameless source-and-course of the myriad things
+  traditions:
+  - daoism
+  - chinese
+- id: de
+  short: the particular efficacy of a thing when it accords with the Way
+  traditions:
+  - daoism
+  - chinese
+  - confucianism
+- id: dharma
+  short: that which upholds; right order, duty, and cosmic law
+  traditions:
+  - upanishads
+  - hinduism
+  - theravada
+  - mahayana
+  - bhagavad_gita
+- id: fana
+  short: passing away of the egoic claim before the Real
+  traditions:
+  - sufism
+  - islam
+- id: gelassenheit
+  short: letting-go of possessiveness so God can be born in the soul
+  traditions:
+  - christian_mysticism
+  - meister_eckhart
+- id: guna
+  short: sattva, rajas, and tamas — the qualitative engines of conditioned experience
+  traditions:
+  - hinduism
+  - samkhya
+  - bhagavad_gita
+  - yoga
+- id: harmonie
+  short: tensioned unity of opposites; attunement rather than bland agreement
+  traditions:
+  - greek
+  - heraclitus
+  - pythagoreanism
+- id: henosis
+  short: return to unity with the One beyond Intellect
+  traditions:
+  - neoplatonism
+  - greek
+- id: jiva
+  short: the embodied experiencer under limiting adjuncts
+  traditions:
+  - advaita_vedanta
+  - kashmir_shaivism
+  - hinduism
+- id: jnana
+  short: structured knowing-about that contracts free awareness when taken as final
+  traditions:
+  - kashmir_shaivism
+  - advaita_vedanta
+  - upanishads
+- id: kala
+  short: a measured portion of power; the limiting articulation that makes finite
+    agency possible
+  traditions:
+  - kashmir_shaivism
+- id: karma
+  short: intentional action and the formative consequences that shape experience
+  traditions:
+  - hinduism
+  - buddhism
+  - upanishads
+  - yoga
+  - bhagavad_gita
+- id: li
+  short: 'inherent pattern or grain in things (corpus: Zhuangzi 天理/大理, not full lixue)'
+  traditions:
+  - chinese
+  - confucianism
+  - neo_confucianism
+- id: logos
+  short: account, reason, and the intelligible articulation of what is
+  traditions:
+  - greek
+  - stoicism
+  - christianity
+  - heraclitus
+- id: matrika
+  short: the alphabetic / phonemic power-lattice that grounds and shapes all knowing
+    and speech
+  traditions:
+  - kashmir_shaivism
+- id: maya
+  short: the inexplicable power by which the One appears as many
+  traditions:
+  - advaita_vedanta
+  - upanishads
+  - kashmir_shaivism
+- id: moha
+  short: confused swooning that mistakes limited appearance for the whole of what
+    one is
+  traditions:
+  - kashmir_shaivism
+  - advaita_vedanta
+  - yoga
+- id: moksa
+  short: freedom from saṃsāra through knowledge of the Self
+  traditions:
+  - upanishads
+  - advaita_vedanta
+  - hinduism
+- id: nirvana
+  short: the blowing-out of greed, hatred, and delusion; unconditioned freedom
+  traditions:
+  - theravada
+  - mahayana
+- id: nous
+  short: 'divine Intellect: knowing that is identical with the intelligibles'
+  traditions:
+  - greek
+  - platonism
+  - neoplatonism
+- id: physis
+  short: the growing-forth of what a thing is; nature as principle of appearing
+  traditions:
+  - greek
+  - presocratic
+  - stoicism
+- id: pneuma
+  short: tensioned breath-fire that structures cosmos and soul (weak corpus attestation)
+  traditions:
+  - greek
+  - stoicism
+  - christianity
+- id: prakasa
+  short: the light-aspect of consciousness that makes anything appear
+  traditions:
+  - kashmir_shaivism
+  - advaita_vedanta
+- id: prakrti
+  short: the productive field of becoming whose strands (guṇas) stage experience
+  traditions:
+  - hinduism
+  - samkhya
+  - bhagavad_gita
+  - yoga
+- id: pratibha
+  short: spontaneous luminous insight arising as a siddhi of clarified citta
+  traditions:
+  - kashmir_shaivism
+  - sanskrit_poetics
+  - yoga
+- id: pratyabhijna
+  short: recollecting that this awareness is Śiva’s own authorship
+  traditions:
+  - kashmir_shaivism
+- id: psyche
+  short: the living, knowing principle that can turn toward the Forms or the body
+  traditions:
+  - greek
+  - platonism
+  - stoicism
+- id: purusa
+  short: the knower who is not an object among prakṛti’s products
+  traditions:
+  - hinduism
+  - samkhya
+  - bhagavad_gita
+  - yoga
+- id: pyr
+  short: world-ruling fire as measured transformation, not mythic flame alone
+  traditions:
+  - greek
+  - heraclitus
+- id: qi
+  short: psycho-physical breath-energy; the dynamic stuff of cosmos and body
+  traditions:
+  - chinese
+  - daoism
+  - confucianism
+- id: qi_wu
+  short: leveling standpoint claims so this/that and waking/dreaming lose absolute
+    privilege
+  traditions:
+  - daoism
+  - chinese
+  - zhuangzi
+- id: sakti
+  short: Śiva’s own capacity to appear, know, and act as world
+  traditions:
+  - kashmir_shaivism
+  - tantra
+- id: samadhi
+  short: collected mind in which subject–object friction falls quiet
+  traditions:
+  - yoga
+  - buddhism
+- id: samhara
+  short: drawing manifested content back into the source so phenomena lose their compulsive
+    grip
+  traditions:
+  - kashmir_shaivism
+- id: samkhya
+  short: the path of clear enumeration/discrimination — knowing that separates knower
+    from field
+  traditions:
+  - hinduism
+  - samkhya
+  - bhagavad_gita
+  - yoga
+- id: samsara
+  short: conditioned cycling of birth, death, and re-becoming under ignorance
+  traditions:
+  - hinduism
+  - buddhism
+  - upanishads
+- id: samskara
+  short: residual formative imprint that propels perception, effort, and reaction
+    along familiar grooves
+  traditions:
+  - kashmir_shaivism
+  - yoga
+- id: sandhana
+  short: joining or converging powers so dispersed multiplicity resolves into intensity
+  traditions:
+  - kashmir_shaivism
+- id: sanga
+  short: sticky appropriation — contact that becomes claim and then bondage
+  traditions:
+  - hinduism
+  - bhagavad_gita
+  - yoga
+- id: sankoca
+  short: the free narrowing by which universal citi appears as individual awareness
+  traditions:
+  - kashmir_shaivism
+- id: sarira
+  short: organized appearance of consciousness as bounded, coherent form
+  traditions:
+  - kashmir_shaivism
+- id: siddhi
+  short: the free accomplishment of manifestation—and of practice ripening—not a catalog
+    of magic powers
+  traditions:
+  - kashmir_shaivism
+  - yoga
+- id: spanda
+  short: the subtle vibration by which consciousness appears as world
+  traditions:
+  - kashmir_shaivism
+- id: sraddha
+  short: the disposition that opens a path — trust as orientation, not mere belief-assent
+  traditions:
+  - hinduism
+  - bhagavad_gita
+  - upanishads
+- id: sunya
+  short: emptiness of limited content; the open field of consciousness
+  traditions:
+  - kashmir_shaivism
+  - mahayana
+- id: sunyata
+  short: lack of intrinsic, independent nature (svabhāva) in all phenomena
+  traditions:
+  - mahayana
+  - madhyamaka
+- id: svapna
+  short: the dream-state and the dreamlike vividness of appearances arising in awareness
+  traditions:
+  - kashmir_shaivism
+- id: tawhid
+  short: affirmation of God’s absolute oneness, here mainly via Balyānī’s ontological
+    radicalization
+  traditions:
+  - islam
+  - sufism
+- id: theosis
+  short: participation in divine life without identity of essence (neighbor attestation
+    only)
+  traditions:
+  - christian_mysticism
+  - eastern_orthodoxy
+- id: upaya
+  short: effective pathway by which recognition is mirrored, corrected, and stabilized
+  traditions:
+  - kashmir_shaivism
+  - mahayana
+- id: vidya
+  short: knowing that becomes bodily presence and returns awareness to its source
+  traditions:
+  - kashmir_shaivism
+- id: vikalpa
+  short: differentiating ideation that splits seamless awareness into ‘this/that’
+  traditions:
+  - kashmir_shaivism
+  - yoga
+  - mahayana
+- id: vimarsa
+  short: consciousness tasting itself as ‘I’ within appearance
+  traditions:
+  - kashmir_shaivism
+- id: wu_hua
+  short: shifts of identity-form across conditions without a fixed core self as owner
+  traditions:
+  - daoism
+  - chinese
+  - zhuangzi
+- id: wuwei
+  short: acting without aggressive contrivance; non-interference with the Way
+  traditions:
+  - daoism
+  - chinese
+- id: xin
+  short: the seat of thought, feeling, and moral responsiveness
+  traditions:
+  - chinese
+  - daoism
+  - confucianism
+  - chan
+- id: yajna
+  short: action turned into offering — the ecology that frees work from possessive
+    fruit
+  traditions:
+  - hinduism
+  - bhagavad_gita
+  - vedic
+- id: yoga
+  short: disciplined yoking of mind toward stillness and liberation
+  traditions:
+  - yoga
+  - upanishads
+  - kashmir_shaivism
+  - bhagavad_gita
+- id: ziran
+  short: spontaneity; being so of itself without forced contrivance
+  traditions:
+  - daoism
+  - chinese

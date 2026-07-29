@@ -19,29 +19,7 @@ commentary: 'Transcendence is not a DIY heroics of indifference. The one who ser
   stays human and warm while unbound. The question is not “Have I achieved indifference?” but “Is my yoga of love still taking
   side doors?” Unstraying means the heart has one refuge even while the guṇas continue their weather in the body-field. This
   is not ornamental theology; it is a demand that lived climate, ethical stance, and metaphysical claim stay braided in one
-  practice of seeing.
-
-
-  Key Terms:
-
-
-  **avyabhicāreṇa (अव्यभिचारेण)** — without straying -> fidelity of devotion -> ''loyalty'' can sound merely institutional.
-
-  **bhakti-yoga (भक्तियोग)** — yoga of devotion -> service as crossing-means -> ''faith practice'' understates yogic crossing.
-
-  **brahma-bhūya (ब्रह्मभूय)** — becoming Brahman -> fitness for Brahman-state -> ''union with God'' may blur this exact idiom.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Gītā 12’s unswerving devotee]:** Same fidelity language now explicitly guṇa-crossing.
-
-  *Divergence:* Chapter 12 ranks paths; 14.26 makes non-straying devotion the engine past the three strands.
-
-  **[Bernard of Clairvaux on ordered love]:** Love rightly ordered liberates from disordered attachments.
-
-  *Divergence:* Cistercian love orders to Christ; here devotion fits one for Brahman-being beyond guṇas.'
+  practice of seeing.'
 insight: Transcendence is not a DIY heroics of indifference.
 practice: Offer one ordinary act today as unstraying service—no side altar of image-management. Let that be your guṇa-crossing
   practice.
@@ -82,30 +60,31 @@ pratibha_layers:
     stays human and warm while unbound. The question is not “Have I achieved indifference?” but “Is my yoga of love still
     taking side doors?” Unstraying means the heart has one refuge even while the guṇas continue their weather in the body-field.
     This is not ornamental theology; it is a demand that lived climate, ethical stance, and metaphysical claim stay braided
-    in one practice of seeing.
-
-
-    Key Terms:
-
-
-    **avyabhicāreṇa (अव्यभिचारेण)** — without straying -> fidelity of devotion -> ''loyalty'' can sound merely institutional.
-
-    **bhakti-yoga (भक्तियोग)** — yoga of devotion -> service as crossing-means -> ''faith practice'' understates yogic crossing.
-
-    **brahma-bhūya (ब्रह्मभूय)** — becoming Brahman -> fitness for Brahman-state -> ''union with God'' may blur this exact
-    idiom.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Gītā 12’s unswerving devotee]:** Same fidelity language now explicitly guṇa-crossing.
-
-    *Divergence:* Chapter 12 ranks paths; 14.26 makes non-straying devotion the engine past the three strands.
-
-    **[Bernard of Clairvaux on ordered love]:** Love rightly ordered liberates from disordered attachments.
-
-    *Divergence:* Cistercian love orders to Christ; here devotion fits one for Brahman-being beyond guṇas.'
+    in one practice of seeing.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: avyabhicāreṇa (अव्यभिचारेण)
+    definition: without straying -> fidelity of devotion -> 'loyalty' can sound merely institutional
+  - term: bhakti-yoga (भक्तियोग)
+    definition: yoga of devotion -> service as crossing-means -> 'faith practice' understates yogic crossing
+    lemma_id: bhakti
+    sense_id: bhakti.gita
+  - term: brahma-bhūya (ब्रह्मभूय)
+    definition: becoming Brahman -> fitness for Brahman-state -> 'union with God' may blur this exact idiom
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Gītā 12’s unswerving devotee]'
+    resonance: Same fidelity language now explicitly guṇa-crossing.
+    passage_id: ''
+    divergence: Chapter 12 ranks paths; 14.26 makes non-straying devotion the engine past the three strands.
+  - citation: '[Bernard of Clairvaux on ordered love]'
+    resonance: Love rightly ordered liberates from disordered attachments.
+    passage_id: ''
+    divergence: Cistercian love orders to Christ; here devotion fits one for Brahman-being beyond guṇas.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Offer one ordinary act today as unstraying service—no side altar of image-management. Let that be your guṇa-crossing

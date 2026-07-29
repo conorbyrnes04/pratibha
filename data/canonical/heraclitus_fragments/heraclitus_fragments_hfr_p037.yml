@@ -86,9 +86,12 @@ pratibha_layers:
     definition: 'Greek: speech, account, ratio, intelligible order. In Heraclitus, the Logos is the pattern according to which
       all things occur — not a private doctrine but the world''s articulation. Patrick''s ''Reason'' is a Victorian gloss;
       we use Logos to preserve the Greek range (cosmic order + intelligible speech).'
+    lemma_id: logos
   - term: psychē (ψυχή)
     definition: 'Soul/breath/life — for Heraclitus often linked to depth of character (ethos) and fate. The fragment turns
       ethics into cosmology: how you live is how you align (or fail) with measure.'
+    lemma_id: psyche
+    sense_id: psyche.platonic
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances

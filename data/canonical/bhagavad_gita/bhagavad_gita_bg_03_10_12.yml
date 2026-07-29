@@ -54,39 +54,7 @@ commentary: 'Creation itself is co-born with sacrifice: beings are not first mad
   gods and humans foster one another, then consumption without return is structural theft against the conditions of flourishing.
   Modern readers may demythologize “gods” into ecological and social powers, yet the moral hinge remains: enjoyment presupposes
   a circuit you did not invent. The wish-yielding cow is not infinite private supply; it is the generative logic of mutual
-  fostering. To refuse the return offering is to live as a parasite on a gift economy while calling the parasitism success.
-
-
-  Key Terms:
-
-
-  **yajña (यज्ञ)** — offering that co-creates and sustains beings -> here the primordial companion of creation itself -> not
-  optional piety added onto life; life’s generative grammar
-
-
-  **bhāvayantu / bhāvayata (भावय)** — causative of bhū, “cause to be/foster” -> mutual bringing-into-flourishing between gods
-  and humans -> “worship” is too cultic; the verb is reciprocal vitalization
-
-
-  **stena (स्तेन)** — thief -> one who consumes circulating gifts as private property -> moral insult that reveals an ontological
-  crime against reciprocity
-
-
-  Cross-Tradition Resonances:
-
-
-  **Hesiod, Works and Days (on justice and gift):** Structural homology in tying human flourishing to right exchange with
-  divine and social orders.
-
-  *Divergence:* Hesiod’s justice is framed through Zeus and agrarian measure; the Gītā makes sacrificial reciprocity the explicit
-  condition of non-theft.
-
-
-  **Robin Wall Kimmerer (Braiding Sweetgrass, gift economy):** Structural homology in receiving as obligation to return, not
-  license to stockpile.
-
-  *Divergence:* Kimmerer’s frame is ecological-animist reciprocity in contemporary idiom; the Gītā embeds reciprocity in Prajāpati’s
-  sacrificial cosmogony and deity-human circuit.'
+  fostering. To refuse the return offering is to live as a parasite on a gift economy while calling the parasitism success.'
 insight: 'Creation itself is co-born with sacrifice: beings are not first made and later invited into ethics; their generative
   condition is already reciprocal offering.'
 practice: Identify one enjoyment you received today without earning it alone (food, help, infrastructure); return a concrete
@@ -158,39 +126,36 @@ pratibha_layers:
     of flourishing. Modern readers may demythologize “gods” into ecological and social powers, yet the moral hinge remains:
     enjoyment presupposes a circuit you did not invent. The wish-yielding cow is not infinite private supply; it is the generative
     logic of mutual fostering. To refuse the return offering is to live as a parasite on a gift economy while calling the
-    parasitism success.
-
-
-    Key Terms:
-
-
-    **yajña (यज्ञ)** — offering that co-creates and sustains beings -> here the primordial companion of creation itself ->
-    not optional piety added onto life; life’s generative grammar
-
-
-    **bhāvayantu / bhāvayata (भावय)** — causative of bhū, “cause to be/foster” -> mutual bringing-into-flourishing between
-    gods and humans -> “worship” is too cultic; the verb is reciprocal vitalization
-
-
-    **stena (स्तेन)** — thief -> one who consumes circulating gifts as private property -> moral insult that reveals an ontological
-    crime against reciprocity
-
-
-    Cross-Tradition Resonances:
-
-
-    **Hesiod, Works and Days (on justice and gift):** Structural homology in tying human flourishing to right exchange with
-    divine and social orders.
-
-    *Divergence:* Hesiod’s justice is framed through Zeus and agrarian measure; the Gītā makes sacrificial reciprocity the
-    explicit condition of non-theft.
-
-
-    **Robin Wall Kimmerer (Braiding Sweetgrass, gift economy):** Structural homology in receiving as obligation to return,
-    not license to stockpile.
-
-    *Divergence:* Kimmerer’s frame is ecological-animist reciprocity in contemporary idiom; the Gītā embeds reciprocity in
-    Prajāpati’s sacrificial cosmogony and deity-human circuit.'
+    parasitism success.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: yajña (यज्ञ)
+    definition: offering that co-creates and sustains beings -> here the primordial companion of creation itself -> not optional
+      piety added onto life; life’s generative grammar
+    lemma_id: yajna
+    sense_id: yajna.gita
+  - term: bhāvayantu / bhāvayata (भावय)
+    definition: causative of bhū, “cause to be/foster” -> mutual bringing-into-flourishing between gods and humans -> “worship”
+      is too cultic; the verb is reciprocal vitalization
+  - term: stena (स्तेन)
+    definition: thief -> one who consumes circulating gifts as private property -> moral insult that reveals an ontological
+      crime against reciprocity
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Hesiod, Works and Days (on justice and gift)
+    resonance: Structural homology in tying human flourishing to right exchange with divine and social orders.
+    passage_id: ''
+    divergence: Hesiod’s justice is framed through Zeus and agrarian measure; the Gītā makes sacrificial reciprocity the explicit
+      condition of non-theft.
+  - citation: Robin Wall Kimmerer (Braiding Sweetgrass, gift economy)
+    resonance: Structural homology in receiving as obligation to return, not license to stockpile.
+    passage_id: ''
+    divergence: Kimmerer’s frame is ecological-animist reciprocity in contemporary idiom; the Gītā embeds reciprocity in Prajāpati’s
+      sacrificial cosmogony and deity-human circuit.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Identify one enjoyment you received today without earning it alone (food, help, infrastructure); return a concrete

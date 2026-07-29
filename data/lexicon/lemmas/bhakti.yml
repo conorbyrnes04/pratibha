@@ -1,0 +1,57 @@
+id: bhakti
+maturity: strong_draft
+scripts:
+  iast: bhakti
+  devanagari: भक्ति
+aliases:
+- bhakti
+- devotion
+- loving devotion
+- bhaktimarga
+- bhakti-yoga
+- ananya bhakti
+- ananya-bhakti
+- eka-bhakti
+- ekabhakti
+- parā bhakti
+- para bhakti
+- parābhakti
+- avyabhicāriṇī bhakti
+- avyabhicarini bhakti
+- śraddhā / bhakti cluster
+- sraddha / bhakti cluster
+- small bhakti gift
+traditions:
+- hinduism
+- bhagavad_gita
+- bhakti
+related:
+- lemma_id: sraddha
+  relation: related_as
+  note: Śraddhā is trust-orientation; bhakti is participatory love-attachment to the divine.
+- lemma_id: yoga
+  relation: related_as
+  note: In the Gītā, bhakti is one yoga among karmayoga and jñānayoga, not a soft alternative to them.
+- lemma_id: dharma
+  relation: related_as
+senses:
+- id: bhakti.gita
+  label: Gītā bhakti
+  short: relational non-dual practice — offering mind, act, and fruit to Kṛṣṇa
+  etymology: √bhaj ‘share, participate, resort to’
+  traps:
+  - sentimental piety without discernment
+  - emotionalism opposed to knowledge
+  - mere temple cult as the whole of yoga
+  traditions:
+  - bhagavad_gita
+  - hinduism
+  exemplars:
+  - bhagavad_gita.bg_09_26
+  - bhagavad_gita.bg_09_34
+  - bhagavad_gita.bg_12_13
+  - bhagavad_gita.bg_18_65
+  body: 'In the Gītā, bhakti is not anti-intellectual escape. It is the yoga of taking refuge, offering
+    action, and holding the divine as the field of meaning while knowledge and duty remain active.
+
+    '

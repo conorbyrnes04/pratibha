@@ -52,33 +52,7 @@ commentary: 'Plural worship is neither simply condemned nor simply endorsed. Des
   The Lord''s underwriting of others'' faith is a severe mercy: fruits may come, faith may stabilize, and still knowledge
   remain stolen by kāma. Success is not proof of ultimacy. This frees interreligious honesty from both hatred and flattery.
   You can admit efficacy without conceding equal finality, and you can critique desire-shaped deity-choice without denying
-  that grace may be operating inside it. The personal question is sharper: which desire is currently appointing my god?
-
-
-  Key Terms:
-
-
-  **śraddhā (श्रद्धा)** — faith/trust/placing the heart -> here faith that Kṛṣṇa Himself makes unshaking toward a chosen form
-  -> "belief" as opinion misses that faith is divinely stabilized.
-
-
-  **tanu (तनु)** — body/form -> the deity-form chosen for worship -> "idol" as pejorative misses the text''s neutral technical
-  use inside a hierarchy of ends.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Aquinas on grace perfecting nature / God as cause of secondary causes:** Both can affirm finite goods and finite cults
-  without surrendering one first cause.
-
-  *Divergence:* Thomas works in Christian creation metaphysics; Gītā frames desire, *prakṛti*, and deity-forms inside *bhakti*
-  typology.
-
-
-  **Confucian ritual plurality under Heaven (*tian*):** Both allow multiple rites under a higher order.
-
-  *Divergence:* Heaven is not a personal granter of *śraddhā* in the Gītā''s first-person sense.'
+  that grace may be operating inside it. The personal question is sharper: which desire is currently appointing my god?'
 insight: Plural worship is neither simply condemned nor simply endorsed.
 practice: Notice one desire that currently shapes what you "pray to" (status, security, approval). Ask whether knowledge is
   being stolen by that desire; keep the desire visible rather than baptizing it as pure devotion.
@@ -154,33 +128,29 @@ pratibha_layers:
     The Lord''s underwriting of others'' faith is a severe mercy: fruits may come, faith may stabilize, and still knowledge
     remain stolen by kāma. Success is not proof of ultimacy. This frees interreligious honesty from both hatred and flattery.
     You can admit efficacy without conceding equal finality, and you can critique desire-shaped deity-choice without denying
-    that grace may be operating inside it. The personal question is sharper: which desire is currently appointing my god?
-
-
-    Key Terms:
-
-
-    **śraddhā (श्रद्धा)** — faith/trust/placing the heart -> here faith that Kṛṣṇa Himself makes unshaking toward a chosen
-    form -> "belief" as opinion misses that faith is divinely stabilized.
-
-
-    **tanu (तनु)** — body/form -> the deity-form chosen for worship -> "idol" as pejorative misses the text''s neutral technical
-    use inside a hierarchy of ends.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Aquinas on grace perfecting nature / God as cause of secondary causes:** Both can affirm finite goods and finite cults
-    without surrendering one first cause.
-
-    *Divergence:* Thomas works in Christian creation metaphysics; Gītā frames desire, *prakṛti*, and deity-forms inside *bhakti*
-    typology.
-
-
-    **Confucian ritual plurality under Heaven (*tian*):** Both allow multiple rites under a higher order.
-
-    *Divergence:* Heaven is not a personal granter of *śraddhā* in the Gītā''s first-person sense.'
+    that grace may be operating inside it. The personal question is sharper: which desire is currently appointing my god?'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śraddhā (श्रद्धा)
+    definition: faith/trust/placing the heart -> here faith that Kṛṣṇa Himself makes unshaking toward a chosen form -> "belief"
+      as opinion misses that faith is divinely stabilized
+    lemma_id: sraddha
+    sense_id: sraddha.gita
+  - term: tanu (तनु)
+    definition: body/form -> the deity-form chosen for worship -> "idol" as pejorative misses the text's neutral technical
+      use inside a hierarchy of ends
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Aquinas on grace perfecting nature / God as cause of secondary causes
+    resonance: Both can affirm finite goods and finite cults without surrendering one first cause.
+    passage_id: ''
+    divergence: Thomas works in Christian creation metaphysics; Gītā frames desire, *prakṛti*, and deity-forms inside *bhakti*
+      typology. **Confucian ritual plurality under Heaven (*tian*):** Both allow multiple rites under a higher order. *Divergence:*
+      Heaven is not a personal granter of *śraddhā* in the Gītā's first-person sense.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Notice one desire that currently shapes what you "pray to" (status, security, approval). Ask whether knowledge is

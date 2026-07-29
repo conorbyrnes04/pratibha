@@ -24,42 +24,7 @@ commentary: 'Knowledge continues to look like a way of loving and dwelling. Asak
   split between cold metaphysics and warm piety. Existentially, the verse asks whether your “understanding” survives family
   pressure and social noise, and whether your devotion has a second altar hidden in achievement or approval. Solitude here
   is not misanthropy; it is protection of ananya-yoga from the market of identities that crowds sell and buy. Read as existential
-  demand, the verse asks for a changed stance in the next difficult hour—not for ornamental agreement with a doctrine.
-
-
-  Key Terms:
-
-
-  **asakti (असक्ति)** — non-attachment -> freedom from adhesive clinging -> “detachment” can sound cold or dissociative.
-
-  **anabhiṣvaṅga (अनभिष्वङ्ग)** — non-adhesion / non-entanglement -> specifically toward household bonds -> “not caring” misses
-  lucid love without glue.
-
-  **samacittatva (समचित्तत्व)** — same-mindedness -> evenness amid liked/disliked arrivals -> “indifference” misreads as apathy.
-
-  **ananya-yoga (अनन्ययोग)** — yoga with no other -> exclusive yogic orientation to Krishna -> “monotheistic loyalty” alone
-  misses yogic concentration.
-
-  **avyabhicāriṇī bhakti (अव्यभिचारिणी भक्ति)** — unswerving devotion -> fidelity of love that does not stray -> “faithfulness”
-  can sound merely moralistic.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Gītā 12.13–20]:** The devotee’s traits echo this knowledge-list, binding bhakti and jñāna.
-
-  *Divergence:* Chapter 12 ranks paths; chapter 13 absorbs devotion into the very definition of knowledge.
-
-  **[John of the Cross, Ascent of Mount Carmel I]:** Detachment from creatures for God’s sake parallels asakti and ananya
-  devotion.
-
-  *Divergence:* John emphasizes dark nights of sense and spirit; Krishna keeps communal duty alive inside non-clinging.
-
-  **[Milarepa’s songs of solitude]:** Love of isolated places as support for realization resonates with vivikta-deśa.
-
-  *Divergence:* Milarepa’s solitude serves mahāmudrā recognition; here solitude serves unswerving bhakti-knowledge of the
-  field’s Lord.'
+  demand, the verse asks for a changed stance in the next difficult hour—not for ornamental agreement with a doctrine.'
 insight: Knowledge continues to look like a way of loving and dwelling.
 practice: Spend twenty minutes in a quiet place with no phone. Each time a household worry arises, note “clinging,” return
   to the breath, and silently offer the worry to the One without a second object.
@@ -114,43 +79,42 @@ pratibha_layers:
     survives family pressure and social noise, and whether your devotion has a second altar hidden in achievement or approval.
     Solitude here is not misanthropy; it is protection of ananya-yoga from the market of identities that crowds sell and buy.
     Read as existential demand, the verse asks for a changed stance in the next difficult hour—not for ornamental agreement
-    with a doctrine.
-
-
-    Key Terms:
-
-
-    **asakti (असक्ति)** — non-attachment -> freedom from adhesive clinging -> “detachment” can sound cold or dissociative.
-
-    **anabhiṣvaṅga (अनभिष्वङ्ग)** — non-adhesion / non-entanglement -> specifically toward household bonds -> “not caring”
-    misses lucid love without glue.
-
-    **samacittatva (समचित्तत्व)** — same-mindedness -> evenness amid liked/disliked arrivals -> “indifference” misreads as
-    apathy.
-
-    **ananya-yoga (अनन्ययोग)** — yoga with no other -> exclusive yogic orientation to Krishna -> “monotheistic loyalty” alone
-    misses yogic concentration.
-
-    **avyabhicāriṇī bhakti (अव्यभिचारिणी भक्ति)** — unswerving devotion -> fidelity of love that does not stray -> “faithfulness”
-    can sound merely moralistic.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Gītā 12.13–20]:** The devotee’s traits echo this knowledge-list, binding bhakti and jñāna.
-
-    *Divergence:* Chapter 12 ranks paths; chapter 13 absorbs devotion into the very definition of knowledge.
-
-    **[John of the Cross, Ascent of Mount Carmel I]:** Detachment from creatures for God’s sake parallels asakti and ananya
-    devotion.
-
-    *Divergence:* John emphasizes dark nights of sense and spirit; Krishna keeps communal duty alive inside non-clinging.
-
-    **[Milarepa’s songs of solitude]:** Love of isolated places as support for realization resonates with vivikta-deśa.
-
-    *Divergence:* Milarepa’s solitude serves mahāmudrā recognition; here solitude serves unswerving bhakti-knowledge of the
-    field’s Lord.'
+    with a doctrine.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: asakti (असक्ति)
+    definition: non-attachment -> freedom from adhesive clinging -> “detachment” can sound cold or dissociative
+  - term: anabhiṣvaṅga (अनभिष्वङ्ग)
+    definition: non-adhesion / non-entanglement -> specifically toward household bonds -> “not caring” misses lucid love without
+      glue
+  - term: samacittatva (समचित्तत्व)
+    definition: same-mindedness -> evenness amid liked/disliked arrivals -> “indifference” misreads as apathy
+  - term: ananya-yoga (अनन्ययोग)
+    definition: yoga with no other -> exclusive yogic orientation to Krishna -> “monotheistic loyalty” alone misses yogic
+      concentration
+  - term: avyabhicāriṇī bhakti (अव्यभिचारिणी भक्ति)
+    definition: unswerving devotion -> fidelity of love that does not stray -> “faithfulness” can sound merely moralistic
+    lemma_id: bhakti
+    sense_id: bhakti.gita
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Gītā 12.13–20]'
+    resonance: The devotee’s traits echo this knowledge-list, binding bhakti and jñāna.
+    passage_id: ''
+    divergence: Chapter 12 ranks paths; chapter 13 absorbs devotion into the very definition of knowledge.
+  - citation: '[John of the Cross, Ascent of Mount Carmel I]'
+    resonance: Detachment from creatures for God’s sake parallels asakti and ananya devotion.
+    passage_id: ''
+    divergence: John emphasizes dark nights of sense and spirit; Krishna keeps communal duty alive inside non-clinging.
+  - citation: '[Milarepa’s songs of solitude]'
+    resonance: Love of isolated places as support for realization resonates with vivikta-deśa.
+    passage_id: ''
+    divergence: Milarepa’s solitude serves mahāmudrā recognition; here solitude serves unswerving bhakti-knowledge of the
+      field’s Lord.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Spend twenty minutes in a quiet place with no phone. Each time a household worry arises, note “clinging,” return to

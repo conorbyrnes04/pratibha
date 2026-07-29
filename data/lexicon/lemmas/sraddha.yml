@@ -1,0 +1,42 @@
+id: sraddha
+maturity: strong_draft
+scripts:
+  iast: śraddhā
+  devanagari: श्रद्धा
+aliases:
+- sraddha
+- shraddha
+- śraddhā
+- faith
+- trust
+traditions:
+- hinduism
+- bhagavad_gita
+- upanishads
+related:
+- lemma_id: bhakti
+  relation: related_as
+- lemma_id: jnana
+  relation: related_as
+  note: Śraddhā is the trust that lets knowledge be received and practiced, not a substitute for knowing.
+senses:
+- id: sraddha.gita
+  label: Orienting trust
+  short: the disposition that opens a path — trust as orientation, not mere belief-assent
+  etymology: often linked to śrat + √dhā ‘place the heart/trust’
+  traps:
+  - blind belief
+  - creed subscription
+  - soft feeling without praxis
+  traditions:
+  - bhagavad_gita
+  - upanishads
+  exemplars:
+  - bhagavad_gita.bg_04_39_41
+  - bhagavad_gita.bg_06_45_47
+  - bhagavad_gita.bg_07_20_22
+  - bhagavad_gita.bg_17_03
+  body: 'In the Gītā, śraddhā shapes what one becomes: as is one’s trust, so is one’s formation. It is
+    existential orientation toward a refuge and a practice, not a checklist of doctrines.
+
+    '

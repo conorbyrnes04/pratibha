@@ -25,33 +25,7 @@ commentary: 'Friendship with oneself is conditional on jita — conquest of self
   friendship means mastery transforms the inner relation: conquered self becomes bandhu; unmastered self operates like an
   enemy. Interior civil war is then not mysterious fate but the predictable climate of non-conquest. Yoga’s reflexive martial
   ethics — self conquering self — aims at alliance, not at self-hatred. If impulses ambush aims, the nearest enemy is already
-  in the house. Conquer once today and feel the alliance begin.
-
-
-  Key Terms:
-
-
-  **jitātman (implied जित)** — conquered self -> condition for self-friendship -> mastery as relational transformation
-
-
-  **anātman (अनात्मन्)** — here: one lacking self-possession/mastery -> not metaphysical non-self doctrine in this verse’s
-  use -> practical unmastered person
-
-
-  **śatruvat (शत्रुवत्)** — like an enemy -> simile for unmastered self’s operation -> makes interior conflict vivid
-
-
-  Cross-Tradition Resonances:
-
-
-  **Plato’s Republic (city-soul justice as inner rule):** Structural homology in friendship/peace requiring right rule within.
-
-  *Divergence:* Plato’s parts are logistikon/thumos/epithumia; the Gītā compresses to self-conquest by self for yoga.
-
-
-  **Freud’s structural conflict (popularly):** Structural homology in self opposed to itself.
-
-  *Divergence:* Psychoanalysis theorizes unconscious agencies; Krishna commands conquest as yogic ethical task.'
+  in the house. Conquer once today and feel the alliance begin.'
 insight: Friendship with oneself is conditional on jita — conquest of self by self.
 practice: Choose one recurrent self-enemy behavior; conquer it once today by a pre-decided counter-act, and note the shift
   from enmity toward friendship.
@@ -96,33 +70,32 @@ pratibha_layers:
     friendship means mastery transforms the inner relation: conquered self becomes bandhu; unmastered self operates like an
     enemy. Interior civil war is then not mysterious fate but the predictable climate of non-conquest. Yoga’s reflexive martial
     ethics — self conquering self — aims at alliance, not at self-hatred. If impulses ambush aims, the nearest enemy is already
-    in the house. Conquer once today and feel the alliance begin.
-
-
-    Key Terms:
-
-
-    **jitātman (implied जित)** — conquered self -> condition for self-friendship -> mastery as relational transformation
-
-
-    **anātman (अनात्मन्)** — here: one lacking self-possession/mastery -> not metaphysical non-self doctrine in this verse’s
-    use -> practical unmastered person
-
-
-    **śatruvat (शत्रुवत्)** — like an enemy -> simile for unmastered self’s operation -> makes interior conflict vivid
-
-
-    Cross-Tradition Resonances:
-
-
-    **Plato’s Republic (city-soul justice as inner rule):** Structural homology in friendship/peace requiring right rule within.
-
-    *Divergence:* Plato’s parts are logistikon/thumos/epithumia; the Gītā compresses to self-conquest by self for yoga.
-
-
-    **Freud’s structural conflict (popularly):** Structural homology in self opposed to itself.
-
-    *Divergence:* Psychoanalysis theorizes unconscious agencies; Krishna commands conquest as yogic ethical task.'
+    in the house. Conquer once today and feel the alliance begin.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: jitātman (implied जित)
+    definition: conquered self -> condition for self-friendship -> mastery as relational transformation
+  - term: anātman (अनात्मन्)
+    definition: 'here: one lacking self-possession/mastery -> not metaphysical non-self doctrine in this verse’s use -> practical
+      unmastered person'
+    lemma_id: anatman
+    sense_id: anatman.buddhist
+  - term: śatruvat (शत्रुवत्)
+    definition: like an enemy -> simile for unmastered self’s operation -> makes interior conflict vivid
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Plato’s Republic (city-soul justice as inner rule)
+    resonance: Structural homology in friendship/peace requiring right rule within.
+    passage_id: ''
+    divergence: Plato’s parts are logistikon/thumos/epithumia; the Gītā compresses to self-conquest by self for yoga.
+  - citation: Freud’s structural conflict (popularly)
+    resonance: Structural homology in self opposed to itself.
+    passage_id: ''
+    divergence: Psychoanalysis theorizes unconscious agencies; Krishna commands conquest as yogic ethical task.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one recurrent self-enemy behavior; conquer it once today by a pre-decided counter-act, and note the shift from

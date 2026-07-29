@@ -40,36 +40,7 @@ commentary: 'Arjuna''s question is comparative without being cynical: personal d
   the same Me — at greater cost for the embodied. Ranking is pedagogical mercy: start where joining is most possible. The
   line-level force of the teaching is practical, not ornamental: what it claims about reality is meant to reshape how you
   attend, choose, and depart. If the claim does not alter rehearsal in ordinary time, it will not hold when time thins. Existential
-  uptake is therefore part of fidelity to the argument, not an optional aftertaste.
-
-
-  Key Terms:
-
-
-  **yuktatama (युक्ततम)** — most yoked/joined -> Kṛṣṇa''s evaluation of personal devotees with supreme faith -> "best yogi"
-  as status contest misses joining-intensity.
-
-
-  **akṣara avyakta (अक्षरमव्यक्त)** — imperishable unmanifest -> the alternative worship-object in Arjuna''s question -> "formless
-  God" is approximate but loses technical pair with personal worship.
-
-
-  **śraddhā (श्रद्धा)** — faith/trust -> supreme faith qualifying the most joined -> "belief" as opinion is too thin.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Cloud of Unknowing vs. affective devotion debates:** Both traditions argue relative excellence of apophatic vs personal
-  love paths.
-
-  *Divergence:* Medieval Christian framing differs; Gītā ranks inside one Lord''s first-person pedagogy.
-
-
-  **Plotinus'' ascent vs theurgic devotion:** Structural tension between formless One and personal cult.
-
-  *Divergence:* Plotinus subordinates cult; Gītā elevates personal joining as yuktatama while still validating unmanifest
-  worship.'
+  uptake is therefore part of fidelity to the argument, not an optional aftertaste.'
 insight: 'Arjuna''s question is comparative without being cynical: personal devotion versus unmanifest Absolute — who knows
   yoga best?'
 practice: 'Ask honestly which path you actually practice when tired: personal address, or abstract unmanifest. Practice that
@@ -130,36 +101,34 @@ pratibha_layers:
     unmanifest path reaches the same Me — at greater cost for the embodied. Ranking is pedagogical mercy: start where joining
     is most possible. The line-level force of the teaching is practical, not ornamental: what it claims about reality is meant
     to reshape how you attend, choose, and depart. If the claim does not alter rehearsal in ordinary time, it will not hold
-    when time thins. Existential uptake is therefore part of fidelity to the argument, not an optional aftertaste.
-
-
-    Key Terms:
-
-
-    **yuktatama (युक्ततम)** — most yoked/joined -> Kṛṣṇa''s evaluation of personal devotees with supreme faith -> "best yogi"
-    as status contest misses joining-intensity.
-
-
-    **akṣara avyakta (अक्षरमव्यक्त)** — imperishable unmanifest -> the alternative worship-object in Arjuna''s question ->
-    "formless God" is approximate but loses technical pair with personal worship.
-
-
-    **śraddhā (श्रद्धा)** — faith/trust -> supreme faith qualifying the most joined -> "belief" as opinion is too thin.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Cloud of Unknowing vs. affective devotion debates:** Both traditions argue relative excellence of apophatic vs personal
-    love paths.
-
-    *Divergence:* Medieval Christian framing differs; Gītā ranks inside one Lord''s first-person pedagogy.
-
-
-    **Plotinus'' ascent vs theurgic devotion:** Structural tension between formless One and personal cult.
-
-    *Divergence:* Plotinus subordinates cult; Gītā elevates personal joining as yuktatama while still validating unmanifest
-    worship.'
+    when time thins. Existential uptake is therefore part of fidelity to the argument, not an optional aftertaste.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: yuktatama (युक्ततम)
+    definition: most yoked/joined -> Kṛṣṇa's evaluation of personal devotees with supreme faith -> "best yogi" as status contest
+      misses joining-intensity
+  - term: akṣara avyakta (अक्षरमव्यक्त)
+    definition: imperishable unmanifest -> the alternative worship-object in Arjuna's question -> "formless God" is approximate
+      but loses technical pair with personal worship
+  - term: śraddhā (श्रद्धा)
+    definition: faith/trust -> supreme faith qualifying the most joined -> "belief" as opinion is too thin
+    lemma_id: sraddha
+    sense_id: sraddha.gita
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Cloud of Unknowing vs. affective devotion debates
+    resonance: Both traditions argue relative excellence of apophatic vs personal love paths.
+    passage_id: ''
+    divergence: Medieval Christian framing differs; Gītā ranks inside one Lord's first-person pedagogy.
+  - citation: Plotinus' ascent vs theurgic devotion
+    resonance: Structural tension between formless One and personal cult.
+    passage_id: ''
+    divergence: Plotinus subordinates cult; Gītā elevates personal joining as yuktatama while still validating unmanifest
+      worship.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Ask honestly which path you actually practice when tired: personal address, or abstract unmanifest. Practice that

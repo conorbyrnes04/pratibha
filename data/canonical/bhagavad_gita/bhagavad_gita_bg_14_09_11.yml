@@ -30,32 +30,7 @@ commentary: 'Guṇas are dynamic, not fixed personality tattoos. Each prevails b
   appropriate; clutching the light as identity returns you to sattvic bondage named in the previous verses. Rotation also
   means compassion: the person lost in tamas today may stand in sattva tomorrow; contempt freezes a moving climate into a
   false essence. This is not ornamental theology; it is a demand that lived climate, ethical stance, and metaphysical claim
-  stay braided in one practice of seeing.
-
-
-  Key Terms:
-
-
-  **sañjayati (सञ्जयति)** — causes to cling / attaches -> guṇa as binder to a domain -> ''leads to'' is too mild.
-
-  **abhibhūya (अभिभूय)** — having overpowered -> rotational dominance among guṇas -> ''balance'' wrongly implies stable equilibrium.
-
-  **sarva-dvāreṣu (सर्वद्वारेषु)** — in all gates -> sense-doors of the body as sites of light -> ''everywhere'' misses embodied
-  gates.
-
-  **prakāśa (प्रकाश)** — light / illumination -> sign of increased sattva -> ''happiness'' conflates mood with luminosity.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Abhidharma / vipassanā mind-state diagnosis]:** Reading present qualities through signs parallels guṇa diagnostics.
-
-  *Divergence:* Buddhist reading aims at impermanence and non-self; here signs point to guṇa dominance and eventual transcendence.
-
-  **[Galenic temperaments]:** Humor climates shaping behavior are a loose Western cousin.
-
-  *Divergence:* Humors are medical; guṇas are soteriological binders tied to rebirth and liberation.'
+  stay braided in one practice of seeing.'
 insight: Guṇas are dynamic, not fixed personality tattoos.
 practice: Three times today, scan the 'gates' of the body. If light and knowing are present, note 'sattva rising' without
   clinging to it.
@@ -109,33 +84,33 @@ pratibha_layers:
     appropriate; clutching the light as identity returns you to sattvic bondage named in the previous verses. Rotation also
     means compassion: the person lost in tamas today may stand in sattva tomorrow; contempt freezes a moving climate into
     a false essence. This is not ornamental theology; it is a demand that lived climate, ethical stance, and metaphysical
-    claim stay braided in one practice of seeing.
-
-
-    Key Terms:
-
-
-    **sañjayati (सञ्जयति)** — causes to cling / attaches -> guṇa as binder to a domain -> ''leads to'' is too mild.
-
-    **abhibhūya (अभिभूय)** — having overpowered -> rotational dominance among guṇas -> ''balance'' wrongly implies stable
-    equilibrium.
-
-    **sarva-dvāreṣu (सर्वद्वारेषु)** — in all gates -> sense-doors of the body as sites of light -> ''everywhere'' misses
-    embodied gates.
-
-    **prakāśa (प्रकाश)** — light / illumination -> sign of increased sattva -> ''happiness'' conflates mood with luminosity.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Abhidharma / vipassanā mind-state diagnosis]:** Reading present qualities through signs parallels guṇa diagnostics.
-
-    *Divergence:* Buddhist reading aims at impermanence and non-self; here signs point to guṇa dominance and eventual transcendence.
-
-    **[Galenic temperaments]:** Humor climates shaping behavior are a loose Western cousin.
-
-    *Divergence:* Humors are medical; guṇas are soteriological binders tied to rebirth and liberation.'
+    claim stay braided in one practice of seeing.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: sañjayati (सञ्जयति)
+    definition: causes to cling / attaches -> guṇa as binder to a domain -> 'leads to' is too mild
+  - term: abhibhūya (अभिभूय)
+    definition: having overpowered -> rotational dominance among guṇas -> 'balance' wrongly implies stable equilibrium
+  - term: sarva-dvāreṣu (सर्वद्वारेषु)
+    definition: in all gates -> sense-doors of the body as sites of light -> 'everywhere' misses embodied gates
+  - term: prakāśa (प्रकाश)
+    definition: light / illumination -> sign of increased sattva -> 'happiness' conflates mood with luminosity
+    lemma_id: prakasa
+    sense_id: prakasa.shaiva
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Abhidharma / vipassanā mind-state diagnosis]'
+    resonance: Reading present qualities through signs parallels guṇa diagnostics.
+    passage_id: ''
+    divergence: Buddhist reading aims at impermanence and non-self; here signs point to guṇa dominance and eventual transcendence.
+  - citation: '[Galenic temperaments]'
+    resonance: Humor climates shaping behavior are a loose Western cousin.
+    passage_id: ''
+    divergence: Humors are medical; guṇas are soteriological binders tied to rebirth and liberation.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Three times today, scan the 'gates' of the body. If light and knowing are present, note 'sattva rising' without clinging

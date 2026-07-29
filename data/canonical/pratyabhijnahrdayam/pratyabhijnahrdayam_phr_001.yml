@@ -94,6 +94,7 @@ pratibha_layers:
   items:
   - term: citi
     definition: universal Consciousness, the absolute power of awareness; distinguished from *cetanā* (individual knowing)
+    lemma_id: cit
   - term: svatantrā
     definition: absolutely free, self-determining, sovereign; from *sva* (own) + *tantra* (loom, system) — that which operates
       entirely on its own terms
@@ -102,6 +103,8 @@ pratibha_layers:
   - term: siddhi
     definition: 'here: the triple process of manifestation (*sṛṣṭi*), maintenance (*sthiti*), and dissolution (*saṁhāra*);
       not "supernormal power"'
+    lemma_id: siddhi
+    sense_id: siddhi.shaiva
   - term: hetu
     definition: cause, ground, reason
 appendixes: []

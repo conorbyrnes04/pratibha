@@ -8,15 +8,22 @@ aliases:
 - kamma
 - action
 - deed
+- karmayoga
+- karma-yoga
 traditions:
 - hinduism
 - buddhism
 - upanishads
 - yoga
+- bhagavad_gita
 related:
 - lemma_id: samsara
   relation: related_as
 - lemma_id: dharma
+  relation: related_as
+- lemma_id: yajna
+  relation: related_as
+- lemma_id: yoga
   relation: related_as
 senses:
 - id: karma.indic
@@ -36,5 +43,27 @@ senses:
   - bhagavad_gita.bg_03_09
   - patañjali_yoga_sūtras.ys_1_24
   - isavasya_upanishad.isa_002
-  body: |
-    Karma is not primarily superstition about accidents; it is a theory of how intention sediments character and world. Schools disagree on mechanism and on whether knowledge burns seed-karma.
+  body: 'Karma is not primarily superstition about accidents; it is a theory of how intention sediments
+    character and world. Schools disagree on mechanism and on whether knowledge burns seed-karma.
+
+    '
+- id: karma.yoga
+  label: Karma-yoga (Gītā)
+  short: full action without fruit-ownership — agency without appropriation
+  etymology: karma + yoga ‘yoking of action’
+  traps:
+  - workaholism rebranded as spirituality
+  - indifference to outcomes as apathy
+  - ‘just do your job’ without inner renunciation
+  traditions:
+  - bhagavad_gita
+  - hinduism
+  exemplars:
+  - bhagavad_gita.bg_02_47
+  - bhagavad_gita.bg_02_48
+  - bhagavad_gita.bg_03_19
+  - bhagavad_gita.bg_05_10
+  body: 'Karma-yoga keeps the act and drops the claim. Adhikāra is to action; phala is not a private entitlement.
+    Equanimity (samatva) is the yoga, not numbness.
+
+    '

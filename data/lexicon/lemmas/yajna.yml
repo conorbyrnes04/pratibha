@@ -1,0 +1,43 @@
+id: yajna
+maturity: strong_draft
+scripts:
+  iast: yajña
+  devanagari: यज्ञ
+aliases:
+- yajna
+- yajña
+- sacrifice
+- offering
+- ritual
+traditions:
+- hinduism
+- bhagavad_gita
+- vedic
+related:
+- lemma_id: karma
+  relation: related_as
+  note: Yajña is karma reoriented as offering rather than appropriation.
+- lemma_id: dharma
+  relation: related_as
+senses:
+- id: yajna.gita
+  label: Offering-action
+  short: action turned into offering — the ecology that frees work from possessive fruit
+  etymology: √yaj ‘worship, offer, sacrifice’
+  traps:
+  - only fire-ritual literalism
+  - self-harm ‘sacrifice’
+  - transactional bribe of the gods
+  traditions:
+  - bhagavad_gita
+  - vedic
+  - hinduism
+  exemplars:
+  - bhagavad_gita.bg_03_09
+  - bhagavad_gita.bg_03_10_12
+  - bhagavad_gita.bg_04_24
+  - bhagavad_gita.bg_04_25_27
+  body: 'The Gītā universalizes yajña: not only the altar fire, but any act released from ‘mine’ into
+    a relational cosmos. Brahman-offered-into-brahman (4.24) is the metaphysical peak of that move.
+
+    '

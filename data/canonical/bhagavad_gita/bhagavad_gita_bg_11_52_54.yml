@@ -57,29 +57,7 @@ commentary: 'Highest vision''s general door is devotion not demanding Arjuna''s 
   ordinary time, the claim will not hold when pressure rises. The teaching''s force is practical: what it claims about reality
   must reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim will
   not hold when pressure rises. Live one concrete implication of the claim before the day ends, so the argument becomes conduct
-  rather than ornament.
-
-
-  Key Terms:
-
-
-  **ananya bhakti (अनन्य भक्ति)** — passage key term -> Highest vision''s general door is devotion not demanding Arjuna''s
-  optics. -> default gloss flattens the vision''s force
-
-  **praveṣṭum (प्रवेष्टुम्)** — paired key term -> Form hard to see even for gods; not by Veda austerity gift sacrifice; by
-  undivided devotion known seen entered. -> soft translation misses structural role
-
-
-  Cross-Tradition Resonances:
-
-
-  **[John 14]:** Structural kinship around exclusive way.
-
-  *Divergence:* Frame diverges from Gita 11''s battlefield visvarupa pedagogy.
-
-  **[Bhagavata bhakti]:** Shared pressure of exclusive way.
-
-  *Divergence:* Different metaphysics; Gita binds the moment to Krishna''s first-person disclosure.'
+  rather than ornament.'
 insight: Highest vision's general door is devotion not demanding Arjuna's optics.
 practice: One hour undivided devotion; no rival spiritual entertainment.
 upaya: ''
@@ -163,29 +141,31 @@ pratibha_layers:
     in ordinary time, the claim will not hold when pressure rises. The teaching''s force is practical: what it claims about
     reality must reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the
     claim will not hold when pressure rises. Live one concrete implication of the claim before the day ends, so the argument
-    becomes conduct rather than ornament.
-
-
-    Key Terms:
-
-
-    **ananya bhakti (अनन्य भक्ति)** — passage key term -> Highest vision''s general door is devotion not demanding Arjuna''s
-    optics. -> default gloss flattens the vision''s force
-
-    **praveṣṭum (प्रवेष्टुम्)** — paired key term -> Form hard to see even for gods; not by Veda austerity gift sacrifice;
-    by undivided devotion known seen entered. -> soft translation misses structural role
-
-
-    Cross-Tradition Resonances:
-
-
-    **[John 14]:** Structural kinship around exclusive way.
-
-    *Divergence:* Frame diverges from Gita 11''s battlefield visvarupa pedagogy.
-
-    **[Bhagavata bhakti]:** Shared pressure of exclusive way.
-
-    *Divergence:* Different metaphysics; Gita binds the moment to Krishna''s first-person disclosure.'
+    becomes conduct rather than ornament.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ananya bhakti (अनन्य भक्ति)
+    definition: passage key term -> Highest vision's general door is devotion not demanding Arjuna's optics. -> default gloss
+      flattens the vision's force
+    lemma_id: bhakti
+    sense_id: bhakti.gita
+  - term: praveṣṭum (प्रवेष्टुम्)
+    definition: paired key term -> Form hard to see even for gods; not by Veda austerity gift sacrifice; by undivided devotion
+      known seen entered. -> soft translation misses structural role
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[John 14]'
+    resonance: Structural kinship around exclusive way.
+    passage_id: ''
+    divergence: Frame diverges from Gita 11's battlefield visvarupa pedagogy.
+  - citation: '[Bhagavata bhakti]'
+    resonance: Shared pressure of exclusive way.
+    passage_id: ''
+    divergence: Different metaphysics; Gita binds the moment to Krishna's first-person disclosure.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: One hour undivided devotion; no rival spiritual entertainment.

@@ -50,28 +50,7 @@ commentary: 'Vibhūti pedagogy works by class-and-peak: in each domain, the Lord
   attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim will not hold when
   pressure rises. The teaching''s force is practical: what it claims about reality must reshape attention and choice, or it
   remains ornamental. If rehearsal does not change in ordinary time, the claim will not hold when pressure rises. Live one
-  concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.
-
-
-  Key Terms:
-
-
-  **cetanā (चेतना)** — consciousness/awareness -> the Lord''s identity in beings -> "alertness" understates being-consciousness
-
-  **vibhūti (विभूति)** — eminent manifestation -> structure of these class-peak claims -> "power" alone misses revelatory
-  ranking
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Pseudo-Dionysius on divine names / degrees]:** Shared use of ranked excellences as contemplative names.
-
-  *Divergence:* Christian hierarchical theology differs; Gītā''s peaks are first-person self-claims.
-
-  **[Confucian excellence as moral-cosmic disclosure]:** Shared sense that the eminent reveals a deeper order.
-
-  *Divergence:* Confucian tian/ren frame differs from Kṛṣṇa''s self-identification as peaks.'
+  concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.'
 insight: 'Vibhūti pedagogy works by class-and-peak: in each domain, the Lord is the eminent form.'
 practice: 'Encounter one excellence today (craft, courage, beauty). Name the class and the peak, then silently: "This discloses
   the source — not my rival."'
@@ -147,28 +126,29 @@ pratibha_layers:
     reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim will
     not hold when pressure rises. The teaching''s force is practical: what it claims about reality must reshape attention
     and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim will not hold when pressure
-    rises. Live one concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.
-
-
-    Key Terms:
-
-
-    **cetanā (चेतना)** — consciousness/awareness -> the Lord''s identity in beings -> "alertness" understates being-consciousness
-
-    **vibhūti (विभूति)** — eminent manifestation -> structure of these class-peak claims -> "power" alone misses revelatory
-    ranking
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Pseudo-Dionysius on divine names / degrees]:** Shared use of ranked excellences as contemplative names.
-
-    *Divergence:* Christian hierarchical theology differs; Gītā''s peaks are first-person self-claims.
-
-    **[Confucian excellence as moral-cosmic disclosure]:** Shared sense that the eminent reveals a deeper order.
-
-    *Divergence:* Confucian tian/ren frame differs from Kṛṣṇa''s self-identification as peaks.'
+    rises. Live one concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: cetanā (चेतना)
+    definition: consciousness/awareness -> the Lord's identity in beings -> "alertness" understates being-consciousness
+    lemma_id: caitanya
+    sense_id: caitanya.shaiva
+  - term: vibhūti (विभूति)
+    definition: eminent manifestation -> structure of these class-peak claims -> "power" alone misses revelatory ranking
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Pseudo-Dionysius on divine names / degrees]'
+    resonance: Shared use of ranked excellences as contemplative names.
+    passage_id: ''
+    divergence: Christian hierarchical theology differs; Gītā's peaks are first-person self-claims.
+  - citation: '[Confucian excellence as moral-cosmic disclosure]'
+    resonance: Shared sense that the eminent reveals a deeper order.
+    passage_id: ''
+    divergence: Confucian tian/ren frame differs from Kṛṣṇa's self-identification as peaks.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Encounter one excellence today (craft, courage, beauty). Name the class and the peak, then silently: "This discloses

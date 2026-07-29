@@ -37,35 +37,7 @@ commentary: 'The portrait intensifies into radical non-dependence and pair-equal
   by beginnings and dualities. Existentially this is not numbness; it is non-possession. Keep competence; drop the craving
   that makes competence a hostage. The line-level force of the teaching is practical, not ornamental: what it claims about
   reality is meant to reshape how you attend, choose, and depart. If the claim does not alter rehearsal in ordinary time,
-  it will not hold when time thins. Existential uptake is therefore part of fidelity to the argument, not an optional aftertaste.
-
-
-  Key Terms:
-
-
-  **anapekṣa (अनपेक्ष)** — without looking toward / expectation -> independence of the dear devotee -> "detached" can sound
-  cold; the term is non-leaning.
-
-
-  **sarvārambha-parityāga (सर्वारम्भपरित्याग)** — renouncing all undertakings -> dropping ego-initiated projects as identity
-  -> "laziness" is the misreading; skillful dakṣa remains.
-
-
-  **saṅga (सङ्ग)** — clinging/attachment -> what is abandoned amid equalities -> "relationship" must not be confused with
-  saṅga.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Daoist non-contention and wuwei:** Shared non-forcing and non-clinging.
-
-  *Divergence:* Wuwei is Dao-process; Gītā''s equality is dearness-criteria under bhakti.
-
-
-  **Epictetus on preferred indifferents:** Shared equality toward externals.
-
-  *Divergence:* Stoic hegemonikon vs Gītā''s mad-bhakta identity.'
+  it will not hold when time thins. Existential uptake is therefore part of fidelity to the argument, not an optional aftertaste.'
 insight: The portrait intensifies into radical non-dependence and pair-equality.
 practice: Renounce one ego-started undertaking today (a project begun mainly to prove yourself). Keep doing necessary duties
   with dakṣa — watch the difference in saṅga.
@@ -127,35 +99,33 @@ pratibha_layers:
     craving that makes competence a hostage. The line-level force of the teaching is practical, not ornamental: what it claims
     about reality is meant to reshape how you attend, choose, and depart. If the claim does not alter rehearsal in ordinary
     time, it will not hold when time thins. Existential uptake is therefore part of fidelity to the argument, not an optional
-    aftertaste.
-
-
-    Key Terms:
-
-
-    **anapekṣa (अनपेक्ष)** — without looking toward / expectation -> independence of the dear devotee -> "detached" can sound
-    cold; the term is non-leaning.
-
-
-    **sarvārambha-parityāga (सर्वारम्भपरित्याग)** — renouncing all undertakings -> dropping ego-initiated projects as identity
-    -> "laziness" is the misreading; skillful dakṣa remains.
-
-
-    **saṅga (सङ्ग)** — clinging/attachment -> what is abandoned amid equalities -> "relationship" must not be confused with
-    saṅga.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Daoist non-contention and wuwei:** Shared non-forcing and non-clinging.
-
-    *Divergence:* Wuwei is Dao-process; Gītā''s equality is dearness-criteria under bhakti.
-
-
-    **Epictetus on preferred indifferents:** Shared equality toward externals.
-
-    *Divergence:* Stoic hegemonikon vs Gītā''s mad-bhakta identity.'
+    aftertaste.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: anapekṣa (अनपेक्ष)
+    definition: without looking toward / expectation -> independence of the dear devotee -> "detached" can sound cold; the
+      term is non-leaning
+  - term: sarvārambha-parityāga (सर्वारम्भपरित्याग)
+    definition: renouncing all undertakings -> dropping ego-initiated projects as identity -> "laziness" is the misreading;
+      skillful dakṣa remains
+  - term: saṅga (सङ्ग)
+    definition: clinging/attachment -> what is abandoned amid equalities -> "relationship" must not be confused with saṅga
+    lemma_id: sanga
+    sense_id: sanga.gita
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Daoist non-contention and wuwei
+    resonance: Shared non-forcing and non-clinging.
+    passage_id: ''
+    divergence: Wuwei is Dao-process; Gītā's equality is dearness-criteria under bhakti.
+  - citation: Epictetus on preferred indifferents
+    resonance: Shared equality toward externals.
+    passage_id: ''
+    divergence: Stoic hegemonikon vs Gītā's mad-bhakta identity.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Renounce one ego-started undertaking today (a project begun mainly to prove yourself). Keep doing necessary duties

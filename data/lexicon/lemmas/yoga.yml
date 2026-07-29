@@ -7,14 +7,25 @@ aliases:
 - yoga
 - yogi
 - union
+- karmayoga
+- bhaktiyoga
+- jnanayoga
+- buddhiyoga
 traditions:
 - yoga
 - upanishads
 - kashmir_shaivism
+- bhagavad_gita
 related:
 - lemma_id: samadhi
   relation: related_as
   note: samādhi is a culminating absorption within classical yoga’s path.
+- lemma_id: karma
+  relation: related_as
+- lemma_id: bhakti
+  relation: related_as
+- lemma_id: buddhi
+  relation: related_as
 senses:
 - id: yoga.classical
   label: Classical yoga
@@ -30,8 +41,30 @@ senses:
   - patañjali_yoga_sūtras.ys_1_02
   - patañjali_yoga_sūtras.ys_1_03
   - bhagavad_gita.bg_06_26
-  body: |
-    Patañjali: yogaś citta-vṛtti-nirodhaḥ — yoga is the stilling of the turnings of mind. Āsana is one limb, not the definition.
+  body: 'Patañjali: yogaś citta-vṛtti-nirodhaḥ — yoga is the stilling of the turnings of mind. Āsana is
+    one limb, not the definition.
+
+    '
+- id: yoga.gita
+  label: Gītā yoga
+  short: skill in action and equanimity — yoking that includes karma, buddhi, and bhakti
+  etymology: 'same √yuj; Gītā: yogaḥ karmasu kauśalam / samatvaṃ yoga ucyate'
+  traps:
+  - one path only (only devotion / only knowledge / only work)
+  - technique collection without refuge
+  - calmness as emotional flatness
+  traditions:
+  - bhagavad_gita
+  - hinduism
+  exemplars:
+  - bhagavad_gita.bg_02_48
+  - bhagavad_gita.bg_02_50
+  - bhagavad_gita.bg_06_05
+  - bhagavad_gita.bg_06_45_47
+  body: 'In the Gītā, yoga is not a single technique brand. It is the art of yoking motive and action
+    so that fruit-claiming and frantic inaction both lose their grip.
+
+    '
 - id: yoga.shaiva
   label: Śaiva yoga
   short: methods that return contracted awareness to recognition

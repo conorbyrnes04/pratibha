@@ -50,27 +50,7 @@ commentary: 'Order, death, time, and devotion appear together: Yama among discip
   not change in ordinary time, the claim will not hold when pressure rises. The teaching''s force is practical: what it claims
   about reality must reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time,
   the claim will not hold when pressure rises. Live one concrete implication of the claim before the day ends, so the argument
-  becomes conduct rather than ornament.
-
-
-  Key Terms:
-
-
-  **kāla (काल)** — time/death-time -> the Lord as Time among reckoners -> "clock time" misses devouring/ordering force
-
-  **Yama (यम)** — restrainer/death-king -> vibhūti among discipliners -> "death god" cartoon misses subduing function
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Ecclesiastes on time and judgment]:** Shared insistence that time and limit disclose the ultimate.
-
-  *Divergence:* Qoheleth''s tone differs; Gītā personalizes Time as vibhūti.
-
-  **[Buddhist maranasati (death mindfulness)]:** Shared use of death as clarifying lens.
-
-  *Divergence:* Anattā frame differs; Gītā identifies the Lord as Yama and Kāla among peaks.'
+  becomes conduct rather than ornament.'
 insight: 'Order, death, time, and devotion appear together: Yama among discipliners, Kāla among reckoners, Prahlāda among
   daityas, Rāma among weapon-bearers.'
 practice: Spend two minutes with the fact of Time as vibhūti — not as panic, as disclosure. Let one delaying vanity drop.
@@ -140,27 +120,28 @@ pratibha_layers:
     not change in ordinary time, the claim will not hold when pressure rises. The teaching''s force is practical: what it
     claims about reality must reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary
     time, the claim will not hold when pressure rises. Live one concrete implication of the claim before the day ends, so
-    the argument becomes conduct rather than ornament.
-
-
-    Key Terms:
-
-
-    **kāla (काल)** — time/death-time -> the Lord as Time among reckoners -> "clock time" misses devouring/ordering force
-
-    **Yama (यम)** — restrainer/death-king -> vibhūti among discipliners -> "death god" cartoon misses subduing function
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Ecclesiastes on time and judgment]:** Shared insistence that time and limit disclose the ultimate.
-
-    *Divergence:* Qoheleth''s tone differs; Gītā personalizes Time as vibhūti.
-
-    **[Buddhist maranasati (death mindfulness)]:** Shared use of death as clarifying lens.
-
-    *Divergence:* Anattā frame differs; Gītā identifies the Lord as Yama and Kāla among peaks.'
+    the argument becomes conduct rather than ornament.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kāla (काल)
+    definition: time/death-time -> the Lord as Time among reckoners -> "clock time" misses devouring/ordering force
+    lemma_id: kala
+  - term: Yama (यम)
+    definition: restrainer/death-king -> vibhūti among discipliners -> "death god" cartoon misses subduing function
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Ecclesiastes on time and judgment]'
+    resonance: Shared insistence that time and limit disclose the ultimate.
+    passage_id: ''
+    divergence: Qoheleth's tone differs; Gītā personalizes Time as vibhūti.
+  - citation: '[Buddhist maranasati (death mindfulness)]'
+    resonance: Shared use of death as clarifying lens.
+    passage_id: ''
+    divergence: Anattā frame differs; Gītā identifies the Lord as Yama and Kāla among peaks.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Spend two minutes with the fact of Time as vibhūti — not as panic, as disclosure. Let one delaying vanity drop.

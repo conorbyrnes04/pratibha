@@ -58,38 +58,7 @@ commentary: 'The most secret teaching is not withheld as elite puzzle; it is giv
   must reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim will
   not hold when pressure rises. The teaching''s force is practical: what it claims about reality must reshape attention and
   choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim will not hold when pressure rises.
-  Live one concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.
-
-
-  Key Terms:
-
-
-  **guhya** — Sanskrit technical force in this passage -> secret knowledge frees when joined to realization and faith -> default
-  English flattens the contested philosophical work.
-
-  **rājavidyā** — passage-specific sense tied to Kṛṣṇa''s self-revelation -> what the verse does with the term -> "rājavidyā"
-  as vague spirituality misses precision.
-
-  **śraddhā / bhakti cluster** — faith-devotion field surrounding the claim -> secret knowledge frees when joined to realization
-  and faith -> reducing either to emotion alone loses epistemic and practical force.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Īśā Upaniṣad 1 (divine pervasion)]:** Structural kinship with chapter 9''s claim: secret knowledge frees when joined
-  to realization and faith.
-
-  *Divergence:* Īśā is compressed and impersonal-leaning; Gītā elaborates through personal Lord and bhakti conditions.
-
-  **[Plotinus, Enneads VI.9]:** Both press beyond finite goods toward an ultimate that cannot be owned as an object.
-
-  *Divergence:* Plotinus'' One is beyond personal address; Gītā''s culmination is mad-bhakta relationship under first-person
-  speech.
-
-  **[Augustine on enjoying God vs using finite goods]:** Shared refusal to rest in temporary religious payoffs.
-
-  *Divergence:* Christian beatitude grammar differs from Gītā''s yoga-kṣema, yajña-identity, and refuge vow.'
+  Live one concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.'
 insight: The most secret teaching is not withheld as elite puzzle; it is given to the non-caviling and joined to vijñāna so
   that knowing frees from aśubha.
 practice: Receive one verse today without caviling; name one inauspicious pattern it could free you from.
@@ -173,38 +142,39 @@ pratibha_layers:
     must reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim
     will not hold when pressure rises. The teaching''s force is practical: what it claims about reality must reshape attention
     and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim will not hold when pressure
-    rises. Live one concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.
-
-
-    Key Terms:
-
-
-    **guhya** — Sanskrit technical force in this passage -> secret knowledge frees when joined to realization and faith ->
-    default English flattens the contested philosophical work.
-
-    **rājavidyā** — passage-specific sense tied to Kṛṣṇa''s self-revelation -> what the verse does with the term -> "rājavidyā"
-    as vague spirituality misses precision.
-
-    **śraddhā / bhakti cluster** — faith-devotion field surrounding the claim -> secret knowledge frees when joined to realization
-    and faith -> reducing either to emotion alone loses epistemic and practical force.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Īśā Upaniṣad 1 (divine pervasion)]:** Structural kinship with chapter 9''s claim: secret knowledge frees when joined
-    to realization and faith.
-
-    *Divergence:* Īśā is compressed and impersonal-leaning; Gītā elaborates through personal Lord and bhakti conditions.
-
-    **[Plotinus, Enneads VI.9]:** Both press beyond finite goods toward an ultimate that cannot be owned as an object.
-
-    *Divergence:* Plotinus'' One is beyond personal address; Gītā''s culmination is mad-bhakta relationship under first-person
-    speech.
-
-    **[Augustine on enjoying God vs using finite goods]:** Shared refusal to rest in temporary religious payoffs.
-
-    *Divergence:* Christian beatitude grammar differs from Gītā''s yoga-kṣema, yajña-identity, and refuge vow.'
+    rises. Live one concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: guhya
+    definition: Sanskrit technical force in this passage -> secret knowledge frees when joined to realization and faith ->
+      default English flattens the contested philosophical work
+  - term: rājavidyā
+    definition: passage-specific sense tied to Kṛṣṇa's self-revelation -> what the verse does with the term -> "rājavidyā"
+      as vague spirituality misses precision
+  - term: śraddhā / bhakti cluster
+    definition: faith-devotion field surrounding the claim -> secret knowledge frees when joined to realization and faith
+      -> reducing either to emotion alone loses epistemic and practical force
+    lemma_id: bhakti
+    sense_id: bhakti.gita
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Īśā Upaniṣad 1 (divine pervasion)]'
+    resonance: 'Structural kinship with chapter 9''s claim: secret knowledge frees when joined to realization and faith.'
+    passage_id: ''
+    divergence: Īśā is compressed and impersonal-leaning; Gītā elaborates through personal Lord and bhakti conditions.
+  - citation: '[Plotinus, Enneads VI.9]'
+    resonance: Both press beyond finite goods toward an ultimate that cannot be owned as an object.
+    passage_id: ''
+    divergence: Plotinus' One is beyond personal address; Gītā's culmination is mad-bhakta relationship under first-person
+      speech.
+  - citation: '[Augustine on enjoying God vs using finite goods]'
+    resonance: Shared refusal to rest in temporary religious payoffs.
+    passage_id: ''
+    divergence: Christian beatitude grammar differs from Gītā's yoga-kṣema, yajña-identity, and refuge vow.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Receive one verse today without caviling; name one inauspicious pattern it could free you from.

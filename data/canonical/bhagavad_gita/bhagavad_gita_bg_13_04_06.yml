@@ -29,39 +29,7 @@ commentary: 'Krishna refuses to let “body” remain a blunt noun. The field is
   rage arises, can you find element-tone, ego-clench, buddhi’s story, and sense-contact as field-events rather than as “who
   I am”? The verse trains a contemplative anatomy. Catalogues like this are contemplative instruments; they train you to find
   ego-making and sense-range inside what you still call “just me.” Read as existential demand, the verse asks for a changed
-  stance in the next difficult hour—not for ornamental agreement with a doctrine.
-
-
-  Key Terms:
-
-
-  **vikāra (विकार)** — “modification / alteration” -> the field’s changing modes -> “symptoms” medicalizes what is cosmological-psychological.
-
-  **ahaṅkāra (अहङ्कार)** — “I-making” -> ego-function as field-constituent -> “ego” as personality trait misses its structural
-  role in Sāṃkhya.
-
-  **buddhi (बुद्धि)** — “awakening / discernment” -> intellect as determining faculty -> “mind” collapses buddhi into manas.
-
-  **avyakta (अव्यक्त)** — “unmanifest” -> prakṛti’s root latency -> “invisible” is too vague for primordial nature.
-
-  **indriyagocara (इन्द्रियगोचर)** — “range of the senses” -> sense-objects as field-content -> “sense data” strips the lived
-  worldliness of gocara.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Sāṃkhya Kārikā 22–38]:** The tattva enumeration is the structural cousin of this field inventory.
-
-  *Divergence:* Classical Sāṃkhya keeps puruṣa plural and inactive; the Gītā will theistically recenter the supreme person.
-
-  **[Abhidharma skandha analysis]:** Both dissolve the apparent self into process-heaps available to insight.
-
-  *Divergence:* Abhidharma aims at not-self; Krishna analyzes the field to isolate a knower and later a Lord of knowers.
-
-  **[Aristotle, De Anima II]:** Faculties and objects of sense form a parallel map of living embodiment.
-
-  *Divergence:* Aristotle seeks natural philosophy of soul; the Gītā’s inventory is soteriological, aimed at release.'
+  stance in the next difficult hour—not for ornamental agreement with a doctrine.'
 insight: Krishna refuses to let “body” remain a blunt noun.
 practice: 'When a strong emotion arises, name five layers aloud: body-tone, sense-contact, thought, “I/mine,” and the knowing
   of all four. Stop at naming.'
@@ -108,39 +76,42 @@ pratibha_layers:
     when rage arises, can you find element-tone, ego-clench, buddhi’s story, and sense-contact as field-events rather than
     as “who I am”? The verse trains a contemplative anatomy. Catalogues like this are contemplative instruments; they train
     you to find ego-making and sense-range inside what you still call “just me.” Read as existential demand, the verse asks
-    for a changed stance in the next difficult hour—not for ornamental agreement with a doctrine.
-
-
-    Key Terms:
-
-
-    **vikāra (विकार)** — “modification / alteration” -> the field’s changing modes -> “symptoms” medicalizes what is cosmological-psychological.
-
-    **ahaṅkāra (अहङ्कार)** — “I-making” -> ego-function as field-constituent -> “ego” as personality trait misses its structural
-    role in Sāṃkhya.
-
-    **buddhi (बुद्धि)** — “awakening / discernment” -> intellect as determining faculty -> “mind” collapses buddhi into manas.
-
-    **avyakta (अव्यक्त)** — “unmanifest” -> prakṛti’s root latency -> “invisible” is too vague for primordial nature.
-
-    **indriyagocara (इन्द्रियगोचर)** — “range of the senses” -> sense-objects as field-content -> “sense data” strips the
-    lived worldliness of gocara.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Sāṃkhya Kārikā 22–38]:** The tattva enumeration is the structural cousin of this field inventory.
-
-    *Divergence:* Classical Sāṃkhya keeps puruṣa plural and inactive; the Gītā will theistically recenter the supreme person.
-
-    **[Abhidharma skandha analysis]:** Both dissolve the apparent self into process-heaps available to insight.
-
-    *Divergence:* Abhidharma aims at not-self; Krishna analyzes the field to isolate a knower and later a Lord of knowers.
-
-    **[Aristotle, De Anima II]:** Faculties and objects of sense form a parallel map of living embodiment.
-
-    *Divergence:* Aristotle seeks natural philosophy of soul; the Gītā’s inventory is soteriological, aimed at release.'
+    for a changed stance in the next difficult hour—not for ornamental agreement with a doctrine.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: vikāra (विकार)
+    definition: “modification / alteration” -> the field’s changing modes -> “symptoms” medicalizes what is cosmological-psychological
+  - term: ahaṅkāra (अहङ्कार)
+    definition: “I-making” -> ego-function as field-constituent -> “ego” as personality trait misses its structural role in
+      Sāṃkhya
+    lemma_id: ahankara
+    sense_id: ahankara.gita
+  - term: buddhi (बुद्धि)
+    definition: “awakening / discernment” -> intellect as determining faculty -> “mind” collapses buddhi into manas
+    lemma_id: buddhi
+    sense_id: buddhi.gita
+  - term: avyakta (अव्यक्त)
+    definition: “unmanifest” -> prakṛti’s root latency -> “invisible” is too vague for primordial nature
+  - term: indriyagocara (इन्द्रियगोचर)
+    definition: “range of the senses” -> sense-objects as field-content -> “sense data” strips the lived worldliness of gocara
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Sāṃkhya Kārikā 22–38]'
+    resonance: The tattva enumeration is the structural cousin of this field inventory.
+    passage_id: ''
+    divergence: Classical Sāṃkhya keeps puruṣa plural and inactive; the Gītā will theistically recenter the supreme person.
+  - citation: '[Abhidharma skandha analysis]'
+    resonance: Both dissolve the apparent self into process-heaps available to insight.
+    passage_id: ''
+    divergence: Abhidharma aims at not-self; Krishna analyzes the field to isolate a knower and later a Lord of knowers.
+  - citation: '[Aristotle, De Anima II]'
+    resonance: Faculties and objects of sense form a parallel map of living embodiment.
+    passage_id: ''
+    divergence: Aristotle seeks natural philosophy of soul; the Gītā’s inventory is soteriological, aimed at release.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When a strong emotion arises, name five layers aloud: body-tone, sense-contact, thought, “I/mine,” and the knowing

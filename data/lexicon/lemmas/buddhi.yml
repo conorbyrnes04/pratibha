@@ -1,0 +1,46 @@
+id: buddhi
+maturity: strong_draft
+scripts:
+  iast: buddhi
+  devanagari: बुद्धि
+aliases:
+- buddhi
+- intellect
+- discernment
+- buddhi-yoga
+- buddhiyoga
+traditions:
+- hinduism
+- samkhya
+- bhagavad_gita
+- yoga
+related:
+- lemma_id: ahankara
+  relation: related_as
+  note: Ahaṅkāra claims ‘I/mine’; buddhi can discern and decide beyond that claim.
+- lemma_id: yoga
+  relation: related_as
+- lemma_id: jnana
+  relation: related_as
+senses:
+- id: buddhi.gita
+  label: Discerning intelligence
+  short: the determinative faculty that can yoke action to clarity rather than craving
+  etymology: √budh ‘awaken, notice, understand’
+  traps:
+  - IQ / cleverness
+  - cold rationalism against devotion
+  - mere opinion
+  traditions:
+  - bhagavad_gita
+  - samkhya
+  - yoga
+  exemplars:
+  - bhagavad_gita.bg_02_40_42
+  - bhagavad_gita.bg_02_49
+  - bhagavad_gita.bg_03_42_43
+  - bhagavad_gita.bg_18_31_33
+  body: 'Buddhi-yoga in the Gītā is not anti-feeling intellectualism. It is the yoga of decisive discernment
+    that refuses fruit-ownership and sees through guṇa-driven motives.
+
+    '

@@ -58,8 +58,12 @@ pratibha_layers:
     definition: heart, center
   - term: citta
     definition: mind
+    lemma_id: citta
+    sense_id: citta.shaiva
   - term: svapna
     definition: dreamlike appearance
+    lemma_id: svapna
+    sense_id: svapna.shaiva
 - kind: resonances
   label: Cross-Tradition Resonances
   items:

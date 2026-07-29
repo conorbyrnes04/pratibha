@@ -1,0 +1,49 @@
+id: prakrti
+maturity: strong_draft
+scripts:
+  iast: prakṛti
+  devanagari: प्रकृति
+aliases:
+- prakrti
+- prakriti
+- prakṛti
+- nature
+- matter
+traditions:
+- hinduism
+- samkhya
+- bhagavad_gita
+- yoga
+related:
+- lemma_id: purusa
+  relation: related_as
+  note: Classical Sāṃkhya pair; the Gītā both uses and theologically reframes the polarity.
+- lemma_id: guna
+  relation: related_as
+  note: The three guṇas are prakṛti’s operative strands.
+- lemma_id: maya
+  relation: rough_analogue
+  note: Both name conditioned appearing; māyā is more illusion/power language, prakṛti more processual
+    nature.
+senses:
+- id: prakrti.samkhya_gita
+  label: Creative nature
+  short: the productive field of becoming whose strands (guṇas) stage experience
+  etymology: pra- + √kṛ ‘make forth; primordial making’
+  traps:
+  - dead matter / Newtonian stuff
+  - ‘Mother Nature’ as sentimental personification
+  - pure illusion with no causal force
+  traditions:
+  - samkhya
+  - bhagavad_gita
+  - yoga
+  exemplars:
+  - bhagavad_gita.bg_03_27
+  - bhagavad_gita.bg_07_04_06
+  - bhagavad_gita.bg_13_19_21
+  - bhagavad_gita.bg_14_05
+  body: 'Prakṛti is not inert. It is the dynamic matrix whose sattva–rajas–tamas patterning binds the
+    knower until discrimination and yoga release identification with its play.
+
+    '

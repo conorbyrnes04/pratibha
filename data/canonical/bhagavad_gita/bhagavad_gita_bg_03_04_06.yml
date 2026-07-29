@@ -51,49 +51,7 @@ commentary: 'Freedom from action is not produced by refusing to start. The conte
   only in visible performance. Existentially, the teaching cuts through spiritual theater — the posture of withdrawal that
   still feeds on fantasy. If you want freedom from action’s bondage, you cannot purchase it by non-beginning; you must transform
   how action is owned. The chapter’s early diagnosis is severe: inactivity is unavailable, and hypocrisy of the senses is
-  worse than honest engagement.
-
-
-  Key Terms:
-
-
-  **naiṣkarmya (नैष्कर्म्य)** — from nis + karma, “freedom from (binding) action” -> not literal motionlessness but release
-  from action’s binding claim -> “inaction” wrongly suggests stopping movement; the goal is non-binding agency
-
-
-  **saṃnyāsana (संन्यसन)** — from sam-ni-as, “laying down completely” -> formal renunciation of appropriation -> default “renunciation”
-  can mean quitting work; here quitting alone does not yield siddhi
-
-
-  **mithyācāra (मिथ्याचार)** — mithyā “false” + ācāra “conduct” -> practiced falsity: outer restraint masking inner consumption
-  -> “hypocrite” is moralizing; the term names a structural mismatch of body and mind
-
-
-  **prakṛti (प्रकृति)** — pra-kṛ, “that which brings forth” -> nature as the field of guṇa-driven process -> “nature” as scenery
-  misses its compulsive productivity of action
-
-
-  Cross-Tradition Resonances:
-
-
-  **Marcus Aurelius, Meditations 5.1:** Structural homology in refusing rest as moral achievement — the organism is already
-  enlisted in the world’s work.
-
-  *Divergence:* Stoic duty is framed through cosmic citizenship and logos; Krishna grounds compulsion in guṇa-prakṛti mechanics
-  and exposes mental rehearsal as binding.
-
-
-  **Buddha, Dhammapada 1–2 (mind precedes):** Structural homology in locating ethical weight in mental accompaniment, not
-  outer gesture alone.
-
-  *Divergence:* Early Buddhism aims at cessation of craving-formations; the Gītā redirects mental discipline into yogic action
-  rather than primarily into monastic withdrawal.
-
-
-  **Laozi, Daodejing 48:** Structural homology in warning that forced reduction of activity can become another grasping project.
-
-  *Divergence:* Laozi favors diminishing deliberate doing toward wuwei; Krishna denies that non-beginning yields naiṣkarmya
-  and demands transformed action instead.'
+  worse than honest engagement.'
 insight: Freedom from action is not produced by refusing to start.
 practice: For one hour, do not add a new “spiritual pause”; instead notice three actions already happening through you (breath,
   posture, planning) and release mental rehearsal of a desired sense-object each time it arises.
@@ -170,50 +128,45 @@ pratibha_layers:
     dwelling, not only in visible performance. Existentially, the teaching cuts through spiritual theater — the posture of
     withdrawal that still feeds on fantasy. If you want freedom from action’s bondage, you cannot purchase it by non-beginning;
     you must transform how action is owned. The chapter’s early diagnosis is severe: inactivity is unavailable, and hypocrisy
-    of the senses is worse than honest engagement.
-
-
-    Key Terms:
-
-
-    **naiṣkarmya (नैष्कर्म्य)** — from nis + karma, “freedom from (binding) action” -> not literal motionlessness but release
-    from action’s binding claim -> “inaction” wrongly suggests stopping movement; the goal is non-binding agency
-
-
-    **saṃnyāsana (संन्यसन)** — from sam-ni-as, “laying down completely” -> formal renunciation of appropriation -> default
-    “renunciation” can mean quitting work; here quitting alone does not yield siddhi
-
-
-    **mithyācāra (मिथ्याचार)** — mithyā “false” + ācāra “conduct” -> practiced falsity: outer restraint masking inner consumption
-    -> “hypocrite” is moralizing; the term names a structural mismatch of body and mind
-
-
-    **prakṛti (प्रकृति)** — pra-kṛ, “that which brings forth” -> nature as the field of guṇa-driven process -> “nature” as
-    scenery misses its compulsive productivity of action
-
-
-    Cross-Tradition Resonances:
-
-
-    **Marcus Aurelius, Meditations 5.1:** Structural homology in refusing rest as moral achievement — the organism is already
-    enlisted in the world’s work.
-
-    *Divergence:* Stoic duty is framed through cosmic citizenship and logos; Krishna grounds compulsion in guṇa-prakṛti mechanics
-    and exposes mental rehearsal as binding.
-
-
-    **Buddha, Dhammapada 1–2 (mind precedes):** Structural homology in locating ethical weight in mental accompaniment, not
-    outer gesture alone.
-
-    *Divergence:* Early Buddhism aims at cessation of craving-formations; the Gītā redirects mental discipline into yogic
-    action rather than primarily into monastic withdrawal.
-
-
-    **Laozi, Daodejing 48:** Structural homology in warning that forced reduction of activity can become another grasping
-    project.
-
-    *Divergence:* Laozi favors diminishing deliberate doing toward wuwei; Krishna denies that non-beginning yields naiṣkarmya
-    and demands transformed action instead.'
+    of the senses is worse than honest engagement.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: naiṣkarmya (नैष्कर्म्य)
+    definition: from nis + karma, “freedom from (binding) action” -> not literal motionlessness but release from action’s
+      binding claim -> “inaction” wrongly suggests stopping movement; the goal is non-binding agency
+  - term: saṃnyāsana (संन्यसन)
+    definition: from sam-ni-as, “laying down completely” -> formal renunciation of appropriation -> default “renunciation”
+      can mean quitting work; here quitting alone does not yield siddhi
+  - term: mithyācāra (मिथ्याचार)
+    definition: 'mithyā “false” + ācāra “conduct” -> practiced falsity: outer restraint masking inner consumption -> “hypocrite”
+      is moralizing; the term names a structural mismatch of body and mind'
+  - term: prakṛti (प्रकृति)
+    definition: pra-kṛ, “that which brings forth” -> nature as the field of guṇa-driven process -> “nature” as scenery misses
+      its compulsive productivity of action
+    lemma_id: prakrti
+    sense_id: prakrti.samkhya_gita
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Marcus Aurelius, Meditations 5.1
+    resonance: Structural homology in refusing rest as moral achievement — the organism is already enlisted in the world’s
+      work.
+    passage_id: ''
+    divergence: Stoic duty is framed through cosmic citizenship and logos; Krishna grounds compulsion in guṇa-prakṛti mechanics
+      and exposes mental rehearsal as binding.
+  - citation: Buddha, Dhammapada 1–2 (mind precedes)
+    resonance: Structural homology in locating ethical weight in mental accompaniment, not outer gesture alone.
+    passage_id: ''
+    divergence: Early Buddhism aims at cessation of craving-formations; the Gītā redirects mental discipline into yogic action
+      rather than primarily into monastic withdrawal.
+  - citation: Laozi, Daodejing 48
+    resonance: Structural homology in warning that forced reduction of activity can become another grasping project.
+    passage_id: ''
+    divergence: Laozi favors diminishing deliberate doing toward wuwei; Krishna denies that non-beginning yields naiṣkarmya
+      and demands transformed action instead.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: For one hour, do not add a new “spiritual pause”; instead notice three actions already happening through you (breath,

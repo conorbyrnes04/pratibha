@@ -52,38 +52,7 @@ commentary: 'Śraddhā, one-pointed intent, and sense-restraint are the triad th
   The difference is commitment: questions seek, saṃśayātman suspends until life itself becomes uninhabitable. Faith, restraint,
   and intent gain knowledge; knowledge yields peace; yoga-renounced action plus cut doubt leaves the self-possessed unbound.
   Peace is not awarded to clever suspension. Convert corrosive doubt into either precise question or restrained experiment
-  — then let knowledge cut what remains.
-
-
-  Key Terms:
-
-
-  **śraddhā (श्रद्धा)** — faith/trustful receptivity -> condition for gaining knowledge -> not blind belief; committed openness
-  with restraint
-
-
-  **saṃśayātman (संशयात्मन्)** — doubt as one’s self -> identity structured by unresolved suspicion -> denser than occasional
-  questioning
-
-
-  **jñānasaṃchinnasaṃśaya (ज्ञानसंछिन्नसंशय)** — doubt cut by knowledge -> knowledge’s surgical function -> peace’s prerequisite
-  alongside yogic renunciation of actions
-
-
-  Cross-Tradition Resonances:
-
-
-  **Augustine on credo ut intellegam:** Structural homology in trust enabling understanding rather than following after exhaustive
-  proof.
-
-  *Divergence:* Augustinian faith is christological-ecclesial; śraddhā here is yogic-receptive toward liberating jñāna under
-  Krishna.
-
-
-  **Pyrrhonian skepticism vs Gītā’s saṃśaya warning:** Structural homology inverted — suspension as therapy vs suspension
-  as ruin.
-
-  *Divergence:* Pyrrhonism seeks ataraxia via epochē; the Gītā finds śānti via knowledge that cuts doubt after faithful practice.'
+  — then let knowledge cut what remains.'
 insight: Śraddhā, one-pointed intent, and sense-restraint are the triad that gains jñāna; jñāna then yields supreme śānti
   swiftly.
 practice: Convert one looping doubt into either a precise question for a knower or a restrained experiment of practice; refuse
@@ -160,39 +129,34 @@ pratibha_layers:
     here. The difference is commitment: questions seek, saṃśayātman suspends until life itself becomes uninhabitable. Faith,
     restraint, and intent gain knowledge; knowledge yields peace; yoga-renounced action plus cut doubt leaves the self-possessed
     unbound. Peace is not awarded to clever suspension. Convert corrosive doubt into either precise question or restrained
-    experiment — then let knowledge cut what remains.
-
-
-    Key Terms:
-
-
-    **śraddhā (श्रद्धा)** — faith/trustful receptivity -> condition for gaining knowledge -> not blind belief; committed openness
-    with restraint
-
-
-    **saṃśayātman (संशयात्मन्)** — doubt as one’s self -> identity structured by unresolved suspicion -> denser than occasional
-    questioning
-
-
-    **jñānasaṃchinnasaṃśaya (ज्ञानसंछिन्नसंशय)** — doubt cut by knowledge -> knowledge’s surgical function -> peace’s prerequisite
-    alongside yogic renunciation of actions
-
-
-    Cross-Tradition Resonances:
-
-
-    **Augustine on credo ut intellegam:** Structural homology in trust enabling understanding rather than following after
-    exhaustive proof.
-
-    *Divergence:* Augustinian faith is christological-ecclesial; śraddhā here is yogic-receptive toward liberating jñāna under
-    Krishna.
-
-
-    **Pyrrhonian skepticism vs Gītā’s saṃśaya warning:** Structural homology inverted — suspension as therapy vs suspension
-    as ruin.
-
-    *Divergence:* Pyrrhonism seeks ataraxia via epochē; the Gītā finds śānti via knowledge that cuts doubt after faithful
-    practice.'
+    experiment — then let knowledge cut what remains.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: śraddhā (श्रद्धा)
+    definition: faith/trustful receptivity -> condition for gaining knowledge -> not blind belief; committed openness with
+      restraint
+    lemma_id: sraddha
+    sense_id: sraddha.gita
+  - term: saṃśayātman (संशयात्मन्)
+    definition: doubt as one’s self -> identity structured by unresolved suspicion -> denser than occasional questioning
+  - term: jñānasaṃchinnasaṃśaya (ज्ञानसंछिन्नसंशय)
+    definition: doubt cut by knowledge -> knowledge’s surgical function -> peace’s prerequisite alongside yogic renunciation
+      of actions
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Augustine on credo ut intellegam
+    resonance: Structural homology in trust enabling understanding rather than following after exhaustive proof.
+    passage_id: ''
+    divergence: Augustinian faith is christological-ecclesial; śraddhā here is yogic-receptive toward liberating jñāna under
+      Krishna.
+  - citation: Pyrrhonian skepticism vs Gītā’s saṃśaya warning
+    resonance: Structural homology inverted — suspension as therapy vs suspension as ruin.
+    passage_id: ''
+    divergence: Pyrrhonism seeks ataraxia via epochē; the Gītā finds śānti via knowledge that cuts doubt after faithful practice.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Convert one looping doubt into either a precise question for a knower or a restrained experiment of practice; refuse

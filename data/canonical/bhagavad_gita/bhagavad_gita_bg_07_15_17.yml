@@ -53,36 +53,7 @@ commentary: 'Devotion is graded without being scorned at the lower rungs. The co
   also protects community from purity-spirals. A temple full only of jñānīs is a fantasy; a temple that shames the ārta for
   needing help contradicts the Lord''s own admission of four. Yet refusing all ranking collapses formation: without eka-bhakti
   as excellence, religion becomes crisis-management and wish-fulfillment forever. Mutual dearness between Lord and knower
-  names love as the climate of mature knowing — not a trophy for IQ, but the warmth of non-dual recognition.
-
-
-  Key Terms:
-
-
-  **jijñāsu (जिज्ञासु)** — desirous of knowing -> seeker whose worship is inquiry-shaped -> "curious person" misses that inquiry
-  itself is a mode of *bhajana*.
-
-
-  **eka-bhakti (एकभक्ति)** — single/exclusive devotion -> the knower''s distinguishing mark with *nitya-yukta* -> "loyalty"
-  understates epistemic exclusivity: one devotion because one real object.
-
-
-  **āsura (आसुर)** — demonic/anti-divine disposition -> shelter taken when knowledge is stolen -> "evil" as cartoon villainy
-  misses a systematic orientation against the sacred.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Augustine, Confessions (restless heart / grades of desire for God):** Both admit lower loves as real motions toward the
-  divine while ranking them.
-
-  *Divergence:* Augustine narrates personal conversion history; Gītā offers a typology inside a battlefield teaching.
-
-
-  **Confucian graded love / care with distinction:** Both refuse flat equality of all motives as spiritually identical.
-
-  *Divergence:* Confucian grading is familial-social; Gītā grades modes of worship toward the Lord.'
+  names love as the climate of mature knowing — not a trophy for IQ, but the warmth of non-dual recognition.'
 insight: Devotion is graded without being scorned at the lower rungs.
 practice: Name which of the four currently dominates your prayer (pain, curiosity, gain, knowing). Practice one act today
   as if you were one step "up" the list — without pretending you have arrived.
@@ -159,36 +130,34 @@ pratibha_layers:
     typology also protects community from purity-spirals. A temple full only of jñānīs is a fantasy; a temple that shames
     the ārta for needing help contradicts the Lord''s own admission of four. Yet refusing all ranking collapses formation:
     without eka-bhakti as excellence, religion becomes crisis-management and wish-fulfillment forever. Mutual dearness between
-    Lord and knower names love as the climate of mature knowing — not a trophy for IQ, but the warmth of non-dual recognition.
-
-
-    Key Terms:
-
-
-    **jijñāsu (जिज्ञासु)** — desirous of knowing -> seeker whose worship is inquiry-shaped -> "curious person" misses that
-    inquiry itself is a mode of *bhajana*.
-
-
-    **eka-bhakti (एकभक्ति)** — single/exclusive devotion -> the knower''s distinguishing mark with *nitya-yukta* -> "loyalty"
-    understates epistemic exclusivity: one devotion because one real object.
-
-
-    **āsura (आसुर)** — demonic/anti-divine disposition -> shelter taken when knowledge is stolen -> "evil" as cartoon villainy
-    misses a systematic orientation against the sacred.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Augustine, Confessions (restless heart / grades of desire for God):** Both admit lower loves as real motions toward
-    the divine while ranking them.
-
-    *Divergence:* Augustine narrates personal conversion history; Gītā offers a typology inside a battlefield teaching.
-
-
-    **Confucian graded love / care with distinction:** Both refuse flat equality of all motives as spiritually identical.
-
-    *Divergence:* Confucian grading is familial-social; Gītā grades modes of worship toward the Lord.'
+    Lord and knower names love as the climate of mature knowing — not a trophy for IQ, but the warmth of non-dual recognition.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: jijñāsu (जिज्ञासु)
+    definition: desirous of knowing -> seeker whose worship is inquiry-shaped -> "curious person" misses that inquiry itself
+      is a mode of *bhajana*
+  - term: eka-bhakti (एकभक्ति)
+    definition: 'single/exclusive devotion -> the knower''s distinguishing mark with *nitya-yukta* -> "loyalty" understates
+      epistemic exclusivity: one devotion because one real object'
+    lemma_id: bhakti
+    sense_id: bhakti.gita
+  - term: āsura (आसुर)
+    definition: demonic/anti-divine disposition -> shelter taken when knowledge is stolen -> "evil" as cartoon villainy misses
+      a systematic orientation against the sacred
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Augustine, Confessions (restless heart / grades of desire for God)
+    resonance: Both admit lower loves as real motions toward the divine while ranking them.
+    passage_id: ''
+    divergence: Augustine narrates personal conversion history; Gītā offers a typology inside a battlefield teaching.
+  - citation: Confucian graded love / care with distinction
+    resonance: Both refuse flat equality of all motives as spiritually identical.
+    passage_id: ''
+    divergence: Confucian grading is familial-social; Gītā grades modes of worship toward the Lord.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Name which of the four currently dominates your prayer (pain, curiosity, gain, knowing). Practice one act today as

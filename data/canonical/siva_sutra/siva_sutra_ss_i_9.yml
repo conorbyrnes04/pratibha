@@ -62,8 +62,12 @@ pratibha_layers:
   items:
   - term: svapna
     definition: dream
+    lemma_id: svapna
+    sense_id: svapna.shaiva
   - term: vikalpa
     definition: imagination, conceptual variation
+    lemma_id: vikalpa
+    sense_id: vikalpa.shaiva
 - kind: resonances
   label: Cross-Tradition Resonances
   items:

@@ -29,36 +29,7 @@ commentary: 'Each guṇa binds through what it makes lovable. Sattva binds by su
   is beyond all three, not an upgrade to the nicest strand. Existentially, watch what you defend most eloquently: if it is
   your calm, your insight, or your busy usefulness, you may be polishing a bind. Freedom is not upgrading your guṇa; it is
   seeing the binding mechanism in all three. The practical test is simple and severe: what happens when your favorite clarity
-  is interrupted? If rage or despair follows, sattva was a strap.
-
-
-  Key Terms:
-
-
-  **sattva (सत्त्व)** — luminosity / purity-strand -> binds via joy-and-knowledge attachment -> ''goodness'' moralizes a binder.
-
-  **rajas (रजस्)** — passion-strand -> binds via action-attachment -> ''energy'' misses thirst-born compulsion.
-
-  **tamas (तमस्)** — darkness-strand -> binds via negligence, indolence, sleep -> ''laziness'' shrinks cosmological delusion.
-
-  **saṅga (सङ्ग)** — attachment / adherence -> the actual strap within each guṇa -> ''liking'' understates bondage.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Patañjali, YS II.3–9 (kleśas)]:** Afflictions that bind through attachment and ignorance parallel guṇa-binding.
-
-  *Divergence:* Kleśas are psychological; guṇas are also cosmic strands structuring rebirth.
-
-  **[Evagrius, eight thoughts]:** Passions that capture the monk resonate with rajas-tamas mechanisms; vainglory with sattvic
-  binding.
-
-  *Divergence:* Evagrius aims at pure prayer; Krishna aims at guṇātīta freedom into divine being.
-
-  **[Zhuangzi on usefulness of useless]:** Suspicion of achievement-drive resonates with seeing rajas-binding.
-
-  *Divergence:* Zhuangzi dissolves fixed success metrics; the Gītā keeps a clear hierarchy toward transcendence of all three.'
+  is interrupted? If rage or despair follows, sattva was a strap.'
 insight: Each guṇa binds through what it makes lovable.
 practice: Catch one sattvic bind today (pride in insight or clinging to a calm mood). Soften the clutch while keeping the
   clarity.
@@ -111,37 +82,37 @@ pratibha_layers:
     beyond all three, not an upgrade to the nicest strand. Existentially, watch what you defend most eloquently: if it is
     your calm, your insight, or your busy usefulness, you may be polishing a bind. Freedom is not upgrading your guṇa; it
     is seeing the binding mechanism in all three. The practical test is simple and severe: what happens when your favorite
-    clarity is interrupted? If rage or despair follows, sattva was a strap.
-
-
-    Key Terms:
-
-
-    **sattva (सत्त्व)** — luminosity / purity-strand -> binds via joy-and-knowledge attachment -> ''goodness'' moralizes a
-    binder.
-
-    **rajas (रजस्)** — passion-strand -> binds via action-attachment -> ''energy'' misses thirst-born compulsion.
-
-    **tamas (तमस्)** — darkness-strand -> binds via negligence, indolence, sleep -> ''laziness'' shrinks cosmological delusion.
-
-    **saṅga (सङ्ग)** — attachment / adherence -> the actual strap within each guṇa -> ''liking'' understates bondage.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Patañjali, YS II.3–9 (kleśas)]:** Afflictions that bind through attachment and ignorance parallel guṇa-binding.
-
-    *Divergence:* Kleśas are psychological; guṇas are also cosmic strands structuring rebirth.
-
-    **[Evagrius, eight thoughts]:** Passions that capture the monk resonate with rajas-tamas mechanisms; vainglory with sattvic
-    binding.
-
-    *Divergence:* Evagrius aims at pure prayer; Krishna aims at guṇātīta freedom into divine being.
-
-    **[Zhuangzi on usefulness of useless]:** Suspicion of achievement-drive resonates with seeing rajas-binding.
-
-    *Divergence:* Zhuangzi dissolves fixed success metrics; the Gītā keeps a clear hierarchy toward transcendence of all three.'
+    clarity is interrupted? If rage or despair follows, sattva was a strap.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: sattva (सत्त्व)
+    definition: luminosity / purity-strand -> binds via joy-and-knowledge attachment -> 'goodness' moralizes a binder
+  - term: rajas (रजस्)
+    definition: passion-strand -> binds via action-attachment -> 'energy' misses thirst-born compulsion
+  - term: tamas (तमस्)
+    definition: darkness-strand -> binds via negligence, indolence, sleep -> 'laziness' shrinks cosmological delusion
+  - term: saṅga (सङ्ग)
+    definition: attachment / adherence -> the actual strap within each guṇa -> 'liking' understates bondage
+    lemma_id: sanga
+    sense_id: sanga.gita
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Patañjali, YS II.3–9 (kleśas)]'
+    resonance: Afflictions that bind through attachment and ignorance parallel guṇa-binding.
+    passage_id: ''
+    divergence: Kleśas are psychological; guṇas are also cosmic strands structuring rebirth.
+  - citation: '[Evagrius, eight thoughts]'
+    resonance: Passions that capture the monk resonate with rajas-tamas mechanisms; vainglory with sattvic binding.
+    passage_id: ''
+    divergence: Evagrius aims at pure prayer; Krishna aims at guṇātīta freedom into divine being.
+  - citation: '[Zhuangzi on usefulness of useless]'
+    resonance: Suspicion of achievement-drive resonates with seeing rajas-binding.
+    passage_id: ''
+    divergence: Zhuangzi dissolves fixed success metrics; the Gītā keeps a clear hierarchy toward transcendence of all three.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Catch one sattvic bind today (pride in insight or clinging to a calm mood). Soften the clutch while keeping the clarity.

@@ -33,35 +33,7 @@ commentary: '*Buddhi-yoga* outranks bare *karma*. This does not cancel 2.47; it 
 
 
   When drive turns miser-logic, take refuge in buddhi for five breaths before the next move. Let the contested move remain
-  uncomfortable; comfort usually signals a softened reading.
-
-
-  Key Terms:
-
-
-  **buddhi-yoga (बुद्धियोग)** — yoga of understanding/discriminative intelligence → yoking through resolved knowing → “wisdom
-  yoga” is approximate.
-
-
-  **kṛpaṇa (कृपण)** — pitiful/miserly → fruit-fixers as spiritually impoverished → “wretched” fits; miserly contraction is
-  heard in the word.
-
-
-  **śaraṇa (शरण)** — refuge/shelter → *buddhi* as where one takes shelter → “take refuge” is right; it is relational, not
-  merely cognitive assent.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Katha Upaniṣad 1.2.1–2 (śreyas vs preyas):** Both rank the truly better over the merely desired fruit.
-
-  *Divergence:* Katha stages choice via Yama; here ranking occurs inside karma-yoga instruction.
-
-
-  **Epictetus, Enchiridion 1:** Both treat clinging to outcomes outside one’s jurisdiction as the root of wretchedness.
-
-  *Divergence:* Stoicism stays with prohairesis; the Gītā names *buddhi-yoga* within dharma and devotion arc.'
+  uncomfortable; comfort usually signals a softened reading.'
 insight: '*Buddhi-yoga* outranks bare *karma*.'
 practice: 'When you catch yourself as *phala-hetu*, place a hand on the sternum and say: “Refuge in understanding,” then name
   the next right action only.'
@@ -114,35 +86,33 @@ pratibha_layers:
 
 
     When drive turns miser-logic, take refuge in buddhi for five breaths before the next move. Let the contested move remain
-    uncomfortable; comfort usually signals a softened reading.
-
-
-    Key Terms:
-
-
-    **buddhi-yoga (बुद्धियोग)** — yoga of understanding/discriminative intelligence → yoking through resolved knowing → “wisdom
-    yoga” is approximate.
-
-
-    **kṛpaṇa (कृपण)** — pitiful/miserly → fruit-fixers as spiritually impoverished → “wretched” fits; miserly contraction
-    is heard in the word.
-
-
-    **śaraṇa (शरण)** — refuge/shelter → *buddhi* as where one takes shelter → “take refuge” is right; it is relational, not
-    merely cognitive assent.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Katha Upaniṣad 1.2.1–2 (śreyas vs preyas):** Both rank the truly better over the merely desired fruit.
-
-    *Divergence:* Katha stages choice via Yama; here ranking occurs inside karma-yoga instruction.
-
-
-    **Epictetus, Enchiridion 1:** Both treat clinging to outcomes outside one’s jurisdiction as the root of wretchedness.
-
-    *Divergence:* Stoicism stays with prohairesis; the Gītā names *buddhi-yoga* within dharma and devotion arc.'
+    uncomfortable; comfort usually signals a softened reading.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: buddhi-yoga (बुद्धियोग)
+    definition: yoga of understanding/discriminative intelligence → yoking through resolved knowing → “wisdom yoga” is approximate
+    lemma_id: buddhi
+    sense_id: buddhi.gita
+  - term: kṛpaṇa (कृपण)
+    definition: pitiful/miserly → fruit-fixers as spiritually impoverished → “wretched” fits; miserly contraction is heard
+      in the word
+  - term: śaraṇa (शरण)
+    definition: refuge/shelter → *buddhi* as where one takes shelter → “take refuge” is right; it is relational, not merely
+      cognitive assent
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Katha Upaniṣad 1.2.1–2 (śreyas vs preyas)
+    resonance: Both rank the truly better over the merely desired fruit.
+    passage_id: ''
+    divergence: Katha stages choice via Yama; here ranking occurs inside karma-yoga instruction.
+  - citation: Epictetus, Enchiridion 1
+    resonance: Both treat clinging to outcomes outside one’s jurisdiction as the root of wretchedness.
+    passage_id: ''
+    divergence: Stoicism stays with prohairesis; the Gītā names *buddhi-yoga* within dharma and devotion arc.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'When you catch yourself as *phala-hetu*, place a hand on the sternum and say: “Refuge in understanding,” then name

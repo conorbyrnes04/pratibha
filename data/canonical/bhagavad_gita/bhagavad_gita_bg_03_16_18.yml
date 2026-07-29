@@ -55,38 +55,7 @@ commentary: 'The sacrificial wheel is not optional culture; refusal of it, when 
   freedom. Krishna’s severity toward the non-turner is therefore diagnostic rather than cruel: futility attaches to the combination
   of circuit-refusal plus craving. Conversely, the one whose joy has truly relocated does not need duty as a whip, because
   purpose-dependence on deeds and beings has already burned out. The spiritual task is honest classification, not theatrical
-  exemption.
-
-
-  Key Terms:
-
-
-  **cakra (चक्र)** — wheel -> the sacrificial circulation previously mapped (action–sacrifice–rain–food) -> “cycle of nature”
-  is vague; it is a normative wheel one must turn with
-
-
-  **ātmarati (आत्मरति)** — delight in the Self -> joy whose object is ātman rather than indriya -> “self-love” corrupts it
-  into egoism; here Self is the liberated locus of joy
-
-
-  **kārya (कार्य)** — that which is to be done -> remaining obligatory work -> vanishes only for the one already complete
-  in Self-content, not for the sense-delighted refuser
-
-
-  Cross-Tradition Resonances:
-
-
-  **Buddha, Majjhima Nikāya (Araṇavibhaṅga / duty beyond clinging):** Structural homology in distinguishing those still needing
-  training-forms from those whose interior completion relaxes obligation’s sting.
-
-  *Divergence:* Buddhist arahatship is framed through cessation of āsavas; the Gītā’s exception is ātman-contentment within
-  a theistic-yogic cosmos.
-
-
-  **Meister Eckhart (on the just who take God in works and at rest):** Structural homology in a station where doing and not-doing
-  no longer add purpose.
-
-  *Divergence:* Eckhart’s ground is Godhead detachment; Krishna’s exception is explicitly ātma-rati / ātma-tṛpti language.'
+  exemption.'
 insight: The sacrificial wheel is not optional culture; refusal of it, when one still feeds on sense-delight, renders life
   futile (mogha).
 practice: 'Audit yourself honestly: if sense-delight still pulls, turn one spoke of the wheel today (offer, share, tend);
@@ -164,38 +133,36 @@ pratibha_layers:
     the mask of freedom. Krishna’s severity toward the non-turner is therefore diagnostic rather than cruel: futility attaches
     to the combination of circuit-refusal plus craving. Conversely, the one whose joy has truly relocated does not need duty
     as a whip, because purpose-dependence on deeds and beings has already burned out. The spiritual task is honest classification,
-    not theatrical exemption.
-
-
-    Key Terms:
-
-
-    **cakra (चक्र)** — wheel -> the sacrificial circulation previously mapped (action–sacrifice–rain–food) -> “cycle of nature”
-    is vague; it is a normative wheel one must turn with
-
-
-    **ātmarati (आत्मरति)** — delight in the Self -> joy whose object is ātman rather than indriya -> “self-love” corrupts
-    it into egoism; here Self is the liberated locus of joy
-
-
-    **kārya (कार्य)** — that which is to be done -> remaining obligatory work -> vanishes only for the one already complete
-    in Self-content, not for the sense-delighted refuser
-
-
-    Cross-Tradition Resonances:
-
-
-    **Buddha, Majjhima Nikāya (Araṇavibhaṅga / duty beyond clinging):** Structural homology in distinguishing those still
-    needing training-forms from those whose interior completion relaxes obligation’s sting.
-
-    *Divergence:* Buddhist arahatship is framed through cessation of āsavas; the Gītā’s exception is ātman-contentment within
-    a theistic-yogic cosmos.
-
-
-    **Meister Eckhart (on the just who take God in works and at rest):** Structural homology in a station where doing and
-    not-doing no longer add purpose.
-
-    *Divergence:* Eckhart’s ground is Godhead detachment; Krishna’s exception is explicitly ātma-rati / ātma-tṛpti language.'
+    not theatrical exemption.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: cakra (चक्र)
+    definition: wheel -> the sacrificial circulation previously mapped (action–sacrifice–rain–food) -> “cycle of nature” is
+      vague; it is a normative wheel one must turn with
+    lemma_id: cakra
+    sense_id: cakra.shaiva
+  - term: ātmarati (आत्मरति)
+    definition: delight in the Self -> joy whose object is ātman rather than indriya -> “self-love” corrupts it into egoism;
+      here Self is the liberated locus of joy
+  - term: kārya (कार्य)
+    definition: that which is to be done -> remaining obligatory work -> vanishes only for the one already complete in Self-content,
+      not for the sense-delighted refuser
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Buddha, Majjhima Nikāya (Araṇavibhaṅga / duty beyond clinging)
+    resonance: Structural homology in distinguishing those still needing training-forms from those whose interior completion
+      relaxes obligation’s sting.
+    passage_id: ''
+    divergence: Buddhist arahatship is framed through cessation of āsavas; the Gītā’s exception is ātman-contentment within
+      a theistic-yogic cosmos.
+  - citation: Meister Eckhart (on the just who take God in works and at rest)
+    resonance: Structural homology in a station where doing and not-doing no longer add purpose.
+    passage_id: ''
+    divergence: Eckhart’s ground is Godhead detachment; Krishna’s exception is explicitly ātma-rati / ātma-tṛpti language.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Audit yourself honestly: if sense-delight still pulls, turn one spoke of the wheel today (offer, share, tend); if

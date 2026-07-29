@@ -53,36 +53,7 @@ commentary: 'Power and desire are not banned from the sacred; they are purified 
   God as a trapped resident, mood would equal revelation. Because they rest in God without enclosing God, weather can be witnessed
   without worshipping weather. Desire-not-opposed-to-dharma then becomes a practical filter: wanting that clarifies duty can
   be divine; wanting that bends duty cannot borrow the Lord''s name. Live one decision under that filter and the verse stops
-  being cosmology alone.
-
-
-  Key Terms:
-
-
-  **kāma (काम)** — desire/wish -> here both the rejected lust-attachment and the affirmed dharma-aligned desire -> flat "desire
-  is bad" destroys the verse''s discrimination.
-
-
-  **guṇa (गुण)** — strand/quality (sattva, rajas, tamas) -> the deluding modes of nature''s display -> "quality" as adjective
-  misses cosmological psychology.
-
-
-  **avyaya (अव्यय)** — imperishable, non-expendable -> the Lord beyond guṇa-states -> "eternal" misses the sense of not being
-  used up by manifestation.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Stoic doctrine of preferred indifferents (Epictetus, Discourses):** Both allow natural impulses when they do not violate
-  right relation.
-
-  *Divergence:* Stoicism centers *prohairesis*; Gītā centers the Lord''s asymmetrical relation to the guṇas.
-
-
-  **Laozi on soft power / non-contention:** Both critique brute strength as spiritual measure.
-
-  *Divergence:* Daoist soft power is impersonal efficacy; Gītā names strength *as* the Lord when free of *kāma-rāga*.'
+  being cosmology alone.'
 insight: Power and desire are not banned from the sacred; they are purified by relation to dharma and detached from compulsive
   craving.
 practice: 'Before one act of force today (speech, decision, physical effort), ask: "Is this strength free of craving to dominate?"
@@ -156,36 +127,34 @@ pratibha_layers:
     God as a trapped resident, mood would equal revelation. Because they rest in God without enclosing God, weather can be
     witnessed without worshipping weather. Desire-not-opposed-to-dharma then becomes a practical filter: wanting that clarifies
     duty can be divine; wanting that bends duty cannot borrow the Lord''s name. Live one decision under that filter and the
-    verse stops being cosmology alone.
-
-
-    Key Terms:
-
-
-    **kāma (काम)** — desire/wish -> here both the rejected lust-attachment and the affirmed dharma-aligned desire -> flat
-    "desire is bad" destroys the verse''s discrimination.
-
-
-    **guṇa (गुण)** — strand/quality (sattva, rajas, tamas) -> the deluding modes of nature''s display -> "quality" as adjective
-    misses cosmological psychology.
-
-
-    **avyaya (अव्यय)** — imperishable, non-expendable -> the Lord beyond guṇa-states -> "eternal" misses the sense of not
-    being used up by manifestation.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Stoic doctrine of preferred indifferents (Epictetus, Discourses):** Both allow natural impulses when they do not violate
-    right relation.
-
-    *Divergence:* Stoicism centers *prohairesis*; Gītā centers the Lord''s asymmetrical relation to the guṇas.
-
-
-    **Laozi on soft power / non-contention:** Both critique brute strength as spiritual measure.
-
-    *Divergence:* Daoist soft power is impersonal efficacy; Gītā names strength *as* the Lord when free of *kāma-rāga*.'
+    verse stops being cosmology alone.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: kāma (काम)
+    definition: desire/wish -> here both the rejected lust-attachment and the affirmed dharma-aligned desire -> flat "desire
+      is bad" destroys the verse's discrimination
+  - term: guṇa (गुण)
+    definition: strand/quality (sattva, rajas, tamas) -> the deluding modes of nature's display -> "quality" as adjective
+      misses cosmological psychology
+    lemma_id: guna
+    sense_id: guna.triguna
+  - term: avyaya (अव्यय)
+    definition: imperishable, non-expendable -> the Lord beyond guṇa-states -> "eternal" misses the sense of not being used
+      up by manifestation
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Stoic doctrine of preferred indifferents (Epictetus, Discourses)
+    resonance: Both allow natural impulses when they do not violate right relation.
+    passage_id: ''
+    divergence: Stoicism centers *prohairesis*; Gītā centers the Lord's asymmetrical relation to the guṇas.
+  - citation: Laozi on soft power / non-contention
+    resonance: Both critique brute strength as spiritual measure.
+    passage_id: ''
+    divergence: Daoist soft power is impersonal efficacy; Gītā names strength *as* the Lord when free of *kāma-rāga*.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Before one act of force today (speech, decision, physical effort), ask: "Is this strength free of craving to dominate?"

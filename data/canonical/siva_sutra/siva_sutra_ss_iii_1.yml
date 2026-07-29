@@ -68,8 +68,11 @@ pratibha_layers:
   items:
   - term: ātmā
     definition: Self, here approached indirectly
+    lemma_id: atman
   - term: citta
     definition: mind as reflective field
+    lemma_id: citta
+    sense_id: citta.shaiva
 - kind: resonances
   label: Cross-Tradition Resonances
   items:

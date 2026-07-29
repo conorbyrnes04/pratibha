@@ -51,38 +51,7 @@ commentary: 'The paradox is deliberate: all beings are in Me; I am not in them a
   not change in ordinary time, the claim will not hold when pressure rises. The teaching''s force is practical: what it claims
   about reality must reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time,
   the claim will not hold when pressure rises. Live one concrete implication of the claim before the day ends, so the argument
-  becomes conduct rather than ornament.
-
-
-  Key Terms:
-
-
-  **aiśvara yoga paradox** — Sanskrit technical force in this passage -> beings in Me yet I not confined in them -> default
-  English flattens the contested philosophical work.
-
-  **bhakti** — passage-specific sense tied to Kṛṣṇa''s self-revelation -> what the verse does with the term -> "bhakti" as
-  vague spirituality misses precision.
-
-  **śraddhā / bhakti cluster** — faith-devotion field surrounding the claim -> beings in Me yet I not confined in them ->
-  reducing either to emotion alone loses epistemic and practical force.
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Īśā Upaniṣad 1 (divine pervasion)]:** Structural kinship with chapter 9''s claim: beings in Me yet I not confined in
-  them.
-
-  *Divergence:* Īśā is compressed and impersonal-leaning; Gītā elaborates through personal Lord and bhakti conditions.
-
-  **[Plotinus, Enneads VI.9]:** Both press beyond finite goods toward an ultimate that cannot be owned as an object.
-
-  *Divergence:* Plotinus'' One is beyond personal address; Gītā''s culmination is mad-bhakta relationship under first-person
-  speech.
-
-  **[Augustine on enjoying God vs using finite goods]:** Shared refusal to rest in temporary religious payoffs.
-
-  *Divergence:* Christian beatitude grammar differs from Gītā''s yoga-kṣema, yajña-identity, and refuge vow.'
+  becomes conduct rather than ornament.'
 insight: 'The paradox is deliberate: all beings are in Me; I am not in them as a contained resident; and then — look at My
   yoga — beings are also not in Me possessively, while My Self still bears and births them.'
 practice: Practice support-without-ownership in one relationship for an hour.
@@ -155,38 +124,41 @@ pratibha_layers:
     does not change in ordinary time, the claim will not hold when pressure rises. The teaching''s force is practical: what
     it claims about reality must reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary
     time, the claim will not hold when pressure rises. Live one concrete implication of the claim before the day ends, so
-    the argument becomes conduct rather than ornament.
-
-
-    Key Terms:
-
-
-    **aiśvara yoga paradox** — Sanskrit technical force in this passage -> beings in Me yet I not confined in them -> default
-    English flattens the contested philosophical work.
-
-    **bhakti** — passage-specific sense tied to Kṛṣṇa''s self-revelation -> what the verse does with the term -> "bhakti"
-    as vague spirituality misses precision.
-
-    **śraddhā / bhakti cluster** — faith-devotion field surrounding the claim -> beings in Me yet I not confined in them ->
-    reducing either to emotion alone loses epistemic and practical force.
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Īśā Upaniṣad 1 (divine pervasion)]:** Structural kinship with chapter 9''s claim: beings in Me yet I not confined in
-    them.
-
-    *Divergence:* Īśā is compressed and impersonal-leaning; Gītā elaborates through personal Lord and bhakti conditions.
-
-    **[Plotinus, Enneads VI.9]:** Both press beyond finite goods toward an ultimate that cannot be owned as an object.
-
-    *Divergence:* Plotinus'' One is beyond personal address; Gītā''s culmination is mad-bhakta relationship under first-person
-    speech.
-
-    **[Augustine on enjoying God vs using finite goods]:** Shared refusal to rest in temporary religious payoffs.
-
-    *Divergence:* Christian beatitude grammar differs from Gītā''s yoga-kṣema, yajña-identity, and refuge vow.'
+    the argument becomes conduct rather than ornament.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: aiśvara yoga paradox
+    definition: Sanskrit technical force in this passage -> beings in Me yet I not confined in them -> default English flattens
+      the contested philosophical work
+  - term: bhakti
+    definition: passage-specific sense tied to Kṛṣṇa's self-revelation -> what the verse does with the term -> "bhakti" as
+      vague spirituality misses precision
+    lemma_id: bhakti
+    sense_id: bhakti.gita
+  - term: śraddhā / bhakti cluster
+    definition: faith-devotion field surrounding the claim -> beings in Me yet I not confined in them -> reducing either to
+      emotion alone loses epistemic and practical force
+    lemma_id: bhakti
+    sense_id: bhakti.gita
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Īśā Upaniṣad 1 (divine pervasion)]'
+    resonance: 'Structural kinship with chapter 9''s claim: beings in Me yet I not confined in them.'
+    passage_id: ''
+    divergence: Īśā is compressed and impersonal-leaning; Gītā elaborates through personal Lord and bhakti conditions.
+  - citation: '[Plotinus, Enneads VI.9]'
+    resonance: Both press beyond finite goods toward an ultimate that cannot be owned as an object.
+    passage_id: ''
+    divergence: Plotinus' One is beyond personal address; Gītā's culmination is mad-bhakta relationship under first-person
+      speech.
+  - citation: '[Augustine on enjoying God vs using finite goods]'
+    resonance: Shared refusal to rest in temporary religious payoffs.
+    passage_id: ''
+    divergence: Christian beatitude grammar differs from Gītā's yoga-kṣema, yajña-identity, and refuge vow.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Practice support-without-ownership in one relationship for an hour.

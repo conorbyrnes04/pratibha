@@ -33,33 +33,7 @@ commentary: 'The causal chain is mercilessly clear: *dhyāna* on objects → *sa
 
   Redesign one rehearsal habit — feed, scroll, fantasy — as ethical interruption of the anger chain at dwelling. Check the
   verse against your next irreversible act before you file it as inspiration. Keep Arjuna’s crisis in view so the line cannot
-  shrink into abstract uplift.
-
-
-  Key Terms:
-
-
-  **dhyāyat (ध्यायत्)** — dwelling/meditating upon → repeated mental inhabitation of objects → “thinking about” is weaker
-  than meditative dwelling.
-
-
-  **saṅga (सङ्ग)** — attachment → adhesive relation born from dwelling → first sticky product of rehearsal.
-
-
-  **kāma → krodha (काम → क्रोध)** — desire to anger → blocked wanting’s heat → the sequence is law-like in this psychology.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Patañjali, Yoga Sūtra 2.3–2.9:** Both map afflictive chains from cognitive-affective sticking.
-
-  *Divergence:* YS embeds in kleśa theory; Gītā gives a four-beat practical chain for interruption.
-
-
-  **Buddhist twelve nidānas (taṇhā–upādāna region):** Both show craving escalating from contact/attention patterns.
-
-  *Divergence:* Buddhism frames dependent origination toward cessation; here the chain warns a warrior toward sthita-prajña.'
+  shrink into abstract uplift.'
 insight: 'The causal chain is mercilessly clear: *dhyāna* on objects → *saṅga* → *kāma* → *krodha*.'
 practice: 'Catch one loop of dwelling on an object. Break it by naming: “dwelling → sticking,” and move attention to breath
   or duty for two minutes.'
@@ -114,33 +88,32 @@ pratibha_layers:
 
     Redesign one rehearsal habit — feed, scroll, fantasy — as ethical interruption of the anger chain at dwelling. Check the
     verse against your next irreversible act before you file it as inspiration. Keep Arjuna’s crisis in view so the line cannot
-    shrink into abstract uplift.
-
-
-    Key Terms:
-
-
-    **dhyāyat (ध्यायत्)** — dwelling/meditating upon → repeated mental inhabitation of objects → “thinking about” is weaker
-    than meditative dwelling.
-
-
-    **saṅga (सङ्ग)** — attachment → adhesive relation born from dwelling → first sticky product of rehearsal.
-
-
-    **kāma → krodha (काम → क्रोध)** — desire to anger → blocked wanting’s heat → the sequence is law-like in this psychology.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Patañjali, Yoga Sūtra 2.3–2.9:** Both map afflictive chains from cognitive-affective sticking.
-
-    *Divergence:* YS embeds in kleśa theory; Gītā gives a four-beat practical chain for interruption.
-
-
-    **Buddhist twelve nidānas (taṇhā–upādāna region):** Both show craving escalating from contact/attention patterns.
-
-    *Divergence:* Buddhism frames dependent origination toward cessation; here the chain warns a warrior toward sthita-prajña.'
+    shrink into abstract uplift.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: dhyāyat (ध्यायत्)
+    definition: dwelling/meditating upon → repeated mental inhabitation of objects → “thinking about” is weaker than meditative
+      dwelling
+  - term: saṅga (सङ्ग)
+    definition: attachment → adhesive relation born from dwelling → first sticky product of rehearsal
+    lemma_id: sanga
+    sense_id: sanga.gita
+  - term: kāma → krodha (काम → क्रोध)
+    definition: desire to anger → blocked wanting’s heat → the sequence is law-like in this psychology
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Patañjali, Yoga Sūtra 2.3–2.9
+    resonance: Both map afflictive chains from cognitive-affective sticking.
+    passage_id: ''
+    divergence: YS embeds in kleśa theory; Gītā gives a four-beat practical chain for interruption.
+  - citation: Buddhist twelve nidānas (taṇhā–upādāna region)
+    resonance: Both show craving escalating from contact/attention patterns.
+    passage_id: ''
+    divergence: Buddhism frames dependent origination toward cessation; here the chain warns a warrior toward sthita-prajña.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Catch one loop of dwelling on an object. Break it by naming: “dwelling → sticking,” and move attention to breath

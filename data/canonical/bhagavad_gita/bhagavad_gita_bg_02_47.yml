@@ -33,34 +33,7 @@ commentary: 'This is the Gītā’s signature compression. *Adhikāra* — right
   error rather than as motivation.
 
 
-  Run the triad end-to-end on one task: act fully, refuse fruit-ownership, refuse cling to inaction.
-
-
-  Key Terms:
-
-
-  **adhikāra (अधिकार)** — jurisdiction/entitlement/fitness for → what rightly falls in your sphere → “right” alone misses
-  office-like claim.
-
-
-  **phala (फल)** — fruit/result → appropriated outcome that binds when claimed → “result” misses possessive ripeness.
-
-
-  **akarma (अकर्म)** — non-action → inaction as possible attachment-object → “not working” is behavioral; the term can also
-  touch freedom-in-action later.
-
-
-  Cross-Tradition Resonances:
-
-
-  **Marcus Aurelius, Meditations 8.5 / 9.6:** Both demand full right action without demand on outcomes.
-
-  *Divergence:* Marcus grounds in cosmopolis and logos; the Gītā grounds in yoga, dharma, and release from *karma-bandha*.
-
-
-  **Zhuozi, Cook Ding / non-possession of skill’s fruit:** Both show excellence without possessive hovering over results.
-
-  *Divergence:* Zhuangzi often dissolves deliberate duty; here duty remains while possession drops.'
+  Run the triad end-to-end on one task: act fully, refuse fruit-ownership, refuse cling to inaction.'
 insight: This is the Gītā’s signature compression.
 practice: Choose one high-stakes task. Define completion only as “full integrity of the action,” write the feared fruit on
   paper, fold it away, and work.
@@ -115,34 +88,33 @@ pratibha_layers:
     error rather than as motivation.
 
 
-    Run the triad end-to-end on one task: act fully, refuse fruit-ownership, refuse cling to inaction.
-
-
-    Key Terms:
-
-
-    **adhikāra (अधिकार)** — jurisdiction/entitlement/fitness for → what rightly falls in your sphere → “right” alone misses
-    office-like claim.
-
-
-    **phala (फल)** — fruit/result → appropriated outcome that binds when claimed → “result” misses possessive ripeness.
-
-
-    **akarma (अकर्म)** — non-action → inaction as possible attachment-object → “not working” is behavioral; the term can also
-    touch freedom-in-action later.
-
-
-    Cross-Tradition Resonances:
-
-
-    **Marcus Aurelius, Meditations 8.5 / 9.6:** Both demand full right action without demand on outcomes.
-
-    *Divergence:* Marcus grounds in cosmopolis and logos; the Gītā grounds in yoga, dharma, and release from *karma-bandha*.
-
-
-    **Zhuozi, Cook Ding / non-possession of skill’s fruit:** Both show excellence without possessive hovering over results.
-
-    *Divergence:* Zhuangzi often dissolves deliberate duty; here duty remains while possession drops.'
+    Run the triad end-to-end on one task: act fully, refuse fruit-ownership, refuse cling to inaction.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: adhikāra (अधिकार)
+    definition: jurisdiction/entitlement/fitness for → what rightly falls in your sphere → “right” alone misses office-like
+      claim
+    lemma_id: adhikara
+    sense_id: adhikara.gita
+  - term: phala (फल)
+    definition: fruit/result → appropriated outcome that binds when claimed → “result” misses possessive ripeness
+  - term: akarma (अकर्म)
+    definition: non-action → inaction as possible attachment-object → “not working” is behavioral; the term can also touch
+      freedom-in-action later
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Marcus Aurelius, Meditations 8.5 / 9.6
+    resonance: Both demand full right action without demand on outcomes.
+    passage_id: ''
+    divergence: Marcus grounds in cosmopolis and logos; the Gītā grounds in yoga, dharma, and release from *karma-bandha*.
+  - citation: Zhuozi, Cook Ding / non-possession of skill’s fruit
+    resonance: Both show excellence without possessive hovering over results.
+    passage_id: ''
+    divergence: Zhuangzi often dissolves deliberate duty; here duty remains while possession drops.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: Choose one high-stakes task. Define completion only as “full integrity of the action,” write the feared fruit on paper,

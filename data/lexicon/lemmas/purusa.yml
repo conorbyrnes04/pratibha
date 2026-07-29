@@ -1,0 +1,46 @@
+id: purusa
+maturity: strong_draft
+scripts:
+  iast: puruṣa
+  devanagari: पुरुष
+aliases:
+- purusa
+- purusha
+- puruṣa
+- spirit
+- person
+traditions:
+- hinduism
+- samkhya
+- bhagavad_gita
+- yoga
+related:
+- lemma_id: prakrti
+  relation: related_as
+- lemma_id: atman
+  relation: related_as
+  note: Puruṣa often functions as the Sāṃkhya-facing name for the conscious witness; ātman is the Upaniṣadic/identity
+    register.
+- lemma_id: brahman
+  relation: related_as
+senses:
+- id: purusa.samkhya_gita
+  label: Conscious witness
+  short: the knower who is not an object among prakṛti’s products
+  etymology: often read as puru-ṣa ‘person’; philosophically the conscious principle
+  traps:
+  - male person / anthropological male
+  - ghost in the machine as a second physical thing
+  - ego-personality
+  traditions:
+  - samkhya
+  - bhagavad_gita
+  - yoga
+  exemplars:
+  - bhagavad_gita.bg_13_02
+  - bhagavad_gita.bg_13_22_24
+  - bhagavad_gita.bg_15_16_18
+  body: 'In Gītā XIII–XV, puruṣa names the field-knower and, at the summit, the supreme Person beyond
+    perishable and imperishable. The point is not anthropology but non-identification with the field.
+
+    '

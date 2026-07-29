@@ -51,37 +51,7 @@ commentary: 'Sectarian splitting of Sāṃkhya and Yoga is called childish. The 
   unifies the two is itself a mark of maturity. Childish splitting of Sāṃkhya and Yoga protects identity brands at the cost
   of seeing. Right establishment in either yields both fruits because the destination is one standing. Renunciation without
   yoga is painful precisely because unyoked quitting leaves desire intact while removing structure. The sage yoked in yoga
-  reaches Brahman swiftly because means and end are already aligned. Mature vision unifies what immature speech divides.
-
-
-  Key Terms:
-
-
-  **sāṃkhya (सांख्य)** — enumeration/discriminative school -> here the knowledge-orientation converging with yoga -> not merely
-  classical dualist system in this verse’s pedagogical use
-
-
-  **sthāna (स्थान)** — standing/place -> shared destination of both approaches -> grounds anti-sectarian claim
-
-
-  **ayogataḥ (अयोगतः)** — without yoga -> condition that makes renunciation hard and painful -> warns against unyoked quitting
-
-
-  Cross-Tradition Resonances:
-
-
-  **Augustine on Mary and Martha:** Structural homology in refusing final rivalry between contemplative and active lives when
-  ordered to one end.
-
-  *Divergence:* Christian ordering is love of God in Christ; here Sāṃkhya-Yoga identity is pedagogical toward Brahman via
-  yoga-yoking.
-
-
-  **Zhu Xi’s unity of knowledge and action:** Structural homology in attacking splits that treat knowing and doing as separable
-  completions.
-
-  *Divergence:* Neo-Confucian unity is moral-li cultivation; the Gītā frames unity as shared sthāna and warns saṃnyāsa without
-  yoga.'
+  reaches Brahman swiftly because means and end are already aligned. Mature vision unifies what immature speech divides.'
 insight: Sectarian splitting of Sāṃkhya and Yoga is called childish.
 practice: If you favor “knowing” over “doing” (or the reverse), practice the neglected pole for one hour as the same path’s
   other foot, aiming at one destination.
@@ -158,37 +128,34 @@ pratibha_layers:
     the cost of seeing. Right establishment in either yields both fruits because the destination is one standing. Renunciation
     without yoga is painful precisely because unyoked quitting leaves desire intact while removing structure. The sage yoked
     in yoga reaches Brahman swiftly because means and end are already aligned. Mature vision unifies what immature speech
-    divides.
-
-
-    Key Terms:
-
-
-    **sāṃkhya (सांख्य)** — enumeration/discriminative school -> here the knowledge-orientation converging with yoga -> not
-    merely classical dualist system in this verse’s pedagogical use
-
-
-    **sthāna (स्थान)** — standing/place -> shared destination of both approaches -> grounds anti-sectarian claim
-
-
-    **ayogataḥ (अयोगतः)** — without yoga -> condition that makes renunciation hard and painful -> warns against unyoked quitting
-
-
-    Cross-Tradition Resonances:
-
-
-    **Augustine on Mary and Martha:** Structural homology in refusing final rivalry between contemplative and active lives
-    when ordered to one end.
-
-    *Divergence:* Christian ordering is love of God in Christ; here Sāṃkhya-Yoga identity is pedagogical toward Brahman via
-    yoga-yoking.
-
-
-    **Zhu Xi’s unity of knowledge and action:** Structural homology in attacking splits that treat knowing and doing as separable
-    completions.
-
-    *Divergence:* Neo-Confucian unity is moral-li cultivation; the Gītā frames unity as shared sthāna and warns saṃnyāsa without
-    yoga.'
+    divides.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: sāṃkhya (सांख्य)
+    definition: enumeration/discriminative school -> here the knowledge-orientation converging with yoga -> not merely classical
+      dualist system in this verse’s pedagogical use
+    lemma_id: samkhya
+    sense_id: samkhya.gita
+  - term: sthāna (स्थान)
+    definition: standing/place -> shared destination of both approaches -> grounds anti-sectarian claim
+  - term: ayogataḥ (अयोगतः)
+    definition: without yoga -> condition that makes renunciation hard and painful -> warns against unyoked quitting
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Augustine on Mary and Martha
+    resonance: Structural homology in refusing final rivalry between contemplative and active lives when ordered to one end.
+    passage_id: ''
+    divergence: Christian ordering is love of God in Christ; here Sāṃkhya-Yoga identity is pedagogical toward Brahman via
+      yoga-yoking.
+  - citation: Zhu Xi’s unity of knowledge and action
+    resonance: Structural homology in attacking splits that treat knowing and doing as separable completions.
+    passage_id: ''
+    divergence: Neo-Confucian unity is moral-li cultivation; the Gītā frames unity as shared sthāna and warns saṃnyāsa without
+      yoga.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: If you favor “knowing” over “doing” (or the reverse), practice the neglected pole for one hour as the same path’s

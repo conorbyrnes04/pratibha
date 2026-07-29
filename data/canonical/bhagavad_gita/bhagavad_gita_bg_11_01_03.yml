@@ -56,28 +56,7 @@ commentary: 'Hearing has done real work: moha is gone. Yet Arjuna asks to see �
   If rehearsal does not change in ordinary time, the claim will not hold when pressure rises. The teaching''s force is practical:
   what it claims about reality must reshape attention and choice, or it remains ornamental. If rehearsal does not change in
   ordinary time, the claim will not hold when pressure rises. Live one concrete implication of the claim before the day ends,
-  so the argument becomes conduct rather than ornament.
-
-
-  Key Terms:
-
-
-  **moha (मोह)** — delusion -> what Arjuna says has departed through gracious teaching -> ''confusion'' understates bondage-character
-  of moha
-
-  **aiśvara rūpa (ऐश्वर रूप)** — lordly form -> what Arjuna wants to see -> ''majestic appearance'' misses sovereignty-form
-
-
-  Cross-Tradition Resonances:
-
-
-  **[Thomas'' desire to see (John 20)]:** Shared movement from word to wanting vision.
-
-  *Divergence:* Resurrection verification differs; Arjuna asks after moha already gone.
-
-  **[Moses asking to see glory (Exodus 33)]:** Shared request for divine self-showing after relationship.
-
-  *Divergence:* Biblical glory-limits differ; Gita will grant a cosmic form through divine eye.'
+  so the argument becomes conduct rather than ornament.'
 insight: 'Hearing has done real work: moha is gone.'
 practice: After study today, ask whether you want only more words or a truer seeing. Name the difference without forcing an
   experience.
@@ -155,28 +134,30 @@ pratibha_layers:
     If rehearsal does not change in ordinary time, the claim will not hold when pressure rises. The teaching''s force is practical:
     what it claims about reality must reshape attention and choice, or it remains ornamental. If rehearsal does not change
     in ordinary time, the claim will not hold when pressure rises. Live one concrete implication of the claim before the day
-    ends, so the argument becomes conduct rather than ornament.
-
-
-    Key Terms:
-
-
-    **moha (मोह)** — delusion -> what Arjuna says has departed through gracious teaching -> ''confusion'' understates bondage-character
-    of moha
-
-    **aiśvara rūpa (ऐश्वर रूप)** — lordly form -> what Arjuna wants to see -> ''majestic appearance'' misses sovereignty-form
-
-
-    Cross-Tradition Resonances:
-
-
-    **[Thomas'' desire to see (John 20)]:** Shared movement from word to wanting vision.
-
-    *Divergence:* Resurrection verification differs; Arjuna asks after moha already gone.
-
-    **[Moses asking to see glory (Exodus 33)]:** Shared request for divine self-showing after relationship.
-
-    *Divergence:* Biblical glory-limits differ; Gita will grant a cosmic form through divine eye.'
+    ends, so the argument becomes conduct rather than ornament.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: moha (मोह)
+    definition: delusion -> what Arjuna says has departed through gracious teaching -> 'confusion' understates bondage-character
+      of moha
+    lemma_id: moha
+    sense_id: moha.shaiva_advaita
+  - term: aiśvara rūpa (ऐश्वर रूप)
+    definition: lordly form -> what Arjuna wants to see -> 'majestic appearance' misses sovereignty-form
+  layer_provenance: promoted-from-commentary
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: '[Thomas'' desire to see (John 20)]'
+    resonance: Shared movement from word to wanting vision.
+    passage_id: ''
+    divergence: Resurrection verification differs; Arjuna asks after moha already gone.
+  - citation: '[Moses asking to see glory (Exodus 33)]'
+    resonance: Shared request for divine self-showing after relationship.
+    passage_id: ''
+    divergence: Biblical glory-limits differ; Gita will grant a cosmic form through divine eye.
+  layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
   body: After study today, ask whether you want only more words or a truer seeing. Name the difference without forcing an

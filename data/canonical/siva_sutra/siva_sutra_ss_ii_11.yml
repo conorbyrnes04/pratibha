@@ -61,10 +61,15 @@ pratibha_layers:
   items:
   - term: kāla
     definition: time as consuming power
+    lemma_id: kala
   - term: yajña
     definition: offering, sacrificial participation
+    lemma_id: yajna
+    sense_id: yajna.gita
   - term: siddhi
     definition: maturation, fulfillment
+    lemma_id: siddhi
+    sense_id: siddhi.shaiva
 - kind: resonances
   label: Cross-Tradition Resonances
   items:

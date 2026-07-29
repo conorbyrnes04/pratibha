@@ -114,12 +114,18 @@ pratibha_layers:
   items:
   - term: jñāna
     definition: articulated knowledge; knowing in structured form
+    lemma_id: jnana
   - term: bandha
     definition: bondage, contraction, limitation
+    lemma_id: bandha
   - term: vikalpa
     definition: conceptual differentiation (implicit)
+    lemma_id: vikalpa
+    sense_id: vikalpa.shaiva
   - term: saṅkoca
     definition: contraction of consciousness (implicit)
+    lemma_id: sankoca
+    sense_id: sankoca.shaiva
   - term: smṛti-bhraṁśa
     definition: forgetting of one’s source (implicit)
 - kind: resonances
