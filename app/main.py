@@ -297,6 +297,18 @@ async def lexicon_list(
     return list_lemmas(q=q, tradition=tradition, limit=limit)
 
 
+@app.get("/lexicon/study")
+async def lexicon_study(minimum_maturity: str = "strong_draft"):
+    """Language-separated flashcard decks built from lexicon senses."""
+    from .lexicon_study import build_study_payload
+
+    allowed = {"structural_draft", "strong_draft", "canonical"}
+    maturity = (minimum_maturity or "strong_draft").strip().lower()
+    if maturity not in allowed:
+        maturity = "strong_draft"
+    return build_study_payload(minimum_maturity=maturity)
+
+
 @app.get("/lexicon/{lemma_id}/passages")
 async def lexicon_lemma_passages(lemma_id: str, limit: int = 30):
     """Slim verse refs whose key_terms mention this lemma (cap ~30)."""

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif+Tibetan:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif+Tibetan:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -2030,4 +2030,439 @@ select:focus-visible {
 .glossary-sense + .glossary-sense {
   padding-top: 1.5rem;
   border-top: 1px solid rgb(240 201 121 / 0.1);
+}
+
+/* ── Lexicon study / flashcards ── */
+.lex-study-hero__title {
+  margin-top: 0.75rem;
+  font-size: clamp(2.6rem, 7vw, 3.75rem);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: var(--foreground);
+}
+
+.lex-deck-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+@media (min-width: 640px) {
+  .lex-deck-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.lex-deck {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+  width: 100%;
+  text-align: left;
+  padding: 1.15rem 1.2rem 1.25rem;
+  border: 1px solid rgb(240 201 121 / 0.14);
+  border-radius: 1rem;
+  background:
+    linear-gradient(165deg, rgb(42 33 28 / 0.55), rgb(23 20 33 / 0.72)),
+    radial-gradient(circle at 12% 0%, rgb(216 168 74 / 0.12), transparent 42%);
+  color: inherit;
+  transition:
+    border-color 0.22s ease,
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.lex-deck:hover {
+  border-color: rgb(240 201 121 / 0.38);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgb(0 0 0 / 0.28);
+}
+
+.lex-deck__sample {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.4rem;
+  min-height: 3.4rem;
+  padding: 0.35rem;
+  border-radius: 0.85rem;
+  background: rgb(9 9 18 / 0.45);
+  border: 1px solid rgb(240 201 121 / 0.12);
+  font-family: "Noto Serif Devanagari", "Noto Serif", "Cormorant Garamond", serif;
+  font-size: 1.65rem;
+  line-height: 1;
+  color: var(--accent-bright);
+}
+
+.lex-deck__eyebrow {
+  display: block;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.lex-deck__title {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--accent-bright);
+}
+
+.lex-deck__blurb {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.lex-deck__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 0.7rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.lex-session__bar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.lex-session__back {
+  border: none;
+  background: transparent;
+  color: rgb(240 201 121 / 0.8);
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.88rem;
+  text-decoration: underline;
+  text-decoration-color: rgb(240 201 121 / 0.25);
+  text-underline-offset: 4px;
+  padding: 0;
+}
+
+.lex-session__back:hover {
+  color: var(--accent-bright);
+}
+
+.lex-session__count {
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.lex-session__progress {
+  height: 2px;
+  margin-bottom: 1.25rem;
+  border-radius: 999px;
+  background: rgb(240 201 121 / 0.12);
+  overflow: hidden;
+}
+
+.lex-session__progress > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(184 91 61 / 0.85), var(--accent-bright));
+  transition: width 0.28s ease;
+}
+
+.lex-flip {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  perspective: 1400px;
+  cursor: pointer;
+  text-align: left;
+  color: inherit;
+}
+
+.lex-flip__inner {
+  position: relative;
+  min-height: 22rem;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.lex-flip--flipped .lex-flip__inner {
+  transform: rotateY(180deg);
+}
+
+.lex-flip__face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.6rem 1.5rem 1.8rem;
+  border-radius: 1.15rem;
+  border: 1px solid rgb(240 201 121 / 0.18);
+  background:
+    radial-gradient(circle at 80% 0%, rgb(50 72 103 / 0.22), transparent 40%),
+    linear-gradient(160deg, rgb(33 26 42 / 0.95), rgb(19 16 26 / 0.98));
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow: 0 24px 50px rgb(0 0 0 / 0.28);
+}
+
+.lex-flip__face--back {
+  transform: rotateY(180deg);
+  background:
+    radial-gradient(circle at 18% 0%, rgb(216 168 74 / 0.14), transparent 42%),
+    linear-gradient(160deg, rgb(42 33 28 / 0.96), rgb(19 16 26 / 0.98));
+}
+
+.lex-flip__mode {
+  margin-bottom: 1rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.lex-flip__prompt {
+  margin-bottom: 1rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.lex-flip__native {
+  font-size: clamp(2.4rem, 8vw, 3.6rem);
+  line-height: 1.15;
+  color: var(--foreground);
+}
+
+.lex-flip__roman {
+  margin-top: 0.55rem;
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  color: var(--accent-bright);
+}
+
+.lex-flip__sense-label {
+  font-size: 1.15rem;
+  color: var(--accent-bright);
+}
+
+.lex-flip__cue {
+  margin-top: 0.75rem;
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
+
+.lex-flip__trap {
+  margin: 0.25rem 0 1rem;
+  padding: 0.9rem 1rem;
+  border-left: 2px solid rgb(184 91 61 / 0.7);
+  background: rgb(184 91 61 / 0.08);
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: #f3d8c4;
+}
+
+.lex-flip__term-hint {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.lex-flip__dot {
+  opacity: 0.45;
+}
+
+.lex-flip__hint {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(168 152 130 / 0.7);
+}
+
+.lex-flip__label {
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--accent-bright);
+}
+
+.lex-flip__correction {
+  margin-top: 0.65rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.92rem;
+  color: #e8b89a;
+}
+
+.lex-flip__short {
+  margin-top: 0.85rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.lex-flip__etym {
+  margin-top: 0.9rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.lex-flip__etym span {
+  color: var(--accent-bright);
+  font-weight: 600;
+}
+
+.lex-flip__traps {
+  margin: 0.85rem 0 0;
+  padding-left: 1.1rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.lex-study-script--cjk {
+  font-family: "Noto Serif", "Songti SC", "STSong", serif;
+  letter-spacing: 0.04em;
+}
+
+.lex-study-script--arabic {
+  font-family: "Noto Naskh Arabic", "Noto Serif", "Traditional Arabic", serif;
+}
+
+.lex-session__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.35rem;
+  min-height: 6.5rem;
+}
+
+.lex-grades {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.lex-grade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.7rem 0.35rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(240 201 121 / 0.16);
+  background: rgb(23 20 33 / 0.85);
+  color: var(--foreground);
+  transition: border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+}
+
+.lex-grade:hover {
+  transform: translateY(-1px);
+  border-color: rgb(240 201 121 / 0.4);
+}
+
+.lex-grade__key {
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--muted-2);
+}
+
+.lex-grade__label {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.lex-grade__hint {
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.68rem;
+  color: var(--muted-2);
+}
+
+.lex-grade--again:hover {
+  background: rgb(184 91 61 / 0.18);
+}
+.lex-grade--hard:hover {
+  background: rgb(216 168 74 / 0.12);
+}
+.lex-grade--good:hover {
+  background: rgb(50 72 103 / 0.35);
+}
+.lex-grade--easy:hover {
+  background: rgb(60 90 70 / 0.28);
+}
+
+.lex-session__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.88rem;
+  color: var(--muted-2);
+}
+
+.lex-session__links a {
+  color: rgb(240 201 121 / 0.85);
+  text-decoration: underline;
+  text-decoration-color: rgb(240 201 121 / 0.25);
+  text-underline-offset: 3px;
+}
+
+.lex-session__links a:hover {
+  color: var(--accent-bright);
+}
+
+.lex-done {
+  padding-top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lex-flip__inner,
+  .lex-deck,
+  .lex-grade,
+  .lex-session__progress > span {
+    transition: none;
+  }
+
+  .lex-flip--flipped .lex-flip__inner {
+    transform: none;
+  }
+
+  .lex-flip--flipped .lex-flip__face--front {
+    display: none;
+  }
+
+  .lex-flip:not(.lex-flip--flipped) .lex-flip__face--back {
+    display: none;
+  }
+
+  .lex-flip__face--back {
+    transform: none;
+  }
 }

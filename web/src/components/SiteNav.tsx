@@ -18,13 +18,15 @@ const SECONDARY: NavLink[] = [
   { href: "/learn", label: "Paths", match: "/learn" },
   { href: "/learn#threads", label: "Threads", match: "/learn#threads" },
   { href: "/random", label: "Oracle" },
-  { href: "/glossary", label: "Glossary" },
+  { href: "/glossary", label: "Glossary", match: "/glossary" },
+  { href: "/glossary/study", label: "Lexicon" },
   { href: "/sources", label: "Sources" },
 ];
 
 function linkIsActive(pathname: string, href: string, match?: string): boolean {
   if (match === "/learn#threads") return false;
   if (match === "/") return pathname === "/";
+  if (match === "/glossary") return pathname === "/glossary";
   const path = match || href;
   return pathname === path || pathname.startsWith(`${path}/`);
 }

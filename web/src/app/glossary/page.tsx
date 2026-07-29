@@ -93,6 +93,11 @@ export default function GlossaryPage() {
         <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
           Terms that do philosophical work across the manuscript — senses by tradition, not a flat dictionary.
         </p>
+        <p className="mt-5">
+          <Link href="/glossary/study" className="btn-secondary inline-flex px-5 py-2.5 text-sm">
+            Study by language →
+          </Link>
+        </p>
       </header>
 
       <div className="mt-8 space-y-4">

@@ -7,6 +7,7 @@ import {
 } from "@/lib/catalogCache";
 import type { ChatOptions, EditorialMaturity, Source, SourcesPayload, VerseItem } from "@/lib/types";
 import type { Lemma, LemmaPassageRef, LexiconListItem, LexiconListResponse } from "@/lib/lexiconTypes";
+import type { LexiconStudyPayload } from "@/lib/lexiconStudyTypes";
 
 // Set NEXT_PUBLIC_API_BASE to the deployed backend URL (baked in at build time).
 // The localhost fallback only applies in development so a misconfigured
@@ -297,6 +298,16 @@ export async function getLexicon(opts: {
   const items = Array.isArray(data?.items) ? (data.items as LexiconListItem[]) : [];
   const total = typeof data?.total === "number" ? data.total : items.length;
   return { items, total };
+}
+
+/** Language decks + sense cards. Backend: `GET /lexicon/study`. */
+export async function getLexiconStudy(
+  minimumMaturity: "structural_draft" | "strong_draft" | "canonical" = "strong_draft",
+): Promise<LexiconStudyPayload> {
+  const params = new URLSearchParams({ minimum_maturity: minimumMaturity });
+  const res = await fetch(`${API_BASE}/lexicon/study?${params}`, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Failed to load lexicon study (${res.status})`);
+  return (await res.json()) as LexiconStudyPayload;
 }
 
 /** Full lemma document. Backend: `GET /lexicon/{id}`. */

@@ -101,6 +101,11 @@ export default function GlossaryLemmaPage() {
                 {(lemma.traditions || []).map(traditionLabel).join(" · ")}
               </p>
             ) : null}
+            <p className="mt-5">
+              <Link href="/glossary/study" className="btn-secondary inline-flex px-4 py-2 text-sm">
+                Drill sacred terms →
+              </Link>
+            </p>
           </header>
 
           <div className="ornament my-8" />
