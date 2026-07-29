@@ -7,9 +7,102 @@ unit_id: bhagavad_gita.bg_md_004
 unit_label: Knowledge Burns Ownership
 title: Knowledge Burns Ownership
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Unit body follows the supplied English rendering (Sir Edwin Arnold). Source-verified
-  Devanagari not yet aligned line-by-line in this pass.'
-sanskrit_iast: '*Source-language basis:* Full verse-level IAST alignment pending dedicated Sanskrit extraction pass.'
+sanskrit_devanagari: 'कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः ।
+
+  स बुद्धिमान् मनुष्येषु स युक्तः कृत्स्नकर्मकृत् ॥ ४.१८ ॥
+
+
+  यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः ।
+
+  ज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः ॥ ४.१९ ॥
+
+
+  त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः ।
+
+  कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥ ४.२० ॥
+
+
+  निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः ।
+
+  शारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥ ४.२१ ॥
+
+
+  यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः ।
+
+  समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥ ४.२२ ॥
+
+
+  गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः ।
+
+  यज्ञायाचरतः कर्म समग्रं प्रविलीयते ॥ ४.२३ ॥
+
+
+  ब्रह्मार्पणं ब्रह्महविर्ब्रह्माग्नौ ब्रह्मणा हुतम् ।
+
+  ब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना ॥ ४.२४ ॥
+
+
+  यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन ।
+
+  ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥ ४.३७ ॥
+
+
+  न हि ज्ञानेन सदृशं पवित्रमिह विद्यते ।
+
+  तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥ ४.३८ ॥
+
+
+  श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः ।
+
+  ज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति ॥ ४.३९ ॥'
+sanskrit_iast: 'karmaṇyakarma yaḥ paśyedakarmaṇi ca karma yaḥ |
+
+  sa buddhimān manuṣyeṣu sa yuktaḥ kṛtsnakarmakṛt || 4.18 ||
+
+
+  yasya sarve samārambhāḥ kāmasaṅkalpavarjitāḥ |
+
+  jñānāgnidagdhakarmāṇaṃ tamāhuḥ paṇḍitaṃ budhāḥ || 4.19 ||
+
+
+  tyaktvā karmaphalāsaṅgaṃ nityatṛpto nirāśrayaḥ |
+
+  karmaṇyabhipravṛtto''pi naiva kiñcitkaroti saḥ || 4.20 ||
+
+
+  nirāśīryatacittātmā tyaktasarvaparigrahaḥ |
+
+  śārīraṃ kevalaṃ karma kurvannāpnoti kilbiṣam || 4.21 ||
+
+
+  yadṛcchālābhasantuṣṭo dvandvātīto vimatsaraḥ |
+
+  samaḥ siddhāvasiddhau ca kṛtvāpi na nibadhyate || 4.22 ||
+
+
+  gatasaṅgasya muktasya jñānāvasthitacetasaḥ |
+
+  yajñāyācarataḥ karma samagraṃ pravilīyate || 4.23 ||
+
+
+  brahmārpaṇaṃ brahmahavirbrahmāgnau brahmaṇā hutam |
+
+  brahmaiva tena gantavyaṃ brahmakarmasamādhinā || 4.24 ||
+
+
+  yathaidhāṃsi samiddho''gnirbhasmasātkurute''rjuna |
+
+  jñānāgniḥ sarvakarmāṇi bhasmasātkurute tathā || 4.37 ||
+
+
+  na hi jñānena sadṛśaṃ pavitramiha vidyate |
+
+  tatsvayaṃ yogasaṃsiddhaḥ kālenātmani vindati || 4.38 ||
+
+
+  śraddhāvām̐llabhate jñānaṃ tatparaḥ saṃyatendriyaḥ |
+
+  jñānaṃ labdhvā parāṃ śāntimacireṇādhigacchati || 4.39 ||'
 translation_literal: True knowing alters the ontology of action. When the actor-identity is seen as provisional, compulsive
   ownership weakens. Action continues, but its binding residue burns in the fire of discernment.
 commentary: 'The claim is that liberation requires epistemic transformation, not only ethical effort. The counterintuitive
@@ -74,8 +167,54 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '*Source-language basis:* Unit body follows the supplied English rendering (Sir Edwin Arnold). Source-verified Devanagari
-    not yet aligned line-by-line in this pass.'
+  body: 'कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः ।
+
+    स बुद्धिमान् मनुष्येषु स युक्तः कृत्स्नकर्मकृत् ॥ ४.१८ ॥
+
+
+    यस्य सर्वे समारम्भाः कामसङ्कल्पवर्जिताः ।
+
+    ज्ञानाग्निदग्धकर्माणं तमाहुः पण्डितं बुधाः ॥ ४.१९ ॥
+
+
+    त्यक्त्वा कर्मफलासङ्गं नित्यतृप्तो निराश्रयः ।
+
+    कर्मण्यभिप्रवृत्तोऽपि नैव किञ्चित्करोति सः ॥ ४.२० ॥
+
+
+    निराशीर्यतचित्तात्मा त्यक्तसर्वपरिग्रहः ।
+
+    शारीरं केवलं कर्म कुर्वन्नाप्नोति किल्बिषम् ॥ ४.२१ ॥
+
+
+    यदृच्छालाभसन्तुष्टो द्वन्द्वातीतो विमत्सरः ।
+
+    समः सिद्धावसिद्धौ च कृत्वापि न निबध्यते ॥ ४.२२ ॥
+
+
+    गतसङ्गस्य मुक्तस्य ज्ञानावस्थितचेतसः ।
+
+    यज्ञायाचरतः कर्म समग्रं प्रविलीयते ॥ ४.२३ ॥
+
+
+    ब्रह्मार्पणं ब्रह्महविर्ब्रह्माग्नौ ब्रह्मणा हुतम् ।
+
+    ब्रह्मैव तेन गन्तव्यं ब्रह्मकर्मसमाधिना ॥ ४.२४ ॥
+
+
+    यथैधांसि समिद्धोऽग्निर्भस्मसात्कुरुतेऽर्जुन ।
+
+    ज्ञानाग्निः सर्वकर्माणि भस्मसात्कुरुते तथा ॥ ४.३७ ॥
+
+
+    न हि ज्ञानेन सदृशं पवित्रमिह विद्यते ।
+
+    तत्स्वयं योगसंसिद्धः कालेनात्मनि विन्दति ॥ ४.३८ ॥
+
+
+    श्रद्धावाँल्लभते ज्ञानं तत्परः संयतेन्द्रियः ।
+
+    ज्ञानं लब्ध्वा परां शान्तिमचिरेणाधिगच्छति ॥ ४.३९ ॥'
 - kind: translation
   label: Pratibha Translation
   body: True knowing alters the ontology of action. When the actor-identity is seen as provisional, compulsive ownership weakens.

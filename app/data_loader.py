@@ -365,6 +365,26 @@ def _contains_devanagari(text: str) -> bool:
     return bool(re.search(r"[\u0900-\u097F]", text))
 
 
+def _contains_tibetan(text: str) -> bool:
+    return bool(re.search(r"[\u0F00-\u0FFF]", text))
+
+
+def _raw_source_script(item: dict[str, Any]) -> str:
+    """Best available raw source script for the Original layer.
+
+    The authored `pratibha_layers` "original" body is sometimes a romanization
+    (Wylie for the Tibetan songs) or a "*Source-language basis:*" note, while
+    the actual script sits unused in `tibetan_uchen` / `sanskrit_devanagari`.
+    Prefer real script (Tibetan Uchen, then Devanagari) over any romanized or
+    placeholder body so the Original layer shows the source, not a transcription.
+    """
+    for key in ("tibetan_uchen", "sanskrit_devanagari", "sanskrit"):
+        value = _as_text(item.get(key))
+        if value and (_contains_tibetan(value) or _contains_devanagari(value)):
+            return value
+    return ""
+
+
 def _passage_uses_iast(out: dict[str, Any]) -> bool:
     collection = _as_text(out.get("collection"))
     if collection and _NON_SANSKRIT_COLLECTION.search(collection):
@@ -411,6 +431,16 @@ def _finalize_layers(layers: list[dict[str, Any]], out: dict[str, Any] | None = 
                 continue
             layer = {**layer, "label": "IAST"}
         elif kind == "original":
+            body = _as_text(layer.get("body"))
+            # Suppress placeholder-only originals ("*Source-language basis:* …")
+            # when no real script backs them — showing an editorial note as the
+            # Original layer is misleading (e.g. Bhagavad Gita has no Devanagari
+            # in the corpus yet). Genuine non-Devanagari originals (Chinese,
+            # Greek, romanized Pali) carry no such marker and are kept.
+            if body.startswith("*Source-language basis:*") and not (
+                _contains_devanagari(body) or _contains_tibetan(body)
+            ):
+                continue
             layer = {**layer, "label": "Original"}
         result.append(layer)
     return result
@@ -460,11 +490,19 @@ def _build_layers(item: dict[str, Any], out: dict[str, Any], raw_commentary: str
     # Key Terms / Resonances tails from explicit commentary so study view stays
     # readable; parsed structured layers from derived fill in when missing.
     by_kind = {layer["kind"]: layer for layer in derived}
+    raw_script = _as_text(out.get("sanskrit"))
+    raw_script_is_script = _contains_tibetan(raw_script) or _contains_devanagari(raw_script)
     for layer in explicit_layers:
         kind = str(layer.get("kind") or "")
         merged = dict(layer)
         if kind == "commentary":
             merged["body"] = _strip_layer_tail(str(layer.get("body") or ""))
+        if kind == "original" and raw_script_is_script:
+            # Never let an authored romanization / "*Source-language basis:*"
+            # note occupy the Original slot when actual source script exists.
+            body = _as_text(layer.get("body"))
+            if not (_contains_tibetan(body) or _contains_devanagari(body)):
+                merged["body"] = raw_script
         by_kind[kind] = merged
     order = ["original", "iast", "translation", "commentary", "key_terms", "resonances", "practice", "appendix"]
     merged = sorted(by_kind.values(), key=lambda layer: order.index(layer["kind"]) if layer["kind"] in order else 99)
@@ -502,7 +540,7 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
     out["translation"] = _as_text(item.get("translation") or item.get("translation_literal"))
     raw_commentary = _as_text(item.get("commentary"))
     out["commentary"] = _strip_layer_tail(raw_commentary) if _commentary_is_authored(raw_commentary) else ""
-    out["sanskrit"] = _as_text(item.get("sanskrit") or item.get("sanskrit_devanagari"))
+    out["sanskrit"] = _raw_source_script(item) or _as_text(item.get("sanskrit") or item.get("sanskrit_devanagari"))
     out["transliteration"] = _as_text(item.get("transliteration") or item.get("sanskrit_iast"))
     out["title"] = _as_text(item.get("title") or item.get("unit_label") or item.get("sutra") or out["sutra_id"])
     out["themes"] = item.get("themes") if isinstance(item.get("themes"), list) else []

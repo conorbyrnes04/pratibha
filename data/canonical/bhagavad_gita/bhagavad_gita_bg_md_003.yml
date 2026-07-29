@@ -7,9 +7,82 @@ unit_id: bhagavad_gita.bg_md_003
 unit_label: Yajna as the Ecology of Action
 title: Yajna as the Ecology of Action
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Unit body follows the supplied English rendering (Sir Edwin Arnold). Source-verified
-  Devanagari not yet aligned line-by-line in this pass.'
-sanskrit_iast: '*Source-language basis:* Full verse-level IAST alignment pending dedicated Sanskrit extraction pass.'
+sanskrit_devanagari: 'यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः ।
+
+  तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥ ३.९ ॥
+
+
+  सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः ।
+
+  अनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक् ॥ ३.१० ॥
+
+
+  देवान्भावयतानेन ते देवा भावयन्तु वः ।
+
+  परस्परं भावयन्तः श्रेयः परमवाप्स्यथ ॥ ३.११ ॥
+
+
+  इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः ।
+
+  तैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः ॥ ३.१२ ॥
+
+
+  यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः ।
+
+  भुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात् ॥ ३.१३ ॥
+
+
+  अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः ।
+
+  यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ॥ ३.१४ ॥
+
+
+  कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम् ।
+
+  तस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम् ॥ ३.१५ ॥
+
+
+  एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः ।
+
+  अघायुरिन्द्रियारामो मोघं पार्थ स जीवति ॥ ३.१६ ॥'
+sanskrit_iast: 'yajñārthātkarmaṇo''nyatra loko''yaṃ karmabandhanaḥ |
+
+  tadarthaṃ karma kaunteya muktasaṃgaḥ samācara || 3.9 ||
+
+
+  sahayajñāḥ prajāḥ sṛṣṭvā purovāca prajāpatiḥ |
+
+  anena prasaviṣyadhvameṣa vo''stviṣṭakāmadhuk || 3.10 ||
+
+
+  devānbhāvayatānena te devā bhāvayantu vaḥ |
+
+  parasparaṃ bhāvayantaḥ śreyaḥ paramavāpsyatha || 3.11 ||
+
+
+  iṣṭānbhogānhi vo devā dāsyante yajñabhāvitāḥ |
+
+  tairdattānapradāyaibhyo yo bhuṅkte stena eva saḥ || 3.12 ||
+
+
+  yajñaśiṣṭāśinaḥ santo mucyante sarvakilbiṣaiḥ |
+
+  bhuñjate te tvaghaṃ pāpā ye pacantyātmakāraṇāt || 3.13 ||
+
+
+  annādbhavanti bhūtāni parjanyādannasambhavaḥ |
+
+  yajñādbhavati parjanyo yajñaḥ karmasamudbhavaḥ || 3.14 ||
+
+
+  karma brahmodbhavaṃ viddhi brahmākṣarasamudbhavam |
+
+  tasmātsarvagataṃ brahma nityaṃ yajñe pratiṣṭhitam || 3.15 ||
+
+
+  evaṃ pravartitaṃ cakraṃ nānuvartayatīha yaḥ |
+
+  aghāyurindriyārāmo moghaṃ pārtha sa jīvati || 3.16 ||'
 translation_literal: Action becomes binding when taken as private consumption; it becomes liberative when offered as yajna--reciprocal
   participation in the larger order that sustains all life. To live well is to contribute to the sustaining cycle, not merely
   extract from it.
@@ -74,8 +147,44 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: '*Source-language basis:* Unit body follows the supplied English rendering (Sir Edwin Arnold). Source-verified Devanagari
-    not yet aligned line-by-line in this pass.'
+  body: 'यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः ।
+
+    तदर्थं कर्म कौन्तेय मुक्तसंगः समाचर ॥ ३.९ ॥
+
+
+    सहयज्ञाः प्रजाः सृष्ट्वा पुरोवाच प्रजापतिः ।
+
+    अनेन प्रसविष्यध्वमेष वोऽस्त्विष्टकामधुक् ॥ ३.१० ॥
+
+
+    देवान्भावयतानेन ते देवा भावयन्तु वः ।
+
+    परस्परं भावयन्तः श्रेयः परमवाप्स्यथ ॥ ३.११ ॥
+
+
+    इष्टान्भोगान्हि वो देवा दास्यन्ते यज्ञभाविताः ।
+
+    तैर्दत्तानप्रदायैभ्यो यो भुङ्क्ते स्तेन एव सः ॥ ३.१२ ॥
+
+
+    यज्ञशिष्टाशिनः सन्तो मुच्यन्ते सर्वकिल्बिषैः ।
+
+    भुञ्जते ते त्वघं पापा ये पचन्त्यात्मकारणात् ॥ ३.१३ ॥
+
+
+    अन्नाद्भवन्ति भूतानि पर्जन्यादन्नसम्भवः ।
+
+    यज्ञाद्भवति पर्जन्यो यज्ञः कर्मसमुद्भवः ॥ ३.१४ ॥
+
+
+    कर्म ब्रह्मोद्भवं विद्धि ब्रह्माक्षरसमुद्भवम् ।
+
+    तस्मात्सर्वगतं ब्रह्म नित्यं यज्ञे प्रतिष्ठितम् ॥ ३.१५ ॥
+
+
+    एवं प्रवर्तितं चक्रं नानुवर्तयतीह यः ।
+
+    अघायुरिन्द्रियारामो मोघं पार्थ स जीवति ॥ ३.१६ ॥'
 - kind: translation
   label: Pratibha Translation
   body: Action becomes binding when taken as private consumption; it becomes liberative when offered as yajna--reciprocal

@@ -27,7 +27,8 @@
     "pd_source_text_available": true,
     "pd_source_text_note": "Sanskrit (Mahābhārata, Bhīṣma Parvan) in Pratibha manuscript; also data/raw_texts/pd/indian/bhagavad_gita_arnold_gutenberg_2388.txt",
     "recommended_action": "keep+attribute",
-    "confidence": "high — Arnold anchor is unambiguously PD and already on file"
+    "confidence": "high — Arnold anchor is unambiguously PD and already on file",
+    "pd_devanagari_source": "Devanagari + IAST slokas from the gita/gita dataset (github.com/gita/gita, data/verse.json), released into the public domain (Unlicense). Sliced to each unit’s manuscript verse range; IAST generated deterministically from the Devanagari. Chapter 13 offset (dataset numbers an extra 13.1) corrected to vulgate numbering."
   },
   "Chāndogya Upaniṣad": {
     "tier": "A",
