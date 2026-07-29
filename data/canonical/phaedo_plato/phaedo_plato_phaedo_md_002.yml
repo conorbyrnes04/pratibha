@@ -7,120 +7,51 @@ unit_id: phaedo_plato.phaedo_md_002
 unit_label: Knowledge as Recollection
 title: Knowledge as Recollection
 unit_type: sutra
-sanskrit_devanagari: καὶ κατ’ ἐκεῖνόν γε τὸν λόγον, ὦ Σώκρατες, εἰ ἀληθής ἐστιν, ὃν σὺ εἴωθας θαμὰ λέγειν, ὅτι ἡμῖν ἡ μάθησις
-  οὐκ ἄλλο τι ἢ ἀνάμνησις τυγχάνει οὖσα, καὶ κατὰ τοῦτον ἀνάγκη που ἡμᾶς ἐν προτέρῳ τινὶ χρόνῳ μεμαθηκέναι ἃ νῦν ἀναμιμνῃσκόμεθα.
-  ΦΑΙΔ. τοῦτο δὲ ἀδύνατον, εἰ μὴ ἦν που ἡμῖν ἡ ψυχὴ πρὶν ἐν τῷδε τῷ ἀνθρωπίνῳ εἴδει γενέσθαι· ὥστε καὶ ταύτῃ ἀθάνατον ἡ ψυχή
-  τι ἔοικεν εἶναι. ἀλλά, ὦ Κέβης, ἔφη ὁ Σιμμίας ὑπολαβών, ποῖαι τούτων αἱ ἀποδείξεις; ὑπόμνησόν με· οὐ γὰρ σφόδρα ἐν τῷ παρόντι
-  μέμνημαι. ἑνὶ μὲν λόγῳ, ἔφη ὁ Κέβης, καλλίστῳ, ὅτι ἐρωτώμενοι οἱ ἄνθρωποι, ἐάν τις καλῶς ἐρωτᾷ, αὐτοὶ λέγουσιν πάντα ᾗ ἔχει
-  — καίτοι εἰ μὴ ἐτύγχανεν αὐτοῖς ἐπιστήμη ἐνοῦσα καὶ ὀρθὸς λόγος, οὐκ ἂν οἷοί τ’ ἦσαν τοῦτο ποιῆσαι — ἔπειτα ἐάν τις ἐπὶ
-  τὰ διαγράμματα ἄγῃ ἢ ἄλλο τι τῶν τοιούτων, ἐνταῦθα σαφέστατα κατηγορεῖ ὅτι τοῦτο οὕτως ἔχει. εἰ δὲ μὴ ταύτῃ γε, ἔφη, πείθῃ,
-  ὦ Σιμμία, ὁ Σωκράτης, σκέψαι ἂν τῇδέ πῄ σοι σκοπουμένῳ συνδόξῃ. ἀπιστεῖς γὰρ δὴ πῶς ἡ καλουμένη μάθησις ἀνάμνησίς ἐστιν;
-  ἀπιστῶ μέν σοι ἔγωγε, ἦ δ’ ὃς ὁ Σιμμίας, οὔ, αὐτὸ δὲ τοῦτο, ἔφη, δέομαι παθεῖν περὶ οὗ ὁ λόγος, ἀναμνησθῆναι. καὶ σχεδόν
-  γε ἐξ ὧν Κέβης ἐπεχείρησε λέγειν ἤδη μέμνημαι καὶ πείθομαι· οὐδὲν μεντἂν ἧττον ἀκούοιμι νῦν πῇ σὺ ἐπεχείρησας λέγειν. τῇδ’
-  ἔγωγε, ἦ δ’ ὅς. ὁμολογοῦμεν γὰρ δήπου, εἴ τίς τι ἀναμνησθήσεται, δεῖν αὐτὸν τοῦτο πρότερόν ποτε ἐπίστασθαι. πάνυ γ᾽, ἔφη.
-  ἆρ’ οὖν καὶ τόδε ὁμολογοῦμεν, ὅταν ἐπιστήμη παραγίγνηται τρόπῳ τοιούτῳ, ἀνάμνησιν εἶναι; λέγω δὲ τίνα τρόπον; τόνδε. ἐάν
-  τίς τι ἕτερον ἢ ἰδὼν ἢ ἀκούσας ἤ τινα ἄλλην αἴσθησιν λαβὼν μὴ μόνον ἐκεῖνο γνῷ, ἀλλὰ καὶ ἕτερον ἐννοήσῃ οὗ μὴ ἡ αὐτὴ ἐπιστήμη
-  ἀλλ’ ἄλλη, ἆρα οὐχὶ τοῦτο δικαίως λέγομεν ὅτι ἀνεμνήσθη, οὗ τὴν ἔννοιαν ἔλαβεν; πῶς λέγεις; οἷον τὰ τοιάδε· ἄλλη που ἐπιστήμη
-  ἀνθρώπου καὶ λύρας. πῶς γὰρ οὔ; οὐκοῦν οἶσθα ὅτι οἱ ἐρασταί, ὅταν ἴδωσιν λύραν ἢ ἱμάτιον ἢ ἄλλο τι οἷς τὰ παιδικὰ αὐτῶν
-  εἴωθε χρῆσθαι, πάσχουσι τοῦτο· ἔγνωσάν τε τὴν λύραν καὶ ἐν τῇ διανοίᾳ ἔλαβον τὸ εἶδος τοῦ παιδὸς οὗ ἦν ἡ λύρα; τοῦτο δέ
-  ἐστιν ἀνάμνησις· ὥσπερ γε καὶ Σιμμίαν τις ἰδὼν πολλάκις κέβητος ἀνεμνήσθη, καὶ ἄλλα που μυρία τοιαῦτ’ ἂν εἴη. μυρία μέντοι
-  νὴ Δία, ἔφη ὁ Σιμμίας. οὐκοῦν, ἦ δ’ ὅς, τὸ τοιοῦτον ἀνάμνησίς τίς ἐστι; μάλιστα μέντοι ὅταν τις τοῦτο πάθῃ περὶ ἐκεῖνα ἃ
-  ὑπὸ χρόνου καὶ τοῦ μὴ ἐπισκοπεῖν ἤδη ἐπελέληστο; πάνυ μὲν οὖν, ἔφη. τί δέ; ἦ δ’ ὅς· ἔστιν ἵππον γεγραμμένον ἰδόντα καὶ λύραν
-  γεγραμμένην ἀνθρώπου ἀναμνησθῆναι, καὶ Σιμμίαν ἰδόντα γεγραμμένον κέβητος ἀναμνησθῆναι; πάνυ γε. ΦΑΙΔ. οὐκοῦν καὶ Σιμμίαν
-  ἰδόντα γεγραμμένον αὐτοῦ Σιμμίου ἀναμνησθῆναι; ἔστι μέντοι, ἔφη. ἆρ’ οὖν οὐ κατὰ πάντα ταῦτα συμβαίνει τὴν ἀνάμνησιν εἶναι
-  μὲν ἀφ’ ὁμοίων, εἶναι δὲ καὶ ἀπὸ ἀνομοίων; συμβαίνει. ἀλλ’ ὅταν γε ἀπὸ τῶν ὁμοίων ἀναμιμνῄσκηταί τίς τι, ἆρ’ οὐκ ἀναγκαῖον
-  τόδε προσπάσχειν, ἐννοεῖν εἴτε τι ἐλλείπει τοῦτο κατὰ τὴν ὁμοιότητα εἴτε μὴ ἐκείνου οὗ ἀνεμνήσθη; ἀνάγκη, ἔφη. σκόπει δή,
-  ἦ δ’ ὅς, εἰ ταῦτα οὕτως ἔχει. φαμέν πού τι εἶναι ἴσον, οὐ ξύλον λέγω ξύλῳ οὐδὲ λίθον λίθῳ οὐδ᾽ ἄλλο τῶν τοιούτων οὐδέν,
-  ἀλλὰ παρὰ ταῦτα πάντα ἕτερόν τι, αὐτὸ τὸ ἴσον· φῶμέν τι εἶναι ἢ μηδέν; φῶμεν μέντοι νὴ Δί᾽, ἔφη ὁ Σιμμίας, θαυμαστῶς γε.
-  ἦ καὶ ἐπιστάμεθα αὐτὸ ὃ ἔστιν; πάνυ γε, ἦ δ’ ὅς. πόθεν λαβόντες αὐτοῦ τὴν ἐπιστήμην; ἆρ’ οὐκ ἐξ ὧν νυνδὴ ἐλέγομεν, ἢ ξύλα
-  ἢ λίθους ἢ ἄλλα ἄττα ἰδόντες ἴσα, ἐκ τούτων ἐκεῖνο ἐνενοήσαμεν, ἕτερον ὂν τούτων; ἢ οὐχ ἕτερόν σοι φαίνεται; σκόπει δὲ καὶ
-  τῇδε. ἆρ’ οὐ λίθοι μὲν ἴσοι καὶ ξύλα ἐνίοτε ταὐτὰ ὄντα τῷ μὲν ἴσα φαίνεται, τῷ δ’ οὔ; πάνυ μὲν οὖν. τί δέ; αὐτὰ τὰ ἴσα ἔστιν
-  ὅτε ἄνισά σοι ἐφάνη, ἢ ἡ ἰσότης ἀνισότης; οὐδεπώποτέ γε, ὦ Σώκρατες. οὐ ταὐτὸν ἄρα ἐστίν, ἦ δ’ ὅς, ταῦτά τε τὰ ἴσα καὶ αὐτὸ
-  τὸ ἴσον. οὐδαμῶς μοι φαίνεται, ὦ Σώκρατες. ἀλλὰ μὴν ἐκ τούτων γ᾽, ἔφη, τῶν ἴσων, ἑτέρων ὄντων ἐκείνου τοῦ ἴσου, ὅμως αὐτοῦ
-  τὴν ἐπιστήμην ἐννενόηκάς τε καὶ εἴληφας; ἀληθέστατα, ἔφη, λέγεις. οὐκοῦν ἢ ὁμοίου ὄντος τούτοις ἢ ἀνομοίου; πάνυ γε. διαφέρει
-  δέ γε, ἦ δ’ ὅς, οὐδέν· ἕως ἂν ἄλλο ἰδὼν ἀπὸ ταύτης τῆς ὄψεως ἄλλο ἐννοήσῃς, εἴτε ὅμοιον εἴτε ἀνόμοιον, ἀναγκαῖον, ἔφη, αὐτὸ
-  ἀνάμνησιν γεγονέναι. πάνυ μὲν οὖν. τί δέ; ἦ δ’ ὅς· ἦ πάσχομέν τι τοιοῦτον περὶ τὰ ἐν τοῖς ξύλοις τε καὶ οἷς νυνδὴ ἐλέγομεν
-  τοῖς ἴσοις; ἆρα φαίνεται ἡμῖν οὕτως ἴσα εἶναι ὥσπερ αὐτὸ τὸ ὃ ἔστιν, ἢ ἐνδεῖ τι ἐκείνου τῷ τοιοῦτον εἶναι οἷον τὸ ἴσον,
-  ἢ οὐδέν; καὶ πολύ γε, ἔφη, ἐνδεῖ. οὐκοῦν ὁμολογοῦμεν, ὅταν τίς τι ἰδὼν ἐννοήσῃ ὅτι βούλεται μὲν τοῦτο ὃ νῦν ἐγὼ ὁρῶ εἶναι
-  οἷον ἄλλο τι τῶν ὄντων, ἐνδεῖ δὲ καὶ οὐ δύναται τοιοῦτον εἶναι ἴσον οἷον ἐκεῖνο, ἀλλ’ ἔστιν φαυλότερον, ἀναγκαῖόν που τὸν
-  τοῦτο ἐννοοῦντα τυχεῖν προειδότα ἐκεῖνο ᾧ φησιν αὐτὸ προσεοικέναι μέν, ἐνδεεστέρως δὲ ἔχειν; ἀνάγκη. τί οὖν; τὸ τοιοῦτον
-  πεπόνθαμεν καὶ ἡμεῖς ἢ οὒ περί τε τὰ ἴσα καὶ αὐτὸ τὸ ἴσον; παντάπασί γε. ΦΑΙΔ. ἀναγκαῖον ἄρα ἡμᾶς προειδέναι τὸ ἴσον πρὸ
-  ἐκείνου τοῦ χρόνου ὅτε τὸ πρῶτον ἰδόντες τὰ ἴσα ἐνενοήσαμεν ὅτι ὀρέγεται μὲν πάντα ταῦτα εἶναι οἷον τὸ ἴσον, ἔχει δὲ ἐνδεεστέρως.
-  ἔστι ταῦτα. ἀλλὰ μὴν καὶ τόδε ὁμολογοῦμεν, μὴ ἄλλοθεν αὐτὸ ἐννενοηκέναι μηδὲ δυνατὸν εἶναι ἐννοῆσαι ἀλλ’ ἢ ἐκ τοῦ ἰδεῖν
-  ἢ ἅψασθαι ἢ ἔκ τινος ἄλλης τῶν αἰσθήσεων· ταὐτὸν δὲ πάντα ταῦτα λέγω. ταὐτὸν γὰρ ἔστιν, ὦ Σώκρατες, πρός γε ὃ βούλεται δηλῶσαι
-  ὁ λόγος. ἀλλὰ μὲν δὴ ἔκ γε τῶν αἰσθήσεων δεῖ ἐννοῆσαι ὅτι πάντα τὰ ἐν ταῖς αἰσθήσεσιν ἐκείνου τε ὀρέγεται τοῦ ὃ ἔστιν ἴσον,
-  καὶ αὐτοῦ ἐνδεέστερά ἐστιν· ἢ πῶς λέγομεν; οὕτως. πρὸ τοῦ ἄρα ἄρξασθαι ἡμᾶς ὁρᾶν καὶ ἀκούειν καὶ τἆλλα αἰσθάνεσθαι τυχεῖν
-  ἔδει που εἰληφότας ἐπιστήμην αὐτοῦ τοῦ ἴσου ὅτι ἔστιν, εἰ ἐμέλλομεν τὰ ἐκ τῶν αἰσθήσεων ἴσα ἐκεῖσε ἀνοίσειν, ὅτι προθυμεῖται
-  μὲν πάντα τοιαῦτ’ εἶναι οἷον ἐκεῖνο, ἔστιν δὲ αὐτοῦ φαυλότερα. ἀνάγκη ἐκ τῶν προειρημένων, ὦ Σώκρατες. οὐκοῦν γενόμενοι
-  εὐθὺς ἑωρῶμέν τε καὶ ἠκούομεν καὶ τὰς ἄλλας αἰσθήσεις εἴχομεν; πάνυ γε. ἔδει δέ γε, φαμέν, πρὸ τούτων τὴν τοῦ ἴσου ἐπιστήμην
-  εἰληφέναι; ναί. πρὶν γενέσθαι ἄρα, ὡς ἔοικεν, ἀνάγκη ἡμῖν αὐτὴν εἰληφέναι. ἔοικεν. οὐκοῦν εἰ μὲν λαβόντες αὐτὴν πρὸ τοῦ
-  γενέσθαι ἔχοντες ἐγενόμεθα, ἠπιστάμεθα καὶ πρὶν γενέσθαι καὶ εὐθὺς γενόμενοι οὐ μόνον τὸ ἴσον καὶ τὸ μεῖζον καὶ τὸ ἔλαττον
-  ἀλλὰ καὶ σύμπαντα τὰ τοιαῦτα; οὐ γὰρ περὶ τοῦ ἴσου νῦν ὁ λόγος ἡμῖν μᾶλλόν τι ἢ καὶ περὶ αὐτοῦ τοῦ καλοῦ καὶ αὐτοῦ τοῦ ἀγαθοῦ
-  καὶ δικαίου καὶ ὁσίου καί, ὅπερ λέγω, περὶ ἁπάντων οἷς ἐπισφραγιζόμεθα τὸ αὐτὸ ὃ ἔστι καὶ ἐν ταῖς ἐρωτήσεσιν ἐρωτῶντες καὶ
-  ἐν ταῖς ἀποκρίσεσιν ἀποκρινόμενοι. ὥστε ἀναγκαῖον ἡμῖν τούτων πάντων τὰς ἐπιστήμας πρὸ τοῦ γενέσθαι εἰληφέναι. ἔστι ταῦτα.
-  καὶ εἰ μέν γε λαβόντες ἑκάστοτε μὴ ἐπιλελήσμεθα, εἰδότας ἀεὶ γίγνεσθαι καὶ ἀεὶ διὰ βίου εἰδέναι· τὸ γὰρ εἰδέναι τοῦτ’ ἔστιν,
-  λαβόντα του ἐπιστήμην ἔχειν καὶ μὴ ἀπολωλεκέναι· ἢ οὐ τοῦτο λήθην λέγομεν, ὦ Σιμμία, ἐπιστήμης ἀποβολήν; πάντως δήπου, ἔφη,
-  ὦ Σώκρατες. εἰ δέ γε οἶμαι λαβόντες πρὶν γενέσθαι γιγνόμενοι ἀπωλέσαμεν, ὕστερον δὲ ταῖς αἰσθήσεσι χρώμενοι περὶ αὐτὰ ἐκείνας
-  ἀναλαμβάνομεν τὰς ἐπιστήμας ἅς ποτε καὶ πρὶν εἴχομεν, ἆρ’ οὐχ ὃ καλοῦμεν μανθάνειν οἰκείαν ἂν ἐπιστήμην ἀναλαμβάνειν εἴη;
-  τοῦτο δέ που ἀναμιμνῄσκεσθαι λέγοντες ὀρθῶς ἂν λέγοιμεν; πάνυ γε. ΦΑΙΔ.
-sanskrit_iast: kai kat’ ekeinon ge ton logon, ō Sōkrates, ei alēthēs estin, hon sy eiōthas thama legein, hoti hēmin hē mathēsis
-  oyk allo ti ē anamnēsis tynchanei oysa, kai kata toyton anankē poy hēmas en proterō tini chronō memathēkenai ha nyn anamimnēskometha.
-  PhAID. toyto de adynaton, ei mē ēn poy hēmin hē psychē prin en tōde tō anthrōpinō eidei genesthai; hōste kai taytē athanaton
-  hē psychē ti eoiken einai. alla, ō Kebēs, ephē ho Simmias hypolabōn, poiai toytōn ai apodeixeis; hypomnēson me; oy gar sphodra
-  en tō paronti memnēmai. heni men logō, ephē ho Kebēs, kallistō, hoti erōtōmenoi oi anthrōpoi, ean tis kalōs erōta, aytoi
-  legoysin panta hē echei — kaitoi ei mē etynchanen aytois epistēmē enoysa kai orthos logos, oyk an oioi t’ ēsan toyto poiēsai
-  — epeita ean tis epi ta diagrammata agē ē allo ti tōn toioytōn, entaytha saphestata katēgorei hoti toyto oytōs echei. ei
-  de mē taytē ge, ephē, peithē, ō Simmia, ho Sōkratēs, skepsai an tēde pē soi skopoymenō syndoxē. apisteis gar dē pōs hē kaloymenē
-  mathēsis anamnēsis estin; apistō men soi egōge, ē d’ hos ho Simmias, oy, ayto de toyto, ephē, deomai pathein peri oy ho
-  logos, anamnēsthēnai. kai schedon ge ex hōn Kebēs epecheirēse legein ēdē memnēmai kai peithomai; oyden mentan hētton akoyoimi
-  nyn pē sy epecheirēsas legein. tēd’ egōge, ē d’ hos. homologoymen gar dēpoy, ei tis ti anamnēsthēsetai, dein ayton toyto
-  proteron pote epistasthai. pany g, ephē. ar’ oyn kai tode homologoymen, hotan epistēmē paragignētai tropō toioytō, anamnēsin
-  einai; legō de tina tropon; tonde. ean tis ti heteron ē idōn ē akoysas ē tina allēn aisthēsin labōn mē monon ekeino gnō,
-  alla kai heteron ennoēsē oy mē hē aytē epistēmē all’ allē, ara oychi toyto dikaiōs legomen hoti anemnēsthē, oy tēn ennoian
-  elaben; pōs legeis; oion ta toiade; allē poy epistēmē anthrōpoy kai lyras. pōs gar oy; oykoyn oistha hoti oi erastai, hotan
-  idōsin lyran ē himation ē allo ti ois ta paidika aytōn eiōthe chrēsthai, paschoysi toyto; egnōsan te tēn lyran kai en tē
-  dianoia elabon to eidos toy paidos oy ēn hē lyra; toyto de estin anamnēsis; hōsper ge kai Simmian tis idōn pollakis kebētos
-  anemnēsthē, kai alla poy myria toiayt’ an eiē. myria mentoi nē Dia, ephē ho Simmias. oykoyn, ē d’ hos, to toioyton anamnēsis
-  tis esti; malista mentoi hotan tis toyto pathē peri ekeina ha hypo chronoy kai toy mē episkopein ēdē epelelēsto; pany men
-  oyn, ephē. ti de; ē d’ hos; estin hippon gegrammenon idonta kai lyran gegrammenēn anthrōpoy anamnēsthēnai, kai Simmian idonta
-  gegrammenon kebētos anamnēsthēnai; pany ge. PhAID. oykoyn kai Simmian idonta gegrammenon aytoy Simmioy anamnēsthēnai; esti
-  mentoi, ephē. ar’ oyn oy kata panta tayta symbainei tēn anamnēsin einai men aph’ homoiōn, einai de kai apo anomoiōn; symbainei.
-  all’ hotan ge apo tōn homoiōn anamimnēskētai tis ti, ar’ oyk anankaion tode prospaschein, ennoein eite ti elleipei toyto
-  kata tēn homoiotēta eite mē ekeinoy oy anemnēsthē; anankē, ephē. skopei dē, ē d’ hos, ei tayta oytōs echei. phamen poy ti
-  einai ison, oy xylon legō xylō oyde lithon lithō oyd allo tōn toioytōn oyden, alla para tayta panta heteron ti, ayto to
-  ison; phōmen ti einai ē mēden; phōmen mentoi nē Di, ephē ho Simmias, thaymastōs ge. ē kai epistametha ayto ho estin; pany
-  ge, ē d’ hos. pothen labontes aytoy tēn epistēmēn; ar’ oyk ex hōn nyndē elegomen, ē xyla ē lithoys ē alla atta idontes isa,
-  ek toytōn ekeino enenoēsamen, heteron on toytōn; ē oych heteron soi phainetai; skopei de kai tēde. ar’ oy lithoi men isoi
-  kai xyla eniote tayta onta tō men isa phainetai, tō d’ oy; pany men oyn. ti de; ayta ta isa estin hote anisa soi ephanē,
-  ē hē isotēs anisotēs; oydepōpote ge, ō Sōkrates. oy tayton ara estin, ē d’ hos, tayta te ta isa kai ayto to ison. oydamōs
-  moi phainetai, ō Sōkrates. alla mēn ek toytōn g, ephē, tōn isōn, heterōn ontōn ekeinoy toy isoy, homōs aytoy tēn epistēmēn
-  ennenoēkas te kai eilēphas; alēthestata, ephē, legeis. oykoyn ē homoioy ontos toytois ē anomoioy; pany ge. diapherei de
-  ge, ē d’ hos, oyden; heōs an allo idōn apo taytēs tēs opseōs allo ennoēsēs, eite homoion eite anomoion, anankaion, ephē,
-  ayto anamnēsin gegonenai. pany men oyn. ti de; ē d’ hos; ē paschomen ti toioyton peri ta en tois xylois te kai ois nyndē
-  elegomen tois isois; ara phainetai hēmin oytōs isa einai hōsper ayto to ho estin, ē endei ti ekeinoy tō toioyton einai oion
-  to ison, ē oyden; kai poly ge, ephē, endei. oykoyn homologoymen, hotan tis ti idōn ennoēsē hoti boyletai men toyto ho nyn
-  egō horō einai oion allo ti tōn ontōn, endei de kai oy dynatai toioyton einai ison oion ekeino, all’ estin phayloteron,
-  anankaion poy ton toyto ennooynta tychein proeidota ekeino hō phēsin ayto proseoikenai men, endeesterōs de echein; anankē.
-  ti oyn; to toioyton peponthamen kai hēmeis ē oy peri te ta isa kai ayto to ison; pantapasi ge. PhAID. anankaion ara hēmas
-  proeidenai to ison pro ekeinoy toy chronoy hote to prōton idontes ta isa enenoēsamen hoti oregetai men panta tayta einai
-  oion to ison, echei de endeesterōs. esti tayta. alla mēn kai tode homologoymen, mē allothen ayto ennenoēkenai mēde dynaton
-  einai ennoēsai all’ ē ek toy idein ē hapsasthai ē ek tinos allēs tōn aisthēseōn; tayton de panta tayta legō. tayton gar
-  estin, ō Sōkrates, pros ge ho boyletai dēlōsai ho logos. alla men dē ek ge tōn aisthēseōn dei ennoēsai hoti panta ta en
-  tais aisthēsesin ekeinoy te oregetai toy ho estin ison, kai aytoy endeestera estin; ē pōs legomen; oytōs. pro toy ara arxasthai
-  hēmas horan kai akoyein kai talla aisthanesthai tychein edei poy eilēphotas epistēmēn aytoy toy isoy hoti estin, ei emellomen
-  ta ek tōn aisthēseōn isa ekeise anoisein, hoti prothymeitai men panta toiayt’ einai oion ekeino, estin de aytoy phaylotera.
-  anankē ek tōn proeirēmenōn, ō Sōkrates. oykoyn genomenoi eythys heōrōmen te kai ēkoyomen kai tas allas aisthēseis eichomen;
-  pany ge. edei de ge, phamen, pro toytōn tēn toy isoy epistēmēn eilēphenai; nai. prin genesthai ara, hōs eoiken, anankē hēmin
-  aytēn eilēphenai. eoiken. oykoyn ei men labontes aytēn pro toy genesthai echontes egenometha, ēpistametha kai prin genesthai
-  kai eythys genomenoi oy monon to ison kai to meizon kai to elatton alla kai sympanta ta toiayta; oy gar peri toy isoy nyn
-  ho logos hēmin mallon ti ē kai peri aytoy toy kaloy kai aytoy toy agathoy kai dikaioy kai hosioy kai, hoper legō, peri hapantōn
-  ois episphragizometha to ayto ho esti kai en tais erōtēsesin erōtōntes kai en tais apokrisesin apokrinomenoi. hōste anankaion
-  hēmin toytōn pantōn tas epistēmas pro toy genesthai eilēphenai. esti tayta. kai ei men ge labontes hekastote mē epilelēsmetha,
-  eidotas aei gignesthai kai aei dia bioy eidenai; to gar eidenai toyt’ estin, labonta toy epistēmēn echein kai mē apolōlekenai;
-  ē oy toyto lēthēn legomen, ō Simmia, epistēmēs apobolēn; pantōs dēpoy, ephē, ō Sōkrates. ei de ge oimai labontes prin genesthai
-  gignomenoi apōlesamen, hysteron de tais aisthēsesi chrōmenoi peri ayta ekeinas analambanomen tas epistēmas has pote kai
-  prin eichomen, ar’ oych ho kaloymen manthanein oikeian an epistēmēn analambanein eiē; toyto de poy anamimnēskesthai legontes
-  orthōs an legoimen; pany ge. PhAID.
+sanskrit_devanagari: οὐκοῦν ὁμολογοῦμεν, ὅταν τίς τι ἰδὼν ἐννοήσῃ ὅτι βούλεται μὲν τοῦτο ὃ νῦν ἐγὼ ὁρῶ εἶναι οἷον ἄλλο τι
+  τῶν ὄντων, ἐνδεῖ δὲ καὶ οὐ δύναται τοιοῦτον εἶναι ἴσον οἷον ἐκεῖνο, ἀλλ’ ἔστιν φαυλότερον, ἀναγκαῖόν που τὸν τοῦτο ἐννοοῦντα
+  τυχεῖν προειδότα ἐκεῖνο ᾧ φησιν αὐτὸ προσεοικέναι μέν, ἐνδεεστέρως δὲ ἔχειν; ἀνάγκη. τί οὖν; τὸ τοιοῦτον πεπόνθαμεν καὶ
+  ἡμεῖς ἢ οὒ περί τε τὰ ἴσα καὶ αὐτὸ τὸ ἴσον; παντάπασί γε. ΦΑΙΔ. ἀναγκαῖον ἄρα ἡμᾶς προειδέναι τὸ ἴσον πρὸ ἐκείνου τοῦ χρόνου
+  ὅτε τὸ πρῶτον ἰδόντες τὰ ἴσα ἐνενοήσαμεν ὅτι ὀρέγεται μὲν πάντα ταῦτα εἶναι οἷον τὸ ἴσον, ἔχει δὲ ἐνδεεστέρως. ἔστι ταῦτα.
+  ἀλλὰ μὴν καὶ τόδε ὁμολογοῦμεν, μὴ ἄλλοθεν αὐτὸ ἐννενοηκέναι μηδὲ δυνατὸν εἶναι ἐννοῆσαι ἀλλ’ ἢ ἐκ τοῦ ἰδεῖν ἢ ἅψασθαι ἢ
+  ἔκ τινος ἄλλης τῶν αἰσθήσεων· ταὐτὸν δὲ πάντα ταῦτα λέγω. ταὐτὸν γὰρ ἔστιν, ὦ Σώκρατες, πρός γε ὃ βούλεται δηλῶσαι ὁ λόγος.
+  ἀλλὰ μὲν δὴ ἔκ γε τῶν αἰσθήσεων δεῖ ἐννοῆσαι ὅτι πάντα τὰ ἐν ταῖς αἰσθήσεσιν ἐκείνου τε ὀρέγεται τοῦ ὃ ἔστιν ἴσον, καὶ αὐτοῦ
+  ἐνδεέστερά ἐστιν· ἢ πῶς λέγομεν; οὕτως. πρὸ τοῦ ἄρα ἄρξασθαι ἡμᾶς ὁρᾶν καὶ ἀκούειν καὶ τἆλλα αἰσθάνεσθαι τυχεῖν ἔδει που
+  εἰληφότας ἐπιστήμην αὐτοῦ τοῦ ἴσου ὅτι ἔστιν, εἰ ἐμέλλομεν τὰ ἐκ τῶν αἰσθήσεων ἴσα ἐκεῖσε ἀνοίσειν, ὅτι προθυμεῖται μὲν
+  πάντα τοιαῦτ’ εἶναι οἷον ἐκεῖνο, ἔστιν δὲ αὐτοῦ φαυλότερα. ἀνάγκη ἐκ τῶν προειρημένων, ὦ Σώκρατες. οὐκοῦν γενόμενοι εὐθὺς
+  ἑωρῶμέν τε καὶ ἠκούομεν καὶ τὰς ἄλλας αἰσθήσεις εἴχομεν; πάνυ γε. ἔδει δέ γε, φαμέν, πρὸ τούτων τὴν τοῦ ἴσου ἐπιστήμην εἰληφέναι;
+  ναί. πρὶν γενέσθαι ἄρα, ὡς ἔοικεν, ἀνάγκη ἡμῖν αὐτὴν εἰληφέναι. ἔοικεν. οὐκοῦν εἰ μὲν λαβόντες αὐτὴν πρὸ τοῦ γενέσθαι ἔχοντες
+  ἐγενόμεθα, ἠπιστάμεθα καὶ πρὶν γενέσθαι καὶ εὐθὺς γενόμενοι οὐ μόνον τὸ ἴσον καὶ τὸ μεῖζον καὶ τὸ ἔλαττον ἀλλὰ καὶ σύμπαντα
+  τὰ τοιαῦτα; οὐ γὰρ περὶ τοῦ ἴσου νῦν ὁ λόγος ἡμῖν μᾶλλόν τι ἢ καὶ περὶ αὐτοῦ τοῦ καλοῦ καὶ αὐτοῦ τοῦ ἀγαθοῦ καὶ δικαίου
+  καὶ ὁσίου καί, ὅπερ λέγω, περὶ ἁπάντων οἷς ἐπισφραγιζόμεθα τὸ αὐτὸ ὃ ἔστι καὶ ἐν ταῖς ἐρωτήσεσιν ἐρωτῶντες καὶ ἐν ταῖς ἀποκρίσεσιν
+  ἀποκρινόμενοι. ὥστε ἀναγκαῖον ἡμῖν τούτων πάντων τὰς ἐπιστήμας πρὸ τοῦ γενέσθαι εἰληφέναι. ἔστι ταῦτα. καὶ εἰ μέν γε λαβόντες
+  ἑκάστοτε μὴ ἐπιλελήσμεθα, εἰδότας ἀεὶ γίγνεσθαι καὶ ἀεὶ διὰ βίου εἰδέναι· τὸ γὰρ εἰδέναι τοῦτ’ ἔστιν, λαβόντα του ἐπιστήμην
+  ἔχειν καὶ μὴ ἀπολωλεκέναι· ἢ οὐ τοῦτο λήθην λέγομεν, ὦ Σιμμία, ἐπιστήμης ἀποβολήν; πάντως δήπου, ἔφη, ὦ Σώκρατες. εἰ δέ
+  γε οἶμαι λαβόντες πρὶν γενέσθαι γιγνόμενοι ἀπωλέσαμεν, ὕστερον δὲ ταῖς αἰσθήσεσι χρώμενοι περὶ αὐτὰ ἐκείνας ἀναλαμβάνομεν
+  τὰς ἐπιστήμας ἅς ποτε καὶ πρὶν εἴχομεν, ἆρ’ οὐχ ὃ καλοῦμεν μανθάνειν οἰκείαν ἂν ἐπιστήμην ἀναλαμβάνειν εἴη; τοῦτο δέ που
+  ἀναμιμνῄσκεσθαι λέγοντες ὀρθῶς ἂν λέγοιμεν; πάνυ γε. ΦΑΙΔ.
+sanskrit_iast: oykoyn homologoymen, hotan tis ti idōn ennoēsē hoti boyletai men toyto ho nyn egō horō einai oion allo ti tōn
+  ontōn, endei de kai oy dynatai toioyton einai ison oion ekeino, all’ estin phayloteron, anankaion poy ton toyto ennooynta
+  tychein proeidota ekeino hō phēsin ayto proseoikenai men, endeesterōs de echein; anankē. ti oyn; to toioyton peponthamen
+  kai hēmeis ē oy peri te ta isa kai ayto to ison; pantapasi ge. PhAID. anankaion ara hēmas proeidenai to ison pro ekeinoy
+  toy chronoy hote to prōton idontes ta isa enenoēsamen hoti oregetai men panta tayta einai oion to ison, echei de endeesterōs.
+  esti tayta. alla mēn kai tode homologoymen, mē allothen ayto ennenoēkenai mēde dynaton einai ennoēsai all’ ē ek toy idein
+  ē hapsasthai ē ek tinos allēs tōn aisthēseōn; tayton de panta tayta legō. tayton gar estin, ō Sōkrates, pros ge ho boyletai
+  dēlōsai ho logos. alla men dē ek ge tōn aisthēseōn dei ennoēsai hoti panta ta en tais aisthēsesin ekeinoy te oregetai toy
+  ho estin ison, kai aytoy endeestera estin; ē pōs legomen; oytōs. pro toy ara arxasthai hēmas horan kai akoyein kai talla
+  aisthanesthai tychein edei poy eilēphotas epistēmēn aytoy toy isoy hoti estin, ei emellomen ta ek tōn aisthēseōn isa ekeise
+  anoisein, hoti prothymeitai men panta toiayt’ einai oion ekeino, estin de aytoy phaylotera. anankē ek tōn proeirēmenōn,
+  ō Sōkrates. oykoyn genomenoi eythys heōrōmen te kai ēkoyomen kai tas allas aisthēseis eichomen; pany ge. edei de ge, phamen,
+  pro toytōn tēn toy isoy epistēmēn eilēphenai; nai. prin genesthai ara, hōs eoiken, anankē hēmin aytēn eilēphenai. eoiken.
+  oykoyn ei men labontes aytēn pro toy genesthai echontes egenometha, ēpistametha kai prin genesthai kai eythys genomenoi
+  oy monon to ison kai to meizon kai to elatton alla kai sympanta ta toiayta; oy gar peri toy isoy nyn ho logos hēmin mallon
+  ti ē kai peri aytoy toy kaloy kai aytoy toy agathoy kai dikaioy kai hosioy kai, hoper legō, peri hapantōn ois episphragizometha
+  to ayto ho esti kai en tais erōtēsesin erōtōntes kai en tais apokrisesin apokrinomenoi. hōste anankaion hēmin toytōn pantōn
+  tas epistēmas pro toy genesthai eilēphenai. esti tayta. kai ei men ge labontes hekastote mē epilelēsmetha, eidotas aei gignesthai
+  kai aei dia bioy eidenai; to gar eidenai toyt’ estin, labonta toy epistēmēn echein kai mē apolōlekenai; ē oy toyto lēthēn
+  legomen, ō Simmia, epistēmēs apobolēn; pantōs dēpoy, ephē, ō Sōkrates. ei de ge oimai labontes prin genesthai gignomenoi
+  apōlesamen, hysteron de tais aisthēsesi chrōmenoi peri ayta ekeinas analambanomen tas epistēmas has pote kai prin eichomen,
+  ar’ oych ho kaloymen manthanein oikeian an epistēmēn analambanein eiē; toyto de poy anamimnēskesthai legontes orthōs an
+  legoimen; pany ge. PhAID.
 translation_literal: 'Learning is presented as recollection: the mind does not manufacture first principles from scratch but
   re-recognizes standards it already measures by. When we compare imperfect equal things to Equality itself, we reveal a prior
   acquaintance with a norm no sensory object exhausts. The argument aims to show that intelligibility precedes mere sensation.'
@@ -184,119 +115,48 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: καὶ κατ’ ἐκεῖνόν γε τὸν λόγον, ὦ Σώκρατες, εἰ ἀληθής ἐστιν, ὃν σὺ εἴωθας θαμὰ λέγειν, ὅτι ἡμῖν ἡ μάθησις οὐκ ἄλλο
-    τι ἢ ἀνάμνησις τυγχάνει οὖσα, καὶ κατὰ τοῦτον ἀνάγκη που ἡμᾶς ἐν προτέρῳ τινὶ χρόνῳ μεμαθηκέναι ἃ νῦν ἀναμιμνῃσκόμεθα.
-    ΦΑΙΔ. τοῦτο δὲ ἀδύνατον, εἰ μὴ ἦν που ἡμῖν ἡ ψυχὴ πρὶν ἐν τῷδε τῷ ἀνθρωπίνῳ εἴδει γενέσθαι· ὥστε καὶ ταύτῃ ἀθάνατον ἡ
-    ψυχή τι ἔοικεν εἶναι. ἀλλά, ὦ Κέβης, ἔφη ὁ Σιμμίας ὑπολαβών, ποῖαι τούτων αἱ ἀποδείξεις; ὑπόμνησόν με· οὐ γὰρ σφόδρα ἐν
-    τῷ παρόντι μέμνημαι. ἑνὶ μὲν λόγῳ, ἔφη ὁ Κέβης, καλλίστῳ, ὅτι ἐρωτώμενοι οἱ ἄνθρωποι, ἐάν τις καλῶς ἐρωτᾷ, αὐτοὶ λέγουσιν
-    πάντα ᾗ ἔχει — καίτοι εἰ μὴ ἐτύγχανεν αὐτοῖς ἐπιστήμη ἐνοῦσα καὶ ὀρθὸς λόγος, οὐκ ἂν οἷοί τ’ ἦσαν τοῦτο ποιῆσαι — ἔπειτα
-    ἐάν τις ἐπὶ τὰ διαγράμματα ἄγῃ ἢ ἄλλο τι τῶν τοιούτων, ἐνταῦθα σαφέστατα κατηγορεῖ ὅτι τοῦτο οὕτως ἔχει. εἰ δὲ μὴ ταύτῃ
-    γε, ἔφη, πείθῃ, ὦ Σιμμία, ὁ Σωκράτης, σκέψαι ἂν τῇδέ πῄ σοι σκοπουμένῳ συνδόξῃ. ἀπιστεῖς γὰρ δὴ πῶς ἡ καλουμένη μάθησις
-    ἀνάμνησίς ἐστιν; ἀπιστῶ μέν σοι ἔγωγε, ἦ δ’ ὃς ὁ Σιμμίας, οὔ, αὐτὸ δὲ τοῦτο, ἔφη, δέομαι παθεῖν περὶ οὗ ὁ λόγος, ἀναμνησθῆναι.
-    καὶ σχεδόν γε ἐξ ὧν Κέβης ἐπεχείρησε λέγειν ἤδη μέμνημαι καὶ πείθομαι· οὐδὲν μεντἂν ἧττον ἀκούοιμι νῦν πῇ σὺ ἐπεχείρησας
-    λέγειν. τῇδ’ ἔγωγε, ἦ δ’ ὅς. ὁμολογοῦμεν γὰρ δήπου, εἴ τίς τι ἀναμνησθήσεται, δεῖν αὐτὸν τοῦτο πρότερόν ποτε ἐπίστασθαι.
-    πάνυ γ᾽, ἔφη. ἆρ’ οὖν καὶ τόδε ὁμολογοῦμεν, ὅταν ἐπιστήμη παραγίγνηται τρόπῳ τοιούτῳ, ἀνάμνησιν εἶναι; λέγω δὲ τίνα τρόπον;
-    τόνδε. ἐάν τίς τι ἕτερον ἢ ἰδὼν ἢ ἀκούσας ἤ τινα ἄλλην αἴσθησιν λαβὼν μὴ μόνον ἐκεῖνο γνῷ, ἀλλὰ καὶ ἕτερον ἐννοήσῃ οὗ
-    μὴ ἡ αὐτὴ ἐπιστήμη ἀλλ’ ἄλλη, ἆρα οὐχὶ τοῦτο δικαίως λέγομεν ὅτι ἀνεμνήσθη, οὗ τὴν ἔννοιαν ἔλαβεν; πῶς λέγεις; οἷον τὰ
-    τοιάδε· ἄλλη που ἐπιστήμη ἀνθρώπου καὶ λύρας. πῶς γὰρ οὔ; οὐκοῦν οἶσθα ὅτι οἱ ἐρασταί, ὅταν ἴδωσιν λύραν ἢ ἱμάτιον ἢ ἄλλο
-    τι οἷς τὰ παιδικὰ αὐτῶν εἴωθε χρῆσθαι, πάσχουσι τοῦτο· ἔγνωσάν τε τὴν λύραν καὶ ἐν τῇ διανοίᾳ ἔλαβον τὸ εἶδος τοῦ παιδὸς
-    οὗ ἦν ἡ λύρα; τοῦτο δέ ἐστιν ἀνάμνησις· ὥσπερ γε καὶ Σιμμίαν τις ἰδὼν πολλάκις κέβητος ἀνεμνήσθη, καὶ ἄλλα που μυρία τοιαῦτ’
-    ἂν εἴη. μυρία μέντοι νὴ Δία, ἔφη ὁ Σιμμίας. οὐκοῦν, ἦ δ’ ὅς, τὸ τοιοῦτον ἀνάμνησίς τίς ἐστι; μάλιστα μέντοι ὅταν τις τοῦτο
-    πάθῃ περὶ ἐκεῖνα ἃ ὑπὸ χρόνου καὶ τοῦ μὴ ἐπισκοπεῖν ἤδη ἐπελέληστο; πάνυ μὲν οὖν, ἔφη. τί δέ; ἦ δ’ ὅς· ἔστιν ἵππον γεγραμμένον
-    ἰδόντα καὶ λύραν γεγραμμένην ἀνθρώπου ἀναμνησθῆναι, καὶ Σιμμίαν ἰδόντα γεγραμμένον κέβητος ἀναμνησθῆναι; πάνυ γε. ΦΑΙΔ.
-    οὐκοῦν καὶ Σιμμίαν ἰδόντα γεγραμμένον αὐτοῦ Σιμμίου ἀναμνησθῆναι; ἔστι μέντοι, ἔφη. ἆρ’ οὖν οὐ κατὰ πάντα ταῦτα συμβαίνει
-    τὴν ἀνάμνησιν εἶναι μὲν ἀφ’ ὁμοίων, εἶναι δὲ καὶ ἀπὸ ἀνομοίων; συμβαίνει. ἀλλ’ ὅταν γε ἀπὸ τῶν ὁμοίων ἀναμιμνῄσκηταί τίς
-    τι, ἆρ’ οὐκ ἀναγκαῖον τόδε προσπάσχειν, ἐννοεῖν εἴτε τι ἐλλείπει τοῦτο κατὰ τὴν ὁμοιότητα εἴτε μὴ ἐκείνου οὗ ἀνεμνήσθη;
-    ἀνάγκη, ἔφη. σκόπει δή, ἦ δ’ ὅς, εἰ ταῦτα οὕτως ἔχει. φαμέν πού τι εἶναι ἴσον, οὐ ξύλον λέγω ξύλῳ οὐδὲ λίθον λίθῳ οὐδ᾽
-    ἄλλο τῶν τοιούτων οὐδέν, ἀλλὰ παρὰ ταῦτα πάντα ἕτερόν τι, αὐτὸ τὸ ἴσον· φῶμέν τι εἶναι ἢ μηδέν; φῶμεν μέντοι νὴ Δί᾽, ἔφη
-    ὁ Σιμμίας, θαυμαστῶς γε. ἦ καὶ ἐπιστάμεθα αὐτὸ ὃ ἔστιν; πάνυ γε, ἦ δ’ ὅς. πόθεν λαβόντες αὐτοῦ τὴν ἐπιστήμην; ἆρ’ οὐκ
-    ἐξ ὧν νυνδὴ ἐλέγομεν, ἢ ξύλα ἢ λίθους ἢ ἄλλα ἄττα ἰδόντες ἴσα, ἐκ τούτων ἐκεῖνο ἐνενοήσαμεν, ἕτερον ὂν τούτων; ἢ οὐχ ἕτερόν
-    σοι φαίνεται; σκόπει δὲ καὶ τῇδε. ἆρ’ οὐ λίθοι μὲν ἴσοι καὶ ξύλα ἐνίοτε ταὐτὰ ὄντα τῷ μὲν ἴσα φαίνεται, τῷ δ’ οὔ; πάνυ
-    μὲν οὖν. τί δέ; αὐτὰ τὰ ἴσα ἔστιν ὅτε ἄνισά σοι ἐφάνη, ἢ ἡ ἰσότης ἀνισότης; οὐδεπώποτέ γε, ὦ Σώκρατες. οὐ ταὐτὸν ἄρα ἐστίν,
-    ἦ δ’ ὅς, ταῦτά τε τὰ ἴσα καὶ αὐτὸ τὸ ἴσον. οὐδαμῶς μοι φαίνεται, ὦ Σώκρατες. ἀλλὰ μὴν ἐκ τούτων γ᾽, ἔφη, τῶν ἴσων, ἑτέρων
-    ὄντων ἐκείνου τοῦ ἴσου, ὅμως αὐτοῦ τὴν ἐπιστήμην ἐννενόηκάς τε καὶ εἴληφας; ἀληθέστατα, ἔφη, λέγεις. οὐκοῦν ἢ ὁμοίου ὄντος
-    τούτοις ἢ ἀνομοίου; πάνυ γε. διαφέρει δέ γε, ἦ δ’ ὅς, οὐδέν· ἕως ἂν ἄλλο ἰδὼν ἀπὸ ταύτης τῆς ὄψεως ἄλλο ἐννοήσῃς, εἴτε
-    ὅμοιον εἴτε ἀνόμοιον, ἀναγκαῖον, ἔφη, αὐτὸ ἀνάμνησιν γεγονέναι. πάνυ μὲν οὖν. τί δέ; ἦ δ’ ὅς· ἦ πάσχομέν τι τοιοῦτον περὶ
-    τὰ ἐν τοῖς ξύλοις τε καὶ οἷς νυνδὴ ἐλέγομεν τοῖς ἴσοις; ἆρα φαίνεται ἡμῖν οὕτως ἴσα εἶναι ὥσπερ αὐτὸ τὸ ὃ ἔστιν, ἢ ἐνδεῖ
-    τι ἐκείνου τῷ τοιοῦτον εἶναι οἷον τὸ ἴσον, ἢ οὐδέν; καὶ πολύ γε, ἔφη, ἐνδεῖ. οὐκοῦν ὁμολογοῦμεν, ὅταν τίς τι ἰδὼν ἐννοήσῃ
-    ὅτι βούλεται μὲν τοῦτο ὃ νῦν ἐγὼ ὁρῶ εἶναι οἷον ἄλλο τι τῶν ὄντων, ἐνδεῖ δὲ καὶ οὐ δύναται τοιοῦτον εἶναι ἴσον οἷον ἐκεῖνο,
-    ἀλλ’ ἔστιν φαυλότερον, ἀναγκαῖόν που τὸν τοῦτο ἐννοοῦντα τυχεῖν προειδότα ἐκεῖνο ᾧ φησιν αὐτὸ προσεοικέναι μέν, ἐνδεεστέρως
-    δὲ ἔχειν; ἀνάγκη. τί οὖν; τὸ τοιοῦτον πεπόνθαμεν καὶ ἡμεῖς ἢ οὒ περί τε τὰ ἴσα καὶ αὐτὸ τὸ ἴσον; παντάπασί γε. ΦΑΙΔ. ἀναγκαῖον
-    ἄρα ἡμᾶς προειδέναι τὸ ἴσον πρὸ ἐκείνου τοῦ χρόνου ὅτε τὸ πρῶτον ἰδόντες τὰ ἴσα ἐνενοήσαμεν ὅτι ὀρέγεται μὲν πάντα ταῦτα
-    εἶναι οἷον τὸ ἴσον, ἔχει δὲ ἐνδεεστέρως. ἔστι ταῦτα. ἀλλὰ μὴν καὶ τόδε ὁμολογοῦμεν, μὴ ἄλλοθεν αὐτὸ ἐννενοηκέναι μηδὲ
-    δυνατὸν εἶναι ἐννοῆσαι ἀλλ’ ἢ ἐκ τοῦ ἰδεῖν ἢ ἅψασθαι ἢ ἔκ τινος ἄλλης τῶν αἰσθήσεων· ταὐτὸν δὲ πάντα ταῦτα λέγω. ταὐτὸν
-    γὰρ ἔστιν, ὦ Σώκρατες, πρός γε ὃ βούλεται δηλῶσαι ὁ λόγος. ἀλλὰ μὲν δὴ ἔκ γε τῶν αἰσθήσεων δεῖ ἐννοῆσαι ὅτι πάντα τὰ ἐν
-    ταῖς αἰσθήσεσιν ἐκείνου τε ὀρέγεται τοῦ ὃ ἔστιν ἴσον, καὶ αὐτοῦ ἐνδεέστερά ἐστιν· ἢ πῶς λέγομεν; οὕτως. πρὸ τοῦ ἄρα ἄρξασθαι
-    ἡμᾶς ὁρᾶν καὶ ἀκούειν καὶ τἆλλα αἰσθάνεσθαι τυχεῖν ἔδει που εἰληφότας ἐπιστήμην αὐτοῦ τοῦ ἴσου ὅτι ἔστιν, εἰ ἐμέλλομεν
-    τὰ ἐκ τῶν αἰσθήσεων ἴσα ἐκεῖσε ἀνοίσειν, ὅτι προθυμεῖται μὲν πάντα τοιαῦτ’ εἶναι οἷον ἐκεῖνο, ἔστιν δὲ αὐτοῦ φαυλότερα.
-    ἀνάγκη ἐκ τῶν προειρημένων, ὦ Σώκρατες. οὐκοῦν γενόμενοι εὐθὺς ἑωρῶμέν τε καὶ ἠκούομεν καὶ τὰς ἄλλας αἰσθήσεις εἴχομεν;
-    πάνυ γε. ἔδει δέ γε, φαμέν, πρὸ τούτων τὴν τοῦ ἴσου ἐπιστήμην εἰληφέναι; ναί. πρὶν γενέσθαι ἄρα, ὡς ἔοικεν, ἀνάγκη ἡμῖν
-    αὐτὴν εἰληφέναι. ἔοικεν. οὐκοῦν εἰ μὲν λαβόντες αὐτὴν πρὸ τοῦ γενέσθαι ἔχοντες ἐγενόμεθα, ἠπιστάμεθα καὶ πρὶν γενέσθαι
-    καὶ εὐθὺς γενόμενοι οὐ μόνον τὸ ἴσον καὶ τὸ μεῖζον καὶ τὸ ἔλαττον ἀλλὰ καὶ σύμπαντα τὰ τοιαῦτα; οὐ γὰρ περὶ τοῦ ἴσου νῦν
-    ὁ λόγος ἡμῖν μᾶλλόν τι ἢ καὶ περὶ αὐτοῦ τοῦ καλοῦ καὶ αὐτοῦ τοῦ ἀγαθοῦ καὶ δικαίου καὶ ὁσίου καί, ὅπερ λέγω, περὶ ἁπάντων
-    οἷς ἐπισφραγιζόμεθα τὸ αὐτὸ ὃ ἔστι καὶ ἐν ταῖς ἐρωτήσεσιν ἐρωτῶντες καὶ ἐν ταῖς ἀποκρίσεσιν ἀποκρινόμενοι. ὥστε ἀναγκαῖον
-    ἡμῖν τούτων πάντων τὰς ἐπιστήμας πρὸ τοῦ γενέσθαι εἰληφέναι. ἔστι ταῦτα. καὶ εἰ μέν γε λαβόντες ἑκάστοτε μὴ ἐπιλελήσμεθα,
-    εἰδότας ἀεὶ γίγνεσθαι καὶ ἀεὶ διὰ βίου εἰδέναι· τὸ γὰρ εἰδέναι τοῦτ’ ἔστιν, λαβόντα του ἐπιστήμην ἔχειν καὶ μὴ ἀπολωλεκέναι·
-    ἢ οὐ τοῦτο λήθην λέγομεν, ὦ Σιμμία, ἐπιστήμης ἀποβολήν; πάντως δήπου, ἔφη, ὦ Σώκρατες. εἰ δέ γε οἶμαι λαβόντες πρὶν γενέσθαι
-    γιγνόμενοι ἀπωλέσαμεν, ὕστερον δὲ ταῖς αἰσθήσεσι χρώμενοι περὶ αὐτὰ ἐκείνας ἀναλαμβάνομεν τὰς ἐπιστήμας ἅς ποτε καὶ πρὶν
-    εἴχομεν, ἆρ’ οὐχ ὃ καλοῦμεν μανθάνειν οἰκείαν ἂν ἐπιστήμην ἀναλαμβάνειν εἴη; τοῦτο δέ που ἀναμιμνῄσκεσθαι λέγοντες ὀρθῶς
-    ἂν λέγοιμεν; πάνυ γε. ΦΑΙΔ.
+  body: οὐκοῦν ὁμολογοῦμεν, ὅταν τίς τι ἰδὼν ἐννοήσῃ ὅτι βούλεται μὲν τοῦτο ὃ νῦν ἐγὼ ὁρῶ εἶναι οἷον ἄλλο τι τῶν ὄντων, ἐνδεῖ
+    δὲ καὶ οὐ δύναται τοιοῦτον εἶναι ἴσον οἷον ἐκεῖνο, ἀλλ’ ἔστιν φαυλότερον, ἀναγκαῖόν που τὸν τοῦτο ἐννοοῦντα τυχεῖν προειδότα
+    ἐκεῖνο ᾧ φησιν αὐτὸ προσεοικέναι μέν, ἐνδεεστέρως δὲ ἔχειν; ἀνάγκη. τί οὖν; τὸ τοιοῦτον πεπόνθαμεν καὶ ἡμεῖς ἢ οὒ περί
+    τε τὰ ἴσα καὶ αὐτὸ τὸ ἴσον; παντάπασί γε. ΦΑΙΔ. ἀναγκαῖον ἄρα ἡμᾶς προειδέναι τὸ ἴσον πρὸ ἐκείνου τοῦ χρόνου ὅτε τὸ πρῶτον
+    ἰδόντες τὰ ἴσα ἐνενοήσαμεν ὅτι ὀρέγεται μὲν πάντα ταῦτα εἶναι οἷον τὸ ἴσον, ἔχει δὲ ἐνδεεστέρως. ἔστι ταῦτα. ἀλλὰ μὴν
+    καὶ τόδε ὁμολογοῦμεν, μὴ ἄλλοθεν αὐτὸ ἐννενοηκέναι μηδὲ δυνατὸν εἶναι ἐννοῆσαι ἀλλ’ ἢ ἐκ τοῦ ἰδεῖν ἢ ἅψασθαι ἢ ἔκ τινος
+    ἄλλης τῶν αἰσθήσεων· ταὐτὸν δὲ πάντα ταῦτα λέγω. ταὐτὸν γὰρ ἔστιν, ὦ Σώκρατες, πρός γε ὃ βούλεται δηλῶσαι ὁ λόγος. ἀλλὰ
+    μὲν δὴ ἔκ γε τῶν αἰσθήσεων δεῖ ἐννοῆσαι ὅτι πάντα τὰ ἐν ταῖς αἰσθήσεσιν ἐκείνου τε ὀρέγεται τοῦ ὃ ἔστιν ἴσον, καὶ αὐτοῦ
+    ἐνδεέστερά ἐστιν· ἢ πῶς λέγομεν; οὕτως. πρὸ τοῦ ἄρα ἄρξασθαι ἡμᾶς ὁρᾶν καὶ ἀκούειν καὶ τἆλλα αἰσθάνεσθαι τυχεῖν ἔδει που
+    εἰληφότας ἐπιστήμην αὐτοῦ τοῦ ἴσου ὅτι ἔστιν, εἰ ἐμέλλομεν τὰ ἐκ τῶν αἰσθήσεων ἴσα ἐκεῖσε ἀνοίσειν, ὅτι προθυμεῖται μὲν
+    πάντα τοιαῦτ’ εἶναι οἷον ἐκεῖνο, ἔστιν δὲ αὐτοῦ φαυλότερα. ἀνάγκη ἐκ τῶν προειρημένων, ὦ Σώκρατες. οὐκοῦν γενόμενοι εὐθὺς
+    ἑωρῶμέν τε καὶ ἠκούομεν καὶ τὰς ἄλλας αἰσθήσεις εἴχομεν; πάνυ γε. ἔδει δέ γε, φαμέν, πρὸ τούτων τὴν τοῦ ἴσου ἐπιστήμην
+    εἰληφέναι; ναί. πρὶν γενέσθαι ἄρα, ὡς ἔοικεν, ἀνάγκη ἡμῖν αὐτὴν εἰληφέναι. ἔοικεν. οὐκοῦν εἰ μὲν λαβόντες αὐτὴν πρὸ τοῦ
+    γενέσθαι ἔχοντες ἐγενόμεθα, ἠπιστάμεθα καὶ πρὶν γενέσθαι καὶ εὐθὺς γενόμενοι οὐ μόνον τὸ ἴσον καὶ τὸ μεῖζον καὶ τὸ ἔλαττον
+    ἀλλὰ καὶ σύμπαντα τὰ τοιαῦτα; οὐ γὰρ περὶ τοῦ ἴσου νῦν ὁ λόγος ἡμῖν μᾶλλόν τι ἢ καὶ περὶ αὐτοῦ τοῦ καλοῦ καὶ αὐτοῦ τοῦ
+    ἀγαθοῦ καὶ δικαίου καὶ ὁσίου καί, ὅπερ λέγω, περὶ ἁπάντων οἷς ἐπισφραγιζόμεθα τὸ αὐτὸ ὃ ἔστι καὶ ἐν ταῖς ἐρωτήσεσιν ἐρωτῶντες
+    καὶ ἐν ταῖς ἀποκρίσεσιν ἀποκρινόμενοι. ὥστε ἀναγκαῖον ἡμῖν τούτων πάντων τὰς ἐπιστήμας πρὸ τοῦ γενέσθαι εἰληφέναι. ἔστι
+    ταῦτα. καὶ εἰ μέν γε λαβόντες ἑκάστοτε μὴ ἐπιλελήσμεθα, εἰδότας ἀεὶ γίγνεσθαι καὶ ἀεὶ διὰ βίου εἰδέναι· τὸ γὰρ εἰδέναι
+    τοῦτ’ ἔστιν, λαβόντα του ἐπιστήμην ἔχειν καὶ μὴ ἀπολωλεκέναι· ἢ οὐ τοῦτο λήθην λέγομεν, ὦ Σιμμία, ἐπιστήμης ἀποβολήν;
+    πάντως δήπου, ἔφη, ὦ Σώκρατες. εἰ δέ γε οἶμαι λαβόντες πρὶν γενέσθαι γιγνόμενοι ἀπωλέσαμεν, ὕστερον δὲ ταῖς αἰσθήσεσι
+    χρώμενοι περὶ αὐτὰ ἐκείνας ἀναλαμβάνομεν τὰς ἐπιστήμας ἅς ποτε καὶ πρὶν εἴχομεν, ἆρ’ οὐχ ὃ καλοῦμεν μανθάνειν οἰκείαν
+    ἂν ἐπιστήμην ἀναλαμβάνειν εἴη; τοῦτο δέ που ἀναμιμνῄσκεσθαι λέγοντες ὀρθῶς ἂν λέγοιμεν; πάνυ γε. ΦΑΙΔ.
   layer_provenance: 'Greek: Burnet OCT (1900) via Perseus urn:cts:greekLit:tlg0059.tlg004.perseus-grc2 (CC BY-SA); Stephanus
-    72e–75e (anamnesis / Equality)'
+    73c–75e (anamnesis / Equality)'
 - kind: iast
   label: IAST
-  body: kai kat’ ekeinon ge ton logon, ō Sōkrates, ei alēthēs estin, hon sy eiōthas thama legein, hoti hēmin hē mathēsis oyk
-    allo ti ē anamnēsis tynchanei oysa, kai kata toyton anankē poy hēmas en proterō tini chronō memathēkenai ha nyn anamimnēskometha.
-    PhAID. toyto de adynaton, ei mē ēn poy hēmin hē psychē prin en tōde tō anthrōpinō eidei genesthai; hōste kai taytē athanaton
-    hē psychē ti eoiken einai. alla, ō Kebēs, ephē ho Simmias hypolabōn, poiai toytōn ai apodeixeis; hypomnēson me; oy gar
-    sphodra en tō paronti memnēmai. heni men logō, ephē ho Kebēs, kallistō, hoti erōtōmenoi oi anthrōpoi, ean tis kalōs erōta,
-    aytoi legoysin panta hē echei — kaitoi ei mē etynchanen aytois epistēmē enoysa kai orthos logos, oyk an oioi t’ ēsan toyto
-    poiēsai — epeita ean tis epi ta diagrammata agē ē allo ti tōn toioytōn, entaytha saphestata katēgorei hoti toyto oytōs
-    echei. ei de mē taytē ge, ephē, peithē, ō Simmia, ho Sōkratēs, skepsai an tēde pē soi skopoymenō syndoxē. apisteis gar
-    dē pōs hē kaloymenē mathēsis anamnēsis estin; apistō men soi egōge, ē d’ hos ho Simmias, oy, ayto de toyto, ephē, deomai
-    pathein peri oy ho logos, anamnēsthēnai. kai schedon ge ex hōn Kebēs epecheirēse legein ēdē memnēmai kai peithomai; oyden
-    mentan hētton akoyoimi nyn pē sy epecheirēsas legein. tēd’ egōge, ē d’ hos. homologoymen gar dēpoy, ei tis ti anamnēsthēsetai,
-    dein ayton toyto proteron pote epistasthai. pany g, ephē. ar’ oyn kai tode homologoymen, hotan epistēmē paragignētai tropō
-    toioytō, anamnēsin einai; legō de tina tropon; tonde. ean tis ti heteron ē idōn ē akoysas ē tina allēn aisthēsin labōn
-    mē monon ekeino gnō, alla kai heteron ennoēsē oy mē hē aytē epistēmē all’ allē, ara oychi toyto dikaiōs legomen hoti anemnēsthē,
-    oy tēn ennoian elaben; pōs legeis; oion ta toiade; allē poy epistēmē anthrōpoy kai lyras. pōs gar oy; oykoyn oistha hoti
-    oi erastai, hotan idōsin lyran ē himation ē allo ti ois ta paidika aytōn eiōthe chrēsthai, paschoysi toyto; egnōsan te
-    tēn lyran kai en tē dianoia elabon to eidos toy paidos oy ēn hē lyra; toyto de estin anamnēsis; hōsper ge kai Simmian
-    tis idōn pollakis kebētos anemnēsthē, kai alla poy myria toiayt’ an eiē. myria mentoi nē Dia, ephē ho Simmias. oykoyn,
-    ē d’ hos, to toioyton anamnēsis tis esti; malista mentoi hotan tis toyto pathē peri ekeina ha hypo chronoy kai toy mē
-    episkopein ēdē epelelēsto; pany men oyn, ephē. ti de; ē d’ hos; estin hippon gegrammenon idonta kai lyran gegrammenēn
-    anthrōpoy anamnēsthēnai, kai Simmian idonta gegrammenon kebētos anamnēsthēnai; pany ge. PhAID. oykoyn kai Simmian idonta
-    gegrammenon aytoy Simmioy anamnēsthēnai; esti mentoi, ephē. ar’ oyn oy kata panta tayta symbainei tēn anamnēsin einai
-    men aph’ homoiōn, einai de kai apo anomoiōn; symbainei. all’ hotan ge apo tōn homoiōn anamimnēskētai tis ti, ar’ oyk anankaion
-    tode prospaschein, ennoein eite ti elleipei toyto kata tēn homoiotēta eite mē ekeinoy oy anemnēsthē; anankē, ephē. skopei
-    dē, ē d’ hos, ei tayta oytōs echei. phamen poy ti einai ison, oy xylon legō xylō oyde lithon lithō oyd allo tōn toioytōn
-    oyden, alla para tayta panta heteron ti, ayto to ison; phōmen ti einai ē mēden; phōmen mentoi nē Di, ephē ho Simmias,
-    thaymastōs ge. ē kai epistametha ayto ho estin; pany ge, ē d’ hos. pothen labontes aytoy tēn epistēmēn; ar’ oyk ex hōn
-    nyndē elegomen, ē xyla ē lithoys ē alla atta idontes isa, ek toytōn ekeino enenoēsamen, heteron on toytōn; ē oych heteron
-    soi phainetai; skopei de kai tēde. ar’ oy lithoi men isoi kai xyla eniote tayta onta tō men isa phainetai, tō d’ oy; pany
-    men oyn. ti de; ayta ta isa estin hote anisa soi ephanē, ē hē isotēs anisotēs; oydepōpote ge, ō Sōkrates. oy tayton ara
-    estin, ē d’ hos, tayta te ta isa kai ayto to ison. oydamōs moi phainetai, ō Sōkrates. alla mēn ek toytōn g, ephē, tōn
-    isōn, heterōn ontōn ekeinoy toy isoy, homōs aytoy tēn epistēmēn ennenoēkas te kai eilēphas; alēthestata, ephē, legeis.
-    oykoyn ē homoioy ontos toytois ē anomoioy; pany ge. diapherei de ge, ē d’ hos, oyden; heōs an allo idōn apo taytēs tēs
-    opseōs allo ennoēsēs, eite homoion eite anomoion, anankaion, ephē, ayto anamnēsin gegonenai. pany men oyn. ti de; ē d’
-    hos; ē paschomen ti toioyton peri ta en tois xylois te kai ois nyndē elegomen tois isois; ara phainetai hēmin oytōs isa
-    einai hōsper ayto to ho estin, ē endei ti ekeinoy tō toioyton einai oion to ison, ē oyden; kai poly ge, ephē, endei. oykoyn
-    homologoymen, hotan tis ti idōn ennoēsē hoti boyletai men toyto ho nyn egō horō einai oion allo ti tōn ontōn, endei de
-    kai oy dynatai toioyton einai ison oion ekeino, all’ estin phayloteron, anankaion poy ton toyto ennooynta tychein proeidota
-    ekeino hō phēsin ayto proseoikenai men, endeesterōs de echein; anankē. ti oyn; to toioyton peponthamen kai hēmeis ē oy
-    peri te ta isa kai ayto to ison; pantapasi ge. PhAID. anankaion ara hēmas proeidenai to ison pro ekeinoy toy chronoy hote
-    to prōton idontes ta isa enenoēsamen hoti oregetai men panta tayta einai oion to ison, echei de endeesterōs. esti tayta.
-    alla mēn kai tode homologoymen, mē allothen ayto ennenoēkenai mēde dynaton einai ennoēsai all’ ē ek toy idein ē hapsasthai
-    ē ek tinos allēs tōn aisthēseōn; tayton de panta tayta legō. tayton gar estin, ō Sōkrates, pros ge ho boyletai dēlōsai
-    ho logos. alla men dē ek ge tōn aisthēseōn dei ennoēsai hoti panta ta en tais aisthēsesin ekeinoy te oregetai toy ho estin
-    ison, kai aytoy endeestera estin; ē pōs legomen; oytōs. pro toy ara arxasthai hēmas horan kai akoyein kai talla aisthanesthai
-    tychein edei poy eilēphotas epistēmēn aytoy toy isoy hoti estin, ei emellomen ta ek tōn aisthēseōn isa ekeise anoisein,
-    hoti prothymeitai men panta toiayt’ einai oion ekeino, estin de aytoy phaylotera. anankē ek tōn proeirēmenōn, ō Sōkrates.
-    oykoyn genomenoi eythys heōrōmen te kai ēkoyomen kai tas allas aisthēseis eichomen; pany ge. edei de ge, phamen, pro toytōn
-    tēn toy isoy epistēmēn eilēphenai; nai. prin genesthai ara, hōs eoiken, anankē hēmin aytēn eilēphenai. eoiken. oykoyn
-    ei men labontes aytēn pro toy genesthai echontes egenometha, ēpistametha kai prin genesthai kai eythys genomenoi oy monon
-    to ison kai to meizon kai to elatton alla kai sympanta ta toiayta; oy gar peri toy isoy nyn ho logos hēmin mallon ti ē
-    kai peri aytoy toy kaloy kai aytoy toy agathoy kai dikaioy kai hosioy kai, hoper legō, peri hapantōn ois episphragizometha
+  body: oykoyn homologoymen, hotan tis ti idōn ennoēsē hoti boyletai men toyto ho nyn egō horō einai oion allo ti tōn ontōn,
+    endei de kai oy dynatai toioyton einai ison oion ekeino, all’ estin phayloteron, anankaion poy ton toyto ennooynta tychein
+    proeidota ekeino hō phēsin ayto proseoikenai men, endeesterōs de echein; anankē. ti oyn; to toioyton peponthamen kai hēmeis
+    ē oy peri te ta isa kai ayto to ison; pantapasi ge. PhAID. anankaion ara hēmas proeidenai to ison pro ekeinoy toy chronoy
+    hote to prōton idontes ta isa enenoēsamen hoti oregetai men panta tayta einai oion to ison, echei de endeesterōs. esti
+    tayta. alla mēn kai tode homologoymen, mē allothen ayto ennenoēkenai mēde dynaton einai ennoēsai all’ ē ek toy idein ē
+    hapsasthai ē ek tinos allēs tōn aisthēseōn; tayton de panta tayta legō. tayton gar estin, ō Sōkrates, pros ge ho boyletai
+    dēlōsai ho logos. alla men dē ek ge tōn aisthēseōn dei ennoēsai hoti panta ta en tais aisthēsesin ekeinoy te oregetai
+    toy ho estin ison, kai aytoy endeestera estin; ē pōs legomen; oytōs. pro toy ara arxasthai hēmas horan kai akoyein kai
+    talla aisthanesthai tychein edei poy eilēphotas epistēmēn aytoy toy isoy hoti estin, ei emellomen ta ek tōn aisthēseōn
+    isa ekeise anoisein, hoti prothymeitai men panta toiayt’ einai oion ekeino, estin de aytoy phaylotera. anankē ek tōn proeirēmenōn,
+    ō Sōkrates. oykoyn genomenoi eythys heōrōmen te kai ēkoyomen kai tas allas aisthēseis eichomen; pany ge. edei de ge, phamen,
+    pro toytōn tēn toy isoy epistēmēn eilēphenai; nai. prin genesthai ara, hōs eoiken, anankē hēmin aytēn eilēphenai. eoiken.
+    oykoyn ei men labontes aytēn pro toy genesthai echontes egenometha, ēpistametha kai prin genesthai kai eythys genomenoi
+    oy monon to ison kai to meizon kai to elatton alla kai sympanta ta toiayta; oy gar peri toy isoy nyn ho logos hēmin mallon
+    ti ē kai peri aytoy toy kaloy kai aytoy toy agathoy kai dikaioy kai hosioy kai, hoper legō, peri hapantōn ois episphragizometha
     to ayto ho esti kai en tais erōtēsesin erōtōntes kai en tais apokrisesin apokrinomenoi. hōste anankaion hēmin toytōn pantōn
     tas epistēmas pro toy genesthai eilēphenai. esti tayta. kai ei men ge labontes hekastote mē epilelēsmetha, eidotas aei
     gignesthai kai aei dia bioy eidenai; to gar eidenai toyt’ estin, labonta toy epistēmēn echein kai mē apolōlekenai; ē oy
@@ -403,9 +263,9 @@ provenance:
   section: teaching_passage
   original_id: PHAEDO_MD_002
   source_reference: 'Greek: Burnet OCT (1900) via Perseus urn:cts:greekLit:tlg0059.tlg004.perseus-grc2 (CC BY-SA); Stephanus
-    72e–75e (anamnesis / Equality)'
+    73c–75e (anamnesis / Equality)'
 translation_provenance: English adapted from Benjamin Jowett's translation of the *Phaedo* (public domain). Study rendering.
 layer_provenance:
-  original: 'Greek: Burnet OCT (1900) via Perseus urn:cts:greekLit:tlg0059.tlg004.perseus-grc2 (CC BY-SA); Stephanus 72e–75e
+  original: 'Greek: Burnet OCT (1900) via Perseus urn:cts:greekLit:tlg0059.tlg004.perseus-grc2 (CC BY-SA); Stephanus 73c–75e
     (anamnesis / Equality)'
   iast: transliterated_from_greek
