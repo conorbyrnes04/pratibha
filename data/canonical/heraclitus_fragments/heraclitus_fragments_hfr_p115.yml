@@ -7,34 +7,31 @@ unit_id: heraclitus_fragments.hfr_p115
 unit_label: Dogs, also, bark at what they do not know.
 title: Dogs, also, bark at what they do not know.
 unit_type: teaching_passage
-thesis: The dog barks at what it does not know—not from malice, but from the structure of its perception
-  itself.
+thesis: The dog barks at what it does not know—not from malice, but from the structure of its perception itself.
 themes:
 - ignorance
 - knowledge
 - recognition
-source_excerpt: Dogs, also, bark at what they do not know. CX VI.—By its incredibility, it escapes their
-  knowledge.* CX VII.—A stupid man loves to be puzzled by every discourse.
-translation_literal: Dogs, also, bark at what they do not know. CX VI.—By its incredibility, it escapes
-  their knowledge.* CX VII.—A stupid man loves to be puzzled by every discourse.
-commentary: 'The dog barks at what it does not know—not from malice, but from the structure of its perception
-  itself. Heraclitus is not moralizing about stupidity; he is anatomizing the mechanics of recognition.
-  What the dog cannot assimilate into its existing sensory map triggers noise, resistance, the bark. The
-  fragment''s force lies in its refusal to separate the knower from the known: the dog''s ignorance is
-  not a gap to be filled later, but an active state, a collision between what appears and what the organism
-  can receive. Notice the word ''also''—dogs are not alone in this. The human who has not trained perception
-  will bark (speak, judge, dismiss) at the stranger, the paradox, the image that does not fit the grid
-  of the familiar. Heraclitus is showing us that incredulity—the inability to hold what seems impossible—is
-  not a failure of reason but a failure of the body''s readiness. The aphorism does not ask you to become
-  wiser than the dog. It asks you to recognize the bark in yourself, the moment when you reject what you
-  have not yet learned to perceive. That recognition is the threshold.'
+source_excerpt: Dogs, also, bark at what they do not know. CX VI.—By its incredibility, it escapes their knowledge.* CX VII.—A
+  stupid man loves to be puzzled by every discourse.
+translation_literal: Dogs, also, bark at what they do not know. CX VI.—By its incredibility, it escapes their knowledge.*
+  CX VII.—A stupid man loves to be puzzled by every discourse.
+commentary: 'The dog barks at what it does not know—not from malice, but from the structure of its perception itself. Heraclitus
+  is not moralizing about stupidity; he is anatomizing the mechanics of recognition. What the dog cannot assimilate into its
+  existing sensory map triggers noise, resistance, the bark. The fragment''s force lies in its refusal to separate the knower
+  from the known: the dog''s ignorance is not a gap to be filled later, but an active state, a collision between what appears
+  and what the organism can receive. Notice the word ''also''—dogs are not alone in this. The human who has not trained perception
+  will bark (speak, judge, dismiss) at the stranger, the paradox, the image that does not fit the grid of the familiar. Heraclitus
+  is showing us that incredulity—the inability to hold what seems impossible—is not a failure of reason but a failure of the
+  body''s readiness. The aphorism does not ask you to become wiser than the dog. It asks you to recognize the bark in yourself,
+  the moment when you reject what you have not yet learned to perceive. That recognition is the threshold.'
 insight: ''
-practice: 'When you hear yourself say ''that makes no sense'' or feel the impulse to dismiss a claim or
-  image as absurd, pause and ask: what exactly am I not perceiving? Name one concrete detail of the thing
-  you rejected—its texture, its sound, its motion—without judgment, as though describing it to someone
-  who has never encountered it. Repeat this naming three times, each time slower.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'When you hear yourself say ''that makes no sense'' or feel the impulse to dismiss a claim or image as absurd, pause
+  and ask: what exactly am I not perceiving? Name one concrete detail of the thing you rejected—its texture, its sound, its
+  motion—without judgment, as though describing it to someone who has never encountered it. Repeat this naming three times,
+  each time slower.'
+sanskrit_devanagari: Κύνες καὶ βαΰζουσι ὃν ἂν μὴ γινώσκωσι.
+sanskrit_iast: Kunes kai bauzousi hon an mē ginōskōsi.
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -45,76 +42,76 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Κύνες καὶ βαΰζουσι ὃν ἂν μὴ γινώσκωσι.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 115'
+- kind: iast
+  label: IAST
+  body: Kunes kai bauzousi hon an mē ginōskōsi.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
-  body: Dogs, also, bark at what they do not know. CX VI.—By its incredibility, it escapes their knowledge.*
-    CX VII.—A stupid man loves to be puzzled by every discourse.
+  body: Dogs, also, bark at what they do not know. CX VI.—By its incredibility, it escapes their knowledge.* CX VII.—A stupid
+    man loves to be puzzled by every discourse.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The dog barks at what it does not know—not from malice, but from the structure of its perception
-    itself. Heraclitus is not moralizing about stupidity; he is anatomizing the mechanics of recognition.
-    What the dog cannot assimilate into its existing sensory map triggers noise, resistance, the bark.
-    The fragment''s force lies in its refusal to separate the knower from the known: the dog''s ignorance
-    is not a gap to be filled later, but an active state, a collision between what appears and what the
-    organism can receive. Notice the word ''also''—dogs are not alone in this. The human who has not trained
-    perception will bark (speak, judge, dismiss) at the stranger, the paradox, the image that does not
-    fit the grid of the familiar. Heraclitus is showing us that incredulity—the inability to hold what
-    seems impossible—is not a failure of reason but a failure of the body''s readiness. The aphorism does
-    not ask you to become wiser than the dog. It asks you to recognize the bark in yourself, the moment
-    when you reject what you have not yet learned to perceive. That recognition is the threshold.'
+  body: 'The dog barks at what it does not know—not from malice, but from the structure of its perception itself. Heraclitus
+    is not moralizing about stupidity; he is anatomizing the mechanics of recognition. What the dog cannot assimilate into
+    its existing sensory map triggers noise, resistance, the bark. The fragment''s force lies in its refusal to separate the
+    knower from the known: the dog''s ignorance is not a gap to be filled later, but an active state, a collision between
+    what appears and what the organism can receive. Notice the word ''also''—dogs are not alone in this. The human who has
+    not trained perception will bark (speak, judge, dismiss) at the stranger, the paradox, the image that does not fit the
+    grid of the familiar. Heraclitus is showing us that incredulity—the inability to hold what seems impossible—is not a failure
+    of reason but a failure of the body''s readiness. The aphorism does not ask you to become wiser than the dog. It asks
+    you to recognize the bark in yourself, the moment when you reject what you have not yet learned to perceive. That recognition
+    is the threshold.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (dogs, also, bark at what they do not know.), the shared pattern according to which all
-      things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic,
-      or only the later Johannine Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (dogs, also,
+      bark at what they do not know.), the shared pattern according to which all things occur — heard before it is argued
+      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in
-      this passage (dogs, also, bark at what they do not know.), wisdom apart from polymathy: knowing
-      the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη)
-      or reputation for knowledge'
+    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (dogs,
+      also, bark at what they do not know.), wisdom apart from polymathy: knowing the one intelligent will that steers all
+      things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'When you hear yourself say ''that makes no sense'' or feel the impulse to dismiss a claim or
-    image as absurd, pause and ask: what exactly am I not perceiving? Name one concrete detail of the
-    thing you rejected—its texture, its sound, its motion—without judgment, as though describing it to
-    someone who has never encountered it. Repeat this naming three times, each time slower.'
+  body: 'When you hear yourself say ''that makes no sense'' or feel the impulse to dismiss a claim or image as absurd, pause
+    and ask: what exactly am I not perceiving? Name one concrete detail of the thing you rejected—its texture, its sound,
+    its motion—without judgment, as though describing it to someone who has never encountered it. Repeat this naming three
+    times, each time slower.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
-    resonance: 'Both texts identify a structural blindness: the soul/mind continuously performs its characteristic
-      act, yet remains unaware because perception is misdirected—the dog barks at what it does not know
-      because its attention is fixed elsewhere, just as the soul''s activity goes unperceived because
-      perception clings to sense-experience.'
-    divergence: Heraclitus frames unknowing as a paradox of cosmic order (the dog's bark reflects ignorance
-      of the logos), while Plotinus frames it as a problem of attention-hierarchy (the soul's true act
-      is obscured by lower perception).
+    resonance: 'Both texts identify a structural blindness: the soul/mind continuously performs its characteristic act, yet
+      remains unaware because perception is misdirected—the dog barks at what it does not know because its attention is fixed
+      elsewhere, just as the soul''s activity goes unperceived because perception clings to sense-experience.'
+    divergence: Heraclitus frames unknowing as a paradox of cosmic order (the dog's bark reflects ignorance of the logos),
+      while Plotinus frames it as a problem of attention-hierarchy (the soul's true act is obscured by lower perception).
     passage_id: plotinus_enneads.enn_v_1_12
   - citation: 'The Book of Chuang Tzu — The River Spirit''s Humbling: Perspective and the Infinite'
-    resonance: 'Both use a concrete image (dog barking / well-frog) to compress a claim about the limits
-      of knowledge relative to one''s sphere: the dog barks at what exceeds its comprehension, as the
-      frog cannot speak of the ocean from within its narrow sphere—each creature''s utterance or silence
-      reveals the boundary of its epistemic reach.'
-    divergence: Heraclitus treats unknowing as a paradoxical fact of existence (the bark itself is the
-      problem), while Zhuangzi treats it as a pedagogical lesson about perspective and the relativity
-      of knowledge-claims.
+    resonance: 'Both use a concrete image (dog barking / well-frog) to compress a claim about the limits of knowledge relative
+      to one''s sphere: the dog barks at what exceeds its comprehension, as the frog cannot speak of the ocean from within
+      its narrow sphere—each creature''s utterance or silence reveals the boundary of its epistemic reach.'
+    divergence: Heraclitus treats unknowing as a paradoxical fact of existence (the bark itself is the problem), while Zhuangzi
+      treats it as a pedagogical lesson about perspective and the relativity of knowledge-claims.
     passage_id: the_book_of_chuang_tzu.zhuangzi_md_017
   - citation: Siva Sutra — Śāmbhavopāya
-    resonance: 'Both invert the expected value of knowledge: Heraclitus suggests that barking (utterance,
-      claim-making) at what one does not know is a fundamental condition, while the Siva Sutra states
-      that knowledge itself is bondage—both treat knowledge-assertion as entanglement rather than liberation.'
-    divergence: Heraclitus presents unknowing as an ironic fact of the human condition embedded in cosmic
-      order, while the Siva Sutra presents knowledge-as-bondage as a metaphysical principle to be transcended
-      through non-dual recognition.
+    resonance: 'Both invert the expected value of knowledge: Heraclitus suggests that barking (utterance, claim-making) at
+      what one does not know is a fundamental condition, while the Siva Sutra states that knowledge itself is bondage—both
+      treat knowledge-assertion as entanglement rather than liberation.'
+    divergence: Heraclitus presents unknowing as an ironic fact of the human condition embedded in cosmic order, while the
+      Siva Sutra presents knowledge-as-bondage as a metaphysical principle to be transcended through non-dual recognition.
     passage_id: siva_sutra.ss_i_2
   layer_provenance: generated_grounded
 appendixes: []
@@ -124,3 +121,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P115
   source_reference: Patrick (1889), frag. 115; corpus HFR_P115
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 115'
+  iast: transliterated_from_greek

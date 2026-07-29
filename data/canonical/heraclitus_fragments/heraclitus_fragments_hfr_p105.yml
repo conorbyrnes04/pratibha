@@ -7,8 +7,8 @@ unit_id: heraclitus_fragments.hfr_p105
 unit_label: It is hard to contend against passion, for whatever it craves it buys with its life.
 title: It is hard to contend against passion, for whatever it craves it buys with its life.
 unit_type: teaching_passage
-thesis: Heraclitus names passion (thymos) as a force that cannot be fought head-on—not because it is stronger,
-  but because the very act of contending *against* it already concedes its logic.
+thesis: Heraclitus names passion (thymos) as a force that cannot be fought head-on—not because it is stronger, but because
+  the very act of contending *against* it already concedes its logic.
 themes:
 - attention
 - breath
@@ -17,23 +17,20 @@ themes:
 - way
 source_excerpt: It is hard to contend against passion, for whatever it craves it buys with its life.
 translation_literal: It is hard to contend against passion, for whatever it craves it buys with its life.
-commentary: 'Heraclitus names passion (thymos) as a force that cannot be fought head-on—not because it
-  is stronger, but because the very act of contending *against* it already concedes its logic. The fragment''s
-  paradox lies in the phrase ''buys with its life'': passion does not merely spend life as currency; it
-  purchases what it desires *by* expending life itself. This is not moral condemnation but ontological
-  observation. To desire is to burn; to burn is to consume the fuel of existence. The hard truth is not
-  that passion is wrong but that resistance to passion operates in the same economy—you pay the same price
-  either way. Heraclitus does not counsel suppression or indulgence but a shift in perception: to see
-  that the struggle against desire is itself a form of desire, equally costly. The ''hardness'' (chalepon)
-  of the teaching is that there is no escape route, no position outside the exchange. What remains is
-  not victory but lucidity about the transaction itself.'
+commentary: 'Heraclitus names passion (thymos) as a force that cannot be fought head-on—not because it is stronger, but because
+  the very act of contending *against* it already concedes its logic. The fragment''s paradox lies in the phrase ''buys with
+  its life'': passion does not merely spend life as currency; it purchases what it desires *by* expending life itself. This
+  is not moral condemnation but ontological observation. To desire is to burn; to burn is to consume the fuel of existence.
+  The hard truth is not that passion is wrong but that resistance to passion operates in the same economy—you pay the same
+  price either way. Heraclitus does not counsel suppression or indulgence but a shift in perception: to see that the struggle
+  against desire is itself a form of desire, equally costly. The ''hardness'' (chalepon) of the teaching is that there is
+  no escape route, no position outside the exchange. What remains is not victory but lucidity about the transaction itself.'
 insight: ''
-practice: 'Attend to one moment today when you feel the pull of a strong want—food, speech, avoidance,
-  acquisition—and instead of either grasping or resisting, name aloud what it costs: ''This craving spends
-  my breath, my attention, my presence.'' Repeat the naming three times without judgment, feeling the
-  life-currency move through you in the very act of naming.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'Attend to one moment today when you feel the pull of a strong want—food, speech, avoidance, acquisition—and instead
+  of either grasping or resisting, name aloud what it costs: ''This craving spends my breath, my attention, my presence.''
+  Repeat the naming three times without judgment, feeling the life-currency move through you in the very act of naming.'
+sanskrit_devanagari: Θυμῷ μάχεσθαι χαλεπόν· ὅ τι γὰρ ἂν χρηίζῃ γίνεσθαι, ψυχῆς ὠνέεται.
+sanskrit_iast: THumō machesthai chalepon. ho ti gar an chrēizē ginesthai, psuchēs ōneetai.
 tags:
 - attention
 - breath
@@ -46,66 +43,68 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Θυμῷ μάχεσθαι χαλεπόν· ὅ τι γὰρ ἂν χρηίζῃ γίνεσθαι, ψυχῆς ὠνέεται.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 105'
+- kind: iast
+  label: IAST
+  body: THumō machesthai chalepon. ho ti gar an chrēizē ginesthai, psuchēs ōneetai.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: It is hard to contend against passion, for whatever it craves it buys with its life.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus names passion (thymos) as a force that cannot be fought head-on—not because it is
-    stronger, but because the very act of contending *against* it already concedes its logic. The fragment''s
-    paradox lies in the phrase ''buys with its life'': passion does not merely spend life as currency;
-    it purchases what it desires *by* expending life itself. This is not moral condemnation but ontological
-    observation. To desire is to burn; to burn is to consume the fuel of existence. The hard truth is
-    not that passion is wrong but that resistance to passion operates in the same economy—you pay the
-    same price either way. Heraclitus does not counsel suppression or indulgence but a shift in perception:
-    to see that the struggle against desire is itself a form of desire, equally costly. The ''hardness''
-    (chalepon) of the teaching is that there is no escape route, no position outside the exchange. What
-    remains is not victory but lucidity about the transaction itself.'
+  body: 'Heraclitus names passion (thymos) as a force that cannot be fought head-on—not because it is stronger, but because
+    the very act of contending *against* it already concedes its logic. The fragment''s paradox lies in the phrase ''buys
+    with its life'': passion does not merely spend life as currency; it purchases what it desires *by* expending life itself.
+    This is not moral condemnation but ontological observation. To desire is to burn; to burn is to consume the fuel of existence.
+    The hard truth is not that passion is wrong but that resistance to passion operates in the same economy—you pay the same
+    price either way. Heraclitus does not counsel suppression or indulgence but a shift in perception: to see that the struggle
+    against desire is itself a form of desire, equally costly. The ''hardness'' (chalepon) of the teaching is that there is
+    no escape route, no position outside the exchange. What remains is not victory but lucidity about the transaction itself.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
-      (it is hard to contend against passion, for whatever it craves it buys with its life.), world-ruling
-      fire as measured transformation and exchange, not mythic flame alone -> trap: treating fire as a
-      static elemental substance rather than lawful becoming'
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (it is hard to
+      contend against passion, for whatever it craves it buys with its life.), world-ruling fire as measured transformation
+      and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance rather than lawful becoming'
     lemma_id: pyr
     sense_id: pyr.heraclitean
   - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (it is hard
-      to contend against passion, for whatever it craves it buys with its life.), breath-life as the medium
-      through which waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma to later
-      Stoic technical physics alone, or to mere oxygen'
+    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (it is hard to contend against
+      passion, for whatever it craves it buys with its life.), breath-life as the medium through which waking, sleep, and
+      soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics alone, or to mere oxygen'
     lemma_id: pneuma
     sense_id: pneuma.stoic
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Attend to one moment today when you feel the pull of a strong want—food, speech, avoidance, acquisition—and
-    instead of either grasping or resisting, name aloud what it costs: ''This craving spends my breath,
-    my attention, my presence.'' Repeat the naming three times without judgment, feeling the life-currency
-    move through you in the very act of naming.'
+  body: 'Attend to one moment today when you feel the pull of a strong want—food, speech, avoidance, acquisition—and instead
+    of either grasping or resisting, name aloud what it costs: ''This craving spends my breath, my attention, my presence.''
+    Repeat the naming three times without judgment, feeling the life-currency move through you in the very act of naming.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Astavakra Gita — 8.1 — 8.4
-    resonance: 'Both texts identify a paradoxical binding mechanism: Heraclitus shows passion purchasing
-      its own satisfaction at the cost of life-force; Astavakra identifies bondage as the mind''s craving
-      and sorrow, liberation as the cessation of both. Each locates unfreedom in the structure of desire
-      itself, not in external constraint.'
-    divergence: Heraclitus frames this as a cosmological law of exchange (breath/life spent); Astavakra
-      frames it as a reversible mental state amenable to direct recognition and release.
+    resonance: 'Both texts identify a paradoxical binding mechanism: Heraclitus shows passion purchasing its own satisfaction
+      at the cost of life-force; Astavakra identifies bondage as the mind''s craving and sorrow, liberation as the cessation
+      of both. Each locates unfreedom in the structure of desire itself, not in external constraint.'
+    divergence: Heraclitus frames this as a cosmological law of exchange (breath/life spent); Astavakra frames it as a reversible
+      mental state amenable to direct recognition and release.
     passage_id: astavakra_gita.asg_sum_08_01_08_04
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: 'Both texts compress a paradox of vital expenditure into transformative knowledge: Heraclitus
-      shows life bought by passion''s craving; Vijnana Bhairava #37 shows equality-consciousness arising
-      precisely at the termination-point of breath-tension, where the prāṇas'' dynamic opposition reaches
-      its limit. Each locates insight at the threshold where vital force reaches its extreme.'
-    divergence: Heraclitus treats this as an inescapable law of nature; Vijnana Bhairava treats it as
-      a deliberate yogic technique for accessing non-dual awareness.
+    resonance: 'Both texts compress a paradox of vital expenditure into transformative knowledge: Heraclitus shows life bought
+      by passion''s craving; Vijnana Bhairava #37 shows equality-consciousness arising precisely at the termination-point
+      of breath-tension, where the prāṇas'' dynamic opposition reaches its limit. Each locates insight at the threshold where
+      vital force reaches its extreme.'
+    divergence: Heraclitus treats this as an inescapable law of nature; Vijnana Bhairava treats it as a deliberate yogic technique
+      for accessing non-dual awareness.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 appendixes: []
@@ -115,3 +114,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P105
   source_reference: Patrick (1889), frag. 105; corpus HFR_P105
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 105'
+  iast: transliterated_from_greek

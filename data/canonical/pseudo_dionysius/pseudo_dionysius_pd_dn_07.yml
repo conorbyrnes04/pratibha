@@ -7,8 +7,18 @@ unit_id: pseudo_dionysius.pd_dn_07
 unit_label: Evil Hath No Being
 title: Evil Hath No Being
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: Οὐκ ἄρα ὂν τὸ κακόν, οὐδὲ ἐν τοῖς οὖσι τὸ κακόν. Οὐδαμοῦ γὰρ τὸ κακόν, ᾗ κακόν. Καὶ
+  τὸ γίνεσθαι τὸ κακὸν οὐ κατὰ δύναμιν, ἀλλὰ δι’ ἀσθένειαν. Καὶ τοῖς δαίμοσιν, ὃ μέν εἰσι, καὶ ἐκ τἀγαθοῦ
+  καὶ ἀγαθόν. Τὸ δὲ κακὸν αὐτοῖς ἐκ τῆς τῶν οἰκείων ἀγαθῶν ἀποπτώσεως, καὶ ἀλλοίωσις ἡ περὶ τὴν ταὐτότητα
+  καὶ τὴν ἕξιν ἀσθένεια τῆς προσηκούσης αὐτοῖς ἀγγελοπρεποῦς τελειότητος. Καὶ ἐφίενται τοῦ ἀγαθοῦ, καθ’
+  ὃ τοῦ εἶναι καὶ ζῆν καὶ νοεῖν ἐφίενται. Καὶ εἰ οὐκ ἐφίενται τοῦ ἀγαθοῦ, τοῦ μὴ ὄντος ἐφίενται. Καὶ οὐκ
+  ἔστι τοῦτο ἔφεσις, ἀλλὰ τῆς ὄντως ἐφέσεως ἁμαρτία.
+sanskrit_iast: Ouk ara on to kakon, oude en tois ousi to kakon. Oudamou gar to kakon, hē kakon. Kai to
+  ginesthai to kakon ou kata dynamin, alla di’ astheneian. Kai tois daimosin, ho men eisi, kai ek tagathou
+  kai agathon. To de kakon autois ek tēs tōn oikeiōn agathōn apoptōseōs, kai alloiōsis hē peri tēn tautotēta
+  kai tēn hexin astheneia tēs prosēkousēs autois angeloprepous teleiotētos. Kai ephientai tou agathou,
+  kath’ ho tou einai kai zēn kai noein ephientai. Kai ei ouk ephientai tou agathou, tou mē ontos ephientai.
+  Kai ouk esti touto ephesis, alla tēs ontōs epheseōs hamartia.
 translation_literal: Thus evil hath no being, nor any inherence in things that have being. Evil is nowhere
   qua evil; and it arises not through any power but through weakness. Even the devils derive their existence
   from the Good, and their mere existence is good. Their evil is the result of a fall from their proper
@@ -43,6 +53,23 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Οὐκ ἄρα ὂν τὸ κακόν, οὐδὲ ἐν τοῖς οὖσι τὸ κακόν. Οὐδαμοῦ γὰρ τὸ κακόν, ᾗ κακόν. Καὶ τὸ γίνεσθαι
+    τὸ κακὸν οὐ κατὰ δύναμιν, ἀλλὰ δι’ ἀσθένειαν. Καὶ τοῖς δαίμοσιν, ὃ μέν εἰσι, καὶ ἐκ τἀγαθοῦ καὶ ἀγαθόν.
+    Τὸ δὲ κακὸν αὐτοῖς ἐκ τῆς τῶν οἰκείων ἀγαθῶν ἀποπτώσεως, καὶ ἀλλοίωσις ἡ περὶ τὴν ταὐτότητα καὶ τὴν
+    ἕξιν ἀσθένεια τῆς προσηκούσης αὐτοῖς ἀγγελοπρεποῦς τελειότητος. Καὶ ἐφίενται τοῦ ἀγαθοῦ, καθ’ ὃ τοῦ
+    εἶναι καὶ ζῆν καὶ νοεῖν ἐφίενται. Καὶ εἰ οὐκ ἐφίενται τοῦ ἀγαθοῦ, τοῦ μὴ ὄντος ἐφίενται. Καὶ οὐκ ἔστι
+    τοῦτο ἔφεσις, ἀλλὰ τῆς ὄντως ἐφέσεως ἁμαρτία.
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Ouk ara on to kakon, oude en tois ousi to kakon. Oudamou gar to kakon, hē kakon. Kai to ginesthai
+    to kakon ou kata dynamin, alla di’ astheneian. Kai tois daimosin, ho men eisi, kai ek tagathou kai
+    agathon. To de kakon autois ek tēs tōn oikeiōn agathōn apoptōseōs, kai alloiōsis hē peri tēn tautotēta
+    kai tēn hexin astheneia tēs prosēkousēs autois angeloprepous teleiotētos. Kai ephientai tou agathou,
+    kath’ ho tou einai kai zēn kai noein ephientai. Kai ei ouk ephientai tou agathou, tou mē ontos ephientai.
+    Kai ouk esti touto ephesis, alla tēs ontōs epheseōs hamartia.
 - kind: translation
   label: Pratibha Translation
   body: Thus evil hath no being, nor any inherence in things that have being. Evil is nowhere qua evil;
@@ -83,4 +110,6 @@ provenance:
   collection: Pseudo-Dionysius
   section: Divine Names · DN IV
   original_id: PD_DN_07
-  source_reference: ''
+  source_reference: 'Greek: Migne PG / traditional Corpus Areopagiticum (Bibliotheca Augustana PG 3 for
+    MT; Unicode DN aligned to same tradition). English alignment: C.E. Rolt, Dionysius the Areopagite
+    on the Divine Names and the Mystical Theology (SPCK, 1920).'

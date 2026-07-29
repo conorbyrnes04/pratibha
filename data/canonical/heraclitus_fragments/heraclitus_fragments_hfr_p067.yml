@@ -19,28 +19,25 @@ themes:
 - surrender
 source_excerpt: There awaits men after death what they neither hope nor think.
 translation_literal: There awaits people after death what they neither hope nor think.
-commentary: 'The fragment does not console or threaten equally—it fractures expectation itself. What awaits
-  is precisely what *neither* hope *nor* thought can reach: the neither-hoped-nor-thought. This is not
-  mystery as veil but as the collapse of the very instruments by which we anticipate. Hope projects forward
-  from desire; thought projects forward from habit and image-making. Both are modes of the living mind
-  extending itself into futurity. Death, in this formulation, is not an event that thought and hope merely
-  fail to grasp—it is the rupture of the apparatus that does the grasping. The fragment''s force lies
-  in its double negation: not that death is unthinkable (which would still posit thought as the measure),
-  but that it lies outside the *paired* reach of hope-and-thought, as if these two were always already
-  a single mechanism. For Heraclitus, who elsewhere insists that ''character is destiny'' (ἦθος δαίμων),
-  this fragment inverts the usual consolation: you cannot prepare for what exceeds preparation itself.
-  Yet the very impossibility of hoping-and-thinking-toward-death becomes the condition for a different
-  kind of readiness—not readiness of content but readiness as the surrender of the apparatus. The listener
-  is left not with knowledge of what awaits but with the recognition that the self which hopes and thinks
-  is itself the thing that will not persist to meet what comes.'
+commentary: 'The fragment does not console or threaten equally—it fractures expectation itself. What awaits is precisely what
+  *neither* hope *nor* thought can reach: the neither-hoped-nor-thought. This is not mystery as veil but as the collapse of
+  the very instruments by which we anticipate. Hope projects forward from desire; thought projects forward from habit and
+  image-making. Both are modes of the living mind extending itself into futurity. Death, in this formulation, is not an event
+  that thought and hope merely fail to grasp—it is the rupture of the apparatus that does the grasping. The fragment''s force
+  lies in its double negation: not that death is unthinkable (which would still posit thought as the measure), but that it
+  lies outside the *paired* reach of hope-and-thought, as if these two were always already a single mechanism. For Heraclitus,
+  who elsewhere insists that ''character is destiny'' (ἦθος δαίμων), this fragment inverts the usual consolation: you cannot
+  prepare for what exceeds preparation itself. Yet the very impossibility of hoping-and-thinking-toward-death becomes the
+  condition for a different kind of readiness—not readiness of content but readiness as the surrender of the apparatus. The
+  listener is left not with knowledge of what awaits but with the recognition that the self which hopes and thinks is itself
+  the thing that will not persist to meet what comes.'
 insight: ''
-practice: 'Sit with a choice you are currently deliberating—a decision weighted with hope or dread. Notice
-  the texture of your thinking: the images you rehearse, the outcomes you fear or desire. Then, without
-  dismissing the thought, ask: *What am I not imagining?* Not as a prompt to imagine harder, but as a
-  pause in which the machinery of hope-and-thought momentarily stalls. Repeat this three times across
-  three days, each time noting what arises in the gap where anticipation cannot reach.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'Sit with a choice you are currently deliberating—a decision weighted with hope or dread. Notice the texture of
+  your thinking: the images you rehearse, the outcomes you fear or desire. Then, without dismissing the thought, ask: *What
+  am I not imagining?* Not as a prompt to imagine harder, but as a pause in which the machinery of hope-and-thought momentarily
+  stalls. Repeat this three times across three days, each time noting what arises in the gap where anticipation cannot reach.'
+sanskrit_devanagari: Ἀνθρώπους μένει τελευτήσαντας ἅσσα οὐκ ἔλπονται οὐδὲ δοκέουσι.
+sanskrit_iast: Anthrōpous menei teleutēsantas hassa ouk elpontai oude dokeousi.
 tags:
 - commentary_text
 - death
@@ -56,81 +53,82 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Ἀνθρώπους μένει τελευτήσαντας ἅσσα οὐκ ἔλπονται οὐδὲ δοκέουσι.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 122'
+- kind: iast
+  label: IAST
+  body: Anthrōpous menei teleutēsantas hassa ouk elpontai oude dokeousi.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: There awaits people after death what they neither hope nor think.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment does not console or threaten equally—it fractures expectation itself. What awaits
-    is precisely what *neither* hope *nor* thought can reach: the neither-hoped-nor-thought. This is not
-    mystery as veil but as the collapse of the very instruments by which we anticipate. Hope projects
-    forward from desire; thought projects forward from habit and image-making. Both are modes of the living
-    mind extending itself into futurity. Death, in this formulation, is not an event that thought and
-    hope merely fail to grasp—it is the rupture of the apparatus that does the grasping. The fragment''s
-    force lies in its double negation: not that death is unthinkable (which would still posit thought
-    as the measure), but that it lies outside the *paired* reach of hope-and-thought, as if these two
-    were always already a single mechanism. For Heraclitus, who elsewhere insists that ''character is
-    destiny'' (ἦθος δαίμων), this fragment inverts the usual consolation: you cannot prepare for what
-    exceeds preparation itself. Yet the very impossibility of hoping-and-thinking-toward-death becomes
-    the condition for a different kind of readiness—not readiness of content but readiness as the surrender
-    of the apparatus. The listener is left not with knowledge of what awaits but with the recognition
-    that the self which hopes and thinks is itself the thing that will not persist to meet what comes.'
+  body: 'The fragment does not console or threaten equally—it fractures expectation itself. What awaits is precisely what
+    *neither* hope *nor* thought can reach: the neither-hoped-nor-thought. This is not mystery as veil but as the collapse
+    of the very instruments by which we anticipate. Hope projects forward from desire; thought projects forward from habit
+    and image-making. Both are modes of the living mind extending itself into futurity. Death, in this formulation, is not
+    an event that thought and hope merely fail to grasp—it is the rupture of the apparatus that does the grasping. The fragment''s
+    force lies in its double negation: not that death is unthinkable (which would still posit thought as the measure), but
+    that it lies outside the *paired* reach of hope-and-thought, as if these two were always already a single mechanism. For
+    Heraclitus, who elsewhere insists that ''character is destiny'' (ἦθος δαίμων), this fragment inverts the usual consolation:
+    you cannot prepare for what exceeds preparation itself. Yet the very impossibility of hoping-and-thinking-toward-death
+    becomes the condition for a different kind of readiness—not readiness of content but readiness as the surrender of the
+    apparatus. The listener is left not with knowledge of what awaits but with the recognition that the self which hopes and
+    thinks is itself the thing that will not persist to meet what comes.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying ->
-      in this passage (there awaits men after death what they neither hope nor think.), life and death
-      as reciprocal: one element lives the death of another; hope cannot prefigure what awaits -> trap:
-      afterlife tourism or simple annihilation; the point is structural exchange and limit of anticipation'
+    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (there
+      awaits men after death what they neither hope nor think.), life and death as reciprocal: one element lives the death
+      of another; hope cannot prefigure what awaits -> trap: afterlife tourism or simple annihilation; the point is structural
+      exchange and limit of anticipation'
   - term: ἦθος (ēthos)
-    definition: 'ἦθος “custom, habitual character, dwelling” — how one habitually lives -> in this passage
-      (there awaits men after death what they neither hope nor think.), character as destiny’s shape:
-      the habitual measure you are, not a costume you wear -> trap: soft “ethics” as rules-of-niceness
-      rather than lived configuration of soul'
+    definition: 'ἦθος “custom, habitual character, dwelling” — how one habitually lives -> in this passage (there awaits men
+      after death what they neither hope nor think.), character as destiny’s shape: the habitual measure you are, not a costume
+      you wear -> trap: soft “ethics” as rules-of-niceness rather than lived configuration of soul'
   - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage
-      (there awaits men after death what they neither hope nor think.), the soul whose depth, dryness,
-      or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,” or immortal
-      ego-personality'
+    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (there awaits men
+      after death what they neither hope nor think.), the soul whose depth, dryness, or rudeness decides whether senses can
+      witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
     lemma_id: psyche
     sense_id: psyche.platonic
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (there awaits men after death what they neither hope nor think.), the shared pattern according
-      to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine,
-      mere logic, or only the later Johannine Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (there awaits
+      men after death what they neither hope nor think.), the shared pattern according to which all things occur — heard before
+      it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Sit with a choice you are currently deliberating—a decision weighted with hope or dread. Notice
-    the texture of your thinking: the images you rehearse, the outcomes you fear or desire. Then, without
-    dismissing the thought, ask: *What am I not imagining?* Not as a prompt to imagine harder, but as
-    a pause in which the machinery of hope-and-thought momentarily stalls. Repeat this three times across
-    three days, each time noting what arises in the gap where anticipation cannot reach.'
+  body: 'Sit with a choice you are currently deliberating—a decision weighted with hope or dread. Notice the texture of your
+    thinking: the images you rehearse, the outcomes you fear or desire. Then, without dismissing the thought, ask: *What am
+    I not imagining?* Not as a prompt to imagine harder, but as a pause in which the machinery of hope-and-thought momentarily
+    stalls. Repeat this three times across three days, each time noting what arises in the gap where anticipation cannot reach.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: The Book of Chuang Tzu — chapter 8
-    resonance: 'Both texts displace personal expectation and hope as the measure of what is real or true:
-      Heraclitus says death brings what mortals ''neither hope nor think,'' while Chuang Tzu''s true persons
-      ''do not glorify success'' and refuse to construct identity through desire. Each makes ethical alignment
-      depend on releasing the ego''s anticipatory frame.'
-    divergence: Heraclitus grounds this displacement in a cosmic measure (logos) that governs all things;
-      Chuang Tzu grounds it in spontaneous non-action (wu wei) that flows with the Way's own emptiness.
+    resonance: 'Both texts displace personal expectation and hope as the measure of what is real or true: Heraclitus says
+      death brings what mortals ''neither hope nor think,'' while Chuang Tzu''s true persons ''do not glorify success'' and
+      refuse to construct identity through desire. Each makes ethical alignment depend on releasing the ego''s anticipatory
+      frame.'
+    divergence: Heraclitus grounds this displacement in a cosmic measure (logos) that governs all things; Chuang Tzu grounds
+      it in spontaneous non-action (wu wei) that flows with the Way's own emptiness.
     passage_id: the_book_of_chuang_tzu.ctz_008
   - citation: Isavasya Upanishad — Mantra 17
-    resonance: 'Both passages mark death as a dissolution where individual breath returns to a universal
-      element: Heraclitus implies breath rejoins the cosmic order that exceeds mortal hope, while the
-      Isavasya Upanishad explicitly returns breath to ''immortal air'' and body to ashes. Each treats
-      death as reintegration into what transcends the personal.'
-    divergence: Heraclitus emphasizes the ethical shock of what exceeds expectation; the Upanishad emphasizes
-      the metaphysical continuity of the immortal element itself.
+    resonance: 'Both passages mark death as a dissolution where individual breath returns to a universal element: Heraclitus
+      implies breath rejoins the cosmic order that exceeds mortal hope, while the Isavasya Upanishad explicitly returns breath
+      to ''immortal air'' and body to ashes. Each treats death as reintegration into what transcends the personal.'
+    divergence: Heraclitus emphasizes the ethical shock of what exceeds expectation; the Upanishad emphasizes the metaphysical
+      continuity of the immortal element itself.
     passage_id: isavasya_upanishad.isa_023
   layer_provenance: generated_grounded
 - kind: appendix
@@ -145,3 +143,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P067
   source_reference: Patrick (1889), frag. 67; corpus HFR_P067
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 122'
+  iast: transliterated_from_greek

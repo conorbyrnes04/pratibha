@@ -7,8 +7,18 @@ unit_id: pseudo_dionysius.pd_mt_06
 unit_label: Not Any Sensible Thing
 title: Not Any Sensible Thing
 unit_type: sutra
-sanskrit_devanagari: Ὅτι οὐδέν ἐστι τῶν πάντων ὁ πάντων αἴτιος κατὰ τὰς θέσεις.
-sanskrit_iast: Greek (corpus original field).
+sanskrit_devanagari: Λέγομεν οὖν, ὡς ἡ πάντων αἰτία καὶ ὑπὲρ πάντα οὖσα οὔτε ἀνούσιός ἐστιν οὔτε ἄζωος,
+  οὔτε ἄλογος οὔτε ἄνους· οὐδὲ σῶμά ἐστιν οὔτε σχῆμα, οὔτε εἶδος οὔτε ποιότητα ἢ ποσότητα ἢ ὄγκον ἔχει·
+  οὐδὲ ἐν τόπωι ἐστὶν οὔτε ὁρᾶται οὔτε ἐπαφὴν αἰσθητὴν ἔχει· οὐδὲ αἰσθάνεται οὔτε αἰσθητή ἐστιν· οὐδὲ
+  ἀταξίαν ἔχει καὶ ταραχήν, ὑπὸ παθῶν ὑλικῶν ἐνοχλουμένη, οὔτε ἀδύναμός ἐστιν, αἰσθητοῖς ὑποκειμένη συμπτώμασιν,
+  οὔτε ἐν ἐνδείαι ἐστὶ φωτός· οὐδὲ ἀλλοίωσιν ἢ φθορὰν ἢ μερισμὸν ἢ στέρησιν ἢ ῥεῦσιν οὔτε ἄλλο τι τῶν
+  αἰσθητῶν οὔτε ἐστὶν οὔτε ἔχει. ε´
+sanskrit_iast: Legomen oun, hōs hē pantōn aitia kai hyper panta ousa oute anousios estin oute azōos, oute
+  alogos oute anous; oude sōma estin oute schēma, oute eidos oute poiotēta ē posotēta ē onkon echei; oude
+  en topōi estin oute horatai oute epaphēn aisthētēn echei; oude aisthanetai oute aisthētē estin; oude
+  ataxian echei kai tarachēn, hypo pathōn hylikōn enochloumenē, oute adynamos estin, aisthētois hypokeimenē
+  symptōmasin, oute en endeiai esti phōtos; oude alloiōsin ē phthoran ē merismon ē sterēsin ē rheusin
+  oute allo ti tōn aisthētōn oute estin oute echei. e
 translation_literal: 'We therefore maintain that the universal Cause transcending all things is neither
   impersonal nor lifeless, nor irrational nor without understanding: in short, that It is not a material
   body, and therefore does not possess outward shape or intelligible form, or quality, or quantity, or
@@ -40,11 +50,21 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: Ὅτι οὐδέν ἐστι τῶν πάντων ὁ πάντων αἴτιος κατὰ τὰς θέσεις.
+  body: Λέγομεν οὖν, ὡς ἡ πάντων αἰτία καὶ ὑπὲρ πάντα οὖσα οὔτε ἀνούσιός ἐστιν οὔτε ἄζωος, οὔτε ἄλογος
+    οὔτε ἄνους· οὐδὲ σῶμά ἐστιν οὔτε σχῆμα, οὔτε εἶδος οὔτε ποιότητα ἢ ποσότητα ἢ ὄγκον ἔχει· οὐδὲ ἐν
+    τόπωι ἐστὶν οὔτε ὁρᾶται οὔτε ἐπαφὴν αἰσθητὴν ἔχει· οὐδὲ αἰσθάνεται οὔτε αἰσθητή ἐστιν· οὐδὲ ἀταξίαν
+    ἔχει καὶ ταραχήν, ὑπὸ παθῶν ὑλικῶν ἐνοχλουμένη, οὔτε ἀδύναμός ἐστιν, αἰσθητοῖς ὑποκειμένη συμπτώμασιν,
+    οὔτε ἐν ἐνδείαι ἐστὶ φωτός· οὐδὲ ἀλλοίωσιν ἢ φθορὰν ἢ μερισμὸν ἢ στέρησιν ἢ ῥεῦσιν οὔτε ἄλλο τι τῶν
+    αἰσθητῶν οὔτε ἐστὶν οὔτε ἔχει. ε´
   layer_provenance: sourced
 - kind: iast
   label: IAST
-  body: Greek (corpus original field).
+  body: Legomen oun, hōs hē pantōn aitia kai hyper panta ousa oute anousios estin oute azōos, oute alogos
+    oute anous; oude sōma estin oute schēma, oute eidos oute poiotēta ē posotēta ē onkon echei; oude en
+    topōi estin oute horatai oute epaphēn aisthētēn echei; oude aisthanetai oute aisthētē estin; oude
+    ataxian echei kai tarachēn, hypo pathōn hylikōn enochloumenē, oute adynamos estin, aisthētois hypokeimenē
+    symptōmasin, oute en endeiai esti phōtos; oude alloiōsin ē phthoran ē merismon ē sterēsin ē rheusin
+    oute allo ti tōn aisthētōn oute estin oute echei. e
 - kind: translation
   label: Pratibha Translation
   body: 'We therefore maintain that the universal Cause transcending all things is neither impersonal
@@ -88,4 +108,6 @@ provenance:
   collection: Pseudo-Dionysius
   section: Mystical Theology · MT IV
   original_id: PD_MT_06
-  source_reference: ''
+  source_reference: 'Greek: Migne PG / traditional Corpus Areopagiticum (Bibliotheca Augustana PG 3 for
+    MT; Unicode DN aligned to same tradition). English alignment: C.E. Rolt, Dionysius the Areopagite
+    on the Divine Names and the Mystical Theology (SPCK, 1920).'

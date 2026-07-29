@@ -10,32 +10,30 @@ unit_type: teaching_passage
 thesis: Heraclitus does not here theorize about the good; he executes a judgment.
 themes:
 - death
-source_excerpt: 'The Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch
-  as they have banished Hermodorus, the worthiest man among them, saying: ‘‘ Let no one of us excel, and
-  if'
-translation_literal: 'The Ephesians deserve, man for man, to be hung, and the youth to leave the city,
-  inasmuch as they have banished Hermodorus, the worthiest man among them, saying: ‘‘ Let no one of us
-  excel, and if'
-commentary: 'Heraclitus does not here theorize about the good; he executes a judgment. The fragment''s
-  force lies in its refusal of the median—the Ephesians'' crime is not tyranny but its opposite: the collective
-  murder of distinction itself. ''Let no one of us excel'' is the formula of a city that has chosen leveling
-  over the strain of hierarchy, comfort over the friction that produces thought. Hermodorus is ''the worthiest''
-  (aristos), and his exile is therefore not punishment but amputation. What Heraclitus sees is that a
-  polis that cannot bear its own best member has already chosen death—hanging is merely the honest name
-  for what they have already done to themselves. The youth must leave because they are the only ones still
-  capable of becoming: to remain is to calcify into the collective mediocrity. This is not sentiment about
-  the individual; it is a diagnosis of what happens when a community actively suppresses the one who would
-  embody its own highest possibility. The logos that holds all things in tension requires difference,
-  requires the exceptional. To exile it is to exile the very principle by which a city remains alive.'
+source_excerpt: 'The Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have banished
+  Hermodorus, the worthiest man among them, saying: ‘‘ Let no one of us excel, and if'
+translation_literal: 'The Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have
+  banished Hermodorus, the worthiest man among them, saying: ‘‘ Let no one of us excel, and if'
+commentary: 'Heraclitus does not here theorize about the good; he executes a judgment. The fragment''s force lies in its refusal
+  of the median—the Ephesians'' crime is not tyranny but its opposite: the collective murder of distinction itself. ''Let
+  no one of us excel'' is the formula of a city that has chosen leveling over the strain of hierarchy, comfort over the friction
+  that produces thought. Hermodorus is ''the worthiest'' (aristos), and his exile is therefore not punishment but amputation.
+  What Heraclitus sees is that a polis that cannot bear its own best member has already chosen death—hanging is merely the
+  honest name for what they have already done to themselves. The youth must leave because they are the only ones still capable
+  of becoming: to remain is to calcify into the collective mediocrity. This is not sentiment about the individual; it is a
+  diagnosis of what happens when a community actively suppresses the one who would embody its own highest possibility. The
+  logos that holds all things in tension requires difference, requires the exceptional. To exile it is to exile the very principle
+  by which a city remains alive.'
 insight: ''
-practice: 'Walk through a space where you work or gather regularly, and notice one person or one contribution
-  that stands out—either because it exceeds the norm or because it is being quietly resisted or minimized.
-  Do not act on this yet. For three days, observe how the collective responds to this difference: what
-  is the texture of the resistance? Where does leveling language appear (''we''re all equal,'' ''don''t
-  make waves,'' ''who do you think you are'')? On the fourth day, ask yourself whether you have been complicit
-  in that suppression, and whether you are still.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'Walk through a space where you work or gather regularly, and notice one person or one contribution that stands
+  out—either because it exceeds the norm or because it is being quietly resisted or minimized. Do not act on this yet. For
+  three days, observe how the collective responds to this difference: what is the texture of the resistance? Where does leveling
+  language appear (''we''re all equal,'' ''don''t make waves,'' ''who do you think you are'')? On the fourth day, ask yourself
+  whether you have been complicit in that suppression, and whether you are still.'
+sanskrit_devanagari: Ἄξιον Ἐφεσίοις ἡβηδὸν ἀπάγξασθαι πᾶσι καὶ τοῖς ἀνήβοις τὴν πόλιν καταλιπεῖν, οἵτινες Ἑῥμόδωρον ἄνδρα
+  ἑωυτῶν ὀνήιστον ἐξέβαλον, φάντες· ἡμέων μηδὲ εἷς ὀνήιστος ἔστω, εἰ δὲ μή, ἄλλῃ τε καὶ μετ' ἄλλον.
+sanskrit_iast: Axion Ephesiois hēbēdon apanxasthai pasi kai tois anēbois tēn polin katalipein, ohitines HEhrmodōron andra
+  heōutōn onēiston exebalon, phantes. hēmeōn mēde ehis onēistos estō, ei de mē, allē te kai met' allon.
 tags:
 - commentary_text
 - death
@@ -44,87 +42,89 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Ἄξιον Ἐφεσίοις ἡβηδὸν ἀπάγξασθαι πᾶσι καὶ τοῖς ἀνήβοις τὴν πόλιν καταλιπεῖν, οἵτινες Ἑῥμόδωρον ἄνδρα ἑωυτῶν ὀνήιστον
+    ἐξέβαλον, φάντες· ἡμέων μηδὲ εἷς ὀνήιστος ἔστω, εἰ δὲ μή, ἄλλῃ τε καὶ μετ' ἄλλον.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 114'
+- kind: iast
+  label: IAST
+  body: Axion Ephesiois hēbēdon apanxasthai pasi kai tois anēbois tēn polin katalipein, ohitines HEhrmodōron andra heōutōn
+    onēiston exebalon, phantes. hēmeōn mēde ehis onēistos estō, ei de mē, allē te kai met' allon.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
-  body: 'The Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch as
-    they have banished Hermodorus, the worthiest man among them, saying: ‘‘ Let no one of us excel, and
-    if'
+  body: 'The Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have banished Hermodorus,
+    the worthiest man among them, saying: ‘‘ Let no one of us excel, and if'
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus does not here theorize about the good; he executes a judgment. The fragment''s force
-    lies in its refusal of the median—the Ephesians'' crime is not tyranny but its opposite: the collective
-    murder of distinction itself. ''Let no one of us excel'' is the formula of a city that has chosen
-    leveling over the strain of hierarchy, comfort over the friction that produces thought. Hermodorus
-    is ''the worthiest'' (aristos), and his exile is therefore not punishment but amputation. What Heraclitus
-    sees is that a polis that cannot bear its own best member has already chosen death—hanging is merely
-    the honest name for what they have already done to themselves. The youth must leave because they are
-    the only ones still capable of becoming: to remain is to calcify into the collective mediocrity. This
-    is not sentiment about the individual; it is a diagnosis of what happens when a community actively
-    suppresses the one who would embody its own highest possibility. The logos that holds all things in
-    tension requires difference, requires the exceptional. To exile it is to exile the very principle
-    by which a city remains alive.'
+  body: 'Heraclitus does not here theorize about the good; he executes a judgment. The fragment''s force lies in its refusal
+    of the median—the Ephesians'' crime is not tyranny but its opposite: the collective murder of distinction itself. ''Let
+    no one of us excel'' is the formula of a city that has chosen leveling over the strain of hierarchy, comfort over the
+    friction that produces thought. Hermodorus is ''the worthiest'' (aristos), and his exile is therefore not punishment but
+    amputation. What Heraclitus sees is that a polis that cannot bear its own best member has already chosen death—hanging
+    is merely the honest name for what they have already done to themselves. The youth must leave because they are the only
+    ones still capable of becoming: to remain is to calcify into the collective mediocrity. This is not sentiment about the
+    individual; it is a diagnosis of what happens when a community actively suppresses the one who would embody its own highest
+    possibility. The logos that holds all things in tension requires difference, requires the exceptional. To exile it is
+    to exile the very principle by which a city remains alive.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
-      passage (The Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch
-      as they have bani…), tensioned unity of opposites — bow and lyre held by counter-pull, not bland
-      agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (The Ephesians
+      deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have bani…), tensioned unity of
+      opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
+      or static balance'
     lemma_id: harmonie
     sense_id: harmonie.heraclitean
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (The Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch
-      as they have bani…), the shared pattern according to which all things occur — heard before it is
-      argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine
-      Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (The Ephesians
+      deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have bani…), the shared pattern
+      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
+      logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying ->
-      in this passage (The Ephesians deserve, man for man, to be hung, and the youth to leave the city,
-      inasmuch as they have bani…), life and death as reciprocal: one element lives the death of another;
-      hope cannot prefigure what awaits -> trap: afterlife tourism or simple annihilation; the point is
-      structural exchange and limit of anticipation'
+    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (The
+      Ephesians deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have bani…), life and
+      death as reciprocal: one element lives the death of another; hope cannot prefigure what awaits -> trap: afterlife tourism
+      or simple annihilation; the point is structural exchange and limit of anticipation'
   - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (The Ephesians
-      deserve, man for man, to be hung, and the youth to leave the city, inasmuch as they have bani…),
-      the one that all things are: not mystical mush but a single order inside visible difference -> trap:
-      erasing plurality; Heraclitus’s hen keeps tension and exchange inside unity'
+    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (The Ephesians deserve, man
+      for man, to be hung, and the youth to leave the city, inasmuch as they have bani…), the one that all things are: not
+      mystical mush but a single order inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension
+      and exchange inside unity'
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Walk through a space where you work or gather regularly, and notice one person or one contribution
-    that stands out—either because it exceeds the norm or because it is being quietly resisted or minimized.
-    Do not act on this yet. For three days, observe how the collective responds to this difference: what
-    is the texture of the resistance? Where does leveling language appear (''we''re all equal,'' ''don''t
-    make waves,'' ''who do you think you are'')? On the fourth day, ask yourself whether you have been
-    complicit in that suppression, and whether you are still.'
+  body: 'Walk through a space where you work or gather regularly, and notice one person or one contribution that stands out—either
+    because it exceeds the norm or because it is being quietly resisted or minimized. Do not act on this yet. For three days,
+    observe how the collective responds to this difference: what is the texture of the resistance? Where does leveling language
+    appear (''we''re all equal,'' ''don''t make waves,'' ''who do you think you are'')? On the fourth day, ask yourself whether
+    you have been complicit in that suppression, and whether you are still.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts establish a structural interdependence between two orders of reality—Heraclitus''s
-      ''single intelligible order within apparent plurality'' and Nagarjuna''s ultimate (paramārtha) that
-      cannot be accessed except through the conventional (vyavahāra). Each refuses mystical fusion in
-      favor of a rigorous logical relation: the one does not dissolve the many, nor does the ultimate
-      bypass the conventional.'
-    divergence: Heraclitus grounds this order in a cosmic principle (logos) accessible through rational
-      perception of natural flux; Nagarjuna grounds it in the emptiness of intrinsic nature, accessible
-      only through dialectical analysis that deconstructs both orders.
+    resonance: 'Both texts establish a structural interdependence between two orders of reality—Heraclitus''s ''single intelligible
+      order within apparent plurality'' and Nagarjuna''s ultimate (paramārtha) that cannot be accessed except through the
+      conventional (vyavahāra). Each refuses mystical fusion in favor of a rigorous logical relation: the one does not dissolve
+      the many, nor does the ultimate bypass the conventional.'
+    divergence: Heraclitus grounds this order in a cosmic principle (logos) accessible through rational perception of natural
+      flux; Nagarjuna grounds it in the emptiness of intrinsic nature, accessible only through dialectical analysis that deconstructs
+      both orders.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both passages locate a fundamental principle—Heraclitus''s ''one'' and the Vijnana Bhairava''s
-      Supreme Goddess—not in transcendent abstraction but in the concrete oscillation of a natural process:
-      the logos in flux and change, the Goddess in the rhythmic movement of breath (prāṇa and jīva). The
-      principle is immanent in its own articulation.'
-    divergence: Heraclitus emphasizes the intelligible rational order revealed through sensory observation
-      of cosmic fire and strife; the Vijnana Bhairava emphasizes embodied yogic recognition of the divine
-      through breath-work as direct phenomenological access.
+    resonance: 'Both passages locate a fundamental principle—Heraclitus''s ''one'' and the Vijnana Bhairava''s Supreme Goddess—not
+      in transcendent abstraction but in the concrete oscillation of a natural process: the logos in flux and change, the
+      Goddess in the rhythmic movement of breath (prāṇa and jīva). The principle is immanent in its own articulation.'
+    divergence: Heraclitus emphasizes the intelligible rational order revealed through sensory observation of cosmic fire
+      and strife; the Vijnana Bhairava emphasizes embodied yogic recognition of the divine through breath-work as direct phenomenological
+      access.
     passage_id: vijnana_bhairava.yukti_001
   layer_provenance: generated_grounded
 appendixes: []
@@ -134,3 +134,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P114
   source_reference: Patrick (1889), frag. 114; corpus HFR_P114
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 114'
+  iast: transliterated_from_greek

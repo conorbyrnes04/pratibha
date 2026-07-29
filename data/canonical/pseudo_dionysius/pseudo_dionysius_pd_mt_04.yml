@@ -7,8 +7,16 @@ unit_id: pseudo_dionysius.pd_mt_04
 unit_label: Carving the Latent Image
 title: Carving the Latent Image
 unit_type: sutra
-sanskrit_devanagari: Πῶς δεῖ καὶ ἑνοῦσθαι καὶ ὑμνεῖν τὸν πάντων αἴτιον καὶ ὑπὲρ πάντα.
-sanskrit_iast: Greek (corpus original field).
+sanskrit_devanagari: Κατὰ τοῦτον ἡμεῖς γενέσθαι τὸν ὑπέρφωτον εὐχόμεθα γνόφον καὶ δι' ἀβλεψίας καὶ ἀγνωσίας
+  ἰδεῖν καὶ γνῶναι τὸν ὑπὲρ θέαν καὶ γνῶσιν αὐτῶι τῶι μὴ ἰδεῖν μηδὲ γνῶναι - τοῦτο γάρ ἐστι τὸ ὄντως ἰδεῖν
+  καὶ γνῶναι - καὶ τὸν ὑπερούσιον ὑπερουσίως ὑμνῆσαι διὰ τῆς πάντων τῶν ὄντων ἀφαιρέσεως, ὥσπερ οἱ αὐτοφυὲς
+  ἄγαλμα ποιοῦντες ἐξαιροῦντες πάντα τὰ ἐπιπροσθοῦντα τῆι καθαρᾶι τοῦ κρυφίου θέαι κωλύματα καὶ αὐτὸ ἐφ'
+  ἑαυτοῦ τῆι ἀφαιρέσει μόνηι τὸ ἀποκεκρυμμένον ἀναφαίνοντες κάλλος.
+sanskrit_iast: Kata touton hēmeis genesthai ton hyperphōton euchometha gnophon kai di ablepsias kai agnōsias
+  idein kai gnōnai ton hyper thean kai gnōsin autōi tōi mē idein mēde gnōnai - touto gar esti to ontōs
+  idein kai gnōnai - kai ton hyperousion hyperousiōs hymnēsai dia tēs pantōn tōn ontōn aphaireseōs, hōsper
+  oi autophyes agalma poiountes exairountes panta ta epiprosthounta tēi katharai tou kryphiou theai kōlymata
+  kai auto eph heautou tēi aphairesei monēi to apokekrymmenon anaphainontes kallos.
 translation_literal: Unto this Darkness which is beyond Light we pray that we may come, and may attain
   unto vision through the loss of sight and knowledge, and that in ceasing thus to see or to know we may
   learn to know that which is beyond all perception and understanding (for this emptying of our faculties
@@ -43,11 +51,19 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: Πῶς δεῖ καὶ ἑνοῦσθαι καὶ ὑμνεῖν τὸν πάντων αἴτιον καὶ ὑπὲρ πάντα.
+  body: Κατὰ τοῦτον ἡμεῖς γενέσθαι τὸν ὑπέρφωτον εὐχόμεθα γνόφον καὶ δι' ἀβλεψίας καὶ ἀγνωσίας ἰδεῖν καὶ
+    γνῶναι τὸν ὑπὲρ θέαν καὶ γνῶσιν αὐτῶι τῶι μὴ ἰδεῖν μηδὲ γνῶναι - τοῦτο γάρ ἐστι τὸ ὄντως ἰδεῖν καὶ
+    γνῶναι - καὶ τὸν ὑπερούσιον ὑπερουσίως ὑμνῆσαι διὰ τῆς πάντων τῶν ὄντων ἀφαιρέσεως, ὥσπερ οἱ αὐτοφυὲς
+    ἄγαλμα ποιοῦντες ἐξαιροῦντες πάντα τὰ ἐπιπροσθοῦντα τῆι καθαρᾶι τοῦ κρυφίου θέαι κωλύματα καὶ αὐτὸ
+    ἐφ' ἑαυτοῦ τῆι ἀφαιρέσει μόνηι τὸ ἀποκεκρυμμένον ἀναφαίνοντες κάλλος.
   layer_provenance: sourced
 - kind: iast
   label: IAST
-  body: Greek (corpus original field).
+  body: Kata touton hēmeis genesthai ton hyperphōton euchometha gnophon kai di ablepsias kai agnōsias
+    idein kai gnōnai ton hyper thean kai gnōsin autōi tōi mē idein mēde gnōnai - touto gar esti to ontōs
+    idein kai gnōnai - kai ton hyperousion hyperousiōs hymnēsai dia tēs pantōn tōn ontōn aphaireseōs,
+    hōsper oi autophyes agalma poiountes exairountes panta ta epiprosthounta tēi katharai tou kryphiou
+    theai kōlymata kai auto eph heautou tēi aphairesei monēi to apokekrymmenon anaphainontes kallos.
 - kind: translation
   label: Pratibha Translation
   body: Unto this Darkness which is beyond Light we pray that we may come, and may attain unto vision
@@ -93,4 +109,6 @@ provenance:
   collection: Pseudo-Dionysius
   section: Mystical Theology · MT II
   original_id: PD_MT_04
-  source_reference: ''
+  source_reference: 'Greek: Migne PG / traditional Corpus Areopagiticum (Bibliotheca Augustana PG 3 for
+    MT; Unicode DN aligned to same tradition). English alignment: C.E. Rolt, Dionysius the Areopagite
+    on the Divine Names and the Mystical Theology (SPCK, 1920).'

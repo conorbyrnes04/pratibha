@@ -59,8 +59,13 @@ insight: ''
 practice: 'Look at anything before you—a wall, a hand, the light—and instead of thinking "I see this,"
   let the phrase arise: "By Himself He sees Himself." Keep looking until the sense of a separate looker
   positioned behind your eyes loosens, and there is only the one seeing that no faculty of yours is performing.'
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: لا هو في شيء، ولا شيء فيه، لا داخلاً ولا خارجًا. ينبغي أن نعرفه بهذه الصفة، لا بالعلم
+  ولا بالعقل، ولا بالفهم ولا بالوهم ولا بالعين، ولا بالحسِّ الظاهر ولا بالعين الباطن ولا بالإدراك. لا
+  يراه إلا هو، ولا يدركه إلا هو، ولا يعلمه إلا هو بنفسه، وبنفسه يعرف نفسه؛ يرى نفسه، لا يراه أحدٌ غيره.
+sanskrit_iast: lā huwa fī shayʾ, wa-lā shayʾ fīhi, lā dākhilan wa-lā khārijan. yanbaghī an naʿrifahu bihādhihi
+  ṣifah, lā bi-l-ʿilm wa-lā bi-l-ʿaql, wa-lā bi-l-fahm wa-lā bi-l-wahm wa-lā bi-l-ʿayn, wa-lā bi-l-ḥiss
+  al-ẓāhir wa-lā bi-l-ʿayn al-bāṭin wa-lā bi-l-idrāk. lā yarāhu illā huwa, wa-lā yudrikuhu illā huwa,
+  wa-lā yaʿlamuhu illā huwa binafsihi, wa-binafsihi yaʿrifu nafsahu; yarā nafsahu, lā yarāhu aḥadun ghayruhu.
 tags:
 - attention
 - awareness
@@ -80,6 +85,8 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P006
   source_reference: ''
+  arabic_source: balyani_risalat_al_wujudiyya_ahadiyya_ar.txt (ibnalarabi.com transcription; classical
+    PD Arabic)
 translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
   modernized. Study rendering.
 translation: Know Him in this way—not by knowledge, nor by intellect, nor by understanding, nor by imagination,
@@ -96,6 +103,23 @@ abhyasa: 'Look at anything before you—a wall, a hand, the light—and instead 
   positioned behind your eyes loosens, and there is only the one seeing that no faculty of yours is performing.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
+- kind: original
+  label: Original (Arabic)
+  body: لا هو في شيء، ولا شيء فيه، لا داخلاً ولا خارجًا. ينبغي أن نعرفه بهذه الصفة، لا بالعلم ولا بالعقل،
+    ولا بالفهم ولا بالوهم ولا بالعين، ولا بالحسِّ الظاهر ولا بالعين الباطن ولا بالإدراك. لا يراه إلا هو،
+    ولا يدركه إلا هو، ولا يعلمه إلا هو بنفسه، وبنفسه يعرف نفسه؛ يرى نفسه، لا يراه أحدٌ غيره.
+  layer_provenance: 'Arabic: classical text of Risālat al-Wujūdiyya / Risālat al-Aḥadiyya (Auḥad al-Dīn
+    al-Balyānī; traditionally ascribed to Ibn ʿArabī). Unicode transcription from https://www.ibnalarabi.com/books/wujudiya.php
+    (text pages), saved at data/raw_texts/pd/arabic/balyani_risalat_al_wujudiyya_ahadiyya_ar.txt. Passage
+    aligned using T. H. Weir JRAS 1901 English as locator. Underlying medieval Arabic is public domain.'
+- kind: iast
+  label: Transliteration (ALA-LC)
+  body: lā huwa fī shayʾ, wa-lā shayʾ fīhi, lā dākhilan wa-lā khārijan. yanbaghī an naʿrifahu bihādhihi
+    ṣifah, lā bi-l-ʿilm wa-lā bi-l-ʿaql, wa-lā bi-l-fahm wa-lā bi-l-wahm wa-lā bi-l-ʿayn, wa-lā bi-l-ḥiss
+    al-ẓāhir wa-lā bi-l-ʿayn al-bāṭin wa-lā bi-l-idrāk. lā yarāhu illā huwa, wa-lā yudrikuhu illā huwa,
+    wa-lā yaʿlamuhu illā huwa binafsihi, wa-binafsihi yaʿrifu nafsahu; yarā nafsahu, lā yarāhu aḥadun
+    ghayruhu.
+  layer_provenance: ALA-LC scholarly latinization of the matched Arabic passage.
 - kind: translation
   label: Pratibha Translation
   body: No one sees Him except Himself, no one reaches Him except Himself and no one knows Him except

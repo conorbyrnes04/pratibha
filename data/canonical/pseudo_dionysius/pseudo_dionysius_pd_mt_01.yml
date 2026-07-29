@@ -7,8 +7,16 @@ unit_id: pseudo_dionysius.pd_mt_01
 unit_label: The Divine Dark Beyond All Light
 title: The Divine Dark Beyond All Light
 unit_type: sutra
-sanskrit_devanagari: Τριὰς ὑπερούσιε καὶ ὑπέρθεε καὶ ὑπεράγαθε.
-sanskrit_iast: Greek (corpus original field).
+sanskrit_devanagari: Τριὰς ὑπερούσιε καὶ ὑπέρθεε καὶ ὑπεράγαθε, τῆς Χριστιανῶν ἔφορε θεοσοφίας, ἴθυνον
+  ἡμᾶς ἐπὶ τὴν τῶν μυστικῶν λογίων ὑπεράγνωστον καὶ ὑπερφαῆ καὶ ἀκροτάτην κορυφήν· ἔνθα τὰ ἁπλᾶ καὶ ἀπόλυτα
+  καὶ ἄτρεπτα τῆς θεολογίας μυστήρια κατὰ τὸν ὑπέρφωτον ἐγκεκάλυπται τῆς κρυφιομύστου σιγῆς γνόφον, ἐν
+  τῶι σκοτεινοτάτωι τὸ ὑπερφανέστατον ὑπερλάμποντα καὶ ἐν τῶι πάμπαν ἀναφεῖ καὶ ἀοράτωι τῶν ὑπερκάλων
+  ἀγλαϊῶν ὑπερπληροῦντα τοὺς ἀνομμάτους νόας.
+sanskrit_iast: Trias hyperousie kai hyperthee kai hyperagathe, tēs Christianōn ephore theosophias, ithynon
+  hēmas epi tēn tōn mystikōn logiōn hyperagnōston kai hyperphaē kai akrotatēn koryphēn; entha ta hapla
+  kai apolyta kai atrepta tēs theologias mystēria kata ton hyperphōton enkekalyptai tēs kryphiomystou
+  sigēs gnophon, en tōi skoteinotatōi to hyperphanestaton hyperlamponta kai en tōi pampan anaphei kai
+  aoratōi tōn hyperkalōn aglaiōn hyperplērounta tous anommatous noas.
 translation_literal: Trinity, which exceedeth all Being, Deity, and Goodness! Thou that instructeth Christians
   in Thy heavenly wisdom! Guide us to that topmost height of mystic lore which exceedeth light and more
   than exceedeth knowledge, where the simple, absolute, and unchangeable mysteries of heavenly Truth lie
@@ -44,11 +52,19 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: Τριὰς ὑπερούσιε καὶ ὑπέρθεε καὶ ὑπεράγαθε.
+  body: Τριὰς ὑπερούσιε καὶ ὑπέρθεε καὶ ὑπεράγαθε, τῆς Χριστιανῶν ἔφορε θεοσοφίας, ἴθυνον ἡμᾶς ἐπὶ τὴν
+    τῶν μυστικῶν λογίων ὑπεράγνωστον καὶ ὑπερφαῆ καὶ ἀκροτάτην κορυφήν· ἔνθα τὰ ἁπλᾶ καὶ ἀπόλυτα καὶ ἄτρεπτα
+    τῆς θεολογίας μυστήρια κατὰ τὸν ὑπέρφωτον ἐγκεκάλυπται τῆς κρυφιομύστου σιγῆς γνόφον, ἐν τῶι σκοτεινοτάτωι
+    τὸ ὑπερφανέστατον ὑπερλάμποντα καὶ ἐν τῶι πάμπαν ἀναφεῖ καὶ ἀοράτωι τῶν ὑπερκάλων ἀγλαϊῶν ὑπερπληροῦντα
+    τοὺς ἀνομμάτους νόας.
   layer_provenance: sourced
 - kind: iast
   label: IAST
-  body: Greek (corpus original field).
+  body: Trias hyperousie kai hyperthee kai hyperagathe, tēs Christianōn ephore theosophias, ithynon hēmas
+    epi tēn tōn mystikōn logiōn hyperagnōston kai hyperphaē kai akrotatēn koryphēn; entha ta hapla kai
+    apolyta kai atrepta tēs theologias mystēria kata ton hyperphōton enkekalyptai tēs kryphiomystou sigēs
+    gnophon, en tōi skoteinotatōi to hyperphanestaton hyperlamponta kai en tōi pampan anaphei kai aoratōi
+    tōn hyperkalōn aglaiōn hyperplērounta tous anommatous noas.
 - kind: translation
   label: Pratibha Translation
   body: Trinity, which exceedeth all Being, Deity, and Goodness! Thou that instructeth Christians in Thy
@@ -88,4 +104,6 @@ provenance:
   collection: Pseudo-Dionysius
   section: Mystical Theology · MT I
   original_id: PD_MT_01
-  source_reference: ''
+  source_reference: 'Greek: Migne PG / traditional Corpus Areopagiticum (Bibliotheca Augustana PG 3 for
+    MT; Unicode DN aligned to same tradition). English alignment: C.E. Rolt, Dionysius the Areopagite
+    on the Divine Names and the Mystical Theology (SPCK, 1920).'

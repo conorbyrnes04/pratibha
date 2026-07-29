@@ -58,8 +58,16 @@ practice: 'Speak a short sentence aloud to no one — ''the light is on,'' or an
   the words leave you, trace the whole event: the one speaking, the speaking, the words, the one hearing.
   Let each of the four dissolve into the single existence sounding through all of them, so that nothing
   is sent across any gap because there is no gap and no second one.'
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'حجابه وحدانيته، فلا يحجبه شيءٌ غير حجابه. وجوده وحدانيته، تستَّر بوحدانيته بلا كيفية.
+  لا يراه أحدٌ غيره: لا نبي مرسل، ولا ولي كامل، ولا مَلَك مقرَّب يعرفه. نبيُّه هو، ورسوله هو، ورسالته
+  هو، وكلامه هو: أرسلَ نفسَه بنفسه من نفسه إلى نفسه، لا واسطة ولا سبب غيره، ولا تفاوُت بين المرسِل والمرسَل
+  به والمرسَل إليه. وجود حروف الثناء وجوده لا غير، لا ثناؤه ولا اسمه ولا مُسمَّاه.'
+sanskrit_iast: 'ḥijābuh waḥdānīyatu, fa-lā yaḥjubah shayʾun ghayra ḥijābih. wujūduhu waḥdānīyatu, tastaṭṭar
+  biwaḥdānīyatihi bilā kayfiyyah. lā yarāhu aḥadun ghayrahu: lā nabiyyun mursal, walā walīyyun kāmil,
+  walā malak muqarrab yaʿrifuhu. nabiyyuh huwa, wa-rasūluhu huwa, wa-risālatuhu huwa, wa-kalāmuhu huwa:
+  arsal nafsahu binafsihi min nafsihi ilā nafsihi, lā wāsiṭah walā sabab ghayrahu, walā tafāwut bayna-l-mursil
+  wal-mursal bihi wal-mursal ilaih. wujūd ḥurūf al-thanāʾ wujūduhu lā ghayra, lā thanāʾuhu walā ismuhu
+  walā musammāh.'
 tags:
 - attention
 - awareness
@@ -81,6 +89,8 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P013
   source_reference: ''
+  arabic_source: balyani_risalat_al_wujudiyya_ahadiyya_ar.txt (ibnalarabi.com transcription; classical
+    PD Arabic)
 translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
   modernized. Study rendering.
 translation: His Prophet is He, and His sending is He, and His word is He. He sent Himself, by Himself,
@@ -94,6 +104,24 @@ abhyasa: 'Speak a short sentence aloud to no one — ''the light is on,'' or any
   is sent across any gap because there is no gap and no second one.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
+- kind: original
+  label: Original (Arabic)
+  body: 'حجابه وحدانيته، فلا يحجبه شيءٌ غير حجابه. وجوده وحدانيته، تستَّر بوحدانيته بلا كيفية. لا يراه
+    أحدٌ غيره: لا نبي مرسل، ولا ولي كامل، ولا مَلَك مقرَّب يعرفه. نبيُّه هو، ورسوله هو، ورسالته هو، وكلامه
+    هو: أرسلَ نفسَه بنفسه من نفسه إلى نفسه، لا واسطة ولا سبب غيره، ولا تفاوُت بين المرسِل والمرسَل به
+    والمرسَل إليه. وجود حروف الثناء وجوده لا غير، لا ثناؤه ولا اسمه ولا مُسمَّاه.'
+  layer_provenance: 'Arabic: classical text of Risālat al-Wujūdiyya / Risālat al-Aḥadiyya (Auḥad al-Dīn
+    al-Balyānī; traditionally ascribed to Ibn ʿArabī). Unicode transcription from https://www.ibnalarabi.com/books/wujudiya.php
+    (text pages), saved at data/raw_texts/pd/arabic/balyani_risalat_al_wujudiyya_ahadiyya_ar.txt. Passage
+    aligned using T. H. Weir JRAS 1901 English as locator. Underlying medieval Arabic is public domain.'
+- kind: iast
+  label: Transliteration (ALA-LC)
+  body: 'ḥijābuh waḥdānīyatu, fa-lā yaḥjubah shayʾun ghayra ḥijābih. wujūduhu waḥdānīyatu, tastaṭṭar biwaḥdānīyatihi
+    bilā kayfiyyah. lā yarāhu aḥadun ghayrahu: lā nabiyyun mursal, walā walīyyun kāmil, walā malak muqarrab
+    yaʿrifuhu. nabiyyuh huwa, wa-rasūluhu huwa, wa-risālatuhu huwa, wa-kalāmuhu huwa: arsal nafsahu binafsihi
+    min nafsihi ilā nafsihi, lā wāsiṭah walā sabab ghayrahu, walā tafāwut bayna-l-mursil wal-mursal bihi
+    wal-mursal ilaih. wujūd ḥurūf al-thanāʾ wujūduhu lā ghayra, lā thanāʾuhu walā ismuhu walā musammāh.'
+  layer_provenance: ALA-LC scholarly latinization of the matched Arabic passage.
 - kind: translation
   label: Pratibha Translation
   body: He sent Himself from Himself, through Himself to Himself. There is no intermediary or means other

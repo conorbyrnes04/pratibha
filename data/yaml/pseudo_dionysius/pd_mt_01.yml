@@ -2,8 +2,12 @@ sutra_id: PD_MT_01
 collection: Pseudo-Dionysius
 section: Mystical Theology · MT I
 title: The Divine Dark Beyond All Light
-sanskrit: Τριὰς ὑπερούσιε καὶ ὑπέρθεε καὶ ὑπεράγαθε.
-transliteration: Greek (corpus original field).
+sanskrit: Τριὰς ὑπερούσιε καὶ ὑπέρθεε καὶ ὑπεράγαθε, τῆς Χριστιανῶν ἔφορε θεοσοφίας, ἴθυνον ἡμᾶς ἐπὶ τὴν
+  τῶν μυστικῶν λογίων ὑπεράγνωστον καὶ ὑπερφαῆ καὶ ἀκροτάτην κορυφήν· ἔνθα τὰ ἁπλᾶ καὶ ἀπόλυτα καὶ ἄτρεπτα
+  τῆς θεολογίας μυστήρια κατὰ τὸν ὑπέρφωτον ἐγκεκάλυπται τῆς κρυφιομύστου σιγῆς γνόφον, ἐν τῶι σκοτεινοτάτωι
+  τὸ ὑπερφανέστατον ὑπερλάμποντα καὶ ἐν τῶι πάμπαν ἀναφεῖ καὶ ἀοράτωι τῶν ὑπερκάλων ἀγλαϊῶν ὑπερπληροῦντα
+  τοὺς ἀνομμάτους νόας.
+transliteration: Greek scholarly romanization (see canonical iast layer).
 translation: Trinity, which exceedeth all Being, Deity, and Goodness! Thou that instructeth Christians
   in Thy heavenly wisdom! Guide us to that topmost height of mystic lore which exceedeth light and more
   than exceedeth knowledge, where the simple, absolute, and unchangeable mysteries of heavenly Truth lie
@@ -23,8 +27,8 @@ themes:
 - grace
 glossary: []
 source: 'English: C.E. Rolt, Dionysius the Areopagite on the Divine Names and Mystical Theology (SPCK,
-  1920), public domain. Greek: short Mystical Theology incipits from the traditional text tradition (PG
-  / critical editions) where noted; Divine Names units carry English only. MT I.'
+  1920), public domain. Greek: Migne PG / traditional Corpus Areopagiticum passages from data/raw_texts/pd/greek/.
+  MT I.'
 editorial_maturity: strong_draft
 layer_provenance:
   translation: public_domain

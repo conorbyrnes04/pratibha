@@ -13,32 +13,30 @@ themes:
 - heaven
 - transformation
 - way
-source_excerpt: Fire coming upon all things, will sift and seize them. changed by the divine Reason which
-  rules the universe, through air into moisture, which is as it were the seed of cosmic arrangement, and
-  which he calls sea; and from this again arise the earth and the heavens and all they contain. And how
-  again they are restered and ignited, he shows plainly as follows, ‘‘ The sea is poured out,’’ ete.
-translation_literal: Fire coming upon all things, will sift and seize them. changed by the divine Reason
-  which rules the universe, through air into moisture, which is as it were the seed of cosmic arrangement,
-  and which he calls sea; and from this again arise the earth and the heavens and all they contain. And
-  how again they are restered and ignited, he shows plainly as follows, ‘‘ The sea is poured out,’’ ete.
-commentary: 'Fire here is not mere element but *sifter*—the agent that separates, tests, converts. The
-  fragment''s own motion is crucial: fire comes *upon* all things (not from within them), seizes them,
-  and through the mediating work of air transforms them into moisture, which Heraclitus names as the *seed*
-  of cosmic order (kosmos). This is not random combustion but measured passage: fire does not destroy
-  the world''s rationality (logos) but enacts it. The sequence fire→air→moisture→earth/heaven names no
-  linear decay but a reversible circuit. What the old commentary calls ''measured transformation'' misses
-  the active verb: fire *sifts*—it discriminates, it proves what holds and what disperses. The divine
-  Reason (logos) does not stand apart from this burning; it *rules* through the burning itself. The fragment
-  refuses the comfort of stable substance: even the sea (that seeming permanence, that source) is ''poured
-  out''—it too enters the circuit. To read this is to feel the cosmos not as a thing but as a continuous
-  trial by fire, where nothing escapes the test and nothing that passes it remains unchanged.'
+source_excerpt: Fire coming upon all things, will sift and seize them. changed by the divine Reason which rules the universe,
+  through air into moisture, which is as it were the seed of cosmic arrangement, and which he calls sea; and from this again
+  arise the earth and the heavens and all they contain. And how again they are restered and ignited, he shows plainly as follows,
+  ‘‘ The sea is poured out,’’ ete.
+translation_literal: Fire coming upon all things, will sift and seize them. changed by the divine Reason which rules the universe,
+  through air into moisture, which is as it were the seed of cosmic arrangement, and which he calls sea; and from this again
+  arise the earth and the heavens and all they contain. And how again they are restered and ignited, he shows plainly as follows,
+  ‘‘ The sea is poured out,’’ ete.
+commentary: 'Fire here is not mere element but *sifter*—the agent that separates, tests, converts. The fragment''s own motion
+  is crucial: fire comes *upon* all things (not from within them), seizes them, and through the mediating work of air transforms
+  them into moisture, which Heraclitus names as the *seed* of cosmic order (kosmos). This is not random combustion but measured
+  passage: fire does not destroy the world''s rationality (logos) but enacts it. The sequence fire→air→moisture→earth/heaven
+  names no linear decay but a reversible circuit. What the old commentary calls ''measured transformation'' misses the active
+  verb: fire *sifts*—it discriminates, it proves what holds and what disperses. The divine Reason (logos) does not stand apart
+  from this burning; it *rules* through the burning itself. The fragment refuses the comfort of stable substance: even the
+  sea (that seeming permanence, that source) is ''poured out''—it too enters the circuit. To read this is to feel the cosmos
+  not as a thing but as a continuous trial by fire, where nothing escapes the test and nothing that passes it remains unchanged.'
 insight: ''
-practice: 'Watch a single object—a cup, a stone, a leaf—in direct sunlight for five minutes without naming
-  it. Notice how light exposes its surface, cracks, dust, the grain of its making. When you catch yourself
-  thinking ''this is solid'' or ''this is permanent,'' let that thought burn away in the simple fact of
-  its appearing and changing under the eye. End by asking: what in me resists being sifted this way?'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'Watch a single object—a cup, a stone, a leaf—in direct sunlight for five minutes without naming it. Notice how
+  light exposes its surface, cracks, dust, the grain of its making. When you catch yourself thinking ''this is solid'' or
+  ''this is permanent,'' let that thought burn away in the simple fact of its appearing and changing under the eye. End by
+  asking: what in me resists being sifted this way?'
+sanskrit_devanagari: Πάντα τὸ πῦρ ἐπελθὸν κρινέει καὶ καταλήψεται.
+sanskrit_iast: Panta to pur epelthon krineei kai katalēpsetai.
 tags:
 - commentary_text
 - earth
@@ -50,56 +48,60 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Πάντα τὸ πῦρ ἐπελθὸν κρινέει καὶ καταλήψεται.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 26'
+- kind: iast
+  label: IAST
+  body: Panta to pur epelthon krineei kai katalēpsetai.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
-  body: Fire coming upon all things, will sift and seize them. changed by the divine Reason which rules
-    the universe, through air into moisture, which is as it were the seed of cosmic arrangement, and which
-    he calls sea; and from this again arise the earth and the heavens and all they contain. And how again
-    they are restered and ignited, he shows plainly as follows, ‘‘ The sea is poured out,’’ ete.
+  body: Fire coming upon all things, will sift and seize them. changed by the divine Reason which rules the universe, through
+    air into moisture, which is as it were the seed of cosmic arrangement, and which he calls sea; and from this again arise
+    the earth and the heavens and all they contain. And how again they are restered and ignited, he shows plainly as follows,
+    ‘‘ The sea is poured out,’’ ete.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Fire here is not mere element but *sifter*—the agent that separates, tests, converts. The fragment''s
-    own motion is crucial: fire comes *upon* all things (not from within them), seizes them, and through
-    the mediating work of air transforms them into moisture, which Heraclitus names as the *seed* of cosmic
-    order (kosmos). This is not random combustion but measured passage: fire does not destroy the world''s
-    rationality (logos) but enacts it. The sequence fire→air→moisture→earth/heaven names no linear decay
-    but a reversible circuit. What the old commentary calls ''measured transformation'' misses the active
-    verb: fire *sifts*—it discriminates, it proves what holds and what disperses. The divine Reason (logos)
-    does not stand apart from this burning; it *rules* through the burning itself. The fragment refuses
-    the comfort of stable substance: even the sea (that seeming permanence, that source) is ''poured out''—it
-    too enters the circuit. To read this is to feel the cosmos not as a thing but as a continuous trial
-    by fire, where nothing escapes the test and nothing that passes it remains unchanged.'
+  body: 'Fire here is not mere element but *sifter*—the agent that separates, tests, converts. The fragment''s own motion
+    is crucial: fire comes *upon* all things (not from within them), seizes them, and through the mediating work of air transforms
+    them into moisture, which Heraclitus names as the *seed* of cosmic order (kosmos). This is not random combustion but measured
+    passage: fire does not destroy the world''s rationality (logos) but enacts it. The sequence fire→air→moisture→earth/heaven
+    names no linear decay but a reversible circuit. What the old commentary calls ''measured transformation'' misses the active
+    verb: fire *sifts*—it discriminates, it proves what holds and what disperses. The divine Reason (logos) does not stand
+    apart from this burning; it *rules* through the burning itself. The fragment refuses the comfort of stable substance:
+    even the sea (that seeming permanence, that source) is ''poured out''—it too enters the circuit. To read this is to feel
+    the cosmos not as a thing but as a continuous trial by fire, where nothing escapes the test and nothing that passes it
+    remains unchanged.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Watch a single object—a cup, a stone, a leaf—in direct sunlight for five minutes without naming
-    it. Notice how light exposes its surface, cracks, dust, the grain of its making. When you catch yourself
-    thinking ''this is solid'' or ''this is permanent,'' let that thought burn away in the simple fact
-    of its appearing and changing under the eye. End by asking: what in me resists being sifted this way?'
+  body: 'Watch a single object—a cup, a stone, a leaf—in direct sunlight for five minutes without naming it. Notice how light
+    exposes its surface, cracks, dust, the grain of its making. When you catch yourself thinking ''this is solid'' or ''this
+    is permanent,'' let that thought burn away in the simple fact of its appearing and changing under the eye. End by asking:
+    what in me resists being sifted this way?'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (fire coming upon all things, will sift and seize them.), the shared pattern according to
-      which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine,
-      mere logic, or only the later Johannine Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (fire coming
+      upon all things, will sift and seize them.), the shared pattern according to which all things occur — heard before it
+      is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
-      (fire coming upon all things, will sift and seize them.), world-ruling fire as measured transformation
-      and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance rather
-      than lawful becoming'
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (fire coming upon
+      all things, will sift and seize them.), world-ruling fire as measured transformation and exchange, not mythic flame
+      alone -> trap: treating fire as a static elemental substance rather than lawful becoming'
     lemma_id: pyr
     sense_id: pyr.heraclitean
   - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (fire coming
-      upon all things, will sift and seize them.), breath-life as the medium through which waking, sleep,
-      and soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics alone,
-      or to mere oxygen'
+    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (fire coming upon all things,
+      will sift and seize them.), breath-life as the medium through which waking, sleep, and soul-measure become intelligible
+      -> trap: reducing pneuma to later Stoic technical physics alone, or to mere oxygen'
     lemma_id: pneuma
     sense_id: pneuma.stoic
   layer_provenance: editorial-enriched
@@ -107,31 +109,28 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #25'
-    resonance: 'Both texts use fire as an agent of cosmic transformation that dissolves fixed form: Heraclitus''s
-      fire ''sifts and seizes'' all things through lawful change; Vijnana Bhairava''s Fire of Time incinerates
-      the body-form, revealing pure tranquility beneath. Each names fire as the active principle that
-      unmakes apparent substance.'
-    divergence: Heraclitus treats fire as the ontological ground of perpetual flux in the external cosmos;
-      Vijnana Bhairava deploys fire-meditation as an internal yogic practice to realize non-dual consciousness,
-      making the transformation soteriological rather than cosmological.
+    resonance: 'Both texts use fire as an agent of cosmic transformation that dissolves fixed form: Heraclitus''s fire ''sifts
+      and seizes'' all things through lawful change; Vijnana Bhairava''s Fire of Time incinerates the body-form, revealing
+      pure tranquility beneath. Each names fire as the active principle that unmakes apparent substance.'
+    divergence: Heraclitus treats fire as the ontological ground of perpetual flux in the external cosmos; Vijnana Bhairava
+      deploys fire-meditation as an internal yogic practice to realize non-dual consciousness, making the transformation soteriological
+      rather than cosmological.
     passage_id: vijnana_bhairava.yukti_025
   - citation: Patañjali Yoga Sūtras 3.15
-    resonance: 'Both passages locate transformation in the succession or sequence of phases: Heraclitus''s
-      fire works through measured, lawful change across all things; Patañjali''s sutra identifies the
-      succession of different phases as the very cause of successive transformations. Each makes sequence
-      itself the engine of change.'
-    divergence: Heraclitus emphasizes fire as the active cosmic principle driving this succession; Patañjali
-      frames succession as a logical principle explaining how the elements and senses undergo transformation,
-      remaining more epistemological and less metaphysically committed to a particular agent.
+    resonance: 'Both passages locate transformation in the succession or sequence of phases: Heraclitus''s fire works through
+      measured, lawful change across all things; Patañjali''s sutra identifies the succession of different phases as the very
+      cause of successive transformations. Each makes sequence itself the engine of change.'
+    divergence: Heraclitus emphasizes fire as the active cosmic principle driving this succession; Patañjali frames succession
+      as a logical principle explaining how the elements and senses undergo transformation, remaining more epistemological
+      and less metaphysically committed to a particular agent.
     passage_id: patañjali_yoga_sūtras.ys_3_15
   - citation: Tao Te Ching — The Weight of Leadership
-    resonance: 'Both texts invert surface appearance to reveal hidden structural law: Heraclitus''s fire
-      ''sifts and seizes'' beneath apparent stability, naming lawful transformation; Tao Te Ching''s ''gravity
-      is the root of lightness'' inverts the apparent hierarchy to show that stillness and weight are
-      the hidden ground of visible motion and lightness.'
-    divergence: Heraclitus posits an active cosmic agent (fire) that continuously transforms; Tao Te Ching
-      describes a non-active, paradoxical inversion where the root remains unmoved and generative, closer
-      to wu-wei (non-action) than to Heraclitean dynamism.
+    resonance: 'Both texts invert surface appearance to reveal hidden structural law: Heraclitus''s fire ''sifts and seizes''
+      beneath apparent stability, naming lawful transformation; Tao Te Ching''s ''gravity is the root of lightness'' inverts
+      the apparent hierarchy to show that stillness and weight are the hidden ground of visible motion and lightness.'
+    divergence: Heraclitus posits an active cosmic agent (fire) that continuously transforms; Tao Te Ching describes a non-active,
+      paradoxical inversion where the root remains unmoved and generative, closer to wu-wei (non-action) than to Heraclitean
+      dynamism.
     passage_id: tao_te_ching.ttc_md_035
   layer_provenance: generated_grounded
 appendixes: []
@@ -141,3 +140,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P027
   source_reference: Patrick (1889), frag. 27; corpus HFR_P027
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 26'
+  iast: transliterated_from_greek

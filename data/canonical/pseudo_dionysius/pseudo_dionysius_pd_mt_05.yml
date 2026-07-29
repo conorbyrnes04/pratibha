@@ -7,8 +7,14 @@ unit_id: pseudo_dionysius.pd_mt_05
 unit_label: Affirmation Descends; Negation Ascends
 title: Affirmation Descends; Negation Ascends
 unit_type: sutra
-sanskrit_devanagari: Τίς ἡ καταφατικὴ θεολογία καὶ τίς ἡ ἀποφατική.
-sanskrit_iast: Greek (corpus original field).
+sanskrit_devanagari: Χρὴ δέ, ὡς οἶμαι, τὰς ἀφαιρέσεις ἐναντίως ταῖς θέσεσιν ὑμνῆσαι· καὶ γὰρ ἐκείνας μὲν
+  ἀπὸ τῶν πρωτίστων ἀρχόμενοι καὶ διὰ μέσων ἐπὶ τὰ ἔσχατα κατιόντες ἐτίθεμεν· ἐνταῦθα δὲ ἀπὸ τῶν ἐσχάτων
+  ἐπὶ τὰ ἀρχικώτατα τὰς γνῶμεν ἐκείνην τὴν ἀγνωσίαν τὴν ὑπὸ πάντων τῶν γνωστῶν ἐν πᾶσι τοῖς οὖσι περικεκαλυμμένην
+  καὶ τὸν ὑπερούσιον ἐκεῖνον ἴδωμεν γνόφον τὸν ὑπὸ παντὸς τοῦ ἐν τοῖς οὖσι φωτὸς ἀποκρυπτόμενον. γ´
+sanskrit_iast: Chrē de, hōs oimai, tas aphaireseis enantiōs tais thesesin hymnēsai; kai gar ekeinas men
+  apo tōn prōtistōn archomenoi kai dia mesōn epi ta eschata kationtes etithemen; entautha de apo tōn eschatōn
+  epi ta archikōtata tas gnōmen ekeinēn tēn agnōsian tēn hypo pantōn tōn gnōstōn en pasi tois ousi perikekalymmenēn
+  kai ton hyperousion ekeinon idōmen gnophon ton hypo pantos tou en tois ousi phōtos apokryptomenon. g
 translation_literal: Now we must wholly distinguish this negative method from that of positive statements.
   For when we were making positive statements we began with the most universal statements, and then through
   intermediate terms we came at last to particular titles, but now ascending upwards from particular to
@@ -40,11 +46,18 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: Τίς ἡ καταφατικὴ θεολογία καὶ τίς ἡ ἀποφατική.
+  body: Χρὴ δέ, ὡς οἶμαι, τὰς ἀφαιρέσεις ἐναντίως ταῖς θέσεσιν ὑμνῆσαι· καὶ γὰρ ἐκείνας μὲν ἀπὸ τῶν πρωτίστων
+    ἀρχόμενοι καὶ διὰ μέσων ἐπὶ τὰ ἔσχατα κατιόντες ἐτίθεμεν· ἐνταῦθα δὲ ἀπὸ τῶν ἐσχάτων ἐπὶ τὰ ἀρχικώτατα
+    τὰς γνῶμεν ἐκείνην τὴν ἀγνωσίαν τὴν ὑπὸ πάντων τῶν γνωστῶν ἐν πᾶσι τοῖς οὖσι περικεκαλυμμένην καὶ
+    τὸν ὑπερούσιον ἐκεῖνον ἴδωμεν γνόφον τὸν ὑπὸ παντὸς τοῦ ἐν τοῖς οὖσι φωτὸς ἀποκρυπτόμενον. γ´
   layer_provenance: sourced
 - kind: iast
   label: IAST
-  body: Greek (corpus original field).
+  body: Chrē de, hōs oimai, tas aphaireseis enantiōs tais thesesin hymnēsai; kai gar ekeinas men apo tōn
+    prōtistōn archomenoi kai dia mesōn epi ta eschata kationtes etithemen; entautha de apo tōn eschatōn
+    epi ta archikōtata tas gnōmen ekeinēn tēn agnōsian tēn hypo pantōn tōn gnōstōn en pasi tois ousi perikekalymmenēn
+    kai ton hyperousion ekeinon idōmen gnophon ton hypo pantos tou en tois ousi phōtos apokryptomenon.
+    g
 - kind: translation
   label: Pratibha Translation
   body: Now we must wholly distinguish this negative method from that of positive statements. For when
@@ -101,4 +114,6 @@ provenance:
   collection: Pseudo-Dionysius
   section: Mystical Theology · MT II–III
   original_id: PD_MT_05
-  source_reference: ''
+  source_reference: 'Greek: Migne PG / traditional Corpus Areopagiticum (Bibliotheca Augustana PG 3 for
+    MT; Unicode DN aligned to same tradition). English alignment: C.E. Rolt, Dionysius the Areopagite
+    on the Divine Names and the Mystical Theology (SPCK, 1920).'

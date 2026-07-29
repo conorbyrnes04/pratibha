@@ -54,8 +54,18 @@ practice: 'Catch yourself in the middle of saying ''I did this'' or ''I want tha
   hang unfinished—feeling for the ''you'' the words assume, and finding no one there behind them. Let
   the assumption dissolve without replacing it with anything, neither a self that vanishes nor a self
   that remains: only He, without limitation.'
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'ولهذا قال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي، مَن عرف نفسَه فقد عرف ربَّه."
+  وقال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي." أشار – صلى الله عليه وسلم – بذلك أنك لست أنت، «بل»
+  أنت هو بلا أنت: لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه؛ ولا بذلك أنك موجود
+  وصفتك هكذا أبدًا: غني به. إنك ما كنت قط ولا تكون، لا بنفسك ولا فيه ولا معه، ولا أنت فانٍ ولا موجود.
+  أنت هو، وهو أنت، بلا علَّة من هذه العلل. فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.'
+sanskrit_iast: 'walahādhā qāla – ṣallā llāhu ʿalayh wa sallam –: "ʿaraftu rabbī bi-rabbī, man ʿarafa nafsahu
+  faqad ʿarafa rabbahu." wa-qāla – ṣallā llāhu ʿalayh wa sallam –: "ʿaraftu rabbī bi-rabbī." ʾashāra –
+  ṣallā llāhu ʿalayh wa sallam – bi-dhālika annaka lasta anta, «bal» anta huwa bilā anta: lā huwa dākhil
+  fīka walā huwa khārij mink, walā anta khārij minhu walā anta dākhil fīhi; walā bi-dhālika annaka mawjūd
+  wa-ṣifātuka hakadhā abadan: ghanī bihi. innaka mā kunta qaṭṭ walā takūn, lā binafsika walā fīhi walā
+  maʿahu, walā anta fānin walā mawjūd. anta huwa, wa-huwa anta, bilā ʿilla min hādhihi al-ʿilal. fa-in
+  ʿarafta wujūdaka bihādhihi al-ṣifah faqad ʿarafta llāh. – wa-illā fa-lā.'
 tags:
 - attention
 - commentary_text
@@ -71,6 +81,8 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P017
   source_reference: ''
+  arabic_source: balyani_risalat_al_wujudiyya_ahadiyya_ar.txt (ibnalarabi.com transcription; classical
+    PD Arabic)
 translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
   modernized. Study rendering.
 translation: 'For this reason the Prophet (upon whom be peace) said: "Whoever knows himself knows his
@@ -87,6 +99,27 @@ abhyasa: 'Catch yourself in the middle of saying ''I did this'' or ''I want that
   that remains: only He, without limitation.'
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
+- kind: original
+  label: Original (Arabic)
+  body: 'ولهذا قال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي، مَن عرف نفسَه فقد عرف ربَّه." وقال – صلى
+    الله عليه وسلم –: "عرفت ربِّي بربِّي." أشار – صلى الله عليه وسلم – بذلك أنك لست أنت، «بل» أنت هو بلا
+    أنت: لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه؛ ولا بذلك أنك موجود وصفتك هكذا
+    أبدًا: غني به. إنك ما كنت قط ولا تكون، لا بنفسك ولا فيه ولا معه، ولا أنت فانٍ ولا موجود. أنت هو، وهو
+    أنت، بلا علَّة من هذه العلل. فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.'
+  layer_provenance: 'Arabic: classical text of Risālat al-Wujūdiyya / Risālat al-Aḥadiyya (Auḥad al-Dīn
+    al-Balyānī; traditionally ascribed to Ibn ʿArabī). Unicode transcription from https://www.ibnalarabi.com/books/wujudiya.php
+    (text pages), saved at data/raw_texts/pd/arabic/balyani_risalat_al_wujudiyya_ahadiyya_ar.txt. Passage
+    aligned using T. H. Weir JRAS 1901 English as locator. Underlying medieval Arabic is public domain.'
+- kind: iast
+  label: Transliteration (ALA-LC)
+  body: 'walahādhā qāla – ṣallā llāhu ʿalayh wa sallam –: "ʿaraftu rabbī bi-rabbī, man ʿarafa nafsahu
+    faqad ʿarafa rabbahu." wa-qāla – ṣallā llāhu ʿalayh wa sallam –: "ʿaraftu rabbī bi-rabbī." ʾashāra
+    – ṣallā llāhu ʿalayh wa sallam – bi-dhālika annaka lasta anta, «bal» anta huwa bilā anta: lā huwa
+    dākhil fīka walā huwa khārij mink, walā anta khārij minhu walā anta dākhil fīhi; walā bi-dhālika annaka
+    mawjūd wa-ṣifātuka hakadhā abadan: ghanī bihi. innaka mā kunta qaṭṭ walā takūn, lā binafsika walā
+    fīhi walā maʿahu, walā anta fānin walā mawjūd. anta huwa, wa-huwa anta, bilā ʿilla min hādhihi al-ʿilal.
+    fa-in ʿarafta wujūdaka bihādhihi al-ṣifah faqad ʿarafta llāh. – wa-illā fa-lā.'
+  layer_provenance: ALA-LC scholarly latinization of the matched Arabic passage.
 - kind: key_terms
   label: Key Terms
   items:

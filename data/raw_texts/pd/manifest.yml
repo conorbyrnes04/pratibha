@@ -3,7 +3,7 @@
 # Regenerate Gutenberg files: python scripts/fetch_pd_sources.py
 
 version: 1
-updated: 2026-06-06
+updated: 2026-07-29
 
 sources:
   - id: heraclitus_patrick_1889
@@ -17,6 +17,38 @@ sources:
     links:
       - label: Internet Archive
         url: https://archive.org/details/fragmentsofworko00hera
+
+  - id: heraclitus_bywater_1877_greek
+    collection: heraclitus_fragments
+    editor: Ingram Bywater
+    year: 1877
+    work: Heracliti Ephesii Reliquiae (Greek text; Patrick 1889 numbering)
+    license: public_domain
+    local_path: greek/heraclitus_bywater_1877_greek_unicode.txt
+    note: >
+      Unicode Greek keyed by Bywater/Patrick fragment numbers, extracted from the
+      Classic Persuasion HTML of Patrick 1889 (Wayback). IA OCR of Bywater 1877
+      also retained as heraclitus_bywater_1877_ia_djvu.txt (lower quality).
+    links:
+      - label: Internet Archive (Bywater 1877)
+        url: https://archive.org/details/heraclitiephesii00hera
+      - label: Classic Persuasion / Wayback (Patrick + Unicode Greek)
+        url: https://web.archive.org/web/20151112134841/http://www.classicpersuasion.org/pw/heraclitus/herpatu.htm
+
+  - id: heraclitus_diels_1903_b
+    collection: heraclitus_fragments
+    editor: Hermann Diels
+    year: 1903
+    work: Die Fragmente der Vorsokratiker — Herakleitos B fragments
+    license: public_domain
+    local_path: greek/heraclitus_diels_1903_b_fragments.txt
+    note: >
+      Clean Unicode B-fragments from Bibliotheca Augustana (Ulrich Harsch electronic
+      edition of Diels 1903). Useful for DK concordance; corpus units primarily use
+      Bywater/Patrick numbering above.
+    links:
+      - label: Bibliotheca Augustana
+        url: https://www.hs-augsburg.de/~harsch/graeca/Chronologia/S_ante06/Herakleitos/her_frag.html
 
   - id: zhuangzi_giles_1889
     collection: the_book_of_chuang_tzu
@@ -61,6 +93,38 @@ sources:
     links:
       - label: MIT Classics
         url: https://classics.mit.edu/Plotinus/enneads.html
+
+
+  - id: pseudo_dionysius_greek_migne
+    collection: pseudo_dionysius
+    translator: null
+    year: 1857
+    work: "Περὶ μυστικῆς θεολογίας + Περὶ θείων ὀνομάτων — Greek (Migne PG / traditional Corpus Areopagiticum)"
+    license: public_domain
+    local_path: greek/mystical_theology_migne_pg3.txt
+    alternate_path: greek/divine_names_greek_unicode.txt
+    status: sourced
+    note: "Passage-level Greek restored into all 20 MT/DN corpus units. See greek/SOURCE.md. Secondary DCO dumps: mystical_theology_migne_dco.txt, divine_names_migne_dco.txt."
+    links:
+      - label: Bibliotheca Augustana (MT, PG 3)
+        url: https://www.hs-augsburg.de/~harsch/graeca/Chronologia/S_post05/DionysiosA/dio_theo.html
+      - label: Documenta Catholica Omnia (DN Greek)
+        url: https://www.documentacatholicaomnia.eu/02g/0531-0533,_Dionysius_Areopagita,_De_divinis_nominibus,_MGR.pdf
+
+  - id: pseudo_dionysius_rolt_1920
+    collection: pseudo_dionysius
+    translator: C. E. Rolt
+    year: 1920
+    work: "Dionysius the Areopagite on the Divine Names and the Mystical Theology"
+    license: public_domain
+    local_path: greek/dionysius_rolt_1920.txt
+    status: sourced
+    note: "PD English used for alignment with curated corpus units (not a substitute for Greek originals)."
+    links:
+      - label: CCEL
+        url: https://www.ccel.org/ccel/rolt/dionysius.html
+      - label: Internet Archive
+        url: https://archive.org/details/dionysiusareopag00dion
 
   - id: tao_te_ching_legge
     collection: tao_te_ching

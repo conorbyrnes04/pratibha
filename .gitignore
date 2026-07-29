@@ -142,3 +142,6 @@ mobile/dist/
 .ruff_cache/
 scratch/
 .cache/
+
+# Local secret exports for 1Password (never commit)
+docs/private/

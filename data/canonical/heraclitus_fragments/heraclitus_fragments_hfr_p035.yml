@@ -7,36 +7,34 @@ unit_id: heraclitus_fragments.hfr_p035
 unit_label: Hesiod is a teacher of the masses.
 title: Hesiod is a teacher of the masses.
 unit_type: teaching_passage
-thesis: 'Heraclitus does not attack Hesiod''s fame but the *grounds* of it—the masses revere him as possessing
-  ''greatest knowledge'' (sophiē), yet this very teacher failed to grasp the simplest thing: that day
-  and night are one.'
+thesis: 'Heraclitus does not attack Hesiod''s fame but the *grounds* of it—the masses revere him as possessing ''greatest
+  knowledge'' (sophiē), yet this very teacher failed to grasp the simplest thing: that day and night are one.'
 themes:
 - knowledge
-source_excerpt: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge,
-  who indeed did not know day and night. For they are one.®
-translation_literal: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest
-  knowledge, who indeed did not know day and night. For they are one.®
-commentary: 'Heraclitus does not attack Hesiod''s fame but the *grounds* of it—the masses revere him as
-  possessing ''greatest knowledge'' (sophiē), yet this very teacher failed to grasp the simplest thing:
-  that day and night are one. The fragment''s sting lies in its specificity. Not that Hesiod was ignorant
-  of arcane mysteries, but that he could not see the intelligible *unity* (hen) operative in the most
-  obvious oscillation of experience. Day and night appear as opposites, yet they share a single measure,
-  a single turning. To know this is not to collapse distinction into blur; rather, it is to perceive that
-  the apparent pair *is* the manifestation of a single logos—the law or ratio by which each emerges from
-  and returns into the other. Hesiod''s blindness is not moral failure but cognitive: he taught the masses
-  *stories* (genealogies, theogonies) without grasping the *order* that makes those stories intelligible.
-  Heraclitus''s critique cuts deeper than mere disagreement—it exposes how widespread admiration can rest
-  on a foundation of non-seeing. The one (hen) that day and night *are* is not a hidden essence but the
-  very intelligibility of their relation, visible to anyone who refuses to treat opposites as fundamentally
+source_excerpt: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge, who indeed did
+  not know day and night. For they are one.®
+translation_literal: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge, who indeed
+  did not know day and night. For they are one.®
+commentary: 'Heraclitus does not attack Hesiod''s fame but the *grounds* of it—the masses revere him as possessing ''greatest
+  knowledge'' (sophiē), yet this very teacher failed to grasp the simplest thing: that day and night are one. The fragment''s
+  sting lies in its specificity. Not that Hesiod was ignorant of arcane mysteries, but that he could not see the intelligible
+  *unity* (hen) operative in the most obvious oscillation of experience. Day and night appear as opposites, yet they share
+  a single measure, a single turning. To know this is not to collapse distinction into blur; rather, it is to perceive that
+  the apparent pair *is* the manifestation of a single logos—the law or ratio by which each emerges from and returns into
+  the other. Hesiod''s blindness is not moral failure but cognitive: he taught the masses *stories* (genealogies, theogonies)
+  without grasping the *order* that makes those stories intelligible. Heraclitus''s critique cuts deeper than mere disagreement—it
+  exposes how widespread admiration can rest on a foundation of non-seeing. The one (hen) that day and night *are* is not
+  a hidden essence but the very intelligibility of their relation, visible to anyone who refuses to treat opposites as fundamentally
   separate.'
 insight: ''
-practice: 'At the exact moment the light changes—dusk or dawn—stand still and name aloud what you see
-  without the word ''transition'': speak the color, the temperature, the sound, the quality of the air
-  as a *single thing* rather than as ''day becoming night'' or ''night becoming day.'' Repeat this threshold-naming
-  for three mornings or three evenings, and notice whether the pairs you habitually separate begin to
-  show their common measure.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'At the exact moment the light changes—dusk or dawn—stand still and name aloud what you see without the word ''transition'':
+  speak the color, the temperature, the sound, the quality of the air as a *single thing* rather than as ''day becoming night''
+  or ''night becoming day.'' Repeat this threshold-naming for three mornings or three evenings, and notice whether the pairs
+  you habitually separate begin to show their common measure.'
+sanskrit_devanagari: Διδάσκαλος δὲ πλείστων Ἡσίοδος· τοῦτον ἐπίστανται πλείστα εἰδέναι, ὅστις ἡμέρην καὶ εὐφρόνην οὐκ ἐγίνωσκε·
+  ἔστι γὰρ ἕν.
+sanskrit_iast: Didaskalos de pleistōn HĒsiodos. touton epistantai pleista eidenai, hostis hēmerēn kai euphronēn ouk eginōske.
+  esti gar hen.
 tags:
 - commentary_text
 - heraclitus_fragments
@@ -45,80 +43,82 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Διδάσκαλος δὲ πλείστων Ἡσίοδος· τοῦτον ἐπίστανται πλείστα εἰδέναι, ὅστις ἡμέρην καὶ εὐφρόνην οὐκ ἐγίνωσκε· ἔστι γὰρ
+    ἕν.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 35'
+- kind: iast
+  label: IAST
+  body: Didaskalos de pleistōn HĒsiodos. touton epistantai pleista eidenai, hostis hēmerēn kai euphronēn ouk eginōske. esti
+    gar hen.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
-  body: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge,
-    who indeed did not know day and night. For they are one.®
+  body: Hesiod is a teacher of the masses. They suppose him to have possessed the greatest knowledge, who indeed did not know
+    day and night. For they are one.®
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus does not attack Hesiod''s fame but the *grounds* of it—the masses revere him as possessing
-    ''greatest knowledge'' (sophiē), yet this very teacher failed to grasp the simplest thing: that day
-    and night are one. The fragment''s sting lies in its specificity. Not that Hesiod was ignorant of
-    arcane mysteries, but that he could not see the intelligible *unity* (hen) operative in the most obvious
-    oscillation of experience. Day and night appear as opposites, yet they share a single measure, a single
-    turning. To know this is not to collapse distinction into blur; rather, it is to perceive that the
-    apparent pair *is* the manifestation of a single logos—the law or ratio by which each emerges from
-    and returns into the other. Hesiod''s blindness is not moral failure but cognitive: he taught the
-    masses *stories* (genealogies, theogonies) without grasping the *order* that makes those stories intelligible.
-    Heraclitus''s critique cuts deeper than mere disagreement—it exposes how widespread admiration can
-    rest on a foundation of non-seeing. The one (hen) that day and night *are* is not a hidden essence
-    but the very intelligibility of their relation, visible to anyone who refuses to treat opposites as
-    fundamentally separate.'
+  body: 'Heraclitus does not attack Hesiod''s fame but the *grounds* of it—the masses revere him as possessing ''greatest
+    knowledge'' (sophiē), yet this very teacher failed to grasp the simplest thing: that day and night are one. The fragment''s
+    sting lies in its specificity. Not that Hesiod was ignorant of arcane mysteries, but that he could not see the intelligible
+    *unity* (hen) operative in the most obvious oscillation of experience. Day and night appear as opposites, yet they share
+    a single measure, a single turning. To know this is not to collapse distinction into blur; rather, it is to perceive that
+    the apparent pair *is* the manifestation of a single logos—the law or ratio by which each emerges from and returns into
+    the other. Hesiod''s blindness is not moral failure but cognitive: he taught the masses *stories* (genealogies, theogonies)
+    without grasping the *order* that makes those stories intelligible. Heraclitus''s critique cuts deeper than mere disagreement—it
+    exposes how widespread admiration can rest on a foundation of non-seeing. The one (hen) that day and night *are* is not
+    a hidden essence but the very intelligibility of their relation, visible to anyone who refuses to treat opposites as fundamentally
+    separate.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: ἕν (hen)
-    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (hesiod
-      is a teacher of the masses.), the one that all things are: not mystical mush but a single order
-      inside visible difference -> trap: erasing plurality; Heraclitus’s hen keeps tension and exchange
-      inside unity'
+    definition: 'ἕν “one” — unity as intelligible oneness within plurality -> in this passage (hesiod is a teacher of the
+      masses.), the one that all things are: not mystical mush but a single order inside visible difference -> trap: erasing
+      plurality; Heraclitus’s hen keeps tension and exchange inside unity'
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (hesiod is a teacher of the masses.), the shared pattern according to which all things occur
-      — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only
-      the later Johannine Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (hesiod is
+      a teacher of the masses.), the shared pattern according to which all things occur — heard before it is argued -> trap:
+      collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
-      passage (hesiod is a teacher of the masses.), tensioned unity of opposites — bow and lyre held by
-      counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (hesiod is
+      a teacher of the masses.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement ->
+      trap: reading “harmony” as conflict-avoidance or static balance'
     lemma_id: harmonie
     sense_id: harmonie.heraclitean
   - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (hesiod is a teacher of
-      the masses.), cosmic justice that polices measures — the Erinyes as helpers when bounds are overstepped
-      -> trap: courtroom morality alone; here dikē is cosmological proportion, not only human law'
+    definition: 'δίκη “justice, due order, right allotment” -> in this passage (hesiod is a teacher of the masses.), cosmic
+      justice that polices measures — the Erinyes as helpers when bounds are overstepped -> trap: courtroom morality alone;
+      here dikē is cosmological proportion, not only human law'
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'At the exact moment the light changes—dusk or dawn—stand still and name aloud what you see without
-    the word ''transition'': speak the color, the temperature, the sound, the quality of the air as a
-    *single thing* rather than as ''day becoming night'' or ''night becoming day.'' Repeat this threshold-naming
-    for three mornings or three evenings, and notice whether the pairs you habitually separate begin to
-    show their common measure.'
+  body: 'At the exact moment the light changes—dusk or dawn—stand still and name aloud what you see without the word ''transition'':
+    speak the color, the temperature, the sound, the quality of the air as a *single thing* rather than as ''day becoming
+    night'' or ''night becoming day.'' Repeat this threshold-naming for three mornings or three evenings, and notice whether
+    the pairs you habitually separate begin to show their common measure.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Patañjali Yoga Sūtras 1.48
-    resonance: Both texts posit a single intelligible order (cosmic order / logos) that sustains knowledge,
-      rejecting the notion that truth emerges from masses of particular opinions or sensory plurality.
-      Knowledge is grounded in an overarching structural principle, not aggregated from individual perspectives.
-    divergence: Heraclitus emphasizes the logos as the rational principle underlying flux and critique
-      of false teachers; Patañjali locates sustained knowledge within a yogic metaphysics of cosmic order
-      accessible through disciplined practice.
+    resonance: Both texts posit a single intelligible order (cosmic order / logos) that sustains knowledge, rejecting the
+      notion that truth emerges from masses of particular opinions or sensory plurality. Knowledge is grounded in an overarching
+      structural principle, not aggregated from individual perspectives.
+    divergence: Heraclitus emphasizes the logos as the rational principle underlying flux and critique of false teachers;
+      Patañjali locates sustained knowledge within a yogic metaphysics of cosmic order accessible through disciplined practice.
     passage_id: patañjali_yoga_sūtras.ys_1_48
   - citation: 'The Book of Chuang Tzu — The River Spirit''s Humbling: Perspective and the Infinite'
-    resonance: Both texts use the image of limitation (the well-frog's narrow sphere / Hesiod teaching
-      the masses) to expose how conventional knowledge and popular instruction fail to grasp the true
-      order. The critique targets the boundary between what appears intelligible within a restricted frame
-      and what actually is.
-    divergence: Heraclitus critiques Hesiod's authority as a teacher of masses; Zhuangzi uses the frog
-      to illustrate the impossibility of perspective-transcendence itself, leaning toward radical incommensurability
-      rather than a single intelligible order.
+    resonance: Both texts use the image of limitation (the well-frog's narrow sphere / Hesiod teaching the masses) to expose
+      how conventional knowledge and popular instruction fail to grasp the true order. The critique targets the boundary between
+      what appears intelligible within a restricted frame and what actually is.
+    divergence: Heraclitus critiques Hesiod's authority as a teacher of masses; Zhuangzi uses the frog to illustrate the impossibility
+      of perspective-transcendence itself, leaning toward radical incommensurability rather than a single intelligible order.
     passage_id: the_book_of_chuang_tzu.zhuangzi_md_017
   layer_provenance: generated_grounded
 appendixes: []
@@ -128,3 +128,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P035
   source_reference: Patrick (1889), frag. 35; corpus HFR_P035
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 35'
+  iast: transliterated_from_greek

@@ -39,6 +39,8 @@ COLLECTION_LANG = {
     "plotinus_enneads": "greek",
     "heraclitus_fragments": "greek",
     "parmenides_fragments": "greek",
+    "pseudo_dionysius": "greek",
+    "pseudo_dionysius": "greek",
     "dogen_shobogenzo": "japanese",
     "rumi_mathnawi": "persian",
     "siva_sutra": "sanskrit",

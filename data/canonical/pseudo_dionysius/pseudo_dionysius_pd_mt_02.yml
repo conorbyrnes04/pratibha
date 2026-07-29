@@ -7,8 +7,16 @@ unit_id: pseudo_dionysius.pd_mt_02
 unit_label: Leave the Senses and the Intellect
 title: Leave the Senses and the Intellect
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: Ἐμοὶ μὲν οὖν ταῦτα ηὔχθω· σὺ δέ, ὦ φίλε Τιμόθεε, τῆι περὶ τὰ μυστικὰ θεάματα συντόνωι
+  διατριβῆι καὶ τὰς αἰσθήσεις ἀπόλειπε καὶ τὰς νοερὰς ἐνεργείας καὶ πάντα αἰσθητὰ καὶ νοητὰ καὶ πάντα
+  οὐκ ὄντα καὶ ὄντα καὶ πρὸς τὴν ἕνωσιν, ὡς ἐφικτόν, ἀγνώστως ἀνατάθητι τοῦ ὑπὲρ πᾶσαν οὐσίαν καὶ γνῶσιν·
+  τῆι γὰρ ἑαυτοῦ καὶ πάντων ἀσχέτωι καὶ ἀπολύτωι καθαρῶς ἐκστάσει πρὸς τὸν ὑπερούσιον τοῦ θείου σκότους
+  ἀκτῖνα, πάντα ἀφελὼν καὶ ἐκ πάντων ἀπολυθείς, ἀναχθήσηι. 2
+sanskrit_iast: Emoi men oun tauta ēuchthō; sy de, ō phile Timothee, tēi peri ta mystika theamata syntonōi
+  diatribēi kai tas aisthēseis apoleipe kai tas noeras energeias kai panta aisthēta kai noēta kai panta
+  ouk onta kai onta kai pros tēn henōsin, hōs ephikton, agnōstōs anatathēti tou hyper pasan ousian kai
+  gnōsin; tēi gar heautou kai pantōn aschetōi kai apolytōi katharōs ekstasei pros ton hyperousion tou
+  theiou skotous aktina, panta aphelōn kai ek pantōn apolytheis, anachthēsēi. 2
 translation_literal: Such be my prayer; and thee, dear Timothy, I counsel that, in the earnest exercise
   of mystic contemplation, thou leave the senses and the activities of the intellect and all things that
   the senses or the intellect can perceive, and all things in this world of nothingness, or in that world
@@ -39,6 +47,21 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Ἐμοὶ μὲν οὖν ταῦτα ηὔχθω· σὺ δέ, ὦ φίλε Τιμόθεε, τῆι περὶ τὰ μυστικὰ θεάματα συντόνωι διατριβῆι
+    καὶ τὰς αἰσθήσεις ἀπόλειπε καὶ τὰς νοερὰς ἐνεργείας καὶ πάντα αἰσθητὰ καὶ νοητὰ καὶ πάντα οὐκ ὄντα
+    καὶ ὄντα καὶ πρὸς τὴν ἕνωσιν, ὡς ἐφικτόν, ἀγνώστως ἀνατάθητι τοῦ ὑπὲρ πᾶσαν οὐσίαν καὶ γνῶσιν· τῆι
+    γὰρ ἑαυτοῦ καὶ πάντων ἀσχέτωι καὶ ἀπολύτωι καθαρῶς ἐκστάσει πρὸς τὸν ὑπερούσιον τοῦ θείου σκότους
+    ἀκτῖνα, πάντα ἀφελὼν καὶ ἐκ πάντων ἀπολυθείς, ἀναχθήσηι. 2
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Emoi men oun tauta ēuchthō; sy de, ō phile Timothee, tēi peri ta mystika theamata syntonōi diatribēi
+    kai tas aisthēseis apoleipe kai tas noeras energeias kai panta aisthēta kai noēta kai panta ouk onta
+    kai onta kai pros tēn henōsin, hōs ephikton, agnōstōs anatathēti tou hyper pasan ousian kai gnōsin;
+    tēi gar heautou kai pantōn aschetōi kai apolytōi katharōs ekstasei pros ton hyperousion tou theiou
+    skotous aktina, panta aphelōn kai ek pantōn apolytheis, anachthēsēi. 2
 - kind: translation
   label: Pratibha Translation
   body: Such be my prayer; and thee, dear Timothy, I counsel that, in the earnest exercise of mystic contemplation,
@@ -79,4 +102,6 @@ provenance:
   collection: Pseudo-Dionysius
   section: Mystical Theology · MT I
   original_id: PD_MT_02
-  source_reference: ''
+  source_reference: 'Greek: Migne PG / traditional Corpus Areopagiticum (Bibliotheca Augustana PG 3 for
+    MT; Unicode DN aligned to same tradition). English alignment: C.E. Rolt, Dionysius the Areopagite
+    on the Divine Names and the Mystical Theology (SPCK, 1920).'

@@ -7,8 +7,8 @@ unit_id: heraclitus_fragments.hfr_p127
 unit_label: For were it not Dionysus to whom they institute a procession and sing songs in honor of t...
 title: For were it not Dionysus to whom they institute a procession and sing songs in honor of t...
 unit_type: teaching_passage
-thesis: 'Heraclitus forces a collision: the obscene and the sacred are not opposites but the same act
-  seen from different angles.'
+thesis: 'Heraclitus forces a collision: the obscene and the sacred are not opposites but the same act seen from different
+  angles.'
 themes:
 - action
 - breath
@@ -16,29 +16,29 @@ themes:
 - fear
 - naturalness
 - recognition
-source_excerpt: For were it not Dionysus to whom they institute a procession and sing songs in honor of
-  the pudenda, it would be the most shameful action. But and Hades are the same.”
-translation_literal: For were it not Dionysus to whom they institute a procession and sing songs in honor
-  of the pudenda, it would be the most shameful action. But and Hades are the same.”
-commentary: 'Heraclitus forces a collision: the obscene and the sacred are not opposites but the same
-  act seen from different angles. Dionysus—god of wine, ecstasy, dissolution, the breaking of boundaries—receives
-  a procession for what would otherwise be shame itself. The pudenda (genitals, things to be hidden) become
-  the very ground of honor when framed through Dionysian ritual. Then the pivot: ''But Hades and Dionysus
-  are the same.'' Not metaphorically. The god of the underworld, of death, of what is buried and forgotten,
-  is identical with the god of fertility, intoxication, and unbounded life. The fragment does not argue
-  this equivalence; it names it as a fact of perception available only to those who stop sorting the world
-  into clean categories. Heraclitus is not celebrating transgression or mocking piety. He is showing that
-  the logos—the ordering principle—works through apparent contradiction. What shames us when isolated
-  becomes sacred when seen in its full context. What we call death and what we call life are the same
-  process named from different positions. The teaching is not in the conclusion but in the shock of recognition:
-  you already knew this. Your body knows it. Your fear of shame and your hunger for transcendence are
-  the same energy.'
+source_excerpt: For were it not Dionysus to whom they institute a procession and sing songs in honor of the pudenda, it would
+  be the most shameful action. But and Hades are the same.”
+translation_literal: For were it not Dionysus to whom they institute a procession and sing songs in honor of the pudenda,
+  it would be the most shameful action. But and Hades are the same.”
+commentary: 'Heraclitus forces a collision: the obscene and the sacred are not opposites but the same act seen from different
+  angles. Dionysus—god of wine, ecstasy, dissolution, the breaking of boundaries—receives a procession for what would otherwise
+  be shame itself. The pudenda (genitals, things to be hidden) become the very ground of honor when framed through Dionysian
+  ritual. Then the pivot: ''But Hades and Dionysus are the same.'' Not metaphorically. The god of the underworld, of death,
+  of what is buried and forgotten, is identical with the god of fertility, intoxication, and unbounded life. The fragment
+  does not argue this equivalence; it names it as a fact of perception available only to those who stop sorting the world
+  into clean categories. Heraclitus is not celebrating transgression or mocking piety. He is showing that the logos—the ordering
+  principle—works through apparent contradiction. What shames us when isolated becomes sacred when seen in its full context.
+  What we call death and what we call life are the same process named from different positions. The teaching is not in the
+  conclusion but in the shock of recognition: you already knew this. Your body knows it. Your fear of shame and your hunger
+  for transcendence are the same energy.'
 insight: ''
-practice: During a meal or moment of physical appetite, pause and name aloud what your body wants—hunger,
-  touch, rest, movement—without euphemism or apology, then notice what shifts in how you experience that
-  want. Repeat the naming three times, each time slower, until shame and naturalness occupy the same breath.
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: During a meal or moment of physical appetite, pause and name aloud what your body wants—hunger, touch, rest, movement—without
+  euphemism or apology, then notice what shifts in how you experience that want. Repeat the naming three times, each time
+  slower, until shame and naturalness occupy the same breath.
+sanskrit_devanagari: Εἰ μὴ γὰρ Διονύσῳ πομπὴν ἐποιεῦντο καὶ ὕμνεον ᾆσμα αἰδοίοισι, ἀναιδέστατα εἴργαστ' ἄν· ὡυτὸς δὲ Ἀΐδης
+  καὶ Διόνυσος, ὅτεῳ μαίνονται καὶ ληναΐζουσι.
+sanskrit_iast: Ei mē gar Dionusō pompēn epoieunto kai humneon asma aidoioisi, anaidestata eirgast' an. hōutos de Aidēs kai
+  Dionusos, hoteō mainontai kai lēnaizousi.
 tags:
 - action
 - breath
@@ -52,85 +52,88 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Εἰ μὴ γὰρ Διονύσῳ πομπὴν ἐποιεῦντο καὶ ὕμνεον ᾆσμα αἰδοίοισι, ἀναιδέστατα εἴργαστ' ἄν· ὡυτὸς δὲ Ἀΐδης καὶ Διόνυσος,
+    ὅτεῳ μαίνονται καὶ ληναΐζουσι.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 127'
+- kind: iast
+  label: IAST
+  body: Ei mē gar Dionusō pompēn epoieunto kai humneon asma aidoioisi, anaidestata eirgast' an. hōutos de Aidēs kai Dionusos,
+    hoteō mainontai kai lēnaizousi.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
-  body: For were it not Dionysus to whom they institute a procession and sing songs in honor of the pudenda,
-    it would be the most shameful action. But and Hades are the same.”
+  body: For were it not Dionysus to whom they institute a procession and sing songs in honor of the pudenda, it would be the
+    most shameful action. But and Hades are the same.”
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Heraclitus forces a collision: the obscene and the sacred are not opposites but the same act
-    seen from different angles. Dionysus—god of wine, ecstasy, dissolution, the breaking of boundaries—receives
-    a procession for what would otherwise be shame itself. The pudenda (genitals, things to be hidden)
-    become the very ground of honor when framed through Dionysian ritual. Then the pivot: ''But Hades
-    and Dionysus are the same.'' Not metaphorically. The god of the underworld, of death, of what is buried
-    and forgotten, is identical with the god of fertility, intoxication, and unbounded life. The fragment
-    does not argue this equivalence; it names it as a fact of perception available only to those who stop
-    sorting the world into clean categories. Heraclitus is not celebrating transgression or mocking piety.
-    He is showing that the logos—the ordering principle—works through apparent contradiction. What shames
-    us when isolated becomes sacred when seen in its full context. What we call death and what we call
-    life are the same process named from different positions. The teaching is not in the conclusion but
-    in the shock of recognition: you already knew this. Your body knows it. Your fear of shame and your
-    hunger for transcendence are the same energy.'
+  body: 'Heraclitus forces a collision: the obscene and the sacred are not opposites but the same act seen from different
+    angles. Dionysus—god of wine, ecstasy, dissolution, the breaking of boundaries—receives a procession for what would otherwise
+    be shame itself. The pudenda (genitals, things to be hidden) become the very ground of honor when framed through Dionysian
+    ritual. Then the pivot: ''But Hades and Dionysus are the same.'' Not metaphorically. The god of the underworld, of death,
+    of what is buried and forgotten, is identical with the god of fertility, intoxication, and unbounded life. The fragment
+    does not argue this equivalence; it names it as a fact of perception available only to those who stop sorting the world
+    into clean categories. Heraclitus is not celebrating transgression or mocking piety. He is showing that the logos—the
+    ordering principle—works through apparent contradiction. What shames us when isolated becomes sacred when seen in its
+    full context. What we call death and what we call life are the same process named from different positions. The teaching
+    is not in the conclusion but in the shock of recognition: you already knew this. Your body knows it. Your fear of shame
+    and your hunger for transcendence are the same energy.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
-      passage (For were it not Dionysus to whom they institute a procession and sing songs in honor of
-      the pudenda, it wou…), tensioned unity of opposites — bow and lyre held by counter-pull, not bland
-      agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (For were
+      it not Dionysus to whom they institute a procession and sing songs in honor of the pudenda, it wou…), tensioned unity
+      of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
+      or static balance'
     lemma_id: harmonie
     sense_id: harmonie.heraclitean
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (For were it not Dionysus to whom they institute a procession and sing songs in honor of
-      the pudenda, it wou…), the shared pattern according to which all things occur — heard before it
-      is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine
-      Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (For were
+      it not Dionysus to whom they institute a procession and sing songs in honor of the pudenda, it wou…), the shared pattern
+      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
+      logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: βίος / θάνατος (bios / thanatos)
-    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying ->
-      in this passage (For were it not Dionysus to whom they institute a procession and sing songs in
-      honor of the pudenda, it wou…), life and death as reciprocal: one element lives the death of another;
-      hope cannot prefigure what awaits -> trap: afterlife tourism or simple annihilation; the point is
-      structural exchange and limit of anticipation'
+    definition: 'βίος “life” / θάνατος “death” — paired terms of exchange and mutual living-in-dying -> in this passage (For
+      were it not Dionysus to whom they institute a procession and sing songs in honor of the pudenda, it wou…), life and
+      death as reciprocal: one element lives the death of another; hope cannot prefigure what awaits -> trap: afterlife tourism
+      or simple annihilation; the point is structural exchange and limit of anticipation'
   - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (For were
-      it not Dionysus to whom they institute a procession and sing songs in honor of the pudenda, it wou…),
-      breath-life as the medium through which waking, sleep, and soul-measure become intelligible -> trap:
-      reducing pneuma to later Stoic technical physics alone, or to mere oxygen'
+    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (For were it not Dionysus to whom
+      they institute a procession and sing songs in honor of the pudenda, it wou…), breath-life as the medium through which
+      waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics alone,
+      or to mere oxygen'
     lemma_id: pneuma
     sense_id: pneuma.stoic
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: During a meal or moment of physical appetite, pause and name aloud what your body wants—hunger,
-    touch, rest, movement—without euphemism or apology, then notice what shifts in how you experience
-    that want. Repeat the naming three times, each time slower, until shame and naturalness occupy the
-    same breath.
+  body: During a meal or moment of physical appetite, pause and name aloud what your body wants—hunger, touch, rest, movement—without
+    euphemism or apology, then notice what shifts in how you experience that want. Repeat the naming three times, each time
+    slower, until shame and naturalness occupy the same breath.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Tao Te Ching — The Quiet Sovereign
-    resonance: 'Both texts compress a cosmological or ethical principle into a paradoxical negation: Heraclitus
-      shows that honoring the shameful (pudenda) prevents greater shame, while the Tao Te Ching shows
-      that *not* honoring virtue prevents social disorder. Each uses apparent inversion to reveal a hidden
-      structural necessity.'
-    divergence: Heraclitus grounds the paradox in divine necessity (Dionysus as cosmic principle), while
-      the Tao Te Ching grounds it in natural spontaneity and the absence of artificial distinction.
+    resonance: 'Both texts compress a cosmological or ethical principle into a paradoxical negation: Heraclitus shows that
+      honoring the shameful (pudenda) prevents greater shame, while the Tao Te Ching shows that *not* honoring virtue prevents
+      social disorder. Each uses apparent inversion to reveal a hidden structural necessity.'
+    divergence: Heraclitus grounds the paradox in divine necessity (Dionysus as cosmic principle), while the Tao Te Ching
+      grounds it in natural spontaneity and the absence of artificial distinction.
     passage_id: tao_te_ching.ttc_md_016
   - citation: Siva Sutra — Śāmbhavopāya
-    resonance: 'Both texts present a single compressed image where a gathering or concentration of forces
-      produces a cosmic withdrawal or reversal: Heraclitus''s procession and song honor the generative
-      principle to avert shame, while the Siva Sutra''s gathering of power-circles causes the universe
-      itself to withdraw. Each image contains an implicit cosmology in miniature.'
-    divergence: Heraclitus emphasizes the social ritual's preventive function (averting shame), while
-      the Siva Sutra emphasizes the metaphysical mechanics of contraction and expansion as intrinsic to
-      consciousness.
+    resonance: 'Both texts present a single compressed image where a gathering or concentration of forces produces a cosmic
+      withdrawal or reversal: Heraclitus''s procession and song honor the generative principle to avert shame, while the Siva
+      Sutra''s gathering of power-circles causes the universe itself to withdraw. Each image contains an implicit cosmology
+      in miniature.'
+    divergence: Heraclitus emphasizes the social ritual's preventive function (averting shame), while the Siva Sutra emphasizes
+      the metaphysical mechanics of contraction and expansion as intrinsic to consciousness.
     passage_id: siva_sutra.ss_i_6
   layer_provenance: generated_grounded
 appendixes: []
@@ -140,3 +143,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P127
   source_reference: Patrick (1889), frag. 127; corpus HFR_P127
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 127'
+  iast: transliterated_from_greek

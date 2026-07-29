@@ -15,24 +15,22 @@ themes:
 - way
 source_excerpt: They are at variance with that with which they are in most continual association.
 translation_literal: They are at variance with that with which they are in most continual association.
-commentary: 'The fragment stages a collision between intimacy and estrangement. What we are *most continually
-  associated with*—what we live inside, what touches us without pause—is precisely what we are *at variance
-  with*, in discord, at odds. The Greek *diapheresthai* (to differ, to be at variance) names active disagreement,
-  not mere difference. Heraclitus is not describing a static paradox but a lived condition: the closest
-  thing becomes the most alien. This reverses the expected logic of familiarity. We assume continuous
-  contact breeds alignment, harmony, recognition. Instead, Heraclitus observes the opposite—that the very
-  medium of our existence (breath, body, the day''s repetition, the other we wake beside) harbors an irreconcilable
-  otherness. We do not *know* what we are most intimate with. The teaching is not abstract: it names the
-  texture of waking life, where the most constant companion—one''s own flesh, one''s own thinking, the
-  air—remains fundamentally strange, resistant, unreconciled. To read this is to feel the ground shift
-  beneath what seemed solid.'
+commentary: 'The fragment stages a collision between intimacy and estrangement. What we are *most continually associated with*—what
+  we live inside, what touches us without pause—is precisely what we are *at variance with*, in discord, at odds. The Greek
+  *diapheresthai* (to differ, to be at variance) names active disagreement, not mere difference. Heraclitus is not describing
+  a static paradox but a lived condition: the closest thing becomes the most alien. This reverses the expected logic of familiarity.
+  We assume continuous contact breeds alignment, harmony, recognition. Instead, Heraclitus observes the opposite—that the
+  very medium of our existence (breath, body, the day''s repetition, the other we wake beside) harbors an irreconcilable otherness.
+  We do not *know* what we are most intimate with. The teaching is not abstract: it names the texture of waking life, where
+  the most constant companion—one''s own flesh, one''s own thinking, the air—remains fundamentally strange, resistant, unreconciled.
+  To read this is to feel the ground shift beneath what seemed solid.'
 insight: ''
-practice: 'Attend to one repeated gesture or sensation you perform without thought—the way you grip your
-  coffee cup, the pressure of your feet on the floor during a meeting, the exact angle your jaw tightens
-  when concentrating—and for three days, each time you notice it, pause and ask: *Is this mine? Am I doing
-  this or is it doing me?* Do not answer. Let the question lodge in the act itself.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'Attend to one repeated gesture or sensation you perform without thought—the way you grip your coffee cup, the pressure
+  of your feet on the floor during a meeting, the exact angle your jaw tightens when concentrating—and for three days, each
+  time you notice it, pause and ask: *Is this mine? Am I doing this or is it doing me?* Do not answer. Let the question lodge
+  in the act itself.'
+sanskrit_devanagari: ᾯ μάλιστα διηνεκέως ὁμιλέουσι, τούτῳ διαφέρονται.
+sanskrit_iast: HŌ malista diēnekeōs homileousi, toutō diapherontai.
 tags:
 - breath
 - commentary_text
@@ -44,67 +42,70 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: ᾯ μάλιστα διηνεκέως ὁμιλέουσι, τούτῳ διαφέρονται.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 93'
+- kind: iast
+  label: IAST
+  body: HŌ malista diēnekeōs homileousi, toutō diapherontai.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: They are at variance with that with which they are in most continual association.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment stages a collision between intimacy and estrangement. What we are *most continually
-    associated with*—what we live inside, what touches us without pause—is precisely what we are *at variance
-    with*, in discord, at odds. The Greek *diapheresthai* (to differ, to be at variance) names active
-    disagreement, not mere difference. Heraclitus is not describing a static paradox but a lived condition:
-    the closest thing becomes the most alien. This reverses the expected logic of familiarity. We assume
-    continuous contact breeds alignment, harmony, recognition. Instead, Heraclitus observes the opposite—that
-    the very medium of our existence (breath, body, the day''s repetition, the other we wake beside) harbors
-    an irreconcilable otherness. We do not *know* what we are most intimate with. The teaching is not
-    abstract: it names the texture of waking life, where the most constant companion—one''s own flesh,
-    one''s own thinking, the air—remains fundamentally strange, resistant, unreconciled. To read this
-    is to feel the ground shift beneath what seemed solid.'
+  body: 'The fragment stages a collision between intimacy and estrangement. What we are *most continually associated with*—what
+    we live inside, what touches us without pause—is precisely what we are *at variance with*, in discord, at odds. The Greek
+    *diapheresthai* (to differ, to be at variance) names active disagreement, not mere difference. Heraclitus is not describing
+    a static paradox but a lived condition: the closest thing becomes the most alien. This reverses the expected logic of
+    familiarity. We assume continuous contact breeds alignment, harmony, recognition. Instead, Heraclitus observes the opposite—that
+    the very medium of our existence (breath, body, the day''s repetition, the other we wake beside) harbors an irreconcilable
+    otherness. We do not *know* what we are most intimate with. The teaching is not abstract: it names the texture of waking
+    life, where the most constant companion—one''s own flesh, one''s own thinking, the air—remains fundamentally strange,
+    resistant, unreconciled. To read this is to feel the ground shift beneath what seemed solid.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
-      passage (they are at variance with that with which they are in most continual association.), tensioned
-      unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony”
-      as conflict-avoidance or static balance'
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (they are
+      at variance with that with which they are in most continual association.), tensioned unity of opposites — bow and lyre
+      held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
     lemma_id: harmonie
     sense_id: harmonie.heraclitean
   - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (they are
-      at variance with that with which they are in most continual association.), breath-life as the medium
-      through which waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma to later
-      Stoic technical physics alone, or to mere oxygen'
+    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (they are at variance with that
+      with which they are in most continual association.), breath-life as the medium through which waking, sleep, and soul-measure
+      become intelligible -> trap: reducing pneuma to later Stoic technical physics alone, or to mere oxygen'
     lemma_id: pneuma
     sense_id: pneuma.stoic
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Attend to one repeated gesture or sensation you perform without thought—the way you grip your
-    coffee cup, the pressure of your feet on the floor during a meeting, the exact angle your jaw tightens
-    when concentrating—and for three days, each time you notice it, pause and ask: *Is this mine? Am I
-    doing this or is it doing me?* Do not answer. Let the question lodge in the act itself.'
+  body: 'Attend to one repeated gesture or sensation you perform without thought—the way you grip your coffee cup, the pressure
+    of your feet on the floor during a meeting, the exact angle your jaw tightens when concentrating—and for three days, each
+    time you notice it, pause and ask: *Is this mine? Am I doing this or is it doing me?* Do not answer. Let the question
+    lodge in the act itself.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts compress a cosmological paradox into the continuous oscillation of opposing
-      forces: Heraclitus lodges variance within the closest association itself, while the Vijnana Bhairava
-      locates the Supreme Goddess''s creative power in the perpetual alternation of prāṇa (exhale/rising)
-      and jīva (inhale/descending). Each makes opposition constitutive of unity rather than destructive
-      of it.'
-    divergence: Heraclitus treats the paradox as a logical-ontological puzzle about being and flux; the
-      Vijnana Bhairava grounds it in embodied breath-practice as the direct revelation of divine articulation.
+    resonance: 'Both texts compress a cosmological paradox into the continuous oscillation of opposing forces: Heraclitus
+      lodges variance within the closest association itself, while the Vijnana Bhairava locates the Supreme Goddess''s creative
+      power in the perpetual alternation of prāṇa (exhale/rising) and jīva (inhale/descending). Each makes opposition constitutive
+      of unity rather than destructive of it.'
+    divergence: Heraclitus treats the paradox as a logical-ontological puzzle about being and flux; the Vijnana Bhairava grounds
+      it in embodied breath-practice as the direct revelation of divine articulation.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both texts structure a non-dual relationship between apparent opposites: Nagarjuna''s
-      ultimate and conventional are mutually dependent (neither can be accessed without the other), just
-      as Heraclitus''s variance and association are inseparable—each requires the other to be intelligible.'
-    divergence: Nagarjuna's framework is epistemological and soteriological (two truths leading to nirvāṇa);
-      Heraclitus's is cosmological and metaphysical (a principle of being itself).
+    resonance: 'Both texts structure a non-dual relationship between apparent opposites: Nagarjuna''s ultimate and conventional
+      are mutually dependent (neither can be accessed without the other), just as Heraclitus''s variance and association are
+      inseparable—each requires the other to be intelligible.'
+    divergence: Nagarjuna's framework is epistemological and soteriological (two truths leading to nirvāṇa); Heraclitus's
+      is cosmological and metaphysical (a principle of being itself).
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   layer_provenance: generated_grounded
 appendixes: []
@@ -114,3 +115,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P093
   source_reference: Patrick (1889), frag. 93; corpus HFR_P093
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 93'
+  iast: transliterated_from_greek

@@ -7,8 +7,20 @@ unit_id: pseudo_dionysius.pd_dn_01
 unit_label: Dare Not Speak Except What Scripture Reveals
 title: Dare Not Speak Except What Scripture Reveals
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: Καθόλου τοιγαροῦν οὐ τολμητέον εἰπεῖν οὔτε μὴν ἐννοῆσαί τι περὶ τῆς ὑπερουσίου καὶ
+  κρυφίας θεότητος παρὰ τὰ θειωδῶς ἡμῖν ἐκ τῶν ἱερῶν λογίων ἐκπεφασμένα. Τῆς γὰρ ὑπὲρ λόγον καὶ νοῦν καὶ
+  οὐσίαν αὐτῆς ὑπερουσιότητος ἀγνωσία. Αὐτῇ τὴν ὑπερούσιον ἐπιστήμην ἀναθετέον, τοσοῦτον ἐπὶ τὸ ἄναντες
+  ἀνανεύοντας, ὅσον ἑαυτὴν ἐνδίδωσιν ἡ τῶν θεαρχικῶν λογίων ἀκτίς, πρὸς τὰς ὑπερτέρας αὐγὰς τῇ περὶ τὰ
+  θεῖα σωφροσύνῃ καὶ ὁσιότητι συστελλομένους. Καὶ γὰρ εἴ τι δεῖ τῇ πανσόφῳ καὶ ἀληθεστάτῃ θεολογίᾳ πείθεσθαι,
+  κατὰ τὴν ἀναλογίαν ἑκάστου τῶν νοῶν ἀνακαλύπτεται τὰ θεῖα καὶ ἐποπτεύεται τῆς θεαρχικῆς ἀγαθότητος ἐν
+  σωστικῇ δικαιοσύνῃ τῶν ἐν μέτρῳ τὴν ἀμετρίαν θεοπρεπῶς ὡς ἀχώρητον ἀποδιαστελλούσης.
+sanskrit_iast: Katholou toigaroun ou tolmēteon eipein oute mēn ennoēsai ti peri tēs hyperousiou kai kryphias
+  theotētos para ta theiōdōs hēmin ek tōn hierōn logiōn ekpephasmena. Tēs gar hyper logon kai noun kai
+  ousian autēs hyperousiotētos agnōsia. Autē tēn hyperousion epistēmēn anatheteon, tosouton epi to anantes
+  ananeuontas, hoson heautēn endidōsin hē tōn thearchikōn logiōn aktis, pros tas hyperteras augas tē peri
+  ta theia sōphrosynē kai hosiotēti systellomenous. Kai gar ei ti dei tē pansophō kai alēthestatē theologia
+  peithesthai, kata tēn analogian hekastou tōn noōn anakalyptetai ta theia kai epopteuetai tēs thearchikēs
+  agathotētos en sōstikē dikaiosynē tōn en metrō tēn ametrian theoprepōs hōs achōrēton apodiastellousēs.
 translation_literal: We must not then dare to speak, or indeed to form any conception, of the hidden super-essential
   Godhead, except those things that are revealed to us from the Holy Scriptures. For a super-essential
   understanding of It is proper to Unknowing, which lieth in the Super-Essence Thereof surpassing Discourse,
@@ -44,6 +56,26 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Καθόλου τοιγαροῦν οὐ τολμητέον εἰπεῖν οὔτε μὴν ἐννοῆσαί τι περὶ τῆς ὑπερουσίου καὶ κρυφίας θεότητος
+    παρὰ τὰ θειωδῶς ἡμῖν ἐκ τῶν ἱερῶν λογίων ἐκπεφασμένα. Τῆς γὰρ ὑπὲρ λόγον καὶ νοῦν καὶ οὐσίαν αὐτῆς
+    ὑπερουσιότητος ἀγνωσία. Αὐτῇ τὴν ὑπερούσιον ἐπιστήμην ἀναθετέον, τοσοῦτον ἐπὶ τὸ ἄναντες ἀνανεύοντας,
+    ὅσον ἑαυτὴν ἐνδίδωσιν ἡ τῶν θεαρχικῶν λογίων ἀκτίς, πρὸς τὰς ὑπερτέρας αὐγὰς τῇ περὶ τὰ θεῖα σωφροσύνῃ
+    καὶ ὁσιότητι συστελλομένους. Καὶ γὰρ εἴ τι δεῖ τῇ πανσόφῳ καὶ ἀληθεστάτῃ θεολογίᾳ πείθεσθαι, κατὰ
+    τὴν ἀναλογίαν ἑκάστου τῶν νοῶν ἀνακαλύπτεται τὰ θεῖα καὶ ἐποπτεύεται τῆς θεαρχικῆς ἀγαθότητος ἐν σωστικῇ
+    δικαιοσύνῃ τῶν ἐν μέτρῳ τὴν ἀμετρίαν θεοπρεπῶς ὡς ἀχώρητον ἀποδιαστελλούσης.
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Katholou toigaroun ou tolmēteon eipein oute mēn ennoēsai ti peri tēs hyperousiou kai kryphias
+    theotētos para ta theiōdōs hēmin ek tōn hierōn logiōn ekpephasmena. Tēs gar hyper logon kai noun kai
+    ousian autēs hyperousiotētos agnōsia. Autē tēn hyperousion epistēmēn anatheteon, tosouton epi to anantes
+    ananeuontas, hoson heautēn endidōsin hē tōn thearchikōn logiōn aktis, pros tas hyperteras augas tē
+    peri ta theia sōphrosynē kai hosiotēti systellomenous. Kai gar ei ti dei tē pansophō kai alēthestatē
+    theologia peithesthai, kata tēn analogian hekastou tōn noōn anakalyptetai ta theia kai epopteuetai
+    tēs thearchikēs agathotētos en sōstikē dikaiosynē tōn en metrō tēn ametrian theoprepōs hōs achōrēton
+    apodiastellousēs.
 - kind: translation
   label: Pratibha Translation
   body: We must not then dare to speak, or indeed to form any conception, of the hidden super-essential
@@ -94,4 +126,6 @@ provenance:
   collection: Pseudo-Dionysius
   section: Divine Names · DN I
   original_id: PD_DN_01
-  source_reference: ''
+  source_reference: 'Greek: Migne PG / traditional Corpus Areopagiticum (Bibliotheca Augustana PG 3 for
+    MT; Unicode DN aligned to same tradition). English alignment: C.E. Rolt, Dionysius the Areopagite
+    on the Divine Names and the Mystical Theology (SPCK, 1920).'

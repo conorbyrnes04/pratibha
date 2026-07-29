@@ -14,24 +14,22 @@ themes:
 - uselessness
 source_excerpt: The hidden harmony is better than the visible, 2248
 translation_literal: The hidden harmony is better than the visible, 2248
-commentary: 'The fragment pivots on a reversal of common sense: what we cannot see outranks what we can.
-  Heraclitus is not celebrating obscurity for its own sake, but isolating the *structure* that visibility
-  obscures. The hidden harmony (harmoniē aphanēs) is the logos-proportioned tension itself—the ratio,
-  the tuning, the held opposition that *produces* the visible result. A bow drawn and held: the archer
-  sees the curve, the arrow''s readiness, but not the invisible reciprocal strain between wood and string
-  that makes the bow a bow rather than a stick. Remove that tension and visibility collapses into uselessness.
-  The visible is the *effect*; the hidden harmony is the *cause*. This is not mysticism but mechanics—Heraclitus
-  insists that order (kosmos) is not imposed from outside but *generated* by the very opposition that
-  appears, to the untrained eye, as disorder or mere conflict. The superiority of the hidden is not moral
-  but ontological: it is prior, generative, and more real because it sustains the visible without being
-  seen. To know this is to stop mistaking surface peace for true stability.'
+commentary: 'The fragment pivots on a reversal of common sense: what we cannot see outranks what we can. Heraclitus is not
+  celebrating obscurity for its own sake, but isolating the *structure* that visibility obscures. The hidden harmony (harmoniē
+  aphanēs) is the logos-proportioned tension itself—the ratio, the tuning, the held opposition that *produces* the visible
+  result. A bow drawn and held: the archer sees the curve, the arrow''s readiness, but not the invisible reciprocal strain
+  between wood and string that makes the bow a bow rather than a stick. Remove that tension and visibility collapses into
+  uselessness. The visible is the *effect*; the hidden harmony is the *cause*. This is not mysticism but mechanics—Heraclitus
+  insists that order (kosmos) is not imposed from outside but *generated* by the very opposition that appears, to the untrained
+  eye, as disorder or mere conflict. The superiority of the hidden is not moral but ontological: it is prior, generative,
+  and more real because it sustains the visible without being seen. To know this is to stop mistaking surface peace for true
+  stability.'
 insight: ''
-practice: 'Observe your own breathing for three cycles without trying to change it, then notice which
-  phase—inhale, exhale, or the pause—feels most active to you. Reverse your answer: the phase you did
-  not name is the hidden harmony. Return to it across the day, attending to its work while the other phases
-  claim your attention.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'Observe your own breathing for three cycles without trying to change it, then notice which phase—inhale, exhale,
+  or the pause—feels most active to you. Reverse your answer: the phase you did not name is the hidden harmony. Return to
+  it across the day, attending to its work while the other phases claim your attention.'
+sanskrit_devanagari: Ἁρμονίη ἀφανὴς φανερῆς κρείσσων.
+sanskrit_iast: HArmoniē aphanēs phanerēs kreissōn.
 tags:
 - attention
 - commentary_text
@@ -42,76 +40,77 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Ἁρμονίη ἀφανὴς φανερῆς κρείσσων.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 47'
+- kind: iast
+  label: IAST
+  body: HArmoniē aphanēs phanerēs kreissōn.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: The hidden harmony is better than the visible, 2248
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment pivots on a reversal of common sense: what we cannot see outranks what we can. Heraclitus
-    is not celebrating obscurity for its own sake, but isolating the *structure* that visibility obscures.
-    The hidden harmony (harmoniē aphanēs) is the logos-proportioned tension itself—the ratio, the tuning,
-    the held opposition that *produces* the visible result. A bow drawn and held: the archer sees the
-    curve, the arrow''s readiness, but not the invisible reciprocal strain between wood and string that
-    makes the bow a bow rather than a stick. Remove that tension and visibility collapses into uselessness.
-    The visible is the *effect*; the hidden harmony is the *cause*. This is not mysticism but mechanics—Heraclitus
-    insists that order (kosmos) is not imposed from outside but *generated* by the very opposition that
-    appears, to the untrained eye, as disorder or mere conflict. The superiority of the hidden is not
-    moral but ontological: it is prior, generative, and more real because it sustains the visible without
-    being seen. To know this is to stop mistaking surface peace for true stability.'
+  body: 'The fragment pivots on a reversal of common sense: what we cannot see outranks what we can. Heraclitus is not celebrating
+    obscurity for its own sake, but isolating the *structure* that visibility obscures. The hidden harmony (harmoniē aphanēs)
+    is the logos-proportioned tension itself—the ratio, the tuning, the held opposition that *produces* the visible result.
+    A bow drawn and held: the archer sees the curve, the arrow''s readiness, but not the invisible reciprocal strain between
+    wood and string that makes the bow a bow rather than a stick. Remove that tension and visibility collapses into uselessness.
+    The visible is the *effect*; the hidden harmony is the *cause*. This is not mysticism but mechanics—Heraclitus insists
+    that order (kosmos) is not imposed from outside but *generated* by the very opposition that appears, to the untrained
+    eye, as disorder or mere conflict. The superiority of the hidden is not moral but ontological: it is prior, generative,
+    and more real because it sustains the visible without being seen. To know this is to stop mistaking surface peace for
+    true stability.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Observe your own breathing for three cycles without trying to change it, then notice which phase—inhale,
-    exhale, or the pause—feels most active to you. Reverse your answer: the phase you did not name is
-    the hidden harmony. Return to it across the day, attending to its work while the other phases claim
-    your attention.'
+  body: 'Observe your own breathing for three cycles without trying to change it, then notice which phase—inhale, exhale,
+    or the pause—feels most active to you. Reverse your answer: the phase you did not name is the hidden harmony. Return to
+    it across the day, attending to its work while the other phases claim your attention.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
-      passage (the hidden harmony is better than the visible, 2248), tensioned unity of opposites — bow
-      and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
-      or static balance'
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (the hidden
+      harmony is better than the visible, 2248), tensioned unity of opposites — bow and lyre held by counter-pull, not bland
+      agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
     lemma_id: harmonie
     sense_id: harmonie.heraclitean
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (the hidden harmony is better than the visible, 2248), the shared pattern according to which
-      all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
-      logic, or only the later Johannine Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (the hidden
+      harmony is better than the visible, 2248), the shared pattern according to which all things occur — heard before it
+      is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: κοινός (koinos)
-    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage
-      (the hidden harmony is better than the visible, 2248), the common Logos: waking rationality is shared;
-      private dream-opinion is not a world -> trap: mere social consensus; koinos here is cosmological
-      shareability, not majority vote'
+    definition: 'κοινός “common, shared” — what belongs to the public order of mind -> in this passage (the hidden harmony
+      is better than the visible, 2248), the common Logos: waking rationality is shared; private dream-opinion is not a world
+      -> trap: mere social consensus; koinos here is cosmological shareability, not majority vote'
   - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (the hidden harmony is better
-      than the visible, 2248), the proportion that governs exchange, fire, and speech — what rude witnessing
-      cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
+    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (the hidden harmony is better than the visible,
+      2248), the proportion that governs exchange, fire, and speech — what rude witnessing cannot attest -> trap: quantitative
+      metric alone; Heraclitus’s measure is ontological fittingness'
   layer_provenance: editorial-enriched
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Yoga Spandakarika — First Flow
-    resonance: Both texts locate harmony not in the absence of opposition but in a unified field that
-      contains and transcends apparent dualities. Heraclitus makes opposition the instrument of hidden
-      harmony; Spandakarika reveals pleasure/suffering and subject/object as expressions of a single consciousness-space.
-    divergence: Heraclitus grounds harmony in dynamic flux and strife as generative principle, while Spandakarika
-      grounds it in static absolute consciousness that subsumes all polarities.
+    resonance: Both texts locate harmony not in the absence of opposition but in a unified field that contains and transcends
+      apparent dualities. Heraclitus makes opposition the instrument of hidden harmony; Spandakarika reveals pleasure/suffering
+      and subject/object as expressions of a single consciousness-space.
+    divergence: Heraclitus grounds harmony in dynamic flux and strife as generative principle, while Spandakarika grounds
+      it in static absolute consciousness that subsumes all polarities.
     passage_id: yoga_spandakarika.sp_05
   - citation: Phaedo (Plato) — Refuting the Harmony Theory of Soul
-    resonance: 'Both texts use harmony as a structural concept to probe the nature of order: Heraclitus
-      asserts that hidden harmony surpasses visible harmony, while Plato''s Simmias proposes harmony as
-      an invisible principle that organizes visible structure—each making harmony the deeper explanatory
-      layer.'
-    divergence: Heraclitus privileges hidden harmony through opposition and becoming, whereas Plato (via
-      Simmias) treats harmony as a dependent property of physical substrate, ultimately rejecting it as
-      insufficient for explaining the soul's independence.
+    resonance: 'Both texts use harmony as a structural concept to probe the nature of order: Heraclitus asserts that hidden
+      harmony surpasses visible harmony, while Plato''s Simmias proposes harmony as an invisible principle that organizes
+      visible structure—each making harmony the deeper explanatory layer.'
+    divergence: Heraclitus privileges hidden harmony through opposition and becoming, whereas Plato (via Simmias) treats harmony
+      as a dependent property of physical substrate, ultimately rejecting it as insufficient for explaining the soul's independence.
     passage_id: phaedo_plato.phaedo_md_004
   layer_provenance: generated_grounded
 appendixes: []
@@ -121,3 +120,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P047
   source_reference: Patrick (1889), frag. 47; corpus HFR_P047
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 47'
+  iast: transliterated_from_greek

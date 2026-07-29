@@ -10,28 +10,25 @@ unit_type: teaching_passage
 thesis: The sun—that which measures all time, all visibility, all order—is itself bound.
 themes:
 - freedom
-source_excerpt: The sun will not overstep his bounds, for if he does, the Erinyes, helpers of justice,
-  will find him out.
-translation_literal: The sun will not overstep his bounds, for if he does, the Erinyes, helpers of justice,
-  will find him out.
-commentary: 'The sun—that which measures all time, all visibility, all order—is itself bound. Not by decree
-  from above, but by the Erinyes, the Furies who hunt transgression, who embody the very structure of
-  consequence. Heraclitus does not say the sun *obeys* a law; he says it *will not overstep*, as though
-  the sun''s nature and the Furies'' vigilance are one motion, not two. The paradox cuts deeper than ''everything
-  has limits'': it asks whether a boundary can exist without a transgressor, whether order is maintained
-  by external police or by something the transgressor cannot help but encounter. The Erinyes are not separate
-  from the sun''s path—they are what the path *is* when it is violated. This is not cosmology as distant
-  fact but as present structure: you too move within bounds you do not see until you press against them.
-  The fragment trains the eye to notice that what feels like freedom—the sun''s daily arc—is also confinement,
-  and that confinement is not oppression but the very condition that makes the sun *the sun* and not chaos.'
+source_excerpt: The sun will not overstep his bounds, for if he does, the Erinyes, helpers of justice, will find him out.
+translation_literal: The sun will not overstep his bounds, for if he does, the Erinyes, helpers of justice, will find him
+  out.
+commentary: 'The sun—that which measures all time, all visibility, all order—is itself bound. Not by decree from above, but
+  by the Erinyes, the Furies who hunt transgression, who embody the very structure of consequence. Heraclitus does not say
+  the sun *obeys* a law; he says it *will not overstep*, as though the sun''s nature and the Furies'' vigilance are one motion,
+  not two. The paradox cuts deeper than ''everything has limits'': it asks whether a boundary can exist without a transgressor,
+  whether order is maintained by external police or by something the transgressor cannot help but encounter. The Erinyes are
+  not separate from the sun''s path—they are what the path *is* when it is violated. This is not cosmology as distant fact
+  but as present structure: you too move within bounds you do not see until you press against them. The fragment trains the
+  eye to notice that what feels like freedom—the sun''s daily arc—is also confinement, and that confinement is not oppression
+  but the very condition that makes the sun *the sun* and not chaos.'
 insight: ''
-practice: Stand facing the direction of sunrise or sunset and trace the sun's arc with your arm, moving
-  slowly from horizon to zenith to horizon, feeling the invisible ceiling and floor of that path in your
-  shoulder and spine. Stop at the point where the motion wants to continue beyond the natural arc, and
-  hold the strain for three breaths, noticing whether the boundary feels external or already woven into
-  the gesture itself.
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: Stand facing the direction of sunrise or sunset and trace the sun's arc with your arm, moving slowly from horizon
+  to zenith to horizon, feeling the invisible ceiling and floor of that path in your shoulder and spine. Stop at the point
+  where the motion wants to continue beyond the natural arc, and hold the strain for three breaths, noticing whether the boundary
+  feels external or already woven into the gesture itself.
+sanskrit_devanagari: Ἥλιος οὐχ ὑπερβήσεται μέτρα· εἰ δὲ μή, Ἐρινύες μιν δίκης ἐπίκουροι ἐξευρήσουσι.
+sanskrit_iast: HĒlios ouch huperbēsetai metra. ei de mē, Erinues min dikēs epikouroi exeurēsousi.
 tags:
 - commentary_text
 - freedom
@@ -40,79 +37,78 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Ἥλιος οὐχ ὑπερβήσεται μέτρα· εἰ δὲ μή, Ἐρινύες μιν δίκης ἐπίκουροι ἐξευρήσουσι.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 29'
+- kind: iast
+  label: IAST
+  body: HĒlios ouch huperbēsetai metra. ei de mē, Erinues min dikēs epikouroi exeurēsousi.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
-  body: The sun will not overstep his bounds, for if he does, the Erinyes, helpers of justice, will find
-    him out.
+  body: The sun will not overstep his bounds, for if he does, the Erinyes, helpers of justice, will find him out.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The sun—that which measures all time, all visibility, all order—is itself bound. Not by decree
-    from above, but by the Erinyes, the Furies who hunt transgression, who embody the very structure of
-    consequence. Heraclitus does not say the sun *obeys* a law; he says it *will not overstep*, as though
-    the sun''s nature and the Furies'' vigilance are one motion, not two. The paradox cuts deeper than
-    ''everything has limits'': it asks whether a boundary can exist without a transgressor, whether order
-    is maintained by external police or by something the transgressor cannot help but encounter. The Erinyes
-    are not separate from the sun''s path—they are what the path *is* when it is violated. This is not
-    cosmology as distant fact but as present structure: you too move within bounds you do not see until
-    you press against them. The fragment trains the eye to notice that what feels like freedom—the sun''s
-    daily arc—is also confinement, and that confinement is not oppression but the very condition that
-    makes the sun *the sun* and not chaos.'
+  body: 'The sun—that which measures all time, all visibility, all order—is itself bound. Not by decree from above, but by
+    the Erinyes, the Furies who hunt transgression, who embody the very structure of consequence. Heraclitus does not say
+    the sun *obeys* a law; he says it *will not overstep*, as though the sun''s nature and the Furies'' vigilance are one
+    motion, not two. The paradox cuts deeper than ''everything has limits'': it asks whether a boundary can exist without
+    a transgressor, whether order is maintained by external police or by something the transgressor cannot help but encounter.
+    The Erinyes are not separate from the sun''s path—they are what the path *is* when it is violated. This is not cosmology
+    as distant fact but as present structure: you too move within bounds you do not see until you press against them. The
+    fragment trains the eye to notice that what feels like freedom—the sun''s daily arc—is also confinement, and that confinement
+    is not oppression but the very condition that makes the sun *the sun* and not chaos.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (The sun will not overstep
-      his bounds, for if he does, the Erinyes, helpers of justice, will find him out.), cosmic justice
-      that polices measures — the Erinyes as helpers when bounds are overstepped -> trap: courtroom morality
-      alone; here dikē is cosmological proportion, not only human law'
+    definition: 'δίκη “justice, due order, right allotment” -> in this passage (The sun will not overstep his bounds, for
+      if he does, the Erinyes, helpers of justice, will find him out.), cosmic justice that polices measures — the Erinyes
+      as helpers when bounds are overstepped -> trap: courtroom morality alone; here dikē is cosmological proportion, not
+      only human law'
   - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (The sun will not overstep
-      his bounds, for if he does, the Erinyes, helpers of justice, will find him out.), the proportion
-      that governs exchange, fire, and speech — what rude witnessing cannot attest -> trap: quantitative
-      metric alone; Heraclitus’s measure is ontological fittingness'
+    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (The sun will not overstep his bounds, for if
+      he does, the Erinyes, helpers of justice, will find him out.), the proportion that governs exchange, fire, and speech
+      — what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
   - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
-      passage (The sun will not overstep his bounds, for if he does, the Erinyes, helpers of justice,
-      will find him out.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland
-      agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (The sun
+      will not overstep his bounds, for if he does, the Erinyes, helpers of justice, will find him out.), tensioned unity
+      of opposites — bow and lyre held by counter-pull, not bland agreement -> trap: reading “harmony” as conflict-avoidance
+      or static balance'
     lemma_id: harmonie
     sense_id: harmonie.heraclitean
   - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage
-      (The sun will not overstep his bounds, for if he does, the Erinyes, helpers of justice, will find
-      him out.), time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time
-      only; aiōn here is the age-character of the world-process'
+    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (The sun will not
+      overstep his bounds, for if he does, the Erinyes, helpers of justice, will find him out.), time/age as a child at play:
+      cosmic process without a human craftsman-god -> trap: clock-time only; aiōn here is the age-character of the world-process'
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: Stand facing the direction of sunrise or sunset and trace the sun's arc with your arm, moving
-    slowly from horizon to zenith to horizon, feeling the invisible ceiling and floor of that path in
-    your shoulder and spine. Stop at the point where the motion wants to continue beyond the natural arc,
-    and hold the strain for three breaths, noticing whether the boundary feels external or already woven
-    into the gesture itself.
+  body: Stand facing the direction of sunrise or sunset and trace the sun's arc with your arm, moving slowly from horizon
+    to zenith to horizon, feeling the invisible ceiling and floor of that path in your shoulder and spine. Stop at the point
+    where the motion wants to continue beyond the natural arc, and hold the strain for three breaths, noticing whether the
+    boundary feels external or already woven into the gesture itself.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: Both texts establish a structural interdependence between two orders or registers—Heraclitus
-      between cosmic law (the sun's bounds) and justice's enforcement, Nagarjuna between conventional
-      and ultimate truth—where transgression or separation between the two orders produces incoherence
-      or failure.
-    divergence: Heraclitus grounds the relationship in a single cosmological order policed by external
-      agents (Erinyes); Nagarjuna grounds it in a logical interdependence where neither register can be
-      accessed without the other, making separation itself the error.
+    resonance: Both texts establish a structural interdependence between two orders or registers—Heraclitus between cosmic
+      law (the sun's bounds) and justice's enforcement, Nagarjuna between conventional and ultimate truth—where transgression
+      or separation between the two orders produces incoherence or failure.
+    divergence: Heraclitus grounds the relationship in a single cosmological order policed by external agents (Erinyes); Nagarjuna
+      grounds it in a logical interdependence where neither register can be accessed without the other, making separation
+      itself the error.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: 'Both texts compress a cosmological principle into a precise threshold or boundary condition:
-      Heraclitus locates justice at the sun''s limit, Vijnana Bhairava locates consciousness-arising at
-      the termination point of breath-pause—each marking a critical juncture where transgression or cessation
-      triggers a shift in state.'
-    divergence: Heraclitus frames the boundary as a prohibition enforced externally by cosmic agents;
-      Vijnana Bhairava frames it as an internal dynamic tension whose resolution generates liberation,
-      not punishment.
+    resonance: 'Both texts compress a cosmological principle into a precise threshold or boundary condition: Heraclitus locates
+      justice at the sun''s limit, Vijnana Bhairava locates consciousness-arising at the termination point of breath-pause—each
+      marking a critical juncture where transgression or cessation triggers a shift in state.'
+    divergence: Heraclitus frames the boundary as a prohibition enforced externally by cosmic agents; Vijnana Bhairava frames
+      it as an internal dynamic tension whose resolution generates liberation, not punishment.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 appendixes: []
@@ -122,3 +118,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P029
   source_reference: Patrick (1889), frag. 29; corpus HFR_P029
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 29'
+  iast: transliterated_from_greek

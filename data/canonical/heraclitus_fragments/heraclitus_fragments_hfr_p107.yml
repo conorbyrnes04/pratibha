@@ -7,9 +7,9 @@ unit_id: heraclitus_fragments.hfr_p107
 unit_label: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act...
 title: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act...
 unit_type: teaching_passage
-thesis: 'This fragment does not rank virtues in a hierarchy but names self-control (sophrosyne) as the
-  *condition* under which wisdom becomes possible—and wisdom itself is not knowledge but a double action:
-  speaking truth and *consciously* acting according to nature (kata physin).'
+thesis: 'This fragment does not rank virtues in a hierarchy but names self-control (sophrosyne) as the *condition* under which
+  wisdom becomes possible—and wisdom itself is not knowledge but a double action: speaking truth and *consciously* acting
+  according to nature (kata physin).'
 themes:
 - action
 - consciousness
@@ -17,29 +17,26 @@ themes:
 - self
 - truth
 - virtue
-source_excerpt: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to
-  act according to nature.7}*
-translation_literal: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously
-  to act according to nature.7}*
-commentary: 'This fragment does not rank virtues in a hierarchy but names self-control (sophrosyne) as
-  the *condition* under which wisdom becomes possible—and wisdom itself is not knowledge but a double
-  action: speaking truth and *consciously* acting according to nature (kata physin). The weight falls
-  on ''consciously'' (heko, or the sense of deliberate alignment). Heraclitus is not separating virtue
-  from nature or consciousness from action; he is saying that to speak truth requires first the restraint
-  to listen to what is (self-control), and to act according to nature requires the wakefulness to perceive
-  nature''s own logos—its pattern, its fire, its constant measure. The fragment dissolves the modern split
-  between virtue (inner discipline) and wisdom (outer knowledge). You cannot speak truth while your appetites
-  and fears speak through you; you cannot act according to nature while asleep to it. Self-control is
-  not repression but the clearing away of noise so that logos—the shared rational principle running through
-  all things—can be heard and followed. The ''and'' connecting truth-speaking and nature-acting is not
-  a list but a single movement: conscious alignment with what is.'
+source_excerpt: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act according to nature.7}*
+translation_literal: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act according to
+  nature.7}*
+commentary: 'This fragment does not rank virtues in a hierarchy but names self-control (sophrosyne) as the *condition* under
+  which wisdom becomes possible—and wisdom itself is not knowledge but a double action: speaking truth and *consciously* acting
+  according to nature (kata physin). The weight falls on ''consciously'' (heko, or the sense of deliberate alignment). Heraclitus
+  is not separating virtue from nature or consciousness from action; he is saying that to speak truth requires first the restraint
+  to listen to what is (self-control), and to act according to nature requires the wakefulness to perceive nature''s own logos—its
+  pattern, its fire, its constant measure. The fragment dissolves the modern split between virtue (inner discipline) and wisdom
+  (outer knowledge). You cannot speak truth while your appetites and fears speak through you; you cannot act according to
+  nature while asleep to it. Self-control is not repression but the clearing away of noise so that logos—the shared rational
+  principle running through all things—can be heard and followed. The ''and'' connecting truth-speaking and nature-acting
+  is not a list but a single movement: conscious alignment with what is.'
 insight: ''
-practice: When you are about to speak, pause at the threshold of your words and feel the pull of what
-  you want to say (comfort, victory, concealment, speed). Name it silently without judgment, then speak
-  only what remains when that pull is set aside—notice whether what emerges is thinner or truer. Repeat
-  this threshold-pause for three days, tracking whether the quality of your listening to others shifts.
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: When you are about to speak, pause at the threshold of your words and feel the pull of what you want to say (comfort,
+  victory, concealment, speed). Name it silently without judgment, then speak only what remains when that pull is set aside—notice
+  whether what emerges is thinner or truer. Repeat this threshold-pause for three days, tracking whether the quality of your
+  listening to others shifts.
+sanskrit_devanagari: Σωφρονεῖν ἀρετὴ μεγίστη· καὶ σοφίη ἀληθέα λέγειν καὶ ποιεῖν κατὰ φύσιν ἐπαΐοντας .
+sanskrit_iast: Sōphronein aretē megistē. kai sophiē alēthea legein kai poiein kata phusin epaiontas .
 tags:
 - action
 - commentary_text
@@ -53,92 +50,93 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Σωφρονεῖν ἀρετὴ μεγίστη· καὶ σοφίη ἀληθέα λέγειν καὶ ποιεῖν κατὰ φύσιν ἐπαΐοντας .
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 107'
+- kind: iast
+  label: IAST
+  body: Sōphronein aretē megistē. kai sophiē alēthea legein kai poiein kata phusin epaiontas .
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
-  body: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act according
-    to nature.7}*
+  body: ; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act according to nature.7}*
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'This fragment does not rank virtues in a hierarchy but names self-control (sophrosyne) as the
-    *condition* under which wisdom becomes possible—and wisdom itself is not knowledge but a double action:
-    speaking truth and *consciously* acting according to nature (kata physin). The weight falls on ''consciously''
-    (heko, or the sense of deliberate alignment). Heraclitus is not separating virtue from nature or consciousness
-    from action; he is saying that to speak truth requires first the restraint to listen to what is (self-control),
-    and to act according to nature requires the wakefulness to perceive nature''s own logos—its pattern,
-    its fire, its constant measure. The fragment dissolves the modern split between virtue (inner discipline)
-    and wisdom (outer knowledge). You cannot speak truth while your appetites and fears speak through
-    you; you cannot act according to nature while asleep to it. Self-control is not repression but the
-    clearing away of noise so that logos—the shared rational principle running through all things—can
-    be heard and followed. The ''and'' connecting truth-speaking and nature-acting is not a list but a
-    single movement: conscious alignment with what is.'
+  body: 'This fragment does not rank virtues in a hierarchy but names self-control (sophrosyne) as the *condition* under which
+    wisdom becomes possible—and wisdom itself is not knowledge but a double action: speaking truth and *consciously* acting
+    according to nature (kata physin). The weight falls on ''consciously'' (heko, or the sense of deliberate alignment). Heraclitus
+    is not separating virtue from nature or consciousness from action; he is saying that to speak truth requires first the
+    restraint to listen to what is (self-control), and to act according to nature requires the wakefulness to perceive nature''s
+    own logos—its pattern, its fire, its constant measure. The fragment dissolves the modern split between virtue (inner discipline)
+    and wisdom (outer knowledge). You cannot speak truth while your appetites and fears speak through you; you cannot act
+    according to nature while asleep to it. Self-control is not repression but the clearing away of noise so that logos—the
+    shared rational principle running through all things—can be heard and followed. The ''and'' connecting truth-speaking
+    and nature-acting is not a list but a single movement: conscious alignment with what is.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act
-      according to natu…), the shared pattern according to which all things occur — heard before it is
-      argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine
-      Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (; Self-control
+      is the highest virtue, and wisdom is to speak truth and consciously to act according to natu…), the shared pattern according
+      to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or
+      only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: πνεῦμα (pneuma)
-    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (; Self-control
-      is the highest virtue, and wisdom is to speak truth and consciously to act according to natu…),
-      breath-life as the medium through which waking, sleep, and soul-measure become intelligible -> trap:
-      reducing pneuma to later Stoic technical physics alone, or to mere oxygen'
+    definition: 'πνέω “to breathe/blow” → breath, air, animating current -> in this passage (; Self-control is the highest
+      virtue, and wisdom is to speak truth and consciously to act according to natu…), breath-life as the medium through which
+      waking, sleep, and soul-measure become intelligible -> trap: reducing pneuma to later Stoic technical physics alone,
+      or to mere oxygen'
     lemma_id: pneuma
     sense_id: pneuma.stoic
   - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in
-      this passage (; Self-control is the highest virtue, and wisdom is to speak truth and consciously
-      to act according to natu…), wisdom apart from polymathy: knowing the one intelligent will that steers
-      all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
+    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (; Self-control
+      is the highest virtue, and wisdom is to speak truth and consciously to act according to natu…), wisdom apart from polymathy:
+      knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation
+      for knowledge'
   - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
-      (; Self-control is the highest virtue, and wisdom is to speak truth and consciously to act according
-      to natu…), world-ruling fire as measured transformation and exchange, not mythic flame alone ->
-      trap: treating fire as a static elemental substance rather than lawful becoming'
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (; Self-control
+      is the highest virtue, and wisdom is to speak truth and consciously to act according to natu…), world-ruling fire as
+      measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static elemental substance
+      rather than lawful becoming'
     lemma_id: pyr
     sense_id: pyr.heraclitean
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: When you are about to speak, pause at the threshold of your words and feel the pull of what you
-    want to say (comfort, victory, concealment, speed). Name it silently without judgment, then speak
-    only what remains when that pull is set aside—notice whether what emerges is thinner or truer. Repeat
-    this threshold-pause for three days, tracking whether the quality of your listening to others shifts.
+  body: When you are about to speak, pause at the threshold of your words and feel the pull of what you want to say (comfort,
+    victory, concealment, speed). Name it silently without judgment, then speak only what remains when that pull is set aside—notice
+    whether what emerges is thinner or truer. Repeat this threshold-pause for three days, tracking whether the quality of
+    your listening to others shifts.
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: The Book of Chuang Tzu — chapter 11
-    resonance: 'Both texts locate virtue in a principle of non-interference or non-action that aligns
-      with natural order: Heraclitus ties self-control to acting ''according to nature,'' while Zhuang
-      Zi asserts that ''letting mankind alone'' (wu wei) is the only authentic governance, making restraint
-      itself the highest wisdom.'
-    divergence: Heraclitus frames this as individual moral virtue achieved through conscious rational
-      control, whereas Zhuang Zi dissolves the distinction between self and nature, treating non-action
-      as spontaneous alignment rather than disciplined choice.
+    resonance: 'Both texts locate virtue in a principle of non-interference or non-action that aligns with natural order:
+      Heraclitus ties self-control to acting ''according to nature,'' while Zhuang Zi asserts that ''letting mankind alone''
+      (wu wei) is the only authentic governance, making restraint itself the highest wisdom.'
+    divergence: Heraclitus frames this as individual moral virtue achieved through conscious rational control, whereas Zhuang
+      Zi dissolves the distinction between self and nature, treating non-action as spontaneous alignment rather than disciplined
+      choice.
     passage_id: the_book_of_chuang_tzu.ctz_011
   - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
-    resonance: Both passages identify wisdom with a utterance or principle that 'does not lie'—Heraclitus's
-      wisdom as 'speaking truth' and the Heart Sutra's prajñāpāramitā as 'true for the plain reason that
-      it does not lie'—making truth-telling itself the vehicle of liberation or virtue.
-    divergence: Heraclitus grounds truth in conscious alignment with cosmic logos through individual virtue,
-      while the Heart Sutra locates truth in the emptiness of conceptual proliferation, where the mantra's
-      power lies in transcending propositional meaning.
+    resonance: Both passages identify wisdom with a utterance or principle that 'does not lie'—Heraclitus's wisdom as 'speaking
+      truth' and the Heart Sutra's prajñāpāramitā as 'true for the plain reason that it does not lie'—making truth-telling
+      itself the vehicle of liberation or virtue.
+    divergence: Heraclitus grounds truth in conscious alignment with cosmic logos through individual virtue, while the Heart
+      Sutra locates truth in the emptiness of conceptual proliferation, where the mantra's power lies in transcending propositional
+      meaning.
     passage_id: heart_sutra.hs_003
   - citation: Plotinus Enneads — Ennead I, Tractate 6, Section 4
-    resonance: 'Both texts structure virtue as an ascent from sensory perception to a higher order of
-      knowing: Heraclitus''s ''wisdom'' requires conscious action according to nature (a transcendence
-      of mere appetite), and Plotinus''s soul must ''ascend, leaving the senses behind'' to perceive loftier
-      beauties.'
-    divergence: Heraclitus emphasizes rational self-control and alignment with cosmic order, while Plotinus
-      emphasizes mystical ascent and the soul's direct intuition of transcendent beauty independent of
-      rational deliberation.
+    resonance: 'Both texts structure virtue as an ascent from sensory perception to a higher order of knowing: Heraclitus''s
+      ''wisdom'' requires conscious action according to nature (a transcendence of mere appetite), and Plotinus''s soul must
+      ''ascend, leaving the senses behind'' to perceive loftier beauties.'
+    divergence: Heraclitus emphasizes rational self-control and alignment with cosmic order, while Plotinus emphasizes mystical
+      ascent and the soul's direct intuition of transcendent beauty independent of rational deliberation.
     passage_id: plotinus_enneads.enn_i_6_04
   layer_provenance: generated_grounded
 appendixes: []
@@ -148,3 +146,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P107
   source_reference: Patrick (1889), frag. 107; corpus HFR_P107
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 107'
+  iast: transliterated_from_greek

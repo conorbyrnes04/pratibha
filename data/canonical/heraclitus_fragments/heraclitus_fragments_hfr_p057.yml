@@ -14,26 +14,23 @@ themes:
 - way
 source_excerpt: Good and evil are the same.
 translation_literal: Good and evil are the same.
-commentary: 'The fragment does not claim moral equivalence or collapse ethical distinction into nihilism.
-  Instead, it performs a reversal of the observer''s stance. When Heraclitus says good and evil are the
-  same, he names the point at which judgment *itself* becomes visible as a separating act—the very gesture
-  that divides them. Fire consumes what nourishes; the bow draws its power from tension between opposites
-  pulling *toward* unity. The logos (the account, the gathering principle) does not erase difference;
-  it reveals that sameness and difference are not properties of things but movements of perspective. A
-  thing is ''good'' from one angle, ''evil'' from another—not because morality is false, but because the
-  observer who judges stands *within* the flux, not outside it. The claim invites not indifference but
-  a sharpening: to notice how quickly the mind labels, how the label hardens, how the hardening blinds.
-  Sameness here means the underlying *process* that generates both poles, the way a river is one river
-  precisely because it never stays the same.'
+commentary: 'The fragment does not claim moral equivalence or collapse ethical distinction into nihilism. Instead, it performs
+  a reversal of the observer''s stance. When Heraclitus says good and evil are the same, he names the point at which judgment
+  *itself* becomes visible as a separating act—the very gesture that divides them. Fire consumes what nourishes; the bow draws
+  its power from tension between opposites pulling *toward* unity. The logos (the account, the gathering principle) does not
+  erase difference; it reveals that sameness and difference are not properties of things but movements of perspective. A thing
+  is ''good'' from one angle, ''evil'' from another—not because morality is false, but because the observer who judges stands
+  *within* the flux, not outside it. The claim invites not indifference but a sharpening: to notice how quickly the mind labels,
+  how the label hardens, how the hardening blinds. Sameness here means the underlying *process* that generates both poles,
+  the way a river is one river precisely because it never stays the same.'
 insight: ''
-practice: 'When you encounter someone''s action that provokes immediate judgment—a word that stings, a
-  choice you''d call selfish—pause and trace backward: what made this person''s act appear evil to you?
-  Name the angle. Then deliberately shift your vantage: what pressure, hunger, or logic made the same
-  act necessary, even generous, from *their* position? Do not reconcile them into a false both-sidedness.
-  Instead, let the two views exist without merging, and notice the space between them where judgment *happens*—that
-  is where the sameness lives.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'When you encounter someone''s action that provokes immediate judgment—a word that stings, a choice you''d call
+  selfish—pause and trace backward: what made this person''s act appear evil to you? Name the angle. Then deliberately shift
+  your vantage: what pressure, hunger, or logic made the same act necessary, even generous, from *their* position? Do not
+  reconcile them into a false both-sidedness. Instead, let the two views exist without merging, and notice the space between
+  them where judgment *happens*—that is where the sameness lives.'
+sanskrit_devanagari: Ἀγαθὸν καὶ κακὸν ταὐτόν.
+sanskrit_iast: Agathon kai kakon tauton.
 tags:
 - action
 - commentary_text
@@ -44,60 +41,63 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Ἀγαθὸν καὶ κακὸν ταὐτόν.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 57'
+- kind: iast
+  label: IAST
+  body: Agathon kai kakon tauton.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Good and evil are the same.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment does not claim moral equivalence or collapse ethical distinction into nihilism.
-    Instead, it performs a reversal of the observer''s stance. When Heraclitus says good and evil are
-    the same, he names the point at which judgment *itself* becomes visible as a separating act—the very
-    gesture that divides them. Fire consumes what nourishes; the bow draws its power from tension between
-    opposites pulling *toward* unity. The logos (the account, the gathering principle) does not erase
-    difference; it reveals that sameness and difference are not properties of things but movements of
-    perspective. A thing is ''good'' from one angle, ''evil'' from another—not because morality is false,
-    but because the observer who judges stands *within* the flux, not outside it. The claim invites not
-    indifference but a sharpening: to notice how quickly the mind labels, how the label hardens, how the
-    hardening blinds. Sameness here means the underlying *process* that generates both poles, the way
-    a river is one river precisely because it never stays the same.'
+  body: 'The fragment does not claim moral equivalence or collapse ethical distinction into nihilism. Instead, it performs
+    a reversal of the observer''s stance. When Heraclitus says good and evil are the same, he names the point at which judgment
+    *itself* becomes visible as a separating act—the very gesture that divides them. Fire consumes what nourishes; the bow
+    draws its power from tension between opposites pulling *toward* unity. The logos (the account, the gathering principle)
+    does not erase difference; it reveals that sameness and difference are not properties of things but movements of perspective.
+    A thing is ''good'' from one angle, ''evil'' from another—not because morality is false, but because the observer who
+    judges stands *within* the flux, not outside it. The claim invites not indifference but a sharpening: to notice how quickly
+    the mind labels, how the label hardens, how the hardening blinds. Sameness here means the underlying *process* that generates
+    both poles, the way a river is one river precisely because it never stays the same.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: ἁρμονίη (harmoniē)
-    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this
-      passage (good and evil are the same.), tensioned unity of opposites — bow and lyre held by counter-pull,
-      not bland agreement -> trap: reading “harmony” as conflict-avoidance or static balance'
+    definition: 'ἁρμονίη “joint, fastening, musical attunement” from ἁρμόζω “to fit together” -> in this passage (good and
+      evil are the same.), tensioned unity of opposites — bow and lyre held by counter-pull, not bland agreement -> trap:
+      reading “harmony” as conflict-avoidance or static balance'
     lemma_id: harmonie
     sense_id: harmonie.heraclitean
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (good and evil are the same.), the shared pattern according to which all things occur —
-      heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the
-      later Johannine Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (good and
+      evil are the same.), the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
+      Logos into private doctrine, mere logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
-      (good and evil are the same.), world-ruling fire as measured transformation and exchange, not mythic
-      flame alone -> trap: treating fire as a static elemental substance rather than lawful becoming'
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (good and evil
+      are the same.), world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap: treating
+      fire as a static elemental substance rather than lawful becoming'
     lemma_id: pyr
     sense_id: pyr.heraclitean
   - term: ποταμός (potamos)
-    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage
-      (good and evil are the same.), flux as identity-in-process: you cannot step twice into the same
-      river because waters renew -> trap: slogan “everything changes” without the logos that measures
-      the flow'
+    definition: 'ποταμός “river” — the image of continual other-and-still-other waters -> in this passage (good and evil are
+      the same.), flux as identity-in-process: you cannot step twice into the same river because waters renew -> trap: slogan
+      “everything changes” without the logos that measures the flow'
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'When you encounter someone''s action that provokes immediate judgment—a word that stings, a choice
-    you''d call selfish—pause and trace backward: what made this person''s act appear evil to you? Name
-    the angle. Then deliberately shift your vantage: what pressure, hunger, or logic made the same act
-    necessary, even generous, from *their* position? Do not reconcile them into a false both-sidedness.
-    Instead, let the two views exist without merging, and notice the space between them where judgment
-    *happens*—that is where the sameness lives.'
+  body: 'When you encounter someone''s action that provokes immediate judgment—a word that stings, a choice you''d call selfish—pause
+    and trace backward: what made this person''s act appear evil to you? Name the angle. Then deliberately shift your vantage:
+    what pressure, hunger, or logic made the same act necessary, even generous, from *their* position? Do not reconcile them
+    into a false both-sidedness. Instead, let the two views exist without merging, and notice the space between them where
+    judgment *happens*—that is where the sameness lives.'
   layer_provenance: template-assembled
 appendixes: []
 anchor_chapter: ''
@@ -106,3 +106,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P057
   source_reference: Patrick (1889), frag. 57; corpus HFR_P057
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 57'
+  iast: transliterated_from_greek

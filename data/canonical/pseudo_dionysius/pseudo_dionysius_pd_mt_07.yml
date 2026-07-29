@@ -7,8 +7,24 @@ unit_id: pseudo_dionysius.pd_mt_07
 unit_label: Not Any Intelligible Thing
 title: Not Any Intelligible Thing
 unit_type: sutra
-sanskrit_devanagari: Ὅτι οὐδὲ κατὰ τὰς ἀφαιρέσεις ἐστὶ τῶν πάντων ὁ πάντων αἴτιος.
-sanskrit_iast: Greek (corpus original field).
+sanskrit_devanagari: Αὖθις δὲ ἀνιόντες λέγομεν, ὡς οὔτε ψυχή ἐστιν οὔτε νοῦς, οὔτε φαντασίαν ἢ δόξαν ἢ
+  λόγον ἢ νόησιν ἔχει· οὐδὲ λόγος ἐστὶν οὔτε νόησις, οὔτε λέγεται οὔτε νοεῖται· οὔτε ἀριθμός ἐστιν οὔτε
+  τάξις, οὔτε μέγεθος οὔτε σμικρότης, οὔτε ἰσότης οὔτε ἀνισότης, οὔτε ὁμοιότης ἢ ἀνομοιότης· οὔτε ἕστηκεν
+  οὔτε κινεῖται οὔτε ἡσυχίαν ἄγει· οὐδὲ ἔχει δύναμιν οὔτε δύναμίς ἐστιν οὔτε φῶς· οὔτε ζῆι οὔτε ζωή ἐστιν·
+  οὔτε οὐσία ἐστὶν οὔτε αἰὼν οὔτε χρόνος· οὐδὲ ἐπαφή ἐστιν αὐτῆς νοητὴ οὔτε ἐπιστήμη, οὔτε ἀλήθειά ἐστιν
+  οὔτε βασιλεία οὔτε σοφία, οὔτε ἓν οὔτε ἑνότης, οὔτε θεότης ἢ ἀγαθότης· οὐδὲ πνεῦμά ἐστιν, ὡς ἡμᾶς εἰδέναι,
+  οὔτε υἱότης οὔτε πατρότης οὔτε ἄλλο τι τῶν ἡμῖν ἢ ἄλλωι τινὶ τῶν ὄντων συνεγνωσμένων· οὐδέ τι τῶν οὐκ
+  ὄντων, οὐδέ τι τῶν ὄντων ἐστίν, οὔτε τὰ ὄντα αὐτὴν γινώσκει, ἧι αὐτή ἐστιν, οὔτε αὐτὴ γινώσκει τὰ ὄντα,
+  ἧι ὄντα ἐστίν·
+sanskrit_iast: Authis de aniontes legomen, hōs oute psychē estin oute nous, oute phantasian ē doxan ē
+  logon ē noēsin echei; oude logos estin oute noēsis, oute legetai oute noeitai; oute arithmos estin oute
+  taxis, oute megethos oute smikrotēs, oute isotēs oute anisotēs, oute homoiotēs ē anomoiotēs; oute hestēken
+  oute kineitai oute hēsychian agei; oude echei dynamin oute dynamis estin oute phōs; oute zēi oute zōē
+  estin; oute ousia estin oute aiōn oute chronos; oude epaphē estin autēs noētē oute epistēmē, oute alētheia
+  estin oute basileia oute sophia, oute hen oute henotēs, oute theotēs ē agathotēs; oude pneuma estin,
+  hōs hēmas eidenai, oute yiotēs oute patrotēs oute allo ti tōn hēmin ē allōi tini tōn ontōn synegnōsmenōn;
+  oude ti tōn ouk ontōn, oude ti tōn ontōn estin, oute ta onta autēn ginōskei, hēi autē estin, oute autē
+  ginōskei ta onta, hēi onta estin;
 translation_literal: Once more, ascending yet higher we maintain that It is not soul, or mind, or endowed
   with the faculty of imagination, conjecture, reason, or understanding; nor is It any act of reason or
   understanding; nor can It be described by the reason or perceived by the understanding, since It is
@@ -48,11 +64,27 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: Ὅτι οὐδὲ κατὰ τὰς ἀφαιρέσεις ἐστὶ τῶν πάντων ὁ πάντων αἴτιος.
+  body: Αὖθις δὲ ἀνιόντες λέγομεν, ὡς οὔτε ψυχή ἐστιν οὔτε νοῦς, οὔτε φαντασίαν ἢ δόξαν ἢ λόγον ἢ νόησιν
+    ἔχει· οὐδὲ λόγος ἐστὶν οὔτε νόησις, οὔτε λέγεται οὔτε νοεῖται· οὔτε ἀριθμός ἐστιν οὔτε τάξις, οὔτε
+    μέγεθος οὔτε σμικρότης, οὔτε ἰσότης οὔτε ἀνισότης, οὔτε ὁμοιότης ἢ ἀνομοιότης· οὔτε ἕστηκεν οὔτε κινεῖται
+    οὔτε ἡσυχίαν ἄγει· οὐδὲ ἔχει δύναμιν οὔτε δύναμίς ἐστιν οὔτε φῶς· οὔτε ζῆι οὔτε ζωή ἐστιν· οὔτε οὐσία
+    ἐστὶν οὔτε αἰὼν οὔτε χρόνος· οὐδὲ ἐπαφή ἐστιν αὐτῆς νοητὴ οὔτε ἐπιστήμη, οὔτε ἀλήθειά ἐστιν οὔτε βασιλεία
+    οὔτε σοφία, οὔτε ἓν οὔτε ἑνότης, οὔτε θεότης ἢ ἀγαθότης· οὐδὲ πνεῦμά ἐστιν, ὡς ἡμᾶς εἰδέναι, οὔτε
+    υἱότης οὔτε πατρότης οὔτε ἄλλο τι τῶν ἡμῖν ἢ ἄλλωι τινὶ τῶν ὄντων συνεγνωσμένων· οὐδέ τι τῶν οὐκ ὄντων,
+    οὐδέ τι τῶν ὄντων ἐστίν, οὔτε τὰ ὄντα αὐτὴν γινώσκει, ἧι αὐτή ἐστιν, οὔτε αὐτὴ γινώσκει τὰ ὄντα, ἧι
+    ὄντα ἐστίν·
   layer_provenance: sourced
 - kind: iast
   label: IAST
-  body: Greek (corpus original field).
+  body: Authis de aniontes legomen, hōs oute psychē estin oute nous, oute phantasian ē doxan ē logon ē
+    noēsin echei; oude logos estin oute noēsis, oute legetai oute noeitai; oute arithmos estin oute taxis,
+    oute megethos oute smikrotēs, oute isotēs oute anisotēs, oute homoiotēs ē anomoiotēs; oute hestēken
+    oute kineitai oute hēsychian agei; oude echei dynamin oute dynamis estin oute phōs; oute zēi oute
+    zōē estin; oute ousia estin oute aiōn oute chronos; oude epaphē estin autēs noētē oute epistēmē, oute
+    alētheia estin oute basileia oute sophia, oute hen oute henotēs, oute theotēs ē agathotēs; oude pneuma
+    estin, hōs hēmas eidenai, oute yiotēs oute patrotēs oute allo ti tōn hēmin ē allōi tini tōn ontōn
+    synegnōsmenōn; oude ti tōn ouk ontōn, oude ti tōn ontōn estin, oute ta onta autēn ginōskei, hēi autē
+    estin, oute autē ginōskei ta onta, hēi onta estin;
 - kind: translation
   label: Pratibha Translation
   body: Once more, ascending yet higher we maintain that It is not soul, or mind, or endowed with the
@@ -96,4 +128,6 @@ provenance:
   collection: Pseudo-Dionysius
   section: Mystical Theology · MT V
   original_id: PD_MT_07
-  source_reference: ''
+  source_reference: 'Greek: Migne PG / traditional Corpus Areopagiticum (Bibliotheca Augustana PG 3 for
+    MT; Unicode DN aligned to same tradition). English alignment: C.E. Rolt, Dionysius the Areopagite
+    on the Divine Names and the Mystical Theology (SPCK, 1920).'

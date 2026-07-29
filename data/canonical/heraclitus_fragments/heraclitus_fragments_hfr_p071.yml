@@ -17,30 +17,25 @@ themes:
 - recognition
 - self
 - soul
-source_excerpt: also says, ‘‘ The limits of the soul you would not find out though you traverse every
-  way,’’ so deep lies its principle (οὕτω βαθὺν λόγον ἔχει). Tertullian, de Anima 2. LX XIJ.—Numenius
-  from Porphyry, de Antro nymph. 10.
-translation_literal: also says, ‘‘ The limits of the soul you would not find out though you traverse every
-  way,’’ so deep lies its principle (οὕτω βαθὺν λόγον ἔχει). Tertullian, de Anima 2. LX XIJ.—Numenius
-  from Porphyry, de Antro nymph. 10.
-commentary: 'The soul''s λόγος (principle, depth-measure) is not a destination but a horizon that recedes.
-  Heraclitus does not say the soul is infinite—he says its *limits* cannot be found *even if you traverse
-  every way* (πάσας ὁδούς). The emphasis falls on the exhaustion of method itself: you can walk all paths,
-  exhaust empirical search, and still the soul withdraws. This is not mysticism but a precise claim about
-  the structure of self-knowledge. The soul has a principle (λόγος), it is not chaos; but that principle
-  operates at a depth (βαθύν) where the traversing subject and the sought object collapse into each other.
-  To look for the soul''s boundary is to assume the soul is an object you can circle. But the soul is
-  the very capacity that circles. The fragment teaches not humility before mystery but recognition of
-  a logical knot: the measure cannot measure itself from outside itself. The deeper you go, the more the
-  going itself becomes the problem.'
+source_excerpt: also says, ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so deep lies
+  its principle (οὕτω βαθὺν λόγον ἔχει). Tertullian, de Anima 2. LX XIJ.—Numenius from Porphyry, de Antro nymph. 10.
+translation_literal: also says, ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so deep
+  lies its principle (οὕτω βαθὺν λόγον ἔχει). Tertullian, de Anima 2. LX XIJ.—Numenius from Porphyry, de Antro nymph. 10.
+commentary: 'The soul''s λόγος (principle, depth-measure) is not a destination but a horizon that recedes. Heraclitus does
+  not say the soul is infinite—he says its *limits* cannot be found *even if you traverse every way* (πάσας ὁδούς). The emphasis
+  falls on the exhaustion of method itself: you can walk all paths, exhaust empirical search, and still the soul withdraws.
+  This is not mysticism but a precise claim about the structure of self-knowledge. The soul has a principle (λόγος), it is
+  not chaos; but that principle operates at a depth (βαθύν) where the traversing subject and the sought object collapse into
+  each other. To look for the soul''s boundary is to assume the soul is an object you can circle. But the soul is the very
+  capacity that circles. The fragment teaches not humility before mystery but recognition of a logical knot: the measure cannot
+  measure itself from outside itself. The deeper you go, the more the going itself becomes the problem.'
 insight: ''
-practice: 'Walk a route you know by heart—your home to a familiar place—but this time attend to the moment
-  your feet choose the next turn before your conscious mind names it. Notice: the decision happens in
-  the body, not retrievable as a thought you can isolate or retrace. Repeat this walk three times in one
-  day, each time trying to *catch* the instant the choice emerges. You will not succeed. That failure
-  is the practice.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'Walk a route you know by heart—your home to a familiar place—but this time attend to the moment your feet choose
+  the next turn before your conscious mind names it. Notice: the decision happens in the body, not retrievable as a thought
+  you can isolate or retrace. Repeat this walk three times in one day, each time trying to *catch* the instant the choice
+  emerges. You will not succeed. That failure is the practice.'
+sanskrit_devanagari: Ψυχῆς πείρατα οὐκ ἂν ἐξεύροιο πᾶσαν ἐπιπορευόμενος ὁδόν.
+sanskrit_iast: PSuchēs peirata ouk an exeuroio pasan epiporeuomenos hodon.
 tags:
 - commentary_text
 - de
@@ -56,80 +51,79 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Ψυχῆς πείρατα οὐκ ἂν ἐξεύροιο πᾶσαν ἐπιπορευόμενος ὁδόν.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 71'
+- kind: iast
+  label: IAST
+  body: PSuchēs peirata ouk an exeuroio pasan epiporeuomenos hodon.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
-  body: also says, ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so
-    deep lies its principle (οὕτω βαθὺν λόγον ἔχει). Tertullian, de Anima 2. LX XIJ.—Numenius from Porphyry,
-    de Antro nymph. 10.
+  body: also says, ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so deep lies its principle
+    (οὕτω βαθὺν λόγον ἔχει). Tertullian, de Anima 2. LX XIJ.—Numenius from Porphyry, de Antro nymph. 10.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The soul''s λόγος (principle, depth-measure) is not a destination but a horizon that recedes.
-    Heraclitus does not say the soul is infinite—he says its *limits* cannot be found *even if you traverse
-    every way* (πάσας ὁδούς). The emphasis falls on the exhaustion of method itself: you can walk all
-    paths, exhaust empirical search, and still the soul withdraws. This is not mysticism but a precise
-    claim about the structure of self-knowledge. The soul has a principle (λόγος), it is not chaos; but
-    that principle operates at a depth (βαθύν) where the traversing subject and the sought object collapse
-    into each other. To look for the soul''s boundary is to assume the soul is an object you can circle.
-    But the soul is the very capacity that circles. The fragment teaches not humility before mystery but
-    recognition of a logical knot: the measure cannot measure itself from outside itself. The deeper you
-    go, the more the going itself becomes the problem.'
+  body: 'The soul''s λόγος (principle, depth-measure) is not a destination but a horizon that recedes. Heraclitus does not
+    say the soul is infinite—he says its *limits* cannot be found *even if you traverse every way* (πάσας ὁδούς). The emphasis
+    falls on the exhaustion of method itself: you can walk all paths, exhaust empirical search, and still the soul withdraws.
+    This is not mysticism but a precise claim about the structure of self-knowledge. The soul has a principle (λόγος), it
+    is not chaos; but that principle operates at a depth (βαθύν) where the traversing subject and the sought object collapse
+    into each other. To look for the soul''s boundary is to assume the soul is an object you can circle. But the soul is the
+    very capacity that circles. The fragment teaches not humility before mystery but recognition of a logical knot: the measure
+    cannot measure itself from outside itself. The deeper you go, the more the going itself becomes the problem.'
   layer_provenance: template-assembled
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Walk a route you know by heart—your home to a familiar place—but this time attend to the moment
-    your feet choose the next turn before your conscious mind names it. Notice: the decision happens in
-    the body, not retrievable as a thought you can isolate or retrace. Repeat this walk three times in
-    one day, each time trying to *catch* the instant the choice emerges. You will not succeed. That failure
-    is the practice.'
+  body: 'Walk a route you know by heart—your home to a familiar place—but this time attend to the moment your feet choose
+    the next turn before your conscious mind names it. Notice: the decision happens in the body, not retrievable as a thought
+    you can isolate or retrace. Repeat this walk three times in one day, each time trying to *catch* the instant the choice
+    emerges. You will not succeed. That failure is the practice.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (also says, ‘‘ The limits of the soul you would not find out though you traverse every way,’’
-      so deep lies i…), the shared pattern according to which all things occur — heard before it is argued
-      -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (also says,
+      ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so deep lies i…), the shared pattern
+      according to which all things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere
+      logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: μέτρον (metron)
-    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (also says, ‘‘ The limits
-      of the soul you would not find out though you traverse every way,’’ so deep lies i…), the proportion
-      that governs exchange, fire, and speech — what rude witnessing cannot attest -> trap: quantitative
-      metric alone; Heraclitus’s measure is ontological fittingness'
+    definition: 'μέτρον “measure, due limit, proportion” -> in this passage (also says, ‘‘ The limits of the soul you would
+      not find out though you traverse every way,’’ so deep lies i…), the proportion that governs exchange, fire, and speech
+      — what rude witnessing cannot attest -> trap: quantitative metric alone; Heraclitus’s measure is ontological fittingness'
   - term: ψυχή (psychē)
-    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage
-      (also says, ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so
-      deep lies i…), the soul whose depth, dryness, or rudeness decides whether senses can witness truly
-      -> trap: modern psychology’s “psyche,” or immortal ego-personality'
+    definition: 'ψυχή “breath, life, soul” — living interior measure, not a ghost-self -> in this passage (also says, ‘‘ The
+      limits of the soul you would not find out though you traverse every way,’’ so deep lies i…), the soul whose depth, dryness,
+      or rudeness decides whether senses can witness truly -> trap: modern psychology’s “psyche,” or immortal ego-personality'
     lemma_id: psyche
     sense_id: psyche.platonic
   - term: σοφόν (sophon)
-    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in
-      this passage (also says, ‘‘ The limits of the soul you would not find out though you traverse every
-      way,’’ so deep lies i…), wisdom apart from polymathy: knowing the one intelligent will that steers
-      all things -> trap: equating wisdom with much-learning (πολυμαθίη) or reputation for knowledge'
+    definition: 'σοφός/σοφόν “wise, the wise thing” — wisdom as grasp of governing intelligence -> in this passage (also says,
+      ‘‘ The limits of the soul you would not find out though you traverse every way,’’ so deep lies i…), wisdom apart from
+      polymathy: knowing the one intelligent will that steers all things -> trap: equating wisdom with much-learning (πολυμαθίη)
+      or reputation for knowledge'
   layer_provenance: editorial-enriched
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: The Book of Chuang Tzu — Emptiness That Can Receive
-    resonance: Both texts posit that the soul's depth cannot be exhausted by empirical traversal or accumulated
-      knowledge—Heraclitus through the impossibility of finding its limits despite traversing every way,
-      Chuang Tzu through Yan Hui's recognition of having reached a limit that signals entry into a deeper
-      register beyond conceptual attainment.
-    divergence: Heraclitus frames this as a cosmological principle (the soul's λόγος governs all things),
-      while Chuang Tzu frames it as a breakthrough into emptiness and non-action that dissolves the subject-object
-      distinction.
+    resonance: Both texts posit that the soul's depth cannot be exhausted by empirical traversal or accumulated knowledge—Heraclitus
+      through the impossibility of finding its limits despite traversing every way, Chuang Tzu through Yan Hui's recognition
+      of having reached a limit that signals entry into a deeper register beyond conceptual attainment.
+    divergence: Heraclitus frames this as a cosmological principle (the soul's λόγος governs all things), while Chuang Tzu
+      frames it as a breakthrough into emptiness and non-action that dissolves the subject-object distinction.
     passage_id: the_book_of_chuang_tzu.zhuangzi_md_004
   - citation: Phaedo (Plato) — The Soul's Affinity With the Unseen
-    resonance: 'Both establish a structural homology between the soul''s nature and its mode of endurance:
-      Heraclitus locates the soul''s principle (λόγος) in its unfathomable depth as the ground of ethical
-      alignment, while Plato argues the soul''s simplicity and intelligibility are the basis for its tendency
-      toward endurance and affinity with the eternal.'
-    divergence: Heraclitus emphasizes the soul as measure and governance immanent in flux, whereas Plato
-      posits the soul's affinity with a transcendent intelligible realm beyond becoming.
+    resonance: 'Both establish a structural homology between the soul''s nature and its mode of endurance: Heraclitus locates
+      the soul''s principle (λόγος) in its unfathomable depth as the ground of ethical alignment, while Plato argues the soul''s
+      simplicity and intelligibility are the basis for its tendency toward endurance and affinity with the eternal.'
+    divergence: Heraclitus emphasizes the soul as measure and governance immanent in flux, whereas Plato posits the soul's
+      affinity with a transcendent intelligible realm beyond becoming.
     passage_id: phaedo_plato.phaedo_md_003
   layer_provenance: generated_grounded
 appendixes: []
@@ -139,3 +133,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P071
   source_reference: Patrick (1889), frag. 71; corpus HFR_P071
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 71'
+  iast: transliterated_from_greek

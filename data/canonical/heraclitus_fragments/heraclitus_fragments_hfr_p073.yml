@@ -18,24 +18,21 @@ themes:
 - virtue
 source_excerpt: It is hard to contend against passion, for whatever it craves it buys with its life.
 translation_literal: It is hard to contend against passion, for whatever it craves it buys with its life.
-commentary: 'The fragment does not counsel restraint or virtue; it names a structural truth about desire
-  itself. Passion (thymos) is not a force external to the self that can be ''contended against'' as though
-  from a position of neutral ground. Rather, the contention *is* the passion—the struggle to resist is
-  already the payment. ''Whatever it craves it buys with its life'' inverts the logic of transaction:
-  the cost is not deferred or external; it is immediate and identical with the craving itself. Each moment
-  of wanting is already a spending. The paradox cuts deeper than moral warning. Heraclitus shows that
-  to fight passion is to remain within passion''s economy, to keep paying the price by the very act of
-  refusal. The hard truth is not that passion is powerful, but that the self attempting to contend against
-  it has already surrendered its life-force to the very struggle. There is no neutral observer, no ''I''
-  standing apart from thymos. The fragment teaches recognition, not resistance—to see that the buying
-  happens whether we name it or not.'
+commentary: 'The fragment does not counsel restraint or virtue; it names a structural truth about desire itself. Passion (thymos)
+  is not a force external to the self that can be ''contended against'' as though from a position of neutral ground. Rather,
+  the contention *is* the passion—the struggle to resist is already the payment. ''Whatever it craves it buys with its life''
+  inverts the logic of transaction: the cost is not deferred or external; it is immediate and identical with the craving itself.
+  Each moment of wanting is already a spending. The paradox cuts deeper than moral warning. Heraclitus shows that to fight
+  passion is to remain within passion''s economy, to keep paying the price by the very act of refusal. The hard truth is not
+  that passion is powerful, but that the self attempting to contend against it has already surrendered its life-force to the
+  very struggle. There is no neutral observer, no ''I'' standing apart from thymos. The fragment teaches recognition, not
+  resistance—to see that the buying happens whether we name it or not.'
 insight: ''
-practice: 'When you notice yourself wanting something—food, approval, distraction, certainty—pause and
-  ask: what am I spending right now, in this moment of craving, before any action follows? Speak aloud
-  the specific texture of that cost: attention, ease, presence, time. Do this three times in a single
-  day, at different moments of desire, without trying to stop the wanting.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'When you notice yourself wanting something—food, approval, distraction, certainty—pause and ask: what am I spending
+  right now, in this moment of craving, before any action follows? Speak aloud the specific texture of that cost: attention,
+  ease, presence, time. Do this three times in a single day, at different moments of desire, without trying to stop the wanting.'
+sanskrit_devanagari: Θυμῷ μάχεσθαι χαλεπόν· ὅ τι γὰρ ἂν χρηίζῃ γίνεσθαι, ψυχῆς ὠνέεται.
+sanskrit_iast: THumō machesthai chalepon. ho ti gar an chrēizē ginesthai, psuchēs ōneetai.
 tags:
 - action
 - attention
@@ -50,68 +47,71 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Θυμῷ μάχεσθαι χαλεπόν· ὅ τι γὰρ ἂν χρηίζῃ γίνεσθαι, ψυχῆς ὠνέεται.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 105'
+- kind: iast
+  label: IAST
+  body: THumō machesthai chalepon. ho ti gar an chrēizē ginesthai, psuchēs ōneetai.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: It is hard to contend against passion, for whatever it craves it buys with its life.
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment does not counsel restraint or virtue; it names a structural truth about desire itself.
-    Passion (thymos) is not a force external to the self that can be ''contended against'' as though from
-    a position of neutral ground. Rather, the contention *is* the passion—the struggle to resist is already
-    the payment. ''Whatever it craves it buys with its life'' inverts the logic of transaction: the cost
-    is not deferred or external; it is immediate and identical with the craving itself. Each moment of
-    wanting is already a spending. The paradox cuts deeper than moral warning. Heraclitus shows that to
-    fight passion is to remain within passion''s economy, to keep paying the price by the very act of
-    refusal. The hard truth is not that passion is powerful, but that the self attempting to contend against
-    it has already surrendered its life-force to the very struggle. There is no neutral observer, no ''I''
-    standing apart from thymos. The fragment teaches recognition, not resistance—to see that the buying
-    happens whether we name it or not.'
+  body: 'The fragment does not counsel restraint or virtue; it names a structural truth about desire itself. Passion (thymos)
+    is not a force external to the self that can be ''contended against'' as though from a position of neutral ground. Rather,
+    the contention *is* the passion—the struggle to resist is already the payment. ''Whatever it craves it buys with its life''
+    inverts the logic of transaction: the cost is not deferred or external; it is immediate and identical with the craving
+    itself. Each moment of wanting is already a spending. The paradox cuts deeper than moral warning. Heraclitus shows that
+    to fight passion is to remain within passion''s economy, to keep paying the price by the very act of refusal. The hard
+    truth is not that passion is powerful, but that the self attempting to contend against it has already surrendered its
+    life-force to the very struggle. There is no neutral observer, no ''I'' standing apart from thymos. The fragment teaches
+    recognition, not resistance—to see that the buying happens whether we name it or not.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (it is hard to contend against passion, for whatever it craves it buys with its life.),
-      the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing
-      Logos into private doctrine, mere logic, or only the later Johannine Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (it is hard
+      to contend against passion, for whatever it craves it buys with its life.), the shared pattern according to which all
+      things occur — heard before it is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later
+      Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: φύσις (physis)
-    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop ->
-      in this passage (it is hard to contend against passion, for whatever it craves it buys with its
-      life.), nature that loves to hide — the self-showing of things that also resists crude disclosure
-      -> trap: equating physis with “the outdoors” or a finished inventory of objects'
+    definition: 'φύω “to grow, bring forth” → nature as how a thing unfolds, not a scenic backdrop -> in this passage (it
+      is hard to contend against passion, for whatever it craves it buys with its life.), nature that loves to hide — the
+      self-showing of things that also resists crude disclosure -> trap: equating physis with “the outdoors” or a finished
+      inventory of objects'
     lemma_id: physis
     sense_id: physis.greek
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'When you notice yourself wanting something—food, approval, distraction, certainty—pause and ask:
-    what am I spending right now, in this moment of craving, before any action follows? Speak aloud the
-    specific texture of that cost: attention, ease, presence, time. Do this three times in a single day,
-    at different moments of desire, without trying to stop the wanting.'
+  body: 'When you notice yourself wanting something—food, approval, distraction, certainty—pause and ask: what am I spending
+    right now, in this moment of craving, before any action follows? Speak aloud the specific texture of that cost: attention,
+    ease, presence, time. Do this three times in a single day, at different moments of desire, without trying to stop the
+    wanting.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Astavakra Gita — 8.1 — 8.4
-    resonance: 'Both texts identify bondage with craving/desire (vāñchati) and liberation with the cessation
-      of that same movement. Heraclitus compresses this into a paradox of passion ''buying'' with life;
-      Astavakra makes explicit the causal structure: bondage arises when mind desires or grieves, freedom
-      when it neither desires nor grieves.'
-    divergence: Heraclitus frames the paradox cosmologically (passion as a force that consumes itself),
-      while Astavakra treats it as a psychological-metaphysical principle of consciousness independent
-      of external circumstance.
+    resonance: 'Both texts identify bondage with craving/desire (vāñchati) and liberation with the cessation of that same
+      movement. Heraclitus compresses this into a paradox of passion ''buying'' with life; Astavakra makes explicit the causal
+      structure: bondage arises when mind desires or grieves, freedom when it neither desires nor grieves.'
+    divergence: Heraclitus frames the paradox cosmologically (passion as a force that consumes itself), while Astavakra treats
+      it as a psychological-metaphysical principle of consciousness independent of external circumstance.
     passage_id: astavakra_gita.asg_sum_08_01_08_04
   - citation: 'Vijnana Bhairava — Yukti #37'
-    resonance: Both texts locate a transformative threshold at the point of breath-tension or pause. Heraclitus's
-      paradox of passion 'buying with life' mirrors the yogic principle where the dynamic tension (sanghaṭṭa)
-      of prāṇas at breath-termination generates a shift in consciousness—the cost of craving becomes the
-      gateway to equality-consciousness.
-    divergence: Heraclitus presents this as an ironic law of nature (what passion craves destroys it),
-      while Vijnana Bhairava frames it as a deliberate yogic technique to harness that tension for liberation.
+    resonance: Both texts locate a transformative threshold at the point of breath-tension or pause. Heraclitus's paradox
+      of passion 'buying with life' mirrors the yogic principle where the dynamic tension (sanghaṭṭa) of prāṇas at breath-termination
+      generates a shift in consciousness—the cost of craving becomes the gateway to equality-consciousness.
+    divergence: Heraclitus presents this as an ironic law of nature (what passion craves destroys it), while Vijnana Bhairava
+      frames it as a deliberate yogic technique to harness that tension for liberation.
     passage_id: vijnana_bhairava.yukti_037
   layer_provenance: generated_grounded
 appendixes: []
@@ -121,3 +121,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P073
   source_reference: Patrick (1889), frag. 73; corpus HFR_P073
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 105'
+  iast: transliterated_from_greek

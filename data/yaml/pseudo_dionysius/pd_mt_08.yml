@@ -2,8 +2,11 @@ sutra_id: PD_MT_08
 collection: Pseudo-Dionysius
 section: Mystical Theology · MT V
 title: Beyond Affirmation and Negation
-sanskrit: ''
-transliteration: ''
+sanskrit: οὔτε λόγος αὐτῆς ἐστιν οὔτε ὄνομα οὔτε γνῶσις· οὔτε σκότος ἐστὶν οὔτε φῶς, οὔτε πλάνη οὔτε ἀλήθεια·
+  οὔτε ἐστὶν αὐτῆς καθόλου θέσις οὔτε ἀφαίρεσις, ἀλλὰ τῶν μετ' αὐτὴν τὰς θέσεις καὶ ἀφαιρέσεις ποιοῦντες
+  αὐτὴν οὔτε τίθεμεν οὔτε ἀφαιροῦμεν, ἐπεὶ καὶ ὑπὲρ πᾶσαν θέσιν ἐστὶν ἡ παντελὴς καὶ ἑνιαία τῶν πάντων
+  αἰτία καὶ ὑπὲρ πᾶσαν ἀφαίρεσιν ἡ ὑπεροχὴ τοῦ πάντων ἁπλῶς ἀπολελυμένου καὶ ἐπέκεινα τῶν ὅλων.
+transliteration: Greek scholarly romanization (see canonical iast layer).
 translation: Nor can the reason attain to It to name It or to know It; nor is it darkness, nor is It light,
   or error, or truth; nor can any affirmation or negation apply to it; for while applying affirmations
   or negations to those orders of being that come next to It, we apply not unto It either affirmation
@@ -23,9 +26,9 @@ themes:
 - stillness
 glossary: []
 source: 'English: C.E. Rolt, Dionysius the Areopagite on the Divine Names and Mystical Theology (SPCK,
-  1920), public domain. Greek: short Mystical Theology incipits from the traditional text tradition (PG
-  / critical editions) where noted; Divine Names units carry English only. MT V.'
+  1920), public domain. Greek: Migne PG / traditional Corpus Areopagiticum passages from data/raw_texts/pd/greek/.
+  MT V.'
 editorial_maturity: strong_draft
 layer_provenance:
   translation: public_domain
-  original: missing
+  original: sourced

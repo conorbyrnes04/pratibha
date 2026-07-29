@@ -65,8 +65,27 @@ insight: ''
 practice: The next time you catch yourself saying "before" or "after," "here" or "there," pause on the
   word and whisper the line "He is now as He was," letting the distinction you just made dissolve back
   into the One who admits no such division.
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'الحمد لله الذي لم يكن قبل وحدانيته قبلُ إلا والقبل هو، ولم يكن بعد فردانيَّته بَعْدُ
+  إلا والبَعْد هو. كان ولا بَعْد معه ولا قبل، ولا فوق ولا تحت، ولا قُرْب ولا بُعْد، ولا كيف، ولا أين ولا
+  حين، ولا أوان ولا وقت ولا زمان، ولا كون ولا مكان، وهو الآن كما كان.
+
+
+  هو الواحد بلا وحدانية، وهو الفرد بلا فردانية. ليس مركَّبًا من الاسم والمسمَّى: هو الأول بلا أولية وهو
+  الآخِر بلا آخِرية، وهو الظاهر بلا ظاهرية وهو الباطن بلا باطنية؛ أعني أنه هو وجود حروف "الأول" وهو وجود
+  حروف "الآخِر"، وهو وجود حروف "الباطن" وهو وجود حروف "الظاهر". فلا أول ولا آخِر ولا ظاهر ولا باطن إلا
+  وهو بلا صيران. هذه الحروف وجوده، وصيران وجوده هذه الحروف. – فافهم هذا لئلا تقع في غلط الحلولية.'
+sanskrit_iast: 'al-ḥamdu lil-lāh alladhī lam yakun qabla waḥdāniyyatih qablu illā wal-qabl huwa, walam
+  yakun baʿda fardāniyyatih baʿdu illā wal-baʿd huwa. kāna walā baʿd maʿahu walā qabla, walā fawqa walā
+  taḥta, walā qurb walā buʿd, walā kayfa, walā ayna walā ḥayna, walā awān walā waqt walā zamān, walā kawn
+  walā makān, wa huwa al-ān kamā kāna.
+
+
+  huwa al-wāḥid bilā waḥdāniyya, wa huwa al-fard bilā fardāniyya. laysa murakkaban min al-ism wal-masmā:
+  huwa al-awwal bilā awwaliyya wa huwa al-ākhir bilā ākhiriyya, wa huwa al-ẓāhir bilā ẓāhiriyya wa huwa
+  al-bāṭin bilā bāṭiniyya; aʿnī annahu huwa wujūd ḥurūf "al-awwal" wa huwa wujūd ḥurūf "al-ākhir", wa
+  huwa wujūd ḥurūf "al-bāṭin" wa huwa wujūd ḥurūf "al-ẓāhir". fa-lā awwal walā ākhir walā ẓāhir walā bāṭin
+  illā wa huwa bilā ṣayrān. hādhihi al-ḥurūf wujūdhu, wa ṣayrān wujūdhu hādhihi al-ḥurūf. – fafham hādhā
+  li-allā taqaʿ fī ghalṭ al-ḥulūliyya.'
 tags:
 - awareness
 - commentary_text
@@ -88,6 +107,8 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P002
   source_reference: ''
+  arabic_source: balyani_risalat_al_wujudiyya_ahadiyya_ar.txt (ibnalarabi.com transcription; classical
+    PD Arabic)
 translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
   modernized. Study rendering.
 translation: In the name of God, the Merciful, the Compassionate, whose aid we seek. Praise be to God,
@@ -106,6 +127,36 @@ abhyasa: The next time you catch yourself saying "before" or "after," "here" or 
   into the One who admits no such division.
 practice_provenance: Practice re-authored for form diversity, grounded in the passage.
 pratibha_layers:
+- kind: original
+  label: Original (Arabic)
+  body: 'الحمد لله الذي لم يكن قبل وحدانيته قبلُ إلا والقبل هو، ولم يكن بعد فردانيَّته بَعْدُ إلا والبَعْد
+    هو. كان ولا بَعْد معه ولا قبل، ولا فوق ولا تحت، ولا قُرْب ولا بُعْد، ولا كيف، ولا أين ولا حين، ولا
+    أوان ولا وقت ولا زمان، ولا كون ولا مكان، وهو الآن كما كان.
+
+
+    هو الواحد بلا وحدانية، وهو الفرد بلا فردانية. ليس مركَّبًا من الاسم والمسمَّى: هو الأول بلا أولية
+    وهو الآخِر بلا آخِرية، وهو الظاهر بلا ظاهرية وهو الباطن بلا باطنية؛ أعني أنه هو وجود حروف "الأول"
+    وهو وجود حروف "الآخِر"، وهو وجود حروف "الباطن" وهو وجود حروف "الظاهر". فلا أول ولا آخِر ولا ظاهر ولا
+    باطن إلا وهو بلا صيران. هذه الحروف وجوده، وصيران وجوده هذه الحروف. – فافهم هذا لئلا تقع في غلط الحلولية.'
+  layer_provenance: 'Arabic: classical text of Risālat al-Wujūdiyya / Risālat al-Aḥadiyya (Auḥad al-Dīn
+    al-Balyānī; traditionally ascribed to Ibn ʿArabī). Unicode transcription from https://www.ibnalarabi.com/books/wujudiya.php
+    (text pages), saved at data/raw_texts/pd/arabic/balyani_risalat_al_wujudiyya_ahadiyya_ar.txt. Passage
+    aligned using T. H. Weir JRAS 1901 English as locator. Underlying medieval Arabic is public domain.'
+- kind: iast
+  label: Transliteration (ALA-LC)
+  body: 'al-ḥamdu lil-lāh alladhī lam yakun qabla waḥdāniyyatih qablu illā wal-qabl huwa, walam yakun
+    baʿda fardāniyyatih baʿdu illā wal-baʿd huwa. kāna walā baʿd maʿahu walā qabla, walā fawqa walā taḥta,
+    walā qurb walā buʿd, walā kayfa, walā ayna walā ḥayna, walā awān walā waqt walā zamān, walā kawn walā
+    makān, wa huwa al-ān kamā kāna.
+
+
+    huwa al-wāḥid bilā waḥdāniyya, wa huwa al-fard bilā fardāniyya. laysa murakkaban min al-ism wal-masmā:
+    huwa al-awwal bilā awwaliyya wa huwa al-ākhir bilā ākhiriyya, wa huwa al-ẓāhir bilā ẓāhiriyya wa huwa
+    al-bāṭin bilā bāṭiniyya; aʿnī annahu huwa wujūd ḥurūf "al-awwal" wa huwa wujūd ḥurūf "al-ākhir", wa
+    huwa wujūd ḥurūf "al-bāṭin" wa huwa wujūd ḥurūf "al-ẓāhir". fa-lā awwal walā ākhir walā ẓāhir walā
+    bāṭin illā wa huwa bilā ṣayrān. hādhihi al-ḥurūf wujūdhu, wa ṣayrān wujūdhu hādhihi al-ḥurūf. – fafham
+    hādhā li-allā taqaʿ fī ghalṭ al-ḥulūliyya.'
+  layer_provenance: ALA-LC scholarly latinization of the matched Arabic passage.
 - kind: translation
   label: Pratibha Translation
   body: He is, and there is not with Him any before or after, above or below, closeness or distance, how

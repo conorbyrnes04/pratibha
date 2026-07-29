@@ -2,10 +2,13 @@
 """Build strong_draft YAML for Pseudo-Dionysius (~20 curated units).
 
 English: C.E. Rolt, *Dionysius the Areopagite on the Divine Names and
-Mystical Theology* (SPCK, 1920), public domain. Greek: short MT incipits
-from the traditional text tradition where available.
+Mystical Theology* (SPCK, 1920), public domain. Greek: passage-level
+Migne PG / traditional Corpus Areopagiticum text from
+``data/raw_texts/pd/greek/`` (see SOURCE.md there).
 
 Writes under data/yaml/pseudo_dionysius/. Does not promote to canonical.
+For restoring Greek into existing canonical units, prefer
+``scripts/restore_dionysius_greek.py``.
 """
 from __future__ import annotations
 
@@ -16,13 +19,34 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "yaml" / "pseudo_dionysius"
+GREEK_DIR = ROOT / "data" / "raw_texts" / "pd" / "greek"
 
 SOURCE = (
     "English: C.E. Rolt, Dionysius the Areopagite on the Divine Names and "
-    "Mystical Theology (SPCK, 1920), public domain. Greek: short Mystical "
-    "Theology incipits from the traditional text tradition (PG / critical "
-    "editions) where noted; Divine Names units carry English only."
+    "Mystical Theology (SPCK, 1920), public domain. Greek: Migne PG / "
+    "traditional Corpus Areopagiticum passages from data/raw_texts/pd/greek/."
 )
+
+
+def _load_restored_greek() -> dict[str, str]:
+    """Prefer Greek already restored into canonical units when present."""
+    canon = ROOT / "data" / "canonical" / "pseudo_dionysius"
+    out: dict[str, str] = {}
+    if not canon.is_dir():
+        return out
+    for path in canon.glob("pseudo_dionysius_pd_*.yml"):
+        short = path.stem.replace("pseudo_dionysius_", "")
+        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        greek = (doc or {}).get("sanskrit_devanagari") or ""
+        if not greek:
+            for layer in (doc or {}).get("pratibha_layers") or []:
+                if layer.get("kind") == "original" and layer.get("body"):
+                    greek = layer["body"]
+                    break
+        if greek:
+            out[short] = greek.strip()
+    return out
+
 
 
 def clean(text: str) -> str:
@@ -504,16 +528,23 @@ UNITS: list[tuple] = [
 
 
 def build() -> int:
+    restored = _load_restored_greek()
     n = 0
     for item in UNITS:
         uid, work_tag, section, title, greek, english, themes, claim = item
+        greek = restored.get(uid) or greek or ""
+        iast = ""
+        if greek:
+            # Lightweight placeholder; full scholarly romanization is applied by
+            # restore_dionysius_greek.py into canonical units.
+            iast = "Greek scholarly romanization (see canonical iast layer)."
         unit = {
             "sutra_id": uid.upper(),
             "collection": "Pseudo-Dionysius",
             "section": f"{work_tag} · {section}",
             "title": title,
-            "sanskrit": greek or "",
-            "transliteration": "Greek (corpus original field)." if greek else "",
+            "sanskrit": greek,
+            "transliteration": iast,
             "translation": clean(english),
             "commentary": commentary(claim),
             "abhyasa": (
@@ -532,6 +563,7 @@ def build() -> int:
         dump(OUT / f"{uid}.yml", unit)
         n += 1
     return n
+
 
 
 if __name__ == "__main__":

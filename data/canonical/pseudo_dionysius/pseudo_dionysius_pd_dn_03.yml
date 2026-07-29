@@ -7,8 +7,20 @@ unit_id: pseudo_dionysius.pd_dn_03
 unit_label: Illuminations According to Each Creature's Powers
 title: Illuminations According to Each Creature's Powers
 unit_type: sutra
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: Οὐ μὴν ἀκοινώνητόν ἐστι καθόλου τἀγαθὸν οὐδενὶ τῶν ὄντων, ἀλλ’ ἐφ’ ἑαυτοῦ μονίμως
+  τὴν ὑπερούσιον ἱδρῦσαν ἀκτῖνα ταῖς ἑκάστου τῶν ὄντων ἀναλόγοις ἐλλάμψεσιν ἀγαθοπρεπῶς ἐπιφαίνεται καὶ
+  πρὸς τὴν ἐφικτὴν αὑτοῦ θεωρίαν καὶ κοινωνίαν καὶ ὁμοίωσιν ἀνατείνει τοὺς ἱεροὺς νόας τοὺς ὡς θεμιτὸν
+  αὐτῷ καὶ ἱεροπρεπῶς ἐπιβάλλοντας καὶ μήτε πρὸς τὸ ὑπέρτερον τῆς ἐναρμονίως ἐνδιδομένης θεοφανείας ἀδυνάτως
+  ἀπαυθαδιζομένους μήτε πρὸς τὸ κάταντες ἐκ τῆς ἐπὶ τὸ χεῖρον ὑφέσεως ἀπολισθαίνοντας, ἀλλ’ εὐσταθῶς τε
+  καὶ ἀκλινῶς ἐπὶ τὴν ἀκτῖνα τὴν αὐτοῖς ἐπιλάμπουσαν ἀνατεινομένους καὶ τῷ συμμέτρῳ τῶν θεμιτῶν ἐλλάμψεων
+  ἔρωτι μετ’ εὐλαβείας ἱερᾶς σωφρόνως τε καὶ ὁσίως ἀναπτερουμένους.
+sanskrit_iast: Ou mēn akoinōnēton esti katholou tagathon oudeni tōn ontōn, all’ eph’ heautou monimōs tēn
+  hyperousion hidrysan aktina tais hekastou tōn ontōn analogois ellampsesin agathoprepōs epiphainetai
+  kai pros tēn ephiktēn autou theōrian kai koinōnian kai homoiōsin anateinei tous hierous noas tous hōs
+  themiton autō kai hieroprepōs epiballontas kai mēte pros to hyperteron tēs enarmoniōs endidomenēs theophaneias
+  adynatōs apauthadizomenous mēte pros to katantes ek tēs epi to cheiron hypheseōs apolisthainontas, all’
+  eustathōs te kai aklinōs epi tēn aktina tēn autois epilampousan anateinomenous kai tō symmetrō tōn themitōn
+  ellampseōn erōti met’ eulabeias hieras sōphronōs te kai hosiōs anapteroumenous.
 translation_literal: Not that the Good is wholly incommunicable to anything; nay, rather, while dwelling
   alone by Itself, and having there firmly fixed Its super-essential Ray, It lovingly reveals Itself by
   illuminations corresponding to each separate creature's powers, and thus draws upwards holy minds into
@@ -39,6 +51,25 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Οὐ μὴν ἀκοινώνητόν ἐστι καθόλου τἀγαθὸν οὐδενὶ τῶν ὄντων, ἀλλ’ ἐφ’ ἑαυτοῦ μονίμως τὴν ὑπερούσιον
+    ἱδρῦσαν ἀκτῖνα ταῖς ἑκάστου τῶν ὄντων ἀναλόγοις ἐλλάμψεσιν ἀγαθοπρεπῶς ἐπιφαίνεται καὶ πρὸς τὴν ἐφικτὴν
+    αὑτοῦ θεωρίαν καὶ κοινωνίαν καὶ ὁμοίωσιν ἀνατείνει τοὺς ἱεροὺς νόας τοὺς ὡς θεμιτὸν αὐτῷ καὶ ἱεροπρεπῶς
+    ἐπιβάλλοντας καὶ μήτε πρὸς τὸ ὑπέρτερον τῆς ἐναρμονίως ἐνδιδομένης θεοφανείας ἀδυνάτως ἀπαυθαδιζομένους
+    μήτε πρὸς τὸ κάταντες ἐκ τῆς ἐπὶ τὸ χεῖρον ὑφέσεως ἀπολισθαίνοντας, ἀλλ’ εὐσταθῶς τε καὶ ἀκλινῶς ἐπὶ
+    τὴν ἀκτῖνα τὴν αὐτοῖς ἐπιλάμπουσαν ἀνατεινομένους καὶ τῷ συμμέτρῳ τῶν θεμιτῶν ἐλλάμψεων ἔρωτι μετ’
+    εὐλαβείας ἱερᾶς σωφρόνως τε καὶ ὁσίως ἀναπτερουμένους.
+  layer_provenance: sourced
+- kind: iast
+  label: IAST
+  body: Ou mēn akoinōnēton esti katholou tagathon oudeni tōn ontōn, all’ eph’ heautou monimōs tēn hyperousion
+    hidrysan aktina tais hekastou tōn ontōn analogois ellampsesin agathoprepōs epiphainetai kai pros tēn
+    ephiktēn autou theōrian kai koinōnian kai homoiōsin anateinei tous hierous noas tous hōs themiton
+    autō kai hieroprepōs epiballontas kai mēte pros to hyperteron tēs enarmoniōs endidomenēs theophaneias
+    adynatōs apauthadizomenous mēte pros to katantes ek tēs epi to cheiron hypheseōs apolisthainontas,
+    all’ eustathōs te kai aklinōs epi tēn aktina tēn autois epilampousan anateinomenous kai tō symmetrō
+    tōn themitōn ellampseōn erōti met’ eulabeias hieras sōphronōs te kai hosiōs anapteroumenous.
 - kind: translation
   label: Pratibha Translation
   body: Not that the Good is wholly incommunicable to anything; nay, rather, while dwelling alone by Itself,
@@ -81,4 +112,6 @@ provenance:
   collection: Pseudo-Dionysius
   section: Divine Names · DN I
   original_id: PD_DN_03
-  source_reference: ''
+  source_reference: 'Greek: Migne PG / traditional Corpus Areopagiticum (Bibliotheca Augustana PG 3 for
+    MT; Unicode DN aligned to same tradition). English alignment: C.E. Rolt, Dionysius the Areopagite
+    on the Divine Names and the Mystical Theology (SPCK, 1920).'

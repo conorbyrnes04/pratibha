@@ -7,30 +7,27 @@ unit_id: heraclitus_fragments.hfr_p129
 unit_label: Atonements.*
 title: Atonements.*
 unit_type: teaching_passage
-thesis: The fragment's title—'Atonements'—names not reconciliation but *payment*, *recompense*, *making-whole
-  through severance*.
+thesis: The fragment's title—'Atonements'—names not reconciliation but *payment*, *recompense*, *making-whole through severance*.
 themes:
 - earth
 - transformation
 source_excerpt: Atonements.*
 translation_literal: Atonements.*
-commentary: 'The fragment''s title—''Atonements''—names not reconciliation but *payment*, *recompense*,
-  *making-whole through severance*. Heraclitus does not say ''all is one'' here; he says the one *becomes*
-  many through a logic of reciprocal debt (antipeponthos). Fire consumes wood; wood becomes ash; ash returns
-  to earth; earth feeds root. Each thing pays what it owes by ceasing to be itself. The paradox is not
-  mystical union but the *necessity of exchange*—nothing remains; nothing is forgiven; everything settles
-  its account by transformation. To call this ''atonement'' is to hear in the Greek *dikē* (justice, recompense)
-  the structure of becoming itself. The one is not a hidden ground behind appearances but the *rate of
-  payment*, the measure by which each thing''s dissolution funds another''s birth. Heraclitus refuses
-  both permanence and chaos: he names the law that makes change intelligible—not as flux without form,
-  but as a cosmic ledger where nothing is lost, only transferred. To understand this is to stop seeking
-  escape from time and to recognize that your own decay is already someone else''s nourishment.'
+commentary: 'The fragment''s title—''Atonements''—names not reconciliation but *payment*, *recompense*, *making-whole through
+  severance*. Heraclitus does not say ''all is one'' here; he says the one *becomes* many through a logic of reciprocal debt
+  (antipeponthos). Fire consumes wood; wood becomes ash; ash returns to earth; earth feeds root. Each thing pays what it owes
+  by ceasing to be itself. The paradox is not mystical union but the *necessity of exchange*—nothing remains; nothing is forgiven;
+  everything settles its account by transformation. To call this ''atonement'' is to hear in the Greek *dikē* (justice, recompense)
+  the structure of becoming itself. The one is not a hidden ground behind appearances but the *rate of payment*, the measure
+  by which each thing''s dissolution funds another''s birth. Heraclitus refuses both permanence and chaos: he names the law
+  that makes change intelligible—not as flux without form, but as a cosmic ledger where nothing is lost, only transferred.
+  To understand this is to stop seeking escape from time and to recognize that your own decay is already someone else''s nourishment.'
 insight: ''
-practice: 'Identify one small thing you discarded today—a scrap, a word you took back, a plan abandoned—and
-  trace it forward: where does it go, what does it feed, what becomes possible because you released it?
-  Speak this chain aloud, slowly, as if accounting to the thing itself.'
-sanskrit_devanagari: ''
-sanskrit_iast: '*(Greek original not in corpus; see Patrick/Bywater.)*'
+practice: 'Identify one small thing you discarded today—a scrap, a word you took back, a plan abandoned—and trace it forward:
+  where does it go, what does it feed, what becomes possible because you released it? Speak this chain aloud, slowly, as if
+  accounting to the thing itself.'
+sanskrit_devanagari: Ἄκεα.
+sanskrit_iast: Akea.
 tags:
 - commentary_text
 - earth
@@ -40,74 +37,77 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: Ἄκεα.
+  layer_provenance: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 129'
+- kind: iast
+  label: IAST
+  body: Akea.
+  layer_provenance: transliterated_from_greek
 - kind: translation
   label: Pratibha Translation
   body: Atonements.*
   layer_provenance: normalized from Patrick (1889), PD; regex word-modernization, not fresh translation
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The fragment''s title—''Atonements''—names not reconciliation but *payment*, *recompense*, *making-whole
-    through severance*. Heraclitus does not say ''all is one'' here; he says the one *becomes* many through
-    a logic of reciprocal debt (antipeponthos). Fire consumes wood; wood becomes ash; ash returns to earth;
-    earth feeds root. Each thing pays what it owes by ceasing to be itself. The paradox is not mystical
-    union but the *necessity of exchange*—nothing remains; nothing is forgiven; everything settles its
-    account by transformation. To call this ''atonement'' is to hear in the Greek *dikē* (justice, recompense)
-    the structure of becoming itself. The one is not a hidden ground behind appearances but the *rate
-    of payment*, the measure by which each thing''s dissolution funds another''s birth. Heraclitus refuses
-    both permanence and chaos: he names the law that makes change intelligible—not as flux without form,
-    but as a cosmic ledger where nothing is lost, only transferred. To understand this is to stop seeking
-    escape from time and to recognize that your own decay is already someone else''s nourishment.'
+  body: 'The fragment''s title—''Atonements''—names not reconciliation but *payment*, *recompense*, *making-whole through
+    severance*. Heraclitus does not say ''all is one'' here; he says the one *becomes* many through a logic of reciprocal
+    debt (antipeponthos). Fire consumes wood; wood becomes ash; ash returns to earth; earth feeds root. Each thing pays what
+    it owes by ceasing to be itself. The paradox is not mystical union but the *necessity of exchange*—nothing remains; nothing
+    is forgiven; everything settles its account by transformation. To call this ''atonement'' is to hear in the Greek *dikē*
+    (justice, recompense) the structure of becoming itself. The one is not a hidden ground behind appearances but the *rate
+    of payment*, the measure by which each thing''s dissolution funds another''s birth. Heraclitus refuses both permanence
+    and chaos: he names the law that makes change intelligible—not as flux without form, but as a cosmic ledger where nothing
+    is lost, only transferred. To understand this is to stop seeking escape from time and to recognize that your own decay
+    is already someone else''s nourishment.'
   layer_provenance: template-assembled
 - kind: key_terms
   label: Key Terms
   items:
   - term: λόγος (logos)
-    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this
-      passage (atonements.*), the shared pattern according to which all things occur — heard before it
-      is argued -> trap: collapsing Logos into private doctrine, mere logic, or only the later Johannine
-      Word'
+    definition: 'λέγω “to say, gather, recount” → speech, account, ratio, intelligible order -> in this passage (atonements.*),
+      the shared pattern according to which all things occur — heard before it is argued -> trap: collapsing Logos into private
+      doctrine, mere logic, or only the later Johannine Word'
     lemma_id: logos
     sense_id: logos.greek
   - term: πῦρ (pyr)
-    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage
-      (atonements.*), world-ruling fire as measured transformation and exchange, not mythic flame alone
-      -> trap: treating fire as a static elemental substance rather than lawful becoming'
+    definition: 'πῦρ “fire”; πυρὸς τροπαί — turnings/exchanges of fire under proportion -> in this passage (atonements.*),
+      world-ruling fire as measured transformation and exchange, not mythic flame alone -> trap: treating fire as a static
+      elemental substance rather than lawful becoming'
     lemma_id: pyr
     sense_id: pyr.heraclitean
   - term: δίκη (dikē)
-    definition: 'δίκη “justice, due order, right allotment” -> in this passage (atonements.*), cosmic
-      justice that polices measures — the Erinyes as helpers when bounds are overstepped -> trap: courtroom
-      morality alone; here dikē is cosmological proportion, not only human law'
+    definition: 'δίκη “justice, due order, right allotment” -> in this passage (atonements.*), cosmic justice that polices
+      measures — the Erinyes as helpers when bounds are overstepped -> trap: courtroom morality alone; here dikē is cosmological
+      proportion, not only human law'
   - term: αἰών (aiōn)
-    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage
-      (atonements.*), time/age as a child at play: cosmic process without a human craftsman-god -> trap:
-      clock-time only; aiōn here is the age-character of the world-process'
+    definition: 'αἰών “lifetime, age, everlasting span” — time as lived cosmic duration -> in this passage (atonements.*),
+      time/age as a child at play: cosmic process without a human craftsman-god -> trap: clock-time only; aiōn here is the
+      age-character of the world-process'
   layer_provenance: editorial-enriched
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Identify one small thing you discarded today—a scrap, a word you took back, a plan abandoned—and
-    trace it forward: where does it go, what does it feed, what becomes possible because you released
-    it? Speak this chain aloud, slowly, as if accounting to the thing itself.'
+  body: 'Identify one small thing you discarded today—a scrap, a word you took back, a plan abandoned—and trace it forward:
+    where does it go, what does it feed, what becomes possible because you released it? Speak this chain aloud, slowly, as
+    if accounting to the thing itself.'
   layer_provenance: template-assembled
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts locate intelligible order within a dynamic, oscillating process: Heraclitus
-      finds the ''one'' within the flux of apparent opposites (breath as atonement/reconciliation), while
-      Vijnana Bhairava #1 finds the Supreme articulated through the reciprocal movement of prāṇa and jīva—exhale
-      and inhale as the fundamental rhythm of manifestation.'
-    divergence: Heraclitus treats the unified order as a rational principle (logos) discoverable through
-      intellection, whereas Vijnana Bhairava locates it as a lived, embodied oscillation accessible through
-      tantric practice and somatic awareness.
+    resonance: 'Both texts locate intelligible order within a dynamic, oscillating process: Heraclitus finds the ''one'' within
+      the flux of apparent opposites (breath as atonement/reconciliation), while Vijnana Bhairava #1 finds the Supreme articulated
+      through the reciprocal movement of prāṇa and jīva—exhale and inhale as the fundamental rhythm of manifestation.'
+    divergence: Heraclitus treats the unified order as a rational principle (logos) discoverable through intellection, whereas
+      Vijnana Bhairava locates it as a lived, embodied oscillation accessible through tantric practice and somatic awareness.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Nagarjuna Mulamadhyamakakarika — The Ultimate Rides on the Conventional
-    resonance: 'Both refuse a mystical collapse of distinctions and instead posit that unity operates
-      *through* apparent duality: Heraclitus''s ''one'' emerges from the tension of opposites without
-      erasing them, and Nagarjuna''s ultimate (paramārtha) cannot be accessed except by riding the conventional
-      (vyavahāra)—each level remains structurally necessary.'
-    divergence: Heraclitus grounds this in a metaphysics of eternal flux and logos, while Nagarjuna grounds
-      it in the two-truths doctrine and the logical interdependence of conceptual frameworks.
+    resonance: 'Both refuse a mystical collapse of distinctions and instead posit that unity operates *through* apparent duality:
+      Heraclitus''s ''one'' emerges from the tension of opposites without erasing them, and Nagarjuna''s ultimate (paramārtha)
+      cannot be accessed except by riding the conventional (vyavahāra)—each level remains structurally necessary.'
+    divergence: Heraclitus grounds this in a metaphysics of eternal flux and logos, while Nagarjuna grounds it in the two-truths
+      doctrine and the logical interdependence of conceptual frameworks.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_10
   layer_provenance: generated_grounded
 appendixes: []
@@ -117,3 +117,6 @@ provenance:
   section: wisdom_pearl
   original_id: HFR_P129
   source_reference: Patrick (1889), frag. 129; corpus HFR_P129
+layer_provenance:
+  original: 'greek: bywater_1877 (Patrick numbering; Classic Persuasion Unicode); Patrick/Bywater fr. 129'
+  iast: transliterated_from_greek

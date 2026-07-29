@@ -1,0 +1,39 @@
+work_id,units,pct_with_source,pct_with_original,pct_with_iast,dominant_original_script,missing_source_count,has_original_count,orig_script_breakdown,iast_script_breakdown,sample_missing_unit_ids
+dhammapada,26,0.0,100.0,100.0,latin_or_romanization,26,26,{'latin_or_romanization': 26},{'latin_or_romanization': 26},dhammapada.dhp_ch01;dhammapada.dhp_ch02;dhammapada.dhp_ch03;dhammapada.dhp_ch04;dhammapada.dhp_ch05
+phaedo_plato,12,0.0,100.0,100.0,latin_or_romanization,12,12,{'latin_or_romanization': 12},{'latin_or_romanization': 12},phaedo_plato.phaedo_md_001;phaedo_plato.phaedo_md_002;phaedo_plato.phaedo_md_003;phaedo_plato.phaedo_md_004;phaedo_plato.phaedo_md_005
+meister_eckhart,12,0.0,100.0,100.0,latin_or_romanization,12,12,{'latin_or_romanization': 12},{'latin_or_romanization': 12},meister_eckhart.eck_009;meister_eckhart.eck_010;meister_eckhart.eck_011;meister_eckhart.eck_012;meister_eckhart.eck_001
+shantideva_bodhicaryavatara,8,0.0,100.0,100.0,latin_or_romanization,8,8,{'latin_or_romanization': 8},{'latin_or_romanization': 8},shantideva_bodhicaryavatara.bca_08_body;shantideva_bodhicaryavatara.bca_08_equal;shantideva_bodhicaryavatara.bca_08_exchange;shantideva_bodhicaryavatara.bca_08_solitude;shantideva_bodhicaryavatara.bca_08_trees
+the_cloud_of_unknowing,5,0.0,100.0,100.0,latin_or_romanization,5,5,{'latin_or_romanization': 5},{'latin_or_romanization': 5},the_cloud_of_unknowing.cloud_01;the_cloud_of_unknowing.cloud_02;the_cloud_of_unknowing.cloud_03;the_cloud_of_unknowing.cloud_04;the_cloud_of_unknowing.cloud_05
+tilopa_mahamudra,3,0.0,100.0,100.0,latin_or_romanization,3,3,{'latin_or_romanization': 3},{'latin_or_romanization': 3},tilopa_mahamudra.til_001;tilopa_mahamudra.til_002;tilopa_mahamudra.til_003
+milarepa_songs,14,7.1,100.0,100.0,latin_or_romanization,13,14,"{'latin_or_romanization': 13, 'tibetan': 1}",{'latin_or_romanization': 14},milarepa_songs.mil_comforts_005;milarepa_songs.mil_demon_008;milarepa_songs.mil_race_007;milarepa_songs.mil_reproof_004;milarepa_songs.mil_sister_006
+mandukya_upanishad_and_gaudapada_karika,16,75.0,75.0,75.0,devanagari,4,12,{'devanagari': 12},{'latin_or_romanization': 12},mandukya_upanishad_and_gaudapada_karika.muk_001;mandukya_upanishad_and_gaudapada_karika.muk_004;mandukya_upanishad_and_gaudapada_karika.muk_010;mandukya_upanishad_and_gaudapada_karika.muk_016
+pratyabhijnahrdayam,21,95.2,95.2,95.2,devanagari,1,20,{'devanagari': 20},{'latin_or_romanization': 20},pratyabhijnahrdayam.phr_sum_appendix
+the_book_of_chuang_tzu,66,95.5,100.0,100.0,cjk,3,66,"{'cjk': 63, 'latin_or_romanization': 3}",{'latin_or_romanization': 66},the_book_of_chuang_tzu.zhuangzi_md_010;the_book_of_chuang_tzu.zhuangzi_md_013;the_book_of_chuang_tzu.zhuangzi_md_014
+astavakra_gita,31,96.8,96.8,96.8,devanagari,1,30,{'devanagari': 30},{'latin_or_romanization': 30},astavakra_gita.asg_sum_11_01_11_08
+heraclitus_fragments,128,98.4,98.4,100.0,greek,2,126,{'greek': 126},{'latin_or_romanization': 128},heraclitus_fragments.hfr_p089;heraclitus_fragments.hfr_p120
+patañjali_yoga_sūtras,195,100.0,100.0,100.0,devanagari,0,195,{'devanagari': 195},{'latin_or_romanization': 195},
+vijnana_bhairava,112,100.0,100.0,100.0,devanagari,0,112,{'devanagari': 112},{'latin_or_romanization': 112},
+tao_te_ching,81,100.0,100.0,18.5,cjk,0,81,{'cjk': 81},{'latin_or_romanization': 15},
+yoga_spandakarika,52,100.0,100.0,100.0,devanagari,0,52,{'devanagari': 52},{'latin_or_romanization': 52},
+siva_sutra,47,100.0,100.0,100.0,devanagari,0,47,{'devanagari': 47},{'latin_or_romanization': 47},
+confucius_analects,45,100.0,100.0,100.0,cjk,0,45,{'cjk': 45},{'latin_or_romanization': 45},
+know_yourself_ibn_arabi_balyani,36,100.0,100.0,100.0,arabic,0,36,{'arabic': 36},{'latin_or_romanization': 36},
+plotinus_enneads,32,100.0,100.0,100.0,greek,0,32,"{'greek': 32, 'arabic': 1}","{'greek': 19, 'latin_or_romanization': 13}",
+isavasya_upanishad,24,100.0,100.0,100.0,devanagari,0,24,{'devanagari': 24},{'latin_or_romanization': 24},
+svetasvatara_upanishad,22,100.0,100.0,100.0,devanagari,0,22,{'devanagari': 22},{'latin_or_romanization': 22},
+rumi_mathnawi,22,100.0,100.0,100.0,arabic,0,22,{'arabic': 22},{'latin_or_romanization': 22},
+pseudo_dionysius,20,100.0,100.0,100.0,greek,0,20,{'greek': 20},{'latin_or_romanization': 20},
+tantrasara,19,100.0,100.0,100.0,devanagari,0,19,{'devanagari': 19},{'latin_or_romanization': 19},
+zhongyong,14,100.0,100.0,100.0,cjk,0,14,{'cjk': 14},{'latin_or_romanization': 14},
+bhagavad_gita,12,100.0,100.0,100.0,devanagari,0,12,{'devanagari': 12},"{'latin_or_romanization': 5, 'devanagari': 7}",
+chāndogya_upaniṣad,12,100.0,100.0,100.0,devanagari,0,12,{'devanagari': 12},"{'latin_or_romanization': 10, 'devanagari': 2}",
+dogen_shobogenzo,12,100.0,100.0,100.0,cjk,0,12,{'cjk': 12},{'latin_or_romanization': 12},
+marcus_aurelius_meditations,12,100.0,100.0,100.0,greek,0,12,{'greek': 12},{'latin_or_romanization': 12},
+yoginihrdaya,11,100.0,100.0,100.0,devanagari,0,11,{'devanagari': 11},{'latin_or_romanization': 11},
+nagarjuna_mulamadhyamakakarika,9,100.0,100.0,100.0,devanagari,0,9,{'devanagari': 9},{'latin_or_romanization': 9},
+katha_upanishad,9,100.0,100.0,100.0,devanagari,0,9,{'devanagari': 9},{'latin_or_romanization': 9},
+brihadaranyaka_upanishad,5,100.0,100.0,100.0,devanagari,0,5,{'devanagari': 5},{'latin_or_romanization': 5},
+mundaka_upanishad,5,100.0,100.0,100.0,devanagari,0,5,{'devanagari': 5},{'latin_or_romanization': 5},
+parmenides_fragments,4,100.0,100.0,100.0,greek,0,4,{'greek': 4},{'latin_or_romanization': 4},
+epictetus_works,3,100.0,100.0,100.0,greek,0,3,{'greek': 3},{'latin_or_romanization': 3},
+heart_sutra,3,100.0,100.0,100.0,devanagari,0,3,{'devanagari': 3},{'latin_or_romanization': 3},
