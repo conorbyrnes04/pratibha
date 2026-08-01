@@ -114,6 +114,8 @@ class Settings(BaseSettings):
             "user": self.PG_USER,
             "password": self.PG_PASSWORD,
             "database": self.PG_DB,
+            # Supabase/PgBouncer transaction pooling rejects prepared statements.
+            "statement_cache_size": 0,
         }
         if self.PG_SSL:
             # Managed providers frequently present certs that don't chain to the
