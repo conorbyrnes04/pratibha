@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useId, useMemo } from "react";
+import { Combobox } from "@base-ui/react/combobox";
+import { cn } from "@/lib/utils";
 
 export type FilterSelectOption = {
   value: string;
@@ -19,6 +21,10 @@ type FilterSelectProps = {
   placeholder?: string;
 };
 
+/**
+ * Manuscript filter control — Base UI Combobox with searchable popup.
+ * Keeps filter-select CSS (gold/lapis) so Library / Chat / Oracle stay on-brand.
+ */
 export function FilterSelect({
   label,
   value,
@@ -27,75 +33,81 @@ export function FilterSelect({
   tone = "gold",
   placeholder = "Choose…",
 }: FilterSelectProps) {
-  const [open, setOpen] = useState(false);
-  const rootRef = useRef<HTMLDivElement>(null);
-  const listId = useId();
-  const selected = options.find((option) => option.value === value);
-
-  useEffect(() => {
-    if (!open) return;
-    function onPointerDown(event: MouseEvent) {
-      if (!rootRef.current?.contains(event.target as Node)) setOpen(false);
-    }
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setOpen(false);
-    }
-    document.addEventListener("mousedown", onPointerDown);
-    document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.removeEventListener("mousedown", onPointerDown);
-      document.removeEventListener("keydown", onKeyDown);
-    };
-  }, [open]);
-
+  const inputId = useId();
+  const selected = useMemo(
+    () => options.find((option) => option.value === value) ?? null,
+    [options, value],
+  );
   const toneClass = tone === "lapis" ? "filter-select--lapis" : "filter-select--gold";
 
   return (
-    <div ref={rootRef} className={`filter-select ${toneClass}${open ? " filter-select--open" : ""}`}>
-      <p className="layer-heading mb-2">{label}</p>
-      <button
-        type="button"
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        aria-controls={listId}
-        onClick={() => setOpen((prev) => !prev)}
-        className="filter-select__trigger"
-      >
-        <span className="filter-select__value">
-          {selected?.icon ? <span className="filter-select__icon">{selected.icon}</span> : null}
-          <span className="filter-select__label">{selected?.label || placeholder}</span>
-        </span>
-        <span className="filter-select__chevron" aria-hidden>
-          {open ? "▴" : "▾"}
-        </span>
-      </button>
-      {open ? (
-        <ul id={listId} role="listbox" className="filter-select__menu">
-          {options.map((option) => {
-            const active = option.value === value;
-            return (
-              <li key={option.value} role="presentation">
-                <button
-                  type="button"
-                  role="option"
-                  aria-selected={active}
-                  onClick={() => {
-                    onChange(option.value);
-                    setOpen(false);
-                  }}
-                  className={`filter-select__option${active ? " filter-select__option--active" : ""}`}
-                >
-                  <span className="filter-select__option-label">
-                    {option.icon ? <span className="filter-select__option-icon">{option.icon}</span> : null}
-                    <span className="filter-select__option-text">{option.label}</span>
-                  </span>
-                  {option.hint ? <span className="filter-select__option-hint">{option.hint}</span> : null}
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-      ) : null}
-    </div>
+    <Combobox.Root
+      items={options}
+      value={selected}
+      onValueChange={(next) => {
+        if (next) onChange(next.value);
+      }}
+      itemToStringLabel={(item) => item.label}
+      isItemEqualToValue={(a, b) => a.value === b.value}
+      filter={(item, query) => {
+        const q = query.trim().toLowerCase();
+        if (!q) return true;
+        return [item.label, item.hint, item.value]
+          .filter(Boolean)
+          .some((field) => String(field).toLowerCase().includes(q));
+      }}
+    >
+      <div className={cn("filter-select", toneClass)}>
+        <label htmlFor={inputId} className="layer-heading mb-2 block">
+          {label}
+        </label>
+        <Combobox.InputGroup className="filter-select__trigger relative">
+          {selected?.icon ? (
+            <span className="filter-select__icon absolute left-4 top-1/2 -translate-y-1/2" aria-hidden>
+              {selected.icon}
+            </span>
+          ) : null}
+          <Combobox.Input
+            id={inputId}
+            placeholder={placeholder}
+            className={cn(
+              "filter-select__label h-full w-full min-w-0 border-0 bg-transparent py-[0.82rem] pr-10 text-left outline-none placeholder:text-[var(--muted-2)]",
+              selected?.icon ? "pl-10" : "pl-4",
+            )}
+          />
+          <Combobox.Trigger
+            className="filter-select__chevron absolute inset-y-0 right-0 flex items-center border-0 bg-transparent px-3"
+            aria-label={`Open ${label}`}
+          >
+            ▾
+          </Combobox.Trigger>
+        </Combobox.InputGroup>
+
+        <Combobox.Portal>
+          <Combobox.Positioner className="outline-none" sideOffset={8}>
+            <Combobox.Popup className="filter-select__menu relative z-50 w-[var(--anchor-width)] max-w-[var(--available-width)] outline-none">
+              <Combobox.Empty>
+                <div className="px-3 py-3 font-sans text-sm text-[var(--muted-2)]">No matches.</div>
+              </Combobox.Empty>
+              <Combobox.List className="max-h-[min(16.5rem,var(--available-height))] overflow-y-auto overscroll-contain outline-none">
+                {(item: FilterSelectOption) => (
+                  <Combobox.Item
+                    key={item.value}
+                    value={item}
+                    className="filter-select__option data-highlighted:border-[rgb(240_201_121_/_0.14)] data-highlighted:bg-[rgb(240_201_121_/_0.07)] data-selected:border-[rgb(240_201_121_/_0.34)] data-selected:bg-[rgb(240_201_121_/_0.1)]"
+                  >
+                    <span className="filter-select__option-label">
+                      {item.icon ? <span className="filter-select__option-icon">{item.icon}</span> : null}
+                      <span className="filter-select__option-text">{item.label}</span>
+                    </span>
+                    {item.hint ? <span className="filter-select__option-hint">{item.hint}</span> : null}
+                  </Combobox.Item>
+                )}
+              </Combobox.List>
+            </Combobox.Popup>
+          </Combobox.Positioner>
+        </Combobox.Portal>
+      </div>
+    </Combobox.Root>
   );
 }

@@ -404,6 +404,22 @@ button {
   transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
 
+/* Combobox InputGroup uses the same chrome; padding lives on the input */
+.filter-select__trigger:has(input) {
+  padding: 0;
+}
+
+.filter-select__trigger input {
+  color: inherit;
+  font: inherit;
+}
+
+.filter-select[data-popup-open],
+.filter-select:has([data-popup-open]),
+.filter-select:has([data-open]) {
+  z-index: 50;
+}
+
 .filter-select--lapis .filter-select__trigger {
   border-color: rgb(50 72 103 / 0.45);
   background:

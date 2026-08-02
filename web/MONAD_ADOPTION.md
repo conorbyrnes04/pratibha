@@ -69,7 +69,7 @@ Migrate low-risk surfaces first:
 ### Phase 3 — Reading & study
 - [x] Passage: `Collapsible` for collapsed layers; keep Original / IAST / script fonts
 - [x] Glossary + Lexicon study: kit `Input` / `Button` + existing flip/SRS (tradition chips keep `.glossary-filter`)
-- [ ] Library: Combobox/Command for filters; keep collection art
+- [x] Library: `FilterSelect` → Base UI Combobox (searchable); keep collection art + gold/lapis chrome
 
 ### Phase 4 — Learn / brand (last)
 - Paths, threads, yantra — mostly stay custom
