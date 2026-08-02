@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { askChatStream, ChatApiError, getCollections, getVerse, getVerses } from "@/lib/api";
+import { askChatStream, ChatApiError, getCollections, getDaily, getVerse, getVerses } from "@/lib/api";
 import { useAuth } from "@/components/AuthProvider";
 import { pushJournalNote } from "@/lib/journalCloud";
 import { saveChatResponse } from "@/lib/journalStorage";
@@ -23,6 +23,15 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 type ChatMessage = { role: "user" | "assistant"; content: string };
+
+type ChatSuggestion = {
+  id: string;
+  label: string;
+  /** Pin today's live daily verse before filling the prompt. */
+  pinDaily?: boolean;
+  mode?: ChatMode;
+  prompt: string;
+};
 
 function sourcePassageLabel(metadata?: Record<string, unknown>): string {
   if (!metadata) return "";
@@ -164,20 +173,94 @@ export default function ChatPage() {
     [],
   );
 
-  const suggestions = useMemo(() => {
+  const suggestions = useMemo<ChatSuggestion[]>(() => {
     if (pinnedVerse) {
       return [
-        "Explain this passage in plain language.",
-        "What is the practical instruction here?",
-        "Give me one reflection question and one short practice.",
+        {
+          id: "explain",
+          label: "Explain this passage in plain language.",
+          mode: "explain",
+          prompt: "Explain this passage in plain language.",
+        },
+        {
+          id: "practice-here",
+          label: "What is the practical instruction here?",
+          mode: "practice",
+          prompt: "What is the practical instruction in this passage?",
+        },
+        {
+          id: "reflect",
+          label: "Give me one reflection question and one short practice.",
+          mode: "practice",
+          prompt: "Give me one reflection question and one short practice from this passage.",
+        },
       ];
     }
     return [
-      "What is the practical instruction for today?",
-      "Compare two traditions on desire, discipline, and freedom.",
-      "Give me one reflection question and one short practice.",
+      {
+        id: "today-practice",
+        label: "What is the practical instruction for today?",
+        pinDaily: true,
+        mode: "practice",
+        prompt: "What is the practical instruction in today's passage?",
+      },
+      {
+        id: "compare",
+        label: "Compare two traditions on desire, discipline, and freedom.",
+        mode: "compare",
+        prompt: "Compare two traditions on desire, discipline, and freedom.",
+      },
+      {
+        id: "reflect",
+        label: "Give me one reflection question and one short practice.",
+        mode: "practice",
+        prompt: "Give me one reflection question and one short practice.",
+      },
     ];
   }, [pinnedVerse]);
+
+  async function applySuggestion(suggestion: ChatSuggestion) {
+    if (busy || dailyCapHit) return;
+
+    let verse = pinnedVerse;
+    if (suggestion.pinDaily) {
+      const daily = await getDaily("rich");
+      if (!daily) {
+        setQ(suggestion.prompt);
+        return;
+      }
+      verse = daily;
+      setPinnedVerse(daily);
+      setCompareMode(false);
+      // Keep the URL shareable: chat always grounded in today's live verse.
+      const url = new URL(window.location.href);
+      url.searchParams.set("verse_id", daily._id);
+      url.searchParams.set("mode", suggestion.mode || "practice");
+      window.history.replaceState({}, "", url.toString());
+    }
+
+    if (suggestion.mode) {
+      setChatMode(suggestion.mode);
+      if (suggestion.mode === "compare") setCompareMode(true);
+      else if (suggestion.pinDaily) setCompareMode(false);
+    }
+
+    if (verse && (suggestion.pinDaily || suggestion.id === "practice-here")) {
+      const title = displayPassageTitle(verse);
+      const source = displayPassageSourceLine({
+        ...verse,
+        collection: displayCollectionName(verse.collection) || verse.collection,
+      });
+      setQ(
+        suggestion.pinDaily
+          ? `What is the practical instruction in today's passage (${title}${source ? ` · ${source}` : ""})?`
+          : suggestion.prompt,
+      );
+      return;
+    }
+
+    setQ(suggestion.prompt);
+  }
 
   function applyPreset(presetId: string) {
     const preset = COMPARE_PRESETS.find((item) => item.id === presetId);
@@ -410,9 +493,13 @@ export default function ChatPage() {
           {showComposerSuggestions ? (
             <ul className="chat-composer__suggestions" aria-label="Suggested questions">
               {suggestions.map((s) => (
-                <li key={s}>
-                  <button type="button" className="chat-composer__suggestion" onClick={() => setQ(s)}>
-                    {s}
+                <li key={s.id}>
+                  <button
+                    type="button"
+                    className="chat-composer__suggestion"
+                    onClick={() => void applySuggestion(s)}
+                  >
+                    {s.label}
                   </button>
                 </li>
               ))}
