@@ -6,7 +6,6 @@ import { displayPassageSourceLine, displayPassageTitle } from "@/lib/passageTitl
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
 import { LayerBlock } from "@/components/LayerBlock";
 import { ReadingShell } from "@/components/ReadingShell";
-import { Separator } from "@/components/ui/separator";
 import { buttonVariants } from "@/components/ui/button";
 
 /**
@@ -48,18 +47,15 @@ export function VerseOfTheDay({ item, preview = false }: { item: VerseItem; prev
         ) : (
           <section className="passage-layer passage-layer--translation">
             <h2 className="passage-layer__label">Translation</h2>
-            <p className="reading-prose mt-4">{passagePreview(item)}</p>
+            <p className="reading-prose">{passagePreview(item)}</p>
           </section>
         )}
 
         {practice ? (
-          <>
-            <Separator className="mt-8 max-w-[var(--reading-measure)] bg-[rgb(240_201_121_/_0.16)]" />
-            <section className="passage-practice--plain">
-              <h2 className="passage-layer__label">Practice</h2>
-              <p className="passage-practice__body">{practice}</p>
-            </section>
-          </>
+          <section className="passage-practice--plain">
+            <h2 className="passage-layer__label">Practice</h2>
+            <p className="passage-practice__body">{practice}</p>
+          </section>
         ) : null}
 
         {preview ? (

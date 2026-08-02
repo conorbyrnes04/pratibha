@@ -259,13 +259,10 @@ export default function VerseDetailPage() {
         )}
 
         {practice ? (
-          <>
-            <Separator className="mt-8 max-w-[var(--reading-measure)] bg-[rgb(240_201_121_/_0.16)]" />
-            <section className="passage-practice--plain">
-              <h2 className="passage-layer__label">Practice</h2>
-              <p className="passage-practice__body">{practice}</p>
-            </section>
-          </>
+          <section className="passage-practice--plain">
+            <h2 className="passage-layer__label">Practice</h2>
+            <p className="passage-practice__body">{practice}</p>
+          </section>
         ) : null}
 
         {commentaryBody ? (
