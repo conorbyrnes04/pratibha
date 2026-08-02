@@ -37,6 +37,15 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 function actionLabel(chatMode?: string): string {
   if (chatMode === "practice") return "Practice with it";
@@ -83,6 +92,7 @@ export default function LearnPage() {
   const [activeThreadId, setActiveThreadId] = useState<string | null>(null);
   const [activeBeadId, setActiveBeadId] = useState<string | null>(null);
   const [threadCeremonyId, setThreadCeremonyId] = useState<string | null>(null);
+  const [resetOpen, setResetOpen] = useState(false);
   const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const stepRefs = useRef<Record<string, HTMLElement | null>>({});
   const pathSectionRef = useRef<HTMLElement | null>(null);
@@ -519,21 +529,16 @@ export default function LearnPage() {
                   >
                     Import progress
                   </Button>
-                  <button
+                  <Button
                     type="button"
                     disabled={!hydrated}
-                    onClick={() => {
-                      if (
-                        typeof window !== "undefined" &&
-                        window.confirm(`Reset progress on “${track.title}”? This cannot be undone.`)
-                      ) {
-                        resetTrack(track.id, track);
-                      }
-                    }}
-                    className={cn(buttonVariants({ variant: "secondary", size: "sm" }), "disabled:opacity-40")}
+                    variant="secondary"
+                    size="sm"
+                    className="disabled:opacity-40"
+                    onClick={() => setResetOpen(true)}
                   >
                     Reset path
-                  </button>
+                  </Button>
                   <input
                     ref={fileInputRef}
                     type="file"
@@ -570,12 +575,13 @@ export default function LearnPage() {
                   <span>Progress</span>
                   <span>{hydrated ? `${completed}/${track.steps.length} complete` : "…"}</span>
                 </div>
-                <div className="mt-2 h-3 rounded-full bg-white/10">
-                  <div
-                    className={`h-3 rounded-full bg-amber-300 transition-[width] duration-300 ${hydrated ? "" : "animate-pulse"}`}
-                    style={{ width: hydrated ? `${pct}%` : "12%" }}
-                  />
-                </div>
+                <Progress
+                  value={hydrated ? pct : 12}
+                  className={cn(
+                    "mt-2 w-full gap-0 [&_[data-slot=progress-track]]:h-3 [&_[data-slot=progress-track]]:bg-white/10 [&_[data-slot=progress-indicator]]:bg-amber-300",
+                    !hydrated && "[&_[data-slot=progress-indicator]]:animate-pulse",
+                  )}
+                />
               </div>
             ) : null}
 
@@ -653,21 +659,25 @@ export default function LearnPage() {
                             : `Step ${idx + 1} ${current ? "• next up" : done ? "• complete" : ""}`}
                         </p>
                         {threadMode ? null : done ? (
-                          <button
+                          <Button
                             type="button"
+                            variant="ghost"
+                            size="sm"
                             onClick={() => toggle(track.id, s.id)}
-                            className="rounded-full border border-emerald-300/50 px-3 py-1 font-sans text-xs text-emerald-200"
+                            className="rounded-full border border-emerald-300/50 text-emerald-200 hover:bg-emerald-300/10 hover:text-emerald-100"
                           >
                             Done · reopen
-                          </button>
+                          </Button>
                         ) : (
-                          <button
+                          <Button
                             type="button"
+                            variant="ghost"
+                            size="sm"
                             onClick={() => openStep(s.id, isOpen)}
-                            className="rounded-full border border-amber-200/30 px-3 py-1 font-sans text-xs text-amber-100"
+                            className="rounded-full border border-amber-200/30 text-amber-100 hover:bg-amber-200/10"
                           >
                             {isOpen ? "Collapse" : "Open step"}
-                          </button>
+                          </Button>
                         )}
                       </div>
 
@@ -789,28 +799,28 @@ export default function LearnPage() {
                           {threadMode && done ? (
                             <div className="flex flex-wrap gap-2">
                               {!isLastBead ? (
-                                <button
+                                <Button
                                   type="button"
+                                  size="sm"
                                   onClick={() => {
                                     if (!activeThread || !activeBeadId) return;
                                     const idx = beadIndex(activeThread, activeBeadId);
                                     const next = activeThread.steps[idx + 1];
                                     if (next) openBead(activeThread.id, next.id);
                                   }}
-                                  className={buttonVariants({ size: "sm" })}
                                 >
                                   Next bead →
-                                </button>
+                                </Button>
                               ) : (
-                                <button
+                                <Button
                                   type="button"
+                                  size="sm"
                                   onClick={() => {
                                     if (activeThreadId) setThreadCeremonyId(activeThreadId);
                                   }}
-                                  className={buttonVariants({ size: "sm" })}
                                 >
                                   Finish thread
-                                </button>
+                                </Button>
                               )}
                             </div>
                           ) : null}
@@ -829,25 +839,23 @@ export default function LearnPage() {
 
                           {!threadMode ? (
                             <div className="flex items-center justify-between gap-3 border-t border-white/10 pt-4">
-                              <button
+                              <Button
                                 type="button"
+                                variant="secondary"
+                                size="sm"
                                 disabled={idx <= 0}
+                                className="disabled:opacity-40"
                                 onClick={() => goToStepIndex(idx - 1)}
-                                className={cn(buttonVariants({ variant: "secondary", size: "sm" }), "disabled:opacity-40")}
                               >
                                 ← Previous
-                              </button>
+                              </Button>
                               <span className="font-sans text-[11px] uppercase tracking-[0.16em] text-stone-400">
                                 Gate {idx + 1} / {track.steps.length}
                               </span>
                               {idx < track.steps.length - 1 ? (
-                                <button
-                                  type="button"
-                                  onClick={() => goToStepIndex(idx + 1)}
-                                  className={buttonVariants({ size: "sm" })}
-                                >
+                                <Button type="button" size="sm" onClick={() => goToStepIndex(idx + 1)}>
                                   {done ? "Next gate →" : "Skip to next →"}
-                                </button>
+                                </Button>
                               ) : (
                                 <span className="font-sans text-[11px] uppercase tracking-[0.16em] text-amber-200/70">
                                   Path end
@@ -874,6 +882,31 @@ export default function LearnPage() {
         onOpenBead={openBead}
       />
       </div>
+
+      <Dialog open={resetOpen} onOpenChange={setResetOpen}>
+        <DialogContent className="border border-amber-200/20 bg-[#171421] sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-xl text-amber-100">Reset path progress?</DialogTitle>
+            <DialogDescription className="soft text-base leading-relaxed">
+              Clear all gates on “{track.title}”. This cannot be undone.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="border-amber-200/10 bg-transparent">
+            <Button type="button" variant="secondary" onClick={() => setResetOpen(false)}>
+              Cancel
+            </Button>
+            <Button
+              type="button"
+              onClick={() => {
+                resetTrack(track.id, track);
+                setResetOpen(false);
+              }}
+            >
+              Reset path
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </main>
   );
 }

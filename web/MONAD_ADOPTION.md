@@ -72,8 +72,10 @@ Migrate low-risk surfaces first:
 - [x] Library: `FilterSelect` → Base UI Combobox (searchable); keep collection art + gold/lapis chrome
 
 ### Phase 4 — Learn / brand (last)
-- Paths, threads, yantra — mostly stay custom
-- Optional light theme; optional `/dev/system` showcase (skinned, not stock Plex)
+- [x] Paths, threads, yantra — stay custom (`PathTree`, `ThreadsConstellation`, `YantraBreath`)
+- [x] Learn chrome → kit: gate `Checkbox`, `Progress`, reset `Dialog`, thread bar / step nav `Button`
+- [x] `/dev/system` showcase (skinned Pratibha tokens — not stock Plex)
+- [ ] Optional light theme (deferred; default remains dark)
 
 ### Phase 5 — Cleanup
 - Remove dead CSS once unused

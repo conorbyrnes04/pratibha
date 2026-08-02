@@ -7,6 +7,7 @@ import {
   type LearningThread,
   type ThreadStepRef,
 } from "@/lib/learningThreads";
+import { Button } from "@/components/ui/button";
 
 type ThreadContextBarProps = {
   threadId: string;
@@ -81,36 +82,29 @@ export function ThreadContextBar({
         </div>
 
         <div className="flex flex-wrap items-center gap-2 sm:shrink-0">
-          <button
-            type="button"
-            onClick={onBackToThread}
-            className="rounded-full border border-white/12 px-3 py-1.5 font-sans text-[10px] uppercase tracking-[0.14em] text-amber-100/80 transition hover:border-amber-200/35"
-          >
+          <Button type="button" variant="secondary" size="sm" onClick={onBackToThread}>
             Thread map
-          </button>
-          <button
+          </Button>
+          <Button
             type="button"
+            variant="secondary"
+            size="sm"
             disabled={!prev}
             onClick={() => prev && onOpenBead(threadId, prev.id)}
-            className="rounded-full border border-amber-200/25 px-3 py-1.5 font-sans text-[10px] uppercase tracking-[0.14em] text-amber-100 disabled:opacity-30"
           >
             ← Prev
-          </button>
-          <button
+          </Button>
+          <Button
             type="button"
+            size="sm"
             disabled={!next}
             onClick={() => next && onOpenBead(threadId, next.id)}
-            className="rounded-full border border-amber-200/40 bg-amber-200/10 px-3 py-1.5 font-sans text-[10px] uppercase tracking-[0.14em] text-amber-100 disabled:opacity-30"
           >
             {next ? "Next bead →" : "Last bead"}
-          </button>
-          <button
-            type="button"
-            onClick={onLeaveThread}
-            className="rounded-full border border-white/10 px-3 py-1.5 font-sans text-[10px] uppercase tracking-[0.14em] text-stone-400 transition hover:border-white/20 hover:text-stone-300"
-          >
+          </Button>
+          <Button type="button" variant="ghost" size="sm" onClick={onLeaveThread}>
             Leave thread
-          </button>
+          </Button>
         </div>
       </div>
     </div>

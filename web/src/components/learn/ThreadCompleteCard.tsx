@@ -105,14 +105,16 @@ export function ThreadCompleteCard({
             <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-stone-500">Trace another</p>
             <div className="mt-3 flex flex-wrap gap-2">
               {others.map((t) => (
-                <button
+                <Button
                   key={t.id}
                   type="button"
+                  variant="ghost"
+                  size="sm"
                   onClick={() => onTraceAnother(t.id)}
-                  className="rounded-full border border-white/12 px-3 py-1.5 font-sans text-[10px] uppercase tracking-[0.12em] text-amber-200/75 transition hover:border-amber-200/35 hover:text-amber-100"
+                  className="rounded-full border border-white/12 px-3 font-sans text-[10px] uppercase tracking-[0.12em] text-amber-200/75 hover:border-amber-200/35 hover:bg-amber-200/5 hover:text-amber-100"
                 >
                   {t.glyph} {t.title}
-                </button>
+                </Button>
               ))}
             </div>
           </div>
