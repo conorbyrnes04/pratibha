@@ -38,6 +38,8 @@ env/
 ENV/
 env.bak/
 venv.bak/
+*.pre-monad.bak
+web/src/app/globals.css.pre-monad.bak
 
 # IDE
 .vscode/

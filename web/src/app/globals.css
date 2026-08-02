@@ -1,10 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif+Tibetan:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Monad graft: map kit tokens → Pratibha manuscript palette (dark-first). */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted-token);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent-token);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  /* Reading scale (ported from former tailwind.config.ts) */
+  --text-xs: 0.875rem;
+  --text-xs--line-height: 1.4;
+  --text-sm: 1.05rem;
+  --text-sm--line-height: 1.55;
+  --text-base: 1.15rem;
+  --text-base--line-height: 1.65;
+  --text-lg: 1.3rem;
+  --text-lg--line-height: 1.7;
+  --text-xl: 1.45rem;
+  --text-xl--line-height: 1.65;
+}
 
 :root {
+  /* Legacy Pratibha tokens (manuscript CSS) */
   --background: #090912;
   --background-warm: #13101a;
   --surface: #171421;
@@ -18,6 +60,25 @@
   --vermillion: #b85b3d;
   --lapis: #324867;
   --line: rgb(240 201 121 / 0.18);
+
+  /* shadcn / Monad semantic slots → Pratibha */
+  --card: #171421;
+  --card-foreground: #f6efe4;
+  --popover: #211a2a;
+  --popover-foreground: #f6efe4;
+  --primary: #d8a84a;
+  --primary-foreground: #090912;
+  --secondary: #2a211c;
+  --secondary-foreground: #f6efe4;
+  --muted-token: #211a2a;
+  --muted-foreground: #a89882;
+  --accent-token: #324867;
+  --accent-foreground: #f6efe4;
+  --destructive: #b85b3d;
+  --border: rgb(240 201 121 / 0.18);
+  --input: rgb(240 201 121 / 0.22);
+  --ring: #f0c979;
+  --radius: 0.625rem;
 }
 
 * {
