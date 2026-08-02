@@ -126,9 +126,12 @@ def _location_from_sutra_id(item: dict[str, Any]) -> str:
     m = re.match(r"^ASG_(\d+)_(\d+)$", sid, re.I)
     if m:
         return f"Verse {int(m.group(1))}.{int(m.group(2))}"
-    m = re.match(r"^YS_(\d+)_(\d+)", sid, re.I)
+    m = re.match(r"^YS_(\d+)_(\d+)(?:_(\d+))?$", sid, re.I)
     if m:
-        return f"{int(m.group(1))}.{int(m.group(2))}"
+        pada, a = int(m.group(1)), int(m.group(2))
+        b = int(m.group(3)) if m.group(3) else None
+        # Clustered units span several sūtras — show the full range (e.g. 2.4–2.6).
+        return f"{pada}.{a}–{pada}.{b}" if b is not None else f"{pada}.{a}"
     m = re.match(r"^AN_(\d+)_(\d+)$", sid, re.I)
     if m:
         return f"{int(m.group(1))}.{int(m.group(2))}"
