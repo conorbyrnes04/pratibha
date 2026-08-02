@@ -9,7 +9,11 @@ import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool } from "@/lib/collectionImages";
-import { displayPassageTitle, sortPassagesInText } from "@/lib/passageTitles";
+import {
+  displayPassageLocation,
+  displayPassageTitle,
+  sortPassagesInText,
+} from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
 import { ReadingShell } from "@/components/ReadingShell";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
@@ -191,6 +195,7 @@ export default function VerseDetailPage() {
   const commentaryNeedsExpand =
     Boolean(commentaryBody) &&
     stripMarkdown(commentaryBody).trim().length > commentaryPreview.replace(/…$/, "").length + 8;
+  const passageLocation = displayPassageLocation(item);
 
   return (
     <main className="page-shell page-shell--reading">
@@ -218,7 +223,7 @@ export default function VerseDetailPage() {
         <header className="passage-reading__header">
           <p className="passage-reading__meta">
             {displayCollectionName(item.collection) || "Pratibha"}
-            {item.section ? ` · ${item.section}` : ""}
+            {passageLocation ? ` · ${passageLocation}` : ""}
             {siblings.length > 1 && siblingIndex >= 0
               ? ` · ${siblingIndex + 1} of ${siblings.length}`
               : ""}
@@ -479,7 +484,7 @@ export default function VerseDetailPage() {
                     <p className="passage-related__title">{displayPassageTitle(r)}</p>
                     <p className="passage-related__meta">
                       {displayCollectionName(r.collection)}
-                      {r.section ? ` · ${r.section}` : ""}
+                      {displayPassageLocation(r) ? ` · ${displayPassageLocation(r)}` : ""}
                     </p>
                   </Link>
                 </li>

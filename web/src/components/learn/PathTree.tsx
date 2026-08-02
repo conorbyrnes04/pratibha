@@ -358,7 +358,7 @@ export function PathTree({
     focus.level === "path" ? trackById[focus.trackId] : undefined;
 
   return (
-    <div className="path-tree relative overflow-hidden rounded-[2rem] border border-amber-200/12 bg-black/20 p-5 sm:p-7">
+    <div className="path-tree relative overflow-hidden border-t border-[rgb(240_201_121_/_0.14)] pt-5 sm:pt-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <TreeTrail
           focus={focus}

@@ -49,33 +49,28 @@ export function ThreadContextBar({
 
   return (
     <div
-      className="thread-context-bar sticky top-16 z-30 mb-4 overflow-hidden rounded-2xl border border-amber-200/30 bg-[#0b0b14]/92 shadow-[0_12px_40px_rgb(0_0_0_/_0.45)] backdrop-blur-md"
+      className="thread-context-bar sticky top-16 z-30 mb-5 border-b border-[rgb(240_201_121_/_0.18)] bg-[rgb(11_11_20_/_0.92)] py-3 backdrop-blur-md"
       style={{ ["--thread-hue" as string]: hue }}
       role="region"
       aria-label={`Tracing thread: ${thread.title}`}
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-40"
-        style={{
-          background: `linear-gradient(105deg, hsl(${hue} 55% 40% / 0.18), transparent 55%)`,
-        }}
-        aria-hidden
-      />
-      <div className="relative flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:p-4">
+      <div className="relative flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-amber-200/30 bg-amber-100/5 text-sm text-amber-100">
+            <span className="text-sm text-amber-100/80" aria-hidden>
               {thread.glyph}
             </span>
-            <p className="font-sans text-[10px] uppercase tracking-[0.18em] text-amber-200/70">
-              Tracing thread · bead {idx + 1} of {total}
+            <p className="passage-reading__meta !mb-0">
+              Tracing · bead {idx + 1} of {total}
             </p>
             <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-stone-500">
-              {lit}/{total} lit via path gates
+              {lit}/{total} lit
             </span>
           </div>
-          <h3 className="mt-1 truncate text-xl leading-none text-amber-100">{thread.title}</h3>
-          <p className="soft mt-1.5 line-clamp-2 text-sm leading-relaxed">{bead.insight}</p>
+          <h3 className="mt-1 truncate text-lg font-medium leading-tight text-[rgb(250_237_205)]">
+            {thread.title}
+          </h3>
+          <p className="soft mt-1 line-clamp-2 text-sm leading-relaxed">{bead.insight}</p>
           <p className="mt-1 font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/45">
             {bead.tradition}
           </p>

@@ -86,13 +86,12 @@ export default function GlossaryPage() {
   }, [items, q, tradition]);
 
   return (
-    <main className="page-shell max-w-3xl">
-      <header>
-        <p className="eyebrow">Shared lexicon</p>
-        <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">
-          Glossary
-        </h1>
-        <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
+    <main className="page-shell page-shell--reading">
+      <header className="library-header">
+        <div className="library-header__body">
+        <p className="passage-reading__meta">Shared lexicon</p>
+        <h1 className="library-header__title">Glossary</h1>
+        <p className="library-header__lede">
           Terms that do philosophical work across the manuscript — senses by tradition, not a flat dictionary.
         </p>
         <p className="mt-5">
@@ -100,6 +99,7 @@ export default function GlossaryPage() {
             Study by language →
           </Link>
         </p>
+        </div>
       </header>
 
       <div className="mt-8 space-y-4">

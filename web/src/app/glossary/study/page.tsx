@@ -286,25 +286,22 @@ export default function GlossaryStudyPage() {
   }, [payload, cards, srs]);
 
   return (
-    <main className="page-shell max-w-3xl">
-      <p className="mb-6">
-        <Link
-          href="/glossary"
-          className="font-sans text-sm text-amber-200/80 underline decoration-amber-200/25 underline-offset-4 transition hover:text-amber-100 hover:decoration-amber-200/60"
-        >
-          ← Glossary
-        </Link>
-      </p>
+    <main className="page-shell page-shell--reading">
+      <nav className="passage-reading__crumb mb-6" aria-label="Breadcrumb">
+        <Link href="/glossary">Glossary</Link>
+      </nav>
 
       {phase === "pick" ? (
         <>
-          <header className="lex-study-hero">
-            <p className="eyebrow">Sacred lexicon</p>
-            <h1 className="lex-study-hero__title">Build the terms</h1>
-            <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
+          <header className="library-header">
+            <div className="library-header__body">
+            <p className="passage-reading__meta">Sacred lexicon</p>
+            <h1 className="library-header__title">Build the terms</h1>
+            <p className="library-header__lede">
               Decks by language. Cards by sense. Recognize the script, catch the trap, produce the form —
               then return to the passage that holds it.
             </p>
+            </div>
           </header>
 
           <div className="ornament my-8" />

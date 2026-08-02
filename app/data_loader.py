@@ -107,22 +107,56 @@ def _humanize_collection(v: str) -> str:
     return s.title() if s == s.lower() else s
 
 
-_UNIT_TYPE_SECTIONS = frozenset({"chapter_section", "teaching_passage", "sutra", "verse", "chapter_summary"})
+_UNIT_TYPE_SECTIONS = frozenset({"chapter_section", "teaching_passage", "sutra", "verse", "chapter_summary", "chapter"})
+
+
+def _location_from_sutra_id(item: dict[str, Any]) -> str:
+    """Derive a reader-facing verse/chapter label from sutra_id / _id patterns."""
+    sid = _as_text(item.get("sutra_id") or item.get("source_id") or item.get("_id") or item.get("unit_id"))
+    if not sid:
+        return ""
+    m = re.match(r"^TTC(?:_MD)?_(\d+)$", sid, re.I)
+    if m:
+        return f"Chapter {int(m.group(1))}"
+    m = re.match(r"^BG_(\d+)_(\d+)(?:_(\d+))?$", sid, re.I)
+    if m:
+        ch, a = int(m.group(1)), int(m.group(2))
+        b = int(m.group(3)) if m.group(3) else None
+        return f"{ch}.{a}–{b}" if b is not None else f"{ch}.{a}"
+    m = re.match(r"^ASG_(\d+)_(\d+)$", sid, re.I)
+    if m:
+        return f"Verse {int(m.group(1))}.{int(m.group(2))}"
+    m = re.match(r"^YS_(\d+)_(\d+)", sid, re.I)
+    if m:
+        return f"{int(m.group(1))}.{int(m.group(2))}"
+    m = re.match(r"^AN_(\d+)_(\d+)$", sid, re.I)
+    if m:
+        return f"{int(m.group(1))}.{int(m.group(2))}"
+    return ""
 
 
 def _resolve_section(item: dict[str, Any]) -> str:
-    """Prefer explicit section, then provenance fascicle/chapter label, then unit_type."""
+    """Prefer numbered citation, then explicit section, then provenance, then unit_type."""
+    from_id = _location_from_sutra_id(item)
     direct = _as_text(item.get("section"))
     if direct:
         token = direct.lower().replace(" ", "_")
-        return _pretty_section(direct) if token in _UNIT_TYPE_SECTIONS else " ".join(direct.split()).strip()
+        if token in _UNIT_TYPE_SECTIONS:
+            # Schema token like chapter_section — never show raw; prefer numbered id.
+            return from_id or _pretty_section(direct)
+        # chapter_01 → Chapter 1 when we lack a finer verse id
+        if token.startswith("chapter_") and token[8:].isdigit():
+            return from_id or f"Chapter {int(token[8:])}"
+        return " ".join(direct.split()).strip()
+    if from_id:
+        return from_id
     provenance = item.get("provenance")
     if isinstance(provenance, dict):
         prov = _as_text(provenance.get("section"))
         if prov:
             return " ".join(prov.split()).strip()
     unit_type = _as_text(item.get("unit_type"))
-    return _pretty_section(unit_type) if unit_type else ""
+    return from_id or (_pretty_section(unit_type) if unit_type else "")
 
 
 def _pretty_section(v: str) -> str:

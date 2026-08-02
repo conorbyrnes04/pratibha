@@ -4,10 +4,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { getDaily } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
-import { displayPassageTitle } from "@/lib/passageTitles";
-import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
+import { generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop } from "@/components/ArtImage";
-import { BrandMark } from "@/components/BrandMark";
 import { VerseOfTheDay } from "@/components/VerseOfTheDay";
 import { InkGlyph } from "@/components/InkGlyph";
 import { Section } from "@/components/ui/Section";
@@ -52,39 +50,33 @@ export default function Home() {
 
   if (configured && !loading && !user) {
     return (
-      <main className="page-shell">
+      <main className="page-shell page-shell--reading">
         <div className="section-stack">
-          <section className="manuscript-card overflow-hidden p-6 sm:p-10">
-            <ArtBackdrop srcs={generatedArtPool("bg-hero")} variant="hero" priority />
-            <div className="relative z-10 max-w-2xl">
-              <p className="eyebrow">Pratibha</p>
-              <h1 className="mt-4 text-4xl font-semibold leading-none text-amber-100 sm:text-5xl">
-                Living Manuscript of World Wisdom
-              </h1>
-              <p className="soft mt-5 max-w-xl font-sans text-base leading-relaxed sm:text-lg">
+          <header className="library-header">
+            <div className="library-header__atmosphere" aria-hidden>
+              <ArtBackdrop srcs={generatedArtPool("bg-hero")} variant="subtle" opacity={0.12} priority />
+            </div>
+            <div className="library-header__body">
+              <p className="passage-reading__meta">Pratibha</p>
+              <h1 className="library-header__title">Living Manuscript of World Wisdom</h1>
+              <p className="library-header__lede">
                 Layered canonical texts — original, translation, commentary, and practice —
-                across traditions, with a source-grounded study companion.
-              </p>
-              <p className="soft mt-6 font-sans text-sm">
-                Here is today&apos;s passage, in its own hand. The rest of the manuscript —
-                Library, Paths, Study Chat, and Journal — opens when you sign in.
+                across traditions. Here is today&apos;s passage; the rest opens when you sign in.
               </p>
             </div>
-          </section>
+          </header>
 
           {daily ? (
             <VerseOfTheDay item={daily} preview />
           ) : (
-            <section className="manuscript-card overflow-hidden p-6 sm:p-10">
-              <div className="relative z-10 flex flex-wrap gap-3">
-                <Link href="/login" className={buttonVariants({ size: "lg" })}>
-                  Sign in to enter
-                </Link>
-                <Link href="/login?mode=signup" className={buttonVariants({ variant: "secondary", size: "lg" })}>
-                  Create an account
-                </Link>
-              </div>
-            </section>
+            <div className="passage-reading__nav">
+              <Link href="/login" className={buttonVariants()}>
+                Sign in to enter
+              </Link>
+              <Link href="/login?mode=signup" className={buttonVariants({ variant: "secondary" })}>
+                Create an account
+              </Link>
+            </div>
           )}
         </div>
       </main>
@@ -93,49 +85,36 @@ export default function Home() {
 
   if (loading || (signedIn && dailyLoading)) {
     return (
-      <main className="page-shell">
-        <section id="daily" className="manuscript-card scroll-mt-24 overflow-hidden p-6 sm:p-10">
-          <ArtBackdrop srcs={generatedArtPool("bg-hero")} variant="hero" priority />
-          <div className="relative z-10 flex min-h-[52vh] flex-col items-start justify-center">
-            <BrandMark size="lg" className="opacity-90" />
-            <p className="eyebrow mt-6">Pratibha · Today</p>
-            <h1 className="mt-4 text-3xl font-semibold leading-none text-amber-100 sm:text-4xl">
-              Opening today&apos;s page…
-            </h1>
-            <p className="soft mt-4 max-w-md font-sans text-base leading-relaxed">
-              One passage. Its layers. One practice line.
-            </p>
-          </div>
-        </section>
+      <main className="page-shell page-shell--reading">
+        <header className="passage-reading__header">
+          <p className="passage-reading__meta">Today</p>
+          <h1 className="passage-reading__title">Opening today&apos;s page…</h1>
+          <p className="passage-reading__deck">One passage. Its layers. One practice line.</p>
+        </header>
       </main>
     );
   }
 
-  // Only the null-daily fallback card needs these; the populated card renders
-  // through <VerseOfTheDay>, which derives its own title/art/links.
-  const dailyTitle = daily ? displayPassageTitle(daily) : "A passage is waiting";
-  const dailyArtPool = daily?.collection ? collectionArtPool(daily.collection) : generatedArtPool("bg-hero");
   const readHref = daily ? `/read/${encodeURIComponent(daily._id)}` : "/read";
 
   return (
-    <main className="page-shell">
+    <main className="page-shell page-shell--reading">
       <div className="section-stack">
         {daily ? (
           <VerseOfTheDay item={daily} />
         ) : (
-          <section id="daily" className="manuscript-card scroll-mt-24 overflow-hidden p-6 sm:p-8">
-            <ArtBackdrop srcs={dailyArtPool} variant="hero" priority />
-            <div className="relative z-10">
-              <p className="eyebrow">Pratibha · Today&apos;s passage</p>
-              <h1 className="mt-4 text-3xl font-semibold leading-none text-amber-100 sm:text-4xl">{dailyTitle}</h1>
-              <blockquote className="mt-6 max-w-3xl text-2xl leading-snug text-stone-100">
+          <section id="daily" className="scroll-mt-24">
+            <header className="passage-reading__header">
+              <p className="passage-reading__meta">Today&apos;s passage</p>
+              <h1 className="passage-reading__title">A passage is waiting</h1>
+              <p className="passage-reading__deck">
                 Open a passage, let it read you back, then practice one concrete shift.
-              </blockquote>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link href={readHref} className={buttonVariants({ size: "lg" })}>
-                  Open the Library
-                </Link>
-              </div>
+              </p>
+            </header>
+            <div className="passage-reading__nav">
+              <Link href={readHref} className={buttonVariants()}>
+                Open the Library
+              </Link>
             </div>
           </section>
         )}
@@ -156,11 +135,11 @@ export default function Home() {
         </Section>
 
         <Disclosure summary="What makes Pratibha different" hint="How it works">
-          <p className="soft max-w-2xl text-lg leading-relaxed">
+          <p className="soft max-w-[var(--reading-measure)] text-base leading-relaxed">
             Move from source to translation, from commentary to practice, and from one
             tradition into another without flattening their differences.
           </p>
-          <div className="mt-6 grid gap-4 lg:grid-cols-3">
+          <div className="mt-6 grid gap-6">
             {(
               [
                 { label: "Source-grounded", copy: "Original passages stay visible so interpretation never floats free." },
@@ -168,10 +147,9 @@ export default function Home() {
                 { label: "Practice-ready", copy: "Every study path returns to one embodied instruction." },
               ] as const
             ).map((item, idx) => (
-              <div key={item.label} className="citation-card p-5">
-                <p className="text-3xl text-amber-200/80">0{idx + 1}</p>
-                <h3 className="mt-2 text-xl text-stone-100">{item.label}</h3>
-                <p className="soft mt-2 leading-relaxed">{item.copy}</p>
+              <div key={item.label} className="border-t border-[rgb(240_201_121_/_0.12)] pt-4">
+                <p className="passage-reading__meta">0{idx + 1} · {item.label}</p>
+                <p className="soft mt-2 max-w-[var(--reading-measure)] leading-relaxed">{item.copy}</p>
               </div>
             ))}
           </div>

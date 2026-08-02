@@ -39,11 +39,11 @@ export function Section({
           <div className="section-head">
             {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
             {title ? (
-              <Heading className="mt-3 text-balance text-3xl font-semibold leading-tight text-stone-100 sm:text-4xl">
+              <Heading className="library-header__title mt-2 text-balance">
                 {title}
               </Heading>
             ) : null}
-            {lead ? <p className="section-lead mt-4">{lead}</p> : null}
+            {lead ? <p className="library-header__lede">{lead}</p> : null}
           </div>
           {action ? <div className="shrink-0">{action}</div> : null}
         </div>

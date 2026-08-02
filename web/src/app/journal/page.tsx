@@ -91,23 +91,25 @@ export default function JournalPage() {
   }
 
   return (
-    <main className="page-shell">
-      <header>
-        <p className="eyebrow">Personal study memory</p>
-        <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Journal</h1>
-        <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
-          {user
-            ? "Signed in — notes sync to your account and stay cached in this browser."
-            : "Saved reflections stay in this browser. Sign in to sync them across devices."}
-        </p>
-        {!user && !authLoading ? (
-          <Link
-            href="/login?next=/journal"
-            className={cn(buttonVariants({ variant: "secondary" }), "mt-4")}
-          >
-            Sign in to sync
-          </Link>
-        ) : null}
+    <main className="page-shell page-shell--reading">
+      <header className="library-header">
+        <div className="library-header__body">
+          <p className="passage-reading__meta">Personal study memory</p>
+          <h1 className="library-header__title">Journal</h1>
+          <p className="library-header__lede">
+            {user
+              ? "Signed in — notes sync to your account and stay cached in this browser."
+              : "Saved reflections stay in this browser. Sign in to sync them across devices."}
+          </p>
+          {!user && !authLoading ? (
+            <Link
+              href="/login?next=/journal"
+              className={cn(buttonVariants({ variant: "secondary" }), "mt-4")}
+            >
+              Sign in to sync
+            </Link>
+          ) : null}
+        </div>
       </header>
 
       <div className="mt-8 flex flex-wrap items-center gap-3">

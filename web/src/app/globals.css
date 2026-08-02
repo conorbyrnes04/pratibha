@@ -288,6 +288,44 @@ button {
   padding-block: 1.35rem 4rem;
 }
 
+/* Editorial measure for section headers inside reading-width shells */
+.page-shell--reading .section-head,
+.page-shell--library .section-head {
+  max-width: var(--reading-measure);
+}
+
+.page-shell--reading .section-lead,
+.page-shell--library .section-lead {
+  max-width: var(--reading-measure);
+  font-size: 1.05rem;
+}
+
+.page-shell--reading .section-head h2,
+.page-shell--library .section-head h2 {
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: clamp(1.65rem, 3.5vw, 2.15rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: rgb(250 237 205);
+}
+
+/* Quiet continue row (replaces resume-hero card on Paths) */
+.learn-continue {
+  padding: 0.15rem 0 0.35rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  transition: opacity 0.15s ease;
+}
+
+.learn-continue:hover {
+  opacity: 0.92;
+}
+
+.learn-path {
+  position: relative;
+}
+
 .eyebrow {
   color: var(--accent-bright);
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
@@ -964,16 +1002,11 @@ select:focus-visible {
 }
 
 .threads-field {
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgb(216 168 74 / 0.08), transparent),
-    linear-gradient(180deg, rgb(17 14 26 / 0.95), rgb(9 9 18 / 0.98));
+  background: transparent;
 }
 
 .threads-field__glow {
-  background:
-    radial-gradient(circle at 20% 30%, rgb(184 91 61 / 0.12), transparent 40%),
-    radial-gradient(circle at 80% 70%, rgb(50 72 103 / 0.14), transparent 45%);
-  animation: thread-glow-drift 12s ease-in-out infinite;
+  display: none;
 }
 
 .thread-bead__pulse {
@@ -989,7 +1022,7 @@ select:focus-visible {
 }
 
 .thread-context-bar {
-  border-color: rgb(240 201 121 / 0.32);
+  border-color: rgb(240 201 121 / 0.18);
 }
 
 .thread-card__glyph {
@@ -999,22 +1032,11 @@ select:focus-visible {
 .resume-hero {
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 0% 100%, rgb(216 168 74 / 0.1), transparent 50%),
-    linear-gradient(145deg, rgb(33 26 42 / 0.9), rgb(13 13 24 / 0.95));
+  background: transparent;
 }
 
 .resume-hero::before {
-  position: absolute;
-  right: -2rem;
-  top: -2rem;
-  width: 10rem;
-  height: 10rem;
-  pointer-events: none;
-  content: "";
-  opacity: 0.35;
-  background: radial-gradient(circle, rgb(240 201 121 / 0.15), transparent 70%);
-  animation: bindu-pulse 7s ease-in-out infinite;
+  display: none;
 }
 
 /* ── Thangka art: reveal, placeholder, overlays ── */
@@ -1263,6 +1285,91 @@ select:focus-visible {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+/* 3D shelf (Stripe Press–inspired) */
+.tome-shelf-3d {
+  position: relative;
+  min-height: min(70vh, 36rem);
+  height: min(72vh, 40rem);
+  margin: 0.5rem 0 1.25rem;
+  overflow: hidden;
+  border: 1px solid rgb(216 168 74 / 0.18);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(ellipse at 50% 20%, rgb(240 201 121 / 0.07), transparent 55%),
+    linear-gradient(180deg, #16141c 0%, #100e14 100%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.03);
+}
+
+.tome-shelf-3d__canvas {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.tome-shelf-3d__loading {
+  display: grid;
+  place-items: center;
+  min-height: inherit;
+  height: 100%;
+}
+
+.tome-shelf-3d__hint {
+  position: absolute;
+  left: 1rem;
+  bottom: 0.85rem;
+  margin: 0;
+  pointer-events: none;
+  color: rgb(168 162 158 / 0.9);
+}
+
+.tome-shelf-3d__a11y {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.tome-shelf-view-toggle {
+  display: inline-flex;
+  gap: 0.35rem;
+  padding: 0.2rem;
+  border: 1px solid rgb(216 168 74 / 0.22);
+  border-radius: 999px;
+  background: rgb(9 9 18 / 0.45);
+}
+
+.tome-shelf-view-toggle button {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(168 162 158);
+  background: transparent;
+  cursor: pointer;
+}
+
+.tome-shelf-view-toggle button[aria-pressed="true"] {
+  color: rgb(250 237 205);
+  background: rgb(240 201 121 / 0.16);
+}
+
+@media (max-width: 639px) {
+  .tome-shelf-3d {
+    min-height: min(58vh, 28rem);
+    height: min(60vh, 30rem);
+  }
 }
 
 /* Library shelf — tomes you open into a text's passages */
@@ -1962,6 +2069,69 @@ select:focus-visible {
   align-items: center;
   gap: 0.65rem;
   margin-top: 1.25rem;
+}
+
+/* Ask Pratibha — composer with hover/focus suggested prompts */
+.chat-composer {
+  position: relative;
+  max-width: var(--reading-measure);
+}
+
+.chat-composer__field {
+  min-height: 7.5rem;
+}
+
+.chat-composer__suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.2s ease,
+    max-height 0.25s ease,
+    margin 0.2s ease;
+}
+
+.chat-composer--suggest:hover .chat-composer__suggestions,
+.chat-composer--suggest:focus-within .chat-composer__suggestions {
+  opacity: 1;
+  max-height: 12rem;
+  margin-top: 0.55rem;
+  pointer-events: auto;
+}
+
+.chat-composer__suggestion {
+  display: block;
+  width: 100%;
+  padding: 0.35rem 0.15rem;
+  text-align: left;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: rgb(168 162 158 / 0.55);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.chat-composer__suggestion:hover,
+.chat-composer__suggestion:focus-visible {
+  color: rgb(214 211 209 / 0.85);
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chat-composer__suggestions {
+    transition: none;
+  }
 }
 
 .passage-related {

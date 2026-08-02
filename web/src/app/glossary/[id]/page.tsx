@@ -63,15 +63,10 @@ export default function GlossaryLemmaPage() {
   );
 
   return (
-    <main className="page-shell max-w-3xl">
-      <p className="mb-6">
-        <Link
-          href="/glossary"
-          className="font-sans text-sm text-amber-200/80 underline decoration-amber-200/25 underline-offset-4 transition hover:text-amber-100 hover:decoration-amber-200/60"
-        >
-          ← Glossary
-        </Link>
-      </p>
+    <main className="page-shell page-shell--reading">
+      <nav className="passage-reading__crumb mb-6" aria-label="Breadcrumb">
+        <Link href="/glossary">Glossary</Link>
+      </nav>
 
       {loading ? (
         <p className="soft text-lg">Opening lemma…</p>

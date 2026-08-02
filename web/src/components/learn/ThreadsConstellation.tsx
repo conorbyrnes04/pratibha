@@ -138,15 +138,15 @@ function ThreadCard({
   return (
     <article
       id={`thread-${thread.id}`}
-      className={`thread-card scroll-mt-28 overflow-hidden rounded-3xl border transition duration-500 ${
-        expanded ? "border-amber-200/40 bg-amber-100/[0.04]" : "border-white/10 bg-black/20"
+      className={`thread-card scroll-mt-28 border-t border-[rgb(240_201_121_/_0.14)] py-5 transition duration-300 ${
+        expanded ? "border-amber-200/30" : ""
       }`}
       style={{ ["--thread-hue" as string]: thread.hue }}
     >
-      <div className="p-5 sm:p-6">
+      <div>
         <button type="button" onClick={onToggle} className="w-full text-left">
           <div className="flex items-start justify-between gap-4">
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-3">
               <SpandaMedallion
                 glyph={thread.glyphSlug ?? sumiGlyph(thread.title)}
                 state={complete ? "recognized" : "arising"}
@@ -154,8 +154,12 @@ function ThreadCard({
                 hue={thread.hue}
               />
               <div>
-                <h3 className="text-2xl leading-none text-amber-100">{thread.title}</h3>
-                <p className="soft mt-2 text-sm leading-relaxed">{thread.subtitle}</p>
+                <h3 className="text-xl font-medium leading-tight tracking-[-0.02em] text-[rgb(250_237_205)] sm:text-2xl">
+                  {thread.title}
+                </h3>
+                <p className="soft mt-2 max-w-[var(--reading-measure)] text-sm leading-relaxed">
+                  {thread.subtitle}
+                </p>
               </div>
             </div>
             <span className="font-sans text-xs text-stone-400">
@@ -203,9 +207,9 @@ function ThreadCard({
       </div>
 
       {expanded ? (
-        <div className="border-t border-amber-200/10 px-5 pb-5 sm:px-6 sm:pb-6">
-          <p className="layer-heading mt-4">Along the thread</p>
-          <ol className="mt-3 space-y-3">
+        <div className="mt-4 border-t border-[rgb(240_201_121_/_0.1)] pt-4">
+          <p className="passage-layer__label">Along the thread</p>
+          <ol className="mt-3 space-y-2">
             {thread.steps.map((step) => {
               const beadDone = !!progress[stepKey(step.trackId, step.stepId)];
               const gateTitle = pathStepTitleForBead(step);
@@ -215,12 +219,12 @@ function ThreadCard({
                   <button
                     type="button"
                     onClick={() => onOpenBead(thread.id, step.id)}
-                    className={`thread-step-row w-full rounded-2xl border p-4 text-left transition hover:border-amber-200/35 ${
+                    className={`thread-step-row w-full border-b border-[rgb(240_201_121_/_0.1)] py-3.5 text-left transition last:border-b-0 ${
                       isActive
-                        ? "border-amber-200/45 bg-amber-200/10"
+                        ? "bg-amber-200/[0.04]"
                         : beadDone
-                          ? "border-emerald-300/20 bg-emerald-300/5"
-                          : "border-white/8 bg-black/15"
+                          ? "opacity-90"
+                          : "hover:bg-white/[0.015]"
                     }`}
                   >
                     <div className="flex items-start gap-3">
@@ -286,36 +290,37 @@ export function ThreadsConstellation({
   }, [safeProgress]);
 
   return (
-    <section id="threads" className="threads-field relative mt-12 scroll-mt-24 overflow-hidden rounded-[2rem] border border-amber-200/12 p-5 sm:p-8">
-      <div className="threads-field__glow pointer-events-none absolute inset-0" aria-hidden />
-      <div className="relative">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="eyebrow">Threads</p>
-            <h2 className="mt-2 text-3xl font-semibold leading-none text-amber-100 sm:text-4xl">One theme, many traditions</h2>
-            <p className="soft mt-3 max-w-xl text-base leading-relaxed">
-              A thread is a horizontal cut across paths — one insight followed tradition by tradition.
-              Each bead opens that gate while keeping you on the thread (next bead, not the whole path).
+    <section id="threads" className="threads-field relative scroll-mt-24">
+      <header className="library-header">
+        <div className="library-header__body">
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <p className="passage-reading__meta">Threads</p>
+              <h2 className="library-header__title">One theme, many traditions</h2>
+              <p className="library-header__lede">
+                A thread is a horizontal cut across paths — one insight followed tradition by tradition.
+                Each bead opens that gate while keeping you on the thread.
+              </p>
+            </div>
+            <p className="font-sans text-xs uppercase tracking-[0.18em] text-amber-200/50">
+              {litBeads}/{totalBeads} beads lit
             </p>
           </div>
-          <p className="font-sans text-xs uppercase tracking-[0.18em] text-amber-200/50">
-            {litBeads}/{totalBeads} beads lit via path gates
-          </p>
         </div>
+      </header>
 
-        <div className="mt-8 grid gap-4 lg:grid-cols-2">
-          {LEARNING_THREADS.map((thread) => (
-            <ThreadCard
-              key={thread.id}
-              thread={thread}
-              progress={safeProgress}
-              expanded={expandedId === thread.id}
-              activeBeadId={activeThreadId === thread.id ? activeBeadId : null}
-              onToggle={() => setExpandedId((id) => (id === thread.id ? null : thread.id))}
-              onOpenBead={onOpenBead}
-            />
-          ))}
-        </div>
+      <div className="mt-2">
+        {LEARNING_THREADS.map((thread) => (
+          <ThreadCard
+            key={thread.id}
+            thread={thread}
+            progress={safeProgress}
+            expanded={expandedId === thread.id}
+            activeBeadId={activeThreadId === thread.id ? activeBeadId : null}
+            onToggle={() => setExpandedId((id) => (id === thread.id ? null : thread.id))}
+            onOpenBead={onOpenBead}
+          />
+        ))}
       </div>
     </section>
   );

@@ -12,13 +12,13 @@ import { ComparePassageSelect } from "@/components/ComparePassageSelect";
 import { buildCompareCollectionOptions, passagesInCollection } from "@/lib/corpusFilters";
 import { COMPARE_PRESETS } from "@/lib/comparePresets";
 import { displayCollectionName } from "@/lib/collectionLabels";
-import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
-import { ArtBackdrop, ArtChip } from "@/components/ArtImage";
+import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
+import { ArtBackdrop } from "@/components/ArtImage";
 import { Disclosure } from "@/components/ui/Disclosure";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { displayPassageTitle } from "@/lib/passageTitles";
-import { passagePreview, practiceText } from "@/lib/verseLayers";
+import { displayPassageSourceLine, displayPassageTitle } from "@/lib/passageTitles";
+import { passagePreview } from "@/lib/verseLayers";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -164,17 +164,20 @@ export default function ChatPage() {
     [],
   );
 
-  const suggestions = useMemo(
-    () => [
-      "Explain this passage in plain language.",
+  const suggestions = useMemo(() => {
+    if (pinnedVerse) {
+      return [
+        "Explain this passage in plain language.",
+        "What is the practical instruction here?",
+        "Give me one reflection question and one short practice.",
+      ];
+    }
+    return [
       "What is the practical instruction for today?",
-      "How do the appendixes/commentators differ?",
-      "Give me one reflection question and one short practice.",
       "Compare two traditions on desire, discipline, and freedom.",
-      "Debate Phaedo (Plato) and Epictetus on preparing for death.",
-    ],
-    [],
-  );
+      "Give me one reflection question and one short practice.",
+    ];
+  }, [pinnedVerse]);
 
   function applyPreset(presetId: string) {
     const preset = COMPARE_PRESETS.find((item) => item.id === presetId);
@@ -274,305 +277,289 @@ export default function ChatPage() {
     }
   }
 
+  const showComposerSuggestions = !q.trim() && !dailyCapHit && !busy;
+  const showSourceShelf = Boolean(pinnedVerse) || sources.length > 0 || Boolean(compareWarning);
+  const pinnedSourceLine = pinnedVerse
+    ? displayPassageSourceLine({
+        ...pinnedVerse,
+        collection: displayCollectionName(pinnedVerse.collection) || pinnedVerse.collection,
+      })
+    : "";
+
   return (
-    <main className="page-shell">
-      <section className="manuscript-card relative overflow-hidden p-5 sm:p-6">
-        <ArtBackdrop
-          srcs={pinnedVerse ? collectionArtPool(pinnedVerse.collection) : generatedArtPool("heart-sutra")}
-          variant="subtle"
-          overlay="banner"
-        />
-        <div className="relative z-10">
-          <p className="eyebrow">Dialogue with the corpus</p>
-          <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Ask Pratibha</h1>
-          <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">Ask naturally. The companion answers with source-grounded explanation, cross-tradition context, and a practice you can actually try.</p>
+    <main className="page-shell page-shell--reading">
+      <header className="library-header">
+        <div className="library-header__atmosphere" aria-hidden>
+          <ArtBackdrop
+            srcs={pinnedVerse ? collectionArtPool(pinnedVerse.collection) : generatedArtPool("heart-sutra")}
+            variant="subtle"
+            opacity={0.11}
+          />
         </div>
-      </section>
+        <div className="library-header__body">
+          <p className="passage-reading__meta">Dialogue with the corpus</p>
+          <h1 className="library-header__title">Ask Pratibha</h1>
+          <p className="library-header__lede">
+            Ask naturally. Answers stay grounded in the manuscript — with practice you can try.
+          </p>
+        </div>
+      </header>
 
-      <div className="mt-8 grid gap-5 lg:grid-cols-[2fr_1fr]">
-        <section className="manuscript-card p-5 sm:p-6">
-          {pinnedVerse ? (
-            <ArtChip
-              src={collectionImageSrc(pinnedVerse.collection)}
-              title={displayPassageTitle(pinnedVerse)}
-              subtitle={`${displayCollectionName(pinnedVerse.collection)}${pinnedVerse.section ? ` • ${pinnedVerse.section}` : ""}`}
-              className="mb-4"
+      <div className="mt-6 max-w-[var(--reading-measure)]">
+        {pinnedVerse ? (
+          <div className="mb-6">
+            <Link
+              href={`/read/${encodeURIComponent(pinnedVerse._id)}`}
+              className="library-passage block"
             >
-              <p className="soft mt-3 text-sm leading-relaxed">{passagePreview(pinnedVerse)}</p>
-              {practiceText(pinnedVerse) ? (
-                <p className="mt-3 text-sm leading-relaxed text-stone-200">
-                  <span className="text-amber-100">Practice:</span> {practiceText(pinnedVerse)}
-                </p>
-              ) : null}
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                <FilterSelect
-                  label="Study mode"
-                  tone="gold"
-                  value={chatMode}
-                  onChange={(value) => {
-                    const mode = value as ChatMode;
-                    setChatMode(mode);
-                    if (mode === "compare") setCompareMode(true);
-                  }}
-                  options={chatModeOptions}
-                />
-                <FilterSelect
-                  label="Layer focus"
-                  tone="lapis"
-                  value={layerFocus}
-                  onChange={(value) => setLayerFocus(value as PratibhaLayerKind | "")}
-                  options={layerOptions}
-                />
-              </div>
-            </ArtChip>
-          ) : null}
-          <div className="space-y-4">
-            {messages.length === 0 ? (
-              <div className="citation-card p-5">
-                <p className="layer-heading">Begin</p>
-                <p className="soft mt-3 text-lg">Start with a prompt below, or ask your own question about any chapter.</p>
-              </div>
-            ) : (
-              messages.map((m, idx) => (
-                <article
-                  key={`${m.role}-${idx}`}
-                  className={`whitespace-pre-wrap rounded-2xl border p-4 ${
-                    m.role === "user" ? "border-amber-200/30 bg-amber-100/10" : "citation-card"
-                  }`}
-                >
-                  <p className="layer-heading mb-2">{m.role === "user" ? "You" : "Pratibha"}</p>
-                  {m.role === "assistant" ? (
-                    <>
-                      {m.content ? (
-                        <div className="chat-markdown reading-prose">
-                          <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
-                        </div>
-                      ) : (
-                        <p className="soft animate-pulse text-sm">Pratibha is thinking…</p>
-                      )}
-                      {m.content ? (
-                        <Button
-                          type="button"
-                          variant="secondary"
-                          size="sm"
-                          className="mt-3 text-xs"
-                          onClick={() => saveReply(idx, m.content)}
-                          disabled={savedReplies.has(idx)}
-                        >
-                          {savedReplies.has(idx) ? "Saved to journal" : "Save to journal"}
-                        </Button>
-                      ) : null}
-                    </>
-                  ) : (
-                    <p>{m.content}</p>
-                  )}
-                </article>
-              ))
-            )}
-          </div>
-
-          <div className="mt-6">
-            <p className="layer-heading mb-2">Try asking</p>
-            <div className="flex flex-wrap gap-2">
-              {suggestions.map((s) => (
-                <Button key={s} variant="secondary" size="sm" className="text-xs" onClick={() => setQ(s)}>
-                  {s}
-                </Button>
-              ))}
+              <p className="library-passage__meta">
+                Studying
+                {pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""}
+              </p>
+              <p className="library-passage__title">{displayPassageTitle(pinnedVerse)}</p>
+              <p className="library-passage__preview line-clamp-3">{passagePreview(pinnedVerse)}</p>
+            </Link>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <FilterSelect
+                label="Study mode"
+                tone="gold"
+                value={chatMode}
+                onChange={(value) => {
+                  const mode = value as ChatMode;
+                  setChatMode(mode);
+                  if (mode === "compare") setCompareMode(true);
+                }}
+                options={chatModeOptions}
+              />
+              <FilterSelect
+                label="Layer focus"
+                tone="lapis"
+                value={layerFocus}
+                onChange={(value) => setLayerFocus(value as PratibhaLayerKind | "")}
+                options={layerOptions}
+              />
             </div>
           </div>
+        ) : null}
 
-          <div className="mt-4">
-            <Disclosure
-              summary="Retrieval & compare options"
-              hint={`${useRag ? "Grounded" : "Freeform"}${compareMode ? " · Compare" : ""}`}
-              defaultOpen={compareMode}
-            >
-              <label className="block font-sans text-sm soft">
-                <input type="checkbox" checked={useRag} onChange={(e) => setUseRag(e.target.checked)} className="mr-2 accent-amber-300" />
-                Use source-grounded retrieval (recommended)
-              </label>
-              <label className="mt-3 block font-sans text-sm soft">
-                <input
-                  type="checkbox"
-                  checked={compareMode}
-                  onChange={(e) => {
-                    setCompareMode(e.target.checked);
-                    if (e.target.checked) setChatMode("compare");
-                  }}
-                  className="mr-2 accent-amber-300"
-                />
-                Compare mode (debate/synthesis between two texts)
-              </label>
-              {compareMode && (
-                <>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {COMPARE_PRESETS.map((preset) => (
+        {messages.length > 0 ? (
+          <div className="mb-6 space-y-4">
+            {messages.map((m, idx) => (
+              <article
+                key={`${m.role}-${idx}`}
+                className={`whitespace-pre-wrap border-t border-[rgb(240_201_121_/_0.12)] py-4 ${
+                  m.role === "user" ? "" : ""
+                }`}
+              >
+                <p className="passage-layer__label mb-2">{m.role === "user" ? "You" : "Pratibha"}</p>
+                {m.role === "assistant" ? (
+                  <>
+                    {m.content ? (
+                      <div className="chat-markdown reading-prose">
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
+                      </div>
+                    ) : (
+                      <p className="soft animate-pulse text-sm">Pratibha is thinking…</p>
+                    )}
+                    {m.content ? (
                       <Button
-                        key={preset.id}
                         type="button"
                         variant="secondary"
                         size="sm"
-                        className="text-xs"
-                        onClick={() => applyPreset(preset.id)}
+                        className="mt-3 text-xs"
+                        onClick={() => saveReply(idx, m.content)}
+                        disabled={savedReplies.has(idx)}
                       >
-                        {preset.label}
+                        {savedReplies.has(idx) ? "Saved to journal" : "Save to journal"}
                       </Button>
-                    ))}
-                  </div>
-                  <div className="mt-4 grid gap-3 lg:grid-cols-2">
-                    <div className="space-y-3">
-                      <FilterSelect
-                        label="Voice A — text"
-                        tone="gold"
-                        value={compareA}
-                        onChange={setCompareA}
-                        options={collectionOptions.map((o) => ({ ...o, label: `A · ${o.label}` }))}
-                      />
-                      <ComparePassageSelect
-                        label="Voice A — passage (optional)"
-                        tone="gold"
-                        collection={compareA}
-                        passages={passagesA}
-                        value={compareVerseA}
-                        onChange={setCompareVerseA}
-                      />
-                    </div>
-                    <div className="space-y-3">
-                      <FilterSelect
-                        label="Voice B — text"
-                        tone="lapis"
-                        value={compareB}
-                        onChange={setCompareB}
-                        options={collectionOptions.map((o) => ({ ...o, label: `B · ${o.label}` }))}
-                      />
-                      <ComparePassageSelect
-                        label="Voice B — passage (optional)"
-                        tone="lapis"
-                        collection={compareB}
-                        passages={passagesB}
-                        value={compareVerseB}
-                        onChange={setCompareVerseB}
-                      />
-                    </div>
-                  </div>
-                </>
-              )}
-            </Disclosure>
+                    ) : null}
+                  </>
+                ) : (
+                  <p className="reading-prose">{m.content}</p>
+                )}
+              </article>
+            ))}
           </div>
+        ) : null}
 
-          {dailyCapHit ? (
-            <p className="mt-4 rounded-2xl border border-amber-200/25 bg-amber-100/5 p-4 text-sm leading-relaxed text-stone-200">
-              {DAILY_CAP_MESSAGE}{" "}
-              <Link href="/read" className="text-amber-100 underline-offset-2 hover:underline">
-                Continue reading →
-              </Link>
-            </p>
-          ) : null}
+        {dailyCapHit ? (
+          <p className="mb-4 border-t border-[rgb(240_201_121_/_0.14)] pt-4 text-sm leading-relaxed text-stone-200">
+            {DAILY_CAP_MESSAGE}{" "}
+            <Link href="/read" className="text-amber-100 underline-offset-2 hover:underline">
+              Continue reading →
+            </Link>
+          </p>
+        ) : null}
+
+        <div className={`chat-composer ${showComposerSuggestions ? "chat-composer--suggest" : ""}`}>
           <Textarea
-            className="mt-4"
+            className="chat-composer__field"
             rows={4}
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Ask about this chapter, ask for practice guidance, or compare two traditions..."
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
+                e.preventDefault();
+                void ask();
+              }
+            }}
+            placeholder="Ask about a passage, a practice, or two traditions…"
             disabled={dailyCapHit}
+            aria-label="Ask Pratibha"
           />
-          <div className="mt-3 flex flex-wrap items-center gap-3">
-            <Button onClick={ask} disabled={busy || dailyCapHit} size="lg">
-              {busy ? "Thinking..." : "Ask"}
-            </Button>
-            {chatRemaining != null && chatRemaining >= 0 && !dailyCapHit ? (
-              <p className="soft font-sans text-xs">
-                {chatRemaining} study chat{chatRemaining === 1 ? "" : "s"} left today
-              </p>
-            ) : null}
-          </div>
-        </section>
-
-        <aside className="card p-4">
-          <h2 className="text-2xl text-amber-100">Source shelf</h2>
-          <p className="soft mt-1 text-sm">Supporting passages appear here when retrieval is enabled.</p>
-          {pinnedVerse ? (
-            <Link
-              href={`/read/${encodeURIComponent(pinnedVerse._id)}`}
-              className="practice-card mt-3 block p-3 transition hover:border-amber-200/35 hover:bg-white/[0.03]"
-            >
-              <p className="layer-heading">Primary source</p>
-              <p className="mt-2 text-sm text-amber-100 underline-offset-2 group-hover:underline">
-                {displayPassageTitle(pinnedVerse)}
-              </p>
-              <p className="soft mt-1 line-clamp-4 text-sm">{passagePreview(pinnedVerse)}</p>
-              <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.16em] text-amber-200/80">Open passage →</p>
-            </Link>
+          {showComposerSuggestions ? (
+            <ul className="chat-composer__suggestions" aria-label="Suggested questions">
+              {suggestions.map((s) => (
+                <li key={s}>
+                  <button type="button" className="chat-composer__suggestion" onClick={() => setQ(s)}>
+                    {s}
+                  </button>
+                </li>
+              ))}
+            </ul>
           ) : null}
-          {compareMode && compareWarning ? (
-            <p className="mt-2 rounded-md border border-amber-300/40 bg-amber-300/10 p-2 text-xs text-amber-100">
-              {compareWarning}
+        </div>
+
+        <div className="mt-3 flex flex-wrap items-center gap-3">
+          <Button onClick={ask} disabled={busy || dailyCapHit || !q.trim()}>
+            {busy ? "Thinking…" : "Ask"}
+          </Button>
+          {chatRemaining != null && chatRemaining >= 0 && !dailyCapHit ? (
+            <p className="soft font-sans text-xs">
+              {chatRemaining} study chat{chatRemaining === 1 ? "" : "s"} left today
             </p>
           ) : null}
-          <div className="mt-3 space-y-3">
-            {sources.length === 0 ? (
-              <p className="soft text-sm">No sources shown yet.</p>
-            ) : (
-              sources.map((s) => {
+        </div>
+
+        <div className="mt-6">
+          <Disclosure
+            summary="Retrieval & compare"
+            hint={`${useRag ? "Grounded" : "Freeform"}${compareMode ? " · Compare" : ""}`}
+            defaultOpen={compareMode}
+          >
+            <label className="block font-sans text-sm soft">
+              <input type="checkbox" checked={useRag} onChange={(e) => setUseRag(e.target.checked)} className="mr-2 accent-amber-300" />
+              Use source-grounded retrieval (recommended)
+            </label>
+            <label className="mt-3 block font-sans text-sm soft">
+              <input
+                type="checkbox"
+                checked={compareMode}
+                onChange={(e) => {
+                  setCompareMode(e.target.checked);
+                  if (e.target.checked) setChatMode("compare");
+                }}
+                className="mr-2 accent-amber-300"
+              />
+              Compare mode (debate/synthesis between two texts)
+            </label>
+            {compareMode ? (
+              <>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {COMPARE_PRESETS.map((preset) => (
+                    <Button
+                      key={preset.id}
+                      type="button"
+                      variant="secondary"
+                      size="sm"
+                      className="text-xs"
+                      onClick={() => applyPreset(preset.id)}
+                    >
+                      {preset.label}
+                    </Button>
+                  ))}
+                </div>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <div className="space-y-3">
+                    <FilterSelect
+                      label="Voice A — text"
+                      tone="gold"
+                      value={compareA}
+                      onChange={setCompareA}
+                      options={collectionOptions.map((o) => ({ ...o, label: `A · ${o.label}` }))}
+                    />
+                    <ComparePassageSelect
+                      label="Voice A — passage (optional)"
+                      tone="gold"
+                      collection={compareA}
+                      passages={passagesA}
+                      value={compareVerseA}
+                      onChange={setCompareVerseA}
+                    />
+                  </div>
+                  <div className="space-y-3">
+                    <FilterSelect
+                      label="Voice B — text"
+                      tone="lapis"
+                      value={compareB}
+                      onChange={setCompareB}
+                      options={collectionOptions.map((o) => ({ ...o, label: `B · ${o.label}` }))}
+                    />
+                    <ComparePassageSelect
+                      label="Voice B — passage (optional)"
+                      tone="lapis"
+                      collection={compareB}
+                      passages={passagesB}
+                      value={compareVerseB}
+                      onChange={setCompareVerseB}
+                    />
+                  </div>
+                </div>
+              </>
+            ) : null}
+          </Disclosure>
+        </div>
+
+        {showSourceShelf ? (
+          <aside className="mt-8 border-t border-[rgb(240_201_121_/_0.14)] pt-5">
+            <h2 className="passage-reading__meta">Source shelf</h2>
+            {pinnedVerse ? (
+              <Link
+                href={`/read/${encodeURIComponent(pinnedVerse._id)}`}
+                className="library-passage mt-1 block"
+              >
+                <p className="library-passage__meta">Primary source</p>
+                <p className="library-passage__title">{displayPassageTitle(pinnedVerse)}</p>
+              </Link>
+            ) : null}
+            {compareMode && compareWarning ? (
+              <p className="mt-2 text-xs text-amber-100/90">{compareWarning}</p>
+            ) : null}
+            <div className="mt-2">
+              {sources.map((s) => {
                 const href = sourcePassageHref(s.metadata);
                 const side = (s.metadata?.compare_side as string | undefined) || "";
-                const heading = (
-                  <>
-                    <p className="layer-heading">Source {s.rank}</p>
-                    {side ? (
-                      <p className="mt-1 font-sans text-[11px] uppercase tracking-wide text-amber-200">
-                        Voice {side}
-                      </p>
-                    ) : null}
-                    <p className="mt-2 text-sm text-amber-100">
-                      {displayCollectionName(String((s.metadata?.collection as string) || ""))}
-                      {sourcePassageLabel(s.metadata)
-                        ? ` • ${sourcePassageLabel(s.metadata)}`
-                        : s.metadata?.title
-                          ? ` • ${String(s.metadata.title)}`
-                          : ""}
-                      {s.metadata?.section ? ` • ${String(s.metadata.section)}` : ""}
-                    </p>
-                  </>
+                const meta = (
+                  <p className="library-passage__meta">
+                    Source {s.rank}
+                    {side ? ` · Voice ${side}` : ""}
+                    {displayCollectionName(String((s.metadata?.collection as string) || ""))
+                      ? ` · ${displayCollectionName(String((s.metadata?.collection as string) || ""))}`
+                      : ""}
+                    {sourcePassageLabel(s.metadata) ? ` · ${sourcePassageLabel(s.metadata)}` : ""}
+                  </p>
                 );
                 const body = (
-                  <>
-                    {Array.isArray(s.metadata?.themes) && (s.metadata?.themes as unknown[]).length > 0 ? (
-                      <p className="mt-2 text-[11px] soft">
-                        Themes: {(s.metadata?.themes as unknown[]).slice(0, 3).map((t) => String(t)).join(", ")}
-                      </p>
-                    ) : null}
-                    <p className="soft mt-2 line-clamp-6 whitespace-pre-wrap text-sm leading-relaxed">{s.text || ""}</p>
-                  </>
+                  <p className="library-passage__preview line-clamp-5">{s.text || ""}</p>
                 );
-
                 if (href) {
                   return (
-                    <Link
-                      key={`source-${s.rank}`}
-                      href={href}
-                      className="citation-card block p-3 transition hover:border-amber-200/35 hover:bg-white/[0.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200/50"
-                    >
-                      {heading}
+                    <Link key={`source-${s.rank}`} href={href} className="library-passage block">
+                      {meta}
                       {body}
-                      <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.16em] text-amber-200/80">
-                        Open passage →
-                      </p>
                     </Link>
                   );
                 }
-
                 return (
-                  <article key={`source-${s.rank}`} className="citation-card p-3">
-                    {heading}
+                  <article key={`source-${s.rank}`} className="library-passage">
+                    {meta}
                     {body}
                   </article>
                 );
-              })
-            )}
-          </div>
-        </aside>
+              })}
+            </div>
+          </aside>
+        ) : null}
       </div>
     </main>
   );

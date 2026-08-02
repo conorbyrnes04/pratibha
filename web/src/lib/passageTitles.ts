@@ -1,4 +1,5 @@
 import type { VerseItem } from "./types";
+import { isTaoTeChing } from "./ttcRefs";
 
 type VerseWithRef = VerseItem & {
   reference?: string;
@@ -7,6 +8,16 @@ type VerseWithRef = VerseItem & {
 };
 
 const PATANJALI_MARKERS = ["patanjali", "patañjali", "yoga_sūtras", "yoga_sutras"];
+
+/** Schema / unit-type tokens that must never appear as reader-facing location labels. */
+const UNIT_TYPE_SECTIONS = new Set([
+  "chapter_section",
+  "teaching_passage",
+  "sutra",
+  "verse",
+  "chapter_summary",
+  "chapter",
+]);
 
 export function isPatanjaliYogaSutras(item: VerseWithRef): boolean {
   const blob = [item.collection, item._id, item.work_id].filter(Boolean).join(" ").toLowerCase();
@@ -30,6 +41,98 @@ export function patanjaliSutraRef(item: VerseWithRef): string | null {
   if (fromId) return `${Number(fromId[1])}.${Number(fromId[2])}`;
 
   return null;
+}
+
+function sectionToken(section?: string): string {
+  return (section || "").trim().toLowerCase().replace(/\s+/g, "_");
+}
+
+function isUnitTypeSection(section?: string): boolean {
+  return UNIT_TYPE_SECTIONS.has(sectionToken(section));
+}
+
+/** Prefer numbered citation from ids like TTC_MD_069, BG_01_02_04, ASG_11_5. */
+function locationFromSutraId(item: VerseWithRef): string | null {
+  const sid = (item.sutra_id || item._id || "").trim();
+  if (!sid) return null;
+
+  const ttc = sid.match(/^TTC(?:_MD)?_(\d+)$/i);
+  if (ttc) return `Chapter ${Number(ttc[1])}`;
+
+  const bg = sid.match(/^BG_(\d+)_(\d+)(?:_(\d+))?$/i);
+  if (bg) {
+    const ch = Number(bg[1]);
+    const a = Number(bg[2]);
+    const b = bg[3] ? Number(bg[3]) : null;
+    return b != null ? `${ch}.${a}–${b}` : `${ch}.${a}`;
+  }
+
+  const asg = sid.match(/^ASG_(\d+)_(\d+)$/i);
+  if (asg) return `Verse ${Number(asg[1])}.${Number(asg[2])}`;
+
+  const ys = sid.match(/^YS_(\d+)_(\d+)/i);
+  if (ys) return `${Number(ys[1])}.${Number(ys[2])}`;
+
+  const an = sid.match(/^AN_(\d+)_(\d+)$/i);
+  if (an) return `${Number(an[1])}.${Number(an[2])}`;
+
+  const cloud = sid.match(/^CLOUD_(\d+)$/i);
+  if (cloud) return null; // prefer explicit "Ch. N" from section when present
+
+  return null;
+}
+
+function humanizeSection(section?: string): string | null {
+  const raw = (section || "").trim();
+  if (!raw || isUnitTypeSection(raw)) return null;
+
+  const chapterNum = raw.match(/^chapter[_\s-]*0*(\d+)$/i);
+  if (chapterNum) return `Chapter ${Number(chapterNum[1])}`;
+
+  // Already reader-facing ("Analects 1.1", "Ch. 3", "1.4.2 (Madhu)")
+  return raw.replace(/_/g, " ");
+}
+
+/**
+ * Clear verse/chapter label for a passage — never a schema token like `chapter_section`.
+ * Examples: "Chapter 69", "1.2", "Verse 11.5", "Analects 1.1".
+ */
+export function displayPassageLocation(item: VerseItem): string {
+  const v = item as VerseWithRef;
+
+  const reference = (v.reference || "").trim();
+  if (reference && !isUnitTypeSection(reference)) return reference;
+
+  // Prefer an already reader-facing section ("Analects 1.1", "Ch. 3", "1.4.2").
+  const fromSection = humanizeSection(v.section) || humanizeSection(v.provenance?.section);
+  if (fromSection && !/^chapter\s+\d+$/i.test(fromSection)) {
+    // Keep fascicle/verse labels; bare "Chapter N" from chapter_01 yields to finer id below.
+    if (!/^chapter_\d+$/i.test(sectionToken(v.section))) return fromSection;
+  }
+
+  if (isPatanjaliYogaSutras(v)) {
+    const ref = patanjaliSutraRef(v);
+    if (ref) return ref;
+  }
+
+  const fromId = locationFromSutraId(v);
+  if (fromId) return fromId;
+
+  if (fromSection) return fromSection;
+
+  // Last resort: title that is itself a verse label ("Verse 11.5")
+  const title = (v.title || "").trim();
+  if (/^(verse|sūtra|sutra|chapter|ch\.?)\s/i.test(title)) return title;
+
+  return "";
+}
+
+/** "Tao Te Ching · Chapter 69" — collection plus the verse/chapter label. */
+export function displayPassageSourceLine(item: VerseItem): string {
+  const collection = (item.collection || "").trim();
+  const location = displayPassageLocation(item);
+  if (collection && location) return `${collection} · ${location}`;
+  return collection || location || "";
 }
 
 export function displayPassageTitle(item: VerseItem): string {

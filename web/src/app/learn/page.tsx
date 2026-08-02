@@ -10,7 +10,6 @@ import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
 import { ThreadCompleteCard } from "@/components/learn/ThreadCompleteCard";
 import { ThreadContextBar } from "@/components/learn/ThreadContextBar";
 import { ThreadsConstellation } from "@/components/learn/ThreadsConstellation";
-import { YantraBreath } from "@/components/learn/YantraBreath";
 import { JournalPanel } from "@/components/JournalPanel";
 import { Section } from "@/components/ui/Section";
 import { useLearnProgress } from "@/hooks/useLearnProgress";
@@ -30,11 +29,10 @@ import {
   threadsForPathStep,
 } from "@/lib/learningThreads";
 import { learnStepContextId } from "@/lib/journalStorage";
-import { Glyph } from "@/components/Glyph";
 import type { VerseItem } from "@/lib/types";
 import { passagePreview } from "@/lib/verseLayers";
 import { displayCollectionName } from "@/lib/collectionLabels";
-import { displayPassageTitle } from "@/lib/passageTitles";
+import { displayPassageLocation, displayPassageTitle } from "@/lib/passageTitles";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -59,16 +57,13 @@ function PassageLink({ item, primary = false, backHref }: { item: VerseItem; pri
     ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
     : `/read/${encodeURIComponent(item._id)}`;
   return (
-    <Link
-      href={href}
-      className={`citation-card block p-3 transition hover:border-amber-300/40 ${primary ? "" : "opacity-90"}`}
-    >
-      <p className="font-sans text-[11px] uppercase tracking-[0.16em] text-amber-200/70">
+    <Link href={href} className={`library-passage ${primary ? "" : "opacity-90"}`}>
+      <p className="library-passage__meta">
         {displayCollectionName(item.collection)}
-        {item.section ? ` · ${item.section}` : ""}
+        {displayPassageLocation(item) ? ` · ${displayPassageLocation(item)}` : ""}
       </p>
-      <h5 className="mt-1 text-base leading-tight text-amber-100">{displayPassageTitle(item)}</h5>
-      {primary ? <p className="soft mt-1 line-clamp-2 text-sm leading-relaxed">{passagePreview(item)}</p> : null}
+      <h5 className="library-passage__title">{displayPassageTitle(item)}</h5>
+      {primary ? <p className="library-passage__preview line-clamp-2">{passagePreview(item)}</p> : null}
     </Link>
   );
 }
@@ -379,48 +374,41 @@ export default function LearnPage() {
   }
 
   return (
-    <main className="page-shell">
+    <main className="page-shell page-shell--reading">
       <div className="section-stack">
       <div>
-      <div className="relative">
-        <Glyph
-          name="mandala"
-          size="hero"
-          className="pointer-events-none absolute -right-4 -top-6 opacity-[0.12] sm:-right-2 sm:top-0"
-        />
-        <p className="eyebrow">Guided study</p>
-        <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Paths</h1>
-        <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
-          Descend a path gate by gate, or trace one insight across traditions with a thread. Each gate is a practice, not
-          a playlist item.
-        </p>
-      </div>
+      <header className="library-header">
+        <div className="library-header__body">
+          <p className="passage-reading__meta">Guided study</p>
+          <h1 className="library-header__title">Paths</h1>
+          <p className="library-header__lede">
+            Descend a path gate by gate, or trace one insight across traditions with a thread.
+            Each gate is a practice, not a playlist item.
+          </p>
+        </div>
+      </header>
 
-      <section className="mt-7">
+      <section className="mt-6">
         <button
           type="button"
           onClick={() => continueTo(heroTrack.id, heroNextStep.id)}
-          className="resume-hero card group w-full overflow-hidden border-amber-200/40 p-5 text-left transition hover:-translate-y-0.5 sm:p-6"
+          className="learn-continue group w-full max-w-[var(--reading-measure)] text-left"
         >
-          <img
-            src="/sumi/wash/mandala.webp"
-            alt=""
-            aria-hidden="true"
-            className="pointer-events-none absolute -right-16 top-1/2 h-[150%] w-auto max-w-none -translate-y-1/2 object-contain opacity-[0.16] mix-blend-screen [filter:invert(1)]"
-          />
-          <div className="relative z-10">
-            <p className="font-sans text-xs uppercase tracking-[0.18em] text-amber-200/80">{heroLabel}</p>
-            <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-              <div>
-                <h2 className="text-3xl leading-none text-amber-100 sm:text-4xl">{heroTrack.title}</h2>
-                <p className="soft mt-2 max-w-xl text-sm leading-relaxed">
-                  {startedTrackId
-                    ? `Next · Step ${heroNextIndex + 1}: ${heroNextStep.title}`
-                    : heroTrack.focus}
-                </p>
-              </div>
-              <span className={buttonVariants()}>{startedTrackId ? "Continue →" : "Begin →"}</span>
+          <p className="passage-reading__meta">{heroLabel}</p>
+          <div className="mt-2 flex flex-wrap items-end justify-between gap-3">
+            <div className="min-w-0">
+              <h2 className="text-2xl font-medium leading-tight tracking-[-0.02em] text-[rgb(250_237_205)] sm:text-[1.65rem]">
+                {heroTrack.title}
+              </h2>
+              <p className="soft mt-1.5 text-sm leading-relaxed">
+                {startedTrackId
+                  ? `Next · Step ${heroNextIndex + 1}: ${heroNextStep.title}`
+                  : heroTrack.focus}
+              </p>
             </div>
+            <span className={buttonVariants({ size: "sm" })}>
+              {startedTrackId ? "Continue →" : "Begin →"}
+            </span>
           </div>
         </button>
 
@@ -437,7 +425,7 @@ export default function LearnPage() {
       <Section
         eyebrow="The map"
         title="Your branching path"
-        lead="Start at the root, branch into a realm, then zoom into a path and descend it gate by gate. Nodes light up as you complete their gates."
+        lead="Start at the root, branch into a realm, then zoom into a path and descend it gate by gate."
       >
         <PathTree
           realms={LEARNING_REALMS}
@@ -452,8 +440,7 @@ export default function LearnPage() {
         />
       </Section>
 
-      <section ref={pathSectionRef} className="manuscript-card relative scroll-mt-24 overflow-hidden p-5 sm:p-7">
-        <YantraBreath className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 opacity-[0.18] sm:h-80 sm:w-80" />
+      <section ref={pathSectionRef} className="learn-path scroll-mt-24">
         {(threadMode || threadCeremonyId) && activeThreadId && activeBeadId ? (
           <ThreadContextBar
             threadId={activeThreadId}
@@ -479,28 +466,26 @@ export default function LearnPage() {
         ) : (
           <>
             <div className="relative flex flex-wrap items-start justify-between gap-4">
-              <div className="max-w-3xl">
+              <div className="max-w-[var(--reading-measure)]">
                 {threadMode && activeThread && activeBead ? (
                   <>
-                    <p className="eyebrow">Thread gate</p>
-                    <h2 className="mt-3 text-4xl font-semibold leading-none text-amber-100 sm:text-5xl">
-                      {activeThread.title}
-                    </h2>
-                    <p className="soft mt-3 text-lg leading-relaxed">{activeBead.insight}</p>
+                    <p className="passage-reading__meta">Thread gate</p>
+                    <h2 className="library-header__title mt-2">{activeThread.title}</h2>
+                    <p className="library-header__lede">{activeBead.insight}</p>
                     <p className="mt-3 font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
                       {activeBead.tradition} · from path “{track.title}”
                     </p>
-                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-stone-400">
+                    <p className="mt-2 max-w-[var(--reading-measure)] text-sm leading-relaxed text-stone-400">
                       Other path gates are hidden while you trace this theme. Complete the gate to advance to the next
                       bead.
                     </p>
                   </>
                 ) : (
                   <>
-                    <p className="eyebrow">Current path</p>
-                    <h2 className="mt-3 text-4xl font-semibold leading-none text-amber-100 sm:text-5xl">{track.title}</h2>
-                    <p className="soft mt-3 text-lg leading-relaxed">{track.outcome}</p>
-                    <p className="mt-4 leading-relaxed text-stone-300">{track.arc}</p>
+                    <p className="passage-reading__meta">Current path</p>
+                    <h2 className="library-header__title mt-2">{track.title}</h2>
+                    <p className="library-header__lede">{track.outcome}</p>
+                    <p className="mt-3 max-w-[var(--reading-measure)] leading-relaxed text-stone-300">{track.arc}</p>
                     <p className="mt-3 font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
                       {track.level} · {track.estimatedSessions}
                     </p>
@@ -648,8 +633,10 @@ export default function LearnPage() {
                     ) : null}
 
                     <div
-                      className={`rounded-3xl border p-5 ${
-                        threadMode || current ? "border-amber-200/60 bg-amber-100/10" : "border-amber-200/15 bg-black/10"
+                      className={`learn-gate border-t py-5 ${
+                        threadMode || current
+                          ? "border-amber-200/35"
+                          : "border-[rgb(240_201_121_/_0.12)]"
                       }`}
                     >
                       <div className="flex flex-wrap items-center justify-between gap-3">
@@ -728,15 +715,17 @@ export default function LearnPage() {
 
                       {isOpen ? (
                         <div className="mt-4 space-y-4">
-                          <p className="reading-prose leading-relaxed text-stone-200">{s.teaching}</p>
+                          <p className="reading-prose max-w-[var(--reading-measure)] leading-relaxed text-stone-200">
+                            {s.teaching}
+                          </p>
 
-                          <div className="practice-card p-4">
-                            <p className="layer-heading">Key idea</p>
-                            <p className="mt-2 leading-relaxed text-amber-50">{s.keyIdea}</p>
+                          <div className="passage-practice--plain mt-6">
+                            <p className="passage-layer__label">Key idea</p>
+                            <p className="passage-practice__body">{s.keyIdea}</p>
                           </div>
 
                           {s.misconception ? (
-                            <div className="rounded-2xl border border-rose-300/25 bg-rose-300/5 p-4">
+                            <div className="mt-5 max-w-[var(--reading-measure)] border-t border-rose-300/20 pt-4">
                               <p className="font-sans text-xs uppercase tracking-[0.16em] text-rose-200/80">
                                 Common misunderstanding
                               </p>
@@ -767,9 +756,9 @@ export default function LearnPage() {
                             </div>
                           </div>
 
-                          <div className="card p-4">
-                            <p className="layer-heading">Practice</p>
-                            <p className="mt-2 leading-relaxed text-stone-200">{s.practice}</p>
+                          <div className="passage-practice--plain">
+                            <p className="passage-layer__label">Practice</p>
+                            <p className="passage-practice__body">{s.practice}</p>
                           </div>
 
                           {item ? (

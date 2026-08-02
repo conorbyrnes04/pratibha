@@ -175,21 +175,23 @@ export default function SourcesPage() {
   );
 
   return (
-    <main className="page-shell max-w-4xl">
+    <main className="page-shell page-shell--reading">
       <div className="section-stack">
-        <header>
-          <p className="eyebrow">Attribution · Asteya</p>
-          <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Sources</h1>
-          <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
+        <header className="library-header">
+          <div className="library-header__atmosphere" aria-hidden>
+            <ArtBackdrop srcs={generatedArtPool("bg-sources")} variant="subtle" opacity={0.11} />
+          </div>
+          <div className="library-header__body">
+          <p className="passage-reading__meta">Attribution · Asteya</p>
+          <h1 className="library-header__title">Sources</h1>
+          <p className="library-header__lede">
             Pratibha is offered freely to students, so it must be built without stealing. Every English rendering here stands on
             a public-domain source or original authorship — and each text says exactly where it comes from.
           </p>
 
-          <section className="manuscript-card relative mt-8 overflow-hidden rounded-[22px] p-5 sm:p-6">
-            <ArtBackdrop srcs={generatedArtPool("bg-sources")} variant="banner" />
-            <div className="relative z-10">
+          <section className="mt-8 max-w-[var(--reading-measure)] border-t border-[rgb(240_201_121_/_0.14)] pt-5">
               <div className="flex flex-wrap items-baseline justify-between gap-3">
-                <h2 className="text-2xl font-semibold text-stone-100">How this corpus was reconciled</h2>
+                <h2 className="text-xl font-medium text-[rgb(250_237_205)]">How this corpus was reconciled</h2>
                 {summary.total_passages > 0 ? (
                   <p className="font-sans text-xs uppercase tracking-[0.18em] text-stone-500">
                     {summary.collections_in_corpus} texts · {summary.total_passages} passages
@@ -232,10 +234,10 @@ export default function SourcesPage() {
                   </div>
                 </Disclosure>
               </div>
-            </div>
           </section>
 
           {error ? <p className="mt-6 font-sans text-sm text-red-300/90">{error}</p> : null}
+          </div>
         </header>
 
         <Section title="In the library" as="h2">

@@ -41,85 +41,74 @@ export function ThreadCompleteCard({
 
   return (
     <div
-      className="thread-complete relative overflow-hidden rounded-3xl border border-amber-200/35 bg-amber-100/[0.06] p-6 sm:p-8"
+      className="thread-complete max-w-[var(--reading-measure)] border-t border-[rgb(240_201_121_/_0.2)] pt-6"
       style={{ ["--thread-hue" as string]: thread.hue }}
       role="status"
       aria-live="polite"
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-50"
-        style={{
-          background: `radial-gradient(ellipse at 20% 0%, hsl(${thread.hue} 55% 45% / 0.2), transparent 55%)`,
-        }}
-        aria-hidden
-      />
-      <div className="relative">
-        <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-amber-200/70">Thread complete</p>
-        <div className="mt-3 flex items-center gap-3">
-          <span className="flex h-12 w-12 items-center justify-center rounded-full border border-amber-200/35 bg-amber-100/10 text-2xl text-amber-100">
-            {thread.glyph}
-          </span>
-          <div>
-            <h3 className="text-3xl leading-none text-amber-100">{thread.title}</h3>
-            <p className="soft mt-2 text-sm leading-relaxed">{thread.subtitle}</p>
-          </div>
+      <p className="passage-reading__meta">Thread complete</p>
+      <div className="mt-2 flex items-start gap-3">
+        <span className="text-2xl text-amber-100/80" aria-hidden>
+          {thread.glyph}
+        </span>
+        <div>
+          <h3 className="library-header__title !text-[clamp(1.6rem,3.5vw,2.1rem)]">{thread.title}</h3>
+          <p className="library-header__lede !mt-2">{thread.subtitle}</p>
         </div>
-
-        <p className="mt-5 font-sans text-xs uppercase tracking-[0.16em] text-emerald-200/80">
-          {lit}/{total} beads lit via path gates
-        </p>
-
-        <ol className="mt-4 space-y-2">
-          {thread.steps.map((bead, i) => {
-            const done = !!progress[stepKey(bead.trackId, bead.stepId)];
-            return (
-              <li
-                key={bead.id}
-                className={`rounded-2xl border px-4 py-3 ${
-                  done ? "border-emerald-300/20 bg-emerald-300/5" : "border-white/8 bg-black/20"
-                }`}
-              >
-                <p className="font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/55">
-                  {done ? "✓" : i + 1} · {bead.tradition}
-                </p>
-                <p className="mt-1 text-sm leading-relaxed text-stone-200">{bead.insight}</p>
-              </li>
-            );
-          })}
-        </ol>
-
-        <div className="mt-6 flex flex-wrap gap-2">
-          <Button type="button" onClick={onDescendPath} size="sm">
-            Stay on this path →
-          </Button>
-          <Button type="button" onClick={onBackToMap} variant="secondary" size="sm">
-            Thread map
-          </Button>
-          <Button type="button" onClick={onLeaveThread} variant="secondary" size="sm">
-            Leave thread
-          </Button>
-        </div>
-
-        {others.length > 0 ? (
-          <div className="mt-8 border-t border-amber-200/10 pt-5">
-            <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-stone-500">Trace another</p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {others.map((t) => (
-                <Button
-                  key={t.id}
-                  type="button"
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => onTraceAnother(t.id)}
-                  className="rounded-full border border-white/12 px-3 font-sans text-[10px] uppercase tracking-[0.12em] text-amber-200/75 hover:border-amber-200/35 hover:bg-amber-200/5 hover:text-amber-100"
-                >
-                  {t.glyph} {t.title}
-                </Button>
-              ))}
-            </div>
-          </div>
-        ) : null}
       </div>
+
+      <p className="mt-5 font-sans text-xs uppercase tracking-[0.16em] text-emerald-200/80">
+        {lit}/{total} beads lit via path gates
+      </p>
+
+      <ol className="mt-3">
+        {thread.steps.map((bead, i) => {
+          const done = !!progress[stepKey(bead.trackId, bead.stepId)];
+          return (
+            <li
+              key={bead.id}
+              className="border-b border-[rgb(240_201_121_/_0.1)] py-3 last:border-b-0"
+            >
+              <p className="font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/55">
+                {done ? "✓" : i + 1} · {bead.tradition}
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-stone-200">{bead.insight}</p>
+            </li>
+          );
+        })}
+      </ol>
+
+      <div className="mt-6 flex flex-wrap gap-2">
+        <Button type="button" onClick={onDescendPath} size="sm">
+          Stay on this path →
+        </Button>
+        <Button type="button" onClick={onBackToMap} variant="secondary" size="sm">
+          Thread map
+        </Button>
+        <Button type="button" onClick={onLeaveThread} variant="secondary" size="sm">
+          Leave thread
+        </Button>
+      </div>
+
+      {others.length > 0 ? (
+        <div className="mt-8 border-t border-[rgb(240_201_121_/_0.12)] pt-5">
+          <p className="passage-reading__meta">Trace another</p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {others.map((t) => (
+              <Button
+                key={t.id}
+                type="button"
+                variant="ghost"
+                size="sm"
+                onClick={() => onTraceAnother(t.id)}
+                className="border border-white/12 px-3 font-sans text-[10px] uppercase tracking-[0.12em] text-amber-200/75 hover:border-amber-200/35 hover:bg-amber-200/5 hover:text-amber-100"
+              >
+                {t.glyph} {t.title}
+              </Button>
+            ))}
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

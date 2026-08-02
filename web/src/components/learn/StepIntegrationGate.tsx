@@ -31,7 +31,7 @@ export function StepIntegrationGate({
   if (done) return null;
 
   return (
-    <div className="rounded-2xl border border-emerald-300/25 bg-emerald-300/5 p-4">
+    <div className="max-w-[var(--reading-measure)] border-t border-emerald-300/25 pt-4">
       <p className="font-sans text-xs uppercase tracking-[0.16em] text-emerald-200/80">Gate · before you move on</p>
       <p className="mt-2 text-sm leading-relaxed text-stone-200">{integration}</p>
       <Label

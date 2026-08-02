@@ -8,5 +8,5 @@ export default function DailyRedirectPage() {
     window.location.replace("/#daily");
   }, []);
 
-  return <main className="page-shell soft">Opening today&apos;s passage…</main>;
+  return <main className="page-shell page-shell--reading soft">Opening today&apos;s passage…</main>;
 }
