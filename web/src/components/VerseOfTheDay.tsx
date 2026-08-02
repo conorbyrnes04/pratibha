@@ -7,6 +7,7 @@ import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { BrandMark } from "@/components/BrandMark";
 import { LayerBlock } from "@/components/LayerBlock";
+import { buttonVariants } from "@/components/ui/button";
 
 /**
  * The daily passage, formatted so the source **Original** (Devanagari, Tibetan
@@ -68,20 +69,20 @@ export function VerseOfTheDay({ item, preview = false }: { item: VerseItem; prev
               resonances, and daily practice — and to open the full Library, Paths, Study Chat, and Journal.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
-              <Link href="/login" className="btn-primary px-5 py-2.5">
+              <Link href="/login" className={buttonVariants({ size: "lg" })}>
                 Sign in to enter
               </Link>
-              <Link href="/login?mode=signup" className="btn-secondary px-5 py-2.5">
+              <Link href="/login?mode=signup" className={buttonVariants({ variant: "secondary", size: "lg" })}>
                 Create an account
               </Link>
             </div>
           </div>
         ) : (
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link href={readHref} className="btn-primary px-5 py-2.5">
+            <Link href={readHref} className={buttonVariants({ size: "lg" })}>
               Read today&apos;s passage
             </Link>
-            <Link href={askHref} className="btn-secondary px-5 py-2.5">
+            <Link href={askHref} className={buttonVariants({ variant: "secondary", size: "lg" })}>
               Ask about this
             </Link>
           </div>

@@ -13,6 +13,8 @@ import {
   traditionLabel,
 } from "@/lib/lexiconDisplay";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function GlossaryLemmaPage() {
   const params = useParams();
@@ -77,7 +79,7 @@ export default function GlossaryLemmaPage() {
         <section className="py-8 text-center">
           <p className="text-2xl text-amber-100">Lemma unavailable</p>
           <p className="soft mx-auto mt-3 max-w-md">{error || "Not found."}</p>
-          <Link href="/glossary" className="btn-secondary mt-6 inline-flex px-5 py-2.5 text-sm">
+          <Link href="/glossary" className={cn(buttonVariants({ variant: "secondary" }), "mt-6")}>
             Back to Glossary
           </Link>
         </section>
@@ -102,7 +104,7 @@ export default function GlossaryLemmaPage() {
               </p>
             ) : null}
             <p className="mt-5">
-              <Link href="/glossary/study" className="btn-secondary inline-flex px-4 py-2 text-sm">
+              <Link href="/glossary/study" className={buttonVariants({ variant: "secondary", size: "sm" })}>
                 Drill sacred terms →
               </Link>
             </p>

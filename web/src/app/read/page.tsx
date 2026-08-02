@@ -19,6 +19,7 @@ import { Glyph } from "@/components/Glyph";
 import { Disclosure } from "@/components/ui/Disclosure";
 import { displayPassageTitle, patanjaliSutraRef, sortPassagesForLibrary } from "@/lib/passageTitles";
 import { layerText, passagePreview, practiceText } from "@/lib/verseLayers";
+import { Input } from "@/components/ui/input";
 
 /** Library catalog lifecycle — never treat cold/fail as a true empty shelf. */
 type LibraryStatus = "loading" | "waking" | "ready" | "error";
@@ -248,10 +249,10 @@ function LibraryPageContent() {
           <div className="grid gap-4 lg:grid-cols-[2fr_1fr]">
             <label className="block">
               <p className="layer-heading mb-2">Search</p>
-              <input
+              <Input
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
-                className="input-field w-full rounded-[18px] px-4 py-3"
+                className="w-full rounded-[18px] px-4 py-3"
                 placeholder={showShelf ? "Search across all texts..." : "Search passages in this text..."}
               />
             </label>

@@ -10,6 +10,8 @@ import {
   romanization,
   traditionLabel,
 } from "@/lib/lexiconDisplay";
+import { buttonVariants } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 function fold(s: string): string {
   return s
@@ -94,7 +96,7 @@ export default function GlossaryPage() {
           Terms that do philosophical work across the manuscript — senses by tradition, not a flat dictionary.
         </p>
         <p className="mt-5">
-          <Link href="/glossary/study" className="btn-secondary inline-flex px-5 py-2.5 text-sm">
+          <Link href="/glossary/study" className={buttonVariants({ variant: "secondary" })}>
             Study by language →
           </Link>
         </p>
@@ -103,10 +105,10 @@ export default function GlossaryPage() {
       <div className="mt-8 space-y-4">
         <label className="block">
           <span className="sr-only">Search glossary</span>
-          <input
+          <Input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            className="input-field w-full rounded-lg px-3 py-2.5"
+            className="w-full"
             placeholder="Search lemmas, scripts, aliases…"
             autoComplete="off"
             spellCheck={false}

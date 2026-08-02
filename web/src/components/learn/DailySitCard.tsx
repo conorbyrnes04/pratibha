@@ -1,6 +1,7 @@
 "use client";
 
 import type { LearningStepSpec, LearningTrack } from "@/lib/learningPaths";
+import { Button } from "@/components/ui/button";
 
 type DailySitCardProps = {
   track: LearningTrack;
@@ -26,9 +27,9 @@ export function DailySitCard({ track, step, stepIndex, onBegin }: DailySitCardPr
           From your current path · Step {stepIndex + 1}: {step.title}
         </p>
         <p className="mt-4 leading-relaxed text-stone-200">{step.practice}</p>
-        <button type="button" onClick={onBegin} className="btn-primary mt-4 px-5 py-2 text-sm">
+        <Button type="button" onClick={onBegin} className="mt-4">
           Begin practice →
-        </button>
+        </Button>
         <p className="soft mt-3 font-sans text-[10px] uppercase tracking-[0.14em] text-stone-500">
           {track.title}
         </p>

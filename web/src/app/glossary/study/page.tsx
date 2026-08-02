@@ -21,6 +21,7 @@ import type {
   StudyDeckId,
 } from "@/lib/lexiconStudyTypes";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
+import { Button } from "@/components/ui/button";
 
 type Phase = "pick" | "session" | "done";
 
@@ -384,9 +385,9 @@ export default function GlossaryStudyPage() {
                 </p>
               </>
             ) : (
-              <button type="button" className="btn-primary px-6 py-2.5" onClick={() => setFlipped(true)}>
+              <Button type="button" size="lg" onClick={() => setFlipped(true)}>
                 Reveal
-              </button>
+              </Button>
             )}
           </div>
         </section>
@@ -401,12 +402,12 @@ export default function GlossaryStudyPage() {
             {sessionAgain > 0 ? ` · ${sessionAgain} marked again` : " · clean pass"}.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <button type="button" className="btn-primary px-6 py-2.5" onClick={() => startDeck(activeDeck)}>
+            <Button type="button" size="lg" onClick={() => startDeck(activeDeck)}>
               Study again
-            </button>
-            <button type="button" className="btn-secondary px-6 py-2.5" onClick={() => setPhase("pick")}>
+            </Button>
+            <Button type="button" variant="secondary" size="lg" onClick={() => setPhase("pick")}>
               Choose another deck
-            </button>
+            </Button>
           </div>
           <p className="soft mt-8 font-sans text-sm">
             <Link

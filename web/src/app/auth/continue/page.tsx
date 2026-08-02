@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
 import { getSupabase } from "@/lib/supabaseClient";
+import { buttonVariants } from "@/components/ui/button";
 
 /**
  * Client-side PKCE fallback when the server route could not read the
@@ -53,10 +54,10 @@ function ContinueInner() {
       <p className="soft mt-3 font-sans text-sm">{message}</p>
       {failed ? (
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link href="/login" className="btn-secondary inline-flex px-4 py-2 text-sm">
+          <Link href="/login" className={buttonVariants({ variant: "secondary", size: "sm" })}>
             Back to sign in
           </Link>
-          <Link href="/" className="btn-secondary inline-flex px-4 py-2 text-sm">
+          <Link href="/" className={buttonVariants({ variant: "secondary", size: "sm" })}>
             Home
           </Link>
         </div>

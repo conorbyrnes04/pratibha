@@ -12,6 +12,7 @@ import { ArtBackdrop } from "@/components/ArtImage";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
 import { getVerseLayers } from "@/lib/verseLayers";
+import { Button, buttonVariants } from "@/components/ui/button";
 
 export default function RandomPage() {
   const [item, setItem] = useState<VerseItem | null>(null);
@@ -99,13 +100,13 @@ export default function RandomPage() {
             options={buildCollectionOptions(allItems, collections)}
           />
         </div>
-        <button onClick={() => nextOne(collection)} className="btn-primary px-5 py-2.5">
+        <Button type="button" size="lg" onClick={() => nextOne(collection)}>
           Another one
-        </button>
-        <Link href="/" className="btn-secondary px-5 py-2.5">
+        </Button>
+        <Link href="/" className={buttonVariants({ variant: "secondary", size: "lg" })}>
           Home
         </Link>
-        <Link href="/read" className="btn-secondary px-5 py-2.5">
+        <Link href="/read" className={buttonVariants({ variant: "secondary", size: "lg" })}>
           Library
         </Link>
       </div>
@@ -116,9 +117,9 @@ export default function RandomPage() {
         <section className="card mt-6 p-5">
           <p className="text-amber-100">{error}</p>
           <div className="mt-4">
-            <button onClick={() => nextOne(collection)} className="btn-primary px-5 py-2.5">
+            <Button type="button" size="lg" onClick={() => nextOne(collection)}>
               Retry
-            </button>
+            </Button>
           </div>
         </section>
       ) : item ? (
@@ -144,12 +145,12 @@ export default function RandomPage() {
               </div>
             ) : null}
             <div className="mt-5 flex flex-wrap gap-3">
-              <Link href={`/read/${encodeURIComponent(item._id)}`} className="btn-primary px-5 py-2.5">
+              <Link href={`/read/${encodeURIComponent(item._id)}`} className={buttonVariants({ size: "lg" })}>
                 Open full page
               </Link>
               <Link
                 href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain`}
-                className="btn-secondary px-5 py-2.5"
+                className={buttonVariants({ variant: "secondary", size: "lg" })}
               >
                 Study this passage
               </Link>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 
 type StepIntegrationGateProps = {
   stepId: string;
@@ -39,14 +40,9 @@ export function StepIntegrationGate({
         />
         <span>I recognize this in experience — or I&apos;m willing to keep practicing at this gate.</span>
       </label>
-      <button
-        type="button"
-        onClick={onComplete}
-        disabled={!ready}
-        className="btn-primary mt-4 px-4 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-45"
-      >
+      <Button type="button" onClick={onComplete} disabled={!ready} className="mt-4">
         {completeLabel || "Mark complete"}
-      </button>
+      </Button>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import {
   findThread,
   type LearningThread,
 } from "@/lib/learningThreads";
+import { Button } from "@/components/ui/button";
 
 type ThreadCompleteCardProps = {
   threadId: string;
@@ -88,15 +89,15 @@ export function ThreadCompleteCard({
         </ol>
 
         <div className="mt-6 flex flex-wrap gap-2">
-          <button type="button" onClick={onDescendPath} className="btn-primary px-4 py-2 text-sm">
+          <Button type="button" onClick={onDescendPath} size="sm">
             Stay on this path →
-          </button>
-          <button type="button" onClick={onBackToMap} className="btn-secondary px-4 py-2 text-sm">
+          </Button>
+          <Button type="button" onClick={onBackToMap} variant="secondary" size="sm">
             Thread map
-          </button>
-          <button type="button" onClick={onLeaveThread} className="btn-secondary px-4 py-2 text-sm">
+          </Button>
+          <Button type="button" onClick={onLeaveThread} variant="secondary" size="sm">
             Leave thread
-          </button>
+          </Button>
         </div>
 
         {others.length > 0 ? (

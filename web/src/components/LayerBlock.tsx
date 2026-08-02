@@ -1,9 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import type { KeyTerm, PratibhaLayer, Resonance } from "@/lib/types";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { containsDevanagari, containsTibetan } from "@/lib/sanskritScript";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 
 /**
  * Pick the font treatment for an "Original" layer. Devanagari (or any Indic
@@ -50,6 +58,7 @@ export function LayerBlock({
   const cardClass = isOriginal ? "manuscript-card" : isPractice ? "practice-card" : "card";
   const longBody = (layer.body || "").length > 1200;
   const startCollapsed = !bare && variant === "card" && (defaultCollapsed || (isAppendix && longBody));
+  const [open, setOpen] = useState(false);
 
   if (bare) {
     return (
@@ -85,22 +94,28 @@ export function LayerBlock({
   return (
     <section className={`${cardClass} mt-5 p-5 sm:mt-6 sm:p-6`}>
       {startCollapsed ? (
-        <details className="group">
-          <summary className="cursor-pointer list-none">
+        <Collapsible open={open} onOpenChange={setOpen}>
+          <CollapsibleTrigger className="w-full cursor-pointer text-left outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-bright)]">
             <div className="flex items-center justify-between gap-3">
               <h2 className="layer-heading">{layer.label}</h2>
-              <span className="font-sans text-xs text-stone-400 group-open:hidden">Expand</span>
+              <span className="font-sans text-xs text-stone-400">{open ? "Collapse" : "Expand"}</span>
             </div>
-            <p className="soft mt-2 text-sm group-open:hidden line-clamp-3">{layer.body}</p>
-          </summary>
-          <div
-            className={`chat-markdown mt-4 ${
-              isOriginal ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100` : compact ? "text-sm leading-relaxed" : "reading-prose"
-            }`}
-          >
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{layer.body || ""}</ReactMarkdown>
-          </div>
-        </details>
+            {!open ? <p className="soft mt-2 line-clamp-3 text-sm">{layer.body}</p> : null}
+          </CollapsibleTrigger>
+          <CollapsibleContent>
+            <div
+              className={`chat-markdown mt-4 ${
+                isOriginal
+                  ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100`
+                  : compact
+                    ? "text-sm leading-relaxed"
+                    : "reading-prose"
+              }`}
+            >
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{layer.body || ""}</ReactMarkdown>
+            </div>
+          </CollapsibleContent>
+        </Collapsible>
       ) : (
         <>
           <h2 className="layer-heading">{layer.label}</h2>

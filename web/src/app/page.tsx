@@ -13,6 +13,7 @@ import { InkGlyph } from "@/components/InkGlyph";
 import { Section } from "@/components/ui/Section";
 import { Disclosure } from "@/components/ui/Disclosure";
 import { useAuth } from "@/components/AuthProvider";
+import { buttonVariants } from "@/components/ui/button";
 
 const ALSO_IN_MANUSCRIPT = [
   { href: "/read", label: "Library", hint: "Browse the full corpus", glyph: "oak" as const },
@@ -76,10 +77,10 @@ export default function Home() {
           ) : (
             <section className="manuscript-card overflow-hidden p-6 sm:p-10">
               <div className="relative z-10 flex flex-wrap gap-3">
-                <Link href="/login" className="btn-primary px-5 py-2.5">
+                <Link href="/login" className={buttonVariants({ size: "lg" })}>
                   Sign in to enter
                 </Link>
-                <Link href="/login?mode=signup" className="btn-secondary px-5 py-2.5">
+                <Link href="/login?mode=signup" className={buttonVariants({ variant: "secondary", size: "lg" })}>
                   Create an account
                 </Link>
               </div>
@@ -131,7 +132,7 @@ export default function Home() {
                 Open a passage, let it read you back, then practice one concrete shift.
               </blockquote>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Link href={readHref} className="btn-primary px-5 py-2.5">
+                <Link href={readHref} className={buttonVariants({ size: "lg" })}>
                   Open the Library
                 </Link>
               </div>

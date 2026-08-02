@@ -35,6 +35,8 @@ import type { VerseItem } from "@/lib/types";
 import { passagePreview } from "@/lib/verseLayers";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageTitle } from "@/lib/passageTitles";
+import { cn } from "@/lib/utils";
+import { Button, buttonVariants } from "@/components/ui/button";
 
 function actionLabel(chatMode?: string): string {
   if (chatMode === "practice") return "Practice with it";
@@ -407,7 +409,7 @@ export default function LearnPage() {
                     : heroTrack.focus}
                 </p>
               </div>
-              <span className="btn-primary px-5 py-2 text-sm">{startedTrackId ? "Continue →" : "Begin →"}</span>
+              <span className={buttonVariants()}>{startedTrackId ? "Continue →" : "Begin →"}</span>
             </div>
           </div>
         </button>
@@ -497,22 +499,26 @@ export default function LearnPage() {
               </div>
               {!threadMode ? (
                 <div className="flex flex-wrap items-center gap-2">
-                  <button
+                  <Button
                     type="button"
                     onClick={exportProgress}
                     disabled={!hydrated}
-                    className="btn-secondary px-4 py-2 text-sm disabled:opacity-40"
+                    variant="secondary"
+                    size="sm"
+                    className="disabled:opacity-40"
                   >
                     Export progress
-                  </button>
-                  <button
+                  </Button>
+                  <Button
                     type="button"
                     onClick={openImportPicker}
                     disabled={!hydrated}
-                    className="btn-secondary px-4 py-2 text-sm disabled:opacity-40"
+                    variant="secondary"
+                    size="sm"
+                    className="disabled:opacity-40"
                   >
                     Import progress
-                  </button>
+                  </Button>
                   <button
                     type="button"
                     disabled={!hydrated}
@@ -524,7 +530,7 @@ export default function LearnPage() {
                         resetTrack(track.id, track);
                       }
                     }}
-                    className="btn-secondary px-4 py-2 text-sm disabled:opacity-40"
+                    className={cn(buttonVariants({ variant: "secondary", size: "sm" }), "disabled:opacity-40")}
                   >
                     Reset path
                   </button>
@@ -547,9 +553,9 @@ export default function LearnPage() {
                   />
                 </div>
               ) : (
-                <button type="button" onClick={descendPathFromThread} className="btn-secondary px-4 py-2 text-sm">
+                <Button type="button" onClick={descendPathFromThread} variant="secondary" size="sm">
                   Show full path
-                </button>
+                </Button>
               )}
             </div>
             {importStatus ? (
@@ -791,7 +797,7 @@ export default function LearnPage() {
                                     const next = activeThread.steps[idx + 1];
                                     if (next) openBead(activeThread.id, next.id);
                                   }}
-                                  className="btn-primary px-4 py-2 text-sm"
+                                  className={buttonVariants({ size: "sm" })}
                                 >
                                   Next bead →
                                 </button>
@@ -801,7 +807,7 @@ export default function LearnPage() {
                                   onClick={() => {
                                     if (activeThreadId) setThreadCeremonyId(activeThreadId);
                                   }}
-                                  className="btn-primary px-4 py-2 text-sm"
+                                  className={buttonVariants({ size: "sm" })}
                                 >
                                   Finish thread
                                 </button>
@@ -810,13 +816,13 @@ export default function LearnPage() {
                           ) : null}
 
                           <div className="flex flex-wrap gap-2 pt-1">
-                            <Link href={readHref} className="btn-primary px-4 py-2 text-sm">
+                            <Link href={readHref} className={buttonVariants({ size: "sm" })}>
                               {openLabel}
                             </Link>
-                            <Link href={chatHref} className="btn-secondary px-4 py-2 text-sm">
+                            <Link href={chatHref} className={buttonVariants({ variant: "secondary", size: "sm" })}>
                               {actionLabel(s.chatMode)}
                             </Link>
-                            <Link href="/journal" className="btn-secondary px-4 py-2 text-sm">
+                            <Link href="/journal" className={buttonVariants({ variant: "secondary", size: "sm" })}>
                               All journal notes
                             </Link>
                           </div>
@@ -827,7 +833,7 @@ export default function LearnPage() {
                                 type="button"
                                 disabled={idx <= 0}
                                 onClick={() => goToStepIndex(idx - 1)}
-                                className="btn-secondary px-4 py-2 text-sm disabled:opacity-40"
+                                className={cn(buttonVariants({ variant: "secondary", size: "sm" }), "disabled:opacity-40")}
                               >
                                 ← Previous
                               </button>
@@ -838,7 +844,7 @@ export default function LearnPage() {
                                 <button
                                   type="button"
                                   onClick={() => goToStepIndex(idx + 1)}
-                                  className="btn-primary px-4 py-2 text-sm"
+                                  className={buttonVariants({ size: "sm" })}
                                 >
                                   {done ? "Next gate →" : "Skip to next →"}
                                 </button>

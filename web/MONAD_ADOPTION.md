@@ -58,17 +58,18 @@ Phase 2 work lives on `feature/monad-phase2-chrome` so it can be dropped without
 ### Phase 2 — Chrome → kit
 Migrate low-risk surfaces first:
 1. [x] Login / account
-2. [x] Manuscript-tuned `Button` / `Input` / `Textarea` (remaining pages still use `.btn-*` until touched)
+2. [x] Manuscript-tuned `Button` / `Input` / `Textarea` (sitewide; prefer `KitLink` / `buttonVariants` for Next links — never Base UI `render={<Link />}`)
 3. [x] `SiteNav` (Sheet + More menu) + `AuthMenu` (DropdownMenu)
 4. [x] Journal list chrome
 5. [x] Chat composer chrome (keep streaming / RAG logic)
+6. [x] Remaining pages: home, VOTD, random, read, learn chrome, auth continue
 - Branch: `feature/monad-phase2-chrome`
 - Rollback tag: `pre-monad-phase2`
 
 ### Phase 3 — Reading & study
-- Passage: Collapsible/Accordion for layers; keep Original / IAST / script fonts
-- Glossary + Lexicon study: kit controls + existing flip/SRS
-- Library: Combobox/Command for filters; keep collection art
+- [x] Passage: `Collapsible` for collapsed layers; keep Original / IAST / script fonts
+- [x] Glossary + Lexicon study: kit `Input` / `Button` + existing flip/SRS (tradition chips keep `.glossary-filter`)
+- [ ] Library: Combobox/Command for filters; keep collection art
 
 ### Phase 4 — Learn / brand (last)
 - Paths, threads, yantra — mostly stay custom

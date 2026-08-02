@@ -6,6 +6,8 @@ import { useAuth } from "@/components/AuthProvider";
 import { deleteJournalNoteRemote, pushJournalNote } from "@/lib/journalCloud";
 import { deleteJournalNote, notesForPassage, upsertJournalNote } from "@/lib/journalStorage";
 import { practiceText } from "@/lib/verseLayers";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 type JournalPanelProps =
   | {
@@ -74,16 +76,16 @@ export function JournalPanel(props: JournalPanelProps) {
     <section className="card p-4">
       <p className="layer-heading">Journal</p>
       <p className="soft mt-2 text-sm leading-relaxed">{prompt}</p>
-      <textarea
+      <Textarea
         value={body}
         onChange={(event) => setBody(event.target.value)}
         rows={4}
-        className="input-field mt-3 w-full rounded-2xl p-3 text-sm"
+        className="mt-3 w-full rounded-2xl text-sm"
         placeholder="Write a note, question, or practice observation..."
       />
-      <button onClick={save} disabled={!body.trim()} className="btn-primary mt-3 px-4 py-2 text-sm disabled:opacity-50">
+      <Button onClick={save} disabled={!body.trim()} size="sm" className="mt-3">
         Save note
-      </button>
+      </Button>
       <div className="mt-4 space-y-3">
         {notes.length === 0 ? (
           <p className="soft text-sm">No notes for this passage yet.</p>

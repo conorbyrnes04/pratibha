@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { VerseItem } from "@/lib/types";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { sortComparePassages } from "@/lib/corpusFilters";
+import { Input } from "@/components/ui/input";
 
 type ComparePassageSelectProps = {
   label: string;
@@ -69,12 +70,12 @@ export function ComparePassageSelect({
       </button>
       {open ? (
         <div className="filter-select__menu p-2">
-          <input
+          <Input
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder={`Search ${collection || "text"}…`}
-            className="input-field mb-2 w-full rounded-xl px-3 py-2 text-sm"
+            className="mb-2 w-full text-sm"
             autoFocus
           />
           <ul role="listbox" className="max-h-56 overflow-y-auto">

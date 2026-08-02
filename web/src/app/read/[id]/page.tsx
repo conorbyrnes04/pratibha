@@ -28,6 +28,7 @@ import {
 import { relatedPassages } from "@/lib/relatedPassages";
 import { preferStudyUnits } from "@/lib/corpusFilters";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
+import { buttonVariants } from "@/components/ui/button";
 
 function practiceFallback(item: VerseItem): string {
   if ((item.themes || []).includes("witness")) {
@@ -144,7 +145,7 @@ export default function VerseDetailPage() {
         {prevPassage ? (
           <Link
             href={passageHref(prevPassage._id)}
-            className="btn-secondary px-4 py-2"
+            className={buttonVariants({ variant: "secondary" })}
             aria-label={`Previous: ${displayPassageTitle(prevPassage)}`}
           >
             ← Previous
@@ -158,7 +159,7 @@ export default function VerseDetailPage() {
         {nextPassage ? (
           <Link
             href={passageHref(nextPassage._id)}
-            className="btn-primary px-4 py-2"
+            className={buttonVariants()}
             aria-label={`Next: ${displayPassageTitle(nextPassage)}`}
           >
             Next →
@@ -325,13 +326,13 @@ export default function VerseDetailPage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain`}
-              className="btn-primary px-5 py-2.5"
+              className={buttonVariants({ size: "lg" })}
             >
               Guided Study
             </Link>
             <Link
               href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=practice`}
-              className="btn-secondary px-5 py-2.5"
+              className={buttonVariants({ variant: "secondary", size: "lg" })}
             >
               Practice chat
             </Link>
