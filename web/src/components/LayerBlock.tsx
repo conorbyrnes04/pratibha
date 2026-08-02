@@ -78,9 +78,13 @@ export function LayerBlock({
       isPractice
         ? "passage-practice"
         : `passage-layer passage-layer--${layer.kind}`;
+    const labelClass =
+      layer.kind === "iast" || layer.kind === "original"
+        ? "passage-layer__label passage-layer__label--muted"
+        : "passage-layer__label";
     return (
       <section className={shell}>
-        <h2 className="layer-heading">{layer.label}</h2>
+        <h2 className={labelClass}>{layer.label}</h2>
         {layer.kind === "translation" && layer.layer_provenance ? (
           <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-400">
             {layer.layer_provenance}

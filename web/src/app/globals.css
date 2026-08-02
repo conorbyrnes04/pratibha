@@ -79,6 +79,12 @@
   --input: rgb(240 201 121 / 0.22);
   --ring: #f0c979;
   --radius: 0.625rem;
+
+  /* Editorial reading measure (Phase A — Medium/Substack-inspired) */
+  --reading-shell: 42rem;
+  --reading-measure: 40rem;
+  --reading-size: 1.28rem;
+  --reading-leading: 1.72;
 }
 
 * {
@@ -273,6 +279,12 @@ button {
   width: min(100% - 2rem, 72rem);
   margin-inline: auto;
   padding-block: 2.5rem 4rem;
+}
+
+/* Narrow shell so crumbs + verse share one editorial column */
+.page-shell--reading {
+  width: min(100% - 2rem, var(--reading-shell));
+  padding-block: 1.35rem 4rem;
 }
 
 .eyebrow {
@@ -1556,48 +1568,139 @@ select:focus-visible {
   line-height: 1.66;
 }
 
-/* ---- Passage reading: calm unboxed layers + nav rhythm ---- */
+/* ---- Passage reading: editorial column (Phase A) ---- */
 .passage-reading {
   --passage-radius: 20px;
-  max-width: 46rem;
+  position: relative;
+  max-width: var(--reading-shell);
   margin-inline: auto;
-  padding: 0 1.25rem 3.5rem;
+  padding: 0 0 3.5rem;
 }
 
-.passage-reading__hero {
-  padding: 2.25rem 0 2rem;
-  text-align: center;
-  color: var(--muted);
+.passage-reading__atmosphere {
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 0;
+  height: min(22rem, 48vh);
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, #000 10%, transparent 92%);
+  mask-image: linear-gradient(to bottom, #000 10%, transparent 92%);
 }
 
-.passage-reading__hero h1 {
-  margin: 0 0 0.65rem;
-  font-size: clamp(1.65rem, 4vw, 2.05rem);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.25;
-  color: var(--foreground);
+.passage-reading__column {
+  position: relative;
+  z-index: 1;
 }
 
-.passage-reading__hero .soft,
-.passage-reading__hero p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.55;
+.passage-reading__crumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.55rem;
+  margin-bottom: 1.75rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
   color: var(--muted-2);
 }
 
+.passage-reading__crumb a {
+  color: var(--muted-2);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.passage-reading__crumb a:hover {
+  color: var(--accent-bright);
+}
+
+.passage-reading__crumb-sep {
+  opacity: 0.45;
+  user-select: none;
+}
+
+.passage-reading__header {
+  padding: 0.25rem 0 1.75rem;
+  text-align: left;
+  color: var(--muted);
+}
+
+.passage-reading__meta {
+  margin: 0 0 0.85rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.passage-reading__title {
+  margin: 0;
+  max-width: var(--reading-measure);
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: clamp(1.85rem, 4.5vw, 2.45rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+  color: var(--foreground);
+}
+
+.passage-reading__deck {
+  margin: 1rem 0 0;
+  max-width: var(--reading-measure);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.passage-reading__toggle {
+  margin: 0 0 0.5rem;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.passage-reading__toggle:hover {
+  color: var(--accent-bright);
+}
+
+/* Quiet layer labels inside the reading column (not shouty UI eyebrows) */
+.passage-layer__label {
+  margin: 0 0 0.65rem;
+  color: var(--muted-2);
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.passage-layer__label--muted {
+  color: rgb(168 152 130 / 0.65);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
 .passage-layer {
-  max-width: 40rem;
-  margin-inline: auto;
-  padding: 1.35rem 0;
+  max-width: var(--reading-measure);
+  margin-inline: auto 0;
+  padding: 1.15rem 0;
   border: none;
   background: transparent;
   box-shadow: none;
 }
 
 .passage-layer + .passage-layer {
-  margin-top: 0.25rem;
+  margin-top: 0.15rem;
 }
 
 .passage-layer--original {
@@ -1606,18 +1709,18 @@ select:focus-visible {
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--foreground);
-  text-align: center;
+  text-align: left;
 }
 
 .passage-layer--translation {
-  margin-top: 0.75rem;
-  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  padding-top: 0.35rem;
 }
 
 .passage-layer--translation.reading-prose,
 .passage-layer--translation .reading-prose {
-  font-size: 1.32rem;
-  line-height: 1.88;
+  font-size: var(--reading-size);
+  line-height: var(--reading-leading);
 }
 
 .passage-layer--translation p + p {
@@ -1625,8 +1728,8 @@ select:focus-visible {
 }
 
 .passage-practice {
-  max-width: 40rem;
-  margin: 2rem auto 0;
+  max-width: var(--reading-measure);
+  margin: 2rem 0 0;
   padding: 1.15rem 1.25rem 1.15rem 1.35rem;
   border: 1px solid rgb(216 168 74 / 0.22);
   border-left: 3px solid rgb(216 168 74 / 0.45);
@@ -1645,15 +1748,15 @@ select:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 1rem 1.5rem;
-  max-width: 40rem;
-  margin: 2.75rem auto 0;
+  max-width: var(--reading-measure);
+  margin: 2.75rem 0 0;
   padding: 1.75rem 0 0.5rem;
   border-top: 1px solid var(--line);
 }
 
 .passage-reading__secondary {
-  max-width: 40rem;
-  margin: 2.5rem auto 0;
+  max-width: var(--reading-measure);
+  margin: 2.5rem 0 0;
   padding-top: 1.5rem;
   color: var(--muted-2);
   font-size: 0.98rem;
@@ -1668,8 +1771,8 @@ select:focus-visible {
 .commentary-holo {
   --holo-radius: 20px;
   position: relative;
-  max-width: 40rem;
-  margin: 1.75rem auto 0;
+  max-width: var(--reading-measure);
+  margin: 1.75rem 0 0;
   padding: 0;
   overflow: hidden;
   border-radius: var(--holo-radius);

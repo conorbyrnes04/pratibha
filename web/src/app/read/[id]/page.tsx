@@ -7,11 +7,9 @@ import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool } from "@/lib/collectionImages";
-import { unitGlyph } from "@/lib/glyphs";
-import { ArtBackdrop } from "@/components/ArtImage";
-import { Glyph } from "@/components/Glyph";
 import { displayPassageTitle, sortPassagesInText } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
+import { ReadingShell } from "@/components/ReadingShell";
 import { CommentaryTeaser } from "@/components/CommentaryTeaser";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
@@ -25,6 +23,7 @@ import {
   passagePreview,
   practiceText,
 } from "@/lib/verseLayers";
+import { firstSentence } from "@/lib/textPreview";
 import { relatedPassages } from "@/lib/relatedPassages";
 import { preferStudyUnits } from "@/lib/corpusFilters";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
@@ -119,10 +118,10 @@ export default function VerseDetailPage() {
   );
 
   if (loading) {
-    return <main className="page-shell soft">Opening the manuscript...</main>;
+    return <main className="page-shell page-shell--reading soft">Opening the manuscript...</main>;
   }
   if (!item) {
-    return <main className="page-shell soft">Passage not found.</main>;
+    return <main className="page-shell page-shell--reading soft">Passage not found.</main>;
   }
 
   const layers = getStudyLayers(item);
@@ -174,54 +173,60 @@ export default function VerseDetailPage() {
     ? `/read?collection=${encodeURIComponent(item.collection)}`
     : "/read";
 
-  return (
-    <main className="page-shell">
-      <div className="flex flex-wrap items-center gap-4">
-        {backHref ? (
-          <Link href={backHref} className="font-sans text-sm text-amber-200 hover:text-amber-100">
-            ← Back to path
-          </Link>
-        ) : null}
-        <Link href={collectionHref} className="soft font-sans text-sm hover:text-amber-100">
-          ← Back to text
-        </Link>
-        <Link href="/read" className="soft font-sans text-sm hover:text-amber-100">
-          Library
-        </Link>
-      </div>
+  const translationBody = (translationLayer?.body || passagePreview(item) || "").trim();
+  const translationPreview = firstSentence(translationBody);
+  /** Deck only when it teases a longer translation (not the whole verse). */
+  const deck =
+    translationPreview &&
+    translationPreview.length > 12 &&
+    translationPreview.length < 200 &&
+    translationBody.length > translationPreview.length + 40
+      ? translationPreview
+      : null;
 
-      <div className="passage-reading mt-4">
-        <header className="passage-reading__hero relative overflow-hidden rounded-[1.5rem]">
-          <ArtBackdrop srcs={collectionArtPool(item.collection)} variant="banner" priority />
-          <div className="relative z-10 px-4 py-8 sm:px-8">
-            <div className="mx-auto flex max-w-xl flex-col items-center gap-3">
-              <span className="passage-hero__glyph inline-flex" aria-hidden>
-                <Glyph name={unitGlyph(item._id)} size="md" zoom />
+  return (
+    <main className="page-shell page-shell--reading">
+      <ReadingShell artSrcs={collectionArtPool(item.collection)}>
+        <nav className="passage-reading__crumb" aria-label="Breadcrumb">
+          <Link href="/read">Library</Link>
+          {item.collection ? (
+            <>
+              <span className="passage-reading__crumb-sep" aria-hidden>
+                /
               </span>
-              <p className="eyebrow">
-                {displayCollectionName(item.collection) || "Pratibha"}
-                {item.section ? ` · ${item.section}` : ""}
-                {siblings.length > 1 && siblingIndex >= 0
-                  ? ` · ${siblingIndex + 1} of ${siblings.length}`
-                  : ""}
-              </p>
-              <h1 className="text-3xl font-semibold leading-[1.1] tracking-[-0.03em] text-stone-100 sm:text-4xl">
-                {displayPassageTitle(item)}
-              </h1>
-            </div>
-          </div>
+              <Link href={collectionHref}>{displayCollectionName(item.collection)}</Link>
+            </>
+          ) : null}
+          {backHref ? (
+            <>
+              <span className="passage-reading__crumb-sep" aria-hidden>
+                ·
+              </span>
+              <Link href={backHref}>Path</Link>
+            </>
+          ) : null}
+        </nav>
+
+        <header className="passage-reading__header">
+          <p className="passage-reading__meta">
+            {displayCollectionName(item.collection) || "Pratibha"}
+            {item.section ? ` · ${item.section}` : ""}
+            {siblings.length > 1 && siblingIndex >= 0
+              ? ` · ${siblingIndex + 1} of ${siblings.length}`
+              : ""}
+          </p>
+          <h1 className="passage-reading__title">{displayPassageTitle(item)}</h1>
+          {deck ? <p className="passage-reading__deck">{deck}</p> : null}
         </header>
 
         {originalLayer || iastLayer ? (
-          <div className="mt-2 text-center">
-            <button
-              type="button"
-              className="soft font-sans text-xs tracking-wide hover:text-amber-100"
-              onClick={() => setShowOriginal((v) => !v)}
-            >
-              {showOriginal ? "Hide original" : "Show original"}
-            </button>
-          </div>
+          <button
+            type="button"
+            className="passage-reading__toggle"
+            onClick={() => setShowOriginal((v) => !v)}
+          >
+            {showOriginal ? "Hide original" : "Show original"}
+          </button>
         ) : null}
 
         {showOriginal && originalLayer ? (
@@ -235,7 +240,7 @@ export default function VerseDetailPage() {
           <LayerBlock layer={translationLayer} variant="plain" />
         ) : (
           <section className="passage-layer passage-layer--translation">
-            <h2 className="layer-heading">Translation</h2>
+            <h2 className="passage-layer__label">Translation</h2>
             <p className="reading-prose mt-4">{passagePreview(item)}</p>
           </section>
         )}
@@ -382,7 +387,7 @@ export default function VerseDetailPage() {
             </div>
           ) : null}
         </div>
-      </div>
+      </ReadingShell>
     </main>
   );
 }
