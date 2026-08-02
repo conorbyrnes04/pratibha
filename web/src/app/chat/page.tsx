@@ -17,8 +17,11 @@ import { ArtBackdrop } from "@/components/ArtImage";
 import { Disclosure } from "@/components/ui/Disclosure";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { displayPassageSourceLine, displayPassageTitle } from "@/lib/passageTitles";
-import { passagePreview } from "@/lib/verseLayers";
+import {
+  displayPassageLocation,
+  displayPassageSourceLine,
+  displayPassageTitle,
+} from "@/lib/passageTitles";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -87,14 +90,10 @@ export default function ChatPage() {
     if (mode && ["question", "explain", "compare", "practice"].includes(mode)) {
       setChatMode(mode);
       if (mode === "compare") setCompareMode(true);
-      if (!fromUrl) {
-        setQ(
-          mode === "practice"
-            ? "Give me one concrete practice from this passage."
-            : mode === "compare"
-              ? "Compare these two traditions on the question above."
-              : "Guide me through this passage.",
-        );
+      // Leave the box empty when a passage is pinned so grayed suggestions can show.
+      // Only prefill when the URL explicitly carries `q=…`.
+      if (!fromUrl && !verseId && mode === "compare") {
+        setQ("Compare these two traditions on the question above.");
       }
     }
 
@@ -173,26 +172,43 @@ export default function ChatPage() {
     [],
   );
 
+  const pinnedSourceLine = pinnedVerse
+    ? displayPassageSourceLine({
+        ...pinnedVerse,
+        collection: displayCollectionName(pinnedVerse.collection) || pinnedVerse.collection,
+      })
+    : "";
+  const pinnedTitle = pinnedVerse ? displayPassageTitle(pinnedVerse) : "";
+  const pinnedLocation = pinnedVerse ? displayPassageLocation(pinnedVerse) : "";
+  const pinnedRef = pinnedLocation || pinnedTitle;
+
   const suggestions = useMemo<ChatSuggestion[]>(() => {
     if (pinnedVerse) {
+      const ref = pinnedRef || "this passage";
       return [
         {
           id: "explain",
-          label: "Explain this passage in plain language.",
+          label: `Explain ${ref} in plain language.`,
           mode: "explain",
-          prompt: "Explain this passage in plain language.",
+          prompt: `Explain this passage (${pinnedTitle}${pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""}) in plain language.`,
         },
         {
           id: "practice-here",
-          label: "What is the practical instruction here?",
+          label: `What is the practical instruction in ${ref}?`,
           mode: "practice",
-          prompt: "What is the practical instruction in this passage?",
+          prompt: `What is the practical instruction in this passage (${pinnedTitle}${pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""})?`,
+        },
+        {
+          id: "resonances",
+          label: `Where does ${ref} resonate across traditions?`,
+          mode: "compare",
+          prompt: `Where does this passage (${pinnedTitle}${pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""}) resonate across traditions — and where does it diverge?`,
         },
         {
           id: "reflect",
-          label: "Give me one reflection question and one short practice.",
+          label: "One reflection question and one short practice from this verse.",
           mode: "practice",
-          prompt: "Give me one reflection question and one short practice from this passage.",
+          prompt: `Give me one reflection question and one short practice from this passage (${pinnedTitle}${pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""}).`,
         },
       ];
     }
@@ -217,46 +233,36 @@ export default function ChatPage() {
         prompt: "Give me one reflection question and one short practice.",
       },
     ];
-  }, [pinnedVerse]);
+  }, [pinnedVerse, pinnedRef, pinnedTitle, pinnedSourceLine]);
 
   async function applySuggestion(suggestion: ChatSuggestion) {
     if (busy || dailyCapHit) return;
 
-    let verse = pinnedVerse;
     if (suggestion.pinDaily) {
       const daily = await getDaily("rich");
       if (!daily) {
         setQ(suggestion.prompt);
         return;
       }
-      verse = daily;
       setPinnedVerse(daily);
       setCompareMode(false);
-      // Keep the URL shareable: chat always grounded in today's live verse.
+      setChatMode(suggestion.mode || "practice");
+      const title = displayPassageTitle(daily);
+      const source = displayPassageSourceLine({
+        ...daily,
+        collection: displayCollectionName(daily.collection) || daily.collection,
+      });
+      setQ(`What is the practical instruction in today's passage (${title}${source ? ` · ${source}` : ""})?`);
       const url = new URL(window.location.href);
       url.searchParams.set("verse_id", daily._id);
       url.searchParams.set("mode", suggestion.mode || "practice");
       window.history.replaceState({}, "", url.toString());
+      return;
     }
 
     if (suggestion.mode) {
       setChatMode(suggestion.mode);
       if (suggestion.mode === "compare") setCompareMode(true);
-      else if (suggestion.pinDaily) setCompareMode(false);
-    }
-
-    if (verse && (suggestion.pinDaily || suggestion.id === "practice-here")) {
-      const title = displayPassageTitle(verse);
-      const source = displayPassageSourceLine({
-        ...verse,
-        collection: displayCollectionName(verse.collection) || verse.collection,
-      });
-      setQ(
-        suggestion.pinDaily
-          ? `What is the practical instruction in today's passage (${title}${source ? ` · ${source}` : ""})?`
-          : suggestion.prompt,
-      );
-      return;
     }
 
     setQ(suggestion.prompt);
@@ -361,13 +367,7 @@ export default function ChatPage() {
   }
 
   const showComposerSuggestions = !q.trim() && !dailyCapHit && !busy;
-  const showSourceShelf = Boolean(pinnedVerse) || sources.length > 0 || Boolean(compareWarning);
-  const pinnedSourceLine = pinnedVerse
-    ? displayPassageSourceLine({
-        ...pinnedVerse,
-        collection: displayCollectionName(pinnedVerse.collection) || pinnedVerse.collection,
-      })
-    : "";
+  const showSourceShelf = sources.length > 0 || Boolean(compareWarning);
 
   return (
     <main className="page-shell page-shell--reading">
@@ -383,45 +383,26 @@ export default function ChatPage() {
           <p className="passage-reading__meta">Dialogue with the corpus</p>
           <h1 className="library-header__title">Ask Pratibha</h1>
           <p className="library-header__lede">
-            Ask naturally. Answers stay grounded in the manuscript — with practice you can try.
+            {pinnedVerse
+              ? "Ask about this passage. Hover the box for prompts grounded in the verse."
+              : "Ask naturally. Answers stay grounded in the manuscript — with practice you can try."}
           </p>
         </div>
       </header>
 
       <div className="mt-6 max-w-[var(--reading-measure)]">
         {pinnedVerse ? (
-          <div className="mb-6">
+          <div className="chat-study-pin mb-5">
             <Link
               href={`/read/${encodeURIComponent(pinnedVerse._id)}`}
-              className="library-passage block"
+              className="chat-study-pin__link"
             >
-              <p className="library-passage__meta">
-                Studying
-                {pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""}
-              </p>
-              <p className="library-passage__title">{displayPassageTitle(pinnedVerse)}</p>
-              <p className="library-passage__preview line-clamp-3">{passagePreview(pinnedVerse)}</p>
+              <p className="passage-reading__meta !mb-0">Studying</p>
+              <p className="chat-study-pin__title">{pinnedTitle}</p>
+              {pinnedSourceLine ? (
+                <p className="chat-study-pin__meta">{pinnedSourceLine}</p>
+              ) : null}
             </Link>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              <FilterSelect
-                label="Study mode"
-                tone="gold"
-                value={chatMode}
-                onChange={(value) => {
-                  const mode = value as ChatMode;
-                  setChatMode(mode);
-                  if (mode === "compare") setCompareMode(true);
-                }}
-                options={chatModeOptions}
-              />
-              <FilterSelect
-                label="Layer focus"
-                tone="lapis"
-                value={layerFocus}
-                onChange={(value) => setLayerFocus(value as PratibhaLayerKind | "")}
-                options={layerOptions}
-              />
-            </div>
           </div>
         ) : null}
 
@@ -430,9 +411,7 @@ export default function ChatPage() {
             {messages.map((m, idx) => (
               <article
                 key={`${m.role}-${idx}`}
-                className={`whitespace-pre-wrap border-t border-[rgb(240_201_121_/_0.12)] py-4 ${
-                  m.role === "user" ? "" : ""
-                }`}
+                className="whitespace-pre-wrap border-t border-[rgb(240_201_121_/_0.12)] py-4"
               >
                 <p className="passage-layer__label mb-2">{m.role === "user" ? "You" : "Pratibha"}</p>
                 {m.role === "assistant" ? (
@@ -486,7 +465,11 @@ export default function ChatPage() {
                 void ask();
               }
             }}
-            placeholder="Ask about a passage, a practice, or two traditions…"
+            placeholder={
+              pinnedVerse
+                ? `Ask about ${pinnedRef || "this passage"}…`
+                : "Ask about a passage, a practice, or two traditions…"
+            }
             disabled={dailyCapHit}
             aria-label="Ask Pratibha"
           />
@@ -520,10 +503,32 @@ export default function ChatPage() {
 
         <div className="mt-6">
           <Disclosure
-            summary="Retrieval & compare"
-            hint={`${useRag ? "Grounded" : "Freeform"}${compareMode ? " · Compare" : ""}`}
+            summary={pinnedVerse ? "Study options" : "Retrieval & compare"}
+            hint={`${chatMode}${pinnedVerse && layerFocus ? ` · ${layerFocus}` : ""}${useRag ? " · Grounded" : " · Freeform"}${compareMode ? " · Compare" : ""}`}
             defaultOpen={compareMode}
           >
+            {pinnedVerse ? (
+              <div className="mb-4 grid gap-3 sm:grid-cols-2">
+                <FilterSelect
+                  label="Study mode"
+                  tone="gold"
+                  value={chatMode}
+                  onChange={(value) => {
+                    const mode = value as ChatMode;
+                    setChatMode(mode);
+                    if (mode === "compare") setCompareMode(true);
+                  }}
+                  options={chatModeOptions}
+                />
+                <FilterSelect
+                  label="Layer focus"
+                  tone="lapis"
+                  value={layerFocus}
+                  onChange={(value) => setLayerFocus(value as PratibhaLayerKind | "")}
+                  options={layerOptions}
+                />
+              </div>
+            ) : null}
             <label className="block font-sans text-sm soft">
               <input type="checkbox" checked={useRag} onChange={(e) => setUseRag(e.target.checked)} className="mr-2 accent-amber-300" />
               Use source-grounded retrieval (recommended)
@@ -600,15 +605,6 @@ export default function ChatPage() {
         {showSourceShelf ? (
           <aside className="mt-8 border-t border-[rgb(240_201_121_/_0.14)] pt-5">
             <h2 className="passage-reading__meta">Source shelf</h2>
-            {pinnedVerse ? (
-              <Link
-                href={`/read/${encodeURIComponent(pinnedVerse._id)}`}
-                className="library-passage mt-1 block"
-              >
-                <p className="library-passage__meta">Primary source</p>
-                <p className="library-passage__title">{displayPassageTitle(pinnedVerse)}</p>
-              </Link>
-            ) : null}
             {compareMode && compareWarning ? (
               <p className="mt-2 text-xs text-amber-100/90">{compareWarning}</p>
             ) : null}

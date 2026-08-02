@@ -2219,7 +2219,41 @@ select:focus-visible {
   margin-top: 1.25rem;
 }
 
-/* Ask Pratibha — composer with hover/focus suggested prompts */
+/* Ask Pratibha — quiet study pin + composer suggestions */
+.chat-study-pin {
+  max-width: var(--reading-measure);
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid rgb(240 201 121 / 0.12);
+}
+
+.chat-study-pin__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.15s ease;
+}
+
+.chat-study-pin__link:hover {
+  opacity: 0.88;
+}
+
+.chat-study-pin__title {
+  margin: 0.35rem 0 0;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: rgb(250 237 205);
+}
+
+.chat-study-pin__meta {
+  margin: 0.3rem 0 0;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 .chat-composer {
   position: relative;
   max-width: var(--reading-measure);
@@ -2249,7 +2283,7 @@ select:focus-visible {
 .chat-composer--suggest:hover .chat-composer__suggestions,
 .chat-composer--suggest:focus-within .chat-composer__suggestions {
   opacity: 1;
-  max-height: 12rem;
+  max-height: 16rem;
   margin-top: 0.55rem;
   pointer-events: auto;
 }
