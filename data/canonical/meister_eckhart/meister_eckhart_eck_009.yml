@@ -1,116 +1,56 @@
-source_file: data/yaml/meister_eckhart/eck_009.yml
 source_id: ECK_009
 category: root_text
 work_id: meister_eckhart
 work_title: Meister Eckhart
 unit_id: meister_eckhart.eck_009
-unit_label: Mercy Still Goes Out; Detachment Remains
-title: Mercy Still Goes Out; Detachment Remains
-unit_type: sutra
-sanskrit_devanagari: 'Ich lobe ouch abegescheidenheit vür alle barmherzicheit, wan barmherzicheit enist niht anders, wan daz
-  der mensche ûz im selber gât ûf sînes ebenmenschen gebresten und dâ von sîn herze betrüebet wirt. Des stât abegescheidenheit
-  ledic und blîbet in ir selber und lât sich kein dinc betrüeben; wan alle die wîle dehein dinc den menschen mac betrüeben,
-  sô enist dem menschen niht reht. Kürzlîchen geredet: wenne ich alle tugende anesihe, sô envinde ich keine sô gar âne gebresten
-  und ze gote zuovüegic, als abegescheidenheit ist.'
-sanskrit_iast: See Original.
-translation_literal: 'I also praise detachment above all mercifulness, for mercifulness is nothing other than a person going
-  out of oneself toward a neighbor''s shortcomings, and through this the heart becomes troubled. Detachment stands free of
-  this, remains in itself, and lets nothing trouble it — for as long as anything can trouble a person, things are not right
-  with them. In short: when I regard all virtues, I find none so without defect and so joining us to God as detachment.'
-commentary: 'Mercy''s going-out is ethically precious and still, for Eckhart, a motion that can trouble the heart. The contested
-  ranking does not abolish compassion; it refuses to let troubledness define the highest union. Detachment remains the unblemished
-  joining-to-God because it does not exit into the neighbor''s wound as its occupying content. Existentially: help without
-  letting the helping become the hinge''s swing.
+unit_label: Love Knows No Why
+title: Love Knows No Why
+unit_type: verse
+section: Sermon 5b (DW I, c. 90)
+sanskrit_devanagari: Diu minne enweiz kein warumbe.
+sanskrit_iast: ''
+translation_literal: Love knows no why.
+commentary: 'This compact saying names a decisive feature of Eckhart’s detachment: the deepest love is not a transaction.
+  It does not love God for reward, security, spiritual sweetness, heaven, or even personal fulfillment. Nor does it require
+  an explanatory ground outside itself. “Why” here means the calculating purpose that makes an act serve the self. Such purposiveness
+  binds the soul to what it seeks and therefore leaves it divided. Love without a why is not irrational impulse or moral indifference;
+  it is an act issuing from the soul’s ground, where willing has been released from possession and advantage. In this sense
+  it resembles Eckhart’s teaching that the just person does justice not in order to gain something, but because justice lives
+  and works in him. The saying is therefore both ascetical and metaphysical: relinquish the claim to outcomes, and let the
+  good be done from its own inward truth.
 
 
   Key Terms
 
 
-  **barmherzicheit (MHG)** — "mercy/compassion." Defined here as going-out that troubles the heart.
+  **minne** — Middle High German love: not merely affection, but a self-transcending participation in the good.
 
+  **warumbe** — “Why” or motive: the self-interested end for which one acts or loves.
 
-  **betrüeben (MHG)** — "to trouble/sadden." Diagnostic: if anything can still trouble you, detachment is incomplete.
+  **Abgeschiedenheit** — Detachment or releasement: freedom from clinging to possessions, results, and self-advantage.
 
 
   Cross-Tradition Resonances
 
 
-  **Bodhicaryāvatāra (compassion without self-clinging):** Both want care without self-occupation.
+  **Bhagavad Gita 2.47; 3.19:** Krishna instructs Arjuna to act without attachment to the fruits of action; the deed is to
+  be performed without possessive calculation. Divergence: The Gita retains a disciplined account of duty, yoga, and devotion
+  to Krishna, whereas Eckhart’s aphorism concentrates on love’s freedom from motive.
 
-  *Divergence:* Śāntideva intensifies compassion as the path; Eckhart subordinates troubled mercy to immovable detachment.
+  **Zhuangzi, “The Sign of Virtue Complete”:** Daoist spontaneity values action that does not arise from calculating self-assertion,
+  akin to Eckhart’s unforced, non-instrumental love. Divergence: Zhuangzi frames this in terms of attunement to the Dao and
+  freedom from fixed distinctions, not union with a personal or Trinitarian God.
 
-
-  **Aṣṭāvakra (equanimity amid the world''s play):** Both refuse being undone by circumstance.
-
-  *Divergence:* Aṣṭāvakra''s equanimity is Self-recognition; Eckhart''s is readiness for God.'
-insight: Mercy's going-out is ethically precious and still, for Eckhart, a motion that can trouble the heart.
-practice: 'Do one act of concrete help today. Afterward, sit one minute: did helping swing the hinge into troubledness? Return
-  to remaining-within without withdrawing care.'
-upaya: ''
-themes:
-- detachment
-- heart
-tags:
-- detachment
-- heart
-- meister_eckhart
-- root_text
-quality_score: 0
-editorial_maturity: publishable
-editorial_score: 0
-pratibha_layers:
-- kind: original
-  label: Original
-  body: 'Ich lobe ouch abegescheidenheit vür alle barmherzicheit, wan barmherzicheit enist niht anders, wan daz der mensche
-    ûz im selber gât ûf sînes ebenmenschen gebresten und dâ von sîn herze betrüebet wirt. Des stât abegescheidenheit ledic
-    und blîbet in ir selber und lât sich kein dinc betrüeben; wan alle die wîle dehein dinc den menschen mac betrüeben, sô
-    enist dem menschen niht reht. Kürzlîchen geredet: wenne ich alle tugende anesihe, sô envinde ich keine sô gar âne gebresten
-    und ze gote zuovüegic, als abegescheidenheit ist.'
-- kind: iast
-  label: IAST
-  body: See Original.
-- kind: translation
-  label: Pratibha Translation
-  body: 'I also praise detachment above all mercifulness, for mercifulness is nothing other than a person going out of oneself
-    toward a neighbor''s shortcomings, and through this the heart becomes troubled. Detachment stands free of this, remains
-    in itself, and lets nothing trouble it — for as long as anything can trouble a person, things are not right with them.
-    In short: when I regard all virtues, I find none so without defect and so joining us to God as detachment.'
-- kind: commentary
-  label: Pratibha Commentary
-  body: 'Mercy''s going-out is ethically precious and still, for Eckhart, a motion that can trouble the heart. The contested
-    ranking does not abolish compassion; it refuses to let troubledness define the highest union. Detachment remains the unblemished
-    joining-to-God because it does not exit into the neighbor''s wound as its occupying content. Existentially: help without
-    letting the helping become the hinge''s swing.
-
-
-    Key Terms
-
-
-    **barmherzicheit (MHG)** — "mercy/compassion." Defined here as going-out that troubles the heart.
-
-
-    **betrüeben (MHG)** — "to trouble/sadden." Diagnostic: if anything can still trouble you, detachment is incomplete.
-
-
-    Cross-Tradition Resonances
-
-
-    **Bodhicaryāvatāra (compassion without self-clinging):** Both want care without self-occupation.
-
-    *Divergence:* Śāntideva intensifies compassion as the path; Eckhart subordinates troubled mercy to immovable detachment.
-
-
-    **Aṣṭāvakra (equanimity amid the world''s play):** Both refuse being undone by circumstance.
-
-    *Divergence:* Aṣṭāvakra''s equanimity is Self-recognition; Eckhart''s is readiness for God.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: 'Do one act of concrete help today. Afterward, sit one minute: did helping swing the hinge into troubledness? Return
-    to remaining-within without withdrawing care.'
-appendixes: []
-anchor_chapter: ''
+  **The Cloud of Unknowing:** The anonymous English contemplative urges the soul to seek God through a “naked intent” of love
+  rather than through grasping knowledge or spiritual gain. Divergence: The Cloud emphasizes an apophatic method of prayer,
+  while Eckhart’s formula makes a broader claim about the intrinsic, motive-free nature of genuine love.'
+practice: 'Before one ordinary act today—answering a message, doing work, offering help—pause for three breaths and silently
+  ask: “What reward am I seeking?” Release the answer, then do the act simply and without rehearsing its result.'
+themes: []
+tags: []
 provenance:
   collection: Meister Eckhart
-  section: Von Abegescheidenheit
-  original_id: ECK_009
-  source_reference: Meister Eckhart, *Von Abegescheidenheit* (§5 — above mercy)
+  source_confidence: medium
+  original_source: 'Meister Eckhart: Sermon 5b (DW I, c. 90); original per received text (model-supplied, PD-verification
+    pending).'
+  english_source: Pratibha own rendering (2026).
