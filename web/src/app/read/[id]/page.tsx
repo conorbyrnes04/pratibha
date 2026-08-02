@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
@@ -10,10 +12,8 @@ import { collectionArtPool } from "@/lib/collectionImages";
 import { displayPassageTitle, sortPassagesInText } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
 import { ReadingShell } from "@/components/ReadingShell";
-import { CommentaryTeaser } from "@/components/CommentaryTeaser";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
-import { Disclosure } from "@/components/ui/Disclosure";
 import {
   getStudyLayers,
   getAppendixLayers,
@@ -23,11 +23,32 @@ import {
   passagePreview,
   practiceText,
 } from "@/lib/verseLayers";
-import { firstSentence } from "@/lib/textPreview";
+import { firstSentence, stripMarkdown } from "@/lib/textPreview";
 import { relatedPassages } from "@/lib/relatedPassages";
 import { preferStudyUnits } from "@/lib/corpusFilters";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { KitLink } from "@/components/ui/kit-link";
+import { Separator } from "@/components/ui/separator";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 function practiceFallback(item: VerseItem): string {
   if ((item.themes || []).includes("witness")) {
@@ -39,12 +60,21 @@ function practiceFallback(item: VerseItem): string {
   return "Read once slowly, then pause for one minute before your next action.";
 }
 
+function commentaryTeaser(body: string, maxWords = 55): string {
+  const clean = stripMarkdown(body).replace(/\s+/g, " ").trim();
+  if (!clean) return "";
+  const words = clean.split(/\s+/);
+  if (words.length <= maxWords) return clean;
+  return `${words.slice(0, maxWords).join(" ")}…`;
+}
+
 export default function VerseDetailPage() {
   const params = useParams<{ id: string }>();
   const [item, setItem] = useState<VerseItem | null>(null);
   const [allItems, setAllItems] = useState<VerseItem[]>([]);
   const [semanticRelated, setSemanticRelated] = useState<VerseItem[] | null>(null);
   const [showOriginal, setShowOriginal] = useState(true);
+  const [commentaryOpen, setCommentaryOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [backHref, setBackHref] = useState<string | null>(null);
   const id = decodeURIComponent(params.id || "");
@@ -76,6 +106,10 @@ export default function VerseDetailPage() {
     return () => {
       cancelled = true;
     };
+  }, [id]);
+
+  useEffect(() => {
+    setCommentaryOpen(false);
   }, [id]);
 
   const themeRelated = useMemo(() => {
@@ -135,39 +169,9 @@ export default function VerseDetailPage() {
   const keyTermsLayer = layers.find((l) => l.kind === "key_terms");
   const practice = practiceText(item) || practiceFallback(item);
   const hasSource = appendixLayers.length > 0 || Boolean(anchorChapter);
-  const hasDeeper =
-    Boolean(keyTermsLayer) || resonances.length > 0 || hasSource;
-
-  const textNav =
-    siblings.length > 1 ? (
-      <nav className="passage-reading__nav" aria-label="Passages in this text">
-        {prevPassage ? (
-          <Link
-            href={passageHref(prevPassage._id)}
-            className={buttonVariants({ variant: "secondary" })}
-            aria-label={`Previous: ${displayPassageTitle(prevPassage)}`}
-          >
-            ← Previous
-          </Link>
-        ) : (
-          <span className="soft px-1">Start of text</span>
-        )}
-        <span className="soft tabular-nums">
-          {siblingIndex >= 0 ? siblingIndex + 1 : "—"} of {siblings.length}
-        </span>
-        {nextPassage ? (
-          <Link
-            href={passageHref(nextPassage._id)}
-            className={buttonVariants()}
-            aria-label={`Next: ${displayPassageTitle(nextPassage)}`}
-          >
-            Next →
-          </Link>
-        ) : (
-          <span className="soft px-1">End of text</span>
-        )}
-      </nav>
-    ) : null;
+  const themes = item.themes || [];
+  const hasApparatus =
+    Boolean(keyTermsLayer) || resonances.length > 0 || hasSource || themes.length > 0;
 
   const collectionHref = item.collection
     ? `/read?collection=${encodeURIComponent(item.collection)}`
@@ -175,7 +179,6 @@ export default function VerseDetailPage() {
 
   const translationBody = (translationLayer?.body || passagePreview(item) || "").trim();
   const translationPreview = firstSentence(translationBody);
-  /** Deck only when it teases a longer translation (not the whole verse). */
   const deck =
     translationPreview &&
     translationPreview.length > 12 &&
@@ -183,6 +186,11 @@ export default function VerseDetailPage() {
     translationBody.length > translationPreview.length + 40
       ? translationPreview
       : null;
+
+  const commentaryPreview = commentaryBody ? commentaryTeaser(commentaryBody) : "";
+  const commentaryNeedsExpand =
+    Boolean(commentaryBody) &&
+    stripMarkdown(commentaryBody).trim().length > commentaryPreview.replace(/…$/, "").length + 8;
 
   return (
     <main className="page-shell page-shell--reading">
@@ -246,147 +254,239 @@ export default function VerseDetailPage() {
         )}
 
         {practice ? (
-          <section className="passage-practice">
-            <h2 className="layer-heading">Practice</h2>
-            <p className="mt-3 text-[1.05rem] leading-relaxed text-stone-200">{practice}</p>
-          </section>
+          <>
+            <Separator className="mt-8 max-w-[var(--reading-measure)] bg-[rgb(240_201_121_/_0.16)]" />
+            <section className="passage-practice--plain">
+              <h2 className="passage-layer__label">Practice</h2>
+              <p className="passage-practice__body">{practice}</p>
+            </section>
+          </>
         ) : null}
 
-        {commentaryBody ? <CommentaryTeaser body={commentaryBody} /> : null}
-
-        {textNav}
-
-        {hasDeeper ? (
-          <div className="passage-reading__secondary">
-            <p className="eyebrow mb-3 text-amber-200/70">Go deeper</p>
-            <div className="disclosure-stack">
-              {keyTermsLayer ? (
-                <Disclosure summary="Key terms" hint={`${(keyTermsLayer.items || []).length || ""}`}>
-                  <LayerBlock layer={keyTermsLayer} bare />
-                </Disclosure>
-              ) : null}
-              {resonances.length > 0 ? (
-                <Disclosure summary="Cross-tradition resonances" hint={`${resonances.length}`}>
-                  <div className="space-y-3">
-                    {resonances.map((r, idx) => {
-                      const link = resonanceLinks[idx];
-                      const href =
-                        link?.kind === "passage"
-                          ? `/read/${encodeURIComponent(link.passageId)}`
-                          : link?.kind === "collection"
-                            ? `/read?collection=${encodeURIComponent(link.collection)}`
-                            : null;
-                      return (
-                        <article key={`${r.citation}-${idx}`} className="citation-card p-3">
-                          {href ? (
-                            <Link
-                              href={href}
-                              className="group inline-flex items-center gap-1 text-sm text-amber-100 underline decoration-amber-200/30 underline-offset-2 transition hover:decoration-amber-200/70"
-                            >
-                              <InlineMarkdown>{r.citation}</InlineMarkdown>
-                              <span aria-hidden className="text-[10px] text-amber-200/60 transition group-hover:translate-x-0.5">
-                                {link?.kind === "passage" ? "↗" : "→"}
-                              </span>
-                            </Link>
-                          ) : (
-                            <span className="text-sm text-amber-100">
-                              <InlineMarkdown>{r.citation}</InlineMarkdown>
-                            </span>
-                          )}
-                          <p className="soft mt-1 text-sm leading-relaxed">
-                            <InlineMarkdown>{r.resonance}</InlineMarkdown>
-                          </p>
-                          {r.divergence ? (
-                            <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                              <span className="font-semibold text-amber-100">Divergence:</span>{" "}
-                              <InlineMarkdown>{r.divergence}</InlineMarkdown>
-                            </p>
-                          ) : null}
-                        </article>
-                      );
-                    })}
+        {commentaryBody ? (
+          <div className="passage-commentary">
+            {commentaryNeedsExpand ? (
+              <Collapsible open={commentaryOpen} onOpenChange={setCommentaryOpen}>
+                <CollapsibleTrigger className="passage-commentary__trigger">
+                  <span className="passage-layer__label mb-0">Commentary</span>
+                  <span className="font-sans text-xs text-stone-500">
+                    {commentaryOpen ? "Collapse" : "Continue"}
+                  </span>
+                </CollapsibleTrigger>
+                {!commentaryOpen ? (
+                  <p className="passage-commentary__teaser">{commentaryPreview}</p>
+                ) : null}
+                <CollapsibleContent>
+                  <div className="passage-commentary__body chat-markdown reading-prose">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{commentaryBody}</ReactMarkdown>
                   </div>
-                </Disclosure>
-              ) : null}
-              {hasSource ? (
-                <Disclosure summary="Public-domain source">
-                  <div className="space-y-4">
-                    {appendixLayers.map((layer, idx) => (
-                      <LayerBlock key={`appendix-${layer.label}-${idx}`} layer={layer} bare />
-                    ))}
-                    {anchorChapter ? (
-                      <div>
-                        <h3 className="layer-heading mb-2">Full chapter — public-domain translation</h3>
-                        <LayerBlock layer={{ kind: "appendix", label: "Full chapter", body: anchorChapter }} bare />
-                      </div>
-                    ) : null}
-                  </div>
-                </Disclosure>
-              ) : null}
-            </div>
+                </CollapsibleContent>
+              </Collapsible>
+            ) : (
+              <>
+                <h2 className="passage-layer__label">Commentary</h2>
+                <div className="passage-commentary__body chat-markdown reading-prose">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{commentaryBody}</ReactMarkdown>
+                </div>
+              </>
+            )}
           </div>
         ) : null}
 
-        <div className="passage-reading__secondary">
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain`}
-              className={buttonVariants({ size: "lg" })}
-            >
-              Guided Study
-            </Link>
-            <Link
-              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=practice`}
-              className={buttonVariants({ variant: "secondary", size: "lg" })}
-            >
-              Practice chat
-            </Link>
-          </div>
-
-          {item.themes && item.themes.length > 0 ? (
-            <div className="mt-6 flex flex-wrap gap-2">
-              {item.themes.map((t) => (
+        <footer className="passage-endmatter">
+          {siblings.length > 1 ? (
+            <nav className="passage-reading__nav passage-reading__nav--flush" aria-label="Passages in this text">
+              {prevPassage ? (
                 <Link
-                  key={t}
-                  href={`/read?theme=${encodeURIComponent(t)}`}
-                  className="rounded-full border border-amber-200/30 px-3 py-1 text-xs text-amber-100 hover:border-amber-200/60"
+                  href={passageHref(prevPassage._id)}
+                  className={buttonVariants({ variant: "secondary", size: "sm" })}
+                  aria-label={`Previous: ${displayPassageTitle(prevPassage)}`}
                 >
-                  {t}
+                  ← Previous
                 </Link>
-              ))}
-            </div>
+              ) : (
+                <span className="soft px-1 text-sm">Start of text</span>
+              )}
+              <span className="soft tabular-nums text-sm">
+                {siblingIndex >= 0 ? siblingIndex + 1 : "—"} of {siblings.length}
+              </span>
+              {nextPassage ? (
+                <Link
+                  href={passageHref(nextPassage._id)}
+                  className={buttonVariants({ size: "sm" })}
+                  aria-label={`Next: ${displayPassageTitle(nextPassage)}`}
+                >
+                  Next →
+                </Link>
+              ) : (
+                <span className="soft px-1 text-sm">End of text</span>
+              )}
+            </nav>
           ) : null}
 
-          <div className="mt-8">
-            <JournalPanel passage={item} />
+          <div className="passage-endmatter__actions">
+            <KitLink
+              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain`}
+              size="sm"
+            >
+              Ask about this
+            </KitLink>
+            <KitLink
+              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=practice`}
+              variant="secondary"
+              size="sm"
+            >
+              Practice chat
+            </KitLink>
+            <Sheet>
+              <SheetTrigger
+                render={<Button type="button" variant="ghost" size="sm" className="border border-white/10" />}
+              >
+                Write a note
+              </SheetTrigger>
+              <SheetContent
+                side="bottom"
+                className="max-h-[85vh] border-t border-amber-200/15 bg-[#0b0b14] sm:max-w-none"
+              >
+                <SheetHeader>
+                  <SheetTitle className="text-amber-100">Journal</SheetTitle>
+                  <SheetDescription className="soft">
+                    A private note on this passage — saved on this device
+                    {item ? ` · ${displayPassageTitle(item)}` : ""}.
+                  </SheetDescription>
+                </SheetHeader>
+                <div className="overflow-y-auto px-4 pb-8">
+                  <JournalPanel passage={item} bare />
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
+        </footer>
 
-          {related.length > 0 ? (
-            <div className="mt-10">
-              <h2 className="layer-heading text-amber-100">Related passages</h2>
-              <p className="soft mt-1 text-sm">
-                {relatedMode === "semantic"
-                  ? "Nearest in meaning across the corpus."
-                  : "Shared themes across traditions."}
-              </p>
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                {related.slice(0, 4).map((r) => (
-                  <Link
-                    key={r._id}
-                    href={`/read/${encodeURIComponent(r._id)}`}
-                    className="citation-card block p-3 hover:border-amber-300/30"
-                  >
-                    <p className="text-sm text-amber-100">{displayPassageTitle(r)}</p>
-                    <p className="soft mt-1 text-xs">
+        {hasApparatus ? (
+          <div className="passage-apparatus">
+            <Accordion>
+              {keyTermsLayer ? (
+                <AccordionItem value="terms">
+                  <AccordionTrigger>
+                    Key terms
+                    {(keyTermsLayer.items || []).length
+                      ? ` · ${(keyTermsLayer.items || []).length}`
+                      : ""}
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <LayerBlock layer={keyTermsLayer} bare />
+                  </AccordionContent>
+                </AccordionItem>
+              ) : null}
+              {resonances.length > 0 ? (
+                <AccordionItem value="resonances">
+                  <AccordionTrigger>Resonances · {resonances.length}</AccordionTrigger>
+                  <AccordionContent>
+                    <div className="space-y-4">
+                      {resonances.map((r, idx) => {
+                        const link = resonanceLinks[idx];
+                        const href =
+                          link?.kind === "passage"
+                            ? `/read/${encodeURIComponent(link.passageId)}`
+                            : link?.kind === "collection"
+                              ? `/read?collection=${encodeURIComponent(link.collection)}`
+                              : null;
+                        return (
+                          <article key={`${r.citation}-${idx}`}>
+                            {href ? (
+                              <Link
+                                href={href}
+                                className="group inline-flex items-center gap-1 text-sm text-amber-100 underline decoration-amber-200/30 underline-offset-2 transition hover:decoration-amber-200/70"
+                              >
+                                <InlineMarkdown>{r.citation}</InlineMarkdown>
+                                <span aria-hidden className="text-[10px] text-amber-200/60">
+                                  {link?.kind === "passage" ? "↗" : "→"}
+                                </span>
+                              </Link>
+                            ) : (
+                              <span className="text-sm text-amber-100">
+                                <InlineMarkdown>{r.citation}</InlineMarkdown>
+                              </span>
+                            )}
+                            <p className="soft mt-1 text-sm leading-relaxed">
+                              <InlineMarkdown>{r.resonance}</InlineMarkdown>
+                            </p>
+                            {r.divergence ? (
+                              <p className="mt-2 text-sm leading-relaxed text-stone-300">
+                                <span className="font-semibold text-amber-100">Divergence:</span>{" "}
+                                <InlineMarkdown>{r.divergence}</InlineMarkdown>
+                              </p>
+                            ) : null}
+                          </article>
+                        );
+                      })}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              ) : null}
+              {hasSource ? (
+                <AccordionItem value="source">
+                  <AccordionTrigger>Public-domain source</AccordionTrigger>
+                  <AccordionContent>
+                    <div className="space-y-4">
+                      {appendixLayers.map((layer, idx) => (
+                        <LayerBlock key={`appendix-${layer.label}-${idx}`} layer={layer} bare />
+                      ))}
+                      {anchorChapter ? (
+                        <div>
+                          <h3 className="passage-layer__label">Full chapter</h3>
+                          <LayerBlock
+                            layer={{ kind: "appendix", label: "Full chapter", body: anchorChapter }}
+                            bare
+                          />
+                        </div>
+                      ) : null}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              ) : null}
+              {themes.length > 0 ? (
+                <AccordionItem value="themes">
+                  <AccordionTrigger>Themes · {themes.length}</AccordionTrigger>
+                  <AccordionContent>
+                    <ul className="passage-themes-inline">
+                      {themes.map((t) => (
+                        <li key={t}>
+                          <Link href={`/read?theme=${encodeURIComponent(t)}`}>{t}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              ) : null}
+            </Accordion>
+          </div>
+        ) : null}
+
+        {related.length > 0 ? (
+          <aside className="passage-related">
+            <h2 className="passage-layer__label">Related</h2>
+            <p className="soft mt-1 text-sm">
+              {relatedMode === "semantic"
+                ? "Nearest in meaning across the corpus."
+                : "Shared themes across traditions."}
+            </p>
+            <ul className="passage-related__list">
+              {related.slice(0, 5).map((r) => (
+                <li key={r._id} className="passage-related__item">
+                  <Link href={`/read/${encodeURIComponent(r._id)}`}>
+                    <p className="passage-related__title">{displayPassageTitle(r)}</p>
+                    <p className="passage-related__meta">
                       {displayCollectionName(r.collection)}
                       {r.section ? ` · ${r.section}` : ""}
                     </p>
                   </Link>
-                ))}
-              </div>
-            </div>
-          ) : null}
-        </div>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        ) : null}
       </ReadingShell>
     </main>
   );

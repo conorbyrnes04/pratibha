@@ -1872,6 +1872,159 @@ select:focus-visible {
   line-height: 1.65;
 }
 
+/* Phase B — practice as typographic interlude, not a tinted card */
+.passage-practice--plain {
+  max-width: var(--reading-measure);
+  margin: 2rem 0 0;
+  padding: 1.35rem 0 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.passage-practice--plain .passage-practice__body {
+  margin: 0.65rem 0 0;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--foreground);
+}
+
+.passage-commentary {
+  max-width: var(--reading-measure);
+  margin: 1.75rem 0 0;
+}
+
+.passage-commentary__trigger {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+.passage-commentary__teaser {
+  margin: 0.65rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.passage-commentary__body {
+  margin-top: 0.85rem;
+}
+
+.passage-apparatus {
+  max-width: var(--reading-measure);
+  margin: 2rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 0.35rem;
+}
+
+.passage-apparatus [data-slot="accordion-trigger"] {
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  padding-block: 0.9rem;
+  border-radius: 0;
+}
+
+.passage-apparatus [data-slot="accordion-trigger"]:hover {
+  color: var(--accent-bright);
+  text-decoration: none;
+}
+
+.passage-apparatus [data-slot="accordion-item"] {
+  border-color: rgb(240 201 121 / 0.12);
+}
+
+.passage-endmatter {
+  max-width: var(--reading-measure);
+  margin: 2.75rem 0 0;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.passage-endmatter__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.passage-related {
+  max-width: var(--reading-measure);
+  margin: 2.25rem 0 0;
+}
+
+.passage-related__list {
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.passage-related__item {
+  border-top: 1px solid rgb(240 201 121 / 0.1);
+}
+
+.passage-related__item a {
+  display: block;
+  padding: 0.75rem 0;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.passage-related__item a:hover .passage-related__title {
+  color: var(--accent-bright);
+}
+
+.passage-related__title {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  color: var(--foreground);
+}
+
+.passage-related__meta {
+  margin: 0.25rem 0 0;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted-2);
+}
+
+.passage-themes-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+  margin: 0;
+  padding: 0.25rem 0 0.75rem;
+  list-style: none;
+}
+
+.passage-themes-inline a {
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted-2);
+  text-decoration: none;
+}
+
+.passage-themes-inline a:hover {
+  color: var(--accent-bright);
+}
+
 .passage-reading__nav {
   display: flex;
   flex-wrap: wrap;
@@ -1882,6 +2035,12 @@ select:focus-visible {
   margin: 2.75rem 0 0;
   padding: 1.75rem 0 0.5rem;
   border-top: 1px solid var(--line);
+}
+
+.passage-reading__nav--flush {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 .passage-reading__secondary {

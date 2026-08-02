@@ -13,11 +13,14 @@ type JournalPanelProps =
   | {
       passage: VerseItem;
       prompt?: string;
+      /** Omit card chrome (e.g. inside a Sheet). */
+      bare?: boolean;
     }
   | {
       contextId: string;
       contextTitle: string;
       prompt: string;
+      bare?: boolean;
     };
 
 function storageKey(props: JournalPanelProps): string {
@@ -72,10 +75,12 @@ export function JournalPanel(props: JournalPanelProps) {
     refresh();
   }
 
+  const bare = Boolean(props.bare);
+
   return (
-    <section className="card p-4">
-      <p className="layer-heading">Journal</p>
-      <p className="soft mt-2 text-sm leading-relaxed">{prompt}</p>
+    <section className={bare ? undefined : "card p-4"}>
+      {bare ? null : <p className="layer-heading">Journal</p>}
+      <p className={`soft text-sm leading-relaxed ${bare ? "" : "mt-2"}`}>{prompt}</p>
       <Textarea
         value={body}
         onChange={(event) => setBody(event.target.value)}
