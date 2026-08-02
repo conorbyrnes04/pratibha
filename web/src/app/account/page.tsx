@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useAuth } from "@/components/AuthProvider";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { fetchMe } from "@/lib/authApi";
 
 export default function AccountPage() {
@@ -60,7 +61,9 @@ export default function AccountPage() {
       </p>
       {apiMe ? <p className="soft mt-3 font-sans text-xs text-stone-500">{apiMe}</p> : null}
       <div className="mt-8 flex flex-wrap gap-3">
-        <Button render={<Link href="/journal" />}>Open journal</Button>
+        <Link href="/journal" className={cn(buttonVariants())}>
+          Open journal
+        </Link>
         <Button
           type="button"
           variant="secondary"

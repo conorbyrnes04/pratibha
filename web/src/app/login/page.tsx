@@ -4,9 +4,10 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FormEvent, Suspense, useEffect, useState } from "react";
 import { useAuth } from "@/components/AuthProvider";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
 import { isSupabaseConfigured } from "@/lib/supabaseClient";
 
 function LoginForm() {
@@ -41,9 +42,9 @@ function LoginForm() {
           <code className="text-amber-100">NEXT_PUBLIC_SUPABASE_URL</code> and{" "}
           <code className="text-amber-100">NEXT_PUBLIC_SUPABASE_ANON_KEY</code> in the web env, then redeploy.
         </p>
-        <Button variant="secondary" className="mt-8" render={<Link href="/" />}>
+        <Link href="/" className={cn(buttonVariants({ variant: "secondary" }), "mt-8")}>
           Back home
-        </Button>
+        </Link>
       </main>
     );
   }

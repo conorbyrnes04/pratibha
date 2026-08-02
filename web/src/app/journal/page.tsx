@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { JournalNote } from "@/lib/types";
 import { useAuth } from "@/components/AuthProvider";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 import { deleteJournalNoteRemote, syncJournalWithCloud } from "@/lib/journalCloud";
 import { deleteJournalNote, journalSourceHref, loadJournalNotes, saveJournalNotes } from "@/lib/journalStorage";
 
@@ -100,9 +101,12 @@ export default function JournalPage() {
             : "Saved reflections stay in this browser. Sign in to sync them across devices."}
         </p>
         {!user && !authLoading ? (
-          <Button variant="secondary" className="mt-4" render={<Link href="/login?next=/journal" />}>
+          <Link
+            href="/login?next=/journal"
+            className={cn(buttonVariants({ variant: "secondary" }), "mt-4")}
+          >
             Sign in to sync
-          </Button>
+          </Link>
         ) : null}
       </header>
 
@@ -155,9 +159,9 @@ export default function JournalPage() {
                 : "Try a different search term to find your saved reflections."}
             </p>
             {notes.length === 0 ? (
-              <Button className="mt-2" render={<Link href="/read" />}>
+              <Link href="/read" className={cn(buttonVariants(), "mt-2")}>
                 Browse the library
-              </Button>
+              </Link>
             ) : null}
           </section>
         ) : (
@@ -173,13 +177,12 @@ export default function JournalPage() {
                 </div>
                 <div className="flex shrink-0 gap-2">
                   {journalSourceHref(note) ? (
-                    <Button
-                      variant="secondary"
-                      size="sm"
-                      render={<Link href={journalSourceHref(note)!} />}
+                    <Link
+                      href={journalSourceHref(note)!}
+                      className={cn(buttonVariants({ variant: "secondary", size: "sm" }))}
                     >
                       {sourceLabel(note)}
-                    </Button>
+                    </Link>
                   ) : null}
                   <Button variant="secondary" size="sm" onClick={() => remove(note.id)}>
                     Delete
