@@ -4,12 +4,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { getDaily } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
-import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageTitle } from "@/lib/passageTitles";
-import { passagePreview, practiceText } from "@/lib/verseLayers";
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { BrandMark } from "@/components/BrandMark";
+import { VerseOfTheDay } from "@/components/VerseOfTheDay";
 import { InkGlyph } from "@/components/InkGlyph";
 import { Section } from "@/components/ui/Section";
 import { Disclosure } from "@/components/ui/Disclosure";
@@ -31,10 +30,11 @@ export default function Home() {
   const [dailyLoading, setDailyLoading] = useState(true);
 
   useEffect(() => {
-    if (!signedIn || loading) return;
+    // The /daily endpoint is public, so fetch the taste passage for everyone —
+    // logged-out visitors see it as a preview, signed-in members as their day.
     let cancelled = false;
     setDailyLoading(true);
-    getDaily("strong_draft")
+    getDaily("rich")
       .then((verse) => {
         if (!cancelled) setDaily(verse);
       })
@@ -47,35 +47,45 @@ export default function Home() {
     return () => {
       cancelled = true;
     };
-  }, [signedIn, loading]);
+  }, []);
 
   if (configured && !loading && !user) {
     return (
       <main className="page-shell">
-        <section className="manuscript-card overflow-hidden p-6 sm:p-10">
-          <ArtBackdrop srcs={generatedArtPool("bg-hero")} variant="hero" priority />
-          <div className="relative z-10 max-w-2xl">
-            <p className="eyebrow">Pratibha</p>
-            <h1 className="mt-4 text-4xl font-semibold leading-none text-amber-100 sm:text-5xl">
-              Living Manuscript of World Wisdom
-            </h1>
-            <p className="soft mt-5 max-w-xl font-sans text-base leading-relaxed sm:text-lg">
-              Layered canonical texts — original, translation, commentary, and practice —
-              across traditions, with a source-grounded study companion.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/login" className="btn-primary px-5 py-2.5">
-                Sign in to enter
-              </Link>
-              <Link href="/login?mode=signup" className="btn-secondary px-5 py-2.5">
-                Create an account
-              </Link>
+        <div className="section-stack">
+          <section className="manuscript-card overflow-hidden p-6 sm:p-10">
+            <ArtBackdrop srcs={generatedArtPool("bg-hero")} variant="hero" priority />
+            <div className="relative z-10 max-w-2xl">
+              <p className="eyebrow">Pratibha</p>
+              <h1 className="mt-4 text-4xl font-semibold leading-none text-amber-100 sm:text-5xl">
+                Living Manuscript of World Wisdom
+              </h1>
+              <p className="soft mt-5 max-w-xl font-sans text-base leading-relaxed sm:text-lg">
+                Layered canonical texts — original, translation, commentary, and practice —
+                across traditions, with a source-grounded study companion.
+              </p>
+              <p className="soft mt-6 font-sans text-sm">
+                Here is today&apos;s passage, in its own hand. The rest of the manuscript —
+                Library, Paths, Study Chat, and Journal — opens when you sign in.
+              </p>
             </div>
-            <p className="soft mt-6 font-sans text-sm">
-              Library, Paths, Study Chat, Journal, and the rest unlock after you sign in.
-            </p>
-          </div>
-        </section>
+          </section>
+
+          {daily ? (
+            <VerseOfTheDay item={daily} preview />
+          ) : (
+            <section className="manuscript-card overflow-hidden p-6 sm:p-10">
+              <div className="relative z-10 flex flex-wrap gap-3">
+                <Link href="/login" className="btn-primary px-5 py-2.5">
+                  Sign in to enter
+                </Link>
+                <Link href="/login?mode=signup" className="btn-secondary px-5 py-2.5">
+                  Create an account
+                </Link>
+              </div>
+            </section>
+          )}
+        </div>
       </main>
     );
   }
@@ -100,46 +110,34 @@ export default function Home() {
     );
   }
 
+  // Only the null-daily fallback card needs these; the populated card renders
+  // through <VerseOfTheDay>, which derives its own title/art/links.
   const dailyTitle = daily ? displayPassageTitle(daily) : "A passage is waiting";
-  const dailyCollection = displayCollectionName(daily?.collection);
-  const dailyLine = daily ? passagePreview(daily) : "";
-  const dailyPractice = daily
-    ? practiceText(daily) || "Read slowly, then carry one line into the next action."
-    : "Read slowly, then carry one line into the next action.";
-
   const dailyArtPool = daily?.collection ? collectionArtPool(daily.collection) : generatedArtPool("bg-hero");
   const readHref = daily ? `/read/${encodeURIComponent(daily._id)}` : "/read";
-  const askHref = daily ? `/chat?verse_id=${encodeURIComponent(daily._id)}&mode=explain` : "/chat";
 
   return (
     <main className="page-shell">
       <div className="section-stack">
-        <section id="daily" className="manuscript-card scroll-mt-24 overflow-hidden p-6 sm:p-8">
-          <ArtBackdrop srcs={dailyArtPool} variant="hero" priority />
-          <div className="relative z-10">
-            <p className="eyebrow">Pratibha · Today&apos;s passage</p>
-            <h1 className="mt-4 text-3xl font-semibold leading-none text-amber-100 sm:text-4xl">{dailyTitle}</h1>
-            <p className="soft mt-2 font-sans text-sm">{dailyCollection || "Pratibha corpus"}</p>
-            <div className="my-6">
-              <BrandMark size="lg" className="opacity-90" />
+        {daily ? (
+          <VerseOfTheDay item={daily} />
+        ) : (
+          <section id="daily" className="manuscript-card scroll-mt-24 overflow-hidden p-6 sm:p-8">
+            <ArtBackdrop srcs={dailyArtPool} variant="hero" priority />
+            <div className="relative z-10">
+              <p className="eyebrow">Pratibha · Today&apos;s passage</p>
+              <h1 className="mt-4 text-3xl font-semibold leading-none text-amber-100 sm:text-4xl">{dailyTitle}</h1>
+              <blockquote className="mt-6 max-w-3xl text-2xl leading-snug text-stone-100">
+                Open a passage, let it read you back, then practice one concrete shift.
+              </blockquote>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link href={readHref} className="btn-primary px-5 py-2.5">
+                  Open the Library
+                </Link>
+              </div>
             </div>
-            <blockquote className="max-w-3xl text-2xl leading-snug text-stone-100">
-              {dailyLine || "Open a passage, let it read you back, then practice one concrete shift."}
-            </blockquote>
-            <div className="practice-card mt-6 max-w-3xl p-4">
-              <p className="layer-heading">Practice</p>
-              <p className="soft mt-2 text-base leading-relaxed">{dailyPractice}</p>
-            </div>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link href={readHref} className="btn-primary px-5 py-2.5">
-                Read today&apos;s passage
-              </Link>
-              <Link href={askHref} className="btn-secondary px-5 py-2.5">
-                Ask about this
-              </Link>
-            </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         <Section
           eyebrow="Explore"

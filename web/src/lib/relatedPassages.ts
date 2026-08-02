@@ -3,12 +3,15 @@ import { passageSortKey } from "@/lib/passageTitles";
 
 /** Passages we never surface as "related" — too raw to send a reader to. */
 function isReadable(v: VerseItem): boolean {
-  return v.editorial_maturity !== "needs_rewrite" && v.editorial_maturity !== "structural_draft";
+  // "seed" is source-only with no authored elaboration; everything from "draft"
+  // up is readable. (Old "structural_draft"/"needs_rewrite" now normalize to these.)
+  return v.editorial_maturity !== "seed" && v.editorial_maturity !== "structural_draft";
 }
 
 function maturityBonus(v: VerseItem): number {
-  if (v.editorial_maturity === "publishable") return 2;
-  if (v.editorial_maturity === "strong_draft") return 1;
+  if (v.editorial_maturity === "polished" || v.editorial_maturity === "publishable") return 3;
+  if (v.editorial_maturity === "rich") return 2;
+  if (v.editorial_maturity === "draft" || v.editorial_maturity === "strong_draft") return 1;
   return 0;
 }
 

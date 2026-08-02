@@ -15,5 +15,7 @@ export function matchStepItem(step: LearningStepSpec, items: VerseItem[]): Verse
 }
 
 export function isDraftPassage(item: VerseItem | null): boolean {
-  return item?.editorial_maturity === "structural_draft" || item?.editorial_maturity === "needs_rewrite";
+  // The rawest tiers, where path teaching outruns the passage's own layers.
+  const m = item?.editorial_maturity;
+  return m === "seed" || m === "draft" || m === "structural_draft" || m === "needs_rewrite";
 }

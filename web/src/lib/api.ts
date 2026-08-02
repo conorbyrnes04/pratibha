@@ -180,7 +180,7 @@ export async function getRelatedVerses(id: string, limit = 6): Promise<VerseItem
   return Array.isArray(data?.items) ? (data.items as VerseItem[]) : [];
 }
 
-export async function getDaily(minMaturity: EditorialMaturity | "all" = "strong_draft"): Promise<VerseItem | null> {
+export async function getDaily(minMaturity: EditorialMaturity | "all" = "rich"): Promise<VerseItem | null> {
   const res = await fetch(withMaturity("/daily", minMaturity), { cache: "no-store" });
   if (!res.ok) return null;
   const data = (await res.json()) as VerseItem;

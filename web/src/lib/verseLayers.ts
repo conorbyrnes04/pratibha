@@ -161,15 +161,24 @@ export function practiceText(item: VerseItem): string {
 
 export function maturityLabel(value?: string): string {
   switch (value) {
+    case "polished":
+      return "Polished";
+    case "rich":
+      return "Rich";
+    case "draft":
+      return "Draft";
+    case "seed":
+      return "Seed";
+    // Back-compat: older stored/label values still map cleanly.
     case "publishable":
-      return "Publishable";
+      return "Polished";
     case "strong_draft":
-      return "Strong draft";
+      return "Draft";
     case "needs_rewrite":
-      return "Needs rewrite";
+      return "Draft";
     case "structural_draft":
-      return "Structural draft";
+      return "Seed";
     default:
-      return "Unreviewed";
+      return "Seed";
   }
 }

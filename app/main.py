@@ -249,12 +249,12 @@ async def related_verses(sid: str, limit: int = 6):
 
 
 @app.get("/daily")
-async def daily(min_maturity: str | None = "publishable"):
+async def daily(min_maturity: str | None = "rich"):
     v = pick_daily(min_maturity=_valid_maturity(min_maturity))
     return v or {}
 
 @app.get("/random")
-async def random_verse(collection: str | None = None, min_maturity: str | None = "strong_draft"):
+async def random_verse(collection: str | None = None, min_maturity: str | None = "draft"):
     items = filter_reader_facing(filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity)))
     if collection:
         needle = collection.strip().lower()

@@ -3,7 +3,14 @@ export type Appendix = {
   text?: string;
 };
 
+// Graded maturity ladder (seed < draft < rich < polished). The old labels are
+// retained as accepted values for back-compat with cached data and API params.
 export type EditorialMaturity =
+  | "seed"
+  | "draft"
+  | "rich"
+  | "polished"
+  // deprecated aliases, still accepted on input
   | "publishable"
   | "strong_draft"
   | "needs_rewrite"

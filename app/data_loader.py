@@ -1,6 +1,7 @@
 import datetime
 import glob
 import hashlib
+import json
 import logging
 import os
 import ast
@@ -14,11 +15,20 @@ logger = logging.getLogger("pratibha.data_loader")
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
 
+# Graded maturity ladder, keyed to the richness framework: a passage's tier is
+# derived from the layers it actually carries, not from a collection allowlist.
+#   seed     — source present, but no authored elaboration yet
+#   draft    — authored commentary, but the scaffold is incomplete
+#   rich     — full scaffold (original + translation + commentary + key terms +
+#              ≥2 resonances + practice): ready to elaborate / daily-eligible
+#   polished — rich AND editorially blessed
+# The retired labels (structural_draft / needs_rewrite / strong_draft /
+# publishable) live on only as input aliases in normalize_maturity().
 MATURITY_ORDER = {
-    "structural_draft": 0,
-    "needs_rewrite": 1,
-    "strong_draft": 2,
-    "publishable": 3,
+    "seed": 0,
+    "draft": 1,
+    "rich": 2,
+    "polished": 3,
 }
 
 # Generic placeholder practices that signal an un-edited stub unit. These are
@@ -133,18 +143,26 @@ def _pretty_section(v: str) -> str:
 def normalize_maturity(value: Any) -> str:
     raw = _as_text(value).lower().replace("-", "_").replace(" ", "_")
     aliases = {
-        "publishable": "publishable",
-        "published": "publishable",
-        "ready": "publishable",
-        "strong": "strong_draft",
-        "strong_draft": "strong_draft",
-        "draft": "strong_draft",
-        "needs_rewrite": "needs_rewrite",
-        "rewrite": "needs_rewrite",
-        "needs_rewrite_pass": "needs_rewrite",
-        "structural": "structural_draft",
-        "structural_draft": "structural_draft",
-        "schema_only": "structural_draft",
+        # New graded ladder
+        "seed": "seed",
+        "draft": "draft",
+        "rich": "rich",
+        "polished": "polished",
+        # Retired labels kept as back-compat input aliases (old API params,
+        # stored yml values) → mapped onto the graded ladder.
+        "structural_draft": "seed",
+        "structural": "seed",
+        "schema_only": "seed",
+        "unreviewed": "seed",
+        "needs_rewrite": "draft",
+        "needs_rewrite_pass": "draft",
+        "rewrite": "draft",
+        "strong_draft": "draft",
+        "strong": "draft",
+        "publishable": "polished",
+        "published": "polished",
+        "ready": "polished",
+        "canonical": "polished",
     }
     return aliases.get(raw, "")
 
@@ -179,29 +197,31 @@ def _looks_like_stub(out: dict[str, Any]) -> bool:
 
 
 def _infer_maturity(item: dict[str, Any], out: dict[str, Any]) -> str:
-    explicit = normalize_maturity(
-        item.get("editorial_maturity") or item.get("maturity") or item.get("content_maturity")
-    )
-    if explicit:
-        return explicit
+    """Grade a fully-built unit onto the seed/draft/rich/polished ladder from the
+    content it actually carries. Any explicit ``polished``/``publishable`` flag
+    (or a passage from a hand-blessed collection) can only *promote* a unit that
+    already clears the ``rich`` bar — it can no longer mint quality on its own,
+    the way the old collection allowlist did."""
+    has_commentary = _commentary_is_authored(str(out.get("commentary", "")))
+    present = _daily_present_layers(out)
+    has_source = bool({"original", "translation"} & present)
 
-    # Content signal drives maturity. A unit without authored commentary is a
-    # structural draft no matter how strong its source tradition is.
-    if not _commentary_is_authored(str(out.get("commentary", ""))):
-        return "structural_draft"
-
-    collection = str(out.get("collection", "")).lower()
-    unit_id = str(out.get("_id", "")).lower()
-    source = " ".join([collection, unit_id, str(out.get("title", "")).lower()])
-
-    if any(name in source for name in PUBLISHABLE_COLLECTIONS):
-        return "publishable"
-    if "vijnana bhairava" in source or "vijñana bhairava" in source:
-        match = re.search(r"yukti[_ ]?(\d{1,3})", unit_id)
-        if match and int(match.group(1)) >= 38:
-            return "needs_rewrite"
-    # Authored content from any other collection is at least a strong draft.
-    return "strong_draft"
+    if _is_daily_rich(out):
+        explicit = normalize_maturity(
+            item.get("editorial_maturity") or item.get("maturity") or item.get("content_maturity")
+        )
+        source = " ".join([
+            str(out.get("collection", "")).lower(),
+            str(out.get("_id", "")).lower(),
+            str(out.get("title", "")).lower(),
+        ])
+        blessed = explicit == "polished" or any(name in source for name in PUBLISHABLE_COLLECTIONS)
+        return "polished" if blessed else "rich"
+    if has_commentary:
+        return "draft"
+    if has_source:
+        return "seed"
+    return "seed"
 
 
 def maturity_meets(value: Any, minimum: Any) -> bool:
@@ -547,7 +567,6 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
     out["appendixes"] = item.get("appendixes") if isinstance(item.get("appendixes"), list) else []
     out["anchor_chapter"] = _as_text(item.get("anchor_chapter"))
     out["abhyasa"] = _as_text(item.get("abhyasa") or item.get("practice"))
-    out["editorial_maturity"] = _infer_maturity(item, out)
     out["editorial_score"] = item.get("editorial_score") or item.get("content_score") or item.get("quality_score") or item.get("quality_score_unit") or 0
     # De-slop: drop template/filler commentary and boilerplate practice so the
     # app never renders fake insight and ingestion never embeds duplicate
@@ -563,6 +582,9 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
     if is_tao_te_ching(out):
         out = humanize_ttc_unit(out)
     out = enrich_patanjali_unit(out)
+    # Grade maturity last, once every layer (and any enrichment) is in place, so
+    # the graded tier reflects the fully-built unit.
+    out["editorial_maturity"] = _infer_maturity(item, out)
     return out
 
 
@@ -668,12 +690,114 @@ def get_verse_by_id(verse_id: str) -> dict[str, Any] | None:
     return _cached_verse_by_id.get(verse_id)
 
 
-def pick_daily(user_id: str = "guest", tz: str = "Europe/Paris", min_maturity: str | None = None):
-    """Return one publishable passage for the current calendar day.
+# A daily passage is scaffolding for further elaboration (chat, lexicon, threads,
+# practice), so it must carry the hooks each of those needs. Require the full
+# layered scaffold before a passage is eligible to be the verse of the day.
+_DAILY_MIN_RESONANCES = 2
+_DAILY_MIN_TRANSLATION_CHARS = 120
+_DAILY_PER_COLLECTION_CAP = 12  # keep any one tradition from dominating the rotation
+_DAILY_EPOCH = datetime.date(2001, 1, 1)
 
-    Same verse for all visitors on a given date: SHA-1 of ``YYYY-M-D-guest`` picks
-    a stable index into the maturity-filtered corpus. The day boundary follows
-    ``tz`` (default Europe/Paris), so the passage changes at local midnight there.
+
+def _daily_present_layers(v: dict[str, Any]) -> set[str]:
+    """Layer kinds that actually carry content (non-empty body or items)."""
+    present: set[str] = set()
+    for layer in v.get("pratibha_layers", []):
+        if not isinstance(layer, dict):
+            continue
+        if _as_text(layer.get("body")).strip() or layer.get("items"):
+            present.add(str(layer.get("kind")))
+    return present
+
+
+def _daily_resonance_count(v: dict[str, Any]) -> int:
+    return sum(
+        len(layer.get("items") or [])
+        for layer in v.get("pratibha_layers", [])
+        if isinstance(layer, dict) and layer.get("kind") == "resonances"
+    )
+
+
+def _daily_translation_len(v: dict[str, Any]) -> int:
+    for layer in v.get("pratibha_layers", []):
+        if isinstance(layer, dict) and layer.get("kind") == "translation":
+            return len(_as_text(layer.get("body")))
+    return 0
+
+
+def _is_daily_rich(v: dict[str, Any]) -> bool:
+    """True when a passage carries every hook elaboration builds on: a source
+    Original, a substantive translation, commentary, key terms (lexicon),
+    cross-tradition resonances (threads), and a practice (embodiment)."""
+    present = _daily_present_layers(v)
+    if not {"original", "translation", "commentary", "key_terms", "practice"} <= present:
+        return False
+    if _daily_resonance_count(v) < _DAILY_MIN_RESONANCES:
+        return False
+    if _daily_translation_len(v) < _DAILY_MIN_TRANSLATION_CHARS:
+        return False
+    return True
+
+
+def _daily_richness_score(v: dict[str, Any]) -> tuple:
+    """Rank within a collection when capping: publishable first, then reach."""
+    return (
+        1 if v.get("editorial_maturity") == "publishable" else 0,
+        min(_daily_resonance_count(v), 4),
+        _daily_translation_len(v),
+        # stable tiebreak so the cap is deterministic across processes
+        hashlib.sha1(_as_text(v.get("_id")).encode()).hexdigest(),
+    )
+
+
+def _daily_order(pool: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Deterministic rotation over the rich pool that (a) caps each collection so
+    no tradition dominates and (b) spreads every collection evenly across the
+    cycle, so consecutive days rarely repeat a tradition and no passage recurs
+    until the whole cycle is exhausted."""
+    by_coll: dict[str, list[dict[str, Any]]] = {}
+    for v in pool:
+        by_coll.setdefault(_as_text(v.get("collection")), []).append(v)
+
+    capped: list[tuple[float, str, dict[str, Any]]] = []
+    for coll, members in by_coll.items():
+        members = sorted(members, key=_daily_richness_score, reverse=True)[:_DAILY_PER_COLLECTION_CAP]
+        size = len(members)
+        for i, v in enumerate(members):
+            # Even-spread position in [0,1): interleaves large and small
+            # collections uniformly across the rotation.
+            frac = (i + 0.5) / size
+            tie = hashlib.sha1((coll + _as_text(v.get("_id"))).encode()).hexdigest()
+            capped.append((frac, tie, v))
+    capped.sort(key=lambda t: (t[0], t[1]))
+    return [t[2] for t in capped]
+
+
+def _load_daily_anchors() -> set[str]:
+    """Approved curated anchor _ids (data/daily_anchors.json), or empty set.
+
+    Kept intentionally cheap and forgiving: a missing or malformed file simply
+    means "no curated override yet", so the gate-only rotation stays in effect.
+    """
+    path = os.path.join(ROOT, "data", "daily_anchors.json")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            data = json.load(fh)
+        if isinstance(data, dict):
+            data = data.get("anchors", [])
+        return {str(x) for x in data} if isinstance(data, list) else set()
+    except (OSError, ValueError):
+        return set()
+
+
+def pick_daily(user_id: str = "guest", tz: str = "Europe/Paris", min_maturity: str | None = None):
+    """Return one rich, self-contained passage for the current calendar day.
+
+    The verse of the day is scaffolding for elaboration and, for logged-out
+    visitors, the whole taste of the manuscript — so it is drawn from a
+    richness-gated pool (full layered scaffold), balanced across traditions and
+    spread so the same passage never recurs until the rotation is exhausted.
+    Same verse for every visitor on a given date; the day boundary follows ``tz``.
     """
     items = filter_reader_facing(filter_by_maturity(get_all_verses(), min_maturity))
     if not items:
@@ -681,8 +805,24 @@ def pick_daily(user_id: str = "guest", tz: str = "Europe/Paris", min_maturity: s
         # surface unreviewed drafts on a curated surface. Signal "no match".
         logger.warning("pick_daily: no verses satisfy min_maturity=%r", min_maturity)
         return None
+
+    # Prefer the richness-gated pool; degrade gracefully if it is ever empty
+    # (e.g. a very narrow maturity filter) rather than returning nothing.
+    rich = [v for v in items if _is_daily_rich(v)]
+
+    # Optional editorial override: once a curated anchor set is approved (a JSON
+    # array of unit _ids at data/daily_anchors.json), the rotation draws only
+    # from those iconic passages. Absent/empty file → gate-only behaviour.
+    anchors = _load_daily_anchors()
+    if anchors:
+        anchored = [v for v in rich if _as_text(v.get("_id")) in anchors]
+        if anchored:
+            rich = anchored
+
+    order = _daily_order(rich) if rich else items
+    if not order:
+        order = items
+
     now = datetime.datetime.now(pytz.timezone(tz))
-    key = f"{now.year}-{now.month}-{now.day}-{user_id}"
-    h = hashlib.sha1(key.encode()).hexdigest()
-    idx = int(h, 16) % len(items)
-    return items[idx]
+    epoch_day = (now.date() - _DAILY_EPOCH).days
+    return order[epoch_day % len(order)]
