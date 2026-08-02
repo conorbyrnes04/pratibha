@@ -85,6 +85,8 @@
   --reading-measure: 40rem;
   --reading-size: 1.28rem;
   --reading-leading: 1.72;
+  /* Library browse is wider — lists + theme strip need room */
+  --library-shell: 58rem;
 }
 
 * {
@@ -281,37 +283,42 @@ button {
   padding-block: 2.5rem 4rem;
 }
 
-/* Narrow shell: passage reading + library share one editorial measure */
-.page-shell--reading,
-.page-shell--library {
+/* Narrow shell for passage reading; library uses a wider browse column */
+.page-shell--reading {
   width: min(100%, var(--reading-shell));
-  /* Keep text off the shell edges — previous 1.5/1.85rem still felt flush. */
   padding-inline: clamp(1.85rem, 7vw, 3.25rem);
   padding-block: 2.25rem 4.5rem;
 }
 
+.page-shell--library {
+  width: min(100% - 2rem, var(--library-shell));
+  padding-inline: clamp(1.25rem, 4vw, 2rem);
+  padding-block: 2.25rem 4.5rem;
+}
+
 @media (min-width: 40rem) {
-  .page-shell--reading,
-  .page-shell--library {
+  .page-shell--reading {
     padding-inline: clamp(2.5rem, 6vw, 3.75rem);
+    padding-block: 2.75rem 5rem;
+  }
+
+  .page-shell--library {
+    padding-inline: clamp(1.5rem, 3.5vw, 2.5rem);
     padding-block: 2.75rem 5rem;
   }
 }
 
 /* Editorial measure for section headers inside reading-width shells */
-.page-shell--reading .section-head,
-.page-shell--library .section-head {
+.page-shell--reading .section-head {
   max-width: var(--reading-measure);
 }
 
-.page-shell--reading .section-lead,
-.page-shell--library .section-lead {
+.page-shell--reading .section-lead {
   max-width: var(--reading-measure);
   font-size: 1.05rem;
 }
 
-.page-shell--reading .section-head h2,
-.page-shell--library .section-head h2 {
+.page-shell--reading .section-head h2 {
   font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: clamp(1.65rem, 3.5vw, 2.15rem);
   font-weight: 500;
@@ -1222,24 +1229,23 @@ select:focus-visible {
   color: var(--muted);
 }
 
-/* Passage list rows inside the narrow library shell */
+/* Passage list — plain rows, not cards */
 .library-passage {
   display: block;
-  padding: 1.2rem 1.15rem;
-  margin-inline: -0.35rem;
+  padding: 1.2rem 0;
   border-bottom: 1px solid rgb(240 201 121 / 0.12);
   background: transparent;
-  border-radius: 0.75rem;
+  border-radius: 0;
   transition: border-color 0.15s ease, background 0.15s ease;
 }
 
 .library-passage:hover {
   border-bottom-color: rgb(240 201 121 / 0.28);
-  background: rgb(255 255 255 / 0.03);
+  background: transparent;
 }
 
 .library-list {
-  padding-inline: 0.15rem;
+  padding-inline: 0;
 }
 
 .library-passage__top {
@@ -1518,7 +1524,7 @@ select:focus-visible {
 }
 
 .page-shell--library .tome-shelf {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
 }
 
 .tome {
@@ -1647,7 +1653,7 @@ select:focus-visible {
   }
 
   .page-shell--library .tome-shelf {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr));
   }
 
   .tome__title {
