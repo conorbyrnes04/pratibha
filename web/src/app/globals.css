@@ -281,8 +281,9 @@ button {
   padding-block: 2.5rem 4rem;
 }
 
-/* Narrow shell so crumbs + verse share one editorial column */
-.page-shell--reading {
+/* Narrow shell: passage reading + library share one editorial measure */
+.page-shell--reading,
+.page-shell--library {
   width: min(100% - 2rem, var(--reading-shell));
   padding-block: 1.35rem 4rem;
 }
@@ -1149,11 +1150,130 @@ select:focus-visible {
   height: 100%;
 }
 
+/* Library header — quiet, not a full-bleed hero card */
+.library-header {
+  position: relative;
+  padding: 0.25rem 0 1.5rem;
+}
+
+.library-header__atmosphere {
+  position: absolute;
+  inset: -0.5rem 0 auto 0;
+  z-index: 0;
+  height: min(16rem, 40vh);
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, #000 8%, transparent 90%);
+  mask-image: linear-gradient(to bottom, #000 8%, transparent 90%);
+}
+
+.library-header__body {
+  position: relative;
+  z-index: 1;
+}
+
+.library-header__title {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--foreground);
+}
+
+.library-header__lede {
+  margin: 0.85rem 0 0;
+  max-width: 36rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* Passage list rows inside the narrow library shell */
+.library-passage {
+  display: block;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid rgb(240 201 121 / 0.12);
+  background: transparent;
+  border-radius: 0;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.library-passage:hover {
+  border-bottom-color: rgb(240 201 121 / 0.28);
+  background: rgb(255 255 255 / 0.015);
+}
+
+.library-passage__top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.library-passage__title {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.45rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgb(250 237 205);
+}
+
+.library-passage__meta {
+  margin: 0.3rem 0 0;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted-2);
+}
+
+.library-passage__themes {
+  margin: 0.45rem 0 0;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgb(240 201 121 / 0.7);
+}
+
+.library-passage__preview {
+  margin: 0.75rem 0 0;
+  max-width: var(--reading-measure);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.library-passage__learning {
+  margin: 0.85rem 0 0;
+  max-width: var(--reading-measure);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.library-passage__learning span {
+  color: var(--accent-bright);
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 /* Library shelf — tomes you open into a text's passages */
 .tome-shelf {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
   gap: 0.85rem;
+}
+
+.page-shell--library .tome-shelf {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .tome {
@@ -1281,8 +1401,18 @@ select:focus-visible {
     gap: 1rem;
   }
 
+  .page-shell--library .tome-shelf {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .tome__title {
     font-size: 1.22rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-shell--library .tome-shelf {
+    grid-template-columns: 1fr;
   }
 }
 

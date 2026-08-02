@@ -209,32 +209,34 @@ function LibraryPageContent() {
     collection !== "all" ? tomes.find((t) => collectionsMatch(t.collection, collection)) : null;
 
   return (
-    <main className="page-shell">
-      <section className="manuscript-card relative overflow-hidden p-6 sm:p-8">
-        <ArtBackdrop srcs={headerArtPool} variant="banner" priority={collection !== "all"} />
-        <div className="relative z-10">
+    <main className="page-shell page-shell--library">
+      <header className="library-header">
+        <div className="library-header__atmosphere" aria-hidden>
+          <ArtBackdrop srcs={headerArtPool} variant="subtle" opacity={0.12} priority={collection !== "all"} />
+        </div>
+        <div className="library-header__body">
           {collection !== "all" ? (
             <button
               type="button"
               onClick={() => openTome("all")}
-              className="eyebrow soft hover:text-amber-100"
+              className="passage-reading__toggle"
             >
               ← All texts
             </button>
           ) : (
-            <p className="eyebrow">Archive</p>
+            <p className="passage-reading__meta">Archive</p>
           )}
-          <div className="mt-3 flex items-end gap-4">
+          <div className="mt-2 flex items-start gap-3">
             {collection !== "all" ? (
-              <span className="library-row__glyph hidden sm:inline-flex" aria-hidden>
-                <Glyph name={openTomeMeta?.glyph || collectionGlyph(collection)} size="lg" zoom />
+              <span className="library-row__glyph mt-1 hidden sm:inline-flex" aria-hidden>
+                <Glyph name={openTomeMeta?.glyph || collectionGlyph(collection)} size="md" zoom />
               </span>
             ) : null}
-            <div>
-              <h1 className="text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">
+            <div className="min-w-0">
+              <h1 className="library-header__title">
                 {collection !== "all" ? displayCollectionName(collection) : "Library"}
               </h1>
-              <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
+              <p className="library-header__lede">
                 {collection !== "all"
                   ? `${openTomeMeta?.count ?? filtered.length} passages · open a page, then follow related ideas across traditions.`
                   : "Choose a text. Each tome opens into its passages — then you can follow themes and resonances across the shelf."}
@@ -242,11 +244,11 @@ function LibraryPageContent() {
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
-      <div className="section-stack section-stack--tight mt-8">
+      <div className="section-stack section-stack--tight mt-6">
         <div>
-          <div className="grid gap-4 lg:grid-cols-[2fr_1fr]">
+          <div className="grid gap-4">
             <label className="block">
               <p className="layer-heading mb-2">Search</p>
               <Input
@@ -390,39 +392,43 @@ function LibraryPageContent() {
           )}
         </div>
       ) : (
-        <div className="space-y-3">
+        <div className="library-list">
           {filtered.slice(0, 300).map((x) => (
-            <Link key={x._id} href={`/read/${encodeURIComponent(x._id)}`} className="card group block p-5 transition hover:-translate-y-0.5 hover:border-amber-300/30">
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex min-w-0 items-start gap-3">
-                  <span className="library-row__glyph hidden sm:inline-flex" aria-hidden>
-                    <Glyph name={unitGlyph(x._id)} size="md" zoom />
-                  </span>
-                  <div className="min-w-0">
-                    <h2 className="text-2xl leading-none text-amber-100">{displayPassageTitle(x)}</h2>
-                    <p className="soft text-sm">{displayCollectionName(x.collection)} {x.section ? `• ${x.section}` : ""}</p>
-                  </div>
+            <Link
+              key={x._id}
+              href={`/read/${encodeURIComponent(x._id)}`}
+              className="library-passage group"
+            >
+              <div className="library-passage__top">
+                <span className="library-row__glyph hidden sm:inline-flex" aria-hidden>
+                  <Glyph name={unitGlyph(x._id)} size="sm" zoom />
+                </span>
+                <div className="min-w-0 flex-1">
+                  <h2 className="library-passage__title">{displayPassageTitle(x)}</h2>
+                  <p className="library-passage__meta">
+                    {displayCollectionName(x.collection)}
+                    {x.section ? ` · ${x.section}` : ""}
+                  </p>
+                  {x.themes && x.themes.length > 0 ? (
+                    <p className="library-passage__themes">{x.themes.slice(0, 2).join(" · ")}</p>
+                  ) : null}
                 </div>
-                {x.themes && x.themes.length > 0 ? (
-                  <div className="flex flex-wrap justify-end gap-2">
-                    <span className="rounded-full border border-amber-200/30 px-2 py-1 font-sans text-xs text-amber-100">
-                      {x.themes.slice(0, 2).join(" · ")}
-                    </span>
-                  </div>
-                ) : null}
               </div>
               {!learningMode ? (
-                <p className="soft mt-3 line-clamp-2 text-sm">{passagePreview(x) || "Open to view passage."}</p>
+                <p className="library-passage__preview line-clamp-2">
+                  {passagePreview(x) || "Open to view passage."}
+                </p>
               ) : (
-                <div className="soft mt-4 space-y-2 text-sm">
+                <div className="library-passage__learning">
                   <p className="line-clamp-2">
-                    <span className="text-amber-100">Core idea:</span> {passagePreview(x) || "Open to view passage."}
+                    <span>Core idea</span> {passagePreview(x) || "Open to view passage."}
                   </p>
                   <p className="line-clamp-2">
-                    <span className="text-amber-100">Why it matters:</span> {firstSentence(layerText(x, "commentary") || layerText(x, "translation") || "")}
+                    <span>Why it matters</span>{" "}
+                    {firstSentence(layerText(x, "commentary") || layerText(x, "translation") || "")}
                   </p>
                   <p className="line-clamp-2">
-                    <span className="text-amber-100">Practice:</span> {practiceText(x) || reflectionPrompt(x)}
+                    <span>Practice</span> {practiceText(x) || reflectionPrompt(x)}
                   </p>
                 </div>
               )}
@@ -440,7 +446,7 @@ function LibraryPageContent() {
 
 export default function ReadPage() {
   return (
-    <Suspense fallback={<main className="page-shell soft">Opening the library...</main>}>
+    <Suspense fallback={<main className="page-shell page-shell--library soft">Opening the library...</main>}>
       <LibraryPageContent />
     </Suspense>
   );
