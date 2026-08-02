@@ -193,7 +193,7 @@ function renderLayerBody(
   }
   return (
     <div
-      className={`chat-markdown mt-4 ${
+      className={`chat-markdown ${
         isOriginal
           ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100`
           : compact

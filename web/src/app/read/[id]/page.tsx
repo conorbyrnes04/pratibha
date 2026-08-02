@@ -33,7 +33,6 @@ import { preferStudyUnits } from "@/lib/corpusFilters";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { KitLink } from "@/components/ui/kit-link";
-import { Separator } from "@/components/ui/separator";
 import {
   Collapsible,
   CollapsibleContent,
