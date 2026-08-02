@@ -54,9 +54,10 @@ export function ThreadContextBar({
       role="region"
       aria-label={`Tracing thread: ${thread.title}`}
     >
-      <div className="relative flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
-        <div className="min-w-0 flex-1">
-          <div className="flex flex-wrap items-center gap-2">
+      {/* Stacked on purpose — a side-by-side row crushed the title to ~50px. */}
+      <div className="relative flex flex-col gap-3">
+        <div className="min-w-0">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
             <span className="text-sm text-amber-100/80" aria-hidden>
               {thread.glyph}
             </span>
@@ -67,16 +68,16 @@ export function ThreadContextBar({
               {lit}/{total} lit
             </span>
           </div>
-          <h3 className="mt-1 truncate text-lg font-medium leading-tight text-[rgb(250_237_205)]">
+          <h3 className="mt-1 text-lg font-medium leading-tight text-[rgb(250_237_205)]">
             {thread.title}
           </h3>
-          <p className="soft mt-1 line-clamp-2 text-sm leading-relaxed">{bead.insight}</p>
+          <p className="soft mt-1 text-sm leading-relaxed">{bead.insight}</p>
           <p className="mt-1 font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/45">
             {bead.tradition}
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2 sm:shrink-0">
+        <div className="flex flex-wrap items-center gap-2">
           <Button type="button" variant="secondary" size="sm" onClick={onBackToThread}>
             Thread map
           </Button>

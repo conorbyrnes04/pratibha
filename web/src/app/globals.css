@@ -85,8 +85,8 @@
   --reading-measure: 40rem;
   --reading-size: 1.28rem;
   --reading-leading: 1.72;
-  /* Library aligns with site nav (max-w-6xl) — open shelf, not a panel */
-  --library-shell: 72rem;
+  /* Library browse column — wider than reading, still centered like nav */
+  --library-shell: 64rem;
 }
 
 * {
@@ -284,26 +284,33 @@ button {
 }
 
 /* Narrow shell for passage reading; library uses a wider browse column */
+.page-shell--reading,
+.page-shell--library {
+  margin-inline: auto;
+}
+
 .page-shell--reading {
-  width: min(100%, var(--reading-shell));
-  padding-inline: clamp(1.85rem, 7vw, 3.25rem);
+  width: min(100% - 2rem, var(--reading-shell));
+  padding-inline: clamp(1.5rem, 5vw, 2.5rem);
   padding-block: 2.25rem 4.5rem;
 }
 
 .page-shell--library {
-  width: min(100%, var(--library-shell));
-  padding-inline: 1rem;
+  width: min(100% - 2rem, var(--library-shell));
+  padding-inline: clamp(1.25rem, 3vw, 2rem);
   padding-block: 1.75rem 4.5rem;
+  /* Contain full-bleed atmosphere so 100vw wash doesn’t skew centering */
+  overflow-x: clip;
 }
 
 @media (min-width: 40rem) {
   .page-shell--reading {
-    padding-inline: clamp(2.5rem, 6vw, 3.75rem);
+    padding-inline: clamp(2rem, 5vw, 3rem);
     padding-block: 2.75rem 5rem;
   }
 
   .page-shell--library {
-    padding-inline: 1.5rem;
+    padding-inline: clamp(1.5rem, 3vw, 2.5rem);
     padding-block: 2.25rem 5rem;
   }
 }
@@ -1181,18 +1188,18 @@ select:focus-visible {
 .library-header {
   position: relative;
   padding: 0.25rem 0 1.75rem;
+  overflow: hidden;
 }
 
 .library-header__atmosphere {
   position: absolute;
   top: -2rem;
-  left: 50%;
+  right: -50vw;
+  left: -50vw;
   z-index: 0;
-  width: 100vw;
   height: min(22rem, 48vh);
   overflow: hidden;
   pointer-events: none;
-  transform: translateX(-50%);
   -webkit-mask-image: linear-gradient(to bottom, #000 12%, transparent 92%);
   mask-image: linear-gradient(to bottom, #000 12%, transparent 92%);
   opacity: 0.9;
