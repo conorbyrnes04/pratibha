@@ -121,14 +121,15 @@
     "confidence": "high for copyright provenance (own rendering, explicitly disclosed); registry's 'orange' flag is a separate scholarly-review-pending concern, not a copyright one"
   },
   "Yoga Sūtras (Patañjali)": {
-    "tier": "B",
-    "english_source": "Split: Pada 1 and Sādhana-pāda ≤2.30 use the Dvivedi (1890, PD) anchor; Sūtra 2.31 onward is Satchidananda-informed Pratibha English (Swami Satchidananda, The Yoga Sutras of Patanjali, Integral Yoga Publications, 1978 — in copyright)",
+    "tier": "A",
+    "english_source": "Pratibha own faithful rendering from the Sanskrit (2026), cross-checked against J.H. Woods, The Yoga-System of Patañjali (Harvard Oriental Series 17, 1914, PD); not copied from any translation.",
     "rights_holder": "partly public domain (Dvivedi), partly Swami Satchidananda / Integral Yoga Publications (copyrighted, 1978) for 2.31–4.34",
     "pd_alternative": "Manilal Nabhubhai Dvivedi (1890, public domain) or Swami Vivekananda, Raja Yoga (1896, public domain)",
     "pd_source_text_available": true,
     "pd_source_text_note": "Sanskrit on file at data/raw_texts/pd/indian/yoga_sutras_gretil_iast_sanskrit.txt (GRETIL, PD); Dvivedi 1890 PDF also on file",
-    "recommended_action": "swap-to-PD",
-    "confidence": "high — registry explicitly documents the split and flags yellow/swap-recommended; remaining work is extending the existing Dvivedi/Vivekananda PD anchor across 2.31 through the end of Pada 4"
+    "recommended_action": "keep+attribute",
+    "confidence": "high — registry explicitly documents the split and flags yellow/swap-recommended; remaining work is extending the existing Dvivedi/Vivekananda PD anchor across 2.31 through the end of Pada 4",
+    "retranslation_note": "All 43 thematic clusters re-translated fresh from IAST, replacing the earlier thin auto-glosses; 16 Devanagari verse errors corrected from IAST."
   },
   "Phaedo": {
     "tier": "A",
