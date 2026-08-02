@@ -211,14 +211,15 @@
     "confidence": "medium — registry explicitly flags yellow/swap-recommended; the exact degree to which Lau/Mitchell phrasing bled into the 69 Wave-B LLM-generated chapters (vs. the smaller curated Wave A pilot) is not verifiable from the registry alone and should be spot-checked chapter by chapter"
   },
   "Vijñāna Bhairava": {
-    "tier": "C",
-    "english_source": "Christopher D. Wallis's Vijñānabhairava translation, used directly from the project PDF data/raw_texts/VBT+translation+WALLIS-2.pdf",
-    "rights_holder": "Christopher D. Wallis (copyrighted)",
+    "tier": "A",
+    "english_source": "Pratibha own fresh rendering from the public-domain Sanskrit (GRETIL digitization of the KSTS text), 2026. Cross-checked against scholarship; NOT derived from any copyrighted translation.",
+    "rights_holder": "public domain (source) + Pratibha original translation",
     "pd_alternative": null,
     "pd_source_text_available": true,
     "pd_source_text_note": "KSTS Sanskrit edition (1918, public domain) — on file reference at Internet Archive (dli.ernet.242056)",
-    "recommended_action": "re-render-from-source",
-    "confidence": "high — registry names Wallis's translation as the literal anchor_translation and sell_ready_tier is orange/'no PD English'; Reps (1957) and Jaideva Singh (1979) are also copyrighted so there is no PD-swap shortcut — a fresh Pratibha rendering from the PD KSTS Sanskrit (as already done for Nāgārjuna MMK and Śiva Sūtra) is the only clean path for all 112 yuktis"
+    "recommended_action": "keep+attribute",
+    "confidence": "high — Wallis dependency removed; all 112 yuktis now carry PD Sanskrit + a fresh Pratibha translation + enrichment (rich tier).",
+    "sanskrit_source": "GRETIL Vijñānabhairava (IAST); Devanagari transliterated and round-trip verified. 112 yuktis aligned to verses 24–140 via the embedded verse concordance, monotonic + content-verified."
   },
   "Spandakārikā": {
     "tier": "C",
