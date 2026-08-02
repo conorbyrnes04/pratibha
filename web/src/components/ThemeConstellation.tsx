@@ -16,7 +16,6 @@ export function ThemeConstellation({ themes, active, onChange }: ThemeConstellat
       <p className="layer-heading">Theme constellation</p>
       <p className="soft mt-1 text-sm">Most frequent threads in the corpus — scroll to explore.</p>
       <div className="theme-constellation__frame mt-3">
-        <div className="theme-constellation__fade theme-constellation__fade--left" aria-hidden />
         <div className="theme-constellation__track" role="tablist" aria-label="Filter by theme">
           <button
             type="button"
@@ -41,7 +40,6 @@ export function ThemeConstellation({ themes, active, onChange }: ThemeConstellat
             </button>
           ))}
         </div>
-        <div className="theme-constellation__fade theme-constellation__fade--right" aria-hidden />
       </div>
     </section>
   );
