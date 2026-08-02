@@ -121,6 +121,36 @@ Not unique to this wave, but relevant:
 
 ---
 
+## 7. Web kit vs Pratibha-only (do **not** port shadcn to Expo)
+
+Web adopted Monad / shadcn (Base UI) as chrome only — see `web/MONAD_ADOPTION.md` and internal showcase `/dev/system`.
+
+**Mobile shares `web/src/lib` types only.** Do not expect or copy `web/src/components/ui/*` onto React Native.
+
+| Web kit (DOM only) | iOS approach |
+|---|---|
+| `Button`, `Input`, `Textarea`, `Checkbox` | Native / Expo UI primitives; match **tokens** (gold `#d8a84a` / `#f0c979`, ink `#090912`, cream `#f6efe4`) |
+| `Dialog`, `Sheet`, `DropdownMenu` | SwiftUI/RN sheets & alerts |
+| `FilterSelect` (Combobox) | Native picker / searchable list |
+| `Progress`, `Badge`, `Empty`, `sonner` | Platform progress, chips, empty states, toasts |
+| `KitLink` = Next `Link` + button styles | Expo Router `Link` / `router.push` |
+
+**Port behavior / content, not the kit:**
+
+| Pratibha-only (keep custom on both platforms) | Why |
+|---|---|
+| `BrandMark`, `Glyph`, `InkGlyph`, `YantraBreath` | Brand / ritual visuals |
+| `LayerBlock` + source-script Original / IAST | Sacred fonts (Devanagari, Tibetan, Arabic, CJK) |
+| `ArtImage` / collection art pools | Manuscript atmosphere |
+| Learn: `PathTree`, `ThreadsConstellation`, `JourneyMandala` | Path geometry — not Cards |
+| `ThemeConstellation` | Library theme strip |
+| Lexicon flip card + SRS (`lexiconStudy.ts`) | Study core; reuse shared SRS helpers |
+| `InlineMarkdown` / markdown pipeline | Shared content rendering rules |
+
+**Tokens to mirror (dark default):** background `#090912`, foreground `#f6efe4`, surfaces `#171421` / `#211a2a`, primary gold `#d8a84a` → bright `#f0c979`, muted `#a89882`. UI sans ≈ Alegreya Sans; reading ≈ Cormorant; scripts via Noto stacks.
+
+---
+
 ## Quick QA checklist
 
 - [ ] `GET /verse/bhagavad_gita.bg_02_47` loads; old `bg_md_*` fails cleanly
@@ -128,3 +158,4 @@ Not unique to this wave, but relevant:
 - [ ] Key term with `lemma_id` is tappable once glossary ships
 - [ ] `GET /lexicon/study` returns 5 decks; Sanskrit session grades persist across relaunch
 - [ ] Paths / bookmarks that cited remapped BG IDs still resolve
+- [ ] No dependency on `web/src/components/ui` from Expo

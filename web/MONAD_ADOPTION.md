@@ -78,8 +78,9 @@ Migrate low-risk surfaces first:
 - [ ] Optional light theme (deferred; default remains dark)
 
 ### Phase 5 — Cleanup
-- Remove dead CSS once unused
-- Document kit vs Pratibha primitives for iOS handoff
+- [x] Remove dead CSS (`.btn-primary` / `.btn-secondary` / `.input-field`); keep manuscript + `filter-select` chrome
+- [x] Document kit vs Pratibha primitives in `mobile/IOS_HANDOFF.md` §7 (no Expo shadcn port)
+- Internal showcase: `/dev/system`
 
 ---
 
@@ -105,18 +106,16 @@ Default theme: **dark**. Light mode later if wanted.
 
 ### Use Monad / shadcn
 
-| Today | Target |
+| Surface | Kit |
 |---|---|
-| `.btn-primary` / `.btn-secondary` | `Button` |
-| `.input-field` | `Input` / `Textarea` / `Field` |
-| `FilterSelect` | `Select` / `Combobox` |
-| `AuthMenu` | `DropdownMenu` |
-| Login forms | `Field` + RHF + zod |
-| Chat chrome | `Message` / `Bubble` / `InputGroup` |
-| Empty states | `Empty` |
-| Confirms | `Dialog` / `AlertDialog` |
-| Mobile nav | `Sheet` / `Drawer` |
-| Status feedback | `sonner` |
+| Primary / secondary actions | `Button` / `KitLink` |
+| Text fields | `Input` / `Textarea` |
+| Library / chat / oracle filters | `FilterSelect` (Base UI Combobox) + manuscript CSS |
+| Auth menu | `DropdownMenu` |
+| Confirms / drawers | `Dialog` / `Sheet` |
+| Status | `sonner` |
+| Learn chrome | `Checkbox`, `Progress`, `Button`, reset `Dialog` |
+| Showcase | `/dev/system` |
 
 ### Pratibha-only (escalate before replacing)
 
@@ -144,7 +143,7 @@ web/src/
   app/**                   # keep all product routes
 ```
 
-Optional later: `app/dev/system/*` for an internal foundations browser.
+Internal foundations browser: `app/dev/system/page.tsx`.
 
 ---
 

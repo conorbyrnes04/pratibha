@@ -3,7 +3,7 @@ import { Input as InputPrimitive } from "@base-ui/react/input";
 
 import { cn } from "@/lib/utils";
 
-/** Manuscript-tuned field — visual parity with former .input-field. */
+/** Manuscript-tuned field — gold border, ink fill. */
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {
   return (
     <InputPrimitive

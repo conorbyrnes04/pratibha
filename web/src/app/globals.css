@@ -335,47 +335,7 @@ button {
   border-radius: 18px;
 }
 
-.btn-primary,
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
-}
-
-.btn-primary {
-  color: #121018;
-  background: linear-gradient(135deg, var(--accent-bright), var(--accent));
-  box-shadow: 0 12px 35px rgb(216 168 74 / 0.18);
-}
-
-.btn-secondary {
-  color: var(--accent-bright);
-  border: 1px solid rgb(240 201 121 / 0.34);
-  background: rgb(255 255 255 / 0.035);
-}
-
-.btn-primary:hover,
-.btn-secondary:hover {
-  transform: translateY(-1px);
-}
-
-.input-field {
-  border: 1px solid rgb(240 201 121 / 0.16);
-  color: var(--foreground);
-  background: rgb(5 5 10 / 0.62);
-  outline: none;
-  transition: border-color 0.18s ease, box-shadow 0.18s ease;
-}
-
-.input-field:focus {
-  border-color: rgb(240 201 121 / 0.52);
-  box-shadow: 0 0 0 3px rgb(216 168 74 / 0.12);
-}
+/* Buttons / fields: use kit components in web/src/components/ui (Button, Input, Textarea). */
 
 /* ── Manuscript filter selects (collections, themes) ── */
 .filter-select {
@@ -659,8 +619,6 @@ button {
    clean because :focus-visible only triggers for keyboard/AT navigation. */
 a:focus-visible,
 button:focus-visible,
-.btn-primary:focus-visible,
-.btn-secondary:focus-visible,
 .nav-link:focus-visible,
 [role="button"]:focus-visible,
 input:focus-visible,

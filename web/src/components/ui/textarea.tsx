@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-/** Manuscript-tuned textarea — matches Input / former .input-field. */
+/** Manuscript-tuned textarea — matches Input. */
 function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
   return (
     <textarea
