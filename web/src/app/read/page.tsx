@@ -253,13 +253,13 @@ function LibraryPageContent() {
 
       <div className="section-stack section-stack--tight mt-6">
         <div>
-          <div className="grid gap-4">
-            <label className="block">
+          <div className="library-toolbar">
+            <label className="block min-w-0">
               <p className="layer-heading mb-2">Search</p>
               <Input
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
-                className="w-full rounded-[18px] px-4 py-3"
+                className="w-full"
                 placeholder={showShelf ? "Search across all texts..." : "Search passages in this text..."}
               />
             </label>
@@ -285,7 +285,7 @@ function LibraryPageContent() {
             )}
           </div>
 
-          <div className="mt-5">
+          <div className="mt-6">
             <ThemeConstellation
               themes={themeConstellation}
               active={theme}
@@ -296,7 +296,7 @@ function LibraryPageContent() {
             />
           </div>
 
-          <div className="mt-4">
+          <div className="mt-3">
             <Disclosure summary="Display options" hint={includeDrafts ? "drafts on" : undefined}>
               {!showShelf ? (
                 <label className="flex items-center gap-2 font-sans text-sm soft">
