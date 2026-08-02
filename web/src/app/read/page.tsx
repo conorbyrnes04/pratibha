@@ -16,7 +16,6 @@ import { collectionGlyph, unitGlyph } from "@/lib/glyphs";
 import { buildLibraryTomes, groupTomesByTradition, sortTomes, LIBRARY_SORT_OPTIONS, type LibrarySort, type LibraryTome } from "@/lib/libraryTomes";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
-import { TomeShelf } from "@/components/tome3d";
 import { Disclosure } from "@/components/ui/Disclosure";
 import {
   displayPassageLocation,
@@ -70,15 +69,6 @@ function LibraryPageContent() {
   const [learningMode, setLearningMode] = useState(true);
   const [includeDrafts, setIncludeDrafts] = useState(false);
   const [librarySort, setLibrarySort] = useState<LibrarySort>("title");
-  const [shelfView, setShelfView] = useState<"3d" | "cards">("3d");
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 639px)");
-    const sync = () => setShelfView(mq.matches ? "cards" : "3d");
-    sync();
-    mq.addEventListener("change", sync);
-    return () => mq.removeEventListener("change", sync);
-  }, []);
 
   useEffect(() => {
     const maturity = includeDrafts ? "all" : "strong_draft";
@@ -368,65 +358,38 @@ function LibraryPageContent() {
             </p>
           ) : (
             <>
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <p className="soft font-sans text-sm">
-                  {tomes.length} texts · {items.length} passages
-                  {showingStale && loadError ? " · saved catalog" : ""}
-                  {librarySort === "author"
-                    ? " · sorted by author"
-                    : librarySort === "tradition"
-                      ? " · grouped by tradition"
-                      : " · sorted by title"}
-                </p>
-                {tomes.length > 0 ? (
-                  <div className="tome-shelf-view-toggle" role="group" aria-label="Shelf view">
-                    <button
-                      type="button"
-                      aria-pressed={shelfView === "3d"}
-                      onClick={() => setShelfView("3d")}
-                    >
-                      Shelf
-                    </button>
-                    <button
-                      type="button"
-                      aria-pressed={shelfView === "cards"}
-                      onClick={() => setShelfView("cards")}
-                    >
-                      Cards
-                    </button>
-                  </div>
-                ) : null}
-              </div>
-
-              {shelfView === "3d" && tomes.length > 0 ? (
-                <TomeShelf tomes={tomes} onOpen={openTome} />
-              ) : null}
-
-              {shelfView === "cards" || tomes.length === 0 ? (
-                shelves ? (
-                  shelves.map((shelf) => (
-                    <section key={shelf.tradition}>
-                      <div className="mb-4 flex items-baseline justify-between gap-3">
-                        <h2 className="layer-heading text-amber-100/90">{shelf.tradition}</h2>
-                        <p className="soft font-sans text-xs">
-                          {shelf.tomes.length} {shelf.tomes.length === 1 ? "text" : "texts"}
-                        </p>
-                      </div>
-                      <div className="tome-shelf">
-                        {shelf.tomes.map((tome) => (
-                          <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
-                        ))}
-                      </div>
-                    </section>
-                  ))
-                ) : (
-                  <div className="tome-shelf">
-                    {tomes.map((tome) => (
-                      <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
-                    ))}
-                  </div>
-                )
-              ) : null}
+              <p className="soft font-sans text-sm">
+                {tomes.length} texts · {items.length} passages
+                {showingStale && loadError ? " · saved catalog" : ""}
+                {librarySort === "author"
+                  ? " · sorted by author"
+                  : librarySort === "tradition"
+                    ? " · grouped by tradition"
+                    : " · sorted by title"}
+              </p>
+              {shelves ? (
+                shelves.map((shelf) => (
+                  <section key={shelf.tradition}>
+                    <div className="mb-4 flex items-baseline justify-between gap-3">
+                      <h2 className="layer-heading text-amber-100/90">{shelf.tradition}</h2>
+                      <p className="soft font-sans text-xs">
+                        {shelf.tomes.length} {shelf.tomes.length === 1 ? "text" : "texts"}
+                      </p>
+                    </div>
+                    <div className="tome-shelf">
+                      {shelf.tomes.map((tome) => (
+                        <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
+                      ))}
+                    </div>
+                  </section>
+                ))
+              ) : (
+                <div className="tome-shelf">
+                  {tomes.map((tome) => (
+                    <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
+                  ))}
+                </div>
+              )}
 
               {tomes.length === 0 ? (
                 <p className="soft mt-6">No texts match this theme yet. Clear the theme filter to see the full shelf.</p>

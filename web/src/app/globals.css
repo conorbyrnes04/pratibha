@@ -284,8 +284,18 @@ button {
 /* Narrow shell: passage reading + library share one editorial measure */
 .page-shell--reading,
 .page-shell--library {
-  width: min(100% - 2rem, var(--reading-shell));
-  padding-block: 1.35rem 4rem;
+  width: min(100%, var(--reading-shell));
+  /* Keep text off the shell edges — previous 1.5/1.85rem still felt flush. */
+  padding-inline: clamp(1.75rem, 6vw, 3rem);
+  padding-block: 2.25rem 4.5rem;
+}
+
+@media (min-width: 40rem) {
+  .page-shell--reading,
+  .page-shell--library {
+    padding-inline: clamp(2.25rem, 5vw, 3.25rem);
+    padding-block: 2.75rem 5rem;
+  }
 }
 
 /* Editorial measure for section headers inside reading-width shells */
@@ -1290,16 +1300,23 @@ select:focus-visible {
 /* 3D shelf (Stripe Press–inspired) */
 .tome-shelf-3d {
   position: relative;
-  min-height: min(70vh, 36rem);
-  height: min(72vh, 40rem);
-  margin: 0.5rem 0 1.25rem;
+  min-height: min(68vh, 36rem);
+  height: min(70vh, 38rem);
+  margin: 0.35rem 0 1.1rem;
   overflow: hidden;
   border: 1px solid rgb(216 168 74 / 0.18);
   border-radius: 1.25rem;
   background:
-    radial-gradient(ellipse at 50% 20%, rgb(240 201 121 / 0.07), transparent 55%),
-    linear-gradient(180deg, #16141c 0%, #100e14 100%);
+    radial-gradient(ellipse at 55% 35%, rgb(240 201 121 / 0.07), transparent 55%),
+    linear-gradient(180deg, #1a1614 0%, #100e12 100%);
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.03);
+}
+
+.tome-shelf-3d--opening .tome-shelf-3d__rail,
+.tome-shelf-3d--opening .tome-shelf-3d__hint {
+  opacity: 0.35;
+  pointer-events: none;
+  transition: opacity 280ms ease;
 }
 
 .tome-shelf-3d__canvas {
@@ -1315,13 +1332,125 @@ select:focus-visible {
   height: 100%;
 }
 
+/* Left index rail — thin ticks like press.stripe.com */
+.tome-shelf-3d__rail {
+  position: absolute;
+  top: 1.25rem;
+  bottom: 3.5rem;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  width: min(46%, 17rem);
+  padding: 0.5rem 0.85rem;
+  /* Wide hit area so vertical scrubbing is easy */
+  pointer-events: auto;
+  cursor: ns-resize;
+  touch-action: none;
+}
+
+.tome-shelf-3d__rail.is-hot .tome-shelf-3d__tick:not(.is-active) {
+  background: rgb(180 170 155 / 0.55);
+}
+
+.tome-shelf-3d__ticks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.42rem;
+  width: 100%;
+  pointer-events: none;
+}
+
+.tome-shelf-3d__tick-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 0.55rem;
+}
+
+.tome-shelf-3d__tick {
+  appearance: none;
+  flex: 0 0 auto;
+  width: 0.85rem;
+  height: 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 1px;
+  background: rgb(180 170 155 / 0.38);
+  pointer-events: auto;
+  cursor: pointer;
+  transition:
+    width 160ms ease,
+    background 160ms ease,
+    opacity 160ms ease;
+}
+
+.tome-shelf-3d__tick:hover {
+  background: rgb(240 201 121 / 0.7);
+  width: 1.15rem;
+}
+
+.tome-shelf-3d__tick.is-active {
+  width: 1.65rem;
+  height: 2.5px;
+  background: rgb(250 237 205);
+}
+
+.tome-shelf-3d__tick-label {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(250 237 205);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 12rem;
+  text-shadow: 0 1px 10px rgb(0 0 0 / 0.55);
+  pointer-events: none;
+}
+
+.tome-shelf-3d__caption {
+  position: absolute;
+  left: 1.15rem;
+  right: 1.15rem;
+  bottom: 2.4rem;
+  z-index: 2;
+  pointer-events: none;
+  text-align: left;
+  padding-left: 0.1rem;
+}
+
+.tome-shelf-3d__caption-title {
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: rgb(250 237 205);
+  text-shadow: 0 1px 12px rgb(0 0 0 / 0.55);
+}
+
+.tome-shelf-3d__caption-meta {
+  margin: 0.35rem 0 0;
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: rgb(214 211 209 / 0.92);
+  text-shadow: 0 1px 8px rgb(0 0 0 / 0.5);
+}
+
 .tome-shelf-3d__hint {
   position: absolute;
-  left: 1rem;
-  bottom: 0.85rem;
+  left: 1.15rem;
+  bottom: 0.75rem;
   margin: 0;
   pointer-events: none;
-  color: rgb(168 162 158 / 0.9);
+  color: rgb(168 162 158 / 0.85);
 }
 
 .tome-shelf-3d__a11y {
@@ -1367,8 +1496,12 @@ select:focus-visible {
 
 @media (max-width: 639px) {
   .tome-shelf-3d {
-    min-height: min(58vh, 28rem);
-    height: min(60vh, 30rem);
+    min-height: min(56vh, 28rem);
+    height: min(58vh, 30rem);
+  }
+
+  .tome-shelf-3d__caption {
+    bottom: 2.1rem;
   }
 }
 
@@ -1858,15 +1991,17 @@ select:focus-visible {
 }
 
 .passage-reading__header {
-  padding: 0.25rem 0 1.75rem;
+  padding: 0 0 1.35rem;
   text-align: left;
   color: var(--muted);
+  border-bottom: 1px solid rgb(240 201 121 / 0.12);
+  margin-bottom: 0.15rem;
 }
 
 .passage-reading__meta {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.55rem;
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1885,10 +2020,10 @@ select:focus-visible {
 }
 
 .passage-reading__deck {
-  margin: 1rem 0 0;
+  margin: 0.55rem 0 0;
   max-width: var(--reading-measure);
-  font-size: 1.05rem;
-  line-height: 1.55;
+  font-size: 1rem;
+  line-height: 1.5;
   color: var(--muted);
 }
 
