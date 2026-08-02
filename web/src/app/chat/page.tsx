@@ -15,6 +15,8 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop, ArtChip } from "@/components/ArtImage";
 import { Disclosure } from "@/components/ui/Disclosure";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { passagePreview, practiceText } from "@/lib/verseLayers";
 import ReactMarkdown from "react-markdown";
@@ -349,14 +351,16 @@ export default function ChatPage() {
                         <p className="soft animate-pulse text-sm">Pratibha is thinking…</p>
                       )}
                       {m.content ? (
-                        <button
+                        <Button
                           type="button"
+                          variant="secondary"
+                          size="sm"
+                          className="mt-3 text-xs"
                           onClick={() => saveReply(idx, m.content)}
                           disabled={savedReplies.has(idx)}
-                          className="btn-secondary mt-3 px-3 py-1 text-xs disabled:opacity-50"
                         >
                           {savedReplies.has(idx) ? "Saved to journal" : "Save to journal"}
-                        </button>
+                        </Button>
                       ) : null}
                     </>
                   ) : (
@@ -371,9 +375,9 @@ export default function ChatPage() {
             <p className="layer-heading mb-2">Try asking</p>
             <div className="flex flex-wrap gap-2">
               {suggestions.map((s) => (
-                <button key={s} onClick={() => setQ(s)} className="btn-secondary px-3 py-1 text-xs">
+                <Button key={s} variant="secondary" size="sm" className="text-xs" onClick={() => setQ(s)}>
                   {s}
-                </button>
+                </Button>
               ))}
             </div>
           </div>
@@ -404,14 +408,16 @@ export default function ChatPage() {
                 <>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {COMPARE_PRESETS.map((preset) => (
-                      <button
+                      <Button
                         key={preset.id}
                         type="button"
+                        variant="secondary"
+                        size="sm"
+                        className="text-xs"
                         onClick={() => applyPreset(preset.id)}
-                        className="btn-secondary px-3 py-1 text-xs"
                       >
                         {preset.label}
-                      </button>
+                      </Button>
                     ))}
                   </div>
                   <div className="mt-4 grid gap-3 lg:grid-cols-2">
@@ -463,8 +469,8 @@ export default function ChatPage() {
               </Link>
             </p>
           ) : null}
-          <textarea
-            className="input-field mt-4 w-full rounded-2xl p-3"
+          <Textarea
+            className="mt-4"
             rows={4}
             value={q}
             onChange={(e) => setQ(e.target.value)}
@@ -472,13 +478,9 @@ export default function ChatPage() {
             disabled={dailyCapHit}
           />
           <div className="mt-3 flex flex-wrap items-center gap-3">
-            <button
-              onClick={ask}
-              disabled={busy || dailyCapHit}
-              className="btn-primary px-6 py-2.5 disabled:opacity-50"
-            >
+            <Button onClick={ask} disabled={busy || dailyCapHit} size="lg">
               {busy ? "Thinking..." : "Ask"}
-            </button>
+            </Button>
             {chatRemaining != null && chatRemaining >= 0 && !dailyCapHit ? (
               <p className="soft font-sans text-xs">
                 {chatRemaining} study chat{chatRemaining === 1 ? "" : "s"} left today

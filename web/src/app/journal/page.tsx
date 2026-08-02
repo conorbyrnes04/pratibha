@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { JournalNote } from "@/lib/types";
 import { useAuth } from "@/components/AuthProvider";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { deleteJournalNoteRemote, syncJournalWithCloud } from "@/lib/journalCloud";
 import { deleteJournalNote, journalSourceHref, loadJournalNotes, saveJournalNotes } from "@/lib/journalStorage";
 
@@ -98,26 +100,26 @@ export default function JournalPage() {
             : "Saved reflections stay in this browser. Sign in to sync them across devices."}
         </p>
         {!user && !authLoading ? (
-          <Link href="/login?next=/journal" className="btn-secondary mt-4 inline-flex px-4 py-2 text-sm">
+          <Button variant="secondary" className="mt-4" render={<Link href="/login?next=/journal" />}>
             Sign in to sync
-          </Link>
+          </Button>
         ) : null}
       </header>
 
       <div className="mt-8 flex flex-wrap items-center gap-3">
-        <input
+        <Input
           value={q}
           onChange={(event) => setQ(event.target.value)}
-          className="input-field min-w-0 flex-1 rounded-lg px-3 py-2"
+          className="min-w-0 flex-1"
           placeholder="Search notes, passages, prompts..."
         />
         <div className="flex shrink-0 items-center gap-2">
-          <button onClick={exportNotes} disabled={notes.length === 0} className="btn-secondary px-4 py-2 text-sm disabled:opacity-50">
+          <Button variant="secondary" size="sm" onClick={exportNotes} disabled={notes.length === 0}>
             Export
-          </button>
-          <button onClick={() => fileRef.current?.click()} className="btn-secondary px-4 py-2 text-sm">
+          </Button>
+          <Button variant="secondary" size="sm" onClick={() => fileRef.current?.click()}>
             Import
-          </button>
+          </Button>
           <input
             ref={fileRef}
             type="file"
@@ -153,9 +155,9 @@ export default function JournalPage() {
                 : "Try a different search term to find your saved reflections."}
             </p>
             {notes.length === 0 ? (
-              <Link href="/read" className="btn-primary mt-2 px-5 py-2.5 text-sm">
+              <Button className="mt-2" render={<Link href="/read" />}>
                 Browse the library
-              </Link>
+              </Button>
             ) : null}
           </section>
         ) : (
@@ -171,13 +173,17 @@ export default function JournalPage() {
                 </div>
                 <div className="flex shrink-0 gap-2">
                   {journalSourceHref(note) ? (
-                    <Link href={journalSourceHref(note)!} className="btn-secondary px-4 py-2 text-sm">
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      render={<Link href={journalSourceHref(note)!} />}
+                    >
                       {sourceLabel(note)}
-                    </Link>
+                    </Button>
                   ) : null}
-                  <button onClick={() => remove(note.id)} className="btn-secondary px-4 py-2 text-sm">
+                  <Button variant="secondary" size="sm" onClick={() => remove(note.id)}>
                     Delete
-                  </button>
+                  </Button>
                 </div>
               </div>
               {note.prompt ? <p className="soft mt-4 text-sm">{note.prompt}</p> : null}

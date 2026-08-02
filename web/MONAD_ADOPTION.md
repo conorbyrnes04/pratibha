@@ -6,6 +6,32 @@ Monad’s own skill says not to use it for adding to an existing project — we 
 
 ---
 
+## Revert (Phase 2+)
+
+Safe rollback tag (kit installed, product chrome still CSS-based):
+
+```bash
+# Inspect the tag
+git show pre-monad-phase2 --stat
+
+# Hard reset branch + redeploy (discards Phase 2 commits on this branch)
+git checkout feature/monad-phase2-chrome   # or your current branch
+git reset --hard pre-monad-phase2
+git push --force-with-lease origin HEAD
+cd web && npm run deploy
+```
+
+Or abandon the branch and keep working from the parent:
+
+```bash
+git checkout feature/daily-richness-and-patanjali-clusters
+cd web && npm run deploy   # if that branch’s tip is still pre-monad-phase2 / Phase 1 only
+```
+
+Phase 2 work lives on `feature/monad-phase2-chrome` so it can be dropped without touching other feature work.
+
+---
+
 ## Non-goals
 
 - No new Next.js app that replaces `web/`
@@ -31,11 +57,13 @@ Monad’s own skill says not to use it for adding to an existing project — we 
 
 ### Phase 2 — Chrome → kit
 Migrate low-risk surfaces first:
-1. Login / account
-2. Sitewide `Button` / `Input` (replace `.btn-*` / `.input-field`)
-3. `SiteNav` + `AuthMenu`
-4. Journal list chrome
-5. Chat composer chrome (keep streaming / RAG logic)
+1. [x] Login / account
+2. [x] Manuscript-tuned `Button` / `Input` / `Textarea` (remaining pages still use `.btn-*` until touched)
+3. [x] `SiteNav` (Sheet + More menu) + `AuthMenu` (DropdownMenu)
+4. [x] Journal list chrome
+5. [x] Chat composer chrome (keep streaming / RAG logic)
+- Branch: `feature/monad-phase2-chrome`
+- Rollback tag: `pre-monad-phase2`
 
 ### Phase 3 — Reading & study
 - Passage: Collapsible/Accordion for layers; keep Original / IAST / script fonts

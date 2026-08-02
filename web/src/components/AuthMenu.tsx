@@ -2,8 +2,16 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
 import { useAuth } from "@/components/AuthProvider";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 function initialsFromUser(email: string | undefined, name: string | undefined): string {
   const fromName = (name || "").trim();
@@ -19,24 +27,6 @@ function initialsFromUser(email: string | undefined, name: string | undefined): 
 export function AuthMenu() {
   const router = useRouter();
   const { configured, loading, user, signOut } = useAuth();
-  const [open, setOpen] = useState(false);
-  const rootRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!open) return;
-    function onPointerDown(e: MouseEvent) {
-      if (!rootRef.current?.contains(e.target as Node)) setOpen(false);
-    }
-    function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
-    }
-    document.addEventListener("mousedown", onPointerDown);
-    document.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("mousedown", onPointerDown);
-      document.removeEventListener("keydown", onKey);
-    };
-  }, [open]);
 
   if (!configured) {
     return (
@@ -57,9 +47,9 @@ export function AuthMenu() {
 
   if (!user) {
     return (
-      <Link href="/login" className="btn-secondary px-3 py-1.5 text-sm">
+      <Button variant="secondary" size="sm" render={<Link href="/login" />}>
         Sign in
-      </Link>
+      </Button>
     );
   }
 
@@ -75,18 +65,13 @@ export function AuthMenu() {
   const initials = initialsFromUser(email, name);
 
   async function onSignOut() {
-    setOpen(false);
     await signOut();
     router.replace("/");
   }
 
   return (
-    <div ref={rootRef} className="relative">
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-        aria-haspopup="menu"
+    <DropdownMenu>
+      <DropdownMenuTrigger
         aria-label="Account menu"
         className="group relative inline-flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full border border-amber-200/35 bg-gradient-to-br from-amber-200/25 to-stone-900/80 text-xs font-semibold tracking-wide text-amber-50 shadow-[0_0_0_1px_rgb(0_0_0_/_0.35)] transition hover:border-amber-200/60 hover:from-amber-200/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200/50"
       >
@@ -96,35 +81,29 @@ export function AuthMenu() {
         ) : (
           <span className="font-sans">{initials}</span>
         )}
-      </button>
-
-      {open ? (
-        <div
-          role="menu"
-          className="absolute right-0 top-[calc(100%+0.55rem)] z-50 min-w-[13.5rem] overflow-hidden rounded-xl border border-amber-200/15 bg-[#12101c]/96 py-1 shadow-2xl backdrop-blur-xl"
+      </DropdownMenuTrigger>
+      <DropdownMenuContent
+        align="end"
+        className="min-w-[13.5rem] rounded-xl border border-amber-200/15 bg-[#12101c]/96 p-1 shadow-2xl backdrop-blur-xl"
+      >
+        <DropdownMenuLabel className="px-3 py-2.5 font-normal">
+          <p className="truncate font-sans text-sm text-amber-50">{name || email.split("@")[0] || "Account"}</p>
+          {email ? <p className="mt-0.5 truncate font-sans text-xs text-stone-400">{email}</p> : null}
+        </DropdownMenuLabel>
+        <DropdownMenuSeparator className="bg-white/10" />
+        <DropdownMenuItem
+          className="cursor-pointer px-3 py-2.5 font-sans text-sm focus:bg-white/5 focus:text-amber-100"
+          onClick={() => router.push("/account")}
         >
-          <div className="border-b border-white/10 px-3 py-2.5">
-            <p className="truncate font-sans text-sm text-amber-50">{name || email.split("@")[0] || "Account"}</p>
-            {email ? <p className="mt-0.5 truncate font-sans text-xs text-stone-400">{email}</p> : null}
-          </div>
-          <Link
-            href="/account"
-            role="menuitem"
-            onClick={() => setOpen(false)}
-            className="block px-3 py-2.5 font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
-          >
-            Account
-          </Link>
-          <button
-            type="button"
-            role="menuitem"
-            onClick={() => void onSignOut()}
-            className="block w-full px-3 py-2.5 text-left font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
-          >
-            Sign out
-          </button>
-        </div>
-      ) : null}
-    </div>
+          Account
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          className="cursor-pointer px-3 py-2.5 font-sans text-sm focus:bg-white/5 focus:text-amber-100"
+          onClick={() => void onSignOut()}
+        >
+          Sign out
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

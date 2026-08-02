@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FormEvent, Suspense, useEffect, useState } from "react";
 import { useAuth } from "@/components/AuthProvider";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { isSupabaseConfigured } from "@/lib/supabaseClient";
 
 function LoginForm() {
@@ -38,9 +41,9 @@ function LoginForm() {
           <code className="text-amber-100">NEXT_PUBLIC_SUPABASE_URL</code> and{" "}
           <code className="text-amber-100">NEXT_PUBLIC_SUPABASE_ANON_KEY</code> in the web env, then redeploy.
         </p>
-        <Link href="/" className="btn-secondary mt-8 inline-flex px-4 py-2 text-sm">
+        <Button variant="secondary" className="mt-8" render={<Link href="/" />}>
           Back home
-        </Link>
+        </Button>
       </main>
     );
   }
@@ -64,7 +67,9 @@ function LoginForm() {
         return;
       }
       if (mode === "signup") {
-        setInfo("Account created. If email confirmation is on in Supabase, check your inbox; otherwise you’re signed in.");
+        setInfo(
+          "Account created. If email confirmation is on in Supabase, check your inbox; otherwise you’re signed in.",
+        );
       }
       router.replace(next);
     } finally {
@@ -91,14 +96,16 @@ function LoginForm() {
       </p>
 
       <div className="mt-8 space-y-4">
-        <button
+        <Button
           type="button"
+          variant="secondary"
+          size="lg"
           disabled={busy}
+          className="w-full"
           onClick={() => void onGoogle()}
-          className="btn-secondary flex w-full items-center justify-center gap-2 px-4 py-3 text-sm"
         >
           Continue with Google
-        </button>
+        </Button>
 
         <div className="flex items-center gap-3 text-stone-500">
           <div className="h-px flex-1 bg-amber-200/15" />
@@ -107,48 +114,60 @@ function LoginForm() {
         </div>
 
         <form onSubmit={onSubmit} className="space-y-3">
-          <label className="block font-sans text-sm soft">
-            Email
-            <input
+          <div className="space-y-1.5">
+            <Label htmlFor="login-email" className="font-sans text-sm text-[var(--muted)]">
+              Email
+            </Label>
+            <Input
+              id="login-email"
               type="email"
               required
               autoComplete="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 w-full rounded-xl border border-amber-200/20 bg-black/30 px-3 py-2 text-amber-50 outline-none focus:border-amber-200/50"
             />
-          </label>
-          <label className="block font-sans text-sm soft">
-            Password
-            <input
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="login-password" className="font-sans text-sm text-[var(--muted)]">
+              Password
+            </Label>
+            <Input
+              id="login-password"
               type="password"
               required
               minLength={6}
               autoComplete={mode === "signin" ? "current-password" : "new-password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="mt-1 w-full rounded-xl border border-amber-200/20 bg-black/30 px-3 py-2 text-amber-50 outline-none focus:border-amber-200/50"
             />
-          </label>
+          </div>
           {error ? <p className="font-sans text-sm text-amber-200/90">{error}</p> : null}
           {info ? <p className="font-sans text-sm text-stone-300">{info}</p> : null}
-          <button type="submit" disabled={busy} className="btn-primary w-full px-4 py-3 text-sm">
+          <Button type="submit" disabled={busy} size="lg" className="w-full">
             {busy ? "Working…" : mode === "signin" ? "Sign in" : "Create account"}
-          </button>
+          </Button>
         </form>
 
         <p className="font-sans text-sm soft">
           {mode === "signin" ? (
             <>
               No account yet?{" "}
-              <button type="button" className="text-amber-100 underline-offset-2 hover:underline" onClick={() => setMode("signup")}>
+              <button
+                type="button"
+                className="text-amber-100 underline-offset-2 hover:underline"
+                onClick={() => setMode("signup")}
+              >
                 Create one
               </button>
             </>
           ) : (
             <>
               Already have an account?{" "}
-              <button type="button" className="text-amber-100 underline-offset-2 hover:underline" onClick={() => setMode("signin")}>
+              <button
+                type="button"
+                className="text-amber-100 underline-offset-2 hover:underline"
+                onClick={() => setMode("signin")}
+              >
                 Sign in
               </button>
             </>

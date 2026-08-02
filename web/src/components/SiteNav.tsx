@@ -1,9 +1,23 @@
-'use client';
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "@/components/AuthProvider";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 type NavLink = { href: string; label: string; match?: string };
 
@@ -35,31 +49,10 @@ export function SiteNav() {
   const pathname = usePathname();
   const { configured, loading, user } = useAuth();
   const [open, setOpen] = useState(false);
-  const [moreOpen, setMoreOpen] = useState(false);
-  const moreRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setOpen(false);
-    setMoreOpen(false);
   }, [pathname]);
-
-  useEffect(() => {
-    if (!moreOpen) return;
-    function onPointerDown(event: MouseEvent) {
-      if (moreRef.current && !moreRef.current.contains(event.target as Node)) {
-        setMoreOpen(false);
-      }
-    }
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setMoreOpen(false);
-    }
-    document.addEventListener("mousedown", onPointerDown);
-    document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.removeEventListener("mousedown", onPointerDown);
-      document.removeEventListener("keydown", onKeyDown);
-    };
-  }, [moreOpen]);
 
   // Hide library nav until signed in (when auth is on).
   if (configured && (loading || !user)) {
@@ -86,94 +79,70 @@ export function SiteNav() {
             </Link>
           );
         })}
-        <div className="nav-more" ref={moreRef}>
-          <button
-            type="button"
-            onClick={() => setMoreOpen((v) => !v)}
-            aria-expanded={moreOpen}
-            aria-controls="nav-more-menu"
-            className={`nav-link nav-more__trigger ${secondaryActive || moreOpen ? "text-amber-100" : ""}`}
+        <DropdownMenu>
+          <DropdownMenuTrigger
+            className={`nav-link nav-more__trigger inline-flex items-center gap-1 ${secondaryActive ? "text-amber-100" : ""}`}
           >
             More
             <span aria-hidden="true" className="nav-more__caret">
-              {moreOpen ? "▴" : "▾"}
+              ▾
             </span>
-          </button>
-          {moreOpen ? (
-            <div id="nav-more-menu" className="nav-more__menu" role="menu">
-              {SECONDARY.map((link) => {
-                const active = linkIsActive(pathname, link.href, link.match);
-                return (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    role="menuitem"
-                    aria-current={active ? "page" : undefined}
-                    className={`nav-more__item ${active ? "text-amber-100" : ""}`}
-                    onClick={() => setMoreOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                );
-              })}
-            </div>
-          ) : null}
-        </div>
-      </div>
-
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-        aria-controls="mobile-nav"
-        aria-label={open ? "Close menu" : "Open menu"}
-        className="nav-link inline-flex h-10 w-10 items-center justify-center rounded-lg border border-amber-200/20 sm:hidden"
-      >
-        <span aria-hidden="true" className="text-lg">{open ? "✕" : "☰"}</span>
-      </button>
-
-      {open ? (
-        <div
-          id="mobile-nav"
-          className="absolute left-0 right-0 top-full border-b border-amber-200/15 bg-[#090912]/95 backdrop-blur-xl sm:hidden"
-        >
-          <div className="mx-auto flex max-w-6xl flex-col px-4 py-2">
-            {PRIMARY.map((link) => {
+          </DropdownMenuTrigger>
+          <DropdownMenuContent
+            align="end"
+            className="min-w-[10rem] rounded-xl border border-amber-200/15 bg-[#12101c]/96 p-1 shadow-2xl backdrop-blur-xl"
+          >
+            {SECONDARY.map((link) => {
               const active = linkIsActive(pathname, link.href, link.match);
               return (
-                <Link
+                <DropdownMenuItem
                   key={link.href}
-                  href={link.href}
-                  aria-current={active ? "page" : undefined}
-                  className={`nav-link rounded-lg px-2 py-3 text-base ${active ? "text-amber-100" : ""}`}
+                  className={`cursor-pointer px-3 py-2 font-sans text-sm focus:bg-white/5 focus:text-amber-100 ${active ? "text-amber-100" : ""}`}
+                  render={<Link href={link.href} />}
                 >
                   {link.label}
-                </Link>
+                </DropdownMenuItem>
               );
             })}
-            <details className="nav-more-mobile">
-              <summary className="nav-link nav-more-mobile__summary rounded-lg px-2 py-3 text-base">
-                More
-              </summary>
-              <div className="flex flex-col border-l border-amber-200/15 pl-3">
-                {SECONDARY.map((link) => {
-                  const active = linkIsActive(pathname, link.href, link.match);
-                  return (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      aria-current={active ? "page" : undefined}
-                      className={`nav-link rounded-lg px-2 py-2.5 text-base ${active ? "text-amber-100" : ""}`}
-                    >
-                      {link.label}
-                    </Link>
-                  );
-                })}
-              </div>
-            </details>
-          </div>
-        </div>
-      ) : null}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+
+      <Sheet open={open} onOpenChange={setOpen}>
+        <SheetTrigger
+          className="nav-link inline-flex h-10 w-10 items-center justify-center rounded-lg border border-amber-200/20 sm:hidden"
+          aria-label="Open menu"
+        >
+          <span aria-hidden="true" className="text-lg">
+            ☰
+          </span>
+        </SheetTrigger>
+        <SheetContent
+          side="right"
+          className="border-amber-200/15 bg-[#090912]/98 w-[min(100%,20rem)]"
+          showCloseButton
+        >
+          <SheetHeader>
+            <SheetTitle className="font-serif text-xl text-amber-100">Pratibha</SheetTitle>
+          </SheetHeader>
+          <nav className="flex flex-col gap-1 px-2 pb-6">
+            {[...PRIMARY, ...SECONDARY].map((link) => {
+              const active = linkIsActive(pathname, link.href, link.match);
+              return (
+                <Button
+                  key={link.href}
+                  variant="ghost"
+                  className={`justify-start rounded-lg px-3 py-3 text-base ${active ? "text-amber-100" : ""}`}
+                  render={<Link href={link.href} />}
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </Button>
+              );
+            })}
+          </nav>
+        </SheetContent>
+      </Sheet>
     </>
   );
 }

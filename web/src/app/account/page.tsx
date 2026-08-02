@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useAuth } from "@/components/AuthProvider";
+import { Button } from "@/components/ui/button";
 import { fetchMe } from "@/lib/authApi";
 
 export default function AccountPage() {
@@ -23,7 +24,11 @@ export default function AccountPage() {
       return;
     }
     void fetchMe(accessToken).then((me) => {
-      setApiMe(me ? `API recognizes you (${me.email || me.id})` : "API /me not configured yet (set SUPABASE_JWT_SECRET on Render)");
+      setApiMe(
+        me
+          ? `API recognizes you (${me.email || me.id})`
+          : "API /me not configured yet (set SUPABASE_JWT_SECRET on Render)",
+      );
     });
   }, [accessToken]);
 
@@ -50,22 +55,21 @@ export default function AccountPage() {
       <h1 className="mt-2 text-4xl text-amber-100">Signed in</h1>
       <p className="soft mt-4 font-sans text-sm">{user.email}</p>
       <p className="soft mt-2 font-sans text-sm">
-        Journal notes sync to your account when you&apos;re signed in. The library and Study Chat stay available without login.
+        Journal notes sync to your account when you&apos;re signed in. The library and Study Chat stay
+        available without login.
       </p>
       {apiMe ? <p className="soft mt-3 font-sans text-xs text-stone-500">{apiMe}</p> : null}
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/journal" className="btn-primary px-4 py-2 text-sm">
-          Open journal
-        </Link>
-        <button
+        <Button render={<Link href="/journal" />}>Open journal</Button>
+        <Button
           type="button"
-          className="btn-secondary px-4 py-2 text-sm"
+          variant="secondary"
           onClick={() => {
             void signOut().then(() => router.push("/"));
           }}
         >
           Sign out
-        </button>
+        </Button>
       </div>
     </main>
   );
