@@ -12,12 +12,11 @@ sanskrit_devanagari: Κατὰ τοῦτον ἡμεῖς γενέσθαι τὸ
   ὑπερουσίως ὑμνῆσαι διὰ τῆς πάντων τῶν ὄντων ἀφαιρέσεως, ὥσπερ οἱ αὐτοφυὲς ἄγαλμα ποιοῦντες ἐξαιροῦντες πάντα τὰ ἐπιπροσθοῦντα
   τῆι καθαρᾶι τοῦ κρυφίου θέαι κωλύματα καὶ αὐτὸ ἐφ' ἑαυτοῦ τῆι ἀφαιρέσει μόνηι τὸ ἀποκεκρυμμένον ἀναφαίνοντες κάλλος.
 sanskrit_iast: Greek scholarly romanization (see canonical iast layer).
-translation_literal: Unto this Darkness which is beyond Light we pray that we may come, and may attain unto vision through
-  the loss of sight and knowledge, and that in ceasing thus to see or to know we may learn to know that which is beyond all
-  perception and understanding (for this emptying of our faculties is true sight and knowledge), and that we may offer Him
-  that transcends all things the praises of a transcendent hymnody, which we shall do by denying or removing all things that
-  are—like as men who, carving a statue out of marble, remove all the impediments that hinder the clear perceptive of the
-  latent image and by this mere removal display the hidden statue itself in its hidden beauty.
+translation_literal: We pray that we may enter into this Darkness that is beyond Light, and through blindness and ignorance
+  may see and know the One who transcends all sight and knowledge—knowing him precisely through not seeing and not knowing,
+  for this is true sight and knowledge. And that we may hymn the One who transcends being in a manner transcendent [hyperousios],
+  through the negation of all that is—just as those who work in stone, fashioning a statue, remove all that obstructs the
+  clear vision of the hidden form, and through this removal alone reveal the beauty that was concealed within.
 commentary: '«Carving the Latent Image» makes negation sculptural: truth appears not by adding predicates but by removing
   what blocks the latent form. Read it as a demand on attention, not as a museum label: hold the argument until its force
   lands, then let one concrete shift follow into ordinary life. Return to the original wording when the mind wants to smooth
@@ -82,12 +81,11 @@ pratibha_layers:
   body: Greek scholarly romanization (see canonical iast layer).
 - kind: translation
   label: Pratibha Translation
-  body: Unto this Darkness which is beyond Light we pray that we may come, and may attain unto vision through the loss of
-    sight and knowledge, and that in ceasing thus to see or to know we may learn to know that which is beyond all perception
-    and understanding (for this emptying of our faculties is true sight and knowledge), and that we may offer Him that transcends
-    all things the praises of a transcendent hymnody, which we shall do by denying or removing all things that are—like as
-    men who, carving a statue out of marble, remove all the impediments that hinder the clear perceptive of the latent image
-    and by this mere removal display the hidden statue itself in its hidden beauty.
+  body: We pray that we may enter into this Darkness that is beyond Light, and through blindness and ignorance may see and
+    know the One who transcends all sight and knowledge—knowing him precisely through not seeing and not knowing, for this
+    is true sight and knowledge. And that we may hymn the One who transcends being in a manner transcendent [hyperousios],
+    through the negation of all that is—just as those who work in stone, fashioning a statue, remove all that obstructs the
+    clear vision of the hidden form, and through this removal alone reveal the beauty that was concealed within.
   layer_provenance: public_domain
 - kind: commentary
   label: Pratibha Commentary
@@ -107,3 +105,5 @@ provenance:
   original_id: PD_MT_04
   source_reference: ''
 enriched: true
+translation: null
+register: modern

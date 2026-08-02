@@ -14,12 +14,13 @@ sanskrit_devanagari: Ὥσπερ γὰρ ἄληπτα καὶ ἀθεώρητα
   καὶ λόγος ἄῤῥητος, ἀλογία καὶ ἀνοησία καὶ ἀνωνυμία κατὰ μηδὲν τῶν ὄντων οὖσα καὶ αἴτιον μὲν τοῦ εἶναι πᾶσιν, αὐτὸ δὲ μὴ
   ὂν ὡς πάσης οὐσίας ἐπέκεινα καὶ ὡς ἂν αὐτὴ περὶ ἑαυτῆς κυρίως καὶ ἐπιστητῶς ἀποφαίνοιτο.
 sanskrit_iast: Greek scholarly romanization (see canonical iast layer).
-translation_literal: By the same law of truth the boundless Super-Essence surpasses Essences, the Super-Intellectual Unity
-  surpasses Intelligences, the One which is beyond thought surpasses the apprehension of thought, and the Good which is beyond
-  utterance surpasses the reach of words. Yea, it is an Unity which is the unifying Source of all unity and a Super-Essential
-  Essence, a Mind beyond the reach of mind and a Word beyond utterance, eluding Discourse, Intuition, Name, and every kind
-  of being. It is the Universal Cause of existence while Itself existing not, for It is beyond all Being and such that It
-  alone could give, with proper understanding thereof, a revelation of Itself.
+translation_literal: Just as intelligible realities are inaccessible and invisible to sensory perception, and simple, formless
+  realities to those confined to shape and image, and the bodiless and formless character of incorporeal things to those shaped
+  according to bodily forms, by the same principle of truth the super-essential infinity transcends all essences, and the
+  unity beyond intellect transcends all minds. The One beyond thought is unthinkable to every intellect, and the Good beyond
+  utterance is inexpressible in every word—a unity that unifies all unity, a super-essential essence, an intellect beyond
+  intellection, a word beyond utterance, beyond discourse and intuition and naming, belonging to none of the beings that exist,
+  yet the cause of being for all things while itself not being, for it stands beyond all being.
 commentary: '«Super-Essence Beyond Mind and Word» names the paradox at the heart of Dionysius: Cause of existence while beyond
   being, Mind beyond mind, Word beyond speech. Read it as a demand on attention, not as a museum label: hold the argument
   until its force lands, then let one concrete shift follow into ordinary life. Return to the original wording when the mind
@@ -91,12 +92,13 @@ pratibha_layers:
   body: Greek scholarly romanization (see canonical iast layer).
 - kind: translation
   label: Pratibha Translation
-  body: By the same law of truth the boundless Super-Essence surpasses Essences, the Super-Intellectual Unity surpasses Intelligences,
-    the One which is beyond thought surpasses the apprehension of thought, and the Good which is beyond utterance surpasses
-    the reach of words. Yea, it is an Unity which is the unifying Source of all unity and a Super-Essential Essence, a Mind
-    beyond the reach of mind and a Word beyond utterance, eluding Discourse, Intuition, Name, and every kind of being. It
-    is the Universal Cause of existence while Itself existing not, for It is beyond all Being and such that It alone could
-    give, with proper understanding thereof, a revelation of Itself.
+  body: Just as intelligible realities are inaccessible and invisible to sensory perception, and simple, formless realities
+    to those confined to shape and image, and the bodiless and formless character of incorporeal things to those shaped according
+    to bodily forms, by the same principle of truth the super-essential infinity transcends all essences, and the unity beyond
+    intellect transcends all minds. The One beyond thought is unthinkable to every intellect, and the Good beyond utterance
+    is inexpressible in every word—a unity that unifies all unity, a super-essential essence, an intellect beyond intellection,
+    a word beyond utterance, beyond discourse and intuition and naming, belonging to none of the beings that exist, yet the
+    cause of being for all things while itself not being, for it stands beyond all being.
   layer_provenance: public_domain
 - kind: commentary
   label: Pratibha Commentary
@@ -116,3 +118,5 @@ provenance:
   original_id: PD_DN_02
   source_reference: ''
 enriched: true
+translation: null
+register: modern

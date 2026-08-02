@@ -12,11 +12,12 @@ sanskrit_devanagari: Χρὴ δέ, ὡς οἶμαι, τὰς ἀφαιρέσε�
   τὴν ἀγνωσίαν τὴν ὑπὸ πάντων τῶν γνωστῶν ἐν πᾶσι τοῖς οὖσι περικεκαλυμμένην καὶ τὸν ὑπερούσιον ἐκεῖνον ἴδωμεν γνόφον τὸν
   ὑπὸ παντὸς τοῦ ἐν τοῖς οὖσι φωτὸς ἀποκρυπτόμενον. γ´
 sanskrit_iast: Greek scholarly romanization (see canonical iast layer).
-translation_literal: Now we must wholly distinguish this negative method from that of positive statements. For when we were
-  making positive statements we began with the most universal statements, and then through intermediate terms we came at last
-  to particular titles, but now ascending upwards from particular to universal conceptions we strip off all qualities in order
-  that we may attain a naked knowledge of that Unknowing which in all existent things is enwrapped by all objects of knowledge,
-  and that we may begin to see that super-essential Darkness which is hidden by all the light that is in existent things.
+translation_literal: Now we must distinguish this negative method in the opposite way from that of affirmative statements.
+  For in making affirmative statements, we began from the most primary principles and descended through intermediate terms
+  to the most particular; here, however, ascending from the most particular to the most primary principles, we strip away
+  all qualities in order that we may attain a naked knowledge of that unknowing [agnosia] which is wrapped around by all objects
+  of knowledge in all existing things, and that we may perceive that super-essential darkness [gnophos] which is hidden by
+  all the light that exists in beings.
 commentary: '«Affirmation Descends; Negation Ascends» states the famous method: cataphatic speech moves down through names;
   apophatic speech strips upward into darkness. Read it as a demand on attention, not as a museum label: hold the argument
   until its force lands, then let one concrete shift follow into ordinary life. Return to the original wording when the mind
@@ -80,11 +81,12 @@ pratibha_layers:
   body: Greek scholarly romanization (see canonical iast layer).
 - kind: translation
   label: Pratibha Translation
-  body: Now we must wholly distinguish this negative method from that of positive statements. For when we were making positive
-    statements we began with the most universal statements, and then through intermediate terms we came at last to particular
-    titles, but now ascending upwards from particular to universal conceptions we strip off all qualities in order that we
-    may attain a naked knowledge of that Unknowing which in all existent things is enwrapped by all objects of knowledge,
-    and that we may begin to see that super-essential Darkness which is hidden by all the light that is in existent things.
+  body: Now we must distinguish this negative method in the opposite way from that of affirmative statements. For in making
+    affirmative statements, we began from the most primary principles and descended through intermediate terms to the most
+    particular; here, however, ascending from the most particular to the most primary principles, we strip away all qualities
+    in order that we may attain a naked knowledge of that unknowing [agnosia] which is wrapped around by all objects of knowledge
+    in all existing things, and that we may perceive that super-essential darkness [gnophos] which is hidden by all the light
+    that exists in beings.
   layer_provenance: public_domain
 - kind: commentary
   label: Pratibha Commentary
@@ -104,3 +106,5 @@ provenance:
   original_id: PD_MT_05
   source_reference: ''
 enriched: true
+translation: null
+register: modern

@@ -30,13 +30,12 @@ sanskrit_devanagari: Λέγωμεν τοίνυν, ὅτι δύναμις ἔστ
   τῶν ὄντων οὔτε θεμιτὸν οὔτε ἐφικτόν. Ἀλλ’ ὡς ἄφθεγκτον καὶ τοῦτο καὶ ἄγνωστον ἐπ’ αὐτὴν ἀναθέντες ὡς πάντων οὖσαν ἐπέκεινα
   τὰς νοητὰς αὐτῆς καὶ ·ητὰς μετουσίας καὶ τοῦτο ὡς δυνατὸν ἀνδράσι καὶ ἡμῖν πολλῶν ἀνδρῶν ἀγαθῶν ἀπολειπομένοις ἐπισκοπήσωμεν.
 sanskrit_iast: Greek scholarly romanization (see canonical iast layer).
-translation_literal: God is Power because in His own Self He contains all power beforehand and exceeds it, and because He
-  is the Cause of all power and produces all things by a power which may not be thwarted nor circumscribed. Yea, He is Infinitely
-  Powerful not only in that all Power comes from Him, but also because He is above all power and is Very Power. Now let us
-  praise with reverent hymns of peace the Divine Peace which is the Source of all mutual attraction. For this Quality it is
-  that unites all things together and begets and produces the harmonies and agreements of all things. And hence it is that
-  all things long for It, and that It draws their manifold separate parts into the unity of the whole and unites the battling
-  elements of the world into concordant fellowship.
+translation_literal: God is power because he contains all power within himself beforehand and surpasses it, and because he
+  is the cause of all power and produces all things by a power that cannot be thwarted or limited. Indeed, he is infinitely
+  powerful not only in that all power comes from him, but also because he is beyond all power and is power itself [dynamis].
+  He is infinitely powerful also in that he can generate other powers infinitely many times beyond all power, and in that
+  the infinite powers that are generated infinitely can never diminish his transcendent power-generating capacity, and in
+  that he is beyond utterance and beyond knowledge.
 commentary: '«Power and the Peace That Unites» pairs two names of providence: unbounded Power and the Peace that gathers battling
   parts into concord. Read it as a demand on attention, not as a museum label: hold the argument until its force lands, then
   let one concrete shift follow into ordinary life. Return to the original wording when the mind wants to smooth the edge.
@@ -114,13 +113,12 @@ pratibha_layers:
   body: Greek scholarly romanization (see canonical iast layer).
 - kind: translation
   label: Pratibha Translation
-  body: God is Power because in His own Self He contains all power beforehand and exceeds it, and because He is the Cause
-    of all power and produces all things by a power which may not be thwarted nor circumscribed. Yea, He is Infinitely Powerful
-    not only in that all Power comes from Him, but also because He is above all power and is Very Power. Now let us praise
-    with reverent hymns of peace the Divine Peace which is the Source of all mutual attraction. For this Quality it is that
-    unites all things together and begets and produces the harmonies and agreements of all things. And hence it is that all
-    things long for It, and that It draws their manifold separate parts into the unity of the whole and unites the battling
-    elements of the world into concordant fellowship.
+  body: God is power because he contains all power within himself beforehand and surpasses it, and because he is the cause
+    of all power and produces all things by a power that cannot be thwarted or limited. Indeed, he is infinitely powerful
+    not only in that all power comes from him, but also because he is beyond all power and is power itself [dynamis]. He is
+    infinitely powerful also in that he can generate other powers infinitely many times beyond all power, and in that the
+    infinite powers that are generated infinitely can never diminish his transcendent power-generating capacity, and in that
+    he is beyond utterance and beyond knowledge.
   layer_provenance: public_domain
 - kind: commentary
   label: Pratibha Commentary
@@ -140,3 +138,5 @@ provenance:
   original_id: PD_DN_11
   source_reference: ''
 enriched: true
+translation: null
+register: modern

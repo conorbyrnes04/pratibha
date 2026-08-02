@@ -12,11 +12,11 @@ sanskrit_devanagari: οὔτε λόγος αὐτῆς ἐστιν οὔτε ὄ
   ἀφαιροῦμεν, ἐπεὶ καὶ ὑπὲρ πᾶσαν θέσιν ἐστὶν ἡ παντελὴς καὶ ἑνιαία τῶν πάντων αἰτία καὶ ὑπὲρ πᾶσαν ἀφαίρεσιν ἡ ὑπεροχὴ τοῦ
   πάντων ἁπλῶς ἀπολελυμένου καὶ ἐπέκεινα τῶν ὅλων.
 sanskrit_iast: Greek scholarly romanization (see canonical iast layer).
-translation_literal: Nor can the reason attain to It to name It or to know It; nor is it darkness, nor is It light, or error,
-  or truth; nor can any affirmation or negation apply to it; for while applying affirmations or negations to those orders
-  of being that come next to It, we apply not unto It either affirmation or negation, inasmuch as It transcends all affirmation
-  by being the perfect and unique Cause of all things, and transcends all negation by the pre-eminence of Its simple and absolute
-  nature—free from every limitation and beyond them all.
+translation_literal: Neither reason nor name nor knowledge can attain to it; it is neither darkness nor light, neither error
+  nor truth. Neither affirmation nor negation applies to it absolutely. For when we make affirmations and negations concerning
+  those orders of being that come after it, we apply to it neither affirmation nor negation, since it transcends all affirmation
+  as the perfect and unified cause [aἰτία] of all things, and transcends all negation through the preeminence of its simple
+  and absolute nature—entirely free from every limitation and beyond all things.
 commentary: '«Beyond Affirmation and Negation» closes the Mystical Theology: even denial is left behind, because the Cause
   exceeds both yes and no. Read it as a demand on attention, not as a museum label: hold the argument until its force lands,
   then let one concrete shift follow into ordinary life. Return to the original wording when the mind wants to smooth the
@@ -80,11 +80,11 @@ pratibha_layers:
   body: Greek scholarly romanization (see canonical iast layer).
 - kind: translation
   label: Pratibha Translation
-  body: Nor can the reason attain to It to name It or to know It; nor is it darkness, nor is It light, or error, or truth;
-    nor can any affirmation or negation apply to it; for while applying affirmations or negations to those orders of being
-    that come next to It, we apply not unto It either affirmation or negation, inasmuch as It transcends all affirmation by
-    being the perfect and unique Cause of all things, and transcends all negation by the pre-eminence of Its simple and absolute
-    nature—free from every limitation and beyond them all.
+  body: Neither reason nor name nor knowledge can attain to it; it is neither darkness nor light, neither error nor truth.
+    Neither affirmation nor negation applies to it absolutely. For when we make affirmations and negations concerning those
+    orders of being that come after it, we apply to it neither affirmation nor negation, since it transcends all affirmation
+    as the perfect and unified cause [aἰτία] of all things, and transcends all negation through the preeminence of its simple
+    and absolute nature—entirely free from every limitation and beyond all things.
   layer_provenance: public_domain
 - kind: commentary
   label: Pratibha Commentary
@@ -103,3 +103,5 @@ provenance:
   original_id: PD_MT_08
   source_reference: ''
 enriched: true
+translation: null
+register: modern
