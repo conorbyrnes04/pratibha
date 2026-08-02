@@ -223,14 +223,15 @@
     "sanskrit_source": "GRETIL Vijñānabhairava (IAST); Devanagari transliterated and round-trip verified. 112 yuktis aligned to verses 24–140 via the embedded verse concordance, monotonic + content-verified."
   },
   "Spandakārikā": {
-    "tier": "C",
-    "english_source": "Daniel Odier, Yoga Spandakarika (Inner Traditions, 2005), used from the project EPUB",
-    "rights_holder": "Daniel Odier / Inner Traditions (copyrighted, 2005)",
+    "tier": "A",
+    "english_source": "Pratibha own faithful rendering from the public-domain Sanskrit (GRETIL Vasugupta Spandakārikā, 2026); NOT derived from Odier or any copyrighted translation.",
+    "rights_holder": "public domain (source) + Pratibha original translation",
     "pd_alternative": null,
     "pd_source_text_available": true,
     "pd_source_text_note": "KSTS Sanskrit edition, public domain",
-    "recommended_action": "re-render-from-source",
-    "confidence": "high — registry names Odier's translation directly as the anchor and states 'no PD English — Jaideva Singh (1980) is copyrighted' as well; re-render from PD KSTS Sanskrit is the only clean path"
+    "recommended_action": "keep+attribute",
+    "confidence": "high — registry names Odier's translation directly as the anchor and states 'no PD English — Jaideva Singh (1980) is copyrighted' as well; re-render from PD KSTS Sanskrit is the only clean path",
+    "sanskrit_source": "GRETIL Vasugupta Spandakārikā (PD IAST); Devanagari transliterated + round-trip verified. 52 units content-aligned to the kārikās (shared units inherit owner)."
   },
   "Yoginīhṛdaya": {
     "tier": "C",
