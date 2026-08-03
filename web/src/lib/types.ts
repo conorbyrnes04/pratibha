@@ -63,6 +63,10 @@ export type VerseItem = {
     section?: string;
     collection?: string;
     original_id?: string;
+    original_reliability?: string;
+    verification?: string;
+    english_source?: string;
+    original_source?: string;
   };
   thesis?: string;
   source_excerpt?: string;

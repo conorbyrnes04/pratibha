@@ -7,7 +7,7 @@ unit_label: The Veil of Light
 title: The Veil of Light
 unit_type: verse
 section: Risālat al-Aḥadiyya, on the veil
-sanskrit_devanagari: al-ḥijābu nūrun, wa-anta maḥjūbun bi-l-nūr.
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: The veil is light, and you are veiled from Him by the light.
 commentary: 'This compressed saying overturns the ordinary religious image of a dark barrier separating creature from God.
@@ -51,13 +51,12 @@ themes: []
 tags: []
 provenance:
   collection: Know Yourself (Ibn Arabi / Balyani)
-  source_confidence: medium
-  original_source: 'Know Yourself (Ibn Arabi / Balyani): Risālat al-Aḥadiyya, on the veil; original per received text (model-supplied,
-    PD-verification pending).'
+  source_confidence: low
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; original withdrawn after PD miss'
   verification_note: Cannot verify the exact original Arabic text of this passage from Risālat al-Aḥadiyya without access
     to reliable manuscript sources or scholarly editions. The phrase structure appears plausible for Ib
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

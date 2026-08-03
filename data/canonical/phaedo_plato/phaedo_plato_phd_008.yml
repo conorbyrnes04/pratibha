@@ -7,8 +7,7 @@ unit_label: The Soul's Kinship with the Eternal
 title: The Soul's Kinship with the Eternal
 unit_type: verse
 section: Phaedo 72e–77a
-sanskrit_devanagari: ἆρα οὐ τοῦτό ἐστιν τὸ διαφέρον, ὅτι ἡ μὲν ψυχὴ ἀθάνατος καὶ ἀνώλεθρος, καὶ οἰκεῖται τὸν ἀεὶ χρόνον, τὸ
-  δὲ σῶμα ἀεί τι ἀπόλλυται; (Phaedo 72e)
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: 'Is not this the distinction: that the soul is immortal and imperishable, and our souls truly dwell throughout
   all time, whereas the body is always perishing? For when death comes, the body—the visible, corporeal thing—goes to the
@@ -62,11 +61,11 @@ tags: []
 provenance:
   collection: Phaedo
   source_confidence: low
-  original_source: 'Phaedo: Phaedo 72e–77a; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The quoted passage accurately reflects Plato's Phaedo 72e. The text correctly presents Socrates' argument
     about the distinction between the immortal and indestructible soul (ψυχὴ ἀθάνατος καὶ ἀνώλεθρο | PD phrase-match miss
     vs local witness (greek/phaedo_burnet_perseus-grc2.xml); query field=sanskrit_devanagari; score=0.112.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.

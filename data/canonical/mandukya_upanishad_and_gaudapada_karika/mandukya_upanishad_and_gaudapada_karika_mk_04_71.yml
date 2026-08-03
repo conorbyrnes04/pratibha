@@ -6,20 +6,8 @@ unit_id: mandukya_upanishad_and_gaudapada_karika.mk_04_71
 unit_label: The Turīya Beyond All States
 title: The Turīya Beyond All States
 unit_type: verse
-sanskrit_devanagari: 'तुरीयम् इत्य् अभिधीयते ।
-
-  येन सर्वम् इदम् विज्ञानम् ।
-
-  तत् सत्य-ज्ञान-आनन्द-मयम् ।
-
-  ब्रह्म इत्य् आचक्षते ॥ ४.७१ ॥'
-sanskrit_iast: 'turīyam ity abhidhīyate |
-
-  yena sarvam idam vijñānam |
-
-  tat satya-jñāna-ānanda-mayam |
-
-  brahma ity ācakṣate || 4.71 ||'
+sanskrit_devanagari: ''
+sanskrit_iast: ''
 translation_literal: 'That which is called turīya (the fourth)—by which all this is known—that which is made of truth, knowledge,
   and bliss: they call it brahman. The turīya is not the experiencer of the three states (waking, dream, deep sleep), yet
   it is the witness-consciousness that illuminates all knowing.'
@@ -73,10 +61,11 @@ provenance:
   sanskrit_source: Mandukya Upanishad and Gaudapada Karika 4.71; Sanskrit per received text (model-supplied, PD-verification
     pending); Devanagari from IAST.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: Cannot verify the exact wording of MK 4.71 with confidence. The verse appears to relate to Turīya (the
     fourth state) and Brahman's nature, but without access to the critical edition of Gauḍapāda's Kār | PD phrase-match miss
     vs local witness (indian/mandukya_gaudapada_gretil_iast.txt); query field=sanskrit_iast; score=0.093.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
 needs_source_review: true

@@ -7,9 +7,7 @@ unit_label: The Ripe Grape and the Vintner's Wisdom
 title: The Ripe Grape and the Vintner's Wisdom
 unit_type: verse
 section: I.3570–3575
-sanskrit_devanagari: 'انگور خام را نمی‌خورد کسی / تا که رسد و شیرین گردد بسی
-
-  خام خوری آن جاهل و بی‌خبر / رسته‌خوری آن عاقل و بین‌نظر'
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: No one eats the unripe grape—it must ripen and grow sweet abundantly. The fool eats what is raw and unripened;
   the wise one waits for ripeness and sees far.
@@ -56,12 +54,12 @@ tags: []
 provenance:
   collection: Rūmī — Mathnawī-yi Maʿnawī
   source_confidence: low
-  original_source: 'Rūmī — Mathnawī-yi Maʿnawī: I.3570–3575; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: Cannot verify the exact text at Mathnawī I.3570–3575 against reliable sources. While the couplets appear
     stylistically consistent with Rūmī's work and the Persian is grammatically sound, I cannot conf | PD phrase-match miss
     vs local witness (persian/mathnawi_chinese_greek_painters_masnavi_net.txt); query field=sanskrit_devanagari; score=0.087.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

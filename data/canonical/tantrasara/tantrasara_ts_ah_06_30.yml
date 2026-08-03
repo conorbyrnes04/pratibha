@@ -6,8 +6,8 @@ unit_id: tantrasara.ts_ah_06_30
 unit_label: Play in the Great World
 title: Play in the Great World
 unit_type: verse
-sanskrit_devanagari: प्रबुद्धास् तु कूष्माण्डहाटकेशाद्या महोलोके क्रीडन्ति ॥ ६.३० ॥
-sanskrit_iast: prabuddhās tu kūṣmāṇḍahāṭakeśādyā maholoke krīḍanti || 6.30 ||
+sanskrit_devanagari: ''
+sanskrit_iast: ''
 translation_literal: But the awakened (prabuddhāḥ)—Kūṣmāṇḍa, Hāṭakeśa, and the rest—sport in the Great World (maholoka).
 commentary: 'The sentence marks a post-awakening mode of existence rather than liberation conceived as mere withdrawal. Kūṣmāṇḍa,
   Hāṭakeśa, and related beings are described as prabuddha, “awakened”: their condition is therefore defined by manifestation
@@ -53,7 +53,8 @@ provenance:
   english_source: Pratibha own rendering from the Sanskrit (2026).
   verification_note: PD phrase-match miss vs local witness (indian/tantrasara_abhinavagupta_gretil_iast.txt); query field=sanskrit_iast;
     score=0.061.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
   source_confidence: low
-  verification: 'PD phrase-match: miss'
+  verification: 'PD phrase-match: miss; original withdrawn after PD miss'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.

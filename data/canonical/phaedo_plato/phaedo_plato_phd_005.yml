@@ -7,7 +7,7 @@ unit_label: 'The Danger of Misology: Hatred of Argument as Spiritual Sickness'
 title: 'The Danger of Misology: Hatred of Argument as Spiritual Sickness'
 unit_type: verse
 section: Phaedo 89b–90c
-sanskrit_devanagari: μισολογία (misologia)
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: 'Socrates warns Simmias and Cebes: ''There is a danger, my friends, that we may come to hate argument
   itself (misologian), just as some come to hate mankind. For misology arises in the soul in the same way as misanthropy.
@@ -65,10 +65,10 @@ tags: []
 provenance:
   collection: Phaedo
   source_confidence: low
-  original_source: 'Phaedo: Phaedo 89b–90c; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: μισολογία is the correct Greek term used in Phaedo 89b–90c. | PD phrase-match miss vs local witness (greek/phaedo_burnet_perseus-grc2.xml);
     query field=sanskrit_devanagari; score=0.077.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.

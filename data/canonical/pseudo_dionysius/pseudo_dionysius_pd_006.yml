@@ -7,10 +7,7 @@ unit_label: The Ascent Beyond Being Through Negation
 title: The Ascent Beyond Being Through Negation
 unit_type: verse
 section: Mystical Theology I.1
-sanskrit_devanagari: Τρισάγιε σκότος, ὑπερούσιε σιγή, ἐν ᾧ πάντα τὰ φῶτα τῶν λόγων ἐκλείπει, καὶ πᾶσα φωνὴ καὶ πᾶς λόγος.
-  Ἀναβαίνομεν ἀφαιροῦντες πάντα, ἵνα γυμνῇ γνώσει τὸ ὑπερούσιον ἴδωμεν. (Trisagie skótos, hyperousie sigí, en hō pánta ta
-  phóta tōn lógōn eklípei, kaì pâsa phonḗ kaì pâs lógos. Anabaínomen aphairoûntes pánta, hína gymnḗ gnṓsei to hyperoúsion
-  ídōmen.)
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: O Trinity beyond being, beyond light, holy darkness—in which all the luminous utterances of the Word
   fall silent, and every voice and every discourse cease. We ascend by stripping away all things (aphairesis), that in naked
@@ -60,12 +57,12 @@ tags: []
 provenance:
   collection: Pseudo-Dionysius
   source_confidence: low
-  original_source: 'Pseudo-Dionysius: Mystical Theology I.1; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The passage appears to be from Pseudo-Dionysius's Mystical Theology I.1, but the Greek text provided
     is incomplete (cuts off mid-sentence at 'aphairoûntes'). The visible portion matches known formulat | PD phrase-match
     miss vs local witness (greek/mystical_theology_migne_pg3.txt); query field=sanskrit_devanagari; score=0.086.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

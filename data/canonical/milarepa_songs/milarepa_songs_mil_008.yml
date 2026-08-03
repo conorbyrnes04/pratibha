@@ -7,8 +7,7 @@ unit_label: Refuge for the Deer
 title: Refuge for the Deer
 unit_type: verse
 section: Mila Ras Pa'i Mgur 'Bum, “The Hunter and the Deer”
-sanskrit_devanagari: Mi la ras pa'i mgur 'bum (The Hundred Thousand Songs of Milarepa); song commonly titled “The Hunter and
-  the Deer.”
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: 'Hunter, listen well: this deer, driven by terror,
 
@@ -74,12 +73,11 @@ tags: []
 provenance:
   collection: Songs of Milarepa
   source_confidence: low
-  original_source: 'Songs of Milarepa: Mila Ras Pa''i Mgur ''Bum, “The Hunter and the Deer”; original per received text (model-supplied,
-    PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: No Tibetan passage was provided to verify; only the work and song title are identified. | PD phrase-match
     miss vs local witness (tibetan/milarepa_evans_wentz_1928.txt); query field=sanskrit_devanagari; score=0.069.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

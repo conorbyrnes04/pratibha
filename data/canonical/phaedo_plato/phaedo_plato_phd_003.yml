@@ -7,8 +7,7 @@ unit_label: Recollection as Proof of the Soul's Pre-existence
 title: Recollection as Proof of the Soul's Pre-existence
 unit_type: verse
 section: Phaedo 72e–77a
-sanskrit_devanagari: εἰ γὰρ ἀεὶ ἡμῖν ἐστιν ἡ ἀλήθεια, ψυχὴ ἂν εἴη ἀθάνατος· εἰ δὲ ἀεὶ μὲν οὐκ ἔστιν, ἀλλὰ ἀεὶ γίγνεται, ἆρα
-  οὐ καὶ ἡ ψυχὴ ἀεὶ γίγνεται; (Phaedo 77a)
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: For if truth is always present to us, then the soul would be immortal; but if truth does not always exist,
   yet is always coming-to-be, must not the soul also always come-to-be? When we perceive sensible things—a lyre, a cloak—we
@@ -62,12 +61,12 @@ tags: []
 provenance:
   collection: Phaedo
   source_confidence: low
-  original_source: 'Phaedo: Phaedo 72e–77a; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The passage appears to be from Phaedo 77a, but the exact wording cannot be verified with confidence against
     standard critical editions. The logical structure and vocabulary are consistent with Platoni | PD phrase-match miss vs
     local witness (greek/phaedo_burnet_perseus-grc2.xml); query field=sanskrit_devanagari; score=0.106.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

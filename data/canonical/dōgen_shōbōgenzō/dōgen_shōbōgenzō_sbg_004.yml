@@ -7,7 +7,7 @@ unit_label: Forgetting the Self
 title: Forgetting the Self
 unit_type: verse
 section: Shōbōgenzō, Genjōkōan
-sanskrit_devanagari: 仏道をならふというは、自己をならふなり。自己をならふというは、自己をわするるなり。自己をわするるというは、万法に証せらるるなり。万法に証せらるるというは、自己の身心および他己の身心をして脱落せしむるなり。脱落の迹なく、去来の迹を離るべし。
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: To study the Buddha Way is to study the self. To study the self is to forget the self. To forget the
   self is to be realized—authenticated—by the myriad dharmas (万法, all phenomena and teachings). To be realized by the myriad
@@ -61,12 +61,11 @@ tags: []
 provenance:
   collection: Dōgen — Shōbōgenzō
   source_confidence: low
-  original_source: 'Dōgen — Shōbōgenzō: Shōbōgenzō, Genjōkōan; original per received text (model-supplied, PD-verification
-    pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: This passage from Dōgen's Shōbōgenzō, Genjōkōan fascicle is accurately quoted. It represents the famous
     opening section on studying the Buddha Way, self-forgetting, and verification by all dharmas. Th | PD phrase-match miss
     vs local witness (japanese/shobogenzo_1896_kokubasha.txt); query field=sanskrit_devanagari; score=0.095.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.

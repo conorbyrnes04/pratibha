@@ -7,7 +7,7 @@ unit_label: Nearer Than Myself
 title: Nearer Than Myself
 unit_type: verse
 section: DW I, Sermon 5b
-sanskrit_devanagari: Got ist mir næher dan ich mir selber bin. Mîn wesen hât dâran, daz mir got næhe und gegenwertic ist.
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: God is nearer to me than I am to myself. My very being depends on God’s being near and present to me.
 commentary: 'Eckhart’s claim is not chiefly about a feeling of divine intimacy. It is ontological: God is nearer than the
@@ -48,11 +48,11 @@ tags: []
 provenance:
   collection: Meister Eckhart
   source_confidence: low
-  original_source: 'Meister Eckhart: DW I, Sermon 5b; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The quoted Middle High German text agrees with the passage in DW I, Sermon 5b; punctuation and minor
     spelling variants may differ by edition. | PD phrase-match miss vs local witness (german/pfeiffer_eckhart_1857_ocr.txt);
     query field=sanskrit_devanagari; score=0.107.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.

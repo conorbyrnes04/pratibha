@@ -7,7 +7,9 @@ unit_label: 'The Reed''s Lament: Separation and Longing'
 title: 'The Reed''s Lament: Separation and Longing'
 unit_type: verse
 section: I.1-18
-sanskrit_devanagari: بشنو از نی چون حکایت می‌کند / وز جدایی‌ها شکایت می‌کند
+sanskrit_devanagari: 'بشنو این نی چون شکایت می‌کند /// از جدایی‌ها حکایت می‌کند
+
+  کز نِیِستان تا مرا بُبریده‌اند /// در نفیرم مرد و زن نالیده‌اند'
 sanskrit_iast: ''
 translation_literal: 'Hear the reed''s complaint, how it tells of separation: ever since it was cut from the reed-bed, its
   song has been a lament for reunion. The reed-pipe''s cry is fire, not wind; whoever lacks this fire is not of our company.
@@ -57,11 +59,11 @@ themes: []
 tags: []
 provenance:
   collection: Rūmī — Mathnawī-yi Maʿnawī
-  source_confidence: low
-  original_source: 'Rūmī — Mathnawī-yi Maʿnawī: I.1-18; original per received text (model-supplied, PD-verification pending).'
+  source_confidence: medium
+  original_source: Restored from data/raw_texts/pd/persian/mathnawi_neynameh_ganjoor.txt
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): corrected; PD phrase-match: miss'
-  verification_note: The quoted text reverses حکایت and شکایت and uses از instead of the received وز. | PD phrase-match miss
-    vs local witness (persian/mathnawi_neynameh_ganjoor.txt); query field=sanskrit_devanagari; score=0.171.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  verification: PD restore after phrase-match miss
+  verification_note: Restored from persian/mathnawi_neynameh_ganjoor.txt. Prior model-supplied original withdrawn. The quoted
+    text reverses حکایت and شکایت and uses از instead of the received وز. | PD phrase-match miss vs local witness (persian/mathnawi_neynameh_ganjoor.txt);
+    query field=sanskrit_devanagari; score=0.171.
+  original_reliability: PD_RESTORED — original replaced from local public-domain witness.

@@ -39,7 +39,6 @@ COLL_PD: dict[str, list[str]] = {
         "greek/phaedo_jowett_gutenberg_1658.txt",
         "greek/phaedo_burnet_perseus-grc2.xml",
     ],
-    "plotinus_enneads": ["greek/plotinus_mackenna_enneads.txt"],
     "pseudo_dionysius": [
         "greek/dionysius_rolt_1920.txt",
         "greek/mystical_theology_migne_pg3.txt",
@@ -75,9 +74,8 @@ COLL_PD: dict[str, list[str]] = {
         "indian/upanishads_muller_sbe15_gutenberg_3283.txt",
     ],
     "mundaka_upanishad": [
-        # GRETIL Mundaka file not yet located; Müller SBE English only for now
+        "indian/mundaka_upanishad_sanskritdocuments_itx.txt",
         "indian/upanishads_muller_sbe15_gutenberg_3283.txt",
-        "indian/chandogya_upanishad_muller_sbe01.txt",
     ],
     "isavasya_upanishad": [
         "indian/isavasya_upanishad_gretil_iast.txt",
@@ -93,7 +91,14 @@ COLL_PD: dict[str, list[str]] = {
     ],
     "nagarjuna_mulamadhyamakakarika": ["indian/nagarjuna_mmk_gretil_iast.txt"],
     "tantrasara": ["indian/tantrasara_abhinavagupta_gretil_iast.txt"],
-    "marcus_aurelius_meditations": ["greek/marcus_aurelius_long_1862.txt"],
+    "marcus_aurelius_meditations": [
+        "greek/marcus_aurelius_perseus_greek.xml",
+        "greek/marcus_aurelius_long_1862.txt",
+    ],
+    "plotinus_enneads": [
+        "greek/plotinus_enneads_greek.xml",
+        "greek/plotinus_mackenna_enneads.txt",
+    ],
     "confucius_analects": ["chinese/analects_legge_gutenberg_4094.txt"],
     "zhongyong": ["chinese/zhongyong_legge_gutenberg_4096.txt"],
 }

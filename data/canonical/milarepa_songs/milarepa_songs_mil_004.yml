@@ -7,8 +7,7 @@ unit_label: The Hermit's Feast in the Mountain Solitude
 title: The Hermit's Feast in the Mountain Solitude
 unit_type: verse
 section: MGT 5.3
-sanskrit_devanagari: དགེ་བའི་རྒྱལ་པོ་དགེ་བའི་རྒྱལ་པོ། ཕོ་བྲང་དགེ་བའི་རྒྱལ་པོ། (Dge ba'i rgyal po dge ba'i rgyal po. Pho brang
-  dge ba'i rgyal po.)
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: The cave feeds me with emptiness; the rocks are my companions. Here, where no flatterer's voice reaches,
   my mind grows vast as the sky. The hermit who owns nothing possesses all things—the mountain's silence is his wealth, the
@@ -52,12 +51,12 @@ themes: []
 tags: []
 provenance:
   collection: Songs of Milarepa
-  source_confidence: medium
-  original_source: 'Songs of Milarepa: MGT 5.3; original per received text (model-supplied, PD-verification pending).'
+  source_confidence: low
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; original withdrawn after PD miss'
   verification_note: Cannot verify this specific passage against MGT 5.3 without access to the authoritative Tibetan text
     of Milarepa's songs. The transliteration appears phonetically reasonable, but without consulting th
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

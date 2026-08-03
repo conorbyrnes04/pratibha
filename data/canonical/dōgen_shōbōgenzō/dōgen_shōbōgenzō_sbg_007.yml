@@ -7,7 +7,7 @@ unit_label: Mountains Are Always Walking
 title: Mountains Are Always Walking
 unit_type: verse
 section: Shōbōgenzō, Sansuikyō (Mountains and Waters Sūtra)
-sanskrit_devanagari: Sansui wa tsune ni gyōchaku nari. Yama no gyō wa kyaku yori mo hayaku, kaze yori mo hayashi.
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: Mountains and waters are always abiding in their own condition; they are always walking. The walking
   of mountains is swifter than feet, swifter than the wind.
@@ -51,13 +51,12 @@ tags: []
 provenance:
   collection: Dōgen — Shōbōgenzō
   source_confidence: low
-  original_source: 'Dōgen — Shōbōgenzō: Shōbōgenzō, Sansuikyō (Mountains and Waters Sūtra); original per received text (model-supplied,
-    PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: Cannot verify the exact original Japanese text with confidence. The passage appears to reference Dōgen's
     Sansuikyō fascicle, but the specific romanization and phrasing provided requires access to auth | PD phrase-match miss
     vs local witness (japanese/shobogenzo_1896_kokubasha.txt); query field=sanskrit_devanagari; score=0.012.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

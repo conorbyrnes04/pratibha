@@ -7,6 +7,7 @@ import { getVerses } from "@/lib/api";
 import { DailySitCard } from "@/components/learn/DailySitCard";
 import { PathTree } from "@/components/learn/PathTree";
 import { PassageMaturityBadge } from "@/components/learn/PassageMaturityBadge";
+import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
 import { ThreadCompleteCard } from "@/components/learn/ThreadCompleteCard";
 import { ThreadContextBar } from "@/components/learn/ThreadContextBar";
@@ -815,6 +816,7 @@ export default function LearnPage() {
                                 <>
                                   <PassageLink item={item} primary backHref={backHref} />
                                   <PassageMaturityBadge item={item} />
+                                  <OriginalReliabilityBadge item={item} />
                                 </>
                               ) : (
                                 <p className="rounded-2xl border border-rose-300/25 bg-rose-300/5 p-3 font-sans text-sm text-stone-200">

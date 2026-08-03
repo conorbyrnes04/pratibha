@@ -7,7 +7,7 @@ unit_label: Practice Is Already Realization
 title: Practice Is Already Realization
 unit_type: verse
 section: Bendōwa, on practice and realization
-sanskrit_devanagari: 修証は一等なり。いはゆる修のなかの証なるゆゑに、初心の弁道すなはち本証の全体なり。このゆゑに、修行の用心を授与するに、修のほかに証をまつなと教ふることなかれ、直指の正伝なるゆゑに。すでに修の証なれば、証にきはなく、証の修なれば、修にはじめなし。
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: Practice and realization are one. Because realization is within practice, the wholehearted practice of
   a beginner is itself the complete totality of original realization. Therefore, when giving the careful instruction of practice,
@@ -54,12 +54,11 @@ tags: []
 provenance:
   collection: Dōgen — Shōbōgenzō
   source_confidence: low
-  original_source: 'Dōgen — Shōbōgenzō: Bendōwa, on practice and realization; original per received text (model-supplied,
-    PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: This passage from Dōgen's Bendōwa (弁道話) section of Shōbōgenzō is accurately quoted. The text correctly
     presents Dōgen's teaching on the non-duality of practice (修) and realization (証), including the k | PD phrase-match miss
     vs local witness (japanese/shobogenzo_1896_kokubasha.txt); query field=sanskrit_devanagari; score=0.089.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.

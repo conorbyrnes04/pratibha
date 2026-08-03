@@ -7,8 +7,7 @@ unit_label: The Super-Essential Godhead Beyond Being and Essence
 title: The Super-Essential Godhead Beyond Being and Essence
 unit_type: verse
 section: Divine Names I.5-6
-sanskrit_devanagari: ὁ ὑπερούσιος θεότης πάσης οὐσίας καὶ γνώσεως ἐπέκεινα (ho hyperousios theotēs pasēs ousias kai gnōseōs
-  epekeina)
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: The super-essential Godhead (hyperousios theotēs) transcends all substance and all knowledge. It is not
   being, yet all being flows from it; it is not essence, yet all essences participate in it. To name it is to name what cannot
@@ -63,11 +62,11 @@ tags: []
 provenance:
   collection: Pseudo-Dionysius
   source_confidence: low
-  original_source: 'Pseudo-Dionysius: Divine Names I.5-6; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The quoted Greek from Pseudo-Dionysius, Divine Names I.5-6 accurately represents the text describing
     God's transcendence beyond all being and knowledge. The phrase 'ὁ ὑπερούσιος θεότης πάσης οὐσίας κα | PD phrase-match
     miss vs local witness (greek/divine_names_greek_unicode.txt); query field=sanskrit_devanagari; score=0.086.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.

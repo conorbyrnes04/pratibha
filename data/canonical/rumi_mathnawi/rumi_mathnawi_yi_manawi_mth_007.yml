@@ -7,7 +7,7 @@ unit_label: The Drop Returns to the Ocean
 title: The Drop Returns to the Ocean
 unit_type: verse
 section: I.1-4
-sanskrit_devanagari: قطره‌ای از دریا جدا شده بود / تا خود را در خود دوباره یافت رود
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: 'A drop had separated from the Ocean, ashamed of its smallness. When it saw the Ocean''s vastness, it
   wept: ''How vast is that, how small am I!'' A shell held the drop, and the sun warmed it. The drop said, ''I wish I could
@@ -59,12 +59,12 @@ tags: []
 provenance:
   collection: Rūmī — Mathnawī-yi Maʿnawī
   source_confidence: low
-  original_source: 'Rūmī — Mathnawī-yi Maʿnawī: I.1-4; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The provided couplet does not match the opening of Rūmī's Mathnawī I.1-4. The actual opening begins with
     'Beshno az ney che shekāyat mī-konad' (Listen to the reed how it complains). The quoted text ap | PD phrase-match miss
     vs local witness (persian/mathnawi_neynameh_ganjoor.txt); query field=sanskrit_devanagari; score=0.080.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

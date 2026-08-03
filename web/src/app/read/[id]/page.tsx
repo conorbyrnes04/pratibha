@@ -18,6 +18,7 @@ import { LayerBlock } from "@/components/LayerBlock";
 import { ReadingShell } from "@/components/ReadingShell";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
+import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import {
   getStudyLayers,
   getAppendixLayers,
@@ -229,6 +230,7 @@ export default function VerseDetailPage() {
           </p>
           <h1 className="passage-reading__title">{displayPassageTitle(item)}</h1>
           {deck ? <p className="passage-reading__deck">{deck}</p> : null}
+          <OriginalReliabilityBadge item={item} />
         </header>
 
         {originalLayer || iastLayer ? (

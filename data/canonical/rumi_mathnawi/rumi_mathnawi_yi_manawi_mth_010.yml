@@ -7,10 +7,7 @@ unit_label: The Moth's Annihilation in the Flame
 title: The Moth's Annihilation in the Flame
 unit_type: verse
 section: I.3288-3310
-sanskrit_devanagari: پروانه می‌رود سوی شمع می‌گوید / که من عاشق تو‌ام ای شمع درخشنده / شمع گفت ای پروانه تو می‌گویی / که عاشق‌ام
-  ولی آتش نمی‌دانی / پروانه گفت من آتش را می‌دانم / زیرا که سوختم در آتش محبت / (Parwāna mī-raw suye šamʿ mī-guyad / ke man
-  ʿāšeq-e tu-am ay šamʿ-e deraxšande / šamʿ goft ay parwāna tu mī-guyī / ke ʿāšeq-am walī ātaš namī-dānī / parwāna goft man
-  ātaš rā mī-dānm / zīrā ke suxtam dar ātaš-e mohabbat)
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: 'The moth flies toward the candle, saying: ''I am your lover, O shining flame!'' The candle replies:
   ''O moth, you speak of love, yet you know not fire.'' The moth answers: ''I know the fire, for I have burned in the fire
@@ -62,12 +59,12 @@ tags: []
 provenance:
   collection: Rūmī — Mathnawī-yi Maʿnawī
   source_confidence: low
-  original_source: 'Rūmī — Mathnawī-yi Maʿnawī: I.3288-3310; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: Cannot verify this passage against the authentic Mathnawī text. The lines provided do not correspond
     to verses I.3288-3310 in standard editions of Rūmī's Mathnawī. While the moth-and-candle dialogue i | PD phrase-match
     miss vs local witness (persian/mathnawi_moses_shepherd_ganjoor.txt); query field=sanskrit_devanagari; score=0.071.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

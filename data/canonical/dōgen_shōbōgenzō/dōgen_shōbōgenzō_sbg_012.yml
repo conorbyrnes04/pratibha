@@ -7,7 +7,7 @@ unit_label: The One-Sidedness of Illumination and Darkness
 title: The One-Sidedness of Illumination and Darkness
 unit_type: verse
 section: Shōbōgenzō, "Genjōkōan" (Manifesting Suchness), opening section
-sanskrit_devanagari: 一方照らするときは一方暗し (Ippō terasu suru toki wa ippō kurashi)
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: When one side is illumined, the other side is dark. This is the nature of practice-realization (shushō).
   Do not think that what is illumined is known universally. Illumination and darkness are like the front and back of a coin—each
@@ -59,13 +59,12 @@ tags: []
 provenance:
   collection: Dōgen — Shōbōgenzō
   source_confidence: low
-  original_source: 'Dōgen — Shōbōgenzō: Shōbōgenzō, "Genjōkōan" (Manifesting Suchness), opening section; original per received
-    text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: Cannot verify the exact original Japanese text with confidence. The phrase appears conceptually related
     to Dōgen's teachings on one-sidedness and illumination in 'Genjōkōan,' but without access to the | PD phrase-match miss
     vs local witness (japanese/shobogenzo_1896_kokubasha.txt); query field=sanskrit_devanagari; score=0.048.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
 needs_source_review: true

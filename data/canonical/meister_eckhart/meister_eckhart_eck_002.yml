@@ -7,9 +7,7 @@ unit_label: Detachment Above Every Virtue
 title: Detachment Above Every Virtue
 unit_type: verse
 section: Von Abgeschiedenheit, opening
-sanskrit_devanagari: 'Ich lobe die abegescheidenheit über alle tugende. Daz ist dar umbe: êrstlich, daz alle tugende stânt
-  in der abegescheidenheit; und daz ist doch niht, wan daz abegescheidenheit stât sô nâhe bî dem nihte, daz niht sô nâhe bî
-  got enist als abegescheidenheit.'
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: I praise detachment [Abgeschiedenheit] above every virtue. This is because, first, all virtues stand
   within detachment; yet this is as nothing, for detachment stands so near to nothingness that nothing is so near to God as
@@ -54,12 +52,11 @@ tags: []
 provenance:
   collection: Meister Eckhart
   source_confidence: low
-  original_source: 'Meister Eckhart: Von Abgeschiedenheit, opening; original per received text (model-supplied, PD-verification
-    pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The quoted passage from Meister Eckhart's sermon 'Von Abgeschiedenheit' (On Detachment) matches the received
     text accurately. The Middle High German orthography and syntax are consistent with manuscri | PD phrase-match miss vs
     local witness (german/pfeiffer_eckhart_1857_ocr.txt); query field=sanskrit_devanagari; score=0.081.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.

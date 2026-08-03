@@ -6,12 +6,8 @@ unit_id: astavakra_gita.ag_18_80
 unit_label: The Witness Unmoved by the Dance of Becoming
 title: The Witness Unmoved by the Dance of Becoming
 unit_type: verse
-sanskrit_devanagari: 'न मे बन्धो न मोक्षो मे न मे शोक न वा हरिः ।
-
-  अहम् आत्मा सदा शुद्धो विद्वान् एतत् समीक्षते ॥ १८.८० ॥'
-sanskrit_iast: 'na me bandho na mokṣo me na me śoka na vā hariḥ |
-
-  aham ātmā sadā śuddho vidvān etat samīkṣate || 18.80 ||'
+sanskrit_devanagari: ''
+sanskrit_iast: ''
 translation_literal: There is no bondage for me, no liberation for me, no sorrow for me—nor any Lord. I am the Self, eternally
   pure. The wise one sees this directly.
 commentary: 'This verse crystallizes the radical non-dual realization: the apparent seeker dissolves into recognition of what
@@ -61,9 +57,10 @@ provenance:
   sanskrit_source: Astavakra Gita 18.80; Sanskrit per received text (model-supplied, PD-verification pending); Devanagari
     from IAST.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The verse matches the received text of Aṣṭāvakra Gītā 18.80. The wording accurately reflects the traditional
     text with proper sandhi and spacing conventions. | PD phrase-match miss vs local witness (indian/astavakra_gita_gretil_iast.txt);
     query field=sanskrit_iast; score=0.089.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.

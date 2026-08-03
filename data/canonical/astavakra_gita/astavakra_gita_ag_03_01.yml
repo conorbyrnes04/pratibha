@@ -6,12 +6,8 @@ unit_id: astavakra_gita.ag_03_01
 unit_label: The Taste for Acquisition
 title: The Taste for Acquisition
 unit_type: verse
-sanskrit_devanagari: 'अविनाशिनम् आत्मानम् एकं विज्ञाय तत्त्वतः ।
-
-  तवात्मज्ञानधीरस्य कथम् अर्थार्जने रतिः ॥ ३.१ ॥'
-sanskrit_iast: 'avināśinam ātmānam ekaṃ vijñāya tattvataḥ |
-
-  tavātmajñānadhīrasya katham arthārjane ratiḥ || 3.1 ||'
+sanskrit_devanagari: ''
+sanskrit_iast: ''
 translation_literal: Knowing in truth the Self (ātman) to be one and imperishable (avināśin), how can there be delight (rati)
   in acquiring wealth or objects (artha) for one steadfast in Self-knowledge?
 commentary: 'Aṣṭāvakra addresses not ordinary practical activity but the inward motive of acquisition. Once the ātman is directly
@@ -60,9 +56,10 @@ provenance:
   sanskrit_source: Astavakra Gita 3.1; Sanskrit per received text (model-supplied, PD-verification pending); Devanagari from
     IAST.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: 'The verse matches the received text of Aṣṭāvakra Gītā 3.1. The wording accurately reflects the traditional
     text: avināśinam ātmānam ekaṃ vijñāya tattvataḥ | tavātmajñānadhīrasya katham arthārjane rati | PD phrase-match miss vs
     local witness (indian/astavakra_gita_gretil_iast.txt); query field=sanskrit_iast; score=0.079.'
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.

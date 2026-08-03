@@ -7,8 +7,7 @@ unit_label: The Body as Prison to the Soul's Knowledge
 title: The Body as Prison to the Soul's Knowledge
 unit_type: verse
 section: Phaedo 65b-67a
-sanskrit_devanagari: ἆρ' οὖν καθαρῶς τι λαμβάνομεν ὅταν τὸ σῶμα μετ' ἡμῶν μετίῃ ἐπὶ τὴν ζήτησιν; ... ἀλλ' ἐκεῖνο δῆλον, ὅτι
-  εἰ μέλλομεν καθαρῶς τι γνώσεσθαι, ἀπαλλακτέον αὐτοῦ δεῖ καὶ αὐτῇ τῇ ψυχῇ θεατέον τὰ πράγματα.
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: 'Do we obtain anything purely when the body accompanies us in our inquiry? ... But this is clear: if
   we are to know anything purely (katharōs), we must be rid of the body and behold things themselves with the soul alone.'
@@ -61,11 +60,11 @@ tags: []
 provenance:
   collection: Phaedo
   source_confidence: low
-  original_source: 'Phaedo: Phaedo 65b-67a; original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The quoted passage from Phaedo 65b-67a is accurate. The Greek text correctly represents Socrates' argument
     about whether we obtain anything purely when the body accompanies us in inquiry, and the conc | PD phrase-match miss vs
     local witness (greek/phaedo_burnet_perseus-grc2.xml); query field=sanskrit_devanagari; score=0.100.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.

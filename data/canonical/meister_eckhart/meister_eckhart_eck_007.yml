@@ -7,7 +7,7 @@ unit_label: The Soul's Return to Its Unborn Ground
 title: The Soul's Return to Its Unborn Ground
 unit_type: verse
 section: Sermon 101 (DW IV.101)
-sanskrit_devanagari: Man sol werden als er was, dô er noch niht enwas.
+sanskrit_devanagari: ''
 sanskrit_iast: ''
 translation_literal: A human being should become as he was before he was born. One must strip away all that is accidental—time,
   place, bodily form, the very distinction between subject and object—and sink into that naked ground where the soul was not
@@ -58,11 +58,11 @@ tags: []
 provenance:
   collection: Meister Eckhart
   source_confidence: low
-  original_source: 'Meister Eckhart: Sermon 101 (DW IV.101); original per received text (model-supplied, PD-verification pending).'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): corrected; PD phrase-match: miss'
+  verification: 'cross-model (Luna): corrected; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: The quotation is a modernized paraphrase; the Middle High German wording uses “sol,” “dô,” and “noch
     niht enwas.” | PD phrase-match miss vs local witness (german/pfeiffer_eckhart_1857_ocr.txt); query field=sanskrit_devanagari;
     score=0.070.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.

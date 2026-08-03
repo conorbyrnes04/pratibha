@@ -6,8 +6,8 @@ unit_id: tantrasara.ts_ah_14_01
 unit_label: The Rite of Becoming a Son
 title: The Rite of Becoming a Son
 unit_type: verse
-sanskrit_devanagari: अथ पुत्रकदीक्षाविधिः ॥ १४.१ ॥
-sanskrit_iast: atha putrakadīkṣāvidhiḥ || 14.1 ||
+sanskrit_devanagari: ''
+sanskrit_iast: ''
 translation_literal: Now, the procedure for the initiation of a son-disciple (putraka-dīkṣā).
 commentary: 'This is a heading, not yet an exposition of ritual acts. Putraka-dīkṣā is initiation that makes the recipient
   a “son” of the guru and of the Śaiva lineage: the disciple is not merely admitted to instruction but reconstituted within
@@ -56,7 +56,8 @@ provenance:
   english_source: Pratibha own rendering from the Sanskrit (2026).
   verification_note: PD phrase-match miss vs local witness (indian/tantrasara_abhinavagupta_gretil_iast.txt); query field=sanskrit_iast;
     score=0.060.
-  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
-    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
+    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
   source_confidence: low
-  verification: 'PD phrase-match: miss'
+  verification: 'PD phrase-match: miss; original withdrawn after PD miss'
+  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
