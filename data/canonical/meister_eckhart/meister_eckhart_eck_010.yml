@@ -53,9 +53,12 @@ themes: []
 tags: []
 provenance:
   collection: Meister Eckhart
-  source_confidence: medium
+  source_confidence: low
   original_source: 'Meister Eckhart: Sermon 52 (DW II, 489); original per received text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct'
-  verification_note: 'This passage accurately reflects Meister Eckhart''s Middle High German formulation from Sermon 52 (DW
-    II, 489). The triple negation structure (niht enwil, niht enweiz, niht enhât) is characteristic of '
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
+  verification_note: This passage accurately reflects Meister Eckhart's Middle High German formulation from Sermon 52 (DW
+    II, 489). The triple negation structure (niht enwil, niht enweiz, niht enhât) is characteristic of  | PD phrase-match
+    miss vs local witness (german/pfeiffer_eckhart_1857_ocr.txt); query field=sanskrit_devanagari; score=0.109.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.

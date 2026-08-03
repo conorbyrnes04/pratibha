@@ -73,9 +73,10 @@ provenance:
   sanskrit_source: Mandukya Upanishad and Gaudapada Karika 4.71; Sanskrit per received text (model-supplied, PD-verification
     pending); Devanagari from IAST.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
   verification_note: Cannot verify the exact wording of MK 4.71 with confidence. The verse appears to relate to Turīya (the
-    fourth state) and Brahman's nature, but without access to the critical edition of Gauḍapāda's Kār
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+    fourth state) and Brahman's nature, but without access to the critical edition of Gauḍapāda's Kār | PD phrase-match miss
+    vs local witness (indian/mandukya_gaudapada_gretil_iast.txt); query field=sanskrit_iast; score=0.093.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
 needs_source_review: true

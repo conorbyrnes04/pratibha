@@ -54,3 +54,9 @@ provenance:
   collection: Tantrasara
   sanskrit_source: GRETIL Tantrasara 14.1 (PD); Devanagari from IAST.
   english_source: Pratibha own rendering from the Sanskrit (2026).
+  verification_note: PD phrase-match miss vs local witness (indian/tantrasara_abhinavagupta_gretil_iast.txt); query field=sanskrit_iast;
+    score=0.060.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
+  source_confidence: low
+  verification: 'PD phrase-match: miss'

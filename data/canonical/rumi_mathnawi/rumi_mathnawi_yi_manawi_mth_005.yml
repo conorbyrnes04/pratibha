@@ -57,13 +57,14 @@ themes: []
 tags: []
 provenance:
   collection: Rūmī — Mathnawī-yi Maʿnawī
-  source_confidence: high
+  source_confidence: low
   original_source: 'Rūmī — Mathnawī-yi Maʿnawī: II.2600-2644; original per received text (model-supplied, PD-verification
     pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
   verification_note: Cannot verify the exact original Persian text of Mathnawī II.2600-2644 against reliable sources. The
-    couplet appears related to the famous 'Elephant in the Dark House' parable, but without access to a
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+    couplet appears related to the famous 'Elephant in the Dark House' parable, but without access to a | PD phrase-match
+    miss vs local witness (persian/mathnawi_neynameh_ganjoor.txt); query field=sanskrit_devanagari; score=0.081.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
 needs_source_review: true

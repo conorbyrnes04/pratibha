@@ -59,10 +59,13 @@ themes: []
 tags: []
 provenance:
   collection: Mandukya Upanishad and Gaudapada Karika
-  source_confidence: medium
+  source_confidence: low
   sanskrit_source: Mandukya Upanishad and Gaudapada Karika 3.15; Sanskrit per received text (model-supplied, PD-verification
     pending); Devanagari from IAST.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
   verification_note: The verse matches the received text of Gauḍapāda Kārikā 3.15. The wording accurately reflects the traditional
-    critical edition, including the proper sandhi forms and word order.
+    critical edition, including the proper sandhi forms and word order. | PD phrase-match miss vs local witness (indian/mandukya_gaudapada_gretil_iast.txt);
+    query field=sanskrit_iast; score=0.075.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.

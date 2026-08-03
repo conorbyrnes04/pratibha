@@ -57,10 +57,13 @@ themes: []
 tags: []
 provenance:
   collection: Astavakra Gita
-  source_confidence: medium
+  source_confidence: low
   sanskrit_source: Astavakra Gita 18.80; Sanskrit per received text (model-supplied, PD-verification pending); Devanagari
     from IAST.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
   verification_note: The verse matches the received text of Aṣṭāvakra Gītā 18.80. The wording accurately reflects the traditional
-    text with proper sandhi and spacing conventions.
+    text with proper sandhi and spacing conventions. | PD phrase-match miss vs local witness (indian/astavakra_gita_gretil_iast.txt);
+    query field=sanskrit_iast; score=0.089.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.

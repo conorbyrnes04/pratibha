@@ -57,8 +57,11 @@ themes: []
 tags: []
 provenance:
   collection: Rūmī — Mathnawī-yi Maʿnawī
-  source_confidence: high
+  source_confidence: low
   original_source: 'Rūmī — Mathnawī-yi Maʿnawī: I.1-18; original per received text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): corrected'
-  verification_note: The quoted text reverses حکایت and شکایت and uses از instead of the received وز.
+  verification: 'cross-model (Luna): corrected; PD phrase-match: miss'
+  verification_note: The quoted text reverses حکایت and شکایت and uses از instead of the received وز. | PD phrase-match miss
+    vs local witness (persian/mathnawi_neynameh_ganjoor.txt); query field=sanskrit_devanagari; score=0.171.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.

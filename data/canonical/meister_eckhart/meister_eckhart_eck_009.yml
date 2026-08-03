@@ -51,10 +51,13 @@ themes: []
 tags: []
 provenance:
   collection: Meister Eckhart
-  source_confidence: medium
+  source_confidence: low
   original_source: 'Meister Eckhart: Sermon 5b (DW I, c. 90); original per received text (model-supplied, PD-verification
     pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
   verification_note: The quoted Middle High German sentence matches the original wording of Sermon 5b (DW I, c. 90), allowing
-    for capitalization and orthographic variation.
+    for capitalization and orthographic variation. | PD phrase-match miss vs local witness (german/pfeiffer_eckhart_1857_ocr.txt);
+    query field=sanskrit_devanagari; score=0.074.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.

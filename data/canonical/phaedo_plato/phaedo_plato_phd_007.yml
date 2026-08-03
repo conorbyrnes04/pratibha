@@ -60,9 +60,12 @@ themes: []
 tags: []
 provenance:
   collection: Phaedo
-  source_confidence: high
+  source_confidence: low
   original_source: 'Phaedo: Phaedo 65b-67a; original per received text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
   verification_note: The quoted passage from Phaedo 65b-67a is accurate. The Greek text correctly represents Socrates' argument
-    about whether we obtain anything purely when the body accompanies us in inquiry, and the conc
+    about whether we obtain anything purely when the body accompanies us in inquiry, and the conc | PD phrase-match miss vs
+    local witness (greek/phaedo_burnet_perseus-grc2.xml); query field=sanskrit_devanagari; score=0.100.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.

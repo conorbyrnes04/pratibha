@@ -58,13 +58,14 @@ themes: []
 tags: []
 provenance:
   collection: Dōgen — Shōbōgenzō
-  source_confidence: high
+  source_confidence: low
   original_source: 'Dōgen — Shōbōgenzō: Shōbōgenzō, "Genjōkōan" (Manifesting Suchness), opening section; original per received
     text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
   verification_note: Cannot verify the exact original Japanese text with confidence. The phrase appears conceptually related
-    to Dōgen's teachings on one-sidedness and illumination in 'Genjōkōan,' but without access to the
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+    to Dōgen's teachings on one-sidedness and illumination in 'Genjōkōan,' but without access to the | PD phrase-match miss
+    vs local witness (japanese/shobogenzo_1896_kokubasha.txt); query field=sanskrit_devanagari; score=0.048.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
 needs_source_review: true

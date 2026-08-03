@@ -60,10 +60,13 @@ themes: []
 tags: []
 provenance:
   collection: Dōgen — Shōbōgenzō
-  source_confidence: high
+  source_confidence: low
   original_source: 'Dōgen — Shōbōgenzō: Shōbōgenzō, Genjōkōan; original per received text (model-supplied, PD-verification
     pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
   verification_note: This passage from Dōgen's Shōbōgenzō, Genjōkōan fascicle is accurately quoted. It represents the famous
-    opening section on studying the Buddha Way, self-forgetting, and verification by all dharmas. Th
+    opening section on studying the Buddha Way, self-forgetting, and verification by all dharmas. Th | PD phrase-match miss
+    vs local witness (japanese/shobogenzo_1896_kokubasha.txt); query field=sanskrit_devanagari; score=0.095.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.

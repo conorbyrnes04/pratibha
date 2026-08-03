@@ -62,9 +62,12 @@ themes: []
 tags: []
 provenance:
   collection: Pseudo-Dionysius
-  source_confidence: high
+  source_confidence: low
   original_source: 'Pseudo-Dionysius: Divine Names I.5-6; original per received text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct'
+  verification: 'cross-model (Luna): correct; PD phrase-match: miss'
   verification_note: The quoted Greek from Pseudo-Dionysius, Divine Names I.5-6 accurately represents the text describing
-    God's transcendence beyond all being and knowledge. The phrase 'ὁ ὑπερούσιος θεότης πάσης οὐσίας κα
+    God's transcendence beyond all being and knowledge. The phrase 'ὁ ὑπερούσιος θεότης πάσης οὐσίας κα | PD phrase-match
+    miss vs local witness (greek/divine_names_greek_unicode.txt); query field=sanskrit_devanagari; score=0.086.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.

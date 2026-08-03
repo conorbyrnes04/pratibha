@@ -60,13 +60,14 @@ themes: []
 tags: []
 provenance:
   collection: Meister Eckhart
-  source_confidence: high
+  source_confidence: low
   original_source: 'Meister Eckhart: Sermon 12 (DW I.12, Pfeiffer 12); original per received text (model-supplied, PD-verification
     pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
-  verification_note: 'While this passage reflects authentic Eckhartian themes about the soul''s noble spark (Fünklein), I
-    cannot verify the exact wording against the original Middle High German text of Sermon 12 (DW I.12). '
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
+  verification_note: While this passage reflects authentic Eckhartian themes about the soul's noble spark (Fünklein), I cannot
+    verify the exact wording against the original Middle High German text of Sermon 12 (DW I.12).  | PD phrase-match miss
+    vs local witness (german/pfeiffer_eckhart_1857_ocr.txt); query field=sanskrit_devanagari; score=0.088.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
 needs_source_review: true

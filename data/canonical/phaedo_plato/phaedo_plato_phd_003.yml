@@ -61,12 +61,13 @@ themes: []
 tags: []
 provenance:
   collection: Phaedo
-  source_confidence: high
+  source_confidence: low
   original_source: 'Phaedo: Phaedo 72e–77a; original per received text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
   verification_note: The passage appears to be from Phaedo 77a, but the exact wording cannot be verified with confidence against
-    standard critical editions. The logical structure and vocabulary are consistent with Platoni
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+    standard critical editions. The logical structure and vocabulary are consistent with Platoni | PD phrase-match miss vs
+    local witness (greek/phaedo_burnet_perseus-grc2.xml); query field=sanskrit_devanagari; score=0.106.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
 needs_source_review: true

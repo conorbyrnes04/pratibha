@@ -54,9 +54,10 @@ provenance:
   original_source: 'Dōgen — Shōbōgenzō: Shōbōgenzō, Sansuikyō (Mountains and Waters Sūtra); original per received text (model-supplied,
     PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
   verification_note: Cannot verify the exact original Japanese text with confidence. The passage appears to reference Dōgen's
-    Sansuikyō fascicle, but the specific romanization and phrasing provided requires access to auth
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+    Sansuikyō fascicle, but the specific romanization and phrasing provided requires access to auth | PD phrase-match miss
+    vs local witness (japanese/shobogenzo_1896_kokubasha.txt); query field=sanskrit_devanagari; score=0.012.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
 needs_source_review: true

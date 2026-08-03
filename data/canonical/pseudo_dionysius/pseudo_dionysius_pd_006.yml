@@ -59,12 +59,13 @@ themes: []
 tags: []
 provenance:
   collection: Pseudo-Dionysius
-  source_confidence: high
+  source_confidence: low
   original_source: 'Pseudo-Dionysius: Mystical Theology I.1; original per received text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
   verification_note: The passage appears to be from Pseudo-Dionysius's Mystical Theology I.1, but the Greek text provided
-    is incomplete (cuts off mid-sentence at 'aphairoûntes'). The visible portion matches known formulat
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+    is incomplete (cuts off mid-sentence at 'aphairoûntes'). The visible portion matches known formulat | PD phrase-match
+    miss vs local witness (greek/mystical_theology_migne_pg3.txt); query field=sanskrit_devanagari; score=0.086.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
 needs_source_review: true

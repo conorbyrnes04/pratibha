@@ -61,12 +61,13 @@ themes: []
 tags: []
 provenance:
   collection: Rūmī — Mathnawī-yi Maʿnawī
-  source_confidence: medium
+  source_confidence: low
   original_source: 'Rūmī — Mathnawī-yi Maʿnawī: I.3288-3310; original per received text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
   verification_note: Cannot verify this passage against the authentic Mathnawī text. The lines provided do not correspond
-    to verses I.3288-3310 in standard editions of Rūmī's Mathnawī. While the moth-and-candle dialogue i
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+    to verses I.3288-3310 in standard editions of Rūmī's Mathnawī. While the moth-and-candle dialogue i | PD phrase-match
+    miss vs local witness (persian/mathnawi_moses_shepherd_ganjoor.txt); query field=sanskrit_devanagari; score=0.071.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
 needs_source_review: true

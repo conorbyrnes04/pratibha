@@ -50,12 +50,13 @@ themes: []
 tags: []
 provenance:
   collection: Plotinus Enneads
-  source_confidence: high
+  source_confidence: low
   original_source: 'Plotinus Enneads: Enneads V.3.17; original per received text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain'
+  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss'
   verification_note: Cannot verify the exact phrase 'ἀφελεῖν πάντα' at Enneads V.3.17 without access to the critical text.
-    The phrase is grammatically plausible (aorist infinitive 'to remove' + accusative 'all things'), b
-  original_reliability: UNVERIFIED — the source-language text could not be confirmed against the received text by cross-model
-    check; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly verification.
+    The phrase is grammatically plausible (aorist infinitive 'to remove' + accusative 'all things'), b | PD phrase-match miss
+    vs local witness (greek/plotinus_mackenna_enneads.txt); query field=sanskrit_devanagari; score=0.030.
+  original_reliability: UNVERIFIED — original-language text could not be confirmed by PD phrase-match against the local public-domain
+    witness; treat as inspired-by/paraphrase, NOT a verbatim quotation, pending scholarly / edition verification.
 needs_source_review: true
