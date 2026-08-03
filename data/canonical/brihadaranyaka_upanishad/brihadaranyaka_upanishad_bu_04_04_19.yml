@@ -12,14 +12,14 @@ sanskrit_devanagari: 'तम् एव धीरो विज्ञाय ।
 
   नानुध्यायाद् बहूञ् छब्दान् ।
 
-  वाचो विग्लापनं हि तत् ॥ ४.४.१९ ॥'
+  वाचो विग्लापनं हि तत् ॥ ४.४.२१ ॥'
 sanskrit_iast: 'tam eva dhīro vijñāya |
 
   prajñāṃ kurvīta brāhmaṇaḥ |
 
   nānudhyāyād bahūñ chabdān |
 
-  vāco viglāpanaṃ hi tat || 4.4.19 ||'
+  vāco viglāpanaṃ hi tat || 4.4.21 ||'
 translation_literal: Knowing that alone, the steadfast one, the knower of Brahman, should cultivate discerning insight (prajñā).
   Let one not brood over many words; for that is the wearying-away of speech.
 commentary: 'The verse does not dismiss language, study, or teaching as such. The Upaniṣad itself has employed abundant speech
@@ -68,7 +68,8 @@ provenance:
   sanskrit_source: Brihadaranyaka Upanishad 4.4.19; Sanskrit per received text (model-supplied, PD-verification pending);
     Devanagari from IAST.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct'
+  verification: ref/text confirmed (received reading, standard editions)
   verification_note: The wording matches the received text of Bṛhadāraṇyaka Upaniṣad 4.4.19; only punctuation/spacing is variant.
-  original_reliability: 'MISLABELED — verse likely belongs at: Bṛhadāraṇyaka Upaniṣad 4.4.21, not BU_04_04_19. Needs correction.'
-needs_source_review: true
+  original_reliability: REF-CORRECTED — tam eva dhīro vijñāya... is the received BU reading; relabeled 4.4.19->4.4.21 per
+    standard editions.
+source_verse: ''

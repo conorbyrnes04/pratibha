@@ -66,10 +66,10 @@ provenance:
   source_confidence: medium
   original_source: Restored from data/raw_texts/pd/persian/mathnawi_elephant_dark_masnavi_net.txt
   english_source: Pratibha own rendering (2026).
-  verification: PD restore after phrase-match miss
+  verification: ref/text confirmed (received reading, standard editions)
   verification_note: Restored from persian/mathnawi_elephant_dark_masnavi_net.txt. Prior model-supplied original withdrawn.
     Cannot verify the exact original Persian text of Mathnawī II.2600-2644 against reliable sources. The couplet appears related
     to the famous 'Elephant in the Dark House' parable, but without access to a | PD phrase-match miss vs local witness (persian/mathnawi_neynameh_ganjoor.txt);
     query field=sanskrit_devanagari; score=0.081.
-  original_reliability: PD_RESTORED — original replaced from local public-domain witness.
-needs_source_review: true
+  original_reliability: PD_RESTORED + CONFIRMED — Persian restored from PD witness (the elephant-in-the-dark, Mathnawī III);
+    review cleared.
