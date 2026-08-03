@@ -24,10 +24,15 @@ const SECONDARY: NavLink[] = [
   { href: "/sources", label: "Sources" },
 ];
 
-function linkIsActive(pathname: string, href: string, match?: string): boolean {
-  if (match === "/learn#threads") return false;
+function linkIsActive(pathname: string, href: string, match?: string, hash = ""): boolean {
+  if (match === "/learn#threads") {
+    return pathname === "/learn" && hash === "#threads";
+  }
   if (match === "/") return pathname === "/";
   if (match === "/glossary") return pathname === "/glossary";
+  if (match === "/learn") {
+    return pathname === "/learn" && hash !== "#threads";
+  }
   const path = match || href;
   return pathname === path || pathname.startsWith(`${path}/`);
 }
@@ -37,12 +42,23 @@ export function SiteNav() {
   const { configured, loading, user } = useAuth();
   const [open, setOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
+  const [hash, setHash] = useState("");
   const moreRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setOpen(false);
     setMoreOpen(false);
+    setHash(typeof window !== "undefined" ? window.location.hash : "");
   }, [pathname]);
+
+  useEffect(() => {
+    function onHash() {
+      setHash(window.location.hash);
+    }
+    window.addEventListener("hashchange", onHash);
+    onHash();
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
 
   useEffect(() => {
     if (!moreOpen) return;
@@ -68,7 +84,7 @@ export function SiteNav() {
   }
 
   const secondaryActive = SECONDARY.some((link) =>
-    linkIsActive(pathname, link.href, link.match),
+    linkIsActive(pathname, link.href, link.match, hash),
   );
 
   return (
@@ -103,7 +119,7 @@ export function SiteNav() {
           {moreOpen ? (
             <div id="nav-more-menu" className="nav-more__menu" role="menu">
               {SECONDARY.map((link) => {
-                const active = linkIsActive(pathname, link.href, link.match);
+                const active = linkIsActive(pathname, link.href, link.match, hash);
                 return (
                   <Link
                     key={link.href}
@@ -161,7 +177,7 @@ export function SiteNav() {
               </summary>
               <div className="flex flex-col border-l border-amber-200/15 pl-3">
                 {SECONDARY.map((link) => {
-                  const active = linkIsActive(pathname, link.href, link.match);
+                  const active = linkIsActive(pathname, link.href, link.match, hash);
                   return (
                     <Link
                       key={link.href}

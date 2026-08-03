@@ -5,39 +5,56 @@ import type { LearningTrack } from "@/lib/learningPaths";
 import {
   clearTrackProgress,
   downloadLearnProgress,
-  loadLearnProgress,
+  loadLearnProgressBundle,
   parseLearnProgressImport,
+  type CompletedAtMap,
   type ProgressMap,
-  saveLearnProgress,
+  saveLearnProgressBundle,
   stepKey,
 } from "@/lib/learn/progress";
 
 export function useLearnProgress() {
   const [progress, setProgress] = useState<ProgressMap>({});
+  const [completedAt, setCompletedAt] = useState<CompletedAtMap>({});
   const [hydrated, setHydrated] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
-    setProgress(loadLearnProgress());
+    const bundle = loadLearnProgressBundle();
+    setProgress(bundle.progress);
+    setCompletedAt(bundle.completedAt);
     setHydrated(true);
   }, []);
 
   useEffect(() => {
     if (!hydrated) return;
-    saveLearnProgress(progress);
-  }, [progress, hydrated]);
+    saveLearnProgressBundle({ progress, completedAt });
+  }, [progress, completedAt, hydrated]);
 
   function toggle(trackId: string, stepId: string) {
     const key = stepKey(trackId, stepId);
-    setProgress((p) => ({ ...p, [key]: !p[key] }));
+    setProgress((p) => {
+      const nextDone = !p[key];
+      setCompletedAt((c) => {
+        const next = { ...c };
+        if (nextDone) next[key] = new Date().toISOString();
+        else delete next[key];
+        return next;
+      });
+      return { ...p, [key]: nextDone };
+    });
   }
 
   function resetTrack(trackId: string, track: LearningTrack | undefined) {
-    setProgress((p) => clearTrackProgress(trackId, track, p));
+    setProgress((p) => {
+      const bundle = clearTrackProgress(trackId, track, p, completedAt);
+      setCompletedAt(bundle.completedAt);
+      return bundle.progress;
+    });
   }
 
   function exportProgress() {
-    downloadLearnProgress(progress);
+    downloadLearnProgress(progress, completedAt);
   }
 
   function importProgressFromFile(file: File): Promise<void> {
@@ -47,7 +64,8 @@ export function useLearnProgress() {
         try {
           const text = String(reader.result || "");
           const next = parseLearnProgressImport(text);
-          setProgress(next);
+          setProgress(next.progress);
+          setCompletedAt(next.completedAt);
           resolve();
         } catch (err) {
           reject(err instanceof Error ? err : new Error("Import failed"));
@@ -64,6 +82,7 @@ export function useLearnProgress() {
 
   return {
     progress,
+    completedAt,
     hydrated,
     toggle,
     resetTrack,

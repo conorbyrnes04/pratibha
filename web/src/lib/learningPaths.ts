@@ -647,7 +647,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         misconception:
           "That effort always blocks grace. On the door of energy, the right kind of effort is the means itself.",
         passageId: "siva_sutra.ss_ii_2",
-        supportingPassageIds: ["bhagavad_gita.bg_md_006"],
+        supportingPassageIds: ["bhagavad_gita.bg_06_35"],
         theme: "practice",
         chatMode: "question",
         chatPrompt:
@@ -1220,7 +1220,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         keyIdea: "Confusion faced honestly is sacred data, not a verdict on your worth.",
         misconception:
           "That a 'spiritual' response would have meant feeling calm and certain. The Gita's hero begins by breaking down.",
-        passageId: "bhagavad_gita.bg_md_001",
+        passageId: "bhagavad_gita.bg_01_47",
         supportingPassageIds: ["epictetus_works.epi_enc_001"],
         theme: "action",
         chatMode: "explain",
@@ -1268,7 +1268,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
           "Pour yourself fully into the action; let go of ownership of its result.",
         misconception:
           "That releasing the outcome means not caring or not trying. It means caring about the act itself rather than its payoff.",
-        passageId: "bhagavad_gita.bg_md_002",
+        passageId: "bhagavad_gita.bg_02_47",
         supportingPassageIds: ["isavasya_upanishad.isa_002"],
         theme: "action",
         chatMode: "practice",
@@ -1292,7 +1292,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
           "Renounce the grasping, not the engagement. Inner freedom, not outer escape.",
         misconception:
           "That the spiritual move is always to step back or step away. Often it is to stay, but differently.",
-        passageId: "bhagavad_gita.bg_md_005",
+        passageId: "bhagavad_gita.bg_05_10",
         supportingPassageIds: ["isavasya_upanishad.isa_002"],
         theme: "renunciation",
         chatMode: "compare",
@@ -1316,7 +1316,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
           "Mastery of mind is the patient, repeated return of attention — not a one-time conquest.",
         misconception:
           "That a steady mind means a mind that never wanders. It means a mind that returns, willingly and often.",
-        passageId: "bhagavad_gita.bg_md_006",
+        passageId: "bhagavad_gita.bg_06_35",
         supportingPassageIds: ["vijnana_bhairava.yukti_002"],
         theme: "meditation",
         chatMode: "practice",
@@ -1340,7 +1340,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
           "Surrender is the lucid release that follows clarity — not the collapse that precedes it.",
         misconception:
           "That surrender means passivity or fatalism. It is the freest form of engaged, clear-eyed action.",
-        passageId: "bhagavad_gita.bg_md_012",
+        passageId: "bhagavad_gita.bg_18_66",
         supportingPassageIds: ["epictetus_works.epi_enc_003"],
         theme: "freedom",
         chatMode: "practice",

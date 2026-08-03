@@ -35,15 +35,34 @@ export function notesForPassage(passageId: string): JournalNote[] {
     .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }
 
-export function learnStepContextId(trackId: string, stepId: string): string {
-  return `learn:${trackId}:${stepId}`;
+export function learnStepContextId(
+  trackId: string,
+  stepId: string,
+  thread?: { threadId?: string | null; beadId?: string | null },
+): string {
+  const base = `learn:${trackId}:${stepId}`;
+  if (thread?.threadId && thread?.beadId) {
+    return `${base}:${thread.threadId}:${thread.beadId}`;
+  }
+  return base;
 }
 
 export function journalSourceHref(note: JournalNote): string | null {
   if (note.passageId.startsWith("learn:")) {
-    const [, trackId, stepId] = note.passageId.split(":");
+    const parts = note.passageId.split(":");
+    const trackId = parts[1];
+    const stepId = parts[2];
+    const threadId = parts[3];
+    const beadId = parts[4];
     if (!trackId || !stepId) return "/learn";
-    return `/learn?track=${encodeURIComponent(trackId)}&step=${encodeURIComponent(stepId)}`;
+    const params = new URLSearchParams();
+    params.set("track", trackId);
+    params.set("step", stepId);
+    if (threadId && beadId) {
+      params.set("thread", threadId);
+      params.set("bead", beadId);
+    }
+    return `/learn?${params.toString()}`;
   }
   if (note.kind === "chat_response" || note.passageId.startsWith("chat:")) {
     const params = new URLSearchParams();

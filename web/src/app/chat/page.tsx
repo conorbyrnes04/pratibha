@@ -79,11 +79,15 @@ export default function ChatPage() {
   const [savedReplies, setSavedReplies] = useState<Set<number>>(new Set());
   const [chatRemaining, setChatRemaining] = useState<number | null>(null);
   const [dailyCapHit, setDailyCapHit] = useState(false);
+  const [backHref, setBackHref] = useState<string | null>(null);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const fromUrl = params.get("q");
     if (fromUrl) setQ(fromUrl);
+
+    const back = params.get("back");
+    if (back && back.startsWith("/")) setBackHref(back);
 
     const verseId = params.get("verse_id");
     const mode = params.get("mode") as ChatMode | null;
@@ -380,6 +384,11 @@ export default function ChatPage() {
           />
         </div>
         <div className="library-header__body">
+          {backHref ? (
+            <Link href={backHref} className="passage-reading__toggle">
+              ← Back to path
+            </Link>
+          ) : null}
           <p className="passage-reading__meta">Dialogue with the corpus</p>
           <h1 className="library-header__title">Ask Pratibha</h1>
           <p className="library-header__lede">
