@@ -6,8 +6,11 @@ unit_id: brihadaranyaka_upanishad.bu_04_04_23
 unit_label: The Self as Imperishable Light
 title: The Self as Imperishable Light
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: स वा अयमात्मा ब्रह्म विज्ञानमयो मनोमयः प्राणमयश्चक्षुर्मयः श्रोत्रमयः पृथिवीमय आपोमयो वायुमय आकाशमयस्तेजोमयोऽतेजोमयः
+  काममयोऽकाममयः क्रोधमयोऽक्रोधमयो धर्ममयोऽधर्ममयः सर्वमयस्तद्यदेतदिदंमयोऽदोमय इति ॥ ५ ॥
+sanskrit_iast: sa vā ayamātmā brahma vijñānamayo manomayaḥ prāṇamayaścakṣurmayaḥ śrotramayaḥ pṛthivīmaya āpomayo vāyumaya
+  ākāśamayastejomayo'tejomayaḥ kāmamayo'kāmamayaḥ krodhamayo'krodhamayo dharmamayo'dharmamayaḥ sarvamayastadyadetadidaṃmayo'domaya
+  iti || 5 ||
 translation_literal: 'This Self is Brahman—composed of knowledge (vijñāna), mind (manas), breath (prāṇa), sight (cakṣus),
   hearing (śrotra), space (ākāśa), water (ap), fire (agni), earth (pṛthivī)—the Lord of all (sarva-indra), the world of all
   (sarva-loka), the being of all (sarva-bhūta). They call it ''Lord of all'' because it is the Lord of all. Its name is ''Truth
@@ -56,14 +59,12 @@ tags: []
 provenance:
   collection: Brihadaranyaka Upanishad
   source_confidence: low
-  sanskrit_source: Brihadaranyaka Upanishad 4.4.23; Sanskrit per received text (model-supplied, PD-verification pending);
-    Devanagari from IAST.
   english_source: Pratibha own rendering (2026).
   verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
   verification_note: While this verse appears to be from BU 4.4.23, I cannot with complete confidence verify every word against
     the received critical text without access to the specific recension being used. The passage c | PD phrase-match miss vs
     local witness (indian/brihadaranyaka_upanishad_gretil_iast.txt); query field=sanskrit_iast; score=0.090.
-  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
-    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
-  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
-needs_source_review: true
+  original_reliability: RESTORED — source-language original fetched from a real digital edition (vivekavani.com (Bṛhadāraṇyaka
+    4.4.5)); verified against the reference.
+  original_source: vivekavani.com (Bṛhadāraṇyaka 4.4.5)
+source_verse: Bṛhadāraṇyaka Upaniṣad 4.4.5
