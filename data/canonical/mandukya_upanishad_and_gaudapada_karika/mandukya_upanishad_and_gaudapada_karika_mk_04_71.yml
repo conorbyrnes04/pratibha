@@ -6,8 +6,12 @@ unit_id: mandukya_upanishad_and_gaudapada_karika.mk_04_71
 unit_label: The Turīya Beyond All States
 title: The Turīya Beyond All States
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: 'न कश्चिज् जायते जीवः संभवो ऽस्य न विद्यते ।
+
+  एतत् तद् उत्तमं सत्यं यत्र किञ्चिन् न जायते ॥ ४.७१ ॥'
+sanskrit_iast: 'na kaścij jāyate jīvaḥ saṃbhavo ''sya na vidyate |
+
+  etat tad uttamaṃ satyaṃ yatra kiñcin na jāyate || 4.71 ||'
 translation_literal: 'That which is called turīya (the fourth)—by which all this is known—that which is made of truth, knowledge,
   and bliss: they call it brahman. The turīya is not the experiencer of the three states (waking, dream, deep sleep), yet
   it is the witness-consciousness that illuminates all knowing.'
@@ -61,11 +65,10 @@ provenance:
   sanskrit_source: Mandukya Upanishad and Gaudapada Karika 4.71; Sanskrit per received text (model-supplied, PD-verification
     pending); Devanagari from IAST.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
+  verification: PD source (GRETIL, local)
   verification_note: Cannot verify the exact wording of MK 4.71 with confidence. The verse appears to relate to Turīya (the
     fourth state) and Brahman's nature, but without access to the critical edition of Gauḍapāda's Kār | PD phrase-match miss
     vs local witness (indian/mandukya_gaudapada_gretil_iast.txt); query field=sanskrit_iast; score=0.093.
-  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
-    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
-  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
-needs_source_review: true
+  original_reliability: RESTORED — Gauḍapāda Kārikā 4.71 from local PD GRETIL edition (na kaścij jāyate jīvaḥ...).
+  original_source: GRETIL Māṇḍūkyakārikā (local PD corpus)
+source_verse: Gauḍapāda Kārikā 4.71

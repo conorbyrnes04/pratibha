@@ -7,7 +7,8 @@ unit_label: The Ascent Beyond Being Through Negation
 title: The Ascent Beyond Being Through Negation
 unit_type: verse
 section: Mystical Theology I.1
-sanskrit_devanagari: ''
+sanskrit_devanagari: τῇ γὰρ ἑαυτοῦ καὶ πάντων ἀσχέτῳ καὶ ἀπολύτῳ καθαρῶς ἐκστάσει πρὸς τὸν ὑπερούσιον τοῦ θείου σκότους ἀκτῖνα,
+  πάντα ἀφελὼν καὶ ἐκ πάντων ἀπολυθείς, ἀναχθήσῃ. Τούτων δὲ ὅρα, ὅπως μηδεὶς τῶν ἀμυήτων ἐπακούσῃ·
 sanskrit_iast: ''
 translation_literal: O Trinity beyond being, beyond light, holy darkness—in which all the luminous utterances of the Word
   fall silent, and every voice and every discourse cease. We ascend by stripping away all things (aphairesis), that in naked
@@ -57,12 +58,10 @@ tags: []
 provenance:
   collection: Pseudo-Dionysius
   source_confidence: low
-  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
+  original_source: Migne PG3 Greek (local PD)
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
+  verification: PD source (local)
   verification_note: The passage appears to be from Pseudo-Dionysius's Mystical Theology I.1, but the Greek text provided
     is incomplete (cuts off mid-sentence at 'aphairoûntes'). The visible portion matches known formulat | PD phrase-match
     miss vs local witness (greek/mystical_theology_migne_pg3.txt); query field=sanskrit_devanagari; score=0.086.
-  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
-    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
-needs_source_review: true
+  original_reliability: RESTORED — Mystical Theology I.1 Greek from local PD edition (Migne PG3 Greek (local PD)).

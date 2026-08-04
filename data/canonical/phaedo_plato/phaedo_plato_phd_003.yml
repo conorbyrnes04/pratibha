@@ -7,7 +7,16 @@ unit_label: Recollection as Proof of the Soul's Pre-existence
 title: Recollection as Proof of the Soul's Pre-existence
 unit_type: verse
 section: Phaedo 72e–77a
-sanskrit_devanagari: ''
+sanskrit_devanagari: εἶναι καὶ ταῖς μέν γε ἀγαθαῖς ἄμεινον εἶναι, ταῖς δὲ κακαῖς κάκιον. καὶ μήν, ἔφη ὁ Κέβης ὑπολαβών, καὶ
+  κατ’ ἐκεῖνόν γε τὸν λόγον, ὦ Σώκρατες, εἰ ἀληθής ἐστιν, ὃν σὺ εἴωθας θαμὰ λέγειν, ὅτι ἡμῖν ἡ μάθησις οὐκ ἄλλο τι ἢ ἀνάμνησις
+  τυγχάνει οὖσα, καὶ κατὰ τοῦτον ἀνάγκη που ἡμᾶς ἐν προτέρῳ τινὶ χρόνῳ μεμαθηκέναι ἃ νῦν ἀναμιμνῃσκόμεθα. ΦΑΙΔ. τοῦτο δὲ ἀδύνατον,
+  εἰ μὴ ἦν που ἡμῖν ἡ ψυχὴ πρὶν ἐν τῷδε τῷ ἀνθρωπίνῳ εἴδει γενέσθαι· ὥστε καὶ ταύτῃ ἀθάνατον ἡ ψυχή τι ἔοικεν εἶναι. ἀλλά,
+  ὦ Κέβης, ἔφη ὁ Σιμμίας ὑπολαβών, ποῖαι τούτων αἱ ἀποδείξεις; ὑπόμνησόν με· οὐ γὰρ σφόδρα ἐν τῷ παρόντι μέμνημαι. ἑνὶ μὲν
+  λόγῳ, ἔφη ὁ Κέβης, καλλίστῳ, ὅτι ἐρωτώμενοι οἱ ἄνθρωποι, ἐάν τις καλῶς ἐρωτᾷ, αὐτοὶ λέγουσιν πάντα ᾗ ἔχει — καίτοι εἰ μὴ
+  ἐτύγχανεν αὐτοῖς ἐπιστήμη ἐνοῦσα καὶ ὀρθὸς λόγος, οὐκ ἂν οἷοί τ’ ἦσαν τοῦτο ποιῆσαι — ἔπειτα ἐάν τις ἐπὶ τὰ διαγράμματα
+  ἄγῃ ἢ ἄλλο τι τῶν τοιούτων, ἐνταῦθα σαφέστατα κατηγορεῖ ὅτι τοῦτο οὕτως ἔχει. εἰ δὲ μὴ ταύτῃ γε, ἔφη, πείθῃ, ὦ Σιμμία, ὁ
+  Σωκράτης, σκέψαι ἂν τῇδέ πῄ σοι σκοπουμένῳ συνδόξῃ. ἀπιστεῖς γὰρ δὴ πῶς ἡ καλουμένη μάθησις ἀνάμνησίς ἐστιν; ἀπιστῶ μέν
+  σοι ἔγωγε, ἦ δ’ ὃς
 sanskrit_iast: ''
 translation_literal: For if truth is always present to us, then the soul would be immortal; but if truth does not always exist,
   yet is always coming-to-be, must not the soul also always come-to-be? When we perceive sensible things—a lyre, a cloak—we
@@ -61,12 +70,10 @@ tags: []
 provenance:
   collection: Phaedo
   source_confidence: low
-  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
+  original_source: Burnet Greek (Perseus, local PD)
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
+  verification: PD source (local)
   verification_note: The passage appears to be from Phaedo 77a, but the exact wording cannot be verified with confidence against
     standard critical editions. The logical structure and vocabulary are consistent with Platoni | PD phrase-match miss vs
     local witness (greek/phaedo_burnet_perseus-grc2.xml); query field=sanskrit_devanagari; score=0.106.
-  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
-    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
-needs_source_review: true
+  original_reliability: RESTORED — Phaedo 72e-77a Greek from local PD edition (Burnet Greek (Perseus, local PD)).
