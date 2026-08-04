@@ -53,10 +53,11 @@ provenance:
   source_confidence: low
   original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): uncertain; PD phrase-match: miss; original withdrawn after PD miss'
+  verification: interpretive — not a source quotation
   verification_note: Cannot verify the exact phrase 'ἀφελεῖν πάντα' at Enneads V.3.17 without access to the critical text.
     The phrase is grammatically plausible (aorist infinitive 'to remove' + accusative 'all things'), b | PD phrase-match miss
     vs local witness (greek/plotinus_mackenna_enneads.txt); query field=sanskrit_devanagari; score=0.030.
-  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
-    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
-needs_source_review: true
+  original_reliability: 'INTERPRETIVE — this unit is a tradition-informed English reflection, NOT a verbatim quotation; no
+    source-language original is attached (none could be matched to a verified source: composed thematically, or the source
+    is OCR-corrupt / not cleanly locatable). Treat as inspired-by.'
+interpretive_only: true

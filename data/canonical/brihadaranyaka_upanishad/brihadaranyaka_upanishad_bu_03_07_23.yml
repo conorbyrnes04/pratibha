@@ -58,10 +58,11 @@ provenance:
   sanskrit_source: Brihadaranyaka Upanishad 3.7.23; Sanskrit per received text (model-supplied, PD-verification pending);
     Devanagari from IAST.
   english_source: Pratibha own rendering (2026).
-  verification: 'cross-model (Luna): correct; original withdrawn after PD miss'
+  verification: interpretive — not a source quotation
   verification_note: The verse matches the received text of BU 3.7.23. The wording accurately reflects the traditional Bṛhadāraṇyaka
     Upaniṣad passage describing what cannot be reached by the senses, speech, or mind, follo
-  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
-    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
+  original_reliability: 'INTERPRETIVE — this unit is a tradition-informed English reflection, NOT a verbatim quotation; no
+    source-language original is attached (none could be matched to a verified source: composed thematically, or the source
+    is OCR-corrupt / not cleanly locatable). Treat as inspired-by.'
   original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
-needs_source_review: true
+interpretive_only: true
