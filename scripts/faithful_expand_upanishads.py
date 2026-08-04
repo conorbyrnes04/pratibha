@@ -45,6 +45,12 @@ COLLS = {
         marker=r"\|\|\s*IsUp[_ ]?(\d+)\s*\|\|", single=True, cover_id=r"ISA[_ ]?0*(\d+)",
         name="Īśāvāsya Upaniṣad", work_id="isavasya_upanishad",
         edition="GRETIL Īśāvāsyopaniṣad e-text"),
+    "mmk": dict(
+        canon="nagarjuna_mulamadhyamakakarika", raw="nagarjuna_mmk_gretil_iast.txt",
+        marker=r"//\s*MMK[_ ]?(\d+)[.,](\d+)\s*//", single=False,
+        cover_id=r"MMK[_ ]?(\d+)[_ ](\d+)", sid_prefix="MMK",
+        name="Mūlamadhyamakakārikā", work_id="nagarjuna_mulamadhyamakakarika",
+        edition="GRETIL Mūlamadhyamakakārikā e-text (Nāgārjuna; de Jong / Ye critical readings)"),
 }
 
 # a line of the source that is genuine IAST verse text (not header/English)
@@ -106,20 +112,26 @@ def covered_verses(cfg) -> set[tuple[int, int]]:
     covered = set()
     rng = re.compile(r"(\d+)\.(\d+)\s*[–\-—]\s*(\d+)\.(\d+)")
     single = re.compile(r"(\d+)\.(\d+)\s*$")
-    cover_id = re.compile(cfg["cover_id"]) if cfg.get("cover_id") else None
+    # source_id like SU_03_08, ISA_001, MMK_01_02 or a RANGE MMK_01_02_06
+    cover_id = re.compile((cfg["cover_id"] or "") + r"(?:[_ ](\d+))?") if cfg.get("cover_id") else None
     for path in glob.glob(os.path.join(CANON, cfg["canon"], "*.yml")):
         d = yaml.safe_load(open(path)) or {}
         prov = d.get("provenance") if isinstance(d.get("provenance"), dict) else {}
-        # (a) per-verse source_id like SU_03_08 / ISA_001
+        # (a) per-verse (or verse-range) source_id
+        matched = False
         if cover_id:
             sid = str(d.get("source_id") or (prov or {}).get("original_id") or "")
             m = cover_id.search(sid)
             if m:
-                if len(m.groups()) == 2:
-                    covered.add((int(m.group(1)), int(m.group(2))))
-                else:
-                    covered.add((1, int(m.group(1))))
-                continue
+                g = [x for x in m.groups()]
+                if cfg["single"]:                      # ISA_001 -> (1, v[, vend])
+                    ch, v1 = 1, int(g[0]); vend = int(g[1]) if len(g) > 1 and g[1] else v1
+                else:                                  # MMK_01_02[_06] -> (ch, v1[, vend])
+                    ch, v1 = int(g[0]), int(g[1]); vend = int(g[2]) if len(g) > 2 and g[2] else v1
+                covered.update((ch, v) for v in range(v1, vend + 1))
+                matched = True
+        if matched:
+            continue
         # (b) thematic section range like 'Kaṭha Upaniṣad 2.1–2.6'
         sec = str((prov or {}).get("section") or "") or str(d.get("section") or "")
         m = rng.search(sec)
@@ -277,12 +289,13 @@ async def generate(chunk, cfg, sem, verify=True):
 def build_unit(chunk, cfg, ref, data, deva_block, iast_block, verification):
     c0, v0 = chunk[0][0], chunk[0][1]
     c1, v1 = chunk[-1][0], chunk[-1][1]
+    pfx = cfg.get("sid_prefix") or cfg["work_id"][:3].upper()
     if cfg["single"]:
-        sid = f"{cfg['work_id'][:3].upper()}_{v0:03d}" if len(chunk) == 1 else f"{cfg['work_id'][:3].upper()}_{v0:03d}_{v1:03d}"
+        sid = f"{pfx}_{v0:03d}" if len(chunk) == 1 else f"{pfx}_{v0:03d}_{v1:03d}"
         secref = f"{cfg['name']} {v0}" if len(chunk) == 1 else f"{cfg['name']} {v0}–{v1}"
     else:
         tag = f"{c0:02d}_{v0:02d}" if len(chunk) == 1 else f"{c0:02d}_{v0:02d}_{v1:02d}"
-        sid = f"{cfg['work_id'][:3].upper()}_{tag}"
+        sid = f"{pfx}_{tag}"
         secref = f"{cfg['name']} {ref}"
     title = data.get("title", "").strip() or secref
     uid = f"{cfg['work_id']}.faithful_{slugify(sid)}"
