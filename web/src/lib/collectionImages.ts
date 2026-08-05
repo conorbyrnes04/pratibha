@@ -29,7 +29,7 @@ const IMAGE_RULES: Array<{ pattern: RegExp; slug: string }> = [
   { pattern: /vijnana|bhairava|shiva|siva|tantra|spanda|yogin[iī]|pratyabhij|utpala|somananda/i, slug: "kashmir-saiva" },
   { pattern: /heraclitus|fragment|epictetus|marcus.?aurelius|meditations\b/i, slug: "heraclitus" },
   { pattern: /patanjali|patañjali|yoga.?s[uū]tras?|raja.?yoga/i, slug: "patanjali" },
-  { pattern: /plotinus|ennead|phaedo|plato|eckhart|ibn.?arabi|know.?yourself|oneness.?of.?being/i, slug: "plotinus" },
+  { pattern: /plotinus|ennead|phaedo|plato|eckhart|ibn.?arabi|know.?yourself|oneness.?of.?being|ecclesiastes|qoheleth|gospel.?of.?thomas/i, slug: "plotinus" },
 ];
 
 /** Learning-realm → artwork (Paths page / DailySit). */

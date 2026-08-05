@@ -5,8 +5,10 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * old cached catalogs still list the retired per-verse units, so invalidate.
  * v3: large corpus expansion (1499→2160) — Kaṭha/Śvetāśvatara/Dhammapada/
  * Epictetus completed, Marcus Books 2–12, MMK, and a new Diamond Sūtra tome —
- * so old cached catalogs miss whole collections and units. */
-const CACHE_VERSION = 3;
+ * so old cached catalogs miss whole collections and units.
+ * v4: two new collections filling the Abrahamic gap — Ecclesiastes (Qoheleth,
+ * Hebrew) and the Gospel of Thomas (Coptic). */
+const CACHE_VERSION = 4;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";
