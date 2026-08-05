@@ -51,6 +51,13 @@ COLLS = {
         cover_id=r"MMK[_ ]?(\d+)[_ ](\d+)", sid_prefix="MMK",
         name="Mūlamadhyamakakārikā", work_id="nagarjuna_mulamadhyamakakarika",
         edition="GRETIL Mūlamadhyamakakārikā e-text (Nāgārjuna; de Jong / Ye critical readings)"),
+    # Diamond Sūtra — prose, one unit per traditional section (|| N ||, 1..32)
+    "vajracchedika": dict(
+        canon="vajracchedika_diamond_sutra", raw="vajracchedika_gretil_iast.txt",
+        marker=r"\|\|\s*(\d+)\s*\|\|", single=True, cover_id=None, sid_prefix="VAJ",
+        prose=True,
+        name="Vajracchedikā Prajñāpāramitā", work_id="vajracchedika_diamond_sutra",
+        edition="GRETIL Vajracchedikā Prajñāpāramitā e-text (Conze/Vaidya ed.)"),
 }
 
 # a line of the source that is genuine IAST verse text (not header/English)
@@ -87,6 +94,8 @@ def _iast_only(span: str) -> str:
 
 def parse_gretil(cfg) -> list[tuple[int, int, str]]:
     """Return [(chapter, verse, iast_text)] in order."""
+    if cfg.get("prose"):
+        return _parse_prose_sections(cfg)
     text = open(os.path.join(RAW, cfg["raw"]), encoding="utf-8").read()
     marker = re.compile(cfg["marker"])
     out = []
@@ -102,6 +111,55 @@ def parse_gretil(cfg) -> list[tuple[int, int, str]]:
                 ch, vs = int(m.group(1)), int(m.group(2))
             out.append((ch, vs, iast))
         last = m.end()
+    return out
+
+
+def _parse_prose_sections(cfg) -> list[tuple[int, int, str]]:
+    """Prose sūtra split into traditional sections marked `|| N ||`. Handles the
+    Vajracchedikā quirk where section 26's gāthā is sub-numbered (…25, 1, 2, 27…):
+    a number that is not the expected next section starts a merge-run that is
+    folded into one section. Strips the header/title before 'evaṃ mayā śrutam'."""
+    text = open(os.path.join(RAW, cfg["raw"]), encoding="utf-8").read()
+    marker = re.compile(cfg["marker"])
+
+    def clean_prose(span):
+        # keep IAST prose (which has ? - ' digits); drop only header/English lines
+        keep = []
+        for ln in span.splitlines():
+            s = ln.strip()
+            if not s or LEGEND.search(s):
+                continue
+            if not DIACRITIC.search(s):        # header/URL/English lines lack diacritics
+                continue
+            keep.append(s)
+        s = re.sub(r"\s+", " ", " ".join(keep)).strip()
+        return re.sub(r"\s*\|\|?\s*$", "", s).strip()
+
+    raw_segs, last = [], 0
+    for m in marker.finditer(text):
+        raw_segs.append((int(m.group(1)), clean_prose(text[last:m.start()])))
+        last = m.end()
+    # drop title/URL/invocation before the sūtra proper
+    if raw_segs:
+        k0, s0 = raw_segs[0]
+        cut = s0.find("evaṃ mayā")
+        raw_segs[0] = (k0, s0[cut:].strip() if cut >= 0 else s0)
+    out, sec, i = [], 0, 0
+    while i < len(raw_segs):
+        k, seg = raw_segs[i]
+        sec += 1
+        if k == sec:
+            if seg:
+                out.append((1, sec, seg))
+            i += 1
+        else:                                   # reset-run (gāthā): merge until k jumps past sec
+            buf = []
+            while i < len(raw_segs) and raw_segs[i][0] <= sec:
+                if raw_segs[i][1]:
+                    buf.append(raw_segs[i][1])
+                i += 1
+            if buf:
+                out.append((1, sec, " | ".join(buf)))
     return out
 
 
@@ -145,6 +203,12 @@ def covered_verses(cfg) -> set[tuple[int, int]]:
         m = single.search(sec)
         if m:
             covered.add((int(m.group(1)), int(m.group(2))))
+            continue
+        # (c) single-number section for single=True collections, e.g. 'Vajracchedikā … 7'
+        if cfg.get("single"):
+            m = re.search(r"(\d+)\s*$", sec)
+            if m:
+                covered.add((1, int(m.group(1))))
     return covered
 
 
@@ -164,9 +228,9 @@ def plan_chunks(cfg, verses, covered, target=5):
 
 # ---- Devanagari assembly ----
 def iast_to_deva_verse(iast: str) -> str:
-    """Transliterate one verse's IAST to Devanagari, mapping the pada slash to a
-    daṇḍa. Deterministic, round-trip verified transliterator."""
-    padas = [p.strip() for p in iast.split("/") if p.strip()]
+    """Transliterate one verse/passage's IAST to Devanagari, mapping the pada or
+    sentence break (/ or single |) to a daṇḍa. Deterministic transliterator."""
+    padas = [p.strip() for p in re.split(r"[/|]", iast) if p.strip()]
     return " ।\n".join(iast_to_deva(p) for p in padas)
 
 
@@ -190,7 +254,12 @@ SYS_GEN = (
     "Produce a FRESH English translation directly from the Sanskrit. You may recall the "
     "dignified cadence of the great public-domain renderings (Müller, Radhakrishnan, "
     "Olivelle), but the wording MUST be your own — never reproduce any existing translation. "
-    "Be faithful to the Sanskrit, clear, and unhurried.\n"
+    "Be faithful to the Sanskrit, clear, and unhurried. CRITICAL: translate ONLY the Sanskrit "
+    "given — render exactly what is present and nothing more. Do NOT add, expand, complete, or "
+    "import passages from elsewhere in the work, even if you recognize the text and it seems "
+    "elliptical, abbreviated, or repetitive. If the passage is short or terse, keep it so. "
+    "Buddhist ellipsis markers (pe, peyālam, yāvat, la, …) mark elided repetition — render "
+    "them tersely as written; do NOT expand them into the full formula.\n"
     "Then author: a short evocative title; 3-5 themes; a 2-3 paragraph commentary that reads "
     "the passage closely (name what the Sanskrit actually says and does); 3-4 key terms drawn "
     "from words ACTUALLY in the verse, each with a one-line gloss; 3 cross-tradition resonances, "
@@ -255,7 +324,8 @@ async def generate(chunk, cfg, sem, verify=True):
                 r = await smart_chat(
                     [{"role": "system", "content": SYS_GEN.replace("{name}", cfg["name"])},
                      {"role": "user", "content": f"Reference: {cfg['name']} {ref}\nSanskrit (IAST):\n{iast_block}\n\nReturn JSON."}],
-                    primary_model="openai/gpt-5.6-terra", temperature=0.4, max_tokens=1800)
+                    primary_model="openai/gpt-5.6-terra", temperature=0.4,
+                    max_tokens=5200 if len(iast_block) > 2500 else (3600 if len(iast_block) > 700 else 1800))
                 break
             except Exception:
                 await asyncio.sleep(2 * (attempt + 1))
@@ -272,7 +342,7 @@ async def generate(chunk, cfg, sem, verify=True):
                 try:
                     vr = await smart_chat(
                         [{"role": "system", "content": SYS_VERIFY.replace("{name}", cfg["name"])},
-                         {"role": "user", "content": f"Sanskrit (IAST): {plain_iast[:800]}\n\nEnglish: {data['translation'][:900]}\n\nReturn JSON."}],
+                         {"role": "user", "content": f"Sanskrit (IAST): {plain_iast[:6500]}\n\nEnglish: {data['translation'][:6500]}\n\nReturn JSON."}],
                         primary_model="openai/gpt-5.6-luna", temperature=0.0, max_tokens=300)
                     break
                 except Exception:
