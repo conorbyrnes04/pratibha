@@ -2,8 +2,11 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
 
 /** Bump when the cached shape changes so old localStorage entries are ignored.
  * v2: Patañjali regrouped from 195 single sūtras into 43 thematic clusters —
- * old cached catalogs still list the retired per-verse units, so invalidate. */
-const CACHE_VERSION = 2;
+ * old cached catalogs still list the retired per-verse units, so invalidate.
+ * v3: large corpus expansion (1499→2160) — Kaṭha/Śvetāśvatara/Dhammapada/
+ * Epictetus completed, Marcus Books 2–12, MMK, and a new Diamond Sūtra tome —
+ * so old cached catalogs miss whole collections and units. */
+const CACHE_VERSION = 3;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";

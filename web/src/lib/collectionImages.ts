@@ -19,7 +19,7 @@ const IMAGE_RULES: Array<{ pattern: RegExp; slug: string }> = [
   { pattern: /tao|te.?ching|tao_te_ching|zhuang|chuang|lao.?tzu|confucius|analect|zhongyong/i, slug: "daoism" },
   { pattern: /milarepa|jetsun|tibet.?s.?great.?yogi|rumi|mathnawi/i, slug: "milarepa" },
   { pattern: /tilopa|maha.?mudra|ganges.?mahamudra/i, slug: "tilopa" },
-  { pattern: /heart.?s[uū]tra|prajnaparamita|prajñāpāramitā/i, slug: "heart-sutra" },
+  { pattern: /heart.?s[uū]tra|prajnaparamita|prajñāpāramitā|vajracchedika|vajracchedikā|diamond.?s[uū]tra/i, slug: "heart-sutra" },
   { pattern: /nagarjuna|madhyamaka|mulamadhyamakakarika|mmk|dogen|dōgen|shobogenzo|shōbōgenzō/i, slug: "nagarjuna" },
   { pattern: /shantideva|śāntideva|bodhicary/i, slug: "shantideva" },
   {
