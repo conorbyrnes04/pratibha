@@ -10,11 +10,11 @@ sanskrit_devanagari: Πόστον μέρος τοῦ ἀπείρου καὶ ἀ
   τῷ ἀιδίῳ· πόστον δὲ τῆς ὅλης οὐσίας· πόστον δὲ τῆς ὅλης ψυχῆς· ἐν πόστῳ δὲ βωλαρίῳ τῆς ὅλης γῆς ἕρπεις.
   πάντα ταῦτα ἐνθυμούμενος μηδὲν μέγα φαντάζου ἢ τό, ὡς μὲν ἡ σὴ φύσις ἄγει ποιεῖν, πάσχειν δὲ ὡς ἡ κοινὴ
   φύσις φέρει.
-translation_literal: 'How tiny a portion of the boundless, yawning age has been allotted to each of us:
-  it swiftly disappears into eternity. How tiny a portion, too, of all substance; how tiny of the whole
-  soul. And upon what a little clod of the whole earth you creep. Keeping all this in mind, imagine nothing
-  important except this: to do what your own nature leads you to do, and to endure what the common nature
-  brings.'
+translation_literal: 'How small a portion of the infinite and unfathomable eternity is allotted to each
+  person—for it vanishes swiftly into the eternal. How small a portion of the whole substance; how small
+  a portion of the universal soul. And on how small a clod of the whole earth you crawl. Reflecting on
+  all these things, consider nothing great except this: to act as your own nature guides, and to accept
+  what the common nature brings.'
 commentary: 'Marcus widens the frame until personal importance becomes difficult to sustain. Each life
   is only a μικρό portion of the ἄπειρος and ἀχανής αἰών, an age without limit and seemingly immeasurable
   in its expanse. It is soon ἐναφανίζεται τῷ ἀιδίῳ: it vanishes into what is everlasting. The same diminishing
@@ -80,5 +80,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''πόστον δὲ τῆς ὅλης ψυχῆς'' means ''how small a portion of
+    the universal soul'' (referring to the cosmic soul/world-soul), not ''how tiny of the whole soul''
+    which suggests an individual''s entir'

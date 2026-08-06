@@ -20,9 +20,10 @@ sanskrit_iast: 'ūrdhvaṃ gacchanti sattvasthā madhye tiṣṭhanti rājasā�
 
   guṇānetānatītya trīndehī dehasamudbhavān|janmamṛtyujarāduḥkhairvimukto''mṛtamaśnute'
 translation_literal: Those established in sattva go upward; the rajasic remain in the middle; those established
-  in the lowest guṇa-activity go downward. When the seer sees no doer other than the guṇas, and knows
-  what is beyond the guṇas, he attains My being. Having transcended these three guṇas that arise from
-  the body, the embodied one, freed from birth, death, age, and pain, tastes immortality.
+  in the activity of the lowest guṇa, the tamasic, go downward. When the seer perceives no agent other
+  than the guṇas, and knows that which is beyond the guṇas, he attains My state of being. The embodied
+  one, having transcended these three guṇas which give rise to the body, is freed from birth, death, old
+  age and suffering, and attains immortality.
 commentary: 'Trajectory language becomes vertical: sattva upward, rajas middle, tamas downward. Then the
   decisive philosophical cut: the seer who sees no doer apart from the guṇas, and knows what is beyond
   them, attains madbhāva—Krishna’s being. Transcending the three yields immortality beyond birth-death-age-pain.
@@ -79,9 +80,10 @@ pratibha_layers:
 - kind: translation
   label: Pratibha Translation
   body: Those established in sattva go upward; the rajasic remain in the middle; those established in
-    the lowest guṇa-activity go downward. When the seer sees no doer other than the guṇas, and knows what
-    is beyond the guṇas, he attains My being. Having transcended these three guṇas that arise from the
-    body, the embodied one, freed from birth, death, age, and pain, tastes immortality.
+    the activity of the lowest guṇa, the tamasic, go downward. When the seer perceives no agent other
+    than the guṇas, and knows that which is beyond the guṇas, he attains My state of being. The embodied
+    one, having transcended these three guṇas which give rise to the body, is freed from birth, death,
+    old age and suffering, and attains immortality.
 - kind: commentary
   label: Pratibha Commentary
   body: 'Trajectory language becomes vertical: sattva upward, rajas middle, tamas downward. Then the decisive
@@ -136,3 +138,10 @@ provenance:
   section: chapter_14
   original_id: BG_14_18_20
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): dehasamudbhavān means ''born from the body'' or ''arising in connection
+    with the body'', but the guṇas do not arise FROM the body - rather they are the constituents of prakṛti/material
+    nature that give ri'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

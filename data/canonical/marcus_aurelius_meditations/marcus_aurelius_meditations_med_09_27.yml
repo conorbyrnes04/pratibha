@@ -13,8 +13,8 @@ sanskrit_devanagari: Ὅταν ἄλλος ψέγῃ σε ἢ μισῇ ἢ το
 translation_literal: 'Whenever someone censures you, hates you, or voices anything of that kind, go to
   their little souls: enter within and see what sort of people they are. You will see that you need not
   strain yourself over whatever they may think of you. Yet you must remain well-disposed toward them:
-  by nature they are your friends, and the gods help them in every way—through dreams, through divinations—in
-  the matters that concern them.'
+  by nature they are your friends, and the gods help them in every way—through dreams, through oracles—toward
+  these very things, at least, which they are so eager about.'
 commentary: 'Marcus does not advise merely ignoring hostile speech. He directs the mind toward the speakers''
   ψυχάρια, their “little souls,” a deliberately diminishing yet not wholly contemptuous word. To go “within”
   them is to consider the fears, habits, judgments, and limitations from which their blame arises. Once
@@ -84,5 +84,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Final clause ''πρὸς ταῦτα μέντοι, πρὸς ἃ ἐκεῖνοι διαφέρονται'' is mistranslated.
+    The phrase means ''toward these things, at least, toward which they are eager/strive'' or ''in pursuit
+    of what they care abo'

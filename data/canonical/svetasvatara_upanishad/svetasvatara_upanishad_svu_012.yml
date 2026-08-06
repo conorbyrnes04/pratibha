@@ -226,3 +226,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 4.19: ''na parijagrabhat'' means ''no one has grasped/comprehended'' (past tense),
+    not present ''grasps''; Verse 4.20: ''hṛdā hṛdi-sthaṃ manasā'' means ''with heart and mind (Him who
+    is) stationed in the heart'' - the instrumental case indicates the means of knowing, not just ''heart-known'';
+    Verse 4.21: '

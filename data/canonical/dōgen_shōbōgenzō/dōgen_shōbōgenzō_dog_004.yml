@@ -17,14 +17,16 @@ sanskrit_devanagari: '人、はじめて法をもとむるとき、はるかに�
 
   もし行李をしたしくして箇裏に帰すれば、万法のわれにあらぬ道理あきらけし。'
 sanskrit_iast: See Original.
-translation_literal: When you first seek the dharma, you are far from its environs. When the dharma is correctly transmitted
-  to you, you are immediately your original person. When you ride a boat and look at the shore, you may mistakenly think the
-  shore is moving. But when you keep your eyes closely on the boat, you know the boat moves. Likewise, when you confuse body
-  and mind and discern the myriad dharmas, you mistakenly think mind and nature are permanent. If you practice intimately
-  and return here, the truth that the myriad dharmas are without self is clear.
-commentary: 'Seeking begins as distance; transmission collapses distance into original person. The boat image diagnoses projection:
-  permanence attributed to mind is often the shore illusion. Existentially: where are you calling the world unstable while
-  treating your viewpoint as fixed land?
+translation_literal: When a person first seeks the dharma, they are far removed from the dharma's borders.
+  When the dharma is already correctly transmitted to oneself, one is immediately the original person.
+  When a person rides in a boat and turns their eyes to look at the shore, they mistakenly think the shore
+  is moving. Just as when you keep your eyes closely on the boat you know that the boat is advancing,
+  so too when you discriminate and affirm the myriad dharmas through deluded thinking about body and mind,
+  you mistakenly think that your own mind and own nature are permanent. If you practice intimately and
+  return to this place, the principle that the myriad dharmas are not the self becomes clear.
+commentary: 'Seeking begins as distance; transmission collapses distance into original person. The boat
+  image diagnoses projection: permanence attributed to mind is often the shore illusion. Existentially:
+  where are you calling the world unstable while treating your viewpoint as fixed land?
 
 
   Key Terms
@@ -39,7 +41,8 @@ commentary: 'Seeking begins as distance; transmission collapses distance into or
   Cross-Tradition Resonances
 
 
-  **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality of accumulation.
+  **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality
+  of accumulation.
 
   *Divergence:* Eckhart empties for God''s occupancy; Dōgen''s forgetting is verified by the myriad dharmas.
 
@@ -48,8 +51,8 @@ commentary: 'Seeking begins as distance; transmission collapses distance into or
 
   *Divergence:* Zhuangzi often ends in spontaneous ease; Dōgen binds forgetting to practice-realization.'
 insight: Seeking begins as distance; transmission collapses distance into original person.
-practice: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story. Then write one
-  sentence: what verified me just now?'
+practice: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story.
+  Then write one sentence: what verified me just now?'
 upaya: ''
 themes:
 - illusion
@@ -85,16 +88,18 @@ pratibha_layers:
   body: See Original.
 - kind: translation
   label: Pratibha Translation
-  body: When you first seek the dharma, you are far from its environs. When the dharma is correctly transmitted to you, you
-    are immediately your original person. When you ride a boat and look at the shore, you may mistakenly think the shore is
-    moving. But when you keep your eyes closely on the boat, you know the boat moves. Likewise, when you confuse body and
-    mind and discern the myriad dharmas, you mistakenly think mind and nature are permanent. If you practice intimately and
-    return here, the truth that the myriad dharmas are without self is clear.
+  body: When a person first seeks the dharma, they are far removed from the dharma's borders. When the
+    dharma is already correctly transmitted to oneself, one is immediately the original person. When a
+    person rides in a boat and turns their eyes to look at the shore, they mistakenly think the shore
+    is moving. Just as when you keep your eyes closely on the boat you know that the boat is advancing,
+    so too when you discriminate and affirm the myriad dharmas through deluded thinking about body and
+    mind, you mistakenly think that your own mind and own nature are permanent. If you practice intimately
+    and return to this place, the principle that the myriad dharmas are not the self becomes clear.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Seeking begins as distance; transmission collapses distance into original person. The boat image diagnoses projection:
-    permanence attributed to mind is often the shore illusion. Existentially: where are you calling the world unstable while
-    treating your viewpoint as fixed land?
+  body: 'Seeking begins as distance; transmission collapses distance into original person. The boat image
+    diagnoses projection: permanence attributed to mind is often the shore illusion. Existentially: where
+    are you calling the world unstable while treating your viewpoint as fixed land?
 
 
     Key Terms
@@ -109,9 +114,11 @@ pratibha_layers:
     Cross-Tradition Resonances
 
 
-    **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality of accumulation.
+    **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality
+    of accumulation.
 
-    *Divergence:* Eckhart empties for God''s occupancy; Dōgen''s forgetting is verified by the myriad dharmas.
+    *Divergence:* Eckhart empties for God''s occupancy; Dōgen''s forgetting is verified by the myriad
+    dharmas.
 
 
     **Zhuangzi (forgetting the self / useless tree):** Both loosen fixed self-measure.
@@ -119,8 +126,8 @@ pratibha_layers:
     *Divergence:* Zhuangzi often ends in spontaneous ease; Dōgen binds forgetting to practice-realization.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story. Then write one sentence:
-    what verified me just now?'
+  body: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story.
+    Then write one sentence: what verified me just now?'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -128,3 +135,9 @@ provenance:
   section: Genjōkōan
   original_id: DOG_004
   source_reference: Dōgen, *Shōbōgenzō*, Genjōkōan §4
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): 「万法のわれにあらぬ」is mistranslated as ''the myriad dharmas are without self''
+    — should be ''the myriad dharmas are not me/I am not the myriad dharmas''; 「身心を乱想して万法を弁肯する」rendered
+    as ''confuse body and mind and dis'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

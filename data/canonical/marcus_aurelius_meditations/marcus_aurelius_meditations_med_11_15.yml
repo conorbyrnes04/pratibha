@@ -12,14 +12,14 @@ sanskrit_devanagari: Ὡς σαπρὸς καὶ κίβδηλος ὁ λέγων
   ὅλως δεῖ τὸν ἁπλοῦν καὶ ἀγαθὸν εἶναι, οἶον γράσωνα, ἵνα ὁ παραστὰς ἅμα τῷ προσελθεῖν, θέλει οὐ θέλει,
   αἴσθηται. ἐπιτήδευσις δὲ ἁπλότητος σκάλμη ἐστίν. οὐδέν ἐστιν αἴσχιον λυκοφιλίας· πάντων μάλιστα τοῦτο
   φεῦγε. ὁ ἀγαθὸς καὶ ἁπλοῦς καὶ εὐμενὴς ἐν τοῖς ὄμμασιν ἔχουσι ταῦτα καὶ οὐ λανθάνει.
-translation_literal: 'How decayed and counterfeit is the person who says, “I have chosen to deal with
-  you openly.” What are you doing, man? There is no need to announce this beforehand. It will reveal itself;
-  it ought to be written on the forehead. The voice immediately has that sound, and it immediately shows
-  in the eyes, just as the beloved at once reads everything in a lover’s look. In every way, the straightforward
-  and good person should be like a pungent bodily odor: anyone who comes close notices it at once, whether
-  willing or not. But the studied display of simplicity is a dagger. Nothing is more shameful than wolf-friendship;
-  flee that above all. The good, straightforward, kindly person has these things in the eyes, and they
-  do not go unnoticed.'
+translation_literal: How rotten and false is the one who says, 'I have resolved to deal plainly with you.'
+  What are you doing, man? This need not be announced in advance. It will show itself; it ought to be
+  written on the forehead. Immediately the voice rings with such a quality, immediately it stands out
+  in the eyes, just as the beloved instantly recognizes everything in the lover's glance. The simple and
+  good person must be altogether like a rank smell, so that whoever stands nearby perceives it at once
+  upon approaching, whether they wish to or not. But the affected display of simplicity is a false contrivance.
+  Nothing is more disgraceful than wolf-friendship; above all, flee this. The good, simple, and kindly
+  person has these qualities in the eyes, and they do not escape notice.
 commentary: 'Marcus begins with disgust: the person who declares, “I have chosen to deal with you simply”
   is σαπρός, “rotten,” and κίβδηλος, “counterfeit.” The claim defeats itself because ἁπλότης—plainness,
   unfeigned openness—does not need a preface. It is not merely a verbal policy one adopts for a conversation.
@@ -89,5 +89,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): σκάλμη translated as ''dagger'' when it means ''thole-pin'' or ''peg''
+    - metaphorically referring to something false/artificial, not a weapon; γράσωνα (grason) translated
+    as ''pungent bodily odor'' when it re'

@@ -48,6 +48,11 @@ provenance:
   original_reliability: SOURCED — Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
     (Greek original added to a previously translation-only unit)
   original_source: Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: The phrase 'vulgar person' for ἰδιώτου is somewhat pejorative; ἰδιώτης means 'layperson'
+    or 'ordinary person' rather than 'vulgar'; The phrase 'sick or injured people' adds 'injured' which
+    is not in the Greek ἄρρωστοι (sick/infirm); The phrase 'thwart the proper use of our own faculty of
+    choice' sig
 sanskrit_devanagari: ἰδιώτου στάσις καὶ χαρακτήρ· οὐδέποτε ἐξ ἑαυτοῦ προσδοκᾷ ὠφέλειαν ἢ βλάβην, ἀλλʼ
   ἀπὸ τῶν ἔξω. φιλοσόφου στάσις καὶ χαρακτήρ· πᾶσαν ὠφέλειαν καὶ βλάβην ἐξ ἑαυτοῦ προσδοκᾷ. σημεῖα προκόπτοντος·
   οὐδένα ψέγει, οὐδένα ἐπαινεῖ, οὐδένα μέμφεται, οὐδενὶ ἐγκαλεῖ, οὐδὲν περὶ ἑαυτοῦ λέγει ὡς ὄντος τινὸς

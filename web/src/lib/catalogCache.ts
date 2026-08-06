@@ -7,8 +7,10 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * Epictetus completed, Marcus Books 2–12, MMK, and a new Diamond Sūtra tome —
  * so old cached catalogs miss whole collections and units.
  * v4: two new collections filling the Abrahamic gap — Ecclesiastes (Qoheleth,
- * Hebrew) and the Gospel of Thomas (Coptic). */
-const CACHE_VERSION = 4;
+ * Hebrew) and the Gospel of Thomas (Coptic).
+ * v5: corpus-wide QA — 33 duplicate units removed, ~430 translations repaired via
+ * independent strong-reviewer cross-check, placeholder originals suppressed. */
+const CACHE_VERSION = 5;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";

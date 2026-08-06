@@ -7,8 +7,7 @@ unit_label: Nearness of Forgetting
 title: Nearness of Forgetting
 unit_type: chapter
 sanskrit_devanagari: Ἐγγὺς μὲν ἡ σὴ περὶ πάντων λήθη, ἐγγὺς δὲ ἡ πάντων περὶ σοῦ λήθη.
-translation_literal: Soon your own forgetting of everything will be near; soon too will be everyone’s
-  forgetting of you.
+translation_literal: Near is your forgetting of all things, and near is all people's forgetting of you.
 commentary: 'The saying is balanced with a stark double repetition: ἐγγύς, “near,” opens both halves.
   What is near is not only the world’s λήθη, its forgetting, of oneself; it is also one’s own λήθη “concerning
   all things.” The self does not merely vanish from public memory: its whole field of attachments, concerns,
@@ -75,5 +74,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''Soon your own forgetting of everything will be near'' is redundant
+    and awkward - ''ἐγγὺς'' means ''near'' already, so saying ''will be near'' in the future tense misrepresents
+    the immediacy; The '

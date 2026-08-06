@@ -8,8 +8,8 @@ title: Bind the Strong One
 unit_type: logion
 sanskrit_devanagari: ⲡⲉϫⲉⲓ︤ⲥ︥ ⲙⲛ̄ϭⲟⲙ⳿ ⲛ̄ⲧⲉⲟⲩⲁ ⲃⲱⲕ⳿ ⲉϩⲟⲩⲛ ⲉⲡⲏⲉⲓ ⲙ̄ⲡ ⲛ̄ϥϫⲓⲧϥ⳿ ⲛ̄ϫⲛⲁϩ ⲉⲓⲙⲏⲧⲓ ⲛ̄ϥⲙⲟⲩⲣ ⲛ̄ⲛⲉϥϭⲓϫ⳿
   ⲧⲟⲧⲉ ϥⲛⲁⲡⲱⲱⲛⲉ ⲉⲃⲟⲗ ⲙ̄ⲡⲉϥⲏⲉⲓ
-translation_literal: Jesus said, “No one can enter the house of a strong man and seize it by force unless
-  he first binds his hands. Then he will plunder his house.”
+translation_literal: Jesus said, "No one is able to enter the house of the strong man and take it unless
+  he first binds his hands; then he will plunder his house."
 commentary: 'The saying is built on a stark sequence: entering, binding, then plundering. It does not
   commend reckless confrontation. What appears secure—the strong man’s house—cannot simply be taken by
   an impulsive assault. The condition is first to disable the hands by which strength acts and holds.
@@ -73,5 +73,11 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''seize it by force'' mistranslates the Coptic - the object
+    being seized/taken is not ''it'' (the house) but rather should refer to taking/plundering the strong
+    man''s possessions; The binding s'

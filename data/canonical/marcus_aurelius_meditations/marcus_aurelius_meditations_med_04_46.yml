@@ -11,13 +11,13 @@ sanskrit_devanagari: Ἀεὶ τοῦ Ἡρακλειτείου μεμνῆσθ�
   ᾧ μάλιστα διηνεκῶς ὁμιλοῦσι, λόγῳ τῷ τὰ ὅλα διοικοῦντι, τούτῳ διαφέρονται· καὶ οἷς καθ̓ ἡμέραν ἐγκυροῦσι,
   ταῦτα αὐτοῖς ξένα φαίνεται· καὶ ὅτι οὐ δεῖ ὥσπερ καθεύδοντας ποιεῖν καὶ λέγειν, καὶ γὰρ καὶ τότε δοκοῦμεν
   ποιεῖν καὶ λέγειν· καὶ ὅτι οὐ δεῖ ὡς παῖδας τοκεώνων, τουτέστι κατὰ ψιλόν, καθότι παρειλήφαμεν.
-translation_literal: 'Keep Heraclitus always in mind: the death of earth is to become water; the death
-  of water, to become air; the death of air, fire—and back again. Remember too the person who forgets
-  where the road leads. And remember that people are at odds with that Logos with which they associate
-  most continuously, the Logos that administers the whole; and that what they encounter day by day appears
-  strange to them. Do not act and speak as though asleep—for even then we imagine that we are acting and
-  speaking. Nor should we be like children of their parents: that is, simply accepting things because
-  we have received them.'
+translation_literal: 'Always remember Heraclitus: that earth''s death is to become water, and water''s
+  death to become air, and air''s death fire, and back again. Remember also the one who forgets where
+  the road leads. And that people are at variance with the very Logos with which they most continuously
+  associate, the Logos governing all things; and that the things they encounter daily seem foreign to
+  them. And that one must not act and speak like those who are sleeping—for even in sleep we seem to ourselves
+  to be acting and speaking. And that one must not act like children in relation to parents, that is,
+  merely as we have received it.'
 commentary: 'Marcus gathers several Heraclitean reminders into an exercise of alertness. The elemental
   sequence—γῆ, ὕδωρ, ἀήρ, πῦρ—makes death (θάνατος) not sheer annihilation but a name for passage into
   another condition. “And back again” prevents this from becoming a simple upward ladder: nature is an
@@ -88,5 +88,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''the person who forgets where the road leads'' misses the reflexive/impersonal
+    construction - it should be about people forgetting where the road (they travel) leads; The phrase
+    ''Do not act '

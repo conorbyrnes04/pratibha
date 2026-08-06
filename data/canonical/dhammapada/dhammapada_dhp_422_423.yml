@@ -89,3 +89,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation incorrectly includes the chapter colophon and verse enumeration as part
+    of the translation of verses 422-423. These are not part of the verses themselves but rather editorial
+    notes or a summary of the entire Dhammapada.; The new translation omits the final 'tam ahaṃ brūmi
+    brāhmaṇ

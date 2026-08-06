@@ -111,3 +111,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of "ἐν δὲ ταῖς πράξεσιν οὐκέτι, ἀλλ̓ ἐντὸς τοῦ δυνατοῦ" as "But in your actions
+    you stop short—not merely short of excess, but within what you are capable of" is an inversion of
+    sense. The original implies that in actions, one does not go beyond what is possible, but rather stays
+    wit

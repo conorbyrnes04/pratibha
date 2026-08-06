@@ -14,16 +14,16 @@ sanskrit_devanagari: Κλάδος τοῦ προσεχοῦς κλάδου ἀπ
   τὴν τοιαύτην διαίρεσιν δυσένωτον καὶ δυσαποκατάστατον τὸ ἀποχωροῦν ποιεῖ. ὅλως τε οὐχ ὅμοιος ὁ κλάδος
   ὁ ἀπ̓ ἀρχῆς συμβλαστήσας καὶ σύμπνους συμμείνας τῷ μετὰ τὴν ἀποκοπὴν αὖθις ἐγκεντρισθέντι, ὅ τι ποτὲ
   λέγουσιν οἱ φυτουργοί. Ὁμοθαμνεῖν μέν, μὴ ὁμοδογματεῖν δέ.
-translation_literal: 'A branch cut off from the branch beside it cannot avoid being cut off from the whole
-  plant as well. So too, when a person tears himself away from one other person, he has fallen away from
-  the entire community. A branch, then, is cut off by someone else; but a human being separates himself
-  from his neighbor by hating and turning away—and does not realize that at the same time he has severed
-  himself from the whole civic fellowship. Yet this is a gift from Zeus, who established our fellowship:
-  we are able to grow together again with the one near us, and once more become contributors to the whole.
-  But when this kind of division happens repeatedly, it makes the part that departs hard to reunite and
-  hard to restore. In general, too, a branch that grew from the beginning and remained breathing together
-  with the tree is not like one grafted in again after being cut off, whatever the gardeners may say.
-  Grow on the same bush, yes; do not hold the same doctrines.'
+translation_literal: 'A branch cut off from the adjacent branch cannot help but be cut off from the whole
+  plant as well. In the same way, a human being who is torn away from one other human being has fallen
+  away from the whole community. Now a branch is cut off by another; but a human being separates himself
+  from his neighbor by hating and turning away, and does not realize that at the same time he has cut
+  himself off from the whole social order. Yet there is this gift from Zeus who established the community:
+  it is possible for us to grow together again with our neighbor and once more to become part of the whole.
+  However, when such division occurs repeatedly, it makes what has separated difficult to reunite and
+  difficult to restore. In general, the branch that has grown together from the beginning and remained
+  sharing the same life is not the same as one grafted back in after being cut off, whatever the gardeners
+  may say. To share the same bush, yes; but not to share the same principles.'
 commentary: 'Marcus begins with an organic image: a κλάδος, a branch, cannot be detached from its neighboring
   branch without also being detached from the entire φυτὸν, the living plant. Human alienation works similarly.
   To be ἀποσχισθείς—torn away—from even one person is to fall from κοινωνία, the shared fellowship of
@@ -92,5 +92,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Final sentence mistranslates the imperative mood: ''Ὁμοθαμνεῖν μέν, μὴ
+    ὁμοδογματεῖν δέ'' is rendered as imperatives (''Grow...do not hold'') when it should be infinitives
+    expressing a contrast about what '

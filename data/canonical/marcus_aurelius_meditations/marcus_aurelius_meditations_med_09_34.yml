@@ -81,3 +81,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation misinterprets the final clause. 'ὅση οἴησις' (what conceit) refers to
+    the conceit of 'these people' (τούτων) whose 'ruling minds' (τὰ ἡγεμονικὰ τούτων) are being examined,
+    specifically their conceit in thinking their blame or praise has significant power. The new translation
+    inco

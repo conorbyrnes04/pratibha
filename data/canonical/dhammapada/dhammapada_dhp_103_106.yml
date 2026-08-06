@@ -99,3 +99,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: In verse 103, 'a thousand times over' is an invention; the original means 'a thousand men
+    with a thousand (men)', implying a large number or a thousand times a thousand, but not 'a thousand
+    times over' as a multiplier of the defeat itself.; In verse 104, 'all these other people' is an over-interpret

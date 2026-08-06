@@ -13,7 +13,8 @@ sanskrit_devanagari: 'अग्ने नय सुपथा राये अस
 sanskrit_iast: 'agne naya supatha raye asman visvani deva vayunani vidvan |
 
   yuyodhy asmaj juhuranam eno bhuyistham te nama uktim vidhema || 18 ||'
-translation_literal: O Fire, lead us by the good path, knowing all our ways; remove crooked sin from us. We offer reverence.
+translation_literal: O Fire, lead us by the good path, knowing all our ways; remove crooked sin from us.
+  We offer reverence.
 commentary: 'The text ends as ethical prayer: guidance, purification, humility.
 
 
@@ -44,17 +45,18 @@ commentary: 'The text ends as ethical prayer: guidance, purification, humility.
   Cross-Tradition Resonances
 
 
-  **Qur''an 1:6–7, al-Fātiḥah:** Like the prayer to Agni, the Fātiḥah asks God to guide the worshipper upon a rightly directed
-  path. Divergence: The Qur''anic prayer addresses the one transcendent God, whereas this verse invokes Agni as divine guide
-  and knower of ritual and human ways.
+  **Qur''an 1:6–7, al-Fātiḥah:** Like the prayer to Agni, the Fātiḥah asks God to guide the worshipper
+  upon a rightly directed path. Divergence: The Qur''anic prayer addresses the one transcendent God, whereas
+  this verse invokes Agni as divine guide and knower of ritual and human ways.
 
-  **Matthew 6:13, the Lord''s Prayer:** The request for protection from crooked sin parallels the petition not to be led into
-  temptation but to be delivered from evil. Divergence: The Lord''s Prayer frames deliverance through the Father and an eschatological
-  moral struggle, while the Vedic verse seeks Agni''s purification and safe passage.
+  **Matthew 6:13, the Lord''s Prayer:** The request for protection from crooked sin parallels the petition
+  not to be led into temptation but to be delivered from evil. Divergence: The Lord''s Prayer frames deliverance
+  through the Father and an eschatological moral struggle, while the Vedic verse seeks Agni''s purification
+  and safe passage.
 
-  **Dhammapada 183:** Its injunction to avoid evil, cultivate good, and purify the mind closely parallels the verse''s ethical
-  movement from sin toward the good path. Divergence: The Dhammapada presents purification chiefly as disciplined personal
-  cultivation rather than as a prayer for a deity to remove wrongdoing.'
+  **Dhammapada 183:** Its injunction to avoid evil, cultivate good, and purify the mind closely parallels
+  the verse''s ethical movement from sin toward the good path. Divergence: The Dhammapada presents purification
+  chiefly as disciplined personal cultivation rather than as a prayer for a deity to remove wrongdoing.'
 insight: 'The text ends as ethical prayer: guidance, purification, humility.'
 practice: Close each day with one sincere request for clearer conduct tomorrow.
 upaya: ''
@@ -103,25 +105,27 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Patañjali Yoga Sūtras 1.28
-    resonance: 'Both texts treat mantra as a dual practice: utterance paired with contemplative attention to meaning. The
-      Isavasya prayer invokes Fire while requesting guidance; Patañjali''s sutra joins repetition of the word with meditation
-      on its sense—each binding vocalization to inner understanding.'
-    divergence: The Upanishad frames mantra as ethical petition to a divine agent (Fire); Patañjali treats it as a technical
-      method for stabilizing mind without invoking external agency.
+    resonance: 'Both texts treat mantra as a dual practice: utterance paired with contemplative attention
+      to meaning. The Isavasya prayer invokes Fire while requesting guidance; Patañjali''s sutra joins
+      repetition of the word with meditation on its sense—each binding vocalization to inner understanding.'
+    divergence: The Upanishad frames mantra as ethical petition to a divine agent (Fire); Patañjali treats
+      it as a technical method for stabilizing mind without invoking external agency.
     passage_id: patañjali_yoga_sūtras.ys_1_28
   - citation: Svetasvatara Upanishad — Fire by Friction, Self by Om
-    resonance: Both use fire as a metaphor for latent spiritual power requiring proper means to manifest. The Isavasya addresses
-      Fire as guide and purifier; the Svetasvatara describes the Self as fire hidden in wood, brought forth 'by the right
-      means'—each posits a dormant force activated through correct practice.
-    divergence: The Isavasya frames fire as an external divine power to petition; the Svetasvatara locates fire as the Self's
-      intrinsic nature, requiring technique rather than prayer.
+    resonance: Both use fire as a metaphor for latent spiritual power requiring proper means to manifest.
+      The Isavasya addresses Fire as guide and purifier; the Svetasvatara describes the Self as fire hidden
+      in wood, brought forth 'by the right means'—each posits a dormant force activated through correct
+      practice.
+    divergence: The Isavasya frames fire as an external divine power to petition; the Svetasvatara locates
+      fire as the Self's intrinsic nature, requiring technique rather than prayer.
     passage_id: svetasvatara_upanishad.svu_008
   - citation: Siva Sutra — Śāktopāya
-    resonance: Both assert that mantra operates through embodied realization, not mere conceptual knowledge. The Isavasya's
-      prayer seeks actual purification and guidance (not just intellectual assent); the Siva Sutra states 'Knowledge becomes
-      embodied reality'—each insists mantra's efficacy lies in lived transformation.
-    divergence: The Isavasya emphasizes ethical purification through divine grace; the Siva Sutra emphasizes non-dual recognition
-      where knowledge and reality collapse into identity.
+    resonance: Both assert that mantra operates through embodied realization, not mere conceptual knowledge.
+      The Isavasya's prayer seeks actual purification and guidance (not just intellectual assent); the
+      Siva Sutra states 'Knowledge becomes embodied reality'—each insists mantra's efficacy lies in lived
+      transformation.
+    divergence: The Isavasya emphasizes ethical purification through divine grace; the Siva Sutra emphasizes
+      non-dual recognition where knowledge and reality collapse into identity.
     passage_id: siva_sutra.ss_ii_3
   layer_provenance: generated_grounded
 appendixes: []
@@ -131,3 +135,6 @@ provenance:
   section: teaching_passage
   original_id: ISA_024
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: Missing the purpose clause 'rāye' (for wealth/prosperity); Omits 'bhūyiṣṭhām' (most abundant/repeated);
+    Loses the specific reference to 'nama-uktim' (words of salutation/praise) in favor of generic 'reverence'

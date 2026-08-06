@@ -7,8 +7,8 @@ unit_label: The Village and the Healer
 title: The Village and the Healer
 unit_type: logion
 sanskrit_devanagari: ⲡⲉϫⲉⲓ︤ⲥ︥ ⲙⲛ̄ ϣⲏⲡ · ϩⲙ̄ⲡⲉϥϯⲙⲉ ⲙⲁⲣⲉⲥⲟⲉⲓⲛ ⲛ̄ⲛⲉⲧ⳿ⲥⲟⲟⲩⲛ ⲙ̄ⲙⲟϥ⳿
-translation_literal: Jesus said, “There is no prophet in his village. Let a physician heal those who know
-  him.”
+translation_literal: Jesus said, 'No prophet is accepted in his own village; no physician heals those
+  who know him.'
 commentary: 'The saying places prophet and physician beside one another: each bears something needed,
   yet each stands within the difficult field of recognition. The prophet’s village has no prophet—not
   necessarily because prophecy is absent, but because habitual nearness makes the prophetic person unreadable.
@@ -70,5 +70,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The original text says ''a prophet is not accepted/honored in his village''
+    - the NEW translation drops the negation by rendering it as ''There is no prophet'' instead of ''no
+    prophet is accepted/honored'';'

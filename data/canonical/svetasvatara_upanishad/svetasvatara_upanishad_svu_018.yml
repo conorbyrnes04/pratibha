@@ -216,3 +216,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: 'The new translation omits three verses (3.12, 3.13, 3.15, 3.17, 3.18, 3.19) from the provided
+    passage, which is a significant omission of content.; In 3.11, ''sarvānana-śiro-grīvaḥ'' (having faces,
+    heads, and necks everywhere) is omitted.; In 3.14, ''daśāṅgulam'' (ten fingers'' breadth) is translated
+    as '

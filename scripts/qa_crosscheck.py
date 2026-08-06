@@ -28,7 +28,7 @@ import yaml
 REPO = "/Users/conorbyrnes04/Documents/Projects/VAK/pratibha"
 sys.path.insert(0, REPO)
 sys.path.insert(0, os.path.join(REPO, "scripts"))
-from app.data_loader import _as_text  # noqa: E402
+from app.data_loader import _as_text, _has_real_transliteration  # noqa: E402
 from faithful_expand_upanishads import _lenient_json  # noqa: E402
 
 CANON = os.path.join(REPO, "data/canonical")
@@ -56,7 +56,11 @@ def original_of(d):
     # strip our (verse)/[ref] markers for a clean original
     def clean(s):
         return re.sub(r"[\(\[]\s*[\d:.–\-]+\s*[\)\]]", " ", s).strip()
-    if iast and re.search(r"[a-zāīūṛṇśṣ]", iast):
+    # Use IAST only if it is a REAL transliteration — not a placeholder note like
+    # "See Original." / "Greek scholarly romanization…" that some legacy non-Sanskrit
+    # units park in this field while the real script sits in sanskrit_devanagari.
+    if iast and re.search(r"[a-zāīūṛṇśṣ]", iast) and _has_real_transliteration(iast) \
+            and not re.search(r"(?i)see |romanization|canonical|refer to|original layer", iast):
         return clean(iast), "Sanskrit (IAST)"
     if dev:
         if GREEK.search(dev): return clean(dev), "Greek"
@@ -82,7 +86,7 @@ def qa_done(d):
     return bool(prov.get("qa_crosscheck"))
 
 
-def units(collections, force):
+def units(collections, force, upgrade=""):
     for path in sorted(glob.glob(os.path.join(CANON, "*", "*.yml"))):
         if os.path.basename(path) in ("index.jsonl",):
             continue
@@ -99,7 +103,14 @@ def units(collections, force):
         trans = translation_of(d)
         if not orig or len(trans) < 20:
             continue
-        if not force and qa_done(d):
+        # --upgrade: (re)review ONLY units whose prior QA verdict came from the
+        # named model (the cheap triage), i.e. never strong-reviewed. Units already
+        # adjudicated by the strong reviewer carry its name and are skipped.
+        if upgrade:
+            prior = _as_text((d.get("provenance") or {}).get("qa_crosscheck"))
+            if upgrade not in prior:
+                continue
+        elif not force and qa_done(d):
             continue
         yield path, d, coll, orig, lang, trans
 
@@ -222,7 +233,7 @@ def _write(path, d):
 
 
 async def run(args):
-    rows = list(units(set(args.collections or []), args.force))
+    rows = list(units(set(args.collections or []), args.force, args.upgrade))
     if args.limit:
         rows = rows[: args.limit]
     print(f"[qa] {len(rows)} units | triage={args.triage} → reviewer={args.reviewer} → confirm={args.confirmer}")
@@ -264,6 +275,7 @@ def main():
     ap.add_argument("--confirmer", default=CONFIRMER, help="third-family model confirming applied repairs")
     ap.add_argument("--flag-only", action="store_true", help="report divergences, do not repair")
     ap.add_argument("--force", action="store_true", help="re-check units already QA'd")
+    ap.add_argument("--upgrade", default="", help="only re-review units whose prior QA verdict came from this model id (e.g. google/gemini)")
     ap.add_argument("--dryrun", action="store_true", help="offline: coverage + cost estimate, no API")
     args = ap.parse_args()
     asyncio.run(run(args))

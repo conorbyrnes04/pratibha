@@ -96,3 +96,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: error'
+  qa_issues: Verse 8:6 'the misery of humankind lies heavy upon them' - the Hebrew 'רָעַת הָאָדָם רַבָּה
+    עָלָיו' means 'the evil/trouble of man is great upon him' referring to the burden/trouble that weighs
+    on a person, not 'misery of humankind' as a collective; Verse 8:10 'in the city they were forgotten'
+    - the

@@ -13,15 +13,15 @@ sanskrit_devanagari: Τῷ δεδευμένῳ ὑπὸ τῶν ἀληθῶν �
   γὰρ ταῦτα (ἔαρος ἐπιγίγνεται ὥρᾐ. εἶτα ἄνεμος καταβέβληκεν· ἔπειθ̓ ὕλη ἕτερα ἀντὶ τούτων φύει. τὸ δὲ
   ὀλιγοχρόνιον κοινὸν πᾶσιν, ἀλλὰ σὺ πάντα ὡς αἰώνια ἐσόμενα φεύγεις καὶ διώκεις. μικρὸν καὶ καταμύσεις,
   τὸν δὲ ἐξενεγκόντα σε ἤδη ἄλλος θρηνήσει.
-translation_literal: 'For one trained by true convictions, even the shortest, most familiar saying is
-  enough to call back freedom from pain and fear—for example: “The wind scatters some leaves upon the
-  ground; so too the race of men.” Your little children are leaves; those who shout their trustworthy-sounding
-  praise and applause are leaves too; and likewise those who, on the contrary, curse you, or quietly criticize
-  and mock you. Leaves as well are those who will inherit your posthumous reputation. For all these things,
-  in springtime, come into being; then the wind brings them down; and afterward the forest puts forth
-  others in their place. Short duration is common to everything—yet you flee and pursue all things as
-  though they were going to last forever. In a little while you will close your eyes, and someone else
-  will already mourn the person who carried you out.'
+translation_literal: 'For one trained by true convictions, even the shortest, most commonplace phrase
+  is enough to remind one to be free from grief and fear—for example: ''The wind scatters some leaves
+  upon the ground; so too the generations of men.'' Little leaves are your children too; little leaves
+  also are those who cry out with seemingly trustworthy praise and acclaim, or on the contrary curse you,
+  or secretly blame and mock you; little leaves likewise are those who will receive your future fame.
+  For all these things ''come to be in the season of spring; then the wind casts them down, and the forest
+  grows others in their place.'' Brevity is common to all things—yet you flee from and pursue everything
+  as if it will be eternal. Soon you will close your eyes, and soon another will mourn the one who carried
+  you out.'
 commentary: 'Marcus addresses the person “trained” (δεδευμένῳ) by true doctrines: such training does not
   require an elaborate argument at every crisis. A small inherited line can serve as a ὑπόμνησις, a recollection,
   restoring ἀλυπία and ἀφοβία—release from distress and fear. The Homeric image of wind-driven leaves
@@ -93,5 +93,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Final clause mistranslated: ''τὸν δὲ ἐξενεγκόντα σε'' means ''the one who
+    carried YOU out'' (i.e., your pallbearer), not ''the person who carried you out''. The subject of
+    mourning is wrong.; ''ἤδη ἄλλος θρη'

@@ -9,9 +9,10 @@ unit_type: chapter
 sanskrit_devanagari: Ἀλέξανδρος δὲ καὶ Γάιος καὶ Πομπήιος τί πρὸς Διογένη καὶ Ἡράκλειτον καὶ Σωκράτην;
   οἱ μὲν γὰρ εἶδον τὰ πράγματα καὶ τὰς αἰτίας καὶ τὰς ὕλας καὶ τὰ ἡγεμονικὰ ἦν αὐτῶν ταὐτά, ἐκεῖ δὲ ὅσων
   πρόνοια καὶ δουλεία πόσων.
-translation_literal: What are Alexander, Gaius, and Pompey beside Diogenes, Heraclitus, and Socrates?
-  The latter saw realities, their causes, and their material; and their ruling faculties belonged to themselves.
-  But the former—over how many things did they have anxious oversight, and to how many were they enslaved?
+translation_literal: What are Alexander, Gaius, and Pompey compared to Diogenes, Heraclitus, and Socrates?
+  For the latter saw things as they are, their causes and their matter, and their ruling principles were
+  in accord with these. But those others—how many things they had to worry about, and to how many things
+  they were enslaved!
 commentary: 'The contrast is sharpened by the final question. Alexander, Gaius, and Pompey exercised πρόνοια,
   forethought or management, over innumerable affairs; yet they also lived in δουλεία, slavery, in relation
   to innumerable things. Imperial command can therefore conceal dependence: one must guard territories,
@@ -75,5 +76,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''τὰ ἡγεμονικὰ ἦν αὐτῶν ταὐτά'' is mistranslated as ''their
+    ruling faculties belonged to themselves'' when it means ''their ruling faculties were the same/identical''
+    (i.e., in harmony with reali'

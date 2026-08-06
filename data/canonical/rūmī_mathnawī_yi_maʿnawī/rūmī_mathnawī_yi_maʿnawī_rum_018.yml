@@ -21,13 +21,16 @@ sanskrit_devanagari: 'بود بازرگانی او را طوطیی /// در قف
 
   این چنین باشد وفای دوستان /// من در این حبس و شما در بوستان'
 sanskrit_iast: See Original.
-translation_literal: 'A merchant had a beautiful parrot imprisoned in a cage. "What gift shall I bring you from India?" The
-  parrot said: when you see the parrots there, tell my state — that such-and-such a parrot, longing for you, is in our prison
-  by heaven''s decree. She sends greeting and seeks justice and a way of guidance. Is it right that I am in hard bondage while
-  you are now on green, now on trees? Is this friends'' loyalty — I in this prison and you in the garden?'
-commentary: 'The soul''s cry is addressed to free birds who may have forgotten cages. The contested sting is friendship that
-  enjoys the garden while ignoring the imprisoned. Existentially: who are you free with, and whom have you left narrating
-  from a cage?
+translation_literal: 'There was a merchant who had a parrot — a beautiful parrot imprisoned in a cage.
+  He said to the parrot: ''What gift do you want from the land of India?'' The parrot said to him: ''When
+  you see the parrots there, describe my condition to them — that such-and-such a parrot who yearns for
+  you all is in your prison by heaven''s decree. She sent greetings to you and asked for counsel, and
+  from you she seeks a remedy and guidance on the way. Is this right — that I should be in harsh bondage
+  while you are sometimes on the meadow, sometimes on the tree? Is this the loyalty of friends — I in
+  this prison and you all in the garden?'''
+commentary: 'The soul''s cry is addressed to free birds who may have forgotten cages. The contested sting
+  is friendship that enjoys the garden while ignoring the imprisoned. Existentially: who are you free
+  with, and whom have you left narrating from a cage?
 
 
   Key Terms
@@ -47,15 +50,16 @@ commentary: 'The soul''s cry is addressed to free birds who may have forgotten c
 
   **Milarepa (songs from hardship):** Both voice exile as teaching.
 
-  *Divergence:* Milarepa''s cage is often karmic ordeal he owns; Rūmī''s parrot petitions the free for a method of release.
+  *Divergence:* Milarepa''s cage is often karmic ordeal he owns; Rūmī''s parrot petitions the free for
+  a method of release.
 
 
   **Reed-flute opening (Mathnawī I):** Both are instruments of separation-speech.
 
   *Divergence:* The reed sings ontology; the parrot requests a practical path (*rah-e irshād*).'
 insight: The soul's cry is addressed to free birds who may have forgotten cages.
-practice: Write a three-line message from a caged part of yourself to a freer part (or to friends). Do not fix it — just deliver
-  the greeting and the ask for a way.
+practice: Write a three-line message from a caged part of yourself to a freer part (or to friends). Do
+  not fix it — just deliver the greeting and the ask for a way.
 upaya: ''
 themes:
 - ego
@@ -93,15 +97,18 @@ pratibha_layers:
   body: See Original.
 - kind: translation
   label: Pratibha Translation
-  body: 'A merchant had a beautiful parrot imprisoned in a cage. "What gift shall I bring you from India?" The parrot said:
-    when you see the parrots there, tell my state — that such-and-such a parrot, longing for you, is in our prison by heaven''s
-    decree. She sends greeting and seeks justice and a way of guidance. Is it right that I am in hard bondage while you are
-    now on green, now on trees? Is this friends'' loyalty — I in this prison and you in the garden?'
+  body: 'There was a merchant who had a parrot — a beautiful parrot imprisoned in a cage. He said to the
+    parrot: ''What gift do you want from the land of India?'' The parrot said to him: ''When you see the
+    parrots there, describe my condition to them — that such-and-such a parrot who yearns for you all
+    is in your prison by heaven''s decree. She sent greetings to you and asked for counsel, and from you
+    she seeks a remedy and guidance on the way. Is this right — that I should be in harsh bondage while
+    you are sometimes on the meadow, sometimes on the tree? Is this the loyalty of friends — I in this
+    prison and you all in the garden?'''
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The soul''s cry is addressed to free birds who may have forgotten cages. The contested sting is friendship that enjoys
-    the garden while ignoring the imprisoned. Existentially: who are you free with, and whom have you left narrating from
-    a cage?
+  body: 'The soul''s cry is addressed to free birds who may have forgotten cages. The contested sting
+    is friendship that enjoys the garden while ignoring the imprisoned. Existentially: who are you free
+    with, and whom have you left narrating from a cage?
 
 
     Key Terms
@@ -121,7 +128,8 @@ pratibha_layers:
 
     **Milarepa (songs from hardship):** Both voice exile as teaching.
 
-    *Divergence:* Milarepa''s cage is often karmic ordeal he owns; Rūmī''s parrot petitions the free for a method of release.
+    *Divergence:* Milarepa''s cage is often karmic ordeal he owns; Rūmī''s parrot petitions the free for
+    a method of release.
 
 
     **Reed-flute opening (Mathnawī I):** Both are instruments of separation-speech.
@@ -129,8 +137,8 @@ pratibha_layers:
     *Divergence:* The reed sings ontology; the parrot requests a practical path (*rah-e irshād*).'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Write a three-line message from a caged part of yourself to a freer part (or to friends). Do not fix it — just deliver
-    the greeting and the ask for a way.
+  body: Write a three-line message from a caged part of yourself to a freer part (or to friends). Do not
+    fix it — just deliver the greeting and the ask for a way.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -138,3 +146,9 @@ provenance:
   section: I.1547–1558
   original_id: RUM_018
   source_reference: Rūmī, *Mathnawī* I.1547–1558 (merchant and parrot)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Line 1549: ''What gift shall I bring you from India?'' is missing the subject
+    ''he said to the parrot''; Line 1550: ''tell my state'' omits the crucial instruction to ''describe/explain
+    my condition to them'''
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

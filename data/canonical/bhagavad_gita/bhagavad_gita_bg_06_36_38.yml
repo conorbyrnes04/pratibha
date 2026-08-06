@@ -45,11 +45,12 @@ sanskrit_iast: 'asaṃyatātmanā yogo duṣprāpa iti me matiḥ|
 
 
   apratiṣṭho mahābāho vimūḍho brahmaṇaḥ pathi'
-translation_literal: 'Yoga is hard to reach for the uncontrolled self — this is my view; but for the controlled
-  self, striving by the means, it can be attained. Arjuna said: One who does not strive, yet has faith,
-  whose mind has strayed from yoga — failing to reach yoga-perfection, to what end does that one go, Kṛṣṇa?
-  Fallen from both, without standing, deluded on Brahman’s path — does that one perish like a torn cloud,
-  O mighty-armed?'
+translation_literal: 'Yoga is difficult to attain for one with an uncontrolled self — this is my opinion;
+  but for one with a controlled self who strives, it can be obtained through proper means. Arjuna said:
+  One who is endowed with faith but lacks sustained effort, whose mind has fallen away from yoga — having
+  failed to attain perfection in yoga, what destination does he reach, Krishna? Does he not perish like
+  a scattered cloud, fallen from both paths, without foundation, confused on the path to Brahman, O mighty-armed
+  one?'
 commentary: 'Krishna’s matih is frank: without self-control yoga is duṣprāpa; with vaśyātman and upāya-striving
   it is possible. Arjuna then voices the terror of the almost-yogin: śraddhā without sufficient yati,
   mind strayed, perfection unreached — fallen from both worlds, unsupported, confused on Brahman’s path
@@ -126,11 +127,12 @@ pratibha_layers:
     apratiṣṭho mahābāho vimūḍho brahmaṇaḥ pathi'
 - kind: translation
   label: Pratibha Translation
-  body: 'Yoga is hard to reach for the uncontrolled self — this is my view; but for the controlled self,
-    striving by the means, it can be attained. Arjuna said: One who does not strive, yet has faith, whose
-    mind has strayed from yoga — failing to reach yoga-perfection, to what end does that one go, Kṛṣṇa?
-    Fallen from both, without standing, deluded on Brahman’s path — does that one perish like a torn cloud,
-    O mighty-armed?'
+  body: 'Yoga is difficult to attain for one with an uncontrolled self — this is my opinion; but for one
+    with a controlled self who strives, it can be obtained through proper means. Arjuna said: One who
+    is endowed with faith but lacks sustained effort, whose mind has fallen away from yoga — having failed
+    to attain perfection in yoga, what destination does he reach, Krishna? Does he not perish like a scattered
+    cloud, fallen from both paths, without foundation, confused on the path to Brahman, O mighty-armed
+    one?'
 - kind: commentary
   label: Pratibha Commentary
   body: 'Krishna’s matih is frank: without self-control yoga is duṣprāpa; with vaśyātman and upāya-striving
@@ -179,3 +181,10 @@ provenance:
   section: chapter_06
   original_id: BG_06_36_38
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): ayatiḥ means ''one who does not strive/is not diligent'' but the translation
+    renders it as ''One who does not strive, yet has faith'' - the ''yet'' creates a contrast that misrepresents
+    the verse. The perso'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

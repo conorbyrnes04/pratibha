@@ -104,3 +104,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 323 misinterprets 'danto dantena gacchati' as 'one who is tamed goes there
+    by oneself, through a self well trained.' The original means 'a tamed one goes with a tamed one' or
+    'a tamed one goes by means of a tamed one,' referring to the tamed self or mind as the vehicle.; In
+    326, '

@@ -39,11 +39,12 @@ sanskrit_iast: 'kāmātmānaḥ svargaparā janmakarmaphalapradām|
 
 
   nirdvandvo nityasattvastho niryogakṣema ātmavān'
-translation_literal: “Desire-selves, intent on heaven, [speak speech] that bestows birth as action’s fruit
-  — crowded with many particular rites, aimed at the goal of enjoyment and lordship. For those attached
-  to enjoyment and lordship, their minds carried off by that, the resolve-natured understanding is not
-  established in samādhi. The Vedas have the triple guṇa as their scope; be without the triple guṇa, Arjuna
-  — free of the pairs, always standing in sattva, free of getting-and-keeping, Self-possessed.”
+translation_literal: Those whose nature is desire, intent on heaven, [speak flowery speech] that promises
+  rebirth as the fruit of ritual action — filled with many specific rites, directed toward the attainment
+  of enjoyment and power. For those attached to enjoyment and power, whose minds are carried away by that
+  [speech], the resolute understanding does not become established in samādhi. The Vedas have the three
+  guṇas as their domain; be beyond the three guṇas, Arjuna — free from the pairs of opposites, ever-established
+  in pure being, free from acquisition and preservation, possessed of the Self.
 commentary: 'Ritual consumerism is diagnosed: *kāma-ātman* beings use sacred tech for heaven, enjoyment,
   and *aiśvarya*. Such speech hijacks the mind so resolve cannot seat in *samādhi*. Then the radical command:
   the Vedas’ range is *traiguṇya* — be *nistraiguṇya*. Free of dualities, established in sattva, without
@@ -126,11 +127,12 @@ pratibha_layers:
     nirdvandvo nityasattvastho niryogakṣema ātmavān'
 - kind: translation
   label: Pratibha Translation
-  body: “Desire-selves, intent on heaven, [speak speech] that bestows birth as action’s fruit — crowded
-    with many particular rites, aimed at the goal of enjoyment and lordship. For those attached to enjoyment
-    and lordship, their minds carried off by that, the resolve-natured understanding is not established
-    in samādhi. The Vedas have the triple guṇa as their scope; be without the triple guṇa, Arjuna — free
-    of the pairs, always standing in sattva, free of getting-and-keeping, Self-possessed.”
+  body: Those whose nature is desire, intent on heaven, [speak flowery speech] that promises rebirth as
+    the fruit of ritual action — filled with many specific rites, directed toward the attainment of enjoyment
+    and power. For those attached to enjoyment and power, whose minds are carried away by that [speech],
+    the resolute understanding does not become established in samādhi. The Vedas have the three guṇas
+    as their domain; be beyond the three guṇas, Arjuna — free from the pairs of opposites, ever-established
+    in pure being, free from acquisition and preservation, possessed of the Self.
 - kind: commentary
   label: Pratibha Commentary
   body: 'Ritual consumerism is diagnosed: *kāma-ātman* beings use sacred tech for heaven, enjoyment, and
@@ -191,3 +193,9 @@ provenance:
   section: chapter_02
   original_id: BG_02_43_45
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''janmakarmaphalapradām'' means ''giving birth-as-fruit-of-action''
+    or ''promising rebirth as the fruit of ritual action'', not ''bestows birth as action''s fruit'' which
+    inverts the relationship; '''
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

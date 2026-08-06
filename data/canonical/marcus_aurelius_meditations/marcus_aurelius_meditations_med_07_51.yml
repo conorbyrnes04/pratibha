@@ -80,3 +80,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation misinterprets 'οὖρον' (ouron) as 'wind' instead of 'urine' or 'excrement',
+    which is the more common and fitting meaning in this context, referring to bodily waste that needs
+    to be expelled. The phrase 'πνέοντ̓ οὖρον' (pneont' ouron) is better understood as 'expelling urine'
+    or 'p

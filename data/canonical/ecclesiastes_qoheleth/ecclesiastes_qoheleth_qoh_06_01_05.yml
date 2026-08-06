@@ -96,3 +96,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: 'The translation of ''הֶבֶל'' as ''breath'' in 6:2 is a mistranslation in this context; it
+    should be ''futility'' or ''vanity''.; The translation of ''נַחַת לָזֶה מִזֶּה'' as ''it has more
+    rest than that man'' in 6:5 is an inversion of sense; it should be ''this one has more rest than that
+    one'' (referring to the '

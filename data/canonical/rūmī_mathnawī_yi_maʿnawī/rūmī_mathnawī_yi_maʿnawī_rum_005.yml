@@ -11,10 +11,11 @@ sanskrit_devanagari: 'آتش است این بانگِ نای و نیست باد 
 
   آتش عشق است کاندر نی فتاد /// جوشش عشق است کاندر میْ فتاد'
 sanskrit_iast: See Original.
-translation_literal: This cry of the reed is fire, not wind; whoever lacks this fire is nothing. It is love's fire that fell
-  into the reed; it is love's ferment that fell into the wine.
-commentary: 'The nay''s breath is love''s fire, not mere air. Existentially: check whether your speech carries heat or only
-  clever wind. The reed is the human spirit cut from the divine reed-bed; complaint is theology in the mode of music.
+translation_literal: This sound of the reed is fire, not wind; whoever does not have this fire, may he
+  not exist. It is love's fire that fell into the reed; it is love's ebullition that fell into the wine.
+commentary: 'The nay''s breath is love''s fire, not mere air. Existentially: check whether your speech
+  carries heat or only clever wind. The reed is the human spirit cut from the divine reed-bed; complaint
+  is theology in the mode of music.
 
 
   Key Terms
@@ -41,8 +42,8 @@ commentary: 'The nay''s breath is love''s fire, not mere air. Existentially: che
 
   *Divergence:* Milarepa''s songs are often instructional; the nay is primarily ontological lament.'
 insight: The nay's breath is love's fire, not mere air.
-practice: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel the cut from the bed.
-  Do not explain it — let the tone complain.
+practice: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel
+  the cut from the bed. Do not explain it — let the tone complain.
 upaya: ''
 themes:
 - breath
@@ -64,12 +65,13 @@ pratibha_layers:
   body: See Original.
 - kind: translation
   label: Pratibha Translation
-  body: This cry of the reed is fire, not wind; whoever lacks this fire is nothing. It is love's fire that fell into the reed;
-    it is love's ferment that fell into the wine.
+  body: This sound of the reed is fire, not wind; whoever does not have this fire, may he not exist. It
+    is love's fire that fell into the reed; it is love's ebullition that fell into the wine.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The nay''s breath is love''s fire, not mere air. Existentially: check whether your speech carries heat or only clever
-    wind. The reed is the human spirit cut from the divine reed-bed; complaint is theology in the mode of music.
+  body: 'The nay''s breath is love''s fire, not mere air. Existentially: check whether your speech carries
+    heat or only clever wind. The reed is the human spirit cut from the divine reed-bed; complaint is
+    theology in the mode of music.
 
 
     Key Terms
@@ -89,7 +91,8 @@ pratibha_layers:
 
     **Heart Sūtra (form/emptiness as path-song):** Both carry insight as more than proposition.
 
-    *Divergence:* The Heart Sūtra''s emptiness is marklessness; Rūmī''s cry is erotic longing for the Origin.
+    *Divergence:* The Heart Sūtra''s emptiness is marklessness; Rūmī''s cry is erotic longing for the
+    Origin.
 
 
     **Milarepa (song as vehicle):** Both use song to cross what argument cannot.
@@ -97,8 +100,8 @@ pratibha_layers:
     *Divergence:* Milarepa''s songs are often instructional; the nay is primarily ontological lament.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel the cut from the bed.
-    Do not explain it — let the tone complain.
+  body: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel the
+    cut from the bed. Do not explain it — let the tone complain.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -106,3 +109,9 @@ provenance:
   section: Ney-nāmeh 5
   original_id: RUM_005
   source_reference: Rūmī, *Mathnawī* I, opening (Ney-nāmeh), couplets ~5
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''نیست باد'' (nīst bād) in line 1 is mistranslated as ''is nothing''
+    — it should mean ''may he not be'' or ''let him not exist'' (a curse/negation of existence), not a
+    simple statement of nullity; '
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

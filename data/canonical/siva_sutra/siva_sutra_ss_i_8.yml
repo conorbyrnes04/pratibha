@@ -9,14 +9,15 @@ title: Knowledge belongs to the waking state.
 unit_type: sutra
 sanskrit_devanagari: ज्ञानं जाग्रत्
 sanskrit_iast: jñānaṁ jāgrat
-translation_literal: Knowledge belongs to the waking state.
-commentary: 'Ordinary knowing arises with orientation toward objects. In waking, consciousness extends outward, names, categorizes,
-  and stabilizes appearances. This is the domain of functional knowledge.
+translation_literal: Knowledge is the waking state.
+commentary: 'Ordinary knowing arises with orientation toward objects. In waking, consciousness extends
+  outward, names, categorizes, and stabilizes appearances. This is the domain of functional knowledge.
 
 
   The sūtra quietly limits its scope. What is most intimate is not grasped here.'
 insight: Ordinary knowing arises with orientation toward objects.
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
 upaya: ''
 themes:
 - consciousness
@@ -42,17 +43,18 @@ pratibha_layers:
   body: jñānaṁ jāgrat
 - kind: translation
   label: Pratibha Translation
-  body: Knowledge belongs to the waking state.
+  body: Knowledge is the waking state.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Ordinary knowing arises with orientation toward objects. In waking, consciousness extends outward, names, categorizes,
-    and stabilizes appearances. This is the domain of functional knowledge.
+  body: 'Ordinary knowing arises with orientation toward objects. In waking, consciousness extends outward,
+    names, categorizes, and stabilizes appearances. This is the domain of functional knowledge.
 
 
     The sūtra quietly limits its scope. What is most intimate is not grasped here.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -65,22 +67,23 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Mandukya Upanishad and Gaudapada Karika — Verse 10 · U — Dream Consciousness
-    resonance: 'Both texts organize knowledge through distinct states of consciousness (waking vs. dream), assigning each
-      state a specific epistemic character: the Siva Sutra locates ordinary object-oriented knowing in the waking state, while
-      the Mandukya assigns Taijasa (dream consciousness) its own intermediate epistemic status. Each state produces a different
-      quality or mode of knowing.'
-    divergence: The Siva Sutra treats waking-state knowledge as the baseline for ordinary knowing, while the Mandukya treats
-      dream consciousness as a distinct ontological and epistemic position within a four-fold hierarchy that ultimately transcends
-      all states.
+    resonance: 'Both texts organize knowledge through distinct states of consciousness (waking vs. dream),
+      assigning each state a specific epistemic character: the Siva Sutra locates ordinary object-oriented
+      knowing in the waking state, while the Mandukya assigns Taijasa (dream consciousness) its own intermediate
+      epistemic status. Each state produces a different quality or mode of knowing.'
+    divergence: The Siva Sutra treats waking-state knowledge as the baseline for ordinary knowing, while
+      the Mandukya treats dream consciousness as a distinct ontological and epistemic position within
+      a four-fold hierarchy that ultimately transcends all states.
     passage_id: mandukya_upanishad_and_gaudapada_karika.muk_013
   - citation: 'Bhagavad Gita — Field and Knower: The Anatomy of Liberation'
-    resonance: 'Both texts establish knowledge through a structural differentiation: the Siva Sutra anchors knowing in orientation
-      toward objects (the field of experience), while the Bhagavad Gita''s liberating discernment begins by observing the
-      field (body, mind, sensory process) as distinct from the knower. Both make the relationship between consciousness and
-      its object-domain constitutive of how knowledge operates.'
-    divergence: The Siva Sutra describes ordinary knowing as inherently object-oriented without judgment, whereas the Gita's
-      framework requires discernment to separate the knower from the field—implying that ordinary knowing conflates them and
-      liberation requires their differentiation.
+    resonance: 'Both texts establish knowledge through a structural differentiation: the Siva Sutra anchors
+      knowing in orientation toward objects (the field of experience), while the Bhagavad Gita''s liberating
+      discernment begins by observing the field (body, mind, sensory process) as distinct from the knower.
+      Both make the relationship between consciousness and its object-domain constitutive of how knowledge
+      operates.'
+    divergence: The Siva Sutra describes ordinary knowing as inherently object-oriented without judgment,
+      whereas the Gita's framework requires discernment to separate the knower from the field—implying
+      that ordinary knowing conflates them and liberation requires their differentiation.
     passage_id: bhagavad_gita.bg_13_02
   layer_provenance: generated_grounded
 appendixes: []
@@ -90,3 +93,9 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.8
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The translation inverts the intended meaning. The sutra indicates that
+    the waking state IS knowledge (or consists of knowledge), not that knowledge merely belongs to or
+    is a property of the waking sta'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

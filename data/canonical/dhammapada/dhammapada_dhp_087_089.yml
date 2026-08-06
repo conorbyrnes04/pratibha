@@ -96,3 +96,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 'viveke yattha dūramaṃ' as 'the seclusion in which delight is difficult
+    to find' is an inversion of the intended meaning. 'Dūramaṃ' here means 'hard to delight in' or 'difficult
+    to enjoy', referring to the nature of seclusion itself, not that delight is hard to find within it.
+    The

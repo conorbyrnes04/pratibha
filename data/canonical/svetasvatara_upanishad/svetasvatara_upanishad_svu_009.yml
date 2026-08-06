@@ -218,3 +218,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 2.8: ''trirunnataṃ'' means ''three parts raised/erect'' (torso, neck, head held upright),
+    not just ''aligned''; ''hṛdi'' means ''in the heart'' but ''indriyāṇi manasā saṃniveśya'' means ''having
+    placed/withdrawn the senses with the mind'' (into the heart), not just ''gathering senses and mind'';
+    Verse 2.9: ''k'

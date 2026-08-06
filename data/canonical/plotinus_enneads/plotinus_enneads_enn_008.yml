@@ -9,18 +9,16 @@ unit_type: verse
 section: V.3.5
 sanskrit_devanagari: ho nous kai to noēton hen
 sanskrit_iast: ''
-translation_literal: 'Intellect and the intelligible are one. For Intellect does not possess its objects as things external
-  to it: its knowing is not an acquisition, nor does it look outward. It is itself the beings it knows, and the beings are
-  present in it as living intelligible reality. Thus its act of intellection is identical with its being: it thinks itself,
-  and in thinking itself contains all that truly is.'
-commentary: 'Plotinus distinguishes noetic knowing from ordinary discursive thought. Discursive reason moves from premise
-  to conclusion and treats its objects as external; Intellect (nous) knows without interval, search, or representation. Its
-  objects are the Forms—the stable intelligible realities from which sensible things derive their order—and they are not stored
-  within Intellect as images or contents. They are its own articulated life. Hence the knower, knowing, and known are united,
-  though not collapsed into blank sameness: Intellect is internally multiple, a living unity of Forms contemplating one another
-  in itself. This is below the One, which transcends even the intelligible multiplicity of Intellect. For the soul, the claim
-  is practical as well as metaphysical: genuine self-knowledge is not accumulation of information but a turning inward and
-  upward toward the source from which intelligibility itself flows.
+translation_literal: Intellect and the intelligible are one
+commentary: 'Plotinus distinguishes noetic knowing from ordinary discursive thought. Discursive reason
+  moves from premise to conclusion and treats its objects as external; Intellect (nous) knows without
+  interval, search, or representation. Its objects are the Forms—the stable intelligible realities from
+  which sensible things derive their order—and they are not stored within Intellect as images or contents.
+  They are its own articulated life. Hence the knower, knowing, and known are united, though not collapsed
+  into blank sameness: Intellect is internally multiple, a living unity of Forms contemplating one another
+  in itself. This is below the One, which transcends even the intelligible multiplicity of Intellect.
+  For the soul, the claim is practical as well as metaphysical: genuine self-knowledge is not accumulation
+  of information but a turning inward and upward toward the source from which intelligibility itself flows.
 
 
   Key Terms
@@ -36,24 +34,32 @@ commentary: 'Plotinus distinguishes noetic knowing from ordinary discursive thou
   Cross-Tradition Resonances
 
 
-  **Aristotle, Metaphysics XII.9:**  Divergence: Plotinus develops this into a richly articulated realm of Forms within Intellect,
-  whereas Aristotle’s account is more compressed and does not present emanation from the One.
+  **Aristotle, Metaphysics XII.9:**  Divergence: Plotinus develops this into a richly articulated realm
+  of Forms within Intellect, whereas Aristotle’s account is more compressed and does not present emanation
+  from the One.
 
-  **Advaita Vedānta, Śaṅkara’s teaching on self-luminous consciousness:**  Divergence: Plotinus’s Nous remains a distinct
-  hypostasis containing intelligible multiplicity; Advaita ultimately emphasizes nondual Brahman rather than an eternal plurality
-  of Forms.
+  **Advaita Vedānta, Śaṅkara’s teaching on self-luminous consciousness:**  Divergence: Plotinus’s Nous
+  remains a distinct hypostasis containing intelligible multiplicity; Advaita ultimately emphasizes nondual
+  Brahman rather than an eternal plurality of Forms.
 
-  **Meister Eckhart, the sermon image of the eye and the wood:**  Divergence: Eckhart frames this unity through Christian
-  creation, grace, and the divine ground, not through Plotinian hypostases and emanation.'
-practice: 'Sit quietly for ten minutes. Let thoughts, memories, and sensory impressions be noticed as external objects. Then
-  ask: “What is the aware presence in which these appear?” Do not answer verbally; rest in the act of awareness itself, repeatedly
-  returning from objects to the knower.'
+  **Meister Eckhart, the sermon image of the eye and the wood:**  Divergence: Eckhart frames this unity
+  through Christian creation, grace, and the divine ground, not through Plotinian hypostases and emanation.'
+practice: 'Sit quietly for ten minutes. Let thoughts, memories, and sensory impressions be noticed as
+  external objects. Then ask: “What is the aware presence in which these appear?” Do not answer verbally;
+  rest in the act of awareness itself, repeatedly returning from objects to the knower.'
 themes: []
 tags: []
 provenance:
   collection: Plotinus Enneads
   source_confidence: medium
-  original_source: 'Plotinus Enneads: V.3.5; original per received text (model-supplied, PD-verification pending).'
-  english_source: Pratibha own rendering (2026).
+  original_source: 'Plotinus Enneads: V.3.5; original per received text (model-supplied, PD-verification
+    pending).'
+  english_source: Pratibha own rendering (2026). | corrected on independent cross-check with the living
+    scholarly translations (re-rendered from the original, not copied)
   verification: 'cross-model (Luna): correct'
   verification_note: The quoted transliteration accurately represents the Greek phrase in Enneads V.3.5.
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The original is only a title/heading ''Intellect and the intelligible are
+    one'' (7 words in Greek), but the translation provides an entire explanatory paragraph of multiple
+    sentences that do not exist i'

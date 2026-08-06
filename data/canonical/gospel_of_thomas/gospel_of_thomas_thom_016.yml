@@ -83,3 +83,6 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
     by public-domain scholarship, not derived from any copyrighted translation
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation omits the final clause of the logion, which is crucial for understanding
+    the full meaning of the passage.

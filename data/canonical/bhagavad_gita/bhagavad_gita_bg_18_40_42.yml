@@ -17,10 +17,11 @@ sanskrit_iast: 'na tadasti pṛthivyāṃ vā divi deveṣu vā punaḥ|sattva�
   brāhmaṇakṣatriyaviśāṃ śūdrāṇāṃ ca paraṃtapa|karmāṇi pravibhaktāni svabhāvaprabhavairguṇaiḥ
 
   śamo damastapaḥ śaucaṃ kṣāntirārjavameva ca|jñānaṃ vijñānamāstikyaṃ brahmakarma svabhāvajam'
-translation_literal: There is no being on earth or among the gods in heaven who is free from these three
-  guṇas born of nature. The actions of brāhmaṇas, kṣatriyas, vaiśyas, and of śūdras, O scorcher of foes,
-  are allotted by the guṇas arising from their own nature. Calm, restraint, austerity, purity, forbearance,
-  uprightness, knowledge, realized knowledge, and faith—are the natural-born action of a brāhmaṇa.
+translation_literal: There exists no being on earth, or again in heaven among the gods, that would be
+  free from these three guṇas born of prakṛti. The duties of brāhmaṇas, kṣatriyas, vaiśyas, and śūdras,
+  O scorcher of foes, are distributed according to the guṇas arising from their inherent nature. Serenity,
+  self-control, austerity, purity, patience, uprightness, knowledge, wisdom, and faith in the sacred—these
+  are the duties of a brāhmaṇa, born of his inherent nature.
 commentary: 'Universal bondage under guṇas sets up svabhāva duty: no earthly or heavenly being is free
   of the three. Varṇa-actions are pravibhakta by svabhāva-guṇas. Brāhmaṇa-karma is listed as śama-dama-tapas,
   purity, forbearance, uprightness, jñāna-vijñāna-āstikya. The contested modern difficulty is varṇa language.
@@ -77,10 +78,11 @@ pratibha_layers:
     śamo damastapaḥ śaucaṃ kṣāntirārjavameva ca|jñānaṃ vijñānamāstikyaṃ brahmakarma svabhāvajam'
 - kind: translation
   label: Pratibha Translation
-  body: There is no being on earth or among the gods in heaven who is free from these three guṇas born
-    of nature. The actions of brāhmaṇas, kṣatriyas, vaiśyas, and of śūdras, O scorcher of foes, are allotted
-    by the guṇas arising from their own nature. Calm, restraint, austerity, purity, forbearance, uprightness,
-    knowledge, realized knowledge, and faith—are the natural-born action of a brāhmaṇa.
+  body: There exists no being on earth, or again in heaven among the gods, that would be free from these
+    three guṇas born of prakṛti. The duties of brāhmaṇas, kṣatriyas, vaiśyas, and śūdras, O scorcher of
+    foes, are distributed according to the guṇas arising from their inherent nature. Serenity, self-control,
+    austerity, purity, patience, uprightness, knowledge, wisdom, and faith in the sacred—these are the
+    duties of a brāhmaṇa, born of his inherent nature.
 - kind: commentary
   label: Pratibha Commentary
   body: 'Universal bondage under guṇas sets up svabhāva duty: no earthly or heavenly being is free of
@@ -139,3 +141,10 @@ provenance:
   section: chapter_18
   original_id: BG_18_40_42
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''yadebhiḥ syātitrabhirguṇaiḥ'' is mistranslated as ''who is
+    free from these three guṇas'' when it should mean ''who would be free from these three guṇas'' - the
+    conditional/hypothetical sense is'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

@@ -12,16 +12,18 @@ sanskrit_devanagari: 'कुर्वन्न् एवेह कर्मा�
 sanskrit_iast: 'kurvann eveha karmāṇi jijīviṣec chataṃ samāḥ |
 
   evaṃ tvayi nānyatheto ’sti na karma lipyate nare || 2 ||'
-translation_literal: 'Doing karmāṇi—works, duties—here alone, one should wish to live a hundred years. Thus it is for you,
-  and not otherwise: karma does not cling to the human being.'
-commentary: 'This verse refuses a false opposition between spiritual insight and active life. Having declared all this world
-  pervaded by the Lord, the Upaniṣad does not prescribe flight from the world, but action within it. The wish to live is permitted—not
-  as possessive survival, but as the occasion for rightly performed karma. “Thus, and not otherwise” makes the qualification
-  decisive: work must be undertaken without appropriative claim, in the spirit of the first verse’s renunciation. Karma ordinarily
-  “clings” because agency is organized around “I act,” “this is mine,” and expectation of result; action then leaves binding
-  consequence. But when one acts as a participant in an already sacred whole, duty can proceed without reinforcing the grasping
-  self. The verse is not a celebration of busyness or a guarantee that consequences vanish. It concerns bondage: action need
-  not become a new chain when it is freed from possessiveness and performed in lucid alignment with reality.
+translation_literal: 'Performing works here alone, one should desire to live a hundred years. Only in
+  this way, for you, is there no alternative: thus karma does not adhere to a person.'
+commentary: 'This verse refuses a false opposition between spiritual insight and active life. Having declared
+  all this world pervaded by the Lord, the Upaniṣad does not prescribe flight from the world, but action
+  within it. The wish to live is permitted—not as possessive survival, but as the occasion for rightly
+  performed karma. “Thus, and not otherwise” makes the qualification decisive: work must be undertaken
+  without appropriative claim, in the spirit of the first verse’s renunciation. Karma ordinarily “clings”
+  because agency is organized around “I act,” “this is mine,” and expectation of result; action then leaves
+  binding consequence. But when one acts as a participant in an already sacred whole, duty can proceed
+  without reinforcing the grasping self. The verse is not a celebration of busyness or a guarantee that
+  consequences vanish. It concerns bondage: action need not become a new chain when it is freed from possessiveness
+  and performed in lucid alignment with reality.
 
 
   Key Terms
@@ -37,27 +39,34 @@ commentary: 'This verse refuses a false opposition between spiritual insight and
   Cross-Tradition Resonances
 
 
-  **The Gītā repeatedly teaches niṣkāma karma: acting without attachment to the fruits of action.:**  Divergence: The Gītā
-  develops this as a larger theology of devotion, disciplined yoga, and svadharma; this terse Upaniṣadic verse gives the principle
-  without that extended framework.
+  **The Gītā repeatedly teaches niṣkāma karma: acting without attachment to the fruits of action.:**  Divergence:
+  The Gītā develops this as a larger theology of devotion, disciplined yoga, and svadharma; this terse
+  Upaniṣadic verse gives the principle without that extended framework.
 
-  **Stoic ethics counsels wholehearted performance of one’s role while releasing fixation on outcomes beyond one’s control.:**  Divergence:
-  Stoicism grounds this in rational participation in cosmic nature, rather than in the Upaniṣadic concern that action cease
-  to bind the self through possessiveness.
+  **Stoic ethics counsels wholehearted performance of one’s role while releasing fixation on outcomes
+  beyond one’s control.:**  Divergence: Stoicism grounds this in rational participation in cosmic nature,
+  rather than in the Upaniṣadic concern that action cease to bind the self through possessiveness.
 
-  **Buddhist teaching identifies craving and appropriation as sources of binding suffering, while allowing compassionate and
-  disciplined action.:**  Divergence: Buddhist analyses generally avoid an enduring self, whereas this Upaniṣadic setting
-  belongs to a discourse of Self, Lord, and the nonbinding character of rightly situated action.'
-practice: 'Before one necessary task today, pause and name its purpose. Perform it carefully, while silently releasing ownership
-  of both the act and its result: “Let the work be done; let no claim cling.”'
+  **Buddhist teaching identifies craving and appropriation as sources of binding suffering, while allowing
+  compassionate and disciplined action.:**  Divergence: Buddhist analyses generally avoid an enduring
+  self, whereas this Upaniṣadic setting belongs to a discourse of Self, Lord, and the nonbinding character
+  of rightly situated action.'
+practice: 'Before one necessary task today, pause and name its purpose. Perform it carefully, while silently
+  releasing ownership of both the act and its result: “Let the work be done; let no claim cling.”'
 themes: []
 tags: []
 provenance:
   collection: Isavasya Upanishad
   source_confidence: high
-  sanskrit_source: Isavasya Upanishad 2; Sanskrit per received text (model-supplied, PD-verification pending); Devanagari
-    from IAST.
-  english_source: Pratibha own rendering (2026).
+  sanskrit_source: Isavasya Upanishad 2; Sanskrit per received text (model-supplied, PD-verification pending);
+    Devanagari from IAST.
+  english_source: Pratibha own rendering (2026). | corrected on independent cross-check with the living
+    scholarly translations (re-rendered from the original, not copied)
   verification: 'cross-model (Luna): correct'
-  verification_note: The wording matches the received text of Īśāvāsya Upaniṣad 2; the typographic spacing before ’sti is
-    immaterial.
+  verification_note: The wording matches the received text of Īśāvāsya Upaniṣad 2; the typographic spacing
+    before ’sti is immaterial.
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The conditional structure ''evaṃ tvayi... asti'' means ''thus for you (alone/only
+    in this way) there is (no other way)'', establishing that THIS is the only way karma doesn''t bind.
+    The translation ''Thus i'

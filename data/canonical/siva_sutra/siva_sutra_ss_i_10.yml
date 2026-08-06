@@ -10,10 +10,11 @@ unit_type: sutra
 sanskrit_devanagari: अविवेको मायासौषुप्तम्
 sanskrit_iast: aviveko māyā-sauṣuptam
 translation_literal: Non-discrimination is the deep sleep of illusion.
-commentary: Deep sleep here is not physiological rest but a **collapse of discernment**. Awareness remains, but unrecognized.
-  Māyā operates most effectively where consciousness forgets itself entirely.
+commentary: Deep sleep here is not physiological rest but a **collapse of discernment**. Awareness remains,
+  but unrecognized. Māyā operates most effectively where consciousness forgets itself entirely.
 insight: Deep sleep here is not physiological rest but a **collapse of discernment**.
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
 upaya: ''
 themes:
 - awareness
@@ -46,11 +47,12 @@ pratibha_layers:
   body: Non-discrimination is the deep sleep of illusion.
 - kind: commentary
   label: Pratibha Commentary
-  body: Deep sleep here is not physiological rest but a **collapse of discernment**. Awareness remains, but unrecognized.
-    Māyā operates most effectively where consciousness forgets itself entirely.
+  body: Deep sleep here is not physiological rest but a **collapse of discernment**. Awareness remains,
+    but unrecognized. Māyā operates most effectively where consciousness forgets itself entirely.
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -67,27 +69,30 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Yoga Spandakarika — Second Flow
-    resonance: 'Both texts identify a collapse of discernment as the mechanism of bondage: the Siva Sutra names non-discrimination
-      (aviveka) as deep sleep, while Spandakarika describes how limited views cause people to become ''lost'' when intuition
-      dissociates from the profound source—both locate ignorance not in external illusion but in a failure of discriminative
-      awareness.'
-    divergence: The Siva Sutra frames this as a static condition (sleep of illusion), whereas Spandakarika emphasizes dynamic
-      entanglement in the 'whirlwind of transmigration,' treating ignorance as active disorientation rather than mere dormancy.
+    resonance: 'Both texts identify a collapse of discernment as the mechanism of bondage: the Siva Sutra
+      names non-discrimination (aviveka) as deep sleep, while Spandakarika describes how limited views
+      cause people to become ''lost'' when intuition dissociates from the profound source—both locate
+      ignorance not in external illusion but in a failure of discriminative awareness.'
+    divergence: The Siva Sutra frames this as a static condition (sleep of illusion), whereas Spandakarika
+      emphasizes dynamic entanglement in the 'whirlwind of transmigration,' treating ignorance as active
+      disorientation rather than mere dormancy.
     passage_id: yoga_spandakarika.sp_20
   - citation: Svetasvatara Upanishad — Fluttering in the Brahma-Wheel
-    resonance: 'Both passages describe a fundamental misidentification rooted in non-discrimination: the Siva Sutra''s aviveka
-      parallels the swan-self taking itself as separate from the Impeller—both name the core error as a failure to recognize
-      non-dual reality, mistaking the limited for the universal.'
-    divergence: The Svetasvatara locates the error in spatial/relational confusion (self versus Impeller), while the Siva
-      Sutra frames it as a collapse of discernment itself, a cognitive-ontological sleep rather than a perceptual mistake.
+    resonance: 'Both passages describe a fundamental misidentification rooted in non-discrimination: the
+      Siva Sutra''s aviveka parallels the swan-self taking itself as separate from the Impeller—both name
+      the core error as a failure to recognize non-dual reality, mistaking the limited for the universal.'
+    divergence: The Svetasvatara locates the error in spatial/relational confusion (self versus Impeller),
+      while the Siva Sutra frames it as a collapse of discernment itself, a cognitive-ontological sleep
+      rather than a perceptual mistake.
     passage_id: svetasvatara_upanishad.svu_006
   - citation: Pratyabhijnahrdayam — Sutra 3
-    resonance: 'Both texts trace multiplicity and fragmentation to a prior discriminative act: the Siva Sutra''s non-discrimination
-      (aviveka) as the ground of illusion structurally mirrors Pratyabhijnahrdayam''s claim that the universe''s multiplicity
-      arises from differentiation of subjects and objects—both identify discrimination (or its absence) as the generative
-      principle.'
-    divergence: Pratyabhijnahrdayam treats differentiation as a positive creative power (Śakti), while the Siva Sutra treats
-      non-discrimination as a pathological collapse, making the same structural move but with opposite metaphysical valence.
+    resonance: 'Both texts trace multiplicity and fragmentation to a prior discriminative act: the Siva
+      Sutra''s non-discrimination (aviveka) as the ground of illusion structurally mirrors Pratyabhijnahrdayam''s
+      claim that the universe''s multiplicity arises from differentiation of subjects and objects—both
+      identify discrimination (or its absence) as the generative principle.'
+    divergence: Pratyabhijnahrdayam treats differentiation as a positive creative power (Śakti), while
+      the Siva Sutra treats non-discrimination as a pathological collapse, making the same structural
+      move but with opposite metaphysical valence.
     passage_id: pratyabhijnahrdayam.phr_003
   layer_provenance: generated_grounded
 appendixes: []
@@ -97,3 +102,4 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.10
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'

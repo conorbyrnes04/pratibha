@@ -238,3 +238,8 @@ provenance:
   section: chapter_11
   original_id: BG_11_19_21
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation omits the entire third stanza of the original passage.; The new translation
+    incorrectly translates 'dīptahutāśavaktram' as 'blazing fire-mouth'. While 'dīpta' means blazing and
+    'hutāśa' means fire, 'vaktram' refers to a face or mouth, but in this context, it's more accurately
+    'bl

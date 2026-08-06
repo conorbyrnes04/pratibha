@@ -17,19 +17,12 @@ sanskrit_devanagari: '(4:11) גַּ֛ם אִם־יִשְׁכְּב֥וּ שְׁ�
 
   (4:15) רָאִ֨יתִי֙ אֶת־כָּל־הַ֣חַיִּ֔ים הַֽמְהַלְּכִ֖ים תַּ֣חַת הַשָּׁ֑מֶשׁ עִ֚ם הַיֶּ֣לֶד הַשֵּׁנִ֔י
   אֲשֶׁ֥ר יַעֲמֹ֖ד תַּחְתָּֽיו׃'
-translation_literal: '(11) Again, if two lie down together, they become warm; but how can one alone keep
-  warm?
-
-  (12) Though someone may overpower one person, two can stand against him; and a threefold cord is not
-  quickly torn apart.
-
-  (13) Better a poor but wise youth than an old and foolish king who no longer knows how to take warning.
-
-  (14) For from a house of prisoners he may go forth to reign, though even in his kingship he was born
-  poor.
-
-  (15) I saw all the living who walk beneath the sun siding with the second youth, who would rise in his
-  place.'
+translation_literal: (11) Again, if two lie down together, they become warm; but how can one alone keep
+  warm? (12) Though someone may overpower one person, two can stand against him; and a threefold cord
+  is not quickly torn apart. (13) Better a poor but wise youth than an old and foolish king who no longer
+  knows how to take warning. (14) For from the house of prisoners he came out to reign, even though he
+  was born poor in his kingdom. (15) I saw all the living who walk beneath the sun with the second youth,
+  who would stand in his place.
 commentary: 'The saying begins with bodily need: warmth, defense, and the vulnerability of the solitary
   person. Two people lying together can share warmth; two can resist an assailant. The image of the three-stranded
   cord extends this logic: relationship is not merely pleasant but strengthening. The phrase לֹא בִמְהֵרָה
@@ -94,5 +87,11 @@ provenance:
     Hebrew)
   verification: 'translation cross-checked (Luna): faithful; original from WLC Hebrew'
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
-    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
+    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation | corrected
+    on independent cross-check with the living scholarly translations (re-rendered from the original,
+    not copied)
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 14: ''though even in his kingship he was born poor'' mistranslates
+    the Hebrew. The phrase ''כִּי גַּם בְּמַלְכוּתוֹ נוֹלַד רָשׁ'' means ''for even in his (the old king''s)
+    kingdom he (the youth) was b'

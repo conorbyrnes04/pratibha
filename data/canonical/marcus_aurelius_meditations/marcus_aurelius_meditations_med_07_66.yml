@@ -13,15 +13,15 @@ sanskrit_devanagari: Πόθεν ἴσμεν, εἰ μὴ Τηλαύγης Σωκ
   εἶχε Σωκράτης καὶ εἰ ἐδύνατο ἀρκεῖσθαι τῷ δίκαιος εἷναι τὰ πρὸς ἀνθρώπους καὶ ὅσιος τὰ πρὸς θεούς, μήτε
   εἰκῇ πρὸς τὴν κακίαν ἀγανακτῶν μηδὲ μὴν δουλεύων τινὸς ἀγνοίᾳ, μήτε τῶν ἀπονεμομένων ἐκ τοῦ ὅλου ὡς
   ξένον τι δεχόμενος ἢ ὡς ἀφόρητον ὑπομένων, μήτε τοῖς τοῦ σαρκιδίου πάθεσιν ἐμπαρέχων συμπαθῆ τὸν νοῦν·
-translation_literal: 'How do we know whether Teleauges was not superior to Socrates in disposition? It
-  is not enough that Socrates died with greater renown, argued more skilfully with the sophists, spent
-  the night more hardily in the frost, and seemed more nobly to refuse when ordered to bring in the Salaminian;
-  or that he strutted in the streets—though that is precisely the point at which one might most pause,
-  if it were true. Rather, one must examine what sort of soul Socrates had: whether he could be content
-  to be just in his dealings with human beings and reverent in his dealings with the gods; whether he
-  was neither needlessly angered by vice nor enslaved by ignorance of anything; whether he received what
-  is apportioned from the whole neither as something alien nor endured it as intolerable; and whether
-  he did not yield his mind up to sympathy with the sufferings of his little flesh.'
+translation_literal: 'How do we know whether Teleauges was not superior to Socrates in character? For
+  it is not sufficient that Socrates died more gloriously, conversed more skillfully with the sophists,
+  endured the cold night more hardily on the rock, and appeared more nobly to resist when ordered to arrest
+  the Salaminian; or that he swaggered in the streets—about which one might especially raise questions,
+  if it were true. Rather, one must consider what kind of soul Socrates had: whether he was able to be
+  satisfied with being just toward human beings and pious toward the gods; neither being vexed at wickedness
+  without reason nor being enslaved to anyone''s ignorance; neither receiving what is allotted from the
+  whole as something foreign nor enduring it as unbearable; and not making his mind susceptible to the
+  afflictions of his poor flesh.'
 commentary: 'Marcus begins by unsettling the prestige of Socrates. The question is not whether Socrates
   was more conspicuous than Teleauges, but whether his διάθεσις, his settled inner disposition, was better.
   Famous death, brilliant argument, physical toughness, and political courage can all be visible evidence;
@@ -94,5 +94,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''μηδὲ μὴν δουλεύων τινὸς ἀγνοίᾳ'' is mistranslated as ''nor
+    enslaved by ignorance of anything'' when it means ''nor serving/enslaved to anyone''s ignorance''
+    (i.e., not subservient to the ignoran'

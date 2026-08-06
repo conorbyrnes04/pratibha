@@ -77,3 +77,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
     by public-domain scholarship, not derived from any copyrighted translation
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: error'
+  qa_issues: Second clause incorrectly translates 'ⲟⲩⲙⲁⲕⲁⲣⲓⲟⲥ' (blessed) as 'cursed' - the Coptic text
+    does not contain a negation or word meaning 'cursed'; The phrase 'ⲁⲩⲱ ϥⲃⲏⲧ' (and it is abominable/wretched)
+    modifies the second scenario but is rendered as 'cursed' which changes the grammatical structure;
+    Fina

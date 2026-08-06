@@ -9,10 +9,10 @@ unit_type: chapter
 sanskrit_devanagari: ( Ἐγὼ δὲ τούτῳ δίκαιον ἂν λόγον ἀντείποιμι, ὅτι οὐ καλῶς λέγεις, ὦ ἄνθρωπε, εἰ οἴει
   δεῖν κίνδυνον ὑπολογίζεσθαι τοῦ ζῆν ἢ τεθνάναι ἄνδρα, ὅτου τι καὶ σμικρὸν ὄφελος, ἀλλ̓ οὐκ ἐκεῖνο μόνον
   σκοπεῖν, ὅταν πράττῃ, πότερον δίκαια ἢ ἄδικα πράττει καὶ ἀνδρὸς ἀγαθοῦ ἔργα ἢ κακοῦ.)
-translation_literal: 'But to this man I would make a just reply: “You speak poorly, my friend, if you
-  suppose that a man for whom there is even some small benefit should reckon the danger of living or dying,
-  instead of considering this alone whenever he acts: whether what he does is just or unjust, and the
-  work of a good man or a bad one.”'
+translation_literal: 'But to this man I would make a just reply: ''You speak poorly, my friend, if you
+  think that a man who is of any worth at all should calculate the risk of living or dying, rather than
+  looking to this alone when he acts: whether he does what is just or unjust, and whether his deeds are
+  those of a good man or a bad one.'''
 commentary: 'The passage rejects a familiar kind of deliberation: calculating whether an action will preserve
   one’s life or secure some advantage. Marcus frames the correction as a δίκαιον λόγον, a “just argument,”
   and its force lies in redirecting attention. Even a σμικρὸν ὄφελος, a small gain, is not the proper
@@ -81,5 +81,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''ὅτου τι καὶ σμικρὸν ὄφελος'' means ''a man who is of any worth
+    at all'' or ''a man of even small worth/value'', not ''a man for whom there is even some small benefit''.
+    The genitive construction '

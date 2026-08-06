@@ -104,3 +104,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 345: ''sārattarattā'' means ''deeply attached/infatuated'' not ''longing delight''
+    - the sense of being染色/stained by attachment is weakened; Verse 345: ''yā apekhā'' (which is expectation/longing)
+    is treated as part of the description rather than being the actual fetter itself; Verse 347: ''makkaṭako
+    v'

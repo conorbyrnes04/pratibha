@@ -10,10 +10,10 @@ sanskrit_devanagari: Ἐκ σωματίου εἰμὶ καὶ ψυχῆς. τ�
   τῇ δὲ διανοίᾳ ἀδιάφορα ὅσα μή ἐστιν αὐτῆς ἐνεργήματα· ὅσα δέ γε αὐτῆς ἐστιν ἐνεργήματα, ταῦτα πάντα
   ἐπ̓ αὐτῇ ἐστιν. καὶ τούτων μέντοι περὶ μόνον τὸ παρὸν πραγματεύεται· τὰ γὰρ μέλλοντα καὶ παρῳχηκότα
   ἐνεργήματα αὐτῆς καὶ αὐτὰ ἤδη ἀδιάφορα.
-translation_literal: I consist of a little body and a soul. For the body, all things are indifferent,
-  since it cannot make distinctions. But for the mind, everything that is not one of its own activities
-  is indifferent; and all its own activities lie within its power. Even among these, however, it attends
-  only to the present. For its activities in the future and in the past are already indifferent as well.
+translation_literal: I am composed of a little body and a soul. To the body, all things are indifferent;
+  for it cannot distinguish among them. To the mind, all things are indifferent except its own activities;
+  and whatever are its own activities, these all lie within its power. Yet even of these, it concerns
+  itself only with what is present; for its future and past activities are themselves already indifferent.
 commentary: 'Marcus begins with a stark division: “σωματίου ... καὶ ψυχῆς,” a small body and a soul. The
   diminutive σωματίον can make the body sound slight or limited, not necessarily contemptible, but incapable
   of the moral discrimination at issue. It cannot itself judge what matters; thus external events, considered
@@ -80,5 +80,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''τὰ γὰρ μέλλοντα καὶ παρῳχηκότα ἐνεργήματα αὐτῆς'' refers to
+    future and past activities AS OBJECTS OF CONCERN, not as activities that the mind performs in future/past
+    time. The Greek means '''

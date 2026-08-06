@@ -16,18 +16,18 @@ sanskrit_devanagari: Τρία ἐστὶν ἐξ ὧν συνέστηκας· σ
   οἷος ὁ Ἐμπεδόκλειος σφαῖρος κυκλοτερὴς μονίῃ περιηγέι γαίων, μόνον τε ζῆν ἐκμελετήσῃς ὃ ζῇς, τουτέστι
   τὸ παρόν· δυνήσῃ τό γε μέχρι τοῦ ἀποθανεῖν ὑπολειπόμενον ἀταράκτως καὶ εὐμενῶς καὶ ἵλεως τῷ σαυτοῦ δαίμονι
   διαβιῶναι.
-translation_literal: 'Three things make you up: a little body, a little breath, and mind. Of these, the
-  other two are yours only in the sense that they require your care; the third alone is properly your
-  own. If you separate from yourself—that is, from your own thinking—what others do or say, what you yourself
-  have done or said, what troubles you as still to come, whatever is added without your choice from the
-  body surrounding you or the breath joined to it, and whatever the outward-whirling vortex sets in motion;
-  if you let the power of thought stand apart from these entangled things, clean and free, living by itself,
-  doing what is just, willing what happens, and speaking what is true—if, I say, you detach from this
-  governing faculty the things fastened to it by passion, along with what lies ahead in time or has already
-  passed; if you make yourself like Empedocles’ sphere, rounded and rejoicing in its solitary wholeness,
-  and train yourself to live only the life you are living—that is, the present—then you will be able to
-  spend what remains until death without agitation, with kindness, and in peace with the divinity within
-  you.'
+translation_literal: 'Three things compose you: a little body, a little breath, and mind. Of these, the
+  first two are yours only insofar as you must care for them; the third alone is truly your own. If you
+  separate from yourself—that is, from your thinking faculty—whatever others do or say, whatever you yourself
+  have done or said, whatever future things disturb you, whatever belongs involuntarily to the body wrapped
+  around you or to the breath naturally joined with it, and whatever the external swirling vortex spins
+  about—so that the intellectual power, lifted free from the things bound together by fate and made pure,
+  may live independent and self-sufficient, doing what is just, accepting what befalls, and speaking what
+  is true; if you separate, I say, from this governing part the things attached to it through emotional
+  involvement, and things beyond in time or already past, and make yourself like Empedocles'' sphere,
+  ''rounded, rejoicing in its circular solitude,'' and practice living only what you are living, namely
+  the present—then you will be able to pass through what remains until death untroubled, benevolently,
+  and at peace with your own guiding spirit.'
 commentary: 'Marcus begins with a deliberately diminishing description of the human composite: σωμάτιον
   and πνευμάτιον, “little body” and “little breath,” stand beside νοῦς, mind. Body and vital breath deserve
   care, but they are not, in the fullest sense, the self’s possession. The νοῦς alone is κυρίως σόν, properly
@@ -101,5 +101,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): loose; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''τῶν συνειμαρμένων ἐξῃρημένην'' is mistranslated as ''stand
+    apart from these entangled things'' when it means ''lifted out/freed from the things bound together
+    by fate''; The structure breaks th'

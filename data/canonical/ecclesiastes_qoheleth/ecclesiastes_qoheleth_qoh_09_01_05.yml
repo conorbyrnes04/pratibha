@@ -22,27 +22,27 @@ sanskrit_devanagari: '(9:1) כִּ֣י אֶת־כָּל־זֶ֞ה נָתַ֤תּ
 
   (9:5) כִּ֧י הַֽחַיִּ֛ים יוֹדְעִ֖ים שֶׁיָּמֻ֑תוּ וְהַמֵּתִ֞ים אֵינָ֧ם יוֹדְעִ֣ים מְא֗וּמָה וְאֵֽין־ע֤וֹד
   לָהֶם֙ שָׂכָ֔ר כִּ֥י נִשְׁכַּ֖ח זִכְרָֽם׃'
-translation_literal: 'For I laid all this upon my heart, to examine all of it: the righteous, the wise,
-  and their deeds are in the hand of God. Whether love or hatred, no one knows; everything lies before
-  them.
+translation_literal: 'For I have taken all this to heart and examined all this: that the righteous and
+  the wise and their works are in the hand of God. Whether it be love or hatred, no one knows; all lies
+  before them.
 
 
-  All is as it is for all: one happening comes to the righteous and the wicked, to the good and the clean
-  and the unclean, to the one who offers sacrifice and to the one who does not offer sacrifice. As with
-  the good, so with the sinner; as with one who swears, so with one who fears an oath.
+  Everything is the same for everyone: the same fate befalls the righteous and the wicked, the good and
+  the clean and the unclean, the one who sacrifices and the one who does not sacrifice. As it is with
+  the good, so with the sinner; as with the one who takes an oath, so with the one who fears to take an
+  oath.
 
 
-  This is an evil in all that is done beneath the sun: one happening comes to everyone. Moreover, the
-  heart of humankind is full of evil, and madness is in their hearts during their lives; afterward, they
-  go to the dead.
+  This is the evil in all that happens under the sun: that the same fate comes to all. Moreover, the hearts
+  of people are full of evil, and madness is in their hearts while they live, and afterward they join
+  the dead.
 
 
-  Yet for whoever is joined to all the living, there is confidence; for a living dog is better than a
-  dead lion.
+  For whoever is among the living has hope, for even a living dog is better than a dead lion.
 
 
-  For the living know that they will die, but the dead know nothing at all; they have no further reward,
-  because even their remembrance has been forgotten.'
+  For the living know that they will die, but the dead know nothing; they have no more reward, for the
+  memory of them is forgotten.'
 commentary: 'Qoheleth begins with disciplined reflection: he has placed the matter “upon [his] heart”
   in order to examine it. His conclusion is not that God has abandoned the righteous and wise; on the
   contrary, they and their deeds remain “in the hand of God.” Yet that hand cannot be read off from visible
@@ -111,5 +111,11 @@ provenance:
     Hebrew)
   verification: 'translation cross-checked (Luna): unknown; original from WLC Hebrew'
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
-    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
+    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation | corrected
+    on independent cross-check with the living scholarly translations (re-rendered from the original,
+    not copied)
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 9:4 - ''יבחר'' (yibbaḥer/yəḇuḥar) means ''is chosen/joined'' but
+    the ketiv/qere issue affects translation. The phrase ''כִּי־מִי אֲשֶׁר יבחר'' should be rendered as
+    ''For whoever is chosen/joined'' but '

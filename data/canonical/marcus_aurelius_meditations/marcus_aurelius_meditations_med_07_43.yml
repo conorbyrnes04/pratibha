@@ -7,7 +7,7 @@ unit_label: No Echo of the Lament
 title: No Echo of the Lament
 unit_type: chapter
 sanskrit_devanagari: Μὴ συνεπιθρηνεῖν, μὴ σφύζειν.
-translation_literal: Do not join in the lament; do not tremble within.
+translation_literal: Do not join in lamenting; do not be inwardly agitated.
 commentary: 'The two brief prohibitions are clipped and physical. Μὴ συνεπιθρηνεῖν does not forbid all
   sorrow; it tells Marcus not to add his voice to a shared wailing—to be swept into another person’s grief
   as an accomplice in it. The prefix συν- marks participation: do not mourn along with the crowd merely
@@ -69,5 +69,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): σφύζειν means ''to throb/pulsate/be agitated'' not ''tremble within'' -
+    the verb refers to physical throbbing or mental agitation, and the standard translations render this
+    as ''flutter'' or ''be in turmoil'''

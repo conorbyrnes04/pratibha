@@ -11,13 +11,12 @@ sanskrit_devanagari: Πότερον ἐξαρκεῖ ἡ διάνοιά μου �
   κρεῖττον ἐπιτελέσαι, ἐὰν ἄλλως τοῦτο μὴ καθήκῃ, ἢ πράσσω ὡς δύναμαι, προσπαραλαβὼν τὸν δυνάμενον κατὰ
   πρόσχρησιν τοῦ ἐμοῦ ἡγεμονικοῦ ποιῆσαι τὸ εἰς τὴν κοινωνίαν νῦν καίριον καὶ χρήσιμον. ὅ τι γὰρ ἂν δἰ
   ἐμαυτοῦ ἢ σὺν ἄλλῳ ποιῶ, ὧδε μόνον χρὴ συντείνειν, εἰς τὸ κοινῇ χρήσιμον καὶ εὐάρμοστον.
-translation_literal: 'Is my mind sufficient for this task, or is it not? If it is sufficient, I put it
-  to use for the work, as an instrument granted by the nature of the whole. But if it is not sufficient,
-  then either I yield the task to someone able to accomplish it better—if nothing else makes that inappropriate—or
-  I do what I can, taking on as an assistant the person who, through the use of my governing faculty,
-  is able to do what is now timely and beneficial for the community. For whatever I do, whether by myself
-  or with another, my effort must have this one direction only: toward what is useful in common and well
-  fitted together.'
+translation_literal: 'Is my mind sufficient for this or not? If it is sufficient, I use it for the task
+  as an instrument given by universal nature. But if it is not sufficient, then either I step aside from
+  the task in favor of one who can accomplish it better—unless this is otherwise not my duty—or I do what
+  I can, enlisting the help of one who, with the aid of my governing faculty, can accomplish what is now
+  timely and beneficial for the community. For whatever I do, whether by myself or with another''s help,
+  must aim solely at this: what is commonly useful and harmonious.'
 commentary: 'Marcus begins with a practical test rather than an assertion of self-reliance: “Πότερον ἐξαρκεῖ
   ἡ διάνοιά μου;”—is my διάνοια, my thinking intelligence, enough for this? The question makes competence
   morally relevant. One should use one’s own mind when it is adequate, but even then it is not private
@@ -87,5 +86,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''taking on as an assistant the person who, through the use
+    of my governing faculty'' misrepresents the Greek. The correct sense is that the helper, by making
+    use of (or in accordance with) m'

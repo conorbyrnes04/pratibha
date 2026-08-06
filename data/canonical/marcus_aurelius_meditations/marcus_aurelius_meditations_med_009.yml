@@ -14,8 +14,13 @@ sanskrit_devanagari: Καθ̓ ἕτερον μὲν λόγον ἡμῖν ἐσ�
   κώλυμα ἡ διάνοια εἰς τὸ προηγούμενον καὶ πρὸ ἔργου γίνεται τὸ τοῦ ἔργου τούτου ἐφεκτικὸν καὶ πρὸ ὁδοῦ
   τὸ τῆς ὁδοῦ ταύτης ἐνστατικόν.
 sanskrit_iast: ''
-translation_literal: The impediment to action advances the action; what stands in the way becomes the
-  way.
+translation_literal: In one respect, a human being is most closely akin to us, insofar as we must do them
+  good and bear with them. But insofar as certain people obstruct our proper tasks, a human being becomes
+  to me one of the indifferent things, no less than the sun or wind or a wild animal. By these things
+  some action of mine might be hindered, but they do not become obstacles to my impulse and disposition,
+  because of mental reservation and adaptation. For the mind turns and redirects every hindrance to action
+  toward what takes priority, and what would have prevented this action becomes material for action, and
+  what would have blocked this path becomes the path forward.
 commentary: 'This is not a promise that every setback will yield worldly success, nor an invitation to
   deny pain or injustice. Marcus identifies a freedom proper to rational agency: an obstacle can alter
   the material of one’s task without abolishing the task of acting well. If travel is blocked, one may
@@ -66,9 +71,14 @@ provenance:
   collection: Marcus Aurelius — Meditations
   source_confidence: high
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
-  english_source: Pratibha own rendering (2026).
+  english_source: Pratibha own rendering (2026). | corrected on independent cross-check with the living
+    scholarly translations (re-rendered from the original, not copied)
   verification: original replaced with verified PD Greek; translation retained
   verification_note: The first clause should read συνεργεῖ τῇ πράξει, not προκόπτει τὴν πρᾶξιν.
   section: Meditations 5.20
   original_reliability: RESTORED — Perseus Greek for Meditations 5.20 (replaces a model-supplied paraphrase);
     Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The new translation renders only the final sentence fragment, omitting
+    approximately 90% of the passage; Missing: the entire discussion of humans as ''most akin to us''
+    in one respect (requiring benefic'

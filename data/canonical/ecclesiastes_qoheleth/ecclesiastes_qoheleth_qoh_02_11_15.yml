@@ -108,3 +108,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 15: ''to such excess'' adds an interpretive nuance not clearly present in ''אָז יוֹתֵר''
+    which more straightforwardly means ''then more'' or ''then excessively/overmuch'' - the phrase is
+    better rendered as ''why then was I so much wiser'' or ''why have I been wiser then, excessively''
+    without the ''to such'

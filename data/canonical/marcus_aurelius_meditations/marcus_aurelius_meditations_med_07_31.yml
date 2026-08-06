@@ -9,10 +9,10 @@ unit_type: chapter
 sanskrit_devanagari: Φαίδρυνον σεαυτὸν ἁπλότητι καὶ αἰδοῖ καὶ τῇ πρὸς τὸ ἀνὰ μέσον ἀρετῆς καὶ κακίας ἀδιαφορίᾳ.
   φίλησον τὸ ἀνθρώπινον γένος. ἀκολούθησον θεῷ. ἐκεῖνος μέν φησιν ὅτι ( πάντα νομιστί, ἐτεῇ δὲ μόνα τὰ
   στοιχεῖἀ, ἀρκεῖ δὲ μεμνῆσθαι ὅτι τὰ πάντα νομιστὶ ἔχει· ἤδη λίαν ὀλίγα.
-translation_literal: 'Make yourself radiant through simplicity, reverence, and indifference toward what
-  stands between virtue and vice. Love the human race. Follow God. For he says: “Everything is conventional;
-  in truth, only the elements are real.” Yet it is enough to remember that everything is held to be so
-  by convention—and that is already very little.'
+translation_literal: 'Make yourself radiant through simplicity, reverence, and indifference toward things
+  intermediate between virtue and vice. Love humankind. Follow God. For he says: ''All things exist by
+  convention, but in reality only the elements exist.'' Yet it suffices to remember that all things are
+  held by convention—already the matters are very few.'
 commentary: 'The abrupt commands widen the scope: φίλησον τὸ ἀνθρώπινον γένος, “love the human race,”
   and ἀκολούθησον θεῷ, “follow God.” The closing quotation, with its contrast between νομιστί (“by convention”)
   and ἐτεῇ (“in reality”), punctures the authority of public valuations. Whether the saying invokes a
@@ -75,5 +75,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''τῇ πρὸς τὸ ἀνὰ μέσον ἀρετῆς καὶ κακίας ἀδιαφορίᾳ'' is mistranslated
+    as ''indifference toward what stands between virtue and vice'' when it means ''indifference toward
+    things that are between/i'

@@ -8,8 +8,8 @@ title: A Sound Word in Every Company
 unit_type: chapter
 sanskrit_devanagari: Λαλεῖν καὶ ἐν συγκλήτῳ καὶ πρὸς πάνθ̓ ὁντινοῦν κοσμίως, μὴ περιτράνως· ὑγιεῖ λόγῳ
   χρῆσθαι.
-translation_literal: Speak with propriety both in the senate and to any person whatever; do not make a
-  show of plain-spokenness. Use language that is sound.
+translation_literal: Speak both in the senate and to anyone at all in a well-ordered manner, not affectedly.
+  Use sound speech.
 commentary: 'Marcus joins public and private speech under one discipline: Λαλεῖν ... κοσμίως, “to speak
   ... orderly/properly,” whether one stands in the συγκλήτῳ, the senate, or addresses πάνθ᾽ ὁντινοῦν,
   absolutely anyone. Rank and setting do not authorize a different moral voice. The same inward order
@@ -73,5 +73,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): περιτράνως means ''affectedly'' or ''with excessive refinement/pretension'',
+    not ''make a show of plain-spokenness'' which inverts the meaning - the text warns against affected
+    or overly elaborate speech, n'

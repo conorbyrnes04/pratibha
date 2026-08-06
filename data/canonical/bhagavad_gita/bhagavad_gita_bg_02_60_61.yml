@@ -27,9 +27,9 @@ sanskrit_iast: 'yatato hyapi kaunteya puruṣasya vipaścitaḥ|
 
 
   vaśe hi yasyendriyāṇi tasya prajñā pratiṣṭhitā'
-translation_literal: “The storming senses forcibly carry off the mind, son of Kuntī, even of a person
-  who strives and discerns. Restraining them all, let him sit yoked, Me as the highest; for the one whose
-  senses are in control, wisdom stands established.”
+translation_literal: For even of a striving person of discrimination, O son of Kunti, the turbulent senses
+  forcibly carry away the mind. Having restrained all those senses, one should sit disciplined, intent
+  upon Me; for one whose senses are under control, wisdom is firmly established.
 commentary: 'Effort and intelligence are not enough. *Pramāthin* senses churn and seize the mind *prasabham*
   — by force. The remedy is *saṃyama* of all senses, seated yoked (*yukta*), with Kṛṣṇa as *mat-para*
   — the highest beyond. Here bhakti-orientation enters the sthita-prajña portrait: sense-control is stabilized
@@ -94,9 +94,9 @@ pratibha_layers:
     vaśe hi yasyendriyāṇi tasya prajñā pratiṣṭhitā'
 - kind: translation
   label: Pratibha Translation
-  body: “The storming senses forcibly carry off the mind, son of Kuntī, even of a person who strives and
-    discerns. Restraining them all, let him sit yoked, Me as the highest; for the one whose senses are
-    in control, wisdom stands established.”
+  body: For even of a striving person of discrimination, O son of Kunti, the turbulent senses forcibly
+    carry away the mind. Having restrained all those senses, one should sit disciplined, intent upon Me;
+    for one whose senses are under control, wisdom is firmly established.
 - kind: commentary
   label: Pratibha Commentary
   body: 'Effort and intelligence are not enough. *Pramāthin* senses churn and seize the mind *prasabham*
@@ -155,3 +155,10 @@ provenance:
   section: chapter_02
   original_id: BG_02_60_61
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''Me as the highest'' (matparaḥ) is mistranslated - it means
+    ''intent on Me'' or ''with Me as supreme goal/object'', not ''Me as the highest'' in the sense presented;
+    The final clause ''for the one '
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

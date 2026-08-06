@@ -79,3 +79,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation misinterprets the subject of the first clause. The original states that
+    'the things that come to be' (τῶν γινομένων) are a river, not that 'everything that comes to be' is
+    a river. The river is a metaphor for the flow of events, not for individual things themselves.; The
+    new tran

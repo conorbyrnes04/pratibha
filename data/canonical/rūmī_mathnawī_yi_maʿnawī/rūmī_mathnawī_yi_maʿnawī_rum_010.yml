@@ -19,11 +19,14 @@ sanskrit_devanagari: 'گفت با آنکس که ما را آفرید /// این 
 
   وحی آمد سوی موسی از خدا /// بندهٔ ما را ز ما کردی جدا'
 sanskrit_iast: See Original.
-translation_literal: 'Moses said: Who are you speaking to? The shepherd: to the One who created us, earth and sphere. Moses:
-  Stop — you have become ruined; not yet Muslim, you have become unbeliever. What nonsense, what blasphemy — stuff cotton
-  in your mouth!'
-commentary: 'Prophetic correctness attacks living intimacy. The contested drama is orthodoxy wounding love. Existentially:
-  where do you police others'' language of God?
+translation_literal: 'He said to the One who created us: this earth and heavens came into being from Him.
+  Moses said: Alas, you have become utterly confused; not yet having become Muslim, you have become an
+  unbeliever. What babble is this, what blasphemy and filth? Stuff cotton in your own mouth! He said:
+  O Moses, you have sewn my mouth shut, and from remorse you have burned my soul. He tore his garment
+  and gave a hot sigh, laid his head down in a wilderness and departed. Revelation came to Moses from
+  God: You have separated Our servant from Us.'
+commentary: 'Prophetic correctness attacks living intimacy. The contested drama is orthodoxy wounding
+  love. Existentially: where do you police others'' language of God?
 
 
   Key Terms
@@ -41,7 +44,8 @@ commentary: 'Prophetic correctness attacks living intimacy. The contested drama 
   Cross-Tradition Resonances
 
 
-  **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal perfection.
+  **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal
+  perfection.
 
   *Divergence:* The Gītā keeps varṇa-dharma frames; Rūmī''s love-creed speaks across forms.
 
@@ -50,8 +54,8 @@ commentary: 'Prophetic correctness attacks living intimacy. The contested drama 
 
   *Divergence:* Eckhart''s worry is exiting the ground by naming; Rūmī''s is shaming the lover''s tongue.'
 insight: Prophetic correctness attacks living intimacy.
-practice: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute in burning without
-  words. Notice which felt more true.
+practice: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute
+  in burning without words. Notice which felt more true.
 upaya: ''
 themes:
 - earth
@@ -81,12 +85,16 @@ pratibha_layers:
   body: See Original.
 - kind: translation
   label: Pratibha Translation
-  body: 'Moses said: Who are you speaking to? The shepherd: to the One who created us, earth and sphere. Moses: Stop — you
-    have become ruined; not yet Muslim, you have become unbeliever. What nonsense, what blasphemy — stuff cotton in your mouth!'
+  body: 'He said to the One who created us: this earth and heavens came into being from Him. Moses said:
+    Alas, you have become utterly confused; not yet having become Muslim, you have become an unbeliever.
+    What babble is this, what blasphemy and filth? Stuff cotton in your own mouth! He said: O Moses, you
+    have sewn my mouth shut, and from remorse you have burned my soul. He tore his garment and gave a
+    hot sigh, laid his head down in a wilderness and departed. Revelation came to Moses from God: You
+    have separated Our servant from Us.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Prophetic correctness attacks living intimacy. The contested drama is orthodoxy wounding love. Existentially: where
-    do you police others'' language of God?
+  body: 'Prophetic correctness attacks living intimacy. The contested drama is orthodoxy wounding love.
+    Existentially: where do you police others'' language of God?
 
 
     Key Terms
@@ -104,7 +112,8 @@ pratibha_layers:
     Cross-Tradition Resonances
 
 
-    **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal perfection.
+    **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal
+    perfection.
 
     *Divergence:* The Gītā keeps varṇa-dharma frames; Rūmī''s love-creed speaks across forms.
 
@@ -114,8 +123,8 @@ pratibha_layers:
     *Divergence:* Eckhart''s worry is exiting the ground by naming; Rūmī''s is shaming the lover''s tongue.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute in burning without
-    words. Notice which felt more true.
+  body: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute
+    in burning without words. Notice which felt more true.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -123,3 +132,9 @@ provenance:
   section: Moses & Shepherd 2
   original_id: RUM_010
   source_reference: Rūmī, *Mathnawī* II, Moses and the shepherd (§2)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The shepherd''s response ''to the One who created us, earth and sphere''
+    is incorrectly attributed. In the original, line 1 shows the shepherd speaking (''گفت'') about God
+    (''با آنکس که ما را آفرید''), not a'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

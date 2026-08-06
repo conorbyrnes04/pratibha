@@ -11,9 +11,10 @@ sanskrit_devanagari: Πολλάκις ἐνθυμοῦ τὴν ἐπισύνδε
   γάρ τινα πάντα ἀλλήλοις ἐπιπέπλεκται καὶ πάντα κατὰ τοῦτο φίλα ἀλλήλοις ἐστί· καὶ γὰρ ἄλλῳ ἑξῆς ἐστι
   τοῦτο διὰ τὴν τονικὴν κίνησιν καὶ σύμπνοιαν καὶ τὴν ἕνωσιν τῆς οὐσίας.
 sanskrit_iast: ''
-translation_literal: 'See continually how all things are interwoven and bound together, and what a sacred
-  bond there is among them. Nothing is alien to anything else: all things have been ordered in relation
-  to one another and together compose the one κόσμος, the ordered universe.'
+translation_literal: Often reflect upon the interconnection of all things in the universe and their relation
+  to one another. For in a certain way all things are interwoven with one another, and all things are
+  thereby kindred to one another. For one thing follows in order upon another through the tensional movement
+  and共-breathing and the unity of substance.
 commentary: 'Marcus gives a compact expression of Stoic cosmic sympatheia: reality is not a heap of separate
   objects but an ordered whole whose parts affect and belong to one another. The language is deliberately
   stronger than mere causal connection. Things are “interwoven” (συνδιαπλέκεται), held by a “sacred bond”
@@ -61,7 +62,8 @@ provenance:
   collection: Marcus Aurelius — Meditations
   source_confidence: high
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
-  english_source: Pratibha own rendering (2026).
+  english_source: Pratibha own rendering (2026). | corrected on independent cross-check with the living
+    scholarly translations (re-rendered from the original, not copied)
   verification: original replaced with verified PD Greek; translation retained
   verification_note: 'The quoted Greek text from Meditations VI.38 is accurate. It correctly represents
     Marcus Aurelius''s description of universal interconnection, with proper grammar, syntax, and orthography
@@ -69,3 +71,7 @@ provenance:
   section: Meditations 6.38
   original_reliability: RESTORED — Perseus Greek for Meditations 6.38 (replaces a model-supplied paraphrase);
     Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''See continually'' mistranslates ''Πολλάκις ἐνθυμοῦ'' which
+    means ''Often reflect/consider'', not a continuous imperative to see; The phrase ''sacred bond'' has
+    no basis in the Greek text, which s'

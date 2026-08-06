@@ -228,3 +228,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: Verse 2.13 omits 'varṇa-prasādaṃ' (clarity/luster of complexion) and 'gandhaḥ śubho' (pleasant
+    bodily odor), and 'mūtra-purīṣam alpaṃ' (scanty urine and feces); Verse 2.13 'reduced compulsion'
+    for 'alolupatvaṃ' is interpretive but acceptable; however, the translation significantly condenses
+    the list

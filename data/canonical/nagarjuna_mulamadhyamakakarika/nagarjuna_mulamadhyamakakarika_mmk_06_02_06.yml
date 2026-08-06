@@ -44,9 +44,9 @@ translation_literal: '2. When there is no impassioned person, how could passion 
   impassioned would be independent of one another. 4. In being one, there is no being-together: a thing
   is not together with itself. But if they are distinct, how could being-together occur? 5. If being-together
   belonged to identity, it would obtain even without a companion. If being-together belonged to difference,
-  it would obtain even without a companion. 6. And if being-together obtains in difference, what need
-  is there for passion and the impassioned? For their separately distinct existence would be established,
-  since there is being-together between them.'
+  it would obtain even without a companion. 6. And if being-together obtains in difference, why would
+  passion and the impassioned be established as separately distinct entities? For their being-together
+  would depend on their separate existence already being established.'
 commentary: 'The verses test the ordinary pairing of rāga, “passion” or “attachment,” and rakta, “one
   who is passionate.” Verse 2 asks whether passion can be found when its alleged bearer is absent; then,
   with sati vā asati vā rāge, it turns the same examination back upon the bearer. Neither term can serve
@@ -121,5 +121,10 @@ provenance:
     readings); Devanagari transliterated from IAST (round-trip verified)
   verification: 'translation cross-checked (Luna): faithful; original from GRETIL'
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: GRETIL Mūlamadhyamakakārikā e-text (Nāgārjuna; de Jong / Ye critical readings)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 6: The logic is inverted. The original argues that if co-existence
+    requires difference/separateness, then their separate existence must be established BEFORE co-existence
+    can occur, making co-ex'

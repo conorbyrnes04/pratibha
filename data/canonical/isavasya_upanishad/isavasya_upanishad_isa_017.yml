@@ -13,7 +13,8 @@ sanskrit_devanagari: 'विद्यां चाविद्यां च य�
 sanskrit_iast: 'vidyam cavidyam ca yas tad vedobhayam saha |
 
   avidyaya mrtyum tirtva vidyayamrtam asnute || 11 ||'
-translation_literal: Knowing both together, one crosses death through avidya and attains immortality through vidya.
+translation_literal: Knowing both together, one crosses death through avidya and attains immortality through
+  vidya.
 commentary: 'Integration, not exclusion, is the teaching climax of this triad.
 
 
@@ -44,18 +45,20 @@ commentary: 'Integration, not exclusion, is the teaching climax of this triad.
   Cross-Tradition Resonances
 
 
-  **Bhagavad Gītā 3.19:** The Gītā likewise joins action with liberation by teaching disciplined, unattached action rather
-  than a simple abandonment of worldly duty. Divergence: Īśā 11 explicitly requires knowing vidyā and avidyā together, whereas
-  the Gītā frames karma primarily as action purified of attachment and offered without desire for results.
+  **Bhagavad Gītā 3.19:** The Gītā likewise joins action with liberation by teaching disciplined, unattached
+  action rather than a simple abandonment of worldly duty. Divergence: Īśā 11 explicitly requires knowing
+  vidyā and avidyā together, whereas the Gītā frames karma primarily as action purified of attachment
+  and offered without desire for results.
 
-  **Nāgārjuna, Mūlamadhyamakakārikā 24.8:** Nāgārjuna’s distinction between conventional and ultimate truth parallels the
-  need to hold practical and liberating registers together rather than absolutize one alone. Divergence: Madhyamaka denies
-  any independently existing immortal essence, while Īśā 11 speaks positively of attaining amṛta through vidyā.
+  **Nāgārjuna, Mūlamadhyamakakārikā 24.8:** Nāgārjuna’s distinction between conventional and ultimate
+  truth parallels the need to hold practical and liberating registers together rather than absolutize
+  one alone. Divergence: Madhyamaka denies any independently existing immortal essence, while Īśā 11 speaks
+  positively of attaining amṛta through vidyā.
 
-  **Epistle of James 2:17:** James’s insistence that faith without works is dead parallels the verse’s refusal to treat inward
-  realization as sufficient apart from an active practical dimension. Divergence: James grounds the relation of faith and
-  works in obedience to God and communal ethics, not in the Upaniṣadic pairing of avidyā as a means of crossing death and
-  vidyā as a means of immortality.'
+  **Epistle of James 2:17:** James’s insistence that faith without works is dead parallels the verse’s
+  refusal to treat inward realization as sufficient apart from an active practical dimension. Divergence:
+  James grounds the relation of faith and works in obedience to God and communal ethics, not in the Upaniṣadic
+  pairing of avidyā as a means of crossing death and vidyā as a means of immortality.'
 insight: Integration, not exclusion, is the teaching climax of this triad.
 practice: Pair your meditation with one concrete ethical action immediately after.
 upaya: ''
@@ -110,25 +113,27 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Tantrasara — When Thought Needs Support – Descent into the Āṇava Path
-    resonance: 'Both texts structure knowledge as a dual path requiring integration of distinct means: the Upanishad teaches
-      crossing death through avidya while attaining immortality through vidya; Tantrasara ascends through Śāmbhavopāya (sudden
-      recognition) then descends into Āṇava (gradual support), neither negating the other.'
-    divergence: The Upanishad frames the duality as simultaneous knowledge of two truths; Tantrasara structures it as sequential
-      ascent and descent, with descent as necessary completion rather than parallel integration.
+    resonance: 'Both texts structure knowledge as a dual path requiring integration of distinct means:
+      the Upanishad teaches crossing death through avidya while attaining immortality through vidya; Tantrasara
+      ascends through Śāmbhavopāya (sudden recognition) then descends into Āṇava (gradual support), neither
+      negating the other.'
+    divergence: The Upanishad frames the duality as simultaneous knowledge of two truths; Tantrasara structures
+      it as sequential ascent and descent, with descent as necessary completion rather than parallel integration.
     passage_id: tantrasara.ts_015
   - citation: Patañjali Yoga Sūtras 4.6
-    resonance: 'Both passages locate liberation or transformation in a state produced by sustained practice: the Upanishad''s
-      vidya (knowledge) attains immortality; Patañjali''s meditation-born mind becomes free of karmic residue—each identifies
-      a specific mental condition as the gateway to transcendence.'
-    divergence: The Upanishad emphasizes knowledge (jñāna) as the operative principle; Patañjali emphasizes the mind's purification
-      through meditation as the mechanism, making psychology rather than gnosis primary.
+    resonance: 'Both passages locate liberation or transformation in a state produced by sustained practice:
+      the Upanishad''s vidya (knowledge) attains immortality; Patañjali''s meditation-born mind becomes
+      free of karmic residue—each identifies a specific mental condition as the gateway to transcendence.'
+    divergence: The Upanishad emphasizes knowledge (jñāna) as the operative principle; Patañjali emphasizes
+      the mind's purification through meditation as the mechanism, making psychology rather than gnosis
+      primary.
     passage_id: patañjali_yoga_sūtras.ys_4_06
   - citation: Svetasvatara Upanishad — Fire by Friction, Self by Om
-    resonance: 'Both use the metaphor of latency and manifestation to describe how the transcendent is accessed: the Upanishad''s
-      vidya attains what is already immortal; Svetasvatara''s hidden Self is brought forth by right means—both assume the
-      goal exists but requires proper method to reveal.'
-    divergence: Isavasya emphasizes knowledge as the revealing act; Svetasvatara emphasizes technique (the friction of Om)
-      as the mechanical means, locating agency in practice rather than gnosis.
+    resonance: 'Both use the metaphor of latency and manifestation to describe how the transcendent is
+      accessed: the Upanishad''s vidya attains what is already immortal; Svetasvatara''s hidden Self is
+      brought forth by right means—both assume the goal exists but requires proper method to reveal.'
+    divergence: Isavasya emphasizes knowledge as the revealing act; Svetasvatara emphasizes technique
+      (the friction of Om) as the mechanical means, locating agency in practice rather than gnosis.
     passage_id: svetasvatara_upanishad.svu_008
   layer_provenance: generated_grounded
 appendixes: []
@@ -138,3 +143,4 @@ provenance:
   section: teaching_passage
   original_id: ISA_017
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'

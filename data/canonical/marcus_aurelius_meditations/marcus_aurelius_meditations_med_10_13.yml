@@ -11,12 +11,12 @@ sanskrit_devanagari: Πυνθάνεσθαι ἑαυτοῦ εὐθὺς ἐξ �
   ψόγοις φρυαττόμενοι τοιοῦτοι μὲν ἐπὶ τῆς κλίνης εἰσί, τοιοῦτοι δὲ ἐπὶ τῆς τραπέζης, οἷα δὲ ποιοῦσιν,
   οἷα δὲ φεύγουσιν, οἷα δὲ διώκουσιν, οἷα δὲ κλέπτουσιν, οἷα δὲ ἁρπάζουσιν, οὐ χερσὶ καὶ ποσίν, ἀλλὰ τῷ
   τιμιωτάτῳ ἑαυτῶν μέρει, ὃ γίνεται ὅταν θέλῃ, πίστις, αἰδώς, ἀλήθεια, νόμος, ἀγαθὸς δαίμων;
-translation_literal: 'The moment you wake, question yourself: “Will it matter to you if someone else finds
-  fault with what is just and rightly ordered?” It will not. Have you forgotten that these people, who
-  prattle on in praise and blame of others, are one sort in bed and another at table—consider what they
-  do, what they avoid, what they chase, what they steal, what they snatch away—not with hands and feet,
-  but with the most honored part of themselves? When it chooses, that part can become faithfulness, reverence,
-  truth, law, a good divine presence.'
+translation_literal: 'The moment you wake, question yourself: ''Will it matter to you if someone else
+  criticizes what is just and right?'' It will not matter. Have you forgotten what sort of people these
+  are who strut about praising and blaming others—what they are like in bed, what they are like at table,
+  what things they do, what they flee from, what they pursue, what they steal, what they seize—not with
+  hands and feet, but with their most precious part, the part which, when it wills, becomes faith, respect,
+  truth, law, a good guardian spirit?'
 commentary: 'Marcus makes this a waking exercise: before the day’s judgments begin to crowd in, ask μήτι
   διοίσει σοι—“will it make any difference to you?” The answer, οὐ διοίσει, is not a dismissal of justice
   or of thoughtful correction. What must not govern us is the mere fact that someone has blamed “the things
@@ -84,5 +84,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The final clause is mistranslated with inverted sense: the original states
+    that the most honored part of themselves (reason/the governing faculty) is the instrument BY WHICH
+    they could have faith, rev'

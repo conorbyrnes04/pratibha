@@ -10,11 +10,11 @@ sanskrit_devanagari: ⲡⲉϫⲉⲓ︤ⲥ︥ ϫⲉⲉⲩϣⲁϫⲟⲟⲥ ⲛⲏ�
   ⲛⲁ ⲉⲣⲱⲧⲛ̄ ⲛ̄ⲧⲉⲧⲡⲉ ⲉⲩϣⲁⲛϫⲟⲟⲥ ⲛⲏⲧⲛ ϫⲉⲥϩⲛ̄ⲑⲁⲗⲁⲥⲥⲁ ⲉⲉⲓⲉ ⲛ̄ⲧⲃⲧ⳿ ⲛⲁ ⲉⲣⲱⲧⲛ̄ ⲁⲗⲗⲁ ⲧ ⲥⲙ̄ⲡⲉⲧⲛ̄ϩⲟⲩⲛ⳿ ⲁⲩⲱ ⲥⲙ̄ⲡⲉⲧⲛ̄ⲃⲁⲗ
   ϩⲟⲧⲁⲛ ⲉⲧⲉⲧⲛ̄ϣⲁⲛⲥⲟⲩⲱⲛⲧⲏⲩⲧⲛ̄ ⲧⲟⲧⲉ ⲥⲉⲛⲁⲥⲟⲩⲱ⳯ⲧⲏⲛⲉ ⲁⲩⲱ ⲧⲉⲧⲛⲁⲉⲓⲙⲉ ϫⲉⲛ̄ⲧⲱⲧⲛ̄ ⲡⲉ ⲛ̄ϣⲏⲣⲉ ⲙ̄ⲡⲉⲓⲱⲧ ⲉⲧⲟⲛϩ ⲉϣⲱⲡⲉ
   ⲇⲉ ⲧⲉⲧⲛⲁⲥⲟⲩⲱⲛⲧⲏⲩⲧⲛ̄ ⲁⲛ ⲉⲉⲓⲉ ⲧⲉⲧⲛ̄ϣⲟⲟⲡ⳿ ϩⲛ̄ⲟⲩ ⲁⲩⲱ ⲛ̄ⲧⲱⲧⲛ̄ ⲡⲉ ⲧ
-translation_literal: Jesus said, “If those who guide you say to you, ‘Look, the kingdom is in heaven,’
-  then the birds of heaven will get there before you. If they say to you, ‘It is in the sea,’ then the
-  fish will get there before you. Rather, the kingdom is within you, and it is outside you. When you come
-  to know yourselves, then you will be known, and you will understand that you are children of the living
-  Father. But if you do not know yourselves, you dwell in poverty, and you are the …”
+translation_literal: Jesus said, 'If those who lead you say to you, "Behold, the kingdom is in the sky,"
+  then the birds of the sky will precede you. If they say to you, "It is in the sea," then the fish will
+  precede you. But the kingdom is inside you and it is outside you. When you know yourselves, then you
+  will be known, and you will realize that you are the sons of the living Father. But if you do not know
+  yourselves, then you exist in poverty, and you are that poverty.'
 commentary: 'The saying refuses a kingdom made remote by religious direction: not a destination above
   the birds or beneath the fish. The contrast is sharp and almost playful. If the kingdom were merely
   a location in sky or sea, creatures already native to those realms would surpass human seekers. Instead,
@@ -83,5 +83,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Opening phrase mistranslated: ''those who guide you'' should be ''those
+    who lead/draw you'' - the Coptic verb ⲥⲱⲕ means to draw/attract/lead astray, not simply to guide;
+    The phrase ''then the birds of heav'

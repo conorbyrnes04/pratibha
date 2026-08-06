@@ -92,3 +92,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The final clause 'ἅμα ἵλεως τοῖς ἐνισταμένοις' is mistranslated. It means 'at the same time
+    being gracious/reconciled to those who stand in the way/oppose you', referring to the obstacles or
+    people preventing the action, not 'the things that oppose you' in a general sense, and certainly not
+    'the thi

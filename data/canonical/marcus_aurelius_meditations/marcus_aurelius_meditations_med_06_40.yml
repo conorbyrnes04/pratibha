@@ -85,3 +85,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: 'The translation of "ἔχειν σοι πάντα κατὰ νοῦν" as "everything will go as your mind would
+    have it" is a significant mistranslation. It implies that one''s personal desires will be fulfilled,
+    whereas the original Greek means that everything will be in accordance with the divine or natural
+    mind/reason, '

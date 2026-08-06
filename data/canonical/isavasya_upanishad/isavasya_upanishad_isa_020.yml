@@ -44,17 +44,18 @@ commentary: 'Seeing impermanence clearly becomes doorway to the deathless.
   Cross-Tradition Resonances
 
 
-  **Dhammapada 277:** The Buddha teaches that seeing all conditioned things as impermanent leads to disenchantment and purification,
-  making insight into transience liberative. Divergence: Buddhist teaching generally denies an eternal self or metaphysical
-  immortality, whereas this verse culminates in amṛta, the deathless.
+  **Dhammapada 277:** The Buddha teaches that seeing all conditioned things as impermanent leads to disenchantment
+  and purification, making insight into transience liberative. Divergence: Buddhist teaching generally
+  denies an eternal self or metaphysical immortality, whereas this verse culminates in amṛta, the deathless.
 
-  **Bhagavad Gītā 2.16 and 2.20:** The Gītā distinguishes the perishing unreal from the enduring real and describes the Self
-  as unborn and undying amid bodily change. Divergence: The Gītā foregrounds the imperishable ātman, while this verse stresses
-  knowing becoming and dissolution together as a single spiritual comprehension.
+  **Bhagavad Gītā 2.16 and 2.20:** The Gītā distinguishes the perishing unreal from the enduring real
+  and describes the Self as unborn and undying amid bodily change. Divergence: The Gītā foregrounds the
+  imperishable ātman, while this verse stresses knowing becoming and dissolution together as a single
+  spiritual comprehension.
 
-  **Tao Te Ching 33:** Laozi says that one who dies yet does not perish possesses longevity, paralleling the claim that mortality
-  can be crossed into a deathless dimension. Divergence: The Tao Te Ching frames this endurance through alignment with the
-  Dao rather than through knowledge of manifestation and dissolution.'
+  **Tao Te Ching 33:** Laozi says that one who dies yet does not perish possesses longevity, paralleling
+  the claim that mortality can be crossed into a deathless dimension. Divergence: The Tao Te Ching frames
+  this endurance through alignment with the Dao rather than through knowledge of manifestation and dissolution.'
 insight: Seeing impermanence clearly becomes doorway to the deathless.
 practice: Reflect on one ending as teacher, not threat.
 upaya: ''
@@ -105,28 +106,31 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Heraclitus Fragments — Fragment 41
-    resonance: 'Both texts use the flowing river as the structural key to understanding impermanence: Heraclitus''s river
-      that cannot be stepped into twice mirrors the Upanishad''s recognition that becoming and dissolution are continuous,
-      making constancy impossible. In both, the impossibility of repetition or stasis becomes the gateway to a higher truth.'
-    divergence: Heraclitus treats flux as the fundamental metaphysical condition of reality itself, while the Upanishad treats
-      recognition of impermanence as a soteriological practice—a means to cross from mortality to immortality, not merely
-      an ontological observation.
+    resonance: 'Both texts use the flowing river as the structural key to understanding impermanence:
+      Heraclitus''s river that cannot be stepped into twice mirrors the Upanishad''s recognition that
+      becoming and dissolution are continuous, making constancy impossible. In both, the impossibility
+      of repetition or stasis becomes the gateway to a higher truth.'
+    divergence: Heraclitus treats flux as the fundamental metaphysical condition of reality itself, while
+      the Upanishad treats recognition of impermanence as a soteriological practice—a means to cross from
+      mortality to immortality, not merely an ontological observation.
     passage_id: heraclitus_fragments.hfr_p041
   - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
-    resonance: 'Both texts identify mantra as the operative principle that bridges knowledge and liberation: the Heart Sutra''s
-      mantra as ''the utterance that quiets all suffering'' and the Isavasya''s mantra-based knowing of becoming-and-dissolution
-      both position the mantra as the vehicle through which conceptual knowledge transforms into realized freedom.'
-    divergence: The Heart Sutra emphasizes the mantra's power to negate false views (prajñāpāramitā as emptiness), while the
-      Isavasya emphasizes the mantra's power to hold together the paradox of becoming and dissolution as a unified vision
-      that transcends death.
+    resonance: 'Both texts identify mantra as the operative principle that bridges knowledge and liberation:
+      the Heart Sutra''s mantra as ''the utterance that quiets all suffering'' and the Isavasya''s mantra-based
+      knowing of becoming-and-dissolution both position the mantra as the vehicle through which conceptual
+      knowledge transforms into realized freedom.'
+    divergence: The Heart Sutra emphasizes the mantra's power to negate false views (prajñāpāramitā as
+      emptiness), while the Isavasya emphasizes the mantra's power to hold together the paradox of becoming
+      and dissolution as a unified vision that transcends death.
     passage_id: heart_sutra.hs_003
   - citation: Tao Te Ching — The Fleeting Nature of All Things
-    resonance: 'Both texts use the observation of natural transience—wind, rain, becoming, dissolution—as the entry point
-      to understanding the nature of reality and the self. The structural move is identical: particular instances of impermanence
-      reveal a universal principle that, when truly seen, transforms one''s relation to existence.'
-    divergence: The Tao Te Ching treats flux as the natural way (Tao) to be accepted and aligned with, while the Isavasya
-      treats the recognition of impermanence as a deliberate practice (mantra-knowing) that actively crosses from mortality
-      to immortality, implying a transcendence rather than mere acceptance.
+    resonance: 'Both texts use the observation of natural transience—wind, rain, becoming, dissolution—as
+      the entry point to understanding the nature of reality and the self. The structural move is identical:
+      particular instances of impermanence reveal a universal principle that, when truly seen, transforms
+      one''s relation to existence.'
+    divergence: The Tao Te Ching treats flux as the natural way (Tao) to be accepted and aligned with,
+      while the Isavasya treats the recognition of impermanence as a deliberate practice (mantra-knowing)
+      that actively crosses from mortality to immortality, implying a transcendence rather than mere acceptance.
     passage_id: tao_te_ching.ttc_md_033
   layer_provenance: generated_grounded
 appendixes: []
@@ -136,3 +140,7 @@ provenance:
   section: teaching_passage
   original_id: ISA_020
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: The instrumental case 'vinasena' (by means of dissolution) is rendered as generic 'knowing'
+    rather than showing dissolution as the specific means for crossing death; The instrumental case 'sambhutya'
+    (by means of becoming) is similarly not clearly marked as the means for attaining immortality

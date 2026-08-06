@@ -114,3 +114,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 4.18 misinterprets 'yadātamas' as 'When there is darkness'. The original
+    refers to a state beyond time, not a temporal condition of darkness. It should be understood as 'When
+    there is no darkness' or 'When there is no tamas' (ignorance/darkness), indicating a state of pure
+    light o

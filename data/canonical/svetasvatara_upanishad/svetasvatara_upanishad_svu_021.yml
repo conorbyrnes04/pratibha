@@ -225,3 +225,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 5.7: ''The embodied self'' is not explicit in the original; the subject is described
+    through attributes (guṇānvaya, etc.) without explicitly stating ''embodied self''; Verse 5.7: ''moving
+    through forms'' somewhat loosely renders ''saṃcarati sva-karmabhiḥ'' which more literally means ''wanders/moves
+    abo'

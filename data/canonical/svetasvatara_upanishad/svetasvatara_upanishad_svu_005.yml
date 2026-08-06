@@ -23,12 +23,14 @@ sanskrit_iast: 'tam eka-nemiṃ tri-vṛtaṃ ṣoḍaśāntaṃ śatārdhāra�
   pañca-sroto''mbuṃ pañca-yony-ugra-vakrāṃ pañca-prāṇormiṃ pañca-buddhy-ādi-mūlām |
 
   pañcāvartāṃ pañca-duḥkhaugha-vegāṃ pañcāśad-bhedāṃ pañca-parvām adhīmaḥ || 1.5 ||'
-translation_literal: 'We contemplate the One as the wheel of becoming: one rim, three bands, many spokes
-  and counter-spokes, manifold pathways, and delusion driven by dual causes.
+translation_literal: 'That wheel with one rim, threefold stranded, with sixteen ends, fifty spokes, twenty
+  counter-spokes, six sets of eight, bound by one rope of universal form, divided into three paths, whose
+  delusion arises from two causes — [we contemplate].
 
 
-  We contemplate Him as a fierce river of five streams and five sources, with waves of vital force, whirlpools
-  of mind, torrents of suffering, and branching forms of embodied experience.'
+  We contemplate this river of five streams, fierce and turbulent with five sources, whose waves are the
+  five vital breaths, whose root is the five cognitions, with five whirlpools, rushing with five torrents
+  of suffering, having fifty divisions and five stages.'
 commentary: 'These verses refuse simplistic cosmology. Instead of giving a linear account of creation,
   they offer a symbolic systems-map of bondage. Wheel and river are not ornamental metaphors; they diagnose
   structural recurrence. The wheel emphasizes cyclical compulsion: repetition, momentum, and patterned
@@ -125,12 +127,14 @@ pratibha_layers:
     pañcāvartāṃ pañca-duḥkhaugha-vegāṃ pañcāśad-bhedāṃ pañca-parvām adhīmaḥ || 1.5 ||'
 - kind: translation
   label: Pratibha Translation
-  body: 'We contemplate the One as the wheel of becoming: one rim, three bands, many spokes and counter-spokes,
-    manifold pathways, and delusion driven by dual causes.
+  body: 'That wheel with one rim, threefold stranded, with sixteen ends, fifty spokes, twenty counter-spokes,
+    six sets of eight, bound by one rope of universal form, divided into three paths, whose delusion arises
+    from two causes — [we contemplate].
 
 
-    We contemplate Him as a fierce river of five streams and five sources, with waves of vital force,
-    whirlpools of mind, torrents of suffering, and branching forms of embodied experience.'
+    We contemplate this river of five streams, fierce and turbulent with five sources, whose waves are
+    the five vital breaths, whose root is the five cognitions, with five whirlpools, rushing with five
+    torrents of suffering, having fifty divisions and five stages.'
 - kind: commentary
   label: Pratibha Commentary
   body: 'These verses refuse simplistic cosmology. Instead of giving a linear account of creation, they
@@ -196,3 +200,9 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 1.4: ''ṣoḍaśāntaṃ'' (sixteen ends/parts) omitted entirely; Verse
+    1.4: ''śatārdhāraṃ'' (fifty spokes) rendered vaguely as ''many spokes'' - specific number lost; Verse
+    1.4: ''viṃśati-pratyarābhiḥ'' (twen'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

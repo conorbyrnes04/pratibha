@@ -23,9 +23,9 @@ sanskrit_devanagari: '(8:11) אֲשֶׁר֙ אֵין־נַעֲשָׂ֣ה פִת�
   אִם־לֶאֱכ֥וֹל וְלִשְׁתּ֖וֹת וְלִשְׂמ֑וֹחַ וְה֞וּא יִלְוֶ֣נּוּ בַעֲמָל֗וֹ יְמֵ֥י חַיָּ֛יו אֲשֶׁר־נָֽתַן־ל֥וֹ
   הָאֱלֹהִ֖ים תַּ֥חַת הַשָּֽׁמֶשׁ׃'
 translation_literal: 'Because the decree against an evil deed is not carried out swiftly, the human heart
-  is fully set within them to do evil. Though a sinner does evil a hundred times and prolongs his days,
+  is fully set within them to do evil. Though a sinner does evil a hundred times and his life is prolonged,
   yet I know that it will go well with those who fear God, who stand in fear before him. But it will not
-  go well with the wicked, nor will he lengthen his days like a shadow, because he does not fear before
+  go well with the wicked, and he will not prolong his days—like a shadow—because he does not fear before
   God.
 
 
@@ -35,8 +35,8 @@ translation_literal: 'Because the decree against an evil deed is not carried out
 
 
   So I praised joy: for there is nothing better for a human being under the sun than to eat and drink
-  and rejoice. This will stay beside him in his labor through the days of his life which God has given
-  him under the sun.'
+  and rejoice. This will accompany him in his labor through the days of his life which God has given him
+  under the sun.'
 commentary: 'The passage begins with a sober social observation: when the פִתְגָם (pitgam), the judicial
   sentence or decree, does not come swiftly, wrongdoing gains courage. Delay is not morally neutral; it
   can make the human heart “full” of purpose to do evil. Yet Qoheleth places this observation beside a
@@ -105,5 +105,11 @@ provenance:
     Hebrew)
   verification: 'translation cross-checked (Luna): faithful; original from WLC Hebrew'
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
-    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
+    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation | corrected
+    on independent cross-check with the living scholarly translations (re-rendered from the original,
+    not copied)
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 12: ''prolongs his days'' is mistranslated - the Hebrew ''וּמַאֲרִיךְ
+    לוֹ'' means ''and it is prolonged for him'' or ''and he prolongs [his life]'' but in context refers
+    to God''s patience/延长 of judgment'

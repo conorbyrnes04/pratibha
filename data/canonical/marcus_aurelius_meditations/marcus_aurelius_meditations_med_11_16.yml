@@ -15,15 +15,14 @@ sanskrit_devanagari: Κάλλιστα διαζῆν, δύναμις αὕτη �
   σὴν φύσιν καὶ ἐπὶ τοῦτο σπεῦδε, κἂν ἄδοξον ᾖ· παντὶ γὰρ συγγνώμη τὸ ἴδιον ἀγαθὸν ζητοῦντι.
 translation_literal: 'The finest way to live is a power within the soul: to be indifferent toward things
   indifferent. One will be indifferent if one looks at each of them both separately and as a whole, remembering
-  that none of them implants in us an opinion about itself or advances upon us. They remain unmoving;
-  it is we who produce the judgments about them and, as it were, write them within ourselves—though we
-  need not write them, and, if something escapes our notice, we can erase it at once.
-
-
-  Such vigilance will last only a little while, and then life will be over. What, then, makes it difficult
-  to regard these things otherwise? If they are according to nature, welcome them and let them be easy
-  for you. But if they are contrary to nature, seek what is according to your own nature and hasten toward
-  that, even if it brings no reputation. For everyone deserves allowance when seeking his own proper good.'
+  that none of them implants in us an opinion about itself or comes at us. Rather, they remain still,
+  while we are the ones who generate judgments about them and, as it were, inscribe them in ourselves—though
+  it is possible not to inscribe them, and possible, even if one has slipped in unawares, to erase it
+  immediately. Remember that such attention will be required for only a short time, and then life will
+  be finished. What difficulty is there, anyway, in these things being otherwise? For if they are according
+  to nature, rejoice in them and let them be easy for you. But if they are contrary to nature, seek what
+  is according to your own nature and press toward that, even if it be inglorious. For everyone is pardoned
+  for seeking their own proper good.'
 commentary: 'Marcus locates the possibility of living “most beautifully” (Κάλλιστα διαζῆν) in a capacity
   of the ψυχή: ἀδιαφορεῖν πρὸς τὰ ἀδιάφορα, remaining uninvested in things that do not determine moral
   worth. This is not blank insensitivity. The discipline is perceptual: examine each thing “separately
@@ -93,5 +92,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''if something escapes our notice'' (κἄν που λάθῃ) misses the
+    intended meaning: it refers to a judgment that has already been written/formed inadvertently, not
+    something that ''escapes notice'''

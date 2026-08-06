@@ -10,9 +10,11 @@ unit_type: sutra
 sanskrit_devanagari: तत्तत्त्वतोऽर्थभावः
 sanskrit_iast: tat tattvato’rtha-bhāvaḥ
 translation_literal: Thus, objects exist according to their principle.
-commentary: Perception becomes proportional. Things are seen according to what they are, not what they promise.
+commentary: Perception becomes proportional. Things are seen according to what they are, not what they
+  promise.
 insight: Perception becomes proportional.
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
 upaya: ''
 themes:
 - tattva
@@ -40,7 +42,8 @@ pratibha_layers:
   body: Perception becomes proportional. Things are seen according to what they are, not what they promise.
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -55,3 +58,8 @@ provenance:
   section: Āṇavopāya
   original_id: SS_III.10
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: error'
+  qa_issues: The translation misses the technical meaning of 'bhāva' as 'contemplation/meditation' in
+    this context; The phrase 'tat tattvataḥ' means 'from that (comes) the state of being that principle'
+    or 'thereby (one attains) the essential nature of that'; The compound 'artha-bhāva' should be understood
+    as 't

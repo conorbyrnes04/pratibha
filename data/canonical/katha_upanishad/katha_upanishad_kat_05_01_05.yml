@@ -124,3 +124,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Kaṭhopaniṣad e-text (after Olivelle, The Early Upaniṣads, 1998)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 1: ''puram'' refers to the body/city metaphor, and ''ajasya'' (of the Unborn/unborn
+    one) is genitive - the city belongs to the Unborn, not that the Unborn dwells in it; Verse 1: ''anuṣṭhāya''
+    means ''having practiced/performed/ruled'' rather than ''having steadfastly realized''; Verse 3: ''vāmanam''
+    is li'

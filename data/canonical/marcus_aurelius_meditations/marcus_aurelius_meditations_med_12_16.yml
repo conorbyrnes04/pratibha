@@ -11,12 +11,12 @@ sanskrit_devanagari: Ἐπὶ τοῦ φαντασίαν παρασχόντος 
   μὴ θέλων τὸν φαῦλον ἁμαρτάνειν ὅμοιος τῷ μὴ θέλοντι τὴν συκῆν ὀπὸν ἐν τοῖς σύκοις φέρειν καὶ τὰ βρέφη
   κλαυθμυρίζεσθαι καὶ τὸν ἵππον χρεμετίζειν καὶ ὅσα ἄλλα ἀναγκαῖα. τί γὰρ πάθῃ τὴν ἕξιν ἔχων τοιαύτην;
   εἰ οὖν γοργὸς εἶ, ταύτην θεράπευσον.
-translation_literal: 'When someone presents you with the impression that he has done wrong, ask: “How
-  do I know that this is a wrongdoing?” And even if he has done wrong, he has already condemned himself;
-  in that respect he is like a man clawing at his own face. To refuse to accept that a bad person will
-  do wrong is like refusing to accept that a fig tree bears sap in its figs, that babies whimper, that
-  a horse neighs, and all the other things that must follow. What else can a person with such a disposition
-  do? If you are quick-minded, then treat this disposition in yourself.'
+translation_literal: 'When someone gives you the impression that he has erred, ask yourself: ''What do
+  I know — is this really an error?'' And even if he has erred, consider that he has condemned himself,
+  and this is like someone scratching his own face. To wish that a bad person not commit errors is like
+  wishing that a fig tree not produce juice in its figs, that infants not cry, that a horse not whinny,
+  and all other inevitable things. For what else would someone with such a character do? So if you are
+  vexed by this, cure that vexation in yourself.'
 commentary: 'Marcus begins not with an excuse for wrongdoing but with a check on the mind’s first verdict:
   “τί δαὶ οἶδα”—what, after all, do I know? The φαντασία, the impression that another has erred, is not
   yet secure knowledge. Even where an ἁμάρτημα really has occurred, Marcus says the agent has in a sense
@@ -88,5 +88,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''ὀπὸν ἐν τοῖς σύκοις φέρειν'' means ''bears juice/sap in its
+    figs'' but the natural reading is that fig trees produce figs (with their characteristic juice), not
+    that this is somehow unusual. '

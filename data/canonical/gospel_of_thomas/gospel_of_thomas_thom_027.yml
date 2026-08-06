@@ -7,8 +7,8 @@ unit_label: Fasting from the World
 title: Fasting from the World
 unit_type: logion
 sanskrit_devanagari: ⲉⲧⲉ⟨ⲧⲛ̄⟩ⲧⲙ̄ ⲉⲡⲕⲟⲥⲙⲟⲥ ⲧⲉⲧⲛⲁϩⲉ ⲁⲛ⳿ ⲉⲧ ⲉⲧⲉⲧⲛ̄ⲧⲙ̄ⲉⲓⲣⲉ ⲙ̄ⲡⲥⲁⲙⲃⲁⲧⲟⲛ ⲛ̄ ⲛ̄ⲧⲉⲧⲛⲁⲛⲁⲩ ⲁⲛ ⲉⲡⲉⲓⲱⲧ⳿
-translation_literal: If you do not fast from the world, you will not find. If you do not make the Sabbath
-  a Sabbath, you will not see the Father.
+translation_literal: If you do not fast from the world, you will not find the kingdom. If you do not keep
+  the Sabbath as Sabbath, you will not see the Father.
 commentary: 'The saying joins two disciplines: fasting from the ⲕⲟⲥⲙⲟⲥ (kosmos, “world”) and making Sabbath
   truly Sabbath. The first is not merely dietary abstinence. It names a loosening of the world’s grip—its
   appetites, measures of worth, and incessant demands. The terse clause, “you will not find,” leaves the
@@ -73,5 +73,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): First clause incomplete: ''you will not find'' lacks object - original
+    has ''you will not find the kingdom''; Second clause mistranslation: ''make the Sabbath a Sabbath''
+    misses the meaning - should be ''obs'

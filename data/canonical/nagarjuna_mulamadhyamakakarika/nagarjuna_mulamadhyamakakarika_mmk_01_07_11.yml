@@ -40,16 +40,16 @@ translation_literal: '7. When a dharma comes to be neither as existent, nor as n
   existent and non-existent, how could a cause that produces it be intelligible in such a case?
 
 
-  8. This existent dharma is indeed taught as without a beginning. But if the dharma has no beginning,
-  from where could a beginning arise again?
+  8. This existent dharma is indeed taught as without an object. But if the dharma is without an object,
+  from where could an object come again?
 
 
-  9. For dharmas that have not arisen, cessation is not tenable. Therefore no immediately preceding condition
-  is appropriate; and once something has ceased, what condition could there be?
+  9. For dharmas that have not arisen, cessation is not tenable. Therefore an immediately preceding condition
+  is not appropriate; and once something has ceased, what condition could there be?
 
 
-  10. Since things devoid of intrinsic nature possess no independent actuality, the statement, “When this
-  is present, that comes to be,” is not at all established.
+  10. Since things devoid of intrinsic nature possess no independent actuality, the statement, ''When
+  this is present, that comes to be,'' is not at all established.
 
 
   11. The result is not found among the conditions, whether separately or collectively. How, then, could
@@ -127,5 +127,10 @@ provenance:
     readings); Devanagari transliterated from IAST (round-trip verified)
   verification: 'translation cross-checked (Luna): loose; original from GRETIL'
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: GRETIL Mūlamadhyamakakārikā e-text (Nāgārjuna; de Jong / Ye critical readings)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 8: ''anārambhaṇa'' means ''without object/support'', not ''without
+    a beginning''; ''ārambhaṇa'' similarly means ''object/support'', not ''beginning''; Verse 9: ''nānantaram
+    ato yuktaṃ'' means ''therefore an im'

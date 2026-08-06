@@ -17,10 +17,10 @@ sanskrit_iast: 'pañcaitāni mahābāho kāraṇāni nibodha me|sāṃkhye kṛt
   adhiṣṭhānaṃ tathā kartā karaṇaṃ ca pṛthagvidham|vividhāśca pṛthakceṣṭā daivaṃ caivātra pañcamam
 
   śarīravāṅmanobhiryatkarma prārabhate naraḥ|nyāyyaṃ vā viparītaṃ vā pañcaite tasya hetavaḥ'
-translation_literal: 'Learn from Me these five causes, O mighty-armed, declared in the Sāṃkhya that ends
-  in action’s completion, for the accomplishment of all actions: the basis, the agent, the various instruments,
-  the distinct movements of many kinds, and destiny as the fifth. Whatever action a person undertakes
-  with body, speech, or mind, whether right or wrong—these five are its causes.'
+translation_literal: 'Learn from Me, O mighty-armed, these five factors that are declared in the conclusive
+  doctrine of Sāṃkhya for the accomplishment of all actions: the locus (or seat), the doer, the instruments
+  of various kinds, the many distinct functions, and likewise destiny as the fifth. Whatever action a
+  person initiates with body, speech, or mind—whether righteous or its opposite—these five are its causes.'
 commentary: 'Action is decomposed into five causes: adhiṣṭhāna, kartā, karaṇa, ceṣṭā, and daiva. The contested
   move dismantles the lone-hero agent. Even nyāyya or viparīta acts arise from this pentad. Existentially,
   guilt and grandiosity both shrink when causes are correctly plural. This is not evasion; it is accurate
@@ -65,10 +65,10 @@ pratibha_layers:
     śarīravāṅmanobhiryatkarma prārabhate naraḥ|nyāyyaṃ vā viparītaṃ vā pañcaite tasya hetavaḥ'
 - kind: translation
   label: Pratibha Translation
-  body: 'Learn from Me these five causes, O mighty-armed, declared in the Sāṃkhya that ends in action’s
-    completion, for the accomplishment of all actions: the basis, the agent, the various instruments,
-    the distinct movements of many kinds, and destiny as the fifth. Whatever action a person undertakes
-    with body, speech, or mind, whether right or wrong—these five are its causes.'
+  body: 'Learn from Me, O mighty-armed, these five factors that are declared in the conclusive doctrine
+    of Sāṃkhya for the accomplishment of all actions: the locus (or seat), the doer, the instruments of
+    various kinds, the many distinct functions, and likewise destiny as the fifth. Whatever action a person
+    initiates with body, speech, or mind—whether righteous or its opposite—these five are its causes.'
 - kind: commentary
   label: Pratibha Commentary
   body: 'Action is decomposed into five causes: adhiṣṭhāna, kartā, karaṇa, ceṣṭā, and daiva. The contested
@@ -121,3 +121,9 @@ provenance:
   section: chapter_18
   original_id: BG_18_13_15
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''sāṃkhye kṛtānte proktāni'' is mistranslated as ''in the Sāṃkhya
+    that ends in action''s completion''. The term ''kṛtānte'' means ''in the final doctrine/conclusion''
+    or ''in the definitive teaching'''
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

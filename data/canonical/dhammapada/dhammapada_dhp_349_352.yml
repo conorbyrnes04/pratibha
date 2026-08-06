@@ -103,3 +103,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: In verse 351, 'bhavasallāni' (arrows of becoming) is mistranslated as 'arrows of becoming'
+    when it should be 'darts of existence' or 'darts of rebirth'. The term 'bhava' refers to existence
+    or rebirth, and 'salla' refers to a dart or arrow, often implying a painful or piercing element.;
+    In verse 352

@@ -86,3 +86,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The final sentence is a common misinterpretation. The Greek "Οὔτε τραγῳδὸς οὔτε πόρνη" is
+    not a command or advice to the reader, but rather a continuation of the hypothetical person's argument,
+    implying that the person you're trying to correct is not a 'tragic actor' (who might be expected to
+    unders

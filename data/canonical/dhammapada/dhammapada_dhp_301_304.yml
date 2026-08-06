@@ -15,21 +15,21 @@ sanskrit_devanagari: '(301) suppabuddhaṃ pabujjhanti sadā Gotamasāvakā yesa
   (303) saddho sīlena sampanno yasobhogasamappito yaṃ yaṃ padesaṃ bhajati tattha tatth'' eva pūjito.
 
   (304) dūre santo pakāsenti Himavanto va pabbato, asant'' ettha na dissanti rattikhittā yathā sarā.'
-translation_literal: '301. The disciples of Gotama are fully awake: day and night, their minds take delight
-  in cultivation.
+translation_literal: '301. The disciples of Gotama awaken well: day and night, their minds delight in
+  meditation on the Buddha.
 
 
-  302. Going forth is hard; finding joy in it is hard. Houses are difficult places to live in; living
-  with those unlike oneself is painful. Suffering overtakes the traveler on the road. Therefore, do not
-  become such a traveler, do not become one pursued by suffering.
+  302. Going forth is difficult, difficult to find joy in; household life is hard to dwell in and painful;
+  living with the uncongenial is suffering; the wayfarer is beset by suffering. Therefore, be not a wayfarer,
+  be not one beset by suffering.
 
 
-  303. One who has faith, is complete in virtue, and is endowed with good repute and resources—wherever
-  such a person goes, there they are honored.
+  303. One endowed with faith and virtue, possessed of fame and wealth—whatever place such a one resorts
+  to, right there is that one honored.
 
 
-  304. The good make themselves visible from far away, like a Himalayan mountain. But those who are not
-  good are not seen even here, like arrows released into the night.'
+  304. The good shine forth from afar, like the Himalayan mountain. The wicked are not seen even here,
+  like arrows shot in the night.'
 commentary: 'The opening verse defines wakefulness not as a single dramatic insight but as a mind continually
   “rato,” delighting, in bhāvanā—cultivation or development. The Gotama disciple is “suppabuddha,” thoroughly
   awakened, because attention is repeatedly turned toward the work of training, in daylight and darkness
@@ -99,5 +99,11 @@ provenance:
   original_reliability: SOURCED — Fausböll romanized-Pali edition of the Dhammapada (1900)
   verification: 'translation cross-checked (Luna): unknown; original from Fausböll Pali'
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 301: ''bhāvanāya rato mano'' means ''mind delighting in meditation/cultivation''
+    but the translation omits that it is specifically about Buddha (Buddhānussati) - the minds delight
+    in meditation ON T'

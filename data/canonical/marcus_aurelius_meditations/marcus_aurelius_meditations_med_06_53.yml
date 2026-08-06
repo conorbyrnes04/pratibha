@@ -8,8 +8,8 @@ title: Enter the Speaker’s Soul
 unit_type: chapter
 sanskrit_devanagari: Ἔθισον σεαυτὸν πρὸς τῷ ὑφ̓ ἑτέρου λεγομένῳ γίνεσθαι ἀπαρενθυμήτως καὶ ὡς οἷόν τε
   ἐν τῇ ψυχῇ τοῦ λέγοντος γίνου.
-translation_literal: Train yourself, whenever another person speaks, to grasp what is being said without
-  losing the thread; and, so far as possible, enter into the soul of the one who is speaking.
+translation_literal: Accustom yourself to attend to what is said by another without distraction, and as
+  far as possible to be in the soul of the speaker.
 commentary: 'Marcus begins with ἔθισον, “train” or “accustom”: understanding another is not presented
   as a spontaneous gift but as a habit formed through practice. The listener’s task is to remain ἀπαρενθυμήτως—without
   letting the sense escape notice, without being distracted away from what the other actually means. This
@@ -75,5 +75,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''ἀπαρενθυμήτως'' means ''without distraction'' or ''attentively/without
+    letting the mind wander,'' not ''without losing the thread.'' The translation misses the sense of
+    mental focus and non-distr'

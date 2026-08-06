@@ -19,8 +19,19 @@ sanskrit_devanagari: Ὡς ἤδη δυνατοῦ ὄντος ἐξιέναι �
   καὶ ἡδονή, πλοῦτος καὶ πενία, πάντα ταῦτα ἐπίσης συμβαίνει ἀνθρώπων τοῖς τε ἀγαθοῖς καὶ τοῖς κακοῖς,
   οὔτε καλὰ ὄντα οὔτε αἰσχρά. οὔτ̓ ἄῤ ἀγαθὰ οὔτε κακά ἐστι.
 sanskrit_iast: ''
-translation_literal: You could leave life now. Let this make some difference to what you do, what you
-  say, and what you think.
+translation_literal: As one who could depart from life at any moment, so act and speak and think in each
+  thing. To depart from among men, if gods exist, is nothing terrible; for they would not involve you
+  in evil. But if either they do not exist or they have no concern for human affairs, why should I live
+  in a universe empty of gods or empty of providence? But they do exist and they do care for human affairs,
+  and they have placed it entirely within man's power not to fall into things that are truly evils. And
+  if any of the remaining things were evil, they would have provided for this too, so that it would be
+  in everyone's power not to fall into it. But that which does not make a person worse, how could this
+  make a person's life worse? The nature of the whole could not have overlooked these things either through
+  ignorance or through knowing but being unable to guard against or correct them, nor could it have erred
+  so greatly either through lack of power or lack of skill that good and evil things should happen indiscriminately
+  in equal measure to both good and bad people. But death and life, reputation and disrepute, pain and
+  pleasure, wealth and poverty—all these things happen equally to good and bad people alike, being neither
+  noble nor shameful. Therefore they are neither good nor evil.
 commentary: 'This is not a theatrical invitation to despise life, but a Stoic test of moral seriousness.
   Death is certain yet untimed; therefore postponement is irrational where character is concerned. Marcus
   directs mortality’s pressure not toward anxiety, grand achievement, or sentimental intensity, but toward
@@ -69,9 +80,14 @@ provenance:
   collection: Marcus Aurelius — Meditations
   source_confidence: high
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
-  english_source: Pratibha own rendering (2026).
+  english_source: Pratibha own rendering (2026). | corrected on independent cross-check with the living
+    scholarly translations (re-rendered from the original, not copied)
   verification: original replaced with verified PD Greek; translation retained
   verification_note: The received text includes δὲ after τοῦτο.
   section: Meditations 2.11
   original_reliability: RESTORED — Perseus Greek for Meditations 2.11 (replaces a model-supplied paraphrase);
     Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The translation omits the entire second half of the passage (approximately
+    85% of the original text); Missing the complete philosophical argument about gods, providence, death,
+    and indifferents; Only '

@@ -17,25 +17,19 @@ sanskrit_devanagari: Τὰ ἴδια τῆς λογικῆς ψυχῆς· ἑα
   ὁποσονοῦν ἔχῃ, πάντα τὰ γεγονότα καὶ τὰ ἐσόμενα ἑώρακε κατὰ τὸ ὁμοειδές. ἴδιον δὲ λογικῆς ψυχῆς καὶ
   τὸ φιλεῖν τοὺς πλησίον καὶ ἀλήθεια καὶ αἰδὼς καὶ τὸ μηδὲν ἑαυτῆς προτιμᾶν, ὅπερ ἴδιον καὶ νόμου· οὕτως
   ἄῤ οὐδὲν διήνεγκε λόγος ὀρθὸς καὶ λόγος δικαιοσύνης.
-translation_literal: 'What belongs to the rational soul: it sees itself; it gives itself articulation;
-  it makes itself whatever sort of thing it chooses; it reaps the fruit that it bears itself—for the fruits
-  of plants, and the corresponding products among animals, are reaped by others. It reaches its own proper
-  end wherever the limit of life overtakes it. It is not like a dance, an acting performance, or such
-  things, where the whole action is left unfinished if something interrupts it. Rather, at every point,
-  wherever it is arrested, it makes what it had proposed complete and needing nothing further from itself,
-  so that it can say: “I have what is mine.”
-
-
-  Further, it ranges over the whole cosmos, the void surrounding it, and its form; it stretches out into
-  the infinity of time; it takes in, reflects upon, and contemplates the periodic renewal of all things.
-  It sees that those who come after us will behold nothing new, nor did those before us see anything more;
-  in a sense, a person of forty, if he has any understanding at all, has seen, according to their common
-  kind, everything that has happened and everything that will happen.
-
-
-  Also belonging to the rational soul are love for one’s neighbors, truth, reverence, and valuing nothing
-  above itself—something that also belongs to law. Thus there is no difference at all between right reason
-  and the reason of justice.'
+translation_literal: 'What belongs to the rational soul: it sees itself; it articulates itself; it makes
+  itself into whatever it wishes to be; it harvests the fruit it bears for itself—for the fruits of plants
+  and the analogous products in animals are harvested by others. It attains its proper end wherever the
+  boundary of life comes upon it. Unlike a dance or dramatic performance or such things, where the whole
+  action becomes incomplete if something interrupts it, rather in every part and wherever it may be caught,
+  it makes what was set before it full and lacking nothing, so that it can say: ''I possess what is mine.''
+  Moreover, it traverses the entire cosmos and the void around it and its shape, and extends into the
+  infinity of time, and encompasses and contemplates the cyclical regeneration of all things, and observes
+  that those after us will see nothing newer nor did those before us see anything more remarkable, but
+  in a certain way a person of forty years, if he has any intelligence at all, has seen all things past
+  and future according to their sameness of kind. Also proper to the rational soul are love of neighbors,
+  truth, modesty, and to prefer nothing to itself—which is also proper to law. Thus right reason and the
+  reason of justice differ not at all.'
 commentary: 'Marcus begins with a strikingly active picture of the λογικὴ ψυχή, the “rational soul.” It
   does not merely possess reason as an instrument: it looks at itself, διαρθροῖ ἑαυτήν—orders or articulates
   itself—and can shape its own moral condition. Its distinctive “fruit” is not something another consumer
@@ -104,5 +98,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Final clause mistranslated: ''valuing nothing above itself'' inverts the
+    meaning of ''τὸ μηδὲν ἑαυτῆς προτιμᾶν'' which means ''to value nothing above itself'' in the sense
+    of not preferring anything to reas'

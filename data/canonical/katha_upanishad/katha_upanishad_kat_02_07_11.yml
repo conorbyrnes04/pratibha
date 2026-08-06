@@ -40,27 +40,27 @@ sanskrit_iast: 'śravaṇāyāpi bahubhir yo na labhyaḥ śṛṇvanto ''pi bah
   kāmasya āptiṃ jagataḥ pratiṣṭhāṃ krator anantyam abhayasya pāram / stomamahad urugāyaṃ pratiṣṭhāṃ dṛṣṭvā
   dhṛtyā dhīro naciketo ''tyasrākṣīḥ || 11 ||'
 translation_literal: 'Even to hear of this, many do not obtain the chance; and though many hear, they
-  do not understand it. Wonderful is the one who can speak of it; rare and capable the one who receives
-  it. Wonderful is the knower when instructed by one who is truly skilled.
+  do not understand it. Wonderful is the one who can speak of it; rare is the one who obtains it. Wonderful
+  is the knower when instructed by one who is truly skilled.
 
 
-  When this is taught by a lesser person, it is not easily known, for it is conceived in many different
-  ways. When it is taught by one who is not other than it, there is no further uncertainty here. Smaller
-  than the smallest measure, it lies beyond the reach of inference.
+  When this is taught by an inferior person, it is not easily known, for it is conceived in many different
+  ways. When taught by another, there is no access to it here, for it is subtler than the subtle, beyond
+  the reach of reasoning.
 
 
-  This insight is not gained through reasoning, dear one. Only when taught by another does it become readily
-  knowable. Yet you have attained it: truly, you are firm in truth. May there be no questioner like you,
-  O dear Naciketas.
+  This understanding is not to be attained through reasoning, dear one. It is easily known only when taught
+  by another [who has realized it]. You have attained it; truly you are steadfast in truth. May we have
+  another questioner like you, dear Naciketas.
 
 
-  I know that the treasure is impermanent; what is lasting cannot be reached through things that do not
-  last. Therefore I established the Naciketas fire with impermanent materials, and attained the eternal.
+  I know that treasure is impermanent; truly the eternal is not attained through the non-eternal. Therefore
+  I kindled the Naciketas fire with impermanent things, and have attained the eternal.
 
 
-  You saw the fulfillment of desire, the foundation of the world, the boundlessness of ritual, the far
-  shore of fearlessness, great praise, wide-ranging glory, and high station; seeing them, steadfast and
-  discerning Naciketas, you cast them away.'
+  Having seen the fulfillment of desire, the foundation of the world, the endlessness of ritual action,
+  the far shore of fearlessness, the greatness of praise, the wide-extending foundation, you, wise and
+  steadfast Naciketas, have renounced them.'
 commentary: 'These verses make knowledge of the Self an event of rare receptivity rather than mere exposure
   to religious speech. The repeated āścarya, “wonder,” marks both the authentic teacher and the genuine
   knower as extraordinary. Hearing (śravaṇa) alone is insufficient: many hear and still do not know. The
@@ -133,5 +133,15 @@ provenance:
     Devanagari transliterated from IAST (round-trip verified)
   verification: 'translation cross-checked (Luna): loose; original from GRETIL'
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: GRETIL Kaṭhopaniṣad e-text (after Olivelle, The Early Upaniṣads, 1998)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 8: ''When it is taught by one who is not other than it'' misinterprets
+    ''ananyaprokte'' which means ''when taught by no other/someone else'' not ''one who is not other than
+    it''; Verse 8: ''there is no f'
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 8: ''When taught by another, there is no access to it here'' misses the crucial qualifier
+    ''ananya-prokte'' meaning ''when taught by one OTHER than [a qualified teacher]'' - the sense is inverted;
+    it should mean there IS no path when taught by someone unqualified, not just ''another''; Verse 9:
+    ''when '

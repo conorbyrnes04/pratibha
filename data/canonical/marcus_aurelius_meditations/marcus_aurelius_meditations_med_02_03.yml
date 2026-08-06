@@ -96,3 +96,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation incorrectly renders the phrase "ὥσπερ αἱ τῶν στοιχείων, οὕτως καὶ αἱ τῶν
+    συγκριμάτων μεταβολαί" as "The changes of the elements preserve the world, just as do the changes
+    of compounded bodies." The original Greek means that the changes of the elements preserve the world,
+    and *similar

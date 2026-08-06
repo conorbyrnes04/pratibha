@@ -95,3 +95,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 138: ''loss'' (jāniṃ) should be ''bodily injury/harm'' - the term refers to physical
+    harm/injury to the body, not general loss; Verse 138: ''bodily injury'' (bhedanaṃ) should be ''breaking/fracture
+    of the body'' - more specifically refers to breaking/fracturing of limbs or body parts; Verse 139:
+    ''brea'

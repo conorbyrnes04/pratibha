@@ -7,104 +7,111 @@ unit_id: katha_upanishad.kau_03_hereafter
 unit_label: The Doubt When a Man Is Dead
 title: The Doubt When a Man Is Dead
 unit_type: sutra
-sanskrit_devanagari: "येयं प्रेते विचिकित्सा मनुष्ये अस्तीत्य् एके नायम् अस्तीति चैके ।  एतद् विद्याम् अनुशिष्टस् त्वयाहं\
-  \ वराणाम् एष वरस् तृतीयः । \nदेवैर् अत्रापि विचिकित्सितं पुरा न हि सुज्ञेयम् अणुर् एष धर्मः ।  अन्यं वरं नचिकेतो वृणीष्व\
-  \ मा मोपरोत्सीर् अति मा सृजैनम् । \nदेवैर् अत्रापि विचिकित्सितं किल त्वं च मृत्यो यन् न सुज्ञेयम् आत्थ ।  वक्ता चास्य त्वादृग्\
-  \ अन्यो न लभ्यो नान्यो वरस् तुल्य एतस्य कश्चित् । \nशतायुषः पुत्रपौत्रान् वृणीष्व बहून् पशून् हस्तिहिरण्यम् अश्वान् ।  भूमेर्\
-  \ महद् आयतनं वृणीष्व स्वयं च जीव शरदो यावद् इच्छसि । \nएतत् तुल्यं यदि मन्यसे वरं वृणीष्व वित्तं चिरजीविकां च ।  महाभूमौ\
-  \ नचिकेतस् त्वम् एधि कामानां त्वा कामभाजं करोमि । \nये ये कामा दुर्लभा मर्त्यलोके सर्वान् कामांश् छन्दतः प्रार्थयस्व । \
-  \ इमा रामाः सरथाः सतूर्या न हीदृशा लम्भनीया मनुष्यैः ।  आभिर् मत्प्रत्ताभिः परिचारयस्व नचिकेतो मरणं मानुप्राक्षीः । \nश्वोभावा\
-  \ मर्त्यस्य यद् अन्तकैतत् सर्वेन्द्रियाणां जरयन्ति तेजः ।  अपि सर्वं जीवितम् अल्पम् एव तवैव वाहास् तव नृत्यगीते । \nन वित्तेन\
-  \ तर्पणीयो मनुष्यो लप्स्यामहे वित्तम् अद्राक्ष्म चेत् त्वा ।  जीविष्यामो यावद् ईशिष्यसि त्वं वरस् तु मे वरणीयः स एव । \n\
-  अजीर्यताम् अमृतानाम् उपेत्य जीर्यन् मर्त्यः क्वधःस्थः प्रजानन् ।  अभिध्यायन् वर्णरतिप्रमोदान् अतिदीर्घे जीविते को रमेत ।\
-  \ \nयस्मिन्न् इदं विचिकित्सन्ति मृत्यो यत् साम्पराये महति ब्रूहि नस् तत् ।  यो ऽयं वरो गूढम् अनुप्रविष्टो नान्यं तस्मान्\
-  \ नचिकेता वृणीते । ।"
-sanskrit_iast: 'yeyaṃ prete vicikitsā manuṣye astīty eke nāyam astīti caike / etad vidyām anuśiṣṭas tvayāhaṃ varāṇām eṣa varas
-  tṛtīyaḥ |
+sanskrit_devanagari: "येयं प्रेते विचिकित्सा मनुष्ये अस्तीत्य् एके नायम् अस्तीति चैके ।  एतद् विद्याम्\
+  \ अनुशिष्टस् त्वयाहं वराणाम् एष वरस् तृतीयः । \nदेवैर् अत्रापि विचिकित्सितं पुरा न हि सुज्ञेयम् अणुर्\
+  \ एष धर्मः ।  अन्यं वरं नचिकेतो वृणीष्व मा मोपरोत्सीर् अति मा सृजैनम् । \nदेवैर् अत्रापि विचिकित्सितं\
+  \ किल त्वं च मृत्यो यन् न सुज्ञेयम् आत्थ ।  वक्ता चास्य त्वादृग् अन्यो न लभ्यो नान्यो वरस् तुल्य एतस्य\
+  \ कश्चित् । \nशतायुषः पुत्रपौत्रान् वृणीष्व बहून् पशून् हस्तिहिरण्यम् अश्वान् ।  भूमेर् महद् आयतनं वृणीष्व\
+  \ स्वयं च जीव शरदो यावद् इच्छसि । \nएतत् तुल्यं यदि मन्यसे वरं वृणीष्व वित्तं चिरजीविकां च ।  महाभूमौ\
+  \ नचिकेतस् त्वम् एधि कामानां त्वा कामभाजं करोमि । \nये ये कामा दुर्लभा मर्त्यलोके सर्वान् कामांश् छन्दतः\
+  \ प्रार्थयस्व ।  इमा रामाः सरथाः सतूर्या न हीदृशा लम्भनीया मनुष्यैः ।  आभिर् मत्प्रत्ताभिः परिचारयस्व\
+  \ नचिकेतो मरणं मानुप्राक्षीः । \nश्वोभावा मर्त्यस्य यद् अन्तकैतत् सर्वेन्द्रियाणां जरयन्ति तेजः ।  अपि\
+  \ सर्वं जीवितम् अल्पम् एव तवैव वाहास् तव नृत्यगीते । \nन वित्तेन तर्पणीयो मनुष्यो लप्स्यामहे वित्तम्\
+  \ अद्राक्ष्म चेत् त्वा ।  जीविष्यामो यावद् ईशिष्यसि त्वं वरस् तु मे वरणीयः स एव । \nअजीर्यताम् अमृतानाम्\
+  \ उपेत्य जीर्यन् मर्त्यः क्वधःस्थः प्रजानन् ।  अभिध्यायन् वर्णरतिप्रमोदान् अतिदीर्घे जीविते को रमेत\
+  \ । \nयस्मिन्न् इदं विचिकित्सन्ति मृत्यो यत् साम्पराये महति ब्रूहि नस् तत् ।  यो ऽयं वरो गूढम् अनुप्रविष्टो\
+  \ नान्यं तस्मान् नचिकेता वृणीते । ।"
+sanskrit_iast: 'yeyaṃ prete vicikitsā manuṣye astīty eke nāyam astīti caike / etad vidyām anuśiṣṭas tvayāhaṃ
+  varāṇām eṣa varas tṛtīyaḥ |
 
-  devair atrāpi vicikitsitaṃ purā na hi sujñeyam aṇur eṣa dharmaḥ / anyaṃ varaṃ naciketo vṛṇīṣva mā moparotsīr ati mā sṛjainam
-  |
+  devair atrāpi vicikitsitaṃ purā na hi sujñeyam aṇur eṣa dharmaḥ / anyaṃ varaṃ naciketo vṛṇīṣva mā moparotsīr
+  ati mā sṛjainam |
 
-  devair atrāpi vicikitsitaṃ kila tvaṃ ca mṛtyo yan na sujñeyam āttha / vaktā cāsya tvādṛg anyo na labhyo nānyo varas tulya
-  etasya kaścit |
+  devair atrāpi vicikitsitaṃ kila tvaṃ ca mṛtyo yan na sujñeyam āttha / vaktā cāsya tvādṛg anyo na labhyo
+  nānyo varas tulya etasya kaścit |
 
-  śatāyuṣaḥ putrapautrān vṛṇīṣva bahūn paśūn hastihiraṇyam aśvān / bhūmer mahad āyatanaṃ vṛṇīṣva svayaṃ ca jīva śarado yāvad
-  icchasi |
+  śatāyuṣaḥ putrapautrān vṛṇīṣva bahūn paśūn hastihiraṇyam aśvān / bhūmer mahad āyatanaṃ vṛṇīṣva svayaṃ
+  ca jīva śarado yāvad icchasi |
 
-  etat tulyaṃ yadi manyase varaṃ vṛṇīṣva vittaṃ cirajīvikāṃ ca / mahābhūmau naciketas tvam edhi kāmānāṃ tvā kāmabhājaṃ karomi
-  |
+  etat tulyaṃ yadi manyase varaṃ vṛṇīṣva vittaṃ cirajīvikāṃ ca / mahābhūmau naciketas tvam edhi kāmānāṃ
+  tvā kāmabhājaṃ karomi |
 
-  ye ye kāmā durlabhā martyaloke sarvān kāmāṃś chandataḥ prārthayasva / imā rāmāḥ sarathāḥ satūryā na hīdṛśā lambhanīyā manuṣyaiḥ
-  / ābhir matprattābhiḥ paricārayasva naciketo maraṇaṃ mānuprākṣīḥ |
+  ye ye kāmā durlabhā martyaloke sarvān kāmāṃś chandataḥ prārthayasva / imā rāmāḥ sarathāḥ satūryā na
+  hīdṛśā lambhanīyā manuṣyaiḥ / ābhir matprattābhiḥ paricārayasva naciketo maraṇaṃ mānuprākṣīḥ |
 
-  śvobhāvā martyasya yad antakaitat sarvendriyāṇāṃ jarayanti tejaḥ / api sarvaṃ jīvitam alpam eva tavaiva vāhās tava nṛtyagīte
-  |
+  śvobhāvā martyasya yad antakaitat sarvendriyāṇāṃ jarayanti tejaḥ / api sarvaṃ jīvitam alpam eva tavaiva
+  vāhās tava nṛtyagīte |
 
-  na vittena tarpaṇīyo manuṣyo lapsyāmahe vittam adrākṣma cet tvā / jīviṣyāmo yāvad īśiṣyasi tvaṃ varas tu me varaṇīyaḥ sa
-  eva |
+  na vittena tarpaṇīyo manuṣyo lapsyāmahe vittam adrākṣma cet tvā / jīviṣyāmo yāvad īśiṣyasi tvaṃ varas
+  tu me varaṇīyaḥ sa eva |
 
-  ajīryatām amṛtānām upetya jīryan martyaḥ kvadhaḥsthaḥ prajānan / abhidhyāyan varṇaratipramodān atidīrghe jīvite ko rameta
-  |
+  ajīryatām amṛtānām upetya jīryan martyaḥ kvadhaḥsthaḥ prajānan / abhidhyāyan varṇaratipramodān atidīrghe
+  jīvite ko rameta |
 
-  yasminn idaṃ vicikitsanti mṛtyo yat sāmparāye mahati brūhi nas tat / yo ''yaṃ varo gūḍham anupraviṣṭo nānyaṃ tasmān naciketā
-  vṛṇīte ||'
-translation_literal: 'Naciketas said: There is that doubt when a man is dead—some saying he is; others, he is not. This I
-  should like to know, taught by thee; this is the third of my boons. Death offered sons, wealth, and long life instead; Naciketas
-  refused: No man can be made happy by wealth. Tell us what there is in that great Hereafter.'
-commentary: 'Naciketas refuses the second boon—sons, wealth, long life, vast lands—with a precision that cuts to the Upaniṣad''s
-  central wager. Death himself offers the conventional goods (putrapautrān, wealth, cattle, horses, land), the very things
-  a householder accumulates across lifetimes. But Naciketas names them as *happiness-makers*—and rejects them. The refusal
-  is not ascetic posturing; it is epistemic. He says these goods cannot secure sukham (happiness, flourishing). The move is
-  radical because it relocates the question of what matters from *quantity of life* (śatayu, hundred years) to *quality of
-  knowing*. The doubt he names—*vicikitsā*—is not mere skepticism about afterlife. It is the doubt that *splits* the gods
-  themselves (devair atrāpi vicikitsitam). Even the devas cannot easily know this subtle dharma (aṇur eṣa dharmaḥ—this dharma
-  is atomic, minute, hard to grasp). Yama''s resistance—offering more boons, warning Naciketas not to press further—is itself
-  pedagogical. It tests whether the student will trade the ultimate question for comfort. Naciketas holds firm. He will not
-  be seduced into the realm of *parokṣa* (indirect, mediated knowledge). He demands *aparokṣa*—direct, immediate knowing of
-  what persists when the body falls away. The third boon becomes the hinge: all prior teaching depends on answering *this*
+  yasminn idaṃ vicikitsanti mṛtyo yat sāmparāye mahati brūhi nas tat / yo ''yaṃ varo gūḍham anupraviṣṭo
+  nānyaṃ tasmān naciketā vṛṇīte ||'
+translation_literal: 'Naciketas said: There is that doubt when a man is dead—some saying he is; others,
+  he is not. This I should like to know, taught by thee; this is the third of my boons. Death offered
+  sons, wealth, and long life instead; Naciketas refused: No man can be made happy by wealth. Tell us
+  what there is in that great Hereafter.'
+commentary: 'Naciketas refuses the second boon—sons, wealth, long life, vast lands—with a precision that
+  cuts to the Upaniṣad''s central wager. Death himself offers the conventional goods (putrapautrān, wealth,
+  cattle, horses, land), the very things a householder accumulates across lifetimes. But Naciketas names
+  them as *happiness-makers*—and rejects them. The refusal is not ascetic posturing; it is epistemic.
+  He says these goods cannot secure sukham (happiness, flourishing). The move is radical because it relocates
+  the question of what matters from *quantity of life* (śatayu, hundred years) to *quality of knowing*.
+  The doubt he names—*vicikitsā*—is not mere skepticism about afterlife. It is the doubt that *splits*
+  the gods themselves (devair atrāpi vicikitsitam). Even the devas cannot easily know this subtle dharma
+  (aṇur eṣa dharmaḥ—this dharma is atomic, minute, hard to grasp). Yama''s resistance—offering more boons,
+  warning Naciketas not to press further—is itself pedagogical. It tests whether the student will trade
+  the ultimate question for comfort. Naciketas holds firm. He will not be seduced into the realm of *parokṣa*
+  (indirect, mediated knowledge). He demands *aparokṣa*—direct, immediate knowing of what persists when
+  the body falls away. The third boon becomes the hinge: all prior teaching depends on answering *this*
   doubt.
 
 
   Key Terms
 
 
-  **vicikitsā** — Doubt that splits even the gods; not mere skepticism but the fundamental uncertainty about what persists
-  beyond death, which motivates the entire inquiry.
+  **vicikitsā** — Doubt that splits even the gods; not mere skepticism but the fundamental uncertainty
+  about what persists beyond death, which motivates the entire inquiry.
 
-  **aparokṣa** — Direct, unmediated knowledge; immediate experiential knowing, as opposed to parokṣa (indirect knowledge),
-  which Naciketas demands regarding the nature of the self after death.
+  **aparokṣa** — Direct, unmediated knowledge; immediate experiential knowing, as opposed to parokṣa (indirect
+  knowledge), which Naciketas demands regarding the nature of the self after death.
 
-  **sukham** — Happiness or flourishing; the ultimate good that Naciketas argues cannot be secured through conventional acquisitions
-  (wealth, sons, long life) but only through liberating knowledge.
+  **sukham** — Happiness or flourishing; the ultimate good that Naciketas argues cannot be secured through
+  conventional acquisitions (wealth, sons, long life) but only through liberating knowledge.
 
-  **aṇur eṣa dharmaḥ** — This dharma is atomic, minute, subtle—the teaching about what persists is difficult to grasp and
-  requires direct realization, not mere intellectual assent.
+  **aṇur eṣa dharmaḥ** — This dharma is atomic, minute, subtle—the teaching about what persists is difficult
+  to grasp and requires direct realization, not mere intellectual assent.
 
 
   Cross-Tradition Resonances
 
 
-  **Plato, Apology 40c–41a:** Socrates faces death with equanimity, refusing to abandon the pursuit of truth (the examined
-  life) for comfort or conventional goods, and expresses uncertainty about the afterlife while maintaining that virtue matters
-  more than survival. Divergence: Socrates remains agnostic about the afterlife itself, whereas Naciketas presses for direct
-  knowledge of what lies beyond; Socrates'' doubt is epistemological restraint, Naciketas'' is a demand for revelation.
+  **Plato, Apology 40c–41a:** Socrates faces death with equanimity, refusing to abandon the pursuit of
+  truth (the examined life) for comfort or conventional goods, and expresses uncertainty about the afterlife
+  while maintaining that virtue matters more than survival. Divergence: Socrates remains agnostic about
+  the afterlife itself, whereas Naciketas presses for direct knowledge of what lies beyond; Socrates''
+  doubt is epistemological restraint, Naciketas'' is a demand for revelation.
 
-  **Bhagavad Gītā 2.11–30 (Kṛṣṇa''s teaching on the ātman):** Kṛṣṇa teaches Arjuna that the self is eternal and indestructible,
-  and that attachment to conventional goods (wealth, progeny, kingdom) obscures this truth; aparokṣa knowledge of the ātman
-  is the ultimate aim. Divergence: The Gītā situates this teaching within dharma and duty (Arjuna must fight), whereas Naciketas''
-  inquiry is purely contemplative; the Gītā emphasizes action informed by knowledge, while the Upaniṣad emphasizes knowledge
-  itself.
+  **Bhagavad Gītā 2.11–30 (Kṛṣṇa''s teaching on the ātman):** Kṛṣṇa teaches Arjuna that the self is eternal
+  and indestructible, and that attachment to conventional goods (wealth, progeny, kingdom) obscures this
+  truth; aparokṣa knowledge of the ātman is the ultimate aim. Divergence: The Gītā situates this teaching
+  within dharma and duty (Arjuna must fight), whereas Naciketas'' inquiry is purely contemplative; the
+  Gītā emphasizes action informed by knowledge, while the Upaniṣad emphasizes knowledge itself.
 
-  **Samyutta Nikāya 22.86 (Pāli Canon, on anattā):** The Buddha teaches that clinging to the belief in a permanent self causes
-  suffering, and that direct insight (paccakkha) into impermanence and non-self is liberating, rejecting conventional pursuits
-  as sources of lasting happiness. Divergence: The Buddha denies a permanent ātman altogether, whereas Naciketas and Yama
-  affirm an eternal self; the Buddhist path emphasizes the cessation of craving, while the Upaniṣadic path emphasizes realization
-  of the ātman''s identity with Brahman.'
-insight: Naciketas refuses the second boon—sons, wealth, long life, vast lands—with a precision that cuts to the Upaniṣad's
-  central wager.
-practice: 'When next you receive an offer of security—money, status, comfort, time—name it aloud or in writing as what it
-  is, then ask yourself: does this answer the question of what I am? Sit with the gap between the two for one full breath-cycle
-  before deciding.'
+  **Samyutta Nikāya 22.86 (Pāli Canon, on anattā):** The Buddha teaches that clinging to the belief in
+  a permanent self causes suffering, and that direct insight (paccakkha) into impermanence and non-self
+  is liberating, rejecting conventional pursuits as sources of lasting happiness. Divergence: The Buddha
+  denies a permanent ātman altogether, whereas Naciketas and Yama affirm an eternal self; the Buddhist
+  path emphasizes the cessation of craving, while the Upaniṣadic path emphasizes realization of the ātman''s
+  identity with Brahman.'
+insight: Naciketas refuses the second boon—sons, wealth, long life, vast lands—with a precision that cuts
+  to the Upaniṣad's central wager.
+practice: 'When next you receive an offer of security—money, status, comfort, time—name it aloud or in
+  writing as what it is, then ask yourself: does this answer the question of what I am? Sit with the gap
+  between the two for one full breath-cycle before deciding.'
 upaya: ''
 themes:
 - breath
@@ -122,75 +129,80 @@ editorial_score: 0
 pratibha_layers:
 - kind: original
   label: Original
-  body: "येयं प्रेते विचिकित्सा मनुष्ये अस्तीत्य् एके नायम् अस्तीति चैके ।  एतद् विद्याम् अनुशिष्टस् त्वयाहं वराणाम् एष वरस्\
-    \ तृतीयः । \nदेवैर् अत्रापि विचिकित्सितं पुरा न हि सुज्ञेयम् अणुर् एष धर्मः ।  अन्यं वरं नचिकेतो वृणीष्व मा मोपरोत्सीर्\
-    \ अति मा सृजैनम् । \nदेवैर् अत्रापि विचिकित्सितं किल त्वं च मृत्यो यन् न सुज्ञेयम् आत्थ ।  वक्ता चास्य त्वादृग् अन्यो\
-    \ न लभ्यो नान्यो वरस् तुल्य एतस्य कश्चित् । \nशतायुषः पुत्रपौत्रान् वृणीष्व बहून् पशून् हस्तिहिरण्यम् अश्वान् ।  भूमेर्\
-    \ महद् आयतनं वृणीष्व स्वयं च जीव शरदो यावद् इच्छसि । \nएतत् तुल्यं यदि मन्यसे वरं वृणीष्व वित्तं चिरजीविकां च ।  महाभूमौ\
-    \ नचिकेतस् त्वम् एधि कामानां त्वा कामभाजं करोमि । \nये ये कामा दुर्लभा मर्त्यलोके सर्वान् कामांश् छन्दतः प्रार्थयस्व ।\
-    \  इमा रामाः सरथाः सतूर्या न हीदृशा लम्भनीया मनुष्यैः ।  आभिर् मत्प्रत्ताभिः परिचारयस्व नचिकेतो मरणं मानुप्राक्षीः । \n\
-    श्वोभावा मर्त्यस्य यद् अन्तकैतत् सर्वेन्द्रियाणां जरयन्ति तेजः ।  अपि सर्वं जीवितम् अल्पम् एव तवैव वाहास् तव नृत्यगीते\
-    \ । \nन वित्तेन तर्पणीयो मनुष्यो लप्स्यामहे वित्तम् अद्राक्ष्म चेत् त्वा ।  जीविष्यामो यावद् ईशिष्यसि त्वं वरस् तु मे\
-    \ वरणीयः स एव । \nअजीर्यताम् अमृतानाम् उपेत्य जीर्यन् मर्त्यः क्वधःस्थः प्रजानन् ।  अभिध्यायन् वर्णरतिप्रमोदान् अतिदीर्घे\
-    \ जीविते को रमेत । \nयस्मिन्न् इदं विचिकित्सन्ति मृत्यो यत् साम्पराये महति ब्रूहि नस् तत् ।  यो ऽयं वरो गूढम् अनुप्रविष्टो\
+  body: "येयं प्रेते विचिकित्सा मनुष्ये अस्तीत्य् एके नायम् अस्तीति चैके ।  एतद् विद्याम् अनुशिष्टस् त्वयाहं\
+    \ वराणाम् एष वरस् तृतीयः । \nदेवैर् अत्रापि विचिकित्सितं पुरा न हि सुज्ञेयम् अणुर् एष धर्मः ।  अन्यं\
+    \ वरं नचिकेतो वृणीष्व मा मोपरोत्सीर् अति मा सृजैनम् । \nदेवैर् अत्रापि विचिकित्सितं किल त्वं च मृत्यो\
+    \ यन् न सुज्ञेयम् आत्थ ।  वक्ता चास्य त्वादृग् अन्यो न लभ्यो नान्यो वरस् तुल्य एतस्य कश्चित् । \n\
+    शतायुषः पुत्रपौत्रान् वृणीष्व बहून् पशून् हस्तिहिरण्यम् अश्वान् ।  भूमेर् महद् आयतनं वृणीष्व स्वयं\
+    \ च जीव शरदो यावद् इच्छसि । \nएतत् तुल्यं यदि मन्यसे वरं वृणीष्व वित्तं चिरजीविकां च ।  महाभूमौ नचिकेतस्\
+    \ त्वम् एधि कामानां त्वा कामभाजं करोमि । \nये ये कामा दुर्लभा मर्त्यलोके सर्वान् कामांश् छन्दतः प्रार्थयस्व\
+    \ ।  इमा रामाः सरथाः सतूर्या न हीदृशा लम्भनीया मनुष्यैः ।  आभिर् मत्प्रत्ताभिः परिचारयस्व नचिकेतो\
+    \ मरणं मानुप्राक्षीः । \nश्वोभावा मर्त्यस्य यद् अन्तकैतत् सर्वेन्द्रियाणां जरयन्ति तेजः ।  अपि सर्वं\
+    \ जीवितम् अल्पम् एव तवैव वाहास् तव नृत्यगीते । \nन वित्तेन तर्पणीयो मनुष्यो लप्स्यामहे वित्तम् अद्राक्ष्म\
+    \ चेत् त्वा ।  जीविष्यामो यावद् ईशिष्यसि त्वं वरस् तु मे वरणीयः स एव । \nअजीर्यताम् अमृतानाम् उपेत्य\
+    \ जीर्यन् मर्त्यः क्वधःस्थः प्रजानन् ।  अभिध्यायन् वर्णरतिप्रमोदान् अतिदीर्घे जीविते को रमेत । \n\
+    यस्मिन्न् इदं विचिकित्सन्ति मृत्यो यत् साम्पराये महति ब्रूहि नस् तत् ।  यो ऽयं वरो गूढम् अनुप्रविष्टो\
     \ नान्यं तस्मान् नचिकेता वृणीते । ।"
   layer_provenance: sourced
 - kind: iast
   label: IAST
-  body: 'yeyaṃ prete vicikitsā manuṣye astīty eke nāyam astīti caike / etad vidyām anuśiṣṭas tvayāhaṃ varāṇām eṣa varas tṛtīyaḥ
-    |
+  body: 'yeyaṃ prete vicikitsā manuṣye astīty eke nāyam astīti caike / etad vidyām anuśiṣṭas tvayāhaṃ
+    varāṇām eṣa varas tṛtīyaḥ |
 
-    devair atrāpi vicikitsitaṃ purā na hi sujñeyam aṇur eṣa dharmaḥ / anyaṃ varaṃ naciketo vṛṇīṣva mā moparotsīr ati mā sṛjainam
-    |
+    devair atrāpi vicikitsitaṃ purā na hi sujñeyam aṇur eṣa dharmaḥ / anyaṃ varaṃ naciketo vṛṇīṣva mā
+    moparotsīr ati mā sṛjainam |
 
-    devair atrāpi vicikitsitaṃ kila tvaṃ ca mṛtyo yan na sujñeyam āttha / vaktā cāsya tvādṛg anyo na labhyo nānyo varas tulya
-    etasya kaścit |
+    devair atrāpi vicikitsitaṃ kila tvaṃ ca mṛtyo yan na sujñeyam āttha / vaktā cāsya tvādṛg anyo na labhyo
+    nānyo varas tulya etasya kaścit |
 
-    śatāyuṣaḥ putrapautrān vṛṇīṣva bahūn paśūn hastihiraṇyam aśvān / bhūmer mahad āyatanaṃ vṛṇīṣva svayaṃ ca jīva śarado yāvad
-    icchasi |
+    śatāyuṣaḥ putrapautrān vṛṇīṣva bahūn paśūn hastihiraṇyam aśvān / bhūmer mahad āyatanaṃ vṛṇīṣva svayaṃ
+    ca jīva śarado yāvad icchasi |
 
-    etat tulyaṃ yadi manyase varaṃ vṛṇīṣva vittaṃ cirajīvikāṃ ca / mahābhūmau naciketas tvam edhi kāmānāṃ tvā kāmabhājaṃ karomi
-    |
+    etat tulyaṃ yadi manyase varaṃ vṛṇīṣva vittaṃ cirajīvikāṃ ca / mahābhūmau naciketas tvam edhi kāmānāṃ
+    tvā kāmabhājaṃ karomi |
 
-    ye ye kāmā durlabhā martyaloke sarvān kāmāṃś chandataḥ prārthayasva / imā rāmāḥ sarathāḥ satūryā na hīdṛśā lambhanīyā
-    manuṣyaiḥ / ābhir matprattābhiḥ paricārayasva naciketo maraṇaṃ mānuprākṣīḥ |
+    ye ye kāmā durlabhā martyaloke sarvān kāmāṃś chandataḥ prārthayasva / imā rāmāḥ sarathāḥ satūryā na
+    hīdṛśā lambhanīyā manuṣyaiḥ / ābhir matprattābhiḥ paricārayasva naciketo maraṇaṃ mānuprākṣīḥ |
 
-    śvobhāvā martyasya yad antakaitat sarvendriyāṇāṃ jarayanti tejaḥ / api sarvaṃ jīvitam alpam eva tavaiva vāhās tava nṛtyagīte
-    |
+    śvobhāvā martyasya yad antakaitat sarvendriyāṇāṃ jarayanti tejaḥ / api sarvaṃ jīvitam alpam eva tavaiva
+    vāhās tava nṛtyagīte |
 
-    na vittena tarpaṇīyo manuṣyo lapsyāmahe vittam adrākṣma cet tvā / jīviṣyāmo yāvad īśiṣyasi tvaṃ varas tu me varaṇīyaḥ
-    sa eva |
+    na vittena tarpaṇīyo manuṣyo lapsyāmahe vittam adrākṣma cet tvā / jīviṣyāmo yāvad īśiṣyasi tvaṃ varas
+    tu me varaṇīyaḥ sa eva |
 
-    ajīryatām amṛtānām upetya jīryan martyaḥ kvadhaḥsthaḥ prajānan / abhidhyāyan varṇaratipramodān atidīrghe jīvite ko rameta
-    |
+    ajīryatām amṛtānām upetya jīryan martyaḥ kvadhaḥsthaḥ prajānan / abhidhyāyan varṇaratipramodān atidīrghe
+    jīvite ko rameta |
 
-    yasminn idaṃ vicikitsanti mṛtyo yat sāmparāye mahati brūhi nas tat / yo ''yaṃ varo gūḍham anupraviṣṭo nānyaṃ tasmān naciketā
-    vṛṇīte ||'
+    yasminn idaṃ vicikitsanti mṛtyo yat sāmparāye mahati brūhi nas tat / yo ''yaṃ varo gūḍham anupraviṣṭo
+    nānyaṃ tasmān naciketā vṛṇīte ||'
 - kind: translation
   label: Pratibha Translation
-  body: 'Naciketas said: There is that doubt when a man is dead—some saying he is; others, he is not. This I should like to
-    know, taught by thee; this is the third of my boons. Death offered sons, wealth, and long life instead; Naciketas refused:
-    No man can be made happy by wealth. Tell us what there is in that great Hereafter.'
+  body: 'Naciketas said: There is that doubt when a man is dead—some saying he is; others, he is not.
+    This I should like to know, taught by thee; this is the third of my boons. Death offered sons, wealth,
+    and long life instead; Naciketas refused: No man can be made happy by wealth. Tell us what there is
+    in that great Hereafter.'
   layer_provenance: public_domain
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Naciketas refuses the second boon—sons, wealth, long life, vast lands—with a precision that cuts to the Upaniṣad''s
-    central wager. Death himself offers the conventional goods (putrapautrān, wealth, cattle, horses, land), the very things
-    a householder accumulates across lifetimes. But Naciketas names them as *happiness-makers*—and rejects them. The refusal
-    is not ascetic posturing; it is epistemic. He says these goods cannot secure sukham (happiness, flourishing). The move
-    is radical because it relocates the question of what matters from *quantity of life* (śatayu, hundred years) to *quality
-    of knowing*. The doubt he names—*vicikitsā*—is not mere skepticism about afterlife. It is the doubt that *splits* the
-    gods themselves (devair atrāpi vicikitsitam). Even the devas cannot easily know this subtle dharma (aṇur eṣa dharmaḥ—this
-    dharma is atomic, minute, hard to grasp). Yama''s resistance—offering more boons, warning Naciketas not to press further—is
-    itself pedagogical. It tests whether the student will trade the ultimate question for comfort. Naciketas holds firm. He
-    will not be seduced into the realm of *parokṣa* (indirect, mediated knowledge). He demands *aparokṣa*—direct, immediate
-    knowing of what persists when the body falls away. The third boon becomes the hinge: all prior teaching depends on answering
-    *this* doubt.'
+  body: 'Naciketas refuses the second boon—sons, wealth, long life, vast lands—with a precision that cuts
+    to the Upaniṣad''s central wager. Death himself offers the conventional goods (putrapautrān, wealth,
+    cattle, horses, land), the very things a householder accumulates across lifetimes. But Naciketas names
+    them as *happiness-makers*—and rejects them. The refusal is not ascetic posturing; it is epistemic.
+    He says these goods cannot secure sukham (happiness, flourishing). The move is radical because it
+    relocates the question of what matters from *quantity of life* (śatayu, hundred years) to *quality
+    of knowing*. The doubt he names—*vicikitsā*—is not mere skepticism about afterlife. It is the doubt
+    that *splits* the gods themselves (devair atrāpi vicikitsitam). Even the devas cannot easily know
+    this subtle dharma (aṇur eṣa dharmaḥ—this dharma is atomic, minute, hard to grasp). Yama''s resistance—offering
+    more boons, warning Naciketas not to press further—is itself pedagogical. It tests whether the student
+    will trade the ultimate question for comfort. Naciketas holds firm. He will not be seduced into the
+    realm of *parokṣa* (indirect, mediated knowledge). He demands *aparokṣa*—direct, immediate knowing
+    of what persists when the body falls away. The third boon becomes the hinge: all prior teaching depends
+    on answering *this* doubt.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'When next you receive an offer of security—money, status, comfort, time—name it aloud or in writing as what it is,
-    then ask yourself: does this answer the question of what I am? Sit with the gap between the two for one full breath-cycle
-    before deciding.'
+  body: 'When next you receive an offer of security—money, status, comfort, time—name it aloud or in writing
+    as what it is, then ask yourself: does this answer the question of what I am? Sit with the gap between
+    the two for one full breath-cycle before deciding.'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -198,4 +210,8 @@ provenance:
   section: Kaṭha Upaniṣad 1.20–1.29
   original_id: KAU_03_HEREAFTER
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: error'
+  qa_issues: The translation conflates multiple verses (1.20-1.29) into a brief summary rather than translating
+    the actual text; Verse 1.21 shows Death (Yama) trying to dissuade Naciketas, not offering alternatives
+    - this is misrepresented; Verses 1.23-1.26 contain Death's detailed offers of worldly pleasures wh
 enriched: true

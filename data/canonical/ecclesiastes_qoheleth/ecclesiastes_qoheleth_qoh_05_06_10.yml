@@ -21,9 +21,9 @@ translation_literal: '(5:6) For amid many dreams, empty vapors, and abundant wor
   you see the oppression of the poor, and the robbery of justice and righteousness, in a province, do
   not be astonished at the matter; for one high above watches over one high above, and higher ones are
   over them. (5:8) Yet the advantage of the land is in all this: a king is served by the field. (5:9)
-  Whoever loves silver will not be satisfied with silver; whoever loves abundance will not be satisfied
-  with yield. This too is vapor. (5:10) When goods increase, those who consume them increase; and what
-  gain is there for their owners except the sight of their eyes?'
+  Whoever loves silver will not be satisfied with silver; whoever loves abundance gains no profit. This
+  too is vapor. (5:10) When goods increase, those who consume them increase; and what benefit is there
+  for their owners except to see it with their eyes?'
 commentary: 'The passage moves from the excess of speech to the excess of wealth. Dreams, הֲבָלִים (havalim,
   “vapors” or “empty things”), and many words can become a fog in which reality is avoided; Qoheleth’s
   brief counterweight is not silence for its own sake, but reverence: “fear God.” This reverence does
@@ -96,5 +96,11 @@ provenance:
     Hebrew)
   verification: 'translation cross-checked (Luna): faithful; original from WLC Hebrew'
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
-    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
+    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation | corrected
+    on independent cross-check with the living scholarly translations (re-rendered from the original,
+    not copied)
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 5:9 - ''whoever loves abundance will not be satisfied with yield''
+    inverts the meaning. The Hebrew ''וּמִֽי־אֹהֵ֥ב בֶּהָמ֖וֹן לֹ֣א תְבוּאָ֑ה'' means ''whoever loves
+    abundance [has] no income/gain'' or'

@@ -119,3 +119,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Vajracchedikā Prajñāpāramitā e-text (Conze/Vaidya ed.)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: The verse line 'māyāvaśyāya budbudam' is rendered as 'an illusion, dew, a bubble' but 'vaśyāya'
+    (or 'avasyāya') typically means 'dewdrop/raindrop' or 'hailstone', not simply 'dew'; the translation
+    loses the concrete noun form; The phrase 'paryavāpnuyāt' (master it/comprehend it fully) is included
+    in

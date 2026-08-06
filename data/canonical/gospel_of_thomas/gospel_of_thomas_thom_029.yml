@@ -10,9 +10,9 @@ sanskrit_devanagari: 'ⲡⲉϫⲉⲓ︤ⲥ︥ ⲉϣϫⲉⲛ̄ⲧⲁⲧⲥⲁⲣ�
   ⲡⲉ ⲁⲗⲗⲁ ⲁⲛⲟⲕ⳿ ϯ ⲙ̄ⲡⲁⲉⲓ ϫⲉⲡⲱ
 
   [ⲥ] ⲁⲧⲉⲉⲓⲛⲟϭ ⲙ̄ ⲁⲥⲟⲩⲱϩ ϩⲛ̄ⲧⲉⲉⲓ'
-translation_literal: 'Jesus said, “If flesh came to be because of spirit, that is a wonder. But if spirit
-  came to be because of body, that is a wonder beyond wonders. Yet I marvel: how has this great [wealth]
-  come to dwell in this …”'
+translation_literal: Jesus said, 'If the flesh came into being because of the spirit, it is a marvel.
+  But if the spirit came into being because of the body, it is a marvel of marvels. Yet I am amazed at
+  how this great wealth has taken up residence in this poverty.'
 commentary: 'The saying turns two possible accounts of embodied life into occasions for astonishment.
   If flesh follows from spirit, the result is wondrous; if spirit follows from body, the wonder becomes
   intensified. Rather than settling a theory of origins, the saying presses the hearer into amazement
@@ -79,5 +79,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''that is a wonder beyond wonders'' (ⲟⲩϣⲡⲏⲣⲉ ⲛ̄ϣⲡⲏⲣⲉ) is mistranslated.
+    The Coptic literally means ''it is a wonder of wonders'' but the standard interpretation across published
+    translations re'

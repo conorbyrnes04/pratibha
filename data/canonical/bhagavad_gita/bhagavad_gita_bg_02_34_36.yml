@@ -183,3 +183,8 @@ provenance:
   section: chapter_02
   original_id: BG_02_34_36
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The phrase "you will come to lightness" is an incorrect rendering of "yāsyasi lāghavam".
+    'Lāghavam' here means 'lightness' in the sense of 'insignificance' or 'disregard', not a physical
+    state.; The phrase "unsayable words" for "avācyavādāṃśca bahūn" is too literal and misses the nuance.
+    'Avācya' me

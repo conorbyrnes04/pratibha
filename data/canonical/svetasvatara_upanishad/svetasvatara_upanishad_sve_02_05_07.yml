@@ -104,3 +104,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 5: ''vi śloka etu pathyeva sūreḥ'' - ''like the sun upon its course'' misses the sense
+    of ''pathyā'' (path/road) and ''sūreḥ'' (of the sun); better rendered as ''like the path/road of the
+    sun'' or ''like a road from the sun''; Verse 7: ''nahi te pūrtam akṣipat'' - ''what has been brought
+    to fullness is not c'

@@ -94,3 +94,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 7:14b, 'so that no one may discover anything that comes after him,' misinterprets
+    the Hebrew phrase 'עַל־דִּבְרַת שֶׁלֹּא יִמְצָא הָאָדָם אַחֲרָיו מְאוּמָה'. This phrase means 'in
+    order that humankind may not find anything after him/it' (i.e., after God or after the divine work/pl

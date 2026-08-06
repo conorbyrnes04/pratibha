@@ -161,3 +161,7 @@ provenance:
   section: chapter_10
   original_id: BG_10_36_38
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: 'The new translation includes a line that is not present in the provided Sanskrit original:
+    ''Among Sāman chants I am Bṛhat-Sāman; among meters, Gāyatrī; among months, Mārgaśīrṣa; among seasons,
+    spring.'' This line belongs to the preceding verse (10.35) and is not part of the given passage (10.36-38).;'

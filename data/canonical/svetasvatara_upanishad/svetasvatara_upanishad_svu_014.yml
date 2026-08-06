@@ -207,3 +207,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 6.8: ''binds Him'' adds a connotation not present in the original, which simply states
+    ''is not found/does not exist''; Verse 6.10: ''extending threads'' is acceptable but ''āvṛṇot'' means
+    ''covered/enveloped'' not just ''veils''; ''entry into Brahman'' for ''brahmāpyayam'' misses the nuance
+    - it means ''attai'

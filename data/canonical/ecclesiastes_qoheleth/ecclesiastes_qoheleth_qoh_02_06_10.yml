@@ -101,3 +101,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 'וּבְנֵי־בַ֖יִת' as 'household-born servants' is too narrow; it refers
+    to those born into one's household, but also more generally to one's household staff or family members,
+    often including those acquired.; The translation of 'שִׁדָּ֥ה וְשִׁדּֽוֹת' as 'a woman, and women'
+    is a si

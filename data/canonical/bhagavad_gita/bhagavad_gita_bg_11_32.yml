@@ -33,17 +33,20 @@ sanskrit_iast: 'śrī bhagavānuvāca
 
 
   ye''vasthitāḥ pratyanīkeṣu yodhāḥ'
-translation_literal: 'The Blessed Lord said: I am Time, grown ripe, world-destroying, engaged here in destroying the worlds.
-  Even without you, all the warriors standing in the opposing armies will cease to be.'
-commentary: 'Agency relocated: slaughter is Time''s work already underway. The contested move in this stretch of the vision
-  is that krishna: i am time grown ripe, destroying worlds; warriors will die even without you. Existentially the line forces
-  a choice about how you relate to overwhelm, agency, and devotion after seeing. Do not aestheticize the theophany; let it
-  revise what you think action, fear, and love are for. The chapter''s pedagogy moves from granted seeing to ethical-devotional
-  walking; this unit is one step on that arc. The teaching''s force is practical: what it claims about reality must reshape
-  attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim will not hold when
-  pressure rises. The teaching''s force is practical: what it claims about reality must reshape attention and choice, or it
-  remains ornamental. If rehearsal does not change in ordinary time, the claim will not hold when pressure rises. Live one
-  concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.'
+translation_literal: 'The Blessed Lord said: I am Time, grown ripe, world-destroying, engaged here in
+  destroying the worlds. Even without you, all the warriors standing in the opposing armies will cease
+  to be.'
+commentary: 'Agency relocated: slaughter is Time''s work already underway. The contested move in this
+  stretch of the vision is that krishna: i am time grown ripe, destroying worlds; warriors will die even
+  without you. Existentially the line forces a choice about how you relate to overwhelm, agency, and devotion
+  after seeing. Do not aestheticize the theophany; let it revise what you think action, fear, and love
+  are for. The chapter''s pedagogy moves from granted seeing to ethical-devotional walking; this unit
+  is one step on that arc. The teaching''s force is practical: what it claims about reality must reshape
+  attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim
+  will not hold when pressure rises. The teaching''s force is practical: what it claims about reality
+  must reshape attention and choice, or it remains ornamental. If rehearsal does not change in ordinary
+  time, the claim will not hold when pressure rises. Live one concrete implication of the claim before
+  the day ends, so the argument becomes conduct rather than ornament.'
 insight: 'Agency relocated: slaughter is Time''s work already underway.'
 practice: Admit endings proceed even without you; ask what role remains.
 upaya: ''
@@ -95,29 +98,31 @@ pratibha_layers:
     ye''vasthitāḥ pratyanīkeṣu yodhāḥ'
 - kind: translation
   label: Pratibha Translation
-  body: 'The Blessed Lord said: I am Time, grown ripe, world-destroying, engaged here in destroying the worlds. Even without
-    you, all the warriors standing in the opposing armies will cease to be.'
+  body: 'The Blessed Lord said: I am Time, grown ripe, world-destroying, engaged here in destroying the
+    worlds. Even without you, all the warriors standing in the opposing armies will cease to be.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Agency relocated: slaughter is Time''s work already underway. The contested move in this stretch of the vision is
-    that krishna: i am time grown ripe, destroying worlds; warriors will die even without you. Existentially the line forces
-    a choice about how you relate to overwhelm, agency, and devotion after seeing. Do not aestheticize the theophany; let
-    it revise what you think action, fear, and love are for. The chapter''s pedagogy moves from granted seeing to ethical-devotional
-    walking; this unit is one step on that arc. The teaching''s force is practical: what it claims about reality must reshape
-    attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the claim will not hold
-    when pressure rises. The teaching''s force is practical: what it claims about reality must reshape attention and choice,
-    or it remains ornamental. If rehearsal does not change in ordinary time, the claim will not hold when pressure rises.
-    Live one concrete implication of the claim before the day ends, so the argument becomes conduct rather than ornament.'
+  body: 'Agency relocated: slaughter is Time''s work already underway. The contested move in this stretch
+    of the vision is that krishna: i am time grown ripe, destroying worlds; warriors will die even without
+    you. Existentially the line forces a choice about how you relate to overwhelm, agency, and devotion
+    after seeing. Do not aestheticize the theophany; let it revise what you think action, fear, and love
+    are for. The chapter''s pedagogy moves from granted seeing to ethical-devotional walking; this unit
+    is one step on that arc. The teaching''s force is practical: what it claims about reality must reshape
+    attention and choice, or it remains ornamental. If rehearsal does not change in ordinary time, the
+    claim will not hold when pressure rises. The teaching''s force is practical: what it claims about
+    reality must reshape attention and choice, or it remains ornamental. If rehearsal does not change
+    in ordinary time, the claim will not hold when pressure rises. Live one concrete implication of the
+    claim before the day ends, so the argument becomes conduct rather than ornament.'
 - kind: key_terms
   label: Key Terms
   items:
   - term: kāla (काल)
-    definition: 'passage key term -> Agency relocated: slaughter is Time''s work already underway. -> default gloss flattens
-      the vision''s force'
+    definition: 'passage key term -> Agency relocated: slaughter is Time''s work already underway. ->
+      default gloss flattens the vision''s force'
     lemma_id: kala
   - term: loka-kṣaya-kṛt (लोकक्षयकृत्)
-    definition: 'paired key term -> Krishna: I am Time grown ripe, destroying worlds; warriors will die even without you.
-      -> soft translation misses structural role'
+    definition: 'paired key term -> Krishna: I am Time grown ripe, destroying worlds; warriors will die
+      even without you. -> soft translation misses structural role'
   layer_provenance: promoted-from-commentary
 - kind: resonances
   label: Cross-Tradition Resonances
@@ -141,3 +146,8 @@ provenance:
   section: chapter_11
   original_id: BG_11_32
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: 'The phrase ''will cease to be'' for ''na bhaviṣyanti'' is too weak; it implies a natural
+    cessation rather than a forceful destruction or non-existence. The original implies they will not
+    exist or survive, specifically in the context of being killed in battle.; The translation ''will cease
+    to be'' for ''na '

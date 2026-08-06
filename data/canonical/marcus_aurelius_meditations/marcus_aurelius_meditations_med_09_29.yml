@@ -104,3 +104,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The phrase "τί ποτε;" is translated as "what is it you are doing?" which is an interpretation
+    rather than a direct translation of the original Greek, which means "what are you, ever?" or "what
+    are you, after all?".; The phrase "ἐὰν διδῶται" is translated as "if the chance is given", which is
+    a reaso

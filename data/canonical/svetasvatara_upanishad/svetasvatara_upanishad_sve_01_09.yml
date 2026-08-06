@@ -82,3 +82,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: The phrase 'one comes to know this threefold reality as Brahman, one finds Brahman' is somewhat
+    redundant and awkward; the original 'yadā vindate brahmam etat' more directly means 'when one finds/realizes
+    this Brahman' or 'when one realizes this as Brahman', referring to the triad just described; Mi

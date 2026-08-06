@@ -16,13 +16,13 @@ sanskrit_iast: 'aṇor aṇīyān mahato mahīyān ātmā guhāyāṃ nihito ''s
 
   vedāham etam ajaraṃ purāṇaṃ sarvātmānaṃ sarvagataṃ vibhutvāt janmanirodhaṃ pravadanti yasya brahmavādino
   hi pravadanti nityam || 21 ||'
-translation_literal: 'Smaller than the small, greater than the great, the Self is lodged in the heart-cave
-  of this living being. Through the lucid settling of the faculties, one who is free of sorrow beholds
-  that desireless One—the Lord in his majesty.
+translation_literal: 'Smaller than the minute, greater than the great, the Self is hidden in the cave
+  of the heart of this creature. One who is free from grief beholds that actionless One, the Lord in his
+  greatness, through the grace of the Creator (or: through the purity of the elements).
 
 
-  I know this One: ageless, primordial, the Self of all, present everywhere by his pervading power. The
-  knowers who speak of Brahman continually declare him to be the cessation of birth, the eternal.'
+  I know this unaging, ancient One, the Self of all, all-pervading through his pervasiveness. Those who
+  speak of Brahman indeed continually declare that birth ceases for one who knows him—the eternal.'
 commentary: 'Verse 20 holds together extremes that ordinary measurement cannot reconcile: the ātman is
   aṇor aṇīyān, “smaller than the small,” and mahato mahīyān, “greater than the great.” It is not located
   as an object among other objects, yet it is nihitaḥ, “placed” or “hidden,” in the guhā, the cave or
@@ -95,5 +95,10 @@ provenance:
     Upaniṣads, 1958); Devanagari transliterated from IAST (round-trip verified)
   verification: 'translation cross-checked (Luna): loose; original from GRETIL'
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen Principal Upaniṣads, 1958)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): akratu translated as ''desireless One'' when it means ''one without will/intention''
+    or ''the actionless'' referring to the Self, not a descriptor of desirelessness; janmanirodhaṃ pravadanti
+    yasya misinterp'

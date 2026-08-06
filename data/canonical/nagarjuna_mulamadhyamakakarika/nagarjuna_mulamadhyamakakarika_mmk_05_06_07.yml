@@ -17,12 +17,12 @@ sanskrit_iast: 'avidyamāne bhāve ca kasyābhāvo bhaviṣyati / bhāvābhāvav
   || 6 ||
 
   tasmānna bhāvo nābhāvo na lakṣyaṃ nāpi lakṣaṇam / ākāśam ākāśasamā dhātavaḥ pañca ye ''pare || 7 ||'
-translation_literal: 'If a real entity is not present, whose nonexistence could there be? And who could
-  apprehend existence and nonexistence as two things with distinct natures?
+translation_literal: 'When an existent is not present, whose nonexistent will there be? And who understands
+  existence and nonexistence as having the nature of existence and nonexistence?
 
 
-  Therefore there is no existent, no nonexistent, no object to be characterized, and no defining characteristic.
-  Space, and the other five elements, are alike in being comparable to space.'
+  Therefore there is neither existent nor nonexistent, neither characterized object nor characteristic.
+  Space and the five other elements are similar to space.'
 commentary: 'Verse 6 presses on the word abhāva, “nonbeing” or “absence.” An absence is not an independent
   thing: it is always the absence of something. Thus, if no bhāva—no established entity—is found, the
   question “whose absence?” cannot be answered. The verse then asks who could know bhāva and abhāva as
@@ -92,5 +92,10 @@ provenance:
     readings); Devanagari transliterated from IAST (round-trip verified)
   verification: 'translation cross-checked (Luna): unknown; original from GRETIL'
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: GRETIL Mūlamadhyamakakārikā e-text (Nāgārjuna; de Jong / Ye critical readings)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 6cd: ''bhāvābhāvavidharmā'' misread as ''two things with distinct
+    natures'' when it means ''having the nature/property of existence and nonexistence'' or ''characterized
+    by existence and nonexistence'';'

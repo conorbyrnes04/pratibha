@@ -19,14 +19,14 @@ sanskrit_devanagari: 'چینیان گفتند ما نقاش‌تر /// رومی�
 
   هر چه اندر ابر ضو بینی و تاب /// آن ز اختر دان و ماه و آفتاب'
 sanskrit_iast: See Original.
-translation_literal: 'The Chinese said, "We are the better painters"; the Greeks said, "Excellence and power are ours." The
-  Chinese asked the king for a hundred colours; the treasury opened. The Greeks said, "Neither design nor colour is fit for
-  our work — only removing rust." They shut the door and burnished, becoming clear and pure as the sky. There is a way from
-  two hundred colours to colourlessness: colour is cloud; colourlessness is moon. Whatever light you see in cloud comes from
-  star, moon, and sun.'
-commentary: 'Two spiritual technologies: accumulation of forms vs polishing the receptacle. The contested claim is that colourlessness
-  is not blankness but maximal receptivity — moon receiving light. Existentially: are you adding more colours to the room,
-  or removing rust?
+translation_literal: 'The Chinese said, "We are the better painters"; the Greeks said, "Excellence and
+  power are ours." The Chinese asked the king for a hundred colours; the treasury opened. The Greeks said,
+  "Neither design nor colour is fit for our work — only removing rust." They shut the door and burnished,
+  becoming clear and pure as the sky. There is a way from two hundred colours to colourlessness: colour
+  is cloud; colourlessness is moon. Whatever light you see in cloud comes from star, moon, and sun.'
+commentary: 'Two spiritual technologies: accumulation of forms vs polishing the receptacle. The contested
+  claim is that colourlessness is not blankness but maximal receptivity — moon receiving light. Existentially:
+  are you adding more colours to the room, or removing rust?
 
 
   Key Terms
@@ -46,15 +46,17 @@ commentary: 'Two spiritual technologies: accumulation of forms vs polishing the 
 
   **Pratyabhijñāhṛdayam (recognition vs accumulation):** Both privilege clearing over adding content.
 
-  *Divergence:* Recognition reclaims authorship of display; Rūmī''s Greeks become mirrors of another''s art.
+  *Divergence:* Recognition reclaims authorship of display; Rūmī''s Greeks become mirrors of another''s
+  art.
 
 
   **Dōgen (forgetting the self):** Both empty the clutching subject.
 
-  *Divergence:* Dōgen''s forgetting is verified by myriad dharmas; Rūmī''s polish mirrors painted forms more beautifully.'
+  *Divergence:* Dōgen''s forgetting is verified by myriad dharmas; Rūmī''s polish mirrors painted forms
+  more beautifully.'
 insight: 'Two spiritual technologies: accumulation of forms vs polishing the receptacle.'
-practice: 'Choose one habit of spiritual "colour collecting" (books, opinions, techniques). For one day, practice only rust-removal:
-  drop one reactive pattern each time it appears.'
+practice: 'Choose one habit of spiritual "colour collecting" (books, opinions, techniques). For one day,
+  practice only rust-removal: drop one reactive pattern each time it appears.'
 upaya: ''
 themes:
 - heart
@@ -88,16 +90,16 @@ pratibha_layers:
   body: See Original.
 - kind: translation
   label: Pratibha Translation
-  body: 'The Chinese said, "We are the better painters"; the Greeks said, "Excellence and power are ours." The Chinese asked
-    the king for a hundred colours; the treasury opened. The Greeks said, "Neither design nor colour is fit for our work —
-    only removing rust." They shut the door and burnished, becoming clear and pure as the sky. There is a way from two hundred
-    colours to colourlessness: colour is cloud; colourlessness is moon. Whatever light you see in cloud comes from star, moon,
-    and sun.'
+  body: 'The Chinese said, "We are the better painters"; the Greeks said, "Excellence and power are ours."
+    The Chinese asked the king for a hundred colours; the treasury opened. The Greeks said, "Neither design
+    nor colour is fit for our work — only removing rust." They shut the door and burnished, becoming clear
+    and pure as the sky. There is a way from two hundred colours to colourlessness: colour is cloud; colourlessness
+    is moon. Whatever light you see in cloud comes from star, moon, and sun.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Two spiritual technologies: accumulation of forms vs polishing the receptacle. The contested claim is that colourlessness
-    is not blankness but maximal receptivity — moon receiving light. Existentially: are you adding more colours to the room,
-    or removing rust?
+  body: 'Two spiritual technologies: accumulation of forms vs polishing the receptacle. The contested
+    claim is that colourlessness is not blankness but maximal receptivity — moon receiving light. Existentially:
+    are you adding more colours to the room, or removing rust?
 
 
     Key Terms
@@ -117,16 +119,18 @@ pratibha_layers:
 
     **Pratyabhijñāhṛdayam (recognition vs accumulation):** Both privilege clearing over adding content.
 
-    *Divergence:* Recognition reclaims authorship of display; Rūmī''s Greeks become mirrors of another''s art.
+    *Divergence:* Recognition reclaims authorship of display; Rūmī''s Greeks become mirrors of another''s
+    art.
 
 
     **Dōgen (forgetting the self):** Both empty the clutching subject.
 
-    *Divergence:* Dōgen''s forgetting is verified by myriad dharmas; Rūmī''s polish mirrors painted forms more beautifully.'
+    *Divergence:* Dōgen''s forgetting is verified by myriad dharmas; Rūmī''s polish mirrors painted forms
+    more beautifully.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Choose one habit of spiritual "colour collecting" (books, opinions, techniques). For one day, practice only rust-removal:
-    drop one reactive pattern each time it appears.'
+  body: 'Choose one habit of spiritual "colour collecting" (books, opinions, techniques). For one day,
+    practice only rust-removal: drop one reactive pattern each time it appears.'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -134,3 +138,8 @@ provenance:
   section: I.3467–3477
   original_id: RUM_016
   source_reference: Rūmī, *Mathnawī* I.3467–3477 (Chinese and Greek painters)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Line 3468: ''کر و فر'' (kar o far) means ''glory and splendor/majesty'' not ''excellence
+    and power''; Line 3470: ''the treasury opened'' is passive/intransitive, but original ''خزینه باز
+    کرد آن ارجمند'' means ''that noble one (the king) opened the treasury'' - agent omitted; Line 3471:
+    ''the treasury opened'' sho'

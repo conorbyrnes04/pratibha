@@ -13,8 +13,8 @@ sanskrit_devanagari: 'अन्धं तमः प्रविशन्ति �
 sanskrit_iast: 'andham tamah pravisanti ye''sambhutim upasate |
 
   tato bhuya iva te tamo ya u sambhutyam ratah || 12 ||'
-translation_literal: Those devoted only to the unmanifest enter darkness; those devoted only to the manifest enter deeper
-  darkness.
+translation_literal: Into blind darkness enter those who worship non-becoming; into darkness still greater,
+  as it were, enter those who delight in becoming.
 commentary: 'Another anti-reduction teaching: both poles must be understood.
 
 
@@ -43,17 +43,20 @@ commentary: 'Another anti-reduction teaching: both poles must be understood.
   Cross-Tradition Resonances
 
 
-  **Nāgārjuna, Mūlamadhyamakakārikā 15.10:** Nāgārjuna rejects fixation on either existence or nonexistence, paralleling the
-  Upaniṣad’s warning against exclusive devotion to manifest or unmanifest reality. Divergence: Madhyamaka frames both poles
-  as empty of intrinsic nature, whereas this verse retains the paired categories as realities requiring integrated understanding.
+  **Nāgārjuna, Mūlamadhyamakakārikā 15.10:** Nāgārjuna rejects fixation on either existence or nonexistence,
+  paralleling the Upaniṣad’s warning against exclusive devotion to manifest or unmanifest reality. Divergence:
+  Madhyamaka frames both poles as empty of intrinsic nature, whereas this verse retains the paired categories
+  as realities requiring integrated understanding.
 
-  **Dao De Jing 42:** The Daoist account of the One giving rise to the many joins an unnameable source with manifested multiplicity
-  rather than reducing truth to either alone. Divergence: The Dao De Jing presents cosmogenic generation from the Dao, while
-  the Īśā passage primarily warns of spiritual darkness caused by exclusive attachment.
+  **Dao De Jing 42:** The Daoist account of the One giving rise to the many joins an unnameable source
+  with manifested multiplicity rather than reducing truth to either alone. Divergence: The Dao De Jing
+  presents cosmogenic generation from the Dao, while the Īśā passage primarily warns of spiritual darkness
+  caused by exclusive attachment.
 
-  **Plato, Republic 509d–511e:** Plato distinguishes visible things from intelligible reality and treats confinement to either
-  sensory appearances or inadequate abstractions as a failure of genuine knowledge. Divergence: Plato ultimately privileges
-  the intelligible Forms, whereas the Upaniṣadic verse explicitly cautions against sole absorption in the unmanifest as well.'
+  **Plato, Republic 509d–511e:** Plato distinguishes visible things from intelligible reality and treats
+  confinement to either sensory appearances or inadequate abstractions as a failure of genuine knowledge.
+  Divergence: Plato ultimately privileges the intelligible Forms, whereas the Upaniṣadic verse explicitly
+  cautions against sole absorption in the unmanifest as well.'
 insight: 'Another anti-reduction teaching: both poles must be understood.'
 practice: Alternate abstract contemplation and concrete service in the same day.
 upaya: ''
@@ -79,7 +82,8 @@ pratibha_layers:
     tato bhuya iva te tamo ya u sambhutyam ratah || 12 ||'
 - kind: translation
   label: Pratibha Translation
-  body: Those devoted only to the unmanifest enter darkness; those devoted only to the manifest enter deeper darkness.
+  body: Into blind darkness enter those who worship non-becoming; into darkness still greater, as it were,
+    enter those who delight in becoming.
 - kind: commentary
   label: Pratibha Commentary
   body: 'Another anti-reduction teaching: both poles must be understood.
@@ -102,18 +106,21 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
-    resonance: 'Both texts reject reduction to a single pole: the Heart Sutra''s prajñāpāramitā mantra ''does not lie'' because
-      it encompasses both emptiness and form (the two truths), just as Isavasya warns that devotion to only unmanifest or
-      only manifest leads to darkness. Each demands holding both poles simultaneously.'
-    divergence: The Upanishad frames the error as spiritual blindness (entering darkness), while the Heart Sutra frames the
-      mantra's power as its non-duality itself—truth emerges from the integration, not from avoiding a trap.
+    resonance: 'Both texts reject reduction to a single pole: the Heart Sutra''s prajñāpāramitā mantra
+      ''does not lie'' because it encompasses both emptiness and form (the two truths), just as Isavasya
+      warns that devotion to only unmanifest or only manifest leads to darkness. Each demands holding
+      both poles simultaneously.'
+    divergence: The Upanishad frames the error as spiritual blindness (entering darkness), while the Heart
+      Sutra frames the mantra's power as its non-duality itself—truth emerges from the integration, not
+      from avoiding a trap.
     passage_id: heart_sutra.hs_003
   - citation: Svetasvatara Upanishad — Fire by Friction, Self by Om
-    resonance: 'Both use a paradox of hiddenness and manifestation: the Svetasvatara''s Self is ''unseen yet not absent''
-      in wood, requiring ''right means'' to bring forth, structurally mirrors Isavasya''s teaching that neither pole alone
-      suffices—both latent and manifest dimensions must be engaged.'
-    divergence: Svetasvatara emphasizes technique (friction, means) to reveal what is already present, while Isavasya emphasizes
-      the error of exclusive devotion to one pole, making the correction epistemic rather than methodological.
+    resonance: 'Both use a paradox of hiddenness and manifestation: the Svetasvatara''s Self is ''unseen
+      yet not absent'' in wood, requiring ''right means'' to bring forth, structurally mirrors Isavasya''s
+      teaching that neither pole alone suffices—both latent and manifest dimensions must be engaged.'
+    divergence: Svetasvatara emphasizes technique (friction, means) to reveal what is already present,
+      while Isavasya emphasizes the error of exclusive devotion to one pole, making the correction epistemic
+      rather than methodological.
     passage_id: svetasvatara_upanishad.svu_008
   layer_provenance: generated_grounded
 appendixes: []
@@ -123,3 +130,10 @@ provenance:
   section: teaching_passage
   original_id: ISA_018
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Incorrect identification of ''asambhūti'' as ''unmanifest'' - the term
+    means ''non-becoming/destruction/death''; Incorrect identification of ''sambhūti'' as ''manifest''
+    - the term means ''becoming/creation/birt'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

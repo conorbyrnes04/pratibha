@@ -13,16 +13,16 @@ sanskrit_devanagari: '(232) vacīpakopaṃ rakkheyya vācāya saṃvuto siyā va
 
   (234) kāyena saṃvutā dhīrā atho vācāya saṃvutā manasā saṃvutā dhīrā te ve suparisaṃvutā. Kodhavaggo
   sattarasamo'
-translation_literal: '232. One should guard against anger in speech; let one be restrained in what one
-  says. Abandon misconduct of speech, and practice good conduct in speech.
+translation_literal: '232. One should guard against offense in speech; let one be restrained in speech.
+  Having abandoned misconduct of speech, let one practice good conduct in speech.
 
 
-  233. One should guard against anger in mind; let one be restrained in mind. Abandon misconduct of mind,
-  and practice good conduct in mind.
+  233. One should guard against offense in mind; let one be restrained in mind. Having abandoned misconduct
+  of mind, let one practice good conduct in mind.
 
 
-  234. The steadfast are restrained in body, and also restrained in speech; the steadfast are restrained
-  in mind. They are indeed thoroughly well restrained.
+  234. The wise are restrained in body, and also restrained in speech; the wise are restrained in mind.
+  They are indeed thoroughly well restrained.
 
 
   The seventeenth chapter: Anger.'
@@ -94,5 +94,10 @@ provenance:
   original_reliability: SOURCED — Fausböll romanized-Pali edition of the Dhammapada (1900)
   verification: 'translation cross-checked (Luna): faithful; original from Fausböll Pali'
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): vacīpakopaṃ means ''offense/transgression of speech'' not ''anger in speech'';
+    manopakopaṃ means ''offense/transgression of mind'' not ''anger in mind''; The term ''pakopa'' here
+    refers to agitation/offense/tra'

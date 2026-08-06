@@ -9,9 +9,9 @@ unit_type: logion
 sanskrit_devanagari: ⲡⲉϫⲁⲩ ⲛⲁϥ⳿ ⲛ̄ϭⲓⲛⲉϥ⳿ⲙⲁⲑⲏⲧⲏⲥ ϫⲉⲛ̄ⲧⲁⲕⲛⲓⲙ⳿ ⲉⲕϫⲱ ⲛ̄ⲛⲁⲓ̈ ⲛⲁⲛ⳿ ϩⲛ̄ⲛⲉϯϫⲱ ⲟⲩ ⲛⲏⲧⲛ̄ ⲛ̄ⲧⲉⲧⲛ̄ⲉⲓⲙⲉ
   ⲁⲛ ϫⲉⲁⲛⲟⲕ⳿ⲛⲓⲙ ⲁⲗⲗⲁ ⲛ̄ⲧⲱⲧⲛ̄ ⲁⲧⲉⲧⲛ̄ϣⲱⲡⲉ ⲛ̄ⲑⲉ ⲛ̄ⲛⲓⲓ̈ⲟⲩⲇⲁⲓⲟⲥ ϫⲉⲥⲉⲙⲉ ⲙ̄ⲡϣⲏⲛ ⲥⲉ ⲙ̄ⲡⲉϥⲕⲁⲣⲡⲟⲥ ⲁⲩⲱ ⲥⲉⲙⲉ ⲙ̄ⲡⲕⲁⲣⲡⲟⲥ
   ⲥⲉⲙⲟⲥⲧⲉ ⲙ̄ⲡϣⲏⲛ
-translation_literal: 'His disciples said to him, “Who are you, to speak these things to us?” He said to
-  them, “From the things I tell you, you do not know who I am. Rather, you have become like the Jews:
-  they love the tree and hate its fruit; and they love the fruit and hate the tree.”'
+translation_literal: 'His disciples said to him, "Who are you that you say these things to us?" He said
+  to them, "From what I say to you, you do not understand who I am. But you have become like the Jews:
+  they love the tree, they do not love its fruit; and they love the fruit, they do not love the tree."'
 commentary: 'The disciples ask for an identity, but Jesus answers by turning their question back upon
   their hearing. What he says should disclose who he is; their failure is not a lack of information but
   a failure to recognize the relation between the speaker and his speech. To separate the words from the
@@ -78,5 +78,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''and hate its fruit'' is not present in the original after
+    ''they love the tree''; The phrase ''and hate the tree'' is not present in the original after ''they
+    love the fruit''; The original uses '

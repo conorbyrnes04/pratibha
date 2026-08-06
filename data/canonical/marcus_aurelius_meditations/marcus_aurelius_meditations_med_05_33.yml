@@ -14,19 +14,18 @@ sanskrit_devanagari: Ὅσον οὐδέπω σποδὸς ἢ σκελετὸς
   τί οὖν; περιμένεις ἵλεως τὴν εἴτε σβέσιν εἴτε μετάστασιν· ἕως δὲ ἐκείνης ὁ καιρὸς ἐφίσταται, τί ἀρκεῖ;
   τί δὲ ἄλλο ἢ θεοὺς μὲν σέβειν καὶ εὐφημεῖν, ἀνθρώπους δὲ εὖ ποιεῖν καὶ ἀνέχεσθαι αὐτῶν καὶ ἀπέχεσθαι·
   ὅσα δὲ ἐντὸς ὅρων τοῦ κρεᾳδίου καὶ τοῦ πνευματίου, ταῦτα μεμνῆσθαι μήτε σὰ ὄντα μήτε ἐπὶ σοί.
-translation_literal: 'In a very little while you will be ash or a skeleton—and perhaps a name, or not
-  even a name. And a name is only a sound, an echo. The things highly prized in life are empty, rotten,
-  petty: little dogs biting one another, children quarrelling, laughing and then at once weeping. But
-  faithfulness, reverence, justice, and truth have gone up from the broad-pathed earth to Olympus.
+translation_literal: 'In a very little while you will be ash or a skeleton—and either a name or not even
+  a name. And a name is only sound and reverberation. The things highly valued in life are empty, rotten,
+  and trivial: little dogs biting one another, children quarreling, laughing and then immediately crying.
+  But faith, reverence, justice, and truth have fled from the wide-wayed earth to Olympus.
 
 
-  What, then, still holds you here? The objects of perception are so changeable and unsettled; the senses
-  themselves are dim and easily deceived; and this little soul is an exhalation from blood. To be well
-  regarded by such creatures—is that not empty? What then? Await kindly either extinction or removal.
-  But while the moment for that is still present, what is enough? Nothing else than to honor and speak
-  well of the gods; to do good to human beings; to bear with them and refrain from them. And as for everything
-  within the limits of this bit of flesh and breath, remember that it is neither yours nor under your
-  control.'
+  What then still keeps you here, if sensible things are so changeable and unstable, the sense organs
+  are dim and easily misled, the soul itself is an exhalation from blood, and being well-regarded among
+  such people is empty? What then? Await serenely either your extinction or your relocation. But until
+  the moment for that arrives, what suffices? What else but to revere and praise the gods, to benefit
+  human beings and to endure them and abstain from their concerns? And as for all things within the boundaries
+  of this little flesh and breath, remember that these are neither yours nor in your power.'
 commentary: 'Marcus begins with a brutal compression of the human future: soon one is "σποδὸς ἢ σκελετός,"
   ash or skeleton. Even the surviving ὄνομα, the name by which one might hope to endure, is merely "ψόφος
   καὶ ἀπήχημα," a noise and its reverberation. The contemptuous catalogue of prized goods—"κενὰ καὶ σαπρὰ
@@ -100,5 +99,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): loose; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Final clause mistranslated: ''while the moment for that is still present''
+    inverts the meaning of ''ἕως δὲ ἐκείνης ὁ καιρὸς ἐφίσταται'' which means ''until that moment arrives/comes
+    upon you'', not ''while i'

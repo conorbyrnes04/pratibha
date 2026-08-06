@@ -13,15 +13,15 @@ sanskrit_devanagari: Εἴ ποτε εἶδες χεῖρα ἀποκεκομμ�
   ἄλλῳ μέρει οὐδενὶ θεὸς ἐπέτρεψεν, χωρισθέντι καὶ διακοπέντι πάλιν συνελθεῖν, ἀλλὰ σκέψαι τὴν χρηστότητα
   ᾗ τετίμηκε τὸν ἄνθρωπον· καὶ γὰρ ἵνα τὴν ἀρχὴν μὴ ἀπορραγῇ ἀπὸ τοῦ ὅλου ἐπ̓ αὐτῷ ἐποίησε, καὶ ἀπορραγέντι
   πάλιν ἐπανελθεῖν καὶ συμφῦναι καὶ τὴν τοῦ μέρους τάξιν ἀπολαβεῖν ἐποίησεν.
-translation_literal: 'Have you ever seen a hand, a foot, or a head cut off and lying somewhere apart from
-  the rest of the body? That is what a person makes of himself, so far as it depends on him, when he refuses
-  what happens, tears himself away, or acts in some unsocial manner. At some point you have thrown yourself
-  out of the union according to nature; for you were made as a part. But here is the admirable thing:
-  you are allowed to join yourself to yourself again. To no other part has god granted this: once separated
-  and cut away, it cannot come back together. Consider, then, the kindness with which he has honored the
-  human being. He made it depend on him not to break away from the Whole in the first place; and, if he
-  has broken away, he made it possible for him to return, grow together again, and recover his proper
-  rank as a part.'
+translation_literal: 'Have you ever seen a severed hand or foot or head lying somewhere apart from the
+  rest of the body? That is what a person makes of himself, insofar as it lies within him, when he refuses
+  to accept what befalls him and separates himself, or when he does something antisocial. You have cast
+  yourself off at some point from your natural unity; for you were born a part, but now you have cut yourself
+  off. Yet here is something remarkable: it is in your power to unite yourself again. God has granted
+  to no other part, once separated and severed, to come together again. But consider the kindness by which
+  he has honored the human being: he made it within his power not to be torn away from the whole in the
+  first place, and even when torn away, he made it possible to return, to grow back together, and to resume
+  his position as a part.'
 commentary: 'Marcus begins with an image deliberately difficult to look at: a severed hand, foot, or head
   lying apart from its σώμα, its body. The point is not merely that isolation hurts. One who rejects τὸ
   συμβαῖνον, “what befalls,” or performs something ἀκοινώνητον, something hostile to fellowship, enacts
@@ -92,5 +92,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''you are allowed to join yourself to yourself again'' (ἑνῶσαι
+    σεαυτόν) is mistranslated. The Greek means ''to unite yourself'' or ''to rejoin/reunite yourself''
+    (with the whole), not ''to join yo'

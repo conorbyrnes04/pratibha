@@ -51,10 +51,11 @@ sanskrit_iast: 'arjuna uvāca
 
 
   yatholbenāvṛto garbhastathā tenedamāvṛtam'
-translation_literal: 'Arjuna said: Then by what is this person impelled to do evil, even unwillingly,
-  as if engaged by force, O Vārṣṇeya? The Blessed Lord said: This is desire [kāma], this is anger [krodha],
-  arisen from the rajas quality — a great eater, a great evil; know it here as the enemy. As fire is covered
-  by smoke, a mirror by dirt, and an embryo by the caul, so is this covered by that.'
+translation_literal: 'Arjuna said: Then by what is a person impelled to commit sin, even unwillingly,
+  O Vārṣṇeya, as if forced by compulsion? The Blessed Lord said: It is desire, it is anger, born of the
+  quality of rajas — voracious, greatly sinful; know this to be the enemy here. As fire is veiled by smoke,
+  as a mirror by dust, and as an embryo is enveloped by the amnion, so is this (wisdom/knowledge) covered
+  by that (desire).'
 commentary: 'Arjuna’s question names the experience of compulsion against one’s wish — evil as forced
   enlistment. Krishna identifies a single enemy appearing as desire and as anger, born of rajas: craving’s
   heat and the rage of frustrated craving. The contested move is diagnostic unity: kāma and krodha are
@@ -138,10 +139,11 @@ pratibha_layers:
     yatholbenāvṛto garbhastathā tenedamāvṛtam'
 - kind: translation
   label: Pratibha Translation
-  body: 'Arjuna said: Then by what is this person impelled to do evil, even unwillingly, as if engaged
-    by force, O Vārṣṇeya? The Blessed Lord said: This is desire [kāma], this is anger [krodha], arisen
-    from the rajas quality — a great eater, a great evil; know it here as the enemy. As fire is covered
-    by smoke, a mirror by dirt, and an embryo by the caul, so is this covered by that.'
+  body: 'Arjuna said: Then by what is a person impelled to commit sin, even unwillingly, O Vārṣṇeya, as
+    if forced by compulsion? The Blessed Lord said: It is desire, it is anger, born of the quality of
+    rajas — voracious, greatly sinful; know this to be the enemy here. As fire is veiled by smoke, as
+    a mirror by dust, and as an embryo is enveloped by the amnion, so is this (wisdom/knowledge) covered
+    by that (desire).'
 - kind: commentary
   label: Pratibha Commentary
   body: 'Arjuna’s question names the experience of compulsion against one’s wish — evil as forced enlistment.
@@ -198,3 +200,10 @@ provenance:
   section: chapter_03
   original_id: BG_03_36_38
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Final clause inverts the relationship: the original states ''so is THIS
+    (knowledge/discrimination) covered by THAT (desire)'', but the translation renders it as ''so is this
+    covered by that'' without clar'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

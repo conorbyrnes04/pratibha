@@ -110,3 +110,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'The phrase ''μὴ τὸ πανύστατον ἔσται τις ὁ καθ̓ αὑτὸν λέγων'' is rendered as ''yet will there
+    not, at the very end, be someone saying privately'' but the Greek more directly means ''will there
+    not at the very last be someone who says to himself'' - the interrogative structure should be clearer;
+    The phrase '

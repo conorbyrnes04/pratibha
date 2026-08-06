@@ -125,3 +125,8 @@ provenance:
   section: chapter_03
   original_id: BG_03_26
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation misinterprets 'joṣayet sarvakarmāṇi' as 'delighting them in all actions'.
+    The verb 'joṣayet' here means 'should encourage' or 'should cause to perform', referring to the wise
+    person encouraging the ignorant to perform their duties, not delighting the ignorant in their actions.;
+    T

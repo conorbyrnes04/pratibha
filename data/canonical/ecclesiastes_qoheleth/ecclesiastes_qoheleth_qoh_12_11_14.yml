@@ -100,3 +100,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 12:11: ''masters of gathered sayings'' (ba''alei asuppot) is awkward; the phrase more
+    likely refers to ''collected sayings'' or ''anthologies'' themselves being like firmly planted nails,
+    not their ''masters''; Verse 12:13: ''the whole calling of humankind'' adds interpretive weight to
+    ''kol ha-adam'' whic'

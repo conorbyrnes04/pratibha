@@ -86,3 +86,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The final clause 'כִּי־אֵינָם יוֹדְעִים לַעֲשׂוֹת רָע' is mistranslated. It does not mean
+    'for they do not know that they are doing evil' but rather 'for they do not know how to do evil' or
+    'they do not know that they are doing wrong/badly' in the sense of being ignorant of the consequences
+    or impro

@@ -81,3 +81,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation misinterprets the referent of 'τούτῳ' in the first clause. The original
+    Greek 'ἐναποπνεύσας μὲν τούτῳ, ἐξ οὖ καθ̓ ἡμέραν ἀναπνέω' refers to breathing out into the *air* (or
+    breath/spirit), not 'that from which I draw breath each day' which could be interpreted as the general
+    envi

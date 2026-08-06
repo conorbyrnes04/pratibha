@@ -7,8 +7,8 @@ unit_label: Three Lenses for Every Impression
 title: Three Lenses for Every Impression
 unit_type: chapter
 sanskrit_devanagari: Διηνεκῶς καὶ ἐπὶ πάσης, εἰ οἶόν τε, φαντασίας φυσιολογεῖν, παθολογεῖν, διαλεκτικεύεσθαι.
-translation_literal: Continually, and with every impression if you can, examine it through nature, through
-  the passions, and through dialectic.
+translation_literal: Continuously and upon every impression, if possible, apply physical analysis, ethical
+  analysis, and logical analysis.
 commentary: 'Marcus gives a compressed rule for the instant at which a φαντασία—an appearance or impression—arrives
   in the mind. Rather than merely receiving what seems to be the case, he urges a threefold examination.
   To φυσιολογεῖν is to see the event within nature: what causes are at work, what larger order contains
@@ -77,5 +77,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): φυσιολογεῖν means ''to examine/analyze according to physics/natural philosophy''
+    not ''through nature''; παθολογεῖν means ''to examine/analyze according to ethics/the passions'' not
+    ''through the passions''; '

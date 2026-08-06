@@ -7,12 +7,10 @@ unit_label: Loving Without Possession
 title: Loving Without Possession
 unit_type: verse
 section: Enchiridion 3
-translation_literal: With regard to whatever objects give you delight, are useful, or are deeply loved,
-  remember to tell yourself of what general nature they are, beginning from the most insignificant things.
-  If, for example, you are fond of a specific ceramic cup, remind yourself that it is only ceramic cups
-  in general of which you are fond. Then, if it breaks, you will not be disturbed. If you kiss your child,
-  or your wife, say that you only kiss things which are human, and thus you will not be disturbed if either
-  of them dies.
+translation_literal: Concerning each of the things that delight you or provide utility or are loved, remember
+  to say to yourself what sort of thing it is, starting from the smallest things. If you love a pot, say
+  'I love a pot.' For when it is broken, you will not be disturbed. If you kiss your little child or your
+  wife, say that you are kissing a human being. For when they die, you will not be disturbed.
 commentary: 'Epictetus does not ask us to deny that a cup is useful or that a child is beloved. He asks
   us to correct the judgment that makes their continued presence a condition of our peace. Naming the
   object by its general kind—“a ceramic cup,” “a human being”—interrupts the imagination’s claim that
@@ -63,11 +61,16 @@ tags: []
 provenance:
   collection: Epictetus Works
   english_source: Elizabeth Carter, The Enchiridion of Epictetus (1758, public domain; classics.mit.edu).
-    Source of record — not model-generated.
+    Source of record — not model-generated. | corrected on independent cross-check with the living scholarly
+    translations (re-rendered from the original, not copied)
   verification: PD source (Carter 1758)
   original_reliability: SOURCED — Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
     (Greek original added to a previously translation-only unit)
   original_source: Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''ceramic cups in general'' misrepresents the Greek. The text
+    says ''χύτραν στέργω'' (I love a pot/jug), not ''pots in general.'' The point is to remind yourself
+    of WHAT KIND OF THING it is (a po'
 sanskrit_devanagari: ἐφʼ ἑκάστου τῶν ψυχαγωγούντων ἢ χρείαν παρεχόντων ἢ στεργομένων μέμνησο ἐπιλέγειν,
   ὁποῖόν ἐστιν, ἀπὸ τῶν σμικροτάτων ἀρξάμενος· ἂν χύτραν στέργῃς, ὅτι χύτραν στέργω. κατεαγείσης γὰρ αὐτῆς
   οὐ ταραχθήσῃ· ἂν παιδίον σαυτοῦ καταφιλῇς ἢ γυναῖκα, ὅτι ἄνθρωπον καταφιλεῖς· ἀποθανόντος γὰρ οὐ ταραχθήσῃ.

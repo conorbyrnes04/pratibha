@@ -8,8 +8,8 @@ title: The Judges Within
 unit_type: chapter
 sanskrit_devanagari: Δίελθε ἔσω ἔσω εἰς τὰ ἡγεμονικὰ αὐτῶν καὶ ὄψει τίνας κριτὰς φοβῇ, οἵους καὶ περὶ
   αὑτῶν ὄντας κριτάς.
-translation_literal: 'Go deep inside, into the ruling centers within them, and you will see what kind
-  of judges you fear: people who are judges even in their own case.'
+translation_literal: Pass inward, deep into their ruling faculties, and you will see what sort of judges
+  you fear — the very kind who are judges concerning themselves.
 commentary: 'Marcus directs the reader to move “ἔσω ἔσω,” inward and inward, not into his own mind this
   time but into that of the people whose verdict he dreads. Their apparent authority weakens once one
   considers their own ἡγεμονικά, their governing or directive faculties: the inward centers from which
@@ -77,5 +77,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''περὶ αὑτῶν'' means ''concerning themselves'' or ''about themselves,''
+    not ''in their own case.'' The original conveys that these people are poor judges even when evaluating
+    themselves, not that t'

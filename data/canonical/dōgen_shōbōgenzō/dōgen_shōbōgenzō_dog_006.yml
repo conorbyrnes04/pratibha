@@ -57,14 +57,15 @@ sanskrit_devanagari: '人の悟をうる、水に月のやどるがごとし。
 
   直下も、一滴も、しかある、としるべし。'
 sanskrit_iast: See Original.
-translation_literal: Realization is like the moon reflected in water. The moon does not get wet; the water is not broken.
-  Though the light is wide and great, it lodges in a small bit of water; the whole moon and even the whole sky lodge in a
-  dewdrop. Realization does not break a person as the moon does not pierce water. A person does not obstruct realization as
-  a dewdrop does not obstruct the heavens' moon. Depth is the measure of the height. Investigate the length of time through
-  the large and small of water, and discern the breadth of moon and sky.
-commentary: 'Awakening is intimate without violence — reflection without rupture. The contested fear that realization annihilates
-  the person is refused; so is the fear that the person blocks realization. Existentially: stop treating insight as either
-  self-destruction or self-possession; let it lodge like moonlight.
+translation_literal: Realization is like the moon reflected in water. The moon does not get wet; the water
+  is not broken. Though the light is wide and great, it lodges in a small bit of water; the whole moon
+  and even the whole sky lodge in a dewdrop. Realization does not break a person as the moon does not
+  pierce water. A person does not obstruct realization as a dewdrop does not obstruct the heavens' moon.
+  Depth is the measure of the height. Investigate the length of time through the large and small of water,
+  and discern the breadth of moon and sky.
+commentary: 'Awakening is intimate without violence — reflection without rupture. The contested fear that
+  realization annihilates the person is refused; so is the fear that the person blocks realization. Existentially:
+  stop treating insight as either self-destruction or self-possession; let it lodge like moonlight.
 
 
   Key Terms
@@ -79,7 +80,8 @@ commentary: 'Awakening is intimate without violence — reflection without ruptu
   Cross-Tradition Resonances
 
 
-  **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality of accumulation.
+  **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality
+  of accumulation.
 
   *Divergence:* Eckhart empties for God''s occupancy; Dōgen''s forgetting is verified by the myriad dharmas.
 
@@ -88,8 +90,8 @@ commentary: 'Awakening is intimate without violence — reflection without ruptu
 
   *Divergence:* Zhuangzi often ends in spontaneous ease; Dōgen binds forgetting to practice-realization.'
 insight: Awakening is intimate without violence — reflection without rupture.
-practice: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story. Then write one
-  sentence: what verified me just now?'
+practice: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story.
+  Then write one sentence: what verified me just now?'
 upaya: ''
 themes:
 - fear
@@ -159,16 +161,18 @@ pratibha_layers:
   body: See Original.
 - kind: translation
   label: Pratibha Translation
-  body: Realization is like the moon reflected in water. The moon does not get wet; the water is not broken. Though the light
-    is wide and great, it lodges in a small bit of water; the whole moon and even the whole sky lodge in a dewdrop. Realization
-    does not break a person as the moon does not pierce water. A person does not obstruct realization as a dewdrop does not
-    obstruct the heavens' moon. Depth is the measure of the height. Investigate the length of time through the large and small
-    of water, and discern the breadth of moon and sky.
+  body: Realization is like the moon reflected in water. The moon does not get wet; the water is not broken.
+    Though the light is wide and great, it lodges in a small bit of water; the whole moon and even the
+    whole sky lodge in a dewdrop. Realization does not break a person as the moon does not pierce water.
+    A person does not obstruct realization as a dewdrop does not obstruct the heavens' moon. Depth is
+    the measure of the height. Investigate the length of time through the large and small of water, and
+    discern the breadth of moon and sky.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Awakening is intimate without violence — reflection without rupture. The contested fear that realization annihilates
-    the person is refused; so is the fear that the person blocks realization. Existentially: stop treating insight as either
-    self-destruction or self-possession; let it lodge like moonlight.
+  body: 'Awakening is intimate without violence — reflection without rupture. The contested fear that
+    realization annihilates the person is refused; so is the fear that the person blocks realization.
+    Existentially: stop treating insight as either self-destruction or self-possession; let it lodge like
+    moonlight.
 
 
     Key Terms
@@ -183,9 +187,11 @@ pratibha_layers:
     Cross-Tradition Resonances
 
 
-    **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality of accumulation.
+    **Meister Eckhart, *Von Abegescheidenheit* (immovable hinge / emptying):** Both refuse a spirituality
+    of accumulation.
 
-    *Divergence:* Eckhart empties for God''s occupancy; Dōgen''s forgetting is verified by the myriad dharmas.
+    *Divergence:* Eckhart empties for God''s occupancy; Dōgen''s forgetting is verified by the myriad
+    dharmas.
 
 
     **Zhuangzi (forgetting the self / useless tree):** Both loosen fixed self-measure.
@@ -193,8 +199,8 @@ pratibha_layers:
     *Divergence:* Zhuangzi often ends in spontaneous ease; Dōgen binds forgetting to practice-realization.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story. Then write one sentence:
-    what verified me just now?'
+  body: 'Read the passage once slowly aloud. Sit three minutes without using it to improve a self-story.
+    Then write one sentence: what verified me just now?'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -202,3 +208,4 @@ provenance:
   section: Genjōkōan
   original_id: DOG_006
   source_reference: Dōgen, *Shōbōgenzō*, Genjōkōan §6
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'

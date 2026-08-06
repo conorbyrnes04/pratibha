@@ -44,25 +44,26 @@ sanskrit_iast: yaśca khalu punaḥ subhūte kulaputro vā kuladuhitā vā yāva
   sa eva piṇḍagrāho (vajr, vaidya 89) 'bhaviṣyat | yaścaiva piṇḍagrāhastathāgatena bhāṣitaḥ, agrāhaḥ sa
   tathāgatena bhāṣitaḥ | tenocyate piṇḍagrāha iti | bhagavānāha - piṇḍagrāhaścaiva subhūte avyavahāro
   'nabhilāpyaḥ | na sa dharmo nādharmaḥ | sa ca bālapṛthagjanairudgṛhītaḥ || 30 ||
-translation_literal: 'Again, Subhūti, suppose a son or daughter of good family were to make ink from world-realms
-  as numerous as the motes of earth-dust in the three-thousand great thousandfold world-system, through
-  an exertion as incalculable as, say, an accumulation of atoms. What do you think, Subhūti: would that
-  accumulation of atoms be great?
+translation_literal: 'Again, Subhūti, if some son or daughter of good family were to take all the earth-particles
+  in as many world-systems as there are earth-particles in a three-thousand great thousandfold world-system,
+  and were to grind them into powder with incalculable effort, so that it would become like an accumulation
+  of atoms — what do you think, Subhūti: would that accumulation of atoms be great?
 
 
-  Subhūti said: “It would indeed be great, Blessed One; it would indeed be great, Sugata. That accumulation
-  of atoms would be great. Why? If, Blessed One, an accumulation of atoms truly existed as a great accumulation,
-  the Blessed One would not have called it an ‘accumulation of atoms.’ Why? The accumulation of atoms
-  of which the Tathāgata has spoken has been spoken of by the Tathāgata as no accumulation. Therefore
-  it is called an ‘accumulation of atoms.’ And the three-thousand great thousandfold world-system of which
-  the Tathāgata has spoken has been spoken of by the Tathāgata as a non-element. Therefore it is called
-  a three-thousand great thousandfold world-system. Why? If, Blessed One, a world-system truly existed,
-  that itself would be a grasping of a mass. Yet the grasping of a mass of which the Tathāgata has spoken
-  has been spoken of by the Tathāgata as no grasping. Therefore it is called a grasping of a mass.”
+  Subhūti said: "It would indeed be great, Blessed One; it would indeed be great, Sugata. That accumulation
+  of atoms would be great. Why? If, Blessed One, that accumulation of atoms truly existed as great, the
+  Blessed One would not have spoken of it as an ''accumulation of atoms.'' Why? That which the Tathāgata
+  has spoken of as an accumulation of atoms has been spoken of by the Tathāgata as no accumulation. Therefore
+  it is called an ''accumulation of atoms.'' And that which the Tathāgata has spoken of as a three-thousand
+  great thousandfold world-system has been spoken of by the Tathāgata as a non-element. Therefore it is
+  called a three-thousand great thousandfold world-system. Why? If, Blessed One, a world-system truly
+  existed, that would be a grasping at a totality. Yet that which the Tathāgata has spoken of as grasping
+  at a totality has been spoken of by the Tathāgata as no grasping. Therefore it is called grasping at
+  a totality."
 
 
-  The Blessed One said: “And this grasping of a mass, Subhūti, lies beyond ordinary transaction and cannot
-  be put into words. It is neither a dharma nor a non-dharma; yet foolish ordinary people seize upon it.”'
+  The Blessed One said: "And grasping at a totality, Subhūti, is inexpressible and unutterable. It is
+  neither a dharma nor a non-dharma; yet foolish ordinary people grasp at it."'
 commentary: 'The passage moves deliberately through enormous scales: dust-motes, ink, atom-aggregates,
   and the vast trisāhasramahāsāhasra world-system. Its point is not that such things are simply absent,
   nor that conventional speech must stop. Rather, the text repeatedly performs a twofold gesture: “an
@@ -136,5 +137,10 @@ provenance:
     transliterated from IAST (round-trip verified)
   verification: 'translation cross-checked (Luna): faithful; original from GRETIL'
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: GRETIL Vajracchedikā Prajñāpāramitā e-text (Conze/Vaidya ed.)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The opening phrase ''make ink from world-realms'' misinterprets the Sanskrit.
+    The text describes grinding earth-particles from world-systems into ink/powder, not making ink FROM
+    world-realms themselves.'

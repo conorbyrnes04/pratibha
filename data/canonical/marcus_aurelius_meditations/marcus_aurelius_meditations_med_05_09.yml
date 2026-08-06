@@ -100,3 +100,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation renders 'εὐγνωμοσύνη' as 'sound-mindedness', which is an incorrect meaning.
+    'Εὐγνωμοσύνη' means gratitude or thankfulness.; The translation renders 'ὁσιότης' as 'reverence',
+    which is too narrow. 'Ὁσιότης' refers to piety, holiness, or a sense of duty towards the gods or sacred
+    things

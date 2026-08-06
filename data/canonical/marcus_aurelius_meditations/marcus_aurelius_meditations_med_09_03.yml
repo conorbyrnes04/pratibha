@@ -20,24 +20,20 @@ sanskrit_devanagari: Μὴ καταφρόνει θανάτου, ἀλλὰ εὐ
   νῦν δ̓ ὁρᾷς ὅσος ὁ κόπος ἐν τῇ διαφωνίᾳ τῆς συμβιώσεως, ὥστε εἰπεῖν· θᾶττον ἔλθοις, ὦ θάνατε, μή που
   καὶ αὐτὸς ἐπιλάθωμαι ἐμαυτοῦ.
 translation_literal: 'Do not despise death; rather, be well disposed toward it, since it too is one of
-  the things nature wills. For dying is like being born and growing old; like growing, reaching one’s
-  prime, bringing forth teeth, beard, and gray hair; like sowing, carrying a child, giving birth, and
-  all the other natural activities that the seasons of life bring. Such too is dissolution.
-
-
-  A reasonable human stance, then, is neither to recoil from death altogether, nor to thrust against it,
-  nor to meet it with proud defiance, but to await it as one natural activity among others. As you now
-  wait for the child to come forth from your wife’s womb, so receive the hour in which your little soul
-  will fall away from this enclosing sheath.
-
-
-  But if you want some small private support, one that can readily reach the heart, what will make death
-  easier is to consider the things you are about to leave behind, and the dispositions with which your
-  soul will no longer be entangled. You should neither take offense at people nor cease to care for them,
-  but bear with them gently; yet remember that your departure will not be from people who share your convictions.
-  That alone, if anything, might have drawn you back and kept you in life: the chance to live with those
-  who hold the same principles. But now you see how great is the labor produced by discord in living together—enough
-  to say, “Come quickly, Death, lest I too forget myself.”'
+  the things nature wills. For dying is like being young and growing old; like growing and reaching one''s
+  prime; like bringing forth teeth, beard, and gray hairs; like begetting, carrying in the womb, and giving
+  birth; and all the other natural functions that the seasons of life bring—such too is dissolution. It
+  belongs to a reasoning human being, then, not to be reckless or violent or disdainful toward death,
+  but to await it as one of nature''s operations. And just as you now await when the embryo will come
+  forth from your wife''s womb, so accept the hour when your little soul will fall out from this husk.
+  But if you also want a common touchstone that strikes the heart, what will make you most ready for death
+  is reflecting on the things from which you are about to depart, and the characters with which your soul
+  will no longer be mixed up. For you must by no means be offended at them, but rather care for them and
+  bear with them mildly; yet remember that your release will not be from people who share your principles.
+  For this alone, if anything, might have held you back and kept you in life—if you were permitted to
+  live with those who have acquired the same convictions. But now you see how great is the weariness in
+  the discord of living together, so that you say: ''Come more quickly, O Death, lest perhaps I too forget
+  myself.'''
 commentary: 'Marcus refuses both contempt for death and theatrical courage before it. Death is not an
   alien catastrophe but one item among the things “nature wills” (ἡ φύσις ἐθέλει). His long sequence—birth,
   aging, bodily maturation, sowing, pregnancy, childbirth—places τὸ διαλυθῆναι, “being dissolved,” within
@@ -106,5 +102,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''καὶ μεθ̓ ἠθῶν οὐκέτι ἔσται ἡ ... ἐμπεφυρμένη'' is mistranslated.
+    The subject is ''ἡ ψυχή'' (the soul), which is implied and continues from the previous context. The
+    translation ''the dispositi'

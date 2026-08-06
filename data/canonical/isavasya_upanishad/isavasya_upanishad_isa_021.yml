@@ -13,7 +13,8 @@ sanskrit_devanagari: 'हिरण्मयेन पात्रेण सत�
 sanskrit_iast: 'hiranmayena patrena satyasyapihitam mukham |
 
   tat tvam pusan apavrnu satyadharmaya drstaye || 15 ||'
-translation_literal: The face of Truth is covered by a golden lid; O Sun, remove it for the seer devoted to truth.
+translation_literal: The face of Truth is covered by a golden lid; O Sun, remove it for the seer devoted
+  to truth.
 commentary: 'Even luminous appearances can veil the Real; prayer asks for penetrative seeing.
 
 
@@ -44,17 +45,19 @@ commentary: 'Even luminous appearances can veil the Real; prayer asks for penetr
   Cross-Tradition Resonances
 
 
-  **Plato, Republic 516a–517c:** Plato’s ascent from the cave culminates in seeing the sun, as liberation requires passing
-  beyond compelling appearances toward a higher reality. Divergence: Plato identifies the sun as an image of the Good, whereas
-  this verse addresses the solar power as the agent who removes a veil from Truth.
+  **Plato, Republic 516a–517c:** Plato’s ascent from the cave culminates in seeing the sun, as liberation
+  requires passing beyond compelling appearances toward a higher reality. Divergence: Plato identifies
+  the sun as an image of the Good, whereas this verse addresses the solar power as the agent who removes
+  a veil from Truth.
 
-  **1 Corinthians 13:12:** Paul’s image of seeing indirectly now and face to face later parallels the verse’s longing for
-  unobstructed vision of Truth. Divergence: Paul frames the obscurity in eschatological and relational terms rather than as
-  a luminous cosmic covering removed through an address to Pūṣan.
+  **1 Corinthians 13:12:** Paul’s image of seeing indirectly now and face to face later parallels the
+  verse’s longing for unobstructed vision of Truth. Divergence: Paul frames the obscurity in eschatological
+  and relational terms rather than as a luminous cosmic covering removed through an address to Pūṣan.
 
-  **Pseudo-Dionysius, Mystical Theology 1.3:** Pseudo-Dionysius teaches that divine reality surpasses even brilliant spiritual
-  illumination, echoing the warning that radiance itself can conceal the Real. Divergence: His path enters a divine darkness
-  of apophatic unknowing, while the Upaniṣadic prayer asks for the radiant veil to be lifted for direct sight.'
+  **Pseudo-Dionysius, Mystical Theology 1.3:** Pseudo-Dionysius teaches that divine reality surpasses
+  even brilliant spiritual illumination, echoing the warning that radiance itself can conceal the Real.
+  Divergence: His path enters a divine darkness of apophatic unknowing, while the Upaniṣadic prayer asks
+  for the radiant veil to be lifted for direct sight.'
 insight: Even luminous appearances can veil the Real; prayer asks for penetrative seeing.
 practice: 'Ask: what pleasant appearance in my life is also a concealment?'
 upaya: ''
@@ -105,18 +108,20 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Heraclitus Fragments — Nature Loves to Hide
-    resonance: 'Both texts assert that reality''s true nature is obscured by surface appearance: Heraclitus claims nature
-      actively conceals itself, while Isavasya describes Truth covered by a golden lid. Both require deliberate penetration
-      beyond what naturally presents itself.'
-    divergence: Heraclitus treats concealment as nature's intrinsic tendency (ontological), while Isavasya frames it as a
-      veil removable through devotional prayer and grace—a soteriological rather than metaphysical claim.
+    resonance: 'Both texts assert that reality''s true nature is obscured by surface appearance: Heraclitus
+      claims nature actively conceals itself, while Isavasya describes Truth covered by a golden lid.
+      Both require deliberate penetration beyond what naturally presents itself.'
+    divergence: Heraclitus treats concealment as nature's intrinsic tendency (ontological), while Isavasya
+      frames it as a veil removable through devotional prayer and grace—a soteriological rather than metaphysical
+      claim.
     passage_id: heraclitus_fragments.hfr_p010
   - citation: 'Vijnana Bhairava — Yukti #95'
-    resonance: 'Both texts invert conventional understanding: Vijnana Bhairava declares that what ordinary minds call ''purity''
-      is actually impurity in Śiva''s teaching, while Isavasya warns that even luminous appearances (seemingly pure) can veil
-      the Real. Surface-level perception misleads.'
-    divergence: Vijnana Bhairava critiques conceptual categories themselves as inverted, while Isavasya critiques sensory/phenomenal
-      brightness specifically—one targets thought-structures, the other targets luminous phenomena.
+    resonance: 'Both texts invert conventional understanding: Vijnana Bhairava declares that what ordinary
+      minds call ''purity'' is actually impurity in Śiva''s teaching, while Isavasya warns that even luminous
+      appearances (seemingly pure) can veil the Real. Surface-level perception misleads.'
+    divergence: Vijnana Bhairava critiques conceptual categories themselves as inverted, while Isavasya
+      critiques sensory/phenomenal brightness specifically—one targets thought-structures, the other targets
+      luminous phenomena.
     passage_id: vijnana_bhairava.yukti_095
   layer_provenance: generated_grounded
 appendixes: []
@@ -126,3 +131,8 @@ provenance:
   section: teaching_passage
   original_id: ISA_021
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: '''satyadharmaya'' means ''for one whose dharma is truth'' or ''for the truthful one'', not
+    specifically ''for the seer devoted to truth'' - the word ''drstaye'' means ''for seeing/vision'',
+    so the phrase means ''for the vision of one whose dharma is truth'' or ''for seeing by the truthful
+    one'''

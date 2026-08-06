@@ -79,3 +79,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: error'
+  qa_issues: 'The final clause ''ἐγὼ δὲ τροφὰς τὰς ἐκ τῶν μαθημάτων οὐκ ἔχω καὶ ἐμμένω'' is mistranslated.
+    The speaker (Marcus) is saying he DOES have nourishment from his studies (unlike the poor man who
+    lacks bread), yet still holds fast to reason. The ''δὲ'' marks a contrast: the poor man lacks bread
+    but persevere'

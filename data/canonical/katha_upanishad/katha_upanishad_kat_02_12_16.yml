@@ -133,3 +133,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Kaṭhopaniṣad e-text (after Olivelle, The Early Upaniṣads, 1998)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: In verse 13, 'pravṛhya dharmyam aṇum etam āpya' is mistranslated. 'Pravṛhya' means 'separating'
+    or 'extracting', not 'drawing forth'. The object being separated is 'dharmyam aṇum etam', which refers
+    to this subtle, righteous (or dharma-related) reality, not 'drawing forth this subtle, dharmic realit

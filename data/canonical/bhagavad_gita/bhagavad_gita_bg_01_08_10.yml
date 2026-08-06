@@ -39,10 +39,10 @@ sanskrit_iast: 'bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ|
 
 
   paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam'
-translation_literal: “You yourself, Bhīṣma, Karṇa, and Kṛpa victorious in assemblies of battle; Aśvatthāman,
-  Vikarṇa, and the son of Somadatta as well; and many other heroes who have relinquished life for my sake,
-  wielding varied weapons, all skilled in war. That force of ours, guarded by Bhīṣma, is immeasurable;
-  but this force of theirs, guarded by Bhīma, is measurable — enough.”
+translation_literal: You yourself, Bhīṣma, Karṇa, and Kṛpa victorious in battle; Aśvatthāman, Vikarṇa,
+  and the son of Somadatta as well; and many other heroes who have abandoned their lives for my sake,
+  wielding various weapons, all expert in warfare. That army of ours, protected by Bhīṣma, is insufficient;
+  while this army of theirs, protected by Bhīma, is sufficient.
 commentary: 'The speech climaxes in a paradox of measurement. *Aparyāpta* and *paryāpta* can be read as
   “insufficient/sufficient” or as “unlimited/limited,” and commentators have long heard Duryodhana’s boast
   cracking under its own grammar. The contested claim is that numerical and genealogical superiority still
@@ -115,10 +115,10 @@ pratibha_layers:
     paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam'
 - kind: translation
   label: Pratibha Translation
-  body: “You yourself, Bhīṣma, Karṇa, and Kṛpa victorious in assemblies of battle; Aśvatthāman, Vikarṇa,
-    and the son of Somadatta as well; and many other heroes who have relinquished life for my sake, wielding
-    varied weapons, all skilled in war. That force of ours, guarded by Bhīṣma, is immeasurable; but this
-    force of theirs, guarded by Bhīma, is measurable — enough.”
+  body: You yourself, Bhīṣma, Karṇa, and Kṛpa victorious in battle; Aśvatthāman, Vikarṇa, and the son
+    of Somadatta as well; and many other heroes who have abandoned their lives for my sake, wielding various
+    weapons, all expert in warfare. That army of ours, protected by Bhīṣma, is insufficient; while this
+    army of theirs, protected by Bhīma, is sufficient.
 - kind: commentary
   label: Pratibha Commentary
   body: 'The speech climaxes in a paradox of measurement. *Aparyāpta* and *paryāpta* can be read as “insufficient/sufficient”
@@ -173,3 +173,9 @@ provenance:
   section: chapter_01
   original_id: BG_01_08_10
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The translation of ''aparyāptam'' and ''paryāptam'' is inverted. ''Aparyāptam''
+    means ''insufficient/inadequate'', not ''immeasurable''; ''paryāptam'' means ''sufficient/adequate'',
+    not ''measurable''.; The speaker i'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

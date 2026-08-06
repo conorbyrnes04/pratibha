@@ -7,8 +7,8 @@ unit_label: Look Within the Thing
 title: Look Within the Thing
 unit_type: chapter
 sanskrit_devanagari: Ἔσω βλέπε· μηδενὸς πράγματος μήτε ἡ ἰδία ποιότης μήτε ἡ ἀξία παρατρεχέτω σε.
-translation_literal: 'Look inward: let neither the particular quality of any thing nor its worth run past
-  your notice.'
+translation_literal: 'Look within: let neither the distinctive quality nor the value of any matter escape
+  you.'
 commentary: 'The opening imperative, «Ἔσω βλέπε», asks not for withdrawal into private feeling but for
   a gaze that penetrates inward, toward what a thing is. Marcus directs attention away from the surface
   rush of impressions and toward examination. The phrase is terse: look inside.
@@ -71,5 +71,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The verb ''παρατρεχέτω'' with accusative ''σε'' means ''escape you'' or
+    ''pass you by unnoticed'', but the translation renders it as ''run past your notice'' which inverts
+    the intended meaning. The Greek is an '

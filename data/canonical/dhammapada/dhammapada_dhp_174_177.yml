@@ -19,12 +19,12 @@ translation_literal: '174. This world is blinded; only a few here truly see. Lik
   net, only a small number go to heaven.
 
 
-  175. Swans travel the sun’s path; by their powers they move through the sky. The steadfast are led out
-  of the world, having defeated Māra together with his host.
+  175. Swans travel the sun''s path; by their powers they move through the sky. The steadfast are led
+  out of the world, having defeated Māra together with his host.
 
 
-  176. For a person who has gone beyond the one Dhamma, who speaks falsehood and has cast aside concern
-  for the world beyond, there is no evil left that he might not do.
+  176. For a person who has transgressed the one principle, who speaks falsehood and has rejected the
+  world beyond, there is no evil he would not do.
 
 
   177. The miserly do not go to the heavenly world; fools indeed do not praise giving. But the wise person,
@@ -103,5 +103,11 @@ provenance:
   original_reliability: SOURCED — Fausböll romanized-Pali edition of the Dhammapada (1900)
   verification: 'translation cross-checked (Luna): loose; original from Fausböll Pali'
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 176: ''who has gone beyond the one Dhamma'' (ekaṃ dhammaṃ atītassa)
+    is mistranslated - atītassa means ''transgressed/violated'', not ''gone beyond'' in a positive sense;
+    Verse 176: ''there is no evil l'

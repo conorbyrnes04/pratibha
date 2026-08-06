@@ -69,12 +69,12 @@ sanskrit_iast: 'arjuna uvāca
 
 
   ste''vasthitāḥ pramukhe dhārtarāṣṭrāḥ'
-translation_literal: 'Arjuna said: “How can I fight with arrows in battle against Bhīṣma and Droṇa, Madhusūdana
-  — those worthy of worship, O slayer of foes? Better to eat even the food of begging in this world than
-  to kill these great-souled gurus. If I kill teachers greedy for ends, I would enjoy blood-smeared pleasures
-  right here. And we do not know which is weightier for us — whether we should conquer or they should
-  conquer us. Those whom, having killed, we would not wish to live — the sons of Dhṛtarāṣṭra — stand facing
-  us.”'
+translation_literal: 'Arjuna said: ''How can I fight with arrows in battle against Bhīṣma and Droṇa, O
+  Madhusūdana — those worthy of worship, O slayer of enemies? It would be better to live even on alms
+  in this world than to slay these great-souled gurus. Having killed gurus who have worldly aims, I would
+  enjoy here in this world pleasures stained with blood. We do not know which is better for us — whether
+  we should conquer them or they should conquer us. Those very sons of Dhṛtarāṣṭra stand before us, whom
+  having slain, we would not wish to live.'''
 commentary: 'Arjuna sharpens the objection: not abstract kin, but *pūjārhau* — those owed worship. Begging
   (*bhaikṣya*) is declared better than blood-smeared enjoyments after killing gurus. The contested move
   is moral uncertainty raised to epistemic crisis: we do not even know which outcome is heavier (*garīyas*).
@@ -174,12 +174,12 @@ pratibha_layers:
     ste''vasthitāḥ pramukhe dhārtarāṣṭrāḥ'
 - kind: translation
   label: Pratibha Translation
-  body: 'Arjuna said: “How can I fight with arrows in battle against Bhīṣma and Droṇa, Madhusūdana — those
-    worthy of worship, O slayer of foes? Better to eat even the food of begging in this world than to
-    kill these great-souled gurus. If I kill teachers greedy for ends, I would enjoy blood-smeared pleasures
-    right here. And we do not know which is weightier for us — whether we should conquer or they should
-    conquer us. Those whom, having killed, we would not wish to live — the sons of Dhṛtarāṣṭra — stand
-    facing us.”'
+  body: 'Arjuna said: ''How can I fight with arrows in battle against Bhīṣma and Droṇa, O Madhusūdana
+    — those worthy of worship, O slayer of enemies? It would be better to live even on alms in this world
+    than to slay these great-souled gurus. Having killed gurus who have worldly aims, I would enjoy here
+    in this world pleasures stained with blood. We do not know which is better for us — whether we should
+    conquer them or they should conquer us. Those very sons of Dhṛtarāṣṭra stand before us, whom having
+    slain, we would not wish to live.'''
 - kind: commentary
   label: Pratibha Commentary
   body: 'Arjuna sharpens the objection: not abstract kin, but *pūjārhau* — those owed worship. Begging
@@ -237,3 +237,9 @@ provenance:
   section: chapter_02
   original_id: BG_02_04_06
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Line 2: ''artha-kāmāṃs tu gurūn'' means ''gurus who have worldly desires/goals''
+    not ''teachers greedy for ends'' - the gurus are described as having legitimate worldly interests,
+    not as being greedy; Line '
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

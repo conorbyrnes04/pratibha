@@ -99,6 +99,10 @@ provenance:
   original_reliability: SOURCED — Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
     (Greek original added to a previously translation-only unit)
   original_source: Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: 'The translation of "οἰκετίαν" as "family" is incorrect; it refers to household servants
+    or slaves.; The translation of "τὰς ἔξω καὶ ἰδιωτικὰς διακρούου" as "Avoid public and vulgar entertainments"
+    misses the nuance of ''outside and private feasts/banquets'', which are distinct from public spectacles. '
 sanskrit_devanagari: τάξον τινὰ ἤδη χαρακτῆρα σαυτῷ καὶ τύπον, ὃν φυλάξεις ἐπί τε σεαυτοῦ ὢν καὶ ἀνθρώποις
   ἐντυγχάνων. καὶ σιωπὴ τὸ πολὺ ἔστω ἢ λαλείσθω τὰ ἀναγκαῖα καὶ διʼ ὀλίγων. σπανίως δέ ποτε καιροῦ παρακαλοῦντος
   ἐπὶ τὸ λέγειν λέξον μέν, ἀλλὰ περὶ οὐδενὸς τῶν τυχόντων· μὴ περὶ μονομαχιῶν, μὴ περὶ ἱπποδρομιῶν, μὴ

@@ -17,13 +17,21 @@ sanskrit_devanagari: '(10:16) אִֽי־לָ֣ךְ אֶ֔רֶץ שֶׁמַּלְ
 
   (10:20) גַּ֣ם בְּמַדָּֽעֲךָ֗ מֶ֚לֶךְ אַל־תְּקַלֵּ֔ל וּבְחַדְרֵי֙ מִשְׁכָּ֣בְךָ֔ אַל־תְּקַלֵּ֖ל עָשִׁ֑יר
   כִּ֣י ע֤וֹף הַשָּׁמַ֨יִם֙ יוֹלִ֣יךְ אֶת־הַקּ֔וֹל וּבַ֥עַל הכנפים יַגֵּ֥יד דָּבָֽר׃'
-translation_literal: Alas for you, O land, when your king is a child and your officials eat in the morning.\n\nFortunate
-  are you, O land, when your king is of noble stock and your officials eat at the proper time—for strength,
-  not for drunken excess.\n\nThrough slothfulness the roof-beams sag; through the idleness of hands the
-  house drips.\n\nThey make bread for laughter, and wine cheers the living; yet money provides an answer
-  for everything.\n\nEven in your thoughts do not curse a king; nor in the inner room where you lie down
-  curse a rich man. For a bird of the heavens may carry the sound, and a winged creature may report the
-  matter.
+translation_literal: 'Woe to you, O land, when your king is a youth and your officials feast in the morning.
+
+
+  Blessed are you, O land, when your king is a son of nobles and your officials eat at the proper time—for
+  strength and not for drinking.
+
+
+  Through laziness the rafters sag, and through idle hands the house leaks.
+
+
+  For merriment they prepare a feast, and wine gladdens life, but money answers everything.
+
+
+  Even in your mind do not curse a king, and in your bedroom chambers do not curse a rich person, for
+  a bird of the sky will carry the voice, and the winged creature will tell the matter.'
 commentary: 'Qoheleth moves from the governance of a land to the upkeep of a house, treating both as structures
   vulnerable to mistimed appetite and neglected labor. A ruler who is a נָעַר (na''ar), a youth lacking
   the needed maturity, and officials who feast at morning signal a public order given over to appetite.
@@ -93,5 +101,12 @@ provenance:
     Hebrew)
   verification: 'translation cross-checked (Luna): unknown; original from WLC Hebrew'
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
-    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
+    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation | corrected
+    on independent cross-check with the living scholarly translations (re-rendered from the original,
+    not copied)
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 19: ''They make bread for laughter'' misunderstands the Hebrew ''לִשְׂחוֹק
+    עֹשִׂים לֶחֶם''. The phrase means ''for laughter/merriment they make a feast/bread'' - i.e., bread/feasting
+    is made FOR THE P'

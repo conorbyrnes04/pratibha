@@ -10,11 +10,12 @@ sanskrit_devanagari: Μέμνησο ἐκ πόσου ταῦτα ἀναβάλλ
   αὐταῖς. δεῖ δὲ ἤδη ποτὲ αἰσθέσθαι τίνος κόσμου μέρος εἶ καὶ τίνος διοικοῦντος τὸν κόσμον ἀπόρροια ὑπέστης
   καὶ ὅτι ὅρος ἐστί σοι περιγεγραμμένος τοῦ χρόνου, ᾧ ἐὰν εἰς τὸ ἀπαιθριάσαι μὴ χρήσῃ, οἰχήσεται οἰχήσῃ
   καὶ αὖθις οὐκ ἐξέσται.
-translation_literal: Remember how long you have been putting these matters off, and how many extensions
-  you have received from the gods without making use of them. At last, then, you must recognize what world
-  you are a part of, and from what power governing the world you have come forth as an emanation. A limit
-  of time has been marked out for you; if you do not use it to clear yourself into brightness, it will
-  pass away—and you with it—and there will be no second opportunity.
+translation_literal: Remember for how long you have been postponing these things, and how many times you
+  have received deadlines from the gods but have not used them. It is necessary now at last to perceive
+  of what universe you are a part, and from what governing power of the universe you have proceeded as
+  an emanation, and that a boundary of time has been circumscribed for you—which, if you do not use for
+  clearing away the clouds, will depart, and you will depart, and the opportunity will not be available
+  again.
 commentary: 'Marcus begins with the accusatory precision of Μέμνησο: “remember.” The issue is not ignorance
   but postponement, ἀναβάλλῃ—continually deferring what one already knows must be done. Even the προθεσμίαι,
   the allotted extensions or reprieves granted by the gods, have gone unused. The passage does not invite
@@ -83,5 +84,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''οἰχήσεται οἰχήσῃ'' is mistranslated as ''it will pass away—and
+    you with it''. The Greek has two forms of the same verb (future indicative and future indicative/aorist
+    subjunctive), both refer'

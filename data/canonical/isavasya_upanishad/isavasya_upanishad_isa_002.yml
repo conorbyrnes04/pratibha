@@ -23,35 +23,40 @@ sanskrit_iast: 'isavasyam idam sarvam yat kinca jagatyam jagat |
   kurvanneveha karmani jijivisec chatam samah |
 
   evam tvayi nanyatheto''sti na karma lipyate nare || 2 ||'
-translation_literal: 'All this moving world is pervaded by the Lord. Through renunciation, enjoy; do not covet what belongs
-  to another.
+translation_literal: 'All this moving world is pervaded by the Lord. Through renunciation, enjoy; do not
+  covet what belongs to another.
 
 
   One may wish to live a full life doing action here - only in this way does action cease to bind.'
-commentary: 'The text refuses the split between world-rejection and worldliness. Renunciation is not withdrawal from life
-  but non-grasping participation in it. Action remains, ownership loosens. This is the opening synthesis of karma and jnana.
+commentary: 'The text refuses the split between world-rejection and worldliness. Renunciation is not withdrawal
+  from life but non-grasping participation in it. Action remains, ownership loosens. This is the opening
+  synthesis of karma and jnana.
 
 
   Key Terms
 
 
-  **tyāga** — Renunciation understood not as withdrawal but as relinquishing possessive claim while remaining engaged in action
+  **tyāga** — Renunciation understood not as withdrawal but as relinquishing possessive claim while remaining
+  engaged in action
 
   **karma** — Action that ceases to bind when performed without attachment to results or ownership
 
-  **Īśvara** — The Lord pervading all movement; the non-dual ground that permits non-grasping participation in the world
+  **Īśvara** — The Lord pervading all movement; the non-dual ground that permits non-grasping participation
+  in the world
 
 
   Cross-Tradition Resonances
 
 
-  **Bhagavad Gītā 2.47–48:** Both texts teach action without attachment (nishkāma karma) as liberation within engagement;
-  the Gītā frames this as duty (dharma) performed without desire for fruit Divergence: The Gītā emphasizes duty-bound action
-  and devotion to Kṛṣṇa, whereas the Isavasya grounds renunciation in the non-dual pervading presence of Īśvara alone
+  **Bhagavad Gītā 2.47–48:** Both texts teach action without attachment (nishkāma karma) as liberation
+  within engagement; the Gītā frames this as duty (dharma) performed without desire for fruit Divergence:
+  The Gītā emphasizes duty-bound action and devotion to Kṛṣṇa, whereas the Isavasya grounds renunciation
+  in the non-dual pervading presence of Īśvara alone
 
-  **Daodejing 48:** Both teach that non-grasping engagement (wu wei / tyāga) paradoxically accomplishes what force cannot;
-  the world is mastered through release of mastery Divergence: The Daodejing emphasizes natural spontaneity and emptying the
-  self, while the Isavasya locates non-grasping in recognition of Īśvara''s pervading presence'
+  **Daodejing 48:** Both teach that non-grasping engagement (wu wei / tyāga) paradoxically accomplishes
+  what force cannot; the world is mastered through release of mastery Divergence: The Daodejing emphasizes
+  natural spontaneity and emptying the self, while the Isavasya locates non-grasping in recognition of
+  Īśvara''s pervading presence'
 insight: The text refuses the split between world-rejection and worldliness.
 practice: Choose one ordinary task today and perform it without inner claim of "mine."
 upaya: ''
@@ -91,14 +96,16 @@ pratibha_layers:
     evam tvayi nanyatheto''sti na karma lipyate nare || 2 ||'
 - kind: translation
   label: Pratibha Translation
-  body: 'All this moving world is pervaded by the Lord. Through renunciation, enjoy; do not covet what belongs to another.
+  body: 'All this moving world is pervaded by the Lord. Through renunciation, enjoy; do not covet what
+    belongs to another.
 
 
     One may wish to live a full life doing action here - only in this way does action cease to bind.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The text refuses the split between world-rejection and worldliness. Renunciation is not withdrawal from life but
-    non-grasping participation in it. Action remains, ownership loosens. This is the opening synthesis of karma and jnana.
+  body: 'The text refuses the split between world-rejection and worldliness. Renunciation is not withdrawal
+    from life but non-grasping participation in it. Action remains, ownership loosens. This is the opening
+    synthesis of karma and jnana.
 
 
     Key Terms:
@@ -124,4 +131,9 @@ provenance:
   section: teaching_passage
   original_id: ISA_002
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 1: ''what belongs to another'' is interpretive; the original ''kasya svid dhanam''
+    asks ''whose wealth indeed?'' - a rhetorical question about ownership rather than a direct statement
+    about ''another''s'' property; Verse 2: ''action cease to bind'' misses the direct address and emphasis;
+    original states '
 enriched: true

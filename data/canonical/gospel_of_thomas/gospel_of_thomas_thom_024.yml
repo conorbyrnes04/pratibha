@@ -8,9 +8,9 @@ title: The Light Within the Luminous
 unit_type: logion
 sanskrit_devanagari: ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ϫⲉⲙⲁⲧⲥⲉⲃⲟⲛ⳿ ⲉⲡ ⲉⲧⲕⲙ̄ⲙⲁⲩ ⲉⲡⲉⲓⲧⲁⲛⲁⲅⲕⲏ ⲉⲣⲟⲛ ⲧⲉ ⲉⲧⲣⲛ̄ϣⲓⲛⲉ ⲛⲥⲱϥ⳿ ⲡⲉϫⲁϥ̂ ⲛⲁⲩ
   ϫⲉⲡⲉⲧⲉⲙⲁⲁϫⲉ ⲙ̄ⲙⲟϥ ⲙⲁⲣⲉϥ · ⲥⲱⲧⲙ̄ ⲟⲩⲛ̄ ϣⲟⲟⲡ · ⲙ̄ⲫⲟⲩⲛ ⲛ̄ⲛⲟⲩ ⲁⲩⲱ ϥ ⲉⲡⲕⲟⲥⲙⲟⲥ ⲧⲏⲣϥ⳿ ⲉϥⲧⲙ̄ ⲟⲩⲕⲁⲕⲉ ⲡⲉ
-translation_literal: His disciples said to him, “Show us the place where you are, for we must seek after
-  it.” He said to them, “Whoever has ears, let that one hear. There is light within a luminous person,
-  and it gives light to the whole cosmos. If it does not give light, it is darkness.”
+translation_literal: His disciples said to him, "Teach us about the place where you are, for it is necessary
+  for us to seek it." He said to them, "Whoever has ears to hear, let him hear. There is light within
+  a person of light, and he illuminates the entire world. When he does not shine, he is darkness."
 commentary: 'The disciples ask for a location: the place where Jesus is, a destination they can pursue.
   His reply does not supply a map. Instead, it begins with hearing—the receptive capacity required to
   grasp a saying whose “place” is not simply geographical. What they seek is disclosed as light already
@@ -77,5 +77,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''If it does not give light, it is darkness'' inverts the original
+    meaning, which states ''when/if he does not give light, he is darkness'' - referring to the person
+    becoming darkness, not the '

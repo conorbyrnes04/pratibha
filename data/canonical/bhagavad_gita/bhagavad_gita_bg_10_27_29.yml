@@ -39,9 +39,10 @@ sanskrit_iast: 'uccaiḥśravasamaśvānāṃ viddhi māmamṛtodbhavam|
 
 
   pitṛ़ṇāmaryamā cāsmi yamaḥ saṃyamatāmaham'
-translation_literal: Among horses know Me as Uccaiḥśravas born with the nectar; among lordly elephants,
-  Airāvata; among humans, the king. Among weapons I am the thunderbolt; among cows, the wish-giving cow;
-  I am Kandarpa as progenitor; among serpents I am Vāsuki.
+translation_literal: Among horses know Me as Uccaiḥśravas born from the nectar; among lordly elephants,
+  Airāvata; and among humans, the king. Among weapons I am the thunderbolt; among cows I am Kāmadhuk;
+  I am Kandarpa as the cause of procreation; among serpents I am Vāsuki. I am Ananta among the Nāgas;
+  I am Varuṇa among water beings; among the ancestors I am Aryamā; and I am Yama among those who restrain.
 commentary: 'Mythic eminences — nectar-born horse, Airāvata, kingship, vajra, kāmadhenu, generative love,
   Vāsuki — extend vibhūti into desire, power, and danger. The contested inclusion of Kandarpa as progenitor
   refuses a spirituality that can only see the Lord in chastened symbols. Existentially this demands discernment:
@@ -107,9 +108,10 @@ pratibha_layers:
     pitṛ़ṇāmaryamā cāsmi yamaḥ saṃyamatāmaham'
 - kind: translation
   label: Pratibha Translation
-  body: Among horses know Me as Uccaiḥśravas born with the nectar; among lordly elephants, Airāvata; among
-    humans, the king. Among weapons I am the thunderbolt; among cows, the wish-giving cow; I am Kandarpa
-    as progenitor; among serpents I am Vāsuki.
+  body: Among horses know Me as Uccaiḥśravas born from the nectar; among lordly elephants, Airāvata; and
+    among humans, the king. Among weapons I am the thunderbolt; among cows I am Kāmadhuk; I am Kandarpa
+    as the cause of procreation; among serpents I am Vāsuki. I am Ananta among the Nāgas; I am Varuṇa
+    among water beings; among the ancestors I am Aryamā; and I am Yama among those who restrain.
 - kind: commentary
   label: Pratibha Commentary
   body: 'Mythic eminences — nectar-born horse, Airāvata, kingship, vajra, kāmadhenu, generative love,
@@ -155,3 +157,9 @@ provenance:
   section: chapter_10
   original_id: BG_10_27_29
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 10.28 is incomplete - omits the second half about Ananta among Nāgas
+    and Varuna among aquatic beings; Verse 10.29 is completely omitted - missing Aryamā among ancestors
+    and Yama among controller'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

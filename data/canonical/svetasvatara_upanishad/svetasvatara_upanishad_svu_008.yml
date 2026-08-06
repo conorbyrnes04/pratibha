@@ -246,3 +246,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 1.13: ''fire latent in wood is unseen yet not absent'' loses the specific technical
+    meaning of ''yoni-gatasya'' (fire in its source/womb) and ''liṅga-nāśaḥ'' (the subtle mark/potential
+    is not destroyed); ''by the right means it is brought forth again'' is vague where the original specifies
+    ''indhanayon'

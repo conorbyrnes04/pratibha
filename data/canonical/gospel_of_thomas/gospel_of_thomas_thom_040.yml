@@ -7,8 +7,8 @@ unit_label: The Vine Beyond the Father
 title: The Vine Beyond the Father
 unit_type: logion
 sanskrit_devanagari: ⲡⲉϫⲉⲓ︤ⲥ︥ ⲟⲩⲃⲉⲛⲉⲗⲟⲟⲗⲉ ⲁⲩⲧⲟϭⲥ ⲙ̄ⲡⲥⲁ ⲛⲃⲟⲗ ⲙ̄ⲡⲉⲓⲱⲧ⳿ ⲁⲩⲱ ⲉⲥ ⲁⲛ ⲥⲉⲛⲁⲡⲟⲣⲕⲥ︦ ϩⲁⲧⲉⲥⲛⲟⲩⲛⲉ ⲛ̄ⲥⲧⲁⲕⲟ
-translation_literal: Jesus said, “A vine was planted apart from the Father. Since it has no strength,
-  it will be torn up by its roots and ruined.”
+translation_literal: Jesus said, 'A grapevine was planted outside the Father, and since it is not established,
+  it will be pulled up by its roots and will perish.'
 commentary: 'The image is brief and severe: a vine may be planted, may even appear alive, yet its location
   determines its fate. To stand “apart from the Father” is not merely to occupy a different place; it
   names a life-source cut off from the ground that can sustain it. Its weakness is consequently exposed
@@ -71,5 +71,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''ⲉⲥ ⲁⲛ ⲥⲉⲛⲁⲡⲟⲣⲕⲥ︦'' is mistranslated as ''Since it has no strength''
+    - the Coptic indicates ''and since it is not strong/established'' or ''and because it is not made
+    strong'', referring to the vi'

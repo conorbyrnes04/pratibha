@@ -11,17 +11,17 @@ sanskrit_devanagari: 'بشنو این نی چون شکایت می‌کند /// �
 
   کز نِیِستان تا مرا بُبریده‌اند /// در نفیرم مرد و زن نالیده‌اند'
 sanskrit_iast: ''
-translation_literal: 'Hear the reed''s complaint, how it tells of separation: ever since it was cut from the reed-bed, its
-  song has been a lament for reunion. The reed-pipe''s cry is fire, not wind; whoever lacks this fire is not of our company.
-  The reed''s pain opens the heart—it is the remedy for the lovesick. The reed speaks only to those whose hearts have been
-  torn from their beloved.'
-commentary: 'This opening passage establishes the Mathnawī''s central metaphor: the reed (nay) severed from its origin becomes
-  the instrument of divine music and mystical yearning. The reed does not merely produce sound—its very being is transformed
-  by separation (judā''ī) into a vehicle of longing (shawq). Rūmī invokes the reed''s ''complaint'' (shikāyat) not as mere
-  grievance but as testimony (hikāyat) to a cosmic principle: that severance from the Beloved (the reed-bed as divine source)
-  is the precondition for spiritual song. The fire imagery distinguishes authentic mystical utterance from mere breath or
-  rhetoric. This passage inaugurates Rūmī''s theodicy of suffering—pain is not punishment but initiation into love''s mysteries.
-  The reed becomes archetype for the human soul in exile, whose only authenticity lies in its wound.
+translation_literal: 'Listen to this reed, how it complains, how it tells the story of separations: ''Ever
+  since I was cut from the reed-bed, men and women have lamented in my cry.'''
+commentary: 'This opening passage establishes the Mathnawī''s central metaphor: the reed (nay) severed
+  from its origin becomes the instrument of divine music and mystical yearning. The reed does not merely
+  produce sound—its very being is transformed by separation (judā''ī) into a vehicle of longing (shawq).
+  Rūmī invokes the reed''s ''complaint'' (shikāyat) not as mere grievance but as testimony (hikāyat) to
+  a cosmic principle: that severance from the Beloved (the reed-bed as divine source) is the precondition
+  for spiritual song. The fire imagery distinguishes authentic mystical utterance from mere breath or
+  rhetoric. This passage inaugurates Rūmī''s theodicy of suffering—pain is not punishment but initiation
+  into love''s mysteries. The reed becomes archetype for the human soul in exile, whose only authenticity
+  lies in its wound.
 
 
   Key Terms
@@ -39,31 +39,40 @@ commentary: 'This opening passage establishes the Mathnawī''s central metaphor:
   Cross-Tradition Resonances
 
 
-  **Psalm 137:1–4:** The Babylonian exiles’ weeping and inability to sing Zion’s songs parallels the reed’s music as the sound
-  of displacement from a beloved homeland. Divergence: Psalm 137 centers a historical people’s exile and covenantal Jerusalem,
-  whereas Rūmī’s reed figures a universal metaphysical separation from the divine source.
+  **Psalm 137:1–4:** The Babylonian exiles’ weeping and inability to sing Zion’s songs parallels the reed’s
+  music as the sound of displacement from a beloved homeland. Divergence: Psalm 137 centers a historical
+  people’s exile and covenantal Jerusalem, whereas Rūmī’s reed figures a universal metaphysical separation
+  from the divine source.
 
-  **Plato, Symposium 203b–204c:** Diotima’s account of Eros as born from lack parallels Rūmī’s portrayal of longing as the
-  animating force of the separated reed. Divergence: Plato frames eros primarily as an ascent toward beauty and immortality,
-  while Rūmī presents longing as a burning, grace-infused return to God.
+  **Plato, Symposium 203b–204c:** Diotima’s account of Eros as born from lack parallels Rūmī’s portrayal
+  of longing as the animating force of the separated reed. Divergence: Plato frames eros primarily as
+  an ascent toward beauty and immortality, while Rūmī presents longing as a burning, grace-infused return
+  to God.
 
-  **Augustine, Confessions 1.1:** Augustine’s claim that the human heart remains restless until it rests in God closely echoes
-  the reed’s unappeased cry for reunion with its origin. Divergence: Augustine narrates restlessness through sin, conversion,
-  and Christian grace, while Rūmī’s image foregrounds ontological severance and the soul’s musical yearning.'
-practice: 'Sit in silence and attend to your own inner ''complaint''—the wordless ache of separation from what you most deeply
-  love or seek. Do not suppress it or rationalize it away. Instead, imagine this ache as the reed''s cry: let it become a
-  song, a prayer, a form of remembrance. Notice how the pain, when fully inhabited rather than resisted, transforms into a
-  kind of music—a testimony to connection rather than mere loss. Return to this practice whenever you feel most bereft; the
-  reed teaches that longing itself is the proof of love.'
+  **Augustine, Confessions 1.1:** Augustine’s claim that the human heart remains restless until it rests
+  in God closely echoes the reed’s unappeased cry for reunion with its origin. Divergence: Augustine narrates
+  restlessness through sin, conversion, and Christian grace, while Rūmī’s image foregrounds ontological
+  severance and the soul’s musical yearning.'
+practice: 'Sit in silence and attend to your own inner ''complaint''—the wordless ache of separation from
+  what you most deeply love or seek. Do not suppress it or rationalize it away. Instead, imagine this
+  ache as the reed''s cry: let it become a song, a prayer, a form of remembrance. Notice how the pain,
+  when fully inhabited rather than resisted, transforms into a kind of music—a testimony to connection
+  rather than mere loss. Return to this practice whenever you feel most bereft; the reed teaches that
+  longing itself is the proof of love.'
 themes: []
 tags: []
 provenance:
   collection: Rūmī — Mathnawī-yi Maʿnawī
   source_confidence: medium
   original_source: Restored from data/raw_texts/pd/persian/mathnawi_neynameh_ganjoor.txt
-  english_source: Pratibha own rendering (2026).
+  english_source: Pratibha own rendering (2026). | corrected on independent cross-check with the living
+    scholarly translations (re-rendered from the original, not copied)
   verification: PD restore after phrase-match miss
-  verification_note: Restored from persian/mathnawi_neynameh_ganjoor.txt. Prior model-supplied original withdrawn. The quoted
-    text reverses حکایت and شکایت and uses از instead of the received وز. | PD phrase-match miss vs local witness (persian/mathnawi_neynameh_ganjoor.txt);
-    query field=sanskrit_devanagari; score=0.171.
+  verification_note: Restored from persian/mathnawi_neynameh_ganjoor.txt. Prior model-supplied original
+    withdrawn. The quoted text reverses حکایت and شکایت and uses از instead of the received وز. | PD phrase-match
+    miss vs local witness (persian/mathnawi_neynameh_ganjoor.txt); query field=sanskrit_devanagari; score=0.171.
   original_reliability: PD_RESTORED — original replaced from local public-domain witness.
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Line 2 mistranslated: ''its song has been a lament for reunion'' inverts
+    the meaning - the reed laments separation, not reunion; Lines 3-4 of the new translation (''The reed-pipe''s
+    cry is fire, not wind.'

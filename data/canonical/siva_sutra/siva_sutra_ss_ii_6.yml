@@ -10,14 +10,15 @@ unit_type: sutra
 sanskrit_devanagari: गुरुरुपायः
 sanskrit_iast: gurur upāyaḥ
 translation_literal: The guru is the means.
-commentary: 'At this stage, guidance becomes essential. Not as authority, but as resonance. The guru names the principle by
-  which recognition is mirrored, corrected, and stabilized through relationship.
+commentary: 'At this stage, guidance becomes essential. Not as authority, but as resonance. The guru names
+  the principle by which recognition is mirrored, corrected, and stabilized through relationship.
 
 
-  What cannot yet be sustained alone is reflected back through another. The guru is not a person to be followed, but a function
-  that interrupts self-deception.'
+  What cannot yet be sustained alone is reflected back through another. The guru is not a person to be
+  followed, but a function that interrupts self-deception.'
 insight: At this stage, guidance becomes essential.
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
 upaya: ''
 themes:
 - recognition
@@ -46,15 +47,16 @@ pratibha_layers:
   body: The guru is the means.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'At this stage, guidance becomes essential. Not as authority, but as resonance. The guru names the principle by which
-    recognition is mirrored, corrected, and stabilized through relationship.
+  body: 'At this stage, guidance becomes essential. Not as authority, but as resonance. The guru names
+    the principle by which recognition is mirrored, corrected, and stabilized through relationship.
 
 
-    What cannot yet be sustained alone is reflected back through another. The guru is not a person to be followed, but a function
-    that interrupts self-deception.'
+    What cannot yet be sustained alone is reflected back through another. The guru is not a person to
+    be followed, but a function that interrupts self-deception.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -67,17 +69,19 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
-    resonance: Both texts identify a gap between continuous ontological reality (the soul's characteristic act; the guru as
-      means) and ordinary perception/recognition. The problem is not absence but unrecognized presence—we fail to perceive
-      what is already operative.
-    divergence: Plotinus locates the failure in sensory distraction; the Siva Sutra locates it in the need for external guidance
-      (upaya) to trigger recognition of what is already the case.
+    resonance: Both texts identify a gap between continuous ontological reality (the soul's characteristic
+      act; the guru as means) and ordinary perception/recognition. The problem is not absence but unrecognized
+      presence—we fail to perceive what is already operative.
+    divergence: Plotinus locates the failure in sensory distraction; the Siva Sutra locates it in the
+      need for external guidance (upaya) to trigger recognition of what is already the case.
     passage_id: plotinus_enneads.enn_v_1_12
   - citation: Pratyabhijnahrdayam — Sutra 8
-    resonance: Both texts posit a single principle (Consciousness; the guru) that stands prior to and encompasses all apparent
-      positions or means. Recognition of this principle dissolves the multiplicity of approaches.
-    divergence: Pratyabhijnahrdayam emphasizes the non-dual recognition of Consciousness as the ground of all systems; the
-      Siva Sutra emphasizes the guru as the practical instrument (upaya) through which that recognition is accessed.
+    resonance: Both texts posit a single principle (Consciousness; the guru) that stands prior to and
+      encompasses all apparent positions or means. Recognition of this principle dissolves the multiplicity
+      of approaches.
+    divergence: Pratyabhijnahrdayam emphasizes the non-dual recognition of Consciousness as the ground
+      of all systems; the Siva Sutra emphasizes the guru as the practical instrument (upaya) through which
+      that recognition is accessed.
     passage_id: pratyabhijnahrdayam.phr_008
   layer_provenance: generated_grounded
 appendixes: []
@@ -87,3 +91,4 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.6
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'

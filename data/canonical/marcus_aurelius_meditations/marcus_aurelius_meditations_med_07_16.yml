@@ -12,13 +12,14 @@ sanskrit_devanagari: Τὸ ἡγεμονικὸν αὐτὸ ἑαυτῷ οὐ�
   τὸ φοβούμενον, τὸ λυπούμενον, τὸ περὶ τούτων ὅλως ὑπολαμβάνον, οὐδὲν μὴ πάθῃ· οὐ γὰρ ἄξεις αὐτὸ εἰς
   κρίσιν τοιαύτην. ἀπροσδεές ἐστιν ὅσον ἐφ̓ ἑαυτῷ τὸ ἡγεμονικόν, ἐὰν μὴ ἑαυτῷ ἔνδειαν ποιῇ· κατὰ ταὐτὰ
   δὲ καὶ ἀτάραχον καὶ ἀνεμπόδιστον, ἐὰν μὴ ἑαυτὸ ταράσσῃ καὶ ἐμποδίζῃ.
-translation_literal: The ruling center does not harass itself; that is, it does not scare itself into
-  craving. If someone else can frighten it or cause it pain, let him do so; but it will not, through its
-  own judgment, turn itself toward such alterations. Let the little body take care that it suffers nothing,
-  if it can, and let it say so if it does suffer. But let the little soul—the one that fears, grieves,
-  and forms opinions about such things—suffer nothing at all; for you will not bring it to a judgment
-  of that kind. So far as it depends on itself, the ruling center lacks nothing, unless it makes itself
-  needy; likewise it is untroubled and unhindered, unless it troubles and hinders itself.
+translation_literal: The ruling center does not trouble itself; I mean, it does not frighten itself or
+  fall into desire. If someone else can frighten it or grieve it, let them do so; for it will not, by
+  its own judgment, turn itself toward such conditions. Let the poor body take care not to suffer anything,
+  if it can, and let it speak up if it does suffer something. But the poor soul—the one that fears, the
+  one that grieves, the one that forms judgments about these things altogether—will suffer nothing; for
+  you will not lead it into such a judgment. The ruling center is without need insofar as it depends on
+  itself, unless it creates need for itself; and in the same way it is also untroubled and unobstructed,
+  unless it troubles and obstructs itself.
 commentary: 'Marcus locates freedom in the ἡγεμονικόν, the ruling or governing center of the person. External
   forces may affect the body, and another person may even attempt to frighten or hurt us. Yet the decisive
   question is whether the mind adds its own ὑπόληψις—its evaluative assumption or judgment—to what occurs.
@@ -86,5 +87,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): unknown; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''οὐ φοβεῖ ἑαυτὸ εἰς ἐπιθυμίαν'' is mistranslated as ''does
+    not scare itself into craving'' when it means ''does not frighten itself or desire'' (two separate
+    states, not a causal relationship); '

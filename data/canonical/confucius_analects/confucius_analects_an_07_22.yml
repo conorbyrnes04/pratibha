@@ -9,20 +9,23 @@ title: When I Walk Along with Two Others
 unit_type: sutra
 sanskrit_devanagari: 子曰：「三人行，必有我師焉。擇其善者而從之，其不善者而改之。」
 sanskrit_iast: Classical Chinese; see Pinyin study editions for pronunciation.
-translation_literal: The Master said, 'When I walk along with two others, they may serve me as my teachers. I will select
-  their good qualities and follow them, their bad qualities and avoid them.'
-commentary: '«When I Walk Along with Two Others» treats cultivation as a public-and-private craft: virtue is not a mood but
-  a trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living
-  reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands
-  in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a living
-  tradition: insight without application remains incomplete. Return again to the original wording when the mind wants to smooth
-  the edge. Return again to the original wording when the mind wants to smooth the edge.
+translation_literal: The Master said, 'When three people walk together, there must be one among them who
+  can be my teacher. I choose their good qualities and follow them; as for their bad qualities, I use
+  them to correct myself.'
+commentary: '«When I Walk Along with Two Others» treats cultivation as a public-and-private craft: virtue
+  is not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by
+  improper gain. The passage asks a living reader to test the claim in experience rather than treat it
+  as museum doctrine. Hold the argument until its force lands in attention, then let practice carry one
+  concrete shift into the next hour of ordinary life. This is the demand of a living tradition: insight
+  without application remains incomplete. Return again to the original wording when the mind wants to
+  smooth the edge. Return again to the original wording when the mind wants to smooth the edge.
 
 
   Key Terms
 
 
-  **師 (shī)** — teacher or model; here, any person encountered can function as a teacher through their example, good or bad
+  **師 (shī)** — teacher or model; here, any person encountered can function as a teacher through their
+  example, good or bad
 
   **從 (cóng)** — to follow or accord with; the active choice to align oneself with observed virtue
 
@@ -32,17 +35,20 @@ commentary: '«When I Walk Along with Two Others» treats cultivation as a publi
   Cross-Tradition Resonances
 
 
-  **Aristotle, Nicomachean Ethics II.1–2:** Both Confucius and Aristotle ground virtue in habituation through observation
-  and repeated practice rather than abstract principle; virtue becomes a *hexis* (settled state) or trained pattern through
-  encountering models Divergence: Aristotle emphasizes the mean between extremes and rational deliberation, while Confucius
-  stresses relational responsiveness and the immediate discernment of good and bad qualities in a living encounter
+  **Aristotle, Nicomachean Ethics II.1–2:** Both Confucius and Aristotle ground virtue in habituation
+  through observation and repeated practice rather than abstract principle; virtue becomes a *hexis* (settled
+  state) or trained pattern through encountering models Divergence: Aristotle emphasizes the mean between
+  extremes and rational deliberation, while Confucius stresses relational responsiveness and the immediate
+  discernment of good and bad qualities in a living encounter
 
-  **Mencius 7A.15 (孟子):** Mencius echoes the Confucian claim that moral learning occurs through observation of others'' conduct
-  and the cultivation of innate sprouts of virtue; both treat the learner as an active selector Divergence: Mencius grounds
-  this capacity in pre-existing moral nature (*xìng* 性), whereas the Analects passage emphasizes the *practice* of selection
-  itself as the engine of development, leaving the metaphysical ground more open'
-insight: '«When I Walk Along with Two Others» treats cultivation as a public-and-private craft: virtue is not a mood but a
-  trained pattern of response that holds under being unseen, rushed, or tempted by improper gain.'
+  **Mencius 7A.15 (孟子):** Mencius echoes the Confucian claim that moral learning occurs through observation
+  of others'' conduct and the cultivation of innate sprouts of virtue; both treat the learner as an active
+  selector Divergence: Mencius grounds this capacity in pre-existing moral nature (*xìng* 性), whereas
+  the Analects passage emphasizes the *practice* of selection itself as the engine of development, leaving
+  the metaphysical ground more open'
+insight: '«When I Walk Along with Two Others» treats cultivation as a public-and-private craft: virtue
+  is not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted by
+  improper gain.'
 practice: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
 upaya: ''
 themes:
@@ -72,17 +78,19 @@ pratibha_layers:
   body: Classical Chinese; see Pinyin study editions for pronunciation.
 - kind: translation
   label: Pratibha Translation
-  body: The Master said, 'When I walk along with two others, they may serve me as my teachers. I will select their good qualities
-    and follow them, their bad qualities and avoid them.'
+  body: The Master said, 'When three people walk together, there must be one among them who can be my
+    teacher. I choose their good qualities and follow them; as for their bad qualities, I use them to
+    correct myself.'
   layer_provenance: public_domain
 - kind: commentary
   label: Pratibha Commentary
-  body: '«When I Walk Along with Two Others» treats cultivation as a public-and-private craft: virtue is not a mood but a
-    trained pattern of response that holds under being unseen, rushed, or tempted by improper gain. The passage asks a living
-    reader to test the claim in experience rather than treat it as museum doctrine. Hold the argument until its force lands
-    in attention, then let practice carry one concrete shift into the next hour of ordinary life. This is the demand of a
-    living tradition: insight without application remains incomplete. Return again to the original wording when the mind wants
-    to smooth the edge. Return again to the original wording when the mind wants to smooth the edge.'
+  body: '«When I Walk Along with Two Others» treats cultivation as a public-and-private craft: virtue
+    is not a mood but a trained pattern of response that holds under being unseen, rushed, or tempted
+    by improper gain. The passage asks a living reader to test the claim in experience rather than treat
+    it as museum doctrine. Hold the argument until its force lands in attention, then let practice carry
+    one concrete shift into the next hour of ordinary life. This is the demand of a living tradition:
+    insight without application remains incomplete. Return again to the original wording when the mind
+    wants to smooth the edge. Return again to the original wording when the mind wants to smooth the edge.'
 - kind: practice
   label: Practice (Abhyasa)
   body: 'Practice one concrete reciprocity today: withhold one action you would not welcome if reversed.'
@@ -93,4 +101,11 @@ provenance:
   section: Analects 7.21
   original_id: AN_07_22
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''其不善者而改之'' is mistranslated as ''their bad qualities and avoid
+    them.'' The character 改 means ''to change/correct/reform,'' not ''to avoid.'' The correct meaning
+    is that one should use others'' bad '
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)
 enriched: true

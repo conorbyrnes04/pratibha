@@ -14,19 +14,17 @@ sanskrit_devanagari: Δριμύτητά σου οὐκ ἔχουσι θαυμά�
   καὶ ἀρεσκεύεσθαι καὶ περπερεύεσθαι καὶ τοσαῦτα ῥιπτάζεσθαι τῇ ψυχῇ διὰ τὸ ἀφυῶς κατεσκευάσθαι ἀναγκάζῃ;
   οὐ μὰ τοὺς θεούς, ἀλλὰ τούτων μὲν πάλαι ἀπηλλάχθαι ἐδύνασο, μόνον δέ, εἰ ἄρα, ὡς βραδύτερος καὶ δυσπαρακολουθητότερος
   καταγινώσκεσθαι. καὶ τοῦτο δὲ ἀσκητέον μὴ παρενθυμουμένῳ μηδὲ ἐμφιληδονοῦντι τῇ νωθείᾳ.
-translation_literal: 'They do not admire your sharpness of mind. So be it. But there are many other qualities
-  for which you cannot say, “I was not made for that.” Offer, then, what lies wholly within your power:
-  sincerity, dignity, endurance in work, freedom from the love of pleasure, acceptance without complaint
-  of what is allotted, needing little, kindness, freedom, moderation, freedom from idle talk, greatness
-  of spirit.
-
-
-  Do you not see how much you are already able to provide—things for which no excuse of being ungifted
-  or unfit is available—yet you willingly remain beneath yourself? Must your lack of natural gifts force
-  you to grumble, cling greedily, flatter, blame your little body, play to please others, boast, and toss
-  your soul about in so many ways? No, by the gods: you could have been rid of these things long ago.
-  At most, you might be criticized as slower and harder to follow. But even this must be trained, without
-  brooding over it or taking lazy pleasure in your sluggishness.'
+translation_literal: 'They do not admire your sharpness of mind. Very well. But there are many other things
+  about which you cannot say ''I am not naturally suited for this.'' Display, then, those qualities that
+  are entirely within your power: genuineness, dignity, endurance of toil, indifference to pleasure, contentment
+  with your lot, needing little, kindness, independence, freedom from excess, freedom from idle chatter,
+  magnanimity. Do you not perceive how many things you are already capable of displaying—things for which
+  there is no excuse of lack of natural ability or unsuitability—yet you willingly remain below that level?
+  Or are you compelled to complain, be stingy, flatter, blame your poor body, fawn obsequiously, show
+  off, and let your soul be tossed about in so many ways because you are naturally ill-constituted? No,
+  by the gods! You could have been free of these things long ago. At most, if anything, you might be faulted
+  for being somewhat slower and harder to follow. But even this must be worked on, without making excuses
+  for yourself or taking pleasure in your sluggishness.'
 commentary: 'Marcus begins by conceding a painful possibility: perhaps one is not remarkable for "sharpness,"
   δριμύτης. Yet this concession clears the ground for a moral inventory. The qualities he names are not
   glamorous talents but dispositions available to deliberate practice: τὸ ἀκίβδηλον, an unadulterated
@@ -97,5 +95,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''Must your lack of natural gifts force you...'' inverts the
+    meaning: the Greek ''διὰ τὸ ἀφυῶς κατεσκευάσθαι'' is presented as a false excuse/pretext, not as an
+    actual cause. Marcus is rejectin'

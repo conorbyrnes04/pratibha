@@ -13,7 +13,8 @@ sanskrit_devanagari: 'अन्यदेवाहुर्विद्यया�
 sanskrit_iast: 'anyad evahur vidyaya anyad ahur avidyaya |
 
   iti susruma dhiranam ye nas tad vicacaksire || 10 ||'
-translation_literal: Wise teachers say vidya and avidya yield different results.
+translation_literal: They say one thing about vidya, and they say another thing about avidya — thus we
+  have heard from the wise ones who explained that to us.
 commentary: 'The text insists on disciplined differentiation before integration.
 
 
@@ -42,14 +43,16 @@ commentary: 'The text insists on disciplined differentiation before integration.
   Cross-Tradition Resonances
 
 
-  **Plato, Republic 509d–511e, the Divided Line:** Plato differentiates levels of cognition before dialectical ascent, paralleling
-  the verse’s insistence that distinct forms of knowing must not be collapsed.
+  **Plato, Republic 509d–511e, the Divided Line:** Plato differentiates levels of cognition before dialectical
+  ascent, paralleling the verse’s insistence that distinct forms of knowing must not be collapsed.
 
-  **Plato, Republic 509d–511e, the Divided Line:**  Divergence: Plato ranks cognitive states toward intelligible reality,
-  whereas the Īśā verse presents vidyā and avidyā as yielding different results without yet simply reducing one to error.
+  **Plato, Republic 509d–511e, the Divided Line:**  Divergence: Plato ranks cognitive states toward intelligible
+  reality, whereas the Īśā verse presents vidyā and avidyā as yielding different results without yet simply
+  reducing one to error.
 
-  **Nāgārjuna, Mūlamadhyamakakārikā 24.8–10, the Two Truths:** Nāgārjuna distinguishes conventional and ultimate truth as
-  pedagogically necessary registers, echoing the need for disciplined differentiation before a fuller understanding.'
+  **Nāgārjuna, Mūlamadhyamakakārikā 24.8–10, the Two Truths:** Nāgārjuna distinguishes conventional and
+  ultimate truth as pedagogically necessary registers, echoing the need for disciplined differentiation
+  before a fuller understanding.'
 insight: The text insists on disciplined differentiation before integration.
 practice: List what action addresses and what contemplation addresses in your current life.
 upaya: ''
@@ -77,7 +80,8 @@ pratibha_layers:
     iti susruma dhiranam ye nas tad vicacaksire || 10 ||'
 - kind: translation
   label: Pratibha Translation
-  body: Wise teachers say vidya and avidya yield different results.
+  body: They say one thing about vidya, and they say another thing about avidya — thus we have heard from
+    the wise ones who explained that to us.
 - kind: commentary
   label: Pratibha Commentary
   body: 'The text insists on disciplined differentiation before integration.
@@ -100,18 +104,19 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: 'Phaedo (Plato) — The Second Sailing: Forms as True Causes'
-    resonance: Both texts establish a methodological distinction between two orders of knowledge or causation—vidya vs. avidya
-      in the Upanishad, sensory causes vs. intelligible forms in Plato—and insist that disciplined differentiation between
-      them is the prerequisite for philosophical advance.
-    divergence: The Upanishad frames this as a practical path to integration and liberation, while Plato treats it as a logical-metaphysical
-      correction that moves from the physical to the eternal.
+    resonance: Both texts establish a methodological distinction between two orders of knowledge or causation—vidya
+      vs. avidya in the Upanishad, sensory causes vs. intelligible forms in Plato—and insist that disciplined
+      differentiation between them is the prerequisite for philosophical advance.
+    divergence: The Upanishad frames this as a practical path to integration and liberation, while Plato
+      treats it as a logical-metaphysical correction that moves from the physical to the eternal.
     passage_id: phaedo_plato.phaedo_md_005
   - citation: Patañjali Yoga Sūtras 2.18
-    resonance: 'Both passages distinguish between two modes or results of knowledge: the Upanishad separates vidya and avidya
-      as yielding different fruits, while Patañjali''s sūtra identifies sight as serving dual purposes—experience and ultimate
-      liberation—implying a hierarchical differentiation of knowledge outcomes.'
-    divergence: The Upanishad emphasizes the teacher's role in making this distinction explicit, whereas Patañjali grounds
-      it in the ontological structure of perception itself (elements, organs, illumination).
+    resonance: 'Both passages distinguish between two modes or results of knowledge: the Upanishad separates
+      vidya and avidya as yielding different fruits, while Patañjali''s sūtra identifies sight as serving
+      dual purposes—experience and ultimate liberation—implying a hierarchical differentiation of knowledge
+      outcomes.'
+    divergence: The Upanishad emphasizes the teacher's role in making this distinction explicit, whereas
+      Patañjali grounds it in the ontological structure of perception itself (elements, organs, illumination).
     passage_id: patañjali_yoga_sūtras.ys_2_18
   layer_provenance: generated_grounded
 appendixes: []
@@ -121,3 +126,9 @@ provenance:
   section: teaching_passage
   original_id: ISA_016
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The verse explicitly states TWO different things are said about vidya AND
+    TWO different things about avidya (anyad...anyad for each), not that they yield different results
+    from each other; The structu'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

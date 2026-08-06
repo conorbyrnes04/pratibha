@@ -10,13 +10,15 @@ unit_type: sutra
 sanskrit_devanagari: शरीरं हविः
 sanskrit_iast: śarīraṁ haviḥ
 translation_literal: The body is the offering.
-commentary: 'Practice now enters the flesh. The body is no longer an obstacle to be transcended, but the site of sacrifice
-  — not through harm, but through availability.
+commentary: 'Practice now enters the flesh. The body is no longer an obstacle to be transcended, but the
+  site of sacrifice — not through harm, but through availability.
 
 
-  To offer the body is to allow sensation, posture, and breath to become vehicles of awareness. Nothing is excluded.'
+  To offer the body is to allow sensation, posture, and breath to become vehicles of awareness. Nothing
+  is excluded.'
 insight: Practice now enters the flesh.
-practice: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
+practice: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before
+  naming experience.
 upaya: ''
 themes:
 - awareness
@@ -47,14 +49,16 @@ pratibha_layers:
   body: The body is the offering.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Practice now enters the flesh. The body is no longer an obstacle to be transcended, but the site of sacrifice — not
-    through harm, but through availability.
+  body: 'Practice now enters the flesh. The body is no longer an obstacle to be transcended, but the site
+    of sacrifice — not through harm, but through availability.
 
 
-    To offer the body is to allow sensation, posture, and breath to become vehicles of awareness. Nothing is excluded.'
+    To offer the body is to allow sensation, posture, and breath to become vehicles of awareness. Nothing
+    is excluded.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming experience.
+  body: Sit for 3 minutes with natural breathing. At each inhale and exhale, notice awareness before naming
+    experience.
 - kind: key_terms
   label: Key Terms
   items:
@@ -68,21 +72,22 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: 'Vijnana Bhairava — Yukti #1'
-    resonance: 'Both texts locate the sacred offering within the breath-body itself: the Siva Sutra makes the body the havis
-      (offering), while Vijnana Bhairava Yukti #1 identifies the Supreme Goddess as constantly articulating through prāṇa
-      and jīva—the dual breath-movements that constitute embodied life. In both, practice enters flesh through breath as the
-      primary locus of sacrifice.'
-    divergence: The Siva Sutra frames the body as offering in a unified act of recognition, while Vijnana Bhairava emphasizes
-      the dual oscillation (exhale/inhale) as the Goddess's continuous articulation—one stresses integration, the other the
-      dynamic polarity within embodiment.
+    resonance: 'Both texts locate the sacred offering within the breath-body itself: the Siva Sutra makes
+      the body the havis (offering), while Vijnana Bhairava Yukti #1 identifies the Supreme Goddess as
+      constantly articulating through prāṇa and jīva—the dual breath-movements that constitute embodied
+      life. In both, practice enters flesh through breath as the primary locus of sacrifice.'
+    divergence: The Siva Sutra frames the body as offering in a unified act of recognition, while Vijnana
+      Bhairava emphasizes the dual oscillation (exhale/inhale) as the Goddess's continuous articulation—one
+      stresses integration, the other the dynamic polarity within embodiment.
     passage_id: vijnana_bhairava.yukti_001
   - citation: Tantrasara — Subtle Sound – Mantra as Breath of Śiva
-    resonance: 'Both texts describe how sacred practice enters the body through coordinated breath and mantra: the Siva Sutra
-      declares the body itself becomes the offering through practice, while Tantrasara''s Āṇava path begins with mouth movement,
-      breath coordination, and sacred syllables—a somatic entry into the divine through the breath-body.'
-    divergence: The Siva Sutra treats the body as already-sacred offering requiring recognition, while Tantrasara's Āṇava
-      path constructs sacredness through deliberate, step-by-step coordination of breath and sound—one emphasizes revelation,
-      the other gradual embodied practice.
+    resonance: 'Both texts describe how sacred practice enters the body through coordinated breath and
+      mantra: the Siva Sutra declares the body itself becomes the offering through practice, while Tantrasara''s
+      Āṇava path begins with mouth movement, breath coordination, and sacred syllables—a somatic entry
+      into the divine through the breath-body.'
+    divergence: The Siva Sutra treats the body as already-sacred offering requiring recognition, while
+      Tantrasara's Āṇava path constructs sacredness through deliberate, step-by-step coordination of breath
+      and sound—one emphasizes revelation, the other gradual embodied practice.
     passage_id: tantrasara.ts_018
   layer_provenance: generated_grounded
 appendixes: []
@@ -92,3 +97,4 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.8
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'

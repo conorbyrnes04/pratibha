@@ -98,3 +98,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 71: ''set'' is unusual for describing karma''s non-immediate ripening; published translations
+    typically use ''curdle'' or ''coagulate'' matching the milk simile more directly; Verse 72: ''brings
+    his head crashing down'' is overly dramatic; the original ''muddhaṃ vipātayaṃ'' means ''splitting/destroying
+    hi'

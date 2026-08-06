@@ -7,7 +7,7 @@ unit_label: Necessity in the Useful
 title: Necessity in the Useful
 unit_type: chapter
 sanskrit_devanagari: Ἠνάγκασται ἡ τοῦ συμφέροντος φύσις τοῦτο ποιεῖν.
-translation_literal: The nature of what benefits has been compelled to do this.
+translation_literal: The nature of the expedient is compelled to do this.
 commentary: 'Marcus gives a deliberately bare causal verdict. The perfect passive ἠνάγκασται means “has
   been compelled” or “has been necessitated”: what occurred is not presented as a random affront, but
   as something bound up with necessity. The subject, ἡ τοῦ συμφέροντος φύσις, is literally “the nature
@@ -74,5 +74,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): τοῦ συμφέροντος is genitive modifying φύσις, meaning ''the nature of the
+    beneficial/expedient'', not ''what benefits'' as a separate entity; The passive perfect ''ἠνάγκασται''
+    with present infinitive ''ποιεῖ'

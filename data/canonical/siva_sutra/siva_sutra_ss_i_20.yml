@@ -9,14 +9,16 @@ title: The elements unite, separate, and collide as a single movement.
 unit_type: sutra
 sanskrit_devanagari: भूतसन्धान भूतपृथक्त्व विश्वसंघट्टाः
 sanskrit_iast: bhūta-sandhāna-bhūta-pr̥thaktva-viśva-saṅghaṭṭāḥ
-translation_literal: The elements unite, separate, and collide as a single movement.
-commentary: 'The cosmos moves through rhythms of gathering and dispersal. Elements unite, separate, and recombine endlessly.
-  For one established in recognition, these movements no longer obscure; they display the play of consciousness with itself.
+translation_literal: The union of elements, the separation of elements, and the collisions of the universe.
+commentary: 'The cosmos moves through rhythms of gathering and dispersal. Elements unite, separate, and
+  recombine endlessly. For one established in recognition, these movements no longer obscure; they display
+  the play of consciousness with itself.
 
 
   Multiplicity is no longer confusing. It is choreography.'
 insight: The cosmos moves through rhythms of gathering and dispersal.
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
 upaya: ''
 themes:
 - consciousness
@@ -44,17 +46,19 @@ pratibha_layers:
   body: bhūta-sandhāna-bhūta-pr̥thaktva-viśva-saṅghaṭṭāḥ
 - kind: translation
   label: Pratibha Translation
-  body: The elements unite, separate, and collide as a single movement.
+  body: The union of elements, the separation of elements, and the collisions of the universe.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The cosmos moves through rhythms of gathering and dispersal. Elements unite, separate, and recombine endlessly. For
-    one established in recognition, these movements no longer obscure; they display the play of consciousness with itself.
+  body: 'The cosmos moves through rhythms of gathering and dispersal. Elements unite, separate, and recombine
+    endlessly. For one established in recognition, these movements no longer obscure; they display the
+    play of consciousness with itself.
 
 
     Multiplicity is no longer confusing. It is choreography.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -68,20 +72,22 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Yoga Spandakarika — First Flow
-    resonance: Both texts describe a unified field where apparent multiplicity (relative notions, elements) returns to or
-      is recognized within a single source or ground. The Siva Sutra's 'single movement' of gathering and dispersal mirrors
-      the Spandakarika's discovery that ego-bound notions 'rediscover their peaceful source'—a reversal from fragmentation
-      to unity.
-    divergence: The Siva Sutra emphasizes the cosmic rhythm of elements themselves (bhuta) as the primary movement, while
-      Spandakarika privileges consciousness and the ego's recognition of its source as the operative principle.
+    resonance: Both texts describe a unified field where apparent multiplicity (relative notions, elements)
+      returns to or is recognized within a single source or ground. The Siva Sutra's 'single movement'
+      of gathering and dispersal mirrors the Spandakarika's discovery that ego-bound notions 'rediscover
+      their peaceful source'—a reversal from fragmentation to unity.
+    divergence: The Siva Sutra emphasizes the cosmic rhythm of elements themselves (bhuta) as the primary
+      movement, while Spandakarika privileges consciousness and the ego's recognition of its source as
+      the operative principle.
     passage_id: yoga_spandakarika.sp_04
   - citation: 'Know Yourself (Ibn Arabi / Balyani) — Pearl #13'
-    resonance: Both passages structure reality as a non-dual circulation or movement where distinction collapses into identity.
-      The Siva Sutra's unite-separate-collide as 'single movement' parallels Ibn Arabi's 'He sent Himself from Himself, through
-      Himself to Himself'—a self-reflexive loop where apparent duality resolves into singular self-transmission.
-    divergence: The Siva Sutra grounds this movement in the material elements and their rhythmic play (sanghatta), while Ibn
-      Arabi grounds it in divine self-knowledge and theistic metaphysics, making the movement an act of divine self-disclosure
-      rather than cosmic oscillation.
+    resonance: Both passages structure reality as a non-dual circulation or movement where distinction
+      collapses into identity. The Siva Sutra's unite-separate-collide as 'single movement' parallels
+      Ibn Arabi's 'He sent Himself from Himself, through Himself to Himself'—a self-reflexive loop where
+      apparent duality resolves into singular self-transmission.
+    divergence: The Siva Sutra grounds this movement in the material elements and their rhythmic play
+      (sanghatta), while Ibn Arabi grounds it in divine self-knowledge and theistic metaphysics, making
+      the movement an act of divine self-disclosure rather than cosmic oscillation.
     passage_id: know_yourself_ibn_arabi_balyani.kys_p013
   layer_provenance: generated_grounded
 appendixes: []
@@ -91,3 +97,9 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.20
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Mistranslation of compound structure: ''bhūta-sandhāna'' (union of elements),
+    ''bhūta-pṛthaktva'' (separation of elements), and ''viśva-saṅghaṭṭāḥ'' (collisions/encounters of the
+    universe) are three distinc'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

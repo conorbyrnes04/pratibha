@@ -247,3 +247,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 1.1: ''Those who inquire into Brahman ask'' adds an interpretive frame not present
+    in the original, which directly poses the questions; Verse 1.1: ''Under whose governance'' for ''adhiṣṭhitāḥ
+    kena'' is slightly interpretive; more literally ''presided over by whom/what''; Verse 1.2: ''None
+    of these, alo'

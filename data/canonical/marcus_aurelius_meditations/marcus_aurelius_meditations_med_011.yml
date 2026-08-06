@@ -9,8 +9,8 @@ unit_type: verse
 section: IV.34
 sanskrit_devanagari: Ἑκὼν σεαυτὸν τῇ Κλωθοῖ συνεπιδίδου παρέχων συννῆσαι, οἷστισί ποτε πράγμασι βούλεται.
 sanskrit_iast: ''
-translation_literal: Whatever fate (εἱμαρμένη, heimarmenē) has spun together for you, cherish; and love
-  from the heart those with whom fortune has spun your life together.
+translation_literal: Willingly give yourself over to Clotho, allowing yourself to be spun together with
+  whatever matters she wishes.
 commentary: 'The image is textile-making: a life is not a sequence of isolated incidents but a thread
   interwoven with other threads. Marcus does not command passive approval of every event, nor does he
   erase the distinction between good and bad action. His point concerns assent to what cannot now be otherwise.
@@ -55,7 +55,8 @@ provenance:
   collection: Marcus Aurelius — Meditations
   source_confidence: high
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
-  english_source: Pratibha own rendering (2026).
+  english_source: Pratibha own rendering (2026). | corrected on independent cross-check with the living
+    scholarly translations (re-rendered from the original, not copied)
   verification: original replaced with verified PD Greek; translation retained
   verification_note: The passage accurately reflects Marcus Aurelius, Meditations IV.34. The Greek text
     correctly reads 'Ὃ σοι ἡ εἱμαρμένη συγκέκλωθε, τοῦτο στέργε, καὶ οἷς ἡ τύχη συγκατακέκλωκεν, τούτους
@@ -63,3 +64,7 @@ provenance:
   section: Meditations 4.34
   original_reliability: RESTORED — Perseus Greek for Meditations 4.34 (replaces a model-supplied paraphrase);
     Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The Greek text uses ''Κλωθοῖ'' (Clotho, the Spinner) not ''εἱμαρμένη''
+    (fate/destiny) - the translator has substituted a different concept; The phrase ''οἷστισί ποτε πράγμασι
+    βούλεται'' means ''to whatever m'

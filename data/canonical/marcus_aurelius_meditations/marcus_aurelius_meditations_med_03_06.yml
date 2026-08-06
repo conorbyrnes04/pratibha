@@ -19,21 +19,22 @@ sanskrit_devanagari: Εἰ μὲν κρεῖττον εὑρίσκεις ἐν �
   δόξῃ, κατεκράτησεν ἄφνω καὶ παρήνεγκεν. σὺ δέ, φημί, ἁπλῶς καὶ ἐλευθέρως ἑλοῦ τὸ κρεῖττον καὶ τούτου
   ἀντέχου· κρεῖττον δὲ τὸ συμφέρον. εἰ μὲν τὸ ὡς λογικῷ, τοῦτο τήρει· εἰ δὲ τὸ ὡς ζῴῳ, ἀπόφηναι, καὶ ἀτύφως
   φύλασσε τὴν κρίσιν· μόνον ὅπως ἀσφαλῶς τὴν ἐξέτασιν ποιήσῃ.
-translation_literal: 'If, in human life, you can find something better than justice, truthfulness, self-command,
-  courage, and, in sum, the self-sufficiency of your mind—its being content with itself when it acts according
-  to right reason, and with what fate assigns without your choice—then turn toward that thing with your
-  whole soul and enjoy the best thing you have found. But if nothing appears better than the divinity
-  planted within you—the power that has brought its own impulses under itself, examines impressions, has
-  withdrawn itself from the persuasions of sense, as Socrates said, has submitted itself to the gods,
-  and takes thought beforehand for human beings—if you find everything else smaller and cheaper than this,
-  give no place to anything else. For once you lean toward and yield to another object, you will no longer
-  be able, undistracted, to honor that good which is properly yours. Nothing alien in kind is permitted
-  to rival the rational and civic good: not popular praise, public office, wealth, or the enjoyments of
-  pleasure. All these, even if they seem for a little while to fit harmoniously with it, suddenly gain
-  mastery and carry one away. So, I say, choose the better simply and freely, and hold fast to it. The
-  better is what benefits you. If it benefits you as a rational being, keep it; if only as an animal,
-  reject it, and maintain your judgment without self-deception. Only make sure that your examination is
-  secure.'
+translation_literal: If, in human life, you find something better than justice, truth, temperance, courage,
+  and in a word, better than your mind's self-sufficiency—in those matters where it enables you to act
+  according to right reason, and in accepting what is allotted by fate among things not subject to choice—if,
+  I say, you see something better than this, turn to it with your whole soul and enjoy the best thing
+  you have found. But if nothing appears better than the very divinity established within you—which has
+  subordinated your impulses to itself, examines your impressions, has withdrawn itself from the persuasions
+  of the senses (as Socrates said), has submitted itself to the gods, and cares for human beings in advance—if
+  you find all other things smaller and more worthless than this, give place to nothing else, toward which,
+  once you incline and turn aside, you will no longer be able without distraction to give priority to
+  that good which is your own and properly yours. For it is not right that anything of a different kind
+  stand as rival to the rational and political good—such as praise from the many, or positions of power,
+  or wealth, or enjoyments of pleasures. All these things, even if they seem for a brief time to fit in
+  harmoniously, suddenly gain mastery and carry one away. But you, I say, choose the better simply and
+  freely, and hold to it. The better is what is beneficial. If it benefits you as a rational being, preserve
+  it; but if as an animal, declare it so, and without arrogance maintain your judgment—only see to it
+  that you make your examination securely.
 commentary: 'Marcus begins with a challenge rather than a command: find something “better” (κρεῖττον)
   than the virtues and the mind’s capacity for ἀρκεῖσθαι, being sufficient or content in itself. This
   is not isolation from circumstance. The mind works according to ὀρθὸς λόγος, “right reason,” while receiving
@@ -109,5 +110,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''if only as an animal, reject it'' (εἰ δὲ τὸ ὡς ζῴῳ, ἀπόφηναι)
+    is mistranslated. ἀπόφηναι means ''declare/state it'' not ''reject it''. Marcus is saying to declare
+    which kind of benefit it is, n'

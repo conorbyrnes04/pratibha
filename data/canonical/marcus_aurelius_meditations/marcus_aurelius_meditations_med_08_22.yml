@@ -8,9 +8,9 @@ title: Goodness Today
 unit_type: chapter
 sanskrit_devanagari: Πρόσεχε τῷ ὑποκειμένῳ ἢ τῷ δόγματι ἢ τῇ ἐνεργείᾳ ἢ τῷ σημαινομένῳ. Δικαίως ταῦτα
   πάσχεις· μᾶλλον δὲ θέλεις ἀγαθὸς αὔριον γενέσθαι ἢ σήμερον εἶναι.
-translation_literal: Attend to the thing laid before you—or to your judgment of it, or to the action involved,
-  or to what is being signified. You are undergoing this rightly; indeed, you would rather become good
-  tomorrow than be good today.
+translation_literal: 'Pay attention to the underlying matter, or to the principle, or to the activity,
+  or to the meaning. You suffer these things justly: for you prefer to become good tomorrow rather than
+  to be good today.'
 commentary: 'The opening is a compact exercise in discrimination. Marcus directs attention successively
   toward τῷ ὑποκειμένῳ, the matter at hand; τῷ δόγματι, the judgment one has formed; τῇ ἐνεργείᾳ, the
   deed or activity; and τῷ σημαινομένῳ, what a word, event, or appearance actually signifies. The point
@@ -77,5 +77,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''Δικαίως ταῦτα πάσχεις'' is rendered as ''You are undergoing
+    this rightly'' but the context suggests irony/criticism - Marcus is saying ''you deserve what you''re
+    suffering'' because of procrasti'

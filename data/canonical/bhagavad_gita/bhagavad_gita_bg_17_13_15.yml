@@ -17,11 +17,11 @@ sanskrit_iast: 'vidhihīnamasṛṣṭānnaṃ mantrahīnamadakṣiṇam|śraddh
   devadvijaguruprājñapūjanaṃ śaucamārjavam|brahmacaryamahiṃsā ca śārīraṃ tapa ucyate
 
   anudvegakaraṃ vākyaṃ satyaṃ priyahitaṃ ca yat|svādhyāyābhyasanaṃ caiva vāṅmayaṃ tapa ucyate'
-translation_literal: Sacrifice without ordinance, without food offered, without mantras, without gifts,
-  and without faith is declared tamasic. Worship of gods, of the twice-born, of teachers, and of the wise;
-  purity, uprightness, continence, and non-harming are called austerity of the body. Speech that causes
-  no agitation, that is true, pleasant, and beneficial, and also practice of sacred study—these are called
-  austerity of speech.
+translation_literal: Sacrifice performed without proper procedure, with food not properly distributed,
+  without mantras, without priestly fees, and devoid of faith is declared to be tamasic. Worship of the
+  gods, the twice-born, teachers, and the wise; cleanliness, straightforwardness, celibacy, and non-violence—these
+  are called bodily austerity. Speech that does not cause distress, that is truthful, pleasant, and beneficial,
+  and the practice of Vedic recitation—these are called austerity of speech.
 commentary: 'Tamasic yajña is defined by absences: no vidhi, no food-sharing, no mantra, no dakṣiṇā, no
   śraddhā. Then tapas is redeemed from ghora parody by a threefold humane map. Body-tapas: reverence,
   purity, continence, non-harm. Speech-tapas: non-agitating, true, kind, useful speech plus svādhyāya.
@@ -72,11 +72,11 @@ pratibha_layers:
     anudvegakaraṃ vākyaṃ satyaṃ priyahitaṃ ca yat|svādhyāyābhyasanaṃ caiva vāṅmayaṃ tapa ucyate'
 - kind: translation
   label: Pratibha Translation
-  body: Sacrifice without ordinance, without food offered, without mantras, without gifts, and without
-    faith is declared tamasic. Worship of gods, of the twice-born, of teachers, and of the wise; purity,
-    uprightness, continence, and non-harming are called austerity of the body. Speech that causes no agitation,
-    that is true, pleasant, and beneficial, and also practice of sacred study—these are called austerity
-    of speech.
+  body: Sacrifice performed without proper procedure, with food not properly distributed, without mantras,
+    without priestly fees, and devoid of faith is declared to be tamasic. Worship of the gods, the twice-born,
+    teachers, and the wise; cleanliness, straightforwardness, celibacy, and non-violence—these are called
+    bodily austerity. Speech that does not cause distress, that is truthful, pleasant, and beneficial,
+    and the practice of Vedic recitation—these are called austerity of speech.
 - kind: commentary
   label: Pratibha Commentary
   body: 'Tamasic yajña is defined by absences: no vidhi, no food-sharing, no mantra, no dakṣiṇā, no śraddhā.
@@ -130,3 +130,10 @@ provenance:
   section: chapter_17
   original_id: BG_17_13_15
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The first verse states ''asṛṣṭānnam'' (food not properly distributed/offered),
+    not ''without food offered'' - the food is present but improperly handled; The first verse states
+    ''adakṣiṇam'' (without dakshi'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

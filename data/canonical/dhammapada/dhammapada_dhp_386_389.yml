@@ -100,3 +100,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: In verse 387, 'jhāyī tapati brāhmaṇo' is translated as 'the meditating brahmin shines in
+    contemplation.' The term 'jhāyī' refers to the meditator, and 'tapati' means 'shines' or 'burns.'
+    The phrase 'in contemplation' is an interpretive addition not directly present in the original, which
+    simply stat

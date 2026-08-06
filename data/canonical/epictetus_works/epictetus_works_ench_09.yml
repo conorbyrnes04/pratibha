@@ -60,6 +60,11 @@ provenance:
   original_reliability: SOURCED — Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
     (Greek original added to a previously translation-only unit)
   original_source: Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The phrase 'unless that is your choice' incorrectly translates 'ἐὰν μὴ αὐτὴ θέλῃ', which
+    means 'unless it (the prohairesis itself) wills it'. This is a crucial distinction in Epictetus's
+    philosophy, as it emphasizes that only one's own faculty of choice can hinder itself, not external
+    events.; The f
 sanskrit_devanagari: νόσος σώματός ἐστιν ἐμπόδιον, προαιρέσεως δὲ οὔ, ἐὰν μὴ αὐτὴ θέλῃ. χώλανσις σκέλους
   ἐστὶν ἐμπόδιον, προαιρέσεως δὲ οὔ. καὶ τοῦτο ἐφʼ ἑκάστου τῶν ἐμπιπτόντων ἐπίλεγε· εὑρήσεις γὰρ αὐτὸ
   ἄλλου τινὸς ἐμπόδιον, σὸν δὲ οὔ.

@@ -12,14 +12,14 @@ sanskrit_devanagari: Ἐμποδισμὸς αἰσθήσεως κακὸν ζω
   ὁρμήσαντι ἔνστημα ἐγένετο; εἰ μὲν ἀνυπεξαιρέτως ὥρμας, ἤδη ὡς λογικοῦ κακόν, εἰ δὲ τὸ κοινὸν λαμβάνεις,
   οὔπω βέβλαψαι οὐδὲ ἐμπεπόδισαι. τὰ μέντοι τοῦ νοῦ ἴδια οὐδεὶς ἄλλος εἴωθεν ἐμποδίζειν· τούτου γὰρ οὐ
   πῦρ, οὐ σίδηρος, οὐ τύραννος, οὐ βλασφημία, οὐχ ὁτιοῦν ἅπτεται, ὅταν γένηται ( σφαῖρος κυκλοτερὴς μονίᾐ.
-translation_literal: 'A hindrance to sensation is an evil for a sentient nature. A hindrance to impulse
-  is likewise an evil for a living nature. And there is something else that similarly obstructs and harms
-  the constitution of a growing thing. So, then, a hindrance to mind is an evil for a rational nature.
-  Apply all this to yourself. Has pain or pleasure touched you? Sensation will deal with it. Has an obstacle
-  arisen for your impulse? If you set out upon it without reserve, then it is already an evil for you
-  as a rational being; but if you take the common good into account, you have not yet been harmed or impeded.
-  Yet no one else is accustomed to obstruct the mind’s own work: neither fire nor iron nor a tyrant nor
-  slander nor anything whatever can touch it, when it has become a sphere—rounded, settled in its stillness.'
+translation_literal: 'A hindrance to sensation is an evil for living nature. A hindrance to impulse is
+  likewise an evil for living nature. And there is something else that similarly obstructs and harms the
+  constitution of a plant. So then, a hindrance to mind is an evil for rational nature. Apply all these
+  things to yourself. Do pain or pleasure touch you? Sensation will see to it. Has an obstacle occurred
+  to your impulse? If you moved forward without reservation, it is already an evil for you as a rational
+  being; but if you accept the common condition, you are not yet harmed nor obstructed. Yet no one else
+  is accustomed to obstruct the mind''s proper functions: for neither fire nor iron nor tyrant nor slander
+  nor anything at all touches it, when it becomes ''a sphere, rounded, rejoicing in its surrounding stillness.'''
 commentary: 'Marcus begins by distinguishing kinds of nature and their corresponding harms. An ἐμποδισμός,
   an obstruction, is bad only when it frustrates the characteristic activity of the thing concerned: sensation
   for a sentient creature, ὁρμή (purposeful impulse) for an animal, growth for a plant, and νοῦς for the
@@ -89,5 +89,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''ζωτικῆς φύσεως'' (vital/living nature) is used for both sensation
+    and impulse in the original, but the translation renders the first as ''sentient nature'' and the
+    second as ''living nature'', '

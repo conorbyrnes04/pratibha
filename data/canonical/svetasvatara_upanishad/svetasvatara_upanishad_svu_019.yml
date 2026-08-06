@@ -194,3 +194,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 4.1: ''gathers the universe at beginning and end'' misrepresents ''vicaiti cānte viśvam
+    ādau'' — vicaiti means ''withdraws/dissolves,'' not ''gathers,'' and the syntax indicates ''withdraws
+    at the end, [having deployed] the universe at the beginning''; Verse 4.1: ''without determinate color''
+    is acceptabl'

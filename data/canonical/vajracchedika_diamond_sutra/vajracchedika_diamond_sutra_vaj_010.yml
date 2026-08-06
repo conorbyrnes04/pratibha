@@ -152,3 +152,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Vajracchedikā Prajñāpāramitā e-text (Conze/Vaidya ed.)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: The phrase 'yanna kvacitpratiṣṭhitaṃ cittamutpādayitavyam' is translated as 'one should give
+    rise to a thought that does not rest upon anything' but this appears to be a restatement rather than
+    the correct parsing. The 'yan na kvacit pratiṣṭhitam' should be parsed as 'yan na kvacit pratiṣṭhitam'
+    (wh

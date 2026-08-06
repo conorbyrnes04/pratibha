@@ -90,3 +90,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation misinterprets 'οἰκονομίαν τινά' as 'some practical ordering' instead
+    of 'some dispensation' or 'some management/arrangement' (in the sense of a divine or natural order).;
+    The new translation misinterprets 'πάρες γὰρ νῦν ἀκαίρως τὴν φυσικὴν δόσιν ἄλλου τινὸς ἐχομένην λόγου
+    λοιπόν'

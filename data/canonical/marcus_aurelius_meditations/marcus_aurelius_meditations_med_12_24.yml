@@ -91,3 +91,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of the final sentence 'ἐπὶ τούτοις ὁ τῦφος' as 'Yet upon these things rests
+    pride' is an inversion of meaning. The Greek implies that pride (τῦφος) is *based on* or *arises from*
+    these observations, not that it *rests upon* the things themselves in a critical or dismissive sense.
+    It'

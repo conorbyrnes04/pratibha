@@ -13,7 +13,8 @@ sanskrit_devanagari: 'कुर्वन्नेवेह कर्माणि
 sanskrit_iast: 'kurvanneveha karmani jijivisec chatam samah |
 
   evam tvayi nanyatheto''sti na karma lipyate nare || 2 ||'
-translation_literal: Living fully through action, one may wish to live a hundred years; only this way action does not bind.
+translation_literal: Performing actions here in this world, one should desire to live a hundred years.
+  For you, there is no other way than this; action does not cling to a person in this manner.
 commentary: 'The text does not reject karma; it purifies agency through non-attachment.
 
 
@@ -42,17 +43,20 @@ commentary: 'The text does not reject karma; it purifies agency through non-atta
   Cross-Tradition Resonances
 
 
-  **Bhagavad Gītā 3.19:** The Gītā likewise teaches that one should perform necessary action without attachment, thereby attaining
-  the highest good. Divergence: The Gītā frames nonattached action more explicitly as offering and duty within devotion to
-  Kṛṣṇa, whereas this verse states the principle without that theological specification.
+  **Bhagavad Gītā 3.19:** The Gītā likewise teaches that one should perform necessary action without attachment,
+  thereby attaining the highest good. Divergence: The Gītā frames nonattached action more explicitly as
+  offering and duty within devotion to Kṛṣṇa, whereas this verse states the principle without that theological
+  specification.
 
-  **Dhammapada 1–2:** The Dhammapada similarly locates bondage and suffering in the mental quality accompanying action, especially
-  intention and defiled thought. Divergence: Buddhist teaching denies an enduring self and explains karmic continuity through
-  dependent origination, while the Īśā Upaniṣad speaks within an Upaniṣadic horizon of the self and the divine.
+  **Dhammapada 1–2:** The Dhammapada similarly locates bondage and suffering in the mental quality accompanying
+  action, especially intention and defiled thought. Divergence: Buddhist teaching denies an enduring self
+  and explains karmic continuity through dependent origination, while the Īśā Upaniṣad speaks within an
+  Upaniṣadic horizon of the self and the divine.
 
-  **Marcus Aurelius, Meditations 6.2:** Marcus Aurelius urges acting in accordance with one’s proper work while remaining
-  inwardly free from craving for outcomes. Divergence: Stoic freedom rests on rational assent and conformity to cosmic nature
-  rather than on liberation from karmic binding in relation to Īśa.'
+  **Marcus Aurelius, Meditations 6.2:** Marcus Aurelius urges acting in accordance with one’s proper work
+  while remaining inwardly free from craving for outcomes. Divergence: Stoic freedom rests on rational
+  assent and conformity to cosmic nature rather than on liberation from karmic binding in relation to
+  Īśa.'
 insight: The text does not reject karma; it purifies agency through non-attachment.
 practice: 'Before acting, set intention: "I offer this action; I do not own its fruits."'
 upaya: ''
@@ -84,7 +88,8 @@ pratibha_layers:
     evam tvayi nanyatheto''sti na karma lipyate nare || 2 ||'
 - kind: translation
   label: Pratibha Translation
-  body: Living fully through action, one may wish to live a hundred years; only this way action does not bind.
+  body: Performing actions here in this world, one should desire to live a hundred years. For you, there
+    is no other way than this; action does not cling to a person in this manner.
 - kind: commentary
   label: Pratibha Commentary
   body: 'The text does not reject karma; it purifies agency through non-attachment.
@@ -107,18 +112,20 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Bhagavad Gita — Renunciation Is Inner, Not Avoidant
-    resonance: Both texts refuse rejection of action itself; instead they locate liberation within action through a shift
-      in consciousness—the Isavasya through non-attachment to fruits, the Gita through relinquishing possessiveness. The operative
-      move is purification of agency, not its abandonment.
-    divergence: The Isavasya emphasizes temporal endurance ('hundred years') as the field for this purified action, while
-      the Gita frames it as a metaphysical reorientation to the gunas and duty (dharma).
+    resonance: Both texts refuse rejection of action itself; instead they locate liberation within action
+      through a shift in consciousness—the Isavasya through non-attachment to fruits, the Gita through
+      relinquishing possessiveness. The operative move is purification of agency, not its abandonment.
+    divergence: The Isavasya emphasizes temporal endurance ('hundred years') as the field for this purified
+      action, while the Gita frames it as a metaphysical reorientation to the gunas and duty (dharma).
     passage_id: bhagavad_gita.bg_05_01_03
   - citation: Astavakra Gita — Verse 1.8
-    resonance: 'Both texts identify a false identification—with doership in the Astavakra, with attachment to action''s binding
-      in the Isavasya—and prescribe a cognitive shift (drinking the nectar of ''I am not the doer'' vs. acting without binding)
-      as the remedy. The structure is: recognize the poison, ingest the antidote, be liberated.'
-    divergence: The Astavakra locates the poison in egoic identity itself, while the Isavasya locates it in the *relationship*
-      to action's fruits, making the latter more concerned with karma's mechanics than ontological delusion.
+    resonance: 'Both texts identify a false identification—with doership in the Astavakra, with attachment
+      to action''s binding in the Isavasya—and prescribe a cognitive shift (drinking the nectar of ''I
+      am not the doer'' vs. acting without binding) as the remedy. The structure is: recognize the poison,
+      ingest the antidote, be liberated.'
+    divergence: The Astavakra locates the poison in egoic identity itself, while the Isavasya locates
+      it in the *relationship* to action's fruits, making the latter more concerned with karma's mechanics
+      than ontological delusion.
     passage_id: astavakra_gita.asg_1_8
   layer_provenance: generated_grounded
 appendixes: []
@@ -128,3 +135,9 @@ provenance:
   section: teaching_passage
   original_id: ISA_008
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Missing the crucial phrase ''evam tvayi'' (thus in you/for you) which emphasizes
+    the specific path being described; Omits ''nanyatheto''sti'' (there is no other way than this) - a
+    critical negation that es'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

@@ -77,3 +77,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
     by public-domain scholarship, not derived from any copyrighted translation
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: error'
+  qa_issues: The phrase 'what you hear in one ear, proclaim from the other' misrepresents the Coptic text
+    which says 'what you will hear in your ear (and) in the other ear'; The translation 'proclaim from
+    the other upon your rooftops' incorrectly combines elements - the text says to proclaim it upon your
+    rooftop

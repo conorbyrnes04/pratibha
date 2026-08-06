@@ -9,28 +9,33 @@ unit_type: verse
 section: Book II, “Discussion on Making All Things Equal”
 sanskrit_devanagari: 且有大覺，而後知此其大夢也；而愚者自以為覺，竊竊然知之。君乎，牧乎，固哉！丘也與女，皆夢也；予謂女夢，亦夢也。是其言也，其名為弔詭。萬世之後而一遇大聖，知其解者，是旦暮遇之也。
 sanskrit_iast: ''
-translation_literal: Only when there is a great awakening will we know that this is one great dream. The foolish think themselves
-  awake; in their petty certainty they know who is ruler and who is herdsman—how fixed and stubborn they are! Confucius and
-  you are both dreaming; and when I say that you are dreaming, I too am dreaming. Such words are called diaogui, “strange
-  and paradoxical.” After ten thousand generations, if once we encounter a great sage who understands their meaning, it will
-  be as though we had met him between morning and evening.
-commentary: 'This closing movement of the “Equality of Things” radicalizes ordinary skepticism. Zhuangzi does not merely say
-  that particular judgments may be mistaken; he places the entire practical world of confident distinctions—especially status
-  distinctions such as ruler and herdsman—within the condition of dream. “Great awakening” is therefore not another item of
-  information possessed by a superior observer. The speaker immediately turns the claim back upon himself: to tell another,
-  “you are dreaming,” is itself dream-speech. This reflexivity prevents the passage from becoming a doctrine of secret certainty.
-  Diaogui names the unsettling, apparently self-undermining character of such language: it points beyond settled oppositions
-  while remaining entangled in words. The final image of a sage appearing after myriad generations makes genuine understanding
-  both rare and temporally intimate. Once the appropriate understanding occurs, the vast interval collapses; yet the text
-  refuses to specify a method by which one can securely certify that it has occurred.
+translation_literal: Only when there is a great awakening will we know that this is one great dream. The
+  foolish think themselves awake; in their petty certainty they know who is ruler and who is herdsman—how
+  fixed and stubborn they are! Confucius and you are both dreaming; and when I say that you are dreaming,
+  I too am dreaming. Such words are called diaogui, “strange and paradoxical.” After ten thousand generations,
+  if once we encounter a great sage who understands their meaning, it will be as though we had met him
+  between morning and evening.
+commentary: 'This closing movement of the “Equality of Things” radicalizes ordinary skepticism. Zhuangzi
+  does not merely say that particular judgments may be mistaken; he places the entire practical world
+  of confident distinctions—especially status distinctions such as ruler and herdsman—within the condition
+  of dream. “Great awakening” is therefore not another item of information possessed by a superior observer.
+  The speaker immediately turns the claim back upon himself: to tell another, “you are dreaming,” is itself
+  dream-speech. This reflexivity prevents the passage from becoming a doctrine of secret certainty. Diaogui
+  names the unsettling, apparently self-undermining character of such language: it points beyond settled
+  oppositions while remaining entangled in words. The final image of a sage appearing after myriad generations
+  makes genuine understanding both rare and temporally intimate. Once the appropriate understanding occurs,
+  the vast interval collapses; yet the text refuses to specify a method by which one can securely certify
+  that it has occurred.
 
 
   Key Terms
 
 
-  **大覺** — “Great awakening”: a transformation of perspective by which ordinary waking certainty is seen as dreamlike.
+  **大覺** — “Great awakening”: a transformation of perspective by which ordinary waking certainty is seen
+  as dreamlike.
 
-  **大夢** — “Great dream”: the encompassing field within which social and conceptual certainties are ordinarily lived.
+  **大夢** — “Great dream”: the encompassing field within which social and conceptual certainties are ordinarily
+  lived.
 
   **弔詭** — “Strange/paradoxical”: speech whose force includes its own apparent instability and self-implication.
 
@@ -38,24 +43,30 @@ commentary: 'This closing movement of the “Equality of Things” radicalizes o
   Cross-Tradition Resonances
 
 
-  **Plato, Republic VII:**  Divergence: Plato presents a stable intelligible order known by the philosopher; Zhuangzi declines
-  to secure awakening as a final doctrinal viewpoint.
+  **Plato, Republic VII:**  Divergence: Plato presents a stable intelligible order known by the philosopher;
+  Zhuangzi declines to secure awakening as a final doctrinal viewpoint.
 
-  **The Buddhist “dream” simile, especially the Diamond Sutra:**  Divergence: Buddhist texts often connect the simile to emptiness
-  and liberation through a specific path; this passage foregrounds perspectival instability and paradoxical speech.
+  **The Buddhist “dream” simile, especially the Diamond Sutra:**  Divergence: Buddhist texts often connect
+  the simile to emptiness and liberation through a specific path; this passage foregrounds perspectival
+  instability and paradoxical speech.
 
-  **Montaigne, “Of Experience”:**  Divergence: Montaigne’s skeptical moderation remains largely ethical and civic, whereas
-  Zhuangzi’s dream image destabilizes the waking/dreaming framework itself.'
-practice: 'For ten minutes, notice each time the mind silently assigns a fixed role—“expert,” “failure,” “important,” “inferior.”
-  After each label, ask: “What makes this seem unquestionably awake?” Do not replace the label with its opposite; simply let
-  its certainty soften.'
+  **Montaigne, “Of Experience”:**  Divergence: Montaigne’s skeptical moderation remains largely ethical
+  and civic, whereas Zhuangzi’s dream image destabilizes the waking/dreaming framework itself.'
+practice: 'For ten minutes, notice each time the mind silently assigns a fixed role—“expert,” “failure,”
+  “important,” “inferior.” After each label, ask: “What makes this seem unquestionably awake?” Do not
+  replace the label with its opposite; simply let its certainty soften.'
 themes: []
 tags: []
 provenance:
   collection: The Book of Chuang Tzu
   source_confidence: high
-  original_source: 'The Book of Chuang Tzu: Book II, “Discussion on Making All Things Equal”; original per received text (model-supplied,
-    PD-verification pending).'
+  original_source: 'The Book of Chuang Tzu: Book II, “Discussion on Making All Things Equal”; original
+    per received text (model-supplied, PD-verification pending).'
   english_source: Pratibha own rendering (2026).
   verification: 'cross-model (Luna): corrected'
   verification_note: The quoted text omits 而 before 愚者; the received passage reads 而愚者自以為覺.
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The phrase '窃窃然知之' is mistranslated. It does not mean 'in their petty certainty they know
+    who is ruler and who is herdsman'. Instead, it refers to their self-satisfied, petty knowledge of
+    their own 'awakened' state.; The phrase '君乎，牧乎，固哉！' is mistranslated. It is not a statement about
+    knowing 'who i

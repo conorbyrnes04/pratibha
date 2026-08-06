@@ -100,3 +100,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: 'The new translation misinterprets the phrase "πάσης αἱρέσεως κοινόν" (common to every school)
+    by applying it only to the preceding clause about not chattering with an uninstructed person. In the
+    original, it refers to the entire preceding thought: ''not abandoning philosophy amid whatever befalls,
+    an'

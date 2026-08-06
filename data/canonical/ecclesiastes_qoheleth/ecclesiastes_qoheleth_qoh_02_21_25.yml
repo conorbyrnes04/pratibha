@@ -19,8 +19,8 @@ sanskrit_devanagari: '(2:21) כִּי־יֵ֣שׁ אָדָ֗ם שֶׁעֲמָל�
 
   (2:25) כִּ֣י מִ֥י יֹאכַ֛ל וּמִ֥י יָח֖וּשׁ ח֥וּץ מִמֶּֽנִּי׃'
 translation_literal: 'For there is one whose labor is done with wisdom, with knowledge, and with skill;
-  yet to someone who has not labored for it, that person must give his portion. This too is vapor, and
-  a great evil.
+  yet to someone who has not labored for it, he gives it as his portion. This too is vapor, and a great
+  evil.
 
 
   For what does a person gain from all his toil and from the striving of his heart, with which he toils
@@ -35,7 +35,7 @@ translation_literal: 'For there is one whose labor is done with wisdom, with kno
   also, I have seen, comes from the hand of God.
 
 
-  For who can eat, and who can feel enjoyment, apart from me?'
+  For who can eat, and who can feel enjoyment, apart from Him?'
 commentary: 'Qoheleth looks at accomplished work and sees its wound: a person may labor with חָכְמָה (ḥokhmah),
   knowledge, and skill, only to leave the resulting “portion” to one who did not earn it. The problem
   is not merely death or injustice in the abstract, but the severing of effort from possession. Such an
@@ -105,5 +105,11 @@ provenance:
     Hebrew)
   verification: 'translation cross-checked (Luna): loose; original from WLC Hebrew'
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
-    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
+    by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation | corrected
+    on independent cross-check with the living scholarly translations (re-rendered from the original,
+    not copied)
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 21: ''that person must give his portion'' incorrectly suggests obligation/compulsion.
+    The Hebrew יִתְּנֶנּוּ חֶלְקוֹ means ''he gives/leaves it as his portion'' - describing what happens,
+    not what m'

@@ -146,3 +146,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Vajracchedikā Prajñāpāramitā e-text (Conze/Vaidya ed.)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of the last line of the gatha 'dharmatā ca na vijñeyā na sā śakyā vijānitum'
+    as 'Yet dharmatā is not an object to be known; it cannot be made known' is an inversion of the intended
+    meaning. The original implies that dharmatā is not something to be *cognized* or *understood* in a
+    conv

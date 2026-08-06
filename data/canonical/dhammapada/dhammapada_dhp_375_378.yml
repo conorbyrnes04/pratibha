@@ -103,3 +103,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: In verse 377, 'jasmine plant' is an incorrect translation of 'vassikā'. 'Vassikā' refers
+    to a flower that blooms in the rainy season, often identified as Jasminum sambac, but the key is 'faded
+    flowers' (maddavāni pamuñcati), which implies shedding or dropping, not necessarily 'faded' in the
+    sense of

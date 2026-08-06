@@ -101,3 +101,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 'עֹלָם' as 'eternity' in 3:11 is a common but contested interpretation;
+    'world' or 'sense of time' is more accurate in context.; The phrase 'מִבְּלִ֞י אֲשֶׁ֧ר לֹא־יִמְצָ֣א
+    הָאָדָ֗ם' in 3:11 is double-negative and means 'without man being able to find out' or 'so that man
+    cannot fi

@@ -210,3 +210,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: '4.11: ''devam īḍyaṃ'' (the worshipful/adorable god) is omitted; 4.14: ''kalilasya madhye''
+    means ''in the midst of all that is mixed/confused'' but the translation ''midst of confusion'' loses
+    the cosmological sense of the mixed/manifold universe; 4.14: ''viśvasy ekaṃ pariveṣṭitāraṃ'' means
+    ''the one enveloper'

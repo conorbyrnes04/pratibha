@@ -13,14 +13,14 @@ sanskrit_devanagari: Μῖμος, πόλεμος, πτοία, νάρκα, δου
   δὲ τῆς ἐφ̓ ἑκάστου γνωρίσεως, τί τε ἐστὶ κατ̓ οὐσίαν καὶ τίνα χώραν ἔχει ἐν τῷ κόσμῳ καὶ ἐπὶ πόσον πέφυκεν
   ὑφίστασθαι καὶ ἐκ τίνων συγκέκριται καὶ τίσι δύναται ὑπάρχειν καὶ τίνες δύνανται αὐτὸ διδόναι τε καὶ
   ἀφαιρεῖσθαι;
-translation_literal: 'The stage-player, war, alarm, numbness, slavery: day by day these will rub away
-  those sacred convictions of yours—whatever notions you form and then set aside in a manner contrary
-  to nature. But one must look at everything and act in such a way that practical work is accomplished
-  at the same time, theoretical understanding is active at the same time, and the unassertive confidence
-  born from knowledge of each particular thing is kept intact—unnoticed, not concealed. For when will
-  you enjoy simplicity? When dignity? When will you possess, in each case, the knowledge of what a thing
-  is in its essence, what place it holds in the cosmos, how long it is fitted to endure, what elements
-  compose it, to whom it can belong, and who can give it or take it away?'
+translation_literal: 'Mime, war, panic, torpor, slavery: day by day your sacred principles will be erased—all
+  those you conceive without natural reasoning and disregard. One must observe and act in everything so
+  that practical action is simultaneously accomplished and theoretical contemplation is simultaneously
+  exercised, and the quiet self-assurance that comes from knowledge of each thing is preserved—unnoticed,
+  not hidden. For when will you enjoy simplicity? When reverence? When the understanding of each thing:
+  what it is in its essence, what position it occupies in the universe, how long it is naturally constituted
+  to last, of what elements it is composed, to whom it can belong, and who are able to give it and to
+  take it away?'
 commentary: 'Marcus opens with a hard cluster of forces: “Μῖμος, πόλεμος, πτοία, νάρκα, δουλεία”—performance
   or theatricality, war, fear, paralysis, servitude. Whether these are outer conditions or inward postures,
   they wear down the “ἱερὰ ... δόγματα,” the principles he treats as sacred. The danger is not merely
@@ -90,5 +90,11 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The opening list ''Μῖμος, πόλεμος, πτοία, νάρκα, δουλεία'' are not the
+    subjects doing the rubbing away - they are examples of things that will rub away the sacred convictions;
+    The phrase ''ὁπόσα ἀφυσιολο'

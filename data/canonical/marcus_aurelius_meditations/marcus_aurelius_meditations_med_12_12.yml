@@ -8,9 +8,8 @@ title: No One to Blame
 unit_type: chapter
 sanskrit_devanagari: Μήτε θεοῖς μεμπτέον· οὐδὲν γὰρ ἑκόντες ἢ ἄκοντες ἁμαρτάνουσι· μήτε ἀνθρώποις· οὐδὲν
   γὰρ οὐχὶ ἄκοντες. ὥστε οὐδενὶ μεμπτέον.
-translation_literal: 'Do not find fault with the gods: willingly or unwillingly, they do nothing wrong.
-  Nor find fault with human beings: they do nothing wrong except unwillingly. Therefore, find fault with
-  no one.'
+translation_literal: Do not blame the gods, for they do nothing wrong either willingly or unwillingly.
+  Nor blame human beings, for they do nothing except unwillingly. Therefore, blame no one.
 commentary: 'The passage moves with stark, almost syllogistic economy. Marcus begins with θεοῖς, the gods:
   they do not ἁμαρτάνουσι, “miss the mark” or commit an error, whether ἑκόντες or ἄκοντες—willingly or
   unwillingly. Divine action, on this Stoic view, belongs to an intelligible and unerring whole; complaint
@@ -78,5 +77,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''they do nothing wrong except unwillingly'' inverts the meaning
+    of the Greek ''οὐδὲν γὰρ οὐχὶ ἄκοντες'' (double negative: ''nothing not unwillingly'' = ''everything
+    unwillingly''). The Greek state'

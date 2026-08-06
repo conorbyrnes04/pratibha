@@ -9,9 +9,9 @@ unit_type: chapter
 sanskrit_devanagari: Ὁὕτω γὰρ ἔχει, ὦ ἄνδρες Ἀθηναῖοι, τῇ ἀληθείᾳ· οὗ ἄν τις αὑτὸν τάξῃ ἡγησάμενος βέλτιστον
   εἶναι ἢ ὑπ̓ ἄρχοντος ταχθῇ, ἐνταῦθα δεῖ , ὡς ἐμοὶ δοκεῖ, μένοντα κινδυνεύειν, μηδὲν ὑπολογιζόμενον μήτε
   θάνατον μήτε ἄλλο μηδὲν πρὸ τοῦ αἰσχροῦ.)
-translation_literal: 'For this is how it truly is, men of Athens: wherever a person has stationed himself,
-  judging that place best, or wherever he has been posted by a commander, there, I think, he must remain
-  and face danger, reckoning neither death nor anything else as more important than what is shameful.'
+translation_literal: 'For this is how it truly is, men of Athens: wherever a man has stationed himself,
+  believing it to be best, or has been stationed by a commander, there he must remain and face danger,
+  as I see it, taking into account neither death nor anything else before dishonor.'
 commentary: 'Marcus here preserves Socrates’ address to the Athenians, and its military image gives ethical
   resolve a precise shape. One either chooses one’s θέση—implied by the verb τάξῃ, “sets in rank”—because
   it is the best place to stand, or is assigned there by an ἄρχων, a commanding authority. In either case,
@@ -79,5 +79,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): faithful; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''πρὸ τοῦ αἰσχροῦ'' means ''before/in preference to disgrace''
+    — i.e., not reckoning death or anything else IN COMPARISON TO disgrace. The translation ''as more
+    important than what is shameful'' '

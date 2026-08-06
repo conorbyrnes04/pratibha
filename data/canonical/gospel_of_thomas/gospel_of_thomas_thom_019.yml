@@ -9,10 +9,10 @@ unit_type: logion
 sanskrit_devanagari: ⲡⲉϫⲉⲓ︤ⲥ︥ ϫⲉⲟⲩⲙⲁⲕⲁⲣⲓⲟⲥ ⲡⲉⲛⲧⲁϩϣⲱⲡⲉ ϩⲁⲧⲉϩⲏ ⲉⲙⲡⲁⲧⲉϥ ⲉⲧⲉⲧⲛ̄ϣⲁⲛϣⲱⲡⲉ ⲛⲁⲉⲓ ⲙ̄ ⲛ̄ⲧⲉⲧⲛ̄ⲥⲱⲧⲙ̄
   ⲁⲛⲁϣⲁϫⲉ ⲛⲉⲉⲓⲱⲛⲉ ⲛⲁ ⲛⲏⲧⲛ̄ ⲟⲩⲛ̄ⲧⲏⲧⲛ̄ ⲅⲁⲣ̂ ⲙ̄ⲙⲁⲩ ⲛ̄ϯⲟⲩ ⲛ̄ϣⲏⲛ ϩⲙ̄ⲡⲁⲣⲁⲇⲓⲥⲟⲥ ⲉⲥⲉⲕⲓⲙ ⲁⲛ ⲛ̄ϣⲱⲙ⳿ ⲙ̄ⲡⲣⲱ ⲁⲩⲱ ⲙⲁⲣⲉⲛⲟⲩϭⲱⲃⲉ
   ϩⲉ ⲉⲃⲟⲗ ⲡⲉⲧ⳿ⲛⲁⲥⲟⲩⲱⲛⲟⲩ ϥⲛⲁ ⲁⲛ⳿ ⲙ̄ⲙⲟⲩ
-translation_literal: Jesus said, “Blessed is the one who came to be before coming to be. If you become
-  my disciples and listen to my words, these stones will serve you. For you have five trees in Paradise
-  that do not stir in summer or winter, and their leaves do not fall. Whoever comes to know them will
-  not taste death.”
+translation_literal: Jesus said, 'Blessed is the one who existed before he came into being. If you become
+  my disciples and hear my words, these stones will minister to you. For there are five trees for you
+  in Paradise which do not move in summer or in winter, and their leaves do not fall. Whoever knows them
+  will not taste death.'
 commentary: 'The opening blessing reaches behind ordinary beginning: blessed is the one who “came to be
   before coming to be.” The saying does not explain this paradox. Instead, it places discipleship—becoming
   Jesus’ followers and hearing his words—within a reality prior to the changing world. Even stones, the
@@ -78,5 +78,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''the one who came to be before coming to be'' misinterprets
+    ''ⲡⲉⲛⲧⲁϩϣⲱⲡⲉ ϩⲁⲧⲉϩⲏ ⲉⲙⲡⲁⲧⲉϥ'' which means ''the one who existed before he came into being'' - referring
+    to pre-existence before birth/'

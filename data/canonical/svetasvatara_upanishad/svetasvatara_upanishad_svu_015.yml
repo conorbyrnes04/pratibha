@@ -23,12 +23,12 @@ sanskrit_iast: 'yo brahmāṇaṃ vidadhāti pūrvaṃ yo vai vedāṃś ca prah
   yasya deve parā bhaktir yathā deve tathā gurau |
 
   tasy ete kathitā hy arthāḥ prakāśante mahātmanaḥ || 6.23 ||'
-translation_literal: 'To the One who first brings forth Brahma and imparts the Vedas, to that God who
-  illumines inner intelligence, I - seeking liberation - take refuge.
+translation_literal: 'To the One who brings forth Brahmā in the beginning, who indeed sends forth the
+  Vedas to him, to that God who illumines the intelligence of the self, I, desiring liberation, take refuge.
 
 
-  For the great soul who has supreme devotion to God, and to the teacher as to God, these teachings become
-  luminous in meaning.'
+  To one who has supreme devotion toward God, and toward the guru as toward God - to that great soul,
+  these meanings that have been declared shine forth clearly.'
 commentary: 'The Upaniṣad closes with a transmission doctrine: realization is not merely private cognition
   but relational illumination. Verse 6.18 places refuge at the center of liberative intent. This is not
   dependency in the weak sense; it is ontological alignment - consciously placing one’s seeking under
@@ -119,12 +119,12 @@ pratibha_layers:
     tasy ete kathitā hy arthāḥ prakāśante mahātmanaḥ || 6.23 ||'
 - kind: translation
   label: Pratibha Translation
-  body: 'To the One who first brings forth Brahma and imparts the Vedas, to that God who illumines inner
-    intelligence, I - seeking liberation - take refuge.
+  body: 'To the One who brings forth Brahmā in the beginning, who indeed sends forth the Vedas to him,
+    to that God who illumines the intelligence of the self, I, desiring liberation, take refuge.
 
 
-    For the great soul who has supreme devotion to God, and to the teacher as to God, these teachings
-    become luminous in meaning.'
+    To one who has supreme devotion toward God, and toward the guru as toward God - to that great soul,
+    these meanings that have been declared shine forth clearly.'
 - kind: commentary
   label: Pratibha Commentary
   body: 'The Upaniṣad closes with a transmission doctrine: realization is not merely private cognition
@@ -181,3 +181,10 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse numbering error: second verse is labeled 6.23 in original but treated
+    as 6.19 per passage header; Missing critical qualifier in verse 6.19/6.23: ''yasya'' means ''for whom/whose''
+    not just ''for'', an'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

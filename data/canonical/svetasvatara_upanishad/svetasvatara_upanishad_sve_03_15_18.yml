@@ -22,8 +22,8 @@ sanskrit_iast: 'puruṣa evedaṃ sarvaṃ yad bhūtaṃ yac ca bhavyam utāmṛ
   sarvendriyaguṇābhāsaṃ sarvendriyavivarjitaṃ sarvasya prabhum īśānaṃ sarvasya śaraṇaṃ suhṛt || 17 ||
 
   navadvāre pure dehī haṃso lelāyate bahiḥ vaśī sarvasya lokasya sthāvarasya carasya ca || 18 ||'
-translation_literal: '15. This whole world is indeed the Puruṣa: all that has come to be and all that
-  is yet to be. He is lord of immortality, and of what grows hidden through food.
+translation_literal: '15. This whole world is indeed the Puruṣa: all that has been and all that will be.
+  He is the lord of immortality, and of that which grows beyond through food.
 
 
   16. That One has hands and feet on every side, eyes, heads, and faces on every side; possessing ears
@@ -34,8 +34,8 @@ translation_literal: '15. This whole world is indeed the Puruṣa: all that has 
   master and sovereign of all, the refuge and kindly friend of all.
 
 
-  18. Within the city of nine gates, the embodied one—the swan—moves outward in play; self-governing,
-  he is ruler of the whole world, of all that stands still and all that moves.'
+  18. Within the city of nine gates, the embodied soul—the swan—sports outside; self-governing, he is
+  ruler of the whole world, of all that is stationary and all that moves.'
 commentary: 'The passage begins with an uncompromising identification: puruṣa eva idaṃ sarvam, “this all
   is indeed the Puruṣa.” The Puruṣa includes both bhūtam, what has become, and bhavyam, what is still
   to come. Yet this all-pervading reality is not reduced to the visible cosmos. It is īśāna, sovereign
@@ -109,5 +109,10 @@ provenance:
     Upaniṣads, 1958); Devanagari transliterated from IAST (round-trip verified)
   verification: 'translation cross-checked (Luna): faithful; original from GRETIL'
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen Principal Upaniṣads, 1958)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 15: ''what grows hidden through food'' misinterprets ''yad annenātirohati''
+    - this refers to what transcends/grows beyond through food, not what grows hidden; Verse 18: ''moves
+    outward in play'' misin'

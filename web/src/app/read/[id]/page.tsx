@@ -259,13 +259,6 @@ export default function VerseDetailPage() {
           </section>
         )}
 
-        {practice ? (
-          <section className="passage-practice--plain">
-            <h2 className="passage-layer__label">Practice</h2>
-            <p className="passage-practice__body">{practice}</p>
-          </section>
-        ) : null}
-
         {commentaryBody ? (
           <div className="passage-commentary">
             {commentaryNeedsExpand ? (
@@ -294,6 +287,13 @@ export default function VerseDetailPage() {
               </>
             )}
           </div>
+        ) : null}
+
+        {practice ? (
+          <section className="passage-practice--plain">
+            <h2 className="passage-layer__label">Practice</h2>
+            <p className="passage-practice__body">{practice}</p>
+          </section>
         ) : null}
 
         <footer className="passage-endmatter">

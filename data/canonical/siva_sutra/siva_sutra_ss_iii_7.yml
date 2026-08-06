@@ -9,10 +9,12 @@ title: From consciousness, the Self is known.
 unit_type: sutra
 sanskrit_devanagari: चैतन्यादात्मा
 sanskrit_iast: caitanyād ātmā
-translation_literal: From consciousness, the Self is known.
-commentary: Even here, recognition is indirect. Consciousness is approached through training until it reveals its ground.
+translation_literal: The Self is consciousness.
+commentary: Even here, recognition is indirect. Consciousness is approached through training until it
+  reveals its ground.
 insight: Even here, recognition is indirect.
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
 upaya: ''
 themes:
 - consciousness
@@ -40,13 +42,15 @@ pratibha_layers:
   body: caitanyād ātmā
 - kind: translation
   label: Pratibha Translation
-  body: From consciousness, the Self is known.
+  body: The Self is consciousness.
 - kind: commentary
   label: Pratibha Commentary
-  body: Even here, recognition is indirect. Consciousness is approached through training until it reveals its ground.
+  body: Even here, recognition is indirect. Consciousness is approached through training until it reveals
+    its ground.
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -61,19 +65,22 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Patañjali Yoga Sūtras 3.50
-    resonance: 'Both texts posit that Self-knowledge arises through a discriminative act: the Siva Sutra locates recognition
-      *from* consciousness itself, while Patañjali''s sutra achieves supreme mastery by recognizing the distinction between
-      reflective nature (sattva) and the Self. Each makes knowledge depend on a precise cognitive separation or discernment.'
-    divergence: The Siva Sutra emphasizes consciousness as the medium or source of recognition (non-dual), whereas Patañjali's
-      framework requires a dualistic discrimination between two principles (sattva and purusha) to achieve liberation.
+    resonance: 'Both texts posit that Self-knowledge arises through a discriminative act: the Siva Sutra
+      locates recognition *from* consciousness itself, while Patañjali''s sutra achieves supreme mastery
+      by recognizing the distinction between reflective nature (sattva) and the Self. Each makes knowledge
+      depend on a precise cognitive separation or discernment.'
+    divergence: The Siva Sutra emphasizes consciousness as the medium or source of recognition (non-dual),
+      whereas Patañjali's framework requires a dualistic discrimination between two principles (sattva
+      and purusha) to achieve liberation.
     passage_id: patañjali_yoga_sūtras.ys_3_50
   - citation: 'Vijnana Bhairava — Yukti #109'
-    resonance: 'Both texts articulate a reciprocal or reflexive structure: the Siva Sutra states the Self is known *from*
-      consciousness (implying consciousness as the instrument), while Vijnana Bhairava 109 declares ''everything is revealed
-      by insight, and the self is revealed by everything''—a mutual illumination where consciousness and the self are inseparable
-      revealers.'
-    divergence: The Siva Sutra treats recognition as indirect and mediated through consciousness, whereas the Vijnana Bhairava
-      presents a direct, non-dual simultaneity where self and consciousness mutually reveal each other without mediation.
+    resonance: 'Both texts articulate a reciprocal or reflexive structure: the Siva Sutra states the Self
+      is known *from* consciousness (implying consciousness as the instrument), while Vijnana Bhairava
+      109 declares ''everything is revealed by insight, and the self is revealed by everything''—a mutual
+      illumination where consciousness and the self are inseparable revealers.'
+    divergence: The Siva Sutra treats recognition as indirect and mediated through consciousness, whereas
+      the Vijnana Bhairava presents a direct, non-dual simultaneity where self and consciousness mutually
+      reveal each other without mediation.
     passage_id: vijnana_bhairava.yukti_109
   layer_provenance: generated_grounded
 appendixes: []
@@ -83,3 +90,9 @@ provenance:
   section: Āṇavopāya
   original_id: SS_III.7
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The ablative ''caitanyāt'' indicates source/origin (''from consciousness''),
+    but the sutra establishes an identity or equation, not an epistemological process of ''knowing'';
+    The verb ''is known'' is supplied'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

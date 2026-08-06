@@ -13,7 +13,8 @@ sanskrit_devanagari: 'अन्धन्तमः प्रविशन्ति
 sanskrit_iast: 'andham tamah pravisanti ye''vidyam upasate |
 
   tato bhuya iva te tamo ya u vidyayam ratah || 9 ||'
-translation_literal: Those devoted only to avidya enter darkness; those devoted only to vidya enter deeper darkness.
+translation_literal: Into blinding darkness enter those who worship ignorance; into darkness still greater
+  than that enter those who delight in knowledge alone.
 commentary: 'Exclusive one-sidedness - worldly or spiritual - binds.
 
 
@@ -34,7 +35,8 @@ commentary: 'Exclusive one-sidedness - worldly or spiritual - binds.
 
   **avidyām** — Non-liberating or empirical knowing when pursued as an exclusive end.
 
-  **vidyāyām** — Higher or liberating knowledge when clung to one-sidedly rather than integrated with its complement.
+  **vidyāyām** — Higher or liberating knowledge when clung to one-sidedly rather than integrated with
+  its complement.
 
   **andhaṃ tamaḥ** — Blinding darkness, the condition reached through unbalanced attachment.
 
@@ -42,17 +44,18 @@ commentary: 'Exclusive one-sidedness - worldly or spiritual - binds.
   Cross-Tradition Resonances
 
 
-  **Buddha, Dhammacakkappavattana Sutta (SN 56.11):** The Buddha rejects devotion to either sensual indulgence or self-mortification
-  and teaches a middle way beyond both extremes. Divergence: The Buddhist extremes are primarily practical modes of life,
-  whereas Īśā Upaniṣad 9 contrasts exclusive commitments to avidyā and vidyā.
+  **Buddha, Dhammacakkappavattana Sutta (SN 56.11):** The Buddha rejects devotion to either sensual indulgence
+  or self-mortification and teaches a middle way beyond both extremes. Divergence: The Buddhist extremes
+  are primarily practical modes of life, whereas Īśā Upaniṣad 9 contrasts exclusive commitments to avidyā
+  and vidyā.
 
-  **Aristotle, Nicomachean Ethics II.6:** Aristotle presents virtue as a mean that avoids destructive excess and deficiency
-  in action and feeling. Divergence: Aristotle''s mean is an ethical calibration relative to circumstances, not a synthesis
-  of empirical action and liberating knowledge.
+  **Aristotle, Nicomachean Ethics II.6:** Aristotle presents virtue as a mean that avoids destructive
+  excess and deficiency in action and feeling. Divergence: Aristotle''s mean is an ethical calibration
+  relative to circumstances, not a synthesis of empirical action and liberating knowledge.
 
-  **Laozi, Daodejing 48:** The Daodejing contrasts accumulating learning with diminishing self-assertion until one acts without
-  compulsive intervention. Divergence: Laozi privileges a movement away from conventional learning, while the Upaniṣadic verse
-  warns that either vidyā or avidyā pursued alone can lead to darkness.'
+  **Laozi, Daodejing 48:** The Daodejing contrasts accumulating learning with diminishing self-assertion
+  until one acts without compulsive intervention. Divergence: Laozi privileges a movement away from conventional
+  learning, while the Upaniṣadic verse warns that either vidyā or avidyā pursued alone can lead to darkness.'
 insight: Exclusive one-sidedness - worldly or spiritual - binds.
 practice: Balance one practical duty and one contemplative period today.
 upaya: ''
@@ -80,7 +83,8 @@ pratibha_layers:
     tato bhuya iva te tamo ya u vidyayam ratah || 9 ||'
 - kind: translation
   label: Pratibha Translation
-  body: Those devoted only to avidya enter darkness; those devoted only to vidya enter deeper darkness.
+  body: Into blinding darkness enter those who worship ignorance; into darkness still greater than that
+    enter those who delight in knowledge alone.
 - kind: commentary
   label: Pratibha Commentary
   body: 'Exclusive one-sidedness - worldly or spiritual - binds.
@@ -103,21 +107,21 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: The Book of Chuang Tzu — chapter 16
-    resonance: Both texts reject exclusive devotion to a single pole (worldly vs. spiritual) as a trap that produces delusion
-      rather than liberation. The Upanishad warns that one-sided avidya *and* one-sided vidya both lead to darkness; Chuang
-      Tzu condemns those who cling to either mundane studies or sunk aspirations as 'dullards,' unable to revert to original
-      condition.
-    divergence: The Upanishad frames the problem as binding ignorance vs. binding knowledge (a metaphysical hierarchy); Chuang
-      Tzu frames it as rigidity of method itself, where both extremes miss the natural spontaneity (ziran) that precedes the
-      distinction.
+    resonance: Both texts reject exclusive devotion to a single pole (worldly vs. spiritual) as a trap
+      that produces delusion rather than liberation. The Upanishad warns that one-sided avidya *and* one-sided
+      vidya both lead to darkness; Chuang Tzu condemns those who cling to either mundane studies or sunk
+      aspirations as 'dullards,' unable to revert to original condition.
+    divergence: The Upanishad frames the problem as binding ignorance vs. binding knowledge (a metaphysical
+      hierarchy); Chuang Tzu frames it as rigidity of method itself, where both extremes miss the natural
+      spontaneity (ziran) that precedes the distinction.
     passage_id: the_book_of_chuang_tzu.ctz_016
   - citation: Bhagavad Gita — Yajna as the Ecology of Action
-    resonance: 'Both texts distinguish between action that binds and action that liberates through a shift in *orientation*:
-      the Upanishad warns that exclusive devotion to either pole binds; the Gita teaches that action becomes liberative only
-      when reframed as yajna (reciprocal offering) rather than private consumption. The structural move is: same act, different
-      framing = different metaphysical result.'
-    divergence: The Upanishad diagnoses the problem as one-sidedness itself (a cognitive error); the Gita prescribes a positive
-      reorientation toward duty-as-offering (a relational reframing of agency).
+    resonance: 'Both texts distinguish between action that binds and action that liberates through a shift
+      in *orientation*: the Upanishad warns that exclusive devotion to either pole binds; the Gita teaches
+      that action becomes liberative only when reframed as yajna (reciprocal offering) rather than private
+      consumption. The structural move is: same act, different framing = different metaphysical result.'
+    divergence: The Upanishad diagnoses the problem as one-sidedness itself (a cognitive error); the Gita
+      prescribes a positive reorientation toward duty-as-offering (a relational reframing of agency).
     passage_id: bhagavad_gita.bg_03_09
   layer_provenance: generated_grounded
 appendixes: []
@@ -127,3 +131,10 @@ provenance:
   section: teaching_passage
   original_id: ISA_015
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The translation inverts the comparative structure: the original states
+    that those devoted to vidyā enter ''even greater'' (bhūya iva) darkness than those devoted to avidyā,
+    but the translation reverses '
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

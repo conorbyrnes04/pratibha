@@ -9,10 +9,10 @@ unit_type: logion
 sanskrit_devanagari: ⲡⲉϫⲉⲓ︤ⲥ︥ ϫⲉⲧⲉⲉⲓⲡⲉ ⲛⲁ ⲁⲩⲱ ⲧⲉⲧⲛ̄ⲧⲡⲉ ⲙ̄ⲙⲟⲥ ⲛⲁ ⲁⲩⲱ ⲛⲉⲧⲙⲟⲟⲩⲧ ⲥⲉⲟⲛϩ ⲁⲛ ⲁⲩⲱ ⲛⲉⲧⲟⲛϩ ⲥⲉⲛⲁⲙⲟⲩ
   ⲁⲛ ⲛ̄ϩⲟⲟⲩ ⲛⲉⲧⲉⲧⲛ̄ⲟⲩⲱⲙ⳿ ⲙ̄ⲡⲉⲧⲙⲟⲟⲩⲧ⳿ ⲛⲉⲧⲉⲧⲛ̄ⲉⲓⲣⲉ ⲙ̄ⲙⲟϥ ⲙ̄ⲡⲟⲛϩ ϩⲟⲧⲁⲛ ⲉⲧⲉⲧⲛ̄ϣⲁⲛϣⲱⲡⲉ ϩⲙ̄ⲡ ⲟⲩ ⲡⲉⲧⲉⲧⲛⲁⲁϥ ϩⲙ̄ⲫⲟⲟⲩ
   ⲉⲧⲉⲧⲛ̄ⲟ ⲛ̄ⲟⲩⲁ ⲁⲧⲉⲧⲛ̄ⲉⲓⲣⲉ ⲙ̄ⲡⲥⲛⲁⲩ ϩⲟⲧⲁⲛ ⲇⲉ ⲉⲧⲉⲧⲛ̄ϣⲁϣⲱⲡⲉ ⲛ̄ⲥⲛⲁⲩ · ⲟⲩ ⲡⲉⲧⲉⲧⲛ̄ⲛⲁⲁϥ ·
-translation_literal: Jesus said, “This heaven will pass away, and the heaven above it will pass away.
-  The dead are not alive, and the living will not die. In the days when you ate what was dead, you made
-  it live. When you come to be in the light, what will you do? On the day when you were one, you made
-  two. But when you become two, what will you do?”
+translation_literal: Jesus said, 'This heaven will pass away, and the one above it will pass away. The
+  dead do not live, and the living will not die. On the days when you were eating the dead, you were making
+  it alive. When you come to dwell in the light, what will you do? On the day when you were one, you made
+  the two. But when you have become two, what will you do?'
 commentary: 'The saying begins by stripping even the heavens of permanence. The paired claims that the
   dead do not live and the living will not die are not simply observations about ordinary biological life;
   they overturn the categories by which death and life are usually judged. The middle image makes this
@@ -80,5 +80,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''this heaven will pass away, and the heaven above it will pass
+    away'' mistranslates the Coptic. The text says ''this heaven will pass away, and the one above it
+    will pass away'' but the Coptic'

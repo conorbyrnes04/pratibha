@@ -85,3 +85,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 'πρόγονοι' as 'ancestors' is incorrect in this context; it refers to descendants.;
+    The translation of 'οἰκεῖοι' as 'household companions' is too narrow; it means 'members of the household'
+    or 'family members'.; The phrase 'μὴ καθ̓ ἑνὸς ἀνθρώπου θάνατον' is mistranslated as 'not th

@@ -83,6 +83,9 @@ function normalizeLayer(layer: PratibhaLayer, item?: VerseItem): PratibhaLayer |
   }
   if (layerWithBody.kind === "original") {
     if (!body && items.length === 0) return null;
+    // Never show a "*Source-language basis: …*" placeholder as the Original.
+    const hasScript = /[ऀ-ॿༀ-࿿Ͱ-Ͽἀ-῿֐-׿؀-ۿⲀ-⳿぀-ヿ一-鿿]/.test(body);
+    if (!hasScript && !hasRealTransliteration(body) && items.length === 0) return null;
     return { ...layerWithBody, label: "Original" };
   }
   return layerWithBody;

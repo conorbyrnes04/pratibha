@@ -83,3 +83,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
     by public-domain scholarship, not derived from any copyrighted translation
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of the first clause 'ⲉⲧⲉⲧⲛ̄ϣⲁⲛ ⲧⲉⲧⲛⲁϫⲡⲟ ⲛⲏⲧⲛ̄ ⲛ̄ⲛⲟⲩⲛⲟⲃⲉ' as 'If you fast,
+    you will bring sin upon yourselves' is a significant mistranslation. The Coptic verb 'ϫⲡⲟ' (djpo)
+    means 'to find' or 'to discover', not 'to bring upon'. The phrase 'ⲛ̄ⲛⲟⲩⲛⲟⲃⲉ' (n-nounobe) means 'a
+    sin' or 'sins

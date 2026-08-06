@@ -426,6 +426,19 @@ def _contains_tibetan(text: str) -> bool:
     return bool(re.search(r"[\u0F00-\u0FFF]", text))
 
 
+# Any recognized source script \u2014 Devan\u0101gar\u012B, Tibetan, Greek, Hebrew, Arabic,
+# Coptic, CJK, Kana \u2014 so the Original layer surfaces the real script universally,
+# not just for Sanskrit/Tibetan.
+_SOURCE_SCRIPT_RE = re.compile(
+    r"[\u0900-\u097F\u0F00-\u0FFF\u0370-\u03FF\u1F00-\u1FFF"
+    r"\u0590-\u05FF\u0600-\u06FF\u2C80-\u2CFF\u3040-\u30FF\u4E00-\u9FFF]"
+)
+
+
+def _contains_source_script(text: str) -> bool:
+    return bool(_SOURCE_SCRIPT_RE.search(text))
+
+
 def _raw_source_script(item: dict[str, Any]) -> str:
     """Best available raw source script for the Original layer.
 
@@ -437,9 +450,25 @@ def _raw_source_script(item: dict[str, Any]) -> str:
     """
     for key in ("tibetan_uchen", "sanskrit_devanagari", "sanskrit"):
         value = _as_text(item.get(key))
-        if value and (_contains_tibetan(value) or _contains_devanagari(value)):
+        if value and _contains_source_script(value):
             return value
     return ""
+
+
+_ORIGINAL_PLACEHOLDER_RE = re.compile(
+    r"(?i)source-language basis|not in corpus|no sanskrit|greek (?:original|text)|"
+    r"chinese source|not applicable|see original|romanization|refer to|original layer|"
+    r"pending dedicated|source text (?:not|tradition)"
+)
+
+
+def _is_placeholder_original(text: str) -> bool:
+    """A note like '*Source-language basis: …*' parked in the original slot — not a
+    real original. Real script or genuine romanized text never matches."""
+    clean = text.strip()
+    if not clean or _contains_source_script(clean):
+        return False
+    return clean.startswith("*") or bool(_ORIGINAL_PLACEHOLDER_RE.search(clean))
 
 
 def _passage_uses_iast(out: dict[str, Any]) -> bool:
@@ -598,6 +627,10 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
     raw_commentary = _as_text(item.get("commentary"))
     out["commentary"] = _strip_layer_tail(raw_commentary) if _commentary_is_authored(raw_commentary) else ""
     out["sanskrit"] = _raw_source_script(item) or _as_text(item.get("sanskrit") or item.get("sanskrit_devanagari"))
+    # Never surface a "*Source-language basis: …*" placeholder as the Original — show
+    # real source text or nothing, so the Original layer is consistent across the corpus.
+    if _is_placeholder_original(out["sanskrit"]):
+        out["sanskrit"] = ""
     out["transliteration"] = _as_text(item.get("transliteration") or item.get("sanskrit_iast"))
     out["title"] = _as_text(item.get("title") or item.get("unit_label") or item.get("sutra") or out["sutra_id"])
     out["themes"] = item.get("themes") if isinstance(item.get("themes"), list) else []

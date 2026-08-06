@@ -101,3 +101,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: In verse 339, 'duddiṭṭhaṃ' is mistranslated as 'whose view is mistaken'. It refers to something
+    'hard to see' or 'difficult to perceive', not a mistaken view.; In verse 339, 'vāhā vahanti' is translated
+    as 'carry one away', but the subject of 'vahanti' is 'saṃkappā rāganissitā' (thoughts bound to pa

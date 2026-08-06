@@ -9,10 +9,10 @@ unit_type: chapter
 sanskrit_devanagari: Ὀλίγον ἐστὶ τὸ ὑπολειπόμενον τοῦτο. ζῆσον ὡς ἐν ὄρει· οὐδὲν γὰρ διαφέρει ἐκεῖ ἢ ὧδε,
   ἐάν τις πανταχοῦ ὡς ἐν πόλει τῷ κόσμῳ. ἰδέτωσαν, ἱστορησάτωσαν οἱ ἄνθρωποι ἄνθρωπον ἀληθινὸν κατὰ φύσιν
   ζῶντα. εἰ μὴ φέρουσιν, ἀποκτεινάτωσαν· κρεῖττον γὰρ ἢ οὕτως ζῆν.
-translation_literal: This little remainder is all that is left. Live as though on a mountain. For it makes
-  no difference whether one is there or here, if one lives everywhere in the world as in a city. Let people
-  see—let them scrutinize—a human being who truly lives in accord with nature. If they cannot endure it,
-  let them kill him; for that is better than living in this way.
+translation_literal: This remaining time is short. Live as if on a mountain. For it makes no difference
+  whether there or here, if everywhere one lives in the cosmos as in a city. Let people observe, let them
+  examine a true human being living according to nature. If they cannot bear it, let them kill him; for
+  that is better than to live otherwise.
 commentary: 'Marcus begins with mortality: τὸ ὑπολειπόμενον, “what remains,” is ὀλίγον, little. The thought
   does not invite panic but simplification. To live ὡς ἐν ὄρει, “as on a mountain,” is to inhabit a place
   of inward height and distance from social turbulence. Yet this is not a recommendation to flee society.
@@ -84,5 +84,10 @@ provenance:
   original_reliability: SOURCED — Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
   verification: 'translation cross-checked (Luna): unknown; original from Perseus Greek'
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
-    by public-domain renderings, not derived from any copyrighted translation
+    by public-domain renderings, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''ἐάν τις πανταχοῦ ὡς ἐν πόλει τῷ κόσμῳ'' is mistranslated.
+    It should mean ''if one lives everywhere as in a city [treating] the cosmos [as that city]'' or ''if
+    one lives everywhere in the cosmo'

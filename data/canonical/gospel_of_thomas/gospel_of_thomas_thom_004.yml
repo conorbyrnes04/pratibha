@@ -8,9 +8,9 @@ title: The Seven-Day Teacher
 unit_type: logion
 sanskrit_devanagari: ⲡⲉϫⲉⲓ︤ⲥ︥ ϥⲛⲁϫⲛⲁⲩ ⲁⲛ ⲛ̄ϭⲓⲡⲣⲱⲙⲉ ⲛ̄ϩⲗⲗⲟ ϩⲛ̄ⲛⲉϥϩⲟⲟⲩ ⲉϫⲛⲉⲟⲩⲕⲟⲩⲉⲓ ⲛ̄ϣⲏⲣⲉ ϣⲏⲙ ⲉϥϩⲛ̄ⲥⲁϣϥ̅
   ⲛ̄ϩⲟⲟⲩ ⲉⲧⲃⲉⲡⲧⲟⲡⲟⲥ ⲙ̄ⲡⲱⲛϩ ⲁⲩⲱ ϥⲛⲁⲱⲛϩ ϫⲉⲟⲩⲛϩⲁϩ ⲛϣⲟⲣⲡ ⲛⲁ ⲁⲩⲱ ⲛ̄ⲥⲉϣⲱⲡⲉ ⲟⲩⲁ ⲟⲩⲱⲧ
-translation_literal: Jesus said, “An old person will not hesitate to ask a little child, seven days old,
-  about the place of life—and that person will live. For many who are first will be last, and they will
-  become one and the same.”
+translation_literal: Jesus said, 'The old person will not refrain from asking a small child of seven days
+  about the place of life, and he will live. For many of the first will become last, and they will become
+  a single one.'
 commentary: 'The saying overturns the ordinary direction of wisdom. The aged person, marked by days and
   experience, must ask one only seven days into life. The infant is not presented as verbally learned;
   its very nearness to beginning makes it a sign of “the place of life.” To live, the elder must relinquish
@@ -74,5 +74,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''will not hesitate'' inverts the meaning of the Coptic negative
+    construction - the original states the old person WILL hesitate/delay; The phrase ''and that person
+    will live'' incorrectly make'

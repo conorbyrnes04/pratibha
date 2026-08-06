@@ -77,3 +77,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
     by public-domain scholarship, not derived from any copyrighted translation
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The number 'twenty-four' is an invention; the original Coptic simply says 'the prophets'.;
+    The phrase 'before you' is an invention; the original Coptic does not include this spatial or temporal
+    qualifier for 'the one who is alive'.

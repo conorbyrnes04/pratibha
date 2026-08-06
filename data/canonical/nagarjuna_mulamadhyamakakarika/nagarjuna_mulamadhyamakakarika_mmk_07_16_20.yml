@@ -125,3 +125,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Mūlamadhyamakakārikā e-text (Nāgārjuna; de Jong / Ye critical readings)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 17: ''could it arise? When that entity is absent, what entity could arise in it?''
+    - The second question''s meaning is unclear. The original asks about what arises ''in/from that absent
+    entity'' (tasmin...asati), questioning the logical basis of arising when the entity is non-existent,
+    not what ari'

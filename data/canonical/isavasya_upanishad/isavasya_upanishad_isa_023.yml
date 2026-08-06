@@ -13,7 +13,8 @@ sanskrit_devanagari: 'वायुरनिलममृतमथेदं भस
 sanskrit_iast: 'vayur anilam amrtam atha idam bhasmantam sariram |
 
   om krato smara krtam smara krato smara krtam smara || 17 ||'
-translation_literal: May breath return to the immortal air; this body to ashes. O mind, remember what has been done.
+translation_literal: May breath return to the immortal air; this body to ashes. O mind, remember what
+  has been done.
 commentary: 'At death, discernment and memory become sacred accountability.
 
 
@@ -44,17 +45,19 @@ commentary: 'At death, discernment and memory become sacred accountability.
   Cross-Tradition Resonances
 
 
-  **Ecclesiastes 12:7:** The verse likewise distinguishes the body returning to earth from the animating spirit returning
-  to its higher source. Divergence: Ecclesiastes frames this return in relation to a personal God, whereas Īśā 17 speaks of
-  breath merging with immortal air and calls the mind to remember its deeds.
+  **Ecclesiastes 12:7:** The verse likewise distinguishes the body returning to earth from the animating
+  spirit returning to its higher source. Divergence: Ecclesiastes frames this return in relation to a
+  personal God, whereas Īśā 17 speaks of breath merging with immortal air and calls the mind to remember
+  its deeds.
 
-  **Satipaṭṭhāna Sutta, Majjhima Nikāya 10:** Its cemetery contemplations direct practitioners to observe the body’s inevitable
-  dissolution, cultivating lucid death-awareness rather than denial. Divergence: The Buddhist practice emphasizes impermanence
-  and non-self, while Īśā 17 retains an appeal to intentional consciousness and remembrance of action at death.
+  **Satipaṭṭhāna Sutta, Majjhima Nikāya 10:** Its cemetery contemplations direct practitioners to observe
+  the body’s inevitable dissolution, cultivating lucid death-awareness rather than denial. Divergence:
+  The Buddhist practice emphasizes impermanence and non-self, while Īśā 17 retains an appeal to intentional
+  consciousness and remembrance of action at death.
 
-  **Qur''an 17:13–14:** The Qur''an’s image of each person being confronted with the record of deeds parallels the Upaniṣadic
-  summons to remember what one has done. Divergence: The Qur''an depicts a divinely disclosed record and judgment, whereas
-  Īśā 17 addresses the dying mind itself as the bearer of recollection.'
+  **Qur''an 17:13–14:** The Qur''an’s image of each person being confronted with the record of deeds parallels
+  the Upaniṣadic summons to remember what one has done. Divergence: The Qur''an depicts a divinely disclosed
+  record and judgment, whereas Īśā 17 addresses the dying mind itself as the bearer of recollection.'
 insight: At death, discernment and memory become sacred accountability.
 practice: 'End day with brief karmic review: what did I reinforce today?'
 upaya: ''
@@ -109,18 +112,18 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.8
-    resonance: Both texts map a sequential dissolution of embodied faculties at death—speech→mind→life force→heat→ultimate
-      reality in Chāndogya mirrors breath→ashes in Isavasya—treating death as a structured return of constituent elements
-      to their source.
-    divergence: Isavasya emphasizes the ethical accountability of discernment and memory in this dissolution, while Chāndogya
-      traces a purely ontological cascade of merger without moral valence.
+    resonance: Both texts map a sequential dissolution of embodied faculties at death—speech→mind→life
+      force→heat→ultimate reality in Chāndogya mirrors breath→ashes in Isavasya—treating death as a structured
+      return of constituent elements to their source.
+    divergence: Isavasya emphasizes the ethical accountability of discernment and memory in this dissolution,
+      while Chāndogya traces a purely ontological cascade of merger without moral valence.
     passage_id: chāndogya_upaniṣad.chu_vi_08
   - citation: Heart Sutra — Gone Beyond — the Mantra of Wisdom
-    resonance: 'Both passages locate transformative power in a mantra''s capacity to operate at the threshold between utterance
-      and silence: Isavasya''s mantra at death invokes breath''s return to the immortal, while Heart Sutra''s mantra ''quiets
-      all suffering'' by transcending conceptual reference.'
-    divergence: Isavasya grounds the mantra's efficacy in breath-regulation and embodied dissolution, whereas Heart Sutra
-      grounds it in the emptiness of all signs and the perfection of wisdom itself.
+    resonance: 'Both passages locate transformative power in a mantra''s capacity to operate at the threshold
+      between utterance and silence: Isavasya''s mantra at death invokes breath''s return to the immortal,
+      while Heart Sutra''s mantra ''quiets all suffering'' by transcending conceptual reference.'
+    divergence: Isavasya grounds the mantra's efficacy in breath-regulation and embodied dissolution,
+      whereas Heart Sutra grounds it in the emptiness of all signs and the perfection of wisdom itself.
     passage_id: heart_sutra.hs_003
   layer_provenance: generated_grounded
 appendixes: []
@@ -130,3 +133,7 @@ provenance:
   section: teaching_passage
   original_id: ISA_023
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: The term 'krato' is vocative of 'kratu' meaning 'will/resolve/purpose' not 'mind' - while
+    functionally similar in context, this is a specific technical term; The repetition 'krato smara krtam
+    smara' (appearing twice) is reduced to single occurrence, losing the emphatic liturgical structure

@@ -75,11 +75,12 @@ sanskrit_iast: 'rudrādityā vasavo ye ca sādhyā
 
 
   dhṛtiṃ na vindāmi śamaṃ ca viṣṇo'
-translation_literal: These hosts of gods enter You; some, afraid, praise with joined palms; bands of great
-  seers and perfected ones saying Svasti! praise You with abundant hymns. Rudras, Adityas, Vasus, Sadhyas,
-  Vishvedevas, the Ashvins, Maruts, and others; Gandharvas, Yakshas, Asuras, and perfected hosts — all
-  gaze at You amazed. Seeing Your great form with many mouths and eyes, many arms, thighs, feet, many
-  bellies, many terrible fangs — the worlds are shaken, and so am I.
+translation_literal: The Rudras, Adityas, Vasus, and Sadhyas; the Vishvedevas, the two Ashvins, the Maruts,
+  and the Ushmapas; the hosts of Gandharvas, Yakshas, Asuras, and Siddhas — all gaze upon You, amazed.
+  Seeing Your great form with many mouths and eyes, O mighty-armed one, with many arms, thighs, and feet,
+  with many bellies and terrible with many fangs — the worlds tremble, and so do I. Seeing You touching
+  the sky, blazing, many-hued, with gaping mouth and large flaming eyes — my inner soul trembles, and
+  I find neither steadiness nor peace, O Vishnu.
 commentary: 'The seer is implicated; no calm tourist of others'' fear. The contested move in this stretch
   of the vision is that gods enter and praise; hosts gaze; arjuna includes himself among the shaken. Existentially
   the line forces a choice about how you relate to overwhelm, agency, and devotion after seeing. Do not
@@ -186,11 +187,12 @@ pratibha_layers:
     dhṛtiṃ na vindāmi śamaṃ ca viṣṇo'
 - kind: translation
   label: Pratibha Translation
-  body: These hosts of gods enter You; some, afraid, praise with joined palms; bands of great seers and
-    perfected ones saying Svasti! praise You with abundant hymns. Rudras, Adityas, Vasus, Sadhyas, Vishvedevas,
-    the Ashvins, Maruts, and others; Gandharvas, Yakshas, Asuras, and perfected hosts — all gaze at You
-    amazed. Seeing Your great form with many mouths and eyes, many arms, thighs, feet, many bellies, many
-    terrible fangs — the worlds are shaken, and so am I.
+  body: The Rudras, Adityas, Vasus, and Sadhyas; the Vishvedevas, the two Ashvins, the Maruts, and the
+    Ushmapas; the hosts of Gandharvas, Yakshas, Asuras, and Siddhas — all gaze upon You, amazed. Seeing
+    Your great form with many mouths and eyes, O mighty-armed one, with many arms, thighs, and feet, with
+    many bellies and terrible with many fangs — the worlds tremble, and so do I. Seeing You touching the
+    sky, blazing, many-hued, with gaping mouth and large flaming eyes — my inner soul trembles, and I
+    find neither steadiness nor peace, O Vishnu.
 - kind: commentary
   label: Pratibha Commentary
   body: 'The seer is implicated; no calm tourist of others'' fear. The contested move in this stretch
@@ -236,3 +238,9 @@ provenance:
   section: chapter_11
   original_id: BG_11_22_24
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The passage contains three distinct verses (11.21-23) but the translation
+    conflates and reorders them incorrectly; Verse 11.22 lists the divine beings who gaze at Arjuna amazed,
+    but the translation pl'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

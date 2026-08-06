@@ -15,8 +15,8 @@ sanskrit_iast: 'na tvevāhaṃ jātu nāsaṃ na tvaṃ neme janādhipāḥ|
 
 
   na caiva na bhaviṣyāmaḥ sarve vayamataḥ param'
-translation_literal: “Never was there a time when I was not, nor you, nor these lords of peoples; nor
-  is it that we all shall not exist from this time forward.”
+translation_literal: Never was there a time when I did not exist, nor you, nor these rulers of men; nor
+  will any of us ever cease to exist hereafter.
 commentary: 'Kṛṣṇa asserts continuity of being across the apparent absolute of death. The contested move
   is plural: not only a solitary ātman, but “I, you, and these kings” share never-not-being. This is not
   yet full Advaita reduction; it is a claim that personal identities implicated in the war are not extinguishable
@@ -67,8 +67,8 @@ pratibha_layers:
     na caiva na bhaviṣyāmaḥ sarve vayamataḥ param'
 - kind: translation
   label: Pratibha Translation
-  body: “Never was there a time when I was not, nor you, nor these lords of peoples; nor is it that we
-    all shall not exist from this time forward.”
+  body: Never was there a time when I did not exist, nor you, nor these rulers of men; nor will any of
+    us ever cease to exist hereafter.
 - kind: commentary
   label: Pratibha Commentary
   body: 'Kṛṣṇa asserts continuity of being across the apparent absolute of death. The contested move is
@@ -125,3 +125,10 @@ provenance:
   section: chapter_02
   original_id: BG_02_12
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''na caiva na bhaviṣyāmaḥ'' is mistranslated as ''nor is it
+    that we all shall not exist'' which creates a double negative suggesting non-existence. The correct
+    meaning is that we WILL continue '
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

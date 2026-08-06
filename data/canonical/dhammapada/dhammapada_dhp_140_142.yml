@@ -108,3 +108,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation omits the first two lines of the original passage (Dhammapada 140), which
+    describe the consequences of evil deeds in this life and the next. The provided translation starts
+    with the second half of verse 140.; The new translation incorrectly numbers the verses. It labels
+    the secon

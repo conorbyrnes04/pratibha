@@ -86,3 +86,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
     by public-domain scholarship, not derived from any copyrighted translation
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The phrase 'I found none among them thirsty' is an inversion of the original meaning. The
+    original states that Jesus found them all drunk and that he did not find them thirsty, implying a
+    lack of spiritual thirst, not that no one was thirsty.; The phrase 'My soul ached for the children
+    of humankind'

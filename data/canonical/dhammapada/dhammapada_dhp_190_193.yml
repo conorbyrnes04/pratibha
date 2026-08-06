@@ -88,3 +88,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation incorrectly translates the last verse (Dhp 193). It interprets 'dullabho
+    purisājañño na so sabbattha jāyati, yattha so jāyatī dhīro taṃ kulaṃ sukham edhati' as referring to
+    a 'person of noble stature' whose birth brings happiness to their family. However, in the context
+    of the pr

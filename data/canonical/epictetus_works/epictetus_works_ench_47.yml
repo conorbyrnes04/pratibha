@@ -81,3 +81,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The phrase "μὴ καλλωπίζου ἐπὶ τούτῳ" is mistranslated. It means 'do not pride yourself on
+    this' or 'do not boast about this', not 'do not make an ornament of it'. The latter implies a physical
+    adornment, while the original refers to boasting about one's simple living.; The phrase "κἂν ἀσκῆσαί
+    ποτε π

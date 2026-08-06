@@ -99,3 +99,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 'וְעֹז פָּנָיו יְשֻׁנֶּא' as 'and the hardness of that face is changed'
+    is a plausible interpretation, but 'hardness' for 'עֹז' (strength/boldness) is less common than 'boldness'
+    or 'sternness' in this context. The verb 'יְשֻׁנֶּא' (y'shunne') is a Niphal imperfect of 'שנה' (shana

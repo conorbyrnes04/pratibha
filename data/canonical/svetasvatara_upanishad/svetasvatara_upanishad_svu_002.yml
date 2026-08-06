@@ -209,3 +209,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation incorrectly interprets 'asmān' as 'from that ground' in 4.9. 'Asmān'
+    is the accusative plural of 'aham' (we/us), and in this context, it refers to the 'māyī' creating
+    'us' (or 'from us' in a more abstract sense of the material cause, but not 'from that ground'). The
+    standard inte

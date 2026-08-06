@@ -101,3 +101,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Pali; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Fausböll romanized-Pali edition of the Dhammapada (1900)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: error'
+  qa_issues: 'Verse 266: ''vissaṃ dhammaṃ'' means ''the entire/whole dhamma'' not ''a harmful teaching''.
+    ''vissa'' means whole/entire, not harmful/poisonous (which would be ''visa''). The verse contrasts
+    mere external begging with taking up the complete dhamma.; Verse 266: The logic is inverted - the
+    verse says one does N'

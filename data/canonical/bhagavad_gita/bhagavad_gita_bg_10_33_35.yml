@@ -39,11 +39,11 @@ sanskrit_iast: 'akṣarāṇāmakāro''smi dvandvaḥ sāmāsikasya ca|
 
 
   māsānāṃ mārgaśīrṣo''hamṛtūnāṃ kusumākaraḥ'
-translation_literal: Of creations I am beginning, end, and middle, O Arjuna; among knowledges, knowledge
-  of the Self; among debaters, the argument. Among letters I am the letter A; among compounds, the dual;
-  I am indeed imperishable Time; I am the Ordainer facing everywhere. I am death that seizes all; and
-  the origin of what will be; and of feminine qualities I am fame, fortune, speech, memory, intelligence,
-  firmness, and patience.
+translation_literal: Among letters I am the letter A; among compounds, the dual compound; I am indeed
+  imperishable Time; I am the Ordainer with faces in all directions. I am all-seizing death; and I am
+  the source of things yet to be; and among feminine qualities I am fame, prosperity, speech, memory,
+  intelligence, steadfastness, and forbearance. Of Sāman chants I am the Bṛhat-sāman; of poetic meters
+  I am Gāyatrī. Of months I am Mārgaśīrṣa; of seasons I am the flower-bearing one.
 commentary: 'The list turns grammatical and gendered: A-kāra, dvandva, self-knowledge as peak knowledge,
   and a cluster of strī-powers — kīrti, śrī, vāk, smṛti, medhā, dhṛti, kṣamā. The contested move dignifies
   these as the Lord''s vibhūtis, not as secondary ornaments. Existentially this blocks masculinized spirituality
@@ -115,11 +115,11 @@ pratibha_layers:
     māsānāṃ mārgaśīrṣo''hamṛtūnāṃ kusumākaraḥ'
 - kind: translation
   label: Pratibha Translation
-  body: Of creations I am beginning, end, and middle, O Arjuna; among knowledges, knowledge of the Self;
-    among debaters, the argument. Among letters I am the letter A; among compounds, the dual; I am indeed
-    imperishable Time; I am the Ordainer facing everywhere. I am death that seizes all; and the origin
-    of what will be; and of feminine qualities I am fame, fortune, speech, memory, intelligence, firmness,
-    and patience.
+  body: Among letters I am the letter A; among compounds, the dual compound; I am indeed imperishable
+    Time; I am the Ordainer with faces in all directions. I am all-seizing death; and I am the source
+    of things yet to be; and among feminine qualities I am fame, prosperity, speech, memory, intelligence,
+    steadfastness, and forbearance. Of Sāman chants I am the Bṛhat-sāman; of poetic meters I am Gāyatrī.
+    Of months I am Mārgaśīrṣa; of seasons I am the flower-bearing one.
 - kind: commentary
   label: Pratibha Commentary
   body: 'The list turns grammatical and gendered: A-kāra, dvandva, self-knowledge as peak knowledge, and
@@ -165,3 +165,9 @@ provenance:
   section: chapter_10
   original_id: BG_10_33_35
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The passage does not contain ''Of creations I am beginning, end, and middle,
+    O Arjuna'' - this is from verse 10.32, not present in the provided Sanskrit; The passage does not
+    contain ''among knowledges, '
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

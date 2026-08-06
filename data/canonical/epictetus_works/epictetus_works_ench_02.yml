@@ -76,6 +76,11 @@ provenance:
   original_reliability: SOURCED — Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
     (Greek original added to a previously translation-only unit)
   original_source: Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of "τὰ παρὰ φύσιν τῶν ἐπὶ σοί" as "those objects only which are contrary
+    to the natural use of your faculties, which you have in your own control" is an inversion of meaning.
+    The original refers to things 'contrary to nature *among* those things that are up to you', not things
+    'contr
 sanskrit_devanagari: μέμνησο, ὅτι ὀρέξεως ἐπαγγελία ἐπιτυχία, οὗ ὀρέγῃ, ἐκκλίσεως ἐπαγγελία τὸ μὴ περιπεσεῖν
   ἐκείνῳ, ὃ ἐκκλίνεται, καὶ ὁ μὲν ἐν ὀρέξει ἀποτυγχάνων ἀτυχής, ὁ δὲ ἐν ἐκκλίσει περιπίπτων δυστυχής.
   ἂν μὲν οὖν μόνα ἐκκλίνῃς τὰ παρὰ φύσιν τῶν ἐπὶ σοί, οὐδενί, ὧν ἐκκλίνεις, περιπεσῇ· νόσον δʼ ἂν ἐκκλίνῃς

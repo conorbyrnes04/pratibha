@@ -234,3 +234,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: '6.12: ''inactive in essence'' adds interpretive gloss not in ''niṣkriyāṇām'' (of the inactive/actionless
+    ones); 6.12: ''appear as many'' adds ''appear'' not in original ''bahudhā karoti'' (makes/does manifoldly);
+    6.13: ''apportions the many'' loses the object ''kāmān'' (desires/purposes); 6.13: ''discrimination
+    an'

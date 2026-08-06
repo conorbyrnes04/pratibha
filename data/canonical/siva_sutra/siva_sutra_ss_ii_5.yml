@@ -9,15 +9,17 @@ title: Disciplines arise from established knowledge.
 unit_type: sutra
 sanskrit_devanagari: विद्यासनातन्त्राणि
 sanskrit_iast: vidyāsanā-tantrāṇi
-translation_literal: Disciplines arise from established knowledge.
-commentary: 'Once knowledge has become embodied, it naturally expresses itself as discipline. Practice is no longer imposed
-  from outside; it unfolds from understanding. What is known reorganizes how one sits, speaks, listens, and acts.
+translation_literal: The systems have knowledge as their foundation.
+commentary: 'Once knowledge has become embodied, it naturally expresses itself as discipline. Practice
+  is no longer imposed from outside; it unfolds from understanding. What is known reorganizes how one
+  sits, speaks, listens, and acts.
 
 
-  These disciplines are not rigid systems. They are responsive forms shaped by clarity. When knowledge is partial, discipline
-  becomes compulsive. When knowledge is stable, discipline becomes fluid.'
+  These disciplines are not rigid systems. They are responsive forms shaped by clarity. When knowledge
+  is partial, discipline becomes compulsive. When knowledge is stable, discipline becomes fluid.'
 insight: Once knowledge has become embodied, it naturally expresses itself as discipline.
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
 upaya: ''
 themes:
 - knowledge
@@ -45,18 +47,20 @@ pratibha_layers:
   body: vidyāsanā-tantrāṇi
 - kind: translation
   label: Pratibha Translation
-  body: Disciplines arise from established knowledge.
+  body: The systems have knowledge as their foundation.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Once knowledge has become embodied, it naturally expresses itself as discipline. Practice is no longer imposed from
-    outside; it unfolds from understanding. What is known reorganizes how one sits, speaks, listens, and acts.
+  body: 'Once knowledge has become embodied, it naturally expresses itself as discipline. Practice is
+    no longer imposed from outside; it unfolds from understanding. What is known reorganizes how one sits,
+    speaks, listens, and acts.
 
 
-    These disciplines are not rigid systems. They are responsive forms shaped by clarity. When knowledge is partial, discipline
-    becomes compulsive. When knowledge is stable, discipline becomes fluid.'
+    These disciplines are not rigid systems. They are responsive forms shaped by clarity. When knowledge
+    is partial, discipline becomes compulsive. When knowledge is stable, discipline becomes fluid.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -72,25 +76,30 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Patañjali Yoga Sūtras 2.28
-    resonance: Both texts posit that embodied knowledge (anchoring practice in the body, purifying the mind) naturally generates
-      disciplined action and clear discernment. Knowledge becomes operative through somatic integration rather than intellectual
-      assent alone.
-    divergence: Patañjali emphasizes the sequential purification of mind as prerequisite to clarity, while the Siva Sutra
-      treats embodied knowledge as already containing discipline within it—a more direct non-dual expression.
+    resonance: Both texts posit that embodied knowledge (anchoring practice in the body, purifying the
+      mind) naturally generates disciplined action and clear discernment. Knowledge becomes operative
+      through somatic integration rather than intellectual assent alone.
+    divergence: Patañjali emphasizes the sequential purification of mind as prerequisite to clarity, while
+      the Siva Sutra treats embodied knowledge as already containing discipline within it—a more direct
+      non-dual expression.
     passage_id: patañjali_yoga_sūtras.ys_2_28
   - citation: Tantrasara — The One for Whom No Means Is Needed
-    resonance: 'Both invoke a paradoxical inversion: the Siva Sutra suggests disciplines arise *from* knowledge (not imposed
-      externally), while Abhinavagupta''s Anupāya describes a ''no-method method'' where the path dissolves into direct realization.
-      Both dissolve the subject-object split between knower and practice.'
-    divergence: The Siva Sutra frames this as knowledge naturally expressing as discipline (a positive unfolding), whereas
-      Anupāya emphasizes the negation of all methodological scaffolding—a more radical non-dual collapse.
+    resonance: 'Both invoke a paradoxical inversion: the Siva Sutra suggests disciplines arise *from*
+      knowledge (not imposed externally), while Abhinavagupta''s Anupāya describes a ''no-method method''
+      where the path dissolves into direct realization. Both dissolve the subject-object split between
+      knower and practice.'
+    divergence: The Siva Sutra frames this as knowledge naturally expressing as discipline (a positive
+      unfolding), whereas Anupāya emphasizes the negation of all methodological scaffolding—a more radical
+      non-dual collapse.
     passage_id: tantrasara.ts_008
   - citation: Tao Te Ching — The Paradox of Knowing
-    resonance: Both texts distinguish between authentic knowledge (embodied, non-conceptual) and false knowledge (intellectual
-      pretense). The Tao Te Ching's 'knowing we do not know' mirrors the Siva Sutra's insistence that true knowledge operates
-      beneath the level of deliberate discipline—it arises naturally.
-    divergence: The Tao Te Ching frames this as epistemological humility and disease-prevention, while the Siva Sutra treats
-      it as the mechanics of tantric embodiment and the spontaneous expression of vidya.
+    resonance: Both texts distinguish between authentic knowledge (embodied, non-conceptual) and false
+      knowledge (intellectual pretense). The Tao Te Ching's 'knowing we do not know' mirrors the Siva
+      Sutra's insistence that true knowledge operates beneath the level of deliberate discipline—it arises
+      naturally.
+    divergence: The Tao Te Ching frames this as epistemological humility and disease-prevention, while
+      the Siva Sutra treats it as the mechanics of tantric embodiment and the spontaneous expression of
+      vidya.
     passage_id: tao_te_ching.ttc_md_073
   layer_provenance: generated_grounded
 appendixes: []
@@ -100,3 +109,9 @@ provenance:
   section: Śāktopāya
   original_id: SS_II.5
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Mistranslation of ''vidyā'' as ''established knowledge'' rather than ''knowledge''
+    or ''wisdom''; Mistranslation of ''āsanā'' as part of ''established'' rather than ''seat/throne/abode'';
+    Mistranslation of ''tantrāṇ'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

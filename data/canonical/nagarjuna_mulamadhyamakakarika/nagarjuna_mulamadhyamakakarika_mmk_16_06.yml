@@ -12,17 +12,18 @@ sanskrit_devanagari: 'बन्धनं चेद् उपादानं स�
 sanskrit_iast: 'bandhanaṃ ced upādānaṃ sopādāno na badhyate |
 
   badhyate nānupādānaḥ kimavastho ''tha badhyate || 16.6 ||'
-translation_literal: If bondage (bandhana) were appropriation (upādāna), one possessing appropriation would not be bound;
-  one without appropriation is not bound. In what state, then, is one bound?
-commentary: 'The verse tests the proposed identity of bondage with upādāna, the grasping by which a self and its objects are
-  appropriated. If the appropriator is already defined as “one with appropriation,” bondage cannot be imposed upon that person
-  as something distinct; yet one devoid of appropriation plainly cannot be bound by it either. Nāgārjuna thus asks for the
-  allegedly bound person’s determinate condition. No intrinsic bearer of bondage can be located: not the appropriator, not
-  the non-appropriator, and not some independently established state between them. This is not a denial of conventional suffering
-  or compulsive grasping. Conventionally, grasping conditions distress and bondage is intelligibly designated. Ultimately,
-  however, neither bondage nor its subject possesses svabhāva. Dependent origination therefore undercuts reification: liberation
-  is not the alteration of a self-existing captive, but the cessation of taking contingent aggregates and relations as “I”
-  and “mine.”
+translation_literal: If bondage (bandhana) were appropriation (upādāna), one possessing appropriation
+  would not be bound; one without appropriation is not bound. In what state, then, is one bound?
+commentary: 'The verse tests the proposed identity of bondage with upādāna, the grasping by which a self
+  and its objects are appropriated. If the appropriator is already defined as “one with appropriation,”
+  bondage cannot be imposed upon that person as something distinct; yet one devoid of appropriation plainly
+  cannot be bound by it either. Nāgārjuna thus asks for the allegedly bound person’s determinate condition.
+  No intrinsic bearer of bondage can be located: not the appropriator, not the non-appropriator, and not
+  some independently established state between them. This is not a denial of conventional suffering or
+  compulsive grasping. Conventionally, grasping conditions distress and bondage is intelligibly designated.
+  Ultimately, however, neither bondage nor its subject possesses svabhāva. Dependent origination therefore
+  undercuts reification: liberation is not the alteration of a self-existing captive, but the cessation
+  of taking contingent aggregates and relations as “I” and “mine.”
 
 
   Key Terms
@@ -40,19 +41,25 @@ commentary: 'The verse tests the proposed identity of bondage with upādāna, th
   Cross-Tradition Resonances
 
 
-  **Epictetus, Enchiridion:** Epictetus treats attachment to what is not “up to us” as a source of enslavement, paralleling
-  the thought that grasping binds. Divergence: Stoicism grounds freedom in the rational agent’s proper use of judgment; Nāgārjuna
-  refuses to establish such an agent with intrinsic nature.
+  **Epictetus, Enchiridion:** Epictetus treats attachment to what is not “up to us” as a source of enslavement,
+  paralleling the thought that grasping binds. Divergence: Stoicism grounds freedom in the rational agent’s
+  proper use of judgment; Nāgārjuna refuses to establish such an agent with intrinsic nature.
 
-  **Gauḍapāda, Māṇḍūkya Kārikā:** Gauḍapāda says that, ultimately, there is no bound being and no liberated being, resonating
-  with Nāgārjuna’s dismantling of bondage as a fixed condition. Divergence: Advaita typically articulates this through an
-  unchanging ātman/Brahman, whereas Madhyamaka extends emptiness to every proposed ultimate foundation, including self.'
-practice: 'Notice a moment of craving and ask: who, precisely, is the one bound by this grasping—the grasping person, the
-  person without it, or something else? Do not answer conceptually; attend to the changing sensations, thoughts, and appropriating
-  gestures until no fixed owner can be found.'
+  **Gauḍapāda, Māṇḍūkya Kārikā:** Gauḍapāda says that, ultimately, there is no bound being and no liberated
+  being, resonating with Nāgārjuna’s dismantling of bondage as a fixed condition. Divergence: Advaita
+  typically articulates this through an unchanging ātman/Brahman, whereas Madhyamaka extends emptiness
+  to every proposed ultimate foundation, including self.'
+practice: 'Notice a moment of craving and ask: who, precisely, is the one bound by this grasping—the grasping
+  person, the person without it, or something else? Do not answer conceptually; attend to the changing
+  sensations, thoughts, and appropriating gestures until no fixed owner can be found.'
 themes: []
 tags: []
 provenance:
   collection: Nagarjuna Mulamadhyamakakarika
   sanskrit_source: GRETIL MMK 16.6 (PD); Devanagari from IAST.
   english_source: Pratibha own rendering from the Sanskrit (2026).
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 'sopādāno na badhyate' as 'one possessing appropriation would not be bound'
+    is incorrect. The original states that one possessing appropriation IS bound, not that they are not
+    bound. The 'na' negates 'badhyate' (is bound), but the context of 'sopādāno' (possessing appropriation)
+    i

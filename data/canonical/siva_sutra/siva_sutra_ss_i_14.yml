@@ -9,10 +9,12 @@ title: What is seen is a body.
 unit_type: sutra
 sanskrit_devanagari: दृश्यं शरीरम्
 sanskrit_iast: dr̥śyaṁ śarīram
-translation_literal: What is seen is a body.
-commentary: Every appearance coheres as form. The body is not opposed to consciousness; it is consciousness appearing locally.
+translation_literal: The body is the seen.
+commentary: Every appearance coheres as form. The body is not opposed to consciousness; it is consciousness
+  appearing locally.
 insight: Every appearance coheres as form.
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
 upaya: ''
 themes:
 - consciousness
@@ -36,13 +38,15 @@ pratibha_layers:
   body: dr̥śyaṁ śarīram
 - kind: translation
   label: Pratibha Translation
-  body: What is seen is a body.
+  body: The body is the seen.
 - kind: commentary
   label: Pratibha Commentary
-  body: Every appearance coheres as form. The body is not opposed to consciousness; it is consciousness appearing locally.
+  body: Every appearance coheres as form. The body is not opposed to consciousness; it is consciousness
+    appearing locally.
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: key_terms
   label: Key Terms
   items:
@@ -56,21 +60,23 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Astavakra Gita — The Threefold Certainty That Liberates While Living
-    resonance: 'Both texts establish a radical inversion: the Siva Sutra asserts that what appears as form (drsya, the seen)
-      is fundamentally a body—a coherent appearance of consciousness—while Astavakra Gita inverts the common assumption by
-      declaring ''I am not the body'' to liberate the seer from identification with form. Both make the body-consciousness
-      relationship the pivot of liberation.'
-    divergence: The Siva Sutra treats the body as the primary manifestation through which consciousness appears and coheres;
-      Astavakra Gita treats disidentification from the body as the gateway to recognizing pure consciousness. One emphasizes
-      appearance; the other emphasizes negation.
+    resonance: 'Both texts establish a radical inversion: the Siva Sutra asserts that what appears as
+      form (drsya, the seen) is fundamentally a body—a coherent appearance of consciousness—while Astavakra
+      Gita inverts the common assumption by declaring ''I am not the body'' to liberate the seer from
+      identification with form. Both make the body-consciousness relationship the pivot of liberation.'
+    divergence: The Siva Sutra treats the body as the primary manifestation through which consciousness
+      appears and coheres; Astavakra Gita treats disidentification from the body as the gateway to recognizing
+      pure consciousness. One emphasizes appearance; the other emphasizes negation.
     passage_id: astavakra_gita.asg_11_6
   - citation: 'Vijnana Bhairava — Yukti #58'
-    resonance: 'Both passages organize experience into structured forms that reveal consciousness: the Siva Sutra states that
-      ''what is seen is a body'' (every appearance coheres as form), while Yukti #58 instructs the practitioner to recognize
-      the three states of universe, illumination, and darkness ''as the very form of Bhairava''—each appearance becomes a
-      recognizable structure of the divine consciousness.'
-    divergence: The Siva Sutra presents this as a direct ontological claim about appearance itself; the Vijnana Bhairava frames
-      it as a meditative recognition requiring deliberate knowing. One is descriptive; the other is prescriptive practice.
+    resonance: 'Both passages organize experience into structured forms that reveal consciousness: the
+      Siva Sutra states that ''what is seen is a body'' (every appearance coheres as form), while Yukti
+      #58 instructs the practitioner to recognize the three states of universe, illumination, and darkness
+      ''as the very form of Bhairava''—each appearance becomes a recognizable structure of the divine
+      consciousness.'
+    divergence: The Siva Sutra presents this as a direct ontological claim about appearance itself; the
+      Vijnana Bhairava frames it as a meditative recognition requiring deliberate knowing. One is descriptive;
+      the other is prescriptive practice.
     passage_id: vijnana_bhairava.yukti_058
   layer_provenance: generated_grounded
 appendixes: []
@@ -80,3 +86,10 @@ provenance:
   section: Śāmbhavopāya
   original_id: SS_I.14
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The translation ''What is seen is a body'' misses the technical meaning
+    of dṛśyam as ''the seen/the object of perception'' and śarīra as referring to one''s own body in this
+    context. The sutra establishes '
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

@@ -23,12 +23,14 @@ sanskrit_iast: 'ya eko jālavān īśata īśanībhiḥ sarvān lokān īśata �
   eko hi rudro na dvitīyāya tasthur ya imān lokān īśata īśanībhiḥ |
 
   pratyaṅ janāṃs tiṣṭhati saṃcukocānta-kāle saṃsṛjya viśvā bhuvanāni gopāḥ || 3.2 ||'
-translation_literal: 'The One, net-caster and ruler by sovereign powers, governs all worlds through arising
-  and continuity; those who know this become immortal.
+translation_literal: 'The One who possesses the net, who rules with sovereign powers over all worlds through
+  His powers — He who alone presides at the time of creation and at the time of dissolution — those who
+  know this become immortal.
 
 
-  Rudra is one; no second stands beside Him. He rules all worlds, stands inwardly in beings, creates and
-  gathers the worlds at the end as their guardian.'
+  Rudra is indeed one; there is no place for a second. He rules these worlds with His sovereign powers.
+  He stands facing all beings, and having created all the worlds, He withdraws them at the end of time,
+  He the protector.'
 commentary: 'This is one of the Upaniṣad’s strongest monotheistic declarations, but it is not simple exclusivism.
   "No second" is a metaphysical claim about ultimacy, not a social claim about religious identity. Rudra
   is presented as creator, sustainer, withdrawer, and indwelling presence. The text thereby fuses cosmic
@@ -115,12 +117,14 @@ pratibha_layers:
     pratyaṅ janāṃs tiṣṭhati saṃcukocānta-kāle saṃsṛjya viśvā bhuvanāni gopāḥ || 3.2 ||'
 - kind: translation
   label: Pratibha Translation
-  body: 'The One, net-caster and ruler by sovereign powers, governs all worlds through arising and continuity;
-    those who know this become immortal.
+  body: 'The One who possesses the net, who rules with sovereign powers over all worlds through His powers
+    — He who alone presides at the time of creation and at the time of dissolution — those who know this
+    become immortal.
 
 
-    Rudra is one; no second stands beside Him. He rules all worlds, stands inwardly in beings, creates
-    and gathers the worlds at the end as their guardian.'
+    Rudra is indeed one; there is no place for a second. He rules these worlds with His sovereign powers.
+    He stands facing all beings, and having created all the worlds, He withdraws them at the end of time,
+    He the protector.'
 - kind: commentary
   label: Pratibha Commentary
   body: 'This is one of the Upaniṣad’s strongest monotheistic declarations, but it is not simple exclusivism.
@@ -182,3 +186,9 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 3.1: ''net-caster'' (jālavān) is mistranslated - it means ''possessing
+    the net/māyā'' not ''net-caster''; Verse 3.1: ''through arising and continuity'' misrepresents ''ya
+    evaika udbhave saṃbhave ca'' - th'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

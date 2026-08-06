@@ -81,3 +81,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The phrase "κοινότερον δὲ νῦν τὸ συμφέρον ἐπὶ τῶν μέσων λαμβανέσθω" is mistranslated. The
+    new translation renders "κοινότερον" as "broader sense" and "ἐπὶ τῶν μέσων" as "in relation to indifferent
+    things." The original means that the benefit (τὸ συμφέρον) should be understood as more common (κοινότε

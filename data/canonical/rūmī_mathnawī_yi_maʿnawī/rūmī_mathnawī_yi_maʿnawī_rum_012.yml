@@ -13,12 +13,12 @@ sanskrit_devanagari: 'آتشی از عشق در جانْ بَر فُروز /// �
 
   لَعْل را گر مُهر نبوَد باک نیست /// عشق در دریای غم، غمناک نیست'
 sanskrit_iast: See Original.
-translation_literal: We do not look at tongue and speech; We look at spirit and state. If the heart is humble, even if the
-  wording is not. The heart is substance; speech is accident. How long words and metaphors? I want burning — burn thought
-  and expression. Kindle love's fire in the soul. The religion of love is apart from all religions; for lovers, religion and
-  rite are God. A ruby needs no seal; love in a sea of grief is not grief-stricken.
-commentary: 'The climax: God reads ḥāl (state) over qāl (speech). Love''s creed relativizes confessional borders without abolishing
-  heat. Existentially: prefer one degree of burning to ten pages of correct theology.
+translation_literal: Kindle a fire of love in the soul; burn thought and expression entirely. The religion
+  of love is separate from all religions; for lovers, their religion and creed is God. If the ruby has
+  no seal, there is no harm; love in the sea of sorrow is not sorrowful.
+commentary: 'The climax: God reads ḥāl (state) over qāl (speech). Love''s creed relativizes confessional
+  borders without abolishing heat. Existentially: prefer one degree of burning to ten pages of correct
+  theology.
 
 
   Key Terms
@@ -36,7 +36,8 @@ commentary: 'The climax: God reads ḥāl (state) over qāl (speech). Love''s cr
   Cross-Tradition Resonances
 
 
-  **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal perfection.
+  **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal
+  perfection.
 
   *Divergence:* The Gītā keeps varṇa-dharma frames; Rūmī''s love-creed speaks across forms.
 
@@ -45,8 +46,8 @@ commentary: 'The climax: God reads ḥāl (state) over qāl (speech). Love''s cr
 
   *Divergence:* Eckhart''s worry is exiting the ground by naming; Rūmī''s is shaming the lover''s tongue.'
 insight: 'The climax: God reads ḥāl (state) over qāl (speech).'
-practice: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute in burning without
-  words. Notice which felt more true.
+practice: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute
+  in burning without words. Notice which felt more true.
 upaya: ''
 themes:
 - heart
@@ -72,14 +73,13 @@ pratibha_layers:
   body: See Original.
 - kind: translation
   label: Pratibha Translation
-  body: We do not look at tongue and speech; We look at spirit and state. If the heart is humble, even if the wording is not.
-    The heart is substance; speech is accident. How long words and metaphors? I want burning — burn thought and expression.
-    Kindle love's fire in the soul. The religion of love is apart from all religions; for lovers, religion and rite are God.
-    A ruby needs no seal; love in a sea of grief is not grief-stricken.
+  body: Kindle a fire of love in the soul; burn thought and expression entirely. The religion of love
+    is separate from all religions; for lovers, their religion and creed is God. If the ruby has no seal,
+    there is no harm; love in the sea of sorrow is not sorrowful.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The climax: God reads ḥāl (state) over qāl (speech). Love''s creed relativizes confessional borders without abolishing
-    heat. Existentially: prefer one degree of burning to ten pages of correct theology.
+  body: 'The climax: God reads ḥāl (state) over qāl (speech). Love''s creed relativizes confessional borders
+    without abolishing heat. Existentially: prefer one degree of burning to ten pages of correct theology.
 
 
     Key Terms
@@ -97,7 +97,8 @@ pratibha_layers:
     Cross-Tradition Resonances
 
 
-    **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal perfection.
+    **Bhagavad Gītā 9 (even a leaf offered with devotion):** Both privilege sincere offering over formal
+    perfection.
 
     *Divergence:* The Gītā keeps varṇa-dharma frames; Rūmī''s love-creed speaks across forms.
 
@@ -107,8 +108,8 @@ pratibha_layers:
     *Divergence:* Eckhart''s worry is exiting the ground by naming; Rūmī''s is shaming the lover''s tongue.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute in burning without
-    words. Notice which felt more true.
+  body: Pray for one minute in deliberately simple, even "crude" language of care. Then sit one minute
+    in burning without words. Notice which felt more true.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -116,3 +117,9 @@ provenance:
   section: Moses & Shepherd 4
   original_id: RUM_012
   source_reference: Rūmī, *Mathnawī* II, Moses and the shepherd (§4)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): First two lines (''We do not look at tongue and speech; We look at spirit
+    and state. If the heart is humble, even if the wording is not. The heart is substance; speech is accident.
+    How long words and m'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

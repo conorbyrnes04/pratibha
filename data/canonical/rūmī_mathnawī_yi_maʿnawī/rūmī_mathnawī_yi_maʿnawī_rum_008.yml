@@ -13,12 +13,13 @@ sanskrit_devanagari: 'در غمِ ما روزها بیگاه شد /// روزها
 
   هر که جز ماهی ز آبش سیر شد /// هرکه بی روزیست روزش دیر شد'
 sanskrit_iast: See Original.
-translation_literal: In our grief the days grew late; days traveled with burnings. If the days are gone, say go — no fear;
-  You remain, You who are pure like this. Whoever is not a fish tires of this water; whoever lacks daily bread finds the day
-  long. The raw cannot grasp the state of the cooked — so the speech must be short, and peace.
-commentary: 'Maturity is qualitative, not accumulative information. Existentially: stop arguing the cooked into the raw; keep
-  the word short and burn. The reed is the human spirit cut from the divine reed-bed; complaint is theology in the mode of
-  music.
+translation_literal: In our grief the days became untimely; the days became companions with burnings.
+  If the days have gone, say 'Go' — there is no harm; You remain, O You like whom there is none so pure.
+  Whoever is other than a fish grew weary of water; whoever is without daily provision, his day became
+  long.
+commentary: 'Maturity is qualitative, not accumulative information. Existentially: stop arguing the cooked
+  into the raw; keep the word short and burn. The reed is the human spirit cut from the divine reed-bed;
+  complaint is theology in the mode of music.
 
 
   Key Terms
@@ -45,8 +46,8 @@ commentary: 'Maturity is qualitative, not accumulative information. Existentiall
 
   *Divergence:* Milarepa''s songs are often instructional; the nay is primarily ontological lament.'
 insight: Maturity is qualitative, not accumulative information.
-practice: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel the cut from the bed.
-  Do not explain it — let the tone complain.
+practice: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel
+  the cut from the bed. Do not explain it — let the tone complain.
 upaya: ''
 themes:
 - breath
@@ -72,14 +73,14 @@ pratibha_layers:
   body: See Original.
 - kind: translation
   label: Pratibha Translation
-  body: In our grief the days grew late; days traveled with burnings. If the days are gone, say go — no fear; You remain,
-    You who are pure like this. Whoever is not a fish tires of this water; whoever lacks daily bread finds the day long. The
-    raw cannot grasp the state of the cooked — so the speech must be short, and peace.
+  body: In our grief the days became untimely; the days became companions with burnings. If the days have
+    gone, say 'Go' — there is no harm; You remain, O You like whom there is none so pure. Whoever is other
+    than a fish grew weary of water; whoever is without daily provision, his day became long.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Maturity is qualitative, not accumulative information. Existentially: stop arguing the cooked into the raw; keep
-    the word short and burn. The reed is the human spirit cut from the divine reed-bed; complaint is theology in the mode
-    of music.
+  body: 'Maturity is qualitative, not accumulative information. Existentially: stop arguing the cooked
+    into the raw; keep the word short and burn. The reed is the human spirit cut from the divine reed-bed;
+    complaint is theology in the mode of music.
 
 
     Key Terms
@@ -99,7 +100,8 @@ pratibha_layers:
 
     **Heart Sūtra (form/emptiness as path-song):** Both carry insight as more than proposition.
 
-    *Divergence:* The Heart Sūtra''s emptiness is marklessness; Rūmī''s cry is erotic longing for the Origin.
+    *Divergence:* The Heart Sūtra''s emptiness is marklessness; Rūmī''s cry is erotic longing for the
+    Origin.
 
 
     **Milarepa (song as vehicle):** Both use song to cross what argument cannot.
@@ -107,8 +109,8 @@ pratibha_layers:
     *Divergence:* Milarepa''s songs are often instructional; the nay is primarily ontological lament.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel the cut from the bed.
-    Do not explain it — let the tone complain.
+  body: Hum one tone on the out-breath for two minutes as if you were a reed. On the in-breath, feel the
+    cut from the bed. Do not explain it — let the tone complain.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -116,3 +118,9 @@ provenance:
   section: Ney-nāmeh 8
   original_id: RUM_008
   source_reference: Rūmī, *Mathnawī* I, opening (Ney-nāmeh), couplets ~8
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Line 3: ''You remain, You who are pure like this'' mistranslates the address
+    and comparison. The original addresses a specific ''You'' (the beloved/God) saying ''remain, O You
+    whom none is pure like You'' -'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

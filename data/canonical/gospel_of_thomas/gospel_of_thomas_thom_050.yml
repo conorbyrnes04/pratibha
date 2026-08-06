@@ -15,11 +15,11 @@ sanskrit_devanagari: 'ⲓ︤ⲥ︥ ϫⲉⲉⲩϣⲁⲛϫⲟⲟⲥ ⲛⲏⲧⲛ̄
 
   ⲟⲗ ϩⲛ̄ⲧⲟⲩϩⲓⲕⲱⲛ ϫⲟⲟⲥ ⲛⲏⲧⲛ̄ ϫⲉⲛ̄ⲧⲱⲧⲛ̄ ⲡⲉ ϫⲟⲟⲥ ϫⲉⲁⲛⲟⲛ ⲛⲉϥϣⲏⲣⲉ ⲁⲩⲱ ⲁⲛⲟⲛ ⲛ̄ⲥⲱⲧⲡ⳿ ⲙ̄ⲡⲉⲓⲱⲧ ⲉⲧⲟⲛϩ ⲉⲩϣⲁⲛϫⲛⲉⲧⲏⲩⲧⲛ̄
   ϫⲉⲟⲩ ⲡⲉ ⲡⲙⲁⲉⲓⲛ ⲙ̄ⲡⲉⲧⲛ̄ⲉⲓⲱⲧ ⲉⲧϩⲛ̄ⲧⲏⲩⲧⲛ̄ ϫⲟⲟⲥ ⲉⲣⲟⲟⲩ ϫⲉⲟⲩⲕⲓⲙ ⲡⲉ ⲙⲛ̄ⲟⲩⲁⲛⲁⲡⲁⲩⲥⲓⲥ'
-translation_literal: Jesus said, “If they ask you, ‘Where have you come from?’ tell them, ‘We have come
-  from the Light—from the place where the Light came to be through itself. It stood firm and revealed
-  itself in their image.’ If they ask you, ‘Who are you?’ tell them, ‘We are its children; we are chosen
-  by the living Father.’ If they ask you, ‘What is the sign of your Father within you?’ tell them, ‘It
-  is movement and repose.’”
+translation_literal: Jesus said, 'If they say to you, "Where did you come from?" say to them, "We came
+  from the Light, the place where the Light came into being on its own accord. It stood and manifested
+  itself in its image." If they say to you, "Is it you?" say, "We are its sons, and we are the elect of
+  the living Father." If they ask you, "What is the sign of your Father in you?" say to them, "It is movement
+  and rest."'
 commentary: 'The saying gives its hearers words for a searching question: where do you come from, and
   who are you? Their origin is not framed as a social pedigree or earthly homeland, but as the Light.
   This Light “came to be through itself,” then stood and became manifest. The language presents a source
@@ -87,5 +87,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''revealed itself in their image'' mistranslates the Coptic.
+    The text says the Light ''stood and revealed itself in their/its image'' but the referent and meaning
+    are unclear in translation. Mo'

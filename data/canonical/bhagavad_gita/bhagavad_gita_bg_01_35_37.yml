@@ -39,11 +39,11 @@ sanskrit_iast: 'etānna hantumicchāmi ghnato''pi madhusūdana|
 
 
   svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava'
-translation_literal: “I do not wish to kill them even if they kill me, Madhusūdana — not even for kingship
-  of the three worlds, much less for the sake of the earth. What delight would be ours in killing the
-  sons of Dhṛtarāṣṭra, Janārdana? Sin alone would take shelter in us if we killed these aggressors. Therefore
-  we are not right to kill Dhṛtarāṣṭra’s sons, our own kinsmen. How could we be happy after killing our
-  own people, Mādhava?”
+translation_literal: I do not wish to kill them even if they kill me, Madhusūdana — not even for the sovereignty
+  of the three worlds, what to speak of this earth. What pleasure would we have, Janārdana, from slaying
+  the sons of Dhṛtarāṣṭra? Only sin would cling to us from killing these aggressors. Therefore we should
+  not kill the sons of Dhṛtarāṣṭra, our own kinsmen. Indeed, how could we be happy, Mādhava, having slain
+  our own people?
 commentary: 'Arjuna raises the stakes to cosmology and still refuses. Even *trailokya-rājya* cannot purchase
   the act. The contested move is his inclusion of *ātatāyinah* — aggressors whom legal tradition often
   permits one to kill — inside the circle of those who must not be slain. He overrides a known exception
@@ -112,11 +112,11 @@ pratibha_layers:
     svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava'
 - kind: translation
   label: Pratibha Translation
-  body: “I do not wish to kill them even if they kill me, Madhusūdana — not even for kingship of the three
-    worlds, much less for the sake of the earth. What delight would be ours in killing the sons of Dhṛtarāṣṭra,
-    Janārdana? Sin alone would take shelter in us if we killed these aggressors. Therefore we are not
-    right to kill Dhṛtarāṣṭra’s sons, our own kinsmen. How could we be happy after killing our own people,
-    Mādhava?”
+  body: I do not wish to kill them even if they kill me, Madhusūdana — not even for the sovereignty of
+    the three worlds, what to speak of this earth. What pleasure would we have, Janārdana, from slaying
+    the sons of Dhṛtarāṣṭra? Only sin would cling to us from killing these aggressors. Therefore we should
+    not kill the sons of Dhṛtarāṣṭra, our own kinsmen. Indeed, how could we be happy, Mādhava, having
+    slain our own people?
 - kind: commentary
   label: Pratibha Commentary
   body: 'Arjuna raises the stakes to cosmology and still refuses. Even *trailokya-rājya* cannot purchase
@@ -171,3 +171,10 @@ provenance:
   section: chapter_01
   original_id: BG_01_35_37
   source_reference: ''
+  qa_crosscheck: 'google/gemini-2.5-flash: sound'
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): ātatāyinaḥ means ''aggressors/attackers'' but the context shows Arjuna
+    is arguing AGAINST killing them despite their aggression - the translation ''if we killed these aggressors''
+    incorrectly implies just'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)

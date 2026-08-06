@@ -103,3 +103,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Hebrew; voice-informed
     by public-domain renderings (KJV, JPS 1917), not derived from any copyrighted translation
   original_source: Westminster Leningrad Codex (OpenScriptures WLC, public domain Masoretic Hebrew)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 6:8b 'מַה־לֶּעָנִי יוֹדֵעַ לַהֲלֹךְ נֶגֶד הַחַיִּים' as 'What advantage
+    has the poor person who knows how to conduct himself before the living?' is a common but debated interpretation.
+    Many scholars understand 'יוֹדֵעַ לַהֲלֹךְ נֶגֶד הַחַיִּים' as referring to the poor person know

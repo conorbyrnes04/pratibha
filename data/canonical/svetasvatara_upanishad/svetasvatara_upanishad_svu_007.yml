@@ -216,3 +216,8 @@ provenance:
   source_reference: ''
   reconciled: verse range content-matched to GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen
     Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 1.10: ''kṣarātmānāv'' means ''the perishable and the soul/self'' (dual accusative)
+    - the God rules over both the perishable (pradhāna) AND the soul, not ''perishable nature and the
+    embodied self'' as a single compound; Verse 1.11: ''tṛtīyaṃ deha-bhede'' means ''a third [state] at
+    the dissolution of the'

@@ -33,43 +33,50 @@ sanskrit_iast: 'anejad ekam manaso javiyo nainad deva apnuvan purvam arsat |
   yas tu sarvani bhutany atmany evanupasyati |
 
   sarvabhutesu catmanam tato na vijugupsate || 6 ||'
-translation_literal: 'The Self is unmoving yet swifter than the mind; senses cannot overtake it. It moves and does not move,
-  far and near, within all and outside all.
+translation_literal: 'Unmoving, one, swifter than mind — the gods reached it not, though they moved before.
+  Standing still, it outruns those who run. In it, Matarisvan establishes the waters.
 
 
-  Who sees all beings in the Self and the Self in all beings no longer recoils in hatred.'
-commentary: 'These paradoxes are not poetic confusion; they dismantle object-based thinking. The Self cannot be grasped as
-  one finite thing among others. Realization is tested ethically: non-dual vision ends hatred, not just speculation.
+  It moves and it moves not; it is far and it is near. It is within all this, and it is outside all this.
+
+
+  But one who sees all beings in the Self itself, and the Self in all beings — thereafter does not shrink
+  away.'
+commentary: 'These paradoxes are not poetic confusion; they dismantle object-based thinking. The Self
+  cannot be grasped as one finite thing among others. Realization is tested ethically: non-dual vision
+  ends hatred, not just speculation.
 
 
   Key Terms
 
 
-  **ātman** — The Self or ultimate reality, characterized by paradoxical motion-immobility and omnipresence that transcends
-  subject-object duality
+  **ātman** — The Self or ultimate reality, characterized by paradoxical motion-immobility and omnipresence
+  that transcends subject-object duality
 
-  **sarva-bhūteṣu** — In all beings; the direct perception of non-difference between Self and all entities, the basis of ethical
-  transformation
+  **sarva-bhūteṣu** — In all beings; the direct perception of non-difference between Self and all entities,
+  the basis of ethical transformation
 
-  **dveṣa** — Hatred or aversion; the emotional consequence of dualistic perception that ceases upon realization of ātman
-  in all
+  **dveṣa** — Hatred or aversion; the emotional consequence of dualistic perception that ceases upon realization
+  of ātman in all
 
 
   Cross-Tradition Resonances
 
 
-  **Bhagavad Gītā 13.27–28:** Both texts ground non-dual vision (sarva-bhūteṣu ātmā) as the prerequisite for transcending
-  hatred and attachment; realization dissolves the illusion of separateness Divergence: The Gītā emphasizes yoga practice
-  and dharma as the path to this vision, while Isavasya presents it as a paradoxical recognition already inherent in the Self''s
-  nature
+  **Bhagavad Gītā 13.27–28:** Both texts ground non-dual vision (sarva-bhūteṣu ātmā) as the prerequisite
+  for transcending hatred and attachment; realization dissolves the illusion of separateness Divergence:
+  The Gītā emphasizes yoga practice and dharma as the path to this vision, while Isavasya presents it
+  as a paradoxical recognition already inherent in the Self''s nature
 
-  **Advaita Vedānta (Śaṅkara''s commentary tradition):** Both reject object-based thinking and affirm that the Self cannot
-  be known as a finite entity; non-dual realization is the sole means of liberation Divergence: Śaṅkara systematizes this
-  into epistemological categories (aparokṣa-jñāna), while Isavasya presents the paradox directly without formal logical scaffolding
+  **Advaita Vedānta (Śaṅkara''s commentary tradition):** Both reject object-based thinking and affirm
+  that the Self cannot be known as a finite entity; non-dual realization is the sole means of liberation
+  Divergence: Śaṅkara systematizes this into epistemological categories (aparokṣa-jñāna), while Isavasya
+  presents the paradox directly without formal logical scaffolding
 
-  **Prajñāpāramitā Sūtras (Buddhist emptiness doctrine):** Both deconstruct dualistic perception and affirm that reality transcends
-  subject-object categories; ethical consequence (compassion/non-hatred) flows from this insight Divergence: Prajñāpāramitā
-  denies a permanent Self (anātman), whereas Isavasya identifies the Self as the non-dual ground of all being'
+  **Prajñāpāramitā Sūtras (Buddhist emptiness doctrine):** Both deconstruct dualistic perception and affirm
+  that reality transcends subject-object categories; ethical consequence (compassion/non-hatred) flows
+  from this insight Divergence: Prajñāpāramitā denies a permanent Self (anātman), whereas Isavasya identifies
+  the Self as the non-dual ground of all being'
 insight: These paradoxes are not poetic confusion; they dismantle object-based thinking.
 practice: 'In one conflict, pause and ask: "What am I refusing to include in my sense of self?"'
 upaya: ''
@@ -119,15 +126,21 @@ pratibha_layers:
     sarvabhutesu catmanam tato na vijugupsate || 6 ||'
 - kind: translation
   label: Pratibha Translation
-  body: 'The Self is unmoving yet swifter than the mind; senses cannot overtake it. It moves and does not move, far and near,
-    within all and outside all.
+  body: 'Unmoving, one, swifter than mind — the gods reached it not, though they moved before. Standing
+    still, it outruns those who run. In it, Matarisvan establishes the waters.
 
 
-    Who sees all beings in the Self and the Self in all beings no longer recoils in hatred.'
+    It moves and it moves not; it is far and it is near. It is within all this, and it is outside all
+    this.
+
+
+    But one who sees all beings in the Self itself, and the Self in all beings — thereafter does not shrink
+    away.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'These paradoxes are not poetic confusion; they dismantle object-based thinking. The Self cannot be grasped as one
-    finite thing among others. Realization is tested ethically: non-dual vision ends hatred, not just speculation.
+  body: 'These paradoxes are not poetic confusion; they dismantle object-based thinking. The Self cannot
+    be grasped as one finite thing among others. Realization is tested ethically: non-dual vision ends
+    hatred, not just speculation.
 
 
     Key Terms:
@@ -153,4 +166,10 @@ provenance:
   section: teaching_passage
   original_id: ISA_003
   source_reference: ''
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): Verse 4: ''senses cannot overtake it'' is incorrect - the original says
+    ''the gods (devas) do not reach it, though moving before'' - devas are not senses; Verse 4: The phrase
+    about water/wind (apo mataris'
+  english_source: corrected on independent cross-check with the living scholarly translations (re-rendered
+    from the original, not copied)
 enriched: true

@@ -7,8 +7,8 @@ unit_label: Two in One House
 title: Two in One House
 unit_type: logion
 sanskrit_devanagari: ⲡⲉϫⲉⲓ︤ⲥ︥ ϫⲉⲉⲣϣⲁⲥⲛⲁⲩ ⲙⲛ̄ⲛⲟⲩⲉⲣⲏⲩ ϩⲙ̄ⲡⲉⲓⲏⲉⲓ ⲟⲩⲱⲧ⳿ ⲥⲉⲛⲁϫⲟⲟⲥ ⲙ̄ⲡⲧⲁⲩ ϫⲉⲡⲱⲱⲛⲉ ⲉⲃⲟⲗ ⲁⲩⲱ ϥⲛⲁ
-translation_literal: Jesus said, “If two make peace with one another in this one house, they will say
-  to the mountain, ‘Move away,’ and it will …”
+translation_literal: Jesus said, "If two agree with each other in this one house, they will say to the
+  mountain, 'Move away,' and it will move away."
 commentary: 'The saying begins not with solitary mastery but with two people becoming reconciled within
   “this one house.” The house may be an actual shared dwelling, yet it also evokes a common human space:
   a community, a body, or the world inhabited together. The force of the saying arises from restored relation;
@@ -73,5 +73,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (google/gemini-2.5-flash), confirmed (google/gemini-2.5-flash):
+    The phrase ''make peace'' is an incorrect rendering of ''ⲉⲣϣⲁⲥⲛⲁⲩ ⲙⲛ̄ⲛⲟⲩⲉⲣⲏⲩ'', which means ''if two
+    make peace with each other'' or ''if two agree with each other''. The Coptic ''ⲉⲣϣⲁⲥⲛⲁⲩ'' (ershanau)
+    means ''i'

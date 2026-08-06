@@ -100,3 +100,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus grc2 e-text of Epictetus, Encheiridion (Schenkl), Unicode Greek
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The translation of 'κἀκεῖνος ἀπῆγεν αὐτούς' as 'and he would take them to others' is incorrect.
+    The verb ἀπάγω means 'to lead away' or 'to turn away', not 'to take to others'. In this context, it
+    means Socrates would turn them away from the idea of being introduced to philosophers, or perhaps
+    from h

@@ -9,8 +9,8 @@ unit_type: logion
 sanskrit_devanagari: 'ⲡⲉϫⲉⲓ︤ⲥ︥ ⲙⲛ̄ ϫⲓ
 
   (ⲛ)ϩⲧⲟⲟⲩⲉ ϣⲁⲣⲟⲩϩⲉ ⲁⲩⲱ ϫⲓⲛϩⲓⲣⲟⲩϩⲉ ϣⲁϩⲧⲟⲟⲩⲉ ϫⲉⲟⲩ ⲡⲉ⟨ⲧ⟩ⲉⲧⲛⲁⲧⲁⲁϥ ϩⲓⲱⲧ⳿ⲧⲏⲩⲧⲛ̄'
-translation_literal: Jesus said, “Do not be anxious, from morning until evening or from evening until
-  morning, about what you will put on yourselves.”
+translation_literal: Jesus said, 'Do not worry from morning to evening and from evening to morning about
+  what you will wear.'
 commentary: 'The saying encloses the whole turning of a day: morning to evening, then evening back to
   morning. Anxiety is not merely a passing thought here; it is a habit that can occupy every interval
   of life. Jesus’ imperative interrupts that cycle, directing attention away from the next covering to
@@ -74,5 +74,10 @@ provenance:
     CC-BY 4.0)
   verification: 'translation cross-checked (Luna): unknown; original from Coptic Scriptorium'
   english_source: Pratibha original translation (2026), rendered directly from the Coptic; voice-informed
-    by public-domain scholarship, not derived from any copyrighted translation
+    by public-domain scholarship, not derived from any copyrighted translation | corrected on independent
+    cross-check with the living scholarly translations (re-rendered from the original, not copied)
   original_source: Coptic Scriptorium TEI of the Gospel of Thomas (Nag Hammadi Codex II,2; CC-BY 4.0)
+  qa_repair: 'translation corrected via independent cross-check (anthropic/claude-sonnet-4.5), confirmed
+    (google/gemini-2.5-flash): The phrase ''ⲙⲛ̄ ϫⲓ (ⲛ)ϩⲧⲟⲟⲩⲉ'' means ''do not be anxious/worry'' but the
+    context is specifically about clothing/what to wear, not general anxiety; The verb ''ⲧⲁⲁϥ'' means
+    ''put/place'' but in context with ''ϩ'

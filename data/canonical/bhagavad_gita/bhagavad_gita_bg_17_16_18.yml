@@ -127,3 +127,8 @@ provenance:
   section: chapter_17
   original_id: BG_17_16_18
   source_reference: ''
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation incorrectly combines the second and third verses into a single sentence,
+    leading to a misattribution of 'this threefold austerity' to the 'austerity of the mind' mentioned
+    in the first verse. The original Sanskrit clearly separates these concepts.; The new translation omits
+    the p

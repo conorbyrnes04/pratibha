@@ -107,3 +107,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Śvetāśvataropaniṣad e-text (Limaye–Vadekar, Eighteen Principal Upaniṣads, 1958)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: minor'
+  qa_issues: 'Verse 16: ''the time of time'' (kālakālo) is typically rendered as ''the ordainer/controller
+    of time'' or ''time''s time'' in the sense of being beyond/master of time, not merely ''the time of
+    time''; Verse 16: ''the cause of the continuance, bondage, liberation, and turning of saṃsāra'' adds
+    ''turning'' which i'

@@ -80,3 +80,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The phrase "What you are about to say is not from yourself" misinterprets the original Greek,
+    which refers to speaking something that is not genuinely from one's own thoughts or convictions, rather
+    than merely 'about to say'.; The phrase "count speaking without drawing from yourself among the most
+    a

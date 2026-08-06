@@ -104,3 +104,8 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Sanskrit; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: GRETIL Vajracchedikā Prajñāpāramitā e-text (Conze/Vaidya ed.)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: 'The translation of ''parigrahītavyaḥ subhūte no grahītavyaḥ'' as ''It should be accepted,
+    Subhūti; it should not be grasped'' is a significant mistranslation. The original uses ''parigrahītavyaḥ''
+    twice, once negated, and the second instance is not a different verb (''grahītavyaḥ''). The meaning
+    is that it '

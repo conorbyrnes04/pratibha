@@ -80,3 +80,7 @@ provenance:
   english_source: Pratibha original translation (2026), rendered directly from the Greek; voice-informed
     by public-domain renderings, not derived from any copyrighted translation
   original_source: Perseus TLG e-text of Marcus Aurelius, τὰ εἰς ἑαυτόν (Betacode → Unicode)
+  qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  qa_issues: The new translation misinterprets 'τὰ προσυφεστῶτα' as 'the circumstances standing alongside
+    it'. In this context, it refers to the things or events that are presented to the soul, the external
+    realities it encounters, not circumstances it creates for itself. The soul's judgments shape its *experien
