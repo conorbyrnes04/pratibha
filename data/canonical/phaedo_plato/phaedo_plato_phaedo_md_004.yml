@@ -7,8 +7,13 @@ unit_id: phaedo_plato.phaedo_md_004
 unit_label: Refuting the Harmony Theory of Soul
 title: Refuting the Harmony Theory of Soul
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Greek source text not yet line-aligned in this manuscript
-  pass; passage body follows Jowett''s English rendering.'
+sanskrit_devanagari: ἀλλὰ μήν, ἔφη ὁ Σιμμίας, ὦ Σώκρατες, ἡμεῖς γε τούτου τοῦ μύθου ἡδέως ἂν ἀκούσαιμεν.
+  λέγεται τοίνυν, ἔφη, ὦ ἑταῖρε, πρῶτον μὲν εἶναι τοιαύτη ἡ γῆ αὐτὴ ἰδεῖν, εἴ τις ἄνωθεν θεῷτο, ὥσπερ
+  αἱ δωδεκάσκυτοι σφαῖραι, ποικίλη, χρώμασιν διειλημμένη, ὧν καὶ τὰ ἐνθάδε εἶναι χρώματα ὥσπερ δείγματα,
+  οἷς δὴ οἱ γραφῆς καταχρῶνται. ἐκεῖ δὲ πᾶσαν τὴν γῆν ἐκ τοιούτων εἶναι, καὶ πολὺ ἔτι ἐκ λαμπροτέρων καὶ
+  καθαρωτέρων ἢ τούτων· τὴν μὲν γὰρ ἁλουργῆ εἶναι καὶ θαυμαστὴν τὸ κάλλος, τὴν δὲ χρυσοειδῆ, τὴν δὲ ὅση
+  λευκὴ γύψου ἢ χιόνος λευκοτέραν, καὶ ἐκ τῶν ἄλλων χρωμάτων συγκειμένην ὡσαύτως, καὶ ἔτι πλειόνων καὶ
+  καλλιόνων ἢ ὅσα ἡμεῖς ἑωράκαμεν.
 sanskrit_iast: Not applicable (Greek text). Key Greek terms are given in script and transliteration in
   Key Terms.
 translation_literal: 'Simmias proposes that the soul is like harmony: subtle, invisible, but dependent
@@ -137,10 +142,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Greek source text not yet line-aligned in this manuscript pass; passage
-    body follows Jowett''s English rendering.'
 - kind: translation
   label: Pratibha Translation
   body: 'Simmias proposes that the soul is like harmony: subtle, invisible, but dependent on bodily structure
@@ -221,3 +222,7 @@ provenance:
   original_id: PHAEDO_MD_004
   source_reference: ''
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section
+  original_reliability: SOURCED — Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section; passage
+    located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

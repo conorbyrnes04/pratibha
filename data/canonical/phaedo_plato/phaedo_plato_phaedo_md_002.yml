@@ -7,8 +7,12 @@ unit_id: phaedo_plato.phaedo_md_002
 unit_label: Knowledge as Recollection
 title: Knowledge as Recollection
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Greek source text not yet line-aligned in this manuscript
-  pass; passage body follows Jowett''s English rendering.'
+sanskrit_devanagari: ἐγὼ γάρ, ἔφη, ὦ Σιμμία τε καὶ Κέβης, εἰ μὲν μὴ ᾤμην ἥξειν πρῶτον μὲν παρὰ θεοὺς ἄλλους
+  σοφούς τε καὶ ἀγαθούς, ἔπειτα καὶ παρ' ἀνθρώπους τετελευτηκότας ἀμείνους τῶν ἐνθάδε, ἠδίκουν ἂν οὐκ
+  ἀγανακτῶν τῷ θανάτῳ· νῦν δὲ εὖ ἴστε ὅτι παρ' ἄνδρας τε ἐλπίζω ἀφίξεσθαι ἀγαθούς — καὶ τοῦτο μὲν οὐκ
+  ἂν πάνυ διισχυρισαίμην — ὅτι μέντοι παρὰ θεοὺς δεσπότας πάνυ ἀγαθοὺς ἥξειν, εὖ ἴστε ὅτι εἴπερ τι ἄλλο
+  τῶν τοιούτων διισχυρισαίμην ἂν καὶ τοῦτο. ὥστε διὰ ταῦτα οὐχ ὁμοίως ἀγανακτῶ, ἀλλ' εὔελπίς εἰμι εἶναί
+  τι τοῖς τετελευτηκόσι καί, ὥσπερ γε καὶ πάλαι λέγεται, πολὺ ἄμεινον τοῖς ἀγαθοῖς ἢ τοῖς κακοῖς.
 sanskrit_iast: Not applicable (Greek text). Key Greek terms are given in script and transliteration in
   Key Terms.
 translation_literal: 'Learning is presented as recollection: the mind does not manufacture first principles
@@ -129,10 +133,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Greek source text not yet line-aligned in this manuscript pass; passage
-    body follows Jowett''s English rendering.'
 - kind: translation
   label: Pratibha Translation
   body: 'Learning is presented as recollection: the mind does not manufacture first principles from scratch
@@ -214,3 +214,7 @@ provenance:
   original_id: PHAEDO_MD_002
   source_reference: ''
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section
+  original_reliability: SOURCED — Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section; passage
+    located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

@@ -7,8 +7,28 @@ unit_id: milarepa_songs.mil_illness_014
 unit_label: Illness Which Becomes Me So Well
 title: Illness Which Becomes Me So Well
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Tibetan not line-aligned in this pass; body follows Evans-Wentz
-  / Dawa-Samdup English.'
+sanskrit_devanagari: 'skye ''chi thar pa ''od gsal gyi ngang du mthong/
+
+  phyag rgya chen pos phyag rgya btab/
+
+  btang snyoms chen po dang/
+
+  thogs med kyi snying stobs yod/
+
+
+  nad dang gdon dang sdig sgrib rnams/
+
+  bdag la rgyan du snang/
+
+  rtsa rlung thig le''i ngang du gnas/
+
+  yon tan gyi rtags rgyan du spyod/
+
+  bsam ngan gyi sdig pa byang gyur cig/
+
+  nad ''di bdag la ''os pa yin/
+
+  bsgyur rung dgos pa med/'
 sanskrit_iast: See Key Terms (Wylie / Sanskritized) in commentary.
 translation_literal: The round of birth and death and deliverance are seen within the realm of Clear Light;
   when the hands attain their natural posture, Mahāmudrā places its seal upon them. Thus there is in me
@@ -80,13 +100,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 70
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Tibetan not line-aligned in this pass; body follows Evans-Wentz / Dawa-Samdup
-    English.'
-- kind: iast
-  label: IAST
-  body: See Key Terms (Wylie / Sanskritized) in commentary.
 - kind: translation
   label: Pratibha Translation
   body: The round of birth and death and deliverance are seen within the realm of Clear Light; when the
@@ -166,3 +179,7 @@ provenance:
     whereas it refers to the natural state of mind or being.; The new translation's 'Mahāmudrā places
     its seal upon them' is an inaccurate rendering of the original, which implies Mahāmudrā itself is
     the seal or
+  original_source: Milarepa's songs, Tibetan (Wylie restoration, local PD/CC)
+  original_reliability: SOURCED — Milarepa's songs, Tibetan (Wylie restoration, local PD/CC); passage
+    located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

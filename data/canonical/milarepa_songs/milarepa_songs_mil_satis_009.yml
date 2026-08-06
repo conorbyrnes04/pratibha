@@ -7,8 +7,32 @@ unit_id: milarepa_songs.mil_satis_009
 unit_label: Contented Would I Be in This Solitude
 title: Contented Would I Be in This Solitude
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Tibetan not line-aligned in this pass; body follows Evans-Wentz
-  / Dawa-Samdup English.'
+sanskrit_devanagari: 'sha rul sbrang mas ''jib/
+
+  sha rnams srin bus za/
+
+  dben par shi na chog/
+
+
+  sgo la mi rkang rjes med/
+
+  phug tu khrag rjes med/
+
+  dben par shi na chog/
+
+
+  ro la ''khor ba med/
+
+  ''chi la mya ngan med/
+
+  dben par shi na chog/
+
+
+  gar song zhes ''dri ba med/
+
+  gar ''gro zhes ston sa med/
+
+  dben par shi na chog/'
 sanskrit_iast: See Key Terms (Wylie / Sanskritized) in commentary.
 translation_literal: If my putrid flesh were sucked by flies and my dissolving muscles eaten by worms
   — could I die thus amid this solitude, contented would I be, I the devotee. With no human footprint
@@ -81,13 +105,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 70
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Tibetan not line-aligned in this pass; body follows Evans-Wentz / Dawa-Samdup
-    English.'
-- kind: iast
-  label: IAST
-  body: See Key Terms (Wylie / Sanskritized) in commentary.
 - kind: translation
   label: Pratibha Translation
   body: If my putrid flesh were sucked by flies and my dissolving muscles eaten by worms — could I die
@@ -216,3 +233,7 @@ provenance:
   original_id: MIL_SATIS_009
   source_reference: ''
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Milarepa's songs, Tibetan (Wylie restoration, local PD/CC)
+  original_reliability: SOURCED — Milarepa's songs, Tibetan (Wylie restoration, local PD/CC); passage
+    located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

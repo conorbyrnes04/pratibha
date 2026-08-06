@@ -44,6 +44,8 @@ COLLS = {
         lang="Tibetan", sanskrit=False, edition="Milarepa's songs, Tibetan (Wylie restoration, local PD/CC)"),
     "mandukya_upanishad_and_gaudapada_karika": dict(src="indian/mandukya_gaudapada_gretil_iast.txt",
         lang="Sanskrit (IAST)", sanskrit=True, edition="GRETIL Māṇḍūkyopaniṣad + Gauḍapāda-kārikā e-text"),
+    "pseudo_dionysius": dict(src="greek/divine_names_greek_unicode.txt",
+        lang="Greek", sanskrit=False, edition="Pseudo-Dionysius, Divine Names, Greek (Migne PG3, Unicode; PD)"),
 }
 
 

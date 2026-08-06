@@ -7,8 +7,27 @@ unit_id: milarepa_songs.mil_inter_010
 unit_label: Essence Is Purity of Faith
 title: Essence Is Purity of Faith
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Tibetan not line-aligned in this pass; body follows Evans-Wentz
-  / Dawa-Samdup English.'
+sanskrit_devanagari: 'bla ma''i byin rlabs dang/
+
+  slob ma brtson ''grus kyi bsgom pa la/
+
+  bden pa ''dzin pa''i skabs yod/
+
+  de''i snying po dad pa''i gtsang ma''o/
+
+
+  dbang bskur byin rlabs dang/
+
+  gsol ba gdab pa la/
+
+  myur du mjal ba''i skabs yod/
+
+  de''i snying po byin rlabs so/
+
+
+  rdo rje ''chang mi ''gyur ba/
+
+  sprang po''i bde sdug khyed kyis mkhyen/'
 sanskrit_iast: See Key Terms (Wylie / Sanskritized) in commentary.
 translation_literal: In the sacred guru's grace and the zealous disciple's active meditation lies opportunity
   to uphold the Truth; of this, the essence is purity of faith. In initiatory rites that confer blessing-power,
@@ -85,13 +104,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 70
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Tibetan not line-aligned in this pass; body follows Evans-Wentz / Dawa-Samdup
-    English.'
-- kind: iast
-  label: IAST
-  body: See Key Terms (Wylie / Sanskritized) in commentary.
 - kind: translation
   label: Pratibha Translation
   body: In the sacred guru's grace and the zealous disciple's active meditation lies opportunity to uphold
@@ -166,3 +178,7 @@ provenance:
   qa_issues: The new translation misinterprets 'active meditation' (sgom pa) as 'zealous disciple's active
     meditation', which is not present in the original. The original refers to the meditation itself, not
     the disciple's zeal.; The new translation renders 'chos nyid' (Dharma-nature or Truth-nature) as 'Truth',
+  original_source: Milarepa's songs, Tibetan (Wylie restoration, local PD/CC)
+  original_reliability: SOURCED — Milarepa's songs, Tibetan (Wylie restoration, local PD/CC); passage
+    located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

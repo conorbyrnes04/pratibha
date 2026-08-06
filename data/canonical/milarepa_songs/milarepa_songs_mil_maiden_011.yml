@@ -7,8 +7,26 @@ unit_id: milarepa_songs.mil_maiden_011
 unit_label: Where Liars Are Prized
 title: Where Liars Are Prized
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Tibetan not line-aligned in this pass; body follows Evans-Wentz
-  / Dawa-Samdup English.'
+sanskrit_devanagari: 'dga'' ldan lha yi pho brang du/
+
+  chos bden ma gces rig gnas gces/
+
+  klu yi gnas su/
+
+  zab don ma gces nor gces/
+
+  mi yul ''dir/
+
+  mkhas pa ma gces rdzun pa gces/
+
+
+  dbus gtsang ru bzhi na/
+
+  sgom ma gces bshad gces/
+
+  snyigs ma''i dus ''dir/
+
+  skyes bu bzang po ma gces ngan pa gces/'
 sanskrit_iast: See Key Terms (Wylie / Sanskritized) in commentary.
 translation_literal: In the celestial palaces of the gods of Tuṣita, spiritual truths are not prized —
   scientific truths are. In the nāga realms below, profound truths are not prized — riches are. In this
@@ -78,13 +96,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 70
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Tibetan not line-aligned in this pass; body follows Evans-Wentz / Dawa-Samdup
-    English.'
-- kind: iast
-  label: IAST
-  body: See Key Terms (Wylie / Sanskritized) in commentary.
 - kind: translation
   label: Pratibha Translation
   body: In the celestial palaces of the gods of Tuṣita, spiritual truths are not prized — scientific truths
@@ -190,3 +201,7 @@ provenance:
     instead of 'spiritual truths' or 'Dharma'.; The new translation states that 'meditation is not prized
     — exposition is' in Ü, Tsang, and the four districts. The original text actually states that 'meditation
     i
+  original_source: Milarepa's songs, Tibetan (Wylie restoration, local PD/CC)
+  original_reliability: SOURCED — Milarepa's songs, Tibetan (Wylie restoration, local PD/CC); passage
+    located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring
