@@ -7,20 +7,25 @@ unit_id: know_yourself_ibn_arabi_balyani.kys_p017
 unit_label: 'Pearl #17'
 title: 'Pearl #17'
 unit_type: teaching_passage
-thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+  passing content.'
 themes:
 - attention
 - self
-source_excerpt: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their self, knows their
-  Lord. He also said, I knew my Lord through my Lord. What the Prophet pointed out by that, is that you are not you but you
-  are Him and there is no you.
-translation_literal: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their self, knows
-  their Lord. He also said, I knew my Lord through my Lord. What the Prophet pointed out by that, is that you are not you
-  but you are Him and there is no you.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+source_excerpt: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their
+  self, knows their Lord. He also said, I knew my Lord through my Lord. What the Prophet pointed out by
+  that, is that you are not you but you are Him and there is no you.
+translation_literal: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows
+  their self, knows their Lord. He also said, I knew my Lord through my Lord. What the Prophet pointed
+  out by that, is that you are not you but you are Him and there is no you.
+commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
+  the passing content.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
-sanskrit_devanagari: ''
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
+sanskrit_devanagari: 'ولهذا قال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي، مَن عرف نفسَه فقد عرف ربَّه."
+  وقال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي." أشار – صلى الله عليه وسلم – بذلك أنك لست أنت، «بل»
+  أنت هو بلا أنت: لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه'
 sanskrit_iast: ''
 tags:
 - attention
@@ -33,33 +38,36 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their self, knows their Lord.
-    He also said, I knew my Lord through my Lord. What the Prophet pointed out by that, is that you are not you but you are
-    Him and there is no you.
+  body: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their self,
+    knows their Lord. He also said, I knew my Lord through my Lord. What the Prophet pointed out by that,
+    is that you are not you but you are Him and there is no you.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 8
-    resonance: 'Both texts locate self-knowledge through a turning of attention inward to a center or source: Ibn Arabi''s
-      inward turn to the knower (rather than passing content) structurally mirrors Plotinus''s soul revolving around its own
-      centre as the source of being. Each makes the move from periphery (content/sense) to center (source/knower).'
-    divergence: Plotinus grounds this in the soul's natural metaphysical structure; Ibn Arabi frames it as a prophetic teaching
-      about the relationship between self-knowledge and divine knowledge, making the move soteriologically urgent rather than
-      ontologically descriptive.
+    resonance: 'Both texts locate self-knowledge through a turning of attention inward to a center or
+      source: Ibn Arabi''s inward turn to the knower (rather than passing content) structurally mirrors
+      Plotinus''s soul revolving around its own centre as the source of being. Each makes the move from
+      periphery (content/sense) to center (source/knower).'
+    divergence: Plotinus grounds this in the soul's natural metaphysical structure; Ibn Arabi frames it
+      as a prophetic teaching about the relationship between self-knowledge and divine knowledge, making
+      the move soteriologically urgent rather than ontologically descriptive.
     passage_id: plotinus_enneads.enn_vi_9_08
   - citation: Mandukya Upanishad and Gaudapada Karika — Verses 8–12 · Om and the Fourfold Correspondence
-    resonance: Both establish a method where inquiry into the self (through sound-meditation in Mandukya, through inward attention
-      in Ibn Arabi) becomes a complete path of self-realization. The self is not merely an object of knowledge but the instrument
-      and goal of inquiry.
-    divergence: Mandukya uses phonetic correspondence and fourfold analysis as its structural method; Ibn Arabi relies on
-      prophetic utterance and the paradox that knowing self reveals the Lord, embedding the inquiry in a theistic framework
-      rather than a systematic correspondence.
+    resonance: Both establish a method where inquiry into the self (through sound-meditation in Mandukya,
+      through inward attention in Ibn Arabi) becomes a complete path of self-realization. The self is
+      not merely an object of knowledge but the instrument and goal of inquiry.
+    divergence: Mandukya uses phonetic correspondence and fourfold analysis as its structural method;
+      Ibn Arabi relies on prophetic utterance and the paradox that knowing self reveals the Lord, embedding
+      the inquiry in a theistic framework rather than a systematic correspondence.
     passage_id: mandukya_upanishad_and_gaudapada_karika.muk_010
   layer_provenance: generated_grounded
 appendixes: []
@@ -69,3 +77,7 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P017
   source_reference: ''
+  original_source: Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com)
+  original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
+    passage located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

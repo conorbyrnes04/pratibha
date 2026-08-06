@@ -7,9 +7,17 @@ unit_id: tilopa_mahamudra.til_003
 unit_label: Look at the Looker
 title: Look at the Looker
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Tibetan (*phyag chen gang GA ma*, Tilopa''s Ganges Mahāmudrā),
-  from a Sanskrit original. Verified per-line script not sourced for this pilot; rendering is editorial.
-  **Flagged for scholarly verification.**'
+sanskrit_devanagari: 'ལུས་ཀྱི་བྱ་བ་ཡོངས་ཐོངས་རྣལ་འབྱོར་དལ་བར་སྡོད། །
+
+  ངག་གི་སྨྲ་བརྗོད་མེད་དེ་གྲགས་སྟོང་བྲག་ཆ་འདྲ། །
+
+  ཡིད་ལ་ཅི་ཡང་མི་བསམ་ལ་བཟླའི་ཆོས་ལ་ལྟོས། །
+
+  ལུས་ལ་སྙིང་པོ་མེད་པ་སྨྱུགས་མའི་སྡོང་པོ་འདྲ། །
+
+  སེམས་ནི་ནམ་མཁའི་དཀྱིལ་ལྟར་བསམ་པའི་ཡུལ་ལས་འདས། །
+
+  དེ་ཡི་ངང་ལ་བཏང་བཞག་མེད་པར་གློད་ལ་ཞོག །'
 sanskrit_iast: 'Key terms (Sanskrit basis, IAST): *guru* (spiritual teacher; Tibetan *bla ma*), *adhiṣṭhāna*
   (grace, blessing, empowering influence; Tibetan *byin rlabs*), *upadeśa* (pith-instruction; Tibetan
   *man ngag*), *sahaja* (the innate), *pratyavekṣaṇa* (direct looking/self-observation).'
@@ -104,16 +112,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 78
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Tibetan (*phyag chen gang GA ma*, Tilopa''s Ganges Mahāmudrā), from
-    a Sanskrit original. Verified per-line script not sourced for this pilot; rendering is editorial.
-    **Flagged for scholarly verification.**'
-- kind: iast
-  label: IAST
-  body: 'Key terms (Sanskrit basis, IAST): *guru* (spiritual teacher; Tibetan *bla ma*), *adhiṣṭhāna*
-    (grace, blessing, empowering influence; Tibetan *byin rlabs*), *upadeśa* (pith-instruction; Tibetan
-    *man ngag*), *sahaja* (the innate), *pratyavekṣaṇa* (direct looking/self-observation).'
 - kind: translation
   label: Pratibha Translation
   body: Whoever spends their effort completely and then rests in devotion to the guru [bla ma] will see
@@ -193,3 +191,7 @@ provenance:
   source_reference: Tilopa, *Mahāmudropadeśa* (Ganges Mahāmudrā), the guru's grace and self-recognition
     (TIL_003; Pratibha original English rendering)
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Tilopa, Gaṅgā-mahāmudrā, Tibetan (Lotsawa House, PD/CC)
+  original_reliability: SOURCED — Tilopa, Gaṅgā-mahāmudrā, Tibetan (Lotsawa House, PD/CC); passage located
+    in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

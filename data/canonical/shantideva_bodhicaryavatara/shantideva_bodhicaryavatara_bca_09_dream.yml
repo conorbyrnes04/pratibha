@@ -7,10 +7,38 @@ unit_id: shantideva_bodhicaryavatara.bca_09_dream
 unit_label: Who Is Born, Who Dies?
 title: Who Is Born, Who Dies?
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Prajñā-pāramitā
-  chapter). English anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
-sanskrit_iast: 'Key terms in IAST: *śūnya* (empty), *svapna* (dream), *kadalī* (plantain/banana tree,
-  hollow-trunked), *janman* (birth), *maraṇa* (death), *nairātmya* (selflessness).'
+sanskrit_devanagari: 'शून्येषु धर्मेषु किं लब्धं किं हृतं भवेत्
+
+  सत्कृतः परिभूतो वा केन कः संभविष्यति ।
+
+  Bच_९.१५२
+
+
+  कुतः सुखं वा दुःखं वा किं प्रियं वा किमप्रियम्
+
+  का तृष्णा कुत्र सा तृष्णा मृग्यमाणा स्वभावतः ।
+
+  Bच_९.१५३
+
+
+  विचारे जीवलोकः कः को नामात्र मरिष्यति
+
+  को भविष्यति को भूतः को बन्धुः कस्य कः सुहृत् ।
+
+  Bच_९.१५४'
+sanskrit_iast: 'śūnyeṣu dharmeṣu kiṃ labdhaṃ kiṃ hṛtaṃ bhavet
+
+  satkṛtaḥ paribhūto vā kena kaḥ saṃbhaviṣyati // Bca_9.152
+
+
+  kutaḥ sukhaṃ vā duḥkhaṃ vā kiṃ priyaṃ vā kimapriyam
+
+  kā tṛṣṇā kutra sā tṛṣṇā mṛgyamāṇā svabhāvataḥ // Bca_9.153
+
+
+  vicāre jīvalokaḥ kaḥ ko nāmātra mariṣyati
+
+  ko bhaviṣyati ko bhūtaḥ ko bandhuḥ kasya kaḥ suhṛt // Bca_9.154'
 translation_literal: 'Since the forms of existence are empty [śūnya], what is there to gain and what to
   lose? Who can be honored or despised, and by whom? Where would joy or sorrow come from? What is sweet,
   what is bitter? Look closely at the world of living beings: who dies there? who will be born, and who
@@ -94,14 +122,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 78
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Prajñā-pāramitā chapter). English
-    anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
-- kind: iast
-  label: IAST
-  body: 'Key terms in IAST: *śūnya* (empty), *svapna* (dream), *kadalī* (plantain/banana tree, hollow-trunked),
-    *janman* (birth), *maraṇa* (death), *nairātmya* (selflessness).'
 - kind: translation
   label: Pratibha Translation
   body: 'Since the forms of existence are empty [śūnya], what is there to gain and what to lose? Who can
@@ -196,3 +216,7 @@ provenance:
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
   qa_issues: The new translation omits a crucial clause regarding the nature of the world, stating 'the
     world is like a dream and a plantain tree's trunk' (svapnavat kadalīgarbhavat ca jagat).
+  original_source: GRETIL Bodhicaryāvatāra e-text (Śāntideva)
+  original_reliability: SOURCED — GRETIL Bodhicaryāvatāra e-text (Śāntideva); passage located in the source
+    and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

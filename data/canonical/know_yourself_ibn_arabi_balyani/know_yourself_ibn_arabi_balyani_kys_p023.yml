@@ -7,19 +7,23 @@ unit_id: know_yourself_ibn_arabi_balyani.kys_p023
 unit_label: 'Pearl #23'
 title: 'Pearl #23'
 unit_type: teaching_passage
-thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
-  directly.'
+thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+  disclose itself directly.'
 themes:
 - way
-source_excerpt: You have neither ceased to be nor are you existent. You are Him and He is you, without any of these imperfections.
-  If you know your existence in this way, then you know God, and if not, then not.
-translation_literal: You have neither ceased to be nor are you existent. You are Him and He is you, without any of these imperfections.
-  If you know your existence in this way, then you know God, and if not, then not.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
-  directly.'
+source_excerpt: You have neither ceased to be nor are you existent. You are Him and He is you, without
+  any of these imperfections. If you know your existence in this way, then you know God, and if not, then
+  not.
+translation_literal: You have neither ceased to be nor are you existent. You are Him and He is you, without
+  any of these imperfections. If you know your existence in this way, then you know God, and if not, then
+  not.
+commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
+  insight disclose itself directly.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
-sanskrit_devanagari: ''
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
+sanskrit_devanagari: إنك ما كنت قط ولا تكون، لا بنفسك ولا فيه ولا معه، ولا أنت فانٍ ولا موجود. أنت هو،
+  وهو أنت، بلا علَّة من هذه العلل. فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.
 sanskrit_iast: ''
 tags:
 - commentary_text
@@ -31,32 +35,35 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: You have neither ceased to be nor are you existent. You are Him and He is you, without any of these imperfections.
-    If you know your existence in this way, then you know God, and if not, then not.
+  body: You have neither ceased to be nor are you existent. You are Him and He is you, without any of
+    these imperfections. If you know your existence in this way, then you know God, and if not, then not.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
-    directly.'
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Astavakra Gita — 18.96 — 18.97 (The Paradoxical State)
-    resonance: Both texts suspend the subject in a paradoxical neither/nor state that dissolves ordinary categorical identity.
-      Ibn Arabi's 'neither ceased to be nor are you existent' and Astavakra's negation of happiness/suffering, attachment/detachment,
-      liberation/bondage all refuse affirmation of any stable position, forcing direct recognition beyond conceptual poles.
-    divergence: Astavakra uses systematic negation of paired opposites as a logical method to exhaust false identifications;
-      Ibn Arabi's formulation is more apophatic and poetic, suspending the very ground of being/non-being rather than cataloging
-      states.
+    resonance: Both texts suspend the subject in a paradoxical neither/nor state that dissolves ordinary
+      categorical identity. Ibn Arabi's 'neither ceased to be nor are you existent' and Astavakra's negation
+      of happiness/suffering, attachment/detachment, liberation/bondage all refuse affirmation of any
+      stable position, forcing direct recognition beyond conceptual poles.
+    divergence: Astavakra uses systematic negation of paired opposites as a logical method to exhaust
+      false identifications; Ibn Arabi's formulation is more apophatic and poetic, suspending the very
+      ground of being/non-being rather than cataloging states.
     passage_id: astavakra_gita.asg_sum_18_96_18_97
   - citation: Nagarjuna Mulamadhyamakakarika — Missing the Division of the Truths
-    resonance: Both texts insist that grasping the structure itself—not content—is the gateway to profound reality. Ibn Arabi's
-      pointer asks the reader to pause interpretation and let insight disclose itself; Nagarjuna warns that missing the distinction
-      between the two truths blocks access to tattva, making the *method of division* itself the teaching.
-    divergence: Nagarjuna's two truths are an epistemological framework (conventional/ultimate); Ibn Arabi's neither/nor dissolves
-      the framework itself, pointing to a non-dual recognition prior to any division.
+    resonance: Both texts insist that grasping the structure itself—not content—is the gateway to profound
+      reality. Ibn Arabi's pointer asks the reader to pause interpretation and let insight disclose itself;
+      Nagarjuna warns that missing the distinction between the two truths blocks access to tattva, making
+      the *method of division* itself the teaching.
+    divergence: Nagarjuna's two truths are an epistemological framework (conventional/ultimate); Ibn Arabi's
+      neither/nor dissolves the framework itself, pointing to a non-dual recognition prior to any division.
     passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_09
   layer_provenance: generated_grounded
 appendixes: []
@@ -66,3 +73,7 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P023
   source_reference: ''
+  original_source: Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com)
+  original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
+    passage located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

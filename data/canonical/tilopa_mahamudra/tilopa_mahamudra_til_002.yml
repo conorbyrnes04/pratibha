@@ -7,9 +7,13 @@ unit_id: tilopa_mahamudra.til_002
 unit_label: Mind Is Like the Open Sky
 title: Mind Is Like the Open Sky
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Tibetan (*phyag chen gang GA ma*, Tilopa''s Ganges Mahāmudrā),
-  from a Sanskrit original. Verified per-line script not sourced for this pilot; rendering is editorial.
-  **Flagged for scholarly verification.**'
+sanskrit_devanagari: 'དཔེར་ན་ནམ་མཁའ་གང་གིས་གང་ལ་བརྟེན། །
+
+  རང་སེམས་ཕྱག་རྒྱ་ཆེ་ལ་བརྟེན་ཡུལ་མེད། །
+
+  མ་བཅོས་གཉུག་མའི་ངང་དུ་གློད་ལ་ཞོག །
+
+  བཅིངས་པ་ཀློད་ན་གྲོལ་བར་ཐེ་ཚོམ་མེད། །'
 sanskrit_iast: 'Key terms (Sanskrit basis, IAST): *ākāśa* (space, sky), *cittatā / sems nyid* (the nature
   of mind), *nirālamba* (without support/reference), *namtok* (Tibetan *rnam rtog*, discursive thought),
   *rang grol* (self-liberation). Simile: mind''s nature like *ākāśa*, thoughts like *megha* (clouds).'
@@ -96,16 +100,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 78
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Tibetan (*phyag chen gang GA ma*, Tilopa''s Ganges Mahāmudrā), from
-    a Sanskrit original. Verified per-line script not sourced for this pilot; rendering is editorial.
-    **Flagged for scholarly verification.**'
-- kind: iast
-  label: IAST
-  body: 'Key terms (Sanskrit basis, IAST): *ākāśa* (space, sky), *cittatā / sems nyid* (the nature of
-    mind), *nirālamba* (without support/reference), *namtok* (Tibetan *rnam rtog*, discursive thought),
-    *rang grol* (self-liberation). Simile: mind''s nature like *ākāśa*, thoughts like *megha* (clouds).'
 - kind: translation
   label: Pratibha Translation
   body: Just as space cannot be indicated with a finger or fenced in by a border, the nature of mind [sems
@@ -182,3 +176,7 @@ provenance:
   source_reference: Tilopa, *Mahāmudropadeśa* (Ganges Mahāmudrā), mind like space (TIL_002; Pratibha original
     English rendering)
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Tilopa, Gaṅgā-mahāmudrā, Tibetan (Lotsawa House, PD/CC)
+  original_reliability: SOURCED — Tilopa, Gaṅgā-mahāmudrā, Tibetan (Lotsawa House, PD/CC); passage located
+    in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

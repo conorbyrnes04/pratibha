@@ -7,11 +7,50 @@ unit_id: shantideva_bodhicaryavatara.bca_08_solitude
 unit_label: Stillness Before Insight
 title: Stillness Before Insight
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Dhyāna-pāramitā
-  chapter). English anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
-sanskrit_iast: 'Key terms in IAST: *dhyāna* (meditative absorption), *śamatha* (calm abiding), *vipaśyanā
-  / "perfect vision"* (insight), *kleśa* ("the Passions"), *viveka* (solitude, discernment), *santuṣṭi*
-  (contentment).'
+sanskrit_devanagari: 'वर्धयित्वैवमुत्साहं समाधौ स्थापयेन्मनः ।
+
+  विक्षिप्तचित्तस्तु नरः क्लेशदंष्ट्रान्तरे स्थितः ।
+
+  Bच_८.१
+
+
+  कायचित्तविवेकेन विक्षेपस्य न संभवः ।
+
+  तस्माल्लोकं परित्यज्य वितर्कान् परिवर्जयेत् ।
+
+  Bच_८.२
+
+
+  स्नेहान्न त्यज्यते लोको लाभादिषु च तृष्णया ।
+
+  तस्मादेतत्परित्यागे विद्वानेवं विभावयेत् ।
+
+  Bच_८.३
+
+
+  शमथेन विपश्यनासुयुक्तः कुरुते क्लेशविनाशमित्यवेत्य ।
+
+  शमथः प्रथमं गवेषणीयः स च लोके निरपेक्षयाभिरत्या ।
+
+  Bच_८.४'
+sanskrit_iast: 'vardhayitvaivamutsāhaṃ samādhau sthāpayenmanaḥ |
+
+  vikṣiptacittastu naraḥ kleśadaṃṣṭrāntare sthitaḥ // Bca_8.1
+
+
+  kāyacittavivekena vikṣepasya na saṃbhavaḥ |
+
+  tasmāllokaṃ parityajya vitarkān parivarjayet // Bca_8.2
+
+
+  snehānna tyajyate loko lābhādiṣu ca tṛṣṇayā |
+
+  tasmādetatparityāge vidvānevaṃ vibhāvayet // Bca_8.3
+
+
+  śamathena vipaśyanāsuyuktaḥ kurute kleśavināśamityavetya |
+
+  śamathaḥ prathamaṃ gaveṣaṇīyaḥ sa ca loke nirapekṣayābhiratyā // Bca_8.4'
 translation_literal: Once energy [vīrya] has been built up, it is time to steady the mind in gathered
   concentration; a person of scattered mind lives between the fangs of the afflictions [kleśa]. The mind
   cannot wander when body and thought are kept in solitude—so it is good to leave the world's busyness
@@ -95,14 +134,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 78
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Dhyāna-pāramitā chapter). English
-    anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
-- kind: iast
-  label: IAST
-  body: 'Key terms in IAST: *dhyāna* (meditative absorption), *śamatha* (calm abiding), *vipaśyanā / "perfect
-    vision"* (insight), *kleśa* ("the Passions"), *viveka* (solitude, discernment), *santuṣṭi* (contentment).'
 - kind: translation
   label: Pratibha Translation
   body: Once energy [vīrya] has been built up, it is time to steady the mind in gathered concentration;
@@ -197,3 +228,7 @@ provenance:
     worldly gain,'' which is an inversion of the original meaning. The original states that ''stillness''
     (śamatha) is achieved through ''solitude'' (viveka) and ''contentment'' (santuṣṭi), not that stillness
     *comes from* '
+  original_source: GRETIL Bodhicaryāvatāra e-text (Śāntideva)
+  original_reliability: SOURCED — GRETIL Bodhicaryāvatāra e-text (Śāntideva); passage located in the source
+    and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

@@ -7,19 +7,25 @@ unit_id: know_yourself_ibn_arabi_balyani.kys_p020
 unit_label: 'Pearl #20'
 title: 'Pearl #20'
 unit_type: teaching_passage
-thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+  passing content.'
 themes:
 - attention
-source_excerpt: It is not that He enters into you or that you enter into Him, or that He comes out of you or that you come
-  out of Him. That does not mean that you have being and you are qualified by this or that attribute. What is meant is that
-  you never were and never will be, whether through yourself or through Him or in Him or with Him.
-translation_literal: It is not that He enters into you or that you enter into Him, or that He comes out of you or that you
-  come out of Him. That does not mean that you have being and you are qualified by this or that attribute. What is meant is
-  that you never were and never will be, whether through yourself or through Him or in Him or with Him.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+source_excerpt: It is not that He enters into you or that you enter into Him, or that He comes out of
+  you or that you come out of Him. That does not mean that you have being and you are qualified by this
+  or that attribute. What is meant is that you never were and never will be, whether through yourself
+  or through Him or in Him or with Him.
+translation_literal: It is not that He enters into you or that you enter into Him, or that He comes out
+  of you or that you come out of Him. That does not mean that you have being and you are qualified by
+  this or that attribute. What is meant is that you never were and never will be, whether through yourself
+  or through Him or in Him or with Him.
+commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
+  the passing content.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
-sanskrit_devanagari: ''
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
+sanskrit_devanagari: 'لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه؛ ولا بذلك أنك
+  موجود وصفتك هكذا أبدًا: غني به. إنك ما كنت قط ولا تكون، لا بنفسك ولا فيه ولا معه'
 sanskrit_iast: ''
 tags:
 - attention
@@ -31,31 +37,35 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: It is not that He enters into you or that you enter into Him, or that He comes out of you or that you come out of
-    Him. That does not mean that you have being and you are qualified by this or that attribute. What is meant is that you
-    never were and never will be, whether through yourself or through Him or in Him or with Him.
+  body: It is not that He enters into you or that you enter into Him, or that He comes out of you or that
+    you come out of Him. That does not mean that you have being and you are qualified by this or that
+    attribute. What is meant is that you never were and never will be, whether through yourself or through
+    Him or in Him or with Him.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Siva Sutra — Śāktopāya
-    resonance: Both texts locate knowledge or realization in the quality and direction of attention itself rather than in
-      content or object. Ibn Arabi negates subject-object merger to redirect attention inward to the knower; the Siva Sutra
-      identifies sustained attention as the very substance of knowledge.
-    divergence: Ibn Arabi emphasizes negation and non-duality to clarify the knower's independence; the Siva Sutra affirms
-      attention as an active, positive principle of consciousness that generates knowledge.
+    resonance: Both texts locate knowledge or realization in the quality and direction of attention itself
+      rather than in content or object. Ibn Arabi negates subject-object merger to redirect attention
+      inward to the knower; the Siva Sutra identifies sustained attention as the very substance of knowledge.
+    divergence: Ibn Arabi emphasizes negation and non-duality to clarify the knower's independence; the
+      Siva Sutra affirms attention as an active, positive principle of consciousness that generates knowledge.
     passage_id: siva_sutra.ss_ii_12
   - citation: Yoga Spandakarika — Third Flow
-    resonance: 'Both texts describe a reversal of ordinary attention: the target becomes clearer not through direct pursuit
-      but through a shift in the quality of attending—Ibn Arabi by withdrawing from subject-object oscillation, the Yoga Spandakarika
-      by ardent striving that paradoxically reveals what escapes ordinary perception.'
-    divergence: Ibn Arabi's method is apophatic (negating false relations), while the Yoga Spandakarika employs dynamic effort
-      and multi-angled perception to access the sacred tremor.
+    resonance: 'Both texts describe a reversal of ordinary attention: the target becomes clearer not through
+      direct pursuit but through a shift in the quality of attending—Ibn Arabi by withdrawing from subject-object
+      oscillation, the Yoga Spandakarika by ardent striving that paradoxically reveals what escapes ordinary
+      perception.'
+    divergence: Ibn Arabi's method is apophatic (negating false relations), while the Yoga Spandakarika
+      employs dynamic effort and multi-angled perception to access the sacred tremor.
     passage_id: yoga_spandakarika.sp_36
   layer_provenance: generated_grounded
 appendixes: []
@@ -65,3 +75,7 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P020
   source_reference: ''
+  original_source: Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com)
+  original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
+    passage located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

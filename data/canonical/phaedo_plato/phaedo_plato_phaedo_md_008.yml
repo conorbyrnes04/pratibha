@@ -7,7 +7,18 @@ unit_id: phaedo_plato.phaedo_md_008
 unit_label: A Possession of the Gods
 title: A Possession of the Gods
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Greek not line-aligned in this pass; body follows Jowett.'
+sanskrit_devanagari: ὁ μὲν οὖν ἐν ἀπορρήτοις λεγόμενος περὶ αὐτῶν λόγος, ὡς ἔν τινι φρουρᾷ ἐσμεν οἱ ἄνθρωποι
+  καὶ οὐ δεῖ δὴ ἑαυτὸν ἐκ ταύτης λύειν οὐδ' ἀποδιδράσκειν, μέγας τέ τίς μοι φαίνεται καὶ οὐ ῥᾴδιος διιδεῖν·
+  οὐ μέντοι ἀλλὰ τόδε γέ μοι δοκεῖ, ὦ Κέβης, εὖ λέγεσθαι, τὸ θεοὺς εἶναι ἡμῶν τοὺς ἐπιμελουμένους καὶ
+  ἡμᾶς τοὺς ἀνθρώπους ἓν τῶν κτημάτων τοῖς θεοῖς εἶναι. ἢ σοὶ οὐ δοκεῖ οὕτως; ἔμοιγε, φησὶν ὁ Κέβης. οὐκοῦν,
+  ἦ δ' ὅς, καὶ σὺ ἂν τῶν σαυτοῦ κτημάτων εἴ τι αὐτὸ ἑαυτὸ ἀποκτεινύοι, μὴ σημήναντός σου ὅτι βούλει αὐτὸ
+  τεθνάναι, χαλεπαίνοις ἂν αὐτῷ καί, εἴ τινα ἔχοις τιμωρίαν, τιμωροῖο ἄν; πάνυ γ᾽, ἔφη. ἴσως τοίνυν ταύτῃ
+  οὐκ ἄλογον μὴ πρότερον αὑτὸν ἀποκτεινύναι δεῖν, πρὶν ἀνάγκην τινὰ θεὸς ἐπιπέμψῃ, ὥσπερ καὶ τὴν νῦν ἡμῖν
+  παροῦσαν. ἀλλ' εἰκός, ἔφη ὁ Κέβης, τοῦτό γε φαίνεται. ὃ μέντοι νυνδὴ ἔλεγες, τὸ τοὺς φιλοσόφους ῥᾳδίως
+  ἂν ἐθέλειν ἀποθνῄσκειν, ἔοικεν τοῦτο, ὦ Σώκρατες, ἀτόπῳ, εἴπερ ὃ νυνδὴ ἐλέγομεν εὐλόγως ἔχει, τὸ θεόν
+  τε εἶναι τὸν ἐπιμελούμενον ἡμῶν καὶ ἡμᾶς ἐκείνου κτήματα εἶναι. τὸ γὰρ μὴ ἀγανακτεῖν τοὺς φρονιμωτάτους
+  ἐκ ταύτης τῆς θεραπείας ἀπιόντας, ἐν ᾗ ἐπιστατοῦσιν αὐτῶν οἵπερ ἄριστοί εἰσιν τῶν ὄντων ἐπιστάται, θεοί,
+  οὐκ ἔχει λόγον
 sanskrit_iast: Not applicable (Greek). Key terms in commentary.
 translation_literal: 'Socrates grants the puzzle: if death can be better, why may one not take it for
   oneself? He answers with a whispered doctrine — we are prisoners who may not open the door — and with
@@ -71,9 +82,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Greek not line-aligned in this pass; body follows Jowett.'
 - kind: translation
   label: Pratibha Translation
   body: 'Socrates grants the puzzle: if death can be better, why may one not take it for oneself? He answers
@@ -309,3 +317,7 @@ provenance:
   original_id: PHAEDO_MD_008
   source_reference: ''
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section
+  original_reliability: SOURCED — Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section; passage
+    located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

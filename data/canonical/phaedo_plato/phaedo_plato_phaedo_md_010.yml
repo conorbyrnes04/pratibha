@@ -7,7 +7,19 @@ unit_id: phaedo_plato.phaedo_md_010
 unit_label: Many Thyrsus-Bearers, Few Mystics
 title: Many Thyrsus-Bearers, Few Mystics
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Greek not line-aligned in this pass; body follows Jowett.'
+sanskrit_devanagari: ὦ μακάριε Σιμμία, μὴ γὰρ οὐχ αὕτη ᾖ ἡ ὀρθὴ πρὸς ἀρετὴν ἀλλαγή, ἡδονὰς πρὸς ἡδονὰς
+  καὶ λύπας πρὸς λύπας καὶ φόβον πρὸς φόβον καταλλάττεσθαι, καὶ μείζω πρὸς ἐλάττω ὥσπερ νομίσματα, ἀλλ'
+  ᾖ ἐκεῖνο μόνον τὸ νόμισμα ὀρθόν, ἀντὶ οὗ δεῖ πάντα ταῦτα καταλλάττεσθαι, φρόνησις, καὶ τούτου μὲν πάντα
+  καὶ μετὰ τούτου ὠνούμενά τε καὶ πιπρασκόμενα τῷ ὄντι ᾖ καὶ ἀνδρεία καὶ σωφροσύνη καὶ δικαιοσύνη καὶ
+  συλλήβδην ἀληθὴς ἀρετή, μετὰ φρονήσεως, καὶ προσγιγνομένων καὶ ἀπογιγνομένων καὶ ἡδονῶν καὶ φόβων καὶ
+  τῶν ἄλλων πάντων τῶν τοιούτων· χωριζόμενα δὲ φρονήσεως καὶ ἀλλαττόμενα ἀντὶ ἀλλήλων μὴ σκιαγραφία τις
+  ᾖ ἡ τοιαύτη ἀρετὴ καὶ τῷ ὄντι ἀνδραποδώδης τε καὶ οὐδὲν ὑγιὲς οὐδ' ἀληθὲς ἔχῃ, τὸ δ' ἀληθὲς τῷ ὄντι
+  ᾖ κάθαρσίς τις τῶν τοιούτων πάντων καὶ ἡ σωφροσύνη καὶ ἡ δικαιοσύνη καὶ ἀνδρεία, καὶ αὐτὴ ἡ φρόνησις
+  μὴ καθαρμός τις ᾖ. καὶ κινδυνεύουσι καὶ οἱ τὰς τελετὰς ἡμῖν οὗτοι καταστήσαντες οὐ φαῦλοί τινες εἶναι,
+  ἀλλὰ τῷ ὄντι πάλαι αἰνίττεσθαι ὅτι ὃς ἂν ἀμύητος καὶ ἀτέλεστος εἰς Ἅιδου ἀφίκηται ἐν βορβόρῳ κείσεται,
+  ὁ δὲ κεκαθαρμένος τε καὶ τετελεσμένος ἐκεῖσε ἀφικόμενος μετὰ θεῶν οἰκήσει. εἰσὶν γὰρ δή, ὥς φασιν οἱ
+  περὶ τὰς τελετάς, ναρθηκοφόροι μὲν πολλοί, βάκχοι δέ τε παῦροι· οὗτοι δ' εἰσὶν κατὰ τὴν ἐμὴν δόξαν οὐκ
+  ἄλλοι ἢ οἱ πεφιλοσοφηκότες ὀρθῶς.
 sanskrit_iast: Not applicable (Greek). Key terms in commentary.
 translation_literal: 'True virtue keeps company with wisdom; virtues traded as pleasures against fears,
   without wisdom, are only a shadow of virtue — without freedom, health, or truth. The true exchange is
@@ -83,9 +95,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Greek not line-aligned in this pass; body follows Jowett.'
 - kind: translation
   label: Pratibha Translation
   body: 'True virtue keeps company with wisdom; virtues traded as pleasures against fears, without wisdom,
@@ -243,3 +252,7 @@ provenance:
   original_id: PHAEDO_MD_010
   source_reference: ''
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section
+  original_reliability: SOURCED — Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section; passage
+    located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

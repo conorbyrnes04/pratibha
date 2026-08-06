@@ -7,19 +7,23 @@ unit_id: know_yourself_ibn_arabi_balyani.kys_p010
 unit_label: 'Pearl #10'
 title: 'Pearl #10'
 unit_type: teaching_passage
-thesis: This line points to a deeper order that is received through attentive listening rather than conceptual noise.
+thesis: This line points to a deeper order that is received through attentive listening rather than conceptual
+  noise.
 themes:
 - awareness
-source_excerpt: His being is concealed by His oneness without any condition. No one other than He sees Him. No sent prophet,
-  perfect saint or angel brought close knows Him. His prophet is He, His messenger is He, His message is He and His word is
-  He.
-translation_literal: His being is concealed by His oneness without any condition. No one other than He sees Him. No sent prophet,
-  perfect saint or angel brought close knows Him. His prophet is He, His messenger is He, His message is He and His word is
-  He.
-commentary: This line points to a deeper order that is received through attentive listening rather than conceptual noise.
+source_excerpt: His being is concealed by His oneness without any condition. No one other than He sees
+  Him. No sent prophet, perfect saint or angel brought close knows Him. His prophet is He, His messenger
+  is He, His message is He and His word is He.
+translation_literal: His being is concealed by His oneness without any condition. No one other than He
+  sees Him. No sent prophet, perfect saint or angel brought close knows Him. His prophet is He, His messenger
+  is He, His message is He and His word is He.
+commentary: This line points to a deeper order that is received through attentive listening rather than
+  conceptual noise.
 insight: ''
-practice: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
-sanskrit_devanagari: ''
+practice: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears
+  it.
+sanskrit_devanagari: 'تستَّر بوحدانيته بلا كيفية. لا يراه أحدٌ غيره: لا نبي مرسل، ولا ولي كامل، ولا مَلَك
+  مقرَّب يعرفه. نبيُّه هو، ورسوله هو، ورسالته هو، وكلامه هو'
 sanskrit_iast: ''
 tags:
 - awareness
@@ -31,11 +35,13 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: His being is concealed by His oneness without any condition. No one other than He sees Him. No sent prophet, perfect
-    saint or angel brought close knows Him. His prophet is He, His messenger is He, His message is He and His word is He.
+  body: His being is concealed by His oneness without any condition. No one other than He sees Him. No
+    sent prophet, perfect saint or angel brought close knows Him. His prophet is He, His messenger is
+    He, His message is He and His word is He.
 - kind: commentary
   label: Pratibha Commentary
-  body: This line points to a deeper order that is received through attentive listening rather than conceptual noise.
+  body: This line points to a deeper order that is received through attentive listening rather than conceptual
+    noise.
 - kind: practice
   label: Practice (Abhyasa)
   body: For 2 minutes, observe inner speech as sound only. Return to the silent awareness that hears it.
@@ -43,25 +49,28 @@ pratibha_layers:
   label: Cross-Tradition Resonances
   items:
   - citation: Heraclitus Fragments — Fragment 2
-    resonance: Both passages describe a universal principle (Logos/Divine Oneness) that remains structurally inaccessible
-      to ordinary awareness despite its constant presence. The barrier is not the principle's absence but humanity's failure
-      to perceive what is always already given.
-    divergence: Heraclitus emphasizes the Logos as a rational universal law that people fail to recognize through inattention;
-      Ibn Arabi locates the concealment in the very nature of Divine Oneness itself, requiring receptive listening rather
-      than rational apprehension.
+    resonance: Both passages describe a universal principle (Logos/Divine Oneness) that remains structurally
+      inaccessible to ordinary awareness despite its constant presence. The barrier is not the principle's
+      absence but humanity's failure to perceive what is always already given.
+    divergence: Heraclitus emphasizes the Logos as a rational universal law that people fail to recognize
+      through inattention; Ibn Arabi locates the concealment in the very nature of Divine Oneness itself,
+      requiring receptive listening rather than rational apprehension.
     passage_id: heraclitus_fragments.hfr_p002
   - citation: 'Vijnana Bhairava — Yukti #104'
-    resonance: Both texts propose that direct realization occurs through sustained meditative attention to a formulation or
-      principle (the Divine attributes in Vijnana Bhairava; the concealed Oneness in Ibn Arabi) that dissolves the distinction
-      between knower and known.
-    divergence: Vijnana Bhairava uses explicit verbal formulas and systematic yukti practice as the vehicle; Ibn Arabi emphasizes
-      attentive listening to silence and the non-conceptual reception of what cannot be named.
+    resonance: Both texts propose that direct realization occurs through sustained meditative attention
+      to a formulation or principle (the Divine attributes in Vijnana Bhairava; the concealed Oneness
+      in Ibn Arabi) that dissolves the distinction between knower and known.
+    divergence: Vijnana Bhairava uses explicit verbal formulas and systematic yukti practice as the vehicle;
+      Ibn Arabi emphasizes attentive listening to silence and the non-conceptual reception of what cannot
+      be named.
     passage_id: vijnana_bhairava.yukti_104
   - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
-    resonance: Both passages assert that ordinary perception and conceptual knowledge obstruct access to a unifying principle,
-      and that a shift in understanding—from multiplicity to essential unity—enables perception of what is normally imperceptible.
-    divergence: Chāndogya frames this as instruction in non-dual knowledge (Brahman); Ibn Arabi frames it as the concealment
-      of Being by Oneness itself, a metaphysical condition rather than an epistemological correction.
+    resonance: Both passages assert that ordinary perception and conceptual knowledge obstruct access
+      to a unifying principle, and that a shift in understanding—from multiplicity to essential unity—enables
+      perception of what is normally imperceptible.
+    divergence: Chāndogya frames this as instruction in non-dual knowledge (Brahman); Ibn Arabi frames
+      it as the concealment of Being by Oneness itself, a metaphysical condition rather than an epistemological
+      correction.
     passage_id: chāndogya_upaniṣad.chu_vi_01
   layer_provenance: generated_grounded
 appendixes: []
@@ -71,3 +80,7 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P010
   source_reference: ''
+  original_source: Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com)
+  original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
+    passage located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

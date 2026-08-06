@@ -7,20 +7,24 @@ unit_id: know_yourself_ibn_arabi_balyani.kys_p027
 unit_label: 'Pearl #27'
 title: 'Pearl #27'
 unit_type: teaching_passage
-thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
-  directly.'
+thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+  disclose itself directly.'
 themes:
 - knowledge
-source_excerpt: That is clearly an error and misconception. The knowledge of God does not require the passing away of existence
-  or the passing away of that passing away because things have no existence and what does not exist cannot pass away.
-translation_literal: That is clearly an error and misconception. The knowledge of God does not require the passing away of
-  existence or the passing away of that passing away because things have no existence and what does not exist cannot pass
-  away.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
-  directly.'
+source_excerpt: That is clearly an error and misconception. The knowledge of God does not require the
+  passing away of existence or the passing away of that passing away because things have no existence
+  and what does not exist cannot pass away.
+translation_literal: That is clearly an error and misconception. The knowledge of God does not require
+  the passing away of existence or the passing away of that passing away because things have no existence
+  and what does not exist cannot pass away.
+commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
+  insight disclose itself directly.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
-sanskrit_devanagari: ''
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
+sanskrit_devanagari: 'وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك
+  غلط وسهو واضح: فإن معرفة الله – تعالى – لا تحتاج إلى فناء الوجود ولا إلى فناء فنائه، لأن الشيء لا وجود
+  له، وما لا وجود له لا فناء له؛ فإن الفناء بعد إثبات الوجود.'
 sanskrit_iast: ''
 tags:
 - commentary_text
@@ -32,31 +36,33 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: That is clearly an error and misconception. The knowledge of God does not require the passing away of existence or
-    the passing away of that passing away because things have no existence and what does not exist cannot pass away.
+  body: That is clearly an error and misconception. The knowledge of God does not require the passing
+    away of existence or the passing away of that passing away because things have no existence and what
+    does not exist cannot pass away.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight disclose itself
-    directly.'
+  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
+    disclose itself directly.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Heraclitus Fragments
-    resonance: 'Both texts diagnose a fundamental error in ordinary cognition: people mistake their habitual impressions for
-      genuine knowledge, failing to recognize the gap between seeming-to-know and actual understanding. The move is to expose
-      false certainty as the primary obstacle.'
-    divergence: Heraclitus locates the error in failure to listen to the universal Logos; Ibn Arabi's pointer suspends interpretation
-      itself, inviting direct disclosure rather than reasoned instruction.
+    resonance: 'Both texts diagnose a fundamental error in ordinary cognition: people mistake their habitual
+      impressions for genuine knowledge, failing to recognize the gap between seeming-to-know and actual
+      understanding. The move is to expose false certainty as the primary obstacle.'
+    divergence: Heraclitus locates the error in failure to listen to the universal Logos; Ibn Arabi's
+      pointer suspends interpretation itself, inviting direct disclosure rather than reasoned instruction.
     passage_id: heraclitus_fragments.hfr_p005
   - citation: The Book of Chuang Tzu — chapter 22
-    resonance: Both texts stage an encounter where the seeker asks how knowledge itself is to be known or accessed—posing
-      the question of method as inseparable from the object. The structural move is to make the inquiry into knowledge reflexive
-      rather than instrumental.
-    divergence: Chuang Tzu's dialogue unfolds through paradoxical exchange and names (Do-nothing Say-nothing); Ibn Arabi's
-      commentary calls for pause and direct insight, bypassing discursive dialogue.
+    resonance: Both texts stage an encounter where the seeker asks how knowledge itself is to be known
+      or accessed—posing the question of method as inseparable from the object. The structural move is
+      to make the inquiry into knowledge reflexive rather than instrumental.
+    divergence: Chuang Tzu's dialogue unfolds through paradoxical exchange and names (Do-nothing Say-nothing);
+      Ibn Arabi's commentary calls for pause and direct insight, bypassing discursive dialogue.
     passage_id: the_book_of_chuang_tzu.ctz_022
   layer_provenance: generated_grounded
 appendixes: []
@@ -66,3 +72,7 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P027
   source_reference: ''
+  original_source: Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com)
+  original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
+    passage located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

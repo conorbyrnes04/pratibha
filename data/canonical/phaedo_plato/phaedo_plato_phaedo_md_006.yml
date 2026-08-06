@@ -7,8 +7,13 @@ unit_id: phaedo_plato.phaedo_md_006
 unit_label: Soul as Bearer of Life and Therefore Deathless
 title: Soul as Bearer of Life and Therefore Deathless
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Greek source text not yet line-aligned in this manuscript
-  pass; passage body follows Jowett''s English rendering.'
+sanskrit_devanagari: οὐκοῦν ἅπερ ἀεὶ κατὰ ταὐτὰ καὶ ὡσαύτως ἔχει, ταῦτα μάλιστα εἰκὸς εἶναι τὰ ἀσύνθετα,
+  τὰ δὲ ἄλλοτ' ἄλλως καὶ μηδέποτε κατὰ ταὐτά, ταῦτα δὲ σύνθετα; ἔμοιγε δοκεῖ οὕτως. ἴωμεν δή, ἔφη, ἐπὶ
+  ταὐτὰ ἐφ' ἅπερ ἐν τῷ ἔμπροσθεν λόγῳ. αὐτὴ ἡ οὐσία ἧς λόγον δίδομεν τοῦ εἶναι καὶ ἐρωτῶντες καὶ ἀποκρινόμενοι,
+  πότερον ὡσαύτως ἀεὶ ἔχει κατὰ ταὐτὰ ἢ ἄλλοτ' ἄλλως; αὐτὸ τὸ ἴσον, αὐτὸ τὸ καλόν, αὐτὸ ἕκαστον ὃ ἔστιν,
+  τὸ ὄν, μή ποτε μεταβολὴν καὶ ἡντινοῦν ἐνδέχεται; ἢ ἀεὶ αὐτῶν ἕκαστον ὃ ἔστι, μονοειδὲς ὂν αὐτὸ καθ'
+  αὑτό, ὡσαύτως κατὰ ταὐτὰ ἔχει καὶ οὐδέποτε οὐδαμῇ οὐδαμῶς ἀλλοίωσιν οὐδεμίαν ἐνδέχεται; ὡσαύτως, ἔφη,
+  ἀνάγκη, ὁ Κέβης, κατὰ ταὐτὰ ἔχειν, ὦ Σώκρατες.
 sanskrit_iast: Not applicable (Greek text). Key Greek terms are given in script and transliteration in
   Key Terms.
 translation_literal: 'Socrates'' final argument turns on essential contraries: what bears life cannot
@@ -122,10 +127,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Greek source text not yet line-aligned in this manuscript pass; passage
-    body follows Jowett''s English rendering.'
 - kind: translation
   label: Pratibha Translation
   body: 'Socrates'' final argument turns on essential contraries: what bears life cannot admit death while
@@ -205,3 +206,7 @@ provenance:
   original_id: PHAEDO_MD_006
   source_reference: ''
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section
+  original_reliability: SOURCED — Plato, Phaedo, Burnet Greek (Perseus, PD), by Stephanus section; passage
+    located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

@@ -7,10 +7,12 @@ unit_id: shantideva_bodhicaryavatara.bca_08_trees
 unit_label: Consort with the Trees
 title: Consort with the Trees
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Dhyāna-pāramitā
-  chapter). English anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
-sanskrit_iast: 'Key terms in IAST: *vana* (forest), *viveka* (solitude/discernment), *araṇya* (wilderness,
-  hermitage), *aparigraha* (non-possession), *ekākin* (alone, solitary).'
+sanskrit_devanagari: "शून्यदेवकुले स्थित्वा वृक्षमूले गुहासु वा \nकदानपेक्षो यास्यामि पृष्ठतो ऽनवलोकयन्\
+  \ ।\nBच_८.२७\n\nअममेषु प्रदेशेषु विस्तीर्णेषु स्वभावतः \nस्वच्छन्दचार्यनिलयो विहरिष्याम्यहं कदा ।\n\
+  Bच_८.२८"
+sanskrit_iast: "śūnyadevakule sthitvā vṛkṣamūle guhāsu vā \nkadānapekṣo yāsyāmi pṛṣṭhato 'navalokayan\
+  \ // Bca_8.27\n\namameṣu pradeśeṣu vistīrṇeṣu svabhāvataḥ \nsvacchandacāryanilayo vihariṣyāmyahaṃ kadā\
+  \ // Bca_8.28"
 translation_literal: Trees hold no scorn and demand no wearying courtship—gladly would I keep company
   with such gentle friends! Gladly would I live in some abandoned shrine, beneath a tree or in a cave,
   free to walk without care and never glance behind. Gladly would I dwell in nature's own wide and ownerless
@@ -96,14 +98,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 78
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Dhyāna-pāramitā chapter). English
-    anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
-- kind: iast
-  label: IAST
-  body: 'Key terms in IAST: *vana* (forest), *viveka* (solitude/discernment), *araṇya* (wilderness, hermitage),
-    *aparigraha* (non-possession), *ekākin* (alone, solitary).'
 - kind: translation
   label: Pratibha Translation
   body: Trees hold no scorn and demand no wearying courtship—gladly would I keep company with such gentle
@@ -198,3 +192,7 @@ provenance:
     an invention not present in the original Sanskrit. The original speaks of the forest not being 'harsh'
     or 'unfriendly' (na paruṣaṃ) and not requiring 'flattery' (na ca saṃstauti).; The phrase 'free to
     walk wit
+  original_source: GRETIL Bodhicaryāvatāra e-text (Śāntideva)
+  original_reliability: SOURCED — GRETIL Bodhicaryāvatāra e-text (Śāntideva); passage located in the source
+    and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

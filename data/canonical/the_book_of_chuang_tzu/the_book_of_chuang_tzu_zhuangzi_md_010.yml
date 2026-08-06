@@ -7,8 +7,7 @@ unit_id: the_book_of_chuang_tzu.zhuangzi_md_010
 unit_label: The Great Awakening Beyond Certainty
 title: The Great Awakening Beyond Certainty
 unit_type: sutra
-sanskrit_devanagari: '*(Source-language basis: this unit uses the Herbert Giles English excerpt from `ChaungTzuRaw`;
-  Chinese lineation not verified in this pass.)*'
+sanskrit_devanagari: 方其夢也，不知其夢也。夢之中又占其夢焉，覺而後知其夢也。且有大覺而後知此其大夢也，而愚者自以為覺，竊竊然知之。
 sanskrit_iast: '*(Chinese source text tradition; no Sanskrit original. Pinyin terms are given in Key Terms.)*'
 translation_literal: 'Those who dream of feasting wake grieving; those who dream of grief wake into pursuit
   and excitement. In dream they do not know they dream. Some even interpret the dream while still inside
@@ -95,10 +94,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*(Source-language basis: this unit uses the Herbert Giles English excerpt from `ChaungTzuRaw`;
-    Chinese lineation not verified in this pass.)*'
 - kind: translation
   label: Pratibha Translation
   body: 'Those who dream of feasting wake grieving; those who dream of grief wake into pursuit and excitement.
@@ -182,3 +177,7 @@ provenance:
   original_id: ZHUANGZI_MD_010
   source_reference: ''
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Zhuangzi Chinese (Haodoo edition, PD)
+  original_reliability: SOURCED — Zhuangzi Chinese (Haodoo edition, PD); passage located in the source
+    and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

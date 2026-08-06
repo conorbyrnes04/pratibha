@@ -7,9 +7,15 @@ unit_id: tilopa_mahamudra.til_001
 unit_label: Do Not Contrive, and Wisdom Dawns
 title: Do Not Contrive, and Wisdom Dawns
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Tibetan (*phyag chen gang GA ma*, Tilopa''s Ganges Mahāmudrā),
-  transmitted from a Sanskrit original. Verified per-line Tibetan/Sanskrit script not sourced for this
-  pilot; rendering is editorial. **Flagged for scholarly verification.**'
+sanskrit_devanagari: 'ཕྱག་རྒྱ་ཆེན་པོ་བསྟན་དུ་མེད་ཀྱིས་ཀྱང་། །
+
+  དཔེར་ན་ནམ་མཁའ་གང་གིས་གང་ལ་བརྟེན། །
+
+  རང་སེམས་ཕྱག་རྒྱ་ཆེ་ལ་བརྟེན་ཡུལ་མེད། །
+
+  མ་བཅོས་གཉུག་མའི་ངང་དུ་གློད་ལ་ཞོག །
+
+  བཅིངས་པ་ཀློད་ན་གྲོལ་བར་ཐེ་ཚོམ་མེད། །'
 sanskrit_iast: 'Key terms (Sanskrit basis, IAST): *mahāmudrā* (the "great seal"), *anabhisaṃskāra* (non-fabrication),
   *sahaja* (the innate, co-emergent), *jñāna* (wisdom), *nirvikalpa* (non-conceptual). Tibetan: *phyag
   rgya chen po* (mahāmudrā), *ma bcos pa* (uncontrived), *lhan cig skyes pa* (co-emergent/innate).'
@@ -97,16 +103,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 78
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Tibetan (*phyag chen gang GA ma*, Tilopa''s Ganges Mahāmudrā), transmitted
-    from a Sanskrit original. Verified per-line Tibetan/Sanskrit script not sourced for this pilot; rendering
-    is editorial. **Flagged for scholarly verification.**'
-- kind: iast
-  label: IAST
-  body: 'Key terms (Sanskrit basis, IAST): *mahāmudrā* (the "great seal"), *anabhisaṃskāra* (non-fabrication),
-    *sahaja* (the innate, co-emergent), *jñāna* (wisdom), *nirvikalpa* (non-conceptual). Tibetan: *phyag
-    rgya chen po* (mahāmudrā), *ma bcos pa* (uncontrived), *lhan cig skyes pa* (co-emergent/innate).'
 - kind: translation
   label: Pratibha Translation
   body: 'Mahāmudrā cannot be pointed to by any symbol, and the ordinary mind cannot grasp it as an object
@@ -185,3 +181,7 @@ provenance:
   source_reference: Tilopa, *Mahāmudropadeśa* (Ganges Mahāmudrā), non-meditation (TIL_001; Pratibha original
     English rendering)
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+  original_source: Tilopa, Gaṅgā-mahāmudrā, Tibetan (Lotsawa House, PD/CC)
+  original_reliability: SOURCED — Tilopa, Gaṅgā-mahāmudrā, Tibetan (Lotsawa House, PD/CC); passage located
+    in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

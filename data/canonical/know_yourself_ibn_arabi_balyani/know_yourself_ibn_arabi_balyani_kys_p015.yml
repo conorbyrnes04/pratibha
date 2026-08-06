@@ -7,20 +7,25 @@ unit_id: know_yourself_ibn_arabi_balyani.kys_p015
 unit_label: 'Pearl #15'
 title: 'Pearl #15'
 unit_type: teaching_passage
-thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+  passing content.'
 themes:
 - attention
 - self
-source_excerpt: The very existence of the prophetic message is His existence. There is no existence to any other who could
-  pass away, or have a name or be named. Because of this, the Prophet, God bless him and give him peace, said, Whoever knows
-  their self, knows their Lord.
-translation_literal: The very existence of the prophetic message is His existence. There is no existence to any other who
-  could pass away, or have a name or be named. Because of this, the Prophet, God bless him and give him peace, said, Whoever
-  knows their self, knows their Lord.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+source_excerpt: The very existence of the prophetic message is His existence. There is no existence to
+  any other who could pass away, or have a name or be named. Because of this, the Prophet, God bless him
+  and give him peace, said, Whoever knows their self, knows their Lord.
+translation_literal: The very existence of the prophetic message is His existence. There is no existence
+  to any other who could pass away, or have a name or be named. Because of this, the Prophet, God bless
+  him and give him peace, said, Whoever knows their self, knows their Lord.
+commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
+  the passing content.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
-sanskrit_devanagari: ''
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
+sanskrit_devanagari: 'نبيُّه هو، ورسوله هو، ورسالته هو، وكلامه هو: أرسلَ نفسَه بنفسه من نفسه إلى نفسه،
+  لا واسطة ولا سبب غيره، ولا تفاوُت بين المرسِل والمرسَل به والمرسَل إليه. وجود حروف الثناء وجوده لا غير،
+  لا ثناؤه ولا اسمه ولا مُسمَّاه.'
 sanskrit_iast: ''
 tags:
 - attention
@@ -33,33 +38,36 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: The very existence of the prophetic message is His existence. There is no existence to any other who could pass away,
-    or have a name or be named. Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their
-    self, knows their Lord.
+  body: The very existence of the prophetic message is His existence. There is no existence to any other
+    who could pass away, or have a name or be named. Because of this, the Prophet, God bless him and give
+    him peace, said, Whoever knows their self, knows their Lord.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
-    resonance: 'Both texts locate the problem of self-knowledge in a misdirection of attention: the soul/self continuously
-      enacts its true nature, but remains obscured because consciousness is habitually turned outward (toward sense-content
-      or ''passing content''). Clarity requires a reversal of attention back to the knower itself.'
-    divergence: Plotinus frames this as an epistemological problem of perception and awareness; Ibn Arabi frames it as an
-      ontological identity where the prophetic message *is* divine existence, making the inward turn a recognition of non-duality
-      rather than a recovery of overlooked activity.
+    resonance: 'Both texts locate the problem of self-knowledge in a misdirection of attention: the soul/self
+      continuously enacts its true nature, but remains obscured because consciousness is habitually turned
+      outward (toward sense-content or ''passing content''). Clarity requires a reversal of attention
+      back to the knower itself.'
+    divergence: Plotinus frames this as an epistemological problem of perception and awareness; Ibn Arabi
+      frames it as an ontological identity where the prophetic message *is* divine existence, making the
+      inward turn a recognition of non-duality rather than a recovery of overlooked activity.
     passage_id: plotinus_enneads.enn_v_1_12
   - citation: 'Vijnana Bhairava — Yukti #61'
-    resonance: Both passages identify a threshold where attention withdraws from multiplicity (the Void, the nondual) and
-      the true nature of the Self manifests precisely at that point of cessation. The Self is revealed not through acquisition
-      but through the removal of obstruction.
-    divergence: The Vijnana Bhairava locates this manifestation in the nondual Void as a phenomenological state accessible
-      through yogic practice; Ibn Arabi's 'existence of the prophetic message' is a metaphysical claim about the identity
-      of divine and prophetic presence, not a meditative attainment.
+    resonance: Both passages identify a threshold where attention withdraws from multiplicity (the Void,
+      the nondual) and the true nature of the Self manifests precisely at that point of cessation. The
+      Self is revealed not through acquisition but through the removal of obstruction.
+    divergence: The Vijnana Bhairava locates this manifestation in the nondual Void as a phenomenological
+      state accessible through yogic practice; Ibn Arabi's 'existence of the prophetic message' is a metaphysical
+      claim about the identity of divine and prophetic presence, not a meditative attainment.
     passage_id: vijnana_bhairava.yukti_061
   layer_provenance: generated_grounded
 appendixes: []
@@ -69,3 +77,7 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P015
   source_reference: ''
+  original_source: Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com)
+  original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
+    passage located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

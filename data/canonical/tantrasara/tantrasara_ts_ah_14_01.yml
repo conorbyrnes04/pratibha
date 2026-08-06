@@ -6,16 +6,17 @@ unit_id: tantrasara.ts_ah_14_01
 unit_label: The Rite of Becoming a Son
 title: The Rite of Becoming a Son
 unit_type: verse
-sanskrit_devanagari: ''
-sanskrit_iast: ''
+sanskrit_devanagari: अथ पुत्रकदीक्षाविधिः
+sanskrit_iast: atha putrakadīkṣāvidhiḥ
 translation_literal: Now, the procedure for the initiation of a son-disciple (putraka-dīkṣā).
-commentary: 'This is a heading, not yet an exposition of ritual acts. Putraka-dīkṣā is initiation that makes the recipient
-  a “son” of the guru and of the Śaiva lineage: the disciple is not merely admitted to instruction but reconstituted within
-  a ritual and ontological relation. In the Tantric economy, dīkṣā is transformative because it joins the bound individual
-  to the liberating power of Śiva while addressing the bonds that condition embodiment and future experience. The word atha
-  marks a formal transition: Abhinavagupta now turns from the preceding topic to the specific vidhi, or regulated procedure,
-  for this initiatory status. The terse title therefore frames what follows as a practical sequence whose efficacy rests on
-  transmitted authority, mantra, and Śaiva ritual knowledge.
+commentary: 'This is a heading, not yet an exposition of ritual acts. Putraka-dīkṣā is initiation that
+  makes the recipient a “son” of the guru and of the Śaiva lineage: the disciple is not merely admitted
+  to instruction but reconstituted within a ritual and ontological relation. In the Tantric economy, dīkṣā
+  is transformative because it joins the bound individual to the liberating power of Śiva while addressing
+  the bonds that condition embodiment and future experience. The word atha marks a formal transition:
+  Abhinavagupta now turns from the preceding topic to the specific vidhi, or regulated procedure, for
+  this initiatory status. The terse title therefore frames what follows as a practical sequence whose
+  efficacy rests on transmitted authority, mantra, and Śaiva ritual knowledge.
 
 
   Key Terms
@@ -25,7 +26,8 @@ commentary: 'This is a heading, not yet an exposition of ritual acts. Putraka-d�
 
   **putraka** — “Son-disciple,” one ritually constituted as the guru’s and Śaiva lineage’s spiritual offspring.
 
-  **dīkṣā** — Tantric initiation that effects purification, incorporation, and access to liberating Śaiva power.
+  **dīkṣā** — Tantric initiation that effects purification, incorporation, and access to liberating Śaiva
+  power.
 
   **vidhiḥ** — “Procedure” or prescribed ritual method.
 
@@ -33,31 +35,32 @@ commentary: 'This is a heading, not yet an exposition of ritual acts. Putraka-d�
   Cross-Tradition Resonances
 
 
-  **Galatians 4:4–7:** Paul describes salvation as adoption into divine sonship, paralleling putraka-dīkṣā’s reconstitution
-  of the initiate through a filial relation. Divergence: Paul’s adoption is grounded in Christ and faith rather than a guru-mediated
-  esoteric ritual of Śaiva initiation.
+  **Galatians 4:4–7:** Paul describes salvation as adoption into divine sonship, paralleling putraka-dīkṣā’s
+  reconstitution of the initiate through a filial relation. Divergence: Paul’s adoption is grounded in
+  Christ and faith rather than a guru-mediated esoteric ritual of Śaiva initiation.
 
-  **Pāli Vinaya, Mahāvagga I.54–69:** Buddhist ordination incorporates a candidate into a disciplined lineage under preceptor
-  and teacher, much as putraka-dīkṣā establishes a transformed relation to guru and tradition. Divergence: Vinaya ordination
-  primarily confers monastic status and communal discipline, whereas Śaiva dīkṣā is explicitly framed as a liberating ontological
-  purification.
+  **Pāli Vinaya, Mahāvagga I.54–69:** Buddhist ordination incorporates a candidate into a disciplined
+  lineage under preceptor and teacher, much as putraka-dīkṣā establishes a transformed relation to guru
+  and tradition. Divergence: Vinaya ordination primarily confers monastic status and communal discipline,
+  whereas Śaiva dīkṣā is explicitly framed as a liberating ontological purification.
 
-  **Hevajra Tantra I.8:** The Hevajra Tantra presents abhiṣeka as indispensable for entry into tantric practice and attainment,
-  closely paralleling dīkṣā as a rite of authorized transformative access. Divergence: Hevajra’s initiation is organized around
-  Buddhist deity-yoga and buddhahood, not incorporation as a son within a Śaiva guru-lineage.'
-practice: 'Before beginning a serious practice session, recollect the conditions that make transmission possible: teacher,
-  lineage, text, and disciplined receptivity. Silently ask: “What in me must be relinquished so that practice is received
-  rather than merely possessed?”'
+  **Hevajra Tantra I.8:** The Hevajra Tantra presents abhiṣeka as indispensable for entry into tantric
+  practice and attainment, closely paralleling dīkṣā as a rite of authorized transformative access. Divergence:
+  Hevajra’s initiation is organized around Buddhist deity-yoga and buddhahood, not incorporation as a
+  son within a Śaiva guru-lineage.'
+practice: 'Before beginning a serious practice session, recollect the conditions that make transmission
+  possible: teacher, lineage, text, and disciplined receptivity. Silently ask: “What in me must be relinquished
+  so that practice is received rather than merely possessed?”'
 themes: []
 tags: []
 provenance:
   collection: Tantrasara
   sanskrit_source: GRETIL Tantrasara 14.1 (PD); Devanagari from IAST.
   english_source: Pratibha own rendering from the Sanskrit (2026).
-  verification_note: PD phrase-match miss vs local witness (indian/tantrasara_abhinavagupta_gretil_iast.txt); query field=sanskrit_iast;
-    score=0.060.
-  original_reliability: ORIGINAL_REMOVED — source-language text withdrawn after failing PD phrase-match; English translation
-    retained as an editorial rendering (may be modernized/poetic). Not a verbatim quotation of a verified original.
+  verification_note: PD phrase-match miss vs local witness (indian/tantrasara_abhinavagupta_gretil_iast.txt);
+    query field=sanskrit_iast; score=0.060.
+  original_reliability: SOURCED — GRETIL Tantrasāra e-text (Abhinavagupta); passage located in the source
+    and verified verbatim
   source_confidence: low
-  verification: 'PD phrase-match: miss; original withdrawn after PD miss'
-  original_source: Withdrawn — previous model-supplied original failed PD phrase-match against local public-domain witness.
+  verification: original extracted from the local PD source and verified as a verbatim substring
+  original_source: GRETIL Tantrasāra e-text (Abhinavagupta)

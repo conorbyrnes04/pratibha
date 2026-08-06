@@ -7,11 +7,26 @@ unit_id: shantideva_bodhicaryavatara.bca_08_exchange
 unit_label: Take Others as Your Self
 title: Take Others as Your Self
 unit_type: sutra
-sanskrit_devanagari: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Dhyāna chapter,
-  *parātma-parivartana* section). English anchor from Barnett 1909; per-verse Devanagari not source-verified
-  for this pilot.'
-sanskrit_iast: 'Key terms in IAST: *parātma-parivartana* (the exchange of self and other), *ahaṃkāra*
-  (the "I"-making), *abhyāsa* ("constant use," habituation), *aṅga* (limb, member), *sattva* (living being).'
+sanskrit_devanagari: 'अभ्यासादन्यदीयेषु शुक्रशोणितबिन्दुषु
+
+  भवत्यहमिति ज्ञानम् असत्यपि हि वस्तुनि ।
+
+  Bच_८.१११
+
+
+  तथाकायो ऽन्यदीयो ऽपि किमात्मेति न गृह्यते
+
+  परत्वं तु स्वकायस्य स्थितमेव न दुष्करम् ।
+
+  Bच_८.११२'
+sanskrit_iast: 'abhyāsādanyadīyeṣu śukraśoṇitabinduṣu
+
+  bhavatyahamiti jñānam asatyapi hi vastuni // Bca_8.111
+
+
+  tathākāyo ''nyadīyo ''pi kimātmeti na gṛhyate
+
+  paratvaṃ tu svakāyasya sthitameva na duṣkaram // Bca_8.112'
 translation_literal: Through sheer habit [abhyāsa], the sense of "I" has fastened onto foreign drops of
   seed and blood, though no such self really exists there. So why should I not, in the same way, regard
   my neighbor's body as my own self? I will stop living as a self and take other beings as my self. We
@@ -101,14 +116,6 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 78
 pratibha_layers:
-- kind: original
-  label: Original
-  body: '*Source-language basis:* Sanskrit (Śāntideva, *Bodhicaryāvatāra*, Dhyāna chapter, *parātma-parivartana*
-    section). English anchor from Barnett 1909; per-verse Devanagari not source-verified for this pilot.'
-- kind: iast
-  label: IAST
-  body: 'Key terms in IAST: *parātma-parivartana* (the exchange of self and other), *ahaṃkāra* (the "I"-making),
-    *abhyāsa* ("constant use," habituation), *aṅga* (limb, member), *sattva* (living being).'
 - kind: translation
   label: Pratibha Translation
   body: Through sheer habit [abhyāsa], the sense of "I" has fastened onto foreign drops of seed and blood,
@@ -201,3 +208,7 @@ provenance:
     and take other beings as my self.' The core meaning of 'parātma-parivartana' is the exchange of self
     and other, specifically putting others in the place of oneself and oneself in the place of others,
     not ceasing
+  original_source: GRETIL Bodhicaryāvatāra e-text (Śāntideva)
+  original_reliability: SOURCED — GRETIL Bodhicaryāvatāra e-text (Śāntideva); passage located in the source
+    and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring

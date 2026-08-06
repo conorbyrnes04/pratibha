@@ -7,20 +7,26 @@ unit_id: know_yourself_ibn_arabi_balyani.kys_p030
 unit_label: 'Pearl #30'
 title: 'Pearl #30'
 unit_type: teaching_passage
-thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+  passing content.'
 themes:
 - attention
 - knowledge
-source_excerpt: If you know yourself without existing and passing away, then you know God, and if not, then not. By making
-  the knowledge of God dependent on the passing away of your existence and the passing away of that passing away, there is
-  an affirmation of something other than God.
-translation_literal: If you know yourself without existing and passing away, then you know God, and if not, then not. By making
-  the knowledge of God dependent on the passing away of your existence and the passing away of that passing away, there is
-  an affirmation of something other than God.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+source_excerpt: If you know yourself without existing and passing away, then you know God, and if not,
+  then not. By making the knowledge of God dependent on the passing away of your existence and the passing
+  away of that passing away, there is an affirmation of something other than God.
+translation_literal: If you know yourself without existing and passing away, then you know God, and if
+  not, then not. By making the knowledge of God dependent on the passing away of your existence and the
+  passing away of that passing away, there is an affirmation of something other than God.
+commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
+  the passing content.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
-sanskrit_devanagari: ''
+practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
+  to apply it today.
+sanskrit_devanagari: 'فإذا عرفت نفسك بلا وجود ولا فناء فقد عرفتَ الله. – وإلا فلا.
+
+
+  وفي إضافة معرفة الله – تعالى – إلى فناء الوجود وإلى فناء فنائه إثباتُ الشرك'
 sanskrit_iast: ''
 tags:
 - attention
@@ -33,30 +39,35 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: If you know yourself without existing and passing away, then you know God, and if not, then not. By making the knowledge
-    of God dependent on the passing away of your existence and the passing away of that passing away, there is an affirmation
-    of something other than God.
+  body: If you know yourself without existing and passing away, then you know God, and if not, then not.
+    By making the knowledge of God dependent on the passing away of your existence and the passing away
+    of that passing away, there is an affirmation of something other than God.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+    passing content.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
+    apply it today.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
   - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 7
-    resonance: 'Both texts locate knowledge in a reorientation of attention away from external objects toward an inner principle
-      that is always present but obscured by habitual perception. The move is identical: turn inward, and what was hidden
-      becomes known.'
-    divergence: Ibn Arabi grounds this inward turn in the paradox of self-knowledge without ontological persistence (fana),
-      while Plotinus grounds it in the soul's continuous intelligible activity that sense-perception merely obscures.
+    resonance: 'Both texts locate knowledge in a reorientation of attention away from external objects
+      toward an inner principle that is always present but obscured by habitual perception. The move is
+      identical: turn inward, and what was hidden becomes known.'
+    divergence: Ibn Arabi grounds this inward turn in the paradox of self-knowledge without ontological
+      persistence (fana), while Plotinus grounds it in the soul's continuous intelligible activity that
+      sense-perception merely obscures.
     passage_id: plotinus_enneads.enn_vi_9_07
   - citation: Siva Sutra — Śāktopāya
-    resonance: 'Both texts collapse the distinction between attention and knowledge: sustained or focused attention is itself
-      the act of knowing, not a means to it. The knower and the knowing are unified through the quality of attention itself.'
-    divergence: The Siva Sutra formulates this as a metaphysical principle of consciousness (Śāktopāya), while Ibn Arabi frames
-      it as a paradoxical condition of self-annihilation (fana) that reveals divine knowledge.
+    resonance: 'Both texts collapse the distinction between attention and knowledge: sustained or focused
+      attention is itself the act of knowing, not a means to it. The knower and the knowing are unified
+      through the quality of attention itself.'
+    divergence: The Siva Sutra formulates this as a metaphysical principle of consciousness (Śāktopāya),
+      while Ibn Arabi frames it as a paradoxical condition of self-annihilation (fana) that reveals divine
+      knowledge.
     passage_id: siva_sutra.ss_ii_12
   layer_provenance: generated_grounded
 appendixes: []
@@ -66,3 +77,7 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P030
   source_reference: ''
+  original_source: Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com)
+  original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
+    passage located in the source and verified verbatim
+  verification: original extracted from the local PD source and verified as a verbatim substring
