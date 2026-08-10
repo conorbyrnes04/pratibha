@@ -302,9 +302,41 @@ async def main(dir_path: str):
         return
 
     client, embedding_model = _embedding_client_and_model()
-    # Shares the API's connection settings so a single DATABASE_URL (and TLS)
-    # works for both the running app and this one-time ingest.
-    conn = await asyncpg.connect(**settings.asyncpg_kwargs())
+
+    async def _connect():
+        # command_timeout so a half-open pooler socket raises instead of hanging
+        # forever; is_closed() alone can't detect a dead-but-not-closed connection.
+        return await asyncpg.connect(command_timeout=45, **settings.asyncpg_kwargs())
+
+    async def _live(conn):
+        if conn is None or conn.is_closed():
+            return await _connect()
+        return conn
+
+    async def _write_file(conn, source_file, vectors):
+        """DELETE+INSERT one file's chunks, retrying on a dropped/half-open pooler
+        connection by forcing a fresh connection."""
+        for attempt in range(4):
+            try:
+                async with conn.transaction():
+                    await conn.execute("DELETE FROM chunks WHERE metadata->>'source_file' = $1", source_file)
+                    for body, meta, vector_str in vectors:
+                        await conn.execute(
+                            "INSERT INTO chunks (body, embedding, metadata) VALUES ($1, $2, $3)",
+                            body, vector_str, json.dumps(meta))
+                return conn, len(vectors)
+            except Exception:
+                try:
+                    await conn.close()
+                except Exception:
+                    pass
+                await asyncio.sleep(1)
+                conn = await _connect()
+                if attempt == 3:
+                    raise
+        return conn, 0
+
+    conn = await _connect()
 
     total = 0
     for fp in files:
@@ -316,8 +348,6 @@ async def main(dir_path: str):
             # Reuse the API's normalization so DB metadata (maturity, layers)
             # matches exactly what the running app serves and filters on.
             norm = normalize_unit(y, path.as_posix())
-            # Idempotent per source file.
-            await conn.execute("DELETE FROM chunks WHERE metadata->>'source_file' = $1", path.as_posix())
             base_meta = {
                 "source_file": path.as_posix(),
                 "_id": norm.get("_id") or y.get("_id") or y.get("unit_id"),
@@ -334,14 +364,12 @@ async def main(dir_path: str):
             skip_reason = _should_skip_rag_ingest(norm, base_meta["collection"])
             if skip_reason:
                 print(f"Skipping RAG ingest for {path.name}: {skip_reason}")
+                conn, _ = await _write_file(await _live(conn), path.as_posix(), [])
                 continue
 
             # Build sections from the normalized record so ingestion and the API
             # use the identical pratibha_layers (single source of truth).
             sections = _build_sections(norm)
-            # Gather every chunk for this file, then embed in batches. Embedding
-            # uses a context header (better recall) while we store the clean
-            # body so retrieved sources read as pure teaching text.
             embed_inputs: list[str] = []
             pending_rows: list[tuple[str, dict]] = []
             for section_name, text, layer_kind, layer_prov in sections:
@@ -352,24 +380,27 @@ async def main(dir_path: str):
                     embed_inputs.append(_with_chunk_context(chunk, meta))
                     pending_rows.append((chunk.strip(), meta))
 
+            # Embed EVERYTHING first (no DB connection held during the slow API
+            # calls), then write in one tight burst so the pooler can't drop us.
+            vectors: list[tuple[str, dict, str]] = []
             for start in range(0, len(embed_inputs), EMBED_BATCH):
-                batch = embed_inputs[start:start + EMBED_BATCH]
-                resp = await client.embeddings.create(model=embedding_model, input=batch)
+                resp = await client.embeddings.create(model=embedding_model, input=embed_inputs[start:start + EMBED_BATCH])
                 for item in sorted(resp.data, key=lambda d: d.index):
                     body, meta = pending_rows[start + item.index]
-                    vector_str = f"[{','.join(map(str, item.embedding))}]"
-                    await conn.execute(
-                        "INSERT INTO chunks (body, embedding, metadata) VALUES ($1, $2, $3)",
-                        body,
-                        vector_str,
-                        json.dumps(meta),
-                    )
-                    total += 1
+                    vectors.append((body, meta, f"[{','.join(map(str, item.embedding))}]"))
+
+            conn, n = await _write_file(await _live(conn), path.as_posix(), vectors)
+            total += n
         except Exception as e:
             print(f"Skipping {path.name}: {e}")
+            try:
+                conn = await _live(conn)
+            except Exception:
+                pass
             continue
 
-    await conn.close()
+    if not conn.is_closed():
+        await conn.close()
     print(f"Inserted {total} chunks into pgvector from {len(files)} files.")
 
 
