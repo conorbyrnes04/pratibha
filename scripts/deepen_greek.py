@@ -55,12 +55,13 @@ def dionysius_covered():
 PARM_FRAGS = [
     ("λεῦσσε δ' ὅμως", "B4"), ("ξυνὸν δὲ μοί ἐστιν", "B5"),
     ("χρὴ τὸ λέγειν τε νοεῖν τ'", "B6"), ("οὐ γὰρ μήποτε τοῦτο δαμῇ", "B7"),
-    ("μοῦνος δ' ἔτι μῦθος ὁδοῖο", "B8"), ("αὐτὰρ ἐπειδὴ πάντα φάος", "B9"),
+    ("μόνος δ' ἔτι μῦθος ὁδοῖο", "B8"), ("αὐτὰρ ἐπειδὴ πάντα φάος", "B9"),
     ("εἴσῃ δ' αἰθερίαν", "B10"), ("πῶς γαῖα καὶ ἥλιος", "B11"),
     ("αἱ γὰρ στεινότεραι", "B12"), ("πρώτιστον μὲν Ἔρωτα", "B13"),
     ("νυκτιφαὲς περὶ γαῖαν", "B14"), ("αἰεὶ παπταίνουσα", "B15"),
-    ("ὡς γὰρ ἑκάστοτ' ἔχει", "B16"), ("δεξιτεροῖσιν μὲν κούρους", "B17"),
-    ("εὖτε γυνὴ καὶ ἀνήρ", "B18"), ("οὕτω τοι κατὰ δόξαν", "B19"),
+    ("ὡς γὰρ ἕκαστος ἔχει κρᾶσιν", "B16"), ("δεξιτεροῖσιν μὲν κούρους", "B17"),
+    ("οὕτω τοι κατὰ δόξαν", "B19"),
+    # B18 survives only in a Latin translation (Caelius Aurelianus), not in Greek.
 ]
 
 
@@ -81,7 +82,9 @@ def parse_parmenides():
             if nj > start:
                 end = nj; break
         # map normalized offsets back to raw via cumulative letter count
-        raw = _slice_by_letters(flat, start, min(end, start + 900))
+        # (B8 is the long ~50-line proof, so allow a much larger slice)
+        cap = 4000 if label == "B8" else 900
+        raw = _slice_by_letters(flat, start, min(end, start + cap))
         if len(norm_greek(raw)) > 20:
             out.append((label, raw.strip()))
     return out
@@ -126,7 +129,7 @@ async def generate(greek, work, ref, sem):
             try:
                 r = await smart_chat([{"role": "system", "content": SYS_GEN.replace("{work}", work)},
                     {"role": "user", "content": f"Reference: {work} {ref}\nGreek:\n{greek}\n\nReturn JSON."}],
-                    primary_model="openai/gpt-5.6-terra", temperature=0.35, max_tokens=2200)
+                    primary_model="openai/gpt-5.6-terra", temperature=0.35, max_tokens=(4000 if len(greek)>1000 else 2200))
                 break
             except Exception:
                 await asyncio.sleep(2 * (a + 1))
@@ -138,7 +141,7 @@ async def generate(greek, work, ref, sem):
         for a in range(3):
             try:
                 vr = await smart_chat([{"role": "system", "content": SYS_VERIFY.replace("{work}", work)},
-                    {"role": "user", "content": f"Greek: {greek[:1500]}\n\nEnglish: {data['translation'][:1500]}\n\nReturn JSON."}],
+                    {"role": "user", "content": f"Greek: {greek[:3000]}\n\nEnglish: {data['translation'][:3000]}\n\nReturn JSON."}],
                     primary_model="openai/gpt-5.6-luna", temperature=0.0, max_tokens=200)
                 break
             except Exception:
