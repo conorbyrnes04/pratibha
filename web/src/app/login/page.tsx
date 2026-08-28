@@ -8,13 +8,12 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
-import { isSupabaseConfigured } from "@/lib/supabaseClient";
 
 function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
   const next = params.get("next") || "/";
-  const { user, loading, signInWithPassword, signUpWithPassword, signInWithGoogle } = useAuth();
+  const { user, loading, configured, signInWithPassword, signUpWithPassword, signInWithGoogle } = useAuth();
   const [mode, setMode] = useState<"signin" | "signup">(
     params.get("mode") === "signup" ? "signup" : "signin",
   );
@@ -33,14 +32,13 @@ function LoginForm() {
     if (fromQuery) setError(fromQuery);
   }, [params]);
 
-  if (!isSupabaseConfigured()) {
+  if (!configured) {
     return (
       <main className="mx-auto max-w-lg px-4 py-16">
         <h1 className="text-4xl text-amber-100">Account</h1>
         <p className="soft mt-4 font-sans text-sm leading-relaxed">
-          Supabase auth is not configured for this build. Set{" "}
-          <code className="text-amber-100">NEXT_PUBLIC_SUPABASE_URL</code> and{" "}
-          <code className="text-amber-100">NEXT_PUBLIC_SUPABASE_ANON_KEY</code> in the web env, then redeploy.
+          Convex auth is not configured for this build. Set{" "}
+          <code className="text-amber-100">NEXT_PUBLIC_CONVEX_URL</code> in the web env, then redeploy.
         </p>
         <Link href="/" className={cn(buttonVariants({ variant: "secondary" }), "mt-8")}>
           Back home
@@ -69,7 +67,7 @@ function LoginForm() {
       }
       if (mode === "signup") {
         setInfo(
-          "Account created. If email confirmation is on in Supabase, check your inbox; otherwise you’re signed in.",
+          "Account created. You are now signed in.",
         );
       }
       router.replace(next);

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { LearningTrack } from "@/lib/learningPaths";
 import { useAuth } from "@/components/AuthProvider";
-import { syncLearnProgressWithCloud } from "@/lib/learnCloud";
+import { useSyncLearnProgress } from "@/lib/learnCloud";
 import {
   clearTrackProgress,
   downloadLearnProgress,
@@ -22,6 +22,7 @@ export function useLearnProgress() {
   const [hydrated, setHydrated] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const { sync } = useSyncLearnProgress();
 
   useEffect(() => {
     const bundle = loadLearnProgressBundle();
@@ -32,13 +33,13 @@ export function useLearnProgress() {
 
   useEffect(() => {
     if (!hydrated || !user?.id) return;
-    void syncLearnProgressWithCloud(user.id).then((result) => {
+    void sync().then((result) => {
       if (result.status === "synced" || result.status === "local") {
         setProgress(result.progress);
         setCompletedAt(result.completedAt);
       }
     });
-  }, [hydrated, user?.id]);
+  }, [hydrated, user?.id, sync]);
 
   useEffect(() => {
     if (!hydrated) return;
@@ -46,12 +47,12 @@ export function useLearnProgress() {
     if (!user?.id) return;
     if (syncTimer.current) clearTimeout(syncTimer.current);
     syncTimer.current = setTimeout(() => {
-      void syncLearnProgressWithCloud(user.id);
+      void sync();
     }, 800);
     return () => {
       if (syncTimer.current) clearTimeout(syncTimer.current);
     };
-  }, [progress, completedAt, hydrated, user?.id]);
+  }, [progress, completedAt, hydrated, user?.id, sync]);
 
   function toggle(trackId: string, stepId: string) {
     const key = stepKey(trackId, stepId);

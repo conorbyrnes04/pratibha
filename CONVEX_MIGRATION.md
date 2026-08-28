@@ -1,0 +1,215 @@
+# Convex Migration Guide
+
+This document describes the migration from Supabase to Convex for authentication and user data storage.
+
+## What Changed
+
+### Backend (Convex)
+- **Authentication**: Email/password + Google OAuth now handled by Convex Auth
+- **Data Tables**: 
+  - `journal_notes` - User journal entries
+  - `learn_progress` - Learning path progress tracking
+- **Schema**: Defined in `web/convex/schema.ts`
+- **Queries/Mutations**: In `web/convex/journalNotes.ts` and `web/convex/learnProgress.ts`
+
+### Frontend
+- **Auth Provider**: Replaced Supabase client with Convex React hooks
+- **Middleware**: Updated to use Convex Auth middleware
+- **Components**: All auth-dependent components updated to use new API
+
+### FastAPI Backend
+- **JWT Verification**: Updated to verify Convex tokens via JWKS endpoint
+- **Auth Module**: `app/auth.py` now uses Convex JWT verification
+
+## Setup Instructions
+
+### 1. Create a Convex Account
+
+1. Go to https://convex.dev
+2. Sign up/sign in
+3. Create a new project
+
+### 2. Deploy Convex Functions
+
+```bash
+cd web
+npx convex dev
+```
+
+This will:
+- Generate TypeScript types in `convex/_generated/`
+- Deploy your schema and functions
+- Give you a deployment URL
+
+### 3. Configure Environment Variables
+
+#### Development (.env)
+
+```bash
+# Convex
+NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud
+
+# Google OAuth (for Convex Auth)
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+```
+
+#### Production (Cloudflare Workers)
+
+Set these in your Cloudflare dashboard or via wrangler:
+
+```bash
+NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud
+```
+
+### 4. Configure Google OAuth
+
+1. Go to https://console.cloud.google.com
+2. Create OAuth 2.0 credentials
+3. Add authorized redirect URIs:
+   - Development: `http://localhost:3000` 
+   - Production: `https://pratibha.agniagama.com`
+4. Copy Client ID and Client Secret to your environment variables
+
+### 5. Test Locally
+
+```bash
+# Terminal 1: Start Convex dev
+cd web
+npx convex dev
+
+# Terminal 2: Start Next.js
+npm run dev
+```
+
+Visit http://localhost:3000 and test:
+- Email/password sign up
+- Email/password sign in
+- Google OAuth sign in
+- Journal notes sync
+- Learning progress sync
+
+## Data Migration
+
+### From Existing Supabase Project
+
+If you have existing data in Supabase that needs to be migrated:
+
+1. **Export from Supabase**:
+   ```sql
+   -- Export journal notes
+   COPY (SELECT * FROM journal_notes) TO '/path/to/journal_notes.csv' CSV HEADER;
+   
+   -- Export learn progress
+   COPY (SELECT * FROM learn_progress) TO '/path/to/learn_progress.csv' CSV HEADER;
+   ```
+
+2. **Import to Convex**:
+   Create a migration script in `web/convex/migrations/` to import the CSV data:
+   
+   ```typescript
+   // web/convex/migrations/importSupabaseData.ts
+   import { internalMutation } from "../_generated/server";
+   import { v } from "convex/values";
+   
+   export const importJournalNotes = internalMutation({
+     args: { notes: v.array(v.any()) },
+     handler: async (ctx, args) => {
+       for (const note of args.notes) {
+         await ctx.db.insert("journal_notes", {
+           userId: note.user_id,
+           passageId: note.passage_id,
+           passageTitle: note.passage_title,
+           body: note.body,
+           tags: note.tags || [],
+           prompt: note.prompt,
+           kind: note.kind,
+           question: note.question,
+           chatMode: note.chat_mode,
+           verseId: note.verse_id,
+           createdAt: note.created_at,
+           updatedAt: note.updated_at,
+         });
+       }
+     },
+   });
+   ```
+
+3. Run the migration via Convex dashboard or CLI
+
+## Removed Files
+
+The following Supabase-specific files were removed:
+
+- `web/src/lib/supabaseClient.ts` - Supabase browser client
+- `web/src/lib/authApi.ts` - API auth helpers
+- `web/src/app/auth/callback/route.ts` - OAuth callback handler
+- `web/src/app/auth/continue/page.tsx` - OAuth fallback page
+- `supabase/migrations/` - SQL migrations (reference only)
+
+## Environment Variables Removed
+
+- `SUPABASE_URL`
+- `SUPABASE_JWT_SECRET`
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+## Environment Variables Added
+
+- `NEXT_PUBLIC_CONVEX_URL` - Your Convex deployment URL
+- `GOOGLE_CLIENT_ID` - Google OAuth client ID
+- `GOOGLE_CLIENT_SECRET` - Google OAuth client secret
+
+## Troubleshooting
+
+### Build Errors
+
+If you get TypeScript errors about missing Convex generated files:
+
+```bash
+cd web
+npx convex dev --once
+```
+
+This generates the `_generated` types.
+
+### Auth Not Working
+
+1. Check that `NEXT_PUBLIC_CONVEX_URL` is set
+2. Verify Google OAuth credentials are correct
+3. Check that authorized redirect URIs match your domain
+4. Look for auth errors in browser console
+
+### Data Not Syncing
+
+1. Verify user is signed in
+2. Check browser console for Convex errors
+3. Verify Convex functions are deployed: `npx convex dev`
+4. Check Convex dashboard logs
+
+## API Changes
+
+### Old (Supabase)
+```typescript
+import { getSupabase } from "@/lib/supabaseClient";
+
+const supabase = getSupabase();
+await supabase.from("journal_notes").insert(data);
+```
+
+### New (Convex)
+```typescript
+import { useMutation } from "convex/react";
+import { api } from "../convex/_generated/api";
+
+const upsert = useMutation(api.journalNotes.upsert);
+await upsert(data);
+```
+
+## Support
+
+For issues specific to this migration, contact the Pratibha team.
+
+For Convex-specific help:
+- Docs: https://docs.convex.dev
+- Discord: https://convex.dev/community

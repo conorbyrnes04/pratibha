@@ -4,14 +4,8 @@ import {
   type CompletedAtMap,
   type ProgressMap,
 } from "@/lib/learn/progress";
-import { getSupabase } from "@/lib/supabaseClient";
-
-type Row = {
-  user_id: string;
-  progress: ProgressMap;
-  completed_at: CompletedAtMap;
-  updated_at: string;
-};
+import { useMutation, useQuery } from "convex/react";
+import { api } from "../../convex/_generated/api";
 
 export type LearnProgressSyncResult = {
   progress: ProgressMap;
@@ -42,7 +36,6 @@ function asCompletedAt(value: unknown): CompletedAtMap {
   return out;
 }
 
-/** Merge maps: for progress, true wins; for completedAt, earliest completion wins. */
 function mergeProgress(local: ProgressMap, remote: ProgressMap): ProgressMap {
   const keys = new Set([...Object.keys(local), ...Object.keys(remote)]);
   const out: ProgressMap = {};
@@ -65,52 +58,36 @@ function mergeCompletedAt(local: CompletedAtMap, remote: CompletedAtMap): Comple
   return out;
 }
 
-/**
- * Pull remote learn progress, merge with local, upsert, and persist locally.
- */
-export async function syncLearnProgressWithCloud(userId: string): Promise<LearnProgressSyncResult> {
-  const supabase = getSupabase();
-  const local = loadLearnProgressBundle();
-  if (!supabase) {
-    return { progress: local.progress, completedAt: local.completedAt, status: "local" };
-  }
+export function useSyncLearnProgress() {
+  const remoteProgress = useQuery(api.learnProgress.get);
+  const upsert = useMutation(api.learnProgress.upsert);
 
-  const { data, error } = await supabase
-    .from("learn_progress")
-    .select("*")
-    .eq("user_id", userId)
-    .maybeSingle();
+  const sync = async (): Promise<LearnProgressSyncResult> => {
+    const local = loadLearnProgressBundle();
 
-  if (error) {
-    console.warn("learn progress sync pull failed:", error.message);
-    return {
-      progress: local.progress,
-      completedAt: local.completedAt,
-      status: "error",
-      error: error.message,
-    };
-  }
+    if (remoteProgress === undefined) {
+      return { progress: local.progress, completedAt: local.completedAt, status: "local" };
+    }
 
-  const remoteProgress = asProgress(data?.progress);
-  const remoteCompleted = asCompletedAt(data?.completed_at);
-  const progress = mergeProgress(local.progress, remoteProgress);
-  const completedAt = mergeCompletedAt(local.completedAt, remoteCompleted);
-  saveLearnProgressBundle({ progress, completedAt });
+    try {
+      const remoteData = remoteProgress || { progress: {}, completedAt: {} };
+      const progress = mergeProgress(local.progress, asProgress(remoteData.progress));
+      const completedAt = mergeCompletedAt(local.completedAt, asCompletedAt(remoteData.completedAt));
+      saveLearnProgressBundle({ progress, completedAt });
 
-  const { error: upsertError } = await supabase.from("learn_progress").upsert(
-    {
-      user_id: userId,
-      progress,
-      completed_at: completedAt,
-      updated_at: new Date().toISOString(),
-    },
-    { onConflict: "user_id" },
-  );
+      await upsert({ progress, completedAt });
 
-  if (upsertError) {
-    console.warn("learn progress sync push failed:", upsertError.message);
-    return { progress, completedAt, status: "error", error: upsertError.message };
-  }
+      return { progress, completedAt, status: "synced" };
+    } catch (error) {
+      console.warn("learn progress sync failed:", error);
+      return {
+        progress: local.progress,
+        completedAt: local.completedAt,
+        status: "error",
+        error: error instanceof Error ? error.message : "Unknown error",
+      };
+    }
+  };
 
-  return { progress, completedAt, status: "synced" };
+  return { sync };
 }

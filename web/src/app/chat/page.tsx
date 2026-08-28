@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { askChatStream, ChatApiError, getCollections, getDaily, getVerse, getVerses } from "@/lib/api";
 import { useAuth } from "@/components/AuthProvider";
-import { pushJournalNote } from "@/lib/journalCloud";
+import { usePushJournalNote } from "@/lib/journalCloud";
 import { saveChatResponse } from "@/lib/journalStorage";
 import type { ChatMode, PratibhaLayerKind, Source, VerseItem } from "@/lib/types";
 import { FilterSelect } from "@/components/FilterSelect";
@@ -59,7 +59,8 @@ const DAILY_CAP_MESSAGE =
   "You've reached today's study chat limit. Return tomorrow — or continue reading the manuscript.";
 
 export default function ChatPage() {
-  const { user, accessToken } = useAuth();
+  const { user } = useAuth();
+  const pushNote = usePushJournalNote();
   const [q, setQ] = useState("");
   const [useRag, setUseRag] = useState(true);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -293,7 +294,7 @@ export default function ChatPage() {
       verse: pinnedVerse,
       chatMode,
     });
-    if (user) void pushJournalNote(note, user.id);
+    if (user) void pushNote(note);
     setSavedReplies((prev) => new Set(prev).add(index));
   }
 

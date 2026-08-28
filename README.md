@@ -29,7 +29,7 @@ cd pratibha
 cp .env.example .env
 ```
 
-Edit `.env` and set at least one chat provider key. Defaults work without Postgres: `USE_RAG=false` loads the corpus from disk and chat uses the configured LLM.
+Edit `.env` and set at least one chat provider key and configure Convex for auth. Defaults work without Postgres: `USE_RAG=false` loads the corpus from disk and chat uses the configured LLM.
 
 ### 2. Python backend
 

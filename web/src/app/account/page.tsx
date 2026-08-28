@@ -2,36 +2,20 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useAuth } from "@/components/AuthProvider";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { fetchMe } from "@/lib/authApi";
 
 export default function AccountPage() {
   const router = useRouter();
-  const { configured, loading, user, accessToken, signOut } = useAuth();
-  const [apiMe, setApiMe] = useState<string | null>(null);
+  const { configured, loading, user, signOut } = useAuth();
 
   useEffect(() => {
     if (!loading && configured && !user) {
       router.replace("/login?next=/account");
     }
   }, [loading, configured, user, router]);
-
-  useEffect(() => {
-    if (!accessToken) {
-      setApiMe(null);
-      return;
-    }
-    void fetchMe(accessToken).then((me) => {
-      setApiMe(
-        me
-          ? `API recognizes you (${me.email || me.id})`
-          : "API /me not configured yet (set SUPABASE_JWT_SECRET on Render)",
-      );
-    });
-  }, [accessToken]);
 
   if (!configured) {
     return (
@@ -59,7 +43,6 @@ export default function AccountPage() {
         Journal notes sync to your account when you&apos;re signed in. The library and Study Chat stay
         available without login.
       </p>
-      {apiMe ? <p className="soft mt-3 font-sans text-xs text-stone-500">{apiMe}</p> : null}
       <div className="mt-8 flex flex-wrap gap-3">
         <Link href="/journal" className={cn(buttonVariants())}>
           Open journal

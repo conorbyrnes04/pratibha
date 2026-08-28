@@ -138,7 +138,7 @@ async def health():
 
 @app.get("/me")
 async def me(user: AuthUser = Depends(require_user)):
-    """Return the signed-in Supabase user (Authorization: Bearer <access_token>)."""
+    """Return the signed-in Convex user (Authorization: Bearer <token>)."""
     return {"id": user.id, "email": user.email}
 
 
