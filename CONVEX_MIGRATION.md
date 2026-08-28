@@ -2,6 +2,8 @@
 
 This document describes the migration from Supabase to Convex for authentication and user data storage.
 
+> **First time setting up Convex?** See [web/CONVEX_SETUP.md](web/CONVEX_SETUP.md) for step-by-step instructions.
+
 ## What Changed
 
 ### Backend (Convex)
@@ -23,71 +25,39 @@ This document describes the migration from Supabase to Convex for authentication
 
 ## Setup Instructions
 
-### 1. Create a Convex Account
+For detailed setup instructions, see [web/CONVEX_SETUP.md](web/CONVEX_SETUP.md).
 
-1. Go to https://convex.dev
-2. Sign up/sign in
-3. Create a new project
+### Quick Start
 
-### 2. Deploy Convex Functions
+1. **Deploy Convex Functions**
 
 ```bash
 cd web
 npx convex dev
 ```
 
-This will:
-- Generate TypeScript types in `convex/_generated/`
-- Deploy your schema and functions
-- Give you a deployment URL
+Follow the prompts to log in and create/select a project.
 
-### 3. Configure Environment Variables
+2. **Configure Environment**
 
-#### Development (.env)
-
-```bash
-# Convex
-NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud
-
-# Google OAuth (for Convex Auth)
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-```
-
-#### Production (Cloudflare Workers)
-
-Set these in your Cloudflare dashboard or via wrangler:
+Add your Convex deployment URL to `.env.local`:
 
 ```bash
 NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud
 ```
 
-### 4. Configure Google OAuth
-
-1. Go to https://console.cloud.google.com
-2. Create OAuth 2.0 credentials
-3. Add authorized redirect URIs:
-   - Development: `http://localhost:3000` 
-   - Production: `https://pratibha.agniagama.com`
-4. Copy Client ID and Client Secret to your environment variables
-
-### 5. Test Locally
+3. **Test Locally**
 
 ```bash
-# Terminal 1: Start Convex dev
 cd web
-npx convex dev
-
-# Terminal 2: Start Next.js
 npm run dev
 ```
 
-Visit http://localhost:3000 and test:
-- Email/password sign up
-- Email/password sign in
-- Google OAuth sign in
-- Journal notes sync
-- Learning progress sync
+Visit http://localhost:3000 and test email/password auth.
+
+### Optional: Google OAuth
+
+See [web/CONVEX_SETUP.md](web/CONVEX_SETUP.md#6-optional-add-google-oauth) for Google OAuth setup.
 
 ## Data Migration
 
