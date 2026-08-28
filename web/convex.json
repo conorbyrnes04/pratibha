@@ -2,5 +2,6 @@
   "functions": "convex/",
   "node": {
     "externalPackages": ["@node-rs/argon2", "@node-rs/bcrypt"]
-  }
+  },
+  "generateCommonJSApi": true
 }
