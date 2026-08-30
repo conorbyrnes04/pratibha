@@ -11,12 +11,12 @@
 ## Prerequisites
 
 ### 1. Apple Developer Program Enrollment ($99/year)
-- Enroll at [developer.apple.com/programs](https://developer.apple.com/programs)
-- Decide whether to enroll as:
-  - **Individual**: Conor Byrnes (personal account)
-  - **Organization**: Agni Agama (if business entity exists)
-- Complete enrollment and wait for approval (~24-48 hours)
-- Note your **Team ID** once approved
+✅ **Already Enrolled**
+- **Entity**: Ape Kode LLC (Organization)
+- **Team ID**: `HKXSRXV4K5`
+- **Account Holder**: Lucien Sanchez Zuber
+- **Your Role**: Developer
+- **Renewal Date**: November 11, 2026
 
 ### 2. Google Cloud OAuth Configuration
 The mobile app uses the existing Web application client (ID starts with `999545287985`) for Google sign-in.
@@ -70,14 +70,22 @@ eas submit --platform ios --profile production
 
 ### 1. Create App Record
 - Go to [App Store Connect](https://appstoreconnect.apple.com)
+- Log in with Ape Kode LLC account (Team ID: HKXSRXV4K5)
 - Navigate to **My Apps** → **+** → **New App**
 - Fill in:
   - **Platform**: iOS
   - **Name**: Pratibha
   - **Primary Language**: English (U.S.)
-  - **Bundle ID**: Select `com.pratibha.app` (from your certificate)
-  - **SKU**: `pratibha-ios` (or any unique identifier)
+  - **Bundle ID**: `com.pratibha.app`
+    - If this bundle ID doesn't exist yet, you'll need to register it first:
+      - Go to **Certificates, Identifiers & Profiles** → **Identifiers** → **+**
+      - Select **App IDs** → **App**
+      - Description: Pratibha
+      - Bundle ID: `com.pratibha.app` (Explicit)
+      - Capabilities: Sign in with Apple (if using Apple OAuth in future)
+  - **SKU**: `pratibha-ios` (or any unique identifier for internal tracking)
   - **User Access**: Full Access
+- After creation, note the **App ID** (numeric, like 1234567890) and update `ascAppId` in `eas.json`
 
 ### 2. App Information
 - **Subtitle** (30 chars): "Wisdom texts for contemplation"
@@ -179,7 +187,7 @@ Once your first build is uploaded:
 ### Version Information
 - **Version**: 1.0.0
 - **Build**: Auto-incremented by EAS
-- **Copyright**: 2026 Agni Agama (or Conor Byrnes)
+- **Copyright**: 2026 Ape Kode LLC
 
 ### What's New in This Version
 \`\`\`
