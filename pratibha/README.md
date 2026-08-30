@@ -38,6 +38,12 @@ Opens at `http://localhost:3000`.
 - ✅ Journal entries (create, list, sync via Convex)
 - ✅ Learning progress tracking
 - ✅ Cross-platform ready (Web, iOS, Android)
+- ✅ **Social Layer:**
+  - Like verses (one per user per verse)
+  - Comment on verses with threaded replies (3 levels deep)
+  - Share verses to X, Instagram, TikTok with generated cards
+  - Content moderation with blocklist and OpenAI API integration
+  - Report system for inappropriate comments
 
 ## Project Structure
 
@@ -122,6 +128,32 @@ GOOGLE_CLIENT_SECRET=your-secret
 - **BigInt on Native**: Convex JS client uses BigInt which doesn't work on Lynx's PrimJS runtime. Solution: HTTP-based client (implemented).
 - **Real-time subscriptions**: HTTP client doesn't support WebSocket subscriptions. Queries are manual/polling only.
 - **FastAPI dependency**: Passages require FastAPI server running locally. Could be migrated to Convex functions if needed.
+
+## Social Layer
+
+See [`SOCIAL.md`](./SOCIAL.md) for full details on the social features.
+
+### Try Social Features
+
+After starting the app and signing in:
+
+1. **Like a verse:** Click the heart icon on any verse (Home or Read page)
+2. **Comment:** Post a comment on a verse, reply to comments (up to 3 levels)
+3. **Share:** Click "Share" to share to X, Instagram, or TikTok
+   - X: Opens share intent with verse text
+   - Instagram/TikTok: Downloads verse card image + copies caption
+4. **Report:** Click "Report" on inappropriate comments
+
+### Moderation
+
+Comments are automatically filtered before posting:
+- Blocklist for profanity and inappropriate content
+- OpenAI Moderation API (if `OPENAI_API_KEY` set in `.env`)
+- Rate limiting: 10 comments per hour per user
+- Length limits: 10-2000 characters
+- Auto-hide after 3 reports
+
+First-time commenters see a gentle reminder about right speech.
 
 ## Resources
 

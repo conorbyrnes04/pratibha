@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { LikeButton } from "../components/LikeButton";
+import { CommentSection } from "../components/CommentSection";
+import { ShareButton } from "../components/ShareButton";
 
 interface Verse {
   _id: string;
@@ -41,62 +44,86 @@ export function ReadPage() {
 
   if (selectedVerse) {
     return (
-      <view style={{ padding: 20 }}>
-        <view
-          onClick={() => setSelectedVerse(null)}
-          style={{
-            marginBottom: 20,
-            paddingVertical: 8,
-            paddingHorizontal: 16,
-            backgroundColor: "#1a1a2e",
-            borderRadius: 4,
-            alignSelf: "flex-start",
-            cursor: "pointer",
-          }}
-        >
-          <text style={{ color: "#f0c979", fontSize: 14 }}>← Back to list</text>
+      <scroll-view style={{ flex: 1 }}>
+        <view style={{ padding: 20 }}>
+          <view
+            onClick={() => setSelectedVerse(null)}
+            style={{
+              marginBottom: 20,
+              paddingVertical: 8,
+              paddingHorizontal: 16,
+              backgroundColor: "#1a1a2e",
+              borderRadius: 4,
+              alignSelf: "flex-start",
+              cursor: "pointer",
+            }}
+          >
+            <text style={{ color: "#f0c979", fontSize: 14 }}>← Back to list</text>
+          </view>
+
+          <text style={{ color: "#999", fontSize: 12, textTransform: "uppercase", marginBottom: 8 }}>
+            {selectedVerse.collection || "Passage"}
+          </text>
+          <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 16 }}>
+            {selectedVerse.title || selectedVerse._id}
+          </text>
+
+          {/* Social actions */}
+          <view style={{ flexDirection: "row", gap: 12, marginBottom: 24, alignItems: "center" }}>
+            <LikeButton verseId={selectedVerse._id} />
+            <ShareButton
+              verseId={selectedVerse._id}
+              verseTitle={selectedVerse.title || selectedVerse._id}
+              verseTranslation={selectedVerse.pratibha_layers?.translation || ""}
+              verseOriginal={selectedVerse.pratibha_layers?.original}
+            />
+          </view>
+
+          {selectedVerse.pratibha_layers?.translation && (
+            <view style={{ marginBottom: 24 }}>
+              <text style={{ color: "#999", fontSize: 12, marginBottom: 8, textTransform: "uppercase" }}>
+                Translation
+              </text>
+              <text style={{ color: "#ddd", fontSize: 16, lineHeight: 1.6 }}>
+                {selectedVerse.pratibha_layers.translation}
+              </text>
+            </view>
+          )}
+
+          {selectedVerse.pratibha_layers?.original && (
+            <view style={{ marginBottom: 24 }}>
+              <text style={{ color: "#999", fontSize: 12, marginBottom: 8, textTransform: "uppercase" }}>
+                Original
+              </text>
+              <text style={{ color: "#ccc", fontSize: 14, lineHeight: 1.6, fontStyle: "italic" }}>
+                {selectedVerse.pratibha_layers.original}
+              </text>
+            </view>
+          )}
+
+          {selectedVerse.pratibha_layers?.commentary && (
+            <view style={{ marginBottom: 24 }}>
+              <text style={{ color: "#999", fontSize: 12, marginBottom: 8, textTransform: "uppercase" }}>
+                Commentary
+              </text>
+              <text style={{ color: "#ccc", fontSize: 14, lineHeight: 1.6 }}>
+                {selectedVerse.pratibha_layers.commentary}
+              </text>
+            </view>
+          )}
+
+          {/* Comments section */}
+          <view
+            style={{
+              marginTop: 32,
+              paddingTop: 32,
+              borderTop: "1px solid #333",
+            }}
+          >
+            <CommentSection verseId={selectedVerse._id} />
+          </view>
         </view>
-
-        <text style={{ color: "#999", fontSize: 12, textTransform: "uppercase", marginBottom: 8 }}>
-          {selectedVerse.collection || "Passage"}
-        </text>
-        <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 24 }}>
-          {selectedVerse.title || selectedVerse._id}
-        </text>
-
-        {selectedVerse.pratibha_layers?.translation && (
-          <view style={{ marginBottom: 24 }}>
-            <text style={{ color: "#999", fontSize: 12, marginBottom: 8, textTransform: "uppercase" }}>
-              Translation
-            </text>
-            <text style={{ color: "#ddd", fontSize: 16, lineHeight: 1.6 }}>
-              {selectedVerse.pratibha_layers.translation}
-            </text>
-          </view>
-        )}
-
-        {selectedVerse.pratibha_layers?.original && (
-          <view style={{ marginBottom: 24 }}>
-            <text style={{ color: "#999", fontSize: 12, marginBottom: 8, textTransform: "uppercase" }}>
-              Original
-            </text>
-            <text style={{ color: "#ccc", fontSize: 14, lineHeight: 1.6, fontStyle: "italic" }}>
-              {selectedVerse.pratibha_layers.original}
-            </text>
-          </view>
-        )}
-
-        {selectedVerse.pratibha_layers?.commentary && (
-          <view style={{ marginBottom: 24 }}>
-            <text style={{ color: "#999", fontSize: 12, marginBottom: 8, textTransform: "uppercase" }}>
-              Commentary
-            </text>
-            <text style={{ color: "#ccc", fontSize: 14, lineHeight: 1.6 }}>
-              {selectedVerse.pratibha_layers.commentary}
-            </text>
-          </view>
-        )}
-      </view>
+      </scroll-view>
     );
   }
 
