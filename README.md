@@ -40,7 +40,7 @@ npm install
 npm run dev
 ```
 
-Serves `http://localhost:3001/index.lynx.bundle` for Lynx Explorer. It is not a drop-in replacement for `web/`.
+Serves `http://localhost:3001/index.lynx.bundle` for Lynx Explorer. It covers Today, Library (filters + prev/next), Chat, Learn, Lexicon, Journal, and Sources. It is not a drop-in replacement for `web/`.
 
 ---
 

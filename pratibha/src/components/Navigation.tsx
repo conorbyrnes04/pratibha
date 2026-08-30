@@ -1,4 +1,5 @@
 import React from "react";
+import { C } from "../lib/theme";
 
 interface NavigationProps {
   currentPage: string;
@@ -6,50 +7,64 @@ interface NavigationProps {
   signedIn?: boolean;
 }
 
+const PRIMARY = [
+  { id: "home", label: "Today" },
+  { id: "read", label: "Library" },
+  { id: "chat", label: "Chat" },
+  { id: "learn", label: "Learn" },
+  { id: "lexicon", label: "Lexicon" },
+  { id: "journal", label: "Journal" },
+  { id: "sources", label: "Sources" },
+];
+
 export function Navigation({ currentPage, onNavigate, signedIn }: NavigationProps) {
   const pages = [
-    { id: "home", label: "Today" },
-    { id: "read", label: "Read" },
-    { id: "journal", label: "Journal" },
+    ...PRIMARY,
     { id: signedIn ? "home" : "login", label: signedIn ? "Account" : "Sign in", account: true },
   ];
 
   return (
     <view
       style={{
-        flexDirection: "row",
-        backgroundColor: "#1a1a2e",
-        padding: 16,
+        backgroundColor: C.cardAlt,
+        paddingTop: 14,
+        paddingBottom: 12,
+        paddingLeft: 14,
+        paddingRight: 14,
         borderBottomWidth: 1,
-        borderBottomColor: "#333",
-        gap: 12,
+        borderBottomColor: C.line,
       }}
     >
-      <text style={{ color: "#f0c979", fontSize: 20, fontWeight: "bold", marginRight: "auto" }}>
-        Pratibha
-      </text>
-      {pages.map((page) => (
-        <view
-          key={page.label}
-          bindtap={() => onNavigate(page.id)}
-          style={{
-            paddingVertical: 8,
-            paddingHorizontal: 16,
-            backgroundColor: currentPage === page.id && !page.account ? "#f0c979" : "transparent",
-            borderRadius: 4,
-          }}
-        >
-          <text
-            style={{
-              color: currentPage === page.id && !page.account ? "#000" : "#ccc",
-              fontSize: 14,
-              fontWeight: currentPage === page.id && !page.account ? "600" : "normal",
-            }}
-          >
-            {page.label}
-          </text>
-        </view>
-      ))}
+      <text style={{ color: C.gold, fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>Pratibha</text>
+      <view style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+        {pages.map((page) => {
+          const active = currentPage === page.id && !("account" in page && page.account);
+          return (
+            <view
+              key={page.label}
+              bindtap={() => onNavigate(page.id)}
+              style={{
+                paddingTop: 6,
+                paddingBottom: 6,
+                paddingLeft: 12,
+                paddingRight: 12,
+                backgroundColor: active ? C.gold : "transparent",
+                borderRadius: 4,
+              }}
+            >
+              <text
+                style={{
+                  color: active ? "#000" : "#ccc",
+                  fontSize: 13,
+                  fontWeight: active ? "600" : "normal",
+                }}
+              >
+                {page.label}
+              </text>
+            </view>
+          );
+        })}
+      </view>
     </view>
   );
 }

@@ -34,9 +34,12 @@ Opens at `http://localhost:3000`.
 
 - ✅ Email/password authentication (Convex Auth)
 - ✅ Today's daily passage
-- ✅ Library browser with passages from canonical corpus
+- ✅ Library with collection filters, search, and prev/next reading
+- ✅ Chat against the FastAPI corpus
+- ✅ Learn paths and themes with local/Convex progress
+- ✅ Lexicon browse and lemma detail
+- ✅ Sources attributions
 - ✅ Journal entries (create, list, sync via Convex)
-- ✅ Learning progress tracking
 - ✅ Cross-platform ready (Web, iOS, Android)
 
 ## Project Structure

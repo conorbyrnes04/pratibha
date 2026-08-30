@@ -7,6 +7,10 @@ export type Passage = {
   title?: string;
   collection?: string;
   section?: string;
+  sutra_id?: string;
+  reference?: string;
+  sequence?: number;
+  work_id?: string;
   translation?: string;
   translation_literal?: string;
   translation_note?: string;
@@ -20,6 +24,44 @@ export type Passage = {
   // collections; prefer the `original`/`iast` pratibha_layers instead.
   sanskrit_devanagari?: string;
   sanskrit_iast?: string;
+};
+
+export type ChatMessage = { role: "user" | "assistant" | "system"; content: string };
+
+export type ChatSource = {
+  text?: string;
+  metadata?: Record<string, unknown>;
+};
+
+export type ChatReply = {
+  answer: string;
+  sources?: ChatSource[];
+  compare_warning?: string;
+  remaining?: number | null;
+};
+
+export type LexiconItem = {
+  id: string;
+  short: string;
+  traditions?: string[];
+  aliases?: string[];
+  scripts?: Record<string, string>;
+  maturity?: string;
+  senses?: Array<{ id?: string; label?: string; short?: string; etymology?: string; body?: string }>;
+};
+
+export type SourceItem = {
+  id: string;
+  collection: string;
+  tradition: string;
+  original_work: string;
+  editorial_note: string;
+  license_label: string;
+  provenance_tier_label?: string;
+  coverage?: string | null;
+  passages_in_corpus: number;
+  status: string;
+  links?: Array<{ label: string; url: string | null }>;
 };
 
 // The reading "layers" we render, in manuscript order. `original` is the
@@ -98,12 +140,77 @@ export async function fetchDaily(): Promise<Passage | null> {
   return data && data._id ? data : null;
 }
 
-export async function fetchPassages(limit = 40): Promise<Passage[]> {
+export async function fetchPassages(limit?: number): Promise<Passage[]> {
   const response = await fetch(`${API_BASE}/verses`);
   if (!response.ok) throw new Error(`Verses failed: ${response.status}`);
   const data = await response.json();
   const items: Passage[] = data.items || data.verses || [];
-  return items.slice(0, limit);
+  return typeof limit === "number" ? items.slice(0, limit) : items;
+}
+
+export async function fetchCollections(): Promise<string[]> {
+  const response = await fetch(`${API_BASE}/collections`);
+  if (!response.ok) throw new Error(`Collections failed: ${response.status}`);
+  const data = await response.json();
+  return data.items || [];
+}
+
+export function sortPassagesInText(items: Passage[]): Passage[] {
+  return [...items].sort((a, b) => {
+    const sa = typeof a.sequence === "number" ? a.sequence : 1e9;
+    const sb = typeof b.sequence === "number" ? b.sequence : 1e9;
+    if (sa !== sb) return sa - sb;
+    return (a.title || a._id).localeCompare(b.title || b._id);
+  });
+}
+
+export function siblingsInCollection(all: Passage[], collection?: string): Passage[] {
+  if (!collection) return [];
+  const needle = collection.trim().toLowerCase();
+  return sortPassagesInText(
+    all.filter((v) => (v.collection || "").trim().toLowerCase() === needle),
+  );
+}
+
+export async function fetchSources(): Promise<SourceItem[]> {
+  const response = await fetch(`${API_BASE}/sources`);
+  if (!response.ok) throw new Error(`Sources failed: ${response.status}`);
+  const data = await response.json();
+  return data.items || [];
+}
+
+export async function fetchLexicon(limit = 500): Promise<LexiconItem[]> {
+  const response = await fetch(`${API_BASE}/lexicon?limit=${limit}`);
+  if (!response.ok) throw new Error(`Lexicon failed: ${response.status}`);
+  const data = await response.json();
+  return data.items || [];
+}
+
+export async function fetchLemma(id: string): Promise<LexiconItem> {
+  const response = await fetch(`${API_BASE}/lexicon/${encodeURIComponent(id)}`);
+  if (!response.ok) throw new Error(`Lemma failed: ${response.status}`);
+  return response.json();
+}
+
+export async function sendChat(
+  messages: ChatMessage[],
+  opts: { useRag?: boolean; verseId?: string; chatMode?: string } = {},
+): Promise<ChatReply> {
+  const response = await fetch(`${API_BASE}/chat`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      messages,
+      use_rag: opts.useRag ?? true,
+      verse_id: opts.verseId || null,
+      chat_mode: opts.chatMode || "question",
+    }),
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok && !data.answer) {
+    throw new Error(data.detail || `Chat failed: ${response.status}`);
+  }
+  return data;
 }
 
 // Full passage with every layer — the list endpoint returns slim payloads, so

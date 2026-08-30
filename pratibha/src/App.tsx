@@ -6,6 +6,10 @@ import { HomePage } from "./pages/HomePage";
 import { LoginPage } from "./pages/LoginPage";
 import { JournalPage } from "./pages/JournalPage";
 import { ReadPage } from "./pages/ReadPage";
+import { ChatPage } from "./pages/ChatPage";
+import { LearnPage } from "./pages/LearnPage";
+import { LexiconPage } from "./pages/LexiconPage";
+import { SourcesPage } from "./pages/SourcesPage";
 
 function AppContent() {
   const { user, loading } = useAuth();
@@ -26,7 +30,11 @@ function AppContent() {
         {currentPage === "login" && <LoginPage onLogin={() => setCurrentPage("home")} />}
         {currentPage === "home" && <HomePage />}
         {currentPage === "read" && <ReadPage />}
+        {currentPage === "chat" && <ChatPage />}
+        {currentPage === "learn" && <LearnPage />}
+        {currentPage === "lexicon" && <LexiconPage />}
         {currentPage === "journal" && <JournalPage />}
+        {currentPage === "sources" && <SourcesPage />}
       </scroll-view>
     </view>
   );

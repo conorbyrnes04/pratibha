@@ -1,0 +1,993 @@
+{
+  "realms": [
+    {
+      "id": "foundations",
+      "title": "Foundations",
+      "blurb": "Where every path begins: steady the ground of attention, and learn to act without seizing up.",
+      "trackIds": [
+        "action-without-contraction",
+        "recognizing-awareness"
+      ]
+    },
+    {
+      "id": "trika",
+      "title": "The Trika · Kashmir Śaivism",
+      "blurb": "The path of recognition: you are the Consciousness you have been seeking — playing at being bound.",
+      "trackIds": [
+        "heart-of-recognition",
+        "three-doors-of-shiva",
+        "the-112-doorways",
+        "descent-of-the-cakra"
+      ]
+    },
+    {
+      "id": "vedanta",
+      "title": "Vedānta & the Great Letting-Go",
+      "blurb": "The witness behind the three states, and the fearless release into emptiness.",
+      "trackIds": [
+        "letting-go-death-emptiness"
+      ]
+    },
+    {
+      "id": "bridges",
+      "title": "Bridges Across Traditions",
+      "blurb": "One story of emanation and return, told by Plotinus, the Śaiva sages, and the Tao.",
+      "trackIds": [
+        "the-one-and-the-many"
+      ]
+    }
+  ],
+  "recommendedSpine": [
+    "action-without-contraction",
+    "recognizing-awareness",
+    "heart-of-recognition",
+    "three-doors-of-shiva",
+    "the-112-doorways",
+    "descent-of-the-cakra",
+    "letting-go-death-emptiness",
+    "the-one-and-the-many"
+  ],
+  "recommendedThreads": [
+    "action-without-seizing",
+    "the-gap",
+    "living-breath",
+    "recognition",
+    "the-witness",
+    "becoming-light",
+    "emanation-return",
+    "death-as-teacher"
+  ],
+  "tracks": [
+    {
+      "id": "descent-of-the-cakra",
+      "title": "The Descent of the Cakra",
+      "level": "Intermediate",
+      "focus": "Śrī Vidyā: the śrīcakra as the body of the Goddess — and of you",
+      "outcome": "Walk the opening of the Yoginīhṛdaya as an initiation: from fitness and secrecy, through the threefold agreement and the cosmos arising from self-recognition, down into the diagram's unfolding, and back inward through the subtle body.",
+      "description": "An initiatic path through the Heart of the Yoginī (Cakrasaṃketa, ślokas 1–35), walked gate by gate.",
+      "estimatedSessions": "11 gates · ~20 min each",
+      "steps": [
+        {
+          "id": "yh-threshold-question",
+          "title": "The Question That Opens the Absolute",
+          "passageId": "yoginihrdaya.yh_001",
+          "keyIdea": "Truth is drawn out by desire and address, not seized. Begin by becoming askable.",
+          "practice": ""
+        },
+        {
+          "id": "yh-secrecy-khecara",
+          "title": "Whispered Ear to Ear — Secrecy and the Sky-Going State",
+          "passageId": "yoginihrdaya.yh_002",
+          "keyIdea": "The 'sky' you learn to move in is the open void of the heart; knowing it is freedom.",
+          "practice": ""
+        },
+        {
+          "id": "yh-threefold-samketa",
+          "title": "Threefold Co-Presence — Cakra, Mantra, Worship",
+          "passageId": "yoginihrdaya.yh_003",
+          "keyIdea": "A true symbol is a meeting-place you arrive at, not a sign you decode.",
+          "practice": ""
+        },
+        {
+          "id": "yh-authority-of-knowing",
+          "title": "The Seat of Supreme Authority",
+          "passageId": "yoginihrdaya.yh_004",
+          "keyIdea": "Where understanding is absent, authority is only borrowed; knowing the form makes you its conduit.",
+          "practice": ""
+        },
+        {
+          "id": "yh-five-energies-four-fires",
+          "title": "Five Energies, Four Fires",
+          "passageId": "yoginihrdaya.yh_005",
+          "keyIdea": "You are not a thing but a standing pattern that emission and reabsorption keep making.",
+          "practice": ""
+        },
+        {
+          "id": "yh-sphuratta",
+          "title": "Sphurattā — The Cakra Springs from the Goddess Seeing Herself",
+          "passageId": "yoginihrdaya.yh_006",
+          "keyIdea": "Catching yourself in the act of being aware is the same flash from which a world springs.",
+          "practice": ""
+        },
+        {
+          "id": "yh-ninefold-womb",
+          "title": "From the Void-A and the Bindu — The Ninefold Womb",
+          "passageId": "yoginihrdaya.yh_007",
+          "keyIdea": "Subject, object, and the knowing between them are the cosmos's first children, not neutral givens.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "yoginihrdaya.yh_008",
+          "keyIdea": "Perception is the cosmos perceiving itself — a local radiance, not a transaction with an outside.",
+          "practice": ""
+        },
+        {
+          "id": "yh-five-portions",
+          "title": "The Five Portions — From Pure Consciousness to Earth",
+          "passageId": "yoginihrdaya.yh_009",
+          "keyIdea": "Solid matter is not the opposite of spirit but its outermost shining — traceable back to the source.",
+          "practice": ""
+        },
+        {
+          "id": "yh-inverted-hierarchy",
+          "title": "The Inverted Hierarchy and the Erotic Point",
+          "passageId": "yoginihrdaya.yh_010",
+          "keyIdea": "The same divinity saturates the busiest outer ring; reality's essence is generous overflow, not a still point.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "yoginihrdaya.yh_011",
+          "keyIdea": "Liberation is a controlled de-thickening of attention — from image, to sound, to a plenitude past form.",
+          "practice": ""
+        }
+      ]
+    },
+    {
+      "id": "heart-of-recognition",
+      "title": "The Heart of Recognition",
+      "level": "Intermediate",
+      "focus": "Pratyabhijñā: remembering you are the Consciousness you have been seeking",
+      "outcome": "Walk Kṣemarāja's twenty sūtras as one recognition: from the sovereign Consciousness that is the ground of all, down through its self-contraction into the small, bewildered self, to the turn (pratyabhijñā) that reclaims your authorship — and out into a life lived as the Perfect 'I'.",
+      "description": "An initiatic descent-and-return through the Pratyabhijñāhṛdayam (the Heart of Recognition), sūtra by sūtra.",
+      "estimatedSessions": "9 gates · ~20 min each",
+      "steps": [
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_001",
+          "keyIdea": "Consciousness is not a possession you have; it is the sovereign ground in which you and your world arise.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_002",
+          "keyIdea": "The world is not made out of other stuff; it is Consciousness freely appearing as a world, upon itself.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_004",
+          "keyIdea": "The small self is not a fragment or a machine but the whole Consciousness seen through a narrowed aperture.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_005",
+          "keyIdea": "Mind is not other than awareness; it is awareness contracted around objects and turned away from itself.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_012",
+          "keyIdea": "Bondage is not sin or matter but forgotten authorship: you author your experience and credit it to the outside.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_013",
+          "keyIdea": "Recognition is not gaining something new, but the mind turning inward and discovering it was always Consciousness.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_014",
+          "keyIdea": "Awareness never goes out; even in the deepest forgetting, the Fire of Consciousness keeps quietly burning.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_017",
+          "keyIdea": "The 'middle' — the gap between breaths, thoughts, and states — is where contraction releases and the source shines through.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_020",
+          "keyIdea": "The end is liberation while living: standing knowingly as the Consciousness you are, wielding your own powers in ordinary life.",
+          "practice": ""
+        }
+      ]
+    },
+    {
+      "id": "three-doors-of-shiva",
+      "title": "The Three Doors",
+      "level": "Intermediate",
+      "focus": "The Śiva Sūtra's three upāyas: sudden recognition, the work of energy, the embodied path",
+      "outcome": "Walk the Śiva Sūtra as it was structured — three doors (upāyas) into one recognition: the sudden door of pure awareness (śāmbhava), the door of mind and effort (śākta), and the embodied door of breath, time, and ordinary life (āṇava).",
+      "description": "A path through Vasugupta's Śiva Sūtra, gate by gate, following its three sections as three means of awakening.",
+      "estimatedSessions": "9 gates · ~20 min each",
+      "steps": [
+        {
+          "id": "",
+          "title": "",
+          "passageId": "siva_sutra.ss_i_1",
+          "keyIdea": "Consciousness is not something the Self has; it is what the Self is — already present as this very awareness.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "siva_sutra.ss_i_2",
+          "keyIdea": "Limited, fixed knowledge is the very mechanism that fences open awareness into a defended identity.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "siva_sutra.ss_i_5",
+          "keyIdea": "Recognition has an energetic form: the spontaneous surge of vivid aliveness is the absolute briefly self-aware.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "siva_sutra.ss_ii_1",
+          "keyIdea": "The mind need not be silenced to awaken; turned toward its source, thought itself becomes mantra.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "siva_sutra.ss_ii_2",
+          "keyIdea": "On the path of energy, sustained willing effort is not the obstacle to awakening — it is what accomplishes it.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "siva_sutra.ss_ii_3",
+          "keyIdea": "The 'secret of mantra' is knowledge becoming embodied — insight that has passed from idea into lived substance.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "siva_sutra.ss_iii_1",
+          "keyIdea": "The embodied path begins by reclaiming the ordinary, limited mind itself as a form of the Self — not the enemy.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "siva_sutra.ss_iii_11",
+          "keyIdea": "On the embodied path, time is not the enemy but the medium in which repeated return ripens into stable abiding.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "siva_sutra.ss_iii_12",
+          "keyIdea": "Fulfilment is not gained but uncovered: remove the confusion and what was always complete simply shows.",
+          "practice": ""
+        }
+      ]
+    },
+    {
+      "id": "the-112-doorways",
+      "title": "The 112 Doorways",
+      "level": "Intermediate",
+      "focus": "Vijñāna Bhairava Tantra: the breath, the senses, and the gaps as gates into Bhairava",
+      "outcome": "Walk ten of the 112 dhāraṇās as living doorways — breath, sound, void, delight, and the seam between states — until you can find the open gate of awareness in any ordinary moment.",
+      "description": "An initiatic path through the Vijñāna Bhairava Tantra: ten dhāraṇās, gathered into six gates, each a doorway from ordinary experience straight into Bhairava.",
+      "estimatedSessions": "10 doorways · ~15 min each",
+      "steps": [
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_001",
+          "keyIdea": "The breath is not yours to perform; it is the Goddess uttering herself as you — the mantra you never have to start.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_002",
+          "keyIdea": "Between the out-breath and the in-breath is a still hinge; rest there and śakti, no longer travelling, reveals herself.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_015",
+          "keyIdea": "Sound is bracketed by silence; attend to where it begins and where it ends and the void itself opens.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_056",
+          "keyIdea": "Given nothing to land on, the gaze falls back into its own objectless ground — and that ground is Bhairava.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_046",
+          "keyIdea": "In any genuine delight, drop the object and rest in the rapture itself — that opening is consciousness tasting its own bliss.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_069",
+          "keyIdea": "In the gap where no desire or thought arises, what remains awake is your unconditioned nature — recognized, not concluded.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_034",
+          "keyIdea": "Between any two states there is a seam; rest in the interval rather than the contents and the undivided ground appears.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_047",
+          "keyIdea": "At the lip of sleep, the senses have released the world but awareness hasn't gone dark — float there and the wakeful Fourth shows.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_088",
+          "keyIdea": "Since Śiva is all-pervading, wherever the mind goes it lands in Śiva — there is no location outside the gate.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "vijnana_bhairava.yukti_112",
+          "keyIdea": "You do not master 112 methods; you let one of them master you — for each door opens onto the identical boundless room.",
+          "practice": ""
+        }
+      ]
+    },
+    {
+      "id": "the-one-and-the-many",
+      "title": "The One and the Many",
+      "level": "Advanced",
+      "focus": "Plotinus, Kashmir Śaivism, and the Tao on emanation, descent, and the return",
+      "outcome": "Trace a single arc across three traditions — how the One overflows into the many, how the soul forgets and descends, and how it turns and climbs home — until you can read your own life as that very movement.",
+      "description": "A comparative path through Plotinus' Enneads, the Pratyabhijñāhṛdayam, and the Tao Te Ching: one story of emanation and return, told in three voices.",
+      "estimatedSessions": "8 gates · ~20 min each",
+      "steps": [
+        {
+          "id": "",
+          "title": "",
+          "passageId": "tao_te_ching.ttc_md_001",
+          "keyIdea": "The Source of all things cannot be a thing or a name; it is the nameless ground from which all names arise.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "plotinus_enneads.enn_v_1_06",
+          "keyIdea": "The One does not diminish by creating; it overflows from sheer fullness, and each level is born gazing back at its source.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "tao_te_ching.ttc_md_003",
+          "keyIdea": "The many are real yet never other than the One — the ten thousand things are the Source arising, already on their way back.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "plotinus_enneads.enn_v_1_01",
+          "keyIdea": "Bondage is not exile imposed from outside but a self-forgetting — the soul, drunk on separate selfhood, mislaid the memory of its Source.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_004",
+          "keyIdea": "The limited self is not separate from the One but the One at a contracted aperture — so the return is a widening, not a journey.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_013",
+          "keyIdea": "The return adds nothing; it reverses direction — the same mind that wandered out, recognizing its authorship, becomes the vehicle home.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "plotinus_enneads.enn_i_6_09",
+          "keyIdea": "You cannot see the One as an object; you become like it and see by being — the ascent is subtraction until you yourself are light.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "",
+          "passageId": "pratyabhijnahrdayam.phr_020",
+          "keyIdea": "The return ends not in reaching a far One but in recognizing your inmost 'I' as the One — the alone united with the Alone, lived while embodied.",
+          "practice": ""
+        }
+      ]
+    },
+    {
+      "id": "action-without-contraction",
+      "title": "Action Without Contraction",
+      "level": "Beginner",
+      "focus": "Duty, control, and non-possessive action",
+      "outcome": "Learn to act clearly and wholeheartedly when life is uncertain, morally complex, or emotionally charged — without seizing up around the outcome.",
+      "description": "Move from moral overwhelm into clear action, non-possessiveness, and grounded responsibility.",
+      "estimatedSessions": "6 sessions · ~20 min each",
+      "steps": [
+        {
+          "id": "meet-the-crisis",
+          "title": "Let the crisis become honest",
+          "passageId": "bhagavad_gita.bg_01_47",
+          "keyIdea": "Confusion faced honestly is sacred data, not a verdict on your worth.",
+          "practice": ""
+        },
+        {
+          "id": "separate-governance",
+          "title": "Separate what is yours to govern",
+          "passageId": "epictetus_works.epi_enc_001",
+          "keyIdea": "Locate your effort only where your power actually reaches: your own judgment and intention.",
+          "practice": ""
+        },
+        {
+          "id": "release-ownership",
+          "title": "Act without possessiveness",
+          "passageId": "bhagavad_gita.bg_02_47",
+          "keyIdea": "Pour yourself fully into the action; let go of ownership of its result.",
+          "practice": ""
+        },
+        {
+          "id": "renounce-within-action",
+          "title": "Renounce inwardly, not avoidantly",
+          "passageId": "bhagavad_gita.bg_05_10",
+          "keyIdea": "Renounce the grasping, not the engagement. Inner freedom, not outer escape.",
+          "practice": ""
+        },
+        {
+          "id": "steady-the-mind",
+          "title": "Return attention to steadiness",
+          "passageId": "bhagavad_gita.bg_06_35",
+          "keyIdea": "Mastery of mind is the patient, repeated return of attention — not a one-time conquest.",
+          "practice": ""
+        },
+        {
+          "id": "surrender-with-clarity",
+          "title": "Surrender without collapsing",
+          "passageId": "bhagavad_gita.bg_18_66",
+          "keyIdea": "Surrender is the lucid release that follows clarity — not the collapse that precedes it.",
+          "practice": ""
+        }
+      ]
+    },
+    {
+      "id": "recognizing-awareness",
+      "title": "Recognizing Awareness",
+      "level": "Intermediate",
+      "focus": "Witnessing, contraction, and recognition",
+      "outcome": "Learn to notice awareness itself, see how it contracts into a limited identity, and return — repeatedly — to recognition in the middle of ordinary life.",
+      "description": "Learn the contemplative movement from identification with experience to recognition of awareness itself.",
+      "estimatedSessions": "6 sessions · ~25 min each",
+      "steps": [
+        {
+          "id": "name-the-ground",
+          "title": "Name the ground",
+          "passageId": "siva_sutra.ss_i_1",
+          "keyIdea": "Awareness is not a thing you have; it is the ground in which everything, including 'you,' appears.",
+          "practice": ""
+        },
+        {
+          "id": "see-knowledge-bind",
+          "title": "Notice how knowledge binds",
+          "passageId": "siva_sutra.ss_i_2",
+          "keyIdea": "Fixed self-knowledge is the mechanism by which open awareness contracts into a defended identity.",
+          "practice": ""
+        },
+        {
+          "id": "recognize-the-witness",
+          "title": "Recognize the witness",
+          "passageId": "astavakra_gita.asg_1_7",
+          "keyIdea": "You are the witnessing awareness, not the changing experience it observes.",
+          "practice": ""
+        },
+        {
+          "id": "learn-contraction",
+          "title": "Map contraction",
+          "passageId": "pratyabhijnahrdayam.phr_004",
+          "keyIdea": "The limited self is not an error but a contraction of awareness — and what contracts can expand.",
+          "practice": ""
+        },
+        {
+          "id": "taste-the-surge",
+          "title": "Feel the surge of awareness",
+          "passageId": "siva_sutra.ss_i_5",
+          "keyIdea": "Recognition has a felt, energetic form: the spontaneous surge of aliveness at the seams of experience.",
+          "practice": ""
+        },
+        {
+          "id": "",
+          "title": "Stabilize recognition in ordinary life",
+          "passageId": "pratyabhijnahrdayam.phr_020",
+          "keyIdea": "Stable recognition is frequent, ordinary return — not a rare, dramatic peak.",
+          "practice": ""
+        }
+      ]
+    },
+    {
+      "id": "letting-go-death-emptiness",
+      "title": "Letting Go, Death, and Emptiness",
+      "level": "Advanced",
+      "focus": "Impermanence, emptiness, and fearless release",
+      "outcome": "Learn to practice with death, silence, absence, and breath so that letting go becomes fearless and tender rather than grim or avoidant.",
+      "description": "Train with impermanence, emptiness, and non-grasping so practice becomes fearless and tender.",
+      "estimatedSessions": "6 sessions · ~25 min each",
+      "steps": [
+        {
+          "id": "",
+          "title": "Practice before death arrives",
+          "passageId": "phaedo_plato.phaedo_md_001",
+          "keyIdea": "To 'practice dying' is to release false identifications now, so you meet loss with composure rather than panic.",
+          "practice": ""
+        },
+        {
+          "id": "see-the-unseen",
+          "title": "Trust what is not immediately visible",
+          "passageId": "phaedo_plato.phaedo_md_003",
+          "keyIdea": "Maturity is learning to weigh the unseen — values, intention, the real — against the loud evidence of the senses.",
+          "practice": ""
+        },
+        {
+          "id": "empty-to-receive",
+          "title": "Become empty enough to receive",
+          "passageId": "the_book_of_chuang_tzu.zhuangzi_md_004",
+          "keyIdea": "Emptiness is not deprivation; it is the openness that lets you truly receive what is there.",
+          "practice": ""
+        },
+        {
+          "id": "use-absence",
+          "title": "Discover the use of absence",
+          "passageId": "tao_te_ching.ttc_md_002",
+          "keyIdea": "Absence is functional, not deficient — the gap is what makes the whole thing work.",
+          "practice": ""
+        },
+        {
+          "id": "enter-the-gap",
+          "title": "Enter the gap in the breath",
+          "passageId": "vijnana_bhairava.yukti_001",
+          "keyIdea": "The pause between breaths is a direct, always-available threshold of contentless presence.",
+          "practice": ""
+        },
+        {
+          "id": "final-composure",
+          "title": "Let composure become an offering",
+          "passageId": "phaedo_plato.phaedo_md_007",
+          "keyIdea": "A life rehearsed in release matures into composure that becomes a gift to others.",
+          "practice": ""
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "id": "the-gap",
+      "title": "The Gap",
+      "subtitle": "The madhya — the still hinge between every two states",
+      "thesis": "The opening is not a mood. It is a method: rest in the seam between any two states.",
+      "practice": "Three times today, catch a seam — between two breaths, two thoughts, or two tasks — and rest there for one unhurried beat before the next thing begins.",
+      "integration": "You can find a seam in ordinary experience and treat it as the destination, not as dead time to skip.",
+      "steps": [
+        {
+          "id": "gap-vbt-center",
+          "tradition": "Vijñāna Bhairava",
+          "insight": "Between out-breath and in-breath, śakti rests in the Center.",
+          "passageId": "vijnana_bhairava.yukti_002"
+        },
+        {
+          "id": "gap-vbt-seam",
+          "tradition": "Vijñāna Bhairava",
+          "insight": "Between any two cognitions, take refuge in the seam.",
+          "passageId": "vijnana_bhairava.yukti_034"
+        },
+        {
+          "id": "gap-phr-middle",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "Unfold the middle — bliss hides in the gap of the breath.",
+          "passageId": "pratyabhijnahrdayam.phr_017"
+        },
+        {
+          "id": "gap-mandukya",
+          "tradition": "Vijñāna Bhairava · turīya",
+          "insight": "At the lip of sleep — the wakeful Fourth shows.",
+          "passageId": "vijnana_bhairava.yukti_047"
+        },
+        {
+          "id": "gap-tao-absence",
+          "tradition": "Tao Te Ching",
+          "insight": "The hollow of the vessel is what holds the tea.",
+          "passageId": "tao_te_ching.ttc_md_002"
+        },
+        {
+          "id": "gap-zhuangzi",
+          "tradition": "Zhuangzi",
+          "insight": "Empty the heart-mind enough to hear what is actually there.",
+          "passageId": "the_book_of_chuang_tzu.zhuangzi_md_004"
+        },
+        {
+          "id": "gap-letting-go-breath",
+          "tradition": "Letting Go path · breath",
+          "insight": "Enter the gap in the breath — full, not empty.",
+          "passageId": "vijnana_bhairava.yukti_001"
+        }
+      ]
+    },
+    {
+      "id": "becoming-light",
+      "title": "Becoming Light",
+      "subtitle": "You cannot see the sun unless you have first become sunlike",
+      "thesis": "The Source is not grasped as an object. You see it by resemblance — by becoming light.",
+      "practice": "Once today, set down one excessive thing — a grasping, a performance, a haze — and notice what brightness was already under it. Do not add light. Subtract the cover.",
+      "integration": "You can tell the difference between chasing a vision and becoming like what you seek.",
+      "steps": [
+        {
+          "id": "light-plotinus",
+          "tradition": "Plotinus",
+          "insight": "Never cease chiselling your statue until virtue shines.",
+          "passageId": "plotinus_enneads.enn_i_6_09"
+        },
+        {
+          "id": "light-ss",
+          "tradition": "Śiva Sūtra",
+          "insight": "The surge of awareness itself is Bhairava.",
+          "passageId": "siva_sutra.ss_i_5"
+        },
+        {
+          "id": "light-yh-flash",
+          "tradition": "Yoginīhṛdaya",
+          "insight": "The world springs when the Goddess sees her own radiance.",
+          "passageId": "yoginihrdaya.yh_006"
+        },
+        {
+          "id": "light-yh",
+          "tradition": "Yoginīhṛdaya",
+          "insight": "Re-find the whole diagram in the body; climb to the partless summit.",
+          "passageId": "yoginihrdaya.yh_011"
+        },
+        {
+          "id": "light-witness",
+          "tradition": "Aṣṭāvakra",
+          "insight": "You are the bird that watches — not the one that must become sun.",
+          "passageId": "astavakra_gita.asg_1_7"
+        },
+        {
+          "id": "light-fire",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "The Fire of Consciousness never went out — even under the forgetting.",
+          "passageId": "pratyabhijnahrdayam.phr_014"
+        }
+      ]
+    },
+    {
+      "id": "emanation-return",
+      "title": "Emanation & Return",
+      "subtitle": "The One overflows into the many — and the many remember",
+      "thesis": "The many are the One going forth; the return adds nothing — it reverses direction.",
+      "practice": "Once today, catch attention pouring outward. Reverse it — not to acquire a state, only to rest in the awareness that was doing the pouring.",
+      "integration": "You can read a stretch of your own life as overflow, forgetting, and return — without treating the many as a mistake.",
+      "steps": [
+        {
+          "id": "er-nameless",
+          "tradition": "Tao Te Ching",
+          "insight": "The dao that can be named is not the enduring dao.",
+          "passageId": "tao_te_ching.ttc_md_001"
+        },
+        {
+          "id": "er-plotinus",
+          "tradition": "Plotinus",
+          "insight": "The One overflows; Intellect turns back and beholds its source.",
+          "passageId": "plotinus_enneads.enn_v_1_06"
+        },
+        {
+          "id": "er-phr",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "She unfolds the universe on her own canvas, by free will.",
+          "passageId": "pratyabhijnahrdayam.phr_002"
+        },
+        {
+          "id": "er-tao",
+          "tradition": "Tao Te Ching",
+          "insight": "The ten thousand things arise together — I watch them return.",
+          "passageId": "tao_te_ching.ttc_md_003"
+        },
+        {
+          "id": "er-forgetting",
+          "tradition": "Plotinus",
+          "insight": "The soul forgot the Father through self-will — not exile.",
+          "passageId": "plotinus_enneads.enn_v_1_01"
+        },
+        {
+          "id": "er-turn",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "Recognition of authorship turns the mind into the vehicle home.",
+          "passageId": "pratyabhijnahrdayam.phr_013"
+        },
+        {
+          "id": "er-union",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "The alone to the Alone — liberation lived while embodied.",
+          "passageId": "pratyabhijnahrdayam.phr_020"
+        }
+      ]
+    },
+    {
+      "id": "recognition",
+      "title": "Recognition",
+      "subtitle": "What was forgotten is remembered — not acquired",
+      "thesis": "Liberation is recognition of what was never missing — not the gaining of a new state.",
+      "practice": "When you catch yourself seeking a better state, ask once: 'What is already aware of this seeking?' Rest there. Do not add a technique on top.",
+      "integration": "You can distinguish remembering from acquiring — and catch spiritual knowledge when it hardens into another identity.",
+      "steps": [
+        {
+          "id": "rec-ss",
+          "tradition": "Śiva Sūtra",
+          "insight": "Consciousness is the Self — not a possession, the ground.",
+          "passageId": "siva_sutra.ss_i_1"
+        },
+        {
+          "id": "rec-knowledge-binds",
+          "tradition": "Śiva Sūtra",
+          "insight": "Knowledge is bondage when it fences the open into 'I am this.'",
+          "passageId": "siva_sutra.ss_i_2"
+        },
+        {
+          "id": "rec-bondage",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "Bondage is forgotten authorship of a play you yourself are staging.",
+          "passageId": "pratyabhijnahrdayam.phr_012"
+        },
+        {
+          "id": "rec-phr",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "Recognition of authorship turns the mind into the vehicle home.",
+          "passageId": "pratyabhijnahrdayam.phr_013"
+        },
+        {
+          "id": "rec-who",
+          "tradition": "Vijñāna Bhairava",
+          "insight": "When neither desire nor thought arises — who am I?",
+          "passageId": "vijnana_bhairava.yukti_069"
+        },
+        {
+          "id": "rec-vbt",
+          "tradition": "Vijñāna Bhairava",
+          "insight": "One doorway, fully entered — you become Bhairava.",
+          "passageId": "vijnana_bhairava.yukti_112"
+        }
+      ]
+    },
+    {
+      "id": "living-breath",
+      "title": "The Living Breath",
+      "subtitle": "Haṃsa — the Goddess uttering herself as you",
+      "thesis": "The breath is already a teaching. You do not start it; you notice who is speaking as it.",
+      "practice": "Ten breaths. On each turn, rest one beat. Do not hold or control. Just notice the speech that is already happening as you.",
+      "integration": "You can treat one ordinary breath as address — and return attention without treating wandering as failure.",
+      "steps": [
+        {
+          "id": "breath-vbt-utterance",
+          "tradition": "Vijñāna Bhairava",
+          "insight": "The breath is Her speech — haṃsa you never have to begin.",
+          "passageId": "vijnana_bhairava.yukti_001"
+        },
+        {
+          "id": "breath-vbt-turn",
+          "tradition": "Vijñāna Bhairava",
+          "insight": "At the turn of the breath, śakti reveals herself in the Center.",
+          "passageId": "vijnana_bhairava.yukti_002"
+        },
+        {
+          "id": "breath-edge-sound",
+          "tradition": "Vijñāna Bhairava",
+          "insight": "The silence at the birth and death of a sound is the same hinge.",
+          "passageId": "vijnana_bhairava.yukti_015"
+        },
+        {
+          "id": "breath-phr",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "Bliss of Consciousness through the unfoldment of the middle.",
+          "passageId": "pratyabhijnahrdayam.phr_017"
+        },
+        {
+          "id": "breath-gita",
+          "tradition": "Bhagavad Gītā",
+          "insight": "The mind is as hard to hold as the wind — mastery is the return.",
+          "passageId": "bhagavad_gita.bg_06_35"
+        },
+        {
+          "id": "breath-tao",
+          "tradition": "Tao Te Ching",
+          "insight": "Leave the hollow unused — that is what holds the tea.",
+          "passageId": "tao_te_ching.ttc_md_002"
+        }
+      ]
+    },
+    {
+      "id": "action-without-seizing",
+      "title": "Action Without Seizing",
+      "subtitle": "Act fully. Do not white-knuckle the fruit.",
+      "thesis": "Clear action is possible without contraction around the outcome — that is freedom, not indifference.",
+      "practice": "Choose one ordinary task. Offer the doing; release the result on the first out-breath. If anxiety returns, come back to the task, not to the fantasy of managing the universe.",
+      "integration": "You can throw yourself into an action and notice — then loosen — the grip on how it turns out.",
+      "steps": [
+        {
+          "id": "act-crisis",
+          "tradition": "Bhagavad Gītā",
+          "insight": "The path begins in being stuck — the crisis is the doorway.",
+          "passageId": "bhagavad_gita.bg_01_47"
+        },
+        {
+          "id": "act-govern",
+          "tradition": "Epictetus",
+          "insight": "Freedom is trained by locating effort only where power reaches.",
+          "passageId": "epictetus_works.epi_enc_001"
+        },
+        {
+          "id": "act-fruit",
+          "tradition": "Bhagavad Gītā",
+          "insight": "You have a right to the action, never to its fruits.",
+          "passageId": "bhagavad_gita.bg_02_47"
+        },
+        {
+          "id": "act-renounce",
+          "tradition": "Bhagavad Gītā",
+          "insight": "Renounce the grasping, not the engagement.",
+          "passageId": "bhagavad_gita.bg_05_10"
+        },
+        {
+          "id": "act-zhuangzi",
+          "tradition": "Zhuangzi",
+          "insight": "Empty the heart-mind and you can finally hear the situation.",
+          "passageId": "the_book_of_chuang_tzu.zhuangzi_md_004"
+        },
+        {
+          "id": "act-surrender",
+          "tradition": "Bhagavad Gītā",
+          "insight": "Surrender is lucid release after clarity — not collapse before it.",
+          "passageId": "bhagavad_gita.bg_18_66"
+        }
+      ]
+    },
+    {
+      "id": "death-as-teacher",
+      "title": "Death as Teacher",
+      "subtitle": "Rehearse release now, so loss does not find you unpracticed",
+      "thesis": "Death is not only an ending. It is a discipline of loosening identification — and its fruit is composure offered to others.",
+      "practice": "Name one thing you treat as if it could make you permanent. Ask: if this changed, what in you would still be aware of the change? Rest there without forcing an answer.",
+      "integration": "You can practice a small release today and recognize composure as something you leave in a room, not something you hoard.",
+      "steps": [
+        {
+          "id": "death-socrates",
+          "tradition": "Plato · Phaedo",
+          "insight": "Philosophy is rehearsal for dying — loosening what is already perishing.",
+          "passageId": "phaedo_plato.phaedo_md_001"
+        },
+        {
+          "id": "death-unseen",
+          "tradition": "Plato · Phaedo",
+          "insight": "The soul has affinity with what is invisible — weight the unseen rightly.",
+          "passageId": "phaedo_plato.phaedo_md_003"
+        },
+        {
+          "id": "death-empty",
+          "tradition": "Zhuangzi",
+          "insight": "Fast the heart-mind so you can receive what death and loss actually bring.",
+          "passageId": "the_book_of_chuang_tzu.zhuangzi_md_004"
+        },
+        {
+          "id": "death-absence",
+          "tradition": "Tao Te Ching",
+          "insight": "The gap is what makes the vessel work.",
+          "passageId": "tao_te_ching.ttc_md_002"
+        },
+        {
+          "id": "death-breath",
+          "tradition": "Vijñāna Bhairava",
+          "insight": "Each pause between breaths is a death-and-rebirth you can ride.",
+          "passageId": "vijnana_bhairava.yukti_001"
+        },
+        {
+          "id": "death-composure",
+          "tradition": "Plato · Phaedo",
+          "insight": "A life rehearsed in release leaves composure as a gift in the room.",
+          "passageId": "phaedo_plato.phaedo_md_007"
+        }
+      ]
+    },
+    {
+      "id": "the-witness",
+      "title": "The Witness",
+      "subtitle": "You are the one who sees — not the changing seen",
+      "thesis": "The witness is ordinary awareness recognized, not a special state attained — and it remains through waking, the lip of sleep, and contraction.",
+      "practice": "Whatever you feel in this minute, ask once: 'Who is aware of this?' Do not answer in words. Rest as that, and let the feeling continue at the edge.",
+      "integration": "You can, at will, recognize yourself as the one aware of an experience rather than as the experience — including when awareness has narrowed.",
+      "steps": [
+        {
+          "id": "wit-ground",
+          "tradition": "Śiva Sūtra",
+          "insight": "Consciousness is the Self — the ground, not a function you own.",
+          "passageId": "siva_sutra.ss_i_1"
+        },
+        {
+          "id": "wit-bind",
+          "tradition": "Śiva Sūtra",
+          "insight": "Limited knowledge is how the witness gets mistaken for a character.",
+          "passageId": "siva_sutra.ss_i_2"
+        },
+        {
+          "id": "wit-astavakra",
+          "tradition": "Aṣṭāvakra",
+          "insight": "You are the bird that watches, not the bird that eats.",
+          "passageId": "astavakra_gita.asg_1_7"
+        },
+        {
+          "id": "wit-contraction",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "The small self is awareness voluntarily narrowed.",
+          "passageId": "pratyabhijnahrdayam.phr_004"
+        },
+        {
+          "id": "wit-surge",
+          "tradition": "Śiva Sūtra",
+          "insight": "Recognition also arrives as a surge of aliveness.",
+          "passageId": "siva_sutra.ss_i_5"
+        },
+        {
+          "id": "wit-sleep",
+          "tradition": "Vijñāna Bhairava",
+          "insight": "At the lip of sleep, awareness remains while objects fall away.",
+          "passageId": "vijnana_bhairava.yukti_047"
+        },
+        {
+          "id": "wit-ordinary",
+          "tradition": "Pratyabhijñāhṛdayam",
+          "insight": "Stable recognition is frequent return in ordinary life — not a peak.",
+          "passageId": "pratyabhijnahrdayam.phr_020"
+        }
+      ]
+    }
+  ]
+}

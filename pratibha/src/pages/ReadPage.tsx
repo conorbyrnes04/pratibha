@@ -1,28 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { fetchPassages, fetchVerse, getLayer, type Passage } from "../lib/corpus";
-
-// Pratibha manuscript palette (amber/gold on deep dark).
-const C = {
-  bg: "#0a0a0f",
-  card: "#14141f",
-  cardAlt: "#1a1a2e",
-  gold: "#f0c979",
-  goldMuted: "#c9a86a",
-  read: "#e8e4dc",
-  script: "#efe8d8",
-  muted: "#9a958c",
-  faint: "#6c6862",
-  line: "#2a2a3a",
-};
-
-const SERIF = "'Iowan Old Style', 'Palatino', 'Georgia', serif";
-const SCRIPT = "'Noto Serif Devanagari', 'Noto Serif SC', 'Noto Serif', 'Georgia', serif";
+import React, { useEffect, useMemo, useState } from "react";
+import {
+  fetchPassages,
+  fetchVerse,
+  getLayer,
+  siblingsInCollection,
+  type Passage,
+} from "../lib/corpus";
+import { C, SCRIPT, SERIF } from "../lib/theme";
 
 function stripBold(s: string): string {
   return s.replace(/\*\*/g, "").trim();
 }
 
-// key_terms / resonances bodies are lines shaped like `**term** — body`.
 type TermEntry = { term: string; body: string };
 function parseTerms(text: string): TermEntry[] {
   return text
@@ -59,7 +48,49 @@ function TermList({ entries }: { entries: TermEntry[] }) {
   );
 }
 
-function Detail({ passage, onBack }: { passage: Passage; onBack: () => void }) {
+function Chip({
+  label,
+  active,
+  onTap,
+}: {
+  label: string;
+  active?: boolean;
+  onTap: () => void;
+}) {
+  return (
+    <view
+      bindtap={onTap}
+      style={{
+        paddingTop: 6,
+        paddingBottom: 6,
+        paddingLeft: 12,
+        paddingRight: 12,
+        backgroundColor: active ? C.gold : C.cardAlt,
+        borderRadius: 14,
+      }}
+    >
+      <text style={{ color: active ? "#000" : C.goldMuted, fontSize: 12 }}>{label}</text>
+    </view>
+  );
+}
+
+export function PassageDetail({
+  passage,
+  onBack,
+  backLabel = "← Library",
+  onPrev,
+  onNext,
+  prevTitle,
+  nextTitle,
+}: {
+  passage: Passage;
+  onBack: () => void;
+  backLabel?: string;
+  onPrev?: () => void;
+  onNext?: () => void;
+  prevTitle?: string;
+  nextTitle?: string;
+}) {
   const original = getLayer(passage, "original");
   const iast = getLayer(passage, "iast");
   const translation = getLayer(passage, "translation");
@@ -76,7 +107,7 @@ function Detail({ passage, onBack }: { passage: Passage; onBack: () => void }) {
         <view
           bindtap={onBack}
           style={{
-            marginBottom: 22,
+            marginBottom: 18,
             paddingTop: 8,
             paddingBottom: 8,
             paddingLeft: 16,
@@ -86,7 +117,7 @@ function Detail({ passage, onBack }: { passage: Passage; onBack: () => void }) {
             alignSelf: "flex-start",
           }}
         >
-          <text style={{ color: C.gold, fontSize: 14 }}>← Library</text>
+          <text style={{ color: C.gold, fontSize: 14 }}>{backLabel}</text>
         </view>
 
         {passage.collection ? (
@@ -162,15 +193,53 @@ function Detail({ passage, onBack }: { passage: Passage; onBack: () => void }) {
         ) : null}
 
         {themes.length ? (
-          <view style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, marginTop: 4 }}>
+          <view style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, marginTop: 4, marginBottom: 20 }}>
             {themes.map((t) => (
               <view
                 key={t}
-                style={{ paddingTop: 4, paddingBottom: 4, paddingLeft: 10, paddingRight: 10, backgroundColor: C.cardAlt, borderRadius: 12 }}
+                style={{
+                  paddingTop: 4,
+                  paddingBottom: 4,
+                  paddingLeft: 10,
+                  paddingRight: 10,
+                  backgroundColor: C.cardAlt,
+                  borderRadius: 12,
+                }}
               >
                 <text style={{ color: C.goldMuted, fontSize: 12 }}>{t}</text>
               </view>
             ))}
+          </view>
+        ) : null}
+
+        {onPrev || onNext ? (
+          <view style={{ flexDirection: "row", justifyContent: "space-between", gap: 12, marginTop: 8 }}>
+            <view
+              bindtap={onPrev}
+              style={{
+                flex: 1,
+                padding: 12,
+                backgroundColor: C.card,
+                borderRadius: 8,
+                opacity: onPrev ? 1 : 0.35,
+              }}
+            >
+              <text style={{ color: C.faint, fontSize: 11, marginBottom: 4 }}>Previous</text>
+              <text style={{ color: C.gold, fontSize: 13 }}>{prevTitle || "—"}</text>
+            </view>
+            <view
+              bindtap={onNext}
+              style={{
+                flex: 1,
+                padding: 12,
+                backgroundColor: C.card,
+                borderRadius: 8,
+                opacity: onNext ? 1 : 0.35,
+              }}
+            >
+              <text style={{ color: C.faint, fontSize: 11, marginBottom: 4, textAlign: "right" }}>Next</text>
+              <text style={{ color: C.gold, fontSize: 13, textAlign: "right" }}>{nextTitle || "—"}</text>
+            </view>
           </view>
         ) : null}
       </view>
@@ -184,11 +253,13 @@ export function ReadPage() {
   const [loading, setLoading] = useState(true);
   const [detailLoading, setDetailLoading] = useState(false);
   const [error, setError] = useState("");
+  const [query, setQuery] = useState("");
+  const [collection, setCollection] = useState("all");
 
   useEffect(() => {
     async function loadVerses() {
       try {
-        setVerses(await fetchPassages(40));
+        setVerses(await fetchPassages());
       } catch (err) {
         console.error("Failed to load verses:", err);
         setError("Could not reach the corpus server. Start FastAPI on port 8000.");
@@ -199,14 +270,31 @@ export function ReadPage() {
     void loadVerses();
   }, []);
 
+  const collections = useMemo(() => {
+    const set = new Set<string>();
+    for (const v of verses) {
+      if (v.collection?.trim()) set.add(v.collection.trim());
+    }
+    return [...set].sort((a, b) => a.localeCompare(b));
+  }, [verses]);
+
+  const filtered = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    return verses.filter((v) => {
+      if (collection !== "all" && (v.collection || "").trim() !== collection) return false;
+      if (!needle) return true;
+      const hay = [v.title, v.collection, v.section, getLayer(v, "translation")].join(" ").toLowerCase();
+      return hay.includes(needle);
+    });
+  }, [verses, collection, query]);
+
   async function openVerse(v: Passage) {
     setDetailLoading(true);
     try {
-      // Pull the full unit (list payloads are slim / missing most layers).
       setDetail(await fetchVerse(v._id));
     } catch (err) {
       console.error("Failed to load verse:", err);
-      setDetail(v); // fall back to the slim list item
+      setDetail(v);
     } finally {
       setDetailLoading(false);
     }
@@ -221,19 +309,58 @@ export function ReadPage() {
   }
 
   if (detail) {
-    return <Detail passage={detail} onBack={() => setDetail(null)} />;
+    const siblings = siblingsInCollection(verses, detail.collection);
+    const idx = siblings.findIndex((v) => v._id === detail._id);
+    const prev = idx > 0 ? siblings[idx - 1] : null;
+    const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
+    return (
+      <PassageDetail
+        passage={detail}
+        onBack={() => setDetail(null)}
+        onPrev={prev ? () => void openVerse(prev) : undefined}
+        onNext={next ? () => void openVerse(next) : undefined}
+        prevTitle={prev?.title || prev?._id}
+        nextTitle={next?.title || next?._id}
+      />
+    );
   }
 
   return (
     <scroll-view style={{ flex: 1, backgroundColor: C.bg }}>
       <view style={{ padding: 22 }}>
-        <text style={{ color: C.gold, fontSize: 26, fontWeight: "bold", fontFamily: SERIF, marginBottom: 8 }}>Library</text>
-        <text style={{ color: C.muted, fontSize: 14, marginBottom: 22 }}>
-          {error || (detailLoading ? "Opening…" : "Browse the canonical collection")}
+        <text style={{ color: C.gold, fontSize: 26, fontWeight: "bold", fontFamily: SERIF, marginBottom: 8 }}>
+          Library
+        </text>
+        <text style={{ color: C.muted, fontSize: 14, marginBottom: 16 }}>
+          {error || (detailLoading ? "Opening…" : `${filtered.length} passages`)}
         </text>
 
+        <input
+          type="text"
+          value={query}
+          bindinput={(e: any) => setQuery(e.detail?.value ?? e.target?.value ?? "")}
+          placeholder="Search title or collection"
+          style={{
+            width: "100%",
+            padding: 10,
+            marginBottom: 14,
+            backgroundColor: C.card,
+            border: "1px solid #333",
+            borderRadius: 6,
+            color: "#fff",
+            fontSize: 14,
+          }}
+        />
+
+        <view style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, marginBottom: 18 }}>
+          <Chip label="All" active={collection === "all"} onTap={() => setCollection("all")} />
+          {collections.map((name) => (
+            <Chip key={name} label={name} active={collection === name} onTap={() => setCollection(name)} />
+          ))}
+        </view>
+
         <view style={{ gap: 12 }}>
-          {verses.map((verse) => {
+          {filtered.map((verse) => {
             const preview = getLayer(verse, "translation");
             return (
               <view
@@ -248,14 +375,24 @@ export function ReadPage() {
                 }}
               >
                 {verse.collection ? (
-                  <text style={{ color: C.faint, fontSize: 11, letterSpacing: 1, textTransform: "uppercase", marginBottom: 4 }}>
+                  <text
+                    style={{
+                      color: C.faint,
+                      fontSize: 11,
+                      letterSpacing: 1,
+                      textTransform: "uppercase",
+                      marginBottom: 4,
+                    }}
+                  >
                     {verse.collection}
                   </text>
                 ) : null}
                 <text style={{ color: C.gold, fontSize: 16, fontWeight: "600", fontFamily: SERIF, marginBottom: 6 }}>
                   {verse.title || verse._id}
                 </text>
-                {preview ? <text style={{ color: C.muted, fontSize: 14, lineHeight: 1.5 }}>{preview.slice(0, 200)}</text> : null}
+                {preview ? (
+                  <text style={{ color: C.muted, fontSize: 14, lineHeight: 1.5 }}>{preview.slice(0, 200)}</text>
+                ) : null}
               </view>
             );
           })}
