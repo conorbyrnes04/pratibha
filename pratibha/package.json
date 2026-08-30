@@ -1,0 +1,27 @@
+{
+  "name": "pratibha",
+  "version": "1.0.0",
+  "description": "Pratibha - Living Manuscript of World Wisdom (Lynx + Convex)",
+  "main": "src/App.tsx",
+  "scripts": {
+    "dev": "rspeedy dev",
+    "build": "rspeedy build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lynx-js/react": "^0.125.0",
+    "@lynx-js/react-rsbuild-plugin": "^0.19.1",
+    "@lynx-js/rspeedy": "^0.16.5",
+    "convex": "^1.45.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "typescript": "^6.0.3"
+  }
+}
