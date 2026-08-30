@@ -8,6 +8,16 @@ def slugify(value: str) -> str:
 
 # Canonical registry for all corpus collections and historical aliases.
 COLLECTION_ALIASES: dict[str, set[str]] = {
+    "eastman_soul_of_the_indian": {
+        "eastman_soul_of_the_indian",
+        "the_soul_of_the_indian",
+        "soul_of_the_indian",
+    },
+    "zitkala_sa_old_indian_legends": {
+        "zitkala_sa_old_indian_legends",
+        "old_indian_legends",
+    },
+    "yoruba_proverbs": {"yoruba_proverbs", "yoruba_proverbs_òwe", "yoruba_proverbs_owe"},
     "siva_sutra": {"siva_sutra", "shiva_sutra", "siva_sutras", "śiva_sūtra"},
     "vijnana_bhairava": {
         "vijnana_bhairava",
