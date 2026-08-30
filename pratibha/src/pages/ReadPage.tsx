@@ -409,7 +409,9 @@ export function ReadPage({ openVerseId }: { openVerseId?: string | null }) {
 
         <view style={{ gap: 12 }}>
           {filtered.map((verse) => {
-            const preview = getLayer(verse, "translation");
+            // Fall back to the original for English-authored works (Eastman,
+            // Zitkála-Šá) that carry no separate translation layer.
+            const preview = getLayer(verse, "translation") || getLayer(verse, "original");
             return (
               <view
                 key={verse._id}
