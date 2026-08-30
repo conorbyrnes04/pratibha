@@ -133,15 +133,9 @@ export function ShareComposer({ item }: { item: VerseItem }) {
 
   async function shareToInstagram(destination: "story" | "post") {
     setBusy(true);
+    const targetRatio: ShareAspectRatio = destination === "story" ? "story" : "post";
+    
     try {
-      const targetRatio: ShareAspectRatio = destination === "story" ? "story" : "post";
-      const prevRatio = aspectRatio;
-      
-      if (targetRatio !== prevRatio) {
-        setAspectRatio(targetRatio);
-        await new Promise(resolve => setTimeout(resolve, 100));
-      }
-
       const blob = await pngBlob();
       const fileName = `pratibha-${destination}-${item._id}.png`;
       const file = new File([blob], fileName, { type: "image/png" });
@@ -155,7 +149,6 @@ export function ShareComposer({ item }: { item: VerseItem }) {
 
       if (navigator.share && navigator.canShare?.({ files: [file] })) {
         await navigator.share({ files: [file], text: caption });
-        if (targetRatio !== prevRatio) setAspectRatio(prevRatio);
         return;
       }
 
@@ -184,8 +177,6 @@ export function ShareComposer({ item }: { item: VerseItem }) {
       } else {
         toast.success(`Image saved. Caption copied. Opening Instagram...`);
       }
-
-      if (targetRatio !== prevRatio) setAspectRatio(prevRatio);
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Could not share to Instagram.");
     } finally {
@@ -229,6 +220,27 @@ export function ShareComposer({ item }: { item: VerseItem }) {
             />
           </div>
           <div className="space-y-6">
+            <fieldset>
+              <legend className="passage-layer__label mb-3">Format</legend>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  className={`share-chip ${aspectRatio === "post" ? "share-chip--on" : ""}`}
+                  onClick={() => setAspectRatio("post")}
+                  aria-pressed={aspectRatio === "post"}
+                >
+                  Post (4:5)
+                </button>
+                <button
+                  type="button"
+                  className={`share-chip ${aspectRatio === "story" ? "share-chip--on" : ""}`}
+                  onClick={() => setAspectRatio("story")}
+                  aria-pressed={aspectRatio === "story"}
+                >
+                  Story (9:16)
+                </button>
+              </div>
+            </fieldset>
             <fieldset>
               <legend className="passage-layer__label mb-3">Mark</legend>
               <div className="flex flex-wrap gap-2">
@@ -320,18 +332,10 @@ export function ShareComposer({ item }: { item: VerseItem }) {
                 size="sm"
                 variant="secondary"
                 disabled={busy}
-                onClick={() => void shareToInstagram("story")}
+                onClick={() => void shareToInstagram(aspectRatio === "story" ? "story" : "post")}
               >
-                {busy ? "Making Story…" : "Instagram Story"}
+                {busy ? "Sharing…" : aspectRatio === "story" ? "Instagram Story" : "Instagram Post"}
               </Button>
-              <Button
-                type="button"
-                size="sm"
-                variant="secondary"
-                disabled={busy}
-                onClick={() => void shareToInstagram("post")}
-              >
-                {busy ? "Making Post…" : "Instagram Post"}
               </Button>
               <Button type="button" size="sm" disabled={busy} onClick={() => void share()}>
                 {busy ? "Making the page…" : "Share image"}
