@@ -1,7 +1,9 @@
 import Constants from "expo-constants";
 import type { ChatOptions, EditorialMaturity, Source, VerseItem } from "@shared/types";
+import { MOCK_VERSES, getMockDailyVerse } from "./mockData";
 
 let runtimeApiBase: string | null = null;
+let useMockData = false;
 
 export function isLocalhostApiBase(url: string): boolean {
   try {
@@ -14,6 +16,7 @@ export function isLocalhostApiBase(url: string): boolean {
 
 export function setApiBaseOverride(url: string | null): void {
   runtimeApiBase = url?.replace(/\/$/, "") || null;
+  useMockData = false; // Reset to try real API
 }
 
 export function getApiBase(): string {
@@ -30,23 +33,53 @@ function withMaturity(path: string, minMaturity?: EditorialMaturity | "all"): st
 }
 
 export async function getVerses(minMaturity?: EditorialMaturity | "all"): Promise<VerseItem[]> {
-  const res = await fetch(withMaturity("/verses", minMaturity));
-  if (!res.ok) throw new Error(`Failed to load verses (${res.status})`);
-  const data = await res.json();
-  return Array.isArray(data?.items) ? (data.items as VerseItem[]) : [];
+  if (useMockData) {
+    return MOCK_VERSES;
+  }
+  
+  try {
+    const res = await fetch(withMaturity("/verses", minMaturity));
+    if (!res.ok) throw new Error(`Failed to load verses (${res.status})`);
+    const data = await res.json();
+    return Array.isArray(data?.items) ? (data.items as VerseItem[]) : [];
+  } catch (error) {
+    console.log("API unavailable, using mock data");
+    useMockData = true;
+    return MOCK_VERSES;
+  }
 }
 
 export async function getVerse(id: string): Promise<VerseItem | null> {
-  const res = await fetch(`${getApiBase()}/verse/${encodeURIComponent(id)}`);
-  if (!res.ok) return null;
-  return (await res.json()) as VerseItem;
+  if (useMockData) {
+    return MOCK_VERSES.find(v => v._id === id) || null;
+  }
+  
+  try {
+    const res = await fetch(`${getApiBase()}/verse/${encodeURIComponent(id)}`);
+    if (!res.ok) return null;
+    return (await res.json()) as VerseItem;
+  } catch (error) {
+    console.log("API unavailable, checking mock data");
+    useMockData = true;
+    return MOCK_VERSES.find(v => v._id === id) || null;
+  }
 }
 
 export async function getDaily(minMaturity: EditorialMaturity | "all" = "publishable"): Promise<VerseItem | null> {
-  const res = await fetch(withMaturity("/daily", minMaturity));
-  if (!res.ok) return null;
-  const data = (await res.json()) as VerseItem;
-  return data?._id ? data : null;
+  if (useMockData) {
+    return getMockDailyVerse();
+  }
+  
+  try {
+    const res = await fetch(withMaturity("/daily", minMaturity));
+    if (!res.ok) throw new Error(`Failed to load daily verse (${res.status})`);
+    const data = (await res.json()) as VerseItem;
+    return data?._id ? data : null;
+  } catch (error) {
+    console.log("API unavailable, using mock daily verse");
+    useMockData = true;
+    return getMockDailyVerse();
+  }
 }
 
 export type HealthStatus = {

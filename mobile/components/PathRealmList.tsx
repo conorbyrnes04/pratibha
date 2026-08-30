@@ -100,7 +100,7 @@ export function PathRealmList({ selectedTrackId, onSelectTrack }: Props) {
                           {track.focus}
                         </PratibhaText>
                         <View style={[ui.progressTrack, { marginTop: 10 }]}>
-                          <View style={[ui.progressFill, { width: `${pct}%` }]} />
+                          <View style={[ui.progressFill, { width: pct + '%' }]} />
                         </View>
                         <PratibhaText variant="label" style={styles.statusLine}>
                           {complete

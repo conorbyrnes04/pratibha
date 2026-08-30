@@ -34,19 +34,22 @@ The mobile app uses the existing Web application client (ID starts with `9995452
 ## Build Configuration
 
 ### Update eas.json
-Before building, update the placeholder values in `mobile/eas.json`:
+Current configuration in `mobile/eas.json`:
 
 \`\`\`json
 "submit": {
   "production": {
     "ios": {
       "appleId": "conor@agniagama.com",
-      "ascAppId": "YOUR_APP_STORE_CONNECT_APP_ID",
-      "appleTeamId": "YOUR_APPLE_TEAM_ID"
+      "ascAppId": "placeholder",
+      "appleTeamId": "HKXSRXV4K5"
     }
   }
 }
 \`\`\`
+
+**Before first submission**, update:
+- `ascAppId`: Replace `"placeholder"` with the App ID from App Store Connect (found after creating the app record)
 
 ### Build Commands
 

@@ -155,7 +155,7 @@ export default function PrivacyPage() {
 
         <section className="border-t border-border pt-8 mt-12">
           <p className="text-sm text-muted-foreground">
-            Pratibha is developed and maintained by Agni Agama. This privacy policy applies to 
+            Pratibha is developed and maintained by Ape Kode LLC. This privacy policy applies to 
             both the web application at pratibha.agniagama.com and the iOS mobile application.
           </p>
         </section>

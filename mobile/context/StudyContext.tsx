@@ -31,6 +31,7 @@ type StudyContextValue = {
   hydrated: boolean;
   loading: boolean;
   error: string | null;
+  usingMockData: boolean;
   trackById: Record<string, LearningTrack>;
   recommendedNextId: string;
   heroTrack: LearningTrack;
@@ -52,6 +53,7 @@ export function StudyProvider({ children }: { children: ReactNode }) {
   const [hydrated, setHydrated] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [usingMockData, setUsingMockData] = useState(false);
 
   const trackById = useMemo(() => {
     const m: Record<string, LearningTrack> = {};
@@ -92,12 +94,18 @@ export function StudyProvider({ children }: { children: ReactNode }) {
   const refreshCorpus = useCallback(async () => {
     setLoading(true);
     setError(null);
+    setUsingMockData(false);
     try {
       const verses = await getVerses("all");
       setItems(verses);
+      // Check if we're using mock data by looking at the first verse
+      if (verses.length > 0 && verses[0]._id.startsWith("dhp-001")) {
+        setUsingMockData(true);
+      }
     } catch (e) {
       setError(e instanceof Error ? e.message : "Could not reach the Pratibha API");
       setItems([]);
+      setUsingMockData(true);
     } finally {
       setLoading(false);
     }
@@ -139,6 +147,7 @@ export function StudyProvider({ children }: { children: ReactNode }) {
     hydrated,
     loading,
     error,
+    usingMockData,
     trackById,
     recommendedNextId,
     heroTrack,
