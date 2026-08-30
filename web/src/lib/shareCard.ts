@@ -88,6 +88,13 @@ export const SHARE_TEXT_MODES: { id: ShareTextMode; label: string }[] = [
   { id: "both", label: "Both" },
 ];
 
+export type ShareAspectRatio = "post" | "story";
+
+export const SHARE_ASPECT_RATIOS = {
+  post: { width: 1080, height: 1350, ratio: "1080 / 1350" }, // 4:5 Instagram Post
+  story: { width: 1080, height: 1920, ratio: "1080 / 1920" }, // 9:16 Instagram Story
+} as const;
+
 export type ShareCardOptions = {
   verseId: string;
   mark: ShareForceMark;
@@ -95,6 +102,7 @@ export type ShareCardOptions = {
   textMode: ShareTextMode;
   /** 1-based index into folioCandidates; omitted means the full passage. */
   line?: number;
+  aspectRatio?: ShareAspectRatio;
 };
 
 export type FolioLine = {

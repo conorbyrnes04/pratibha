@@ -14,6 +14,7 @@ import {
   SHARE_DEITY_MARKS,
   SHARE_INKS,
   SHARE_TEXT_MODES,
+  SHARE_ASPECT_RATIOS,
   defaultShareMark,
   folioCandidates,
   nextFolioLine,
@@ -23,6 +24,7 @@ import {
   type ShareForceMark,
   type ShareInk,
   type ShareTextMode,
+  type ShareAspectRatio,
 } from "@/lib/shareCard";
 import { ShareCard } from "@/components/ShareCard";
 import { Button } from "@/components/ui/button";
@@ -52,6 +54,7 @@ export function ShareComposer({ item }: { item: VerseItem }) {
   const [ink, setInk] = useState<ShareInk>("gold");
   const [textMode, setTextMode] = useState<ShareTextMode>(copy.original ? "both" : "translation");
   const [line, setLine] = useState<number | undefined>(undefined);
+  const [aspectRatio, setAspectRatio] = useState<ShareAspectRatio>("post");
   const [busy, setBusy] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -128,6 +131,68 @@ export function ShareComposer({ item }: { item: VerseItem }) {
     }
   }
 
+  async function shareToInstagram(destination: "story" | "post") {
+    setBusy(true);
+    try {
+      const targetRatio: ShareAspectRatio = destination === "story" ? "story" : "post";
+      const prevRatio = aspectRatio;
+      
+      if (targetRatio !== prevRatio) {
+        setAspectRatio(targetRatio);
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
+      const blob = await pngBlob();
+      const fileName = `pratibha-${destination}-${item._id}.png`;
+      const file = new File([blob], fileName, { type: "image/png" });
+      const caption = shareCaption({
+        title: copy.title,
+        translation: picked?.text || displayCopy.translation || copy.translation,
+        readUrl: `${window.location.origin}/read/${encodeURIComponent(item._id)}`,
+      });
+
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      if (navigator.share && navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file], text: caption });
+        if (targetRatio !== prevRatio) setAspectRatio(prevRatio);
+        return;
+      }
+
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = fileName;
+      a.click();
+      URL.revokeObjectURL(url);
+
+      await navigator.clipboard.writeText(caption);
+
+      let igWindow: Window | null = null;
+      if (isMobile) {
+        const scheme = destination === "story" ? "instagram-stories://share" : "instagram://library";
+        igWindow = window.open(scheme, "_blank");
+      } else {
+        igWindow = window.open("instagram://", "_blank");
+      }
+
+      if (!igWindow || igWindow.closed) {
+        toast.success(
+          `Image saved for Instagram ${destination === "story" ? "Story" : "Post"}. Caption copied. Open Instagram and select the image.`,
+          { duration: 6000 }
+        );
+      } else {
+        toast.success(`Image saved. Caption copied. Opening Instagram...`);
+      }
+
+      if (targetRatio !== prevRatio) setAspectRatio(prevRatio);
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "Could not share to Instagram.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
   async function copyLink() {
     const path = sharePagePath(options);
     const url = `${window.location.origin}${path}`;
@@ -154,7 +219,14 @@ export function ShareComposer({ item }: { item: VerseItem }) {
         </SheetHeader>
         <div className="grid gap-8 overflow-y-auto px-4 pb-8 lg:grid-cols-[minmax(0,280px)_1fr] lg:items-start">
           <div ref={cardRef} className="share-card-preview mx-auto">
-            <ShareCard mark={mark} ink={ink} textMode={displayMode} copy={displayCopy} fillWindow={Boolean(picked)} />
+            <ShareCard
+              mark={mark}
+              ink={ink}
+              textMode={displayMode}
+              copy={displayCopy}
+              fillWindow={Boolean(picked)}
+              aspectRatio={aspectRatio}
+            />
           </div>
           <div className="space-y-6">
             <fieldset>
@@ -243,6 +315,24 @@ export function ShareComposer({ item }: { item: VerseItem }) {
                   Shuffle line
                 </Button>
               ) : null}
+              <Button
+                type="button"
+                size="sm"
+                variant="secondary"
+                disabled={busy}
+                onClick={() => void shareToInstagram("story")}
+              >
+                {busy ? "Making Story…" : "Instagram Story"}
+              </Button>
+              <Button
+                type="button"
+                size="sm"
+                variant="secondary"
+                disabled={busy}
+                onClick={() => void shareToInstagram("post")}
+              >
+                {busy ? "Making Post…" : "Instagram Post"}
+              </Button>
               <Button type="button" size="sm" disabled={busy} onClick={() => void share()}>
                 {busy ? "Making the page…" : "Share image"}
               </Button>
