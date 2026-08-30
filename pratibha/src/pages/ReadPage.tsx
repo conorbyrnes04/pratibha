@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "@lynx-js/react";
 import {
   fetchPassages,
   fetchVerse,
@@ -7,6 +7,9 @@ import {
   type Passage,
 } from "../lib/corpus";
 import { C, SCRIPT, SERIF } from "../lib/theme";
+import { StudentCommentary } from "../components/StudentCommentary";
+import { CircleReadings } from "../components/CircleReadings";
+import { ShareComposer } from "../components/ShareComposer";
 
 function stripBold(s: string): string {
   return s.replace(/\*\*/g, "").trim();
@@ -23,6 +26,42 @@ function parseTerms(text: string): TermEntry[] {
       if (m) return { term: stripBold(m[1]).replace(/:$/, ""), body: stripBold(m[2]) };
       return { term: "", body: stripBold(line) };
     });
+}
+
+function isLongOriginal(text: string): boolean {
+  const body = text.trim();
+  if (/[\u4E00-\u9FFF]/.test(body)) return body.length > 72;
+  if (/[\u0900-\u097F]|[ༀ-࿿]/.test(body)) return body.length > 90;
+  return body.length > 220;
+}
+
+function condenseOriginal(text: string): string {
+  const lines = text.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+  if (lines.length > 3) return `${lines.slice(0, 3).join("\n")}…`;
+  if (text.length > 80) return `${text.trim().slice(0, 72)}…`;
+  return text;
+}
+
+function LongOriginal({ text }: { text: string }) {
+  const [open, setOpen] = useState(false);
+  const long = isLongOriginal(text);
+  return (
+    <view>
+      <text style={{ color: C.script, fontSize: 21, lineHeight: 1.8, fontFamily: SCRIPT }}>
+        {long && !open ? condenseOriginal(text) : text}
+      </text>
+      {long ? (
+        <view
+          bindtap={() => setOpen((v) => !v)}
+          style={{ marginTop: 10, alignSelf: "flex-start" }}
+        >
+          <text style={{ color: C.goldMuted, fontSize: 12, letterSpacing: 1, textTransform: "uppercase" }}>
+            {open ? "Collapse original" : "Expand original"}
+          </text>
+        </view>
+      ) : null}
+    </view>
+  );
 }
 
 function LayerLabel({ children }: { children: React.ReactNode }) {
@@ -132,7 +171,7 @@ export function PassageDetail({
 
         {original ? (
           <view style={{ marginBottom: 24, paddingLeft: 14, borderLeftWidth: 2, borderLeftColor: C.goldMuted }}>
-            <text style={{ color: C.script, fontSize: 21, lineHeight: 1.8, fontFamily: SCRIPT }}>{original}</text>
+            <LongOriginal text={original} />
             {iast ? (
               <text style={{ color: C.goldMuted, fontSize: 14, lineHeight: 1.7, fontStyle: "italic", marginTop: 10 }}>
                 {iast}
@@ -192,6 +231,10 @@ export function PassageDetail({
           </view>
         ) : null}
 
+        <ShareComposer passage={passage} />
+        <StudentCommentary verseId={passage._id} verseTitle={passage.title || passage._id} />
+        <CircleReadings verseId={passage._id} />
+
         {themes.length ? (
           <view style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, marginTop: 4, marginBottom: 20 }}>
             {themes.map((t) => (
@@ -247,7 +290,7 @@ export function PassageDetail({
   );
 }
 
-export function ReadPage() {
+export function ReadPage({ openVerseId }: { openVerseId?: string | null }) {
   const [verses, setVerses] = useState<Passage[]>([]);
   const [detail, setDetail] = useState<Passage | null>(null);
   const [loading, setLoading] = useState(true);
@@ -269,6 +312,11 @@ export function ReadPage() {
     }
     void loadVerses();
   }, []);
+
+  useEffect(() => {
+    if (!openVerseId) return;
+    void openVerse({ _id: openVerseId } as Passage);
+  }, [openVerseId]);
 
   const collections = useMemo(() => {
     const set = new Set<string>();

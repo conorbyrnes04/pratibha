@@ -10,16 +10,18 @@ loadEnv({ path: resolve(root, "../.env") });
 
 const convexUrl = process.env.NEXT_PUBLIC_CONVEX_URL || "";
 const apiBase = process.env.NEXT_PUBLIC_API_BASE || "http://127.0.0.1:8000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export default defineConfig({
   plugins: [pluginReactLynx()],
   source: {
     entry: {
-      index: "./src/App.tsx",
+      index: "./src/index.tsx",
     },
     define: {
       "process.env.NEXT_PUBLIC_CONVEX_URL": JSON.stringify(convexUrl),
       "process.env.NEXT_PUBLIC_API_BASE": JSON.stringify(apiBase),
+      "process.env.NEXT_PUBLIC_SITE_URL": JSON.stringify(siteUrl),
     },
   },
   server: {

@@ -18,6 +18,30 @@ if (process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET) {
 
 export const { auth, signIn, signOut, store } = convexAuth({
   providers,
+  callbacks: {
+    async redirect({ redirectTo }) {
+      const siteUrl = process.env.SITE_URL || "http://localhost:3000";
+      const allowed = [
+        siteUrl,
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:3004",
+        "https://pratibha.agniagama.com",
+      ].filter(Boolean) as string[];
+      for (const origin of allowed) {
+        if (redirectTo.startsWith(origin)) return redirectTo;
+      }
+      if (
+        redirectTo.startsWith("http://192.168.") ||
+        redirectTo.startsWith("http://10.") ||
+        redirectTo.includes(".convex.site") ||
+        redirectTo.includes(".convex.cloud")
+      ) {
+        return redirectTo;
+      }
+      return allowed[0] || siteUrl;
+    },
+  },
 });
 
 export const currentUser = query({

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "@lynx-js/react";
 import { fetchSources, type SourceItem } from "../lib/corpus";
 import { C, SERIF } from "../lib/theme";
 

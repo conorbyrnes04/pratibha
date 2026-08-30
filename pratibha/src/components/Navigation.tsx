@@ -1,4 +1,3 @@
-import React from "react";
 import { C } from "../lib/theme";
 
 interface NavigationProps {
@@ -14,6 +13,7 @@ const PRIMARY = [
   { id: "learn", label: "Learn" },
   { id: "lexicon", label: "Lexicon" },
   { id: "journal", label: "Journal" },
+  { id: "manuscript", label: "Manuscript" },
   { id: "sources", label: "Sources" },
 ];
 
@@ -31,12 +31,12 @@ export function Navigation({ currentPage, onNavigate, signedIn }: NavigationProp
         paddingBottom: 12,
         paddingLeft: 14,
         paddingRight: 14,
-        borderBottomWidth: 1,
+        borderBottomWidth: "1px",
         borderBottomColor: C.line,
       }}
     >
       <text style={{ color: C.gold, fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>Pratibha</text>
-      <view style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+      <view style={{ flexDirection: "row", flexWrap: "wrap", gap: "8px" }}>
         {pages.map((page) => {
           const active = currentPage === page.id && !("account" in page && page.account);
           return (

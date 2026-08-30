@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "@lynx-js/react";
 import { sendChat, type ChatMessage, type ChatSource } from "../lib/corpus";
 import { C, SERIF } from "../lib/theme";
 

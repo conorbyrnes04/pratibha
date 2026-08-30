@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "@lynx-js/react";
 import { fetchLemma, fetchLexicon, type LexiconItem } from "../lib/corpus";
 import { C, SCRIPT, SERIF } from "../lib/theme";
 

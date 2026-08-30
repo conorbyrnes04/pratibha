@@ -1,0 +1,16 @@
+---
+description: Pratibha web adopts Monad/shadcn as a graft — preserve manuscript product quality
+globs: web/**/*.{tsx,ts,css}
+alwaysApply: false
+---
+
+# Pratibha × Monad (web)
+
+Follow `web/MONAD_ADOPTION.md` and `web/CLAUDE.md`.
+
+- Prefer `src/components/ui/*` for chrome (Button, Input, Dialog, etc.); Base UI `render` prop, not `asChild`.
+- Do **not** greenfield-rescaffold or wipe `globals.css` / product routes.
+- Keep Pratibha tokens and sacred-script fonts; no IBM Plex / stock neutral as product face.
+- Escalate before replacing: BrandMark, LayerBlock, YantraBreath, learn constellation/path visuals, lexicon flip/SRS, ArtImage.
+- New UI: token classes or `var(--*)`; don't invent parallel button CSS.
+- Verify Cloudflare/OpenNext still builds after Tailwind or shadcn changes.

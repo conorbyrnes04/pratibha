@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "@lynx-js/react";
 import { useConvex } from "../convex/ConvexProvider";
 import { useAuth } from "../auth/AuthProvider";
 import { isConvexConfigured } from "../convex/httpClient";

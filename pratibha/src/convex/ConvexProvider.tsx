@@ -1,4 +1,4 @@
-import React, { createContext, useContext, ReactNode } from "react";
+import { createContext, useContext, type ReactNode } from "@lynx-js/react";
 import { createHttpClient } from "./httpClient";
 
 interface ConvexContextType {

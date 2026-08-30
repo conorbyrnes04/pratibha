@@ -1,4 +1,4 @@
-import React from "react";
+import { useCallback, useState } from "@lynx-js/react";
 import { ConvexProvider } from "./convex/ConvexProvider";
 import { AuthProvider, useAuth } from "./auth/AuthProvider";
 import { Navigation } from "./components/Navigation";
@@ -10,14 +10,35 @@ import { ChatPage } from "./pages/ChatPage";
 import { LearnPage } from "./pages/LearnPage";
 import { LexiconPage } from "./pages/LexiconPage";
 import { SourcesPage } from "./pages/SourcesPage";
+import { ManuscriptPage } from "./pages/ManuscriptPage";
 
 function AppContent() {
   const { user, loading } = useAuth();
-  const [currentPage, setCurrentPage] = React.useState("home");
+  const [currentPage, setCurrentPage] = useState("home");
+  const [openVerseId, setOpenVerseId] = useState<string | null>(null);
+
+  const onNavigate = useCallback((page: string) => {
+    "background only";
+    if (page !== "read") setOpenVerseId(null);
+    setCurrentPage(page);
+  }, []);
+
+  const openVerse = useCallback((verseId: string) => {
+    "background only";
+    setOpenVerseId(verseId);
+    setCurrentPage("read");
+  }, []);
 
   if (loading) {
     return (
-      <view style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#0a0a0f" }}>
+      <view
+        style={{
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#0a0a0f",
+        }}
+      >
         <text style={{ color: "#f0c979", fontSize: 16 }}>Loading...</text>
       </view>
     );
@@ -25,27 +46,30 @@ function AppContent() {
 
   return (
     <view style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
-      <Navigation currentPage={currentPage} onNavigate={setCurrentPage} signedIn={Boolean(user)} />
-      <scroll-view style={{ flex: 1 }}>
-        {currentPage === "login" && <LoginPage onLogin={() => setCurrentPage("home")} />}
+      <Navigation currentPage={currentPage} onNavigate={onNavigate} signedIn={Boolean(user)} />
+      <scroll-view scroll-y style={{ flex: 1 }}>
+        {currentPage === "login" && <LoginPage onLogin={() => onNavigate("home")} />}
         {currentPage === "home" && <HomePage />}
-        {currentPage === "read" && <ReadPage />}
+        {currentPage === "read" && <ReadPage openVerseId={openVerseId} />}
         {currentPage === "chat" && <ChatPage />}
         {currentPage === "learn" && <LearnPage />}
         {currentPage === "lexicon" && <LexiconPage />}
         {currentPage === "journal" && <JournalPage />}
+        {currentPage === "manuscript" && <ManuscriptPage onOpenVerse={openVerse} />}
         {currentPage === "sources" && <SourcesPage />}
       </scroll-view>
     </view>
   );
 }
 
-export default function App() {
+export function App() {
   return (
-    <ConvexProvider>
-      <AuthProvider>
-        <AppContent />
-      </AuthProvider>
-    </ConvexProvider>
+    <page>
+      <ConvexProvider>
+        <AuthProvider>
+          <AppContent />
+        </AuthProvider>
+      </ConvexProvider>
+    </page>
   );
 }

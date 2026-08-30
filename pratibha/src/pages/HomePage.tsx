@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "@lynx-js/react";
 import { fetchDaily, layerText, type Passage } from "../lib/corpus";
+import { CircleReadings } from "../components/CircleReadings";
+import { ShareComposer } from "../components/ShareComposer";
 
 export function HomePage() {
   const [dailyPassage, setDailyPassage] = useState<Passage | null>(null);
@@ -58,8 +60,10 @@ export function HomePage() {
         <text style={{ color: "#ccc", fontSize: 14, marginBottom: 16 }}>{dailyPassage.collection}</text>
       ) : null}
       {translation ? (
-        <text style={{ color: "#ddd", fontSize: 16, lineHeight: 1.6 }}>{translation}</text>
+        <text style={{ color: "#ddd", fontSize: 16, lineHeight: "26px", marginBottom: 24 }}>{translation}</text>
       ) : null}
+      <ShareComposer passage={dailyPassage} />
+      <CircleReadings verseId={dailyPassage._id} daily />
     </view>
   );
 }
