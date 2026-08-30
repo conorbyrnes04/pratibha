@@ -7,48 +7,49 @@ interface NavigationProps {
 
 export function Navigation({ currentPage, onNavigate }: NavigationProps) {
   const pages = [
-    { id: "home", label: "Today" },
-    { id: "read", label: "Read" },
-    { id: "journal", label: "Journal" },
+    { id: "home", label: "TODAY" },
+    { id: "read", label: "READ" },
+    { id: "journal", label: "JOURNAL" },
   ];
 
   return (
     <view
       style={{
+        display: "linear",
         flexDirection: "row",
-        backgroundColor: "#1a1a2e",
-        padding: 16,
-        borderBottomWidth: 1,
-        borderBottomColor: "#333",
-        gap: 12,
+        backgroundColor: "#0a0a0f",
+        borderTopWidth: 1,
+        borderTopColor: "#333",
+        height: 60,
       }}
     >
-      <text style={{ color: "#f0c979", fontSize: 20, fontWeight: "bold", marginRight: "auto" }}>
-        Pratibha
-      </text>
-      {pages.map((page) => (
-        <view
-          key={page.id}
-          bindtap={() => onNavigate(page.id)}
-          style={{
-            paddingVertical: 8,
-            paddingHorizontal: 16,
-            backgroundColor: currentPage === page.id ? "#f0c979" : "transparent",
-            borderRadius: 4,
-            cursor: "pointer",
-          }}
-        >
-          <text
+      {pages.map((page) => {
+        const isActive = currentPage === page.id;
+        return (
+          <view
+            key={page.id}
+            bindtap={() => onNavigate(page.id)}
             style={{
-              color: currentPage === page.id ? "#000" : "#ccc",
-              fontSize: 14,
-              fontWeight: currentPage === page.id ? "600" : "normal",
+              flex: 1,
+              justifyContent: "center",
+              alignItems: "center",
+              borderTopWidth: isActive ? 2 : 0,
+              borderTopColor: isActive ? "#c9a227" : "transparent",
             }}
           >
-            {page.label}
-          </text>
-        </view>
-      ))}
+            <text
+              style={{
+                color: isActive ? "#c9a227" : "#666",
+                fontSize: 11,
+                fontWeight: isActive ? "600" : "normal",
+                letterSpacing: 1,
+              }}
+            >
+              {page.label}
+            </text>
+          </view>
+        );
+      })}
     </view>
   );
 }

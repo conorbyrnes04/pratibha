@@ -26,23 +26,15 @@ function AppContent() {
   }
 
   if (!user) {
-    return (
-      <view style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
-        <scroll-view style={{ flex: 1 }}>
-          <LoginPage onLogin={() => setCurrentPage("home")} />
-        </scroll-view>
-      </view>
-    );
+    return <LoginPage onLogin={() => setCurrentPage("home")} />;
   }
 
   return (
     <view style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
+      {currentPage === "home" && <HomePage />}
+      {currentPage === "read" && <ReadPage />}
+      {currentPage === "journal" && <JournalPage />}
       <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
-      <scroll-view style={{ flex: 1 }}>
-        {currentPage === "home" && <HomePage />}
-        {currentPage === "read" && <ReadPage />}
-        {currentPage === "journal" && <JournalPage />}
-      </scroll-view>
     </view>
   );
 }

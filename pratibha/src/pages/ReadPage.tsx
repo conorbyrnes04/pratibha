@@ -22,7 +22,14 @@ export function ReadPage() {
   useEffect(() => {
     async function loadVerses() {
       try {
-        const response = await fetch("http://localhost:8000/verses?limit=20");
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 3000);
+        
+        const response = await fetch("http://localhost:8000/verses?limit=20", {
+          signal: controller.signal,
+        });
+        clearTimeout(timeout);
+        
         const data = await response.json();
         setVerses(data.verses || []);
       } catch (error) {
@@ -34,43 +41,48 @@ export function ReadPage() {
     loadVerses();
   }, []);
 
-  if (loading) {
-    return (
-      <view style={{ padding: 20 }}>
-        <text style={{ color: "#999" }}>Loading passages...</text>
-      </view>
-    );
-  }
-
   if (selectedVerse) {
     return (
-      <scroll-view style={{ flex: 1 }}>
-        <view style={{ padding: 20 }}>
+      <scroll-view scroll-orientation="vertical" style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
+        <view style={{ paddingLeft: 24, paddingRight: 24, paddingTop: 24, paddingBottom: 32 }}>
           <view
             bindtap={() => setSelectedVerse(null)}
             style={{
-              marginBottom: 20,
-              paddingVertical: 8,
-              paddingHorizontal: 16,
+              marginBottom: 24,
+              paddingTop: 10,
+              paddingBottom: 10,
+              paddingLeft: 16,
+              paddingRight: 16,
               backgroundColor: "#1a1a2e",
-              borderRadius: 4,
+              borderRadius: 6,
               alignSelf: "flex-start",
-              cursor: "pointer",
             }}
           >
-            <text style={{ color: "#f0c979", fontSize: 14 }}>← Back to list</text>
+            <text style={{ color: "#c9a227", fontSize: 14 }}>← Back</text>
           </view>
 
-          <text style={{ color: "#999", fontSize: 12, textTransform: "uppercase", marginBottom: 8 }}>
-            {selectedVerse.collection || "Passage"}
-          </text>
-          <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 16 }}>
-            {selectedVerse.title || selectedVerse._id}
-          </text>
+          {selectedVerse.collection && (
+            <text style={{ color: "#666", fontSize: 11, textTransform: "uppercase", letterSpacing: 1, marginBottom: 12, lineHeight: "16px" }}>
+              {selectedVerse.collection}
+            </text>
+          )}
+
+          {selectedVerse.pratibha_layers?.original && (
+            <text style={{ color: "#c9a227", fontSize: 24, fontWeight: "600", marginBottom: 24, lineHeight: "36px" }}>
+              {selectedVerse.pratibha_layers.original}
+            </text>
+          )}
+
+          {selectedVerse.pratibha_layers?.translation && (
+            <text style={{ color: "#ddd", fontSize: 17, marginBottom: 32, lineHeight: "28px" }}>
+              {selectedVerse.pratibha_layers.translation}
+            </text>
+          )}
 
           {/* Social actions */}
-          <view style={{ flexDirection: "row", gap: 12, marginBottom: 24, alignItems: "center" }}>
+          <view style={{ display: "linear", flexDirection: "row", marginBottom: 32, alignItems: "center" }}>
             <LikeButton verseId={selectedVerse._id} />
+            <view style={{ width: 16 }} />
             <ShareButton
               verseId={selectedVerse._id}
               verseTitle={selectedVerse.title || selectedVerse._id}
@@ -79,34 +91,12 @@ export function ReadPage() {
             />
           </view>
 
-          {selectedVerse.pratibha_layers?.translation && (
-            <view style={{ marginBottom: 24 }}>
-              <text style={{ color: "#999", fontSize: 12, marginBottom: 8, textTransform: "uppercase" }}>
-                Translation
-              </text>
-              <text style={{ color: "#ddd", fontSize: 16, lineHeight: 1.6 }}>
-                {selectedVerse.pratibha_layers.translation}
-              </text>
-            </view>
-          )}
-
-          {selectedVerse.pratibha_layers?.original && (
-            <view style={{ marginBottom: 24 }}>
-              <text style={{ color: "#999", fontSize: 12, marginBottom: 8, textTransform: "uppercase" }}>
-                Original
-              </text>
-              <text style={{ color: "#ccc", fontSize: 14, lineHeight: 1.6, fontStyle: "italic" }}>
-                {selectedVerse.pratibha_layers.original}
-              </text>
-            </view>
-          )}
-
           {selectedVerse.pratibha_layers?.commentary && (
-            <view style={{ marginBottom: 24 }}>
-              <text style={{ color: "#999", fontSize: 12, marginBottom: 8, textTransform: "uppercase" }}>
-                Commentary
+            <view style={{ marginBottom: 32, paddingTop: 24, borderTopWidth: 1, borderTopColor: "#222" }}>
+              <text style={{ color: "#666", fontSize: 11, marginBottom: 12, textTransform: "uppercase", letterSpacing: 1, lineHeight: "16px" }}>
+                COMMENTARY
               </text>
-              <text style={{ color: "#ccc", fontSize: 14, lineHeight: 1.6 }}>
+              <text style={{ color: "#999", fontSize: 15, lineHeight: "25px" }}>
                 {selectedVerse.pratibha_layers.commentary}
               </text>
             </view>
@@ -117,7 +107,8 @@ export function ReadPage() {
             style={{
               marginTop: 32,
               paddingTop: 32,
-              borderTop: "1px solid #333",
+              borderTopWidth: 1,
+              borderTopColor: "#222",
             }}
           >
             <CommentSection verseId={selectedVerse._id} />
@@ -128,53 +119,60 @@ export function ReadPage() {
   }
 
   return (
-    <view style={{ padding: 20 }}>
-      <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 8 }}>
-        Library
-      </text>
-      <text style={{ color: "#999", fontSize: 14, marginBottom: 24 }}>
-        Browse the canonical collection
-      </text>
-
-      <view style={{ gap: 12 }}>
-        {verses.map((verse) => (
-          <view
-            key={verse._id}
-            bindtap={() => setSelectedVerse(verse)}
-            style={{
-              padding: 16,
-              backgroundColor: "#1a1a2e",
-              borderRadius: 8,
-              cursor: "pointer",
-              borderLeft: "4px solid #f0c979",
-            }}
-          >
-            {verse.collection && (
-              <text style={{ color: "#666", fontSize: 12, marginBottom: 4, textTransform: "uppercase" }}>
-                {verse.collection}
-              </text>
-            )}
-            <text style={{ color: "#f0c979", fontSize: 16, fontWeight: "600", marginBottom: 8 }}>
-              {verse.title || verse._id}
-            </text>
-            {verse.pratibha_layers?.translation && (
-              <text
-                style={{
-                  color: "#999",
-                  fontSize: 14,
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                {verse.pratibha_layers.translation}
-              </text>
-            )}
-          </view>
-        ))}
+    <view style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
+      <view style={{ paddingLeft: 24, paddingRight: 24, paddingTop: 24, paddingBottom: 16 }}>
+        <text style={{ color: "#666", fontSize: 11, textTransform: "uppercase", letterSpacing: 2, marginBottom: 8, lineHeight: "16px" }}>
+          LIBRARY
+        </text>
+        <text style={{ color: "#ddd", fontSize: 20, fontWeight: "600", marginBottom: 4, lineHeight: "28px" }}>
+          Canonical Collection
+        </text>
       </view>
+
+      {loading ? (
+        <view style={{ paddingLeft: 24, paddingRight: 24 }}>
+          <text style={{ color: "#666", fontSize: 15, lineHeight: "24px" }}>Loading passages...</text>
+        </view>
+      ) : (
+        <list style={{ flex: 1 }}>
+          {verses.map((verse) => (
+            <list-item
+              key={verse._id}
+              bindtap={() => setSelectedVerse(verse)}
+              style={{
+                paddingTop: 16,
+                paddingBottom: 16,
+                paddingLeft: 24,
+                paddingRight: 24,
+                borderBottomWidth: 1,
+                borderBottomColor: "#1a1a2e",
+              }}
+            >
+              {verse.collection && (
+                <text style={{ color: "#666", fontSize: 11, marginBottom: 6, textTransform: "uppercase", letterSpacing: 1, lineHeight: "16px" }}>
+                  {verse.collection}
+                </text>
+              )}
+              <text style={{ color: "#c9a227", fontSize: 16, fontWeight: "600", marginBottom: 8, lineHeight: "24px" }}>
+                {verse.title || verse._id}
+              </text>
+              {verse.pratibha_layers?.translation && (
+                <text
+                  style={{
+                    color: "#999",
+                    fontSize: 14,
+                    lineHeight: "22px",
+                    textMaxline: 2,
+                    textOverflow: "ellipsis",
+                  }}
+                >
+                  {verse.pratibha_layers.translation}
+                </text>
+              )}
+            </list-item>
+          ))}
+        </list>
+      )}
     </view>
   );
 }
