@@ -10,6 +10,7 @@ import { C, SCRIPT, SERIF } from "../lib/theme";
 import { StudentCommentary } from "../components/StudentCommentary";
 import { CircleReadings } from "../components/CircleReadings";
 import { ShareComposer } from "../components/ShareComposer";
+import { AppreciateButton } from "../components/AppreciateButton";
 
 function stripBold(s: string): string {
   return s.replace(/\*\*/g, "").trim();
@@ -165,9 +166,13 @@ export function PassageDetail({
             {passage.section ? `  ·  ${passage.section}` : ""}
           </text>
         ) : null}
-        <text style={{ color: C.gold, fontSize: 26, fontWeight: "bold", fontFamily: SERIF, marginBottom: 24 }}>
+        <text style={{ color: C.gold, fontSize: 26, fontWeight: "bold", fontFamily: SERIF, marginBottom: 16 }}>
           {passage.title || passage._id}
         </text>
+
+        <view style={{ marginBottom: 24 }}>
+          <AppreciateButton verseId={passage._id} />
+        </view>
 
         {original ? (
           <view style={{ marginBottom: 24, paddingLeft: 14, borderLeftWidth: 2, borderLeftColor: C.goldMuted }}>

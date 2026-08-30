@@ -86,6 +86,17 @@ const schema = defineSchema({
   })
     .index("by_commentary", ["commentaryId"])
     .index("by_user_commentary", ["userId", "commentaryId"]),
+
+  // A quiet "appreciation" a reader can leave on a verse (one per user/verse).
+  // Kept in sync with pratibha/convex/schema.ts — both apps share one deployment.
+  verse_likes: defineTable({
+    userId: v.string(),
+    verseId: v.string(),
+    createdAt: v.number(),
+  })
+    .index("by_verse", ["verseId"])
+    .index("by_user", ["userId"])
+    .index("by_user_verse", ["userId", "verseId"]),
 });
 
 export default schema;
