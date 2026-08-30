@@ -30,6 +30,7 @@ export const { auth, signIn, signOut, store, isAuthenticated } = convexAuth({
         "http://127.0.0.1:3000",
         "http://localhost:3004",
         "https://pratibha.agniagama.com",
+        "pratibha://",
       ].filter(Boolean) as string[];
       for (const origin of allowed) {
         if (redirectTo.startsWith(origin)) return redirectTo;

@@ -1,4 +1,5 @@
 import { StudyProvider } from "@/context/StudyContext";
+import { AuthProvider } from "@/context/AuthContext";
 import { colors } from "@/constants/theme";
 import { DarkTheme, ThemeProvider } from "@react-navigation/native";
 import { Stack } from "expo-router";
@@ -6,6 +7,8 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import { ConvexProvider } from "convex/react";
+import { convex } from "@/lib/convex";
 
 export { ErrorBoundary } from "expo-router";
 
@@ -30,25 +33,29 @@ export default function RootLayout() {
 
   return (
     <SafeAreaProvider>
-      <StudyProvider>
-        <ThemeProvider value={pratibhaTheme}>
-          <StatusBar style="light" />
-          <Stack
-            screenOptions={{
-              headerStyle: { backgroundColor: colors.background },
-              headerTintColor: colors.accentBright,
-              headerTitleStyle: { fontFamily: "Georgia" },
-              contentStyle: { backgroundColor: colors.background },
-            }}
-          >
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-            <Stack.Screen name="path/[id]" options={{ title: "Path" }} />
-            <Stack.Screen name="step/[trackId]/[stepId]" options={{ title: "Gate" }} />
-            <Stack.Screen name="passage/[id]" options={{ title: "Passage" }} />
-            <Stack.Screen name="settings" options={{ presentation: "modal", title: "Settings" }} />
-          </Stack>
-        </ThemeProvider>
-      </StudyProvider>
+      <ConvexProvider client={convex}>
+        <AuthProvider>
+          <StudyProvider>
+            <ThemeProvider value={pratibhaTheme}>
+              <StatusBar style="light" />
+              <Stack
+                screenOptions={{
+                  headerStyle: { backgroundColor: colors.background },
+                  headerTintColor: colors.accentBright,
+                  headerTitleStyle: { fontFamily: "Georgia" },
+                  contentStyle: { backgroundColor: colors.background },
+                }}
+              >
+                <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                <Stack.Screen name="path/[id]" options={{ title: "Path" }} />
+                <Stack.Screen name="step/[trackId]/[stepId]" options={{ title: "Gate" }} />
+                <Stack.Screen name="passage/[id]" options={{ title: "Passage" }} />
+                <Stack.Screen name="settings" options={{ presentation: "modal", title: "Settings" }} />
+              </Stack>
+            </ThemeProvider>
+          </StudyProvider>
+        </AuthProvider>
+      </ConvexProvider>
     </SafeAreaProvider>
   );
 }
