@@ -134,18 +134,15 @@ export function ShareComposer({ item }: { item: VerseItem }) {
   async function shareToInstagram(destination: "story" | "post") {
     setBusy(true);
     const targetRatio: ShareAspectRatio = destination === "story" ? "story" : "post";
+    
+    if (targetRatio !== aspectRatio) {
+      setAspectRatio(targetRatio);
+      await new Promise(resolve => setTimeout(resolve, 100));
+    }
+    
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     
     let igWindow: Window | null = null;
-    
-    if (!navigator.share || !navigator.canShare) {
-      if (isMobile) {
-        const scheme = destination === "story" ? "instagram-stories://share" : "instagram://library";
-        igWindow = window.open(scheme, "_blank");
-      } else {
-        igWindow = window.open("instagram://", "_blank");
-      }
-    }
     
     try {
       const blob = await pngBlob();
@@ -160,6 +157,13 @@ export function ShareComposer({ item }: { item: VerseItem }) {
       if (navigator.share && navigator.canShare?.({ files: [file] })) {
         await navigator.share({ files: [file], text: caption });
         return;
+      }
+
+      if (isMobile) {
+        const scheme = destination === "story" ? "instagram-stories://share" : "instagram://library";
+        igWindow = window.open(scheme, "_blank");
+      } else {
+        igWindow = window.open("instagram://", "_blank");
       }
 
       const url = URL.createObjectURL(blob);
@@ -337,10 +341,18 @@ export function ShareComposer({ item }: { item: VerseItem }) {
                 size="sm"
                 variant="secondary"
                 disabled={busy}
-                onClick={() => void shareToInstagram(aspectRatio === "story" ? "story" : "post")}
+                onClick={() => void shareToInstagram("story")}
               >
-                {busy ? "Sharing…" : aspectRatio === "story" ? "Instagram Story" : "Instagram Post"}
+                {busy ? "Sharing…" : "Instagram Story"}
               </Button>
+              <Button
+                type="button"
+                size="sm"
+                variant="secondary"
+                disabled={busy}
+                onClick={() => void shareToInstagram("post")}
+              >
+                {busy ? "Sharing…" : "Instagram Post"}
               </Button>
               <Button type="button" size="sm" disabled={busy} onClick={() => void share()}>
                 {busy ? "Making the page…" : "Share image"}
