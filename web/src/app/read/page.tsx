@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { getVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { firstSentence, stripMarkdown } from "@/lib/textPreview";
@@ -14,7 +14,7 @@ function reflectionPrompt(item: VerseItem): string {
   return "What one shift in seeing does this passage invite right now?";
 }
 
-export default function ReadPage() {
+function ReadPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [items, setItems] = useState<VerseItem[]>([]);
@@ -161,6 +161,19 @@ export default function ReadPage() {
         ))}
       </div>
     </main>
+  );
+}
+
+export default function ReadPage() {
+  return (
+    <Suspense fallback={
+      <main className="mx-auto max-w-6xl px-4 py-8">
+        <h1 className="text-3xl text-amber-200">Library</h1>
+        <p className="soft mt-2">Loading passages...</p>
+      </main>
+    }>
+      <ReadPageContent />
+    </Suspense>
   );
 }
 
