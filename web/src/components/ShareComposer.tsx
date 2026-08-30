@@ -10,7 +10,8 @@ import { displayPassageTitle } from "@/lib/passageTitles";
 import { stripMarkdown } from "@/lib/textPreview";
 import { Shuffle } from "lucide-react";
 import {
-  SHARE_FORCE_MARKS,
+  SHARE_CORE_MARKS,
+  SHARE_DEITY_MARKS,
   SHARE_INKS,
   SHARE_TEXT_MODES,
   defaultShareMark,
@@ -159,7 +160,25 @@ export function ShareComposer({ item }: { item: VerseItem }) {
             <fieldset>
               <legend className="passage-layer__label mb-3">Mark</legend>
               <div className="flex flex-wrap gap-2">
-                {SHARE_FORCE_MARKS.map((slug) => (
+                {SHARE_CORE_MARKS.map((slug) => (
+                  <button
+                    key={slug}
+                    type="button"
+                    className={`share-chip ${mark === slug ? "share-chip--on" : ""}`}
+                    onClick={() => setMark(slug)}
+                    aria-pressed={mark === slug}
+                    aria-label={slug}
+                  >
+                    <InkGlyph glyph={slug} ink={SHARE_INKS[ink].hex} className="share-chip__glyph" />
+                    <span>{slug}</span>
+                  </button>
+                ))}
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend className="passage-layer__label mb-3">Gods and goddesses</legend>
+              <div className="flex flex-wrap gap-2">
+                {SHARE_DEITY_MARKS.map((slug) => (
                   <button
                     key={slug}
                     type="button"

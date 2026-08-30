@@ -153,3 +153,6 @@ scratch/
 
 # Local secret exports for 1Password (never commit)
 docs/private/
+
+# Sumi raster intermediates from Replicate (SVGs are the shipped assets)
+assets/sumi/_generated/

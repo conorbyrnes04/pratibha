@@ -1,6 +1,6 @@
 import { sumiGlyph, type SumiSlug } from "@/lib/sumiGlyphs";
 
-export const SHARE_FORCE_MARKS = [
+export const SHARE_CORE_MARKS = [
   "lotus",
   "moon",
   "fire",
@@ -30,6 +30,44 @@ export const SHARE_FORCE_MARKS = [
   "tree",
   "sage",
 ] as const;
+
+/** Same slugs as the Celtic Glyphnet pantheon — attribute marks, not portraits. */
+export const SHARE_DEITY_MARKS = [
+  "zeus",
+  "hera",
+  "athena",
+  "apollo",
+  "artemis",
+  "hades",
+  "persephone",
+  "dionysus",
+  "eros",
+  "brahma",
+  "kali",
+  "durga",
+  "lakshmi",
+  "saraswati",
+  "ganesha",
+  "isis",
+  "osiris",
+  "horus",
+  "anubis",
+  "thoth",
+  "odin",
+  "thor",
+  "freyja",
+  "loki",
+  "oshun",
+  "shango",
+  "yemaya",
+  "quetzalcoatl",
+  "tezcatlipoca",
+  "nuwa",
+  "thanatos",
+  "thunderbird",
+] as const;
+
+export const SHARE_FORCE_MARKS = [...SHARE_CORE_MARKS, ...SHARE_DEITY_MARKS] as const;
 
 export type ShareForceMark = (typeof SHARE_FORCE_MARKS)[number];
 
