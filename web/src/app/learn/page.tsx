@@ -1,22 +1,18 @@
-'use client';
+"use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { getVerses } from "@/lib/api";
-import { DailySitCard } from "@/components/learn/DailySitCard";
+import { LearnThemesHome } from "@/components/learn/LearnThemesHome";
+import { LearnThreadJourney } from "@/components/learn/LearnThreadJourney";
+import { PathStepWell } from "@/components/learn/PathStepWell";
 import { PathTree } from "@/components/learn/PathTree";
-import { PassageMaturityBadge } from "@/components/learn/PassageMaturityBadge";
-import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
 import { ThreadCompleteCard } from "@/components/learn/ThreadCompleteCard";
 import { ThreadContextBar } from "@/components/learn/ThreadContextBar";
-import { ThreadsConstellation } from "@/components/learn/ThreadsConstellation";
-import { JournalPanel } from "@/components/JournalPanel";
 import { Section } from "@/components/ui/Section";
 import { useLearnProgress } from "@/hooks/useLearnProgress";
-import { matchStepItem, resolveById } from "@/lib/learn/passages";
-import { pickDailySit, stepKey, trackDoneCount } from "@/lib/learn/progress";
+import { pickDailySit, stepKey, threadKey, trackDoneCount, type DailySitPick } from "@/lib/learn/progress";
 import { learnHref, parseLearnSearch } from "@/lib/learn/url";
 import {
   LEARNING_REALMS,
@@ -24,19 +20,10 @@ import {
   RECOMMENDED_SPINE,
   type LearningTrack,
 } from "@/lib/learningPaths";
-import {
-  beadIndex,
-  findBead,
-  findThread,
-  threadsForPathStep,
-} from "@/lib/learningThreads";
-import { learnStepContextId } from "@/lib/journalStorage";
+import { beadIndex, findBead, findThread, threadsForPathStep } from "@/lib/learningThreads";
 import type { VerseItem } from "@/lib/types";
-import { passagePreview } from "@/lib/verseLayers";
-import { displayCollectionName } from "@/lib/collectionLabels";
-import { displayPassageLocation, displayPassageTitle } from "@/lib/passageTitles";
 import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import {
   Dialog,
@@ -47,28 +34,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-function actionLabel(chatMode?: string): string {
-  if (chatMode === "practice") return "Practice with it";
-  if (chatMode === "compare") return "Compare traditions";
-  if (chatMode === "explain") return "Understand it";
-  return "Ask about it";
-}
-
-function PassageLink({ item, primary = false, backHref }: { item: VerseItem; primary?: boolean; backHref?: string }) {
-  const href = backHref
-    ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
-    : `/read/${encodeURIComponent(item._id)}`;
-  return (
-    <Link href={href} className={`library-passage ${primary ? "" : "opacity-90"}`}>
-      <p className="library-passage__meta">
-        {displayCollectionName(item.collection)}
-        {displayPassageLocation(item) ? ` · ${displayPassageLocation(item)}` : ""}
-      </p>
-      <h5 className="library-passage__title">{displayPassageTitle(item)}</h5>
-      {primary ? <p className="library-passage__preview line-clamp-2">{passagePreview(item)}</p> : null}
-    </Link>
-  );
-}
+type PageView = "home" | "journey" | "bead" | "lineage";
 
 export default function LearnPage() {
   const router = useRouter();
@@ -77,6 +43,7 @@ export default function LearnPage() {
     completedAt,
     hydrated,
     toggle,
+    toggleThread,
     resetTrack,
     exportProgress,
     importProgressFromFile,
@@ -85,7 +52,7 @@ export default function LearnPage() {
   } = useLearnProgress();
   const [importStatus, setImportStatus] = useState<string | null>(null);
   const [items, setItems] = useState<VerseItem[]>([]);
-  const [selectedTrackId, setSelectedTrackId] = useState(RECOMMENDED_SPINE[0]);
+  const [selectedTrackId, setSelectedTrackId] = useState<string | null>(null);
   const [openStepId, setOpenStepId] = useState<string | null>(null);
   const [activeThreadId, setActiveThreadId] = useState<string | null>(null);
   const [activeBeadId, setActiveBeadId] = useState<string | null>(null);
@@ -127,46 +94,32 @@ export default function LearnPage() {
     return RECOMMENDED_SPINE[RECOMMENDED_SPINE.length - 1];
   }, [progress, trackById]);
 
-  const startedTrackId = useMemo(() => {
-    for (const id of RECOMMENDED_SPINE) {
-      const t = trackById[id];
-      if (!t) continue;
-      const d = trackDoneCount(t, progress);
-      if (d > 0 && d < t.steps.length) return id;
-    }
-    return null;
-  }, [progress, trackById]);
-
-  const heroTrack = trackById[startedTrackId || recommendedNextId] || LEARNING_TRACKS[0];
-  const heroNextStep =
-    heroTrack.steps.find((s) => !progress[stepKey(heroTrack.id, s.id)]) || heroTrack.steps[0];
-  const heroNextIndex = Math.max(0, heroTrack.steps.findIndex((s) => s.id === heroNextStep.id));
-  const heroLabel = startedTrackId
-    ? "Continue where you left off"
-    : anyProgress
-      ? "Recommended next"
-      : "Start here";
-  const heroRealmId =
-    LEARNING_REALMS.find((r) => r.trackIds.includes(heroTrack.id))?.id ?? "foundations";
-
-  const dailySit = useMemo(
-    () => pickDailySit(progress, completedAt, heroTrack.id),
-    [progress, completedAt, heroTrack.id],
-  );
+  const dailySit = useMemo(() => pickDailySit(progress, completedAt), [progress, completedAt]);
 
   const activeThread = activeThreadId ? findThread(activeThreadId) : undefined;
   const activeBead =
     activeThread && activeBeadId ? findBead(activeThread, activeBeadId) : undefined;
-  const threadMode = Boolean(activeThread && activeBead && !threadCeremonyId);
   const prevBead =
-    threadMode && activeThread && activeBeadId
+    activeThread && activeBeadId
       ? (() => {
           const idx = beadIndex(activeThread, activeBeadId);
           return idx > 0 ? activeThread.steps[idx - 1] : null;
         })()
       : null;
-  // Keep the full path rail visible in thread mode — dim peers instead of unmounting them.
-  const visibleSteps = track.steps;
+
+  const view: PageView = useMemo(() => {
+    if (threadCeremonyId) return "bead";
+    if (activeThreadId && activeBeadId) return "bead";
+    if (activeThreadId) return "journey";
+    if (selectedTrackId) return "lineage";
+    return "home";
+  }, [threadCeremonyId, activeThreadId, activeBeadId, selectedTrackId]);
+
+  const beadPathStep = useMemo(() => {
+    if (!activeBead) return null;
+    const t = LEARNING_TRACKS.find((x) => x.id === activeBead.trackId);
+    return t?.steps.find((s) => s.id === activeBead.stepId) ?? null;
+  }, [activeBead]);
 
   useEffect(() => {
     return () => {
@@ -174,62 +127,32 @@ export default function LearnPage() {
     };
   }, []);
 
-  function syncUrl(
-    trackId: string,
-    stepId?: string | null,
-    thread?: { threadId?: string | null; beadId?: string | null } | null,
-  ) {
+  function syncUrl(opts: {
+    trackId?: string | null;
+    stepId?: string | null;
+    threadId?: string | null;
+    beadId?: string | null;
+  }) {
     if (!urlReadyRef.current) return;
-    const threadId = thread === null ? null : (thread?.threadId ?? activeThreadId);
-    const beadId = thread === null ? null : (thread?.beadId ?? activeBeadId);
-    router.replace(
-      learnHref({
-        trackId,
-        stepId,
-        threadId: threadId || null,
-        beadId: beadId || null,
-      }),
-      { scroll: false },
-    );
+    router.replace(learnHref(opts), { scroll: false });
   }
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     const { trackId, stepId, threadId, beadId } = parseLearnSearch(window.location.search);
-    if (trackId && LEARNING_TRACKS.some((x) => x.id === trackId)) {
-      setSelectedTrackId(trackId);
-    }
-    if (stepId) {
-      setOpenStepId(stepId);
-      pendingScrollRef.current = stepId;
-    }
     if (threadId && findThread(threadId)) {
       setActiveThreadId(threadId);
       const bead = beadId && findBead(findThread(threadId)!, beadId);
-      if (bead) {
-        setActiveBeadId(bead.id);
-        setSelectedTrackId(bead.trackId);
-        setOpenStepId(bead.stepId);
-        pendingScrollRef.current = bead.stepId;
-      } else if (findThread(threadId)!.steps[0]) {
-        const first = findThread(threadId)!.steps[0];
-        setActiveBeadId(first.id);
+      if (bead) setActiveBeadId(bead.id);
+      else setActiveBeadId(null);
+    } else if (trackId && LEARNING_TRACKS.some((x) => x.id === trackId)) {
+      setSelectedTrackId(trackId);
+      if (stepId) {
+        setOpenStepId(stepId);
+        pendingScrollRef.current = stepId;
       }
     }
     urlReadyRef.current = true;
-  }, []);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    function scrollToThreadsHash() {
-      if (window.location.hash !== "#threads") return;
-      window.setTimeout(() => {
-        document.getElementById("threads")?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 80);
-    }
-    scrollToThreadsHash();
-    window.addEventListener("hashchange", scrollToThreadsHash);
-    return () => window.removeEventListener("hashchange", scrollToThreadsHash);
   }, []);
 
   useEffect(() => {
@@ -252,26 +175,38 @@ export default function LearnPage() {
     }
   }
 
+  function goHome() {
+    clearThreadMode();
+    setSelectedTrackId(null);
+    setOpenStepId(null);
+    syncUrl({});
+  }
+
+  function openLineageMap() {
+    clearThreadMode();
+    setSelectedTrackId(RECOMMENDED_SPINE[0]);
+    setOpenStepId(null);
+    syncUrl({ trackId: RECOMMENDED_SPINE[0] });
+  }
+
   function selectTrack(trackId: string) {
     clearThreadMode();
     setSelectedTrackId(trackId);
     setOpenStepId(null);
-    syncUrl(trackId, null, null);
+    syncUrl({ trackId });
     requestAnimationFrame(() => {
       pathSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }
 
-  /** Path-mode jump (hero, daily sit, spine) — leaves any active thread. */
   function continueTo(trackId: string, stepId: string) {
     clearThreadMode();
     setSelectedTrackId(trackId);
     setOpenStepId(stepId);
     pendingScrollRef.current = stepId;
-    syncUrl(trackId, stepId, null);
+    syncUrl({ trackId, stepId });
   }
 
-  /** Thread-mode jump — keeps horizontal context + next-bead chrome. */
   function openBead(threadId: string, beadId: string) {
     const thread = findThread(threadId);
     const bead = thread && findBead(thread, beadId);
@@ -281,12 +216,21 @@ export default function LearnPage() {
       advanceTimerRef.current = null;
     }
     setThreadCeremonyId(null);
+    setSelectedTrackId(null);
+    setOpenStepId(null);
     setActiveThreadId(threadId);
     setActiveBeadId(beadId);
-    setSelectedTrackId(bead.trackId);
-    setOpenStepId(bead.stepId);
-    pendingScrollRef.current = bead.stepId;
-    syncUrl(bead.trackId, bead.stepId, { threadId, beadId });
+    syncUrl({ threadId, beadId });
+  }
+
+  function openThread(threadId: string) {
+    if (!findThread(threadId)) return;
+    setThreadCeremonyId(null);
+    setSelectedTrackId(null);
+    setOpenStepId(null);
+    setActiveThreadId(threadId);
+    setActiveBeadId(null);
+    syncUrl({ threadId });
   }
 
   function startThread(threadId: string) {
@@ -297,26 +241,39 @@ export default function LearnPage() {
   }
 
   function leaveThread() {
-    clearThreadMode();
-    syncUrl(selectedTrackId, openStepId === "__none__" ? null : openStepId, null);
+    goHome();
   }
 
-  /** Finish thread mode but keep the current path gate open. */
   function descendPathFromThread() {
+    if (!activeBead) {
+      goHome();
+      return;
+    }
+    const trackId = activeBead.trackId;
+    const stepId = activeBead.stepId;
     setActiveThreadId(null);
     setActiveBeadId(null);
     setThreadCeremonyId(null);
-    syncUrl(selectedTrackId, openStepId === "__none__" ? null : openStepId, null);
+    setSelectedTrackId(trackId);
+    setOpenStepId(stepId);
+    pendingScrollRef.current = stepId;
+    syncUrl({ trackId, stepId });
   }
 
   function backToThreadMap() {
-    setThreadCeremonyId(null);
-    requestAnimationFrame(() => {
-      document.getElementById("threads")?.scrollIntoView({ behavior: "smooth", block: "start" });
-      if (activeThreadId) {
-        document.getElementById(`thread-${activeThreadId}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-    });
+    if (activeThreadId) {
+      openThread(activeThreadId);
+      return;
+    }
+    goHome();
+  }
+
+  function beginSit(sit: DailySitPick) {
+    if (sit.mode === "thread") {
+      openBead(sit.threadId, sit.beadId);
+      return;
+    }
+    continueTo(sit.track.id, sit.step.id);
   }
 
   function goToStepIndex(targetIdx: number, opts?: { force?: boolean }) {
@@ -333,34 +290,31 @@ export default function LearnPage() {
     }
     setOpenStepId(s.id);
     pendingScrollRef.current = s.id;
-    syncUrl(track.id, s.id, null);
+    syncUrl({ trackId: track.id, stepId: s.id });
   }
 
-  function onGateComplete(trackId: string, stepId: string) {
+  function onPathGateComplete(trackId: string, stepId: string) {
     const key = stepKey(trackId, stepId);
     if (!progress[key]) toggle(trackId, stepId);
-
-    if (!activeThreadId || !activeBeadId) {
-      // Path mode: flow straight into the next gate instead of leaving the
-      // reader to scroll down and expand another dropdown. A short beat lets
-      // the "complete" state register before the next gate opens in place.
-      const idx = track.steps.findIndex((x) => x.id === stepId);
-      const next = idx >= 0 ? track.steps[idx + 1] : undefined;
-      if (next) {
-        if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
-        advanceTimerRef.current = setTimeout(() => {
-          setOpenStepId(next.id);
-          pendingScrollRef.current = next.id;
-          syncUrl(track.id, next.id, null);
-          advanceTimerRef.current = null;
-        }, 450);
-      }
-      return;
+    const idx = track.steps.findIndex((x) => x.id === stepId);
+    const next = idx >= 0 ? track.steps[idx + 1] : undefined;
+    if (next) {
+      if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = setTimeout(() => {
+        setOpenStepId(next.id);
+        pendingScrollRef.current = next.id;
+        syncUrl({ trackId: track.id, stepId: next.id });
+        advanceTimerRef.current = null;
+      }, 450);
     }
-    const thread = findThread(activeThreadId);
-    if (!thread) return;
-    const idx = beadIndex(thread, activeBeadId);
-    const next = idx >= 0 ? thread.steps[idx + 1] : undefined;
+  }
+
+  function onThemeBeadComplete() {
+    if (!activeThreadId || !activeBeadId || !activeThread) return;
+    const key = threadKey(activeThreadId, activeBeadId);
+    if (!progress[key]) toggleThread(activeThreadId, activeBeadId);
+    const idx = beadIndex(activeThread, activeBeadId);
+    const next = idx >= 0 ? activeThread.steps[idx + 1] : undefined;
     if (next) {
       if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
       advanceTimerRef.current = setTimeout(() => {
@@ -370,29 +324,16 @@ export default function LearnPage() {
       return;
     }
     setThreadCeremonyId(activeThreadId);
-    requestAnimationFrame(() => {
-      pathSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
   }
 
   function openStep(stepId: string, isOpen: boolean) {
-    if (threadMode) {
-      // In thread focus, the single gate stays open — collapse would empty the view.
-      return;
-    }
     if (isOpen) {
       setOpenStepId("__none__");
-      syncUrl(selectedTrackId, null);
+      syncUrl({ trackId: selectedTrackId, stepId: null });
       return;
     }
     setOpenStepId(stepId);
-    const thread = activeThreadId ? findThread(activeThreadId) : undefined;
-    const bead = thread && activeBeadId ? findBead(thread, activeBeadId) : undefined;
-    const stillOnBead = Boolean(
-      bead && bead.stepId === stepId && bead.trackId === selectedTrackId,
-    );
-    if (!stillOnBead) clearThreadMode();
-    syncUrl(selectedTrackId, stepId, stillOnBead ? undefined : null);
+    syncUrl({ trackId: selectedTrackId, stepId });
     requestAnimationFrame(() => {
       stepRefs.current[stepId]?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -403,136 +344,206 @@ export default function LearnPage() {
       toggle(trackId, stepId);
       return;
     }
-    if (threadMode) return;
     openStep(stepId, openStepId === stepId);
   }
+
+  const beadDone = Boolean(
+    activeThreadId && activeBeadId && progress[threadKey(activeThreadId, activeBeadId)],
+  );
+  const isLastBead =
+    Boolean(activeThread && activeBeadId) &&
+    beadIndex(activeThread!, activeBeadId!) >= activeThread!.steps.length - 1;
 
   return (
     <main className="page-shell page-shell--reading">
       <div className="section-stack">
-      <div>
-      <header className="library-header">
-        <div className="library-header__body">
-          <p className="passage-reading__meta">Guided study</p>
-          <h1 className="library-header__title">Paths</h1>
-          <p className="library-header__lede">
-            Descend a path gate by gate, or trace one insight across traditions with a thread.
-            Each gate is a practice, not a playlist item.
-          </p>
-        </div>
-      </header>
-
-      <section className="mt-6">
-        <button
-          type="button"
-          onClick={() => continueTo(heroTrack.id, heroNextStep.id)}
-          className="learn-continue group w-full max-w-[var(--reading-measure)] text-left"
-        >
-          <p className="passage-reading__meta">{heroLabel}</p>
-          <div className="mt-2 flex flex-wrap items-end justify-between gap-3">
-            <div className="min-w-0">
-              <h2 className="text-2xl font-medium leading-tight tracking-[-0.02em] text-[rgb(250_237_205)] sm:text-[1.65rem]">
-                {heroTrack.title}
-              </h2>
-              <p className="soft mt-1.5 text-sm leading-relaxed">
-                {startedTrackId
-                  ? `Next · Step ${heroNextIndex + 1}: ${heroNextStep.title}`
-                  : heroTrack.focus}
-              </p>
-            </div>
-            <span className={buttonVariants({ size: "sm" })}>
-              {startedTrackId ? "Continue →" : "Begin →"}
-            </span>
-          </div>
-        </button>
-
-        <DailySitCard
-          sit={dailySit ?? { track: heroTrack, step: heroNextStep, stepIndex: heroNextIndex, kind: "next" }}
-          realmId={heroRealmId}
-          onBegin={() => {
-            const sit = dailySit ?? {
-              track: heroTrack,
-              step: heroNextStep,
-              stepIndex: heroNextIndex,
-              kind: "next" as const,
-            };
-            continueTo(sit.track.id, sit.step.id);
-          }}
-        />
-      </section>
-      </div>
-
-      <Section
-        eyebrow="The map"
-        title="Your branching path"
-        lead="Start at the root, branch into a realm, then zoom into a path and descend it gate by gate."
-      >
-        <PathTree
-          realms={LEARNING_REALMS}
-          trackById={trackById}
-          progress={progress}
-          hydrated={hydrated}
-          selectedTrackId={selectedTrackId}
-          recommendedNextId={recommendedNextId}
-          anyProgress={hydrated && anyProgress}
-          onSelectTrack={selectTrack}
-          onOpenGate={continueTo}
-        />
-      </Section>
-
-      <section ref={pathSectionRef} className="learn-path scroll-mt-24">
-        {(threadMode || threadCeremonyId) && activeThreadId && activeBeadId ? (
-          <ThreadContextBar
-            threadId={activeThreadId}
-            beadId={activeBeadId}
+        {view === "home" ? (
+          <LearnThemesHome
             progress={progress}
+            completedAt={completedAt}
+            hydrated={hydrated}
+            dailySit={dailySit}
             onOpenBead={openBead}
-            onLeaveThread={leaveThread}
-            onBackToThread={backToThreadMap}
+            onOpenThread={openThread}
+            onOpenLineage={openLineageMap}
+            onBeginSit={beginSit}
           />
         ) : null}
 
-        {threadCeremonyId ? (
-          <div className="relative mt-2">
-            <ThreadCompleteCard
-              threadId={threadCeremonyId}
-              progress={progress}
-              onBackToMap={backToThreadMap}
-              onTraceAnother={startThread}
-              onDescendPath={descendPathFromThread}
-              onLeaveThread={leaveThread}
-            />
-          </div>
-        ) : (
+        {view === "journey" && activeThread ? (
+          <LearnThreadJourney
+            thread={activeThread}
+            progress={progress}
+            onOpenBead={openBead}
+            onBackHome={goHome}
+          />
+        ) : null}
+
+        {view === "bead" ? (
+          <section ref={pathSectionRef} className="learn-path scroll-mt-24">
+            {activeThreadId && activeBeadId ? (
+              <ThreadContextBar
+                threadId={activeThreadId}
+                beadId={activeBeadId}
+                progress={progress}
+                onOpenBead={openBead}
+                onLeaveThread={leaveThread}
+                onBackToThread={backToThreadMap}
+              />
+            ) : null}
+
+            {threadCeremonyId ? (
+              <ThreadCompleteCard
+                threadId={threadCeremonyId}
+                progress={progress}
+                onBackToMap={goHome}
+                onTraceAnother={startThread}
+                onDescendPath={descendPathFromThread}
+                onLeaveThread={leaveThread}
+              />
+            ) : activeThread && activeBead && beadPathStep ? (
+              <article className="learn-gate border-t border-amber-200/35 py-5">
+                <p className="passage-reading__meta">Bead well</p>
+                <h2 className="library-header__title mt-2">{activeThread.title}</h2>
+                <p className="library-header__lede">{activeThread.thesis}</p>
+                <p className="mt-3 font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
+                  {activeBead.tradition} · {beadPathStep.title}
+                </p>
+
+                <div className="mt-6 max-w-[var(--reading-measure)] space-y-5 border-t border-[rgb(240_201_121_/_0.14)] pt-5">
+                  <div>
+                    <p className="passage-layer__label">The move</p>
+                    <p className="mt-2 text-base leading-relaxed text-stone-100">{activeBead.move}</p>
+                  </div>
+                  <div>
+                    <p className="passage-layer__label">Homology</p>
+                    <p className="mt-2 leading-relaxed text-stone-200">{activeBead.homology}</p>
+                  </div>
+                  <div>
+                    <p className="passage-layer__label">Divergence</p>
+                    <p className="mt-2 leading-relaxed text-stone-200">{activeBead.divergence}</p>
+                  </div>
+                </div>
+
+                <div className="mt-6">
+                  <h3 className="text-2xl leading-tight text-stone-100">{beadPathStep.title}</h3>
+                  <p className="soft mt-2 text-base leading-relaxed">{beadPathStep.orientation}</p>
+                </div>
+
+                <PathStepWell
+                  trackId={activeBead.trackId}
+                  trackTitle={trackById[activeBead.trackId]?.title || activeBead.trackId}
+                  step={beadPathStep}
+                  items={items}
+                  threadId={activeThreadId}
+                  beadId={activeBeadId}
+                >
+                  {prevBead ? (
+                    <div className="max-w-[var(--reading-measure)] border-t border-[rgb(240_201_121_/_0.14)] pt-4">
+                      <p className="font-sans text-xs uppercase tracking-[0.16em] text-amber-200/75">
+                        Across the theme
+                      </p>
+                      <p className="mt-2 text-sm leading-relaxed text-stone-300">
+                        Previous ({prevBead.tradition}): {prevBead.move}
+                      </p>
+                    </div>
+                  ) : null}
+                </PathStepWell>
+
+                <StepIntegrationGate
+                  stepId={`${activeThreadId}:${activeBeadId}`}
+                  integration={activeThread.integration}
+                  theme={{
+                    move: activeBead.move,
+                    previousTradition: prevBead?.tradition,
+                  }}
+                  done={beadDone}
+                  completeLabel={isLastBead ? "Finish theme" : "Next bead →"}
+                  onComplete={onThemeBeadComplete}
+                />
+
+                {beadDone ? (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {!isLastBead ? (
+                      <Button
+                        type="button"
+                        size="sm"
+                        onClick={() => {
+                          if (!activeBeadId) return;
+                          const idx = beadIndex(activeThread, activeBeadId);
+                          const next = activeThread.steps[idx + 1];
+                          if (next) openBead(activeThread.id, next.id);
+                        }}
+                      >
+                        Next bead →
+                      </Button>
+                    ) : (
+                      <Button type="button" size="sm" onClick={() => setThreadCeremonyId(activeThread.id)}>
+                        Finish theme
+                      </Button>
+                    )}
+                  </div>
+                ) : null}
+
+                <div className="mt-6 flex flex-wrap gap-2 border-t border-[rgb(240_201_121_/_0.1)] pt-4">
+                  <Button type="button" variant="secondary" size="sm" onClick={descendPathFromThread}>
+                    Descend this lineage
+                  </Button>
+                </div>
+              </article>
+            ) : null}
+          </section>
+        ) : null}
+
+        {view === "lineage" ? (
           <>
-            <div className="relative flex flex-wrap items-start justify-between gap-4">
-              <div className="max-w-[var(--reading-measure)]">
-                {threadMode && activeThread && activeBead ? (
-                  <>
-                    <p className="passage-reading__meta">Thread gate</p>
-                    <h2 className="library-header__title mt-2">{activeThread.title}</h2>
-                    <p className="library-header__lede">{activeBead.insight}</p>
-                    <p className="mt-3 font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
-                      {activeBead.tradition} · from path “{track.title}”
-                    </p>
-                    <p className="mt-2 max-w-[var(--reading-measure)] text-sm leading-relaxed text-stone-400">
-                      Path gates stay visible below — the current bead is highlighted. Complete it to advance along the
-                      thread, or leave when you want the full path again.
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <p className="passage-reading__meta">Current path</p>
-                    <h2 className="library-header__title mt-2">{track.title}</h2>
-                    <p className="library-header__lede">{track.outcome}</p>
-                    <p className="mt-3 max-w-[var(--reading-measure)] leading-relaxed text-stone-300">{track.arc}</p>
-                    <p className="mt-3 font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
-                      {track.level} · {track.estimatedSessions}
-                    </p>
-                  </>
-                )}
+            <header className="library-header">
+              <div className="library-header__body">
+                <button
+                  type="button"
+                  onClick={goHome}
+                  className="font-sans text-[10px] uppercase tracking-[0.16em] text-amber-200/55 hover:text-amber-100"
+                >
+                  ← Themes
+                </button>
+                <p className="passage-reading__meta mt-4">Lineage</p>
+                <h1 className="library-header__title">Walk a path</h1>
+                <p className="library-header__lede">
+                  A lineage is the deep well under a bead — one tradition, gate by gate.
+                  Themes remain the primary way in.
+                </p>
               </div>
-              {!threadMode ? (
+            </header>
+
+            <Section
+              eyebrow="The map"
+              title="Your branching path"
+              lead="Start at the root, branch into a realm, then zoom into a path and descend it gate by gate."
+            >
+              <PathTree
+                realms={LEARNING_REALMS}
+                trackById={trackById}
+                progress={progress}
+                hydrated={hydrated}
+                selectedTrackId={selectedTrackId ?? RECOMMENDED_SPINE[0]}
+                recommendedNextId={recommendedNextId}
+                anyProgress={hydrated && anyProgress}
+                onSelectTrack={selectTrack}
+                onOpenGate={continueTo}
+              />
+            </Section>
+
+            <section ref={pathSectionRef} className="learn-path scroll-mt-24">
+              <div className="relative flex flex-wrap items-start justify-between gap-4">
+                <div className="max-w-[var(--reading-measure)]">
+                  <p className="passage-reading__meta">Current path</p>
+                  <h2 className="library-header__title mt-2">{track.title}</h2>
+                  <p className="library-header__lede">{track.outcome}</p>
+                  <p className="mt-3 max-w-[var(--reading-measure)] leading-relaxed text-stone-300">{track.arc}</p>
+                  <p className="mt-3 font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
+                    {track.level} · {track.estimatedSessions}
+                  </p>
+                </div>
                 <div className="flex flex-wrap items-center gap-2">
                   <Button
                     type="button"
@@ -582,19 +593,13 @@ export default function LearnPage() {
                     }}
                   />
                 </div>
-              ) : (
-                <Button type="button" onClick={descendPathFromThread} variant="secondary" size="sm">
-                  Show full path
-                </Button>
-              )}
-            </div>
-            {importStatus ? (
-              <p className="relative mt-3 font-sans text-xs text-amber-200/80" role="status">
-                {importStatus}
-              </p>
-            ) : null}
+              </div>
+              {importStatus ? (
+                <p className="relative mt-3 font-sans text-xs text-amber-200/80" role="status">
+                  {importStatus}
+                </p>
+              ) : null}
 
-            {!threadMode ? (
               <div className={`relative mt-6 ${hydrated ? "" : "opacity-50"}`}>
                 <div className="flex items-center justify-between font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
                   <span>Progress</span>
@@ -608,62 +613,23 @@ export default function LearnPage() {
                   )}
                 />
               </div>
-            ) : null}
 
-            <div className="relative mt-8 space-y-5">
-              {!threadMode ? (
+              <div className="relative mt-8 space-y-5">
                 <div className="absolute bottom-8 left-6 top-8 hidden w-px bg-gradient-to-b from-transparent via-amber-200/25 to-transparent sm:block" />
-              ) : null}
-              {visibleSteps.map((s) => {
-                const pathIdx = track.steps.findIndex((x) => x.id === s.id);
-                const idx = pathIdx >= 0 ? pathIdx : 0;
-                const done = !!progress[stepKey(track.id, s.id)];
-                const current = idx === activeIndex && !done;
-                const isThreadFocus = Boolean(threadMode && activeBead?.stepId === s.id);
-                const isOpen =
-                  isThreadFocus ||
-                  (!threadMode && (openStepId === s.id || (openStepId === null && current)));
-                const item = matchStepItem(s, items);
-                const supporting = (s.supportingPassageIds || [])
-                  .map((id) => resolveById(items, id))
-                  .filter((v): v is VerseItem => Boolean(v));
-                const memberships = threadMode ? [] : threadsForPathStep(track.id, s.id);
-                const backHref = learnHref({
-                  trackId: track.id,
-                  stepId: s.id,
-                  threadId: activeThreadId,
-                  beadId: activeBeadId,
-                });
-                const readHref = item
-                  ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
-                  : `/read`;
-                const chatParams = new URLSearchParams();
-                if (item) chatParams.set("verse_id", item._id);
-                chatParams.set("mode", s.chatMode || "question");
-                chatParams.set("q", s.chatPrompt);
-                chatParams.set("back", backHref);
-                const chatHref = `/chat?${chatParams.toString()}`;
-                const openLabel = item ? "Open in Library" : "Browse Library";
-                const beadNum =
-                  threadMode && activeThread && activeBeadId
-                    ? beadIndex(activeThread, activeBeadId) + 1
-                    : idx + 1;
-                const isLastBead =
-                  threadMode &&
-                  activeThread &&
-                  activeBeadId &&
-                  beadIndex(activeThread, activeBeadId) >= activeThread.steps.length - 1;
-                return (
-                  <article
-                    key={s.id}
-                    ref={(el) => {
-                      stepRefs.current[s.id] = el;
-                    }}
-                    className={`relative scroll-mt-24 ${threadMode ? "" : "sm:pl-16"} ${
-                      threadMode && !isThreadFocus ? "opacity-35" : current || isOpen ? "" : "opacity-90"
-                    }`}
-                  >
-                    {!threadMode ? (
+                {track.steps.map((s) => {
+                  const idx = track.steps.findIndex((x) => x.id === s.id);
+                  const done = !!progress[stepKey(track.id, s.id)];
+                  const current = idx === activeIndex && !done;
+                  const isOpen = openStepId === s.id || (openStepId === null && current);
+                  const memberships = threadsForPathStep(track.id, s.id);
+                  return (
+                    <article
+                      key={s.id}
+                      ref={(el) => {
+                        stepRefs.current[s.id] = el;
+                      }}
+                      className={`relative scroll-mt-24 sm:pl-16 ${current || isOpen ? "" : "opacity-90"}`}
+                    >
                       <button
                         type="button"
                         onClick={() => openOrUnmark(track.id, s.id, done)}
@@ -678,50 +644,39 @@ export default function LearnPage() {
                       >
                         {done ? "✓" : idx + 1}
                       </button>
-                    ) : null}
 
-                    <div
-                      className={`learn-gate border-t py-5 ${
-                        isThreadFocus || current
-                          ? "border-amber-200/35"
-                          : "border-[rgb(240_201_121_/_0.12)]"
-                      }`}
-                    >
-                      <div className="flex flex-wrap items-center justify-between gap-3">
-                        <p className="font-sans text-xs uppercase tracking-[0.2em] text-amber-200/80">
-                          {isThreadFocus
-                            ? `Bead ${beadNum}${done ? " • complete" : ""}`
-                            : `Step ${idx + 1} ${current ? "• next up" : done ? "• complete" : ""}`}
-                        </p>
-                        {threadMode ? null : done ? (
-                          <Button
-                            type="button"
-                            variant="ghost"
-                            size="sm"
-                            onClick={() => toggle(track.id, s.id)}
-                            className="rounded-full border border-emerald-300/50 text-emerald-200 hover:bg-emerald-300/10 hover:text-emerald-100"
-                          >
-                            Done · reopen
-                          </Button>
-                        ) : (
-                          <Button
-                            type="button"
-                            variant="ghost"
-                            size="sm"
-                            onClick={() => openStep(s.id, isOpen)}
-                            className="rounded-full border border-amber-200/30 text-amber-100 hover:bg-amber-200/10"
-                          >
-                            {isOpen ? "Collapse" : "Open step"}
-                          </Button>
-                        )}
-                      </div>
-
-                      {threadMode ? (
-                        <div className="mt-3">
-                          <h3 className="text-2xl leading-tight text-stone-100">{s.title}</h3>
-                          <p className="soft mt-2 text-base leading-relaxed">{s.orientation}</p>
+                      <div
+                        className={`learn-gate border-t py-5 ${
+                          current ? "border-amber-200/35" : "border-[rgb(240_201_121_/_0.12)]"
+                        }`}
+                      >
+                        <div className="flex flex-wrap items-center justify-between gap-3">
+                          <p className="font-sans text-xs uppercase tracking-[0.2em] text-amber-200/80">
+                            Step {idx + 1} {current ? "• next up" : done ? "• complete" : ""}
+                          </p>
+                          {done ? (
+                            <Button
+                              type="button"
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => toggle(track.id, s.id)}
+                              className="rounded-full border border-emerald-300/50 text-emerald-200 hover:bg-emerald-300/10 hover:text-emerald-100"
+                            >
+                              Done · reopen
+                            </Button>
+                          ) : (
+                            <Button
+                              type="button"
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => openStep(s.id, isOpen)}
+                              className="rounded-full border border-amber-200/30 text-amber-100 hover:bg-amber-200/10"
+                            >
+                              {isOpen ? "Collapse" : "Open step"}
+                            </Button>
+                          )}
                         </div>
-                      ) : (
+
                         <button
                           type="button"
                           onClick={() => openStep(s.id, isOpen)}
@@ -736,181 +691,40 @@ export default function LearnPage() {
                             </span>
                           ) : null}
                         </button>
-                      )}
 
-                      {memberships.length > 0 ? (
-                        <div className="mt-3 flex flex-wrap items-center gap-2">
-                          <span className="font-sans text-[9px] uppercase tracking-[0.14em] text-stone-500">Also on</span>
-                          {memberships.map(({ thread, bead }) => {
-                            const onThis = activeThreadId === thread.id && activeBeadId === bead.id;
-                            return (
+                        {memberships.length > 0 ? (
+                          <div className="mt-3 flex flex-wrap items-center gap-2">
+                            <span className="font-sans text-[9px] uppercase tracking-[0.14em] text-stone-500">
+                              Also a bead on
+                            </span>
+                            {memberships.map(({ thread, bead }) => (
                               <button
                                 key={`${thread.id}:${bead.id}`}
                                 type="button"
                                 onClick={() => openBead(thread.id, bead.id)}
-                                className={`rounded-full border px-2.5 py-1 font-sans text-[10px] uppercase tracking-[0.12em] transition ${
-                                  onThis
-                                    ? "border-amber-200/50 bg-amber-200/15 text-amber-100"
-                                    : "border-white/12 text-amber-200/70 hover:border-amber-200/35 hover:text-amber-100"
-                                }`}
+                                className="rounded-full border border-white/12 px-2.5 py-1 font-sans text-[10px] uppercase tracking-[0.12em] text-amber-200/70 transition hover:border-amber-200/35 hover:text-amber-100"
                               >
                                 {thread.glyph} {thread.title}
                               </button>
-                            );
-                          })}
-                        </div>
-                      ) : null}
-
-                      {isOpen ? (
-                        <div className="mt-4 space-y-4">
-                          {isThreadFocus && activeBead ? (
-                            <div className="max-w-[var(--reading-measure)] border-t border-[rgb(240_201_121_/_0.14)] pt-4">
-                              <p className="passage-layer__label">Bead insight</p>
-                              <p className="mt-2 text-base leading-relaxed text-stone-100">{activeBead.insight}</p>
-                              {prevBead ? (
-                                <div className="mt-4 space-y-3">
-                                  <p className="font-sans text-xs uppercase tracking-[0.16em] text-amber-200/75">
-                                    Compare across the thread
-                                  </p>
-                                  <p className="text-sm leading-relaxed text-stone-300">
-                                    Previous bead ({prevBead.tradition}): “{prevBead.insight}”
-                                  </p>
-                                  <p className="text-sm leading-relaxed text-stone-300">
-                                    Where do these two traditions meet — and where do they diverge?
-                                  </p>
-                                  <Link
-                                    href={`/chat?mode=compare&q=${encodeURIComponent(
-                                      `Compare these two insights on one thread:\n1) ${prevBead.tradition}: ${prevBead.insight}\n2) ${activeBead.tradition}: ${activeBead.insight}\nWhere do they resonate, and where do they diverge?`,
-                                    )}&back=${encodeURIComponent(backHref)}`}
-                                    className={buttonVariants({ variant: "secondary", size: "sm" })}
-                                  >
-                                    Compare in chat →
-                                  </Link>
-                                </div>
-                              ) : null}
-                            </div>
-                          ) : null}
-
-                          <p className="reading-prose max-w-[var(--reading-measure)] leading-relaxed text-stone-200">
-                            {s.teaching}
-                          </p>
-
-                          <div className="passage-practice--plain mt-6">
-                            <p className="passage-layer__label">Key idea</p>
-                            <p className="passage-practice__body">{s.keyIdea}</p>
+                            ))}
                           </div>
+                        ) : null}
 
-                          {s.misconception ? (
-                            <div className="mt-5 max-w-[var(--reading-measure)] border-t border-rose-300/20 pt-4">
-                              <p className="font-sans text-xs uppercase tracking-[0.16em] text-rose-200/80">
-                                Common misunderstanding
-                              </p>
-                              <p className="mt-2 text-sm leading-relaxed text-stone-200">{s.misconception}</p>
-                            </div>
-                          ) : null}
-
+                        {isOpen ? (
                           <div>
-                            <p className="layer-heading">Study these passages</p>
-                            <div className="mt-2 space-y-2">
-                              {item ? (
-                                <>
-                                  <PassageLink item={item} primary backHref={backHref} />
-                                  <PassageMaturityBadge item={item} />
-                                  <OriginalReliabilityBadge item={item} />
-                                </>
-                              ) : (
-                                <p className="rounded-2xl border border-rose-300/25 bg-rose-300/5 p-3 font-sans text-sm text-stone-200">
-                                  Primary passage missing from the Library
-                                  {s.passageId ? (
-                                    <>
-                                      {" "}
-                                      (<code className="text-rose-100/90">{s.passageId}</code>)
-                                    </>
-                                  ) : null}
-                                  . Supporting texts below may still be available; the path pin needs a corpus fix.
-                                </p>
-                              )}
-                              {supporting.map((sv) => (
-                                <PassageLink key={sv._id} item={sv} backHref={backHref} />
-                              ))}
-                            </div>
-                          </div>
-
-                          <div className="passage-practice--plain">
-                            <p className="passage-layer__label">Practice</p>
-                            <p className="passage-practice__body">{s.practice}</p>
-                          </div>
-
-                          {item ? (
-                            <JournalPanel passage={item} prompt={s.journalPrompt} />
-                          ) : (
-                            <JournalPanel
-                              contextId={learnStepContextId(track.id, s.id, {
-                                threadId: activeThreadId,
-                                beadId: activeBeadId,
-                              })}
-                              contextTitle={`${track.title} · ${s.title}`}
-                              prompt={s.journalPrompt}
+                            <PathStepWell
+                              trackId={track.id}
+                              trackTitle={track.title}
+                              step={s}
+                              items={items}
                             />
-                          )}
-
-                          <StepIntegrationGate
-                            stepId={s.id}
-                            integration={s.integration}
-                            keyIdea={s.keyIdea}
-                            done={done}
-                            completeLabel={
-                              threadMode
-                                ? isLastBead
-                                  ? "Mark complete & finish thread"
-                                  : "Mark complete & next bead →"
-                                : undefined
-                            }
-                            onComplete={() => onGateComplete(track.id, s.id)}
-                          />
-
-                          {threadMode && done ? (
-                            <div className="flex flex-wrap gap-2">
-                              {!isLastBead ? (
-                                <Button
-                                  type="button"
-                                  size="sm"
-                                  onClick={() => {
-                                    if (!activeThread || !activeBeadId) return;
-                                    const idx = beadIndex(activeThread, activeBeadId);
-                                    const next = activeThread.steps[idx + 1];
-                                    if (next) openBead(activeThread.id, next.id);
-                                  }}
-                                >
-                                  Next bead →
-                                </Button>
-                              ) : (
-                                <Button
-                                  type="button"
-                                  size="sm"
-                                  onClick={() => {
-                                    if (activeThreadId) setThreadCeremonyId(activeThreadId);
-                                  }}
-                                >
-                                  Finish thread
-                                </Button>
-                              )}
-                            </div>
-                          ) : null}
-
-                          <div className="flex flex-wrap gap-2 pt-1">
-                            <Link href={readHref} className={buttonVariants({ size: "sm" })}>
-                              {openLabel}
-                            </Link>
-                            <Link href={chatHref} className={buttonVariants({ variant: "secondary", size: "sm" })}>
-                              {actionLabel(s.chatMode)}
-                            </Link>
-                            <Link href="/journal" className={buttonVariants({ variant: "secondary", size: "sm" })}>
-                              All journal notes
-                            </Link>
-                          </div>
-
-                          {!threadMode ? (
+                            <StepIntegrationGate
+                              stepId={s.id}
+                              integration={s.integration}
+                              keyIdea={s.keyIdea}
+                              done={done}
+                              onComplete={() => onPathGateComplete(track.id, s.id)}
+                            />
                             <div className="flex items-center justify-between gap-3 border-t border-white/10 pt-4">
                               <Button
                                 type="button"
@@ -935,25 +749,16 @@ export default function LearnPage() {
                                 </span>
                               )}
                             </div>
-                          ) : null}
-                        </div>
-                      ) : null}
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+            </section>
           </>
-        )}
-      </section>
-
-      <ThreadsConstellation
-        progress={progress}
-        hydrated={hydrated}
-        activeThreadId={activeThreadId}
-        activeBeadId={activeBeadId}
-        onOpenBead={openBead}
-      />
+        ) : null}
       </div>
 
       <Dialog open={resetOpen} onOpenChange={setResetOpen}>
@@ -961,7 +766,7 @@ export default function LearnPage() {
           <DialogHeader>
             <DialogTitle className="text-xl text-amber-100">Reset path progress?</DialogTitle>
             <DialogDescription className="soft text-base leading-relaxed">
-              Clear all gates on “{track.title}”. This cannot be undone.
+              Clear all gates on “{track.title}”. Theme beads stay. This cannot be undone.
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="border-amber-200/10 bg-transparent">

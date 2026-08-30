@@ -1,10 +1,9 @@
-// HTTP client for Convex to avoid BigInt compatibility issues on native Lynx
-const CONVEX_URL = process.env.NEXT_PUBLIC_CONVEX_URL || "";
+const CONVEX_URL = (process.env.NEXT_PUBLIC_CONVEX_URL || "").replace(/\/$/, "");
 
 interface ConvexHttpClient {
-  query: (name: string, args: any) => Promise<any>;
-  mutation: (name: string, args: any) => Promise<any>;
-  action: (name: string, args: any) => Promise<any>;
+  query: (name: string, args: Record<string, unknown>) => Promise<unknown>;
+  mutation: (name: string, args: Record<string, unknown>) => Promise<unknown>;
+  action: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
 
 let authToken: string | null = null;
@@ -17,10 +16,14 @@ export function getAuthToken(): string | null {
   return authToken;
 }
 
+export function isConvexConfigured(): boolean {
+  return Boolean(CONVEX_URL);
+}
+
 export async function convexFetch(
   functionName: string,
-  args: any,
-  type: "query" | "mutation" | "action" = "query"
+  args: Record<string, unknown> = {},
+  type: "query" | "mutation" | "action" = "query",
 ): Promise<any> {
   if (!CONVEX_URL) {
     throw new Error("NEXT_PUBLIC_CONVEX_URL not configured");
@@ -29,32 +32,27 @@ export async function convexFetch(
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
   };
-
   if (authToken) {
-    headers["Authorization"] = `Bearer ${authToken}`;
+    headers.Authorization = `Bearer ${authToken}`;
   }
 
-  const url = `${CONVEX_URL}/api/${type}/${functionName}`;
-
-  const response = await fetch(url, {
+  const response = await fetch(`${CONVEX_URL}/api/${type}`, {
     method: "POST",
     headers,
-    body: JSON.stringify(args),
+    body: JSON.stringify({ path: functionName, args, format: "json" }),
   });
 
-  if (!response.ok) {
-    const error = await response.text();
-    throw new Error(`Convex ${type} failed: ${error}`);
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok || data.status === "error") {
+    throw new Error(data.errorMessage || data.message || `Convex ${type} failed`);
   }
-
-  const data = await response.json();
   return data.value;
 }
 
 export function createHttpClient(): ConvexHttpClient {
   return {
-    query: (name: string, args: any) => convexFetch(name, args, "query"),
-    mutation: (name: string, args: any) => convexFetch(name, args, "mutation"),
-    action: (name: string, args: any) => convexFetch(name, args, "action"),
+    query: (name, args) => convexFetch(name, args, "query"),
+    mutation: (name, args) => convexFetch(name, args, "mutation"),
+    action: (name, args) => convexFetch(name, args, "action"),
   };
 }

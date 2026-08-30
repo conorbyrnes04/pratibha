@@ -4,6 +4,7 @@ import {
   type CompletedAtMap,
   type ProgressMap,
 } from "@/lib/learn/progress";
+import { CONVEX_ENABLED } from "@/lib/convexConfigured";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 
@@ -58,7 +59,16 @@ function mergeCompletedAt(local: CompletedAtMap, remote: CompletedAtMap): Comple
   return out;
 }
 
-export function useSyncLearnProgress() {
+function useSyncLearnProgressLocal() {
+  return {
+    sync: async (): Promise<LearnProgressSyncResult> => {
+      const local = loadLearnProgressBundle();
+      return { progress: local.progress, completedAt: local.completedAt, status: "local" };
+    },
+  };
+}
+
+function useSyncLearnProgressConvex() {
   const remoteProgress = useQuery(api.learnProgress.get);
   const upsert = useMutation(api.learnProgress.upsert);
 
@@ -91,3 +101,7 @@ export function useSyncLearnProgress() {
 
   return { sync };
 }
+
+export const useSyncLearnProgress = CONVEX_ENABLED
+  ? useSyncLearnProgressConvex
+  : useSyncLearnProgressLocal;

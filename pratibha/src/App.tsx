@@ -19,18 +19,14 @@ function AppContent() {
     );
   }
 
-  if (!user && currentPage !== "login") {
-    setCurrentPage("login");
-  }
-
   return (
     <view style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
-      {user && <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />}
+      <Navigation currentPage={currentPage} onNavigate={setCurrentPage} signedIn={Boolean(user)} />
       <scroll-view style={{ flex: 1 }}>
         {currentPage === "login" && <LoginPage onLogin={() => setCurrentPage("home")} />}
-        {currentPage === "home" && user && <HomePage />}
-        {currentPage === "read" && user && <ReadPage />}
-        {currentPage === "journal" && user && <JournalPage />}
+        {currentPage === "home" && <HomePage />}
+        {currentPage === "read" && <ReadPage />}
+        {currentPage === "journal" && <JournalPage />}
       </scroll-view>
     </view>
   );

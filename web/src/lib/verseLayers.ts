@@ -48,6 +48,71 @@ function maybeHumanize(item: VerseItem, text?: string): string {
   return isTaoTeChing(item) ? humanizeTtcRefs(value) : value;
 }
 
+function itemBlob(item?: VerseItem): string {
+  return `${item?.collection || ""} ${item?.work_id || ""} ${item?._id || ""} ${item?.sutra_id || ""}`;
+}
+
+function isChuangTzu(item?: VerseItem): boolean {
+  return /chuang|zhuang/i.test(itemBlob(item));
+}
+
+/** Victorian / editor asides that leaked into study translations. */
+const EDITORIAL_ASIDE_RES = [
+  /\[[^\]]{0,160}(?:supplementary|spurious)[^\]]*\]/gi,
+  /The above is from[^.!?]{0,180}[.!?]/gi,
+  /It is interesting to note[^.!?]{0,280}[.!?]/gi,
+  /These words help to elucidate[^.!?]{0,280}[.!?]/gi,
+  /This is an anachronism\.[^.!?]{0,220}(?:\.[^.!?]{0,200}\.)?/gi,
+  /Tota formatio[^.!?]{0,220}[.!?]/gi,
+  /\bSwedenborg\.?/gi,
+  /Whose tutor he was\./gi,
+  /See (?:ch\.|chapter|p\.)\s*[\divx]+\.?/gi,
+  /These ["“]poles["”] are[^.!?]{0,220}[.!?]/gi,
+];
+
+function stripEditorialAsides(text: string): string {
+  let out = text;
+  for (const re of EDITORIAL_ASIDE_RES) {
+    out = out.replace(re, " ");
+  }
+  return out.replace(/[ \t]+/g, " ").replace(/\s+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+}
+
+function studyExcerpt(text: string, max = 900): string {
+  const compact = text.replace(/\s+/g, " ").trim();
+  if (compact.length <= max) return compact;
+  const slice = compact.slice(0, max);
+  const end = Math.max(slice.lastIndexOf(".”"), slice.lastIndexOf(". "), slice.lastIndexOf("? "), slice.lastIndexOf("! "));
+  return (end > 220 ? slice.slice(0, end + 1) : slice).trim();
+}
+
+function isWholesalePdTranslation(layer: PratibhaLayer, item?: VerseItem): boolean {
+  const prov = (layer.layer_provenance || "").toLowerCase();
+  const body = layer.body || "";
+  if (prov.includes("giles")) return true;
+  if (/normalized from/.test(prov) && /\bpd\b|public domain/.test(prov) && body.length > 900) return true;
+  if (/\.ctz_\d+/i.test(itemBlob(item))) return true;
+  if (!isChuangTzu(item)) return false;
+  return /Do-nothing Say-nothing|Tao-Tê-Ching|cogitations|Tzŭ|Chuang Tzŭ/.test(body);
+}
+
+function isTemplateStudyCommentary(body: string): boolean {
+  const lowered = body.toLowerCase();
+  return (
+    lowered.includes("in giles's 1889 rendering") ||
+    lowered.includes("display layers do not reproduce giles")
+  );
+}
+
+function isGenericPractice(body: string): boolean {
+  const lowered = body.toLowerCase();
+  return [
+    "sit for 3 minutes with natural breathing",
+    "read once slowly, then pause",
+    "read this passage slowly three times",
+  ].some((marker) => lowered.includes(marker));
+}
+
 function normalizeLayer(layer: PratibhaLayer, item?: VerseItem): PratibhaLayer | null {
   let body = clean(layer.body);
   if (item && isTaoTeChing(item)) {
@@ -87,6 +152,20 @@ function normalizeLayer(layer: PratibhaLayer, item?: VerseItem): PratibhaLayer |
     const hasScript = /[ऀ-ॿༀ-࿿Ͱ-Ͽἀ-῿֐-׿؀-ۿⲀ-⳿぀-ヿ一-鿿]/.test(body);
     if (!hasScript && !hasRealTransliteration(body) && items.length === 0) return null;
     return { ...layerWithBody, label: "Original" };
+  }
+  if (layerWithBody.kind === "commentary" && isTemplateStudyCommentary(body)) {
+    return null;
+  }
+  if (layerWithBody.kind === "practice" && isGenericPractice(body)) {
+    return null;
+  }
+  if (layerWithBody.kind === "translation" && isWholesalePdTranslation(layerWithBody, item)) {
+    const stripped = stripEditorialAsides(body);
+    return {
+      ...layerWithBody,
+      body: studyExcerpt(stripped),
+      label: layerWithBody.label || "Pratibha Translation",
+    };
   }
   return layerWithBody;
 }

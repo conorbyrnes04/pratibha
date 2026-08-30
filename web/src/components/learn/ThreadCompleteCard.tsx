@@ -5,6 +5,7 @@ import {
   findThread,
   type LearningThread,
 } from "@/lib/learningThreads";
+import { threadDoneCount, threadKey } from "@/lib/learn/progress";
 import { Button } from "@/components/ui/button";
 
 type ThreadCompleteCardProps = {
@@ -16,12 +17,8 @@ type ThreadCompleteCardProps = {
   onLeaveThread: () => void;
 };
 
-function stepKey(trackId: string, stepId: string): string {
-  return `${trackId}:${stepId}`;
-}
-
 function litCount(thread: LearningThread, progress: Record<string, boolean>): number {
-  return thread.steps.filter((s) => progress[stepKey(s.trackId, s.stepId)]).length;
+  return threadDoneCount(thread, progress);
 }
 
 export function ThreadCompleteCard({
@@ -46,24 +43,30 @@ export function ThreadCompleteCard({
       role="status"
       aria-live="polite"
     >
-      <p className="passage-reading__meta">Thread complete</p>
+      <p className="passage-reading__meta">Theme complete</p>
       <div className="mt-2 flex items-start gap-3">
         <span className="text-2xl text-amber-100/80" aria-hidden>
           {thread.glyph}
         </span>
         <div>
           <h3 className="library-header__title !text-[clamp(1.6rem,3.5vw,2.1rem)]">{thread.title}</h3>
-          <p className="library-header__lede !mt-2">{thread.subtitle}</p>
+          <p className="library-header__lede !mt-2">{thread.thesis}</p>
         </div>
       </div>
 
+      <div className="passage-practice--plain mt-5">
+        <p className="passage-layer__label">Thread practice</p>
+        <p className="passage-practice__body">{thread.practice}</p>
+      </div>
+      <p className="mt-4 text-sm leading-relaxed text-stone-300">{thread.integration}</p>
+
       <p className="mt-5 font-sans text-xs uppercase tracking-[0.16em] text-emerald-200/80">
-        {lit}/{total} beads lit via path gates
+        {lit}/{total} beads sat as the theme
       </p>
 
       <ol className="mt-3">
         {thread.steps.map((bead, i) => {
-          const done = !!progress[stepKey(bead.trackId, bead.stepId)];
+          const done = !!progress[threadKey(thread.id, bead.id)];
           return (
             <li
               key={bead.id}
@@ -72,7 +75,7 @@ export function ThreadCompleteCard({
               <p className="font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/55">
                 {done ? "✓" : i + 1} · {bead.tradition}
               </p>
-              <p className="mt-1 text-sm leading-relaxed text-stone-200">{bead.insight}</p>
+              <p className="mt-1 text-sm leading-relaxed text-stone-200">{bead.move}</p>
             </li>
           );
         })}
@@ -80,19 +83,19 @@ export function ThreadCompleteCard({
 
       <div className="mt-6 flex flex-wrap gap-2">
         <Button type="button" onClick={onDescendPath} size="sm">
-          Stay on this path →
+          Sit the full gate on this path →
         </Button>
         <Button type="button" onClick={onBackToMap} variant="secondary" size="sm">
-          Thread map
+          Themes
         </Button>
         <Button type="button" onClick={onLeaveThread} variant="secondary" size="sm">
-          Leave thread
+          Leave theme
         </Button>
       </div>
 
       {others.length > 0 ? (
         <div className="mt-8 border-t border-[rgb(240_201_121_/_0.12)] pt-5">
-          <p className="passage-reading__meta">Trace another</p>
+          <p className="passage-reading__meta">Trace another theme</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {others.map((t) => (
               <Button

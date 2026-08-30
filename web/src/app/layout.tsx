@@ -8,6 +8,7 @@ import { BrandMark } from "@/components/BrandMark";
 import { SiteNav } from "@/components/SiteNav";
 import { Toaster } from "@/components/ui/sonner";
 import { ConvexClientProvider } from "@/lib/convexClient";
+import { ConvexAuthNextjsServerProvider } from "@convex-dev/auth/nextjs/server";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pratibha.agniagama.com";
 const SITE_DESCRIPTION =
@@ -47,7 +48,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  const convexEnabled = Boolean((process.env.NEXT_PUBLIC_CONVEX_URL || "").trim());
+  const body = (
     <html lang="en">
       <body className="antialiased">
         <ConvexClientProvider>
@@ -85,4 +87,6 @@ export default function RootLayout({
       </body>
     </html>
   );
+  if (!convexEnabled) return body;
+  return <ConvexAuthNextjsServerProvider>{body}</ConvexAuthNextjsServerProvider>;
 }

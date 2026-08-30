@@ -60,6 +60,12 @@ class Settings(BaseSettings):
     # endpoints typically need. Internal/private networking can leave this off.
     PG_SSL: bool = False
 
+    # Optional auth backends. Convex is the new path; Supabase fields remain so
+    # existing .env files and /health stay valid.
+    NEXT_PUBLIC_CONVEX_URL: str | None = None
+    SUPABASE_URL: str | None = None
+    SUPABASE_JWT_SECRET: str | None = None
+
     @field_validator("OPENAI_API_KEY", "GROQ_API_KEY", "OPENROUTER_API_KEY", mode="before")
     @classmethod
     def normalize_keys(cls, v):

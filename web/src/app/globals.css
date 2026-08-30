@@ -722,6 +722,12 @@ select:focus-visible {
   line-height: 2.05;
 }
 
+.source-script--cjk {
+  font-family: "Noto Serif CJK SC", "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+}
+
 .ornament {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgb(240 201 121 / 0.48), transparent);

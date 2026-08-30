@@ -31,6 +31,7 @@ import {
 import { firstSentence, stripMarkdown } from "@/lib/textPreview";
 import { relatedPassages } from "@/lib/relatedPassages";
 import { preferStudyUnits } from "@/lib/corpusFilters";
+import { isLongNativeScript } from "@/lib/sanskritScript";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { KitLink } from "@/components/ui/kit-link";
@@ -82,6 +83,12 @@ export default function VerseDetailPage() {
   const [loading, setLoading] = useState(true);
   const [backHref, setBackHref] = useState<string | null>(null);
   const id = decodeURIComponent(params.id || "");
+
+  useEffect(() => {
+    if (!item) return;
+    const original = getStudyLayers(item).find((layer) => layer.kind === "original");
+    setShowOriginal(!isLongNativeScript(original?.body));
+  }, [item]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;

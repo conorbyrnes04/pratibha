@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useConvex } from "../convex/ConvexProvider";
 import { useAuth } from "../auth/AuthProvider";
+import { isConvexConfigured } from "../convex/httpClient";
+import { storage } from "../lib/storage";
 
 interface JournalNote {
   _id: string;
@@ -12,6 +14,22 @@ interface JournalNote {
   updatedAt: string;
 }
 
+const LOCAL_KEY = "pratibha_lynx_journal";
+
+function loadLocal(): JournalNote[] {
+  try {
+    const raw = storage.get(LOCAL_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveLocal(notes: JournalNote[]) {
+  storage.set(LOCAL_KEY, JSON.stringify(notes));
+}
+
 export function JournalPage() {
   const { httpClient } = useConvex();
   const { user } = useAuth();
@@ -19,40 +37,68 @@ export function JournalPage() {
   const [loading, setLoading] = useState(true);
   const [newNote, setNewNote] = useState("");
   const [newTitle, setNewTitle] = useState("");
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    loadNotes();
-  }, []);
+    void loadNotes();
+  }, [user]);
 
   async function loadNotes() {
-    if (!httpClient || !user) return;
-    try {
-      const result = await httpClient.query("journalNotes:list", {});
-      setNotes(result || []);
-    } catch (error) {
-      console.error("Failed to load notes:", error);
-    } finally {
-      setLoading(false);
+    const local = loadLocal();
+    if (httpClient && user && isConvexConfigured()) {
+      try {
+        const result = (await httpClient.query("journalNotes:list", {})) as JournalNote[];
+        const remote = result || [];
+        const merged = mergeNotes(local, remote);
+        saveLocal(merged);
+        setNotes(merged);
+        setLoading(false);
+        return;
+      } catch (err) {
+        console.error("Failed to load notes:", err);
+      }
     }
+    setNotes(local);
+    setLoading(false);
   }
 
   async function createNote() {
-    if (!httpClient || !newNote.trim()) return;
+    if (!newNote.trim()) return;
+    const note: JournalNote = {
+      _id: `local_${Date.now()}`,
+      passageId: "manual-entry",
+      passageTitle: newTitle.trim() || "Personal Note",
+      body: newNote.trim(),
+      tags: [],
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
 
     try {
-      await httpClient.mutation("journalNotes:upsert", {
-        passageId: "manual-entry",
-        passageTitle: newTitle.trim() || "Personal Note",
-        body: newNote.trim(),
-        tags: [],
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-      });
+      if (httpClient && user && isConvexConfigured()) {
+        await httpClient.mutation("journalNotes:upsert", {
+          passageId: note.passageId,
+          passageTitle: note.passageTitle,
+          body: note.body,
+          tags: note.tags,
+          createdAt: note.createdAt,
+          updatedAt: note.updatedAt,
+        });
+      }
+      const next = [note, ...loadLocal()];
+      saveLocal(next);
+      setNotes(next);
       setNewNote("");
       setNewTitle("");
-      await loadNotes();
-    } catch (error) {
-      console.error("Failed to create note:", error);
+      setError("");
+    } catch (err) {
+      console.error("Failed to create note:", err);
+      setError("Could not save to Convex. The note stayed on this device.");
+      const next = [note, ...loadLocal()];
+      saveLocal(next);
+      setNotes(next);
+      setNewNote("");
+      setNewTitle("");
     }
   }
 
@@ -66,19 +112,21 @@ export function JournalPage() {
 
   return (
     <view style={{ padding: 20 }}>
-      <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 8 }}>
-        Journal
-      </text>
+      <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 8 }}>Journal</text>
       <text style={{ color: "#999", fontSize: 14, marginBottom: 24 }}>
         {notes.length} {notes.length === 1 ? "entry" : "entries"}
+        {user ? " · synced when Convex is reachable" : " · saved on this device"}
       </text>
+      {error ? (
+        <text style={{ color: "#ff6b6b", fontSize: 14, marginBottom: 16 }}>{error}</text>
+      ) : null}
 
       <view style={{ marginBottom: 32, padding: 16, backgroundColor: "#1a1a2e", borderRadius: 8 }}>
         <text style={{ color: "#ccc", fontSize: 14, marginBottom: 12 }}>New Entry</text>
         <input
           type="text"
           value={newTitle}
-          onChange={(e: any) => setNewTitle(e.target.value)}
+          bindinput={(e: any) => setNewTitle(e.detail?.value ?? e.target?.value ?? "")}
           placeholder="Title (optional)"
           style={{
             width: "100%",
@@ -93,7 +141,7 @@ export function JournalPage() {
         />
         <textarea
           value={newNote}
-          onChange={(e: any) => setNewNote(e.target.value)}
+          bindinput={(e: any) => setNewNote(e.detail?.value ?? e.target?.value ?? "")}
           placeholder="Write your reflection..."
           rows={4}
           style={{
@@ -109,12 +157,11 @@ export function JournalPage() {
           }}
         />
         <view
-          onClick={newNote.trim() ? createNote : undefined}
+          bindtap={newNote.trim() ? createNote : undefined}
           style={{
             padding: 10,
             backgroundColor: newNote.trim() ? "#f0c979" : "#666",
             borderRadius: 4,
-            cursor: newNote.trim() ? "pointer" : "default",
           }}
         >
           <text style={{ color: "#000", fontSize: 14, fontWeight: "600", textAlign: "center" }}>
@@ -125,7 +172,7 @@ export function JournalPage() {
 
       <view style={{ gap: 16 }}>
         {notes.length === 0 ? (
-          <text style={{ color: "#999", fontSize: 14, textAlign: "center", paddingVertical: 40 }}>
+          <text style={{ color: "#999", fontSize: 14, textAlign: "center" }}>
             No journal entries yet. Create your first one above!
           </text>
         ) : (
@@ -145,13 +192,20 @@ export function JournalPage() {
               <text style={{ color: "#666", fontSize: 12, marginBottom: 12 }}>
                 {new Date(note.updatedAt).toLocaleDateString()}
               </text>
-              <text style={{ color: "#ddd", fontSize: 14, lineHeight: 1.5 }}>
-                {note.body}
-              </text>
+              <text style={{ color: "#ddd", fontSize: 14, lineHeight: 1.5 }}>{note.body}</text>
             </view>
           ))
         )}
       </view>
     </view>
   );
+}
+
+function mergeNotes(local: JournalNote[], remote: JournalNote[]): JournalNote[] {
+  const byId = new Map<string, JournalNote>();
+  for (const note of [...remote, ...local]) {
+    const prev = byId.get(note._id);
+    if (!prev || note.updatedAt > prev.updatedAt) byId.set(note._id, note);
+  }
+  return [...byId.values()].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }

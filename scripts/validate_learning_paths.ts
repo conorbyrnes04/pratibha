@@ -79,8 +79,56 @@ function main(): number {
     }
   }
 
+  if (LEARNING_THREADS.length > 8) {
+    issues.push({
+      level: "warn",
+      message: `Expected at most 8 threads in this pass; found ${LEARNING_THREADS.length}`,
+    });
+  }
+
+  const threadIds = new Set<string>();
   for (const thread of LEARNING_THREADS) {
+    if (threadIds.has(thread.id)) {
+      issues.push({ level: "error", message: `Duplicate thread id: ${thread.id}` });
+    }
+    threadIds.add(thread.id);
+
+    if (!thread.thesis?.trim()) {
+      issues.push({ level: "error", message: `Thread "${thread.id}" is missing thesis` });
+    }
+    if (!thread.arc?.trim()) {
+      issues.push({ level: "error", message: `Thread "${thread.id}" is missing arc` });
+    }
+    if (!thread.practice?.trim()) {
+      issues.push({ level: "error", message: `Thread "${thread.id}" is missing practice` });
+    }
+    if (!thread.integration?.trim()) {
+      issues.push({ level: "error", message: `Thread "${thread.id}" is missing integration` });
+    }
+    if (thread.steps.length < 6) {
+      issues.push({
+        level: "warn",
+        message: `Thread "${thread.id}" has ${thread.steps.length} beads (plan asked 6–8)`,
+      });
+    }
+
+    const beadIds = new Set<string>();
     for (const bead of thread.steps) {
+      if (beadIds.has(bead.id)) {
+        issues.push({ level: "error", message: `Thread "${thread.id}" has duplicate bead id "${bead.id}"` });
+      }
+      beadIds.add(bead.id);
+
+      if (!bead.move?.trim()) {
+        issues.push({ level: "error", message: `Thread "${thread.id}" bead "${bead.id}" is missing move` });
+      }
+      if (!bead.homology?.trim()) {
+        issues.push({ level: "error", message: `Thread "${thread.id}" bead "${bead.id}" is missing homology` });
+      }
+      if (!bead.divergence?.trim()) {
+        issues.push({ level: "error", message: `Thread "${thread.id}" bead "${bead.id}" is missing divergence` });
+      }
+
       const key = `${bead.trackId}:${bead.stepId}`;
       const step = stepByKey.get(key);
       if (!step) {

@@ -1,9 +1,10 @@
 "use client";
 
 import { useAuthActions } from "@convex-dev/auth/react";
-import { useMutation, useQuery } from "convex/react";
+import { useQuery } from "convex/react";
 import { createContext, useCallback, useContext, useMemo, ReactNode } from "react";
 import { api } from "../../convex/_generated/api";
+import { CONVEX_ENABLED } from "@/lib/convexConfigured";
 
 type AuthContextValue = {
   configured: boolean;
@@ -17,10 +18,27 @@ type AuthContextValue = {
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
-export function AuthProvider({ children }: { children: ReactNode }) {
+const unavailable = "Convex auth is not configured. Set NEXT_PUBLIC_CONVEX_URL.";
+
+function LocalAuthProvider({ children }: { children: ReactNode }) {
+  const value = useMemo<AuthContextValue>(
+    () => ({
+      configured: false,
+      loading: false,
+      user: null,
+      signInWithPassword: async () => unavailable,
+      signUpWithPassword: async () => unavailable,
+      signInWithGoogle: async () => unavailable,
+      signOut: async () => undefined,
+    }),
+    [],
+  );
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+}
+
+function ConvexAuthProvider({ children }: { children: ReactNode }) {
   const { signIn, signOut: convexSignOut } = useAuthActions();
   const viewer = useQuery(api.auth.currentUser);
-  const configured = Boolean(process.env.NEXT_PUBLIC_CONVEX_URL);
   const loading = viewer === undefined;
   const user = viewer
     ? {
@@ -39,7 +57,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return error instanceof Error ? error.message : "Sign in failed";
       }
     },
-    [signIn]
+    [signIn],
   );
 
   const signUpWithPassword = useCallback(
@@ -51,7 +69,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         return error instanceof Error ? error.message : "Sign up failed";
       }
     },
-    [signIn]
+    [signIn],
   );
 
   const signInWithGoogle = useCallback(async () => {
@@ -69,7 +87,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<AuthContextValue>(
     () => ({
-      configured,
+      configured: true,
       loading,
       user,
       signInWithPassword,
@@ -77,10 +95,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       signInWithGoogle,
       signOut: handleSignOut,
     }),
-    [configured, loading, user, signInWithPassword, signUpWithPassword, signInWithGoogle, handleSignOut]
+    [loading, user, signInWithPassword, signUpWithPassword, signInWithGoogle, handleSignOut],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+}
+
+export function AuthProvider({ children }: { children: ReactNode }) {
+  if (!CONVEX_ENABLED) {
+    return <LocalAuthProvider>{children}</LocalAuthProvider>;
+  }
+  return <ConvexAuthProvider>{children}</ConvexAuthProvider>;
 }
 
 export function useAuth(): AuthContextValue {

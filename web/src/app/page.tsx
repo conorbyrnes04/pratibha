@@ -17,7 +17,7 @@ const ALSO_IN_MANUSCRIPT = [
   { href: "/read", label: "Library", hint: "Browse the full corpus", glyph: "oak" as const },
   { href: "/chat", label: "Chat", hint: "Ask the texts anything", glyph: "eye" as const },
   { href: "/learn", label: "Paths", hint: "Guided gate-by-gate study", glyph: "labyrinth" as const },
-  { href: "/learn#threads", label: "Threads", hint: "One theme, many traditions", glyph: "infinity" as const },
+  { href: "/learn#threads", label: "Themes", hint: "One claim, many traditions", glyph: "infinity" as const },
   { href: "/random", label: "Oracle", hint: "Draw an unexpected verse", glyph: "star" as const },
   { href: "/journal", label: "Journal", hint: "Keep your own notes", glyph: "lotus" as const },
 ];

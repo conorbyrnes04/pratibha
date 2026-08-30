@@ -56,11 +56,12 @@ export function journalSourceHref(note: JournalNote): string | null {
     const beadId = parts[4];
     if (!trackId || !stepId) return "/learn";
     const params = new URLSearchParams();
-    params.set("track", trackId);
-    params.set("step", stepId);
     if (threadId && beadId) {
       params.set("thread", threadId);
       params.set("bead", beadId);
+    } else {
+      params.set("track", trackId);
+      params.set("step", stepId);
     }
     return `/learn?${params.toString()}`;
   }

@@ -1,4 +1,5 @@
 import type { JournalNote } from "@/lib/types";
+import { CONVEX_ENABLED } from "@/lib/convexConfigured";
 import { loadJournalNotes, saveJournalNotes } from "@/lib/journalStorage";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
@@ -53,9 +54,18 @@ function mergeByUpdated(local: JournalNote[], remote: JournalNote[]): JournalNot
   return [...byId.values()].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }
 
-export function useSyncJournal() {
+function useSyncJournalLocal() {
+  return {
+    sync: async (): Promise<JournalSyncResult> => ({
+      notes: loadJournalNotes(),
+      status: "local",
+    }),
+  };
+}
+
+function useSyncJournalConvex() {
   const remoteNotes = useQuery(api.journalNotes.list);
-  const upsertBatch = useMutation(api.journalNotes.upsert);
+  const upsert = useMutation(api.journalNotes.upsert);
 
   const sync = async (): Promise<JournalSyncResult> => {
     const local = loadJournalNotes();
@@ -69,10 +79,9 @@ export function useSyncJournal() {
       const merged = mergeByUpdated(local, remote);
       saveJournalNotes(merged);
 
-      // Push any local changes
       if (merged.length) {
         for (const note of merged) {
-          await upsertBatch(noteToConvex(note));
+          await upsert(noteToConvex(note));
         }
       }
 
@@ -90,7 +99,11 @@ export function useSyncJournal() {
   return { sync };
 }
 
-export function usePushJournalNote() {
+function usePushJournalNoteLocal() {
+  return async (_note: JournalNote): Promise<void> => undefined;
+}
+
+function usePushJournalNoteConvex() {
   const upsert = useMutation(api.journalNotes.upsert);
 
   return async (note: JournalNote): Promise<void> => {
@@ -102,7 +115,11 @@ export function usePushJournalNote() {
   };
 }
 
-export function useDeleteJournalNote() {
+function useDeleteJournalNoteLocal() {
+  return async (_id: string): Promise<void> => undefined;
+}
+
+function useDeleteJournalNoteConvex() {
   const remove = useMutation(api.journalNotes.remove);
 
   return async (id: string): Promise<void> => {
@@ -115,3 +132,9 @@ export function useDeleteJournalNote() {
     }
   };
 }
+
+export const useSyncJournal = CONVEX_ENABLED ? useSyncJournalConvex : useSyncJournalLocal;
+export const usePushJournalNote = CONVEX_ENABLED ? usePushJournalNoteConvex : usePushJournalNoteLocal;
+export const useDeleteJournalNote = CONVEX_ENABLED
+  ? useDeleteJournalNoteConvex
+  : useDeleteJournalNoteLocal;

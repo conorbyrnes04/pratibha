@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
-import { convexFetch } from "../convex/httpClient";
+import { fetchDaily, layerText, type Passage } from "../lib/corpus";
 
 export function HomePage() {
-  const [dailyPassage, setDailyPassage] = useState<any>(null);
+  const [dailyPassage, setDailyPassage] = useState<Passage | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     async function loadDaily() {
       try {
-        const response = await fetch("http://localhost:8000/daily");
-        const data = await response.json();
-        setDailyPassage(data);
-      } catch (error) {
-        console.error("Failed to load daily passage:", error);
+        setDailyPassage(await fetchDaily());
+      } catch (err) {
+        console.error("Failed to load daily passage:", err);
+        setError("Could not reach the corpus server. Start FastAPI on port 8000.");
       } finally {
         setLoading(false);
       }
     }
-    loadDaily();
+    void loadDaily();
   }, []);
 
   if (loading) {
@@ -38,11 +38,13 @@ export function HomePage() {
           Living Manuscript of World Wisdom
         </text>
         <text style={{ color: "#999", fontSize: 14 }}>
-          Explore contemplative wisdom texts across traditions.
+          {error || "Explore contemplative wisdom texts across traditions."}
         </text>
       </view>
     );
   }
+
+  const translation = layerText(dailyPassage, "translation");
 
   return (
     <view style={{ padding: 20 }}>
@@ -52,16 +54,12 @@ export function HomePage() {
       <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 12 }}>
         {dailyPassage.title || dailyPassage._id}
       </text>
-      {dailyPassage.collection && (
-        <text style={{ color: "#ccc", fontSize: 14, marginBottom: 16 }}>
-          {dailyPassage.collection}
-        </text>
-      )}
-      {dailyPassage.pratibha_layers?.translation && (
-        <text style={{ color: "#ddd", fontSize: 16, lineHeight: 1.6 }}>
-          {dailyPassage.pratibha_layers.translation}
-        </text>
-      )}
+      {dailyPassage.collection ? (
+        <text style={{ color: "#ccc", fontSize: 14, marginBottom: 16 }}>{dailyPassage.collection}</text>
+      ) : null}
+      {translation ? (
+        <text style={{ color: "#ddd", fontSize: 16, lineHeight: 1.6 }}>{translation}</text>
+      ) : null}
     </view>
   );
 }

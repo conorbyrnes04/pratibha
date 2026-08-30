@@ -1,6 +1,7 @@
 {
   "name": "pratibha",
   "version": "1.0.0",
+  "type": "module",
   "description": "Pratibha - Living Manuscript of World Wisdom (Lynx + Convex)",
   "main": "src/App.tsx",
   "scripts": {
@@ -20,8 +21,10 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@lynx-js/types": "^3.9.0",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
+    "dotenv": "^17.2.1",
     "typescript": "^6.0.3"
   }
 }

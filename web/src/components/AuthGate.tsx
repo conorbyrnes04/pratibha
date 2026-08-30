@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useAuth } from "@/components/AuthProvider";
 
 /** Routes reachable without an account when auth is configured. */
-const PUBLIC_PREFIXES = ["/", "/login"];
+const PUBLIC_PREFIXES = ["/", "/login", "/learn", "/read"];
 
 function isPublicPath(pathname: string): boolean {
   if (pathname === "/") return true;

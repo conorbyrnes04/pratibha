@@ -739,7 +739,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         misconception:
           "That awakening adds something you lack. It only removes the fog over what was already the case.",
         passageId: "siva_sutra.ss_iii_12",
-        supportingPassageIds: ["pratyabhijnahrdayam.phr_020", "the_book_of_chuang_tzu.ctz_004"],
+        supportingPassageIds: ["pratyabhijnahrdayam.phr_020", "the_book_of_chuang_tzu.zhuangzi_md_004"],
         theme: "recognition",
         chatMode: "practice",
         chatPrompt:
@@ -1586,8 +1586,8 @@ export const LEARNING_TRACKS: LearningTrack[] = [
           "Emptiness is not deprivation; it is the openness that lets you truly receive what is there.",
         misconception:
           "That emptying yourself means becoming blank or diminished. It means becoming spacious and available.",
-        passageId: "the_book_of_chuang_tzu.ctz_004",
-        supportingPassageIds: ["the_book_of_chuang_tzu.ctz_006"],
+        passageId: "the_book_of_chuang_tzu.zhuangzi_md_004",
+        supportingPassageIds: ["the_book_of_chuang_tzu.zhuangzi_md_006"],
         theme: "emptiness",
         chatMode: "practice",
         chatPrompt:

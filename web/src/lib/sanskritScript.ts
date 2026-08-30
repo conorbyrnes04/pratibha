@@ -10,6 +10,20 @@ export function containsTibetan(text?: string): boolean {
   return /[ༀ-࿿]/.test(text || "");
 }
 
+/** CJK Unified Ideographs — Zhuangzi, Tao Te Ching, and other Chinese originals. */
+export function containsCjk(text?: string): boolean {
+  return /[\u4E00-\u9FFF]/.test(text || "");
+}
+
+/** True when the original layer is too long to dump without an expand control. */
+export function isLongNativeScript(text?: string): boolean {
+  const body = (text || "").trim();
+  if (!body) return false;
+  if (containsCjk(body)) return body.length > 120;
+  if (containsDevanagari(body) || containsTibetan(body)) return body.length > 280;
+  return body.length > 800;
+}
+
 const NON_SANSKRIT_COLLECTION =
   /heraclitus|fragment|epictetus|enchiridion|meditations|phaedo|plato|plotinus|ennead|eckhart|ibn.?arabi|know.?yourself|balyani|rumi|mathnawi|tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|zhongyong|milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō/i;
 

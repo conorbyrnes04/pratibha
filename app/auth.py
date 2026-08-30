@@ -31,7 +31,11 @@ class AuthUser:
 
 def _convex_url() -> str | None:
     """Get the Convex deployment URL from environment."""
-    url = os.getenv("NEXT_PUBLIC_CONVEX_URL", "").strip().rstrip("/")
+    url = (
+        os.getenv("NEXT_PUBLIC_CONVEX_URL")
+        or getattr(settings, "NEXT_PUBLIC_CONVEX_URL", None)
+        or ""
+    ).strip().rstrip("/")
     return url or None
 
 

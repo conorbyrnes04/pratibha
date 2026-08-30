@@ -7,6 +7,7 @@ import {
   type LearningThread,
   type ThreadStepRef,
 } from "@/lib/learningThreads";
+import { threadDoneCount } from "@/lib/learn/progress";
 import { Button } from "@/components/ui/button";
 
 type ThreadContextBarProps = {
@@ -18,12 +19,8 @@ type ThreadContextBarProps = {
   onBackToThread: () => void;
 };
 
-function stepKey(trackId: string, stepId: string): string {
-  return `${trackId}:${stepId}`;
-}
-
 function litCount(thread: LearningThread, progress: Record<string, boolean>): number {
-  return thread.steps.filter((s) => progress[stepKey(s.trackId, s.stepId)]).length;
+  return threadDoneCount(thread, progress);
 }
 
 export function ThreadContextBar({
@@ -52,9 +49,8 @@ export function ThreadContextBar({
       className="thread-context-bar sticky top-16 z-30 mb-5 border-b border-[rgb(240_201_121_/_0.18)] bg-[rgb(11_11_20_/_0.92)] py-3 backdrop-blur-md"
       style={{ ["--thread-hue" as string]: hue }}
       role="region"
-      aria-label={`Tracing thread: ${thread.title}`}
+      aria-label={`Tracing theme: ${thread.title}`}
     >
-      {/* Stacked on purpose — a side-by-side row crushed the title to ~50px. */}
       <div className="relative flex flex-col gap-3">
         <div className="min-w-0">
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
@@ -65,13 +61,13 @@ export function ThreadContextBar({
               Tracing · bead {idx + 1} of {total}
             </p>
             <span className="font-sans text-[10px] uppercase tracking-[0.14em] text-stone-500">
-              {lit}/{total} lit
+              {lit}/{total} sat
             </span>
           </div>
           <h3 className="mt-1 text-lg font-medium leading-tight text-[rgb(250_237_205)]">
             {thread.title}
           </h3>
-          <p className="soft mt-1 text-sm leading-relaxed">{bead.insight}</p>
+          <p className="soft mt-1 text-sm leading-relaxed">{bead.move}</p>
           <p className="mt-1 font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/45">
             {bead.tradition}
           </p>
@@ -79,7 +75,7 @@ export function ThreadContextBar({
 
         <div className="flex flex-wrap items-center gap-2">
           <Button type="button" variant="secondary" size="sm" onClick={onBackToThread}>
-            Thread map
+            Theme
           </Button>
           <Button
             type="button"
@@ -99,7 +95,7 @@ export function ThreadContextBar({
             {next ? "Next bead →" : "Last bead"}
           </Button>
           <Button type="button" variant="ghost" size="sm" onClick={onLeaveThread}>
-            Leave thread
+            Leave theme
           </Button>
         </div>
       </div>

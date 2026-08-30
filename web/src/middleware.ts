@@ -1,8 +1,11 @@
 import { convexAuthNextjsMiddleware, createRouteMatcher } from "@convex-dev/auth/nextjs/server";
+import { NextResponse } from "next/server";
 
-const isPublicPage = createRouteMatcher(["/", "/login"]);
+const CONVEX_URL = (process.env.NEXT_PUBLIC_CONVEX_URL || "").trim();
+const isPublicPage = createRouteMatcher(["/", "/login", "/learn", "/read"]);
 
-export default convexAuthNextjsMiddleware((request) => {
+const convexMiddleware = convexAuthNextjsMiddleware((request) => {
+  if (!request.convexAuth) return;
   if (!isPublicPage(request) && !request.convexAuth.isAuthenticated()) {
     return new Response(null, {
       status: 307,
@@ -12,6 +15,12 @@ export default convexAuthNextjsMiddleware((request) => {
     });
   }
 });
+
+export default CONVEX_URL
+  ? convexMiddleware
+  : function middleware() {
+      return NextResponse.next();
+    };
 
 export const config = {
   matcher: [

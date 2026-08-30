@@ -1,36 +1,18 @@
 # Pratibha
 
-**Primary UI: Lynx app in `pratibha/` directory** — Cross-platform native rendering (iOS, Android, Web) with Convex backend.
-
-Legacy Next.js web app remains in `web/` but is no longer the main interface.
+**Primary UI: Next.js app in `web/`.** There is an experimental Lynx client in `pratibha/` and a Convex backend for auth/journal sync. Convex functions are not deployed until you run `npx convex dev` from `web/` (project: `energized-armadillo-158`).
 
 ---
 
-Pratibha is a multi-tradition wisdom study platform: layered canonical texts (translation, commentary, key terms, practice), a chat interface with optional semantic retrieval, and native clients via Lynx.
+Pratibha is a multi-tradition wisdom study platform: layered canonical texts (translation, commentary, key terms, practice), a chat interface with optional semantic retrieval, and native clients.
 
-**Stack:** Lynx (ReactLynx) · Convex backend · FastAPI (optional, for corpus/RAG) · PostgreSQL + pgvector (optional)
+**Stack:** Next.js (`web/`) · FastAPI corpus/RAG · optional Convex auth · experimental Lynx (`pratibha/`) · PostgreSQL + pgvector (optional)
 
 ---
 
 ## Quick start
 
-### Lynx App (Primary)
-
-```bash
-cd pratibha
-npm install
-
-# Set up Convex backend
-npx convex dev
-# Copy deployment URL to .env
-
-# Start app (opens browser)
-npm run dev
-```
-
-See [`pratibha/README.md`](pratibha/README.md) for full setup.
-
-### Legacy Web App (Next.js)
+### Web app (Next.js)
 
 ```bash
 cd web
@@ -38,7 +20,27 @@ npm install
 npm run dev
 ```
 
-See [`web/README.md`](web/README.md) for details.
+See [`web/README.md`](web/README.md) and [`scripts/dev.sh`](scripts/dev.sh) to run API + web together.
+
+### Convex (auth + journal sync)
+
+```bash
+cd web
+npx convex login
+npx convex dev
+```
+
+That deploys schema/functions to the existing Pratibha project and writes `NEXT_PUBLIC_CONVEX_URL` into `web/.env.local`.
+
+### Experimental Lynx client
+
+```bash
+cd pratibha
+npm install
+npm run dev
+```
+
+Serves `http://localhost:3001/index.lynx.bundle` for Lynx Explorer. It is not a drop-in replacement for `web/`.
 
 ---
 

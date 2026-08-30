@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { KeyTerm, PratibhaLayer, Resonance } from "@/lib/types";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { containsDevanagari, containsTibetan } from "@/lib/sanskritScript";
+import { containsCjk, containsDevanagari, containsTibetan, isLongNativeScript } from "@/lib/sanskritScript";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import {
   Collapsible,
@@ -20,6 +20,7 @@ import {
  */
 function originalScriptClass(body?: string): string {
   if (containsTibetan(body)) return "source-script source-script--tibetan";
+  if (containsCjk(body)) return "source-script source-script--cjk";
   if (containsDevanagari(body)) return "source-script";
   return "source-script source-script--latin";
 }
@@ -191,17 +192,37 @@ function renderLayerBody(
       </div>
     );
   }
+  const bodyClass = isOriginal
+    ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100`
+    : compact
+      ? "text-sm leading-relaxed"
+      : "reading-prose";
+
+  if (isOriginal && isLongNativeScript(layer.body)) {
+    return <LongNativeScript body={layer.body || ""} className={bodyClass} />;
+  }
+
   return (
-    <div
-      className={`chat-markdown ${
-        isOriginal
-          ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100`
-          : compact
-            ? "text-sm leading-relaxed"
-            : "reading-prose"
-      }`}
-    >
+    <div className={`chat-markdown ${bodyClass}`}>
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{layer.body || ""}</ReactMarkdown>
+    </div>
+  );
+}
+
+function LongNativeScript({ body, className }: { body: string; className: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <div className={`chat-markdown ${className}`}>
+        {open ? (
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{body}</ReactMarkdown>
+        ) : (
+          <p className="line-clamp-4 whitespace-pre-wrap">{body}</p>
+        )}
+      </div>
+      <button type="button" className="passage-reading__toggle mt-3" onClick={() => setOpen((v) => !v)}>
+        {open ? "Collapse original" : "Expand original"}
+      </button>
     </div>
   );
 }

@@ -131,6 +131,7 @@ async def health():
             "database_url": bool((settings.DATABASE_URL or "").strip()),
             "pg_host": settings.PG_HOST or "",
             "chat_provider": settings.chat_provider(),
+            "convex_auth": bool((settings.NEXT_PUBLIC_CONVEX_URL or os.getenv("NEXT_PUBLIC_CONVEX_URL") or "").strip()),
             "supabase_auth": bool((settings.SUPABASE_URL or "").strip() or (settings.SUPABASE_JWT_SECRET or "").strip()),
         },
     }

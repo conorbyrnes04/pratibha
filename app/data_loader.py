@@ -219,6 +219,8 @@ def _commentary_is_authored(commentary: str) -> bool:
     if not c:
         return False
     lowered = c.lower()
+    if "in giles's 1889 rendering" in lowered or "display layers do not reproduce giles" in lowered:
+        return False
     if any(lowered.startswith(marker) for marker in TEMPLATE_COMMENTARY_MARKERS):
         return False
     # Structured layers (key terms / resonances) are a strong authored signal.
@@ -502,6 +504,60 @@ def _layer(kind: str, label: str, body: str, **extra: Any) -> dict[str, Any] | N
     return {"kind": kind, "label": label, "body": clean, **extra}
 
 
+_EDITORIAL_ASIDE_RES = (
+    re.compile(r"\[[^\]]{0,160}(?:supplementary|spurious)[^\]]*\]", re.I),
+    re.compile(r"The above is from[^.!?]{0,180}[.!?]", re.I),
+    re.compile(r"It is interesting to note[^.!?]{0,280}[.!?]", re.I),
+    re.compile(r"These words help to elucidate[^.!?]{0,280}[.!?]", re.I),
+    re.compile(r"This is an anachronism\.[^.!?]{0,220}(?:\.[^.!?]{0,200}\.)?", re.I),
+    re.compile(r"Tota formatio[^.!?]{0,220}[.!?]", re.I),
+    re.compile(r"\bSwedenborg\.?"),
+    re.compile(r"Whose tutor he was\.", re.I),
+    re.compile(r"See (?:ch\.|chapter|p\.)\s*[\divx]+\.?", re.I),
+    re.compile(r"These [\"“]poles[\"”] are[^.!?]{0,220}[.!?]", re.I),
+)
+
+
+def _strip_editorial_asides(text: str) -> str:
+    out = text or ""
+    for rx in _EDITORIAL_ASIDE_RES:
+        out = rx.sub(" ", out)
+    return re.sub(r"[ \t]+", " ", out).replace(" \n", "\n").strip()
+
+
+def _study_excerpt(text: str, max_len: int = 900) -> str:
+    compact = re.sub(r"\s+", " ", (text or "")).strip()
+    if len(compact) <= max_len:
+        return compact
+    slice_ = compact[:max_len]
+    end = max(slice_.rfind(".”"), slice_.rfind(". "), slice_.rfind("? "), slice_.rfind("! "))
+    return (slice_[: end + 1] if end > 220 else slice_).strip()
+
+
+def _is_wholesale_pd_translation(layer: dict[str, Any], out: dict[str, Any] | None) -> bool:
+    prov = _as_text(layer.get("layer_provenance")).lower()
+    body = _as_text(layer.get("body"))
+    if "giles" in prov:
+        return True
+    if "normalized from" in prov and re.search(r"\bpd\b|public domain", prov) and len(body) > 900:
+        return True
+    blob = " ".join(
+        [
+            _as_text((out or {}).get("_id")),
+            _as_text((out or {}).get("sutra_id")),
+            _as_text((out or {}).get("work_id")),
+            _as_text((out or {}).get("collection")),
+        ]
+    )
+    if re.search(r"\.ctz_\d+", blob, re.I):
+        return True
+    if re.search(r"chuang|zhuang", blob, re.I) and re.search(
+        r"Do-nothing Say-nothing|Tao-Tê-Ching|cogitations|Tzŭ|Chuang Tzŭ", body
+    ):
+        return True
+    return False
+
+
 def _finalize_layers(layers: list[dict[str, Any]], out: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     """Normalize display labels and drop IAST layers for non-Sanskrit passages."""
     uses_iast = _passage_uses_iast(out) if out else True
@@ -528,6 +584,14 @@ def _finalize_layers(layers: list[dict[str, Any]], out: dict[str, Any] | None = 
             ):
                 continue
             layer = {**layer, "label": "Original"}
+        elif kind == "commentary":
+            if not _commentary_is_authored(_as_text(layer.get("body"))):
+                continue
+        elif kind == "practice":
+            if _practice_is_generic(_as_text(layer.get("body"))):
+                continue
+        elif kind == "translation" and _is_wholesale_pd_translation(layer, out):
+            layer = {**layer, "body": _study_excerpt(_strip_editorial_asides(_as_text(layer.get("body"))))}
         result.append(layer)
     return result
 
@@ -583,6 +647,8 @@ def _build_layers(item: dict[str, Any], out: dict[str, Any], raw_commentary: str
         merged = dict(layer)
         if kind == "commentary":
             merged["body"] = _strip_layer_tail(str(layer.get("body") or ""))
+            if not _commentary_is_authored(merged["body"]):
+                continue
         if kind == "original" and raw_script_is_script:
             # Never let an authored romanization / "*Source-language basis:*"
             # note occupy the Original slot when actual source script exists.
