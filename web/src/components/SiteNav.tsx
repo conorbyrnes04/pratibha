@@ -17,6 +17,7 @@ const PRIMARY: NavLink[] = [
 ];
 
 const SECONDARY: NavLink[] = [
+  { href: "/manuscript", label: "Manuscript" },
   { href: "/learn", label: "Paths", match: "/learn" },
   { href: "/learn#threads", label: "Themes", match: "/learn#threads" },
   { href: "/random", label: "Oracle" },

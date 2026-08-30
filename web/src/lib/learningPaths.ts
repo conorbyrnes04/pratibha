@@ -339,7 +339,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Pratyabhijñāhṛdayam sūtra 1 says citi is svatantrā — sovereignly free. Help me understand why consciousness being the free ground, and not a product of matter, changes everything that follows.",
         practice:
-          "Sit. Notice that you are aware. Now ask: what is aware of that awareness? Follow the thread back past sensation, past thought, past being a particular person — to the bare fact of knowing. Rest there as citi pointing at itself.",
+          "Sit where you are. Notice the room, then the seeing of the room, then the fact that seeing needs no permission from the furniture. Follow that freedom back — past the myth of a private mind inside a dead cosmos — until awareness is not a flicker you own but the ground the world is painted on. Rest there as citi recognizing itself. Nothing outside has to grant this. There is nothing outside.",
         journalPrompt:
           "Do I experience awareness as something I have, or as the space in which everything — including 'me' — shows up?",
         integration:
@@ -454,7 +454,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Sūtra 13 — the mind, becoming introverted, rises to Citi. Teach me pratyabhijñā as recognition (knowing again) rather than attainment, and how to make the inward turn.",
         practice:
-          "Do the reversal deliberately: for one minute let attention rest not on any object but on the awareness aware of objects. Each time it turns inward, sense it 'ascending' to its source. Do not strain — just turn.",
+          "The mind is already rushing the door — the next message, the next face, the next proof. For five minutes, do not chase it and do not stuff it back in. Soften the outward lean. Let looking turn toward the looker the way an exhale turns toward home. You cannot force recognition. You can stop fleeing the one who is looking. What meets you there is not an empty room. It is the mind discovering it was never other than the light it sought.",
         journalPrompt:
           "Have I ever 'recognized' awareness as what I already was, rather than reached for it as something far? What was that like?",
         integration:
@@ -523,7 +523,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Sūtra 20 — the Perfect 'I' (pūrṇāhantā) and liberation while living. Help me understand jīvanmukti as a recovered relationship to ordinary life rather than a maintained trance.",
         practice:
-          "Once today, in the middle of an ordinary act, silently affirm from the inside — not as belief but as recognition — 'This awareness, here, is the whole.' Continue the act from that standpoint and watch what changes.",
+          "Stand in an ordinary doorway. Feel the body pass through. Before the next room claims you, let \"I am\" sound — not the résumé, not the myth of me, but the simple light that is reading, walking, arriving. This knowing is not owned by the person in the doorway. It is the same light in every being, at every scale. Say it once, quietly: iti śivam. Then go through.",
         journalPrompt:
           "What would my ordinary day be like if I lived it as the Consciousness recognizing itself, rather than as a self chasing it?",
         integration:
@@ -561,7 +561,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Śiva Sūtra I.1, caitanyam ātmā. Explain śāmbhavopāya — the 'sudden door' that uses no technique — and how to verify 'consciousness is the Self' by direct looking.",
         practice:
-          "Stop, mid-activity. Do not meditate on anything. Simply notice that awareness is already here, prior to any effort to find it. Let that noticing be enough for three breaths.",
+          "Look at whatever is nearest — the yellow of a leaf, the glow of the screen, a chair scraping. Do not hunt for a special state. Notice that all of it is already lit. Now stop following the objects and rest as the lighting itself. The sūtra is not asking you to become conscious. It is asking you to drop the fiction that there is a you over here and awareness over there. Stay until \"I am looking\" softens into looking looking.",
         journalPrompt:
           "Can I find the awareness that is reading this without doing anything to produce it?",
         integration:
@@ -584,7 +584,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Śiva Sūtra I.2, jñānaṃ bandhaḥ. Help me see how even spiritual knowledge becomes a cage, and how the sudden door opens by noticing the knower is not itself a concept.",
         practice:
-          "Catch one 'I am someone who…' sentence. Hold it lightly and ask: 'Is the awareness aware of this thought bound by it?' Feel the difference between having the thought and being defined by it.",
+          "Catch the next naming: tree, morning, me. Feel how the word files the living thing into a known slot. For three breaths let the name stay, but refuse to let it finish the seeing. Watch rain, sun, and soil still moving in what you just called a tree. The bondage is not the word. It is the moment the word pretends to be the last word.",
         journalPrompt:
           "Which idea about myself — even a spiritual one — did I defend today as if it were the Self?",
         integration:
@@ -607,7 +607,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Śiva Sūtra I.5, udyamo bhairavaḥ. Turn the 'surge of awareness' into a brief embodied practice — where in ordinary experience can I catch this pulse?",
         practice:
-          "Recall a moment today that suddenly made you more awake — a sound, a beauty, a start. Re-enter it and feel the surge of vividness. Rest in that pulse as awareness recognizing itself.",
+          "Do not wait for a holy mood. Feel the next rise of life as it actually comes — the email that must be answered, the heat before a hard conversation, the first sip that wakes the mouth. That upsurge is not a problem to manage. Sit in it the way you sit in a flame: without backing up and without adding a story. If it is fierce, let it be fierce. The name of that intensity, undivided from the one who feels it, is Bhairava.",
         journalPrompt:
           "When did aliveness break through habit today, and what did the surge feel like before I named it?",
         integration:
@@ -783,7 +783,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Vijñāna Bhairava, dhāraṇā 1 — the breath as the Goddess's self-utterance (haṃsa). Guide me to feel the rising and falling breath as Her speech rather than as something I am doing.",
         practice:
-          "Sit and do nothing to the breath. Feel it rise and fall on its own. Silently let the rising carry 'haṃ' and the falling carry 'sa,' and sense that this sound is breathing you, not the other way around. Five minutes.",
+          "You do not begin this breath. Feel it starting at the nostrils and, at the same time, rising from the low belly — two doors of one current. For five cycles, hold both doors without making the breath better. The Goddess is not a visitor you invite. She is the speech already happening as you. When thought tries to run the inhale, return to the two doors and let her finish the sentence.",
         journalPrompt:
           "When I stop 'doing' my breath and let it breathe me, what shifts in who I take myself to be?",
         integration:
@@ -806,7 +806,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Vijñāna Bhairava, dhāraṇā 2 — the Center (madhya) between the breaths. Help me find the natural turning point without holding my breath, and rest attention there.",
         practice:
-          "Breathe naturally. At the end of the exhale, before the inhale begins, notice the brief stillness — and rest in it without forcing it longer. Then the same at the top of the inhale. Let attention live in the turns rather than the breaths. Several minutes.",
+          "At the turn of the next breath — not the inhale, not the exhale, the hinge — stop helping. Do not send the wind out to the world and do not pull it back into the knot of me. Hover at the threshold the way a candle holds its own pause. Rest there until the naming thins. What remains in that center, without a story, is the form the text calls Bhairava.",
         journalPrompt:
           "What did I notice in the gap between the breaths that I never notice in the breaths themselves?",
         integration:
@@ -1251,7 +1251,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Show me how this passage trains freedom before reaction begins. Where do people misapply the division between what is and isn't up to them?",
         practice:
-          "Take one situation troubling you today. On paper, draw two columns: 'mine to govern' and 'not mine to govern.' Place each element honestly. Then rest your attention only on the first column.",
+          "The next time an appearance pulls — news that disturbs, a message that provokes, a plan threatening to collapse — stop before you move toward it. Feel the grip as if the thing were reaching across a boundary. Ask only this: is this mine to govern, or not? If it is not, say it in the body: this is not mine. Freedom is not a later feeling. It is this withdrawal of demand from what was never yours. Then, and only then, decide what, if anything, you will actually do.",
         journalPrompt:
           "List one situation today as two columns: what is mine to govern, and what is not. Where had I confused the two?",
         integration:
@@ -1275,7 +1275,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Give me a concrete practice for acting fully without contracting around the outcome, using this passage. What does it feel like when I'm gripping vs. releasing?",
         practice:
-          "Choose one ordinary task today. Do it with complete attention to the doing, and at the start silently dedicate it: 'This action I offer; its result I release.' Notice any anxiety that arises and return to the task.",
+          "Take one task that has you white-knuckling the outcome — the class, the message, the conversation that might go badly. Before you begin, offer the action and set the fruit down the way you would set a cup on a table you do not own. Work with your whole body in the doing. If the old grip returns, do not fight it. Feel it, and put the cup down again. Completion is the integrity of the act, not the harvest.",
         journalPrompt:
           "What action today can I perform carefully while releasing ownership of its result? What did the gripping feel like in my body?",
         integration:
@@ -1323,7 +1323,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Turn this passage into a short daily attention practice I can do before acting. How should I relate to the mind's wandering?",
         practice:
-          "For five minutes, rest attention on the breath. Each time it wanders — and it will — note 'returning' and come back, without judgment. Count the returns as successes, not failures.",
+          "Sit with the breath. Krishna does not deny the wind. Each time attention flies, count the return as the practice, not the failure. After ten honest returns, loosen one craving-color that was riding the sitting — the wish to be calm, impressive, finished. Practice without that extra heat; release without going limp. The mind is graspable only where both hands are working.",
         journalPrompt:
           "What did my mind do today when it could not secure the outcome it wanted? How quickly could I return it to the present?",
         integration:
@@ -1386,7 +1386,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Explain 'consciousness is the Self' in a way I can test in immediate experience right now, not just understand intellectually.",
         practice:
-          "Pause. Notice something you can see. Now, instead of attending to the seen thing, notice the seeing itself — the awareness in which the image appears. Rest there for a few breaths.",
+          "Look at whatever is nearest — the yellow of a leaf, the glow of the screen, a chair scraping. Do not hunt for a special state. Notice that all of it is already lit. Now stop following the objects and rest as the lighting itself. The sūtra is not asking you to become conscious. It is asking you to drop the fiction that there is a you over here and awareness over there. Stay until \"I am looking\" softens into looking looking.",
         journalPrompt:
           "What is present before I add a story about who I am? Can I find the awareness that is reading these words?",
         integration:
@@ -1410,7 +1410,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Help me see when spiritual knowledge becomes another form of bondage. How do I hold understanding without it hardening into identity?",
         practice:
-          "Notice one sentence you tell yourself beginning 'I am someone who...'. Hold it lightly and ask: 'Is the awareness aware of this thought bound by it?' Feel the difference between having the thought and being defined by it.",
+          "Catch the next naming: tree, morning, me. Feel how the word files the living thing into a known slot. For three breaths let the name stay, but refuse to let it finish the seeing. Watch rain, sun, and soil still moving in what you just called a tree. The bondage is not the word. It is the moment the word pretends to be the last word.",
         journalPrompt:
           "Which idea about myself did I defend today as if it were the Self? What would loosen if I held it as a passing thought?",
         integration:
@@ -1506,7 +1506,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Help me stabilize recognition through ordinary perception, speech, and action. How do I build it into daily life rather than retreat?",
         practice:
-          "Choose one ordinary daily trigger (a doorway, a notification, the first sip of a drink). Let it become a bell: each time it happens, recognize awareness for one breath before continuing.",
+          "Stand in an ordinary doorway. Feel the body pass through. Before the next room claims you, let \"I am\" sound — not the résumé, not the myth of me, but the simple light that is reading, walking, arriving. This knowing is not owned by the person in the doorway. It is the same light in every being, at every scale. Say it once, quietly: iti śivam. Then go through.",
         journalPrompt:
           "What ordinary trigger can become a reminder to recognize awareness? How did recognition hold up under interruption today?",
         integration:
@@ -1617,7 +1617,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
         chatPrompt:
           "Compare Daoist functional emptiness here with Zhuangzi's receptive emptiness from the previous step. How are they different uses of 'empty'?",
         practice:
-          "Find one empty space in your day — a gap between tasks, a silence in conversation, an unfilled hour. Instead of filling it, let it be, and notice what it makes possible.",
+          "Hold the cup. Feel the clay, the weight, the lip. Then attend to the hollow the clay was thrown to make — the nothing that is what the cup is for. Drink from that. Now look at your day the same way: the schedule, the plan, the walls — and the space they were cut to serve. Leave one thing unfilled on purpose. Let the hollow do the work.",
         journalPrompt:
           "Where did an empty space, pause, or silence make action possible today? What do I rush to fill that I could leave open?",
         integration:

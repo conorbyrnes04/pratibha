@@ -12,6 +12,8 @@ import { Section } from "@/components/ui/Section";
 import { Disclosure } from "@/components/ui/Disclosure";
 import { useAuth } from "@/components/AuthProvider";
 import { buttonVariants } from "@/components/ui/button";
+import { CircleReadings } from "@/components/CircleReadings";
+import { SanghaBoundary } from "@/components/SanghaBoundary";
 
 const ALSO_IN_MANUSCRIPT = [
   { href: "/read", label: "Library", hint: "Browse the full corpus", glyph: "oak" as const },
@@ -20,6 +22,7 @@ const ALSO_IN_MANUSCRIPT = [
   { href: "/learn#threads", label: "Themes", hint: "One claim, many traditions", glyph: "infinity" as const },
   { href: "/random", label: "Oracle", hint: "Draw an unexpected verse", glyph: "star" as const },
   { href: "/journal", label: "Journal", hint: "Keep your own notes", glyph: "lotus" as const },
+  { href: "/manuscript", label: "Manuscript", hint: "A small book of verses you keep", glyph: "circle" as const },
 ];
 
 export default function Home() {
@@ -101,7 +104,14 @@ export default function Home() {
     <main className="page-shell page-shell--reading">
       <div className="section-stack">
         {daily ? (
-          <VerseOfTheDay item={daily} />
+          <>
+            <VerseOfTheDay item={daily} />
+            {signedIn ? (
+              <SanghaBoundary>
+                <CircleReadings verseId={daily._id} daily />
+              </SanghaBoundary>
+            ) : null}
+          </>
         ) : (
           <section id="daily" className="scroll-mt-24">
             <header className="passage-reading__header">

@@ -213,11 +213,11 @@ function LongNativeScript({ body, className }: { body: string; className: string
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <div className={`chat-markdown ${className}`}>
+      <div className={`chat-markdown ${className} ${open ? "" : "original-window"}`}>
         {open ? (
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{body}</ReactMarkdown>
         ) : (
-          <p className="line-clamp-4 whitespace-pre-wrap">{body}</p>
+          <p className="whitespace-pre-wrap">{body}</p>
         )}
       </div>
       <button type="button" className="passage-reading__toggle mt-3" onClick={() => setOpen((v) => !v)}>

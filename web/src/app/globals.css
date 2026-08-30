@@ -2126,6 +2126,13 @@ select:focus-visible {
   color: var(--accent-bright);
 }
 
+.original-window {
+  max-height: 6.4em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+
 /* Quiet layer labels inside the reading column (not shouty UI eyebrows) */
 .passage-layer__label {
   margin: 0 0 0.7rem;
@@ -3319,4 +3326,149 @@ select:focus-visible {
   .lex-flip__face--back {
     transform: none;
   }
+}
+
+.share-card-preview {
+  width: min(100%, 17.5rem);
+}
+
+.share-card {
+  position: relative;
+  aspect-ratio: 1080 / 1350;
+  overflow: hidden;
+  padding: 1.35rem 1.2rem 1.1rem;
+  background: #0a0a0f;
+  border: 1px solid rgb(240 201 121 / 0.28);
+  color: #e8e4dc;
+  display: flex;
+  flex-direction: column;
+}
+
+.share-card__mark {
+  position: absolute;
+  inset: 18% 8% 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0.22;
+}
+
+.share-card__glyph {
+  width: 100%;
+  height: 100%;
+}
+
+.share-card__meta,
+.share-card__title,
+.share-card__copy,
+.share-card__original,
+.share-card__translation,
+.share-card__foot {
+  position: relative;
+}
+
+.share-card__copy {
+  flex: 1;
+  min-height: 0;
+  margin-top: 1rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent);
+}
+
+.share-card--line .share-card__copy {
+  display: flex;
+  align-items: center;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.share-card--line .share-card__original,
+.share-card--line .share-card__translation {
+  margin: 0;
+  font-size: 1.7rem;
+  line-height: 1.4;
+}
+
+.share-card__meta {
+  margin: 0;
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgb(240 201 121 / 0.7);
+}
+
+.share-card__title {
+  margin: 0.55rem 0 0;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  color: #f0c979;
+}
+
+.share-card__original {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: #efe8d8;
+  white-space: pre-wrap;
+}
+
+.share-card--both .share-card__original {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.share-card__translation {
+  margin: 0.75rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #d8d3c8;
+}
+
+.share-card__foot {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding-top: 1rem;
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgb(240 201 121 / 0.75);
+}
+
+.share-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid rgb(240 201 121 / 0.16);
+  border-radius: 999px;
+  background: rgb(5 5 10 / 0.4);
+  color: #c9c4b8;
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.share-chip--on {
+  border-color: rgb(240 201 121 / 0.55);
+  color: #f0c979;
+  background: rgb(240 201 121 / 0.08);
+}
+
+.share-chip__glyph {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.share-chip__swatch {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
 }

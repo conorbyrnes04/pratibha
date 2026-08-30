@@ -19,9 +19,9 @@ export function containsCjk(text?: string): boolean {
 export function isLongNativeScript(text?: string): boolean {
   const body = (text || "").trim();
   if (!body) return false;
-  if (containsCjk(body)) return body.length > 400;
-  if (containsDevanagari(body) || containsTibetan(body)) return body.length > 280;
-  return body.length > 800;
+  if (containsCjk(body)) return body.length > 72;
+  if (containsDevanagari(body) || containsTibetan(body)) return body.length > 90;
+  return body.length > 220;
 }
 
 const NON_SANSKRIT_COLLECTION =

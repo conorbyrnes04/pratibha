@@ -47,6 +47,9 @@ export default function AccountPage() {
         <Link href="/journal" className={cn(buttonVariants())}>
           Open journal
         </Link>
+        <Link href="/manuscript" className={cn(buttonVariants({ variant: "secondary" }))}>
+          Your manuscript
+        </Link>
         <Button
           type="button"
           variant="secondary"

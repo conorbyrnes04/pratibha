@@ -12,6 +12,8 @@ type InkGlyphProps = {
   className?: string;
   /** Decorative by default; set label for informative icons. */
   label?: string;
+  /** Override the state fill — used by share cards. */
+  ink?: string;
 };
 
 const SIZE_CLASS: Record<InkSize, string> = {
@@ -34,13 +36,14 @@ const STATE_CLASS: Record<InkState, string> = {
  * reads as ābhāsa shining forth from the void ground rather than a
  * black-on-white sticker. Color is entirely a function of `state`.
  */
-export function InkGlyph({ glyph, state = "arising", size = "md", className = "", label }: InkGlyphProps) {
+export function InkGlyph({ glyph, state = "arising", size = "md", className = "", label, ink }: InkGlyphProps) {
   return (
     <span
       className={`ink-glyph ${SIZE_CLASS[size]} ${STATE_CLASS[state]} ${className}`.trim()}
       style={{
         WebkitMaskImage: `url(${sumiSrc(glyph)})`,
         maskImage: `url(${sumiSrc(glyph)})`,
+        ...(ink ? { backgroundColor: ink } : {}),
       }}
       role={label ? "img" : undefined}
       aria-label={label}

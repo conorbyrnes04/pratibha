@@ -18,6 +18,10 @@ import { LayerBlock } from "@/components/LayerBlock";
 import { ReadingShell } from "@/components/ReadingShell";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
+import { StudentCommentary } from "@/components/StudentCommentary";
+import { CircleReadings } from "@/components/CircleReadings";
+import { SanghaBoundary } from "@/components/SanghaBoundary";
+import { ShareComposer } from "@/components/ShareComposer";
 import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import {
   getStudyLayers,
@@ -31,7 +35,6 @@ import {
 import { firstSentence, stripMarkdown } from "@/lib/textPreview";
 import { relatedPassages } from "@/lib/relatedPassages";
 import { preferStudyUnits } from "@/lib/corpusFilters";
-import { isLongNativeScript } from "@/lib/sanskritScript";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { KitLink } from "@/components/ui/kit-link";
@@ -83,12 +86,6 @@ export default function VerseDetailPage() {
   const [loading, setLoading] = useState(true);
   const [backHref, setBackHref] = useState<string | null>(null);
   const id = decodeURIComponent(params.id || "");
-
-  useEffect(() => {
-    if (!item) return;
-    const original = getStudyLayers(item).find((layer) => layer.kind === "original");
-    setShowOriginal(!isLongNativeScript(original?.body));
-  }, [item]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -303,6 +300,11 @@ export default function VerseDetailPage() {
           </section>
         ) : null}
 
+        <SanghaBoundary>
+          <StudentCommentary verseId={item._id} verseTitle={displayPassageTitle(item)} />
+          <CircleReadings verseId={item._id} />
+        </SanghaBoundary>
+
         <footer className="passage-endmatter">
           {siblings.length > 1 ? (
             <nav className="passage-reading__nav passage-reading__nav--flush" aria-label="Passages in this text">
@@ -348,6 +350,7 @@ export default function VerseDetailPage() {
             >
               Practice chat
             </KitLink>
+            <ShareComposer item={item} />
             <Sheet>
               <SheetTrigger
                 render={<Button type="button" variant="ghost" size="sm" className="border border-white/10" />}
