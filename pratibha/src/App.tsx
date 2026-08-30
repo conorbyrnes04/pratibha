@@ -9,11 +9,11 @@ import { ReadPage } from "./pages/ReadPage";
 
 function AppContent() {
   const { user, loading } = useAuth();
-  const [currentPage, setCurrentPage] = useState("home");
+  const [currentPage, setCurrentPage] = useState("login");
 
   useEffect(() => {
-    if (!user && currentPage !== "login") {
-      setCurrentPage("login");
+    if (user && currentPage === "login") {
+      setCurrentPage("home");
     }
   }, [user, currentPage]);
 
@@ -25,14 +25,23 @@ function AppContent() {
     );
   }
 
+  if (!user) {
+    return (
+      <view style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
+        <scroll-view style={{ flex: 1 }}>
+          <LoginPage onLogin={() => setCurrentPage("home")} />
+        </scroll-view>
+      </view>
+    );
+  }
+
   return (
     <view style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
-      {user && <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />}
+      <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
       <scroll-view style={{ flex: 1 }}>
-        {currentPage === "login" && <LoginPage onLogin={() => setCurrentPage("home")} />}
-        {currentPage === "home" && user && <HomePage />}
-        {currentPage === "read" && user && <ReadPage />}
-        {currentPage === "journal" && user && <JournalPage />}
+        {currentPage === "home" && <HomePage />}
+        {currentPage === "read" && <ReadPage />}
+        {currentPage === "journal" && <JournalPage />}
       </scroll-view>
     </view>
   );
