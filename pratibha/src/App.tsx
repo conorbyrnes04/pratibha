@@ -9,7 +9,7 @@ import { ReadPage } from "./pages/ReadPage";
 
 function AppContent() {
   const { user, loading } = useAuth();
-  const [currentPage, setCurrentPage] = useState("login");
+  const [currentPage, setCurrentPage] = useState("home");
 
   useEffect(() => {
     if (user && currentPage === "login") {
@@ -25,6 +25,7 @@ function AppContent() {
     );
   }
 
+  // Render login immediately when no user, regardless of currentPage state
   if (!user) {
     return <LoginPage onLogin={() => setCurrentPage("home")} />;
   }
