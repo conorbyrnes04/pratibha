@@ -711,6 +711,7 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
         out["commentary"] = ""
     if _practice_is_generic(out["abhyasa"]):
         out["abhyasa"] = ""
+        out["practice"] = ""
     out["pratibha_layers"] = _build_layers(item, out, raw_commentary=raw_commentary)
     from .ttc_refs import humanize_ttc_unit, is_tao_te_ching
     from .ys_refs import enrich_patanjali_unit

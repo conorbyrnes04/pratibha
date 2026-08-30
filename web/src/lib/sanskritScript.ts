@@ -19,7 +19,7 @@ export function containsCjk(text?: string): boolean {
 export function isLongNativeScript(text?: string): boolean {
   const body = (text || "").trim();
   if (!body) return false;
-  if (containsCjk(body)) return body.length > 120;
+  if (containsCjk(body)) return body.length > 400;
   if (containsDevanagari(body) || containsTibetan(body)) return body.length > 280;
   return body.length > 800;
 }

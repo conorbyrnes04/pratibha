@@ -238,7 +238,8 @@ export function passagePreview(item: VerseItem): string {
 }
 
 export function practiceText(item: VerseItem): string {
-  return stripMarkdown(layerText(item, "practice") || item.practice || item.abhyasa || "");
+  const value = stripMarkdown(layerText(item, "practice") || item.practice || item.abhyasa || "");
+  return isGenericPractice(value) ? "" : value;
 }
 
 export function maturityLabel(value?: string): string {

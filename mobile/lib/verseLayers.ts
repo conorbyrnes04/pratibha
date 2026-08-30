@@ -196,7 +196,16 @@ export function passagePreview(item: VerseItem): string {
 }
 
 export function practiceText(item: VerseItem): string {
-  return stripMarkdown(layerText(item, "practice") || item.practice || item.abhyasa || "");
+  const value = stripMarkdown(layerText(item, "practice") || item.practice || item.abhyasa || "");
+  const lowered = value.toLowerCase();
+  if (
+    lowered.includes("sit for 3 minutes with natural breathing") ||
+    lowered.includes("read once slowly, then pause") ||
+    lowered.includes("read this passage slowly three times")
+  ) {
+    return "";
+  }
+  return value;
 }
 
 export function maturityLabel(value?: string): string {
