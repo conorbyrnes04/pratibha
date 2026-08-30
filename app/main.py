@@ -137,6 +137,57 @@ async def health():
     }
 
 
+# --- Sumi ink glyphs -------------------------------------------------------
+# The sumi-e marks are flat black potrace fills (fill="#000000"). The design
+# grammar forbids rendering them black-on-white: an ink mark is ābhāsa, the
+# "shining forth", so it is always painted in a state color on the void-dark
+# ground. The web recolors via CSS mask; the Lynx client has no such pipeline,
+# so we recolor server-side and hand back a ready-to-paint SVG for <image>.
+
+_SUMI_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "sumi", "svg")
+_SUMI_SLUG_RE = re.compile(r"^[a-z0-9_]+$")
+# unmanifest (ash) -> arising (bone) -> recognized (gold/seal)
+_SUMI_STATES = {
+    "unmanifest": ("#d6d0c4", "0.38"),
+    "arising": ("#f0eadc", "1"),
+    "recognized": ("#f0c979", "1"),
+}
+_HEX_RE = re.compile(r"^[0-9a-fA-F]{6}$")
+
+
+@app.get("/sumi/{slug}.svg")
+async def sumi_glyph(slug: str, ink: str | None = None, state: str | None = None):
+    """Recolor a sumi mark to a state color (or an explicit ?ink=RRGGBB).
+
+    Examples: /sumi/lotus.svg?state=recognized  ·  /sumi/eye.svg?ink=f0c979
+    """
+    from fastapi.responses import Response
+
+    slug = slug.strip().lower()
+    if not _SUMI_SLUG_RE.match(slug):
+        raise HTTPException(400, "Bad glyph name")
+    path = os.path.join(_SUMI_DIR, f"{slug}.svg")
+    # Guard against traversal and missing marks.
+    if not os.path.abspath(path).startswith(os.path.abspath(_SUMI_DIR)) or not os.path.isfile(path):
+        raise HTTPException(404, "No such glyph")
+
+    if ink and _HEX_RE.match(ink):
+        color, opacity = f"#{ink.lower()}", "1"
+    else:
+        color, opacity = _SUMI_STATES.get((state or "arising").lower(), _SUMI_STATES["arising"])
+
+    with open(path, "r", encoding="utf-8") as fh:
+        svg = fh.read()
+    # potrace emits a single fill="#000000"; swap it and carry the opacity.
+    svg = svg.replace('fill="#000000"', f'fill="{color}" fill-opacity="{opacity}"')
+
+    return Response(
+        content=svg,
+        media_type="image/svg+xml",
+        headers={"Cache-Control": "public, max-age=86400, immutable"},
+    )
+
+
 @app.get("/me")
 async def me(user: AuthUser = Depends(require_user)):
     """Return the signed-in Convex user (Authorization: Bearer <token>)."""
