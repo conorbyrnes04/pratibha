@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "@lynx-js/react";
 import { useAuth } from "../auth/AuthProvider";
 
 interface LoginPageProps {
@@ -53,9 +53,8 @@ export function LoginPage({ onLogin }: LoginPageProps) {
         <view style={{ marginBottom: 16 }}>
           <text style={{ color: "#999", fontSize: 14, marginBottom: 8 }}>Email</text>
           <input
-            type="email"
             value={email}
-            onChange={(e: any) => setEmail(e.target.value)}
+            onInput={(e: any) => setEmail(e.detail.value || e.target?.value || "")}
             placeholder="your@email.com"
             style={{
               width: "100%",
@@ -72,9 +71,8 @@ export function LoginPage({ onLogin }: LoginPageProps) {
         <view style={{ marginBottom: 24 }}>
           <text style={{ color: "#999", fontSize: 14, marginBottom: 8 }}>Password</text>
           <input
-            type="password"
             value={password}
-            onChange={(e: any) => setPassword(e.target.value)}
+            onInput={(e: any) => setPassword(e.detail.value || e.target?.value || "")}
             placeholder="Min 6 characters"
             style={{
               width: "100%",

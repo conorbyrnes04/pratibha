@@ -1,4 +1,4 @@
-import React from "react";
+import React from "@lynx-js/react";
 
 interface NavigationProps {
   currentPage: string;

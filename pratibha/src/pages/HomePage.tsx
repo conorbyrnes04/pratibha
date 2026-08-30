@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "@lynx-js/react";
 import { convexFetch } from "../convex/httpClient";
 import { LikeButton } from "../components/LikeButton";
 import { CommentSection } from "../components/CommentSection";

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import React, { createContext, useContext, useState, useEffect, ReactNode } from "@lynx-js/react";
 import { setAuthToken, convexFetch } from "../convex/httpClient";
 
 interface User {
@@ -22,8 +22,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Check for existing session
-    const token = localStorage.getItem("convex_token");
+    // Check for existing session (guard localStorage access)
+    const token = typeof localStorage !== "undefined" ? localStorage.getItem("convex_token") : null;
     if (token) {
       setAuthToken(token);
       loadUser();
@@ -38,12 +38,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (currentUser) {
         setUser(currentUser);
       } else {
-        localStorage.removeItem("convex_token");
+        if (typeof localStorage !== "undefined") {
+          localStorage.removeItem("convex_token");
+        }
         setAuthToken(null);
       }
     } catch (error) {
       console.error("Failed to load user:", error);
-      localStorage.removeItem("convex_token");
+      if (typeof localStorage !== "undefined") {
+        localStorage.removeItem("convex_token");
+      }
       setAuthToken(null);
     } finally {
       setLoading(false);
@@ -62,7 +66,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       );
 
       if (result.token) {
-        localStorage.setItem("convex_token", result.token);
+        if (typeof localStorage !== "undefined") {
+          localStorage.setItem("convex_token", result.token);
+        }
         setAuthToken(result.token);
         await loadUser();
       } else {
@@ -85,7 +91,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       );
 
       if (result.token) {
-        localStorage.setItem("convex_token", result.token);
+        if (typeof localStorage !== "undefined") {
+          localStorage.setItem("convex_token", result.token);
+        }
         setAuthToken(result.token);
         await loadUser();
       } else {
@@ -102,7 +110,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     } catch (error) {
       console.error("Sign out error:", error);
     } finally {
-      localStorage.removeItem("convex_token");
+      if (typeof localStorage !== "undefined") {
+        localStorage.removeItem("convex_token");
+      }
       setAuthToken(null);
       setUser(null);
     }

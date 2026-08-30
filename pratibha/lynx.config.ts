@@ -3,9 +3,13 @@ import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 
 export default defineConfig({
   plugins: [pluginReactLynx()],
+  environments: {
+    web: {},
+    lynx: {},
+  },
   source: {
     entry: {
-      index: "./src/App.tsx",
+      index: "./src/index.tsx",
     },
   },
   server: {

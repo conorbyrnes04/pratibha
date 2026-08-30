@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "@lynx-js/react";
 import { ConvexProvider } from "./convex/ConvexProvider";
 import { AuthProvider, useAuth } from "./auth/AuthProvider";
 import { Navigation } from "./components/Navigation";
@@ -9,7 +9,13 @@ import { ReadPage } from "./pages/ReadPage";
 
 function AppContent() {
   const { user, loading } = useAuth();
-  const [currentPage, setCurrentPage] = React.useState("home");
+  const [currentPage, setCurrentPage] = useState("home");
+
+  useEffect(() => {
+    if (!user && currentPage !== "login") {
+      setCurrentPage("login");
+    }
+  }, [user, currentPage]);
 
   if (loading) {
     return (
@@ -17,10 +23,6 @@ function AppContent() {
         <text style={{ color: "#f0c979", fontSize: 16 }}>Loading...</text>
       </view>
     );
-  }
-
-  if (!user && currentPage !== "login") {
-    setCurrentPage("login");
   }
 
   return (

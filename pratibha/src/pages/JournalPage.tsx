@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "@lynx-js/react";
 import { useConvex } from "../convex/ConvexProvider";
 import { useAuth } from "../auth/AuthProvider";
 
@@ -76,9 +76,8 @@ export function JournalPage() {
       <view style={{ marginBottom: 32, padding: 16, backgroundColor: "#1a1a2e", borderRadius: 8 }}>
         <text style={{ color: "#ccc", fontSize: 14, marginBottom: 12 }}>New Entry</text>
         <input
-          type="text"
           value={newTitle}
-          onChange={(e: any) => setNewTitle(e.target.value)}
+          onInput={(e: any) => setNewTitle(e.detail.value || e.target?.value || "")}
           placeholder="Title (optional)"
           style={{
             width: "100%",
@@ -91,13 +90,14 @@ export function JournalPage() {
             fontSize: 14,
           }}
         />
-        <textarea
+        <input
           value={newNote}
-          onChange={(e: any) => setNewNote(e.target.value)}
+          onInput={(e: any) => setNewNote(e.detail.value || e.target?.value || "")}
           placeholder="Write your reflection..."
-          rows={4}
+          multiline
           style={{
             width: "100%",
+            minHeight: 80,
             padding: 10,
             marginBottom: 12,
             backgroundColor: "#0a0a0f",

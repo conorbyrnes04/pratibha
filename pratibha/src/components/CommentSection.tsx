@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "@lynx-js/react";
 import { convexFetch } from "../convex/httpClient";
 import { useAuth } from "../auth/AuthProvider";
 
@@ -188,7 +188,7 @@ function CommentComposer({
         >
           <input
             value={body}
-            onInput={(e: any) => setBody(e.target.value)}
+            onInput={(e: any) => setBody(e.detail.value || e.target?.value || "")}
             placeholder={parentId ? "Write a reply..." : "Share your thoughts..."}
             multiline
             style={{
@@ -456,7 +456,7 @@ function ReportDialog({ commentId, onClose, onReported }: ReportDialogProps) {
 
       <input
         value={reason}
-        onInput={(e: any) => setReason(e.target.value)}
+        onInput={(e: any) => setReason(e.detail.value || e.target?.value || "")}
         placeholder="Why are you reporting this comment?"
         multiline
         style={{

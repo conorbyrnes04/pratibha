@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "@lynx-js/react";
 
 interface ShareButtonProps {
   verseId: string;
