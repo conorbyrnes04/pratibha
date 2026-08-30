@@ -74,7 +74,9 @@ function ConvexAuthProvider({ children }: { children: ReactNode }) {
 
   const signInWithGoogle = useCallback(async () => {
     try {
-      await signIn("google");
+      await signIn("google", {
+        redirectTo: typeof window !== "undefined" ? window.location.origin : undefined,
+      });
       return null;
     } catch (error) {
       return error instanceof Error ? error.message : "Google sign in failed";
