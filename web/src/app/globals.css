@@ -3344,6 +3344,11 @@ select:focus-visible {
   flex-direction: column;
 }
 
+.share-card--story {
+  aspect-ratio: 1080 / 1920;
+  padding: 2rem 1.5rem 1.5rem;
+}
+
 .share-card__mark {
   position: absolute;
   inset: 18% 8% 22%;
