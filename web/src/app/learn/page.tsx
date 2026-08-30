@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { getVerses } from "@/lib/api";
 import { LearnThemesHome } from "@/components/learn/LearnThemesHome";
 import { LearnThreadJourney } from "@/components/learn/LearnThreadJourney";
+import { LearnTrail } from "@/components/learn/LearnTrail";
 import { PathStepWell } from "@/components/learn/PathStepWell";
 import { PathTree } from "@/components/learn/PathTree";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
@@ -54,6 +55,7 @@ export default function LearnPage() {
   const [items, setItems] = useState<VerseItem[]>([]);
   const [selectedTrackId, setSelectedTrackId] = useState<string | null>(null);
   const [openStepId, setOpenStepId] = useState<string | null>(null);
+  const [openStepTrackId, setOpenStepTrackId] = useState<string | null>(null);
   const [activeThreadId, setActiveThreadId] = useState<string | null>(null);
   const [activeBeadId, setActiveBeadId] = useState<string | null>(null);
   const [threadCeremonyId, setThreadCeremonyId] = useState<string | null>(null);
@@ -296,16 +298,36 @@ export default function LearnPage() {
   function onPathGateComplete(trackId: string, stepId: string) {
     const key = stepKey(trackId, stepId);
     if (!progress[key]) toggle(trackId, stepId);
-    const idx = track.steps.findIndex((x) => x.id === stepId);
-    const next = idx >= 0 ? track.steps[idx + 1] : undefined;
+    const track = LEARNING_TRACKS.find((t) => t.id === trackId);
+    const idx = track?.steps.findIndex((x) => x.id === stepId) ?? -1;
+    const next = idx >= 0 && track ? track.steps[idx + 1] : undefined;
     if (next) {
       if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
       advanceTimerRef.current = setTimeout(() => {
         setOpenStepId(next.id);
-        pendingScrollRef.current = next.id;
-        syncUrl({ trackId: track.id, stepId: next.id });
+        setOpenStepTrackId(trackId);
+        pendingScrollRef.current = stepKey(trackId, next.id);
         advanceTimerRef.current = null;
       }, 450);
+    } else {
+      // Last gate in track, close it
+      if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = setTimeout(() => {
+        setOpenStepId(null);
+        setOpenStepTrackId(null);
+        advanceTimerRef.current = null;
+      }, 450);
+    }
+  }
+
+  function toggleTrailGate(trackId: string, stepId: string, isOpen: boolean) {
+    if (isOpen) {
+      setOpenStepId(null);
+      setOpenStepTrackId(null);
+    } else {
+      setOpenStepId(stepId);
+      setOpenStepTrackId(trackId);
+      pendingScrollRef.current = stepKey(trackId, stepId);
     }
   }
 
@@ -358,15 +380,14 @@ export default function LearnPage() {
     <main className="page-shell page-shell--reading">
       <div className="section-stack">
         {view === "home" ? (
-          <LearnThemesHome
+          <LearnTrail
             progress={progress}
-            completedAt={completedAt}
             hydrated={hydrated}
-            dailySit={dailySit}
-            onOpenBead={openBead}
-            onOpenThread={openThread}
-            onOpenLineage={openLineageMap}
-            onBeginSit={beginSit}
+            openStepKey={openStepId && openStepTrackId ? stepKey(openStepTrackId, openStepId) : null}
+            onToggleGate={toggleTrailGate}
+            onComplete={onPathGateComplete}
+            scrollToKey={pendingScrollRef.current}
+            items={items}
           />
         ) : null}
 
