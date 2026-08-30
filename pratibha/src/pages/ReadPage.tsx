@@ -10,7 +10,9 @@ import { C, SCRIPT, SERIF } from "../lib/theme";
 import { StudentCommentary } from "../components/StudentCommentary";
 import { CircleReadings } from "../components/CircleReadings";
 import { ShareComposer } from "../components/ShareComposer";
-import { AppreciateButton } from "../components/AppreciateButton";
+import { IlluminatedHeader } from "../components/IlluminatedHeader";
+import { SumiGlyph } from "../components/SumiGlyph";
+import { sumiGlyph } from "../lib/sumi";
 
 function stripBold(s: string): string {
   return s.replace(/\*\*/g, "").trim();
@@ -160,19 +162,12 @@ export function PassageDetail({
           <text style={{ color: C.gold, fontSize: 14 }}>{backLabel}</text>
         </view>
 
-        {passage.collection ? (
-          <text style={{ color: C.faint, fontSize: 12, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 6 }}>
-            {passage.collection}
-            {passage.section ? `  ·  ${passage.section}` : ""}
-          </text>
-        ) : null}
-        <text style={{ color: C.gold, fontSize: 26, fontWeight: "bold", fontFamily: SERIF, marginBottom: 16 }}>
-          {passage.title || passage._id}
-        </text>
-
-        <view style={{ marginBottom: 24 }}>
-          <AppreciateButton verseId={passage._id} />
-        </view>
+        <IlluminatedHeader
+          verseId={passage._id}
+          collection={passage.collection}
+          section={passage.section}
+          title={passage.title || passage._id}
+        />
 
         {original ? (
           <view style={{ marginBottom: 24, paddingLeft: 14, borderLeftWidth: 2, borderLeftColor: C.goldMuted }}>
@@ -420,6 +415,8 @@ export function ReadPage({ openVerseId }: { openVerseId?: string | null }) {
                 key={verse._id}
                 bindtap={() => void openVerse(verse)}
                 style={{
+                  flexDirection: "row",
+                  gap: 14,
                   padding: 16,
                   backgroundColor: C.card,
                   borderRadius: 8,
@@ -427,25 +424,30 @@ export function ReadPage({ openVerseId }: { openVerseId?: string | null }) {
                   borderLeftColor: C.gold,
                 }}
               >
-                {verse.collection ? (
-                  <text
-                    style={{
-                      color: C.faint,
-                      fontSize: 11,
-                      letterSpacing: 1,
-                      textTransform: "uppercase",
-                      marginBottom: 4,
-                    }}
-                  >
-                    {verse.collection}
+                <view style={{ width: 34, alignItems: "center", paddingTop: 2 }}>
+                  <SumiGlyph glyph={sumiGlyph(verse.collection || verse._id)} state="arising" size={34} />
+                </view>
+                <view style={{ flex: 1 }}>
+                  {verse.collection ? (
+                    <text
+                      style={{
+                        color: C.faint,
+                        fontSize: 11,
+                        letterSpacing: 1,
+                        textTransform: "uppercase",
+                        marginBottom: 4,
+                      }}
+                    >
+                      {verse.collection}
+                    </text>
+                  ) : null}
+                  <text style={{ color: C.gold, fontSize: 16, fontWeight: "600", fontFamily: SERIF, marginBottom: 6 }}>
+                    {verse.title || verse._id}
                   </text>
-                ) : null}
-                <text style={{ color: C.gold, fontSize: 16, fontWeight: "600", fontFamily: SERIF, marginBottom: 6 }}>
-                  {verse.title || verse._id}
-                </text>
-                {preview ? (
-                  <text style={{ color: C.muted, fontSize: 14, lineHeight: 1.5 }}>{preview.slice(0, 200)}</text>
-                ) : null}
+                  {preview ? (
+                    <text style={{ color: C.muted, fontSize: 14, lineHeight: 1.5 }}>{preview.slice(0, 200)}</text>
+                  ) : null}
+                </view>
               </view>
             );
           })}
