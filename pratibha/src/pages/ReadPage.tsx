@@ -47,7 +47,7 @@ export function ReadPage() {
       <scroll-view style={{ flex: 1 }}>
         <view style={{ padding: 20 }}>
           <view
-            onClick={() => setSelectedVerse(null)}
+            bindtap={() => setSelectedVerse(null)}
             style={{
               marginBottom: 20,
               paddingVertical: 8,
@@ -140,7 +140,7 @@ export function ReadPage() {
         {verses.map((verse) => (
           <view
             key={verse._id}
-            onClick={() => setSelectedVerse(verse)}
+            bindtap={() => setSelectedVerse(verse)}
             style={{
               padding: 16,
               backgroundColor: "#1a1a2e",

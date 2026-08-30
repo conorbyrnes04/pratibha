@@ -55,7 +55,7 @@ export function LikeButton({ verseId }: LikeButtonProps) {
 
   return (
     <view
-      onClick={handleLike}
+      bindtap={handleLike}
       style={{
         flexDirection: "row",
         alignItems: "center",

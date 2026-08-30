@@ -77,7 +77,7 @@ export function JournalPage() {
         <text style={{ color: "#ccc", fontSize: 14, marginBottom: 12 }}>New Entry</text>
         <input
           value={newTitle}
-          onInput={(e: any) => setNewTitle(e.detail.value || e.target?.value || "")}
+          bindinput={(res: any) => setNewTitle(res.detail.value)}
           placeholder="Title (optional)"
           style={{
             width: "100%",
@@ -92,7 +92,7 @@ export function JournalPage() {
         />
         <input
           value={newNote}
-          onInput={(e: any) => setNewNote(e.detail.value || e.target?.value || "")}
+          bindinput={(res: any) => setNewNote(res.detail.value)}
           placeholder="Write your reflection..."
           multiline
           style={{
@@ -109,7 +109,7 @@ export function JournalPage() {
           }}
         />
         <view
-          onClick={newNote.trim() ? createNote : undefined}
+          bindtap={newNote.trim() ? createNote : undefined}
           style={{
             padding: 10,
             backgroundColor: newNote.trim() ? "#f0c979" : "#666",

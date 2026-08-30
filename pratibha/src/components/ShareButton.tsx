@@ -200,7 +200,7 @@ export function ShareButton({
   return (
     <view style={{ position: "relative" }}>
       <view
-        onClick={() => setShowMenu(!showMenu)}
+        bindtap={() => setShowMenu(!showMenu)}
         style={{
           paddingVertical: 8,
           paddingHorizontal: 12,
@@ -232,7 +232,7 @@ export function ShareButton({
           }}
         >
           <view
-            onClick={shareToX}
+            bindtap={shareToX}
             style={{
               padding: 12,
               cursor: "pointer",
@@ -244,7 +244,7 @@ export function ShareButton({
           </view>
 
           <view
-            onClick={shareToInstagram}
+            bindtap={shareToInstagram}
             style={{
               padding: 12,
               cursor: generating ? "default" : "pointer",
@@ -259,7 +259,7 @@ export function ShareButton({
           </view>
 
           <view
-            onClick={shareToTikTok}
+            bindtap={shareToTikTok}
             style={{
               padding: 12,
               cursor: generating ? "default" : "pointer",
@@ -274,7 +274,7 @@ export function ShareButton({
           </view>
 
           <view
-            onClick={() => setShowMenu(false)}
+            bindtap={() => setShowMenu(false)}
             style={{
               padding: 12,
               cursor: "pointer",

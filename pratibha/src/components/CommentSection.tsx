@@ -188,7 +188,7 @@ function CommentComposer({
         >
           <input
             value={body}
-            onInput={(e: any) => setBody(e.detail.value || e.target?.value || "")}
+            bindinput={(res: any) => setBody(res.detail.value)}
             placeholder={parentId ? "Write a reply..." : "Share your thoughts..."}
             multiline
             style={{
@@ -222,7 +222,7 @@ function CommentComposer({
 
         <view style={{ flexDirection: "row", gap: 8 }}>
           <view
-            onClick={handlePost}
+            bindtap={handlePost}
             style={{
               paddingVertical: 8,
               paddingHorizontal: 16,
@@ -244,7 +244,7 @@ function CommentComposer({
 
           {onCancel && (
             <view
-              onClick={onCancel}
+              bindtap={onCancel}
               style={{
                 paddingVertical: 8,
                 paddingHorizontal: 16,
@@ -333,7 +333,7 @@ function CommentThread({ comment, verseId, onUpdate }: CommentThreadProps) {
         <view style={{ flexDirection: "row", gap: 16, marginTop: 4 }}>
           {canReply && (
             <text
-              onClick={() => setShowReplyBox(!showReplyBox)}
+              bindtap={() => setShowReplyBox(!showReplyBox)}
               style={{
                 color: "#999",
                 fontSize: 13,
@@ -345,7 +345,7 @@ function CommentThread({ comment, verseId, onUpdate }: CommentThreadProps) {
             </text>
           )}
           <text
-            onClick={() => setShowReportDialog(!showReportDialog)}
+            bindtap={() => setShowReportDialog(!showReportDialog)}
             style={{
               color: "#999",
               fontSize: 13,
@@ -456,7 +456,7 @@ function ReportDialog({ commentId, onClose, onReported }: ReportDialogProps) {
 
       <input
         value={reason}
-        onInput={(e: any) => setReason(e.detail.value || e.target?.value || "")}
+        bindinput={(res: any) => setReason(res.detail.value)}
         placeholder="Why are you reporting this comment?"
         multiline
         style={{
@@ -475,7 +475,7 @@ function ReportDialog({ commentId, onClose, onReported }: ReportDialogProps) {
 
       <view style={{ flexDirection: "row", gap: 8 }}>
         <view
-          onClick={handleSubmit}
+          bindtap={handleSubmit}
           style={{
             paddingVertical: 6,
             paddingHorizontal: 12,
@@ -496,7 +496,7 @@ function ReportDialog({ commentId, onClose, onReported }: ReportDialogProps) {
         </view>
 
         <view
-          onClick={onClose}
+          bindtap={onClose}
           style={{
             paddingVertical: 6,
             paddingHorizontal: 12,

@@ -29,7 +29,7 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
       {pages.map((page) => (
         <view
           key={page.id}
-          onClick={() => onNavigate(page.id)}
+          bindtap={() => onNavigate(page.id)}
           style={{
             paddingVertical: 8,
             paddingHorizontal: 16,

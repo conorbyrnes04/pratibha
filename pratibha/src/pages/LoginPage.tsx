@@ -54,7 +54,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
           <text style={{ color: "#999", fontSize: 14, marginBottom: 8 }}>Email</text>
           <input
             value={email}
-            onInput={(e: any) => setEmail(e.detail.value || e.target?.value || "")}
+            bindinput={(res: any) => setEmail(res.detail.value)}
             placeholder="your@email.com"
             style={{
               width: "100%",
@@ -71,8 +71,9 @@ export function LoginPage({ onLogin }: LoginPageProps) {
         <view style={{ marginBottom: 24 }}>
           <text style={{ color: "#999", fontSize: 14, marginBottom: 8 }}>Password</text>
           <input
+            type="password"
             value={password}
-            onInput={(e: any) => setPassword(e.detail.value || e.target?.value || "")}
+            bindinput={(res: any) => setPassword(res.detail.value)}
             placeholder="Min 6 characters"
             style={{
               width: "100%",
@@ -93,7 +94,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
         )}
 
         <view
-          onClick={loading ? undefined : handleSubmit}
+          bindtap={loading ? undefined : handleSubmit}
           style={{
             width: "100%",
             padding: 14,
@@ -113,7 +114,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
             {mode === "signin" ? "No account?" : "Have an account?"}
           </text>
           <text
-            onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
+            bindtap={() => setMode(mode === "signin" ? "signup" : "signin")}
             style={{ color: "#f0c979", fontSize: 14, cursor: "pointer", textDecoration: "underline" }}
           >
             {mode === "signin" ? "Create one" : "Sign in"}
