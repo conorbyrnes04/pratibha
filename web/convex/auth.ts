@@ -5,6 +5,12 @@ import Google from "@auth/core/providers/google";
 import { query } from "./_generated/server";
 import { getAuthUserId } from "@convex-dev/auth/server";
 
+/**
+ * DEPLOYMENT NOTE:
+ * Deploy Convex functions with `npx convex deploy` from the web/ directory only.
+ * Never deploy from the lynx pratibha/ folder as that auth.ts omits isAuthenticated.
+ */
+
 // Mixed provider list (Password + optional Google), so type it explicitly —
 // otherwise the element type is inferred from Password alone.
 const providers: AuthProviderConfig[] = [Password];
