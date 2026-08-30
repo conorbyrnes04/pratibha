@@ -6,12 +6,13 @@ interface LoginPageProps {
 }
 
 export function LoginPage({ onLogin }: LoginPageProps) {
-  const { signIn, signUp } = useAuth();
+  const { signIn, signUp, signInWithGoogle } = useAuth();
   const [mode, setMode] = useState<"signin" | "signup">("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
 
   async function handleSubmit() {
     if (!email || !password) {
@@ -37,6 +38,20 @@ export function LoginPage({ onLogin }: LoginPageProps) {
       setError(err.message || "Authentication failed");
     } finally {
       setLoading(false);
+    }
+  }
+
+  async function handleGoogleSignIn() {
+    setGoogleLoading(true);
+    setError("");
+
+    try {
+      await signInWithGoogle();
+      onLogin();
+    } catch (err: any) {
+      setError(err.message || "Google sign-in failed");
+    } finally {
+      setGoogleLoading(false);
     }
   }
 
@@ -110,11 +125,37 @@ export function LoginPage({ onLogin }: LoginPageProps) {
               paddingBottom: 16,
               backgroundColor: loading ? "#666" : "#c9a227",
               borderRadius: 6,
-              marginBottom: 20,
+              marginBottom: 24,
             }}
           >
             <text style={{ color: "#0a0a0f", fontSize: 17, fontWeight: "600", textAlign: "center" }}>
               {loading ? "Please wait..." : mode === "signin" ? "Sign In" : "Create Account"}
+            </text>
+          </view>
+
+          {/* Divider */}
+          <view style={{ display: "linear", flexDirection: "row", alignItems: "center", marginBottom: 24 }}>
+            <view style={{ flex: 1, height: 1, backgroundColor: "#333" }} />
+            <text style={{ color: "#666", fontSize: 13, marginLeft: 16, marginRight: 16 }}>OR</text>
+            <view style={{ flex: 1, height: 1, backgroundColor: "#333" }} />
+          </view>
+
+          {/* Google Sign-In */}
+          <view
+            bindtap={googleLoading ? undefined : handleGoogleSignIn}
+            style={{
+              width: "100%",
+              paddingTop: 16,
+              paddingBottom: 16,
+              backgroundColor: "transparent",
+              borderRadius: 6,
+              borderWidth: 1,
+              borderColor: "#c9a227",
+              marginBottom: 24,
+            }}
+          >
+            <text style={{ color: "#c9a227", fontSize: 17, fontWeight: "500", textAlign: "center" }}>
+              {googleLoading ? "Connecting..." : "Continue with Google"}
             </text>
           </view>
 

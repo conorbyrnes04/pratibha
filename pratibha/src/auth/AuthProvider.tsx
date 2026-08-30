@@ -12,6 +12,7 @@ interface AuthContextType {
   loading: boolean;
   signIn: (email: string, password: string) => Promise<void>;
   signUp: (email: string, password: string) => Promise<void>;
+  signInWithGoogle: () => Promise<void>;
   signOut: () => Promise<void>;
 }
 
@@ -104,6 +105,47 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
+  const signInWithGoogle = async () => {
+    try {
+      const result = await convexFetch(
+        "auth:signIn",
+        {
+          provider: "google",
+        },
+        "mutation"
+      );
+
+      // OAuth flow returns a redirect URL
+      if (result.redirect || result.url) {
+        const redirectUrl = result.redirect || result.url;
+        
+        // Try to open in system browser
+        // On Lynx native, this would use platform-specific APIs
+        // For web/development, use window.open or location
+        if (typeof window !== "undefined") {
+          // Web environment
+          window.location.href = redirectUrl;
+        } else {
+          // Lynx native - would need platform-specific implementation
+          // For now, log the URL
+          console.log("OAuth redirect URL:", redirectUrl);
+          throw new Error("Native browser opening not yet implemented. OAuth URL logged to console.");
+        }
+      } else if (result.token) {
+        // Direct token return (shouldn't happen with OAuth but handle it)
+        if (typeof localStorage !== "undefined") {
+          localStorage.setItem("convex_token", result.token);
+        }
+        setAuthToken(result.token);
+        await loadUser();
+      } else {
+        throw new Error("No redirect URL or token returned from Google sign-in");
+      }
+    } catch (error: any) {
+      throw new Error(error.message || "Google sign-in failed");
+    }
+  };
+
   const signOut = async () => {
     try {
       await convexFetch("auth:signOut", {}, "mutation");
@@ -123,6 +165,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     loading,
     signIn,
     signUp,
+    signInWithGoogle,
     signOut,
   };
 
