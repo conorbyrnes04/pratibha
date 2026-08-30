@@ -87,8 +87,13 @@ Personal NOISE
 Personal NOISE/
 Personal*/
 
-# IDE / editor
-.cursor/
+# IDE / editor (keep project MCP + rules; ignore the rest of .cursor)
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+!.cursor/mcp.json
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
 
 # Office lock files
 ~$*

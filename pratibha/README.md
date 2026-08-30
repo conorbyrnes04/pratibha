@@ -126,9 +126,14 @@ GOOGLE_CLIENT_SECRET=your-secret
 - **Real-time subscriptions**: HTTP client doesn't support WebSocket subscriptions. Queries are manual/polling only.
 - **FastAPI dependency**: Passages require FastAPI server running locally. Could be migrated to Convex functions if needed.
 
+## Agent tooling
+
+Coding agents should read [`AGENTS.md`](AGENTS.md) first, then [Lynx llms.txt](https://lynxjs.org/llms.txt). Project MCP servers (`lynx-docs`, `lynx-devtool`) live in `../.cursor/mcp.json`. Install Lynx community skills with `npx skills add lynx-community/skills -a cursor -a claude-code -y`.
+
 ## Resources
 
 - [Lynx Documentation](https://lynxjs.org/)
+- [Lynx for AI](https://lynxjs.org/ai.html)
 - [Convex Documentation](https://docs.convex.dev/)
-- [ReactLynx Guide](https://lynxjs.org/next/react/)
+- [ReactLynx Guide](https://lynxjs.org/react/introduction.html)
 

@@ -1,0 +1,18 @@
+---
+description: Lynx client conventions — fetch current Lynx docs before editing pratibha/
+globs: pratibha/**/*.{tsx,ts,css}
+alwaysApply: false
+---
+
+# Lynx (`pratibha/`)
+
+This is the experimental ReactLynx app, not the Next.js product in `web/`.
+
+Before changing Lynx UI or types, read [https://lynxjs.org/llms.txt](https://lynxjs.org/llms.txt) (or MCP resource `lynx-docs://llms.txt`) and the specific guide you need.
+
+- Elements: `<view>`, `<text>`, `<scroll-view>`, `<input>`, `<textarea>`. Text only inside `<text>`.
+- Events: `bindtap`, `bindinput`. Value from `e.detail?.value ?? e.target?.value`.
+- No `window` / `document` / raw `localStorage`. Use `src/lib/storage.ts`.
+- No Convex JS WebSocket client. Use `src/convex/httpClient.ts`.
+- Palette lives in `src/lib/theme.ts`. Do not pull Tailwind/shadcn from `web/`.
+- `npm run build` is the compile check. `tsc` JSX `children` errors on Lynx tags are a known types issue — do not rewrite tags to `div`.

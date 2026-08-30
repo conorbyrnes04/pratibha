@@ -94,9 +94,10 @@ To enable Google sign-in:
    - Create a project
    - Enable OAuth 2.0
    - Create credentials (OAuth 2.0 Client ID)
-   - Set authorized redirect URIs:
-     - `http://localhost:3000`
-     - Your production domain
+   - Set authorized redirect URIs to the **Convex Auth callback**, not localhost:
+     - `https://energized-armadillo-158.convex.site/api/auth/callback/google`
+     - (Dev and prod Convex deployments each need their own `*.convex.site` callback.)
+   - Authorized JavaScript origins can include `http://localhost:3000` and the production site.
 
 2. **Add to environment:**
 
