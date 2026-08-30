@@ -12,7 +12,7 @@ import { Pressable, View } from "react-native";
 import { colors } from "@/constants/theme";
 
 export default function HomeTab() {
-  const { items } = useStudy();
+  const { items, usingMockData } = useStudy();
   const [daily, setDaily] = useState<VerseItem | null>(null);
   const [loading, setLoading] = useState(true);
   const [dailyError, setDailyError] = useState(false);
@@ -68,10 +68,21 @@ export default function HomeTab() {
         </View>
         <Link href="/settings" asChild>
           <Pressable style={ui.buttonGhost}>
-            <PratibhaText style={ui.buttonGhostText}>API</PratibhaText>
+            <PratibhaText style={ui.buttonGhostText}>{usingMockData ? "DEMO" : "API"}</PratibhaText>
           </Pressable>
         </Link>
       </View>
+
+      {usingMockData && (
+        <View style={[ui.card, { marginTop: 12, backgroundColor: "rgba(240, 201, 121, 0.08)", borderColor: "rgba(240, 201, 121, 0.25)" }]}>
+          <PratibhaText variant="label" style={{ color: colors.accentBright }}>
+            Demo Mode
+          </PratibhaText>
+          <PratibhaText variant="soft" style={{ marginTop: 6, fontSize: 14 }}>
+            Using sample verses - API unavailable. Full corpus will load when API connection is restored.
+          </PratibhaText>
+        </View>
+      )}
 
       {dailyError && !loading ? (
         <View style={[ui.card, { marginTop: 20, borderColor: "rgba(253,164,175,0.35)" }]}>

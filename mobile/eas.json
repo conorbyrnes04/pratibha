@@ -12,10 +12,19 @@
       "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "ios": {
+        "resourceClass": "m-medium"
+      }
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "appleId": "conor@agniagama.com",
+        "ascAppId": "placeholder",
+        "appleTeamId": "HKXSRXV4K5"
+      }
+    }
   }
 }
