@@ -51,7 +51,7 @@ class Settings(BaseSettings):
     PG_USER: str = "postgres"
     PG_PASSWORD: str = "postgres"
     PG_DSN: str | None = None
-    # Managed hosts (Railway/Render/Supabase/Neon) expose a single connection
+    # Managed hosts (Railway/Render/Neon) expose a single connection
     # string. When present it wins and is parsed into the PG_* fields below so
     # every asyncpg.connect() call site keeps working unchanged.
     DATABASE_URL: str | None = None
@@ -59,11 +59,6 @@ class Settings(BaseSettings):
     # string requests it (e.g. ?sslmode=require), which managed external
     # endpoints typically need. Internal/private networking can leave this off.
     PG_SSL: bool = False
-
-    # Supabase Auth — JWT secret from Project Settings → API (legacy HS256 secret).
-    # Required for /me and other Bearer-protected routes.
-    SUPABASE_URL: str | None = None
-    SUPABASE_JWT_SECRET: str | None = None
 
     @field_validator("OPENAI_API_KEY", "GROQ_API_KEY", "OPENROUTER_API_KEY", mode="before")
     @classmethod
@@ -114,7 +109,7 @@ class Settings(BaseSettings):
             "user": self.PG_USER,
             "password": self.PG_PASSWORD,
             "database": self.PG_DB,
-            # Supabase/PgBouncer transaction pooling rejects prepared statements.
+            # PgBouncer transaction pooling rejects prepared statements.
             "statement_cache_size": 0,
         }
         if self.PG_SSL:

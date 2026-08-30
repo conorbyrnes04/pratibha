@@ -1,17 +1,15 @@
-"""Supabase JWT verification for protected API routes.
+"""Convex JWT verification for protected API routes.
 
-New Supabase projects sign user tokens with ES256 and publish keys at
-``{SUPABASE_URL}/auth/v1/.well-known/jwks.json``. Legacy projects may still
-use an HS256 shared ``SUPABASE_JWT_SECRET``.
+Convex signs user tokens with RS256. The public key can be retrieved from
+the Convex deployment's JWKS endpoint.
 """
 from __future__ import annotations
 
 import logging
-import time
+import os
 from dataclasses import dataclass
 from typing import Any
 
-import httpx
 import jwt
 from fastapi import Depends, HTTPException, Request
 from jwt import PyJWKClient
@@ -31,31 +29,22 @@ class AuthUser:
     claims: dict[str, Any] | None = None
 
 
-def _supabase_url() -> str | None:
-    url = (settings.SUPABASE_URL or "").strip().rstrip("/")
+def _convex_url() -> str | None:
+    """Get the Convex deployment URL from environment."""
+    url = os.getenv("NEXT_PUBLIC_CONVEX_URL", "").strip().rstrip("/")
     return url or None
 
 
-def _jwt_secret() -> str | None:
-    secret = (settings.SUPABASE_JWT_SECRET or "").strip()
-    if not secret:
-        return None
-    # Guard: anon/service_role API keys are JWTs themselves, not signing secrets.
-    if secret.startswith("eyJ") and secret.count(".") == 2:
-        logger.warning(
-            "SUPABASE_JWT_SECRET looks like an API key (anon/service_role), not a signing secret; "
-            "ignoring it and using JWKS if available."
-        )
-        return None
-    return secret
-
-
 def _get_jwks_client() -> PyJWKClient | None:
+    """Get or create the JWKS client for Convex token verification."""
     global _jwks_client, _jwks_client_url
-    base = _supabase_url()
+    base = _convex_url()
     if not base:
         return None
-    jwks_url = f"{base}/auth/v1/.well-known/jwks.json"
+    
+    # Convex JWKS endpoint
+    jwks_url = f"{base}/.well-known/jwks.json"
+    
     if _jwks_client is None or _jwks_client_url != jwks_url:
         _jwks_client = PyJWKClient(jwks_url, cache_keys=True, lifespan=3600)
         _jwks_client_url = jwks_url
@@ -63,57 +52,50 @@ def _get_jwks_client() -> PyJWKClient | None:
 
 
 def auth_configured() -> bool:
-    return bool(_supabase_url() or _jwt_secret())
+    """Check if Convex auth is configured."""
+    return bool(_convex_url())
 
 
 def verify_bearer_token(token: str) -> AuthUser:
-    payload: dict[str, Any] | None = None
-    errors: list[str] = []
-
-    # Prefer JWKS (ES256) — current Supabase default.
+    """Verify a Convex JWT token and return the user."""
     jwks = _get_jwks_client()
-    if jwks is not None:
-        try:
-            key = jwks.get_signing_key_from_jwt(token).key
-            payload = jwt.decode(
-                token,
-                key,
-                algorithms=["ES256", "RS256"],
-                audience="authenticated",
-                options={"require": ["sub", "exp"]},
-            )
-        except Exception as exc:  # noqa: BLE001 — fall through to legacy secret
-            errors.append(f"jwks:{exc}")
+    if jwks is None:
+        raise HTTPException(
+            status_code=503,
+            detail="Auth is not configured (NEXT_PUBLIC_CONVEX_URL)."
+        )
 
-    # Legacy HS256 shared secret.
-    if payload is None:
-        secret = _jwt_secret()
-        if secret:
-            try:
-                payload = jwt.decode(
-                    token,
-                    secret,
-                    algorithms=["HS256"],
-                    audience="authenticated",
-                    options={"require": ["sub", "exp"]},
-                )
-            except Exception as exc:  # noqa: BLE001
-                errors.append(f"hs256:{exc}")
-
-    if payload is None:
-        if not auth_configured():
-            raise HTTPException(status_code=503, detail="Auth is not configured (SUPABASE_URL / SUPABASE_JWT_SECRET).")
-        logger.info("JWT rejected: %s", "; ".join(errors) or "no verifier")
+    try:
+        # Get the signing key from JWKS
+        key = jwks.get_signing_key_from_jwt(token).key
+        
+        # Decode and verify the token
+        payload = jwt.decode(
+            token,
+            key,
+            algorithms=["RS256"],
+            options={"require": ["sub", "exp", "iss"]},
+        )
+    except Exception as exc:
+        logger.info("JWT rejected: %s", exc)
         raise HTTPException(status_code=401, detail="Invalid or expired token")
 
     sub = str(payload.get("sub") or "").strip()
     if not sub:
         raise HTTPException(status_code=401, detail="Token missing subject")
+    
+    # Extract email from token if present
     email = payload.get("email")
-    return AuthUser(id=sub, email=str(email) if email else None, claims=payload)
+    
+    return AuthUser(
+        id=sub,
+        email=str(email) if email else None,
+        claims=payload
+    )
 
 
 def _extract_bearer(request: Request) -> str | None:
+    """Extract bearer token from Authorization header."""
     header = request.headers.get("authorization") or request.headers.get("Authorization") or ""
     if not header.lower().startswith("bearer "):
         return None
@@ -122,6 +104,7 @@ def _extract_bearer(request: Request) -> str | None:
 
 
 async def optional_user(request: Request) -> AuthUser | None:
+    """Optionally get the authenticated user from the request."""
     token = _extract_bearer(request)
     if not token:
         return None
@@ -134,24 +117,8 @@ async def optional_user(request: Request) -> AuthUser | None:
 
 
 async def require_user(request: Request) -> AuthUser:
+    """Require an authenticated user for this request."""
     token = _extract_bearer(request)
     if not token:
         raise HTTPException(status_code=401, detail="Sign in required")
     return verify_bearer_token(token)
-
-
-# Warm JWKS once at import when URL is present (best-effort).
-def _warm_jwks() -> None:
-    client = _get_jwks_client()
-    if client is None:
-        return
-    try:
-        # Force a fetch so the first request isn't cold.
-        with httpx.Client(timeout=10.0) as http:
-            http.get(f"{_supabase_url()}/auth/v1/.well-known/jwks.json")
-        _ = time.time()
-    except Exception:
-        logger.debug("JWKS warm failed", exc_info=True)
-
-
-_warm_jwks()

@@ -7,7 +7,7 @@ import { useAuth } from "@/components/AuthProvider";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
-import { deleteJournalNoteRemote, syncJournalWithCloud } from "@/lib/journalCloud";
+import { useSyncJournal, useDeleteJournalNote } from "@/lib/journalCloud";
 import { deleteJournalNote, journalSourceHref, loadJournalNotes, saveJournalNotes } from "@/lib/journalStorage";
 
 export default function JournalPage() {
@@ -17,6 +17,8 @@ export default function JournalPage() {
   const [syncState, setSyncState] = useState<"idle" | "syncing" | "synced" | "local" | "error">("idle");
   const [syncError, setSyncError] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
+  const { sync } = useSyncJournal();
+  const deleteRemote = useDeleteJournalNote();
 
   function refresh() {
     setNotes(loadJournalNotes().sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)));
@@ -36,7 +38,7 @@ export default function JournalPage() {
     let active = true;
     setSyncState("syncing");
     setSyncError(null);
-    void syncJournalWithCloud(user.id).then((result) => {
+    void sync().then((result) => {
       if (!active) return;
       setNotes(result.notes.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)));
       setSyncState(result.status);
@@ -45,7 +47,7 @@ export default function JournalPage() {
     return () => {
       active = false;
     };
-  }, [user, authLoading]);
+  }, [user, authLoading, sync]);
 
   function exportNotes() {
     const blob = new Blob([JSON.stringify(loadJournalNotes(), null, 2)], { type: "application/json" });
@@ -80,7 +82,7 @@ export default function JournalPage() {
 
   function remove(id: string) {
     deleteJournalNote(id);
-    if (user) void deleteJournalNoteRemote(id);
+    if (user) void deleteRemote(id);
     refresh();
   }
 

@@ -1,22 +1,8 @@
 import type { JournalNote } from "@/lib/types";
 import { loadJournalNotes, saveJournalNotes } from "@/lib/journalStorage";
-import { getSupabase } from "@/lib/supabaseClient";
-
-type Row = {
-  id: string;
-  user_id: string;
-  passage_id: string;
-  passage_title: string;
-  body: string;
-  tags: string[] | null;
-  prompt: string | null;
-  kind: string | null;
-  question: string | null;
-  chat_mode: string | null;
-  verse_id: string | null;
-  created_at: string;
-  updated_at: string;
-};
+import { useMutation, useQuery } from "convex/react";
+import { api } from "../../convex/_generated/api";
+import { Id } from "../../convex/_generated/dataModel";
 
 export type JournalSyncResult = {
   notes: JournalNote[];
@@ -24,38 +10,37 @@ export type JournalSyncResult = {
   error?: string;
 };
 
-function rowToNote(row: Row): JournalNote {
+function convexToNote(row: any): JournalNote {
   return {
-    id: row.id,
-    passageId: row.passage_id,
-    passageTitle: row.passage_title || row.passage_id,
+    id: row._id,
+    passageId: row.passageId,
+    passageTitle: row.passageTitle || row.passageId,
     body: row.body || "",
     tags: Array.isArray(row.tags) ? row.tags : [],
     prompt: row.prompt || undefined,
-    kind: (row.kind as JournalNote["kind"]) || undefined,
+    kind: row.kind || undefined,
     question: row.question || undefined,
-    chatMode: (row.chat_mode as JournalNote["chatMode"]) || undefined,
-    verseId: row.verse_id || undefined,
-    createdAt: row.created_at,
-    updatedAt: row.updated_at,
+    chatMode: row.chatMode || undefined,
+    verseId: row.verseId || undefined,
+    createdAt: row.createdAt,
+    updatedAt: row.updatedAt,
   };
 }
 
-function noteToRow(note: JournalNote, userId: string): Row {
+function noteToConvex(note: JournalNote) {
   return {
-    id: note.id,
-    user_id: userId,
-    passage_id: note.passageId,
-    passage_title: note.passageTitle,
+    id: note.id.startsWith("jn_") ? undefined : (note.id as Id<"journal_notes">),
+    passageId: note.passageId,
+    passageTitle: note.passageTitle,
     body: note.body,
     tags: note.tags || [],
-    prompt: note.prompt ?? null,
-    kind: note.kind ?? null,
-    question: note.question ?? null,
-    chat_mode: note.chatMode ?? null,
-    verse_id: note.verseId ?? null,
-    created_at: note.createdAt,
-    updated_at: note.updatedAt,
+    prompt: note.prompt,
+    kind: note.kind,
+    question: note.question,
+    chatMode: note.chatMode,
+    verseId: note.verseId,
+    createdAt: note.createdAt,
+    updatedAt: note.updatedAt,
   };
 }
 
@@ -68,47 +53,65 @@ function mergeByUpdated(local: JournalNote[], remote: JournalNote[]): JournalNot
   return [...byId.values()].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }
 
-/**
- * Pull remote notes, merge with local (newest updatedAt wins), push the union,
- * and persist locally.
- */
-export async function syncJournalWithCloud(userId: string): Promise<JournalSyncResult> {
-  const supabase = getSupabase();
-  const local = loadJournalNotes();
-  if (!supabase) return { notes: local, status: "local" };
+export function useSyncJournal() {
+  const remoteNotes = useQuery(api.journalNotes.list);
+  const upsertBatch = useMutation(api.journalNotes.upsert);
 
-  const { data, error } = await supabase.from("journal_notes").select("*").eq("user_id", userId);
-  if (error) {
-    console.warn("journal sync pull failed:", error.message);
-    return { notes: local, status: "error", error: error.message };
-  }
+  const sync = async (): Promise<JournalSyncResult> => {
+    const local = loadJournalNotes();
 
-  const remote = (data as Row[]).map(rowToNote);
-  const merged = mergeByUpdated(local, remote);
-  saveJournalNotes(merged);
-
-  if (merged.length) {
-    const payload = merged.map((n) => noteToRow(n, userId));
-    const { error: upsertError } = await supabase.from("journal_notes").upsert(payload, { onConflict: "id" });
-    if (upsertError) {
-      console.warn("journal sync push failed:", upsertError.message);
-      return { notes: merged, status: "error", error: upsertError.message };
+    if (remoteNotes === undefined) {
+      return { notes: local, status: "local" };
     }
-  }
 
-  return { notes: merged, status: "synced" };
+    try {
+      const remote = remoteNotes.map(convexToNote);
+      const merged = mergeByUpdated(local, remote);
+      saveJournalNotes(merged);
+
+      // Push any local changes
+      if (merged.length) {
+        for (const note of merged) {
+          await upsertBatch(noteToConvex(note));
+        }
+      }
+
+      return { notes: merged, status: "synced" };
+    } catch (error) {
+      console.warn("journal sync failed:", error);
+      return {
+        notes: local,
+        status: "error",
+        error: error instanceof Error ? error.message : "Unknown error",
+      };
+    }
+  };
+
+  return { sync };
 }
 
-export async function pushJournalNote(note: JournalNote, userId: string): Promise<void> {
-  const supabase = getSupabase();
-  if (!supabase) return;
-  const { error } = await supabase.from("journal_notes").upsert(noteToRow(note, userId), { onConflict: "id" });
-  if (error) console.warn("journal push failed:", error.message);
+export function usePushJournalNote() {
+  const upsert = useMutation(api.journalNotes.upsert);
+
+  return async (note: JournalNote): Promise<void> => {
+    try {
+      await upsert(noteToConvex(note));
+    } catch (error) {
+      console.warn("journal push failed:", error);
+    }
+  };
 }
 
-export async function deleteJournalNoteRemote(id: string): Promise<void> {
-  const supabase = getSupabase();
-  if (!supabase) return;
-  const { error } = await supabase.from("journal_notes").delete().eq("id", id);
-  if (error) console.warn("journal remote delete failed:", error.message);
+export function useDeleteJournalNote() {
+  const remove = useMutation(api.journalNotes.remove);
+
+  return async (id: string): Promise<void> => {
+    if (!id.startsWith("jn_")) {
+      try {
+        await remove({ id: id as Id<"journal_notes"> });
+      } catch (error) {
+        console.warn("journal remote delete failed:", error);
+      }
+    }
+  };
 }

@@ -1,12 +1,46 @@
 # Pratibha
 
-Pratibha is a multi-tradition wisdom study platform: layered canonical texts (translation, commentary, key terms, practice), a chat interface with optional semantic retrieval, and clients for web and mobile.
+**Primary UI: Lynx app in `pratibha/` directory** — Cross-platform native rendering (iOS, Android, Web) with Convex backend.
 
-**Stack:** FastAPI backend · Next.js web · Expo (React Native) mobile · PostgreSQL + pgvector (optional, for RAG)
+Legacy Next.js web app remains in `web/` but is no longer the main interface.
+
+---
+
+Pratibha is a multi-tradition wisdom study platform: layered canonical texts (translation, commentary, key terms, practice), a chat interface with optional semantic retrieval, and native clients via Lynx.
+
+**Stack:** Lynx (ReactLynx) · Convex backend · FastAPI (optional, for corpus/RAG) · PostgreSQL + pgvector (optional)
 
 ---
 
 ## Quick start
+
+### Lynx App (Primary)
+
+```bash
+cd pratibha
+npm install
+
+# Set up Convex backend
+npx convex dev
+# Copy deployment URL to .env
+
+# Start app (opens browser)
+npm run dev
+```
+
+See [`pratibha/README.md`](pratibha/README.md) for full setup.
+
+### Legacy Web App (Next.js)
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+See [`web/README.md`](web/README.md) for details.
+
+---
 
 After cloning, a colleague can run the web app locally in a few minutes. RAG and mobile on a physical device need extra steps below.
 
@@ -29,7 +63,7 @@ cd pratibha
 cp .env.example .env
 ```
 
-Edit `.env` and set at least one chat provider key. Defaults work without Postgres: `USE_RAG=false` loads the corpus from disk and chat uses the configured LLM.
+Edit `.env` and set at least one chat provider key and configure Convex for auth. Defaults work without Postgres: `USE_RAG=false` loads the corpus from disk and chat uses the configured LLM.
 
 ### 2. Python backend
 

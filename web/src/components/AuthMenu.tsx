@@ -42,7 +42,7 @@ export function AuthMenu() {
 
   if (!configured) {
     return (
-      <Link href="/login" className="nav-link hidden sm:inline" title="Configure Supabase auth">
+      <Link href="/login" className="nav-link hidden sm:inline" title="Configure Convex auth">
         Account
       </Link>
     );
@@ -66,14 +66,8 @@ export function AuthMenu() {
   }
 
   const email = user.email || "";
-  const name =
-    (typeof user.user_metadata?.full_name === "string" && user.user_metadata.full_name) ||
-    (typeof user.user_metadata?.name === "string" && user.user_metadata.name) ||
-    undefined;
-  const avatarUrl =
-    (typeof user.user_metadata?.avatar_url === "string" && user.user_metadata.avatar_url) ||
-    (typeof user.user_metadata?.picture === "string" && user.user_metadata.picture) ||
-    null;
+  const name = user.name || undefined;
+  const avatarUrl = null;
   const initials = initialsFromUser(email, name);
 
   async function onSignOut() {

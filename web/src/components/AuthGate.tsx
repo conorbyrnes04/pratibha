@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useAuth } from "@/components/AuthProvider";
 
 /** Routes reachable without an account when auth is configured. */
-const PUBLIC_PREFIXES = ["/", "/login", "/auth/callback", "/auth/continue"];
+const PUBLIC_PREFIXES = ["/", "/login"];
 
 function isPublicPath(pathname: string): boolean {
   if (pathname === "/") return true;
@@ -13,7 +13,7 @@ function isPublicPath(pathname: string): boolean {
 }
 
 /**
- * When Supabase auth is configured, send signed-out visitors to /login
+ * When Convex auth is configured, send signed-out visitors to /login
  * for everything except the home page and auth routes.
  */
 export function AuthGate({ children }: { children: React.ReactNode }) {
