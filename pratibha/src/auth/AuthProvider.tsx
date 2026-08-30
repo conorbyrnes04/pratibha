@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { setAuthToken, convexFetch } from "../convex/httpClient";
+import { storage, TOKEN_KEY, REFRESH_TOKEN_KEY } from "../lib/storage";
 
 interface User {
   _id: string;
@@ -17,13 +18,32 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
+// Convex Auth's `signIn` is an ACTION that returns
+// `{ tokens: { token, refreshToken } }` for the password flow (not a mutation
+// returning `{ token }`). Subsequent calls authenticate via `Authorization:
+// Bearer <token>`.
+interface SignInResult {
+  tokens?: { token: string; refreshToken: string } | null;
+}
+
+function persistTokens(tokens: { token: string; refreshToken: string }) {
+  storage.set(TOKEN_KEY, tokens.token);
+  storage.set(REFRESH_TOKEN_KEY, tokens.refreshToken);
+  setAuthToken(tokens.token);
+}
+
+function clearTokens() {
+  storage.remove(TOKEN_KEY);
+  storage.remove(REFRESH_TOKEN_KEY);
+  setAuthToken(null);
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Check for existing session
-    const token = localStorage.getItem("convex_token");
+    const token = storage.get(TOKEN_KEY);
     if (token) {
       setAuthToken(token);
       loadUser();
@@ -34,76 +54,57 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   async function loadUser() {
     try {
-      const currentUser = await convexFetch("auth:currentUser", {}, "query");
+      const currentUser = (await convexFetch("auth:currentUser", {}, "query")) as User | null;
       if (currentUser) {
         setUser(currentUser);
       } else {
-        localStorage.removeItem("convex_token");
-        setAuthToken(null);
+        clearTokens();
       }
     } catch (error) {
       console.error("Failed to load user:", error);
-      localStorage.removeItem("convex_token");
-      setAuthToken(null);
+      clearTokens();
     } finally {
       setLoading(false);
     }
   }
 
+  async function authenticate(email: string, password: string, flow: "signIn" | "signUp") {
+    const result = (await convexFetch(
+      "auth:signIn",
+      { provider: "password", params: { email, password, flow } },
+      "action",
+    )) as SignInResult;
+
+    if (!result.tokens?.token) {
+      throw new Error(`No token returned from ${flow === "signUp" ? "sign up" : "sign in"}`);
+    }
+    persistTokens(result.tokens);
+    await loadUser();
+  }
+
   const signIn = async (email: string, password: string) => {
     try {
-      const result = await convexFetch(
-        "auth:signIn",
-        {
-          provider: "password",
-          params: { email, password, flow: "signIn" },
-        },
-        "mutation"
-      );
-
-      if (result.token) {
-        localStorage.setItem("convex_token", result.token);
-        setAuthToken(result.token);
-        await loadUser();
-      } else {
-        throw new Error("No token returned from sign in");
-      }
+      await authenticate(email, password, "signIn");
     } catch (error: any) {
-      throw new Error(error.message || "Sign in failed");
+      throw new Error(error?.message || "Sign in failed");
     }
   };
 
   const signUp = async (email: string, password: string) => {
     try {
-      const result = await convexFetch(
-        "auth:signIn",
-        {
-          provider: "password",
-          params: { email, password, flow: "signUp" },
-        },
-        "mutation"
-      );
-
-      if (result.token) {
-        localStorage.setItem("convex_token", result.token);
-        setAuthToken(result.token);
-        await loadUser();
-      } else {
-        throw new Error("No token returned from sign up");
-      }
+      await authenticate(email, password, "signUp");
     } catch (error: any) {
-      throw new Error(error.message || "Sign up failed");
+      throw new Error(error?.message || "Sign up failed");
     }
   };
 
   const signOut = async () => {
     try {
-      await convexFetch("auth:signOut", {}, "mutation");
+      await convexFetch("auth:signOut", {}, "action");
     } catch (error) {
       console.error("Sign out error:", error);
     } finally {
-      localStorage.removeItem("convex_token");
-      setAuthToken(null);
+      clearTokens();
       setUser(null);
     }
   };
