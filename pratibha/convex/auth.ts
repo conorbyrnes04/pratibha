@@ -15,26 +15,31 @@ export const { auth, signIn, signOut, store } = convexAuth({
     }),
   ],
   callbacks: {
-    async redirect({ url, baseUrl }) {
+    async redirect({ redirectTo }) {
       // Allow redirects to site URL and common local/dev URLs
       const siteUrl = process.env.SITE_URL;
       const allowedOrigins = [
-        baseUrl,
         siteUrl,
         "http://localhost:3000",
         "http://localhost:3004",
         "http://localhost:8000",
-      ].filter(Boolean);
+      ].filter(Boolean) as string[];
 
-      // If url starts with any allowed origin, allow it
+      // If redirectTo starts with any allowed origin, allow it
       for (const origin of allowedOrigins) {
-        if (url.startsWith(origin!)) {
-          return url;
+        if (redirectTo.startsWith(origin)) {
+          return redirectTo;
         }
       }
 
-      // Default to baseUrl
-      return baseUrl;
+      // For OAuth callbacks, allow the Convex deployment URL
+      // (redirectTo will be the callback URL from Google)
+      if (redirectTo.includes(".convex.site") || redirectTo.includes(".convex.cloud")) {
+        return redirectTo;
+      }
+
+      // Default to first allowed origin or empty string
+      return allowedOrigins[0] || "";
     },
   },
 });

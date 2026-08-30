@@ -106,6 +106,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const signInWithGoogle = async () => {
+    'background only';
+    
     try {
       const result = await convexFetch(
         "auth:signIn",
@@ -119,18 +121,31 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (result.redirect || result.url) {
         const redirectUrl = result.redirect || result.url;
         
-        // Try to open in system browser
-        // On Lynx native, this would use platform-specific APIs
-        // For web/development, use window.open or location
-        if (typeof window !== "undefined") {
-          // Web environment
-          window.location.href = redirectUrl;
-        } else {
-          // Lynx native - would need platform-specific implementation
-          // For now, log the URL
-          console.log("OAuth redirect URL:", redirectUrl);
-          throw new Error("Native browser opening not yet implemented. OAuth URL logged to console.");
+        // Try to open in system browser - order matters:
+        // 1. Lynx Explorer (development/testing)
+        // @ts-ignore - NativeModules from Lynx
+        if (typeof NativeModules !== "undefined" && NativeModules?.ExplorerModule?.openSchema) {
+          // @ts-ignore
+          NativeModules.ExplorerModule.openSchema(redirectUrl);
+          return;
         }
+        
+        // 2. Production Lynx native modules (if available)
+        // @ts-ignore
+        if (typeof NativeModules !== "undefined" && NativeModules?.Linking?.openURL) {
+          // @ts-ignore
+          NativeModules.Linking.openURL(redirectUrl);
+          return;
+        }
+        
+        // 3. Web environment
+        if (typeof window !== "undefined") {
+          window.location.assign(redirectUrl);
+          return;
+        }
+        
+        // No way to open URL
+        throw new Error("Google sign-in requires a system browser. Please use Lynx Explorer or a web browser.");
       } else if (result.token) {
         // Direct token return (shouldn't happen with OAuth but handle it)
         if (typeof localStorage !== "undefined") {
