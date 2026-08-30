@@ -7,38 +7,48 @@ interface NavigationProps {
 
 export function Navigation({ currentPage, onNavigate }: NavigationProps) {
   const pages = [
-    { id: "home", label: "Home" },
-    { id: "login", label: "Login" },
+    { id: "home", label: "Today" },
+    { id: "read", label: "Read" },
     { id: "journal", label: "Journal" },
   ];
 
   return (
-    <nav
+    <view
       style={{
-        display: "flex",
-        gap: "16px",
+        flexDirection: "row",
         backgroundColor: "#1a1a2e",
-        padding: "16px",
-        borderBottom: "1px solid #333",
+        padding: 16,
+        borderBottomWidth: 1,
+        borderBottomColor: "#333",
+        gap: 12,
       }}
     >
+      <text style={{ color: "#f0c979", fontSize: 20, fontWeight: "bold", marginRight: "auto" }}>
+        Pratibha
+      </text>
       {pages.map((page) => (
-        <button
+        <view
           key={page.id}
           onClick={() => onNavigate(page.id)}
           style={{
-            background: currentPage === page.id ? "#f0c979" : "#666",
-            color: currentPage === page.id ? "#000" : "#fff",
-            border: "none",
-            padding: "8px 16px",
-            borderRadius: "4px",
+            paddingVertical: 8,
+            paddingHorizontal: 16,
+            backgroundColor: currentPage === page.id ? "#f0c979" : "transparent",
+            borderRadius: 4,
             cursor: "pointer",
-            fontSize: "14px",
           }}
         >
-          {page.label}
-        </button>
+          <text
+            style={{
+              color: currentPage === page.id ? "#000" : "#ccc",
+              fontSize: 14,
+              fontWeight: currentPage === page.id ? "600" : "normal",
+            }}
+          >
+            {page.label}
+          </text>
+        </view>
       ))}
-    </nav>
+    </view>
   );
 }

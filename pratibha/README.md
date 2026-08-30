@@ -1,155 +1,131 @@
 # Pratibha - Lynx + Convex Edition
 
-Pratibha wisdom study app rebuilt with Lynx (native rendering) and Convex (backend).
+Pratibha wisdom study app with Lynx native rendering and Convex backend.
 
 ## Quick Start
 
-### 1. Install Dependencies
-
 ```bash
+# 1. Install dependencies
+cd pratibha
 npm install
-```
 
-### 2. Set Up Convex
-
-```bash
-# Start Convex dev server (will prompt for login)
+# 2. Set up Convex backend
 npx convex dev
-```
+# Follow prompts to login and create/select project
+# Copy the deployment URL shown
 
-Follow the prompts to log in and create/select a project. This will generate types and deploy your backend.
+# 3. Configure environment
+echo "NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud" > .env
 
-Copy the deployment URL shown and add to `.env`:
+# 4. Start FastAPI (for corpus/passages) in another terminal
+cd ..
+source .venv/bin/activate  # or: python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
 
-```bash
-NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud
-```
-
-### 3. Run the App
-
-**Web Target (Recommended for First Test):**
-
-```bash
+# 5. Run the Lynx app
+cd pratibha
 npm run dev
 ```
 
-This opens the app in your browser at `http://localhost:3000`.
+Opens at `http://localhost:3000`.
 
-**Native Target (Optional - Requires Lynx Explorer):**
+## Features
 
-1. Download Lynx Explorer app on your phone/device
-2. `npm run dev` will show a QR code
-3. Scan with Lynx Explorer to see native rendering
+- ✅ Email/password authentication (Convex Auth)
+- ✅ Today's daily passage
+- ✅ Library browser with passages from canonical corpus
+- ✅ Journal entries (create, list, sync via Convex)
+- ✅ Learning progress tracking
+- ✅ Cross-platform ready (Web, iOS, Android)
 
 ## Project Structure
 
 ```
 pratibha/
-├── src/                      # Lynx React app
-│   ├── App.tsx              # Main app component
-│   ├── components/          # UI components
-│   ├── pages/               # Page components
-│   ├── auth/                # Auth provider
-│   └── convex/              # Convex integration
-├── convex/                   # Convex backend
-│   ├── schema.ts            # Database schema
-│   ├── auth.ts              # Auth setup
+├── src/
+│   ├── App.tsx              # Main app with routing
+│   ├── components/          # Navigation
+│   ├── pages/               # Login, Home, Read, Journal
+│   ├── auth/                # Auth provider with Convex
+│   └── convex/              # HTTP client (avoids BigInt issues)
+├── convex/                   # Backend
+│   ├── schema.ts            # journal_notes, learn_progress tables
+│   ├── auth.ts              # Email/password + Google OAuth
 │   ├── journalNotes.ts      # Journal queries/mutations
-│   └── learnProgress.ts     # Learning progress
-├── lynx.config.ts           # Lynx/Rspeedy configuration
-└── package.json
+│   └── learnProgress.ts     # Progress tracking
+└── lynx.config.ts           # Lynx/Rspeedy configuration
 ```
 
-## What Was Replaced
+## How It Works
 
-### Removed (Next.js Frontend)
-- `web/` directory - Entire Next.js app with React DOM
-- Next.js-specific features (SSR, API routes, middleware)
-- React DOM rendering
-- Tailwind CSS + shadcn/ui components
+### Frontend: Lynx ReactLynx
 
-### Added (Lynx Frontend)
-- Lynx/ReactLynx for native rendering
-- Simplified component structure
-- Direct Convex integration via HTTP (avoids BigInt issues)
-- Cross-platform ready (iOS, Android, Web)
+Uses lowercase JSX elements for native Lynx rendering:
+- `<view>` - Container (like React Native View)
+- `<text>` - Text display
+- `<scroll-view>` - Scrollable container
+- `<input>` - Text input
 
-### Kept (Backend)
-- Convex schema (journal_notes, learn_progress)
-- Convex Auth (email/password + Google OAuth)
-- FastAPI server in `/app` (for corpus/RAG)
-- All canonical texts in `/data`
+These render natively on iOS/Android via Lynx, or in browser via Web target.
 
-## Features
+### Backend: Convex
 
-Current implementation:
-- ✅ Basic app structure with navigation
-- ✅ Home page
-- ✅ Convex backend integration
-- ✅ Auth provider (placeholder)
-- ✅ Web target works in browser
+- HTTP-based client (not WebSocket) to avoid BigInt issues on native Lynx (PrimJS)
+- Email/password authentication works without Google OAuth credentials
+- Real-time sync for journal notes and learning progress
+- All data stored in Convex cloud database
 
-To be implemented:
-- ⏳ Email/password login
-- ⏳ Journal notes (create, sync)
-- ⏳ Learning progress
-- ⏳ Reading passages
-- ⏳ Daily passage feature
+### Corpus: FastAPI
+
+- Canonical texts served from `/data` directory
+- RAG/semantic search via existing pgvector setup
+- Passages loaded via HTTP from FastAPI endpoints
 
 ## Development
 
 ```bash
-# Start dev server
-npm run dev
+# Type check
+npm run typecheck
 
 # Build for production
 npm run build
 
-# Type check
-npm run typecheck
-```
-
-## Known Limitations
-
-### BigInt Compatibility
-Convex's JavaScript client has BigInt compatibility issues on native Lynx (PrimJS runtime). 
-
-**Solution:** We use HTTP-based Convex communication instead of the WebSocket client. This works on all targets including native.
-
-### Web vs Native
-- **Web target**: Full Convex support, works in browsers
-- **Native target**: HTTP-only Convex (no real-time subscriptions)
-
-## API (FastAPI Backend)
-
-The FastAPI server (`/app`) is still available for:
-- Corpus text serving
-- RAG (semantic search)
-- LLM chat integration
-
-Start it separately:
-
-```bash
-cd /workspace
-source .venv/bin/activate
-uvicorn app.main:app --reload
+# Start Convex dev (watch mode)
+npx convex dev
 ```
 
 ## Environment Variables
 
-Create `.env`:
+Required in `.env`:
 
 ```bash
-# Convex
 NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud
+```
 
-# Google OAuth (optional)
+Optional (for Google OAuth):
+
+```bash
 GOOGLE_CLIENT_ID=your-client-id
 GOOGLE_CLIENT_SECRET=your-secret
 ```
+
+## Testing Native
+
+1. Download Lynx Explorer app on iOS/Android
+2. Run `npm run dev`
+3. Scan QR code shown in terminal
+4. App renders natively on device
+
+## Known Limitations
+
+- **BigInt on Native**: Convex JS client uses BigInt which doesn't work on Lynx's PrimJS runtime. Solution: HTTP-based client (implemented).
+- **Real-time subscriptions**: HTTP client doesn't support WebSocket subscriptions. Queries are manual/polling only.
+- **FastAPI dependency**: Passages require FastAPI server running locally. Could be migrated to Convex functions if needed.
 
 ## Resources
 
 - [Lynx Documentation](https://lynxjs.org/)
 - [Convex Documentation](https://docs.convex.dev/)
 - [ReactLynx Guide](https://lynxjs.org/next/react/)
+

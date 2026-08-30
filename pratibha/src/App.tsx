@@ -1,23 +1,46 @@
 import React from "react";
 import { ConvexProvider } from "./convex/ConvexProvider";
-import { AuthProvider } from "./auth/AuthProvider";
+import { AuthProvider, useAuth } from "./auth/AuthProvider";
 import { Navigation } from "./components/Navigation";
 import { HomePage } from "./pages/HomePage";
+import { LoginPage } from "./pages/LoginPage";
+import { JournalPage } from "./pages/JournalPage";
+import { ReadPage } from "./pages/ReadPage";
 
-export default function App() {
+function AppContent() {
+  const { user, loading } = useAuth();
   const [currentPage, setCurrentPage] = React.useState("home");
 
+  if (loading) {
+    return (
+      <view style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#0a0a0f" }}>
+        <text style={{ color: "#f0c979", fontSize: 16 }}>Loading...</text>
+      </view>
+    );
+  }
+
+  if (!user && currentPage !== "login") {
+    setCurrentPage("login");
+  }
+
+  return (
+    <view style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
+      {user && <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />}
+      <scroll-view style={{ flex: 1 }}>
+        {currentPage === "login" && <LoginPage onLogin={() => setCurrentPage("home")} />}
+        {currentPage === "home" && user && <HomePage />}
+        {currentPage === "read" && user && <ReadPage />}
+        {currentPage === "journal" && user && <JournalPage />}
+      </scroll-view>
+    </view>
+  );
+}
+
+export default function App() {
   return (
     <ConvexProvider>
       <AuthProvider>
-        <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh", backgroundColor: "#0a0a0f" }}>
-          <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
-          <main style={{ flex: 1, padding: "20px" }}>
-            {currentPage === "home" && <HomePage />}
-            {currentPage === "login" && <div style={{ color: "#fff" }}>Login (Coming Soon)</div>}
-            {currentPage === "journal" && <div style={{ color: "#fff" }}>Journal (Coming Soon)</div>}
-          </main>
-        </div>
+        <AppContent />
       </AuthProvider>
     </ConvexProvider>
   );

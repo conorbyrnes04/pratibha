@@ -1,21 +1,22 @@
 import React, { createContext, useContext, ReactNode } from "react";
-
-// Placeholder for Convex integration
-// Due to BigInt compatibility issues on native Lynx (PrimJS), we'll use HTTP for Convex
-// On Web target, this works fine as browsers have BigInt support
+import { createHttpClient } from "./httpClient";
 
 interface ConvexContextType {
   isReady: boolean;
+  httpClient: ReturnType<typeof createHttpClient> | null;
 }
 
-const ConvexContext = createContext<ConvexContextType>({ isReady: false });
+const ConvexContext = createContext<ConvexContextType>({
+  isReady: false,
+  httpClient: null,
+});
 
 export function ConvexProvider({ children }: { children: ReactNode }) {
-  // For now, we'll implement HTTP-based Convex communication
-  // to avoid BigInt issues mentioned in get-convex/convex-js#71
-  
+  const httpClient = createHttpClient();
+
   const value: ConvexContextType = {
     isReady: true,
+    httpClient,
   };
 
   return <ConvexContext.Provider value={value}>{children}</ConvexContext.Provider>;
