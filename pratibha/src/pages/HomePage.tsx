@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { convexFetch } from "../convex/httpClient";
+import { LikeButton } from "../components/LikeButton";
+import { CommentSection } from "../components/CommentSection";
+import { ShareButton } from "../components/ShareButton";
 
 export function HomePage() {
   const [dailyPassage, setDailyPassage] = useState<any>(null);
@@ -45,23 +48,52 @@ export function HomePage() {
   }
 
   return (
-    <view style={{ padding: 20 }}>
-      <text style={{ color: "#999", fontSize: 12, textTransform: "uppercase", marginBottom: 8 }}>
-        Today's Passage
-      </text>
-      <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 12 }}>
-        {dailyPassage.title || dailyPassage._id}
-      </text>
-      {dailyPassage.collection && (
-        <text style={{ color: "#ccc", fontSize: 14, marginBottom: 16 }}>
-          {dailyPassage.collection}
+    <scroll-view style={{ flex: 1 }}>
+      <view style={{ padding: 20 }}>
+        <text style={{ color: "#999", fontSize: 12, textTransform: "uppercase", marginBottom: 8 }}>
+          Today's Passage
         </text>
-      )}
-      {dailyPassage.pratibha_layers?.translation && (
-        <text style={{ color: "#ddd", fontSize: 16, lineHeight: 1.6 }}>
-          {dailyPassage.pratibha_layers.translation}
+        <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 12 }}>
+          {dailyPassage.title || dailyPassage._id}
         </text>
-      )}
-    </view>
+        {dailyPassage.collection && (
+          <text style={{ color: "#ccc", fontSize: 14, marginBottom: 16 }}>
+            {dailyPassage.collection}
+          </text>
+        )}
+
+        {/* Social actions */}
+        {dailyPassage._id && (
+          <view style={{ flexDirection: "row", gap: 12, marginBottom: 24, alignItems: "center" }}>
+            <LikeButton verseId={dailyPassage._id} />
+            <ShareButton
+              verseId={dailyPassage._id}
+              verseTitle={dailyPassage.title || dailyPassage._id}
+              verseTranslation={dailyPassage.pratibha_layers?.translation || ""}
+              verseOriginal={dailyPassage.pratibha_layers?.original}
+            />
+          </view>
+        )}
+
+        {dailyPassage.pratibha_layers?.translation && (
+          <text style={{ color: "#ddd", fontSize: 16, lineHeight: 1.6, marginBottom: 32 }}>
+            {dailyPassage.pratibha_layers.translation}
+          </text>
+        )}
+
+        {/* Comments section */}
+        {dailyPassage._id && (
+          <view
+            style={{
+              marginTop: 32,
+              paddingTop: 32,
+              borderTop: "1px solid #333",
+            }}
+          >
+            <CommentSection verseId={dailyPassage._id} />
+          </view>
+        )}
+      </view>
+    </scroll-view>
   );
 }

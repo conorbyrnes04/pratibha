@@ -34,12 +34,17 @@ export async function convexFetch(
     headers["Authorization"] = `Bearer ${authToken}`;
   }
 
-  const url = `${CONVEX_URL}/api/${type}/${functionName}`;
+  // Correct Convex HTTP API format
+  const url = `${CONVEX_URL}/api/${type}`;
 
   const response = await fetch(url, {
     method: "POST",
     headers,
-    body: JSON.stringify(args),
+    body: JSON.stringify({
+      path: functionName,
+      args: args,
+      format: "json",
+    }),
   });
 
   if (!response.ok) {
