@@ -90,6 +90,11 @@ def _cors_origins() -> list[str]:
         "https://pratibha.conorbyrnes04.workers.dev",
         "http://localhost:3000",
         "http://127.0.0.1:3000",
+        # Lynx (Rspeedy) dev server — 3001, falls forward to 3002 if busy.
+        "http://localhost:3001",
+        "http://127.0.0.1:3001",
+        "http://localhost:3002",
+        "http://127.0.0.1:3002",
     ]
 
 

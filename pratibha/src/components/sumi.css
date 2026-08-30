@@ -1,0 +1,22 @@
+/* Breath (Spanda) for the manuscript cover mark, and an ember glow for
+   recognized leaves. Lynx runs these on the main thread. */
+
+@keyframes sumi-breath {
+  0%   { transform: scale(0.965); opacity: 0.82; }
+  50%  { transform: scale(1.03);  opacity: 1; }
+  100% { transform: scale(0.965); opacity: 0.82; }
+}
+
+@keyframes sumi-ember {
+  0%   { opacity: 0.82; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.82; }
+}
+
+.sumi-breath {
+  animation: sumi-breath 7.5s ease-in-out infinite;
+}
+
+.sumi-ember {
+  animation: sumi-ember 5.5s ease-in-out infinite;
+}
