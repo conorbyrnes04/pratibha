@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import React, { createContext, useContext, useState, useEffect, ReactNode } from "@lynx-js/react";
 import { setAuthToken, convexFetch } from "../convex/httpClient";
 
 interface User {
@@ -12,6 +12,7 @@ interface AuthContextType {
   loading: boolean;
   signIn: (email: string, password: string) => Promise<void>;
   signUp: (email: string, password: string) => Promise<void>;
+  signInWithGoogle: () => Promise<void>;
   signOut: () => Promise<void>;
 }
 
@@ -22,8 +23,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Check for existing session
-    const token = localStorage.getItem("convex_token");
+    // Check for existing session (guard localStorage access)
+    const token = typeof localStorage !== "undefined" ? localStorage.getItem("convex_token") : null;
     if (token) {
       setAuthToken(token);
       loadUser();
@@ -38,12 +39,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       if (currentUser) {
         setUser(currentUser);
       } else {
-        localStorage.removeItem("convex_token");
+        if (typeof localStorage !== "undefined") {
+          localStorage.removeItem("convex_token");
+        }
         setAuthToken(null);
       }
     } catch (error) {
       console.error("Failed to load user:", error);
-      localStorage.removeItem("convex_token");
+      if (typeof localStorage !== "undefined") {
+        localStorage.removeItem("convex_token");
+      }
       setAuthToken(null);
     } finally {
       setLoading(false);
@@ -62,7 +67,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       );
 
       if (result.token) {
-        localStorage.setItem("convex_token", result.token);
+        if (typeof localStorage !== "undefined") {
+          localStorage.setItem("convex_token", result.token);
+        }
         setAuthToken(result.token);
         await loadUser();
       } else {
@@ -85,7 +92,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       );
 
       if (result.token) {
-        localStorage.setItem("convex_token", result.token);
+        if (typeof localStorage !== "undefined") {
+          localStorage.setItem("convex_token", result.token);
+        }
         setAuthToken(result.token);
         await loadUser();
       } else {
@@ -96,13 +105,71 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   };
 
+  const signInWithGoogle = async () => {
+    'background only';
+    
+    try {
+      const result = await convexFetch(
+        "auth:signIn",
+        {
+          provider: "google",
+        },
+        "mutation"
+      );
+
+      // OAuth flow returns a redirect URL
+      if (result.redirect || result.url) {
+        const redirectUrl = result.redirect || result.url;
+        
+        // Try to open in system browser - order matters:
+        // 1. Lynx Explorer (development/testing)
+        // @ts-ignore - NativeModules from Lynx
+        if (typeof NativeModules !== "undefined" && NativeModules?.ExplorerModule?.openSchema) {
+          // @ts-ignore
+          NativeModules.ExplorerModule.openSchema(redirectUrl);
+          return;
+        }
+        
+        // 2. Production Lynx native modules (if available)
+        // @ts-ignore
+        if (typeof NativeModules !== "undefined" && NativeModules?.Linking?.openURL) {
+          // @ts-ignore
+          NativeModules.Linking.openURL(redirectUrl);
+          return;
+        }
+        
+        // 3. Web environment
+        if (typeof window !== "undefined") {
+          window.location.assign(redirectUrl);
+          return;
+        }
+        
+        // No way to open URL
+        throw new Error("Google sign-in requires a system browser. Please use Lynx Explorer or a web browser.");
+      } else if (result.token) {
+        // Direct token return (shouldn't happen with OAuth but handle it)
+        if (typeof localStorage !== "undefined") {
+          localStorage.setItem("convex_token", result.token);
+        }
+        setAuthToken(result.token);
+        await loadUser();
+      } else {
+        throw new Error("No redirect URL or token returned from Google sign-in");
+      }
+    } catch (error: any) {
+      throw new Error(error.message || "Google sign-in failed");
+    }
+  };
+
   const signOut = async () => {
     try {
       await convexFetch("auth:signOut", {}, "mutation");
     } catch (error) {
       console.error("Sign out error:", error);
     } finally {
-      localStorage.removeItem("convex_token");
+      if (typeof localStorage !== "undefined") {
+        localStorage.removeItem("convex_token");
+      }
       setAuthToken(null);
       setUser(null);
     }
@@ -113,6 +180,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     loading,
     signIn,
     signUp,
+    signInWithGoogle,
     signOut,
   };
 

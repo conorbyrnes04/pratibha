@@ -3,9 +3,13 @@ import { pluginReactLynx } from "@lynx-js/react-rsbuild-plugin";
 
 export default defineConfig({
   plugins: [pluginReactLynx()],
+  // Only build lynx bundle - web env fails with WASM error on Node 20
+  environments: {
+    lynx: {},
+  },
   source: {
     entry: {
-      index: "./src/App.tsx",
+      index: "./src/index.tsx",
     },
   },
   server: {

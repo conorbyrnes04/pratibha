@@ -109,12 +109,40 @@ Required in `.env`:
 NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud
 ```
 
-Optional (for Google OAuth):
+### Google OAuth Setup (Optional)
 
-```bash
-GOOGLE_CLIENT_ID=your-client-id
-GOOGLE_CLIENT_SECRET=your-secret
-```
+To enable "Continue with Google" sign-in:
+
+1. **Create OAuth Client in Google Cloud Console:**
+   - Go to [Google Cloud Console](https://console.cloud.google.com/)
+   - Select or create a project
+   - Navigate to APIs & Services → Credentials
+   - Create OAuth 2.0 Client ID (Web Application type)
+
+2. **Configure Authorized Redirect URI:**
+   ```
+   https://<your-deployment>.convex.site/api/auth/callback/google
+   ```
+   Note: Use `.convex.site` (NOT `.convex.cloud`)
+   - Find your HTTP Actions URL in Convex dashboard → Settings → URL & Deploy Key
+   - Your actions URL will be like `https://fast-horse-123.convex.site`
+   - Callback URL is then `https://fast-horse-123.convex.site/api/auth/callback/google`
+
+3. **Add Authorized JavaScript Origins:**
+   ```
+   http://localhost:3000
+   http://localhost:3004
+   ```
+
+4. **Set Environment Variables in Convex Dashboard:**
+   ```bash
+   npx convex env set AUTH_GOOGLE_ID <your-client-id>
+   npx convex env set AUTH_GOOGLE_SECRET <your-client-secret>
+   ```
+   
+   Or in Convex dashboard: Settings → Environment Variables
+
+Without these credentials, the app will still work with email/password authentication. The Google sign-in button will show an error if credentials are not configured.
 
 ## Testing Native
 

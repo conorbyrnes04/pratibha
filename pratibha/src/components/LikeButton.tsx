@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "@lynx-js/react";
 import { convexFetch } from "../convex/httpClient";
 import { useAuth } from "../auth/AuthProvider";
 
@@ -11,22 +11,24 @@ export function LikeButton({ verseId }: LikeButtonProps) {
   const [likeCount, setLikeCount] = useState<number>(0);
   const [isLiked, setIsLiked] = useState<boolean>(false);
   const [loading, setLoading] = useState(false);
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
-    loadLikeData();
-  }, [verseId, user]);
+    if (!dataLoaded) {
+      loadLikeData();
+    }
+  }, [verseId, user, dataLoaded]);
 
   async function loadLikeData() {
     try {
-      // Get like count
       const count = await convexFetch("verseLikes:getLikeCount", { verseId }, "query");
       setLikeCount(count);
 
-      // Check if user has liked (only if logged in)
       if (user) {
         const liked = await convexFetch("verseLikes:hasUserLiked", { verseId }, "query");
         setIsLiked(liked);
       }
+      setDataLoaded(true);
     } catch (error) {
       console.error("Failed to load like data:", error);
     }
@@ -34,7 +36,7 @@ export function LikeButton({ verseId }: LikeButtonProps) {
 
   async function handleLike() {
     if (!user) {
-      alert("Please sign in to like verses");
+      console.log("Sign in required to like verses");
       return;
     }
 
@@ -47,7 +49,6 @@ export function LikeButton({ verseId }: LikeButtonProps) {
       setLikeCount((prev) => (result.liked ? prev + 1 : prev - 1));
     } catch (error: any) {
       console.error("Failed to toggle like:", error);
-      alert(error.message || "Failed to like verse");
     } finally {
       setLoading(false);
     }
@@ -55,20 +56,21 @@ export function LikeButton({ verseId }: LikeButtonProps) {
 
   return (
     <view
-      onClick={handleLike}
+      bindtap={handleLike}
       style={{
+        display: "linear",
         flexDirection: "row",
         alignItems: "center",
-        gap: 8,
-        cursor: user ? "pointer" : "default",
         opacity: loading ? 0.6 : 1,
-        paddingVertical: 8,
-        paddingHorizontal: 12,
+        paddingTop: 8,
+        paddingBottom: 8,
+        paddingLeft: 12,
+        paddingRight: 12,
         borderRadius: 4,
-        backgroundColor: isLiked ? "rgba(240, 201, 121, 0.1)" : "transparent",
+        backgroundColor: isLiked ? "rgba(201, 162, 39, 0.15)" : "transparent",
       }}
     >
-      <text style={{ fontSize: 20, color: isLiked ? "#f0c979" : "#999" }}>
+      <text style={{ fontSize: 18, color: isLiked ? "#c9a227" : "#666", marginRight: 8 }}>
         {isLiked ? "♥" : "♡"}
       </text>
       <text style={{ color: "#999", fontSize: 14, fontWeight: "500" }}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "@lynx-js/react";
 import { ConvexProvider } from "./convex/ConvexProvider";
 import { AuthProvider, useAuth } from "./auth/AuthProvider";
 import { Navigation } from "./components/Navigation";
@@ -9,7 +9,13 @@ import { ReadPage } from "./pages/ReadPage";
 
 function AppContent() {
   const { user, loading } = useAuth();
-  const [currentPage, setCurrentPage] = React.useState("home");
+  const [currentPage, setCurrentPage] = useState("home");
+
+  useEffect(() => {
+    if (user && currentPage === "login") {
+      setCurrentPage("home");
+    }
+  }, [user, currentPage]);
 
   if (loading) {
     return (
@@ -19,19 +25,17 @@ function AppContent() {
     );
   }
 
-  if (!user && currentPage !== "login") {
-    setCurrentPage("login");
+  // Render login immediately when no user, regardless of currentPage state
+  if (!user) {
+    return <LoginPage onLogin={() => setCurrentPage("home")} />;
   }
 
   return (
     <view style={{ flex: 1, backgroundColor: "#0a0a0f" }}>
-      {user && <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />}
-      <scroll-view style={{ flex: 1 }}>
-        {currentPage === "login" && <LoginPage onLogin={() => setCurrentPage("home")} />}
-        {currentPage === "home" && user && <HomePage />}
-        {currentPage === "read" && user && <ReadPage />}
-        {currentPage === "journal" && user && <JournalPage />}
-      </scroll-view>
+      {currentPage === "home" && <HomePage />}
+      {currentPage === "read" && <ReadPage />}
+      {currentPage === "journal" && <JournalPage />}
+      <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
     </view>
   );
 }
