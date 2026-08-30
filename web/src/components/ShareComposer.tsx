@@ -134,6 +134,18 @@ export function ShareComposer({ item }: { item: VerseItem }) {
   async function shareToInstagram(destination: "story" | "post") {
     setBusy(true);
     const targetRatio: ShareAspectRatio = destination === "story" ? "story" : "post";
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    let igWindow: Window | null = null;
+    
+    if (!navigator.share || !navigator.canShare) {
+      if (isMobile) {
+        const scheme = destination === "story" ? "instagram-stories://share" : "instagram://library";
+        igWindow = window.open(scheme, "_blank");
+      } else {
+        igWindow = window.open("instagram://", "_blank");
+      }
+    }
     
     try {
       const blob = await pngBlob();
@@ -144,8 +156,6 @@ export function ShareComposer({ item }: { item: VerseItem }) {
         translation: picked?.text || displayCopy.translation || copy.translation,
         readUrl: `${window.location.origin}/read/${encodeURIComponent(item._id)}`,
       });
-
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
       if (navigator.share && navigator.canShare?.({ files: [file] })) {
         await navigator.share({ files: [file], text: caption });
@@ -161,14 +171,6 @@ export function ShareComposer({ item }: { item: VerseItem }) {
 
       await navigator.clipboard.writeText(caption);
 
-      let igWindow: Window | null = null;
-      if (isMobile) {
-        const scheme = destination === "story" ? "instagram-stories://share" : "instagram://library";
-        igWindow = window.open(scheme, "_blank");
-      } else {
-        igWindow = window.open("instagram://", "_blank");
-      }
-
       if (!igWindow || igWindow.closed) {
         toast.success(
           `Image saved for Instagram ${destination === "story" ? "Story" : "Post"}. Caption copied. Open Instagram and select the image.`,
@@ -178,6 +180,9 @@ export function ShareComposer({ item }: { item: VerseItem }) {
         toast.success(`Image saved. Caption copied. Opening Instagram...`);
       }
     } catch (err) {
+      if (igWindow && !igWindow.closed) {
+        igWindow.close();
+      }
       toast.error(err instanceof Error ? err.message : "Could not share to Instagram.");
     } finally {
       setBusy(false);
