@@ -1673,6 +1673,985 @@ export const LEARNING_TRACKS: LearningTrack[] = [
       },
     ],
   },
+  {
+    id: "yoga-eight-limbs",
+    title: "The Eight Limbs of Yoga",
+    level: "Intermediate",
+    focus: "Patañjali's Royal Yoga: stillness of mind's turnings",
+    outcome:
+      "Walk Patañjali's systematic path from ethical foundation through concentration to absorption, learning why the mind must be stilled and how to still it.",
+    description:
+      "A direct path through the Yoga Sūtras: the eight limbs (aṣṭāṅga) as a technology of liberation.",
+    arc:
+      "Yoga is here defined not as postures but as the complete cessation of the mind's oscillations (citta-vṛtti-nirodha). When the turnings stop, the seer rests in its own nature; when they continue, the seer is mistaken for the turnings. This path traces Patañjali's architecture: ethical restraints (yama, niyama) as the ground, posture and breath as the body's calming, sensory withdrawal as the hinge inward, and finally the three inner limbs (concentration, meditation, absorption) as one continuous deepening. You learn why control precedes surrender, why obstacles are named honestly, and how even powers (siddhis) can become distractions from the one freedom: kaivalya, the isolation of pure awareness from everything it is not.",
+    estimatedSessions: "6 gates · ~25 min each",
+    steps: [
+      {
+        id: "ys-define-yoga",
+        title: "Yoga Is the Stilling of Mind's Turnings",
+        orientation:
+          "Gate I · The Definition. Before the method, the target must be named with surgical precision.",
+        teaching:
+          "Yoga is cessation: yogaś citta-vṛtti-nirodhaḥ. The mind churns — memories, plans, fears, fantasies — and you mistake that churning for who you are. When the turnings stop, the seer (draṣṭṛ) stands in its own nature (svarūpe), untouched. When they continue, you are identified with the turnings (vṛtti-sārūpyam). This is not philosophy but a testable claim: the mind's default state is agitation, and you cannot see clearly while the water is disturbed. Every technique in the remaining sūtras serves this one aim: still the water so the seer can see itself.",
+        keyIdea: "Yoga is not a mood or a posture; it is the complete cessation of the mind's oscillations.",
+        misconception:
+          "That yoga is primarily physical. Patañjali names it as a mental discipline first — body serves mind.",
+        passageId: "patanjali_yoga_sutras.ys_1_2",
+        supportingPassageIds: ["patanjali_yoga_sutras.ys_1_3", "patanjali_yoga_sutras.ys_1_4"],
+        theme: "definition",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain citta-vṛtti-nirodha — the cessation of mind's turnings — in a way I can test in my own experience right now.",
+        practice:
+          "Sit and watch your mind for three minutes without following any thought-stream. Each time you notice you've been carried away, gently return. The practice is not in never drifting; it is in the returning. That return is nirodha in seed form.",
+        journalPrompt:
+          "What are the recurring 'turnings' of my mind — the loops I get caught in — and can I feel the seer behind them?",
+        integration:
+          "You can distinguish between awareness itself and the contents it is aware of, and recognize the turnings as objects, not self.",
+      },
+      {
+        id: "ys-obstacles",
+        title: "The Obstacles Are Named Honestly",
+        orientation:
+          "Gate I · The Path. Patañjali does not promise ease; he catalogs what will arise and how to meet it.",
+        teaching:
+          "The obstacles (antarāya) to stilling are not moral failures but structural facts: illness, dullness, doubt, carelessness, sloth, distraction by sense-objects, false perception, failure to attain a stage, and instability in a stage once attained. And when obstacles arise, the mind becomes accompanied by suffering (duḥkha), depression, trembling of the limbs, and disturbed breath. The teaching is ruthlessly honest. You will get sick. You will doubt. The breath will roughen when the mind is disturbed. Knowing this in advance changes the relationship: obstacles are not proof you are doing it wrong; they are the curriculum. The response is not to will them away but to stabilize one principle (eka-tattva-abhyāsa) and practice friendliness, compassion, gladness, and equanimity toward all beings.",
+        keyIdea: "Obstacles are not signs of failure; they are the expected texture of the path, to be met with steadiness.",
+        misconception:
+          "That a good practitioner would not experience doubt, distraction, or illness. Patañjali names them as inevitable.",
+        passageId: "patanjali_yoga_sutras.ys_1_30",
+        supportingPassageIds: ["patanjali_yoga_sutras.ys_1_31", "patanjali_yoga_sutras.ys_1_33"],
+        theme: "obstacles",
+        chatMode: "question",
+        chatPrompt:
+          "Help me understand how Patañjali's catalog of obstacles changes the way I relate to doubt and distraction in practice.",
+        practice:
+          "Name one obstacle you are currently experiencing on or off the cushion (doubt, distraction, sloth). Instead of treating it as evidence of inadequacy, say: 'This is sūtra 1.30 — the path is working.' Meet it with steadiness (abhyāsa) rather than shame.",
+        journalPrompt:
+          "Which obstacle from Patañjali's list is most active in my life right now, and how does naming it change my relationship to it?",
+        integration:
+          "You can name the obstacles you encounter as structural rather than personal, and meet them with equanimity.",
+      },
+      {
+        id: "ys-eight-limbs",
+        title: "The Eight Limbs as One Architecture",
+        orientation:
+          "Gate II · The System. Yoga is not scattered techniques; it is a graduated path, each limb depending on the prior.",
+        teaching:
+          "The eight limbs (aṣṭāṅga) are: yama (restraints with others), niyama (observances with oneself), āsana (posture), prāṇāyāma (breath regulation), pratyāhāra (sensory withdrawal), dhāraṇā (concentration), dhyāna (meditation), samādhi (absorption). The structure is deliberate. Ethical ground first: you cannot still the mind if you are creating harm and the mind knows it. Then the body: steady posture and smooth breath calm the nervous system, making inward attention possible. Then the senses are drawn in (pratyāhāra is the hinge — the moment perception stops being dragged outward). Only then do the three inner limbs begin: holding attention on one point (dhāraṇā), the point holding you (dhyāna), and the dissolution of the boundary between subject and object (samādhi). Each prepares the next. Skipping the early limbs produces fragile attainments that collapse under pressure.",
+        keyIdea: "The eight limbs are not a menu; they are a sequence, each limb stabilizing the ground for the next.",
+        misconception:
+          "That you can jump straight to meditation or samādhi without ethical and somatic foundation. Patañjali insists on order.",
+        passageId: "patanjali_yoga_sutras.ys_2_29",
+        supportingPassageIds: ["patanjali_yoga_sutras.ys_2_30", "patanjali_yoga_sutras.ys_2_46"],
+        theme: "system",
+        chatMode: "explain",
+        chatPrompt:
+          "Walk me through the eight limbs as a system where each supports the next. Why does ethical conduct come before meditation?",
+        practice:
+          "Check your current practice. Are you trying to meditate (dhyāna) without first attending to restraint (yama) or posture (āsana)? Identify one earlier limb that needs strengthening and attend to it this week.",
+        journalPrompt:
+          "Which of the eight limbs is my actual foundation right now, and which am I skipping over in my hurry to reach samādhi?",
+        integration:
+          "You understand the eight limbs as a graduated system and can identify where you are in the sequence.",
+      },
+      {
+        id: "ys-pratyahara",
+        title: "Pratyāhāra — The Hinge Inward",
+        orientation:
+          "Gate III · The Withdrawal. Before the mind can concentrate, the senses must stop pulling outward.",
+        teaching:
+          "Pratyāhāra is sensory withdrawal: when the senses are no longer in contact with their objects, they imitate the nature of the mind itself — they stop reaching. This is not suppression or numbness; it is the voluntary redirection of attention. Ordinarily, perception is centrifugal: the eyes chase forms, the ears chase sounds, the tongue chases tastes. Even in stillness, the senses are hunting. Pratyāhāra is the reversal: attention stops flowing outward and rests in itself. Patañjali likens it to a tortoise drawing its limbs inward. The hinge matters because concentration (dhāraṇā) is impossible while the senses are still lobbying for attention. When pratyāhāra succeeds, the outer world does not disappear — you still hear the bird, see the wall — but it no longer commands you. Attention becomes yours to place rather than being seized by stimuli.",
+        keyIdea: "Pratyāhāra is not sensory deprivation; it is the withdrawal of attention from being commanded by sense-objects.",
+        misconception:
+          "That sensory withdrawal means shutting down or becoming numb. It is redirection, not suppression.",
+        passageId: "patanjali_yoga_sutras.ys_2_54",
+        supportingPassageIds: ["patanjali_yoga_sutras.ys_2_55"],
+        theme: "withdrawal",
+        chatMode: "practice",
+        chatPrompt:
+          "Give me a practice for pratyāhāra — withdrawing the senses without suppressing them. How do I let the senses rest inward?",
+        practice:
+          "Sit with your eyes closed. Notice the sounds, the pressure of the seat, the temperature. Instead of following any sensation outward into story or preference, let attention rest at the inner surface where each arises. The sound is not chased; it arrives and is received. Five minutes.",
+        journalPrompt:
+          "Where do my senses habitually pull me outward, and can I feel the difference between that pull and a voluntarily placed attention?",
+        integration:
+          "You can withdraw attention from the command of sense-objects and rest it inward, without suppressing perception.",
+      },
+      {
+        id: "ys-samadhi",
+        title: "Samādhi — When the Object Alone Shines",
+        orientation:
+          "Gate III · Absorption. The three inner limbs culminate in a state where the boundary between knower and known dissolves.",
+        teaching:
+          "Concentration (dhāraṇā) is binding attention to one place. Meditation (dhyāna) is the unbroken flow of attention to that place. Samādhi is when the object alone shines, as if the mind were empty of its own form (svarūpa-śūnyam). The distinction is subtle but experiential. In concentration, you return again and again. In meditation, the returns become fewer; the flow is mostly unbroken. In samādhi, there is no returner — subject and object have not merged, but the sense of being a separate observer has thinned to the point that only the object seems present. Patañjali distinguishes stages: samādhi with seed (sabīja) — still referencing an object — and seedless (nirbīja), where even the object is transcended. The point is not to mystify absorption but to name it as the natural deepening of sustained attention when obstacles have been removed.",
+        keyIdea: "Samādhi is not a special state imported; it is what happens when attention rests undistracted long enough for the subject-object boundary to thin.",
+        misconception:
+          "That samādhi is a rare, dramatic event. It is the quiet endpoint of sustained, obstacle-free attention.",
+        passageId: "patanjali_yoga_sutras.ys_3_3",
+        supportingPassageIds: ["patanjali_yoga_sutras.ys_1_41", "patanjali_yoga_sutras.ys_3_2"],
+        theme: "absorption",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain the progression from dhāraṇā (concentration) to dhyāna (meditation) to samādhi (absorption) as a natural deepening.",
+        practice:
+          "Choose one object — the breath, a candle flame, a sound. Concentrate: return attention each time it wanders. After 5-10 minutes, notice if the returns become less effortful. That ease is the beginning of dhyāna. Do not force samādhi; let sustained attention reveal it.",
+        journalPrompt:
+          "Have I ever experienced the thinning of the subject-object boundary, even briefly? What was that like?",
+        integration:
+          "You understand samādhi as the natural culmination of sustained attention and can recognize its early signs.",
+      },
+      {
+        id: "ys-kaivalya",
+        title: "Kaivalya — The Isolation of Pure Seeing",
+        orientation:
+          "Gate IV · Liberation. The goal is not union but the recognition that awareness was never bound.",
+        teaching:
+          "Kaivalya is aloneness or isolation — not loneliness, but the recognition that pure awareness (puruṣa) is utterly distinct from the contents of experience (prakṛti). When the turnings of mind cease and even the subtlest identifications dissolve, awareness rests in itself, no longer mistaking itself for anything it perceives. This is the culmination of the whole system: not a merging with the divine (as in devotional paths), but a stark seeing-through. The powers (siddhis) that arise along the way — clairvoyance, control over elements, knowledge of past lives — are explicitly named as obstacles to kaivalya if clung to. They are displays of prakṛti's capacities, not the seer's nature. The final freedom is when awareness no longer needs to do anything, know anything, or become anything because it recognizes it was never not free. The path does not produce liberation; it removes the obscurations that made bondage seem real.",
+        keyIdea: "Kaivalya is the isolation of awareness from all content — not a state to achieve, but the recognition of what was always true.",
+        misconception:
+          "That liberation is a special experience to attain. It is the seeing-through of the mistake that you were ever bound.",
+        passageId: "patanjali_yoga_sutras.ys_4_34",
+        supportingPassageIds: ["patanjali_yoga_sutras.ys_3_37", "patanjali_yoga_sutras.ys_4_26"],
+        theme: "liberation",
+        chatMode: "practice",
+        chatPrompt:
+          "Help me understand kaivalya as the end of mistaken identity rather than as a peak experience to collect.",
+        practice:
+          "Sit and ask: 'What am I aware of right now?' Note each answer (breath, sound, thought, sensation). Then ask: 'What is aware of all of this?' Rest as that — not as a special state, but as the ordinary awareness that was already here, mistaken for its contents.",
+        journalPrompt:
+          "If awareness was never bound, what is the 'work' of yoga actually undoing? What am I mistaking myself for?",
+        integration:
+          "You can hold kaivalya as the recognition of what is already true rather than as a distant goal, and practice accordingly.",
+      },
+    ],
+  },
+  {
+    id: "buddhism-core",
+    title: "The Buddhist Core",
+    level: "Intermediate",
+    focus: "Emptiness, compassion, and the end of suffering",
+    outcome:
+      "Walk the central teachings of Buddhism from suffering's diagnosis through emptiness to compassion — learning why clinging hurts, what 'empty' actually means, and how insight becomes care.",
+    description:
+      "A path through Buddhism's core: the Four Noble Truths, dependent origination, emptiness (śūnyatā), and the bodhisattva vow.",
+    arc:
+      "Buddhism begins with honesty: life as ordinarily lived involves suffering (duḥkha). Not as punishment, but as structural fact — because we cling to what changes. The diagnosis leads to a teaching about causation: nothing arises independently; everything is dependently originated (pratītyasamutpāda). Pushed further, this becomes the teaching of emptiness (śūnyatā): no thing has inherent, independent existence. The Heart Sūtra says it starkly — even the aggregates that seem to make up a self are empty. Nāgārjuna sharpens the edge: emptiness is not nihilism but the middle way between existence and non-existence. And the teaching does not end in detachment. Śāntideva and the Mahāyāna tradition insist: if all beings are empty of separate selfhood, compassion is not optional sentiment but the recognition of interdependence lived. Dōgen brings it into the body and the moment. Milarepa's songs show the path walked to its end in a Tibetan cave. The arc moves from suffering's diagnosis, through emptiness as liberating insight, to compassion as its ethical fruit.",
+    estimatedSessions: "6 gates · ~25 min each",
+    steps: [
+      {
+        id: "bud-dukkha",
+        title: "The First Noble Truth — Life Involves Suffering",
+        orientation:
+          "Gate I · The Diagnosis. The Buddha names the problem with unflinching clarity before offering a cure.",
+        teaching:
+          "The First Noble Truth is duḥkha: suffering, unsatisfactoriness, the pervasive sense that things are not quite right. Birth is duḥkha, aging is duḥkha, sickness and death are duḥkha. Being separated from what you love is duḥkha; being stuck with what you hate is duḥkha; not getting what you want is duḥkha. Even pleasant experiences carry duḥkha because they will end and you will grieve the ending. This is not pessimism but precision. The teaching does not say life is only suffering, but that suffering is woven into the structure of ordinary existence. Why? Because we cling (upādāna) to what is impermanent (anicca) as if it could be made permanent, and to what has no fixed self (anattā) as if it were a solid identity. The diagnosis is the doorway: you cannot address a problem you refuse to name.",
+        keyIdea: "Duḥkha is not moral punishment; it is the structural result of clinging to what is impermanent and selfless.",
+        misconception:
+          "That acknowledging suffering is pessimistic or life-denying. It is the precision required for diagnosis and cure.",
+        passageId: "dhammapada.dhp_203",
+        supportingPassageIds: ["heart_sutra.hs_001"],
+        theme: "suffering",
+        chatMode: "question",
+        chatPrompt:
+          "Help me see the First Noble Truth not as pessimism but as clear-eyed diagnosis. Where is duḥkha present in my ordinary life?",
+        practice:
+          "Notice one thing today you are clinging to — a plan, a relationship, a self-image, a mood. Feel the subtle grip. Ask: 'Is this permanent? Can I make it stay?' The gap between the grip and the answer is where duḥkha lives.",
+        journalPrompt:
+          "Where am I currently experiencing duḥkha, and can I trace it to clinging to something impermanent or insubstantial?",
+        integration:
+          "You can name duḥkha when it arises and recognize it as a structural response to clinging, not as a personal failure.",
+      },
+      {
+        id: "bud-pratityasamutpada",
+        title: "Dependent Origination — Nothing Stands Alone",
+        orientation:
+          "Gate II · The Mechanism. Suffering has a cause, and the cause is not arbitrary but lawful.",
+        teaching:
+          "The Second Noble Truth names craving (tṛṣṇā) as the cause of suffering. The Third promises cessation is possible. But the Buddha goes deeper: dependent origination (pratītyasamutpāda) is the map of how suffering arises and how it can be undone. Each link in the chain conditions the next: ignorance conditions formations, formations condition consciousness, consciousness conditions name-and-form, and so on through the senses, contact, feeling, craving, clinging, becoming, birth, and aging-and-death. This is not a one-time cosmogonic story but a description of how each moment of suffering is co-produced by conditions. The liberating insight is that if suffering is dependently arisen, it can dependently cease when the conditions are removed. You are not doomed by fate or original sin; you are caught in a net of causes that can be seen and loosened.",
+        keyIdea: "Suffering arises from causes and conditions (pratītyasamutpāda), which means it can cease when those conditions are removed.",
+        misconception:
+          "That suffering is random or punishment. It is lawful, conditioned, and therefore workable.",
+        passageId: "nagarjuna_mulamadhyamakakarika.mmk_24_18",
+        supportingPassageIds: ["dhammapada.dhp_277"],
+        theme: "causation",
+        chatMode: "explain",
+        chatPrompt:
+          "Walk me through dependent origination (pratītyasamutpāda) as a mechanism I can see operating in my own life. How does ignorance condition the chain?",
+        practice:
+          "Trace one instance of reactivity backward: anger arose from aversion, aversion from unpleasant contact, contact from sense-meeting-object, the meeting from craving for things to be different. See the chain. Then ask: if craving had not arisen, would the anger have followed?",
+        journalPrompt:
+          "Can I see one pattern of suffering in my life as dependently originated — a chain of causes I can name and potentially interrupt?",
+        integration:
+          "You can trace suffering back through its causes and recognize it as conditionally arisen rather than fixed.",
+      },
+      {
+        id: "bud-sunyata",
+        title: "Emptiness — No Thing Has Independent Existence",
+        orientation:
+          "Gate III · The Insight. Dependent origination, followed to its end, becomes the teaching of emptiness.",
+        teaching:
+          "The Heart Sūtra declares: form is emptiness, emptiness is form. What does this mean? Emptiness (śūnyatā) is not nothingness; it is the absence of inherent, independent existence (svabhāva). Because all things arise dependently, no thing stands alone, permanent, and self-sufficient. The table is 'empty' not because it is not there, but because it is a temporary confluence of wood, labor, rain, seed, soil, and the intention to sit — none of which are themselves independent. Even 'you' are empty: the five aggregates (form, feeling, perception, mental formations, consciousness) that seem to compose a self are themselves dependently arisen and in flux. Emptiness is not a nihilistic void but the interdependence of all phenomena. It is liberating because clinging depends on reifying things as solid and separate. When you see emptiness, the grip loosens — not because nothing matters, but because the solidity you were grasping was never there.",
+        keyIdea: "Emptiness (śūnyatā) is not nothingness; it is the absence of independent, inherent existence. All things are dependently originated.",
+        misconception:
+          "That emptiness means nothing exists or nothing matters. It means no thing exists independently — which is interdependence.",
+        passageId: "heart_sutra.hs_001",
+        supportingPassageIds: ["nagarjuna_mulamadhyamakakarika.mmk_24_18", "nagarjuna_mulamadhyamakakarika.mmk_01_01"],
+        theme: "emptiness",
+        chatMode: "compare",
+        chatPrompt:
+          "Compare Buddhist emptiness (śūnyatā) with the Tao's 'useful absence' and the Śaiva 'void as fullness.' How is emptiness not nihilism?",
+        practice:
+          "Hold an object (a cup, a pen). Name everything it depends on: materials, makers, causes stretching back. Ask: where does the 'cup' actually begin or end? Feel how it is empty of independent existence — not absent, but utterly relational.",
+        journalPrompt:
+          "If 'I' am also empty — dependently originated from aggregates, causes, conditions — does that make me less real, or differently real?",
+        integration:
+          "You can see emptiness as interdependence rather than nihilism, and apply it to both objects and the sense of self.",
+      },
+      {
+        id: "bud-nagarjuna-middle",
+        title: "Nāgārjuna's Middle Way — Beyond Existence and Non-Existence",
+        orientation:
+          "Gate III · The Refinement. Emptiness sharpens into the Middle Way: neither is nor is-not.",
+        teaching:
+          "Nāgārjuna, the great Madhyamaka philosopher, took the teaching of emptiness to its logical end. If all things are empty of inherent existence, then emptiness itself is empty. Clinging to emptiness as a position is still clinging. The Middle Way is neither asserting that things exist (eternalism) nor that they don't exist (nihilism). Things arise dependently; they function; they are not non-existent. But they do not have fixed, independent being; they are not existent in the way we naively suppose. This middle position is not a compromise but the only view that does not reify or annihilate. It is the philosophical precision behind the liberating insight: when you stop trying to grasp existence or non-existence, you can meet what is as it dependently arises.",
+        keyIdea: "The Middle Way is neither existence nor non-existence — things arise dependently, neither solidly real nor utterly unreal.",
+        misconception:
+          "That the Middle Way is a vague compromise. It is razor-sharp: it refuses both reification and annihilation.",
+        passageId: "nagarjuna_mulamadhyamakakarika.mmk_01_01",
+        supportingPassageIds: ["nagarjuna_mulamadhyamakakarika.mmk_24_18"],
+        theme: "middle-way",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain Nāgārjuna's Middle Way as a philosophical precision tool that cuts through both eternalism and nihilism.",
+        practice:
+          "Notice a judgment: 'This is good' or 'This is bad.' Feel how the judgment reifies the thing as independently having that quality. Now soften: the experience arose dependently; 'good' and 'bad' are relational, not inherent. Rest in the middle — neither affirming nor denying.",
+        journalPrompt:
+          "Where do I cling to things as if they were independently real (eternalism), and where do I dismiss them as if they were unreal (nihilism)?",
+        integration:
+          "You can recognize the Middle Way as a precision that avoids both grasping existence and falling into nihilism.",
+      },
+      {
+        id: "bud-bodhisattva",
+        title: "The Bodhisattva Vow — Compassion as Insight's Fruit",
+        orientation:
+          "Gate IV · The Turn. Emptiness does not end in detachment; it flowers into compassion.",
+        teaching:
+          "Śāntideva and the Mahāyāna tradition ask: if all beings are empty of separate, inherent selfhood, what is the ethical consequence? The bodhisattva vow is the answer: 'I will not enter final peace until all beings are liberated.' This is not a deferral of liberation out of guilt or martyrdom; it is the recognition that 'self' and 'other' are empty designations. If you and I are both dependently originated, your suffering is not happening to a truly separate being — it is suffering, period, and compassion is the natural response when that is seen. The bodhisattva does not abandon wisdom for compassion; compassion is what wisdom looks like when it meets suffering. Emptiness without compassion is incomplete; compassion without emptiness devolves into burnout or sentimentality. Together, they are the two wings of the path.",
+        keyIdea: "Compassion (karuṇā) is not sentiment; it is the ethical consequence of seeing emptiness and interdependence clearly.",
+        misconception:
+          "That emptiness leads to cold detachment. In Mahāyāna, emptiness is the ground of boundless compassion.",
+        passageId: "shantideva_bodhicaryavatara.bca_3_10",
+        supportingPassageIds: ["shantideva_bodhicaryavatara.bca_8_90"],
+        theme: "compassion",
+        chatMode: "practice",
+        chatPrompt:
+          "Help me connect the insight of emptiness with the practice of compassion. How does seeing interdependence naturally produce care?",
+        practice:
+          "Think of someone you are in conflict with. Imagine their life as a stream of causes and conditions, just like yours — childhood, wounds, hopes, confusion. See them as empty of fixed selfhood, dependently arisen. Does the sense of absolute separation soften? That softening is the beginning of compassion.",
+        journalPrompt:
+          "If all beings are empty and interdependent, how does that change the way I hold my own needs and the needs of others?",
+        integration:
+          "You can hold emptiness and compassion together as one teaching: insight into interdependence that becomes care.",
+      },
+      {
+        id: "bud-dogen-now",
+        title: "Dōgen — This Very Body, This Very Moment",
+        orientation:
+          "Gate IV · The Embodiment. Zen master Dōgen brings the whole path into the immediacy of sitting and the ordinariness of now.",
+        teaching:
+          "Dōgen insists: practice is not a means to enlightenment; practice is enlightenment. Zazen (sitting meditation) is not a technique to produce a future awakening; it is Buddha-nature expressing itself right now, in this posture, this breath. The error is treating enlightenment as something distant to attain. Dōgen flips it: this very body is the Buddha-body; this very sitting is realization. The thinking that arises in zazen is not an obstacle to be eliminated but 'the scenery of original nature.' Mountains are mountains, rivers are rivers — not as metaphors but as they are, when conceptual overlay ceases. The teaching is radically anti-transcendental: you do not need to go elsewhere, become other, or wait for a special state. The ordinary is already it. The work is to stop adding commentary and meet what is.",
+        keyIdea: "Practice is not a path to enlightenment; practice itself is enlightenment expressing in this body, this moment.",
+        misconception:
+          "That enlightenment is a rare, distant state to achieve. Dōgen says it is here, now, in the act of sitting itself.",
+        passageId: "dogen_shobogenzo.sg_genjokoan_01",
+        supportingPassageIds: ["dogen_shobogenzo.sg_zazenshin_01"],
+        theme: "immediacy",
+        chatMode: "practice",
+        chatPrompt:
+          "How do I practice Dōgen's teaching that 'this very sitting is Buddha'? What does it mean to stop seeking and just sit?",
+        practice:
+          "Sit for ten minutes. Do not meditate to become enlightened or to fix yourself. Just sit, as sitting. When the mind says 'this is boring' or 'am I doing it right?', notice that as thinking, let it be, and return to just sitting. The sitting itself is enough.",
+        journalPrompt:
+          "What would change if I treated this ordinary moment — this breath, this task — as already complete rather than as preparation for something better?",
+        integration:
+          "You can sit without the agenda of attainment, recognizing the practice itself as expression of awakened nature.",
+      },
+    ],
+  },
+  {
+    id: "sufi-love-path",
+    title: "The Sufi Path of Love",
+    level: "Intermediate",
+    focus: "The Beloved hidden in plain sight — love as the way",
+    outcome:
+      "Walk the Sufi path from Ibn ʿArabī's metaphysics of unity to Rūmī's ecstatic poetry, learning how love is both method and goal.",
+    description:
+      "A path through Sufi teaching: the unity of being (waḥdat al-wujūd), annihilation in the Beloved (fanāʾ), and love as the secret.",
+    arc:
+      "The Sufi path begins with a metaphysical claim as bold as any in the non-dual traditions: there is only One Reality (al-Ḥaqq), and everything that appears is Its self-disclosure. Ibn ʿArabī calls this waḥdat al-wujūd, the unity of being. You are not separate from the Beloved; you are the Beloved's way of knowing Itself through a particular aperture. The seeker (sālik) walks a path of stations (maqāmāt) and states (aḥwāl), learning to die to the false self (fanāʾ) so the Real can live through them (baqāʾ). Rūmī sings this teaching: the wound is where the light enters, the lover and Beloved are one flame. The path is not renunciation of the world but seeing the world as love-play, every encounter as the Beloved in disguise. Longing (shawq) is the engine; love (ʿishq) is the fuel; union (ittihād, carefully distinguished from identity) is the homecoming that was never really a departure.",
+    estimatedSessions: "5 gates · ~20 min each",
+    steps: [
+      {
+        id: "sufi-wahdat",
+        title: "Waḥdat al-Wujūd — The Unity of Being",
+        orientation:
+          "Gate I · The Metaphysics. Ibn ʿArabī names the ground: there is only One Reality, appearing as many.",
+        teaching:
+          "Waḥdat al-wujūd (the unity of being) is Ibn ʿArabī's central teaching: existence itself is one. The many appearances — you, the tree, the thought, the star — are not separate existences but modes (shuʾūn) or self-disclosures (tajalliyāt) of the One Real (al-Ḥaqq). This is not pantheism (the universe is God) but panentheism (the universe is God's self-expression, but God is not exhausted by it). Every particular thing is like a mirror reflecting the One; the reflection is real as a reflection, but it has no independent being apart from the One it reflects. To see this is not to dissolve the world into abstraction but to see every particular as sacred, because it is the Beloved's face. The separation you feel is not metaphysical fact but epistemological ignorance (jahl). The path is the progressive removal of that ignorance.",
+        keyIdea: "Waḥdat al-wujūd: all existence is one; the many are the One's self-disclosure, not separate beings.",
+        misconception:
+          "That this teaching erases distinction or makes ethics irrelevant. The One appears as the many; the task is seeing the One in the many.",
+        passageId: "ibn_arabi_know_yourself.ia_001",
+        supportingPassageIds: ["ibn_arabi_know_yourself.ia_002"],
+        theme: "unity",
+        chatMode: "compare",
+        chatPrompt:
+          "Compare Ibn ʿArabī's waḥdat al-wujūd with Kashmir Śaivism's citi and Plotinus' One. How is Sufi unity both similar and distinct?",
+        practice:
+          "Look at three very different things — a stone, a tree, a person. Ask of each: 'Whose existence is this? Who is appearing here?' Let the answer be: the One, disclosing Itself differently. See if the felt separation softens.",
+        journalPrompt:
+          "If all existence is the One Reality appearing, how does that change the way I hold separation, loneliness, or conflict?",
+        integration:
+          "You can see the world as the One's self-disclosure rather than as a collection of separate, independent beings.",
+      },
+      {
+        id: "sufi-fana",
+        title: "Fanāʾ — Annihilation of the False Self",
+        orientation:
+          "Gate II · The Death. The path requires a death: the constructed self must dissolve so the Real can live.",
+        teaching:
+          "Fanāʾ is extinction or annihilation — but not of your actual being. It is the death of the illusion that you are a separate, independent self (nafs) standing over against God. The Sufi analogy: a drop returns to the ocean. The drop does not cease to be; it ceases to be separate. The 'I' that says 'I am the lover and God is the Beloved' must die so the truth can be spoken: 'There is no lover but the Beloved.' This is terrifying and exhilarating. Terrifying because the constructed self clings to its story, its defenses, its boundaries. Exhilarating because what remains after fanāʾ is not absence but baqāʾ (subsistence in God) — the recognition that the life you thought was yours was always the Beloved's life, animating this form. Fanāʾ is not cultivated by force; it is what happens when longing becomes so intense that the boundary can no longer be maintained.",
+        keyIdea: "Fanāʾ is the death of the illusion of separate selfhood, not the annihilation of being — what remains is the Beloved's life in you.",
+        misconception:
+          "That fanāʾ is literal death or self-destruction. It is the death of illusion, not of existence.",
+        passageId: "rumi_mathnawi.rumi_001",
+        supportingPassageIds: ["rumi_mathnawi.rumi_002"],
+        theme: "annihilation",
+        chatMode: "question",
+        chatPrompt:
+          "Help me understand fanāʾ as the death of false self rather than the annihilation of my being. What survives the death?",
+        practice:
+          "Sit and silently repeat: 'Not I, but the Beloved.' Feel the contraction of 'I' each time it asserts itself. Do not fight it; just notice it, and offer it back: 'Not I, but the Beloved.' Let the boundary soften.",
+        journalPrompt:
+          "What parts of my constructed self — my story, my defenses, my identity — am I most afraid to let die? What might remain if they did?",
+        integration:
+          "You can distinguish the constructed self (nafs) from essential being, and begin to loosen the grip on the former.",
+      },
+      {
+        id: "sufi-love-method",
+        title: "Love as Method, Not Only Goal",
+        orientation:
+          "Gate III · The Secret. Rūmī reveals: love is not the reward of the path; love is the path itself.",
+        teaching:
+          "Rūmī writes: 'Let yourself be silently drawn by the strange pull of what you really love. It will not lead you astray.' In Sufism, love (ʿishq) is not a feeling to manage or a distraction from spiritual work — it is the method. The longing (shawq) you feel for the Beloved is the Beloved pulling you home. Every heartbreak, every ache of separation, is the Beloved teaching you that nothing finite will satisfy. This is why Sufi poetry is so often erotic and intoxicated: the language of human love is the closest analog we have for the soul's relationship with the Real. The path is not to transcend desire but to let desire become singular, total, aimed only at the One. When that happens, even ordinary encounters — a friend, a bird, a stranger — become meetings with the Beloved in disguise. Love stops being a feeling you have and becomes the texture of seeing.",
+        keyIdea: "Love (ʿishq) is not the goal but the method — longing for the Beloved is the Beloved pulling you home.",
+        misconception:
+          "That spiritual maturity means transcending desire or love. Sufism refines desire into a single flame aimed at the Real.",
+        passageId: "rumi_mathnawi.rumi_003",
+        supportingPassageIds: ["rumi_mathnawi.rumi_004"],
+        theme: "love",
+        chatMode: "practice",
+        chatPrompt:
+          "Give me a practice for turning longing into a spiritual method. How do I let desire for the Beloved refine ordinary desire?",
+        practice:
+          "Name one thing you long for — success, connection, peace, recognition. Feel the longing fully. Now ask: 'What is the longing underneath this longing?' Keep asking until you reach the wordless ache for union itself. That is shawq. Let it remain without trying to satisfy it with substitutes.",
+        journalPrompt:
+          "Where is my longing scattered across many objects, and can I feel the single longing for the Beloved underneath all of them?",
+        integration:
+          "You can recognize longing as the Beloved's call rather than as a deficiency to fix, and let it refine your desires.",
+      },
+      {
+        id: "sufi-hidden-beloved",
+        title: "The Beloved Hidden in Plain Sight",
+        orientation:
+          "Gate III · The Recognition. Every face you meet is the Beloved's face; the ordinary is already sacred.",
+        teaching:
+          "Rūmī teaches: 'Wherever you are, and whatever you do, be in love.' Not love as sentiment, but love as the recognition that everything is the Beloved's self-expression. The stranger on the street, the difficult colleague, the flaw in yourself — all are masks the Beloved wears. This is not an abstract metaphysical claim but a lived practice of vision. The Sufi sees with the 'eye of the heart' (ʿayn al-qalb), and through that eye, separation dissolves. The entire universe becomes a love letter written in a thousand scripts. This teaching prevents the spiritual path from becoming an escape: you do not flee the world to find the Beloved; you learn to see that the world is where the Beloved has always been, hiding in plain sight, waiting to be recognized.",
+        keyIdea: "The Beloved is not distant but hidden in every encounter, every moment — the ordinary is the sacred in disguise.",
+        misconception:
+          "That spiritual life is about withdrawing from the world. Sufism says: the world is the Beloved's self-disclosure; stay and see.",
+        passageId: "rumi_mathnawi.rumi_005",
+        supportingPassageIds: ["ibn_arabi_know_yourself.ia_003"],
+        theme: "presence",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain the Sufi teaching that the Beloved is hidden in every face and every moment. How does this change daily encounters?",
+        practice:
+          "In three interactions today, silently say before you speak: 'The Beloved is looking at me through these eyes.' Meet the person with that recognition. Notice if it changes the quality of attention you bring.",
+        journalPrompt:
+          "Can I recall one ordinary moment today where, if I had been paying attention, I might have recognized the Beloved's presence?",
+        integration:
+          "You can practice seeing the Beloved in ordinary encounters, not as a metaphor but as a recognition that changes perception.",
+      },
+      {
+        id: "sufi-wound-light",
+        title: "The Wound Is Where the Light Enters",
+        orientation:
+          "Gate IV · The Alchemy. Rūmī closes the path with the teaching that makes brokenness sacred.",
+        teaching:
+          "Rūmī writes: 'The wound is the place where the Light enters you.' This is the culmination of the Sufi path: suffering is not an obstacle to be removed before the real work can begin; it is the crack through which grace pours. Every heartbreak, every failure, every moment of not-knowing is the Beloved's way of widening you so more love can enter. The false self (nafs) is polished by difficulty; the heart (qalb) is opened by what it cannot control. This is not resignation or masochism — it is the recognition that the path does not run around pain but through it. Rūmī himself walked this: loss of his teacher Shams shattered him, and from that shattering poured the Mathnawī, 25,000 couplets of love. The wound does not need to be healed before you are whole; the wound is where you become whole.",
+        keyIdea: "The wound is not an obstacle but the opening through which the Beloved enters — brokenness is sacred.",
+        misconception:
+          "That spiritual progress means transcending pain. Sufism says pain is the chisel that carves the heart into capacity.",
+        passageId: "rumi_mathnawi.rumi_006",
+        supportingPassageIds: ["rumi_mathnawi.rumi_007"],
+        theme: "suffering",
+        chatMode: "practice",
+        chatPrompt:
+          "Help me hold Rūmī's teaching that 'the wound is where the Light enters' in a way that honors both the pain and the opening it creates.",
+        practice:
+          "Bring to mind one wound — a grief, a failure, a betrayal. Instead of trying to close it or 'get over it,' ask: 'What has this opened in me? What capacity was not there before?' Let the wound be the teacher.",
+        journalPrompt:
+          "What wound in my life has, despite the pain, opened me to a depth or capacity I did not have before? Can I hold it as sacred?",
+        integration:
+          "You can meet suffering as the place where the Beloved is working on you, rather than as evidence you are off the path.",
+      },
+    ],
+  },
+  {
+    id: "christian-mysticism",
+    title: "Christian Mysticism — The Divine Darkness",
+    level: "Advanced",
+    focus: "The via negativa: unknowing as the highest knowing",
+    outcome:
+      "Walk the Christian mystic path from Dionysius' divine darkness through Eckhart's God beyond God to the Cloud of Unknowing's tender negation.",
+    description:
+      "The apophatic tradition: God is known by unknowing, encountered in darkness, named only by unsaying.",
+    arc:
+      "The Christian mystic tradition, at its most radical, insists: God is not a being among beings, not even the highest being, but beyond being itself. Dionysius the Areopagite names this the via negativa, the negative way: every name for God (good, wise, powerful) must be unsaid, because God transcends every category the mind can form. Meister Eckhart pushes further: there is God and the Godhead; God is the personal, relational Lord, but the Godhead is the nameless ground beyond personality, where even 'God' as a name falls away. The soul's highest work is Gelassenheit, releasement — letting go of images, concepts, and even the will to possess God. The Cloud of Unknowing teaches this as method: place everything you know beneath a 'cloud of forgetting' and reach toward God with a 'dart of longing love' through a cloud of unknowing. The fruit is not information about God but intimate union in darkness, where knower and known are no longer two.",
+    estimatedSessions: "5 gates · ~20 min each",
+    steps: [
+      {
+        id: "cm-via-negativa",
+        title: "The Via Negativa — God Beyond Every Name",
+        orientation:
+          "Gate I · The Method. Dionysius opens the path: God is known not by what can be said, but by unsaying all names.",
+        teaching:
+          "Pseudo-Dionysius teaches the via negativa (negative way) as the highest theology. Every affirmation about God (God is good, God is wise, God is loving) is true as a pointer, but inadequate and ultimately false if taken literally, because God transcends all qualities the mind can name. Cataphatic theology (the way of affirmation) is a ladder you must eventually abandon. The via negativa climbs by unsaying: God is not good (in the way we know goodness), not wise (in the way we know wisdom), not even being (in the way we know beings). This is not nihilism; it is the recognition that God is beyond all categories — not less than being, but beyond it. The divine darkness is not absence but excess: too much light for the eye to see, so it registers as dark. To approach God is to enter a luminous unknowing.",
+        keyIdea: "The via negativa: God is known by unknowing, approached by unsaying every name, encountered in divine darkness.",
+        misconception:
+          "That the negative way is atheism or emptiness. It is the recognition that God exceeds every concept, even the concept 'God.'",
+        passageId: "pseudo_dionysius.pd_divine_names_01",
+        supportingPassageIds: ["pseudo_dionysius.pd_mystical_theology_01"],
+        theme: "negation",
+        chatMode: "compare",
+        chatPrompt:
+          "Compare Dionysius' via negativa with Buddhist emptiness and the Upaniṣadic neti neti (not this, not this). How is apophatic theology similar and different?",
+        practice:
+          "Bring to mind your image of God or the Ultimate. Name the qualities: loving, powerful, wise. Now unsay each: 'not loving as I know love,' 'not powerful as I know power.' Keep unsaying until you reach a luminous not-knowing. Rest there.",
+        journalPrompt:
+          "What images or concepts of the divine am I clinging to, and what remains if I unsay them all?",
+        integration:
+          "You can practice unsaying your concepts of God, approaching the divine through luminous unknowing rather than through affirmation.",
+      },
+      {
+        id: "cm-eckhart-godhead",
+        title: "Eckhart — God and the Godhead",
+        orientation:
+          "Gate II · The Distinction. Meister Eckhart names the most radical distinction in Christian mysticism: God and the Godhead.",
+        teaching:
+          "Eckhart distinguishes God (Gott) from the Godhead (Gottheit). God is the personal, creative, relational Lord — Father, Son, Spirit — who loves, commands, and saves. The Godhead is the silent, nameless ground beyond all distinctions, the 'desert' or 'wilderness' where even the Trinity has not yet differentiated. To reach the Godhead, the soul must pass beyond God-as-person into the ground of the ground, where there is no 'I and Thou' but only the One. This is not atheism; it is the deepest theism, recognizing that the God we relate to is a face of something utterly beyond face. Eckhart's prayer is startling: 'I pray God to rid me of God' — meaning, let me pass beyond even my concept and experience of God into the nameless source. This teaching risks heresy (Eckhart was investigated), but it preserves the ultimate transcendence of the divine.",
+        keyIdea: "God is the personal face of the Godhead; to reach the ultimate ground, even 'God' as a concept must be released.",
+        misconception:
+          "That Eckhart is denying God. He is distinguishing the relational God from the ground beyond all relation.",
+        passageId: "meister_eckhart.me_sermon_52",
+        supportingPassageIds: ["meister_eckhart.me_sermon_12"],
+        theme: "godhead",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain Eckhart's distinction between God and Godhead in a way that shows it as deepening rather than denying relationship with the divine.",
+        practice:
+          "In prayer or meditation, relate to God as personal — speak, listen, feel the relationship. Then, gently, let even that relationship dissolve. Enter the silent ground where no one is speaking and no one is listening. Rest in the desert of the Godhead.",
+        journalPrompt:
+          "What would it mean to 'let go of God' — not as abandoning faith, but as releasing every fixed image to encounter the nameless ground?",
+        integration:
+          "You can hold both God-as-relation and the Godhead-beyond-relation, and recognize when the path calls you beyond even the personal divine.",
+      },
+      {
+        id: "cm-gelassenheit",
+        title: "Gelassenheit — Releasement and Poverty of Spirit",
+        orientation:
+          "Gate III · The Letting-Go. Eckhart names the soul's work: not achieving but releasing, not possessing but letting be.",
+        teaching:
+          "Gelassenheit is Eckhart's term for releasement or letting-be: the soul empties itself of images, desires, and even the will to possess God. 'Poverty of spirit' does not mean material lack; it means interior nakedness — not wanting, not willing, not knowing anything. The paradox: when you stop trying to grasp God, God can work freely in you. As long as you are 'full' of images, intentions, and self-project, there is no room for the divine to act. Gelassenheit is radical trust: you release the grip on outcomes, identities, and even your spiritual attainment. What remains is not absence but presence — not your life possessing God, but God's life living through you. This is the meeting point with Zen's 'no-self,' Sufism's fanāʾ, and the Śaiva recognition: the small self must get out of the way.",
+        keyIdea: "Gelassenheit: releasement of all grasping, all images, all will — poverty of spirit as the condition for divine union.",
+        misconception:
+          "That poverty of spirit means passivity or giving up. It is active release, making space for grace to work unimpeded.",
+        passageId: "meister_eckhart.me_poverty_of_spirit",
+        supportingPassageIds: ["meister_eckhart.me_sermon_5b"],
+        theme: "releasement",
+        chatMode: "practice",
+        chatPrompt:
+          "Give me a practice for Gelassenheit — releasing the will to possess or control, including the will to possess God.",
+        practice:
+          "Sit in silence. Notice every subtle reaching: the wish to feel calm, to have an insight, to 'get it right.' Each time, release: 'Not my will.' Let even the wish for God's presence dissolve. Rest in empty openness, asking nothing.",
+        journalPrompt:
+          "What am I still trying to possess or control, even in my spiritual life? Can I practice Gelassenheit — releasing the grip on outcomes?",
+        integration:
+          "You can practice releasing the will to possess, control, or even experience God, and trust the emptiness you fear.",
+      },
+      {
+        id: "cm-cloud-unknowing",
+        title: "The Cloud of Unknowing — Love Through Darkness",
+        orientation:
+          "Gate IV · The Practice. The anonymous English mystic gives the path a method: reach through unknowing with love alone.",
+        teaching:
+          "The Cloud of Unknowing teaches: place everything you know and everything you are beneath a 'cloud of forgetting.' Above you is the 'cloud of unknowing' — the impenetrable darkness where God dwells, beyond all thought, image, and feeling. You cannot pierce this cloud with intellect or imagination. The only tool is a 'dart of longing love' — a naked intent toward God, stripped of all content. This is not an emotional state but a gesture of will: you aim your whole being at the divine, through the cloud, not knowing what you are aiming at or if you have reached. The teaching is tender: you are not abandoned in darkness; you are held in it. The cloud is not emptiness but intimacy beyond form. Unknowing becomes the highest knowing because it is union, not information.",
+        keyIdea: "The cloud of unknowing: reach toward God through darkness with love alone, abandoning all concepts and images.",
+        misconception:
+          "That unknowing is confusion or ignorance. It is luminous intimacy beyond the reach of thought.",
+        passageId: "cloud_of_unknowing.cou_chapter_03",
+        supportingPassageIds: ["cloud_of_unknowing.cou_chapter_06"],
+        theme: "unknowing",
+        chatMode: "practice",
+        chatPrompt:
+          "Walk me through the Cloud of Unknowing's practice: forgetting below, unknowing above, and the dart of love piercing through.",
+        practice:
+          "Sit and imagine placing every thought, memory, image beneath you — the cloud of forgetting. Above is darkness — the cloud of unknowing. Through it, shoot a single wordless dart: love aimed at the unseen. No content, no image, just naked longing. Return each time the mind wanders. Ten minutes.",
+        journalPrompt:
+          "What was it like to aim love at what I cannot see, know, or imagine? Did the unknowing feel like abandonment or intimacy?",
+        integration:
+          "You can practice reaching toward the divine through unknowing with love, abandoning the need to understand or visualize.",
+      },
+      {
+        id: "cm-union-darkness",
+        title: "Union in Darkness — Knower and Known",
+        orientation:
+          "Gate IV · The Fruit. The apophatic path ends not in knowledge about God but in union beyond distinction.",
+        teaching:
+          "The mystics report: when the via negativa is walked to its end, something shifts. The one who was seeking and the One who was sought are no longer two. Dionysius speaks of mystical union (hénōsis) where the soul 'knows by unknowing.' Eckhart says the soul discovers it was always one with the Godhead's ground — 'I and the Father are one,' not as blasphemy but as realized truth. The Cloud teaches that love in darkness becomes identity: not that you become God, but that the life you thought was yours is recognized as God's life, lived through this form. This is the meeting point with all non-dual paths: the separation was epistemic, not ontological. You were never outside the One; you only thought you were. The darkness was not God's absence but the blinding excess of presence.",
+        keyIdea: "Union in darkness: the apophatic path culminates not in knowing God but in being one with God beyond distinction.",
+        misconception:
+          "That union means losing yourself. It means finding who you always were — the divine life, never separate.",
+        passageId: "meister_eckhart.me_sermon_6",
+        supportingPassageIds: ["pseudo_dionysius.pd_mystical_theology_01", "cloud_of_unknowing.cou_chapter_26"],
+        theme: "union",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain mystical union as the mystics describe it: not information about God, but identity with God beyond subject-object distinction.",
+        practice:
+          "Rest in the unknowing. Do not try to feel union or manufacture an experience. Simply be, without commentary, without reaching. If a sense arises that you and the darkness are not two, do not grasp it. Let it be.",
+        journalPrompt:
+          "If union is not an experience to collect but the recognition of what has always been true, what changes in how I relate to spiritual practice?",
+        integration:
+          "You can hold union as recognition rather than attainment, and meet the divine darkness as intimacy beyond form.",
+      },
+    ],
+  },
+  {
+    id: "yoruba-wisdom",
+    title: "Yoruba Wisdom",
+    level: "Beginner",
+    focus: "Proverbs (Òwe) as practical philosophy and ethical guidance",
+    outcome:
+      "Learn to see through Yoruba eyes: how proverbs encode wisdom about character, community, patience, and the art of living well.",
+    description:
+      "A path through Yoruba oral wisdom: proverbs (òwe) as condensed teachings on ethics, relationship, and the shape of a good life.",
+    arc:
+      "The Yoruba tradition of West Africa (primarily Nigeria, Benin, Togo) carries its philosophy not in written treatises but in proverbs — compressed, memorable teachings passed orally across generations. A proverb (òwe) is not decoration; it is a philosophical claim about how reality works and how to move through it with wisdom. The elders say: 'Proverbs are the horses of speech; when communication is lost, we use proverbs to retrieve it.' This path walks through core Yoruba teachings: the importance of good character (ìwà), respect for elders and ancestors, the necessity of patience (sùúrù), the power of community (ìjọba), and the recognition that the world is relational, not individualistic. Every proverb is a lens; together, they form a coherent worldview rooted in balance, reciprocity, and the long view.",
+    estimatedSessions: "5 gates · ~15 min each",
+    steps: [
+      {
+        id: "yor-iwa",
+        title: "Ìwà — Character Is Destiny",
+        orientation:
+          "Gate I · The Foundation. Yoruba philosophy begins and ends with ìwà: good character is the highest achievement.",
+        teaching:
+          "The Yoruba saying goes: 'Ìwà l'ẹwà' — character is beauty. Not physical appearance, not wealth, not status, but how you carry yourself, how you treat others, how you hold integrity when no one is watching. Good character (ìwà rere) is the mark of a human being fully realized; bad character (ìwà burúkú) is the root of suffering and social disorder. This is not moralism but a practical claim: your character shapes your destiny (àyànmọ́) more than external circumstances. The proverbs teach this from every angle — 'A child who washes their hands eats with elders,' meaning respect and discipline open doors; 'The patient person eats ripe fruit,' meaning character includes the capacity to wait. Ìwà is not inherited; it is cultivated through practice, correction, and modeling. The path begins here because without character, all other wisdom is hollow.",
+        keyIdea: "Ìwà (good character) is the foundation of wisdom, beauty, and a well-lived life — it shapes destiny more than circumstance.",
+        misconception:
+          "That character is innate or fixed. Yoruba teaching insists it is cultivated through deliberate practice and community modeling.",
+        passageId: "yoruba_proverbs.yp_001",
+        supportingPassageIds: ["yoruba_proverbs.yp_002"],
+        theme: "character",
+        chatMode: "question",
+        chatPrompt:
+          "Help me understand ìwà (character) as the Yoruba see it — not as morality imposed from outside, but as the art of becoming fully human.",
+        practice:
+          "Name one situation where your character was tested this week — a moment of impatience, dishonesty, or self-centeredness. Ask: 'What would good character (ìwà rere) have done?' Let that guide tomorrow.",
+        journalPrompt:
+          "What does 'character is beauty' mean in my life? Where have I prioritized appearance or achievement over the quality of how I show up?",
+        integration:
+          "You can recognize character as something you build through daily choices, not as a fixed trait, and see it as the foundation of a good life.",
+      },
+      {
+        id: "yor-patience",
+        title: "Sùúrù — The Patient Person Eats Ripe Fruit",
+        orientation:
+          "Gate II · The Discipline. Yoruba wisdom insists: patience (sùúrù) is not passive waiting but active endurance toward the right timing.",
+        teaching:
+          "The proverb says: 'Sùúrù l'ábà ọ̀tọ́' — patience is the father of good character. Patience (sùúrù) is not resignation or doing nothing; it is the discipline of waiting for the right time, refusing to act impulsively, and trusting the natural rhythm of things. The person who grabs green fruit because they cannot wait will eat bitterness; the patient person waits and eats sweetness. This applies to every domain: relationships (you cannot force intimacy), work (real mastery takes time), conflict (reacting in anger rarely resolves the issue). Patience is paired with preparation — you wait, yes, but you also ready yourself so that when the moment comes, you can act well. The teaching is both practical and philosophical: time has its own wisdom, and forcing results out of season creates distortion.",
+        keyIdea: "Patience (sùúrù) is not passivity; it is the discipline of right timing, waiting for fruit to ripen before you pick it.",
+        misconception:
+          "That patience is weakness or doing nothing. Yoruba sùúrù is active endurance and preparation, respecting natural rhythms.",
+        passageId: "yoruba_proverbs.yp_003",
+        supportingPassageIds: ["yoruba_proverbs.yp_004"],
+        theme: "patience",
+        chatMode: "practice",
+        chatPrompt:
+          "Give me a practice for cultivating sùúrù (patience) as active discipline rather than passive waiting. How do I wait well?",
+        practice:
+          "Identify one thing you are impatient about — a goal, a relationship, a change. Ask: 'Is this fruit ripe, or am I grabbing it green?' If it is green, practice sùúrù: wait, prepare, and trust the timing.",
+        journalPrompt:
+          "Where in my life have I grabbed green fruit out of impatience, and what was the cost? Where do I need to practice sùúrù now?",
+        integration:
+          "You can recognize when you are forcing timing out of impatience and choose sùúrù — waiting for ripeness while preparing to act.",
+      },
+      {
+        id: "yor-community",
+        title: "Community Over Individualism — No One Is an Island",
+        orientation:
+          "Gate III · The Web. Yoruba philosophy is relational: the self is not an isolated atom but a node in a web of relationships.",
+        teaching:
+          "The proverb teaches: 'A single hand cannot tie a bundle.' No person, no matter how capable, can live a full life alone. The Yoruba worldview is fundamentally communal (ìjọba) — you exist because of and through others: ancestors, elders, peers, children, the yet-unborn. This is not collectivism that erases the individual; it is recognition that selfhood is relational. You are who you are because of those who raised you, taught you, challenged you, loved you. Reciprocity (ọ̀rẹ́) is the glue: you give because you have received; you will need help one day, as others need it now. Western individualism — the self-made person, the isolated hero — is seen as a kind of delusion. The wise person knows: their flourishing depends on the health of the whole, so they invest in relationship, not only in personal achievement.",
+        keyIdea: "The self is relational, not isolated — community (ìjọba) and reciprocity (ọ̀rẹ́) are the ground of a good life.",
+        misconception:
+          "That community means losing individuality. Yoruba philosophy recognizes persons as unique, but always within a web of relation.",
+        passageId: "yoruba_proverbs.yp_005",
+        supportingPassageIds: ["yoruba_proverbs.yp_006"],
+        theme: "community",
+        chatMode: "compare",
+        chatPrompt:
+          "Compare Yoruba communal philosophy with Western individualism. How is the Yoruba self relational without erasing the person?",
+        practice:
+          "Name three people who made you who you are — who taught, challenged, or loved you into your current form. Reach out to one and express gratitude. Feel how you are not self-made.",
+        journalPrompt:
+          "Where do I act as if I am self-sufficient, and where does that create isolation or brittleness? How does recognizing my relational nature change things?",
+        integration:
+          "You can see yourself as relational rather than isolated, and invest in community as the ground of your own flourishing.",
+      },
+      {
+        id: "yor-elders",
+        title: "Respect for Elders and Ancestors — The Living and the Dead",
+        orientation:
+          "Gate III · The Chain. Yoruba wisdom insists: the living and the dead are one community; elders hold the accumulated wisdom.",
+        teaching:
+          "The proverb says: 'An elder in the house is a treasure.' Elders are not revered out of sentimentality but because they carry the distilled wisdom of experience. They have walked the path, made the mistakes, survived the crises; their counsel is tested. Disrespecting an elder is not just rudeness; it is rejecting access to wisdom. And beyond the living elders are the ancestors (egúngún) — those who came before, whose lives and sacrifices made yours possible. The ancestors are not absent; they are present, watchable, invokable. You honor them not as dead gods but as the living-dead, the elders of elders, still involved in the affairs of the family and community. This teaching breaks the modern illusion of the self-starting individual: you did not appear from nowhere. You are a link in a long chain, carrying forward what was given, responsible for passing it on.",
+        keyIdea: "Elders and ancestors are living sources of wisdom; the community includes the dead, and respect flows backward and forward.",
+        misconception:
+          "That ancestor reverence is superstition. In Yoruba philosophy, it is recognition of continuity and debt across generations.",
+        passageId: "yoruba_proverbs.yp_007",
+        supportingPassageIds: ["yoruba_proverbs.yp_008"],
+        theme: "ancestors",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain Yoruba ancestor reverence as philosophy rather than superstition. How does honoring the dead shape the living?",
+        practice:
+          "Name one ancestor — a grandparent, great-grandparent, someone whose life made yours possible. Speak their name aloud. Ask: 'What did you carry that I now carry? What am I responsible for passing on?'",
+        journalPrompt:
+          "What have I inherited — values, struggles, gifts — from those who came before me, and how does recognizing that change my sense of responsibility?",
+        integration:
+          "You can see yourself as part of a multi-generational chain, carrying forward what was given and responsible for what you pass on.",
+      },
+      {
+        id: "yor-balance",
+        title: "Balance and Moderation — The Middle Path",
+        orientation:
+          "Gate IV · The Way. Yoruba wisdom teaches balance (ìwọ̀ntúnwọ̀nsì): extremes distort; the middle way sustains.",
+        teaching:
+          "The proverb warns: 'Too much of anything is bad.' Yoruba philosophy is suspicious of extremes — too much wealth breeds arrogance, too much humility breeds exploitation, too much talking drowns wisdom, too much silence breeds misunderstanding. The ideal is balance (ìwọ̀ntúnwọ̀nsì): not lukewarm compromise but dynamic equilibrium, knowing when to speak and when to listen, when to give and when to hold, when to act and when to wait. This is not a rule but an art, requiring discernment (ọgbọ́n). The wise person reads the situation and calibrates their response — firm but not rigid, generous but not reckless, principled but not fanatical. Balance is the long-term strategy: extremes burn out, moderation endures. It is the ethical counterpart to sùúrù (patience) — both insist that force and rush distort what they touch.",
+        keyIdea: "Balance (ìwọ̀ntúnwọ̀nsì) is the art of avoiding extremes — not compromise, but dynamic equilibrium in response to the situation.",
+        misconception:
+          "That balance means being lukewarm or never taking a stand. It is calibrated response, knowing when to be firm and when to yield.",
+        passageId: "yoruba_proverbs.yp_009",
+        supportingPassageIds: ["yoruba_proverbs.yp_010"],
+        theme: "balance",
+        chatMode: "practice",
+        chatPrompt:
+          "Help me practice ìwọ̀ntúnwọ̀nsì (balance) as an art of discernment. How do I know when I am tipping into an extreme?",
+        practice:
+          "Name one area where you tend toward excess — talking, working, giving, withdrawing. This week, practice the opposite without swinging to the other extreme. Feel for the middle.",
+        journalPrompt:
+          "Where am I currently out of balance, and what would a Yoruba elder advise? How do I find the middle way between extremes?",
+        integration:
+          "You can recognize your own extremes and practice balance as an art of reading the situation and calibrating your response.",
+      },
+    ],
+  },
+  {
+    id: "native-american-wisdom",
+    title: "Native American Wisdom",
+    level: "Beginner",
+    focus: "Living in relationship with all beings — the circle, the sacred, the land",
+    outcome:
+      "Learn the Native American worldview: everything is related, the Earth is sacred, and wisdom comes from walking in balance with all our relations.",
+    description:
+      "A path through Native teachings: the Sacred Hoop, respect for Earth and ancestors, and the vision of all beings as relatives.",
+    arc:
+      "Native American philosophy (drawing here from Lakota/Dakota traditions via Charles Eastman's 'The Soul of the Indian' and Zitkala-Ša's 'Old Indian Legends') sees the world as a web of relationships, not a collection of objects. All beings — human, animal, plant, stone, wind — are relatives, participants in one sacred circle. The Great Mystery (Wakan Tanka) is not a distant deity but the living presence in all things. Wisdom comes not from books but from listening: to elders, to dreams, to the land itself. The path teaches respect (for Earth, for ancestors, for all life), balance (walking in right relation), humility (humans are not above nature but within it), and gratitude (every gift requires acknowledgment). The vision is ecological and spiritual at once: care for the land is not separate from care for the soul, because the land and the soul are woven together. This is philosophy as a way of living, not only as a way of thinking.",
+    estimatedSessions: "5 gates · ~20 min each",
+    steps: [
+      {
+        id: "na-all-related",
+        title: "Mitakuye Oyasin — All My Relations",
+        orientation:
+          "Gate I · The Circle. The foundational teaching: all beings are relatives; separation is illusion.",
+        teaching:
+          "The Lakota phrase 'Mitakuye Oyasin' — all my relations — is both greeting and worldview. It names the truth that every being is kin: the two-legged (humans), the four-legged (animals), the winged, the swimmers, the plant nations, the stone people, the ancestors, the yet-unborn. This is not metaphor or sentiment; it is ontology. You do not stand outside nature looking at it; you are a strand in the web. What you do to the web, you do to yourself. Harming the land, the water, the animals is harming relatives, and it will return as harm to you and your children. Honoring them is honoring the whole, which includes you. This teaching breaks the modern illusion of human exceptionalism: we are not above creation, managing it; we are within it, one voice in the chorus. The circle (the Sacred Hoop) is the shape of this truth: no hierarchy, no beginning or end, everyone facing the center, which is the Great Mystery.",
+        keyIdea: "Mitakuye Oyasin: all beings are relatives; the world is a web of kinship, not a collection of resources.",
+        misconception:
+          "That this is poetic language for environmentalism. It is literal kinship — ontological, not metaphorical.",
+        passageId: "soul_of_the_indian.soti_001",
+        supportingPassageIds: ["soul_of_the_indian.soti_002"],
+        theme: "relations",
+        chatMode: "compare",
+        chatPrompt:
+          "Compare Mitakuye Oyasin (all my relations) with Buddhist interdependence and Yoruba communal philosophy. How is kinship with all beings different from abstract interconnection?",
+        practice:
+          "Go outside. Name three beings you encounter — a tree, a bird, a stone. Say silently: 'My relative.' Feel what shifts when you meet them as kin rather than as scenery or objects.",
+        journalPrompt:
+          "If all beings are my relatives, how does that change my relationship with the land, with animals, with what I consume?",
+        integration:
+          "You can see all beings as relatives rather than as resources, and recognize your actions as happening within a web of kinship.",
+      },
+      {
+        id: "na-great-mystery",
+        title: "Wakan Tanka — The Great Mystery",
+        orientation:
+          "Gate II · The Sacred. The divine is not a distant lord but the living mystery present in all things.",
+        teaching:
+          "Wakan Tanka (Lakota for the Great Mystery or Great Spirit) is not a person in the sky judging and commanding. It is the sacred power that animates everything — the wind, the buffalo, the thunder, the silence. Wakan means sacred, mysterious, incomprehensible; Tanka means great. Together: the great sacred mystery that cannot be grasped by thought but can be met in reverence. The teaching insists: the sacred is not confined to church or temple; it is everywhere. A stone, rightly seen, is wakan. A mountain is a grandmother. The four directions, the seasons, the life-and-death cycle — all are expressions of Wakan Tanka. Prayer is not petition but attunement: you listen, you offer tobacco, you participate in the sacred rhythm. This is closer to pantheism or panentheism than to theism, but even those labels miss the point — the Mystery refuses categories.",
+        keyIdea: "Wakan Tanka: the Great Mystery is not a distant deity but the sacred presence in all beings and all moments.",
+        misconception:
+          "That Wakan Tanka is like the Abrahamic God. It is impersonal-personal, immanent, the sacred fabric of reality itself.",
+        passageId: "soul_of_the_indian.soti_003",
+        supportingPassageIds: ["soul_of_the_indian.soti_004"],
+        theme: "sacred",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain Wakan Tanka as the Great Mystery — not a being among beings, but the sacred power present in all things.",
+        practice:
+          "Sit outside in silence. Do not pray words. Listen. Feel the wind, the temperature, the sounds. Ask: 'What is the Mystery speaking here?' Let it remain mystery; do not answer.",
+        journalPrompt:
+          "Where have I encountered the sacred outside of religious buildings — in nature, in silence, in a moment that stopped me?",
+        integration:
+          "You can recognize the sacred as present in ordinary things and moments, not confined to designated holy spaces.",
+      },
+      {
+        id: "na-earth-mother",
+        title: "Earth as Mother — Not Resource, but Relative",
+        orientation:
+          "Gate III · The Land. The Earth is not property to own or exploit; she is mother, ancestor, and teacher.",
+        teaching:
+          "Native philosophy does not speak of 'the environment' as if it were a backdrop to human action. The Earth is Unci Maka (Grandmother Earth) — she gives life, provides food, shelters all beings. You do not own land; you belong to it. The idea of buying and selling Earth is as absurd and obscene as selling your mother. This teaching collides directly with modern economics and law, which treat land as commodity. But the Native view is not naive romanticism; it is pragmatic wisdom. When you treat Earth as relative, you take only what you need, you give thanks, you ensure there is enough for the next seven generations. When you treat Earth as resource, you extract until it is exhausted, and your children inherit wasteland. The land teaches if you listen: the cycles of seasons, the patience of trees, the generosity of water. Wisdom is not only in human elders; it is in the land itself.",
+        keyIdea: "Earth is Grandmother, not resource — a relative who gives life, deserving respect, gratitude, and reciprocity.",
+        misconception:
+          "That this is sentimentalism. It is a radically different ontology and ethic, tested by millennia of sustainable living.",
+        passageId: "soul_of_the_indian.soti_005",
+        supportingPassageIds: ["old_indian_legends.oil_001"],
+        theme: "earth",
+        chatMode: "question",
+        chatPrompt:
+          "Help me understand Earth as Mother/Grandmother — not as metaphor, but as a shift in ontology and ethics. What follows from that?",
+        practice:
+          "Before eating, touch the food and silently acknowledge: 'This came from Earth. Thank you, Grandmother.' Feel the chain: soil, rain, sun, hands. Let gratitude be real, not rote.",
+        journalPrompt:
+          "How does my current relationship with land and food reflect the idea of Earth as resource versus Earth as relative? What would shift?",
+        integration:
+          "You can meet Earth as relative deserving gratitude and reciprocity, not as backdrop or commodity.",
+      },
+      {
+        id: "na-vision",
+        title: "Vision and Listening — Wisdom Beyond Words",
+        orientation:
+          "Gate III · The Knowing. Knowledge comes not only from speaking but from silence, dreams, and deep listening.",
+        teaching:
+          "In Native tradition, wisdom arrives through vision (dreams, fasting, ceremony) as much as through teaching. A young person might go on a vision quest (hanbleceya) — fasting alone on a hill, waiting for the Great Mystery to speak through dream, animal encounter, or inner knowing. This is not escapism; it is a discipline of listening beneath the noise of ordinary life. Elders do not lecture; they tell stories, and the teaching is woven into the story for those who can hear it. Truth is not only propositional ('X is Y'); it is participatory. You learn by doing, by sitting with elders, by watching how the hunter moves or how the grandmother prepares the food. The teaching is embodied, relational, contextual. Words matter, but silence matters more. The modern obsession with documentation and explanation is seen as a kind of deafness — talking so much you cannot hear.",
+        keyIdea: "Wisdom comes through vision, silence, and listening — not only through words and analysis.",
+        misconception:
+          "That vision quests are superstition. They are a method of accessing knowing beyond the discursive mind.",
+        passageId: "soul_of_the_indian.soti_006",
+        supportingPassageIds: ["old_indian_legends.oil_002"],
+        theme: "vision",
+        chatMode: "practice",
+        chatPrompt:
+          "How do I practice listening for wisdom beyond words — in silence, in dreams, in what is not said?",
+        practice:
+          "Spend ten minutes in silence, outside if possible. Do not meditate toward a goal. Just listen — to wind, to birds, to the space between sounds. If an image or knowing arises, receive it without analysis.",
+        journalPrompt:
+          "What have I learned recently not through words but through silence, dream, or deep listening? How do I make space for that kind of knowing?",
+        integration:
+          "You can value and cultivate non-verbal knowing — vision, silence, embodied wisdom — as legitimate and necessary.",
+      },
+      {
+        id: "na-seven-generations",
+        title: "Think Seven Generations Ahead",
+        orientation:
+          "Gate IV · The Responsibility. Every decision is made with the unborn in mind; the long view is not optional.",
+        teaching:
+          "The Haudenosaunee (Iroquois) teaching: when making a decision, consider its impact on the seventh generation yet to come. Not the next quarter, not the next election cycle — seven generations, roughly 140 years. This is not a suggestion; it is the baseline of responsible action. If a choice benefits you now but harms your great-great-great-great-great-grandchildren, it is a bad choice. This teaching assumes continuity and care across time. You are not the end; you are a link in a chain. The ancestors made sacrifices so you could be here; you owe the same to those coming. This is the opposite of short-term thinking that dominates modern economics and politics. It is also deeply pragmatic: the land and water do not reset every generation. Deplete them now, and seven generations will suffer. The teaching asks: can you hold the unborn in your heart as real as the living? If so, your decisions change.",
+        keyIdea: "Seven generations: every decision must consider its impact on the unborn, 140 years ahead.",
+        misconception:
+          "That this is impractical idealism. It is tested pragmatism — the condition of long-term survival and flourishing.",
+        passageId: "soul_of_the_indian.soti_007",
+        supportingPassageIds: ["soul_of_the_indian.soti_008"],
+        theme: "responsibility",
+        chatMode: "practice",
+        chatPrompt:
+          "Help me practice 'seven generations' thinking: how do I hold the unborn as real as the living when I make decisions?",
+        practice:
+          "Name one decision you face. Ask: 'What will this mean for my great-great-great-great-great-grandchildren?' Let the long view test whether the choice is wise.",
+        journalPrompt:
+          "Where am I prioritizing short-term gain over long-term health — in my own life, in my community, in how I vote or spend?",
+        integration:
+          "You can hold the seventh generation as real and let the long view guide decisions, refusing the tyranny of the short term.",
+      },
+    ],
+  },
+  {
+    id: "greek-presocratic-to-plotinus",
+    title: "Greek Philosophy — From Fire to the One",
+    level: "Advanced",
+    focus: "Heraclitus, Parmenides, Plato, Plotinus — the Greek arc from flux to form to the One",
+    outcome:
+      "Walk the Greek philosophical tradition from Presocratic beginnings through Plato's forms to Plotinus' vision of the One and the soul's return.",
+    description:
+      "A pure Greek path: Heraclitus' flux, Parmenides' unchanging Being, Plato's ascent through Beauty, and Plotinus' emanation and return.",
+    arc:
+      "Greek philosophy begins with astonishment at change. Heraclitus sees everything flowing like a river — no thing is, all things become. Parmenides argues the opposite: true Being never changes; flux is illusion. Plato synthesizes: the visible world flows (Heraclitus was right about appearances), but eternal Forms exist beyond flux (Parmenides was right about Being). The soul climbs from particular beauties to Beauty itself through eros. Then Plotinus completes the arc: the One is beyond even Being, the source from which Intellect and Soul emanate. The soul's task is the return — from multiplicity and forgetfulness back to the One, through Beauty and contemplation. This is not comparative philosophy; it is the Greek lineage in its own voice, showing how the question 'What is real?' unfolded across centuries into a full metaphysics of ascent and return.",
+    estimatedSessions: "6 gates · ~25 min each",
+    steps: [
+      {
+        id: "greek-heraclitus-flux",
+        title: "Heraclitus — Everything Flows",
+        orientation:
+          "Gate I · The Beginning. Greek philosophy opens with the shock of impermanence: nothing stays, all things flow.",
+        teaching:
+          "Heraclitus of Ephesus (c. 535–475 BCE) sees flux everywhere: 'You cannot step into the same river twice, for new waters are ever flowing upon you.' The river looks the same, but it is always different water. So with everything: the body, the city, the self. All things are in constant becoming. Fire is his image for reality — consuming, transforming, never still. But this is not chaos; there is logos, a hidden order or proportion governing the flux. Opposites are unified in tension: 'The way up and the way down are the same'; 'Cold things become warm, warm becomes cold.' Heraclitus names the human condition: we live in time, in change, and we forget. We treat what flows as if it were solid. The beginning of wisdom is waking up to the flux and learning to move with it rather than clinging to what cannot stay.",
+        keyIdea: "Panta rhei: everything flows; reality is becoming, not static being — the river never stays the same.",
+        misconception:
+          "That flux means nihilism or randomness. Heraclitus sees order (logos) within the flow, a hidden harmony of opposites.",
+        passageId: "heraclitus_fragments.her_frag_12",
+        supportingPassageIds: ["heraclitus_fragments.her_frag_50", "heraclitus_fragments.her_frag_51"],
+        theme: "flux",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain Heraclitus' teaching that 'everything flows' as both a metaphysical claim and a practical wisdom for living in time.",
+        practice:
+          "Observe one 'solid' thing in your life — a relationship, a role, a belief. Look closely: is it really the same as it was a year ago? Feel the flux underneath the appearance of stability.",
+        journalPrompt:
+          "Where am I clinging to what is changing, treating the river as if it could stand still? What would it mean to move with the flux?",
+        integration:
+          "You can recognize flux as the nature of reality and see clinging to permanence as the source of suffering.",
+      },
+      {
+        id: "greek-parmenides-being",
+        title: "Parmenides — Being Is, Non-Being Is Not",
+        orientation:
+          "Gate II · The Counter-Claim. Parmenides challenges Heraclitus: true reality does not change; what changes is not truly real.",
+        teaching:
+          "Parmenides of Elea (c. 515 BCE) argues: Being is; non-being is not — and that is the end of the matter. What truly is cannot come to be (for it would have to come from non-being, which is impossible) and cannot cease to be (for it would pass into non-being, which does not exist). Therefore, Being is eternal, unchanging, indivisible, and whole. The flux Heraclitus saw is not ultimate reality; it is appearance, the 'way of opinion' (doxa). True reality — the 'way of truth' (aletheia) — is timeless. This is the birth of metaphysics as a discipline: the visible world and the real world are not the same. Change, multiplicity, and becoming belong to the realm of appearance; true Being is One and unchanging. Plato will later synthesize Heraclitus and Parmenides — the Forms are unchanging Being, while the sensible world is flux.",
+        keyIdea: "Being is unchanging and eternal; what changes belongs to appearance, not to ultimate reality.",
+        misconception:
+          "That Parmenides denies the visible world. He distinguishes appearance (which exists) from ultimate reality (which does not change).",
+        passageId: "parmenides_fragments.par_frag_02",
+        supportingPassageIds: ["parmenides_fragments.par_frag_08"],
+        theme: "being",
+        chatMode: "compare",
+        chatPrompt:
+          "Compare Heraclitus' flux with Parmenides' unchanging Being. How does Plato later synthesize these two positions?",
+        practice:
+          "Contemplate one thing you consider unchanging — a mathematical truth, a moral principle, an ideal. Ask: does this belong to the world of flux or to Parmenides' realm of Being?",
+        journalPrompt:
+          "What in my experience points toward something that does not change — an awareness, a truth, a presence — underneath the flux?",
+        integration:
+          "You can distinguish appearance (which changes) from Being (which does not) and recognize both as real in different senses.",
+      },
+      {
+        id: "greek-plato-forms",
+        title: "Plato — The Forms as True Reality",
+        orientation:
+          "Gate III · The Synthesis. Plato unites Heraclitus and Parmenides: the visible flows, the Forms are eternal.",
+        teaching:
+          "Plato inherits both Heraclitus' flux and Parmenides' Being and declares both true — but of different realms. The visible world (the realm of becoming) is always flowing: particular beautiful things come and go, just horses are born and die. But the Forms — Beauty itself, Justice itself, the Horse itself — are eternal, unchanging, and perfect. The particulars 'participate' in the Forms: this horse is a horse because it participates in Horseness; this act is just because it participates in Justice. The Forms are not physical or mental; they are a third kind of being, accessible to the intellect (nous) but not to the senses. The soul knew the Forms before birth and forgot them; learning is recollection (anamnesis). This is the foundation of Platonism: ultimate reality is not material but intelligible, not flux but eternal structure. The task is to turn the soul from shadows (appearances) to the light (Forms).",
+        keyIdea: "The Forms are eternal, perfect archetypes; the visible world participates in them but is not ultimately real.",
+        misconception:
+          "That the Forms are 'just ideas in the mind.' Plato insists they are objective realities, more real than physical things.",
+        passageId: "phaedo_plato.phaedo_md_002",
+        supportingPassageIds: ["phaedo_plato.phaedo_md_004"],
+        theme: "forms",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain Plato's Forms as a solution to the Heraclitus/Parmenides problem: how the world can both flow and have stable reality.",
+        practice:
+          "Look at something beautiful — a face, a tree, a piece of music. Ask: what makes it beautiful? Try to point at Beauty itself, not this or that beautiful thing. Feel the Form as distinct from its instances.",
+        journalPrompt:
+          "Do I believe there is such a thing as Beauty itself, Justice itself — or only beautiful things and just acts? What follows from each view?",
+        integration:
+          "You can distinguish the Form from its instances and recognize the intelligible realm as prior to the visible.",
+      },
+      {
+        id: "greek-plato-ascent",
+        title: "The Ascent Through Beauty — Eros as the Path",
+        orientation:
+          "Gate III · The Method. Plato names the soul's ascent: from particular beauties to Beauty itself, driven by eros.",
+        teaching:
+          "In the Symposium, Plato describes the ladder of love (eros): you begin attracted to one beautiful body, then recognize beauty in many bodies, then in beautiful souls, then in beautiful laws and institutions, then in beautiful knowledge, and finally — if you ascend all the way — you behold Beauty itself, eternal and perfect. Eros is not base desire to be transcended; it is the soul's longing for the eternal, misdirected toward particulars. Every time you love a beautiful thing, you are really longing for Beauty; you just mistake the reflection for the original. The ascent is not rejection of the body or the world; it is progressive refinement of what you love, climbing from image to archetype. And the vision of Beauty is not information; it is transformative — the soul becomes beautiful by beholding Beauty. This is mysticism grounded in eros, the philosophical counterpart to later Sufi and Christian bridal mysticism.",
+        keyIdea: "Eros (love/desire) is the soul's longing for the eternal; the ascent through beauties leads to Beauty itself.",
+        misconception:
+          "That eros is bad or bodily desire to suppress. Plato sees it as the engine of the soul's ascent, misdirected until refined.",
+        passageId: "phaedo_plato.phaedo_md_005",
+        supportingPassageIds: ["plotinus_enneads.enn_i_6_09"],
+        theme: "eros",
+        chatMode: "practice",
+        chatPrompt:
+          "Turn Plato's ladder of love into a contemplative practice: how do I refine what I love, climbing from particular to universal?",
+        practice:
+          "Recall someone or something you find beautiful. Ask: 'What is the beauty I see here?' Then ask: 'Is there Beauty itself, beyond this instance?' Let eros move up the ladder.",
+        journalPrompt:
+          "Where is my desire aimed — at particulars that will fade, or at the eternal they point toward? How do I refine my loves?",
+        integration:
+          "You can recognize eros as longing for the eternal and practice refining your loves, climbing from image to archetype.",
+      },
+      {
+        id: "greek-plotinus-one",
+        title: "Plotinus — The One Beyond Being",
+        orientation:
+          "Gate IV · The Peak. Plotinus takes the Greek path to its zenith: the One is beyond even Being, the source of all.",
+        teaching:
+          "Plotinus (204–270 CE) completes Platonism by placing the One (to hen) beyond the Forms, beyond Being itself. The One is absolutely simple, without parts, without predicates — you cannot even say 'it is' because that would make it a being. From the One's perfection, Intellect (Nous) emanates, like light from the sun. Intellect contains the Forms and is the realm of true Being. From Intellect, Soul emanates, and from Soul, the material world. This is not creation in time; it is timeless overflow. The One does not diminish by giving rise to the many. And the soul's task is return (epistrophe): from distraction in matter, through self-knowledge in Soul, through contemplation of the Forms in Intellect, to mystical union with the One — 'the flight of the alone to the Alone.' Plotinus reports experiencing this union multiple times. It is not philosophy as argument but as ascent.",
+        keyIdea: "The One is beyond Being, the source from which all emanates; the soul's path is return through contemplation to union.",
+        misconception:
+          "That the One is a person or God in the theistic sense. It is beyond personality, beyond language, the absolute transcendent source.",
+        passageId: "plotinus_enneads.enn_v_1_06",
+        supportingPassageIds: ["plotinus_enneads.enn_vi_9_11"],
+        theme: "one",
+        chatMode: "explain",
+        chatPrompt:
+          "Explain Plotinus' One as beyond Being itself, and the soul's return as the culmination of the Greek philosophical path.",
+        practice:
+          "Contemplate the source of all things: not a being, not even Being, but that from which being pours. Do not try to picture it. Let thought point and then release itself.",
+        journalPrompt:
+          "If the One is beyond even Being, what is the 'I' that seeks it — and what happens to that 'I' in union?",
+        integration:
+          "You can approach the One through apophatic contemplation, recognizing it as the source beyond all categories.",
+      },
+      {
+        id: "greek-never-cease-chiselling",
+        title: "Never Cease Chiselling Your Statue",
+        orientation:
+          "Gate IV · The Practice. Plotinus gives the instruction for the ascent: become beautiful, and you will see Beauty.",
+        teaching:
+          "Plotinus writes in the most beautiful passage of the Enneads: 'Withdraw into yourself and look. And if you do not yet see yourself beautiful, act as does the creator of a statue that is to be made beautiful: he cuts away here, he smooths there, he makes this line lighter, this other purer, until he has shown a beautiful face upon the statue. Do you also do this: cut away all that is excessive, straighten all that is crooked, bring light to all that is overcast, labour to make all one radiance of beauty, and never cease chiselling your statue until there shall shine out on you the godlike splendour of virtue... For never did eye see the sun unless it had first become sunlike; and never can the soul have vision of the First Beauty unless itself be beautiful.' The ascent is subtraction, not addition. You remove what is false until what remains is radiant. And you cannot see the One by looking at it as an object; you see it by becoming like it — vision by resemblance.",
+        keyIdea: "Never cease chiselling: the ascent is removing what is false until you become sunlike and can see the sun.",
+        misconception:
+          "That you reach the One by acquiring more knowledge or virtue. You reach it by becoming beautiful through subtraction.",
+        passageId: "plotinus_enneads.enn_i_6_09",
+        supportingPassageIds: ["plotinus_enneads.enn_i_6_08"],
+        theme: "ascent",
+        chatMode: "practice",
+        chatPrompt:
+          "Turn Plotinus' statue metaphor into a spiritual practice: what in me is excessive, crooked, or overcast — and how do I chisel?",
+        practice:
+          "Name one thing that is 'excessive' in you — a compulsion, a defense, a false persona. For one day, chisel: set it down each time it arises. Notice what radiance is uncovered.",
+        journalPrompt:
+          "What would I look like if I never ceased chiselling — if I kept removing the false until only the godlike splendour remained?",
+        integration:
+          "You can practice the ascent as subtraction, chiselling away the false until the soul becomes sunlike and can see the sun.",
+      },
+    ],
+  },
 ];
 
 /** A realm is a grouping of paths by lineage/territory — the "courses" of the
@@ -1776,6 +2755,20 @@ export const PHILOSOPHICAL_TRADITIONS: PhilosophicalTradition[] = [
     trackIds: ["recognizing-awareness"],
   },
   {
+    id: "yoga",
+    title: "Yoga (Patañjali)",
+    invitation: "Stillness of the mind's turnings; the seer rests in its own nature.",
+    glyph: "spiral",
+    trackIds: ["yoga-eight-limbs"],
+  },
+  {
+    id: "buddhism",
+    title: "Buddhism",
+    invitation: "Emptiness, compassion, the groundless ground.",
+    glyph: "lotus",
+    trackIds: ["buddhism-core"],
+  },
+  {
     id: "tao",
     title: "Tao",
     invitation: "The nameless source; the ten thousand things arise and return.",
@@ -1784,8 +2777,43 @@ export const PHILOSOPHICAL_TRADITIONS: PhilosophicalTradition[] = [
   },
   {
     id: "greek",
-    title: "Greek & Neoplatonist",
-    invitation: "The One overflows; the soul returns by becoming sunlike.",
+    title: "Greek Philosophy",
+    invitation: "From flux to form to the One — Heraclitus, Plato, Plotinus.",
+    glyph: "infinity",
+    trackIds: ["greek-presocratic-to-plotinus"],
+  },
+  {
+    id: "sufi",
+    title: "Sufi",
+    invitation: "The Beloved hides in plain sight; love is the way.",
+    glyph: "spiral",
+    trackIds: ["sufi-love-path"],
+  },
+  {
+    id: "christian-mysticism",
+    title: "Christian Mysticism",
+    invitation: "The divine darkness; unknowing as the highest knowing.",
+    glyph: "chalice",
+    trackIds: ["christian-mysticism"],
+  },
+  {
+    id: "yoruba",
+    title: "Yoruba Wisdom",
+    invitation: "Character is beauty; patience eats ripe fruit; all are kin.",
+    glyph: "sun",
+    trackIds: ["yoruba-wisdom"],
+  },
+  {
+    id: "native-american",
+    title: "Native American",
+    invitation: "All my relations — Earth as Grandmother, the Sacred Hoop.",
+    glyph: "eagle",
+    trackIds: ["native-american-wisdom"],
+  },
+  {
+    id: "bridges",
+    title: "Bridges & Comparisons",
+    invitation: "One story told in many voices — emanation and return across traditions.",
     glyph: "infinity",
     trackIds: ["the-one-and-the-many"],
   },
@@ -1794,27 +2822,9 @@ export const PHILOSOPHICAL_TRADITIONS: PhilosophicalTradition[] = [
 /** Traditions available in the corpus but awaiting first-pass tracks */
 export const TRADITIONS_IN_DEVELOPMENT: Array<Omit<PhilosophicalTradition, "trackIds">> = [
   {
-    id: "yoga",
-    title: "Yoga (Patañjali)",
-    invitation: "Stillness of the mind's turnings; the seer rests in its own nature.",
-    glyph: "spiral",
-  },
-  {
-    id: "buddhism",
-    title: "Buddhism",
-    invitation: "Emptiness, compassion, the groundless ground.",
-    glyph: "lotus",
-  },
-  {
-    id: "sufi",
-    title: "Sufi",
-    invitation: "The Beloved hides in plain sight; love is the way.",
-    glyph: "spiral",
-  },
-  {
-    id: "christian-mysticism",
-    title: "Christian Mysticism",
-    invitation: "The divine darkness; unknowing as the highest knowing.",
-    glyph: "chalice",
+    id: "stoic",
+    title: "Stoic Philosophy",
+    invitation: "What is yours to govern; freedom through right judgment.",
+    glyph: "sage",
   },
 ];
