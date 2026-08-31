@@ -15,11 +15,10 @@ import { displayPassageTitle } from "@/lib/passageTitles";
 import { stripMarkdown } from "@/lib/textPreview";
 import { GlyphMala } from "@/components/GlyphMala";
 import { recordPractice, recordStudy, unlockedMarks, unlockProgress, UNLOCK_HINT } from "@/lib/glyphUnlock";
-import { BookMarked, Shuffle } from "lucide-react";
+import { BookMarked, Copy, Download, Share2, Shuffle } from "lucide-react";
 import {
   SHARE_MARK_GROUPS,
   SHARE_INKS,
-  SHARE_SOCIAL,
   SHARE_TEXT_MODES,
   folioCandidates,
   nextFolioLine,
@@ -27,20 +26,15 @@ import {
   clipShareText,
   shareCaption,
   sharePagePath,
-  tiktokUploadUrl,
-  tweetIntentUrl,
-  whatsappIntentUrl,
   verseShareMark,
   isShareForceMark,
   isShareInk,
   isShareTextMode,
   type ShareForceMark,
   type ShareInk,
-  type ShareSocialId,
   type ShareTextMode,
   type ShareAspectRatio,
 } from "@/lib/shareCard";
-import { SHARE_DEST_ICONS } from "@/components/ShareDestIcons";
 import { ShareCard } from "@/components/ShareCard";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -155,6 +149,8 @@ function ShareComposerInner({
   const [busy, setBusy] = useState<string | null>(null);
   const [openMarks, setOpenMarks] = useState<Set<ShareForceMark>>(() => new Set([verseMark, "lotus", "circle", "moon", "fire", "tree", "heart", "water", "mountain"]));
   const cardRef = useRef<HTMLDivElement>(null);
+  const exportRef = useRef<HTMLDivElement>(null);
+  const [canOsShare, setCanOsShare] = useState(false);
   const { user } = useAuth();
   const manuscript = cloud?.manuscript;
   const commentary = cloud?.commentary;
@@ -249,10 +245,16 @@ function ShareComposerInner({
     enableHoloMotion();
   }, [earnedHolo]);
 
+  useEffect(() => {
+    setCanOsShare(typeof navigator !== "undefined" && typeof navigator.share === "function");
+  }, []);
+
   async function pngBlob(): Promise<Blob> {
-    const wrap = cardRef.current;
+    const wrap = exportRef.current || cardRef.current;
     if (!wrap) throw new Error("Could not render the page.");
     const node = (wrap.querySelector(".share-card") as HTMLElement | null) || wrap;
+    await document.fonts.ready.catch(() => undefined);
+    await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
     const width = Math.max(1, Math.round(node.offsetWidth));
     const height = Math.max(1, Math.round(node.offsetHeight));
     const blob = await toBlob(node, {
@@ -269,10 +271,8 @@ function ShareComposerInner({
         margin: "0",
         left: "0",
         top: "0",
+        opacity: "1",
       },
-      // html-to-image has no `onclone` hook (that is html2canvas); the holographic
-      // transform is already flattened by the root `style: { transform: "none" }`
-      // override above, so the captured card renders flat.
     });
     if (!blob) throw new Error("Could not render the page.");
     return blob;
@@ -297,177 +297,53 @@ function ShareComposerInner({
     URL.revokeObjectURL(url);
   }
 
-  function canAttachImage(): boolean {
-    if (!navigator.share || !navigator.canShare) return false;
-    try {
-      const probe = new File([new Uint8Array([0x89])], "pratibha.png", { type: "image/png" });
-      return navigator.canShare({ files: [probe] });
-    } catch {
-      return false;
-    }
-  }
-
-  async function nativeShare(file: File | null, caption: string): Promise<boolean> {
-    if (!navigator.share) return false;
-    if (file) {
-      const fileOnly = { files: [file], title: copy.title };
-      if (navigator.canShare?.(fileOnly)) {
-        await navigator.share(fileOnly);
-        return true;
-      }
-      const withCaption = { files: [file], text: caption, title: copy.title };
-      if (navigator.canShare?.(withCaption)) {
-        await navigator.share(withCaption);
-        return true;
-      }
-      return false;
-    }
-    const textOnly = { text: caption, title: copy.title };
-    if (navigator.canShare?.(textOnly)) {
-      await navigator.share(textOnly);
-      return true;
-    }
-    return false;
-  }
-
-  function openAppScheme(scheme: string, fallback?: string) {
-    const a = document.createElement("a");
-    a.href = scheme;
-    a.rel = "noopener";
-    a.style.display = "none";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    window.setTimeout(() => {
-      if (document.visibilityState === "visible" && fallback) window.location.href = fallback;
-    }, 450);
-  }
-
-  function openInstagramApp(destination: "story" | "post") {
-    const android = /Android/i.test(navigator.userAgent);
-    const mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    const scheme = android
-      ? "intent://instagram.com/#Intent;package=com.instagram.android;scheme=https;end"
-      : destination === "story"
-        ? "instagram://story-camera"
-        : "instagram://app";
-    const fallback = destination === "story" ? "instagram-stories://share" : "instagram://library";
-    if (!mobile) {
-      window.open("https://www.instagram.com/", "_blank", "noopener,noreferrer");
-      return;
-    }
-    openAppScheme(scheme, fallback);
-  }
-
-  async function shareToWhatsApp() {
-    setBusy("whatsapp");
-    try {
-      const blob = await pngBlob();
-      const file = new File([blob], `pratibha-${item._id}.png`, { type: "image/png" });
-      const { caption } = captionAndUrl();
-      void navigator.clipboard.writeText(caption).catch(() => {});
-      if (await nativeShare(file, caption)) return;
-      downloadBlob(blob, file.name);
-      toast.success("Card saved. Attach that image in WhatsApp.", { duration: 6000 });
-    } catch (err) {
-      if (err instanceof Error && err.name === "AbortError") return;
-      toast.error(friendlyShareError(err, "Could not share to WhatsApp."));
-    } finally {
-      setBusy(null);
-    }
-  }
-
   function friendlyShareError(err: unknown, fallback: string) {
     const msg = err instanceof Error ? err.message : fallback;
     if (/not authenticated|sign in|convex client|convex provider/i.test(msg)) return fallback;
     return msg;
   }
 
-  async function shareFolioToOS(filename: string) {
-    const blob = await pngBlob();
-    const file = new File([blob], filename, { type: "image/png" });
-    const { caption } = captionAndUrl();
-    void navigator.clipboard.writeText(caption).catch(() => {});
-    if (await nativeShare(file, caption)) return true;
-    downloadBlob(blob, filename);
-    return false;
-  }
-
-  async function shareToInstagram(destination: "story" | "post") {
-    const destId = destination === "story" ? "instagram_story" : "instagram_post";
-    setBusy(destId);
-    setAspectRatio(destination);
+  async function saveImage() {
+    setBusy("save");
     try {
-      const handed = await shareFolioToOS(`pratibha-${destination}-${item._id}.png`);
-      if (handed) return;
-      openInstagramApp(destination);
-      toast.success(
-        destination === "story"
-          ? "Folio saved. Add it from Recents in Instagram."
-          : "Folio saved. Pick it from Recents in Instagram.",
-        { duration: 6000 },
-      );
+      const blob = await pngBlob();
+      downloadBlob(blob, `pratibha-${item._id}.png`);
+      const { caption } = captionAndUrl();
+      void navigator.clipboard.writeText(caption).catch(() => {});
+      toast.success("Image saved. Caption copied.");
     } catch (err) {
-      if (err instanceof Error && err.name === "AbortError") return;
-      toast.error(friendlyShareError(err, "Could not share the folio."));
+      toast.error(friendlyShareError(err, "Could not save the folio."));
     } finally {
       setBusy(null);
     }
   }
 
-  async function shareTo(dest: ShareSocialId) {
+  async function shareFolio() {
     recordPractice(`share:${item._id}`);
     refreshUnlocks();
-    if (dest === "instagram_story" || dest === "instagram_post") {
-      await shareToInstagram(dest === "instagram_story" ? "story" : "post");
-      return;
-    }
-    if (dest === "whatsapp") {
-      await shareToWhatsApp();
-      return;
-    }
-    setBusy(dest);
+    setBusy("share");
     try {
-      const { caption, pageUrl } = captionAndUrl();
-      if (dest === "x") {
-        window.open(tweetIntentUrl(caption, pageUrl), "_blank", "noopener,noreferrer");
-        return;
-      }
-      if (!canAttachImage()) {
-        if (dest === "tiktok") window.open(tiktokUploadUrl(), "_blank", "noopener,noreferrer");
-        void navigator.clipboard.writeText(caption).catch(() => {});
-        toast.success(
-          dest === "tiktok"
-            ? "Caption copied — post it in TikTok."
-            : "Caption copied — open Signal to send.",
-        );
-        return;
-      }
       const blob = await pngBlob();
       const file = new File([blob], `pratibha-${item._id}.png`, { type: "image/png" });
-      if (await nativeShare(file, caption)) return;
-      downloadBlob(blob, file.name);
-      await navigator.clipboard.writeText(caption);
-      if (dest === "tiktok") {
-        window.open(tiktokUploadUrl(), "_blank", "noopener,noreferrer");
-        toast.success("Image saved. Caption copied — post it in TikTok.");
-        return;
+      const { caption } = captionAndUrl();
+      void navigator.clipboard.writeText(caption).catch(() => {});
+      if (navigator.share) {
+        try {
+          const withFile = { files: [file], title: copy.title, text: caption };
+          if (!navigator.canShare || navigator.canShare({ files: [file] })) {
+            await navigator.share(withFile);
+            return;
+          }
+          await navigator.share({ title: copy.title, text: caption });
+          downloadBlob(blob, file.name);
+          toast.success("Caption handed off. Image saved so you can attach it.");
+          return;
+        } catch (err) {
+          if (err instanceof Error && err.name === "AbortError") return;
+        }
       }
-      toast.success("Image saved. Caption copied — open Signal to send.");
-    } catch (err) {
-      if (err instanceof Error && err.name === "AbortError") return;
-      toast.error(friendlyShareError(err, "Could not share the folio."));
-    } finally {
-      setBusy(null);
-    }
-  }
-
-  async function shareMore() {
-    setBusy("more");
-    try {
-      const handed = await shareFolioToOS(`pratibha-${item._id}.png`);
-      if (handed) return;
-      toast.success("Folio saved. Caption copied.");
+      downloadBlob(blob, file.name);
+      toast.success("Image saved. Caption copied — attach it wherever you post.");
     } catch (err) {
       if (err instanceof Error && err.name === "AbortError") return;
       toast.error(friendlyShareError(err, "Could not share the folio."));

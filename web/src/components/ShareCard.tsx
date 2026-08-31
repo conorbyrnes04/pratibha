@@ -27,6 +27,7 @@ export function ShareCard({
   fillWindow = false,
   aspectRatio = "post",
   holographic = false,
+  flat = false,
 }: {
   mark: ShareForceMark;
   ink: ShareInk;
@@ -35,9 +36,11 @@ export function ShareCard({
   fillWindow?: boolean;
   aspectRatio?: ShareAspectRatio;
   holographic?: boolean;
+  /** Flatten 3D tilt and skip stroke animation — used when capturing a PNG. */
+  flat?: boolean;
 }) {
   const hex = SHARE_INKS[ink].hex;
-  const tilt = useHoloTilt(holographic);
+  const tilt = useHoloTilt(holographic && !flat);
   const showOriginal = (textMode === "original" || textMode === "both") && Boolean(copy.original);
   const showTranslation =
     (textMode === "translation" || textMode === "both" || !showOriginal) && Boolean(copy.translation);
@@ -46,7 +49,7 @@ export function ShareCard({
 
   return (
     <article
-      className={`share-card ${modeClass} share-card--${aspectRatio}${holographic ? " share-card--holo" : ""}${reading ? " share-card--reading" : ""}`}
+      className={`share-card ${modeClass} share-card--${aspectRatio}${holographic ? " share-card--holo" : ""}${reading ? " share-card--reading" : ""}${flat ? " share-card--flat" : ""}`}
       style={{
         ["--share-ink" as string]: hex,
         ["--holo-x" as string]: String(tilt.x),
@@ -54,7 +57,13 @@ export function ShareCard({
       }}
     >
       <div className="share-card__mark" aria-hidden>
-        <InkGlyph glyph={mark} ink={hex} className="share-card__glyph" stroke strokeKey={`${mark}-${ink}`} />
+        <InkGlyph
+          glyph={mark}
+          ink={hex}
+          className="share-card__glyph"
+          stroke={!flat}
+          strokeKey={flat ? undefined : `${mark}-${ink}`}
+        />
       </div>
       <p className="share-card__meta">{copy.collection || "Pratibha"}</p>
       <h2 className="share-card__title">{copy.title}</h2>
