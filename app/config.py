@@ -61,8 +61,9 @@ class Settings(BaseSettings):
     PG_SSL: bool = False
 
     # Optional auth backends. Convex is the new path; Supabase fields remain so
-    # existing .env files and /health stay valid.
-    NEXT_PUBLIC_CONVEX_URL: str | None = None
+    # existing .env files and /health stay valid. Production default so Render
+    # chat auth (F6) is on even if the dashboard env var was never set.
+    NEXT_PUBLIC_CONVEX_URL: str | None = "https://giant-lapwing-264.convex.cloud"
     SUPABASE_URL: str | None = None
     SUPABASE_JWT_SECRET: str | None = None
 

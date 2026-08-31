@@ -21,7 +21,7 @@ from .chat_voice import (
     SOURCE_GROUNDING,
 )
 from .voice_examples import is_death_topic, select_few_shots
-from .auth import AuthUser, optional_user, require_user
+from .auth import AuthUser, require_user, require_user_if_configured
 from .config import settings
 from .llm import smart_chat, smart_chat_stream
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, retrieve_related_unit_ids, detected_collections
@@ -75,7 +75,15 @@ async def lifespan(_app: FastAPI):
         task.cancel()
 
 
-app = FastAPI(title="Pratibha API", version="0.9", lifespan=lifespan)
+_docs_on = os.environ.get("ENABLE_API_DOCS", "").strip().lower() in {"1", "true", "yes"}
+app = FastAPI(
+    title="Pratibha API",
+    version="0.9",
+    lifespan=lifespan,
+    docs_url="/docs" if _docs_on else None,
+    redoc_url="/redoc" if _docs_on else None,
+    openapi_url="/openapi.json" if _docs_on else None,
+)
 
 
 def _cors_origins() -> list[str]:
@@ -110,6 +118,19 @@ app.add_middleware(
     expose_headers=["X-Chat-Daily-Limit", "X-Chat-Daily-Remaining"],
 )
 
+
+@app.middleware("http")
+async def security_headers(request: Request, call_next):
+    response = await call_next(request)
+    response.headers.setdefault("X-Content-Type-Options", "nosniff")
+    response.headers.setdefault("X-Frame-Options", "DENY")
+    response.headers.setdefault("Referrer-Policy", "no-referrer")
+    response.headers.setdefault(
+        "Permissions-Policy",
+        "camera=(), microphone=(), geolocation=(), payment=()",
+    )
+    return response
+
 def _valid_maturity(value: str | None) -> str | None:
     """Validate an incoming min_maturity query param, ignoring junk values."""
     if value is None:
@@ -117,29 +138,45 @@ def _valid_maturity(value: str | None) -> str | None:
     normalized = normalize_maturity(value)
     return normalized or None
 
+# Catalog scrape / amplification: honor `limit`, and cap unauthenticated hammering.
+_VERSES_MAX_LIMIT = 200
+_CATALOG_RATE_MAX = int(os.environ.get("CATALOG_RATE_MAX_PER_MIN", "40") or "40")
+_catalog_hits: dict[str, list[float]] = {}
+
+
+def _hit_limited(bucket: dict[str, list[float]], key: str, max_per_min: int) -> bool:
+    if max_per_min <= 0:
+        return False
+    now = time.monotonic()
+    window = [t for t in bucket.get(key, []) if now - t < 60.0]
+    if len(window) >= max_per_min:
+        bucket[key] = window
+        return True
+    window.append(now)
+    bucket[key] = window
+    if len(bucket) > 4096:
+        for stale in [k for k, v in bucket.items() if not any(now - t < 60.0 for t in v)]:
+            bucket.pop(stale, None)
+    return False
+
+
+def _client_ip(request: Request) -> str:
+    fwd = (request.headers.get("x-forwarded-for") or "").split(",")[0].strip()
+    if fwd:
+        return fwd
+    return (request.client.host if request.client else "") or "unknown"
+
+
+def _catalog_rate_limited(request: Request) -> bool:
+    return _hit_limited(_catalog_hits, _client_ip(request), _CATALOG_RATE_MAX)
+
+
 # ---- Data endpoints ----
 @app.get("/health")
 async def health():
     # Keep this path free of corpus/DB work so Render cold-starts and load
-    # balancers always get a fast liveness signal.
-    ready = corpus_ready()
-    return {
-        "ok": True,
-        "ready": ready,
-        # `_cached_item_count()` already returns an int — do not wrap in len().
-        "items": _cached_item_count() if ready else 0,
-        "load_stats": LOAD_STATS if ready else {},
-        "config": {
-            "openrouter": bool((settings.OPENROUTER_API_KEY or "").strip()),
-            "openai": bool((settings.OPENAI_API_KEY or "").strip()),
-            "use_rag": bool(settings.USE_RAG),
-            "database_url": bool((settings.DATABASE_URL or "").strip()),
-            "pg_host": settings.PG_HOST or "",
-            "chat_provider": settings.chat_provider(),
-            "convex_auth": bool((settings.NEXT_PUBLIC_CONVEX_URL or os.getenv("NEXT_PUBLIC_CONVEX_URL") or "").strip()),
-            "supabase_auth": bool((settings.SUPABASE_URL or "").strip() or (settings.SUPABASE_JWT_SECRET or "").strip()),
-        },
-    }
+    # balancers always get a fast liveness signal. Do not disclose internals.
+    return {"ok": True, "ready": corpus_ready()}
 
 
 # --- Sumi ink glyphs -------------------------------------------------------
@@ -208,12 +245,31 @@ def _cached_item_count() -> int:
 
 
 @app.get("/verses")
-async def list_verses(min_maturity: str | None = None):
+async def list_verses(
+    request: Request,
+    min_maturity: str | None = None,
+    limit: int | None = None,
+    offset: int = 0,
+):
     """Library index — slim payloads so the browser isn't handed ~9MB of layers."""
+    if _catalog_rate_limited(request):
+        raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
     items = filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity))
+    total = len(items)
+    start = max(0, offset)
+    if limit is not None:
+        cap = max(1, min(int(limit), _VERSES_MAX_LIMIT))
+        page = items[start:start + cap]
+    else:
+        page = items[start:]
     # Short CDN/browser freshness; the web client also keeps a localStorage catalog.
     return JSONResponse(
-        content={"items": [_verse_list_item(v) for v in items]},
+        content={
+            "items": [_verse_list_item(v) for v in page],
+            "total": total,
+            "offset": start,
+            "limit": limit,
+        },
         headers={"Cache-Control": "public, max-age=60, stale-while-revalidate=300"},
     )
 
@@ -466,29 +522,8 @@ _chat_daily: dict[str, int] = {}
 _chat_daily_day: str = ""
 
 
-def _client_ip(request: Request) -> str:
-    fwd = (request.headers.get("x-forwarded-for") or "").split(",")[0].strip()
-    if fwd:
-        return fwd
-    return (request.client.host if request.client else "") or "unknown"
-
-
 def _rate_limited(request: Request) -> bool:
-    if _CHAT_RATE_MAX <= 0:
-        return False
-    now = time.monotonic()
-    ip = _client_ip(request)
-    window = [t for t in _chat_hits.get(ip, []) if now - t < 60.0]
-    if len(window) >= _CHAT_RATE_MAX:
-        _chat_hits[ip] = window
-        return True
-    window.append(now)
-    _chat_hits[ip] = window
-    # Opportunistic cleanup so the dict can't grow unbounded.
-    if len(_chat_hits) > 4096:
-        for key in [k for k, v in _chat_hits.items() if not any(now - t < 60.0 for t in v)]:
-            _chat_hits.pop(key, None)
-    return False
+    return _hit_limited(_chat_hits, _client_ip(request), _CHAT_RATE_MAX)
 
 
 def _utc_day() -> str:
@@ -1044,7 +1079,11 @@ def _needs_voice_retry(answer: str, query: str) -> bool:
 
 
 @app.post("/chat")
-async def chat(req: ChatReq, request: Request, user: AuthUser | None = Depends(optional_user)):
+async def chat(
+    req: ChatReq,
+    request: Request,
+    user: AuthUser | None = Depends(require_user_if_configured),
+):
     if _rate_limited(request):
         raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
     identity = _chat_identity(request, user)
@@ -1102,7 +1141,11 @@ def _sse(payload: dict) -> str:
 
 
 @app.post("/chat.stream")
-async def chat_stream(req: ChatReq, request: Request, user: AuthUser | None = Depends(optional_user)):
+async def chat_stream(
+    req: ChatReq,
+    request: Request,
+    user: AuthUser | None = Depends(require_user_if_configured),
+):
     if _rate_limited(request):
         raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
     identity = _chat_identity(request, user)

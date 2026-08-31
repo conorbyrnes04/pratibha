@@ -46,6 +46,9 @@ services:
       # Per-IP chat rate limit (requests/minute); protects the metered LLM.
       - key: CHAT_RATE_MAX_PER_MIN
         value: "20"
+      # Convex JWKS URL — required for /chat JWT checks (F6).
+      - key: NEXT_PUBLIC_CONVEX_URL
+        value: https://giant-lapwing-264.convex.cloud
       # Shared secret for /admin/corpus-status (X-Admin-Token header).
       - key: ADMIN_TOKEN
         sync: false

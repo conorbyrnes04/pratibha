@@ -126,3 +126,10 @@ async def require_user(request: Request) -> AuthUser:
     if not token:
         raise HTTPException(status_code=401, detail="Sign in required")
     return verify_bearer_token(token)
+
+
+async def require_user_if_configured(request: Request) -> AuthUser | None:
+    """Require a Convex JWT when auth is configured (production). Allow local/dev without it."""
+    if not auth_configured():
+        return None
+    return await require_user(request)
