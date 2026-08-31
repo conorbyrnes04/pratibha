@@ -36,8 +36,12 @@ commentary: 'Krishna validates Arjuna completely — asaṃśayam, durnigraham, 
   decision today.'
 insight: 'Krishna validates Arjuna completely — asaṃśayam, durnigraham, calam — then gives the dual means:
   abhyāsa and vairāgya.'
-practice: |
-  Sit with the breath. Krishna does not deny the wind. Each time attention flies, count the return as the practice, not the failure. After ten honest returns, loosen one craving-color that was riding the sitting — the wish to be calm, impressive, finished. Practice without that extra heat; release without going limp. The mind is graspable only where both hands are working.
+practice: 'Sit with the breath. Krishna does not deny the wind. Each time attention flies, count the return
+  as the practice, not the failure. After ten honest returns, loosen one craving-color that was riding
+  the sitting — the wish to be calm, impressive, finished. Practice without that extra heat; release without
+  going limp. The mind is graspable only where both hands are working.
+
+  '
 upaya: ''
 themes:
 - action
@@ -114,8 +118,12 @@ pratibha_layers:
   layer_provenance: recovered-from-pratibha-md
 - kind: practice
   label: Practice (Abhyasa)
-  body: |
-    Sit with the breath. Krishna does not deny the wind. Each time attention flies, count the return as the practice, not the failure. After ten honest returns, loosen one craving-color that was riding the sitting — the wish to be calm, impressive, finished. Practice without that extra heat; release without going limp. The mind is graspable only where both hands are working.
+  body: 'Sit with the breath. Krishna does not deny the wind. Each time attention flies, count the return
+    as the practice, not the failure. After ten honest returns, loosen one craving-color that was riding
+    the sitting — the wish to be calm, impressive, finished. Practice without that extra heat; release
+    without going limp. The mind is graspable only where both hands are working.
+
+    '
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -124,3 +132,4 @@ provenance:
   original_id: BG_06_35
   source_reference: ''
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+tts_key: true

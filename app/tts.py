@@ -23,7 +23,15 @@ from .config import settings
 
 logger = logging.getLogger("pratibha.tts")
 
-_DEFAULT_VOICE = "nPczCjzI2devNBz1zQrb"  # Brian — calm American narration
+_DEFAULT_VOICE = "nPczCjzI2devNBz1zQrb"  # Brian — unmarked American only
+# Pins live here (not only .env) so a reload picks them up. Env still wins.
+_ROOM_DEFAULT_VOICES: dict[str, str] = {
+    "indic": "aoVMYhTrJqXZPDJhHqkj",  # Anagh — Indian English
+    "yoruba": "ytMkkl3KqcF3nhlFgtys",
+    "sinosphere": "mBoVD3461U2BagYEwjeo",
+    "sufi": "PleK417YVMP2SUWm8Btb",
+    "hellenic": "1gkXJMvrzBWAwt0XqBaa",
+}
 _MODEL = "eleven_multilingual_v2"
 _MAX_CHARS = 4200
 _ELEVEN_TTS = "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
@@ -101,36 +109,36 @@ _ROOM_PATTERNS: list[tuple[re.Pattern[str], VoiceRoom]] = [
 # Room tone, not costume. Dakota is land and air — never flute or drum.
 _CUE_PROMPTS: dict[str, dict[str, str]] = {
     "indic": {
-        "open": "A single soft bronze singing bowl struck once in a quiet stone shrine. Long decay. No melody, no voice, no chant.",
-        "close": "The last faint overtone of a bronze bowl fading into a still stone room. No voice.",
+        "open": "A single soft bronze singing bowl struck once in a quiet stone shrine. Long clean decay. No hiss, no static, no noise floor, no melody, no voice, no chant.",
+        "close": "The last faint overtone of a bronze bowl fading into a still stone room. Clean silence. No hiss, no voice.",
     },
     "sinosphere": {
-        "open": "A single soft wooden fish tap in an empty monastery hall. One hit, then silence. No flute, no voice.",
-        "close": "Quiet wooden hall after one tap, air settling. No instrument continues.",
+        "open": "A single soft wooden fish tap in an empty monastery hall. One hit, then silence. Clean recording. No hiss, no flute, no voice.",
+        "close": "Quiet wooden hall after one tap, air settling. Clean silence. No hiss, no instrument continues.",
     },
     "yoruba": {
-        "open": "One warm low calabash tone in still night air. A single note, then silence. Not a drum solo, not festive.",
-        "close": "Warm night air after one low tone has died. No percussion, no voice.",
+        "open": "One warm low calabash tone in still night air. A single note, then silence. Clean recording. No hiss, not a drum solo, not festive.",
+        "close": "Warm night air after one low tone has died. Clean silence. No hiss, no percussion, no voice.",
     },
     "hebrew": {
-        "open": "A single quiet bronze overtone in a dry stone room. Desert stillness. No shofar, no chant, no voice.",
-        "close": "Dry stone room after one metallic tone fades. Silence.",
+        "open": "A single quiet bronze overtone in a dry stone room. Desert stillness. Clean recording. No hiss, no shofar, no chant, no voice.",
+        "close": "Dry stone room after one metallic tone fades. Clean silence. No hiss.",
     },
     "hellenic": {
-        "open": "One quiet plucked gut string in a marble room. A single note, then stone silence. No melody.",
-        "close": "Marble room after one string has gone still.",
+        "open": "One quiet plucked gut string in a marble room. A single note, then stone silence. Clean recording. No hiss, no melody.",
+        "close": "Marble room after one string has gone still. Clean silence. No hiss.",
     },
     "sufi": {
-        "open": "One soft reed breath, a single note fading on a carpeted floor. No ornament, no voice.",
-        "close": "A reed tone disappearing into a quiet carpeted room.",
+        "open": "One soft reed breath, a single note fading on a carpeted floor. Clean recording. No hiss, no ornament, no voice.",
+        "close": "A reed tone disappearing into a quiet carpeted room. Clean silence. No hiss.",
     },
     "dakota": {
-        "open": "Wind moving through dry prairie grass under an open sky. A few seconds. No flute, no drum, no voice, no melody, no stereotyped Native American music. Only land and air.",
-        "close": "Prairie wind falling still. Only air. No instrument, no voice.",
+        "open": "Wind moving through dry prairie grass under an open sky. A few seconds. Soft and clean. No hiss crackle, no flute, no drum, no voice, no melody, no stereotyped Native American music. Only land and air.",
+        "close": "Prairie wind falling still. Only air. Clean fade. No instrument, no voice.",
     },
     "unmarked": {
-        "open": "A single page turning in a quiet wooden library. Paper and wood. No organ, no church bell, no voice.",
-        "close": "A book closing softly on a wooden table. Then silence.",
+        "open": "A single page turning in a quiet wooden library. Paper and wood. Clean recording. No hiss, no organ, no church bell, no voice.",
+        "close": "A book closing softly on a wooden table. Then clean silence. No hiss.",
     },
 }
 
@@ -195,12 +203,34 @@ def voice_room_for(verse: dict[str, Any]) -> VoiceRoom:
     return "unmarked"
 
 
+# Really-large collections offer Listen only for curated key verses (scripts/
+# earmark_tts_key.py sets `tts_key: true`). Bhagavad Gītā is intentionally NOT here —
+# every one of its verses is listenable.
+_TTS_GATED_COLLECTIONS = frozenset(
+    {"siva_samhita", "marcus_aurelius_meditations", "hatha_yoga_pradipika"}
+)
+
+
+def _tts_gated(verse: dict[str, Any]) -> bool:
+    """True if this verse is in a gated large collection but is not a key verse."""
+    slug = str(verse.get("work_id") or "").strip().lower()
+    if not slug:
+        uid = str(verse.get("unit_id") or "")
+        slug = uid.split(".", 1)[0].strip().lower()
+    return slug in _TTS_GATED_COLLECTIONS and not verse.get("tts_key")
+
+
 def available_sections(verse: dict[str, Any]) -> list[ListenSection]:
+    if _tts_gated(verse):
+        return []
     return [kind for kind in SPEAKABLE_SECTIONS if _layer(verse, kind)]
 
 
 def _env_voice(room: VoiceRoom) -> str:
-    return (os.getenv(f"ELEVENLABS_VOICE_{room.upper()}") or "").strip()
+    return (
+        (os.getenv(f"ELEVENLABS_VOICE_{room.upper()}") or "").strip()
+        or _ROOM_DEFAULT_VOICES.get(room, "")
+    )
 
 
 def _voice_blob(voice: dict[str, Any]) -> str:
@@ -216,13 +246,19 @@ def _voice_blob(voice: dict[str, Any]) -> str:
 
 
 def _is_respectful_dakota_voice(voice: dict[str, Any]) -> bool:
-    blob = _voice_blob(voice)
-    if not _DAKOTA_SELF_RE.search(blob):
+    """A first name 'Dakota' is not a Dakota/Lakota/Nakota speaker."""
+    labels = voice.get("labels") if isinstance(voice.get("labels"), dict) else {}
+    identity = " ".join(
+        [
+            str(voice.get("description") or ""),
+            str(voice.get("accent") or ""),
+            str(labels.get("accent") or ""),
+            str(labels.get("description") or ""),
+        ]
+    )
+    if not _DAKOTA_SELF_RE.search(identity):
         return False
-    # Reject costume voices that only mention "Native American" without a nation.
-    if _COSTUME_NATIVE_RE.search(blob) and not _DAKOTA_SELF_RE.search(
-        str(voice.get("name") or "") + " " + str(voice.get("description") or "")
-    ):
+    if _COSTUME_NATIVE_RE.search(identity) and not _DAKOTA_SELF_RE.search(identity):
         return False
     return True
 
@@ -379,24 +415,24 @@ def _speech_key(voice_id: str, text: str) -> str:
 
 
 def _cue_key(room: VoiceRoom, edge: str) -> str:
-    return f"cues/{room}/{edge}.mp3"
+    return f"cues/v2/{room}/{edge}.mp3"
 
 
 async def _speak(client: httpx.AsyncClient, voice_id: str, text: str) -> bytes:
     key = _api_key()
     res = await client.post(
         _ELEVEN_TTS.format(voice_id=voice_id),
-        params={"output_format": "mp3_44100_128"},
+        params={"output_format": "mp3_44100_192"},
         headers={"xi-api-key": key, "Accept": "audio/mpeg"},
         json={
             "text": text,
             "model_id": (os.getenv("ELEVENLABS_MODEL") or _MODEL).strip() or _MODEL,
             "voice_settings": {
-                "stability": 0.68,
-                "similarity_boost": 0.72,
+                "stability": 0.78,
+                "similarity_boost": 0.68,
                 "style": 0.0,
-                "speed": 0.92,
-                "use_speaker_boost": True,
+                "speed": 0.9,
+                "use_speaker_boost": False,
             },
         },
         timeout=90.0,
