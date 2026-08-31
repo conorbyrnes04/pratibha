@@ -125,9 +125,8 @@ function StudentCommentaryInner({
     <section id="commentary" className="passage-commentary">
       <h2 className="passage-layer__label">Your commentary</h2>
       <p className="soft mt-2 text-sm leading-relaxed">
-        Say what the line does. This stays private until you offer it.
+        Say what the line does. Private until you offer it.
         {offered ? " Offered to the circle." : mine ? " Saved privately." : ""}
-        {" "}A saved reading gives the share card a holographic shine.
       </p>
       <Textarea
         className="mt-4"

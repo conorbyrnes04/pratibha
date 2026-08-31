@@ -41,7 +41,7 @@ function CircleReadingsInner({ verseId, daily }: { verseId: string; daily: boole
       <h2 className="passage-layer__label">{open ? "Circle" : "Other readings"}</h2>
       <p className="soft mt-2 text-sm leading-relaxed">
         {open
-          ? "Students write their own commentary here. One reading each. A reply is a response, not a pile-on."
+          ? "One reading each. A reply is a response, not a pile-on."
           : "Readings offered on this verse."}
         {count ? ` · ${count}` : ""}
       </p>
@@ -55,8 +55,7 @@ function CircleReadingsInner({ verseId, daily }: { verseId: string; daily: boole
         <p className="soft mt-4 text-sm">Opening the circle…</p>
       ) : offered.length === 0 ? (
         <p className="soft mt-4 text-sm leading-relaxed">
-          The circle is open. Offer a reading when the verse has sat with you.
-          {" "}
+          The circle is open.{" "}
           <Link href={`#commentary`} className="text-amber-100 underline-offset-2 hover:underline">
             Write yours
           </Link>
