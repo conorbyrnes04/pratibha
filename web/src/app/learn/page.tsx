@@ -1,63 +1,70 @@
-'use client';
+"use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { getVerses } from "@/lib/api";
-import { DailySitCard } from "@/components/learn/DailySitCard";
-import { JourneyMandala } from "@/components/learn/JourneyMandala";
-import { PassageMaturityBadge } from "@/components/learn/PassageMaturityBadge";
+import { LearnThemesHome } from "@/components/learn/LearnThemesHome";
+import { LearnThreadJourney } from "@/components/learn/LearnThreadJourney";
+import { LearnTrail } from "@/components/learn/LearnTrail";
+import { TraditionChooser } from "@/components/learn/TraditionChooser";
+import { PathStepWell } from "@/components/learn/PathStepWell";
+import { PathTree } from "@/components/learn/PathTree";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
-import { ThreadsConstellation } from "@/components/learn/ThreadsConstellation";
-import { YantraBreath } from "@/components/learn/YantraBreath";
-import { JournalPanel } from "@/components/JournalPanel";
+import { ThreadCompleteCard } from "@/components/learn/ThreadCompleteCard";
+import { ThreadContextBar } from "@/components/learn/ThreadContextBar";
+import { Section } from "@/components/ui/Section";
 import { useLearnProgress } from "@/hooks/useLearnProgress";
-import { matchStepItem, resolveById } from "@/lib/learn/passages";
-import { stepKey, trackDoneCount } from "@/lib/learn/progress";
+import { pickDailySit, stepKey, threadKey, trackDoneCount, type DailySitPick } from "@/lib/learn/progress";
 import { learnHref, parseLearnSearch } from "@/lib/learn/url";
 import {
+  LEARNING_REALMS,
   LEARNING_TRACKS,
+  PHILOSOPHICAL_TRADITIONS,
   RECOMMENDED_SPINE,
-  type LearningStepSpec,
   type LearningTrack,
 } from "@/lib/learningPaths";
-import { learnStepContextId } from "@/lib/journalStorage";
+import { beadIndex, findBead, findThread, threadsForPathStep } from "@/lib/learningThreads";
 import type { VerseItem } from "@/lib/types";
-import { passagePreview } from "@/lib/verseLayers";
-import { displayCollectionName } from "@/lib/collectionLabels";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
-function actionLabel(chatMode?: string): string {
-  if (chatMode === "practice") return "Practice with it";
-  if (chatMode === "compare") return "Compare traditions";
-  if (chatMode === "explain") return "Understand it";
-  return "Ask about it";
-}
-
-function PassageLink({ item, primary = false, backHref }: { item: VerseItem; primary?: boolean; backHref?: string }) {
-  const href = backHref
-    ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
-    : `/read/${encodeURIComponent(item._id)}`;
-  return (
-    <Link
-      href={href}
-      className={`citation-card block p-3 transition hover:border-amber-300/40 ${primary ? "" : "opacity-90"}`}
-    >
-      <p className="font-sans text-[11px] uppercase tracking-[0.16em] text-amber-200/70">
-        {displayCollectionName(item.collection)}
-        {item.section ? ` · ${item.section}` : ""}
-      </p>
-      <h5 className="mt-1 text-base leading-tight text-amber-100">{item.title || item.sutra_id || item._id}</h5>
-      {primary ? <p className="soft mt-1 line-clamp-2 text-sm leading-relaxed">{passagePreview(item)}</p> : null}
-    </Link>
-  );
-}
+type PageView = "chooser" | "trail" | "journey" | "bead" | "lineage";
 
 export default function LearnPage() {
   const router = useRouter();
-  const { progress, hydrated, toggle, resetTrack } = useLearnProgress();
+  const {
+    progress,
+    completedAt,
+    hydrated,
+    toggle,
+    toggleThread,
+    resetTrack,
+    exportProgress,
+    importProgressFromFile,
+    openImportPicker,
+    fileInputRef,
+  } = useLearnProgress();
+  const [importStatus, setImportStatus] = useState<string | null>(null);
   const [items, setItems] = useState<VerseItem[]>([]);
-  const [selectedTrackId, setSelectedTrackId] = useState(RECOMMENDED_SPINE[0]);
+  const [selectedTraditionId, setSelectedTraditionId] = useState<string | null>(null);
+  const [selectedTrackId, setSelectedTrackId] = useState<string | null>(null);
   const [openStepId, setOpenStepId] = useState<string | null>(null);
+  const [openStepTrackId, setOpenStepTrackId] = useState<string | null>(null);
+  const [activeThreadId, setActiveThreadId] = useState<string | null>(null);
+  const [activeBeadId, setActiveBeadId] = useState<string | null>(null);
+  const [threadCeremonyId, setThreadCeremonyId] = useState<string | null>(null);
+  const [resetOpen, setResetOpen] = useState(false);
+  const [skipConfirmIdx, setSkipConfirmIdx] = useState<number | null>(null);
+  const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const stepRefs = useRef<Record<string, HTMLElement | null>>({});
   const pathSectionRef = useRef<HTMLElement | null>(null);
   const pendingScrollRef = useRef<string | null>(null);
@@ -92,40 +99,71 @@ export default function LearnPage() {
     return RECOMMENDED_SPINE[RECOMMENDED_SPINE.length - 1];
   }, [progress, trackById]);
 
-  const startedTrackId = useMemo(() => {
-    for (const id of RECOMMENDED_SPINE) {
-      const t = trackById[id];
-      if (!t) continue;
-      const d = trackDoneCount(t, progress);
-      if (d > 0 && d < t.steps.length) return id;
-    }
-    return null;
-  }, [progress, trackById]);
+  const dailySit = useMemo(() => pickDailySit(progress, completedAt), [progress, completedAt]);
 
-  const heroTrack = trackById[startedTrackId || recommendedNextId] || LEARNING_TRACKS[0];
-  const heroNextStep =
-    heroTrack.steps.find((s) => !progress[stepKey(heroTrack.id, s.id)]) || heroTrack.steps[0];
-  const heroNextIndex = Math.max(0, heroTrack.steps.findIndex((s) => s.id === heroNextStep.id));
-  const heroLabel = startedTrackId
-    ? "Continue where you left off"
-    : anyProgress
-      ? "Recommended next"
-      : "Start here";
+  const activeThread = activeThreadId ? findThread(activeThreadId) : undefined;
+  const activeBead =
+    activeThread && activeBeadId ? findBead(activeThread, activeBeadId) : undefined;
+  const prevBead =
+    activeThread && activeBeadId
+      ? (() => {
+          const idx = beadIndex(activeThread, activeBeadId);
+          return idx > 0 ? activeThread.steps[idx - 1] : null;
+        })()
+      : null;
 
-  function syncUrl(trackId: string, stepId?: string | null) {
+  const view: PageView = useMemo(() => {
+    if (threadCeremonyId) return "bead";
+    if (activeThreadId && activeBeadId) return "bead";
+    if (activeThreadId) return "journey";
+    if (selectedTrackId) return "lineage";
+    if (selectedTraditionId) return "trail";
+    return "chooser";
+  }, [threadCeremonyId, activeThreadId, activeBeadId, selectedTrackId, selectedTraditionId]);
+
+  const beadPathStep = useMemo(() => {
+    if (!activeBead) return null;
+    const t = LEARNING_TRACKS.find((x) => x.id === activeBead.trackId);
+    return t?.steps.find((s) => s.id === activeBead.stepId) ?? null;
+  }, [activeBead]);
+
+  useEffect(() => {
+    return () => {
+      if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+    };
+  }, []);
+
+  function syncUrl(opts: {
+    traditionId?: string | null;
+    trackId?: string | null;
+    stepId?: string | null;
+    threadId?: string | null;
+    beadId?: string | null;
+  }) {
     if (!urlReadyRef.current) return;
-    router.replace(learnHref(trackId, stepId), { scroll: false });
+    router.replace(learnHref(opts), { scroll: false });
   }
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const { trackId, stepId } = parseLearnSearch(window.location.search);
-    if (trackId && LEARNING_TRACKS.some((x) => x.id === trackId)) {
+    const { traditionId, trackId, stepId, threadId, beadId } = parseLearnSearch(window.location.search);
+    if (threadId && findThread(threadId)) {
+      setActiveThreadId(threadId);
+      const bead = beadId && findBead(findThread(threadId)!, beadId);
+      if (bead) setActiveBeadId(bead.id);
+      else setActiveBeadId(null);
+    } else if (trackId && LEARNING_TRACKS.some((x) => x.id === trackId)) {
       setSelectedTrackId(trackId);
-    }
-    if (stepId) {
-      setOpenStepId(stepId);
-      pendingScrollRef.current = stepId;
+      if (stepId) {
+        setOpenStepId(stepId);
+        pendingScrollRef.current = stepId;
+      }
+    } else if (traditionId && PHILOSOPHICAL_TRADITIONS.some((x) => x.id === traditionId)) {
+      setSelectedTraditionId(traditionId);
+      if (stepId) {
+        setOpenStepId(stepId);
+        pendingScrollRef.current = stepId;
+      }
     }
     urlReadyRef.current = true;
   }, []);
@@ -140,30 +178,210 @@ export default function LearnPage() {
     }
   });
 
+  function clearThreadMode() {
+    setActiveThreadId(null);
+    setActiveBeadId(null);
+    setThreadCeremonyId(null);
+    if (advanceTimerRef.current) {
+      clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = null;
+    }
+  }
+
+  function goHome() {
+    clearThreadMode();
+    setSelectedTraditionId(null);
+    setSelectedTrackId(null);
+    setOpenStepId(null);
+    syncUrl({});
+  }
+
+  function selectTradition(traditionId: string) {
+    clearThreadMode();
+    setSelectedTraditionId(traditionId);
+    setSelectedTrackId(null);
+    setOpenStepId(null);
+    syncUrl({ traditionId });
+  }
+
+  function openLineageMap() {
+    clearThreadMode();
+    setSelectedTraditionId(null);
+    setSelectedTrackId(RECOMMENDED_SPINE[0]);
+    setOpenStepId(null);
+    syncUrl({ trackId: RECOMMENDED_SPINE[0] });
+  }
+
   function selectTrack(trackId: string) {
+    clearThreadMode();
+    setSelectedTraditionId(null);
     setSelectedTrackId(trackId);
     setOpenStepId(null);
-    syncUrl(trackId, null);
+    syncUrl({ trackId });
     requestAnimationFrame(() => {
       pathSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }
 
   function continueTo(trackId: string, stepId: string) {
+    clearThreadMode();
+    setSelectedTraditionId(null);
     setSelectedTrackId(trackId);
     setOpenStepId(stepId);
     pendingScrollRef.current = stepId;
-    syncUrl(trackId, stepId);
+    syncUrl({ trackId, stepId });
+  }
+
+  function openBead(threadId: string, beadId: string) {
+    const thread = findThread(threadId);
+    const bead = thread && findBead(thread, beadId);
+    if (!thread || !bead) return;
+    if (advanceTimerRef.current) {
+      clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = null;
+    }
+    setThreadCeremonyId(null);
+    setSelectedTraditionId(null);
+    setSelectedTrackId(null);
+    setOpenStepId(null);
+    setActiveThreadId(threadId);
+    setActiveBeadId(beadId);
+    syncUrl({ threadId, beadId });
+  }
+
+  function openThread(threadId: string) {
+    if (!findThread(threadId)) return;
+    setThreadCeremonyId(null);
+    setSelectedTraditionId(null);
+    setSelectedTrackId(null);
+    setOpenStepId(null);
+    setActiveThreadId(threadId);
+    setActiveBeadId(null);
+    syncUrl({ threadId });
+  }
+
+  function startThread(threadId: string) {
+    const thread = findThread(threadId);
+    const first = thread?.steps[0];
+    if (!first) return;
+    openBead(threadId, first.id);
+  }
+
+  function leaveThread() {
+    goHome();
+  }
+
+  function descendPathFromThread() {
+    if (!activeBead) {
+      goHome();
+      return;
+    }
+    const trackId = activeBead.trackId;
+    const stepId = activeBead.stepId;
+    setActiveThreadId(null);
+    setActiveBeadId(null);
+    setThreadCeremonyId(null);
+    setSelectedTraditionId(null);
+    setSelectedTrackId(trackId);
+    setOpenStepId(stepId);
+    pendingScrollRef.current = stepId;
+    syncUrl({ trackId, stepId });
+  }
+
+  function backToThreadMap() {
+    if (activeThreadId) {
+      openThread(activeThreadId);
+      return;
+    }
+    goHome();
+  }
+
+  function beginSit(sit: DailySitPick) {
+    if (sit.mode === "thread") {
+      openBead(sit.threadId, sit.beadId);
+      return;
+    }
+    continueTo(sit.track.id, sit.step.id);
+  }
+
+  function goToStepIndex(targetIdx: number, opts?: { force?: boolean }) {
+    const s = track.steps[targetIdx];
+    if (!s) return;
+    const currentOpen = openStepId ? track.steps.findIndex((x) => x.id === openStepId) : activeIndex;
+    const leavingIncomplete =
+      currentOpen >= 0 &&
+      currentOpen < targetIdx &&
+      !progress[stepKey(track.id, track.steps[currentOpen].id)];
+    if (leavingIncomplete && !opts?.force) {
+      setSkipConfirmIdx(targetIdx);
+      return;
+    }
+    setOpenStepId(s.id);
+    pendingScrollRef.current = s.id;
+    syncUrl({ trackId: track.id, stepId: s.id });
+  }
+
+  function onPathGateComplete(trackId: string, stepId: string) {
+    const key = stepKey(trackId, stepId);
+    if (!progress[key]) toggle(trackId, stepId);
+    const track = LEARNING_TRACKS.find((t) => t.id === trackId);
+    const idx = track?.steps.findIndex((x) => x.id === stepId) ?? -1;
+    const next = idx >= 0 && track ? track.steps[idx + 1] : undefined;
+    if (next) {
+      if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = setTimeout(() => {
+        setOpenStepId(next.id);
+        setOpenStepTrackId(trackId);
+        pendingScrollRef.current = stepKey(trackId, next.id);
+        advanceTimerRef.current = null;
+      }, 450);
+    } else {
+      // Last gate in track, close it
+      if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = setTimeout(() => {
+        setOpenStepId(null);
+        setOpenStepTrackId(null);
+        advanceTimerRef.current = null;
+      }, 450);
+    }
+  }
+
+  function toggleTrailGate(trackId: string, stepId: string, isOpen: boolean) {
+    if (isOpen) {
+      setOpenStepId(null);
+      setOpenStepTrackId(null);
+    } else {
+      setOpenStepId(stepId);
+      setOpenStepTrackId(trackId);
+      pendingScrollRef.current = stepKey(trackId, stepId);
+    }
+  }
+
+  function onThemeBeadComplete() {
+    if (!activeThreadId || !activeBeadId || !activeThread) return;
+    const key = threadKey(activeThreadId, activeBeadId);
+    if (!progress[key]) toggleThread(activeThreadId, activeBeadId);
+    const idx = beadIndex(activeThread, activeBeadId);
+    const next = idx >= 0 ? activeThread.steps[idx + 1] : undefined;
+    if (next) {
+      if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+      advanceTimerRef.current = setTimeout(() => {
+        openBead(activeThreadId, next.id);
+        advanceTimerRef.current = null;
+      }, 450);
+      return;
+    }
+    setThreadCeremonyId(activeThreadId);
   }
 
   function openStep(stepId: string, isOpen: boolean) {
     if (isOpen) {
       setOpenStepId("__none__");
-      syncUrl(selectedTrackId, null);
+      syncUrl({ trackId: selectedTrackId, stepId: null });
       return;
     }
     setOpenStepId(stepId);
-    syncUrl(selectedTrackId, stepId);
+    syncUrl({ trackId: selectedTrackId, stepId });
     requestAnimationFrame(() => {
       stepRefs.current[stepId]?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -177,233 +395,484 @@ export default function LearnPage() {
     openStep(stepId, openStepId === stepId);
   }
 
+  const beadDone = Boolean(
+    activeThreadId && activeBeadId && progress[threadKey(activeThreadId, activeBeadId)],
+  );
+  const isLastBead =
+    Boolean(activeThread && activeBeadId) &&
+    beadIndex(activeThread!, activeBeadId!) >= activeThread!.steps.length - 1;
+
+  // Get tradition info if viewing a trail
+  const selectedTradition = PHILOSOPHICAL_TRADITIONS.find((t) => t.id === selectedTraditionId);
+  const trailTrackIds = selectedTradition?.trackIds || [];
+
   return (
-    <main className="page-shell">
-      <p className="eyebrow">Guided study</p>
-      <h1 className="mt-3 text-5xl font-semibold leading-none tracking-[-0.04em] text-stone-100 sm:text-6xl">Paths</h1>
-      <p className="soft mt-4 max-w-2xl text-xl leading-relaxed">
-        Paths descend like a cakra — gate by gate. Threads trace one golden insight across traditions. Each step is a
-        practice, not a playlist item.
-      </p>
+    <main className="page-shell page-shell--reading">
+      <div className="section-stack">
+        {view === "chooser" ? (
+          <TraditionChooser
+            progress={progress}
+            hydrated={hydrated}
+            onSelectTradition={selectTradition}
+          />
+        ) : null}
 
-      <section className="mt-7">
-        <button
-          type="button"
-          onClick={() => continueTo(heroTrack.id, heroNextStep.id)}
-          className="resume-hero card group w-full border-amber-200/40 p-5 text-left transition hover:-translate-y-0.5 sm:p-6"
-        >
-          <p className="font-sans text-xs uppercase tracking-[0.18em] text-amber-200/80">{heroLabel}</p>
-          <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <h2 className="text-3xl leading-none text-amber-100 sm:text-4xl">{heroTrack.title}</h2>
-              <p className="soft mt-2 max-w-xl text-sm leading-relaxed">
-                {startedTrackId
-                  ? `Next · Step ${heroNextIndex + 1}: ${heroNextStep.title}`
-                  : heroTrack.focus}
-              </p>
-            </div>
-            <span className="btn-primary px-5 py-2 text-sm">{startedTrackId ? "Continue →" : "Begin →"}</span>
-          </div>
-        </button>
+        {view === "trail" && selectedTradition ? (
+          <LearnTrail
+            progress={progress}
+            hydrated={hydrated}
+            openStepKey={openStepId && openStepTrackId ? stepKey(openStepTrackId, openStepId) : null}
+            onToggleGate={toggleTrailGate}
+            onComplete={onPathGateComplete}
+            scrollToKey={pendingScrollRef.current}
+            items={items}
+            trackIds={trailTrackIds}
+            traditionTitle={selectedTradition.title}
+            onBackToChooser={goHome}
+          />
+        ) : null}
 
-        <DailySitCard
-          track={heroTrack}
-          step={heroNextStep}
-          stepIndex={heroNextIndex}
-          onBegin={() => continueTo(heroTrack.id, heroNextStep.id)}
-        />
-      </section>
+        {view === "journey" && activeThread ? (
+          <LearnThreadJourney
+            thread={activeThread}
+            progress={progress}
+            onOpenBead={openBead}
+            onBackHome={goHome}
+          />
+        ) : null}
 
-      <ThreadsConstellation progress={progress} hydrated={hydrated} onOpenStep={continueTo} />
+        {view === "bead" ? (
+          <section ref={pathSectionRef} className="learn-path scroll-mt-24">
+            {activeThreadId && activeBeadId ? (
+              <ThreadContextBar
+                threadId={activeThreadId}
+                beadId={activeBeadId}
+                progress={progress}
+                onOpenBead={openBead}
+                onLeaveThread={leaveThread}
+                onBackToThread={backToThreadMap}
+              />
+            ) : null}
 
-      <JourneyMandala
-        trackById={trackById}
-        progress={progress}
-        hydrated={hydrated}
-        selectedTrackId={selectedTrackId}
-        recommendedNextId={recommendedNextId}
-        anyProgress={hydrated && anyProgress}
-        onSelectTrack={selectTrack}
-      />
+            {threadCeremonyId ? (
+              <ThreadCompleteCard
+                threadId={threadCeremonyId}
+                progress={progress}
+                onBackToMap={goHome}
+                onTraceAnother={startThread}
+                onDescendPath={descendPathFromThread}
+                onLeaveThread={leaveThread}
+              />
+            ) : activeThread && activeBead && beadPathStep ? (
+              <article className="learn-gate border-t border-amber-200/35 py-5">
+                <p className="passage-reading__meta">Bead well</p>
+                <h2 className="library-header__title mt-2">{activeThread.title}</h2>
+                <p className="library-header__lede">{activeThread.thesis}</p>
+                <p className="mt-3 font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
+                  {activeBead.tradition} · {beadPathStep.title}
+                </p>
 
-      <section ref={pathSectionRef} className="manuscript-card relative mt-8 scroll-mt-24 overflow-hidden p-5 sm:p-7">
-        <YantraBreath className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 opacity-[0.18] sm:h-80 sm:w-80" />
-        <div className="relative flex flex-wrap items-start justify-between gap-4">
-          <div className="max-w-3xl">
-            <p className="eyebrow">Current path</p>
-            <h2 className="mt-3 text-4xl font-semibold leading-none text-amber-100 sm:text-5xl">{track.title}</h2>
-            <p className="soft mt-3 text-lg leading-relaxed">{track.outcome}</p>
-            <p className="mt-4 leading-relaxed text-stone-300">{track.arc}</p>
-            <p className="mt-3 font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
-              {track.level} · {track.estimatedSessions}
-            </p>
-          </div>
-          <button type="button" onClick={() => resetTrack(track.id, track)} className="btn-secondary px-4 py-2 text-sm">
-            Reset path
-          </button>
-        </div>
-
-        <div className="relative mt-6">
-          <div className="flex items-center justify-between font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
-            <span>Progress</span>
-            <span>{completed}/{track.steps.length} complete</span>
-          </div>
-          <div className="mt-2 h-3 rounded-full bg-white/10">
-            <div className="h-3 rounded-full bg-amber-300" style={{ width: `${pct}%` }} />
-          </div>
-        </div>
-
-        <div className="relative mt-8 space-y-5">
-          <div className="absolute bottom-8 left-6 top-8 hidden w-px bg-gradient-to-b from-transparent via-amber-200/25 to-transparent sm:block" />
-          {track.steps.map((s, idx) => {
-            const done = !!progress[stepKey(track.id, s.id)];
-            const current = idx === activeIndex && !done;
-            const isOpen = openStepId === s.id || (openStepId === null && current);
-            const item = matchStepItem(s, items);
-            const supporting = (s.supportingPassageIds || [])
-              .map((id) => resolveById(items, id))
-              .filter((v): v is VerseItem => Boolean(v));
-            const backHref = learnHref(track.id, s.id);
-            const readHref = item
-              ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
-              : `/read${s.theme ? `?theme=${encodeURIComponent(s.theme)}` : ""}`;
-            const chatHref = item
-              ? `/chat?verse_id=${encodeURIComponent(item._id)}&mode=${encodeURIComponent(s.chatMode || "question")}&q=${encodeURIComponent(s.chatPrompt)}`
-              : `/chat?q=${encodeURIComponent(s.chatPrompt)}`;
-            return (
-              <article
-                key={s.id}
-                ref={(el) => {
-                  stepRefs.current[s.id] = el;
-                }}
-                className={`relative scroll-mt-24 sm:pl-16 ${current || isOpen ? "" : "opacity-90"}`}
-              >
-                <button
-                  type="button"
-                  onClick={() => openOrUnmark(track.id, s.id, done)}
-                  className={`absolute left-0 top-1 hidden h-12 w-12 items-center justify-center rounded-full border-2 font-sans text-sm font-bold sm:flex ${
-                    done
-                      ? "border-emerald-300 bg-emerald-300 text-slate-950"
-                      : current
-                        ? "border-amber-200 bg-amber-200 text-slate-950 shadow-[0_0_0_8px_rgb(240_201_121_/_0.10)]"
-                        : "border-amber-200/30 bg-[#0b0b14] text-amber-100"
-                  }`}
-                  aria-label={done ? `Mark step ${idx + 1} incomplete` : `Open step ${idx + 1}`}
-                >
-                  {done ? "✓" : idx + 1}
-                </button>
-
-                <div className={`rounded-3xl border p-5 ${current ? "border-amber-200/60 bg-amber-100/10" : "border-amber-200/15 bg-black/10"}`}>
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <p className="font-sans text-xs uppercase tracking-[0.2em] text-amber-200/80">
-                      Step {idx + 1} {current ? "• next up" : done ? "• complete" : ""}
-                    </p>
-                    {done ? (
-                      <button
-                        type="button"
-                        onClick={() => toggle(track.id, s.id)}
-                        className="rounded-full border border-emerald-300/50 px-3 py-1 font-sans text-xs text-emerald-200"
-                      >
-                        Done · reopen
-                      </button>
-                    ) : (
-                      <button
-                        type="button"
-                        onClick={() => openStep(s.id, isOpen)}
-                        className="rounded-full border border-amber-200/30 px-3 py-1 font-sans text-xs text-amber-100"
-                      >
-                        {isOpen ? "Collapse" : "Open step"}
-                      </button>
-                    )}
+                <div className="mt-6 max-w-[var(--reading-measure)] space-y-5 border-t border-[rgb(240_201_121_/_0.14)] pt-5">
+                  <div>
+                    <p className="passage-layer__label">The move</p>
+                    <p className="mt-2 text-base leading-relaxed text-stone-100">{activeBead.move}</p>
                   </div>
+                  <div>
+                    <p className="passage-layer__label">Homology</p>
+                    <p className="mt-2 leading-relaxed text-stone-200">{activeBead.homology}</p>
+                  </div>
+                  <div>
+                    <p className="passage-layer__label">Divergence</p>
+                    <p className="mt-2 leading-relaxed text-stone-200">{activeBead.divergence}</p>
+                  </div>
+                </div>
 
-                  <button
-                    type="button"
-                    onClick={() => openStep(s.id, isOpen)}
-                    aria-expanded={isOpen}
-                    className="mt-3 block w-full text-left"
-                  >
-                    <h3 className="text-2xl leading-tight text-stone-100">{s.title}</h3>
-                    <p className="soft mt-2 text-base leading-relaxed">{s.orientation}</p>
-                    {!isOpen ? (
-                      <span className="mt-2 inline-block font-sans text-xs uppercase tracking-[0.16em] text-amber-200/70">
-                        Open step ↓
-                      </span>
-                    ) : null}
-                  </button>
+                <div className="mt-6">
+                  <h3 className="text-2xl leading-tight text-stone-100">{beadPathStep.title}</h3>
+                  <p className="soft mt-2 text-base leading-relaxed">{beadPathStep.orientation}</p>
+                </div>
 
-                  {isOpen ? (
-                    <div className="mt-4 space-y-4">
-                      <p className="reading-prose leading-relaxed text-stone-200">{s.teaching}</p>
-
-                      <div className="practice-card p-4">
-                        <p className="layer-heading">Key idea</p>
-                        <p className="mt-2 leading-relaxed text-amber-50">{s.keyIdea}</p>
-                      </div>
-
-                      {s.misconception ? (
-                        <div className="rounded-2xl border border-rose-300/25 bg-rose-300/5 p-4">
-                          <p className="font-sans text-xs uppercase tracking-[0.16em] text-rose-200/80">Common misunderstanding</p>
-                          <p className="mt-2 text-sm leading-relaxed text-stone-200">{s.misconception}</p>
-                        </div>
-                      ) : null}
-
-                      <div>
-                        <p className="layer-heading">Study these passages</p>
-                        <PassageMaturityBadge item={item} />
-                        <div className="mt-2 space-y-2">
-                          {item ? (
-                            <PassageLink item={item} primary backHref={backHref} />
-                          ) : (
-                            <p className="soft text-sm">Passage will appear once the library loads.</p>
-                          )}
-                          {supporting.map((sv) => (
-                            <PassageLink key={sv._id} item={sv} backHref={backHref} />
-                          ))}
-                        </div>
-                      </div>
-
-                      <div className="card p-4">
-                        <p className="layer-heading">Practice</p>
-                        <p className="mt-2 leading-relaxed text-stone-200">{s.practice}</p>
-                      </div>
-
-                      {item ? (
-                        <JournalPanel passage={item} prompt={s.journalPrompt} />
-                      ) : (
-                        <JournalPanel
-                          contextId={learnStepContextId(track.id, s.id)}
-                          contextTitle={`${track.title} · ${s.title}`}
-                          prompt={s.journalPrompt}
-                        />
-                      )}
-
-                      <StepIntegrationGate
-                        stepId={s.id}
-                        integration={s.integration}
-                        done={done}
-                        onComplete={() => toggle(track.id, s.id)}
-                      />
-
-                      <div className="flex flex-wrap gap-2 pt-1">
-                        <Link href={readHref} className="btn-primary px-4 py-2 text-sm">
-                          Read passage
-                        </Link>
-                        <Link href={chatHref} className="btn-secondary px-4 py-2 text-sm">
-                          {actionLabel(s.chatMode)}
-                        </Link>
-                        <Link href="/journal" className="btn-secondary px-4 py-2 text-sm">
-                          All journal notes
-                        </Link>
-                      </div>
+                <PathStepWell
+                  trackId={activeBead.trackId}
+                  trackTitle={trackById[activeBead.trackId]?.title || activeBead.trackId}
+                  step={beadPathStep}
+                  items={items}
+                  threadId={activeThreadId}
+                  beadId={activeBeadId}
+                >
+                  {prevBead ? (
+                    <div className="max-w-[var(--reading-measure)] border-t border-[rgb(240_201_121_/_0.14)] pt-4">
+                      <p className="font-sans text-xs uppercase tracking-[0.16em] text-amber-200/75">
+                        Across the theme
+                      </p>
+                      <p className="mt-2 text-sm leading-relaxed text-stone-300">
+                        Previous ({prevBead.tradition}): {prevBead.move}
+                      </p>
                     </div>
                   ) : null}
+                </PathStepWell>
+
+                <StepIntegrationGate
+                  stepId={`${activeThreadId}:${activeBeadId}`}
+                  integration={activeThread.integration}
+                  theme={{
+                    move: activeBead.move,
+                    previousTradition: prevBead?.tradition,
+                  }}
+                  done={beadDone}
+                  completeLabel={isLastBead ? "Finish theme" : "Next bead →"}
+                  onComplete={onThemeBeadComplete}
+                />
+
+                {beadDone ? (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {!isLastBead ? (
+                      <Button
+                        type="button"
+                        size="sm"
+                        onClick={() => {
+                          if (!activeBeadId) return;
+                          const idx = beadIndex(activeThread, activeBeadId);
+                          const next = activeThread.steps[idx + 1];
+                          if (next) openBead(activeThread.id, next.id);
+                        }}
+                      >
+                        Next bead →
+                      </Button>
+                    ) : (
+                      <Button type="button" size="sm" onClick={() => setThreadCeremonyId(activeThread.id)}>
+                        Finish theme
+                      </Button>
+                    )}
+                  </div>
+                ) : null}
+
+                <div className="mt-6 flex flex-wrap gap-2 border-t border-[rgb(240_201_121_/_0.1)] pt-4">
+                  <Button type="button" variant="secondary" size="sm" onClick={descendPathFromThread}>
+                    Descend this lineage
+                  </Button>
                 </div>
               </article>
-            );
-          })}
-        </div>
-      </section>
+            ) : null}
+          </section>
+        ) : null}
+
+        {view === "lineage" ? (
+          <>
+            <header className="library-header">
+              <div className="library-header__body">
+                <button
+                  type="button"
+                  onClick={goHome}
+                  className="font-sans text-[10px] uppercase tracking-[0.16em] text-amber-200/55 hover:text-amber-100"
+                >
+                  ← Themes
+                </button>
+                <p className="passage-reading__meta mt-4">Lineage</p>
+                <h1 className="library-header__title">Walk a path</h1>
+                <p className="library-header__lede">
+                  A lineage is the deep well under a bead — one tradition, gate by gate.
+                  Themes remain the primary way in.
+                </p>
+              </div>
+            </header>
+
+            <Section
+              eyebrow="The map"
+              title="Your branching path"
+              lead="Start at the root, branch into a realm, then zoom into a path and descend it gate by gate."
+            >
+              <PathTree
+                realms={LEARNING_REALMS}
+                trackById={trackById}
+                progress={progress}
+                hydrated={hydrated}
+                selectedTrackId={selectedTrackId ?? RECOMMENDED_SPINE[0]}
+                recommendedNextId={recommendedNextId}
+                anyProgress={hydrated && anyProgress}
+                onSelectTrack={selectTrack}
+                onOpenGate={continueTo}
+              />
+            </Section>
+
+            <section ref={pathSectionRef} className="learn-path scroll-mt-24">
+              <div className="relative flex flex-wrap items-start justify-between gap-4">
+                <div className="max-w-[var(--reading-measure)]">
+                  <p className="passage-reading__meta">Current path</p>
+                  <h2 className="library-header__title mt-2">{track.title}</h2>
+                  <p className="library-header__lede">{track.outcome}</p>
+                  <p className="mt-3 max-w-[var(--reading-measure)] leading-relaxed text-stone-300">{track.arc}</p>
+                  <p className="mt-3 font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
+                    {track.level} · {track.estimatedSessions}
+                  </p>
+                </div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <Button
+                    type="button"
+                    onClick={exportProgress}
+                    disabled={!hydrated}
+                    variant="secondary"
+                    size="sm"
+                    className="disabled:opacity-40"
+                  >
+                    Export progress
+                  </Button>
+                  <Button
+                    type="button"
+                    onClick={openImportPicker}
+                    disabled={!hydrated}
+                    variant="secondary"
+                    size="sm"
+                    className="disabled:opacity-40"
+                  >
+                    Import progress
+                  </Button>
+                  <Button
+                    type="button"
+                    disabled={!hydrated}
+                    variant="secondary"
+                    size="sm"
+                    className="disabled:opacity-40"
+                    onClick={() => setResetOpen(true)}
+                  >
+                    Reset path
+                  </Button>
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept="application/json,.json"
+                    className="hidden"
+                    onChange={async (e) => {
+                      const file = e.target.files?.[0];
+                      e.target.value = "";
+                      if (!file) return;
+                      try {
+                        await importProgressFromFile(file);
+                        setImportStatus("Progress imported.");
+                      } catch {
+                        setImportStatus("Could not import that file.");
+                      }
+                    }}
+                  />
+                </div>
+              </div>
+              {importStatus ? (
+                <p className="relative mt-3 font-sans text-xs text-amber-200/80" role="status">
+                  {importStatus}
+                </p>
+              ) : null}
+
+              <div className={`relative mt-6 ${hydrated ? "" : "opacity-50"}`}>
+                <div className="flex items-center justify-between font-sans text-xs uppercase tracking-[0.18em] text-stone-400">
+                  <span>Progress</span>
+                  <span>{hydrated ? `${completed}/${track.steps.length} complete` : "…"}</span>
+                </div>
+                <Progress
+                  value={hydrated ? pct : 12}
+                  className={cn(
+                    "mt-2 w-full gap-0 [&_[data-slot=progress-track]]:h-3 [&_[data-slot=progress-track]]:bg-white/10 [&_[data-slot=progress-indicator]]:bg-amber-300",
+                    !hydrated && "[&_[data-slot=progress-indicator]]:animate-pulse",
+                  )}
+                />
+              </div>
+
+              <div className="relative mt-8 space-y-5">
+                <div className="absolute bottom-8 left-6 top-8 hidden w-px bg-gradient-to-b from-transparent via-amber-200/25 to-transparent sm:block" />
+                {track.steps.map((s) => {
+                  const idx = track.steps.findIndex((x) => x.id === s.id);
+                  const done = !!progress[stepKey(track.id, s.id)];
+                  const current = idx === activeIndex && !done;
+                  const isOpen = openStepId === s.id || (openStepId === null && current);
+                  const memberships = threadsForPathStep(track.id, s.id);
+                  return (
+                    <article
+                      key={s.id}
+                      ref={(el) => {
+                        stepRefs.current[s.id] = el;
+                      }}
+                      className={`relative scroll-mt-24 sm:pl-16 ${current || isOpen ? "" : "opacity-90"}`}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => openOrUnmark(track.id, s.id, done)}
+                        className={`absolute left-0 top-1 hidden h-12 w-12 items-center justify-center rounded-full border-2 font-sans text-sm font-bold sm:flex ${
+                          done
+                            ? "border-emerald-300 bg-emerald-300 text-slate-950"
+                            : current
+                              ? "border-amber-200 bg-amber-200 text-slate-950 shadow-[0_0_0_8px_rgb(240_201_121_/_0.10)]"
+                              : "border-amber-200/30 bg-[#0b0b14] text-amber-100"
+                        }`}
+                        aria-label={done ? `Mark step ${idx + 1} incomplete` : `Open step ${idx + 1}`}
+                      >
+                        {done ? "✓" : idx + 1}
+                      </button>
+
+                      <div
+                        className={`learn-gate border-t py-5 ${
+                          current ? "border-amber-200/35" : "border-[rgb(240_201_121_/_0.12)]"
+                        }`}
+                      >
+                        <div className="flex flex-wrap items-center justify-between gap-3">
+                          <p className="font-sans text-xs uppercase tracking-[0.2em] text-amber-200/80">
+                            Step {idx + 1} {current ? "• next up" : done ? "• complete" : ""}
+                          </p>
+                          {done ? (
+                            <Button
+                              type="button"
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => toggle(track.id, s.id)}
+                              className="rounded-full border border-emerald-300/50 text-emerald-200 hover:bg-emerald-300/10 hover:text-emerald-100"
+                            >
+                              Done · reopen
+                            </Button>
+                          ) : (
+                            <Button
+                              type="button"
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => openStep(s.id, isOpen)}
+                              className="rounded-full border border-amber-200/30 text-amber-100 hover:bg-amber-200/10"
+                            >
+                              {isOpen ? "Collapse" : "Open step"}
+                            </Button>
+                          )}
+                        </div>
+
+                        <button
+                          type="button"
+                          onClick={() => openStep(s.id, isOpen)}
+                          aria-expanded={isOpen}
+                          className="mt-3 block w-full text-left"
+                        >
+                          <h3 className="text-2xl leading-tight text-stone-100">{s.title}</h3>
+                          <p className="soft mt-2 text-base leading-relaxed">{s.orientation}</p>
+                          {!isOpen ? (
+                            <span className="mt-2 inline-block font-sans text-xs uppercase tracking-[0.16em] text-amber-200/70">
+                              Open step ↓
+                            </span>
+                          ) : null}
+                        </button>
+
+                        {memberships.length > 0 ? (
+                          <div className="mt-3 flex flex-wrap items-center gap-2">
+                            <span className="font-sans text-[9px] uppercase tracking-[0.14em] text-stone-500">
+                              Also a bead on
+                            </span>
+                            {memberships.map(({ thread, bead }) => (
+                              <button
+                                key={`${thread.id}:${bead.id}`}
+                                type="button"
+                                onClick={() => openBead(thread.id, bead.id)}
+                                className="rounded-full border border-white/12 px-2.5 py-1 font-sans text-[10px] uppercase tracking-[0.12em] text-amber-200/70 transition hover:border-amber-200/35 hover:text-amber-100"
+                              >
+                                {thread.glyph} {thread.title}
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+
+                        {isOpen ? (
+                          <div>
+                            <PathStepWell
+                              trackId={track.id}
+                              trackTitle={track.title}
+                              step={s}
+                              items={items}
+                            />
+                            <StepIntegrationGate
+                              stepId={s.id}
+                              integration={s.integration}
+                              keyIdea={s.keyIdea}
+                              done={done}
+                              onComplete={() => onPathGateComplete(track.id, s.id)}
+                            />
+                            <div className="flex items-center justify-between gap-3 border-t border-white/10 pt-4">
+                              <Button
+                                type="button"
+                                variant="secondary"
+                                size="sm"
+                                disabled={idx <= 0}
+                                className="disabled:opacity-40"
+                                onClick={() => goToStepIndex(idx - 1)}
+                              >
+                                ← Previous
+                              </Button>
+                              <span className="font-sans text-[11px] uppercase tracking-[0.16em] text-stone-400">
+                                Gate {idx + 1} / {track.steps.length}
+                              </span>
+                              {idx < track.steps.length - 1 ? (
+                                <Button type="button" size="sm" onClick={() => goToStepIndex(idx + 1)}>
+                                  {done ? "Next gate →" : "Skip gate →"}
+                                </Button>
+                              ) : (
+                                <span className="font-sans text-[11px] uppercase tracking-[0.16em] text-amber-200/70">
+                                  Path end
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+            </section>
+          </>
+        ) : null}
+      </div>
+
+      <Dialog open={resetOpen} onOpenChange={setResetOpen}>
+        <DialogContent className="border border-amber-200/20 bg-[#171421] sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-xl text-amber-100">Reset path progress?</DialogTitle>
+            <DialogDescription className="soft text-base leading-relaxed">
+              Clear all gates on “{track.title}”. Theme beads stay. This cannot be undone.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="border-amber-200/10 bg-transparent">
+            <Button type="button" variant="secondary" onClick={() => setResetOpen(false)}>
+              Cancel
+            </Button>
+            <Button
+              type="button"
+              onClick={() => {
+                resetTrack(track.id, track);
+                setResetOpen(false);
+              }}
+            >
+              Reset path
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={skipConfirmIdx != null} onOpenChange={(open) => !open && setSkipConfirmIdx(null)}>
+        <DialogContent className="border border-amber-200/20 bg-[#171421] sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-xl text-amber-100">Skip this gate?</DialogTitle>
+            <DialogDescription className="soft text-base leading-relaxed">
+              Gates ripen through practice and recall. You can skip for now, but returning later will deepen the path.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="border-amber-200/10 bg-transparent">
+            <Button type="button" variant="secondary" onClick={() => setSkipConfirmIdx(null)}>
+              Stay here
+            </Button>
+            <Button
+              type="button"
+              onClick={() => {
+                const target = skipConfirmIdx;
+                setSkipConfirmIdx(null);
+                if (target != null) goToStepIndex(target, { force: true });
+              }}
+            >
+              Skip anyway
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </main>
   );
 }
