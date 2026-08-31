@@ -39,7 +39,7 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "know_yourself_ibn_arabi",
         "know_yourself_an_explanation_of_the_oneness_of_being",
     },
-    "epictetus_works": {"epictetus_works"},
+    "epictetus_works": {"epictetus_works", "epictetus_enchiridion"},
     "phaedo_plato": {"phaedo_plato", "phaedo"},
     "plotinus_enneads": {
         "plotinus_enneads",
@@ -77,6 +77,8 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
     },
     "pseudo_dionysius": {
         "pseudo_dionysius",
+        "pseudo_dionysius_the_divine_names",
+        "divine_names",
         "pseudo_dionysius_mystical_theology",
         "dionysius",
         "dionysius_the_areopagite",
@@ -122,11 +124,13 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
     },
     "parmenides_fragments": {
         "parmenides_fragments",
+        "parmenides_on_nature",
         "parmenides",
         "on_nature",
     },
     "milarepa_songs": {
         "milarepa_songs",
+        "songs_of_milarepa",
         "milarepa",
         "jetsun_kahbum",
         "jetsün_kahbum",
@@ -200,6 +204,7 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
     },
     "nagarjuna_mulamadhyamakakarika": {
         "nagarjuna_mulamadhyamakakarika",
+        "mūlamadhyamakakārikā_nāgārjuna",
         "nāgārjuna_mūlamadhyamakakārikā",
         "mulamadhyamakakarika",
         "mūlamadhyamakakārikā",
