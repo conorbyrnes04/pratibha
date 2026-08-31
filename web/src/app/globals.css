@@ -2430,7 +2430,48 @@ button.library-passage {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.4rem 0.7rem;
+  gap: 0.35rem 0.7rem;
+}
+
+.passage-layer,
+.passage-practice,
+.passage-practice--plain,
+.commentary-holo {
+  position: relative;
+}
+
+.passage-listen--layer {
+  position: absolute;
+  top: 1.05rem;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  margin: 0;
+}
+
+.passage-practice > .passage-listen--layer {
+  top: 0.95rem;
+  right: 1.05rem;
+}
+
+.passage-practice--plain > .passage-listen--layer {
+  top: 1.15rem;
+  right: 0;
+}
+
+.commentary-holo > .passage-listen--layer {
+  position: absolute;
+  top: 0.62rem;
+  right: 0.85rem;
+}
+
+.passage-layer > .passage-layer__label,
+.passage-practice > .passage-layer__label,
+.passage-practice--plain > .passage-layer__label {
+  padding-right: 2.7rem;
 }
 
 .passage-listen--layer .passage-listen__caption {
@@ -2459,68 +2500,41 @@ button.library-passage {
 }
 
 .passage-listen__btn:disabled {
-  opacity: 0.7;
+  opacity: 0.72;
   cursor: wait;
 }
 
-.passage-listen__icon {
-  display: grid;
-  place-items: center;
-  width: 2.15rem;
-  height: 2.15rem;
-  border-radius: 999px;
-  border: 1px solid rgb(216 168 74 / 0.48);
-  background:
-    radial-gradient(circle at 32% 28%, rgb(255 236 190 / 0.22), transparent 58%),
-    linear-gradient(180deg, rgb(56 42 28 / 0.92), rgb(24 18 28 / 0.96));
-  box-shadow:
-    0 1px 0 rgb(255 255 255 / 0.08) inset,
-    0 6px 16px rgb(0 0 0 / 0.28);
-  color: rgb(252 226 160);
-  transition:
-    transform 0.16s ease,
-    border-color 0.16s ease,
-    box-shadow 0.16s ease,
-    background-color 0.16s ease;
+.sumi-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  line-height: 0;
 }
 
-.passage-listen--layer .passage-listen__icon {
+.passage-listen--layer .sumi-play {
   width: 1.85rem;
   height: 1.85rem;
 }
 
-.passage-listen__icon svg {
-  width: 0.92rem;
-  height: 0.92rem;
-  margin-left: 0.08rem;
+.sumi-play .spanda-medallion {
+  width: 100%;
+  height: 100%;
 }
 
-.passage-listen__icon.is-playing svg {
-  margin-left: 0;
-  width: 0.82rem;
-  height: 0.82rem;
+.sumi-play--idle .spanda-medallion__glyph,
+.sumi-play--paused .spanda-medallion__glyph {
+  transform: translateX(8%);
 }
 
-.passage-listen__icon.is-loading svg {
-  margin-left: 0;
-  animation: passage-listen-spin 0.8s linear infinite;
+.sumi-play--loading .spanda-medallion {
+  animation: sumi-play-breathe 1.4s ease-in-out infinite;
 }
 
-.passage-listen__btn:hover .passage-listen__icon,
-.passage-listen__btn:focus-visible .passage-listen__icon {
-  border-color: rgb(240 201 121 / 0.85);
-  box-shadow:
-    0 1px 0 rgb(255 255 255 / 0.12) inset,
-    0 0 0 3px rgb(216 168 74 / 0.16),
-    0 8px 18px rgb(0 0 0 / 0.3);
-  transform: translateY(-1px);
-}
-
-.passage-listen__icon.is-playing {
-  border-color: rgb(240 201 121 / 0.9);
-  background:
-    radial-gradient(circle at 32% 28%, rgb(255 236 190 / 0.3), transparent 58%),
-    linear-gradient(180deg, rgb(92 62 28 / 0.95), rgb(36 22 18 / 0.98));
+.passage-listen__btn:hover .sumi-play .spanda-medallion__ring,
+.passage-listen__btn:focus-visible .sumi-play .spanda-medallion__ring {
+  stroke: var(--seal);
 }
 
 .passage-listen__caption {
@@ -2531,20 +2545,6 @@ button.library-passage {
   color: var(--accent-bright);
 }
 
-.passage-layer__head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.4rem 1rem;
-  max-width: var(--reading-measure);
-}
-
-.passage-layer__head .passage-layer__label,
-.passage-layer__head .commentary-holo__label {
-  margin-bottom: 0;
-}
-
 .passage-listen__error {
   margin: 0;
   width: 100%;
@@ -2553,9 +2553,21 @@ button.library-passage {
   color: rgb(252 165 165 / 0.85);
 }
 
-@keyframes passage-listen-spin {
-  to {
-    transform: rotate(360deg);
+.passage-listen--layer .passage-listen__error {
+  width: max-content;
+  max-width: 11rem;
+  text-align: right;
+}
+
+@keyframes sumi-play-breathe {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -3003,7 +3015,7 @@ button.library-passage {
   justify-content: space-between;
   gap: 0.75rem;
   width: 100%;
-  padding: 0.95rem 1.15rem 0.55rem;
+  padding: 0.95rem 2.85rem 0.55rem 1.15rem;
 }
 
 .commentary-holo__hit {
