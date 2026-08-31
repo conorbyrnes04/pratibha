@@ -71,10 +71,8 @@ export function LearnTrailReading({
         <LayerBlock layer={translationLayer} variant="plain" verseId={item._id} />
       ) : originalLayer ? null : (
         <section className="passage-layer passage-layer--translation">
-          <div className="passage-layer__head">
-            <h2 className="passage-layer__label">Translation</h2>
-            <ListenButton verseId={item._id} section="translation" variant="layer" />
-          </div>
+          <ListenButton verseId={item._id} section="translation" variant="layer" />
+          <h2 className="passage-layer__label">Translation</h2>
           <p className="reading-prose mt-4">{passagePreview(item)}</p>
         </section>
       )}

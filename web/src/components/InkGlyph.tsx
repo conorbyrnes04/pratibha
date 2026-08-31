@@ -166,6 +166,8 @@ type SpandaMedallionProps = {
   /** Optional hue passthrough (e.g. per-thread tinting); sets --thread-hue. */
   hue?: number;
   className?: string;
+  /** Safer inside a circular well — CSS mask instead of the recropped path. */
+  mask?: boolean;
 };
 
 /**
@@ -173,7 +175,14 @@ type SpandaMedallionProps = {
  * centered InkGlyph. The ring closes and glows gold only once the node has
  * "recognized itself" (pratyabhijñā) — until then it's an ash or bone arc.
  */
-export function SpandaMedallion({ glyph, state = "unmanifest", size = "md", hue, className = "" }: SpandaMedallionProps) {
+export function SpandaMedallion({
+  glyph,
+  state = "unmanifest",
+  size = "md",
+  hue,
+  className = "",
+  mask = false,
+}: SpandaMedallionProps) {
   const breathing = state === "arising" ? "spanda-breath" : "";
   const blooming = state === "recognized" ? "ink-bloom" : "";
   return (
@@ -197,7 +206,7 @@ export function SpandaMedallion({ glyph, state = "unmanifest", size = "md", hue,
           transform="rotate(-96 50 50)"
         />
       </svg>
-      <InkGlyph glyph={glyph} state={state} size={size} className="spanda-medallion__glyph" />
+      <InkGlyph glyph={glyph} state={state} size={size} className="spanda-medallion__glyph" mask={mask} />
     </span>
   );
 }

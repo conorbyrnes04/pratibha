@@ -153,12 +153,21 @@ async function playCue(
   }
 }
 
+export function reportListenError(
+  verseId: string,
+  section: ListenSection,
+  message: string,
+) {
+  emit({ verseId, section, phase: "idle", error: message });
+}
+
 export async function toggleListen(opts: {
   verseId: string;
   section: ListenSection;
   accessToken?: string | null;
+  signedIn?: boolean;
 }): Promise<void> {
-  const { verseId, section, accessToken } = opts;
+  const { verseId, section, accessToken, signedIn } = opts;
   if (snap.phase === "playing" && snap.verseId === verseId && snap.section === section) {
     speech?.pause();
     emit({ phase: "paused" });
@@ -204,7 +213,9 @@ export async function toggleListen(opts: {
     const status = err instanceof ListenApiError ? err.status : 0;
     const message =
       status === 401
-        ? "Sign in to listen."
+        ? signedIn
+          ? "Listen could not verify your session. Refresh and try again."
+          : "Sign in to listen."
         : status === 429
           ? "Listen is resting. Try again in a minute."
           : err instanceof Error

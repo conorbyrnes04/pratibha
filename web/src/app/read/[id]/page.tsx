@@ -260,10 +260,8 @@ export default function VerseDetailPage() {
 
         {practice ? (
           <section className="passage-practice--plain">
-            <div className="passage-layer__head">
-              <h2 className="passage-layer__label">Practice</h2>
-              <ListenButton verseId={item._id} section="practice" variant="layer" />
-            </div>
+            <ListenButton verseId={item._id} section="practice" variant="layer" />
+            <h2 className="passage-layer__label">Practice</h2>
             <p className="passage-practice__body">{practice}</p>
           </section>
         ) : null}

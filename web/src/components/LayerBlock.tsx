@@ -94,12 +94,10 @@ export function LayerBlock({
         : "passage-layer__label";
     return (
       <section className={shell}>
-        <div className="passage-layer__head">
-          <h2 className={labelClass}>{layer.label}</h2>
-          {listenSection && verseId ? (
-            <ListenButton verseId={verseId} section={listenSection} variant="layer" />
-          ) : null}
-        </div>
+        {listenSection && verseId ? (
+          <ListenButton verseId={verseId} section={listenSection} variant="layer" />
+        ) : null}
+        <h2 className={labelClass}>{layer.label}</h2>
         {layer.kind === "translation" && layer.layer_provenance ? (
           <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-400">
             {layer.layer_provenance}
