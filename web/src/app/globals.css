@@ -231,6 +231,11 @@ button {
   letter-spacing: 0.06em;
 }
 
+.site-dock .nav-link--current,
+.site-dock .nav-more__trigger.nav-link--current {
+  color: rgb(250 237 205 / 0.96);
+}
+
 @media (min-width: 40rem) {
   .site-dock {
     display: none;
@@ -2237,6 +2242,36 @@ select:focus-visible {
   z-index: 1;
 }
 
+/* Red Book mandala closing the passage — a clearly visible, slowly turning
+   colophon seal below the text. */
+.passage-reading__mandala {
+  margin: 4rem auto 0.5rem;
+  width: clamp(190px, 52%, 300px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+.passage-reading__mandala img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow:
+    0 0 0 1px var(--seal, #d8a84a),
+    0 0 0 7px rgba(240, 201, 121, 0.06),
+    0 0 44px rgba(240, 201, 121, 0.2),
+    0 16px 54px rgba(0, 0, 0, 0.55);
+}
+.passage-reading__mandala-seal {
+  font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--seal, #d8a84a);
+  opacity: 0.8;
+}
+
 .passage-reading__crumb {
   display: flex;
   flex-wrap: wrap;
@@ -4078,6 +4113,14 @@ select:focus-visible {
 
 .glyph-mala--complete .glyph-mala__count {
   color: rgb(240 201 121 / 0.85);
+}
+
+.auth-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.55rem;
+  height: 1.55rem;
 }
 
 .share-chip {

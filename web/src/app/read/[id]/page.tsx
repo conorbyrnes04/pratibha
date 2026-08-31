@@ -8,7 +8,7 @@ import remarkGfm from "remark-gfm";
 import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
-import { collectionArtPool } from "@/lib/collectionImages";
+import { collectionArtPool, redbookSlug, redbookSrc } from "@/lib/collectionImages";
 import {
   displayPassageLocation,
   displayPassageTitle,
@@ -203,7 +203,12 @@ export default function VerseDetailPage() {
 
   return (
     <main className="page-shell page-shell--reading">
-      <ReadingShell artSrcs={collectionArtPool(item.collection)}>
+      <ReadingShell
+        artSrcs={collectionArtPool(item.collection)}
+        mandalaSrc={
+          redbookSlug(item.collection) ? redbookSrc(redbookSlug(item.collection)!) : undefined
+        }
+      >
         <nav className="passage-reading__crumb" aria-label="Breadcrumb">
           <Link href="/read">Library</Link>
           {item.collection ? (
