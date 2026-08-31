@@ -66,10 +66,20 @@ class Settings(BaseSettings):
     NEXT_PUBLIC_CONVEX_URL: str | None = "https://giant-lapwing-264.convex.cloud"
     SUPABASE_URL: str | None = None
     SUPABASE_JWT_SECRET: str | None = None
+    # Private Listen archive (never expose this key to the browser).
+    SUPABASE_SERVICE_ROLE_KEY: str | None = None
+    LISTEN_BUCKET: str = "listen"
     # Listen (ElevenLabs). Voice rooms are selected in app/tts.py.
     ELEVENLABS_API_KEY: str | None = None
 
-    @field_validator("OPENAI_API_KEY", "GROQ_API_KEY", "OPENROUTER_API_KEY", "ELEVENLABS_API_KEY", mode="before")
+    @field_validator(
+        "OPENAI_API_KEY",
+        "GROQ_API_KEY",
+        "OPENROUTER_API_KEY",
+        "ELEVENLABS_API_KEY",
+        "SUPABASE_SERVICE_ROLE_KEY",
+        mode="before",
+    )
     @classmethod
     def normalize_keys(cls, v):
         if v is None:

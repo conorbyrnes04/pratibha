@@ -2,7 +2,7 @@ from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, Response, StreamingResponse
 from pydantic import BaseModel, field_validator
-from typing import Any, List
+from typing import Any, List, Literal
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 import asyncio
@@ -328,6 +328,7 @@ async def get_verse(sid: str):
 
 class ListenRequest(BaseModel):
     verse_id: str
+    section: Literal["translation", "commentary", "practice", "all"] = "all"
 
 
 _LISTEN_RATE_MAX = int(os.environ.get("LISTEN_RATE_MAX_PER_MIN", "8") or "8")
@@ -336,7 +337,53 @@ _listen_hits: dict[str, list[float]] = {}
 
 @app.get("/listen/status")
 async def listen_status():
-    return {"ok": True, "configured": listen_tts.configured()}
+    from . import listen_store
+
+    return {
+        "ok": True,
+        "configured": listen_tts.configured(),
+        "storage": listen_store.configured(),
+    }
+
+
+@app.get("/listen/plan")
+async def listen_plan(verse_id: str):
+    if not listen_tts.configured():
+        raise HTTPException(status_code=503, detail="Listen is not configured")
+    verse = _find_verse(verse_id)
+    if verse is None:
+        raise HTTPException(status_code=404, detail="Not found")
+    return {
+        "ok": True,
+        "room": listen_tts.voice_room_for(verse),
+        "sections": listen_tts.available_sections(verse),
+    }
+
+
+@app.get("/listen/cue/{room}/{edge}")
+async def listen_cue(
+    room: str,
+    edge: str,
+    _user: AuthUser | None = Depends(require_user_if_configured),
+):
+    if not listen_tts.configured():
+        raise HTTPException(status_code=503, detail="Listen is not configured")
+    if edge not in {"open", "close"}:
+        raise HTTPException(status_code=422, detail="Cue must be open or close")
+    try:
+        audio = await listen_tts.synthesize_cue(room, edge)
+    except Exception:
+        logger.exception("Listen cue failed")
+        raise HTTPException(status_code=502, detail="Could not make this cue")
+    return Response(
+        content=audio,
+        media_type="audio/mpeg",
+        headers={
+            "Cache-Control": "public, max-age=31536000, immutable",
+            "X-Listen-Room": room,
+            "Content-Disposition": 'inline; filename="cue.mp3"',
+        },
+    )
 
 
 @app.post("/listen")
@@ -353,7 +400,7 @@ async def listen_passage(
     if verse is None:
         raise HTTPException(status_code=404, detail="Not found")
     try:
-        audio, script = await listen_tts.synthesize(verse)
+        audio, script = await listen_tts.synthesize(verse, req.section)
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
     except Exception:
@@ -365,6 +412,7 @@ async def listen_passage(
         headers={
             "Cache-Control": "private, max-age=86400",
             "X-Listen-Room": script.room,
+            "X-Listen-Section": script.section,
             "Content-Disposition": 'inline; filename="listen.mp3"',
         },
     )

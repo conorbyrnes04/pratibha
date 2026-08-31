@@ -1,18 +1,28 @@
 "use client";
 
 import { useAuthToken } from "@convex-dev/auth/react";
-import { useEffect, useRef, useState } from "react";
-import { listenConfigured, listenPassage, ListenApiError } from "@/lib/api";
+import { useEffect, useState } from "react";
+import { listenConfigured, type ListenSection } from "@/lib/api";
+import {
+  listenSnapshot,
+  stopListen,
+  subscribeListen,
+  toggleListen,
+  type ListenSnap,
+} from "@/lib/listenSession";
 
-type Phase = "idle" | "loading" | "playing" | "paused";
-
-export function ListenButton({ verseId }: { verseId: string }) {
+export function ListenButton({
+  verseId,
+  section = "all",
+  variant = "toolbar",
+}: {
+  verseId: string;
+  section?: ListenSection;
+  variant?: "toolbar" | "layer";
+}) {
   const accessToken = useAuthToken();
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const objectUrlRef = useRef<string | null>(null);
   const [available, setAvailable] = useState(false);
-  const [phase, setPhase] = useState<Phase>("idle");
-  const [error, setError] = useState<string | null>(null);
+  const [snap, setSnap] = useState<ListenSnap>(listenSnapshot);
 
   useEffect(() => {
     let cancelled = false;
@@ -24,77 +34,39 @@ export function ListenButton({ verseId }: { verseId: string }) {
     };
   }, []);
 
-  useEffect(() => {
-    return () => {
-      audioRef.current?.pause();
-      if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
-    };
-  }, []);
+  useEffect(() => subscribeListen(() => setSnap(listenSnapshot())), []);
 
   useEffect(() => {
-    audioRef.current?.pause();
-    setPhase("idle");
-    setError(null);
-    if (objectUrlRef.current) {
-      URL.revokeObjectURL(objectUrlRef.current);
-      objectUrlRef.current = null;
-    }
-    if (audioRef.current) audioRef.current.src = "";
-  }, [verseId]);
+    if (section !== "all") return;
+    return () => stopListen();
+  }, [verseId, section]);
 
   if (!available) return null;
 
-  async function onToggle() {
-    const audio = audioRef.current;
-    if (phase === "playing" && audio) {
-      audio.pause();
-      setPhase("paused");
-      return;
-    }
-    if (phase === "paused" && audio?.src) {
-      await audio.play();
-      setPhase("playing");
-      return;
-    }
-    setError(null);
-    setPhase("loading");
-    try {
-      const { blob } = await listenPassage(verseId, accessToken);
-      if (objectUrlRef.current) URL.revokeObjectURL(objectUrlRef.current);
-      const url = URL.createObjectURL(blob);
-      objectUrlRef.current = url;
-      const player = audioRef.current ?? new Audio();
-      audioRef.current = player;
-      player.src = url;
-      player.onended = () => setPhase("idle");
-      player.onerror = () => {
-        setError("Playback failed.");
-        setPhase("idle");
-      };
-      await player.play();
-      setPhase("playing");
-    } catch (err) {
-      const status = err instanceof ListenApiError ? err.status : 0;
-      if (status === 401) {
-        setError("Sign in to listen.");
-      } else if (status === 429) {
-        setError("Listen is resting. Try again in a minute.");
-      } else {
-        setError(err instanceof Error ? err.message : "Could not speak this passage.");
-      }
-      setPhase("idle");
-    }
-  }
-
+  const mine = snap.verseId === verseId && snap.section === section;
+  const phase = mine ? snap.phase : "idle";
+  const error = mine ? snap.error : null;
   const label =
-    phase === "loading" ? "Preparing…" : phase === "playing" ? "Pause" : phase === "paused" ? "Resume" : "Listen";
+    phase === "loading"
+      ? "Preparing…"
+      : phase === "playing"
+        ? "Pause"
+        : phase === "paused"
+          ? "Resume"
+          : section === "all"
+            ? "Play all"
+            : "Listen";
 
   return (
-    <div className="passage-listen">
+    <div className={variant === "layer" ? "passage-listen passage-listen--layer" : "passage-listen"}>
       <button
         type="button"
         className="passage-reading__toggle"
-        onClick={onToggle}
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          void toggleListen({ verseId, section, accessToken });
+        }}
         disabled={phase === "loading"}
         aria-pressed={phase === "playing"}
       >

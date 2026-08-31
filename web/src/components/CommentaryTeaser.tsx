@@ -4,10 +4,12 @@ import { useEffect, useMemo, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { stripMarkdown } from "@/lib/textPreview";
+import { ListenButton } from "@/components/ListenButton";
 
 type CommentaryTeaserProps = {
   body: string;
   label?: string;
+  verseId?: string;
 };
 
 function teaserExcerpt(body: string, maxWords = 120): string {
@@ -31,7 +33,7 @@ function teaserExcerpt(body: string, maxWords = 120): string {
   return out;
 }
 
-export function CommentaryTeaser({ body, label = "Commentary" }: CommentaryTeaserProps) {
+export function CommentaryTeaser({ body, label = "Commentary", verseId }: CommentaryTeaserProps) {
   const [open, setOpen] = useState(false);
   const teaser = useMemo(() => teaserExcerpt(body), [body]);
   const needsExpand = stripMarkdown(body).trim().length > teaser.replace(/…$/, "").length + 8;
@@ -42,10 +44,17 @@ export function CommentaryTeaser({ body, label = "Commentary" }: CommentaryTease
 
   if (!body.trim()) return null;
 
+  const listen = verseId ? (
+    <ListenButton verseId={verseId} section="commentary" variant="layer" />
+  ) : null;
+
   if (!needsExpand) {
     return (
       <section className="commentary-holo commentary-holo--open" aria-label={label}>
-        <p className="commentary-holo__label">{label}</p>
+        <div className="passage-layer__head">
+          <p className="commentary-holo__label">{label}</p>
+          {listen}
+        </div>
         <div className="commentary-holo__body chat-markdown reading-prose">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{body}</ReactMarkdown>
         </div>
@@ -65,7 +74,10 @@ export function CommentaryTeaser({ body, label = "Commentary" }: CommentaryTease
         onClick={() => setOpen((v) => !v)}
       >
         <span className="commentary-holo__main">
-          <span className="commentary-holo__label">{label}</span>
+          <span className="passage-layer__head">
+            <span className="commentary-holo__label">{label}</span>
+            {listen}
+          </span>
           {!open ? (
             <span className="commentary-holo__teaser chat-markdown">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>{teaser}</ReactMarkdown>

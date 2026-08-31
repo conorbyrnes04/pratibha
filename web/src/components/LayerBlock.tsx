@@ -12,6 +12,8 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { ListenButton } from "@/components/ListenButton";
+import type { ListenSection } from "@/lib/api";
 
 /**
  * Pick the font treatment for an "Original" layer. Devanagari (or any Indic
@@ -39,6 +41,7 @@ export function LayerBlock({
   defaultCollapsed = false,
   bare = false,
   variant = "card",
+  verseId,
 }: {
   layer: PratibhaLayer;
   compact?: boolean;
@@ -51,6 +54,7 @@ export function LayerBlock({
   bare?: boolean;
   /** plain = typographic section without card chrome (study reading flow). */
   variant?: "card" | "plain";
+  verseId?: string;
 }) {
   const items = Array.isArray(layer.items) ? layer.items : [];
   const isOriginal = layer.kind === "original";
@@ -74,6 +78,11 @@ export function LayerBlock({
     );
   }
 
+  const listenSection =
+    verseId && (layer.kind === "translation" || layer.kind === "commentary" || layer.kind === "practice")
+      ? (layer.kind as ListenSection)
+      : null;
+
   if (variant === "plain") {
     const shell =
       isPractice
@@ -85,7 +94,12 @@ export function LayerBlock({
         : "passage-layer__label";
     return (
       <section className={shell}>
-        <h2 className={labelClass}>{layer.label}</h2>
+        <div className="passage-layer__head">
+          <h2 className={labelClass}>{layer.label}</h2>
+          {listenSection && verseId ? (
+            <ListenButton verseId={verseId} section={listenSection} variant="layer" />
+          ) : null}
+        </div>
         {layer.kind === "translation" && layer.layer_provenance ? (
           <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-400">
             {layer.layer_provenance}

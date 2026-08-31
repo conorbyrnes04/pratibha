@@ -68,15 +68,18 @@ export function LearnTrailReading({
       {showOriginal && originalLayer ? <LayerBlock layer={originalLayer} variant="plain" /> : null}
       {showOriginal && iastLayer ? <LayerBlock layer={iastLayer} variant="plain" /> : null}
       {translationLayer ? (
-        <LayerBlock layer={translationLayer} variant="plain" />
+        <LayerBlock layer={translationLayer} variant="plain" verseId={item._id} />
       ) : originalLayer ? null : (
         <section className="passage-layer passage-layer--translation">
-          <h2 className="passage-layer__label">Translation</h2>
+          <div className="passage-layer__head">
+            <h2 className="passage-layer__label">Translation</h2>
+            <ListenButton verseId={item._id} section="translation" variant="layer" />
+          </div>
           <p className="reading-prose mt-4">{passagePreview(item)}</p>
         </section>
       )}
-      {commentaryLayer ? <LayerBlock layer={commentaryLayer} variant="plain" /> : null}
-      {practiceLayer ? <LayerBlock layer={practiceLayer} variant="plain" /> : null}
+      {commentaryLayer ? <LayerBlock layer={commentaryLayer} variant="plain" verseId={item._id} /> : null}
+      {practiceLayer ? <LayerBlock layer={practiceLayer} variant="plain" verseId={item._id} /> : null}
     </div>
   );
 }

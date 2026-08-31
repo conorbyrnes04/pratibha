@@ -2433,6 +2433,24 @@ button.library-passage {
   gap: 0.55rem 0.85rem;
 }
 
+.passage-listen--layer {
+  gap: 0.35rem;
+}
+
+.passage-layer__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1rem;
+  max-width: var(--reading-measure);
+}
+
+.passage-layer__head .passage-layer__label,
+.passage-layer__head .commentary-holo__label {
+  margin-bottom: 0;
+}
+
 .passage-listen__error {
   margin: 0;
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;

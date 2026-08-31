@@ -248,7 +248,7 @@ export default function VerseDetailPage() {
         ) : null}
 
         {translationLayer ? (
-          <LayerBlock layer={translationLayer} variant="plain" />
+          <LayerBlock layer={translationLayer} variant="plain" verseId={item._id} />
         ) : originalLayer ? null : (
           <section className="passage-layer passage-layer--translation">
             <h2 className="passage-layer__label">Translation</h2>
@@ -256,11 +256,14 @@ export default function VerseDetailPage() {
           </section>
         )}
 
-        {commentaryBody ? <CommentaryTeaser body={commentaryBody} /> : null}
+        {commentaryBody ? <CommentaryTeaser body={commentaryBody} verseId={item._id} /> : null}
 
         {practice ? (
           <section className="passage-practice--plain">
-            <h2 className="passage-layer__label">Practice</h2>
+            <div className="passage-layer__head">
+              <h2 className="passage-layer__label">Practice</h2>
+              <ListenButton verseId={item._id} section="practice" variant="layer" />
+            </div>
             <p className="passage-practice__body">{practice}</p>
           </section>
         ) : null}

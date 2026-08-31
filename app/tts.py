@@ -1,8 +1,10 @@
 """ElevenLabs listen path — English layers only, voice room per tradition.
 
-Accent comes from a real library/account voice when one is configured or
-already in the ElevenLabs workspace. Dakota and Christian stay unmarked
-English. Original / IAST are never spoken.
+Speech is archived in object storage so a later subscription cancel keeps
+what we already generated. Dakota uses a real Dakota/Lakota/Nakota speaker
+only when one is pinned or present in the workspace — never a costume
+"Native American" accent. Christian stays unmarked English.
+Original / IAST are never spoken.
 """
 from __future__ import annotations
 
@@ -12,11 +14,11 @@ import os
 import re
 import time
 from dataclasses import dataclass
-from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 import httpx
 
+from . import listen_store
 from .config import settings
 
 logger = logging.getLogger("pratibha.tts")
@@ -24,14 +26,22 @@ logger = logging.getLogger("pratibha.tts")
 _DEFAULT_VOICE = "nPczCjzI2devNBz1zQrb"  # Brian — calm American narration
 _MODEL = "eleven_multilingual_v2"
 _MAX_CHARS = 4200
-_CACHE_DIR = Path(__file__).resolve().parents[1] / ".cache" / "tts"
 _ELEVEN_TTS = "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
 _ELEVEN_VOICES = "https://api.elevenlabs.io/v1/voices"
+_ELEVEN_SHARED = "https://api.elevenlabs.io/v1/shared-voices"
+_ELEVEN_SFX = "https://api.elevenlabs.io/v1/sound-generation"
 
 _MD_RE = re.compile(r"[*_`#>\[\]()]+")
 _WS_RE = re.compile(r"\s+")
+_COSTUME_NATIVE_RE = re.compile(
+    r"native american|indigenous accent|tribal|indian accent|first nations",
+    re.I,
+)
+_DAKOTA_SELF_RE = re.compile(r"\b(dakota|lakota|nakota|oceti\s*sakowin)\b", re.I)
 
-VoiceRoom = str  # indic | sinosphere | yoruba | hebrew | hellenic | sufi | unmarked
+ListenSection = Literal["translation", "commentary", "practice", "all"]
+SPEAKABLE_SECTIONS: tuple[ListenSection, ...] = ("translation", "commentary", "practice")
+VoiceRoom = str
 
 _ROOM_ACCENTS: dict[str, tuple[str, ...]] = {
     "indic": ("indian", "indian english", "south asian", "hindi"),
@@ -40,13 +50,14 @@ _ROOM_ACCENTS: dict[str, tuple[str, ...]] = {
     "hebrew": ("israeli", "hebrew", "jewish"),
     "hellenic": ("greek",),
     "sufi": ("persian", "iranian", "arabic", "egyptian", "levantine"),
+    "dakota": ("dakota", "lakota", "nakota"),
     "unmarked": (),
 }
 
 # Collection / work_id → room. Order matters; first match wins.
 _ROOM_PATTERNS: list[tuple[re.Pattern[str], VoiceRoom]] = [
     (re.compile(r"yoruba|johnson", re.I), "yoruba"),
-    (re.compile(r"eastman|zitkala|soul of the indian|old indian legends|dakota", re.I), "unmarked"),
+    (re.compile(r"eastman|zitkala|soul of the indian|old indian legends|dakota", re.I), "dakota"),
     (re.compile(r"ecclesiastes|qoheleth|zohar|yetzirah|kabbalah", re.I), "hebrew"),
     (re.compile(r"rumi|rūmī|ibn.?arabi|balyani|mathnaw", re.I), "sufi"),
     (
@@ -87,6 +98,42 @@ _ROOM_PATTERNS: list[tuple[re.Pattern[str], VoiceRoom]] = [
     ),
 ]
 
+# Room tone, not costume. Dakota is land and air — never flute or drum.
+_CUE_PROMPTS: dict[str, dict[str, str]] = {
+    "indic": {
+        "open": "A single soft bronze singing bowl struck once in a quiet stone shrine. Long decay. No melody, no voice, no chant.",
+        "close": "The last faint overtone of a bronze bowl fading into a still stone room. No voice.",
+    },
+    "sinosphere": {
+        "open": "A single soft wooden fish tap in an empty monastery hall. One hit, then silence. No flute, no voice.",
+        "close": "Quiet wooden hall after one tap, air settling. No instrument continues.",
+    },
+    "yoruba": {
+        "open": "One warm low calabash tone in still night air. A single note, then silence. Not a drum solo, not festive.",
+        "close": "Warm night air after one low tone has died. No percussion, no voice.",
+    },
+    "hebrew": {
+        "open": "A single quiet bronze overtone in a dry stone room. Desert stillness. No shofar, no chant, no voice.",
+        "close": "Dry stone room after one metallic tone fades. Silence.",
+    },
+    "hellenic": {
+        "open": "One quiet plucked gut string in a marble room. A single note, then stone silence. No melody.",
+        "close": "Marble room after one string has gone still.",
+    },
+    "sufi": {
+        "open": "One soft reed breath, a single note fading on a carpeted floor. No ornament, no voice.",
+        "close": "A reed tone disappearing into a quiet carpeted room.",
+    },
+    "dakota": {
+        "open": "Wind moving through dry prairie grass under an open sky. A few seconds. No flute, no drum, no voice, no melody, no stereotyped Native American music. Only land and air.",
+        "close": "Prairie wind falling still. Only air. No instrument, no voice.",
+    },
+    "unmarked": {
+        "open": "A single page turning in a quiet wooden library. Paper and wood. No organ, no church bell, no voice.",
+        "close": "A book closing softly on a wooden table. Then silence.",
+    },
+}
+
 _account_voices: list[dict[str, Any]] | None = None
 _account_voices_at = 0.0
 
@@ -97,6 +144,7 @@ class ListenScript:
     voice_id: str
     text: str
     title: str
+    section: ListenSection
 
 
 def configured() -> bool:
@@ -147,15 +195,52 @@ def voice_room_for(verse: dict[str, Any]) -> VoiceRoom:
     return "unmarked"
 
 
+def available_sections(verse: dict[str, Any]) -> list[ListenSection]:
+    return [kind for kind in SPEAKABLE_SECTIONS if _layer(verse, kind)]
+
+
 def _env_voice(room: VoiceRoom) -> str:
-    key = f"ELEVENLABS_VOICE_{room.upper()}"
-    return (os.getenv(key) or "").strip()
+    return (os.getenv(f"ELEVENLABS_VOICE_{room.upper()}") or "").strip()
+
+
+def _voice_blob(voice: dict[str, Any]) -> str:
+    labels = voice.get("labels") if isinstance(voice.get("labels"), dict) else {}
+    parts = [
+        str(voice.get("name") or ""),
+        str(voice.get("description") or ""),
+        str(labels.get("accent") or ""),
+        str(labels.get("description") or ""),
+        str(voice.get("accent") or ""),
+    ]
+    return " ".join(parts)
+
+
+def _is_respectful_dakota_voice(voice: dict[str, Any]) -> bool:
+    blob = _voice_blob(voice)
+    if not _DAKOTA_SELF_RE.search(blob):
+        return False
+    # Reject costume voices that only mention "Native American" without a nation.
+    if _COSTUME_NATIVE_RE.search(blob) and not _DAKOTA_SELF_RE.search(
+        str(voice.get("name") or "") + " " + str(voice.get("description") or "")
+    ):
+        return False
+    return True
 
 
 def _match_account_voice(room: VoiceRoom) -> str:
+    if room == "dakota":
+        for voice in _account_voices or []:
+            if not _is_respectful_dakota_voice(voice):
+                continue
+            vid = str(voice.get("voice_id") or "").strip()
+            if vid:
+                return vid
+        return ""
     accents = _ROOM_ACCENTS.get(room) or ()
     if not accents:
         return ""
+    preferred: list[str] = []
+    fallback: list[str] = []
     for voice in _account_voices or []:
         labels = voice.get("labels") if isinstance(voice.get("labels"), dict) else {}
         accent = str(labels.get("accent") or "").strip().lower()
@@ -166,19 +251,11 @@ def _match_account_voice(room: VoiceRoom) -> str:
         vid = str(voice.get("voice_id") or "").strip()
         if not vid:
             continue
-        if use and use not in {"narration", "audiobook", "narrative", "meditation", ""}:
-            # Still usable; prefer narration when several match.
-            continue
-        return vid
-    for voice in _account_voices or []:
-        labels = voice.get("labels") if isinstance(voice.get("labels"), dict) else {}
-        accent = str(labels.get("accent") or "").strip().lower()
-        name = str(voice.get("name") or "").lower()
-        if any(token in accent or token in name for token in accents):
-            vid = str(voice.get("voice_id") or "").strip()
-            if vid:
-                return vid
-    return ""
+        if use in {"narration", "audiobook", "narrative", "meditation", ""}:
+            preferred.append(vid)
+        else:
+            fallback.append(vid)
+    return (preferred or fallback or [""])[0]
 
 
 async def _refresh_account_voices(client: httpx.AsyncClient) -> None:
@@ -213,23 +290,77 @@ def _unmarked_voice() -> str:
     )
 
 
+async def search_dakota_library(client: httpx.AsyncClient) -> list[dict[str, str]]:
+    """Shared-library search. Only keep voices that name Dakota/Lakota/Nakota."""
+    found: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for query in ("dakota", "lakota", "nakota", "oceti sakowin"):
+        try:
+            res = await client.get(
+                _ELEVEN_SHARED,
+                headers={"xi-api-key": _api_key()},
+                params={"page_size": 20, "search": query, "language": "en"},
+                timeout=20.0,
+            )
+        except Exception:
+            continue
+        if res.status_code >= 400:
+            continue
+        data = res.json() if res.headers.get("content-type", "").startswith("application/json") else {}
+        for voice in (data.get("voices") if isinstance(data, dict) else None) or []:
+            if not isinstance(voice, dict) or not _is_respectful_dakota_voice(voice):
+                continue
+            vid = str(voice.get("voice_id") or "").strip()
+            if not vid or vid in seen:
+                continue
+            seen.add(vid)
+            found.append(
+                {
+                    "voice_id": vid,
+                    "name": str(voice.get("name") or ""),
+                    "accent": str(voice.get("accent") or ""),
+                    "description": str(voice.get("description") or "")[:240],
+                }
+            )
+    return found
+
+
 async def resolve_voice(room: VoiceRoom, client: httpx.AsyncClient) -> str:
     pinned = _env_voice(room)
     if pinned:
         return pinned
-    if room != "unmarked":
+    if room not in {"unmarked", "dakota"}:
         await _refresh_account_voices(client)
         matched = _match_account_voice(room)
         if matched:
             return matched
+    if room == "dakota":
+        await _refresh_account_voices(client)
+        matched = _match_account_voice(room)
+        if matched:
+            return matched
+        # Do not invent an accent. Fall through to unmarked English.
     return _unmarked_voice()
 
 
-def build_script(verse: dict[str, Any]) -> str:
+def _clip(text: str) -> str:
+    if len(text) <= _MAX_CHARS:
+        return text
+    return text[:_MAX_CHARS].rsplit(" ", 1)[0].rstrip() + "."
+
+
+def build_script(verse: dict[str, Any], section: ListenSection = "all") -> str:
     title = _strip_md(str(verse.get("title") or verse.get("sutra_id") or ""))
     translation = _layer(verse, "translation")
     commentary = _layer(verse, "commentary")
     practice = _layer(verse, "practice")
+    if section == "translation":
+        parts = [p for p in (f"{title}." if title else "", translation) if p]
+        return _clip("\n\n".join(parts).strip())
+    if section == "commentary":
+        return _clip(commentary)
+    if section == "practice":
+        return _clip(practice)
     parts: list[str] = []
     if title:
         parts.append(title + ".")
@@ -239,57 +370,93 @@ def build_script(verse: dict[str, Any]) -> str:
         parts.extend(["Commentary.", commentary])
     if practice:
         parts.extend(["The practice.", practice])
-    text = "\n\n".join(parts).strip()
-    if len(text) > _MAX_CHARS:
-        text = text[:_MAX_CHARS].rsplit(" ", 1)[0].rstrip() + "."
-    return text
+    return _clip("\n\n".join(parts).strip())
 
 
-def _cache_path(voice_id: str, text: str) -> Path:
+def _speech_key(voice_id: str, text: str) -> str:
     digest = hashlib.sha256(f"{_MODEL}\0{voice_id}\0{text}".encode("utf-8")).hexdigest()
-    return _CACHE_DIR / f"{digest}.mp3"
+    return f"speech/{voice_id}/{digest}.mp3"
 
 
-async def synthesize(verse: dict[str, Any]) -> tuple[bytes, ListenScript]:
+def _cue_key(room: VoiceRoom, edge: str) -> str:
+    return f"cues/{room}/{edge}.mp3"
+
+
+async def _speak(client: httpx.AsyncClient, voice_id: str, text: str) -> bytes:
+    key = _api_key()
+    res = await client.post(
+        _ELEVEN_TTS.format(voice_id=voice_id),
+        params={"output_format": "mp3_44100_128"},
+        headers={"xi-api-key": key, "Accept": "audio/mpeg"},
+        json={
+            "text": text,
+            "model_id": (os.getenv("ELEVENLABS_MODEL") or _MODEL).strip() or _MODEL,
+            "voice_settings": {
+                "stability": 0.68,
+                "similarity_boost": 0.72,
+                "style": 0.0,
+                "speed": 0.92,
+                "use_speaker_boost": True,
+            },
+        },
+        timeout=90.0,
+    )
+    if res.status_code >= 400:
+        logger.info("ElevenLabs TTS failed: %s %s", res.status_code, res.text[:240])
+        raise RuntimeError(f"ElevenLabs returned {res.status_code}")
+    if not res.content:
+        raise RuntimeError("ElevenLabs returned empty audio")
+    return res.content
+
+
+async def synthesize_cue(room: VoiceRoom, edge: str) -> bytes:
+    if edge not in {"open", "close"}:
+        raise ValueError("Cue edge must be open or close")
+    safe_room = room if room in _CUE_PROMPTS else "unmarked"
+    key = _cue_key(safe_room, edge)
+    cached = await listen_store.get_object(key)
+    if cached:
+        return cached
+    prompt = _CUE_PROMPTS[safe_room][edge]
+    api_key = _api_key()
+    if not api_key:
+        raise RuntimeError("ElevenLabs is not configured")
+    async with httpx.AsyncClient() as client:
+        res = await client.post(
+            _ELEVEN_SFX,
+            headers={"xi-api-key": api_key, "Accept": "audio/mpeg"},
+            json={
+                "text": prompt,
+                "duration_seconds": 2.4,
+                "prompt_influence": 0.35,
+            },
+            timeout=60.0,
+        )
+        if res.status_code >= 400 or not res.content:
+            logger.info("ElevenLabs SFX failed: %s %s", res.status_code, res.text[:200])
+            raise RuntimeError(f"ElevenLabs cue returned {res.status_code}")
+        audio = res.content
+    await listen_store.put_object(key, audio)
+    return audio
+
+
+async def synthesize(verse: dict[str, Any], section: ListenSection = "all") -> tuple[bytes, ListenScript]:
     key = _api_key()
     if not key:
         raise RuntimeError("ElevenLabs is not configured")
+    if section not in {"translation", "commentary", "practice", "all"}:
+        raise ValueError("Unknown listen section")
     room = voice_room_for(verse)
-    text = build_script(verse)
+    text = build_script(verse, section)
     if not text:
         raise ValueError("Nothing to speak on this passage")
     async with httpx.AsyncClient() as client:
         voice_id = await resolve_voice(room, client)
-        cached = _cache_path(voice_id, text)
-        if cached.is_file():
-            return cached.read_bytes(), ListenScript(room, voice_id, text, str(verse.get("title") or ""))
-        url = _ELEVEN_TTS.format(voice_id=voice_id)
-        res = await client.post(
-            url,
-            params={"output_format": "mp3_44100_128"},
-            headers={"xi-api-key": key, "Accept": "audio/mpeg"},
-            json={
-                "text": text,
-                "model_id": (os.getenv("ELEVENLABS_MODEL") or _MODEL).strip() or _MODEL,
-                "voice_settings": {
-                    "stability": 0.68,
-                    "similarity_boost": 0.72,
-                    "style": 0.0,
-                    "speed": 0.92,
-                    "use_speaker_boost": True,
-                },
-            },
-            timeout=90.0,
-        )
-        if res.status_code >= 400:
-            logger.info("ElevenLabs TTS failed: %s %s", res.status_code, res.text[:240])
-            raise RuntimeError(f"ElevenLabs returned {res.status_code}")
-        audio = res.content
-        if not audio:
-            raise RuntimeError("ElevenLabs returned empty audio")
-        try:
-            cached.parent.mkdir(parents=True, exist_ok=True)
-            cached.write_bytes(audio)
-        except OSError:
-            logger.debug("TTS cache write failed", exc_info=True)
-        return audio, ListenScript(room, voice_id, text, str(verse.get("title") or ""))
+        store_key = _speech_key(voice_id, text)
+        cached = await listen_store.get_object(store_key)
+        title = str(verse.get("title") or "")
+        if cached:
+            return cached, ListenScript(room, voice_id, text, title, section)
+        audio = await _speak(client, voice_id, text)
+        await listen_store.put_object(store_key, audio)
+        return audio, ListenScript(room, voice_id, text, title, section)

@@ -180,6 +180,13 @@ export async function getRelatedVerses(id: string, limit = 6): Promise<VerseItem
   return Array.isArray(data?.items) ? (data.items as VerseItem[]) : [];
 }
 
+export type ListenSection = "translation" | "commentary" | "practice" | "all";
+
+export type ListenPlan = {
+  room: string;
+  sections: Array<Exclude<ListenSection, "all">>;
+};
+
 export async function listenConfigured(): Promise<boolean> {
   try {
     const res = await fetch(`${API_BASE}/listen/status`, { cache: "no-store" });
@@ -188,6 +195,24 @@ export async function listenConfigured(): Promise<boolean> {
     return Boolean(data?.configured);
   } catch {
     return false;
+  }
+}
+
+export async function listenPlan(verseId: string): Promise<ListenPlan | null> {
+  try {
+    const res = await fetch(
+      `${API_BASE}/listen/plan?verse_id=${encodeURIComponent(verseId)}`,
+      { cache: "no-store" },
+    );
+    if (!res.ok) return null;
+    const data = (await res.json()) as { room?: string; sections?: string[] };
+    const sections = (data.sections || []).filter(
+      (s): s is Exclude<ListenSection, "all"> =>
+        s === "translation" || s === "commentary" || s === "practice",
+    );
+    return { room: data.room || "unmarked", sections };
+  } catch {
+    return null;
   }
 }
 
@@ -201,17 +226,41 @@ export class ListenApiError extends Error {
   }
 }
 
+function listenHeaders(accessToken?: string | null): Record<string, string> {
+  const headers: Record<string, string> = {};
+  if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+  return headers;
+}
+
+export async function listenCue(
+  room: string,
+  edge: "open" | "close",
+  accessToken?: string | null,
+): Promise<Blob> {
+  const res = await fetch(
+    `${API_BASE}/listen/cue/${encodeURIComponent(room)}/${edge}`,
+    { cache: "force-cache", headers: listenHeaders(accessToken) },
+  );
+  if (!res.ok) {
+    throw new ListenApiError("Could not load this cue.", res.status);
+  }
+  return res.blob();
+}
+
 export async function listenPassage(
   verseId: string,
   accessToken?: string | null,
+  section: ListenSection = "all",
 ): Promise<{ blob: Blob; room: string }> {
-  const headers: Record<string, string> = { "Content-Type": "application/json" };
-  if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+  const headers: Record<string, string> = {
+    ...listenHeaders(accessToken),
+    "Content-Type": "application/json",
+  };
   const res = await fetch(`${API_BASE}/listen`, {
     method: "POST",
     cache: "no-store",
     headers,
-    body: JSON.stringify({ verse_id: verseId }),
+    body: JSON.stringify({ verse_id: verseId, section }),
   });
   if (!res.ok) {
     let detail = "Could not speak this passage.";
