@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { createPortal, flushSync } from "react-dom";
 import Link from "next/link";
 import { toBlob } from "html-to-image";
 import { toast } from "sonner";
@@ -20,12 +21,16 @@ import {
   SHARE_MARK_GROUPS,
   SHARE_INKS,
   SHARE_TEXT_MODES,
+  SHARE_ASPECT_RATIOS,
+  SHARE_SOCIAL,
   folioCandidates,
   nextFolioLine,
   pickFolioLine,
   clipShareText,
   shareCaption,
   sharePagePath,
+  tweetIntentUrl,
+  whatsappIntentUrl,
   verseShareMark,
   isShareForceMark,
   isShareInk,
@@ -34,7 +39,9 @@ import {
   type ShareInk,
   type ShareTextMode,
   type ShareAspectRatio,
+  type ShareSocialId,
 } from "@/lib/shareCard";
+import { SHARE_DEST_ICONS } from "@/components/ShareDestIcons";
 import { ShareCard } from "@/components/ShareCard";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -252,28 +259,46 @@ function ShareComposerInner({
   async function pngBlob(): Promise<Blob> {
     const wrap = exportRef.current || cardRef.current;
     if (!wrap) throw new Error("Could not render the page.");
-    const node = (wrap.querySelector(".share-card") as HTMLElement | null) || wrap;
-    await document.fonts.ready.catch(() => undefined);
+    await Promise.race([
+      document.fonts.ready.then(() => undefined).catch(() => undefined),
+      new Promise<void>((resolve) => window.setTimeout(resolve, 400)),
+    ]);
+    const readyUntil = Date.now() + 500;
+    while (Date.now() < readyUntil) {
+      const card = wrap.querySelector(".share-card") as HTMLElement | null;
+      const markReady = Boolean(wrap.querySelector(".share-card__glyph svg"));
+      if (card && card.offsetWidth > 8 && markReady) break;
+      await new Promise((resolve) => window.setTimeout(resolve, 40));
+    }
     await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    const node = (wrap.querySelector(".share-card") as HTMLElement | null) || wrap;
     const width = Math.max(1, Math.round(node.offsetWidth));
     const height = Math.max(1, Math.round(node.offsetHeight));
-    const blob = await toBlob(node, {
-      pixelRatio: 3,
-      cacheBust: true,
-      backgroundColor: "#0a0a0f",
-      width,
-      height,
-      style: {
-        transform: "none",
-        transformOrigin: "center top",
-        width: `${width}px`,
-        height: `${height}px`,
-        margin: "0",
-        left: "0",
-        top: "0",
-        opacity: "1",
-      },
-    });
+    if (width < 8 || height < 8) throw new Error("Could not render the page.");
+    const blob = await Promise.race([
+      toBlob(node, {
+        pixelRatio: 2,
+        cacheBust: false,
+        skipFonts: true,
+        backgroundColor: "#0a0a0f",
+        width,
+        height,
+        filter: (el) => !(el instanceof Element && el.classList.contains("share-card__foil")),
+        style: {
+          transform: "none",
+          transformOrigin: "center top",
+          width: `${width}px`,
+          height: `${height}px`,
+          margin: "0",
+          left: "0",
+          top: "0",
+          opacity: "1",
+        },
+      }),
+      new Promise<null>((_, reject) => {
+        window.setTimeout(() => reject(new Error("Could not render the page.")), 8000);
+      }),
+    ]);
     if (!blob) throw new Error("Could not render the page.");
     return blob;
   }
@@ -318,14 +343,22 @@ function ShareComposerInner({
     }
   }
 
-  async function shareFolio() {
+  function destHint(dest?: ShareSocialId) {
+    if (dest === "instagram_story") return "Add it to your Instagram story.";
+    if (dest === "instagram_post") return "Add it to an Instagram post.";
+    if (dest === "tiktok") return "Add it to TikTok.";
+    if (dest === "signal") return "Attach it in Signal.";
+    return "Attach it wherever you post.";
+  }
+
+  async function handOffFolio(dest?: ShareSocialId) {
     recordPractice(`share:${item._id}`);
     refreshUnlocks();
-    setBusy("share");
+    setBusy(dest ?? "share");
     try {
       const blob = await pngBlob();
       const file = new File([blob], `pratibha-${item._id}.png`, { type: "image/png" });
-      const { caption } = captionAndUrl();
+      const { caption, pageUrl } = captionAndUrl();
       void navigator.clipboard.writeText(caption).catch(() => {});
       if (navigator.share) {
         try {
@@ -343,13 +376,40 @@ function ShareComposerInner({
         }
       }
       downloadBlob(blob, file.name);
-      toast.success("Image saved. Caption copied — attach it wherever you post.");
+      if (dest === "x") {
+        window.open(tweetIntentUrl(caption, pageUrl), "_blank", "noopener,noreferrer");
+        toast.success("Image saved. X opened with the caption.");
+        return;
+      }
+      if (dest === "whatsapp") {
+        window.open(whatsappIntentUrl(caption), "_blank", "noopener,noreferrer");
+        toast.success("Image saved. WhatsApp opened with the caption.");
+        return;
+      }
+      toast.success(`Image saved. Caption copied — ${destHint(dest)}`);
     } catch (err) {
       if (err instanceof Error && err.name === "AbortError") return;
       toast.error(friendlyShareError(err, "Could not share the folio."));
     } finally {
       setBusy(null);
     }
+  }
+
+  async function shareFolio() {
+    await handOffFolio();
+  }
+
+  async function shareTo(dest: ShareSocialId) {
+    const next: ShareAspectRatio | undefined =
+      dest === "instagram_story" || dest === "tiktok"
+        ? "story"
+        : dest === "instagram_post"
+          ? "post"
+          : undefined;
+    if (next && next !== aspectRatio) {
+      flushSync(() => setAspectRatio(next));
+    }
+    await handOffFolio(dest);
   }
 
   async function copyLink() {
@@ -484,10 +544,15 @@ function ShareComposerInner({
               />
             </div>
           </div>
-          <div className="share-folio-studio__controls space-y-6">
+          <div className="share-folio-send">
             <fieldset>
-              <legend className="passage-layer__label mb-3">Send to</legend>
-              <div className="flex flex-wrap gap-2">
+              <legend className="passage-layer__label">Send</legend>
+              <p className="soft mb-3 text-sm leading-relaxed">
+                {canOsShare
+                  ? "Share opens the system sheet — Instagram, WhatsApp, Messages, whatever is on this phone."
+                  : "Save the image, then attach it wherever you post. Caption is copied with it."}
+              </p>
+              <div className="flex flex-nowrap gap-1.5 overflow-x-auto">
                 {CONVEX_ENABLED ? (
                   user ? (
                     <button
@@ -497,7 +562,7 @@ function ShareComposerInner({
                       onClick={() => void keepCard()}
                     >
                       <BookMarked />
-                      {busy === "keep" ? "…" : inManuscript ? "Update manuscript" : "Keep in manuscript"}
+                      {busy === "keep" ? "…" : inManuscript ? "Update" : "Keep"}
                     </button>
                   ) : (
                     <Link href={`/login?next=/read/${encodeURIComponent(item._id)}`} className="share-dest share-dest--first">
@@ -511,22 +576,68 @@ function ShareComposerInner({
                     Manuscript
                   </Link>
                 )}
+                <button
+                  type="button"
+                  className="share-dest"
+                  disabled={busy !== null}
+                  onClick={() => void shareFolio()}
+                >
+                  <Share2 />
+                  {busy === "share" ? "…" : "Share"}
+                </button>
+                <button
+                  type="button"
+                  className="share-dest"
+                  disabled={busy !== null}
+                  onClick={() => void saveImage()}
+                >
+                  <Download />
+                  {busy === "save" ? "…" : "Save"}
+                </button>
+                <button type="button" className="share-dest" onClick={() => void copyLink()}>
+                  <Copy />
+                  Copy
+                </button>
+              </div>
+              <div className="mt-2 flex flex-nowrap gap-1.5 overflow-x-auto">
                 {SHARE_SOCIAL.map((dest) => {
                   const Icon = SHARE_DEST_ICONS[dest.id];
                   return (
                     <button
                       key={dest.id}
                       type="button"
-                      className="share-dest"
+                      className="share-dest share-dest--brand"
                       disabled={busy !== null}
                       onClick={() => void shareTo(dest.id)}
                       aria-label={dest.label}
+                      title={dest.label}
                     >
                       <Icon />
                       <span>{busy === dest.id ? "…" : dest.label}</span>
                     </button>
                   );
                 })}
+              </div>
+            </fieldset>
+          </div>
+          <div className="share-folio-studio__controls space-y-6">
+            <fieldset>
+              <legend className="passage-layer__label mb-3">Format</legend>
+              <p className="soft mb-3 text-sm leading-relaxed">
+                Shape the card for a feed post or a full-screen story. Then share or save the image.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {(Object.keys(SHARE_ASPECT_RATIOS) as ShareAspectRatio[]).map((key) => (
+                  <button
+                    key={key}
+                    type="button"
+                    className={`share-chip ${aspectRatio === key ? "share-chip--on" : ""}`}
+                    onClick={() => setAspectRatio(key)}
+                    aria-pressed={aspectRatio === key}
+                  >
+                    {SHARE_ASPECT_RATIOS[key].label}
+                  </button>
+                ))}
               </div>
             </fieldset>
             <fieldset id="share-keep">
@@ -693,32 +804,26 @@ function ShareComposerInner({
                   Shuffle line
                 </Button>
               ) : null}
-              <Button
-                type="button"
-                size="sm"
-                disabled={busy !== null}
-                onClick={() => void shareMore()}
-              >
-                {busy === "more" ? "Sharing…" : "Share folio"}
-              </Button>
-              <Button type="button" size="sm" variant="secondary" onClick={() => void copyLink()}>
-                Copy link
-              </Button>
-              {CONVEX_ENABLED ? (
-                <Button
-                  type="button"
-                  size="sm"
-                  variant="secondary"
-                  disabled={busy !== null}
-                  onClick={() => void keepCard()}
-                >
-                  <BookMarked />
-                  {busy === "keep" ? "…" : inManuscript ? "Update manuscript" : "Save to manuscript"}
-                </Button>
-              ) : null}
             </div>
           </div>
         </div>
+        {sheetOpen
+          ? createPortal(
+              <div ref={exportRef} className="share-card-export" aria-hidden>
+                <ShareCard
+                  mark={mark}
+                  ink={ink}
+                  textMode={displayMode}
+                  copy={displayCopy}
+                  fillWindow={Boolean(picked)}
+                  aspectRatio={aspectRatio}
+                  holographic={holographic && earnedHolo}
+                  flat
+                />
+              </div>,
+              document.body,
+            )
+          : null}
       </SheetContent>
     </Sheet>
   );

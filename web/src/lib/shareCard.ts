@@ -125,8 +125,8 @@ export const SHARE_TEXT_MODES: { id: ShareTextMode; label: string }[] = [
 export type ShareAspectRatio = "post" | "story";
 
 export const SHARE_ASPECT_RATIOS = {
-  post: { width: 1080, height: 1350, ratio: "1080 / 1350" },
-  story: { width: 1080, height: 1920, ratio: "1080 / 1920" },
+  post: { width: 1080, height: 1350, ratio: "1080 / 1350", label: "Post" },
+  story: { width: 1080, height: 1920, ratio: "1080 / 1920", label: "Story" },
 } as const;
 
 export type ShareCardOptions = {

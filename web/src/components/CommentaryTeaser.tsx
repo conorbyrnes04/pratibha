@@ -47,49 +47,43 @@ export function CommentaryTeaser({ body, label = "Commentary", verseId }: Commen
   const listen = verseId ? (
     <ListenButton verseId={verseId} section="commentary" variant="layer" />
   ) : null;
-
-  if (!needsExpand) {
-    return (
-      <section className="commentary-holo commentary-holo--open" aria-label={label}>
-        <div className="passage-layer__head">
-          <p className="commentary-holo__label">{label}</p>
-          {listen}
-        </div>
-        <div className="commentary-holo__body chat-markdown reading-prose">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{body}</ReactMarkdown>
-        </div>
-      </section>
-    );
-  }
+  const showBody = !needsExpand || open;
 
   return (
     <section
-      className={`commentary-holo${open ? " commentary-holo--open" : ""}`}
+      className={`commentary-holo${showBody ? " commentary-holo--open" : ""}`}
       aria-label={label}
     >
-      <button
-        type="button"
-        className="commentary-holo__hit"
-        aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
-      >
-        <span className="commentary-holo__main">
-          <span className="passage-layer__head">
-            <span className="commentary-holo__label">{label}</span>
-            {listen}
+      {listen}
+      <div className="commentary-holo__header">
+        <p className="commentary-holo__label">{label}</p>
+      </div>
+      {needsExpand && !open ? (
+        <button
+          type="button"
+          className="commentary-holo__hit"
+          aria-expanded={false}
+          onClick={() => setOpen(true)}
+        >
+          <span className="commentary-holo__teaser chat-markdown">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{teaser}</ReactMarkdown>
           </span>
-          {!open ? (
-            <span className="commentary-holo__teaser chat-markdown">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{teaser}</ReactMarkdown>
-            </span>
-          ) : null}
-        </span>
-        <span className="commentary-holo__affordance">{open ? "Collapse" : "Continue"}</span>
-      </button>
-      {open ? (
+          <span className="commentary-holo__affordance">Continue</span>
+        </button>
+      ) : (
         <div className="commentary-holo__body chat-markdown reading-prose">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{body}</ReactMarkdown>
         </div>
+      )}
+      {needsExpand && open ? (
+        <button
+          type="button"
+          className="commentary-holo__collapse"
+          aria-expanded
+          onClick={() => setOpen(false)}
+        >
+          Collapse
+        </button>
       ) : null}
     </section>
   );
