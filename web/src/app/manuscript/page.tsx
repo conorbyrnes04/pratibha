@@ -101,7 +101,7 @@ function ManuscriptEditor() {
     <main className="page-shell page-shell--reading">
       <header className="passage-reading__header">
         <p className="passage-reading__meta">Your manuscript</p>
-        <h1 className="passage-reading__title">{title || "A small book of verses"}</h1>
+        <h1 className="passage-reading__title">{title || "My Manuscript"}</h1>
         <p className="passage-reading__deck">
           Twelve to forty passages you actually sit with. Private until you share the link.
         </p>
@@ -152,12 +152,34 @@ function ManuscriptEditor() {
           {manuscript?.entries.length ? ` · ${manuscript.entries.length}` : ""}
         </h2>
         {!manuscript || manuscript.entries.length === 0 ? (
-          <p className="soft mt-4 text-sm leading-relaxed">
-            Nothing here yet. Open a passage and choose Add to manuscript.
-          </p>
+          <div className="soft mt-4 space-y-4 text-sm leading-relaxed">
+            <p className="text-base text-stone-200">Your manuscript is empty. Here's how to begin:</p>
+            <ol className="ml-5 list-decimal space-y-2 text-stone-300">
+              <li>
+                <Link href="/read" className="text-amber-100 underline decoration-amber-200/30">
+                  Browse the Library
+                </Link>{" "}
+                and find a passage that speaks to you
+              </li>
+              <li>
+                Open the passage and click the <span className="text-amber-100">"Add to manuscript"</span> button
+              </li>
+              <li>
+                Repeat until you have 12–40 verses that form a coherent teaching or theme
+              </li>
+              <li>
+                Write brief margin notes for each verse (optional but recommended)
+              </li>
+              <li>
+                When ready, make it public and share the link with others
+              </li>
+            </ol>
+            <p className="border-l-2 border-amber-200/20 pl-4 pt-2 italic text-stone-400">
+              "A manuscript is a small book of verses you actually sit with — not an archive, but a living teaching."
+            </p>
+          </div>
         ) : (
-          <ol className="mt-6 space-y-8">
-            {manuscript.entries.map((entry, index) => (
+          <ol className="mt-6 space-y-8">{manuscript.entries.map((entry, index) => (
               <li key={entry.verseId}>
                 <p className="font-sans text-xs uppercase tracking-[0.16em] text-stone-400">
                   {index + 1}
