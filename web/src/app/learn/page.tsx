@@ -6,6 +6,7 @@ import { getVerses } from "@/lib/api";
 import { LearnThemesHome } from "@/components/learn/LearnThemesHome";
 import { LearnThreadJourney } from "@/components/learn/LearnThreadJourney";
 import { LearnTrail } from "@/components/learn/LearnTrail";
+import { TraditionChooser } from "@/components/learn/TraditionChooser";
 import { PathStepWell } from "@/components/learn/PathStepWell";
 import { PathTree } from "@/components/learn/PathTree";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
@@ -18,6 +19,7 @@ import { learnHref, parseLearnSearch } from "@/lib/learn/url";
 import {
   LEARNING_REALMS,
   LEARNING_TRACKS,
+  PHILOSOPHICAL_TRADITIONS,
   RECOMMENDED_SPINE,
   type LearningTrack,
 } from "@/lib/learningPaths";
@@ -35,7 +37,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-type PageView = "home" | "journey" | "bead" | "lineage";
+type PageView = "chooser" | "trail" | "journey" | "bead" | "lineage";
 
 export default function LearnPage() {
   const router = useRouter();
@@ -53,6 +55,7 @@ export default function LearnPage() {
   } = useLearnProgress();
   const [importStatus, setImportStatus] = useState<string | null>(null);
   const [items, setItems] = useState<VerseItem[]>([]);
+  const [selectedTraditionId, setSelectedTraditionId] = useState<string | null>(null);
   const [selectedTrackId, setSelectedTrackId] = useState<string | null>(null);
   const [openStepId, setOpenStepId] = useState<string | null>(null);
   const [openStepTrackId, setOpenStepTrackId] = useState<string | null>(null);
@@ -114,8 +117,9 @@ export default function LearnPage() {
     if (activeThreadId && activeBeadId) return "bead";
     if (activeThreadId) return "journey";
     if (selectedTrackId) return "lineage";
-    return "home";
-  }, [threadCeremonyId, activeThreadId, activeBeadId, selectedTrackId]);
+    if (selectedTraditionId) return "trail";
+    return "chooser";
+  }, [threadCeremonyId, activeThreadId, activeBeadId, selectedTrackId, selectedTraditionId]);
 
   const beadPathStep = useMemo(() => {
     if (!activeBead) return null;
@@ -130,6 +134,7 @@ export default function LearnPage() {
   }, []);
 
   function syncUrl(opts: {
+    traditionId?: string | null;
     trackId?: string | null;
     stepId?: string | null;
     threadId?: string | null;
@@ -141,7 +146,7 @@ export default function LearnPage() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const { trackId, stepId, threadId, beadId } = parseLearnSearch(window.location.search);
+    const { traditionId, trackId, stepId, threadId, beadId } = parseLearnSearch(window.location.search);
     if (threadId && findThread(threadId)) {
       setActiveThreadId(threadId);
       const bead = beadId && findBead(findThread(threadId)!, beadId);
@@ -149,6 +154,12 @@ export default function LearnPage() {
       else setActiveBeadId(null);
     } else if (trackId && LEARNING_TRACKS.some((x) => x.id === trackId)) {
       setSelectedTrackId(trackId);
+      if (stepId) {
+        setOpenStepId(stepId);
+        pendingScrollRef.current = stepId;
+      }
+    } else if (traditionId && PHILOSOPHICAL_TRADITIONS.some((x) => x.id === traditionId)) {
+      setSelectedTraditionId(traditionId);
       if (stepId) {
         setOpenStepId(stepId);
         pendingScrollRef.current = stepId;
@@ -179,13 +190,23 @@ export default function LearnPage() {
 
   function goHome() {
     clearThreadMode();
+    setSelectedTraditionId(null);
     setSelectedTrackId(null);
     setOpenStepId(null);
     syncUrl({});
   }
 
+  function selectTradition(traditionId: string) {
+    clearThreadMode();
+    setSelectedTraditionId(traditionId);
+    setSelectedTrackId(null);
+    setOpenStepId(null);
+    syncUrl({ traditionId });
+  }
+
   function openLineageMap() {
     clearThreadMode();
+    setSelectedTraditionId(null);
     setSelectedTrackId(RECOMMENDED_SPINE[0]);
     setOpenStepId(null);
     syncUrl({ trackId: RECOMMENDED_SPINE[0] });
@@ -193,6 +214,7 @@ export default function LearnPage() {
 
   function selectTrack(trackId: string) {
     clearThreadMode();
+    setSelectedTraditionId(null);
     setSelectedTrackId(trackId);
     setOpenStepId(null);
     syncUrl({ trackId });
@@ -203,6 +225,7 @@ export default function LearnPage() {
 
   function continueTo(trackId: string, stepId: string) {
     clearThreadMode();
+    setSelectedTraditionId(null);
     setSelectedTrackId(trackId);
     setOpenStepId(stepId);
     pendingScrollRef.current = stepId;
@@ -218,6 +241,7 @@ export default function LearnPage() {
       advanceTimerRef.current = null;
     }
     setThreadCeremonyId(null);
+    setSelectedTraditionId(null);
     setSelectedTrackId(null);
     setOpenStepId(null);
     setActiveThreadId(threadId);
@@ -228,6 +252,7 @@ export default function LearnPage() {
   function openThread(threadId: string) {
     if (!findThread(threadId)) return;
     setThreadCeremonyId(null);
+    setSelectedTraditionId(null);
     setSelectedTrackId(null);
     setOpenStepId(null);
     setActiveThreadId(threadId);
@@ -256,6 +281,7 @@ export default function LearnPage() {
     setActiveThreadId(null);
     setActiveBeadId(null);
     setThreadCeremonyId(null);
+    setSelectedTraditionId(null);
     setSelectedTrackId(trackId);
     setOpenStepId(stepId);
     pendingScrollRef.current = stepId;
@@ -376,10 +402,22 @@ export default function LearnPage() {
     Boolean(activeThread && activeBeadId) &&
     beadIndex(activeThread!, activeBeadId!) >= activeThread!.steps.length - 1;
 
+  // Get tradition info if viewing a trail
+  const selectedTradition = PHILOSOPHICAL_TRADITIONS.find((t) => t.id === selectedTraditionId);
+  const trailTrackIds = selectedTradition?.trackIds || [];
+
   return (
     <main className="page-shell page-shell--reading">
       <div className="section-stack">
-        {view === "home" ? (
+        {view === "chooser" ? (
+          <TraditionChooser
+            progress={progress}
+            hydrated={hydrated}
+            onSelectTradition={selectTradition}
+          />
+        ) : null}
+
+        {view === "trail" && selectedTradition ? (
           <LearnTrail
             progress={progress}
             hydrated={hydrated}
@@ -388,6 +426,9 @@ export default function LearnPage() {
             onComplete={onPathGateComplete}
             scrollToKey={pendingScrollRef.current}
             items={items}
+            trackIds={trailTrackIds}
+            traditionTitle={selectedTradition.title}
+            onBackToChooser={goHome}
           />
         ) : null}
 

@@ -1733,3 +1733,88 @@ export const RECOMMENDED_SPINE: string[] = [
   "letting-go-death-emptiness",
   "the-one-and-the-many",
 ];
+
+/**
+ * Philosophical Traditions — "Duolingo for each philosophical language."
+ * Each tradition is a sequential trail teaching its vocabulary (key terms),
+ * metaphors, images, and governing ideas through its source texts.
+ */
+import type { SumiSlug } from "./sumiGlyphs";
+
+export type PhilosophicalTradition = {
+  id: string;
+  /** Display title (e.g. "Kashmir Śaivism") */
+  title: string;
+  /** One-line invitation shown on the tradition chooser */
+  invitation: string;
+  /** Sumi ink mark for the tradition card */
+  glyph: SumiSlug;
+  /** Tracks that belong to this tradition, in recommended order */
+  trackIds: string[];
+};
+
+export const PHILOSOPHICAL_TRADITIONS: PhilosophicalTradition[] = [
+  {
+    id: "kashmir-shaivism",
+    title: "Kashmir Śaivism",
+    invitation: "Recognition: you are the Consciousness you have been seeking.",
+    glyph: "shiva",
+    trackIds: ["heart-of-recognition", "three-doors-of-shiva", "the-112-doorways", "descent-of-the-cakra"],
+  },
+  {
+    id: "bhagavad-gita",
+    title: "Bhagavad Gītā",
+    invitation: "Act without seizing; serve without owning the fruit.",
+    glyph: "vishnu",
+    trackIds: ["action-without-contraction"],
+  },
+  {
+    id: "vedanta",
+    title: "Vedānta & Upaniṣads",
+    invitation: "The witness behind waking, dream, and sleep — you are That.",
+    glyph: "yantra",
+    trackIds: ["recognizing-awareness"],
+  },
+  {
+    id: "tao",
+    title: "Tao",
+    invitation: "The nameless source; the ten thousand things arise and return.",
+    glyph: "dragon",
+    trackIds: ["letting-go-death-emptiness"],
+  },
+  {
+    id: "greek",
+    title: "Greek & Neoplatonist",
+    invitation: "The One overflows; the soul returns by becoming sunlike.",
+    glyph: "infinity",
+    trackIds: ["the-one-and-the-many"],
+  },
+];
+
+/** Traditions available in the corpus but awaiting first-pass tracks */
+export const TRADITIONS_IN_DEVELOPMENT: Array<Omit<PhilosophicalTradition, "trackIds">> = [
+  {
+    id: "yoga",
+    title: "Yoga (Patañjali)",
+    invitation: "Stillness of the mind's turnings; the seer rests in its own nature.",
+    glyph: "spiral",
+  },
+  {
+    id: "buddhism",
+    title: "Buddhism",
+    invitation: "Emptiness, compassion, the groundless ground.",
+    glyph: "lotus",
+  },
+  {
+    id: "sufi",
+    title: "Sufi",
+    invitation: "The Beloved hides in plain sight; love is the way.",
+    glyph: "spiral",
+  },
+  {
+    id: "christian-mysticism",
+    title: "Christian Mysticism",
+    invitation: "The divine darkness; unknowing as the highest knowing.",
+    glyph: "chalice",
+  },
+];

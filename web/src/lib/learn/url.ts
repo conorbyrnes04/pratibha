@@ -1,4 +1,5 @@
 export type LearnSearch = {
+  traditionId: string | null;
   trackId: string | null;
   stepId: string | null;
   threadId: string | null;
@@ -6,19 +7,21 @@ export type LearnSearch = {
 };
 
 export type LearnHrefOpts = {
+  traditionId?: string | null;
   trackId?: string | null;
   stepId?: string | null;
   threadId?: string | null;
   beadId?: string | null;
 };
 
-export type LearnView = "home" | "journey" | "bead" | "lineage";
+export type LearnView = "chooser" | "trail" | "journey" | "bead" | "lineage";
 
 export function learnViewFromSearch(search: LearnSearch): LearnView {
   if (search.threadId && search.beadId) return "bead";
   if (search.threadId) return "journey";
   if (search.trackId) return "lineage";
-  return "home";
+  if (search.traditionId) return "trail";
+  return "chooser";
 }
 
 /** Build /learn deep link. Thread-only URLs omit track so the theme stays primary. */
@@ -29,6 +32,7 @@ export function learnHref(trackIdOrOpts: string | LearnHrefOpts, stepId?: string
       : trackIdOrOpts;
 
   const params = new URLSearchParams();
+  if (opts.traditionId) params.set("tradition", opts.traditionId);
   if (opts.trackId) params.set("track", opts.trackId);
   if (opts.stepId && opts.stepId !== "__none__") params.set("step", opts.stepId);
   if (opts.threadId) params.set("thread", opts.threadId);
@@ -40,6 +44,7 @@ export function learnHref(trackIdOrOpts: string | LearnHrefOpts, stepId?: string
 export function parseLearnSearch(search: string): LearnSearch {
   const sp = new URLSearchParams(search);
   return {
+    traditionId: sp.get("tradition"),
     trackId: sp.get("track"),
     stepId: sp.get("step"),
     threadId: sp.get("thread"),
