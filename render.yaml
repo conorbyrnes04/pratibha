@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: pratibha-api
+    runtime: docker
+    repo: https://github.com/conorbyrnes04/pratibha
+    branch: main
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+    healthCheckPath: /
