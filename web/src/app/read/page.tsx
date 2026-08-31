@@ -47,7 +47,7 @@ function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
       <span className="tome__glyph" aria-hidden>
         {rb ? (
           <motion.span
-            layoutId={`tome-art-${rb}`}
+            layoutId={`tome-${tome.collection}`}
             transition={TOME_FLIGHT}
             className="tome__mandala"
             style={{ backgroundImage: `url(${redbookSrc(rb)})` }}
@@ -246,7 +246,7 @@ function LibraryPageContent() {
         <div className="library-header__atmosphere" aria-hidden>
           {collection !== "all" && openTomeRb ? (
             <motion.div
-              layoutId={`tome-art-${openTomeRb}`}
+              layoutId={`tome-${collection}`}
               transition={TOME_FLIGHT}
               className="library-header__flown"
               style={{ backgroundImage: `url(${redbookSrc(openTomeRb)})` }}
