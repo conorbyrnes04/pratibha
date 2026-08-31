@@ -126,6 +126,7 @@ const REDBOOK_RULES: Array<{ pattern: RegExp; slug: string }> = [
   { pattern: /vijnana|bhairava|vij[nñ][aā]na/i, slug: "vijnana_bhairava" },
   { pattern: /spanda/i, slug: "yoga_spandakarika" },
   { pattern: /yogin[iī]h[rṛ]daya|yogini.?hrdaya|heart of the yogini/i, slug: "yoginihrdaya" },
+  { pattern: /samuel johnson|yoruba faith|johnson.?yoruba/i, slug: "johnson_yoruba_religion" },
   { pattern: /yoruba|[oò]we/i, slug: "yoruba_proverbs" },
   { pattern: /zhongyong/i, slug: "zhongyong" },
   { pattern: /old indian legends|zitkala/i, slug: "zitkala_sa_legends" },
