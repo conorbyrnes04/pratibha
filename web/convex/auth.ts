@@ -13,7 +13,15 @@ import { getAuthUserId } from "@convex-dev/auth/server";
 
 // Mixed provider list (Password + optional Google), so type it explicitly —
 // otherwise the element type is inferred from Password alone.
-const providers: AuthProviderConfig[] = [Password];
+const providers: AuthProviderConfig[] = [
+  Password({
+    validatePasswordRequirements: (password: string) => {
+      if (password.length < 10) {
+        throw new Error("Password must be at least 10 characters.");
+      }
+    },
+  }),
+];
 
 // Only add Google OAuth if credentials are configured
 if (process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET) {

@@ -76,6 +76,7 @@ const schema = defineSchema({
     line: v.optional(v.number()),
     aspectRatio: v.optional(v.string()),
     holographic: v.optional(v.boolean()),
+    reading: v.optional(v.string()),
     sortOrder: v.number(),
     createdAt: v.number(),
   })

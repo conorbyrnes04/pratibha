@@ -1,10 +1,11 @@
 "use client";
 
-import Link from "next/link";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { InkGlyph } from "@/components/InkGlyph";
+import { LearnTrailReading } from "@/components/learn/LearnTrailReading";
 import { PathStepWell } from "@/components/learn/PathStepWell";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
-import { Button, buttonVariants } from "@/components/ui/button";
 import { trailSumiGlyph } from "@/lib/sumiGlyphs";
 import type { LearningStepSpec, LearningTrack } from "@/lib/learningPaths";
 import type { VerseItem } from "@/lib/types";
@@ -14,91 +15,135 @@ export function LearnTrailGate({
   step,
   items,
   done,
-  walkedToday = false,
   pathTitle = "The Path",
   pathId,
-  nextTitle,
+  leaving = false,
   onComplete,
   onBack,
-  onContinue,
 }: {
   track: LearningTrack;
   step: LearningStepSpec;
   items: VerseItem[];
   done: boolean;
-  walkedToday?: boolean;
   pathTitle?: string;
   pathId?: string | null;
-  nextTitle?: string | null;
+  leaving?: boolean;
   onComplete: () => void;
   onBack: () => void;
-  onContinue?: () => void;
 }) {
   const glyph = trailSumiGlyph(step.id);
+  const [ready, setReady] = useState(false);
+  const [reading, setReading] = useState<VerseItem | null>(null);
 
-  return (
-    <article className="learn-trail-gate">
-      <header className="library-header">
-        <div className="library-header__body">
-          <button type="button" className="passage-reading__meta learn-trail-gate__back" onClick={onBack}>
-            ← {pathTitle}
-          </button>
-          <p className="mt-4 font-sans text-[11px] uppercase tracking-[0.22em] text-amber-200/50">{track.title}</p>
-          <div className="learn-trail-gate__mark">
-            <InkGlyph glyph={glyph} state={done ? "recognized" : "arising"} size="xl" className="learn-trail__glyph" mask />
-          </div>
-          <h1 className="library-header__title">{step.title}</h1>
-          <p className="library-header__lede">{step.orientation}</p>
-        </div>
-      </header>
+  useEffect(() => {
+    setReady(true);
+  }, []);
 
-      <div className="learn-trail-gate__body">
-        <PathStepWell
-          trackId={track.id}
-          trackTitle={track.title}
-          step={step}
-          items={items}
-          pathId={pathId}
-        />
-        <StepIntegrationGate
-          stepId={step.id}
-          integration={step.integration}
-          keyIdea={step.keyIdea}
-          done={done}
-          onComplete={onComplete}
-        />
-        {done && walkedToday ? (
-          <div className="learn-trail-gate__rest">
-            <p className="passage-reading__meta">Walked today</p>
-            <p className="library-header__lede">
-              {nextTitle
-                ? `Enough for today. Tomorrow opens ${nextTitle}.`
-                : "Enough for today. You finished the last gate on this path."}
-            </p>
-            <div className="passage-reading__nav">
-              <Link href="/" className={buttonVariants()}>
-                Return to Today
-              </Link>
-              <Button type="button" variant="secondary" onClick={onBack}>
-                See the trail
-              </Button>
+  useEffect(() => {
+    setReading(null);
+  }, [step.id]);
+
+  useEffect(() => {
+    if (leaving) setReading(null);
+  }, [leaving]);
+
+  useEffect(() => {
+    if (leaving) {
+      document.body.style.overflow = "";
+      return;
+    }
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [leaving]);
+
+  useEffect(() => {
+    function onKey(event: KeyboardEvent) {
+      if (event.key !== "Escape") return;
+      if (reading) {
+        event.preventDefault();
+        setReading(null);
+        return;
+      }
+      onBack();
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onBack, reading]);
+
+  useEffect(() => {
+    if (!reading) return;
+    const id = window.requestAnimationFrame(() => {
+      document.getElementById("learn-trail-reading-back")?.focus();
+    });
+    return () => window.cancelAnimationFrame(id);
+  }, [reading]);
+
+  function closeReading() {
+    setReading(null);
+  }
+
+  const panel = (
+    <div
+      className={`learn-trail-gate-layer ${leaving ? "learn-trail-gate-layer--leave" : ""}`}
+      data-learn-gate-layer={leaving ? "leave" : "open"}
+    >
+      <button
+        type="button"
+        className="learn-trail-gate-layer__scrim"
+        aria-label={reading ? "Return to gate" : "Close gate"}
+        onClick={reading ? closeReading : onBack}
+      />
+      <div className={`learn-trail-gate-stack ${reading ? "learn-trail-gate-stack--reading" : ""}`}>
+        <article
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={reading ? "learn-trail-reading-title" : "learn-trail-gate-title"}
+          className="learn-trail-gate"
+        >
+          <div inert={reading ? true : undefined}>
+            <header className="learn-trail-gate__header">
+              <button type="button" className="passage-reading__meta learn-trail-gate__back" onClick={onBack}>
+                ← {pathTitle}
+              </button>
+              <p className="mt-4 font-sans text-[11px] uppercase tracking-[0.22em] text-amber-200/50">{track.title}</p>
+              <div className="learn-trail-gate__mark">
+                <InkGlyph glyph={glyph} state={done ? "recognized" : "arising"} size="xl" className="learn-trail__glyph" mask />
+              </div>
+              <h1 id="learn-trail-gate-title" className="library-header__title">
+                {step.title}
+              </h1>
+              <p className="library-header__lede">{step.orientation}</p>
+            </header>
+
+            <div className="learn-trail-gate__body">
+              <PathStepWell
+                trackId={track.id}
+                trackTitle={track.title}
+                step={step}
+                items={items}
+                pathId={pathId}
+                onOpenPassage={setReading}
+              />
+              <StepIntegrationGate
+                stepId={step.id}
+                integration={step.integration}
+                keyIdea={step.keyIdea}
+                done={done}
+                onComplete={onComplete}
+              />
             </div>
-            {nextTitle && onContinue ? (
-              <p className="today-gate__continue">
-                <button type="button" onClick={onContinue}>
-                  Walk one more anyway
-                </button>
-              </p>
-            ) : null}
           </div>
-        ) : done ? (
-          <div className="flex justify-center pt-6">
-            <Button type="button" onClick={onBack}>
-              Return to the path
-            </Button>
-          </div>
+        </article>
+        {reading ? (
+          <LearnTrailReading item={reading} gateTitle={step.title} onBack={closeReading} />
         ) : null}
       </div>
-    </article>
+    </div>
   );
+
+  if (!ready) return null;
+  return createPortal(panel, document.body);
 }

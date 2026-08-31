@@ -11,8 +11,11 @@ async function requireUser(ctx: Parameters<typeof getAuthUserId>[0]) {
   return userId;
 }
 
-async function uniqueSlug(ctx: { db: any }, base: string, userId: string): Promise<string> {
-  const suffix = String(userId).slice(-4).toLowerCase().replace(/[^a-z0-9]/g, "x");
+async function uniqueSlug(ctx: { db: any }, base: string): Promise<string> {
+  const bytes = new Uint8Array(8);
+  crypto.getRandomValues(bytes);
+  const alphabet = "abcdefghijklmnopqrstuvwxyz0123456789";
+  const suffix = Array.from(bytes, (b) => alphabet[b % alphabet.length]).join("");
   let slug = `${base}-${suffix}`;
   let n = 0;
   while (true) {
@@ -38,7 +41,7 @@ async function getOrCreateManuscript(ctx: { db: any }, userId: string) {
     .withIndex("by_user", (q: any) => q.eq("userId", userId))
     .unique();
   const displayName = profile?.displayName || "Student";
-  const slug = await uniqueSlug(ctx, slugify(displayName), userId);
+  const slug = await uniqueSlug(ctx, slugify(displayName));
   const id = await ctx.db.insert("manuscripts", {
     userId,
     slug,

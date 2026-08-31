@@ -16,6 +16,7 @@ export type ShareCardCopy = {
   collection?: string;
   original?: string;
   translation?: string;
+  reading?: string;
 };
 
 export function ShareCard({
@@ -40,11 +41,12 @@ export function ShareCard({
   const showOriginal = (textMode === "original" || textMode === "both") && Boolean(copy.original);
   const showTranslation =
     (textMode === "translation" || textMode === "both" || !showOriginal) && Boolean(copy.translation);
+  const reading = copy.reading?.trim();
   const modeClass = fillWindow ? "share-card--line" : `share-card--${textMode}`;
 
   return (
     <article
-      className={`share-card ${modeClass} share-card--${aspectRatio}${holographic ? " share-card--holo" : ""}`}
+      className={`share-card ${modeClass} share-card--${aspectRatio}${holographic ? " share-card--holo" : ""}${reading ? " share-card--reading" : ""}`}
       style={{
         ["--share-ink" as string]: hex,
         ["--holo-x" as string]: String(tilt.x),
@@ -64,11 +66,12 @@ export function ShareCard({
           <p className="share-card__translation">{copy.translation}</p>
         ) : null}
       </div>
+      {reading ? <p className="share-card__reading">{reading}</p> : null}
       {holographic ? <span className="share-card__foil" aria-hidden /> : null}
       <footer className="share-card__foot">
         <BrandMark size="sm" />
         <span>pratibha</span>
-        {holographic ? <span className="share-card__fav">reading</span> : null}
+        {holographic ? <span className="share-card__fav">favorite</span> : null}
       </footer>
     </article>
   );

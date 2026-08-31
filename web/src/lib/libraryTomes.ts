@@ -96,6 +96,7 @@ const TOME_META: TomeMeta[] = [
   { pattern: /dionysius|areopagite|mystical.?theology|divine.?names/i, tradition: "Christian", author: "Pseudo-Dionysius", authored: "c. 5th–6th c. CE", eraYear: 500 },
   { pattern: /ibn|arabi|balyani|know yourself/i, tradition: "Sufi", author: "Balyānī", authored: "c. 13th–14th c. CE", eraYear: 1300 },
   { pattern: /gospel.?of.?thomas/i, tradition: "Christian", author: "Anonymous (Nag Hammadi)", authored: "c. 2nd c. CE", eraYear: 150 },
+  { pattern: /course in miracles|acim/i, tradition: "Christian", author: "Helen Schucman (scribe)", authored: "1965–1972 CE", eraYear: 1972 },
   { pattern: /ecclesiastes|qoheleth/i, tradition: "Hebrew", author: "Qoheleth (trad.)", authored: "c. 3rd c. BCE", eraYear: -250 },
   { pattern: /johnson|yoruba.?faith|yoruba.?religion/i, tradition: "Yoruba", author: "Samuel Johnson", authored: "1921 CE", eraYear: 1921 },
   { pattern: /yoruba/i, tradition: "Yoruba", author: "Oral (òwe)", authored: "recorded 1894 CE", eraYear: 1894 },

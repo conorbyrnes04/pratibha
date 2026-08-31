@@ -9,5 +9,8 @@ Working area for Terra / enrichment batches before promotion into `data/canonica
 ## Removed / do not promote
 - `epictetus_ns/` — model-supplied Greek drafts **superseded** by Carter PD units in canonical
 
+## Promoted
+- `enrich/yoruba_proverbs/` — layer-split into `data/canonical/yoruba_proverbs/` (commentary, key terms, resonances, practice). Re-ingest only from canonical.
+
 ## Rule
 Do not ingest staging into pgvector. Only `data/canonical/` is live corpus.

@@ -154,15 +154,17 @@ async function loadRaw(slug: string): Promise<RawSumi | null> {
   return raw;
 }
 
-export async function loadSumiTrace(slug: string): Promise<SumiTrace | null> {
-  const hit = drawCache.get(slug);
+export async function loadSumiTrace(slug: string, tight = false): Promise<SumiTrace | null> {
+  const cacheKey = tight ? `${slug}:draw-tight` : slug;
+  const hit = drawCache.get(cacheKey);
   if (hit) return hit;
   const raw = await loadRaw(slug);
   if (!raw) return null;
   const paths = pickContours(raw.paths);
   if (!paths.length) return null;
-  const next = withStroke(raw, paths);
-  drawCache.set(slug, next);
+  const viewBox = tight ? (tightViewBox(paths, raw.transform) ?? raw.viewBox) : raw.viewBox;
+  const next = withStroke({ ...raw, viewBox }, paths);
+  drawCache.set(cacheKey, next);
   return next;
 }
 

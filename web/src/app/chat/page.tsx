@@ -302,7 +302,7 @@ export default function ChatPage() {
   }
 
   async function ask() {
-    if (!q.trim() || busy || dailyCapHit) return;
+    if (!q.trim() || busy || dailyCapHit || !accessToken) return;
     const next: ChatMessage[] = [...messages, { role: "user", content: q.trim() }];
     // Add an empty assistant message we fill as tokens stream in.
     setMessages([...next, { role: "assistant", content: "" }]);

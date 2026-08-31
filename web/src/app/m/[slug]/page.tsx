@@ -76,6 +76,7 @@ function PublicManuscript({ slug }: { slug: string }) {
                 line: entry.line,
                 aspectRatio: entry.aspectRatio,
                 holographic: entry.holographic,
+                reading: entry.reading,
               }}
             />
           ))}

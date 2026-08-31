@@ -4,7 +4,15 @@ import Google from "@auth/core/providers/google";
 import { query } from "./_generated/server";
 import { getAuthUserId } from "@convex-dev/auth/server";
 
-const providers = [Password];
+const providers = [
+  Password({
+    validatePasswordRequirements: (password: string) => {
+      if (password.length < 10) {
+        throw new Error("Password must be at least 10 characters.");
+      }
+    },
+  }),
+];
 
 // Only add Google OAuth if credentials are configured
 if (process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET) {

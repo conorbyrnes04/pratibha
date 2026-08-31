@@ -26,6 +26,35 @@ NOTE = ("A Course in Miracles is a modern revelatory text (scribed 1965–1972 b
         "that voided its copyright (a status contested by the Foundation for Inner Peace). Passages are "
         "verbatim from the public-domain text.")
 
+# Additional curated passages — a verbatim anchor phrase; the SENTENCE containing it is
+# taken (verified present in the source at build time, so text stays verbatim / asteya-honest).
+SENTENCE_ANCHORS = [
+    ("It is the privilege of the forgiven to forgive", "The Privilege of the Forgiven", ["forgiveness", "release"]),
+    ("the only meaningful prayer is for forgiveness", "The Only Meaningful Prayer", ["forgiveness", "prayer"]),
+    ("In the holy instant in which you see yourself as bright with freedom", "The Holy Instant", ["the holy instant", "god"]),
+    ("You can claim the holy instant any time and anywhere", "Claim the Holy Instant", ["the holy instant", "freedom"]),
+    ("you will unchain all your brothers", "Unchain Your Brothers", ["the holy instant", "release"]),
+    ("The opposite of love is fear, but what is all-encompassing", "Love Has No Opposite", ["love", "fear"]),
+    ("Only this is the real world, and perceiving only this will lead you", "The Real World", ["the real world", "heaven"]),
+    ("you will accept the real world in place of the false one", "Accept the Real World", ["the real world", "vision"]),
+    ("The Holy Spirit is nothing more than your own right mind", "Your Own Right Mind", ["the holy spirit", "mind"]),
+    ("The Holy Spirit is the Christ Mind", "The Christ Mind", ["the holy spirit", "christ"]),
+    ("Man is free to believe what he chooses", "Free to Believe", ["decision", "free will"]),
+    ("When the will is really free, it cannot miscreate", "The Free Will", ["free will", "truth"]),
+    ("which is the resurrection and the light, shall not pass away", "The Resurrection and the Light", ["light", "eternity"]),
+    ("by perceiving light, darkness automatically disappears", "Perceiving Light", ["light", "darkness"]),
+    ("It is the duty of the released to release their brothers", "Release Your Brothers", ["brotherhood", "release"]),
+    ("judging them in any way is without meaning", "Judgment Without Meaning", ["brotherhood", "judgment"]),
+    ("As long as you feel guilty your ego is in command", "Guilt and the Ego", ["guilt", "the ego"]),
+    ("In Heaven there is no guilt", "No Guilt in Heaven", ["guilt", "heaven"]),
+    ("There is no strain in doing God's Will", "The Will of God", ["god's will", "peace"]),
+    ("I know that miracles are natural because they are expressions of love", "Miracles Are Natural", ["the miracle", "love"]),
+    ("Miracles are natural to God and to the One Who speaks for Him", "Natural to God", ["the miracle", "god"]),
+    ("one moment of real recognition makes all men your brothers", "The Gift of Gratitude", ["gratitude", "brotherhood"]),
+    ("The ultimate purpose of the body is to render itself unnecessary", "The Purpose of the Body", ["the body", "spirit"]),
+    ("My only gift to you is to help you make the same decision", "My Only Gift", ["decision", "gift"]),
+]
+
 # Powerful theme passages — an anchor phrase; the paragraph containing it is taken whole.
 THEME_ANCHORS = [
     ("Teach only love, for that is what you are", "Teach Only Love", ["love", "teaching"]),
@@ -118,6 +147,21 @@ def build():
         if hit:
             n += 1
             write_unit(slug, n, title, hit, themes)
+
+    # 4. Curated single-sentence passages, extracted VERBATIM from the source (asteya guard:
+    # each anchor must be found or we skip and warn — the model never supplies the text).
+    flat = re.sub(r"\s+", " ", txt).replace("“", '"').replace("”", '"').replace("’", "'").replace("‘", "'")
+    sentences = re.split(r"(?<=[.!?])\s+", flat)
+    missing = []
+    for anchor, title, themes in SENTENCE_ANCHORS:
+        hit = next((s for s in sentences if anchor in s), None)
+        if not hit:
+            missing.append(anchor); continue
+        body = clean(hit)
+        n += 1
+        write_unit(slug, n, title, body, themes)
+    if missing:
+        print("  WARN missing anchors:", *(f"\n    - {m}" for m in missing))
     return n
 
 

@@ -4,6 +4,13 @@ import { mutation, query } from "./_generated/server";
 import { assertDisplayName, assertMargin, slugify } from "./textRules";
 
 const MAX_ENTRIES = 40;
+const MAX_CARD_READING = 280;
+
+function clipReading(raw: string): string {
+  const trimmed = raw.replace(/\s+/g, " ").trim();
+  if (trimmed.length <= MAX_CARD_READING) return trimmed;
+  return `${trimmed.slice(0, MAX_CARD_READING - 1).trim()}…`;
+}
 
 async function requireUser(ctx: Parameters<typeof getAuthUserId>[0]) {
   const userId = await getAuthUserId(ctx);
@@ -11,8 +18,11 @@ async function requireUser(ctx: Parameters<typeof getAuthUserId>[0]) {
   return userId;
 }
 
-async function uniqueSlug(ctx: { db: any }, base: string, userId: string): Promise<string> {
-  const suffix = String(userId).slice(-4).toLowerCase().replace(/[^a-z0-9]/g, "x");
+async function uniqueSlug(ctx: { db: any }, base: string): Promise<string> {
+  const bytes = new Uint8Array(8);
+  crypto.getRandomValues(bytes);
+  const alphabet = "abcdefghijklmnopqrstuvwxyz0123456789";
+  const suffix = Array.from(bytes, (b) => alphabet[b % alphabet.length]).join("");
   let slug = `${base}-${suffix}`;
   let n = 0;
   while (true) {
@@ -38,7 +48,7 @@ async function getOrCreateManuscript(ctx: { db: any }, userId: string) {
     .withIndex("by_user", (q: any) => q.eq("userId", userId))
     .unique();
   const displayName = profile?.displayName || "Student";
-  const slug = await uniqueSlug(ctx, slugify(displayName), userId);
+  const slug = await uniqueSlug(ctx, slugify(displayName));
   const id = await ctx.db.insert("manuscripts", {
     userId,
     slug,
@@ -61,6 +71,7 @@ function publicEntries(entries: Array<{
   line?: number;
   aspectRatio?: string;
   holographic?: boolean;
+  reading?: string;
   sortOrder: number;
 }>) {
   return [...entries]
@@ -75,6 +86,7 @@ function publicEntries(entries: Array<{
       line: e.line,
       aspectRatio: e.aspectRatio,
       holographic: e.holographic,
+      reading: e.reading?.trim() || "",
       sortOrder: e.sortOrder,
     }));
 }
@@ -158,18 +170,29 @@ export const addVerse = mutation({
     line: v.optional(v.number()),
     aspectRatio: v.optional(v.string()),
     holographic: v.optional(v.boolean()),
+    reading: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const userId = await requireUser(ctx);
     const manuscript = await getOrCreateManuscript(ctx, userId);
-    const card = {
-      mark: args.mark,
-      ink: args.ink,
-      textMode: args.textMode,
-      line: args.line,
-      aspectRatio: args.aspectRatio,
-      holographic: args.holographic,
-    };
+    const card: {
+      mark?: string;
+      ink?: string;
+      textMode?: string;
+      line?: number;
+      aspectRatio?: string;
+      holographic?: boolean;
+      reading?: string;
+    } = {};
+    if (args.mark !== undefined) card.mark = args.mark;
+    if (args.ink !== undefined) card.ink = args.ink;
+    if (args.textMode !== undefined) card.textMode = args.textMode;
+    if (args.line !== undefined) card.line = args.line;
+    if (args.aspectRatio !== undefined) card.aspectRatio = args.aspectRatio;
+    if (args.holographic !== undefined) card.holographic = args.holographic;
+    if (args.reading !== undefined) {
+      card.reading = args.reading.trim() ? clipReading(args.reading) : "";
+    }
     const existing = await ctx.db
       .query("manuscript_entries")
       .withIndex("by_manuscript_verse", (q) =>

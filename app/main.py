@@ -1,6 +1,6 @@
 from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import JSONResponse, Response, StreamingResponse
 from pydantic import BaseModel, field_validator
 from typing import Any, List
 from contextlib import asynccontextmanager
@@ -23,6 +23,7 @@ from .chat_voice import (
 from .voice_examples import is_death_topic, select_few_shots
 from .auth import AuthUser, require_user, require_user_if_configured
 from .config import settings
+from . import tts as listen_tts
 from .llm import smart_chat, smart_chat_stream
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, retrieve_related_unit_ids, detected_collections
 from .data_loader import (
@@ -115,7 +116,7 @@ app.add_middleware(
     allow_credentials=_origins != ["*"],
     allow_methods=["*"],
     allow_headers=["*"],
-    expose_headers=["X-Chat-Daily-Limit", "X-Chat-Daily-Remaining"],
+    expose_headers=["X-Chat-Daily-Limit", "X-Chat-Daily-Remaining", "X-Listen-Room"],
 )
 
 
@@ -323,6 +324,50 @@ async def get_verse(sid: str):
     if v is None:
         raise HTTPException(404, "Not found")
     return v
+
+
+class ListenRequest(BaseModel):
+    verse_id: str
+
+
+_LISTEN_RATE_MAX = int(os.environ.get("LISTEN_RATE_MAX_PER_MIN", "8") or "8")
+_listen_hits: dict[str, list[float]] = {}
+
+
+@app.get("/listen/status")
+async def listen_status():
+    return {"ok": True, "configured": listen_tts.configured()}
+
+
+@app.post("/listen")
+async def listen_passage(
+    req: ListenRequest,
+    request: Request,
+    _user: AuthUser | None = Depends(require_user_if_configured),
+):
+    if not listen_tts.configured():
+        raise HTTPException(status_code=503, detail="Listen is not configured")
+    if _hit_limited(_listen_hits, _client_ip(request), _LISTEN_RATE_MAX):
+        raise HTTPException(status_code=429, detail="Listen is resting. Try again in a minute.")
+    verse = _find_verse(req.verse_id)
+    if verse is None:
+        raise HTTPException(status_code=404, detail="Not found")
+    try:
+        audio, script = await listen_tts.synthesize(verse)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except Exception:
+        logger.exception("Listen synthesis failed")
+        raise HTTPException(status_code=502, detail="Could not speak this passage")
+    return Response(
+        content=audio,
+        media_type="audio/mpeg",
+        headers={
+            "Cache-Control": "private, max-age=86400",
+            "X-Listen-Room": script.room,
+            "Content-Disposition": 'inline; filename="listen.mp3"',
+        },
+    )
 
 
 @app.get("/verse/{sid}/related")

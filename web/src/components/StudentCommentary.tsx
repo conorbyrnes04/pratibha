@@ -64,8 +64,9 @@ function StudentCommentaryInner({
       <section id="commentary" className="passage-commentary">
         <h2 className="passage-layer__label">Your commentary</h2>
         <p className="soft mt-3 text-sm leading-relaxed">
-          Sign in to write your own reading of this verse — private first, then offer it
-          to the circle if it has sat with you.
+          Sign in to write a reading of this verse — private first, then offer it
+          to the circle if it has sat with you. A saved reading gives the share
+          card a holographic shine.
         </p>
         <Link href={`/login?next=/read/${encodeURIComponent(verseId)}`} className={`${buttonVariants({ size: "sm" })} mt-4`}>
           Sign in
@@ -126,6 +127,7 @@ function StudentCommentaryInner({
       <p className="soft mt-2 text-sm leading-relaxed">
         Say what the line does. This stays private until you offer it.
         {offered ? " Offered to the circle." : mine ? " Saved privately." : ""}
+        {" "}A saved reading gives the share card a holographic shine.
       </p>
       <Textarea
         className="mt-4"

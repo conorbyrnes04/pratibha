@@ -7,7 +7,7 @@ import { useAuth } from "@/components/AuthProvider";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { cn } from "@/lib/utils";
+import { MIN_PASSWORD_LENGTH } from "@/lib/authRules";
 
 function LoginForm() {
   const router = useRouter();
@@ -64,8 +64,8 @@ function LoginForm() {
     setInfo(null);
     setBusy(true);
     try {
-      if (password.length < 6) {
-        setError("Password must be at least 6 characters.");
+      if (password.length < MIN_PASSWORD_LENGTH) {
+        setError(`Password must be at least ${MIN_PASSWORD_LENGTH} characters.`);
         return;
       }
       const err =
@@ -148,7 +148,7 @@ function LoginForm() {
               id="login-password"
               type="password"
               required
-              minLength={6}
+              minLength={MIN_PASSWORD_LENGTH}
               autoComplete={mode === "signin" ? "current-password" : "new-password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}

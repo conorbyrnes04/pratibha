@@ -1,3 +1,5 @@
+import { getAuthToken } from "../convex/httpClient";
+
 const API_BASE = (process.env.NEXT_PUBLIC_API_BASE || "http://127.0.0.1:8000").replace(/\/$/, "");
 
 export type Layer = { kind?: string; label?: string; body?: string };
@@ -196,9 +198,12 @@ export async function sendChat(
   messages: ChatMessage[],
   opts: { useRag?: boolean; verseId?: string; chatMode?: string } = {},
 ): Promise<ChatReply> {
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  const token = getAuthToken();
+  if (token) headers.Authorization = `Bearer ${token}`;
   const response = await fetch(`${API_BASE}/chat`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers,
     body: JSON.stringify({
       messages,
       use_rag: opts.useRag ?? true,

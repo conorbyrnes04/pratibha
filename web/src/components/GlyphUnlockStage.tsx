@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { loadSumiTrace, type SumiTrace } from "@/lib/sumiTrace";
-import { InkGlyph } from "@/components/InkGlyph";
+import { GlyphInkDraw } from "@/components/GlyphInkDraw";
 
 const PLAY_MS = 2600;
 
@@ -16,53 +15,28 @@ export function GlyphUnlockStage({
   ink: string;
   onDone: () => void;
 }) {
-  const [trace, setTrace] = useState<SumiTrace | null | undefined>(undefined);
   const [ready, setReady] = useState(false);
+  const [drawn, setDrawn] = useState(false);
 
   useEffect(() => {
     setReady(true);
   }, []);
 
   useEffect(() => {
-    let live = true;
-    setTrace(undefined);
-    void loadSumiTrace(slug).then((next) => {
-      if (live) setTrace(next);
-    });
-    return () => {
-      live = false;
-    };
+    setDrawn(false);
   }, [slug]);
 
   useEffect(() => {
-    if (trace === undefined) return;
+    if (!drawn) return;
     const id = window.setTimeout(onDone, PLAY_MS);
     return () => window.clearTimeout(id);
-  }, [slug, trace, onDone]);
+  }, [slug, drawn, onDone]);
 
-  if (!ready || trace === undefined) return null;
+  if (!ready) return null;
 
   const mark = (
     <div className="glyph-unlock" style={{ ["--unlock-ink" as string]: ink }} aria-hidden>
-      {trace ? (
-        <svg className="glyph-unlock__svg" viewBox={trace.viewBox} role="img">
-          <g transform={trace.transform} fillRule="evenodd">
-            {trace.paths.map((d, i) => (
-              <g key={`${slug}-${i}`} style={{ ["--ink-i" as string]: i }}>
-                <path className="glyph-unlock__wash" d={d} />
-                <path
-                  className="glyph-unlock__draw"
-                  d={d}
-                  pathLength={1}
-                  strokeWidth={trace.strokeWidth || 80}
-                />
-              </g>
-            ))}
-          </g>
-        </svg>
-      ) : (
-        <InkGlyph glyph={slug} ink={ink} size="hero" stroke strokeKey={`unlock-${slug}`} />
-      )}
+      <GlyphInkDraw slug={slug} ink={ink} className="glyph-unlock__svg" onReady={() => setDrawn(true)} />
     </div>
   );
 

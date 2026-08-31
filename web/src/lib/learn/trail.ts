@@ -11,10 +11,12 @@ export function sameCalendarDay(iso: string, now = new Date()): boolean {
   );
 }
 
-/** Line draws, then the destination glyph forms. */
+/** Line draws, then the destination glyph forms (same draw+wash as glyph unlock). */
 export const TRAIL_SAND_DRAW_MS = 1400;
-export const TRAIL_GLYPH_FORM_MS = 1050;
+export const TRAIL_GLYPH_FORM_MS = 2600;
+export const TRAIL_GATE_LEAVE_MS = 560;
 export const TRAIL_ARRIVE_TOTAL_MS = TRAIL_SAND_DRAW_MS + TRAIL_GLYPH_FORM_MS + 200;
+export const TRAIL_ARRIVE_SESSION_KEY = "pratibha.learn.arrive";
 
 export type TrailNode = {
   trackId: string;

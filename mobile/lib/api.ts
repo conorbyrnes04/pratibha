@@ -78,9 +78,11 @@ export async function askChat(
   useRag: boolean,
   options: ChatOptions = {},
 ) {
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  if (options.accessToken) headers.Authorization = `Bearer ${options.accessToken}`;
   const res = await fetch(`${getApiBase()}/chat`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers,
     body: JSON.stringify({
       messages,
       use_rag: useRag,

@@ -2,11 +2,14 @@
 
 import { useLayoutEffect, useRef, useState } from "react";
 import { InkGlyph } from "@/components/InkGlyph";
+import { GlyphInkDraw } from "@/components/GlyphInkDraw";
 import { TrailSandLine, type TrailSandMark } from "@/components/learn/TrailSandLine";
 import { buildTrail, currentTrailSit, TRAIL_SAND_DRAW_MS } from "@/lib/learn/trail";
 import { findTraditionTrail, TRADITION_TRAILS } from "@/lib/learn/traditionTrails";
 import { type CompletedAtMap, type ProgressMap } from "@/lib/learn/progress";
+import { SHARE_INKS } from "@/lib/shareCard";
 import { trailSumiGlyph } from "@/lib/sumiGlyphs";
+import { loadSumiTrace } from "@/lib/sumiTrace";
 
 type LearnTrailProps = {
   pathId: string;
@@ -19,8 +22,12 @@ type LearnTrailProps = {
   onBackPaths?: () => void;
   /** Scroll target: the key of the gate we should scroll to. */
   scrollToKey?: string | null;
-  /** Freshly unlocked node — paint it on. */
+  /** Freshly unlocked node — paint it on after the sand arrives. */
   drawingKey?: string | null;
+  /** Gate just marked complete — wash the mark to gold while the line moves on. */
+  finishingKey?: string | null;
+  /** Retrigger scroll when the hovering gate unmounts. */
+  gateOpen?: boolean;
 };
 
 function hashSeed(value: string): number {
@@ -42,6 +49,8 @@ export function LearnTrail({
   onBackPaths,
   scrollToKey,
   drawingKey,
+  finishingKey,
+  gateOpen = false,
 }: LearnTrailProps) {
   const trail = findTraditionTrail(pathId);
   const nodes = buildTrail(trail.id);
@@ -53,10 +62,24 @@ export function LearnTrail({
   const sit = currentTrailSit(progress, pathId, completedAt);
   let currentIndex = nodes.findIndex((n) => !progress[n.key]);
   if (currentIndex === -1) currentIndex = nodes.length - 1;
-  const visible = hydrated ? nodes.slice(0, currentIndex + 1) : nodes.slice(0, 1);
+  const drawIndex = drawingKey ? nodes.findIndex((n) => n.key === drawingKey) : -1;
+  const finishIndex = finishingKey ? nodes.findIndex((n) => n.key === finishingKey) : -1;
+  const visibleEnd = Math.max(currentIndex, drawIndex, finishIndex, 0);
+  const visible = hydrated ? nodes.slice(0, visibleEnd + 1) : nodes.slice(0, 1);
   const rested = Boolean(sit?.rested);
   const tomorrowKey = rested ? sit?.next?.key : null;
+  const [inkReady, setInkReady] = useState(false);
   const visibleKey = visible.map((node) => node.key).join("|");
+
+  useLayoutEffect(() => {
+    if (!drawingKey) {
+      setInkReady(false);
+      return;
+    }
+    setInkReady(false);
+    const id = window.setTimeout(() => setInkReady(true), TRAIL_SAND_DRAW_MS);
+    return () => window.clearTimeout(id);
+  }, [drawingKey]);
 
   useLayoutEffect(() => {
     if (!scrollToKey) return;
@@ -66,7 +89,7 @@ export function LearnTrail({
         el.scrollIntoView({ behavior: "smooth", block: "center" });
       });
     }
-  }, [scrollToKey, drawingKey, pathId]);
+  }, [scrollToKey, drawingKey, pathId, gateOpen]);
 
   useLayoutEffect(() => {
     const root = stageRef.current;
@@ -104,7 +127,19 @@ export function LearnTrail({
       window.removeEventListener("resize", measure);
       window.clearTimeout(again);
     };
-  }, [visibleKey, drawingKey, hydrated]);
+  }, [visibleKey, drawingKey, finishingKey, hydrated]);
+
+  useLayoutEffect(() => {
+    if (!drawingKey) return;
+    const node = buildTrail(trail.id).find((item) => item.key === drawingKey);
+    if (node) void loadSumiTrace(trailSumiGlyph(node.stepId), true);
+  }, [drawingKey, trail.id]);
+
+  useLayoutEffect(() => {
+    if (!finishingKey) return;
+    const node = buildTrail(trail.id).find((item) => item.key === finishingKey);
+    if (node) void loadSumiTrace(trailSumiGlyph(node.stepId), true);
+  }, [finishingKey, trail.id]);
 
   return (
     <div className="section-stack">
@@ -179,15 +214,17 @@ export function LearnTrail({
           <ul className="relative z-10 list-none space-y-16">
             {visible.map((node, i) => {
               const done = !!progress[node.key];
-              const isTomorrow = Boolean(tomorrowKey && node.key === tomorrowKey && !done);
-              const isCurrent = i === currentIndex && !done && !isTomorrow;
               const arriving = drawingKey === node.key;
+              const finishing = finishingKey === node.key;
+              const isTomorrow = Boolean(tomorrowKey && node.key === tomorrowKey && !done && !arriving);
+              const isCurrent = i === currentIndex && !done && !isTomorrow && !arriving;
               const glyph = trailSumiGlyph(node.stepId);
               let state: "recognized" | "arising" | "unmanifest" = "unmanifest";
-              if (done) state = "recognized";
-              else if (isCurrent) state = "arising";
+              if (done && !finishing) state = "recognized";
+              else if (isCurrent || arriving || finishing || isTomorrow) state = "arising";
               const side = i % 2;
               const drift = 12 + (Math.abs(hashSeed(node.key)) % 64);
+              const playInk = (arriving && inkReady) || finishing;
 
               return (
                 <li
@@ -223,36 +260,46 @@ export function LearnTrail({
                       type="button"
                       onClick={() => onOpenGate(node.trackId, node.stepId)}
                       className={`group relative block w-full text-left transition-all duration-300 hover:scale-102 active:scale-[0.98] ${
-                        isCurrent ? "scale-[1.02]" : "scale-100"
+                        isCurrent || arriving ? "scale-[1.02]" : "scale-100"
                       }`}
                       aria-label={
                         done
                           ? `${node.title} - Complete`
                           : isTomorrow
                             ? `${node.title} - Opens tomorrow`
-                            : isCurrent
+                            : isCurrent || arriving
                               ? `${node.title} - Current gate`
                               : node.title
                       }
+                      data-trail-node={node.key}
+                      data-trail-arriving={arriving ? "true" : undefined}
+                      data-trail-finishing={finishing ? "true" : undefined}
                     >
                       <div
                         ref={(el) => {
                           markRefs.current[node.key] = el;
                         }}
                         className={`learn-trail__mark mx-auto flex items-center justify-center transition-all duration-500 ${
-                          isCurrent || arriving ? "learn-trail__mark--current h-24 w-24" : "h-20 w-20"
-                        }`}
+                          isCurrent || arriving || finishing ? "learn-trail__mark--current h-24 w-24" : "h-20 w-20"
+                        } ${arriving || finishing ? "learn-trail__mark--arrive" : ""}`}
                       >
-                        <InkGlyph
-                          glyph={glyph}
-                          state={state}
-                          size={isCurrent || arriving ? "xl" : "lg"}
-                          className="learn-trail__glyph"
-                          mask
-                          stroke={arriving}
-                          strokeKey={arriving ? drawingKey : undefined}
-                          strokeDelay={arriving ? TRAIL_SAND_DRAW_MS : 0}
-                        />
+                        {playInk ? (
+                          <GlyphInkDraw
+                            key={`${arriving ? "arrive" : "finish"}-${node.key}`}
+                            slug={glyph}
+                            ink={SHARE_INKS.gold.hex}
+                            tight
+                            className="learn-trail__glyph"
+                          />
+                        ) : (
+                          <InkGlyph
+                            glyph={glyph}
+                            state={state}
+                            size={isCurrent || arriving || finishing ? "xl" : "lg"}
+                            className="learn-trail__glyph"
+                            mask
+                          />
+                        )}
                       </div>
 
                       <div
@@ -262,19 +309,19 @@ export function LearnTrail({
                       >
                         <h3
                           className={`px-2 text-sm font-medium leading-snug transition-colors duration-300 ${
-                            done ? "text-emerald-100" : isCurrent ? "text-amber-100" : "text-stone-400"
+                            done ? "text-emerald-100" : isCurrent || arriving ? "text-amber-100" : "text-stone-400"
                           }`}
                         >
                           {node.title}
                         </h3>
-                        {isCurrent || arriving || isTomorrow ? (
+                        {isCurrent || arriving || isTomorrow || finishing ? (
                           <p className="mt-2 px-3 text-xs leading-relaxed text-stone-400">
                             {node.orientation.split(".")[0]}.
                           </p>
                         ) : null}
                       </div>
 
-                      {done ? (
+                      {done && !finishing && !arriving ? (
                         <div className="mt-3 flex justify-center">
                           <span className="rounded-full border border-emerald-300/35 bg-emerald-300/8 px-2.5 py-0.5 font-sans text-[9px] uppercase tracking-[0.14em] text-emerald-200">
                             Complete

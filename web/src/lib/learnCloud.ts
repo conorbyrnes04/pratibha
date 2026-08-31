@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import {
   loadLearnProgressBundle,
   saveLearnProgressBundle,
@@ -60,19 +61,18 @@ function mergeCompletedAt(local: CompletedAtMap, remote: CompletedAtMap): Comple
 }
 
 function useSyncLearnProgressLocal() {
-  return {
-    sync: async (): Promise<LearnProgressSyncResult> => {
-      const local = loadLearnProgressBundle();
-      return { progress: local.progress, completedAt: local.completedAt, status: "local" };
-    },
-  };
+  const sync = useCallback(async (): Promise<LearnProgressSyncResult> => {
+    const local = loadLearnProgressBundle();
+    return { progress: local.progress, completedAt: local.completedAt, status: "local" };
+  }, []);
+  return { sync };
 }
 
 function useSyncLearnProgressConvex() {
   const remoteProgress = useQuery(api.learnProgress.get);
   const upsert = useMutation(api.learnProgress.upsert);
 
-  const sync = async (): Promise<LearnProgressSyncResult> => {
+  const sync = useCallback(async (): Promise<LearnProgressSyncResult> => {
     const local = loadLearnProgressBundle();
 
     if (remoteProgress === undefined) {
@@ -97,7 +97,7 @@ function useSyncLearnProgressConvex() {
         error: error instanceof Error ? error.message : "Unknown error",
       };
     }
-  };
+  }, [remoteProgress, upsert]);
 
   return { sync };
 }

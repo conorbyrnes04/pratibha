@@ -4,6 +4,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { getVerse } from "@/lib/api";
 import { JournalPanel } from "@/components/JournalPanel";
+import { ListenButton } from "@/components/ListenButton";
 import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import { PassageMaturityBadge } from "@/components/learn/PassageMaturityBadge";
 import { buttonVariants } from "@/components/ui/button";
@@ -23,18 +24,41 @@ function actionLabel(chatMode?: string): string {
   return "Ask about it";
 }
 
-function PassageLink({ item, primary = false, backHref }: { item: VerseItem; primary?: boolean; backHref?: string }) {
-  const href = backHref
-    ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
-    : `/read/${encodeURIComponent(item._id)}`;
-  return (
-    <Link href={href} className={`library-passage ${primary ? "" : "opacity-90"}`}>
+function PassageCard({
+  item,
+  primary = false,
+  backHref,
+  onOpen,
+}: {
+  item: VerseItem;
+  primary?: boolean;
+  backHref?: string;
+  onOpen?: (item: VerseItem) => void;
+}) {
+  const className = `library-passage ${primary ? "" : "opacity-90"}`;
+  const inner = (
+    <>
       <p className="library-passage__meta">
         {displayCollectionName(item.collection)}
         {displayPassageLocation(item) ? ` · ${displayPassageLocation(item)}` : ""}
       </p>
       <h5 className="library-passage__title">{displayPassageTitle(item)}</h5>
       {primary ? <p className="library-passage__preview line-clamp-2">{passagePreview(item)}</p> : null}
+    </>
+  );
+  if (onOpen) {
+    return (
+      <button type="button" className={className} onClick={() => onOpen(item)}>
+        {inner}
+      </button>
+    );
+  }
+  const href = backHref
+    ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
+    : `/read/${encodeURIComponent(item._id)}`;
+  return (
+    <Link href={href} className={className}>
+      {inner}
     </Link>
   );
 }
@@ -45,6 +69,7 @@ type PathStepWellProps = {
   step: LearningStepSpec;
   items: VerseItem[];
   pathId?: string | null;
+  onOpenPassage?: (item: VerseItem) => void;
   children?: ReactNode;
 };
 
@@ -54,6 +79,7 @@ export function PathStepWell({
   step,
   items,
   pathId,
+  onOpenPassage,
   children,
 }: PathStepWellProps) {
   const [pinned, setPinned] = useState<VerseItem | null>(null);
@@ -123,9 +149,10 @@ export function PathStepWell({
         <div className="mt-2 space-y-2">
           {item ? (
             <>
-              <PassageLink item={item} primary backHref={backHref} />
+              <PassageCard item={item} primary backHref={backHref} onOpen={onOpenPassage} />
               <PassageMaturityBadge item={item} />
               <OriginalReliabilityBadge item={item} />
+              <ListenButton verseId={item._id} />
             </>
           ) : (
             <p className="rounded-2xl border border-rose-300/25 bg-rose-300/5 p-3 font-sans text-sm text-stone-200">
@@ -140,7 +167,7 @@ export function PathStepWell({
             </p>
           )}
           {supporting.map((sv) => (
-            <PassageLink key={sv._id} item={sv} backHref={backHref} />
+            <PassageCard key={sv._id} item={sv} backHref={backHref} onOpen={onOpenPassage} />
           ))}
         </div>
       </div>
@@ -161,9 +188,15 @@ export function PathStepWell({
       )}
 
       <div className="flex flex-wrap gap-2 pt-1">
-        <Link href={readHref} className={buttonVariants({ size: "sm" })}>
-          {item ? "Open in Library" : "Browse Library"}
-        </Link>
+        {item && onOpenPassage ? (
+          <button type="button" className={buttonVariants({ size: "sm" })} onClick={() => onOpenPassage(item)}>
+            Open passage
+          </button>
+        ) : (
+          <Link href={readHref} className={buttonVariants({ size: "sm" })}>
+            {item ? "Open in Library" : "Browse Library"}
+          </Link>
+        )}
         <Link href={chatHref} className={buttonVariants({ variant: "secondary", size: "sm" })}>
           {pathId ? "Ask this gate" : actionLabel(step.chatMode)}
         </Link>

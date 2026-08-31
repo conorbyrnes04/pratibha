@@ -180,6 +180,53 @@ export async function getRelatedVerses(id: string, limit = 6): Promise<VerseItem
   return Array.isArray(data?.items) ? (data.items as VerseItem[]) : [];
 }
 
+export async function listenConfigured(): Promise<boolean> {
+  try {
+    const res = await fetch(`${API_BASE}/listen/status`, { cache: "no-store" });
+    if (!res.ok) return false;
+    const data = (await res.json()) as { configured?: boolean };
+    return Boolean(data?.configured);
+  } catch {
+    return false;
+  }
+}
+
+export class ListenApiError extends Error {
+  status: number;
+
+  constructor(message: string, status: number) {
+    super(message);
+    this.name = "ListenApiError";
+    this.status = status;
+  }
+}
+
+export async function listenPassage(
+  verseId: string,
+  accessToken?: string | null,
+): Promise<{ blob: Blob; room: string }> {
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  if (accessToken) headers.Authorization = `Bearer ${accessToken}`;
+  const res = await fetch(`${API_BASE}/listen`, {
+    method: "POST",
+    cache: "no-store",
+    headers,
+    body: JSON.stringify({ verse_id: verseId }),
+  });
+  if (!res.ok) {
+    let detail = "Could not speak this passage.";
+    try {
+      const data = (await res.json()) as { detail?: string };
+      if (typeof data?.detail === "string" && data.detail.trim()) detail = data.detail;
+    } catch {
+      /* ignore */
+    }
+    throw new ListenApiError(detail, res.status);
+  }
+  const blob = await res.blob();
+  return { blob, room: res.headers.get("X-Listen-Room") || "" };
+}
+
 export async function getDaily(minMaturity: EditorialMaturity | "all" = "rich"): Promise<VerseItem | null> {
   const res = await fetch(withMaturity("/daily", minMaturity), { cache: "no-store" });
   if (!res.ok) return null;

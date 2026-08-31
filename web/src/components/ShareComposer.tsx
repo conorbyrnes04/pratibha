@@ -24,6 +24,7 @@ import {
   folioCandidates,
   nextFolioLine,
   pickFolioLine,
+  clipShareText,
   shareCaption,
   sharePagePath,
   tiktokUploadUrl,
@@ -81,6 +82,13 @@ type ShareCloud = {
     line?: number;
     aspectRatio: ShareAspectRatio;
     holographic: boolean;
+    reading?: string;
+  }) => Promise<unknown>;
+  upsertCommentary?: (args: {
+    verseId: string;
+    verseTitle: string;
+    body: string;
+    status: "private" | "offered";
   }) => Promise<unknown>;
   manuscript?: {
     entries: {
@@ -92,6 +100,7 @@ type ShareCloud = {
       aspectRatio?: string;
       note?: string;
       holographic?: boolean;
+      reading?: string;
     }[];
   } | null;
   commentary?: { body?: string } | null;
@@ -104,6 +113,7 @@ export function ShareComposer(props: ShareComposerProps) {
 
 function ShareComposerCloud(props: ShareComposerProps) {
   const addVerse = useMutation(api.manuscripts.addVerse);
+  const upsertCommentary = useMutation(api.studentCommentaries.upsert);
   const { user } = useAuth();
   const manuscript = useQuery(api.manuscripts.getMine, user ? {} : "skip");
   const commentary = useQuery(
@@ -113,7 +123,7 @@ function ShareComposerCloud(props: ShareComposerProps) {
   return (
     <ShareComposerInner
       {...props}
-      cloud={{ addVerse, manuscript, commentary }}
+      cloud={{ addVerse, upsertCommentary, manuscript, commentary }}
     />
   );
 }
@@ -138,6 +148,9 @@ function ShareComposerInner({
     if (designOpen === undefined) setInternalOpen(open);
   }
   const [folioNote, setFolioNote] = useState("");
+  const [readingDraft, setReadingDraft] = useState("");
+  const [wroteReading, setWroteReading] = useState(false);
+  const [printReading, setPrintReading] = useState(false);
   const [holographic, setHolographic] = useState(false);
   const [busy, setBusy] = useState<string | null>(null);
   const [openMarks, setOpenMarks] = useState<Set<ShareForceMark>>(() => new Set([verseMark, "lotus", "circle", "moon", "fire", "tree", "heart", "water", "mountain"]));
@@ -145,7 +158,9 @@ function ShareComposerInner({
   const { user } = useAuth();
   const manuscript = cloud?.manuscript;
   const commentary = cloud?.commentary;
-  const earnedHolo = Boolean(commentary?.body?.trim());
+  const earnedHolo = wroteReading || Boolean(commentary?.body?.trim());
+  const readingText = (readingDraft || commentary?.body || "").trim();
+  const printedReading = printReading && readingText ? clipShareText(readingText, 220) : undefined;
   const extraVerseIds = manuscript?.entries.map((entry) => entry.verseId) ?? [];
 
   const candidates = useMemo(
@@ -165,8 +180,9 @@ function ShareComposerInner({
         collection: copy.collection,
         original: picked.source === "translation" ? undefined : picked.text,
         translation: picked.source === "translation" ? picked.text : undefined,
+        reading: printedReading,
       }
-    : copy;
+    : { ...copy, reading: printedReading };
   const displayMode = picked
     ? picked.source === "translation"
       ? "translation"
@@ -199,6 +215,16 @@ function ShareComposerInner({
   }, [item._id, verseMark, extraVerseIds.join("|")]);
 
   useEffect(() => {
+    setWroteReading(false);
+    setReadingDraft("");
+    setPrintReading(false);
+  }, [item._id]);
+
+  useEffect(() => {
+    if (commentary?.body) setReadingDraft(commentary.body);
+  }, [commentary?.body]);
+
+  useEffect(() => {
     if (!sheetOpen) return;
     const entry = manuscript?.entries.find((row) => row.verseId === item._id);
     if (entry?.mark && isShareForceMark(entry.mark)) setMark(entry.mark);
@@ -209,6 +235,7 @@ function ShareComposerInner({
       setAspectRatio(entry.aspectRatio);
     }
     setFolioNote(entry?.note || "");
+    setPrintReading(Boolean(entry?.reading?.trim()));
     const shine = Boolean(entry?.holographic) || earnedHolo;
     setHolographic(shine);
     if (shine) enableHoloMotion();
@@ -467,7 +494,7 @@ function ShareComposerInner({
         toast.error("Sign in to keep a manuscript.");
         return;
       }
-      await cloud.addVerse({
+      const payload = {
         verseId: item._id,
         verseTitle: copy.title,
         note: folioNote || undefined,
@@ -477,7 +504,14 @@ function ShareComposerInner({
         line,
         aspectRatio,
         holographic: holographic && earnedHolo,
-      });
+        reading: printedReading || "",
+      };
+      try {
+        await cloud.addVerse(payload);
+      } catch (err) {
+        const { reading: _reading, ...rest } = payload;
+        await cloud.addVerse(rest);
+      }
       recordPractice(`manuscript:${item._id}`);
       if (folioNote.trim()) recordPractice(`manuscript:note:${item._id}`);
       refreshUnlocks();
@@ -490,6 +524,49 @@ function ShareComposerInner({
   }
 
   const inManuscript = Boolean(manuscript?.entries.some((entry) => entry.verseId === item._id));
+
+  async function saveReading() {
+    if (!user) {
+      window.location.href = `/login?next=/read/${encodeURIComponent(item._id)}`;
+      return;
+    }
+    if (!cloud?.upsertCommentary) {
+      toast.error("Sign in to write a reading.");
+      return;
+    }
+    setBusy("reading");
+    try {
+      await cloud.upsertCommentary({
+        verseId: item._id,
+        verseTitle: copy.title,
+        body: readingDraft,
+        status: "private",
+      });
+      recordPractice(`commentary:${item._id}`);
+      setWroteReading(true);
+      setHolographic(true);
+      enableHoloMotion();
+      if (inManuscript) {
+        await cloud.addVerse({
+          verseId: item._id,
+          verseTitle: copy.title,
+          note: folioNote || undefined,
+          mark,
+          ink,
+          textMode,
+          line,
+          aspectRatio,
+          holographic: true,
+          reading: printedReading || "",
+        }).catch(() => undefined);
+      }
+      toast.success("Reading saved. The card takes the holographic shine.");
+    } catch (err) {
+      toast.error(friendlyShareError(err, "Could not save the reading."));
+    } finally {
+      setBusy(null);
+    }
+  }
 
   return (
     <Sheet
@@ -578,24 +655,62 @@ function ShareComposerInner({
             </fieldset>
             <fieldset id="share-keep">
               <legend className="passage-layer__label mb-3">This card</legend>
-              {earnedHolo ? (
-                <button
-                  type="button"
-                  className={`share-chip ${holographic ? "share-chip--on" : ""}`}
-                  onClick={() => {
-                    const next = !holographic;
-                    setHolographic(next);
-                    if (next) enableHoloMotion();
-                  }}
-                  aria-pressed={holographic}
-                >
-                  Holographic — from your reading
-                </button>
+              {earnedHolo || readingText ? (
+                <div className="mb-3 flex flex-wrap gap-2">
+                  {earnedHolo ? (
+                    <button
+                      type="button"
+                      className={`share-chip ${holographic ? "share-chip--on" : ""}`}
+                      onClick={() => {
+                        const next = !holographic;
+                        setHolographic(next);
+                        if (next) enableHoloMotion();
+                      }}
+                      aria-pressed={holographic}
+                    >
+                      Favorite — holographic shine
+                    </button>
+                  ) : null}
+                  {readingText ? (
+                    <button
+                      type="button"
+                      className={`share-chip ${printReading ? "share-chip--on" : ""}`}
+                      onClick={() => setPrintReading((on) => !on)}
+                      aria-pressed={printReading}
+                    >
+                      Print reading on card
+                    </button>
+                  ) : null}
+                </div>
               ) : (
                 <p className="soft mb-3 text-sm leading-relaxed">
-                  Write your own commentary on this verse to give the card a holographic shine.
+                  Write your own reading of this verse. That is what gives the card a holographic shine.
                 </p>
               )}
+              {user && cloud?.upsertCommentary ? (
+                <div className="space-y-3">
+                  <Textarea
+                    value={readingDraft}
+                    onChange={(e) => setReadingDraft(e.target.value)}
+                    placeholder="What does this verse ask of you?"
+                    rows={4}
+                  />
+                  {!earnedHolo ? (
+                    <Button
+                      type="button"
+                      size="sm"
+                      disabled={!readingDraft.trim() || busy !== null}
+                      onClick={() => void saveReading()}
+                    >
+                      {busy === "reading" ? "Saving…" : "Save reading"}
+                    </Button>
+                  ) : null}
+                </div>
+              ) : !earnedHolo ? (
+                <Link href={`/login?next=/read/${encodeURIComponent(item._id)}`} className="share-dest share-dest--first">
+                  Sign in to write a reading
+                </Link>
+              ) : null}
               <Textarea
                 className="mt-3"
                 value={folioNote}
@@ -713,6 +828,18 @@ function ShareComposerInner({
               <Button type="button" size="sm" variant="secondary" onClick={() => void copyLink()}>
                 Copy link
               </Button>
+              {CONVEX_ENABLED ? (
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="secondary"
+                  disabled={busy !== null}
+                  onClick={() => void keepCard()}
+                >
+                  <BookMarked />
+                  {busy === "keep" ? "…" : inManuscript ? "Update manuscript" : "Save to manuscript"}
+                </Button>
+              ) : null}
             </div>
           </div>
         </div>

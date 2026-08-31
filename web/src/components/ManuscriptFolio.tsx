@@ -30,6 +30,7 @@ export type FolioCardOptions = {
   line?: number;
   aspectRatio?: string;
   holographic?: boolean;
+  reading?: string;
 };
 
 export function ManuscriptFolio({
@@ -75,6 +76,7 @@ export function ManuscriptFolio({
   const aspectRatio: ShareAspectRatio =
     card?.aspectRatio === "story" ? "story" : "post";
   const holographic = Boolean(card?.holographic);
+  const storedReading = card?.reading?.trim() || "";
   const title = item ? displayPassageTitle(item) : verseTitle;
   const collection = item
     ? displayCollectionName(item.collection) || item.collection
@@ -100,6 +102,7 @@ export function ManuscriptFolio({
         collection,
         original: picked.source === "translation" ? undefined : picked.text,
         translation: picked.source === "translation" ? picked.text : undefined,
+        reading: storedReading || undefined,
       };
     }
     return {
@@ -107,8 +110,9 @@ export function ManuscriptFolio({
       collection,
       original: original ? clipShareText(original, 72) : undefined,
       translation: translation ? clipShareText(translation, 110) : undefined,
+      reading: storedReading || undefined,
     };
-  }, [card?.line, collection, iast, mode, original, title, translation]);
+  }, [card?.line, collection, iast, mode, original, storedReading, title, translation]);
 
   const textMode: ShareTextMode = cardCopy.original && !cardCopy.translation
     ? "original"
@@ -130,6 +134,7 @@ export function ManuscriptFolio({
           <Link href={`/read/${encodeURIComponent(verseId)}`}>{title}</Link>
         </h2>
         {body ? <p className="manuscript-leaf__verse">{body}</p> : null}
+        {storedReading ? <p className="manuscript-leaf__note">{storedReading}</p> : null}
         {note ? <p className="manuscript-leaf__note">{note}</p> : null}
         {actions ? <div className="manuscript-folio__actions">{actions}</div> : null}
       </article>

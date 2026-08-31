@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
@@ -15,6 +13,7 @@ import {
   sortPassagesInText,
 } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
+import { ListenButton } from "@/components/ListenButton";
 import { ReadingShell } from "@/components/ReadingShell";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
@@ -22,6 +21,7 @@ import { StudentCommentary } from "@/components/StudentCommentary";
 import { CircleReadings } from "@/components/CircleReadings";
 import { SanghaBoundary } from "@/components/SanghaBoundary";
 import { ShareComposer } from "@/components/ShareComposer";
+import { CommentaryTeaser } from "@/components/CommentaryTeaser";
 import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import {
   getStudyLayers,
@@ -32,17 +32,12 @@ import {
   passagePreview,
   practiceText,
 } from "@/lib/verseLayers";
-import { firstSentence, stripMarkdown } from "@/lib/textPreview";
+import { firstSentence } from "@/lib/textPreview";
 import { relatedPassages } from "@/lib/relatedPassages";
 import { preferStudyUnits } from "@/lib/corpusFilters";
 import { buildCitationIndex, resolveCitation, type CitationResolution } from "@/lib/citationResolver";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { KitLink } from "@/components/ui/kit-link";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
 import {
   Accordion,
   AccordionContent,
@@ -68,14 +63,6 @@ function practiceFallback(item: VerseItem): string {
   return "Read once slowly, then pause for one minute before your next action.";
 }
 
-function commentaryTeaser(body: string, maxWords = 55): string {
-  const clean = stripMarkdown(body).replace(/\s+/g, " ").trim();
-  if (!clean) return "";
-  const words = clean.split(/\s+/);
-  if (words.length <= maxWords) return clean;
-  return `${words.slice(0, maxWords).join(" ")}…`;
-}
-
 export default function VerseDetailPage() {
   const params = useParams<{ id: string }>();
   const [item, setItem] = useState<VerseItem | null>(null);
@@ -83,7 +70,6 @@ export default function VerseDetailPage() {
   const [semanticRelated, setSemanticRelated] = useState<VerseItem[] | null>(null);
   const [showOriginal, setShowOriginal] = useState(true);
   const [folioDesignOpen, setFolioDesignOpen] = useState(false);
-  const [commentaryOpen, setCommentaryOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [backHref, setBackHref] = useState<string | null>(null);
   const id = decodeURIComponent(params.id || "");
@@ -118,7 +104,6 @@ export default function VerseDetailPage() {
   }, [id]);
 
   useEffect(() => {
-    setCommentaryOpen(false);
     setFolioDesignOpen(false);
   }, [id]);
 
@@ -197,10 +182,6 @@ export default function VerseDetailPage() {
       ? translationPreview
       : null;
 
-  const commentaryPreview = commentaryBody ? commentaryTeaser(commentaryBody) : "";
-  const commentaryNeedsExpand =
-    Boolean(commentaryBody) &&
-    stripMarkdown(commentaryBody).trim().length > commentaryPreview.replace(/…$/, "").length + 8;
   const passageLocation = displayPassageLocation(item);
 
   return (
@@ -245,14 +226,19 @@ export default function VerseDetailPage() {
         </header>
 
         {originalLayer || iastLayer ? (
-          <button
-            type="button"
-            className="passage-reading__toggle"
-            onClick={() => setShowOriginal((v) => !v)}
-          >
-            {showOriginal ? "Hide original" : "Show original"}
-          </button>
-        ) : null}
+          <div className="passage-reading__toolbar">
+            <button
+              type="button"
+              className="passage-reading__toggle"
+              onClick={() => setShowOriginal((v) => !v)}
+            >
+              {showOriginal ? "Hide original" : "Show original"}
+            </button>
+            <ListenButton verseId={item._id} />
+          </div>
+        ) : (
+          <ListenButton verseId={item._id} />
+        )}
 
         {showOriginal && originalLayer ? (
           <LayerBlock layer={originalLayer} variant="plain" />
@@ -270,35 +256,7 @@ export default function VerseDetailPage() {
           </section>
         )}
 
-        {commentaryBody ? (
-          <div className="passage-commentary">
-            {commentaryNeedsExpand ? (
-              <Collapsible open={commentaryOpen} onOpenChange={setCommentaryOpen}>
-                <CollapsibleTrigger className="passage-commentary__trigger">
-                  <span className="passage-layer__label mb-0">Commentary</span>
-                  <span className="font-sans text-xs text-stone-500">
-                    {commentaryOpen ? "Collapse" : "Continue"}
-                  </span>
-                </CollapsibleTrigger>
-                {!commentaryOpen ? (
-                  <p className="passage-commentary__teaser">{commentaryPreview}</p>
-                ) : null}
-                <CollapsibleContent>
-                  <div className="passage-commentary__body chat-markdown reading-prose">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{commentaryBody}</ReactMarkdown>
-                  </div>
-                </CollapsibleContent>
-              </Collapsible>
-            ) : (
-              <>
-                <h2 className="passage-layer__label">Commentary</h2>
-                <div className="passage-commentary__body chat-markdown reading-prose">
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{commentaryBody}</ReactMarkdown>
-                </div>
-              </>
-            )}
-          </div>
-        ) : null}
+        {commentaryBody ? <CommentaryTeaser body={commentaryBody} /> : null}
 
         {practice ? (
           <section className="passage-practice--plain">
@@ -317,8 +275,42 @@ export default function VerseDetailPage() {
         </SanghaBoundary>
 
         <footer className="passage-endmatter">
+          <div className="passage-endmatter__tools">
+            <KitLink
+              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain&back=${encodeURIComponent(`/read/${item._id}`)}`}
+              size="sm"
+            >
+              Ask Pratibha
+            </KitLink>
+            <ShareComposer
+              item={item}
+              designOpen={folioDesignOpen}
+              onDesignOpenChange={setFolioDesignOpen}
+            />
+            <Sheet>
+              <SheetTrigger render={<button type="button" className="passage-reading__toggle" />}>
+                Journal
+              </SheetTrigger>
+              <SheetContent
+                side="bottom"
+                className="max-h-[85vh] border-t border-amber-200/15 bg-[#0b0b14] sm:max-w-none"
+              >
+                <SheetHeader>
+                  <SheetTitle className="text-amber-100">Journal</SheetTitle>
+                  <SheetDescription className="soft">
+                    A private note on this passage — saved on this device
+                    {item ? ` · ${displayPassageTitle(item)}` : ""}.
+                  </SheetDescription>
+                </SheetHeader>
+                <div className="overflow-y-auto px-4 pb-8">
+                  <JournalPanel passage={item} bare />
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+
           {siblings.length > 1 ? (
-            <nav className="passage-reading__nav passage-reading__nav--flush" aria-label="Passages in this text">
+            <nav className="passage-reading__nav" aria-label="Passages in this text">
               {prevPassage ? (
                 <Link
                   href={passageHref(prevPassage._id)}
@@ -346,49 +338,6 @@ export default function VerseDetailPage() {
               )}
             </nav>
           ) : null}
-
-          <div className="passage-endmatter__actions">
-            <KitLink
-              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain`}
-              size="sm"
-            >
-              Ask about this
-            </KitLink>
-            <KitLink
-              href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=practice`}
-              variant="secondary"
-              size="sm"
-            >
-              Practice chat
-            </KitLink>
-            <ShareComposer
-              item={item}
-              designOpen={folioDesignOpen}
-              onDesignOpenChange={setFolioDesignOpen}
-            />
-            <Sheet>
-              <SheetTrigger
-                render={<Button type="button" variant="ghost" size="sm" className="border border-white/10" />}
-              >
-                Write a note
-              </SheetTrigger>
-              <SheetContent
-                side="bottom"
-                className="max-h-[85vh] border-t border-amber-200/15 bg-[#0b0b14] sm:max-w-none"
-              >
-                <SheetHeader>
-                  <SheetTitle className="text-amber-100">Journal</SheetTitle>
-                  <SheetDescription className="soft">
-                    A private note on this passage — saved on this device
-                    {item ? ` · ${displayPassageTitle(item)}` : ""}.
-                  </SheetDescription>
-                </SheetHeader>
-                <div className="overflow-y-auto px-4 pb-8">
-                  <JournalPanel passage={item} bare />
-                </div>
-              </SheetContent>
-            </Sheet>
-          </div>
         </footer>
 
         {hasApparatus ? (

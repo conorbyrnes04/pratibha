@@ -175,6 +175,7 @@ function ManuscriptEditor() {
                   line: entry.line,
                   aspectRatio: entry.aspectRatio,
                   holographic: entry.holographic,
+                  reading: entry.reading,
                 }}
                 actions={
                   <>

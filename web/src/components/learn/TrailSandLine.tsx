@@ -67,7 +67,7 @@ export function TrailSandLine({ marks, width, height, drawingKey }: TrailSandLin
 
       {segments.map((seg) => (
         <g
-          key={seg.key}
+          key={seg.arriving ? `${seg.key}-arrive` : seg.key}
           className={
             seg.arriving
               ? "learn-trail__sand-seg learn-trail__sand-seg--draw"
@@ -75,6 +75,7 @@ export function TrailSandLine({ marks, width, height, drawingKey }: TrailSandLin
                 ? "learn-trail__sand-seg learn-trail__sand-seg--live"
                 : "learn-trail__sand-seg learn-trail__sand-seg--walked"
           }
+          data-sand-arriving={seg.arriving ? "true" : undefined}
         >
           <path
             d={seg.d}

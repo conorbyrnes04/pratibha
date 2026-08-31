@@ -23,6 +23,7 @@ export function useLearnProgress() {
   const [hydrated, setHydrated] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const syncGen = useRef(0);
   const { sync } = useSyncLearnProgress();
 
   useEffect(() => {
@@ -34,7 +35,9 @@ export function useLearnProgress() {
 
   useEffect(() => {
     if (!hydrated || !user?.id) return;
+    const gen = ++syncGen.current;
     void sync().then((result) => {
+      if (gen !== syncGen.current) return;
       if (result.status === "synced" || result.status === "local") {
         setProgress(result.progress);
         setCompletedAt(result.completedAt);
@@ -59,13 +62,15 @@ export function useLearnProgress() {
     const nextDone = !progress[key];
     if (nextDone) recordPractice(`learn:${key}`);
     setProgress((p) => {
+      const nextProgress = { ...p, [key]: nextDone };
       setCompletedAt((c) => {
         const next = { ...c };
         if (nextDone) next[key] = new Date().toISOString();
         else delete next[key];
+        saveLearnProgressBundle({ progress: nextProgress, completedAt: next });
         return next;
       });
-      return { ...p, [key]: nextDone };
+      return nextProgress;
     });
   }
 
