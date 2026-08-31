@@ -2,7 +2,7 @@ source_file: data/yaml/epictetus_works/epictetus_enchiridion_001.yml
 source_id: EPI_ENC_001
 category: commentary_text
 work_id: epictetus_works
-work_title: Epictetus Works
+work_title: Epictetus — Enchiridion
 unit_id: epictetus_works.epi_enc_001
 unit_label: The Division That Liberates
 title: The Division That Liberates
@@ -120,13 +120,13 @@ commentary: 'The first word of the *Enchiridion*, *tōn ontōn* — "of things t
   the rational evaluator as the source of freedom; Zhuangzi would read even this retaining as a subtle
   form of attachment to selfhood.'
 insight: ''
-practice: 'The next time an appearance arrives that pulls at you — news that disturbs, a message that
-  provokes, a plan that threatens to collapse — stop before any movement toward it. Notice that there
-  is a pull, as if the appearance were reaching across a boundary and gripping you. Now ask precisely:
-  does this belong to what is in my power, or to what is not? If it belongs to the second category, say
-  it plainly, even silently: "This is not mine." Notice what happens in the body when you say this — not
-  as suppression, but as accurate recognition. Then, and only then, decide what, if anything, you will
-  actually do.'
+practice: 'The next time an appearance pulls — news that disturbs, a message that provokes, a plan threatening
+  to collapse — stop before you move toward it. Feel the grip as if the thing were reaching across a boundary.
+  Ask only this: is this mine to govern, or not? If it is not, say it in the body: this is not mine. Freedom
+  is not a later feeling. It is this withdrawal of demand from what was never yours. Then, and only then,
+  decide what, if anything, you will actually do.
+
+  '
 sanskrit_devanagari: Τῶν ὄντων τὰ μέν ἐστιν ἐφ᾽ ἡμῖν, τὰ δὲ οὐκ ἐφ᾽ ἡμῖν. Ἐφ᾽ ἡμῖν μὲν ὑπόληψις, ὁρμή,
   ὄρεξις, ἔκκλισις, καὶ ἑνὶ λόγῳ ὅσα ἡμέτερα ἔργα. Οὐκ ἐφ᾽ ἡμῖν δὲ τὸ σῶμα, ἡ κτῆσις, δόξα, ἀρχή, καὶ
   ἑνὶ λόγῳ ὅσα οὐχ ἡμέτερα ἔργα.
@@ -255,16 +255,17 @@ pratibha_layers:
     form of attachment to selfhood.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: 'The next time an appearance arrives that pulls at you — news that disturbs, a message that provokes,
-    a plan that threatens to collapse — stop before any movement toward it. Notice that there is a pull,
-    as if the appearance were reaching across a boundary and gripping you. Now ask precisely: does this
-    belong to what is in my power, or to what is not? If it belongs to the second category, say it plainly,
-    even silently: "This is not mine." Notice what happens in the body when you say this — not as suppression,
-    but as accurate recognition. Then, and only then, decide what, if anything, you will actually do.'
+  body: 'The next time an appearance pulls — news that disturbs, a message that provokes, a plan threatening
+    to collapse — stop before you move toward it. Feel the grip as if the thing were reaching across a
+    boundary. Ask only this: is this mine to govern, or not? If it is not, say it in the body: this is
+    not mine. Freedom is not a later feeling. It is this withdrawal of demand from what was never yours.
+    Then, and only then, decide what, if anything, you will actually do.
+
+    '
 appendixes: []
 anchor_chapter: ''
 provenance:
-  collection: Epictetus Works
+  collection: Epictetus — Enchiridion
   section: teaching_passage
   original_id: EPI_ENC_001
   source_reference: ''
