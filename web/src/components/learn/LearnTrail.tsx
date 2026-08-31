@@ -3,14 +3,15 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { InkGlyph } from "@/components/InkGlyph";
 import { TrailSandLine, type TrailSandMark } from "@/components/learn/TrailSandLine";
-import { buildTrail, TRAIL_SAND_DRAW_MS } from "@/lib/learn/trail";
+import { buildTrail, currentTrailSit, TRAIL_SAND_DRAW_MS } from "@/lib/learn/trail";
 import { findTraditionTrail, TRADITION_TRAILS } from "@/lib/learn/traditionTrails";
-import { type ProgressMap } from "@/lib/learn/progress";
+import { type CompletedAtMap, type ProgressMap } from "@/lib/learn/progress";
 import { trailSumiGlyph } from "@/lib/sumiGlyphs";
 
 type LearnTrailProps = {
   pathId: string;
   progress: ProgressMap;
+  completedAt?: CompletedAtMap;
   hydrated: boolean;
   /** Open this gate in its own view. */
   onOpenGate: (trackId: string, stepId: string) => void;
@@ -34,6 +35,7 @@ function hashSeed(value: string): number {
 export function LearnTrail({
   pathId,
   progress,
+  completedAt,
   hydrated,
   onOpenGate,
   onSelectPath,
@@ -48,9 +50,12 @@ export function LearnTrail({
   const stageRef = useRef<HTMLDivElement | null>(null);
   const [stage, setStage] = useState({ width: 0, height: 0, marks: [] as TrailSandMark[] });
 
+  const sit = currentTrailSit(progress, pathId, completedAt);
   let currentIndex = nodes.findIndex((n) => !progress[n.key]);
   if (currentIndex === -1) currentIndex = nodes.length - 1;
   const visible = hydrated ? nodes.slice(0, currentIndex + 1) : nodes.slice(0, 1);
+  const rested = Boolean(sit?.rested);
+  const tomorrowKey = rested ? sit?.next?.key : null;
   const visibleKey = visible.map((node) => node.key).join("|");
 
   useLayoutEffect(() => {
@@ -143,11 +148,20 @@ export function LearnTrail({
           <h1 className="library-header__title">{trail.title}</h1>
           <p className="library-header__lede">
             {trail.essential
-              ? "This is the walk. Today opens your current gate. Finish it, and the next node draws itself."
+              ? "This is the walk. Today opens one gate. Finish it, and tomorrow names the next node."
               : trail.lede}
           </p>
         </div>
       </header>
+
+      {rested && sit?.next ? (
+        <div className="learn-trail__rest">
+          <p className="passage-reading__meta">Walked today</p>
+          <p className="library-header__lede">
+            Enough for today. Tomorrow opens {sit.next.title}.
+          </p>
+        </div>
+      ) : null}
 
       <section className="learn-trail mt-8 pb-16">
         <div
@@ -165,7 +179,8 @@ export function LearnTrail({
           <ul className="relative z-10 list-none space-y-16">
             {visible.map((node, i) => {
               const done = !!progress[node.key];
-              const isCurrent = i === currentIndex && !done;
+              const isTomorrow = Boolean(tomorrowKey && node.key === tomorrowKey && !done);
+              const isCurrent = i === currentIndex && !done && !isTomorrow;
               const arriving = drawingKey === node.key;
               const glyph = trailSumiGlyph(node.stepId);
               let state: "recognized" | "arising" | "unmanifest" = "unmanifest";
@@ -213,9 +228,11 @@ export function LearnTrail({
                       aria-label={
                         done
                           ? `${node.title} - Complete`
-                          : isCurrent
-                            ? `${node.title} - Current gate`
-                            : node.title
+                          : isTomorrow
+                            ? `${node.title} - Opens tomorrow`
+                            : isCurrent
+                              ? `${node.title} - Current gate`
+                              : node.title
                       }
                     >
                       <div
@@ -250,7 +267,7 @@ export function LearnTrail({
                         >
                           {node.title}
                         </h3>
-                        {isCurrent || arriving ? (
+                        {isCurrent || arriving || isTomorrow ? (
                           <p className="mt-2 px-3 text-xs leading-relaxed text-stone-400">
                             {node.orientation.split(".")[0]}.
                           </p>
@@ -261,6 +278,12 @@ export function LearnTrail({
                         <div className="mt-3 flex justify-center">
                           <span className="rounded-full border border-emerald-300/35 bg-emerald-300/8 px-2.5 py-0.5 font-sans text-[9px] uppercase tracking-[0.14em] text-emerald-200">
                             Complete
+                          </span>
+                        </div>
+                      ) : isTomorrow ? (
+                        <div className="mt-3 flex justify-center">
+                          <span className="rounded-full border border-amber-200/30 bg-amber-200/6 px-2.5 py-0.5 font-sans text-[9px] uppercase tracking-[0.14em] text-amber-100/80">
+                            Tomorrow
                           </span>
                         </div>
                       ) : null}
@@ -275,13 +298,15 @@ export function LearnTrail({
         {currentIndex >= 0 && currentIndex < nodes.length ? (
           <div className="mt-16 text-center">
             <p className="font-sans text-[11px] uppercase tracking-[0.18em] text-stone-500">
-              {currentIndex === 0
-                ? "Begin the journey"
-                : currentIndex < nodes.length - 1
-                  ? `${currentIndex} ${currentIndex === 1 ? "gate" : "gates"} walked · ${nodes.length - currentIndex} ${
-                      nodes.length - currentIndex === 1 ? "remains" : "remain"
-                    }`
-                  : "The path is complete"}
+              {rested && sit?.next
+                ? `Walked today · tomorrow opens ${sit.next.title}`
+                : currentIndex === 0
+                  ? "Begin the journey"
+                  : currentIndex < nodes.length - 1
+                    ? `${currentIndex} ${currentIndex === 1 ? "gate" : "gates"} walked · ${nodes.length - currentIndex} ${
+                        nodes.length - currentIndex === 1 ? "remains" : "remain"
+                      }`
+                    : "The path is complete"}
             </p>
           </div>
         ) : null}

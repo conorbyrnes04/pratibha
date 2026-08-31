@@ -3,37 +3,25 @@ category: root_text
 work_id: eastman_soul_of_the_indian
 work_title: The Soul of the Indian
 unit_id: eastman_soul_of_the_indian.eastman_soul_of_the_indian_020
-unit_label: The moment that man conceived of a perfect body…
-title: The moment that man conceived of a perfect body…
+unit_label: The moment that man conceived of a perfect body, supple, symmetrical, graceful
+title: The moment that man conceived of a perfect body, supple, symmetrical, graceful
 unit_type: reflection
-commentary: 'Eastman argues that the Indian moral life begins not with abstract doctrine but with a concrete vision: the disciplined
-  body as a spiritual foundation. The passage suggests that physical integrity—maintained through restraint—is inseparable
-  from ethical maturity; the body is not an obstacle to spirit but its necessary temple. This reverses a common Western dualism
-  by making sensory discipline the *ground* of moral life, not its opposite.
-
-
-
-  Key Terms
-
-
-
-  **temple of the spirit** — The body understood as a sacred dwelling for one''s inner life; maintained through discipline
-  and restraint rather than indulgence.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Dhammapada (Buddhist text), verses on the body and discipline:** Both traditions teach that mastery of the senses is foundational
-  to ethical life; the body is the site where spiritual practice begins. Divergence: Eastman frames this as a *social and
-  moral code*—a collective law—whereas the Dhammapada emphasizes individual liberation from suffering.
-
-
-  **Plato, *Republic*: the well-ordered soul in the well-ordered body:** Both propose that physical harmony reflects and enables
-  moral order; the body is not separate from virtue. Divergence: Eastman grounds this in a *system of training* embedded in
-  community life, whereas Plato''s emphasis is more on rational hierarchy within the individual soul.'
+original: The moment that man conceived of a perfect body, supple, symmetrical, graceful, and enduring--in
+  that moment he had laid the foundation of a moral life! No man can hope to maintain such a temple of
+  the spirit beyond the period of adolescence, unless he is able to curb his indulgence in the pleasures
+  of the senses. Upon this truth the Indian built a rigid system of physical training, a social and moral
+  code that was the law of his life.
+commentary: 'Eastman argues that the Indian moral life begins not with abstract doctrine but with a concrete
+  vision: the disciplined body as a spiritual foundation. The passage suggests that physical integrity—maintained
+  through restraint—is inseparable from ethical maturity; the body is not an obstacle to spirit but its
+  necessary temple. This reverses a common Western dualism by making sensory discipline the *ground* of
+  moral life, not its opposite.'
+practice: 'Today, notice one moment when you feel pulled toward sensory indulgence (food, distraction,
+  comfort). Pause and ask: What would it mean to honor my body as a ''temple'' in this small choice? Not
+  through denial, but through conscious restraint. Observe what shifts.'
+abhyasa: 'Today, notice one moment when you feel pulled toward sensory indulgence (food, distraction,
+  comfort). Pause and ask: What would it mean to honor my body as a ''temple'' in this small choice? Not
+  through denial, but through conscious restraint. Observe what shifts.'
 themes:
 - the great mystery
 - silence
@@ -46,28 +34,62 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911, public domain).
+translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911,
+  public domain).
 pratibha_layers:
 - kind: original
   label: Original
-  body: The moment that man conceived of a perfect body, supple, symmetrical, graceful, and enduring--in that moment he had
-    laid the foundation of a moral life! No man can hope to maintain such a temple of the spirit beyond the period of adolescence,
-    unless he is able to curb his indulgence in the pleasures of the senses. Upon this truth the Indian built a rigid system
-    of physical training, a social and moral code that was the law of his life.
+  body: The moment that man conceived of a perfect body, supple, symmetrical, graceful, and enduring--in
+    that moment he had laid the foundation of a moral life! No man can hope to maintain such a temple
+    of the spirit beyond the period of adolescence, unless he is able to curb his indulgence in the pleasures
+    of the senses. Upon this truth the Indian built a rigid system of physical training, a social and
+    moral code that was the law of his life.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Eastman argues that the Indian moral life begins not with abstract doctrine but with a concrete
+    vision: the disciplined body as a spiritual foundation. The passage suggests that physical integrity—maintained
+    through restraint—is inseparable from ethical maturity; the body is not an obstacle to spirit but
+    its necessary temple. This reverses a common Western dualism by making sensory discipline the *ground*
+    of moral life, not its opposite.'
+- kind: key_terms
+  label: Key Terms
+  body: '**temple of the spirit** — The body understood as a sacred dwelling for one''s inner life; maintained
+    through discipline and restraint rather than indulgence.'
+  items:
+  - term: temple of the spirit
+    definition: The body understood as a sacred dwelling for one's inner life; maintained through discipline
+      and restraint rather than indulgence.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Dhammapada (Buddhist text), verses on the body and discipline:** Both traditions teach that
+    mastery of the senses is foundational to ethical life; the body is the site where spiritual practice
+    begins. Divergence: Eastman frames this as a *social and moral code*—a collective law—whereas the
+    Dhammapada emphasizes individual liberation from suffering.
+
+
+    **Plato, *Republic*: the well-ordered soul in the well-ordered body:** Both propose that physical
+    harmony reflects and enables moral order; the body is not separate from virtue. Divergence: Eastman
+    grounds this in a *system of training* embedded in community life, whereas Plato''s emphasis is more
+    on rational hierarchy within the individual soul.'
+  items:
+  - citation: Dhammapada (Buddhist text), verses on the body and discipline
+    resonance: Both traditions teach that mastery of the senses is foundational to ethical life; the body
+      is the site where spiritual practice begins.
+    divergence: Eastman frames this as a *social and moral code*—a collective law—whereas the Dhammapada
+      emphasizes individual liberation from suffering.
+  - citation: 'Plato, *Republic*: the well-ordered soul in the well-ordered body'
+    resonance: Both propose that physical harmony reflects and enables moral order; the body is not separate
+      from virtue.
+    divergence: Eastman grounds this in a *system of training* embedded in community life, whereas Plato's
+      emphasis is more on rational hierarchy within the individual soul.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice one moment when you feel pulled toward sensory indulgence (food, distraction, comfort).
+    Pause and ask: What would it mean to honor my body as a ''temple'' in this small choice? Not through
+    denial, but through conscious restraint. Observe what shifts.'
 provenance:
   collection: The Soul of the Indian
-  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his own words, published
-    to interpret Native spirituality across cultures. A living tradition — offered here as a study reading, with respect to
-    Dakota descendants.
+  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his
+    own words, published to interpret Native spirituality across cultures. A living tradition — offered
+    here as a study reading, with respect to Dakota descendants.
   section: Iv. Barbarism And The Moral Code
-original: The moment that man conceived of a perfect body, supple, symmetrical, graceful, and enduring--in that moment he
-  had laid the foundation of a moral life! No man can hope to maintain such a temple of the spirit beyond the period of adolescence,
-  unless he is able to curb his indulgence in the pleasures of the senses. Upon this truth the Indian built a rigid system
-  of physical training, a social and moral code that was the law of his life.
-abhyasa: 'Today, notice one moment when you feel pulled toward sensory indulgence (food, distraction, comfort). Pause and
-  ask: What would it mean to honor my body as a ''temple'' in this small choice? Not through denial, but through conscious
-  restraint. Observe what shifts.'
-practice: 'Today, notice one moment when you feel pulled toward sensory indulgence (food, distraction, comfort). Pause and
-  ask: What would it mean to honor my body as a ''temple'' in this small choice? Not through denial, but through conscious
-  restraint. Observe what shifts.'
-enriched: true

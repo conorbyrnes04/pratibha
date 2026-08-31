@@ -124,6 +124,69 @@ export function trackById(id: string): LearnTrack | undefined {
   return LEARN_TRACKS.find((t) => t.id === id);
 }
 
+export type EssentialSit = {
+  trackId: string;
+  stepId: string;
+  title: string;
+  key: string;
+  orientation: string;
+  passageId: string;
+  rested: boolean;
+  nextTitle: string | null;
+};
+
+function sameDay(iso: string, now = new Date()): boolean {
+  const then = new Date(iso);
+  return (
+    then.getFullYear() === now.getFullYear() &&
+    then.getMonth() === now.getMonth() &&
+    then.getDate() === now.getDate()
+  );
+}
+
+/** First unfinished essential-spine gate, or today's finished gate if the day is walked. */
+export function currentEssentialSit(
+  progress: ProgressMap,
+  completedAt: CompletedAtMap = {},
+  now = new Date(),
+): EssentialSit | null {
+  const nodes: EssentialSit[] = [];
+  for (const tid of RECOMMENDED_SPINE) {
+    const track = trackById(tid);
+    if (!track) continue;
+    for (const step of track.steps) {
+      nodes.push({
+        trackId: tid,
+        stepId: step.id,
+        title: step.title || step.id,
+        key: stepKey(tid, step.id),
+        orientation: step.keyIdea || step.insight || "",
+        passageId: step.passageId,
+        rested: false,
+        nextTitle: null,
+      });
+    }
+  }
+  if (nodes.length === 0) return null;
+  const openIndex = nodes.findIndex((node) => !progress[node.key]);
+  const index = openIndex === -1 ? nodes.length - 1 : openIndex;
+  if (openIndex > 0) {
+    const just = nodes[openIndex - 1];
+    const at = completedAt[just.key];
+    if (at && sameDay(at, now)) {
+      return {
+        ...just,
+        rested: true,
+        nextTitle: nodes[openIndex]?.title ?? null,
+      };
+    }
+  }
+  const node = nodes[index];
+  return node
+    ? { ...node, nextTitle: nodes[index + 1]?.title ?? null }
+    : null;
+}
+
 export function threadById(id: string): LearnThread | undefined {
   return LEARN_THREADS.find((t) => t.id === id);
 }

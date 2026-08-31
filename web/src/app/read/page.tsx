@@ -83,7 +83,7 @@ function LibraryPageContent() {
   const [theme, setTheme] = useState(searchParams.get("theme") || "all");
   const [learningMode, setLearningMode] = useState(true);
   const [includeDrafts, setIncludeDrafts] = useState(false);
-  const [librarySort, setLibrarySort] = useState<LibrarySort>("title");
+  const [librarySort, setLibrarySort] = useState<LibrarySort>("tradition");
 
   useEffect(() => {
     const maturity = includeDrafts ? "all" : "strong_draft";
@@ -299,7 +299,7 @@ function LibraryPageContent() {
               <p className="library-header__lede">
                 {collection !== "all"
                   ? `${openTomeMeta?.count ?? filtered.length} passages · open a page, then follow related ideas across traditions.`
-                  : "Choose a text. Each tome opens into its passages — then you can follow themes and resonances across the shelf."}
+                  : "Texts grouped by tradition. Open a tome, then follow resonances across the shelf."}
               </p>
             </div>
           </div>

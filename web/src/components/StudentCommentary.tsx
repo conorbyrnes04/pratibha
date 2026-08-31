@@ -34,7 +34,7 @@ function StudentCommentaryInner({
   verseTitle: string;
   onKeepFolio?: () => void;
 }) {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
   const mine = useQuery(api.studentCommentaries.getMine, user ? { verseId } : "skip");
   const profile = useQuery(api.profiles.getMine, user ? {} : "skip");
   const inManuscript = useQuery(api.manuscripts.hasVerse, user ? { verseId } : "skip");
@@ -57,9 +57,11 @@ function StudentCommentaryInner({
     if (profile?.displayName) setDisplayName(profile.displayName);
   }, [profile?.displayName]);
 
+  if (loading) return null;
+
   if (!user) {
     return (
-      <section className="passage-commentary">
+      <section id="commentary" className="passage-commentary">
         <h2 className="passage-layer__label">Your commentary</h2>
         <p className="soft mt-3 text-sm leading-relaxed">
           Sign in to write your own reading of this verse — private first, then offer it
@@ -119,7 +121,7 @@ function StudentCommentaryInner({
   const offered = mine?.status === "offered";
 
   return (
-    <section className="passage-commentary">
+    <section id="commentary" className="passage-commentary">
       <h2 className="passage-layer__label">Your commentary</h2>
       <p className="soft mt-2 text-sm leading-relaxed">
         Say what the line does. This stays private until you offer it.

@@ -22,17 +22,19 @@ export type LibraryTome = {
   themes: string[];
 };
 
-const TRADITION_ORDER = [
+export const TRADITION_ORDER = [
   "Vedānta",
   "Yoga",
   "Kashmir Śaiva",
   "Buddhist",
   "Daoist",
   "Confucian",
+  "Yoruba",
+  "Dakota",
+  "Hebrew",
   "Greek",
   "Christian",
   "Sufi",
-  "Other",
 ] as const;
 
 export type TraditionShelf = {
@@ -64,6 +66,7 @@ const TOME_META: TomeMeta[] = [
   { pattern: /brihad|bṛhadāraṇyaka|brihadaranyaka/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 7th–5th c. BCE", eraYear: -600 },
   { pattern: /mundaka|muṇḍaka/i, tradition: "Vedānta", author: "Upaniṣadic", authored: "c. 5th–3rd c. BCE", eraYear: -400 },
   { pattern: /dhammapada|dhammapāda/i, tradition: "Buddhist", author: "Anonymous (Tipiṭaka)", authored: "c. 3rd c. BCE", eraYear: -250 },
+  { pattern: /vajracchedik|diamond.?s[uū]tra/i, tradition: "Buddhist", author: "Anonymous (Mahāyāna)", authored: "c. 2nd–5th c. CE", eraYear: 350 },
   { pattern: /marcus|meditations/i, tradition: "Greek", author: "Marcus Aurelius", authored: "c. 170–180 CE", eraYear: 175 },
   { pattern: /cloud.?of.?unknowing/i, tradition: "Christian", author: "Anonymous (English mystic)", authored: "c. 14th c. CE", eraYear: 1375 },
   { pattern: /parmenides/i, tradition: "Greek", author: "Parmenides", authored: "c. 5th c. BCE", eraYear: -475 },
@@ -92,7 +95,17 @@ const TOME_META: TomeMeta[] = [
   { pattern: /eckhart|abegescheidenheit|abgeschiedenheit/i, tradition: "Christian", author: "Meister Eckhart", authored: "c. 1300 CE", eraYear: 1300 },
   { pattern: /dionysius|areopagite|mystical.?theology|divine.?names/i, tradition: "Christian", author: "Pseudo-Dionysius", authored: "c. 5th–6th c. CE", eraYear: 500 },
   { pattern: /ibn|arabi|balyani|know yourself/i, tradition: "Sufi", author: "Balyānī", authored: "c. 13th–14th c. CE", eraYear: 1300 },
+  { pattern: /gospel.?of.?thomas/i, tradition: "Christian", author: "Anonymous (Nag Hammadi)", authored: "c. 2nd c. CE", eraYear: 150 },
+  { pattern: /ecclesiastes|qoheleth/i, tradition: "Hebrew", author: "Qoheleth (trad.)", authored: "c. 3rd c. BCE", eraYear: -250 },
+  { pattern: /johnson|yoruba.?faith|yoruba.?religion/i, tradition: "Yoruba", author: "Samuel Johnson", authored: "1921 CE", eraYear: 1921 },
+  { pattern: /yoruba/i, tradition: "Yoruba", author: "Oral (òwe)", authored: "recorded 1894 CE", eraYear: 1894 },
+  { pattern: /eastman|soul of the indian/i, tradition: "Dakota", author: "Charles Eastman (Ohíyeʼsa)", authored: "1911 CE", eraYear: 1911 },
+  { pattern: /zitkala|old indian legends/i, tradition: "Dakota", author: "Zitkála-Šá", authored: "1901 CE", eraYear: 1901 },
 ];
+
+export function traditionForCollection(collection: string): string {
+  return metaFor(collection).tradition;
+}
 
 function metaFor(collection: string): Omit<TomeMeta, "pattern"> {
   for (const row of TOME_META) {
@@ -106,7 +119,7 @@ function metaFor(collection: string): Omit<TomeMeta, "pattern"> {
     }
   }
   return {
-    tradition: "Other",
+    tradition: displayCollectionName(collection) || collection.trim() || "Untitled",
     author: "Unknown",
     authored: "date uncertain",
     eraYear: 0,
@@ -188,7 +201,7 @@ export function sortTomes(tomes: LibraryTome[], sort: LibrarySort): LibraryTome[
   if (sort === "tradition") {
     const rank = (t: string) => {
       const i = (TRADITION_ORDER as readonly string[]).indexOf(t);
-      return i === -1 ? 99 : i;
+      return i === -1 ? TRADITION_ORDER.length : i;
     };
     return copy.sort(
       (a, b) =>
@@ -206,7 +219,11 @@ export function groupTomesByTradition(tomes: LibraryTome[]): TraditionShelf[] {
     list.push(tome);
     buckets.set(tome.tradition, list);
   }
-  return TRADITION_ORDER.filter((t) => buckets.has(t)).map((tradition) => ({
+  const known = TRADITION_ORDER.filter((t) => buckets.has(t));
+  const extra = [...buckets.keys()]
+    .filter((t) => !(TRADITION_ORDER as readonly string[]).includes(t))
+    .sort((a, b) => titleSortKey(a).localeCompare(titleSortKey(b)));
+  return [...known, ...extra].map((tradition) => ({
     tradition,
     tomes: (buckets.get(tradition) || []).sort((a, b) =>
       titleSortKey(a.displayName).localeCompare(titleSortKey(b.displayName)),
@@ -215,7 +232,7 @@ export function groupTomesByTradition(tomes: LibraryTome[]): TraditionShelf[] {
 }
 
 export const LIBRARY_SORT_OPTIONS: Array<{ value: LibrarySort; label: string; hint: string }> = [
+  { value: "tradition", label: "Tradition", hint: "Grouped by lineage" },
   { value: "title", label: "Title", hint: "A–Z by work title" },
   { value: "author", label: "Author", hint: "A–Z by author" },
-  { value: "tradition", label: "Tradition", hint: "Grouped by lineage" },
 ];

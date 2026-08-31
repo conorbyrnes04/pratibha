@@ -6,16 +6,21 @@ interface NavigationProps {
   signedIn?: boolean;
 }
 
-const PRIMARY = [
+const WALK = [
   { id: "home", label: "Today" },
+  { id: "learn", label: "Path" },
   { id: "read", label: "Library" },
+  { id: "manuscript", label: "Mine" },
+];
+
+const STUDY = [
   { id: "chat", label: "Chat" },
-  { id: "learn", label: "Learn" },
-  { id: "lexicon", label: "Lexicon" },
   { id: "journal", label: "Journal" },
-  { id: "manuscript", label: "Manuscript" },
+  { id: "lexicon", label: "Lexicon" },
   { id: "sources", label: "Sources" },
 ];
+
+const PRIMARY = [...WALK, ...STUDY];
 
 export function Navigation({ currentPage, onNavigate, signedIn }: NavigationProps) {
   const pages = [

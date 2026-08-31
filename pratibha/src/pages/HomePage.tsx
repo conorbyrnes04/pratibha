@@ -1,69 +1,87 @@
 import { useEffect, useState } from "@lynx-js/react";
-import { fetchDaily, layerText, type Passage } from "../lib/corpus";
+import { fetchVerse, layerText, type Passage } from "../lib/corpus";
 import { CircleReadings } from "../components/CircleReadings";
 import { ShareComposer } from "../components/ShareComposer";
+import { currentEssentialSit, loadProgress } from "../lib/learn";
 
-export function HomePage() {
-  const [dailyPassage, setDailyPassage] = useState<Passage | null>(null);
+export function HomePage({ onNavigate }: { onNavigate?: (page: string) => void }) {
+  const [sit] = useState(() => {
+    const { progress, completedAt } = loadProgress();
+    return currentEssentialSit(progress, completedAt);
+  });
+  const [verse, setVerse] = useState<Passage | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   useEffect(() => {
-    async function loadDaily() {
+    async function load() {
+      if (!sit?.passageId) {
+        setLoading(false);
+        return;
+      }
       try {
-        setDailyPassage(await fetchDaily());
+        setVerse(await fetchVerse(sit.passageId));
       } catch (err) {
-        console.error("Failed to load daily passage:", err);
-        setError("Could not reach the corpus server. Start FastAPI on port 8000.");
+        console.error("Failed to load today's gate:", err);
+        setError("Could not reach the corpus server.");
       } finally {
         setLoading(false);
       }
     }
-    void loadDaily();
-  }, []);
+    void load();
+  }, [sit?.passageId]);
 
   if (loading) {
     return (
       <view style={{ padding: 20 }}>
-        <text style={{ color: "#999", fontSize: 14 }}>Loading today's passage...</text>
+        <text style={{ color: "#999", fontSize: 14 }}>Opening today's gate…</text>
       </view>
     );
   }
 
-  if (!dailyPassage) {
+  if (!sit) {
     return (
       <view style={{ padding: 20 }}>
         <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 16 }}>
-          Welcome to Pratibha
+          Today
         </text>
-        <text style={{ color: "#ccc", fontSize: 16, marginBottom: 12 }}>
-          Living Manuscript of World Wisdom
-        </text>
-        <text style={{ color: "#999", fontSize: 14 }}>
-          {error || "Explore contemplative wisdom texts across traditions."}
+        <text style={{ color: "#ccc", fontSize: 16 }} bindtap={() => onNavigate?.("learn")}>
+          Open the path
         </text>
       </view>
     );
   }
 
-  const translation = layerText(dailyPassage, "translation");
+  const translation = verse ? layerText(verse, "translation") : "";
 
   return (
     <view style={{ padding: 20 }}>
       <text style={{ color: "#999", fontSize: 12, textTransform: "uppercase", marginBottom: 8 }}>
-        Today's Passage
+        Today
       </text>
       <text style={{ color: "#f0c979", fontSize: 24, fontWeight: "bold", marginBottom: 12 }}>
-        {dailyPassage.title || dailyPassage._id}
+        {sit.rested ? "Enough for today" : sit.title}
       </text>
-      {dailyPassage.collection ? (
-        <text style={{ color: "#ccc", fontSize: 14, marginBottom: 16 }}>{dailyPassage.collection}</text>
-      ) : null}
+      <text style={{ color: "#ccc", fontSize: 16, marginBottom: 16, lineHeight: "24px" }}>
+        {sit.rested && sit.nextTitle
+          ? `Tomorrow opens ${sit.nextTitle}.`
+          : sit.orientation}
+      </text>
       {translation ? (
-        <text style={{ color: "#ddd", fontSize: 16, lineHeight: "26px", marginBottom: 24 }}>{translation}</text>
+        <text style={{ color: "#ddd", fontSize: 16, lineHeight: "26px", marginBottom: 24 }}>
+          {translation}
+        </text>
+      ) : error ? (
+        <text style={{ color: "#999", fontSize: 14, marginBottom: 24 }}>{error}</text>
       ) : null}
-      <ShareComposer passage={dailyPassage} />
-      <CircleReadings verseId={dailyPassage._id} daily />
+      <text
+        style={{ color: "#f0c979", fontSize: 15, marginBottom: 20 }}
+        bindtap={() => onNavigate?.("learn")}
+      >
+        {sit.rested ? "See the trail →" : "Enter this gate →"}
+      </text>
+      {verse ? <ShareComposer passage={verse} /> : null}
+      {verse ? <CircleReadings verseId={verse._id} daily /> : null}
     </view>
   );
 }

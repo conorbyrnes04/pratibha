@@ -234,7 +234,15 @@ export function getResonances(item: VerseItem): Resonance[] {
 }
 
 export function passagePreview(item: VerseItem): string {
-  return stripMarkdown(firstSentence(layerText(item, "translation") || layerText(item, "commentary") || item.source_excerpt || ""));
+  return stripMarkdown(
+    firstSentence(
+      layerText(item, "translation") ||
+        layerText(item, "original") ||
+        layerText(item, "commentary") ||
+        item.source_excerpt ||
+        "",
+    ),
+  );
 }
 
 export function practiceText(item: VerseItem): string {

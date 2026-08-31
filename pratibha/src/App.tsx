@@ -49,7 +49,7 @@ function AppContent() {
       <Navigation currentPage={currentPage} onNavigate={onNavigate} signedIn={Boolean(user)} />
       <scroll-view scroll-y style={{ flex: 1 }}>
         {currentPage === "login" && <LoginPage onLogin={() => onNavigate("home")} />}
-        {currentPage === "home" && <HomePage />}
+        {currentPage === "home" && <HomePage onNavigate={onNavigate} />}
         {currentPage === "read" && <ReadPage openVerseId={openVerseId} />}
         {currentPage === "chat" && <ChatPage />}
         {currentPage === "learn" && <LearnPage />}

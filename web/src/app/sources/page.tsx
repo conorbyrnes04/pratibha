@@ -6,9 +6,9 @@ import { getSources } from "@/lib/api";
 import { collectionGlyph } from "@/lib/glyphs";
 import { collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { TRADITION_ORDER } from "@/lib/libraryTomes";
 import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
-import { Section } from "@/components/ui/Section";
 import { Disclosure } from "@/components/ui/Disclosure";
 import type { SourceAttribution } from "@/lib/types";
 
@@ -53,10 +53,9 @@ function SourceCard({ item }: { item: SourceAttribution }) {
               <Glyph name={glyph} size="sm" />
             </span>
             <div>
-              <h2 className="text-2xl font-semibold tracking-[-0.03em] text-stone-100">
+              <h3 className="text-2xl font-semibold tracking-[-0.03em] text-stone-100">
                 {displayCollectionName(item.collection)}
-              </h2>
-              <p className="soft mt-1 font-sans text-sm">{item.tradition}</p>
+              </h3>
             </div>
           </div>
           <div className="flex flex-wrap gap-2 font-sans text-xs uppercase tracking-[0.14em]">
@@ -142,6 +141,26 @@ function SourceCard({ item }: { item: SourceAttribution }) {
   );
 }
 
+function groupSourcesByTradition(items: SourceAttribution[]) {
+  const buckets = new Map<string, SourceAttribution[]>();
+  for (const item of items) {
+    const key = (item.tradition || "").trim() || displayCollectionName(item.collection) || item.collection;
+    const list = buckets.get(key) || [];
+    list.push(item);
+    buckets.set(key, list);
+  }
+  const known = TRADITION_ORDER.filter((tradition) => buckets.has(tradition));
+  const extra = [...buckets.keys()]
+    .filter((tradition) => !(TRADITION_ORDER as readonly string[]).includes(tradition))
+    .sort((a, b) => a.localeCompare(b));
+  return [...known, ...extra].map((tradition) => ({
+    tradition,
+    items: (buckets.get(tradition) || []).sort((a, b) =>
+      displayCollectionName(a.collection).localeCompare(displayCollectionName(b.collection)),
+    ),
+  }));
+}
+
 export default function SourcesPage() {
   const [items, setItems] = useState<SourceAttribution[]>([]);
   const [summary, setSummary] = useState({
@@ -168,11 +187,7 @@ export default function SourcesPage() {
       .catch(() => setError("Could not load sources."));
   }, []);
 
-  const inCorpus = useMemo(() => items.filter((i) => i.passages_in_corpus > 0), [items]);
-  const comingSoon = useMemo(
-    () => items.filter((i) => i.status === "in_progress" || i.passages_in_corpus === 0),
-    [items],
-  );
+  const shelves = useMemo(() => groupSourcesByTradition(items), [items]);
 
   return (
     <main className="page-shell page-shell--reading">
@@ -186,7 +201,7 @@ export default function SourcesPage() {
           <h1 className="library-header__title">Sources</h1>
           <p className="library-header__lede">
             Pratibha is offered freely to students, so it must be built without stealing. Every English rendering here stands on
-            a public-domain source or original authorship — and each text says exactly where it comes from.
+            a public-domain source or original authorship — grouped by tradition, each text saying exactly where it comes from.
           </p>
 
           <section className="mt-8 max-w-[var(--reading-measure)] border-t border-[rgb(240_201_121_/_0.14)] pt-5">
@@ -240,23 +255,21 @@ export default function SourcesPage() {
           </div>
         </header>
 
-        <Section title="In the library" as="h2">
-          <div className="space-y-5">
-            {inCorpus.map((item) => (
-              <SourceCard key={item.id} item={item} />
-            ))}
-          </div>
-        </Section>
-
-        {comingSoon.length > 0 ? (
-          <Section title="Coming into the library" as="h2">
+        {shelves.map((shelf) => (
+          <section key={shelf.tradition}>
+            <div className="mb-4 flex items-baseline justify-between gap-3">
+              <h2 className="layer-heading text-amber-100/90">{shelf.tradition}</h2>
+              <p className="soft font-sans text-xs">
+                {shelf.items.length} {shelf.items.length === 1 ? "text" : "texts"}
+              </p>
+            </div>
             <div className="space-y-5">
-              {comingSoon.map((item) => (
+              {shelf.items.map((item) => (
                 <SourceCard key={item.id} item={item} />
               ))}
             </div>
-          </Section>
-        ) : null}
+          </section>
+        ))}
 
         <p className="soft font-sans text-sm leading-relaxed">
           See a missing or incorrect credit?{" "}

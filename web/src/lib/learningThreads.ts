@@ -806,6 +806,18 @@ export function findThread(threadId: string): LearningThread | undefined {
   return LEARNING_THREADS.find((t) => t.id === threadId);
 }
 
+/** Resolve a retired theme URL onto the path gate that bead sat on. */
+export function gateForThreadSearch(
+  threadId?: string | null,
+  beadId?: string | null,
+): { trackId: string; stepId: string } | null {
+  const thread = threadId ? findThread(threadId) : undefined;
+  if (!thread) return null;
+  const bead = (beadId && findBead(thread, beadId)) || thread.steps[0];
+  if (!bead) return null;
+  return { trackId: bead.trackId, stepId: bead.stepId };
+}
+
 export function findBead(thread: LearningThread, beadId: string): ThreadStepRef | undefined {
   return thread.steps.find((s) => s.id === beadId);
 }

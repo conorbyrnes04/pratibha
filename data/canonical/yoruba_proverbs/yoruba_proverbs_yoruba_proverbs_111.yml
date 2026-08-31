@@ -6,40 +6,18 @@ unit_id: yoruba_proverbs.yoruba_proverbs_111
 unit_label: As one is walking, so is he met
 title: As one is walking, so is he met
 unit_type: proverb
-commentary: 'This proverb suggests that one''s manner of moving through the world—one''s conduct, intention, or inner state—shapes
-  what one encounters. It is not fatalistic but relational: the world meets us according to how we present ourselves to it.
-  The proverb invites reflection on responsibility: we are not passive recipients of circumstance, but active participants
-  whose bearing and choices draw forth corresponding responses.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries meaning across contexts
-  and generations.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Tao Te Ching, ch. 15:** Both suggest that inner alignment precedes outer circumstance: ''The ancient masters were profound
-  and subtle... because they were subtle, they must be described as reluctant to meet others.'' One''s state of being determines
-  the meeting. Divergence: The Tao Te Ching emphasizes withdrawal and non-action; the Yoruba proverb emphasizes active walking
-  and intentional movement.
-
-
-  **Proverbs 27:12 (Hebrew Bible):** Both imply moral reciprocity: ''The prudent see danger and take refuge, but the simple
-  keep going and pay the penalty.'' How one walks determines what one meets. Divergence: The Biblical proverb frames this
-  as avoidance of harm; the Yoruba saying is more neutral—it describes a universal law of correspondence, not judgment.
-
-
-  **Heraclitus, Fragment 50:** Both suggest dynamic encounter: ''The same river, stepping into it, we step and do not step.''
-  Meeting is not fixed but depends on the walker''s state. Divergence: Heraclitus emphasizes flux and paradox; the Yoruba
-  proverb is more direct about agency and intentionality in shaping encounter.'
+translation: As one is walking, so is he met.
+commentary: 'This proverb suggests that one''s manner of moving through the world—one''s conduct, intention,
+  or inner state—shapes what one encounters. It is not fatalistic but relational: the world meets us according
+  to how we present ourselves to it. The proverb invites reflection on responsibility: we are not passive
+  recipients of circumstance, but active participants whose bearing and choices draw forth corresponding
+  responses.'
+practice: 'Today, pause before an important interaction or decision. Notice your inner ''walk''—your attitude,
+  openness, or defensiveness. Consider: what kind of meeting am I inviting by how I am moving through
+  this moment? Adjust if needed.'
+abhyasa: 'Today, pause before an important interaction or decision. Notice your inner ''walk''—your attitude,
+  openness, or defensiveness. Consider: what kind of meeting am I inviting by how I am moving through
+  this moment? Adjust if needed.'
 themes:
 - wisdom
 - proverb
@@ -52,21 +30,74 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
   body: As one is walking, so is he met.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This proverb suggests that one''s manner of moving through the world—one''s conduct, intention,
+    or inner state—shapes what one encounters. It is not fatalistic but relational: the world meets us
+    according to how we present ourselves to it. The proverb invites reflection on responsibility: we
+    are not passive recipients of circumstance, but active participants whose bearing and choices draw
+    forth corresponding responses.'
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries
+    meaning across contexts and generations.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for wisdom that carries
+      meaning across contexts and generations.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Tao Te Ching, ch. 15:** Both suggest that inner alignment precedes outer circumstance: ''The
+    ancient masters were profound and subtle... because they were subtle, they must be described as reluctant
+    to meet others.'' One''s state of being determines the meeting. Divergence: The Tao Te Ching emphasizes
+    withdrawal and non-action; the Yoruba proverb emphasizes active walking and intentional movement.
+
+
+    **Proverbs 27:12 (Hebrew Bible):** Both imply moral reciprocity: ''The prudent see danger and take
+    refuge, but the simple keep going and pay the penalty.'' How one walks determines what one meets.
+    Divergence: The Biblical proverb frames this as avoidance of harm; the Yoruba saying is more neutral—it
+    describes a universal law of correspondence, not judgment.
+
+
+    **Heraclitus, Fragment 50:** Both suggest dynamic encounter: ''The same river, stepping into it, we
+    step and do not step.'' Meeting is not fixed but depends on the walker''s state. Divergence: Heraclitus
+    emphasizes flux and paradox; the Yoruba proverb is more direct about agency and intentionality in
+    shaping encounter.'
+  items:
+  - citation: Tao Te Ching, ch. 15
+    resonance: 'Both suggest that inner alignment precedes outer circumstance: ''The ancient masters were
+      profound and subtle... because they were subtle, they must be described as reluctant to meet others.''
+      One''s state of being determines the meeting.'
+    divergence: The Tao Te Ching emphasizes withdrawal and non-action; the Yoruba proverb emphasizes active
+      walking and intentional movement.
+  - citation: Proverbs 27:12 (Hebrew Bible)
+    resonance: 'Both imply moral reciprocity: ''The prudent see danger and take refuge, but the simple
+      keep going and pay the penalty.'' How one walks determines what one meets.'
+    divergence: The Biblical proverb frames this as avoidance of harm; the Yoruba saying is more neutral—it
+      describes a universal law of correspondence, not judgment.
+  - citation: Heraclitus, Fragment 50
+    resonance: 'Both suggest dynamic encounter: ''The same river, stepping into it, we step and do not
+      step.'' Meeting is not fixed but depends on the walker''s state.'
+    divergence: Heraclitus emphasizes flux and paradox; the Yoruba proverb is more direct about agency
+      and intentionality in shaping encounter.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, pause before an important interaction or decision. Notice your inner ''walk''—your attitude,
+    openness, or defensiveness. Consider: what kind of meeting am I inviting by how I am moving through
+    this moment? Adjust if needed.'
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: As one is walking, so is he met.
-abhyasa: 'Today, pause before an important interaction or decision. Notice your inner ''walk''—your attitude, openness, or
-  defensiveness. Consider: what kind of meeting am I inviting by how I am moving through this moment? Adjust if needed.'
-practice: 'Today, pause before an important interaction or decision. Notice your inner ''walk''—your attitude, openness, or
-  defensiveness. Consider: what kind of meeting am I inviting by how I am moving through this moment? Adjust if needed.'
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

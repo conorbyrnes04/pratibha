@@ -64,15 +64,66 @@ function verseCopy(item: VerseItem) {
   };
 }
 
-export function ShareComposer({
-  item,
-  designOpen,
-  onDesignOpenChange,
-}: {
+type ShareComposerProps = {
   item: VerseItem;
   designOpen?: boolean;
   onDesignOpenChange?: (open: boolean) => void;
-}) {
+};
+
+type ShareCloud = {
+  addVerse: (args: {
+    verseId: string;
+    verseTitle: string;
+    note?: string;
+    mark: ShareForceMark;
+    ink: ShareInk;
+    textMode: ShareTextMode;
+    line?: number;
+    aspectRatio: ShareAspectRatio;
+    holographic: boolean;
+  }) => Promise<unknown>;
+  manuscript?: {
+    entries: {
+      verseId: string;
+      mark?: string;
+      ink?: string;
+      textMode?: string;
+      line?: number;
+      aspectRatio?: string;
+      note?: string;
+      holographic?: boolean;
+    }[];
+  } | null;
+  commentary?: { body?: string } | null;
+};
+
+export function ShareComposer(props: ShareComposerProps) {
+  if (!CONVEX_ENABLED) return <ShareComposerInner {...props} />;
+  return <ShareComposerCloud {...props} />;
+}
+
+function ShareComposerCloud(props: ShareComposerProps) {
+  const addVerse = useMutation(api.manuscripts.addVerse);
+  const { user } = useAuth();
+  const manuscript = useQuery(api.manuscripts.getMine, user ? {} : "skip");
+  const commentary = useQuery(
+    api.studentCommentaries.getMine,
+    user ? { verseId: props.item._id } : "skip",
+  );
+  return (
+    <ShareComposerInner
+      {...props}
+      cloud={{ addVerse, manuscript, commentary }}
+    />
+  );
+}
+
+function ShareComposerInner({
+  item,
+  designOpen,
+  onDesignOpenChange,
+  cloud,
+}: ShareComposerProps & { cloud?: ShareCloud }) {
   const copy = useMemo(() => verseCopy(item), [item]);
   const verseMark = useMemo(() => verseShareMark(item), [item]);
   const [mark, setMark] = useState<ShareForceMark>(verseMark);
@@ -88,16 +139,12 @@ export function ShareComposer({
   }
   const [folioNote, setFolioNote] = useState("");
   const [holographic, setHolographic] = useState(false);
-  const addVerse = useMutation(api.manuscripts.addVerse);
   const [busy, setBusy] = useState<string | null>(null);
   const [openMarks, setOpenMarks] = useState<Set<ShareForceMark>>(() => new Set([verseMark, "lotus", "circle", "moon", "fire", "tree", "heart", "water", "mountain"]));
   const cardRef = useRef<HTMLDivElement>(null);
   const { user } = useAuth();
-  const manuscript = useQuery(api.manuscripts.getMine, CONVEX_ENABLED && user ? {} : "skip");
-  const commentary = useQuery(
-    api.studentCommentaries.getMine,
-    CONVEX_ENABLED && user ? { verseId: item._id } : "skip",
-  );
+  const manuscript = cloud?.manuscript;
+  const commentary = cloud?.commentary;
   const earnedHolo = Boolean(commentary?.body?.trim());
   const extraVerseIds = manuscript?.entries.map((entry) => entry.verseId) ?? [];
 
@@ -297,32 +344,45 @@ export function ShareComposer({
       toast.success("Card saved. Attach that image in WhatsApp.", { duration: 6000 });
     } catch (err) {
       if (err instanceof Error && err.name === "AbortError") return;
-      toast.error(err instanceof Error ? err.message : "Could not share to WhatsApp.");
+      toast.error(friendlyShareError(err, "Could not share to WhatsApp."));
     } finally {
       setBusy(null);
     }
+  }
+
+  function friendlyShareError(err: unknown, fallback: string) {
+    const msg = err instanceof Error ? err.message : fallback;
+    if (/not authenticated|sign in|convex client|convex provider/i.test(msg)) return fallback;
+    return msg;
+  }
+
+  async function shareFolioToOS(filename: string) {
+    const blob = await pngBlob();
+    const file = new File([blob], filename, { type: "image/png" });
+    const { caption } = captionAndUrl();
+    void navigator.clipboard.writeText(caption).catch(() => {});
+    if (await nativeShare(file, caption)) return true;
+    downloadBlob(blob, filename);
+    return false;
   }
 
   async function shareToInstagram(destination: "story" | "post") {
     const destId = destination === "story" ? "instagram_story" : "instagram_post";
     setBusy(destId);
     setAspectRatio(destination);
-    const { caption } = captionAndUrl();
-    void navigator.clipboard.writeText(caption).catch(() => {});
-    openInstagramApp(destination);
     try {
-      await new Promise((resolve) => window.setTimeout(resolve, 80));
-      const blob = await pngBlob();
-      downloadBlob(blob, `pratibha-${destination}-${item._id}.png`);
+      const handed = await shareFolioToOS(`pratibha-${destination}-${item._id}.png`);
+      if (handed) return;
+      openInstagramApp(destination);
       toast.success(
         destination === "story"
-          ? "Instagram opened. Story image saved — add it from Recents."
-          : "Instagram opened. Post image saved — pick it from Recents.",
+          ? "Folio saved. Add it from Recents in Instagram."
+          : "Folio saved. Pick it from Recents in Instagram.",
         { duration: 6000 },
       );
     } catch (err) {
       if (err instanceof Error && err.name === "AbortError") return;
-      toast.error(err instanceof Error ? err.message : "Could not share to Instagram.");
+      toast.error(friendlyShareError(err, "Could not share the folio."));
     } finally {
       setBusy(null);
     }
@@ -369,7 +429,7 @@ export function ShareComposer({
       toast.success("Image saved. Caption copied — open Signal to send.");
     } catch (err) {
       if (err instanceof Error && err.name === "AbortError") return;
-      toast.error(err instanceof Error ? err.message : "Could not share.");
+      toast.error(friendlyShareError(err, "Could not share the folio."));
     } finally {
       setBusy(null);
     }
@@ -378,16 +438,12 @@ export function ShareComposer({
   async function shareMore() {
     setBusy("more");
     try {
-      const blob = await pngBlob();
-      const file = new File([blob], `pratibha-${item._id}.png`, { type: "image/png" });
-      const { caption } = captionAndUrl();
-      if (await nativeShare(file, caption)) return;
-      downloadBlob(blob, file.name);
-      await navigator.clipboard.writeText(caption);
-      toast.success("Image saved. Caption copied.");
+      const handed = await shareFolioToOS(`pratibha-${item._id}.png`);
+      if (handed) return;
+      toast.success("Folio saved. Caption copied.");
     } catch (err) {
       if (err instanceof Error && err.name === "AbortError") return;
-      toast.error(err instanceof Error ? err.message : "Could not share.");
+      toast.error(friendlyShareError(err, "Could not share the folio."));
     } finally {
       setBusy(null);
     }
@@ -407,7 +463,11 @@ export function ShareComposer({
     }
     setBusy("keep");
     try {
-      await addVerse({
+      if (!cloud?.addVerse) {
+        toast.error("Sign in to keep a manuscript.");
+        return;
+      }
+      await cloud.addVerse({
         verseId: item._id,
         verseTitle: copy.title,
         note: folioNote || undefined,
@@ -423,7 +483,7 @@ export function ShareComposer({
       refreshUnlocks();
       toast.success("Card kept in your manuscript.");
     } catch (err) {
-      toast.error(err instanceof Error ? err.message : "Could not add to your manuscript.");
+      toast.error(friendlyShareError(err, "Could not add to your manuscript."));
     } finally {
       setBusy(null);
     }
@@ -648,7 +708,7 @@ export function ShareComposer({
                 disabled={busy !== null}
                 onClick={() => void shareMore()}
               >
-                {busy === "more" ? "Making the page…" : "More"}
+                {busy === "more" ? "Sharing…" : "Share folio"}
               </Button>
               <Button type="button" size="sm" variant="secondary" onClick={() => void copyLink()}>
                 Copy link

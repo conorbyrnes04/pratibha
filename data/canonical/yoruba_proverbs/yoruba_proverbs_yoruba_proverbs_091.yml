@@ -6,37 +6,19 @@ unit_id: yoruba_proverbs.yoruba_proverbs_091
 unit_label: To-day I am going;
 title: To-day I am going;
 unit_type: proverb
-commentary: 'This proverb teaches that inconsistency and unreliability erode trust and community investment. The stranger,
-  hearing only repeated departures, has no reason to commit effort to something that requires time and presence. The image
-  of the ahnsa—a plant needing sustained care—shows how transience makes mutual flourishing impossible. The proverb suggests
-  that words without the backing of staying-power are hollow.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries meaning through metaphor
-  and lived example.
-
-  **ahnsa** — A plant mentioned in this proverb that bears fruit rapidly but requires the planter''s sustained presence and
-  care to thrive.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Ecclesiastes 3:1–2 (''a time to plant, and a time to pluck up that which is planted''):** Both texts recognize that planting
-  requires alignment with time and seasons; commitment is not arbitrary. Divergence: Ecclesiastes emphasizes divine timing
-  and the rhythm of seasons; the Yoruba proverb emphasizes human reliability and the stranger''s reasonable doubt.
-
-
-  **Confucian *Analects* on constancy (chéng 誠):** Both traditions link reliability and presence to moral credibility and
-  the possibility of shared life. Divergence: The Confucian emphasis is on inner sincerity ripening outward; the Yoruba proverb
-  focuses on the practical, observable fact of staying.'
+translation: '"To-day I am going; to-morrow I am going," gives the stranger no encouragement to plant
+  the ahnsa (a plant which bears fruit van rapidly).'
+commentary: This proverb teaches that inconsistency and unreliability erode trust and community investment.
+  The stranger, hearing only repeated departures, has no reason to commit effort to something that requires
+  time and presence. The image of the ahnsa—a plant needing sustained care—shows how transience makes
+  mutual flourishing impossible. The proverb suggests that words without the backing of staying-power
+  are hollow.
+practice: 'Today, notice one commitment you have made—to a person, a project, or a place. Ask yourself:
+  Am I present to it, or do my actions say ''I am going''? What would it mean to plant something here,
+  knowing you will tend it?'
+abhyasa: 'Today, notice one commitment you have made—to a person, a project, or a place. Ask yourself:
+  Am I present to it, or do my actions say ''I am going''? What would it mean to plant something here,
+  knowing you will tend it?'
 themes:
 - wisdom
 - proverb
@@ -49,23 +31,68 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
-  body: '"To-day I am going; to-morrow I am going," gives the stranger no encouragement to plant the ahnsa (a plant which
-    bears fruit van rapidly).'
+  body: '"To-day I am going; to-morrow I am going," gives the stranger no encouragement to plant the ahnsa
+    (a plant which bears fruit van rapidly).'
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: This proverb teaches that inconsistency and unreliability erode trust and community investment.
+    The stranger, hearing only repeated departures, has no reason to commit effort to something that requires
+    time and presence. The image of the ahnsa—a plant needing sustained care—shows how transience makes
+    mutual flourishing impossible. The proverb suggests that words without the backing of staying-power
+    are hollow.
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries
+    meaning through metaphor and lived example.
+
+    **ahnsa** — A plant mentioned in this proverb that bears fruit rapidly but requires the planter''s
+    sustained presence and care to thrive.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for wisdom that carries
+      meaning through metaphor and lived example.
+  - term: ahnsa
+    definition: A plant mentioned in this proverb that bears fruit rapidly but requires the planter's
+      sustained presence and care to thrive.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Ecclesiastes 3:1–2 (''a time to plant, and a time to pluck up that which is planted''):** Both
+    texts recognize that planting requires alignment with time and seasons; commitment is not arbitrary.
+    Divergence: Ecclesiastes emphasizes divine timing and the rhythm of seasons; the Yoruba proverb emphasizes
+    human reliability and the stranger''s reasonable doubt.
+
+
+    **Confucian *Analects* on constancy (chéng 誠):** Both traditions link reliability and presence to
+    moral credibility and the possibility of shared life. Divergence: The Confucian emphasis is on inner
+    sincerity ripening outward; the Yoruba proverb focuses on the practical, observable fact of staying.'
+  items:
+  - citation: Ecclesiastes 3:1–2 ('a time to plant, and a time to pluck up that which is planted')
+    resonance: Both texts recognize that planting requires alignment with time and seasons; commitment
+      is not arbitrary.
+    divergence: Ecclesiastes emphasizes divine timing and the rhythm of seasons; the Yoruba proverb emphasizes
+      human reliability and the stranger's reasonable doubt.
+  - citation: Confucian *Analects* on constancy (chéng 誠)
+    resonance: Both traditions link reliability and presence to moral credibility and the possibility
+      of shared life.
+    divergence: The Confucian emphasis is on inner sincerity ripening outward; the Yoruba proverb focuses
+      on the practical, observable fact of staying.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice one commitment you have made—to a person, a project, or a place. Ask yourself:
+    Am I present to it, or do my actions say ''I am going''? What would it mean to plant something here,
+    knowing you will tend it?'
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: '"To-day I am going; to-morrow I am going," gives the stranger no encouragement to plant the ahnsa (a plant which
-  bears fruit van rapidly).'
-abhyasa: 'Today, notice one commitment you have made—to a person, a project, or a place. Ask yourself: Am I present to it,
-  or do my actions say ''I am going''? What would it mean to plant something here, knowing you will tend it?'
-practice: 'Today, notice one commitment you have made—to a person, a project, or a place. Ask yourself: Am I present to it,
-  or do my actions say ''I am going''? What would it mean to plant something here, knowing you will tend it?'
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

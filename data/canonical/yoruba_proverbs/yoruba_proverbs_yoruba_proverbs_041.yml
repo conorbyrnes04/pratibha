@@ -6,33 +6,15 @@ unit_id: yoruba_proverbs.yoruba_proverbs_041
 unit_label: Bar, hear the other before you decide
 title: Bar, hear the other before you decide
 unit_type: proverb
-commentary: 'This proverb teaches that judgment requires listening—that a decision made without hearing the other perspective
-  is incomplete and potentially unjust. The word ''Bar'' (likely an address or imperative) calls the listener to pause before
-  concluding. It reflects a practical wisdom about the cost of haste in matters of dispute or understanding, grounding ethics
-  in the simple act of attention.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for carrying wisdom through speech and dialogue
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Proverbs 18:15 (Hebrew Bible):** Both emphasize listening as a prerequisite for wisdom: ''The heart of the prudent acquires
-  knowledge; the ear of the wise seeks knowledge.'' Divergence: The Biblical verse frames listening as a personal acquisition
-  of knowledge; the Yoruba proverb frames it as a relational obligation before judgment.
-
-
-  **Dhammapada, verse 258 (Buddhist tradition):** Both warn against hasty judgment: ''Do not despise what you have received,
-  nor envy others. A monk who envies others does not obtain peace.'' Divergence: The Dhammapada addresses internal envy and
-  attachment; this proverb addresses the external practice of fair hearing in dispute.'
+translation: Bar, hear the other before you decide.
+commentary: This proverb teaches that judgment requires listening—that a decision made without hearing
+  the other perspective is incomplete and potentially unjust. The word 'Bar' (likely an address or imperative)
+  calls the listener to pause before concluding. It reflects a practical wisdom about the cost of haste
+  in matters of dispute or understanding, grounding ethics in the simple act of attention.
+practice: Today, when you feel certain about a disagreement or misunderstanding, pause and ask the other
+  person to speak their view fully before you respond. Notice what shifts in your certainty.
+abhyasa: Today, when you feel certain about a disagreement or misunderstanding, pause and ask the other
+  person to speak their view fully before you respond. Notice what shifts in your certainty.
 themes:
 - wisdom
 - proverb
@@ -45,21 +27,60 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
   body: Bar, hear the other before you decide.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: This proverb teaches that judgment requires listening—that a decision made without hearing the
+    other perspective is incomplete and potentially unjust. The word 'Bar' (likely an address or imperative)
+    calls the listener to pause before concluding. It reflects a practical wisdom about the cost of haste
+    in matters of dispute or understanding, grounding ethics in the simple act of attention.
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for carrying wisdom
+    through speech and dialogue'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for carrying wisdom through
+      speech and dialogue
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Proverbs 18:15 (Hebrew Bible):** Both emphasize listening as a prerequisite for wisdom: ''The
+    heart of the prudent acquires knowledge; the ear of the wise seeks knowledge.'' Divergence: The Biblical
+    verse frames listening as a personal acquisition of knowledge; the Yoruba proverb frames it as a relational
+    obligation before judgment.
+
+
+    **Dhammapada, verse 258 (Buddhist tradition):** Both warn against hasty judgment: ''Do not despise
+    what you have received, nor envy others. A monk who envies others does not obtain peace.'' Divergence:
+    The Dhammapada addresses internal envy and attachment; this proverb addresses the external practice
+    of fair hearing in dispute.'
+  items:
+  - citation: Proverbs 18:15 (Hebrew Bible)
+    resonance: 'Both emphasize listening as a prerequisite for wisdom: ''The heart of the prudent acquires
+      knowledge; the ear of the wise seeks knowledge.'''
+    divergence: The Biblical verse frames listening as a personal acquisition of knowledge; the Yoruba
+      proverb frames it as a relational obligation before judgment.
+  - citation: Dhammapada, verse 258 (Buddhist tradition)
+    resonance: 'Both warn against hasty judgment: ''Do not despise what you have received, nor envy others.
+      A monk who envies others does not obtain peace.'''
+    divergence: The Dhammapada addresses internal envy and attachment; this proverb addresses the external
+      practice of fair hearing in dispute.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, when you feel certain about a disagreement or misunderstanding, pause and ask the other
+    person to speak their view fully before you respond. Notice what shifts in your certainty.
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: Bar, hear the other before you decide.
-abhyasa: Today, when you feel certain about a disagreement or misunderstanding, pause and ask the other person to speak their
-  view fully before you respond. Notice what shifts in your certainty.
-practice: Today, when you feel certain about a disagreement or misunderstanding, pause and ask the other person to speak their
-  view fully before you respond. Notice what shifts in your certainty.
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

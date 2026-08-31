@@ -3,43 +3,26 @@ category: root_text
 work_id: eastman_soul_of_the_indian
 work_title: The Soul of the Indian
 unit_id: eastman_soul_of_the_indian.eastman_soul_of_the_indian_012
-unit_label: The fur-traders, the “Black Robe” priests, the…
-title: The fur-traders, the “Black Robe” priests, the…
+unit_label: The fur-traders, the “Black Robe” priests, the military
+title: The fur-traders, the “Black Robe” priests, the military
 unit_type: reflection
-commentary: 'Eastman identifies a specific historical sequence of cultural disruption—fur trade, Catholic missions, military
-  conquest, Protestant conversion efforts—that preceded and prepared the way for reservation confinement. His point is epistemological
-  as well as historical: by the time outsiders produced ''authentic'' written accounts of Dakota life, the tradition had already
-  been fractured by these forces, making any such study necessarily incomplete or distorted. He insists on recognizing this
-  timeline of intervention, not treating Dakota spirituality as a static ''pre-contact'' object.
-
-
-
-  Key Terms
-
-
-
-  **Black Robe** — Eastman''s term for Catholic missionaries, named for their distinctive vestments; used here to mark a specific
-  wave of religious conversion effort.
-
-  **native ideals** — In this passage, the spiritual and social values of Dakota nations before external disruption; what
-  Eastman argues was compromised by trade and missionary activity.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Edward Said, *Orientalism* (1978):** Both Eastman and Said argue that outsider ''knowledge'' of a culture is shaped by
-  the power relations and commercial interests that produced it—the observer is never neutral. Divergence: Eastman writes
-  from inside the tradition he describes, as witness and survivor; Said theorizes from literary and historical analysis of
-  Western discourse about the East.
-
-
-  **Walter Benjamin, ''Theses on the Philosophy of History'' (1940):** Both reject a simple linear narrative of ''progress''
-  and insist that victors'' accounts erase the violence embedded in historical transitions. Divergence: Eastman names specific
-  agents (traders, priests, soldiers); Benjamin theorizes history''s structure more abstractly, without naming particular
-  communities.'
+original: The fur-traders, the “Black Robe” priests, the military, and finally the Protestant missionaries,
+  were the men who began the disintegration of the Indian nations and the overthrow of their religion,
+  seventy-five to a hundred years before they were forced to enter upon reservation life. We have no authentic
+  study of them until well along in the transition period, when whiskey and trade had already debauched
+  their native ideals.
+commentary: 'Eastman identifies a specific historical sequence of cultural disruption—fur trade, Catholic
+  missions, military conquest, Protestant conversion efforts—that preceded and prepared the way for reservation
+  confinement. His point is epistemological as well as historical: by the time outsiders produced ''authentic''
+  written accounts of Dakota life, the tradition had already been fractured by these forces, making any
+  such study necessarily incomplete or distorted. He insists on recognizing this timeline of intervention,
+  not treating Dakota spirituality as a static ''pre-contact'' object.'
+practice: Reflect on a tradition or practice you know well. When did you first learn about it? Who taught
+  you, and who had already shaped or changed it before your learning? Notice what you cannot know because
+  of that history.
+abhyasa: Reflect on a tradition or practice you know well. When did you first learn about it? Who taught
+  you, and who had already shaped or changed it before your learning? Notice what you cannot know because
+  of that history.
 themes:
 - the great mystery
 - silence
@@ -52,26 +35,69 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911, public domain).
+translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911,
+  public domain).
 pratibha_layers:
 - kind: original
   label: Original
-  body: The fur-traders, the “Black Robe” priests, the military, and finally the Protestant missionaries, were the men who
-    began the disintegration of the Indian nations and the overthrow of their religion, seventy-five to a hundred years before
-    they were forced to enter upon reservation life. We have no authentic study of them until well along in the transition
-    period, when whiskey and trade had already debauched their native ideals.
+  body: The fur-traders, the “Black Robe” priests, the military, and finally the Protestant missionaries,
+    were the men who began the disintegration of the Indian nations and the overthrow of their religion,
+    seventy-five to a hundred years before they were forced to enter upon reservation life. We have no
+    authentic study of them until well along in the transition period, when whiskey and trade had already
+    debauched their native ideals.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Eastman identifies a specific historical sequence of cultural disruption—fur trade, Catholic
+    missions, military conquest, Protestant conversion efforts—that preceded and prepared the way for
+    reservation confinement. His point is epistemological as well as historical: by the time outsiders
+    produced ''authentic'' written accounts of Dakota life, the tradition had already been fractured by
+    these forces, making any such study necessarily incomplete or distorted. He insists on recognizing
+    this timeline of intervention, not treating Dakota spirituality as a static ''pre-contact'' object.'
+- kind: key_terms
+  label: Key Terms
+  body: '**Black Robe** — Eastman''s term for Catholic missionaries, named for their distinctive vestments;
+    used here to mark a specific wave of religious conversion effort.
+
+    **native ideals** — In this passage, the spiritual and social values of Dakota nations before external
+    disruption; what Eastman argues was compromised by trade and missionary activity.'
+  items:
+  - term: Black Robe
+    definition: Eastman's term for Catholic missionaries, named for their distinctive vestments; used
+      here to mark a specific wave of religious conversion effort.
+  - term: native ideals
+    definition: In this passage, the spiritual and social values of Dakota nations before external disruption;
+      what Eastman argues was compromised by trade and missionary activity.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Edward Said, *Orientalism* (1978):** Both Eastman and Said argue that outsider ''knowledge''
+    of a culture is shaped by the power relations and commercial interests that produced it—the observer
+    is never neutral. Divergence: Eastman writes from inside the tradition he describes, as witness and
+    survivor; Said theorizes from literary and historical analysis of Western discourse about the East.
+
+
+    **Walter Benjamin, ''Theses on the Philosophy of History'' (1940):** Both reject a simple linear narrative
+    of ''progress'' and insist that victors'' accounts erase the violence embedded in historical transitions.
+    Divergence: Eastman names specific agents (traders, priests, soldiers); Benjamin theorizes history''s
+    structure more abstractly, without naming particular communities.'
+  items:
+  - citation: Edward Said, *Orientalism* (1978)
+    resonance: Both Eastman and Said argue that outsider 'knowledge' of a culture is shaped by the power
+      relations and commercial interests that produced it—the observer is never neutral.
+    divergence: Eastman writes from inside the tradition he describes, as witness and survivor; Said theorizes
+      from literary and historical analysis of Western discourse about the East.
+  - citation: Walter Benjamin, 'Theses on the Philosophy of History' (1940)
+    resonance: Both reject a simple linear narrative of 'progress' and insist that victors' accounts erase
+      the violence embedded in historical transitions.
+    divergence: Eastman names specific agents (traders, priests, soldiers); Benjamin theorizes history's
+      structure more abstractly, without naming particular communities.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Reflect on a tradition or practice you know well. When did you first learn about it? Who taught
+    you, and who had already shaped or changed it before your learning? Notice what you cannot know because
+    of that history.
 provenance:
   collection: The Soul of the Indian
-  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his own words, published
-    to interpret Native spirituality across cultures. A living tradition — offered here as a study reading, with respect to
-    Dakota descendants.
+  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his
+    own words, published to interpret Native spirituality across cultures. A living tradition — offered
+    here as a study reading, with respect to Dakota descendants.
   section: Iii. Ceremonial And Symbolic Worship
-original: The fur-traders, the “Black Robe” priests, the military, and finally the Protestant missionaries, were the men who
-  began the disintegration of the Indian nations and the overthrow of their religion, seventy-five to a hundred years before
-  they were forced to enter upon reservation life. We have no authentic study of them until well along in the transition period,
-  when whiskey and trade had already debauched their native ideals.
-abhyasa: Reflect on a tradition or practice you know well. When did you first learn about it? Who taught you, and who had
-  already shaped or changed it before your learning? Notice what you cannot know because of that history.
-practice: Reflect on a tradition or practice you know well. When did you first learn about it? Who taught you, and who had
-  already shaped or changed it before your learning? Notice what you cannot know because of that history.
-enriched: true

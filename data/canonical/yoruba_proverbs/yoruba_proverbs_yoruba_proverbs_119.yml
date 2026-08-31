@@ -3,37 +3,21 @@ category: root_text
 work_id: yoruba_proverbs
 work_title: Yoruba Proverbs (Òwe)
 unit_id: yoruba_proverbs.yoruba_proverbs_119
-unit_label: Never take hold of a man who has a drawn knife…
-title: Never take hold of a man who has a drawn knife…
+unit_label: Never take hold of a man who has a drawn knife in his hand
+title: Never take hold of a man who has a drawn knife in his hand
 unit_type: proverb
-commentary: 'This proverb teaches practical wisdom about engagement with danger and aggression. It warns against direct confrontation
-  with someone actively armed and hostile—not from cowardice, but from clear-eyed recognition that certain moments demand
-  restraint rather than intervention. The image of the drawn knife signals active threat, a threshold past which ordinary
-  social remedies fail; the proverb counsels discernment about *when* to act and *when* to step back.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries meaning across time
-  and community.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Tao Te Ching, Chapter 15:** Both teach that the wise know when *not* to act; yielding and non-interference are forms of
-  strength. Divergence: The Tao Te Ching emphasizes cosmic non-action (wu wei) as alignment with nature; this proverb is more
-  pragmatic—it addresses social survival and timing.
-
-
-  **Proverbs 22:3 (Hebrew Bible):** Both counsel foresight and avoidance of unnecessary danger: ''The prudent see danger and
-  take refuge, but the simple keep going and pay the penalty.'' Divergence: The biblical proverb emphasizes seeing danger
-  *ahead*; the Yoruba proverb addresses the moment when danger is already manifest and armed.'
+translation: Never take hold of a man who has a drawn knife in his hand.
+commentary: This proverb teaches practical wisdom about engagement with danger and aggression. It warns
+  against direct confrontation with someone actively armed and hostile—not from cowardice, but from clear-eyed
+  recognition that certain moments demand restraint rather than intervention. The image of the drawn knife
+  signals active threat, a threshold past which ordinary social remedies fail; the proverb counsels discernment
+  about *when* to act and *when* to step back.
+practice: 'Today, notice one moment when you feel drawn to ''take hold''—to intervene, correct, or engage
+  someone in conflict. Before acting, ask: Is this person''s ''knife drawn''? Are they actively hostile,
+  or can this wait? Practice one small act of strategic non-engagement.'
+abhyasa: 'Today, notice one moment when you feel drawn to ''take hold''—to intervene, correct, or engage
+  someone in conflict. Before acting, ask: Is this person''s ''knife drawn''? Are they actively hostile,
+  or can this wait? Practice one small act of strategic non-engagement.'
 themes:
 - wisdom
 - proverb
@@ -46,23 +30,61 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
   body: Never take hold of a man who has a drawn knife in his hand.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: This proverb teaches practical wisdom about engagement with danger and aggression. It warns against
+    direct confrontation with someone actively armed and hostile—not from cowardice, but from clear-eyed
+    recognition that certain moments demand restraint rather than intervention. The image of the drawn
+    knife signals active threat, a threshold past which ordinary social remedies fail; the proverb counsels
+    discernment about *when* to act and *when* to step back.
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries
+    meaning across time and community.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for wisdom that carries
+      meaning across time and community.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Tao Te Ching, Chapter 15:** Both teach that the wise know when *not* to act; yielding and non-interference
+    are forms of strength. Divergence: The Tao Te Ching emphasizes cosmic non-action (wu wei) as alignment
+    with nature; this proverb is more pragmatic—it addresses social survival and timing.
+
+
+    **Proverbs 22:3 (Hebrew Bible):** Both counsel foresight and avoidance of unnecessary danger: ''The
+    prudent see danger and take refuge, but the simple keep going and pay the penalty.'' Divergence: The
+    biblical proverb emphasizes seeing danger *ahead*; the Yoruba proverb addresses the moment when danger
+    is already manifest and armed.'
+  items:
+  - citation: Tao Te Ching, Chapter 15
+    resonance: Both teach that the wise know when *not* to act; yielding and non-interference are forms
+      of strength.
+    divergence: The Tao Te Ching emphasizes cosmic non-action (wu wei) as alignment with nature; this
+      proverb is more pragmatic—it addresses social survival and timing.
+  - citation: Proverbs 22:3 (Hebrew Bible)
+    resonance: 'Both counsel foresight and avoidance of unnecessary danger: ''The prudent see danger and
+      take refuge, but the simple keep going and pay the penalty.'''
+    divergence: The biblical proverb emphasizes seeing danger *ahead*; the Yoruba proverb addresses the
+      moment when danger is already manifest and armed.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice one moment when you feel drawn to ''take hold''—to intervene, correct, or engage
+    someone in conflict. Before acting, ask: Is this person''s ''knife drawn''? Are they actively hostile,
+    or can this wait? Practice one small act of strategic non-engagement.'
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: Never take hold of a man who has a drawn knife in his hand.
-abhyasa: 'Today, notice one moment when you feel drawn to ''take hold''—to intervene, correct, or engage someone in conflict.
-  Before acting, ask: Is this person''s ''knife drawn''? Are they actively hostile, or can this wait? Practice one small act
-  of strategic non-engagement.'
-practice: 'Today, notice one moment when you feel drawn to ''take hold''—to intervene, correct, or engage someone in conflict.
-  Before acting, ask: Is this person''s ''knife drawn''? Are they actively hostile, or can this wait? Practice one small act
-  of strategic non-engagement.'
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

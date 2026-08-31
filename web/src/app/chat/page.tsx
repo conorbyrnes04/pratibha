@@ -378,6 +378,8 @@ export default function ChatPage() {
 
   const showComposerSuggestions = !q.trim() && !dailyCapHit && !busy;
   const showSourceShelf = sources.length > 0 || Boolean(compareWarning);
+  const fromGate = Boolean(backHref && (backHref === "/" || backHref.startsWith("/learn")));
+  const backLabel = backHref === "/" ? "← Today" : "← Back to path";
 
   return (
     <main className="page-shell page-shell--reading">
@@ -392,15 +394,19 @@ export default function ChatPage() {
         <div className="library-header__body">
           {backHref ? (
             <Link href={backHref} className="passage-reading__toggle">
-              ← Back to path
+              {backLabel}
             </Link>
           ) : null}
-          <p className="passage-reading__meta">Dialogue with the corpus</p>
+          <p className="passage-reading__meta">
+            {fromGate ? "This gate" : "Dialogue with the corpus"}
+          </p>
           <h1 className="library-header__title">Ask Pratibha</h1>
           <p className="library-header__lede">
-            {pinnedVerse
-              ? "Ask about this passage. Hover the box for prompts grounded in the verse."
-              : "Ask naturally. Answers stay grounded in the manuscript — with practice you can try."}
+            {fromGate && pinnedVerse
+              ? "Ask about this gate. Prompts stay pinned to the verse you just walked."
+              : pinnedVerse
+                ? "Ask about this passage. Hover the box for prompts grounded in the verse."
+                : "Ask naturally. Answers stay grounded in the manuscript — with practice you can try."}
           </p>
         </div>
       </header>
@@ -412,7 +418,7 @@ export default function ChatPage() {
               href={`/read/${encodeURIComponent(pinnedVerse._id)}`}
               className="chat-study-pin__link"
             >
-              <p className="passage-reading__meta !mb-0">Studying</p>
+              <p className="passage-reading__meta !mb-0">{fromGate ? "This gate" : "Studying"}</p>
               <p className="chat-study-pin__title">{pinnedTitle}</p>
               {pinnedSourceLine ? (
                 <p className="chat-study-pin__meta">{pinnedSourceLine}</p>

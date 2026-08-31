@@ -65,17 +65,13 @@ export const TRADITION_TRAILS: TraditionTrail[] = [
     glyph: "infinity",
     trackIds: ["the-one-and-the-many"],
   },
-];
-
-export const TRADITIONS_COMING: TraditionTrail[] = [
   {
     id: "yoga",
     title: "Yoga (Patañjali)",
     shortTitle: "Yoga",
     lede: "Stillness of the mind's turnings; the seer rests in its own nature.",
     glyph: "spiral",
-    comingSoon: true,
-    trackIds: [],
+    trackIds: ["seer-in-its-nature"],
   },
   {
     id: "buddhism",
@@ -83,9 +79,19 @@ export const TRADITIONS_COMING: TraditionTrail[] = [
     shortTitle: "Buddhism",
     lede: "Emptiness, compassion, the groundless ground.",
     glyph: "lotus",
-    comingSoon: true,
-    trackIds: [],
+    trackIds: ["emptiness-and-compassion"],
   },
+  {
+    id: "yoruba",
+    title: "Yoruba",
+    shortTitle: "Yoruba",
+    lede: "Òwe — the horse of conversation. Wisdom that travels by speech.",
+    glyph: "oshun",
+    trackIds: ["the-horse-of-conversation"],
+  },
+];
+
+export const TRADITIONS_COMING: TraditionTrail[] = [
   {
     id: "sufi",
     title: "Sufi",
@@ -116,4 +122,13 @@ export function isEssentialTrail(id?: string | null): boolean {
 
 export function isWalkableTrail(id?: string | null): boolean {
   return Boolean(id && TRADITION_TRAILS.some((trail) => trail.id === id));
+}
+
+/** Dedicated tradition first; otherwise The Path if the track lives on the spine. */
+export function pathIdForTrack(trackId: string): string {
+  const dedicated = TRADITION_TRAILS.find((trail) => !trail.essential && trail.trackIds.includes(trackId));
+  if (dedicated) return dedicated.id;
+  const essential = TRADITION_TRAILS.find((trail) => trail.essential && trail.trackIds.includes(trackId));
+  if (essential) return essential.id;
+  return ESSENTIAL_TRAIL_ID;
 }

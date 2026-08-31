@@ -17,8 +17,11 @@ import type { VerseItem } from "@/lib/types";
 export default function Home() {
   const { configured, loading, user } = useAuth();
   const signedIn = !configured || Boolean(user);
-  const { progress, hydrated } = useLearnProgress();
-  const sit = useMemo(() => (hydrated ? currentTrailSit(progress) : null), [hydrated, progress]);
+  const { progress, completedAt, hydrated } = useLearnProgress();
+  const sit = useMemo(
+    () => (hydrated ? currentTrailSit(progress, undefined, completedAt) : null),
+    [hydrated, progress, completedAt],
+  );
   const [verse, setVerse] = useState<VerseItem | null>(null);
 
   useEffect(() => {
@@ -64,8 +67,8 @@ export default function Home() {
             <h1 className="library-header__title">A walk through world wisdom</h1>
             <p className="library-header__lede">
               Pratibha is a guided path, not a pile of books. Each day opens one gate: a
-              teaching, a canonical passage, and one practice. Finish the gate and the next
-              step draws itself.
+              teaching, a canonical passage, and one practice. Finish the gate, and tomorrow
+              names itself.
             </p>
           </div>
         </header>

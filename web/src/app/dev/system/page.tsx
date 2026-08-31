@@ -95,7 +95,7 @@ export default function DevSystemPage() {
         </h1>
         <p className="soft mt-4 max-w-2xl text-lg leading-relaxed">
           Pratibha-skinned Monad / shadcn primitives. Not a stock Plex demo — tokens and type stay
-          manuscript. Learn visualizations (PathTree, Threads, Yantra) are intentionally absent.
+          manuscript. Learn visualizations (LearnTrail, Yantra) are intentionally absent.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <KitLink href="/learn" variant="secondary" size="sm">
@@ -312,7 +312,7 @@ export default function DevSystemPage() {
           <ul className="soft list-inside list-disc space-y-1 text-sm leading-relaxed">
             <li>BrandMark · Glyph · InkGlyph · YantraBreath</li>
             <li>LayerBlock + source-script Original layers</li>
-            <li>PathTree · ThreadsConstellation · JourneyMandala</li>
+            <li>LearnTrail · JourneyMandala</li>
             <li>ThemeConstellation · ArtImage / collection art</li>
             <li>Lexicon flip card / SRS core</li>
           </ul>

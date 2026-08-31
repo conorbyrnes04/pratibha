@@ -3,38 +3,25 @@ category: root_text
 work_id: eastman_soul_of_the_indian
 work_title: The Soul of the Indian
 unit_id: eastman_soul_of_the_indian.eastman_soul_of_the_indian_014
-unit_label: It is noteworthy that the first effect of contact…
-title: It is noteworthy that the first effect of contact…
+unit_label: It is noteworthy that the first effect of contact with the whites
+title: It is noteworthy that the first effect of contact with the whites
 unit_type: reflection
-commentary: 'Eastman argues that European contact did not ''civilize'' Native peoples but rather amplified existing practices
-  toward extremity and harm—the Sun Dance, a central ceremonial, was distorted by this contact into something unrecognizable
-  and ultimately suppressed by colonial authority. His point cuts against the colonial narrative of ''savage customs'': he
-  locates the barbarism not in Native tradition itself, but in the collision and corruption that contact produced. This reverses
-  the burden of judgment onto the colonizer.
-
-
-
-  Key Terms
-
-
-
-  **Sun Dance** — A central ceremonial practice of Plains Indian peoples; in this passage, Eastman notes it was perverted
-  by colonial contact and subsequently prohibited by the U.S. Government.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Frantz Fanon, *The Wretched of the Earth*:** Both Eastman and Fanon argue that colonialism does not refine but corrupts
-  indigenous practice, turning it toward violence or caricature. Divergence: Fanon emphasizes violent resistance as necessary
-  response; Eastman here emphasizes interpretive recovery and cross-cultural explanation.
-
-
-  **Ecclesiastes 1:9 (''there is nothing new under the sun''):** Both suggest that human nature contains both light and shadow;
-  the question is what conditions amplify which. Divergence: Ecclesiastes treats this as cosmic inevitability; Eastman locates
-  it in historical contact and colonial policy—thus changeable.'
+original: It is noteworthy that the first effect of contact with the whites was an increase of cruelty
+  and barbarity, an intensifying of the dark shadows in the picture! In this manner the “Sun Dance” of
+  the Plains Indians, the most important of their public ceremonials, was abused and perverted until it
+  became a horrible exhibition of barbarism, and was eventually prohibited by the Government.
+commentary: 'Eastman argues that European contact did not ''civilize'' Native peoples but rather amplified
+  existing practices toward extremity and harm—the Sun Dance, a central ceremonial, was distorted by this
+  contact into something unrecognizable and ultimately suppressed by colonial authority. His point cuts
+  against the colonial narrative of ''savage customs'': he locates the barbarism not in Native tradition
+  itself, but in the collision and corruption that contact produced. This reverses the burden of judgment
+  onto the colonizer.'
+practice: 'Reflect on a tradition or practice you hold dear. Consider: what happens to it under pressure,
+  judgment, or external control? Does it become exaggerated, defensive, or distorted? Write one sentence
+  about how you might protect its integrity.'
+abhyasa: 'Reflect on a tradition or practice you hold dear. Consider: what happens to it under pressure,
+  judgment, or external control? Does it become exaggerated, defensive, or distorted? Write one sentence
+  about how you might protect its integrity.'
 themes:
 - the great mystery
 - silence
@@ -47,26 +34,61 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911, public domain).
+translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911,
+  public domain).
 pratibha_layers:
 - kind: original
   label: Original
-  body: It is noteworthy that the first effect of contact with the whites was an increase of cruelty and barbarity, an intensifying
-    of the dark shadows in the picture! In this manner the “Sun Dance” of the Plains Indians, the most important of their
-    public ceremonials, was abused and perverted until it became a horrible exhibition of barbarism, and was eventually prohibited
-    by the Government.
+  body: It is noteworthy that the first effect of contact with the whites was an increase of cruelty and
+    barbarity, an intensifying of the dark shadows in the picture! In this manner the “Sun Dance” of the
+    Plains Indians, the most important of their public ceremonials, was abused and perverted until it
+    became a horrible exhibition of barbarism, and was eventually prohibited by the Government.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Eastman argues that European contact did not ''civilize'' Native peoples but rather amplified
+    existing practices toward extremity and harm—the Sun Dance, a central ceremonial, was distorted by
+    this contact into something unrecognizable and ultimately suppressed by colonial authority. His point
+    cuts against the colonial narrative of ''savage customs'': he locates the barbarism not in Native
+    tradition itself, but in the collision and corruption that contact produced. This reverses the burden
+    of judgment onto the colonizer.'
+- kind: key_terms
+  label: Key Terms
+  body: '**Sun Dance** — A central ceremonial practice of Plains Indian peoples; in this passage, Eastman
+    notes it was perverted by colonial contact and subsequently prohibited by the U.S. Government.'
+  items:
+  - term: Sun Dance
+    definition: A central ceremonial practice of Plains Indian peoples; in this passage, Eastman notes
+      it was perverted by colonial contact and subsequently prohibited by the U.S. Government.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Frantz Fanon, *The Wretched of the Earth*:** Both Eastman and Fanon argue that colonialism
+    does not refine but corrupts indigenous practice, turning it toward violence or caricature. Divergence:
+    Fanon emphasizes violent resistance as necessary response; Eastman here emphasizes interpretive recovery
+    and cross-cultural explanation.
+
+
+    **Ecclesiastes 1:9 (''there is nothing new under the sun''):** Both suggest that human nature contains
+    both light and shadow; the question is what conditions amplify which. Divergence: Ecclesiastes treats
+    this as cosmic inevitability; Eastman locates it in historical contact and colonial policy—thus changeable.'
+  items:
+  - citation: Frantz Fanon, *The Wretched of the Earth*
+    resonance: Both Eastman and Fanon argue that colonialism does not refine but corrupts indigenous practice,
+      turning it toward violence or caricature.
+    divergence: Fanon emphasizes violent resistance as necessary response; Eastman here emphasizes interpretive
+      recovery and cross-cultural explanation.
+  - citation: Ecclesiastes 1:9 ('there is nothing new under the sun')
+    resonance: Both suggest that human nature contains both light and shadow; the question is what conditions
+      amplify which.
+    divergence: Ecclesiastes treats this as cosmic inevitability; Eastman locates it in historical contact
+      and colonial policy—thus changeable.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Reflect on a tradition or practice you hold dear. Consider: what happens to it under pressure,
+    judgment, or external control? Does it become exaggerated, defensive, or distorted? Write one sentence
+    about how you might protect its integrity.'
 provenance:
   collection: The Soul of the Indian
-  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his own words, published
-    to interpret Native spirituality across cultures. A living tradition — offered here as a study reading, with respect to
-    Dakota descendants.
+  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his
+    own words, published to interpret Native spirituality across cultures. A living tradition — offered
+    here as a study reading, with respect to Dakota descendants.
   section: Iii. Ceremonial And Symbolic Worship
-original: It is noteworthy that the first effect of contact with the whites was an increase of cruelty and barbarity, an intensifying
-  of the dark shadows in the picture! In this manner the “Sun Dance” of the Plains Indians, the most important of their public
-  ceremonials, was abused and perverted until it became a horrible exhibition of barbarism, and was eventually prohibited
-  by the Government.
-abhyasa: 'Reflect on a tradition or practice you hold dear. Consider: what happens to it under pressure, judgment, or external
-  control? Does it become exaggerated, defensive, or distorted? Write one sentence about how you might protect its integrity.'
-practice: 'Reflect on a tradition or practice you hold dear. Consider: what happens to it under pressure, judgment, or external
-  control? Does it become exaggerated, defensive, or distorted? Write one sentence about how you might protect its integrity.'
-enriched: true

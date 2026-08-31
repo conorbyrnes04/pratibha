@@ -35,6 +35,23 @@ const CANONICAL: Array<{ display: string; aliases: string[] }> = [
   { display: "Vijñāna Bhairava", aliases: ["vijnana bhairava", "vijnana_bhairava", "vijñāna bhairava", "vijñāna_bhairava", "vijnana bhairava yuktis", "vijnana_bhairava_yuktis", "vijnana bhairava tantra"] },
   { display: "Spandakārikā", aliases: ["yoga spandakarika", "yoga_spandakarika", "yoga spandakārikā", "spanda karika", "spandakarika"] },
   { display: "Know Yourself", aliases: ["know yourself (ibn arabi / balyani)", "know yourself an explanation of the oneness of being", "know_yourself_ibn_arabi_balyani", "know yourself ibn arabi balyani", "ibn arabi", "balyani", "know yourself (ibn ʿarabī / balyānī)"] },
+  { display: "Dhammapada", aliases: ["dhammapada", "dhammapāda", "the dhammapada"] },
+  { display: "Kaṭha Upaniṣad", aliases: ["katha upanishad", "katha_upanishad", "kaṭha upaniṣad", "katha"] },
+  { display: "Bṛhadāraṇyaka Upaniṣad", aliases: ["brihadaranyaka upanishad", "brihadaranyaka_upanishad", "bṛhadāraṇyaka upaniṣad", "brihad"] },
+  { display: "Muṇḍaka Upaniṣad", aliases: ["mundaka upanishad", "mundaka_upanishad", "muṇḍaka upaniṣad", "mundaka"] },
+  { display: "Meditations", aliases: ["marcus aurelius meditations", "marcus_aurelius_meditations", "marcus aurelius", "meditations"] },
+  { display: "Parmenides", aliases: ["parmenides fragments", "parmenides_fragments", "parmenides"] },
+  { display: "The Cloud of Unknowing", aliases: ["the cloud of unknowing", "the_cloud_of_unknowing", "cloud of unknowing"] },
+  { display: "Analects", aliases: ["confucius — analects", "confucius analects", "confucius_analects", "analects", "lunyu"] },
+  { display: "Zhōngyōng", aliases: ["zhongyong", "doctrine of the mean", "the doctrine of the mean"] },
+  { display: "Mystical Theology", aliases: ["pseudo dionysius", "pseudo_dionysius", "dionysius", "mystical theology", "the divine names"] },
+  { display: "The Soul of the Indian", aliases: ["the soul of the indian", "eastman_soul_of_the_indian", "soul of the indian"] },
+  { display: "Old Indian Legends", aliases: ["old indian legends", "zitkala_sa_old_indian_legends", "zitkala-sa"] },
+  { display: "Yoruba Proverbs (Òwe)", aliases: ["yoruba proverbs (òwe)", "yoruba_proverbs", "yoruba proverbs"] },
+  { display: "The Yoruba Faith", aliases: ["the yoruba faith (samuel johnson)", "johnson_yoruba_religion", "the yoruba faith"] },
+  { display: "Ecclesiastes", aliases: ["ecclesiastes (qoheleth)", "ecclesiastes_qoheleth", "qoheleth", "ecclesiastes"] },
+  { display: "Gospel of Thomas", aliases: ["gospel of thomas", "gospel_of_thomas"] },
+  { display: "Diamond Sūtra", aliases: ["vajracchedikā prajñāpāramitā", "vajracchedika_diamond_sutra", "vajracchedika prajnaparamita", "diamond sutra", "diamond sūtra"] },
 ];
 
 const LOOKUP = new Map<string, string>();

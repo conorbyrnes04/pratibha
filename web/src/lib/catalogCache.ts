@@ -9,8 +9,9 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * v4: two new collections filling the Abrahamic gap — Ecclesiastes (Qoheleth,
  * Hebrew) and the Gospel of Thomas (Coptic).
  * v5: corpus-wide QA — 33 duplicate units removed, ~430 translations repaired via
- * independent strong-reviewer cross-check, placeholder originals suppressed. */
-const CACHE_VERSION = 6;
+ * independent strong-reviewer cross-check, placeholder originals suppressed.
+ * v7: Yoruba + Dakota living-tradition tomes on the default Library shelf. */
+const CACHE_VERSION = 7;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";

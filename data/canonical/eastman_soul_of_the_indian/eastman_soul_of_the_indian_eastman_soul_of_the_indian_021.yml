@@ -3,43 +3,27 @@ category: root_text
 work_id: eastman_soul_of_the_indian
 work_title: The Soul of the Indian
 unit_id: eastman_soul_of_the_indian.eastman_soul_of_the_indian_021
-unit_label: Every religion has its Holy Book, and ours was a…
-title: Every religion has its Holy Book, and ours was a…
+unit_label: Every religion has its Holy Book, and ours was a mingling of history, poetry, and prophecy
+title: Every religion has its Holy Book, and ours was a mingling of history, poetry, and prophecy
 unit_type: reflection
-commentary: 'Eastman presents Dakota spiritual knowledge as a living, orally transmitted literature—not written but embodied
-  in storytelling, proverb, and the teaching of children. He draws a deliberate parallel to the Bible to help his (largely
-  non-Native) readers recognize the sophistication and sacred authority of Dakota wisdom, while emphasizing that this ''Book''
-  remains alive through each generation''s retelling rather than fixed in print. The passage insists that custom and philosophy
-  flow from this transmitted knowledge, making spirituality inseparable from daily practice and kinship.
-
-
-
-  Key Terms
-
-
-
-  **our whole literature** — The collective oral and experiential knowledge of Dakota people—stories, proverbs, fables, and
-  teachings preserved and renewed through spoken transmission across generations, functioning as sacred guidance.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Psalm 119 (Hebrew Bible):** Both treat sacred knowledge as a lamp to the feet and light to the path—guiding daily life
-  and custom through transmitted wisdom. Divergence: The Psalm fixes this wisdom in written Torah; Eastman''s ''Book'' remains
-  oral and regenerative, ''springing anew'' in each child''s eyes rather than inscribed.
-
-
-  **Plato, *Phaedrus* (on oral vs. written tradition):** Both privilege living speech and memory over dead letters; wisdom
-  must be spoken and received, not merely read. Divergence: Plato fears writing will weaken memory; Eastman celebrates oral
-  transmission as the *form* of sacred knowledge itself, not a substitute for writing.
-
-
-  **Confucian *Li* (ritual propriety):** Both root custom and philosophy in transmitted teachings; practice and precept are
-  inseparable. Divergence: Confucianism emphasizes formal ritual and hierarchy; Eastman stresses the organic, poetic, and
-  familial nature of transmission—''from father to son'' through wonder and innocence.'
+original: Every religion has its Holy Book, and ours was a mingling of history, poetry, and prophecy,
+  of precept and folk-lore, even such as the modern reader finds within the covers of his Bible. This
+  Bible of ours was our whole literature, a living Book, sowed as precious seed by our wisest sages, and
+  springing anew in the wondering eyes and upon the innocent lips of little children. Upon its hoary wisdom
+  of proverb and fable, its mystic and legendary lore thus sacredly preserved and transmitted from father
+  to son, was based in large part our customs and philosophy.
+commentary: Eastman presents Dakota spiritual knowledge as a living, orally transmitted literature—not
+  written but embodied in storytelling, proverb, and the teaching of children. He draws a deliberate parallel
+  to the Bible to help his (largely non-Native) readers recognize the sophistication and sacred authority
+  of Dakota wisdom, while emphasizing that this 'Book' remains alive through each generation's retelling
+  rather than fixed in print. The passage insists that custom and philosophy flow from this transmitted
+  knowledge, making spirituality inseparable from daily practice and kinship.
+practice: Today, listen for one piece of wisdom—a proverb, story, or teaching—that has been passed to
+  you orally (from a parent, elder, or tradition). Sit with it silently for a few minutes. Notice how
+  it lives differently in your memory and body than words on a page might. What does it ask of you now?
+abhyasa: Today, listen for one piece of wisdom—a proverb, story, or teaching—that has been passed to you
+  orally (from a parent, elder, or tradition). Sit with it silently for a few minutes. Notice how it lives
+  differently in your memory and body than words on a page might. What does it ask of you now?
 themes:
 - the great mystery
 - silence
@@ -52,30 +36,76 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911, public domain).
+translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911,
+  public domain).
 pratibha_layers:
 - kind: original
   label: Original
-  body: Every religion has its Holy Book, and ours was a mingling of history, poetry, and prophecy, of precept and folk-lore,
-    even such as the modern reader finds within the covers of his Bible. This Bible of ours was our whole literature, a living
-    Book, sowed as precious seed by our wisest sages, and springing anew in the wondering eyes and upon the innocent lips
-    of little children. Upon its hoary wisdom of proverb and fable, its mystic and legendary lore thus sacredly preserved
-    and transmitted from father to son, was based in large part our customs and philosophy.
+  body: Every religion has its Holy Book, and ours was a mingling of history, poetry, and prophecy, of
+    precept and folk-lore, even such as the modern reader finds within the covers of his Bible. This Bible
+    of ours was our whole literature, a living Book, sowed as precious seed by our wisest sages, and springing
+    anew in the wondering eyes and upon the innocent lips of little children. Upon its hoary wisdom of
+    proverb and fable, its mystic and legendary lore thus sacredly preserved and transmitted from father
+    to son, was based in large part our customs and philosophy.
+- kind: commentary
+  label: Pratibha Commentary
+  body: Eastman presents Dakota spiritual knowledge as a living, orally transmitted literature—not written
+    but embodied in storytelling, proverb, and the teaching of children. He draws a deliberate parallel
+    to the Bible to help his (largely non-Native) readers recognize the sophistication and sacred authority
+    of Dakota wisdom, while emphasizing that this 'Book' remains alive through each generation's retelling
+    rather than fixed in print. The passage insists that custom and philosophy flow from this transmitted
+    knowledge, making spirituality inseparable from daily practice and kinship.
+- kind: key_terms
+  label: Key Terms
+  body: '**our whole literature** — The collective oral and experiential knowledge of Dakota people—stories,
+    proverbs, fables, and teachings preserved and renewed through spoken transmission across generations,
+    functioning as sacred guidance.'
+  items:
+  - term: our whole literature
+    definition: The collective oral and experiential knowledge of Dakota people—stories, proverbs, fables,
+      and teachings preserved and renewed through spoken transmission across generations, functioning
+      as sacred guidance.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Psalm 119 (Hebrew Bible):** Both treat sacred knowledge as a lamp to the feet and light to
+    the path—guiding daily life and custom through transmitted wisdom. Divergence: The Psalm fixes this
+    wisdom in written Torah; Eastman''s ''Book'' remains oral and regenerative, ''springing anew'' in
+    each child''s eyes rather than inscribed.
+
+
+    **Plato, *Phaedrus* (on oral vs. written tradition):** Both privilege living speech and memory over
+    dead letters; wisdom must be spoken and received, not merely read. Divergence: Plato fears writing
+    will weaken memory; Eastman celebrates oral transmission as the *form* of sacred knowledge itself,
+    not a substitute for writing.
+
+
+    **Confucian *Li* (ritual propriety):** Both root custom and philosophy in transmitted teachings; practice
+    and precept are inseparable. Divergence: Confucianism emphasizes formal ritual and hierarchy; Eastman
+    stresses the organic, poetic, and familial nature of transmission—''from father to son'' through wonder
+    and innocence.'
+  items:
+  - citation: Psalm 119 (Hebrew Bible)
+    resonance: Both treat sacred knowledge as a lamp to the feet and light to the path—guiding daily life
+      and custom through transmitted wisdom.
+    divergence: The Psalm fixes this wisdom in written Torah; Eastman's 'Book' remains oral and regenerative,
+      'springing anew' in each child's eyes rather than inscribed.
+  - citation: Plato, *Phaedrus* (on oral vs. written tradition)
+    resonance: Both privilege living speech and memory over dead letters; wisdom must be spoken and received,
+      not merely read.
+    divergence: Plato fears writing will weaken memory; Eastman celebrates oral transmission as the *form*
+      of sacred knowledge itself, not a substitute for writing.
+  - citation: Confucian *Li* (ritual propriety)
+    resonance: Both root custom and philosophy in transmitted teachings; practice and precept are inseparable.
+    divergence: Confucianism emphasizes formal ritual and hierarchy; Eastman stresses the organic, poetic,
+      and familial nature of transmission—'from father to son' through wonder and innocence.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, listen for one piece of wisdom—a proverb, story, or teaching—that has been passed to you
+    orally (from a parent, elder, or tradition). Sit with it silently for a few minutes. Notice how it
+    lives differently in your memory and body than words on a page might. What does it ask of you now?
 provenance:
   collection: The Soul of the Indian
-  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his own words, published
-    to interpret Native spirituality across cultures. A living tradition — offered here as a study reading, with respect to
-    Dakota descendants.
+  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his
+    own words, published to interpret Native spirituality across cultures. A living tradition — offered
+    here as a study reading, with respect to Dakota descendants.
   section: V. The Unwritten Scriptures
-original: Every religion has its Holy Book, and ours was a mingling of history, poetry, and prophecy, of precept and folk-lore,
-  even such as the modern reader finds within the covers of his Bible. This Bible of ours was our whole literature, a living
-  Book, sowed as precious seed by our wisest sages, and springing anew in the wondering eyes and upon the innocent lips of
-  little children. Upon its hoary wisdom of proverb and fable, its mystic and legendary lore thus sacredly preserved and transmitted
-  from father to son, was based in large part our customs and philosophy.
-abhyasa: Today, listen for one piece of wisdom—a proverb, story, or teaching—that has been passed to you orally (from a parent,
-  elder, or tradition). Sit with it silently for a few minutes. Notice how it lives differently in your memory and body than
-  words on a page might. What does it ask of you now?
-practice: Today, listen for one piece of wisdom—a proverb, story, or teaching—that has been passed to you orally (from a parent,
-  elder, or tradition). Sit with it silently for a few minutes. Notice how it lives differently in your memory and body than
-  words on a page might. What does it ask of you now?
-enriched: true

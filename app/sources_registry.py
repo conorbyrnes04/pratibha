@@ -28,7 +28,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "astavakra_gita",
         "collection": "Astavakra Gita",
-        "tradition": "Advaita Vedānta (Sanskrit)",
+        "tradition": "Vedānta",
         "original_work": "Aṣṭāvakra Gītā (dialogue of Aṣṭāvakra and King Janaka)",
         "anchor_translation": "Pratibha rendering from the public-domain Sanskrit (received Devanāgarī / IAST)",
         "sanskrit_source": "Received Sanskrit (Devanāgarī / IAST), public domain",
@@ -40,7 +40,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "bhagavad_gita",
         "collection": "Bhagavad Gita",
-        "tradition": "Sanskrit / Itihāsa",
+        "tradition": "Vedānta",
         "original_work": "Bhagavad Gītā (Mahābhārata, Bhīṣma Parvan)",
         "anchor_translation": "English follows Sir Edwin Arnold, *The Song Celestial* (1885; Project Gutenberg #2388, public domain)",
         "sanskrit_source": "Received Devanāgarī where present; not line-aligned to Arnold throughout",
@@ -53,7 +53,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "chandogya_upanishad",
         "collection": "Chāndogya Upaniṣad",
-        "tradition": "Sāmaveda Upaniṣad / Vedānta",
+        "tradition": "Vedānta",
         "original_work": "Chāndogya Upaniṣad",
         "anchor_translation": "Pratibha rendering from the public-domain Sanskrit; F. Max Müller, SBE vol. 1 (1879) as comparative reference",
         "sanskrit_source": "Received Chāndogya text (Devanāgarī / IAST), public domain",
@@ -66,7 +66,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "confucius_analects",
         "collection": "Confucius — Analects",
-        "tradition": "Chinese / Ruist (Confucian)",
+        "tradition": "Confucian",
         "original_work": "Confucius (Kǒngzǐ), *Lúnyǔ* 論語 (Analects)",
         "anchor_translation": "Pratibha rendering from the public-domain Classical Chinese; James Legge, *The Chinese Classics* vol. 1 (1893) as comparative reference",
         "sanskrit_source": "Traditional Chinese characters in the Original layer, public domain",
@@ -79,7 +79,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "dogen_shobogenzo",
         "collection": "Dōgen — Shōbōgenzō",
-        "tradition": "Japanese Zen / Sōtō",
+        "tradition": "Buddhist",
         "original_work": "Dōgen, *Shōbōgenzō* (Treasury of the True Dharma Eye)",
         "anchor_translation": "Pratibha rendering from the public-domain classical Japanese (Kokubasha 1896 edition)",
         "sanskrit_source": "Classical Japanese / kanbun, Kokubasha 1896, public domain",
@@ -91,7 +91,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "epictetus_works",
         "collection": "Epictetus Works",
-        "tradition": "Greek Stoic",
+        "tradition": "Greek",
         "original_work": "Epictetus, *Enchiridion* (recorded by Arrian)",
         "anchor_translation": "English follows Elizabeth Carter, *All the Works of Epictetus* (1758; public domain)",
         "editorial_note": "Carter's public-domain translation is the English basis; commentary and study layers are editorial.",
@@ -102,7 +102,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "heart_sutra",
         "collection": "Heart Sūtra",
-        "tradition": "Mahāyāna / Prajñāpāramitā (Sanskrit)",
+        "tradition": "Buddhist",
         "original_work": "Prajñāpāramitāhṛdaya (Heart Sūtra), shorter recension",
         "anchor_translation": "Pratibha rendering from the public-domain Sanskrit (GRETIL); F. Max Müller, SBE vol. 49 (1894) as reference",
         "sanskrit_source": "Sanskrit (IAST) source-verified from the GRETIL shorter recension, public domain",
@@ -116,7 +116,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "heraclitus_fragments",
         "collection": "Heraclitus Fragments",
-        "tradition": "Greek Pre-Socratic",
+        "tradition": "Greek",
         "original_work": "Heraclitus of Ephesus (Diels–Kranz numbering)",
         "anchor_translation": "English follows George T. W. Patrick, *The Fragments of Heraclitus* (1889, Bywater Greek text; public domain)",
         "editorial_note": "12 curated Pratibha-layer fragments (Logos, fire, river, war, harmony, soul, Delphi); remaining units are structural drafts from the Patrick text pending curation.",
@@ -129,7 +129,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "isavasya_upanishad",
         "collection": "Isavasya Upanishad",
-        "tradition": "Śukla Yajurveda Upaniṣad",
+        "tradition": "Vedānta",
         "original_work": "Īśāvāsya / Īśopaniṣad (Isha Upanishad)",
         "anchor_translation": "Pratibha rendering from the public-domain Sanskrit; F. Max Müller, SBE vol. 1 (1879) as reference",
         "sanskrit_source": "Received Sanskrit mantras (Devanāgarī / IAST), public domain",
@@ -142,7 +142,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "know_yourself_ibn_arabi_balyani",
         "collection": "Know Yourself (Ibn Arabi / Balyani)",
-        "tradition": "Sufi / Arabic",
+        "tradition": "Sufi",
         "original_work": "Awḥad al-Dīn Balyānī, *Risālat al-aḥadiyya* (Epistle on Oneness) — long transmitted under Ibn ʿArabī's name",
         "anchor_translation": "Based on the public-domain English translation by T. H. Weir, *Journal of the Royal Asiatic Society* (1901)",
         "editorial_note": "Authorship is now attributed to Balyānī rather than Ibn ʿArabī. English follows Weir's public-domain 1901 translation; Pratibha study layers are editorial. (Earlier drafts leaned on a copyrighted modern translation — replaced during the asteya reconciliation.)",
@@ -153,7 +153,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "mandukya_upanishad_and_gaudapada_karika",
         "collection": "Mandukya Upanishad and Gaudapada Karika",
-        "tradition": "Upaniṣadic / Advaita",
+        "tradition": "Vedānta",
         "original_work": "Māṇḍūkya Upaniṣad + Gauḍapāda Kārikā",
         "anchor_translation": "Pratibha rendering from the public-domain Sanskrit; F. Max Müller, SBE vol. 34 (1894) as reference",
         "sanskrit_source": "Received Upaniṣad and Kārikā text (Devanāgarī / IAST), public domain",
@@ -165,7 +165,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "meister_eckhart",
         "collection": "Meister Eckhart",
-        "tradition": "Christian mysticism / Middle High German",
+        "tradition": "Christian",
         "original_work": "Meister Eckhart, *Von Abegescheidenheit* (On Detachment)",
         "anchor_translation": "Pratibha rendering from the public-domain Middle High German (Franz Pfeiffer, *Deutsche Mystiker* vol. 2, 1857)",
         "sanskrit_source": "Middle High German, Pfeiffer 1857, public domain",
@@ -178,7 +178,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "milarepa_songs",
         "collection": "Milarepa — Songs",
-        "tradition": "Tibetan Buddhist / Kagyü",
+        "tradition": "Buddhist",
         "original_work": "Jetsün Milarepa, songs from the *Jetsun-Kahbum* (Life and Songs)",
         "anchor_translation": "Pratibha rendering with Tibetan (Uchen) originals; Kazi Dawa-Samdup / W. Y. Evans-Wentz, *Tibet's Great Yogi Milarepa* (1928, public domain) as English basis",
         "sanskrit_source": "Tibetan (Uchen script), public domain",
@@ -191,7 +191,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "nagarjuna_mulamadhyamakakarika",
         "collection": "Nāgārjuna — Mūlamadhyamakakārikā",
-        "tradition": "Madhyamaka (Sanskrit)",
+        "tradition": "Buddhist",
         "original_work": "Nāgārjuna, *Mūlamadhyamakakārikā* (Fundamental Verses on the Middle Way)",
         "anchor_translation": "Pratibha original rendering from the public-domain Sanskrit (GRETIL critical text)",
         "sanskrit_source": "Sanskrit (IAST) source-verified from GRETIL (chs. 18, 24, 25), public domain",
@@ -205,7 +205,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "patanjali_yoga_sutras",
         "collection": "Patañjali Yoga Sūtras",
-        "tradition": "Yoga / Sāṃkhya",
+        "tradition": "Yoga",
         "original_work": "Patañjali, *Yoga Sūtras* (195 sūtras)",
         "anchor_translation": "Pratibha rendering from the public-domain Sanskrit; M. N. Dvivedi (1890) as comparative reference",
         "sanskrit_source": "Received Sanskrit (IAST), public domain",
@@ -219,7 +219,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "phaedo_plato",
         "collection": "Phaedo (Plato)",
-        "tradition": "Greek / Platonic",
+        "tradition": "Greek",
         "original_work": "Plato, *Phaedo*",
         "anchor_translation": "English follows Benjamin Jowett (Project Gutenberg #1658, public domain)",
         "editorial_note": "12 units across the dialogue's major arcs. Jowett's public-domain English is the basis; Pratibha layers editorial.",
@@ -231,7 +231,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "plotinus_enneads",
         "collection": "Plotinus Enneads",
-        "tradition": "Greek Neoplatonic",
+        "tradition": "Greek",
         "original_work": "Plotinus, *Enneads*",
         "anchor_translation": "English follows Stephen MacKenna & B. S. Page (public domain)",
         "editorial_note": "Pilot: I.6 (Beauty), V.1 (Three Hypostases), VI.9 (On the Good) — 32 units. MacKenna & Page's public-domain English is the basis; commentary editorial.",
@@ -255,7 +255,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "rumi_mathnawi",
         "collection": "Rūmī — Mathnawī-yi Maʿnawī",
-        "tradition": "Sufi / Persian",
+        "tradition": "Sufi",
         "original_work": "Jalāl al-Dīn Rūmī, *Mathnawī-yi Maʿnawī*",
         "anchor_translation": "Pratibha rendering from the public-domain Persian (Ganjoor), with romanized transliteration",
         "sanskrit_source": "Persian source text (Ganjoor edition), public domain; scholarly romanization per unit",
@@ -268,7 +268,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "shantideva_bodhicaryavatara",
         "collection": "Śāntideva — Bodhicaryāvatāra",
-        "tradition": "Mahāyāna / Madhyamaka (Sanskrit)",
+        "tradition": "Buddhist",
         "original_work": "Śāntideva, *Bodhicaryāvatāra* (Entering the Bodhisattva's Way)",
         "anchor_translation": "Pratibha rendering from the public-domain Sanskrit (GRETIL); L. D. Barnett, *The Path of Light* (1909) as reference",
         "sanskrit_source": "Sanskrit (IAST) from GRETIL (chs. VIII–IX), public domain",
@@ -294,7 +294,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "svetasvatara_upanishad",
         "collection": "Svetasvatara Upanishad",
-        "tradition": "Upaniṣadic / theistic Vedānta",
+        "tradition": "Vedānta",
         "original_work": "Śvetāśvatara Upaniṣad",
         "anchor_translation": "Pratibha rendering from the public-domain Sanskrit; F. Max Müller, SBE vol. 15 (1884) as reference",
         "sanskrit_source": "Received Upaniṣad text (Devanāgarī / IAST), public domain",
@@ -307,7 +307,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "tantrasara",
         "collection": "Tantrasāra",
-        "tradition": "Kashmir Śaiva / Tantra",
+        "tradition": "Kashmir Śaiva",
         "original_work": "Abhinavagupta, *Tantrasāra*",
         "anchor_translation": "Original translation and commentary by Conor Byrnes, from the public-domain Sanskrit (KSTS)",
         "sanskrit_source": "Sanskrit (IAST), KSTS edition, public domain",
@@ -321,7 +321,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "tao_te_ching",
         "collection": "Tao Te Ching",
-        "tradition": "Chinese Daoist",
+        "tradition": "Daoist",
         "original_work": "Lǎozǐ, *Dào Dé Jīng* 道德經 (81 chapters)",
         "anchor_translation": "Pratibha rendering from the public-domain Classical Chinese; James Legge, SBE vol. 39 (1891; Project Gutenberg #216) as reference",
         "sanskrit_source": "Traditional Chinese characters in the Original layer, public domain",
@@ -335,7 +335,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "the_book_of_chuang_tzu",
         "collection": "The Book of Chuang Tzu",
-        "tradition": "Chinese Daoist",
+        "tradition": "Daoist",
         "original_work": "Zhuangzi (*Nánhuá Jīng* 莊子)",
         "anchor_translation": "Pratibha rendering from the public-domain Classical Chinese; Herbert A. Giles (1889; Project Gutenberg #59709) as reference",
         "sanskrit_source": "Traditional Chinese characters in the Original layer, public domain",
@@ -348,7 +348,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "tilopa_mahamudra",
         "collection": "Tilopa — Mahāmudrā Upadeśa",
-        "tradition": "Tibetan Buddhist / Kagyü (Mahāmudrā)",
+        "tradition": "Buddhist",
         "original_work": "Tilopa, *Mahāmudropadeśa* (Ganges Mahāmudrā), teaching to Nāropa",
         "anchor_translation": "Pratibha rendering with Tibetan (Uchen) originals from the public-domain Ganges Mahāmudrā text",
         "sanskrit_source": "Tibetan (Uchen script), public domain",
@@ -361,7 +361,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "vijnana_bhairava",
         "collection": "Vijnana Bhairava",
-        "tradition": "Kashmir Śaiva / Trika",
+        "tradition": "Kashmir Śaiva",
         "original_work": "Vijñānabhairavatantra (112 dhāraṇās)",
         "anchor_translation": "Pratibha rendering from the public-domain KSTS Sanskrit (1918)",
         "sanskrit_source": "Sanskrit (IAST / Devanāgarī), KSTS edition 1918, public domain",
@@ -386,7 +386,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "yoginihrdaya",
         "collection": "Yoginīhṛdaya",
-        "tradition": "Śrī Vidyā / Tantra",
+        "tradition": "Kashmir Śaiva",
         "original_work": "Yoginīhṛdaya (Heart of the Yoginī)",
         "anchor_translation": "Pratibha rendering from the public-domain KSTS Sanskrit",
         "sanskrit_source": "Sanskrit (IAST); Devanāgarī editorially reconstructed",
@@ -398,7 +398,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "zhongyong",
         "collection": "Zhongyong",
-        "tradition": "Chinese / Ruist (Confucian)",
+        "tradition": "Confucian",
         "original_work": "Zǐsī (attrib.), *Zhōngyōng* 中庸 (Doctrine of the Mean)",
         "anchor_translation": "Pratibha rendering from the public-domain Classical Chinese; James Legge, *The Chinese Classics* vol. 1 (1893) as comparative reference",
         "sanskrit_source": "Traditional Chinese characters in the Original layer, public domain",
@@ -410,7 +410,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "eastman_soul_of_the_indian",
         "collection": "The Soul of the Indian",
-        "tradition": "Native American (Santee Dakota)",
+        "tradition": "Dakota",
         "original_work": "Charles A. Eastman (Ohíyeʼsa), *The Soul of the Indian: An Interpretation* (1911)",
         "anchor_translation": "The author's own English (public domain); no translation — Eastman wrote in English",
         "editorial_note": "A Santee Dakota writer's own interpretation of Native spirituality, published for cross-cultural understanding. Curated reflective passages; a living tradition offered as a study reading, with respect to Dakota descendants and pending their review.",
@@ -422,7 +422,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "zitkala_sa_old_indian_legends",
         "collection": "Old Indian Legends",
-        "tradition": "Native American (Yankton Dakota / Sioux)",
+        "tradition": "Dakota",
         "original_work": "Zitkála-Šá (Gertrude Simmons Bonnin), *Old Indian Legends* (1901)",
         "anchor_translation": "The author's own English (public domain); Sioux oral legends she transcribed herself",
         "editorial_note": "Trickster (Iktomi) and teaching tales the author was told as a child and wrote down to keep for the next generation. A living oral tradition offered as a study reading, with respect to Dakota descendants and pending their review.",
@@ -434,7 +434,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "yoruba_proverbs",
         "collection": "Yoruba Proverbs (Òwe)",
-        "tradition": "Yoruba (West Africa)",
+        "tradition": "Yoruba",
         "original_work": "Yoruba proverbs (òwe), as recorded in A.B. Ellis, *The Yoruba-Speaking Peoples of the Slave Coast of West Africa* (1894)",
         "anchor_translation": "English follows A.B. Ellis (1894, public domain)",
         "editorial_note": "Yoruba proverbs — 'the horse of conversation.' Recorded in English by a British colonial official; his framing is that of an outside observer of his era and may distort, and the Yoruba original (òwe) is not preserved in the source. A study reading pending review by Yoruba tradition-bearers; an insider Yoruba source (Rev. Samuel Johnson, 1921) is on file for corroboration.",
@@ -444,9 +444,33 @@ SOURCES: list[dict[str, Any]] = [
         "links": [{"label": "Internet Archive — Ellis 1894", "url": "https://archive.org/details/yorubaspeakingp00elligoog"}],
     },
     {
+        "id": "a_course_in_miracles",
+        "collection": "A Course in Miracles (Original Edition)",
+        "tradition": "Modern Revelatory / Contemporary Spirituality",
+        "original_work": "A Course in Miracles, Original Edition (Schucman & Thetford, 1972)",
+        "anchor_translation": "Verbatim from the public-domain Original Edition (English)",
+        "editorial_note": "Curated passages — the Introduction, the Miracle Principles, and the strongest theme passages (love, peace, abundance, healing). PUBLIC DOMAIN in the US by a 2003 federal ruling (Penguin Books v. New Christian Church of Full Endeavor, S.D.N.Y.) that voided the copyright for pre-publication distribution — a status contested by the Foundation for Inner Peace, and applying to the ORIGINAL EDITION only. Verbatim text; commentary layers editorial.",
+        "license": "public_domain",
+        "provenance_tier": "pd_adapted",
+        "status": "in_corpus",
+        "links": [{"label": "Penguin v. New Christian Church (2003)", "url": "https://law.justia.com/cases/federal/district-courts/FSupp2/262/251/2391723/"}],
+    },
+    {
+        "id": "kabbalah_zohar_yetzirah",
+        "collection": "Kabbalah — Sefer Yetzirah & the Zohar",
+        "tradition": "Jewish Esoteric (Kabbalah)",
+        "original_work": "Sefer Yetzirah (Book of Formation) & the Zohar (Sifra di-Tzeniuta / Idra)",
+        "anchor_translation": "English follows W. Wynn Westcott, *Sepher Yetzirah* (1887) and S.L. MacGregor Mathers, *The Kabbalah Unveiled* (1887); both public domain",
+        "editorial_note": "Foundational Kabbalistic texts — the ten Sefirot and the paths of creation (Sefer Yetzirah), with excerpts from the Zohar. An esoteric Jewish tradition, offered with humility as a study reading.",
+        "license": "public_domain",
+        "provenance_tier": "pd_adapted",
+        "status": "in_corpus",
+        "links": [{"label": "Internet Archive — Mathers 1887", "url": "https://archive.org/details/b24884443"}],
+    },
+    {
         "id": "johnson_yoruba_religion",
         "collection": "The Yoruba Faith (Samuel Johnson)",
-        "tradition": "Yoruba (West Africa)",
+        "tradition": "Yoruba",
         "original_work": "Rev. Samuel Johnson, *The History of the Yorubas* (completed c. 1897; published 1921)",
         "anchor_translation": "The author's own English (public domain); Johnson was a Yoruba clergyman",
         "editorial_note": "An INSIDER Yoruba account of traditional religion and worldview (Olorun, the Orisas, Ori/destiny, reincarnation) — a complement to A.B. Ellis's outsider record. Transcribed from the 1921 scan with light OCR correction; ceremonial/secret material deliberately excluded. Study reading pending review by tradition-bearers.",
@@ -458,7 +482,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "ecclesiastes_qoheleth",
         "collection": "Ecclesiastes (Qoheleth)",
-        "tradition": "Hebrew Wisdom",
+        "tradition": "Hebrew",
         "original_work": "Qoheleth / Ecclesiastes (Hebrew Bible, Ketuvim)",
         "anchor_translation": "Pratibha rendering from the public-domain Masoretic Hebrew (Westminster Leningrad Codex)",
         "sanskrit_source": "Hebrew (Westminster Leningrad Codex / OpenScriptures WLC, public domain) in the Original layer",
@@ -470,7 +494,7 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "gospel_of_thomas",
         "collection": "Gospel of Thomas",
-        "tradition": "Early Christian / Gnostic",
+        "tradition": "Christian",
         "original_work": "The Gospel of Thomas (Nag Hammadi Codex II,2)",
         "anchor_translation": "Pratibha rendering from the Coptic (Coptic Scriptorium TEI)",
         "sanskrit_source": "Coptic (Coptic Scriptorium TEI, CC-BY 4.0) in the Original layer",
@@ -482,11 +506,112 @@ SOURCES: list[dict[str, Any]] = [
     {
         "id": "vajracchedika_diamond_sutra",
         "collection": "Vajracchedikā Prajñāpāramitā",
-        "tradition": "Mahāyāna Buddhist",
+        "tradition": "Buddhist",
         "original_work": "Vajracchedikā Prajñāpāramitā Sūtra (the Diamond Sūtra)",
         "anchor_translation": "Pratibha rendering from the public-domain Sanskrit (GRETIL; Conze/Vaidya ed.)",
         "sanskrit_source": "Sanskrit (GRETIL Vajracchedikā e-text, public domain) in the Original layer",
         "editorial_note": "English rendered directly from the Sanskrit; commentary and practice layers editorial.",
+        "license": "public_domain",
+        "provenance_tier": "pd_render",
+        "status": "in_corpus",
+    },
+    {
+        "id": "katha_upanishad",
+        "collection": "Kaṭha Upaniṣad",
+        "tradition": "Vedānta",
+        "original_work": "Kaṭha Upaniṣad (the dialogue of Naciketas and Yama)",
+        "anchor_translation": "Pratibha rendering from the public-domain Sanskrit; F. Max Müller, SBE vol. 15 (1884) as comparative reference",
+        "sanskrit_source": "Sanskrit (GRETIL Kaṭhopaniṣad e-text; Devanāgarī / IAST), public domain",
+        "editorial_note": "English rendered from the Sanskrit; commentary and practice layers editorial.",
+        "license": "public_domain",
+        "provenance_tier": "pd_render",
+        "status": "in_corpus",
+        "links": [{"label": "Sacred-texts — SBE vol. 15", "url": "https://sacred-texts.com/hin/sbe15/index.htm"}],
+    },
+    {
+        "id": "brihadaranyaka_upanishad",
+        "collection": "Bṛhadāraṇyaka Upaniṣad",
+        "tradition": "Vedānta",
+        "original_work": "Bṛhadāraṇyaka Upaniṣad",
+        "anchor_translation": "Pratibha rendering from the public-domain Sanskrit; F. Max Müller, SBE vol. 15 (1884) as comparative reference",
+        "sanskrit_source": "Received Sanskrit (Devanāgarī / IAST), public domain",
+        "editorial_note": "English rendered from the Sanskrit; commentary and practice layers editorial.",
+        "license": "public_domain",
+        "provenance_tier": "pd_render",
+        "status": "in_corpus",
+        "links": [{"label": "Sacred-texts — SBE vol. 15", "url": "https://sacred-texts.com/hin/sbe15/index.htm"}],
+    },
+    {
+        "id": "mundaka_upanishad",
+        "collection": "Muṇḍaka Upaniṣad",
+        "tradition": "Vedānta",
+        "original_work": "Muṇḍaka Upaniṣad",
+        "anchor_translation": "Pratibha rendering from the public-domain Sanskrit; F. Max Müller, SBE vol. 15 (1884) as comparative reference",
+        "sanskrit_source": "Received Sanskrit (Devanāgarī / IAST), public domain",
+        "editorial_note": "English rendered from the Sanskrit; commentary and practice layers editorial.",
+        "license": "public_domain",
+        "provenance_tier": "pd_render",
+        "status": "in_corpus",
+        "links": [{"label": "Sacred-texts — SBE vol. 15", "url": "https://sacred-texts.com/hin/sbe15/index.htm"}],
+    },
+    {
+        "id": "dhammapada",
+        "collection": "Dhammapada",
+        "tradition": "Buddhist",
+        "original_work": "Dhammapada (Pāli Tipiṭaka, Khuddaka Nikāya)",
+        "anchor_translation": "Pratibha rendering from the public-domain Pāli; F. Max Müller, *The Dhammapada* (SBE vol. 10, 1881) as comparative reference",
+        "sanskrit_source": "Pāli (Fausböll romanized edition, 1900), public domain",
+        "editorial_note": "English rendered from the Pāli; commentary and practice layers editorial.",
+        "license": "public_domain",
+        "provenance_tier": "pd_render",
+        "status": "in_corpus",
+        "links": [{"label": "Internet Archive — SBE vol. 10 (Müller 1881)", "url": "https://archive.org/details/sbe10"}],
+    },
+    {
+        "id": "marcus_aurelius_meditations",
+        "collection": "Marcus Aurelius — Meditations",
+        "tradition": "Greek",
+        "original_work": "Marcus Aurelius, *Ta eis heauton* (Meditations)",
+        "anchor_translation": "Pratibha rendering from the public-domain Greek; George Long (1862) as comparative reference",
+        "sanskrit_source": "Koine Greek (Perseus / TLG e-text of τὰ εἰς ἑαυτόν), public domain",
+        "editorial_note": "English rendered from the Greek; commentary and practice layers editorial.",
+        "license": "public_domain",
+        "provenance_tier": "pd_render",
+        "status": "in_corpus",
+        "links": [{"label": "Perseus — Meditations", "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2008.01.0641"}],
+    },
+    {
+        "id": "parmenides_fragments",
+        "collection": "Parmenides — On Nature",
+        "tradition": "Greek",
+        "original_work": "Parmenides of Elea, *On Nature* (Diels–Kranz fragments)",
+        "anchor_translation": "Pratibha rendering from the public-domain Greek; John Burnet, *Early Greek Philosophy* (1892) as comparative reference",
+        "sanskrit_source": "Ancient Greek (Diels–Kranz), public domain",
+        "editorial_note": "English rendered from the Greek; commentary and practice layers editorial.",
+        "license": "public_domain",
+        "provenance_tier": "pd_render",
+        "status": "in_corpus",
+    },
+    {
+        "id": "the_cloud_of_unknowing",
+        "collection": "The Cloud of Unknowing",
+        "tradition": "Christian",
+        "original_work": "Anonymous English mystic, *The Cloud of Unknowing* (c. 14th c.)",
+        "anchor_translation": "Pratibha rendering from the public-domain Middle English; Evelyn Underhill's edition (1912) as comparative reference",
+        "sanskrit_source": "Middle English (original language of the work), public domain",
+        "editorial_note": "English modernized from the Middle English; commentary and practice layers editorial.",
+        "license": "public_domain",
+        "provenance_tier": "pd_render",
+        "status": "in_corpus",
+    },
+    {
+        "id": "pseudo_dionysius",
+        "collection": "Pseudo-Dionysius — The Divine Names",
+        "tradition": "Christian",
+        "original_work": "Pseudo-Dionysius the Areopagite, *The Divine Names* (and related treatises)",
+        "anchor_translation": "Pratibha rendering from the public-domain Greek; John Parker, *The Works of Dionysius the Areopagite* (1897–99) as comparative reference",
+        "sanskrit_source": "Ancient Greek (Migne PG 3, Unicode), public domain",
+        "editorial_note": "English rendered from the Greek; commentary and practice layers editorial.",
         "license": "public_domain",
         "provenance_tier": "pd_render",
         "status": "in_corpus",
@@ -519,11 +644,13 @@ def corpus_counts(verses: list[dict]) -> dict[str, int]:
 
 
 def build_sources_payload(verses: list[dict]) -> dict[str, Any]:
+    from .collection_aliases import canonical_slug
+
     counts = corpus_counts(verses)
     items = []
     for entry in SOURCES:
         row = dict(entry)
-        slug = entry["id"]
+        slug = canonical_slug(entry["id"])
         row["passages_in_corpus"] = counts.get(slug, 0)
         row["license_label"] = LICENSE_LABELS.get(entry["license"], entry["license"])
         tier = entry.get("provenance_tier") or "pd_render"

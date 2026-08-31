@@ -36,5 +36,10 @@ if (!prodApi || /localhost|127\.0\.0\.1/i.test(prodApi)) {
   console.error(`web/.env.production must set a public NEXT_PUBLIC_API_BASE (got ${prodApi || "empty"}).`);
   process.exit(1);
 }
+const prodConvex = (prod.match(/^NEXT_PUBLIC_CONVEX_URL=(.*)$/m)?.[1] || "").trim();
+if (!prodConvex || /localhost|127\.0\.0\.1/i.test(prodConvex)) {
+  console.error(`web/.env.production must set a public NEXT_PUBLIC_CONVEX_URL (got ${prodConvex || "empty"}).`);
+  process.exit(1);
+}
 
 console.log(`predeploy ok: production API base will be ${prodApi}`);

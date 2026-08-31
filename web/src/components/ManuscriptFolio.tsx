@@ -38,12 +38,18 @@ export function ManuscriptFolio({
   note,
   card,
   actions,
+  variant = "card",
+  page,
+  pages,
 }: {
   verseId: string;
   verseTitle: string;
   note?: string;
   card?: FolioCardOptions;
   actions?: ReactNode;
+  variant?: "card" | "leaf";
+  page?: number;
+  pages?: number;
 }) {
   const [item, setItem] = useState<VerseItem | null | undefined>(undefined);
 
@@ -111,6 +117,24 @@ export function ManuscriptFolio({
       : cardCopy.original
         ? "both"
         : "translation";
+
+  if (variant === "leaf") {
+    const body = cardCopy.translation || cardCopy.original || translation || "";
+    return (
+      <article className="manuscript-leaf">
+        <p className="manuscript-leaf__meta">
+          {collection}
+          {page && pages ? ` · ${page} of ${pages}` : ""}
+        </p>
+        <h2 className="manuscript-leaf__title">
+          <Link href={`/read/${encodeURIComponent(verseId)}`}>{title}</Link>
+        </h2>
+        {body ? <p className="manuscript-leaf__verse">{body}</p> : null}
+        {note ? <p className="manuscript-leaf__note">{note}</p> : null}
+        {actions ? <div className="manuscript-folio__actions">{actions}</div> : null}
+      </article>
+    );
+  }
 
   return (
     <article className="manuscript-folio">

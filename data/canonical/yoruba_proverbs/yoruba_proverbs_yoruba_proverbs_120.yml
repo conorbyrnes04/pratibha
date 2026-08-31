@@ -6,36 +6,19 @@ unit_id: yoruba_proverbs.yoruba_proverbs_120
 unit_label: By labour comes wealth
 title: By labour comes wealth
 unit_type: proverb
-commentary: 'These two sayings establish a moral economy: wealth flows from sustained effort, not chance or theft, while they
-  acknowledge that even destructive forces (theft) operate within human relationship—fire destroys without discrimination
-  or mercy. Together they suggest that how we acquire and lose matters; labour builds character and community, whereas both
-  theft and fire leave only ruin. The proverbs do not condemn the thief absolutely, but measure harm by its quality: a thief
-  may spare what fire will not.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries meaning between speakers.
-
-  **labour** — Sustained work or effort; in this context, the ethical and practical source of legitimate wealth.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Proverbs 10:4 (Hebrew Bible):** Both affirm that diligence produces wealth and idleness leads to poverty; labour is the
-  proper path to provision. Divergence: The Yoruba saying adds a second image (thief vs. fire) that complicates moral judgment—it
-  does not simply condemn laziness, but weighs kinds of harm.
-
-
-  **Analects 12.7 (Confucius, trans. Legge):** Both link virtue (here, labour) to material flourishing and social order; effort
-  is not separate from character. Divergence: Confucius emphasizes ritual propriety and relationship; the Yoruba proverb emphasizes
-  the direct yield of work itself and the unpredictability of loss.'
+translation: By labour comes wealth. I 22s. A thief is more merciful than a fire.
+commentary: 'These two sayings establish a moral economy: wealth flows from sustained effort, not chance
+  or theft, while they acknowledge that even destructive forces (theft) operate within human relationship—fire
+  destroys without discrimination or mercy. Together they suggest that how we acquire and lose matters;
+  labour builds character and community, whereas both theft and fire leave only ruin. The proverbs do
+  not condemn the thief absolutely, but measure harm by its quality: a thief may spare what fire will
+  not.'
+practice: 'Today, notice one thing you laboured for—a meal prepared, a conversation earned, a skill practiced.
+  Sit with it briefly. Then consider: what in your life feels like ''fire'' (uncontrollable loss) versus
+  what feels like ''theft'' (harm within relationship)? This is not moral judgment, but discernment.'
+abhyasa: 'Today, notice one thing you laboured for—a meal prepared, a conversation earned, a skill practiced.
+  Sit with it briefly. Then consider: what in your life feels like ''fire'' (uncontrollable loss) versus
+  what feels like ''theft'' (harm within relationship)? This is not moral judgment, but discernment.'
 themes:
 - wisdom
 - proverb
@@ -48,23 +31,69 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
   body: By labour comes wealth. I 22s. A thief is more merciful than a fire.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'These two sayings establish a moral economy: wealth flows from sustained effort, not chance or
+    theft, while they acknowledge that even destructive forces (theft) operate within human relationship—fire
+    destroys without discrimination or mercy. Together they suggest that how we acquire and lose matters;
+    labour builds character and community, whereas both theft and fire leave only ruin. The proverbs do
+    not condemn the thief absolutely, but measure harm by its quality: a thief may spare what fire will
+    not.'
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries
+    meaning between speakers.
+
+    **labour** — Sustained work or effort; in this context, the ethical and practical source of legitimate
+    wealth.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for wisdom that carries
+      meaning between speakers.
+  - term: labour
+    definition: Sustained work or effort; in this context, the ethical and practical source of legitimate
+      wealth.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Proverbs 10:4 (Hebrew Bible):** Both affirm that diligence produces wealth and idleness leads
+    to poverty; labour is the proper path to provision. Divergence: The Yoruba saying adds a second image
+    (thief vs. fire) that complicates moral judgment—it does not simply condemn laziness, but weighs kinds
+    of harm.
+
+
+    **Analects 12.7 (Confucius, trans. Legge):** Both link virtue (here, labour) to material flourishing
+    and social order; effort is not separate from character. Divergence: Confucius emphasizes ritual propriety
+    and relationship; the Yoruba proverb emphasizes the direct yield of work itself and the unpredictability
+    of loss.'
+  items:
+  - citation: Proverbs 10:4 (Hebrew Bible)
+    resonance: Both affirm that diligence produces wealth and idleness leads to poverty; labour is the
+      proper path to provision.
+    divergence: The Yoruba saying adds a second image (thief vs. fire) that complicates moral judgment—it
+      does not simply condemn laziness, but weighs kinds of harm.
+  - citation: Analects 12.7 (Confucius, trans. Legge)
+    resonance: Both link virtue (here, labour) to material flourishing and social order; effort is not
+      separate from character.
+    divergence: Confucius emphasizes ritual propriety and relationship; the Yoruba proverb emphasizes
+      the direct yield of work itself and the unpredictability of loss.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice one thing you laboured for—a meal prepared, a conversation earned, a skill practiced.
+    Sit with it briefly. Then consider: what in your life feels like ''fire'' (uncontrollable loss) versus
+    what feels like ''theft'' (harm within relationship)? This is not moral judgment, but discernment.'
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: By labour comes wealth. I 22s. A thief is more merciful than a fire.
-abhyasa: 'Today, notice one thing you laboured for—a meal prepared, a conversation earned, a skill practiced. Sit with it
-  briefly. Then consider: what in your life feels like ''fire'' (uncontrollable loss) versus what feels like ''theft'' (harm
-  within relationship)? This is not moral judgment, but discernment.'
-practice: 'Today, notice one thing you laboured for—a meal prepared, a conversation earned, a skill practiced. Sit with it
-  briefly. Then consider: what in your life feels like ''fire'' (uncontrollable loss) versus what feels like ''theft'' (harm
-  within relationship)? This is not moral judgment, but discernment.'
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

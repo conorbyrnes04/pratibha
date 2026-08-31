@@ -3,38 +3,23 @@ category: root_text
 work_id: yoruba_proverbs
 work_title: Yoruba Proverbs (Òwe)
 unit_id: yoruba_proverbs.yoruba_proverbs_118
-unit_label: A fugitive does not stop to pick the thorns…
-title: A fugitive does not stop to pick the thorns…
+unit_label: A fugitive does not stop to pick the thorns from his foot, neither does he make choice of
+  his sauce
+title: A fugitive does not stop to pick the thorns from his foot, neither does he make choice of his sauce
 unit_type: proverb
-commentary: 'This proverb teaches that urgency and necessity override preference and comfort. The fugitive cannot afford the
-  luxury of deliberation—removing thorns or selecting food—because survival demands immediate motion. It speaks to how crisis
-  strips away the ordinary choices that define daily life, revealing what truly matters: forward movement over refinement.
-  The saying may also suggest wisdom about accepting what comes when one is in genuine need, rather than hesitating through
-  fastidiousness.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries meaning through metaphor
-  and lived example rather than direct instruction.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Tao Te Ching, Chapter 15:** Both texts prize simplicity and non-action (wu wei) over deliberation. The sage moves without
-  hesitation; the fugitive does not pause to choose. Divergence: The Tao Te Ching frames simplicity as a spiritual ideal;
-  this proverb grounds it in the concrete reality of survival and constraint.
-
-
-  **Ecclesiastes 9:11 (''the race is not to the swift''):** Both acknowledge that external circumstance—flight, time, fortune—governs
-  human action more than preference or merit. Divergence: Ecclesiastes counsels acceptance of life''s randomness; this proverb
-  emphasizes the necessity of *movement* despite circumstance.'
+translation: A fugitive does not stop to pick the thorns from his foot, neither does he make choice of
+  his sauce.
+commentary: 'This proverb teaches that urgency and necessity override preference and comfort. The fugitive
+  cannot afford the luxury of deliberation—removing thorns or selecting food—because survival demands
+  immediate motion. It speaks to how crisis strips away the ordinary choices that define daily life, revealing
+  what truly matters: forward movement over refinement. The saying may also suggest wisdom about accepting
+  what comes when one is in genuine need, rather than hesitating through fastidiousness.'
+practice: 'Today, notice one moment when you delay action by over-choosing or over-refining. Ask yourself:
+  Am I truly in need of this choice, or am I treating preference as necessity? Let the proverb remind
+  you when to move simply forward.'
+abhyasa: 'Today, notice one moment when you delay action by over-choosing or over-refining. Ask yourself:
+  Am I truly in need of this choice, or am I treating preference as necessity? Let the proverb remind
+  you when to move simply forward.'
 themes:
 - wisdom
 - proverb
@@ -47,21 +32,62 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
-  body: A fugitive does not stop to pick the thorns from his foot, neither does he make choice of his sauce.
+  body: A fugitive does not stop to pick the thorns from his foot, neither does he make choice of his
+    sauce.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This proverb teaches that urgency and necessity override preference and comfort. The fugitive
+    cannot afford the luxury of deliberation—removing thorns or selecting food—because survival demands
+    immediate motion. It speaks to how crisis strips away the ordinary choices that define daily life,
+    revealing what truly matters: forward movement over refinement. The saying may also suggest wisdom
+    about accepting what comes when one is in genuine need, rather than hesitating through fastidiousness.'
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries
+    meaning through metaphor and lived example rather than direct instruction.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for wisdom that carries
+      meaning through metaphor and lived example rather than direct instruction.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Tao Te Ching, Chapter 15:** Both texts prize simplicity and non-action (wu wei) over deliberation.
+    The sage moves without hesitation; the fugitive does not pause to choose. Divergence: The Tao Te Ching
+    frames simplicity as a spiritual ideal; this proverb grounds it in the concrete reality of survival
+    and constraint.
+
+
+    **Ecclesiastes 9:11 (''the race is not to the swift''):** Both acknowledge that external circumstance—flight,
+    time, fortune—governs human action more than preference or merit. Divergence: Ecclesiastes counsels
+    acceptance of life''s randomness; this proverb emphasizes the necessity of *movement* despite circumstance.'
+  items:
+  - citation: Tao Te Ching, Chapter 15
+    resonance: Both texts prize simplicity and non-action (wu wei) over deliberation. The sage moves without
+      hesitation; the fugitive does not pause to choose.
+    divergence: The Tao Te Ching frames simplicity as a spiritual ideal; this proverb grounds it in the
+      concrete reality of survival and constraint.
+  - citation: Ecclesiastes 9:11 ('the race is not to the swift')
+    resonance: Both acknowledge that external circumstance—flight, time, fortune—governs human action
+      more than preference or merit.
+    divergence: Ecclesiastes counsels acceptance of life's randomness; this proverb emphasizes the necessity
+      of *movement* despite circumstance.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice one moment when you delay action by over-choosing or over-refining. Ask yourself:
+    Am I truly in need of this choice, or am I treating preference as necessity? Let the proverb remind
+    you when to move simply forward.'
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: A fugitive does not stop to pick the thorns from his foot, neither does he make choice of his sauce.
-abhyasa: 'Today, notice one moment when you delay action by over-choosing or over-refining. Ask yourself: Am I truly in need
-  of this choice, or am I treating preference as necessity? Let the proverb remind you when to move simply forward.'
-practice: 'Today, notice one moment when you delay action by over-choosing or over-refining. Ask yourself: Am I truly in need
-  of this choice, or am I treating preference as necessity? Let the proverb remind you when to move simply forward.'
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

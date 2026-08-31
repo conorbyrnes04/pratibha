@@ -24,7 +24,7 @@ export function CircleReadings({
 }
 
 function CircleReadingsInner({ verseId, daily }: { verseId: string; daily: boolean }) {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
   const meta = useQuery(api.studentCommentaries.circleMeta, { verseId });
   const offered = useQuery(
     api.studentCommentaries.listOffered,
@@ -45,7 +45,7 @@ function CircleReadingsInner({ verseId, daily }: { verseId: string; daily: boole
           : "Readings offered on this verse."}
         {count ? ` · ${count}` : ""}
       </p>
-      {!user ? (
+      {loading ? null : !user ? (
         <p className="soft mt-4 text-sm">
           <Link href={`/login?next=/read/${encodeURIComponent(verseId)}`} className={buttonVariants({ size: "sm" })}>
             Sign in to read the circle
@@ -56,6 +56,11 @@ function CircleReadingsInner({ verseId, daily }: { verseId: string; daily: boole
       ) : offered.length === 0 ? (
         <p className="soft mt-4 text-sm leading-relaxed">
           The circle is open. Offer a reading when the verse has sat with you.
+          {" "}
+          <Link href={`#commentary`} className="text-amber-100 underline-offset-2 hover:underline">
+            Write yours
+          </Link>
+          .
         </p>
       ) : (
         <ul className="mt-6 space-y-6">

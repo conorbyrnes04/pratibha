@@ -263,7 +263,7 @@ export default function VerseDetailPage() {
 
         {translationLayer ? (
           <LayerBlock layer={translationLayer} variant="plain" />
-        ) : (
+        ) : originalLayer ? null : (
           <section className="passage-layer passage-layer--translation">
             <h2 className="passage-layer__label">Translation</h2>
             <p className="reading-prose mt-4">{passagePreview(item)}</p>

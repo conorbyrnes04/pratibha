@@ -1,3 +1,5 @@
+import { LIVING_TRAILS } from "./learn/livingTrails";
+
 export type ChatMode = "question" | "explain" | "compare" | "practice";
 
 export type LearningStepSpec = {
@@ -1673,6 +1675,7 @@ export const LEARNING_TRACKS: LearningTrack[] = [
       },
     ],
   },
+  ...LIVING_TRAILS,
 ];
 
 /** A realm is a grouping of paths by lineage/territory — the "courses" of the
@@ -1718,6 +1721,19 @@ export const LEARNING_REALMS: LearningRealm[] = [
     blurb:
       "One story of emanation and return, told by Plotinus, the Śaiva sages, and the Tao.",
     trackIds: ["the-one-and-the-many"],
+  },
+  {
+    id: "yoga-dharma",
+    title: "Yoga & Dharma",
+    blurb:
+      "The seer rests in its nature; emptiness and compassion walk together.",
+    trackIds: ["seer-in-its-nature", "emptiness-and-compassion"],
+  },
+  {
+    id: "living-speech",
+    title: "Living Speech",
+    blurb: "Òwe — the horse of conversation. Wisdom that travels by proverb.",
+    trackIds: ["the-horse-of-conversation"],
   },
 ];
 

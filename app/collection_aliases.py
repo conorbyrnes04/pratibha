@@ -19,6 +19,14 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "diamond_sutra",
     },
     "johnson_yoruba_religion": {"johnson_yoruba_religion", "the_yoruba_faith_samuel_johnson"},
+    "a_course_in_miracles": {"a_course_in_miracles", "a_course_in_miracles_original_edition", "acim"},
+    "kabbalah_zohar_yetzirah": {
+        "kabbalah_zohar_yetzirah",
+        "kabbalah",
+        "sefer_yetzirah",
+        "the_zohar",
+        "kabbalah_sefer_yetzirah_the_zohar",
+    },
     "eastman_soul_of_the_indian": {
         "eastman_soul_of_the_indian",
         "the_soul_of_the_indian",

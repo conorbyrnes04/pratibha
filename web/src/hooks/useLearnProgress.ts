@@ -2,13 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { LearningTrack } from "@/lib/learningPaths";
-import type { LearningThread } from "@/lib/learningThreads";
 import { useAuth } from "@/components/AuthProvider";
 import { useSyncLearnProgress } from "@/lib/learnCloud";
 import { recordPractice } from "@/lib/glyphUnlock";
 import {
   clearTrackProgress,
-  clearThreadProgress,
   downloadLearnProgress,
   loadLearnProgressBundle,
   parseLearnProgressImport,
@@ -16,7 +14,6 @@ import {
   type ProgressMap,
   saveLearnProgressBundle,
   stepKey,
-  threadKey,
 } from "@/lib/learn/progress";
 
 export function useLearnProgress() {
@@ -76,21 +73,9 @@ export function useLearnProgress() {
     flipKey(stepKey(trackId, stepId));
   }
 
-  function toggleThread(threadId: string, beadId: string) {
-    flipKey(threadKey(threadId, beadId));
-  }
-
   function resetTrack(trackId: string, track: LearningTrack | undefined) {
     setProgress((p) => {
       const bundle = clearTrackProgress(trackId, track, p, completedAt);
-      setCompletedAt(bundle.completedAt);
-      return bundle.progress;
-    });
-  }
-
-  function resetThread(threadId: string, thread: LearningThread | undefined) {
-    setProgress((p) => {
-      const bundle = clearThreadProgress(threadId, thread, p, completedAt);
       setCompletedAt(bundle.completedAt);
       return bundle.progress;
     });
@@ -128,9 +113,7 @@ export function useLearnProgress() {
     completedAt,
     hydrated,
     toggle,
-    toggleThread,
     resetTrack,
-    resetThread,
     setProgress,
     exportProgress,
     importProgressFromFile,

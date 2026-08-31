@@ -31,14 +31,6 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
 
   if (!configured) return <>{children}</>;
 
-  if (loading && !publicPath) {
-    return (
-      <main className="mx-auto max-w-lg px-4 py-20">
-        <p className="soft font-sans text-sm uppercase tracking-[0.18em]">Checking session…</p>
-      </main>
-    );
-  }
-
   if (mustSignIn) {
     return (
       <main className="mx-auto max-w-lg px-4 py-20">

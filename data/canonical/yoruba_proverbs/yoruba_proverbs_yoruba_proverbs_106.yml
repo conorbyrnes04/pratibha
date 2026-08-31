@@ -6,34 +6,16 @@ unit_id: yoruba_proverbs.yoruba_proverbs_106
 unit_label: The birdlime is the death of the bird
 title: The birdlime is the death of the bird
 unit_type: proverb
-commentary: 'This proverb speaks to the principle of consequence and entanglement: what appears as a tool or substance in
-  the world becomes fatal when the bird—through its nature or circumstance—comes into contact with it. The proverb suggests
-  that danger is not always external or malicious, but often emerges from the meeting of a being''s condition with its environment.
-  It invites reflection on how we move through the world and what we adhere to.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries meaning across generations
-  and contexts.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Dhammapada, verse 309:** Both teach that suffering arises from contact and clinging: ''From craving springs grief; from
-  craving springs fear.'' Divergence: The proverb locates danger in the substance itself (birdlime), while the Dhammapada
-  locates it in the mind''s attachment; the proverb is more about vulnerability and circumstance.
-
-
-  **Heraclitus, Fragment 12:** Both suggest that what seems passive or neutral (birdlime, fire) becomes destructive through
-  interaction: ''This world...was ever, is now, and ever shall be...a fire ever-living.'' Divergence: Heraclitus emphasizes
-  cosmic flux and transformation; the proverb emphasizes specific peril and the particular fate of the bird.'
+translation: The birdlime is the death of the bird.
+commentary: 'This proverb speaks to the principle of consequence and entanglement: what appears as a tool
+  or substance in the world becomes fatal when the bird—through its nature or circumstance—comes into
+  contact with it. The proverb suggests that danger is not always external or malicious, but often emerges
+  from the meeting of a being''s condition with its environment. It invites reflection on how we move
+  through the world and what we adhere to.'
+practice: 'Today, notice one habit or attachment that draws you in repeatedly. Sit quietly and ask: what
+  am I ''sticking to'' that may not serve me? Write one sentence about what you notice, without judgment.'
+abhyasa: 'Today, notice one habit or attachment that draws you in repeatedly. Sit quietly and ask: what
+  am I ''sticking to'' that may not serve me? Write one sentence about what you notice, without judgment.'
 themes:
 - wisdom
 - proverb
@@ -46,21 +28,61 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
   body: The birdlime is the death of the bird.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This proverb speaks to the principle of consequence and entanglement: what appears as a tool
+    or substance in the world becomes fatal when the bird—through its nature or circumstance—comes into
+    contact with it. The proverb suggests that danger is not always external or malicious, but often emerges
+    from the meeting of a being''s condition with its environment. It invites reflection on how we move
+    through the world and what we adhere to.'
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries
+    meaning across generations and contexts.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for wisdom that carries
+      meaning across generations and contexts.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Dhammapada, verse 309:** Both teach that suffering arises from contact and clinging: ''From
+    craving springs grief; from craving springs fear.'' Divergence: The proverb locates danger in the
+    substance itself (birdlime), while the Dhammapada locates it in the mind''s attachment; the proverb
+    is more about vulnerability and circumstance.
+
+
+    **Heraclitus, Fragment 12:** Both suggest that what seems passive or neutral (birdlime, fire) becomes
+    destructive through interaction: ''This world...was ever, is now, and ever shall be...a fire ever-living.''
+    Divergence: Heraclitus emphasizes cosmic flux and transformation; the proverb emphasizes specific
+    peril and the particular fate of the bird.'
+  items:
+  - citation: Dhammapada, verse 309
+    resonance: 'Both teach that suffering arises from contact and clinging: ''From craving springs grief;
+      from craving springs fear.'''
+    divergence: The proverb locates danger in the substance itself (birdlime), while the Dhammapada locates
+      it in the mind's attachment; the proverb is more about vulnerability and circumstance.
+  - citation: Heraclitus, Fragment 12
+    resonance: 'Both suggest that what seems passive or neutral (birdlime, fire) becomes destructive through
+      interaction: ''This world...was ever, is now, and ever shall be...a fire ever-living.'''
+    divergence: Heraclitus emphasizes cosmic flux and transformation; the proverb emphasizes specific
+      peril and the particular fate of the bird.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice one habit or attachment that draws you in repeatedly. Sit quietly and ask: what
+    am I ''sticking to'' that may not serve me? Write one sentence about what you notice, without judgment.'
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: The birdlime is the death of the bird.
-abhyasa: 'Today, notice one habit or attachment that draws you in repeatedly. Sit quietly and ask: what am I ''sticking to''
-  that may not serve me? Write one sentence about what you notice, without judgment.'
-practice: 'Today, notice one habit or attachment that draws you in repeatedly. Sit quietly and ask: what am I ''sticking to''
-  that may not serve me? Write one sentence about what you notice, without judgment.'
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

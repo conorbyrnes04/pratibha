@@ -1,7 +1,8 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
+import { getVerse } from "@/lib/api";
 import { JournalPanel } from "@/components/JournalPanel";
 import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import { PassageMaturityBadge } from "@/components/learn/PassageMaturityBadge";
@@ -44,8 +45,6 @@ type PathStepWellProps = {
   step: LearningStepSpec;
   items: VerseItem[];
   pathId?: string | null;
-  threadId?: string | null;
-  beadId?: string | null;
   children?: ReactNode;
 };
 
@@ -55,20 +54,37 @@ export function PathStepWell({
   step,
   items,
   pathId,
-  threadId,
-  beadId,
   children,
 }: PathStepWellProps) {
-  const item = matchStepItem(step, items);
+  const [pinned, setPinned] = useState<VerseItem | null>(null);
+  const catalogItem = matchStepItem(step, items);
+  const item = catalogItem || pinned;
+
+  useEffect(() => {
+    if (catalogItem || !step.passageId) {
+      setPinned(null);
+      return;
+    }
+    let cancelled = false;
+    getVerse(step.passageId)
+      .then((verse) => {
+        if (!cancelled) setPinned(verse);
+      })
+      .catch(() => {
+        if (!cancelled) setPinned(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [catalogItem, step.passageId]);
+
   const supporting = (step.supportingPassageIds || [])
     .map((id) => resolveById(items, id))
     .filter((v): v is VerseItem => Boolean(v));
   const backHref = learnHref({
     pathId,
-    trackId: threadId ? undefined : trackId,
-    stepId: threadId ? undefined : step.id,
-    threadId,
-    beadId,
+    trackId,
+    stepId: step.id,
   });
   const readHref = item
     ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
@@ -138,10 +154,7 @@ export function PathStepWell({
         <JournalPanel passage={item} prompt={step.journalPrompt} />
       ) : (
         <JournalPanel
-          contextId={learnStepContextId(trackId, step.id, {
-            threadId: threadId ?? null,
-            beadId: beadId ?? null,
-          })}
+          contextId={learnStepContextId(trackId, step.id)}
           contextTitle={`${trackTitle} · ${step.title}`}
           prompt={step.journalPrompt}
         />
@@ -152,7 +165,7 @@ export function PathStepWell({
           {item ? "Open in Library" : "Browse Library"}
         </Link>
         <Link href={chatHref} className={buttonVariants({ variant: "secondary", size: "sm" })}>
-          {actionLabel(step.chatMode)}
+          {pathId ? "Ask this gate" : actionLabel(step.chatMode)}
         </Link>
         <Link href="/journal" className={buttonVariants({ variant: "secondary", size: "sm" })}>
           All journal notes

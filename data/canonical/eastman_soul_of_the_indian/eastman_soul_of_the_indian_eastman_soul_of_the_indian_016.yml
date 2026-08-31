@@ -3,47 +3,24 @@ category: root_text
 work_id: eastman_soul_of_the_indian
 work_title: The Soul of the Indian
 unit_id: eastman_soul_of_the_indian.eastman_soul_of_the_indian_016
-unit_label: Long before I ever heard of Christ, or saw a white…
-title: Long before I ever heard of Christ, or saw a white…
+unit_label: Long before I ever heard of Christ, or saw a white man
+title: Long before I ever heard of Christ, or saw a white man
 unit_type: reflection
-commentary: 'Eastman claims that moral knowledge—understanding of God, goodness, and beauty—came to him before European contact,
-  through a woman''s teaching and direct encounter with the natural world. He does not reject civilization but asserts that
-  it has not *improved* upon what he already knew. This is a statement about the sufficiency and integrity of Dakota moral
-  formation, not a romantic rejection of learning itself.
-
-
-
-  Key Terms
-
-
-
-  **untutored woman** — A person whose moral teaching came from lived practice and relationship rather than formal schooling;
-  in Eastman''s account, his grandmother or another elder who transmitted Dakota values.
-
-  **dear Nature herself** — The natural world as a direct teacher and source of moral and spiritual knowledge, not merely
-  a setting but an active presence in formation.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Tao Te Ching, ch. 15: ''The ancient masters were profound and subtle... because they were subtle, they must be described
-  with difficulty.'':** Both texts suggest that deep wisdom is simple, difficult to articulate, and known through direct perception
-  rather than explanation. Divergence: Eastman grounds his knowing in a specific person and place (Dakota woman, nature);
-  the Tao Te Ching points toward an impersonal, nameless principle.
-
-
-  **Thoreau, Walden: ''I went to the woods because I wished to live deliberately... and not, when I came to die, discover
-  that I had not lived.'':** Both writers trust nature as a teacher and question whether civilization''s offerings constitute
-  genuine improvement. Divergence: Thoreau frames nature-learning as a deliberate experiment and personal choice; Eastman
-  describes it as the ordinary inheritance of his upbringing.
-
-
-  **Socrates in Plato''s Apology: ''The unexamined life is not worth living.'':** Both assert that true knowledge of goodness
-  is available to those who attend carefully—not the exclusive property of the formally educated. Divergence: Socrates emphasizes
-  rational questioning and dialogue; Eastman emphasizes receptive learning from a teacher and from nature.'
+original: Long before I ever heard of Christ, or saw a white man, I had learned from an untutored woman
+  the essence of morality. With the help of dear Nature herself, she taught me things simple but of mighty
+  import. I knew God. I perceived what goodness is. I saw and loved what is really beautiful. Civilization
+  has not taught me anything better!
+commentary: Eastman claims that moral knowledge—understanding of God, goodness, and beauty—came to him
+  before European contact, through a woman's teaching and direct encounter with the natural world. He
+  does not reject civilization but asserts that it has not *improved* upon what he already knew. This
+  is a statement about the sufficiency and integrity of Dakota moral formation, not a romantic rejection
+  of learning itself.
+practice: Reflect today on one moral or spiritual insight you hold that came not from formal instruction
+  but from lived experience—a person, a place, or a moment in nature. What did it teach you? Has formal
+  learning since then deepened it, contradicted it, or left it untouched?
+abhyasa: Reflect today on one moral or spiritual insight you hold that came not from formal instruction
+  but from lived experience—a person, a place, or a moment in nature. What did it teach you? Has formal
+  learning since then deepened it, contradicted it, or left it untouched?
 themes:
 - the great mystery
 - silence
@@ -56,26 +33,83 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911, public domain).
+translation_provenance: Original text by Charles A. Eastman (Ohíyeʼsa), The Soul of the Indian (1911,
+  public domain).
 pratibha_layers:
 - kind: original
   label: Original
-  body: Long before I ever heard of Christ, or saw a white man, I had learned from an untutored woman the essence of morality.
-    With the help of dear Nature herself, she taught me things simple but of mighty import. I knew God. I perceived what goodness
-    is. I saw and loved what is really beautiful. Civilization has not taught me anything better!
+  body: Long before I ever heard of Christ, or saw a white man, I had learned from an untutored woman
+    the essence of morality. With the help of dear Nature herself, she taught me things simple but of
+    mighty import. I knew God. I perceived what goodness is. I saw and loved what is really beautiful.
+    Civilization has not taught me anything better!
+- kind: commentary
+  label: Pratibha Commentary
+  body: Eastman claims that moral knowledge—understanding of God, goodness, and beauty—came to him before
+    European contact, through a woman's teaching and direct encounter with the natural world. He does
+    not reject civilization but asserts that it has not *improved* upon what he already knew. This is
+    a statement about the sufficiency and integrity of Dakota moral formation, not a romantic rejection
+    of learning itself.
+- kind: key_terms
+  label: Key Terms
+  body: '**untutored woman** — A person whose moral teaching came from lived practice and relationship
+    rather than formal schooling; in Eastman''s account, his grandmother or another elder who transmitted
+    Dakota values.
+
+    **dear Nature herself** — The natural world as a direct teacher and source of moral and spiritual
+    knowledge, not merely a setting but an active presence in formation.'
+  items:
+  - term: untutored woman
+    definition: A person whose moral teaching came from lived practice and relationship rather than formal
+      schooling; in Eastman's account, his grandmother or another elder who transmitted Dakota values.
+  - term: dear Nature herself
+    definition: The natural world as a direct teacher and source of moral and spiritual knowledge, not
+      merely a setting but an active presence in formation.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Tao Te Ching, ch. 15: ''The ancient masters were profound and subtle... because they were subtle,
+    they must be described with difficulty.'':** Both texts suggest that deep wisdom is simple, difficult
+    to articulate, and known through direct perception rather than explanation. Divergence: Eastman grounds
+    his knowing in a specific person and place (Dakota woman, nature); the Tao Te Ching points toward
+    an impersonal, nameless principle.
+
+
+    **Thoreau, Walden: ''I went to the woods because I wished to live deliberately... and not, when I
+    came to die, discover that I had not lived.'':** Both writers trust nature as a teacher and question
+    whether civilization''s offerings constitute genuine improvement. Divergence: Thoreau frames nature-learning
+    as a deliberate experiment and personal choice; Eastman describes it as the ordinary inheritance of
+    his upbringing.
+
+
+    **Socrates in Plato''s Apology: ''The unexamined life is not worth living.'':** Both assert that true
+    knowledge of goodness is available to those who attend carefully—not the exclusive property of the
+    formally educated. Divergence: Socrates emphasizes rational questioning and dialogue; Eastman emphasizes
+    receptive learning from a teacher and from nature.'
+  items:
+  - citation: 'Tao Te Ching, ch. 15: ''The ancient masters were profound and subtle... because they were
+      subtle, they must be described with difficulty.'''
+    resonance: Both texts suggest that deep wisdom is simple, difficult to articulate, and known through
+      direct perception rather than explanation.
+    divergence: Eastman grounds his knowing in a specific person and place (Dakota woman, nature); the
+      Tao Te Ching points toward an impersonal, nameless principle.
+  - citation: 'Thoreau, Walden: ''I went to the woods because I wished to live deliberately... and not,
+      when I came to die, discover that I had not lived.'''
+    resonance: Both writers trust nature as a teacher and question whether civilization's offerings constitute
+      genuine improvement.
+    divergence: Thoreau frames nature-learning as a deliberate experiment and personal choice; Eastman
+      describes it as the ordinary inheritance of his upbringing.
+  - citation: 'Socrates in Plato''s Apology: ''The unexamined life is not worth living.'''
+    resonance: Both assert that true knowledge of goodness is available to those who attend carefully—not
+      the exclusive property of the formally educated.
+    divergence: Socrates emphasizes rational questioning and dialogue; Eastman emphasizes receptive learning
+      from a teacher and from nature.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Reflect today on one moral or spiritual insight you hold that came not from formal instruction
+    but from lived experience—a person, a place, or a moment in nature. What did it teach you? Has formal
+    learning since then deepened it, contradicted it, or left it untouched?
 provenance:
   collection: The Soul of the Indian
-  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his own words, published
-    to interpret Native spirituality across cultures. A living tradition — offered here as a study reading, with respect to
-    Dakota descendants.
+  cultural_context: Charles Eastman (Ohíyeʼsa) was a Santee Dakota writer and physician; these are his
+    own words, published to interpret Native spirituality across cultures. A living tradition — offered
+    here as a study reading, with respect to Dakota descendants.
   section: Iv. Barbarism And The Moral Code
-original: Long before I ever heard of Christ, or saw a white man, I had learned from an untutored woman the essence of morality.
-  With the help of dear Nature herself, she taught me things simple but of mighty import. I knew God. I perceived what goodness
-  is. I saw and loved what is really beautiful. Civilization has not taught me anything better!
-abhyasa: Reflect today on one moral or spiritual insight you hold that came not from formal instruction but from lived experience—a
-  person, a place, or a moment in nature. What did it teach you? Has formal learning since then deepened it, contradicted
-  it, or left it untouched?
-practice: Reflect today on one moral or spiritual insight you hold that came not from formal instruction but from lived experience—a
-  person, a place, or a moment in nature. What did it teach you? Has formal learning since then deepened it, contradicted
-  it, or left it untouched?
-enriched: true

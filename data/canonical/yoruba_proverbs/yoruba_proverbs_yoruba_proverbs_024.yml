@@ -3,37 +3,24 @@ category: root_text
 work_id: yoruba_proverbs
 work_title: Yoruba Proverbs (Òwe)
 unit_id: yoruba_proverbs.yoruba_proverbs_024
-unit_label: A jealous woman has no flesh upon her breast…
-title: A jealous woman has no flesh upon her breast…
+unit_label: A jealous woman has no flesh upon her breast, for however much she may feed upon jealousy,
+  she will never be
+title: A jealous woman has no flesh upon her breast, for however much she may feed upon jealousy, she
+  will never be
 unit_type: proverb
-commentary: 'This proverb uses the image of physical wasting—a body consumed from within—to show how jealousy operates as
-  a self-destructive force rather than a response to external circumstance. The paradox is sharp: the more one ''feeds upon''
-  jealousy, the more one starves. It suggests jealousy is not a rational emotion that can be satisfied by getting what one
-  envies, but rather a condition that hollows the person who harbors it, regardless of circumstance.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries meaning between speakers
-  and across time.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Dhammapada, verse 215-216 (Buddhist canon):** Both teach that craving and envy consume the person from within, creating
-  suffering that no external gain can remedy. Divergence: The Dhammapada frames this as universal human delusion; the òwe
-  addresses it through a specific image of the body, grounding wisdom in the visible and tangible.
-
-
-  **Ecclesiastes 4:4 (Hebrew Bible):** Both observe that striving born of comparison with others yields only emptiness and
-  weariness of spirit. Divergence: Ecclesiastes diagnoses this as vanity of all labor; the òwe isolates jealousy itself as
-  the poison, not work or ambition generally.'
+translation: A jealous woman has no flesh upon her breast, for however much she may feed upon jealousy,
+  she will never be satisfied.
+commentary: 'This proverb uses the image of physical wasting—a body consumed from within—to show how jealousy
+  operates as a self-destructive force rather than a response to external circumstance. The paradox is
+  sharp: the more one ''feeds upon'' jealousy, the more one starves. It suggests jealousy is not a rational
+  emotion that can be satisfied by getting what one envies, but rather a condition that hollows the person
+  who harbors it, regardless of circumstance.'
+practice: 'Bring to mind a moment when you felt jealous of another. Notice: did satisfying that jealousy
+  (getting the thing, or the other person losing it) actually calm the feeling? Or did the restlessness
+  continue? Sit with that honest observation without judgment.'
+abhyasa: 'Bring to mind a moment when you felt jealous of another. Notice: did satisfying that jealousy
+  (getting the thing, or the other person losing it) actually calm the feeling? Or did the restlessness
+  continue? Sit with that honest observation without judgment.'
 themes:
 - wisdom
 - proverb
@@ -46,24 +33,62 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
-  body: A jealous woman has no flesh upon her breast, for however much she may feed upon jealousy, she will never be satisfied.
+  body: A jealous woman has no flesh upon her breast, for however much she may feed upon jealousy, she
+    will never be satisfied.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This proverb uses the image of physical wasting—a body consumed from within—to show how jealousy
+    operates as a self-destructive force rather than a response to external circumstance. The paradox
+    is sharp: the more one ''feeds upon'' jealousy, the more one starves. It suggests jealousy is not
+    a rational emotion that can be satisfied by getting what one envies, but rather a condition that hollows
+    the person who harbors it, regardless of circumstance.'
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries
+    meaning between speakers and across time.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for wisdom that carries
+      meaning between speakers and across time.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Dhammapada, verse 215-216 (Buddhist canon):** Both teach that craving and envy consume the
+    person from within, creating suffering that no external gain can remedy. Divergence: The Dhammapada
+    frames this as universal human delusion; the òwe addresses it through a specific image of the body,
+    grounding wisdom in the visible and tangible.
+
+
+    **Ecclesiastes 4:4 (Hebrew Bible):** Both observe that striving born of comparison with others yields
+    only emptiness and weariness of spirit. Divergence: Ecclesiastes diagnoses this as vanity of all labor;
+    the òwe isolates jealousy itself as the poison, not work or ambition generally.'
+  items:
+  - citation: Dhammapada, verse 215-216 (Buddhist canon)
+    resonance: Both teach that craving and envy consume the person from within, creating suffering that
+      no external gain can remedy.
+    divergence: The Dhammapada frames this as universal human delusion; the òwe addresses it through a
+      specific image of the body, grounding wisdom in the visible and tangible.
+  - citation: Ecclesiastes 4:4 (Hebrew Bible)
+    resonance: Both observe that striving born of comparison with others yields only emptiness and weariness
+      of spirit.
+    divergence: Ecclesiastes diagnoses this as vanity of all labor; the òwe isolates jealousy itself as
+      the poison, not work or ambition generally.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Bring to mind a moment when you felt jealous of another. Notice: did satisfying that jealousy
+    (getting the thing, or the other person losing it) actually calm the feeling? Or did the restlessness
+    continue? Sit with that honest observation without judgment.'
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: A jealous woman has no flesh upon her breast, for however much she may feed upon jealousy, she will never be
-  satisfied.
-abhyasa: 'Bring to mind a moment when you felt jealous of another. Notice: did satisfying that jealousy (getting the thing,
-  or the other person losing it) actually calm the feeling? Or did the restlessness continue? Sit with that honest observation
-  without judgment.'
-practice: 'Bring to mind a moment when you felt jealous of another. Notice: did satisfying that jealousy (getting the thing,
-  or the other person losing it) actually calm the feeling? Or did the restlessness continue? Sit with that honest observation
-  without judgment.'
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

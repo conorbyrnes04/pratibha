@@ -6,33 +6,18 @@ unit_id: yoruba_proverbs.yoruba_proverbs_123
 unit_label: Joy has a small body
 title: Joy has a small body
 unit_type: proverb
-commentary: 'This proverb suggests that joy, despite its power to transform experience, occupies little space—it arrives suddenly,
-  leaves quickly, and cannot be grasped or held. The image invites reflection on the nature of happiness: not something to
-  be accumulated or secured, but something fleeting that teaches us to recognize and receive it when present. The proverb
-  may counsel against expecting joy to be permanent or substantial, and instead to appreciate its lightness.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries meaning between speakers.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Heraclitus, Fragment 91 (on impermanence):** Both suggest that what is most vital cannot be held or repeated; joy, like
-  the river, is always new. Divergence: Heraclitus emphasizes cosmic flux; this proverb focuses on the intimate, bodily experience
-  of joy''s smallness.
-
-
-  **Dhammapada, verse 202 (on impermanence / anicca):** Both teach that clinging to transient states causes suffering; joy''s
-  small body reminds us not to grasp. Divergence: The Dhammapada frames impermanence as a path to liberation from desire;
-  the proverb simply observes joy''s nature without prescribing renunciation.'
+translation: Joy has a small body.
+commentary: 'This proverb suggests that joy, despite its power to transform experience, occupies little
+  space—it arrives suddenly, leaves quickly, and cannot be grasped or held. The image invites reflection
+  on the nature of happiness: not something to be accumulated or secured, but something fleeting that
+  teaches us to recognize and receive it when present. The proverb may counsel against expecting joy to
+  be permanent or substantial, and instead to appreciate its lightness.'
+practice: Today, notice one small moment of joy—a taste, a sound, a thought—without trying to extend it
+  or make it 'bigger.' Simply acknowledge its presence and its smallness. What does this teach you about
+  how you usually relate to happiness?
+abhyasa: Today, notice one small moment of joy—a taste, a sound, a thought—without trying to extend it
+  or make it 'bigger.' Simply acknowledge its presence and its smallness. What does this teach you about
+  how you usually relate to happiness?
 themes:
 - wisdom
 - proverb
@@ -45,21 +30,61 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
   body: Joy has a small body.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This proverb suggests that joy, despite its power to transform experience, occupies little space—it
+    arrives suddenly, leaves quickly, and cannot be grasped or held. The image invites reflection on the
+    nature of happiness: not something to be accumulated or secured, but something fleeting that teaches
+    us to recognize and receive it when present. The proverb may counsel against expecting joy to be permanent
+    or substantial, and instead to appreciate its lightness.'
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries
+    meaning between speakers.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for wisdom that carries
+      meaning between speakers.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Heraclitus, Fragment 91 (on impermanence):** Both suggest that what is most vital cannot be
+    held or repeated; joy, like the river, is always new. Divergence: Heraclitus emphasizes cosmic flux;
+    this proverb focuses on the intimate, bodily experience of joy''s smallness.
+
+
+    **Dhammapada, verse 202 (on impermanence / anicca):** Both teach that clinging to transient states
+    causes suffering; joy''s small body reminds us not to grasp. Divergence: The Dhammapada frames impermanence
+    as a path to liberation from desire; the proverb simply observes joy''s nature without prescribing
+    renunciation.'
+  items:
+  - citation: Heraclitus, Fragment 91 (on impermanence)
+    resonance: Both suggest that what is most vital cannot be held or repeated; joy, like the river, is
+      always new.
+    divergence: Heraclitus emphasizes cosmic flux; this proverb focuses on the intimate, bodily experience
+      of joy's smallness.
+  - citation: Dhammapada, verse 202 (on impermanence / anicca)
+    resonance: Both teach that clinging to transient states causes suffering; joy's small body reminds
+      us not to grasp.
+    divergence: The Dhammapada frames impermanence as a path to liberation from desire; the proverb simply
+      observes joy's nature without prescribing renunciation.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, notice one small moment of joy—a taste, a sound, a thought—without trying to extend it
+    or make it 'bigger.' Simply acknowledge its presence and its smallness. What does this teach you about
+    how you usually relate to happiness?
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: Joy has a small body.
-abhyasa: Today, notice one small moment of joy—a taste, a sound, a thought—without trying to extend it or make it 'bigger.'
-  Simply acknowledge its presence and its smallness. What does this teach you about how you usually relate to happiness?
-practice: Today, notice one small moment of joy—a taste, a sound, a thought—without trying to extend it or make it 'bigger.'
-  Simply acknowledge its presence and its smallness. What does this teach you about how you usually relate to happiness?
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

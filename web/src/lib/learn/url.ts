@@ -2,6 +2,7 @@ export type LearnSearch = {
   pathId: string | null;
   trackId: string | null;
   stepId: string | null;
+  /** Retired theme URLs; canonicalize onto a trail gate. */
   threadId: string | null;
   beadId: string | null;
 };
@@ -10,21 +11,16 @@ export type LearnHrefOpts = {
   pathId?: string | null;
   trackId?: string | null;
   stepId?: string | null;
-  threadId?: string | null;
-  beadId?: string | null;
 };
 
-export type LearnView = "home" | "gate" | "journey" | "bead" | "lineage";
+export type LearnView = "home" | "gate";
 
 export function learnViewFromSearch(search: LearnSearch): LearnView {
-  if (search.threadId && search.beadId) return "bead";
-  if (search.threadId) return "journey";
   if (search.trackId && search.stepId) return "gate";
-  if (search.trackId) return "lineage";
   return "home";
 }
 
-/** Build /learn deep link. Thread-only URLs omit track so the theme stays primary. */
+/** Build /learn deep link. Trails are the only guided walk. */
 export function learnHref(trackIdOrOpts: string | LearnHrefOpts, stepId?: string | null): string {
   const opts: LearnHrefOpts =
     typeof trackIdOrOpts === "string"
@@ -35,8 +31,6 @@ export function learnHref(trackIdOrOpts: string | LearnHrefOpts, stepId?: string
   if (opts.pathId) params.set("path", opts.pathId);
   if (opts.trackId) params.set("track", opts.trackId);
   if (opts.stepId && opts.stepId !== "__none__") params.set("step", opts.stepId);
-  if (opts.threadId) params.set("thread", opts.threadId);
-  if (opts.beadId) params.set("bead", opts.beadId);
   const qs = params.toString();
   return qs ? `/learn?${qs}` : "/learn";
 }

@@ -188,10 +188,12 @@ export const TRADITION_SUMI: Record<string, SumiSlug> = {
   "Buddhist": "lotus",
   "Daoist": "yin_yang",
   "Confucian": "oak",
+  "Yoruba": "oshun",
+  "Dakota": "thunderbird",
+  "Hebrew": "sage",
   "Greek": "athena",
   "Christian": "chalice",
   "Sufi": "rose",
-  Other: "circle",
 };
 
 export function traditionSumiGlyph(tradition?: string): SumiSlug {

@@ -56,6 +56,24 @@ const TRADITION_PALETTES: Record<string, TomePalette> = {
     accent: "#4ec4b0",
     paper: "#e4ebe6",
   },
+  Yoruba: {
+    background: "#1a120c",
+    cloth: "#3a2410",
+    accent: "#e0a84a",
+    paper: "#f0e6d2",
+  },
+  Dakota: {
+    background: "#12140c",
+    cloth: "#243018",
+    accent: "#c4b070",
+    paper: "#ebe6d8",
+  },
+  Hebrew: {
+    background: "#141210",
+    cloth: "#2a2418",
+    accent: "#d8c48a",
+    paper: "#f0eadc",
+  },
 };
 
 function thicknessForCount(count: number): number {

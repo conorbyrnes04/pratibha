@@ -3,36 +3,21 @@ category: root_text
 work_id: yoruba_proverbs
 work_title: Yoruba Proverbs (Òwe)
 unit_id: yoruba_proverbs.yoruba_proverbs_038
-unit_label: A man may be born to a fortune, but wisdom only…
-title: A man may be born to a fortune, but wisdom only…
+unit_label: A man may be born to a fortune, but wisdom only comes with length of days
+title: A man may be born to a fortune, but wisdom only comes with length of days
 unit_type: proverb
-commentary: 'This proverb distinguishes between inherited advantage and earned understanding. Birth grants material circumstance—what
-  one receives without effort—but wisdom requires time, experience, and the accumulation of lived knowledge. The saying suggests
-  that no shortcut, privilege, or external gift can substitute for the slow work of becoming wise; wisdom is something only
-  duration and reflection can build.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for carrying truth through speech and teaching.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Ecclesiastes 12:12 (''of making many books there is no end; and much study is a weariness of the flesh''):** Both texts
-  acknowledge that knowledge accumulates over time and cannot be rushed; both value the long view. Divergence: Ecclesiastes
-  warns against endless seeking; this proverb affirms that time itself is the teacher, not the obstacle.
-
-
-  **Confucian sayings on age and virtue (e.g., Analects 15:3, ''At seventy I could follow my heart''s desire''):** Both traditions
-  link wisdom to maturation through years and experience rather than innate talent. Divergence: Confucianism emphasizes disciplined
-  study and ritual practice; this proverb stresses simply the passage of time itself.'
+translation: A man may be born to a fortune, but wisdom only comes with length of days.
+commentary: This proverb distinguishes between inherited advantage and earned understanding. Birth grants
+  material circumstance—what one receives without effort—but wisdom requires time, experience, and the
+  accumulation of lived knowledge. The saying suggests that no shortcut, privilege, or external gift can
+  substitute for the slow work of becoming wise; wisdom is something only duration and reflection can
+  build.
+practice: 'Today, notice one area where you expected quick mastery or understanding. Sit with the question:
+  What would it mean to accept the long path here instead of rushing? Write one sentence about what patience
+  might teach you that speed cannot.'
+abhyasa: 'Today, notice one area where you expected quick mastery or understanding. Sit with the question:
+  What would it mean to accept the long path here instead of rushing? Write one sentence about what patience
+  might teach you that speed cannot.'
 themes:
 - wisdom
 - proverb
@@ -45,22 +30,64 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
   body: A man may be born to a fortune, but wisdom only comes with length of days.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: This proverb distinguishes between inherited advantage and earned understanding. Birth grants
+    material circumstance—what one receives without effort—but wisdom requires time, experience, and the
+    accumulation of lived knowledge. The saying suggests that no shortcut, privilege, or external gift
+    can substitute for the slow work of becoming wise; wisdom is something only duration and reflection
+    can build.
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for carrying truth
+    through speech and teaching.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for carrying truth through
+      speech and teaching.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Ecclesiastes 12:12 (''of making many books there is no end; and much study is a weariness of
+    the flesh''):** Both texts acknowledge that knowledge accumulates over time and cannot be rushed;
+    both value the long view. Divergence: Ecclesiastes warns against endless seeking; this proverb affirms
+    that time itself is the teacher, not the obstacle.
+
+
+    **Confucian sayings on age and virtue (e.g., Analects 15:3, ''At seventy I could follow my heart''s
+    desire''):** Both traditions link wisdom to maturation through years and experience rather than innate
+    talent. Divergence: Confucianism emphasizes disciplined study and ritual practice; this proverb stresses
+    simply the passage of time itself.'
+  items:
+  - citation: Ecclesiastes 12:12 ('of making many books there is no end; and much study is a weariness
+      of the flesh')
+    resonance: Both texts acknowledge that knowledge accumulates over time and cannot be rushed; both
+      value the long view.
+    divergence: Ecclesiastes warns against endless seeking; this proverb affirms that time itself is the
+      teacher, not the obstacle.
+  - citation: Confucian sayings on age and virtue (e.g., Analects 15:3, 'At seventy I could follow my
+      heart's desire')
+    resonance: Both traditions link wisdom to maturation through years and experience rather than innate
+      talent.
+    divergence: Confucianism emphasizes disciplined study and ritual practice; this proverb stresses simply
+      the passage of time itself.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice one area where you expected quick mastery or understanding. Sit with the question:
+    What would it mean to accept the long path here instead of rushing? Write one sentence about what
+    patience might teach you that speed cannot.'
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: A man may be born to a fortune, but wisdom only comes with length of days.
-abhyasa: 'Today, notice one area where you expected quick mastery or understanding. Sit with the question: What would it mean
-  to accept the long path here instead of rushing? Write one sentence about what patience might teach you that speed cannot.'
-practice: 'Today, notice one area where you expected quick mastery or understanding. Sit with the question: What would it
-  mean to accept the long path here instead of rushing? Write one sentence about what patience might teach you that speed
-  cannot.'
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

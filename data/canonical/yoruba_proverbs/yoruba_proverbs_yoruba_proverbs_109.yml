@@ -3,37 +3,21 @@ category: root_text
 work_id: yoruba_proverbs
 work_title: Yoruba Proverbs (Òwe)
 unit_id: yoruba_proverbs.yoruba_proverbs_109
-unit_label: No one confesses that he has eaten yam with a…
-title: No one confesses that he has eaten yam with a…
+unit_label: No one confesses that he has eaten yam with a knife that is missing
+title: No one confesses that he has eaten yam with a knife that is missing
 unit_type: proverb
-commentary: 'This proverb speaks to the human tendency to conceal evidence of wrongdoing or impropriety—here, eating yam (a
-  staple food) with an incomplete or broken tool. The image suggests that shame or guilt operates silently: we hide what we''ve
-  done not by denying the act itself, but by avoiding situations where the truth becomes visible. The proverb teaches that
-  concealment is often instinctive, yet imperfect; the missing knife remains, a silent witness.
-
-
-
-  Key Terms
-
-
-
-  **òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries meaning beyond its surface
-  words.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Ecclesiastes 12:14 (''God will bring every deed into judgment, including every hidden thing''):** Both texts suggest that
-  hidden acts leave traces; concealment is incomplete. What is done cannot remain entirely invisible. Divergence: The Yoruba
-  proverb does not invoke divine judgment; it observes human nature and social consequence, not cosmic accountability.
-
-
-  **Heraclitus, Fragment 123 (''Character is destiny''):** Both suggest that who we are shows itself through what we do and
-  leave behind—the broken knife reveals the eater. Divergence: Heraclitus speaks of destiny as inevitable unfolding; the proverb
-  focuses on the practical, social awkwardness of concealment.'
+translation: No one confesses that he has eaten yam with a knife that is missing.
+commentary: 'This proverb speaks to the human tendency to conceal evidence of wrongdoing or impropriety—here,
+  eating yam (a staple food) with an incomplete or broken tool. The image suggests that shame or guilt
+  operates silently: we hide what we''ve done not by denying the act itself, but by avoiding situations
+  where the truth becomes visible. The proverb teaches that concealment is often instinctive, yet imperfect;
+  the missing knife remains, a silent witness.'
+practice: Today, notice one small thing you are tempted to hide or minimize—a mistake, a shortcut, an
+  uncomfortable truth. Rather than rehearsing how to conceal it, sit with the impulse itself. What are
+  you afraid will be seen? What would it mean to let the 'missing knife' remain visible?
+abhyasa: Today, notice one small thing you are tempted to hide or minimize—a mistake, a shortcut, an uncomfortable
+  truth. Rather than rehearsing how to conceal it, sit with the impulse itself. What are you afraid will
+  be seen? What would it mean to let the 'missing knife' remain visible?
 themes:
 - wisdom
 - proverb
@@ -46,23 +30,61 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
   body: No one confesses that he has eaten yam with a knife that is missing.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This proverb speaks to the human tendency to conceal evidence of wrongdoing or impropriety—here,
+    eating yam (a staple food) with an incomplete or broken tool. The image suggests that shame or guilt
+    operates silently: we hide what we''ve done not by denying the act itself, but by avoiding situations
+    where the truth becomes visible. The proverb teaches that concealment is often instinctive, yet imperfect;
+    the missing knife remains, a silent witness.'
+- kind: key_terms
+  label: Key Terms
+  body: '**òwe** — Yoruba proverb; literally ''the horse of conversation''—a vehicle for wisdom that carries
+    meaning beyond its surface words.'
+  items:
+  - term: òwe
+    definition: Yoruba proverb; literally 'the horse of conversation'—a vehicle for wisdom that carries
+      meaning beyond its surface words.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Ecclesiastes 12:14 (''God will bring every deed into judgment, including every hidden thing''):**
+    Both texts suggest that hidden acts leave traces; concealment is incomplete. What is done cannot remain
+    entirely invisible. Divergence: The Yoruba proverb does not invoke divine judgment; it observes human
+    nature and social consequence, not cosmic accountability.
+
+
+    **Heraclitus, Fragment 123 (''Character is destiny''):** Both suggest that who we are shows itself
+    through what we do and leave behind—the broken knife reveals the eater. Divergence: Heraclitus speaks
+    of destiny as inevitable unfolding; the proverb focuses on the practical, social awkwardness of concealment.'
+  items:
+  - citation: Ecclesiastes 12:14 ('God will bring every deed into judgment, including every hidden thing')
+    resonance: Both texts suggest that hidden acts leave traces; concealment is incomplete. What is done
+      cannot remain entirely invisible.
+    divergence: The Yoruba proverb does not invoke divine judgment; it observes human nature and social
+      consequence, not cosmic accountability.
+  - citation: Heraclitus, Fragment 123 ('Character is destiny')
+    resonance: Both suggest that who we are shows itself through what we do and leave behind—the broken
+      knife reveals the eater.
+    divergence: Heraclitus speaks of destiny as inevitable unfolding; the proverb focuses on the practical,
+      social awkwardness of concealment.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, notice one small thing you are tempted to hide or minimize—a mistake, a shortcut, an uncomfortable
+    truth. Rather than rehearsing how to conceal it, sit with the impulse itself. What are you afraid
+    will be seen? What would it mean to let the 'missing knife' remain visible?
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: No one confesses that he has eaten yam with a knife that is missing.
-abhyasa: Today, notice one small thing you are tempted to hide or minimize—a mistake, a shortcut, an uncomfortable truth.
-  Rather than rehearsing how to conceal it, sit with the impulse itself. What are you afraid will be seen? What would it mean
-  to let the 'missing knife' remain visible?
-practice: Today, notice one small thing you are tempted to hide or minimize—a mistake, a shortcut, an uncomfortable truth.
-  Rather than rehearsing how to conceal it, sit with the impulse itself. What are you afraid will be seen? What would it mean
-  to let the 'missing knife' remain visible?
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.

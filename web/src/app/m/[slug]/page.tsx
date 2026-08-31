@@ -48,21 +48,24 @@ function PublicManuscript({ slug }: { slug: string }) {
   return (
     <main className="page-shell page-shell--reading">
       <header className="passage-reading__header">
-        <p className="passage-reading__meta">A student manuscript</p>
+        <p className="passage-reading__meta">A chapbook</p>
         <h1 className="passage-reading__title">{manuscript.title}</h1>
         <p className="passage-reading__deck">
           Gathered by {manuscript.displayName}
-          {manuscript.entries.length ? ` · ${manuscript.entries.length} verses` : ""}
+          {manuscript.entries.length ? ` · ${manuscript.entries.length} leaves` : ""}
         </p>
       </header>
 
       {manuscript.entries.length === 0 ? (
         <p className="soft">This manuscript is still empty.</p>
       ) : (
-        <div className="manuscript-grid">
-          {manuscript.entries.map((entry) => (
+        <div className="manuscript-chapbook">
+          {manuscript.entries.map((entry, index) => (
             <ManuscriptFolio
               key={entry.verseId}
+              variant="leaf"
+              page={index + 1}
+              pages={manuscript.entries.length}
               verseId={entry.verseId}
               verseTitle={entry.verseTitle}
               note={entry.note}
@@ -76,6 +79,9 @@ function PublicManuscript({ slug }: { slug: string }) {
               }}
             />
           ))}
+          <p className="manuscript-chapbook__colophon">
+            Gathered by {manuscript.displayName} · Pratibha
+          </p>
         </div>
       )}
     </main>

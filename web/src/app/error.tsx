@@ -23,7 +23,9 @@ export default function GlobalError({
             ? "Your Google account connected. Reload home to open the session — if it is still blank, sign in again from /login."
             : "The page hit an unexpected issue. Your data is safe; this is usually a temporary loading problem."}
         </p>
-        <p className="soft mt-2 text-xs">{message}</p>
+        {process.env.NODE_ENV !== "production" ? (
+          <p className="soft mt-2 text-xs">{message}</p>
+        ) : null}
         <div className="mt-6 flex flex-wrap gap-3">
           <button onClick={reset} className="rounded-lg bg-amber-300 px-4 py-2 font-semibold text-slate-900">
             Try again

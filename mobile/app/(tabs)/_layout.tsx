@@ -37,43 +37,16 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "Today",
           tabBarIcon: ({ color }) => (
-            <SymbolView name={{ ios: "house.fill", android: "home", web: "home" }} tintColor={color} size={24} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="journal"
-        options={{
-          title: "Journal",
-          tabBarIcon: ({ color }) => (
-            <SymbolView name={{ ios: "square.and.pencil", android: "edit_note", web: "edit_note" }} tintColor={color} size={24} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="chat"
-        options={{
-          title: "Study",
-          tabBarIcon: ({ color }) => (
-            <SymbolView name={{ ios: "bubble.left.and.bubble.right.fill", android: "forum", web: "forum" }} tintColor={color} size={24} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="read"
-        options={{
-          title: "Read",
-          tabBarIcon: ({ color }) => (
-            <SymbolView name={{ ios: "book.closed.fill", android: "menu_book", web: "menu_book" }} tintColor={color} size={24} />
+            <SymbolView name={{ ios: "sun.max.fill", android: "wb_sunny", web: "wb_sunny" }} tintColor={color} size={24} />
           ),
         }}
       />
       <Tabs.Screen
         name="paths"
         options={{
-          title: "Paths",
+          title: "Path",
           tabBarIcon: ({ color }) => (
             <SymbolView
               name={{ ios: "point.3.filled.connected.trianglepath.dotted", android: "route", web: "route" }}
@@ -83,6 +56,26 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="read"
+        options={{
+          title: "Library",
+          tabBarIcon: ({ color }) => (
+            <SymbolView name={{ ios: "book.closed.fill", android: "menu_book", web: "menu_book" }} tintColor={color} size={24} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="manuscript"
+        options={{
+          title: "Mine",
+          tabBarIcon: ({ color }) => (
+            <SymbolView name={{ ios: "book.fill", android: "auto_stories", web: "auto_stories" }} tintColor={color} size={24} />
+          ),
+        }}
+      />
+      <Tabs.Screen name="journal" options={{ href: null }} />
+      <Tabs.Screen name="chat" options={{ href: null }} />
     </Tabs>
   );
 }

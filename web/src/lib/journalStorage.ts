@@ -35,16 +35,8 @@ export function notesForPassage(passageId: string): JournalNote[] {
     .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }
 
-export function learnStepContextId(
-  trackId: string,
-  stepId: string,
-  thread?: { threadId?: string | null; beadId?: string | null },
-): string {
-  const base = `learn:${trackId}:${stepId}`;
-  if (thread?.threadId && thread?.beadId) {
-    return `${base}:${thread.threadId}:${thread.beadId}`;
-  }
-  return base;
+export function learnStepContextId(trackId: string, stepId: string): string {
+  return `learn:${trackId}:${stepId}`;
 }
 
 export function journalSourceHref(note: JournalNote): string | null {
@@ -52,17 +44,10 @@ export function journalSourceHref(note: JournalNote): string | null {
     const parts = note.passageId.split(":");
     const trackId = parts[1];
     const stepId = parts[2];
-    const threadId = parts[3];
-    const beadId = parts[4];
     if (!trackId || !stepId) return "/learn";
     const params = new URLSearchParams();
-    if (threadId && beadId) {
-      params.set("thread", threadId);
-      params.set("bead", beadId);
-    } else {
-      params.set("track", trackId);
-      params.set("step", stepId);
-    }
+    params.set("track", trackId);
+    params.set("step", stepId);
     return `/learn?${params.toString()}`;
   }
   if (note.kind === "chat_response" || note.passageId.startsWith("chat:")) {

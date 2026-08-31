@@ -6,26 +6,17 @@ unit_id: yoruba_proverbs.yoruba_proverbs_017
 unit_label: Peace is the father of friendship
 title: Peace is the father of friendship
 unit_type: proverb
-commentary: 'This proverb identifies peace not as a passive state but as a generative force—a father that brings friendship
-  into being. It suggests that friendship cannot flourish in conditions of conflict or tension; peace is the prerequisite
-  soil. The image of ''father'' implies both authority and nurture, suggesting that peace actively sustains and legitimizes
-  the bonds between people.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Tao Te Ching, Chapter 15:** Both texts treat peace as a foundational condition from which other goods emerge naturally—the
-  Tao as source, peace as father. Divergence: The Tao Te Ching emphasizes non-action and emptiness; this proverb emphasizes
-  peace as an active, relational force that generates connection.
-
-
-  **Aristotle, Nicomachean Ethics, Book VIII (friendship):** Both recognize friendship as a high human good that requires
-  stable conditions; Aristotle names virtue and equality as prerequisites, this proverb names peace. Divergence: Aristotle
-  grounds friendship in character and choice; the proverb grounds it in the absence of conflict, a more collective or environmental
-  framing.'
+translation: Peace is the father of friendship.
+commentary: This proverb identifies peace not as a passive state but as a generative force—a father that
+  brings friendship into being. It suggests that friendship cannot flourish in conditions of conflict
+  or tension; peace is the prerequisite soil. The image of 'father' implies both authority and nurture,
+  suggesting that peace actively sustains and legitimizes the bonds between people.
+practice: 'Today, notice one relationship in your life marked by unresolved tension. Reflect: what small
+  act of peace-making (acknowledgment, patience, or stepping back from defensiveness) might create space
+  for friendship to grow or return?'
+abhyasa: 'Today, notice one relationship in your life marked by unresolved tension. Reflect: what small
+  act of peace-making (acknowledgment, patience, or stepping back from defensiveness) might create space
+  for friendship to grow or return?'
 themes:
 - wisdom
 - proverb
@@ -38,21 +29,53 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West Africa (1894, public
-  domain). Colonial-era ethnography recorded by an outside observer; the Yoruba original (òwe) is not preserved in the source.
-  Study rendering pending review by tradition-bearers.
+translation_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of
+  West Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+  original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: translation
   label: Translation
   body: Peace is the father of friendship.
+  layer_provenance: English follows A.B. Ellis, The Yoruba-Speaking Peoples of the Slave Coast of West
+    Africa (1894, public domain). Colonial-era ethnography recorded by an outside observer; the Yoruba
+    original (òwe) is not preserved in the source. Study rendering pending review by tradition-bearers.
+- kind: commentary
+  label: Pratibha Commentary
+  body: This proverb identifies peace not as a passive state but as a generative force—a father that brings
+    friendship into being. It suggests that friendship cannot flourish in conditions of conflict or tension;
+    peace is the prerequisite soil. The image of 'father' implies both authority and nurture, suggesting
+    that peace actively sustains and legitimizes the bonds between people.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Tao Te Ching, Chapter 15:** Both texts treat peace as a foundational condition from which other
+    goods emerge naturally—the Tao as source, peace as father. Divergence: The Tao Te Ching emphasizes
+    non-action and emptiness; this proverb emphasizes peace as an active, relational force that generates
+    connection.
+
+
+    **Aristotle, Nicomachean Ethics, Book VIII (friendship):** Both recognize friendship as a high human
+    good that requires stable conditions; Aristotle names virtue and equality as prerequisites, this proverb
+    names peace. Divergence: Aristotle grounds friendship in character and choice; the proverb grounds
+    it in the absence of conflict, a more collective or environmental framing.'
+  items:
+  - citation: Tao Te Ching, Chapter 15
+    resonance: Both texts treat peace as a foundational condition from which other goods emerge naturally—the
+      Tao as source, peace as father.
+    divergence: The Tao Te Ching emphasizes non-action and emptiness; this proverb emphasizes peace as
+      an active, relational force that generates connection.
+  - citation: Aristotle, Nicomachean Ethics, Book VIII (friendship)
+    resonance: Both recognize friendship as a high human good that requires stable conditions; Aristotle
+      names virtue and equality as prerequisites, this proverb names peace.
+    divergence: Aristotle grounds friendship in character and choice; the proverb grounds it in the absence
+      of conflict, a more collective or environmental framing.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice one relationship in your life marked by unresolved tension. Reflect: what small
+    act of peace-making (acknowledgment, patience, or stepping back from defensiveness) might create space
+    for friendship to grow or return?'
 provenance:
   collection: Yoruba Proverbs (Òwe)
-  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British colonial official
-    A.B. Ellis (1894); his framing is that of an outside observer of his era and may distort. The Yoruba original is not preserved
-    here. Offered as a study reading pending review by Yoruba tradition-bearers.
-translation: Peace is the father of friendship.
-abhyasa: 'Today, notice one relationship in your life marked by unresolved tension. Reflect: what small act of peace-making
-  (acknowledgment, patience, or stepping back from defensiveness) might create space for friendship to grow or return?'
-practice: 'Today, notice one relationship in your life marked by unresolved tension. Reflect: what small act of peace-making
-  (acknowledgment, patience, or stepping back from defensiveness) might create space for friendship to grow or return?'
-enriched: true
+  cultural_context: Yoruba proverbs (òwe) — 'the horse of conversation.' Recorded in English by the British
+    colonial official A.B. Ellis (1894); his framing is that of an outside observer of his era and may
+    distort. The Yoruba original is not preserved here. Offered as a study reading pending review by Yoruba
+    tradition-bearers.
