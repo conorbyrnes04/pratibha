@@ -11,17 +11,17 @@ type NavLink = { href: string; label: string; match?: string };
 const PRIMARY: NavLink[] = [
   { href: "/", label: "Today", match: "/" },
   { href: "/read", label: "Library" },
-  { href: "/glossary/study", label: "Lexicon", match: "/glossary/study" },
+  { href: "/learn", label: "Paths", match: "/learn" },
+  { href: "/glossary", label: "Glossary", match: "/glossary" },
   { href: "/chat", label: "Chat" },
-  { href: "/journal", label: "Journal" },
 ];
 
 const SECONDARY: NavLink[] = [
-  { href: "/manuscript", label: "Manuscript" },
-  { href: "/learn", label: "Paths", match: "/learn" },
+  { href: "/journal", label: "Journal" },
+  { href: "/manuscript", label: "My Manuscript" },
   { href: "/learn#threads", label: "Themes", match: "/learn#threads" },
+  { href: "/glossary/study", label: "Lexicon", match: "/glossary/study" },
   { href: "/random", label: "Oracle" },
-  { href: "/glossary", label: "Glossary", match: "/glossary" },
   { href: "/sources", label: "Sources" },
 ];
 

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { PathStepWell } from "@/components/learn/PathStepWell";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
 import { stepKey, type ProgressMap } from "@/lib/learn/progress";
-import { LEARNING_TRACKS, RECOMMENDED_SPINE, type LearningTrack } from "@/lib/learningPaths";
+import { LEARNING_TRACKS, type LearningTrack } from "@/lib/learningPaths";
 import { unitSumiGlyph } from "@/lib/sumiGlyphs";
 import type { VerseItem } from "@/lib/types";
 
@@ -23,6 +23,12 @@ type LearnTrailProps = {
   scrollToKey?: string | null;
   /** Verse items for passages in PathStepWell. */
   items: VerseItem[];
+  /** Track IDs that make up this trail. If empty, displays tradition chooser instead. */
+  trackIds: string[];
+  /** Tradition title for the trail header */
+  traditionTitle?: string;
+  /** Callback to return to tradition chooser */
+  onBackToChooser?: () => void;
 };
 
 type TrailNode = {
@@ -41,13 +47,12 @@ type TrailNode = {
 };
 
 /**
- * Build one continuous trail from RECOMMENDED_SPINE tracks.
+ * Build one continuous trail from the given track IDs.
  * Each track becomes a "section" (like Duolingo units), and we stitch
  * all their steps into one sequential path.
  */
-function buildTrail(): TrailNode[] {
+function buildTrail(trackIds: string[]): TrailNode[] {
   const nodes: TrailNode[] = [];
-  const trackIds = RECOMMENDED_SPINE.length > 0 ? RECOMMENDED_SPINE : LEARNING_TRACKS.map((t) => t.id);
 
   trackIds.forEach((trackId, sectionIndex) => {
     const track = LEARNING_TRACKS.find((t) => t.id === trackId);
@@ -80,8 +85,11 @@ export function LearnTrail({
   onComplete,
   scrollToKey,
   items,
+  trackIds,
+  traditionTitle,
+  onBackToChooser,
 }: LearnTrailProps) {
-  const nodes = buildTrail();
+  const nodes = buildTrail(trackIds);
   const nodeRefs = useRef<Record<string, HTMLElement | null>>({});
 
   // Find the current gate (first incomplete one) and compute states
@@ -103,8 +111,17 @@ export function LearnTrail({
     <div className="section-stack">
       <header className="library-header">
         <div className="library-header__body">
-          <p className="passage-reading__meta">Guided study</p>
-          <h1 className="library-header__title">The Path</h1>
+          {onBackToChooser ? (
+            <button
+              type="button"
+              onClick={onBackToChooser}
+              className="font-sans text-[10px] uppercase tracking-[0.16em] text-amber-200/55 hover:text-amber-100"
+            >
+              ← All traditions
+            </button>
+          ) : null}
+          <p className="passage-reading__meta mt-4">Guided study</p>
+          <h1 className="library-header__title">{traditionTitle || "The Path"}</h1>
           <p className="library-header__lede">
             Follow the trail gate by gate. Each node is one step on the way.
             The path reveals itself as you walk it.
