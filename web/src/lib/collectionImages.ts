@@ -84,6 +84,8 @@ export function natureVariantSrcs(baseSlug: string): string[] {
  * Order mirrors the generator manifest; more specific patterns first.
  */
 const REDBOOK_RULES: Array<{ pattern: RegExp; slug: string }> = [
+  { pattern: /course in miracles|acim/i, slug: "a_course_in_miracles" },
+  { pattern: /kabbalah|zohar|yetzirah|sephiroth|sefirot/i, slug: "kabbalah_zohar_yetzirah" },
   { pattern: /a[sṣ]t[aā]vakra|ashtavakra/i, slug: "astavakra_gita" },
   { pattern: /bhagavad/i, slug: "bhagavad_gita" },
   { pattern: /brihadaranyaka|b[rṛ]had[aā]ra[nṇ]yaka/i, slug: "brihadaranyaka_upanishad" },

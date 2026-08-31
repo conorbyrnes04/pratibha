@@ -10,8 +10,10 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * Hebrew) and the Gospel of Thomas (Coptic).
  * v5: corpus-wide QA — 33 duplicate units removed, ~430 translations repaired via
  * independent strong-reviewer cross-check, placeholder originals suppressed.
- * v7: Yoruba + Dakota living-tradition tomes on the default Library shelf. */
-const CACHE_VERSION = 7;
+ * v7: Yoruba + Dakota living-tradition tomes on the default Library shelf.
+ * v8: two new collections — A Course in Miracles (Original Edition) and Kabbalah
+ * (Sefer Yetzirah & the Zohar), each enriched with a Red Book hero mandala. */
+const CACHE_VERSION = 8;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";

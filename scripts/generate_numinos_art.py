@@ -39,6 +39,8 @@ STYLE = (
 # regex on the collection's display name (unicode/ASCII variants collapse to one
 # image); `subject` is the tradition's own archetypal imagery.
 MANIFEST: list[dict[str, str]] = [
+    {"slug": "a_course_in_miracles", "match": r"course in miracles|acim", "subject": "a miracle of love and forgiveness — the peace of God, a radiant Christ-light dissolving fear and illusion, the real world shining beyond the ego's dream, boundless abundance overflowing from a single sun of grace"},
+    {"slug": "kabbalah_zohar_yetzirah", "match": r"kabbalah|zohar|yetzirah|sephiroth|sefirot", "subject": "the Tree of Life — ten shining Sephiroth linked by twenty-two paths, the concealed Ancient of Days and the four worlds, Hebrew letters of creation blazing in a mystical mandala, the Ein Sof's boundless light"},
     {"slug": "astavakra_gita", "match": r"a[sṣ]t[aā]vakra|ashtavakra", "subject": "Advaita nonduality — a single boundless eye of pure awareness, the world dissolving into light, the Self as the sole witness reflected in an empty mirror"},
     {"slug": "bhagavad_gita", "match": r"bhagavad", "subject": "Krishna's cosmic universal form (vishvarupa) revealed to Arjuna, a many-armed radiance of suns and worlds above the field of dharma, a war-chariot"},
     {"slug": "brihadaranyaka_upanishad", "match": r"brihadaranyaka|b[rṛ]had[aā]ra[nṇ]yaka", "subject": "the great forest teaching, neti-neti, the Self as the honey of all beings, a cosmic horse of dawn, the imperishable behind the waters"},

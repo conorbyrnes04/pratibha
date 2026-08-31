@@ -18,14 +18,14 @@ from app.data_loader import normalize_unit, _as_text  # noqa
 
 CANON = os.path.join(ROOT, "data/canonical")
 STAGE = os.path.join(ROOT, "data/staging/enrich")
-TARGETS = ["eastman_soul_of_the_indian", "zitkala_sa_old_indian_legends", "yoruba_proverbs", "johnson_yoruba_religion"]
+TARGETS = ["eastman_soul_of_the_indian", "zitkala_sa_old_indian_legends", "yoruba_proverbs", "johnson_yoruba_religion", "a_course_in_miracles", "kabbalah_zohar_yetzirah"]
 
-SYSTEM = """You write short study apparatus for a passage from a LIVING wisdom tradition (Native American or Yoruba). Posture: humble and interpretive. This is offered to students as a study reading, NOT an authoritative account of the tradition. Respect that living communities hold this knowledge.
+SYSTEM = """You write short study apparatus for a passage from a wisdom tradition. The specific tradition and its cultural posture are given in the "Tradition / collection" and "Context" fields of the user message — read them and honor them (a living Indigenous tradition, an esoteric Jewish stream, a modern revelatory text, etc.). Posture: humble and interpretive. This is offered to students as a study reading, NOT an authoritative account of the tradition.
 
 Rules:
-- Ground everything in the GIVEN passage. Do not add ethnographic "facts", ritual details, or claims about the tradition that are not present in the text. When you interpret, interpret the passage's meaning, not the whole culture.
+- Ground everything in the GIVEN passage. Do not add "facts", ritual/esoteric details, or claims about the tradition that are not present in the text. When you interpret, interpret the passage's meaning, not the whole tradition.
 - Never invent a citation, book, or verse number. Use only well-known texts/figures you are confident exist.
-- No exoticizing or romanticizing ("noble savage", "ancient mystical wisdom" clichés). Plain, respectful, precise.
+- No exoticizing or romanticizing ("noble savage", "ancient mystical secrets" clichés). Plain, respectful, precise. For esoteric material (e.g. Kabbalah), do not claim hidden/initiatory knowledge — stay with what the passage plainly offers a contemplative reader.
 
 Produce JSON only:
 {

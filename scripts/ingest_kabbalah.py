@@ -27,8 +27,10 @@ NOTE = ("Kabbalah is the esoteric stream of Jewish mysticism; some hold it as st
 
 
 def clean(s):
+    s = re.sub(r"(\w)-\s+(\w)", r"\1\2", s)            # rejoin OCR line-break hyphens
     s = re.sub(r"\s+", " ", s).strip()
     s = re.sub(r"\([^)]*\)", "", s)                    # drop translator parentheticals
+    s = re.sub(r"\s+([;,.:!?])", r"\1", s)             # tighten space before punctuation
     s = re.sub(r"\s+", " ", s).strip(" ;,.")
     return s + "." if s and not s.endswith((".", "!", "?")) else s
 
@@ -70,6 +72,7 @@ def build():
     seen = set()
     for num, v in verses:
         body = re.sub(r"\s+", " ", v).strip()
+        body = re.sub(r"([;,])n([a-z])", r"\1 \2", body)   # mangled line-break "Fire;nthe"
         if len(body) < 45 or body.lower()[:40] in seen:
             continue
         seen.add(body.lower()[:40])
@@ -86,7 +89,7 @@ def build():
         (7906, ["the concealed", "the divine"]),   # The Ancient One is hidden and concealed
         (5545, ["equilibrium", "the divine"]),      # In His form existeth the equilibrium
         (9112, ["the vast countenance", "light"]),  # White are His garments
-        (8236, ["the concealed", "the divine"]),    # The Most Ancient One is expanded
+        (6736, ["light", "the divine"]),            # Two apples are beheld, to illuminate the lights
     ]
     zc = 0
     for start, themes in ZOHAR_ANCHORS:
