@@ -86,6 +86,8 @@ export function natureVariantSrcs(baseSlug: string): string[] {
 const REDBOOK_RULES: Array<{ pattern: RegExp; slug: string }> = [
   { pattern: /course in miracles|acim/i, slug: "a_course_in_miracles" },
   { pattern: /kabbalah|zohar|yetzirah|sephiroth|sefirot/i, slug: "kabbalah_zohar_yetzirah" },
+  { pattern: /ha[tṭ]ha|pradipika|pradīpikā/i, slug: "hatha_yoga_pradipika" },
+  { pattern: /[sś]iva.?sa[mṃ]hit[aā]|shiva.?samhita/i, slug: "siva_samhita" },
   { pattern: /a[sṣ]t[aā]vakra|ashtavakra/i, slug: "astavakra_gita" },
   { pattern: /bhagavad/i, slug: "bhagavad_gita" },
   { pattern: /brihadaranyaka|b[rṛ]had[aā]ra[nṇ]yaka/i, slug: "brihadaranyaka_upanishad" },

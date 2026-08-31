@@ -12,8 +12,10 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * independent strong-reviewer cross-check, placeholder originals suppressed.
  * v7: Yoruba + Dakota living-tradition tomes on the default Library shelf.
  * v8: two new collections — A Course in Miracles (Original Edition) and Kabbalah
- * (Sefer Yetzirah & the Zohar), each enriched with a Red Book hero mandala. */
-const CACHE_VERSION = 8;
+ * (Sefer Yetzirah & the Zohar), each enriched with a Red Book hero mandala.
+ * v9: Yoga shelf grows — Haṭha Yoga Pradīpikā (Pañcham Sinh) and Śiva Saṃhitā
+ * (Vasu), each with a hero mandala; A Course in Miracles expanded (33→57). */
+const CACHE_VERSION = 9;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";

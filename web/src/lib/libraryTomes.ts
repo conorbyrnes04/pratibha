@@ -71,6 +71,8 @@ const TOME_META: TomeMeta[] = [
   { pattern: /cloud.?of.?unknowing/i, tradition: "Christian", author: "Anonymous (English mystic)", authored: "c. 14th c. CE", eraYear: 1375 },
   { pattern: /parmenides/i, tradition: "Greek", author: "Parmenides", authored: "c. 5th c. BCE", eraYear: -475 },
   { pattern: /patanjali|patañjali|yoga.?s[uū]tra/i, tradition: "Yoga", author: "Patañjali", authored: "c. 2nd–4th c. CE", eraYear: 300 },
+  { pattern: /ha[tṭ]ha.?yoga|pradipika|pradīpikā/i, tradition: "Yoga", author: "Svātmārāma", authored: "c. 15th c. CE", eraYear: 1450 },
+  { pattern: /[sś]iva.?sa[mṃ]hit[aā]|shiva.?samhita/i, tradition: "Yoga", author: "Anonymous (Tantric)", authored: "c. 15th–17th c. CE", eraYear: 1550 },
   { pattern: /vijnana.?bhairava|vijñāna.?bhairava/i, tradition: "Kashmir Śaiva", author: "Anonymous", authored: "c. 8th–9th c. CE", eraYear: 850 },
   { pattern: /spanda/i, tradition: "Kashmir Śaiva", author: "Vasugupta / Kallaṭa", authored: "c. 9th c. CE", eraYear: 875 },
   { pattern: /siva.?s[uū]tra|śiva.?s[uū]tra|shiva.?sutra/i, tradition: "Kashmir Śaiva", author: "Vasugupta", authored: "c. 9th c. CE", eraYear: 850 },
