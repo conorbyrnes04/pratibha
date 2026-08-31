@@ -1,5 +1,5 @@
 import type { LibraryTome } from "@/lib/libraryTomes";
-import type { GlyphSlug } from "@/lib/glyphs";
+import type { SumiSlug } from "@/lib/sumiGlyphs";
 
 /**
  * Visual contract for the Stripe Press–inspired 3D tome shelf.
@@ -51,6 +51,6 @@ export type CoverDrawInput = {
   title: string;
   author: string;
   tradition: string;
-  glyph: GlyphSlug;
+  glyph: SumiSlug;
   palette: TomePalette;
 };

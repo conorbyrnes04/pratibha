@@ -12,6 +12,7 @@ import { displayPassageLocation, displayPassageTitle } from "@/lib/passageTitles
 import { LayerBlock } from "@/components/LayerBlock";
 import { ReadingShell } from "@/components/ReadingShell";
 import { getVerseLayers } from "@/lib/verseLayers";
+import { recordPractice } from "@/lib/glyphUnlock";
 import { Button, buttonVariants } from "@/components/ui/button";
 
 export default function RandomPage() {
@@ -45,6 +46,7 @@ export default function RandomPage() {
       const v = await getRandom(c, "strong_draft");
       if (v) {
         setItem(v);
+        recordPractice("oracle:draw");
         return;
       }
       // Fallback: pick locally from the already loaded library if /random returns empty.
@@ -55,6 +57,7 @@ export default function RandomPage() {
       );
       if (pool.length > 0) {
         setItem(pool[Math.floor(Math.random() * pool.length)]);
+        recordPractice("oracle:draw");
         return;
       }
       setItem(null);

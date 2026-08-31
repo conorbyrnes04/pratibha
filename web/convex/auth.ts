@@ -5,6 +5,12 @@ import Google from "@auth/core/providers/google";
 import { query } from "./_generated/server";
 import { getAuthUserId } from "@convex-dev/auth/server";
 
+/**
+ * DEPLOYMENT NOTE:
+ * Deploy Convex functions with `npx convex deploy` from the web/ directory only.
+ * Never deploy from the lynx pratibha/ folder as that auth.ts omits isAuthenticated.
+ */
+
 // Mixed provider list (Password + optional Google), so type it explicitly —
 // otherwise the element type is inferred from Password alone.
 const providers: AuthProviderConfig[] = [Password];
@@ -21,6 +27,11 @@ if (process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET) {
 
 export const { auth, signIn, signOut, store, isAuthenticated } = convexAuth({
   providers,
+  session: {
+    // Match persistent device cookies in web/src/middleware.ts (30 days).
+    totalDurationMs: 1000 * 60 * 60 * 24 * 30,
+    inactiveDurationMs: 1000 * 60 * 60 * 24 * 30,
+  },
   callbacks: {
     async redirect({ redirectTo }) {
       const siteUrl = process.env.SITE_URL || "http://localhost:3000";
@@ -30,6 +41,7 @@ export const { auth, signIn, signOut, store, isAuthenticated } = convexAuth({
         "http://127.0.0.1:3000",
         "http://localhost:3004",
         "https://pratibha.agniagama.com",
+        "pratibha://",
       ].filter(Boolean) as string[];
       for (const origin of allowed) {
         if (redirectTo.startsWith(origin)) return redirectTo;

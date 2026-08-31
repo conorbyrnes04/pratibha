@@ -9,6 +9,8 @@ import { CONVEX_ENABLED } from "@/lib/convexConfigured";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { recordPractice } from "@/lib/glyphUnlock";
+import { ManuscriptFolio } from "@/components/ManuscriptFolio";
 
 export default function ManuscriptPage() {
   const { user, loading } = useAuth();
@@ -83,7 +85,11 @@ function ManuscriptEditor() {
         displayName: displayName.trim() || undefined,
         visibility,
       });
-      if (visibility === "public") setShareHint("Public. Anyone with the link can read it.");
+      recordPractice("manuscript:save");
+      if (visibility === "public") {
+        recordPractice("manuscript:share");
+        setShareHint("Public. Anyone with the link can read it.");
+      }
       if (visibility === "private") setShareHint("Private again.");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not update.");
@@ -156,66 +162,73 @@ function ManuscriptEditor() {
             Nothing here yet. Open a passage and choose Add to manuscript.
           </p>
         ) : (
-          <ol className="mt-6 space-y-8">
+          <div className="manuscript-grid">
             {manuscript.entries.map((entry, index) => (
-              <li key={entry.verseId}>
-                <p className="font-sans text-xs uppercase tracking-[0.16em] text-stone-400">
-                  {index + 1}
-                </p>
-                <Link
-                  href={`/read/${encodeURIComponent(entry.verseId)}`}
-                  className="mt-1 block text-lg text-amber-100"
-                >
-                  {entry.verseTitle}
-                </Link>
-                <Textarea
-                  className="mt-3 min-h-16"
-                  value={notes[entry.verseId] ?? ""}
-                  onChange={(e) =>
-                    setNotes((prev) => ({ ...prev, [entry.verseId]: e.target.value }))
-                  }
-                  onBlur={() => {
-                    const next = notes[entry.verseId] ?? "";
-                    if (next !== (entry.note || "")) {
-                      void setEntryNote({ verseId: entry.verseId, note: next }).catch((err) =>
-                        setError(err instanceof Error ? err.message : "Could not save the note."),
-                      );
-                    }
-                  }}
-                  placeholder="A one-line margin — optional"
-                  rows={2}
-                />
-                <div className="mt-2 flex flex-wrap gap-2">
-                  <Button
-                    type="button"
-                    size="sm"
-                    variant="ghost"
-                    disabled={index === 0}
-                    onClick={() => void moveVerse({ verseId: entry.verseId, direction: "up" })}
-                  >
-                    Up
-                  </Button>
-                  <Button
-                    type="button"
-                    size="sm"
-                    variant="ghost"
-                    disabled={index === manuscript.entries.length - 1}
-                    onClick={() => void moveVerse({ verseId: entry.verseId, direction: "down" })}
-                  >
-                    Down
-                  </Button>
-                  <Button
-                    type="button"
-                    size="sm"
-                    variant="ghost"
-                    onClick={() => void removeVerse({ verseId: entry.verseId })}
-                  >
-                    Remove
-                  </Button>
-                </div>
-              </li>
+              <ManuscriptFolio
+                key={entry.verseId}
+                verseId={entry.verseId}
+                verseTitle={entry.verseTitle}
+                card={{
+                  mark: entry.mark,
+                  ink: entry.ink,
+                  textMode: entry.textMode,
+                  line: entry.line,
+                  aspectRatio: entry.aspectRatio,
+                  holographic: entry.holographic,
+                }}
+                actions={
+                  <>
+                    <Textarea
+                      value={notes[entry.verseId] ?? ""}
+                      onChange={(e) =>
+                        setNotes((prev) => ({ ...prev, [entry.verseId]: e.target.value }))
+                      }
+                      onBlur={() => {
+                        const next = notes[entry.verseId] ?? "";
+                        if (next !== (entry.note || "")) {
+                          void setEntryNote({ verseId: entry.verseId, note: next })
+                            .then(() => recordPractice(`manuscript:note:${entry.verseId}`))
+                            .catch((err) =>
+                              setError(err instanceof Error ? err.message : "Could not save the note."),
+                            );
+                        }
+                      }}
+                      placeholder="A one-line margin — optional"
+                      rows={2}
+                    />
+                    <div className="flex flex-wrap gap-2">
+                      <Button
+                        type="button"
+                        size="sm"
+                        variant="ghost"
+                        disabled={index === 0}
+                        onClick={() => void moveVerse({ verseId: entry.verseId, direction: "up" })}
+                      >
+                        Up
+                      </Button>
+                      <Button
+                        type="button"
+                        size="sm"
+                        variant="ghost"
+                        disabled={index === manuscript.entries.length - 1}
+                        onClick={() => void moveVerse({ verseId: entry.verseId, direction: "down" })}
+                      >
+                        Down
+                      </Button>
+                      <Button
+                        type="button"
+                        size="sm"
+                        variant="ghost"
+                        onClick={() => void removeVerse({ verseId: entry.verseId })}
+                      >
+                        Remove
+                      </Button>
+                    </div>
+                  </>
+                }
+              />
             ))}
-          </ol>
+          </div>
         )}
       </section>
     </main>

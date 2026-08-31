@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useAuth } from "@/components/AuthProvider";
+import { GlyphMala } from "@/components/GlyphMala";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -43,6 +44,11 @@ export default function AccountPage() {
         Journal notes sync to your account when you&apos;re signed in. The library and Study Chat stay
         available without login.
       </p>
+      <div className="mt-8">
+        <p className="font-sans text-xs uppercase tracking-[0.22em] text-stone-400">Marks</p>
+        <p className="soft mt-2 mb-3 font-sans text-sm">The mālā of the house. Śiva waits at the last bead.</p>
+        <GlyphMala />
+      </div>
       <div className="mt-8 flex flex-wrap gap-3">
         <Link href="/journal" className={cn(buttonVariants())}>
           Open journal

@@ -1,5 +1,8 @@
-import type { CSSProperties } from "react";
+"use client";
+
+import { useEffect, useState, type CSSProperties } from "react";
 import { sumiSrc } from "@/lib/sumiGlyphs";
+import { loadSumiInk, type SumiTrace } from "@/lib/sumiTrace";
 
 export type InkState = "unmanifest" | "arising" | "recognized";
 export type InkSize = "xs" | "sm" | "md" | "lg" | "xl" | "hero";
@@ -14,7 +17,28 @@ type InkGlyphProps = {
   label?: string;
   /** Override the state fill — used by share cards. */
   ink?: string;
+  /** Paint the mark as a brush-stroke reveal. Replay when `strokeKey` changes. */
+  stroke?: boolean;
+  strokeKey?: string | number;
+  /** Stagger when several marks open at once. */
+  strokeDelay?: number;
+  /** Fill the well; crop extra rather than letterboxing a wide mark. */
+  cover?: boolean;
+  /** Use the CSS mask, not the recropped path-trace (safer in a circular well). */
+  mask?: boolean;
 };
+
+function viewBoxRatio(viewBox: string): number {
+  const parts = viewBox.split(/[\s,]+/).map(Number);
+  const width = parts[2] || 1;
+  const height = parts[3] || 1;
+  return width / height;
+}
+
+function isExtremeViewBox(viewBox: string): boolean {
+  const ratio = viewBoxRatio(viewBox);
+  return ratio > 1.55 || ratio < 0.64;
+}
 
 const SIZE_CLASS: Record<InkSize, string> = {
   xs: "ink-glyph--xs",
@@ -31,15 +55,22 @@ const STATE_CLASS: Record<InkState, string> = {
   recognized: "ink--recognized",
 };
 
-/**
- * Sumi ink mark — recolored via CSS mask (never a raw <img>), so it always
- * reads as ābhāsa shining forth from the void ground rather than a
- * black-on-white sticker. Color is entirely a function of `state`.
- */
-export function InkGlyph({ glyph, state = "arising", size = "md", className = "", label, ink }: InkGlyphProps) {
+function MaskedInk({
+  glyph,
+  inkClass,
+  className,
+  ink,
+  label,
+}: {
+  glyph: string;
+  inkClass: string;
+  className: string;
+  ink?: string;
+  label?: string;
+}) {
   return (
     <span
-      className={`ink-glyph ${SIZE_CLASS[size]} ${STATE_CLASS[state]} ${className}`.trim()}
+      className={`${inkClass} ${className}`.trim()}
       style={{
         WebkitMaskImage: `url(${sumiSrc(glyph)})`,
         maskImage: `url(${sumiSrc(glyph)})`,
@@ -50,6 +81,82 @@ export function InkGlyph({ glyph, state = "arising", size = "md", className = ""
       aria-hidden={label ? undefined : true}
     />
   );
+}
+
+/**
+ * Sumi ink on the void. Prefers the real potrace paths (currentColor fill)
+ * so there is no raster mask plate. Falls back to a CSS mask while loading,
+ * or when a brush-wipe is requested.
+ */
+export function InkGlyph({
+  glyph,
+  state = "arising",
+  size = "md",
+  className = "",
+  label,
+  ink,
+  stroke = false,
+  strokeKey,
+  strokeDelay = 0,
+  cover = false,
+  mask = false,
+}: InkGlyphProps) {
+  const [trace, setTrace] = useState<SumiTrace | null | undefined>(undefined);
+
+  useEffect(() => {
+    if (stroke || mask) return;
+    let live = true;
+    setTrace(undefined);
+    void loadSumiInk(glyph).then((next) => {
+      if (live) setTrace(next);
+    });
+    return () => {
+      live = false;
+    };
+  }, [glyph, stroke, mask]);
+
+  const inkClass = `ink-glyph ${SIZE_CLASS[size]} ${STATE_CLASS[state]}`.trim();
+
+  if (mask) {
+    return <MaskedInk glyph={glyph} inkClass={inkClass} className={className} ink={ink} label={label} />;
+  }
+
+  if (stroke) {
+    const mark = (
+      <MaskedInk glyph={glyph} inkClass={`${inkClass} ink-stroke__ink`} className="" ink={ink} label={label} />
+    );
+    return (
+      <span
+        key={strokeKey ?? glyph}
+        className={`ink-stroke ink-stroke--play ${className}`.trim()}
+        style={strokeDelay ? ({ ["--ink-stroke-delay" as string]: `${strokeDelay}ms` } as CSSProperties) : undefined}
+      >
+        {mark}
+      </span>
+    );
+  }
+
+  if (trace && !isExtremeViewBox(trace.viewBox)) {
+    return (
+      <svg
+        className={`${inkClass} ink-glyph--trace ${className}`.trim()}
+        viewBox={trace.viewBox}
+        preserveAspectRatio={cover ? "xMidYMid slice" : "xMidYMid meet"}
+        style={ink ? ({ color: ink } as CSSProperties) : undefined}
+        role={label ? "img" : undefined}
+        aria-label={label}
+        aria-hidden={label ? undefined : true}
+      >
+        <g transform={trace.transform} fill="currentColor" fillRule="evenodd">
+          {trace.paths.map((d, i) => (
+            <path key={`${glyph}-${i}`} d={d} />
+          ))}
+        </g>
+      </svg>
+    );
+  }
+
+  return <MaskedInk glyph={glyph} inkClass={inkClass} className={className} ink={ink} label={label} />;
 }
 
 type SpandaMedallionProps = {

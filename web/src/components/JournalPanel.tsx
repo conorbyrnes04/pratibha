@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { JournalNote, VerseItem } from "@/lib/types";
 import { useAuth } from "@/components/AuthProvider";
 import { usePushJournalNote, useDeleteJournalNote } from "@/lib/journalCloud";
+import { recordPractice } from "@/lib/glyphUnlock";
 import { deleteJournalNote, notesForPassage, upsertJournalNote } from "@/lib/journalStorage";
 import { practiceText } from "@/lib/verseLayers";
 import { Textarea } from "@/components/ui/textarea";
@@ -67,6 +68,7 @@ export function JournalPanel(props: JournalPanelProps) {
             prompt,
           });
     if (user) void pushNote(note);
+    recordPractice(`journal:${key}`);
     setBody("");
     refresh();
   }

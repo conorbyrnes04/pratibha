@@ -32,6 +32,7 @@ const schema = defineSchema({
   profiles: defineTable({
     userId: v.string(),
     displayName: v.string(),
+    mark: v.optional(v.string()),
     createdAt: v.number(),
     updatedAt: v.number(),
   }).index("by_user", ["userId"]),
@@ -68,6 +69,12 @@ const schema = defineSchema({
     verseId: v.string(),
     verseTitle: v.string(),
     note: v.optional(v.string()),
+    mark: v.optional(v.string()),
+    ink: v.optional(v.string()),
+    textMode: v.optional(v.string()),
+    line: v.optional(v.number()),
+    aspectRatio: v.optional(v.string()),
+    holographic: v.optional(v.boolean()),
     sortOrder: v.number(),
     createdAt: v.number(),
   })

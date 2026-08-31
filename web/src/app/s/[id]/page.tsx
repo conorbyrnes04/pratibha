@@ -21,16 +21,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const verseId = decodeURIComponent(id);
   const item = await getVerse(verseId);
   const title = item ? displayPassageTitle(item) : "Pratibha";
+  const description = stripMarkdown(item ? layerText(item, "translation") : "").slice(0, 180);
   return {
     title,
-    description: stripMarkdown(item ? layerText(item, "translation") : "").slice(0, 180),
+    description,
     openGraph: {
       title,
+      description,
       url: `${SITE_URL}/s/${encodeURIComponent(verseId)}`,
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
+      description,
     },
   };
 }
@@ -51,7 +54,7 @@ export default async function SharedPage({ params, searchParams }: PageProps) {
     );
   }
 
-  const options = parseShareOptions(verseId, query, item.collection);
+  const options = parseShareOptions(verseId, query, item);
   const original = stripMarkdown(layerText(item, "original"));
   const iast = stripMarkdown(layerText(item, "iast"));
   const translation = stripMarkdown(layerText(item, "translation") || item.translation || "");

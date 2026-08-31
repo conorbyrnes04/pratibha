@@ -12,7 +12,7 @@ type AuthContextValue = {
   user: { id: string; email?: string; name?: string } | null;
   signInWithPassword: (email: string, password: string) => Promise<string | null>;
   signUpWithPassword: (email: string, password: string) => Promise<string | null>;
-  signInWithGoogle: () => Promise<string | null>;
+  signInWithGoogle: (redirectTo?: string) => Promise<string | null>;
   signOut: () => Promise<void>;
 };
 
@@ -28,7 +28,7 @@ function LocalAuthProvider({ children }: { children: ReactNode }) {
       user: null,
       signInWithPassword: async () => unavailable,
       signUpWithPassword: async () => unavailable,
-      signInWithGoogle: async () => unavailable,
+      signInWithGoogle: async (_redirectTo?: string) => unavailable,
       signOut: async () => undefined,
     }),
     [],
@@ -72,14 +72,18 @@ function ConvexAuthProvider({ children }: { children: ReactNode }) {
     [signIn],
   );
 
-  const signInWithGoogle = useCallback(async () => {
-    try {
-      await signIn("google");
-      return null;
-    } catch (error) {
-      return error instanceof Error ? error.message : "Google sign in failed";
-    }
-  }, [signIn]);
+  const signInWithGoogle = useCallback(
+    async (redirectTo?: string) => {
+      try {
+        const dest = redirectTo ?? (typeof window !== "undefined" ? window.location.origin : undefined);
+        await signIn("google", dest ? { redirectTo: dest } : {});
+        return null;
+      } catch (error) {
+        return error instanceof Error ? error.message : "Google sign in failed";
+      }
+    },
+    [signIn],
+  );
 
   const handleSignOut = useCallback(async () => {
     await convexSignOut();

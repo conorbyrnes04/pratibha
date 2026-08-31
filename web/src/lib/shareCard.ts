@@ -1,73 +1,107 @@
-import { sumiGlyph, type SumiSlug } from "@/lib/sumiGlyphs";
+import { sumiGlyph, verseSumiGlyph, type SumiSlug } from "@/lib/sumiGlyphs";
+import type { KeyTerm, VerseItem } from "@/lib/types";
 
-export const SHARE_CORE_MARKS = [
-  "lotus",
-  "moon",
-  "fire",
-  "serpent",
-  "dragon",
-  "eye",
-  "circle",
-  "void",
-  "sun",
-  "vishnu",
-  "ocean",
-  "star",
-  "lightning",
-  "tides",
-  "spiral",
-  "water",
-  "infinity",
-  "mandala",
-  "yantra",
-  "mirror",
-  "mountain",
-  "heart",
-  "chalice",
-  "shiva",
-  "owl",
-  "rose",
-  "tree",
-  "sage",
+export const SHARE_MARK_GROUPS = [
+  {
+    id: "animals",
+    label: "Animals",
+    marks: [
+      "bear",
+      "bee",
+      "butterfly",
+      "crane",
+      "crow",
+      "deer",
+      "dolphin",
+      "dragon",
+      "eagle",
+      "elephant",
+      "fish",
+      "fox",
+      "hawk",
+      "horse",
+      "lion",
+      "owl",
+      "ox",
+      "raven",
+      "serpent",
+      "spider",
+      "stag",
+      "swan",
+      "tiger",
+      "turtle",
+      "whale",
+      "wolf",
+    ],
+  },
+  {
+    id: "plants",
+    label: "Plants",
+    marks: ["lotus", "mushroom", "oak", "rose", "tree", "vine"],
+  },
+  {
+    id: "objects",
+    label: "Objects",
+    marks: ["celtic_key", "celtic_star", "chalice", "cross", "eye", "heart", "labyrinth", "mandala", "mirror", "triangle", "yantra"],
+  },
+  {
+    id: "elements",
+    label: "Elements",
+    marks: ["air", "desert", "earth", "fire", "lightning", "mountain", "ocean", "rainbow", "storm", "tides", "volcano", "water"],
+  },
+  {
+    id: "cosmos",
+    label: "Cosmos",
+    marks: ["circle", "comet", "constellation", "infinity", "moon", "spiral", "star", "sun", "void", "yin_yang"],
+  },
+  {
+    id: "figures",
+    label: "Figures",
+    marks: ["fool", "hermit", "king", "maiden", "mother", "sage", "shaman", "warrior"],
+  },
+  {
+    id: "deities",
+    label: "Deities",
+    marks: [
+      "anubis",
+      "apollo",
+      "artemis",
+      "athena",
+      "brahma",
+      "dionysus",
+      "durga",
+      "eros",
+      "freyja",
+      "ganesha",
+      "hades",
+      "hera",
+      "horus",
+      "isis",
+      "kali",
+      "lakshmi",
+      "loki",
+      "nuwa",
+      "odin",
+      "oshun",
+      "osiris",
+      "persephone",
+      "quetzalcoatl",
+      "saraswati",
+      "shango",
+      "shiva",
+      "tezcatlipoca",
+      "thanatos",
+      "thor",
+      "thoth",
+      "thunderbird",
+      "vishnu",
+      "yemaya",
+      "zeus",
+    ],
+  },
 ] as const;
 
-/** Same slugs as the Celtic Glyphnet pantheon — attribute marks, not portraits. */
-export const SHARE_DEITY_MARKS = [
-  "zeus",
-  "hera",
-  "athena",
-  "apollo",
-  "artemis",
-  "hades",
-  "persephone",
-  "dionysus",
-  "eros",
-  "brahma",
-  "kali",
-  "durga",
-  "lakshmi",
-  "saraswati",
-  "ganesha",
-  "isis",
-  "osiris",
-  "horus",
-  "anubis",
-  "thoth",
-  "odin",
-  "thor",
-  "freyja",
-  "loki",
-  "oshun",
-  "shango",
-  "yemaya",
-  "quetzalcoatl",
-  "tezcatlipoca",
-  "nuwa",
-  "thanatos",
-  "thunderbird",
-] as const;
-
-export const SHARE_FORCE_MARKS = [...SHARE_CORE_MARKS, ...SHARE_DEITY_MARKS] as const;
+export const SHARE_FORCE_MARKS = SHARE_MARK_GROUPS.flatMap((group) => group.marks);
 
 export type ShareForceMark = (typeof SHARE_FORCE_MARKS)[number];
 
@@ -87,6 +121,13 @@ export const SHARE_TEXT_MODES: { id: ShareTextMode; label: string }[] = [
   { id: "original", label: "Original" },
   { id: "both", label: "Both" },
 ];
+
+export type ShareAspectRatio = "post" | "story";
+
+export const SHARE_ASPECT_RATIOS = {
+  post: { width: 1080, height: 1350, ratio: "1080 / 1350" },
+  story: { width: 1080, height: 1920, ratio: "1080 / 1920" },
+} as const;
 
 export type ShareCardOptions = {
   verseId: string;
@@ -125,15 +166,58 @@ export function defaultShareMark(collection?: string): ShareForceMark {
   return fallback[mapped] || "lotus";
 }
 
+function layerBody(item: VerseItem, kind: string): string {
+  const layer = item.pratibha_layers?.find((entry) => entry.kind === kind);
+  return (layer?.body || "").trim();
+}
+
+function verseKeyTerms(item: VerseItem): string[] {
+  const layer = item.pratibha_layers?.find((entry) => entry.kind === "key_terms");
+  const terms: string[] = [];
+  for (const entry of layer?.items || []) {
+    if (entry && typeof entry === "object" && "term" in entry) {
+      const term = (entry as KeyTerm).term;
+      if (term) terms.push(term);
+    }
+  }
+  return terms;
+}
+
+function asShareMark(slug: string, collection?: string): ShareForceMark {
+  if (isShareForceMark(slug)) return slug;
+  return defaultShareMark(collection);
+}
+
+/** Opening folio mark: verse image first, tradition if nothing resonates. */
+export function verseShareMark(item: Pick<VerseItem, "collection" | "title" | "thesis" | "translation" | "themes" | "pratibha_layers">): ShareForceMark {
+  return asShareMark(
+    verseSumiGlyph({
+      collection: item.collection,
+      title: item.title,
+      thesis: item.thesis,
+      translation: layerBody(item as VerseItem, "translation") || item.translation,
+      themes: item.themes,
+      keyTerms: verseKeyTerms(item as VerseItem),
+    }),
+    item.collection,
+  );
+}
+
 export function parseShareOptions(
   verseId: string,
   query: { g?: string; ink?: string; t?: string; l?: string },
-  collection?: string,
+  source?: string | Pick<VerseItem, "collection" | "title" | "thesis" | "translation" | "themes" | "pratibha_layers">,
 ): ShareCardOptions {
   const line = Number.parseInt(query.l || "", 10);
+  const mark =
+    query.g && isShareForceMark(query.g)
+      ? query.g
+      : typeof source === "object" && source
+        ? verseShareMark(source)
+        : defaultShareMark(typeof source === "string" ? source : undefined);
   return {
     verseId,
-    mark: query.g && isShareForceMark(query.g) ? query.g : defaultShareMark(collection),
+    mark,
     ink: query.ink && isShareInk(query.ink) ? query.ink : "gold",
     textMode: query.t && isShareTextMode(query.t) ? query.t : "translation",
     line: Number.isFinite(line) && line > 0 ? line : undefined,
@@ -180,6 +264,34 @@ export function shareCaption(input: {
   const line = clipShareText(input.translation.replace(/^["“]|["”]$/g, ""), 180);
   const quoted = line ? `“${line}”\n\n` : "";
   return `${input.title}\n\n${quoted}${input.readUrl}`;
+}
+
+export const SHARE_SOCIAL = [
+  { id: "instagram_story", label: "IG Story" },
+  { id: "instagram_post", label: "IG Post" },
+  { id: "tiktok", label: "TikTok" },
+  { id: "x", label: "X" },
+  { id: "whatsapp", label: "WhatsApp" },
+  { id: "signal", label: "Signal" },
+] as const;
+
+export type ShareSocialId = (typeof SHARE_SOCIAL)[number]["id"];
+
+export function tweetIntentUrl(caption: string, url: string): string {
+  const text = clipShareText(caption.replace(url, "").trim(), 220);
+  return `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+}
+
+export function whatsappIntentUrl(caption: string): string {
+  return `https://wa.me/?text=${encodeURIComponent(caption)}`;
+}
+
+export function instagramHomeUrl(): string {
+  return "https://www.instagram.com/";
+}
+
+export function tiktokUploadUrl(): string {
+  return "https://www.tiktok.com/upload";
 }
 
 export function markSrc(mark: SumiSlug | string): string {

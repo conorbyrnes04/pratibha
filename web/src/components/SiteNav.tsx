@@ -3,73 +3,84 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { useAuth } from "@/components/AuthProvider";
-import { Button } from "@/components/ui/button";
 
 type NavLink = { href: string; label: string; match?: string };
 
-const PRIMARY: NavLink[] = [
+/** The walk — always visible. */
+const WALK: NavLink[] = [
   { href: "/", label: "Today", match: "/" },
+  { href: "/learn?path=essential", label: "Path", match: "/learn" },
   { href: "/read", label: "Library" },
-  { href: "/glossary/study", label: "Lexicon", match: "/glossary/study" },
-  { href: "/chat", label: "Chat" },
-  { href: "/journal", label: "Journal" },
 ];
 
-const SECONDARY: NavLink[] = [
-  { href: "/manuscript", label: "Manuscript" },
-  { href: "/learn", label: "Paths", match: "/learn" },
-  { href: "/learn#threads", label: "Themes", match: "/learn#threads" },
-  { href: "/random", label: "Oracle" },
+/** Tools around the walk. */
+const STUDY: NavLink[] = [
+  { href: "/journal", label: "Journal" },
+  { href: "/chat", label: "Chat" },
+  { href: "/glossary/study", label: "Lexicon", match: "/glossary/study" },
   { href: "/glossary", label: "Glossary", match: "/glossary" },
+  { href: "/manuscript", label: "Manuscript" },
+  { href: "/random", label: "Oracle" },
   { href: "/sources", label: "Sources" },
 ];
 
-function linkIsActive(pathname: string, href: string, match?: string, hash = ""): boolean {
-  if (match === "/learn#threads") {
-    return pathname === "/learn" && hash === "#threads";
-  }
+function linkIsActive(pathname: string, href: string, match?: string): boolean {
   if (match === "/") return pathname === "/";
   if (match === "/glossary") return pathname === "/glossary";
-  if (match === "/learn") {
-    return pathname === "/learn" && hash !== "#threads";
-  }
-  const path = match || href;
+  const path = match || href.split("?")[0];
   return pathname === path || pathname.startsWith(`${path}/`);
 }
 
-export function SiteNav() {
+function WalkLinks({
+  className,
+  onNavigate,
+}: {
+  className?: string;
+  onNavigate?: () => void;
+}) {
   const pathname = usePathname();
-  const { configured, loading, user } = useAuth();
-  const [open, setOpen] = useState(false);
-  const [moreOpen, setMoreOpen] = useState(false);
-  const [hash, setHash] = useState("");
-  const moreRef = useRef<HTMLDivElement>(null);
+  return (
+    <>
+      {WALK.map((link) => {
+        const active = linkIsActive(pathname, link.href, link.match);
+        return (
+          <Link
+            key={link.href}
+            href={link.href}
+            aria-current={active ? "page" : undefined}
+            className={`${className ?? "nav-link"} ${active ? "nav-link--current" : ""}`}
+            onClick={onNavigate}
+          >
+            {link.label}
+          </Link>
+        );
+      })}
+    </>
+  );
+}
+
+function StudyMenu({
+  open,
+  onToggle,
+  onClose,
+  placement,
+}: {
+  open: boolean;
+  onToggle: () => void;
+  onClose: () => void;
+  placement: "bar" | "dock";
+}) {
+  const pathname = usePathname();
+  const rootRef = useRef<HTMLDivElement>(null);
+  const studyActive = STUDY.some((link) => linkIsActive(pathname, link.href, link.match));
 
   useEffect(() => {
-    setOpen(false);
-    setMoreOpen(false);
-    setHash(typeof window !== "undefined" ? window.location.hash : "");
-  }, [pathname]);
-
-  useEffect(() => {
-    function onHash() {
-      setHash(window.location.hash);
-    }
-    window.addEventListener("hashchange", onHash);
-    onHash();
-    return () => window.removeEventListener("hashchange", onHash);
-  }, []);
-
-  useEffect(() => {
-    if (!moreOpen) return;
+    if (!open) return;
     function onPointerDown(event: MouseEvent) {
-      if (moreRef.current && !moreRef.current.contains(event.target as Node)) {
-        setMoreOpen(false);
-      }
+      if (rootRef.current && !rootRef.current.contains(event.target as Node)) onClose();
     }
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setMoreOpen(false);
+      if (event.key === "Escape") onClose();
     }
     document.addEventListener("mousedown", onPointerDown);
     document.addEventListener("keydown", onKeyDown);
@@ -77,124 +88,74 @@ export function SiteNav() {
       document.removeEventListener("mousedown", onPointerDown);
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [moreOpen]);
+  }, [open, onClose]);
 
-  // Hide library nav until signed in (when auth is on).
-  if (configured && (loading || !user)) {
-    return null;
-  }
-
-  const secondaryActive = SECONDARY.some((link) =>
-    linkIsActive(pathname, link.href, link.match, hash),
+  return (
+    <div className={`nav-more ${placement === "dock" ? "nav-more--dock" : ""}`} ref={rootRef}>
+      <button
+        type="button"
+        onClick={onToggle}
+        aria-expanded={open}
+        aria-controls={`nav-study-${placement}`}
+        className={`nav-link nav-more__trigger ${studyActive || open ? "nav-link--current" : ""}`}
+      >
+        Study
+        <span aria-hidden="true" className="nav-more__caret">
+          {open ? (placement === "dock" ? "▾" : "▴") : placement === "dock" ? "▴" : "▾"}
+        </span>
+      </button>
+      {open ? (
+        <div id={`nav-study-${placement}`} className="nav-more__menu" role="menu">
+          {STUDY.map((link) => {
+            const active = linkIsActive(pathname, link.href, link.match);
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                role="menuitem"
+                aria-current={active ? "page" : undefined}
+                className={`nav-more__item ${active ? "nav-link--current" : ""}`}
+                onClick={onClose}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
+      ) : null}
+    </div>
   );
+}
+
+export function SiteNav() {
+  const [studyOpen, setStudyOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setStudyOpen(false);
+  }, [pathname]);
 
   return (
     <>
-      <div className="hidden items-center gap-5 text-base sm:flex">
-        {PRIMARY.map((link) => {
-          const active = linkIsActive(pathname, link.href, link.match);
-          return (
-            <Link
-              key={link.href}
-              href={link.href}
-              aria-current={active ? "page" : undefined}
-              className={`nav-link ${active ? "text-amber-100" : ""}`}
-            >
-              {link.label}
-            </Link>
-          );
-        })}
-        <div className="nav-more" ref={moreRef}>
-          <button
-            type="button"
-            onClick={() => setMoreOpen((v) => !v)}
-            aria-expanded={moreOpen}
-            aria-controls="nav-more-menu"
-            className={`nav-link nav-more__trigger ${secondaryActive || moreOpen ? "text-amber-100" : ""}`}
-          >
-            More
-            <span aria-hidden="true" className="nav-more__caret">
-              {moreOpen ? "▴" : "▾"}
-            </span>
-          </button>
-          {moreOpen ? (
-            <div id="nav-more-menu" className="nav-more__menu" role="menu">
-              {SECONDARY.map((link) => {
-                const active = linkIsActive(pathname, link.href, link.match, hash);
-                return (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    role="menuitem"
-                    aria-current={active ? "page" : undefined}
-                    className={`nav-more__item ${active ? "text-amber-100" : ""}`}
-                    onClick={() => setMoreOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                );
-              })}
-            </div>
-          ) : null}
-        </div>
+      <div className="site-nav site-nav--bar">
+        <WalkLinks />
+        <StudyMenu
+          placement="bar"
+          open={studyOpen}
+          onToggle={() => setStudyOpen((value) => !value)}
+          onClose={() => setStudyOpen(false)}
+        />
       </div>
 
-      <Button
-        type="button"
-        variant="ghost"
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-        aria-controls="mobile-nav"
-        aria-label={open ? "Close menu" : "Open menu"}
-        className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-amber-200/20 sm:hidden"
-      >
-        <span aria-hidden="true" className="text-lg">
-          {open ? "✕" : "☰"}
-        </span>
-      </Button>
-
-      {open ? (
-        <div
-          id="mobile-nav"
-          className="absolute left-0 right-0 top-full border-b border-amber-200/15 bg-[#090912]/95 backdrop-blur-xl sm:hidden"
-        >
-          <div className="mx-auto flex max-w-6xl flex-col px-4 py-2">
-            {PRIMARY.map((link) => {
-              const active = linkIsActive(pathname, link.href, link.match);
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  aria-current={active ? "page" : undefined}
-                  className={`nav-link rounded-lg px-2 py-3 text-base ${active ? "text-amber-100" : ""}`}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-            <details className="nav-more-mobile">
-              <summary className="nav-link nav-more-mobile__summary rounded-lg px-2 py-3 text-base">
-                More
-              </summary>
-              <div className="flex flex-col border-l border-amber-200/15 pl-3">
-                {SECONDARY.map((link) => {
-                  const active = linkIsActive(pathname, link.href, link.match, hash);
-                  return (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      aria-current={active ? "page" : undefined}
-                      className={`nav-link rounded-lg px-2 py-2.5 text-base ${active ? "text-amber-100" : ""}`}
-                    >
-                      {link.label}
-                    </Link>
-                  );
-                })}
-              </div>
-            </details>
-          </div>
-        </div>
-      ) : null}
+      <nav className="site-dock" aria-label="Primary">
+        <WalkLinks className="site-dock__link" />
+        <StudyMenu
+          placement="dock"
+          open={studyOpen}
+          onToggle={() => setStudyOpen((value) => !value)}
+          onClose={() => setStudyOpen(false)}
+        />
+      </nav>
     </>
   );
 }

@@ -9,6 +9,7 @@ import { CONVEX_ENABLED } from "@/lib/convexConfigured";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { recordPractice } from "@/lib/glyphUnlock";
 import { buttonVariants } from "@/components/ui/button";
 
 export function StudentCommentary({
@@ -78,6 +79,7 @@ function StudentCommentaryInner({
         status,
         displayName: displayName.trim() || undefined,
       });
+      recordPractice(`commentary:${verseId}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not save.");
     } finally {
@@ -90,7 +92,10 @@ function StudentCommentaryInner({
     setError("");
     try {
       if (inManuscript) await removeVerse({ verseId });
-      else await addVerse({ verseId, verseTitle });
+      else {
+        await addVerse({ verseId, verseTitle });
+        recordPractice(`manuscript:${verseId}`);
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not update the manuscript.");
     } finally {

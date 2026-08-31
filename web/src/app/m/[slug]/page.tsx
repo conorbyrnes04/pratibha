@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import { useQuery } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 import { CONVEX_ENABLED } from "@/lib/convexConfigured";
+import { ManuscriptFolio } from "@/components/ManuscriptFolio";
 
 export default function PublicManuscriptPage() {
   const params = useParams<{ slug: string }>();
@@ -58,24 +59,24 @@ function PublicManuscript({ slug }: { slug: string }) {
       {manuscript.entries.length === 0 ? (
         <p className="soft">This manuscript is still empty.</p>
       ) : (
-        <ol className="space-y-10">
-          {manuscript.entries.map((entry, index) => (
-            <li key={entry.verseId}>
-              <p className="font-sans text-xs uppercase tracking-[0.16em] text-stone-400">
-                {index + 1}
-              </p>
-              <Link
-                href={`/read/${encodeURIComponent(entry.verseId)}`}
-                className="mt-1 block text-xl text-amber-100"
-              >
-                {entry.verseTitle}
-              </Link>
-              {entry.note ? (
-                <p className="reading-prose mt-3 text-[0.95rem] italic leading-relaxed">{entry.note}</p>
-              ) : null}
-            </li>
+        <div className="manuscript-grid">
+          {manuscript.entries.map((entry) => (
+            <ManuscriptFolio
+              key={entry.verseId}
+              verseId={entry.verseId}
+              verseTitle={entry.verseTitle}
+              note={entry.note}
+              card={{
+                mark: entry.mark,
+                ink: entry.ink,
+                textMode: entry.textMode,
+                line: entry.line,
+                aspectRatio: entry.aspectRatio,
+                holographic: entry.holographic,
+              }}
+            />
           ))}
-        </ol>
+        </div>
       )}
     </main>
   );

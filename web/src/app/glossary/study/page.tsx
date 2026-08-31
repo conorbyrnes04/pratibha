@@ -21,6 +21,7 @@ import type {
   StudyDeckId,
 } from "@/lib/lexiconStudyTypes";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
+import { recordPractice } from "@/lib/glyphUnlock";
 import { Button } from "@/components/ui/button";
 
 type Phase = "pick" | "session" | "done";
@@ -231,6 +232,7 @@ export default function GlossaryStudyPage() {
       setGraded(0);
       setSessionAgain(0);
       setPhase("session");
+      recordPractice(`lexicon:start:${deck.id}`);
     },
     [cards],
   );
@@ -246,15 +248,18 @@ export default function GlossaryStudyPage() {
       saveSrsMap(nextMap);
       setGraded((n) => n + 1);
       if (grade === "again") setSessionAgain((n) => n + 1);
+      const reps = Math.floor(Object.keys(nextMap).length / 5);
+      if (reps > 0) recordPractice(`lexicon:reps:${reps}`);
 
       if (index + 1 >= queue.length) {
+        if (activeDeck) recordPractice(`lexicon:done:${activeDeck.id}`);
         setPhase("done");
         return;
       }
       setIndex((i) => i + 1);
       setFlipped(false);
     },
-    [current, flipped, index, queue.length, srs],
+    [activeDeck, current, flipped, index, queue.length, srs],
   );
 
   useEffect(() => {

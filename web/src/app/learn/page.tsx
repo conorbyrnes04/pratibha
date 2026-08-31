@@ -5,6 +5,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { getVerses } from "@/lib/api";
 import { LearnThemesHome } from "@/components/learn/LearnThemesHome";
 import { LearnThreadJourney } from "@/components/learn/LearnThreadJourney";
+import { LearnTrail } from "@/components/learn/LearnTrail";
+import { LearnTrailGate } from "@/components/learn/LearnTrailGate";
+import { TraditionChooser } from "@/components/learn/TraditionChooser";
 import { PathStepWell } from "@/components/learn/PathStepWell";
 import { PathTree } from "@/components/learn/PathTree";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
@@ -13,7 +16,13 @@ import { ThreadContextBar } from "@/components/learn/ThreadContextBar";
 import { Section } from "@/components/ui/Section";
 import { useLearnProgress } from "@/hooks/useLearnProgress";
 import { pickDailySit, stepKey, threadKey, trackDoneCount, type DailySitPick } from "@/lib/learn/progress";
-import { learnHref, parseLearnSearch } from "@/lib/learn/url";
+import { buildTrail, TRAIL_ARRIVE_TOTAL_MS } from "@/lib/learn/trail";
+import {
+  ESSENTIAL_TRAIL_ID,
+  findTraditionTrail,
+  isWalkableTrail,
+} from "@/lib/learn/traditionTrails";
+import { learnHref, parseLearnSearch, type LearnHrefOpts } from "@/lib/learn/url";
 import {
   LEARNING_REALMS,
   LEARNING_TRACKS,
@@ -34,7 +43,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-type PageView = "home" | "journey" | "bead" | "lineage";
+type PageView = "home" | "gate" | "journey" | "bead" | "lineage";
 
 export default function LearnPage() {
   const router = useRouter();
@@ -54,16 +63,22 @@ export default function LearnPage() {
   const [items, setItems] = useState<VerseItem[]>([]);
   const [selectedTrackId, setSelectedTrackId] = useState<string | null>(null);
   const [openStepId, setOpenStepId] = useState<string | null>(null);
+  const [openStepTrackId, setOpenStepTrackId] = useState<string | null>(null);
   const [activeThreadId, setActiveThreadId] = useState<string | null>(null);
   const [activeBeadId, setActiveBeadId] = useState<string | null>(null);
   const [threadCeremonyId, setThreadCeremonyId] = useState<string | null>(null);
   const [resetOpen, setResetOpen] = useState(false);
   const [skipConfirmIdx, setSkipConfirmIdx] = useState<number | null>(null);
+  const [drawingKey, setDrawingKey] = useState<string | null>(null);
+  const [selectedPathId, setSelectedPathId] = useState<string | null>(ESSENTIAL_TRAIL_ID);
   const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const stepRefs = useRef<Record<string, HTMLElement | null>>({});
   const pathSectionRef = useRef<HTMLElement | null>(null);
   const pendingScrollRef = useRef<string | null>(null);
   const urlReadyRef = useRef(false);
+  const selectedPathIdRef = useRef(selectedPathId);
+  selectedPathIdRef.current = selectedPathId;
+  const selectedTrail = selectedPathId ? findTraditionTrail(selectedPathId) : null;
 
   useEffect(() => {
     getVerses("all").then(setItems).catch(() => setItems([]));
@@ -111,9 +126,10 @@ export default function LearnPage() {
     if (threadCeremonyId) return "bead";
     if (activeThreadId && activeBeadId) return "bead";
     if (activeThreadId) return "journey";
+    if (openStepId && openStepTrackId) return "gate";
     if (selectedTrackId) return "lineage";
     return "home";
-  }, [threadCeremonyId, activeThreadId, activeBeadId, selectedTrackId]);
+  }, [threadCeremonyId, activeThreadId, activeBeadId, openStepId, openStepTrackId, selectedTrackId]);
 
   const beadPathStep = useMemo(() => {
     if (!activeBead) return null;
@@ -127,30 +143,39 @@ export default function LearnPage() {
     };
   }, []);
 
-  function syncUrl(opts: {
-    trackId?: string | null;
-    stepId?: string | null;
-    threadId?: string | null;
-    beadId?: string | null;
-  }) {
+  function syncUrl(opts: LearnHrefOpts = {}) {
     if (!urlReadyRef.current) return;
-    router.replace(learnHref(opts), { scroll: false });
+    const pathId = opts.pathId !== undefined ? opts.pathId : selectedPathIdRef.current;
+    router.replace(
+      learnHref({
+        ...opts,
+        pathId: pathId || null,
+      }),
+      { scroll: false },
+    );
   }
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const { trackId, stepId, threadId, beadId } = parseLearnSearch(window.location.search);
+    const { pathId, trackId, stepId, threadId, beadId } = parseLearnSearch(window.location.search);
+    const walkable = pathId && isWalkableTrail(pathId) ? pathId : ESSENTIAL_TRAIL_ID;
     if (threadId && findThread(threadId)) {
+      setSelectedPathId(null);
       setActiveThreadId(threadId);
       const bead = beadId && findBead(findThread(threadId)!, beadId);
       if (bead) setActiveBeadId(bead.id);
       else setActiveBeadId(null);
+    } else if (trackId && stepId && LEARNING_TRACKS.some((x) => x.id === trackId)) {
+      setSelectedPathId(walkable);
+      setOpenStepTrackId(trackId);
+      setOpenStepId(stepId);
     } else if (trackId && LEARNING_TRACKS.some((x) => x.id === trackId)) {
+      setSelectedPathId(walkable);
       setSelectedTrackId(trackId);
-      if (stepId) {
-        setOpenStepId(stepId);
-        pendingScrollRef.current = stepId;
-      }
+    } else if (pathId === null && !trackId && !stepId) {
+      setSelectedPathId(ESSENTIAL_TRAIL_ID);
+    } else {
+      setSelectedPathId(walkable);
     }
     urlReadyRef.current = true;
   }, []);
@@ -179,7 +204,26 @@ export default function LearnPage() {
     clearThreadMode();
     setSelectedTrackId(null);
     setOpenStepId(null);
-    syncUrl({});
+    setOpenStepTrackId(null);
+    setSelectedPathId(null);
+    selectedPathIdRef.current = null;
+    syncUrl({ pathId: null });
+  }
+
+  function selectPath(pathId: string) {
+    const trail = findTraditionTrail(pathId);
+    clearThreadMode();
+    setSelectedTrackId(null);
+    setOpenStepId(null);
+    setOpenStepTrackId(null);
+    setDrawingKey(null);
+    setSelectedPathId(trail.id);
+    selectedPathIdRef.current = trail.id;
+    const nodes = buildTrail(trail.id);
+    const idx = nodes.findIndex((node) => !progress[node.key]);
+    const current = nodes[idx === -1 ? Math.max(0, nodes.length - 1) : idx];
+    pendingScrollRef.current = current?.key ?? null;
+    syncUrl({ pathId: trail.id });
   }
 
   function openLineageMap() {
@@ -201,9 +245,9 @@ export default function LearnPage() {
 
   function continueTo(trackId: string, stepId: string) {
     clearThreadMode();
-    setSelectedTrackId(trackId);
+    setSelectedTrackId(null);
+    setOpenStepTrackId(trackId);
     setOpenStepId(stepId);
-    pendingScrollRef.current = stepId;
     syncUrl({ trackId, stepId });
   }
 
@@ -254,10 +298,7 @@ export default function LearnPage() {
     setActiveThreadId(null);
     setActiveBeadId(null);
     setThreadCeremonyId(null);
-    setSelectedTrackId(trackId);
-    setOpenStepId(stepId);
-    pendingScrollRef.current = stepId;
-    syncUrl({ trackId, stepId });
+    openTrailGate(trackId, stepId);
   }
 
   function backToThreadMap() {
@@ -293,19 +334,38 @@ export default function LearnPage() {
     syncUrl({ trackId: track.id, stepId: s.id });
   }
 
+  function openTrailGate(trackId: string, stepId: string) {
+    clearThreadMode();
+    setSelectedTrackId(null);
+    setOpenStepTrackId(trackId);
+    setOpenStepId(stepId);
+    syncUrl({ trackId, stepId });
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+
+  function closeTrailGate() {
+    setOpenStepId(null);
+    setOpenStepTrackId(null);
+    syncUrl({});
+  }
+
   function onPathGateComplete(trackId: string, stepId: string) {
     const key = stepKey(trackId, stepId);
     if (!progress[key]) toggle(trackId, stepId);
-    const idx = track.steps.findIndex((x) => x.id === stepId);
-    const next = idx >= 0 ? track.steps[idx + 1] : undefined;
+    const nodes = buildTrail(selectedPathIdRef.current);
+    const idx = nodes.findIndex((node) => node.trackId === trackId && node.stepId === stepId);
+    const next = idx >= 0 ? nodes[idx + 1] : undefined;
+    setOpenStepId(null);
+    setOpenStepTrackId(null);
+    syncUrl({});
     if (next) {
+      setDrawingKey(next.key);
+      pendingScrollRef.current = next.key;
       if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
       advanceTimerRef.current = setTimeout(() => {
-        setOpenStepId(next.id);
-        pendingScrollRef.current = next.id;
-        syncUrl({ trackId: track.id, stepId: next.id });
+        setDrawingKey(null);
         advanceTimerRef.current = null;
-      }, 450);
+      }, TRAIL_ARRIVE_TOTAL_MS);
     }
   }
 
@@ -357,18 +417,46 @@ export default function LearnPage() {
   return (
     <main className="page-shell page-shell--reading">
       <div className="section-stack">
-        {view === "home" ? (
-          <LearnThemesHome
+        {view === "home" && !selectedPathId ? (
+          <TraditionChooser
             progress={progress}
-            completedAt={completedAt}
             hydrated={hydrated}
-            dailySit={dailySit}
-            onOpenBead={openBead}
-            onOpenThread={openThread}
-            onOpenLineage={openLineageMap}
-            onBeginSit={beginSit}
+            onSelectTradition={selectPath}
           />
         ) : null}
+
+        {view === "home" && selectedPathId ? (
+          <LearnTrail
+            pathId={selectedPathId}
+            progress={progress}
+            hydrated={hydrated}
+            onOpenGate={openTrailGate}
+            onSelectPath={selectPath}
+            onBackPaths={goHome}
+            scrollToKey={pendingScrollRef.current}
+            drawingKey={drawingKey}
+          />
+        ) : null}
+
+        {view === "gate" && openStepTrackId && openStepId
+          ? (() => {
+              const gateTrack = LEARNING_TRACKS.find((t) => t.id === openStepTrackId);
+              const gateStep = gateTrack?.steps.find((s) => s.id === openStepId);
+              if (!gateTrack || !gateStep) return null;
+              return (
+                <LearnTrailGate
+                  track={gateTrack}
+                  step={gateStep}
+                  items={items}
+                  done={Boolean(progress[stepKey(openStepTrackId, openStepId)])}
+                  pathTitle={selectedTrail?.shortTitle ?? "The Path"}
+                  pathId={selectedTrail?.id ?? "essential"}
+                  onComplete={() => onPathGateComplete(openStepTrackId, openStepId)}
+                  onBack={closeTrailGate}
+                />
+              );
+            })()
+          : null}
 
         {view === "journey" && activeThread ? (
           <LearnThreadJourney
@@ -723,7 +811,16 @@ export default function LearnPage() {
                               integration={s.integration}
                               keyIdea={s.keyIdea}
                               done={done}
-                              onComplete={() => onPathGateComplete(track.id, s.id)}
+                              onComplete={() => {
+                                const key = stepKey(track.id, s.id);
+                                if (!progress[key]) toggle(track.id, s.id);
+                                const next = track.steps[idx + 1];
+                                if (next) {
+                                  setOpenStepId(next.id);
+                                  pendingScrollRef.current = next.id;
+                                  syncUrl({ trackId: track.id, stepId: next.id });
+                                }
+                              }}
                             />
                             <div className="flex items-center justify-between gap-3 border-t border-white/10 pt-4">
                               <Button

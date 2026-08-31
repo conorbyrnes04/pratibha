@@ -55,6 +55,12 @@ function publicEntries(entries: Array<{
   verseId: string;
   verseTitle: string;
   note?: string;
+  mark?: string;
+  ink?: string;
+  textMode?: string;
+  line?: number;
+  aspectRatio?: string;
+  holographic?: boolean;
   sortOrder: number;
 }>) {
   return [...entries]
@@ -63,6 +69,12 @@ function publicEntries(entries: Array<{
       verseId: e.verseId,
       verseTitle: e.verseTitle,
       note: e.note || "",
+      mark: e.mark,
+      ink: e.ink,
+      textMode: e.textMode,
+      line: e.line,
+      aspectRatio: e.aspectRatio,
+      holographic: e.holographic,
       sortOrder: e.sortOrder,
     }));
 }
@@ -140,17 +152,39 @@ export const addVerse = mutation({
     verseId: v.string(),
     verseTitle: v.string(),
     note: v.optional(v.string()),
+    mark: v.optional(v.string()),
+    ink: v.optional(v.string()),
+    textMode: v.optional(v.string()),
+    line: v.optional(v.number()),
+    aspectRatio: v.optional(v.string()),
+    holographic: v.optional(v.boolean()),
   },
   handler: async (ctx, args) => {
     const userId = await requireUser(ctx);
     const manuscript = await getOrCreateManuscript(ctx, userId);
+    const card = {
+      mark: args.mark,
+      ink: args.ink,
+      textMode: args.textMode,
+      line: args.line,
+      aspectRatio: args.aspectRatio,
+      holographic: args.holographic,
+    };
     const existing = await ctx.db
       .query("manuscript_entries")
       .withIndex("by_manuscript_verse", (q) =>
         q.eq("manuscriptId", manuscript._id).eq("verseId", args.verseId),
       )
       .unique();
-    if (existing) return existing._id;
+    const now = Date.now();
+    if (existing) {
+      const note = args.note !== undefined
+        ? (args.note.trim() ? assertMargin(args.note) : undefined)
+        : existing.note;
+      await ctx.db.patch(existing._id, { ...card, note, verseTitle: args.verseTitle.trim() || existing.verseTitle });
+      await ctx.db.patch(manuscript._id, { updatedAt: now });
+      return existing._id;
+    }
     const current = await ctx.db
       .query("manuscript_entries")
       .withIndex("by_manuscript", (q) => q.eq("manuscriptId", manuscript._id))
@@ -159,13 +193,13 @@ export const addVerse = mutation({
       throw new Error("A manuscript holds at most 40 verses. Remove one to add another.");
     }
     const note = args.note?.trim() ? assertMargin(args.note) : undefined;
-    const now = Date.now();
     const id = await ctx.db.insert("manuscript_entries", {
       manuscriptId: manuscript._id,
       userId,
       verseId: args.verseId,
       verseTitle: args.verseTitle.trim() || args.verseId,
       note,
+      ...card,
       sortOrder: current.length,
       createdAt: now,
     });

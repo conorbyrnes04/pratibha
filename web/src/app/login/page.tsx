@@ -13,6 +13,7 @@ function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
   const next = params.get("next") || "/";
+  const oauthCode = params.get("code");
   const { user, loading, configured, signInWithPassword, signUpWithPassword, signInWithGoogle } = useAuth();
   const [mode, setMode] = useState<"signin" | "signup">(
     params.get("mode") === "signup" ? "signup" : "signin",
@@ -31,6 +32,16 @@ function LoginForm() {
     const fromQuery = params.get("error");
     if (fromQuery) setError(fromQuery);
   }, [params]);
+
+  if (oauthCode && (loading || !user)) {
+    return (
+      <main className="mx-auto max-w-lg px-4 py-16">
+        <p className="font-sans text-xs uppercase tracking-[0.22em] text-stone-400">Pratibha</p>
+        <h1 className="mt-2 text-4xl text-amber-100">Finishing Google sign-in</h1>
+        <p className="soft mt-3 font-sans text-sm">One moment while we open your session.</p>
+      </main>
+    );
+  }
 
   if (!configured) {
     return (
@@ -79,7 +90,10 @@ function LoginForm() {
   async function onGoogle() {
     setError(null);
     setBusy(true);
-    const err = await signInWithGoogle();
+    const origin = window.location.origin;
+    const path = next.startsWith("/") && !next.startsWith("//") ? next.split("?")[0] : "/";
+    const dest = `${origin}${path === "/" ? "" : path}`;
+    const err = await signInWithGoogle(dest);
     if (err) {
       setError(err);
       setBusy(false);
@@ -91,7 +105,7 @@ function LoginForm() {
       <p className="font-sans text-xs uppercase tracking-[0.22em] text-stone-400">Pratibha</p>
       <h1 className="mt-2 text-4xl text-amber-100">{mode === "signin" ? "Sign in" : "Create account"}</h1>
       <p className="soft mt-3 font-sans text-sm">
-        Sign in to open the library, paths, study chat, and your journal.
+        The path is open without an account. Sign in to keep a journal and carry your walk across devices.
       </p>
 
       <div className="mt-8 space-y-4">

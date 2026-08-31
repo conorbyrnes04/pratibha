@@ -43,6 +43,7 @@ type PathStepWellProps = {
   trackTitle: string;
   step: LearningStepSpec;
   items: VerseItem[];
+  pathId?: string | null;
   threadId?: string | null;
   beadId?: string | null;
   children?: ReactNode;
@@ -53,6 +54,7 @@ export function PathStepWell({
   trackTitle,
   step,
   items,
+  pathId,
   threadId,
   beadId,
   children,
@@ -62,6 +64,7 @@ export function PathStepWell({
     .map((id) => resolveById(items, id))
     .filter((v): v is VerseItem => Boolean(v));
   const backHref = learnHref({
+    pathId,
     trackId: threadId ? undefined : trackId,
     stepId: threadId ? undefined : step.id,
     threadId,

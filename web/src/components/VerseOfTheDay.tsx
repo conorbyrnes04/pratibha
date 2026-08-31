@@ -8,6 +8,7 @@ import { LayerBlock } from "@/components/LayerBlock";
 import { ReadingShell } from "@/components/ReadingShell";
 import { buttonVariants } from "@/components/ui/button";
 import { ShareComposer } from "@/components/ShareComposer";
+import { SanghaBoundary } from "@/components/SanghaBoundary";
 
 /**
  * The daily passage, formatted so the source **Original** (Devanagari, Tibetan
@@ -79,7 +80,9 @@ export function VerseOfTheDay({ item, preview = false }: { item: VerseItem; prev
             <Link href={askHref} className={buttonVariants({ variant: "secondary" })}>
               Ask about this
             </Link>
-            <ShareComposer item={item} />
+            <SanghaBoundary>
+              <ShareComposer item={item} />
+            </SanghaBoundary>
           </div>
         )}
       </ReadingShell>

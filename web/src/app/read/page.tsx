@@ -11,11 +11,12 @@ import { FilterSelect } from "@/components/FilterSelect";
 import { ThemeConstellation } from "@/components/ThemeConstellation";
 import { buildCollectionOptions, filterPassages, topThemes, uniqueCollections } from "@/lib/corpusFilters";
 import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
-import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
-import { collectionGlyph, unitGlyph } from "@/lib/glyphs";
+import { collectionArtPool, generatedArtPool, redbookSlug, redbookSrc } from "@/lib/collectionImages";
+import { LayoutGroup, motion } from "motion/react";
+import { sumiGlyph, verseSumiGlyph } from "@/lib/sumiGlyphs";
 import { buildLibraryTomes, groupTomesByTradition, sortTomes, LIBRARY_SORT_OPTIONS, type LibrarySort, type LibraryTome } from "@/lib/libraryTomes";
 import { ArtBackdrop } from "@/components/ArtImage";
-import { Glyph } from "@/components/Glyph";
+import { InkGlyph } from "@/components/InkGlyph";
 import { Disclosure } from "@/components/ui/Disclosure";
 import {
   displayPassageLocation,
@@ -35,11 +36,25 @@ function reflectionPrompt(item: VerseItem): string {
   return "What one shift in seeing does this passage invite right now?";
 }
 
+// Shared-element flight timing — the tome's Red Book mandala morphs from the
+// shelf emblem into the reading header backdrop and back.
+const TOME_FLIGHT = { type: "spring", stiffness: 260, damping: 32, mass: 0.9 } as const;
+
 function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
+  const rb = redbookSlug(tome.collection);
   return (
     <button type="button" onClick={onOpen} className="tome">
       <span className="tome__glyph" aria-hidden>
-        <Glyph name={tome.glyph} size="xl" zoom />
+        {rb ? (
+          <motion.span
+            layoutId={`tome-art-${rb}`}
+            transition={TOME_FLIGHT}
+            className="tome__mandala"
+            style={{ backgroundImage: `url(${redbookSrc(rb)})` }}
+          />
+        ) : (
+          <InkGlyph glyph={tome.glyph} state="arising" size="xl" mask />
+        )}
       </span>
       <span className="tome__body">
         <span className="tome__title">{tome.displayName}</span>
@@ -212,12 +227,23 @@ function LibraryPageContent() {
     collection !== "all" ? collectionArtPool(collection) : generatedArtPool("bg-library");
   const openTomeMeta =
     collection !== "all" ? tomes.find((t) => collectionsMatch(t.collection, collection)) : null;
+  const openTomeRb = collection !== "all" ? redbookSlug(collection) : null;
 
   return (
+    <LayoutGroup>
     <main className="page-shell page-shell--library">
       <header className="library-header">
         <div className="library-header__atmosphere" aria-hidden>
-          <ArtBackdrop srcs={headerArtPool} variant="subtle" opacity={0.12} priority={collection !== "all"} />
+          {collection !== "all" && openTomeRb ? (
+            <motion.div
+              layoutId={`tome-art-${openTomeRb}`}
+              transition={TOME_FLIGHT}
+              className="library-header__flown"
+              style={{ backgroundImage: `url(${redbookSrc(openTomeRb)})` }}
+            />
+          ) : (
+            <ArtBackdrop srcs={headerArtPool} variant="subtle" opacity={0.12} priority={collection !== "all"} />
+          )}
         </div>
         <div className="library-header__body">
           {collection !== "all" ? (
@@ -234,7 +260,12 @@ function LibraryPageContent() {
           <div className="mt-2 flex items-start gap-3">
             {collection !== "all" ? (
               <span className="library-row__glyph mt-1 hidden sm:inline-flex" aria-hidden>
-                <Glyph name={openTomeMeta?.glyph || collectionGlyph(collection)} size="md" zoom />
+                <InkGlyph
+                  glyph={openTomeMeta?.glyph || sumiGlyph(collection, openTomeMeta?.tradition)}
+                  state="arising"
+                  size="md"
+                  mask
+                />
               </span>
             ) : null}
             <div className="min-w-0">
@@ -407,7 +438,19 @@ function LibraryPageContent() {
             >
               <div className="library-passage__top">
                 <span className="library-row__glyph hidden sm:inline-flex" aria-hidden>
-                  <Glyph name={unitGlyph(x._id)} size="sm" zoom />
+                  <InkGlyph
+                    glyph={verseSumiGlyph({
+                      collection: x.collection,
+                      tradition: tomes.find((t) => collectionsMatch(t.collection, x.collection || ""))?.tradition,
+                      title: x.title,
+                      thesis: x.thesis,
+                      translation: x.translation,
+                      themes: x.themes,
+                    })}
+                    state="arising"
+                    size="sm"
+                    mask
+                  />
                 </span>
                 <div className="min-w-0 flex-1">
                   <h2 className="library-passage__title">{displayPassageTitle(x)}</h2>
@@ -447,6 +490,7 @@ function LibraryPageContent() {
       )}
       </div>
     </main>
+    </LayoutGroup>
   );
 }
 

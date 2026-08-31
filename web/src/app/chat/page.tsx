@@ -4,7 +4,9 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { askChatStream, ChatApiError, getCollections, getDaily, getVerse, getVerses } from "@/lib/api";
 import { useAuth } from "@/components/AuthProvider";
+import { useAuthToken } from "@convex-dev/auth/react";
 import { usePushJournalNote } from "@/lib/journalCloud";
+import { recordPractice } from "@/lib/glyphUnlock";
 import { saveChatResponse } from "@/lib/journalStorage";
 import type { ChatMode, PratibhaLayerKind, Source, VerseItem } from "@/lib/types";
 import { FilterSelect } from "@/components/FilterSelect";
@@ -60,6 +62,7 @@ const DAILY_CAP_MESSAGE =
 
 export default function ChatPage() {
   const { user } = useAuth();
+  const accessToken = useAuthToken();
   const pushNote = usePushJournalNote();
   const [q, setQ] = useState("");
   const [useRag, setUseRag] = useState(true);
@@ -338,6 +341,8 @@ export default function ChatPage() {
           },
         },
       );
+      recordPractice(pinnedVerse?._id ? `chat:${pinnedVerse._id}` : "chat:ask");
+      if (compareMode) recordPractice("chat:compare");
       if (typeof data.remaining === "number") setChatRemaining(data.remaining);
       // Ensure final state matches (covers the no-delta error path).
       setMessages((prev) => {

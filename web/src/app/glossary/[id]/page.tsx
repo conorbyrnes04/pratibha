@@ -14,6 +14,7 @@ import {
 } from "@/lib/lexiconDisplay";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { cn } from "@/lib/utils";
+import { recordPractice } from "@/lib/glyphUnlock";
 import { buttonVariants } from "@/components/ui/button";
 
 export default function GlossaryLemmaPage() {
@@ -42,6 +43,7 @@ export default function GlossaryLemmaPage() {
         }
         setLemma(doc);
         setPassages(refs);
+        recordPractice(`glossary:${doc.id}`);
       })
       .catch(() => {
         if (!active) return;

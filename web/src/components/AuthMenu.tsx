@@ -4,7 +4,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { useAuth } from "@/components/AuthProvider";
+import { GlyphMala } from "@/components/GlyphMala";
+import { InkGlyph } from "@/components/InkGlyph";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { useAvatarMark } from "@/lib/useAvatarMark";
+import { SHARE_INKS } from "@/lib/shareCard";
 import { cn } from "@/lib/utils";
 
 function initialsFromUser(email: string | undefined, name: string | undefined): string {
@@ -21,6 +25,7 @@ function initialsFromUser(email: string | undefined, name: string | undefined): 
 export function AuthMenu() {
   const router = useRouter();
   const { configured, loading, user, signOut } = useAuth();
+  const { mark } = useAvatarMark();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
 
@@ -67,7 +72,6 @@ export function AuthMenu() {
 
   const email = user.email || "";
   const name = user.name || undefined;
-  const avatarUrl = null;
   const initials = initialsFromUser(email, name);
 
   async function onSignOut() {
@@ -103,7 +107,26 @@ export function AuthMenu() {
           <div className="border-b border-white/10 px-3 py-2.5">
             <p className="truncate font-sans text-sm text-amber-50">{name || email.split("@")[0] || "Account"}</p>
             {email ? <p className="mt-0.5 truncate font-sans text-xs text-stone-400">{email}</p> : null}
+            <div className="mt-2.5">
+              <GlyphMala compact />
+            </div>
           </div>
+          <Link
+            href="/journal"
+            role="menuitem"
+            onClick={() => setOpen(false)}
+            className="block px-3 py-2.5 font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
+          >
+            Journal
+          </Link>
+          <Link
+            href="/account#mark"
+            role="menuitem"
+            onClick={() => setOpen(false)}
+            className="block px-3 py-2.5 font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
+          >
+            Choose a mark
+          </Link>
           <Link
             href="/account"
             role="menuitem"

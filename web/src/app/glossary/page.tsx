@@ -11,6 +11,7 @@ import {
   traditionLabel,
 } from "@/lib/lexiconDisplay";
 import { buttonVariants } from "@/components/ui/button";
+import { recordPractice } from "@/lib/glyphUnlock";
 import { Input } from "@/components/ui/input";
 
 function fold(s: string): string {
@@ -107,7 +108,11 @@ export default function GlossaryPage() {
           <span className="sr-only">Search glossary</span>
           <Input
             value={q}
-            onChange={(e) => setQ(e.target.value)}
+            onChange={(e) => {
+              const next = e.target.value;
+              setQ(next);
+              if (next.trim()) recordPractice("glossary:search");
+            }}
             className="w-full"
             placeholder="Search lemmas, scripts, aliases…"
             autoComplete="off"

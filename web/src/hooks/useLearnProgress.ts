@@ -5,6 +5,7 @@ import type { LearningTrack } from "@/lib/learningPaths";
 import type { LearningThread } from "@/lib/learningThreads";
 import { useAuth } from "@/components/AuthProvider";
 import { useSyncLearnProgress } from "@/lib/learnCloud";
+import { recordPractice } from "@/lib/glyphUnlock";
 import {
   clearTrackProgress,
   clearThreadProgress,
@@ -58,8 +59,9 @@ export function useLearnProgress() {
   }, [progress, completedAt, hydrated, user?.id, sync]);
 
   function flipKey(key: string) {
+    const nextDone = !progress[key];
+    if (nextDone) recordPractice(`learn:${key}`);
     setProgress((p) => {
-      const nextDone = !p[key];
       setCompletedAt((c) => {
         const next = { ...c };
         if (nextDone) next[key] = new Date().toISOString();

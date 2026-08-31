@@ -38,3 +38,31 @@ export const setDisplayName = mutation({
     });
   },
 });
+
+export const setMark = mutation({
+  args: { mark: v.optional(v.string()) },
+  handler: async (ctx, args) => {
+    const userId = await getAuthUserId(ctx);
+    if (!userId) throw new Error("Sign in to choose a mark.");
+    const mark = args.mark?.trim() || undefined;
+    if (mark && !/^[a-z0-9_]{2,32}$/.test(mark)) {
+      throw new Error("Unknown mark.");
+    }
+    const now = Date.now();
+    const existing = await ctx.db
+      .query("profiles")
+      .withIndex("by_user", (q) => q.eq("userId", userId))
+      .unique();
+    if (existing) {
+      await ctx.db.patch(existing._id, { mark: mark ?? "", updatedAt: now });
+      return existing._id;
+    }
+    return await ctx.db.insert("profiles", {
+      userId,
+      displayName: "Student",
+      mark: mark ?? "",
+      createdAt: now,
+      updatedAt: now,
+    });
+  },
+});

@@ -1,4 +1,4 @@
-import { collectionGlyph, type GlyphSlug } from "./glyphs";
+import { sumiGlyph, type SumiSlug } from "./sumiGlyphs";
 import { displayCollectionName } from "./collectionLabels";
 import { countForCollection, preferStudyUnits } from "./corpusFilters";
 import type { VerseItem } from "./types";
@@ -18,7 +18,7 @@ export type LibraryTome = {
   /** Approximate midpoint year (negative = BCE). */
   eraYear: number;
   count: number;
-  glyph: GlyphSlug;
+  glyph: SumiSlug;
   themes: string[];
 };
 
@@ -168,7 +168,7 @@ export function buildLibraryTomes(items: VerseItem[]): LibraryTome[] {
       authored: meta.authored,
       eraYear: meta.eraYear,
       count: countForCollection(items, collection),
-      glyph: collectionGlyph(collection),
+      glyph: sumiGlyph(collection, meta.tradition),
       themes,
     });
   }

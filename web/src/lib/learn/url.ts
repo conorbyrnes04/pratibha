@@ -1,4 +1,5 @@
 export type LearnSearch = {
+  pathId: string | null;
   trackId: string | null;
   stepId: string | null;
   threadId: string | null;
@@ -6,17 +7,19 @@ export type LearnSearch = {
 };
 
 export type LearnHrefOpts = {
+  pathId?: string | null;
   trackId?: string | null;
   stepId?: string | null;
   threadId?: string | null;
   beadId?: string | null;
 };
 
-export type LearnView = "home" | "journey" | "bead" | "lineage";
+export type LearnView = "home" | "gate" | "journey" | "bead" | "lineage";
 
 export function learnViewFromSearch(search: LearnSearch): LearnView {
   if (search.threadId && search.beadId) return "bead";
   if (search.threadId) return "journey";
+  if (search.trackId && search.stepId) return "gate";
   if (search.trackId) return "lineage";
   return "home";
 }
@@ -29,6 +32,7 @@ export function learnHref(trackIdOrOpts: string | LearnHrefOpts, stepId?: string
       : trackIdOrOpts;
 
   const params = new URLSearchParams();
+  if (opts.pathId) params.set("path", opts.pathId);
   if (opts.trackId) params.set("track", opts.trackId);
   if (opts.stepId && opts.stepId !== "__none__") params.set("step", opts.stepId);
   if (opts.threadId) params.set("thread", opts.threadId);
@@ -40,6 +44,7 @@ export function learnHref(trackIdOrOpts: string | LearnHrefOpts, stepId?: string
 export function parseLearnSearch(search: string): LearnSearch {
   const sp = new URLSearchParams(search);
   return {
+    pathId: sp.get("path"),
     trackId: sp.get("track"),
     stepId: sp.get("step"),
     threadId: sp.get("thread"),

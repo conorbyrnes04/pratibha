@@ -6,6 +6,7 @@ import { AuthMenu } from "@/components/AuthMenu";
 import { AuthProvider } from "@/components/AuthProvider";
 import { BrandMark } from "@/components/BrandMark";
 import { SiteNav } from "@/components/SiteNav";
+import { GlyphUnlockHost } from "@/components/GlyphUnlockHost";
 import { Toaster } from "@/components/ui/sonner";
 import { ConvexClientProvider } from "@/lib/convexClient";
 import { ConvexAuthNextjsServerProvider } from "@convex-dev/auth/nextjs/server";
@@ -81,6 +82,7 @@ export default function RootLayout({
               </nav>
             </header>
             <AuthGate>{children}</AuthGate>
+            <GlyphUnlockHost />
             <Toaster />
           </AuthProvider>
         </ConvexClientProvider>
