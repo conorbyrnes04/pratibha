@@ -306,7 +306,13 @@ async def main(dir_path: str):
     async def _connect():
         # command_timeout so a half-open pooler socket raises instead of hanging
         # forever; is_closed() alone can't detect a dead-but-not-closed connection.
-        return await asyncpg.connect(command_timeout=45, **settings.asyncpg_kwargs())
+        # timeout= bounds the CONNECT handshake too — without it, a saturated/stale
+        # Supabase pooler makes asyncpg.connect() hang indefinitely (the ~unit-351
+        # freeze on large collections).
+        return await asyncio.wait_for(
+            asyncpg.connect(command_timeout=45, timeout=20, **settings.asyncpg_kwargs()),
+            timeout=25,
+        )
 
     async def _live(conn):
         if conn is None or conn.is_closed():
@@ -339,7 +345,15 @@ async def main(dir_path: str):
     conn = await _connect()
 
     total = 0
-    for fp in files:
+    for _fi, fp in enumerate(files):
+        # Proactively recycle the pooler connection so it never lingers long enough
+        # to go stale/half-open mid-run on large collections.
+        if _fi and _fi % 120 == 0:
+            try:
+                await conn.close()
+            except Exception:
+                pass
+            conn = await _connect()
         path = Path(fp)
         try:
             y = yaml.safe_load(path.read_text(encoding="utf-8", errors="replace")) or {}

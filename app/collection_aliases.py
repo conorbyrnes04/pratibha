@@ -27,6 +27,19 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "the_zohar",
         "kabbalah_sefer_yetzirah_the_zohar",
     },
+    "hatha_yoga_pradipika": {
+        "hatha_yoga_pradipika",
+        "haṭha_yoga_pradīpikā",
+        "hathayogapradipika",
+        "hatha_yoga",
+        "pradipika",
+    },
+    "siva_samhita": {
+        "siva_samhita",
+        "śiva_saṃhitā",
+        "shiva_samhita",
+        "siva_samhita_vasu",
+    },
     "eastman_soul_of_the_indian": {
         "eastman_soul_of_the_indian",
         "the_soul_of_the_indian",
