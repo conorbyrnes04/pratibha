@@ -13,6 +13,8 @@ import { ShareComposer } from "../components/ShareComposer";
 import { IlluminatedHeader } from "../components/IlluminatedHeader";
 import { SumiGlyph } from "../components/SumiGlyph";
 import { sumiGlyph } from "../lib/sumi";
+import { CollectionGate, firstCatalogLine } from "../components/CollectionGate";
+import { catalogQuoteCandidates } from "../lib/heroQuotes";
 
 function stripBold(s: string): string {
   return s.replace(/\*\*/g, "").trim();
@@ -303,6 +305,7 @@ export function ReadPage({ openVerseId }: { openVerseId?: string | null }) {
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
   const [collection, setCollection] = useState("all");
+  const [gateCollapse, setGateCollapse] = useState(0);
 
   useEffect(() => {
     async function loadVerses() {
@@ -340,6 +343,36 @@ export function ReadPage({ openVerseId }: { openVerseId?: string | null }) {
       return hay.includes(needle);
     });
   }, [verses, collection, query]);
+
+  const fallbackQuotes = useMemo(() => {
+    if (collection === "all") return [];
+    return catalogQuoteCandidates(
+      filtered.map((v) => firstCatalogLine(getLayer(v, "translation") || getLayer(v, "original") || "")),
+    );
+  }, [collection, filtered]);
+
+  function scrollLibrary(offset: number, smooth = true) {
+    try {
+      lynx
+        .createSelectorQuery()
+        .select("#library-scroll")
+        .invoke({
+          method: "scrollTo",
+          params: { offset, smooth },
+          success() {},
+          fail() {},
+        })
+        .exec();
+    } catch {
+      /* SelectorQuery is unavailable in some hosts. */
+    }
+  }
+
+  function openCollection(name: string) {
+    setCollection(name);
+    setGateCollapse(0);
+    scrollLibrary(0, false);
+  }
 
   async function openVerse(v: Passage) {
     setDetailLoading(true);
@@ -379,10 +412,18 @@ export function ReadPage({ openVerseId }: { openVerseId?: string | null }) {
   }
 
   return (
-    <scroll-view style={{ flex: 1, backgroundColor: C.bg }}>
+    <scroll-view
+      id="library-scroll"
+      scroll-y
+      style={{ flex: 1, backgroundColor: C.bg }}
+      bindscroll={(e: { detail?: { scrollTop?: number } }) => {
+        const top = e.detail?.scrollTop ?? 0;
+        setGateCollapse(Math.min(1, top / 280));
+      }}
+    >
       <view style={{ padding: 22 }}>
         <text style={{ color: C.gold, fontSize: 26, fontWeight: "bold", fontFamily: SERIF, marginBottom: 8 }}>
-          Library
+          {collection === "all" ? "Library" : collection}
         </text>
         <text style={{ color: C.muted, fontSize: 14, marginBottom: 16 }}>
           {error || (detailLoading ? "Opening…" : `${filtered.length} passages`)}
@@ -406,11 +447,21 @@ export function ReadPage({ openVerseId }: { openVerseId?: string | null }) {
         />
 
         <view style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, marginBottom: 18 }}>
-          <Chip label="All" active={collection === "all"} onTap={() => setCollection("all")} />
+          <Chip label="All" active={collection === "all"} onTap={() => openCollection("all")} />
           {collections.map((name) => (
-            <Chip key={name} label={name} active={collection === name} onTap={() => setCollection(name)} />
+            <Chip key={name} label={name} active={collection === name} onTap={() => openCollection(name)} />
           ))}
         </view>
+
+        {collection !== "all" ? (
+          <CollectionGate
+            collection={collection}
+            collapse={gateCollapse}
+            fallbackQuotes={fallbackQuotes}
+            onExpand={() => scrollLibrary(0, true)}
+            onDescend={() => scrollLibrary(360, true)}
+          />
+        ) : null}
 
         <view style={{ gap: 12 }}>
           {filtered.map((verse) => {

@@ -26,6 +26,8 @@ import {
 } from "@/lib/passageTitles";
 import { layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 import { Input } from "@/components/ui/input";
+import { CollectionGate } from "@/components/CollectionGate";
+import { catalogQuoteCandidates } from "@/lib/heroQuotes";
 
 /** Library catalog lifecycle — never treat cold/fail as a true empty shelf. */
 type LibraryStatus = "loading" | "waking" | "ready" | "error";
@@ -221,6 +223,7 @@ function LibraryPageContent() {
     setCollection(value);
     setQ("");
     syncReadUrl({ collection: value });
+    if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   const headerArtPool =
@@ -228,15 +231,11 @@ function LibraryPageContent() {
   const openTomeMeta =
     collection !== "all" ? tomes.find((t) => collectionsMatch(t.collection, collection)) : null;
   const openTomeRb = collection !== "all" ? redbookSlug(collection) : null;
-  // A powerful line from the open text, revealed at the heart of the hero mandala on hover.
-  const heroQuote = useMemo(() => {
-    if (collection === "all") return "";
-    for (const x of filtered) {
-      const line = firstSentence(layerText(x, "translation") || "").trim();
-      if (line.length >= 24 && line.length <= 150) return line;
-    }
-    const first = filtered[0];
-    return first ? firstSentence(layerText(first, "translation") || "").slice(0, 150) : "";
+  const fallbackQuotes = useMemo(() => {
+    if (collection === "all") return [];
+    return catalogQuoteCandidates(
+      filtered.map((x) => firstSentence(layerText(x, "translation") || layerText(x, "original") || "")),
+    );
   }, [collection, filtered]);
 
   return (
@@ -245,9 +244,7 @@ function LibraryPageContent() {
       <header className="library-header">
         <div className="library-header__atmosphere" aria-hidden>
           {collection !== "all" && openTomeRb ? (
-            <motion.div
-              layoutId={`tome-${collection}`}
-              transition={TOME_FLIGHT}
+            <div
               className="library-header__flown"
               style={{ backgroundImage: `url(${redbookSrc(openTomeRb)})` }}
             />
@@ -267,21 +264,24 @@ function LibraryPageContent() {
           ) : (
             <p className="passage-reading__meta">Archive</p>
           )}
-          {collection !== "all" && openTomeRb ? (
-            <figure
-              className="collection-hero"
-              tabIndex={0}
-              aria-label={`${displayCollectionName(collection)} — hover to reveal a passage`}
-            >
-              <img className="collection-hero__mandala" src={redbookSrc(openTomeRb)} alt="" aria-hidden />
-              {heroQuote ? (
-                <figcaption className="collection-hero__quote">
-                  <span>“{heroQuote}”</span>
-                </figcaption>
-              ) : null}
-            </figure>
+          {collection !== "all" ? (
+            <CollectionGate
+              collection={collection}
+              title={displayCollectionName(collection)}
+              mandalaSrc={openTomeRb ? redbookSrc(openTomeRb) : null}
+              layoutId={openTomeRb ? `tome-${collection}` : undefined}
+              fallbackQuotes={fallbackQuotes}
+              glyph={
+                <InkGlyph
+                  glyph={openTomeMeta?.glyph || sumiGlyph(collection, openTomeMeta?.tradition)}
+                  state="arising"
+                  size="xl"
+                  mask
+                />
+              }
+            />
           ) : null}
-          <div className="mt-2 flex items-start gap-3">
+          <div id="collection-text" className="mt-2 flex items-start gap-3">
             {collection !== "all" ? (
               <span className="library-row__glyph mt-1 hidden sm:inline-flex" aria-hidden>
                 <InkGlyph

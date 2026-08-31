@@ -1316,7 +1316,7 @@ select:focus-visible {
 .library-header {
   position: relative;
   padding: 0.25rem 0 1.75rem;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .library-header__atmosphere {
@@ -1354,6 +1354,10 @@ select:focus-visible {
   font-size: 1.08rem;
   line-height: 1.55;
   color: var(--muted);
+}
+
+#collection-text {
+  scroll-margin-top: 6.25rem;
 }
 
 /* Library controls — hairline fields that sit in the page, not nested cards */
@@ -1806,61 +1810,159 @@ button.library-passage {
     0 0 40px rgba(240, 201, 121, 0.32);
 }
 
-/* Hero mandala for an open text: the whole Red Book image, turning slowly.
-   Hover (or focus) pauses it and reveals a powerful passage at its centre. */
-.collection-hero {
+/* Collection gate: the mandala opens large with a hero line, then shrinks as
+   you scroll into the text. Three gold arrows invite the descent. */
+.collection-gate {
+  min-height: calc(100dvh - 5.75rem - 4.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 1.25rem;
+}
+@media (min-width: 40rem) {
+  .collection-gate {
+    min-height: calc(100dvh - 5.75rem);
+    padding-bottom: 0;
+  }
+}
+.collection-gate__stage {
+  position: sticky;
+  top: 5.5rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0.35rem 0 0.5rem;
+}
+.collection-gate__face {
   position: relative;
-  width: clamp(240px, 44vw, 400px);
+  display: block;
+  width: min(70vw, 58dvh, 30rem);
   aspect-ratio: 1;
-  margin: 1rem auto 1.5rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
   border-radius: 50%;
   overflow: hidden;
-  outline: none;
+  background: transparent;
   cursor: pointer;
+  outline: none;
   box-shadow:
     0 0 0 1px var(--seal, #d8a84a),
-    0 0 0 8px rgba(240, 201, 121, 0.06),
-    0 0 64px rgba(240, 201, 121, 0.22),
-    0 22px 64px rgba(0, 0, 0, 0.6);
+    0 0 0 10px rgba(240, 201, 121, 0.07),
+    0 0 72px rgba(240, 201, 121, 0.28),
+    0 28px 72px rgba(0, 0, 0, 0.62);
 }
-.collection-hero__mandala {
+.collection-gate__face:focus-visible {
+  box-shadow:
+    0 0 0 2px var(--seal, #f0c979),
+    0 0 0 10px rgba(240, 201, 121, 0.16),
+    0 0 72px rgba(240, 201, 121, 0.28);
+}
+.collection-gate__mandala {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  animation: rb-spin 60s linear infinite;
-  transition: filter 0.5s ease;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  animation: rb-spin 80s linear infinite;
+  filter: brightness(0.52) saturate(0.88);
 }
-.collection-hero:hover .collection-hero__mandala,
-.collection-hero:focus-within .collection-hero__mandala {
-  animation-play-state: paused;
-  filter: brightness(0.5) saturate(0.85);
+.collection-gate__glyph {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(240, 201, 121, 0.16), transparent 62%),
+    #0c0c14;
 }
-.collection-hero__quote {
+.collection-gate__glyph .ink-glyph {
+  width: 58%;
+  height: 58%;
+}
+.collection-gate__quote {
   position: absolute;
   inset: 0;
   margin: 0;
   display: grid;
   place-items: center;
-  padding: 12% 13%;
+  padding: 16% 15%;
   text-align: center;
-  background: radial-gradient(circle, rgba(10, 10, 15, 0.72) 40%, rgba(10, 10, 15, 0.35) 72%, transparent);
-  opacity: 0;
-  transform: scale(0.96);
-  transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  background: radial-gradient(circle, rgba(8, 8, 14, 0.72) 38%, rgba(8, 8, 14, 0.28) 70%, transparent);
   pointer-events: none;
 }
-.collection-hero:hover .collection-hero__quote,
-.collection-hero:focus-within .collection-hero__quote {
-  opacity: 1;
-  transform: scale(1);
-}
-.collection-hero__quote span {
+.collection-gate__quote span {
+  display: block;
   color: var(--seal, #f0c979);
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: clamp(0.98rem, 2.1vw, 1.4rem);
-  line-height: 1.5;
+  font-size: clamp(1.05rem, 2.4vw, 1.55rem);
+  line-height: 1.45;
   text-wrap: balance;
-  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.85);
+  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.9);
+}
+.collection-gate__orb {
+  position: relative;
+}
+.hero-descent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 7%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.14rem;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0.55rem 0.85rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--seal, #f0c979);
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.75));
+}
+.hero-descent__arrow {
+  display: block;
+  width: 0.72rem;
+  height: 0.72rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  opacity: 0.35;
+  animation: hero-descent-pulse 1.8s ease-in-out infinite;
+}
+.hero-descent__arrow:nth-child(2) {
+  animation-delay: 0.18s;
+  opacity: 0.55;
+}
+.hero-descent__arrow:nth-child(3) {
+  animation-delay: 0.36s;
+  opacity: 0.9;
+}
+@keyframes hero-descent-pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+    translate: 0 0;
+  }
+  50% {
+    opacity: 1;
+    translate: 0 5px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .collection-gate__mandala {
+    animation: none;
+  }
+  .hero-descent__arrow {
+    animation: none;
+    opacity: 0.75;
+  }
 }
 
 /* The same mandala, flown to fill the reading header as soft atmosphere. */
@@ -2518,23 +2620,19 @@ button.library-passage {
   height: 1.85rem;
 }
 
-.sumi-play .spanda-medallion {
+.sumi-play .ink-glyph {
   width: 100%;
   height: 100%;
-}
-
-.sumi-play--idle .spanda-medallion__glyph,
-.sumi-play--paused .spanda-medallion__glyph {
-  transform: translateX(8%);
 }
 
 .sumi-play--loading .spanda-medallion {
   animation: sumi-play-breathe 1.4s ease-in-out infinite;
 }
 
-.passage-listen__btn:hover .sumi-play .spanda-medallion__ring,
-.passage-listen__btn:focus-visible .sumi-play .spanda-medallion__ring {
-  stroke: var(--seal);
+.passage-listen__btn:hover .sumi-play .ink-glyph,
+.passage-listen__btn:focus-visible .sumi-play .ink-glyph {
+  color: var(--seal);
+  background-color: var(--seal);
 }
 
 .passage-listen__caption {
