@@ -444,6 +444,18 @@ SOURCES: list[dict[str, Any]] = [
         "links": [{"label": "Internet Archive — Ellis 1894", "url": "https://archive.org/details/yorubaspeakingp00elligoog"}],
     },
     {
+        "id": "johnson_yoruba_religion",
+        "collection": "The Yoruba Faith (Samuel Johnson)",
+        "tradition": "Yoruba (West Africa)",
+        "original_work": "Rev. Samuel Johnson, *The History of the Yorubas* (completed c. 1897; published 1921)",
+        "anchor_translation": "The author's own English (public domain); Johnson was a Yoruba clergyman",
+        "editorial_note": "An INSIDER Yoruba account of traditional religion and worldview (Olorun, the Orisas, Ori/destiny, reincarnation) — a complement to A.B. Ellis's outsider record. Transcribed from the 1921 scan with light OCR correction; ceremonial/secret material deliberately excluded. Study reading pending review by tradition-bearers.",
+        "license": "public_domain",
+        "provenance_tier": "original",
+        "status": "in_corpus",
+        "links": [{"label": "Internet Archive — Johnson 1921", "url": "https://archive.org/details/historyofyorubas00john"}],
+    },
+    {
         "id": "ecclesiastes_qoheleth",
         "collection": "Ecclesiastes (Qoheleth)",
         "tradition": "Hebrew Wisdom",

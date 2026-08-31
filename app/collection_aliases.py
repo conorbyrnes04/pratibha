@@ -18,6 +18,7 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "vajracchedika_prajnaparamita",
         "diamond_sutra",
     },
+    "johnson_yoruba_religion": {"johnson_yoruba_religion", "the_yoruba_faith_samuel_johnson"},
     "eastman_soul_of_the_indian": {
         "eastman_soul_of_the_indian",
         "the_soul_of_the_indian",

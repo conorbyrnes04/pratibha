@@ -18,7 +18,7 @@ from app.data_loader import normalize_unit, _as_text  # noqa
 
 CANON = os.path.join(ROOT, "data/canonical")
 STAGE = os.path.join(ROOT, "data/staging/enrich")
-TARGETS = ["eastman_soul_of_the_indian", "zitkala_sa_old_indian_legends", "yoruba_proverbs"]
+TARGETS = ["eastman_soul_of_the_indian", "zitkala_sa_old_indian_legends", "yoruba_proverbs", "johnson_yoruba_religion"]
 
 SYSTEM = """You write short study apparatus for a passage from a LIVING wisdom tradition (Native American or Yoruba). Posture: humble and interpretive. This is offered to students as a study reading, NOT an authoritative account of the tradition. Respect that living communities hold this knowledge.
 
