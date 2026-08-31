@@ -25,7 +25,7 @@ function initialsFromUser(email: string | undefined, name: string | undefined): 
 export function AuthMenu() {
   const router = useRouter();
   const { configured, loading, user, signOut } = useAuth();
-  const { mark } = useAvatarMark();
+  const { mark, ink } = useAvatarMark();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
 
@@ -91,9 +91,10 @@ export function AuthMenu() {
         aria-label="Account menu"
         className="h-9 w-9 shrink-0 overflow-hidden rounded-full border border-amber-200/35 bg-gradient-to-br from-amber-200/25 to-stone-900/80 p-0 text-xs font-semibold tracking-wide text-amber-50 shadow-[0_0_0_1px_rgb(0_0_0_/_0.35)] hover:border-amber-200/60 hover:from-amber-200/35"
       >
-        {avatarUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={avatarUrl} alt="" className="h-full w-full object-cover" referrerPolicy="no-referrer" />
+        {mark ? (
+          <span className="auth-mark">
+            <InkGlyph glyph={mark} ink={SHARE_INKS[ink].hex} size="sm" mask cover label={`${mark} mark`} />
+          </span>
         ) : (
           <span className="font-sans">{initials}</span>
         )}
@@ -111,6 +112,14 @@ export function AuthMenu() {
               <GlyphMala compact />
             </div>
           </div>
+          <Link
+            href="/manuscript"
+            role="menuitem"
+            onClick={() => setOpen(false)}
+            className="block px-3 py-2.5 font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
+          >
+            My Manuscript
+          </Link>
           <Link
             href="/journal"
             role="menuitem"

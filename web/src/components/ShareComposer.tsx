@@ -30,6 +30,9 @@ import {
   tweetIntentUrl,
   whatsappIntentUrl,
   verseShareMark,
+  isShareForceMark,
+  isShareInk,
+  isShareTextMode,
   type ShareForceMark,
   type ShareInk,
   type ShareSocialId,
@@ -39,14 +42,6 @@ import {
 import { SHARE_DEST_ICONS } from "@/components/ShareDestIcons";
 import { ShareCard } from "@/components/ShareCard";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
 import { enableHoloMotion } from "@/lib/useHoloTilt";
 import {
@@ -69,7 +64,15 @@ function verseCopy(item: VerseItem) {
   };
 }
 
-export function ShareComposer({ item }: { item: VerseItem }) {
+export function ShareComposer({
+  item,
+  designOpen,
+  onDesignOpenChange,
+}: {
+  item: VerseItem;
+  designOpen?: boolean;
+  onDesignOpenChange?: (open: boolean) => void;
+}) {
   const copy = useMemo(() => verseCopy(item), [item]);
   const verseMark = useMemo(() => verseShareMark(item), [item]);
   const [mark, setMark] = useState<ShareForceMark>(verseMark);
@@ -77,7 +80,12 @@ export function ShareComposer({ item }: { item: VerseItem }) {
   const [textMode, setTextMode] = useState<ShareTextMode>(copy.original ? "both" : "translation");
   const [line, setLine] = useState<number | undefined>(undefined);
   const [aspectRatio, setAspectRatio] = useState<ShareAspectRatio>("post");
-  const [cardOpen, setCardOpen] = useState(false);
+  const [internalOpen, setInternalOpen] = useState(false);
+  const sheetOpen = designOpen ?? internalOpen;
+  function setSheetOpen(open: boolean) {
+    onDesignOpenChange?.(open);
+    if (designOpen === undefined) setInternalOpen(open);
+  }
   const [folioNote, setFolioNote] = useState("");
   const [holographic, setHolographic] = useState(false);
   const addVerse = useMutation(api.manuscripts.addVerse);
@@ -86,6 +94,11 @@ export function ShareComposer({ item }: { item: VerseItem }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const { user } = useAuth();
   const manuscript = useQuery(api.manuscripts.getMine, CONVEX_ENABLED && user ? {} : "skip");
+  const commentary = useQuery(
+    api.studentCommentaries.getMine,
+    CONVEX_ENABLED && user ? { verseId: item._id } : "skip",
+  );
+  const earnedHolo = Boolean(commentary?.body?.trim());
   const extraVerseIds = manuscript?.entries.map((entry) => entry.verseId) ?? [];
 
   const candidates = useMemo(
@@ -137,6 +150,30 @@ export function ShareComposer({ item }: { item: VerseItem }) {
     // Current verse + manuscript entries are the only study inputs.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [item._id, verseMark, extraVerseIds.join("|")]);
+
+  useEffect(() => {
+    if (!sheetOpen) return;
+    const entry = manuscript?.entries.find((row) => row.verseId === item._id);
+    if (entry?.mark && isShareForceMark(entry.mark)) setMark(entry.mark);
+    if (entry?.ink && isShareInk(entry.ink)) setInk(entry.ink);
+    if (entry?.textMode && isShareTextMode(entry.textMode)) setTextMode(entry.textMode);
+    if (typeof entry?.line === "number") setLine(entry.line);
+    if (entry?.aspectRatio === "story" || entry?.aspectRatio === "post") {
+      setAspectRatio(entry.aspectRatio);
+    }
+    setFolioNote(entry?.note || "");
+    const shine = Boolean(entry?.holographic) || earnedHolo;
+    setHolographic(shine);
+    if (shine) enableHoloMotion();
+    // Hydrate once when the builder opens for this verse.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sheetOpen, item._id]);
+
+  useEffect(() => {
+    if (!earnedHolo) return;
+    setHolographic(true);
+    enableHoloMotion();
+  }, [earnedHolo]);
 
   async function pngBlob(): Promise<Blob> {
     const wrap = cardRef.current;
@@ -363,10 +400,42 @@ export function ShareComposer({ item }: { item: VerseItem }) {
     toast.success("Link copied.");
   }
 
+  async function keepCard() {
+    if (!user) {
+      window.location.href = `/login?next=/read/${encodeURIComponent(item._id)}`;
+      return;
+    }
+    setBusy("keep");
+    try {
+      await addVerse({
+        verseId: item._id,
+        verseTitle: copy.title,
+        note: folioNote || undefined,
+        mark,
+        ink,
+        textMode,
+        line,
+        aspectRatio,
+        holographic: holographic && earnedHolo,
+      });
+      recordPractice(`manuscript:${item._id}`);
+      if (folioNote.trim()) recordPractice(`manuscript:note:${item._id}`);
+      refreshUnlocks();
+      toast.success("Card kept in your manuscript.");
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "Could not add to your manuscript.");
+    } finally {
+      setBusy(null);
+    }
+  }
+
+  const inManuscript = Boolean(manuscript?.entries.some((entry) => entry.verseId === item._id));
+
   return (
-    <>
     <Sheet
+      open={sheetOpen}
       onOpenChange={(open) => {
+        setSheetOpen(open);
         if (open) noteStudy();
       }}
     >
@@ -376,33 +445,53 @@ export function ShareComposer({ item }: { item: VerseItem }) {
       </SheetTrigger>
       <SheetContent
         side="bottom"
-        className="max-h-[92vh] border-t border-amber-200/15 bg-[#0b0b14] sm:max-w-none"
+        className="flex h-[92vh] max-h-[92vh] flex-col overflow-hidden border-t border-amber-200/15 bg-[#0b0b14] sm:max-w-none"
       >
-        <SheetHeader>
-          <SheetTitle className="text-amber-100">Share</SheetTitle>
+        <SheetHeader className="shrink-0">
+          <SheetTitle className="text-amber-100">Build this card</SheetTitle>
           <SheetDescription className="soft">
-            Keep it in your manuscript, or send the folio out.
+            The folio stays in view as you choose a mark, ink, and line.
             {progress.remaining > 0 ? " Marks open as you study the house." : " Every mark is open."}
           </SheetDescription>
           <div className="mt-3">
             <GlyphMala unlocked={openMarks} />
           </div>
         </SheetHeader>
-        <div className="grid gap-8 overflow-y-auto px-4 pb-8 lg:grid-cols-[minmax(0,280px)_1fr] lg:items-start">
-          <div ref={cardRef} className="share-card-preview mx-auto">
-            <ShareCard mark={mark} ink={ink} textMode={displayMode} copy={displayCopy} fillWindow={Boolean(picked)} aspectRatio={aspectRatio} holographic={holographic} />
+        <div className="share-folio-studio">
+          <div ref={cardRef} className="share-folio-studio__preview">
+            <div className="share-card-preview">
+              <ShareCard
+                mark={mark}
+                ink={ink}
+                textMode={displayMode}
+                copy={displayCopy}
+                fillWindow={Boolean(picked)}
+                aspectRatio={aspectRatio}
+                holographic={holographic && earnedHolo}
+              />
+            </div>
           </div>
-          <div className="space-y-6">
+          <div className="share-folio-studio__controls space-y-6">
             <fieldset>
               <legend className="passage-layer__label mb-3">Send to</legend>
               <div className="flex flex-wrap gap-2">
                 {CONVEX_ENABLED ? (
-                  <ManuscriptDest verseId={item._id} busy={busy !== null} onCustomize={() => {
-                    const entry = manuscript?.entries.find((e) => e.verseId === item._id);
-                    setHolographic(Boolean(entry?.holographic));
-                    if (entry?.holographic) enableHoloMotion();
-                    setCardOpen(true);
-                  }} />
+                  user ? (
+                    <button
+                      type="button"
+                      className="share-dest share-dest--first"
+                      disabled={busy !== null}
+                      onClick={() => void keepCard()}
+                    >
+                      <BookMarked />
+                      {busy === "keep" ? "…" : inManuscript ? "Update manuscript" : "Keep in manuscript"}
+                    </button>
+                  ) : (
+                    <Link href={`/login?next=/read/${encodeURIComponent(item._id)}`} className="share-dest share-dest--first">
+                      <BookMarked />
+                      Manuscript
+                    </Link>
+                  )
                 ) : (
                   <Link href={`/login?next=/read/${encodeURIComponent(item._id)}`} className="share-dest share-dest--first">
                     <BookMarked />
@@ -426,6 +515,34 @@ export function ShareComposer({ item }: { item: VerseItem }) {
                   );
                 })}
               </div>
+            </fieldset>
+            <fieldset id="share-keep">
+              <legend className="passage-layer__label mb-3">This card</legend>
+              {earnedHolo ? (
+                <button
+                  type="button"
+                  className={`share-chip ${holographic ? "share-chip--on" : ""}`}
+                  onClick={() => {
+                    const next = !holographic;
+                    setHolographic(next);
+                    if (next) enableHoloMotion();
+                  }}
+                  aria-pressed={holographic}
+                >
+                  Holographic — from your reading
+                </button>
+              ) : (
+                <p className="soft mb-3 text-sm leading-relaxed">
+                  Write your own commentary on this verse to give the card a holographic shine.
+                </p>
+              )}
+              <Textarea
+                className="mt-3"
+                value={folioNote}
+                onChange={(e) => setFolioNote(e.target.value)}
+                placeholder="A one-line margin — optional"
+                rows={2}
+              />
             </fieldset>
             {SHARE_MARK_GROUPS.map((group) => {
               const opened = group.marks.filter((slug) => openMarks.has(slug)).length;
@@ -541,181 +658,5 @@ export function ShareComposer({ item }: { item: VerseItem }) {
         </div>
       </SheetContent>
     </Sheet>
-    <Dialog open={cardOpen} onOpenChange={setCardOpen}>
-      <DialogContent className="max-h-[90vh] overflow-y-auto border-amber-200/15 bg-[#0b0b14] text-amber-50 sm:max-w-2xl">
-        <DialogHeader>
-          <DialogTitle className="text-amber-100">This card in your manuscript</DialogTitle>
-          <DialogDescription className="soft">
-            Choose the mark, ink, and line. This is the folio that will sit in the book.
-          </DialogDescription>
-        </DialogHeader>
-        <div className="grid gap-6 sm:grid-cols-[minmax(0,220px)_1fr] sm:items-start">
-          <div className="share-card-preview mx-auto w-full">
-            <ShareCard
-              mark={mark}
-              ink={ink}
-              textMode={displayMode}
-              copy={displayCopy}
-              fillWindow={Boolean(picked)}
-              aspectRatio={aspectRatio}
-              holographic={holographic}
-            />
-          </div>
-          <div className="space-y-4">
-            <fieldset>
-              <legend className="passage-layer__label mb-2">Mark</legend>
-              <div className="flex flex-wrap gap-2">
-                {[...openMarks].slice(0, 18).map((slug) => (
-                  <button
-                    key={slug}
-                    type="button"
-                    className={`share-chip ${mark === slug ? "share-chip--on" : ""}`}
-                    onClick={() => setMark(slug)}
-                    aria-pressed={mark === slug}
-                  >
-                    <InkGlyph glyph={slug} ink={SHARE_INKS[ink].hex} className="share-chip__glyph" />
-                    <span>{slug}</span>
-                  </button>
-                ))}
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend className="passage-layer__label mb-2">Ink</legend>
-              <div className="flex flex-wrap gap-2">
-                {(Object.keys(SHARE_INKS) as ShareInk[]).map((key) => (
-                  <button
-                    key={key}
-                    type="button"
-                    className={`share-chip ${ink === key ? "share-chip--on" : ""}`}
-                    onClick={() => setInk(key)}
-                    aria-pressed={ink === key}
-                  >
-                    <span className="share-chip__swatch" style={{ background: SHARE_INKS[key].hex }} />
-                    {SHARE_INKS[key].label}
-                  </button>
-                ))}
-              </div>
-            </fieldset>
-            {availableModes.length > 1 ? (
-              <fieldset>
-                <legend className="passage-layer__label mb-2">Text</legend>
-                <div className="flex flex-wrap gap-2">
-                  {availableModes.map((mode) => (
-                    <button
-                      key={mode.id}
-                      type="button"
-                      className={`share-chip ${textMode === mode.id ? "share-chip--on" : ""}`}
-                      onClick={() => {
-                        setTextMode(mode.id);
-                        setLine(undefined);
-                      }}
-                      aria-pressed={textMode === mode.id}
-                    >
-                      {mode.label}
-                    </button>
-                  ))}
-                </div>
-              </fieldset>
-            ) : null}
-            {canShuffle ? (
-              <Button
-                type="button"
-                size="sm"
-                variant="secondary"
-                onClick={() => setLine(nextFolioLine(candidates.length, line))}
-              >
-                <Shuffle />
-                Shuffle line
-              </Button>
-            ) : null}
-            <button
-              type="button"
-              className={`share-chip ${holographic ? "share-chip--on" : ""}`}
-              onClick={() => {
-                const next = !holographic;
-                setHolographic(next);
-                if (next) enableHoloMotion();
-              }}
-              aria-pressed={holographic}
-            >
-              Favorite — holographic shine
-            </button>
-            <Textarea
-              value={folioNote}
-              onChange={(e) => setFolioNote(e.target.value)}
-              placeholder="A one-line margin — optional"
-              rows={2}
-            />
-          </div>
-        </div>
-        <DialogFooter className="border-amber-200/10 bg-transparent">
-          <Button
-            type="button"
-            onClick={() => {
-              void (async () => {
-                try {
-                  await addVerse({
-                    verseId: item._id,
-                    verseTitle: copy.title,
-                    note: folioNote || undefined,
-                    mark,
-                    ink,
-                    textMode,
-                    line,
-                    aspectRatio,
-                    holographic,
-                  });
-                  recordPractice(`manuscript:${item._id}`);
-                  if (folioNote.trim()) recordPractice(`manuscript:note:${item._id}`);
-                  refreshUnlocks();
-                  setCardOpen(false);
-                  toast.success("Card kept in your manuscript.");
-                } catch (err) {
-                  toast.error(err instanceof Error ? err.message : "Could not add to your manuscript.");
-                }
-              })();
-            }}
-          >
-            Keep this card
-          </Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
-    </>
-  );
-}
-
-function ManuscriptDest({
-  verseId,
-  busy,
-  onCustomize,
-}: {
-  verseId: string;
-  busy: boolean;
-  onCustomize: () => void;
-}) {
-  const { user } = useAuth();
-  const inManuscript = useQuery(api.manuscripts.hasVerse, user ? { verseId } : "skip");
-
-  if (!user) {
-    return (
-      <Link href={`/login?next=/read/${encodeURIComponent(verseId)}`} className="share-dest share-dest--first">
-        <BookMarked />
-        Manuscript
-      </Link>
-    );
-  }
-
-
-  return (
-    <button
-      type="button"
-      className="share-dest share-dest--first"
-      disabled={busy}
-      onClick={onCustomize}
-    >
-      <BookMarked />
-      {inManuscript ? "Edit card" : "Manuscript"}
-    </button>
   );
 }

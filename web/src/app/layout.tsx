@@ -5,7 +5,7 @@ import { AuthGate } from "@/components/AuthGate";
 import { AuthMenu } from "@/components/AuthMenu";
 import { AuthProvider } from "@/components/AuthProvider";
 import { BrandMark } from "@/components/BrandMark";
-import { SiteNav } from "@/components/SiteNav";
+import { SiteDock, SiteNav } from "@/components/SiteNav";
 import { GlyphUnlockHost } from "@/components/GlyphUnlockHost";
 import { Toaster } from "@/components/ui/sonner";
 import { ConvexClientProvider } from "@/lib/convexClient";
@@ -81,6 +81,7 @@ export default function RootLayout({
                 </div>
               </nav>
             </header>
+            <SiteDock />
             <AuthGate>{children}</AuthGate>
             <GlyphUnlockHost />
             <Toaster />

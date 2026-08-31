@@ -159,7 +159,7 @@ function ManuscriptEditor() {
         </h2>
         {!manuscript || manuscript.entries.length === 0 ? (
           <p className="soft mt-4 text-sm leading-relaxed">
-            Nothing here yet. Open a passage and choose Add to manuscript.
+            Nothing here yet. Open a passage and choose Save to my manuscript.
           </p>
         ) : (
           <div className="manuscript-grid">

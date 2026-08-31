@@ -11,6 +11,7 @@ const WALK: NavLink[] = [
   { href: "/", label: "Today", match: "/" },
   { href: "/learn?path=essential", label: "Path", match: "/learn" },
   { href: "/read", label: "Library" },
+  { href: "/manuscript", label: "My Manuscript" },
 ];
 
 /** Tools around the walk. */
@@ -19,7 +20,6 @@ const STUDY: NavLink[] = [
   { href: "/chat", label: "Chat" },
   { href: "/glossary/study", label: "Lexicon", match: "/glossary/study" },
   { href: "/glossary", label: "Glossary", match: "/glossary" },
-  { href: "/manuscript", label: "Manuscript" },
   { href: "/random", label: "Oracle" },
   { href: "/sources", label: "Sources" },
 ];
@@ -48,7 +48,7 @@ function WalkLinks({
             key={link.href}
             href={link.href}
             aria-current={active ? "page" : undefined}
-            className={`${className ?? "nav-link"} ${active ? "nav-link--current" : ""}`}
+            className={`nav-link ${className ?? ""} ${active ? "nav-link--current" : ""}`}
             onClick={onNavigate}
           >
             {link.label}
@@ -82,10 +82,13 @@ function StudyMenu({
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") onClose();
     }
-    document.addEventListener("mousedown", onPointerDown);
-    document.addEventListener("keydown", onKeyDown);
+    const timer = window.setTimeout(() => {
+      document.addEventListener("pointerdown", onPointerDown);
+      document.addEventListener("keydown", onKeyDown);
+    }, 0);
     return () => {
-      document.removeEventListener("mousedown", onPointerDown);
+      window.clearTimeout(timer);
+      document.removeEventListener("pointerdown", onPointerDown);
       document.removeEventListener("keydown", onKeyDown);
     };
   }, [open, onClose]);
@@ -94,7 +97,10 @@ function StudyMenu({
     <div className={`nav-more ${placement === "dock" ? "nav-more--dock" : ""}`} ref={rootRef}>
       <button
         type="button"
-        onClick={onToggle}
+        onClick={(event) => {
+          event.stopPropagation();
+          onToggle();
+        }}
         aria-expanded={open}
         aria-controls={`nav-study-${placement}`}
         className={`nav-link nav-more__trigger ${studyActive || open ? "nav-link--current" : ""}`}
@@ -127,35 +133,37 @@ function StudyMenu({
   );
 }
 
-export function SiteNav() {
-  const [studyOpen, setStudyOpen] = useState(false);
+function useStudyMenu() {
+  const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    setStudyOpen(false);
+    setOpen(false);
   }, [pathname]);
 
-  return (
-    <>
-      <div className="site-nav site-nav--bar">
-        <WalkLinks />
-        <StudyMenu
-          placement="bar"
-          open={studyOpen}
-          onToggle={() => setStudyOpen((value) => !value)}
-          onClose={() => setStudyOpen(false)}
-        />
-      </div>
+  return {
+    open,
+    onToggle: () => setOpen((value) => !value),
+    onClose: () => setOpen(false),
+  };
+}
 
-      <nav className="site-dock" aria-label="Primary">
-        <WalkLinks className="site-dock__link" />
-        <StudyMenu
-          placement="dock"
-          open={studyOpen}
-          onToggle={() => setStudyOpen((value) => !value)}
-          onClose={() => setStudyOpen(false)}
-        />
-      </nav>
-    </>
+export function SiteNav() {
+  const study = useStudyMenu();
+  return (
+    <div className="site-nav site-nav--bar">
+      <WalkLinks />
+      <StudyMenu placement="bar" {...study} />
+    </div>
+  );
+}
+
+export function SiteDock() {
+  const study = useStudyMenu();
+  return (
+    <nav className="site-dock" aria-label="Primary">
+      <WalkLinks className="site-dock__link" />
+      <StudyMenu placement="dock" {...study} />
+    </nav>
   );
 }

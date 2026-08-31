@@ -91,29 +91,62 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       void completeOAuth(code);
       return;
     }
-    const token = storage.get(TOKEN_KEY);
-    if (token) {
-      setAuthToken(token);
-      void loadUser();
-    } else {
-      setLoading(false);
-    }
+    void restoreSession();
   }, []);
 
-  async function loadUser() {
+  async function refreshSession(): Promise<boolean> {
+    const refreshToken = storage.get(REFRESH_TOKEN_KEY);
+    if (!refreshToken) return false;
+    try {
+      setAuthToken(null);
+      const result = (await convexFetch(
+        "auth:signIn",
+        { refreshToken },
+        "action",
+      )) as SignInResult;
+      if (!result.tokens?.token) return false;
+      persistTokens(result.tokens);
+      return true;
+    } catch (error) {
+      console.error("Failed to refresh session:", error);
+      return false;
+    }
+  }
+
+  async function restoreSession() {
+    const token = storage.get(TOKEN_KEY);
+    const refreshToken = storage.get(REFRESH_TOKEN_KEY);
+    if (!token && !refreshToken) {
+      setLoading(false);
+      return;
+    }
+    if (token) setAuthToken(token);
+    const restored = await loadUser(false);
+    if (restored) return;
+    if (await refreshSession()) {
+      await loadUser(true);
+      return;
+    }
+    clearTokens();
+    setLoading(false);
+  }
+
+  async function loadUser(clearOnFailure = true): Promise<boolean> {
     try {
       const currentUser = (await convexFetch("auth:currentUser", {}, "query")) as User | null;
       if (currentUser) {
         setUser(currentUser);
-      } else {
-        clearTokens();
+        setLoading(false);
+        return true;
       }
     } catch (error) {
       console.error("Failed to load user:", error);
+    }
+    if (clearOnFailure) {
       clearTokens();
-    } finally {
       setLoading(false);
     }
+    return false;
   }
 
   async function completeOAuth(code: string) {

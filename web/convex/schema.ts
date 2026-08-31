@@ -33,6 +33,7 @@ const schema = defineSchema({
     userId: v.string(),
     displayName: v.string(),
     mark: v.optional(v.string()),
+    ink: v.optional(v.string()),
     createdAt: v.number(),
     updatedAt: v.number(),
   }).index("by_user", ["userId"]),

@@ -133,6 +133,7 @@ export function PassageDetail({
   prevTitle?: string;
   nextTitle?: string;
 }) {
+  const [folioOpen, setFolioOpen] = useState(false);
   const original = getLayer(passage, "original");
   const iast = getLayer(passage, "iast");
   const translation = getLayer(passage, "translation");
@@ -231,8 +232,12 @@ export function PassageDetail({
           </view>
         ) : null}
 
-        <ShareComposer passage={passage} />
-        <StudentCommentary verseId={passage._id} verseTitle={passage.title || passage._id} />
+        <ShareComposer passage={passage} open={folioOpen} onOpenChange={setFolioOpen} />
+        <StudentCommentary
+          verseId={passage._id}
+          verseTitle={passage.title || passage._id}
+          onKeepFolio={() => setFolioOpen(true)}
+        />
         <CircleReadings verseId={passage._id} />
 
         {themes.length ? (

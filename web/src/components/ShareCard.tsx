@@ -68,7 +68,7 @@ export function ShareCard({
       <footer className="share-card__foot">
         <BrandMark size="sm" />
         <span>pratibha</span>
-        {holographic ? <span className="share-card__fav">favorite</span> : null}
+        {holographic ? <span className="share-card__fav">reading</span> : null}
       </footer>
     </article>
   );

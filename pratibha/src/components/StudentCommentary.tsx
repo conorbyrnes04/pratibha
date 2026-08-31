@@ -12,9 +12,11 @@ type Mine = {
 export function StudentCommentary({
   verseId,
   verseTitle,
+  onKeepFolio,
 }: {
   verseId: string;
   verseTitle: string;
+  onKeepFolio?: () => void;
 }) {
   const { user } = useAuth();
   const { httpClient } = useConvex();
@@ -85,20 +87,38 @@ export function StudentCommentary({
     }
   }
 
-  async function toggleManuscript() {
+  async function removeFromManuscript() {
     "background only";
     if (!httpClient) return;
     setBusy(true);
     setError("");
     try {
-      if (inManuscript) {
-        await httpClient.mutation("manuscripts:removeVerse", { verseId });
-        setInManuscript(false);
-      } else {
-        await httpClient.mutation("manuscripts:addVerse", { verseId, verseTitle });
-        setInManuscript(true);
-      }
+      await httpClient.mutation("manuscripts:removeVerse", { verseId });
+      setInManuscript(false);
     } catch (err: any) {
+      setError(err?.message || "Could not update the manuscript.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  function saveToManuscript() {
+    if (onKeepFolio) {
+      onKeepFolio();
+      return;
+    }
+    void addWithoutDesign();
+  }
+
+  async function addWithoutDesign() {
+    "background only";
+    if (!httpClient) return;
+    setBusy(true);
+    setError("");
+    try {
+      await httpClient.mutation("manuscripts:addVerse", { verseId, verseTitle });
+      setInManuscript(true);
+    } catch (err: { message?: string }) {
       setError(err?.message || "Could not update the manuscript.");
     } finally {
       setBusy(false);
@@ -169,11 +189,14 @@ export function StudentCommentary({
           dim={!body.trim() || busy}
         />
         {status === "offered" ? <Tap label="Withdraw" onTap={() => void withdraw()} dim={busy} /> : null}
-        <Tap
-          label={inManuscript ? "Remove from manuscript" : "Add to manuscript"}
-          onTap={() => void toggleManuscript()}
-          dim={busy}
-        />
+        {inManuscript ? (
+          <>
+            <Tap label="Edit card" onTap={saveToManuscript} dim={busy} />
+            <Tap label="Remove from manuscript" onTap={() => void removeFromManuscript()} dim={busy} />
+          </>
+        ) : (
+          <Tap label="Save to my manuscript" onTap={saveToManuscript} dim={busy} />
+        )}
       </view>
     </view>
   );

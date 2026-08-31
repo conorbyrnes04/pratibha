@@ -15,20 +15,24 @@ import { buttonVariants } from "@/components/ui/button";
 export function StudentCommentary({
   verseId,
   verseTitle,
+  onKeepFolio,
 }: {
   verseId: string;
   verseTitle: string;
+  onKeepFolio?: () => void;
 }) {
   if (!CONVEX_ENABLED) return null;
-  return <StudentCommentaryInner verseId={verseId} verseTitle={verseTitle} />;
+  return <StudentCommentaryInner verseId={verseId} verseTitle={verseTitle} onKeepFolio={onKeepFolio} />;
 }
 
 function StudentCommentaryInner({
   verseId,
   verseTitle,
+  onKeepFolio,
 }: {
   verseId: string;
   verseTitle: string;
+  onKeepFolio?: () => void;
 }) {
   const { user } = useAuth();
   const mine = useQuery(api.studentCommentaries.getMine, user ? { verseId } : "skip");
@@ -87,20 +91,29 @@ function StudentCommentaryInner({
     }
   }
 
-  async function toggleManuscript() {
+  async function removeFromManuscript() {
     setBusy("ms");
     setError("");
     try {
-      if (inManuscript) await removeVerse({ verseId });
-      else {
-        await addVerse({ verseId, verseTitle });
-        recordPractice(`manuscript:${verseId}`);
-      }
+      await removeVerse({ verseId });
     } catch (err) {
       setError(err instanceof Error ? err.message : "Could not update the manuscript.");
     } finally {
       setBusy(null);
     }
+  }
+
+  function saveToManuscript() {
+    if (onKeepFolio) {
+      onKeepFolio();
+      return;
+    }
+    setBusy("ms");
+    setError("");
+    void addVerse({ verseId, verseTitle })
+      .then(() => recordPractice(`manuscript:${verseId}`))
+      .catch((err) => setError(err instanceof Error ? err.message : "Could not update the manuscript."))
+      .finally(() => setBusy(null));
   }
 
   const offered = mine?.status === "offered";
@@ -162,13 +175,20 @@ function StudentCommentaryInner({
             Withdraw
           </Button>
         ) : null}
-        <Button type="button" size="sm" variant="ghost" disabled={busy !== null} onClick={() => void toggleManuscript()}>
-          {busy === "ms"
-            ? "…"
-            : inManuscript
-              ? "Remove from manuscript"
-              : "Add to manuscript"}
-        </Button>
+        {inManuscript ? (
+          <>
+            <Button type="button" size="sm" variant="secondary" disabled={busy !== null} onClick={saveToManuscript}>
+              Edit card
+            </Button>
+            <Button type="button" size="sm" variant="ghost" disabled={busy !== null} onClick={() => void removeFromManuscript()}>
+              {busy === "ms" ? "…" : "Remove from manuscript"}
+            </Button>
+          </>
+        ) : (
+          <Button type="button" size="sm" variant="secondary" disabled={busy !== null} onClick={saveToManuscript}>
+            {busy === "ms" ? "…" : "Save to my manuscript"}
+          </Button>
+        )}
       </div>
     </section>
   );

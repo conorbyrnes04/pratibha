@@ -82,6 +82,7 @@ export default function VerseDetailPage() {
   const [allItems, setAllItems] = useState<VerseItem[]>([]);
   const [semanticRelated, setSemanticRelated] = useState<VerseItem[] | null>(null);
   const [showOriginal, setShowOriginal] = useState(true);
+  const [folioDesignOpen, setFolioDesignOpen] = useState(false);
   const [commentaryOpen, setCommentaryOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [backHref, setBackHref] = useState<string | null>(null);
@@ -118,6 +119,7 @@ export default function VerseDetailPage() {
 
   useEffect(() => {
     setCommentaryOpen(false);
+    setFolioDesignOpen(false);
   }, [id]);
 
   const themeRelated = useMemo(() => {
@@ -306,7 +308,11 @@ export default function VerseDetailPage() {
         ) : null}
 
         <SanghaBoundary>
-          <StudentCommentary verseId={item._id} verseTitle={displayPassageTitle(item)} />
+          <StudentCommentary
+            verseId={item._id}
+            verseTitle={displayPassageTitle(item)}
+            onKeepFolio={() => setFolioDesignOpen(true)}
+          />
           <CircleReadings verseId={item._id} />
         </SanghaBoundary>
 
@@ -355,7 +361,11 @@ export default function VerseDetailPage() {
             >
               Practice chat
             </KitLink>
-            <ShareComposer item={item} />
+            <ShareComposer
+              item={item}
+              designOpen={folioDesignOpen}
+              onDesignOpenChange={setFolioDesignOpen}
+            />
             <Sheet>
               <SheetTrigger
                 render={<Button type="button" variant="ghost" size="sm" className="border border-white/10" />}

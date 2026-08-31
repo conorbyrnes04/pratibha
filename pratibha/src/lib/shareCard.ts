@@ -1,71 +1,124 @@
-export const SHARE_DEITY_MARKS = [
-  "zeus",
-  "hera",
-  "athena",
-  "apollo",
-  "artemis",
-  "hades",
-  "persephone",
-  "dionysus",
-  "eros",
-  "brahma",
-  "kali",
-  "durga",
-  "lakshmi",
-  "saraswati",
-  "ganesha",
-  "isis",
-  "osiris",
-  "horus",
-  "anubis",
-  "thoth",
-  "odin",
-  "thor",
-  "freyja",
-  "loki",
-  "oshun",
-  "shango",
-  "yemaya",
-  "quetzalcoatl",
-  "tezcatlipoca",
-  "nuwa",
-  "thanatos",
-  "thunderbird",
+import { verseSumiGlyph } from "./sumi";
+import type { Passage } from "./corpus";
+
+export const SHARE_MARK_GROUPS = [
+  {
+    id: "animals",
+    label: "Animals",
+    marks: [
+      "bear",
+      "bee",
+      "butterfly",
+      "crane",
+      "crow",
+      "deer",
+      "dolphin",
+      "dragon",
+      "eagle",
+      "elephant",
+      "fish",
+      "fox",
+      "hawk",
+      "horse",
+      "lion",
+      "owl",
+      "ox",
+      "raven",
+      "serpent",
+      "spider",
+      "stag",
+      "swan",
+      "tiger",
+      "turtle",
+      "whale",
+      "wolf",
+    ],
+  },
+  {
+    id: "plants",
+    label: "Plants",
+    marks: ["lotus", "mushroom", "oak", "rose", "tree", "vine"],
+  },
+  {
+    id: "objects",
+    label: "Objects",
+    marks: ["celtic_key", "celtic_star", "chalice", "cross", "eye", "heart", "labyrinth", "mandala", "mirror", "triangle", "yantra"],
+  },
+  {
+    id: "elements",
+    label: "Elements",
+    marks: ["air", "desert", "earth", "fire", "lightning", "mountain", "ocean", "rainbow", "storm", "tides", "volcano", "water"],
+  },
+  {
+    id: "cosmos",
+    label: "Cosmos",
+    marks: ["circle", "comet", "constellation", "infinity", "moon", "spiral", "star", "sun", "void", "yin_yang"],
+  },
+  {
+    id: "figures",
+    label: "Figures",
+    marks: ["fool", "hermit", "king", "maiden", "mother", "sage", "shaman", "warrior"],
+  },
+  {
+    id: "deities",
+    label: "Deities",
+    marks: [
+      "anubis",
+      "apollo",
+      "artemis",
+      "athena",
+      "brahma",
+      "dionysus",
+      "durga",
+      "eros",
+      "freyja",
+      "ganesha",
+      "hades",
+      "hera",
+      "horus",
+      "isis",
+      "kali",
+      "lakshmi",
+      "loki",
+      "nuwa",
+      "odin",
+      "oshun",
+      "osiris",
+      "persephone",
+      "quetzalcoatl",
+      "saraswati",
+      "shango",
+      "shiva",
+      "tezcatlipoca",
+      "thanatos",
+      "thor",
+      "thoth",
+      "thunderbird",
+      "vishnu",
+      "yemaya",
+      "zeus",
+    ],
+  },
 ] as const;
 
-export const SHARE_FORCE_MARKS = [
-  "lotus",
-  "moon",
-  "fire",
-  "serpent",
-  "dragon",
-  "eye",
-  "circle",
-  "void",
-  "sun",
-  "vishnu",
-  "ocean",
-  "star",
-  "lightning",
-  "tides",
-  "spiral",
-  "water",
-  "infinity",
-  "mandala",
-  "yantra",
-  "mirror",
-  "mountain",
-  "heart",
-  "chalice",
-  "shiva",
-  "owl",
-  "rose",
-  "tree",
-  "sage",
-  ...SHARE_DEITY_MARKS,
-] as const;
+export const SHARE_FORCE_MARKS = SHARE_MARK_GROUPS.flatMap((group) => group.marks);
 
 export type ShareForceMark = (typeof SHARE_FORCE_MARKS)[number];
+
+export function isShareForceMark(value: string): value is ShareForceMark {
+  return (SHARE_FORCE_MARKS as readonly string[]).includes(value);
+}
+
+export function verseShareMark(passage: Passage): ShareForceMark {
+  const mapped = verseSumiGlyph({
+    collection: passage.collection,
+    title: passage.title,
+    translation: passage.translation,
+    themes: passage.themes,
+  });
+  if (isShareForceMark(mapped)) return mapped;
+  return "lotus";
+}
 
 export const SHARE_INKS = {
   ash: { label: "Ash", hex: "#8a8680" },
@@ -90,6 +143,24 @@ export function sharePageUrl(
   const params = new URLSearchParams({ g: mark, ink, t: textMode });
   if (line) params.set("l", String(line));
   return `${SITE}/s/${encodeURIComponent(verseId)}?${params.toString()}`;
+}
+
+export const SHARE_SOCIAL = [
+  { id: "instagram", label: "Instagram" },
+  { id: "tiktok", label: "TikTok" },
+  { id: "x", label: "X" },
+  { id: "whatsapp", label: "WhatsApp" },
+  { id: "signal", label: "Signal" },
+] as const;
+
+export type ShareSocialId = (typeof SHARE_SOCIAL)[number]["id"];
+
+export function tweetIntentUrl(caption: string, url: string): string {
+  return `https://twitter.com/intent/tweet?text=${encodeURIComponent(caption)}&url=${encodeURIComponent(url)}`;
+}
+
+export function whatsappIntentUrl(caption: string): string {
+  return `https://wa.me/?text=${encodeURIComponent(caption)}`;
 }
 
 export function nextFolioLine(count: number, current?: number): number | undefined {

@@ -1,24 +1,49 @@
 import { useState } from "@lynx-js/react";
 import { getLayer, type Passage } from "../lib/corpus";
+import { useAuth } from "../auth/AuthProvider";
+import { useConvex } from "../convex/ConvexProvider";
+import { isConvexConfigured } from "../convex/httpClient";
 import {
-  SHARE_FORCE_MARKS,
+  SHARE_MARK_GROUPS,
   SHARE_INKS,
+  SHARE_SOCIAL,
   nextFolioLine,
   sharePageUrl,
+  tweetIntentUrl,
+  verseShareMark,
+  whatsappIntentUrl,
   type ShareForceMark,
   type ShareInk,
+  type ShareSocialId,
   type ShareTextMode,
 } from "../lib/shareCard";
 import { C } from "../lib/theme";
 
-export function ShareComposer({ passage }: { passage: Passage }) {
+export function ShareComposer({
+  passage,
+  open,
+  onOpenChange,
+}: {
+  passage: Passage;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
+}) {
   const hasOriginal = Boolean(getLayer(passage, "original"));
-  const [open, setOpen] = useState(false);
-  const [mark, setMark] = useState<ShareForceMark>("lotus");
+  const [internalOpen, setInternalOpen] = useState(false);
+  const isOpen = open ?? internalOpen;
+  function setOpen(next: boolean) {
+    onOpenChange?.(next);
+    if (open === undefined) setInternalOpen(next);
+  }
+  const [mark, setMark] = useState<ShareForceMark>(() => verseShareMark(passage));
   const [ink, setInk] = useState<ShareInk>("gold");
   const [textMode, setTextMode] = useState<ShareTextMode>(hasOriginal ? "both" : "translation");
   const [line, setLine] = useState<number | undefined>(undefined);
   const [copied, setCopied] = useState(false);
+  const [destUrl, setDestUrl] = useState("");
+  const [msBusy, setMsBusy] = useState(false);
+  const { user } = useAuth();
+  const { httpClient } = useConvex();
 
   const pageUrl = sharePageUrl(passage._id, mark, ink, textMode, line);
 
@@ -27,22 +52,36 @@ export function ShareComposer({ passage }: { passage: Passage }) {
     setCopied(true);
   }
 
-  if (!open) {
+  function addToManuscript() {
+    "background only";
+    if (!httpClient || !user || !isConvexConfigured()) {
+      setDestUrl("Sign in to add this to your manuscript.");
+      return;
+    }
+    setMsBusy(true);
+    void httpClient
+      .mutation("manuscripts:addVerse", { verseId: passage._id, verseTitle: passage.title || passage._id })
+      .then(() => setDestUrl("Added to your manuscript."))
+      .catch((err: { message?: string }) => setDestUrl(err?.message || "Could not add to your manuscript."))
+      .finally(() => setMsBusy(false));
+  }
+
+  if (!isOpen) {
     return (
       <view
         bindtap={() => setOpen(true)}
         style={{
           paddingTop: 8,
           paddingBottom: 8,
-          paddingLeft: 12,
-          paddingRight: 12,
-          backgroundColor: C.cardAlt,
-          borderRadius: 6,
+          paddingLeft: 14,
+          paddingRight: 14,
+          backgroundColor: C.gold,
+          borderRadius: 999,
           alignSelf: "flex-start",
           marginBottom: 20,
         }}
       >
-        <text style={{ color: C.gold, fontSize: 13 }}>Share this page</text>
+        <text style={{ color: "#121018", fontSize: 13, fontWeight: "700" }}>Share</text>
       </view>
     );
   }
@@ -50,19 +89,37 @@ export function ShareComposer({ passage }: { passage: Passage }) {
   return (
     <view style={{ marginBottom: 28 }}>
       <text style={{ color: C.goldMuted, fontSize: 11, letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 10 }}>
-        Share this page
+        Share
       </text>
       <text style={{ color: C.muted, fontSize: 13, lineHeight: 1.5, marginBottom: 12 }}>
-        Compose on the web to save the image. The link below opens the same folio.
+        Keep it in your manuscript, or open a destination. Compose the folio on the web for the image.
       </text>
       <text style={{ color: C.faint, fontSize: 11, letterSpacing: 1, textTransform: "uppercase", marginBottom: 8 }}>
-        Mark
+        Send to
       </text>
       <view style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
-        {SHARE_FORCE_MARKS.map((slug) => (
-          <Chip key={slug} label={slug} active={mark === slug} onTap={() => setMark(slug)} />
+        <Chip label={msBusy ? "…" : "Manuscript"} active={false} onTap={addToManuscript} />
+        {SHARE_SOCIAL.map((dest) => (
+          <Chip
+            key={dest.id}
+            label={dest.label}
+            active={false}
+            onTap={() => setDestUrl(lynxDestUrl(dest.id, pageUrl))}
+          />
         ))}
       </view>
+      {SHARE_MARK_GROUPS.map((group) => (
+        <view key={group.id} style={{ marginBottom: 12 }}>
+          <text style={{ color: C.faint, fontSize: 11, letterSpacing: 1, textTransform: "uppercase", marginBottom: 8 }}>
+            {group.label}
+          </text>
+          <view style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+            {group.marks.map((slug) => (
+              <Chip key={slug} label={slug} active={mark === slug} onTap={() => setMark(slug)} />
+            ))}
+          </view>
+        </view>
+      ))}
       <text style={{ color: C.faint, fontSize: 11, letterSpacing: 1, textTransform: "uppercase", marginBottom: 8 }}>
         Ink
       </text>
@@ -106,9 +163,9 @@ export function ShareComposer({ passage }: { passage: Passage }) {
         <Chip label="Shuffle line" active={Boolean(line)} onTap={() => setLine(nextFolioLine(8, line))} />
       </view>
       <text style={{ color: C.muted, fontSize: 13, lineHeight: 1.5, marginBottom: 10 }}>
-        {copied ? "Share this link from the web app:" : "Open this link to share the image:"}
+        {copied ? "Share this link from the web app:" : destUrl || "Open this link to share the image:"}
       </text>
-      <text style={{ color: C.gold, fontSize: 12, lineHeight: 1.45, marginBottom: 12 }}>{pageUrl}</text>
+      <text style={{ color: C.gold, fontSize: 12, lineHeight: 1.45, marginBottom: 12 }}>{destUrl || pageUrl}</text>
       <view style={{ flexDirection: "row", gap: 8 }}>
         <view
           bindtap={copyLink}
@@ -122,6 +179,14 @@ export function ShareComposer({ passage }: { passage: Passage }) {
       </view>
     </view>
   );
+}
+
+function lynxDestUrl(id: ShareSocialId, folioUrl: string): string {
+  if (id === "x") return tweetIntentUrl("A page from Pratibha", folioUrl);
+  if (id === "whatsapp") return whatsappIntentUrl(folioUrl);
+  if (id === "instagram") return "https://www.instagram.com/";
+  if (id === "tiktok") return "https://www.tiktok.com/upload";
+  return folioUrl;
 }
 
 function Chip({ label, active, onTap }: { label: string; active: boolean; onTap: () => void }) {
