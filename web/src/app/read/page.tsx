@@ -228,6 +228,16 @@ function LibraryPageContent() {
   const openTomeMeta =
     collection !== "all" ? tomes.find((t) => collectionsMatch(t.collection, collection)) : null;
   const openTomeRb = collection !== "all" ? redbookSlug(collection) : null;
+  // A powerful line from the open text, revealed at the heart of the hero mandala on hover.
+  const heroQuote = useMemo(() => {
+    if (collection === "all") return "";
+    for (const x of filtered) {
+      const line = firstSentence(layerText(x, "translation") || "").trim();
+      if (line.length >= 24 && line.length <= 150) return line;
+    }
+    const first = filtered[0];
+    return first ? firstSentence(layerText(first, "translation") || "").slice(0, 150) : "";
+  }, [collection, filtered]);
 
   return (
     <LayoutGroup>
@@ -257,6 +267,20 @@ function LibraryPageContent() {
           ) : (
             <p className="passage-reading__meta">Archive</p>
           )}
+          {collection !== "all" && openTomeRb ? (
+            <figure
+              className="collection-hero"
+              tabIndex={0}
+              aria-label={`${displayCollectionName(collection)} — hover to reveal a passage`}
+            >
+              <img className="collection-hero__mandala" src={redbookSrc(openTomeRb)} alt="" aria-hidden />
+              {heroQuote ? (
+                <figcaption className="collection-hero__quote">
+                  <span>“{heroQuote}”</span>
+                </figcaption>
+              ) : null}
+            </figure>
+          ) : null}
           <div className="mt-2 flex items-start gap-3">
             {collection !== "all" ? (
               <span className="library-row__glyph mt-1 hidden sm:inline-flex" aria-hidden>
