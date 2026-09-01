@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p002
-unit_label: 'Pearl #2'
-title: 'Pearl #2'
+unit_label: The One Beyond Every Relation
+title: The One Beyond Every Relation
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -13,14 +13,26 @@ themes: []
 source_excerpt: He is, and there is not with Him any before or after, above or below, closeness or distance,
   how or where or when, time or moment or duration, manifested existence or place. And He is now as He
   has always been. He is the one without oneness and the single without singleness.
-translation_literal: He is, and there is not with Him any before or after, above or below, closeness or
-  distance, how or where or when, time or moment or duration, manifested existence or place. And He is
-  now as He has always been. He is the one without oneness and the single without singleness.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: 'He is, and there is with Him no after or before, nor above or below, nor far or
+  near, nor how or where or when, nor time or moment or age, nor being or place. And He is now as He was.
+
+
+  He is the One without oneness, and the Single without singleness.'
+commentary: 'The passage makes an uncompromising claim: God is not one item within a field of relations.
+  Before and after, high and low, nearness and distance, place, duration, and even determinate being belong
+  to the order through which creatures locate one another; they cannot contain or qualify the Real. “He
+  is now as He was” does not merely say that God remains unchanged through time. It denies that time provides
+  a standpoint from which God could be measured at all. The paradox of “the One without oneness” presses
+  further. Divine unity is not a numerical unit—a one opposed to two or many—for numerical oneness already
+  belongs to the world of countable forms. In the idiom of waḥdat al-wujūd, this clears the ground for
+  knowing the Lord through the self: the self one takes to be an independently situated thing, defined
+  by where, when, and what it is, has no self-subsisting existence beside God. The contested move is radical:
+  rather than simply affirming God’s transcendence over the world, the treatise strips creaturely reality
+  of independent being. Its apophatic language therefore can sound both fiercely transcendent and startlingly
+  nondual, while insisting that neither spatial union nor incarnation is meant.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you catch yourself defining who you are by a role, place, schedule, or status,
+  pause once and silently say: “These describe me; they do not ground my being.”'
 sanskrit_devanagari: 'كان ولا بَعْد معه ولا قبل، ولا فوق ولا تحت، ولا قُرْب ولا بُعْد، ولا كيف، ولا أين
   ولا حين، ولا أوان ولا وقت ولا زمان، ولا كون ولا مكان، وهو الآن كما كان.
 
@@ -34,47 +46,72 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'كان ولا بَعْد معه ولا قبل، ولا فوق ولا تحت، ولا قُرْب ولا بُعْد، ولا كيف، ولا أين ولا حين، ولا
+    أوان ولا وقت ولا زمان، ولا كون ولا مكان، وهو الآن كما كان.
+
+
+    هو الواحد بلا وحدانية، وهو الفرد بلا فردانية.'
 - kind: translation
   label: Pratibha Translation
-  body: He is, and there is not with Him any before or after, above or below, closeness or distance, how
-    or where or when, time or moment or duration, manifested existence or place. And He is now as He has
-    always been. He is the one without oneness and the single without singleness.
+  body: 'He is, and there is with Him no after or before, nor above or below, nor far or near, nor how
+    or where or when, nor time or moment or age, nor being or place. And He is now as He was.
+
+
+    He is the One without oneness, and the Single without singleness.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The passage makes an uncompromising claim: God is not one item within a field of relations. Before
+    and after, high and low, nearness and distance, place, duration, and even determinate being belong
+    to the order through which creatures locate one another; they cannot contain or qualify the Real.
+    “He is now as He was” does not merely say that God remains unchanged through time. It denies that
+    time provides a standpoint from which God could be measured at all. The paradox of “the One without
+    oneness” presses further. Divine unity is not a numerical unit—a one opposed to two or many—for numerical
+    oneness already belongs to the world of countable forms. In the idiom of waḥdat al-wujūd, this clears
+    the ground for knowing the Lord through the self: the self one takes to be an independently situated
+    thing, defined by where, when, and what it is, has no self-subsisting existence beside God. The contested
+    move is radical: rather than simply affirming God’s transcendence over the world, the treatise strips
+    creaturely reality of independent being. Its apophatic language therefore can sound both fiercely
+    transcendent and startlingly nondual, while insisting that neither spatial union nor incarnation is
+    meant.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: كان
+    definition: from kāna, “to be” -> “He was” marks no past temporal state but the denial that God undergoes
+      change -> the default “was” can misleadingly suggest that God once existed in time.
+  - term: الآن
+    definition: “now,” from a term for the present instant -> the present is invoked to collapse the contrast
+      between past and present in relation to God -> not a claim that God occupies an everlasting moment.
+  - term: وحدانية
+    definition: from wāḥid, “one” -> numerical or conceptual oneness denied of God -> missed when “the
+      One” is heard as simply the highest member of a numerical series.
+  - term: فردانية
+    definition: from fard, “single, unique” -> even isolated singularity is negated as a divine qualification
+      -> not mere uniqueness, since uniqueness still contrasts one thing with others.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 12 · The Silence — Turīya as Amātrā
-    resonance: Both texts negate all relational and temporal categories (before/after, measure, phenomena)
-      to point toward a fourth state that transcends dualistic experience. The Sufi passage strips away
-      spatial-temporal predicates; the Upanishadic passage names Turīya as 'without measure' and 'cessation
-      of phenomena'—both using systematic negation to disclose what remains.
-    divergence: Ibn Arabi emphasizes divine transcendence and the absolute unity of God's being; Gaudapada
-      locates this fourth state as the Self (Ātman), accessible through contemplative recognition rather
-      than theological assertion.
-    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_015
-  - citation: Patañjali Yoga Sūtras 4.31
-    resonance: Both passages describe a radical removal or stripping away—of relational predicates in
-      the Sufi text, of 'coverings of knowledge' in the Yoga Sūtra—leaving what is almost nothing or nearly
-      unknowable. The move is one of subtraction toward a residual, irreducible awareness.
-    divergence: Patañjali frames this as the final fruit of yogic practice (kaivalya); Ibn Arabi presents
-      it as the eternal nature of divine being, not an achievement but a recognition of what always is.
-    passage_id: patañjali_yoga_sūtras.ys_4_31
-  - citation: Astavakra Gita — Verse 6.1
-    resonance: 'Both use spatial metaphor (space/pot, infinite container and finite content) to dissolve
-      subject-object duality and reveal the Self as boundless ground. The structure inverts ordinary perception:
-      the world becomes small within consciousness, not consciousness within the world.'
-    divergence: Astavakra employs the metaphor to teach non-dual realization of the individual self; Ibn
-      Arabi's negation serves to isolate divine transcendence beyond all spatial or relational categories
-      whatsoever.
-    passage_id: astavakra_gita.asg_6_1
-  layer_provenance: generated_grounded
+  - citation: Qur’an 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supplies the scriptural matrix
+      for denying that temporal or spatial opposites limit God.
+    divergence: The verse names paired divine attributes; this passage intensifies them by negating the
+      very relational categories through which the pairs are ordinarily understood.
+  - citation: Qur’an 42:11
+    resonance: “There is nothing like unto Him” supports the refusal to attribute creaturely location,
+      temporality, and composition to God.
+    divergence: The treatise draws a stronger metaphysical consequence, moving from incomparability toward
+      the denial of any independently existing other.
+  - citation: 'Hadith: “Whoso knows himself knows his Lord”'
+    resonance: 'The later guiding maxim of the treatise is prepared here: self-knowledge requires seeing
+      the limits of the self’s supposedly independent, located existence.'
+    divergence: The saying is widely circulated in Sufi literature but is not established as a canonical
+      prophetic hadith; the treatise gives it a distinctly nondual reading.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you catch yourself defining who you are by a role, place, schedule, or status, pause
+    once and silently say: “These describe me; they do not ground my being.”'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -86,3 +123,17 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: 'He is, and there is with Him no after or before, nor above or below, nor far or near, nor
+  how or where or when, nor time or moment or age, nor being or place. And He is now as He was.
+
+
+  He is the One without oneness, and the Single without singleness.'
+abhyasa: 'Today, when you catch yourself defining who you are by a role, place, schedule, or status, pause
+  once and silently say: “These describe me; they do not ground my being.”'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'كان ولا بَعْد معه ولا قبل، ولا فوق ولا تحت، ولا قُرْب ولا بُعْد، ولا كيف، ولا أين ولا حين،
+  ولا أوان ولا وقت ولا زمان، ولا كون ولا مكان، وهو الآن كما كان.
+
+
+  هو الواحد بلا وحدانية، وهو الفرد بلا فردانية.'

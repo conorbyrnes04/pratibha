@@ -1,0 +1,304 @@
+path_id: the_body_of_hatha
+work_id: hatha_yoga_pradipika
+work_title: Haṭha Yoga Pradīpikā, Śiva Saṃhitā
+title: "The Body of Haṭha"
+tradition: Haṭha Yoga
+covers: >
+  Eight selected doorways from the Haṭha Yoga Pradīpikā (opening, āsana, breath)
+  sealed by the Śiva Saṃhitā on yoga as knowing. Not the āsana catalogue, not
+  one gate per verse.
+status: complete
+
+# --- Design rationale -------------------------------------------------------
+# The Pradīpikā and the Śiva Saṃhitā are method-catalogues (VBT-scale). A path
+# that walked every āsana, kumbhaka, and mudrā would be a table of contents and
+# would prescribe techniques a householder cannot safely take from a page.
+# This is a selected-doorways walk: sample the architecture (staircase, shelter,
+# inner conditions, āsana as first accessory, one chief seat, breath-mind, even
+# breath), then commit to one daily method. Last-gate energy matches the 112
+# Doorways: breadth is a beginning; depth is the door.
+#
+# Gate 7 uses HYP 2.3 (072), not 165/166/300. Those verses name kumbhaka,
+# kuṇḍalinī, or the haṭha–rāja pair as doctrine; they cannot be given as
+# householder acts without unsafe retention. 072's "restrain the breath" is
+# taught here as even lengthening — no long kumbhaka.
+#
+# Last gate: Śiva Saṃhitā 1.18 (014), not 001. 001 is witness-metaphysics;
+# 014 is the commit verse — all exertion to acquire yoga; what need of other
+# doctrines (or the remaining eighty-four āsanas)?
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  Haṭha is a staircase, not a studio brand. Do not send the student to a cave,
+  a guru they do not have, or a lock they cannot be taught from a page. Do not
+  prescribe long breath-holds, bandhas, or a fast. One seat and even breath
+  are enough for this walk.
+
+premise: >
+  You are not collecting the Pradīpikā. You are being given eight doors from a
+  huge catalogue so you can keep one method in a house, on a chair if that is
+  the seat you have. Haṭha here is shelter and a lever on the breath, not
+  fitness, not ashram tourism, not eighty-four shapes.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+  - "Do not add a pose from the catalogue. The last gate asks you to keep one seat and one even breath."
+
+gates:
+
+  - gate_id: gate_1_adinatha
+    name: "The staircase"
+    theme: "Haṭha is a methodical ascent toward rāja yoga, not a fitness brand."
+    why_first: >
+      Svātmārāma opens with a salutation to Ādinātha and names haṭha a staircase
+      to the high pinnacle of rāja yoga. If the first gate lets you treat this
+      as stretching, every later accessory becomes a studio class.
+    stations:
+      - station: 1
+        unit_id: hatha_yoga_pradipika.hatha_yoga_pradipika_001
+        reference: "HYP 1.1"
+        title: "A Staircase, Not a Studio"
+        opening_question: "When I say yoga, am I naming a body project or a climb whose top is stilling?"
+        transmission: >
+          You already have a use for this word, and it is probably the wrong one.
+          Haṭha arrives as a fitness class, an āsana brand, a body you improve.
+          The book does not open there. It salutes Ādinātha — Śiva as the first
+          lord who taught this knowledge — and it calls haṭha a staircase for
+          the one who wants to climb to rāja yoga. A staircase is not the roof.
+          You still have to put a foot on a rung; the rung is not the point.
+          Name the difficulty: the body work is real, and it is easy to stop
+          at the body. The act is to take one rung as a rung — sit, breathe —
+          without promising yourself a peak experience at the top.
+        contemplation: "The pose is a step. The brand that sells the pose is not the climb."
+        gate_practice: >
+          Before you move or stretch today, stand or sit still and say aloud
+          what you are climbing toward — not a better shape, the stilling the
+          staircase is for. Then take one rung: two minutes upright, no extra
+          poses, no soundtrack.
+        passed_when: "You can tell the difference between using the body as a rung and treating the rung as the whole house."
+
+  - gate_id: gate_2_house
+    name: "The house"
+    theme: "The practice is the shelter. You do not need a special ashram first."
+    why_first: >
+      After the staircase is named, the text gives haṭha as a house against the
+      three heats and a tortoise that bears those who stay. If you wait for a
+      hermitage, you never begin.
+    stations:
+      - station: 2
+        unit_id: hatha_yoga_pradipika.hatha_yoga_pradipika_010
+        reference: "HYP 1.10"
+        title: "The House You Already Have"
+        opening_question: "What heat am I using as an excuse to postpone practice until I have a better room?"
+        transmission: >
+          The difficulty is location. You tell yourself haṭha needs a maṭha —
+          a proper house, a quiet ashram, a life stripped for the cave. The
+          verse turns the image: haṭha itself is the house that shelters from
+          the burning of the three tāpas, and the tortoise-base for those who
+          stay with the work. You do not first acquire a special building and
+          then deserve to practice. The seat you can take in this room is the
+          shelter. Heat still comes — restlessness, other people, the weather
+          of the day. The act is to use breath and a steady form as the house,
+          not to go hunting a better climate.
+        contemplation: "Shelter is the practice kept, not the postcode of a hermitage."
+        gate_practice: >
+          The next time heat rises — hurry, irritation, a hot room, a noisy
+          house — do not leave for a better place. Sit or stand where you are.
+          Three slow breaths. Feel the body as the walls. This is the house.
+        passed_when: "You can take refuge in a seat in ordinary heat, without waiting for an ashram."
+
+  - gate_id: gate_3_six
+    name: "The six"
+    theme: "Success is inner conditions, not more hours of stretching."
+    why_first: >
+      The catalogue will tempt you to add volume. The text lists six that bring
+      success, and none of them is another hour on the mat.
+    stations:
+      - station: 3
+        unit_id: hatha_yoga_pradipika.hatha_yoga_pradipika_016
+        reference: "HYP 1.16"
+        title: "Six That Bring Success"
+        opening_question: "Which of the six is actually missing — and what extra stretching am I using to hide that?"
+        transmission: >
+          You will try to buy progress with more time on the floor. The list
+          is not a stretching schedule. Courage, daring, perseverance,
+          discriminative knowledge, faith, and a deliberate distance from
+          scattering company — these are the six that make the work take.
+          The difficulty is that they sound like character, so you skip them
+          and add poses. Name the missing one today. Distance from company,
+          for a householder, is not abandoning your people; it is one hour
+          without feeding the scatter (the extra talk, the extra screen) that
+          undoes the seat. No extra āsana. The quality is the practice.
+        contemplation: "Volume on the mat cannot substitute a missing root."
+        gate_practice: >
+          Name which of the six is absent this morning. For one ordinary hour
+          of work or home, practice only that quality — courage to stay with
+          what arises, or discrimination about what actually serves, or an
+          hour of not scattering. Do not add stretching to compensate.
+        passed_when: "You can point to one missing condition and work it in the day, instead of adding a pose."
+
+  - gate_id: gate_4_asana_first
+    name: "The first accessory"
+    theme: "Āsana is first because the body must be a seat. It is not the whole of yoga."
+    why_first: >
+      Now the text is allowed to praise āsana — after you know it is an aṅga,
+      a limb, not the organism.
+    stations:
+      - station: 4
+        unit_id: hatha_yoga_pradipika.hatha_yoga_pradipika_019
+        reference: "HYP 1.19"
+        title: "Āsana Is First, Not All"
+        opening_question: "Where have I let the first accessory stand in for the whole path?"
+        transmission: >
+          Āsana is described first because it is the first accessory of haṭha,
+          practiced for a steady seat, health, and lightness of the body. The
+          difficulty is the modern reversal: āsana became the whole of yoga,
+          and the rest of the staircase dropped out of sight. First is not
+          only. A chair that holds you upright for five minutes is āsana in
+          the sense this gate needs — sthira enough to sit, light enough that
+          you are not fighting the body. You are not collecting shapes. You
+          are making a seat that can later hold breath without drama.
+        contemplation: "First accessory means the body becomes a place you can stay. It does not mean yoga is stretching."
+        gate_practice: >
+          Sit upright for five minutes — cross-legged, kneeling, or a chair.
+          Do not add a second pose. Notice where you are steady, where tension
+          pulls you off, where the body is heavy or light. Stay. That is the
+          accessory.
+        passed_when: "You can keep one upright seat as preparation, without treating the seat as the whole of yoga."
+
+  - gate_id: gate_5_siddha
+    name: "The chief seat"
+    theme: "One seat, kept, outweighs a collection of poses."
+    why_first: >
+      The catalogue of āsanas is about to open. Before it does, the text ranks
+      one seat as yama ranks sparing food — chief, not many.
+    stations:
+      - station: 5
+        unit_id: hatha_yoga_pradipika.hatha_yoga_pradipika_040
+        reference: "HYP 1.40"
+        title: "One Seat, as Sparing Food Is Among Yamas"
+        opening_question: "How many poses am I collecting to avoid keeping one?"
+        transmission: >
+          Just as sparing food is chief among the yamas and ahiṃsā among the
+          niyamas, the adept names siddhāsana chief of āsanas. The difficulty
+          is appetite: you want the eighty-four. The analogy is not a fast;
+          do not starve yourself. Sparing food here means one measured thing
+          done as the root, not a pile of extras. For a householder, the chief
+          seat is the one you can actually keep — a chair if that is honest —
+          not a lock that needs a teacher in the room. Collecting poses is
+          how you postpone the seat. One stable upright form, returned to,
+          is the ranking this gate enforces.
+        contemplation: "Chief means kept. A library of āsanas is not a seat."
+        gate_practice: >
+          Choose one upright seat you can take without specialist instruction
+          (chair, cushion, or floor). Sit it for ten minutes today. Do not
+          learn a second pose. Eat your next meal at ordinary size — the
+          analogy is measure, not a fast.
+        passed_when: "You can name your one seat and keep it, without adding shapes to feel like a yogin."
+
+  - gate_id: gate_6_breath_mind
+    name: "The lever"
+    theme: "Disturbed breath, disturbed mind. You do not still thought first and visit the body later."
+    why_first: >
+      Āsana has made a seat. The next architecture is the knot: vāta and citta
+      move together. Reverse the usual order or the path becomes talk.
+    stations:
+      - station: 6
+        unit_id: hatha_yoga_pradipika.hatha_yoga_pradipika_071
+        reference: "HYP 2.2"
+        title: "When the Wind Moves, the Mind Moves"
+        opening_question: "Where am I trying to argue the mind quiet while the breath stays ragged?"
+        transmission: >
+          You will try to control the mind first — a better thought, a stronger
+          will — and visit the body later. The verse will not have it.
+          Respiration disturbed, the mind becomes disturbed. Steady the wind
+          and the mind can stand. That is haṭha's lever, and it is unflattering:
+          your philosophy will not outrun a tight chest. Do not force a heroic
+          hold. The act is to meet one ragged breath in the day and smooth the
+          leaving of it. Let the mind follow if it will. You are not promised
+          stillness. You are given the lever.
+        contemplation: "The mind copies the breath. Start with the copy's source."
+        gate_practice: >
+          Catch one moment of irregular breath — a message, a queue, a sharp
+          word. For two or three minutes, lengthen and smooth only the exhale.
+          Do not hold. Do not fix the thoughts. Watch whether the mind follows
+          the breath at all.
+        passed_when: "You can use a smoothed exhale as the first move when the mind is already noisy, instead of arguing with thought."
+
+  - gate_id: gate_7_breath_work
+    name: "Even breath"
+    theme: "Restrain means keep the breath even and present. Not a long kumbhaka from a page."
+    why_first: >
+      071 named the lever. 072 (HYP 2.3) is the adjacent act: so long as the
+      breathing air stays, that is called life — therefore restrain. The
+      kumbhaka verses (165, 300) and the haṭha–rāja pair (166) are the wrong
+      door for a householder at this gate.
+    stations:
+      - station: 7
+        unit_id: hatha_yoga_pradipika.hatha_yoga_pradipika_072
+        reference: "HYP 2.3"
+        title: "So Long as the Breath Stays"
+        opening_question: "Am I about to turn 'restrain the breath' into a hold I was never taught?"
+        transmission: >
+          The verse is blunt: while the breathing air stays in the body, that
+          is called life; death is its going out; therefore restrain the breath.
+          The difficulty is the verb. Nirodha sounds like stop. A long kumbhaka
+          taken from a manual, without a teacher, is how people hurt themselves.
+          You do not do that here. Restrain, for this gate, means keep the
+          breath with you — even in, even out, no added hold, no strain. You
+          are participating in the fact of being alive, not staging a retention.
+          If the count makes you gasp, shorten it. The state of "mastery" is
+          not on offer. Eight even cycles are the act.
+        contemplation: "Keeping the breath is not conquering it."
+        gate_practice: >
+          Sit your one seat. Take eight breaths, inhale and exhale the same
+          easy count (four is enough). No pause at the top or bottom beyond
+          the natural turn. If strain appears, drop the count and breathe
+          ordinarily. Stop at eight.
+        passed_when: "You can lengthen the breath evenly without inserting a hold, and you can stop when strain appears."
+
+  - gate_id: gate_8_commit
+    name: "One method"
+    theme: "Yoga is how this is known. Keep one daily seat and breath. Do not complete the catalogue."
+    why_first: >
+      A selected-doorways path ends as the 112 Doorways end: one method, fully
+      kept. The Śiva Saṃhitā says all exertion should go to yoga; what need of
+      other doctrines? The other doctrines, here, are the remaining āsanas.
+    stations:
+      - station: 8
+        unit_id: siva_samhita.siva_samhita_014
+        reference: "Śiva Saṃhitā 1.18"
+        title: "One Method, Fully Kept"
+        opening_question: "Which single daily seat-and-breath am I willing to keep, and what catalogue am I using to postpone it?"
+        transmission: >
+          You have sampled a huge book. The hunger now is to finish it — eighty-four
+          āsanas, every kumbhaka, a complete yogin. That hunger is the last
+          misconception. Since by yoga all this is known as a certainty, all
+          exertion should be made to acquire it; what need, then, of other
+          doctrines? Other doctrines include the rest of the catalogue. You
+          do not become a yogin by covering the list. You keep one method until
+          it is how you know — a seat you already have, an even breath you
+          already took. Breadth was the walk. Depth is the door. Choose the
+          seat and the eight even breaths. Same time, same place, ten minutes,
+          seven days. Add nothing. The state is not promised. The act is the
+          appointment kept.
+        contemplation: "One doorway entered is the path. The unread chapters are not a debt."
+        gate_practice: >
+          Look back over the seven gates. Keep only this: your one upright
+          seat and eight even breaths, ten minutes, at a time you can actually
+          keep, for seven days. Do not add a pose. Do not add a hold. If you
+          miss a day, begin the seven again without drama.
+        passed_when: "You can name the one daily method and keep it for a week without expanding into the catalogue."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    Complete as a selected-doorways walk. The Pradīpikā's remaining āsanas,
+    kumbhakas, mudrās, and nāda, and the Śiva Saṃhitā's subtle-body chapters,
+    stay in the library. They are not this path's next gate. If a later walk
+    takes up nāda or a single mudrā, it must still refuse unsafe retention
+    and specialist locks.
+  next_gates: []

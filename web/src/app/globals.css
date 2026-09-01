@@ -383,6 +383,7 @@ button {
 
 .today-gate {
   max-width: var(--reading-measure);
+  margin-inline: auto;
 }
 
 .today-gate__mark {
@@ -1970,11 +1971,14 @@ button.library-passage {
 }
 .collection-gate__quote span {
   display: block;
+  max-width: 100%;
   color: var(--seal, #f0c979);
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   font-size: clamp(1.05rem, 2.4vw, 1.55rem);
   line-height: 1.45;
+  text-align: center;
   text-wrap: balance;
+  overflow-wrap: anywhere;
   text-shadow: 0 2px 22px rgba(0, 0, 0, 0.9);
 }
 .collection-gate__orb {
@@ -2181,6 +2185,11 @@ button.library-passage {
    blocks. Replaces the ad-hoc mt-8/mt-12/mt-14 scattered per page. */
 .section-stack > * + * {
   margin-top: clamp(3.25rem, 6vw, 5.5rem);
+}
+.section-stack--measure {
+  width: min(100%, var(--reading-measure));
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 2rem);
 }
 .section-stack--tight > * + * {
   margin-top: clamp(2rem, 4vw, 3rem);
@@ -4623,6 +4632,7 @@ button.library-passage {
 .share-card__copy,
 .share-card__original,
 .share-card__translation,
+.share-card__margin,
 .share-card__reading,
 .share-card__foot {
   position: relative;
@@ -4693,8 +4703,30 @@ button.library-passage {
   flex: 0.72;
 }
 
+.share-card--margin .share-card__copy {
+  flex: 0.78;
+}
+
+.share-card--reading.share-card--margin .share-card__copy {
+  flex: 0.62;
+}
+
 .share-card--reading.share-card--both .share-card__original {
   -webkit-line-clamp: 2;
+}
+
+.share-card__margin {
+  margin: 0.45rem 0 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgb(240 201 121 / 0.22);
+  font-size: 0.86rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: #f0c979;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .share-card__reading {
@@ -4709,6 +4741,11 @@ button.library-passage {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   overflow: hidden;
+}
+
+.share-card--margin .share-card__reading {
+  margin-top: 0.35rem;
+  padding-top: 0.35rem;
 }
 
 .share-card__foot {

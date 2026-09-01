@@ -1,4 +1,4 @@
-import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
+import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
 import { PratibhaText, ui } from "@/components/ui/PratibhaText";
 import { useStudy } from "@/context/StudyContext";
 import { matchStepItem } from "@/lib/passages";
@@ -6,6 +6,7 @@ import { learnStepContextId, notesForContext, stepKey, upsertJournalNote } from 
 import { useLocalSearchParams, router } from "expo-router";
 import { useEffect, useState, type ReactNode } from "react";
 import { Pressable, StyleSheet, TextInput, View, Keyboard } from "react-native";
+import * as Haptics from "expo-haptics";
 import { displayPassageTitle } from "@shared/passageTitles";
 import type { JournalNote } from "@shared/types";
 
@@ -38,7 +39,7 @@ export default function StepScreen() {
 
   if (!track || !step) {
     return (
-      <PratibhaScreen>
+      <PratibhaScreen edges={stackScreenEdges}>
         <PratibhaText variant="soft">Step not found.</PratibhaText>
       </PratibhaScreen>
     );
@@ -61,10 +62,11 @@ export default function StepScreen() {
     setJournalBody("");
     Keyboard.dismiss();
     setNotes(await notesForContext(noteKey));
+    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
   }
 
   return (
-    <PratibhaScreen>
+    <PratibhaScreen edges={stackScreenEdges}>
       <PratibhaText variant="label">Gate</PratibhaText>
       <PratibhaText variant="title" style={{ marginTop: 8, fontSize: 28 }}>
         {step.title}
@@ -103,7 +105,7 @@ export default function StepScreen() {
               onPress={() =>
                 router.push({
                   pathname: "/passage/[id]",
-                  params: { id: item._id, backTrackId: track.id, backStepId: step.id },
+                  params: { id: item._id },
                 })
               }
             >
@@ -118,13 +120,13 @@ export default function StepScreen() {
               style={[ui.button, { marginTop: 10 }]}
               onPress={() =>
                 router.push({
-                  pathname: "/(tabs)/chat",
+                  pathname: "/ask",
                   params: {
                     verse_id: item._id,
                     q: step.chatPrompt,
                     mode: step.chatMode || "question",
                   },
-                })
+                } as never)
               }
             >
               <PratibhaText style={ui.buttonText}>{actionLabel(step.chatMode)}</PratibhaText>
@@ -186,7 +188,10 @@ export default function StepScreen() {
           <Pressable
             style={[ui.button, { marginTop: 12, opacity: ready ? 1 : 0.4 }]}
             disabled={!ready}
-            onPress={() => toggleStep(track.id, step.id)}
+            onPress={() => {
+              void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+              void toggleStep(track.id, step.id);
+            }}
           >
             <PratibhaText style={ui.buttonText}>Mark complete</PratibhaText>
           </Pressable>

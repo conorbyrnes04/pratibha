@@ -55,14 +55,14 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-function practiceFallback(item: VerseItem): string {
+function practiceFallback(item: VerseItem, t: (key: string) => string): string {
   if ((item.themes || []).includes("witness")) {
-    return "For 2 minutes, notice thoughts and sensations as objects appearing in awareness.";
+    return t("reader.practiceWitness");
   }
   if ((item.themes || []).includes("liberation")) {
-    return "Ask once: what am I taking myself to be in this moment?";
+    return t("reader.practiceLiberation");
   }
-  return "Read once slowly, then pause for one minute before your next action.";
+  return t("reader.practiceDefault");
 }
 
 export default function VerseDetailPage() {
@@ -157,10 +157,10 @@ export default function VerseDetailPage() {
   );
 
   if (loading) {
-    return <main className="page-shell page-shell--reading soft">Opening the manuscript...</main>;
+    return <main className="page-shell page-shell--reading soft">{t("reader.openingManuscript")}</main>;
   }
   if (!item) {
-    return <main className="page-shell page-shell--reading soft">Passage not found.</main>;
+    return <main className="page-shell page-shell--reading soft">{t("reader.notFound")}</main>;
   }
 
   const display = study || item;
@@ -173,7 +173,7 @@ export default function VerseDetailPage() {
   const translationLayer = layers.find((l) => l.kind === "translation");
   const commentaryBody = layerText(display, "commentary");
   const keyTermsLayer = layers.find((l) => l.kind === "key_terms");
-  const practice = practiceText(display) || practiceFallback(item);
+  const practice = practiceText(display) || practiceFallback(item, t);
   const hasSource = appendixLayers.length > 0 || Boolean(anchorChapter);
   const themes = item.themes || [];
   const themeLabels = display.themes || themes;
@@ -229,7 +229,7 @@ export default function VerseDetailPage() {
             {displayCollectionName(item.collection) || "Pratibha"}
             {passageLocation ? ` · ${passageLocation}` : ""}
             {siblings.length > 1 && siblingIndex >= 0
-              ? ` · ${siblingIndex + 1} of ${siblings.length}`
+              ? ` · ${t("reader.ofCount", { n: siblingIndex + 1, total: siblings.length })}`
               : ""}
           </p>
           <h1 className="passage-reading__title">{displayPassageTitle(display)}</h1>
@@ -244,7 +244,7 @@ export default function VerseDetailPage() {
               className="passage-reading__toggle"
               onClick={() => setShowOriginal((v) => !v)}
             >
-              {showOriginal ? "Hide original" : "Show original"}
+              {showOriginal ? t("layers.hideOriginal") : t("layers.showOriginal")}
             </button>
             <ListenButton verseId={item._id} />
           </div>
@@ -263,7 +263,7 @@ export default function VerseDetailPage() {
           <LayerBlock layer={translationLayer} variant="plain" verseId={item._id} />
         ) : originalLayer ? null : (
           <section className="passage-layer passage-layer--translation">
-            <h2 className="passage-layer__label">Translation</h2>
+            <h2 className="passage-layer__label">{t("layers.translation")}</h2>
             <p className="reading-prose mt-4">{passagePreview(display)}</p>
           </section>
         )}
@@ -273,7 +273,7 @@ export default function VerseDetailPage() {
         {practice ? (
           <section className="passage-practice--plain">
             <ListenButton verseId={item._id} section="practice" variant="layer" />
-            <h2 className="passage-layer__label">Practice</h2>
+            <h2 className="passage-layer__label">{t("layers.practice")}</h2>
             <p className="passage-practice__body">{practice}</p>
           </section>
         ) : null}
@@ -293,7 +293,7 @@ export default function VerseDetailPage() {
               href={`/chat?verse_id=${encodeURIComponent(item._id)}&mode=explain&back=${encodeURIComponent(`/read/${item._id}`)}`}
               size="sm"
             >
-              Ask Pratibha
+              {t("chat.askLabel")}
             </KitLink>
             <ShareComposer
               item={display}
@@ -302,17 +302,18 @@ export default function VerseDetailPage() {
             />
             <Sheet>
               <SheetTrigger render={<button type="button" className="passage-reading__toggle" />}>
-                Journal
+                {t("nav.journal")}
               </SheetTrigger>
               <SheetContent
                 side="bottom"
                 className="max-h-[85vh] border-t border-amber-200/15 bg-[#0b0b14] sm:max-w-none"
               >
                 <SheetHeader>
-                  <SheetTitle className="text-amber-100">Journal</SheetTitle>
+                  <SheetTitle className="text-amber-100">{t("nav.journal")}</SheetTitle>
                   <SheetDescription className="soft">
-                    A private note on this passage — saved on this device
-                    {item ? ` · ${displayPassageTitle(item)}` : ""}.
+                    {t("reader.journalLede", {
+                      detail: item ? ` · ${displayPassageTitle(item)}` : "",
+                    })}
                   </SheetDescription>
                 </SheetHeader>
                 <div className="overflow-y-auto px-4 pb-8">
@@ -334,13 +335,16 @@ export default function VerseDetailPage() {
                     ),
                   })}
                 >
-                  ← Previous
+                  ← {t("reader.previousShort")}
                 </Link>
               ) : (
-                <span className="soft px-1 text-sm">Start of text</span>
+                <span className="soft px-1 text-sm">{t("reader.startOfText")}</span>
               )}
               <span className="soft tabular-nums text-sm">
-                {siblingIndex >= 0 ? siblingIndex + 1 : "—"} of {siblings.length}
+                {t("reader.ofCount", {
+                  n: siblingIndex >= 0 ? siblingIndex + 1 : "—",
+                  total: siblings.length,
+                })}
               </span>
               {nextPassage ? (
                 <Link
@@ -352,10 +356,10 @@ export default function VerseDetailPage() {
                     ),
                   })}
                 >
-                  Next →
+                  {t("reader.nextShort")} →
                 </Link>
               ) : (
-                <span className="soft px-1 text-sm">End of text</span>
+                <span className="soft px-1 text-sm">{t("reader.endOfText")}</span>
               )}
             </nav>
           ) : null}
@@ -367,7 +371,7 @@ export default function VerseDetailPage() {
               {keyTermsLayer ? (
                 <AccordionItem value="terms">
                   <AccordionTrigger>
-                    Key terms
+                    {t("layers.keyTerms")}
                     {(keyTermsLayer.items || []).length
                       ? ` · ${(keyTermsLayer.items || []).length}`
                       : ""}
@@ -379,7 +383,9 @@ export default function VerseDetailPage() {
               ) : null}
               {resonances.length > 0 ? (
                 <AccordionItem value="resonances">
-                  <AccordionTrigger>Resonances · {resonances.length}</AccordionTrigger>
+                  <AccordionTrigger>
+                    {t("layers.resonances")} · {resonances.length}
+                  </AccordionTrigger>
                   <AccordionContent>
                     <div className="space-y-4">
                       {resonances.map((r, idx) => {
@@ -412,7 +418,7 @@ export default function VerseDetailPage() {
                             </p>
                             {r.divergence ? (
                               <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                                <span className="font-semibold text-amber-100">Divergence:</span>{" "}
+                                <span className="font-semibold text-amber-100">{t("layers.divergence")}:</span>{" "}
                                 <InlineMarkdown>{r.divergence}</InlineMarkdown>
                               </p>
                             ) : null}
@@ -425,7 +431,7 @@ export default function VerseDetailPage() {
               ) : null}
               {hasSource ? (
                 <AccordionItem value="source">
-                  <AccordionTrigger>Public-domain source</AccordionTrigger>
+                  <AccordionTrigger>{t("reader.publicDomainSource")}</AccordionTrigger>
                   <AccordionContent>
                     <div className="space-y-4">
                       {appendixLayers.map((layer, idx) => (
@@ -446,7 +452,9 @@ export default function VerseDetailPage() {
               ) : null}
               {themes.length > 0 ? (
                 <AccordionItem value="themes">
-                  <AccordionTrigger>Themes · {themes.length}</AccordionTrigger>
+                  <AccordionTrigger>
+                    {t("reader.themes")} · {themes.length}
+                  </AccordionTrigger>
                   <AccordionContent>
                     <ul className="passage-themes-inline">
                       {themes.map((theme, idx) => (
@@ -466,11 +474,9 @@ export default function VerseDetailPage() {
 
         {related.length > 0 ? (
           <aside className="passage-related">
-            <h2 className="passage-layer__label">Related</h2>
+            <h2 className="passage-layer__label">{t("reader.related")}</h2>
             <p className="soft mt-1 text-sm">
-              {relatedMode === "semantic"
-                ? "Nearest in meaning across the corpus."
-                : "Shared themes across traditions."}
+              {relatedMode === "semantic" ? t("reader.relatedSemantic") : t("reader.relatedThemes")}
             </p>
             <ul className="passage-related__list">
               {relatedStudy.map((r) => (

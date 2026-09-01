@@ -14,8 +14,13 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * v8: two new collections — A Course in Miracles (Original Edition) and Kabbalah
  * (Sefer Yetzirah & the Zohar), each enriched with a Red Book hero mandala.
  * v9: Yoga shelf grows — Haṭha Yoga Pradīpikā (Pañcham Sinh) and Śiva Saṃhitā
- * (Vasu), each with a hero mandala; A Course in Miracles expanded (33→57). */
-const CACHE_VERSION = 9;
+ * (Vasu), each with a hero mandala; A Course in Miracles expanded (33→57).
+ * v10: Lal Ded (Lallā Vākyāni) — 32 vakhs, ten hero verses, Red Book mandala.
+ * v12: Gospel of Mary (BG 8502) + Logia of Jesus (Nestle 1904) — living sayings family.
+ * v13: Gospel of Mary expanded 12→26 argument-arc units (still no invented lacunae).
+ * v14: Sufi wave — Attar Conference of the Birds, Hujwīrī Kashf al-Maḥjūb,
+ * and enriched Know Yourself (Balyānī). */
+const CACHE_VERSION = 14;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";
@@ -64,17 +69,63 @@ function readEnvelope<T>(key: string): CatalogCacheHit<T> | null {
   }
 }
 
+function catalogKeys(): string[] {
+  if (typeof window === "undefined") return [];
+  const keys: string[] = [];
+  for (let i = 0; i < localStorage.length; i += 1) {
+    const key = localStorage.key(i);
+    if (key?.startsWith("pratibha.catalog.")) keys.push(key);
+  }
+  return keys;
+}
+
+function isCurrentCatalogKey(key: string): boolean {
+  return (
+    key === collectionsStorageKey() ||
+    key === versesStorageKey("strong_draft") ||
+    key === versesStorageKey("all")
+  );
+}
+
+/** Drop superseded catalog snapshots (v1–v13, …) that still occupy the origin quota. */
+export function evictStaleCatalogCaches(): number {
+  let removed = 0;
+  for (const key of catalogKeys()) {
+    if (isCurrentCatalogKey(key)) continue;
+    localStorage.removeItem(key);
+    removed += 1;
+  }
+  return removed;
+}
+
+/** Drop every catalog cache, including the current version — Library will refetch. */
+export function dropCatalogCaches(): number {
+  let removed = 0;
+  for (const key of catalogKeys()) {
+    localStorage.removeItem(key);
+    removed += 1;
+  }
+  return removed;
+}
+
 function writeEnvelope<T>(key: string, items: T[]): void {
   if (typeof window === "undefined") return;
+  const envelope: CacheEnvelope<T> = {
+    v: CACHE_VERSION,
+    savedAt: Date.now(),
+    items,
+  };
+  const raw = JSON.stringify(envelope);
   try {
-    const envelope: CacheEnvelope<T> = {
-      v: CACHE_VERSION,
-      savedAt: Date.now(),
-      items,
-    };
-    localStorage.setItem(key, JSON.stringify(envelope));
+    evictStaleCatalogCaches();
+    localStorage.setItem(key, raw);
   } catch {
-    // Quota / private mode — catalog still works without persistence.
+    dropCatalogCaches();
+    try {
+      localStorage.setItem(key, raw);
+    } catch {
+      // Quota / private mode — catalog still works without persistence.
+    }
   }
 }
 

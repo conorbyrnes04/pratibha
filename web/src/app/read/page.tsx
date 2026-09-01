@@ -35,10 +35,10 @@ import { catalogQuoteCandidates } from "@/lib/heroQuotes";
 /** Library catalog lifecycle — never treat cold/fail as a true empty shelf. */
 type LibraryStatus = "loading" | "waking" | "ready" | "error";
 
-function reflectionPrompt(item: VerseItem): string {
-  const t = (item.themes || [])[0];
-  if (t) return `Where do you notice "${t}" in direct experience today?`;
-  return "What one shift in seeing does this passage invite right now?";
+function reflectionPrompt(item: VerseItem, t: (key: string, vars?: Record<string, string | number>) => string): string {
+  const theme = (item.themes || [])[0];
+  if (theme) return t("library.noticeTheme", { theme });
+  return t("library.shiftInvite");
 }
 
 // Shared-element flight timing — the tome's Red Book mandala morphs from the
@@ -131,9 +131,7 @@ function LibraryPageContent() {
         setStatus("ready");
         if (servedFromCache) {
           setShowingStale(true);
-          setLoadError(
-            "Couldn’t refresh the library — showing a saved catalog. Retry when the API is awake.",
-          );
+          setLoadError("library.staleCatalog");
         } else {
           setShowingStale(false);
           setLoadError("");
@@ -144,16 +142,12 @@ function LibraryPageContent() {
         if (hasCachedItems) {
           setStatus("ready");
           setShowingStale(true);
-          setLoadError(
-            "Couldn’t refresh the library — showing a saved catalog. Retry when the API is awake.",
-          );
+          setLoadError("library.staleCatalog");
         } else {
           setItems([]);
           setShowingStale(false);
           setStatus("error");
-          setLoadError(
-            "The library API is waking up or unreachable. This is not an empty corpus — wait a moment and try again.",
-          );
+          setLoadError("library.unreachable");
         }
       });
 
@@ -235,12 +229,16 @@ function LibraryPageContent() {
   const openTomeMeta =
     collection !== "all" ? tomes.find((t) => collectionsMatch(t.collection, collection)) : null;
   const openTomeRb = collection !== "all" ? redbookSlug(collection) : null;
-  const fallbackQuotes = useMemo(() => {
-    if (collection === "all") return [];
+  const fallbackQuoteKey = useMemo(() => {
+    if (collection === "all") return "";
     return catalogQuoteCandidates(
       filtered.map((x) => firstSentence(layerText(x, "translation") || layerText(x, "original") || "")),
-    );
+    ).join("\0");
   }, [collection, filtered]);
+  const fallbackQuotes = useMemo(
+    () => (fallbackQuoteKey ? fallbackQuoteKey.split("\0") : []),
+    [fallbackQuoteKey],
+  );
 
   return (
     <LayoutGroup>
@@ -387,7 +385,7 @@ function LibraryPageContent() {
 
           {isHardError ? (
             <div className="mt-4 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-4 font-sans text-sm text-amber-100">
-              <p>{loadError}</p>
+              <p>{t(loadError)}</p>
               <button
                 type="button"
                 onClick={retryCatalog}
@@ -400,7 +398,7 @@ function LibraryPageContent() {
 
           {showingStale && hasItems && loadError ? (
             <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-amber-300/20 bg-amber-300/5 p-4 font-sans text-sm text-amber-100/90">
-              <p>{loadError}</p>
+              <p>{t(loadError)}</p>
               <button
                 type="button"
                 onClick={retryCatalog}
@@ -501,11 +499,11 @@ function LibraryPageContent() {
                       <span>{t("library.coreIdea")}</span> {passagePreview(x) || t("library.openPassage")}
                     </p>
                     <p className="line-clamp-2">
-                      <span>Why it matters</span>{" "}
+                      <span>{t("library.whyItMatters")}</span>{" "}
                       {firstSentence(layerText(x, "commentary") || layerText(x, "translation") || "")}
                     </p>
                     <p className="line-clamp-2">
-                      <span>Practice</span> {practiceText(x) || reflectionPrompt(x)}
+                      <span>{t("common.practice")}</span> {practiceText(x) || reflectionPrompt(x, t)}
                     </p>
                   </div>
                 )}
@@ -514,7 +512,7 @@ function LibraryPageContent() {
             </div>
           ))}
           {filtered.length === 0 ? (
-            <p className="soft mt-6">No passages match. Try another search, or return to the shelf.</p>
+            <p className="soft mt-6">{t("library.noMatchTry")}</p>
           ) : null}
         </div>
       )}
@@ -525,8 +523,9 @@ function LibraryPageContent() {
 }
 
 export default function ReadPage() {
+  const t = useT();
   return (
-    <Suspense fallback={<main className="page-shell page-shell--library soft">Opening the library...</main>}>
+    <Suspense fallback={<main className="page-shell page-shell--library soft">{t("library.opening")}</main>}>
       <LibraryPageContent />
     </Suspense>
   );

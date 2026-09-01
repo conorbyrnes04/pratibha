@@ -3,7 +3,8 @@
 import { type ReactNode, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { HERO_QUOTE_DWELL_MS, heroQuotesFor, nextHeroQuoteIndex } from "@/lib/heroQuotes";
-import { useT } from "@/components/LocaleProvider";
+import { useLocale, useT } from "@/components/LocaleProvider";
+import { useLocalizedHeroQuotes } from "@/components/useLocalizedStudy";
 
 type CollectionGateProps = {
   collection: string;
@@ -27,11 +28,13 @@ export function CollectionGate({
     [collection, fallbackQuotes],
   );
   const reduceMotion = useReducedMotion();
+  const { locale } = useLocale();
   const { scrollY } = useScroll();
   const scale = useTransform(scrollY, [0, 380], [1, 0.42]);
   const quoteOpacity = useTransform(scrollY, [0, 200, 360], [1, 0.78, 0]);
   const chevronOpacity = useTransform(scrollY, [0, 160, 260], [1, 0.7, 0]);
   const [index, setIndex] = useState(0);
+  const { quote, pending } = useLocalizedHeroQuotes(quotes, index);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -40,15 +43,17 @@ export function CollectionGate({
   useEffect(() => {
     if (quotes.length === 0) return;
     setIndex(Math.floor(Math.random() * quotes.length));
-    if (reduceMotion || quotes.length < 2) return;
+  }, [collection, quotes]);
+
+  useEffect(() => {
+    if (reduceMotion || quotes.length < 2 || (locale !== "en" && pending)) return;
     const id = window.setInterval(() => {
       setIndex((i) => nextHeroQuoteIndex(i, quotes.length));
     }, HERO_QUOTE_DWELL_MS);
     return () => window.clearInterval(id);
-  }, [collection, quotes, reduceMotion]);
+  }, [locale, pending, quotes, reduceMotion]);
 
   const t = useT();
-  const quote = quotes[index] || "";
 
   function expandAgain() {
     window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
@@ -97,7 +102,7 @@ export function CollectionGate({
             <motion.span className="collection-gate__quote" style={{ opacity: quoteOpacity }}>
               <AnimatePresence mode="wait">
                 <motion.span
-                  key={`${collection}-${index}`}
+                  key={`${collection}-${index}-${quote}`}
                   initial={reduceMotion ? false : { opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={reduceMotion ? undefined : { opacity: 0 }}

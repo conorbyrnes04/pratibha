@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 import { ART_OVERLAY, pickArtSrc, type ArtOverlayKind } from "@/lib/collectionImages";
+import { useT } from "@/components/LocaleProvider";
 
 /**
  * Thangka-style artwork helpers with graceful degradation.
@@ -213,6 +214,7 @@ type ArtChipProps = {
  * for chat pinned-passage and similar study surfaces.
  */
 export function ArtChip({ src, title, subtitle, className = "", children }: ArtChipProps) {
+  const t = useT();
   return (
     // Overflow stays visible so FilterSelect menus aren't clipped; art is clipped on its own layer.
     <div className={`art-chip relative ${className}`}>
@@ -227,7 +229,7 @@ export function ArtChip({ src, title, subtitle, className = "", children }: ArtC
           imgClassName="[object-position:center_28%]"
         />
         <div className="min-w-0 flex-1">
-          <p className="layer-heading">Pinned passage</p>
+          <p className="layer-heading">{t("chat.pinnedPassage")}</p>
           <h2 className="mt-1 text-xl leading-tight text-amber-100 sm:text-2xl">{title}</h2>
           {subtitle ? <p className="soft mt-1 font-sans text-sm">{subtitle}</p> : null}
           {children}

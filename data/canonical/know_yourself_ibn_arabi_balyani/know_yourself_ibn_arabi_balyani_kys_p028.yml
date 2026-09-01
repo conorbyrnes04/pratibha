@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p028
-unit_label: 'Pearl #28'
-title: 'Pearl #28'
+unit_label: God’s Knowledge Does Not Depend on Annihilation
+title: God’s Knowledge Does Not Depend on Annihilation
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -14,14 +14,28 @@ themes:
 source_excerpt: The knowledge of God does not require the passing away of existence or the passing away
   of that passing away because things have no existence and what does not exist cannot pass away. Passing
   away implies the prior existence of the thing that passes away.
-translation_literal: The knowledge of God does not require the passing away of existence or the passing
-  away of that passing away because things have no existence and what does not exist cannot pass away.
-  Passing away implies the prior existence of the thing that passes away.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: And most of those who know God make the passing away of existence, and the passing
+  away of that passing away, a condition for attaining the knowledge of God; and that is an error and
+  a clear oversight. For the knowledge of God does not require the passing away of existence, nor the
+  passing away of its passing away. For a thing has no existence, and what has no existence cannot pass
+  away; for passing away comes after the affirmation of existence.
+commentary: 'The claim is deliberately sharper than a conventional account of fanāʾ, or mystical annihilation.
+  Many knowers, the author says, treat the disappearance of the self—and then the disappearance of consciousness
+  of that disappearance—as a necessary threshold for knowing God. The text contests the premise: annihilation
+  can only apply to something first granted independent existence. To posit such an existence, even in
+  order to erase it, is already to install an “other” beside God. In its uncompromising waḥdat al-wujūd
+  logic, the self is not a rival entity that must be destroyed; its apparent separateness is a misapprehension.
+  Self-knowledge is therefore knowledge of the Lord because to know oneself truly is to see that one’s
+  supposed self-standing existence was never there. The contested move is obvious: this passage converts
+  the language of spiritual experience into an ontological assertion that things simply lack existence
+  in their own right. Other Sufi writers preserve fanāʾ as a disciplined transformation of egoic attachment,
+  while theologians may object that denying created existence collapses the Creator–creature distinction.
+  Here, however, the correction sought is not self-erasure but the removal of the false claim that there
+  was an independently existing self to erase.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you notice yourself defending an identity—your success, injury, status, or opinion—pause
+  once and say inwardly: “This claim is not self-subsisting.” Then respond to the situation without needing
+  that claim to be absolute.'
 sanskrit_devanagari: 'وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك
   غلط وسهو واضح: فإن معرفة الله – تعالى – لا تحتاج إلى فناء الوجود ولا إلى فناء فنائه، لأن الشيء لا وجود
   له، وما لا وجود له لا فناء له؛ فإن الفناء بعد إثبات الوجود.'
@@ -34,41 +48,74 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك غلط وسهو واضح:
+    فإن معرفة الله – تعالى – لا تحتاج إلى فناء الوجود ولا إلى فناء فنائه، لأن الشيء لا وجود له، وما لا
+    وجود له لا فناء له؛ فإن الفناء بعد إثبات الوجود.'
 - kind: translation
   label: Pratibha Translation
-  body: The knowledge of God does not require the passing away of existence or the passing away of that
-    passing away because things have no existence and what does not exist cannot pass away. Passing away
-    implies the prior existence of the thing that passes away.
+  body: And most of those who know God make the passing away of existence, and the passing away of that
+    passing away, a condition for attaining the knowledge of God; and that is an error and a clear oversight.
+    For the knowledge of God does not require the passing away of existence, nor the passing away of its
+    passing away. For a thing has no existence, and what has no existence cannot pass away; for passing
+    away comes after the affirmation of existence.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The claim is deliberately sharper than a conventional account of fanāʾ, or mystical annihilation.
+    Many knowers, the author says, treat the disappearance of the self—and then the disappearance of consciousness
+    of that disappearance—as a necessary threshold for knowing God. The text contests the premise: annihilation
+    can only apply to something first granted independent existence. To posit such an existence, even
+    in order to erase it, is already to install an “other” beside God. In its uncompromising waḥdat al-wujūd
+    logic, the self is not a rival entity that must be destroyed; its apparent separateness is a misapprehension.
+    Self-knowledge is therefore knowledge of the Lord because to know oneself truly is to see that one’s
+    supposed self-standing existence was never there. The contested move is obvious: this passage converts
+    the language of spiritual experience into an ontological assertion that things simply lack existence
+    in their own right. Other Sufi writers preserve fanāʾ as a disciplined transformation of egoic attachment,
+    while theologians may object that denying created existence collapses the Creator–creature distinction.
+    Here, however, the correction sought is not self-erasure but the removal of the false claim that there
+    was an independently existing self to erase.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: العُرَّاف
+    definition: 'ʿurrāf, plural of ʿārif, from ʿ-r-f, “to know or recognize” -> those reputed to know
+      God -> more pointed than the default gloss “gnostics”: the passage criticizes a recognizable spiritual
+      elite.'
+  - term: فناء
+    definition: fanāʾ, from f-n-y, “to pass away, perish” -> the alleged extinction of existence -> not
+      merely emotional selflessness or humility, but a technical claim whose hidden presupposition is
+      under attack.
+  - term: فناء الفناء
+    definition: fanāʾ al-fanāʾ, “the passing away of passing away” -> the removal even of awareness of
+      annihilation -> missed by “complete annihilation,” since the author rejects the whole sequence as
+      conceptually misplaced.
+  - term: إثبات الوجود
+    definition: ithbāt al-wujūd, “affirming/positing existence” -> the prior attribution of existence
+      to a thing -> not a neutral observation; it is the decisive metaphysical error in the passage’s
+      argument.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
-    resonance: Both texts posit that ordinary perception obscures a non-dual reality, and that true knowledge
-      consists in recognizing the essential oneness underlying apparent multiplicity. The Upaniṣad's instruction
-      to 'know the unknowable' through understanding all things as one mirrors Ibn Arabi's claim that
-      knowledge of God requires recognizing that things have no independent existence.
-    divergence: The Upaniṣad frames this as a pedagogical method (hearing, perceiving, knowing through
-      instruction), while Ibn Arabi grounds it in an ontological claim about the non-existence of things
-      themselves—knowledge follows from metaphysical negation, not from perceptual reorientation.
-    passage_id: chāndogya_upaniṣad.chu_vi_01
-  - citation: The Book of Chuang Tzu — chapter 22
-    resonance: 'Both texts enact a paradox: they use language and conceptual inquiry to point toward a
-      knowledge that transcends conceptual thought. The Chuang Tzu''s dialogue between Knowledge and Do-nothing
-      Say-nothing mirrors Ibn Arabi''s suspension of interpretation—both suggest that the sought knowledge
-      cannot be grasped through the ordinary operations of mind.'
-    divergence: Chuang Tzu emphasizes the futility of seeking Tao through cognition itself (the comic
-      failure of Knowledge's quest), while Ibn Arabi emphasizes the logical impossibility of negation
-      (things cannot pass away because they do not exist)—one is epistemological, the other ontological.
-    passage_id: the_book_of_chuang_tzu.ctz_022
-  layer_provenance: generated_grounded
+  - citation: Qur’an 28:88
+    resonance: “Everything is perishing except His Face” supplies a scriptural vocabulary for the priority
+      of God over all transient things.
+    divergence: 'The verse speaks of perishing, whereas this passage presses further: things have no independent
+      existence that could undergo perishing.'
+  - citation: Qur’an 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” resonates with the treatise’s
+      denial that any temporal or spatial opposite stands alongside God.
+    divergence: The Qur’anic formulation need not itself entail the text’s radical denial of created being.
+  - citation: 'Hadith: “Who knows himself knows his Lord”'
+    resonance: 'The treatise makes self-knowledge the route to divine knowledge: discern the non-independence
+      of the self, and the Lord alone is known as truly real.'
+    divergence: Though foundational in Sufi literature, this saying is not generally established as an
+      authenticated prophetic hadith; the passage uses it as spiritual authority.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you notice yourself defending an identity—your success, injury, status, or opinion—pause
+    once and say inwardly: “This claim is not self-subsisting.” Then respond to the situation without
+    needing that claim to be absolute.'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -80,3 +127,16 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: And most of those who know God make the passing away of existence, and the passing away of
+  that passing away, a condition for attaining the knowledge of God; and that is an error and a clear
+  oversight. For the knowledge of God does not require the passing away of existence, nor the passing
+  away of its passing away. For a thing has no existence, and what has no existence cannot pass away;
+  for passing away comes after the affirmation of existence.
+abhyasa: 'Today, when you notice yourself defending an identity—your success, injury, status, or opinion—pause
+  once and say inwardly: “This claim is not self-subsisting.” Then respond to the situation without needing
+  that claim to be absolute.'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك غلط وسهو واضح:
+  فإن معرفة الله – تعالى – لا تحتاج إلى فناء الوجود ولا إلى فناء فنائه، لأن الشيء لا وجود له، وما لا وجود
+  له لا فناء له؛ فإن الفناء بعد إثبات الوجود.'

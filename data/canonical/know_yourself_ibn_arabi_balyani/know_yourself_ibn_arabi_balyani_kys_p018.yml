@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p018
-unit_label: 'Pearl #18'
-title: 'Pearl #18'
+unit_label: Knowing the Lord Unmakes the Independent Self
+title: Knowing the Lord Unmakes the Independent Self
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -14,15 +14,25 @@ source_excerpt: He also said, I knew my Lord through my Lord. What the Prophet p
   that you are not you but you are Him and there is no you. It is not that He enters into you or that
   you enter into Him, or that He comes out of you or that you come out of Him. That does not mean that
   you have being and you are qualified by this or that attribute.
-translation_literal: He also said, I knew my Lord through my Lord. What the Prophet pointed out by that,
-  is that you are not you but you are Him and there is no you. It is not that He enters into you or that
-  you enter into Him, or that He comes out of you or that you come out of Him. That does not mean that
-  you have being and you are qualified by this or that attribute.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: 'And he said—peace be upon him—“I knew my Lord by my Lord.” By this the Prophet points
+  out that you are not you: rather, you are He, without you. It is not that He enters into you, nor that
+  you enter into Him; nor that He proceeds from you, nor that you proceed from Him. Nor does this mean
+  that you are something existing, or that your attributes exist in this way at all.'
+commentary: 'The saying “I knew my Lord by my Lord” grounds knowledge not in a human faculty standing
+  over against God, but in God’s own self-disclosure. Its following claim is deliberately sharper: the
+  self one takes to be an independently existing “you” has no such standing. In the vocabulary of waḥdat
+  al-wujūd, there is no second existence alongside divine Being from which a knower could reach a separate
+  God. Yet the text immediately blocks a crude spatial mysticism. “He” does not enter the servant, and
+  the servant does not enter, emerge from, or mix with Him. The point is not incarnation, movement, or
+  fusion between two already established entities. Nor, it insists, does the human self retain a real
+  existence and merely acquire a divine attribute. The contested move lies precisely here: ordinary selfhood
+  is treated as a claim made by ignorance, not as an independently real thing later abolished. Self-knowledge
+  therefore means seeing the dependency and unreality of the separate claimant; knowledge of the Lord
+  is God known through God, rather than an object possessed by the ego.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when “my success,” “my failure,” or “my identity” arises in your mind, pause once and
+  silently ask: “What here exists by itself?” Then perform one needed act of care without making it proof
+  of a separate self.'
 sanskrit_devanagari: 'وقال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي." أشار – صلى الله عليه وسلم – بذلك
   أنك لست أنت، «بل» أنت هو بلا أنت: لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه؛
   ولا بذلك أنك موجود وصفتك هكذا أبدًا'
@@ -34,41 +44,68 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'وقال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي." أشار – صلى الله عليه وسلم – بذلك أنك لست أنت،
+    «بل» أنت هو بلا أنت: لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه؛ ولا بذلك أنك
+    موجود وصفتك هكذا أبدًا'
 - kind: translation
   label: Pratibha Translation
-  body: He also said, I knew my Lord through my Lord. What the Prophet pointed out by that, is that you
-    are not you but you are Him and there is no you. It is not that He enters into you or that you enter
-    into Him, or that He comes out of you or that you come out of Him. That does not mean that you have
-    being and you are qualified by this or that attribute.
+  body: 'And he said—peace be upon him—“I knew my Lord by my Lord.” By this the Prophet points out that
+    you are not you: rather, you are He, without you. It is not that He enters into you, nor that you
+    enter into Him; nor that He proceeds from you, nor that you proceed from Him. Nor does this mean that
+    you are something existing, or that your attributes exist in this way at all.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The saying “I knew my Lord by my Lord” grounds knowledge not in a human faculty standing over
+    against God, but in God’s own self-disclosure. Its following claim is deliberately sharper: the self
+    one takes to be an independently existing “you” has no such standing. In the vocabulary of waḥdat
+    al-wujūd, there is no second existence alongside divine Being from which a knower could reach a separate
+    God. Yet the text immediately blocks a crude spatial mysticism. “He” does not enter the servant, and
+    the servant does not enter, emerge from, or mix with Him. The point is not incarnation, movement,
+    or fusion between two already established entities. Nor, it insists, does the human self retain a
+    real existence and merely acquire a divine attribute. The contested move lies precisely here: ordinary
+    selfhood is treated as a claim made by ignorance, not as an independently real thing later abolished.
+    Self-knowledge therefore means seeing the dependency and unreality of the separate claimant; knowledge
+    of the Lord is God known through God, rather than an object possessed by the ego.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: عرفت
+    definition: from ʿ-r-f, “to know, recognize” -> a direct recognition of the Lord -> more than ordinary
+      informational knowledge or doctrinal assent.
+  - term: ربِّي
+    definition: from r-b-b, “to nurture, govern, sustain” -> “my Lord,” the one through whom the speaker
+      knows -> not merely a generic name for a remote deity.
+  - term: بربِّي
+    definition: bi-, “by/through,” plus “my Lord” -> God is both the means and the known in this recognition
+      -> missed when “by” is heard as only a human proof or argument.
+  - term: أنت هو بلا أنت
+    definition: “you are He, without you” -> negates an independently self-subsisting ego while rejecting
+      entry, exit, and mixture -> not a simple equation of the empirical person with God.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Pratyabhijnahrdayam — Sutra 13
-    resonance: 'Both texts enact a self-knowing that is simultaneously a recognition of one''s own nature
-      as the ultimate principle: Ibn Arabi''s ''I knew my Lord through my Lord'' mirrors the Pratyabhijnahrdayam''s
-      recognition of one''s own authorship as Supreme Consciousness. In both, the knower and known collapse
-      into a single act of self-disclosure.'
-    divergence: Ibn Arabi emphasizes the paradox of knowing the transcendent Lord *through* the Lord (a
-      Sufi apophatic move), while Pratyabhijnahrdayam grounds recognition in the intrinsic authorship
-      of consciousness itself (a Tantric non-dual epistemology).
-    passage_id: pratyabhijnahrdayam.phr_013
-  - citation: Isavasya Upanishad — Mantra 7
-    resonance: 'Both passages pivot on the recognition that dissolves the subject-object split: Ibn Arabi''s
-      self-knowing through the Lord parallels the Isavasya''s unity-vision that annihilates delusion and
-      sorrow. Each names a threshold where the illusion of separation ceases.'
-    divergence: Ibn Arabi's formulation emphasizes the paradoxical simultaneity of knowing and being known
-      by the Divine, while the Isavasya frames the result (cessation of delusion) rather than the recursive
-      structure of the knowing itself.
-    passage_id: isavasya_upanishad.isa_013
-  layer_provenance: generated_grounded
+  - citation: Qur’an 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supports the treatise’s refusal
+      to locate God as one being among others.
+    divergence: The verse does not itself formulate the text’s uncompromising conclusion that the separate
+      self has no existence.
+  - citation: Qur’an 28:88
+    resonance: “Everything is perishing except His Face” is used in Akbarian writings to stress the radical
+      dependence of all that appears.
+    divergence: Its immediate Qur’anic force concerns God’s abiding reality; reading it as denial of all
+      creaturely existence is a distinctive metaphysical extension.
+  - citation: Hadith qudsi, Ṣaḥīḥ Muslim 2569
+    resonance: “I was sick and you did not visit Me” identifies service to creatures with service directed
+      to God, loosening a simple God/world separation.
+    divergence: It commands ethical care for the sick; it does not explicitly teach identity of divine
+      and creaturely existence.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when “my success,” “my failure,” or “my identity” arises in your mind, pause once and
+    silently ask: “What here exists by itself?” Then perform one needed act of care without making it
+    proof of a separate self.'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -80,3 +117,15 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: 'And he said—peace be upon him—“I knew my Lord by my Lord.” By this the Prophet points out
+  that you are not you: rather, you are He, without you. It is not that He enters into you, nor that you
+  enter into Him; nor that He proceeds from you, nor that you proceed from Him. Nor does this mean that
+  you are something existing, or that your attributes exist in this way at all.'
+abhyasa: 'Today, when “my success,” “my failure,” or “my identity” arises in your mind, pause once and
+  silently ask: “What here exists by itself?” Then perform one needed act of care without making it proof
+  of a separate self.'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'وقال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي." أشار – صلى الله عليه وسلم – بذلك أنك لست
+  أنت، «بل» أنت هو بلا أنت: لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه؛ ولا بذلك
+  أنك موجود وصفتك هكذا أبدًا'

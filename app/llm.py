@@ -45,15 +45,28 @@ def _response_error_detail(resp: httpx.Response) -> str:
             return msg
     return resp.text[:240].strip() or resp.reason_phrase
 
-async def _post_chat(provider: str, payload: dict) -> httpx.Response:
+async def _post_chat(provider: str, payload: dict, timeout: float | None = None) -> httpx.Response:
+    request_timeout = timeout if timeout is not None else settings.REQUEST_TIMEOUT_S
     for attempt in range(settings.MAX_RETRIES+1):
-        r = await http.post(_url(provider), headers=_headers(provider), json=payload)
+        r = await http.post(
+            _url(provider),
+            headers=_headers(provider),
+            json=payload,
+            timeout=request_timeout,
+        )
         if r.status_code in (429,500,502,503,504) and attempt < settings.MAX_RETRIES:
             await asyncio.sleep(0.5*(2**attempt)); continue
         return r
     return r
 
-async def chat_completion(messages: Sequence[Message], model: str, temperature: float=0.2, stream: bool=False, max_tokens: int | None = None):
+async def chat_completion(
+    messages: Sequence[Message],
+    model: str,
+    temperature: float=0.2,
+    stream: bool=False,
+    max_tokens: int | None = None,
+    timeout: float | None = None,
+):
     provider, model_name = _provider_and_model(model)
     payload = {
         "model": model_name,
@@ -62,7 +75,7 @@ async def chat_completion(messages: Sequence[Message], model: str, temperature: 
         "max_tokens": max_tokens or settings.CHAT_MAX_TOKENS,
         "stream": stream,
     }
-    resp = await _post_chat(provider, payload)
+    resp = await _post_chat(provider, payload, timeout=timeout)
     if resp.status_code >= 400:
         detail = _response_error_detail(resp)
         raise RuntimeError(f"OpenRouter chat failed ({resp.status_code}): {detail}" if provider == "openrouter" else f"{provider} chat failed ({resp.status_code}): {detail}")
@@ -85,12 +98,26 @@ def _model_candidates(primary_model: str | None = None, fallback_model: str | No
     return deduped or [settings.OPENROUTER_MODEL]
 
 
-async def smart_chat(messages: Sequence[Message], primary_model: str|None=None, fallback_model: str|None=None, temperature: float=0.2, max_tokens: int | None = None) -> str:
+async def smart_chat(
+    messages: Sequence[Message],
+    primary_model: str|None=None,
+    fallback_model: str|None=None,
+    temperature: float=0.2,
+    max_tokens: int | None = None,
+    timeout: float | None = None,
+) -> str:
     last_error: Exception | None = None
     text = ""
     for model in _model_candidates(primary_model, fallback_model):
         try:
-            r = await chat_completion(messages, model, temperature, stream=False, max_tokens=max_tokens)
+            r = await chat_completion(
+                messages,
+                model,
+                temperature,
+                stream=False,
+                max_tokens=max_tokens,
+                timeout=timeout,
+            )
             data = r.json()
             text = data["choices"][0]["message"]["content"].strip()
             if text:

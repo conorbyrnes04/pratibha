@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p027
-unit_label: 'Pearl #27'
-title: 'Pearl #27'
+unit_label: Knowing God Does Not Require the Extinction of What Never Existed
+title: Knowing God Does Not Require the Extinction of What Never Existed
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -14,14 +14,27 @@ themes:
 source_excerpt: That is clearly an error and misconception. The knowledge of God does not require the
   passing away of existence or the passing away of that passing away because things have no existence
   and what does not exist cannot pass away.
-translation_literal: That is clearly an error and misconception. The knowledge of God does not require
-  the passing away of existence or the passing away of that passing away because things have no existence
-  and what does not exist cannot pass away.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: And most of those who know God make a ceasing of existence and the ceasing of that
+  ceasing a condition of attaining the knowledge of God, and that is an error and a clear oversight. For
+  the knowledge of God does not presuppose the ceasing of existence nor the ceasing of that ceasing. For
+  things have no existence, and what does not exist cannot cease to exist. For ceasing to be implies the
+  positing of existence.
+commentary: 'The passage disputes a familiar mystical sequence: first the self or world exists, then it
+  is annihilated (fanāʾ), and finally even that annihilation disappears. Its claim is sharper: this sequence
+  already grants independent existence to the thing that is supposedly annihilated. In this radical waḥdat
+  al-wujūd idiom, created “things” possess no existence of their own beside God; therefore their fanāʾ
+  cannot be a real event affecting a real rival being. Self-knowledge is knowledge of the Lord precisely
+  when one sees that the self never stood as an autonomous existent needing to be erased. The contested
+  move is evident. Rather than treating creation as a genuinely existent, though dependent, reality, the
+  text calls its existence nothing in itself and identifies the affirmation of any independently real
+  other as shirk. This does not merely criticize attachment to ego; it challenges the ontology behind
+  the language of spiritual extinction. The intended transformation is thus epistemic: ignorance is removed,
+  not an entity. Yet the argument presses beyond many Sunni theological accounts, which uphold created
+  existence as real but contingent, and beyond Sufi uses of fanāʾ that describe the extinction of self-claim
+  rather than the nonexistence of creatures.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you say “my existence,” pause once and replace the possessive claim with a question:
+  what in this moment is actually mine by itself?'
 sanskrit_devanagari: 'وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك
   غلط وسهو واضح: فإن معرفة الله – تعالى – لا تحتاج إلى فناء الوجود ولا إلى فناء فنائه، لأن الشيء لا وجود
   له، وما لا وجود له لا فناء له؛ فإن الفناء بعد إثبات الوجود.'
@@ -34,37 +47,68 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك غلط وسهو واضح:
+    فإن معرفة الله – تعالى – لا تحتاج إلى فناء الوجود ولا إلى فناء فنائه، لأن الشيء لا وجود له، وما لا
+    وجود له لا فناء له؛ فإن الفناء بعد إثبات الوجود.'
 - kind: translation
   label: Pratibha Translation
-  body: That is clearly an error and misconception. The knowledge of God does not require the passing
-    away of existence or the passing away of that passing away because things have no existence and what
-    does not exist cannot pass away.
+  body: And most of those who know God make a ceasing of existence and the ceasing of that ceasing a condition
+    of attaining the knowledge of God, and that is an error and a clear oversight. For the knowledge of
+    God does not presuppose the ceasing of existence nor the ceasing of that ceasing. For things have
+    no existence, and what does not exist cannot cease to exist. For ceasing to be implies the positing
+    of existence.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The passage disputes a familiar mystical sequence: first the self or world exists, then it is
+    annihilated (fanāʾ), and finally even that annihilation disappears. Its claim is sharper: this sequence
+    already grants independent existence to the thing that is supposedly annihilated. In this radical
+    waḥdat al-wujūd idiom, created “things” possess no existence of their own beside God; therefore their
+    fanāʾ cannot be a real event affecting a real rival being. Self-knowledge is knowledge of the Lord
+    precisely when one sees that the self never stood as an autonomous existent needing to be erased.
+    The contested move is evident. Rather than treating creation as a genuinely existent, though dependent,
+    reality, the text calls its existence nothing in itself and identifies the affirmation of any independently
+    real other as shirk. This does not merely criticize attachment to ego; it challenges the ontology
+    behind the language of spiritual extinction. The intended transformation is thus epistemic: ignorance
+    is removed, not an entity. Yet the argument presses beyond many Sunni theological accounts, which
+    uphold created existence as real but contingent, and beyond Sufi uses of fanāʾ that describe the extinction
+    of self-claim rather than the nonexistence of creatures.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: العُرَّاف
+    definition: ʿarrāf, from ʿ-r-f, “to know/recognize” -> those reputed to know God -> not simply occult
+      “diviners,” but mystical knowers whose doctrine is being criticized.
+  - term: فناء الوجود
+    definition: fanāʾ, “passing away, extinction” + wujūd, “being/existence” -> the annihilation of existence
+      proposed as a condition of gnosis -> more radical than the default gloss “ego death,” since the
+      issue is whether any creaturely being was ever independently real.
+  - term: فناء الفناء
+    definition: fanāʾ al-fanāʾ, “the extinction of extinction” -> a second-order disappearance of awareness
+      of one’s own annihilation -> not a spiritual achievement here, but evidence that one has first reified
+      what cannot possess existence.
+  - term: إثبات الوجود
+    definition: ithbāt, “affirming/positing,” + wujūd, “existence” -> granting existence to the thing
+      later said to vanish -> missed by “passing away,” which can hide the text’s polemic against ontological
+      affirmation of an other.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Heraclitus Fragments
-    resonance: 'Both texts diagnose a fundamental error in ordinary cognition: people mistake their habitual
-      impressions for genuine knowledge, failing to recognize the gap between seeming-to-know and actual
-      understanding. The move is to expose false certainty as the primary obstacle.'
-    divergence: Heraclitus locates the error in failure to listen to the universal Logos; Ibn Arabi's
-      pointer suspends interpretation itself, inviting direct disclosure rather than reasoned instruction.
-    passage_id: heraclitus_fragments.hfr_p005
-  - citation: The Book of Chuang Tzu — chapter 22
-    resonance: Both texts stage an encounter where the seeker asks how knowledge itself is to be known
-      or accessed—posing the question of method as inseparable from the object. The structural move is
-      to make the inquiry into knowledge reflexive rather than instrumental.
-    divergence: Chuang Tzu's dialogue unfolds through paradoxical exchange and names (Do-nothing Say-nothing);
-      Ibn Arabi's commentary calls for pause and direct insight, bypassing discursive dialogue.
-    passage_id: the_book_of_chuang_tzu.ctz_022
-  layer_provenance: generated_grounded
+  - citation: Qur'an 28:88
+    resonance: “Everything is perishing except His Face” is later read in this treatise as denying any
+      independent existent besides God.
+    divergence: The Qur'anic wording can also be read as affirming created things while declaring their
+      perishability; this passage rejects that temporal ontology.
+  - citation: 'Hadith: “Whoever knows himself knows his Lord”'
+    resonance: The treatise makes self-knowledge disclose the self’s lack of autonomous existence and
+      thereby divine oneness.
+    divergence: The report’s status and meaning are disputed, and many interpreters take it as knowledge
+      of dependence and limitation, not identity-language about being.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you say “my existence,” pause once and replace the possessive claim with a question:
+    what in this moment is actually mine by itself?'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -76,3 +120,15 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: And most of those who know God make a ceasing of existence and the ceasing of that ceasing
+  a condition of attaining the knowledge of God, and that is an error and a clear oversight. For the knowledge
+  of God does not presuppose the ceasing of existence nor the ceasing of that ceasing. For things have
+  no existence, and what does not exist cannot cease to exist. For ceasing to be implies the positing
+  of existence.
+abhyasa: 'Today, when you say “my existence,” pause once and replace the possessive claim with a question:
+  what in this moment is actually mine by itself?'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك غلط وسهو واضح:
+  فإن معرفة الله – تعالى – لا تحتاج إلى فناء الوجود ولا إلى فناء فنائه، لأن الشيء لا وجود له، وما لا وجود
+  له لا فناء له؛ فإن الفناء بعد إثبات الوجود.'

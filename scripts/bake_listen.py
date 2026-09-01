@@ -61,28 +61,53 @@ LIVING = [
     "become-sunlike",
     "divine-darkness",
     "what-is-up-to-you",
+    "the-living-saying",
+    "before-the-face",
+    "the-beloved-in-plain-sight",
+    "the-sacred-tremor",
+    "lallas-house",
+    "straight-speech",
+    "know-yourself",
+    "unveiling-the-veiled",
+    "the-seven-valleys",
+    "the-reed-complains",
+    "the-body-of-hatha",
+    "humaneness-at-hand",
+    "cutting-the-diamond",
 ]
 
 
 def _parse_tracks(path: Path) -> list[tuple[str, list[str], list[str]]]:
     text = path.read_text()
     tracks: list[tuple[str, list[str], list[str]]] = []
-    for chunk in re.split(r'\n  \{\n    id: "', text)[1:]:
-        tid = chunk.split('"', 1)[0]
+
+    def collect(tid: str, chunk: str) -> None:
         primaries = re.findall(r'passageId:\s*"([^"]+)"', chunk)
         supporting: list[str] = []
         for match in re.finditer(r'supportingPassageIds:\s*\[(.*?)\]', chunk, re.S):
             supporting.extend(re.findall(r'"([^"]+)"', match.group(1)))
         if primaries or supporting:
             tracks.append((tid, primaries, supporting))
+
+    chunks = re.split(r'\n  \{\n    id: "', text)
+    if len(chunks) > 1:
+        for chunk in chunks[1:]:
+            collect(chunk.split('"', 1)[0], chunk)
+        return tracks
+
+    match = re.search(r'export const \w+: LearningTrack = \{\s*id: "([^"]+)"', text)
+    if match:
+        collect(match.group(1), text)
     return tracks
 
 
+_TRACK_DIR = ROOT / "web/src/lib/learn/tracks"
 TRACK_FILES = (
     ROOT / "web/src/lib/learningPaths.ts",
     ROOT / "web/src/lib/learn/livingTrails.ts",
     ROOT / "web/src/lib/learn/lineageTrails.ts",
     ROOT / "web/src/lib/learn/westernTrails.ts",
+    *sorted(_TRACK_DIR.glob("*.ts")),
 )
 
 
@@ -314,6 +339,16 @@ def collect_supporting(track_ids: list[str]) -> tuple[list[dict], list[str]]:
 HEROES_PATH = ROOT / "data" / "listen_heroes.json"
 
 
+def collect_work(work_id: str) -> tuple[list[dict], list[str]]:
+    want = work_id.strip().lower()
+    verses = [
+        v for v in get_all_verses()
+        if str(v.get("work_id") or "").strip().lower() == want
+    ]
+    keyed = [v for v in verses if v.get("tts_key")]
+    return (keyed or verses), []
+
+
 def collect_hero_verses() -> tuple[list[dict], list[str]]:
     if not HEROES_PATH.is_file():
         print("Missing data/listen_heroes.json — run scripts/select_listen_heroes.py first")
@@ -341,11 +376,12 @@ async def main() -> int:
     ap = argparse.ArgumentParser(description="Bake Listen cues and Path speech.")
     ap.add_argument(
         "--slice",
-        choices=("cues", "path", "walkable", "tracks", "heroes", "suggested"),
+        choices=("cues", "path", "walkable", "tracks", "heroes", "suggested", "work"),
         default="path",
         help="path = cues + essential Path primaries. suggested = Path supporting readings.",
     )
     ap.add_argument("--tracks", nargs="*", default=[], help="Track ids when --slice tracks.")
+    ap.add_argument("--work", default="", help="Work_id when --slice work (bakes tts_key verses if any).")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument(
         "--reserve",
@@ -381,6 +417,12 @@ async def main() -> int:
         track_ids = list(args.tracks)
     elif args.slice == "heroes":
         verses, unresolved = collect_hero_verses()
+    elif args.slice == "work":
+        if not args.work:
+            print("--work is required with --slice work")
+            return 1
+        verses, unresolved = collect_work(args.work)
+        print(f"Work {args.work}: {len(verses)} verses")
     elif args.slice == "suggested":
         verses, unresolved = collect_supporting(list(SPINE))
 

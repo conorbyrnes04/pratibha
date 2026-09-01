@@ -8,7 +8,8 @@ Expo (SDK 54) app for reading passages, learning paths, journal notes, and chat.
 - [Expo Go](https://expo.dev/go) on your phone (iOS or Android)
 - Pratibha **API running and reachable from your phone** (see root [README](../README.md))
 
-Simulator/emulator: default `http://127.0.0.1:8000` is fine. **Physical device:** the API must listen on all interfaces and you must point the app at your computer's LAN IP.
+Simulator/emulator: default production API (`https://pratibha-1.onrender.com`) works without setup.
+**Physical device, local API:** the API must listen on all interfaces and you must point the app at your computer's LAN IP (Settings → Library).
 
 ## Install and run
 

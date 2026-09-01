@@ -1,4 +1,4 @@
-import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
+import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
 import { PratibhaText, ui } from "@/components/ui/PratibhaText";
 import { useStudy } from "@/context/StudyContext";
 import { stepKey } from "@/lib/storage";
@@ -12,7 +12,7 @@ export default function PathScreen() {
 
   if (!track) {
     return (
-      <PratibhaScreen>
+      <PratibhaScreen edges={stackScreenEdges}>
         <PratibhaText variant="soft">Path not found.</PratibhaText>
       </PratibhaScreen>
     );
@@ -23,7 +23,7 @@ export default function PathScreen() {
   const nextIndex = track.steps.findIndex((s) => !progress[stepKey(track.id, s.id)]);
 
   return (
-    <PratibhaScreen>
+    <PratibhaScreen edges={stackScreenEdges}>
       <PratibhaText variant="eyebrow">Path</PratibhaText>
       <PratibhaText variant="title" style={{ marginTop: 8 }}>
         {track.title}

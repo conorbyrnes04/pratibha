@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p036
-unit_label: 'Pearl #36'
-title: 'Pearl #36'
+unit_label: God Alone Is the Reality of Every Horizon of Time
+title: God Alone Is the Reality of Every Horizon of Time
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -13,14 +13,25 @@ themes: []
 source_excerpt: God is the very being of eternity-without-beginning, eternity-without-end and timelessness
   even though in reality there is no eternity-without-beginning, eternity-with-out-end or timelessness.
   If it were otherwise, He would not be alone, without any associate.
-translation_literal: God is the very being of eternity-without-beginning, eternity-without-end and timelessness
-  even though in reality there is no eternity-without-beginning, eternity-with-out-end or timelessness.
-  If it were otherwise, He would not be alone, without any associate.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: For God is the existence of past eternity, the existence of future eternity, and
+  the existence of primordial timelessness; yet without past eternity, future eternity, or primordial
+  timelessness existing. For otherwise He would not be alone, without any partner.
+commentary: 'The claim is not merely that God lasts through infinite time. It is sharper: what is called
+  beginningless eternity, endless duration, and ancientness has no independent reality alongside Him.
+  God is their “existence,” while these temporal or conceptual horizons are denied separate standing.
+  This is a characteristic waḥdat al-wujūd move: every apparent determination is referred back to the
+  one Real, rather than being granted even a subtle co-eternity with God. The argument protects tawḥīd
+  by refusing a second reality—not only another god, but also an independently existing “eternity” in
+  which God might reside. Self-knowledge follows the same logic. To know oneself is to discover that one’s
+  presumed self-standing existence is not an additional fact beside the Real. The contested move is evident:
+  the text does not simply say that creatures depend on God; it treats all otherness, including time itself,
+  as lacking existence in its own right. Many theologians preserve a firmer distinction between God and
+  created things, even while affirming radical dependence. Here, however, distinction is relocated from
+  independent being to the level of names, appearances, and relations.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you feel pressed by time—by what is overdue, finished, or still to come—pause for
+  one minute and say inwardly: “These horizons do not stand by themselves.” Then do the next necessary
+  act without treating urgency as an independent power.'
 sanskrit_devanagari: فالله هو وجود الأزل ووجود الأبد ووجود القِدَم؛ فإنه بلا وجود الأزل والأبد والقِدَم
   لم يكن كذلك ما كان وحده لا شريك له.
 sanskrit_iast: ''
@@ -31,48 +42,66 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: فالله هو وجود الأزل ووجود الأبد ووجود القِدَم؛ فإنه بلا وجود الأزل والأبد والقِدَم لم يكن كذلك
+    ما كان وحده لا شريك له.
 - kind: translation
   label: Pratibha Translation
-  body: God is the very being of eternity-without-beginning, eternity-without-end and timelessness even
-    though in reality there is no eternity-without-beginning, eternity-with-out-end or timelessness. If
-    it were otherwise, He would not be alone, without any associate.
+  body: For God is the existence of past eternity, the existence of future eternity, and the existence
+    of primordial timelessness; yet without past eternity, future eternity, or primordial timelessness
+    existing. For otherwise He would not be alone, without any partner.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The claim is not merely that God lasts through infinite time. It is sharper: what is called beginningless
+    eternity, endless duration, and ancientness has no independent reality alongside Him. God is their
+    “existence,” while these temporal or conceptual horizons are denied separate standing. This is a characteristic
+    waḥdat al-wujūd move: every apparent determination is referred back to the one Real, rather than being
+    granted even a subtle co-eternity with God. The argument protects tawḥīd by refusing a second reality—not
+    only another god, but also an independently existing “eternity” in which God might reside. Self-knowledge
+    follows the same logic. To know oneself is to discover that one’s presumed self-standing existence
+    is not an additional fact beside the Real. The contested move is evident: the text does not simply
+    say that creatures depend on God; it treats all otherness, including time itself, as lacking existence
+    in its own right. Many theologians preserve a firmer distinction between God and created things, even
+    while affirming radical dependence. Here, however, distinction is relocated from independent being
+    to the level of names, appearances, and relations.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: الأزل
+    definition: from a root suggesting what has no beginning -> beginningless eternity -> not simply “the
+      distant past,” but a category the passage refuses to treat as an entity beside God.
+  - term: الأبد
+    definition: from a root denoting perpetuity -> endless futurity -> more than “forever”; it is the
+      imagined limitless after that cannot stand independently with God.
+  - term: القِدَم
+    definition: from q-d-m, priorness or ancientness -> primordial precedence -> missed by “timelessness,”
+      which can hide its role as a conceptual claim of priority denied separate reality.
+  - term: لا شريك له
+    definition: sh-r-k, sharing or partnership -> no co-holder of reality -> stronger than denying rival
+      worship; it excludes any independently subsisting associate.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Mandukya Upanishad and Gaudapada Karika — Verse 7 · Turīya — The Fourth
-    resonance: Both texts negate all positive predicates (temporal, conscious, unconscious) to point toward
-      what cannot be conceptually grasped—Ibn Arabi denies eternity-without-beginning/end and timelessness
-      while Mandukya denies inward/outward consciousness and consciousness itself—each negation clearing
-      the ground for direct recognition of what remains.
-    divergence: Mandukya uses systematic negation (neti neti) as a ladder to Turīya's transcendent fourth
-      state; Ibn Arabi's negation collapses the distinction between God's being and the unreality of temporal
-      categories, emphasizing paradox and surrender rather than hierarchical ascent.
-    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_009
-  - citation: Patañjali Yoga Sūtras 4.31
-    resonance: 'Both texts describe a radical subtraction: when all coverings or conceptual overlays dissolve,
-      what remains is almost nothing—a knowledge so stripped of content that it approaches emptiness,
-      yet this emptiness is the true knowledge itself.'
-    divergence: Patañjali frames this as the final stage of yogic discrimination (kaivalya) where subject-object
-      duality collapses; Ibn Arabi presents it as a paradoxical simultaneity where God's being and the
-      non-being of all categories coexist, emphasizing mystical recognition over systematic progression.
-    passage_id: patañjali_yoga_sūtras.ys_4_31
-  - citation: Siva Sutra — Śāmbhavopāya
-    resonance: Both texts locate knowledge in a reflexive turn—reflection becoming self-knowledge, and
-      the direct disclosure of truth through cessation of interpretive overlay—where the act of knowing
-      itself reveals the Self without mediation.
-    divergence: Śiva Sūtra grounds this in Śāmbhavopāya (the direct path of Śiva's grace) as an ontological
-      principle of consciousness; Ibn Arabi's pointer suspends interpretation itself, asking the reader
-      to let insight disclose directly rather than through systematic reflection.
-    passage_id: siva_sutra.ss_i_17
-  layer_provenance: generated_grounded
+  - citation: Qur’an 57:3
+    resonance: “He is the First and the Last” similarly denies that temporal priority and posteriority
+      limit God.
+    divergence: The verse states divine names; this passage draws the more daring ontological conclusion
+      that beginninglessness and endlessness themselves have no existence apart from Him.
+  - citation: Qur’an 112:1–4
+    resonance: The insistence that God has no partner echoes the uncompromising divine uniqueness of al-Ikhlāṣ.
+    divergence: The sūrah does not explicitly identify all apparent realities with God’s existence, whereas
+      this text presses toward that waḥdat al-wujūd formulation.
+  - citation: 'Hadith: “Whoever knows himself knows his Lord”'
+    resonance: The treatise frames knowledge of the self as the route by which dependence and non-self-subsistence
+      are disclosed.
+    divergence: The saying’s status and interpretation are debated; this text gives it a highly metaphysical,
+      nondual reading rather than an ethical or devotional one.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you feel pressed by time—by what is overdue, finished, or still to come—pause for
+    one minute and say inwardly: “These horizons do not stand by themselves.” Then do the next necessary
+    act without treating urgency as an independent power.'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -84,3 +113,13 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: For God is the existence of past eternity, the existence of future eternity, and the existence
+  of primordial timelessness; yet without past eternity, future eternity, or primordial timelessness existing.
+  For otherwise He would not be alone, without any partner.
+abhyasa: 'Today, when you feel pressed by time—by what is overdue, finished, or still to come—pause for
+  one minute and say inwardly: “These horizons do not stand by themselves.” Then do the next necessary
+  act without treating urgency as an independent power.'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: فالله هو وجود الأزل ووجود الأبد ووجود القِدَم؛ فإنه بلا وجود الأزل والأبد والقِدَم لم يكن كذلك
+  ما كان وحده لا شريك له.

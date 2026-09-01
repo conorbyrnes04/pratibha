@@ -16,10 +16,12 @@ export function setApiBaseOverride(url: string | null): void {
   runtimeApiBase = url?.replace(/\/$/, "") || null;
 }
 
+export const PRODUCTION_API_BASE = "https://pratibha-1.onrender.com";
+
 export function getApiBase(): string {
   if (runtimeApiBase) return runtimeApiBase;
   const extra = Constants.expoConfig?.extra as { apiBase?: string } | undefined;
-  return extra?.apiBase || process.env.EXPO_PUBLIC_API_BASE || "http://127.0.0.1:8000";
+  return extra?.apiBase || process.env.EXPO_PUBLIC_API_BASE || PRODUCTION_API_BASE;
 }
 
 function withMaturity(path: string, minMaturity?: EditorialMaturity | "all"): string {

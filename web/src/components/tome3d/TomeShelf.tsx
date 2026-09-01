@@ -4,18 +4,24 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import type { LibraryTome } from "@/lib/libraryTomes";
 import type { TomeShelfProps } from "./types";
+import { useT } from "@/components/LocaleProvider";
 
 const TomeShelfCanvas = dynamic(
   () => import("./TomeShelfCanvas").then((m) => m.TomeShelfCanvas),
   {
     ssr: false,
-    loading: () => (
-      <div className="tome-shelf-3d__loading" aria-hidden>
-        <p className="soft font-sans text-sm">Setting the shelf…</p>
-      </div>
-    ),
+    loading: () => <TomeShelfLoading />,
   },
 );
+
+function TomeShelfLoading() {
+  const t = useT();
+  return (
+    <div className="tome-shelf-3d__loading" aria-hidden>
+      <p className="soft font-sans text-sm">{t("library.settingShelf")}</p>
+    </div>
+  );
+}
 
 function indexFromPointerY(
   clientY: number,
@@ -29,6 +35,7 @@ function indexFromPointerY(
 }
 
 export function TomeShelf({ tomes, onOpen, className }: TomeShelfProps) {
+  const t = useT();
   const rootRef = useRef<HTMLDivElement>(null);
   const railRef = useRef<HTMLElement>(null);
   const scrubIndexRef = useRef<number | null>(null);
@@ -71,7 +78,7 @@ export function TomeShelf({ tomes, onOpen, className }: TomeShelfProps) {
       <nav
         ref={railRef}
         className={railHot ? "tome-shelf-3d__rail is-hot" : "tome-shelf-3d__rail"}
-        aria-label="Browse texts"
+        aria-label={t("library.browseTexts")}
         onPointerEnter={(e: ReactPointerEvent<HTMLElement>) => {
           if (opening) return;
           setRailHot(true);
@@ -94,7 +101,7 @@ export function TomeShelf({ tomes, onOpen, className }: TomeShelfProps) {
                     active ? "tome-shelf-3d__tick is-active" : "tome-shelf-3d__tick"
                   }
                   aria-current={active ? "true" : undefined}
-                  aria-label={`${tome.displayName} by ${tome.author}`}
+                  aria-label={t("library.byAuthor", { title: tome.displayName, author: tome.author })}
                   title={tome.displayName}
                   disabled={opening}
                   onClick={() => {
@@ -148,7 +155,7 @@ export function TomeShelf({ tomes, onOpen, className }: TomeShelfProps) {
               {tome.displayName}
               <span>
                 {tome.author} · {tome.tradition} · {tome.count}{" "}
-                {tome.count === 1 ? "passage" : "passages"}
+                {tome.count === 1 ? t("library.passageOne") : t("library.passageMany")}
               </span>
             </button>
           </li>
@@ -156,7 +163,7 @@ export function TomeShelf({ tomes, onOpen, className }: TomeShelfProps) {
       </ul>
 
       <p className="tome-shelf-3d__hint soft font-sans text-xs">
-        {opening ? "Opening…" : "Slide the ticks · click a tome to open"}
+        {opening ? t("common.opening") : t("library.slideTicks")}
       </p>
     </div>
   );

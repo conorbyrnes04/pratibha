@@ -1,4 +1,7 @@
 import type { LearningTrack } from "../learningPaths";
+import { DEEPENING_TRAILS } from "./deepeningTrails";
+import { LINEAGE_TRAILS } from "./lineageTrails";
+import { WESTERN_TRAILS } from "./westernTrails";
 
 /** Authored tradition trails that are not on the essential spine. */
 export const LIVING_TRAILS: LearningTrack[] = [
@@ -461,4 +464,201 @@ export const LIVING_TRAILS: LearningTrack[] = [
       },
     ],
   },
+  {
+    id: "the-sacred-tremor",
+    title: "The Sacred Tremor",
+    level: "Intermediate",
+    focus: "Spandakārikā: vibration as method, not a second recognition",
+    outcome:
+      "Feel opening and closing in this awareness; test the pulse in an ordinary blockage; let agitation dissolve without a purification project; tell the binding surge from the tremor; discern the pulse in waking; locate it in a spike; catch what escaped attention; inhabit arising and dissolving without becoming their puppet.",
+    description:
+      "An eight-gate method-walk through the Spandakārikā — the pulse itself, not another identity-claim.",
+    arc:
+      "Recognition already named what you are. Here the work is kinetic. The world is a pulse of eyelids — unmeṣa and nimeṣa in this looking. There is no obstruction anywhere; a wall is a contraction of attention. Effort cannot purify the pulse. The same tremor binds when you ride only the outward phase and call excitement awakening. Method is fieriness toward the vibration in ordinary waking, including anger, joy, and the running body. Catch what escaped. Fruition is inhabiting arising and dissolving — not a new self called lord, and not a restatement of you are Śiva.",
+    estimatedSessions: "8 gates · ~20 min each",
+    steps: [
+      {
+        id: "sp-opening-closing",
+        title: "Opening and closing of the eyes",
+        orientation:
+          "If unmeṣa-nimeṣa remain a story about Śakti's eyes in the sky, later fieriness is just enthusiasm.",
+        teaching:
+          "Through whose opening and closing of the eyes the world's dissolution and arising occur — that source we praise. This is not a blink metaphor and not a cosmology to admire. Unmeṣa is the outward unfurling of appearance; nimeṣa is the inward reabsorption. They are not sequential events on a timeline. They are the intrinsic breathing of awareness. The Śiva Sūtra names the surge as Bhairava — an identity. Here you do not conclude the name. You notice the pulse: something appearing, something withdrawing, in this looking. The path is not transcendence of the world. It is attending to the world-making tremor as it is already doing this.",
+        keyIdea: "Feel the turn between appearing and withdrawing. Do not name it Śiva.",
+        misconception:
+          "That creation and dissolution are cosmic events out there, or that the eyelids are only a pretty metaphor.",
+        passageId: "yoga_spandakarika.sp_01",
+        supportingPassageIds: ["siva_sutra.ss_i_5"],
+        theme: "practice",
+        chatMode: "practice",
+        chatPrompt:
+          "Do not conclude that I am Śiva. Model the pulse: opening and closing already happening. Help me feel unmeṣa-nimeṣa in this awareness, not as a cosmic story out there.",
+        practice:
+          "Sit five minutes with ordinary breath. At each turn between in and out, notice appearing and withdrawing before you name anything. Do not congratulate a recognition. Just keep the pulse in view.",
+        journalPrompt:
+          "Where am I still watching creation happen somewhere else?",
+        integration:
+          "You can feel unmeṣa-nimeṣa in this awareness, not only as a story about the cosmos.",
+      },
+      {
+        id: "sp-no-obstruction",
+        title: "No obstruction anywhere",
+        orientation:
+          "After the eyelids, the mind looks for a special place where vibration lives. The kārikā refuses a hidden ground.",
+        teaching:
+          "That in which every effect abides and from which it emerges — because its nature is uncovered, there is no obstruction anywhere. Spanda is not a gem behind the world. Unlike a ground you reach by negating appearance, the pulse remains transparent as the creative pulsation itself. Obstruction is never a rupture in the tremor. It is a contraction of attention. The method is not to travel to an uncovered zone. It is to test the claim here: in this thought, this wall, this boredom — is the pulse missing, or have you stopped feeling for it?",
+        keyIdea: "A blockage is a mood of attention, not a hole in the tremor.",
+        misconception:
+          "That the pulse is hidden behind manifestation, or that you must get to a special place to feel it.",
+        passageId: "yoga_spandakarika.sp_02",
+        theme: "practice",
+        chatMode: "explain",
+        chatPrompt:
+          "Do not send me to a special uncovered place. Help me test the pulse in an ordinary blockage. What am I still treating as a place the tremor cannot reach?",
+        practice:
+          "Pick one apparent obstruction today — a stuck thought, a tense jaw, a closed door. Ask once: is the pulse absent here, or am I contracted? Do not fix the obstruction. Feel for continuity through it for one minute.",
+        journalPrompt:
+          "What am I still treating as a place the pulse cannot reach?",
+        integration:
+          "You can catch the hunt for a special uncovered place, and test the pulse in an ordinary blockage.",
+      },
+      {
+        id: "sp-agitation-dissolves",
+        title: "When agitation dissolves",
+        orientation:
+          "The ego now tries to produce the pulse by purifying itself. Verse 8 inverts that project.",
+        teaching:
+          "When the agitation of one who cannot purify himself by effort, and who still wants actions, dissolves — then the supreme state. This is not a blank mind and not a prize for discipline. Kṣobha is the dualistic ripple, the oscillation of doing and desiring. The verse diagnoses the futility of volitional self-purification. It does not counsel laziness. It says: the tremor you would earn is already the ground under the earning. When the false effort collapses, what remains is not void. It is the pulse prior to agitation. Do not turn stop-purifying into a new purification.",
+        keyIdea: "Let agitation subside. Do not improve yourself into the supreme state.",
+        misconception:
+          "That you manufacture the supreme state by purifying yourself, or that a blank mind is the goal.",
+        passageId: "yoga_spandakarika.sp_08",
+        theme: "practice",
+        chatMode: "practice",
+        chatPrompt:
+          "Refuse the self-improvement reading. Model unveiling after agitation, not a better self. What purification project am I still running as if it could manufacture the tremor?",
+        practice:
+          "Name one purification project running today — a better self, a cleaner mood, a holier record. Set it down for twenty minutes. Let agitation be felt until it lessens without your help. Do not score the lessening.",
+        journalPrompt:
+          "What purification project am I still running as if it could manufacture the tremor?",
+        integration:
+          "You can tell unveiling after kṣobha from a self-improvement program that borrowed the word pulse.",
+      },
+      {
+        id: "sp-same-pulse-binds",
+        title: "The same pulse binds",
+        orientation:
+          "This gate keeps Spanda from becoming recognition in other clothes, and from becoming a cult of excitement.",
+        teaching:
+          "The vibration that is the ground of liberation is also how the unawakened get lost. They do not lack spanda. They identify with the outward-moving phase — unmeṣa toward objects — and miss the inward turn that would show the pulse as their own looking. Cyclic existence is not imposed from outside. It is this mis-taking of the surge. So: excitement is not the method. Mood is not the tremor. Suppressing the pulse is also not the method. Attend to both phases. The bind is riding only the going-out and calling it life.",
+        keyIdea: "Bondage is not lack of vibration. It is riding only the outward phase.",
+        misconception:
+          "That bondage is lack of spanda, or that excitement and enthusiasm are awakening.",
+        passageId: "yoga_spandakarika.sp_20",
+        supportingPassageIds: ["yoga_spandakarika.sp_19"],
+        theme: "practice",
+        chatMode: "explain",
+        chatPrompt:
+          "Do not let me treat surge as awakening. Model both phases. Where am I still taking mood or enthusiasm as proof of the tremor?",
+        practice:
+          "At the next craving, anger, or spiritual high, silently mark: outward phase. Do not act on the story for ninety seconds. Feel whether any inward return is already happening. Do not congratulate a mood.",
+        journalPrompt:
+          "Where am I still taking surge, mood, or enthusiasm as proof of awakening?",
+        integration:
+          "You can tell the binding surge from the pulse, and stop treating excitement as awakening.",
+      },
+      {
+        id: "sp-fieriness",
+        title: "Fieriness toward the tremor",
+        orientation:
+          "After the bind is named, the text gives the act: constant discernment of the vibration in waking.",
+        teaching:
+          "Therefore one constantly engaged in discerning the reality of the vibration attains one's own nature even in waking, without delay. Fieriness here is not frenzy. It is sustained turning of attention toward the throb that is already the ground of knowing. The waking state is singled out because the world looks most solid there. You do not need another state. You need the discernment that the solid-looking world is pulsing. Do not hold I am That as a souvenir from another path. Discern the tremor in this walking, this washing, this sentence.",
+        keyIdea: "Discern now, in waking. A stored conclusion is not the method.",
+        misconception:
+          "That the pulse is for the cushion, or that holding an identity-claim is the same as discerning the tremor.",
+        passageId: "yoga_spandakarika.sp_21",
+        theme: "practice",
+        chatMode: "practice",
+        chatPrompt:
+          "Do not let me postpone this to meditation or cash it in as I am That. Model fieriness as discernment in waking. Where am I still saving the pulse for the cushion?",
+        practice:
+          "Choose one ordinary waking hour. Each time you remember, return attention to the subtle throb in the body-mind — not a trance, not a slogan. When you forget, return. Count no states.",
+        journalPrompt:
+          "Where am I still saving the pulse for the cushion, or holding a conclusion instead of discerning?",
+        integration:
+          "You can discern the tremor in ordinary waking, without postponing it to meditation or to an identity-claim.",
+      },
+      {
+        id: "sp-anger-joy-running",
+        title: "Anger, joy, the running body",
+        orientation:
+          "Fieriness now has to survive weather. Whatever state one reaches, there the vibration is established.",
+        teaching:
+          "Whether in extreme anger, intense joy, the deliberating mind, or running — whatever state one reaches, there the vibration is established. The verse does not prescribe a state to cultivate. It forbids postponement. Spanda is not confined to absorption. The hinge of opening and closing operates in the spike. Practice that only works when you are settled is not this method. Practice that hunts anger and rapture for a thrill is also not this method. At the state you are already in, locate the tremor. That is the instruction.",
+        keyIdea: "This state. Not a better one. Locate the pulse without riding the story.",
+        misconception:
+          "That practice waits for calm, or that hunting intensity is the path.",
+        passageId: "yoga_spandakarika.sp_22",
+        theme: "practice",
+        chatMode: "practice",
+        chatPrompt:
+          "Do not wait for calm and do not hunt spikes. Model locating the tremor in the state I am already in. Am I postponing practice, or chasing intensity as if it were the method?",
+        practice:
+          "At the next spike — anger, joy, hurry, or the scramble of what shall I do — pause inside it. Locate the vibration in the body. Do not finish the story for ten breaths. Then complete the next necessary action at ordinary speed.",
+        journalPrompt:
+          "Am I still waiting for a calm state to practice — or chasing intensity as if it were the path?",
+        integration:
+          "You can find the tremor in a spike without waiting for calm and without collecting intensity.",
+      },
+      {
+        id: "sp-catch-what-escaped",
+        title: "Catch what escaped",
+        orientation:
+          "Extremes can still make the pulse seem like a special object. The method is looking again at what you missed.",
+        teaching:
+          "Just as an object that escaped attention is more clearly perceived when you make the effort to see it better from all angles, so the tremor appears when you ardently strive toward it. That which exists, in whatever manner and wherever, through whatever means — when one seizes that very power in that very way, it is not long before it unfolds. You do not construct a new state. You align with the potency already operating as looking, in the manner it already is. Staring at a thing called spanda is how you lose it. Looking again at what you missed is how you catch it.",
+        keyIdea: "Look again. The power is seized in the way it already exists.",
+        misconception:
+          "That the pulse is a special object you could stare at, miss, or possess.",
+        passageId: "yoga_spandakarika.sp_36",
+        theme: "practice",
+        chatMode: "practice",
+        chatPrompt:
+          "Do not let me stare at a thing called vibration. Model looking again at what escaped. What did I miss that is already the manner of the power?",
+        practice:
+          "Name one thing that escaped attention today — a person's tone, a bodily signal, a word you spoke. Look again from another angle for two minutes. That second look is the method. Do not hunt a mystical object behind it.",
+        journalPrompt:
+          "Am I still staring at the pulse as an object I could miss or possess?",
+        integration:
+          "You can catch the pulse by looking again at what you missed, not by staring at a thing called vibration.",
+      },
+      {
+        id: "sp-lord-of-the-wheel",
+        title: "Lord of the wheel",
+        orientation:
+          "Fruition is inhabiting arising and dissolving — not occult control, and not a second I am Śiva.",
+        teaching:
+          "When one is firmly established in that one reality, then by bringing dissolution and arising under measure, one attains the status of experiencer, and thereby becomes lord of the wheel. This is not annihilating the cosmic rhythm and not a magician's grip on other people. It is ceasing to be the puppet of laya-udaya. Thoughts still arise and dissolve. You inhabit the rhythm instead of being thrown by it. Pratyabhijñā will say the universe is the body of Śiva — a recognition conclusion. Here the instruction remains kinetic: stay established in the tremor until manifestation and return are no longer an accident that befalls you. Do not collect lordship as a new self.",
+        keyIdea: "Inhabit the rhythm. Do not become a character who owns it.",
+        misconception:
+          "That fruition means controlling the world, or that this gate restates you are Śiva.",
+        passageId: "yoga_spandakarika.sp_51",
+        supportingPassageIds: ["pratyabhijnahrdayam.phr_020"],
+        theme: "freedom",
+        chatMode: "compare",
+        chatPrompt:
+          "Keep this kinetic. Do not let me cash it in as I am Śiva or as occult control. Help me inhabit arising and dissolving without becoming a new character called lord. Where am I still waiting for the rhythm to happen to me?",
+        practice:
+          "Sit five minutes and watch one thought arise and dissolve without being thrown into its story. When the body wants to become the lord of the thought, return to the pulse. Then stand and do one ordinary action at the speed of that watching.",
+        journalPrompt:
+          "Am I still waiting for the rhythm to happen to me — or hoping to become someone who controls it?",
+        integration:
+          "You can inhabit arising and dissolving without being their puppet and without a new identity called lord.",
+      },
+    ],
+  },
+  ...LINEAGE_TRAILS,
+  ...WESTERN_TRAILS,
+  ...DEEPENING_TRAILS,
 ];

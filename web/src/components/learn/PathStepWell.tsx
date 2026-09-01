@@ -94,7 +94,8 @@ export function PathStepWell({
   const t = useT();
   const [pinned, setPinned] = useState<VerseItem | null>(null);
   const catalogItem = matchStepItem(step, items);
-  const item = useLocalizedVerse(catalogItem || pinned);
+  const sourceItem = catalogItem || pinned;
+  const item = useLocalizedVerse(sourceItem ?? null);
 
   useEffect(() => {
     if (catalogItem || !step.passageId) {
@@ -159,7 +160,12 @@ export function PathStepWell({
         <div className="mt-2 space-y-2">
           {item ? (
             <>
-              <PassageCard item={item} primary backHref={backHref} onOpen={onOpenPassage} />
+              <PassageCard
+                item={item}
+                primary
+                backHref={backHref}
+                onOpen={onOpenPassage && sourceItem ? () => onOpenPassage(sourceItem) : undefined}
+              />
               <PassageMaturityBadge item={item} />
               <OriginalReliabilityBadge item={item} />
             </>
@@ -176,7 +182,12 @@ export function PathStepWell({
             </p>
           )}
           {supporting.map((sv) => (
-            <PassageCard key={sv._id} item={sv} backHref={backHref} onOpen={onOpenPassage} />
+            <PassageCard
+              key={sv._id}
+              item={sv}
+              backHref={backHref}
+              onOpen={onOpenPassage ? () => onOpenPassage(sv) : undefined}
+            />
           ))}
         </div>
       </div>
@@ -197,8 +208,8 @@ export function PathStepWell({
       )}
 
       <div className="flex flex-wrap gap-2 pt-1">
-        {item && onOpenPassage ? (
-          <button type="button" className={buttonVariants({ size: "sm" })} onClick={() => onOpenPassage(item)}>
+        {item && sourceItem && onOpenPassage ? (
+          <button type="button" className={buttonVariants({ size: "sm" })} onClick={() => onOpenPassage(sourceItem)}>
             {t("learn.openPassage")}
           </button>
         ) : (

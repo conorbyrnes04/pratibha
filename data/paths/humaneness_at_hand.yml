@@ -1,0 +1,132 @@
+path_id: humaneness_at_hand
+work_id: confucius_analects
+work_title: Analects and Zhōngyōng
+title: "Humaneness at Hand"
+tradition: Confucian
+covers: "Analects on learning, daily exam, rén as return to li, the one thread, shu, zhengming; Zhōngyōng on nature-Way-teaching and equilibrium before feeling. Not a digest of 52+18 units."
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  Keep this civic. Virtue is not remote. Do not turn the Mean into the Kashmiri
+  gap, and do not turn rén into a mood.
+
+premise: >
+  The student is cultivating what is near: timed learning, relational exam,
+  form, reciprocity, naming, then the Mean as unstirred equilibrium. This is
+  not Stoic sovereignty and not a metaphysics of the Self.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_learn
+    name: "Learning in season"
+    theme: "Joy and obscurity, not grim display."
+    why_first: >
+      If cultivation begins as grim self-improvement, later rén becomes a performance.
+    stations:
+      - station: 1
+        unit_id: confucius_analects.an_01_01
+        title: "Is it not pleasant to learn"
+        opening_question: "Where am I still treating learning as a grind, or as a reputation?"
+        transmission: >
+          Learning is pleasant when applied in season. Friends from afar test the work.
+          Obscurity without sourness is the last clause.
+        contemplation: "If you need to be seen learning, you are already off the path."
+        gate_practice: >
+          Apply one small skill once today at the right moment — not as a display.
+        passed_when: "You can apply one learned thing in season without needing to be noticed."
+      - station: 2
+        unit_id: confucius_analects.an_01_04
+        title: "I daily examine myself on three points"
+        opening_question: "In which of the three relations am I still unexamined?"
+        transmission: >
+          Zeng's exam is faithfulness in service, sincerity with friends, and practiced teaching.
+        contemplation: "Not a mood score."
+        gate_practice: >
+          Answer the three questions in writing — one sentence each. Name one repair, not a new identity as a failure.
+        passed_when: "You can run a daily exam on relations rather than on spiritual moods."
+
+  - gate_id: gate_1_ren
+    name: "Humaneness as form"
+    theme: "Rén is return to li; one thread; shu as stop."
+    why_first: >
+      If rén is a feeling, reciprocity becomes niceness.
+    stations:
+      - station: 3
+        unit_id: confucius_analects.an_12_01
+        title: "Subdue the self and return to li"
+        opening_question: "Where did I skip a form because I told myself my heart was already good?"
+        transmission: >
+          Rén is to subdue the self and return to propriety — not a warmer feeling.
+        contemplation: "The ascription from all under heaven is not a prize."
+        gate_practice: >
+          Keep one ordinary form fully once today while the impulse wants an exception.
+        passed_when: "You can keep one shared form without waiting to feel rén first."
+      - station: 4
+        unit_id: confucius_analects.an_04_15
+        title: "One thread: zhong and shu"
+        opening_question: "Where have I specialized in one and dropped the other?"
+        transmission: >
+          The Way is threaded by one: zhong inward, shu outward.
+        contemplation: "Not two virtues you could specialize in."
+        gate_practice: >
+          Reverse one concrete act so an inner claim has an outer body.
+        passed_when: "You can feel zhong and shu as one move."
+      - station: 5
+        unit_id: confucius_analects.an_15_23
+        title: "The one word you could practice for a life"
+        opening_question: "What did I almost send that I would not welcome?"
+        transmission: >
+          Shu: what you do not want done to yourself, do not do to others. A stop, not a slogan.
+        contemplation: "How zhong leaves the self without becoming a metaphysics."
+        gate_practice: >
+          Reverse the next message before it lands.
+        passed_when: "You can catch one outgoing act and reverse it."
+      - station: 6
+        unit_id: confucius_analects.an_13_03
+        title: "If names be not correct"
+        opening_question: "Which name have I been using that made the room unwalkable?"
+        transmission: >
+          Zhengming: false names make speech, affairs, li, and movement fail.
+        contemplation: "A false name is a ruined room."
+        gate_practice: >
+          Strike one inflated name. Use only a plainer word you could carry out.
+        passed_when: "You can drop one inflated name and speak a word you could actually carry out."
+
+  - gate_id: gate_2_mean
+    name: "The Mean in the room"
+    theme: "Nature, Way, teaching; equilibrium then due degree."
+    why_first: >
+      The Analects stayed in the room. Zhōngyōng names the ground without a religion of escape.
+    stations:
+      - station: 7
+        unit_id: zhongyong.zy_01
+        title: "What Heaven confers is called nature"
+        opening_question: "Where do I still leave the Way as if it were a visit?"
+        transmission: >
+          Nature, Way, teaching. If the Way could be left, it would not be the Way.
+        contemplation: "Teaching cultivates conferred nature; it does not import a better one."
+        gate_practice: >
+          Keep one ordinary duty as the site of accordance, not as time off.
+        passed_when: "You can treat one hour of ordinary duty as the Way."
+      - station: 8
+        unit_id: zhongyong.zy_04
+        title: "Before pleasure and anger arise"
+        opening_question: "Where did feeling dress as the whole of me?"
+        transmission: >
+          Unstirred equilibrium; feeling in due degree. Not mediocrity, not the madhya.
+        contemplation: "Keep it as how a room stays habitable when feeling arrives."
+        gate_practice: >
+          Pause one breath before speech when irritation or pleasure rises. Speak at due degree, or none.
+        passed_when: "You can let a feeling arise without letting it be the whole of you."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    Remaining Analects and Zhōngyōng stay supporting. Mencius is not yet a path.
+  next_gates: []

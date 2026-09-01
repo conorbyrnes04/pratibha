@@ -1,0 +1,134 @@
+path_id: nameless_source
+work_id: tao_te_ching
+work_title: Tao Te Ching, Zhuangzi
+title: "The Nameless Source"
+tradition: Tao
+covers: "TTC 1, 25, 16, 11, 37, 8, 48; Zhuangzi heart-fasting"
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+
+premise: >
+  The Tao tile was walking a mixed death path. This walk is the lede: the
+  nameless source, the ten thousand things arising and returning. Absence is
+  use; water does not contend; the Way subtracts.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_source
+    name: "Source"
+    theme: "The named way is not the enduring way."
+    stations:
+      - station: 1
+        unit_id: tao_te_ching.ttc_md_001
+        title: "The name that unnames itself"
+        opening_question: "What am I trying to pin with a name so I can own it?"
+        transmission: >
+          The way that can be walked is not the enduring way. Named and unnamed
+          are the same reality, approached with desire or without.
+        contemplation: "Dark upon dark — not a door that opens once."
+        gate_practice: >
+          Hold one conviction without using its name for ten breaths. Let it
+          be approached, not filed.
+        passed_when: "You can touch a thing without needing the last word on it."
+      - station: 2
+        unit_id: tao_te_ching.ttc_md_007
+        title: "Something formless before heaven and earth"
+        opening_question: "Do I need a creator, or a mothering process?"
+        transmission: >
+          Blended, silent, circulating, mother of the world. Forced to name it:
+          dào, then Great, then passing, far, returning. Humans model earth;
+          earth, heaven; heaven, the Way; the Way models what is so of itself.
+        contemplation: "Return is not failure. It is the pattern."
+        gate_practice: >
+          Watch one cycle complete today — a task, a mood, a conversation —
+          and notice the return without improving it.
+        passed_when: "Return feels like the Way's motion, not like defeat."
+
+  - gate_id: gate_1_return
+    name: "Return and absence"
+    stations:
+      - station: 3
+        unit_id: tao_te_ching.ttc_md_003
+        title: "The ten thousand things return to the root"
+        opening_question: "What am I forcing because I cannot bear the return?"
+        transmission: >
+          Empty to the utmost; guard stillness. Watch the teeming things go
+          back to the root. That stillness is returning to destiny. Not knowing
+          the constant, reckless action brings misfortune.
+        contemplation: "Stillness is how you see the pattern, not a pose."
+        gate_practice: >
+          Sit until the inner noise drops one notch. Then watch one arising
+          (thought, urge) go back without escorting it.
+        passed_when: "You can let a thing finish without grabbing the next."
+      - station: 4
+        unit_id: tao_te_ching.ttc_md_002
+        title: "The empty hub does the work"
+        opening_question: "Where am I stuffing the space that would let the thing work?"
+        transmission: >
+          Wheel, vessel, room: what is not there is what they are for. Being
+          gives the shape; non-being gives the use.
+        contemplation: "Do not make matter a lie. Reassign which part is active."
+        gate_practice: >
+          Clear one small space — a surface, a pause in speech, a gap in the
+          calendar — and leave it empty on purpose.
+        passed_when: "You have used an absence today instead of filling it."
+
+  - gate_id: gate_2_wuwei
+    name: "Non-contending"
+    stations:
+      - station: 5
+        unit_id: tao_te_ching.ttc_md_008
+        title: "Nothing left undone"
+        opening_question: "Where is my effort the interference?"
+        transmission: >
+          The Way is constant: non-acting, and nothing left undone. When desire
+          restarts, settle it with the nameless uncarved block. Stillness:
+          the world settles itself.
+        contemplation: "Wúwéi is not laziness. It is not forcing the grain."
+        gate_practice: >
+          Do the next necessary act with one less push than habit. Stop when
+          it is enough, not when you have been seen doing it.
+        passed_when: "You can leave a thing unfinished by ego and finished by need."
+      - station: 6
+        unit_id: tao_te_ching.ttc_md_006
+        title: "Water goes where no one wants to be"
+        opening_question: "What low place am I avoiding that would actually nourish?"
+        transmission: >
+          Supreme goodness is like water: it benefits without contending, and
+          settles where people disdain to go. Therefore it is close to the Way.
+        contemplation: "Low is not humiliation. It is how water works."
+        gate_practice: >
+          Take the unglamorous share of one joint task. Do it cleanly, without
+          a speech about humility.
+        passed_when: "You can occupy a low place without turning it into a story."
+      - station: 7
+        unit_id: the_book_of_chuang_tzu.zhuangzi_md_004
+        title: "Heart-fasting"
+        opening_question: "What method am I using to stay in control of the room?"
+        transmission: >
+          Ritual fasting is not heart-fasting. Listen with qi: emptiness waiting
+          for things. Only the Way gathers in emptiness.
+        contemplation: "Empty the one who wanted a technique to win."
+        gate_practice: >
+          Before one conversation, drop the plan to steer it. Listen until the
+          breath feels like the listener.
+        passed_when: "You have received a situation you did not pre-write."
+      - station: 8
+        unit_id: tao_te_ching.ttc_md_011
+        title: "The Way subtracts"
+        opening_question: "What am I adding so I will not have to trust the Way?"
+        transmission: >
+          Learning adds; the Way daily diminishes, until non-action, and nothing
+          left undone. The world is not taken by accumulating affairs.
+        contemplation: "Strip contrivance. Keep what is needed to meet the day."
+        gate_practice: >
+          Remove one extra move from a habit — an extra check, opinion, or
+          improvement. Live the hour with the subtraction.
+        passed_when: "Diminishing feels like alignment, not like self-erasure."

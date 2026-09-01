@@ -1,0 +1,142 @@
+path_id: you_are_that
+work_id: isavasya_upanishad
+work_title: Īśā, Kaṭha, Chāndogya, Śvetāśvatara, Māṇḍūkya
+title: "You Are That"
+tradition: Vedānta / Upaniṣads
+covers: "Īśā invocation–2; Kaṭha two paths; Chāndogya tat tvam asi; two birds; Māṇḍūkya waking, turīya, silence"
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+
+premise: >
+  The Vedānta trail was walking Kashmir Śaiva recognition. This path is the
+  Upaniṣadic claim the tile already advertised: the witness behind waking,
+  dream, and sleep — you are That. Fullness first, then how to live inside it,
+  then the discrimination that makes the mahāvākya land, then the Fourth.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_fullness
+    name: "Fullness"
+    theme: "The whole does not diminish by appearing."
+    why_first: "Īśā opens by dissolving scarcity before verse one."
+    stations:
+      - station: 1
+        unit_id: isavasya_upanishad.isa_001
+        title: "Fullness taken from fullness remains fullness"
+        opening_question: "Where is my mind already operating from lack?"
+        transmission: >
+          Reality is not a scarce container. Manifestation does not reduce source.
+        contemplation: "That is full; this is full."
+        gate_practice: >
+          Repeat the invocation once. Name one place you are bargaining from lack.
+        passed_when: "Lack feels like a mood, not like the structure of the world."
+      - station: 2
+        unit_id: isavasya_upanishad.isa_002
+        title: "Enjoy through renunciation"
+        opening_question: "Can I take part without claiming?"
+        transmission: >
+          The Lord pervades the moving world. Renunciation is non-grasping
+          participation, not withdrawal. Action remains; ownership loosens.
+        contemplation: "Covering, not fleeing."
+        gate_practice: >
+          Do one ordinary task without the inner claim of mine.
+        passed_when: "You can finish a task without needing it to prove you."
+
+  - gate_id: gate_1_discrimination
+    name: "Discrimination"
+    theme: "The good and the pleasant both approach."
+    why_first: "Kaṭha will not let the mahāvākya become a slogan for the pleasant."
+    stations:
+      - station: 3
+        unit_id: katha_upanishad.kau_04_two_paths
+        title: "The good is not the pleasant"
+        opening_question: "Which of the two am I choosing when I say I want truth?"
+        transmission: >
+          Śreyas and preyas both bind. The wise examine and take the good.
+          Naciketas refused the wealth-snare Death offered.
+        contemplation: "Two paths, one hour."
+        gate_practice: >
+          In one live choice today, name the pleasant option and the good one.
+          Take the good, even small.
+        passed_when: "You can feel the fork before you dress it as wisdom."
+      - station: 4
+        unit_id: chāndogya_upaniṣad.chu_06_08_07
+        title: "You are That"
+        opening_question: "Who do I think 'you' refers to when I hear tat tvam asi?"
+        transmission: >
+          The subtle essence is the Self of this whole. That is real. That is
+          the Self. You are that, Śvetaketu — and he asks to be taught again.
+        contemplation: "Not the résumé. The subtle."
+        gate_practice: >
+          Say the sentence once to the one who is reading, not to the biography.
+          Then ask, as Śvetaketu did, to be shown further — and wait.
+        passed_when: "The sentence points at the reader, not at a better self-image."
+
+  - gate_id: gate_2_witness
+    name: "Witness"
+    theme: "Two birds, one tree; waking is an aperture."
+    why_first: "Before the Fourth, see the split that makes sorrow."
+    stations:
+      - station: 5
+        unit_id: svetasvatara_upanishad.svu_011
+        title: "Two birds on one tree"
+        opening_question: "Which bird did I take myself to be in the last hour?"
+        transmission: >
+          One eats the sweet fruit; the other watches without eating. Sorrow
+          is helpless identification with the eater. The Lord is already on
+          the same tree.
+        contemplation: "Fruit continues. Identification need not."
+        gate_practice: >
+          In one charged moment, name the fruit-eating bird. Rest sixty seconds
+          as the watching bird without editing the fruit.
+        passed_when: "You can watch a reaction without pretending you are only it."
+      - station: 6
+        unit_id: mandukya_upanishad_and_gaudapada_karika.muk_005
+        title: "Waking is not the whole Self"
+        opening_question: "Do I take the daylight person as the one who is?"
+        transmission: >
+          Vaiśvānara is waking: outward-facing, nineteen mouths, eater of the
+          gross. Individual waking is cosmic consciousness at one aperture.
+        contemplation: "The world is dense. The seer is not."
+        gate_practice: >
+          For three minutes of ordinary seeing, notice the apparatus — eye,
+          name, preference — and the awareness in which the apparatus appears.
+        passed_when: "Waking feels like a mode, not like the whole of you."
+
+  - gate_id: gate_3_fourth
+    name: "The Fourth"
+    theme: "Turīya is the ground, not a fourth room."
+    why_first: "The Upaniṣad ends in silence, not in a better state."
+    stations:
+      - station: 7
+        unit_id: mandukya_upanishad_and_gaudapada_karika.muk_009
+        title: "Not waking, not dream, not sleep"
+        opening_question: "Am I hunting a fourth experience?"
+        transmission: >
+          Turīya is named by stripping every state. Not inward-conscious, not
+          outward, not a mass of knowing, not unconscious. This is the Ātman.
+          This is to be known.
+        contemplation: "Negation is the method, not a mood."
+        gate_practice: >
+          Sit five minutes. When a state labels itself (awake, foggy, dreaming
+          thought), say not that. Rest as what the label appears in.
+        passed_when: "You stop looking for the Fourth as a special inner weather."
+      - station: 8
+        unit_id: mandukya_upanishad_and_gaudapada_karika.muk_015
+        title: "The silence after OM"
+        opening_question: "Is the quiet after sound empty, or full?"
+        transmission: >
+          The Fourth is without measure. OM is the Ātman. One who knows this
+          merges the Self into the Self by the Self — present tense.
+        contemplation: "Sound dissolves. Awareness does not."
+        gate_practice: >
+          Sound OM once. Follow A, U, M into the silence. Rest one breath in
+          the measureless quiet that was already there.
+        passed_when: "The silence after the sound feels like the same awareness that heard it."

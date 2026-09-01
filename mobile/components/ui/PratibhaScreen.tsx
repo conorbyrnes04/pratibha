@@ -4,15 +4,28 @@ import { Keyboard, RefreshControl, ScrollView, StyleSheet, View, type ViewStyle 
 import { SafeAreaView } from "react-native-safe-area-context";
 import { colors } from "@/constants/theme";
 
+type Edge = "top" | "bottom" | "left" | "right";
+
 type Props = {
   children: ReactNode;
   scroll?: boolean;
   onRefresh?: () => void;
   refreshing?: boolean;
   contentStyle?: ViewStyle;
+  /** Tab roots need top inset. Stack screens already have a nav header — omit top. */
+  edges?: Edge[];
 };
 
-export function PratibhaScreen({ children, scroll = true, onRefresh, refreshing, contentStyle }: Props) {
+export const stackScreenEdges: Edge[] = ["left", "right"];
+
+export function PratibhaScreen({
+  children,
+  scroll = true,
+  onRefresh,
+  refreshing,
+  contentStyle,
+  edges = ["top", "left", "right"],
+}: Props) {
   const body = scroll ? (
     <ScrollView
       contentContainerStyle={[styles.content, contentStyle]}
@@ -33,7 +46,7 @@ export function PratibhaScreen({ children, scroll = true, onRefresh, refreshing,
   return (
     <View style={styles.root}>
       <LinearGradient colors={["#07070d", "#11101a", "#17101a"]} style={StyleSheet.absoluteFill} />
-      <SafeAreaView style={styles.safe} edges={["top", "left", "right"]}>
+      <SafeAreaView style={styles.safe} edges={edges}>
         {body}
       </SafeAreaView>
     </View>

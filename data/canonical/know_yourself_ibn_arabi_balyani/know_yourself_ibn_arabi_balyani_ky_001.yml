@@ -3,55 +3,27 @@ category: root_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.ky_001
-unit_label: Knowing the Self, Knowing the Lord
-title: Knowing the Self, Knowing the Lord
+unit_label: Knowing Your Reality Is Knowing the Lord
+title: Knowing Your Reality Is Knowing the Lord
 unit_type: verse
 section: Treatise on Unity, opening dictum
 sanskrit_devanagari: مَنْ عَرَفَ نَفْسَهُ فَقَدْ عَرَفَ رَبَّهُ
 sanskrit_iast: ''
-translation_literal: Whoso knoweth his self (nafs) hath known his Lord (Rabb).
-commentary: 'This celebrated maxim supplies the governing paradox of the Treatise on Unity: the way to
-  the Real is not flight toward an object outside oneself, but penetration of the assumed independent
-  self. Nafs here should not be reduced to the modern psychological ego. It can name the self, soul, animating
-  principle, or the individuated “I” that claims autonomy. To know it truly is to discover its contingency:
-  it possesses no self-subsisting being, power, or knowledge apart from God. Such knowledge is therefore
-  not self-deification; it is the collapse of the illusion that there are two independent realities, knower
-  and Known. “Lord” (Rabb) evokes God as sustaining, ordering, and bringing creatures to completion. The
-  saying is widely transmitted in Sufi literature and is central to texts attributed to Ibn ʿArabī and
-  ʿAbd al-Karīm al-Jīlī/Balyānī traditions, though it is not securely established as a prophetic ḥadīth.
-
-
-  Key Terms
-
-
-  **نَفْس** — Self, soul, or individuated “I,” whose apparent independence is exposed as contingent.
-
-  **رَبّ** — Lord, sustainer, and divine source upon whom the self depends.
-
-  **عَرَفَ** — Knew or recognized, implying direct realization rather than merely conceptual information.
-
-
-  Cross-Tradition Resonances
-
-
-  **Plato, Alcibiades I 133c:** Socrates teaches that self-knowledge requires the soul to look toward
-  what is divine, paralleling the maxim’s movement from knowing oneself to knowing God. Divergence: Plato
-  frames this through the soul’s rational likeness to the divine, whereas the maxim foregrounds the self’s
-  radical contingency before the Lord.
-
-  **Augustine, De vera religione 39.72:** Augustine directs the seeker inward because truth dwells in
-  the inner person, closely paralleling the turn from external objects to interior recognition. Divergence:
-  Augustine’s interior truth is articulated through Christian doctrines of creation and illumination,
-  while the Arabic maxim states the relation in compressed language of self and Lord.
-
-  **Chandogya Upanishad 6.8.7, the teaching tat tvam asi:** The Upanishadic instruction links realization
-  of one’s deepest self with realization of ultimate reality, resembling the maxim’s union of self-knowledge
-  and divine knowledge. Divergence: Advaita readings often identify the deepest self with Brahman, whereas
-  this maxim can preserve the asymmetry between the contingent nafs and the sustaining Rabb.'
-practice: 'Sit quietly for ten minutes and attend to the thought “I.” Each time an identity, possession,
-  feeling, or achievement arises—“my body,” “my knowledge,” “my choice”—ask: “Does this sustain itself?”
-  Let the answer become a silent recognition of dependence on the Rabb, without trying to imagine or objectify
-  God.'
+translation_literal: “Whoso knoweth himself knoweth his Lord.”
+commentary: 'This saying supplies the treatise’s governing inference: self-knowledge is not chiefly moral
+  introspection, psychological self-description, or knowledge of an individual soul. It is knowledge of
+  the self’s alleged lack of independent existence. In the argument of waḥdat al-wujūd, when the seeker
+  investigates the “I” thought to stand beside God, that supposed other is disclosed as having no being
+  of its own; only God truly is. Thus knowledge of the self becomes knowledge of the Lord, not because
+  a human being is simply identical with God in an ordinary sense, but because the self’s claim to separate
+  reality is denied. The contested move is decisive: the text shifts from recognizing radical dependence
+  upon God to asserting that no existence belongs to the creature as other. It explicitly rejects accounts
+  of union, incarnation, or one thing entering another, yet its rhetoric of non-otherness has often sounded
+  dangerously close to them. The saying therefore names an epistemic reversal: what appears nearest—one’s
+  own self—proves not an autonomous knower, but the site at which divine Reality alone is to be recognized.'
+practice: 'Today, notice one moment when you defend an identity—status, opinion, hurt, or role—and quietly
+  ask: “What in this claim is truly mine by itself?” Then let the question remain open without trying
+  to manufacture an answer.'
 themes: []
 tags: []
 provenance:
@@ -64,3 +36,69 @@ provenance:
   verification_note: This is the received Arabic opening dictum of the Treatise on Unity, with only optional
     vowel-marking variation.
   qa_crosscheck: 'anthropic/claude-sonnet-4.5: sound'
+translation: “Whoso knoweth himself knoweth his Lord.”
+abhyasa: 'Today, notice one moment when you defend an identity—status, opinion, hurt, or role—and quietly
+  ask: “What in this claim is truly mine by itself?” Then let the question remain open without trying
+  to manufacture an answer.'
+editorial_maturity: strong_draft
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+pratibha_layers:
+- kind: original
+  label: Original
+  body: مَنْ عَرَفَ نَفْسَهُ فَقَدْ عَرَفَ رَبَّهُ
+- kind: translation
+  label: Pratibha Translation
+  body: “Whoso knoweth himself knoweth his Lord.”
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'This saying supplies the treatise’s governing inference: self-knowledge is not chiefly moral
+    introspection, psychological self-description, or knowledge of an individual soul. It is knowledge
+    of the self’s alleged lack of independent existence. In the argument of waḥdat al-wujūd, when the
+    seeker investigates the “I” thought to stand beside God, that supposed other is disclosed as having
+    no being of its own; only God truly is. Thus knowledge of the self becomes knowledge of the Lord,
+    not because a human being is simply identical with God in an ordinary sense, but because the self’s
+    claim to separate reality is denied. The contested move is decisive: the text shifts from recognizing
+    radical dependence upon God to asserting that no existence belongs to the creature as other. It explicitly
+    rejects accounts of union, incarnation, or one thing entering another, yet its rhetoric of non-otherness
+    has often sounded dangerously close to them. The saying therefore names an epistemic reversal: what
+    appears nearest—one’s own self—proves not an autonomous knower, but the site at which divine Reality
+    alone is to be recognized.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: نَفْس
+    definition: nafs, from a root associated with breath/self -> the reality or supposed existence of
+      the seeker, and by extension all that is imagined beside God -> not merely the lower ego, psyche,
+      or ‘soul.’
+  - term: رَبّ
+    definition: rabb, lord, master, sustainer -> God known as the sole real ground of being -> more than
+      a conventional title for a deity external to the worshipper.
+  - term: عَرَفَ
+    definition: ʿarafa, to know, recognize, become acquainted with -> a direct recognition of reality
+      through the self -> not simply acquiring doctrinal information.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Qur’an 41:53
+    resonance: God promises to show signs ‘in themselves’ until truth becomes clear; inner disclosure
+      and recognition converge.
+    divergence: The Qur’anic verse does not itself state that the self lacks all independent existence
+      or identify its reality with divine existence.
+  - citation: Qur’an 28:88
+    resonance: ‘Everything is perishing except His Face’ supports the treatise’s insistence on God’s unmatched
+      reality.
+    divergence: The treatise reads this as denial of any other existent; many theological readings retain
+      real created existence while affirming its contingency and perishability.
+  - citation: 'Hadith: “Whoever knows himself knows his Lord”'
+    resonance: The aphorism is the explicit hinge for the treatise’s path from self-knowledge to knowledge
+      of God.
+    divergence: Though widely circulated in Sufi literature, its status as a Prophetic hadith is disputed;
+      the treatise gives it an especially uncompromising ontological interpretation.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, notice one moment when you defend an identity—status, opinion, hurt, or role—and quietly
+    ask: “What in this claim is truly mine by itself?” Then let the question remain open without trying
+    to manufacture an answer.'
+original: مَنْ عَرَفَ نَفْسَهُ فَقَدْ عَرَفَ رَبَّهُ
+tts_key: true

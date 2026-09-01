@@ -1,0 +1,148 @@
+path_id: divine_darkness
+work_id: pseudo_dionysius
+work_title: Dionysius, Cloud of Unknowing, Eckhart
+title: "The Divine Darkness"
+tradition: Christian mysticism
+covers: "Mystical Theology I.1–III; Cloud 1, 3; Eckhart on detachment and poverty"
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+
+premise: >
+  The Christian tile promised divine darkness: unknowing as the highest knowing.
+  This walk is that architecture — Dionysius's ascent by stripping, the Cloud's
+  chosen ignorance, Eckhart's detachment that makes room. Not ACIM. Not a
+  catechism of names for God.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_darkness
+    name: "Dazzling darkness"
+    theme: "The brightest thing looks dark to a mind that still wants to see."
+    why_first: "Dionysius opens by inverting light. If you skip this, later gates become techniques for a nicer God-image."
+    stations:
+      - station: 1
+        unit_id: pseudo_dionysius.pd_001
+        title: "The darkness that is too bright"
+        opening_question: "Where am I still trying to see God as an object in the light?"
+        transmission: >
+          The summit of the mysteries is veiled in a darkness that is super-luminous.
+          The most obscure makes super-manifest what is most radiant. The mind that
+          wants a visible God is already looking in the wrong direction.
+        contemplation: "Darkness as excess of light, not as absence."
+        gate_practice: >
+          Sit three minutes without manufacturing an image of God. When one appears,
+          let it go. Remain with the not-seeing.
+        passed_when: "Not-seeing can be a kind of fullness, not a failure of prayer."
+      - station: 2
+        unit_id: pseudo_dionysius.pd_mt_02
+        title: "Leave the senses and the intellect"
+        opening_question: "What am I still stacking — finer thoughts about the unsayable?"
+        transmission: >
+          Timothy is told to abandon sense and intellect, beings and non-beings,
+          and to be raised unknowingly toward what is beyond being and knowledge.
+          Union is not a better concept. It is a stripping.
+        contemplation: "Leave both the picture and the clever thought."
+        gate_practice: >
+          For one sitting, do not add a thought about God. When a thought arrives,
+          name it 'intellect' and set it down. Stay with the leaving.
+        passed_when: "You can tell stacking ideas from laying the mind to rest."
+      - station: 3
+        unit_id: pseudo_dionysius.pd_mt_03
+        title: "Moses enters the cloud"
+        opening_question: "Have I mistaken the place where God dwells for God?"
+        transmission: >
+          Moses is purified, hears trumpets, sees lights — and still does not meet
+          God. He sees the place. Then he plunges into the darkness of unknowing,
+          knowing beyond mind by knowing nothing.
+        contemplation: "The visions were still a place, not the encounter."
+        gate_practice: >
+          After reading, name one spiritual 'light' you treat as arrival (an insight,
+          a mood, a confirmation). Step past it. Sit in the unnamed remainder.
+        passed_when: "A good experience can be a place God left, not God."
+      - station: 4
+        unit_id: pseudo_dionysius.pd_mt_05
+        title: "Affirmation descends; negation ascends"
+        opening_question: "When I name God, am I climbing or decorating?"
+        transmission: >
+          Affirmations begin from the highest names and descend. Negations begin
+          from the last things and strip upward, so that you may know nakedly the
+          unknowing veiled by all knowable things, and see the darkness hidden by
+          all the light that is in beings.
+        contemplation: "Names go down. Stripping goes up."
+        gate_practice: >
+          Take one name you use for God. Affirm it once. Then negate it once.
+          Sit with what is left when both have been said.
+        passed_when: "You can use a name without letting it be the summit."
+
+  - gate_id: gate_1_cloud
+    name: "The cloud chosen"
+    theme: "Love chooses what thought cannot hold."
+    why_first: "The Cloud turns Dionysius's method into a day's work: leave the thinkable."
+    stations:
+      - station: 5
+        unit_id: the_cloud_of_unknowing.cloud_01
+        title: "Leave what you can think"
+        opening_question: "What thinkable thing am I still using as a ladder to God?"
+        transmission: >
+          Of creatures and even of God's works you may think well. Of God himself
+          no one can think. Therefore leave all you can think, and choose for love
+          that which you cannot think.
+        contemplation: "The cut is not against knowledge of the world. It is against
+          thinking God."
+        gate_practice: >
+          For ten minutes, let the mind have the world — tasks, creatures, even
+          holy works. Then leave them. Rest one minute with what you cannot think.
+        passed_when: "You can love without a thought-object to hold."
+      - station: 6
+        unit_id: the_cloud_of_unknowing.cloud_03
+        title: "I do not know"
+        opening_question: "Can I let 'I do not know' be the work, not the failure?"
+        transmission: >
+          How shall I think on him, and what is he? The teacher answers: I do not
+          know. The question has already brought you into the cloud the teacher
+          wants you in. Naked intent stretches toward God without a picture.
+        contemplation: "The honest 'I do not know' is the method."
+        gate_practice: >
+          Ask the question once. Answer only: I do not know. Stay there for twenty
+          breaths without filling the gap with theology.
+        passed_when: "Unknowing can be an intent, not an embarrassment."
+
+  - gate_id: gate_2_room
+    name: "Room for God"
+    theme: "Detachment is not a virtue among virtues. It is the emptying that lets God be God."
+    why_first: "Eckhart names the inner condition the darkness was for: room."
+    stations:
+      - station: 7
+        unit_id: meister_eckhart.eck_001
+        title: "The one necessary thing"
+        opening_question: "Which virtue am I still using to look toward creatures — including a spiritual self?"
+        transmission: >
+          Every virtue still looks somehow toward creatures. Pure detachment stands
+          free of all creatures. The one necessary thing said to Martha is this
+          emptying, not a busier holiness.
+        contemplation: "Detachment is the field, not a medal."
+        gate_practice: >
+          Drop one spiritual self-portrait for the rest of the day — the helpful one,
+          the devout one, the one who is doing well. Do the next ordinary act without it.
+        passed_when: "You can act without a virtue-image watching you act."
+      - station: 8
+        unit_id: meister_eckhart.eck_010
+        title: "Wills nothing, knows nothing, has nothing"
+        opening_question: "What spiritual capital am I still defending as mine?"
+        transmission: >
+          That person is poor who wills nothing, knows nothing, and has nothing —
+          not as anti-thought, but as the end of possessing God, possessing insight,
+          possessing a will that uses God as a project.
+        contemplation: "Poverty is room. Possession is the blockage."
+        gate_practice: >
+          Name one thing you 'have' spiritually (an insight, a practice-streak, a
+          consolation). Set it down as not yours. Sit empty for five minutes. Then
+          go do the next task without picking it back up as identity.
+        passed_when: "You can be without a private store of God."

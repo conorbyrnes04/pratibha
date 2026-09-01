@@ -29,8 +29,13 @@ def main() -> int:
     parts = ["# Pratibha — Bhagavad Gītā (full verse-scale corpus)\n"]
     for p in chapters:
         text = p.read_text(encoding="utf-8")
-        # drop top-level single # title lines that aren't units
-        text = re.sub(r"(?m)^#\s+(?!#).*\n?", "", text, count=1)
+        # Keep only unit headings. Chapter H1 + **Corpus entry:** preambles must
+        # not sit after the previous chapter's last Practice layer, or they are
+        # ingested (and then spoken by Listen) as part of that unit.
+        start = re.search(r"(?m)^##\s+", text)
+        text = text[start.start():] if start else re.sub(
+            r"(?m)^#\s+(?!#).*\n?", "", text, count=1
+        )
         parts.append(text.strip())
         parts.append("")
     combined.write_text("\n\n".join(parts) + "\n", encoding="utf-8")

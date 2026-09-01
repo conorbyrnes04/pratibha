@@ -1,0 +1,251 @@
+path_id: the_reed_complains
+work_id: rūmī_mathnawī_yi_maʿnawī
+work_title: Rūmī — Mathnawī-yi Maʿnawī
+title: "The Reed Complains"
+tradition: Sufi
+covers: "Living speech from the Mathnawī: the reed's complaint, return to origin, fire not wind, the shepherd's prayer, Moses rebuked to unite, the elephant in the dark, die before you die."
+status: complete
+
+# A couplet is a vehicle, not a slogan. Beginner skill-path in living-speech
+# form (model: the-horse-of-conversation). Unicode work_id only — do not use
+# rumi_mathnawi_yi_manawi.
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  A couplet is a vehicle. Do not turn it into a calendar verse, a Sufi slogan,
+  or proof that you are already a lover. Let the cry do work today.
+
+premise: >
+  You are not studying Rūmī. You are letting seven speeches carry you:
+  complaint as the ontology of exile, longing as structural not accidental,
+  speech that is fire rather than clever wind, crude prayer that still burns,
+  speech measured by whether it unites, the palm that mistakes a part for the
+  animal, and the death that is light rather than a grave. Each gate is a
+  saying that must be done.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+  - "Do not add a prettier couplet to prove you understood."
+
+gates:
+  - gate_id: gate_0_reed
+    name: "The reed complains"
+    theme: "Voice begins at the cut. Longing is information about origin."
+    why_first: >
+      The Mathnawī opens here. If you skip the cut, later fire and death
+      become poetry you admire.
+    stations:
+      - station: 1
+        unit_id: rūmī_mathnawī_yi_maʿnawī.rum_001
+        reference: "Mathnawī I, opening"
+        title: "The reed complains of separation"
+        opening_question: "Where am I still treating longing as a problem to numb?"
+        transmission: >
+          Listen to this reed as it complains; it tells the story of
+          separations. Since they cut me from the reed-bed, men and women
+          have wept to my cry. The song is not entertainment. Separation
+          from the reed-bed is the condition of voice. You are not being
+          asked to enjoy melancholy. You are being asked to treat longing
+          as information about origin, not as a mood to manage. The
+          difficulty is that you want the music without the cut — a
+          spirituality that sounds like the reed and never admits exile.
+        contemplation: "Complaint is theology in the mode of music."
+        gate_practice: >
+          Hum one tone on the out-breath for two minutes as if you were a
+          reed. On the in-breath, feel the cut from the bed. Do not explain
+          it — let the tone complain.
+        passed_when: "You can let longing speak without turning it into a story that makes you special."
+
+  - gate_id: gate_1_return
+    name: "Far from origin"
+    theme: "Whoever stays far seeks the time of union. Longing is structural."
+    why_first: >
+      The reed named the cut. This couplet names the search as the shape of
+      distance, not as accidental psychology.
+    stations:
+      - station: 2
+        unit_id: rūmī_mathnawī_yi_maʿnawī.rum_002
+        reference: "Mathnawī I, on origin"
+        title: "Whoever is far seeks return"
+        opening_question: "What origin is this ache actually pointing toward?"
+        transmission: >
+          I want a breast torn open by parting, so I may explain the pain of
+          longing. Whoever stays far from their own origin seeks again the
+          time of union. Distance from origin generates the search. The
+          contested claim is that longing is not a personality trait and not
+          a problem in the chemistry. It is structural: farness produces
+          seeking. The difficulty is that you explain the ache as stress,
+          romance, or ambition, and never ask what origin it is pointing
+          toward. Do not invent a metaphysics to look deep. Name the
+          direction of one real ache.
+        contemplation: "The search is what farness does."
+        gate_practice: >
+          Name one current ache in a single sentence. Under it, write what
+          origin it might be pointing toward — not a theory, a direction
+          (home, God, a person, a work, a truth you left). Do one small act
+          that faces that direction today. Do not explain the ache to anyone.
+        passed_when: "You can tell structural longing from a mood you are managing."
+
+  - gate_id: gate_2_fire
+    name: "Fire, not wind"
+    theme: "The cry is love's fire. Clever breath without heat is nothing."
+    why_first: >
+      Return can still be talk. This couplet tests whether speech carries
+      heat or only wind.
+    stations:
+      - station: 3
+        unit_id: rūmī_mathnawī_yi_maʿnawī.rum_005
+        reference: "Mathnawī I, the nay's fire"
+        title: "This cry is fire, not wind"
+        opening_question: "Where is my speech clever wind rather than burning?"
+        transmission: >
+          This sound of the reed is fire, not wind; whoever does not have
+          this fire, may he not exist. It is love's fire that fell into the
+          reed; it is love's ebullition that fell into the wine. The nay's
+          breath is not mere air. Check whether your speech carries heat or
+          only clever wind. The difficulty is that you are good with words.
+          Wind can sound like the reed. Fire costs you something — a
+          sentence you cannot take back, a care you cannot style. Without
+          that fire, be nothing: not as a curse to admire, as a diagnosis
+          of empty speech.
+        contemplation: "If it does not burn, it is weather in the mouth."
+        gate_practice: >
+          Before one conversation today, ask: is this fire or wind? If wind,
+          do not speak it. If fire, say the true shorter sentence — an
+          apology, a thanks, a need — without decorating it. Afterward, do
+          not review how well you sounded.
+        passed_when: "You can tell heat in speech from cleverness, and withhold one gust of wind."
+
+  - gate_id: gate_3_shepherd
+    name: "The shepherd's prayer"
+    theme: "Crude intimacy can be holier than correct coldness."
+    why_first: >
+      Fire now needs a mouth that is allowed to be unrefined. Moses hears
+      the shepherd so you can hear your own correct, cold prayer.
+    stations:
+      - station: 4
+        unit_id: rūmī_mathnawī_yi_maʿnawī.rum_009
+        reference: "Mathnawī II, Moses and the shepherd"
+        title: "Moses hears the shepherd"
+        opening_question: "Where has my prayer become correct and cold?"
+        transmission: >
+          Moses saw a shepherd on the road saying: O God who chooses — where
+          are You, that I may become Your servant, mend Your shoe, comb Your
+          head, wash Your clothes, kill Your lice, bring You milk… The prayer
+          is anthropomorphic, intimate, crude. Its contested holiness is
+          precisely that heat. Moses will soon be the voice of correctness.
+          You already know how to pray without embarrassment. The difficulty
+          is that propriety has replaced burning. Do not mock the shepherd
+          to feel free, and do not mock Moses to feel superior. Notice when
+          your address to God (or to love, or to truth) has become a clean
+          sentence with no body in it.
+        contemplation: "Heat before diction."
+        gate_practice: >
+          Pray for one minute in deliberately simple, even crude language of
+          care — as if God had feet, a place to sleep, a need you could tend.
+          Then sit one minute in burning without words. Notice which felt
+          more true. Do not perform the crude version for an audience.
+        passed_when: "You can tell cold correctness from a clumsy sentence that still cares."
+
+  - gate_id: gate_4_unite
+    name: "Unite, not divide"
+    theme: "God looks at the heart and the state, not at the polish of the tongue."
+    why_first: >
+      The shepherd was not a license to despise form. The rebuke relocates
+      the criterion: did you come to unite or to separate?
+    stations:
+      - station: 5
+        unit_id: rūmī_mathnawī_yi_maʿnawī.rum_011
+        reference: "Mathnawī II, the rebuke"
+        title: "You came to unite, not divide"
+        opening_question: "Did my last correction join someone to the Beloved, or split them?"
+        transmission: >
+          Did you come to unite or to separate? Do not set foot in
+          separation — the most hateful of things to Me is divorce. I have
+          appointed for each person a disposition and a manner of expression.
+          We do not look at the tongue and the words; We look at the soul
+          and the state. We regard the heart — whether it is humble, even
+          if the verbal expression proceeds without humility. How long these
+          words and metaphors? I want burning — make accord with that
+          burning. The criterion is relational effect, not verbal purity.
+          The difficulty is that you still correct people as Moses did, and
+          call it care. Measure the speech by whether it joins or splits.
+        contemplation: "Divorce is the most hateful; including spiritual divorce."
+        gate_practice: >
+          Catch one impulse to correct someone's prayer, taste, or wording
+          today. Before speaking, ask: will this unite or divide? If divide,
+          do not say it. If unite, say only what keeps the burning intact —
+          or keep silent. Do not congratulate yourself for the silence.
+        passed_when: "You can withhold one dividing correction without turning permissiveness into a new badge."
+
+  - gate_id: gate_5_elephant
+    name: "The elephant in the dark"
+    theme: "Touch in the dark manufactures certainty about a part."
+    why_first: >
+      Uniting speech can still be sure of its own fragment. The dark house
+      is the epistemic gate: the whole is present; your palm is not vision.
+    stations:
+      - station: 6
+        unit_id: rūmī_mathnawī_yi_maʿnawī.rum_013
+        reference: "Mathnawī III, the elephant"
+        title: "The elephant in the dark house"
+        opening_question: "Where am I still groping a part and claiming to know the animal?"
+        transmission: >
+          An elephant was in a dark house. Many people went in to see it.
+          Since seeing with the eye was impossible, each felt it with the
+          palm in the dark. Fragmentary knowledge begins in darkness mistaken
+          for vision. When the whole is present but unlit, touch substitutes
+          for seeing and manufactures certainty. You already have a strong
+          opinion of a person, a tradition, a God. The difficulty is not
+          that you lack data. It is that you will not name the part you are
+          touching, or the parts you have not touched. A couplet is a
+          vehicle here: it carries you to the palm, not to a complete picture
+          you could own.
+        contemplation: "Certainty in the dark is still a palm."
+        gate_practice: >
+          When you form a strong opinion of a person or situation, pause and
+          say: I am touching one part in the dark. Name what part, and what
+          you have not touched. Then ask one question, or wait, instead of
+          delivering the animal.
+        passed_when: "You can downgrade one certainty to a named part."
+
+  - gate_id: gate_6_die
+    name: "Die before you die"
+    theme: "Transformative death into light — not a grave, not a pose."
+    why_first: >
+      The last saying refuses the self that only observes. Becoming is the
+      condition for seeing.
+    stations:
+      - station: 7
+        unit_id: rūmī_mathnawī_yi_maʿnawī.rum_022
+        reference: "Mathnawī, mūtū qabla an tamūtū"
+        title: "Die before you die"
+        opening_question: "What in me is still using a spiritual life to refuse to die?"
+        transmission: >
+          If you want That unveiled, choose death and tear the veil: not a
+          death that sends you into a grave, but a death of transformation
+          that sends you into Light. Hence the Messenger: Die before death.
+          Become the resurrection, then see the resurrection: becoming is
+          the condition for seeing anything. This is not morbid advice. The
+          self that only observes cannot know. The difficulty is that your
+          "spiritual life" still protects a self that refuses to die — a
+          watcher who will report on light from a safe bank. Do not force a
+          death. Take one ordinary friction and meet what in you refuses.
+        contemplation: "Not the grave — the light. Becoming is the condition of seeing."
+        gate_practice: >
+          For one ordinary friction today, whisper: not the grave — the light.
+          Feel what in you refuses to die, without forcing it. Let one
+          self-defense (a justification, a status, a plan to be right) go
+          unspoken. Do the next kind or necessary act from that smaller self.
+        passed_when: "You can tell transformative dying from both corpse-fantasy and a watcher who never risks it."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    Complete as living speech. The ASCII rumi_mathnawi folder is not this
+    path. Treatise walks (Know Yourself, Kashf, the valleys) are other
+    architectures — do not use them to outgrow the reed.
+  next_gates: []

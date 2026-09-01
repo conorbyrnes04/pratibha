@@ -1,34 +1,28 @@
+import { JournalFeed } from "@/components/JournalFeed";
+import { IconButton, symbols } from "@/components/IconButton";
 import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
-import { Link } from "expo-router";
-import { Pressable, View } from "react-native";
+import { PratibhaText } from "@/components/ui/PratibhaText";
+import { View } from "react-native";
 
 export default function ManuscriptTab() {
   return (
     <PratibhaScreen>
-      <PratibhaText variant="eyebrow">Mine</PratibhaText>
-      <PratibhaText variant="title" style={{ marginTop: 8 }}>
-        My manuscript
-      </PratibhaText>
-      <PratibhaText variant="soft" style={{ marginTop: 16, fontSize: 16, lineHeight: 24 }}>
-        Keep verses as a chapbook. Compose and publish the folio on the web; this tab is the same
-        seat as My Manuscript there.
-      </PratibhaText>
-      <View style={[ui.card, { marginTop: 20 }]}>
-        <PratibhaText variant="label">The walk</PratibhaText>
-        <PratibhaText variant="heading" style={{ marginTop: 8, fontSize: 20 }}>
-          Today → Path → Library → Mine
-        </PratibhaText>
-        <PratibhaText variant="soft" style={{ marginTop: 8 }}>
-          Finish a gate on Today. The trail names tomorrow. Library holds the house. Mine gathers
-          what you keep.
-        </PratibhaText>
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" }}>
+        <View style={{ flex: 1, paddingRight: 12 }}>
+          <PratibhaText variant="eyebrow">Mine</PratibhaText>
+          <PratibhaText variant="title" style={{ marginTop: 8 }}>
+            What you kept
+          </PratibhaText>
+          <PratibhaText variant="soft" style={{ marginTop: 8 }}>
+            Reflections and saved replies, kept on this phone.
+          </PratibhaText>
+        </View>
+        <View style={{ flexDirection: "row", gap: 16, marginTop: 4 }}>
+          <IconButton name={symbols.ask} accessibilityLabel="Ask" href={"/ask" as never} />
+          <IconButton name={symbols.gear} accessibilityLabel="Settings" href="/settings" />
+        </View>
       </View>
-      <Link href="/(tabs)/" asChild>
-        <Pressable style={[ui.button, { marginTop: 20 }]}>
-          <PratibhaText style={ui.buttonText}>Return to Today</PratibhaText>
-        </Pressable>
-      </Link>
+      <JournalFeed />
     </PratibhaScreen>
   );
 }

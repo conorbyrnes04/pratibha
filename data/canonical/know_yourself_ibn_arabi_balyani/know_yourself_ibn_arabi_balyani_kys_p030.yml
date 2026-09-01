@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p030
-unit_label: 'Pearl #30'
-title: 'Pearl #30'
+unit_label: Knowing the Self Beyond Existence and Annihilation
+title: Knowing the Self Beyond Existence and Annihilation
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
   passing content.'
@@ -15,14 +15,28 @@ themes:
 source_excerpt: If you know yourself without existing and passing away, then you know God, and if not,
   then not. By making the knowledge of God dependent on the passing away of your existence and the passing
   away of that passing away, there is an affirmation of something other than God.
-translation_literal: If you know yourself without existing and passing away, then you know God, and if
-  not, then not. By making the knowledge of God dependent on the passing away of your existence and the
-  passing away of that passing away, there is an affirmation of something other than God.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
-  the passing content.'
+translation_literal: 'Then, if you know yourself without existence or ceasing to be, you know God; and
+  if not, then not.
+
+
+  In making the knowledge of God—exalted is He—conditional upon the ceasing of existence and the ceasing
+  of that ceasing, there is involved an affirmation of polytheism.'
+commentary: 'The claim is deliberately more radical than the familiar Sufi sequence of selfhood, annihilation
+  (fanāʾ), and abiding in God. The author denies that knowledge of the Lord awaits the destruction of
+  an independently existing self—or even the disappearance of that destruction. Why? Because making annihilation
+  a required event quietly grants the self a reality first: there must be something there to vanish, and
+  then a second state in which its vanishing vanishes. In this waḥdat al-wujūd argument, that sequence
+  installs an “other” beside God and thus risks shirk, association. Self-knowledge is therefore not an
+  experience in which a real creature crosses over into God; it is recognition that the supposed autonomous
+  existence of the self was never a second existence at all. The contested move lies precisely here. It
+  refuses both crude incarnation and a two-party mystical union, yet speaks in a way that can erase the
+  Creator-creature distinction guarded by many theologians. Its discipline is epistemic: ignorance falls
+  away, not a substantial self. To know yourself rightly is to see that dependence is not an attribute
+  added to your being, but the exposure of the claim to independent being as unfounded.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: Today, when you catch yourself defending an identity as though it were self-sustaining, pause
+  and name one concrete dependency—breath, care, food, time, or mercy—then act from gratitude rather than
+  possession.
 sanskrit_devanagari: 'فإذا عرفت نفسك بلا وجود ولا فناء فقد عرفتَ الله. – وإلا فلا.
 
 
@@ -37,39 +51,66 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'فإذا عرفت نفسك بلا وجود ولا فناء فقد عرفتَ الله. – وإلا فلا.
+
+
+    وفي إضافة معرفة الله – تعالى – إلى فناء الوجود وإلى فناء فنائه إثباتُ الشرك'
 - kind: translation
   label: Pratibha Translation
-  body: If you know yourself without existing and passing away, then you know God, and if not, then not.
-    By making the knowledge of God dependent on the passing away of your existence and the passing away
-    of that passing away, there is an affirmation of something other than God.
+  body: 'Then, if you know yourself without existence or ceasing to be, you know God; and if not, then
+    not.
+
+
+    In making the knowledge of God—exalted is He—conditional upon the ceasing of existence and the ceasing
+    of that ceasing, there is involved an affirmation of polytheism.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
-    passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The claim is deliberately more radical than the familiar Sufi sequence of selfhood, annihilation
+    (fanāʾ), and abiding in God. The author denies that knowledge of the Lord awaits the destruction of
+    an independently existing self—or even the disappearance of that destruction. Why? Because making
+    annihilation a required event quietly grants the self a reality first: there must be something there
+    to vanish, and then a second state in which its vanishing vanishes. In this waḥdat al-wujūd argument,
+    that sequence installs an “other” beside God and thus risks shirk, association. Self-knowledge is
+    therefore not an experience in which a real creature crosses over into God; it is recognition that
+    the supposed autonomous existence of the self was never a second existence at all. The contested move
+    lies precisely here. It refuses both crude incarnation and a two-party mystical union, yet speaks
+    in a way that can erase the Creator-creature distinction guarded by many theologians. Its discipline
+    is epistemic: ignorance falls away, not a substantial self. To know yourself rightly is to see that
+    dependence is not an attribute added to your being, but the exposure of the claim to independent being
+    as unfounded.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: وجود
+    definition: 'w-j-d, ‘to find’ or ‘be present’ -> the self’s supposed independent existence -> more
+      than the default ‘existence’: it is the claim to reality whose denial drives the argument.'
+  - term: فناء
+    definition: f-n-y, ‘to pass away’ -> mystical annihilation, including the annihilation of annihilation
+      -> not simply death or disappearance, but a technical spiritual station the passage refuses to make
+      necessary.
+  - term: شرك
+    definition: sh-r-k, ‘sharing, partnership’ -> affirming a reality alongside God through the logic
+      of a self that must be annihilated -> more forceful than the default gloss ‘polytheism.’
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 7
-    resonance: 'Both texts locate knowledge in a reorientation of attention away from external objects
-      toward an inner principle that is always present but obscured by habitual perception. The move is
-      identical: turn inward, and what was hidden becomes known.'
-    divergence: Ibn Arabi grounds this inward turn in the paradox of self-knowledge without ontological
-      persistence (fana), while Plotinus grounds it in the soul's continuous intelligible activity that
-      sense-perception merely obscures.
-    passage_id: plotinus_enneads.enn_vi_9_07
-  - citation: Siva Sutra — Śāktopāya
-    resonance: 'Both texts collapse the distinction between attention and knowledge: sustained or focused
-      attention is itself the act of knowing, not a means to it. The knower and the knowing are unified
-      through the quality of attention itself.'
-    divergence: The Siva Sutra formulates this as a metaphysical principle of consciousness (Śāktopāya),
-      while Ibn Arabi frames it as a paradoxical condition of self-annihilation (fana) that reveals divine
-      knowledge.
-    passage_id: siva_sutra.ss_ii_12
-  layer_provenance: generated_grounded
+  - citation: Qur’an 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supplies the scriptural language
+      through which the treatise denies an independent before, after, or outside of God.
+    divergence: The verse declares divine comprehensiveness; this passage draws the more controversial
+      metaphysical conclusion that the creature’s alleged existence is no reality needing extinction.
+  - citation: 'Hadith: “Whoever knows himself knows his Lord”'
+    resonance: 'The treatise takes the maxim as its governing axiom: self-knowledge and knowledge of God
+      are inseparable.'
+    divergence: The saying’s transmission and meaning have been debated, and the author gives it a specifically
+      nondual reading rather than a moral, psychological, or devotional one.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, when you catch yourself defending an identity as though it were self-sustaining, pause
+    and name one concrete dependency—breath, care, food, time, or mercy—then act from gratitude rather
+    than possession.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -81,3 +122,18 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: 'Then, if you know yourself without existence or ceasing to be, you know God; and if not,
+  then not.
+
+
+  In making the knowledge of God—exalted is He—conditional upon the ceasing of existence and the ceasing
+  of that ceasing, there is involved an affirmation of polytheism.'
+abhyasa: Today, when you catch yourself defending an identity as though it were self-sustaining, pause
+  and name one concrete dependency—breath, care, food, time, or mercy—then act from gratitude rather than
+  possession.
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'فإذا عرفت نفسك بلا وجود ولا فناء فقد عرفتَ الله. – وإلا فلا.
+
+
+  وفي إضافة معرفة الله – تعالى – إلى فناء الوجود وإلى فناء فنائه إثباتُ الشرك'

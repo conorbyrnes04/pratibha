@@ -3,7 +3,7 @@
 # Regenerate Gutenberg files: python scripts/fetch_pd_sources.py
 
 version: 1
-updated: 2026-07-29
+updated: 2026-09-01
 
 sources:
   - id: heraclitus_patrick_1889
@@ -351,15 +351,55 @@ sources:
     status: to_be_sourced
     note: "Original-language sourcing from Coptic Library Project. Priority: bridal chamber, light/darkness, mirror/image. Est. 5-7 units."
 
-  - id: gospel_of_mary_coptic
-    collection: gnostic_gospels
-    translator: null
-    year: null
-    work: "Gospel of Mary Magdalene — Coptic/Greek original (BG 8502)"
+  - id: gospel_of_mary_mattison
+    collection: gospel_of_mary
+    translator: Mark M. Mattison
+    year: 2016
+    work: "The Gospel of Mary — English translation dedicated to the public domain"
     license: public_domain
-    local_path: coptic/gospel_of_mary_coptic.txt
-    status: to_be_sourced
-    note: "Short text (~8 papyrus pages). Priority: ascending soul, Peter's objection, matter and dissolution. Est. 3-5 units."
+    local_path: coptic/gospel_of_mary_mattison_pd.txt
+    status: sourced
+    note: >
+      Mattison (gospels.net) dedicated the English to the public domain ("freely
+      copied… for any purpose"), based on BG 8502,1. Canonical English is a
+      Pratibha pd_adapted of this crib, not King/MacRae/Meyer/NHL. Pages 1–6 and
+      11–14 are lost; surviving pericopes (~12 units) are paired with
+      new_testament_logia as a sibling family. Coptic Original layer is a working
+      transcription of the Sahidic manuscript wording, not Till 1955 apparatus.
+    links:
+      - label: Gospels.net (Mattison PD)
+        url: https://www.gospels.net/mary
+
+  - id: nestle_1904_gospels
+    collection: new_testament_logia
+    editor: Eberhard Nestle
+    year: 1904
+    work: "Η ΚΑΙΝΗ ΔΙΑΘΗΚΗ — Novum Testamentum Graece (4th ed., 1904)"
+    license: public_domain
+    local_path: greek/nestle1904/04-john.xml
+    status: sourced
+    note: >
+      Koine of the four gospels from the 1904 Nestle text (OSIS XML). Canonical
+      English is a Pratibha pd_render from this Greek; ASV 1901 is a cadence
+      crib only. Do not ingest NIV/NRSV.
+    links:
+      - label: Nestle 1904 (morphgnt / OSIS dumps)
+        url: https://github.com/morphgnt/tischendorf
+
+  - id: asv_1901
+    collection: new_testament_logia
+    translator: American Standard Version committee
+    year: 1901
+    work: "American Standard Version (1901)"
+    license: public_domain
+    local_path: english/asv_1901.json
+    status: sourced
+    note: >
+      PD English crib for Nestle/WH-aligned gospel logia. Units do not copy ASV
+      verbatim; cadence may follow it. JSON from scrollmapper bible_databases.
+    links:
+      - label: ASV 1901 (public domain)
+        url: https://en.wikisource.org/wiki/Bible_(American_Standard)
 
   - id: boethius_james_1897
     collection: boethius_consolation
@@ -523,3 +563,78 @@ references:
     translator: Swami Vivekananda
     work: Raja Yoga (1896)
     url: https://archive.org/details/in.ernet.dli.2015.20715
+
+  - id: wlc_openscriptures_psalms
+    collection: psalms_tehillim
+    editor: Open Scriptures Hebrew Bible / Westminster Leningrad Codex
+    year: 2018
+    work: Psalms (Tehillim) — WLC OSIS
+    license: public_domain
+    local_path: hebrew/psalms_wlc_openscriptures.xml
+    note: >
+      Masoretic Hebrew from OpenScriptures morphhb wlc/Ps.xml (WLC; PD).
+      English in canonical units is a Pratibha pd_render, not a copyrighted Bible.
+      Selected poetic/mystical psalms only (includes Psalm 19).
+    links:
+      - label: GitHub — morphhb wlc/Ps.xml
+        url: https://github.com/openscriptures/morphhb/blob/master/wlc/Ps.xml
+
+  - id: grierson_barnett_lalla_vakyani_1920
+    collection: lalla_vakyani
+    translator: Sir George Grierson & Lionel D. Barnett
+    year: 1920
+    work: Lallā-Vākyāni, or The Wise Sayings of Lal Ded
+    license: public_domain
+    local_path: kashmiri/grierson_lalla_vakyani_1920.txt
+    note: >
+      RAS Monograph XVII. Kashmiri recension recorded from Dharam Das Darvesh by
+      Mukund Ram Shastri. PDF (gitignored) sits beside the pdftotext extract.
+      Do not use Hoskote, Jayalal Kaul, Parimoo, or Kotru as ingest English.
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/lallavakyani014969mbp
+      - label: HathiTrust
+        url: https://catalog.hathitrust.org/Record/100324960
+
+  - id: masani_conference_of_the_birds_1924
+    collection: conference_of_the_birds
+    translator: R. P. Masani
+    year: 1924
+    work: The Conference of the Birds — abridged English of ʿAṭṭār's Manṭiq al-ṭayr
+    license: public_domain
+    local_path: persian/attar_conference_masani_1924.txt
+    note: >
+      Oxford / Humphrey Milford, 1924. English crib for pd_adapted units.
+      Persian mūla from Ganjoor. Do not use Davis & Darbandi, Nott, or Avery.
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/dli.ernet.470151
+      - label: Ganjoor — Manṭiq al-ṭayr
+        url: https://ganjoor.net/attar/manteghotteyr
+
+  - id: nicholson_kashf_al_mahjub_1911
+    collection: kashf_al_mahjub
+    translator: Reynold A. Nicholson
+    year: 1911
+    work: The Kashf al-Maḥjúb — The Oldest Persian Treatise on Sufiism
+    license: public_domain
+    local_path: persian/hujwiri_kashf_al_mahjub_nicholson_1911.txt
+    note: >
+      Gibb Memorial Series XVII. Gutenberg #64786. Doctrinal units only.
+    links:
+      - label: Project Gutenberg #64786
+        url: https://www.gutenberg.org/ebooks/64786
+      - label: Internet Archive
+        url: https://archive.org/details/kashfalmahjub00usmauoft
+
+  - id: weir_balyani_jras_1901
+    collection: know_yourself_ibn_arabi_balyani
+    translator: T. H. Weir
+    year: 1901
+    work: Whoso Knoweth Himself Knoweth His Lord (JRAS 1901)
+    license: public_domain
+    local_path: arabic/ibn_arabi_balyani_weir_jras_1901.txt
+    note: English crib for pd_adapted Know Yourself units. Do not use Twinch.
+    links:
+      - label: JRAS 1901 (via local extract)
+        url: https://www.jstor.org/stable/25208302

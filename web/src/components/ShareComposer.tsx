@@ -161,6 +161,7 @@ function ShareComposerInner({
   const [openMarks, setOpenMarks] = useState<Set<ShareForceMark>>(() => new Set([verseMark, "lotus", "circle", "moon", "fire", "tree", "heart", "water", "mountain"]));
   const cardRef = useRef<HTMLDivElement>(null);
   const exportRef = useRef<HTMLDivElement>(null);
+  const noteEditedRef = useRef(false);
   const [canOsShare, setCanOsShare] = useState(false);
   const { user } = useAuth();
   const manuscript = cloud?.manuscript;
@@ -168,6 +169,7 @@ function ShareComposerInner({
   const earnedHolo = wroteReading || Boolean(commentary?.body?.trim());
   const readingText = (readingDraft || commentary?.body || "").trim();
   const printedReading = printReading && readingText ? clipShareText(readingText, 220) : undefined;
+  const printedMargin = folioNote.trim() ? clipShareText(folioNote.trim(), 280) : undefined;
   const extraVerseIds = manuscript?.entries.map((entry) => entry.verseId) ?? [];
 
   const candidates = useMemo(
@@ -188,8 +190,9 @@ function ShareComposerInner({
         original: picked.source === "translation" ? undefined : picked.text,
         translation: picked.source === "translation" ? picked.text : undefined,
         reading: printedReading,
+        margin: printedMargin,
       }
-    : { ...copy, reading: printedReading };
+    : { ...copy, reading: printedReading, margin: printedMargin };
   const displayMode = picked
     ? picked.source === "translation"
       ? "translation"
@@ -241,6 +244,7 @@ function ShareComposerInner({
     if (entry?.aspectRatio === "story" || entry?.aspectRatio === "post") {
       setAspectRatio(entry.aspectRatio);
     }
+    noteEditedRef.current = false;
     setFolioNote(entry?.note || "");
     setPrintReading(Boolean(entry?.reading?.trim()));
     const shine = Boolean(entry?.holographic) || earnedHolo;
@@ -249,6 +253,12 @@ function ShareComposerInner({
     // Hydrate once when the builder opens for this verse.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sheetOpen, item._id]);
+
+  useEffect(() => {
+    if (!sheetOpen || noteEditedRef.current) return;
+    const entry = manuscript?.entries.find((row) => row.verseId === item._id);
+    if (entry?.note) setFolioNote(entry.note);
+  }, [sheetOpen, item._id, manuscript]);
 
   useEffect(() => {
     if (!earnedHolo) return;
@@ -261,7 +271,7 @@ function ShareComposerInner({
   }, []);
 
   const holoHue = holoHueFromSeed(
-    `${item._id}|${mark}|${ink}|${displayCopy.reading || ""}|${displayCopy.title || ""}`,
+    `${item._id}|${mark}|${ink}|${displayCopy.reading || ""}|${displayCopy.margin || ""}|${displayCopy.title || ""}`,
   );
 
   async function pngBlob(): Promise<Blob> {
@@ -363,8 +373,12 @@ function ShareComposerInner({
   }
 
   async function handOffFolio(dest?: ShareSocialId) {
-    recordPractice(`share:${item._id}`);
-    refreshUnlocks();
+    try {
+      recordPractice(`share:${item._id}`);
+      refreshUnlocks();
+    } catch {
+      /* unlock ledger is best-effort — never block a share */
+    }
     setBusy(dest ?? "share");
     try {
       const blob = await pngBlob();
@@ -444,7 +458,7 @@ function ShareComposerInner({
       const payload = {
         verseId: item._id,
         verseTitle: copy.title,
-        note: folioNote || undefined,
+        note: printedMargin || folioNote.trim() || undefined,
         mark,
         ink,
         textMode,
@@ -459,9 +473,13 @@ function ShareComposerInner({
         const { reading: _reading, ...rest } = payload;
         await cloud.addVerse(rest);
       }
-      recordPractice(`manuscript:${item._id}`);
-      if (folioNote.trim()) recordPractice(`manuscript:note:${item._id}`);
-      refreshUnlocks();
+      try {
+        recordPractice(`manuscript:${item._id}`);
+        if (folioNote.trim()) recordPractice(`manuscript:note:${item._id}`);
+        refreshUnlocks();
+      } catch {
+        /* unlock ledger is best-effort — the manuscript write already succeeded */
+      }
       toast.success(t("share.kept"));
     } catch (err) {
       toast.error(friendlyShareError(err, t("share.keepFailed")));
@@ -489,7 +507,11 @@ function ShareComposerInner({
         body: readingDraft,
         status: "private",
       });
-      recordPractice(`commentary:${item._id}`);
+      try {
+        recordPractice(`commentary:${item._id}`);
+      } catch {
+        /* unlock ledger is best-effort */
+      }
       setWroteReading(true);
       setHolographic(true);
       enableHoloMotion();
@@ -497,7 +519,7 @@ function ShareComposerInner({
         await cloud.addVerse({
           verseId: item._id,
           verseTitle: copy.title,
-          note: folioNote || undefined,
+          note: printedMargin || folioNote.trim() || undefined,
           mark,
           ink,
           textMode,
@@ -717,6 +739,18 @@ function ShareComposerInner({
             </fieldset>
             <fieldset id="share-keep">
               <legend className="passage-layer__label mb-3">{t("share.thisCard")}</legend>
+              <Textarea
+                className="mb-3"
+                value={folioNote}
+                onChange={(e) => {
+                  noteEditedRef.current = true;
+                  setFolioNote(e.target.value);
+                }}
+                placeholder={t("manuscript.notePlaceholder")}
+                rows={2}
+                maxLength={280}
+                aria-label={t("manuscript.notePlaceholder")}
+              />
               {earnedHolo || readingText ? (
                 <div className="mb-3 flex flex-wrap gap-2">
                   {earnedHolo ? (
@@ -773,13 +807,6 @@ function ShareComposerInner({
                   {t("share.signInReading")}
                 </Link>
               ) : null}
-              <Textarea
-                className="mt-3"
-                value={folioNote}
-                onChange={(e) => setFolioNote(e.target.value)}
-                placeholder={t("manuscript.notePlaceholder")}
-                rows={2}
-              />
             </fieldset>
             {availableModes.length > 1 ? (
               <fieldset>

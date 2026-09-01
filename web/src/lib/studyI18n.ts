@@ -6,8 +6,82 @@ import { layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 
 const SOURCE_KINDS = new Set<PratibhaLayerKind>(["original", "iast"]);
 const BODY_KINDS = new Set<PratibhaLayerKind>(["translation", "commentary", "practice"]);
+const SKIP_KINDS = new Set<PratibhaLayerKind>(["original", "iast", "appendix"]);
+export const CORE_STUDY_KEYS = new Set(["title", "thesis", "translation", "commentary", "practice"]);
+const LOCAL_CACHE_PREFIX = "pratibha.i18n.v1:";
 
 const inflight = new Map<string, Promise<Record<string, string>>>();
+
+function fieldKind(key: string): string {
+  return key.includes(":") ? key.split(":", 1)[0] : key;
+}
+
+function djb2(text: string): string {
+  let hash = 5381;
+  for (let i = 0; i < text.length; i += 1) hash = ((hash << 5) + hash) ^ text.charCodeAt(i);
+  return (hash >>> 0).toString(36);
+}
+
+function localCacheKey(locale: string, kind: string, text: string): string {
+  return `${LOCAL_CACHE_PREFIX}${locale}:${kind}:${djb2(text)}`;
+}
+
+function readLocalTranslation(locale: string, kind: string, text: string): string | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(localCacheKey(locale, kind, text));
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as { s?: string; t?: string };
+    if (parsed.s !== text || !parsed.t?.trim()) return null;
+    return parsed.t.trim();
+  } catch {
+    return null;
+  }
+}
+
+export function evictStudyI18nCache(): number {
+  if (typeof window === "undefined") return 0;
+  const keys: string[] = [];
+  for (let i = 0; i < window.localStorage.length; i += 1) {
+    const key = window.localStorage.key(i);
+    if (key?.startsWith(LOCAL_CACHE_PREFIX)) keys.push(key);
+  }
+  for (const key of keys) window.localStorage.removeItem(key);
+  return keys.length;
+}
+
+function writeLocalTranslation(locale: string, kind: string, source: string, translated: string) {
+  if (typeof window === "undefined" || !translated.trim()) return;
+  try {
+    window.localStorage.setItem(
+      localCacheKey(locale, kind, source),
+      JSON.stringify({ s: source, t: translated }),
+    );
+  } catch {
+    evictStudyI18nCache();
+    try {
+      window.localStorage.setItem(
+        localCacheKey(locale, kind, source),
+        JSON.stringify({ s: source, t: translated }),
+      );
+    } catch {
+      /* quota / private mode */
+    }
+  }
+}
+
+export function applyCachedStudyFields(
+  locale: Locale,
+  fields: Record<string, string>,
+): Record<string, string> {
+  if (locale === "en") return fields;
+  const out: Record<string, string> = { ...fields };
+  for (const [key, value] of Object.entries(fields)) {
+    const cached = readLocalTranslation(locale, fieldKind(key), value);
+    if (cached) out[key] = cached;
+  }
+  return out;
+}
 
 function fieldKey(fields: Record<string, string>): string {
   return JSON.stringify(
@@ -35,9 +109,8 @@ export function extractVerseStudyFields(item: VerseItem): Record<string, string>
   if (item.thesis?.trim()) fields.thesis = item.thesis.trim();
   let termI = 0;
   let resI = 0;
-  let appI = 0;
   for (const layer of item.pratibha_layers || []) {
-    if (SOURCE_KINDS.has(layer.kind)) continue;
+    if (SKIP_KINDS.has(layer.kind) || SOURCE_KINDS.has(layer.kind)) continue;
     if (BODY_KINDS.has(layer.kind)) {
       const body = (layer.body || "").trim();
       if (body) fields[layer.kind] = body;
@@ -60,12 +133,6 @@ export function extractVerseStudyFields(item: VerseItem): Record<string, string>
         if (resonance) fields[`resonance:${resI}`] = resonance;
         if (divergence) fields[`divergence:${resI}`] = divergence;
         resI += 1;
-      }
-    } else if (layer.kind === "appendix") {
-      const body = (layer.body || "").trim();
-      if (body) {
-        fields[`appendix:${appI}`] = body;
-        appI += 1;
       }
     }
   }
@@ -97,8 +164,11 @@ export function applyVerseStudyFields(item: VerseItem, fields: Record<string, st
     themes: item.themes?.map((theme, idx) => fields[`theme:${idx}`] || theme),
     pratibha_layers: item.pratibha_layers?.map((layer) => {
       if (SOURCE_KINDS.has(layer.kind)) return layer;
-      if (BODY_KINDS.has(layer.kind) && fields[layer.kind]) {
-        return { ...layer, body: fields[layer.kind] };
+      if (BODY_KINDS.has(layer.kind)) {
+        return {
+          ...layer,
+          body: fields[layer.kind] || layer.body,
+        };
       }
       if (layer.kind === "key_terms" && layer.items) {
         return {
@@ -161,6 +231,20 @@ export function applyVerseCardFields(item: VerseItem, fields: Record<string, str
   });
 }
 
+export function splitCoreStudyFields(fields: Record<string, string>): {
+  core: Record<string, string>;
+  rest: Record<string, string>;
+} {
+  const core: Record<string, string> = {};
+  const rest: Record<string, string> = {};
+  for (const [key, value] of Object.entries(fields)) {
+    const kind = fieldKind(key);
+    if (CORE_STUDY_KEYS.has(kind)) core[key] = value;
+    else rest[key] = value;
+  }
+  return { core, rest };
+}
+
 export async function localizeStudyFields(
   locale: Locale,
   fields: Record<string, string>,
@@ -169,10 +253,25 @@ export async function localizeStudyFields(
     Object.entries(fields).filter(([, value]) => Boolean(value && value.trim())),
   );
   if (locale === "en" || Object.keys(clean).length === 0) return clean;
-  const key = `${locale}:${fieldKey(clean)}`;
+  const cached: Record<string, string> = {};
+  const missing: Record<string, string> = {};
+  for (const [key, value] of Object.entries(clean)) {
+    const hit = readLocalTranslation(locale, fieldKind(key), value);
+    if (hit) cached[key] = hit;
+    else missing[key] = value;
+  }
+  if (Object.keys(missing).length === 0) return { ...clean, ...cached };
+  const key = `${locale}:${fieldKey(missing)}`;
   const pending = inflight.get(key);
-  if (pending) return pending;
-  const request = translateStudyFields(locale, clean).finally(() => inflight.delete(key));
-  inflight.set(key, request);
+  const request =
+    pending ||
+    translateStudyFields(locale, missing).then((translated) => {
+      for (const [field, source] of Object.entries(missing)) {
+        const text = (translated[field] || "").trim();
+        if (text && text !== source) writeLocalTranslation(locale, fieldKind(field), source, text);
+      }
+      return { ...clean, ...cached, ...translated };
+    });
+  if (!pending) inflight.set(key, request.finally(() => inflight.delete(key)));
   return request;
 }

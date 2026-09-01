@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p006
-unit_label: 'Pearl #6'
-title: 'Pearl #6'
+unit_label: Only the Real Knows the Real
+title: Only the Real Knows the Real
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
   passing content.'
@@ -14,14 +14,23 @@ themes:
 source_excerpt: No one sees Him except Himself, no one reaches Him except Himself and no one knows Him
   except Himself. He knows Himself through Himself and He sees Himself by means of Himself. No one but
   He sees Him.
-translation_literal: No one sees Him except Himself, no one reaches Him except Himself and no one knows
-  Him except Himself. He knows Himself through Himself and He sees Himself by means of Himself. No one
-  but He sees Him.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
-  the passing content.'
+translation_literal: None sees Him save Himself; none perceives Him save Himself; none knows Him save
+  Himself. By Himself He knows Himself; He sees Himself. None other than He sees Him.
+commentary: 'The passage presses an uncompromising claim: God cannot be made into an object standing before
+  a human knower. Sight, perception, and knowledge ordinarily imply a relation between two—the one who
+  knows and the thing known. Here that duality is denied at its root. In the language later associated
+  with waḥdat al-wujūd, only the Real (al-Ḥaqq) is truly present to the Real; divine self-knowledge is
+  not one event among others but the ground of every possible appearing and knowing. This frames self-knowledge
+  in the treatise’s startling sense. To know oneself is not to discover an independently existing self
+  that subsequently reaches God; it is to see that the presumed independent knower has no standing apart
+  from the One Reality. The contested move is plain: the text does not merely say that God exceeds creaturely
+  comprehension, as more cautious theology would maintain. It says that no prophet, saint, intellect,
+  or inward vision knows or sees God as an other. Such language risks collapsing Creator and creature,
+  even while the treatise rejects incarnation, mixture, and spatial union. Its intended point is not possession
+  of divinity by the ego, but the removal of the ego’s claim to autonomous vision.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you notice yourself claiming certainty about God, pause for one minute and replace
+  the claim with: “My knowing does not contain the Real.”'
 sanskrit_devanagari: لا يراه إلا هو، ولا يدركه إلا هو، ولا يعلمه إلا هو بنفسه، وبنفسه يعرف نفسه؛ يرى نفسه،
   لا يراه أحدٌ غيره.
 sanskrit_iast: ''
@@ -33,48 +42,66 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: لا يراه إلا هو، ولا يدركه إلا هو، ولا يعلمه إلا هو بنفسه، وبنفسه يعرف نفسه؛ يرى نفسه، لا يراه
+    أحدٌ غيره.
 - kind: translation
   label: Pratibha Translation
-  body: No one sees Him except Himself, no one reaches Him except Himself and no one knows Him except
-    Himself. He knows Himself through Himself and He sees Himself by means of Himself. No one but He sees
-    Him.
+  body: None sees Him save Himself; none perceives Him save Himself; none knows Him save Himself. By Himself
+    He knows Himself; He sees Himself. None other than He sees Him.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
-    passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The passage presses an uncompromising claim: God cannot be made into an object standing before
+    a human knower. Sight, perception, and knowledge ordinarily imply a relation between two—the one who
+    knows and the thing known. Here that duality is denied at its root. In the language later associated
+    with waḥdat al-wujūd, only the Real (al-Ḥaqq) is truly present to the Real; divine self-knowledge
+    is not one event among others but the ground of every possible appearing and knowing. This frames
+    self-knowledge in the treatise’s startling sense. To know oneself is not to discover an independently
+    existing self that subsequently reaches God; it is to see that the presumed independent knower has
+    no standing apart from the One Reality. The contested move is plain: the text does not merely say
+    that God exceeds creaturely comprehension, as more cautious theology would maintain. It says that
+    no prophet, saint, intellect, or inward vision knows or sees God as an other. Such language risks
+    collapsing Creator and creature, even while the treatise rejects incarnation, mixture, and spatial
+    union. Its intended point is not possession of divinity by the ego, but the removal of the ego’s claim
+    to autonomous vision.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: يرى
+    definition: 'from r-ʾ-y, ‘to see’ -> God sees Himself -> more than physical sight: it includes immediate
+      disclosure, not an observer’s visual act.'
+  - term: يدركه
+    definition: from d-r-k, ‘to catch up with, attain, encompass’ -> none attains or comprehends Him except
+      He -> missed by the default gloss ‘perceive,’ which can sound like ordinary sensation.
+  - term: يعلمه
+    definition: from ʿ-l-m, ‘to know’ -> divine knowing belongs to God alone and is exercised by Himself
+      -> not acquired information or conceptual theology.
+  - term: بنفسه
+    definition: bi-nafsihi, ‘by/through Himself’ -> both the means and locus of divine self-knowledge
+      -> not reflexive isolation, but denial of any independent instrument of knowledge.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Siva Sutra — Śāktopāya
-    resonance: Both texts locate knowledge in the quality and direction of attention itself rather than
-      in external content or objects. Ibn Arabi's 'no one knows Him except Himself' and the Siva Sutra's
-      'sustained attention is knowledge' both make attention the primary instrument and locus of knowing.
-    divergence: Ibn Arabi emphasizes a reflexive turning inward toward the divine Self as the sole knower,
-      while the Siva Sutra presents attention as a universal epistemological principle that constitutes
-      knowledge itself, without necessarily invoking theological reflexivity.
-    passage_id: siva_sutra.ss_ii_12
-  - citation: Yoga Spandakarika — Third Flow
-    resonance: 'Both texts describe knowledge arising through a reversal of ordinary attention: Ibn Arabi''s
-      inward turn away from ''passing content'' parallels the Yoga Spandakarika''s principle that the
-      sacred tremor becomes perceptible precisely when attention shifts from distraction to ardent striving—a
-      reorientation of the perceiving faculty itself.'
-    divergence: Ibn Arabi frames this as a metaphysical necessity (only the Self knows itself), while
-      the Yoga Spandakarika frames it as a phenomenological technique (effort and angle of perception
-      reveal what was obscured by inattention).
-    passage_id: yoga_spandakarika.sp_36
-  - citation: Mandukya Upanishad and Gaudapada Karika — Verses 8–12 · Om and the Fourfold Correspondence
-    resonance: Both passages establish a correspondence between a subtle inner principle and a method
-      of inquiry that transforms that principle into a complete path of self-knowledge. Ibn Arabi's inward
-      return to the knower parallels the Mandukya's mapping of consciousness-states onto Om, making the
-      vehicle of inquiry itself a mirror of what is sought.
-    divergence: Ibn Arabi emphasizes the exclusivity and unity of the divine knower, while the Mandukya
-      employs systematic analytical correspondence and phonetic meditation as the structural method.
-    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_010
-  layer_provenance: generated_grounded
+  - citation: Qurʾan 6:103
+    resonance: “Sight perceives Him not, but He perceives sight” closely supports the asymmetry between
+      creaturely seeing and divine perception.
+    divergence: The verse preserves the distinction between God and perceiving creatures; this passage
+      intensifies it into the claim that only God sees God.
+  - citation: Qurʾan 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” underlies the treatise’s refusal
+      to locate God as one object among others.
+    divergence: The Qurʾanic formula need not entail the treatise’s sweeping identification of every knower’s
+      reality with divine self-disclosure.
+  - citation: Hadith qudsi, “I become his hearing … and his sight” (Ṣaḥīḥ al-Bukhārī)
+    resonance: It depicts nearness to God through transformed hearing and sight, making divine agency
+      central to human perception.
+    divergence: The hadith concerns the devoted servant; this text makes the stronger ontological claim
+      that no one other than God sees Him at all.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you notice yourself claiming certainty about God, pause for one minute and replace
+    the claim with: “My knowing does not contain the Real.”'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -86,3 +113,11 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: None sees Him save Himself; none perceives Him save Himself; none knows Him save Himself.
+  By Himself He knows Himself; He sees Himself. None other than He sees Him.
+abhyasa: 'Today, when you notice yourself claiming certainty about God, pause for one minute and replace
+  the claim with: “My knowing does not contain the Real.”'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: لا يراه إلا هو، ولا يدركه إلا هو، ولا يعلمه إلا هو بنفسه، وبنفسه يعرف نفسه؛ يرى نفسه، لا يراه
+  أحدٌ غيره.

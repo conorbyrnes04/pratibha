@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p026
-unit_label: 'Pearl #26'
-title: 'Pearl #26'
+unit_label: Knowing God Does Not Require Annihilation
+title: Knowing God Does Not Require Annihilation
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -13,13 +13,25 @@ themes:
 - knowledge
 source_excerpt: Most of those who claim to know God make the knowledge of God dependent on the passing
   away of existence and on the passing away of that passing away. That is clearly an error and misconception.
-translation_literal: Most of those who claim to know God make the knowledge of God dependent on the passing
-  away of existence and on the passing away of that passing away. That is clearly an error and misconception.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: And most of those who know God make the passing away of existence, and the passing
+  away of that passing away, a condition for attaining the knowledge of God; and that is an error and
+  a clear oversight.
+commentary: 'The claim is polemical: genuine knowledge of God does not begin by first producing a spiritual
+  event called fanāʾ, “passing away,” and then cancelling even that event in fanāʾ al-fanāʾ. Within this
+  radical account of waḥdat al-wujūd, such a requirement already grants the self or world a positive existence
+  that can undergo extinction. The author instead presses a more uncompromising argument: what is imagined
+  as an independent existent beside God never possessed that status in the first place. Self-knowledge
+  is therefore not the discovery of a substantial ego which is later destroyed, but the recognition that
+  one’s supposed independent reality is a misapprehension. To know the self in this sense is to know the
+  Lord as the sole reality. The contested move is obvious. It shifts from denying independent existence—a
+  familiar theological assertion of creaturely dependence—to language that can seem to deny created reality
+  altogether, and it dismisses major Sufi disciplines of annihilation as conceptual error. Defenders may
+  read this as a correction to reifying mystical states; critics see it as collapsing the Creator–creature
+  distinction and emptying moral and devotional transformation of its meaning.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you catch yourself treating your identity, achievement, or fear as self-subsisting,
+  pause and say: “This has no independence from God”; then perform one ordinary act of care without making
+  it proof of a separate self.'
 sanskrit_devanagari: وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك غلط
   وسهو واضح
 sanskrit_iast: ''
@@ -31,41 +43,61 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك غلط وسهو واضح
 - kind: translation
   label: Pratibha Translation
-  body: Most of those who claim to know God make the knowledge of God dependent on the passing away of
-    existence and on the passing away of that passing away. That is clearly an error and misconception.
+  body: And most of those who know God make the passing away of existence, and the passing away of that
+    passing away, a condition for attaining the knowledge of God; and that is an error and a clear oversight.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The claim is polemical: genuine knowledge of God does not begin by first producing a spiritual
+    event called fanāʾ, “passing away,” and then cancelling even that event in fanāʾ al-fanāʾ. Within
+    this radical account of waḥdat al-wujūd, such a requirement already grants the self or world a positive
+    existence that can undergo extinction. The author instead presses a more uncompromising argument:
+    what is imagined as an independent existent beside God never possessed that status in the first place.
+    Self-knowledge is therefore not the discovery of a substantial ego which is later destroyed, but the
+    recognition that one’s supposed independent reality is a misapprehension. To know the self in this
+    sense is to know the Lord as the sole reality. The contested move is obvious. It shifts from denying
+    independent existence—a familiar theological assertion of creaturely dependence—to language that can
+    seem to deny created reality altogether, and it dismisses major Sufi disciplines of annihilation as
+    conceptual error. Defenders may read this as a correction to reifying mystical states; critics see
+    it as collapsing the Creator–creature distinction and emptying moral and devotional transformation
+    of its meaning.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: العُرَّاف
+    definition: from ʿ-r-f, “to know, recognize” -> those reputed to possess maʿrifa, gnosis -> not merely
+      “mystics,” but claimants to a discerning knowledge of God.
+  - term: معرفة الله
+    definition: from ʿ-r-f, recognition or intimate knowing -> knowledge of God sought through knowing
+      the self -> more participatory and existential than the default gloss “information about God.”
+  - term: فناء الوجود
+    definition: fanāʾ, passing away or perishing, plus wujūd, existence -> annihilation of purported individual
+      existence -> not simply emotional selflessness or the extinction of bodily life.
+  - term: فناء الفناء
+    definition: “the passing away of passing away” -> the removal of awareness of one’s own annihilation
+      -> not a higher technique here, but the second premise the author rejects.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Heraclitus Fragments
-    resonance: 'Both passages diagnose a false knowledge that masquerades as true knowledge: Heraclitus
-      observes that people lack understanding of daily encounters yet believe themselves knowledgeable;
-      Ibn Arabi identifies claimants to God-knowledge who mistake a particular epistemic procedure (annihilation
-      of existence) for actual knowledge of God. Each text exposes a structural confusion between the
-      appearance of knowing and genuine knowing.'
-    divergence: Heraclitus locates the error in inattention to the universal Logos accessible through
-      listening; Ibn Arabi locates it in a methodological trap where practitioners confuse the dissolution
-      of self with access to divine knowledge, requiring a different kind of recognition.
-    passage_id: heraclitus_fragments.hfr_p005
-  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
-    resonance: 'Both texts point toward a knowledge that transcends ordinary cognitive categories by negating
-      the subject-object distinction: the Upaniṣad teaches that knowing the unknowable requires understanding
-      essential oneness; Ibn Arabi suggests that true God-knowledge requires the passing away of the knower''s
-      existence itself, dissolving the duality that sustains conventional knowing.'
-    divergence: The Upaniṣad frames this as a positive instruction in non-dual perception; Ibn Arabi frames
-      it as a critique of those who mistake the *process* of annihilation for the *knowledge* itself,
-      emphasizing the danger of reifying the method.
-    passage_id: chāndogya_upaniṣad.chu_vi_01
-  layer_provenance: generated_grounded
+  - citation: 'Hadith: “Whoso knows himself knows his Lord” (man ʿarafa nafsahu ʿarafa rabbahu)'
+    resonance: The treatise treats self-knowledge as the direct route to knowledge of God and interprets
+      the self’s apparent independence as the central veil.
+    divergence: The saying is widely circulated in Sufi literature but is not generally accepted as a
+      sound prophetic hadith; this passage also gives it an unusually uncompromising ontological reading.
+  - citation: 'Qur''an 28:88: “Everything is perishing except His Face”'
+    resonance: The later argument of the treatise reads perishing as evidence that no independent reality
+      endures beside God.
+    divergence: Many exegetes retain the real, created existence of things while affirming their contingency
+      and eventual passing; the treatise pushes toward a denial of independent being from the outset.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you catch yourself treating your identity, achievement, or fear as self-subsisting,
+    pause and say: “This has no independence from God”; then perform one ordinary act of care without
+    making it proof of a separate self.'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -77,3 +109,13 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: And most of those who know God make the passing away of existence, and the passing away of
+  that passing away, a condition for attaining the knowledge of God; and that is an error and a clear
+  oversight.
+abhyasa: 'Today, when you catch yourself treating your identity, achievement, or fear as self-subsisting,
+  pause and say: “This has no independence from God”; then perform one ordinary act of care without making
+  it proof of a separate self.'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء – وذلك غلط وسهو واضح
+tts_key: true

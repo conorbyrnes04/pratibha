@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p001
-unit_label: 'Pearl #1'
-title: 'Pearl #1'
+unit_label: God Is Beyond Every Before and After
+title: God Is Beyond Every Before and After
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -14,15 +14,27 @@ source_excerpt: Praise belongs to God, before whose oneness there is no before u
   and after whose singleness there is no after unless the after is He. He is, and there is not with Him
   any before or after, above or below, closeness or distance, how or where or when, time or moment or
   duration, manifested existence or place.
-translation_literal: Praise belongs to God, before whose oneness there is no before unless the before
-  is He and after whose singleness there is no after unless the after is He. He is, and there is not with
-  Him any before or after, above or below, closeness or distance, how or where or when, time or moment
-  or duration, manifested existence or place.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: Praise be to God, before whose oneness there was no before, unless the Before was
+  He; and after whose singleness there is no after, unless the After is He. He is, and with Him there
+  is no after or before, no above or below, no far or near, no how, where, or when, no time, moment, or
+  age, no being or place. And He is now as He was.
+commentary: 'The passage begins from an uncompromising claim: God is not one item within the universe,
+  however supreme, but the Reality by which every temporal, spatial, and conceptual distinction is possible.
+  “Before” and “after” cannot stand outside Him as independent coordinates; neither can height and depth,
+  nearness and distance, or the questions “how?” and “where?” The formula “He is now as He was” does not
+  merely place God in an immensely long duration. It denies that divine reality is altered by the appearance
+  of the world or measured by its sequence of moments. In the idiom later associated with waḥdat al-wujūd,
+  all determinate things depend upon Being, while God is not contained by the determinations through which
+  creatures are known. This is why self-knowledge can become knowledge of the Lord: to know the self truthfully
+  is to see that its location, duration, qualities, and apparent independence are not self-grounding.
+  The contested move is severe. It risks being heard as a flat denial of creaturely reality, or as collapsing
+  Creator and creature into one substance. The text instead guards divine transcendence by refusing every
+  relation that would place God and the world side by side. Yet its language presses toward a radical
+  non-duality that many theologians judged hazardous.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: Today, when you notice yourself saying “God is far away” or “God was there then,” pause once
+  and silently release the spatial or temporal image; then attend to the fact that the awareness making
+  the judgment is itself not self-created.
 sanskrit_devanagari: الحمد لله الذي لم يكن قبل وحدانيته قبلُ إلا والقبل هو، ولم يكن بعد فردانيَّته بَعْدُ
   إلا والبَعْد هو. كان ولا بَعْد معه ولا قبل، ولا فوق ولا تحت، ولا قُرْب ولا بُعْد، ولا كيف، ولا أين ولا
   حين، ولا أوان ولا وقت ولا زمان، ولا كون ولا مكان، وهو الآن كما كان.
@@ -34,20 +46,69 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: الحمد لله الذي لم يكن قبل وحدانيته قبلُ إلا والقبل هو، ولم يكن بعد فردانيَّته بَعْدُ إلا والبَعْد
+    هو. كان ولا بَعْد معه ولا قبل، ولا فوق ولا تحت، ولا قُرْب ولا بُعْد، ولا كيف، ولا أين ولا حين، ولا
+    أوان ولا وقت ولا زمان، ولا كون ولا مكان، وهو الآن كما كان.
 - kind: translation
   label: Pratibha Translation
-  body: Praise belongs to God, before whose oneness there is no before unless the before is He and after
-    whose singleness there is no after unless the after is He. He is, and there is not with Him any before
-    or after, above or below, closeness or distance, how or where or when, time or moment or duration,
-    manifested existence or place.
+  body: Praise be to God, before whose oneness there was no before, unless the Before was He; and after
+    whose singleness there is no after, unless the After is He. He is, and with Him there is no after
+    or before, no above or below, no far or near, no how, where, or when, no time, moment, or age, no
+    being or place. And He is now as He was.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
+  body: 'The passage begins from an uncompromising claim: God is not one item within the universe, however
+    supreme, but the Reality by which every temporal, spatial, and conceptual distinction is possible.
+    “Before” and “after” cannot stand outside Him as independent coordinates; neither can height and depth,
+    nearness and distance, or the questions “how?” and “where?” The formula “He is now as He was” does
+    not merely place God in an immensely long duration. It denies that divine reality is altered by the
+    appearance of the world or measured by its sequence of moments. In the idiom later associated with
+    waḥdat al-wujūd, all determinate things depend upon Being, while God is not contained by the determinations
+    through which creatures are known. This is why self-knowledge can become knowledge of the Lord: to
+    know the self truthfully is to see that its location, duration, qualities, and apparent independence
+    are not self-grounding. The contested move is severe. It risks being heard as a flat denial of creaturely
+    reality, or as collapsing Creator and creature into one substance. The text instead guards divine
+    transcendence by refusing every relation that would place God and the world side by side. Yet its
+    language presses toward a radical non-duality that many theologians judged hazardous.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: وحدانيته
+    definition: waḥdāniyya, from w-ḥ-d, “being one” -> God’s oneness prior to every imaginable ‘before’
+      -> not merely numerical unity, as though God were one member of a class.
+  - term: فردانيَّته
+    definition: 'fardāniyya, from f-r-d, “being single, incomparable” -> the divine singularity after
+      which no ‘after’ remains -> more than the default gloss ‘oneness’: it stresses unrivalled non-pairing.'
+  - term: كيف
+    definition: kayf, “how-ness” -> any modality by which a thing can be described or imagined -> not
+      simply a question-word, but the category of qualifying determination.
+  - term: كون
+    definition: kawn, from k-w-n, “to be/become” -> phenomenal being or becoming, set beside place and
+      time among created determinations -> not identical with God’s unconditioned reality.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Qur’an 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” gives Qur’anic warrant for speaking
+      of God without temporal or spatial rivalry.
+    divergence: The passage intensifies the verse into an explicit negation of before, after, above, below,
+      and every qualifying relation.
+  - citation: Qur’an 112:1-4
+    resonance: Sūrat al-Ikhlāṣ affirms divine oneness, self-sufficiency, and incomparability.
+    divergence: Its concise creed does not itself articulate the metaphysical claim that all temporal
+      and spatial categories fail before divine reality.
+  - citation: Ibn ʿArabī, Fuṣūṣ al-ḥikam, “Adam” chapter
+    resonance: The later Akbarian vocabulary likewise treats the cosmos as dependent disclosure rather
+      than an independent reality alongside God.
+    divergence: 'This short opening is more apophatic: it enumerates and strips away relations before
+      explaining manifestation or divine names.'
 - kind: practice
   label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: Today, when you notice yourself saying “God is far away” or “God was there then,” pause once and
+    silently release the spatial or temporal image; then attend to the fact that the awareness making
+    the judgment is itself not self-created.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -59,3 +120,16 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: Praise be to God, before whose oneness there was no before, unless the Before was He; and
+  after whose singleness there is no after, unless the After is He. He is, and with Him there is no after
+  or before, no above or below, no far or near, no how, where, or when, no time, moment, or age, no being
+  or place. And He is now as He was.
+abhyasa: Today, when you notice yourself saying “God is far away” or “God was there then,” pause once
+  and silently release the spatial or temporal image; then attend to the fact that the awareness making
+  the judgment is itself not self-created.
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: الحمد لله الذي لم يكن قبل وحدانيته قبلُ إلا والقبل هو، ولم يكن بعد فردانيَّته بَعْدُ إلا والبَعْد
+  هو. كان ولا بَعْد معه ولا قبل، ولا فوق ولا تحت، ولا قُرْب ولا بُعْد، ولا كيف، ولا أين ولا حين، ولا أوان
+  ولا وقت ولا زمان، ولا كون ولا مكان، وهو الآن كما كان.
+tts_key: true

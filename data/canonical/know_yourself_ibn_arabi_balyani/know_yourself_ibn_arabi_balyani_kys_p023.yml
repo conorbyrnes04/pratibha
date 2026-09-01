@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p023
-unit_label: 'Pearl #23'
-title: 'Pearl #23'
+unit_label: Knowing the Self Beyond Existence and Nonexistence
+title: Knowing the Self Beyond Existence and Nonexistence
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -14,14 +14,24 @@ themes:
 source_excerpt: You have neither ceased to be nor are you existent. You are Him and He is you, without
   any of these imperfections. If you know your existence in this way, then you know God, and if not, then
   not.
-translation_literal: You have neither ceased to be nor are you existent. You are Him and He is you, without
-  any of these imperfections. If you know your existence in this way, then you know God, and if not, then
-  not.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: Thou never wast nor wilt be, whether by thyself or in Him or along with Him. Thou
+  art neither ceasing to be nor still existing. Thou art He, and He is thou, without one of these limitations.
+  Then if thou knowest thine existence thus, thou knowest God; and if not, then not.
+commentary: 'The claim presses the treatise’s uncompromising account of divine oneness: self-knowledge
+  does not uncover an independently existing human self standing before God, nor even a self that has
+  to be annihilated into God. It sees that the alternatives governing ordinary thought—existing or perishing,
+  separate or contained, with God or in God—cannot delimit the Real. Thus the saying “thou art He, and
+  He is thou” is not presented as an incarnation, mixture, or travel of one being into another. The surrounding
+  passage explicitly rejects each of those models. Its contested waḥdat al-wujūd move is stronger and
+  riskier: what appears as the creature’s existence has no self-subsisting reality alongside God’s existence.
+  To know the self is therefore to recognize one’s utter non-independence, and thereby to know the Lord
+  as the only Real. Critics rightly hear in this formulation a collapse of the Creator-creature distinction;
+  defenders answer that it denies not distinction as appearance, relation, and divine address, but independent
+  being. The passage also refuses to make mystical “annihilation” a spiritual achievement: one need not
+  produce one’s extinction, because the self was never an autonomous existent to begin with.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you say “my life” or “my achievement,” pause once and silently replace possession
+  with dependence: “This is not self-subsisting; it is received from God.”'
 sanskrit_devanagari: إنك ما كنت قط ولا تكون، لا بنفسك ولا فيه ولا معه، ولا أنت فانٍ ولا موجود. أنت هو،
   وهو أنت، بلا علَّة من هذه العلل. فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.
 sanskrit_iast: ''
@@ -33,39 +43,64 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: إنك ما كنت قط ولا تكون، لا بنفسك ولا فيه ولا معه، ولا أنت فانٍ ولا موجود. أنت هو، وهو أنت، بلا
+    علَّة من هذه العلل. فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.
 - kind: translation
   label: Pratibha Translation
-  body: You have neither ceased to be nor are you existent. You are Him and He is you, without any of
-    these imperfections. If you know your existence in this way, then you know God, and if not, then not.
+  body: Thou never wast nor wilt be, whether by thyself or in Him or along with Him. Thou art neither
+    ceasing to be nor still existing. Thou art He, and He is thou, without one of these limitations. Then
+    if thou knowest thine existence thus, thou knowest God; and if not, then not.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The claim presses the treatise’s uncompromising account of divine oneness: self-knowledge does
+    not uncover an independently existing human self standing before God, nor even a self that has to
+    be annihilated into God. It sees that the alternatives governing ordinary thought—existing or perishing,
+    separate or contained, with God or in God—cannot delimit the Real. Thus the saying “thou art He, and
+    He is thou” is not presented as an incarnation, mixture, or travel of one being into another. The
+    surrounding passage explicitly rejects each of those models. Its contested waḥdat al-wujūd move is
+    stronger and riskier: what appears as the creature’s existence has no self-subsisting reality alongside
+    God’s existence. To know the self is therefore to recognize one’s utter non-independence, and thereby
+    to know the Lord as the only Real. Critics rightly hear in this formulation a collapse of the Creator-creature
+    distinction; defenders answer that it denies not distinction as appearance, relation, and divine address,
+    but independent being. The passage also refuses to make mystical “annihilation” a spiritual achievement:
+    one need not produce one’s extinction, because the self was never an autonomous existent to begin
+    with.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: وجود
+    definition: w-j-d, “to find, be present, exist” -> the existence one attributes to oneself -> not
+      merely “existence,” but claimed self-standing actuality, which the passage denies.
+  - term: فانٍ
+    definition: f-n-y, “to pass away, perish” -> the status of being annihilated or ceasing -> not a mystical
+      stage the seeker must attain, since no independent entity is there to perish.
+  - term: هو
+    definition: the pronoun “He” -> God as the sole Real named in the reciprocal formula -> more charged
+      than the default gloss “he,” because it bears the doctrine’s claim about reality, not personal identity.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Astavakra Gita — 18.96 — 18.97 (The Paradoxical State)
-    resonance: Both texts suspend the subject in a paradoxical neither/nor state that dissolves ordinary
-      categorical identity. Ibn Arabi's 'neither ceased to be nor are you existent' and Astavakra's negation
-      of happiness/suffering, attachment/detachment, liberation/bondage all refuse affirmation of any
-      stable position, forcing direct recognition beyond conceptual poles.
-    divergence: Astavakra uses systematic negation of paired opposites as a logical method to exhaust
-      false identifications; Ibn Arabi's formulation is more apophatic and poetic, suspending the very
-      ground of being/non-being rather than cataloging states.
-    passage_id: astavakra_gita.asg_sum_18_96_18_97
-  - citation: Nagarjuna Mulamadhyamakakarika — Missing the Division of the Truths
-    resonance: Both texts insist that grasping the structure itself—not content—is the gateway to profound
-      reality. Ibn Arabi's pointer asks the reader to pause interpretation and let insight disclose itself;
-      Nagarjuna warns that missing the distinction between the two truths blocks access to tattva, making
-      the *method of division* itself the teaching.
-    divergence: Nagarjuna's two truths are an epistemological framework (conventional/ultimate); Ibn Arabi's
-      neither/nor dissolves the framework itself, pointing to a non-dual recognition prior to any division.
-    passage_id: nagarjuna_mulamadhyamakakarika.mmk_24_09
-  layer_provenance: generated_grounded
+  - citation: Qur'an 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supplies the scriptural language
+      through which the treatise denies any reality outside divine encompassing presence.
+    divergence: The Qur'anic verse does not itself state that the human self is identical with God; the
+      treatise draws a far more metaphysical conclusion.
+  - citation: 'Hadith: “Whoever knows himself knows his Lord”'
+    resonance: 'The passage makes this maxim its governing inference: knowledge of the self’s non-independence
+      becomes knowledge of the Lord.'
+    divergence: Though immensely influential in Sufi writing, this wording is not established as a sound
+      Prophetic hadith by hadith critics.
+  - citation: Qur'an 28:88
+    resonance: “Everything is perishing except His Face” supports the treatise’s refusal to grant enduring
+      independent being to things.
+    divergence: Many interpreters understand perishing eschatologically or as dependence on God, rather
+      than as the immediate nonexistence of all other being.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you say “my life” or “my achievement,” pause once and silently replace possession
+    with dependence: “This is not self-subsisting; it is received from God.”'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -77,3 +112,12 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: Thou never wast nor wilt be, whether by thyself or in Him or along with Him. Thou art neither
+  ceasing to be nor still existing. Thou art He, and He is thou, without one of these limitations. Then
+  if thou knowest thine existence thus, thou knowest God; and if not, then not.
+abhyasa: 'Today, when you say “my life” or “my achievement,” pause once and silently replace possession
+  with dependence: “This is not self-subsisting; it is received from God.”'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: إنك ما كنت قط ولا تكون، لا بنفسك ولا فيه ولا معه، ولا أنت فانٍ ولا موجود. أنت هو، وهو أنت، بلا
+  علَّة من هذه العلل. فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.

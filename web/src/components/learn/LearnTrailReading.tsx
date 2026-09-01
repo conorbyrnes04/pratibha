@@ -1,13 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LayerBlock } from "@/components/LayerBlock";
 import { ListenButton } from "@/components/ListenButton";
 import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { getVerse } from "@/lib/api";
 import { displayPassageLocation, displayPassageTitle } from "@/lib/passageTitles";
 import type { VerseItem } from "@/lib/types";
-import { getStudyLayers, passagePreview } from "@/lib/verseLayers";
+import { getStudyLayers, layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 import { useT } from "@/components/LocaleProvider";
 import { useLocalizedVerse } from "@/components/useLocalizedStudy";
 
@@ -22,13 +23,30 @@ export function LearnTrailReading({
 }) {
   const t = useT();
   const [showOriginal, setShowOriginal] = useState(true);
-  const study = useLocalizedVerse(item) || item;
+  const [full, setFull] = useState<VerseItem | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setFull(null);
+    getVerse(item._id)
+      .then((verse) => {
+        if (!cancelled) setFull(verse);
+      })
+      .catch(() => {
+        if (!cancelled) setFull(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [item._id]);
+
+  const study = useLocalizedVerse(full || item) || full || item;
   const layers = getStudyLayers(study);
   const originalLayer = layers.find((l) => l.kind === "original");
   const iastLayer = layers.find((l) => l.kind === "iast");
   const translationLayer = layers.find((l) => l.kind === "translation");
-  const commentaryLayer = layers.find((l) => l.kind === "commentary");
-  const practiceLayer = layers.find((l) => l.kind === "practice");
+  const commentaryBody = layerText(study, "commentary");
+  const practice = practiceText(study);
   const passageLocation = displayPassageLocation(item);
 
   return (
@@ -53,7 +71,7 @@ export function LearnTrailReading({
         {passageLocation ? ` · ${passageLocation}` : ""}
       </p>
       <h2 id="learn-trail-reading-title" className="passage-reading__title">
-        {displayPassageTitle(item)}
+        {displayPassageTitle(study)}
       </h2>
       <OriginalReliabilityBadge item={study} />
 
@@ -80,8 +98,20 @@ export function LearnTrailReading({
           <p className="reading-prose mt-4">{passagePreview(study)}</p>
         </section>
       )}
-      {commentaryLayer ? <LayerBlock layer={commentaryLayer} variant="plain" verseId={item._id} /> : null}
-      {practiceLayer ? <LayerBlock layer={practiceLayer} variant="plain" verseId={item._id} /> : null}
+      {commentaryBody ? (
+        <LayerBlock
+          layer={{ kind: "commentary", label: t("layers.commentary"), body: commentaryBody }}
+          variant="plain"
+          verseId={item._id}
+        />
+      ) : null}
+      {practice ? (
+        <LayerBlock
+          layer={{ kind: "practice", label: t("layers.practice"), body: practice }}
+          variant="plain"
+          verseId={item._id}
+        />
+      ) : null}
     </div>
   );
 }

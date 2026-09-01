@@ -55,7 +55,10 @@ export default function ReadTab() {
     <PratibhaScreen onRefresh={refreshCorpus} refreshing={loading}>
       <PratibhaText variant="eyebrow">Library</PratibhaText>
       <PratibhaText variant="title" style={{ marginTop: 8 }}>
-        Read
+        The house
+      </PratibhaText>
+      <PratibhaText variant="soft" style={{ marginTop: 8 }}>
+        Browse the corpus. Open a passage to read, ask, or keep a note.
       </PratibhaText>
 
       <TextInput
@@ -98,7 +101,14 @@ export default function ReadTab() {
       <ThemeConstellation themes={themeConstellation} active={theme} onChange={setTheme} />
 
       <View style={{ marginTop: 16, gap: 10 }}>
-        {filtered.map((item) => (
+        {filtered.length === 0 ? (
+          <View style={ui.card}>
+            <PratibhaText variant="soft">
+              {loading ? "Loading the house…" : "No passages match. Try another collection or clear the search."}
+            </PratibhaText>
+          </View>
+        ) : (
+          filtered.map((item) => (
           <Pressable
             key={item._id}
             style={ui.card}
@@ -114,7 +124,8 @@ export default function ReadTab() {
               {passagePreview(item)}
             </PratibhaText>
           </Pressable>
-        ))}
+          ))
+        )}
       </View>
     </PratibhaScreen>
   );

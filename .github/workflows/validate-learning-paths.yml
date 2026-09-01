@@ -7,7 +7,15 @@ on:
     paths:
       - "web/src/lib/learningPaths.ts"
       - "web/src/lib/learningThreads.ts"
+      - "web/src/lib/learn/livingTrails.ts"
+      - "web/src/lib/learn/lineageTrails.ts"
+      - "web/src/lib/learn/westernTrails.ts"
+      - "web/src/lib/learn/traditionTrails.ts"
+      - "web/src/lib/learn/deepeningTrails.ts"
+      - "web/src/lib/learn/tracks/**"
       - "scripts/validate_learning_paths.ts"
+      - "scripts/audit_path_coverage.ts"
+      - "scripts/path_pin_freeze.json"
       - "data/canonical/**"
       - ".github/workflows/validate-learning-paths.yml"
 

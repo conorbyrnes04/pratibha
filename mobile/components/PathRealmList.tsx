@@ -31,8 +31,7 @@ export function PathRealmList({ selectedTrackId, onSelectTrack }: Props) {
       <View style={styles.intro}>
         <PratibhaText variant="eyebrow">The journey</PratibhaText>
         <PratibhaText variant="soft" style={styles.introCopy}>
-          Beginner at the inner ring, intermediate in the middle, advanced at the capstone — eight paths on one breathing
-          diagram. Tap a gate to open it.
+          Inner ring first, then the middle, then the capstone. Tap a gate to open it.
         </PratibhaText>
       </View>
 

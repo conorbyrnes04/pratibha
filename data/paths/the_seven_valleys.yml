@@ -1,0 +1,288 @@
+path_id: the_seven_valleys
+work_id: conference_of_the_birds
+work_title: Conference of the Birds (Manṭiq al-ṭayr)
+title: "The Seven Valleys"
+tradition: Sufi
+covers: "ʿAṭṭār's valley architecture: the map, Seeking, Love, Knowledge without beginning, Detachment, Bewilderment where certainty burns, Unity, Poverty and Annihilation. Not the hoopoe-summons / love-badge / Simurgh-mirror sampler."
+status: complete
+
+# cot_01, cot_08, cot_28 stay off the primary sequence (family sampler).
+# cot_22 is valley 7 — it belongs here as the annihilation gate.
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  The valleys are not a travel itinerary. Do not let the student collect
+  stages as trophies. Love unmakes the claimant; annihilation is not a better
+  identity.
+
+premise: >
+  You are not touring seven landscapes. You are walking ʿAṭṭār's sequence of
+  losses: the seeker's imagined capacity, the calculator of good and evil,
+  knowledge owned by a knower, the wish to possess even mysteries, the
+  certainty that would survive detachment, the standpoint that counts one and
+  many, and finally the arrival-self. The map is first so you cannot mistake
+  a list for a road.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+  - "Do not narrate your valley. The narration is already a possession."
+
+gates:
+  - gate_id: gate_0_map
+    name: "The map is not the road"
+    theme: "Seven names are a sequence of losses, not an itinerary you could complete."
+    why_first: >
+      Without the map, later valleys become moods. With only the map, they
+      become tourism. This gate names the list so you cannot treat it as travel.
+    stations:
+      - station: 1
+        unit_id: conference_of_the_birds.cot_14
+        reference: "The seven valleys named"
+        title: "The seven valleys of the Way"
+        opening_question: "Where am I still treating the valleys as a trip I could finish and report?"
+        transmission: >
+          These are the seven valleys: Quest, Love, Knowledge, Independence
+          and Detachment, Unity, Bewilderment and Stupefaction, Poverty and
+          Annihilation. Spiritual transformation is not the accumulation of
+          religious achievements but the gradual loss of the self that wants
+          to possess them. Knowledge might seem the summit; the itinerary
+          makes it only a threshold. What is known can still be owned by a
+          knower. The difficulty is that a list looks like a travel plan.
+          It is not miles. It is the order in which claims fall.
+        contemplation: "A named valley is not a destination on a map."
+        gate_practice: >
+          Choose one achievement, opinion, or spiritual identity you are
+          quietly using as proof of your worth. Write it down, then spend
+          ten minutes doing one necessary kindness without mentioning that
+          identity, achievement, or motive to anyone.
+        passed_when: "You can hold the seven names without turning them into a trip you will complete."
+
+  - gate_id: gate_1_seeking
+    name: "Valley of Seeking"
+    theme: "Seeking begins with the collapse of the seeker's capacity to possess."
+    why_first: >
+      The first valley is not acquisition. If you skip the dispossession,
+      later love is still a hunt with a fuller pack.
+    stations:
+      - station: 2
+        unit_id: conference_of_the_birds.cot_15
+        reference: "Valley of Quest"
+        title: "The valley of seeking"
+        opening_question: "What am I still carrying as if seeking were a form of getting?"
+        transmission: >
+          As soon as you set foot in the Valley of Seeking, thousands of
+          difficulties assail you. You must remain for years, advancing with
+          patience. You must cast away your riches and renounce all you
+          possess. When you are certain that nothing remains in your hand,
+          the heart must still be cleared of all that exists. Seeking begins
+          not with acquisition but with the collapse of the seeker's imagined
+          capacity to possess. The difficulty is that you can give away
+          objects and keep the identity of the one who gave. Outward
+          emptiness is not yet an empty hand.
+        contemplation: "The seeker is the first possession."
+        gate_practice: >
+          Choose one useful possession you have not used in a year. Give it
+          away or place it in a donation box, then write one sentence naming
+          the identity or security you expected that object to provide.
+        passed_when: "You can release one thing and name what you hoped it would prove about you."
+
+  - gate_id: gate_2_love
+    name: "Valley of Love"
+    theme: "Love is fire that abolishes calculation — not a warmer emotion."
+    why_first: >
+      After dispossession, the calculator still wants to survive as ethics.
+      Love is the valley that will not let good and evil remain as possessions
+      of the ego.
+    stations:
+      - station: 3
+        unit_id: conference_of_the_birds.cot_17
+        reference: "Valley of Love"
+        title: "Love that burns beyond good and evil"
+        opening_question: "What am I delaying because I am still rehearsing consequences for myself?"
+        transmission: >
+          Whoever sets foot in the Valley of Love is plunged into fire — or
+          rather must oneself be made of fire. The lover must not calculate
+          consequences, but be ready to cast a hundred worlds into the fire,
+          knowing neither faith nor unbelief. On this road good and evil are
+          no longer distinct. This is not license. It is the claim that moral
+          and religious verdicts can become possessions the ego guards.
+          Love unmakes the measure. If you take "beyond good and evil" as a
+          new badge, you have only swapped costumes. The difficulty is that
+          calculation feels like virtue. Here it is delay dressed as prudence.
+        contemplation: "Love is not an improved self. It is fire."
+        gate_practice: >
+          Choose one small action you have delayed because you are rehearsing
+          its consequences — an honest apology, a needed refusal, or a
+          generous act — and do it today without seeking credit. Before
+          acting, name the self-protective reward you are relinquishing.
+        passed_when: "You can do one act without using good and evil as shelter for the self."
+
+  - gate_id: gate_3_knowledge
+    name: "Valley of Knowledge"
+    theme: "Mystic knowledge has neither beginning nor end; it transforms the knower."
+    why_first: >
+      Love without this valley becomes antinomian weather. Knowledge here is
+      not a library; it is a road without the traveler's usual measures of
+      duration.
+    stations:
+      - station: 4
+        unit_id: conference_of_the_birds.cot_18
+        reference: "Valley of Mystic Knowledge"
+        title: "The valley without beginning or end"
+        opening_question: "Where am I postponing the work until I feel fully ready?"
+        transmission: >
+          The Valley of Mystic Knowledge has neither beginning nor end. To
+          cross it you must undergo a long and tedious journey. There is no
+          road like this road. Yet the temporal traveler is one thing and
+          the spiritual traveler another. Soul and body advance or decline
+          according to strength or weakness; the path is disclosed differently
+          according to capacity. Knowledge is not possession of an object but
+          a transformation of the knower. The difficulty is bewilderment of
+          duration: you want a start line and a finish so you can know you
+          are underway. This valley will not give you that clock. Readiness
+          is the postponement that keeps the knower intact.
+        contemplation: "A road without beginning is not a reason to wait."
+        gate_practice: >
+          Choose one task you have been postponing because you want to feel
+          fully ready. Spend twenty uninterrupted minutes on its smallest
+          concrete beginning, then write one sentence naming the present
+          strength or weakness that shaped your effort without treating it
+          as your identity.
+        passed_when: "You can begin without a start line that would prove you are a knower."
+
+  - gate_id: gate_4_detachment
+    name: "Valley of Detachment"
+    theme: "Even the wish to fathom divine mysteries is still a possession."
+    why_first: >
+      Knowledge can be owned. Istighnā loosens the claimant that wants
+      experience, station, or mastery of meaning.
+    stations:
+      - station: 5
+        unit_id: conference_of_the_birds.cot_19
+        reference: "Valley of Independence and Detachment"
+        title: "The valley of detachment"
+        opening_question: "What am I reaching for to prove that I am enough?"
+        transmission: >
+          Next comes the valley where there is neither ambition to possess
+          anything nor the spiritual desire to fathom divine mysteries.
+          Complete detachment from the world, which here is not worth a straw,
+          is the essence of this stage. A cold wind rises so violent that it
+          devastates a continent in a moment. The seven oceans become a pool;
+          the seven planets a spark. The contested move is not merely
+          renouncing property. It is renouncing the inward "I" that wants to
+          own experience, attain a station, or master divine meaning. The
+          difficulty is that spiritual seriousness is the last, most refined
+          possession.
+        contemplation: "The wish to understand God can still be a grab."
+        gate_practice: >
+          When you notice yourself reaching for one thing to prove that you
+          are secure, capable, or spiritually serious, do not acquire it for
+          ten minutes. Name the claim silently — "I need this to be enough" —
+          then do one necessary task without seeking credit, explanation, or
+          reassurance.
+        passed_when: "You can pause one grab for spiritual enough-ness and still do the next task."
+
+  - gate_id: gate_5_wonder
+    name: "Valley of Bewilderment"
+    theme: "Certainty burns; anguish is not automatically defeat."
+    why_first: >
+      ʿAṭṭār lists Unity before Bewilderment. This walk lets certainty burn
+      first so tawḥīd is not entered as a new object of knowledge.
+    stations:
+      - station: 6
+        unit_id: conference_of_the_birds.cot_21
+        reference: "Valley of Stupefaction"
+        title: "The valley where certainty burns"
+        opening_question: "What unresolved question am I rushing to explain so I can remain the one who knows?"
+        transmission: >
+          In the Valley of Stupefaction one is prey to perpetual sadness.
+          Every sigh is like a sword. It is day and night at once, yet neither.
+          There is fire, and one is overcome, burned, consumed. Bewilderment
+          is not merely the absence of knowledge; it can be the undoing of
+          the self that claims to know. After seeking, love, knowledge, and
+          detachment, ḥayrat is the threshold that will not let a remaining
+          certainty pose as arrival. The difficulty is that you treat
+          disorientation as spiritual defeat and rush to a theory to survive.
+          Leave the question unanswered for a day. That is the act. The
+          state, if it comes, is not yours to schedule.
+        contemplation: "Burning certainty is not failure of the road."
+        gate_practice: >
+          Choose one unresolved loss or question that you usually rush to
+          explain. Set a timer for ten minutes; write only its concrete
+          effects on your body, speech, and attention, without proposing a
+          solution. End by crossing out every sentence beginning with "I
+          know," then leave the question unanswered for the rest of the day.
+        passed_when: "You can let one certainty burn without replacing it by nightfall."
+
+  - gate_id: gate_6_unity
+    name: "Valley of Unity"
+    theme: "Tawḥīd is not a larger total; it undoes the standpoint that counts."
+    why_first: >
+      After ḥayrat, unity can be heard as what remains when counting fails —
+      not as a doctrine you add to a burned mind.
+    stations:
+      - station: 7
+        unit_id: conference_of_the_birds.cot_20
+        reference: "Valley of Unity"
+        title: "Beyond number in the valley of unity"
+        opening_question: "Where am I still ranking people, tasks, or outcomes as more and less?"
+        transmission: >
+          The Valley of Unity is the land where everything is renounced and
+          everything made one, where neither number nor quality creates
+          distinction. All who raise their heads in this wilderness draw them
+          from the same collar. Whether you see many or few, they are truly
+          one. What appears as one is not different from what appears as many.
+          Unity is not a larger total that gathers separate things; it is the
+          undoing of the standpoint that counts them as separate. The
+          difficulty is hearing this as "everything is the same" or as "I
+          am the One." Tawḥīd is not a collapse of difference you could own.
+          It is the end of the counter.
+        contemplation: "Stop counting. That is nearer than a theory of the One."
+        gate_practice: >
+          When you catch yourself ranking people, tasks, or outcomes as "more"
+          and "less," pause for one full breath and name the shared condition
+          beneath the comparison: "This too depends on what I did not make."
+          Then complete the next necessary task without announcing its rank
+          or using it to measure your worth.
+        passed_when: "You can drop one ranking without installing a doctrine of sameness."
+
+  - gate_id: gate_7_fana
+    name: "Valley of Poverty and Annihilation"
+    theme: "Fanāʾ is the end of the claimant, not a trophy identity."
+    why_first: >
+      This is the seventh valley. It belongs to this architecture as the last
+      loss — including the self that would arrive and report.
+    stations:
+      - station: 8
+        unit_id: conference_of_the_birds.cot_22
+        reference: "Valley of Poverty and Annihilation"
+        title: "Poverty and annihilation"
+        opening_question: "What better self am I still hoping arrival will confer?"
+        transmission: >
+          Last comes the Valley of Poverty and Annihilation. Under a single
+          ray, countless shadows vanish. Both worlds are forms on the surface
+          of an ocean. Fanāʾ is not death and not a quieter, holier "I." It
+          is the undoing of the illusion of separation. If return from that
+          oblivion is given, you understand creation — not as a bigger self
+          who made it back. People stall here by collecting annihilation as
+          an achievement. The hallucination is persistent selfhood, including
+          the spiritual kind. The difficulty is that you want to survive the
+          last valley as its narrator.
+        contemplation: "Arrival is not a better identity."
+        gate_practice: >
+          Sit ten minutes where you cannot speak or be heard. Do not meditate
+          on a theme. Notice what you reach for to confirm you exist — a
+          thought, a plan, a spiritual report. Let each dissolve. Sit one
+          more minute in what remains. Do not congratulate a new self.
+        passed_when: "You can tell loss of the claimant from a quieter, holier costume."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    The hoopoe's summons, love beyond faith-and-heresy as a badge, and the
+    Simurgh mirror belong to the family sampler. This walk was the valleys'
+    own order of loss. Do not add the mirror as a ninth trophy.
+  next_gates: []

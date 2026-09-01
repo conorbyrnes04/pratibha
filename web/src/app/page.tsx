@@ -59,7 +59,7 @@ export default function Home() {
 
   return (
     <main className="page-shell page-shell--reading">
-      <div className="section-stack">
+      <div className="section-stack section-stack--measure">
         <header className="library-header">
           <div className="library-header__atmosphere" aria-hidden>
             <ArtBackdrop srcs={generatedArtPool("bg-hero")} variant="subtle" opacity={0.12} priority />

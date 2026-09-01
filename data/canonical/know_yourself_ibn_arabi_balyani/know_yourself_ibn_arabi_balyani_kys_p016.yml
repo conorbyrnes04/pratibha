@@ -4,20 +4,34 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p016
-unit_label: 'Pearl #16'
-title: 'Pearl #16'
+unit_label: Knowing the Self Discloses the Lord
+title: Knowing the Self Discloses the Lord
 unit_type: teaching_passage
-thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+  passing content.'
 themes:
 - attention
 - self
-source_excerpt: There is no existence to any other who could pass away, or have a name or be named. Because of this, the Prophet,
-  God bless him and give him peace, said, Whoever knows their self, knows their Lord.
-translation_literal: There is no existence to any other who could pass away, or have a name or be named. Because of this,
-  the Prophet, God bless him and give him peace, said, Whoever knows their self, knows their Lord.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+source_excerpt: There is no existence to any other who could pass away, or have a name or be named. Because
+  of this, the Prophet, God bless him and give him peace, said, Whoever knows their self, knows their
+  Lord.
+translation_literal: 'The very existence of the prophetic message is His existence. There is no other,
+  and no existence belongs to other than He—not to its passing away, nor to its name, nor to its named.
+  For this the Prophet (upon whom be peace) said: “Whoso knows himself knows his Lord.”'
+commentary: 'The claim is not merely that self-examination leads a creature toward its Creator. It is
+  the sharper waḥdat al-wujūd claim that what is taken as an independently existing self, with a separate
+  name, identity, and eventual extinction, has no existence alongside God. “Know yourself” therefore means:
+  discover the ontological poverty of the “other” you habitually call I. The Lord is known when the self
+  is no longer imagined as a second reality standing over against Him. The passage even extends this to
+  prophecy: messenger, message, sender, and recipient cannot finally be assigned separate being. This
+  is why its language is controversial. Read crudely, it can seem to erase moral agency, creaturehood,
+  and the difference between God and the world. Its defenders instead distinguish between the level of
+  ordinary appearances and the level of real being: distinctions operate in experience, law, and responsibility,
+  yet they do not constitute self-subsisting existents before God. The saying attributed to the Prophet
+  becomes a discipline of unmaking possessive selfhood, not an invitation to inflate the ego into divinity.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: Today, when you say “my life,” “my achievement,” or “my problem,” pause once and silently replace
+  “my” with “a trust appearing before God,” then act responsibly without claiming absolute ownership.
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
@@ -31,32 +45,56 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: There is no existence to any other who could pass away, or have a name or be named. Because of this, the Prophet,
-    God bless him and give him peace, said, Whoever knows their self, knows their Lord.
+  body: 'The very existence of the prophetic message is His existence. There is no other, and no existence
+    belongs to other than He—not to its passing away, nor to its name, nor to its named. For this the
+    Prophet (upon whom be peace) said: “Whoso knows himself knows his Lord.”'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: 'The claim is not merely that self-examination leads a creature toward its Creator. It is the
+    sharper waḥdat al-wujūd claim that what is taken as an independently existing self, with a separate
+    name, identity, and eventual extinction, has no existence alongside God. “Know yourself” therefore
+    means: discover the ontological poverty of the “other” you habitually call I. The Lord is known when
+    the self is no longer imagined as a second reality standing over against Him. The passage even extends
+    this to prophecy: messenger, message, sender, and recipient cannot finally be assigned separate being.
+    This is why its language is controversial. Read crudely, it can seem to erase moral agency, creaturehood,
+    and the difference between God and the world. Its defenders instead distinguish between the level
+    of ordinary appearances and the level of real being: distinctions operate in experience, law, and
+    responsibility, yet they do not constitute self-subsisting existents before God. The saying attributed
+    to the Prophet becomes a discipline of unmaking possessive selfhood, not an invitation to inflate
+    the ego into divinity.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: nafs
+    definition: Arabic root n-f-s, breath/self -> the self whose supposed independent reality is examined
+      -> not simply the psychological ego or “soul.”
+  - term: maʿrifa
+    definition: Arabic root ʿ-r-f, to recognize or know -> direct recognition of the Lord through knowing
+      the self’s non-independence -> more than conceptual information (ʿilm).
+  - term: ghayr
+    definition: Arabic for other, another -> whatever is posited as existing apart from God -> not merely
+      a different object within a shared universe.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
-    resonance: 'Both texts locate the problem in *misdirected attention*: the soul/self continuously manifests its true nature,
-      but remains obscured because consciousness is absorbed in transient content (sense-experiences, passing phenomena).
-      Clarity requires a reversal of attention back to the knower itself.'
-    divergence: Plotinus frames this as a metaphysical fact about the soul's continuous activity; Ibn Arabi emphasizes the
-      ontological non-existence of the 'other' (passing content), making the inward turn a recognition of what never truly
-      was.
-    passage_id: plotinus_enneads.enn_v_1_12
-  - citation: 'Vijnana Bhairava — Yukti #61'
-    resonance: 'Both propose that entry into a non-dual or void state reveals the Self''s true nature directly. The structural
-      move is: dissolve the multiplicity of named/passing things, and the Self manifests as what remains—the unchanging knower.'
-    divergence: Vijnana Bhairava locates this in nondual consciousness as the ground of manifestation; Ibn Arabi denies existence
-      to the 'other' entirely, making the inward turn a negation of false attribution rather than an ascent to a higher state.
-    passage_id: vijnana_bhairava.yukti_061
-  layer_provenance: generated_grounded
+  - citation: Qurʾan 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supplies the scriptural pattern
+      for denying an independent before, after, exterior, or interior to God.
+    divergence: The verse names divine all-encompassment; this passage draws the stronger metaphysical
+      conclusion that no other possesses being.
+  - citation: Qurʾan 28:88
+    resonance: “Everything is perishing except His Face” is later invoked in the treatise to affirm that
+      all apparent things lack enduring reality before God.
+    divergence: A common reading concerns eventual perishing; the treatise reads it as a statement about
+      present non-independence.
+  - citation: 'Hadith: “Whoever knows himself knows his Lord”'
+    resonance: The saying condenses the path of self-knowledge into knowledge of God.
+    divergence: Its hadith authentication is disputed, while the treatise gives it an uncompromising ontological
+      interpretation.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, when you say “my life,” “my achievement,” or “my problem,” pause once and silently replace
+    “my” with “a trust appearing before God,” then act responsibly without claiming absolute ownership.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -64,3 +102,10 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P016
   source_reference: ''
+translation: 'The very existence of the prophetic message is His existence. There is no other, and no
+  existence belongs to other than He—not to its passing away, nor to its name, nor to its named. For this
+  the Prophet (upon whom be peace) said: “Whoso knows himself knows his Lord.”'
+abhyasa: Today, when you say “my life,” “my achievement,” or “my problem,” pause once and silently replace
+  “my” with “a trust appearing before God,” then act responsibly without claiming absolute ownership.
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.

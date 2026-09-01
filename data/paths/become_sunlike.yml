@@ -1,0 +1,110 @@
+path_id: become_sunlike
+work_id: plotinus_enneads
+work_title: Plotinus, Enneads
+title: "Become Sunlike"
+tradition: Greek / Neoplatonist
+covers: "VI.9.1; V.1.6; V.1.1; I.6.8–9; VI.9.11"
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+
+premise: >
+  The Greek tile was the comparative emanation path. This walk is Plotinus
+  alone: beings are by unity; the One overflows; the soul forgets; she turns
+  inward, chisels herself, and the seer is no longer other than the seen.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_unity
+    name: "Unity and overflow"
+    stations:
+      - station: 1
+        unit_id: plotinus_enneads.enn_vi_9_01
+        title: "A thing is by being one"
+        opening_question: "What in me is a heap pretending to be a life?"
+        transmission: >
+          Army, chorus, house, living body: lose unity and they are not what
+          they were. You exist as this self by a unity you did not invent.
+        contemplation: "Unity is not a number. It is why there is a this."
+        gate_practice: >
+          Name one scatter in the day (tabs, roles, arguments). Gather to one
+          act for ten minutes. Feel the difference between heap and one.
+        passed_when: "You can tell a heap from a life, in your own attention."
+      - station: 2
+        unit_id: plotinus_enneads.enn_v_1_06
+        title: "The One does not stay childless"
+        opening_question: "Why did the perfect not remain alone?"
+        transmission: >
+          How does anything proceed from the One? Not from lack. Overflow is
+          the generosity of what is complete. Intellect looks, and looking,
+          is.
+        contemplation: "Generation here is not a fall from boredom."
+        gate_practice: >
+          Give one thing from fullness, not from needing to be needed — a
+          word, a help, a silence. Notice if the source felt reduced.
+        passed_when: "You have felt a giving that did not make you less."
+
+  - gate_id: gate_1_forget
+    name: "Forgetting"
+    stations:
+      - station: 3
+        unit_id: plotinus_enneads.enn_v_1_01
+        title: "The soul no longer knows the Father"
+        opening_question: "What honour am I paying to what is beneath me?"
+        transmission: >
+          The soul forgets origin by wanting to belong to herself among things.
+          Two disciplines: see the dishonour of what you overprize, and recall
+          what you are.
+        contemplation: "Forgetfulness is not amnesia. It is misplaced love."
+        gate_practice: >
+          Pick one prized object (status, comfort, a wound). Name what it
+          cannot give. Then remember, for one minute, the worth that does not
+          come from it.
+        passed_when: "You can catch a downward love without dramatizing it."
+
+  - gate_id: gate_2_return
+    name: "Return"
+    stations:
+      - station: 4
+        unit_id: plotinus_enneads.enn_i_6_08
+        title: "Do not chase the copies"
+        opening_question: "Where am I hunting beauty in a remnant?"
+        transmission: >
+          Beautiful forms are eidōla — shadows of Beauty. Do not pursue them
+          as the end. Hasten toward what they copy. Withdraw into yourself.
+        contemplation: "Turn from the gleam, not from the world in hatred."
+        gate_practice: >
+          When a beautiful thing pulls, look once, thank it, and step back
+          inward before you try to keep it.
+        passed_when: "You can admire without chasing the copy as if it were the source."
+      - station: 5
+        unit_id: plotinus_enneads.enn_i_6_09
+        title: "Never stop chiselling your statue"
+        opening_question: "Am I waiting to see Beauty before I become able to see it?"
+        transmission: >
+          Withdraw into yourself and look. Cut away the excess, straighten,
+          polish, until the godlike nature shows. Only the sunlike sees the sun.
+        contemplation: "The work is the seeing. The seeing is the work."
+        gate_practice: >
+          Cut one excess from the statue today — a vanity, a cruelty, a fog.
+          Do not add ornament. Look again.
+        passed_when: "You have removed something so that seeing could happen."
+      - station: 6
+        unit_id: plotinus_enneads.enn_vi_9_11
+        title: "Alone to the alone"
+        opening_question: "What would remain if seer and seen were not two?"
+        transmission: >
+          The vision is not for the uninitiate as gossip. Distinctions of seer
+          and seen dissolve. What remains is unified awareness, still, beyond
+          the fidget of intellect and passion.
+        contemplation: "Union is not a report. It is a simplification."
+        gate_practice: >
+          Sit until the inner narrator has nothing left to sell. Do not
+          describe the quiet to yourself. Leave it unnamed.
+        passed_when: "You can rest without a second self standing outside the rest."

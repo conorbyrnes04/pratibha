@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p025
-unit_label: 'Pearl #25'
-title: 'Pearl #25'
+unit_label: Knowing God Does Not Depend on Annihilation
+title: Knowing God Does Not Depend on Annihilation
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -15,14 +15,25 @@ themes:
 source_excerpt: If you know your existence in this way, then you know God, and if not, then not. Most
   of those who claim to know God make the knowledge of God dependent on the passing away of existence
   and on the passing away of that passing away.
-translation_literal: If you know your existence in this way, then you know God, and if not, then not.
-  Most of those who claim to know God make the knowledge of God dependent on the passing away of existence
-  and on the passing away of that passing away.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: Then if you know your existence in this way, you know God; and if not, then not.
+  Most of those who know God make the passing away of existence, and the passing away of that passing
+  away, a condition for attaining the knowledge of God.
+commentary: 'The claim is deliberately sharper than a call to mystical self-erasure. To know oneself is
+  to recognize that one’s supposed independent existence has never stood alongside God’s existence. On
+  this account, self-knowledge is knowledge of the Lord because the self cannot be an autonomous second
+  reality. The text therefore contests a familiar Sufi sequencing: first the servant is annihilated (fanāʾ),
+  then even awareness of annihilation disappears, and only then God is known. Its objection is logical
+  as much as devotional: annihilation can apply only to something genuinely existent, and granting such
+  independent existence to the self already installs an “other” beside God. In the idiom of waḥdat al-wujūd,
+  the issue is not that a real creature travels across a gap to unite with a real God; rather, the imagined
+  separateness that makes such a journey seem necessary is exposed. This is the contested move. Critics
+  can hear in it an erasure of creaturely reality, moral agency, and the Creator–creation distinction;
+  defenders hear an uncompromising defense of divine oneness, denying independence rather than denying
+  experienced multiplicity. The passage’s practical force is epistemic: do not seek to become nothing
+  as though you were first something apart. Examine the claim of apartness itself.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you say or think “my existence,” pause once and ask: what exactly in this experience
+  claims to exist independently of God?'
 sanskrit_devanagari: 'فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.
 
 
@@ -37,47 +48,70 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.
+
+
+    وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء'
 - kind: translation
   label: Pratibha Translation
-  body: If you know your existence in this way, then you know God, and if not, then not. Most of those
-    who claim to know God make the knowledge of God dependent on the passing away of existence and on
-    the passing away of that passing away.
+  body: Then if you know your existence in this way, you know God; and if not, then not. Most of those
+    who know God make the passing away of existence, and the passing away of that passing away, a condition
+    for attaining the knowledge of God.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The claim is deliberately sharper than a call to mystical self-erasure. To know oneself is to
+    recognize that one’s supposed independent existence has never stood alongside God’s existence. On
+    this account, self-knowledge is knowledge of the Lord because the self cannot be an autonomous second
+    reality. The text therefore contests a familiar Sufi sequencing: first the servant is annihilated
+    (fanāʾ), then even awareness of annihilation disappears, and only then God is known. Its objection
+    is logical as much as devotional: annihilation can apply only to something genuinely existent, and
+    granting such independent existence to the self already installs an “other” beside God. In the idiom
+    of waḥdat al-wujūd, the issue is not that a real creature travels across a gap to unite with a real
+    God; rather, the imagined separateness that makes such a journey seem necessary is exposed. This is
+    the contested move. Critics can hear in it an erasure of creaturely reality, moral agency, and the
+    Creator–creation distinction; defenders hear an uncompromising defense of divine oneness, denying
+    independence rather than denying experienced multiplicity. The passage’s practical force is epistemic:
+    do not seek to become nothing as though you were first something apart. Examine the claim of apartness
+    itself.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: معرفة
+    definition: ʿ-r-f, to recognize or know through acquaintance -> knowledge of God disclosed through
+      knowing the self -> more than information or doctrinal assent.
+  - term: الوجود
+    definition: w-j-d, finding, being, existence -> the supposedly independent existence whose status
+      is questioned -> not merely the everyday fact that bodies and events appear.
+  - term: فناء
+    definition: f-n-y, to perish or pass away -> the annihilation of existence, followed by ‘annihilation
+      of annihilation’ -> not simply ascetic renunciation or physical death.
+  - term: العُرَّاف
+    definition: from ʿ-r-f, those characterized by gnosis -> the knowers whom the author nevertheless
+      critiques -> not every religious scholar, nor necessarily a claim that all mystics agree.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Pratyabhijnahrdayam — Sutra 12
-    resonance: 'Both texts posit that ignorance of one''s true nature (authorship/existence) is the root
-      condition, and that direct recognition of this authorship/existence constitutes liberation or true
-      knowledge. The move is: self-ignorance → recognition of one''s own power/existence → knowledge.'
-    divergence: Ibn Arabi frames this as a conditional gate to knowing God (vertical transcendence), while
-      Pratyabhijnahrdayam frames it as recognition of one's own authorship of cosmic processes (non-dual
-      immanence).
-    passage_id: pratyabhijnahrdayam.phr_012
-  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
-    resonance: 'Both texts present knowledge as a unifying insight that dissolves the apparent multiplicity
-      of phenomena into essential oneness. The structural move is: instruction/teaching → perception of
-      imperceptible unity → knowledge of the Real.'
-    divergence: Ibn Arabi's formulation is a direct conditional (if you know X, then you know Y), while
-      Chāndogya frames knowledge as mediated through instruction and the perception of imperceptible essence
-      across all things.
-    passage_id: chāndogya_upaniṣad.chu_vi_01
-  - citation: Heraclitus Fragments
-    resonance: 'Both texts diagnose a fundamental gap between apparent self-knowledge and true knowledge:
-      people believe they understand their own existence/nature, but this belief masks actual ignorance.
-      The move is: false certainty about one''s condition → recognition of actual non-knowing.'
-    divergence: Ibn Arabi uses this gap as a threshold to God-knowledge (metaphysical consequence), while
-      Heraclitus uses it to critique the majority's failure to grasp the universal Logos (epistemological
-      critique).
-    passage_id: heraclitus_fragments.hfr_p005
-  layer_provenance: generated_grounded
+  - citation: Qur'an 57:3
+    resonance: God is named ‘the First and the Last, the Outward and the Inward,’ supporting the treatise’s
+      refusal to locate another independent reality before, after, or beside Him.
+    divergence: The Qur'anic verse does not itself state that creatures have no existence or reject fanāʾ
+      as a condition of knowledge.
+  - citation: 'Hadith: ‘Whoever knows himself knows his Lord’'
+    resonance: 'The treatise takes this maxim as its governing warrant: self-knowledge and knowledge of
+      God are inseparable.'
+    divergence: Its transmission as a Prophetic hadith is disputed, and the radical metaphysical interpretation
+      here goes beyond the maxim’s bare wording.
+  - citation: Qur'an 28:88
+    resonance: ‘Everything is perishing except His Face’ is later read in the treatise as denying independent
+      existence to all else.
+    divergence: The verse can also be read as affirming the transience of created things, without identifying
+      their existence directly with God’s existence.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you say or think “my existence,” pause once and ask: what exactly in this experience
+    claims to exist independently of God?'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -89,3 +123,14 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: Then if you know your existence in this way, you know God; and if not, then not. Most of
+  those who know God make the passing away of existence, and the passing away of that passing away, a
+  condition for attaining the knowledge of God.
+abhyasa: 'Today, when you say or think “my existence,” pause once and ask: what exactly in this experience
+  claims to exist independently of God?'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.
+
+
+  وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء'

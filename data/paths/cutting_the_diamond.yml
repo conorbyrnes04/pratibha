@@ -1,0 +1,122 @@
+path_id: cutting_the_diamond
+work_id: vajracchedika_diamond_sutra
+work_title: Vajracchedikā Prajñāpāramitā
+title: "Cutting the Diamond"
+tradition: Buddhism
+covers: "Selected doorways: ordinary morning, the vow with no being-view, giving without a perch, unmarked Tathāgata, non-abiding mind, no savior-census, no marks of awakening, lightning verse. Not thirty-two chapters."
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  This is not a second Heart Sūtra. Cut the standing-place. Do not complete the catalogue.
+
+premise: >
+  The emptiness-and-compassion sampler already walked mind, Heart, Nāgārjuna, bodhicitta.
+  This walk cuts every place a helper would stand: being, gift, mark, perch, savior, progress-sign.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_morning
+    name: "Ordinary before the cut"
+    theme: "Emptiness that cannot eat alms is already a view."
+    why_first: >
+      If the sūtra begins as a metaphysical event, later cuts become theatre.
+    stations:
+      - station: 1
+        unit_id: vajracchedika_diamond_sutra.faithful_vaj_001
+        title: "The quiet order of the morning"
+        opening_question: "Where do I still need emptiness to feel like an event?"
+        transmission: >
+          Robe, bowl, alms, wash, sit. The Diamond first shows a day that does not need to be special.
+        contemplation: "Skip the morning and emptiness becomes an atmosphere."
+        gate_practice: >
+          Do the next ordinary sequence without adding a spiritual commentary.
+        passed_when: "You can keep one ordinary sequence without turning it into a spiritual atmosphere."
+
+  - gate_id: gate_1_cut
+    name: "Places a helper would stand"
+    theme: "Being, gift, mark, perch, savior, signs."
+    why_first: >
+      Compassion without this cut becomes a helper with a census.
+    stations:
+      - station: 2
+        unit_id: vajracchedika_diamond_sutra.faithful_vaj_003
+        title: "Save all, and no being is saved"
+        opening_question: "Where did I need someone to remain a being so I could remain a helper?"
+        transmission: >
+          Lead all to parinirvāṇa; no being was led. A being-view already left the vehicle.
+        contemplation: "Not a license not to help."
+        gate_practice: >
+          One helpful act without storing a story of who was saved.
+        passed_when: "You can help without keeping a census of beings saved."
+      - station: 3
+        unit_id: vajracchedika_diamond_sutra.faithful_vaj_004
+        title: "Give without a place to rest"
+        opening_question: "Where did I rest on being the giver?"
+        transmission: >
+          Do not give while resting on a thing. The triad giver-gift-receiver is already a settlement.
+        contemplation: "The sūtra does not forbid giving. It forbids the perch."
+        gate_practice: >
+          Give once. Do not replay the scene as proof of being generous.
+        passed_when: "You can complete a gift without occupying the role of giver afterward."
+      - station: 4
+        unit_id: vajracchedika_diamond_sutra.faithful_vaj_005
+        title: "See the marks as unmarked"
+        opening_question: "What mark am I still using as proof?"
+        transmission: >
+          If you see the marks as unmarked, you see the Tathāgata. A look is already too late.
+        contemplation: "Unmarked is not a blank to stare at."
+        gate_practice: >
+          Label the next image of how awakening should look as mark. Return to the task.
+        passed_when: "You can drop one visual or credential of awakening without installing a blank as the new mark."
+      - station: 5
+        unit_id: vajracchedika_diamond_sutra.faithful_vaj_010
+        title: "Produce a mind that does not settle"
+        opening_question: "What did the mind try to settle on once marks had failed?"
+        transmission: >
+          Produce a mind that does not settle anywhere — including on emptiness as a new home.
+        contemplation: "That mind can still walk into town for alms."
+        gate_practice: >
+          Ten minutes of work: each landing, say not here. Do not land on I am non-abiding.
+        passed_when: "You can notice a perch form and step off it without making non-abiding the next perch."
+      - station: 6
+        unit_id: vajracchedika_diamond_sutra.faithful_vaj_025
+        title: "The Tathāgata does not think I save beings"
+        opening_question: "Where am I still keeping a Liberator so I do not have to drop the being-view?"
+        transmission: >
+          There is no being liberated by the Tathāgata. Outsourcing the census to the Buddha is still a being-view.
+        contemplation: "The cut includes the idea of a savior with a list."
+        gate_practice: >
+          Drop both saved and savior for one minute. Finish the necessary kindness without that story.
+        passed_when: "You can act without a savior-and-saved pair running the scene."
+      - station: 7
+        unit_id: vajracchedika_diamond_sutra.faithful_vaj_026
+        title: "Not by the perfection of marks"
+        opening_question: "Which mark of progress was I using as a Buddha-body?"
+        transmission: >
+          If the Tathāgata were seen through marks, a wheel-turning king would be a Tathāgata.
+        contemplation: "The path is not a physiognomy."
+        gate_practice: >
+          Cross out three progress-signs. Do the next task without checking them.
+        passed_when: "You can drop one progress-sign without replacing it with a better look."
+      - station: 8
+        unit_id: vajracchedika_diamond_sutra.faithful_vaj_032
+        title: "See the conditioned like lightning"
+        opening_question: "What was I still gripping as if it were not lightning?"
+        transmission: >
+          A four-line verse outweighs worlds of jewels. See the conditioned like lightning. Do not complete the catalogue.
+        contemplation: "You do not finish thirty-two chapters."
+        gate_practice: >
+          Speak the list once over one gripped situation. Then act as if it had already flashed.
+        passed_when: "You can let one conditioned situation flash without needing to finish the book."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    Remaining Diamond chapters stay supporting. Do not add one gate per file.
+  next_gates: []

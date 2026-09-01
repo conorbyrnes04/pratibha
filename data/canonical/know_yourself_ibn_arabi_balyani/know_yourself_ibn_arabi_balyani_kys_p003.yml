@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p003
-unit_label: 'Pearl #3'
-title: 'Pearl #3'
+unit_label: God Is Known Only by Himself
+title: God Is Known Only by Himself
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
   passing content.'
@@ -18,16 +18,26 @@ source_excerpt: Understand this so as not to make the mistake of those who belie
   this way that you should know Him and not through theoretical knowledge, reason, understanding or conjecture,
   nor with the senses, the external eye or interior sight or perception. No one sees Him except Himself,
   no one reaches Him except Himself and no one knows Him except Himself.
-translation_literal: Understand this so as not to make the mistake of those who believe in incarnation.
-  He is not in anything and no thing is in Him, whether entering into Him or coming out of Him. It is
-  in this way that you should know Him and not through theoretical knowledge, reason, understanding or
-  conjecture, nor with the senses, the external eye or interior sight or perception. No one sees Him except
-  Himself, no one reaches Him except Himself and no one knows Him except Himself.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
-  the passing content.'
+translation_literal: 'Understand this, therefore, lest you fall into the error of those who believe in
+  indwelling. He is not in a thing, nor is a thing in Him, whether entering in or proceeding forth. You
+  must know Him in this manner: not by knowledge, nor intellect, nor understanding, nor imagination, nor
+  the outward sense, nor the inward eye, nor perception. None sees Him except Himself; none perceives
+  Him except Himself; none knows Him except Himself, by Himself.'
+commentary: 'The claim is uncompromising: God cannot be located in a thing, contained by a thing, or apprehended
+  by a human faculty. The warning against ḥulūl rejects the notion that the divine essence literally enters
+  creatures, just as it rejects the reverse image of creatures entering or departing God. For this text,
+  waḥdat al-wujūd is not a theory of spatial fusion between two already-existing realities. It denies
+  that creaturely “otherness” has the independent standing required for either containment or union. Hence
+  self-knowledge as knowledge of the Lord does not mean that an individual ego discovers itself to be
+  God. It means that the claimant of separate knowing is unmasked: God alone is seer, known, and knowing.
+  The contested move lies precisely here. Language of divine self-disclosure can preserve transcendence
+  by refusing every “how” and “where,” yet it can also seem to erase the creature–Creator distinction
+  on which many theologians insist. The passage protects itself by negation: no indwelling, no exit, no
+  sensory or intellectual capture. Its realization is not possession of God as an object, but the collapse
+  of the assumption that God stands before a separate subject as an object of cognition.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: Today, when you notice yourself trying to picture, possess, or explain God, pause once and release
+  that image; say inwardly, “You are not contained by my knowing,” then return to the task before you.
 sanskrit_devanagari: 'فافهم هذا لئلا تقع في غلط الحلولية.
 
 
@@ -45,49 +55,74 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'فافهم هذا لئلا تقع في غلط الحلولية.
+
+
+    لا هو في شيء، ولا شيء فيه، لا داخلاً ولا خارجًا. ينبغي أن نعرفه بهذه الصفة، لا بالعلم ولا بالعقل،
+    ولا بالفهم ولا بالوهم ولا بالعين، ولا بالحسِّ الظاهر ولا بالعين الباطن ولا بالإدراك. لا يراه إلا هو،
+    ولا يدركه إلا هو، ولا يعلمه إلا هو بنفسه'
 - kind: translation
   label: Pratibha Translation
-  body: Understand this so as not to make the mistake of those who believe in incarnation. He is not in
-    anything and no thing is in Him, whether entering into Him or coming out of Him. It is in this way
-    that you should know Him and not through theoretical knowledge, reason, understanding or conjecture,
-    nor with the senses, the external eye or interior sight or perception. No one sees Him except Himself,
-    no one reaches Him except Himself and no one knows Him except Himself.
+  body: 'Understand this, therefore, lest you fall into the error of those who believe in indwelling.
+    He is not in a thing, nor is a thing in Him, whether entering in or proceeding forth. You must know
+    Him in this manner: not by knowledge, nor intellect, nor understanding, nor imagination, nor the outward
+    sense, nor the inward eye, nor perception. None sees Him except Himself; none perceives Him except
+    Himself; none knows Him except Himself, by Himself.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
-    passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The claim is uncompromising: God cannot be located in a thing, contained by a thing, or apprehended
+    by a human faculty. The warning against ḥulūl rejects the notion that the divine essence literally
+    enters creatures, just as it rejects the reverse image of creatures entering or departing God. For
+    this text, waḥdat al-wujūd is not a theory of spatial fusion between two already-existing realities.
+    It denies that creaturely “otherness” has the independent standing required for either containment
+    or union. Hence self-knowledge as knowledge of the Lord does not mean that an individual ego discovers
+    itself to be God. It means that the claimant of separate knowing is unmasked: God alone is seer, known,
+    and knowing. The contested move lies precisely here. Language of divine self-disclosure can preserve
+    transcendence by refusing every “how” and “where,” yet it can also seem to erase the creature–Creator
+    distinction on which many theologians insist. The passage protects itself by negation: no indwelling,
+    no exit, no sensory or intellectual capture. Its realization is not possession of God as an object,
+    but the collapse of the assumption that God stands before a separate subject as an object of cognition.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: الحلولية
+    definition: ḥ-l-l, to alight, dwell, or be installed -> advocates of divine indwelling in a creature
+      -> more specific and stronger than the default gloss “incarnation”; the target is metaphysical location
+      or containment.
+  - term: شيء
+    definition: shayʾ, a thing, entity, or anything whatever -> neither God is “in” a thing nor a thing
+      “in” God -> not merely a material object, but any determinate other that could establish a relation
+      of container and contained.
+  - term: الإدراك
+    definition: 'd-r-k, to catch up with, reach, or comprehend -> perceptual or cognitive grasp of God
+      is denied -> more than ordinary “perception”: it suggests attaining and encompassing its object.'
+  - term: بنفسه
+    definition: bi-nafsihi, by Himself / through His own self -> God knows Himself without an external
+      knower or instrument -> not simply reflexive consciousness, but divine self-sufficiency in knowing.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Siva Sutra — Śāktopāya
-    resonance: 'Both texts locate knowledge in the quality and direction of attention itself: Ibn Arabi''s
-      inward turn of attention to the knower (not the known) structurally mirrors the Śiva Sūtra''s equation
-      of sustained attention with knowledge as the primary epistemic act.'
-    divergence: Ibn Arabi emphasizes attention as a corrective against false metaphysical belief (incarnation),
-      while the Śiva Sūtra presents attention as the fundamental ontological principle through which consciousness
-      knows itself.
-    passage_id: siva_sutra.ss_ii_12
-  - citation: Pratyabhijnahrdayam — Sutra 12
-    resonance: 'Both passages identify ignorance as a failure of self-recognition: Ibn Arabi warns against
-      mistaking external content for the knower, while the Pratyabhijñā describes bewilderment as forgetting
-      one''s own authorship—both locate error in a collapse of reflexive awareness.'
-    divergence: Ibn Arabi frames this as a corrective epistemological move (understanding to avoid error),
-      whereas Pratyabhijñā frames it as metaphysical bondage (ignorance of one's creative power as the
-      Self).
-    passage_id: pratyabhijnahrdayam.phr_012
-  - citation: Tao Te Ching — Learning Adds; the Way Subtracts
-    resonance: 'Both texts prescribe a reversal of ordinary mental direction: Ibn Arabi''s inward turn
-      away from passing content parallels the Tao Te Ching''s daily diminishment—both describe knowledge
-      as a subtraction or withdrawal rather than accumulation.'
-    divergence: Ibn Arabi's withdrawal targets the knower's self-recognition within a theistic framework,
-      while the Taoist diminishment aims at alignment with the impersonal Way through the negation of
-      conceptual overlay.
-    passage_id: tao_te_ching.ttc_md_011
-  layer_provenance: generated_grounded
+  - citation: Qur’an 6:103
+    resonance: “Sight does not comprehend Him, while He comprehends sight” closely supports the denial
+      that any creaturely seeing encloses God.
+    divergence: The passage extends the Qur’anic formulation into a comprehensive account in which seeing,
+      perceiving, and knowing are all God’s own act.
+  - citation: Qur’an 57:3
+    resonance: The divine names “the First and the Last, the Outward and the Inward” frame God beyond
+      ordinary coordinates and oppositions.
+    divergence: Here that transcendence is used directly against spatial relation—being in, entering,
+      or leaving a thing.
+  - citation: Junayd of Baghdad, sayings on tawḥīd
+    resonance: Junayd’s sober Sufi insistence on God’s incomparability resonates with the refusal to describe
+      divine reality through creaturely relations.
+    divergence: This treatise presses the language of non-otherness further, making its ontology more
+      vulnerable to charges of collapsing distinction.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, when you notice yourself trying to picture, possess, or explain God, pause once and release
+    that image; say inwardly, “You are not contained by my knowing,” then return to the task before you.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -99,3 +134,18 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: 'Understand this, therefore, lest you fall into the error of those who believe in indwelling.
+  He is not in a thing, nor is a thing in Him, whether entering in or proceeding forth. You must know
+  Him in this manner: not by knowledge, nor intellect, nor understanding, nor imagination, nor the outward
+  sense, nor the inward eye, nor perception. None sees Him except Himself; none perceives Him except Himself;
+  none knows Him except Himself, by Himself.'
+abhyasa: Today, when you notice yourself trying to picture, possess, or explain God, pause once and release
+  that image; say inwardly, “You are not contained by my knowing,” then return to the task before you.
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'فافهم هذا لئلا تقع في غلط الحلولية.
+
+
+  لا هو في شيء، ولا شيء فيه، لا داخلاً ولا خارجًا. ينبغي أن نعرفه بهذه الصفة، لا بالعلم ولا بالعقل، ولا
+  بالفهم ولا بالوهم ولا بالعين، ولا بالحسِّ الظاهر ولا بالعين الباطن ولا بالإدراك. لا يراه إلا هو، ولا
+  يدركه إلا هو، ولا يعلمه إلا هو بنفسه'

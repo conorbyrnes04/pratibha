@@ -4,21 +4,33 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p009
-unit_label: 'Pearl #9'
-title: 'Pearl #9'
+unit_label: Divine Oneness Is Its Own Veil
+title: Divine Oneness Is Its Own Veil
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
 themes: []
 source_excerpt: His own being veils Him. His being is concealed by His oneness without any condition.
   No one other than He sees Him. No sent prophet, perfect saint or angel brought close knows Him.
-translation_literal: His own being veils Him. His being is concealed by His oneness without any condition.
-  No one other than He sees Him. No sent prophet, perfect saint or angel brought close knows Him.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: 'His veil is His oneness: nothing veils Him except His veil. His existence is His
+  oneness, concealed by His oneness without any quality. None sees Him except Himself; no sent prophet,
+  perfected saint, or angel brought near knows Him.'
+commentary: 'The claim is uncompromising: God is not hidden by a created screen, distance, or deficiency
+  of spiritual rank. The only “veil” is divine oneness itself—the impossibility of setting a knower over
+  against an object known as though God were one being among others. In the treatise’s waḥdat al-wujūd
+  logic, every such opposition already grants independent standing to an “other.” Thus even prophets,
+  saints, and near angels do not know God as an external object; God alone sees and knows God. Self-knowledge
+  consequently does not culminate in a privileged human possession of the divine. It undoes the self imagined
+  as a separate knower, disclosing that the reality by which one knows is not one’s private property.
+  The contested move lies in identifying the divine veil with divine oneness and then pressing this toward
+  the denial of any genuinely independent creaturely existence. Many theologians safeguard an enduring
+  Creator-creature distinction and read divine incomparability without collapsing the reality of creatures.
+  Balyānī’s formulation instead treats separateness itself as the epistemic veil: not a thing blocking
+  God, but the habit of imagining a thing other than Him.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: Today, when you notice yourself treating God as a distant object to be mentally grasped, pause
+  for one minute and release the demand to picture or possess the divine; attend instead to the bare fact
+  that awareness is given.
 sanskrit_devanagari: 'حجابه وحدانيته، فلا يحجبه شيءٌ غير حجابه. وجوده وحدانيته، تستَّر بوحدانيته بلا كيفية.
   لا يراه أحدٌ غيره: لا نبي مرسل، ولا ولي كامل، ولا مَلَك مقرَّب يعرفه.'
 sanskrit_iast: ''
@@ -29,46 +41,69 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'حجابه وحدانيته، فلا يحجبه شيءٌ غير حجابه. وجوده وحدانيته، تستَّر بوحدانيته بلا كيفية. لا يراه
+    أحدٌ غيره: لا نبي مرسل، ولا ولي كامل، ولا مَلَك مقرَّب يعرفه.'
 - kind: translation
   label: Pratibha Translation
-  body: His own being veils Him. His being is concealed by His oneness without any condition. No one other
-    than He sees Him. No sent prophet, perfect saint or angel brought close knows Him.
+  body: 'His veil is His oneness: nothing veils Him except His veil. His existence is His oneness, concealed
+    by His oneness without any quality. None sees Him except Himself; no sent prophet, perfected saint,
+    or angel brought near knows Him.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The claim is uncompromising: God is not hidden by a created screen, distance, or deficiency of
+    spiritual rank. The only “veil” is divine oneness itself—the impossibility of setting a knower over
+    against an object known as though God were one being among others. In the treatise’s waḥdat al-wujūd
+    logic, every such opposition already grants independent standing to an “other.” Thus even prophets,
+    saints, and near angels do not know God as an external object; God alone sees and knows God. Self-knowledge
+    consequently does not culminate in a privileged human possession of the divine. It undoes the self
+    imagined as a separate knower, disclosing that the reality by which one knows is not one’s private
+    property. The contested move lies in identifying the divine veil with divine oneness and then pressing
+    this toward the denial of any genuinely independent creaturely existence. Many theologians safeguard
+    an enduring Creator-creature distinction and read divine incomparability without collapsing the reality
+    of creatures. Balyānī’s formulation instead treats separateness itself as the epistemic veil: not
+    a thing blocking God, but the habit of imagining a thing other than Him.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: ḥijāb
+    definition: 'From ḥ-j-b, “to screen, bar, conceal.” Here it is not a material curtain between God
+      and creatures, but divine oneness itself: the non-objectifiability of the Real, missed when “veil”
+      is glossed simply as separation.'
+  - term: waḥdāniyya
+    definition: From w-ḥ-d, “being one.” In this passage it means the divine uniqueness that excludes
+      a second standpoint from which God could be observed, not merely numerical oneness.
+  - term: kayfiyya
+    definition: From kayfa, “how?”—the mode or manner of a thing. “Without any quality” denies a knowable
+      modality for God; it does not merely say that God’s qualities are difficult to describe.
+  - term: walī kāmil
+    definition: Walī, from w-l-y, one who is near or under divine guardianship; kāmil means complete or
+      perfected. Even the fully realized saint does not become an independent subject who comprehends
+      God.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Svetasvatara Upanishad — The One Hidden in All Beings
-    resonance: 'Both texts posit a fundamental veiling: Ibn Arabi''s ''own being veils Him'' mirrors the
-      Svetasvatara''s ''hidden in all beings''—each tradition locates the ultimate reality as simultaneously
-      present and obscured by the very manifestation through which it appears.'
-    divergence: Ibn Arabi emphasizes the veil as ontological self-concealment (the divine nature itself
-      conceals), while Svetasvatara frames hiddenness as a spatial or perceptual condition (the witness
-      remains hidden *within* beings, awaiting recognition).
-    passage_id: svetasvatara_upanishad.svu_003
-  - citation: Isavasya Upanishad — Mantra 7
-    resonance: 'Both passages point to a direct non-dual recognition that dissolves the subject-object
-      split: ''His own being veils Him'' and ''For one who sees unity, what delusion and what sorrow remain?''
-      both suggest that the veil *is* the illusion of separation, dissolved in immediate seeing.'
-    divergence: Ibn Arabi's formulation emphasizes the paradox of veiling itself as the mechanism, while
-      Isavasya locates the shift in the *seeing* (dṛṣṭi) that recognizes unity, making knowledge rather
-      than ontological structure the pivot.
-    passage_id: isavasya_upanishad.isa_013
-  - citation: Astavakra Gita — Key Verses from Chapters 3–7
-    resonance: 'Both texts dissolve the apparent solidity of individual existence into a non-dual ground:
-      ''His own being veils Him'' parallels the recognition ''so''ham asmīti'' (I am That)—the separate
-      self-sense is revealed as the veil obscuring the singular reality.'
-    divergence: Astavakra's approach is epistemological (knowledge of identity dissolves the veil), while
-      Ibn Arabi's is metaphysical (being itself is the veiling mechanism, requiring grace rather than
-      gnosis alone).
-    passage_id: astavakra_gita.asg_sum_key_verses_from_chapters_3_7
-  layer_provenance: generated_grounded
+  - citation: Qur’an 6:103
+    resonance: “Sight comprehends Him not, while He comprehends all sight” closely supports the asymmetry
+      of seeing and knowing stated here.
+    divergence: The Qur’anic verse does not itself draw the treatise’s stronger ontological conclusion
+      that no other possesses independent existence or knowing.
+  - citation: Qur’an 57:3
+    resonance: Its naming of God as “the First and the Last, the Outward and the Inward” resonates with
+      the treatise’s refusal to locate God within ordinary oppositions.
+    divergence: The verse affirms divine all-encompassment, whereas this passage makes oneness itself
+      the veil that dissolves the knower-known duality.
+  - citation: Ibn ʿArabī, Fuṣūṣ al-Ḥikam, chapter on Noah
+    resonance: The Akbarian language of divine self-disclosure in forms helps illuminate why created vision
+      cannot stand outside the Real and master it.
+    divergence: This short treatise states the point in an especially absolute idiom; its attribution
+      to Ibn ʿArabī has long been disputed, and its rhetoric need not represent every nuance of his writings.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, when you notice yourself treating God as a distant object to be mentally grasped, pause
+    for one minute and release the demand to picture or possess the divine; attend instead to the bare
+    fact that awareness is given.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -80,3 +115,13 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: 'His veil is His oneness: nothing veils Him except His veil. His existence is His oneness,
+  concealed by His oneness without any quality. None sees Him except Himself; no sent prophet, perfected
+  saint, or angel brought near knows Him.'
+abhyasa: Today, when you notice yourself treating God as a distant object to be mentally grasped, pause
+  for one minute and release the demand to picture or possess the divine; attend instead to the bare fact
+  that awareness is given.
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'حجابه وحدانيته، فلا يحجبه شيءٌ غير حجابه. وجوده وحدانيته، تستَّر بوحدانيته بلا كيفية. لا يراه
+  أحدٌ غيره: لا نبي مرسل، ولا ولي كامل، ولا مَلَك مقرَّب يعرفه.'

@@ -1,5 +1,7 @@
+import { dropCatalogCaches, evictStaleCatalogCaches } from "@/lib/catalogCache";
 import { loadJournalNotes } from "@/lib/journalStorage";
 import { SHARE_FORCE_MARKS, type ShareForceMark } from "@/lib/shareCard";
+import { evictStudyI18nCache } from "@/lib/studyI18n";
 
 const STORAGE_KEY = "pratibha.study.v1";
 export const GLYPH_UNLOCK_EVENT = "pratibha:glyph-unlock";
@@ -43,9 +45,50 @@ export function loadStudyLedger(): StudyLedger {
   }
 }
 
+function compactLedger(ledger: StudyLedger): StudyLedger {
+  const verses = Object.entries(ledger.verses)
+    .sort((a, b) => (b[1].at || 0) - (a[1].at || 0))
+    .slice(0, 400);
+  const practices = Object.entries(ledger.practices || {})
+    .sort((a, b) => (b[1].at || 0) - (a[1].at || 0))
+    .slice(0, 400);
+  return {
+    verses: Object.fromEntries(verses),
+    practices: Object.fromEntries(practices),
+  };
+}
+
+function writeLedger(ledger: StudyLedger): boolean {
+  const raw = JSON.stringify(ledger);
+  try {
+    localStorage.setItem(STORAGE_KEY, raw);
+    return true;
+  } catch {
+    evictStaleCatalogCaches();
+    try {
+      localStorage.setItem(STORAGE_KEY, raw);
+      return true;
+    } catch {
+      dropCatalogCaches();
+      evictStudyI18nCache();
+      try {
+        localStorage.setItem(STORAGE_KEY, raw);
+        return true;
+      } catch {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(compactLedger(ledger)));
+          return true;
+        } catch {
+          return false;
+        }
+      }
+    }
+  }
+}
+
 function saveStudyLedger(ledger: StudyLedger): void {
   if (typeof window === "undefined") return;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(ledger));
+  writeLedger(ledger);
 }
 
 function isCorpusVerseId(id: string): boolean {

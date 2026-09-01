@@ -27,9 +27,9 @@ const IMAGE_RULES: Array<{ pattern: RegExp; slug: string }> = [
     slug: "upanishads",
   },
   { pattern: /vijnana|bhairava|shiva|siva|tantra|spanda|yogin[iī]|pratyabhij|utpala|somananda/i, slug: "kashmir-saiva" },
-  { pattern: /heraclitus|fragment|epictetus|marcus.?aurelius|meditations\b/i, slug: "heraclitus" },
+  { pattern: /heraclitus|fragment|epictetus|marcus.?aurelius|meditations\b|stoic/i, slug: "heraclitus" },
   { pattern: /patanjali|patañjali|yoga.?s[uū]tras?|raja.?yoga/i, slug: "patanjali" },
-  { pattern: /plotinus|ennead|phaedo|plato|eckhart|ibn.?arabi|know.?yourself|oneness.?of.?being|ecclesiastes|qoheleth|gospel.?of.?thomas/i, slug: "plotinus" },
+  { pattern: /plotinus|ennead|phaedo|plato|eckhart|dionysius|areopagite|cloud.?of.?unknowing|christian.?mystic|ibn.?arabi|know.?yourself|oneness.?of.?being|ecclesiastes|qoheleth|gospel.?of.?thomas|gospel.?of.?mary|logia of jesus|new.?testament.?logia/i, slug: "plotinus" },
 ];
 
 /** Learning-realm → artwork (Paths page / DailySit). */
@@ -37,7 +37,15 @@ const REALM_SLUGS: Record<string, string> = {
   foundations: "patanjali",
   trika: "kashmir-saiva",
   vedanta: "upanishads",
+  "letting-go": "plotinus",
+  tao: "daoism",
+  hellenic: "plotinus",
+  stoic: "heraclitus",
+  christian: "plotinus",
   bridges: "plotinus",
+  "yoga-dharma": "patanjali",
+  sufi: "milarepa",
+  confucian: "daoism",
 };
 
 /** How many nature photo variants exist per base slug (`-n01` …). */
@@ -84,7 +92,13 @@ export function natureVariantSrcs(baseSlug: string): string[] {
  * Order mirrors the generator manifest; more specific patterns first.
  */
 const REDBOOK_RULES: Array<{ pattern: RegExp; slug: string }> = [
+  { pattern: /gospel.?of.?mary/i, slug: "gospel_of_mary" },
+  { pattern: /attar|mantiq|conference.?of.?the.?birds/i, slug: "conference_of_the_birds" },
+  { pattern: /hujwir|kashf.?al.?ma[hḥ]jub/i, slug: "kashf_al_mahjub" },
+  { pattern: /logia of jesus|new.?testament.?logia/i, slug: "new_testament_logia" },
   { pattern: /course in miracles|acim/i, slug: "a_course_in_miracles" },
+  { pattern: /psalm|tehillim|psalter/i, slug: "psalms_tehillim" },
+  { pattern: /lalla|lal.?ded|lalleshwari|vakyani|vākyāni/i, slug: "lalla_vakyani" },
   { pattern: /kabbalah|zohar|yetzirah|sephiroth|sefirot/i, slug: "kabbalah_zohar_yetzirah" },
   { pattern: /ha[tṭ]ha|pradipika|pradīpikā/i, slug: "hatha_yoga_pradipika" },
   { pattern: /[sś]iva.?sa[mṃ]hit[aā]|shiva.?samhita/i, slug: "siva_samhita" },

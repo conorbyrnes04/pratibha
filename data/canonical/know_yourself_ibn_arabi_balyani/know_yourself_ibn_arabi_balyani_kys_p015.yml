@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p015
-unit_label: 'Pearl #15'
-title: 'Pearl #15'
+unit_label: The Messenger, Message, and Sender Are One Reality
+title: The Messenger, Message, and Sender Are One Reality
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
   passing content.'
@@ -15,14 +15,26 @@ themes:
 source_excerpt: The very existence of the prophetic message is His existence. There is no existence to
   any other who could pass away, or have a name or be named. Because of this, the Prophet, God bless him
   and give him peace, said, Whoever knows their self, knows their Lord.
-translation_literal: The very existence of the prophetic message is His existence. There is no existence
-  to any other who could pass away, or have a name or be named. Because of this, the Prophet, God bless
-  him and give him peace, said, Whoever knows their self, knows their Lord.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
-  the passing content.'
+translation_literal: His Prophet is He, and His sending is He, and His word is He. He sends Himself with
+  Himself from Himself to Himself. There is no mediator nor any means other than He, and there is no difference
+  between the Sender, that by which He is sent, and the one to whom He is sent. The very existence of
+  the letters of praise is His existence alone—not His praise, nor His name, nor His named.
+commentary: 'The passage presses divine oneness beyond the familiar distinction between God, revelation,
+  messenger, speech, and recipient. In its uncompromising waḥdat al-wujūd logic, each term is not an independently
+  existing item standing beside God and linked to Him by an act of sending. The Sender, the sending, the
+  message, and its destination are names for the one Real existence. Even “the letters of praise”—the
+  articulated forms through which praise appears—have no existence of their own; their appearing is dependent
+  entirely on the Real. Yet the final denial is deliberately severe: it does not merely say that praise
+  belongs to God, but refuses to grant praise, name, and named a separate ontological footing. This is
+  the contested move. Read devotionally, it safeguards tawḥīd by denying autonomy to every created form.
+  Read incautiously, it can seem to erase the real distinctions maintained by prophetic religion: God
+  speaks, a prophet receives, and creatures praise. The tract instead treats these distinctions as valid
+  at the level of manifestation while denying that they constitute a second being. Self-knowledge follows
+  this same path: to know oneself is to discover that one’s presumed independent reality cannot stand
+  over against the Lord.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: Today, when you offer one brief word of praise—“Praise be to God”—pause and notice the speaker,
+  the sound, and the praise as dependent gifts rather than possessions of a separate self.
 sanskrit_devanagari: 'نبيُّه هو، ورسوله هو، ورسالته هو، وكلامه هو: أرسلَ نفسَه بنفسه من نفسه إلى نفسه،
   لا واسطة ولا سبب غيره، ولا تفاوُت بين المرسِل والمرسَل به والمرسَل إليه. وجود حروف الثناء وجوده لا غير،
   لا ثناؤه ولا اسمه ولا مُسمَّاه.'
@@ -36,40 +48,69 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'نبيُّه هو، ورسوله هو، ورسالته هو، وكلامه هو: أرسلَ نفسَه بنفسه من نفسه إلى نفسه، لا واسطة ولا
+    سبب غيره، ولا تفاوُت بين المرسِل والمرسَل به والمرسَل إليه. وجود حروف الثناء وجوده لا غير، لا ثناؤه
+    ولا اسمه ولا مُسمَّاه.'
 - kind: translation
   label: Pratibha Translation
-  body: The very existence of the prophetic message is His existence. There is no existence to any other
-    who could pass away, or have a name or be named. Because of this, the Prophet, God bless him and give
-    him peace, said, Whoever knows their self, knows their Lord.
+  body: His Prophet is He, and His sending is He, and His word is He. He sends Himself with Himself from
+    Himself to Himself. There is no mediator nor any means other than He, and there is no difference between
+    the Sender, that by which He is sent, and the one to whom He is sent. The very existence of the letters
+    of praise is His existence alone—not His praise, nor His name, nor His named.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
-    passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The passage presses divine oneness beyond the familiar distinction between God, revelation, messenger,
+    speech, and recipient. In its uncompromising waḥdat al-wujūd logic, each term is not an independently
+    existing item standing beside God and linked to Him by an act of sending. The Sender, the sending,
+    the message, and its destination are names for the one Real existence. Even “the letters of praise”—the
+    articulated forms through which praise appears—have no existence of their own; their appearing is
+    dependent entirely on the Real. Yet the final denial is deliberately severe: it does not merely say
+    that praise belongs to God, but refuses to grant praise, name, and named a separate ontological footing.
+    This is the contested move. Read devotionally, it safeguards tawḥīd by denying autonomy to every created
+    form. Read incautiously, it can seem to erase the real distinctions maintained by prophetic religion:
+    God speaks, a prophet receives, and creatures praise. The tract instead treats these distinctions
+    as valid at the level of manifestation while denying that they constitute a second being. Self-knowledge
+    follows this same path: to know oneself is to discover that one’s presumed independent reality cannot
+    stand over against the Lord.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: رسوله
+    definition: From r-s-l, “to send” -> the one sent, named here as God Himself -> not merely a human
+      courier with independent being.
+  - term: رسالة
+    definition: From r-s-l, sending or message -> the revelatory relation itself -> more than a delivered
+      text; it is an appearance of the one Real.
+  - term: واسطة
+    definition: From w-s-ṭ, a middle or intermediary -> any mediating link between sender and recipient
+      is denied -> not simply a rejection of prophets, but of independent causal intermediaries.
+  - term: مُسمَّاه
+    definition: From s-m-w/s-m, “that which is named” -> the referent corresponding to a name -> not a
+      separate object added alongside the divine Name.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Plotinus Enneads — Ennead V, Tractate 1, Section 12
-    resonance: 'Both texts locate the problem of self-knowledge in a misdirection of attention: the soul/self
-      continuously enacts its true nature, but remains obscured because consciousness is habitually turned
-      outward (toward sense-content or ''passing content''). Clarity requires a reversal of attention
-      back to the knower itself.'
-    divergence: Plotinus frames this as an epistemological problem of perception and awareness; Ibn Arabi
-      frames it as an ontological identity where the prophetic message *is* divine existence, making the
-      inward turn a recognition of non-duality rather than a recovery of overlooked activity.
-    passage_id: plotinus_enneads.enn_v_1_12
-  - citation: 'Vijnana Bhairava — Yukti #61'
-    resonance: Both passages identify a threshold where attention withdraws from multiplicity (the Void,
-      the nondual) and the true nature of the Self manifests precisely at that point of cessation. The
-      Self is revealed not through acquisition but through the removal of obstruction.
-    divergence: The Vijnana Bhairava locates this manifestation in the nondual Void as a phenomenological
-      state accessible through yogic practice; Ibn Arabi's 'existence of the prophetic message' is a metaphysical
-      claim about the identity of divine and prophetic presence, not a meditative attainment.
-    passage_id: vijnana_bhairava.yukti_061
-  layer_provenance: generated_grounded
+  - citation: Qurʾan 53:3–4
+    resonance: The Prophet does not speak from caprice; what he conveys is revelation, supporting the
+      passage’s insistence that prophetic speech derives wholly from God.
+    divergence: The Qurʾanic verses retain the Prophet as the recipient and conveyor, whereas this tract
+      collapses sender, message, and recipient at the level of ultimate existence.
+  - citation: Qurʾan 17:1
+    resonance: God is the acting subject who takes His servant by night, grounding prophetic mission in
+      divine initiative.
+    divergence: The verse preserves the servant’s distinct designation; the tract’s metaphysical rhetoric
+      denies independent being to such distinction.
+  - citation: 'Hadith: “Whoever knows himself knows his Lord”'
+    resonance: The saying supplies the treatise’s governing link between self-knowledge and knowledge
+      of God.
+    divergence: Its status as a Prophetic hadith is disputed, and the present passage gives it a strongly
+      nondual ontological interpretation rather than a merely ethical or spiritual one.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, when you offer one brief word of praise—“Praise be to God”—pause and notice the speaker,
+    the sound, and the praise as dependent gifts rather than possessions of a separate self.
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -81,3 +122,14 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: His Prophet is He, and His sending is He, and His word is He. He sends Himself with Himself
+  from Himself to Himself. There is no mediator nor any means other than He, and there is no difference
+  between the Sender, that by which He is sent, and the one to whom He is sent. The very existence of
+  the letters of praise is His existence alone—not His praise, nor His name, nor His named.
+abhyasa: Today, when you offer one brief word of praise—“Praise be to God”—pause and notice the speaker,
+  the sound, and the praise as dependent gifts rather than possessions of a separate self.
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'نبيُّه هو، ورسوله هو، ورسالته هو، وكلامه هو: أرسلَ نفسَه بنفسه من نفسه إلى نفسه، لا واسطة ولا
+  سبب غيره، ولا تفاوُت بين المرسِل والمرسَل به والمرسَل إليه. وجود حروف الثناء وجوده لا غير، لا ثناؤه
+  ولا اسمه ولا مُسمَّاه.'

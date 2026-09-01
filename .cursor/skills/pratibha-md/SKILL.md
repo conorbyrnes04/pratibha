@@ -180,3 +180,4 @@ Format:
 
 - `references/resonance-log.md`
 - `references/translation-decisions.md`
+- Full-work ingest (PD source, ≥25 units, ten heroes, mandala, TTS): `.cursor/skills/text-ingest/SKILL.md`

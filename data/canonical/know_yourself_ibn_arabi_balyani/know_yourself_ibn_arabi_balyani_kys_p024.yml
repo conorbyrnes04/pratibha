@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p024
-unit_label: 'Pearl #24'
-title: 'Pearl #24'
+unit_label: Self-Knowledge Does Not Require Annihilation
+title: Self-Knowledge Does Not Require Annihilation
 unit_type: teaching_passage
 thesis: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
   disclose itself directly.'
@@ -15,14 +15,28 @@ themes:
 source_excerpt: You are Him and He is you, without any of these imperfections. If you know your existence
   in this way, then you know God, and if not, then not. Most of those who claim to know God make the knowledge
   of God dependent on the passing away of existence and on the passing away of that passing away.
-translation_literal: You are Him and He is you, without any of these imperfections. If you know your existence
-  in this way, then you know God, and if not, then not. Most of those who claim to know God make the knowledge
-  of God dependent on the passing away of existence and on the passing away of that passing away.
-commentary: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the
-  insight disclose itself directly.'
+translation_literal: 'Thou art He, without one of these limitations. Then if thou know thine existence
+  thus, then thou knowest God; and if not, then not.
+
+
+  And most of “those who know God” make a ceasing of existence and the ceasing of that ceasing a condition
+  of attaining the knowledge of God, and that is an error and a clear oversight.'
+commentary: 'The passage presses its most contested claim: knowledge of the self is knowledge of the Lord
+  because the self has no independent existence standing beside God. “Thou art He” does not mean that
+  an individual creature becomes God, that God enters the creature, or that two beings fuse. Those are
+  precisely the spatial and causal “limitations” the treatise refuses. Its waḥdat al-wujūd argument is
+  instead that only divine Being is truly real; the apparently separate “I” is not a second existent needing
+  to be merged back into the One. On this basis it rejects a familiar Sufi sequence: first fanāʾ, the
+  passing-away of the self, then fanāʾ al-fanāʾ, the passing-away even of that experience. The author
+  calls this mistaken because extinction presumes that something independently exists to be extinguished.
+  Self-knowledge here is therefore not the production of a mystical state but the removal of an error
+  about ownership of existence. This is the risky metaphysical move of the Risāla: it safeguards absolute
+  divine oneness by denying real otherness, while its language can sound like an identity claim. Read
+  charitably, the claim concerns the source and reality of being, not the ego’s possession of divinity.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you say “my life” or “my achievement,” pause once and silently ask: “What in this
+  moment is truly mine by itself?” Then let the question loosen one act of self-possession without trying
+  to erase yourself.'
 sanskrit_devanagari: 'أنت هو، وهو أنت، بلا علَّة من هذه العلل. فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله.
   – وإلا فلا.
 
@@ -38,48 +52,66 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'أنت هو، وهو أنت، بلا علَّة من هذه العلل. فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا فلا.
+
+
+    وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء'
 - kind: translation
   label: Pratibha Translation
-  body: You are Him and He is you, without any of these imperfections. If you know your existence in this
-    way, then you know God, and if not, then not. Most of those who claim to know God make the knowledge
-    of God dependent on the passing away of existence and on the passing away of that passing away.
+  body: 'Thou art He, without one of these limitations. Then if thou know thine existence thus, then thou
+    knowest God; and if not, then not.
+
+
+    And most of “those who know God” make a ceasing of existence and the ceasing of that ceasing a condition
+    of attaining the knowledge of God, and that is an error and a clear oversight.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'Read this line as a contemplative pointer: pause interpretation for a moment and let the insight
-    disclose itself directly.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The passage presses its most contested claim: knowledge of the self is knowledge of the Lord
+    because the self has no independent existence standing beside God. “Thou art He” does not mean that
+    an individual creature becomes God, that God enters the creature, or that two beings fuse. Those are
+    precisely the spatial and causal “limitations” the treatise refuses. Its waḥdat al-wujūd argument
+    is instead that only divine Being is truly real; the apparently separate “I” is not a second existent
+    needing to be merged back into the One. On this basis it rejects a familiar Sufi sequence: first fanāʾ,
+    the passing-away of the self, then fanāʾ al-fanāʾ, the passing-away even of that experience. The author
+    calls this mistaken because extinction presumes that something independently exists to be extinguished.
+    Self-knowledge here is therefore not the production of a mystical state but the removal of an error
+    about ownership of existence. This is the risky metaphysical move of the Risāla: it safeguards absolute
+    divine oneness by denying real otherness, while its language can sound like an identity claim. Read
+    charitably, the claim concerns the source and reality of being, not the ego’s possession of divinity.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: وجود
+    definition: 'w-j-d, “to find, be present” -> the existence one takes to be one’s own -> more than
+      the default gloss “existence”: it is the disputed claim to independent reality.'
+  - term: فناء
+    definition: 'f-n-y, “to pass away, perish” -> the annihilation of supposed selfhood invoked by many
+      mystics -> more than simple destruction: a technical spiritual account the passage explicitly challenges.'
+  - term: فناء الفناء
+    definition: '“the passing-away of passing-away” -> the removal of awareness of one’s own annihilation
+      -> more than an intensified fanāʾ: it marks a debated second-order mystical attainment.'
+  - term: العُرَّاف
+    definition: 'ʿ-r-f, “to know, recognize” -> those reputed to know God -> more pointed than “gnostics”:
+      the phrase permits the author to criticize established mystical authorities.'
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Pratyabhijnahrdayam — Sutra 12
-    resonance: 'Both texts identify ignorance of one''s true nature as the root obscuration: Ibn Arabi''s
-      ''You are Him'' names the identity obscured by ego-imperfections, while Pratyabhijnahrdayam''s ''bewildered
-      by one''s own powers'' names the same veiling—mistaking the limited self for the universal Self
-      through forgetting authorship.'
-    divergence: Ibn Arabi emphasizes the direct non-dual identity (You are Him), while Pratyabhijnahrdayam
-      frames it as recognition of one's own creative agency (authorship of the fivefold act)—a shift from
-      union to sovereignty.
-    passage_id: pratyabhijnahrdayam.phr_012
-  - citation: Chāndogya Upaniṣad — Chāndogya Upaniṣad VI.1
-    resonance: 'Both passages point to a knowing that transcends ordinary perception by revealing essential
-      unity: the Chāndogya''s ''instruction that allows us to know the unknowable'' through ''all things
-      are essentially one'' mirrors Ibn Arabi''s direct disclosure of identity beyond conceptual limitation.'
-    divergence: The Upanishad frames this as meditative instruction leading to unified perception, while
-      Ibn Arabi presents it as immediate non-dual recognition that suspends the interpretive mind itself.
-    passage_id: chāndogya_upaniṣad.chu_vi_01
-  - citation: Heraclitus Fragments — Fragment 1
-    resonance: 'Both texts posit a universal principle (Logos, divine identity) that must be recognized
-      beyond individual reasoning: Heraclitus calls listeners to acknowledge unity through the Logos rather
-      than personal opinion, while Ibn Arabi dissolves the boundary between self and divine through direct
-      insight.'
-    divergence: Heraclitus emphasizes listening to an external universal principle, while Ibn Arabi collapses
-      subject-object distinction entirely—the insight is not about aligning with something external but
-      recognizing non-duality.
-    passage_id: heraclitus_fragments.hfr_p001
-  layer_provenance: generated_grounded
+  - citation: Qurʾan 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supports the treatise’s refusal
+      to place God within ordinary before-and-after or inside-and-outside relations.
+    divergence: The verse proclaims divine names; this passage draws the stronger ontological conclusion
+      that no independent self exists beside God.
+  - citation: 'Hadith: “Whoever knows himself knows his Lord”'
+    resonance: The treatise treats self-knowledge as the direct threshold of knowledge of God.
+    divergence: Though famous in Sufi writing, this report is not generally established as an authenticated
+      Prophetic hadith; the treatise gives it major doctrinal weight.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you say “my life” or “my achievement,” pause once and silently ask: “What in this
+    moment is truly mine by itself?” Then let the question loosen one act of self-possession without trying
+    to erase yourself.'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -91,3 +123,19 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: 'Thou art He, without one of these limitations. Then if thou know thine existence thus, then
+  thou knowest God; and if not, then not.
+
+
+  And most of “those who know God” make a ceasing of existence and the ceasing of that ceasing a condition
+  of attaining the knowledge of God, and that is an error and a clear oversight.'
+abhyasa: 'Today, when you say “my life” or “my achievement,” pause once and silently ask: “What in this
+  moment is truly mine by itself?” Then let the question loosen one act of self-possession without trying
+  to erase yourself.'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'أنت هو، وهو أنت، بلا علَّة من هذه العلل. فإن عرفتَ وجودك بهذه الصفة فقد عرفتَ الله. – وإلا
+  فلا.
+
+
+  وأكثر العُرَّاف أضافوا معرفة الله – تعالى – إلى فناء الوجود وفناء الفناء'

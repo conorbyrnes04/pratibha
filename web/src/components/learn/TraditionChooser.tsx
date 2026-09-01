@@ -115,23 +115,25 @@ export function TraditionChooser({ progress, hydrated, onSelectTradition }: Trad
           ))}
         </ul>
       </section>
-      <section className="pb-16">
-        <p className="mx-auto mb-4 max-w-4xl font-sans text-[10px] uppercase tracking-[0.18em] text-stone-500">
-          {t("learn.coming")}
-        </p>
-        <ul className="mx-auto grid max-w-4xl list-none gap-5 sm:grid-cols-2">
-          {coming.map((trail) => (
-            <TraditionCard
-              key={trail.id}
-              trail={trail}
-              progress={progress}
-              hydrated={hydrated}
-              disabled
-              onSelect={() => {}}
-            />
-          ))}
-        </ul>
-      </section>
+      {coming.length > 0 ? (
+        <section className="pb-16">
+          <p className="mx-auto mb-4 max-w-4xl font-sans text-[10px] uppercase tracking-[0.18em] text-stone-500">
+            {t("learn.coming")}
+          </p>
+          <ul className="mx-auto grid max-w-4xl list-none gap-5 sm:grid-cols-2">
+            {coming.map((trail) => (
+              <TraditionCard
+                key={trail.id}
+                trail={trail}
+                progress={progress}
+                hydrated={hydrated}
+                disabled
+                onSelect={() => {}}
+              />
+            ))}
+          </ul>
+        </section>
+      ) : null}
     </div>
   );
 }

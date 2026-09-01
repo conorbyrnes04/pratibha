@@ -1,5 +1,5 @@
 import { LayerContent } from "@/components/LayerContent";
-import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
+import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
 import { PratibhaText, ui } from "@/components/ui/PratibhaText";
 import { getVerse } from "@/lib/api";
 import { upsertJournalNote } from "@/lib/storage";
@@ -13,6 +13,7 @@ import { stripMarkdown } from "@shared/textPreview";
 import { useLocalSearchParams, router } from "expo-router";
 import { useEffect, useMemo, useState } from "react";
 import { ActivityIndicator, Pressable, ScrollView, TextInput, View, Keyboard } from "react-native";
+import * as Haptics from "expo-haptics";
 
 const TAB_ORDER: PratibhaLayerKind[] = [
   "translation",
@@ -31,20 +32,15 @@ function reflectionPrompt(item: VerseItem): string {
 }
 
 export default function PassageScreen() {
-  const params = useLocalSearchParams<{
-    id: string;
-    backTrackId?: string;
-    backStepId?: string;
-  }>();
+  const params = useLocalSearchParams<{ id: string }>();
   const [item, setItem] = useState<VerseItem | null>(null);
   const [loading, setLoading] = useState(true);
   const [activeLayer, setActiveLayer] = useState<PratibhaLayerKind>("translation");
   const [reflection, setReflection] = useState("");
   const [savedReflection, setSavedReflection] = useState(false);
+  const [showGuide, setShowGuide] = useState(false);
 
   const id = typeof params.id === "string" ? decodeURIComponent(params.id) : "";
-  const backTrackId = typeof params.backTrackId === "string" ? params.backTrackId : "";
-  const backStepId = typeof params.backStepId === "string" ? params.backStepId : "";
 
   useEffect(() => {
     if (!id) return;
@@ -105,12 +101,13 @@ export default function PassageScreen() {
     setReflection("");
     Keyboard.dismiss();
     setSavedReflection(true);
+    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
     setTimeout(() => setSavedReflection(false), 2000);
   }
 
   if (loading) {
     return (
-      <PratibhaScreen scroll={false}>
+      <PratibhaScreen scroll={false} edges={stackScreenEdges}>
         <ActivityIndicator color={colors.accent} />
       </PratibhaScreen>
     );
@@ -118,30 +115,14 @@ export default function PassageScreen() {
 
   if (!item) {
     return (
-      <PratibhaScreen>
+      <PratibhaScreen edges={stackScreenEdges}>
         <PratibhaText variant="soft">Passage not found.</PratibhaText>
       </PratibhaScreen>
     );
   }
 
   return (
-    <PratibhaScreen>
-      {backTrackId && backStepId ? (
-        <Pressable
-          style={{ marginBottom: 12 }}
-          onPress={() =>
-            router.push({
-              pathname: "/step/[trackId]/[stepId]",
-              params: { trackId: backTrackId, stepId: backStepId },
-            })
-          }
-        >
-          <PratibhaText variant="soft" style={{ color: colors.accentBright, fontSize: 14 }}>
-            ← Back to gate
-          </PratibhaText>
-        </Pressable>
-      ) : null}
-
+    <PratibhaScreen edges={stackScreenEdges}>
       <PratibhaText variant="label">{displayCollectionName(item.collection)}</PratibhaText>
       <PratibhaText variant="title" style={{ marginTop: 8, fontSize: 28 }}>
         {displayPassageTitle(item)}
@@ -150,30 +131,6 @@ export default function PassageScreen() {
         <PratibhaText variant="label" style={{ marginTop: 6, color: colors.muted2 }}>
           Section overview
         </PratibhaText>
-      ) : null}
-
-      {learningGuide ? (
-        <View style={[ui.card, ui.cardGold, { marginTop: 16 }]}>
-          <PratibhaText variant="eyebrow">Learning guide</PratibhaText>
-          <PratibhaText variant="body" style={{ marginTop: 10, fontSize: 15 }}>
-            <PratibhaText variant="heading" style={{ fontSize: 15 }}>
-              Core idea:{" "}
-            </PratibhaText>
-            {learningGuide.coreIdea}
-          </PratibhaText>
-          <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 14 }}>
-            <PratibhaText variant="heading" style={{ fontSize: 14 }}>
-              Why it matters:{" "}
-            </PratibhaText>
-            {learningGuide.why}
-          </PratibhaText>
-          <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 14 }}>
-            <PratibhaText variant="heading" style={{ fontSize: 14 }}>
-              Practice now:{" "}
-            </PratibhaText>
-            {learningGuide.practice}
-          </PratibhaText>
-        </View>
       ) : null}
 
       <ScrollView
@@ -192,7 +149,10 @@ export default function PassageScreen() {
                 backgroundColor: "rgba(240,201,121,0.08)",
               },
             ]}
-            onPress={() => setActiveLayer(layer.kind)}
+          onPress={() => {
+            void Haptics.selectionAsync();
+            setActiveLayer(layer.kind);
+          }}
           >
             <PratibhaText
               style={[
@@ -218,17 +178,43 @@ export default function PassageScreen() {
           style={ui.button}
           onPress={() =>
             router.push({
-              pathname: "/(tabs)/chat",
+              pathname: "/ask",
               params: { verse_id: item._id, mode: "explain", q: "Guide me through this passage." },
-            })
+            } as never)
           }
         >
           <PratibhaText style={ui.buttonText}>Ask about this</PratibhaText>
         </Pressable>
-        <Pressable style={ui.buttonGhost} onPress={() => router.push("/(tabs)/journal")}>
-          <PratibhaText style={ui.buttonGhostText}>Open journal</PratibhaText>
+        <Pressable style={ui.buttonGhost} onPress={() => router.push("/(tabs)/manuscript" as never)}>
+          <PratibhaText style={ui.buttonGhostText}>Mine</PratibhaText>
         </Pressable>
       </View>
+
+      {learningGuide ? (
+        <Pressable
+          style={[ui.card, { marginTop: 16 }]}
+          onPress={() => setShowGuide((v) => !v)}
+        >
+          <PratibhaText variant="eyebrow">{showGuide ? "Hide guide" : "Study guide"}</PratibhaText>
+          {showGuide ? (
+            <View>
+              <PratibhaText variant="body" style={{ marginTop: 10, fontSize: 15 }}>
+                {learningGuide.coreIdea}
+              </PratibhaText>
+              <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 14 }}>
+                {learningGuide.why}
+              </PratibhaText>
+              <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 14 }}>
+                {learningGuide.practice}
+              </PratibhaText>
+            </View>
+          ) : (
+            <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 14 }}>
+              Core idea, why it matters, and a practice — tap to open.
+            </PratibhaText>
+          )}
+        </Pressable>
+      ) : null}
 
       <View style={[ui.card, { marginTop: 16 }]}>
         <PratibhaText variant="eyebrow">Save reflection</PratibhaText>

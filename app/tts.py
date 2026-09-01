@@ -75,8 +75,8 @@ _ROOM_ACCENTS: dict[str, tuple[str, ...]] = {
 _ROOM_PATTERNS: list[tuple[re.Pattern[str], VoiceRoom]] = [
     (re.compile(r"yoruba|johnson", re.I), "yoruba"),
     (re.compile(r"eastman|zitkala|soul of the indian|old indian legends|dakota", re.I), "dakota"),
-    (re.compile(r"ecclesiastes|qoheleth|zohar|yetzirah|kabbalah", re.I), "hebrew"),
-    (re.compile(r"rumi|rūmī|ibn.?arabi|balyani|mathnaw", re.I), "sufi"),
+    (re.compile(r"ecclesiastes|qoheleth|psalm|tehillim|zohar|yetzirah|kabbalah", re.I), "hebrew"),
+    (re.compile(r"rumi|rūmī|ibn.?arabi|balyani|mathnaw|attar|mantiq|conference.?of.?the.?birds|hujwir|kashf", re.I), "sufi"),
     (
         re.compile(
             r"tao|dao.?de|zhuang|chuang|analect|confucius|lunyu|zhongyong|"
@@ -97,7 +97,8 @@ _ROOM_PATTERNS: list[tuple[re.Pattern[str], VoiceRoom]] = [
     (
         re.compile(
             r"eckhart|dionysius|areopagite|cloud.?of.?unknowing|"
-            r"gospel.?of.?thomas|course in miracles|acim",
+            r"gospel.?of.?thomas|gospel.?of.?mary|logia of jesus|"
+            r"new.?testament.?logia|course in miracles|acim",
             re.I,
         ),
         "unmarked",
@@ -108,7 +109,8 @@ _ROOM_PATTERNS: list[tuple[re.Pattern[str], VoiceRoom]] = [
             r"milarepa|tilopa|patanjali|yoga.?s[uū]tra|hatha.?yoga|siva.?samhita|"
             r"vijnana.?bhairava|spanda|siva.?s[uū]tra|pratyabhij|tantras|"
             r"yogin[iī]|upanishad|gita|astavakra|mandukya|gaudapada|"
-            r"katha|chandogya|mundaka|brihad|isavasya|svetasvatara",
+            r"katha|chandogya|mundaka|brihad|isavasya|svetasvatara|"
+            r"lalla|lal.?ded|lalleshwari|vakyani|vākyāni",
             re.I,
         ),
         "indic",

@@ -1,0 +1,292 @@
+path_id: lament_and_praise
+work_id: psalms_tehillim
+work_title: Psalms (Tehillim)
+title: "Lament and Praise"
+tradition: Psalms (Tehillim)
+covers: "Psalms 130, 42, 51, 23, 46, 103, 139, 150 — address, lament, then praise"
+status: complete
+
+# Living speech as address (model: the-horse-of-conversation), not apophasis,
+# not sayings. Cataphatic after divine-darkness and the-living-saying.
+# Off-spine until wired to christian-mysticism. Not ACIM.
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  This walk is address. Do not turn a psalm into a mood, a diagnosis, or a silence.
+
+premise: >
+  After unknowing and after the living saying, the mouth still has to speak to
+  someone. This walk is cataphatic: you address a You from the depths, through
+  lament, into praise. You are not collecting favorite psalms. You are learning
+  to call, to wait, to ask for a created heart, to be accompanied in the valley,
+  to drop and know, to bless without flattery, to stop fleeing, and to let breath
+  be membership in the choir.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+  - "Speak to a You. Do not improve the feeling and call it prayer."
+
+gates:
+  - gate_id: gate_0_depths
+    name: "Out of the depths"
+    theme: "Lament that never reaches a You is still self-talk."
+    why_first: >
+      If you skip address, later praise is mood-management and later stillness
+      is a technique. The Psalter begins the walk from the deeps, not from a
+      hymn you already know how to sing.
+    stations:
+      - station: 1
+        unit_id: psalms_tehillim.psalm_130
+        reference: "Psalm 130:1–8"
+        title: "Out of the Depths"
+        opening_question: "When I pray, am I reporting a feeling to myself, or calling a You from the actual deep?"
+        transmission: >
+          Prayer that never reaches a You is a diary with better lighting. The
+          deeps — ma'amaqqim, cousin of tehom — are not a bad week. You call
+          from there. The difficulty is that you would rather report how you
+          feel, or diagnose the depth as if naming it were already the work.
+          Lament without address is still self-talk. Forgiveness is with the One
+          you call, so that you may be feared: pardon founds reverence, because
+          a scorekeeper would leave no one standing. Waiting is doubled — more
+          than watchmen for the morning, watchmen for the morning. Dawn is
+          certain and still watched-for. That is what hope feels like. Do not
+          decorate the depth. Call from it.
+        contemplation: "Hope is watchman-waiting for a word, not for a mood."
+        gate_practice: >
+          If you are in a depth, do not decorate it. Call from it once, plainly,
+          to a You — one sentence, spoken aloud. Then practice watchman-waiting:
+          sit the last hour of night, or stay up for literal dawn. Hope for a
+          word, not for a mood.
+        passed_when: "You can tell a feeling-report from a call, and you have made one call from the actual deep."
+
+  - gate_id: gate_1_deep_calls
+    name: "Deep calls to deep"
+    theme: "Longing is correspondence between deeps, not a vacancy report."
+    why_first: >
+      Address has been opened. Now the thirst that feels like absence has to be
+      named as a call, or later gates will treat desire as proof that God left.
+    stations:
+      - station: 2
+        unit_id: psalms_tehillim.psalm_042
+        reference: "Psalm 42"
+        title: "Deep Calls to Deep"
+        opening_question: "When I thirst, do I take the thirst as proof that God is gone?"
+        transmission: >
+          Thirst is already theology. The deer is not decoration; the nephesh —
+          throat-being — pants. You will want to hear the thirst as proof that
+          God has left. The psalm refuses that. Deep calls to deep at the voice
+          of your channels: chaos-water is correspondence, abyss answering abyss,
+          while breakers pass over. Longing is the call between deeps, not a
+          vacancy report. The genius is the split self: you lecture your own
+          being to wait, then admit it is still down, then lecture again. Memory
+          of the festival is fuel that also burns. Forgetting and waiting share
+          the same poem. The mystical psalm is not the one that has arrived. It
+          is the one that still asks when it will see the face, and teaches its
+          own soul to wait anyway.
+        contemplation: "The downcast being is lectured, not upgraded into a theory of absence."
+        gate_practice: >
+          When thirst for God becomes a mood you cannot use, do not upgrade it
+          to a theory. Drink a glass of water slowly. Then speak to your own
+          downcast being out loud, once: wait. Do not require it to obey on the
+          first asking.
+        passed_when: "You can let thirst be a call rather than a proof of absence, and you have told your being to wait once without demanding it cheer up."
+
+  - gate_id: gate_2_clean_heart
+    name: "A created heart"
+    theme: "Shame watches the old heart fail. Creation asks for a new one."
+    why_first: >
+      Lament that stays at thirst can still treat guilt as a project. This gate
+      blocks shame-as-work before the valley is walked.
+    stations:
+      - station: 3
+        unit_id: psalms_tehillim.psalm_051
+        reference: "Psalm 51"
+        title: "Create a Clean Heart"
+        opening_question: "Am I using shame as the spiritual work, or asking for a heart that does not yet exist?"
+        transmission: >
+          Shame is not the spiritual work. It is the padded self watching itself
+          fail and calling the watching holiness. A clean heart is not the old
+          one polished. The verb is bara — create — the Genesis verb — because
+          the psalmist does not believe innocence can be buffed out of the
+          present heart. Against you alone is not a denial of harmed neighbors;
+          it is the claim that the real fracture is the Face. Truth in the
+          covered places: God wants emet where you are most padded. Do not throw
+          me out is hunger spoken from guilt. A willing spirit is generosity of
+          the inner life restored, not grit. Ask for a created heart, not a
+          repaired reputation.
+        contemplation: "Bara, not polish. The old heart is not the material."
+        gate_practice: >
+          Name one covered place where you have been padding the truth. Do not
+          advertise the confession. Ask aloud for a created heart, not a repaired
+          reputation. Do one unseen repair toward anyone harmed.
+        passed_when: "You can tell shame-watching from asking for creation, and you have done one unseen repair."
+
+  - gate_id: gate_3_with_me
+    name: "You are with me"
+    theme: "Comfort is contact in the valley, not evacuation from it."
+    why_first: >
+      After the created heart is asked for, the walk still goes through shadow.
+      If you skip this, later dropping will look like the valley having ended.
+    stations:
+      - station: 4
+        unit_id: psalms_tehillim.psalm_023
+        reference: "Psalm 23"
+        title: "You Are With Me"
+        opening_question: "When I ask for comfort, am I asking the valley to end, or for a You inside it?"
+        transmission: >
+          The first verb is not I follow. It is I do not lack. You will want
+          comfort to mean the valley ends. The psalm places the You inside it.
+          Theology becomes address when the shadow is close: he was shepherding;
+          now you are with me. Rod and staff comfort because they are contact,
+          not because pain has been cancelled. The table is set in the face of
+          foes — nourishment is not postponed until the enemies leave. Loyalty
+          hunts the wanderer down. Remaining in the house is remaining in the
+          presence that made lack impossible at the start. Comfort is
+          accompaniment, not evacuation.
+        contemplation: "The You arrives in the valley. The table is set while foes are still there."
+        gate_practice: >
+          Walk a familiar stretch as if you were being led, not driving the day.
+          When a lack-thought appears, name it, then ask whether you are in the
+          valley or only afraid of it. Eat one meal without a screen, as a table
+          already set — including if the day is still hard.
+        passed_when: "You can tell comfort-as-evacuation from comfort-as-contact, and you have taken one meal as a table already set."
+
+  - gate_id: gate_4_drop_know
+    name: "Drop, and know"
+    theme: "You know by dropping into an addressed God, not by emptying the mind."
+    why_first: >
+      Presence in the valley is not yet the still point. This gate is the
+      cataphatic hinge: stillness here is not the darkness walk's unknowing.
+    stations:
+      - station: 5
+        unit_id: psalms_tehillim.psalm_046
+        reference: "Psalm 46"
+        title: "Drop, and Know"
+        opening_question: "When I go still, am I emptying the mind, or dropping my grip so that an addressed God can be known?"
+        transmission: >
+          Drop, and know. The line is harpu u-de'u: slack the grip, and know
+          that I am God. You will want this stillness to be Dionysian unknowing
+          — emptying the mind, stripping names, remaining in dazzling darkness.
+          That was a different walk. Here knowledge is what happens when the
+          hands stop saving the mountains, and the One who speaks is addressed:
+          I am God. The still point is not stoic temperament and not a seminar.
+          It is presence in a place — a river's channels gladden a city because
+          God is in her midst. You know by dropping into God who is spoken to,
+          not by erasing the speaker. Seeing light in Light is the same
+          architecture: knowing is participation, not a private lamp, and not a
+          cloud of unknowing.
+        contemplation: "Knowledge is the fruit of dropping, not its prerequisite — and the dropped-into is a You."
+        gate_practice: >
+          Clench both fists for twenty seconds as if holding the mountains up.
+          Drop. Say aloud: know that I am God. Stay dropped for ten breaths.
+          Then cancel one small war you were about to continue by message.
+        passed_when: "You can tell emptying-the-mind from dropping-into-an-addressed-God, and you have dropped the fists once and cancelled one small war."
+
+  - gate_id: gate_5_bless
+    name: "Bless, O my being"
+    theme: "Praise is memory of dealings, commanded into the organs — not flattery."
+    why_first: >
+      After knowing by dropping, praise can still be mistaken for a mood or a
+      compliment. The nephesh has to be commanded before the Face is named as
+      inescapable.
+    stations:
+      - station: 6
+        unit_id: psalms_tehillim.psalm_103
+        reference: "Psalm 103"
+        title: "Bless YHWH, O My Being"
+        opening_question: "When I praise, am I flattering, managing a mood, or commanding my being to remember?"
+        transmission: >
+          Praise is not flattery and not a tool for managing your mood. The
+          nephesh is commanded to bless, then the inward parts, as if praise
+          must reach the organs. The spiritual disease is forgetting the
+          dealings. The list that follows is a memory-cure: forgive, heal,
+          redeem from the Pit, crown with hesed. Forgiveness is made geographic
+          — heavens above earth, east from west — not a feeling you talk
+          yourself into. The same God who towers also remembers that you are
+          dust. Mysticism here is refusing to forget, including that you are
+          formed and still crowned. Blessing is an act of memory toward a You,
+          not a compliment you hope will improve the weather.
+        contemplation: "Do not forget. Dust-knowledge and crowning share one God."
+        gate_practice: >
+          Speak to your own inward parts: do not forget. Name five dealings,
+          including one that hurts. End with 'he knows our forming.' Let
+          dust-knowledge cancel one self-punishment that is not the same as
+          repentance.
+        passed_when: "You can tell flattery and mood-work from commanded memory, and you have named five dealings including one that hurts."
+
+  - gate_id: gate_6_no_flee
+    name: "Where can I flee"
+    theme: "Inescapable presence is first siege, then thanks — not a camera."
+    why_first: >
+      Blessing that still treats the Face as a watcher you could hide from has
+      not finished the address. This gate ends the privacy-strategy before
+      breath is allowed to be the choir.
+    stations:
+      - station: 7
+        unit_id: psalms_tehillim.psalm_139
+        reference: "Psalm 139"
+        title: "Where Can I Flee"
+        opening_question: "When I hear that I am known, do I hear a camera, or a weaver who did not leave?"
+        transmission: >
+          You will hear omniscience as surveillance: a watcher who has you, a
+          privacy-strategy that failed. The psalm begins there. Behind and
+          before you have enclosed me. Where can I flee from your face is the
+          last hiding-place, and it fails in every direction — heavens, Sheol,
+          dawn-wings, far sea. Darkness will not crush you into hiding; night
+          shines for this You. Then the map drops into the body: kidneys
+          acquired, woven in the womb, the golem seen. The Face that fills the
+          vertical cosmos also read the unformed days. The terror becomes
+          thanks: I awake, and I am still with you. Inescapable presence is
+          first siege and then clinging. It is not a camera. It is a weaver who
+          did not leave when you tried to.
+        contemplation: "The failed flight is the beginning of thanks, not the end of dignity."
+        gate_practice: >
+          Try, for one minute, to hide one thought as if the Face were a person
+          in another room. Then admit the failure without self-hatred. Thank the
+          weaver for one particular of your body. Wake tomorrow with 'I am still
+          with you' before the phone.
+        passed_when: "You can tell surveillance from inescapable weaving, and you have thanked the weaver for one particular of the body."
+
+  - gate_id: gate_7_all_that_breathes
+    name: "All that breathes"
+    theme: "This walk ends in breath that praises, not in silence."
+    why_first: >
+      The darkness walk ended in stripping. If you import that ending here, the
+      Psalter's last word is wasted. Breath is the membership card.
+    stations:
+      - station: 8
+        unit_id: psalms_tehillim.psalm_150
+        reference: "Psalm 150"
+        title: "Let All That Breathes"
+        opening_question: "Am I waiting for silence as the mature end, or letting this breath be already in the choir?"
+        transmission: >
+          The darkness walk ended in stripping and poverty. This walk ends in
+          breath that praises. You will want the last gate to be silence — the
+          mature mystical genre, quieter than the drum. The Psalter's last word
+          is instrumentation: shofar, harp, drum, dance, cymbals of shout. The
+          body and the workshop are conscripted. Kol ha-neshamah — all that has
+          breath — tehillah. Neshamah is Genesis-breath. If you are breathing,
+          you are already in the choir. The mystical is not a quieter genre than
+          the drum. It is the claim that breath itself is the membership card.
+          Praise is not the mature correction of wonder. It is wonder that still
+          has milk on its mouth. Praise Yah.
+        contemplation: "Breath is already membership. Silence was a different path's last word."
+        gate_practice: >
+          Use an actual sound today — a clap, a hummed tone, a shofar if you
+          have one, a pipe, a voice. Do not make it pretty. Let breath be praise
+          for ten seconds. Then return to ordinary air as if it were still
+          membership.
+        passed_when: "You can let this walk end in breath that praises rather than in silence, and you have made one unpretty sound as membership."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    Complete as a Psalms walk: address, lament, then praise. Off-spine until
+    wired to christian-mysticism after divine-darkness and the-living-saying —
+    the cataphatic mouth those tracks do not supply. Do not fold ACIM into this
+    architecture. Do not import the darkness walk's last word of silence back
+    onto breath.
+  next_gates: []

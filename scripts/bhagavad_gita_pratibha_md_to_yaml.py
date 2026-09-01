@@ -19,6 +19,32 @@ import yaml
 
 HEADING_RE = re.compile(r"(?m)^##\s+(.+?)\s*$")
 SUBHEADING_RE = re.compile(r"(?m)^###\s+(.+?)\s*$")
+_META_LINE_RE = re.compile(
+    r"(?i)^(?:\*\*)?(?:"
+    r"corpus entry|"
+    r"sanskrit basis|"
+    r"english layers|"
+    r"units:\s*\d|"
+    r"chapter:\s*\d|"
+    r"sanskrit:\s*devanagari|"
+    r"pratibha[āa]? corpus entry"
+    r")"
+)
+
+
+def _is_editorial_meta_line(line: str) -> bool:
+    stripped = re.sub(r"\*+", "", line).strip()
+    if _META_LINE_RE.match(stripped):
+        return True
+    if re.match(r"(?i)^one unit per brief chunk\b", stripped):
+        return True
+    if re.search(r"(?i)taken verbatim from", stripped) and re.search(
+        r"(?i)devanagari|iast|brief", stripped
+    ):
+        return True
+    if re.match(r"(?i)^#\s+pratibha\b", line.strip()):
+        return True
+    return False
 
 
 def _clean(s: str) -> str:
@@ -28,7 +54,7 @@ def _clean(s: str) -> str:
         line = re.sub(r"[ \t]+", " ", raw).rstrip()
         if re.match(r"^\s*---+\s*$", line):
             continue
-        if "Pratibha corpus entry" in line:
+        if "Pratibha corpus entry" in line or _is_editorial_meta_line(line):
             continue
         lines.append(line)
     s = "\n".join(lines)

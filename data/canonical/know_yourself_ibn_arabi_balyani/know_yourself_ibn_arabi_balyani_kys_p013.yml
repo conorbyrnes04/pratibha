@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p013
-unit_label: 'Pearl #13'
-title: 'Pearl #13'
+unit_label: Revelation Has No Sender Apart from God
+title: Revelation Has No Sender Apart from God
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
   passing content.'
@@ -14,14 +14,27 @@ themes:
 source_excerpt: He sent Himself from Himself, through Himself to Himself. There is no intermediary or
   means other than Him. There is no difference between the sender, that which is sent and the one to whom
   it is sent. The very existence of the prophetic message is His existence.
-translation_literal: He sent Himself from Himself, through Himself to Himself. There is no intermediary
-  or means other than Him. There is no difference between the sender, that which is sent and the one to
-  whom it is sent. The very existence of the prophetic message is His existence.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
-  the passing content.'
+translation_literal: 'His Prophet is He, His messenger is He, His message is He, and His word is He: He
+  sends Himself by Himself, from Himself to Himself. There is no intermediary and no means other than
+  He, and no difference between the Sender, that which is sent, and the one to whom it is sent. The existence
+  of the letters of praise is His existence alone: there is no other—neither His praise, nor His name,
+  nor His named.'
+commentary: 'The passage presses divine unity into the event of revelation itself. Prophethood, messenger,
+  message, speech, sender, and recipient cannot finally stand as independently existing terms alongside
+  God. In the idiom of waḥdat al-wujūd, their apparent plurality is not a set of realities competing with
+  the One Reality; it is the One’s self-disclosure. Thus self-knowledge is knowledge of the Lord because
+  the self one takes to be an autonomous knower, hearer, or recipient has no separate being from which
+  to encounter God as an object. God is said to send Himself to Himself: revelation is Reality making
+  Reality known through the forms of speech, prophecy, and reception. The contested move is unmistakable.
+  Classical theology ordinarily safeguards distinctions between God, the angelic messenger, the prophet,
+  divine speech, and the human hearer. Balyānī’s compressed formulation does not merely connect these
+  by divine causality; it denies that their difference amounts to a second existence. Read charitably,
+  this is not a claim that historical distinctions vanish at the level of practice or law, but that they
+  have no self-subsisting ontological standing. Its danger, and its force, lie in refusing to let even
+  sacred mediation become a veil over the sole Reality.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you receive a word of guidance or correction, pause before claiming it as merely
+  ‘from me’ or ‘from another,’ and silently ask: what dependence on God makes this hearing possible?'
 sanskrit_devanagari: 'نبيُّه هو، ورسوله هو، ورسالته هو، وكلامه هو: أرسلَ نفسَه بنفسه من نفسه إلى نفسه،
   لا واسطة ولا سبب غيره، ولا تفاوُت بين المرسِل والمرسَل به والمرسَل إليه. وجود حروف الثناء وجوده لا غير،
   لا ثناؤه ولا اسمه ولا مُسمَّاه.'
@@ -34,48 +47,72 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'نبيُّه هو، ورسوله هو، ورسالته هو، وكلامه هو: أرسلَ نفسَه بنفسه من نفسه إلى نفسه، لا واسطة ولا
+    سبب غيره، ولا تفاوُت بين المرسِل والمرسَل به والمرسَل إليه. وجود حروف الثناء وجوده لا غير، لا ثناؤه
+    ولا اسمه ولا مُسمَّاه.'
 - kind: translation
   label: Pratibha Translation
-  body: He sent Himself from Himself, through Himself to Himself. There is no intermediary or means other
-    than Him. There is no difference between the sender, that which is sent and the one to whom it is
-    sent. The very existence of the prophetic message is His existence.
+  body: 'His Prophet is He, His messenger is He, His message is He, and His word is He: He sends Himself
+    by Himself, from Himself to Himself. There is no intermediary and no means other than He, and no difference
+    between the Sender, that which is sent, and the one to whom it is sent. The existence of the letters
+    of praise is His existence alone: there is no other—neither His praise, nor His name, nor His named.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
-    passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The passage presses divine unity into the event of revelation itself. Prophethood, messenger,
+    message, speech, sender, and recipient cannot finally stand as independently existing terms alongside
+    God. In the idiom of waḥdat al-wujūd, their apparent plurality is not a set of realities competing
+    with the One Reality; it is the One’s self-disclosure. Thus self-knowledge is knowledge of the Lord
+    because the self one takes to be an autonomous knower, hearer, or recipient has no separate being
+    from which to encounter God as an object. God is said to send Himself to Himself: revelation is Reality
+    making Reality known through the forms of speech, prophecy, and reception. The contested move is unmistakable.
+    Classical theology ordinarily safeguards distinctions between God, the angelic messenger, the prophet,
+    divine speech, and the human hearer. Balyānī’s compressed formulation does not merely connect these
+    by divine causality; it denies that their difference amounts to a second existence. Read charitably,
+    this is not a claim that historical distinctions vanish at the level of practice or law, but that
+    they have no self-subsisting ontological standing. Its danger, and its force, lie in refusing to let
+    even sacred mediation become a veil over the sole Reality.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: نبيُّه
+    definition: 'from n-b-ʾ, ‘to announce’ or ‘bear news’ -> the prophet is named as God’s own prophetic
+      disclosure -> more than the default gloss ‘His prophet’: it destabilizes the prophet as an independently
+      existing bearer of a message.'
+  - term: رسالته
+    definition: from r-s-l, ‘to send forth’ -> God’s message or sending is identified with Him -> not
+      merely information delivered from one being to another, but the divine act of self-manifestation.
+  - term: واسطة
+    definition: from w-s-ṭ, ‘middle, intermediary’ -> every mediating link is denied independent ultimacy
+      -> not simply a practical go-between, but a supposed ontological interval between God and God’s
+      disclosure.
+  - term: مُسمَّاه
+    definition: the ‘named,’ from s-m-w/s-m, the object designated by a name -> name and named are refused
+      separate being beside God -> missed by ‘thing named,’ which can obscure the critique of reifying
+      linguistic distinctions.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Siva Sutra — Śāktopāya
-    resonance: 'Both texts make attention itself the primary instrument of knowledge: Ibn Arabi''s return
-      of attention to the knower (rather than content) structurally mirrors the Siva Sutra''s equation
-      of sustained attention with knowledge itself. In both, the shift is from what is known to the quality
-      of knowing.'
-    divergence: Ibn Arabi frames this as a reflexive movement of the divine Self (Himself to Himself),
-      while the Siva Sutra treats attention as a yogic practice accessible to the practitioner; one is
-      metaphysical circularity, the other is methodological discipline.
-    passage_id: siva_sutra.ss_ii_12
-  - citation: Mandukya Upanishad and Gaudapada Karika — Verses 8–12 · Om and the Fourfold Correspondence
-    resonance: 'Both passages establish a correspondence between an inner principle (the Self/Atman) and
-      a mediating form (Om''s four quarters, or the triadic self-sending): each uses structural analysis
-      to map the knower onto a symbolic system that enables self-inquiry.'
-    divergence: Ibn Arabi's self-sending is a single reflexive act of divine consciousness, while the
-      Mandukya uses phonetic correspondence as an analytical tool to stabilize the mind in meditation;
-      one is ontological, the other is epistemological.
-    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_010
-  - citation: Yoga Spandakarika — Third Flow
-    resonance: 'Both texts describe clarity arising through intensified attention directed inward: the
-      Yoga Spandakarika''s ardent striving toward the supreme tremor parallels Ibn Arabi''s inward return
-      of attention, where effort and focus dissolve obscuration.'
-    divergence: Ibn Arabi emphasizes the reflexive nature of attention (returning to the knower), while
-      the Yoga Spandakarika frames it as striving toward an external-yet-inner sacred principle; the former
-      is self-referential, the latter is devotional.
-    passage_id: yoga_spandakarika.sp_36
-  layer_provenance: generated_grounded
+  - citation: Qur’an 4:170
+    resonance: The Qur’an calls Muḥammad God’s messenger who brings the truth from his Lord, grounding
+      revelation in divine initiative.
+    divergence: The verse retains the ordinary relation of Lord, messenger, and addressed people; this
+      passage collapses their independent ontological standing into the One.
+  - citation: Qur’an 42:51
+    resonance: Revelation is described as God speaking through modes that include a messenger sent by
+      His permission.
+    divergence: Its articulated modes protect mediation within revelation, whereas the present text declares
+      no intermediary or means other than God.
+  - citation: Qur’an 57:3
+    resonance: God is ‘the First and the Last, the Outward and the Inward,’ a formula underlying this
+      treatise’s non-dual language.
+    divergence: The Qur’anic proclamation need not entail that prophet, message, and recipient are simply
+      God in the strong ontological sense asserted here.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you receive a word of guidance or correction, pause before claiming it as merely
+    ‘from me’ or ‘from another,’ and silently ask: what dependence on God makes this hearing possible?'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -87,3 +124,16 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: 'His Prophet is He, His messenger is He, His message is He, and His word is He: He sends
+  Himself by Himself, from Himself to Himself. There is no intermediary and no means other than He, and
+  no difference between the Sender, that which is sent, and the one to whom it is sent. The existence
+  of the letters of praise is His existence alone: there is no other—neither His praise, nor His name,
+  nor His named.'
+abhyasa: 'Today, when you receive a word of guidance or correction, pause before claiming it as merely
+  ‘from me’ or ‘from another,’ and silently ask: what dependence on God makes this hearing possible?'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'نبيُّه هو، ورسوله هو، ورسالته هو، وكلامه هو: أرسلَ نفسَه بنفسه من نفسه إلى نفسه، لا واسطة ولا
+  سبب غيره، ولا تفاوُت بين المرسِل والمرسَل به والمرسَل إليه. وجود حروف الثناء وجوده لا غير، لا ثناؤه
+  ولا اسمه ولا مُسمَّاه.'
+tts_key: true

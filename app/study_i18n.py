@@ -26,7 +26,33 @@ LOCALES = {
 
 SOURCE_KINDS = frozenset({"original", "iast"})
 VERSE_BODY_KINDS = frozenset({"translation", "commentary", "practice"})
-_CHUNK_CHARS = 7000
+# Study layers the reader actually sees when a verse is opened. Everything else
+# (key terms, resonances, themes) is translated after these succeed.
+CORE_KINDS = frozenset({
+    "title",
+    "thesis",
+    "translation",
+    "commentary",
+    "practice",
+    "quote",
+    "teaching",
+    "key_idea",
+    "misconception",
+    "journal",
+    "integration",
+    "orientation",
+    "chat_prompt",
+    "focus",
+    "outcome",
+    "description",
+    "arc",
+    "lede",
+    "short_title",
+})
+SKIP_KINDS = frozenset({"original", "iast", "appendix", "provenance"})
+_CHUNK_CHARS = 3200
+_TRANSLATE_TIMEOUT_S = 45.0
+_TRANSLATE_MAX_TOKENS = 5000
 
 _CACHE_DIR = Path(__file__).resolve().parent.parent / "data" / "cache" / "study_i18n"
 _memory: dict[str, str] = {}
@@ -104,6 +130,7 @@ Rules:
 - Do not invent claims. Commentary must stay a philosophical claim, not a restatement of the translation.
 - Practice stays an instruction the reader can do today.
 - Titles stay titles: same length and pedagogical force, not explanations.
+- Hero quotes (`quote` keys) stay one breath: same length and force, no added explanation.
 - Key-term heads that are already IAST or source script stay as they are; translate the gloss.
 - Citations stay in scholarly form; translate the resonance and divergence sentences.
 - Do not translate source-script or IAST-only strings if they appear.
@@ -121,8 +148,8 @@ async def translate_fields(locale: str, fields: dict[str, str]) -> dict[str, str
         text = (value or "").strip()
         if not text:
             continue
-        kind = key.split(":", 1)[0] if ":" in key else key
-        if kind in SOURCE_KINDS:
+        kind = _field_kind(key)
+        if kind in SKIP_KINDS or kind in SOURCE_KINDS:
             resolved[key] = text
             continue
         cache_key = _cache_key(locale, kind, text)
@@ -136,7 +163,7 @@ async def translate_fields(locale: str, fields: dict[str, str]) -> dict[str, str
         return resolved
 
     translated: dict[str, str] = {}
-    for chunk in _chunks(pending):
+    for chunk in _priority_chunks(pending):
         translated.update(await _translate_chunk(locale, chunk))
 
     for key, source in pending.items():
@@ -144,10 +171,25 @@ async def translate_fields(locale: str, fields: dict[str, str]) -> dict[str, str
         if not text:
             resolved[key] = source
             continue
-        kind = key.split(":", 1)[0] if ":" in key else key
+        kind = _field_kind(key)
         _write_cache(_cache_key(locale, kind, source), text)
         resolved[key] = text
     return resolved
+
+
+def _field_kind(key: str) -> str:
+    return key.split(":", 1)[0] if ":" in key else key
+
+
+def _is_core(key: str) -> bool:
+    return _field_kind(key) in CORE_KINDS
+
+
+def _priority_chunks(pending: dict[str, str]) -> list[dict[str, str]]:
+    """Core study layers first so a huge key-term dump cannot starve the verse."""
+    core = {key: text for key, text in pending.items() if _is_core(key)}
+    rest = {key: text for key, text in pending.items() if key not in core}
+    return _chunks(core) + _chunks(rest)
 
 
 def _chunks(pending: dict[str, str]) -> list[dict[str, str]]:
@@ -167,20 +209,36 @@ def _chunks(pending: dict[str, str]) -> list[dict[str, str]]:
     return chunks
 
 
+async def _translate_once(locale: str, pending: dict[str, str]) -> dict[str, str]:
+    raw = await smart_chat(
+        [
+            {"role": "system", "content": _system_prompt(locale)},
+            {"role": "user", "content": json.dumps(pending, ensure_ascii=False)},
+        ],
+        temperature=0.2,
+        max_tokens=_TRANSLATE_MAX_TOKENS,
+        timeout=_TRANSLATE_TIMEOUT_S,
+    )
+    return _parse_object(raw)
+
+
 async def _translate_chunk(locale: str, pending: dict[str, str]) -> dict[str, str]:
     try:
-        raw = await smart_chat(
-            [
-                {"role": "system", "content": _system_prompt(locale)},
-                {"role": "user", "content": json.dumps(pending, ensure_ascii=False)},
-            ],
-            temperature=0.2,
-            max_tokens=3500,
-        )
-        return _parse_object(raw)
+        parsed = await _translate_once(locale, pending)
     except Exception:
         logger.exception("study i18n failed for %s (%s fields)", locale, len(pending))
-        return {}
+        parsed = {}
+    missing = [key for key in pending if key not in parsed]
+    if not missing or len(pending) == 1:
+        return parsed
+    if len(missing) > 6:
+        return parsed
+    for key in missing:
+        try:
+            parsed.update(await _translate_once(locale, {key: pending[key]}))
+        except Exception:
+            logger.exception("study i18n retry failed for %s field %s", locale, key)
+    return parsed
 
 
 def extract_verse_fields(verse: dict[str, Any]) -> dict[str, str]:
@@ -194,13 +252,12 @@ def extract_verse_fields(verse: dict[str, Any]) -> dict[str, str]:
     layers = verse.get("pratibha_layers")
     term_i = 0
     res_i = 0
-    app_i = 0
     if isinstance(layers, list):
         for layer in layers:
             if not isinstance(layer, dict):
                 continue
             kind = str(layer.get("kind") or "")
-            if kind in SOURCE_KINDS:
+            if kind in SKIP_KINDS or kind in SOURCE_KINDS:
                 continue
             if kind in VERSE_BODY_KINDS:
                 body = str(layer.get("body") or "").strip()
@@ -227,11 +284,6 @@ def extract_verse_fields(verse: dict[str, Any]) -> dict[str, str]:
                     if divergence:
                         fields[f"divergence:{res_i}"] = divergence
                     res_i += 1
-            elif kind == "appendix":
-                body = str(layer.get("body") or "").strip()
-                if body:
-                    fields[f"appendix:{app_i}"] = body
-                    app_i += 1
     if "translation" not in fields:
         text = str(verse.get("translation") or "").strip()
         if text:
@@ -281,8 +333,9 @@ def apply_verse_fields(verse: dict[str, Any], fields: dict[str, str]) -> dict[st
             kind = str(layer.get("kind") or "")
             if kind in SOURCE_KINDS:
                 continue
-            if kind in VERSE_BODY_KINDS and fields.get(kind):
-                layer["body"] = fields[kind]
+            if kind in VERSE_BODY_KINDS:
+                if fields.get(kind):
+                    layer["body"] = fields[kind]
                 continue
             items = layer.get("items")
             if kind == "key_terms" and isinstance(items, list):

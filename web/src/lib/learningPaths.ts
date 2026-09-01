@@ -1700,20 +1700,52 @@ export const LEARNING_REALMS: LearningRealm[] = [
     id: "trika",
     title: "The Trika · Kashmir Śaivism",
     blurb:
-      "The path of recognition: you are the Consciousness you have been seeking — playing at being bound.",
+      "The path of recognition: you are the Consciousness you have been seeking — playing at being bound. Then the pulse as method, Lalla's mouth in the house, the doorways and the cakra, then Abhinava's straight speech.",
     trackIds: [
       "heart-of-recognition",
       "three-doors-of-shiva",
+      "the-sacred-tremor",
+      "lallas-house",
       "the-112-doorways",
       "descent-of-the-cakra",
+      "straight-speech",
     ],
   },
   {
     id: "vedanta",
-    title: "Vedānta & the Great Letting-Go",
-    blurb:
-      "The witness behind the three states, and the fearless release into emptiness.",
+    title: "Vedānta & the Upaniṣads",
+    blurb: "The witness behind waking, dream, and sleep — you are That.",
+    trackIds: ["you-are-that"],
+  },
+  {
+    id: "letting-go",
+    title: "The Great Letting-Go",
+    blurb: "Death, absence, and the gap: release that is fearless rather than grim.",
     trackIds: ["letting-go-death-emptiness"],
+  },
+  {
+    id: "tao",
+    title: "Tao",
+    blurb: "The nameless source; the ten thousand things arise and return.",
+    trackIds: ["nameless-source"],
+  },
+  {
+    id: "hellenic",
+    title: "The One",
+    blurb: "The One overflows; the soul returns by becoming sunlike.",
+    trackIds: ["become-sunlike"],
+  },
+  {
+    id: "stoic",
+    title: "Stoic",
+    blurb: "Some things are up to you. Train the ruling faculty on those.",
+    trackIds: ["what-is-up-to-you"],
+  },
+  {
+    id: "christian",
+    title: "Christian Mysticism",
+    blurb: "Divine darkness, then the living saying, then address: the kingdom is not a spectacle; the mouth that remains speaks to the Face.",
+    trackIds: ["divine-darkness", "the-living-saying", "before-the-face"],
   },
   {
     id: "bridges",
@@ -1726,14 +1758,32 @@ export const LEARNING_REALMS: LearningRealm[] = [
     id: "yoga-dharma",
     title: "Yoga & Dharma",
     blurb:
-      "The seer rests in its nature; emptiness and compassion walk together.",
-    trackIds: ["seer-in-its-nature", "emptiness-and-compassion"],
+      "The seer rests in its nature; the body's fire is a staircase; emptiness and compassion walk together; then the diamond cut.",
+    trackIds: ["seer-in-its-nature", "the-body-of-hatha", "emptiness-and-compassion", "cutting-the-diamond"],
   },
   {
     id: "living-speech",
     title: "Living Speech",
     blurb: "Òwe — the horse of conversation. Wisdom that travels by proverb.",
     trackIds: ["the-horse-of-conversation"],
+  },
+  {
+    id: "sufi",
+    title: "Sufi",
+    blurb: "The Beloved hides in plain sight; love is the way — identity, unveiling, the valleys, then the reed.",
+    trackIds: [
+      "the-beloved-in-plain-sight",
+      "know-yourself",
+      "unveiling-the-veiled",
+      "the-seven-valleys",
+      "the-reed-complains",
+    ],
+  },
+  {
+    id: "confucian",
+    title: "Confucian",
+    blurb: "Virtue is not remote. Cultivate what is near; the Mean is equilibrium, not mediocrity.",
+    trackIds: ["humaneness-at-hand"],
   },
 ];
 

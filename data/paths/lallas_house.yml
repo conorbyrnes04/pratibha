@@ -1,0 +1,233 @@
+path_id: lallas_house
+work_id: lalla_vakyani
+work_title: Lallā Vākyāni
+title: "In My Own House"
+tradition: Kashmiri living speech / Lal Ded
+covers: "Vakhs 3, 4, 7, 48, 94, 99, 103 — oral vehicles, not a second recognition treatise"
+status: complete
+
+# Living speech. A vākya is a vehicle, not a slogan. Do not restate PHR.
+# Lalla speaks Kashmiri: pilgrimage fails, the body is the bellows, identity
+# is a spoken shock, the bolted door is grace, the inner turn undoes costume,
+# dawn is now, the way is the washerman's stone.
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  A vākya is a vehicle. Do not turn it into a slogan, a doctrine of recognition,
+  or a lecture on identity. Keep it oral: say it, do it, stop explaining.
+
+premise: >
+  You are not studying Kashmiri Śaivism through a poet. You are taking Lalla's
+  speech into the mouth and the day: stop looking abroad, use the body as
+  bellows, let "Thou art I" land as shock not metaphysics, stand at the bolted
+  door, enter from without, lift the foot at dawn, and last through the
+  scissors. The house is already yours. The looking-elsewhere is the missing.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the vākya once aloud, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+  - "Do not add a doctrine to prove you understood the speech."
+
+gates:
+  - gate_id: gate_0_house
+    name: "In my own house"
+    theme: "The learned one is not a shrine you have not reached."
+    why_first: >
+      Lalla's first outgrowing is pilgrimage. If God remains a destination,
+      every later vākya becomes a nicer journey.
+    stations:
+      - station: 1
+        unit_id: lalla_vakyani.lalla_vakyani_003
+        reference: "Vakh 3"
+        title: "I Found Him in My Own House"
+        opening_question: "What pilgrimage am I still packing so I do not have to look here?"
+        transmission: >
+          You burn days looking abroad. Then you see the learned one in your
+          own house — body-soul, not a shrine — and you lay hold. The
+          difficulty is the religious habit: God is a destination. The
+          preceptor is not missing. The looking-elsewhere is the missing.
+          Lucky star is not astrology. It is the suddenness when effort faces
+          the wrong way and then turns. Grasp. Admiration evaporates back into
+          seeking.
+        contemplation: "The house was never empty. The road was."
+        gate_practice: >
+          Stop the next outward search for a better state. Place a hand on
+          your sternum. Ask, without moving: who has been looking? Stay until
+          the looker is more obvious than the looked-for.
+        passed_when: "You can drop one pilgrimage-move and stay in the house long enough to lay hold, not admire."
+
+  - gate_id: gate_1_bellows
+    name: "The lamp in the bellows"
+    theme: "Breath is the pipe. The body is not an obstacle to leave."
+    why_first: >
+      The house is a body that breathes. If you treat flesh as what you must
+      escape, the lamp has nowhere to blaze.
+    stations:
+      - station: 2
+        unit_id: lalla_vakyani.lalla_vakyani_004
+        reference: "Vakh 4"
+        title: "The Lamp Blazed in the Bellows"
+        opening_question: "Where am I still treating this body as the thing that stands between me and the light?"
+        transmission: >
+          Breath is not wellness. It is the bellows that had been blowing the
+          flame out. Slow the pipe; the wick of knowing becomes a lamp. The
+          lamp does not create own-being. It shows what was already there.
+          Then winnow the light forth, until darkness itself is where you
+          seize the truth. The difficulty: the body as obstacle, a thing to
+          leave. Lalla uses the throat. She does not hoard the blaze in a
+          cave. Holding tight is refusing to restart the search once there is
+          a handhold.
+        contemplation: "The dark is the medium, not the enemy, once the lamp has a throat."
+        gate_practice: >
+          Breathe more slowly than you think you need, twelve breaths,
+          attention at the throat. When a small brightness of knowing appears,
+          do not close your eyes to keep it. Open them. See whether the room
+          can carry it.
+        passed_when: "You can use the body as bellows and let the light meet the room, instead of fleeing the flesh."
+
+  - gate_id: gate_2_shock
+    name: "Thou art I"
+    theme: "Spoken shock. Not a metaphysical identity lecture."
+    why_first: >
+      After house and lamp, the mouth still keeps two pronouns. The vākya
+      collapses them. Explain it and you have already restored the split.
+    stations:
+      - station: 3
+        unit_id: lalla_vakyani.lalla_vakyani_007
+        reference: "Vakh 7"
+        title: "Thou Art I, I Am Thou"
+        opening_question: "Which noble question am I still asking so I can keep two speakers?"
+        transmission: >
+          She wore the body out by works because she did not know the identity.
+          "Thou art I / I am Thou" is not poetry for two lovers. It is the
+          collapse of the grammatical two. The blade: "Who am I?" and "Who art
+          Thou?" are named as doubt — sandeh — the disease, not the path.
+          The difficulty is turning this into a lecture on metaphysical
+          identity. Keep it as spoken shock. Inquiry that keeps two pronouns
+          in play is still the knot. Stop answering. Feel the body that was
+          being punished to solve them.
+        contemplation: "The questions are the split. They are not the door."
+        gate_practice: >
+          Write "Who am I?" and "Who art Thou?" on paper. Sit with both until
+          they feel like one confusion, not two noble questions. Then stop
+          writing answers. Feel the body that was being punished to solve them.
+        passed_when: "You can hear the two questions as one doubt, and stop using them as a spiritual program."
+
+  - gate_id: gate_3_bolts
+    name: "Bolts on his door"
+    theme: "The lock is not other people. Striving cannot force the door."
+    why_first: >
+      House, lamp, shock — and still the athlete picks the lock. Lalla shows
+      the production failing in the first person.
+    stations:
+      - station: 4
+        unit_id: lalla_vakyani.lalla_vakyani_048
+        reference: "Vakh 48"
+        title: "Bolts Were on His Door"
+        opening_question: "What effort am I still using as a crowbar — and whom do I blame for the lock?"
+        transmission: >
+          You weary yourself seeking. You labour past your strength. Bolts are
+          on his door. Then, even in you as you are, longing becomes fixed —
+          and there, where you are, you gaze. The difficulty: the closed door
+          is other people — a guru who withholds, a world that blocks. The
+          lock is the point. Force cannot open it. This is not laziness. Stay
+          in the unfinished wanting. The remainder sees. Vision, if it comes,
+          comes where you actually are, not where the crowbar was aiming.
+        contemplation: "The barred door is the first honest appearance of the limit of force."
+        gate_practice: >
+          Name one spiritual effort you are using as a crowbar. Set it down
+          for one hour. Stay in the unfinished wanting without improving it.
+          Do not blame a person for the bolts.
+        passed_when: "You can set down one forcing-effort and remain in longing without making other people the lock."
+
+  - gate_id: gate_4_inmost
+    name: "Enter the inmost part"
+    theme: "One precept. Turning inward is not withdrawal from the world."
+    why_first: >
+      The guru gives a single word: from without, enter the inmost. The
+      sequel is dance, not a cave.
+    stations:
+      - station: 5
+        unit_id: lalla_vakyani.lalla_vakyani_094
+        reference: "Vakh 94"
+        title: "From Without, Enter the Inmost Part"
+        opening_question: "What reputation is my 'inner turn' still managing?"
+        transmission: >
+          One precept, not a curriculum: from without, enter the inmost part.
+          That became her rule — and therefore naked she began to dance. The
+          difficulty is hearing "inward" as withdrawal from the world. Lalla's
+          inner turn prices externals at zero, including cloth, including the
+          costume of competence. She does not recommend exhibition. She reports
+          what the precept did to shame. If your turning still manages a
+          reputation, it is not this precept yet.
+        contemplation: "Inmost is not a cave. It is the end of dressing for the outer claim."
+        gate_practice: >
+          For one hour, drop one outer covering you use to be someone — a tone
+          of voice, a title, an outfit of competence. Do not replace it.
+          Notice the impulse to dance or to hide. Both are information.
+        passed_when: "You can drop one covering without calling the drop a retreat from the world."
+
+  - gate_id: gate_5_dawn
+    name: "Now it is dawn"
+    theme: "The Friend is the next movement of the foot, not a later lifestyle."
+    why_first: >
+      After the inner turn, heedlessness will postpone. Lalla drums the hour:
+      dawn. Seek the Friend.
+    stations:
+      - station: 6
+        unit_id: lalla_vakyani.lalla_vakyani_099
+        reference: "Vakh 99"
+        title: "Now It Is Dawn — Seek the Friend"
+        opening_question: "What credential am I still waiting for before I lift the foot?"
+        transmission: >
+          Heedless one — lift the foot. Now it is dawn. Seek the Friend. Make
+          yourself wings. The refrain is a drum, not a lyric. The difficulty:
+          the Friend is later — after more practice, more purity, a better
+          morning. Dawn is initiation, not a pretty sky. Wings are the
+          lightness when the foot actually lifts. Seeking the Friend is not a
+          future lifestyle. It is the next movement of a foot nailed to habit.
+        contemplation: "If you wait for credentials, the dawn will have been another day you slept."
+        gate_practice: >
+          At the next literal dawn, or the next waking from distraction, stand
+          up before the mind finishes its list. Take one actual step as toward
+          a friend already in the room. Do not decorate the step.
+        passed_when: "You can lift the foot now, without postponing the Friend to a later self."
+
+  - gate_id: gate_6_way
+    name: "Then I obtained the way"
+    theme: "Arrival is being fitted, not becoming a better preserved self."
+    why_first: >
+      The last vākya refuses intactness. The way comes at the end of soap,
+      stone, and scissors — not as a bypass.
+    stations:
+      - station: 7
+        unit_id: lalla_vakyani.lalla_vakyani_103
+        reference: "Vakh 103"
+        title: "Then I Obtained the Way"
+        opening_question: "Where am I still asking to be put back as I was, and calling that the path?"
+        transmission: >
+          The washerman dashes you on the stone. Soap. Then the tailor's
+          scissors, piece by piece — then the way of the Supreme. The way is
+          not granted to the intact. The difficulty: arrival is a better self,
+          a prettier flower kept whole. Comfort-spirituality cannot survive
+          this speech. Neither can a suddenness that denies the carding.
+          You do not need to parse every kick while it happens. You need to
+          last until the garment. Cooperate with the fitting — not as
+          self-harm, as being worn.
+        contemplation: "A life fitted, not a life preserved."
+        gate_practice: >
+          Where you feel cut to pieces, stop asking to be restored as you were.
+          Ask what garment this cutting is for. Do one small act of cooperation
+          with the tailor — a truthful word, a dropped vanity — not as
+          punishment, as fitting.
+        passed_when: "You can take one cut as formation toward a use, not as evidence you failed to become a better self."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    Complete as a living-speech walk. Further vakhs can be spoken the same
+    way — as vehicles, not as beads on a recognition treatise. Do not fold
+    Lalla into the Heart of Recognition.
+  next_gates: []

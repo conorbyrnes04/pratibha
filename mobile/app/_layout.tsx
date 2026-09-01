@@ -42,9 +42,10 @@ export default function RootLayout() {
             }}
           >
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-            <Stack.Screen name="path/[id]" options={{ title: "Path" }} />
-            <Stack.Screen name="step/[trackId]/[stepId]" options={{ title: "Gate" }} />
-            <Stack.Screen name="passage/[id]" options={{ title: "Passage" }} />
+            <Stack.Screen name="ask" options={{ title: "Ask", headerBackTitle: "Back" }} />
+            <Stack.Screen name="path/[id]" options={{ title: "Path", headerBackTitle: "Back" }} />
+            <Stack.Screen name="step/[trackId]/[stepId]" options={{ title: "Gate", headerBackTitle: "Back" }} />
+            <Stack.Screen name="passage/[id]" options={{ title: "Passage", headerBackTitle: "Back" }} />
             <Stack.Screen name="settings" options={{ presentation: "modal", title: "Settings" }} />
           </Stack>
         </ThemeProvider>

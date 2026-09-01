@@ -7,9 +7,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { LEARNING_REALMS, LEARNING_TRACKS, RECOMMENDED_SPINE } from "../web/src/lib/learningPaths.ts";
 import { LEARNING_THREADS } from "../web/src/lib/learningThreads.ts";
+import { TRADITION_TRAILS } from "../web/src/lib/learn/traditionTrails.ts";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CANONICAL_DIR = path.join(ROOT, "data", "canonical");
+const PIN_FREEZE_PATH = path.join(ROOT, "scripts", "path_pin_freeze.json");
 
 function loadCorpusUnitIds(): Set<string> {
   const ids = new Set<string>();
@@ -35,10 +37,13 @@ type Issue = { level: "error" | "warn"; message: string };
 function main(): number {
   const corpus = loadCorpusUnitIds();
   const issues: Issue[] = [];
-  const trackIds = new Set(LEARNING_TRACKS.map((t) => t.id));
+  const trackIds = new Set<string>();
   const stepByKey = new Map<string, { passageId: string; title: string }>();
-
   for (const track of LEARNING_TRACKS) {
+    if (trackIds.has(track.id)) {
+      issues.push({ level: "error", message: `Duplicate track id: ${track.id}` });
+    }
+    trackIds.add(track.id);
     for (const step of track.steps) {
       stepByKey.set(`${track.id}:${step.id}`, { passageId: step.passageId, title: step.title });
       const refs = [step.passageId, ...(step.supportingPassageIds || [])];
@@ -53,6 +58,26 @@ function main(): number {
     }
   }
 
+  if (fs.existsSync(PIN_FREEZE_PATH)) {
+    const freeze = JSON.parse(fs.readFileSync(PIN_FREEZE_PATH, "utf8")) as { pins?: Record<string, string> };
+    for (const [key, expected] of Object.entries(freeze.pins ?? {})) {
+      const step = stepByKey.get(key);
+      if (!step) {
+        issues.push({
+          level: "error",
+          message: `Pin freeze: missing gate ${key} (TTS-locked; do not delete or rename)`,
+        });
+        continue;
+      }
+      if (step.passageId !== expected) {
+        issues.push({
+          level: "error",
+          message: `Pin freeze: ${key} passageId ${step.passageId} ≠ frozen ${expected}`,
+        });
+      }
+    }
+  }
+
   for (const tid of RECOMMENDED_SPINE) {
     if (!trackIds.has(tid)) {
       issues.push({ level: "error", message: `RECOMMENDED_SPINE references unknown track: ${tid}` });
@@ -61,6 +86,14 @@ function main(): number {
   for (const tid of trackIds) {
     if (!RECOMMENDED_SPINE.includes(tid)) {
       issues.push({ level: "warn", message: `Track not on RECOMMENDED_SPINE: ${tid}` });
+    }
+  }
+
+  for (const trail of TRADITION_TRAILS) {
+    for (const tid of trail.trackIds) {
+      if (!trackIds.has(tid)) {
+        issues.push({ level: "error", message: `Trail "${trail.id}" references unknown track: ${tid}` });
+      }
     }
   }
 

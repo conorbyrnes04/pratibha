@@ -1,17 +1,18 @@
+import { IconButton, symbols } from "@/components/IconButton";
 import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
 import { PratibhaText, ui } from "@/components/ui/PratibhaText";
 import { useStudy } from "@/context/StudyContext";
 import { getVerse } from "@/lib/api";
 import { passagePreview } from "@/lib/verseLayers";
 import { displayCollectionName } from "@shared/collectionLabels";
-import { displayPassageTitle } from "@shared/passageTitles";
 import type { VerseItem } from "@shared/types";
-import { Link, router } from "expo-router";
+import { router } from "expo-router";
+import * as Haptics from "expo-haptics";
 import { useEffect, useState } from "react";
 import { Pressable, View } from "react-native";
 
 export default function HomeTab() {
-  const { heroTrack, heroNextStep, hydrated } = useStudy();
+  const { heroTrack, heroNextStep, hydrated, startedTrackId } = useStudy();
   const [verse, setVerse] = useState<VerseItem | null>(null);
 
   useEffect(() => {
@@ -36,25 +37,33 @@ export default function HomeTab() {
   const title = heroNextStep?.title || "Today's gate";
   const collection = verse ? displayCollectionName(verse.collection) : heroTrack.title;
   const line = verse ? passagePreview(verse) : heroNextStep?.orientation || "";
+  const cta = startedTrackId ? "Continue" : "Begin";
+
+  function openGate() {
+    void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    router.push({
+      pathname: "/step/[trackId]/[stepId]",
+      params: { trackId: heroTrack.id, stepId: heroNextStep.id },
+    });
+  }
 
   return (
     <PratibhaScreen>
       <View style={styles.header}>
-        <View>
+        <View style={{ flex: 1, paddingRight: 12 }}>
           <PratibhaText variant="eyebrow">Today</PratibhaText>
           <PratibhaText variant="title" style={{ marginTop: 8 }}>
-            A walk through world wisdom
+            {hydrated ? heroTrack.title : "Your path"}
           </PratibhaText>
         </View>
-        <Link href="/settings" asChild>
-          <Pressable style={ui.buttonGhost}>
-            <PratibhaText style={ui.buttonGhostText}>API</PratibhaText>
-          </Pressable>
-        </Link>
+        <View style={{ flexDirection: "row", gap: 16, marginTop: 4 }}>
+          <IconButton name={symbols.ask} accessibilityLabel="Ask" href={"/ask" as never} />
+          <IconButton name={symbols.gear} accessibilityLabel="Settings" href="/settings" />
+        </View>
       </View>
 
-      <View style={[ui.card, ui.cardGold, { marginTop: 20 }]}>
-        <PratibhaText variant="eyebrow">{hydrated ? heroTrack.title : "The Path"}</PratibhaText>
+      <Pressable style={[ui.card, ui.cardGold, { marginTop: 20 }]} onPress={openGate}>
+        <PratibhaText variant="label">{startedTrackId ? "Next gate" : "Start here"}</PratibhaText>
         <PratibhaText variant="heading" style={{ marginTop: 12, fontSize: 26, lineHeight: 32 }}>
           {title}
         </PratibhaText>
@@ -73,22 +82,24 @@ export default function HomeTab() {
           </View>
         ) : null}
         <View style={{ marginTop: 16, flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-          <Pressable
-            style={ui.button}
-            onPress={() =>
-              router.push({
-                pathname: "/step/[trackId]/[stepId]",
-                params: { trackId: heroTrack.id, stepId: heroNextStep.id },
-              })
-            }
-          >
-            <PratibhaText style={ui.buttonText}>Enter this gate</PratibhaText>
+          <Pressable style={ui.button} onPress={openGate}>
+            <PratibhaText style={ui.buttonText}>{cta}</PratibhaText>
           </Pressable>
-          <Pressable style={ui.buttonGhost} onPress={() => router.push("/(tabs)/paths")}>
-            <PratibhaText style={ui.buttonGhostText}>See the trail</PratibhaText>
-          </Pressable>
+          {verse ? (
+            <Pressable
+              style={ui.buttonGhost}
+              onPress={() =>
+                router.push({
+                  pathname: "/ask",
+                  params: { verse_id: verse._id, mode: "explain", q: "Guide me through this passage." },
+                } as never)
+              }
+            >
+              <PratibhaText style={ui.buttonGhostText}>Ask about this</PratibhaText>
+            </Pressable>
+          ) : null}
         </View>
-      </View>
+      </Pressable>
     </PratibhaScreen>
   );
 }
@@ -98,6 +109,5 @@ const styles = {
     flexDirection: "row" as const,
     justifyContent: "space-between" as const,
     alignItems: "flex-start" as const,
-    gap: 12,
   },
 };

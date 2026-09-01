@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p021
-unit_label: 'Pearl #21'
-title: 'Pearl #21'
+unit_label: The Self Has No Independent Being
+title: The Self Has No Independent Being
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
   passing content.'
@@ -14,14 +14,25 @@ themes:
 source_excerpt: That does not mean that you have being and you are qualified by this or that attribute.
   What is meant is that you never were and never will be, whether through yourself or through Him or in
   Him or with Him.
-translation_literal: That does not mean that you have being and you are qualified by this or that attribute.
-  What is meant is that you never were and never will be, whether through yourself or through Him or in
-  Him or with Him.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
-  the passing content.'
+translation_literal: It is not meant by this that you are anything that exists, or that your attributes
+  are anything that exists; rather, it means that you never were and never will be, whether by yourself,
+  through Him, in Him, or along with Him.
+commentary: 'The passage makes its most uncompromising claim: self-knowledge does not disclose a finite
+  self standing in some relation to God, but dissolves the very premise of an independently existing self.
+  In the vocabulary of waḥdat al-wujūd, existence belongs properly and truly to God alone; the creature
+  is not a second being that might be self-subsistent, divinely sustained, contained in God, or joined
+  to God. Each of those formulations still leaves two terms—God and a real other—and thus, for this text,
+  compromises divine oneness. “Know yourself” therefore means recognizing that the self one ordinarily
+  takes to be real has no being of its own. The contested move is evident in the phrase “not ... in Him
+  or along with Him”: this is not merely mystical dependence or intimacy, but a denial that creaturely
+  existence has positive reality beside the Real. Such language can sound like identity between God and
+  the person, yet the treatise simultaneously blocks simple incarnation, mixture, entry, or union. Its
+  intended distinction is between God’s sole reality and the self’s imagined autonomous status—not a claim
+  that an individual ego becomes divine. The result is a radical re-description of servanthood: one does
+  not possess being and then offer it to God; one sees that every claim to possession was already unfounded.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you say “my ability,” “my status,” or “my problem,” pause once and silently add:
+  “This has no independence from God.” Then act responsibly, without turning that reminder into passivity.'
 sanskrit_devanagari: 'ولا بذلك أنك موجود وصفتك هكذا أبدًا: غني به. إنك ما كنت قط ولا تكون، لا بنفسك ولا
   فيه ولا معه'
 sanskrit_iast: ''
@@ -33,44 +44,68 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'ولا بذلك أنك موجود وصفتك هكذا أبدًا: غني به. إنك ما كنت قط ولا تكون، لا بنفسك ولا فيه ولا معه'
 - kind: translation
   label: Pratibha Translation
-  body: That does not mean that you have being and you are qualified by this or that attribute. What is
-    meant is that you never were and never will be, whether through yourself or through Him or in Him
-    or with Him.
+  body: It is not meant by this that you are anything that exists, or that your attributes are anything
+    that exists; rather, it means that you never were and never will be, whether by yourself, through
+    Him, in Him, or along with Him.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
-    passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The passage makes its most uncompromising claim: self-knowledge does not disclose a finite self
+    standing in some relation to God, but dissolves the very premise of an independently existing self.
+    In the vocabulary of waḥdat al-wujūd, existence belongs properly and truly to God alone; the creature
+    is not a second being that might be self-subsistent, divinely sustained, contained in God, or joined
+    to God. Each of those formulations still leaves two terms—God and a real other—and thus, for this
+    text, compromises divine oneness. “Know yourself” therefore means recognizing that the self one ordinarily
+    takes to be real has no being of its own. The contested move is evident in the phrase “not ... in
+    Him or along with Him”: this is not merely mystical dependence or intimacy, but a denial that creaturely
+    existence has positive reality beside the Real. Such language can sound like identity between God
+    and the person, yet the treatise simultaneously blocks simple incarnation, mixture, entry, or union.
+    Its intended distinction is between God’s sole reality and the self’s imagined autonomous status—not
+    a claim that an individual ego becomes divine. The result is a radical re-description of servanthood:
+    one does not possess being and then offer it to God; one sees that every claim to possession was already
+    unfounded.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: موجود
+    definition: from w-j-d, “to find” or “be”; here, an existent thing. The issue is not whether you appear
+      or act, but whether you possess being independently enough to count as a second existent.
+  - term: صفة
+    definition: from w-ṣ-f, “to describe”; an attribute or qualification. The passage denies that personal
+      qualities have self-standing ontological reality, not that ordinary descriptions are pragmatically
+      usable.
+  - term: معه
+    definition: from maʿa, “with”; here, being alongside God. More than companionship, it names the metaphysical
+      assumption that there can be a real co-existing other beside the One.
+  - term: غني به
+    definition: 'ghaniyy, “independent, free of need,” with bi-hi, “through/by Him.” The phrase presses
+      against self-sufficiency: what seems like creaturely independence is not an independent possession.'
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Siva Sutra — Śāktopāya
-    resonance: Both texts locate knowledge or realization in the quality and direction of attention itself
-      rather than in external content or attributes. Ibn Arabi negates passing attributes to redirect
-      attention to the knower; the Siva Sutra identifies sustained attention as the substance of knowledge.
-    divergence: Ibn Arabi emphasizes negation of false identification with attributes; the Siva Sutra
-      posits attention as an active, positive principle of consciousness.
-    passage_id: siva_sutra.ss_ii_12
-  - citation: Mandukya Upanishad and Gaudapada Karika — Verses 8–12 · Om and the Fourfold Correspondence
-    resonance: Both establish a method of self-inquiry that turns inward by mapping or analyzing the knower's
-      own nature through systematic correspondence—Ibn Arabi through negation of attributes, the Mandukya
-      through the fourfold analysis of Om and consciousness states.
-    divergence: The Mandukya uses phonetic and phenomenological scaffolding (Om, waking/dream/deep sleep);
-      Ibn Arabi works through direct negation without intermediary structures.
-    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_010
-  - citation: Yoga Spandakarika — Third Flow
-    resonance: 'Both describe a paradoxical intensification of perception through focused effort: the
-      object becomes clearer when attention is ardently directed toward it, mirroring how clarity of the
-      knower emerges when attention returns inward rather than dispersing outward.'
-    divergence: The Yoga Spandakarika frames this as perception of an external sacred tremor; Ibn Arabi
-      frames it as recognition of the knower's own non-attributed nature.
-    passage_id: yoga_spandakarika.sp_36
-  layer_provenance: generated_grounded
+  - citation: Qur’an 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supplies the scriptural horizon
+      for denying any temporal or spatial counterpart to God.
+    divergence: The Qur’anic verse proclaims divine comprehensiveness; the treatise extends this into
+      a stronger denial of creaturely being as such.
+  - citation: Qur’an 28:88
+    resonance: “Everything is perishing except His Face” supports the text’s insistence that no created
+      thing has ultimate permanence.
+    divergence: A common reading affirms created things that perish; this treatise reads the verse as
+      denying independent existence even before perishing.
+  - citation: “Whoever knows himself knows his Lord”
+    resonance: 'The treatise makes this widely circulated saying its governing formula: knowledge of the
+      self opens directly onto knowledge of God.'
+    divergence: The saying is not established as a sound Prophetic hadith by standard hadith criticism,
+      and the treatise gives it a distinctly nondual metaphysical interpretation.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you say “my ability,” “my status,” or “my problem,” pause once and silently add:
+    “This has no independence from God.” Then act responsibly, without turning that reminder into passivity.'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -82,3 +117,11 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: It is not meant by this that you are anything that exists, or that your attributes are anything
+  that exists; rather, it means that you never were and never will be, whether by yourself, through Him,
+  in Him, or along with Him.
+abhyasa: 'Today, when you say “my ability,” “my status,” or “my problem,” pause once and silently add:
+  “This has no independence from God.” Then act responsibly, without turning that reminder into passivity.'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'ولا بذلك أنك موجود وصفتك هكذا أبدًا: غني به. إنك ما كنت قط ولا تكون، لا بنفسك ولا فيه ولا معه'

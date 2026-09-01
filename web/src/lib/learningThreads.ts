@@ -61,7 +61,7 @@ export const LEARNING_THREADS: LearningThread[] = [
     subtitle: "The madhya — the still hinge between every two states",
     thesis: "The opening is not a mood. It is a method: rest in the seam between any two states.",
     arc:
-      "We start where the seam is most intimate — the turn of the breath — then generalize: any two cognitions, the lip of sleep, the functional hollow that makes a vessel useful, the emptied heart that can finally hear. The claim tightens from a Kashmiri technique into a cross-tradition fact about experience: every transition is already a doorway, if you stop skipping it.",
+      "We start where the seam is most intimate — the turn of the breath — then generalize: any two cognitions, the lip of sleep. Dionysius leaves Kashmir without emptying the interval: stop filling it with a knowable God. Then the functional hollow that makes a vessel useful, the emptied heart that can finally hear. The claim tightens from a Kashmiri technique into a cross-tradition fact about experience: every transition is already a doorway, if you stop skipping it.",
     practice:
       "Three times today, catch a seam — between two breaths, two thoughts, or two tasks — and rest there for one unhurried beat before the next thing begins.",
     integration:
@@ -116,6 +116,19 @@ export const LEARNING_THREADS: LearningThread[] = [
         trackId: "the-112-doorways",
         stepId: "vbt-threshold-sleep",
         passageId: "vijnana_bhairava.yukti_047",
+      },
+      {
+        id: "gap-dionysius",
+        tradition: "Dionysius",
+        insight: "The brightest thing looks dark to a mind that still wants to see.",
+        move: "Leave Kashmir's filled Center. Stop stuffing the interval with a knowable God.",
+        homology:
+          "Same structure: an interval that is the destination, not dead time to skip. You rest in what will not become an object.",
+        divergence:
+          "Here the pause is super-luminous darkness — excess of light, not Śakti at rest in the madhya. Filling it with a picture of God is the miss.",
+        trackId: "divine-darkness",
+        stepId: "pd-dazzling-darkness",
+        passageId: "pseudo_dionysius.pd_001",
       },
       {
         id: "gap-tao-absence",
@@ -529,7 +542,7 @@ export const LEARNING_THREADS: LearningThread[] = [
     subtitle: "Act fully. Do not white-knuckle the fruit.",
     thesis: "Clear action is possible without contraction around the outcome — that is freedom, not indifference.",
     arc:
-      "Begin in honest paralysis. Separate what is yours to govern. Act without possessiveness. Distinguish inner renunciation from flight. Steady the mind that keeps grasping. End in surrender that is more lucid than control. Zhuangzi's emptied listening keeps the theme from becoming only a battlefield ethic.",
+      "Begin in honest paralysis. Separate what is yours to govern. Stay with that cut as the handbook's map of sovereignty — not as fruit-release — then act without possessiveness. Distinguish inner renunciation from flight. Steady the mind that keeps grasping. End in surrender that is more lucid than control. Zhuangzi's emptied listening keeps the theme from becoming only a battlefield ethic.",
     practice:
       "Choose one ordinary task. Offer the doing; release the result on the first out-breath. If anxiety returns, come back to the task, not to the fantasy of managing the universe.",
     integration:
@@ -559,6 +572,18 @@ export const LEARNING_THREADS: LearningThread[] = [
           "The Gita stays on a battlefield of dharma. Epictetus gives a portable division. Precision can look cold; it is meant to concentrate care, not withdraw it.",
         trackId: "action-without-contraction",
         stepId: "separate-governance",
+        passageId: "epictetus_works.epi_enc_001",
+      },
+      {
+        id: "act-stoic-map",
+        tradition: "Epictetus · handbook",
+        insight: "The division is a map of sovereignty, not a technique for releasing fruit.",
+        move: "Stay with the same cut — now as the handbook's own training of the ruling faculty.",
+        homology: "Same Enchiridion line as the Gītā guest: judgments are yours; outcomes are not.",
+        divergence:
+          "The Gītā guest uses the cut to make battlefield action possible, then turns to fruit-release. This bead is the Stoic walk's ontology: a lifelong map of where power reaches. Precision here trains the hegemonikon; it is not Krishna's non-possessiveness.",
+        trackId: "what-is-up-to-you",
+        stepId: "stoic-division",
         passageId: "epictetus_works.epi_enc_001",
       },
       {
@@ -705,7 +730,7 @@ export const LEARNING_THREADS: LearningThread[] = [
     subtitle: "You are the one who sees — not the changing seen",
     thesis: "The witness is ordinary awareness recognized, not a special state attained — and it remains through waking, the lip of sleep, and contraction.",
     arc:
-      "Name the ground. Watch knowledge fence it into a self. Relocate as the watching bird. Map how the same awareness contracts. Catch the surge when it breaks through. At the lip of sleep, taste objectless lucidity (the Fourth, by another name — Mandukya is not yet a path gate). Stabilize in an ordinary trigger. The witness is frequent return, not a peak.",
+      "Name the ground. Still the turnings so the seer rests in its nature. Watch knowledge fence it into a self. Relocate as the watching bird. Map how the same awareness contracts. Catch the surge when it breaks through. At the lip of sleep, taste objectless lucidity (the Fourth, by another name — Mandukya is not yet a path gate). Stabilize in an ordinary trigger. The witness is frequent return, not a peak.",
     practice:
       "Whatever you feel in this minute, ask once: 'Who is aware of this?' Do not answer in words. Rest as that, and let the feeling continue at the edge.",
     integration:
@@ -725,6 +750,18 @@ export const LEARNING_THREADS: LearningThread[] = [
         trackId: "recognizing-awareness",
         stepId: "name-the-ground",
         passageId: "siva_sutra.ss_i_1",
+      },
+      {
+        id: "wit-patanjali",
+        tradition: "Patañjali",
+        insight: "When the turnings still, the seer rests in its own nature.",
+        move: "Leave sudden naming for a method: still the weather of mind; the seer was never the weather.",
+        homology: "Same hinge as Consciousness is the Self — you are the one who sees, not the changing seen.",
+        divergence:
+          "Patañjali does not say you already are Śiva. Yoga is nirodha: the seer appears as itself when cittavṛtti quit dressing as your face. Method, not a surge.",
+        trackId: "seer-in-its-nature",
+        stepId: "ys-now-the-teaching",
+        passageId: "patañjali_yoga_sūtras.ys_1_01_04",
       },
       {
         id: "wit-bind",

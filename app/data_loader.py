@@ -315,6 +315,21 @@ _RESONANCE_HEADING = r"cross-tradition resonances?"
 _PRACTICE_HEADING = r"practice(?:\s*\(abhyasa\))?|abhyasa"
 
 
+_INGEST_HEADER_TAIL_RE = re.compile(
+    r"(?is)(?:\n\s*)+(?:\*{0,2}\s*)?(?:corpus entry|sanskrit basis|english layers)\b.*$"
+)
+_INGEST_BRIEF_TAIL_RE = re.compile(
+    r"(?is)(?:\n\s*)+(?:one unit per brief chunk\b|(?:\*{0,2}\s*)?(?:units:\s*\d|chapter:\s*\d|sanskrit:\s*devanagari)).*$"
+)
+
+
+def _strip_ingest_header(text: str) -> str:
+    """Drop chapter-file **Corpus entry:** preambles that leaked into practice."""
+    cleaned = _INGEST_HEADER_TAIL_RE.sub("", text or "")
+    cleaned = _INGEST_BRIEF_TAIL_RE.sub("", cleaned)
+    return cleaned.strip()
+
+
 def _strip_layer_tail(commentary: str) -> str:
     if not commentary:
         return ""
@@ -405,9 +420,13 @@ _IAST_PLACEHOLDER_MARKERS = (
 _NON_SANSKRIT_COLLECTION = re.compile(
     r"heraclitus|fragment|epictetus|enchiridion|meditations|phaedo|plato|plotinus|ennead|"
     r"eckhart|ibn.?arabi|know.?yourself|balyani|rumi|mathnawi|"
+    r"attar|mantiq|conference.?of.?the.?birds|hujwir|kashf|"
     r"tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|"
     r"milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō|"
-    r"yoruba|òwe|johnson|eastman|zitkala|dakota|soul of the indian|old indian legends",
+    r"yoruba|òwe|johnson|eastman|zitkala|dakota|soul of the indian|old indian legends|"
+    r"lalla|lal.?ded|lalleshwari|vakyani|vākyāni|"
+    r"ecclesiastes|qoheleth|psalm|tehillim|"
+    r"gospel.?of.?thomas|gospel.?of.?mary|logia of jesus|new.?testament.?logia",
     re.I,
 )
 
@@ -589,7 +608,9 @@ def _finalize_layers(layers: list[dict[str, Any]], out: dict[str, Any] | None = 
             if not _commentary_is_authored(_as_text(layer.get("body"))):
                 continue
         elif kind == "practice":
-            if _practice_is_generic(_as_text(layer.get("body"))):
+            body = _strip_ingest_header(_as_text(layer.get("body")))
+            layer = {**layer, "body": body}
+            if not body or _practice_is_generic(body):
                 continue
         elif kind == "translation" and _is_wholesale_pd_translation(layer, out):
             layer = {**layer, "body": _study_excerpt(_strip_editorial_asides(_as_text(layer.get("body"))))}
@@ -650,6 +671,8 @@ def _build_layers(item: dict[str, Any], out: dict[str, Any], raw_commentary: str
             merged["body"] = _strip_layer_tail(str(layer.get("body") or ""))
             if not _commentary_is_authored(merged["body"]):
                 continue
+        if kind == "practice":
+            merged["body"] = _strip_ingest_header(str(layer.get("body") or ""))
         if kind == "original" and raw_script_is_script:
             # Never let an authored romanization / "*Source-language basis:*"
             # note occupy the Original slot when actual source script exists.
@@ -709,7 +732,8 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
     out["themes"] = item.get("themes") if isinstance(item.get("themes"), list) else []
     out["appendixes"] = item.get("appendixes") if isinstance(item.get("appendixes"), list) else []
     out["anchor_chapter"] = _as_text(item.get("anchor_chapter"))
-    out["abhyasa"] = _as_text(item.get("abhyasa") or item.get("practice"))
+    out["abhyasa"] = _strip_ingest_header(_as_text(item.get("abhyasa") or item.get("practice")))
+    out["practice"] = out["abhyasa"]
     out["editorial_score"] = item.get("editorial_score") or item.get("content_score") or item.get("quality_score") or item.get("quality_score_unit") or 0
     # De-slop: drop template/filler commentary and boilerplate practice so the
     # app never renders fake insight and ingestion never embeds duplicate

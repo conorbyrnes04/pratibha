@@ -1,0 +1,153 @@
+path_id: what_is_up_to_you
+work_id: epictetus_works
+work_title: Epictetus Enchiridion, Marcus Aurelius
+title: "What Is Up to You"
+tradition: Stoicism
+covers: "Enchiridion 1, 2, 5, 8, 17, 20, 21; Meditations 2.1"
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+
+premise: >
+  One Enchiridion gate on the Gītā path is not a Stoic walk. This is the
+  handbook's own architecture: the division, desire, impressions, the given,
+  the part you did not cast, the pause, death before the eyes, then morning.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_division
+    name: "The division"
+    theme: "Freedom begins as an accurate map of sovereignty, not as a mood."
+    why_first: "The Enchiridion opens with ontology: some things are up to us. Desire and disturbance are later applications."
+    stations:
+      - station: 1
+        unit_id: epictetus_works.epi_enc_001
+        title: "Some things are up to you"
+        opening_question: "Where have I staked my peace on what I cannot command?"
+        transmission: >
+          Of existing things, some are up to us and some are not. Up to us:
+          judgment, impulse, desire, aversion — our own doing. Not up to us:
+          body, property, reputation, office. The handbook does not start with
+          calm. It starts with a cut in what exists.
+        contemplation: "The cut is in things, not in your preference for calm."
+        gate_practice: >
+          Take one live upset. Split it into two lists: mine to govern, not mine.
+          Do not soothe. Make the lists honest.
+        passed_when: "You can draw the boundary without using it as an excuse to go limp."
+      - station: 2
+        unit_id: epictetus_works.ench_02
+        title: "Train desire at the root"
+        opening_question: "What am I still desiring that, if it fails, must make me wretched?"
+        transmission: >
+          Desire promises attainment; aversion promises escape. Fail the first and
+          you are disappointed; meet the second and you are wretched. For now,
+          suppress desire for what is not yours; even of what is yours, you do not
+          yet possess the laudable goods. Use pursuit lightly, with reservation.
+        contemplation: "Desire is a contract with disappointment until it is trained."
+        gate_practice: >
+          Name one desire aimed at an external (health-as-guaranteed, praise, a
+          timeline). For today, convert it to a reserved pursuit: I will try; I
+          do not demand.
+        passed_when: "You can pursue without signing the contract that failure wrecks you."
+      - station: 3
+        unit_id: epictetus_works.epi_enc_002
+        title: "Disturbance has one author"
+        opening_question: "What event am I blaming for a disturbance that is actually my judgment?"
+        transmission: >
+          People are disturbed not by things but by their judgments about things.
+          Death is not terrible — or it would have been so to Socrates. The
+          judgment that it is terrible is what is terrible. The event is causally
+          inert toward the soul until you assent.
+        contemplation: "The thing happened. The dogma did the harm."
+        gate_practice: >
+          Catch one disturbance. Name the thing, then name the judgment you added.
+          Hold them apart for ten breaths before you act.
+        passed_when: "You can point to the judgment as the author, without denying the event."
+
+  - gate_id: gate_1_assent
+    name: "Assent and the given"
+    theme: "Wish the actual; play the part; delay the insult."
+    why_first: "Once the author of disturbance is located, the handbook trains how you meet what arrives."
+    stations:
+      - station: 4
+        unit_id: epictetus_works.ench_08
+        title: "Wish that they happen as they do"
+        opening_question: "What arriving fact am I still treating as a broken promise?"
+        transmission: >
+          Do not demand that things happen as you wish. Wish that they happen as
+          they do happen, and you will go on well. This is not calling every event
+          pleasant. It is refusing to make your flourishing depend on the world
+          having been otherwise.
+        contemplation: "The given is material for virtue, not a verdict on you."
+        gate_practice: >
+          When one thing goes other than planned, say: it happened as it did.
+          Then take the next action that is still yours. Do not rewrite the event first.
+        passed_when: "You can meet an unwanted fact without waiting for it to become the fact you wanted."
+      - station: 5
+        unit_id: epictetus_works.epi_enc_003
+        title: "You did not cast the part"
+        opening_question: "Which role am I resenting as if I had been entitled to cast it?"
+        transmission: >
+          You are an actor in a drama the Director chooses — short or long, poor
+          or lame, ruler or private. Your business is to play the given part well.
+          Choosing the part belongs to another.
+        contemplation: "Skill is in the playing, not in the casting."
+        gate_practice: >
+          Name the part you are actually in today (not the one you auditioned for).
+          Play the next hour of it skillfully, without a side-commentary of grievance.
+        passed_when: "You can do the given role well without confusing it with who chose it."
+      - station: 6
+        unit_id: epictetus_works.ench_20
+        title: "The interval before anger"
+        opening_question: "Where do I fuse appearance, insult, and impulse into one act?"
+        transmission: >
+          Not the blow or the speech insults you, but the principle that represents
+          them as insulting. When anyone provokes you, it is your own opinion that
+          provokes you. First, do not be hurried away by the appearance. Gain time,
+          and you will command yourself.
+        contemplation: "Rage needs your assent. Delay the assent."
+        gate_practice: >
+          The next provocation: feel the appearance, and wait. Ten breaths, or until
+          the body cools one degree. Then choose the response. If you cannot wait,
+          you have found the gate.
+        passed_when: "You can insert time between appearance and action."
+
+  - gate_id: gate_2_day
+    name: "Death and morning"
+    theme: "Keep the limit in view, then meet the day already rehearsed."
+    why_first: "Memento mori is hygiene for desire. Marcus then shows the discipline at dawn."
+    stations:
+      - station: 7
+        unit_id: epictetus_works.faithful_ench_21
+        title: "Keep death before the eyes"
+        opening_question: "What petty calculation or excess desire would die if death stood in view?"
+        transmission: >
+          Let death, exile, and all that appears frightening stand before your eyes
+          each day — above all, death. Then you will not entertain a base thought,
+          nor desire anything with excess. This is not brooding. It is measure.
+        contemplation: "The limit clarifies attachment. It does not decorate gloom."
+        gate_practice: >
+          Once today, look at death as a fact of this life, not as a mood. Ask:
+          what becomes small? What becomes enough? Act from that for one hour.
+        passed_when: "Death in view makes you cleaner, not smaller."
+      - station: 8
+        unit_id: marcus_aurelius_meditations.ma_02_01
+        title: "Begin the day already ready"
+        opening_question: "Whom do I still meet as a personal insult instead of as the day's given material?"
+        transmission: >
+          Begin the morning by saying: I will encounter the meddlesome, the
+          ungrateful, the arrogant, the deceitful, the envious, the unsocial.
+          Not as bitterness. As pre-speaking, so their appearance cannot steal
+          the ruling faculty by surprise.
+        contemplation: "Name the friction before it arrives, and it is not a theft."
+        gate_practice: >
+          Tomorrow morning, before the first message, name three difficult types
+          you are likely to meet. When one arrives, recognize the rehearsal. Keep
+          your own character.
+        passed_when: "Another person's weather can arrive without becoming your verdict on the day."

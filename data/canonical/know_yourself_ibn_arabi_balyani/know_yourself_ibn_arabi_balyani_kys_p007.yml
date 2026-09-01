@@ -4,19 +4,34 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p007
-unit_label: 'Pearl #7'
-title: 'Pearl #7'
+unit_label: God Alone Knows and Veils God
+title: God Alone Knows and Veils God
 unit_type: teaching_passage
-thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
+  passing content.'
 themes:
 - attention
-source_excerpt: He knows Himself through Himself and He sees Himself by means of Himself. No one but He sees Him. His veil
-  is His oneness since nothing veils Him other than Him. His own being veils Him.
-translation_literal: He knows Himself through Himself and He sees Himself by means of Himself. No one but He sees Him. His
-  veil is His oneness since nothing veils Him other than Him. His own being veils Him.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
+source_excerpt: He knows Himself through Himself and He sees Himself by means of Himself. No one but He
+  sees Him. His veil is His oneness since nothing veils Him other than Him. His own being veils Him.
+translation_literal: By Himself He sees Himself, and by Himself He knows Himself. None sees Him other
+  than He, and none perceives Him other than He. His veil is [only a part of] His oneness; nothing veils
+  other than He. His veil is [only] the concealment of His existence in His oneness, without any quality.
+commentary: 'The claim is uncompromising: divine self-knowledge has no second knower standing outside
+  God. In the language of waḥdat al-wujūd, this excludes not only a rival being but also an independent
+  human standpoint from which God could be grasped as an object. God’s “veil” is not a barrier erected
+  by creatures, matter, sin, or distance. It is divine oneness itself: the very non-duality that prevents
+  the Real from appearing as one identifiable thing among others. Self-knowledge, therefore, is knowledge
+  of the Lord only when the self is no longer assumed to possess a separate, self-subsisting act of knowing.
+  This is the passage’s contested move. It can sound as though creaturely consciousness is simply abolished,
+  or as though the distinction between God and servant is erased. Defenders instead read it as an ontological
+  claim: the servant has no independent being or power by which to contain, comprehend, or veil God; every
+  disclosure and every knowing depends upon the Real. Yet the text presses further than ordinary devotional
+  language, making even the knower’s access to God God’s own self-manifestation rather than an achievement
+  owned by the individual.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+practice: 'Today, when you notice yourself trying to possess certainty about God, pause for one minute
+  and say inwardly: “The knower is not independent.” Then meet one person without reducing them to an
+  object of your judgment.'
 sanskrit_devanagari: ''
 sanskrit_iast: ''
 tags:
@@ -29,39 +44,57 @@ editorial_score: 0
 pratibha_layers:
 - kind: translation
   label: Pratibha Translation
-  body: He knows Himself through Himself and He sees Himself by means of Himself. No one but He sees Him. His veil is His
-    oneness since nothing veils Him other than Him. His own being veils Him.
+  body: By Himself He sees Himself, and by Himself He knows Himself. None sees Him other than He, and
+    none perceives Him other than He. His veil is [only a part of] His oneness; nothing veils other than
+    He. His veil is [only] the concealment of His existence in His oneness, without any quality.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to apply it today.
+  body: 'The claim is uncompromising: divine self-knowledge has no second knower standing outside God.
+    In the language of waḥdat al-wujūd, this excludes not only a rival being but also an independent human
+    standpoint from which God could be grasped as an object. God’s “veil” is not a barrier erected by
+    creatures, matter, sin, or distance. It is divine oneness itself: the very non-duality that prevents
+    the Real from appearing as one identifiable thing among others. Self-knowledge, therefore, is knowledge
+    of the Lord only when the self is no longer assumed to possess a separate, self-subsisting act of
+    knowing. This is the passage’s contested move. It can sound as though creaturely consciousness is
+    simply abolished, or as though the distinction between God and servant is erased. Defenders instead
+    read it as an ontological claim: the servant has no independent being or power by which to contain,
+    comprehend, or veil God; every disclosure and every knowing depends upon the Real. Yet the text presses
+    further than ordinary devotional language, making even the knower’s access to God God’s own self-manifestation
+    rather than an achievement owned by the individual.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: حجاب
+    definition: ḥ-j-b, to screen or withhold -> the veil is God’s own oneness, not an external obstruction
+      -> more than the default gloss “veil,” it names concealment through overwhelming non-duality.
+  - term: أحدية
+    definition: from a-ḥ-d, one/unique -> divine oneness admits no second alongside it -> not merely numerical
+      “unity,” but absoluteness before which relation and comparison fail.
+  - term: معرفة
+    definition: ʿ-r-f, to recognize or know -> knowing God is not acquired mastery over a divine object
+      -> more intimate and transformative than the default gloss “knowledge.”
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Siva Sutra — Śāktopāya
-    resonance: 'Both texts locate knowledge in the quality and direction of attention itself rather than in external content:
-      Ibn Arabi''s ''knows Himself through Himself'' and the Siva Sutra''s ''sustained attention is knowledge'' both make
-      attention the instrument and object of knowing collapse into one act.'
-    divergence: Ibn Arabi emphasizes the reflexive self-knowing of the divine knower, while the Siva Sutra treats attention
-      as a cultivable human practice that generates knowledge.
-    passage_id: siva_sutra.ss_ii_12
-  - citation: Mandukya Upanishad and Gaudapada Karika — Verses 8–12 · Om and the Fourfold Correspondence
-    resonance: 'Both passages establish a methodological correspondence between a formal structure (Om''s four quarters /
-      the Self''s fourfold nature) and direct self-inquiry: the structure becomes the means by which attention turns inward
-      to recognize its own ground.'
-    divergence: Ibn Arabi's inward turn is immediate and non-dual (self knowing itself), while the Mandukya uses systematic
-      phonetic-ontological mapping as the scaffolding for that recognition.
-    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_010
-  - citation: Yoga Spandakarika — Third Flow
-    resonance: 'Both texts describe how intensified, directed attention—turning back upon itself or striving toward what eludes
-      ordinary perception—reveals what was always present: the supreme principle becomes apparent through the very effort
-      of attention itself.'
-    divergence: Ibn Arabi presents this as the eternal structure of divine self-knowledge, while the Yoga Spandakarika frames
-      it as a tantric practice requiring ardent striving to manifest the sacred tremor.
-    passage_id: yoga_spandakarika.sp_36
-  layer_provenance: generated_grounded
+  - citation: Qurʾan 24:35
+    resonance: 'The Light Verse joins disclosure and concealment: God guides to His light whom He wills,
+      while the divine reality exceeds ordinary representation.'
+    divergence: This passage radicalizes the point by calling divine oneness itself the veil, rather than
+      presenting a symbolic image of light.
+  - citation: Qurʾan 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supports the text’s refusal
+      to locate God within ordinary spatial or conceptual oppositions.
+    divergence: 'The present claim focuses specifically on who can know or perceive God: ultimately God
+      alone.'
+  - citation: Hadith qudsi, “I was sick and you did not visit Me” (Ṣaḥīḥ Muslim)
+    resonance: The saying unsettles the separation of divine presence from the vulnerable human other.
+    divergence: The hadith retains an ethical address to the servant; this passage draws an explicitly
+      metaphysical conclusion about divine being and self-disclosure.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you notice yourself trying to possess certainty about God, pause for one minute and
+    say inwardly: “The knower is not independent.” Then meet one person without reducing them to an object
+    of your judgment.'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -69,3 +102,12 @@ provenance:
   section: wisdom_pearl
   original_id: KYS_P007
   source_reference: ''
+translation: By Himself He sees Himself, and by Himself He knows Himself. None sees Him other than He,
+  and none perceives Him other than He. His veil is [only a part of] His oneness; nothing veils other
+  than He. His veil is [only] the concealment of His existence in His oneness, without any quality.
+abhyasa: 'Today, when you notice yourself trying to possess certainty about God, pause for one minute
+  and say inwardly: “The knower is not independent.” Then meet one person without reducing them to an
+  object of your judgment.'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+tts_key: true

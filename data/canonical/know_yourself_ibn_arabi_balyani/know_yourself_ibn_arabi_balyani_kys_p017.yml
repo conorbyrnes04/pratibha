@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p017
-unit_label: 'Pearl #17'
-title: 'Pearl #17'
+unit_label: Knowing the Self Removes the Fiction of Otherness
+title: Knowing the Self Removes the Fiction of Otherness
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
   passing content.'
@@ -15,14 +15,25 @@ themes:
 source_excerpt: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their
   self, knows their Lord. He also said, I knew my Lord through my Lord. What the Prophet pointed out by
   that, is that you are not you but you are Him and there is no you.
-translation_literal: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows
-  their self, knows their Lord. He also said, I knew my Lord through my Lord. What the Prophet pointed
-  out by that, is that you are not you but you are Him and there is no you.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
-  the passing content.'
+translation_literal: 'And for this the Prophet—peace be upon him—said: “I knew my Lord by my Lord; whoever
+  knows himself knows his Lord.” And he said—peace be upon him—“I knew my Lord by my Lord.” By this he
+  points out that you are not you: rather, you are He, without a you. He is not entering into you, nor
+  proceeding out from you; nor are you proceeding out from Him, nor entering into Him.'
+commentary: 'The passage makes its decisive claim through the maxim of self-knowledge: to know the self
+  truly is to know the Lord. But the “self” at issue is not a psychological ego whose divine core is discovered.
+  It is the presumed independently existing “you.” Once that presumption is withdrawn, the text says,
+  there is no second reality standing beside God. This is its waḥdat al-wujūd logic: God alone truly is,
+  while creaturely distinction belongs to appearance, relation, and naming rather than a separate being.
+  Hence the careful refusals of entering, leaving, or mutual indwelling. The author rejects ḥulūl, the
+  idea that God occupies a creature, just as firmly as he rejects a creature’s movement into God. “You
+  are He, without a you” is therefore not meant as a spatial merger or an exaltation of the individual
+  personality. It is a radical denial that the ego ever possessed self-standing existence. The contested
+  move is precisely this: ordinary Creator–creature distinction is recast as a distinction within manifestation,
+  not between two independently real beings. The saying attributed to the Prophet functions here less
+  as a moral exhortation than as metaphysical disclosure.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you say “my” about one possession, feeling, or accomplishment, pause and silently
+  ask: “What here actually stands by itself?”'
 sanskrit_devanagari: 'ولهذا قال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي، مَن عرف نفسَه فقد عرف ربَّه."
   وقال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي." أشار – صلى الله عليه وسلم – بذلك أنك لست أنت، «بل»
   أنت هو بلا أنت: لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه'
@@ -36,40 +47,68 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: 'ولهذا قال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي، مَن عرف نفسَه فقد عرف ربَّه." وقال – صلى
+    الله عليه وسلم –: "عرفت ربِّي بربِّي." أشار – صلى الله عليه وسلم – بذلك أنك لست أنت، «بل» أنت هو بلا
+    أنت: لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه'
 - kind: translation
   label: Pratibha Translation
-  body: Because of this, the Prophet, God bless him and give him peace, said, Whoever knows their self,
-    knows their Lord. He also said, I knew my Lord through my Lord. What the Prophet pointed out by that,
-    is that you are not you but you are Him and there is no you.
+  body: 'And for this the Prophet—peace be upon him—said: “I knew my Lord by my Lord; whoever knows himself
+    knows his Lord.” And he said—peace be upon him—“I knew my Lord by my Lord.” By this he points out
+    that you are not you: rather, you are He, without a you. He is not entering into you, nor proceeding
+    out from you; nor are you proceeding out from Him, nor entering into Him.'
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
-    passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The passage makes its decisive claim through the maxim of self-knowledge: to know the self truly
+    is to know the Lord. But the “self” at issue is not a psychological ego whose divine core is discovered.
+    It is the presumed independently existing “you.” Once that presumption is withdrawn, the text says,
+    there is no second reality standing beside God. This is its waḥdat al-wujūd logic: God alone truly
+    is, while creaturely distinction belongs to appearance, relation, and naming rather than a separate
+    being. Hence the careful refusals of entering, leaving, or mutual indwelling. The author rejects ḥulūl,
+    the idea that God occupies a creature, just as firmly as he rejects a creature’s movement into God.
+    “You are He, without a you” is therefore not meant as a spatial merger or an exaltation of the individual
+    personality. It is a radical denial that the ego ever possessed self-standing existence. The contested
+    move is precisely this: ordinary Creator–creature distinction is recast as a distinction within manifestation,
+    not between two independently real beings. The saying attributed to the Prophet functions here less
+    as a moral exhortation than as metaphysical disclosure.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: نفس
+    definition: nafs, from a root concerning breath/self -> the supposed individual reality known in self-knowledge
+      -> not merely “soul,” psyche, or lower ego.
+  - term: ربّ
+    definition: rabb, “lord, sustainer, master” -> the divine Reality known when the self’s independent
+      claim falls away -> more relational and nurturing than the default bare “God.”
+  - term: هو
+    definition: huwa, “He” -> the sole reality affirmed when the autonomous “you” is denied -> not a masculine
+      person among persons, but the Qur’anic pronoun of divine ipseity.
+  - term: حلول
+    definition: ḥulūl, “entering in, indwelling” -> rejected by the paired denials of God entering the
+      servant or the servant entering God -> missed if nonduality is read as incarnation or fusion.
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 8
-    resonance: 'Both texts locate self-knowledge through a turning of attention inward to a center or
-      source: Ibn Arabi''s inward turn to the knower (rather than passing content) structurally mirrors
-      Plotinus''s soul revolving around its own centre as the source of being. Each makes the move from
-      periphery (content/sense) to center (source/knower).'
-    divergence: Plotinus grounds this in the soul's natural metaphysical structure; Ibn Arabi frames it
-      as a prophetic teaching about the relationship between self-knowledge and divine knowledge, making
-      the move soteriologically urgent rather than ontologically descriptive.
-    passage_id: plotinus_enneads.enn_vi_9_08
-  - citation: Mandukya Upanishad and Gaudapada Karika — Verses 8–12 · Om and the Fourfold Correspondence
-    resonance: Both establish a method where inquiry into the self (through sound-meditation in Mandukya,
-      through inward attention in Ibn Arabi) becomes a complete path of self-realization. The self is
-      not merely an object of knowledge but the instrument and goal of inquiry.
-    divergence: Mandukya uses phonetic correspondence and fourfold analysis as its structural method;
-      Ibn Arabi relies on prophetic utterance and the paradox that knowing self reveals the Lord, embedding
-      the inquiry in a theistic framework rather than a systematic correspondence.
-    passage_id: mandukya_upanishad_and_gaudapada_karika.muk_010
-  layer_provenance: generated_grounded
+  - citation: Qur’an 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supplies the scriptural grammar
+      for denying any reality outside divine presence.
+    divergence: The verse affirms divine comprehensiveness; this passage presses it into a stronger denial
+      of the creature’s independent being.
+  - citation: Qur’an 28:88
+    resonance: “Everything is perishing except His Face” supports the claim that all finite things lack
+      enduring self-subsistence before God.
+    divergence: The Qur’anic wording can be read as eschatological perishing, whereas this treatise reads
+      it as present ontological non-otherness.
+  - citation: 'Hadith: “Whoever knows himself knows his Lord”'
+    resonance: The saying anchors the path of self-knowledge in knowledge of God and became central in
+      Sufi teaching.
+    divergence: Its prophetic attribution is disputed in hadith criticism, and this text gives it an unusually
+      uncompromising metaphysical interpretation.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you say “my” about one possession, feeling, or accomplishment, pause and silently
+    ask: “What here actually stands by itself?”'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -81,3 +120,14 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: 'And for this the Prophet—peace be upon him—said: “I knew my Lord by my Lord; whoever knows
+  himself knows his Lord.” And he said—peace be upon him—“I knew my Lord by my Lord.” By this he points
+  out that you are not you: rather, you are He, without a you. He is not entering into you, nor proceeding
+  out from you; nor are you proceeding out from Him, nor entering into Him.'
+abhyasa: 'Today, when you say “my” about one possession, feeling, or accomplishment, pause and silently
+  ask: “What here actually stands by itself?”'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: 'ولهذا قال – صلى الله عليه وسلم –: "عرفت ربِّي بربِّي، مَن عرف نفسَه فقد عرف ربَّه." وقال –
+  صلى الله عليه وسلم –: "عرفت ربِّي بربِّي." أشار – صلى الله عليه وسلم – بذلك أنك لست أنت، «بل» أنت هو
+  بلا أنت: لا هو داخل فيك ولا هو خارج منك، ولا أنت خارج منه ولا أنت داخل فيه'

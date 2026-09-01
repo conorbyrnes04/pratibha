@@ -14,7 +14,7 @@ export default function TabLayout() {
         headerShown: false,
         tabBarHideOnKeyboard: true,
         tabBarStyle: {
-          backgroundColor: "#0b0b14",
+          backgroundColor: colors.background,
           borderTopColor: colors.border,
           height: tabBarHeight,
           paddingBottom: Math.max(insets.bottom, 8),
@@ -39,7 +39,7 @@ export default function TabLayout() {
         options={{
           title: "Today",
           tabBarIcon: ({ color }) => (
-            <SymbolView name={{ ios: "sun.max.fill", android: "wb_sunny", web: "wb_sunny" }} tintColor={color} size={24} />
+            <SymbolView name={"sun.max.fill" as never} tintColor={color} size={24} />
           ),
         }}
       />
@@ -49,7 +49,7 @@ export default function TabLayout() {
           title: "Path",
           tabBarIcon: ({ color }) => (
             <SymbolView
-              name={{ ios: "point.3.filled.connected.trianglepath.dotted", android: "route", web: "route" }}
+              name={"point.3.connected.trianglepath.dotted" as never}
               tintColor={color}
               size={24}
             />
@@ -61,7 +61,7 @@ export default function TabLayout() {
         options={{
           title: "Library",
           tabBarIcon: ({ color }) => (
-            <SymbolView name={{ ios: "book.closed.fill", android: "menu_book", web: "menu_book" }} tintColor={color} size={24} />
+            <SymbolView name={"book.closed.fill" as never} tintColor={color} size={24} />
           ),
         }}
       />
@@ -70,7 +70,7 @@ export default function TabLayout() {
         options={{
           title: "Mine",
           tabBarIcon: ({ color }) => (
-            <SymbolView name={{ ios: "book.fill", android: "auto_stories", web: "auto_stories" }} tintColor={color} size={24} />
+            <SymbolView name={"bookmark.fill" as never} tintColor={color} size={24} />
           ),
         }}
       />

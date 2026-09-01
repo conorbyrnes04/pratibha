@@ -4,8 +4,8 @@ category: commentary_text
 work_id: know_yourself_ibn_arabi_balyani
 work_title: Know Yourself (Ibn Arabi / Balyani)
 unit_id: know_yourself_ibn_arabi_balyani.kys_p005
-unit_label: 'Pearl #5'
-title: 'Pearl #5'
+unit_label: Only God Knows God
+title: Only God Knows God
 unit_type: teaching_passage
 thesis: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
   passing content.'
@@ -16,14 +16,26 @@ themes:
 source_excerpt: It is in this way that you should know Him and not through theoretical knowledge, reason,
   understanding or conjecture, nor with the senses, the external eye or interior sight or perception.
   No one sees Him except Himself, no one reaches Him except Himself and no one knows Him except Himself.
-translation_literal: It is in this way that you should know Him and not through theoretical knowledge,
-  reason, understanding or conjecture, nor with the senses, the external eye or interior sight or perception.
-  No one sees Him except Himself, no one reaches Him except Himself and no one knows Him except Himself.
-commentary: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than
-  the passing content.'
+translation_literal: It is necessary that thou know Him after this fashion, not by knowledge, nor by intellect,
+  nor by understanding, nor by imagination, nor by sense, nor by the outward eye, nor by the inward eye,
+  nor by perception. None sees Him save Himself; none perceives Him save Himself; none knows Him save
+  Himself by Himself.
+commentary: 'The passage makes an uncompromising claim: God cannot become an object standing before a
+  human knower. Every ordinary faculty—learned knowledge, reason, understanding, imaginative representation,
+  sensory sight, inward vision, and perception—presumes a distinction between one who grasps and a thing
+  grasped. For this text’s waḥdat al-wujūd logic, that distinction cannot finally obtain in relation to
+  the Real. God alone is both the knower and the known; “by Himself” excludes any independent cognitive
+  standpoint. Self-knowledge thus becomes knowledge of the Lord not because an individual ego possesses
+  divinity, but because the supposedly separate self is disclosed as having no autonomous existence from
+  which to know God as an external other. The contested move is severe. It turns apophatic humility into
+  an ontological assertion: not merely that finite minds fail to comprehend God, but that no creaturely
+  act of seeing, knowing, or perceiving is ultimately other than God’s self-disclosure. Critics can hear
+  pantheism or the erasure of moral and devotional creaturehood; defenders hear a safeguard against making
+  God one being among others. The text nevertheless refuses crude incarnation or fusion: it denies that
+  God enters a thing or that a thing enters God.'
 insight: ''
-practice: Read this passage slowly three times. Pause for one minute and write one sentence about how
-  to apply it today.
+practice: 'Today, when you catch yourself forming a confident mental picture of God, pause for one minute,
+  release the picture, and say inwardly: “You are not an object before my mind.”'
 sanskrit_devanagari: ينبغي أن نعرفه بهذه الصفة، لا بالعلم ولا بالعقل، ولا بالفهم ولا بالوهم ولا بالعين،
   ولا بالحسِّ الظاهر ولا بالعين الباطن ولا بالإدراك. لا يراه إلا هو، ولا يدركه إلا هو، ولا يعلمه إلا هو
   بنفسه
@@ -38,48 +50,71 @@ quality_score: 0
 editorial_maturity: strong_draft
 editorial_score: 0
 pratibha_layers:
+- kind: original
+  label: Original
+  body: ينبغي أن نعرفه بهذه الصفة، لا بالعلم ولا بالعقل، ولا بالفهم ولا بالوهم ولا بالعين، ولا بالحسِّ
+    الظاهر ولا بالعين الباطن ولا بالإدراك. لا يراه إلا هو، ولا يدركه إلا هو، ولا يعلمه إلا هو بنفسه
 - kind: translation
   label: Pratibha Translation
-  body: It is in this way that you should know Him and not through theoretical knowledge, reason, understanding
-    or conjecture, nor with the senses, the external eye or interior sight or perception. No one sees
-    Him except Himself, no one reaches Him except Himself and no one knows Him except Himself.
+  body: It is necessary that thou know Him after this fashion, not by knowledge, nor by intellect, nor
+    by understanding, nor by imagination, nor by sense, nor by the outward eye, nor by the inward eye,
+    nor by perception. None sees Him save Himself; none perceives Him save Himself; none knows Him save
+    Himself by Himself.
 - kind: commentary
   label: Pratibha Commentary
-  body: 'The emphasis turns inward: clarity grows when attention returns to the knower rather than the
-    passing content.'
-- kind: practice
-  label: Practice (Abhyasa)
-  body: Read this passage slowly three times. Pause for one minute and write one sentence about how to
-    apply it today.
+  body: 'The passage makes an uncompromising claim: God cannot become an object standing before a human
+    knower. Every ordinary faculty—learned knowledge, reason, understanding, imaginative representation,
+    sensory sight, inward vision, and perception—presumes a distinction between one who grasps and a thing
+    grasped. For this text’s waḥdat al-wujūd logic, that distinction cannot finally obtain in relation
+    to the Real. God alone is both the knower and the known; “by Himself” excludes any independent cognitive
+    standpoint. Self-knowledge thus becomes knowledge of the Lord not because an individual ego possesses
+    divinity, but because the supposedly separate self is disclosed as having no autonomous existence
+    from which to know God as an external other. The contested move is severe. It turns apophatic humility
+    into an ontological assertion: not merely that finite minds fail to comprehend God, but that no creaturely
+    act of seeing, knowing, or perceiving is ultimately other than God’s self-disclosure. Critics can
+    hear pantheism or the erasure of moral and devotional creaturehood; defenders hear a safeguard against
+    making God one being among others. The text nevertheless refuses crude incarnation or fusion: it denies
+    that God enters a thing or that a thing enters God.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: العلم
+    definition: ʿilm, from ʿ-l-m, “to know” or “mark distinctly” -> discursive or acquired knowing is
+      set aside -> more than the default gloss “knowledge,” it names a mode that separates subject from
+      object.
+  - term: الوهم
+    definition: 'wahm, from w-h-m, “to suppose” or “imagine” -> the faculty that frames or conjectures
+      an object -> missed by “conjecture” alone: it includes the mind’s subtle production of a graspable
+      divine image.'
+  - term: العين الباطن
+    definition: al-ʿayn al-bāṭin, “the inward eye” -> even interior contemplative vision does not possess
+      God -> not simply mystical intuition, but a faculty still liable to make God into a seen object.
+  - term: بنفسه
+    definition: 'bi-nafsihi, “by Himself” -> God knows Himself through no mediating faculty -> more than
+      reflexive emphasis: it grounds the passage’s denial of an independent knower beside God.'
 - kind: resonances
   label: Cross-Tradition Resonances
   items:
-  - citation: Siva Sutra — Śāktopāya
-    resonance: 'Both texts identify a shift from discursive knowledge to a direct knowing that is itself
-      attention or presence: Ibn Arabi rejects theoretical knowledge in favor of inward attention to the
-      knower, while the Siva Sutra equates sustained attention itself with knowledge, making the quality
-      of awareness the epistemic act.'
-    divergence: Ibn Arabi emphasizes negation (what knowing is *not*) to point toward divine encounter,
-      while the Siva Sutra makes attention a positive metaphysical principle—consciousness recognizing
-      itself through focused presence.
-    passage_id: siva_sutra.ss_ii_12
-  - citation: Plotinus Enneads — Ennead VI, Tractate 9, Section 5
-    resonance: 'Both texts reject the discursive intellect as the path to ultimate reality: Ibn Arabi
-      negates reason, understanding, and conjecture; Plotinus transcends the reasoning faculty to approach
-      the Unity, recognizing that direct knowledge of the source exceeds rational comprehension.'
-    divergence: Ibn Arabi frames this as turning inward to the knower within; Plotinus frames it as transcendence
-      toward the transcendent source beyond all being, emphasizing vertical ascent rather than inward
-      return.
-    passage_id: plotinus_enneads.enn_vi_9_05
-  - citation: Tao Te Ching — Learning Adds; the Way Subtracts
-    resonance: 'Both texts prescribe a reversal of the ordinary acquisitive mode: Ibn Arabi negates accumulation
-      of theoretical knowledge and sensory input; the Tao Te Ching prescribes daily diminishment in pursuing
-      the Way, suggesting that realization requires subtraction rather than addition.'
-    divergence: Ibn Arabi's negation is epistemological (rejecting false modes of knowing) and points
-      toward divine knowledge; the Taoist diminishment is ontological and practical (reducing artifice
-      and desire to align with natural flow).
-    passage_id: tao_te_ching.ttc_md_011
-  layer_provenance: generated_grounded
+  - citation: Qur’an 6:103
+    resonance: “Eyes do not apprehend Him, while He apprehends the eyes” closely supports the denial that
+      ordinary sight contains God.
+    divergence: The Qur’anic verse maintains divine incomparability; this passage extends the point to
+      say that God alone sees and knows Himself.
+  - citation: Qur’an 57:3
+    resonance: “He is the First and the Last, the Outward and the Inward” supplies the scriptural language
+      through which the treatise describes the Real’s all-encompassing presence.
+    divergence: The passage presses those names toward a strong nondual account of knowing, rather than
+      leaving a clear Creator-creature distinction in view.
+  - citation: Hadith qudsi, “My servant continues to draw near to Me ... I become his hearing ... and
+      his sight” (Ṣaḥīḥ al-Bukhārī)
+    resonance: The hadith imagines hearing and sight as divinely sustained in the servant, resonating
+      with the text’s displacement of autonomous human faculties.
+    divergence: The hadith retains the relation of servant and Lord; this passage risks collapsing that
+      relation into God’s sole self-knowing.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, when you catch yourself forming a confident mental picture of God, pause for one minute,
+    release the picture, and say inwardly: “You are not an object before my mind.”'
 appendixes: []
 anchor_chapter: ''
 provenance:
@@ -91,3 +126,13 @@ provenance:
   original_reliability: SOURCED — Risālat al-aḥadiyya (al-Balyānī), Arabic PD transcription (ibnalarabi.com);
     passage located in the source and verified verbatim
   verification: original extracted from the local PD source and verified as a verbatim substring
+translation: It is necessary that thou know Him after this fashion, not by knowledge, nor by intellect,
+  nor by understanding, nor by imagination, nor by sense, nor by the outward eye, nor by the inward eye,
+  nor by perception. None sees Him save Himself; none perceives Him save Himself; none knows Him save
+  Himself by Himself.
+abhyasa: 'Today, when you catch yourself forming a confident mental picture of God, pause for one minute,
+  release the picture, and say inwardly: “You are not an object before my mind.”'
+translation_provenance: Based on the public-domain English translation by T. H. Weir (JRAS, 1901), lightly
+  modernized. Study rendering. Does not follow Twinch.
+original: ينبغي أن نعرفه بهذه الصفة، لا بالعلم ولا بالعقل، ولا بالفهم ولا بالوهم ولا بالعين، ولا بالحسِّ
+  الظاهر ولا بالعين الباطن ولا بالإدراك. لا يراه إلا هو، ولا يدركه إلا هو، ولا يعلمه إلا هو بنفسه

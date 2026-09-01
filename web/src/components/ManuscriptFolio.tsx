@@ -107,6 +107,7 @@ export function ManuscriptFolio({
         original: picked.source === "translation" ? undefined : picked.text,
         translation: picked.source === "translation" ? picked.text : undefined,
         reading: storedReading || undefined,
+        margin: note?.trim() || undefined,
       };
     }
     return {
@@ -115,8 +116,9 @@ export function ManuscriptFolio({
       original: original ? clipShareText(original, 72) : undefined,
       translation: translation ? clipShareText(translation, 110) : undefined,
       reading: storedReading || undefined,
+      margin: note?.trim() || undefined,
     };
-  }, [card?.line, collection, iast, mode, original, storedReading, title, translation]);
+  }, [card?.line, collection, iast, mode, note, original, storedReading, title, translation]);
 
   const textMode: ShareTextMode = cardCopy.original && !cardCopy.translation
     ? "original"
@@ -156,10 +158,9 @@ export function ManuscriptFolio({
           fillWindow={Boolean(cardCopy.original || cardCopy.translation)}
           aspectRatio={aspectRatio}
           holographic={holographic}
-          holoHue={holoHueFromSeed(`${verseId}|${mark}|${ink}|${storedReading}|${title}`)}
+          holoHue={holoHueFromSeed(`${verseId}|${mark}|${ink}|${storedReading}|${note || ""}|${title}`)}
         />
       </Link>
-      {note ? <p className="manuscript-folio__note">{note}</p> : null}
       {actions ? <div className="manuscript-folio__actions">{actions}</div> : null}
     </article>
   );

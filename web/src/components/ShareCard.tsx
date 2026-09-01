@@ -17,6 +17,8 @@ export type ShareCardCopy = {
   original?: string;
   translation?: string;
   reading?: string;
+  /** One-line personal margin, printed on the card. */
+  margin?: string;
 };
 
 export function ShareCard({
@@ -28,6 +30,7 @@ export function ShareCard({
   aspectRatio = "post",
   holographic = false,
   flat = false,
+  holoHue = 0,
 }: {
   mark: ShareForceMark;
   ink: ShareInk;
@@ -38,6 +41,8 @@ export function ShareCard({
   holographic?: boolean;
   /** Flatten 3D tilt and skip stroke animation — used when capturing a PNG. */
   flat?: boolean;
+  /** Hue rotation of the foil, 0–359. Each favorite can have its own. */
+  holoHue?: number;
 }) {
   const hex = SHARE_INKS[ink].hex;
   const tilt = useHoloTilt(holographic && !flat);
@@ -45,15 +50,17 @@ export function ShareCard({
   const showTranslation =
     (textMode === "translation" || textMode === "both" || !showOriginal) && Boolean(copy.translation);
   const reading = copy.reading?.trim();
+  const margin = copy.margin?.trim();
   const modeClass = fillWindow ? "share-card--line" : `share-card--${textMode}`;
 
   return (
     <article
-      className={`share-card ${modeClass} share-card--${aspectRatio}${holographic ? " share-card--holo" : ""}${reading ? " share-card--reading" : ""}${flat ? " share-card--flat" : ""}`}
+      className={`share-card ${modeClass} share-card--${aspectRatio}${holographic ? " share-card--holo" : ""}${reading ? " share-card--reading" : ""}${margin ? " share-card--margin" : ""}${flat ? " share-card--flat" : ""}`}
       style={{
         ["--share-ink" as string]: hex,
         ["--holo-x" as string]: String(tilt.x),
         ["--holo-y" as string]: String(tilt.y),
+        ["--holo-h" as string]: String(holoHue),
       }}
     >
       <div className="share-card__mark" aria-hidden>
@@ -75,6 +82,7 @@ export function ShareCard({
           <p className="share-card__translation">{copy.translation}</p>
         ) : null}
       </div>
+      {margin ? <p className="share-card__margin">{margin}</p> : null}
       {reading ? <p className="share-card__reading">{reading}</p> : null}
       {holographic ? <span className="share-card__foil" aria-hidden /> : null}
       <footer className="share-card__foot">

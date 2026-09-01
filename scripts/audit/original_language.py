@@ -65,6 +65,8 @@ WORK_LANG = {
     "the_book_of_chuang_tzu": "chinese",
     # Persian / Arabic — require Arabic script
     "rumi_mathnawi": "persian",
+    "conference_of_the_birds": "persian",
+    "kashf_al_mahjub": "persian",
     "know_yourself_ibn_arabi_balyani": "arabic",
     # Tibetan — native Tibetan script preferred; romanized Wylie = labelled basis
     "milarepa_songs": "tibetan",

@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "validate:learning": "npx tsx ../scripts/validate_learning_paths.ts",
+    "audit:paths": "npx tsx ../scripts/audit_path_coverage.ts",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "predeploy": "node ./scripts/assert-prod-env.mjs",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",

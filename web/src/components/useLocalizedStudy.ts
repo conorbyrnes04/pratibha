@@ -5,11 +5,13 @@ import { useLocale } from "@/components/LocaleProvider";
 import type { LearningStepSpec, LearningTrack } from "@/lib/learningPaths";
 import type { TraditionTrail } from "@/lib/learn/traditionTrails";
 import {
+  applyCachedStudyFields,
   applyVerseCardFields,
   applyVerseStudyFields,
   extractVerseCardFields,
   extractVerseStudyFields,
   localizeStudyFields,
+  splitCoreStudyFields,
 } from "@/lib/studyI18n";
 import type { VerseItem } from "@/lib/types";
 
@@ -33,7 +35,7 @@ export function useLocalizedFields(fields: Record<string, string>): {
   );
   const parsed = useMemo(() => JSON.parse(sourceKey) as Record<string, string>, [sourceKey]);
   const [resolved, setResolved] = useState<Record<string, string>>(parsed);
-  const [resolvedKey, setResolvedKey] = useState(`${locale}:${sourceKey}`);
+  const [resolvedKey, setResolvedKey] = useState("");
   const [pending, setPending] = useState(false);
 
   useEffect(() => {
@@ -54,7 +56,7 @@ export function useLocalizedFields(fields: Record<string, string>): {
       })
       .catch(() => {
         if (!cancelled) {
-          setResolved(parsed);
+          setResolved(applyCachedStudyFields(locale, parsed));
           setResolvedKey(`${locale}:${sourceKey}`);
         }
       })
@@ -66,14 +68,48 @@ export function useLocalizedFields(fields: Record<string, string>): {
     };
   }, [locale, parsed, sourceKey]);
 
-  const ready = resolvedKey === `${locale}:${sourceKey}`;
-  return { fields: locale === "en" || !ready ? parsed : resolved, pending };
+  const ready = locale === "en" || resolvedKey === `${locale}:${sourceKey}`;
+  const next = locale === "en" ? parsed : ready ? resolved : applyCachedStudyFields(locale, parsed);
+  return { fields: next, pending };
+}
+
+export function useLocalizedHeroQuotes(
+  quotes: string[],
+  index: number,
+): { quote: string; pending: boolean } {
+  const { locale } = useLocale();
+  const allFields = useMemo(() => {
+    const fields: Record<string, string> = {};
+    quotes.forEach((line, i) => {
+      if (line.trim()) fields[`quote:${i}`] = line;
+    });
+    return fields;
+  }, [quotes]);
+  const visibleFields = useMemo(() => {
+    const line = (quotes[index] || "").trim();
+    return line ? { [`quote:${index}`]: line } : {};
+  }, [index, quotes]);
+  const visible = useLocalizedFields(visibleFields);
+  const all = useLocalizedFields(allFields);
+  const source = quotes[index] || "";
+  const visibleKey = `quote:${index}`;
+  const quote = !visible.pending
+    ? visible.fields[visibleKey] || source
+    : !all.pending
+      ? all.fields[visibleKey] || source
+      : applyCachedStudyFields(locale, visibleFields)[visibleKey] || source;
+  return { quote, pending: locale !== "en" && quote === source && (visible.pending || all.pending) };
 }
 
 export function useLocalizedVerse(item: VerseItem | null): VerseItem | null {
   const source = useMemo(() => (item ? extractVerseStudyFields(item) : {}), [item]);
-  const { fields } = useLocalizedFields(source);
-  return useMemo(() => (item ? applyVerseStudyFields(item, fields) : null), [item, fields]);
+  const { core, rest } = useMemo(() => splitCoreStudyFields(source), [source]);
+  const { fields: coreFields } = useLocalizedFields(core);
+  const { fields: restFields } = useLocalizedFields(rest);
+  return useMemo(
+    () => (item ? applyVerseStudyFields(item, { ...restFields, ...coreFields }) : null),
+    [coreFields, item, restFields],
+  );
 }
 
 export function useLocalizedVerseCards(items: VerseItem[], limit = 40): VerseItem[] {
