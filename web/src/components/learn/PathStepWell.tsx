@@ -80,6 +80,8 @@ type PathStepWellProps = {
   pathId?: string | null;
   onOpenPassage?: (item: VerseItem) => void;
   children?: ReactNode;
+  /** Completion gate, rendered just above the journal so notes sit beneath it. */
+  integrationSlot?: ReactNode;
 };
 
 export function PathStepWell({
@@ -90,6 +92,7 @@ export function PathStepWell({
   pathId,
   onOpenPassage,
   children,
+  integrationSlot,
 }: PathStepWellProps) {
   const t = useT();
   const [pinned, setPinned] = useState<VerseItem | null>(null);
@@ -196,6 +199,8 @@ export function PathStepWell({
         <p className="passage-layer__label">{t("layers.practice")}</p>
         <p className="passage-practice__body">{step.practice}</p>
       </div>
+
+      {integrationSlot}
 
       {item ? (
         <JournalPanel passage={item} prompt={step.journalPrompt} />

@@ -15,6 +15,8 @@ export function sameCalendarDay(iso: string, now = new Date()): boolean {
 export const TRAIL_SAND_DRAW_MS = 1400;
 export const TRAIL_GLYPH_FORM_MS = 2600;
 export const TRAIL_GATE_LEAVE_MS = 560;
+/** Completion flourish held inside the gate (glyph washes to gold) before it leaves. */
+export const TRAIL_GATE_COMPLETE_MS = 900;
 export const TRAIL_ARRIVE_TOTAL_MS = TRAIL_SAND_DRAW_MS + TRAIL_GLYPH_FORM_MS + 200;
 export const TRAIL_ARRIVE_SESSION_KEY = "pratibha.learn.arrive";
 
@@ -57,6 +59,49 @@ export function buildTrail(pathId?: string | null): TrailNode[] {
   });
 
   return nodes;
+}
+
+export type MandalaRing = {
+  trackId: string;
+  label: string;
+  radius: number;
+  marks: { node: TrailNode; x: number; y: number }[];
+};
+
+/** Concentric rings — one per track — with every gate mark of that tradition. */
+export function buildMandalaRings(pathId?: string | null): MandalaRing[] {
+  const nodes = buildTrail(pathId);
+  const groups: { trackId: string; label: string; nodes: TrailNode[] }[] = [];
+  for (const node of nodes) {
+    const last = groups[groups.length - 1];
+    if (!last || last.trackId !== node.trackId) {
+      groups.push({ trackId: node.trackId, label: node.sectionLabel, nodes: [node] });
+    } else {
+      last.nodes.push(node);
+    }
+  }
+  const n = groups.length;
+  const inner = n <= 2 ? 32 : 26;
+  const outer = n <= 2 ? 42 : 46;
+  return groups.map((group, i) => {
+    const radius = n <= 1 ? 36 : inner + (i / Math.max(1, n - 1)) * (outer - inner);
+    const start = -90 + i * 11;
+    const count = group.nodes.length;
+    return {
+      trackId: group.trackId,
+      label: group.label,
+      radius,
+      marks: group.nodes.map((node, j) => {
+        const angle = start + (count ? (j * 360) / count : 0);
+        const a = (angle * Math.PI) / 180;
+        return {
+          node,
+          x: 50 + Math.cos(a) * radius,
+          y: 50 + Math.sin(a) * radius,
+        };
+      }),
+    };
+  });
 }
 
 export function trailCurrentIndex(progress: Record<string, boolean>, pathId?: string | null): number {
