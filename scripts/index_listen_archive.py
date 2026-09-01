@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Map already-baked ElevenLabs speech onto verse ids.
 
-Writes data/listen_archive.json and copies each hit to a stable
-verse/{id}/{section}.mp3 key (local + Supabase) so Listen can look up
-by passage instead of recomputing a text hash.
+Writes data/listen_archive.json, copies hits to verse/{id}/{section}.mp3,
+and publishes the live storage index so Listen appears without a deploy.
 """
 from __future__ import annotations
 
@@ -25,6 +24,7 @@ from app.tts import (  # noqa: E402
     _env_voice,
     _speech_key,
     build_script,
+    publish_listen_sections,
     verse_speech_key,
     voice_room_for,
 )
@@ -121,6 +121,10 @@ async def main() -> int:
         print(f"Wrote {OUT.relative_to(ROOT)} ({len(archive)} verses)")
     copied, skipped = await copy_stable(archive, upload=args.upload)
     print(f"Stable keys copied {copied} · already present {skipped}")
+    live = await publish_listen_sections(
+        {str(vid): list(sections) for vid, sections in archive.items()}
+    )
+    print(f"Live Listen index: {len(live)} verses")
     return 0
 
 

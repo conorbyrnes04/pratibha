@@ -3,6 +3,8 @@
 
 Default slice is the essential Path primaries (not supporting readings).
 Skip anything already in the local/Supabase archive. English layers only.
+After speech lands, the live Listen index is published so the verse
+shows Play on production without waiting for a deploy.
 
 Usage:
     .venv/bin/python scripts/bake_listen.py
@@ -32,9 +34,11 @@ from app.tts import (  # noqa: E402
     _speech_key,
     available_sections,
     build_script,
+    publish_listen_sections,
     resolve_voice,
     synthesize,
     synthesize_cue,
+    verse_speech_key,
     voice_room_for,
 )
 
@@ -52,6 +56,11 @@ LIVING = [
     "seer-in-its-nature",
     "emptiness-and-compassion",
     "the-horse-of-conversation",
+    "you-are-that",
+    "nameless-source",
+    "become-sunlike",
+    "divine-darkness",
+    "what-is-up-to-you",
 ]
 
 
@@ -69,12 +78,17 @@ def _parse_tracks(path: Path) -> list[tuple[str, list[str], list[str]]]:
     return tracks
 
 
+TRACK_FILES = (
+    ROOT / "web/src/lib/learningPaths.ts",
+    ROOT / "web/src/lib/learn/livingTrails.ts",
+    ROOT / "web/src/lib/learn/lineageTrails.ts",
+    ROOT / "web/src/lib/learn/westernTrails.ts",
+)
+
+
 def _all_tracks() -> dict[str, list[str]]:
     out: dict[str, list[str]] = {}
-    for path in (
-        ROOT / "web/src/lib/learningPaths.ts",
-        ROOT / "web/src/lib/learn/livingTrails.ts",
-    ):
+    for path in TRACK_FILES:
         for tid, ids, _supporting in _parse_tracks(path):
             out[tid] = ids
     return out
@@ -82,10 +96,7 @@ def _all_tracks() -> dict[str, list[str]]:
 
 def _supporting_ids(track_ids: list[str]) -> list[str]:
     out: list[str] = []
-    for path in (
-        ROOT / "web/src/lib/learningPaths.ts",
-        ROOT / "web/src/lib/learn/livingTrails.ts",
-    ):
+    for path in TRACK_FILES:
         for tid, _primaries, supporting in _parse_tracks(path):
             if tid in track_ids:
                 out.extend(supporting)
@@ -195,6 +206,7 @@ async def bake_speech(
 
     made = skipped = chars_spent = 0
     missing: list[str] = []
+    pending: dict[str, list[str]] = {}
     jobs: list[tuple[dict, str, str, str]] = []
     async with httpx.AsyncClient() as client:
         voice_by_room: dict[str, str] = {}
@@ -218,6 +230,10 @@ async def bake_speech(
         key = _speech_key(voice_id, text)
         cached = listen_store.read_local(key) or await listen_store.get_object(key)
         if cached:
+            dest = verse_speech_key(vid, section)
+            if not listen_store.read_local(dest):
+                await listen_store.put_object(dest, cached)
+            pending.setdefault(vid, []).append(section)
             print(f"  skip {vid} {section} (cache)")
             skipped += 1
             continue
@@ -232,9 +248,10 @@ async def bake_speech(
             continue
         for attempt in range(4):
             try:
-                await synthesize(verse, section)
+                await synthesize(verse, section, publish=False)
                 chars_spent += n
                 made += 1
+                pending.setdefault(vid, []).append(section)
                 print(f"  bake {vid} {section} ({n} chars)")
                 break
             except Exception as exc:
@@ -246,6 +263,9 @@ async def bake_speech(
                     print(f"  retry {vid} {section} in {wait}s ({exc})")
                     await asyncio.sleep(wait)
         await asyncio.sleep(0.15)
+    if pending and not dry_run:
+        live = await publish_listen_sections(pending)
+        print(f"Live Listen index: {len(live)} verses")
     return made, skipped, chars_spent, missing
 
 

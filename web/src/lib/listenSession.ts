@@ -22,7 +22,11 @@ type Sub = () => void;
 
 const subs = new Set<Sub>();
 const planCache = new Map<string, Promise<ListenPlan | null>>();
+const ARCHIVE_TTL_MS = 20_000;
 let archivePromise: Promise<ListenArchive> | null = null;
+let archiveAt = 0;
+const archiveSubs = new Set<Sub>();
+let archivePoll: ReturnType<typeof setInterval> | null = null;
 let snap: ListenSnap = { verseId: null, section: null, phase: "idle", error: null };
 let token: number = 0;
 let speech: HTMLAudioElement | null = null;
@@ -45,8 +49,35 @@ export function subscribeListen(fn: Sub): () => void {
   };
 }
 
+export function subscribeListenArchive(fn: Sub): () => void {
+  archiveSubs.add(fn);
+  if (typeof window !== "undefined" && archivePoll == null) {
+    archivePoll = window.setInterval(() => {
+      archivePromise = null;
+      archiveAt = 0;
+      planCache.clear();
+      void loadListenArchive();
+    }, ARCHIVE_TTL_MS);
+  }
+  return () => {
+    archiveSubs.delete(fn);
+    if (archiveSubs.size === 0 && archivePoll != null) {
+      window.clearInterval(archivePoll);
+      archivePoll = null;
+    }
+  };
+}
+
 export function loadListenArchive(): Promise<ListenArchive> {
-  if (!archivePromise) archivePromise = listenArchive();
+  const now = Date.now();
+  if (!archivePromise || now - archiveAt > ARCHIVE_TTL_MS) {
+    archivePromise = listenArchive();
+    archiveAt = now;
+    planCache.clear();
+    void archivePromise.then(() => {
+      archiveSubs.forEach((fn) => fn());
+    });
+  }
   return archivePromise;
 }
 

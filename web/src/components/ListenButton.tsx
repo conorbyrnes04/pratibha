@@ -13,6 +13,7 @@ import {
   reportListenError,
   retainListen,
   subscribeListen,
+  subscribeListenArchive,
   toggleListen,
   type ListenPhase,
   type ListenSnap,
@@ -63,7 +64,7 @@ export function ListenButton({
 
   useEffect(() => {
     let cancelled = false;
-    (async () => {
+    async function pull() {
       const archive = await loadListenArchive();
       if (cancelled) return;
       if (archive.loaded) {
@@ -78,9 +79,14 @@ export function ListenButton({
       if (!ok) return;
       const next = await loadListenPlan(verseId);
       if (!cancelled) setPlan(next);
-    })();
+    }
+    void pull();
+    const stop = subscribeListenArchive(() => {
+      void pull();
+    });
     return () => {
       cancelled = true;
+      stop();
     };
   }, [verseId]);
 

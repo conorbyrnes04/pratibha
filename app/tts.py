@@ -15,7 +15,6 @@ import os
 import re
 import time
 from dataclasses import dataclass
-from functools import lru_cache
 from typing import Any, Literal
 from pathlib import Path
 
@@ -459,29 +458,104 @@ def _cue_key(room: VoiceRoom, edge: str) -> str:
     return f"cues/v2/{room}/{edge}.mp3"
 
 
-@lru_cache(maxsize=1)
-def listen_archive() -> dict[str, tuple[str, ...]]:
-    """Verse ids that already have ElevenLabs speech, from data/listen_archive.json."""
-    path = Path(__file__).resolve().parents[1] / "data" / "listen_archive.json"
-    if not path.is_file():
-        return {}
-    try:
-        raw = json.loads(path.read_text())
-    except Exception:
-        logger.exception("Could not read listen archive index")
-        return {}
+ARCHIVE_INDEX_KEY = "index/archive.json"
+_ARCHIVE_TTL = 20.0
+_archive_memo: dict[str, tuple[str, ...]] | None = None
+_archive_at = 0.0
+
+
+def _archive_path() -> Path:
+    return Path(__file__).resolve().parents[1] / "data" / "listen_archive.json"
+
+
+def normalize_listen_archive(raw: Any) -> dict[str, tuple[str, ...]]:
     out: dict[str, tuple[str, ...]] = {}
     if not isinstance(raw, dict):
         return out
     for vid, sections in raw.items():
-        if not isinstance(sections, list):
+        if isinstance(sections, tuple):
+            kinds = [s for s in sections if s in SPEAKABLE_SECTIONS]
+        elif isinstance(sections, list):
+            kinds = [s for s in sections if s in SPEAKABLE_SECTIONS]
+        else:
             continue
-        kinds = tuple(
-            s for s in sections if s in SPEAKABLE_SECTIONS
-        )
         if kinds:
-            out[str(vid)] = kinds
+            out[str(vid)] = tuple(dict.fromkeys(kinds))
     return out
+
+
+def _merge_archives(*parts: dict[str, tuple[str, ...]]) -> dict[str, tuple[str, ...]]:
+    acc: dict[str, list[str]] = {}
+    for part in parts:
+        for vid, sections in part.items():
+            bucket = acc.setdefault(str(vid), [])
+            for kind in sections:
+                if kind in SPEAKABLE_SECTIONS and kind not in bucket:
+                    bucket.append(kind)
+    return {vid: tuple(kinds) for vid, kinds in acc.items() if kinds}
+
+
+def bundled_listen_archive() -> dict[str, tuple[str, ...]]:
+    path = _archive_path()
+    if not path.is_file():
+        return {}
+    try:
+        return normalize_listen_archive(json.loads(path.read_text()))
+    except Exception:
+        logger.exception("Could not read bundled Listen archive")
+        return {}
+
+
+def write_bundled_listen_archive(archive: dict[str, tuple[str, ...]]) -> None:
+    path = _archive_path()
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        payload = {k: list(v) for k, v in sorted(archive.items())}
+        path.write_text(json.dumps(payload, indent=2) + "\n")
+    except OSError:
+        logger.debug("Could not write bundled Listen archive", exc_info=True)
+
+
+def listen_archive() -> dict[str, tuple[str, ...]]:
+    """Last known archive (bundled snapshot until a live refresh)."""
+    return _archive_memo if _archive_memo is not None else bundled_listen_archive()
+
+
+async def listen_archive_live(*, force: bool = False) -> dict[str, tuple[str, ...]]:
+    """Bundled snapshot merged with the live storage index written by bake."""
+    global _archive_memo, _archive_at
+    now = time.monotonic()
+    if not force and _archive_memo is not None and now - _archive_at < _ARCHIVE_TTL:
+        return _archive_memo
+    live: dict[str, tuple[str, ...]] = {}
+    blob = await listen_store.get_object(ARCHIVE_INDEX_KEY, bypass_local=True)
+    if blob:
+        try:
+            live = normalize_listen_archive(json.loads(blob.decode("utf-8")))
+        except Exception:
+            logger.exception("Could not parse live Listen archive")
+    merged = _merge_archives(bundled_listen_archive(), live)
+    _archive_memo = merged
+    _archive_at = now
+    return merged
+
+
+async def publish_listen_sections(updates: dict[str, list[str]]) -> dict[str, tuple[str, ...]]:
+    """Merge newly baked layers into the live index so Listen appears without a deploy."""
+    global _archive_memo, _archive_at
+    extra = normalize_listen_archive(updates)
+    if not extra:
+        return await listen_archive_live()
+    current = dict(await listen_archive_live(force=True))
+    merged = _merge_archives(current, extra)
+    body = (json.dumps({k: list(v) for k, v in sorted(merged.items())}, indent=2) + "\n").encode("utf-8")
+    ok = await listen_store.put_object(ARCHIVE_INDEX_KEY, body, content_type="application/json")
+    if not ok and listen_store.configured():
+        logger.warning("Live Listen archive did not upload; Listen may wait for the next deploy")
+    write_bundled_listen_archive(merged)
+    _archive_memo = merged
+    _archive_at = time.monotonic()
+    return merged
 
 
 def stamp_listen_sections(verse: dict[str, Any]) -> dict[str, Any]:
@@ -576,7 +650,12 @@ async def synthesize_cue(room: VoiceRoom, edge: str) -> bytes:
     return audio
 
 
-async def synthesize(verse: dict[str, Any], section: ListenSection = "all") -> tuple[bytes, ListenScript]:
+async def synthesize(
+    verse: dict[str, Any],
+    section: ListenSection = "all",
+    *,
+    publish: bool = True,
+) -> tuple[bytes, ListenScript]:
     key = _api_key()
     if not key:
         raise RuntimeError("ElevenLabs is not configured")
@@ -595,9 +674,12 @@ async def synthesize(verse: dict[str, Any], section: ListenSection = "all") -> t
         if cached:
             if verse_id:
                 await listen_store.put_object(verse_speech_key(verse_id, section), cached)
-            return cached, ListenScript(room, voice_id, text, title, section)
-        audio = await _speak(client, voice_id, text)
-        await listen_store.put_object(store_key, audio)
-        if verse_id:
-            await listen_store.put_object(verse_speech_key(verse_id, section), audio)
+            audio = cached
+        else:
+            audio = await _speak(client, voice_id, text)
+            await listen_store.put_object(store_key, audio)
+            if verse_id:
+                await listen_store.put_object(verse_speech_key(verse_id, section), audio)
+        if publish and verse_id and section in SPEAKABLE_SECTIONS:
+            await publish_listen_sections({verse_id: [section]})
         return audio, ListenScript(room, voice_id, text, title, section)

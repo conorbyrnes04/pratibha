@@ -108,12 +108,13 @@ async def ensure_bucket(client: httpx.AsyncClient) -> bool:
     return False
 
 
-async def get_object(key: str) -> bytes | None:
-    cached = read_local(key)
-    if cached:
-        return cached
+async def get_object(key: str, *, bypass_local: bool = False) -> bytes | None:
+    if not bypass_local:
+        cached = read_local(key)
+        if cached:
+            return cached
     if not configured():
-        return None
+        return None if bypass_local else read_local(key)
     async with httpx.AsyncClient() as client:
         if not await ensure_bucket(client):
             return None

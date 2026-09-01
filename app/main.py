@@ -69,6 +69,10 @@ async def lifespan(_app: FastAPI):
         _warn_missing_aliases(verses)
         # Warm lexicon cache (empty until Agent A seeds data/lexicon/lemmas).
         await asyncio.to_thread(get_lexicon)
+        try:
+            await listen_tts.listen_archive_live()
+        except Exception:
+            logger.debug("Listen archive warm failed", exc_info=True)
 
     task = asyncio.create_task(_load())
     try:
@@ -256,6 +260,7 @@ async def list_verses(
     """Library index — slim payloads so the browser isn't handed ~9MB of layers."""
     if _catalog_rate_limited(request):
         raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
+    await listen_tts.listen_archive_live()
     items = filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity))
     total = len(items)
     start = max(0, offset)
@@ -327,6 +332,7 @@ async def get_verse(sid: str, locale: str | None = None):
     v = get_verse_by_id(sid)
     if v is None:
         raise HTTPException(404, "Not found")
+    await listen_tts.listen_archive_live()
     listen_tts.stamp_listen_sections(v)
     if locale and is_locale(locale):
         return await localize_verse(v, locale)
@@ -375,12 +381,12 @@ async def listen_archive_index():
     from . import listen_store
 
     ready = listen_store.playback_ready()
-    verses = (
-        {vid: list(sections) for vid, sections in listen_tts.listen_archive().items()}
-        if ready
-        else {}
+    archive = await listen_tts.listen_archive_live() if ready else {}
+    verses = {vid: list(sections) for vid, sections in archive.items()}
+    return JSONResponse(
+        content={"ok": True, "configured": ready, "verses": verses},
+        headers={"Cache-Control": "no-store"},
     )
-    return {"ok": True, "configured": ready, "verses": verses}
 
 
 @app.get("/listen/plan")
@@ -392,10 +398,12 @@ async def listen_plan(verse_id: str):
     verse = _find_verse(verse_id)
     if verse is None:
         raise HTTPException(status_code=404, detail="Not found")
+    archive = await listen_tts.listen_archive_live()
+    vid = str(verse.get("_id") or verse_id)
     return {
         "ok": True,
         "room": listen_tts.voice_room_for(verse),
-        "sections": listen_tts.archived_sections(verse),
+        "sections": list(archive.get(vid) or ()),
     }
 
 
