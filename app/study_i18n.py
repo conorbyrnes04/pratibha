@@ -104,6 +104,7 @@ Rules:
 - Do not invent claims. Commentary must stay a philosophical claim, not a restatement of the translation.
 - Practice stays an instruction the reader can do today.
 - Titles stay titles: same length and pedagogical force, not explanations.
+- Hero quotes (`quote` keys) stay one breath: same length and force, no added explanation.
 - Key-term heads that are already IAST or source script stay as they are; translate the gloss.
 - Citations stay in scholarly form; translate the resonance and divergence sentences.
 - Do not translate source-script or IAST-only strings if they appear.
