@@ -65,8 +65,10 @@ async def main(dir_path: str, limit: int = 0):
 
     total = 0
     async with httpx.AsyncClient(timeout=60) as http:
-        for fp in files:
+        for idx, fp in enumerate(files, start=1):
             path = Path(fp)
+            if idx % 50 == 0 or idx == len(files):
+                print(f"[{idx}/{len(files)}] {total} chunks so far", flush=True)
             try:
                 y = yaml.safe_load(path.read_text(encoding="utf-8", errors="replace")) or {}
                 if not isinstance(y, dict):

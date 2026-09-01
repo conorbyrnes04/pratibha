@@ -46,6 +46,8 @@ COLLS = {
         lang="Sanskrit (IAST)", sanskrit=True, edition="GRETIL Māṇḍūkyopaniṣad + Gauḍapāda-kārikā e-text"),
     "pseudo_dionysius": dict(src="greek/divine_names_greek_unicode.txt",
         lang="Greek", sanskrit=False, edition="Pseudo-Dionysius, Divine Names, Greek (Migne PG3, Unicode; PD)"),
+    "hatha_yoga_pradipika": dict(src="indian/hathayogapradipika_gretil_iast_sanskrit.txt",
+        lang="Sanskrit (IAST)", sanskrit=True, edition="GRETIL Svātmārāma Haṭhayogapradīpikā e-text (CC BY-NC-SA 4.0)"),
 }
 
 
