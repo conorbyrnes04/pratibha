@@ -282,6 +282,21 @@ function listenHeaders(accessToken?: string | null): Record<string, string> {
   return headers;
 }
 
+export async function listenAnnounce(
+  verseId: string,
+  section: Exclude<ListenSection, "all">,
+  accessToken?: string | null,
+): Promise<Blob> {
+  const res = await fetch(
+    `${API_BASE}/listen/announce/${section}?verse_id=${encodeURIComponent(verseId)}`,
+    { cache: "no-store", headers: listenHeaders(accessToken) },
+  );
+  if (!res.ok) {
+    throw new ListenApiError("Could not load this heading.", res.status);
+  }
+  return res.blob();
+}
+
 export async function listenCue(
   room: string,
   edge: "open" | "close",

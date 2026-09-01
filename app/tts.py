@@ -1,10 +1,14 @@
 """ElevenLabs listen path — English layers only, voice room per tradition.
 
 Speech is archived in object storage so a later subscription cancel keeps
-what we already generated. Dakota uses a real Dakota/Lakota/Nakota speaker
-only when one is pinned or present in the workspace — never a costume
-"Native American" accent. Christian stays unmarked English.
-Original / IAST are never spoken.
+what we already generated. Layer titles ("Translation.", "Commentary.",
+"Practice.") are baked once per voice at announce/{voice_id}/{section}.mp3.
+Accented rooms must bake with a matching accent
+(Indian English, Nigerian English, …) — never unmarked American. Dakota uses
+a real Dakota/Lakota/Nakota speaker only when one is pinned or present in the
+workspace — never a costume "Native American" accent. Christian and ACIM stay
+unmarked English. Lal Ded uses the Indic female pin. Original / IAST are
+never spoken.
 """
 from __future__ import annotations
 
@@ -29,10 +33,15 @@ _DEFAULT_VOICE = "nPczCjzI2devNBz1zQrb"  # Brian — unmarked American only
 # Pins live here (not only .env) so a reload picks them up. Env still wins.
 _ROOM_DEFAULT_VOICES: dict[str, str] = {
     "indic": "aoVMYhTrJqXZPDJhHqkj",  # Anagh — Indian English
-    "yoruba": "ytMkkl3KqcF3nhlFgtys",
-    "sinosphere": "mBoVD3461U2BagYEwjeo",
-    "sufi": "PleK417YVMP2SUWm8Btb",
-    "hellenic": "1gkXJMvrzBWAwt0XqBaa",
+    "yoruba": "ytMkkl3KqcF3nhlFgtys",  # Olu — Nigerian English
+    "sinosphere": "mBoVD3461U2BagYEwjeo",  # Lee — Mandarin-accented English
+    "sufi": "PleK417YVMP2SUWm8Btb",  # Amir — Persian-accented English
+    "hellenic": "1gkXJMvrzBWAwt0XqBaa",  # Eleni — Greek English (GR+EN)
+    "hebrew": "uB0WJXvgKnplDDHGHPvg",  # Pratibha Hebrew — Israeli English
+}
+# Female authors (Lal Ded). ACIM stays on the unmarked male pin (Brian).
+_ROOM_DEFAULT_VOICES_FEMALE: dict[str, str] = {
+    "indic": "gM97WcXnv5iYPHhVZJN8",  # Rashi — Indian English
 }
 _MODEL = "eleven_multilingual_v2"
 _MAX_CHARS = 4200
@@ -59,6 +68,11 @@ _DAKOTA_SELF_RE = re.compile(r"\b(dakota|lakota|nakota|oceti\s*sakowin)\b", re.I
 ListenSection = Literal["translation", "commentary", "practice", "all"]
 SPEAKABLE_SECTIONS: tuple[ListenSection, ...] = ("translation", "commentary", "practice")
 VoiceRoom = str
+VoiceGender = Literal["female", "male"]
+_FEMALE_AUTHOR_RE = re.compile(
+    r"lalla|lal.?ded|lalleshwari|vakyani|vākyāni",
+    re.I,
+)
 
 _ROOM_ACCENTS: dict[str, tuple[str, ...]] = {
     "indic": ("indian", "indian english", "south asian", "hindi"),
@@ -227,6 +241,18 @@ def voice_room_for(verse: dict[str, Any]) -> VoiceRoom:
     return "unmarked"
 
 
+def voice_gender_for(verse: dict[str, Any]) -> VoiceGender:
+    """Named women speak in a woman's voice. ACIM and other unmarked works stay male."""
+    if _FEMALE_AUTHOR_RE.search(_haystack(verse)):
+        return "female"
+    return "male"
+
+
+def room_requires_accent(room: VoiceRoom) -> bool:
+    """Dakota never gets a costume accent. Christian / ACIM stay unmarked English."""
+    return bool(_ROOM_ACCENTS.get(room)) and room != "dakota"
+
+
 # Really-large collections offer Listen only for curated key verses (scripts/
 # earmark_tts_key.py sets `tts_key: true`). Bhagavad Gītā is intentionally NOT here —
 # every one of its verses is listenable.
@@ -273,9 +299,13 @@ async def archived_audio(
     cached = await listen_store.get_object(verse_speech_key(vid, section)) if vid else None
     if not cached and text:
         if not voice_id:
-            pinned = _env_voice(room) or _ROOM_DEFAULT_VOICES.get(room) or _unmarked_voice()
+            gender = voice_gender_for(verse)
+            pinned = _env_voice(room, gender) or (
+                _unmarked_voice() if not room_requires_accent(room) else ""
+            )
             voice_id = pinned
-        cached = await listen_store.get_object(_speech_key(voice_id, text))
+        if voice_id:
+            cached = await listen_store.get_object(_speech_key(voice_id, text))
     if not cached:
         return None
     return cached, ListenScript(room, voice_id or "", text, title, section)
@@ -287,7 +317,12 @@ def archived_sections(verse: dict[str, Any]) -> list[ListenSection]:
     return list(listen_archive().get(vid) or ())
 
 
-def _env_voice(room: VoiceRoom) -> str:
+def _env_voice(room: VoiceRoom, gender: VoiceGender = "male") -> str:
+    if gender == "female":
+        return (
+            (os.getenv(f"ELEVENLABS_VOICE_{room.upper()}_FEMALE") or "").strip()
+            or _ROOM_DEFAULT_VOICES_FEMALE.get(room, "")
+        )
     return (
         (os.getenv(f"ELEVENLABS_VOICE_{room.upper()}") or "").strip()
         or _ROOM_DEFAULT_VOICES.get(room, "")
@@ -324,10 +359,26 @@ def _is_respectful_dakota_voice(voice: dict[str, Any]) -> bool:
     return True
 
 
-def _match_account_voice(room: VoiceRoom) -> str:
+def _voice_gender_label(voice: dict[str, Any]) -> str:
+    labels = voice.get("labels") if isinstance(voice.get("labels"), dict) else {}
+    return str(voice.get("gender") or labels.get("gender") or "").strip().lower()
+
+
+def _gender_ok(voice: dict[str, Any], gender: VoiceGender) -> bool:
+    label = _voice_gender_label(voice)
+    if gender == "female":
+        return label in {"female", "feminine"}
+    if label in {"female", "feminine"}:
+        return False
+    return True
+
+
+def _match_account_voice(room: VoiceRoom, gender: VoiceGender = "male") -> str:
     if room == "dakota":
         for voice in _account_voices or []:
             if not _is_respectful_dakota_voice(voice):
+                continue
+            if not _gender_ok(voice, gender):
                 continue
             vid = str(voice.get("voice_id") or "").strip()
             if vid:
@@ -339,6 +390,8 @@ def _match_account_voice(room: VoiceRoom) -> str:
     preferred: list[str] = []
     fallback: list[str] = []
     for voice in _account_voices or []:
+        if not _gender_ok(voice, gender):
+            continue
         labels = voice.get("labels") if isinstance(voice.get("labels"), dict) else {}
         accent = str(labels.get("accent") or "").strip().lower()
         name = str(voice.get("name") or "").lower()
@@ -348,7 +401,7 @@ def _match_account_voice(room: VoiceRoom) -> str:
         vid = str(voice.get("voice_id") or "").strip()
         if not vid:
             continue
-        if use in {"narration", "audiobook", "narrative", "meditation", ""}:
+        if use in {"narration", "audiobook", "narrative", "narrative_story", "meditation", ""}:
             preferred.append(vid)
         else:
             fallback.append(vid)
@@ -422,22 +475,41 @@ async def search_dakota_library(client: httpx.AsyncClient) -> list[dict[str, str
     return found
 
 
-async def resolve_voice(room: VoiceRoom, client: httpx.AsyncClient) -> str:
-    pinned = _env_voice(room)
+async def resolve_voice(
+    room: VoiceRoom,
+    client: httpx.AsyncClient,
+    gender: VoiceGender = "male",
+) -> str:
+    """Pick a voice for this room. Accented traditions must not fall back to Brian.
+
+    Pin ELEVENLABS_VOICE_{ROOM} (and _FEMALE for named women). Dakota may use
+    unmarked English when no real Dakota/Lakota/Nakota speaker is in the workspace.
+    """
+    pinned = _env_voice(room, gender)
     if pinned:
         return pinned
-    if room not in {"unmarked", "dakota"}:
-        await _refresh_account_voices(client)
-        matched = _match_account_voice(room)
-        if matched:
-            return matched
+    await _refresh_account_voices(client)
+    matched = _match_account_voice(room, gender)
+    if matched:
+        return matched
     if room == "dakota":
-        await _refresh_account_voices(client)
-        matched = _match_account_voice(room)
-        if matched:
-            return matched
-        # Do not invent an accent. Fall through to unmarked English.
+        # Do not invent an accent.
+        return _unmarked_voice()
+    if room_requires_accent(room):
+        suffix = "_FEMALE" if gender == "female" else ""
+        raise RuntimeError(
+            f"Listen bake requires an accented {room} {gender} voice. "
+            f"Pin ELEVENLABS_VOICE_{room.upper()}{suffix} — do not use unmarked English."
+        )
+    if gender == "female":
+        female_unmarked = (os.getenv("ELEVENLABS_VOICE_UNMARKED_FEMALE") or "").strip()
+        if female_unmarked:
+            return female_unmarked
     return _unmarked_voice()
+
+
+async def resolve_verse_voice(verse: dict[str, Any], client: httpx.AsyncClient) -> str:
+    return await resolve_voice(voice_room_for(verse), client, voice_gender_for(verse))
 
 
 def _clip(text: str) -> str:
@@ -454,6 +526,77 @@ def _speech_key(voice_id: str, text: str) -> str:
 def verse_speech_key(verse_id: str, section: str) -> str:
     safe = str(verse_id or "").strip().replace("/", "__")
     return f"verse/{safe}/{section}.mp3"
+
+
+SECTION_ANNOUNCE: dict[str, str] = {
+    "translation": "Translation.",
+    "commentary": "Commentary.",
+    "practice": "Practice.",
+}
+
+
+def announce_key(voice_id: str, section: str) -> str:
+    safe = str(voice_id or "").strip() or "unknown"
+    return f"announce/{safe}/{section}.mp3"
+
+
+def pinned_voice_for(verse: dict[str, Any]) -> str:
+    """Resolve the archive voice without calling ElevenLabs."""
+    room = voice_room_for(verse)
+    gender = voice_gender_for(verse)
+    return _env_voice(room, gender) or (
+        _unmarked_voice() if not room_requires_accent(room) else ""
+    )
+
+
+def iter_pinned_voices() -> list[tuple[str, VoiceGender, str]]:
+    """Every room/gender pin we bake section headers for."""
+    seen: set[str] = set()
+    out: list[tuple[str, VoiceGender, str]] = []
+
+    def add(room: str, gender: VoiceGender, vid: str) -> None:
+        voice = (vid or "").strip()
+        if not voice or voice in seen:
+            return
+        seen.add(voice)
+        out.append((room, gender, voice))
+
+    add("unmarked", "male", _unmarked_voice())
+    female_unmarked = (os.getenv("ELEVENLABS_VOICE_UNMARKED_FEMALE") or "").strip()
+    add("unmarked", "female", female_unmarked)
+    for room, vid in _ROOM_DEFAULT_VOICES.items():
+        add(room, "male", _env_voice(room, "male") or vid)
+    for room, vid in _ROOM_DEFAULT_VOICES_FEMALE.items():
+        add(room, "female", _env_voice(room, "female") or vid)
+    return out
+
+
+async def archived_announce(verse: dict[str, Any], section: str) -> bytes | None:
+    """Baked 'Translation.' / 'Commentary.' / 'Practice.' in this verse's voice."""
+    if section not in SECTION_ANNOUNCE:
+        return None
+    voice_id = pinned_voice_for(verse)
+    if not voice_id:
+        return None
+    return await listen_store.get_object(announce_key(voice_id, section))
+
+
+async def synthesize_announce(voice_id: str, section: str) -> bytes:
+    text = SECTION_ANNOUNCE.get(section)
+    if not text:
+        raise ValueError("Unknown announce section")
+    if not (voice_id or "").strip():
+        raise ValueError("Announce needs a voice id")
+    key = announce_key(voice_id, section)
+    cached = await listen_store.get_object(key)
+    if cached:
+        return cached
+    if not _api_key():
+        raise RuntimeError("ElevenLabs is not configured")
+    async with httpx.AsyncClient() as client:
+        audio = await _speak(client, voice_id, text)
+    await listen_store.put_object(key, audio)
+    return audio
 
 
 def _cue_key(room: VoiceRoom, edge: str) -> str:
@@ -668,7 +811,7 @@ async def synthesize(
     if not text:
         raise ValueError("Nothing to speak on this passage")
     async with httpx.AsyncClient() as client:
-        voice_id = await resolve_voice(room, client)
+        voice_id = await resolve_verse_voice(verse, client)
         store_key = _speech_key(voice_id, text)
         cached = await listen_store.get_object(store_key)
         title = str(verse.get("title") or "")

@@ -403,6 +403,7 @@ async def listen_plan(verse_id: str):
     return {
         "ok": True,
         "room": listen_tts.voice_room_for(verse),
+        "voice_id": listen_tts.pinned_voice_for(verse),
         "sections": list(archive.get(vid) or ()),
     }
 
@@ -429,6 +430,38 @@ async def listen_cue(
             "Cache-Control": "public, max-age=31536000, immutable",
             "X-Listen-Room": room,
             "Content-Disposition": 'inline; filename="cue.mp3"',
+        },
+    )
+
+
+@app.get("/listen/announce/{section}")
+async def listen_announce(
+    section: str,
+    verse_id: str,
+    _user: AuthUser | None = Depends(require_user_if_configured),
+):
+    """Spoken layer title in this verse's voice — baked once per voice, not per passage."""
+    from . import listen_store
+
+    if not listen_store.playback_ready():
+        raise HTTPException(status_code=503, detail="Listen is not configured")
+    if section not in {"translation", "commentary", "practice"}:
+        raise HTTPException(status_code=422, detail="Announce must be a listen section")
+    verse = _find_verse(verse_id)
+    if verse is None:
+        raise HTTPException(status_code=404, detail="Not found")
+    audio = await listen_tts.archived_announce(verse, section)
+    if not audio:
+        raise HTTPException(status_code=404, detail="This heading has not been spoken yet.")
+    voice_id = listen_tts.pinned_voice_for(verse)
+    return Response(
+        content=audio,
+        media_type="audio/mpeg",
+        headers={
+            "Cache-Control": "public, max-age=86400",
+            "X-Listen-Section": section,
+            "X-Listen-Voice": voice_id,
+            "Content-Disposition": 'inline; filename="announce.mp3"',
         },
     )
 

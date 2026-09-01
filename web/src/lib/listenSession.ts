@@ -1,5 +1,6 @@
 import {
   listenArchive,
+  listenAnnounce,
   listenCue,
   listenPassage,
   listenPlan,
@@ -31,6 +32,7 @@ let snap: ListenSnap = { verseId: null, section: null, phase: "idle", error: nul
 let token: number = 0;
 let speech: HTMLAudioElement | null = null;
 let speechUrl: string | null = null;
+let accent: HTMLAudioElement | null = null;
 let retainers = 0;
 
 function emit(next: Partial<ListenSnap>) {
@@ -110,6 +112,8 @@ function stopNow() {
   token += 1;
   speech?.pause();
   if (speech) speech.src = "";
+  accent?.pause();
+  if (accent) accent.src = "";
   revokeSpeech();
 }
 
@@ -137,6 +141,24 @@ function playBlob(el: HTMLAudioElement, blob: Blob): Promise<void> {
   });
 }
 
+function roomRootFreq(room: string): number {
+  return room === "indic"
+    ? 196
+    : room === "sinosphere"
+      ? 220
+      : room === "yoruba"
+        ? 98
+        : room === "hebrew"
+          ? 311
+          : room === "hellenic"
+            ? 165
+            : room === "sufi"
+              ? 147
+              : room === "dakota"
+                ? 110
+                : 174;
+}
+
 function playRoomTone(room: string, edge: "open" | "close"): Promise<void> {
   const AudioCtx = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
   if (!AudioCtx) return Promise.resolve();
@@ -153,24 +175,8 @@ function playRoomTone(room: string, edge: "open" | "close"): Promise<void> {
   filter.type = "lowpass";
   filter.frequency.value = 1400;
   filter.Q.value = 0.4;
-  const freq =
-    room === "indic"
-      ? 196
-      : room === "sinosphere"
-        ? 220
-        : room === "yoruba"
-          ? 98
-          : room === "hebrew"
-            ? 311
-            : room === "hellenic"
-              ? 165
-              : room === "sufi"
-                ? 147
-                : room === "dakota"
-                  ? 110
-                  : 174;
   osc.type = "sine";
-  osc.frequency.value = freq;
+  osc.frequency.value = roomRootFreq(room);
   gain.gain.setValueAtTime(0.0001, now);
   gain.gain.exponentialRampToValueAtTime(0.16, now + 0.05);
   gain.gain.exponentialRampToValueAtTime(0.0001, now + dur);
@@ -188,22 +194,68 @@ function playRoomTone(room: string, edge: "open" | "close"): Promise<void> {
   });
 }
 
+/** Two-note turn between layers — distinct from the open/close room cue. */
+function playLayerTone(room: string, next: Exclude<ListenSection, "all">): Promise<void> {
+  const AudioCtx = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+  if (!AudioCtx) return Promise.resolve();
+  const ctx = new AudioCtx();
+  const now = ctx.currentTime;
+  const master = ctx.createGain();
+  master.gain.value = 0.07;
+  master.connect(ctx.destination);
+
+  const root = roomRootFreq(room);
+  const second =
+    next === "practice" ? root * 0.75 : next === "commentary" ? root * 1.5 : root * 1.25;
+
+  const note = (freq: number, t0: number, dur: number) => {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    const filter = ctx.createBiquadFilter();
+    filter.type = "lowpass";
+    filter.frequency.value = 1800;
+    filter.Q.value = 0.35;
+    osc.type = "sine";
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0.0001, t0);
+    gain.gain.exponentialRampToValueAtTime(0.18, t0 + 0.03);
+    gain.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    osc.connect(filter);
+    filter.connect(gain);
+    gain.connect(master);
+    osc.start(t0);
+    osc.stop(t0 + dur);
+  };
+
+  note(root, now, 0.22);
+  note(second, now + 0.2, 0.28);
+  const total = 0.52;
+  return new Promise((resolve) => {
+    window.setTimeout(() => {
+      void ctx.close();
+      resolve();
+    }, total * 1000 + 40);
+  });
+}
+
 async function playCueBlob(blob: Blob, volume = 0.58): Promise<void> {
   const url = URL.createObjectURL(blob);
   const el = new Audio();
+  accent = el;
   el.volume = volume;
   el.src = url;
   try {
     await new Promise<void>((resolve, reject) => {
-      const done = () => {
+      const cleanup = () => {
         el.removeEventListener("ended", onEnded);
         el.removeEventListener("error", onError);
+      };
+      const onEnded = () => {
+        cleanup();
         resolve();
       };
-      const onEnded = () => done();
       const onError = () => {
-        el.removeEventListener("ended", onEnded);
-        el.removeEventListener("error", onError);
+        cleanup();
         reject(new Error("Playback failed."));
       };
       el.addEventListener("ended", onEnded);
@@ -212,6 +264,7 @@ async function playCueBlob(blob: Blob, volume = 0.58): Promise<void> {
     });
   } finally {
     URL.revokeObjectURL(url);
+    if (accent === el) accent = null;
   }
 }
 
@@ -225,6 +278,19 @@ async function playCue(
     await playCueBlob(blob);
   } catch {
     await playRoomTone(room, edge);
+  }
+}
+
+async function playAnnounce(
+  verseId: string,
+  section: Exclude<ListenSection, "all">,
+  accessToken?: string | null,
+): Promise<void> {
+  try {
+    const blob = await listenAnnounce(verseId, section, accessToken);
+    await playCueBlob(blob, 0.72);
+  } catch {
+    // Missing heading must not fail Listen — the passage still plays.
   }
 }
 
@@ -275,9 +341,18 @@ export async function toggleListen(opts: {
     speech = el;
 
     await playCue(room, "open", accessToken);
+    let first = true;
     for (const part of queue) {
       if (run !== token) return;
-      const { blob } = await listenPassage(verseId, accessToken, part);
+      if (!first) {
+        await playLayerTone(room, part);
+        if (run !== token) return;
+      }
+      first = false;
+      const passageP = listenPassage(verseId, accessToken, part);
+      await playAnnounce(verseId, part, accessToken);
+      if (run !== token) return;
+      const { blob } = await passageP;
       if (run !== token) return;
       emit({ phase: "playing", section: section === "all" ? "all" : part });
       await playBlob(el, blob);
