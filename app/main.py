@@ -37,6 +37,7 @@ from .data_loader import (
     pick_daily,
 )
 from .lexicon_api import find_lemma_passages, get_lemma, get_lexicon, list_lemmas
+from .study_i18n import is_locale, localize_verse, translate_fields
 from .collection_aliases import (
     belongs_to_selection,
     meta_collection_slug,
@@ -205,11 +206,29 @@ def _verse_list_item(v: dict[str, Any]) -> dict[str, Any]:
 
 
 @app.get("/verse/{sid}")
-async def get_verse(sid: str):
+async def get_verse(sid: str, locale: str | None = None):
     v = get_verse_by_id(sid)
     if v is None:
         raise HTTPException(404, "Not found")
+    if locale and is_locale(locale):
+        return await localize_verse(v, locale)
     return v
+
+
+class StudyTranslateRequest(BaseModel):
+    locale: str
+    fields: dict[str, str]
+
+
+@app.post("/study/translate")
+async def study_translate(body: StudyTranslateRequest):
+    if not is_locale(body.locale):
+        raise HTTPException(400, "Unsupported locale")
+    clean = {key: value for key, value in body.fields.items() if str(value or "").strip()}
+    if not clean:
+        return {"locale": body.locale, "fields": {}}
+    fields = await translate_fields(body.locale, clean)
+    return {"locale": body.locale, "fields": fields}
 
 
 @app.get("/verse/{sid}/related")
