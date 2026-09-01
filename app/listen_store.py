@@ -40,6 +40,16 @@ def configured() -> bool:
     return bool(_supabase_url() and _service_key())
 
 
+def has_local_archive() -> bool:
+    if not _CACHE_DIR.is_dir():
+        return False
+    return any(_CACHE_DIR.glob("speech__*")) or any(_CACHE_DIR.glob("cues__*"))
+
+
+def playback_ready() -> bool:
+    return configured() or has_local_archive()
+
+
 def local_path(key: str) -> Path:
     return _CACHE_DIR / key.replace("/", "__")
 

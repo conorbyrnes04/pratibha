@@ -45,7 +45,7 @@ export function LearnTrailReading({
           </button>
           <p className="learn-trail-reading__gate">{gateTitle}</p>
         </div>
-        <ListenButton verseId={item._id} verse={study} variant="header" />
+        <ListenButton verseId={item._id} variant="header" />
       </header>
 
       <p className="passage-reading__meta">
@@ -75,7 +75,7 @@ export function LearnTrailReading({
         <LayerBlock layer={translationLayer} variant="plain" verseId={item._id} />
       ) : originalLayer ? null : (
         <section className="passage-layer passage-layer--translation">
-          <ListenButton verseId={item._id} verse={study} section="translation" variant="layer" />
+          <ListenButton verseId={item._id} section="translation" variant="layer" />
           <h2 className="passage-layer__label">{t("layers.translation")}</h2>
           <p className="reading-prose mt-4">{passagePreview(study)}</p>
         </section>

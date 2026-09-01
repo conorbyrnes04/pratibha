@@ -360,14 +360,16 @@ async def listen_status():
 
     return {
         "ok": True,
-        "configured": listen_tts.configured(),
+        "configured": listen_store.playback_ready(),
         "storage": listen_store.configured(),
     }
 
 
 @app.get("/listen/plan")
 async def listen_plan(verse_id: str):
-    if not listen_tts.configured():
+    from . import listen_store
+
+    if not listen_store.playback_ready():
         raise HTTPException(status_code=503, detail="Listen is not configured")
     verse = _find_verse(verse_id)
     if verse is None:
@@ -375,7 +377,7 @@ async def listen_plan(verse_id: str):
     return {
         "ok": True,
         "room": listen_tts.voice_room_for(verse),
-        "sections": listen_tts.available_sections(verse),
+        "sections": await listen_tts.archived_sections(verse),
     }
 
 
@@ -385,15 +387,15 @@ async def listen_cue(
     edge: str,
     _user: AuthUser | None = Depends(require_user_if_configured),
 ):
-    if not listen_tts.configured():
+    from . import listen_store
+
+    if not listen_store.playback_ready():
         raise HTTPException(status_code=503, detail="Listen is not configured")
     if edge not in {"open", "close"}:
         raise HTTPException(status_code=422, detail="Cue must be open or close")
-    try:
-        audio = await listen_tts.synthesize_cue(room, edge)
-    except Exception:
-        logger.exception("Listen cue failed")
-        raise HTTPException(status_code=502, detail="Could not make this cue")
+    audio = await listen_tts.archived_cue(room, edge)
+    if not audio:
+        raise HTTPException(status_code=404, detail="This cue has not been spoken yet.")
     return Response(
         content=audio,
         media_type="audio/mpeg",
@@ -411,20 +413,19 @@ async def listen_passage(
     request: Request,
     _user: AuthUser | None = Depends(require_user_if_configured),
 ):
-    if not listen_tts.configured():
+    from . import listen_store
+
+    if not listen_store.playback_ready():
         raise HTTPException(status_code=503, detail="Listen is not configured")
     if _hit_limited(_listen_hits, _client_ip(request), _LISTEN_RATE_MAX):
         raise HTTPException(status_code=429, detail="Listen is resting. Try again in a minute.")
     verse = _find_verse(req.verse_id)
     if verse is None:
         raise HTTPException(status_code=404, detail="Not found")
-    try:
-        audio, script = await listen_tts.synthesize(verse, req.section)
-    except ValueError as exc:
-        raise HTTPException(status_code=422, detail=str(exc)) from exc
-    except Exception:
-        logger.exception("Listen synthesis failed")
-        raise HTTPException(status_code=502, detail="Could not speak this passage")
+    hit = await listen_tts.archived_audio(verse, req.section)
+    if hit is None:
+        raise HTTPException(status_code=404, detail="This passage has not been spoken yet.")
+    audio, script = hit
     return Response(
         content=audio,
         media_type="audio/mpeg",

@@ -3,6 +3,7 @@ import {
   listenPassage,
   listenPlan,
   ListenApiError,
+  type ListenPlan,
   type ListenSection,
 } from "@/lib/api";
 
@@ -18,10 +19,12 @@ export type ListenSnap = {
 type Sub = () => void;
 
 const subs = new Set<Sub>();
+const planCache = new Map<string, Promise<ListenPlan | null>>();
 let snap: ListenSnap = { verseId: null, section: null, phase: "idle", error: null };
 let token: number = 0;
 let speech: HTMLAudioElement | null = null;
 let speechUrl: string | null = null;
+let retainers = 0;
 
 function emit(next: Partial<ListenSnap>) {
   snap = { ...snap, ...next };
@@ -36,6 +39,24 @@ export function subscribeListen(fn: Sub): () => void {
   subs.add(fn);
   return () => {
     subs.delete(fn);
+  };
+}
+
+export function loadListenPlan(verseId: string): Promise<ListenPlan | null> {
+  let hit = planCache.get(verseId);
+  if (!hit) {
+    hit = listenPlan(verseId);
+    planCache.set(verseId, hit);
+  }
+  return hit;
+}
+
+/** Keep playback alive while any Path/read "Play all" control is still mounted. */
+export function retainListen(): () => void {
+  retainers += 1;
+  return () => {
+    retainers = Math.max(0, retainers - 1);
+    if (retainers === 0) stopListen();
   };
 }
 
@@ -83,52 +104,42 @@ function playRoomTone(room: string, edge: "open" | "close"): Promise<void> {
   const ctx = new AudioCtx();
   const now = ctx.currentTime;
   const master = ctx.createGain();
-  master.gain.value = edge === "open" ? 0.18 : 0.12;
+  master.gain.value = edge === "open" ? 0.08 : 0.05;
   master.connect(ctx.destination);
 
-  const dur = edge === "open" ? 1.6 : 1.15;
-  if (room === "dakota") {
-    const buffer = ctx.createBuffer(1, Math.floor(ctx.sampleRate * dur), ctx.sampleRate);
-    const data = buffer.getChannelData(0);
-    for (let i = 0; i < data.length; i += 1) {
-      data[i] = (Math.random() * 2 - 1) * (1 - i / data.length);
-    }
-    const src = ctx.createBufferSource();
-    src.buffer = buffer;
-    const filter = ctx.createBiquadFilter();
-    filter.type = "bandpass";
-    filter.frequency.value = 380;
-    filter.Q.value = 0.7;
-    src.connect(filter);
-    filter.connect(master);
-    src.start(now);
-  } else {
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    const freq =
-      room === "indic"
-        ? 196
-        : room === "sinosphere"
-          ? 220
-          : room === "yoruba"
-            ? 98
-            : room === "hebrew"
-              ? 311
-              : room === "hellenic"
-                ? 165
-                : room === "sufi"
-                  ? 147
+  const dur = edge === "open" ? 0.85 : 0.7;
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  const filter = ctx.createBiquadFilter();
+  filter.type = "lowpass";
+  filter.frequency.value = 1400;
+  filter.Q.value = 0.4;
+  const freq =
+    room === "indic"
+      ? 196
+      : room === "sinosphere"
+        ? 220
+        : room === "yoruba"
+          ? 98
+          : room === "hebrew"
+            ? 311
+            : room === "hellenic"
+              ? 165
+              : room === "sufi"
+                ? 147
+                : room === "dakota"
+                  ? 110
                   : 174;
-    osc.type = room === "sinosphere" ? "triangle" : "sine";
-    osc.frequency.value = freq;
-    gain.gain.setValueAtTime(0.0001, now);
-    gain.gain.exponentialRampToValueAtTime(0.22, now + 0.04);
-    gain.gain.exponentialRampToValueAtTime(0.0001, now + dur);
-    osc.connect(gain);
-    gain.connect(master);
-    osc.start(now);
-    osc.stop(now + dur);
-  }
+  osc.type = "sine";
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.16, now + 0.05);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + dur);
+  osc.connect(filter);
+  filter.connect(gain);
+  gain.connect(master);
+  osc.start(now);
+  osc.stop(now + dur);
 
   return new Promise((resolve) => {
     window.setTimeout(() => {
@@ -138,6 +149,33 @@ function playRoomTone(room: string, edge: "open" | "close"): Promise<void> {
   });
 }
 
+async function playCueBlob(blob: Blob, volume = 0.58): Promise<void> {
+  const url = URL.createObjectURL(blob);
+  const el = new Audio();
+  el.volume = volume;
+  el.src = url;
+  try {
+    await new Promise<void>((resolve, reject) => {
+      const done = () => {
+        el.removeEventListener("ended", onEnded);
+        el.removeEventListener("error", onError);
+        resolve();
+      };
+      const onEnded = () => done();
+      const onError = () => {
+        el.removeEventListener("ended", onEnded);
+        el.removeEventListener("error", onError);
+        reject(new Error("Playback failed."));
+      };
+      el.addEventListener("ended", onEnded);
+      el.addEventListener("error", onError);
+      void el.play().catch(onError);
+    });
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
+
 async function playCue(
   room: string,
   edge: "open" | "close",
@@ -145,9 +183,7 @@ async function playCue(
 ): Promise<void> {
   try {
     const blob = await listenCue(room, edge, accessToken);
-    const el = speech ?? new Audio();
-    speech = el;
-    await playBlob(el, blob);
+    await playCueBlob(blob);
   } catch {
     await playRoomTone(room, edge);
   }
@@ -184,29 +220,31 @@ export async function toggleListen(opts: {
   emit({ verseId, section, phase: "loading", error: null });
 
   try {
-    const plan = await listenPlan(verseId);
+    const plan = await loadListenPlan(verseId);
+    const archived = plan?.sections || [];
+    if (!archived.length) {
+      throw new Error("This passage has not been spoken yet.");
+    }
+    if (section !== "all" && !archived.includes(section)) {
+      throw new Error("This layer has not been spoken yet.");
+    }
     const room = plan?.room || "unmarked";
     const queue: Array<Exclude<ListenSection, "all">> =
-      section === "all"
-        ? plan?.sections?.length
-          ? plan.sections
-          : ["translation", "commentary", "practice"]
-        : [section];
+      section === "all" ? archived : [section];
 
     const el = speech ?? new Audio();
     speech = el;
 
+    await playCue(room, "open", accessToken);
     for (const part of queue) {
-      if (run !== token) return;
-      await playCue(room, "open", accessToken);
       if (run !== token) return;
       const { blob } = await listenPassage(verseId, accessToken, part);
       if (run !== token) return;
       emit({ phase: "playing", section: section === "all" ? "all" : part });
       await playBlob(el, blob);
-      if (run !== token) return;
-      await playCue(room, "close", accessToken);
     }
+    if (run !== token) return;
+    await playCue(room, "close", accessToken);
     if (run === token) emit({ phase: "idle", error: null });
   } catch (err) {
     if (run !== token) return;
@@ -216,11 +254,13 @@ export async function toggleListen(opts: {
         ? signedIn
           ? "Listen could not verify your session. Refresh and try again."
           : "Sign in to listen."
-        : status === 429
-          ? "Listen is resting. Try again in a minute."
-          : err instanceof Error
-            ? err.message
-            : "Could not speak this passage.";
+        : status === 404
+          ? "This passage has not been spoken yet."
+          : status === 429
+            ? "Listen is resting. Try again in a minute."
+            : err instanceof Error
+              ? err.message
+              : "Could not speak this passage.";
     emit({ phase: "idle", error: message });
   }
 }

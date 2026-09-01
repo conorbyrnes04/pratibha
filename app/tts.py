@@ -226,6 +226,51 @@ def available_sections(verse: dict[str, Any]) -> list[ListenSection]:
     return [kind for kind in SPEAKABLE_SECTIONS if _layer(verse, kind)]
 
 
+async def archived_cue(room: VoiceRoom, edge: str) -> bytes | None:
+    """Return a baked room cue, or None — never generate on demand."""
+    if edge not in {"open", "close"}:
+        return None
+    safe_room = room if room in _CUE_PROMPTS else "unmarked"
+    return await listen_store.get_object(_cue_key(safe_room, edge))
+
+
+async def archived_audio(
+    verse: dict[str, Any],
+    section: ListenSection,
+    voice_id: str | None = None,
+) -> tuple[bytes, ListenScript] | None:
+    """Return ElevenLabs audio already in the archive. Never call the API."""
+    if section not in {"translation", "commentary", "practice", "all"}:
+        return None
+    room = voice_room_for(verse)
+    text = build_script(verse, section)
+    if not text:
+        return None
+    if not voice_id:
+        async with httpx.AsyncClient() as client:
+            voice_id = await resolve_voice(room, client)
+    cached = await listen_store.get_object(_speech_key(voice_id, text))
+    if not cached:
+        return None
+    title = str(verse.get("title") or "")
+    return cached, ListenScript(room, voice_id, text, title, section)
+
+
+async def archived_sections(verse: dict[str, Any]) -> list[ListenSection]:
+    """Sections that already have ElevenLabs speech in the archive."""
+    kinds = available_sections(verse)
+    if not kinds:
+        return []
+    room = voice_room_for(verse)
+    async with httpx.AsyncClient() as client:
+        voice_id = await resolve_voice(room, client)
+    found: list[ListenSection] = []
+    for kind in kinds:
+        if await archived_audio(verse, kind, voice_id):
+            found.append(kind)
+    return found
+
+
 def _env_voice(room: VoiceRoom) -> str:
     return (
         (os.getenv(f"ELEVENLABS_VOICE_{room.upper()}") or "").strip()

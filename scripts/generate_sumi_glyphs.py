@@ -42,6 +42,15 @@ MANIFEST: list[dict[str, str]] = [
     {"slug": "dragon", "subject": "a Chinese dragon in profile, coiled, whiskers and spine, ink brush"},
     {"slug": "mountain", "subject": "a single mountain peak with a few contour strokes"},
     {"slug": "void", "subject": "an open ensō circle, one broken brush ring, emptiness"},
+    {
+        "slug": "play",
+        "subject": (
+            "a bold filled play-button triangle pointing to the right, arrowhead "
+            "facing east, sitting inside one wet-brush ensō ring that opens at "
+            "the upper left, simple media-player play icon in sumi ink, no letters, "
+            "no kanji, no signature, no person"
+        ),
+    },
     {"slug": "heart", "subject": "a simple ink heart-shape made of two brush petals, not an emoji"},
     {"slug": "yantra", "subject": "a Sri Yantra of interlocking triangles inside a circle"},
     {"slug": "mirror", "subject": "a round bronze-mirror disk with a simple rim and center boss"},

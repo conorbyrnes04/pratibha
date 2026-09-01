@@ -48,7 +48,7 @@ function PassageCard({
       {primary ? <p className="library-passage__preview line-clamp-2">{passagePreview(item)}</p> : null}
     </>
   );
-  const listen = <ListenButton verseId={item._id} verse={item} variant="header" />;
+  const listen = <ListenButton verseId={item._id} variant="header" />;
   if (onOpen) {
     return (
       <div className={className}>

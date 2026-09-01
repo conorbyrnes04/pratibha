@@ -19,7 +19,7 @@ const SUMI_SLUGS = [
   "lightning","lion","loki","lotus","maiden","mandala","mirror","moon","mother","mountain","mushroom",
   "nuwa","oak","ocean","odin","oshun","osiris","ox","phoenix","quetzalcoatl","raven","sage","saraswati",
   "serpent","shango","shiva","spiral","star","sun","swan","thoth","tides","tiger","tree","vishnu",
-  "water","wolf","yantra","yemaya","void",
+  "water","wolf","yantra","yemaya","void","play",
 ] as const;
 
 const SUMI_RULES: Array<{ pattern: RegExp; glyph: string }> = [

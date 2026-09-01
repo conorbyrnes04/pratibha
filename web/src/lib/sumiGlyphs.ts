@@ -78,6 +78,7 @@ export const SUMI_SLUGS = [
   "owl",
   "ox",
   "persephone",
+  "play",
   "quetzalcoatl",
   "rainbow",
   "raven",

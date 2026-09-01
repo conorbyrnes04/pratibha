@@ -5,10 +5,10 @@ import { useEffect, useState, type MouseEvent } from "react";
 import { useAuth } from "@/components/AuthProvider";
 import { useT } from "@/components/LocaleProvider";
 import { InkGlyph, type InkState } from "@/components/InkGlyph";
-import { listenConfigured, type ListenSection } from "@/lib/api";
+import { listenConfigured, type ListenPlan, type ListenSection } from "@/lib/api";
 import {
-  canListenLocally,
   listenSnapshot,
+  loadListenPlan,
   reportListenError,
   retainListen,
   subscribeListen,
@@ -16,7 +16,6 @@ import {
   type ListenPhase,
   type ListenSnap,
 } from "@/lib/listenSession";
-import type { VerseItem } from "@/lib/types";
 
 async function resolveListenToken(
   snapshot: string | null | undefined,
@@ -39,35 +38,47 @@ function SumiPlayMark({ phase, size }: { phase: ListenPhase; size: "xs" | "sm" }
   );
 }
 
+function sectionReady(plan: ListenPlan | null, section: ListenSection): boolean {
+  if (!plan?.sections.length) return false;
+  return section === "all" || plan.sections.includes(section);
+}
+
 export function ListenButton({
   verseId,
   section = "all",
   variant = "toolbar",
-  verse,
 }: {
   verseId: string;
   section?: ListenSection;
   variant?: "toolbar" | "layer" | "header";
-  verse?: VerseItem;
 }) {
   const t = useT();
   const { user, configured, loading: authLoading } = useAuth();
   const accessToken = useAuthToken();
   const convexAuth = useConvexAuth();
-  const [remote, setRemote] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [available, setAvailable] = useState(false);
+  const [plan, setPlan] = useState<ListenPlan | null>(null);
   const [snap, setSnap] = useState<ListenSnap>(listenSnapshot);
 
   useEffect(() => {
-    setMounted(true);
     let cancelled = false;
     listenConfigured().then((ok) => {
-      if (!cancelled) setRemote(ok);
+      if (!cancelled) setAvailable(ok);
     });
     return () => {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadListenPlan(verseId).then((next) => {
+      if (!cancelled) setPlan(next);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [verseId]);
 
   useEffect(() => subscribeListen(() => setSnap(listenSnapshot())), []);
 
@@ -76,8 +87,7 @@ export function ListenButton({
     return retainListen();
   }, [verseId, section]);
 
-  const localOk = mounted && canListenLocally();
-  if (!mounted || (!remote && !localOk)) return null;
+  if (!available || !sectionReady(plan, section)) return null;
 
   const mine = snap.verseId === verseId && snap.section === section;
   const phase = mine ? snap.phase : "idle";
@@ -103,14 +113,12 @@ export function ListenButton({
     event.preventDefault();
     event.stopPropagation();
     if (phase === "loading") return;
-    if (remote && configured && !user && !authLoading) {
+    if (configured && !user && !authLoading) {
       reportListenError(verseId, section, t("listen.signIn"));
       return;
     }
-    const token = remote
-      ? await resolveListenToken(accessToken, convexAuth?.fetchAccessToken)
-      : null;
-    if (remote && configured && user && !token) {
+    const token = await resolveListenToken(accessToken, convexAuth?.fetchAccessToken);
+    if (configured && user && !token) {
       reportListenError(verseId, section, t("listen.sessionOpening"));
       return;
     }
@@ -119,8 +127,6 @@ export function ListenButton({
       section,
       accessToken: token,
       signedIn: Boolean(user),
-      verse,
-      preferLocal: !remote,
     });
   }
 
