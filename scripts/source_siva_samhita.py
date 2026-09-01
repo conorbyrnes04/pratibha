@@ -21,7 +21,7 @@ from faithful_expand_upanishads import _lenient_json  # noqa: E402
 SRC = os.path.join(REPO, "data/raw_texts/pd/siva_samhita/sivasamhita_wikisource_devanagari.txt")
 CANON = os.path.join(REPO, "data/canonical/siva_samhita")
 EDITION = "Sanskrit Wikisource शिवसंहिता (sa.wikisource.org, CC BY-SA 4.0)"
-REVIEWER = "anthropic/claude-sonnet-4.5"
+REVIEWER = "openai/gpt-5.6-luna"  # discounted OpenRouter model; verbatim gate guards accuracy
 DETERMINISTIC_CHAPTERS = {1, 2}
 
 
