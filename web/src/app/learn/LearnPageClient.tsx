@@ -24,6 +24,8 @@ import {
 import { learnHref, parseLearnSearch, type LearnHrefOpts } from "@/lib/learn/url";
 import { LEARNING_TRACKS } from "@/lib/learningPaths";
 import { gateForThreadSearch } from "@/lib/learningThreads";
+import { GateCircleSection } from "@/components/GateCircleSection";
+import { CONVEX_ENABLED } from "@/lib/convexConfigured";
 import type { VerseItem } from "@/lib/types";
 
 export default function LearnPageClient() {
@@ -38,6 +40,11 @@ export default function LearnPageClient() {
   const [pendingFinishKey, setPendingFinishKey] = useState<string | null>(null);
   const [scrollToKey, setScrollToKey] = useState<string | null>(null);
   const [selectedPathId, setSelectedPathId] = useState<string | null>(ESSENTIAL_TRAIL_ID);
+  const [circleInvite, setCircleInvite] = useState<{
+    verseId: string;
+    verseTitle: string;
+    idea?: string;
+  } | null>(null);
   const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const leaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const urlReadyRef = useRef(false);
@@ -115,6 +122,7 @@ export default function LearnPageClient() {
   function goHome() {
     setOpenStepId(null);
     setOpenStepTrackId(null);
+    setCircleInvite(null);
     setSelectedPathId(null);
     selectedPathIdRef.current = null;
     syncUrl({ pathId: null });
@@ -127,6 +135,7 @@ export default function LearnPageClient() {
     setGateLeaving(false);
     setDrawingKey(null);
     setFinishingKey(null);
+    setCircleInvite(null);
     setSelectedPathId(trail.id);
     selectedPathIdRef.current = trail.id;
     const nodes = buildTrail(trail.id);
@@ -138,6 +147,7 @@ export default function LearnPageClient() {
 
   function openTrailGate(trackId: string, stepId: string) {
     setGateLeaving(false);
+    setCircleInvite(null);
     setOpenStepTrackId(trackId);
     setOpenStepId(stepId);
     syncUrl({ trackId, stepId });
@@ -216,6 +226,14 @@ export default function LearnPageClient() {
     const nodes = buildTrail(selectedPathIdRef.current);
     const idx = nodes.findIndex((node) => node.key === key);
     const nextKey = idx >= 0 ? nodes[idx + 1]?.key ?? null : null;
+    const finished = LEARNING_TRACKS.find((item) => item.id === trackId)?.steps.find((item) => item.id === stepId);
+    if (CONVEX_ENABLED && finished?.passageId) {
+      setCircleInvite({
+        verseId: finished.passageId,
+        verseTitle: finished.title,
+        idea: finished.keyIdea,
+      });
+    }
     setGateLeaving(true);
     beginArrive(nextKey, key);
     if (leaveTimerRef.current) clearTimeout(leaveTimerRef.current);
@@ -262,6 +280,17 @@ export default function LearnPageClient() {
             drawingKey={drawingKey}
             finishingKey={finishingKey}
             gateOpen={gateOpen}
+            notice={
+              circleInvite && !gateOpen ? (
+                <GateCircleSection
+                  verseId={circleInvite.verseId}
+                  verseTitle={circleInvite.verseTitle}
+                  idea={circleInvite.idea}
+                  defaultOpen
+                  onDismiss={() => setCircleInvite(null)}
+                />
+              ) : null
+            }
           />
         ) : null}
 

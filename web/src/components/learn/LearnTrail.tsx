@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { InkGlyph } from "@/components/InkGlyph";
 import { GlyphInkDraw } from "@/components/GlyphInkDraw";
 import { TraditionMandala } from "@/components/learn/TraditionMandala";
@@ -30,6 +30,8 @@ type LearnTrailProps = {
   finishingKey?: string | null;
   /** Retrigger scroll when the hovering gate unmounts. */
   gateOpen?: boolean;
+  /** Quiet prompt shown on the walk after a gate dissolves. */
+  notice?: ReactNode;
 };
 
 export function LearnTrail({
@@ -43,6 +45,7 @@ export function LearnTrail({
   drawingKey,
   finishingKey,
   gateOpen = false,
+  notice,
 }: LearnTrailProps) {
   const t = useT();
   const trail = findTraditionTrail(pathId);
@@ -170,6 +173,8 @@ export function LearnTrail({
             </p>
           </div>
         </header>
+
+        {notice}
 
         <TraditionMandala
           trail={trailCopy}

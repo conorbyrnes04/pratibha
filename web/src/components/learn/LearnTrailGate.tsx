@@ -3,20 +3,15 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { TRAIL_GATE_COMPLETE_MS } from "@/lib/learn/trail";
-import { useQuery } from "convex/react";
-import { api } from "../../../convex/_generated/api";
 import { InkGlyph } from "@/components/InkGlyph";
 import { LearnTrailReading } from "@/components/learn/LearnTrailReading";
 import { PathStepWell } from "@/components/learn/PathStepWell";
 import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
-import { CircleOfferForm } from "@/components/CircleOfferForm";
-import { useAuth } from "@/components/AuthProvider";
-import { CONVEX_ENABLED } from "@/lib/convexConfigured";
 import { trailSumiGlyph } from "@/lib/sumiGlyphs";
 import type { LearningStepSpec, LearningTrack } from "@/lib/learningPaths";
 import type { VerseItem } from "@/lib/types";
-import { Button } from "@/components/ui/button";
 import { useT } from "@/components/LocaleProvider";
+import { GateCircleSection } from "@/components/GateCircleSection";
 import { useLocalizedStep, useLocalizedTrack } from "@/components/useLocalizedStudy";
 
 export function LearnTrailGate({
@@ -44,16 +39,13 @@ export function LearnTrailGate({
   const study = useLocalizedStep(step);
   const trackStudy = useLocalizedTrack(track);
   const glyph = trailSumiGlyph(step.id);
-  const { user } = useAuth();
-  const mine = useQuery(
-    api.studentCommentaries.getMine,
-    CONVEX_ENABLED && user && step.passageId ? { verseId: step.passageId } : "skip",
-  );
   const [ready, setReady] = useState(false);
   const [reading, setReading] = useState<VerseItem | null>(null);
-  const [circleBeat, setCircleBeat] = useState(false);
   const [completing, setCompleting] = useState(false);
+  const completingRef = useRef(false);
   const completeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
 
   useEffect(() => {
     setReady(true);
@@ -61,13 +53,20 @@ export function LearnTrailGate({
 
   useEffect(() => {
     setReading(null);
-    setCircleBeat(false);
     setCompleting(false);
+    completingRef.current = false;
+    if (completeTimerRef.current) {
+      clearTimeout(completeTimerRef.current);
+      completeTimerRef.current = null;
+    }
   }, [step.id]);
 
-  useEffect(() => () => {
-    if (completeTimerRef.current) clearTimeout(completeTimerRef.current);
-  }, []);
+  useEffect(
+    () => () => {
+      if (completeTimerRef.current) clearTimeout(completeTimerRef.current);
+    },
+    [],
+  );
 
   useEffect(() => {
     if (leaving) setReading(null);
@@ -85,6 +84,11 @@ export function LearnTrailGate({
     };
   }, [leaving]);
 
+  function dismiss() {
+    if (completingRef.current || leaving) return;
+    onBack();
+  }
+
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
       if (event.key !== "Escape") return;
@@ -93,11 +97,12 @@ export function LearnTrailGate({
         setReading(null);
         return;
       }
-      onBack();
+      dismiss();
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [onBack, reading]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [onBack, reading, leaving]);
 
   useEffect(() => {
     if (!reading) return;
@@ -111,24 +116,17 @@ export function LearnTrailGate({
     setReading(null);
   }
 
-  // Hold a brief completion flourish (glyph washes to gold) inside the gate,
-  // then hand off to the parent, which dissipates the gate back to the walk.
+  // Flourish inside the gate, then hand off so the parent can dissipate
+  // the overlay and draw the line to the next node. Do not wait on Circle.
   function runComplete() {
-    if (completing) return;
+    if (completingRef.current || leaving) return;
+    completingRef.current = true;
     setCompleting(true);
     if (completeTimerRef.current) clearTimeout(completeTimerRef.current);
     completeTimerRef.current = setTimeout(() => {
       completeTimerRef.current = null;
-      onComplete();
+      onCompleteRef.current();
     }, TRAIL_GATE_COMPLETE_MS);
-  }
-
-  function onGateRecognized() {
-    if (done || !step.passageId || !CONVEX_ENABLED || mine?.status === "offered") {
-      runComplete();
-      return;
-    }
-    setCircleBeat(true);
   }
 
   const integrationSlot = completing ? (
@@ -137,22 +135,13 @@ export function LearnTrailGate({
       <p className="learn-gate-complete__lede">{t("learn.stepCompleteLede")}</p>
     </div>
   ) : (
-    <>
-      <StepIntegrationGate
-        stepId={step.id}
-        integration={study.integration}
-        keyIdea={study.keyIdea}
-        done={done || circleBeat}
-        onComplete={onGateRecognized}
-      />
-      {circleBeat && !done && step.passageId ? (
-        <LearnTrailCircleBeat
-          verseId={step.passageId}
-          verseTitle={study.title}
-          onContinue={runComplete}
-        />
-      ) : null}
-    </>
+    <StepIntegrationGate
+      stepId={step.id}
+      integration={study.integration}
+      keyIdea={study.keyIdea}
+      done={done}
+      onComplete={runComplete}
+    />
   );
 
   const panel = (
@@ -164,7 +153,7 @@ export function LearnTrailGate({
         type="button"
         className="learn-trail-gate-layer__scrim"
         aria-label={reading ? t("learn.returnGate") : t("learn.closeGate")}
-        onClick={reading ? closeReading : onBack}
+        onClick={reading ? closeReading : dismiss}
       />
       <div className={`learn-trail-gate-stack ${reading ? "learn-trail-gate-stack--reading" : ""}`}>
         <article
@@ -175,14 +164,14 @@ export function LearnTrailGate({
         >
           <div inert={reading ? true : undefined}>
             <header className="learn-trail-gate__header">
-              <button type="button" className="passage-reading__meta learn-trail-gate__back" onClick={onBack}>
+              <button type="button" className="passage-reading__meta learn-trail-gate__back" onClick={dismiss}>
                 ← {pathTitle}
               </button>
               <p className="learn-trail-gate__track">{trackStudy.title}</p>
               <div className="learn-trail-gate__mark">
                 <InkGlyph
                   glyph={glyph}
-                  state={done || circleBeat || completing ? "recognized" : "arising"}
+                  state={done || completing ? "recognized" : "arising"}
                   size="xl"
                   className={`learn-trail__glyph${completing ? " learn-trail__glyph--bloom" : ""}`}
                   mask
@@ -204,6 +193,13 @@ export function LearnTrailGate({
                 onOpenPassage={setReading}
                 integrationSlot={integrationSlot}
               />
+              {step.passageId ? (
+                <GateCircleSection
+                  verseId={step.passageId}
+                  verseTitle={study.title}
+                  idea={study.keyIdea}
+                />
+              ) : null}
             </div>
           </div>
         </article>
@@ -216,43 +212,4 @@ export function LearnTrailGate({
 
   if (!ready) return null;
   return createPortal(panel, document.body);
-}
-
-function LearnTrailCircleBeat({
-  verseId,
-  verseTitle,
-  onContinue,
-}: {
-  verseId: string;
-  verseTitle: string;
-  onContinue: () => void;
-}) {
-  const t = useT();
-  const { user } = useAuth();
-  const mine = useQuery(api.studentCommentaries.getMine, CONVEX_ENABLED && user ? { verseId } : "skip");
-
-  useEffect(() => {
-    if (mine?.status === "offered") onContinue();
-  }, [mine?.status, onContinue]);
-
-  if (mine?.status === "offered") {
-    return <p className="soft mt-6 text-sm">{t("circle.gateOffered")}</p>;
-  }
-
-  return (
-    <div className="mt-6 max-w-[var(--reading-measure)] border-t border-amber-200/20 pt-6">
-      <p className="passage-layer__label">{t("circle.gateOfferTitle")}</p>
-      <p className="soft mt-2 text-sm leading-relaxed">{t("circle.gateOfferLede")}</p>
-      <CircleOfferForm
-        verseId={verseId}
-        verseTitle={verseTitle}
-        compact
-        onOffered={onContinue}
-        loginNext="/learn"
-      />
-      <Button type="button" variant="ghost" size="sm" className="mt-3" onClick={onContinue}>
-        {t("circle.gateSkip")}
-      </Button>
-    </div>
-  );
 }

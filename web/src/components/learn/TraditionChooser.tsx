@@ -54,9 +54,9 @@ function TraditionCard({
         type="button"
         disabled={disabled}
         onClick={() => onSelect(trail.id)}
-        className="w-full text-left disabled:cursor-default"
+        className="w-full text-center disabled:cursor-default"
       >
-        <article className="flex h-full flex-col gap-4 rounded-2xl border border-amber-200/15 bg-[#0b0b14]/70 p-5">
+        <article className="flex h-full flex-col gap-4 rounded-2xl border border-amber-200/15 bg-[#0b0b14]/70 p-5 text-center">
           <div className="flex justify-center">
             <SpandaMedallion
               glyph={trail.glyph}
