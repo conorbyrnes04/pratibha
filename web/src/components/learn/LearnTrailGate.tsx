@@ -9,6 +9,8 @@ import { StepIntegrationGate } from "@/components/learn/StepIntegrationGate";
 import { trailSumiGlyph } from "@/lib/sumiGlyphs";
 import type { LearningStepSpec, LearningTrack } from "@/lib/learningPaths";
 import type { VerseItem } from "@/lib/types";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedStep, useLocalizedTrack } from "@/components/useLocalizedStudy";
 
 export function LearnTrailGate({
   track,
@@ -31,6 +33,9 @@ export function LearnTrailGate({
   onComplete: () => void;
   onBack: () => void;
 }) {
+  const t = useT();
+  const study = useLocalizedStep(step);
+  const trackStudy = useLocalizedTrack(track);
   const glyph = trailSumiGlyph(step.id);
   const [ready, setReady] = useState(false);
   const [reading, setReading] = useState<VerseItem | null>(null);
@@ -93,7 +98,7 @@ export function LearnTrailGate({
       <button
         type="button"
         className="learn-trail-gate-layer__scrim"
-        aria-label={reading ? "Return to gate" : "Close gate"}
+        aria-label={reading ? t("learn.returnGate") : t("learn.closeGate")}
         onClick={reading ? closeReading : onBack}
       />
       <div className={`learn-trail-gate-stack ${reading ? "learn-trail-gate-stack--reading" : ""}`}>
@@ -108,29 +113,29 @@ export function LearnTrailGate({
               <button type="button" className="passage-reading__meta learn-trail-gate__back" onClick={onBack}>
                 ← {pathTitle}
               </button>
-              <p className="mt-4 font-sans text-[11px] uppercase tracking-[0.22em] text-amber-200/50">{track.title}</p>
+              <p className="mt-4 font-sans text-[11px] uppercase tracking-[0.22em] text-amber-200/50">{trackStudy.title}</p>
               <div className="learn-trail-gate__mark">
                 <InkGlyph glyph={glyph} state={done ? "recognized" : "arising"} size="xl" className="learn-trail__glyph" mask />
               </div>
               <h1 id="learn-trail-gate-title" className="library-header__title">
-                {step.title}
+                {study.title}
               </h1>
-              <p className="library-header__lede">{step.orientation}</p>
+              <p className="library-header__lede">{study.orientation}</p>
             </header>
 
             <div className="learn-trail-gate__body">
               <PathStepWell
                 trackId={track.id}
-                trackTitle={track.title}
-                step={step}
+                trackTitle={trackStudy.title}
+                step={study}
                 items={items}
                 pathId={pathId}
                 onOpenPassage={setReading}
               />
               <StepIntegrationGate
                 stepId={step.id}
-                integration={step.integration}
-                keyIdea={step.keyIdea}
+                integration={study.integration}
+                keyIdea={study.keyIdea}
                 done={done}
                 onComplete={onComplete}
               />
@@ -138,7 +143,7 @@ export function LearnTrailGate({
           </div>
         </article>
         {reading ? (
-          <LearnTrailReading item={reading} gateTitle={step.title} onBack={closeReading} />
+          <LearnTrailReading item={reading} gateTitle={study.title} onBack={closeReading} />
         ) : null}
       </div>
     </div>

@@ -1,4 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedFields, useLocalizedStep, useLocalizedVerse } from "@/components/useLocalizedStudy";
 import { InkGlyph } from "@/components/InkGlyph";
 import { buttonVariants } from "@/components/ui/button";
 import { ESSENTIAL_TRAIL_ID } from "@/lib/learn/traditionTrails";
@@ -25,7 +29,14 @@ export function TodayGate({
   sit: TrailSit;
   verse: VerseItem | null;
 }) {
-  const { node, step, walked, total, complete, rested, next } = sit;
+  const t = useT();
+  const { node, walked, total, complete, rested, next } = sit;
+  const step = useLocalizedStep(sit.step);
+  const localizedVerse = useLocalizedVerse(verse);
+  const extras = useLocalizedFields({
+    section: node.sectionLabel,
+    next_title: next?.title || "",
+  });
   const gateHref = learnHref({
     pathId: ESSENTIAL_TRAIL_ID,
     trackId: node.trackId,
@@ -39,7 +50,7 @@ export function TodayGate({
         stepId: next.stepId,
       })
     : trailHref;
-  const askHref = gateChatHref(verse, step, "/");
+  const askHref = gateChatHref(localizedVerse, step, "/");
   const glyph = trailSumiGlyph(node.stepId);
   const begin = walked === 0 && !complete && !rested;
   const pathDone = complete && !rested;
@@ -48,15 +59,14 @@ export function TodayGate({
   let title = step.title;
   let lede = step.orientation;
   if (pathDone) {
-    title = "The Path is complete";
-    lede =
-      "You have walked every gate on the essential spine. The trail is still there if you want to walk it again, or open a tradition from the Path.";
+    title = t("gate.pathComplete");
+    lede = t("gate.pathCompleteLede");
   } else if (complete && rested) {
-    title = "Enough for today";
-    lede = "You finished the last gate on the essential spine today. The trail is still there if you want to walk it again.";
+    title = t("gate.enoughToday");
+    lede = t("gate.enoughLastGate");
   } else if (rested && next) {
-    title = "Enough for today";
-    lede = `Tomorrow opens ${next.title}.`;
+    title = t("gate.enoughToday");
+    lede = t("gate.tomorrowOpens", { title: extras.fields.next_title || next.title });
   }
 
   return (
@@ -70,7 +80,7 @@ export function TodayGate({
         />
       </div>
 
-      <p className="passage-reading__meta">{node.sectionLabel}</p>
+      <p className="passage-reading__meta">{extras.fields.section || node.sectionLabel}</p>
       <h2 className="library-header__title">{title}</h2>
       <p className="library-header__lede">{lede}</p>
 
@@ -81,17 +91,17 @@ export function TodayGate({
           ) : (
             <p className="today-gate__key">{step.keyIdea}</p>
           )}
-          {verse ? (
+          {localizedVerse ? (
             <p className="today-gate__verse">
               <span className="today-gate__verse-src">
-                {displayCollectionName(verse.collection) || verse.collection}
+                {displayCollectionName(localizedVerse.collection) || localizedVerse.collection}
               </span>
-              {passagePreview(verse)}
+              {passagePreview(localizedVerse)}
             </p>
           ) : null}
           {!rested ? (
             <p className="today-gate__practice">
-              <span>Practice</span> {step.practice}
+              <span>{t("common.practice")}</span> {step.practice}
             </p>
           ) : null}
         </div>
@@ -101,39 +111,39 @@ export function TodayGate({
         {pathDone ? (
           <>
             <Link href={trailHref} className={buttonVariants()}>
-              See the trail
+              {t("gate.seeTrail")}
             </Link>
             <Link href="/read" className={buttonVariants({ variant: "secondary" })}>
-              Open the library
+              {t("gate.openLibrary")}
             </Link>
           </>
         ) : rested ? (
           <>
             <Link href={trailHref} className={buttonVariants()}>
-              See the trail
+              {t("gate.seeTrail")}
             </Link>
             {verse ? (
               <Link href={askHref} className={buttonVariants({ variant: "secondary" })}>
-                Ask this gate
+                {t("gate.askGate")}
               </Link>
             ) : (
               <Link href={gateHref} className={buttonVariants({ variant: "secondary" })}>
-                Revisit today&apos;s gate
+                {t("gate.revisitGate")}
               </Link>
             )}
           </>
         ) : (
           <>
             <Link href={gateHref} className={buttonVariants()}>
-              {begin ? "Begin the path" : "Enter this gate"}
+              {begin ? t("gate.beginPath") : t("gate.enterGate")}
             </Link>
             {verse ? (
               <Link href={askHref} className={buttonVariants({ variant: "secondary" })}>
-                Ask this gate
+                {t("gate.askGate")}
               </Link>
             ) : (
               <Link href={trailHref} className={buttonVariants({ variant: "secondary" })}>
-                See the trail
+                {t("gate.seeTrail")}
               </Link>
             )}
           </>
@@ -142,20 +152,23 @@ export function TodayGate({
 
       <p className="today-gate__count">
         {pathDone
-          ? `${total} gates walked`
+          ? t("gate.gatesWalked", { count: total })
           : rested && next
-            ? `Walked today · tomorrow opens ${next.title}`
+            ? t("gate.walkedTodayTomorrow", { title: extras.fields.next_title || next.title })
             : rested
-              ? "Walked today"
+              ? t("gate.walkedToday")
               : walked === 0
-                ? "The first gate"
-                : `${walked} ${walked === 1 ? "gate" : "gates"} walked · ${total - walked} ${
-                    total - walked === 1 ? "remains" : "remain"
-                  }`}
+                ? t("gate.firstGate")
+                : t("gate.progress", {
+                    walked,
+                    walkedLabel: walked === 1 ? t("gate.gateOne") : t("gate.gateMany"),
+                    remain: total - walked,
+                    remainLabel: total - walked === 1 ? t("gate.remainOne") : t("gate.remainMany"),
+                  })}
       </p>
       {rested && next && nextHref !== trailHref ? (
         <p className="today-gate__continue">
-          <Link href={nextHref}>Walk one more anyway</Link>
+          <Link href={nextHref}>{t("gate.walkOneMore")}</Link>
         </p>
       ) : null}
     </section>

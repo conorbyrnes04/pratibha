@@ -3,7 +3,9 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { getVerse } from "@/lib/api";
+import { useLocalizedVerse } from "@/components/useLocalizedStudy";
 import { ShareCard } from "@/components/ShareCard";
+import { holoHueFromSeed } from "@/lib/bakeHoloFoil";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { stripMarkdown } from "@/lib/textPreview";
@@ -63,12 +65,14 @@ export function ManuscriptFolio({
       cancelled = true;
     };
   }, [verseId]);
+  const study = useLocalizedVerse(item ?? null);
+  const display = study || item || null;
 
   const mark: ShareForceMark =
     card?.mark && isShareForceMark(card.mark)
       ? card.mark
-      : item
-        ? verseShareMark(item)
+      : display
+        ? verseShareMark(display)
         : "lotus";
   const ink: ShareInk = card?.ink && isShareInk(card.ink) ? card.ink : "gold";
   const storedMode: ShareTextMode | undefined =
@@ -77,14 +81,14 @@ export function ManuscriptFolio({
     card?.aspectRatio === "story" ? "story" : "post";
   const holographic = Boolean(card?.holographic);
   const storedReading = card?.reading?.trim() || "";
-  const title = item ? displayPassageTitle(item) : verseTitle;
-  const collection = item
-    ? displayCollectionName(item.collection) || item.collection
+  const title = display ? displayPassageTitle(display) : verseTitle;
+  const collection = display
+    ? displayCollectionName(display.collection) || display.collection
     : "Pratibha";
-  const original = item ? stripMarkdown(layerText(item, "original")) : "";
-  const iast = item ? stripMarkdown(layerText(item, "iast")) : "";
-  const translation = item
-    ? stripMarkdown(layerText(item, "translation") || item.translation || "")
+  const original = display ? stripMarkdown(layerText(display, "original")) : "";
+  const iast = display ? stripMarkdown(layerText(display, "iast")) : "";
+  const translation = display
+    ? stripMarkdown(layerText(display, "translation") || display.translation || "")
     : "";
   const mode: ShareTextMode = storedMode || (original ? "both" : "translation");
 
@@ -152,6 +156,7 @@ export function ManuscriptFolio({
           fillWindow={Boolean(cardCopy.original || cardCopy.translation)}
           aspectRatio={aspectRatio}
           holographic={holographic}
+          holoHue={holoHueFromSeed(`${verseId}|${mark}|${ink}|${storedReading}|${title}`)}
         />
       </Link>
       {note ? <p className="manuscript-folio__note">{note}</p> : null}

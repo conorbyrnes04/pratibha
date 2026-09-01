@@ -9,6 +9,7 @@ import { deleteJournalNote, notesForPassage, upsertJournalNote } from "@/lib/jou
 import { practiceText } from "@/lib/verseLayers";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { useLocale } from "@/components/LocaleProvider";
 
 type JournalPanelProps =
   | {
@@ -28,20 +29,21 @@ function storageKey(props: JournalPanelProps): string {
   return "passage" in props ? props.passage._id : props.contextId;
 }
 
-function defaultPrompt(props: JournalPanelProps): string {
+function defaultPrompt(props: JournalPanelProps, fallback: string): string {
   if ("prompt" in props && props.prompt) return props.prompt;
   if ("passage" in props) {
-    return practiceText(props.passage) || "What changes if this passage becomes an instruction for today?";
+    return practiceText(props.passage) || fallback;
   }
   return props.prompt;
 }
 
 export function JournalPanel(props: JournalPanelProps) {
+  const { t, bcp47 } = useLocale();
   const { user } = useAuth();
   const pushNote = usePushJournalNote();
   const deleteRemote = useDeleteJournalNote();
   const key = storageKey(props);
-  const prompt = defaultPrompt(props);
+  const prompt = defaultPrompt(props, t("journal.defaultPrompt"));
   const [notes, setNotes] = useState<JournalNote[]>([]);
   const [body, setBody] = useState("");
 
@@ -83,28 +85,28 @@ export function JournalPanel(props: JournalPanelProps) {
 
   return (
     <section className={bare ? undefined : "card p-4"}>
-      {bare ? null : <p className="layer-heading">Journal</p>}
+      {bare ? null : <p className="layer-heading">{t("journal.panelTitle")}</p>}
       <p className={`soft text-sm leading-relaxed ${bare ? "" : "mt-2"}`}>{prompt}</p>
       <Textarea
         value={body}
         onChange={(event) => setBody(event.target.value)}
         rows={4}
         className="mt-3 w-full rounded-2xl text-sm"
-        placeholder="Write a note, question, or practice observation..."
+        placeholder={t("journal.placeholder")}
       />
       <Button onClick={save} disabled={!body.trim()} size="sm" className="mt-3">
-        Save note
+        {t("journal.saveNote")}
       </Button>
       <div className="mt-4 space-y-3">
         {notes.length === 0 ? (
-          <p className="soft text-sm">No notes for this passage yet.</p>
+          <p className="soft text-sm">{t("journal.emptyPassage")}</p>
         ) : (
           notes.slice(0, 3).map((note) => (
             <article key={note.id} className="citation-card p-3">
-              <p className="soft text-xs">{new Date(note.updatedAt).toLocaleString()}</p>
+              <p className="soft text-xs">{new Date(note.updatedAt).toLocaleString(bcp47)}</p>
               <p className="mt-2 whitespace-pre-wrap text-sm leading-relaxed text-stone-200">{note.body}</p>
               <button onClick={() => remove(note.id)} className="mt-2 font-sans text-xs text-amber-100 hover:underline">
-                Delete
+                {t("common.delete")}
               </button>
             </article>
           ))

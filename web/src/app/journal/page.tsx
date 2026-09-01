@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { JournalNote } from "@/lib/types";
 import { useAuth } from "@/components/AuthProvider";
+import { useLocale, useT } from "@/components/LocaleProvider";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -11,6 +12,8 @@ import { useSyncJournal, useDeleteJournalNote } from "@/lib/journalCloud";
 import { deleteJournalNote, journalSourceHref, loadJournalNotes, saveJournalNotes } from "@/lib/journalStorage";
 
 export default function JournalPage() {
+  const t = useT();
+  const { bcp47 } = useLocale();
   const { user, loading: authLoading } = useAuth();
   const [notes, setNotes] = useState<JournalNote[]>([]);
   const [q, setQ] = useState("");
@@ -70,7 +73,7 @@ export default function JournalPage() {
       saveJournalNotes([...byId.values()]);
       refresh();
     } catch {
-      alert("Could not import: the file is not a valid Pratibha journal export.");
+      alert(t("journal.importFailed"));
     }
   }
 
@@ -87,28 +90,26 @@ export default function JournalPage() {
   }
 
   function sourceLabel(note: JournalNote): string {
-    if (note.kind === "chat_response") return "Reopen chat";
-    if (note.passageId.startsWith("learn:")) return "Reopen step";
-    return "Reopen passage";
+    if (note.kind === "chat_response") return t("journal.reopenChat");
+    if (note.passageId.startsWith("learn:")) return t("journal.reopenStep");
+    return t("journal.reopenPassage");
   }
 
   return (
     <main className="page-shell page-shell--reading">
       <header className="library-header">
         <div className="library-header__body">
-          <p className="passage-reading__meta">Personal study memory</p>
-          <h1 className="library-header__title">Journal</h1>
+          <p className="passage-reading__meta">{t("journal.meta")}</p>
+          <h1 className="library-header__title">{t("journal.title")}</h1>
           <p className="library-header__lede">
-            {user
-              ? "Signed in — notes sync to your account and stay cached in this browser."
-              : "Saved reflections stay in this browser. Sign in to sync them across devices."}
+            {user ? t("journal.ledeSignedIn") : t("journal.ledeSignedOut")}
           </p>
           {!user && !authLoading ? (
             <Link
               href="/login?next=/journal"
               className={cn(buttonVariants({ variant: "secondary" }), "mt-4")}
             >
-              Sign in to sync
+              {t("common.signInToSync")}
             </Link>
           ) : null}
         </div>
@@ -119,14 +120,14 @@ export default function JournalPage() {
           value={q}
           onChange={(event) => setQ(event.target.value)}
           className="min-w-0 flex-1"
-          placeholder="Search notes, passages, prompts..."
+          placeholder={t("journal.searchPlaceholder")}
         />
         <div className="flex shrink-0 items-center gap-2">
           <Button variant="secondary" size="sm" onClick={exportNotes} disabled={notes.length === 0}>
-            Export
+            {t("common.export")}
           </Button>
           <Button variant="secondary" size="sm" onClick={() => fileRef.current?.click()}>
-            Import
+            {t("common.import")}
           </Button>
           <input
             ref={fileRef}
@@ -143,28 +144,26 @@ export default function JournalPage() {
       </div>
       <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-500">
         {syncState === "syncing"
-          ? "Syncing journal with your account…"
+          ? t("journal.syncing")
           : syncState === "synced"
-            ? "Synced with your account. Export still makes a handy local backup."
+            ? t("journal.synced")
             : syncState === "error"
-              ? `Cloud sync unavailable${syncError ? ` (${syncError})` : ""}. Notes stay on this device for now.`
-              : "On this device only until you sign in. Export a backup if you clear the browser."}
+              ? t("journal.syncError", { detail: syncError ? ` (${syncError})` : "" })
+              : t("journal.localOnly")}
       </p>
 
       <div className="mt-8 space-y-4">
         {filtered.length === 0 ? (
           <section className="card flex flex-col items-center gap-3 p-10 text-center">
             <p className="text-2xl text-amber-100">
-              {notes.length === 0 ? "Your journal is empty" : "No matching notes"}
+              {notes.length === 0 ? t("journal.empty") : t("journal.noMatch")}
             </p>
             <p className="soft max-w-md">
-              {notes.length === 0
-                ? "Save a reflection from a passage, a learning step, or an Ask Pratibha response, and it will appear here."
-                : "Try a different search term to find your saved reflections."}
+              {notes.length === 0 ? t("journal.emptyLede") : t("journal.noMatchLede")}
             </p>
             {notes.length === 0 ? (
               <Link href="/read" className={cn(buttonVariants(), "mt-2")}>
-                Browse the library
+                {t("journal.browseLibrary")}
               </Link>
             ) : null}
           </section>
@@ -173,10 +172,10 @@ export default function JournalPage() {
             <article key={note.id} className="card p-5 sm:p-6">
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div className="min-w-0">
-                  <p className="layer-heading">{new Date(note.updatedAt).toLocaleString()}</p>
+                  <p className="layer-heading">{new Date(note.updatedAt).toLocaleString(bcp47)}</p>
                   <h2 className="mt-2 text-2xl text-amber-100">{note.passageTitle}</h2>
                   {note.kind === "chat_response" && note.question ? (
-                    <p className="soft mt-2 text-sm">You asked: {note.question}</p>
+                    <p className="soft mt-2 text-sm">{t("journal.youAsked", { question: note.question })}</p>
                   ) : null}
                 </div>
                 <div className="flex shrink-0 gap-2">
@@ -189,7 +188,7 @@ export default function JournalPage() {
                     </Link>
                   ) : null}
                   <Button variant="secondary" size="sm" onClick={() => remove(note.id)}>
-                    Delete
+                    {t("common.delete")}
                   </Button>
                 </div>
               </div>

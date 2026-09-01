@@ -3,25 +3,26 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { useT } from "@/components/LocaleProvider";
 
-type NavLink = { href: string; label: string; match?: string };
+type NavLink = { href: string; labelKey: string; match?: string };
 
 /** The walk — always visible. */
 const WALK: NavLink[] = [
-  { href: "/", label: "Today", match: "/" },
-  { href: "/learn?path=essential", label: "Path", match: "/learn" },
-  { href: "/read", label: "Library" },
-  { href: "/manuscript", label: "My Manuscript" },
+  { href: "/", labelKey: "nav.today", match: "/" },
+  { href: "/learn?path=essential", labelKey: "nav.path", match: "/learn" },
+  { href: "/read", labelKey: "nav.library" },
+  { href: "/manuscript", labelKey: "nav.manuscript" },
 ];
 
 /** Tools around the walk. */
 const STUDY: NavLink[] = [
-  { href: "/journal", label: "Journal" },
-  { href: "/chat", label: "Chat" },
-  { href: "/glossary/study", label: "Lexicon", match: "/glossary/study" },
-  { href: "/glossary", label: "Glossary", match: "/glossary" },
-  { href: "/random", label: "Oracle" },
-  { href: "/sources", label: "Sources" },
+  { href: "/journal", labelKey: "nav.journal" },
+  { href: "/chat", labelKey: "nav.chat" },
+  { href: "/glossary/study", labelKey: "nav.lexicon", match: "/glossary/study" },
+  { href: "/glossary", labelKey: "nav.glossary", match: "/glossary" },
+  { href: "/random", labelKey: "nav.oracle" },
+  { href: "/sources", labelKey: "nav.sources" },
 ];
 
 function linkIsActive(pathname: string, href: string, match?: string): boolean {
@@ -39,6 +40,7 @@ function WalkLinks({
   onNavigate?: () => void;
 }) {
   const pathname = usePathname();
+  const t = useT();
   return (
     <>
       {WALK.map((link) => {
@@ -51,7 +53,7 @@ function WalkLinks({
             className={`nav-link ${className ?? ""} ${active ? "nav-link--current" : ""}`}
             onClick={onNavigate}
           >
-            {link.label}
+            {t(link.labelKey)}
           </Link>
         );
       })}
@@ -71,6 +73,7 @@ function StudyMenu({
   placement: "bar" | "dock";
 }) {
   const pathname = usePathname();
+  const t = useT();
   const rootRef = useRef<HTMLDivElement>(null);
   const studyActive = STUDY.some((link) => linkIsActive(pathname, link.href, link.match));
 
@@ -105,7 +108,7 @@ function StudyMenu({
         aria-controls={`nav-study-${placement}`}
         className={`nav-link nav-more__trigger ${studyActive || open ? "nav-link--current" : ""}`}
       >
-        Study
+        {t("nav.study")}
         <span aria-hidden="true" className="nav-more__caret">
           {open ? (placement === "dock" ? "▾" : "▴") : placement === "dock" ? "▴" : "▾"}
         </span>
@@ -123,7 +126,7 @@ function StudyMenu({
                 className={`nav-more__item ${active ? "nav-link--current" : ""}`}
                 onClick={onClose}
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             );
           })}
@@ -160,8 +163,9 @@ export function SiteNav() {
 
 export function SiteDock() {
   const study = useStudyMenu();
+  const t = useT();
   return (
-    <nav className="site-dock" aria-label="Primary">
+    <nav className="site-dock" aria-label={t("nav.primary")}>
       <WalkLinks className="site-dock__link" />
       <StudyMenu placement="dock" {...study} />
     </nav>

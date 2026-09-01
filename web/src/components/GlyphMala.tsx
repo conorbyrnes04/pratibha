@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { GLYPH_UNLOCK_EVENT, glyphMalaStats, unlockedMarks } from "@/lib/glyphUnlock";
 import type { ShareForceMark } from "@/lib/shareCard";
+import { useT } from "@/components/LocaleProvider";
 
 export function GlyphMala({
   unlocked,
@@ -26,6 +27,7 @@ export function GlyphMala({
     return () => window.removeEventListener(GLYPH_UNLOCK_EVENT, refresh);
   }, [unlocked]);
 
+  const t = useT();
   const stats = glyphMalaStats(marks ?? new Set());
   const pct = stats.total ? (stats.opened / stats.total) * 100 : 0;
 
@@ -33,12 +35,14 @@ export function GlyphMala({
     <div
       className={`glyph-mala${compact ? " glyph-mala--compact" : ""}${stats.complete ? " glyph-mala--complete" : ""}`}
       role="progressbar"
-      aria-label="Glyph mālā"
+      aria-label={t("glyph.mala")}
       aria-valuemin={0}
       aria-valuemax={stats.total}
       aria-valuenow={stats.opened}
       aria-valuetext={
-        stats.complete ? "Every mark is open. Śiva is last." : `${stats.opened} of ${stats.total} marks open`
+        stats.complete
+          ? t("glyph.complete")
+          : t("glyph.ofOpen", { opened: stats.opened, total: stats.total })
       }
     >
       <div className="glyph-mala__rail" aria-hidden>
@@ -46,7 +50,9 @@ export function GlyphMala({
       </div>
       {compact ? null : (
         <p className="glyph-mala__count">
-          {stats.complete ? "Śiva — the mālā is complete." : `${stats.opened} of ${stats.total} open`}
+          {stats.complete
+            ? t("glyph.completeCount")
+            : t("glyph.ofOpenShort", { opened: stats.opened, total: stats.total })}
         </p>
       )}
     </div>

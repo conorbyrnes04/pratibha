@@ -16,12 +16,14 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageLocation, displayPassageTitle } from "@/lib/passageTitles";
 import type { VerseItem } from "@/lib/types";
 import { passagePreview } from "@/lib/verseLayers";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedVerse } from "@/components/useLocalizedStudy";
 
-function actionLabel(chatMode?: string): string {
-  if (chatMode === "practice") return "Practice with it";
-  if (chatMode === "compare") return "Compare traditions";
-  if (chatMode === "explain") return "Understand it";
-  return "Ask about it";
+function actionLabel(t: (key: string) => string, chatMode?: string): string {
+  if (chatMode === "practice") return t("learn.practiceIt");
+  if (chatMode === "compare") return t("learn.compareIt");
+  if (chatMode === "explain") return t("learn.understandIt");
+  return t("learn.askIt");
 }
 
 function PassageCard({
@@ -35,7 +37,7 @@ function PassageCard({
   backHref?: string;
   onOpen?: (item: VerseItem) => void;
 }) {
-  const className = `library-passage ${primary ? "" : "opacity-90"}`;
+  const className = `library-passage library-passage--listen${primary ? "" : " opacity-90"}`;
   const inner = (
     <>
       <p className="library-passage__meta">
@@ -46,20 +48,27 @@ function PassageCard({
       {primary ? <p className="library-passage__preview line-clamp-2">{passagePreview(item)}</p> : null}
     </>
   );
+  const listen = <ListenButton verseId={item._id} verse={item} variant="header" />;
   if (onOpen) {
     return (
-      <button type="button" className={className} onClick={() => onOpen(item)}>
-        {inner}
-      </button>
+      <div className={className}>
+        <button type="button" className="library-passage__open" onClick={() => onOpen(item)}>
+          {inner}
+        </button>
+        {listen}
+      </div>
     );
   }
   const href = backHref
     ? `/read/${encodeURIComponent(item._id)}?back=${encodeURIComponent(backHref)}`
     : `/read/${encodeURIComponent(item._id)}`;
   return (
-    <Link href={href} className={className}>
-      {inner}
-    </Link>
+    <div className={className}>
+      <Link href={href} className="library-passage__open">
+        {inner}
+      </Link>
+      {listen}
+    </div>
   );
 }
 
@@ -82,9 +91,10 @@ export function PathStepWell({
   onOpenPassage,
   children,
 }: PathStepWellProps) {
+  const t = useT();
   const [pinned, setPinned] = useState<VerseItem | null>(null);
   const catalogItem = matchStepItem(step, items);
-  const item = catalogItem || pinned;
+  const item = useLocalizedVerse(catalogItem || pinned);
 
   useEffect(() => {
     if (catalogItem || !step.passageId) {
@@ -131,39 +141,38 @@ export function PathStepWell({
       </p>
 
       <div className="passage-practice--plain mt-6">
-        <p className="passage-layer__label">Key idea</p>
+        <p className="passage-layer__label">{t("learn.keyIdea")}</p>
         <p className="passage-practice__body">{step.keyIdea}</p>
       </div>
 
       {step.misconception ? (
         <div className="mt-5 max-w-[var(--reading-measure)] border-t border-rose-300/20 pt-4">
           <p className="font-sans text-xs uppercase tracking-[0.16em] text-rose-200/80">
-            Common misunderstanding
+            {t("learn.misunderstanding")}
           </p>
           <p className="mt-2 text-sm leading-relaxed text-stone-200">{step.misconception}</p>
         </div>
       ) : null}
 
       <div>
-        <p className="layer-heading">Study these passages</p>
+        <p className="layer-heading">{t("learn.studyPassages")}</p>
         <div className="mt-2 space-y-2">
           {item ? (
             <>
               <PassageCard item={item} primary backHref={backHref} onOpen={onOpenPassage} />
               <PassageMaturityBadge item={item} />
               <OriginalReliabilityBadge item={item} />
-              <ListenButton verseId={item._id} />
             </>
           ) : (
             <p className="rounded-2xl border border-rose-300/25 bg-rose-300/5 p-3 font-sans text-sm text-stone-200">
-              Primary passage missing from the Library
+              {t("learn.missingPrimary")}
               {step.passageId ? (
                 <>
                   {" "}
                   (<code className="text-rose-100/90">{step.passageId}</code>)
                 </>
               ) : null}
-              . Supporting texts below may still be available; the path pin needs a corpus fix.
+              {t("learn.missingPrimaryHint")}
             </p>
           )}
           {supporting.map((sv) => (
@@ -173,7 +182,7 @@ export function PathStepWell({
       </div>
 
       <div className="passage-practice--plain">
-        <p className="passage-layer__label">Practice</p>
+        <p className="passage-layer__label">{t("layers.practice")}</p>
         <p className="passage-practice__body">{step.practice}</p>
       </div>
 
@@ -190,18 +199,18 @@ export function PathStepWell({
       <div className="flex flex-wrap gap-2 pt-1">
         {item && onOpenPassage ? (
           <button type="button" className={buttonVariants({ size: "sm" })} onClick={() => onOpenPassage(item)}>
-            Open passage
+            {t("learn.openPassage")}
           </button>
         ) : (
           <Link href={readHref} className={buttonVariants({ size: "sm" })}>
-            {item ? "Open in Library" : "Browse Library"}
+            {item ? t("learn.openLibrary") : t("learn.browseLibrary")}
           </Link>
         )}
         <Link href={chatHref} className={buttonVariants({ variant: "secondary", size: "sm" })}>
-          {pathId ? "Ask this gate" : actionLabel(step.chatMode)}
+          {pathId ? t("gate.askGate") : actionLabel(t, step.chatMode)}
         </Link>
         <Link href="/journal" className={buttonVariants({ variant: "secondary", size: "sm" })}>
-          All journal notes
+          {t("journal.allNotes")}
         </Link>
       </div>
     </div>

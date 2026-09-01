@@ -16,6 +16,7 @@ import { COMPARE_PRESETS } from "@/lib/comparePresets";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop } from "@/components/ArtImage";
+import { useT } from "@/components/LocaleProvider";
 import { Disclosure } from "@/components/ui/Disclosure";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -57,10 +58,8 @@ function sourcePassageHref(metadata?: Record<string, unknown>): string | null {
   return null;
 }
 
-const DAILY_CAP_MESSAGE =
-  "You've reached today's study chat limit. Return tomorrow — or continue reading the manuscript.";
-
 export default function ChatPage() {
+  const t = useT();
   const { user } = useAuth();
   const accessToken = useAuthToken();
   const pushNote = usePushJournalNote();
@@ -160,24 +159,24 @@ export default function ChatPage() {
 
   const chatModeOptions = useMemo(
     () => [
-      { value: "question", label: "Open question" },
-      { value: "explain", label: "Explain" },
-      { value: "practice", label: "Practice" },
-      { value: "compare", label: "Compare" },
+      { value: "question", label: t("chat.modeQuestion") },
+      { value: "explain", label: t("chat.modeExplain") },
+      { value: "practice", label: t("chat.modePractice") },
+      { value: "compare", label: t("chat.modeCompare") },
     ],
-    [],
+    [t],
   );
 
   const layerOptions = useMemo(
     () => [
-      { value: "", label: "All layers" },
-      { value: "translation", label: "Translation" },
-      { value: "commentary", label: "Commentary" },
-      { value: "key_terms", label: "Key terms" },
-      { value: "resonances", label: "Resonances" },
-      { value: "practice", label: "Practice" },
+      { value: "", label: t("layers.allLayers") },
+      { value: "translation", label: t("layers.translation") },
+      { value: "commentary", label: t("layers.commentary") },
+      { value: "key_terms", label: t("layers.keyTerms") },
+      { value: "resonances", label: t("layers.resonances") },
+      { value: "practice", label: t("layers.practice") },
     ],
-    [],
+    [t],
   );
 
   const pinnedSourceLine = pinnedVerse
@@ -192,29 +191,29 @@ export default function ChatPage() {
 
   const suggestions = useMemo<ChatSuggestion[]>(() => {
     if (pinnedVerse) {
-      const ref = pinnedRef || "this passage";
+      const ref = pinnedRef || t("chat.thisPassage");
       return [
         {
           id: "explain",
-          label: `Explain ${ref} in plain language.`,
+          label: t("chat.suggestExplain", { ref }),
           mode: "explain",
           prompt: `Explain this passage (${pinnedTitle}${pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""}) in plain language.`,
         },
         {
           id: "practice-here",
-          label: `What is the practical instruction in ${ref}?`,
+          label: t("chat.suggestPractice", { ref }),
           mode: "practice",
           prompt: `What is the practical instruction in this passage (${pinnedTitle}${pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""})?`,
         },
         {
           id: "resonances",
-          label: `Where does ${ref} resonate across traditions?`,
+          label: t("chat.suggestResonate", { ref }),
           mode: "compare",
           prompt: `Where does this passage (${pinnedTitle}${pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""}) resonate across traditions — and where does it diverge?`,
         },
         {
           id: "reflect",
-          label: "One reflection question and one short practice from this verse.",
+          label: t("chat.suggestReflectVerse"),
           mode: "practice",
           prompt: `Give me one reflection question and one short practice from this passage (${pinnedTitle}${pinnedSourceLine ? ` · ${pinnedSourceLine}` : ""}).`,
         },
@@ -223,25 +222,25 @@ export default function ChatPage() {
     return [
       {
         id: "today-practice",
-        label: "What is the practical instruction for today?",
+        label: t("chat.suggestToday"),
         pinDaily: true,
         mode: "practice",
         prompt: "What is the practical instruction in today's passage?",
       },
       {
         id: "compare",
-        label: "Compare two traditions on desire, discipline, and freedom.",
+        label: t("chat.suggestCompare"),
         mode: "compare",
         prompt: "Compare two traditions on desire, discipline, and freedom.",
       },
       {
         id: "reflect",
-        label: "Give me one reflection question and one short practice.",
+        label: t("chat.suggestReflect"),
         mode: "practice",
         prompt: "Give me one reflection question and one short practice.",
       },
     ];
-  }, [pinnedVerse, pinnedRef, pinnedTitle, pinnedSourceLine]);
+  }, [pinnedVerse, pinnedRef, pinnedTitle, pinnedSourceLine, t]);
 
   async function applySuggestion(suggestion: ChatSuggestion) {
     if (busy || dailyCapHit) return;
@@ -357,7 +356,7 @@ export default function ChatPage() {
         setChatRemaining(0);
       }
       const msg = isDailyCap
-        ? DAILY_CAP_MESSAGE
+        ? t("chat.dailyCap")
         : err instanceof Error
           ? err.message
           : "Unknown error";
@@ -398,15 +397,15 @@ export default function ChatPage() {
             </Link>
           ) : null}
           <p className="passage-reading__meta">
-            {fromGate ? "This gate" : "Dialogue with the corpus"}
+            {fromGate ? t("chat.thisGate") : t("chat.meta")}
           </p>
-          <h1 className="library-header__title">Ask Pratibha</h1>
+          <h1 className="library-header__title">{t("chat.title")}</h1>
           <p className="library-header__lede">
             {fromGate && pinnedVerse
-              ? "Ask about this gate. Prompts stay pinned to the verse you just walked."
+              ? t("chat.ledeGate")
               : pinnedVerse
-                ? "Ask about this passage. Hover the box for prompts grounded in the verse."
-                : "Ask naturally. Answers stay grounded in the manuscript — with practice you can try."}
+                ? t("chat.ledePinned")
+                : t("chat.lede")}
           </p>
         </div>
       </header>
@@ -418,7 +417,7 @@ export default function ChatPage() {
               href={`/read/${encodeURIComponent(pinnedVerse._id)}`}
               className="chat-study-pin__link"
             >
-              <p className="passage-reading__meta !mb-0">{fromGate ? "This gate" : "Studying"}</p>
+              <p className="passage-reading__meta !mb-0">{fromGate ? t("chat.thisGate") : t("chat.studying")}</p>
               <p className="chat-study-pin__title">{pinnedTitle}</p>
               {pinnedSourceLine ? (
                 <p className="chat-study-pin__meta">{pinnedSourceLine}</p>
@@ -434,7 +433,7 @@ export default function ChatPage() {
                 key={`${m.role}-${idx}`}
                 className="whitespace-pre-wrap border-t border-[rgb(240_201_121_/_0.12)] py-4"
               >
-                <p className="passage-layer__label mb-2">{m.role === "user" ? "You" : "Pratibha"}</p>
+                <p className="passage-layer__label mb-2">{m.role === "user" ? t("chat.you") : t("brand.name")}</p>
                 {m.role === "assistant" ? (
                   <>
                     {m.content ? (
@@ -442,7 +441,7 @@ export default function ChatPage() {
                         <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
                       </div>
                     ) : (
-                      <p className="soft animate-pulse text-sm">Pratibha is thinking…</p>
+                      <p className="soft animate-pulse text-sm">{t("chat.thinking")}</p>
                     )}
                     {m.content ? (
                       <Button
@@ -453,7 +452,7 @@ export default function ChatPage() {
                         onClick={() => saveReply(idx, m.content)}
                         disabled={savedReplies.has(idx)}
                       >
-                        {savedReplies.has(idx) ? "Saved to journal" : "Save to journal"}
+                        {savedReplies.has(idx) ? t("chat.savedJournal") : t("chat.saveJournal")}
                       </Button>
                     ) : null}
                   </>
@@ -467,9 +466,9 @@ export default function ChatPage() {
 
         {dailyCapHit ? (
           <p className="mb-4 border-t border-[rgb(240_201_121_/_0.14)] pt-4 text-sm leading-relaxed text-stone-200">
-            {DAILY_CAP_MESSAGE}{" "}
+            {t("chat.dailyCap")}{" "}
             <Link href="/read" className="text-amber-100 underline-offset-2 hover:underline">
-              Continue reading →
+              {t("chat.continueReading")}
             </Link>
           </p>
         ) : null}
@@ -488,14 +487,14 @@ export default function ChatPage() {
             }}
             placeholder={
               pinnedVerse
-                ? `Ask about ${pinnedRef || "this passage"}…`
-                : "Ask about a passage, a practice, or two traditions…"
+                ? t("chat.askPinned", { ref: pinnedRef || t("chat.thisPassage") })
+                : t("chat.askOpen")
             }
             disabled={dailyCapHit}
-            aria-label="Ask Pratibha"
+            aria-label={t("chat.askLabel")}
           />
           {showComposerSuggestions ? (
-            <ul className="chat-composer__suggestions" aria-label="Suggested questions">
+            <ul className="chat-composer__suggestions" aria-label={t("chat.suggestions")}>
               {suggestions.map((s) => (
                 <li key={s.id}>
                   <button
@@ -513,25 +512,27 @@ export default function ChatPage() {
 
         <div className="mt-3 flex flex-wrap items-center gap-3">
           <Button onClick={ask} disabled={busy || dailyCapHit || !q.trim()}>
-            {busy ? "Thinking…" : "Ask"}
+            {busy ? t("chat.thinkingShort") : t("chat.ask")}
           </Button>
           {chatRemaining != null && chatRemaining >= 0 && !dailyCapHit ? (
             <p className="soft font-sans text-xs">
-              {chatRemaining} study chat{chatRemaining === 1 ? "" : "s"} left today
+              {chatRemaining === 1
+                ? t("chat.chatsLeftOne", { n: chatRemaining })
+                : t("chat.chatsLeftMany", { n: chatRemaining })}
             </p>
           ) : null}
         </div>
 
         <div className="mt-6">
           <Disclosure
-            summary={pinnedVerse ? "Study options" : "Retrieval & compare"}
-            hint={`${chatMode}${pinnedVerse && layerFocus ? ` · ${layerFocus}` : ""}${useRag ? " · Grounded" : " · Freeform"}${compareMode ? " · Compare" : ""}`}
+            summary={pinnedVerse ? t("chat.studyOptions") : t("chat.retrievalCompare")}
+            hint={`${chatMode}${pinnedVerse && layerFocus ? ` · ${layerFocus}` : ""}${useRag ? ` · ${t("chat.grounded")}` : ` · ${t("chat.freeform")}`}${compareMode ? ` · ${t("chat.modeCompare")}` : ""}`}
             defaultOpen={compareMode}
           >
             {pinnedVerse ? (
               <div className="mb-4 grid gap-3 sm:grid-cols-2">
                 <FilterSelect
-                  label="Study mode"
+                  label={t("chat.studyMode")}
                   tone="gold"
                   value={chatMode}
                   onChange={(value) => {
@@ -542,7 +543,7 @@ export default function ChatPage() {
                   options={chatModeOptions}
                 />
                 <FilterSelect
-                  label="Layer focus"
+                  label={t("chat.layerFocus")}
                   tone="lapis"
                   value={layerFocus}
                   onChange={(value) => setLayerFocus(value as PratibhaLayerKind | "")}
@@ -552,7 +553,7 @@ export default function ChatPage() {
             ) : null}
             <label className="block font-sans text-sm soft">
               <input type="checkbox" checked={useRag} onChange={(e) => setUseRag(e.target.checked)} className="mr-2 accent-amber-300" />
-              Use source-grounded retrieval (recommended)
+              {t("chat.useRag")}
             </label>
             <label className="mt-3 block font-sans text-sm soft">
               <input
@@ -564,7 +565,7 @@ export default function ChatPage() {
                 }}
                 className="mr-2 accent-amber-300"
               />
-              Compare mode (debate/synthesis between two texts)
+              {t("chat.compareToggle")}
             </label>
             {compareMode ? (
               <>
@@ -585,14 +586,14 @@ export default function ChatPage() {
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
                   <div className="space-y-3">
                     <FilterSelect
-                      label="Voice A — text"
+                      label={t("chat.voiceAText")}
                       tone="gold"
                       value={compareA}
                       onChange={setCompareA}
                       options={collectionOptions.map((o) => ({ ...o, label: `A · ${o.label}` }))}
                     />
                     <ComparePassageSelect
-                      label="Voice A — passage (optional)"
+                      label={t("chat.voiceAPassage")}
                       tone="gold"
                       collection={compareA}
                       passages={passagesA}
@@ -602,14 +603,14 @@ export default function ChatPage() {
                   </div>
                   <div className="space-y-3">
                     <FilterSelect
-                      label="Voice B — text"
+                      label={t("chat.voiceBText")}
                       tone="lapis"
                       value={compareB}
                       onChange={setCompareB}
                       options={collectionOptions.map((o) => ({ ...o, label: `B · ${o.label}` }))}
                     />
                     <ComparePassageSelect
-                      label="Voice B — passage (optional)"
+                      label={t("chat.voiceBPassage")}
                       tone="lapis"
                       collection={compareB}
                       passages={passagesB}
@@ -625,7 +626,7 @@ export default function ChatPage() {
 
         {showSourceShelf ? (
           <aside className="mt-8 border-t border-[rgb(240_201_121_/_0.14)] pt-5">
-            <h2 className="passage-reading__meta">Source shelf</h2>
+            <h2 className="passage-reading__meta">{t("chat.sourceShelf")}</h2>
             {compareMode && compareWarning ? (
               <p className="mt-2 text-xs text-amber-100/90">{compareWarning}</p>
             ) : null}
@@ -635,8 +636,8 @@ export default function ChatPage() {
                 const side = (s.metadata?.compare_side as string | undefined) || "";
                 const meta = (
                   <p className="library-passage__meta">
-                    Source {s.rank}
-                    {side ? ` · Voice ${side}` : ""}
+                    {t("chat.sourceRank", { rank: s.rank })}
+                    {side ? ` · ${t("chat.voice", { side })}` : ""}
                     {displayCollectionName(String((s.metadata?.collection as string) || ""))
                       ? ` · ${displayCollectionName(String((s.metadata?.collection as string) || ""))}`
                       : ""}

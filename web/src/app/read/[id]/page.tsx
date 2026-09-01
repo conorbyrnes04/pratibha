@@ -13,6 +13,8 @@ import {
   sortPassagesInText,
 } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedVerse, useLocalizedVerseCards } from "@/components/useLocalizedStudy";
 import { ListenButton } from "@/components/ListenButton";
 import { ReadingShell } from "@/components/ReadingShell";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
@@ -64,6 +66,7 @@ function practiceFallback(item: VerseItem): string {
 }
 
 export default function VerseDetailPage() {
+  const t = useT();
   const params = useParams<{ id: string }>();
   const [item, setItem] = useState<VerseItem | null>(null);
   const [allItems, setAllItems] = useState<VerseItem[]>([]);
@@ -81,10 +84,12 @@ export default function VerseDetailPage() {
   }, []);
 
   useEffect(() => {
+    setLoading(true);
     getVerse(id)
       .then((v) => setItem(v))
       .finally(() => setLoading(false));
   }, [id]);
+  const study = useLocalizedVerse(item);
   useEffect(() => {
     getVerses("strong_draft").then(setAllItems).catch(() => setAllItems([]));
   }, []);
@@ -114,6 +119,7 @@ export default function VerseDetailPage() {
 
   const related = semanticRelated && semanticRelated.length > 0 ? semanticRelated : themeRelated;
   const relatedMode = semanticRelated && semanticRelated.length > 0 ? "semantic" : "themes";
+  const relatedStudy = useLocalizedVerseCards(related.slice(0, 5), 5);
 
   const siblings = useMemo(() => {
     if (!item?.collection) return [] as VerseItem[];
@@ -125,6 +131,10 @@ export default function VerseDetailPage() {
   const prevPassage = siblingIndex > 0 ? siblings[siblingIndex - 1] : null;
   const nextPassage =
     siblingIndex >= 0 && siblingIndex < siblings.length - 1 ? siblings[siblingIndex + 1] : null;
+  const neighborStudy = useLocalizedVerseCards(
+    [prevPassage, nextPassage].filter((passage): passage is VerseItem => Boolean(passage)),
+    2,
+  );
 
   function passageHref(passageId: string): string {
     const base = `/read/${encodeURIComponent(passageId)}`;
@@ -132,7 +142,7 @@ export default function VerseDetailPage() {
     return `${base}?back=${encodeURIComponent(backHref)}`;
   }
 
-  const resonances = useMemo(() => (item ? getResonances(item) : []), [item]);
+  const resonances = useMemo(() => ((study || item) ? getResonances((study || item)!) : []), [item, study]);
   const citationIndex = useMemo(() => buildCitationIndex(allItems), [allItems]);
   const knownIds = useMemo(() => new Set(allItems.map((v) => v._id)), [allItems]);
   const resonanceLinks = useMemo<CitationResolution[]>(
@@ -153,18 +163,20 @@ export default function VerseDetailPage() {
     return <main className="page-shell page-shell--reading soft">Passage not found.</main>;
   }
 
-  const layers = getStudyLayers(item);
-  const appendixLayers = getAppendixLayers(item);
+  const display = study || item;
+  const layers = getStudyLayers(display);
+  const appendixLayers = getAppendixLayers(display);
   const anchorChapter = getAnchorChapter(item);
 
   const originalLayer = layers.find((l) => l.kind === "original");
   const iastLayer = layers.find((l) => l.kind === "iast");
   const translationLayer = layers.find((l) => l.kind === "translation");
-  const commentaryBody = layerText(item, "commentary");
+  const commentaryBody = layerText(display, "commentary");
   const keyTermsLayer = layers.find((l) => l.kind === "key_terms");
-  const practice = practiceText(item) || practiceFallback(item);
+  const practice = practiceText(display) || practiceFallback(item);
   const hasSource = appendixLayers.length > 0 || Boolean(anchorChapter);
   const themes = item.themes || [];
+  const themeLabels = display.themes || themes;
   const hasApparatus =
     Boolean(keyTermsLayer) || resonances.length > 0 || hasSource || themes.length > 0;
 
@@ -172,7 +184,7 @@ export default function VerseDetailPage() {
     ? `/read?collection=${encodeURIComponent(item.collection)}`
     : "/read";
 
-  const translationBody = (translationLayer?.body || passagePreview(item) || "").trim();
+  const translationBody = (translationLayer?.body || passagePreview(display) || "").trim();
   const translationPreview = firstSentence(translationBody);
   const deck =
     translationPreview &&
@@ -192,8 +204,8 @@ export default function VerseDetailPage() {
           redbookSlug(item.collection) ? redbookSrc(redbookSlug(item.collection)!) : undefined
         }
       >
-        <nav className="passage-reading__crumb" aria-label="Breadcrumb">
-          <Link href="/read">Library</Link>
+        <nav className="passage-reading__crumb" aria-label={t("reader.breadcrumb")}>
+          <Link href="/read">{t("nav.library")}</Link>
           {item.collection ? (
             <>
               <span className="passage-reading__crumb-sep" aria-hidden>
@@ -207,7 +219,7 @@ export default function VerseDetailPage() {
               <span className="passage-reading__crumb-sep" aria-hidden>
                 ·
               </span>
-              <Link href={backHref}>Path</Link>
+              <Link href={backHref}>{t("nav.path")}</Link>
             </>
           ) : null}
         </nav>
@@ -220,7 +232,7 @@ export default function VerseDetailPage() {
               ? ` · ${siblingIndex + 1} of ${siblings.length}`
               : ""}
           </p>
-          <h1 className="passage-reading__title">{displayPassageTitle(item)}</h1>
+          <h1 className="passage-reading__title">{displayPassageTitle(display)}</h1>
           {deck ? <p className="passage-reading__deck">{deck}</p> : null}
           <OriginalReliabilityBadge item={item} />
         </header>
@@ -252,7 +264,7 @@ export default function VerseDetailPage() {
         ) : originalLayer ? null : (
           <section className="passage-layer passage-layer--translation">
             <h2 className="passage-layer__label">Translation</h2>
-            <p className="reading-prose mt-4">{passagePreview(item)}</p>
+            <p className="reading-prose mt-4">{passagePreview(display)}</p>
           </section>
         )}
 
@@ -269,7 +281,7 @@ export default function VerseDetailPage() {
         <SanghaBoundary>
           <StudentCommentary
             verseId={item._id}
-            verseTitle={displayPassageTitle(item)}
+            verseTitle={displayPassageTitle(display)}
             onKeepFolio={() => setFolioDesignOpen(true)}
           />
           <CircleReadings verseId={item._id} />
@@ -284,7 +296,7 @@ export default function VerseDetailPage() {
               Ask Pratibha
             </KitLink>
             <ShareComposer
-              item={item}
+              item={display}
               designOpen={folioDesignOpen}
               onDesignOpenChange={setFolioDesignOpen}
             />
@@ -311,12 +323,16 @@ export default function VerseDetailPage() {
           </div>
 
           {siblings.length > 1 ? (
-            <nav className="passage-reading__nav" aria-label="Passages in this text">
+            <nav className="passage-reading__nav" aria-label={t("reader.passagesInText")}>
               {prevPassage ? (
                 <Link
                   href={passageHref(prevPassage._id)}
                   className={buttonVariants({ variant: "secondary", size: "sm" })}
-                  aria-label={`Previous: ${displayPassageTitle(prevPassage)}`}
+                  aria-label={t("reader.previous", {
+                    title: displayPassageTitle(
+                      neighborStudy.find((passage) => passage._id === prevPassage._id) || prevPassage,
+                    ),
+                  })}
                 >
                   ← Previous
                 </Link>
@@ -330,7 +346,11 @@ export default function VerseDetailPage() {
                 <Link
                   href={passageHref(nextPassage._id)}
                   className={buttonVariants({ size: "sm" })}
-                  aria-label={`Next: ${displayPassageTitle(nextPassage)}`}
+                  aria-label={t("reader.next", {
+                    title: displayPassageTitle(
+                      neighborStudy.find((passage) => passage._id === nextPassage._id) || nextPassage,
+                    ),
+                  })}
                 >
                   Next →
                 </Link>
@@ -413,9 +433,9 @@ export default function VerseDetailPage() {
                       ))}
                       {anchorChapter ? (
                         <div>
-                          <h3 className="passage-layer__label">Full chapter</h3>
+                          <h3 className="passage-layer__label">{t("layers.fullChapter")}</h3>
                           <LayerBlock
-                            layer={{ kind: "appendix", label: "Full chapter", body: anchorChapter }}
+                            layer={{ kind: "appendix", label: t("layers.fullChapter"), body: anchorChapter }}
                             bare
                           />
                         </div>
@@ -429,9 +449,11 @@ export default function VerseDetailPage() {
                   <AccordionTrigger>Themes · {themes.length}</AccordionTrigger>
                   <AccordionContent>
                     <ul className="passage-themes-inline">
-                      {themes.map((t) => (
-                        <li key={t}>
-                          <Link href={`/read?theme=${encodeURIComponent(t)}`}>{t}</Link>
+                      {themes.map((theme, idx) => (
+                        <li key={theme}>
+                          <Link href={`/read?theme=${encodeURIComponent(theme)}`}>
+                            {themeLabels[idx] || theme}
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -451,7 +473,7 @@ export default function VerseDetailPage() {
                 : "Shared themes across traditions."}
             </p>
             <ul className="passage-related__list">
-              {related.slice(0, 5).map((r) => (
+              {relatedStudy.map((r) => (
                 <li key={r._id} className="passage-related__item">
                   <Link href={`/read/${encodeURIComponent(r._id)}`}>
                     <p className="passage-related__title">{displayPassageTitle(r)}</p>

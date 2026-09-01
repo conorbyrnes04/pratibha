@@ -1,5 +1,8 @@
+"use client";
+
 import type { VerseItem } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
+import { useT } from "@/components/LocaleProvider";
 
 /** True when there is no verified source-language original — the unit is carried
  * by Pratibha's own English rendering (original withdrawn, unverified, or an
@@ -12,13 +15,14 @@ export function hasUnverifiedOriginal(item: VerseItem | null | undefined): boole
 /** Public-facing label for units without a verified source original. Framed
  * positively and honestly as Pratibha's own translation rather than a warning. */
 export function OriginalReliabilityBadge({ item }: { item: VerseItem | null }) {
+  const t = useT();
   if (!item || !hasUnverifiedOriginal(item)) return null;
   return (
     <Badge
       variant="outline"
       className="mt-2 h-auto rounded-full border-[rgb(240_201_121_/_0.28)] bg-[rgb(240_201_121_/_0.06)] px-3 py-1 font-sans text-[10px] uppercase tracking-[0.12em] text-amber-100/80"
     >
-      Pratibha translation
+      {t("reader.pratibhaTranslation")}
     </Badge>
   );
 }

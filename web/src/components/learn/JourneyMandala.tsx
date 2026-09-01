@@ -4,6 +4,7 @@ import { LEARNING_REALMS, RECOMMENDED_SPINE, type LearningTrack } from "@/lib/le
 import { realmImageSrc } from "@/lib/collectionImages";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { YantraBreath } from "./YantraBreath";
+import { useT } from "@/components/LocaleProvider";
 
 type ProgressMap = Record<string, boolean>;
 
@@ -62,6 +63,7 @@ function PathNodeButton({
   node: PathNodeState;
   onSelect: (id: string) => void;
 }) {
+  const t = useT();
   const pct = Math.round((node.done / Math.max(1, node.total)) * 100);
   return (
     <button
@@ -72,7 +74,7 @@ function PathNodeButton({
         node.selected ? "path-node--active" : ""
       } ${node.complete ? "path-node--complete" : ""}`}
       style={{ left: `${node.x}%`, top: `${node.y}%` }}
-      aria-label={`${node.track.title} — ${node.track.level}. ${node.done} of ${node.total} steps complete.`}
+      aria-label={`${node.track.title} — ${node.track.level}. ${t("learn.stepsCount", { done: node.done, total: node.total })}`}
     >
       <span
         className={`path-node__medallion mx-auto flex h-11 w-11 items-center justify-center rounded-full border-2 font-sans text-xs font-bold sm:h-14 sm:w-14 sm:text-sm ${
@@ -97,19 +99,19 @@ function PathNodeButton({
         </div>
         <p className="mt-2 font-sans text-[10px] uppercase tracking-[0.12em] text-stone-400">
           {node.complete ? (
-            <span className="text-emerald-300/90">Complete ✓</span>
+            <span className="text-emerald-300/90">{t("common.complete")} ✓</span>
           ) : node.isNext ? (
-            <span className="text-amber-200/90">Recommended next</span>
+            <span className="text-amber-200/90">{t("learn.recommendedNext")}</span>
           ) : node.isStart ? (
-            <span className="text-amber-200/90">Start here</span>
+            <span className="text-amber-200/90">{t("learn.startHere")}</span>
           ) : node.done > 0 ? (
-            <span className="text-amber-200/70">In progress · {node.done}/{node.total}</span>
+            <span className="text-amber-200/70">{t("learn.inProgress", { done: node.done, total: node.total })}</span>
           ) : (
-            `${node.done}/${node.total} steps`
+            t("learn.stepsCount", { done: node.done, total: node.total })
           )}
         </p>
         <span className="mt-2.5 block font-sans text-[10px] font-bold uppercase tracking-[0.14em] text-amber-200/80">
-          Open path →
+          {t("learn.openPath")}
         </span>
       </div>
     </button>
@@ -125,6 +127,7 @@ export function JourneyMandala({
   anyProgress,
   onSelectTrack,
 }: JourneyMandalaProps) {
+  const t = useT();
   const safeProgress = hydrated ? progress : {};
   const nodes: PathNodeState[] = RECOMMENDED_SPINE.map((tid, spineIndex) => {
     const track = trackById[tid];
@@ -153,11 +156,8 @@ export function JourneyMandala({
 
   return (
     <section className="journey-mandala mt-14">
-      <p className="eyebrow">The journey</p>
-      <p className="soft mt-2 max-w-2xl text-base leading-relaxed">
-        Beginner at the inner ring, intermediate in the middle, advanced at the capstone — eight paths on one breathing
-        diagram. Hover a gate to read it; click to open. The recommended spine shows the suggested order of descent.
-      </p>
+      <p className="eyebrow">{t("learn.journey")}</p>
+      <p className="soft mt-2 max-w-2xl text-base leading-relaxed">{t("learn.journeyLede")}</p>
 
       {/* Desktop: radial mandala */}
       <div className="relative mx-auto mt-8 hidden aspect-square w-full max-w-3xl overflow-visible md:block">

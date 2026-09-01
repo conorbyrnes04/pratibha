@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useT } from "@/components/LocaleProvider";
 
 type StepIntegrationGateProps = {
   stepId: string;
@@ -24,6 +25,7 @@ export function StepIntegrationGate({
   onComplete,
   completeLabel,
 }: StepIntegrationGateProps) {
+  const t = useT();
   const [recall, setRecall] = useState("");
   const [revealed, setRevealed] = useState(false);
   const [ready, setReady] = useState(false);
@@ -44,24 +46,22 @@ export function StepIntegrationGate({
   return (
     <div className="max-w-[var(--reading-measure)] border-t border-emerald-300/25 pt-4">
       <p className="font-sans text-xs uppercase tracking-[0.16em] text-emerald-200/80">
-        Gate · before you move on
+        {t("learn.gateBefore")}
       </p>
       <p className="mt-2 text-sm leading-relaxed text-stone-200">{integration}</p>
 
       {recallPrompt ? (
         <div className="mt-4 space-y-3">
           <Label htmlFor={recallId} className="font-sans text-xs uppercase tracking-[0.14em] text-amber-200/75">
-            Recall · without looking up
+            {t("learn.recallLabel")}
           </Label>
-          <p className="text-sm leading-relaxed text-stone-300">
-            In one or two sentences, restate the key idea of this gate from memory.
-          </p>
+          <p className="text-sm leading-relaxed text-stone-300">{t("learn.recallLede")}</p>
           <Textarea
             id={recallId}
             rows={3}
             value={recall}
             onChange={(e) => setRecall(e.target.value)}
-            placeholder="Write from memory…"
+            placeholder={t("learn.recallPlaceholder")}
             className="min-h-[5.5rem] border-[rgb(240_201_121_/_0.2)] bg-transparent"
             disabled={revealed}
           />
@@ -73,16 +73,16 @@ export function StepIntegrationGate({
               disabled={recall.trim().length < 12}
               onClick={() => setRevealed(true)}
             >
-              Reveal key idea
+              {t("learn.reveal")}
             </Button>
           ) : (
             <div className="rounded-xl border border-amber-200/20 bg-amber-200/5 px-3 py-3">
               <p className="font-sans text-[10px] uppercase tracking-[0.14em] text-amber-200/70">
-                Key idea
+                {t("learn.keyIdea")}
               </p>
               <p className="mt-1 text-sm leading-relaxed text-stone-100">{recallPrompt}</p>
               {recall.trim() ? (
-                <p className="soft mt-2 text-xs leading-relaxed">Your recall: {recall.trim()}</p>
+                <p className="soft mt-2 text-xs leading-relaxed">{t("learn.yourRecall", { text: recall.trim() })}</p>
               ) : null}
             </div>
           )}
@@ -102,7 +102,7 @@ export function StepIntegrationGate({
           onCheckedChange={(checked) => setReady(checked === true)}
           className="mt-0.5 border-amber-200/40 data-checked:border-amber-200 data-checked:bg-amber-200 data-checked:text-[#121018]"
         />
-        <span>I recognize this in experience — or I&apos;m willing to keep practicing at this gate.</span>
+        <span>{t("learn.recognize")}</span>
       </Label>
       <Button
         type="button"
@@ -110,7 +110,7 @@ export function StepIntegrationGate({
         disabled={!ready || !recallOk}
         className="mt-4"
       >
-        {completeLabel || "Mark complete"}
+        {completeLabel || t("learn.markComplete")}
       </Button>
     </div>
   );

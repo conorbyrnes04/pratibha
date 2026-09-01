@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { InkGlyph } from "@/components/InkGlyph";
 import { GlyphInkDraw } from "@/components/GlyphInkDraw";
 import { TrailSandLine, type TrailSandMark } from "@/components/learn/TrailSandLine";
@@ -10,6 +10,8 @@ import { type CompletedAtMap, type ProgressMap } from "@/lib/learn/progress";
 import { SHARE_INKS } from "@/lib/shareCard";
 import { trailSumiGlyph } from "@/lib/sumiGlyphs";
 import { loadSumiTrace } from "@/lib/sumiTrace";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedFields, useLocalizedTrails } from "@/components/useLocalizedStudy";
 
 type LearnTrailProps = {
   pathId: string;
@@ -52,6 +54,7 @@ export function LearnTrail({
   finishingKey,
   gateOpen = false,
 }: LearnTrailProps) {
+  const t = useT();
   const trail = findTraditionTrail(pathId);
   const nodes = buildTrail(trail.id);
   const nodeRefs = useRef<Record<string, HTMLElement | null>>({});
@@ -70,6 +73,18 @@ export function LearnTrail({
   const tomorrowKey = rested ? sit?.next?.key : null;
   const [inkReady, setInkReady] = useState(false);
   const visibleKey = visible.map((node) => node.key).join("|");
+  const trails = useLocalizedTrails(TRADITION_TRAILS);
+  const trailCopy = trails.find((item) => item.id === trail.id) || trail;
+  const teaserFields = useMemo(() => {
+    const fields: Record<string, string> = {};
+    visible.forEach((node) => {
+      fields[`title:${node.key}`] = node.title;
+      fields[`orientation:${node.key}`] = node.orientation;
+      fields[`section:${node.trackId}`] = node.sectionLabel;
+    });
+    return fields;
+  }, [visible, visibleKey]);
+  const { fields: localizedTeasers } = useLocalizedFields(teaserFields);
 
   useLayoutEffect(() => {
     if (!drawingKey) {
@@ -152,26 +167,26 @@ export function LearnTrail({
                 onClick={onBackPaths}
                 className="font-sans text-[10px] uppercase tracking-[0.16em] text-amber-200/55 hover:text-amber-100"
               >
-                ← Paths
+                {t("learn.backPaths")}
               </button>
             ) : (
-              <p className="passage-reading__meta">Guided study</p>
+              <p className="passage-reading__meta">{t("learn.guided")}</p>
             )}
             <label className="learn-trail__path-select">
               <select
-                aria-label="Choose a path"
+                aria-label={t("learn.choosePath")}
                 value={trail.id}
                 onChange={(event) => onSelectPath(event.target.value)}
               >
-                <optgroup label="Essential">
-                  {TRADITION_TRAILS.filter((option) => option.essential).map((option) => (
+                <optgroup label={t("learn.essential")}>
+                  {trails.filter((option) => option.essential).map((option) => (
                     <option key={option.id} value={option.id}>
                       {option.shortTitle}
                     </option>
                   ))}
                 </optgroup>
-                <optgroup label="Traditions">
-                  {TRADITION_TRAILS.filter((option) => !option.essential).map((option) => (
+                <optgroup label={t("learn.traditions")}>
+                  {trails.filter((option) => !option.essential).map((option) => (
                     <option key={option.id} value={option.id}>
                       {option.shortTitle}
                     </option>
@@ -180,20 +195,22 @@ export function LearnTrail({
               </select>
             </label>
           </div>
-          <h1 className="library-header__title">{trail.title}</h1>
+          <h1 className="library-header__title">{trailCopy.title}</h1>
           <p className="library-header__lede">
             {trail.essential
-              ? "This is the walk. Today opens one gate. Finish it, and tomorrow names the next node."
-              : trail.lede}
+              ? t("learn.essentialLede")
+              : trailCopy.lede}
           </p>
         </div>
       </header>
 
       {rested && sit?.next ? (
         <div className="learn-trail__rest">
-          <p className="passage-reading__meta">Walked today</p>
+          <p className="passage-reading__meta">{t("learn.walkedToday")}</p>
           <p className="library-header__lede">
-            Enough for today. Tomorrow opens {sit.next.title}.
+            {t("learn.enoughTomorrow", {
+              title: localizedTeasers[`title:${sit.next.key}`] || sit.next.title,
+            })}
           </p>
         </div>
       ) : null}
@@ -237,13 +254,13 @@ export function LearnTrail({
                   {node.isFirstInSection && i > 0 ? (
                     <div className="mb-10 mt-8 text-center">
                       <p className="font-sans text-[11px] uppercase tracking-[0.22em] text-amber-200/45">
-                        {node.sectionLabel}
+                        {localizedTeasers[`section:${node.trackId}`] || node.sectionLabel}
                       </p>
                     </div>
                   ) : node.isFirstInSection ? (
                     <div className="mb-8 text-center">
                       <p className="font-sans text-[11px] uppercase tracking-[0.22em] text-amber-200/45">
-                        {node.sectionLabel}
+                        {localizedTeasers[`section:${node.trackId}`] || node.sectionLabel}
                       </p>
                     </div>
                   ) : null}
@@ -264,12 +281,12 @@ export function LearnTrail({
                       }`}
                       aria-label={
                         done
-                          ? `${node.title} - Complete`
+                          ? t("learn.nodeComplete", { title: localizedTeasers[`title:${node.key}`] || node.title })
                           : isTomorrow
-                            ? `${node.title} - Opens tomorrow`
+                            ? t("learn.nodeTomorrow", { title: localizedTeasers[`title:${node.key}`] || node.title })
                             : isCurrent || arriving
-                              ? `${node.title} - Current gate`
-                              : node.title
+                              ? t("learn.nodeCurrent", { title: localizedTeasers[`title:${node.key}`] || node.title })
+                              : localizedTeasers[`title:${node.key}`] || node.title
                       }
                       data-trail-node={node.key}
                       data-trail-arriving={arriving ? "true" : undefined}
@@ -312,11 +329,11 @@ export function LearnTrail({
                             done ? "text-emerald-100" : isCurrent || arriving ? "text-amber-100" : "text-stone-400"
                           }`}
                         >
-                          {node.title}
+                          {localizedTeasers[`title:${node.key}`] || node.title}
                         </h3>
                         {isCurrent || arriving || isTomorrow || finishing ? (
                           <p className="mt-2 px-3 text-xs leading-relaxed text-stone-400">
-                            {node.orientation.split(".")[0]}.
+                            {(localizedTeasers[`orientation:${node.key}`] || node.orientation).split(".")[0]}.
                           </p>
                         ) : null}
                       </div>
@@ -324,13 +341,13 @@ export function LearnTrail({
                       {done && !finishing && !arriving ? (
                         <div className="mt-3 flex justify-center">
                           <span className="rounded-full border border-emerald-300/35 bg-emerald-300/8 px-2.5 py-0.5 font-sans text-[9px] uppercase tracking-[0.14em] text-emerald-200">
-                            Complete
+                            {t("common.complete")}
                           </span>
                         </div>
                       ) : isTomorrow ? (
                         <div className="mt-3 flex justify-center">
                           <span className="rounded-full border border-amber-200/30 bg-amber-200/6 px-2.5 py-0.5 font-sans text-[9px] uppercase tracking-[0.14em] text-amber-100/80">
-                            Tomorrow
+                            {t("common.tomorrow")}
                           </span>
                         </div>
                       ) : null}
@@ -346,14 +363,23 @@ export function LearnTrail({
           <div className="mt-16 text-center">
             <p className="font-sans text-[11px] uppercase tracking-[0.18em] text-stone-500">
               {rested && sit?.next
-                ? `Walked today · tomorrow opens ${sit.next.title}`
+                ? t("gate.walkedTodayTomorrow", {
+                    title: localizedTeasers[`title:${sit.next.key}`] || sit.next.title,
+                  })
                 : currentIndex === 0
-                  ? "Begin the journey"
+                  ? t("learn.beginJourney")
                   : currentIndex < nodes.length - 1
-                    ? `${currentIndex} ${currentIndex === 1 ? "gate" : "gates"} walked · ${nodes.length - currentIndex} ${
-                        nodes.length - currentIndex === 1 ? "remains" : "remain"
-                      }`
-                    : "The path is complete"}
+                    ? t("gate.progress", {
+                        walked: currentIndex,
+                        walkedLabel:
+                          currentIndex === 1 ? t("gate.gateOne") : t("gate.gateMany"),
+                        remain: nodes.length - currentIndex,
+                        remainLabel:
+                          nodes.length - currentIndex === 1
+                            ? t("gate.remainOne")
+                            : t("gate.remainMany"),
+                      })
+                    : t("learn.pathComplete")}
             </p>
           </div>
         ) : null}

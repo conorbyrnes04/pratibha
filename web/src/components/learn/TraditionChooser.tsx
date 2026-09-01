@@ -8,6 +8,8 @@ import {
   TRADITIONS_COMING,
   type TraditionTrail,
 } from "@/lib/learn/traditionTrails";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedTrails } from "@/components/useLocalizedStudy";
 
 type TraditionChooserProps = {
   progress: ProgressMap;
@@ -42,6 +44,7 @@ function TraditionCard({
   disabled?: boolean;
   onSelect: (id: string) => void;
 }) {
+  const t = useT();
   const { completed, total } = trailStats(trail, progress);
   const done = total > 0 && completed === total;
   const started = completed > 0;
@@ -66,14 +69,16 @@ function TraditionCard({
             <p className="mt-2 text-sm leading-relaxed text-stone-400">{trail.lede}</p>
           </div>
           {disabled ? (
-            <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-stone-500">Soon</p>
+            <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-stone-500">{t("common.soon")}</p>
           ) : hydrated ? (
             <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-amber-200/55">
               {done
-                ? `${total} gates · complete`
+                ? t("learn.gatesComplete", { total })
                 : started
-                  ? `${completed}/${total} gates`
-                  : `${total} ${total === 1 ? "gate" : "gates"} · start`}
+                  ? t("learn.gatesProgress", { completed, total })
+                  : total === 1
+                    ? t("learn.gatesStartOne", { total })
+                    : t("learn.gatesStartMany", { total })}
             </p>
           ) : (
             <p className="font-sans text-[10px] uppercase tracking-[0.16em] text-stone-600">…</p>
@@ -85,21 +90,21 @@ function TraditionCard({
 }
 
 export function TraditionChooser({ progress, hydrated, onSelectTradition }: TraditionChooserProps) {
+  const t = useT();
+  const trails = useLocalizedTrails(TRADITION_TRAILS);
+  const coming = useLocalizedTrails(TRADITIONS_COMING);
   return (
     <div className="section-stack">
       <header className="library-header">
         <div className="library-header__body">
-          <p className="passage-reading__meta">Guided study</p>
-          <h1 className="library-header__title">Paths</h1>
-          <p className="library-header__lede">
-            Each tradition is a language: key terms, metaphors, images, and ideas.
-            Walk one gate to the next.
-          </p>
+          <p className="passage-reading__meta">{t("learn.guided")}</p>
+          <h1 className="library-header__title">{t("learn.paths")}</h1>
+          <p className="library-header__lede">{t("learn.pathsLede")}</p>
         </div>
       </header>
       <section className="mt-8 pb-8">
         <ul className="mx-auto grid max-w-4xl list-none gap-5 sm:grid-cols-2">
-          {TRADITION_TRAILS.map((trail) => (
+          {trails.map((trail) => (
             <TraditionCard
               key={trail.id}
               trail={trail}
@@ -112,10 +117,10 @@ export function TraditionChooser({ progress, hydrated, onSelectTradition }: Trad
       </section>
       <section className="pb-16">
         <p className="mx-auto mb-4 max-w-4xl font-sans text-[10px] uppercase tracking-[0.18em] text-stone-500">
-          Still being authored
+          {t("learn.coming")}
         </p>
         <ul className="mx-auto grid max-w-4xl list-none gap-5 sm:grid-cols-2">
-          {TRADITIONS_COMING.map((trail) => (
+          {coming.map((trail) => (
             <TraditionCard
               key={trail.id}
               trail={trail}

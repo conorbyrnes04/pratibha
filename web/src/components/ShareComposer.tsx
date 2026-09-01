@@ -15,7 +15,7 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { stripMarkdown } from "@/lib/textPreview";
 import { GlyphMala } from "@/components/GlyphMala";
-import { recordPractice, recordStudy, unlockedMarks, unlockProgress, UNLOCK_HINT } from "@/lib/glyphUnlock";
+import { recordPractice, recordStudy, unlockedMarks, unlockProgress } from "@/lib/glyphUnlock";
 import { BookMarked, Copy, Download, Share2, Shuffle } from "lucide-react";
 import {
   SHARE_MARK_GROUPS,
@@ -46,6 +46,7 @@ import { ShareCard } from "@/components/ShareCard";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { enableHoloMotion } from "@/lib/useHoloTilt";
+import { bakeHoloFoil, holoHueFromSeed } from "@/lib/bakeHoloFoil";
 import {
   Sheet,
   SheetContent,
@@ -55,6 +56,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { InkGlyph } from "@/components/InkGlyph";
+import { useT } from "@/components/LocaleProvider";
+import { shareGroupKey, shareInkKey } from "@/i18n";
 
 function verseCopy(item: VerseItem) {
   return {
@@ -135,6 +138,7 @@ function ShareComposerInner({
   onDesignOpenChange,
   cloud,
 }: ShareComposerProps & { cloud?: ShareCloud }) {
+  const t = useT();
   const copy = useMemo(() => verseCopy(item), [item]);
   const verseMark = useMemo(() => verseShareMark(item), [item]);
   const [mark, setMark] = useState<ShareForceMark>(verseMark);
@@ -256,9 +260,13 @@ function ShareComposerInner({
     setCanOsShare(typeof navigator !== "undefined" && typeof navigator.share === "function");
   }, []);
 
+  const holoHue = holoHueFromSeed(
+    `${item._id}|${mark}|${ink}|${displayCopy.reading || ""}|${displayCopy.title || ""}`,
+  );
+
   async function pngBlob(): Promise<Blob> {
     const wrap = exportRef.current || cardRef.current;
-    if (!wrap) throw new Error("Could not render the page.");
+    if (!wrap) throw new Error(t("share.renderFailed"));
     await Promise.race([
       document.fonts.ready.then(() => undefined).catch(() => undefined),
       new Promise<void>((resolve) => window.setTimeout(resolve, 400)),
@@ -274,7 +282,7 @@ function ShareComposerInner({
     const node = (wrap.querySelector(".share-card") as HTMLElement | null) || wrap;
     const width = Math.max(1, Math.round(node.offsetWidth));
     const height = Math.max(1, Math.round(node.offsetHeight));
-    if (width < 8 || height < 8) throw new Error("Could not render the page.");
+    if (width < 8 || height < 8) throw new Error(t("share.renderFailed"));
     const blob = await Promise.race([
       toBlob(node, {
         pixelRatio: 2,
@@ -296,10 +304,13 @@ function ShareComposerInner({
         },
       }),
       new Promise<null>((_, reject) => {
-        window.setTimeout(() => reject(new Error("Could not render the page.")), 8000);
+        window.setTimeout(() => reject(new Error(t("share.renderFailed"))), 8000);
       }),
     ]);
-    if (!blob) throw new Error("Could not render the page.");
+    if (!blob) throw new Error(t("share.renderFailed"));
+    if (node.classList.contains("share-card--holo")) {
+      return bakeHoloFoil(blob, holoHue);
+    }
     return blob;
   }
 
@@ -335,20 +346,20 @@ function ShareComposerInner({
       downloadBlob(blob, `pratibha-${item._id}.png`);
       const { caption } = captionAndUrl();
       void navigator.clipboard.writeText(caption).catch(() => {});
-      toast.success("Image saved. Caption copied.");
+      toast.success(t("share.savedCaption"));
     } catch (err) {
-      toast.error(friendlyShareError(err, "Could not save the folio."));
+      toast.error(friendlyShareError(err, t("share.saveFailed")));
     } finally {
       setBusy(null);
     }
   }
 
   function destHint(dest?: ShareSocialId) {
-    if (dest === "instagram_story") return "Add it to your Instagram story.";
-    if (dest === "instagram_post") return "Add it to an Instagram post.";
-    if (dest === "tiktok") return "Add it to TikTok.";
-    if (dest === "signal") return "Attach it in Signal.";
-    return "Attach it wherever you post.";
+    if (dest === "instagram_story") return t("share.destStory");
+    if (dest === "instagram_post") return t("share.destPost");
+    if (dest === "tiktok") return t("share.destTiktok");
+    if (dest === "signal") return t("share.destSignal");
+    return t("share.destAnywhere");
   }
 
   async function handOffFolio(dest?: ShareSocialId) {
@@ -369,7 +380,7 @@ function ShareComposerInner({
           }
           await navigator.share({ title: copy.title, text: caption });
           downloadBlob(blob, file.name);
-          toast.success("Caption handed off. Image saved so you can attach it.");
+          toast.success(t("share.captionHandoff"));
           return;
         } catch (err) {
           if (err instanceof Error && err.name === "AbortError") return;
@@ -378,18 +389,18 @@ function ShareComposerInner({
       downloadBlob(blob, file.name);
       if (dest === "x") {
         window.open(tweetIntentUrl(caption, pageUrl), "_blank", "noopener,noreferrer");
-        toast.success("Image saved. X opened with the caption.");
+        toast.success(t("share.savedX"));
         return;
       }
       if (dest === "whatsapp") {
         window.open(whatsappIntentUrl(caption), "_blank", "noopener,noreferrer");
-        toast.success("Image saved. WhatsApp opened with the caption.");
+        toast.success(t("share.savedWhatsapp"));
         return;
       }
-      toast.success(`Image saved. Caption copied — ${destHint(dest)}`);
+      toast.success(t("share.savedDest", { hint: destHint(dest) }));
     } catch (err) {
       if (err instanceof Error && err.name === "AbortError") return;
-      toast.error(friendlyShareError(err, "Could not share the folio."));
+      toast.error(friendlyShareError(err, t("share.shareFailed")));
     } finally {
       setBusy(null);
     }
@@ -416,7 +427,7 @@ function ShareComposerInner({
     const path = sharePagePath(options);
     const url = `${window.location.origin}${path}`;
     await navigator.clipboard.writeText(url);
-    toast.success("Link copied.");
+    toast.success(t("share.linkCopied"));
   }
 
   async function keepCard() {
@@ -427,7 +438,7 @@ function ShareComposerInner({
     setBusy("keep");
     try {
       if (!cloud?.addVerse) {
-        toast.error("Sign in to keep a manuscript.");
+        toast.error(t("share.signInKeep"));
         return;
       }
       const payload = {
@@ -451,9 +462,9 @@ function ShareComposerInner({
       recordPractice(`manuscript:${item._id}`);
       if (folioNote.trim()) recordPractice(`manuscript:note:${item._id}`);
       refreshUnlocks();
-      toast.success("Card kept in your manuscript.");
+      toast.success(t("share.kept"));
     } catch (err) {
-      toast.error(friendlyShareError(err, "Could not add to your manuscript."));
+      toast.error(friendlyShareError(err, t("share.keepFailed")));
     } finally {
       setBusy(null);
     }
@@ -467,7 +478,7 @@ function ShareComposerInner({
       return;
     }
     if (!cloud?.upsertCommentary) {
-      toast.error("Sign in to write a reading.");
+      toast.error(t("share.signInReading"));
       return;
     }
     setBusy("reading");
@@ -496,9 +507,9 @@ function ShareComposerInner({
           reading: printedReading || "",
         }).catch(() => undefined);
       }
-      toast.success("Reading saved. The card takes the holographic shine.");
+      toast.success(t("share.readingSaved"));
     } catch (err) {
-      toast.error(friendlyShareError(err, "Could not save the reading."));
+      toast.error(friendlyShareError(err, t("share.readingFailed")));
     } finally {
       setBusy(null);
     }
@@ -514,23 +525,23 @@ function ShareComposerInner({
     >
       <SheetTrigger render={<Button type="button" size="sm" className="share-trigger" />}>
         <InkGlyph glyph={verseMark} ink="#121018" className="share-trigger__glyph" />
-        Share
+        {t("share.trigger")}
       </SheetTrigger>
       <SheetContent
         side="bottom"
         className="flex h-[92vh] max-h-[92vh] flex-col overflow-hidden border-t border-amber-200/15 bg-[#0b0b14] sm:max-w-none"
       >
         <SheetHeader className="shrink-0">
-          <SheetTitle className="text-amber-100">Build this card</SheetTitle>
+          <SheetTitle className="text-amber-100">{t("share.build")}</SheetTitle>
           <SheetDescription className="soft">
-            The folio stays in view as you choose a mark, ink, and line.
-            {progress.remaining > 0 ? " Marks open as you study the house." : " Every mark is open."}
+            {t("share.buildLede")}
+            {progress.remaining > 0 ? ` ${t("share.marksRemain")}` : ` ${t("share.marksAllOpen")}`}
           </SheetDescription>
           <div className="mt-3">
             <GlyphMala unlocked={openMarks} />
           </div>
         </SheetHeader>
-        <div className="share-folio-studio">
+        <div className="share-folio-studio min-h-0 flex-1">
           <div ref={cardRef} className="share-folio-studio__preview">
             <div className="share-card-preview">
               <ShareCard
@@ -541,16 +552,15 @@ function ShareComposerInner({
                 fillWindow={Boolean(picked)}
                 aspectRatio={aspectRatio}
                 holographic={holographic && earnedHolo}
+                holoHue={holoHue}
               />
             </div>
           </div>
           <div className="share-folio-send">
             <fieldset>
-              <legend className="passage-layer__label">Send</legend>
+              <legend className="passage-layer__label">{t("share.send")}</legend>
               <p className="soft mb-3 text-sm leading-relaxed">
-                {canOsShare
-                  ? "Share opens the system sheet — Instagram, WhatsApp, Messages, whatever is on this phone."
-                  : "Save the image, then attach it wherever you post. Caption is copied with it."}
+                {canOsShare ? t("share.sendOs") : t("share.sendSave")}
               </p>
               <div className="flex flex-nowrap gap-1.5 overflow-x-auto">
                 {CONVEX_ENABLED ? (
@@ -562,18 +572,18 @@ function ShareComposerInner({
                       onClick={() => void keepCard()}
                     >
                       <BookMarked />
-                      {busy === "keep" ? "…" : inManuscript ? "Update" : "Keep"}
+                      {busy === "keep" ? "…" : inManuscript ? t("common.update") : t("common.keep")}
                     </button>
                   ) : (
                     <Link href={`/login?next=/read/${encodeURIComponent(item._id)}`} className="share-dest share-dest--first">
                       <BookMarked />
-                      Manuscript
+                      {t("share.manuscript")}
                     </Link>
                   )
                 ) : (
                   <Link href={`/login?next=/read/${encodeURIComponent(item._id)}`} className="share-dest share-dest--first">
                     <BookMarked />
-                    Manuscript
+                    {t("share.manuscript")}
                   </Link>
                 )}
                 <button
@@ -583,7 +593,7 @@ function ShareComposerInner({
                   onClick={() => void shareFolio()}
                 >
                   <Share2 />
-                  {busy === "share" ? "…" : "Share"}
+                  {busy === "share" ? "…" : t("share.trigger")}
                 </button>
                 <button
                   type="button"
@@ -592,11 +602,11 @@ function ShareComposerInner({
                   onClick={() => void saveImage()}
                 >
                   <Download />
-                  {busy === "save" ? "…" : "Save"}
+                  {busy === "save" ? "…" : t("common.save")}
                 </button>
                 <button type="button" className="share-dest" onClick={() => void copyLink()}>
                   <Copy />
-                  Copy
+                  {t("common.copy")}
                 </button>
               </div>
               <div className="mt-2 flex flex-nowrap gap-1.5 overflow-x-auto">
@@ -621,99 +631,14 @@ function ShareComposerInner({
             </fieldset>
           </div>
           <div className="share-folio-studio__controls space-y-6">
-            <fieldset>
-              <legend className="passage-layer__label mb-3">Format</legend>
-              <p className="soft mb-3 text-sm leading-relaxed">
-                Shape the card for a feed post or a full-screen story. Then share or save the image.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {(Object.keys(SHARE_ASPECT_RATIOS) as ShareAspectRatio[]).map((key) => (
-                  <button
-                    key={key}
-                    type="button"
-                    className={`share-chip ${aspectRatio === key ? "share-chip--on" : ""}`}
-                    onClick={() => setAspectRatio(key)}
-                    aria-pressed={aspectRatio === key}
-                  >
-                    {SHARE_ASPECT_RATIOS[key].label}
-                  </button>
-                ))}
-              </div>
-            </fieldset>
-            <fieldset id="share-keep">
-              <legend className="passage-layer__label mb-3">This card</legend>
-              {earnedHolo || readingText ? (
-                <div className="mb-3 flex flex-wrap gap-2">
-                  {earnedHolo ? (
-                    <button
-                      type="button"
-                      className={`share-chip ${holographic ? "share-chip--on" : ""}`}
-                      onClick={() => {
-                        const next = !holographic;
-                        setHolographic(next);
-                        if (next) enableHoloMotion();
-                      }}
-                      aria-pressed={holographic}
-                    >
-                      Favorite — holographic shine
-                    </button>
-                  ) : null}
-                  {readingText ? (
-                    <button
-                      type="button"
-                      className={`share-chip ${printReading ? "share-chip--on" : ""}`}
-                      onClick={() => setPrintReading((on) => !on)}
-                      aria-pressed={printReading}
-                    >
-                      Print reading on card
-                    </button>
-                  ) : null}
-                </div>
-              ) : (
-                <p className="soft mb-3 text-sm leading-relaxed">
-                  Write your own reading of this verse. That is what gives the card a holographic shine.
-                </p>
-              )}
-              {user && cloud?.upsertCommentary ? (
-                <div className="space-y-3">
-                  <Textarea
-                    value={readingDraft}
-                    onChange={(e) => setReadingDraft(e.target.value)}
-                    placeholder="What does this verse ask of you?"
-                    rows={4}
-                  />
-                  {!earnedHolo ? (
-                    <Button
-                      type="button"
-                      size="sm"
-                      disabled={!readingDraft.trim() || busy !== null}
-                      onClick={() => void saveReading()}
-                    >
-                      {busy === "reading" ? "Saving…" : "Save reading"}
-                    </Button>
-                  ) : null}
-                </div>
-              ) : !earnedHolo ? (
-                <Link href={`/login?next=/read/${encodeURIComponent(item._id)}`} className="share-dest share-dest--first">
-                  Sign in to write a reading
-                </Link>
-              ) : null}
-              <Textarea
-                className="mt-3"
-                value={folioNote}
-                onChange={(e) => setFolioNote(e.target.value)}
-                placeholder="A one-line margin — optional"
-                rows={2}
-              />
-            </fieldset>
             {SHARE_MARK_GROUPS.map((group) => {
               const opened = group.marks.filter((slug) => openMarks.has(slug)).length;
               return (
                 <fieldset key={group.id}>
                   <legend className="passage-layer__label mb-3">
-                    {group.label}{" "}
+                    {t(shareGroupKey(group.id))}{" "}
                     <span className="share-unlock-count">
-                      {opened} of {group.marks.length} open
+                      {t("share.ofOpen", { opened, total: group.marks.length })}
                     </span>
                   </legend>
                   <div className="flex flex-wrap gap-2">
@@ -728,15 +653,15 @@ function ShareComposerInner({
                           className={`share-chip ${mark === slug ? "share-chip--on" : ""} ${available ? "" : "share-chip--locked"}`}
                           onClick={() => {
                             if (!available) {
-                              toast.message("Keep studying.", {
-                                description: UNLOCK_HINT,
+                              toast.message(t("share.keepStudying"), {
+                                description: t("glyph.unlockHint"),
                               });
                               return;
                             }
                             setMark(slug);
                           }}
                           aria-pressed={mark === slug}
-                          aria-label={available ? slug : `${slug}, sealed`}
+                          aria-label={available ? slug : t("share.sealed", { slug })}
                         >
                           <InkGlyph
                             glyph={slug}
@@ -755,7 +680,7 @@ function ShareComposerInner({
               );
             })}
             <fieldset>
-              <legend className="passage-layer__label mb-3">Ink</legend>
+              <legend className="passage-layer__label mb-3">{t("share.ink")}</legend>
               <div className="flex flex-wrap gap-2">
                 {(Object.keys(SHARE_INKS) as ShareInk[]).map((key) => (
                   <button
@@ -766,14 +691,99 @@ function ShareComposerInner({
                     aria-pressed={ink === key}
                   >
                     <span className="share-chip__swatch" style={{ background: SHARE_INKS[key].hex }} />
-                    {SHARE_INKS[key].label}
+                    {t(shareInkKey(key))}
                   </button>
                 ))}
               </div>
             </fieldset>
+            <fieldset>
+              <legend className="passage-layer__label mb-3">{t("share.format")}</legend>
+              <p className="soft mb-3 text-sm leading-relaxed">
+                {t("share.formatLede")}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {(Object.keys(SHARE_ASPECT_RATIOS) as ShareAspectRatio[]).map((key) => (
+                  <button
+                    key={key}
+                    type="button"
+                    className={`share-chip ${aspectRatio === key ? "share-chip--on" : ""}`}
+                    onClick={() => setAspectRatio(key)}
+                    aria-pressed={aspectRatio === key}
+                  >
+                    {t(`share.${key}`)}
+                  </button>
+                ))}
+              </div>
+            </fieldset>
+            <fieldset id="share-keep">
+              <legend className="passage-layer__label mb-3">{t("share.thisCard")}</legend>
+              {earnedHolo || readingText ? (
+                <div className="mb-3 flex flex-wrap gap-2">
+                  {earnedHolo ? (
+                    <button
+                      type="button"
+                      className={`share-chip ${holographic ? "share-chip--on" : ""}`}
+                      onClick={() => {
+                        const next = !holographic;
+                        setHolographic(next);
+                        if (next) enableHoloMotion();
+                      }}
+                      aria-pressed={holographic}
+                    >
+                      {t("share.holo")}
+                    </button>
+                  ) : null}
+                  {readingText ? (
+                    <button
+                      type="button"
+                      className={`share-chip ${printReading ? "share-chip--on" : ""}`}
+                      onClick={() => setPrintReading((on) => !on)}
+                      aria-pressed={printReading}
+                    >
+                      {t("share.printReading")}
+                    </button>
+                  ) : null}
+                </div>
+              ) : (
+                <p className="soft mb-3 text-sm leading-relaxed">
+                  {t("share.writeReading")}
+                </p>
+              )}
+              {user && cloud?.upsertCommentary ? (
+                <div className="space-y-3">
+                  <Textarea
+                    value={readingDraft}
+                    onChange={(e) => setReadingDraft(e.target.value)}
+                    placeholder={t("commentary.placeholder")}
+                    rows={4}
+                  />
+                  {!earnedHolo ? (
+                    <Button
+                      type="button"
+                      size="sm"
+                      disabled={!readingDraft.trim() || busy !== null}
+                      onClick={() => void saveReading()}
+                    >
+                      {busy === "reading" ? t("common.saving") : t("share.saveReading")}
+                    </Button>
+                  ) : null}
+                </div>
+              ) : !earnedHolo ? (
+                <Link href={`/login?next=/read/${encodeURIComponent(item._id)}`} className="share-dest share-dest--first">
+                  {t("share.signInReading")}
+                </Link>
+              ) : null}
+              <Textarea
+                className="mt-3"
+                value={folioNote}
+                onChange={(e) => setFolioNote(e.target.value)}
+                placeholder={t("manuscript.notePlaceholder")}
+                rows={2}
+              />
+            </fieldset>
             {availableModes.length > 1 ? (
               <fieldset>
-                <legend className="passage-layer__label mb-3">Text</legend>
+                <legend className="passage-layer__label mb-3">{t("share.text")}</legend>
                 <div className="flex flex-wrap gap-2">
                   {availableModes.map((mode) => (
                     <button
@@ -786,7 +796,7 @@ function ShareComposerInner({
                       }}
                       aria-pressed={textMode === mode.id}
                     >
-                      {mode.label}
+                      {t(`share.${mode.id}`)}
                     </button>
                   ))}
                 </div>
@@ -801,7 +811,7 @@ function ShareComposerInner({
                   onClick={() => setLine(nextFolioLine(candidates.length, line))}
                 >
                   <Shuffle />
-                  Shuffle line
+                  {t("share.shuffle")}
                 </Button>
               ) : null}
             </div>
@@ -818,6 +828,7 @@ function ShareComposerInner({
                   fillWindow={Boolean(picked)}
                   aspectRatio={aspectRatio}
                   holographic={holographic && earnedHolo}
+                  holoHue={holoHue}
                   flat
                 />
               </div>,

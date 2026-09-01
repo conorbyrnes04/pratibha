@@ -11,6 +11,7 @@ import { showCircle } from "@/lib/circleVerses";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { buttonVariants } from "@/components/ui/button";
+import { useT } from "@/components/LocaleProvider";
 
 export function CircleReadings({
   verseId,
@@ -24,6 +25,7 @@ export function CircleReadings({
 }
 
 function CircleReadingsInner({ verseId, daily }: { verseId: string; daily: boolean }) {
+  const t = useT();
   const { user, loading } = useAuth();
   const meta = useQuery(api.studentCommentaries.circleMeta, { verseId });
   const offered = useQuery(
@@ -38,26 +40,24 @@ function CircleReadingsInner({ verseId, daily }: { verseId: string; daily: boole
 
   return (
     <section className="passage-commentary">
-      <h2 className="passage-layer__label">{open ? "Circle" : "Other readings"}</h2>
+      <h2 className="passage-layer__label">{open ? t("circle.title") : t("circle.otherReadings")}</h2>
       <p className="soft mt-2 text-sm leading-relaxed">
-        {open
-          ? "One reading each. A reply is a response, not a pile-on."
-          : "Readings offered on this verse."}
+        {open ? t("circle.ledeOpen") : t("circle.ledeClosed")}
         {count ? ` · ${count}` : ""}
       </p>
       {loading ? null : !user ? (
         <p className="soft mt-4 text-sm">
           <Link href={`/login?next=/read/${encodeURIComponent(verseId)}`} className={buttonVariants({ size: "sm" })}>
-            Sign in to read the circle
+            {t("circle.signIn")}
           </Link>
         </p>
       ) : offered === undefined ? (
-        <p className="soft mt-4 text-sm">Opening the circle…</p>
+        <p className="soft mt-4 text-sm">{t("circle.opening")}</p>
       ) : offered.length === 0 ? (
         <p className="soft mt-4 text-sm leading-relaxed">
-          The circle is open.{" "}
+          {t("circle.openEmpty")}{" "}
           <Link href={`#commentary`} className="text-amber-100 underline-offset-2 hover:underline">
-            Write yours
+            {t("circle.writeYours")}
           </Link>
           .
         </p>
@@ -79,6 +79,7 @@ function CircleReadingsInner({ verseId, daily }: { verseId: string; daily: boole
 }
 
 function ReplyThread({ commentaryId }: { commentaryId: Id<"student_commentaries"> }) {
+  const t = useT();
   const replies = useQuery(api.circleReplies.list, { commentaryId });
   const post = useMutation(api.circleReplies.post);
   const [open, setOpen] = useState(false);
@@ -95,7 +96,7 @@ function ReplyThread({ commentaryId }: { commentaryId: Id<"student_commentaries"
       setBody("");
       setOpen(false);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Could not reply.");
+      setError(err instanceof Error ? err.message : t("circle.replyFailed"));
     } finally {
       setBusy(false);
     }
@@ -116,7 +117,7 @@ function ReplyThread({ commentaryId }: { commentaryId: Id<"student_commentaries"
         </ul>
       ) : null}
       {already ? (
-        <p className="soft mt-2 text-xs">You have replied.</p>
+        <p className="soft mt-2 text-xs">{t("circle.youReplied")}</p>
       ) : (
         <>
           {!open ? (
@@ -125,23 +126,23 @@ function ReplyThread({ commentaryId }: { commentaryId: Id<"student_commentaries"
               className="mt-2 font-sans text-xs uppercase tracking-[0.16em] text-amber-200/70 hover:text-amber-100"
               onClick={() => setOpen(true)}
             >
-              Reply
+              {t("circle.reply")}
             </button>
           ) : (
             <div className="mt-3 space-y-2">
               <Textarea
                 value={body}
                 onChange={(e) => setBody(e.target.value)}
-                placeholder="A response, not a verdict."
+                placeholder={t("circle.replyPlaceholder")}
                 rows={3}
               />
               {error ? <p className="text-sm text-red-300">{error}</p> : null}
               <div className="flex gap-2">
                 <Button type="button" size="sm" disabled={!body.trim() || busy} onClick={() => void submit()}>
-                  {busy ? "Sending…" : "Post reply"}
+                  {busy ? t("common.sending") : t("circle.postReply")}
                 </Button>
                 <Button type="button" size="sm" variant="ghost" onClick={() => setOpen(false)}>
-                  Cancel
+                  {t("common.cancel")}
                 </Button>
               </div>
             </div>

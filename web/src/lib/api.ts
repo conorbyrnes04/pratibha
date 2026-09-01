@@ -163,10 +163,30 @@ export async function getVerses(
   throw lastError || new Error("Failed to load verses");
 }
 
-export async function getVerse(id: string): Promise<VerseItem | null> {
-  const res = await fetch(`${API_BASE}/verse/${encodeURIComponent(id)}`, { cache: "no-store" });
+export async function getVerse(id: string, locale?: string): Promise<VerseItem | null> {
+  const suffix = locale && locale !== "en" ? `?locale=${encodeURIComponent(locale)}` : "";
+  const res = await fetch(`${API_BASE}/verse/${encodeURIComponent(id)}${suffix}`, { cache: "no-store" });
   if (!res.ok) return null;
   return (await res.json()) as VerseItem;
+}
+
+export async function translateStudyFields(
+  locale: string,
+  fields: Record<string, string>,
+): Promise<Record<string, string>> {
+  const clean = Object.fromEntries(
+    Object.entries(fields).filter(([, value]) => Boolean(value && value.trim())),
+  );
+  if (!locale || locale === "en" || Object.keys(clean).length === 0) return clean;
+  const res = await fetch(`${API_BASE}/study/translate`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    cache: "no-store",
+    body: JSON.stringify({ locale, fields: clean }),
+  });
+  if (!res.ok) return clean;
+  const data = (await res.json()) as { fields?: Record<string, string> };
+  return { ...clean, ...(data.fields || {}) };
 }
 
 /** Semantic neighbours from pgvector; empty array when RAG is off / unavailable. */
@@ -239,7 +259,7 @@ export async function listenCue(
 ): Promise<Blob> {
   const res = await fetch(
     `${API_BASE}/listen/cue/${encodeURIComponent(room)}/${edge}`,
-    { cache: "force-cache", headers: listenHeaders(accessToken) },
+    { cache: "no-store", headers: listenHeaders(accessToken) },
   );
   if (!res.ok) {
     throw new ListenApiError("Could not load this cue.", res.status);

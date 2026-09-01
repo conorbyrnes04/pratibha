@@ -13,6 +13,7 @@ import {
 import { buttonVariants } from "@/components/ui/button";
 import { recordPractice } from "@/lib/glyphUnlock";
 import { Input } from "@/components/ui/input";
+import { useT } from "@/components/LocaleProvider";
 
 function fold(s: string): string {
   return s
@@ -37,6 +38,7 @@ function matchesQuery(item: LexiconListItem, needle: string): boolean {
 }
 
 export default function GlossaryPage() {
+  const t = useT();
   const [items, setItems] = useState<LexiconListItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -90,14 +92,12 @@ export default function GlossaryPage() {
     <main className="page-shell page-shell--reading">
       <header className="library-header">
         <div className="library-header__body">
-        <p className="passage-reading__meta">Shared lexicon</p>
-        <h1 className="library-header__title">Glossary</h1>
-        <p className="library-header__lede">
-          Terms that do philosophical work across the manuscript — senses by tradition, not a flat dictionary.
-        </p>
+        <p className="passage-reading__meta">{t("glossary.meta")}</p>
+        <h1 className="library-header__title">{t("glossary.title")}</h1>
+        <p className="library-header__lede">{t("glossary.lede")}</p>
         <p className="mt-5">
           <Link href="/glossary/study" className={buttonVariants({ variant: "secondary" })}>
-            Study by language →
+            {t("glossary.studyLink")}
           </Link>
         </p>
         </div>
@@ -105,7 +105,7 @@ export default function GlossaryPage() {
 
       <div className="mt-8 space-y-4">
         <label className="block">
-          <span className="sr-only">Search glossary</span>
+          <span className="sr-only">{t("glossary.search")}</span>
           <Input
             value={q}
             onChange={(e) => {

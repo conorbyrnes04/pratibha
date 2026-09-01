@@ -14,14 +14,18 @@ import { ReadingShell } from "@/components/ReadingShell";
 import { getVerseLayers } from "@/lib/verseLayers";
 import { recordPractice } from "@/lib/glyphUnlock";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedVerse } from "@/components/useLocalizedStudy";
 
 export default function RandomPage() {
+  const t = useT();
   const [item, setItem] = useState<VerseItem | null>(null);
   const [collection, setCollection] = useState("all");
   const [collections, setCollections] = useState<string[]>(["all"]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [allItems, setAllItems] = useState<VerseItem[]>([]);
+  const study = useLocalizedVerse(item);
 
   useEffect(() => {
     getCollections()
@@ -86,19 +90,19 @@ export default function RandomPage() {
           <span className="passage-reading__crumb-sep" aria-hidden>
             /
           </span>
-          <span>Oracle</span>
+          <span>{t("oracle.meta")}</span>
         </nav>
 
         <header className="passage-reading__header">
-          <p className="passage-reading__meta">Oracle</p>
-          <h1 className="passage-reading__title">Random Discovery</h1>
-          <p className="passage-reading__deck">Let the text choose you, then dive deeper.</p>
+          <p className="passage-reading__meta">{t("oracle.meta")}</p>
+          <h1 className="passage-reading__title">{t("oracle.title")}</h1>
+          <p className="passage-reading__deck">{t("oracle.deck")}</p>
         </header>
 
         <div className="mt-2 flex max-w-[var(--reading-measure)] flex-wrap items-end gap-3">
           <div className="min-w-[min(100%,16rem)] flex-1">
             <FilterSelect
-              label="Text"
+              label={t("oracle.text")}
               tone="gold"
               value={collection}
               onChange={(value) => {
@@ -131,11 +135,11 @@ export default function RandomPage() {
                 {displayCollectionName(item.collection)}
                 {displayPassageLocation(item) ? ` · ${displayPassageLocation(item)}` : ""}
               </p>
-              <h2 className="passage-reading__title">{displayPassageTitle(item)}</h2>
+              <h2 className="passage-reading__title">{displayPassageTitle(study || item)}</h2>
             </header>
 
-            {getVerseLayers(item)
-              .filter((layer) => ["original", "iast", "translation", "practice"].includes(layer.kind))
+            {getVerseLayers(study || item)
+              .filter((layer) => ["original", "iast", "translation", "commentary", "practice"].includes(layer.kind))
               .map((layer, idx) => (
                 <LayerBlock
                   key={`${layer.kind}-${idx}`}

@@ -27,6 +27,8 @@ import {
 import { layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 import { Input } from "@/components/ui/input";
 import { CollectionGate } from "@/components/CollectionGate";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedVerseCards } from "@/components/useLocalizedStudy";
 import { catalogQuoteCandidates } from "@/lib/heroQuotes";
 
 /** Library catalog lifecycle — never treat cold/fail as a true empty shelf. */
@@ -43,6 +45,7 @@ function reflectionPrompt(item: VerseItem): string {
 const TOME_FLIGHT = { type: "spring", stiffness: 260, damping: 32, mass: 0.9 } as const;
 
 function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
+  const t = useT();
   const rb = redbookSlug(tome.collection);
   return (
     <button type="button" onClick={onOpen} className="tome">
@@ -65,7 +68,7 @@ function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
       <span className="tome__foot">
         <span className="tome__tradition">{tome.tradition}</span>
         <span className="tome__meta">
-          {tome.count} {tome.count === 1 ? "passage" : "passages"} · {tome.authored}
+          {tome.count} {tome.count === 1 ? t("library.passageOne") : t("library.passageMany")} · {tome.authored}
         </span>
       </span>
     </button>
@@ -73,6 +76,7 @@ function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
 }
 
 function LibraryPageContent() {
+  const t = useT();
   const router = useRouter();
   const searchParams = useSearchParams();
   const [items, setItems] = useState<VerseItem[]>([]);
@@ -196,9 +200,8 @@ function LibraryPageContent() {
       ),
     [items, q, collection, theme],
   );
-
-  // Shelf of tomes when browsing the whole library; passage list once a text is open or search is active.
   const showShelf = collection === "all" && !q.trim();
+  const studyList = useLocalizedVerseCards(showShelf ? [] : filtered, 40);
   const hasItems = items.length > 0;
   const isBooting = (status === "loading" || status === "waking") && !hasItems;
   const isHardError = status === "error" && !hasItems;
@@ -259,10 +262,10 @@ function LibraryPageContent() {
               onClick={() => openTome("all")}
               className="passage-reading__toggle"
             >
-              ← All texts
+              ← {t("library.allTexts")}
             </button>
           ) : (
-            <p className="passage-reading__meta">Archive</p>
+            <p className="passage-reading__meta">{t("library.meta")}</p>
           )}
           {collection !== "all" ? (
             <CollectionGate
@@ -294,12 +297,12 @@ function LibraryPageContent() {
             ) : null}
             <div className="min-w-0">
               <h1 className="library-header__title">
-                {collection !== "all" ? displayCollectionName(collection) : "Library"}
+                {collection !== "all" ? displayCollectionName(collection) : t("library.title")}
               </h1>
               <p className="library-header__lede">
                 {collection !== "all"
-                  ? `${openTomeMeta?.count ?? filtered.length} passages · open a page, then follow related ideas across traditions.`
-                  : "Texts grouped by tradition. Open a tome, then follow resonances across the shelf."}
+                  ? t("library.collectionLede", { count: openTomeMeta?.count ?? filtered.length })
+                  : t("library.lede")}
               </p>
             </div>
           </div>
@@ -310,17 +313,17 @@ function LibraryPageContent() {
         <div>
           <div className="library-toolbar">
             <label className="block min-w-0">
-              <p className="layer-heading mb-2">Search</p>
+              <p className="layer-heading mb-2">{t("library.search")}</p>
               <Input
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
                 className="w-full"
-                placeholder={showShelf ? "Search across all texts..." : "Search passages in this text..."}
+                placeholder={showShelf ? t("library.searchAll") : t("library.searchInText")}
               />
             </label>
             {!showShelf ? (
               <FilterSelect
-                label="Text"
+                label={t("library.text")}
                 tone="gold"
                 value={collection}
                 onChange={(next) => {
@@ -331,11 +334,15 @@ function LibraryPageContent() {
               />
             ) : (
               <FilterSelect
-                label="Sort"
+                label={t("library.sortLabel")}
                 tone="gold"
                 value={librarySort}
                 onChange={(next) => setLibrarySort(next as LibrarySort)}
-                options={LIBRARY_SORT_OPTIONS}
+                options={LIBRARY_SORT_OPTIONS.map((option) => ({
+                  ...option,
+                  label: t(`library.sort.${option.value}`),
+                  hint: t(`library.sortHint.${option.value}`),
+                }))}
               />
             )}
           </div>
@@ -352,16 +359,16 @@ function LibraryPageContent() {
           </div>
 
           <div className="mt-3">
-            <Disclosure summary="Display options" hint={includeDrafts ? "drafts on" : undefined}>
+            <Disclosure summary={t("library.displayOptions")} hint={includeDrafts ? t("library.draftsOn") : undefined}>
               {!showShelf ? (
                 <label className="flex items-center gap-2 font-sans text-sm soft">
                   <input type="checkbox" className="accent-amber-300" checked={learningMode} onChange={(e) => setLearningMode(e.target.checked)} />
-                  Learning mode previews (core idea · why it matters · practice)
+                  {t("library.learningMode")}
                 </label>
               ) : null}
               <label className={`flex items-center gap-2 font-sans text-sm soft${!showShelf ? " mt-3" : ""}`}>
                 <input type="checkbox" className="accent-amber-300" checked={includeDrafts} onChange={(e) => setIncludeDrafts(e.target.checked)} />
-                Include rewrite and structural drafts
+                {t("library.includeDrafts")}
               </label>
             </Disclosure>
           </div>
@@ -369,10 +376,10 @@ function LibraryPageContent() {
           {isBooting ? (
             <div className="mt-4 rounded-2xl border border-amber-300/30 bg-amber-300/10 p-4 font-sans text-sm text-amber-100">
               <p className="font-medium">
-                {status === "waking" ? "Waking the library…" : "Opening the library…"}
+                {status === "waking" ? t("library.waking") : t("library.opening")}
               </p>
               <p className="mt-2 soft text-amber-100/80">
-                The API may be cold-starting. This is not an empty shelf — passages will appear when the catalog is ready.
+                {t("library.wakingLede")}
               </p>
             </div>
           ) : null}
@@ -385,7 +392,7 @@ function LibraryPageContent() {
                 onClick={retryCatalog}
                 className="mt-3 rounded-full border border-amber-200/40 px-4 py-2 font-sans text-xs tracking-wide text-amber-50 transition hover:border-amber-100/70 hover:bg-amber-300/10"
               >
-                Retry
+                {t("common.retry")}
               </button>
             </div>
           ) : null}
@@ -398,7 +405,7 @@ function LibraryPageContent() {
                 onClick={retryCatalog}
                 className="shrink-0 rounded-full border border-amber-200/40 px-4 py-2 font-sans text-xs tracking-wide text-amber-50 transition hover:border-amber-100/70 hover:bg-amber-300/10"
               >
-                Retry
+                {t("common.retry")}
               </button>
             </div>
           ) : null}
@@ -408,19 +415,18 @@ function LibraryPageContent() {
         <div className="space-y-10">
           {isTrueEmpty ? (
             <p className="soft mt-2">
-              The catalog loaded successfully but has no passages yet. If you expected texts here, check that the
-              backend corpus finished loading.
+              {t("library.emptyCatalog")}
             </p>
           ) : (
             <>
               <p className="soft font-sans text-sm">
-                {tomes.length} texts · {items.length} passages
-                {showingStale && loadError ? " · saved catalog" : ""}
+                {t("library.textsPassages", { texts: tomes.length, passages: items.length })}
+                {showingStale && loadError ? ` · ${t("library.savedCatalog")}` : ""}
                 {librarySort === "author"
-                  ? " · sorted by author"
+                  ? ` · ${t("library.sortedByAuthor")}`
                   : librarySort === "tradition"
-                    ? " · grouped by tradition"
-                    : " · sorted by title"}
+                    ? ` · ${t("library.groupedByTradition")}`
+                    : ` · ${t("library.sortedByTitle")}`}
               </p>
               {shelves ? (
                 shelves.map((shelf) => (
@@ -454,7 +460,7 @@ function LibraryPageContent() {
         </div>
       ) : (
         <div className="library-list">
-          {filtered.slice(0, 300).map((x) => (
+          {studyList.slice(0, 300).map((x) => (
             <Link
               key={x._id}
               href={`/read/${encodeURIComponent(x._id)}`}
@@ -489,12 +495,12 @@ function LibraryPageContent() {
               </div>
               {!learningMode ? (
                 <p className="library-passage__preview line-clamp-2">
-                  {passagePreview(x) || "Open to view passage."}
+                  {passagePreview(x) || t("library.openPassage")}
                 </p>
               ) : (
                 <div className="library-passage__learning">
                   <p className="line-clamp-2">
-                    <span>Core idea</span> {passagePreview(x) || "Open to view passage."}
+                    <span>{t("library.coreIdea")}</span> {passagePreview(x) || t("library.openPassage")}
                   </p>
                   <p className="line-clamp-2">
                     <span>Why it matters</span>{" "}

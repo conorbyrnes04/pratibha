@@ -113,6 +113,52 @@ body {
   letter-spacing: 0.01em;
 }
 
+html[lang^="zh"] {
+  --font-sans: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-heading: "Noto Serif SC", "Songti SC", "STSong", serif;
+}
+
+html[lang^="ja"] {
+  --font-sans: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "YuGothic", sans-serif;
+  --font-heading: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+html[lang="ar"] {
+  --font-sans: "Noto Naskh Arabic", "Geeza Pro", "Arabic Typesetting", serif;
+  --font-heading: "Noto Naskh Arabic", "Geeza Pro", serif;
+}
+
+html[lang^="zh"] body,
+html[lang^="ja"] body,
+html[lang="ar"] body {
+  font-family: var(--font-heading);
+}
+
+html[lang^="zh"] :where(.font-sans, .nav-link, .nav-more__item, .nav-more__trigger, button, input, textarea, label),
+html[lang^="ja"] :where(.font-sans, .nav-link, .nav-more__item, .nav-more__trigger, button, input, textarea, label),
+html[lang="ar"] :where(.font-sans, .nav-link, .nav-more__item, .nav-more__trigger, button, input, textarea, label) {
+  font-family: var(--font-sans);
+}
+
+[dir="rtl"] .site-nav--bar .nav-more {
+  margin-left: 0;
+  margin-right: 0.15rem;
+  padding-left: 0;
+  padding-right: 1.1rem;
+  border-left: 0;
+  border-right: 1px solid rgb(240 201 121 / 0.16);
+}
+
+[dir="rtl"] .nav-more__menu {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .nav-more--dock .nav-more__menu {
+  left: 0.4rem;
+  right: auto;
+}
+
 body::before {
   position: fixed;
   inset: 0;
@@ -475,9 +521,11 @@ button {
 }
 
 .page-shell--reading {
-  width: min(100% - 2rem, var(--reading-shell));
-  padding-inline: clamp(1.5rem, 5vw, 2.5rem);
+  width: 100%;
+  max-width: none;
+  padding-inline: 0;
   padding-block: 2.25rem 4.5rem;
+  overflow-x: clip;
 }
 
 .page-shell--library {
@@ -490,7 +538,7 @@ button {
 
 @media (min-width: 40rem) {
   .page-shell--reading {
-    padding-inline: clamp(2rem, 5vw, 3rem);
+    padding-inline: 0;
     padding-block: 2.75rem 5rem;
   }
 
@@ -1439,6 +1487,26 @@ select:focus-visible {
   transition: border-color 0.15s ease, background 0.15s ease;
 }
 
+.library-passage--listen {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.85rem 1rem;
+}
+
+.library-passage__open {
+  display: block;
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 button.library-passage {
   width: 100%;
   text-align: left;
@@ -2346,8 +2414,9 @@ button.library-passage {
 .passage-reading {
   --passage-radius: 20px;
   position: relative;
-  max-width: var(--reading-shell);
-  margin-inline: auto;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
   padding: 0 0 3.5rem;
 }
 
@@ -2355,16 +2424,20 @@ button.library-passage {
   position: absolute;
   inset: 0 0 auto 0;
   z-index: 0;
-  height: min(22rem, 48vh);
+  width: 100%;
+  height: min(28rem, 56vh);
   overflow: hidden;
   pointer-events: none;
-  -webkit-mask-image: linear-gradient(to bottom, #000 10%, transparent 92%);
-  mask-image: linear-gradient(to bottom, #000 10%, transparent 92%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 18%, transparent 92%);
+  mask-image: linear-gradient(to bottom, #000 18%, transparent 92%);
 }
 
 .passage-reading__column {
   position: relative;
   z-index: 1;
+  width: min(100%, var(--reading-measure));
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 2rem);
 }
 
 /* Red Book mandala closing the passage — a clearly living seal: it fades/scales
@@ -2533,6 +2606,11 @@ button.library-passage {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.35rem 0.7rem;
+}
+
+.passage-listen--header {
+  flex-shrink: 0;
+  justify-content: flex-end;
 }
 
 .passage-layer,
@@ -3614,10 +3692,19 @@ button.library-passage {
 .learn-trail-reading__bar {
   position: sticky;
   top: -1.2rem;
-  z-index: 1;
+  z-index: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
   margin: -1.2rem -1.35rem 1rem;
   padding: 1rem 1.35rem 0.75rem;
   background: linear-gradient(180deg, rgb(11 11 20 / 0.98) 72%, rgb(11 11 20 / 0));
+}
+
+.learn-trail-reading__bar-copy {
+  min-width: 0;
+  flex: 1;
 }
 
 .learn-trail-reading__gate {
@@ -4476,8 +4563,21 @@ button.library-passage {
 
 .share-card--flat,
 .share-card--flat.share-card--holo {
+  --holo-x: 0.38;
+  --holo-y: -0.2;
   transform: none !important;
-  box-shadow: 0 0 0 1px rgb(240 201 121 / 0.35);
+  box-shadow:
+    0 0 0 1px hsl(var(--holo-h, 42) 72% 62% / 0.55),
+    0 0 28px hsl(var(--holo-h, 42) 90% 58% / 0.24),
+    0 0 48px hsl(calc(var(--holo-h, 42) + 50) 85% 62% / 0.14);
+}
+
+/* Frozen foil: still rainbow, no blend (html-to-image drops mix-blend on iOS). */
+.share-card--flat .share-card__foil,
+.share-card-export .share-card__foil {
+  animation: none;
+  mix-blend-mode: normal;
+  opacity: 0.42;
 }
 
 .share-card {
@@ -4884,14 +4984,15 @@ button.library-passage {
 .share-card--holo {
   --holo-x: 0;
   --holo-y: 0;
+  --holo-h: 42;
   transform: rotateX(calc(var(--holo-y) * -9deg)) rotateY(calc(var(--holo-x) * 11deg));
   transform-style: preserve-3d;
   will-change: transform;
   box-shadow:
     calc(var(--holo-x) * -10px) calc(var(--holo-y) * 12px) 26px rgb(0 0 0 / 0.42),
-    0 0 0 1px rgb(240 201 121 / 0.55),
-    0 0 36px rgb(240 201 121 / 0.22),
-    0 0 64px rgb(164 214 255 / 0.12);
+    0 0 0 1px hsl(var(--holo-h) 72% 62% / 0.55),
+    0 0 36px hsl(var(--holo-h) 90% 58% / 0.28),
+    0 0 64px hsl(calc(var(--holo-h) + 50) 85% 62% / 0.16);
 }
 
 .share-card__foil {
@@ -4901,21 +5002,21 @@ button.library-passage {
   z-index: 3;
   background:
     linear-gradient(
-      calc(122deg + var(--holo-x) * 55deg),
-      rgb(255 255 255 / 0) 22%,
-      rgb(255 236 196 / 0.28) 38%,
-      rgb(164 214 255 / 0.42) 46%,
-      rgb(240 201 121 / 0.7) 51%,
-      rgb(206 146 255 / 0.34) 58%,
-      rgb(255 255 255 / 0) 76%
+      calc(118deg + var(--holo-h) * 0.35deg + var(--holo-x) * 55deg),
+      rgb(255 255 255 / 0) 18%,
+      hsl(var(--holo-h) 95% 78% / 0.4) 36%,
+      hsl(calc(var(--holo-h) + 46) 92% 70% / 0.55) 46%,
+      hsl(calc(var(--holo-h) + 8) 98% 64% / 0.8) 52%,
+      hsl(calc(var(--holo-h) + 110) 88% 68% / 0.42) 62%,
+      rgb(255 255 255 / 0) 80%
     ),
     repeating-linear-gradient(
-      calc(18deg + var(--holo-x) * 10deg),
-      rgb(240 201 121 / 0.14) 0 1px,
+      calc(16deg + var(--holo-h) * 0.25deg),
+      hsl(var(--holo-h) 90% 62% / 0.22) 0 1px,
       transparent 1px 5px
     );
   mix-blend-mode: screen;
-  opacity: 0.88;
+  opacity: 0.92;
   background-size: 180% 180%, 8px 8px;
   background-position:
     calc(50% + var(--holo-x) * 36%) calc(50% + var(--holo-y) * 36%),
@@ -4945,7 +5046,7 @@ button.library-passage {
   font-size: 0.62rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgb(240 201 121 / 0.85);
+  color: hsl(var(--holo-h, 42) 72% 70% / 0.9);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4959,7 +5060,7 @@ button.library-passage {
 }
 
 .share-folio-studio {
-  flex: 1;
+  flex: 1 1 auto;
   min-height: 0;
   display: flex;
   flex-direction: column;
@@ -4969,30 +5070,30 @@ button.library-passage {
 .share-folio-studio__preview {
   position: relative;
   z-index: 3;
-  flex: 1 1 0;
-  min-height: 9rem;
+  flex: 0 0 auto;
+  min-height: 0;
   order: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  padding: 0.5rem 1rem 0.55rem;
+  overflow: visible;
+  padding: 0.45rem 1rem 0.5rem;
   border-bottom: 1px solid rgb(240 201 121 / 0.12);
   background: rgb(11 11 20 / 0.94);
   perspective: 920px;
 }
 
 .share-folio-studio__preview .share-card-preview {
-  width: auto;
-  height: 100%;
-  max-width: min(100%, 14rem);
-  max-height: 100%;
+  width: min(42vw, 11.25rem);
+  height: auto;
+  max-width: min(100%, 11.25rem);
+  max-height: min(34vh, 18rem);
 }
 
 .share-folio-studio__preview .share-card {
-  width: auto !important;
-  height: 100%;
-  max-height: 100%;
+  width: 100% !important;
+  height: auto !important;
+  max-height: min(34vh, 18rem);
 }
 
 .share-folio-send {

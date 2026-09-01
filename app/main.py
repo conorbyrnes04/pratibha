@@ -25,6 +25,7 @@ from .auth import AuthUser, require_user, require_user_if_configured
 from .config import settings
 from . import tts as listen_tts
 from .llm import smart_chat, smart_chat_stream
+from .study_i18n import is_locale, localize_verse, translate_fields
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, retrieve_related_unit_ids, detected_collections
 from .data_loader import (
     LOAD_STATS,
@@ -319,11 +320,29 @@ def _verse_list_item(v: dict[str, Any]) -> dict[str, Any]:
 
 
 @app.get("/verse/{sid}")
-async def get_verse(sid: str):
+async def get_verse(sid: str, locale: str | None = None):
     v = get_verse_by_id(sid)
     if v is None:
         raise HTTPException(404, "Not found")
+    if locale and is_locale(locale):
+        return await localize_verse(v, locale)
     return v
+
+
+class StudyTranslateRequest(BaseModel):
+    locale: str
+    fields: dict[str, str]
+
+
+@app.post("/study/translate")
+async def study_translate(body: StudyTranslateRequest):
+    if not is_locale(body.locale):
+        raise HTTPException(400, "Unsupported locale")
+    clean = {key: value for key, value in body.fields.items() if str(value or "").strip()}
+    if not clean:
+        return {"locale": body.locale, "fields": {}}
+    fields = await translate_fields(body.locale, clean)
+    return {"locale": body.locale, "fields": fields}
 
 
 class ListenRequest(BaseModel):

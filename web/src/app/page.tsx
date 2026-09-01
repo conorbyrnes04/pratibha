@@ -12,9 +12,11 @@ import { currentTrailSit } from "@/lib/learn/trail";
 import { buttonVariants } from "@/components/ui/button";
 import { CircleReadings } from "@/components/CircleReadings";
 import { SanghaBoundary } from "@/components/SanghaBoundary";
+import { useT } from "@/components/LocaleProvider";
 import type { VerseItem } from "@/lib/types";
 
 export default function Home() {
+  const t = useT();
   const { configured, loading, user } = useAuth();
   const signedIn = !configured || Boolean(user);
   const { progress, completedAt, hydrated } = useLearnProgress();
@@ -47,9 +49,9 @@ export default function Home() {
     return (
       <main className="page-shell page-shell--reading">
         <header className="passage-reading__header">
-          <p className="passage-reading__meta">Today</p>
-          <h1 className="passage-reading__title">Opening today&apos;s gate…</h1>
-          <p className="passage-reading__deck">One step on the path. A passage. One practice.</p>
+          <p className="passage-reading__meta">{t("today.meta")}</p>
+          <h1 className="passage-reading__title">{t("today.opening")}</h1>
+          <p className="passage-reading__deck">{t("today.openingLede")}</p>
         </header>
       </main>
     );
@@ -63,13 +65,9 @@ export default function Home() {
             <ArtBackdrop srcs={generatedArtPool("bg-hero")} variant="subtle" opacity={0.12} priority />
           </div>
           <div className="library-header__body">
-            <p className="passage-reading__meta">Today</p>
-            <h1 className="library-header__title">A walk through world wisdom</h1>
-            <p className="library-header__lede">
-              Pratibha is a guided path, not a pile of books. Each day opens one gate: a
-              teaching, a canonical passage, and one practice. Finish the gate, and tomorrow
-              names itself.
-            </p>
+            <p className="passage-reading__meta">{t("today.meta")}</p>
+            <h1 className="library-header__title">{t("today.title")}</h1>
+            <p className="library-header__lede">{t("today.lede")}</p>
           </div>
         </header>
 
@@ -85,15 +83,23 @@ export default function Home() {
         ) : (
           <div className="passage-reading__nav">
             <Link href="/learn?path=essential" className={buttonVariants()}>
-              Open the path
+              {t("today.openPath")}
             </Link>
           </div>
         )}
 
         {configured && !loading && !user ? (
           <p className="today-gate__signin">
-            The path is open.{" "}
-            <Link href="/login">Sign in</Link> to keep a journal and carry progress across devices.
+            {t("today.signInHint").split("{link}").map((part, index, parts) =>
+              index < parts.length - 1 ? (
+                <span key={index}>
+                  {part}
+                  <Link href="/login">{t("today.signInLink")}</Link>
+                </span>
+              ) : (
+                <span key={index}>{part}</span>
+              ),
+            )}
           </p>
         ) : null}
       </div>

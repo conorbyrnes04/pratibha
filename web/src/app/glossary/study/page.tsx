@@ -23,6 +23,7 @@ import type {
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { recordPractice } from "@/lib/glyphUnlock";
 import { Button } from "@/components/ui/button";
+import { useT } from "@/components/LocaleProvider";
 
 type Phase = "pick" | "session" | "done";
 
@@ -184,6 +185,7 @@ function DeckTile({
 }
 
 export default function GlossaryStudyPage() {
+  const t = useT();
   const [payload, setPayload] = useState<LexiconStudyPayload | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -292,27 +294,24 @@ export default function GlossaryStudyPage() {
 
   return (
     <main className="page-shell page-shell--reading">
-      <nav className="passage-reading__crumb mb-6" aria-label="Breadcrumb">
-        <Link href="/glossary">Glossary</Link>
+      <nav className="passage-reading__crumb mb-6" aria-label={t("reader.breadcrumb")}>
+        <Link href="/glossary">{t("glossary.title")}</Link>
       </nav>
 
       {phase === "pick" ? (
         <>
           <header className="library-header">
             <div className="library-header__body">
-            <p className="passage-reading__meta">Sacred lexicon</p>
-            <h1 className="library-header__title">Build the terms</h1>
-            <p className="library-header__lede">
-              Decks by language. Cards by sense. Recognize the script, catch the trap, produce the form —
-              then return to the passage that holds it.
-            </p>
+            <p className="passage-reading__meta">{t("glossary.studyMeta")}</p>
+            <h1 className="library-header__title">{t("glossary.studyTitle")}</h1>
+            <p className="library-header__lede">{t("glossary.studyLede")}</p>
             </div>
           </header>
 
           <div className="ornament my-8" />
 
           {loading ? (
-            <p className="soft text-lg">Opening the decks…</p>
+            <p className="soft text-lg">{t("glossary.openingDecks")}</p>
           ) : error ? (
             <section className="py-8 text-center">
               <p className="text-2xl text-amber-100">Study unavailable</p>
@@ -398,7 +397,7 @@ export default function GlossaryStudyPage() {
       {phase === "done" && activeDeck ? (
         <section className="lex-done">
           <p className="eyebrow">{activeDeck.label}</p>
-          <h1 className="lex-study-hero__title">Session complete</h1>
+          <h1 className="lex-study-hero__title">{t("glossary.sessionComplete")}</h1>
           <p className="soft mt-4 text-xl leading-relaxed">
             {graded} card{graded === 1 ? "" : "s"} reviewed
             {sessionAgain > 0 ? ` · ${sessionAgain} marked again` : " · clean pass"}.

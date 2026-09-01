@@ -11,6 +11,7 @@ import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
 import { Glyph } from "@/components/Glyph";
 import { Disclosure } from "@/components/ui/Disclosure";
 import type { SourceAttribution } from "@/lib/types";
+import { useT } from "@/components/LocaleProvider";
 
 const LICENSE_TONE: Record<string, string> = {
   public_domain: "text-emerald-300/90",
@@ -162,6 +163,7 @@ function groupSourcesByTradition(items: SourceAttribution[]) {
 }
 
 export default function SourcesPage() {
+  const t = useT();
   const [items, setItems] = useState<SourceAttribution[]>([]);
   const [summary, setSummary] = useState({
     collections_documented: 0,
@@ -197,19 +199,19 @@ export default function SourcesPage() {
             <ArtBackdrop srcs={generatedArtPool("bg-sources")} variant="subtle" opacity={0.11} />
           </div>
           <div className="library-header__body">
-          <p className="passage-reading__meta">Attribution · Asteya</p>
-          <h1 className="library-header__title">Sources</h1>
-          <p className="library-header__lede">
-            Pratibha is offered freely to students, so it must be built without stealing. Every English rendering here stands on
-            a public-domain source or original authorship — grouped by tradition, each text saying exactly where it comes from.
-          </p>
+          <p className="passage-reading__meta">{t("sources.meta")}</p>
+          <h1 className="library-header__title">{t("sources.title")}</h1>
+          <p className="library-header__lede">{t("sources.lede")}</p>
 
           <section className="mt-8 max-w-[var(--reading-measure)] border-t border-[rgb(240_201_121_/_0.14)] pt-5">
               <div className="flex flex-wrap items-baseline justify-between gap-3">
-                <h2 className="text-xl font-medium text-[rgb(250_237_205)]">How this corpus was reconciled</h2>
+                <h2 className="text-xl font-medium text-[rgb(250_237_205)]">{t("sources.reconciled")}</h2>
                 {summary.total_passages > 0 ? (
                   <p className="font-sans text-xs uppercase tracking-[0.18em] text-stone-500">
-                    {summary.collections_in_corpus} texts · {summary.total_passages} passages
+                    {t("sources.textsPassages", {
+                      texts: summary.collections_in_corpus,
+                      passages: summary.total_passages,
+                    })}
                   </p>
                 ) : null}
               </div>

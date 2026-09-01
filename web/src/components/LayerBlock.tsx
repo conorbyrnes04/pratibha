@@ -13,6 +13,8 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { ListenButton } from "@/components/ListenButton";
+import { useT } from "@/components/LocaleProvider";
+import { layerKindKey } from "@/i18n";
 import type { ListenSection } from "@/lib/api";
 
 /**
@@ -56,7 +58,10 @@ export function LayerBlock({
   variant?: "card" | "plain";
   verseId?: string;
 }) {
+  const t = useT();
   const items = Array.isArray(layer.items) ? layer.items : [];
+  const kindKey = layerKindKey(layer.kind);
+  const label = kindKey ? t(kindKey) : layer.label;
   const isOriginal = layer.kind === "original";
   const isPractice = layer.kind === "practice";
   const isAppendix = layer.kind === "appendix";
@@ -73,7 +78,7 @@ export function LayerBlock({
             {layer.layer_provenance}
           </p>
         ) : null}
-        {renderLayerBody(layer, items, { compact, isOriginal })}
+        {renderLayerBody(layer, items, { compact, isOriginal, t })}
       </div>
     );
   }
@@ -97,13 +102,13 @@ export function LayerBlock({
         {listenSection && verseId ? (
           <ListenButton verseId={verseId} section={listenSection} variant="layer" />
         ) : null}
-        <h2 className={labelClass}>{layer.label}</h2>
+        <h2 className={labelClass}>{label}</h2>
         {layer.kind === "translation" && layer.layer_provenance ? (
           <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-400">
             {layer.layer_provenance}
           </p>
         ) : null}
-        {renderLayerBody(layer, items, { compact, isOriginal })}
+        {renderLayerBody(layer, items, { compact, isOriginal, t })}
       </section>
     );
   }
@@ -114,8 +119,8 @@ export function LayerBlock({
         <Collapsible open={open} onOpenChange={setOpen}>
           <CollapsibleTrigger className="w-full cursor-pointer text-left outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent-bright)]">
             <div className="flex items-center justify-between gap-3">
-              <h2 className="layer-heading">{layer.label}</h2>
-              <span className="font-sans text-xs text-stone-400">{open ? "Collapse" : "Expand"}</span>
+              <h2 className="layer-heading">{label}</h2>
+              <span className="font-sans text-xs text-stone-400">{open ? t("common.collapse") : t("common.expand")}</span>
             </div>
             {!open ? <p className="soft mt-2 line-clamp-3 text-sm">{layer.body}</p> : null}
           </CollapsibleTrigger>
@@ -135,13 +140,13 @@ export function LayerBlock({
         </Collapsible>
       ) : (
         <>
-          <h2 className="layer-heading">{layer.label}</h2>
+          <h2 className="layer-heading">{label}</h2>
           {layer.kind === "translation" && layer.layer_provenance ? (
             <p className="soft mt-2 font-sans text-xs leading-relaxed text-stone-400">
               {layer.layer_provenance}
             </p>
           ) : null}
-          {renderLayerBody(layer, items, { compact, isOriginal })}
+          {renderLayerBody(layer, items, { compact, isOriginal, t })}
         </>
       )}
     </section>
@@ -151,9 +156,9 @@ export function LayerBlock({
 function renderLayerBody(
   layer: PratibhaLayer,
   items: unknown[],
-  opts: { compact: boolean; isOriginal: boolean },
+  opts: { compact: boolean; isOriginal: boolean; t: (key: string) => string },
 ) {
-  const { compact, isOriginal } = opts;
+  const { compact, isOriginal, t } = opts;
   if (layer.kind === "key_terms" && items.some(isKeyTerm)) {
     return (
       <div className="mt-4 space-y-3">
@@ -195,7 +200,7 @@ function renderLayerBody(
             </p>
             {entry.divergence ? (
               <p className="mt-2 text-sm leading-relaxed text-stone-300">
-                <span className="font-semibold text-amber-100">Divergence:</span>{" "}
+                <span className="font-semibold text-amber-100">{t("layers.divergence")}:</span>{" "}
                 <InlineMarkdown>{entry.divergence}</InlineMarkdown>
               </p>
             ) : null}
@@ -211,7 +216,7 @@ function renderLayerBody(
       : "reading-prose";
 
   if (isOriginal && isLongNativeScript(layer.body)) {
-    return <LongNativeScript body={layer.body || ""} className={bodyClass} />;
+    return <LongNativeScript body={layer.body || ""} className={bodyClass} t={t} />;
   }
 
   return (
@@ -221,7 +226,15 @@ function renderLayerBody(
   );
 }
 
-function LongNativeScript({ body, className }: { body: string; className: string }) {
+function LongNativeScript({
+  body,
+  className,
+  t,
+}: {
+  body: string;
+  className: string;
+  t: (key: string) => string;
+}) {
   const [open, setOpen] = useState(false);
   return (
     <div>
@@ -233,7 +246,7 @@ function LongNativeScript({ body, className }: { body: string; className: string
         )}
       </div>
       <button type="button" className="passage-reading__toggle mt-3" onClick={() => setOpen((v) => !v)}>
-        {open ? "Collapse original" : "Expand original"}
+        {open ? t("layers.collapseOriginal") : t("layers.expandOriginal")}
       </button>
     </div>
   );

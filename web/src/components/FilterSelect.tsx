@@ -3,6 +3,7 @@
 import { useId, useMemo } from "react";
 import { Combobox } from "@base-ui/react/combobox";
 import { cn } from "@/lib/utils";
+import { useT } from "@/components/LocaleProvider";
 
 export type FilterSelectOption = {
   value: string;
@@ -31,9 +32,11 @@ export function FilterSelect({
   onChange,
   options,
   tone = "gold",
-  placeholder = "Choose…",
+  placeholder,
 }: FilterSelectProps) {
+  const t = useT();
   const inputId = useId();
+  const resolvedPlaceholder = placeholder ?? t("common.choose");
   const selected = useMemo(
     () => options.find((option) => option.value === value) ?? null,
     [options, value],
@@ -69,7 +72,7 @@ export function FilterSelect({
           ) : null}
           <Combobox.Input
             id={inputId}
-            placeholder={placeholder}
+            placeholder={resolvedPlaceholder}
             className={cn(
               "filter-select__label h-full w-full min-w-0 border-0 bg-transparent py-[0.82rem] pr-10 text-left outline-none placeholder:text-[var(--muted-2)]",
               selected?.icon ? "pl-10" : "pl-4",
@@ -77,7 +80,7 @@ export function FilterSelect({
           />
           <Combobox.Trigger
             className="filter-select__chevron absolute inset-y-0 right-0 flex items-center border-0 bg-transparent px-3"
-            aria-label={`Open ${label}`}
+            aria-label={t("common.openMenu", { label })}
           >
             ▾
           </Combobox.Trigger>
@@ -87,7 +90,7 @@ export function FilterSelect({
           <Combobox.Positioner className="outline-none" sideOffset={8}>
             <Combobox.Popup className="filter-select__menu relative z-50 w-[var(--anchor-width)] max-w-[var(--available-width)] outline-none">
               <Combobox.Empty>
-                <div className="px-3 py-3 font-sans text-sm text-[var(--muted-2)]">No matches.</div>
+                <div className="px-3 py-3 font-sans text-sm text-[var(--muted-2)]">{t("filter.noMatches")}</div>
               </Combobox.Empty>
               <Combobox.List className="max-h-[min(16.5rem,var(--available-height))] overflow-y-auto overscroll-contain outline-none">
                 {(item: FilterSelectOption) => (

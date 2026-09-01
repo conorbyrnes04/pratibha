@@ -1,19 +1,22 @@
 "use client";
 
 import { useAuthToken, useConvexAuth } from "@convex-dev/auth/react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import { useAuth } from "@/components/AuthProvider";
-import { SpandaMedallion, type InkState } from "@/components/InkGlyph";
+import { useT } from "@/components/LocaleProvider";
+import { InkGlyph, type InkState } from "@/components/InkGlyph";
 import { listenConfigured, type ListenSection } from "@/lib/api";
 import {
+  canListenLocally,
   listenSnapshot,
   reportListenError,
-  stopListen,
+  retainListen,
   subscribeListen,
   toggleListen,
   type ListenPhase,
   type ListenSnap,
 } from "@/lib/listenSession";
+import type { VerseItem } from "@/lib/types";
 
 async function resolveListenToken(
   snapshot: string | null | undefined,
@@ -31,7 +34,7 @@ function SumiPlayMark({ phase, size }: { phase: ListenPhase; size: "xs" | "sm" }
   const state: InkState = phase === "playing" ? "recognized" : "arising";
   return (
     <span className={`sumi-play sumi-play--${phase}`} aria-hidden>
-      <SpandaMedallion glyph="triangle" state={state} size={size} mask />
+      <InkGlyph glyph="play" state={state} size={size} mask />
     </span>
   );
 }
@@ -40,21 +43,26 @@ export function ListenButton({
   verseId,
   section = "all",
   variant = "toolbar",
+  verse,
 }: {
   verseId: string;
   section?: ListenSection;
-  variant?: "toolbar" | "layer";
+  variant?: "toolbar" | "layer" | "header";
+  verse?: VerseItem;
 }) {
+  const t = useT();
   const { user, configured, loading: authLoading } = useAuth();
   const accessToken = useAuthToken();
   const convexAuth = useConvexAuth();
-  const [available, setAvailable] = useState(false);
+  const [remote, setRemote] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [snap, setSnap] = useState<ListenSnap>(listenSnapshot);
 
   useEffect(() => {
+    setMounted(true);
     let cancelled = false;
     listenConfigured().then((ok) => {
-      if (!cancelled) setAvailable(ok);
+      if (!cancelled) setRemote(ok);
     });
     return () => {
       cancelled = true;
@@ -65,38 +73,45 @@ export function ListenButton({
 
   useEffect(() => {
     if (section !== "all") return;
-    return () => stopListen();
+    return retainListen();
   }, [verseId, section]);
 
-  if (!available) return null;
+  const localOk = mounted && canListenLocally();
+  if (!mounted || (!remote && !localOk)) return null;
 
   const mine = snap.verseId === verseId && snap.section === section;
   const phase = mine ? snap.phase : "idle";
   const error = mine ? snap.error : null;
   const caption =
     phase === "loading"
-      ? "Preparing"
+      ? t("listen.preparing")
       : phase === "playing"
-        ? "Pause"
+        ? t("listen.pause")
         : phase === "paused"
-          ? "Resume"
+          ? t("listen.resume")
           : section === "all"
-            ? "Play all"
-            : "Listen";
+            ? t("listen.playAll")
+            : t("listen.listen");
   const shell =
     variant === "layer"
       ? "passage-listen passage-listen--layer"
-      : "passage-listen passage-listen--toolbar";
+      : variant === "header"
+        ? "passage-listen passage-listen--header"
+        : "passage-listen passage-listen--toolbar";
 
-  async function onPlay() {
+  async function onPlay(event: MouseEvent<HTMLButtonElement>) {
+    event.preventDefault();
+    event.stopPropagation();
     if (phase === "loading") return;
-    if (configured && !user && !authLoading) {
-      reportListenError(verseId, section, "Sign in to listen.");
+    if (remote && configured && !user && !authLoading) {
+      reportListenError(verseId, section, t("listen.signIn"));
       return;
     }
-    const token = await resolveListenToken(accessToken, convexAuth?.fetchAccessToken);
-    if (configured && user && !token) {
-      reportListenError(verseId, section, "Your session is still opening. Try again in a moment.");
+    const token = remote
+      ? await resolveListenToken(accessToken, convexAuth?.fetchAccessToken)
+      : null;
+    if (remote && configured && user && !token) {
+      reportListenError(verseId, section, t("listen.sessionOpening"));
       return;
     }
     await toggleListen({
@@ -104,6 +119,8 @@ export function ListenButton({
       section,
       accessToken: token,
       signedIn: Boolean(user),
+      verse,
+      preferLocal: !remote,
     });
   }
 
@@ -112,7 +129,7 @@ export function ListenButton({
       <button
         type="button"
         className="passage-listen__btn"
-        onClick={() => void onPlay()}
+        onClick={(event) => void onPlay(event)}
         disabled={phase === "loading"}
         aria-pressed={phase === "playing"}
         aria-label={caption}

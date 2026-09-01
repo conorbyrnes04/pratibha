@@ -7,6 +7,7 @@ import { useAuth } from "@/components/AuthProvider";
 import { GlyphMala } from "@/components/GlyphMala";
 import { InkGlyph } from "@/components/InkGlyph";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { useT } from "@/components/LocaleProvider";
 import { useAvatarMark } from "@/lib/useAvatarMark";
 import { SHARE_INKS } from "@/lib/shareCard";
 import { cn } from "@/lib/utils";
@@ -24,6 +25,7 @@ function initialsFromUser(email: string | undefined, name: string | undefined): 
 
 export function AuthMenu() {
   const router = useRouter();
+  const t = useT();
   const { configured, loading, user, signOut } = useAuth();
   const { mark, ink } = useAvatarMark();
   const [open, setOpen] = useState(false);
@@ -48,7 +50,7 @@ export function AuthMenu() {
   if (!configured) {
     return (
       <Link href="/login" className="nav-link hidden sm:inline" title="Configure Convex auth">
-        Account
+        {t("auth.account")}
       </Link>
     );
   }
@@ -65,7 +67,7 @@ export function AuthMenu() {
   if (!user) {
     return (
       <Link href="/login" className={cn(buttonVariants({ variant: "secondary", size: "sm" }))}>
-        Sign in
+        {t("auth.signIn")}
       </Link>
     );
   }
@@ -88,7 +90,7 @@ export function AuthMenu() {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-haspopup="menu"
-        aria-label="Account menu"
+        aria-label={t("auth.menuLabel")}
         className="h-9 w-9 shrink-0 overflow-hidden rounded-full border border-amber-200/35 bg-gradient-to-br from-amber-200/25 to-stone-900/80 p-0 text-xs font-semibold tracking-wide text-amber-50 shadow-[0_0_0_1px_rgb(0_0_0_/_0.35)] hover:border-amber-200/60 hover:from-amber-200/35"
       >
         {mark ? (
@@ -103,10 +105,10 @@ export function AuthMenu() {
       {open ? (
         <div
           role="menu"
-          className="absolute right-0 top-[calc(100%+0.55rem)] z-50 min-w-[13.5rem] overflow-hidden rounded-xl border border-amber-200/15 bg-[#12101c]/96 py-1 shadow-2xl backdrop-blur-xl"
+          className="absolute inset-inline-end-0 top-[calc(100%+0.55rem)] z-50 min-w-[13.5rem] overflow-hidden rounded-xl border border-amber-200/15 bg-[#12101c]/96 py-1 shadow-2xl backdrop-blur-xl"
         >
           <div className="border-b border-white/10 px-3 py-2.5">
-            <p className="truncate font-sans text-sm text-amber-50">{name || email.split("@")[0] || "Account"}</p>
+            <p className="truncate font-sans text-sm text-amber-50">{name || email.split("@")[0] || t("auth.account")}</p>
             {email ? <p className="mt-0.5 truncate font-sans text-xs text-stone-400">{email}</p> : null}
             <div className="mt-2.5">
               <GlyphMala compact />
@@ -118,7 +120,7 @@ export function AuthMenu() {
             onClick={() => setOpen(false)}
             className="block px-3 py-2.5 font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
           >
-            My Manuscript
+            {t("nav.manuscript")}
           </Link>
           <Link
             href="/journal"
@@ -126,7 +128,7 @@ export function AuthMenu() {
             onClick={() => setOpen(false)}
             className="block px-3 py-2.5 font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
           >
-            Journal
+            {t("nav.journal")}
           </Link>
           <Link
             href="/account#mark"
@@ -134,7 +136,7 @@ export function AuthMenu() {
             onClick={() => setOpen(false)}
             className="block px-3 py-2.5 font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
           >
-            Choose a mark
+            {t("auth.chooseMark")}
           </Link>
           <Link
             href="/account"
@@ -142,15 +144,15 @@ export function AuthMenu() {
             onClick={() => setOpen(false)}
             className="block px-3 py-2.5 font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
           >
-            Account
+            {t("auth.account")}
           </Link>
           <button
             type="button"
             role="menuitem"
             onClick={() => void onSignOut()}
-            className="block w-full px-3 py-2.5 text-left font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
+            className="block w-full px-3 py-2.5 text-start font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
           >
-            Sign out
+            {t("auth.signOut")}
           </button>
         </div>
       ) : null}

@@ -1,6 +1,7 @@
 "use client";
 
 import type { ThemeCount } from "@/lib/corpusFilters";
+import { useT } from "@/components/LocaleProvider";
 
 type ThemeConstellationProps = {
   themes: ThemeCount[];
@@ -9,14 +10,15 @@ type ThemeConstellationProps = {
 };
 
 export function ThemeConstellation({ themes, active, onChange }: ThemeConstellationProps) {
+  const t = useT();
   if (themes.length === 0) return null;
 
   return (
     <section className="theme-constellation">
-      <p className="layer-heading">Theme constellation</p>
-      <p className="soft mt-1 text-sm">Most frequent threads in the corpus — scroll to explore.</p>
+      <p className="layer-heading">{t("theme.title")}</p>
+      <p className="soft mt-1 text-sm">{t("theme.lede")}</p>
       <div className="theme-constellation__frame mt-3">
-        <div className="theme-constellation__track" role="tablist" aria-label="Filter by theme">
+        <div className="theme-constellation__track" role="tablist" aria-label={t("theme.filter")}>
           <button
             type="button"
             role="tab"
@@ -24,7 +26,7 @@ export function ThemeConstellation({ themes, active, onChange }: ThemeConstellat
             onClick={() => onChange("all")}
             className={`theme-constellation__bead${active === "all" ? " theme-constellation__bead--active" : ""}`}
           >
-            All themes
+            {t("theme.all")}
           </button>
           {themes.map(({ theme, count }) => (
             <button

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import type { VerseItem } from "@/lib/types";
 import { getLayer, passagePreview, practiceText } from "@/lib/verseLayers";
@@ -9,6 +11,8 @@ import { ReadingShell } from "@/components/ReadingShell";
 import { buttonVariants } from "@/components/ui/button";
 import { ShareComposer } from "@/components/ShareComposer";
 import { SanghaBoundary } from "@/components/SanghaBoundary";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedVerse } from "@/components/useLocalizedStudy";
 
 /**
  * The daily passage, formatted so the source **Original** (Devanagari, Tibetan
@@ -19,12 +23,14 @@ import { SanghaBoundary } from "@/components/SanghaBoundary";
  * and keeps the deeper layers (commentary, resonances, practice) behind the gate.
  */
 export function VerseOfTheDay({ item, preview = false }: { item: VerseItem; preview?: boolean }) {
-  const original = getLayer(item, "original");
-  const iast = getLayer(item, "iast");
-  const translation = getLayer(item, "translation");
-  const practice = preview ? "" : practiceText(item);
+  const t = useT();
+  const study = useLocalizedVerse(item) || item;
+  const original = getLayer(study, "original");
+  const iast = getLayer(study, "iast");
+  const translation = getLayer(study, "translation");
+  const practice = preview ? "" : practiceText(study);
 
-  const title = displayPassageTitle(item);
+  const title = displayPassageTitle(study);
   const sourceLine = displayPassageSourceLine({
     ...item,
     collection: displayCollectionName(item.collection) || item.collection,
@@ -37,9 +43,9 @@ export function VerseOfTheDay({ item, preview = false }: { item: VerseItem; prev
     <section id="daily" className="scroll-mt-24">
       <ReadingShell artSrcs={artPool}>
         <header className="passage-reading__header">
-          <p className="passage-reading__meta">Today&apos;s passage</p>
+          <p className="passage-reading__meta">{t("today.passage")}</p>
           <h1 className="passage-reading__title">{title}</h1>
-          <p className="passage-reading__deck">{sourceLine || "Pratibha corpus"}</p>
+          <p className="passage-reading__deck">{sourceLine || t("today.corpus")}</p>
         </header>
 
         {original ? <LayerBlock layer={original} variant="plain" /> : null}
@@ -48,14 +54,14 @@ export function VerseOfTheDay({ item, preview = false }: { item: VerseItem; prev
           <LayerBlock layer={translation} variant="plain" />
         ) : (
           <section className="passage-layer passage-layer--translation">
-            <h2 className="passage-layer__label">Translation</h2>
-            <p className="reading-prose">{passagePreview(item)}</p>
+            <h2 className="passage-layer__label">{t("layers.translation")}</h2>
+            <p className="reading-prose">{passagePreview(study)}</p>
           </section>
         )}
 
         {practice ? (
           <section className="passage-practice--plain">
-            <h2 className="passage-layer__label">Practice</h2>
+            <h2 className="passage-layer__label">{t("layers.practice")}</h2>
             <p className="passage-practice__body">{practice}</p>
           </section>
         ) : null}
@@ -63,25 +69,25 @@ export function VerseOfTheDay({ item, preview = false }: { item: VerseItem; prev
         {preview ? (
           <div className="passage-reading__nav">
             <p className="soft mb-1 w-full font-sans text-sm leading-relaxed">
-              Sign in to open commentary, resonances, practice, and the rest of the manuscript.
+              {t("today.previewLede")}
             </p>
             <Link href="/login" className={buttonVariants()}>
-              Sign in to enter
+              {t("today.signInEnter")}
             </Link>
             <Link href="/login?mode=signup" className={buttonVariants({ variant: "secondary" })}>
-              Create an account
+              {t("auth.createAccount")}
             </Link>
           </div>
         ) : (
           <div className="passage-reading__nav">
             <Link href={readHref} className={buttonVariants()}>
-              Read today&apos;s passage
+              {t("today.readToday")}
             </Link>
             <Link href={askHref} className={buttonVariants({ variant: "secondary" })}>
-              Ask about this
+              {t("today.askAbout")}
             </Link>
             <SanghaBoundary>
-              <ShareComposer item={item} />
+              <ShareComposer item={study} />
             </SanghaBoundary>
           </div>
         )}

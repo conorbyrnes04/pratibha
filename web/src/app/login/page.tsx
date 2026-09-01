@@ -7,9 +7,12 @@ import { useAuth } from "@/components/AuthProvider";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useT } from "@/components/LocaleProvider";
 import { MIN_PASSWORD_LENGTH } from "@/lib/authRules";
+import { cn } from "@/lib/utils";
 
 function LoginForm() {
+  const t = useT();
   const router = useRouter();
   const params = useSearchParams();
   const next = params.get("next") || "/";
@@ -37,8 +40,8 @@ function LoginForm() {
     return (
       <main className="mx-auto max-w-lg px-4 py-16">
         <p className="font-sans text-xs uppercase tracking-[0.22em] text-stone-400">Pratibha</p>
-        <h1 className="mt-2 text-4xl text-amber-100">Finishing Google sign-in</h1>
-        <p className="soft mt-3 font-sans text-sm">One moment while we open your session.</p>
+        <h1 className="mt-2 text-4xl text-amber-100">{t("auth.finishingGoogle")}</h1>
+        <p className="soft mt-3 font-sans text-sm">{t("auth.finishingGoogleLede")}</p>
       </main>
     );
   }
@@ -46,13 +49,10 @@ function LoginForm() {
   if (!configured) {
     return (
       <main className="mx-auto max-w-lg px-4 py-16">
-        <h1 className="text-4xl text-amber-100">Account</h1>
-        <p className="soft mt-4 font-sans text-sm leading-relaxed">
-          Convex auth is not configured for this build. Set{" "}
-          <code className="text-amber-100">NEXT_PUBLIC_CONVEX_URL</code> in the web env, then redeploy.
-        </p>
+        <h1 className="text-4xl text-amber-100">{t("auth.account")}</h1>
+        <p className="soft mt-4 font-sans text-sm leading-relaxed">{t("auth.convexUnconfigured")}</p>
         <Link href="/" className={cn(buttonVariants({ variant: "secondary" }), "mt-8")}>
-          Back home
+          {t("auth.backHome")}
         </Link>
       </main>
     );
@@ -65,7 +65,7 @@ function LoginForm() {
     setBusy(true);
     try {
       if (password.length < MIN_PASSWORD_LENGTH) {
-        setError(`Password must be at least ${MIN_PASSWORD_LENGTH} characters.`);
+        setError(t("auth.passwordMin", { n: MIN_PASSWORD_LENGTH }));
         return;
       }
       const err =
@@ -77,9 +77,7 @@ function LoginForm() {
         return;
       }
       if (mode === "signup") {
-        setInfo(
-          "Account created. You are now signed in.",
-        );
+        setInfo(t("auth.accountCreated"));
       }
       router.replace(next);
     } finally {
@@ -103,10 +101,8 @@ function LoginForm() {
   return (
     <main className="mx-auto max-w-lg px-4 py-16">
       <p className="font-sans text-xs uppercase tracking-[0.22em] text-stone-400">Pratibha</p>
-      <h1 className="mt-2 text-4xl text-amber-100">{mode === "signin" ? "Sign in" : "Create account"}</h1>
-      <p className="soft mt-3 font-sans text-sm">
-        The path is open without an account. Sign in to keep a journal and carry your walk across devices.
-      </p>
+      <h1 className="mt-2 text-4xl text-amber-100">{mode === "signin" ? t("auth.signIn") : t("auth.createAccount")}</h1>
+      <p className="soft mt-3 font-sans text-sm">{t("auth.loginLede")}</p>
 
       <div className="mt-8 space-y-4">
         <Button
@@ -117,19 +113,19 @@ function LoginForm() {
           className="w-full"
           onClick={() => void onGoogle()}
         >
-          Continue with Google
+          {t("auth.continueGoogle")}
         </Button>
 
         <div className="flex items-center gap-3 text-stone-500">
           <div className="h-px flex-1 bg-amber-200/15" />
-          <span className="font-sans text-xs uppercase tracking-[0.18em]">or email</span>
+          <span className="font-sans text-xs uppercase tracking-[0.18em]">{t("auth.orEmail")}</span>
           <div className="h-px flex-1 bg-amber-200/15" />
         </div>
 
         <form onSubmit={onSubmit} className="space-y-3">
           <div className="space-y-1.5">
             <Label htmlFor="login-email" className="font-sans text-sm text-[var(--muted)]">
-              Email
+              {t("auth.email")}
             </Label>
             <Input
               id="login-email"
@@ -142,7 +138,7 @@ function LoginForm() {
           </div>
           <div className="space-y-1.5">
             <Label htmlFor="login-password" className="font-sans text-sm text-[var(--muted)]">
-              Password
+              {t("auth.password")}
             </Label>
             <Input
               id="login-password"
@@ -157,31 +153,31 @@ function LoginForm() {
           {error ? <p className="font-sans text-sm text-amber-200/90">{error}</p> : null}
           {info ? <p className="font-sans text-sm text-stone-300">{info}</p> : null}
           <Button type="submit" disabled={busy} size="lg" className="w-full">
-            {busy ? "Working…" : mode === "signin" ? "Sign in" : "Create account"}
+            {busy ? t("auth.working") : mode === "signin" ? t("auth.signIn") : t("auth.createAccount")}
           </Button>
         </form>
 
         <p className="font-sans text-sm soft">
           {mode === "signin" ? (
             <>
-              No account yet?{" "}
+              {t("auth.noAccountYet")}{" "}
               <button
                 type="button"
                 className="text-amber-100 underline-offset-2 hover:underline"
                 onClick={() => setMode("signup")}
               >
-                Create one
+                {t("auth.createOne")}
               </button>
             </>
           ) : (
             <>
-              Already have an account?{" "}
+              {t("auth.alreadyHaveAccount")}{" "}
               <button
                 type="button"
                 className="text-amber-100 underline-offset-2 hover:underline"
                 onClick={() => setMode("signin")}
               >
-                Sign in
+                {t("auth.signIn")}
               </button>
             </>
           )}
@@ -191,9 +187,14 @@ function LoginForm() {
   );
 }
 
+function LoginFallback() {
+  const t = useT();
+  return <main className="mx-auto max-w-lg px-4 py-16 soft font-sans text-sm">{t("common.loading")}</main>;
+}
+
 export default function LoginPage() {
   return (
-    <Suspense fallback={<main className="mx-auto max-w-lg px-4 py-16 soft font-sans text-sm">Loading…</main>}>
+    <Suspense fallback={<LoginFallback />}>
       <LoginForm />
     </Suspense>
   );

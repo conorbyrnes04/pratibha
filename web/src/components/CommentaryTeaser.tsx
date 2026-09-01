@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { stripMarkdown } from "@/lib/textPreview";
 import { ListenButton } from "@/components/ListenButton";
+import { useT } from "@/components/LocaleProvider";
 
 type CommentaryTeaserProps = {
   body: string;
@@ -33,7 +34,9 @@ function teaserExcerpt(body: string, maxWords = 120): string {
   return out;
 }
 
-export function CommentaryTeaser({ body, label = "Commentary", verseId }: CommentaryTeaserProps) {
+export function CommentaryTeaser({ body, label, verseId }: CommentaryTeaserProps) {
+  const t = useT();
+  const heading = label || t("layers.commentary");
   const [open, setOpen] = useState(false);
   const teaser = useMemo(() => teaserExcerpt(body), [body]);
   const needsExpand = stripMarkdown(body).trim().length > teaser.replace(/…$/, "").length + 8;
@@ -52,11 +55,11 @@ export function CommentaryTeaser({ body, label = "Commentary", verseId }: Commen
   return (
     <section
       className={`commentary-holo${showBody ? " commentary-holo--open" : ""}`}
-      aria-label={label}
+      aria-label={heading}
     >
       {listen}
       <div className="commentary-holo__header">
-        <p className="commentary-holo__label">{label}</p>
+        <p className="commentary-holo__label">{heading}</p>
       </div>
       {needsExpand && !open ? (
         <button
@@ -68,7 +71,7 @@ export function CommentaryTeaser({ body, label = "Commentary", verseId }: Commen
           <span className="commentary-holo__teaser chat-markdown">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{teaser}</ReactMarkdown>
           </span>
-          <span className="commentary-holo__affordance">Continue</span>
+          <span className="commentary-holo__affordance">{t("common.continue")}</span>
         </button>
       ) : (
         <div className="commentary-holo__body chat-markdown reading-prose">
@@ -82,7 +85,7 @@ export function CommentaryTeaser({ body, label = "Commentary", verseId }: Commen
           aria-expanded
           onClick={() => setOpen(false)}
         >
-          Collapse
+          {t("common.collapse")}
         </button>
       ) : null}
     </section>

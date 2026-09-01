@@ -8,6 +8,8 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageLocation, displayPassageTitle } from "@/lib/passageTitles";
 import type { VerseItem } from "@/lib/types";
 import { getStudyLayers, passagePreview } from "@/lib/verseLayers";
+import { useT } from "@/components/LocaleProvider";
+import { useLocalizedVerse } from "@/components/useLocalizedStudy";
 
 export function LearnTrailReading({
   item,
@@ -18,8 +20,10 @@ export function LearnTrailReading({
   gateTitle: string;
   onBack: () => void;
 }) {
+  const t = useT();
   const [showOriginal, setShowOriginal] = useState(true);
-  const layers = getStudyLayers(item);
+  const study = useLocalizedVerse(item) || item;
+  const layers = getStudyLayers(study);
   const originalLayer = layers.find((l) => l.kind === "original");
   const iastLayer = layers.find((l) => l.kind === "iast");
   const translationLayer = layers.find((l) => l.kind === "translation");
@@ -30,15 +34,18 @@ export function LearnTrailReading({
   return (
     <div className="learn-trail-reading" aria-labelledby="learn-trail-reading-title">
       <header className="learn-trail-reading__bar">
-        <button
-          type="button"
-          id="learn-trail-reading-back"
-          className="passage-reading__meta learn-trail-gate__back"
-          onClick={onBack}
-        >
-          ← This gate
-        </button>
-        <p className="learn-trail-reading__gate">{gateTitle}</p>
+        <div className="learn-trail-reading__bar-copy">
+          <button
+            type="button"
+            id="learn-trail-reading-back"
+            className="passage-reading__meta learn-trail-gate__back"
+            onClick={onBack}
+          >
+            {t("learn.thisGate")}
+          </button>
+          <p className="learn-trail-reading__gate">{gateTitle}</p>
+        </div>
+        <ListenButton verseId={item._id} verse={study} variant="header" />
       </header>
 
       <p className="passage-reading__meta">
@@ -48,7 +55,7 @@ export function LearnTrailReading({
       <h2 id="learn-trail-reading-title" className="passage-reading__title">
         {displayPassageTitle(item)}
       </h2>
-      <OriginalReliabilityBadge item={item} />
+      <OriginalReliabilityBadge item={study} />
 
       {originalLayer || iastLayer ? (
         <div className="passage-reading__toolbar">
@@ -57,13 +64,10 @@ export function LearnTrailReading({
             className="passage-reading__toggle"
             onClick={() => setShowOriginal((v) => !v)}
           >
-            {showOriginal ? "Hide original" : "Show original"}
+            {showOriginal ? t("layers.hideOriginal") : t("layers.showOriginal")}
           </button>
-          <ListenButton verseId={item._id} />
         </div>
-      ) : (
-        <ListenButton verseId={item._id} />
-      )}
+      ) : null}
 
       {showOriginal && originalLayer ? <LayerBlock layer={originalLayer} variant="plain" /> : null}
       {showOriginal && iastLayer ? <LayerBlock layer={iastLayer} variant="plain" /> : null}
@@ -71,9 +75,9 @@ export function LearnTrailReading({
         <LayerBlock layer={translationLayer} variant="plain" verseId={item._id} />
       ) : originalLayer ? null : (
         <section className="passage-layer passage-layer--translation">
-          <ListenButton verseId={item._id} section="translation" variant="layer" />
-          <h2 className="passage-layer__label">Translation</h2>
-          <p className="reading-prose mt-4">{passagePreview(item)}</p>
+          <ListenButton verseId={item._id} verse={study} section="translation" variant="layer" />
+          <h2 className="passage-layer__label">{t("layers.translation")}</h2>
+          <p className="reading-prose mt-4">{passagePreview(study)}</p>
         </section>
       )}
       {commentaryLayer ? <LayerBlock layer={commentaryLayer} variant="plain" verseId={item._id} /> : null}

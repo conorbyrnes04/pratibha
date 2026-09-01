@@ -3,6 +3,7 @@
 import { type ReactNode, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { HERO_QUOTE_DWELL_MS, heroQuotesFor, nextHeroQuoteIndex } from "@/lib/heroQuotes";
+import { useT } from "@/components/LocaleProvider";
 
 type CollectionGateProps = {
   collection: string;
@@ -46,6 +47,7 @@ export function CollectionGate({
     return () => window.clearInterval(id);
   }, [collection, quotes, reduceMotion]);
 
+  const t = useT();
   const quote = quotes[index] || "";
 
   function expandAgain() {
@@ -68,7 +70,7 @@ export function CollectionGate({
   }
 
   return (
-    <section className="collection-gate" aria-label={`${title} — opening`}>
+    <section className="collection-gate" aria-label={t("reader.opening", { title })}>
       <div className="collection-gate__stage">
         <motion.div className="collection-gate__orb" style={{ scale }}>
         <button
@@ -77,8 +79,8 @@ export function CollectionGate({
           onClick={onMandalaClick}
           aria-label={
             quote
-              ? `${title}. ${quote} Activate to cycle the line, or scroll to enter the text.`
-              : `${title}. Activate to return to the opening.`
+              ? t("reader.cycleQuote", { title, quote })
+              : t("reader.returnOpening", { title })
           }
         >
           {mandalaSrc ? (
@@ -112,7 +114,7 @@ export function CollectionGate({
           className="hero-descent"
           style={{ opacity: chevronOpacity }}
           onClick={descend}
-          aria-label="Scroll to the text"
+          aria-label={t("reader.scrollText")}
         >
           <span className="hero-descent__arrow" aria-hidden />
           <span className="hero-descent__arrow" aria-hidden />

@@ -145,6 +145,9 @@ data/booklet/~$*
 mobile/.expo/
 mobile/dist/
 
+# On-demand study-layer translations
+data/cache/study_i18n/
+
 # Python tooling caches
 .mypy_cache/
 .ruff_cache/

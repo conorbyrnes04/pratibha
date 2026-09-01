@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { recordPractice } from "@/lib/glyphUnlock";
 import { buttonVariants } from "@/components/ui/button";
+import { useT } from "@/components/LocaleProvider";
 
 export function StudentCommentary({
   verseId,
@@ -34,6 +35,7 @@ function StudentCommentaryInner({
   verseTitle: string;
   onKeepFolio?: () => void;
 }) {
+  const t = useT();
   const { user, loading } = useAuth();
   const mine = useQuery(api.studentCommentaries.getMine, user ? { verseId } : "skip");
   const profile = useQuery(api.profiles.getMine, user ? {} : "skip");
@@ -62,14 +64,10 @@ function StudentCommentaryInner({
   if (!user) {
     return (
       <section id="commentary" className="passage-commentary">
-        <h2 className="passage-layer__label">Your commentary</h2>
-        <p className="soft mt-3 text-sm leading-relaxed">
-          Sign in to write a reading of this verse — private first, then offer it
-          to the circle if it has sat with you. A saved reading gives the share
-          card a holographic shine.
-        </p>
+        <h2 className="passage-layer__label">{t("commentary.title")}</h2>
+        <p className="soft mt-3 text-sm leading-relaxed">{t("commentary.signInLede")}</p>
         <Link href={`/login?next=/read/${encodeURIComponent(verseId)}`} className={`${buttonVariants({ size: "sm" })} mt-4`}>
-          Sign in
+          {t("auth.signIn")}
         </Link>
       </section>
     );
@@ -88,7 +86,7 @@ function StudentCommentaryInner({
       });
       recordPractice(`commentary:${verseId}`);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Could not save.");
+      setError(err instanceof Error ? err.message : t("commentary.saveFailed"));
     } finally {
       setBusy(null);
     }
@@ -100,7 +98,7 @@ function StudentCommentaryInner({
     try {
       await removeVerse({ verseId });
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Could not update the manuscript.");
+      setError(err instanceof Error ? err.message : t("commentary.msFailed"));
     } finally {
       setBusy(null);
     }
@@ -115,7 +113,7 @@ function StudentCommentaryInner({
     setError("");
     void addVerse({ verseId, verseTitle })
       .then(() => recordPractice(`manuscript:${verseId}`))
-      .catch((err) => setError(err instanceof Error ? err.message : "Could not update the manuscript."))
+      .catch((err) => setError(err instanceof Error ? err.message : t("commentary.msFailed")))
       .finally(() => setBusy(null));
   }
 
@@ -123,27 +121,27 @@ function StudentCommentaryInner({
 
   return (
     <section id="commentary" className="passage-commentary">
-      <h2 className="passage-layer__label">Your commentary</h2>
+      <h2 className="passage-layer__label">{t("commentary.title")}</h2>
       <p className="soft mt-2 text-sm leading-relaxed">
-        Say what the line does. Private until you offer it.
-        {offered ? " Offered to the circle." : mine ? " Saved privately." : ""}
+        {t("commentary.lede")}
+        {offered ? ` ${t("commentary.offered")}` : mine ? ` ${t("commentary.savedPrivate")}` : ""}
       </p>
       <Textarea
         className="mt-4"
         value={body}
         onChange={(e) => setBody(e.target.value)}
-        placeholder="What does this verse ask of you?"
+        placeholder={t("commentary.placeholder")}
         rows={6}
       />
       {!profile?.displayName || offered ? (
         <div className="mt-3">
           <label className="soft mb-1 block font-sans text-xs uppercase tracking-[0.16em]">
-            Name on offered readings
+            {t("commentary.nameLabel")}
           </label>
           <Input
             value={displayName}
             onChange={(e) => setDisplayName(e.target.value)}
-            placeholder="How you are known in the circle"
+            placeholder={t("commentary.namePlaceholder")}
             maxLength={40}
           />
         </div>
@@ -151,7 +149,7 @@ function StudentCommentaryInner({
       {error ? <p className="mt-3 text-sm text-red-300">{error}</p> : null}
       <div className="passage-endmatter__actions mt-4">
         <Button type="button" size="sm" disabled={!body.trim() || busy !== null} onClick={() => void save("private")}>
-          {busy === "save" ? "Saving…" : "Save privately"}
+          {busy === "save" ? t("common.saving") : t("commentary.savePrivate")}
         </Button>
         <Button
           type="button"
@@ -160,7 +158,7 @@ function StudentCommentaryInner({
           disabled={!body.trim() || busy !== null}
           onClick={() => void save("offered")}
         >
-          {busy === "offer" ? "Offering…" : offered ? "Update offered reading" : "Offer to this verse"}
+          {busy === "offer" ? t("commentary.offering") : offered ? t("commentary.updateOffered") : t("commentary.offer")}
         </Button>
         {offered ? (
           <Button
@@ -171,25 +169,25 @@ function StudentCommentaryInner({
             onClick={() => {
               setBusy("save");
               void withdraw({ verseId })
-                .catch((err) => setError(err instanceof Error ? err.message : "Could not withdraw."))
+                .catch((err) => setError(err instanceof Error ? err.message : t("commentary.withdrawFailed")))
                 .finally(() => setBusy(null));
             }}
           >
-            Withdraw
+            {t("commentary.withdraw")}
           </Button>
         ) : null}
         {inManuscript ? (
           <>
             <Button type="button" size="sm" variant="secondary" disabled={busy !== null} onClick={saveToManuscript}>
-              Edit card
+              {t("commentary.editCard")}
             </Button>
             <Button type="button" size="sm" variant="ghost" disabled={busy !== null} onClick={() => void removeFromManuscript()}>
-              {busy === "ms" ? "…" : "Remove from manuscript"}
+              {busy === "ms" ? "…" : t("commentary.removeMs")}
             </Button>
           </>
         ) : (
           <Button type="button" size="sm" variant="secondary" disabled={busy !== null} onClick={saveToManuscript}>
-            {busy === "ms" ? "…" : "Save to my manuscript"}
+            {busy === "ms" ? "…" : t("commentary.saveMs")}
           </Button>
         )}
       </div>

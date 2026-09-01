@@ -5,6 +5,7 @@ import type { VerseItem } from "@/lib/types";
 import { displayPassageTitle } from "@/lib/passageTitles";
 import { sortComparePassages } from "@/lib/corpusFilters";
 import { Input } from "@/components/ui/input";
+import { useT } from "@/components/LocaleProvider";
 
 type ComparePassageSelectProps = {
   label: string;
@@ -23,6 +24,7 @@ export function ComparePassageSelect({
   onChange,
   tone = "gold",
 }: ComparePassageSelectProps) {
+  const t = useT();
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
 
@@ -61,7 +63,7 @@ export function ComparePassageSelect({
       >
         <span className="filter-select__value">
           <span className="filter-select__label">
-            {selected ? displayPassageTitle(selected) : "Any passage in this text"}
+            {selected ? displayPassageTitle(selected) : t("filter.anyPassage")}
           </span>
         </span>
         <span className="filter-select__chevron" aria-hidden>
@@ -74,7 +76,7 @@ export function ComparePassageSelect({
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder={`Search ${collection || "text"}…`}
+            placeholder={collection ? t("filter.searchIn", { collection }) : t("filter.searchText")}
             className="mb-2 w-full text-sm"
             autoFocus
           />
@@ -91,11 +93,11 @@ export function ComparePassageSelect({
                 }}
                 className={`filter-select__option w-full${!value ? " filter-select__option--active" : ""}`}
               >
-                <span className="filter-select__option-text soft">Any passage (whole text)</span>
+                <span className="filter-select__option-text soft">{t("filter.anyWhole")}</span>
               </button>
             </li>
             {filtered.length === 0 ? (
-              <li className="px-3 py-2 text-sm soft">No passages match.</li>
+              <li className="px-3 py-2 text-sm soft">{t("filter.noPassages")}</li>
             ) : (
               filtered.map((item) => {
                 const active = item._id === value;
