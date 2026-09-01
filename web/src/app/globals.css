@@ -88,7 +88,7 @@
   /* Library browse column — wider than reading, still centered like nav */
   --library-shell: 64rem;
   --site-header-offset: 7.6rem;
-  --learn-tradition-bar-height: 8.5rem;
+  --learn-tradition-bar-height: 9.6rem;
 }
 
 * {
@@ -3668,7 +3668,7 @@ button.library-passage {
   gap: 0.12rem;
   justify-content: flex-start;
   width: 100%;
-  margin: 0 0 0.4rem;
+  margin: 0;
   overflow-x: auto;
   padding-bottom: 0.1rem;
   scrollbar-width: none;
@@ -3696,6 +3696,7 @@ button.library-passage {
   background: transparent;
   opacity: 0.48;
   cursor: pointer;
+  transition: opacity 0.22s ease;
 }
 
 .learn-tradition-bar__bead:hover,
@@ -3703,6 +3704,43 @@ button.library-passage {
 .learn-tradition-bar__bead.is-current {
   opacity: 1;
   outline: none;
+}
+
+.learn-tradition-bar__whisper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.2rem;
+  margin: 0.08rem 0 0.18rem;
+  overflow: hidden;
+  pointer-events: none;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  color: rgb(240 201 121 / 0.92);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(0.22rem);
+  transition:
+    opacity 0.32s ease,
+    transform 0.32s ease;
+}
+
+.learn-tradition-bar__whisper.is-on {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .learn-tradition-bar__bead,
+  .learn-tradition-bar__whisper {
+    transition: none;
+    transform: none;
+  }
 }
 
 .learn-tradition-bar__trigger {
