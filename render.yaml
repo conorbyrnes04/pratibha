@@ -49,9 +49,18 @@ services:
       # Per-IP chat rate limit (requests/minute); protects the metered LLM.
       - key: CHAT_RATE_MAX_PER_MIN
         value: "20"
-      # Convex JWKS URL — required for /chat JWT checks (F6).
+      # Convex JWKS URL — required for /chat JWT checks (F6). Also the origin the
+      # RAG backend derives its .convex.site /rag/* endpoint from when VECTOR_BACKEND=convex.
       - key: NEXT_PUBLIC_CONVEX_URL
         value: https://giant-lapwing-264.convex.cloud
+      # Vector store backend: "pgvector" (Supabase, legacy) or "convex" (rag_chunks
+      # vector index). Flip to "convex" once the prod deployment is ingested + validated.
+      - key: VECTOR_BACKEND
+        value: pgvector
+      # Shared secret guarding the Convex /rag/* HTTP actions. Must match the
+      # RAG_INGEST_TOKEN set on the giant-lapwing-264 Convex deployment env.
+      - key: RAG_INGEST_TOKEN
+        sync: false
       # Shared secret for /admin/corpus-status (X-Admin-Token header).
       - key: ADMIN_TOKEN
         sync: false

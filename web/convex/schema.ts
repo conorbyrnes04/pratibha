@@ -34,6 +34,7 @@ const schema = defineSchema({
     displayName: v.string(),
     mark: v.optional(v.string()),
     ink: v.optional(v.string()),
+    locale: v.optional(v.string()),
     createdAt: v.number(),
     updatedAt: v.number(),
   }).index("by_user", ["userId"]),
@@ -106,6 +107,30 @@ const schema = defineSchema({
     .index("by_verse", ["verseId"])
     .index("by_user", ["userId"])
     .index("by_user_verse", ["userId", "verseId"]),
+
+  // RAG corpus chunks with embeddings — the Convex-native replacement for the
+  // Supabase pgvector `chunks` table. `embedding` is a 1536-dim vector
+  // (text-embedding-3-small). `meta` mirrors the pgvector metadata dict so the
+  // FastAPI retrieval path (_normalize_meta) is unchanged. Populated by
+  // scripts/ingest_convex.py; queried by the `search` action below.
+  rag_chunks: defineTable({
+    body: v.string(),
+    embedding: v.array(v.float64()),
+    collection: v.string(),
+    section: v.optional(v.string()),
+    sourceFile: v.string(),
+    // Corpus unit id (meta._id) as a top-level indexed column so the Related
+    // panel can look up a unit's stored seed embedding without scanning `meta`.
+    unitId: v.optional(v.string()),
+    meta: v.any(),
+  })
+    .vectorIndex("by_embedding", {
+      vectorField: "embedding",
+      dimensions: 1536,
+      filterFields: ["collection"],
+    })
+    .index("by_source", ["sourceFile"])
+    .index("by_unit", ["unitId"]),
 });
 
 export default schema;

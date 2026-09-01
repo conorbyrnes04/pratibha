@@ -5,6 +5,7 @@ import json
 from typing import List, Tuple
 
 import asyncpg
+import httpx
 from openai import AsyncOpenAI
 
 from .config import settings
@@ -727,6 +728,131 @@ async def _embed_query(client: AsyncOpenAI, model: str, query: str, attempts: in
     raise last_exc if last_exc else RuntimeError("embedding failed")
 
 
+# ---------------------------------------------------------------------------
+# Convex RAG backend (VECTOR_BACKEND="convex"). The /rag/* HTTP actions live on
+# the .convex.site origin of whichever deployment NEXT_PUBLIC_CONVEX_URL names
+# (prod = giant-lapwing-264, dev = energized-armadillo-158). Reads go through the
+# `search` / `related` actions; there is no asyncpg connection in this path.
+# ---------------------------------------------------------------------------
+
+
+def _convex_rag_enabled() -> bool:
+    return (
+        (settings.VECTOR_BACKEND or "").strip().lower() == "convex"
+        and bool(settings.RAG_INGEST_TOKEN)
+        and _convex_rag_site() is not None
+    )
+
+
+def _convex_rag_site() -> str | None:
+    # Reuse auth's single source of truth for the .cloud → .site derivation.
+    from .auth import _convex_site_url  # lazy: avoid any import-order coupling
+
+    return _convex_site_url()
+
+
+async def _convex_post(path: str, payload: dict) -> dict:
+    site = _convex_rag_site()
+    if not site:
+        raise RuntimeError("Convex RAG site URL is not configured")
+    headers = {
+        "authorization": f"Bearer {settings.RAG_INGEST_TOKEN}",
+        "content-type": "application/json",
+    }
+    async with httpx.AsyncClient(timeout=settings.REQUEST_TIMEOUT_S) as http:
+        r = await http.post(f"{site}{path}", headers=headers, json=payload)
+        r.raise_for_status()
+        return r.json()
+
+
+async def _convex_vector_candidates(
+    query: str, fetch_k: int, collection: str | None = None
+) -> list[tuple[str, dict, float]]:
+    client, model = _embedding_client_and_model()
+    if client is None:
+        return []
+    emb = await _embed_query(client, model, query)
+    payload: dict = {"embedding": emb, "limit": fetch_k}
+    if collection:
+        payload["collection"] = collection
+    data = await _convex_post("/rag/search", payload)
+    out: list[tuple[str, dict, float]] = []
+    for r in data.get("results", []):
+        score = float(r.get("score") or 0.0)
+        if score >= settings.RAG_MIN_SCORE:
+            out.append((r.get("body") or "", _normalize_meta(r.get("meta")), score))
+    return out
+
+
+def _corpus_lexical_all(query: str, fetch_k: int) -> list[tuple[str, dict, float]]:
+    """In-memory lexical fallback over the whole corpus (Convex has no full-text).
+
+    Replaces the pgvector `_keyword_candidates` SQL LIKE path with the same
+    per-collection-capped, below-vector-score shaping over ALL_VERSES.
+    """
+    from .data_loader import ALL_VERSES
+
+    tokens = set(_tokenize(query))
+    if not tokens:
+        return []
+    scored: list[tuple[str, dict, float]] = []
+    for verse in ALL_VERSES:
+        body = _verse_chunk_body(verse)
+        if not body:
+            continue
+        hits = len(tokens & _token_set(body))
+        if hits == 0:
+            continue
+        # Keep lexical below typical vector scores (~0.5–0.7), same as SQL path.
+        score = 0.15 + min(0.30, 0.30 * hits / max(1, len(tokens)))
+        scored.append((body, _verse_chunk_meta(verse), score))
+    scored.sort(key=lambda x: x[2], reverse=True)
+
+    per_collection = max(2, fetch_k // 3)
+    picked: list[tuple[str, dict, float]] = []
+    per_col: dict[str, int] = {}
+    for body, meta, score in scored:
+        coll = meta_collection_slug(meta) or "_"
+        if per_col.get(coll, 0) >= per_collection:
+            continue
+        picked.append((body, meta, score))
+        per_col[coll] = per_col.get(coll, 0) + 1
+        if len(picked) >= fetch_k:
+            break
+    return picked
+
+
+# ---- Backend-neutral candidate gathering (conn is None in the Convex path) ----
+
+
+async def _gather_vector(
+    conn: "asyncpg.Connection | None", query: str, fetch_k: int
+) -> list[tuple[str, dict, float]]:
+    if _convex_rag_enabled():
+        return await _convex_vector_candidates(query, fetch_k)
+    return await _vector_candidates(conn, query, fetch_k)
+
+
+async def _gather_lexical(
+    conn: "asyncpg.Connection | None", query: str, fetch_k: int
+) -> list[tuple[str, dict, float]]:
+    if _convex_rag_enabled():
+        return _corpus_lexical_all(query, fetch_k)
+    return await _keyword_candidates(conn, query, fetch_k)
+
+
+async def _gather_collection_fallback(
+    conn: "asyncpg.Connection | None",
+    aliases: set[str],
+    limit: int,
+    query: str,
+) -> list[tuple[str, dict, float]]:
+    if _convex_rag_enabled():
+        rows = _corpus_lexical_candidates(query, aliases, limit)
+        return rows or _corpus_collection_candidates(aliases, limit)
+    return await _collection_fallback_candidates(conn, aliases, limit)
+
+
 async def _vector_candidates(conn: asyncpg.Connection, query: str, fetch_k: int) -> list[tuple[str, dict, float]]:
     client, model = _embedding_client_and_model()
     if client is None:
@@ -825,18 +951,20 @@ async def _keyword_candidates(conn: asyncpg.Connection, query: str, fetch_k: int
 
 async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, float]]:
     fetch_k = max(k, settings.RAG_FETCH_K)
+    convex = _convex_rag_enabled()
     conn: asyncpg.Connection | None = None
     try:
-        conn = await asyncpg.connect(**settings.asyncpg_kwargs())
+        if not convex:
+            conn = await asyncpg.connect(**settings.asyncpg_kwargs())
         vector = []
         if settings.OPENAI_API_KEY or settings.OPENROUTER_API_KEY:
             try:
-                vector = await _vector_candidates(conn, query, fetch_k=fetch_k)
+                vector = await _gather_vector(conn, query, fetch_k=fetch_k)
             except Exception:
                 # Fall through to lexical search if embeddings are unavailable at runtime.
                 logger.warning("Vector retrieval failed; falling back to lexical search", exc_info=True)
                 vector = []
-        lexical = await _keyword_candidates(conn, query, fetch_k=fetch_k)
+        lexical = await _gather_lexical(conn, query, fetch_k=fetch_k)
         merged = sorted([*vector, *lexical], key=lambda x: x[2], reverse=True)
         hinted = _collection_hint(query)
         if hinted:
@@ -844,7 +972,7 @@ async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, floa
             # Named texts in the query must appear even if vector/lexical missed them.
             if len(matching) < max(2, k // 2):
                 aliases = aliases_for_selection(hinted)
-                fallback = await _collection_fallback_candidates(conn, aliases, max(3, k))
+                fallback = await _gather_collection_fallback(conn, aliases, max(3, k), query)
                 if not fallback:
                     fallback = _corpus_lexical_candidates(query, aliases, max(3, k))
                 if not fallback:
@@ -877,6 +1005,58 @@ async def retrieve_context(query: str, k: int = 4) -> List[Tuple[str, dict, floa
             await conn.close()
 
 
+_PINNED_LAYER_RANK = {
+    "translation": 1,
+    "commentary": 2,
+    "key_terms": 3,
+    "resonances": 4,
+    "practice": 5,
+    "abhyasa": 5,
+}
+
+
+def _pinned_chunks_from_corpus(unit_id: str, limit: int) -> list[tuple[str, dict, float]]:
+    """Reconstruct a pinned unit's layer chunks from the in-memory corpus.
+
+    Convex has no per-unit SQL fetch; the corpus already holds every layer, so we
+    build the same translation→commentary→key_terms→… ordering the SQL query used.
+    """
+    from .data_loader import get_verse_by_id
+
+    verse = get_verse_by_id(unit_id)
+    if not verse:
+        return []
+    base_meta = {
+        "collection": verse.get("collection"),
+        "_id": verse.get("_id"),
+        "unit_id": verse.get("_id"),
+        "title": verse.get("title"),
+        "sutra_id": verse.get("sutra_id"),
+        "reference": verse.get("reference"),
+    }
+    rows: list[tuple[int, str, dict]] = []
+    layers = verse.get("pratibha_layers")
+    if isinstance(layers, list):
+        for layer in layers:
+            if not isinstance(layer, dict):
+                continue
+            kind = str(layer.get("kind") or "").strip().lower()
+            body = str(layer.get("body") or "").strip()
+            if not body:
+                continue
+            meta = {**base_meta, "layer_kind": kind, "section": layer.get("label") or kind}
+            rows.append((_PINNED_LAYER_RANK.get(kind, 6), body, meta))
+    if not rows:
+        # No structured layers — fall back to the flat verse fields.
+        for key, kind in (("translation", "translation"), ("commentary", "commentary")):
+            body = str(verse.get(key) or "").strip()
+            if body:
+                meta = {**base_meta, "layer_kind": kind, "section": key}
+                rows.append((_PINNED_LAYER_RANK.get(kind, 6), body, meta))
+    rows.sort(key=lambda r: r[0])
+    return [(body, meta, 1.0) for _, body, meta in rows[:limit]]
+
+
 async def retrieve_context_for_verse(verse_id: str, query: str, k: int = 4) -> List[Tuple[str, dict, float]]:
     """
     Prefer chunks already indexed for the pinned verse, then top up with normal retrieval.
@@ -885,37 +1065,42 @@ async def retrieve_context_for_verse(verse_id: str, query: str, k: int = 4) -> L
     if not needle:
         return await retrieve_context(query, k=k)
 
-    conn: asyncpg.Connection | None = None
     pinned: list[tuple[str, dict, float]] = []
-    try:
-        conn = await asyncpg.connect(**settings.asyncpg_kwargs())
-        rows = await conn.fetch(
-            """
-            SELECT body, metadata
-            FROM chunks
-            WHERE metadata->>'_id' = $1 OR metadata->>'unit_id' = $1 OR metadata->>'sutra_id' = $1
-            ORDER BY
-              CASE metadata->>'layer_kind'
-                WHEN 'translation' THEN 1
-                WHEN 'commentary' THEN 2
-                WHEN 'key_terms' THEN 3
-                WHEN 'resonances' THEN 4
-                WHEN 'practice' THEN 5
-                ELSE 6
-              END,
-              COALESCE((metadata->>'chunk_index')::int, 999)
-            LIMIT $2
-            """,
-            needle,
-            max(k, 8),
-        )
-        pinned = [(r["body"], _normalize_meta(r["metadata"]), 1.0) for r in rows]
-    except Exception:
-        logger.warning("Pinned-verse retrieval failed for %r; using general retrieval", needle, exc_info=True)
-        pinned = []
-    finally:
-        if conn is not None:
-            await conn.close()
+    if _convex_rag_enabled():
+        # No per-unit SQL in the Convex path; reconstruct the pinned unit's layers
+        # from the in-memory corpus (same layer ordering as the SQL query).
+        pinned = _pinned_chunks_from_corpus(needle, max(k, 8))
+    else:
+        conn: asyncpg.Connection | None = None
+        try:
+            conn = await asyncpg.connect(**settings.asyncpg_kwargs())
+            rows = await conn.fetch(
+                """
+                SELECT body, metadata
+                FROM chunks
+                WHERE metadata->>'_id' = $1 OR metadata->>'unit_id' = $1 OR metadata->>'sutra_id' = $1
+                ORDER BY
+                  CASE metadata->>'layer_kind'
+                    WHEN 'translation' THEN 1
+                    WHEN 'commentary' THEN 2
+                    WHEN 'key_terms' THEN 3
+                    WHEN 'resonances' THEN 4
+                    WHEN 'practice' THEN 5
+                    ELSE 6
+                  END,
+                  COALESCE((metadata->>'chunk_index')::int, 999)
+                LIMIT $2
+                """,
+                needle,
+                max(k, 8),
+            )
+            pinned = [(r["body"], _normalize_meta(r["metadata"]), 1.0) for r in rows]
+        except Exception:
+            logger.warning("Pinned-verse retrieval failed for %r; using general retrieval", needle, exc_info=True)
+            pinned = []
+        finally:
+            if conn is not None:
+                await conn.close()
 
     if len(pinned) >= k:
         return _ensure_root_companions(pinned[:k], k)
@@ -952,13 +1137,32 @@ async def retrieve_related_unit_ids(
     needle = (verse_id or "").strip()
     if not needle:
         return []
+
+    floor = settings.RAG_MIN_SCORE if min_score is None else min_score
+
+    if _convex_rag_enabled():
+        # Seed embedding lookup + NN search happen server-side in the `related`
+        # action — no query embedding, no asyncpg here.
+        try:
+            data = await _convex_post(
+                "/rag/related",
+                {"unitId": needle, "limit": limit, "perCollection": per_collection, "minScore": floor},
+            )
+            return [
+                (str(r.get("unitId") or ""), float(r.get("score") or 0.0), str(r.get("collection") or ""))
+                for r in data.get("results", [])
+                if r.get("unitId")
+            ]
+        except Exception:
+            logger.warning("Convex retrieve_related_unit_ids failed for %r", needle, exc_info=True)
+            return []
+
     # Related only needs the vector DB. Chat-default RAG is gated by USE_RAG, but
     # the request can still force chat RAG when USE_RAG is false — Related should
     # likewise work whenever DATABASE_URL is configured.
     if not settings.USE_RAG and not settings.DATABASE_URL:
         return []
 
-    floor = settings.RAG_MIN_SCORE if min_score is None else min_score
     conn: asyncpg.Connection | None = None
     try:
         conn = await asyncpg.connect(**settings.asyncpg_kwargs())
@@ -1064,17 +1268,19 @@ async def retrieve_context_compare(
     total_k = max(4, per_collection * len(selected))
     fetch_k = max(settings.RAG_FETCH_K, total_k * 12)
 
+    convex = _convex_rag_enabled()
     conn: asyncpg.Connection | None = None
     try:
-        conn = await asyncpg.connect(**settings.asyncpg_kwargs())
+        if not convex:
+            conn = await asyncpg.connect(**settings.asyncpg_kwargs())
         vector: list[tuple[str, dict, float]] = []
         if settings.OPENAI_API_KEY or settings.OPENROUTER_API_KEY:
             try:
-                vector = await _vector_candidates(conn, query, fetch_k=fetch_k)
+                vector = await _gather_vector(conn, query, fetch_k=fetch_k)
             except Exception:
                 logger.warning("Vector retrieval failed in compare mode; using lexical only", exc_info=True)
                 vector = []
-        lexical = await _keyword_candidates(conn, query, fetch_k=fetch_k)
+        lexical = await _gather_lexical(conn, query, fetch_k=fetch_k)
         merged = sorted([*vector, *lexical], key=lambda x: x[2], reverse=True)
         merged = _filter_by_collections(merged, collections)
         if not merged:
@@ -1094,7 +1300,7 @@ async def retrieve_context_compare(
             pool = [c for c in merged if meta_collection_slug(c[1]) in aliases and float(c[2]) >= settings.COMPARE_MIN_SCORE]
             # If strict compare retrieval misses a side, fall back to collection-scoped fetch.
             if not pool:
-                pool = await _collection_fallback_candidates(conn, aliases, per_collection)
+                pool = await _gather_collection_fallback(conn, aliases, per_collection, query)
                 pool = [c for c in pool if float(c[2]) >= settings.COMPARE_MIN_SCORE]
             if not pool:
                 pool = _corpus_lexical_candidates(query, aliases, per_collection * 3)

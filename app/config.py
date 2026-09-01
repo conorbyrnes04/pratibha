@@ -20,7 +20,13 @@ class Settings(BaseSettings):
     DEFAULT_MODEL: str = "openrouter/anthropic/claude-haiku-4.5"
     OPENAI_MODEL: str = "gpt-4o-mini"
     USE_RAG: bool = False
+    # "pgvector" (legacy Supabase) or "convex" (rag_chunks vector index). Convex
+    # rides the same deployment as auth/social; the /rag/* HTTP actions live on
+    # the .convex.site origin derived from NEXT_PUBLIC_CONVEX_URL per environment.
     VECTOR_BACKEND: str = "pgvector"
+    # Shared secret guarding the Convex /rag/* HTTP actions (also set in the
+    # Convex deployment env). Required for the convex backend to read/ingest.
+    RAG_INGEST_TOKEN: str | None = None
     # Chat must return well inside the client's patience. A fast model + a hard
     # per-request cap keeps the round trip under ~20s even on a cold backend.
     REQUEST_TIMEOUT_S: float = 18.0
@@ -64,6 +70,7 @@ class Settings(BaseSettings):
     # existing .env files and /health stay valid. Production default so Render
     # chat auth (F6) is on even if the dashboard env var was never set.
     NEXT_PUBLIC_CONVEX_URL: str | None = "https://giant-lapwing-264.convex.cloud"
+    NEXT_PUBLIC_CONVEX_SITE_URL: str | None = None
     SUPABASE_URL: str | None = None
     SUPABASE_JWT_SECRET: str | None = None
     # Private Listen archive (never expose this key to the browser).
@@ -78,6 +85,7 @@ class Settings(BaseSettings):
         "OPENROUTER_API_KEY",
         "ELEVENLABS_API_KEY",
         "SUPABASE_SERVICE_ROLE_KEY",
+        "RAG_INGEST_TOKEN",
         mode="before",
     )
     @classmethod

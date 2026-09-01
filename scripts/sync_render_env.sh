@@ -51,7 +51,8 @@ for required in ("DATABASE_URL", "OPENROUTER_API_KEY", "OPENAI_API_KEY"):
 need = [
     {"key": "USE_RAG", "value": "true"},
     {"key": "PG_SSL", "value": "true"},
-    {"key": "VECTOR_BACKEND", "value": "pgvector"},
+    {"key": "VECTOR_BACKEND", "value": vals.get("VECTOR_BACKEND", "pgvector")},
+    *([{"key": "RAG_INGEST_TOKEN", "value": vals["RAG_INGEST_TOKEN"]}] if vals.get("RAG_INGEST_TOKEN") else []),
     {"key": "EMBEDDING_MODEL", "value": vals.get("EMBEDDING_MODEL", "text-embedding-3-small")},
     {"key": "DEFAULT_MODEL", "value": vals.get("DEFAULT_MODEL", "openrouter/anthropic/claude-haiku-4.5")},
     {"key": "OPENROUTER_MODEL", "value": vals.get("OPENROUTER_MODEL", "openrouter/anthropic/claude-haiku-4.5")},
