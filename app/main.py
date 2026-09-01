@@ -316,6 +316,9 @@ def _verse_list_item(v: dict[str, Any]) -> dict[str, Any]:
             })
         if slim_layers:
             out["pratibha_layers"] = slim_layers
+    sections = listen_tts.archived_sections(v)
+    if sections:
+        out["listen_sections"] = sections
     return out
 
 
@@ -324,6 +327,7 @@ async def get_verse(sid: str, locale: str | None = None):
     v = get_verse_by_id(sid)
     if v is None:
         raise HTTPException(404, "Not found")
+    listen_tts.stamp_listen_sections(v)
     if locale and is_locale(locale):
         return await localize_verse(v, locale)
     return v
@@ -365,6 +369,20 @@ async def listen_status():
     }
 
 
+@app.get("/listen/archive")
+async def listen_archive_index():
+    """All verse ids that already have ElevenLabs speech — one payload for the catalog."""
+    from . import listen_store
+
+    ready = listen_store.playback_ready()
+    verses = (
+        {vid: list(sections) for vid, sections in listen_tts.listen_archive().items()}
+        if ready
+        else {}
+    )
+    return {"ok": True, "configured": ready, "verses": verses}
+
+
 @app.get("/listen/plan")
 async def listen_plan(verse_id: str):
     from . import listen_store
@@ -377,7 +395,7 @@ async def listen_plan(verse_id: str):
     return {
         "ok": True,
         "room": listen_tts.voice_room_for(verse),
-        "sections": await listen_tts.archived_sections(verse),
+        "sections": listen_tts.archived_sections(verse),
     }
 
 

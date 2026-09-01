@@ -207,6 +207,13 @@ export type ListenPlan = {
   sections: Array<Exclude<ListenSection, "all">>;
 };
 
+export type ListenArchive = {
+  /** False when this API build does not yet expose /listen/archive. */
+  loaded: boolean;
+  configured: boolean;
+  verses: Record<string, Array<Exclude<ListenSection, "all">>>;
+};
+
 export async function listenConfigured(): Promise<boolean> {
   try {
     const res = await fetch(`${API_BASE}/listen/status`, { cache: "no-store" });
@@ -215,6 +222,29 @@ export async function listenConfigured(): Promise<boolean> {
     return Boolean(data?.configured);
   } catch {
     return false;
+  }
+}
+
+export async function listenArchive(): Promise<ListenArchive> {
+  try {
+    const res = await fetch(`${API_BASE}/listen/archive`, { cache: "no-store" });
+    if (res.status === 404) return { loaded: false, configured: false, verses: {} };
+    if (!res.ok) return { loaded: false, configured: false, verses: {} };
+    const data = (await res.json()) as {
+      configured?: boolean;
+      verses?: Record<string, string[]>;
+    };
+    const verses: ListenArchive["verses"] = {};
+    for (const [vid, sections] of Object.entries(data.verses || {})) {
+      const kinds = (sections || []).filter(
+        (s): s is Exclude<ListenSection, "all"> =>
+          s === "translation" || s === "commentary" || s === "practice",
+      );
+      if (kinds.length) verses[vid] = kinds;
+    }
+    return { loaded: true, configured: Boolean(data.configured), verses };
+  } catch {
+    return { loaded: false, configured: false, verses: {} };
   }
 }
 

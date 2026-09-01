@@ -7,6 +7,7 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { displayPassageSourceLine, displayPassageTitle } from "@/lib/passageTitles";
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
 import { LayerBlock } from "@/components/LayerBlock";
+import { ListenButton } from "@/components/ListenButton";
 import { ReadingShell } from "@/components/ReadingShell";
 import { buttonVariants } from "@/components/ui/button";
 import { ShareComposer } from "@/components/ShareComposer";
@@ -46,12 +47,13 @@ export function VerseOfTheDay({ item, preview = false }: { item: VerseItem; prev
           <p className="passage-reading__meta">{t("today.passage")}</p>
           <h1 className="passage-reading__title">{title}</h1>
           <p className="passage-reading__deck">{sourceLine || t("today.corpus")}</p>
+          <ListenButton verseId={item._id} />
         </header>
 
         {original ? <LayerBlock layer={original} variant="plain" /> : null}
         {iast ? <LayerBlock layer={iast} variant="plain" /> : null}
         {translation ? (
-          <LayerBlock layer={translation} variant="plain" />
+          <LayerBlock layer={translation} variant="plain" verseId={item._id} />
         ) : (
           <section className="passage-layer passage-layer--translation">
             <h2 className="passage-layer__label">{t("layers.translation")}</h2>
@@ -61,6 +63,7 @@ export function VerseOfTheDay({ item, preview = false }: { item: VerseItem; prev
 
         {practice ? (
           <section className="passage-practice--plain">
+            <ListenButton verseId={item._id} section="practice" variant="layer" />
             <h2 className="passage-layer__label">{t("layers.practice")}</h2>
             <p className="passage-practice__body">{practice}</p>
           </section>

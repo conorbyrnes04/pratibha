@@ -9,12 +9,15 @@ Original / IAST are never spoken.
 from __future__ import annotations
 
 import hashlib
+import json
 import logging
 import os
 import re
 import time
 from dataclasses import dataclass
+from functools import lru_cache
 from typing import Any, Literal
+from pathlib import Path
 
 import httpx
 
@@ -41,6 +44,13 @@ _ELEVEN_SFX = "https://api.elevenlabs.io/v1/sound-generation"
 
 _MD_RE = re.compile(r"[*_`#>\[\]()]+")
 _WS_RE = re.compile(r"\s+")
+# Chapter-file headers sometimes leaked into the last unit's practice layer.
+_EDITORIAL_TAIL_RE = re.compile(
+    r"(?is)(?:\n\s*)+(?:\*{0,2}\s*)?(?:corpus entry|sanskrit basis|english layers)\b.*$"
+)
+_BRIEF_META_TAIL_RE = re.compile(
+    r"(?is)(?:\n\s*)+(?:one unit per brief chunk\b|(?:\*{0,2}\s*)?(?:units:\s*\d|chapter:\s*\d|sanskrit:\s*devanagari)).*$"
+)
 _COSTUME_NATIVE_RE = re.compile(
     r"native american|indigenous accent|tribal|indian accent|first nations",
     re.I,
@@ -163,6 +173,13 @@ def _api_key() -> str:
     return (settings.ELEVENLABS_API_KEY or os.getenv("ELEVENLABS_API_KEY") or "").strip()
 
 
+def _strip_editorial(text: str) -> str:
+    """Drop ingest metadata that must never be spoken."""
+    cleaned = _EDITORIAL_TAIL_RE.sub("", text)
+    cleaned = _BRIEF_META_TAIL_RE.sub("", cleaned)
+    return cleaned.strip()
+
+
 def _strip_md(text: str) -> str:
     cleaned = _MD_RE.sub("", text.replace("**", "").replace("__", ""))
     cleaned = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", cleaned)
@@ -177,7 +194,10 @@ def _layer(verse: dict[str, Any], kind: str) -> str:
                 continue
             if str(layer.get("kind") or "").lower() != kind:
                 continue
-            body = _strip_md(str(layer.get("body") or ""))
+            body = str(layer.get("body") or "")
+            if kind == "practice":
+                body = _strip_editorial(body)
+            body = _strip_md(body)
             if body:
                 return body
     fallback = {
@@ -185,7 +205,10 @@ def _layer(verse: dict[str, Any], kind: str) -> str:
         "commentary": verse.get("commentary"),
         "practice": verse.get("practice") or verse.get("abhyasa"),
     }.get(kind)
-    return _strip_md(str(fallback or ""))
+    raw = str(fallback or "")
+    if kind == "practice":
+        raw = _strip_editorial(raw)
+    return _strip_md(raw)
 
 
 def _haystack(verse: dict[str, Any]) -> str:
@@ -243,32 +266,24 @@ async def archived_audio(
     if section not in {"translation", "commentary", "practice", "all"}:
         return None
     room = voice_room_for(verse)
+    title = str(verse.get("title") or "")
+    vid = str(verse.get("_id") or "")
     text = build_script(verse, section)
-    if not text:
-        return None
-    if not voice_id:
-        async with httpx.AsyncClient() as client:
-            voice_id = await resolve_voice(room, client)
-    cached = await listen_store.get_object(_speech_key(voice_id, text))
+    cached = await listen_store.get_object(verse_speech_key(vid, section)) if vid else None
+    if not cached and text:
+        if not voice_id:
+            pinned = _env_voice(room) or _ROOM_DEFAULT_VOICES.get(room) or _unmarked_voice()
+            voice_id = pinned
+        cached = await listen_store.get_object(_speech_key(voice_id, text))
     if not cached:
         return None
-    title = str(verse.get("title") or "")
-    return cached, ListenScript(room, voice_id, text, title, section)
+    return cached, ListenScript(room, voice_id or "", text, title, section)
 
 
-async def archived_sections(verse: dict[str, Any]) -> list[ListenSection]:
+def archived_sections(verse: dict[str, Any]) -> list[ListenSection]:
     """Sections that already have ElevenLabs speech in the archive."""
-    kinds = available_sections(verse)
-    if not kinds:
-        return []
-    room = voice_room_for(verse)
-    async with httpx.AsyncClient() as client:
-        voice_id = await resolve_voice(room, client)
-    found: list[ListenSection] = []
-    for kind in kinds:
-        if await archived_audio(verse, kind, voice_id):
-            found.append(kind)
-    return found
+    vid = str(verse.get("_id") or "")
+    return list(listen_archive().get(vid) or ())
 
 
 def _env_voice(room: VoiceRoom) -> str:
@@ -430,6 +445,55 @@ def _clip(text: str) -> str:
     return text[:_MAX_CHARS].rsplit(" ", 1)[0].rstrip() + "."
 
 
+def _speech_key(voice_id: str, text: str) -> str:
+    digest = hashlib.sha256(f"{_MODEL}\0{voice_id}\0{text}".encode("utf-8")).hexdigest()
+    return f"speech/{voice_id}/{digest}.mp3"
+
+
+def verse_speech_key(verse_id: str, section: str) -> str:
+    safe = str(verse_id or "").strip().replace("/", "__")
+    return f"verse/{safe}/{section}.mp3"
+
+
+def _cue_key(room: VoiceRoom, edge: str) -> str:
+    return f"cues/v2/{room}/{edge}.mp3"
+
+
+@lru_cache(maxsize=1)
+def listen_archive() -> dict[str, tuple[str, ...]]:
+    """Verse ids that already have ElevenLabs speech, from data/listen_archive.json."""
+    path = Path(__file__).resolve().parents[1] / "data" / "listen_archive.json"
+    if not path.is_file():
+        return {}
+    try:
+        raw = json.loads(path.read_text())
+    except Exception:
+        logger.exception("Could not read listen archive index")
+        return {}
+    out: dict[str, tuple[str, ...]] = {}
+    if not isinstance(raw, dict):
+        return out
+    for vid, sections in raw.items():
+        if not isinstance(sections, list):
+            continue
+        kinds = tuple(
+            s for s in sections if s in SPEAKABLE_SECTIONS
+        )
+        if kinds:
+            out[str(vid)] = kinds
+    return out
+
+
+def stamp_listen_sections(verse: dict[str, Any]) -> dict[str, Any]:
+    vid = str(verse.get("_id") or "")
+    sections = list(listen_archive().get(vid) or ())
+    if sections:
+        verse["listen_sections"] = sections
+    else:
+        verse.pop("listen_sections", None)
+    return verse
+
+
 def build_script(verse: dict[str, Any], section: ListenSection = "all") -> str:
     title = _strip_md(str(verse.get("title") or verse.get("sutra_id") or ""))
     translation = _layer(verse, "translation")
@@ -452,15 +516,6 @@ def build_script(verse: dict[str, Any], section: ListenSection = "all") -> str:
     if practice:
         parts.extend(["The practice.", practice])
     return _clip("\n\n".join(parts).strip())
-
-
-def _speech_key(voice_id: str, text: str) -> str:
-    digest = hashlib.sha256(f"{_MODEL}\0{voice_id}\0{text}".encode("utf-8")).hexdigest()
-    return f"speech/{voice_id}/{digest}.mp3"
-
-
-def _cue_key(room: VoiceRoom, edge: str) -> str:
-    return f"cues/v2/{room}/{edge}.mp3"
 
 
 async def _speak(client: httpx.AsyncClient, voice_id: str, text: str) -> bytes:
@@ -536,8 +591,13 @@ async def synthesize(verse: dict[str, Any], section: ListenSection = "all") -> t
         store_key = _speech_key(voice_id, text)
         cached = await listen_store.get_object(store_key)
         title = str(verse.get("title") or "")
+        verse_id = str(verse.get("_id") or "")
         if cached:
+            if verse_id:
+                await listen_store.put_object(verse_speech_key(verse_id, section), cached)
             return cached, ListenScript(room, voice_id, text, title, section)
         audio = await _speak(client, voice_id, text)
         await listen_store.put_object(store_key, audio)
+        if verse_id:
+            await listen_store.put_object(verse_speech_key(verse_id, section), audio)
         return audio, ListenScript(room, voice_id, text, title, section)

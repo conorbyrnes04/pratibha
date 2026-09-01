@@ -20,6 +20,7 @@ COPY app ./app
 # trees are authoring inputs and are not needed at runtime.
 COPY data/canonical ./data/canonical
 COPY data/lexicon ./data/lexicon
+COPY data/listen_archive.json ./data/listen_archive.json
 
 # Ingest script + DB schema (handy for one-off jobs / reference inside the image).
 COPY scripts/ingest_pgvector.py ./scripts/ingest_pgvector.py

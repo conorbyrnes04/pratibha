@@ -82,6 +82,8 @@ export type VerseItem = {
   editorial_maturity?: EditorialMaturity;
   editorial_score?: number;
   pratibha_layers?: PratibhaLayer[];
+  /** English layers that already have archived ElevenLabs speech. */
+  listen_sections?: Array<"translation" | "commentary" | "practice">;
 };
 
 export type Source = {

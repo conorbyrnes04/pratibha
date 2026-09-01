@@ -1,8 +1,10 @@
 import {
+  listenArchive,
   listenCue,
   listenPassage,
   listenPlan,
   ListenApiError,
+  type ListenArchive,
   type ListenPlan,
   type ListenSection,
 } from "@/lib/api";
@@ -20,6 +22,7 @@ type Sub = () => void;
 
 const subs = new Set<Sub>();
 const planCache = new Map<string, Promise<ListenPlan | null>>();
+let archivePromise: Promise<ListenArchive> | null = null;
 let snap: ListenSnap = { verseId: null, section: null, phase: "idle", error: null };
 let token: number = 0;
 let speech: HTMLAudioElement | null = null;
@@ -40,6 +43,11 @@ export function subscribeListen(fn: Sub): () => void {
   return () => {
     subs.delete(fn);
   };
+}
+
+export function loadListenArchive(): Promise<ListenArchive> {
+  if (!archivePromise) archivePromise = listenArchive();
+  return archivePromise;
 }
 
 export function loadListenPlan(verseId: string): Promise<ListenPlan | null> {

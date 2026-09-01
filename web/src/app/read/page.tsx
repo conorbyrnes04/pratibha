@@ -27,6 +27,7 @@ import {
 import { layerText, passagePreview, practiceText } from "@/lib/verseLayers";
 import { Input } from "@/components/ui/input";
 import { CollectionGate } from "@/components/CollectionGate";
+import { ListenButton } from "@/components/ListenButton";
 import { useT } from "@/components/LocaleProvider";
 import { useLocalizedVerseCards } from "@/components/useLocalizedStudy";
 import { catalogQuoteCandidates } from "@/lib/heroQuotes";
@@ -461,57 +462,56 @@ function LibraryPageContent() {
       ) : (
         <div className="library-list">
           {studyList.slice(0, 300).map((x) => (
-            <Link
-              key={x._id}
-              href={`/read/${encodeURIComponent(x._id)}`}
-              className="library-passage group"
-            >
-              <div className="library-passage__top">
-                <span className="library-row__glyph hidden sm:inline-flex" aria-hidden>
-                  <InkGlyph
-                    glyph={verseSumiGlyph({
-                      collection: x.collection,
-                      tradition: tomes.find((t) => collectionsMatch(t.collection, x.collection || ""))?.tradition,
-                      title: x.title,
-                      thesis: x.thesis,
-                      translation: x.translation,
-                      themes: x.themes,
-                    })}
-                    state="arising"
-                    size="sm"
-                    mask
-                  />
-                </span>
-                <div className="min-w-0 flex-1">
-                  <h2 className="library-passage__title">{displayPassageTitle(x)}</h2>
-                  <p className="library-passage__meta">
-                    {displayCollectionName(x.collection)}
-                    {displayPassageLocation(x) ? ` · ${displayPassageLocation(x)}` : ""}
-                  </p>
-                  {x.themes && x.themes.length > 0 ? (
-                    <p className="library-passage__themes">{x.themes.slice(0, 2).join(" · ")}</p>
-                  ) : null}
+            <div key={x._id} className="library-passage library-passage--listen group">
+              <Link href={`/read/${encodeURIComponent(x._id)}`} className="library-passage__open">
+                <div className="library-passage__top">
+                  <span className="library-row__glyph hidden sm:inline-flex" aria-hidden>
+                    <InkGlyph
+                      glyph={verseSumiGlyph({
+                        collection: x.collection,
+                        tradition: tomes.find((t) => collectionsMatch(t.collection, x.collection || ""))?.tradition,
+                        title: x.title,
+                        thesis: x.thesis,
+                        translation: x.translation,
+                        themes: x.themes,
+                      })}
+                      state="arising"
+                      size="sm"
+                      mask
+                    />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <h2 className="library-passage__title">{displayPassageTitle(x)}</h2>
+                    <p className="library-passage__meta">
+                      {displayCollectionName(x.collection)}
+                      {displayPassageLocation(x) ? ` · ${displayPassageLocation(x)}` : ""}
+                    </p>
+                    {x.themes && x.themes.length > 0 ? (
+                      <p className="library-passage__themes">{x.themes.slice(0, 2).join(" · ")}</p>
+                    ) : null}
+                  </div>
                 </div>
-              </div>
-              {!learningMode ? (
-                <p className="library-passage__preview line-clamp-2">
-                  {passagePreview(x) || t("library.openPassage")}
-                </p>
-              ) : (
-                <div className="library-passage__learning">
-                  <p className="line-clamp-2">
-                    <span>{t("library.coreIdea")}</span> {passagePreview(x) || t("library.openPassage")}
+                {!learningMode ? (
+                  <p className="library-passage__preview line-clamp-2">
+                    {passagePreview(x) || t("library.openPassage")}
                   </p>
-                  <p className="line-clamp-2">
-                    <span>Why it matters</span>{" "}
-                    {firstSentence(layerText(x, "commentary") || layerText(x, "translation") || "")}
-                  </p>
-                  <p className="line-clamp-2">
-                    <span>Practice</span> {practiceText(x) || reflectionPrompt(x)}
-                  </p>
-                </div>
-              )}
-            </Link>
+                ) : (
+                  <div className="library-passage__learning">
+                    <p className="line-clamp-2">
+                      <span>{t("library.coreIdea")}</span> {passagePreview(x) || t("library.openPassage")}
+                    </p>
+                    <p className="line-clamp-2">
+                      <span>Why it matters</span>{" "}
+                      {firstSentence(layerText(x, "commentary") || layerText(x, "translation") || "")}
+                    </p>
+                    <p className="line-clamp-2">
+                      <span>Practice</span> {practiceText(x) || reflectionPrompt(x)}
+                    </p>
+                  </div>
+                )}
+              </Link>
+              <ListenButton verseId={x._id} variant="header" />
+            </div>
           ))}
           {filtered.length === 0 ? (
             <p className="soft mt-6">No passages match. Try another search, or return to the shelf.</p>

@@ -8,6 +8,7 @@ import { InkGlyph, type InkState } from "@/components/InkGlyph";
 import { listenConfigured, type ListenPlan, type ListenSection } from "@/lib/api";
 import {
   listenSnapshot,
+  loadListenArchive,
   loadListenPlan,
   reportListenError,
   retainListen,
@@ -62,19 +63,22 @@ export function ListenButton({
 
   useEffect(() => {
     let cancelled = false;
-    listenConfigured().then((ok) => {
-      if (!cancelled) setAvailable(ok);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  useEffect(() => {
-    let cancelled = false;
-    loadListenPlan(verseId).then((next) => {
+    (async () => {
+      const archive = await loadListenArchive();
+      if (cancelled) return;
+      if (archive.loaded) {
+        setAvailable(archive.configured);
+        const sections = archive.verses[verseId] || [];
+        setPlan({ room: "unmarked", sections });
+        return;
+      }
+      const ok = await listenConfigured();
+      if (cancelled) return;
+      setAvailable(ok);
+      if (!ok) return;
+      const next = await loadListenPlan(verseId);
       if (!cancelled) setPlan(next);
-    });
+    })();
     return () => {
       cancelled = true;
     };
@@ -82,12 +86,14 @@ export function ListenButton({
 
   useEffect(() => subscribeListen(() => setSnap(listenSnapshot())), []);
 
-  useEffect(() => {
-    if (section !== "all") return;
-    return retainListen();
-  }, [verseId, section]);
+  const ready = available && sectionReady(plan, section);
 
-  if (!available || !sectionReady(plan, section)) return null;
+  useEffect(() => {
+    if (section !== "all" || !ready) return;
+    return retainListen();
+  }, [verseId, section, ready]);
+
+  if (!ready) return null;
 
   const mine = snap.verseId === verseId && snap.section === section;
   const phase = mine ? snap.phase : "idle";
