@@ -6,36 +6,18 @@ unit_id: johnson_yoruba_religion.johnson_yoruba_religion_006
 unit_label: 'The Ori: the Head as Destiny'
 title: 'The Ori: the Head as Destiny'
 unit_type: reflection
-commentary: 'Johnson presents the Ori as a personal divine principle governing individual destiny, worshipped across gender
-  and social lines as the arbiter of fortune. The passage emphasizes reciprocity: one propitiates (honors, appeases) the Ori
-  not through coercion but through respectful relationship, trusting that good fortune follows from right regard. This suggests
-  a theology where fate is neither random nor wholly fixed, but responsive to human acknowledgment and intention.
-
-
-
-  Key Terms
-
-
-
-  **Ori** — The head; in Yoruba thought, the personal divine principle or inner guide that determines one''s destiny and fortune.
-
-  **propitiated** — Honored, appeased, or made favorable through respectful action or offering; implies a relationship of
-  reciprocal regard rather than demand.
-
-
-
-  Cross-Tradition Resonances
-
-
-
-  **Dhammapada, verse 1: ''Mind is the forerunner of all things.'':** Both traditions locate the source of one''s condition
-  in an inner principle (mind/Ori) that shapes outer fortune. Divergence: The Dhammapada emphasizes mental action and karma;
-  Johnson''s Ori is a deity to be honored, suggesting a relational rather than purely causal model.
-
-
-  **Heraclitus, Fragment 119: ''Character is destiny.'':** Both suggest that one''s inner nature (Ori/character) determines
-  the course of one''s life. Divergence: Heraclitus speaks of character as self-generating; Johnson''s Ori is a god requiring
-  propitiation, implying dialogue with something beyond the self.'
+original: The Ori — the head — is the universal household deity, worshipped by both sexes as the god of
+  fate. It is believed that good or ill fortune attends one according to the decree of this god; and hence
+  it is propitiated, that good fortune might be the share of its votary.
+commentary: 'Johnson presents the Ori as a personal divine principle governing individual destiny, worshipped
+  across gender and social lines as the arbiter of fortune. The passage emphasizes reciprocity: one propitiates
+  (honors, appeases) the Ori not through coercion but through respectful relationship, trusting that good
+  fortune follows from right regard. This suggests a theology where fate is neither random nor wholly
+  fixed, but responsive to human acknowledgment and intention.'
+practice: 'Today, pause once and ask: What do I regard as my own ''head''—my deepest intention or character?
+  Sit briefly with that question without answering. Notice what arises.'
+abhyasa: 'Today, pause once and ask: What do I regard as my own ''head''—my deepest intention or character?
+  Sit briefly with that question without answering. Notice what arises.'
 themes:
 - yoruba
 - the divine
@@ -48,26 +30,65 @@ tags:
 quality_score: 0
 editorial_score: 0
 editorial_maturity: strong_draft
-translation_provenance: Original text by Rev. Samuel Johnson (a Yoruba clergyman), The History of the Yorubas (completed c.
-  1897; published 1921; public domain). An insider Yoruba account, transcribed from the 1921 scan with light correction of
-  OCR artifacts. Study rendering pending review by tradition-bearers.
+translation_provenance: Original text by Rev. Samuel Johnson (a Yoruba clergyman), The History of the
+  Yorubas (completed c. 1897; published 1921; public domain). An insider Yoruba account, transcribed from
+  the 1921 scan with light correction of OCR artifacts. Study rendering pending review by tradition-bearers.
 pratibha_layers:
 - kind: original
   label: Original
-  body: The Ori — the head — is the universal household deity, worshipped by both sexes as the god of fate. It is believed
-    that good or ill fortune attends one according to the decree of this god; and hence it is propitiated, that good fortune
-    might be the share of its votary.
+  body: The Ori — the head — is the universal household deity, worshipped by both sexes as the god of
+    fate. It is believed that good or ill fortune attends one according to the decree of this god; and
+    hence it is propitiated, that good fortune might be the share of its votary.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'Johnson presents the Ori as a personal divine principle governing individual destiny, worshipped
+    across gender and social lines as the arbiter of fortune. The passage emphasizes reciprocity: one
+    propitiates (honors, appeases) the Ori not through coercion but through respectful relationship, trusting
+    that good fortune follows from right regard. This suggests a theology where fate is neither random
+    nor wholly fixed, but responsive to human acknowledgment and intention.'
+- kind: key_terms
+  label: Key Terms
+  body: '**Ori** — The head; in Yoruba thought, the personal divine principle or inner guide that determines
+    one''s destiny and fortune.
+
+    **propitiated** — Honored, appeased, or made favorable through respectful action or offering; implies
+    a relationship of reciprocal regard rather than demand.'
+  items:
+  - term: Ori
+    definition: The head; in Yoruba thought, the personal divine principle or inner guide that determines
+      one's destiny and fortune.
+  - term: propitiated
+    definition: Honored, appeased, or made favorable through respectful action or offering; implies a
+      relationship of reciprocal regard rather than demand.
+- kind: resonances
+  label: Cross-Tradition Resonances
+  body: '**Dhammapada, verse 1: ''Mind is the forerunner of all things.'':** Both traditions locate the
+    source of one''s condition in an inner principle (mind/Ori) that shapes outer fortune. Divergence:
+    The Dhammapada emphasizes mental action and karma; Johnson''s Ori is a deity to be honored, suggesting
+    a relational rather than purely causal model.
+
+
+    **Heraclitus, Fragment 119: ''Character is destiny.'':** Both suggest that one''s inner nature (Ori/character)
+    determines the course of one''s life. Divergence: Heraclitus speaks of character as self-generating;
+    Johnson''s Ori is a god requiring propitiation, implying dialogue with something beyond the self.'
+  items:
+  - citation: 'Dhammapada, verse 1: ''Mind is the forerunner of all things.'''
+    resonance: Both traditions locate the source of one's condition in an inner principle (mind/Ori) that
+      shapes outer fortune.
+    divergence: The Dhammapada emphasizes mental action and karma; Johnson's Ori is a deity to be honored,
+      suggesting a relational rather than purely causal model.
+  - citation: 'Heraclitus, Fragment 119: ''Character is destiny.'''
+    resonance: Both suggest that one's inner nature (Ori/character) determines the course of one's life.
+    divergence: Heraclitus speaks of character as self-generating; Johnson's Ori is a god requiring propitiation,
+      implying dialogue with something beyond the self.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, pause once and ask: What do I regard as my own ''head''—my deepest intention or character?
+    Sit briefly with that question without answering. Notice what arises.'
 provenance:
   collection: The Yoruba Faith (Samuel Johnson)
   section: Religion
-  cultural_context: 'Rev. Samuel Johnson was a Yoruba clergyman; this is an insider Yoruba account of his people''s traditional
-    religion and worldview — a complement to the outsider record of A.B. Ellis. A living tradition: ceremonial and secret
-    material (e.g. the Egúngún mysteries) is deliberately excluded. Offered as a study reading pending review by Yoruba tradition-bearers.'
-original: The Ori — the head — is the universal household deity, worshipped by both sexes as the god of fate. It is believed
-  that good or ill fortune attends one according to the decree of this god; and hence it is propitiated, that good fortune
-  might be the share of its votary.
-abhyasa: 'Today, pause once and ask: What do I regard as my own ''head''—my deepest intention or character? Sit briefly with
-  that question without answering. Notice what arises.'
-practice: 'Today, pause once and ask: What do I regard as my own ''head''—my deepest intention or character? Sit briefly with
-  that question without answering. Notice what arises.'
-enriched: true
+  cultural_context: 'Rev. Samuel Johnson was a Yoruba clergyman; this is an insider Yoruba account of
+    his people''s traditional religion and worldview — a complement to the outsider record of A.B. Ellis.
+    A living tradition: ceremonial and secret material (e.g. the Egúngún mysteries) is deliberately excluded.
+    Offered as a study reading pending review by Yoruba tradition-bearers.'
