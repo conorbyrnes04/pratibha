@@ -19,8 +19,8 @@ ROOT = os.path.dirname(os.path.dirname(__file__))
 # derived from the layers it actually carries, not from a collection allowlist.
 #   seed     — source present, but no authored elaboration yet
 #   draft    — authored commentary, but the scaffold is incomplete
-#   rich     — full scaffold (original + translation + commentary + key terms +
-#              ≥2 resonances + practice): ready to elaborate / daily-eligible
+#   rich     — full scaffold (source original and/or translation + commentary +
+#              key terms + ≥2 resonances + practice): ready to elaborate / daily-eligible
 #   polished — rich AND editorially blessed
 # The retired labels (structural_draft / needs_rewrite / strong_draft /
 # publishable) live on only as input aliases in normalize_maturity().
@@ -219,6 +219,8 @@ def _commentary_is_authored(commentary: str) -> bool:
     if not c:
         return False
     lowered = c.lower()
+    if "in giles's 1889 rendering" in lowered or "display layers do not reproduce giles" in lowered:
+        return False
     if any(lowered.startswith(marker) for marker in TEMPLATE_COMMENTARY_MARKERS):
         return False
     # Structured layers (key terms / resonances) are a strong authored signal.
@@ -313,6 +315,21 @@ _RESONANCE_HEADING = r"cross-tradition resonances?"
 _PRACTICE_HEADING = r"practice(?:\s*\(abhyasa\))?|abhyasa"
 
 
+_INGEST_HEADER_TAIL_RE = re.compile(
+    r"(?is)(?:\n\s*)+(?:\*{0,2}\s*)?(?:corpus entry|sanskrit basis|english layers)\b.*$"
+)
+_INGEST_BRIEF_TAIL_RE = re.compile(
+    r"(?is)(?:\n\s*)+(?:one unit per brief chunk\b|(?:\*{0,2}\s*)?(?:units:\s*\d|chapter:\s*\d|sanskrit:\s*devanagari)).*$"
+)
+
+
+def _strip_ingest_header(text: str) -> str:
+    """Drop chapter-file **Corpus entry:** preambles that leaked into practice."""
+    cleaned = _INGEST_HEADER_TAIL_RE.sub("", text or "")
+    cleaned = _INGEST_BRIEF_TAIL_RE.sub("", cleaned)
+    return cleaned.strip()
+
+
 def _strip_layer_tail(commentary: str) -> str:
     if not commentary:
         return ""
@@ -403,8 +420,13 @@ _IAST_PLACEHOLDER_MARKERS = (
 _NON_SANSKRIT_COLLECTION = re.compile(
     r"heraclitus|fragment|epictetus|enchiridion|meditations|phaedo|plato|plotinus|ennead|"
     r"eckhart|ibn.?arabi|know.?yourself|balyani|rumi|mathnawi|"
+    r"attar|mantiq|conference.?of.?the.?birds|hujwir|kashf|"
     r"tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|"
-    r"milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō",
+    r"milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō|"
+    r"yoruba|òwe|johnson|eastman|zitkala|dakota|soul of the indian|old indian legends|"
+    r"lalla|lal.?ded|lalleshwari|vakyani|vākyāni|"
+    r"ecclesiastes|qoheleth|psalm|tehillim|"
+    r"gospel.?of.?thomas|gospel.?of.?mary|logia of jesus|new.?testament.?logia",
     re.I,
 )
 
@@ -502,6 +524,60 @@ def _layer(kind: str, label: str, body: str, **extra: Any) -> dict[str, Any] | N
     return {"kind": kind, "label": label, "body": clean, **extra}
 
 
+_EDITORIAL_ASIDE_RES = (
+    re.compile(r"\[[^\]]{0,160}(?:supplementary|spurious)[^\]]*\]", re.I),
+    re.compile(r"The above is from[^.!?]{0,180}[.!?]", re.I),
+    re.compile(r"It is interesting to note[^.!?]{0,280}[.!?]", re.I),
+    re.compile(r"These words help to elucidate[^.!?]{0,280}[.!?]", re.I),
+    re.compile(r"This is an anachronism\.[^.!?]{0,220}(?:\.[^.!?]{0,200}\.)?", re.I),
+    re.compile(r"Tota formatio[^.!?]{0,220}[.!?]", re.I),
+    re.compile(r"\bSwedenborg\.?"),
+    re.compile(r"Whose tutor he was\.", re.I),
+    re.compile(r"See (?:ch\.|chapter|p\.)\s*[\divx]+\.?", re.I),
+    re.compile(r"These [\"“]poles[\"”] are[^.!?]{0,220}[.!?]", re.I),
+)
+
+
+def _strip_editorial_asides(text: str) -> str:
+    out = text or ""
+    for rx in _EDITORIAL_ASIDE_RES:
+        out = rx.sub(" ", out)
+    return re.sub(r"[ \t]+", " ", out).replace(" \n", "\n").strip()
+
+
+def _study_excerpt(text: str, max_len: int = 900) -> str:
+    compact = re.sub(r"\s+", " ", (text or "")).strip()
+    if len(compact) <= max_len:
+        return compact
+    slice_ = compact[:max_len]
+    end = max(slice_.rfind(".”"), slice_.rfind(". "), slice_.rfind("? "), slice_.rfind("! "))
+    return (slice_[: end + 1] if end > 220 else slice_).strip()
+
+
+def _is_wholesale_pd_translation(layer: dict[str, Any], out: dict[str, Any] | None) -> bool:
+    prov = _as_text(layer.get("layer_provenance")).lower()
+    body = _as_text(layer.get("body"))
+    if "giles" in prov:
+        return True
+    if "normalized from" in prov and re.search(r"\bpd\b|public domain", prov) and len(body) > 900:
+        return True
+    blob = " ".join(
+        [
+            _as_text((out or {}).get("_id")),
+            _as_text((out or {}).get("sutra_id")),
+            _as_text((out or {}).get("work_id")),
+            _as_text((out or {}).get("collection")),
+        ]
+    )
+    if re.search(r"\.ctz_\d+", blob, re.I):
+        return True
+    if re.search(r"chuang|zhuang", blob, re.I) and re.search(
+        r"Do-nothing Say-nothing|Tao-Tê-Ching|cogitations|Tzŭ|Chuang Tzŭ", body
+    ):
+        return True
+    return False
+
+
 def _finalize_layers(layers: list[dict[str, Any]], out: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     """Normalize display labels and drop IAST layers for non-Sanskrit passages."""
     uses_iast = _passage_uses_iast(out) if out else True
@@ -528,6 +604,16 @@ def _finalize_layers(layers: list[dict[str, Any]], out: dict[str, Any] | None = 
             ):
                 continue
             layer = {**layer, "label": "Original"}
+        elif kind == "commentary":
+            if not _commentary_is_authored(_as_text(layer.get("body"))):
+                continue
+        elif kind == "practice":
+            body = _strip_ingest_header(_as_text(layer.get("body")))
+            layer = {**layer, "body": body}
+            if not body or _practice_is_generic(body):
+                continue
+        elif kind == "translation" and _is_wholesale_pd_translation(layer, out):
+            layer = {**layer, "body": _study_excerpt(_strip_editorial_asides(_as_text(layer.get("body"))))}
         result.append(layer)
     return result
 
@@ -583,6 +669,10 @@ def _build_layers(item: dict[str, Any], out: dict[str, Any], raw_commentary: str
         merged = dict(layer)
         if kind == "commentary":
             merged["body"] = _strip_layer_tail(str(layer.get("body") or ""))
+            if not _commentary_is_authored(merged["body"]):
+                continue
+        if kind == "practice":
+            merged["body"] = _strip_ingest_header(str(layer.get("body") or ""))
         if kind == "original" and raw_script_is_script:
             # Never let an authored romanization / "*Source-language basis:*"
             # note occupy the Original slot when actual source script exists.
@@ -631,12 +721,19 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
     # real source text or nothing, so the Original layer is consistent across the corpus.
     if _is_placeholder_original(out["sanskrit"]):
         out["sanskrit"] = ""
+    # English-source living traditions store the author's own words in `original`,
+    # not in a script field. Use that when no source script is present.
+    if not out["sanskrit"]:
+        authored_original = _as_text(item.get("original"))
+        if authored_original and not _is_placeholder_original(authored_original):
+            out["sanskrit"] = authored_original
     out["transliteration"] = _as_text(item.get("transliteration") or item.get("sanskrit_iast"))
     out["title"] = _as_text(item.get("title") or item.get("unit_label") or item.get("sutra") or out["sutra_id"])
     out["themes"] = item.get("themes") if isinstance(item.get("themes"), list) else []
     out["appendixes"] = item.get("appendixes") if isinstance(item.get("appendixes"), list) else []
     out["anchor_chapter"] = _as_text(item.get("anchor_chapter"))
-    out["abhyasa"] = _as_text(item.get("abhyasa") or item.get("practice"))
+    out["abhyasa"] = _strip_ingest_header(_as_text(item.get("abhyasa") or item.get("practice")))
+    out["practice"] = out["abhyasa"]
     out["editorial_score"] = item.get("editorial_score") or item.get("content_score") or item.get("quality_score") or item.get("quality_score_unit") or 0
     # De-slop: drop template/filler commentary and boilerplate practice so the
     # app never renders fake insight and ingestion never embeds duplicate
@@ -645,6 +742,7 @@ def _normalize(item: dict[str, Any], path: str) -> dict[str, Any]:
         out["commentary"] = ""
     if _practice_is_generic(out["abhyasa"]):
         out["abhyasa"] = ""
+        out["practice"] = ""
     out["pratibha_layers"] = _build_layers(item, out, raw_commentary=raw_commentary)
     from .ttc_refs import humanize_ttc_unit, is_tao_te_ching
     from .ys_refs import enrich_patanjali_unit
@@ -795,16 +893,48 @@ def _daily_translation_len(v: dict[str, Any]) -> int:
     return 0
 
 
+_DAILY_MIN_SHORT_FORM_CHARS = 20
+_SHORT_FORM_UNIT_TYPES = frozenset({"proverb", "logion", "fragment"})
+
+
+def _daily_source_len(v: dict[str, Any]) -> int:
+    """Length of the reading text: translation if present, else original."""
+    trans = _daily_translation_len(v)
+    if trans:
+        return trans
+    for layer in v.get("pratibha_layers", []):
+        if isinstance(layer, dict) and layer.get("kind") == "original":
+            return len(_as_text(layer.get("body")))
+    return 0
+
+
+def _daily_min_source_chars(v: dict[str, Any]) -> int:
+    unit_type = _as_text(v.get("unit_type")).lower()
+    if unit_type in _SHORT_FORM_UNIT_TYPES:
+        return _DAILY_MIN_SHORT_FORM_CHARS
+    # Author's own English can be a short paragraph and still be complete.
+    if _daily_translation_len(v) == 0:
+        return 80
+    return _DAILY_MIN_TRANSLATION_CHARS
+
+
 def _is_daily_rich(v: dict[str, Any]) -> bool:
     """True when a passage carries every hook elaboration builds on: a source
-    Original, a substantive translation, commentary, key terms (lexicon),
-    cross-tradition resonances (threads), and a practice (embodiment)."""
+    text (Original and/or Translation), commentary, key terms (lexicon),
+    cross-tradition resonances (threads), and a practice (embodiment).
+
+    English-source works (Eastman, Johnson, Zitkála-Šá) are original-only;
+    Ellis òwe are translation-only. Neither should have to duplicate English
+    to clear the rich bar.
+    """
     present = _daily_present_layers(v)
-    if not {"original", "translation", "commentary", "key_terms", "practice"} <= present:
+    if not {"commentary", "key_terms", "practice"} <= present:
+        return False
+    if not ({"original", "translation"} & present):
         return False
     if _daily_resonance_count(v) < _DAILY_MIN_RESONANCES:
         return False
-    if _daily_translation_len(v) < _DAILY_MIN_TRANSLATION_CHARS:
+    if _daily_source_len(v) < _daily_min_source_chars(v):
         return False
     return True
 
@@ -814,7 +944,7 @@ def _daily_richness_score(v: dict[str, Any]) -> tuple:
     return (
         1 if v.get("editorial_maturity") == "publishable" else 0,
         min(_daily_resonance_count(v), 4),
-        _daily_translation_len(v),
+        _daily_source_len(v),
         # stable tiebreak so the cap is deterministic across processes
         hashlib.sha1(_as_text(v.get("_id")).encode()).hexdigest(),
     )
