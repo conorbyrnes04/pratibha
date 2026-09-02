@@ -59,6 +59,12 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "isavasya_upanisad",
         "īśāvāsya_upaniṣad",
     },
+    "senegalese_animism": {
+        "senegalese_animism",
+        "serer_cosaan",
+        "serer_religion",
+        "a_tat_roog",
+    },
 }
 
 

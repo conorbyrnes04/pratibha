@@ -104,6 +104,12 @@ COLLECTIONS: dict[str, dict] = {
         "blurb": "He who knows himself knows his Lord.",
         "order": 14,
     },
+    "senegalese_animism": {
+        "title": "Senegalese Animism",
+        "tradition": "Serer / Senegambian",
+        "blurb": "Roog, the unaddressed sky, and the spirits you pour to at the baobab.",
+        "order": 15,
+    },
 }
 
 

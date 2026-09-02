@@ -42,6 +42,18 @@ _COLLECTION_HINTS = {
         "isavasyam",
         "vidya and avidya",
     ],
+    "senegalese_animism": [
+        "senegalese animism",
+        "serer",
+        "sérère",
+        "roog",
+        "pangool",
+        "takhar",
+        "tiurakh",
+        "cosaan",
+        "lasnet",
+        "delafosse",
+    ],
 }
 
 
