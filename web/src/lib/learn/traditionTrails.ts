@@ -115,6 +115,22 @@ export const TRADITION_TRAILS: TraditionTrail[] = [
     trackIds: ["the-horse-of-conversation"],
   },
   {
+    id: "serer",
+    title: "Serer",
+    shortTitle: "Serer",
+    lede: "The sky is not addressed. Bind at tree, stone, land, and the dead ear.",
+    glyph: "oak",
+    trackIds: ["the-sky-is-not-addressed"],
+  },
+  {
+    id: "pulaar",
+    title: "Pulaar",
+    shortTitle: "Pulaar",
+    lede: "The remaining cult is the herd. Then a tale is a thing to be heard.",
+    glyph: "ox",
+    trackIds: ["the-remaining-cult"],
+  },
+  {
     id: "sufi",
     title: "Sufi",
     shortTitle: "Sufi",

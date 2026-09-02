@@ -1,0 +1,244 @@
+path_id: the_remaining_cult
+work_id: pulaar_tradition
+work_title: Pulaar Tradition / Pulaar Texts (Gaden)
+title: "The Remaining Cult"
+tradition: Pulaar
+covers: "Tradition 1, 3, 8, 9 then Gaden mallol 1, 6, 27 — herd as shrine, then hearing"
+status: complete
+
+# Living speech. Remaining pagan Fulɓe have one cult: the herd. Then Gaden's
+# Pulaar is language-original: a tale is a thing to be heard. Not Koumen.
+# Not a second Yoruba òwe path.
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  Do not hunt for a missing temple. The remaining cult is the keeping of what
+  lives. Then speak so an ear can hear, whether or not it happened.
+
+premise: >
+  You are not reconstructing pre-Islamic Fulɓe religion as a book. You are
+  taking the remaining shrine — the herd — into the day: prosper one living
+  dependent; let a living need choose the next move; greet the dead with
+  something green; consult a mother before a great act. Then the mouth:
+  tell what was here and may never be; stop bending the heart like a joint;
+  correct or receive correction without hatred. The cult is the keeping.
+  The mallol is a thing to be heard.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+  - "Do not add a cattle costume, and do not date the tale to prove it."
+
+gates:
+  - gate_id: gate_0_herd
+    name: "The remaining cult is the herd"
+    theme: "There is no missing temple. The shrine is the living animal you keep."
+    why_first: >
+      If you start looking for idols, you will invent Koumen. Crozals cannot
+      find a shrine. What remains is one relation of care.
+    stations:
+      - station: 1
+        unit_id: pulaar_tradition.pulaar_tradition_001
+        reference: "Crozals / Lasnet 1900, Peuls"
+        title: "The Remaining Cult Is the Herd"
+        opening_question: "What living being depends on me — and where am I still postponing its care until a better cosmology arrives?"
+        transmission: >
+          Even today, in Wassallah and Kankan, one finds nomad Peuls who have
+          only one cult: that of their herds. They make the herds prosper
+          without concern for tomorrow. The difficulty is hearing 'only one
+          cult' as poverty of religion, a people who failed to build a
+          temple. The sentence is the opposite. Cows are not carved as idols.
+          The center is nagge — the cow as the being you keep alive. Serer
+          first-fruits bind at tree and stone; remaining pagan Fulɓe, in this
+          report, have no other cult than the animals themselves. Do not add
+          a prayer on top of the keeping. The cult is the prospering.
+        contemplation: "The missing temple is a hunter's problem. The herder already has a shrine."
+        gate_practice: >
+          Today, take one living being that depends on you — a person, an
+          animal, a plant — and make its prospering the whole of the rite. Do
+          not add a prayer on top. Do not postpone care until a better
+          cosmology arrives. The cult is the keeping.
+        passed_when: "You can complete one act of keeping without adding a prayer to make it religious."
+
+  - gate_id: gate_1_path
+    name: "The herd decides the path"
+    theme: "Itinerary is not a human map. Living need chooses the displacement."
+    why_first: >
+      A cult of the herd that still lets you choose the road as a tourist has
+      not yet become a cult. The pasture exhausts. Then you move.
+    stations:
+      - station: 2
+        unit_id: pulaar_tradition.pulaar_tradition_003
+        reference: "Lasnet 1900, Peuls"
+        title: "The Herd Decides the Path"
+        opening_question: "What living need is actually choosing my next move — and where am I moving as cargo?"
+        transmission: >
+          It is the needs of their herds that determine their displacements.
+          When pastures are exhausted, they go farther, several times in a
+          year if they must. The difficulty: humans choose; animals are
+          cargo. Here the living need writes the itinerary. You are not
+          the map. If nothing living is choosing your next hour, you are
+          moving as freight that happens to walk. Ask before you relocate
+          a house, a job, an opinion.
+        contemplation: "Displacement is obedience to a hunger that is not yours alone."
+        gate_practice: >
+          Before you move today — house, job, opinion — ask what living need
+          is actually choosing the displacement. Let that need, not the map,
+          decide the next hour. If nothing living is choosing, you are moving
+          as cargo, not as a herder.
+        passed_when: "You can name the living need that chose one displacement, or admit that nothing living chose it."
+
+  - gate_id: gate_2_leaves
+    name: "Greet the dead with green"
+    theme: "The dead remain addressable. The correct address from a pastoral people is plant-matter thrown in passing."
+    why_first: >
+      The herd is for the living. A people who greet tombs with leaves have
+      not emptied the road of the dead. Do not genericize this as 'respect.'
+    stations:
+      - station: 3
+        unit_id: pulaar_tradition.pulaar_tradition_008
+        reference: "Lasnet 1900"
+        title: "Greet the Dead with Green Leaves"
+        opening_question: "What death-mark did I pass as scenery — and what green did I refuse to set down?"
+        transmission: >
+          Every time Peuls on a journey meet a tomb or a cemetery, they throw
+          as they pass a handful of grass or green leaves. It is a kind of
+          greeting they address to those who have gone over. Lasnet wants
+          generic Islam: respect, tombs, the eastward grave. The gesture is
+          specific. Green plant-matter, in passing, not a speech. Serer
+          death-work speaks into the ear. Fulɓe death-work greets from the
+          road. Both refuse the modern pass-by. Do not speechify. Set down
+          something green and go on.
+        contemplation: "A greeting can be a leaf. It does not need a eulogy."
+        gate_practice: >
+          On one walk today, when you pass a cemetery, a roadside memorial,
+          or even a tree that marks a death you know, do not pass as if it
+          were scenery. Stop long enough to set down something green — a
+          leaf, a blade of grass. Greet, do not speechify, and go on.
+        passed_when: "You can greet one mark of the dead with something green, without turning it into a speech."
+
+  - gate_id: gate_3_mother
+    name: "Consult the mother"
+    theme: "A great act that skipped the mother's hearing is already thinner than it looks."
+    why_first: >
+      Herd, road, and the dead can still be a man's plot. Lasnet's Peul never
+      accomplishes an important action without consulting his mother. Skip
+      this and the remaining cult becomes male pastoral romance.
+    stations:
+      - station: 4
+        unit_id: pulaar_tradition.pulaar_tradition_009
+        reference: "Lasnet 1900"
+        title: "Consult the Mother Before a Great Act"
+        opening_question: "Which important action am I about to accomplish without a living elder woman's hearing?"
+        transmission: >
+          A Peul never accomplishes an important action without consulting his
+          mother. The woman is respected and closely listened to by her
+          children. The difficulty is hearing this as a footnote to Islam, or
+          as a compliment that changes nothing. Consultation is the rite.
+          Tell the act in plain speech. Change it if her hearing finds it
+          thinner than you thought. Theater-consultation — asking so you can
+          proceed unchanged — is not this gate.
+        contemplation: "The mother's ear is part of the act, not commentary after it."
+        gate_practice: >
+          Before one important action this week, consult a living elder woman
+          in your line — mother, aunt, teacher — and tell her the act in
+          plain speech. Do not perform the consultation as theater. Change
+          the act if her hearing finds it thinner than you thought.
+        passed_when: "You can place one important act under a living elder woman's hearing and let that hearing change it."
+
+  - gate_id: gate_4_tindol
+    name: "A thing to be heard"
+    theme: "The tale exists because an ear is here. Do not ask first whether it happened."
+    why_first: >
+      The remaining cult has no book. Gaden's Pulaar is the language-original
+      mouth: won, wona, wonatā. If you demand a date, you have already missed
+      the tindol.
+    stations:
+      - station: 5
+        unit_id: pulaar_texts.pulaar_texts_001
+        reference: "Gaden 1913, Contes populaires — opening formula"
+        title: "What Was Here, What Will Be, What Will Not Be"
+        opening_question: "What teaching am I still refusing until I can date it?"
+        transmission: >
+          This is what was here; it will be, or it will not be. It is a tale —
+          a thing to be heard. European 'once upon a time' is only the past.
+          Futa Pulaar refuses that thin tense. won names existence without
+          locating it. Hearing is the container, not chronology. A Yoruba
+          òwe is a horse of conversation: short speech that carries. A
+          tindol is a mode of existence offered to listeners. Divergence:
+          the òwe diagnoses a social mechanics; the opening formula trains
+          the ear against historicism. Do not argue the date. Speak it to
+          one living ear.
+        contemplation: "A teaching that cannot survive wonatā was only news."
+        gate_practice: >
+          Tell one true thing as if it were a tindol: it was here, it may be,
+          it may never be. Do not argue its date. Speak it to one living ear.
+          If no one can hear it, it is not yet a teaching.
+        passed_when: "You can tell one true thing to a living ear without first proving that it happened."
+
+  - gate_id: gate_5_heart
+    name: "The heart is not a joint"
+    theme: "You cannot bend a person like a tool. Duty is not a feeling you can order."
+    why_first: >
+      Hearing without this mallol becomes persuasion technique. The heart is
+      not hofūru. Stop the sentence that begins 'I should feel.'
+    stations:
+      - station: 6
+        unit_id: pulaar_texts.pulaar_texts_006
+        reference: "Gaden 1913, mallol"
+        title: "The Heart Is Not a Joint"
+        opening_question: "Where am I still ordering a feeling as if the heart were a hinge I could fold?"
+        transmission: >
+          The heart is not a joint, that it might be bent. Stoic training
+          distinguishes what is up to you; this mallol refuses a different
+          lever: do not command affect. Keep the outer duty if there is one.
+          Do not order the inner as if it were carpentry. The difficulty is
+          therapy-talk that treats every refusal of feeling as repression, or
+          management-talk that treats every feeling as a KPI. Catch 'I should
+          feel.' Stop it. Notice what the heart does when you stop bending it.
+        contemplation: "Duty can stand. The heart is not a hinge for it."
+        gate_practice: >
+          Catch one sentence today that begins 'I should feel...' Stop it.
+          Keep the outer duty if there is one. Do not order the heart as if
+          it were a joint. Notice what it actually does when you stop bending
+          it.
+        passed_when: "You can drop one ordered feeling and still keep the duty, without using the heart as a hinge."
+
+  - gate_id: gate_6_calf
+    name: "The cow steps on her calf"
+    theme: "Severity is not hatred. Care can correct without exile."
+    why_first: >
+      Last gate commits: the herd's love includes a hoof. If correction is
+      always hatred, you cannot keep anything alive. If care never hurts, you
+      are not a herder.
+    stations:
+      - station: 7
+        unit_id: pulaar_texts.pulaar_texts_027
+        reference: "Gaden 1913, mallol"
+        title: "The Cow Steps on Her Calf and Does Not Hate"
+        opening_question: "Where did I hear a correction as exile — or refuse to correct because I did not want to be the one who hates?"
+        transmission: >
+          The cow puts her foot on her young — yet she does not hate. The
+          mallol is pastoral before it is psychological. A hoof can land
+          without the relation ending. The difficulty: every firmness is
+          read as rejection, or every care is required to be soft. Choose
+          the side you are actually on today. If you are the cow, correct
+          without a speech of exile. If you are the calf, receive without
+          answering as hatred. Do only that one act.
+        contemplation: "The hoof is not the end of the herd."
+        gate_practice: >
+          If you are the cow: correct one thing today without adding a speech
+          of rejection. If you are the calf: receive one correction without
+          answering it as hatred. Choose the side you are actually on, and do
+          only that one act.
+        passed_when: "You can complete one correction or one receiving without turning it into hatred or exile."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    Complete as a first Pulaar walk: remaining cult, then mallol. Further
+    Gaden tales, yettôdé, and gravity/pulaaku stay off this sequence until
+    a second gate-set is warranted. Koumen (1961) is not next.
+  next_gates: []

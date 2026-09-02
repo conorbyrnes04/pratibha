@@ -13,6 +13,8 @@ import { THIRTY_TWO_PATHS } from "./tracks/thirtyTwoPaths";
 import { FLUX_AND_WHAT_IS } from "./tracks/fluxAndWhatIs";
 import { SILENT_WORSHIP } from "./tracks/silentWorship";
 import { STOP_SEEKING } from "./tracks/stopSeeking";
+import { THE_SKY_IS_NOT_ADDRESSED } from "./tracks/theSkyIsNotAddressed";
+import { THE_REMAINING_CULT } from "./tracks/theRemainingCult";
 
 /**
  * Off-spine deepening walks compiled after the first tradition tiles shipped.
@@ -34,4 +36,6 @@ export const DEEPENING_TRAILS: LearningTrack[] = [
   FLUX_AND_WHAT_IS,
   SILENT_WORSHIP,
   STOP_SEEKING,
+  THE_SKY_IS_NOT_ADDRESSED,
+  THE_REMAINING_CULT,
 ];
