@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { askChatStream, ChatApiError, getCollections, getDaily, getVerse, getVerses } from "@/lib/api";
+import { askChatStream, ChatApiError, getCollections, getDaily, getVerse, getVerses, pingHealth } from "@/lib/api";
 import { useAuth } from "@/components/AuthProvider";
 import { useAuthToken } from "@convex-dev/auth/react";
 import { usePushJournalNote } from "@/lib/journalCloud";
@@ -134,6 +134,7 @@ export default function ChatPage() {
   }, []);
 
   useEffect(() => {
+    void pingHealth();
     getCollections().then((items) => {
       setCollections(items);
       setCompareA((prev) => prev || items[0] || "");
@@ -467,7 +468,14 @@ export default function ChatPage() {
                       <>
                         <p className="soft animate-pulse text-sm">{t("chat.thinking")}</p>
                         {warming ? (
-                          <p className="soft mt-2 text-xs leading-relaxed">{t("chat.warming")}</p>
+                          <p className="soft mt-2 text-xs leading-relaxed">
+                            <span className="chat-warming-dots" aria-hidden>
+                              <span />
+                              <span />
+                              <span />
+                            </span>
+                            {t("chat.warming")}
+                          </p>
                         ) : null}
                       </>
                     )}

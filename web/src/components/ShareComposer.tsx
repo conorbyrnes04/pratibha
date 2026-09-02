@@ -42,7 +42,7 @@ import {
 } from "@/lib/shareCard";
 import { SHARE_DEST_ICONS } from "@/components/ShareDestIcons";
 import { ShareCard } from "@/components/ShareCard";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { enableHoloMotion } from "@/lib/useHoloTilt";
 import { bakeHoloFoil, holoHueFromSeed } from "@/lib/bakeHoloFoil";
@@ -50,6 +50,7 @@ import {
   Sheet,
   SheetContent,
   SheetDescription,
+  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -72,6 +73,7 @@ type ShareComposerProps = {
   item: VerseItem;
   designOpen?: boolean;
   onDesignOpenChange?: (open: boolean) => void;
+  hideTrigger?: boolean;
 };
 
 type ShareCloud = {
@@ -135,6 +137,7 @@ function ShareComposerInner({
   item,
   designOpen,
   onDesignOpenChange,
+  hideTrigger = false,
   cloud,
 }: ShareComposerProps & { cloud?: ShareCloud }) {
   const t = useT();
@@ -481,6 +484,7 @@ function ShareComposerInner({
         /* unlock ledger is best-effort — the manuscript write already succeeded */
       }
       toast.success(t("share.kept"));
+      if (hideTrigger) setSheetOpen(false);
     } catch (err) {
       toast.error(friendlyShareError(err, t("share.keepFailed")));
     } finally {
@@ -545,10 +549,12 @@ function ShareComposerInner({
         if (open) noteStudy();
       }}
     >
-      <SheetTrigger render={<Button type="button" size="sm" className="share-trigger" />}>
-        <InkGlyph glyph={verseMark} ink="#121018" className="share-trigger__glyph" />
-        {t("share.trigger")}
-      </SheetTrigger>
+      {hideTrigger ? null : (
+        <SheetTrigger render={<Button type="button" size="sm" className="share-trigger" />}>
+          <InkGlyph glyph={verseMark} ink="#121018" className="share-trigger__glyph" />
+          {t("share.trigger")}
+        </SheetTrigger>
+      )}
       <SheetContent
         side="bottom"
         className="flex h-[92vh] max-h-[92vh] flex-col overflow-hidden border-t border-amber-200/15 bg-[#0b0b14] sm:max-w-none"
@@ -844,6 +850,29 @@ function ShareComposerInner({
             </div>
           </div>
         </div>
+        <SheetFooter className="shrink-0 border-t border-amber-200/15 bg-[#0b0b14] sm:flex-row sm:justify-end">
+          {user && cloud?.addVerse ? (
+            <Button
+              type="button"
+              className="w-full sm:w-auto"
+              disabled={busy !== null}
+              onClick={() => void keepCard()}
+            >
+              {busy === "keep"
+                ? t("common.saving")
+                : inManuscript || hideTrigger
+                  ? t("common.save")
+                  : t("commentary.saveMs")}
+            </Button>
+          ) : (
+            <Link
+              href={`/login?next=/read/${encodeURIComponent(item._id)}`}
+              className={`${buttonVariants()} w-full sm:w-auto`}
+            >
+              {t("share.signInKeep")}
+            </Link>
+          )}
+        </SheetFooter>
         {sheetOpen
           ? createPortal(
               <div ref={exportRef} className="share-card-export" aria-hidden>

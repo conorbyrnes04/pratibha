@@ -285,9 +285,9 @@ button {
   letter-spacing: 0.03em;
   line-height: 1.2;
   text-align: center;
-  white-space: normal;
-  word-break: normal;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
 .site-dock .nav-link--current,
@@ -779,7 +779,7 @@ button {
 .eyebrow {
   color: var(--accent-bright);
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1233,21 +1233,33 @@ select:focus-visible {
 }
 
 .brand-wordmark--art {
+  position: relative;
   display: block;
+  width: min(7.1rem, 46vw);
+  height: 2.65rem;
 }
 
 .brand-wordmark__art {
+  position: absolute;
+  inset: 0;
   display: block;
-  height: 1.85rem;
-  width: auto;
-  max-width: min(14.5rem, 52vw);
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   object-position: left center;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
 }
 
-.brand-wordmark--has-tagline .brand-wordmark__art {
-  height: 2.65rem;
-  max-width: min(16rem, 58vw);
+.brand-wordmark__art.is-on {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-wordmark__art {
+    transition: none;
+  }
 }
 
 .brand-wordmark__name {
@@ -1333,6 +1345,50 @@ select:focus-visible {
   padding-left: 1rem;
   color: var(--muted);
   border-left: 1px solid var(--line);
+}
+
+.chat-warming-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  margin-right: 0.55rem;
+  vertical-align: middle;
+}
+
+.chat-warming-dots span {
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 50%;
+  background: var(--accent-bright);
+  animation: chat-warming-pulse 1.1s ease-in-out infinite;
+}
+
+.chat-warming-dots span:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+.chat-warming-dots span:nth-child(3) {
+  animation-delay: 0.36s;
+}
+
+@keyframes chat-warming-pulse {
+  0%,
+  80%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.85);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chat-warming-dots span {
+    animation: none;
+    opacity: 0.7;
+  }
 }
 
 .reading-prose {
@@ -2819,11 +2875,11 @@ button.library-passage {
 .passage-reading__meta {
   margin: 0 0 0.55rem;
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.72rem;
-  font-weight: 500;
+  font-size: 0.78rem;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted-2);
+  color: #d8c49a;
 }
 
 .passage-reading__title {
@@ -4325,16 +4381,16 @@ span.tradition-mandala__mark,
   border-radius: 999px;
   background: rgb(240 201 121 / 0.06);
   font-family: "Alegreya Sans", ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.62rem;
+  font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgb(254 243 199 / 0.8);
+  color: #efe4c4;
 }
 
 .learn-trail__badge--done {
   border-color: rgb(110 231 183 / 0.35);
   background: rgb(110 231 183 / 0.08);
-  color: rgb(167 243 208);
+  color: #c5f6dd;
 }
 
 .learn-trail__progress {
@@ -5895,11 +5951,22 @@ span.tradition-mandala__mark,
   gap: 0.7rem;
 }
 
+.manuscript-folio__stage {
+  position: relative;
+}
+
 .manuscript-folio__card {
   display: block;
   text-decoration: none;
   color: inherit;
   perspective: 920px;
+}
+
+.manuscript-folio__menu {
+  position: absolute;
+  top: 0.45rem;
+  inset-inline-end: 0.45rem;
+  z-index: 3;
 }
 
 .manuscript-folio__card .share-card {

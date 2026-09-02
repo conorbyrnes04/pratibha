@@ -19,8 +19,9 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * v12: Gospel of Mary (BG 8502) + Logia of Jesus (Nestle 1904) — living sayings family.
  * v13: Gospel of Mary expanded 12→26 argument-arc units (still no invented lacunae).
  * v14: Sufi wave — Attar Conference of the Birds, Hujwīrī Kashf al-Maḥjūb,
- * and enriched Know Yourself (Balyānī). */
-const CACHE_VERSION = 14;
+ * and enriched Know Yourself (Balyānī).
+ * v15: /verses is preview-only (no pratibha_layers) — drop fat v14 snapshots. */
+const CACHE_VERSION = 15;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";

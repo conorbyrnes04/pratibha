@@ -1,6 +1,7 @@
 from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, Response, StreamingResponse
+from starlette.middleware.gzip import GZipMiddleware
 from pydantic import BaseModel, field_validator
 from typing import Any, List, Literal
 from contextlib import asynccontextmanager
@@ -27,6 +28,7 @@ from . import tts as listen_tts
 from .llm import smart_chat, smart_chat_stream
 from .study_i18n import is_locale, localize_verse, translate_fields
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, retrieve_related_unit_ids, detected_collections
+from .catalog import catalog_items, warm_catalog
 from .data_loader import (
     LOAD_STATS,
     _humanize_collection,
@@ -73,6 +75,7 @@ async def lifespan(_app: FastAPI):
             await listen_tts.listen_archive_live()
         except Exception:
             logger.debug("Listen archive warm failed", exc_info=True)
+        await asyncio.to_thread(warm_catalog)
 
     task = asyncio.create_task(_load())
     try:
@@ -113,6 +116,7 @@ def _cors_origins() -> list[str]:
 
 
 _origins = _cors_origins()
+app.add_middleware(GZipMiddleware, minimum_size=1000)
 # Credentialed requests cannot use the "*" wildcard per the CORS spec, so only
 # enable credentials when explicit origins are configured.
 app.add_middleware(
@@ -250,6 +254,10 @@ def _cached_item_count() -> int:
     return len(verses) if isinstance(verses, list) else 0
 
 
+def _catalog_items(min_maturity: str | None) -> list[dict[str, Any]]:
+    return catalog_items(_valid_maturity(min_maturity))
+
+
 @app.get("/verses")
 async def list_verses(
     request: Request,
@@ -257,11 +265,10 @@ async def list_verses(
     limit: int | None = None,
     offset: int = 0,
 ):
-    """Library index — slim payloads so the browser isn't handed ~9MB of layers."""
+    """Library index — short previews only; full layers live on /verse/{id}."""
     if _catalog_rate_limited(request):
         raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
-    await listen_tts.listen_archive_live()
-    items = filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity))
+    items = _catalog_items(_valid_maturity(min_maturity))
     total = len(items)
     start = max(0, offset)
     if limit is not None:
@@ -269,62 +276,15 @@ async def list_verses(
         page = items[start:start + cap]
     else:
         page = items[start:]
-    # Short CDN/browser freshness; the web client also keeps a localStorage catalog.
     return JSONResponse(
         content={
-            "items": [_verse_list_item(v) for v in page],
+            "items": page,
             "total": total,
             "offset": start,
             "limit": limit,
         },
-        headers={"Cache-Control": "public, max-age=60, stale-while-revalidate=300"},
+        headers={"Cache-Control": "public, max-age=300, stale-while-revalidate=3600"},
     )
-
-
-def _verse_list_item(v: dict[str, Any]) -> dict[str, Any]:
-    """Fields the Library / filters need; omit heavy appendix + full layer bodies."""
-    out: dict[str, Any] = {
-        "_id": v.get("_id"),
-        "collection": v.get("collection"),
-        "section": v.get("section"),
-        "title": v.get("title"),
-        "sutra_id": v.get("sutra_id"),
-        "reference": v.get("reference"),
-        "sequence": v.get("sequence"),
-        "work_id": v.get("work_id"),
-        "themes": v.get("themes") or [],
-        "editorial_maturity": v.get("editorial_maturity"),
-        "editorial_score": v.get("editorial_score"),
-        "translation": v.get("translation"),
-        "commentary": v.get("commentary"),
-        "practice": v.get("practice") or v.get("abhyasa"),
-        "insight": v.get("insight"),
-    }
-    # Keep only the layer kinds used for list previews / search blobs.
-    layers = v.get("pratibha_layers")
-    if isinstance(layers, list):
-        keep = {"translation", "commentary", "practice", "iast", "original"}
-        slim_layers = []
-        for layer in layers:
-            if not isinstance(layer, dict):
-                continue
-            kind = str(layer.get("kind") or "")
-            if kind not in keep:
-                continue
-            body = layer.get("body")
-            if isinstance(body, str) and len(body) > 1200:
-                body = body[:1200].rstrip() + "…"
-            slim_layers.append({
-                "kind": kind,
-                "label": layer.get("label"),
-                "body": body,
-            })
-        if slim_layers:
-            out["pratibha_layers"] = slim_layers
-    sections = listen_tts.archived_sections(v)
-    if sections:
-        out["listen_sections"] = sections
-    return out
 
 
 @app.get("/verse/{sid}")

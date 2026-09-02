@@ -45,7 +45,7 @@ export function StepIntegrationGate({
 
   return (
     <div className="max-w-[var(--reading-measure)] border-t border-emerald-300/25 pt-4">
-      <p className="font-sans text-xs uppercase tracking-[0.16em] text-emerald-200/80">
+      <p className="font-sans text-xs uppercase tracking-[0.16em] text-emerald-200">
         {t("learn.gateBefore")}
       </p>
       <p className="mt-2 text-sm leading-relaxed text-stone-200">{integration}</p>
@@ -112,6 +112,9 @@ export function StepIntegrationGate({
       >
         {completeLabel || t("learn.markComplete")}
       </Button>
+      {!ready || !recallOk ? (
+        <p className="soft mt-2 text-xs leading-relaxed">{t("learn.markCompleteHint")}</p>
+      ) : null}
     </div>
   );
 }

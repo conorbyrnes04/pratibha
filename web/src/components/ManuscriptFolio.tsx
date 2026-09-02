@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { getVerse } from "@/lib/api";
 import { useLocalizedVerse } from "@/components/useLocalizedStudy";
@@ -41,26 +41,40 @@ export function ManuscriptFolio({
   note,
   card,
   actions,
+  menu,
   variant = "card",
   page,
   pages,
+  onVerse,
 }: {
   verseId: string;
   verseTitle: string;
   note?: string;
   card?: FolioCardOptions;
   actions?: ReactNode;
+  menu?: ReactNode;
   variant?: "card" | "leaf";
   page?: number;
   pages?: number;
+  onVerse?: (item: VerseItem | null) => void;
 }) {
   const [item, setItem] = useState<VerseItem | null | undefined>(undefined);
+  const onVerseRef = useRef(onVerse);
+  onVerseRef.current = onVerse;
 
   useEffect(() => {
     let cancelled = false;
-    void getVerse(verseId).then((verse) => {
-      if (!cancelled) setItem(verse);
-    });
+    void getVerse(verseId)
+      .then((verse) => {
+        if (cancelled) return;
+        setItem(verse);
+        onVerseRef.current?.(verse);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setItem(null);
+        onVerseRef.current?.(null);
+      });
     return () => {
       cancelled = true;
     };
@@ -149,18 +163,21 @@ export function ManuscriptFolio({
 
   return (
     <article className="manuscript-folio">
-      <Link href={`/read/${encodeURIComponent(verseId)}`} className="manuscript-folio__card">
-        <ShareCard
-          mark={mark}
-          ink={ink}
-          textMode={textMode}
-          copy={cardCopy}
-          fillWindow={Boolean(cardCopy.original || cardCopy.translation)}
-          aspectRatio={aspectRatio}
-          holographic={holographic}
-          holoHue={holoHueFromSeed(`${verseId}|${mark}|${ink}|${storedReading}|${note || ""}|${title}`)}
-        />
-      </Link>
+      <div className="manuscript-folio__stage">
+        <Link href={`/read/${encodeURIComponent(verseId)}`} className="manuscript-folio__card">
+          <ShareCard
+            mark={mark}
+            ink={ink}
+            textMode={textMode}
+            copy={cardCopy}
+            fillWindow={Boolean(cardCopy.original || cardCopy.translation)}
+            aspectRatio={aspectRatio}
+            holographic={holographic}
+            holoHue={holoHueFromSeed(`${verseId}|${mark}|${ink}|${storedReading}|${note || ""}|${title}`)}
+          />
+        </Link>
+        {menu ? <div className="manuscript-folio__menu">{menu}</div> : null}
+      </div>
       {actions ? <div className="manuscript-folio__actions">{actions}</div> : null}
     </article>
   );

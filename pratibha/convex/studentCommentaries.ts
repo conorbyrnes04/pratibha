@@ -3,6 +3,7 @@ import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 import type { Doc } from "./_generated/dataModel";
 import { assertCommentary, assertDisplayName } from "./textRules";
+import { logQueryError, optionalUserId } from "./safeAuth";
 
 const MAX_WRITES_PER_HOUR = 10;
 const FEED_LIMIT = 40;
@@ -60,86 +61,116 @@ function publicReading(row: Doc<"student_commentaries">, userId: string | null) 
 export const getMine = query({
   args: { verseId: v.string() },
   handler: async (ctx, args) => {
-    const userId = await getAuthUserId(ctx);
-    if (!userId) return null;
-    return await ctx.db
-      .query("student_commentaries")
-      .withIndex("by_user_verse", (q) => q.eq("userId", userId).eq("verseId", args.verseId))
-      .unique();
+    try {
+      const userId = await optionalUserId(ctx);
+      if (!userId) return null;
+      return await ctx.db
+        .query("student_commentaries")
+        .withIndex("by_user_verse", (q) => q.eq("userId", userId).eq("verseId", args.verseId))
+        .unique();
+    } catch (error) {
+      logQueryError("studentCommentaries.getMine", error);
+      return null;
+    }
   },
 });
 
 export const getOffered = query({
   args: { id: v.id("student_commentaries") },
   handler: async (ctx, args) => {
-    const userId = await getAuthUserId(ctx);
-    const row = await ctx.db.get(args.id);
-    if (!row || row.status !== "offered") return null;
-    return publicReading(row, userId);
+    try {
+      const userId = await optionalUserId(ctx);
+      const row = await ctx.db.get(args.id);
+      if (!row || row.status !== "offered") return null;
+      return publicReading(row, userId);
+    } catch (error) {
+      logQueryError("studentCommentaries.getOffered", error);
+      return null;
+    }
   },
 });
 
 export const listOffered = query({
   args: { verseId: v.string() },
   handler: async (ctx, args) => {
-    const userId = await getAuthUserId(ctx);
-    const rows = await ctx.db
-      .query("student_commentaries")
-      .withIndex("by_verse_status", (q) => q.eq("verseId", args.verseId).eq("status", "offered"))
-      .collect();
-    return rows
-      .sort((a, b) => a.createdAt - b.createdAt)
-      .slice(0, VERSE_LIMIT)
-      .map((row) => publicReading(row, userId));
+    try {
+      const userId = await optionalUserId(ctx);
+      const rows = await ctx.db
+        .query("student_commentaries")
+        .withIndex("by_verse_status", (q) => q.eq("verseId", args.verseId).eq("status", "offered"))
+        .collect();
+      return rows
+        .sort((a, b) => a.createdAt - b.createdAt)
+        .slice(0, VERSE_LIMIT)
+        .map((row) => publicReading(row, userId));
+    } catch (error) {
+      logQueryError("studentCommentaries.listOffered", error);
+      return [];
+    }
   },
 });
 
 export const listRecent = query({
   args: { limit: v.optional(v.number()) },
   handler: async (ctx, args) => {
-    const userId = await getAuthUserId(ctx);
-    const limit = Math.min(Math.max(args.limit ?? FEED_LIMIT, 1), 60);
-    const rows = await ctx.db
-      .query("student_commentaries")
-      .withIndex("by_status_created", (q) => q.eq("status", "offered"))
-      .order("desc")
-      .take(limit);
-    return rows
-      .sort((a, b) => (b.lastActivityAt ?? b.updatedAt) - (a.lastActivityAt ?? a.updatedAt))
-      .map((row) => publicReading(row, userId));
+    try {
+      const userId = await optionalUserId(ctx);
+      const limit = Math.min(Math.max(args.limit ?? FEED_LIMIT, 1), 60);
+      const rows = await ctx.db
+        .query("student_commentaries")
+        .withIndex("by_status_created", (q) => q.eq("status", "offered"))
+        .order("desc")
+        .take(limit);
+      return rows
+        .sort((a, b) => (b.lastActivityAt ?? b.updatedAt) - (a.lastActivityAt ?? a.updatedAt))
+        .map((row) => publicReading(row, userId));
+    } catch (error) {
+      logQueryError("studentCommentaries.listRecent", error);
+      return [];
+    }
   },
 });
 
 export const listMineOffered = query({
   args: {},
   handler: async (ctx) => {
-    const userId = await getAuthUserId(ctx);
-    if (!userId) return [];
-    const rows = await ctx.db
-      .query("student_commentaries")
-      .withIndex("by_user_updated", (q) => q.eq("userId", userId))
-      .collect();
-    return rows
-      .filter((row) => row.status === "offered" && (row.replyCount ?? 0) > 0)
-      .sort((a, b) => (b.lastActivityAt ?? b.updatedAt) - (a.lastActivityAt ?? a.updatedAt))
-      .slice(0, 3)
-      .map((row) => publicReading(row, userId));
+    try {
+      const userId = await optionalUserId(ctx);
+      if (!userId) return [];
+      const rows = await ctx.db
+        .query("student_commentaries")
+        .withIndex("by_user_updated", (q) => q.eq("userId", userId))
+        .collect();
+      return rows
+        .filter((row) => row.status === "offered" && (row.replyCount ?? 0) > 0)
+        .sort((a, b) => (b.lastActivityAt ?? b.updatedAt) - (a.lastActivityAt ?? a.updatedAt))
+        .slice(0, 3)
+        .map((row) => publicReading(row, userId));
+    } catch (error) {
+      logQueryError("studentCommentaries.listMineOffered", error);
+      return [];
+    }
   },
 });
 
 export const circleMeta = query({
   args: { verseId: v.string() },
   handler: async (ctx, args) => {
-    const userId = await getAuthUserId(ctx);
-    const offered = await ctx.db
-      .query("student_commentaries")
-      .withIndex("by_verse_status", (q) => q.eq("verseId", args.verseId).eq("status", "offered"))
-      .collect();
-    return {
-      open: true,
-      offeredCount: offered.length,
-      signedIn: Boolean(userId),
-    };
+    try {
+      const userId = await optionalUserId(ctx);
+      const offered = await ctx.db
+        .query("student_commentaries")
+        .withIndex("by_verse_status", (q) => q.eq("verseId", args.verseId).eq("status", "offered"))
+        .collect();
+      return {
+        open: true,
+        offeredCount: offered.length,
+        signedIn: Boolean(userId),
+      };
+    } catch (error) {
+      logQueryError("studentCommentaries.circleMeta", error);
+      return { open: false, offeredCount: 0, signedIn: false };
+    }
   },
 });
 

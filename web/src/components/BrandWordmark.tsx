@@ -1,15 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import {
-  WORDMARKS,
-  WORDMARK_CYCLE_MS,
-  advanceWordmark,
-  pickSessionWordmark,
-  type WordmarkDef,
-} from "@/lib/wordmarks";
+import { WORDMARKS, subscribeWordmark, type WordmarkDef } from "@/lib/wordmarks";
+import { useT } from "@/components/LocaleProvider";
 
 export function BrandWordmark() {
+  const t = useT();
   const [mark, setMark] = useState<WordmarkDef>(WORDMARKS[0]);
 
   useEffect(() => {
@@ -17,26 +13,29 @@ export function BrandWordmark() {
       const preload = new window.Image();
       preload.src = item.src;
     }
-    setMark(pickSessionWordmark());
-    const id = window.setInterval(() => {
-      setMark((current) => advanceWordmark(current.id));
-    }, WORDMARK_CYCLE_MS);
-    return () => window.clearInterval(id);
+    return subscribeWordmark(setMark);
   }, []);
 
   return (
     <span
       className="brand-wordmark brand-wordmark--art brand-wordmark--has-tagline"
-      data-wordmark={mark.id}
+      data-wordmark={mark?.id ?? ""}
       suppressHydrationWarning
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={mark.src}
-        alt="pratibhā"
-        draggable={false}
-        className="brand-wordmark__art block h-[2.65rem] w-auto max-w-[min(16rem,58vw)] object-contain object-left"
-      />
+      {WORDMARKS.map((item) => {
+        const on = item.id === mark.id;
+        return (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            key={item.id}
+            src={item.src}
+            alt={on ? t("brand.name") : ""}
+            aria-hidden={on ? undefined : true}
+            draggable={false}
+            className={`brand-wordmark__art${on ? " is-on" : ""}`}
+          />
+        );
+      })}
     </span>
   );
 }

@@ -1,4 +1,4 @@
-/** Header lockups 5b–5g — same Cormorant italic, rotating through the set. */
+/** Header lockups 5b–5g — same Cormorant italic, fading through the set. */
 
 export type WordmarkId = (typeof WORDMARKS)[number]["id"];
 
@@ -16,12 +16,26 @@ export const WORDMARKS = [
   { id: "5g", src: "/brand/wordmarks/5g.png" },
 ] as const;
 
-export const WORDMARK_CYCLE_MS = 4000;
+export const WORDMARK_CYCLE_MS = 9000;
 
 const LAST_KEY = "pratibha.wordmark.last";
-const NAV_KEY = "pratibha.wordmark.nav";
 
-let pickedThisLoad: WordmarkDef | null = null;
+let current: WordmarkDef | null = null;
+const listeners = new Set<(mark: WordmarkDef) => void>();
+
+type Clock = {
+  lastTickAt: number;
+  timer: number | null;
+  step: () => void;
+};
+
+function clock(): Clock {
+  const w = window as Window & { __pratibhaWordmarkClock?: Clock };
+  if (!w.__pratibhaWordmarkClock) {
+    w.__pratibhaWordmarkClock = { lastTickAt: Date.now(), timer: null, step: () => undefined };
+  }
+  return w.__pratibhaWordmarkClock;
+}
 
 export function wordmarkById(id: string | null | undefined): WordmarkDef {
   return WORDMARKS.find((m) => m.id === id) ?? WORDMARKS[0];
@@ -33,35 +47,61 @@ export function nextWordmark(id: string | null | undefined): WordmarkDef {
 }
 
 function persist(mark: WordmarkDef): WordmarkDef {
+  current = mark;
   try {
     localStorage.setItem(LAST_KEY, mark.id);
   } catch {
     /* private mode */
   }
-  pickedThisLoad = mark;
   return mark;
 }
 
-function navigationStamp(): string {
-  return String(performance.timeOrigin);
+function notify(mark: WordmarkDef): void {
+  for (const listener of listeners) listener(mark);
 }
 
-/** Advance once per full document load, including hard refresh. */
-export function pickSessionWordmark(): WordmarkDef {
-  if (typeof window === "undefined") return WORDMARKS[0];
-  if (pickedThisLoad) return pickedThisLoad;
+function sitting(): WordmarkDef {
+  if (current) return current;
   try {
-    const stamp = navigationStamp();
-    if (sessionStorage.getItem(NAV_KEY) === stamp && pickedThisLoad) {
-      return pickedThisLoad;
-    }
-    sessionStorage.setItem(NAV_KEY, stamp);
-    return persist(nextWordmark(localStorage.getItem(LAST_KEY)));
+    return wordmarkById(localStorage.getItem(LAST_KEY));
   } catch {
-    return persist(WORDMARKS[0]);
+    return WORDMARKS[0];
   }
 }
 
-export function advanceWordmark(currentId: string): WordmarkDef {
-  return persist(nextWordmark(currentId));
+function stepCycle(): void {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const shared = clock();
+  const now = Date.now();
+  if (now - shared.lastTickAt < WORDMARK_CYCLE_MS) return;
+  shared.lastTickAt = now;
+  notify(persist(nextWordmark(sitting().id)));
+}
+
+function ensureCycle(): void {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const shared = clock();
+  shared.step = stepCycle;
+  if (shared.timer != null) return;
+  shared.lastTickAt = Date.now();
+  shared.timer = window.setInterval(() => clock().step(), 500);
+}
+
+/** One lockup for this page; remounts keep it. A new document advances one step. */
+export function subscribeWordmark(listener: (mark: WordmarkDef) => void): () => void {
+  if (!current) {
+    let last: string | null = null;
+    try {
+      last = localStorage.getItem(LAST_KEY);
+    } catch {
+      last = null;
+    }
+    persist(nextWordmark(last));
+  }
+  listener(current);
+  listeners.add(listener);
+  ensureCycle();
+  return () => {
+    listeners.delete(listener);
+  };
 }

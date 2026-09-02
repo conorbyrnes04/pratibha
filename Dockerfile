@@ -21,6 +21,9 @@ COPY app ./app
 COPY data/canonical ./data/canonical
 COPY data/lexicon ./data/lexicon
 COPY data/listen_archive.json ./data/listen_archive.json
+COPY scripts/bake_catalog.py ./scripts/bake_catalog.py
+# Slim /verses JSON so a cold process can serve the Library before YAML loads.
+RUN python scripts/bake_catalog.py
 
 # Ingest script + DB schema (handy for one-off jobs / reference inside the image).
 COPY scripts/ingest_pgvector.py ./scripts/ingest_pgvector.py

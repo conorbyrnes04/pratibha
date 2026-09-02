@@ -37,9 +37,11 @@ function linkIsActive(pathname: string, href: string, match?: string): boolean {
 function WalkLinks({
   className,
   onNavigate,
+  compact = false,
 }: {
   className?: string;
   onNavigate?: () => void;
+  compact?: boolean;
 }) {
   const pathname = usePathname();
   const t = useT();
@@ -47,6 +49,8 @@ function WalkLinks({
     <>
       {WALK.map((link) => {
         const active = linkIsActive(pathname, link.href, link.match);
+        const label =
+          compact && link.labelKey === "nav.manuscript" ? t("nav.manuscriptShort") : t(link.labelKey);
         return (
           <Link
             key={link.href}
@@ -55,7 +59,7 @@ function WalkLinks({
             className={`nav-link ${className ?? ""} ${active ? "nav-link--current" : ""}`}
             onClick={onNavigate}
           >
-            {t(link.labelKey)}
+            {label}
           </Link>
         );
       })}
@@ -169,7 +173,7 @@ export function SiteDock() {
   const t = useT();
   return (
     <nav className="site-dock" aria-label={t("nav.primary")}>
-      <WalkLinks className="site-dock__link" />
+      <WalkLinks className="site-dock__link" compact />
       <StudyMenu placement="dock" {...study} />
     </nav>
   );

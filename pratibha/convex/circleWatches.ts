@@ -1,30 +1,41 @@
 import { getAuthUserId } from "@convex-dev/auth/server";
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import { logQueryError, optionalUserId } from "./safeAuth";
 
 export const meta = query({
   args: { verseId: v.string() },
   handler: async (ctx, args) => {
-    const userId = await getAuthUserId(ctx);
-    if (!userId) return { watching: false, signedIn: false };
-    const existing = await ctx.db
-      .query("circle_watches")
-      .withIndex("by_user_verse", (q) => q.eq("userId", userId).eq("verseId", args.verseId))
-      .unique();
-    return { watching: Boolean(existing), signedIn: true };
+    try {
+      const userId = await optionalUserId(ctx);
+      if (!userId) return { watching: false, signedIn: false };
+      const existing = await ctx.db
+        .query("circle_watches")
+        .withIndex("by_user_verse", (q) => q.eq("userId", userId).eq("verseId", args.verseId))
+        .unique();
+      return { watching: Boolean(existing), signedIn: true };
+    } catch (error) {
+      logQueryError("circleWatches.meta", error);
+      return { watching: false, signedIn: false };
+    }
   },
 });
 
 export const mine = query({
   args: {},
   handler: async (ctx) => {
-    const userId = await getAuthUserId(ctx);
-    if (!userId) return [];
-    const rows = await ctx.db
-      .query("circle_watches")
-      .withIndex("by_user", (q) => q.eq("userId", userId))
-      .collect();
-    return rows.sort((a, b) => b.createdAt - a.createdAt).map((row) => row.verseId);
+    try {
+      const userId = await optionalUserId(ctx);
+      if (!userId) return [];
+      const rows = await ctx.db
+        .query("circle_watches")
+        .withIndex("by_user", (q) => q.eq("userId", userId))
+        .collect();
+      return rows.sort((a, b) => b.createdAt - a.createdAt).map((row) => row.verseId);
+    } catch (error) {
+      logQueryError("circleWatches.mine", error);
+      return [];
+    }
   },
 });
 

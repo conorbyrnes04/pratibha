@@ -1,6 +1,7 @@
 export const en = {
   brand: {
     name: "Pratibha",
+    home: "Pratibhā, home",
     tagline: "Living Manuscript",
     agniAgama: "Agni Agama",
   },
@@ -10,6 +11,7 @@ export const en = {
     library: "Library",
     circle: "Circle",
     manuscript: "My Manuscript",
+    manuscriptShort: "Manuscript",
     study: "Study",
     journal: "Journal",
     chat: "Chat",
@@ -325,6 +327,8 @@ export const en = {
     verses: "Verses",
     empty: "Nothing here yet. Open a passage and choose Save to my manuscript.",
     notePlaceholder: "A one-line margin — optional",
+    moreActions: "Card actions",
+    addComment: "Add a comment",
     updateFailed: "Could not update.",
     noteFailed: "Could not save the note.",
     notFound: "Manuscript not found",
@@ -542,6 +546,7 @@ export const en = {
     yourRecall: "Your recall: {text}",
     recognize: "I recognize this in experience — or I'm willing to keep practicing at this gate.",
     markComplete: "Mark complete",
+    markCompleteHint: "Tick the box above to complete this gate.",
     stepComplete: "Recognized",
     stepCompleteLede: "This gate is complete. Returning to the walk…",
     recommendedNext: "Recommended next",

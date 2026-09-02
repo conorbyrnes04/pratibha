@@ -2,11 +2,9 @@
 # Deploy from the Render dashboard: New > Blueprint > pick this repo.
 # Docs: https://render.com/docs/blueprint-spec
 #
-# Plans default to `free` for a zero-cost trial. IMPORTANT:
-#   - Free Postgres EXPIRES 30 days after creation and has no backups.
-#   - Free web services spin down after ~15 min idle (cold start ~1 min).
-# For a real public launch, change the two `plan:` lines to paid tiers
-# (web: `starter` ~$7/mo, database: `basic-256mb` ~$6/mo). See DEPLOY.md.
+# Web service is `starter` so the Library/chat API does not sleep (~30s cold
+# starts on free). Free Postgres still expires after 30 days — use
+# `basic-256mb` for a lasting public database. See DEPLOY.md.
 
 services:
   - type: web
@@ -16,7 +14,7 @@ services:
     branch: cursor/study-notes-layer-labels-chuang-cleanup
     dockerfilePath: ./Dockerfile
     dockerContext: .
-    plan: free
+    plan: starter
     region: oregon
     healthCheckPath: /health
     autoDeployTrigger: commit

@@ -22,7 +22,7 @@ import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
 import { StudentCommentary } from "@/components/StudentCommentary";
 import { CircleReadings } from "@/components/CircleReadings";
-import { QuietBoundary } from "@/components/SanghaBoundary";
+import { SanghaBoundary, QuietBoundary } from "@/components/SanghaBoundary";
 import { CommentaryTeaser } from "@/components/CommentaryTeaser";
 import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import {
@@ -311,9 +311,9 @@ export function PassageReader({ initialItem = null }: { initialItem?: VerseItem 
           </section>
         ) : null}
 
-        <QuietBoundary>
+        <SanghaBoundary>
           <CircleReadings verseId={item._id} />
-        </QuietBoundary>
+        </SanghaBoundary>
         <QuietBoundary>
           <StudentCommentary
             verseId={item._id}

@@ -11,7 +11,7 @@ import { useLearnProgress } from "@/hooks/useLearnProgress";
 import { currentTrailSit } from "@/lib/learn/trail";
 import { buttonVariants } from "@/components/ui/button";
 import { CircleReadings } from "@/components/CircleReadings";
-import { QuietBoundary } from "@/components/SanghaBoundary";
+import { SanghaBoundary } from "@/components/SanghaBoundary";
 import { useT } from "@/components/LocaleProvider";
 import { CONVEX_ENABLED } from "@/lib/convexConfigured";
 import { useQuery } from "convex/react";
@@ -73,17 +73,17 @@ export default function HomePageClient() {
           </div>
         </header>
 
-        <QuietBoundary>
+        <SanghaBoundary>
           <CirclePulse />
-        </QuietBoundary>
+        </SanghaBoundary>
 
         {sit ? (
           <>
             <TodayGate sit={sit} verse={verse} />
             {verse ? (
-              <QuietBoundary>
+              <SanghaBoundary>
                 <CircleReadings verseId={verse._id} daily />
-              </QuietBoundary>
+              </SanghaBoundary>
             ) : null}
           </>
         ) : (

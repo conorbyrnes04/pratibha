@@ -1,19 +1,25 @@
 import { getAuthUserId } from "@convex-dev/auth/server";
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
+import { logQueryError, optionalUserId } from "./safeAuth";
 
 export const meta = query({
   args: { commentaryId: v.id("student_commentaries") },
   handler: async (ctx, args) => {
-    const rows = await ctx.db
-      .query("circle_sits")
-      .withIndex("by_commentary", (q) => q.eq("commentaryId", args.commentaryId))
-      .collect();
-    const userId = await getAuthUserId(ctx);
-    return {
-      count: rows.length,
-      mine: userId ? rows.some((row) => row.userId === userId) : false,
-    };
+    try {
+      const rows = await ctx.db
+        .query("circle_sits")
+        .withIndex("by_commentary", (q) => q.eq("commentaryId", args.commentaryId))
+        .collect();
+      const userId = await optionalUserId(ctx);
+      return {
+        count: rows.length,
+        mine: userId ? rows.some((row) => row.userId === userId) : false,
+      };
+    } catch (error) {
+      logQueryError("circleSits.meta", error);
+      return { count: 0, mine: false };
+    }
   },
 });
 

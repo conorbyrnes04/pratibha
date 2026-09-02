@@ -1,6 +1,8 @@
 type BrandMarkProps = {
   className?: string;
   size?: "sm" | "md" | "lg";
+  /** True when a parent link already names the site (header lockup). */
+  decorative?: boolean;
 };
 
 const SIZE_CLASS: Record<NonNullable<BrandMarkProps["size"]>, string> = {
@@ -10,12 +12,13 @@ const SIZE_CLASS: Record<NonNullable<BrandMarkProps["size"]>, string> = {
 };
 
 /** Pratibha yantra seal — primary site brand mark. */
-export function BrandMark({ className = "", size = "md" }: BrandMarkProps) {
+export function BrandMark({ className = "", size = "md", decorative = false }: BrandMarkProps) {
   return (
     <span
       className={`brand-mark ${SIZE_CLASS[size]} ${className}`.trim()}
-      role="img"
-      aria-label="Pratibha"
+      role={decorative ? undefined : "img"}
+      aria-label={decorative ? undefined : "Pratibhā"}
+      aria-hidden={decorative || undefined}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/brand/yantra-mark.png" alt="" draggable={false} />

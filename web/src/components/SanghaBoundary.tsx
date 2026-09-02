@@ -1,31 +1,12 @@
 "use client";
 
-import { Component, type ReactNode } from "react";
+import { Component, useCallback, useState, type ReactNode } from "react";
+import { useT } from "@/components/LocaleProvider";
 
-export class SanghaBoundary extends Component<
-  { children: ReactNode },
-  { message: string | null }
+class SanghaCatch extends Component<
+  { children: ReactNode; fallback: ReactNode },
+  { failed: boolean }
 > {
-  state = { message: null as string | null };
-
-  static getDerivedStateFromError(error: Error) {
-    return { message: error.message };
-  }
-
-  render() {
-    if (this.state.message) {
-      return (
-        <p className="soft mt-6 text-sm">
-          The circle is unavailable just now.
-        </p>
-      );
-    }
-    return this.props.children;
-  }
-}
-
-/** Swallow optional Circle chrome (sit/watch) so a missing table cannot take down readings. */
-export class QuietBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
   state = { failed: false };
 
   static getDerivedStateFromError() {
@@ -33,6 +14,42 @@ export class QuietBoundary extends Component<{ children: ReactNode }, { failed: 
   }
 
   render() {
-    return this.state.failed ? null : this.props.children;
+    return this.state.failed ? this.props.fallback : this.props.children;
   }
+}
+
+export function SanghaBoundary({
+  children,
+  silent = false,
+}: {
+  children: ReactNode;
+  silent?: boolean;
+}) {
+  const t = useT();
+  const [generation, setGeneration] = useState(0);
+  const retry = useCallback(() => setGeneration((n) => n + 1), []);
+
+  const fallback = silent ? null : (
+    <div className="mt-6">
+      <p className="soft text-sm">{t("circle.unavailable")}</p>
+      <button
+        type="button"
+        className="mt-2 font-sans text-xs uppercase tracking-[0.16em] text-amber-200 hover:text-amber-100"
+        onClick={retry}
+      >
+        {t("common.tryAgain")}
+      </button>
+    </div>
+  );
+
+  return (
+    <SanghaCatch key={generation} fallback={fallback}>
+      {children}
+    </SanghaCatch>
+  );
+}
+
+/** Swallow optional Circle chrome (sit/watch) so a missing table cannot take down readings. */
+export function QuietBoundary({ children }: { children: ReactNode }) {
+  return <SanghaBoundary silent>{children}</SanghaBoundary>;
 }

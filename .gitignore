@@ -157,5 +157,8 @@ scratch/
 # Local secret exports for 1Password (never commit)
 docs/private/
 
+# Slim /verses snapshots baked in Docker (and optionally locally)
+data/catalog/
+
 # Sumi raster intermediates from Replicate (SVGs are the shipped assets)
 assets/sumi/_generated/

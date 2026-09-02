@@ -1,17 +1,39 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
+import { Ellipsis } from "lucide-react";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { useAuth } from "@/components/AuthProvider";
+import { CircleOfferForm } from "@/components/CircleOfferForm";
 import { useT } from "@/components/LocaleProvider";
 import { CONVEX_ENABLED } from "@/lib/convexConfigured";
+import { getVerse } from "@/lib/api";
+import type { VerseItem } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { recordPractice } from "@/lib/glyphUnlock";
 import { ManuscriptFolio } from "@/components/ManuscriptFolio";
+
+const ShareComposer = dynamic(
+  () => import("@/components/ShareComposer").then((m) => ({ default: m.ShareComposer })),
+);
 
 export default function ManuscriptPage() {
   const t = useT();
@@ -55,14 +77,16 @@ function ManuscriptEditor() {
   const profile = useQuery(api.profiles.getMine);
   const removeVerse = useMutation(api.manuscripts.removeVerse);
   const moveVerse = useMutation(api.manuscripts.moveVerse);
-  const setEntryNote = useMutation(api.manuscripts.setEntryNote);
   const updateSettings = useMutation(api.manuscripts.updateSettings);
 
   const [title, setTitle] = useState("");
   const [displayName, setDisplayName] = useState("");
-  const [notes, setNotes] = useState<Record<string, string>>({});
   const [error, setError] = useState("");
   const [shareHint, setShareHint] = useState("");
+  const [commentVerse, setCommentVerse] = useState<{ id: string; title: string } | null>(null);
+  const [verses, setVerses] = useState<Record<string, VerseItem>>({});
+  const [editorItem, setEditorItem] = useState<VerseItem | null>(null);
+  const [editorOpen, setEditorOpen] = useState(false);
 
   useEffect(() => {
     if (manuscript) {
@@ -73,12 +97,25 @@ function ManuscriptEditor() {
     }
   }, [manuscript, profile?.displayName]);
 
-  useEffect(() => {
-    if (!manuscript) return;
-    const next: Record<string, string> = {};
-    for (const entry of manuscript.entries) next[entry.verseId] = entry.note;
-    setNotes(next);
-  }, [manuscript]);
+  function rememberVerse(verseId: string, verse: VerseItem | null) {
+    if (!verse) return;
+    setVerses((prev) => (prev[verseId] ? prev : { ...prev, [verseId]: verse }));
+  }
+
+  function openCardEditor(verseId: string, verseTitle: string) {
+    setError("");
+    const known = verses[verseId] ?? { _id: verseId, title: verseTitle };
+    setEditorItem(known);
+    setEditorOpen(true);
+    if (verses[verseId]) return;
+    void getVerse(verseId)
+      .then((verse) => {
+        if (!verse) return;
+        rememberVerse(verseId, verse);
+        setEditorItem(verse);
+      })
+      .catch(() => undefined);
+  }
 
   async function saveSettings(visibility?: "private" | "public") {
     setError("");
@@ -169,6 +206,8 @@ function ManuscriptEditor() {
                 key={entry.verseId}
                 verseId={entry.verseId}
                 verseTitle={entry.verseTitle}
+                note={entry.note}
+                onVerse={(verse) => rememberVerse(entry.verseId, verse)}
                 card={{
                   mark: entry.mark,
                   ink: entry.ink,
@@ -178,61 +217,115 @@ function ManuscriptEditor() {
                   holographic: entry.holographic,
                   reading: entry.reading,
                 }}
-                actions={
-                  <>
-                    <Textarea
-                      value={notes[entry.verseId] ?? ""}
-                      onChange={(e) =>
-                        setNotes((prev) => ({ ...prev, [entry.verseId]: e.target.value }))
-                      }
-                      onBlur={() => {
-                        const next = notes[entry.verseId] ?? "";
-                        if (next !== (entry.note || "")) {
-                          void setEntryNote({ verseId: entry.verseId, note: next })
-                            .then(() => recordPractice(`manuscript:note:${entry.verseId}`))
-                            .catch((err) =>
-                              setError(err instanceof Error ? err.message : t("manuscript.noteFailed")),
-                            );
-                        }
-                      }}
-                      placeholder={t("manuscript.notePlaceholder")}
-                      rows={2}
-                    />
-                    <div className="flex flex-wrap gap-2">
-                      <Button
-                        type="button"
-                        size="sm"
-                        variant="ghost"
-                        disabled={index === 0}
-                        onClick={() => void moveVerse({ verseId: entry.verseId, direction: "up" })}
-                      >
-                        {t("common.up")}
-                      </Button>
-                      <Button
-                        type="button"
-                        size="sm"
-                        variant="ghost"
-                        disabled={index === manuscript.entries.length - 1}
-                        onClick={() => void moveVerse({ verseId: entry.verseId, direction: "down" })}
-                      >
-                        {t("common.down")}
-                      </Button>
-                      <Button
-                        type="button"
-                        size="sm"
-                        variant="ghost"
-                        onClick={() => void removeVerse({ verseId: entry.verseId })}
-                      >
-                        {t("common.remove")}
-                      </Button>
-                    </div>
-                  </>
+                menu={
+                  <FolioMenu
+                    canMoveUp={index > 0}
+                    canMoveDown={index < manuscript.entries.length - 1}
+                    onComment={() => {
+                      window.setTimeout(
+                        () => setCommentVerse({ id: entry.verseId, title: entry.verseTitle }),
+                        0,
+                      );
+                    }}
+                    onEditCard={() => {
+                      window.setTimeout(() => openCardEditor(entry.verseId, entry.verseTitle), 0);
+                    }}
+                    onShare={() => {
+                      window.setTimeout(() => openCardEditor(entry.verseId, entry.verseTitle), 0);
+                    }}
+                    onMoveUp={() => void moveVerse({ verseId: entry.verseId, direction: "up" })}
+                    onMoveDown={() => void moveVerse({ verseId: entry.verseId, direction: "down" })}
+                    onRemove={() => void removeVerse({ verseId: entry.verseId })}
+                  />
                 }
               />
             ))}
           </div>
         )}
       </section>
+
+      <Dialog open={Boolean(commentVerse)} onOpenChange={(open) => !open && setCommentVerse(null)}>
+        <DialogContent className="sm:max-w-lg" showCloseButton>
+          <DialogHeader>
+            <DialogTitle>{t("manuscript.addComment")}</DialogTitle>
+            <DialogDescription>
+              {commentVerse?.title || t("commentary.lede")}
+            </DialogDescription>
+          </DialogHeader>
+          {commentVerse ? (
+            <CircleOfferForm
+              verseId={commentVerse.id}
+              verseTitle={commentVerse.title}
+              compact
+              loginNext="/manuscript"
+              onOffered={() => setCommentVerse(null)}
+            />
+          ) : null}
+        </DialogContent>
+      </Dialog>
+
+      {editorItem ? (
+        <ShareComposer
+          item={editorItem}
+          hideTrigger
+          designOpen={editorOpen}
+          onDesignOpenChange={setEditorOpen}
+        />
+      ) : null}
     </main>
+  );
+}
+
+function FolioMenu({
+  canMoveUp,
+  canMoveDown,
+  onComment,
+  onEditCard,
+  onShare,
+  onMoveUp,
+  onMoveDown,
+  onRemove,
+}: {
+  canMoveUp: boolean;
+  canMoveDown: boolean;
+  onComment: () => void;
+  onEditCard: () => void;
+  onShare: () => void;
+  onMoveUp: () => void;
+  onMoveDown: () => void;
+  onRemove: () => void;
+}) {
+  const t = useT();
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger
+        render={
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon-sm"
+            aria-label={t("manuscript.moreActions")}
+            className="rounded-full bg-[#0a0a10]/70 text-amber-50 shadow-[0_0_0_1px_rgb(240_201_121_/_0.22)] backdrop-blur-md hover:bg-[#0a0a10]/85 hover:text-amber-100"
+          />
+        }
+      >
+        <Ellipsis />
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="min-w-44">
+        <DropdownMenuItem onClick={onComment}>{t("manuscript.addComment")}</DropdownMenuItem>
+        <DropdownMenuItem onClick={onEditCard}>{t("commentary.editCard")}</DropdownMenuItem>
+        <DropdownMenuItem onClick={onShare}>{t("manuscript.share")}</DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem disabled={!canMoveUp} onClick={onMoveUp}>
+          {t("common.up")}
+        </DropdownMenuItem>
+        <DropdownMenuItem disabled={!canMoveDown} onClick={onMoveDown}>
+          {t("common.down")}
+        </DropdownMenuItem>
+        <DropdownMenuItem variant="destructive" onClick={onRemove}>
+          {t("common.remove")}
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }
