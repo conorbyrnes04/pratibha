@@ -175,6 +175,9 @@ export function ArtThumb({
       <img
         src={activeSrc}
         alt={alt}
+        // No alt → the thumbnail is decorative (it always sits beside a text
+        // title), so hide it from the a11y tree rather than expose an unlabeled image.
+        aria-hidden={alt ? undefined : true}
         loading="lazy"
         decoding="async"
         ref={(node) => {

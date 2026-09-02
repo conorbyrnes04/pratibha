@@ -35,11 +35,20 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "Pratibha — Living Manuscript of World Wisdom",
     description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: "/brand/og-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Pratibha — a yantra mandala over a living manuscript field",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pratibha — Living Manuscript of World Wisdom",
     description: SITE_DESCRIPTION,
+    images: ["/brand/og-cover.jpg"],
   },
   robots: { index: true, follow: true },
   icons: {

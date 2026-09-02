@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { cache } from "react";
 import { getVerse } from "@/lib/api";
 import { displayCollectionName } from "@/lib/collectionLabels";
+import { redbookSlug, redbookSrc } from "@/lib/collectionImages";
 import { displayPassageLocation, displayPassageTitle } from "@/lib/passageTitles";
 import { passagePreview } from "@/lib/verseLayers";
 import { firstSentence } from "@/lib/textPreview";
@@ -45,6 +46,13 @@ export async function generateMetadata({
   const description = preview || `${title}${source ? ` — ${source}` : ""}`;
   const ogTitle = source ? `${title} · ${source}` : title;
 
+  // Per-passage share art: the collection's Red Book mandala when we have one,
+  // else the default branded card. Without this the passage card is text-only.
+  const rb = redbookSlug(verse.collection) ?? redbookSlug(collection);
+  const ogImage = rb
+    ? { url: redbookSrc(rb), width: 1024, height: 1024, alt: `${collection} — mandala` }
+    : { url: "/brand/og-cover.jpg", width: 1200, height: 630, alt: "Pratibha — Living Manuscript of World Wisdom" };
+
   return {
     title,
     description,
@@ -54,11 +62,13 @@ export async function generateMetadata({
       title: ogTitle,
       description,
       url: `${SITE_URL}${canonical}`,
+      images: [ogImage],
     },
     twitter: {
       card: "summary_large_image",
       title: ogTitle,
       description,
+      images: [ogImage.url],
     },
   };
 }

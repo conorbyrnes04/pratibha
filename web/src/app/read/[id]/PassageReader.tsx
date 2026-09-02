@@ -198,12 +198,20 @@ export function PassageReader({ initialItem = null }: { initialItem?: VerseItem 
   const translationLayer = layers.find((l) => l.kind === "translation");
   const commentaryBody = layerText(display, "commentary");
   const keyTermsLayer = layers.find((l) => l.kind === "key_terms");
+  // Key terms are usually a markdown body ("**term** — gloss"), not an `items`
+  // array — so count structured items when present, else the bold entries in the
+  // body. Hide the section entirely when there is nothing to show.
+  const keyTermsBody = (keyTermsLayer?.body || "").trim();
+  const keyTermsCount = Array.isArray(keyTermsLayer?.items)
+    ? keyTermsLayer.items.length
+    : (keyTermsBody.match(/\*\*[^*\n]+\*\*/g) || []).length;
+  const showKeyTerms = Boolean(keyTermsLayer) && (keyTermsCount > 0 || keyTermsBody.length > 0);
   const practice = practiceText(display) || practiceFallback(item, t);
   const hasSource = appendixLayers.length > 0 || Boolean(anchorChapter);
   const themes = item.themes || [];
   const themeLabels = display.themes || themes;
   const hasApparatus =
-    Boolean(keyTermsLayer) || resonances.length > 0 || hasSource || themes.length > 0;
+    showKeyTerms || resonances.length > 0 || hasSource || themes.length > 0;
 
   const collectionHref = item.collection
     ? `/read?collection=${encodeURIComponent(item.collection)}`
@@ -397,13 +405,11 @@ export function PassageReader({ initialItem = null }: { initialItem?: VerseItem 
         {hasApparatus ? (
           <div className="passage-apparatus">
             <Accordion>
-              {keyTermsLayer ? (
+              {showKeyTerms && keyTermsLayer ? (
                 <AccordionItem value="terms">
                   <AccordionTrigger>
                     {t("layers.keyTerms")}
-                    {(keyTermsLayer.items || []).length
-                      ? ` · ${(keyTermsLayer.items || []).length}`
-                      : ""}
+                    {keyTermsCount ? ` · ${keyTermsCount}` : ""}
                   </AccordionTrigger>
                   <AccordionContent>
                     <LayerBlock layer={keyTermsLayer} bare />
