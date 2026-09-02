@@ -116,6 +116,12 @@ COLLECTIONS: dict[str, dict] = {
         "blurb": "The remaining cult is the herd — cattle-pen, green-leaf greeting, ancestor interdit.",
         "order": 16,
     },
+    "pulaar_texts": {
+        "title": "Pulaar Texts",
+        "tradition": "Futa Toro Pulaar",
+        "blurb": "won ko wonnō do — tale formula, a father's counsel, and mallol from Gaden 1913.",
+        "order": 17,
+    },
 }
 
 

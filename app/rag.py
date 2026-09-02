@@ -67,6 +67,18 @@ _COLLECTION_HINTS = {
         "crozals",
         "reclus",
     ],
+    "pulaar_texts": [
+        "pulaar texts",
+        "gaden",
+        "poular",
+        "mallol",
+        "tindol",
+        "gonga",
+        "nagge",
+        "futa toro",
+        "mahmadou alfa",
+        "tyerno aoudi",
+    ],
 }
 
 

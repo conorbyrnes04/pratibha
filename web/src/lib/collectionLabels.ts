@@ -26,6 +26,15 @@ const PULAAR_TRADITION_ALIASES = new Set([
   "peul_tradition",
 ]);
 
+const PULAAR_TEXTS_ALIASES = new Set([
+  "pulaar texts",
+  "pulaar_texts",
+  "pulaar text",
+  "pulaar_text",
+  "gaden poular",
+  "gaden_poular",
+]);
+
 export function displayCollectionName(name?: string): string {
   const raw = (name || "").trim();
   if (!raw) return "";
@@ -36,6 +45,9 @@ export function displayCollectionName(name?: string): string {
   }
   if (PULAAR_TRADITION_ALIASES.has(normalized) || normalized.replace(/_/g, " ") === "pulaar tradition") {
     return "Pulaar Tradition";
+  }
+  if (PULAAR_TEXTS_ALIASES.has(normalized) || normalized.replace(/_/g, " ") === "pulaar texts") {
+    return "Pulaar Texts";
   }
   return raw;
 }

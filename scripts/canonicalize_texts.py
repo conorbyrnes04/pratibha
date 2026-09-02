@@ -140,6 +140,8 @@ THEME_TERMS = [
     "cattle",
     "honor",
     "clan",
+    "truth",
+    "heart",
 ]
 
 THEME_STOPWORDS = {
@@ -275,7 +277,17 @@ def infer_root_like(y: dict[str, Any], path: Path) -> bool:
     i = txt(y.get("transliteration"))
     tr = txt(y.get("translation"))
 
-    if any(k in p for k in ["siva_sutra", "vijnana_bhairava", "yukti", "senegalese_animism", "pulaar_tradition"]):
+    if any(
+        k in p
+        for k in [
+            "siva_sutra",
+            "vijnana_bhairava",
+            "yukti",
+            "senegalese_animism",
+            "pulaar_tradition",
+            "pulaar_texts",
+        ]
+    ):
         return True
     if "sutra" in coll or "bhairava" in coll:
         return True

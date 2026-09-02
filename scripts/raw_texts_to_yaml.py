@@ -121,7 +121,7 @@ def process_file(fp: Path, yaml_root: Path, clear_existing: bool) -> bool:
         print(f"[raw->yaml] {fp.name} -> {out_dir}")
         run(cmd)
         return True
-    if "pulaar" in name_ascii and "pratibha" in name_ascii:
+    if "pulaar" in name_ascii and "tradition" in name_ascii and "pratibha" in name_ascii:
         out_dir = yaml_root / "pulaar_tradition"
         if clear_existing and out_dir.exists():
             shutil.rmtree(out_dir)
@@ -129,6 +129,20 @@ def process_file(fp: Path, yaml_root: Path, clear_existing: bool) -> bool:
         cmd = [
             py,
             str(ROOT / "scripts" / "pulaar_tradition_pratibha_md_to_yaml.py"),
+            str(fp),
+            str(out_dir),
+        ]
+        print(f"[raw->yaml] {fp.name} -> {out_dir}")
+        run(cmd)
+        return True
+    if "pulaar" in name_ascii and "text" in name_ascii and "pratibha" in name_ascii:
+        out_dir = yaml_root / "pulaar_texts"
+        if clear_existing and out_dir.exists():
+            shutil.rmtree(out_dir)
+        out_dir.mkdir(parents=True, exist_ok=True)
+        cmd = [
+            py,
+            str(ROOT / "scripts" / "pulaar_texts_pratibha_md_to_yaml.py"),
             str(fp),
             str(out_dir),
         ]
