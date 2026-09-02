@@ -9,15 +9,25 @@ const AUTH_MIN_MS = 1000;
 const AUTH_WINDOW_MS = 15 * 60 * 1000;
 const AUTH_MAX_ATTEMPTS = 8;
 
+// Read-only content + discovery surfaces are browsable without an account (the
+// homepage funnels sign-in for the gated layers). User data (journal, account,
+// manuscript) and the metered chat stay gated. Keeping these public also lets
+// crawlers reach them, which — with per-passage metadata + share cards — is the
+// discovery half of the free-reading funnel.
 const isPublicPage = createRouteMatcher([
   "/",
   "/login",
+  "/today",
   "/learn",
   "/learn/(.*)",
   "/read",
   "/read/(.*)",
   "/circle",
   "/circle/(.*)",
+  "/sources",
+  "/glossary",
+  "/glossary/(.*)",
+  "/random",
   "/s/(.*)",
   "/m/(.*)",
   "/privacy",
@@ -148,6 +158,8 @@ export default async function middleware(request: NextRequest, event: NextFetchE
 
 export const config = {
   matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
+    // Never run auth middleware on SEO/metadata files — a crawler must reach the
+    // real sitemap/robots, not a 307 to /login.
+    "/((?!_next/static|_next/image|favicon.ico|sitemap\\.xml|robots\\.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
   ],
 };
