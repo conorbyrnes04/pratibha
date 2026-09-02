@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { AuthMenu } from "@/components/AuthMenu";
 import { BrandMark } from "@/components/BrandMark";
+import { BrandWordmark } from "@/components/BrandWordmark";
 import { LanguagePicker } from "@/components/LanguagePicker";
 import { SiteNav } from "@/components/SiteNav";
 import { useT } from "@/components/LocaleProvider";
@@ -12,15 +13,12 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-[rgb(240_201_121_/_0.12)] bg-[#090912]/82 backdrop-blur-xl">
       <nav className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="/" aria-label={t("brand.name")} className="group flex items-center gap-3 leading-none">
+        <Link href="/" aria-label={t("brand.name")} className="group flex items-center gap-2 leading-none">
           <BrandMark
             size="md"
             className="opacity-95 transition group-hover:opacity-100 group-hover:brightness-110"
           />
-          <span className="brand-wordmark">
-            <span className="brand-wordmark__name">pratibhā</span>
-            <span className="brand-wordmark__tagline">{t("brand.tagline")}</span>
-          </span>
+          <BrandWordmark />
         </Link>
         <div className="flex items-center gap-3 sm:gap-5">
           <a
