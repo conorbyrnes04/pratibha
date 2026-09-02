@@ -90,7 +90,7 @@ const TOME_META: TomeMeta[] = [
   { pattern: /dogen|dōgen|shobogenzo|shōbōgenzō/i, tradition: "Buddhist", author: "Dōgen", authored: "c. 13th c. CE", eraYear: 1240 },
   { pattern: /rumi|rūmī|mathnaw|masnavi/i, tradition: "Sufi", author: "Jalāl al-Dīn Rūmī", authored: "c. 1258–1273 CE", eraYear: 1265 },
   { pattern: /attar|mantiq|conference.?of.?the.?birds/i, tradition: "Sufi", author: "Farīd al-Dīn ʿAṭṭār", authored: "c. 1177 CE", eraYear: 1177 },
-  { pattern: /hujwir|kashf.?al.?ma[hḥ]jub/i, tradition: "Sufi", author: "Hujwīrī", authored: "c. 1050–1077 CE", eraYear: 1070 },
+  { pattern: /hujwir|kashf.?al.?ma[hḥ]j[uū]b/i, tradition: "Sufi", author: "Hujwīrī", authored: "c. 1050–1077 CE", eraYear: 1070 },
   { pattern: /tao.?te.?ching|dao.?de.?jing|laozi|lao.?tzu/i, tradition: "Daoist", author: "Laozi (trad.)", authored: "c. 4th–3rd c. BCE", eraYear: -350 },
   { pattern: /zhuang|chuang/i, tradition: "Daoist", author: "Zhuangzi", authored: "c. 4th–3rd c. BCE", eraYear: -320 },
   { pattern: /analect|confucius|lunyu/i, tradition: "Confucian", author: "Confucius (trad.)", authored: "c. 5th–3rd c. BCE", eraYear: -450 },

@@ -71,7 +71,7 @@ const HERO_QUOTES: QuoteBank[] = [
     ],
   },
   {
-    pattern: /hujwir|kashf.?al.?ma[hḥ]jub/i,
+    pattern: /hujwir|kashf.?al.?ma[hḥ]j[uū]b/i,
     quotes: [
       "Knowledge is of two kinds: divine and human.",
       "Poverty has an outward form and an inward reality.",

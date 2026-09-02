@@ -169,7 +169,7 @@ const SUMI_RULES: Array<{ pattern: RegExp; glyph: SumiSlug }> = [
   { pattern: /patanjali|patañjali|yoga.?s[uū]tras?|raja.?yoga/i, glyph: "spiral" },
   { pattern: /ibn|arabi|know yourself/i, glyph: "mirror" },
   { pattern: /attar|mantiq|conference.?of.?the.?birds/i, glyph: "crane" },
-  { pattern: /hujwir|kashf.?al.?ma[hḥ]jub/i, glyph: "eye" },
+  { pattern: /hujwir|kashf.?al.?ma[hḥ]j[uū]b/i, glyph: "eye" },
   { pattern: /confucius|analect|zhongyong/i, glyph: "tree" },
   { pattern: /marcus|meditation/i, glyph: "sage" },
   { pattern: /rumi|poet/i, glyph: "spiral" },
