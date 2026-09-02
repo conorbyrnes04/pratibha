@@ -59,6 +59,26 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "isavasya_upanisad",
         "īśāvāsya_upaniṣad",
     },
+    "senegalese_animism": {
+        "senegalese_animism",
+        "serer_cosaan",
+        "serer_religion",
+        "a_tat_roog",
+    },
+    "pulaar_tradition": {
+        "pulaar_tradition",
+        "pulaar_pre_islam",
+        "fulbe_tradition",
+        "peul_tradition",
+        "fulani_tradition",
+    },
+    "pulaar_texts": {
+        "pulaar_texts",
+        "pulaar_text",
+        "gaden_poular",
+        "futa_toro_pulaar",
+        "poular_textes",
+    },
 }
 
 

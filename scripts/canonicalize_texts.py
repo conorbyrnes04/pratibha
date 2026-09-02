@@ -131,6 +131,17 @@ THEME_TERMS = [
     "sitting in forgetfulness",
     "usefulness",
     "uselessness",
+    "soul",
+    "ancestor",
+    "land",
+    "spirit",
+    "offering",
+    "herd",
+    "cattle",
+    "honor",
+    "clan",
+    "truth",
+    "heart",
 ]
 
 THEME_STOPWORDS = {
@@ -266,7 +277,17 @@ def infer_root_like(y: dict[str, Any], path: Path) -> bool:
     i = txt(y.get("transliteration"))
     tr = txt(y.get("translation"))
 
-    if any(k in p for k in ["siva_sutra", "vijnana_bhairava", "yukti"]):
+    if any(
+        k in p
+        for k in [
+            "siva_sutra",
+            "vijnana_bhairava",
+            "yukti",
+            "senegalese_animism",
+            "pulaar_tradition",
+            "pulaar_texts",
+        ]
+    ):
         return True
     if "sutra" in coll or "bhairava" in coll:
         return True
@@ -410,18 +431,34 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Canonicalize YAML into root_text/commentary_text categories.")
     ap.add_argument("--yaml-root", type=Path, default=YAML_ROOT_DEFAULT)
     ap.add_argument("--out-root", type=Path, default=OUT_ROOT_DEFAULT)
+    ap.add_argument("--only", type=str, default="", help="Process only this yaml subdirectory name.")
     args = ap.parse_args()
 
     yaml_root = args.yaml_root
     out_root = args.out_root
     out_root.mkdir(parents=True, exist_ok=True)
 
-    # clear previous generated files
-    for p in out_root.glob("**/*.yml"):
-        p.unlink()
+    only = slug(args.only) if args.only else ""
+    files = all_yaml_files(yaml_root)
+    if only:
+        files = [fp for fp in files if slug(fp.parent.name) == only or only in slug(str(fp))]
+
+    # Full rebuild clears all generated files. --only replaces one collection.
+    if only:
+        for p in out_root.glob("**/*.yml"):
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    existing = yaml.safe_load(f) or {}
+            except Exception:
+                existing = {}
+            if slug(str(existing.get("work_id") or p.parent.name)) == only:
+                p.unlink()
+    else:
+        for p in out_root.glob("**/*.yml"):
+            p.unlink()
 
     units: list[dict[str, Any]] = []
-    for fp in all_yaml_files(yaml_root):
+    for fp in files:
         try:
             with open(fp, "r", encoding="utf-8") as f:
                 raw = yaml.safe_load(f)
@@ -455,8 +492,22 @@ def main() -> int:
 
     # write index + summary
     idx = out_root / "index.jsonl"
+    index_units: list[dict[str, Any]] = list(kept)
+    if only and idx.exists():
+        previous: list[dict[str, Any]] = []
+        for line in idx.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            try:
+                row = json.loads(line)
+            except Exception:
+                continue
+            if slug(str(row.get("work_id") or "")) == only:
+                continue
+            previous.append(row)
+        index_units = previous + kept
     with open(idx, "w", encoding="utf-8") as f:
-        for u in kept:
+        for u in index_units:
             f.write(json.dumps(_sanitize(u), ensure_ascii=False) + "\n")
 
     root_n = sum(1 for u in kept if u.get("category") == "root_text")

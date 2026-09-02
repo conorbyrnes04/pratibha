@@ -104,6 +104,24 @@ COLLECTIONS: dict[str, dict] = {
         "blurb": "He who knows himself knows his Lord.",
         "order": 14,
     },
+    "senegalese_animism": {
+        "title": "Senegalese Animism",
+        "tradition": "Serer / Senegambian",
+        "blurb": "Roog, the unaddressed sky, and the spirits you pour to at the baobab.",
+        "order": 15,
+    },
+    "pulaar_tradition": {
+        "title": "Pulaar Tradition",
+        "tradition": "Fulɓe / Pulaar (pre-Islamic remnants)",
+        "blurb": "The remaining cult is the herd — cattle-pen, green-leaf greeting, ancestor interdit.",
+        "order": 16,
+    },
+    "pulaar_texts": {
+        "title": "Pulaar Texts",
+        "tradition": "Futa Toro Pulaar",
+        "blurb": "won ko wonnō do — tale formula, a father's counsel, and mallol from Gaden 1913.",
+        "order": 17,
+    },
 }
 
 
