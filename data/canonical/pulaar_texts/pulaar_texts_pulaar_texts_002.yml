@@ -1,0 +1,128 @@
+source_id: PUL_002
+category: root_text
+work_id: pulaar_texts
+work_title: Pulaar Texts (Gaden)
+unit_id: pulaar_texts.pulaar_texts_002
+unit_label: Tale 15, Les conseils d'un père
+title: A Father's Counsel
+unit_type: verse
+commentary: 'The claim is a map of false nearness. Four relations look like intimacy and are not: the
+  neno who praises you, the king who rules you, the second wife, the stepson. Then a fifth, harder: even
+  blood splits. Father''s children and mother''s children are not the same loyalty. The scandal is the
+  last clause. Agnatic kin may wish you dead. They will not wish you shamed. Death is a fact. Shame is
+  the destruction of the name. This is Pulaar ethics in Pulaar, not a French report that the Peul consults
+  his mother. The dying father speaks koyēra. Honor is the thing kin will not spend even on an enemy-brother.
+  The rest of Gaden''s tale is a plot that proves the counsel by violating it: the son takes a neno as
+  companion, and the praise-man sells him. The unit keeps the counsel. Practice is the list, not the plot
+  twist. Existentially: name the relations you have mistaken for companionship. A patron is not a friend.
+  A second arrangement is not the first. And when you must choose a loyalty, ask not who loves you, but
+  who would refuse your shame.'
+themes:
+- pulaar
+- mallol
+- living speech
+- futa toro
+tags:
+- pulaar_texts
+- pulaar
+- mallol
+- futa-toro
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French
+  in *Le Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+  of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+  (too late).'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'mido rēntinma gede: neno wonā dādīdo, lāmdo wonā gidirādo, lembel wonā debbo, dutten wonā biddo;
+    wata woppu bibbe bāmma nanga bibbe yumma, sabu bi bāmma ina yidanma maide, kono yidanāma koyēra.'
+- kind: iast
+  label: Romanization
+  body: 'mido rēntinma gede: neno wonā dādīdo, lāmdo wonā gidirādo, lembel wonā debbo, dutten wonā biddo;
+    wata woppu bibbe bāmma nanga bibbe yumma, sabu bi bāmma ina yidanma maide, kono yidanāma koyēra.'
+- kind: translation
+  label: Pratibha Translation
+  body: 'I am going to put you on guard against some things: a flatterer is not a companion; a king is
+    not a comrade; a second wife is not a wife; a stepson is not a son. Do not abandon your father''s
+    children to take your mother''s children, because your father''s children will wish death for you,
+    but they will not wish shame for you.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is a map of false nearness. Four relations look like intimacy and are not: the neno
+    who praises you, the king who rules you, the second wife, the stepson. Then a fifth, harder: even
+    blood splits. Father''s children and mother''s children are not the same loyalty. The scandal is the
+    last clause. Agnatic kin may wish you dead. They will not wish you shamed. Death is a fact. Shame
+    is the destruction of the name. This is Pulaar ethics in Pulaar, not a French report that the Peul
+    consults his mother. The dying father speaks koyēra. Honor is the thing kin will not spend even on
+    an enemy-brother. The rest of Gaden''s tale is a plot that proves the counsel by violating it: the
+    son takes a neno as companion, and the praise-man sells him. The unit keeps the counsel. Practice
+    is the list, not the plot twist. Existentially: name the relations you have mistaken for companionship.
+    A patron is not a friend. A second arrangement is not the first. And when you must choose a loyalty,
+    ask not who loves you, but who would refuse your shame.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: neno
+    definition: flatterer of artisan/griot caste (rac. nen, to flatter) — not 'griot' as musician only;
+      one who lives by your praise cannot be your dādīdo (companion)
+  - term: koyēra
+    definition: shame, dishonor — worse than death in this sentence; later semteende / pulaaku; Gaden's
+      1913 text already has the ranking
+  - term: bibbe bāmma / bibbe yumma
+    definition: father's children / mother's children — split lineage inside one household; English 'siblings'
+      hides the fork the father is pointing at
+  - term: wonā
+    definition: is not — four negations of false equivalence; the counsel is not advice to be cold; it
+      is a refusal to name the wrong thing as the right thing
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Analects 13.3, rectification of names
+    resonance: Both insist a king is not a comrade and a second is not a first.
+    divergence: Confucius aims at ritual-political order; this father aims at a son's survival inside
+      caste and polygyny.
+  - citation: Sirach 6:5–17, on false friends
+    resonance: Both warn that proximity is not loyalty.
+    divergence: Biblical wisdom is theistic gnomic verse; this is a dying man's list, then a tale that
+      proves it by breach.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Write four names you have been using wrongly: someone you called friend who is a patron, someone
+    you called kin who is a faction. For one day, use the accurate word. Do not abandon anyone. Stop lying
+    about the relation.'
+provenance:
+  collection: Pulaar Texts (Gaden)
+  category: pulaar
+  verse: '2'
+  gaden: Tale 15, Les conseils d'un père
+  cultural_context: 'Futa Toro Pulaar (Gaden: poulàr) from the Senegal river valley. Gaden asked Futa
+    literates accustomed to Ajami to compose or dictate; he prints their Pulaar and a facing French version.
+    Named authors in this selection include Mahmadou Alfa and Tyerno Aoudi. A mallol (pl. malli) is a
+    proverb or parabolic locution whose apparent sense covers a hidden one. Orthography is Gaden''s 1913
+    Latin plate (long vowels marked), not modern Pulaar ɓ ɗ ƴ ŋ.'
+  original_source: 'Gaden, Le Poular, t. I Textes (Paris: Leroux, 1913)'
+  original_reliability: SOURCED — Gaden 1913 Latin transcription of Futa Toro Ajami, lightly cleaned of
+    OCR junk; not Gaden 1931
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French in *Le
+    Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+    of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+    (too late).'
+translation: 'I am going to put you on guard against some things: a flatterer is not a companion; a king
+  is not a comrade; a second wife is not a wife; a stepson is not a son. Do not abandon your father''s
+  children to take your mother''s children, because your father''s children will wish death for you, but
+  they will not wish shame for you.'
+abhyasa: 'Write four names you have been using wrongly: someone you called friend who is a patron, someone
+  you called kin who is a faction. For one day, use the accurate word. Do not abandon anyone. Stop lying
+  about the relation.'
+practice: 'Write four names you have been using wrongly: someone you called friend who is a patron, someone
+  you called kin who is a faction. For one day, use the accurate word. Do not abandon anyone. Stop lying
+  about the relation.'
+original: 'mido rēntinma gede: neno wonā dādīdo, lāmdo wonā gidirādo, lembel wonā debbo, dutten wonā biddo;
+  wata woppu bibbe bāmma nanga bibbe yumma, sabu bi bāmma ina yidanma maide, kono yidanāma koyēra.'
+transliteration: 'mido rēntinma gede: neno wonā dādīdo, lāmdo wonā gidirādo, lembel wonā debbo, dutten
+  wonā biddo; wata woppu bibbe bāmma nanga bibbe yumma, sabu bi bāmma ina yidanma maide, kono yidanāma
+  koyēra.'
+tts_key: true

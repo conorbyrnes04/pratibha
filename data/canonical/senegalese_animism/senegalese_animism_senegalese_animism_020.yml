@@ -1,0 +1,133 @@
+source_id: SEN_ANIM_020
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_020
+unit_label: Awa Holds the First Seat of the House
+title: Awa Holds the First Seat of the House
+unit_type: teaching_passage
+commentary: 'The claim is that a house is a cosmos with a first seat. Lasnet''s sentence is short and
+  it is enough. Authority in the square is named: awa. The women are not a heap. Each has a distinct case
+  and her children. The husband is not the center of a single room; he lodges apart. Comparison with Muslim
+  custom is the observer''s crib. The Serer structure is spatial and hierarchical at once: one carré,
+  several dwellings, one first-seat. This is not a romance of polygamy and not a license for the surrounding
+  pages'' ethnography of capture and incest, which this collection refuses as teaching. What is kept is
+  the philosophy of the household as ordered multiplicity. In a religion of local mammam — genius of the
+  house among them — the square is already a small village of spirits. Someone must hold the first relation
+  to that genius. Awa is that office. Existentially, most modern households still have an unnamed first-seat
+  and unnamed separate rooms of power, and they pretend otherwise until a fight. The teaching is to name
+  the order without pretending the house is a single self. You do not appoint an awa. You can admit who
+  actually holds first care in your square, give that person one concrete honor today, and keep distinct
+  rooms from collapsing into a blur.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Comme chez les musulmans, la première femme a autorité sur les autres et s'appelle awa; elles
+    habitent toutes le même carré, mais occupent des cases distinctes avec leurs enfants, le mari a également
+    son logement à part.
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Key term: awa — first wife as household authority.
+    Distinct houses in one square; the husband also lodges apart. Household cosmology, not a catalog of
+    marriage violence.'
+- kind: translation
+  label: Pratibha Translation
+  body: As among the Muslims, the first wife has authority over the others and is called awa. They all
+    live in the same square, but occupy distinct houses with their children; the husband likewise has
+    his lodging apart.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that a house is a cosmos with a first seat. Lasnet''s sentence is short and it is
+    enough. Authority in the square is named: awa. The women are not a heap. Each has a distinct case
+    and her children. The husband is not the center of a single room; he lodges apart. Comparison with
+    Muslim custom is the observer''s crib. The Serer structure is spatial and hierarchical at once: one
+    carré, several dwellings, one first-seat. This is not a romance of polygamy and not a license for
+    the surrounding pages'' ethnography of capture and incest, which this collection refuses as teaching.
+    What is kept is the philosophy of the household as ordered multiplicity. In a religion of local mammam
+    — genius of the house among them — the square is already a small village of spirits. Someone must
+    hold the first relation to that genius. Awa is that office. Existentially, most modern households
+    still have an unnamed first-seat and unnamed separate rooms of power, and they pretend otherwise until
+    a fight. The teaching is to name the order without pretending the house is a single self. You do not
+    appoint an awa. You can admit who actually holds first care in your square, give that person one concrete
+    honor today, and keep distinct rooms from collapsing into a blur.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: awa
+    definition: first wife; holder of authority over the other wives in the square -> household cosmology,
+      not a romance title -> "senior wife" in a soap-opera sense misses the office
+  - term: carré
+    definition: the square of houses -> one compound, several dwellings -> the village in miniature, already
+      a map of mammam
+  - term: cases distinctes
+    definition: distinct houses with their children -> multiplicity inside the bond -> a single shared
+      bedroom as the image of family would erase this cosmos
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Proverbs 31 and the named competent woman of the house
+    resonance: Both treat household authority as an office with a public name, not as private charm.
+    divergence: Proverbs praises a wife inside a patriarchal Israelite house of one God; awa is first-seat
+      in a plural square whose house-spirit is addressed, not Roog.
+  - citation: Roman paterfamilias versus the mater of the domus
+    resonance: Both know that a domestic world has a ranked speaker, not a cloud of equals pretending
+      to have no order.
+    divergence: Roman law centers the father; Lasnet's Serer square names the first wife as the authority
+      among the women and lodges the husband apart.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Name who actually holds first care in your household or shared place — including if it is you.
+    Do one act of honor toward that office today (thanks, a task taken off them, a door left closed).
+    Do not invent a rank you do not live.
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '20'
+  section: Lasnet 1900, Sérères — Mariage
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Mariage
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: As among the Muslims, the first wife has authority over the others and is called awa. They
+  all live in the same square, but occupy distinct houses with their children; the husband likewise has
+  his lodging apart.
+abhyasa: Name who actually holds first care in your household or shared place — including if it is you.
+  Do one act of honor toward that office today (thanks, a task taken off them, a door left closed). Do
+  not invent a rank you do not live.
+practice: Name who actually holds first care in your household or shared place — including if it is you.
+  Do one act of honor toward that office today (thanks, a task taken off them, a door left closed). Do
+  not invent a rank you do not live.
+original: Comme chez les musulmans, la première femme a autorité sur les autres et s'appelle awa; elles
+  habitent toutes le même carré, mais occupent des cases distinctes avec leurs enfants, le mari a également
+  son logement à part.
+transliteration: 'French ethnographic report of Serer oral teaching. Key term: awa — first wife as household
+  authority. Distinct houses in one square; the husband also lodges apart. Household cosmology, not a
+  catalog of marriage violence.'

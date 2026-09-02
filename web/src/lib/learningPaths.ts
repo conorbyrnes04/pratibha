@@ -1764,8 +1764,9 @@ export const LEARNING_REALMS: LearningRealm[] = [
   {
     id: "living-speech",
     title: "Living Speech",
-    blurb: "Òwe — the horse of conversation. Wisdom that travels by proverb.",
-    trackIds: ["the-horse-of-conversation"],
+    blurb:
+      "Wisdom that travels by speech: Yoruba òwe, Serer cosaan, Pulaar mallol — a proverb, a binding, a tale to be heard.",
+    trackIds: ["the-horse-of-conversation", "the-sky-is-not-addressed", "the-remaining-cult"],
   },
   {
     id: "sufi",

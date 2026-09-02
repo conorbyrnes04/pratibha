@@ -1026,7 +1026,7 @@ export const WESTERN_TRAILS: LearningTrack[] = [
         misconception:
           "That you will see a king who is not you — an object standing apart — or that the mirror means you simply are God.",
         passageId: "conference_of_the_birds.cot_28",
-        supportingPassageIds: ["rumi_mathnawi_yi_manawi.mth_001"],
+        supportingPassageIds: ["rūmī_mathnawī_yi_maʿnawī.rum_001"],
         theme: "recognition",
         chatMode: "compare",
         chatPrompt:

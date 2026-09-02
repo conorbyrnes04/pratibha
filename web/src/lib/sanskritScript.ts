@@ -50,7 +50,7 @@ export function isLongNativeScript(text?: string): boolean {
 }
 
 const NON_SANSKRIT_COLLECTION =
-  /heraclitus|fragment|epictetus|enchiridion|meditations|phaedo|plato|plotinus|ennead|eckhart|ibn.?arabi|know.?yourself|balyani|rumi|mathnawi|tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|zhongyong|milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō|yoruba|òwe|johnson|eastman|zitkala|dakota|soul of the indian|old indian legends/i;
+  /heraclitus|fragment|epictetus|enchiridion|meditations|phaedo|plato|plotinus|ennead|eckhart|ibn.?arabi|know.?yourself|balyani|rumi|mathnawi|tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|zhongyong|milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō|yoruba|òwe|johnson|eastman|zitkala|dakota|soul of the indian|old indian legends|senegal|serer|pulaar|gaden|fulbe|fulɓe|peul|lasnet/i;
 
 const SANSKRIT_COLLECTION =
   /upanishad|upaniṣad|chandogya|isavasya|svetasvatara|mandukya|bhagavad.?gita|astavakra|ashtavakra|aṣṭāvakra|patanjali|patañjali|yoga.?s[uū]tra|vijnana|bhairava|shiva|siva|tantra|spanda|yogin[iī]|pratyabhij|kashmir|nagarjuna|madhyamaka|mmk|shantideva|śāntideva|bodhicary|heart.?s[uū]tra|prajnaparamita|tilopa|maha.?mudra/i;

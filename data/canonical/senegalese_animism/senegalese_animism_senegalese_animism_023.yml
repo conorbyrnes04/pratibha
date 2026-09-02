@@ -1,0 +1,137 @@
+source_id: SEN_ANIM_023
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_023
+unit_label: The Maternal Uncle Outranks the Father
+title: The Maternal Uncle Outranks the Father
+unit_type: teaching_passage
+commentary: 'The claim is that blood-authority does not follow the European father-house by default. The
+  mother''s brother is the stronger pole. Lasnet calls the family badly organized because he is looking
+  for a paterfamilias and finds a maternal uncle. That is his failure of theory, not theirs. In a world
+  where the first child must be born in the mother''s village, it is coherent that the mother''s brother
+  — the male of that village-line — speaks for the child more than the genitor who married in. The contested
+  move is to take this as cosmology, not as an insult to fathers. Authority here is about which dead and
+  which soil may claim the young. Entrusting children to a relative for education is the same grammar
+  as initiation seclusion: the person is formed by more than the conjugal pair. Colonial sentences on
+  the same page that degrade women as beasts of burden are refused. Unit 20 already recorded awa as named
+  household authority; this unit records a named male office on the mother''s side. Existentially, many
+  houses still run on an unofficial uncle, aunt, or elder who actually holds the child while a legal father
+  is elsewhere. The teaching is to honor the real pole without pretending the nuclear pair was the cosmos.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: La famille est assez mal organisée, le père a une autorité très relative, la mère n'est jamais
+    consultée; le rôle de la femme est d'ailleurs des plus effacé. L'oncle maternel a plus d'autorité
+    sur les enfants que le père. Souvent les enfants sont confiés à un proche qui est chargé de leur éducation
+    jusqu'à douze ou treize ans pour les filles, quatorze ou quinze pour les garçons.
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Kinship cosmology: the maternal uncle has
+    more authority over the children than the father. Lasnet''s contempt for the family as "badly organized"
+    and the woman as a beast of burden is observer poison, not teaching. Awa (unit 20) already names female
+    household office.'
+- kind: translation
+  label: Pratibha Translation
+  body: The father's authority is only relative. The maternal uncle has more authority over the children
+    than the father. Children are often entrusted to a relative charged with their education until twelve
+    or thirteen for girls, fourteen or fifteen for boys.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that blood-authority does not follow the European father-house by default. The mother''s
+    brother is the stronger pole. Lasnet calls the family badly organized because he is looking for a
+    paterfamilias and finds a maternal uncle. That is his failure of theory, not theirs. In a world where
+    the first child must be born in the mother''s village, it is coherent that the mother''s brother —
+    the male of that village-line — speaks for the child more than the genitor who married in. The contested
+    move is to take this as cosmology, not as an insult to fathers. Authority here is about which dead
+    and which soil may claim the young. Entrusting children to a relative for education is the same grammar
+    as initiation seclusion: the person is formed by more than the conjugal pair. Colonial sentences on
+    the same page that degrade women as beasts of burden are refused. Unit 20 already recorded awa as
+    named household authority; this unit records a named male office on the mother''s side. Existentially,
+    many houses still run on an unofficial uncle, aunt, or elder who actually holds the child while a
+    legal father is elsewhere. The teaching is to honor the real pole without pretending the nuclear pair
+    was the cosmos.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: oncle maternel
+    definition: the mother's brother -> stronger authority over children than the father -> "uncle" as
+      a casual relative misses the office of the mother's ground
+  - term: autorité très relative
+    definition: the father's merely relative authority -> Lasnet's complaint is the evidence of a different
+      cosmos -> not a failed patriarchy; a maternal pole
+  - term: village d'origine de sa mère
+    definition: the mother's village of unit 14 -> the ground this uncle represents -> without that unit,
+      uncle-right looks like a quirk
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: West African avunculate as a regional structure (compare Mande and Wolof reports in the
+      same PD century)
+    resonance: Both lodge a child's heavier bond on the mother's brother rather than on the conjugal father
+      alone.
+    divergence: Regional comparison can flatten; Lasnet's Serer instance is tied to first birth in the
+      mother's village and refusal of foreign burial.
+  - citation: Gospel household sayings that relativize the father-house (Luke 8:19–21)
+    resonance: Both refuse to treat the legal father-house as the only real kinship.
+    divergence: Luke relocates family into doing the word of God; Serer uncle-right relocates it into
+      the mother's soil-line without addressing Roog.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Name the person, other than a legal parent, who actually helped form you — an uncle, aunt, teacher,
+    elder. Send one concrete thanks today. If you hold that office for a younger person, do one act of
+    authority that is care, not control.
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '23'
+  section: Lasnet 1900, Sérères — Organisation sociale
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Organisation sociale
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: The father's authority is only relative. The maternal uncle has more authority over the children
+  than the father. Children are often entrusted to a relative charged with their education until twelve
+  or thirteen for girls, fourteen or fifteen for boys.
+abhyasa: Name the person, other than a legal parent, who actually helped form you — an uncle, aunt, teacher,
+  elder. Send one concrete thanks today. If you hold that office for a younger person, do one act of authority
+  that is care, not control.
+practice: Name the person, other than a legal parent, who actually helped form you — an uncle, aunt, teacher,
+  elder. Send one concrete thanks today. If you hold that office for a younger person, do one act of authority
+  that is care, not control.
+original: La famille est assez mal organisée, le père a une autorité très relative, la mère n'est jamais
+  consultée; le rôle de la femme est d'ailleurs des plus effacé. L'oncle maternel a plus d'autorité sur
+  les enfants que le père. Souvent les enfants sont confiés à un proche qui est chargé de leur éducation
+  jusqu'à douze ou treize ans pour les filles, quatorze ou quinze pour les garçons.
+transliteration: 'French ethnographic report of Serer oral teaching. Kinship cosmology: the maternal uncle
+  has more authority over the children than the father. Lasnet''s contempt for the family as "badly organized"
+  and the woman as a beast of burden is observer poison, not teaching. Awa (unit 20) already names female
+  household office.'

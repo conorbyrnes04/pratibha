@@ -1,0 +1,282 @@
+path_id: the_sky_is_not_addressed
+work_id: senegalese_animism
+work_title: Serer Cosaan
+title: "The Sky Is Not Addressed"
+tradition: Serer
+covers: "Units 1, 2, 4, 10, 11, 6, 9, 17 — Roog as sky, spirits as addressees, binding, first-fruits, the dead ear, land"
+status: complete
+
+# Living speech. Cosaan is oral tradition, not a sūtra. Do not turn Lasnet into
+# a Serer bible. Each gate blocks one colonial or modern error.
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  Do not adopt colonial contempt, and do not invent Gravrand. Keep the highest
+  high by refusing to chat with it. Bind at what is near.
+
+premise: >
+  You are not collecting West African religion. You are walking Serer cosaan as
+  a practice: do not make an image of the sky; do not address God; bind at tree
+  and stone; offer the first taste; speak into an ear at the threshold; hold
+  ancestor and land as one cult; remain toward the ground that made you. The
+  highest is not the most available.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+  - "Do not add a shrine, a drum, or a costume to prove you understood."
+
+gates:
+  - gate_id: gate_0_sky
+    name: "The sky is not an image"
+    theme: "The invisible master is named as the sky. Do not make a statue of it."
+    why_first: >
+      If Roog is already an idol in your mind, every later spirit, tree, and
+      libation collapses into 'fetish.' The first act is negative.
+    stations:
+      - station: 1
+        unit_id: senegalese_animism.senegalese_animism_001
+        reference: "Lasnet 1900, Sérères — Religion"
+        title: "The Invisible Master Is Named as the Sky"
+        opening_question: "What image am I still making of the highest so I can hold it?"
+        transmission: >
+          There is an invisible master of all things. That master inhabits the
+          sky, sees conduct, and takes satisfaction in those who practice the
+          good. The Serer name this master with the same word they use for the
+          sky: Rog among the Sine, Koch among the Noon. The difficulty is the
+          colonial habit — everything is a fetish — and the opposite modern
+          habit: if it has a name, it must be a person you can display. The
+          sky is the analog of what cannot be pictured. Height without a
+          summit. Presence without a statue. Later sources (not used here)
+          will say Roog Sene, Roog the Immensity. Even in Lasnet the structure
+          is already visible: invisibility, totality, moral regard, and a name
+          that is not a cult-object. The first philosophical act is negative:
+          do not make an image of the sky.
+        contemplation: "The highest is not the most available."
+        gate_practice: >
+          Stand where you can see open sky. For three minutes do not pray to it
+          and do not photograph it. Let the sky be the analog of what you
+          cannot make into an object. Then name one ordinary good you will
+          practice today as if it were already seen.
+        passed_when: "You can leave the sky unphotographed and unprayed-to, and still practice one good under it."
+
+  - gate_id: gate_1_spirits
+    name: "Do not address God"
+    theme: "The middle is where speech goes. The sky is not a correspondent."
+    why_first: >
+      Naming Roog without a shrine still leaves the mouth hungry. If you skip
+      this, you will start a prayer-life aimed at the absolute and call it
+      Serer.
+    stations:
+      - station: 2
+        unit_id: senegalese_animism.senegalese_animism_002
+        reference: "Lasnet 1900, Sérères — Religion"
+        title: "One Does Not Address God; One Addresses the Spirits"
+        opening_question: "Which remote absolute am I still using as my addressee so I do not have to speak to what is near?"
+        transmission: >
+          They believe above all in the spirits, mammam, and they never address
+          themselves to God. Forest, field, spring, village, house — each has
+          a genius. The difficulty: religion means talking to the highest
+          being. Here the highest is known and withheld. Speech goes to the
+          middle. That is not a failure of theology. It is the theology. Keep
+          the sky high by speaking to the inhabited near: water, ground, room.
+          Dakota silence is a different withholding. Serer withholding still
+          has a mouth. The mouth is for mammam, not for Roog.
+        contemplation: "Not addressing God is how God stays God."
+        gate_practice: >
+          Today, do not address a remote absolute. Address what is actually
+          near: the room, the water you drink, the ground you cross. Silently
+          acknowledge each as already inhabited. Ask nothing of God-as-sky.
+          Keep the highest high by speaking to the middle.
+        passed_when: "You can complete one ordinary circuit of the day without sending a request upward, and still acknowledge what is near."
+
+  - gate_id: gate_2_two_gods
+    name: "Justice is not increase"
+    theme: "Takhar judges. Tiurakh prospers. Do not let goods write the verdict."
+    why_first: >
+      After the sky and the spirits, the forest still has two offices. Collapse
+      them and worship becomes a bargain for harvest dressed as justice.
+    stations:
+      - station: 3
+        unit_id: senegalese_animism.senegalese_animism_004
+        reference: "Bérenger-Féraud 1879 / Lasnet 1900"
+        title: "Takhar of Justice, Tiurakh of Increase"
+        opening_question: "Where did I let a desire for goods write a verdict I called justice?"
+        transmission: >
+          They have two Gods: Takhar, who presides over justice; Tiurakh, who
+          disposes of all goods. Both inhabit the greatest trees. The woods
+          are sanctuaries, not scenery. The difficulty is hearing 'two Gods'
+          as polytheism-for-tourists, or as one sky split into mascots. These
+          are offices. Rightness is not prosperity. Prosperity is not a proof
+          of rightness. A gift beside a designated tree is how a house stays
+          in relation to increase. It is not a bribe that converts Takhar.
+          Sort the day. If you ask for increase, name a corresponding
+          rightness you will keep.
+        contemplation: "The forest holds two seats. Do not sit one in the other's chair."
+        gate_practice: >
+          At day's end, sort one event into Takhar or Tiurakh: was this about
+          rightness, or about increase? Do not let the desire for goods write
+          the verdict of justice. If you ask for increase, name a corresponding
+          rightness you will keep.
+        passed_when: "You can name one event as justice and another as increase, without using the second to settle the first."
+
+  - gate_id: gate_3_bind
+    name: "To worship is to bind"
+    theme: "Religion is a disposition, not an opinion about spirits."
+    why_first: >
+      Sky, spirits, two offices — and still the modern mouth says 'I believe.'
+      Binding is milk and millet at the root. Feeling is not the rite.
+    stations:
+      - station: 4
+        unit_id: senegalese_animism.senegalese_animism_010
+        reference: "Lasnet 1900"
+        title: "To Worship Is to Bind"
+        opening_question: "Which bond have I been treating as a mood instead of a repeated act?"
+        transmission: >
+          To render the spirits favorable, one pours milk or millet-water at
+          the foot of the trees or upon consecrated stones. Worship here is
+          not interior assent. It is a set of dispositions that bind. The
+          colonial word is fetish: contempt for people who take objects
+          seriously. The modern word is spirituality: contempt for acts that
+          are not feelings. Both miss the claim. You bind by pouring, by
+          repeating, by locating the act at a tree or a stone. Opinion about
+          mammam can wait. The religion is the disposition.
+        contemplation: "The act, not the opinion, is the religion."
+        gate_practice: >
+          Choose one bond you have been treating as a feeling (gratitude to a
+          place, to a dead person, to a household). Give it a disposition: a
+          time, a small offering, a repeated act. Do it once today. That act,
+          not the opinion, is the religion.
+        passed_when: "You can point to one binding-act you actually did, not to a feeling you had about a bond."
+
+  - gate_id: gate_4_first_fruits
+    name: "The first taste is spoken for"
+    theme: "Increase is answered before it is stored."
+    why_first: >
+      Binding without first-fruits becomes a private piety that keeps the
+      surplus. Toujours is the law: the first of what arrived is not proof
+      that you are the source.
+    stations:
+      - station: 5
+        unit_id: senegalese_animism.senegalese_animism_011
+        reference: "Lasnet 1900"
+        title: "First-Fruits Are Always Offered"
+        opening_question: "What increased around me this season that I stored as if I were the source?"
+        transmission: >
+          The first-fruits of the harvest are always offered to them.
+          Lasnet's adverb is the teaching: toujours. Not a festival you throw
+          when the year was kind. Before the house eats as owner, the dwellers
+          of tree and stone eat as hosts. The contested move is the modern
+          sequence — harvest, store, feel grateful, maybe donate. Here the
+          first taste is already spoken for. Colonial pages nearby will talk
+          of wasted grain. The philosophy is the opposite of waste. It is the
+          admission that yield has a source that is not the hoe.
+        contemplation: "Surplus is not evidence that you are the source."
+        gate_practice: >
+          Before you eat today's first real meal, set aside a small first
+          portion — a bite of bread, a sip of water. Take it outside to one
+          actual tree, stone, or patch of ground you did not make. Leave it.
+          Then eat. Do not bargain.
+        passed_when: "You can give the first taste away before eating, without turning the gift into a bargain."
+
+  - gate_id: gate_5_ear
+    name: "Speak to the dead at the ear"
+    theme: "Death is not silence. The threshold still has an addressee."
+    why_first: >
+      Binding and first-fruits can stay among the living. Serer death-work
+      refuses the modern ear: the dead do not hear, so we perform for the
+      mourners. Here you speak into the ear of the one who just left.
+    stations:
+      - station: 6
+        unit_id: senegalese_animism.senegalese_animism_006
+        reference: "Lasnet 1900"
+        title: "Speak to the Dead at the Ear"
+        opening_question: "What would I need to say into an ear at the threshold — and to whom have I been saying it instead?"
+        transmission: >
+          Immediately after death the body is washed, oiled, wrapped. Elders
+          speak. Then each person goes in turn to bid farewell and to speak
+          into the ear. Burial is the same day, facing east. Water and
+          couscous at the feet. The difficulty: funerals are for the living,
+          or the dead have become a silence you must not disturb. Serer
+          practice keeps an addressee. The ear is still a place. You do not
+          need a death today to train the slowness. Speak to a living ear as
+          if it were holy. Then, alone, say the sentence you would want at
+          the threshold.
+        contemplation: "The dead are not an audience. They are an ear."
+        gate_practice: >
+          You do not need a death today to train this. Sit with someone
+          living. For one minute, speak as if the ear is holy — slow,
+          particular, nothing performative. Then, alone, say one sentence you
+          would want spoken into your ear at the threshold. Keep it true.
+        passed_when: "You can speak one true sentence into a living ear without performing, and keep one sentence for the threshold."
+
+  - gate_id: gate_6_land
+    name: "Ancestor and land are one cult"
+    theme: "Soil is not real estate. The dead are not a psychology."
+    why_first: >
+      If land is property and ancestors are memory, the earlier rites become
+      lifestyle. The lamane and the family dead are not two topics.
+    stations:
+      - station: 7
+        unit_id: senegalese_animism.senegalese_animism_009
+        reference: "Lasnet 1900"
+        title: "The Ancestor and the Land Are One Cult"
+        opening_question: "Which ground and which dead person have I been keeping in separate rooms of the mind?"
+        transmission: >
+          The Serer are deeply attached to their soil. They live where they
+          were born, grouped by families in a fold of land they have put under
+          cultivation. The notables are lamanes: they alone own the soil,
+          transmit it, lend or rent it. The land-master and the family dead
+          are not two cults. Dakota nature-as-shrine is a surrounding Mystery
+          without this ancestor-seat. Serer soil is particular, inherited,
+          and peopled by the dead who made your life possible. Do not upgrade
+          'attachment to land' into nationalism or eco-mood. Name last
+          night's ground and one dead person as a single relation.
+        contemplation: "The fold of land is already a congregation."
+        gate_practice: >
+          Name the actual ground you slept on last night and one dead person
+          whose life made yours possible. Hold them as one relation, not two
+          topics. Offer a sip of water to the ground, and a sentence of
+          thanks to that dead person, as a single act.
+        passed_when: "You can name ground and ancestor in one breath, and make one offering that is for both."
+
+  - gate_id: gate_7_remain
+    name: "Do not leave as if the ground were nothing"
+    theme: "Mobility is not automatically freedom. Remaining is an act."
+    why_first: >
+      Attachment without remaining becomes nostalgia. The last gate is not
+      'never travel.' It is: do not treat leaving as morally empty.
+    stations:
+      - station: 8
+        unit_id: senegalese_animism.senegalese_animism_017
+        reference: "Lasnet 1900"
+        title: "One Does Not Leave Ancestral Land Voluntarily"
+        opening_question: "What ground have I left as if the leaving were nothing?"
+        transmission: >
+          Never would Serer people displace themselves voluntarily to go live
+          in a foreign land. Those who go far are ill-regarded; sometimes
+          burial is refused. The difficulty is hearing this as a prison, or
+          as a tourist's romance of rootedness. The teaching is that ground
+          is not interchangeable. You may already have left. Do not call that
+          nothing. Remaining can be a call, water poured where you now stand
+          in the old ground's name, a refusal to sell one inherited thing.
+          Cosmopolitan ease that treats every soil as a backdrop has already
+          decided the cult is over.
+        contemplation: "Leaving is a religious fact. So is remaining toward what you left."
+        gate_practice: >
+          Name the ground you have actually left — a town, a house, a family
+          field. Do not call the leaving nothing. Send one concrete act of
+          remaining toward it today: a call to a living elder, water poured
+          where you now stand in its name, or a refusal to sell one inherited
+          thing.
+        passed_when: "You can name a leaving without calling it nothing, and complete one act of remaining toward that ground."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    Complete as a first walk of Serer cosaan from these PD sources. Later
+    slices (soul-eater, lamane, Bante, woods as sanctuary) stay off this
+    trail until a second gate-sequence is warranted. Do not compile Gravrand.
+  next_gates: []

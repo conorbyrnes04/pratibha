@@ -47,6 +47,9 @@ const SUMI_RULES: Array<{ pattern: RegExp; glyph: string }> = [
   { pattern: /confucius|analect|zhongyong/i, glyph: "tree" },
   { pattern: /eckhart|abegescheidenheit/i, glyph: "chalice" },
   { pattern: /eastman|ohiyesa|zitkala|dakota|sioux|soul of the indian|indian legends/i, glyph: "eagle" },
+  { pattern: /pulaar.?texts|gaden|le.?poular/i, glyph: "horse" },
+  { pattern: /pulaar.?tradition|ful[bɓ]e|peul/i, glyph: "ox" },
+  { pattern: /senegalese.?animism|serer|pangool|roog/i, glyph: "oak" },
   { pattern: /yoruba|òwe|\bowe\b|orisha|orisa|ifa/i, glyph: "shango" },
 ];
 

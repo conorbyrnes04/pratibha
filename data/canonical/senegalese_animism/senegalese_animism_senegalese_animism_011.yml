@@ -1,0 +1,134 @@
+source_id: SEN_ANIM_011
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_011
+unit_label: First-Fruits Are Always Offered
+title: First-Fruits Are Always Offered
+unit_type: teaching_passage
+commentary: 'The claim is that increase is answered before it is stored. Lasnet''s adverb is the teaching:
+  toujours. First-fruits are not a festival you throw when the year was kind. They are a law of relation.
+  Before the house eats as owner, the dwellers of tree and stone eat as hosts. The contested move is to
+  refuse the modern sequence — harvest, store, feel grateful, maybe donate. Here the first taste is already
+  spoken for. Millet-water and milk at the root are the daily grammar; first-fruits are that grammar applied
+  to the year''s yield. Tiurakh, in Bérenger, is the named power of abundant harvests and herds; this
+  sentence is how a house stays in his debt without pretending the field was empty of persons. Colonial
+  pages nearby will talk of superstition and wasted grain. The philosophy is the opposite of waste. It
+  is the admission that yield has a source that is not the hoe. Existentially, the teaching judges any
+  life that treats surplus as proof of private merit. If the first of what arrived is not returned to
+  the place that grew it, the house has already begun to live as if the land were dead stuff. You do not
+  need a millet harvest to take the claim. Whatever increased around you this season — money, food, time,
+  a child''s health — has a first taste that is not yours to keep as evidence that you are the source.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Pour se les rendre favorables on fait au pied des arbres ou sur des pierres consacrées des libations
+    de lait ou d'eau coupée de farine de mil et parfois des sacrifices d'animaux, les prémices de la récolte
+    leur sont toujours offertes.
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Key term: prémices — first-fruits of the harvest,
+    always offered to the mammam who dwell in tree and stone.'
+- kind: translation
+  label: Pratibha Translation
+  body: To render the spirits favorable, one pours libations of milk or millet-water at the foot of the
+    trees or upon consecrated stones. Sometimes one also offers animals. The first-fruits of the harvest
+    are always offered to them.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that increase is answered before it is stored. Lasnet''s adverb is the teaching:
+    toujours. First-fruits are not a festival you throw when the year was kind. They are a law of relation.
+    Before the house eats as owner, the dwellers of tree and stone eat as hosts. The contested move is
+    to refuse the modern sequence — harvest, store, feel grateful, maybe donate. Here the first taste
+    is already spoken for. Millet-water and milk at the root are the daily grammar; first-fruits are that
+    grammar applied to the year''s yield. Tiurakh, in Bérenger, is the named power of abundant harvests
+    and herds; this sentence is how a house stays in his debt without pretending the field was empty of
+    persons. Colonial pages nearby will talk of superstition and wasted grain. The philosophy is the opposite
+    of waste. It is the admission that yield has a source that is not the hoe. Existentially, the teaching
+    judges any life that treats surplus as proof of private merit. If the first of what arrived is not
+    returned to the place that grew it, the house has already begun to live as if the land were dead stuff.
+    You do not need a millet harvest to take the claim. Whatever increased around you this season — money,
+    food, time, a child''s health — has a first taste that is not yours to keep as evidence that you are
+    the source.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: prémices
+    definition: 'first-fruits, always offered -> economic theology: the first taste belongs to the dwellers
+      of the land -> "tithe" is too fiscal and too addressed to a high God; this goes to the mammam of
+      tree and stone'
+  - term: toujours
+    definition: always -> the rite is structural, not occasional -> a harvest festival you skip in a thin
+      year would already have broken the bond
+  - term: Tiurakh
+    definition: the named power of increase in Bérenger -> what first-fruits keep favorable to the house
+      -> not a market god of accumulation
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Deuteronomy 26:1–11 (basket of first-fruits)
+    resonance: Both require the first of the soil's yield to be carried and declared before the eater
+      stores it as property.
+    divergence: Israel's basket is spoken to YHWH with a land-history; Serer first-fruits are poured or
+      left for the local spirits and leave Roog unaddressed.
+  - citation: Bhagavad Gītā 3.13 (they eat leftover after the offering)
+    resonance: Both treat eating before offering as a kind of theft.
+    divergence: The Gītā's leftover is from a cosmic yajña; Lasnet's always is household-agricultural
+      at a particular tree.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Before you eat today's first real meal, set aside a small first portion — a bite of bread, a sip
+    of water. Take it outside to one actual tree, stone, or patch of ground you did not make. Leave it.
+    Then eat. Do not bargain.
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '11'
+  section: Lasnet 1900, Sérères — Religion
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Religion
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: To render the spirits favorable, one pours libations of milk or millet-water at the foot
+  of the trees or upon consecrated stones. Sometimes one also offers animals. The first-fruits of the
+  harvest are always offered to them.
+abhyasa: Before you eat today's first real meal, set aside a small first portion — a bite of bread, a
+  sip of water. Take it outside to one actual tree, stone, or patch of ground you did not make. Leave
+  it. Then eat. Do not bargain.
+practice: Before you eat today's first real meal, set aside a small first portion — a bite of bread, a
+  sip of water. Take it outside to one actual tree, stone, or patch of ground you did not make. Leave
+  it. Then eat. Do not bargain.
+original: Pour se les rendre favorables on fait au pied des arbres ou sur des pierres consacrées des libations
+  de lait ou d'eau coupée de farine de mil et parfois des sacrifices d'animaux, les prémices de la récolte
+  leur sont toujours offertes.
+transliteration: 'French ethnographic report of Serer oral teaching. Key term: prémices — first-fruits
+  of the harvest, always offered to the mammam who dwell in tree and stone.'
+tts_key: true

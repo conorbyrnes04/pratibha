@@ -11,6 +11,51 @@ type QuoteBank = {
 
 const HERO_QUOTES: QuoteBank[] = [
   {
+    pattern: /senegalese.?animism|serer|pangool/i,
+    quotes: [
+      "There is an invisible master of all things.",
+      "They believe above all in the spirits, mammam, and they never address themselves to God.",
+      "They have two Gods: on one side Takhar, who presides over justice; on the other Tiurakh, who disposes of all goods.",
+      "The Serer believe in a future life and in metempsychosis.",
+      "Two or three elders of the family deliver speeches, then all go in turn to bid farewell to the deceased and to speak into his ear.",
+      "The Serer are deeply attached to their soil.",
+      "To render the spirits favorable, one pours milk or millet-water at the foot of the trees or upon consecrated stones.",
+      "To render the spirits favorable, one pours libations of milk or millet-water at the foot of the trees or upon consecrated stones.",
+      "Never would Serer people displace themselves voluntarily to go live in a foreign land.",
+      "Among the presents is an empty canari, a large red earthen jar.",
+    ],
+  },
+  {
+    pattern: /pulaar.?texts|gaden|le.?poular/i,
+    quotes: [
+      "This is what was here; it will be, or it will not be. It is a tale — a thing to be heard.",
+      "A flatterer is not a companion; a king is not a comrade; a second wife is not a wife; a stepson is not a son.",
+      "Every affair — it is a cause that does it.",
+      "If the lies set out early and the truth in the evening, it will overtake the lies.",
+      "The heart is not a joint, that it might be bent.",
+      "What the cow has eaten is what the heifer suckles.",
+      "A single grief does not tear the belly by a single road.",
+      "The head, if it has not trusted the razor of God, the razor will not trust the head of God.",
+      "What produces fruit begins by flowering.",
+      "The cow puts her foot on her young — yet she does not hate.",
+    ],
+  },
+  {
+    pattern: /pulaar.?tradition|ful[bɓ]e/i,
+    quotes: [
+      "Even today, in Wassallah and Kankan, one finds nomad Peuls who have only one cult: that of their herds.",
+      "The cleanliness they observe in their cattle-pens has something religious about it.",
+      "It is the needs of their herds that determine their displacements.",
+      "Through the whole operation the young men must keep the greatest impassibility; it would be dishonor to complain.",
+      "Every time Peuls on a journey meet a tomb or a cemetery, they throw as they pass a handful of grass or green leaves.",
+      "A Peul never accomplishes an important action without consulting his mother.",
+      "The prohibition was instituted by the ancestor at the same time as the clan name.",
+      "Always in the midst of their herds, they know them admirably and make themselves loved by them.",
+      "In their markets they part only with oxen, never with calves or cows.",
+      "A fervent Muslim but not a fanatic, he keeps a continual gravity.",
+    ],
+  },
+  {
     pattern: /attar|mantiq|conference.?of.?the.?birds/i,
     quotes: [
       "We have a king, my friends, whose name is Simurgh, and whose residence is behind Mount Qaf.",
@@ -26,7 +71,7 @@ const HERO_QUOTES: QuoteBank[] = [
     ],
   },
   {
-    pattern: /hujwir|kashf.?al.?ma[hḥ]jub/i,
+    pattern: /hujwir|kashf.?al.?ma[hḥ]j[uū]b/i,
     quotes: [
       "Knowledge is of two kinds: divine and human.",
       "Poverty has an outward form and an inward reality.",
@@ -483,6 +528,8 @@ const HERO_QUOTES: QuoteBank[] = [
       "Mahāmudrā cannot be pointed to by any symbol, and the ordinary mind cannot grasp it as an object of thought.",
       "Just as space cannot be indicated with a finger or fenced in by a border, the nature of mind sems nyid has no center and no circumference.",
       "Whoever spends their effort completely and then rests in devotion to the guru bla ma will see the innate sahaja.",
+      "Mantra recitation, the perfections pāramitā, Vinaya, sūtras, the collections of teachings, and the rest.",
+      "Beyond the field of apprehended objects, mind’s own nature is lucid rang bzhin.",
     ],
   },
   {

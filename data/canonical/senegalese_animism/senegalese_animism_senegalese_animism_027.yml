@@ -1,0 +1,133 @@
+source_id: SEN_ANIM_027
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_027
+unit_label: The Lizard Taken to the Smith
+title: The Lizard Taken to the Smith
+unit_type: teaching_passage
+commentary: 'The claim is that public analogical binding can return a stolen object without a prison.
+  The drum makes the loss civic. The lizard is a stand-in body. The smith is the transformer of metal,
+  already a threshold person in West African cosmologies, here the one whose blows would multiply. The
+  thief, hearing the announcement, prefers to restore the thing rather than host those blows. Bérenger
+  records this as a curiosity of priests'' revenue. The recoverable philosophy is sharper. Justice here
+  works by publicity plus homology: a small body stands for a hidden agent, and the village is told. That
+  is Takhar''s department in a concrete rite. This collection will not teach striking an animal. The usable
+  core is the opposite of private revenge: you announce, you analogize, you wait overnight. Restoration
+  is the success, not the death. Existentially, online life is full of lizards struck in public for sport.
+  This rite is narrower. It aims at the return of a particular object by frightening a particular thief
+  who still lives in the same moral weather. You can copy only the announcement and the overnight wait.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Celui qui a été la victime d'un rapt, fait annoncer par eux au son du tam-tam qu'il a pris un
+    lézard et qu'il va le porter chez le forgeron. Il est bien rare que le lendemain matin l'objet volé
+    ne soit pas remis en place car chaque Sérère est persuadé que les coups donnés par le forgeron au
+    lézard retentiraient au centuple sur le voleur et entraîneraient bientôt sa mort.
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Public analogical justice: a lizard is announced,
+    taken to the smith; blows on the lizard would multiply on the thief. Practice for the reader is publicity
+    of loss, not harm to an animal.'
+- kind: translation
+  label: Pratibha Translation
+  body: The victim of a theft has it announced by the priests to the sound of the drum that he has taken
+    a lizard and is going to carry it to the smith. It is rare that the next morning the stolen object
+    is not put back in place, for each Serer person is persuaded that the blows the smith would give the
+    lizard would resound a hundredfold on the thief and would soon bring his death.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that public analogical binding can return a stolen object without a prison. The
+    drum makes the loss civic. The lizard is a stand-in body. The smith is the transformer of metal, already
+    a threshold person in West African cosmologies, here the one whose blows would multiply. The thief,
+    hearing the announcement, prefers to restore the thing rather than host those blows. Bérenger records
+    this as a curiosity of priests'' revenue. The recoverable philosophy is sharper. Justice here works
+    by publicity plus homology: a small body stands for a hidden agent, and the village is told. That
+    is Takhar''s department in a concrete rite. This collection will not teach striking an animal. The
+    usable core is the opposite of private revenge: you announce, you analogize, you wait overnight. Restoration
+    is the success, not the death. Existentially, online life is full of lizards struck in public for
+    sport. This rite is narrower. It aims at the return of a particular object by frightening a particular
+    thief who still lives in the same moral weather. You can copy only the announcement and the overnight
+    wait.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: lézard
+    definition: the lizard as analogical body of the thief -> homology, not zoology -> a mascot reading
+      misses that blows are believed to transfer
+  - term: forgeron
+    definition: the smith as the one whose strikes would multiply -> a transformer of hidden into visible
+      force -> "blacksmith" as mere trade misses the office in this rite
+  - term: tam-tam
+    definition: the drum that makes the theft public -> justice begins as announcement -> a silent suspicion
+      would not return the object
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: West African oaths at the smith's forge (regional structure)
+    resonance: Both treat the smith as a dangerous transformer before whom hidden wrongs become costly.
+    divergence: Forge-oaths vary by people; Bérenger's Serer instance is specifically the announced lizard
+      carried toward the hammer.
+  - citation: 2 Samuel 12 (Nathan's analogical ewe-lamb that indicts the thief)
+    resonance: Both use a stand-in creature to make a hidden taking public and unbearable to the taker.
+    divergence: Nathan speaks a parable to a king under YHWH; the Serer lizard is drummed toward a smith
+      under Takhar.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: If something of yours is missing, name the loss out loud to one other person today. Do not plot
+    a private revenge and do not harm a creature. Let the naming be the first justice, then wait one night
+    before you act.
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '27'
+  section: Bérenger-Féraud 1879, Les Sérères — Religion
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Bérenger-Féraud 1879, Les Sérères — Religion
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: The victim of a theft has it announced by the priests to the sound of the drum that he has
+  taken a lizard and is going to carry it to the smith. It is rare that the next morning the stolen object
+  is not put back in place, for each Serer person is persuaded that the blows the smith would give the
+  lizard would resound a hundredfold on the thief and would soon bring his death.
+abhyasa: If something of yours is missing, name the loss out loud to one other person today. Do not plot
+  a private revenge and do not harm a creature. Let the naming be the first justice, then wait one night
+  before you act.
+practice: If something of yours is missing, name the loss out loud to one other person today. Do not plot
+  a private revenge and do not harm a creature. Let the naming be the first justice, then wait one night
+  before you act.
+original: Celui qui a été la victime d'un rapt, fait annoncer par eux au son du tam-tam qu'il a pris un
+  lézard et qu'il va le porter chez le forgeron. Il est bien rare que le lendemain matin l'objet volé
+  ne soit pas remis en place car chaque Sérère est persuadé que les coups donnés par le forgeron au lézard
+  retentiraient au centuple sur le voleur et entraîneraient bientôt sa mort.
+transliteration: 'French ethnographic report of Serer oral teaching. Public analogical justice: a lizard
+  is announced, taken to the smith; blows on the lizard would multiply on the thief. Practice for the
+  reader is publicity of loss, not harm to an animal.'

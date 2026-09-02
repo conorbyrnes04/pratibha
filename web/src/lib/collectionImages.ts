@@ -97,9 +97,12 @@ export function natureVariantSrcs(baseSlug: string): string[] {
  * Order mirrors the generator manifest; more specific patterns first.
  */
 const REDBOOK_RULES: Array<{ pattern: RegExp; slug: string }> = [
+  { pattern: /senegalese.?animism|serer|lasnet|pangool/i, slug: "senegalese_animism" },
+  { pattern: /pulaar.?texts|gaden|le.?poular/i, slug: "pulaar_texts" },
+  { pattern: /pulaar.?tradition|ful[bɓ]e|peul/i, slug: "pulaar_tradition" },
   { pattern: /gospel.?of.?mary/i, slug: "gospel_of_mary" },
   { pattern: /attar|mantiq|conference.?of.?the.?birds/i, slug: "conference_of_the_birds" },
-  { pattern: /hujwir|kashf.?al.?ma[hḥ]jub/i, slug: "kashf_al_mahjub" },
+  { pattern: /hujwir|kashf.?al.?ma[hḥ]j[uū]b/i, slug: "kashf_al_mahjub" },
   { pattern: /logia of jesus|new.?testament.?logia/i, slug: "new_testament_logia" },
   { pattern: /course in miracles|acim/i, slug: "a_course_in_miracles" },
   { pattern: /psalm|tehillim|psalter/i, slug: "psalms_tehillim" },
