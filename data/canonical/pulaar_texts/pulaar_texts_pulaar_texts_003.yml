@@ -1,0 +1,109 @@
+source_id: PUL_003
+category: root_text
+work_id: pulaar_texts
+work_title: Pulaar Texts (Gaden)
+unit_id: pulaar_texts.pulaar_texts_003
+unit_label: Mallol 66
+title: Everything Is Done by a Cause
+unit_type: verse
+commentary: 'The claim is causal without being mechanical. Nothing just occurs. A sababu does it. Gaden
+  places this as the first of his proverbes et locutions proverbiales, and the next mallol rhymes it:
+  water is not salty without a reason. Futa Pulaar, already deep in Islam, uses an Arabic loan for cause
+  and a Pulaar verb for the doing. The world is not a pile of accidents. It is a field of reasons, including
+  reasons people will not admit. This is not yet Western determinism. Sababu in Sahelian usage includes
+  motive, pretext, the hidden why, the social cause. To say ko sababu wadata is to refuse both God did
+  it, so do not look and it just happened. Look for the cause. The looking is the practice. The proverb
+  does not say the cause is always just. It says there is one. Existentially: stop calling your pattern
+  bad luck. Name the sababu. If you cannot name one, you are not done looking. A life that cannot survive
+  this sentence is a life that has outsourced its own agency to weather.'
+themes:
+- pulaar
+- mallol
+- living speech
+- futa toro
+tags:
+- pulaar_texts
+- pulaar
+- mallol
+- futa-toro
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French
+  in *Le Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+  of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+  (too late).'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: hüde fuf, ko sababu wadata.
+- kind: iast
+  label: Romanization
+  body: hüde fuf, ko sababu wadata.
+- kind: translation
+  label: Pratibha Translation
+  body: Every affair — it is a cause that does it.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is causal without being mechanical. Nothing just occurs. A sababu does it. Gaden places
+    this as the first of his proverbes et locutions proverbiales, and the next mallol rhymes it: water
+    is not salty without a reason. Futa Pulaar, already deep in Islam, uses an Arabic loan for cause and
+    a Pulaar verb for the doing. The world is not a pile of accidents. It is a field of reasons, including
+    reasons people will not admit. This is not yet Western determinism. Sababu in Sahelian usage includes
+    motive, pretext, the hidden why, the social cause. To say ko sababu wadata is to refuse both God did
+    it, so do not look and it just happened. Look for the cause. The looking is the practice. The proverb
+    does not say the cause is always just. It says there is one. Existentially: stop calling your pattern
+    bad luck. Name the sababu. If you cannot name one, you are not done looking. A life that cannot survive
+    this sentence is a life that has outsourced its own agency to weather.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: hüde
+    definition: thing, affair, matter — not a physical object only; a happening; English 'everything'
+      is too cosmic; this is every case
+  - term: sababu
+    definition: cause, reason (Arabic sabab in Pulaar) — loanword as conceptual tool; 'reason' in the
+      philosophical sense, not 'excuse' only, though pretext is included
+  - term: wadata
+    definition: does / makes (it) — the cause is an agent-like doer; English 'is caused' is too passive
+  - term: fuf
+    definition: all, every — totality of affairs, not of atoms
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Aristotle, Physics II, on aitia
+    resonance: Both refuse uncaused happenings.
+    divergence: Aristotle's four causes are a technical system; sababu is a proverb's one word for why.
+  - citation: Qurʾān 18:84–85, sabab as a means God gives Dhū l-Qarnayn
+    resonance: Both inherit the Arabic root of means and cause.
+    divergence: The Qurʾān can mean a cord, a way, a means to a horizon; Futa usage here is everyday causality
+      you must name.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Take one thing that just happened this week. Do not stop at luck or fate. Name one sababu you
+    can actually point to — a choice, a hunger, a fear, a word. If the first name is false, look again.
+provenance:
+  collection: Pulaar Texts (Gaden)
+  category: pulaar
+  verse: '3'
+  gaden: Mallol 66
+  cultural_context: 'Futa Toro Pulaar (Gaden: poulàr) from the Senegal river valley. Gaden asked Futa
+    literates accustomed to Ajami to compose or dictate; he prints their Pulaar and a facing French version.
+    Named authors in this selection include Mahmadou Alfa and Tyerno Aoudi. A mallol (pl. malli) is a
+    proverb or parabolic locution whose apparent sense covers a hidden one. Orthography is Gaden''s 1913
+    Latin plate (long vowels marked), not modern Pulaar ɓ ɗ ƴ ŋ.'
+  original_source: 'Gaden, Le Poular, t. I Textes (Paris: Leroux, 1913)'
+  original_reliability: SOURCED — Gaden 1913 Latin transcription of Futa Toro Ajami, lightly cleaned of
+    OCR junk; not Gaden 1931
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French in *Le
+    Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+    of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+    (too late).'
+translation: Every affair — it is a cause that does it.
+abhyasa: Take one thing that just happened this week. Do not stop at luck or fate. Name one sababu you
+  can actually point to — a choice, a hunger, a fear, a word. If the first name is false, look again.
+practice: Take one thing that just happened this week. Do not stop at luck or fate. Name one sababu you
+  can actually point to — a choice, a hunger, a fear, a word. If the first name is false, look again.
+original: hüde fuf, ko sababu wadata.
+transliteration: hüde fuf, ko sababu wadata.
+tts_key: true

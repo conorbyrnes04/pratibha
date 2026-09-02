@@ -3,7 +3,7 @@
 # Regenerate Gutenberg files: python scripts/fetch_pd_sources.py
 
 version: 1
-updated: 2026-09-01
+updated: 2026-09-02
 
 sources:
   - id: heraclitus_patrick_1889
@@ -638,3 +638,56 @@ references:
     links:
       - label: JRAS 1901 (via local extract)
         url: https://www.jstor.org/stable/25208302
+
+  - id: gaden_poular_1913
+    collection: pulaar_texts
+    translator: Henri Gaden
+    year: 1913
+    work: Le Poular — étude morphologique, textes (t. I Textes)
+    license: public_domain
+    local_path: pulaar/gaden_poular_1913.txt
+    note: >
+      Futa Toro Pulaar in Gaden's Latin transcription of Ajami, with facing French.
+      Do not use Gaden 1931 Proverbes (too late).
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/le-poular-etude-morphologique-textes
+
+  - id: lasnet_mission_senegal_1900
+    collection: senegalese_animism
+    translator: Alexandre Lasnet
+    year: 1900
+    work: Une mission au Sénégal
+    license: public_domain
+    local_path: french/lasnet_mission_senegal_1900.txt
+    note: >
+      French ethnographic report. Serer (Sérères) and Peul notices used for
+      senegalese_animism and pulaar_tradition. Observer framing; restore claims
+      without colonial contempt.
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/unemissionausn00lasn
+
+  - id: berenger_feraud_peuplades_1879
+    collection: senegalese_animism
+    translator: L.-J.-B. Bérenger-Féraud
+    year: 1879
+    work: Les peuplades de la Sénégambie
+    license: public_domain
+    local_path: french/berenger_feraud_peuplades_1879.txt
+    note: Serer notices used to expand senegalese_animism past the ten-unit sampler.
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/lespeupladesdel01brgoog
+
+  - id: sire_abbas_soh_fouta_1913
+    collection: pulaar_tradition
+    translator: Maurice Delafosse / Henri Gaden
+    year: 1913
+    work: Chroniques du Foûta sénégalais (Siré-Abbâs-Soh)
+    license: public_domain
+    local_path: pulaar/sire_abbas_soh_fouta_1913.txt
+    note: Used for Fulɓe social form (yettôdé, clan), not for Islamic law or Koumen cosmology.
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/chroniquesdufo00sir

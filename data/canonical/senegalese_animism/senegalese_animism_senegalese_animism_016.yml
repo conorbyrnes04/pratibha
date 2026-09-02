@@ -1,0 +1,136 @@
+source_id: SEN_ANIM_016
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_016
+unit_label: Initiation Seclusion Outside the Village
+title: Initiation Seclusion Outside the Village
+unit_type: teaching_passage
+commentary: 'The claim is that becoming adult is a change of residence before it is a change of status.
+  Lasnet''s medical catalog is refused here. What is kept is the topology. The boys leave the village.
+  They live under a shelter that is not a house. They may not wander. Meeting them in that in-between
+  is already a violation. Parents feed them from the village they cannot yet re-enter. Then the shelter
+  is burned. Return is not a quiet walk home. It is fire plus dance. The contested move is to read this
+  as threshold philosophy rather than as ethnography of a body-cut. A person who will later refuse to
+  leave ancestral land must first learn what it is to be outside it, fed by it, and forbidden to stroll.
+  The burning of the abri says: the liminal camp is not a second village you keep. You do not colonize
+  the threshold. You destroy the hut that made you not-yet. Existentially, most modern initiations are
+  either medical events or branding exercises that never leave the house. This teaching asks for an actual
+  outside, an actual dependence, and an actual burning of the temporary self. You cannot found a Serer
+  camp. You can leave one comfort, let yourself be fed by others without controlling the menu, and destroy
+  the prop when you come back.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Les circoncis sont ensuite séquestrés sous un abri en dehors du village, ils ne peuvent sortir,
+    le premier venu qui les rencontrerait aurait le droit de les rouer de coups; les parents doivent pourvoir
+    à leurs besoins, on les nourrit bien et abondamment. Quand la guérison est complète, on commence la
+    fête, les circoncis quittent leur abri, le brûlent et vont dans les villages danser.
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Threshold teaching: seclusion under a shelter
+    outside the village; then the shelter is burned and the initiates re-enter dancing. Anatomy is not
+    the unit.'
+- kind: translation
+  label: Pratibha Translation
+  body: 'The initiates are then secluded under a shelter outside the village. They may not go out; anyone
+    who met them would have the right to beat them. The parents must provide for their needs; they are
+    fed well and abundantly. When healing is complete, the feast begins: the initiates leave their shelter,
+    burn it, and go into the villages to dance.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that becoming adult is a change of residence before it is a change of status. Lasnet''s
+    medical catalog is refused here. What is kept is the topology. The boys leave the village. They live
+    under a shelter that is not a house. They may not wander. Meeting them in that in-between is already
+    a violation. Parents feed them from the village they cannot yet re-enter. Then the shelter is burned.
+    Return is not a quiet walk home. It is fire plus dance. The contested move is to read this as threshold
+    philosophy rather than as ethnography of a body-cut. A person who will later refuse to leave ancestral
+    land must first learn what it is to be outside it, fed by it, and forbidden to stroll. The burning
+    of the abri says: the liminal camp is not a second village you keep. You do not colonize the threshold.
+    You destroy the hut that made you not-yet. Existentially, most modern initiations are either medical
+    events or branding exercises that never leave the house. This teaching asks for an actual outside,
+    an actual dependence, and an actual burning of the temporary self. You cannot found a Serer camp.
+    You can leave one comfort, let yourself be fed by others without controlling the menu, and destroy
+    the prop when you come back.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: en dehors du village
+    definition: outside the village -> the spatial definition of the threshold -> "retreat" as a spa weekend
+      misses that the village is forbidden
+  - term: abri
+    definition: shelter, not a house -> the liminal dwelling that must later be burned -> keeping the
+      camp would make seclusion a second residence
+  - term: le brûlent
+    definition: they burn it -> the threshold is destroyed, not archived -> modern "integration" often
+      keeps every hut; this rite refuses that
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: van Gennep's tripartite rite (separation, margin, aggregation) as later theory of this shape
+    resonance: Both describe leaving, living in a marked outside, and returning changed.
+    divergence: van Gennep generalizes; Lasnet records a Serer burning of the shelter and a dance back
+      into the villages.
+  - citation: Benedictine novitiate outside full profession
+    resonance: Both feed a person who is not yet a full member from the house that still withholds belonging.
+    divergence: The monastery keeps the novitiate building; the Serer initiates burn the abri so the in-between
+      cannot be inhabited again.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Leave your usual room for one hour. Sit somewhere that is not yours — a stair, a park edge, a
+    doorway. Eat something given or already prepared, not something you cook as host. When you return,
+    throw away or recycle one object that was propping an old version of you. Do not announce an initiation.
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '16'
+  section: Lasnet 1900, Sérères — Circumcision (threshold, not anatomy)
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Circumcision (threshold, not anatomy)
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: 'The initiates are then secluded under a shelter outside the village. They may not go out;
+  anyone who met them would have the right to beat them. The parents must provide for their needs; they
+  are fed well and abundantly. When healing is complete, the feast begins: the initiates leave their shelter,
+  burn it, and go into the villages to dance.'
+abhyasa: Leave your usual room for one hour. Sit somewhere that is not yours — a stair, a park edge, a
+  doorway. Eat something given or already prepared, not something you cook as host. When you return, throw
+  away or recycle one object that was propping an old version of you. Do not announce an initiation.
+practice: Leave your usual room for one hour. Sit somewhere that is not yours — a stair, a park edge,
+  a doorway. Eat something given or already prepared, not something you cook as host. When you return,
+  throw away or recycle one object that was propping an old version of you. Do not announce an initiation.
+original: Les circoncis sont ensuite séquestrés sous un abri en dehors du village, ils ne peuvent sortir,
+  le premier venu qui les rencontrerait aurait le droit de les rouer de coups; les parents doivent pourvoir
+  à leurs besoins, on les nourrit bien et abondamment. Quand la guérison est complète, on commence la
+  fête, les circoncis quittent leur abri, le brûlent et vont dans les villages danser.
+transliteration: 'French ethnographic report of Serer oral teaching. Threshold teaching: seclusion under
+  a shelter outside the village; then the shelter is burned and the initiates re-enter dancing. Anatomy
+  is not the unit.'

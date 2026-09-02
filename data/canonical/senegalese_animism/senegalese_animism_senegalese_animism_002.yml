@@ -1,0 +1,141 @@
+source_id: SEN_ANIM_002
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_002
+unit_label: One Does Not Address God; One Addresses the Spirits
+title: One Does Not Address God; One Addresses the Spirits
+unit_type: teaching_passage
+commentary: 'The claim is hierarchical and liturgical at once: the absolute is known, and the absolute
+  is not the addressee of ordinary prayer. Lasnet''s sentence is the hinge of Senegalese animist philosophy
+  as the PD sources can state it. Belief "especially" (surtout) in the spirits does not cancel the previous
+  unit''s invisible master; it locates where relationship happens. You do not shout at the sky. You speak
+  where life is locally thick — forest, field, fountain, village, house. This is the opposite of atheism
+  and the opposite of idolatry. It is mediation. Later Serer language names the mediators pangool: sanctified
+  ancestors and other-than-human powers who stand between the living and Roog. Lasnet''s mammam is the
+  1900 ethnographic word for that populated middle. Each place has a genius because each place is a life,
+  not a dead backdrop. The house is not spiritually empty until you import a god into it. The house already
+  has a spirit because dwelling is already a relation. Delafosse''s pan-African analysis fits the Serer
+  report with unusual exactness: the creator is a cosmogonic idea; cult belongs to souls that are free
+  to act in the near world — the dead, and the localized souls of land and water. The "never" of ne s''adressent
+  jamais à Dieu is therefore not neglect. It is reverence. Direct address would treat Roog as a department,
+  a patron you can corner. The spirits are how a world that is alive can be spoken to without reducing
+  the sky to a customer. Existentially, the teaching cuts two modern errors. One is that God must be constantly
+  accosted or religion has failed. The other is that matter is mute. Senegalese animism, in this source,
+  says: keep the highest high, and keep the near world addressable. Practice happens in the middle.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Ils croient surtout aux esprits, mammam, et ne s'adressent jamais à Dieu; ces esprits sont très
+    nombreux, il y a le génie de la forêt, des champs, de la fontaine, du village, de la case, etc.
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Key Serer terms: mammam (spirits actually
+    addressed); pangool (later Serer name for ancestral and other-than-human intercessors).'
+- kind: translation
+  label: Pratibha Translation
+  body: 'They believe above all in the spirits, mammam, and they never address themselves to God. These
+    spirits are very numerous: there is the genius of the forest, of the fields, of the spring, of the
+    village, of the house, and so on.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is hierarchical and liturgical at once: the absolute is known, and the absolute is
+    not the addressee of ordinary prayer. Lasnet''s sentence is the hinge of Senegalese animist philosophy
+    as the PD sources can state it. Belief "especially" (surtout) in the spirits does not cancel the previous
+    unit''s invisible master; it locates where relationship happens. You do not shout at the sky. You
+    speak where life is locally thick — forest, field, fountain, village, house. This is the opposite
+    of atheism and the opposite of idolatry. It is mediation. Later Serer language names the mediators
+    pangool: sanctified ancestors and other-than-human powers who stand between the living and Roog. Lasnet''s
+    mammam is the 1900 ethnographic word for that populated middle. Each place has a genius because each
+    place is a life, not a dead backdrop. The house is not spiritually empty until you import a god into
+    it. The house already has a spirit because dwelling is already a relation. Delafosse''s pan-African
+    analysis fits the Serer report with unusual exactness: the creator is a cosmogonic idea; cult belongs
+    to souls that are free to act in the near world — the dead, and the localized souls of land and water.
+    The "never" of ne s''adressent jamais à Dieu is therefore not neglect. It is reverence. Direct address
+    would treat Roog as a department, a patron you can corner. The spirits are how a world that is alive
+    can be spoken to without reducing the sky to a customer. Existentially, the teaching cuts two modern
+    errors. One is that God must be constantly accosted or religion has failed. The other is that matter
+    is mute. Senegalese animism, in this source, says: keep the highest high, and keep the near world
+    addressable. Practice happens in the middle.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: mammam
+    definition: Lasnet's term for the spirits the Serer actually address -> the operational divine, not
+      the philosophical absolute -> "ghosts" is too thin; "gods" is too Olympian; they are local personal
+      powers of places and dwellings
+  - term: pangool
+    definition: Serer ancestral and saintly spirits (not named in Lasnet; the structure is already here)
+      -> later sources make explicit that one reaches Roog through the pangool -> using only "ancestors"
+      misses that some pangool are other-than-human and tied to land
+  - term: ne s'adressent jamais à Dieu
+    definition: they never address themselves to God -> liturgical withholding, not unbelief -> English
+      "they don't pray" is false; they pray, but not to Roog as if Roog were a nearby specialist
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pratyabhijñāhṛdayam 1–2
+    resonance: Both distinguish a sovereign ground from the forms in which that ground becomes approachable.
+    divergence: Kashmir Śaiva teaching identifies the ground with consciousness itself; Serer teaching
+      keeps Roog unaddressed and routes practice through local spirits.
+  - citation: Shinto kami of spring, grove, and house
+    resonance: Both populate springs, groves, and dwellings with addressable presence rather than emptying
+      the world for a distant God.
+    divergence: Shinto has shrine architecture and a written mythic corpus; Serer address in this source
+      is tree, stone, and household, without a temple of Roog.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, do not address a remote absolute. Address what is actually near: the room, the water you
+    drink, the ground you cross. Silently acknowledge each as already inhabited. Ask nothing of God-as-sky.
+    Keep the highest high by speaking to the middle.'
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '2'
+  section: Lasnet 1900, Sérères — Religion
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Religion
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: 'They believe above all in the spirits, mammam, and they never address themselves to God.
+  These spirits are very numerous: there is the genius of the forest, of the fields, of the spring, of
+  the village, of the house, and so on.'
+abhyasa: 'Today, do not address a remote absolute. Address what is actually near: the room, the water
+  you drink, the ground you cross. Silently acknowledge each as already inhabited. Ask nothing of God-as-sky.
+  Keep the highest high by speaking to the middle.'
+practice: 'Today, do not address a remote absolute. Address what is actually near: the room, the water
+  you drink, the ground you cross. Silently acknowledge each as already inhabited. Ask nothing of God-as-sky.
+  Keep the highest high by speaking to the middle.'
+original: Ils croient surtout aux esprits, mammam, et ne s'adressent jamais à Dieu; ces esprits sont très
+  nombreux, il y a le génie de la forêt, des champs, de la fontaine, du village, de la case, etc.
+transliteration: 'French ethnographic report of Serer oral teaching. Key Serer terms: mammam (spirits
+  actually addressed); pangool (later Serer name for ancestral and other-than-human intercessors).'
+tts_key: true

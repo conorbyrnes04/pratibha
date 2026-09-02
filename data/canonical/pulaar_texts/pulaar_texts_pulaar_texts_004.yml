@@ -1,0 +1,111 @@
+source_id: PUL_004
+category: root_text
+work_id: pulaar_texts
+work_title: Pulaar Texts (Gaden)
+unit_id: pulaar_texts.pulaar_texts_004
+unit_label: Mallol 68
+title: A Small Act Returns a Small Act
+unit_type: verse
+commentary: 'The claim is reciprocity at the scale where people pretend nothing counts. Not only blood-feud
+  and not only royal justice: badel, a little deed, is already battel, a little deed coming back. Gaden
+  glosses talion, and then the more important half: one renders good for good and, especially, evil for
+  evil. The proverb''s compactness is the teaching. There is no leftover smallness that does not re-enter
+  the world. This is Pulaar social physics. The cattle-world of the ethnography already lived it: bridewealth
+  named in cows, green leaves tossed to the dead. Here the language itself says that action is echo. You
+  do not get to do a small cruelty as if it evaporated. You also do not get to do a small kindness as
+  if it were nothing. Existentially: stop storing petty acts in a bin marked doesn''t matter. They matter
+  in the diminutive. That is their whole size, and they return at that size. The moral is not grandeur.
+  It is attention at the scale you actually live.'
+themes:
+- pulaar
+- mallol
+- living speech
+- futa toro
+tags:
+- pulaar_texts
+- pulaar
+- mallol
+- futa-toro
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French
+  in *Le Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+  of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+  (too late).'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: badel fuf ko battel.
+- kind: iast
+  label: Romanization
+  body: badel fuf ko battel.
+- kind: translation
+  label: Pratibha Translation
+  body: Every small act is a small act in return.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is reciprocity at the scale where people pretend nothing counts. Not only blood-feud
+    and not only royal justice: badel, a little deed, is already battel, a little deed coming back. Gaden
+    glosses talion, and then the more important half: one renders good for good and, especially, evil
+    for evil. The proverb''s compactness is the teaching. There is no leftover smallness that does not
+    re-enter the world. This is Pulaar social physics. The cattle-world of the ethnography already lived
+    it: bridewealth named in cows, green leaves tossed to the dead. Here the language itself says that
+    action is echo. You do not get to do a small cruelty as if it evaporated. You also do not get to do
+    a small kindness as if it were nothing. Existentially: stop storing petty acts in a bin marked doesn''t
+    matter. They matter in the diminutive. That is their whole size, and they return at that size. The
+    moral is not grandeur. It is attention at the scale you actually live.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: badel
+    definition: small action (diminutive of an act) — the proverb's subject is not war or law; it is the
+      little thing; 'deed' is too grand
+  - term: battel
+    definition: small action in return — echo, not a different category; 'revenge' is only the dark reading;
+      Gaden includes good for good
+  - term: fuf
+    definition: every — no exempt petty act
+  - term: ko
+    definition: 'it is (that) — identity, not mere similarity: the return is the act''s other face'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Matthew 7:2, measure for measure
+    resonance: Both bind outgoing act to returning act.
+    divergence: Matthew aims at mercy beyond talion; this proverb states the law the mercy would have
+      to exceed.
+  - citation: Karma as action-return (Bhagavad Gītā 3–4)
+    resonance: Both refuse a deed that dies at the doer.
+    divergence: Indic karma is often multi-life; battel is this-world social echo.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Do one deliberately small good today that you will not advertise. Do not cancel one small harm
+    by a speech. Watch whether a battel appears. If none appears, you still did the badel. That was the
+    point.
+provenance:
+  collection: Pulaar Texts (Gaden)
+  category: pulaar
+  verse: '4'
+  gaden: Mallol 68
+  cultural_context: 'Futa Toro Pulaar (Gaden: poulàr) from the Senegal river valley. Gaden asked Futa
+    literates accustomed to Ajami to compose or dictate; he prints their Pulaar and a facing French version.
+    Named authors in this selection include Mahmadou Alfa and Tyerno Aoudi. A mallol (pl. malli) is a
+    proverb or parabolic locution whose apparent sense covers a hidden one. Orthography is Gaden''s 1913
+    Latin plate (long vowels marked), not modern Pulaar ɓ ɗ ƴ ŋ.'
+  original_source: 'Gaden, Le Poular, t. I Textes (Paris: Leroux, 1913)'
+  original_reliability: SOURCED — Gaden 1913 Latin transcription of Futa Toro Ajami, lightly cleaned of
+    OCR junk; not Gaden 1931
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French in *Le
+    Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+    of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+    (too late).'
+translation: Every small act is a small act in return.
+abhyasa: Do one deliberately small good today that you will not advertise. Do not cancel one small harm
+  by a speech. Watch whether a battel appears. If none appears, you still did the badel. That was the
+  point.
+practice: Do one deliberately small good today that you will not advertise. Do not cancel one small harm
+  by a speech. Watch whether a battel appears. If none appears, you still did the badel. That was the
+  point.
+original: badel fuf ko battel.
+transliteration: badel fuf ko battel.

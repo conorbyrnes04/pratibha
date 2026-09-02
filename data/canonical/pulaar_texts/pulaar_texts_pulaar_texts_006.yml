@@ -1,0 +1,113 @@
+source_id: PUL_006
+category: root_text
+work_id: pulaar_texts
+work_title: Pulaar Texts (Gaden)
+unit_id: pulaar_texts.pulaar_texts_006
+unit_label: Mallol 70
+title: The Heart Is Not a Joint
+unit_type: verse
+commentary: 'The claim is that feeling is not an obedient limb. A joint exists to flex on command. The
+  heart does not. Gaden: sentiment cannot be ordered. This is the Pulaar refusal of a certain Islamicate
+  and colonial fantasy — that the inner can be drilled like the body at circumcision, where Lasnet saw
+  impassibility. Impassibility is the face. Berde is not the face. You can keep the face still. You cannot
+  hinge the heart. The proverb is not a romantic license to follow every impulse. It is a limit on tyranny,
+  including self-tyranny. You may require conduct. You may not require love, grief, or desire to take
+  the angle you prefer. Pulaaku as later named is composure. This mallol is the remainder: composure is
+  not the same as a bent heart. Existentially: stop commanding yourself to feel otherwise as if the heart
+  were an elbow. Change the situation, the company, the act. Leave the heart its unhinged nature. That
+  honesty is already a practice. The contested move is to keep duty without falsifying the inner weather.'
+themes:
+- pulaar
+- mallol
+- living speech
+- futa toro
+tags:
+- pulaar_texts
+- pulaar
+- mallol
+- futa-toro
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French
+  in *Le Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+  of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+  (too late).'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: berde wana hofūru, sako hofe.
+- kind: iast
+  label: Romanization
+  body: berde wana hofūru, sako hofe.
+- kind: translation
+  label: Pratibha Translation
+  body: The heart is not a joint, that it might be bent.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that feeling is not an obedient limb. A joint exists to flex on command. The heart
+    does not. Gaden: sentiment cannot be ordered. This is the Pulaar refusal of a certain Islamicate and
+    colonial fantasy — that the inner can be drilled like the body at circumcision, where Lasnet saw impassibility.
+    Impassibility is the face. Berde is not the face. You can keep the face still. You cannot hinge the
+    heart. The proverb is not a romantic license to follow every impulse. It is a limit on tyranny, including
+    self-tyranny. You may require conduct. You may not require love, grief, or desire to take the angle
+    you prefer. Pulaaku as later named is composure. This mallol is the remainder: composure is not the
+    same as a bent heart. Existentially: stop commanding yourself to feel otherwise as if the heart were
+    an elbow. Change the situation, the company, the act. Leave the heart its unhinged nature. That honesty
+    is already a practice. The contested move is to keep duty without falsifying the inner weather.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: berde
+    definition: heart as organ of feeling — not anatomical cardiology; the inner that will not take orders
+  - term: hofūru
+    definition: 'joint, articulation — the body''s obedient bend; the metaphor''s insult: do not treat
+      the heart as a knee'
+  - term: sako
+    definition: 'so that / as if it were the kind of thing that... — counterfactual purpose: it is not
+      that kind of thing'
+  - term: wana
+    definition: is not — the same negation-pattern as the father's wonā
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Pascal, Pensées, reasons of the heart
+    resonance: Both deny that the heart is a syllogism or a lever.
+    divergence: Pascal's heart knows God; this proverb does not name what the heart knows, only that it
+      will not bend on command.
+  - citation: Stoic propatheia versus judgment (Epictetus, Discourses I)
+    resonance: Both distinguish inner weather from commanded virtue.
+    divergence: Stoics train judgment to withhold assent; this proverb does not promise training will
+      hinge the berde.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Catch one sentence today that begins 'I should feel...' Stop it. Keep the outer duty if there
+    is one. Do not order the heart as if it were a joint. Notice what it actually does when you stop bending
+    it.
+provenance:
+  collection: Pulaar Texts (Gaden)
+  category: pulaar
+  verse: '6'
+  gaden: Mallol 70
+  cultural_context: 'Futa Toro Pulaar (Gaden: poulàr) from the Senegal river valley. Gaden asked Futa
+    literates accustomed to Ajami to compose or dictate; he prints their Pulaar and a facing French version.
+    Named authors in this selection include Mahmadou Alfa and Tyerno Aoudi. A mallol (pl. malli) is a
+    proverb or parabolic locution whose apparent sense covers a hidden one. Orthography is Gaden''s 1913
+    Latin plate (long vowels marked), not modern Pulaar ɓ ɗ ƴ ŋ.'
+  original_source: 'Gaden, Le Poular, t. I Textes (Paris: Leroux, 1913)'
+  original_reliability: SOURCED — Gaden 1913 Latin transcription of Futa Toro Ajami, lightly cleaned of
+    OCR junk; not Gaden 1931
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French in *Le
+    Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+    of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+    (too late).'
+translation: The heart is not a joint, that it might be bent.
+abhyasa: Catch one sentence today that begins 'I should feel...' Stop it. Keep the outer duty if there
+  is one. Do not order the heart as if it were a joint. Notice what it actually does when you stop bending
+  it.
+practice: Catch one sentence today that begins 'I should feel...' Stop it. Keep the outer duty if there
+  is one. Do not order the heart as if it were a joint. Notice what it actually does when you stop bending
+  it.
+original: berde wana hofūru, sako hofe.
+transliteration: berde wana hofūru, sako hofe.
+tts_key: true

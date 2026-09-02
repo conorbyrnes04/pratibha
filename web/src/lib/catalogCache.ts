@@ -20,8 +20,9 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * v13: Gospel of Mary expanded 12→26 argument-arc units (still no invented lacunae).
  * v14: Sufi wave — Attar Conference of the Birds, Hujwīrī Kashf al-Maḥjūb,
  * and enriched Know Yourself (Balyānī).
- * v15: /verses is preview-only (no pratibha_layers) — drop fat v14 snapshots. */
-const CACHE_VERSION = 15;
+ * v15: /verses is preview-only (no pratibha_layers) — drop fat v14 snapshots.
+ * v16: Senegalese living speech — Serer cosaan, Fulɓe pastoral remnant, Gaden 1913 Pulaar. */
+const CACHE_VERSION = 16;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";

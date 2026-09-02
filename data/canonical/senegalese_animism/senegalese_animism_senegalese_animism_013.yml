@@ -1,0 +1,133 @@
+source_id: SEN_ANIM_013
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_013
+unit_label: Gisanekal Searches the Soul-Eater
+title: Gisanekal Searches the Soul-Eater
+unit_type: teaching_passage
+commentary: 'The claim is that a death which may be soul-theft is not left as private grief. The community
+  appoints a seer. Gisanekal is Lasnet''s recording of that office: a watcher whose job is to find the
+  eater. The contested move is to take the office seriously without adopting the ordeal as teaching. Poison
+  and red iron are how a 1900 observer saw truth extracted from a hidden crime. They are not the philosophy.
+  The philosophy is that soul-theft is a public question, and that someone in the village is authorized
+  to look. Without that office, unit 12 collapses into panic or gossip. With it, the fear of eaten souls
+  has a face and a procedure. Bérenger will show Takhar''s priests judging sorcery by a drink; Lasnet
+  names the seer at every death. Read together, Serer justice is not only about stolen objects. It is
+  about stolen life. Colonial suppression of the punishments is recorded on the same page: the Serer then
+  say sorcerers multiply because they are sure of impunity, and they accuse missionaries of favoring the
+  eaters by making people renounce gris-gris. That complaint is not adopted here as a call to restore
+  ordeal. It is evidence that protective objects and the seer''s search were one system. Existentially,
+  the teaching asks whether your world has anyone who is allowed to look when a life is being eaten, or
+  whether you only have opinions and news. The practice is to authorize attention, not to heat iron.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'À chaque mort un voyant, gisanekal, recherche le mangeur d''âme, le plus souvent il a recours
+    au poison comme les Balantes ou les Diolas, quelquefois à l''épreuve du feu : un fer rouge est posé
+    sur la langue de l''accusé, s''il fait une brûlure profonde, l''accusé est coupable.'
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Key Serer term: gisanekal — the seer who searches
+    the soul-eater at each death. Poison and fire are recorded methods, not a practice to copy.'
+- kind: translation
+  label: Pratibha Translation
+  body: 'At each death a seer, gisanekal, searches for the eater of the soul. Most often the search uses
+    the poison ordeal known also among the Balanta and the Jola; sometimes the test of fire: a red iron
+    is set on the tongue of the accused, and a deep burn marks guilt.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that a death which may be soul-theft is not left as private grief. The community
+    appoints a seer. Gisanekal is Lasnet''s recording of that office: a watcher whose job is to find the
+    eater. The contested move is to take the office seriously without adopting the ordeal as teaching.
+    Poison and red iron are how a 1900 observer saw truth extracted from a hidden crime. They are not
+    the philosophy. The philosophy is that soul-theft is a public question, and that someone in the village
+    is authorized to look. Without that office, unit 12 collapses into panic or gossip. With it, the fear
+    of eaten souls has a face and a procedure. Bérenger will show Takhar''s priests judging sorcery by
+    a drink; Lasnet names the seer at every death. Read together, Serer justice is not only about stolen
+    objects. It is about stolen life. Colonial suppression of the punishments is recorded on the same
+    page: the Serer then say sorcerers multiply because they are sure of impunity, and they accuse missionaries
+    of favoring the eaters by making people renounce gris-gris. That complaint is not adopted here as
+    a call to restore ordeal. It is evidence that protective objects and the seer''s search were one system.
+    Existentially, the teaching asks whether your world has anyone who is allowed to look when a life
+    is being eaten, or whether you only have opinions and news. The practice is to authorize attention,
+    not to heat iron.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: gisanekal
+    definition: Lasnet's Serer word for the seer who searches the soul-eater at each death -> an office,
+      not a hobby of omens -> "witch-doctor" is the colonial sneer; this is authorized looking
+  - term: mangeur d'âme
+    definition: eater of the soul -> the agent of the theft in unit 12 -> not a metaphor for cancer; in
+      the reported belief a someone has consumed a someone
+  - term: épreuve
+    definition: ordeal (poison, fire) -> recorded method of the search -> not the teaching to practice;
+      the teaching is that hidden soul-crime is not left to rumor
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: 1 Samuel 28 (Saul seeks a seer when ordinary means fail)
+    resonance: Both appoint a specialist of the unseen when a public crisis exceeds ordinary looking.
+    divergence: Saul's seer calls up a dead prophet against a ban; gisanekal searches the living eater
+      of a newly dead soul.
+  - citation: Bérenger 1879, priests of Takhar and the ordeal drink (this collection)
+    resonance: Both make sorcery a judged question, not a private suspicion.
+    divergence: Bérenger's drink is a priestly test of the accused; Lasnet's gisanekal is a seer who starts
+      from the death itself.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'If you know a life that is being diminished — including your own — do not ordeal anyone. Appoint
+    yourself seer for one hour: look, name the eater without spectacle (a habit, a silence, a person),
+    and take one protective step. Do not announce guilt you cannot know.'
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '13'
+  section: Lasnet 1900, Sérères — Religion
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Religion
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: 'At each death a seer, gisanekal, searches for the eater of the soul. Most often the search
+  uses the poison ordeal known also among the Balanta and the Jola; sometimes the test of fire: a red
+  iron is set on the tongue of the accused, and a deep burn marks guilt.'
+abhyasa: 'If you know a life that is being diminished — including your own — do not ordeal anyone. Appoint
+  yourself seer for one hour: look, name the eater without spectacle (a habit, a silence, a person), and
+  take one protective step. Do not announce guilt you cannot know.'
+practice: 'If you know a life that is being diminished — including your own — do not ordeal anyone. Appoint
+  yourself seer for one hour: look, name the eater without spectacle (a habit, a silence, a person), and
+  take one protective step. Do not announce guilt you cannot know.'
+original: 'À chaque mort un voyant, gisanekal, recherche le mangeur d''âme, le plus souvent il a recours
+  au poison comme les Balantes ou les Diolas, quelquefois à l''épreuve du feu : un fer rouge est posé
+  sur la langue de l''accusé, s''il fait une brûlure profonde, l''accusé est coupable.'
+transliteration: 'French ethnographic report of Serer oral teaching. Key Serer term: gisanekal — the seer
+  who searches the soul-eater at each death. Poison and fire are recorded methods, not a practice to copy.'

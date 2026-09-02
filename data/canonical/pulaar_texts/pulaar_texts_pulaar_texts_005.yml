@@ -1,0 +1,110 @@
+source_id: PUL_005
+category: root_text
+work_id: pulaar_texts
+work_title: Pulaar Texts (Gaden)
+unit_id: pulaar_texts.pulaar_texts_005
+unit_label: Mallol 69
+title: Truth Catches the Lie
+unit_type: verse
+commentary: 'The claim is temporal and almost pastoral: departure times. Lies leave at dawn, hustling.
+  Truth leaves in the evening, late. The proverb does not say truth is faster in essence. It says truth
+  catches up. Gaden''s gloss is the European flattening: truth always comes out. The Pulaar image is a
+  road. Two parties have started. One had a head start. The late one still arrives on the early one''s
+  back. This belongs with Fulɓe mobility. A herder knows that the one who left late can still meet the
+  one who left first, if the first is a lie and the second is gōnga. The moral is patience without passivity.
+  You do not have to win the morning. You have to be the thing that overtakes. Existentially: if you are
+  late with the true word, do not despair of the morning''s rumor. Set out. The proverb is a promise to
+  the late-teller, and a warning to the early-liar. Speed is not the virtue. Catching is.'
+themes:
+- pulaar
+- mallol
+- living speech
+- futa toro
+tags:
+- pulaar_texts
+- pulaar
+- mallol
+- futa-toro
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French
+  in *Le Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+  of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+  (too late).'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: so pene dawi, so gōnga hirdi. mā hebto pene.
+- kind: iast
+  label: Romanization
+  body: so pene dawi, so gōnga hirdi. mā hebto pene.
+- kind: translation
+  label: Pratibha Translation
+  body: If the lies set out early and the truth in the evening, it will overtake the lies.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is temporal and almost pastoral: departure times. Lies leave at dawn, hustling. Truth
+    leaves in the evening, late. The proverb does not say truth is faster in essence. It says truth catches
+    up. Gaden''s gloss is the European flattening: truth always comes out. The Pulaar image is a road.
+    Two parties have started. One had a head start. The late one still arrives on the early one''s back.
+    This belongs with Fulɓe mobility. A herder knows that the one who left late can still meet the one
+    who left first, if the first is a lie and the second is gōnga. The moral is patience without passivity.
+    You do not have to win the morning. You have to be the thing that overtakes. Existentially: if you
+    are late with the true word, do not despair of the morning''s rumor. Set out. The proverb is a promise
+    to the late-teller, and a warning to the early-liar. Speed is not the virtue. Catching is.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: gōnga
+    definition: truth — not 'fact' only; the true word / true state; 'honesty' is too moralistic; this
+      is what can travel and catch
+  - term: pene
+    definition: lies (plural) — they travel as a group, with a head start
+  - term: dawi / hirdi
+    definition: leave early / leave in the evening — pastoral clock, not clock-time; dawn and dusk are
+      when a camp actually moves
+  - term: hebto
+    definition: overtake, catch up — a physical verb for a moral event; English 'comes out' loses the
+      road
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Dào Dé Jīng 78, the slow and soft conquering the hard
+    resonance: Both trust the late, unhurried term.
+    divergence: Daoist softness wins by emptiness; here truth wins by pursuit on a road.
+  - citation: Luke 12:3, what is whispered will be shouted
+    resonance: Both promise exposure of the hidden word.
+    divergence: Christian apocalypse is a last day; this overtaking can happen this evening.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: If a false version of something you know has already left this morning, do not match its speed
+    with a louder lie. Speak the true version once, even late. Then stop. Let hebto be the proverb's job,
+    not your panic.
+provenance:
+  collection: Pulaar Texts (Gaden)
+  category: pulaar
+  verse: '5'
+  gaden: Mallol 69
+  cultural_context: 'Futa Toro Pulaar (Gaden: poulàr) from the Senegal river valley. Gaden asked Futa
+    literates accustomed to Ajami to compose or dictate; he prints their Pulaar and a facing French version.
+    Named authors in this selection include Mahmadou Alfa and Tyerno Aoudi. A mallol (pl. malli) is a
+    proverb or parabolic locution whose apparent sense covers a hidden one. Orthography is Gaden''s 1913
+    Latin plate (long vowels marked), not modern Pulaar ɓ ɗ ƴ ŋ.'
+  original_source: 'Gaden, Le Poular, t. I Textes (Paris: Leroux, 1913)'
+  original_reliability: SOURCED — Gaden 1913 Latin transcription of Futa Toro Ajami, lightly cleaned of
+    OCR junk; not Gaden 1931
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Henri Gaden''s facing French in *Le
+    Poular*, t. I *Textes* (Paris: Leroux, 1913 — public domain). Pulaar is Gaden''s Latin transcription
+    of Futa Toro Ajami written by Futa literates (named in Gaden). Does not follow Gaden 1931 *Proverbes*
+    (too late).'
+translation: If the lies set out early and the truth in the evening, it will overtake the lies.
+abhyasa: If a false version of something you know has already left this morning, do not match its speed
+  with a louder lie. Speak the true version once, even late. Then stop. Let hebto be the proverb's job,
+  not your panic.
+practice: If a false version of something you know has already left this morning, do not match its speed
+  with a louder lie. Speak the true version once, even late. Then stop. Let hebto be the proverb's job,
+  not your panic.
+original: so pene dawi, so gōnga hirdi. mā hebto pene.
+transliteration: so pene dawi, so gōnga hirdi. mā hebto pene.
+tts_key: true
