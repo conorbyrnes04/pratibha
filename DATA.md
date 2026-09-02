@@ -45,7 +45,8 @@ data/canonical/
 ├── tao_te_ching/                        (4 units)
 ├── the_book_of_chuang_tzu/             (48 units)
 ├── know_yourself_ibn_arabi_balyani/     (36 units)
-└── senegalese_animism/                  (10 units)
+├── senegalese_animism/                  (10 units)
+└── pulaar_tradition/                    (10 units)
 ```
 
 Each `.yml` file is one unit — a single verse, sūtra, fragment, passage, or chapter.
@@ -163,6 +164,7 @@ Checks every `.yml` in `data/canonical/` for:
 | `chuang_tzu_epub_to_yaml.py` | EPUB → YAML | Chuang Tzu |
 | `ibn_arabi_know_yourself_epub_to_yaml.py` | EPUB → YAML | Ibn ʿArabī |
 | `senegalese_animism_pratibha_md_to_yaml.py` | MD → YAML | Senegalese Animism |
+| `pulaar_tradition_pratibha_md_to_yaml.py` | MD → YAML | Pulaar Tradition |
 | `canonicalize_texts.py` | YAML → Canonical | All collections |
 | `enrich_yaml_shiva_style.py` | Canonical → Enriched | LLM enrichment |
 | `validate_canonical.py` | Canonical → Report | Schema validation |

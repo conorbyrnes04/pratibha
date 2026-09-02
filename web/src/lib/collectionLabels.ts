@@ -15,6 +15,17 @@ const SENEGALESE_ANIMISM_ALIASES = new Set([
   "serer_religion",
 ]);
 
+const PULAAR_TRADITION_ALIASES = new Set([
+  "pulaar tradition",
+  "pulaar_tradition",
+  "pulaar pre islam",
+  "pulaar_pre_islam",
+  "fulbe tradition",
+  "fulbe_tradition",
+  "peul tradition",
+  "peul_tradition",
+]);
+
 export function displayCollectionName(name?: string): string {
   const raw = (name || "").trim();
   if (!raw) return "";
@@ -22,6 +33,9 @@ export function displayCollectionName(name?: string): string {
   if (ZHUANGZI_ALIASES.has(normalized)) return "Zhuangzi";
   if (SENEGALESE_ANIMISM_ALIASES.has(normalized) || normalized.replace(/_/g, " ") === "senegalese animism") {
     return "Senegalese Animism";
+  }
+  if (PULAAR_TRADITION_ALIASES.has(normalized) || normalized.replace(/_/g, " ") === "pulaar tradition") {
+    return "Pulaar Tradition";
   }
   return raw;
 }

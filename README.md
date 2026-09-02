@@ -6,7 +6,7 @@
 
 This project is two things at once:
 
-1. **A structured corpus** of 573 annotated units spanning 16 philosophical and contemplative traditions — Sanskrit, Greek, Chinese, Arabic, Persian, Senegambian — each processed through a seven-layer scholarly format (original text, transliteration, translation, commentary, key terms, cross-tradition resonances, practice).
+1. **A structured corpus** of 583 annotated units spanning 17 philosophical and contemplative traditions — Sanskrit, Greek, Chinese, Arabic, Persian, Senegambian, Pulaar — each processed through a seven-layer scholarly format (original text, transliteration, translation, commentary, key terms, cross-tradition resonances, practice).
 
 2. **A study application** — FastAPI backend + Next.js frontend + PostgreSQL/pgvector — that makes the corpus queryable, browsable, and livable through RAG-powered chat, daily practice passages, a contemplative journal, and guided learning paths.
 
@@ -32,8 +32,9 @@ This project is two things at once:
 | **The Book of Chuang Tzu** | Daoist | 48 | Zhuāngzǐ |
 | **Know Yourself** | Sufi (Ibn ʿArabī / al-Balayānī) | 36 | — |
 | **Senegalese Animism** | Serer / Senegambian | 10 | Lasnet 1900; Bérenger-Féraud 1879; Delafosse 1925 |
+| **Pulaar Tradition** | Fulɓe / Pulaar (pre-Islamic remnants) | 10 | Reclus 1887; Crozals 1883; Lasnet 1900; Delafosse 1925 |
 
-**573 units total.** Each unit carries up to seven annotated layers — see [DATA.md](DATA.md) for the full schema and pipeline.
+**583 units total.** Each unit carries up to seven annotated layers — see [DATA.md](DATA.md) for the full schema and pipeline.
 
 ### The Seven Layers (Pratibhā Format)
 

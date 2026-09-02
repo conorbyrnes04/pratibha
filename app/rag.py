@@ -54,6 +54,19 @@ _COLLECTION_HINTS = {
         "lasnet",
         "delafosse",
     ],
+    "pulaar_tradition": [
+        "pulaar",
+        "fulbe",
+        "fulɓe",
+        "peul",
+        "foulah",
+        "fulani",
+        "boolatrie",
+        "yettode",
+        "pulaaku",
+        "crozals",
+        "reclus",
+    ],
 }
 
 

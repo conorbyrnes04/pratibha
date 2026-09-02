@@ -65,6 +65,13 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "serer_religion",
         "a_tat_roog",
     },
+    "pulaar_tradition": {
+        "pulaar_tradition",
+        "pulaar_pre_islam",
+        "fulbe_tradition",
+        "peul_tradition",
+        "fulani_tradition",
+    },
 }
 
 

@@ -110,6 +110,12 @@ COLLECTIONS: dict[str, dict] = {
         "blurb": "Roog, the unaddressed sky, and the spirits you pour to at the baobab.",
         "order": 15,
     },
+    "pulaar_tradition": {
+        "title": "Pulaar Tradition",
+        "tradition": "Fulɓe / Pulaar (pre-Islamic remnants)",
+        "blurb": "The remaining cult is the herd — cattle-pen, green-leaf greeting, ancestor interdit.",
+        "order": 16,
+    },
 }
 
 
