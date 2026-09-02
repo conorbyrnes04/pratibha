@@ -36,6 +36,8 @@ export const en = {
     search: "Search",
     expand: "Expand",
     collapse: "Collapse",
+    showMore: "Show more",
+    showLess: "Show less",
     openJournal: "Open journal",
     yourManuscript: "Your manuscript",
     signInToSync: "Sign in to sync",
@@ -220,6 +222,8 @@ export const en = {
     unreachable:
       "The library API is waking up or unreachable. This is not an empty corpus — wait a moment and try again.",
     noMatchTry: "No passages match. Try another search, or return to the shelf.",
+    resultCount: "{count} passages",
+    loadMore: "Load more ({count})",
     noticeTheme: "Where do you notice “{theme}” in direct experience today?",
     shiftInvite: "What one shift in seeing does this passage invite right now?",
   },
@@ -278,6 +282,7 @@ export const en = {
     thisPassage: "this passage",
     you: "You",
     thinking: "Pratibha is thinking…",
+    warming: "Waking the study companion — the first answer can take up to a minute.",
     thinkingShort: "Thinking…",
     savedJournal: "Saved to journal",
     saveJournal: "Save to journal",
@@ -350,6 +355,7 @@ export const en = {
     lede: "Pratibha is offered freely to students, so it must be built without stealing. Every English rendering here stands on a public-domain source or original authorship — grouped by tradition, each text saying exactly where it comes from.",
     reconciled: "How this corpus was reconciled",
     textsPassages: "{texts} texts · {passages} passages",
+    loading: "Loading source attributions… If this stays empty, the corpus API may be waking up — refresh in a moment.",
   },
   share: {
     pageMeta: "A page from Pratibha",
@@ -594,7 +600,7 @@ export const en = {
     relatedThemes: "Shared themes across traditions.",
     publicDomainSource: "Public-domain source",
     themes: "Themes",
-    journalLede: "A private note on this passage — saved on this device{detail}.",
+    journalLede: "A private note on this passage — kept in your journal{detail}.",
     practiceWitness: "For 2 minutes, notice thoughts and sensations as objects appearing in awareness.",
     practiceLiberation: "Ask once: what am I taking myself to be in this moment?",
     practiceDefault: "Read once slowly, then pause for one minute before your next action.",
@@ -606,6 +612,12 @@ export const en = {
     googleAlmost: "Google sign-in almost made it",
     googleAlmostLede:
       "Your Google account connected. Reload home to open the session — if it is still blank, sign in again from /login.",
+  },
+  notFound: {
+    meta: "Not found",
+    title: "This page isn’t in the manuscript",
+    lede: "The page you were looking for doesn’t exist or has moved. Return to the library to find a passage.",
+    library: "Browse the library",
   },
 } as const;
 

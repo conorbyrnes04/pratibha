@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal, flushSync } from "react-dom";
 import Link from "next/link";
-import { toBlob } from "html-to-image";
 import { toast } from "sonner";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
@@ -293,6 +292,7 @@ function ShareComposerInner({
     const width = Math.max(1, Math.round(node.offsetWidth));
     const height = Math.max(1, Math.round(node.offsetHeight));
     if (width < 8 || height < 8) throw new Error(t("share.renderFailed"));
+    const { toBlob } = await import("html-to-image");
     const blob = await Promise.race([
       toBlob(node, {
         pixelRatio: 2,

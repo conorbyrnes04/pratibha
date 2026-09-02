@@ -18,9 +18,9 @@ import {
   LOCALES,
   LOCALE_STORAGE_KEY,
   applyDocumentLocale,
-  catalogs,
   detectBrowserLocale,
   en,
+  loadCatalog,
   isLocale,
   localeMeta,
   translate,
@@ -76,6 +76,7 @@ const LocaleContext = createContext<LocaleContextValue | null>(null);
 
 function useLocaleState(cloudLocale: string | undefined, persistCloud: (locale: Locale) => void) {
   const [locale, setLocaleState] = useState<Locale>(DEFAULT_LOCALE);
+  const [catalog, setCatalog] = useState(en);
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
@@ -107,9 +108,23 @@ function useLocaleState(cloudLocale: string | undefined, persistCloud: (locale: 
     [persistCloud],
   );
 
+  useEffect(() => {
+    if (locale === DEFAULT_LOCALE) {
+      setCatalog(en);
+      return;
+    }
+    let cancelled = false;
+    void loadCatalog(locale).then((next) => {
+      if (!cancelled) setCatalog(next);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [locale]);
+
   const t = useCallback(
-    (key: string, vars?: TranslateVars) => translate(catalogs[locale], en, key, vars),
-    [locale],
+    (key: string, vars?: TranslateVars) => translate(catalog, en, key, vars),
+    [catalog],
   );
 
   const meta = localeMeta(locale);

@@ -135,10 +135,28 @@ export function displayPassageSourceLine(item: VerseItem): string {
   return collection || location || "";
 }
 
+/**
+ * Detects a "title" that is really a truncated first sentence (bulk-imported
+ * texts whose titles were never authored — e.g. "Taking the posture of
+ * Padmâ-âsana and carrying the…"). Those read poorly in lists and the Oracle.
+ */
+function looksLikeProseTitle(title: string): boolean {
+  if (/(…|\.\.\.)$/.test(title)) return true;
+  // Long, sentence-shaped, and not a reference label ("ŚS 3.79", "Verse 11.5").
+  const words = title.split(/\s+/);
+  if (words.length >= 8 && !/^\s*(verse|sūtra|sutra|chapter|ch\.?)\b/i.test(title)) return true;
+  return false;
+}
+
 export function displayPassageTitle(item: VerseItem): string {
   const title = (item.title || "").trim();
   const ref = isPatanjaliYogaSutras(item) ? patanjaliSutraRef(item) : null;
   if (ref) return title ? `${ref} — ${title}` : ref;
+  // When the title is an unauthored prose fragment, prefer a real location ref.
+  if (title && looksLikeProseTitle(title)) {
+    const location = displayPassageLocation(item);
+    if (location) return location;
+  }
   return title || item.sutra_id || item._id || "";
 }
 

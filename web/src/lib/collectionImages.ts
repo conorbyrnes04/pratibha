@@ -29,7 +29,8 @@ const IMAGE_RULES: Array<{ pattern: RegExp; slug: string }> = [
   { pattern: /vijnana|bhairava|shiva|siva|tantra|spanda|yogin[iī]|pratyabhij|utpala|somananda/i, slug: "kashmir-saiva" },
   { pattern: /heraclitus|fragment|epictetus|marcus.?aurelius|meditations\b|stoic/i, slug: "heraclitus" },
   { pattern: /patanjali|patañjali|yoga.?s[uū]tras?|raja.?yoga/i, slug: "patanjali" },
-  { pattern: /plotinus|ennead|phaedo|plato|eckhart|dionysius|areopagite|cloud.?of.?unknowing|christian.?mystic|ibn.?arabi|know.?yourself|oneness.?of.?being|ecclesiastes|qoheleth|gospel.?of.?thomas|gospel.?of.?mary|logia of jesus|new.?testament.?logia/i, slug: "plotinus" },
+  { pattern: /plotinus|ennead|phaedo|plato|eckhart|dionysius|areopagite|cloud.?of.?unknowing|christian.?mystic|ibn.?arabi|know.?yourself|oneness.?of.?being|ecclesiastes|qoheleth|gospel.?of.?thomas|gospel.?of.?mary|logia of jesus|new.?testament.?logia|kabbalah|zohar|yetzirah|eastman|soul of the indian|dakota/i, slug: "plotinus" },
+  { pattern: /parmenides/i, slug: "heraclitus" },
 ];
 
 /** Learning-realm → artwork (Paths page / DailySit). */
@@ -46,6 +47,10 @@ const REALM_SLUGS: Record<string, string> = {
   "yoga-dharma": "patanjali",
   sufi: "milarepa",
   confucian: "daoism",
+  kabbalah: "plotinus",
+  qoheleth: "plotinus",
+  presocratic: "heraclitus",
+  dakota: "plotinus",
 };
 
 /** How many nature photo variants exist per base slug (`-n01` …). */

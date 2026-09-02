@@ -17,11 +17,20 @@ export default function JournalPage() {
   const { user, loading: authLoading } = useAuth();
   const [notes, setNotes] = useState<JournalNote[]>([]);
   const [q, setQ] = useState("");
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [syncState, setSyncState] = useState<"idle" | "syncing" | "synced" | "local" | "error">("idle");
   const [syncError, setSyncError] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
-  const { sync } = useSyncJournal();
+  const { sync, ready } = useSyncJournal();
   const deleteRemote = useDeleteJournalNote();
+
+  // The sync closure changes identity when the remote query updates; keep the
+  // latest in a ref so the driver effect below doesn't need it as a dependency
+  // (which would otherwise re-fire the sync on every render).
+  const syncRef = useRef(sync);
+  useEffect(() => {
+    syncRef.current = sync;
+  }, [sync]);
 
   function refresh() {
     setNotes(loadJournalNotes().sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)));
@@ -38,19 +47,53 @@ export default function JournalPage() {
       setSyncError(null);
       return;
     }
-    let active = true;
+    // Wait for the remote note list to load before attempting to reconcile.
+    if (!ready) {
+      setSyncState("syncing");
+      setSyncError(null);
+      return;
+    }
+
+    const MAX_ATTEMPTS = 5;
+    let cancelled = false;
+    let attempts = 0;
+    let timer: ReturnType<typeof setTimeout> | null = null;
+
     setSyncState("syncing");
     setSyncError(null);
-    void sync().then((result) => {
-      if (!active) return;
+
+    // Single in-flight sync at a time; on failure retry with exponential
+    // backoff + jitter, capped at MAX_ATTEMPTS, then surface one error banner.
+    const run = async () => {
+      if (cancelled) return;
+      const result = await syncRef.current();
+      if (cancelled) return;
       setNotes(result.notes.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)));
+
+      if (result.status === "error") {
+        attempts += 1;
+        if (attempts >= MAX_ATTEMPTS) {
+          setSyncState("error");
+          setSyncError(result.error ?? null);
+          return;
+        }
+        const backoff = Math.min(30000, 500 * 2 ** attempts) + Math.random() * 500;
+        setSyncState("syncing");
+        timer = setTimeout(run, backoff);
+        return;
+      }
+
       setSyncState(result.status);
-      setSyncError(result.error ?? null);
-    });
-    return () => {
-      active = false;
+      setSyncError(null);
     };
-  }, [user, authLoading, sync]);
+
+    void run();
+
+    return () => {
+      cancelled = true;
+      if (timer) clearTimeout(timer);
+    };
+  }, [user, authLoading, ready]);
 
   function exportNotes() {
     const blob = new Blob([JSON.stringify(loadJournalNotes(), null, 2)], { type: "application/json" });
@@ -193,7 +236,38 @@ export default function JournalPage() {
                 </div>
               </div>
               {note.prompt ? <p className="soft mt-4 text-sm">{note.prompt}</p> : null}
-              <p className="mt-4 whitespace-pre-wrap leading-relaxed text-stone-200">{note.body}</p>
+              {(() => {
+                const isLong = note.body.length > 360;
+                const open = expanded.has(note.id) || !isLong;
+                return (
+                  <>
+                    <p
+                      className={cn(
+                        "mt-4 whitespace-pre-wrap leading-relaxed text-stone-200",
+                        !open && "line-clamp-6",
+                      )}
+                    >
+                      {note.body}
+                    </p>
+                    {isLong ? (
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setExpanded((prev) => {
+                            const next = new Set(prev);
+                            if (next.has(note.id)) next.delete(note.id);
+                            else next.add(note.id);
+                            return next;
+                          })
+                        }
+                        className="mt-2 font-sans text-xs text-amber-100 hover:underline"
+                      >
+                        {open ? t("common.showLess") : t("common.showMore")}
+                      </button>
+                    ) : null}
+                  </>
+                );
+              })()}
               {note.tags.length > 0 ? (
                 <div className="mt-4 flex flex-wrap gap-2">
                   {note.tags.map((tag) => (

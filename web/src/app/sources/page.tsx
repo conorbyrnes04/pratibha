@@ -257,6 +257,12 @@ export default function SourcesPage() {
           </div>
         </header>
 
+        {shelves.length === 0 && !error ? (
+          <p className="soft font-sans text-sm leading-relaxed">
+            {t("sources.loading")}
+          </p>
+        ) : null}
+
         {shelves.map((shelf) => (
           <section key={shelf.tradition}>
             <div className="mb-4 flex items-baseline justify-between gap-3">

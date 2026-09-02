@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { AuthGate } from "@/components/AuthGate";
@@ -52,6 +52,10 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#090912",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -61,15 +65,24 @@ export default function RootLayout({
   const body = (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
+        {/* Warm the Google Fonts connections early so the render-blocking @import
+         * in globals.css resolves faster (reduces FOUT / layout shift). */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <Script id="pratibha-locale" strategy="beforeInteractive">
           {`(function(){try{var l=localStorage.getItem("pratibha.locale.v1");var ok={"en":1,"fr":1,"es":1,"pt-BR":1,"zh":1,"ru":1,"ja":1,"ar":1};if(!l||!ok[l])return;document.documentElement.lang=l==="zh"?"zh-Hans":l;document.documentElement.dir=l==="ar"?"rtl":"ltr";}catch(e){}})();`}
         </Script>
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <ConvexClientProvider>
           <AuthProvider>
             <LocaleProvider>
               <SiteHeader />
               <SiteDock />
-              <AuthGate>{children}</AuthGate>
+              <div id="main-content">
+                <AuthGate>{children}</AuthGate>
+              </div>
               <GlyphUnlockHost />
               <Toaster />
             </LocaleProvider>

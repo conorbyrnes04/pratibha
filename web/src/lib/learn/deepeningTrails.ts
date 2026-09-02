@@ -8,6 +8,11 @@ import { THE_REED_COMPLAINS } from "./tracks/theReedComplains";
 import { THE_BODY_OF_HATHA } from "./tracks/theBodyOfHatha";
 import { HUMANENESS_AT_HAND } from "./tracks/humanenessAtHand";
 import { CUTTING_THE_DIAMOND } from "./tracks/cuttingTheDiamond";
+import { UNDER_THE_SUN } from "./tracks/underTheSun";
+import { THIRTY_TWO_PATHS } from "./tracks/thirtyTwoPaths";
+import { FLUX_AND_WHAT_IS } from "./tracks/fluxAndWhatIs";
+import { SILENT_WORSHIP } from "./tracks/silentWorship";
+import { STOP_SEEKING } from "./tracks/stopSeeking";
 
 /**
  * Off-spine deepening walks compiled after the first tradition tiles shipped.
@@ -24,4 +29,9 @@ export const DEEPENING_TRAILS: LearningTrack[] = [
   THE_BODY_OF_HATHA,
   HUMANENESS_AT_HAND,
   CUTTING_THE_DIAMOND,
+  UNDER_THE_SUN,
+  THIRTY_TWO_PATHS,
+  FLUX_AND_WHAT_IS,
+  SILENT_WORSHIP,
+  STOP_SEEKING,
 ];

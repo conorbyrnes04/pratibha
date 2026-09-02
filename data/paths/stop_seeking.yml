@@ -1,0 +1,129 @@
+path_id: stop_seeking
+work_id: astavakra_gita
+work_title: Aṣṭāvakra Gītā
+title: "Stop Seeking"
+tradition: Vedānta (Aṣṭāvakra)
+covers: "Sudden teaching: Janaka's three questions, already if you rest, peace without effort, bondage as the mind's movements, the ocean (stop running), beyond teacher. Not asg_1_7 (already a witness bead). Not a second PHR/Śiva/VBT recognition walk."
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  Keep this sudden. Do not restate the two birds, the Śiva Sūtras, or the Heart
+  of Recognition. The move is: stop becoming the seeker.
+
+premise: >
+  You-are-that already walked fullness, discrimination, tat tvam asi, and the
+  Fourth. This walk is the seeker's questions meeting a teaching that refuses
+  the career of seeking: rest now, peace without effort, bondage is wanting,
+  you are the ocean so stop running, teacher and aim drop. Distinct from
+  recognition-as-method.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_questions
+    name: "The seeker's three questions"
+    theme: "How is knowledge attained? The career of seeking is named."
+    why_first: >
+      If we skip Janaka's questions, later 'already free' becomes a slogan the seeker wears.
+    stations:
+      - station: 1
+        unit_id: astavakra_gita.asg_1_1
+        title: "How is knowledge attained?"
+        opening_question: "Which of the three questions am I still using as a career?"
+        transmission: >
+          How is knowledge attained? How does liberation come? How is dispassion obtained?
+          Tell me, Lord. The path begins as a seeker who wants a method. The miss is skipping
+          this honesty and quoting non-dual slogans while still organizing a search.
+        contemplation: "Name the hunger. Do not decorate it as already knowing."
+        gate_practice: >
+          Write Janaka's three questions. Circle the one you are actually living. For today,
+          stop googling a fourth. Sit with the circled question unsolved for five minutes.
+        passed_when: "You can admit you are still a seeker of one of the three, without dressing as one who already knows."
+      - station: 2
+        unit_id: astavakra_gita.asg_1_4
+        title: "Already, if you rest"
+        opening_question: "Where am I still scheduling liberation after more work on the body-story?"
+        transmission: >
+          If you separate the body and rest in consciousness, you are even now happy, peaceful,
+          free of bondage. Not 'become the witness' as a practice career — that bead already
+          exists. Here the shock is adhunā eva: already, now. The miss is turning rest into
+          another project for later.
+        contemplation: "The body is not a problem to finish. Rest is not a future."
+        gate_practice: >
+          Once today, when a body-story starts a plan (fix, improve, wait until), rest sixty
+          seconds as the one who knows the story. Do not improve the story. Stand up and continue.
+        passed_when: "You can rest now once, without adding a later date for freedom."
+
+  - gate_id: gate_1_effort
+    name: "Peace without manufacturing"
+    theme: "Change belongs to nature; bondage is the mind's movements."
+    why_first: >
+      'Already' without this becomes laziness. Effort-peace without the bondage diagnosis becomes a mood.
+    stations:
+      - station: 3
+        unit_id: astavakra_gita.ag_01_11
+        title: "Peace without effort"
+        opening_question: "Where am I still trying to manufacture peace by managing being and non-being?"
+        transmission: >
+          One who knows that the changes of being and non-being arise by nature becomes
+          changeless, free of affliction, and effortlessly comes to peace. Not fatalism.
+          Not a blank. The miss is working on the weather as if the weather were the Self.
+        contemplation: "Peace is not produced by a better campaign against arising and passing."
+        gate_practice: >
+          Name one arising and one passing you have been managing. Let both be 'by nature'
+          for ten minutes. Do the next duty without using the management as identity.
+        passed_when: "You can let one pair of being/non-being arise without hiring yourself as their engineer."
+      - station: 4
+        unit_id: astavakra_gita.ag_08_01
+        title: "The movements of bondage"
+        opening_question: "Which movement am I still calling 'me' — wanting, grieving, grasping, rejecting?"
+        transmission: >
+          Bondage is then, when the mind desires, grieves, abandons, grasps, is elated, is angry.
+          Not a cosmic prison. Not ignorance as a metaphysics. The miss is looking for a
+          metaphysical knot while the knot is this hour's wanting.
+        contemplation: "You do not need a better theory of māyā if you can catch the movement."
+        gate_practice: >
+          Catch one of the six: want, grief, drop, grab, elation, anger. Name it as citta,
+          not as the world. Wait until the movement is seen before you act from it.
+        passed_when: "You can name one movement of bondage as the mind's, not as the structure of reality."
+
+  - gate_id: gate_2_stop
+    name: "Stop running; drop the school"
+    theme: "Ocean, then no teacher-aim left to chase."
+    why_first: >
+      If the ocean is an image, you keep running. If 'beyond teacher' is contempt, you have not stopped seeking — you have changed brands.
+    stations:
+      - station: 5
+        unit_id: astavakra_gita.ag_15_07
+        title: "Why do you run like a beggar?"
+        opening_question: "Where am I still running toward a wave as if I were not the water?"
+        transmission: >
+          The universe shines forth like waves in the sea. Knowing 'I am that,' why do you
+          run as if poor? Distinct from recognition-as-flash and from the two birds. The move
+          is: stop the run. The miss is admiring the ocean image while booking the next retreat.
+        contemplation: "Poverty here is the seeker's gait, not a fact about awareness."
+        gate_practice: >
+          Cancel or postpone one seeking-move today (a tab, a purchase, a spiritual errand)
+          that was going to complete you. Stand still one minute as the water, then do an
+          ordinary duty.
+        passed_when: "You can stop one run that was begging the waves to make you the sea."
+      - station: 6
+        unit_id: astavakra_gita.ag_20_01
+        title: "Beyond teacher and teaching"
+        opening_question: "Where am I still keeping a student-slot open so the search can continue?"
+        transmission: >
+          For me — śiva, free of limiting adjuncts — where is instruction, scripture, disciple,
+          teacher? Where is any human aim? This is not contempt for study. It is the closer:
+          the seeker-position dissolves. You do not finish the Aṣṭāvakra Gītā. You drop the
+          career of being its student.
+        contemplation: "If you use this verse to quit learning while still hunting a state, you failed the gate."
+        gate_practice: >
+          Close the book after this station. For the rest of the day, do not start a new
+          teaching. Keep one ordinary kindness. If the student-slot itches, notice it as a
+          slot — not as a need for a new guru.
+        passed_when: "You can drop the student-slot for a day without hunting a replacement teacher or a replacement aim."

@@ -1714,8 +1714,8 @@ export const LEARNING_REALMS: LearningRealm[] = [
   {
     id: "vedanta",
     title: "Vedānta & the Upaniṣads",
-    blurb: "The witness behind waking, dream, and sleep — you are That.",
-    trackIds: ["you-are-that"],
+    blurb: "The witness behind waking, dream, and sleep — you are That. Then the sudden teaching: stop becoming the seeker.",
+    trackIds: ["you-are-that", "stop-seeking"],
   },
   {
     id: "letting-go",
@@ -1784,6 +1784,30 @@ export const LEARNING_REALMS: LearningRealm[] = [
     title: "Confucian",
     blurb: "Virtue is not remote. Cultivate what is near; the Mean is equilibrium, not mediocrity.",
     trackIds: ["humaneness-at-hand"],
+  },
+  {
+    id: "kabbalah",
+    title: "Kabbalah",
+    blurb: "Thirty-two paths: a grammar of the Name, then restraint, letters, hiddenness — one living equilibrium, not a finished tree.",
+    trackIds: ["thirty-two-paths"],
+  },
+  {
+    id: "qoheleth",
+    title: "Qoheleth",
+    blurb: "Under the sun: watch the vapor. Observe; do not address. The charge does not cancel hebel.",
+    trackIds: ["under-the-sun"],
+  },
+  {
+    id: "presocratic",
+    title: "Presocratic",
+    blurb: "Flux and what-is as one inquiry: the river you cannot step twice, then the road that only is. Not the One overflowing.",
+    trackIds: ["flux-and-what-is"],
+  },
+  {
+    id: "dakota",
+    title: "Dakota",
+    blurb: "The Great Mystery surrounds. Worship is silent, solitary, and free from self-seeking — no temple but nature.",
+    trackIds: ["silent-worship"],
   },
 ];
 

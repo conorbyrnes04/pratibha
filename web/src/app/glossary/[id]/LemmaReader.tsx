@@ -17,21 +17,20 @@ import { cn } from "@/lib/utils";
 import { recordPractice } from "@/lib/glyphUnlock";
 import { buttonVariants } from "@/components/ui/button";
 
-export default function GlossaryLemmaPage() {
+export function LemmaReader({ initialLemma = null }: { initialLemma?: Lemma | null }) {
   const params = useParams();
   const id = typeof params?.id === "string" ? params.id : Array.isArray(params?.id) ? params.id[0] : "";
 
-  const [lemma, setLemma] = useState<Lemma | null>(null);
+  const [lemma, setLemma] = useState<Lemma | null>(initialLemma);
   const [passages, setPassages] = useState<LemmaPassageRef[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!initialLemma);
   const [error, setError] = useState("");
 
   useEffect(() => {
     if (!id) return;
     let active = true;
-    setLoading(true);
+    if (!lemma || lemma.id !== id) setLoading(true);
     setError("");
-    setLemma(null);
     setPassages([]);
 
     Promise.all([getLemma(id), getLemmaPassages(id)])

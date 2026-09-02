@@ -80,6 +80,15 @@ export default function RandomPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    // If the first draw raced ahead of the local library and fell through to an
+    // empty pool, retry once the library finishes loading.
+    if (allItems.length > 0 && !item && !loading && error) {
+      void nextOne(collection);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [allItems]);
+
   const artSrcs = item ? collectionArtPool(item.collection) : generatedArtPool("default");
 
   return (

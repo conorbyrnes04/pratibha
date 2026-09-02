@@ -59,7 +59,7 @@ export function CommentaryTeaser({ body, label, verseId }: CommentaryTeaserProps
     >
       {listen}
       <div className="commentary-holo__header">
-        <p className="commentary-holo__label">{heading}</p>
+        <h2 className="commentary-holo__label">{heading}</h2>
       </div>
       {needsExpand && !open ? (
         <button
@@ -71,7 +71,7 @@ export function CommentaryTeaser({ body, label, verseId }: CommentaryTeaserProps
           <span className="commentary-holo__teaser chat-markdown">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{teaser}</ReactMarkdown>
           </span>
-          <span className="commentary-holo__affordance">{t("common.continue")}</span>
+          <span className="commentary-holo__affordance">{t("common.showMore")}</span>
         </button>
       ) : (
         <div className="commentary-holo__body chat-markdown reading-prose">
@@ -85,7 +85,7 @@ export function CommentaryTeaser({ body, label, verseId }: CommentaryTeaserProps
           aria-expanded
           onClick={() => setOpen(false)}
         >
-          {t("common.collapse")}
+          {t("common.showLess")}
         </button>
       ) : null}
     </section>

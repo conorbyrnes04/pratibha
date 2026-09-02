@@ -53,7 +53,9 @@ export function journalSourceHref(note: JournalNote): string | null {
   if (note.kind === "chat_response" || note.passageId.startsWith("chat:")) {
     const params = new URLSearchParams();
     if (note.verseId) params.set("verse_id", note.verseId);
-    if (note.question) params.set("q", note.question);
+    // Cap the prefilled question so a long transcript can't blow past URL length
+    // limits or leak the whole note into server logs / referrers.
+    if (note.question) params.set("q", note.question.slice(0, 240));
     const qs = params.toString();
     return qs ? `/chat?${qs}` : "/chat";
   }

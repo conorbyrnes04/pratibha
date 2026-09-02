@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
+import dynamic from "next/dynamic";
 import { getVerse, getVerses, getRelatedVerses } from "@/lib/api";
 import type { VerseItem } from "@/lib/types";
 import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
@@ -21,8 +22,7 @@ import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { JournalPanel } from "@/components/JournalPanel";
 import { StudentCommentary } from "@/components/StudentCommentary";
 import { CircleReadings } from "@/components/CircleReadings";
-import { SanghaBoundary } from "@/components/SanghaBoundary";
-import { ShareComposer } from "@/components/ShareComposer";
+import { QuietBoundary } from "@/components/SanghaBoundary";
 import { CommentaryTeaser } from "@/components/CommentaryTeaser";
 import { OriginalReliabilityBadge } from "@/components/OriginalReliabilityBadge";
 import {
@@ -55,6 +55,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+const ShareComposer = dynamic(
+  () => import("@/components/ShareComposer").then((m) => ({ default: m.ShareComposer })),
+  { ssr: false },
+);
+
 function practiceFallback(item: VerseItem, t: (key: string) => string): string {
   if ((item.themes || []).includes("witness")) {
     return t("reader.practiceWitness");
@@ -65,15 +70,17 @@ function practiceFallback(item: VerseItem, t: (key: string) => string): string {
   return t("reader.practiceDefault");
 }
 
-export default function VerseDetailPage() {
+export function PassageReader({ initialItem = null }: { initialItem?: VerseItem | null }) {
   const t = useT();
   const params = useParams<{ id: string }>();
-  const [item, setItem] = useState<VerseItem | null>(null);
+  // Seed from the server-fetched passage so the initial (server) render already
+  // contains the reading content for crawlers and social previews.
+  const [item, setItem] = useState<VerseItem | null>(initialItem);
   const [allItems, setAllItems] = useState<VerseItem[]>([]);
   const [semanticRelated, setSemanticRelated] = useState<VerseItem[] | null>(null);
   const [showOriginal, setShowOriginal] = useState(true);
   const [folioDesignOpen, setFolioDesignOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!initialItem);
   const [backHref, setBackHref] = useState<string | null>(null);
   const id = decodeURIComponent(params.id || "");
 
@@ -84,10 +91,13 @@ export default function VerseDetailPage() {
   }, []);
 
   useEffect(() => {
-    setLoading(true);
+    // Don't flash a loading state when the server already provided this passage;
+    // just refresh it in the background.
+    if (!item || item._id !== id) setLoading(true);
     getVerse(id)
       .then((v) => setItem(v))
       .finally(() => setLoading(false));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
   const study = useLocalizedVerse(item);
   useEffect(() => {
@@ -160,7 +170,22 @@ export default function VerseDetailPage() {
     return <main className="page-shell page-shell--reading soft">{t("reader.openingManuscript")}</main>;
   }
   if (!item) {
-    return <main className="page-shell page-shell--reading soft">{t("reader.notFound")}</main>;
+    return (
+      <main className="page-shell page-shell--reading">
+        <section className="card p-8 text-center">
+          <h1 className="text-2xl text-amber-100">{t("reader.notFound")}</h1>
+          <p className="soft mx-auto mt-3 max-w-md leading-relaxed">{t("notFound.lede")}</p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <Link href="/read" className={buttonVariants()}>
+              {t("notFound.library")}
+            </Link>
+            <Link href="/" className={buttonVariants({ variant: "secondary" })}>
+              {t("common.home")}
+            </Link>
+          </div>
+        </section>
+      </main>
+    );
   }
 
   const display = study || item;
@@ -278,14 +303,16 @@ export default function VerseDetailPage() {
           </section>
         ) : null}
 
-        <SanghaBoundary>
+        <QuietBoundary>
+          <CircleReadings verseId={item._id} />
+        </QuietBoundary>
+        <QuietBoundary>
           <StudentCommentary
             verseId={item._id}
             verseTitle={displayPassageTitle(display)}
             onKeepFolio={() => setFolioDesignOpen(true)}
           />
-          <CircleReadings verseId={item._id} />
-        </SanghaBoundary>
+        </QuietBoundary>
 
         <footer className="passage-endmatter">
           <div className="passage-endmatter__tools">
@@ -301,7 +328,9 @@ export default function VerseDetailPage() {
               onDesignOpenChange={setFolioDesignOpen}
             />
             <Sheet>
-              <SheetTrigger render={<button type="button" className="passage-reading__toggle" />}>
+              <SheetTrigger
+                render={<button type="button" className={buttonVariants({ variant: "secondary", size: "sm" })} />}
+              >
                 {t("nav.journal")}
               </SheetTrigger>
               <SheetContent

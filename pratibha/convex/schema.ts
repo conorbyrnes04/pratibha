@@ -45,10 +45,14 @@ const schema = defineSchema({
     status: v.union(v.literal("private"), v.literal("offered"), v.literal("hidden")),
     createdAt: v.number(),
     updatedAt: v.number(),
+    replyCount: v.optional(v.number()),
+    lastActivityAt: v.optional(v.number()),
+    sitCount: v.optional(v.number()),
   })
     .index("by_user_verse", ["userId", "verseId"])
     .index("by_user_updated", ["userId", "updatedAt"])
-    .index("by_verse_status", ["verseId", "status"]),
+    .index("by_verse_status", ["verseId", "status"])
+    .index("by_status_created", ["status", "createdAt"]),
 
   manuscripts: defineTable({
     userId: v.string(),
@@ -83,9 +87,28 @@ const schema = defineSchema({
     body: v.string(),
     status: v.union(v.literal("visible"), v.literal("hidden")),
     createdAt: v.number(),
+    parentReplyId: v.optional(v.id("circle_replies")),
+  })
+    .index("by_commentary", ["commentaryId"])
+    .index("by_user_commentary", ["userId", "commentaryId"])
+    .index("by_user_created", ["userId", "createdAt"]),
+
+  circle_sits: defineTable({
+    userId: v.string(),
+    commentaryId: v.id("student_commentaries"),
+    createdAt: v.number(),
   })
     .index("by_commentary", ["commentaryId"])
     .index("by_user_commentary", ["userId", "commentaryId"]),
+
+  circle_watches: defineTable({
+    userId: v.string(),
+    verseId: v.string(),
+    createdAt: v.number(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_verse", ["verseId"])
+    .index("by_user_verse", ["userId", "verseId"]),
 
   // A quiet "appreciation" a reader can leave on a verse (one per user/verse).
   verse_likes: defineTable({

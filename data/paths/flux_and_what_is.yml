@@ -1,0 +1,151 @@
+path_id: flux_and_what_is
+work_id: heraclitus_fragments
+work_title: Heraclitus Fragments and Parmenides On Nature
+title: "Flux and What-Is"
+tradition: Presocratic
+covers: "Selected Heraclitus doorways (Logos, polymathy, river, bow and lyre, strife) then Parmenides' fork (two ways, thinking=being, what is cannot not be). Not 128 fragments, not a Plotinus tile."
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  Keep the tension. Do not let flux become a slogan against being, or being a
+  slogan against the river. Do not fold this walk into the One overflowing.
+
+premise: >
+  The student first learns to listen to the Logos rather than to a teacher-brand,
+  then to refuse polymathy, then to enter the river, the tension of the bow,
+  and strife as genesis. Then Parmenides splits the road: only the way that it is
+  remains. Last gate holds the pedagogical tension — one inquiry, two irreconcilable
+  claims — rather than picking a team.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_logos
+    name: "Listen, don't accumulate"
+    theme: "The Logos is one; much learning is not understanding."
+    why_first: >
+      If Heraclitus begins as riddles to collect, later fragments become a cabinet.
+    stations:
+      - station: 1
+        unit_id: heraclitus_fragments.hfr_p001
+        title: "Listen to the Logos, not to me"
+        opening_question: "Where am I still listening to a voice (including my own) instead of to the common order?"
+        transmission: >
+          It is wise to listen not to me but to the Logos, and agree that all things are one.
+          The miss is making Heraclitus a brand, or making unity a mood. The Logos is the
+          common account — harder than a private take.
+        contemplation: "Unity here is not a feeling of oneness. It is what the account claims."
+        gate_practice: >
+          For three minutes, stop rehearsing your take. Watch one scene — a street, a room —
+          as if it had one account, not your commentary. Write one sentence that is not a pose.
+        passed_when: "You can distinguish listening to the common account from collecting a thinker's voice."
+      - station: 2
+        unit_id: heraclitus_fragments.hfr_p016
+        title: "Much learning does not teach understanding"
+        opening_question: "Which pile of learning am I still using as a substitute for having understood?"
+        transmission: >
+          Polymathy would have taught Hesiod and Pythagoras if it taught understanding.
+          The miss is adding fragments. Understanding is not a larger cabinet.
+        contemplation: "This walk is selected doorways. You will not finish the 128."
+        gate_practice: >
+          Close one extra source you were about to add. Return to one thing you already
+          know and have not lived. Do that thing once.
+        passed_when: "You can refuse one addition of learning and do the thing already understood."
+
+  - gate_id: gate_1_flux
+    name: "River, bow, strife"
+    theme: "Change, tension, conflict as the world's way — not a personality of chaos."
+    why_first: >
+      Without the river the Logos is a slogan. Without the bow, the river is only melancholy.
+    stations:
+      - station: 3
+        unit_id: heraclitus_fragments.hfr_p041
+        title: "You could not step twice"
+        opening_question: "Where am I still stepping as if the water were a thing I could keep?"
+        transmission: >
+          You could not step twice into the same river; other and other waters flow.
+          The miss is using flux as an excuse (nothing matters) or as a trauma (nothing stays).
+          The river is the world. You step; the waters are already other.
+        contemplation: "Impermanence here is not Buddhist nirodha. It is the river's own claim."
+        gate_practice: >
+          Wash your hands once, slowly. Notice you cannot keep the water. Dry them. Do the
+          next task without trying to freeze the moment you liked.
+        passed_when: "You can step once without trying to store the water."
+      - station: 4
+        unit_id: heraclitus_fragments.hfr_p056
+        title: "The bow and the lyre"
+        opening_question: "Where am I still wanting harmony as the absence of tension?"
+        transmission: >
+          The harmony of the world is like the bow and the lyre. Tension is how the thing
+          works. The miss is peace as slack strings — or conflict as proof that order failed.
+        contemplation: "Opposites are not a mood. They are the instrument's condition."
+        gate_practice: >
+          Name one living tension you have been trying to end (a relation, a decision, a
+          body-state). Keep it taut for one hour without forcing a resolution or a blow-up.
+        passed_when: "You can feel one tension as the instrument, not as a problem to erase."
+      - station: 5
+        unit_id: heraclitus_fragments.hfr_p044
+        title: "War is father of all"
+        opening_question: "Where am I still treating conflict as a glitch in an otherwise gentle cosmos?"
+        transmission: >
+          War is father and king of all: some gods, some humans, some slave, some free.
+          This is not a blessing of cruelty. It is a refusal of a cosmos that only cooperates.
+          Genesis includes strife. The miss is spiritualizing peace until conflict looks unreal.
+        contemplation: "You do not have to love war. You do have to stop lying that the world is only concord."
+        gate_practice: >
+          In one disagreement today, stop trying to make it not-a-conflict. State your side
+          cleanly; hear the other. Do not add a homily about unity.
+        passed_when: "You can let one conflict be real without turning it into a theology of violence or of denial."
+
+  - gate_id: gate_2_being
+    name: "The other road"
+    theme: "Parmenides: only the way that it is. Hold the tension; do not pick a team."
+    why_first: >
+      If we stay only with flux, being becomes the enemy. The fork is the pedagogy.
+    stations:
+      - station: 6
+        unit_id: parmenides_fragments.parm_02
+        title: "The two ways of inquiry"
+        opening_question: "Which road am I still mixing — saying what-is-not as if it were a place?"
+        transmission: >
+          Two roads: that it is, and that it is not. The second cannot be thought through.
+          After the river, this is a shock. Parmenides is not correcting Heraclitus' personality.
+          He forbids a way of inquiry. The miss is treating 'nothing' as a destination.
+        contemplation: "The fork is logical and existential. You cannot tour non-being."
+        gate_practice: >
+          Catch one sentence that treats an absence as a thing (the future you don't have,
+          the person who isn't here as a substance of lack). Rewrite it so you only speak
+          of what is the case now.
+        passed_when: "You can feel the difference between a missing object and a road that is not thinkable."
+      - station: 7
+        unit_id: parmenides_fragments.parm_03
+        title: "Thinking and being are the same"
+        opening_question: "Where am I still treating thought as a commentary hovering over a separate real?"
+        transmission: >
+          The same thing is for thinking and for being. Not 'think happy thoughts.' An epistemic
+          wall: what cannot be is not available to noein. The miss is collapsing this into
+          Vedānta or into manifestation-magic.
+        contemplation: "Homology with tat tvam asi is structural only if you keep the divergence: this is a ban on not-being, not a Self-teaching."
+        gate_practice: >
+          Take one worry that is a picture of what is not. Ask: is this thinkable as being,
+          or only as a scare? Drop the scare-picture for ten minutes. Attend to what is here.
+        passed_when: "You can catch thought feeding on what-is-not and return to what is available."
+      - station: 8
+        unit_id: parmenides_fragments.parm_04
+        title: "What is cannot not be"
+        opening_question: "Am I still picking a team — river or being — as if the walk were a vote?"
+        transmission: >
+          Only one story remains: that it is — ungenerated, imperishable. Hold this against
+          the river without cancelling either claim. You do not finish Presocratic philosophy.
+          You refuse two slogans: 'everything flows, so nothing is' and 'being is, so the river is fake.'
+        contemplation: "The last gate commits to the tension as one inquiry, not to a completed system."
+        gate_practice: >
+          Write two sentences and keep both: one true of the river you cannot step twice;
+          one true of what-is that cannot not be. Do not reconcile them. Carry both into
+          one concrete decision today.
+        passed_when: "You can hold flux and what-is as one pedagogical tension without making either a slogan."

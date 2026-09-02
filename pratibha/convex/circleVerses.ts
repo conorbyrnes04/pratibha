@@ -1,4 +1,4 @@
-/** Session 1 recorded set — the verses that always hold a Circle. Daily joins them client-side. */
+/** Session 1 recorded set — verses that always hold a door on the Circle hub. */
 export const CIRCLE_VERSE_IDS = [
   "siva_sutra.ss_i_1",
   "siva_sutra.ss_i_2",

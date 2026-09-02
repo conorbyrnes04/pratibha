@@ -16,6 +16,8 @@ const isPublicPage = createRouteMatcher([
   "/learn/(.*)",
   "/read",
   "/read/(.*)",
+  "/circle",
+  "/circle/(.*)",
   "/s/(.*)",
   "/m/(.*)",
   "/privacy",
@@ -89,14 +91,42 @@ function applySecurityHeaders(response: Response): Response {
 
 async function runInner(request: NextRequest, event: NextFetchEvent): Promise<Response> {
   if (!CONVEX_URL) return NextResponse.next();
-  return convexMiddleware(request, event);
+  const result = (await convexMiddleware(request, event)) as Response | null | undefined;
+  return result ?? NextResponse.next();
+}
+
+/**
+ * Convex Auth routes sign-in, token refresh, and OAuth callbacks all through the
+ * same `POST /api/auth` (action `"auth:signIn"`). Only a genuine credential
+ * submission should count against the brute-force limiter — token refresh
+ * (`args.refreshToken`) and OAuth code exchange (`args.params.code`) must pass
+ * freely, otherwise normal session upkeep trips the limiter, refresh fails, and
+ * every authenticated query fails with a stale token.
+ */
+async function isCredentialSignIn(request: NextRequest): Promise<boolean> {
+  try {
+    const { action, args } = (await request.clone().json()) as {
+      action?: string;
+      args?: { refreshToken?: unknown; params?: { code?: unknown; password?: unknown } };
+    };
+    return (
+      action === "auth:signIn" &&
+      args?.refreshToken === undefined &&
+      args?.params?.code === undefined &&
+      args?.params?.password !== undefined
+    );
+  } catch {
+    // Non-JSON or unreadable body — fail open so we never throttle refresh.
+    return false;
+  }
 }
 
 export default async function middleware(request: NextRequest, event: NextFetchEvent) {
   const isAuthPost = request.nextUrl.pathname.startsWith("/api/auth") && request.method === "POST";
   const started = Date.now();
+  const credentialAttempt = isAuthPost ? await isCredentialSignIn(request) : false;
 
-  if (isAuthPost && authRateLimited(clientIp(request))) {
+  if (credentialAttempt && authRateLimited(clientIp(request))) {
     await padAuthTiming(started);
     return applySecurityHeaders(
       new Response(JSON.stringify({ error: "Too many sign-in attempts. Try again in a few minutes." }), {
@@ -110,7 +140,9 @@ export default async function middleware(request: NextRequest, event: NextFetchE
   }
 
   const response = await runInner(request, event);
-  if (isAuthPost) await padAuthTiming(started);
+  // Constant-time padding only matters for credential checks; padding refresh
+  // just adds latency and encourages overlapping refreshes.
+  if (credentialAttempt) await padAuthTiming(started);
   return applySecurityHeaders(response);
 }
 

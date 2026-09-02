@@ -19,6 +19,6 @@ export function isCircleVerse(verseId: string): boolean {
   return CIRCLE_SET.has(verseId);
 }
 
-export function showCircle(verseId: string, offeredCount: number, daily = false): boolean {
-  return daily || isCircleVerse(verseId) || offeredCount > 0;
+export function showCircle(_verseId?: string, _offeredCount?: number, _daily = false): boolean {
+  return true;
 }

@@ -106,6 +106,7 @@ const TOME_META: TomeMeta[] = [
   { pattern: /course in miracles|acim/i, tradition: "Christian", author: "Helen Schucman (scribe)", authored: "1965–1972 CE", eraYear: 1972 },
   { pattern: /psalm|tehillim|psalter/i, tradition: "Hebrew", author: "David / the psalmists (trad.)", authored: "c. 10th–2nd c. BCE", eraYear: -600 },
   { pattern: /ecclesiastes|qoheleth/i, tradition: "Hebrew", author: "Qoheleth (trad.)", authored: "c. 3rd c. BCE", eraYear: -250 },
+  { pattern: /kabbalah|zohar|yetzirah/i, tradition: "Hebrew", author: "Kabbalistic (Zohar attrib. Moses de León; Sefer Yetzirah attrib. Abraham)", authored: "c. 3rd–13th c. CE", eraYear: 1280 },
   { pattern: /johnson|yoruba.?faith|yoruba.?religion/i, tradition: "Yoruba", author: "Samuel Johnson", authored: "1921 CE", eraYear: 1921 },
   { pattern: /yoruba/i, tradition: "Yoruba", author: "Oral (òwe)", authored: "recorded 1894 CE", eraYear: 1894 },
   { pattern: /eastman|soul of the indian/i, tradition: "Dakota", author: "Charles Eastman (Ohíyeʼsa)", authored: "1911 CE", eraYear: 1911 },

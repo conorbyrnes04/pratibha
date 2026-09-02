@@ -30,7 +30,54 @@ const config = {
     },
     package: "com.pratibha.app",
   },
-  plugins: ["expo-router"],
+  plugins: [
+    "expo-router",
+    [
+      "expo-alternate-app-icons",
+      [
+        {
+          name: "Yantra",
+          ios: "./assets/images/icons/yantra.png",
+          android: {
+            foregroundImage: "./assets/images/icons/yantra.png",
+            backgroundColor: "#090912",
+          },
+        },
+        {
+          name: "YantraCrop",
+          ios: "./assets/images/icons/yantra-crop.png",
+          android: {
+            foregroundImage: "./assets/images/icons/yantra-crop.png",
+            backgroundColor: "#090912",
+          },
+        },
+        {
+          name: "Parchment",
+          ios: "./assets/images/icons/parchment.png",
+          android: {
+            foregroundImage: "./assets/images/icons/parchment.png",
+            backgroundColor: "#f6efe4",
+          },
+        },
+        {
+          name: "Vermillion",
+          ios: "./assets/images/icons/vermillion.png",
+          android: {
+            foregroundImage: "./assets/images/icons/vermillion.png",
+            backgroundColor: "#b85b3d",
+          },
+        },
+        {
+          name: "Lapis",
+          ios: "./assets/images/icons/lapis.png",
+          android: {
+            foregroundImage: "./assets/images/icons/lapis.png",
+            backgroundColor: "#324867",
+          },
+        },
+      ],
+    ],
+  ],
   experiments: {
     typedRoutes: true,
   },

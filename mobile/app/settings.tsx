@@ -1,13 +1,27 @@
 import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
 import { PratibhaText, ui } from "@/components/ui/PratibhaText";
 import { getApiBase, pingHealth, PRODUCTION_API_BASE, setApiBaseOverride } from "@/lib/api";
-import { API_OVERRIDE_KEY } from "@/lib/storage";
+import { APP_ICONS, type AppIconId } from "@/lib/appIcons";
+import { API_OVERRIDE_KEY, APP_ICON_KEY } from "@/lib/storage";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useStudy } from "@/context/StudyContext";
 import { useEffect, useState } from "react";
-import { ActivityIndicator, Pressable, TextInput, View, Keyboard } from "react-native";
+import {
+  ActivityIndicator,
+  Image,
+  Pressable,
+  TextInput,
+  View,
+  Keyboard,
+  Platform,
+} from "react-native";
 import { colors } from "@/constants/theme";
 import * as Haptics from "expo-haptics";
+import {
+  getAppIconName,
+  setAlternateAppIcon,
+  supportsAlternateIcons,
+} from "expo-alternate-app-icons";
 
 type PingState = "idle" | "checking" | "ok" | "fail";
 
@@ -17,11 +31,25 @@ export default function SettingsScreen() {
   const [saved, setSaved] = useState(false);
   const [pingState, setPingState] = useState<PingState>("idle");
   const [pingDetail, setPingDetail] = useState("");
+  const [iconId, setIconId] = useState<AppIconId>("default");
+  const [iconNote, setIconNote] = useState("");
 
   useEffect(() => {
     AsyncStorage.getItem(API_OVERRIDE_KEY).then((v) => {
       if (v) setApiBase(v);
     });
+    AsyncStorage.getItem(APP_ICON_KEY).then((v) => {
+      if (v && APP_ICONS.some((icon) => icon.id === v)) setIconId(v as AppIconId);
+    });
+    try {
+      if (supportsAlternateIcons) {
+        const native = getAppIconName();
+        const match = APP_ICONS.find((icon) => icon.nativeName === native);
+        if (match) setIconId(match.id);
+      }
+    } catch {
+      /* web / Expo Go */
+    }
   }, []);
 
   async function applyBase(url: string) {
@@ -46,6 +74,28 @@ export default function SettingsScreen() {
       setPingDetail(health.error || `HTTP ${health.status || "error"}`);
     }
     setTimeout(() => setSaved(false), 2000);
+  }
+
+  async function applyIcon(id: AppIconId) {
+    const option = APP_ICONS.find((icon) => icon.id === id);
+    if (!option) return;
+    setIconId(id);
+    await AsyncStorage.setItem(APP_ICON_KEY, id);
+    void Haptics.selectionAsync();
+    if (!supportsAlternateIcons) {
+      setIconNote(
+        Platform.OS === "web"
+          ? "Home-screen icons change on iOS and Android builds."
+          : "Icon choice is saved. A development or production build applies it to the home screen.",
+      );
+      return;
+    }
+    try {
+      await setAlternateAppIcon(option.nativeName);
+      setIconNote("");
+    } catch (err) {
+      setIconNote(err instanceof Error ? err.message : "Could not change the home-screen icon.");
+    }
   }
 
   return (
@@ -101,6 +151,67 @@ export default function SettingsScreen() {
         ) : pingState === "fail" ? (
           <PratibhaText variant="soft" style={{ marginTop: 12, fontSize: 14, color: colors.rose }}>
             Couldn’t connect: {pingDetail}
+          </PratibhaText>
+        ) : null}
+      </View>
+
+      <View style={[ui.card, { marginTop: 20 }]}>
+        <PratibhaText variant="label">Home screen icon</PratibhaText>
+        <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 15 }}>
+          Pick the seal, the full yantra, or a field color. iOS may ask before it changes.
+        </PratibhaText>
+        <View
+          style={{
+            marginTop: 16,
+            flexDirection: "row",
+            flexWrap: "wrap",
+            gap: 12,
+          }}
+        >
+          {APP_ICONS.map((icon) => {
+            const selected = icon.id === iconId;
+            return (
+              <Pressable
+                key={icon.id}
+                onPress={() => void applyIcon(icon.id)}
+                accessibilityRole="button"
+                accessibilityState={{ selected }}
+                accessibilityLabel={icon.label}
+                style={{
+                  width: "30%",
+                  minWidth: 96,
+                  flexGrow: 1,
+                  maxWidth: 132,
+                  alignItems: "center",
+                  gap: 8,
+                }}
+              >
+                <View
+                  style={{
+                    width: 72,
+                    height: 72,
+                    borderRadius: 16,
+                    overflow: "hidden",
+                    backgroundColor: icon.background,
+                    borderWidth: selected ? 2 : 1,
+                    borderColor: selected ? colors.accent : colors.border,
+                  }}
+                >
+                  <Image source={icon.preview} style={{ width: 72, height: 72 }} />
+                </View>
+                <PratibhaText
+                  variant="label"
+                  style={{ color: selected ? colors.accentBright : colors.muted2, textAlign: "center" }}
+                >
+                  {icon.label}
+                </PratibhaText>
+              </Pressable>
+            );
+          })}
+        </View>
+        {iconNote ? (
+          <PratibhaText variant="soft" style={{ marginTop: 12, fontSize: 14 }}>
+            {iconNote}
           </PratibhaText>
         ) : null}
       </View>

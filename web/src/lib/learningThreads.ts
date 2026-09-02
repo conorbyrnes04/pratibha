@@ -174,7 +174,7 @@ export const LEARNING_THREADS: LearningThread[] = [
     subtitle: "You cannot see the sun unless you have first become sunlike",
     thesis: "The Source is not grasped as an object. You see it by resemblance — by becoming light.",
     arc:
-      "Plotinus gives the claim: the eye sees the sun only by becoming sunlike. Śaivism answers with surge and flash — awareness catching itself. The Yoginīhṛdaya interiorizes the whole diagram in the body. Then a counter-bead: Aṣṭāvakra will not let you manufacture light; you are already the witness. The fire that never went out is the last word: you were never kindling from nothing.",
+      "Plotinus gives the claim: the eye sees the sun only by becoming sunlike. ʿAṭṭār answers with the pun: thirty birds find thirty birds — you see by becoming the company that completed the road. Śaivism answers with surge and flash — awareness catching itself. The Yoginīhṛdaya interiorizes the whole diagram in the body. Then a counter-bead: Aṣṭāvakra will not let you manufacture light; you are already the witness. The fire that never went out is the last word: you were never kindling from nothing.",
     practice:
       "Once today, set down one excessive thing — a grasping, a performance, a haze — and notice what brightness was already under it. Do not add light. Subtract the cover.",
     integration:
@@ -194,6 +194,18 @@ export const LEARNING_THREADS: LearningThread[] = [
         trackId: "the-one-and-the-many",
         stepId: "om-become-sunlike",
         passageId: "plotinus_enneads.enn_i_6_09",
+      },
+      {
+        id: "light-simurgh",
+        tradition: "ʿAṭṭār",
+        insight: "Thirty birds find thirty birds. The king is the arrived company.",
+        move: "You see by becoming the company that completed the road — not by meeting a king next door.",
+        homology: "Same law of vision: likeness before sight. The face in the mirror is what the journey made.",
+        divergence:
+          "Plotinus chisels a statue toward the One. The birds unmake the seeker until the pun closes: Simurgh is sī murgh. Not a sculptor's effort, and not 'I am God.'",
+        trackId: "the-beloved-in-plain-sight",
+        stepId: "bls-thirty-birds",
+        passageId: "conference_of_the_birds.cot_28",
       },
       {
         id: "light-ss",

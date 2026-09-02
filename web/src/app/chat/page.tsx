@@ -18,6 +18,7 @@ import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
 import { ArtBackdrop } from "@/components/ArtImage";
 import { useT } from "@/components/LocaleProvider";
 import { Disclosure } from "@/components/ui/Disclosure";
+import { InlineMarkdown } from "@/components/InlineMarkdown";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import {
@@ -83,6 +84,7 @@ export default function ChatPage() {
   const [chatRemaining, setChatRemaining] = useState<number | null>(null);
   const [dailyCapHit, setDailyCapHit] = useState(false);
   const [backHref, setBackHref] = useState<string | null>(null);
+  const [warming, setWarming] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -116,7 +118,18 @@ export default function ChatPage() {
     if (verseB) setCompareVerseB(verseB);
 
     if (verseId) {
-      getVerse(verseId).then(setPinnedVerse).catch(() => setPinnedVerse(null));
+      getVerse(verseId)
+        .then((verse) => {
+          setPinnedVerse(verse);
+          // Arriving from a gate to compare: seed Voice A with the pinned
+          // passage itself (not an arbitrary first-in-catalog tradition) unless
+          // the URL explicitly names a Voice A.
+          if (verse?.collection && mode === "compare" && !voiceA) {
+            setCompareA(verse.collection);
+            setCompareVerseA(verse._id);
+          }
+        })
+        .catch(() => setPinnedVerse(null));
     }
   }, []);
 
@@ -310,6 +323,14 @@ export default function ChatPage() {
     setQ("");
     setSources([]);
     setCompareWarning("");
+    // If no token has arrived after 5s the backend is likely cold-starting;
+    // reassure the reader instead of leaving a silent "thinking…" spinner.
+    setWarming(false);
+    const warmTimer = setTimeout(() => setWarming(true), 5000);
+    const clearWarm = () => {
+      clearTimeout(warmTimer);
+      setWarming(false);
+    };
     try {
       const selected = compareMode ? [compareA, compareB].filter(Boolean) : [];
       const compareVerseIds =
@@ -332,6 +353,7 @@ export default function ChatPage() {
             setCompareWarning(warning || "");
           },
           onDelta: (full) => {
+            clearWarm();
             setMessages((prev) => {
               const copy = [...prev];
               if (copy[assistantIdx]) copy[assistantIdx] = { role: "assistant", content: full };
@@ -371,6 +393,7 @@ export default function ChatPage() {
       setSources([]);
       setCompareWarning("");
     } finally {
+      clearWarm();
       setBusy(false);
     }
   }
@@ -441,7 +464,12 @@ export default function ChatPage() {
                         <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
                       </div>
                     ) : (
-                      <p className="soft animate-pulse text-sm">{t("chat.thinking")}</p>
+                      <>
+                        <p className="soft animate-pulse text-sm">{t("chat.thinking")}</p>
+                        {warming ? (
+                          <p className="soft mt-2 text-xs leading-relaxed">{t("chat.warming")}</p>
+                        ) : null}
+                      </>
                     )}
                     {m.content ? (
                       <Button
@@ -526,7 +554,7 @@ export default function ChatPage() {
         <div className="mt-6">
           <Disclosure
             summary={pinnedVerse ? t("chat.studyOptions") : t("chat.retrievalCompare")}
-            hint={`${chatMode}${pinnedVerse && layerFocus ? ` · ${layerFocus}` : ""}${useRag ? ` · ${t("chat.grounded")}` : ` · ${t("chat.freeform")}`}${compareMode ? ` · ${t("chat.modeCompare")}` : ""}`}
+            hint={`${chatMode}${pinnedVerse && layerFocus ? ` · ${layerFocus}` : ""}${useRag ? ` · ${t("chat.grounded")}` : ` · ${t("chat.freeform")}`}${compareMode && chatMode !== "compare" ? ` · ${t("chat.modeCompare")}` : ""}`}
             defaultOpen={compareMode}
           >
             {pinnedVerse ? (
@@ -645,7 +673,9 @@ export default function ChatPage() {
                   </p>
                 );
                 const body = (
-                  <p className="library-passage__preview line-clamp-5">{s.text || ""}</p>
+                  <div className="library-passage__preview line-clamp-5">
+                    <InlineMarkdown>{s.text || ""}</InlineMarkdown>
+                  </div>
                 );
                 if (href) {
                   return (

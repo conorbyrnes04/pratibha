@@ -20,20 +20,22 @@ from app.data_loader import get_all_verses  # noqa: E402
 from app.tts import (  # noqa: E402
     SPEAKABLE_SECTIONS,
     _DEFAULT_VOICE,
-    _ROOM_DEFAULT_VOICES,
     _env_voice,
     _speech_key,
     build_script,
     publish_listen_sections,
     verse_speech_key,
+    voice_gender_for,
     voice_room_for,
 )
 
 OUT = ROOT / "data" / "listen_archive.json"
 
 
-def _voice_for(room: str) -> str:
-    return _env_voice(room) or _ROOM_DEFAULT_VOICES.get(room, "") or _DEFAULT_VOICE
+def _voice_for(verse: dict) -> str:
+    room = voice_room_for(verse)
+    gender = voice_gender_for(verse)
+    return _env_voice(room, gender) or _DEFAULT_VOICE
 
 
 def index_local() -> dict[str, list[str]]:
@@ -45,7 +47,7 @@ def index_local() -> dict[str, list[str]]:
         vid = str(verse.get("_id") or "").strip()
         if not vid:
             continue
-        voice = _voice_for(voice_room_for(verse))
+        voice = _voice_for(verse)
         found: list[str] = []
         for section in SPEAKABLE_SECTIONS:
             text = build_script(verse, section)
@@ -68,7 +70,7 @@ async def copy_stable(archive: dict[str, list[str]], *, upload: bool) -> tuple[i
         verse = verses.get(vid)
         if not verse:
             continue
-        voice = _voice_for(voice_room_for(verse))
+        voice = _voice_for(verse)
         for section in sections:
             text = build_script(verse, section)
             src_key = _speech_key(voice, text)

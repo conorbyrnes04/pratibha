@@ -326,8 +326,7 @@ async def bake_speech(
         cached = listen_store.read_local(key) or await listen_store.get_object(key)
         if cached:
             dest = verse_speech_key(vid, section)
-            if not listen_store.read_local(dest):
-                await listen_store.put_object(dest, cached)
+            await listen_store.put_object(dest, cached)
             pending.setdefault(vid, []).append(section)
             print(f"  skip {vid} {section} (cache {room}/{gender})")
             skipped += 1
@@ -499,7 +498,7 @@ async def main() -> int:
 
     t0 = time.monotonic()
     cue_made = cue_skip = 0
-    if args.slice in {"cues", "path", "walkable"}:
+    if args.slice in {"cues", "path", "walkable", "work"}:
         cue_made, cue_skip = await bake_cues(dry_run=args.dry_run)
 
     track_ids: list[str] = []
@@ -534,6 +533,10 @@ async def main() -> int:
     if track_ids:
         verses, unresolved = collect_verses(track_ids)
 
+    announce_made, announce_skip, announce_chars, announce_failed = await bake_announces(
+        dry_run=args.dry_run
+    )
+
     speech_made = speech_skip = chars = 0
     failed: list[str] = []
     if verses:
@@ -542,10 +545,6 @@ async def main() -> int:
         speech_made, speech_skip, chars, failed = await bake_speech(
             verses, dry_run=args.dry_run, reserve=args.reserve
         )
-
-    announce_made, announce_skip, announce_chars, announce_failed = await bake_announces(
-        dry_run=args.dry_run
-    )
 
     elapsed = time.monotonic() - t0
     spent = chars + announce_chars

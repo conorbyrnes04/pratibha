@@ -91,6 +91,13 @@ function LibraryPageContent() {
   const [learningMode, setLearningMode] = useState(true);
   const [includeDrafts, setIncludeDrafts] = useState(false);
   const [librarySort, setLibrarySort] = useState<LibrarySort>("tradition");
+  const PAGE_SIZE = 24;
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
+  // Reset pagination whenever the result set changes.
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [q, collection, theme]);
 
   useEffect(() => {
     const maturity = includeDrafts ? "all" : "strong_draft";
@@ -196,7 +203,7 @@ function LibraryPageContent() {
     [items, q, collection, theme],
   );
   const showShelf = collection === "all" && !q.trim();
-  const studyList = useLocalizedVerseCards(showShelf ? [] : filtered, 40);
+  const studyList = useLocalizedVerseCards(showShelf ? [] : filtered, visibleCount);
   const hasItems = items.length > 0;
   const isBooting = (status === "loading" || status === "waking") && !hasItems;
   const isHardError = status === "error" && !hasItems;
@@ -459,7 +466,12 @@ function LibraryPageContent() {
         </div>
       ) : (
         <div className="library-list">
-          {studyList.slice(0, 300).map((x) => (
+          {filtered.length > 0 ? (
+            <p className="soft font-sans text-sm">
+              {t("library.resultCount", { count: filtered.length })}
+            </p>
+          ) : null}
+          {studyList.slice(0, visibleCount).map((x) => (
             <div key={x._id} className="library-passage library-passage--listen group">
               <Link href={`/read/${encodeURIComponent(x._id)}`} className="library-passage__open">
                 <div className="library-passage__top">
@@ -511,6 +523,17 @@ function LibraryPageContent() {
               <ListenButton verseId={x._id} variant="header" />
             </div>
           ))}
+          {filtered.length > visibleCount ? (
+            <div className="mt-6 flex justify-center">
+              <button
+                type="button"
+                onClick={() => setVisibleCount((n) => n + PAGE_SIZE)}
+                className="rounded-full border border-amber-200/40 px-5 py-2 font-sans text-xs tracking-wide text-amber-50 transition hover:border-amber-100/70 hover:bg-amber-300/10"
+              >
+                {t("library.loadMore", { count: filtered.length - visibleCount })}
+              </button>
+            </div>
+          ) : null}
           {filtered.length === 0 ? (
             <p className="soft mt-6">{t("library.noMatchTry")}</p>
           ) : null}

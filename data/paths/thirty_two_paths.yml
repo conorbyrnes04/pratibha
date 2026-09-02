@@ -1,0 +1,150 @@
+path_id: thirty_two_paths
+work_id: kabbalah_zohar_yetzirah
+work_title: Sefer Yetzirah and the Zohar
+title: "Thirty-Two Paths"
+tradition: Kabbalah
+covers: "Selected Yetzirah doorways: 32 paths, ten sephiroth, formed from nothing, restrain speech, letters in the voice, three mothers, the Ancient One hidden, equilibrium. Not a 27-file catalogue, not Plotinus emanation, not Psalms address."
+status: complete
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  Keep this covenantal. Do not turn the sephiroth into a second One-and-many
+  overflow, and do not turn restraint of speech into a psalm.
+
+premise: >
+  The student is meeting a grammar of creation: paths, numbers, letters, then
+  the command to stop talking about the decad, then the body of utterance,
+  hiddenness, and equilibrium. Last gate commits to one living balance, not
+  finishing the thirty-two.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+
+gates:
+  - gate_id: gate_0_grammar
+    name: "The grammar of the paths"
+    theme: "Paths and the decad are a covenant map, not a diagram to collect."
+    why_first: >
+      If the thirty-two begin as occult trivia, later letters become a hobby.
+    stations:
+      - station: 1
+        unit_id: kabbalah_zohar_yetzirah.kabbalah_zohar_yetzirah_001
+        title: "Thirty-two occult and wonderful paths"
+        opening_question: "Where am I still treating the paths as a secret to own rather than a grammar to stand in?"
+        transmission: >
+          In thirty-two occult and wonderful paths of wisdom Yah, YHVH of Hosts, engraved.
+          Ten sephiroth and twenty-two letters — not a philosophy kit. A living Name as the
+          channels of how the Infinite becomes knowable.
+        contemplation: "Wisdom here is encounter, not a map you hang on the wall."
+        gate_practice: >
+          Speak one divine name you actually use — or the word God if that is yours — once,
+          slowly. Then do one ordinary act without adding a second explanation of it.
+        passed_when: "You can stand in one path as a Name, not as a collectible diagram."
+      - station: 2
+        unit_id: kabbalah_zohar_yetzirah.kabbalah_zohar_yetzirah_002
+        title: "Ten are the numbers"
+        opening_question: "Where am I still counting the sephiroth as if counting were already knowledge?"
+        transmission: >
+          Ten are the numbers, as are the sephiroth, and twenty-two the letters. Together they
+          are declared the foundation — not yet how they work. The miss is rushing to a tree
+          poster before the decad has weight.
+        contemplation: "Number here is structure of the real, not numerology as entertainment."
+        gate_practice: >
+          Hold both hands open. Count ten, slowly, as if each finger were a place you could
+          not skip. Do not name the sephiroth. Feel ten as enough and as a limit.
+        passed_when: "You can feel ten as a complete count, not as a list to memorize tonight."
+      - station: 3
+        unit_id: kabbalah_zohar_yetzirah.kabbalah_zohar_yetzirah_003
+        title: "Formed from nothing"
+        opening_question: "Where am I still treating the body as outside the map?"
+        transmission: >
+          The ten formed from nothing are bound to the body and to covenant — speech and flesh.
+          The miss is leaving Yetzirah in the head. The decad is not an idea you visit.
+        contemplation: "From nothing is not nihilism. It is that the numbers are not assembled from prior stuff you own."
+        gate_practice: >
+          Touch thumb to each fingertip of one hand. With each contact, say nothing. Let the
+          count be in the flesh. Then keep one spoken word today as if it were covenant, not chatter.
+        passed_when: "You can feel the decad in the hands, not only as a chart."
+
+  - gate_id: gate_1_restraint
+    name: "Stop talking, then speak as letter"
+    theme: "Restraint, then letters as breath in the body."
+    why_first: >
+      Without restraint, the letters become a technique. Without letters, restraint is just silence-as-mood.
+    stations:
+      - station: 4
+        unit_id: kabbalah_zohar_yetzirah.kabbalah_zohar_yetzirah_008
+        title: "Restrain your lips from the decad"
+        opening_question: "Where is my mouth still commenting on what I have not been given to carry?"
+        transmission: >
+          As to this decad, restrain lips from comment and mind from thought. If you fail,
+          return to your place. The living creatures ran and returned. Approach, withdraw —
+          not a lecture on the tree.
+        contemplation: "Not knowing is not a failure of the path. Forcing comment is."
+        gate_practice: >
+          Catch one explanation of God, sefirot, or 'how it all works' before it leaves your mouth.
+          Swallow it. Return to the room you are actually in.
+        passed_when: "You can stop one commentary and return to your place without filling the gap."
+      - station: 5
+        unit_id: kabbalah_zohar_yetzirah.kabbalah_zohar_yetzirah_015
+        title: "Letters formed by the voice"
+        opening_question: "Where am I still treating letters as symbols instead of as breath in a body?"
+        transmission: >
+          Twenty-two letters are formed by the voice, in the mouth, in the breath. Creation
+          through letters is not a code to crack. It is utterance. The miss is studying alef
+          as an emblem while the mouth is elsewhere.
+        contemplation: "A letter you cannot voice is not yet a letter of this book."
+        gate_practice: >
+          Speak one letter or one short sacred word aloud three times, feeling where it sits
+          in mouth and breath. Then hear one ordinary word today as the same kind of event.
+        passed_when: "You can feel one letter as an act of voice, not as a glyph on a page."
+      - station: 6
+        unit_id: kabbalah_zohar_yetzirah.kabbalah_zohar_yetzirah_019
+        title: "Three mothers, a mighty mystery"
+        opening_question: "Where am I still explaining multiplicity as if it were more original than the sealed three?"
+        transmission: >
+          Three mothers enclose a mighty mystery; from them the elements polarize. Multiplicity
+          and gender arise from a sealed unity — not the reverse. Do not unpack the mothers into
+          a cosmology lecture tonight.
+        contemplation: "The mystery is enclosed. Your job is not to empty it."
+        gate_practice: >
+          Breathe in, rest, breathe out — three. Do not name air, water, fire unless they arrive.
+          Keep the triad as a sealed count for one minute.
+        passed_when: "You can leave the three mothers sealed instead of turning them into a diagram you own."
+
+  - gate_id: gate_2_hidden
+    name: "Hiddenness and equilibrium"
+    theme: "The Ancient One stays concealed; form is balance you live, not finish."
+    why_first: >
+      If hiddenness becomes a vibe, equilibrium becomes a slogan. Last gate commits like the 112: one living balance.
+    stations:
+      - station: 7
+        unit_id: kabbalah_zohar_yetzirah.kabbalah_zohar_yetzirah_024
+        title: "The Ancient One is hidden"
+        opening_question: "Where am I still demanding that the Infinite show a face I could photograph?"
+        transmission: >
+          The Ancient One is hidden and concealed. What appears is never fully transparent;
+          what is hidden is never simply absent. This is not Psalms' Face. It is not Plotinus'
+          overflow you climb. Concealment is how manifestation works.
+        contemplation: "Hiddenness is not a failure of revelation. It is the mode of the Ancient One."
+        gate_practice: >
+          Look at one person or place you think you already know. For one minute refuse the
+          finished picture. Act once afterward as if something essential remained concealed.
+        passed_when: "You can let one appearance stay partly hidden without forcing a reveal."
+      - station: 8
+        unit_id: kabbalah_zohar_yetzirah.kabbalah_zohar_yetzirah_025
+        title: "In His form existeth the equilibrium"
+        opening_question: "Which pole am I still riding as if it were the whole of the form?"
+        transmission: >
+          In His form exists the equilibrium — and that equilibrium remains beyond grasp.
+          Mercy and severity, expansion and contraction: you do not complete the thirty-two
+          by listing them. You keep a living balance in one relation today.
+        contemplation: "The last gate is a commitment, not a finished tree."
+        gate_practice: >
+          Name one place you have been only severe or only yielding. Make one concrete
+          counter-move — a mercy where you were only law, or a boundary where you were only warmth.
+          Do not announce the sefirah.
+        passed_when: "You can keep one living equilibrium instead of finishing the catalogue of paths."

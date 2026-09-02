@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { CircleMenuFeed } from "@/components/CircleMenuFeed";
 import { useT } from "@/components/LocaleProvider";
 
 type NavLink = { href: string; labelKey: string; match?: string };
@@ -12,6 +13,7 @@ const WALK: NavLink[] = [
   { href: "/", labelKey: "nav.today", match: "/" },
   { href: "/learn?path=essential", labelKey: "nav.path", match: "/learn" },
   { href: "/read", labelKey: "nav.library" },
+  { href: "/circle", labelKey: "nav.circle" },
   { href: "/manuscript", labelKey: "nav.manuscript" },
 ];
 
@@ -114,7 +116,7 @@ function StudyMenu({
         </span>
       </button>
       {open ? (
-        <div id={`nav-study-${placement}`} className="nav-more__menu" role="menu">
+        <div id={`nav-study-${placement}`} className="nav-more__menu nav-more__menu--study" role="menu">
           {STUDY.map((link) => {
             const active = linkIsActive(pathname, link.href, link.match);
             return (
@@ -130,6 +132,7 @@ function StudyMenu({
               </Link>
             );
           })}
+          <CircleMenuFeed active={open} />
         </div>
       ) : null}
     </div>

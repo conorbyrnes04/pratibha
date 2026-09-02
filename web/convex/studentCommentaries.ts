@@ -1,10 +1,12 @@
 import { getAuthUserId } from "@convex-dev/auth/server";
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
-import { isCircleVerse } from "./circleVerses";
+import type { Doc } from "./_generated/dataModel";
 import { assertCommentary, assertDisplayName } from "./textRules";
 
 const MAX_WRITES_PER_HOUR = 10;
+const FEED_LIMIT = 40;
+const VERSE_LIMIT = 40;
 
 async function requireUser(ctx: Parameters<typeof getAuthUserId>[0]) {
   const userId = await getAuthUserId(ctx);
@@ -39,6 +41,22 @@ async function rateLimit(ctx: { db: any }, userId: string) {
   }
 }
 
+function publicReading(row: Doc<"student_commentaries">, userId: string | null) {
+  return {
+    _id: row._id,
+    displayName: row.displayName,
+    body: row.body,
+    verseId: row.verseId,
+    verseTitle: row.verseTitle,
+    createdAt: row.createdAt,
+    updatedAt: row.updatedAt,
+    lastActivityAt: row.lastActivityAt ?? row.updatedAt,
+    replyCount: row.replyCount ?? 0,
+    sitCount: row.sitCount ?? 0,
+    mine: Boolean(userId && row.userId === userId),
+  };
+}
+
 export const getMine = query({
   args: { verseId: v.string() },
   handler: async (ctx, args) => {
@@ -51,25 +69,61 @@ export const getMine = query({
   },
 });
 
+export const getOffered = query({
+  args: { id: v.id("student_commentaries") },
+  handler: async (ctx, args) => {
+    const userId = await getAuthUserId(ctx);
+    const row = await ctx.db.get(args.id);
+    if (!row || row.status !== "offered") return null;
+    return publicReading(row, userId);
+  },
+});
+
 export const listOffered = query({
   args: { verseId: v.string() },
   handler: async (ctx, args) => {
     const userId = await getAuthUserId(ctx);
-    if (!userId) return [];
     const rows = await ctx.db
       .query("student_commentaries")
       .withIndex("by_verse_status", (q) => q.eq("verseId", args.verseId).eq("status", "offered"))
       .collect();
     return rows
-      .filter((row) => row.userId !== userId)
       .sort((a, b) => a.createdAt - b.createdAt)
-      .map((row) => ({
-        _id: row._id,
-        displayName: row.displayName,
-        body: row.body,
-        createdAt: row.createdAt,
-        verseId: row.verseId,
-      }));
+      .slice(0, VERSE_LIMIT)
+      .map((row) => publicReading(row, userId));
+  },
+});
+
+export const listRecent = query({
+  args: { limit: v.optional(v.number()) },
+  handler: async (ctx, args) => {
+    const userId = await getAuthUserId(ctx);
+    const limit = Math.min(Math.max(args.limit ?? FEED_LIMIT, 1), 60);
+    const rows = await ctx.db
+      .query("student_commentaries")
+      .withIndex("by_status_created", (q) => q.eq("status", "offered"))
+      .order("desc")
+      .take(limit);
+    return rows
+      .sort((a, b) => (b.lastActivityAt ?? b.updatedAt) - (a.lastActivityAt ?? a.updatedAt))
+      .map((row) => publicReading(row, userId));
+  },
+});
+
+export const listMineOffered = query({
+  args: {},
+  handler: async (ctx) => {
+    const userId = await getAuthUserId(ctx);
+    if (!userId) return [];
+    const rows = await ctx.db
+      .query("student_commentaries")
+      .withIndex("by_user_updated", (q) => q.eq("userId", userId))
+      .collect();
+    return rows
+      .filter((row) => row.status === "offered" && (row.replyCount ?? 0) > 0)
+      .sort((a, b) => (b.lastActivityAt ?? b.updatedAt) - (a.lastActivityAt ?? a.updatedAt))
+      .slice(0, 3)
+      .map((row) => publicReading(row, userId));
   },
 });
 
@@ -82,7 +136,7 @@ export const circleMeta = query({
       .withIndex("by_verse_status", (q) => q.eq("verseId", args.verseId).eq("status", "offered"))
       .collect();
     return {
-      open: isCircleVerse(args.verseId),
+      open: true,
       offeredCount: offered.length,
       signedIn: Boolean(userId),
     };
@@ -137,6 +191,9 @@ export const upsert = mutation({
         verseTitle,
         displayName: displayName || existing.displayName,
         updatedAt: now,
+        lastActivityAt: offered ? now : existing.lastActivityAt,
+        replyCount: existing.replyCount ?? 0,
+        sitCount: existing.sitCount ?? 0,
       });
       return existing._id;
     }
@@ -150,6 +207,9 @@ export const upsert = mutation({
       status: args.status,
       createdAt: now,
       updatedAt: now,
+      replyCount: 0,
+      sitCount: 0,
+      lastActivityAt: now,
     });
   },
 });

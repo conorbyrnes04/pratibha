@@ -18,6 +18,7 @@ import logging
 import os
 import re
 import time
+import unicodedata
 from dataclasses import dataclass
 from typing import Any, Literal
 from pathlib import Path
@@ -122,8 +123,8 @@ _ROOM_PATTERNS: list[tuple[re.Pattern[str], VoiceRoom]] = [
             r"dhammapada|nagarjuna|madhyamaka|shantideva|bodhicary|"
             r"milarepa|tilopa|patanjali|yoga.?s[uū]tra|hatha.?yoga|siva.?samhita|"
             r"vijnana.?bhairava|spanda|siva.?s[uū]tra|pratyabhij|tantras|"
-            r"yogin[iī]|upanishad|gita|astavakra|mandukya|gaudapada|"
-            r"katha|chandogya|mundaka|brihad|isavasya|svetasvatara|"
+            r"yogin[iī]|upanishad|upanisad|upaniṣad|gita|astavakra|mandukya|gaudapada|"
+            r"katha|chandogya|chāndogya|mundaka|brihad|isavasya|svetasvatara|"
             r"lalla|lal.?ded|lalleshwari|vakyani|vākyāni",
             re.I,
         ),
@@ -233,10 +234,16 @@ def _haystack(verse: dict[str, Any]) -> str:
     )
 
 
+def _fold_marks(text: str) -> str:
+    decomposed = unicodedata.normalize("NFKD", text)
+    return "".join(ch for ch in decomposed if unicodedata.category(ch) != "Mn")
+
+
 def voice_room_for(verse: dict[str, Any]) -> VoiceRoom:
     hay = _haystack(verse)
+    blob = f"{hay} {_fold_marks(hay)}"
     for pattern, room in _ROOM_PATTERNS:
-        if pattern.search(hay):
+        if pattern.search(blob):
             return room
     return "unmarked"
 

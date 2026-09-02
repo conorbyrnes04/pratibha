@@ -351,10 +351,16 @@ export async function getDaily(minMaturity: EditorialMaturity | "all" = "rich"):
 export async function getRandom(collection?: string, minMaturity: EditorialMaturity | "all" = "strong_draft"): Promise<VerseItem | null> {
   const path = collection ? `/random?collection=${encodeURIComponent(collection)}` : "/random";
   const url = withMaturity(path, minMaturity);
-  const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) return null;
-  const data = (await res.json()) as VerseItem;
-  return data && data._id ? data : null;
+  try {
+    // Bounded so a cold backend can't leave the Oracle stuck on "Finding a
+    // passage…"; callers fall back to the local pool when this returns null.
+    const res = await fetchWithTimeout(url, 9_000);
+    if (!res.ok) return null;
+    const data = (await res.json()) as VerseItem;
+    return data && data._id ? data : null;
+  } catch {
+    return null;
+  }
 }
 
 /**

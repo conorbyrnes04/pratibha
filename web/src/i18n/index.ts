@@ -11,7 +11,7 @@ export {
   type Locale,
   type LocaleMeta,
 } from "./locales";
-export { catalogs, en, type Messages } from "./messages";
+export { en, loadCatalog, type Messages } from "./messages";
 export { interpolate, translate, type TranslateVars } from "./translate";
 
 const LAYER_KIND_KEYS: Record<string, string> = {

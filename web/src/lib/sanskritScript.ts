@@ -15,6 +15,31 @@ export function containsCjk(text?: string): boolean {
   return /[\u4E00-\u9FFF]/.test(text || "");
 }
 
+/** Arabic block (U+0600-06FF) — Sufi / Ibn ʿArabī originals. */
+export function containsArabic(text?: string): boolean {
+  return /[؀-ۿ]/.test(text || "");
+}
+
+/** Greek block (U+0370-03FF) — Heraclitus, Plato, Plotinus originals. */
+export function containsGreek(text?: string): boolean {
+  return /[Ͱ-Ͽἀ-῿]/.test(text || "");
+}
+
+/**
+ * Best-effort BCP-47 language tag for an "Original" layer, derived from its
+ * script, so screen readers, hyphenation, and font selection treat it as
+ * non-English. Returns undefined for undetected (e.g. romanized) text rather
+ * than guessing a language and mislabeling it.
+ */
+export function scriptLang(text?: string): string | undefined {
+  if (containsTibetan(text)) return "bo";
+  if (containsCjk(text)) return "zh";
+  if (containsDevanagari(text)) return "sa";
+  if (containsArabic(text)) return "ar";
+  if (containsGreek(text)) return "grc";
+  return undefined;
+}
+
 /** True when the original layer is too long to dump without an expand control. */
 export function isLongNativeScript(text?: string): boolean {
   const body = (text || "").trim();

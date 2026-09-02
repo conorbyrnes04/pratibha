@@ -16,10 +16,23 @@ export class SanghaBoundary extends Component<
     if (this.state.message) {
       return (
         <p className="soft mt-6 text-sm">
-          The circle is unavailable just now. The verse is still here.
+          The circle is unavailable just now.
         </p>
       );
     }
     return this.props.children;
+  }
+}
+
+/** Swallow optional Circle chrome (sit/watch) so a missing table cannot take down readings. */
+export class QuietBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+
+  render() {
+    return this.state.failed ? null : this.props.children;
   }
 }

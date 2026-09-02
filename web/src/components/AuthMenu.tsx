@@ -115,6 +115,14 @@ export function AuthMenu() {
             </div>
           </div>
           <Link
+            href="/circle"
+            role="menuitem"
+            onClick={() => setOpen(false)}
+            className="block px-3 py-2.5 font-sans text-sm text-stone-200 transition hover:bg-white/5 hover:text-amber-100"
+          >
+            {t("nav.circle")}
+          </Link>
+          <Link
             href="/manuscript"
             role="menuitem"
             onClick={() => setOpen(false)}

@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { KeyTerm, PratibhaLayer, Resonance } from "@/lib/types";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { containsCjk, containsDevanagari, containsTibetan, isLongNativeScript } from "@/lib/sanskritScript";
+import { containsCjk, containsDevanagari, containsTibetan, isLongNativeScript, scriptLang } from "@/lib/sanskritScript";
 import { InlineMarkdown } from "@/components/InlineMarkdown";
 import {
   Collapsible,
@@ -126,6 +126,7 @@ export function LayerBlock({
           </CollapsibleTrigger>
           <CollapsibleContent>
             <div
+              lang={isOriginal ? scriptLang(layer.body) : undefined}
               className={`chat-markdown mt-4 ${
                 isOriginal
                   ? `${originalScriptClass(layer.body)} whitespace-pre-wrap text-2xl leading-relaxed text-stone-100`
@@ -215,12 +216,14 @@ function renderLayerBody(
       ? "text-sm leading-relaxed"
       : "reading-prose";
 
+  const lang = isOriginal ? scriptLang(layer.body) : undefined;
+
   if (isOriginal && isLongNativeScript(layer.body)) {
-    return <LongNativeScript body={layer.body || ""} className={bodyClass} t={t} />;
+    return <LongNativeScript body={layer.body || ""} className={bodyClass} lang={lang} t={t} />;
   }
 
   return (
-    <div className={`chat-markdown ${bodyClass}`}>
+    <div className={`chat-markdown ${bodyClass}`} lang={lang}>
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{layer.body || ""}</ReactMarkdown>
     </div>
   );
@@ -229,16 +232,18 @@ function renderLayerBody(
 function LongNativeScript({
   body,
   className,
+  lang,
   t,
 }: {
   body: string;
   className: string;
+  lang?: string;
   t: (key: string) => string;
 }) {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <div className={`chat-markdown ${className} ${open ? "" : "original-window"}`}>
+      <div className={`chat-markdown ${className} ${open ? "" : "original-window"}`} lang={lang}>
         {open ? (
           <ReactMarkdown remarkPlugins={[remarkGfm]}>{body}</ReactMarkdown>
         ) : (

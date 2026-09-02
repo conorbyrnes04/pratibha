@@ -11,6 +11,9 @@ const nextConfig = {
   turbopack: {
     root: __dirname,
   },
+  experimental: {
+    optimizePackageImports: ["lucide-react", "@base-ui/react", "motion"],
+  },
   // Ship the existing app as-is: the runtime bundle compiles cleanly, but the
   // codebase carries some pre-existing type/lint debt. Don't let that block
   // production deploys on Vercel. Tracked as follow-up work (see DEPLOY.md).
