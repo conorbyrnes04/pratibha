@@ -39,6 +39,7 @@ tests
 scripts/*
 !scripts/start_api.sh
 !scripts/ingest_pgvector.py
+!scripts/bake_catalog.py
 
 # Glyphs / art live on the frontend.
 **/.DS_Store
