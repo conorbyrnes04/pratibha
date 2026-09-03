@@ -92,6 +92,9 @@ LIVING = [
     "flux-and-what-is",
     "silent-worship",
     "stop-seeking",
+    "the-sky-is-not-addressed",
+    "the-remaining-cult",
+    "between-the-tomb-and-the-pulpit",
 ]
 
 

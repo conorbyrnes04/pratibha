@@ -131,6 +131,14 @@ export const TRADITION_TRAILS: TraditionTrail[] = [
     trackIds: ["the-remaining-cult"],
   },
   {
+    id: "futa-jalon",
+    title: "Futa Jalon",
+    shortTitle: "Futa Jalon",
+    lede: "Teaching is written in the interval — between tomb and pulpit, not on a throne. Highland itinerary, not a second Pulaar mallol.",
+    glyph: "mountain",
+    trackIds: ["between-the-tomb-and-the-pulpit"],
+  },
+  {
     id: "sufi",
     title: "Sufi",
     shortTitle: "Sufi",

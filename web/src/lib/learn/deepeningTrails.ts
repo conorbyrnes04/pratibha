@@ -15,6 +15,7 @@ import { SILENT_WORSHIP } from "./tracks/silentWorship";
 import { STOP_SEEKING } from "./tracks/stopSeeking";
 import { THE_SKY_IS_NOT_ADDRESSED } from "./tracks/theSkyIsNotAddressed";
 import { THE_REMAINING_CULT } from "./tracks/theRemainingCult";
+import { BETWEEN_THE_TOMB_AND_THE_PULPIT } from "./tracks/betweenTheTombAndThePulpit";
 
 /**
  * Off-spine deepening walks compiled after the first tradition tiles shipped.
@@ -38,4 +39,5 @@ export const DEEPENING_TRAILS: LearningTrack[] = [
   STOP_SEEKING,
   THE_SKY_IS_NOT_ADDRESSED,
   THE_REMAINING_CULT,
+  BETWEEN_THE_TOMB_AND_THE_PULPIT,
 ];

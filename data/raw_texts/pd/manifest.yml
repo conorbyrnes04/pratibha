@@ -691,3 +691,58 @@ references:
     links:
       - label: Internet Archive
         url: https://archive.org/details/chroniquesdufo00sir
+
+  - id: reichardt_fulde_1876
+    collection: futa_jalon_fulde
+    translator: Charles Augustus Ludwig Reichardt
+    year: 1876
+    work: Grammar of the Fulde Language — Part II original traditions (Futa Jalon)
+    license: public_domain
+    local_path: fulde/reichardt_fulde_1876.txt
+    note: >
+      Futa Jalon Fulde, not Futa Toro Pulaar. Traditions I–III only (Umar Tal wars,
+      origin from Fezzan, Masina war). Scripture appendix skipped. OCR-damaged
+      Google scan; Fulde in units is cleaned reconstruction of Reichardt's Latin.
+      Listen: nine path gates baked 2026-09-02 in Olu. Three leftover heroes
+      (003 grass, 013 Fatima, 019 Konja) wait for the 2026-09-30 ElevenLabs refill
+      — see data/listen_fill.json scheduled.
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/grammarfuldelan00reicgoog
+
+  - id: taylor_fulani_hausa_readings_1929
+    collection: null
+    translator: F. W. Taylor
+    year: 1929
+    work: Fulani-Hausa Readings in the Native Scripts, with Transliterations and Translations
+    license: public_domain
+    local_path: null
+    status: to_be_sourced
+    note: >
+      Eastern (Adamawa/Sokoto) reader, 259 pp, Clarendon. PD in the US as of 2025.
+      No Internet Archive, HathiTrust full-text, or Google Books dump found 2026-09-02.
+      Open Library /works/OL7483846W. NLI holds a physical copy (493 t 7, offsite).
+      Do not expand Gaden 1913 leftover contes until this scan is judged: if it
+      contains gime or counsel, it is the eastern collection. If it is only a
+      language reader, park it.
+    links:
+      - label: Open Library
+        url: https://openlibrary.org/works/OL7483846W
+      - label: National Library of Ireland
+        url: https://catalogue.nli.ie/Record/vtls000460492
+
+  - id: gaden_proverbes_1931
+    collection: null
+    translator: Henri Gaden
+    year: 1931
+    work: Proverbes et maximes peuls et toucouleurs
+    license: not_yet_public_domain
+    local_path: null
+    status: calendar_2027
+    note: >
+      The real mallol book (368 pp). Named collaborators Ismaïla M'Baye and
+      Djibril Lih. Do not ingest before US PD on 1 January 2027. Not a grammar
+      appendix. webPulaaku has the TOC.
+    links:
+      - label: webPulaaku TOC
+        url: https://www.webpulaaku.site/defte/hgaden/proverbes-maximes-peuls-toucouleurs/tdm.html

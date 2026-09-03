@@ -29,6 +29,14 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "le_poular",
         "gaden",
     },
+    "futa_jalon_fulde": {
+        "futa_jalon_fulde",
+        "futa_jalon_fulde_reichardt",
+        "futa_jalon",
+        "fuuta_jaloo",
+        "reichardt_fulde",
+        "reichardt",
+    },
     "confucius_analects": {"confucius_analects", "analects"},
     "ecclesiastes_qoheleth": {"ecclesiastes_qoheleth", "ecclesiastes", "qoheleth"},
     "psalms_tehillim": {

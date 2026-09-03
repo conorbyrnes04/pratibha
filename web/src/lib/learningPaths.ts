@@ -1769,6 +1769,13 @@ export const LEARNING_REALMS: LearningRealm[] = [
     trackIds: ["the-horse-of-conversation", "the-sky-is-not-addressed", "the-remaining-cult"],
   },
   {
+    id: "futa-jalon",
+    title: "Futa Jalon",
+    blurb:
+      "Highland Fulde itinerary: the book is finished between tomb and pulpit. Not a second Pulaar mallol.",
+    trackIds: ["between-the-tomb-and-the-pulpit"],
+  },
+  {
     id: "sufi",
     title: "Sufi",
     blurb: "The Beloved hides in plain sight; love is the way — identity, unveiling, the valleys, then the reed.",

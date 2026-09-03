@@ -1,0 +1,302 @@
+path_id: futa_jalon_fulde_tomb_and_pulpit
+work_id: futa_jalon_fulde
+work_title: Futa Jalon Fulde (Reichardt)
+title: "Between the Tomb and the Pulpit"
+tradition: Futa Jalon
+covers: "Reichardt Trad. I then Trad. II — service, interval, vacancy, two paths, chair-hunger, burned library, sit, tears after ease, kinship before zeal"
+status: complete
+
+# Highland Fulde itinerary, not Futa Toro mallol. Not Koumen. Not a second
+# Pulaar herd-path. Reichardt 1876: Umar Tal wars, then the first jihad as a
+# kinship problem. Teaching is written in an interval, not on a throne.
+
+teacher_voice: >
+  Speak plainly and without flattery. Name the difficulty before resolving it.
+  Never promise the student a state; give them an act and let the state arrive.
+  Do not collapse this into a proverb about cattle, and do not gild a Tijani
+  sheikh as a Persian Sufi. The desk is the interval. The mat stays vacant.
+  A pause that needs your body is not peace.
+
+premise: >
+  You are not reconstructing Futa Jalon as a missing temple, and you are not
+  walking a second Pulaar trail. You are taking a highland itinerary into the
+  day: keep a given word without improving it; write from the interval between
+  a death you know and a speech you owe; leave the honor-seat empty; refuse to
+  make a second path an enemy; name a pause that is not peace; hold both truths
+  when a library burns; sit with the tired; treat comfort after victory as the
+  danger; do not cut a drum where your people are not. The architecture is
+  hakkunde — between. Not the herd. Not the mallol.
+
+how_to_walk:
+  - "Sit before each station as before an appointment."
+  - "Read the transmission once, then close the text and do the practice."
+  - "Do not advance until passed_when is honestly true."
+  - "Do not add a Futa Toro proverb, and do not sit the teaching on a chair of rank."
+
+gates:
+  - gate_id: gate_0_word
+    name: "Seven years without changing the word"
+    theme: "Transmission is duration plus fidelity. Talent wants to edit."
+    why_first: >
+      If you start as a commander, you will invent a certificate. Umar first
+      spent seven years as a servant of a word. Khalifa is that survival, not
+      originality.
+    stations:
+      - station: 1
+        unit_id: futa_jalon_fulde.futa_jalon_fulde_001
+        reference: "Reichardt Trad. I / XX, service to Muhammed Legali"
+        title: "Seven Years Without Changing the Word"
+        opening_question: "Whose word am I still improving — and what would seven days of not changing it cost me?"
+        transmission: >
+          He lived with him seven years. He took every care of the house and
+          gave himself. He followed him and never changed his word. The
+          difficulty is hearing succession as a gift of brilliance. Talent
+          wants to improve the sentence. Service keeps it. Khalifa is given
+          after the giver can trust that the word will survive your mouth.
+          Downriver Pulaar will proverbialize transmission as milk. Highland
+          Fulde narrates it as duration plus fidelity. Years in a house, not
+          an image of a cow.
+        contemplation: "The next voice is not the more gifted one. It is the mouth that did not alter what was given."
+        gate_practice: >
+          Keep one teacher's word unchanged for seven days. Do not improve it.
+        passed_when: "You can repeat one given sentence for a week without adding your better version."
+
+  - gate_id: gate_1_interval
+    name: "Between the tomb and the pulpit"
+    theme: "Teaching is written in an interval, not on a throne."
+    why_first: >
+      Service without this posture still climbs a chair. The book is finished
+      leaning: grave on one side, pulpit on the other, wall at the back.
+    stations:
+      - station: 2
+        unit_id: futa_jalon_fulde.futa_jalon_fulde_002
+        reference: "Reichardt Trad. I / XX, composition at the Prophet's tomb"
+        title: "Between the Tomb and the Pulpit"
+        opening_question: "Where does the teaching I am writing actually sit — on rank, or between a death I know and a speech I owe?"
+        transmission: >
+          He sat between the tomb of the Prophet and the pulpit and leaned his
+          back against the wall. He finished the book and called it an
+          admonition to those who desire to do right. The architecture is the
+          argument. He does not sit on the pulpit. He does not lie in the
+          grave. He occupies hakkunde. Admonition addresses desire, not
+          subjects. If a teaching sits on rank, it is already a different
+          book. The grave keeps you from inflation. The pulpit keeps you from
+          silence. Neither is a seat of power. The wall is.
+        contemplation: "Every sentence you write has a desk. Rank is a different desk."
+        gate_practice: >
+          Write one counsel sitting between a death you know and a speech you
+          owe. Do not sit on a chair of rank.
+        passed_when: "You can finish one counsel from the interval, without using office as the chair."
+
+  - gate_id: gate_2_mat
+    name: "The mat left vacant"
+    theme: "Honor that cannot sit on the ground is still a chair."
+    why_first: >
+      An interval that still takes the best seat has not yet become honor.
+      Two masters keep one room by leaving the mat unused.
+    stations:
+      - station: 3
+        unit_id: futa_jalon_fulde.futa_jalon_fulde_004
+        reference: "Reichardt Trad. I / XX, meeting Muhammed Bello"
+        title: "The Mat Left Vacant"
+        opening_question: "Where is the seat that would make me first — and can I leave it empty?"
+        transmission: >
+          A contention of civilities: neither wished to take precedence. Both
+          sat on the ground and left the mat vacant between them. The
+          contested move is to treat honor as a higher seat. Teddungal here
+          is a struggle over who will not go first. The empty mat is a third
+          presence — the rank both refuse. Sitting on leydi is not humility
+          as costume. It is the only posture that keeps two masters in one
+          room without one becoming the other's floor. If you cannot sit on
+          the ground, your honor is still a chair.
+        contemplation: "The teaching is the vacancy, not the courtesy-speech around it."
+        gate_practice: >
+          Today leave the best seat empty between you and the person you
+          honor. Sit on the floor.
+        passed_when: "You can leave one honor-seat unused and sit where the floor already is."
+
+  - gate_id: gate_3_paths
+    name: "That the two paths not injure each other"
+    theme: "Inability to enter a second path is not a license to harm."
+    why_first: >
+      Vacant honor that still scorns the other order has not yet become
+      peace. Bello asks for a book so Qadiri and Tijani do not grind.
+    stations:
+      - station: 4
+        unit_id: futa_jalon_fulde.futa_jalon_fulde_005
+        reference: "Reichardt Trad. I / XX, Bello asks a book on Qadiri / Tijani"
+        title: "That the Two Paths Not Injure Each Other"
+        opening_question: "Which practice can I not take up — and where am I still making that inability a critique of the people who can?"
+        transmission: >
+          Muhammed Bello told Umar to write a book concerning the Qadiri
+          people, that there be no hostile rivalry, that those who cannot
+          adopt the Tijani path may not injure themselves. A second path is
+          not an enemy. The book is a fence, not a recruitment tract. Two
+          West African ṭarīqas can injure each other; therefore they need a
+          written restraint. Name the practice you cannot take up. That
+          inability is not a critique of those who can, and not a demand that
+          they abandon theirs. A second path in the same town is a test of
+          ɓerɗe, not of victory.
+        contemplation: "The book Bello wants is a peace between ways, not a winner."
+        gate_practice: >
+          Name one practice you cannot take up. Do not mock the people who
+          can. Do not require them to mock yours.
+        passed_when: "You can name one path you cannot walk without injuring the people who walk it."
+
+  - gate_id: gate_4_kingdom
+    name: "The kingdom of this world"
+    theme: "A pause that needs your body in the gap is not yet peace."
+    why_first: >
+      Two paths that still fight for a chair have not heard Bello. Umar
+      stands between Omar and Suri; the guns wait for him to leave.
+    stations:
+      - station: 5
+        unit_id: futa_jalon_fulde.futa_jalon_fulde_007
+        reference: "Reichardt Trad. I / XX, Omar and Suri fighting for the kingdom"
+        title: "The Kingdom of This World"
+        opening_question: "Where am I being used as a pause in someone else's fight for a chair — and calling it peace?"
+        transmission: >
+          He went between them and exhorted them not to fight for laamu aduna,
+          the kingdom of this world. Each would bear the sins of those who
+          fight on his account. They put the guns aside until he was out of
+          sight; then they fired again. The contested move is to call the
+          pause peace. The sheikh's body is a temporary law. When the body
+          leaves, the chair-hunger returns. The sins stay on the two who
+          wanted the kingdom. If two people only stop while you stand there,
+          you are not a peacemaker. You are a pause. Do not let them use your
+          presence as a moral alibi.
+        contemplation: "The chair is the sin. The pause is not the cure."
+        gate_practice: >
+          Today refuse to let two people use you as a pause in their fight.
+          If they only stop while you stand there, name that. Do not call it
+          peace.
+        passed_when: "You can name one pause that was not peace, without pretending your body cured the chair-hunger."
+
+  - gate_id: gate_5_books
+    name: "Why should I come out"
+    theme: "The writer remains; these copies cannot be had here. Both sentences are true."
+    why_first: >
+      Chair-hunger burns libraries. Grief for the copies is not vanity, and
+      trust is not a shrug. The pupil is right. The sheikh is right.
+    stations:
+      - station: 6
+        unit_id: futa_jalon_fulde.futa_jalon_fulde_009
+        reference: "Reichardt Trad. I / XX, books burned at Jugunko"
+        title: "Why Should I Come Out"
+        opening_question: "What irreplaceable work was lost — and which truth am I dropping, that I can make another, or that this one cannot be replaced?"
+        transmission: >
+          He sat in his house and would not come out. Why should I, seeing
+          that my books are all burned? A pupil carries him: you wrote these;
+          if God wills you can write others. He answers: you speak truly, but
+          books like these cannot be had in this country. Then he trusts God
+          — and the trust is practical: paper from Timbuktu, not a smile. The
+          contested move is to treat the loss as either pride or as nothing.
+          The writer is not the copies. The copies are not replaceable in
+          this highland. Do not call the sending a lack of faith. The sending
+          is the faith.
+        contemplation: "Both sentences are the teaching. Drop either one and you have already shrugged."
+        gate_practice: >
+          Name one irreplaceable work that was lost or cannot be reprinted
+          where you are. Speak both truths: you can make another, and this
+          one cannot be replaced. Then send for what would make the next
+          copy — paper, a backup, a request.
+        passed_when: "You can hold both truths about one lost work, and complete one act of sending for paper."
+
+  - gate_id: gate_6_sit
+    name: "If you are tired, sit down"
+    theme: "The first move with exhaustion is to sit. The gun is not a will."
+    why_first: >
+      A burned library that still shames tired people into a charge has not
+      yet become command. He joins the tiredness. Later the work finds
+      another gate.
+    stations:
+      - station: 7
+        unit_id: futa_jalon_fulde.futa_jalon_fulde_015
+        reference: "Reichardt Trad. I / XX, soldiers tired at Minyin"
+        title: "If You Are Tired, Sit Down"
+        opening_question: "Where am I still shaming real tiredness into a charge — and calling the sit surrender?"
+        transmission: >
+          The soldiers said they are tired. The Sheikh said they must fight.
+          They said they are tired. He said: if you are tired, well, let us
+          sit down; you see the power of God; you know your gun will not fire
+          if God is unwilling. The contested move is to hear sitting as
+          surrender or as a trick. en jooɗo includes him. This is not
+          quietism; after the sitting the war continues by another gate. The
+          first move remains the sit. The speech that shames exhaustion is
+          already a false gun. When necessary work meets real tiredness, sit
+          down with the tired people.
+        contemplation: "Ngondi is allowed to be the last human word before the sit."
+        gate_practice: >
+          When a necessary work meets real tiredness today, sit down with the
+          tired people. Do not give a speech. Do not call sitting surrender.
+        passed_when: "You can sit with one tired person, including yourself, without a speech that makes the work a false gun."
+
+  - gate_id: gate_7_tears
+    name: "He weeps after victory"
+    theme: "Comfort after success is the spiritual emergency, not the proof."
+    why_first: >
+      Sitting with the tired can still treat a later win as evidence you are
+      found. He weeps that aduna has eased him.
+    stations:
+      - station: 8
+        unit_id: futa_jalon_fulde.futa_jalon_fulde_016
+        reference: "Reichardt Trad. I / XX, tears entering Dengerabe"
+        title: "He Weeps After Victory"
+        opening_question: "After the last success, did the comfort hide me — and what would I do that cannot be posted?"
+        transmission: >
+          They saw him in tears as he entered the town. He went to war, he
+          won — why does he weep? He says the world has made him comfortable,
+          and he fears God may not find him in the other world, not in
+          heaven. The contested move is to read the tears as compassion for
+          the slain or as performance. The harder reading: aduna has eased
+          him. Ease is the threat. The war can be won and the soul lost in
+          the same afternoon. After one success, do not celebrate first. Ask
+          whether this comfort has hidden you. If yes, do one hidden act that
+          cannot be posted.
+        contemplation: "Victory is not proof you were found. The tears are the only accurate report."
+        gate_practice: >
+          After one success today, do not celebrate first. Ask whether this
+          comfort has hidden you. If yes, do one hidden act that cannot be
+          posted.
+        passed_when: "You can meet one success without using it as proof, and complete one act that has no audience."
+
+  - gate_id: gate_8_drum
+    name: "You have torn the drum"
+    theme: "Zeal that outruns kinship is already mischief."
+    why_first: >
+      Tears after ease still leave freelance sacred vandalism unjudged.
+      Tradition II begins as a kinship problem, not a triumph. The last gate
+      commits: do not cut the drum where your people are not.
+    stations:
+      - station: 9
+        unit_id: futa_jalon_fulde.futa_jalon_fulde_024
+        reference: "Reichardt Trad. II / XXI, Almami Suri at Wosogorama"
+        title: "You Have Torn the Drum of the Unbelievers"
+        opening_question: "Which public instrument am I about to break that is not mine — and who will pay if my people are not in that town?"
+        transmission: >
+          He drew his knife and cut up their kettle drum. He came to
+          Karamoko Alfa: I have torn the big drum of the unbelievers. The
+          answer: you have done mischief sadly; our family and friends are
+          not there. The contested move is to hear the cut as the start of
+          glory. Highland Fulde names it bone. The drum is a public
+          instrument of people who are not yours. Zeal that cannot locate kin
+          in the town is not yet a legal war. Before you break a public
+          instrument of people who are not yours, ask who will pay. If your
+          family is not in that town, do not cut the drum. The knife was
+          sure. The kinship was not.
+        contemplation: "Dundurundu is not a theology. It is a drum. Cutting it where musibba-meɗe are absent is already the mischief."
+        gate_practice: >
+          Before you break a public instrument of people who are not yours,
+          ask who will pay. If your family is not in that town, do not cut
+          the drum.
+        passed_when: "You can refuse one zealous cut because the people who would pay are not yours to spend."
+
+coda:
+  title: "Where the path continues"
+  text: >
+    Complete for this Reichardt slice. Do not hang leftover Gaden contes on
+    this trail. Taylor 1929 stays parked until a scan exists. Gaden 1931
+    stays calendar 2027. If a later Futa Jalon unit names the legal king
+    required for jihad, that can extend the last gate — it is not a second
+    Pulaar walk.
+  next_gates: []

@@ -11,6 +11,21 @@ type QuoteBank = {
 
 const HERO_QUOTES: QuoteBank[] = [
   {
+    pattern: /futa.?jalon|fuuta.?jaloo|reichardt/i,
+    quotes: [
+      "He sat between the tomb of the Prophet and the pulpit and leaned his back against the wall.",
+      "Until this day grass does not grow on the spot where the fight took place.",
+      "Both sat on the ground leaving the mat vacant between them.",
+      "They would each have to bear the sins of those who fight on either side on their account.",
+      "It is you who have written all these books, and if God will you may still write others.",
+      "She continued her prayer. She did not stop, she did not move, she did not fear.",
+      "If you are tired, well, let us sit down; you know your gun won't give fire if God be unwilling.",
+      "He fears God may not find him in the other world, not in heaven.",
+      "He himself does not know to which place he turns unless God the Lord gives him His directions.",
+      "You have done mischief sadly; our family and friends are not there.",
+    ],
+  },
+  {
     pattern: /senegalese.?animism|serer|pangool/i,
     quotes: [
       "There is an invisible master of all things.",

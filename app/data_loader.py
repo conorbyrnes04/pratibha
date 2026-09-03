@@ -424,7 +424,7 @@ _NON_SANSKRIT_COLLECTION = re.compile(
     r"tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|"
     r"milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō|"
     r"yoruba|òwe|johnson|eastman|zitkala|dakota|soul of the indian|old indian legends|"
-    r"senegal|serer|pulaar|gaden|fulbe|fulɓe|peul|lasnet|"
+    r"senegal|serer|pulaar|gaden|fulbe|fulɓe|peul|lasnet|futa.?jalon|fuuta.?jaloo|reichardt|fulde|"
     r"lalla|lal.?ded|lalleshwari|vakyani|vākyāni|"
     r"ecclesiastes|qoheleth|psalm|tehillim|"
     r"gospel.?of.?thomas|gospel.?of.?mary|logia of jesus|new.?testament.?logia",
