@@ -13,6 +13,7 @@ type CollectionGateProps = {
   layoutId?: string;
   fallbackQuotes?: string[];
   glyph?: ReactNode;
+  listen?: ReactNode;
 };
 
 export function CollectionGate({
@@ -22,6 +23,7 @@ export function CollectionGate({
   layoutId,
   fallbackQuotes = [],
   glyph,
+  listen,
 }: CollectionGateProps) {
   const quotes = useMemo(
     () => heroQuotesFor(collection, fallbackQuotes),
@@ -127,6 +129,7 @@ export function CollectionGate({
         </motion.button>
         </motion.div>
       </div>
+      {listen ? <div className="collection-gate__listen">{listen}</div> : null}
     </section>
   );
 }

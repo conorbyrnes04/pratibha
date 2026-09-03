@@ -11,24 +11,39 @@ import {
 } from "@/lib/api";
 
 export type ListenPhase = "idle" | "loading" | "playing" | "paused";
+export type ListenPart = Exclude<ListenSection, "all">;
+
+export type ListenTrack = {
+  verseId: string;
+  sections: ListenPart[];
+};
 
 export type ListenSnap = {
   verseId: string | null;
   section: ListenSection | null;
+  queueKey: string | null;
   phase: ListenPhase;
   error: string | null;
 };
 
 type Sub = () => void;
+type Prefetch = {
+  verseId: string;
+  part: ListenPart;
+  announce: Promise<Blob | null>;
+  passage: Promise<{ blob: Blob; room: string }>;
+};
 
 const subs = new Set<Sub>();
 const planCache = new Map<string, Promise<ListenPlan | null>>();
 const ARCHIVE_TTL_MS = 20_000;
+/** ElevenLabs pads short headings; cut the tail so the layer follows immediately. */
+const VERSE_GAP_MS = 140;
 let archivePromise: Promise<ListenArchive> | null = null;
 let archiveAt = 0;
 const archiveSubs = new Set<Sub>();
-let archivePoll: ReturnType<typeof setInterval> | null = null;
-let snap: ListenSnap = { verseId: null, section: null, phase: "idle", error: null };
+let archivePoll: number | null = null;
+let snap: ListenSnap = { verseId: null, section: null, queueKey: null, phase: "idle", error: null };
 let token: number = 0;
 let speech: HTMLAudioElement | null = null;
 let speechUrl: string | null = null;
@@ -92,6 +107,18 @@ export function loadListenPlan(verseId: string): Promise<ListenPlan | null> {
   return hit;
 }
 
+export function tracksFromArchive(
+  verseIds: string[],
+  verses: ListenArchive["verses"],
+): ListenTrack[] {
+  const out: ListenTrack[] = [];
+  for (const verseId of verseIds) {
+    const sections = verses[verseId];
+    if (sections?.length) out.push({ verseId, sections: [...sections] });
+  }
+  return out;
+}
+
 /** Keep playback alive while any Path/read "Play all" control is still mounted. */
 export function retainListen(): () => void {
   retainers += 1;
@@ -117,11 +144,36 @@ function stopNow() {
   revokeSpeech();
 }
 
-function playBlob(el: HTMLAudioElement, blob: Blob): Promise<void> {
+function waitCanPlay(el: HTMLAudioElement, ms = 1600): Promise<void> {
+  if (el.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) return Promise.resolve();
+  return new Promise((resolve) => {
+    const done = () => {
+      cleanup();
+      resolve();
+    };
+    const timer = window.setTimeout(done, ms);
+    const cleanup = () => {
+      window.clearTimeout(timer);
+      el.removeEventListener("canplay", done);
+      el.removeEventListener("canplaythrough", done);
+      el.removeEventListener("error", done);
+    };
+    el.addEventListener("canplay", done);
+    el.addEventListener("canplaythrough", done);
+    el.addEventListener("error", done);
+  });
+}
+
+function armSpeech(el: HTMLAudioElement, blob: Blob): Promise<void> {
   revokeSpeech();
   const url = URL.createObjectURL(blob);
   speechUrl = url;
   el.src = url;
+  el.load();
+  return waitCanPlay(el);
+}
+
+function playArmed(el: HTMLAudioElement): Promise<void> {
   return new Promise((resolve, reject) => {
     const onEnded = () => {
       cleanup();
@@ -195,7 +247,7 @@ function playRoomTone(room: string, edge: "open" | "close"): Promise<void> {
 }
 
 /** Two-note turn between layers — distinct from the open/close room cue. */
-function playLayerTone(room: string, next: Exclude<ListenSection, "all">): Promise<void> {
+function playLayerTone(room: string, next: ListenPart): Promise<void> {
   const AudioCtx = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
   if (!AudioCtx) return Promise.resolve();
   const ctx = new AudioCtx();
@@ -227,15 +279,76 @@ function playLayerTone(room: string, next: Exclude<ListenSection, "all">): Promi
     osc.stop(t0 + dur);
   };
 
-  note(root, now, 0.22);
-  note(second, now + 0.2, 0.28);
-  const total = 0.52;
+  note(root, now, 0.14);
+  note(second, now + 0.11, 0.16);
+  const total = 0.28;
   return new Promise((resolve) => {
     window.setTimeout(() => {
       void ctx.close();
       resolve();
     }, total * 1000 + 40);
   });
+}
+
+function tailSeconds(duration: number): number {
+  if (!Number.isFinite(duration) || duration <= 0) return 0.28;
+  // ElevenLabs pads short headings; eat the silence, keep the spoken word.
+  return Math.min(0.62, Math.max(0.22, duration * 0.4));
+}
+
+function waitRemaining(el: HTMLAudioElement, remainS: number): Promise<void> {
+  return new Promise((resolve, reject) => {
+    let timer = 0;
+    let settled = false;
+    const finish = () => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timer);
+      el.removeEventListener("ended", finish);
+      el.removeEventListener("error", onError);
+      resolve();
+    };
+    const onError = () => {
+      if (settled) return;
+      settled = true;
+      window.clearTimeout(timer);
+      el.removeEventListener("ended", finish);
+      el.removeEventListener("error", onError);
+      reject(new Error("Playback failed."));
+    };
+    const tick = () => {
+      if (settled) return;
+      if (Number.isFinite(el.duration) && el.duration > 0) {
+        const left = el.duration - el.currentTime;
+        if (left <= remainS || el.ended) {
+          finish();
+          return;
+        }
+        timer = window.setTimeout(tick, Math.min(40, Math.max(16, (left - remainS) * 1000)));
+        return;
+      }
+      timer = window.setTimeout(tick, 40);
+    };
+    el.addEventListener("ended", finish);
+    el.addEventListener("error", onError);
+    void el.play().then(tick).catch(onError);
+  });
+}
+
+async function playAnnounceBlob(blob: Blob): Promise<void> {
+  const url = URL.createObjectURL(blob);
+  const el = new Audio();
+  accent = el;
+  el.volume = 0.72;
+  el.src = url;
+  try {
+    await waitCanPlay(el, 800);
+    await waitRemaining(el, tailSeconds(el.duration));
+  } finally {
+    el.pause();
+    URL.revokeObjectURL(url);
+    if (accent === el) accent = null;
+  }
 }
 
 async function playCueBlob(blob: Blob, volume = 0.58): Promise<void> {
@@ -281,40 +394,79 @@ async function playCue(
   }
 }
 
-async function playAnnounce(
+async function fetchAnnounce(
   verseId: string,
-  section: Exclude<ListenSection, "all">,
+  section: ListenPart,
   accessToken?: string | null,
-): Promise<void> {
+): Promise<Blob | null> {
   try {
-    const blob = await listenAnnounce(verseId, section, accessToken);
-    await playCueBlob(blob, 0.72);
+    return await listenAnnounce(verseId, section, accessToken);
   } catch {
-    // Missing heading must not fail Listen — the passage still plays.
+    return null;
   }
+}
+
+function sameControl(opts: {
+  verseId: string;
+  section: ListenSection;
+  queueKey?: string | null;
+}): boolean {
+  if (opts.queueKey) return snap.queueKey === opts.queueKey;
+  return !snap.queueKey && snap.verseId === opts.verseId && snap.section === opts.section;
+}
+
+function nextSlot(tracks: ListenTrack[], trackIndex: number, partIndex: number): {
+  verseId: string;
+  part: ListenPart;
+} | null {
+  const track = tracks[trackIndex];
+  if (track && partIndex + 1 < track.sections.length) {
+    return { verseId: track.verseId, part: track.sections[partIndex + 1] };
+  }
+  const upcoming = tracks[trackIndex + 1];
+  if (upcoming?.sections[0]) return { verseId: upcoming.verseId, part: upcoming.sections[0] };
+  return null;
+}
+
+function prefetchSlot(
+  verseId: string,
+  part: ListenPart,
+  accessToken: string | null | undefined,
+  reuse: Map<ListenPart, Blob>,
+): Prefetch {
+  const cached = reuse.get(part);
+  return {
+    verseId,
+    part,
+    announce: cached ? Promise.resolve(cached) : fetchAnnounce(verseId, part, accessToken),
+    passage: listenPassage(verseId, accessToken, part),
+  };
 }
 
 export function reportListenError(
   verseId: string,
   section: ListenSection,
   message: string,
+  queueKey?: string | null,
 ) {
-  emit({ verseId, section, phase: "idle", error: message });
+  emit({ verseId, section, queueKey: queueKey ?? null, phase: "idle", error: message });
 }
 
 export async function toggleListen(opts: {
   verseId: string;
   section: ListenSection;
+  queue?: ListenTrack[];
+  queueKey?: string | null;
   accessToken?: string | null;
   signedIn?: boolean;
 }): Promise<void> {
-  const { verseId, section, accessToken, signedIn } = opts;
-  if (snap.phase === "playing" && snap.verseId === verseId && snap.section === section) {
+  const { verseId, section, queue, queueKey = null, accessToken, signedIn } = opts;
+  if (snap.phase === "playing" && sameControl(opts)) {
     speech?.pause();
     emit({ phase: "paused" });
     return;
   }
-  if (snap.phase === "paused" && snap.verseId === verseId && snap.section === section && speech?.src) {
+  if (snap.phase === "paused" && sameControl(opts) && speech?.src) {
     await speech.play();
     emit({ phase: "playing" });
     return;
@@ -322,44 +474,91 @@ export async function toggleListen(opts: {
 
   stopNow();
   const run = token;
-  emit({ verseId, section, phase: "loading", error: null });
+  emit({ verseId, section, queueKey, phase: "loading", error: null });
 
   try {
-    const plan = await loadListenPlan(verseId);
-    const archived = plan?.sections || [];
-    if (!archived.length) {
-      throw new Error("This passage has not been spoken yet.");
-    }
-    if (section !== "all" && !archived.includes(section)) {
-      throw new Error("This layer has not been spoken yet.");
-    }
-    const room = plan?.room || "unmarked";
-    const queue: Array<Exclude<ListenSection, "all">> =
-      section === "all" ? archived : [section];
+    const tracks: ListenTrack[] = queue?.length
+      ? queue
+      : await (async () => {
+          const plan = await loadListenPlan(verseId);
+          const archived = plan?.sections || [];
+          if (!archived.length) throw new Error("This passage has not been spoken yet.");
+          if (section !== "all" && !archived.includes(section)) {
+            throw new Error("This layer has not been spoken yet.");
+          }
+          return [
+            {
+              verseId,
+              sections: section === "all" ? archived : [section],
+            },
+          ];
+        })();
+    if (!tracks.length) throw new Error("This passage has not been spoken yet.");
 
+    const firstPlan = await loadListenPlan(tracks[0].verseId);
+    const room = firstPlan?.room || "unmarked";
     const el = speech ?? new Audio();
     speech = el;
+    const announceReuse = new Map<ListenPart, Blob>();
+    let ahead: Prefetch | null = prefetchSlot(
+      tracks[0].verseId,
+      tracks[0].sections[0],
+      accessToken,
+      announceReuse,
+    );
 
     await playCue(room, "open", accessToken);
-    let first = true;
-    for (const part of queue) {
-      if (run !== token) return;
-      if (!first) {
-        await playLayerTone(room, part);
+    let firstPart = true;
+    for (let trackIndex = 0; trackIndex < tracks.length; trackIndex++) {
+      const track = tracks[trackIndex];
+      for (let partIndex = 0; partIndex < track.sections.length; partIndex++) {
         if (run !== token) return;
+        const part = track.sections[partIndex];
+        const current =
+          ahead && ahead.verseId === track.verseId && ahead.part === part
+            ? ahead
+            : prefetchSlot(track.verseId, part, accessToken, announceReuse);
+        const upcoming = nextSlot(tracks, trackIndex, partIndex);
+        ahead = upcoming
+          ? prefetchSlot(upcoming.verseId, upcoming.part, accessToken, announceReuse)
+          : null;
+        const armP = current.passage.then(({ blob }) => armSpeech(el, blob));
+
+        if (!firstPart) {
+          if (partIndex === 0) {
+            await new Promise((resolve) => window.setTimeout(resolve, VERSE_GAP_MS));
+          } else {
+            await playLayerTone(room, part);
+          }
+          if (run !== token) return;
+        }
+        firstPart = false;
+        const announceBlob = await current.announce;
+        if (run !== token) return;
+        if (announceBlob && !announceReuse.has(part)) announceReuse.set(part, announceBlob);
+        if (announceBlob) {
+          try {
+            await playAnnounceBlob(announceBlob);
+          } catch {
+            // Missing heading must not fail Listen — the passage still plays.
+          }
+          if (run !== token) return;
+        }
+        await armP;
+        if (run !== token) return;
+        emit({
+          verseId: track.verseId,
+          section: queueKey || section === "all" ? "all" : part,
+          queueKey,
+          phase: "playing",
+          error: null,
+        });
+        await playArmed(el);
       }
-      first = false;
-      const passageP = listenPassage(verseId, accessToken, part);
-      await playAnnounce(verseId, part, accessToken);
-      if (run !== token) return;
-      const { blob } = await passageP;
-      if (run !== token) return;
-      emit({ phase: "playing", section: section === "all" ? "all" : part });
-      await playBlob(el, blob);
     }
     if (run !== token) return;
     await playCue(room, "close", accessToken);
-    if (run === token) emit({ phase: "idle", error: null });
+    if (run === token) emit({ phase: "idle", error: null, queueKey: null });
   } catch (err) {
     if (run !== token) return;
     const status = err instanceof ListenApiError ? err.status : 0;
@@ -381,5 +580,5 @@ export async function toggleListen(opts: {
 
 export function stopListen() {
   stopNow();
-  emit({ verseId: null, section: null, phase: "idle", error: null });
+  emit({ verseId: null, section: null, queueKey: null, phase: "idle", error: null });
 }

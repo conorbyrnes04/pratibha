@@ -9,7 +9,7 @@ import type { VerseItem } from "@/lib/types";
 import { firstSentence } from "@/lib/textPreview";
 import { FilterSelect } from "@/components/FilterSelect";
 import { ThemeConstellation } from "@/components/ThemeConstellation";
-import { buildCollectionOptions, filterPassages, topThemes, uniqueCollections } from "@/lib/corpusFilters";
+import { buildCollectionOptions, filterPassages, passagesInCollection, topThemes, uniqueCollections } from "@/lib/corpusFilters";
 import { collectionsMatch, displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, generatedArtPool, redbookSlug, redbookSrc } from "@/lib/collectionImages";
 import { LayoutGroup, motion } from "motion/react";
@@ -45,34 +45,66 @@ function reflectionPrompt(item: VerseItem, t: (key: string, vars?: Record<string
 // shelf emblem into the reading header backdrop and back.
 const TOME_FLIGHT = { type: "spring", stiffness: 260, damping: 32, mass: 0.9 } as const;
 
-function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
+function TomeCard({
+  tome,
+  verseIds,
+  onOpen,
+}: {
+  tome: LibraryTome;
+  verseIds: string[];
+  onOpen: () => void;
+}) {
   const t = useT();
   const rb = redbookSlug(tome.collection);
   return (
-    <button type="button" onClick={onOpen} className="tome">
-      <span className="tome__glyph" aria-hidden>
-        {rb ? (
-          <motion.span
-            layoutId={`tome-${tome.collection}`}
-            transition={TOME_FLIGHT}
-            className="tome__mandala"
-            style={{ backgroundImage: `url(${redbookSrc(rb)})` }}
-          />
-        ) : (
-          <InkGlyph glyph={tome.glyph} state="arising" size="xl" mask />
-        )}
-      </span>
-      <span className="tome__body">
-        <span className="tome__title">{tome.displayName}</span>
-        <span className="tome__author">{tome.author}</span>
-      </span>
-      <span className="tome__foot">
-        <span className="tome__tradition">{tome.tradition}</span>
-        <span className="tome__meta">
-          {tome.count} {tome.count === 1 ? t("library.passageOne") : t("library.passageMany")} · {tome.authored}
+    <article className="tome">
+      <button type="button" onClick={onOpen} className="tome__open">
+        <span className="tome__glyph" aria-hidden>
+          {rb ? (
+            <motion.span
+              layoutId={`tome-${tome.collection}`}
+              transition={TOME_FLIGHT}
+              className="tome__mandala"
+              style={{ backgroundImage: `url(${redbookSrc(rb)})` }}
+            />
+          ) : (
+            <InkGlyph glyph={tome.glyph} state="arising" size="xl" mask />
+          )}
         </span>
-      </span>
-    </button>
+        <span className="tome__body">
+          <span className="tome__title">{tome.displayName}</span>
+          <span className="tome__author">{tome.author}</span>
+        </span>
+        <span className="tome__foot">
+          <span className="tome__tradition">{tome.tradition}</span>
+          <span className="tome__meta">
+            {tome.count} {tome.count === 1 ? t("library.passageOne") : t("library.passageMany")} · {tome.authored}
+          </span>
+        </span>
+      </button>
+      <div className="tome__listen">
+        <CollectionListen collection={tome.collection} verseIds={verseIds} variant="header" />
+      </div>
+    </article>
+  );
+}
+
+function CollectionListen({
+  collection,
+  verseIds,
+  variant = "collection",
+}: {
+  collection: string;
+  verseIds: string[];
+  variant?: "collection" | "header";
+}) {
+  if (!verseIds.length) return null;
+  return (
+    <ListenButton
+      queueKey={`collection:${collection}`}
+      queueVerseIds={verseIds}
+      variant={variant}
+    />
   );
 }
 
@@ -91,7 +123,7 @@ function LibraryPageContent() {
   const [learningMode, setLearningMode] = useState(true);
   const [includeDrafts, setIncludeDrafts] = useState(false);
   const [librarySort, setLibrarySort] = useState<LibrarySort>("tradition");
-  const PAGE_SIZE = 24;
+  const PAGE_SIZE = 20;
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   // Reset pagination whenever the result set changes.
@@ -188,6 +220,16 @@ function LibraryPageContent() {
     () => (librarySort === "tradition" ? groupTomesByTradition(tomes) : null),
     [tomes, librarySort],
   );
+  const verseIdsByCollection = useMemo(() => {
+    const out = new Map<string, string[]>();
+    for (const tome of tomes) {
+      out.set(
+        tome.collection,
+        sortPassagesForLibrary(passagesInCollection(items, tome.collection)).map((x) => x._id),
+      );
+    }
+    return out;
+  }, [items, tomes]);
 
   const filtered = useMemo(
     () =>
@@ -203,6 +245,7 @@ function LibraryPageContent() {
     [items, q, collection, theme],
   );
   const showShelf = collection === "all" && !q.trim();
+  const compactResults = Boolean(q.trim()) || !learningMode;
   const studyList = useLocalizedVerseCards(showShelf ? [] : filtered, visibleCount);
   const hasItems = items.length > 0;
   const isBooting = (status === "loading" || status === "waking") && !hasItems;
@@ -246,6 +289,10 @@ function LibraryPageContent() {
     () => (fallbackQuoteKey ? fallbackQuoteKey.split("\0") : []),
     [fallbackQuoteKey],
   );
+  const collectionVerseIds = useMemo(() => {
+    if (collection === "all") return [] as string[];
+    return sortPassagesForLibrary(passagesInCollection(items, collection)).map((x) => x._id);
+  }, [items, collection]);
 
   return (
     <LayoutGroup>
@@ -280,6 +327,7 @@ function LibraryPageContent() {
               mandalaSrc={openTomeRb ? redbookSrc(openTomeRb) : null}
               layoutId={openTomeRb ? `tome-${collection}` : undefined}
               fallbackQuotes={fallbackQuotes}
+              listen={<CollectionListen collection={collection} verseIds={collectionVerseIds} />}
               glyph={
                 <InkGlyph
                   glyph={openTomeMeta?.glyph || sumiGlyph(collection, openTomeMeta?.tradition)}
@@ -302,9 +350,12 @@ function LibraryPageContent() {
               </span>
             ) : null}
             <div className="min-w-0">
-              <h1 className="library-header__title">
-                {collection !== "all" ? displayCollectionName(collection) : t("library.title")}
-              </h1>
+              <div className="library-header__heading">
+                <h1 className="library-header__title">
+                  {collection !== "all" ? displayCollectionName(collection) : t("library.title")}
+                </h1>
+                <CollectionListen collection={collection} verseIds={collectionVerseIds} />
+              </div>
               <p className="library-header__lede">
                 {collection !== "all"
                   ? t("library.collectionLede", { count: openTomeMeta?.count ?? filtered.length })
@@ -445,7 +496,12 @@ function LibraryPageContent() {
                     </div>
                     <div className="tome-shelf">
                       {shelf.tomes.map((tome) => (
-                        <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
+                        <TomeCard
+                          key={tome.collection}
+                          tome={tome}
+                          verseIds={verseIdsByCollection.get(tome.collection) || []}
+                          onOpen={() => openTome(tome.collection)}
+                        />
                       ))}
                     </div>
                   </section>
@@ -453,7 +509,12 @@ function LibraryPageContent() {
               ) : (
                 <div className="tome-shelf">
                   {tomes.map((tome) => (
-                    <TomeCard key={tome.collection} tome={tome} onOpen={() => openTome(tome.collection)} />
+                    <TomeCard
+                      key={tome.collection}
+                      tome={tome}
+                      verseIds={verseIdsByCollection.get(tome.collection) || []}
+                      onOpen={() => openTome(tome.collection)}
+                    />
                   ))}
                 </div>
               )}
@@ -501,7 +562,7 @@ function LibraryPageContent() {
                     ) : null}
                   </div>
                 </div>
-                {!learningMode ? (
+                {!compactResults ? (
                   <p className="library-passage__preview line-clamp-2">
                     {passagePreview(x) || t("library.openPassage")}
                   </p>
