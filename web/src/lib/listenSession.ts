@@ -37,7 +37,8 @@ type Prefetch = {
 const subs = new Set<Sub>();
 const planCache = new Map<string, Promise<ListenPlan | null>>();
 const ARCHIVE_TTL_MS = 20_000;
-/** ElevenLabs pads short headings; cut the tail so the layer follows immediately. */
+/** ElevenLabs pads short headings; eat that silence, then wait this long before the reading. */
+const HEADER_TO_READING_MS = 4000;
 const VERSE_GAP_MS = 140;
 let archivePromise: Promise<ListenArchive> | null = null;
 let archiveAt = 0;
@@ -142,6 +143,20 @@ function stopNow() {
   accent?.pause();
   if (accent) accent.src = "";
   revokeSpeech();
+}
+
+function waitWhileLive(ms: number, run: number): Promise<void> {
+  return new Promise((resolve) => {
+    const end = Date.now() + ms;
+    const tick = () => {
+      if (run !== token || Date.now() >= end) {
+        resolve();
+        return;
+      }
+      window.setTimeout(tick, Math.min(40, end - Date.now()));
+    };
+    tick();
+  });
 }
 
 function waitCanPlay(el: HTMLAudioElement, ms = 1600): Promise<void> {
@@ -335,7 +350,7 @@ function waitRemaining(el: HTMLAudioElement, remainS: number): Promise<void> {
   });
 }
 
-async function playAnnounceBlob(blob: Blob): Promise<void> {
+async function playAnnounceBlob(blob: Blob, run: number): Promise<void> {
   const url = URL.createObjectURL(blob);
   const el = new Audio();
   accent = el;
@@ -349,6 +364,8 @@ async function playAnnounceBlob(blob: Blob): Promise<void> {
     URL.revokeObjectURL(url);
     if (accent === el) accent = null;
   }
+  if (run !== token) return;
+  await waitWhileLive(HEADER_TO_READING_MS, run);
 }
 
 async function playCueBlob(blob: Blob, volume = 0.58): Promise<void> {
@@ -538,7 +555,7 @@ export async function toggleListen(opts: {
         if (announceBlob && !announceReuse.has(part)) announceReuse.set(part, announceBlob);
         if (announceBlob) {
           try {
-            await playAnnounceBlob(announceBlob);
+            await playAnnounceBlob(announceBlob, run);
           } catch {
             // Missing heading must not fail Listen — the passage still plays.
           }
