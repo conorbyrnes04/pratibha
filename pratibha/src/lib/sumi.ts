@@ -50,6 +50,8 @@ const SUMI_RULES: Array<{ pattern: RegExp; glyph: string }> = [
   { pattern: /pulaar.?texts|gaden|le.?poular/i, glyph: "horse" },
   { pattern: /pulaar.?tradition|ful[bɓ]e|peul/i, glyph: "ox" },
   { pattern: /senegalese.?animism|serer|pangool|roog/i, glyph: "oak" },
+  { pattern: /animismo|rodrigues|candombl|gantois|fetichista/i, glyph: "yemaya" },
+  { pattern: /myths.?of.?i|wyndham|aramfe/i, glyph: "hawk" },
   { pattern: /yoruba|òwe|\bowe\b|orisha|orisa|ifa/i, glyph: "shango" },
 ];
 

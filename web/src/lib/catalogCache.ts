@@ -22,8 +22,11 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * and enriched Know Yourself (Balyānī).
  * v15: /verses is preview-only (no pratibha_layers) — drop fat v14 snapshots.
  * v16: Senegalese living speech — Serer cosaan, Fulɓe pastoral remnant, Gaden 1913 Pulaar.
- * v17: Futa Jalon Fulde (Reichardt 1876) — highland traditions, not Futa Toro Pulaar. */
-const CACHE_VERSION = 17;
+ * v17: Futa Jalon Fulde (Reichardt 1876) — highland traditions, not Futa Toro Pulaar.
+ * v18: Myths of Ìfẹ̀ — Wyndham 1921 priest recitation.
+ * v19: O Animismo Fetichista — Rodrigues 1900 (Candomblé / Bahia).
+ * v20: Os Africanos no Brasil — Rodrigues 1932 (nations, Malês, Gêge-Nagô). */
+const CACHE_VERSION = 20;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";

@@ -393,6 +393,7 @@ function ShareComposerInner({
           const withFile = { files: [file], title: copy.title, text: caption };
           if (!navigator.canShare || navigator.canShare({ files: [file] })) {
             await navigator.share(withFile);
+            toast.success(t("share.handedOff"));
             return;
           }
           await navigator.share({ title: copy.title, text: caption });

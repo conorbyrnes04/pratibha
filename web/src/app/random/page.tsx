@@ -10,7 +10,7 @@ import { displayCollectionName } from "@/lib/collectionLabels";
 import { collectionArtPool, generatedArtPool } from "@/lib/collectionImages";
 import { displayPassageLocation, displayPassageTitle } from "@/lib/passageTitles";
 import { LayerBlock } from "@/components/LayerBlock";
-import { ReadingShell } from "@/components/ReadingShell";
+import { ArtBackdrop } from "@/components/ArtImage";
 import { getVerseLayers } from "@/lib/verseLayers";
 import { recordPractice } from "@/lib/glyphUnlock";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -35,14 +35,9 @@ export default function RandomPage() {
         }
       })
       .catch(() => {});
-    // Load the library only for the local fallback pool; collection list comes
-    // from the dedicated endpoint above.
-    getVerses("strong_draft")
-      .then(setAllItems)
-      .catch(() => {});
   }, []);
 
-  async function nextOne(selected: string) {
+  async function nextOne(selected: string, pool: VerseItem[] = allItems) {
     setLoading(true);
     setError("");
     try {
@@ -53,15 +48,19 @@ export default function RandomPage() {
         recordPractice("oracle:draw");
         return;
       }
-      // Fallback: pick locally from the already loaded library if /random returns empty.
-      const pool = allItems.filter(
+      const local = pool.filter(
         (x) =>
           isReaderFacingUnit(x) &&
           (selected === "all" || (x.collection || "Unknown").trim() === selected),
       );
-      if (pool.length > 0) {
-        setItem(pool[Math.floor(Math.random() * pool.length)]);
+      if (local.length > 0) {
+        setItem(local[Math.floor(Math.random() * local.length)]);
         recordPractice("oracle:draw");
+        return;
+      }
+      if (pool.length === 0) {
+        // Local catalog still loading — keep the spinner; the allItems effect retries.
+        setItem(null);
         return;
       }
       setItem(null);
@@ -75,16 +74,44 @@ export default function RandomPage() {
   }
 
   useEffect(() => {
-    void nextOne("all");
-    // Pick the first passage exactly once on mount.
+    let cancelled = false;
+    async function firstDraw() {
+      setLoading(true);
+      const [v, verses] = await Promise.all([
+        getRandom(undefined, "strong_draft"),
+        getVerses("strong_draft").catch(() => [] as VerseItem[]),
+      ]);
+      if (cancelled) return;
+      setAllItems(verses);
+      if (v) {
+        setItem(v);
+        recordPractice("oracle:draw");
+        setLoading(false);
+        return;
+      }
+      const pool = verses.filter(isReaderFacingUnit);
+      if (pool.length > 0) {
+        setItem(pool[Math.floor(Math.random() * pool.length)]);
+        recordPractice("oracle:draw");
+        setLoading(false);
+        return;
+      }
+      setItem(null);
+      setError("Random discovery is temporarily unavailable. Please retry.");
+      setLoading(false);
+    }
+    void firstDraw();
+    return () => {
+      cancelled = true;
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     // If the first draw raced ahead of the local library and fell through to an
     // empty pool, retry once the library finishes loading.
-    if (allItems.length > 0 && !item && !loading && error) {
-      void nextOne(collection);
+    if (allItems.length > 0 && !item && !loading && !error) {
+      void nextOne(collection, allItems);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allItems]);
@@ -92,44 +119,41 @@ export default function RandomPage() {
   const artSrcs = item ? collectionArtPool(item.collection) : generatedArtPool("default");
 
   return (
-    <main className="page-shell page-shell--reading">
-      <ReadingShell artSrcs={artSrcs}>
-        <nav className="passage-reading__crumb" aria-label="Breadcrumb">
-          <Link href="/">Today</Link>
-          <span className="passage-reading__crumb-sep" aria-hidden>
-            /
-          </span>
-          <span>{t("oracle.meta")}</span>
-        </nav>
-
-        <header className="passage-reading__header">
-          <p className="passage-reading__meta">{t("oracle.meta")}</p>
-          <h1 className="passage-reading__title">{t("oracle.title")}</h1>
-          <p className="passage-reading__deck">{t("oracle.deck")}</p>
+    <main className="page-shell page-shell--library">
+      <div className="section-stack">
+        <header className="library-header">
+          <div className="library-header__atmosphere" aria-hidden>
+            <ArtBackdrop srcs={artSrcs} variant="subtle" opacity={0.12} priority />
+          </div>
+          <div className="library-header__body">
+            <p className="passage-reading__meta">{t("oracle.meta")}</p>
+            <h1 className="library-header__title">{t("oracle.title")}</h1>
+            <p className="library-header__lede">{t("oracle.deck")}</p>
+          </div>
         </header>
 
-        <div className="mt-2 flex max-w-[var(--reading-measure)] flex-wrap items-end gap-3">
-          <div className="min-w-[min(100%,16rem)] flex-1">
-            <FilterSelect
-              label={t("oracle.text")}
-              tone="gold"
-              value={collection}
-              onChange={(value) => {
-                setCollection(value);
-                void nextOne(value);
-              }}
-              options={buildCollectionOptions(allItems, collections)}
-            />
+        <div className="library-toolbar">
+          <FilterSelect
+            label={t("oracle.text")}
+            tone="gold"
+            value={collection}
+            onChange={(value) => {
+              setCollection(value);
+              void nextOne(value);
+            }}
+            options={buildCollectionOptions(allItems, collections)}
+          />
+          <div className="flex items-end">
+            <Button type="button" className="w-full sm:w-auto" onClick={() => nextOne(collection)}>
+              Another one
+            </Button>
           </div>
-          <Button type="button" onClick={() => nextOne(collection)}>
-            Another one
-          </Button>
         </div>
 
         {loading ? (
-          <p className="soft mt-8 max-w-[var(--reading-measure)]">Finding a passage…</p>
+          <p className="soft">Finding a passage…</p>
         ) : error ? (
-          <section className="mt-8 max-w-[var(--reading-measure)]">
+          <section>
             <p className="text-amber-100">{error}</p>
             <div className="mt-4">
               <Button type="button" onClick={() => nextOne(collection)}>
@@ -138,7 +162,7 @@ export default function RandomPage() {
             </div>
           </section>
         ) : item ? (
-          <article className="mt-10">
+          <article className="oracle-folio">
             <header className="passage-reading__header" style={{ paddingBottom: "1.25rem" }}>
               <p className="passage-reading__meta">
                 {displayCollectionName(item.collection)}
@@ -159,7 +183,7 @@ export default function RandomPage() {
               ))}
 
             {item.themes && item.themes.length > 0 ? (
-              <p className="library-passage__themes mt-4 max-w-[var(--reading-measure)]">
+              <p className="library-passage__themes mt-4">
                 {item.themes.slice(0, 6).join(" · ")}
               </p>
             ) : null}
@@ -183,11 +207,11 @@ export default function RandomPage() {
             </div>
           </article>
         ) : (
-          <p className="soft mt-8 max-w-[var(--reading-measure)]">
+          <p className="soft">
             No random passage available yet. Try Library to pick one directly.
           </p>
         )}
-      </ReadingShell>
+      </div>
     </main>
   );
 }

@@ -7,7 +7,8 @@ import { useAuth } from "@/components/AuthProvider";
 import { useAuthToken } from "@convex-dev/auth/react";
 import { usePushJournalNote } from "@/lib/journalCloud";
 import { recordPractice } from "@/lib/glyphUnlock";
-import { saveChatResponse } from "@/lib/journalStorage";
+import { saveChatResponse, loadJournalNotes } from "@/lib/journalStorage";
+import { takeChatPrompt, linkCitationMarks } from "@/lib/chatHandoff";
 import type { ChatMode, PratibhaLayerKind, Source, VerseItem } from "@/lib/types";
 import { FilterSelect } from "@/components/FilterSelect";
 import { ComparePassageSelect } from "@/components/ComparePassageSelect";
@@ -89,19 +90,29 @@ export default function ChatPage() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const fromUrl = params.get("q");
-    if (fromUrl) setQ(fromUrl);
+    const noteId = params.get("note");
+    const verseId = params.get("verse_id");
+    if (fromUrl) {
+      setQ(fromUrl);
+    } else if (noteId) {
+      const note = loadJournalNotes().find((entry) => entry.id === noteId);
+      if (note?.question) setQ(note.question);
+      else if (note?.prompt) setQ(note.prompt);
+    } else {
+      const stashed = takeChatPrompt(verseId);
+      if (stashed) setQ(stashed);
+    }
 
     const back = params.get("back");
     if (back && back.startsWith("/")) setBackHref(back);
 
-    const verseId = params.get("verse_id");
     const mode = params.get("mode") as ChatMode | null;
     if (mode && ["question", "explain", "compare", "practice"].includes(mode)) {
       setChatMode(mode);
       if (mode === "compare") setCompareMode(true);
       // Leave the box empty when a passage is pinned so grayed suggestions can show.
       // Only prefill when the URL explicitly carries `q=…`.
-      if (!fromUrl && !verseId && mode === "compare") {
+      if (!fromUrl && !verseId && !noteId && mode === "compare") {
         setQ("Compare these two traditions on the question above.");
       }
     }
@@ -121,10 +132,9 @@ export default function ChatPage() {
       getVerse(verseId)
         .then((verse) => {
           setPinnedVerse(verse);
-          // Arriving from a gate to compare: seed Voice A with the pinned
-          // passage itself (not an arbitrary first-in-catalog tradition) unless
-          // the URL explicitly names a Voice A.
-          if (verse?.collection && mode === "compare" && !voiceA) {
+          // Arriving from a gate: seed Voice A with the pinned passage itself
+          // (not an arbitrary first-in-catalog tradition) unless the URL names one.
+          if (verse?.collection && !voiceA) {
             setCompareA(verse.collection);
             setCompareVerseA(verse._id);
           }
@@ -137,8 +147,11 @@ export default function ChatPage() {
     void pingHealth();
     getCollections().then((items) => {
       setCollections(items);
-      setCompareA((prev) => prev || items[0] || "");
-      setCompareB((prev) => prev || items[1] || items[0] || "");
+      const params = new URLSearchParams(window.location.search);
+      // A pinned verse owns Voice A; Voice B stays empty until the reader chooses.
+      if (params.get("verse_id")) return;
+      if (!params.get("voice_a")) setCompareA((prev) => prev || items[0] || "");
+      if (!params.get("voice_b")) setCompareB((prev) => prev || items[1] || items[0] || "");
     });
     getVerses("strong_draft").then(setAllPassages).catch(() => setAllPassages([]));
   }, []);
@@ -192,6 +205,22 @@ export default function ChatPage() {
     ],
     [t],
   );
+
+  const studyHint = useMemo(() => {
+    const modeLabel =
+      chatMode === "explain"
+        ? t("chat.modeExplain")
+        : chatMode === "practice"
+          ? t("chat.modePractice")
+          : chatMode === "compare"
+            ? t("chat.modeCompare")
+            : t("chat.modeQuestion");
+    const parts = [modeLabel];
+    if (pinnedVerse && layerFocus) parts.push(layerFocus);
+    parts.push(useRag ? t("chat.grounded") : t("chat.freeform"));
+    if (compareMode && chatMode !== "compare") parts.push(t("chat.modeCompare"));
+    return parts.join(" · ");
+  }, [chatMode, compareMode, layerFocus, pinnedVerse, t, useRag]);
 
   const pinnedSourceLine = pinnedVerse
     ? displayPassageSourceLine({
@@ -462,7 +491,9 @@ export default function ChatPage() {
                   <>
                     {m.content ? (
                       <div className="chat-markdown reading-prose">
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                          {linkCitationMarks(m.content)}
+                        </ReactMarkdown>
                       </div>
                     ) : (
                       <>
@@ -562,7 +593,7 @@ export default function ChatPage() {
         <div className="mt-6">
           <Disclosure
             summary={pinnedVerse ? t("chat.studyOptions") : t("chat.retrievalCompare")}
-            hint={`${chatMode}${pinnedVerse && layerFocus ? ` · ${layerFocus}` : ""}${useRag ? ` · ${t("chat.grounded")}` : ` · ${t("chat.freeform")}`}${compareMode && chatMode !== "compare" ? ` · ${t("chat.modeCompare")}` : ""}`}
+            hint={studyHint}
             defaultOpen={compareMode}
           >
             {pinnedVerse ? (
@@ -643,6 +674,7 @@ export default function ChatPage() {
                       tone="lapis"
                       value={compareB}
                       onChange={setCompareB}
+                      placeholder={t("chat.chooseVoice")}
                       options={collectionOptions.map((o) => ({ ...o, label: `B · ${o.label}` }))}
                     />
                     <ComparePassageSelect
@@ -687,14 +719,23 @@ export default function ChatPage() {
                 );
                 if (href) {
                   return (
-                    <Link key={`source-${s.rank}`} href={href} className="library-passage block">
+                    <Link
+                      key={`source-${s.rank}`}
+                      id={`chat-source-${s.rank}`}
+                      href={href}
+                      className="library-passage block scroll-mt-28"
+                    >
                       {meta}
                       {body}
                     </Link>
                   );
                 }
                 return (
-                  <article key={`source-${s.rank}`} className="library-passage">
+                  <article
+                    key={`source-${s.rank}`}
+                    id={`chat-source-${s.rank}`}
+                    className="library-passage scroll-mt-28"
+                  >
                     {meta}
                     {body}
                   </article>

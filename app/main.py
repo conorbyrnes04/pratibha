@@ -28,7 +28,7 @@ from . import tts as listen_tts
 from .llm import smart_chat, smart_chat_stream
 from .study_i18n import is_locale, localize_verse, translate_fields
 from .rag import retrieve_context, retrieve_context_compare, retrieve_context_for_verse, retrieve_related_unit_ids, detected_collections
-from .catalog import catalog_items, warm_catalog
+from .catalog import catalog_items, load_baked_catalog, warm_catalog
 from .data_loader import (
     LOAD_STATS,
     _humanize_collection,
@@ -525,7 +525,10 @@ async def collections():
 async def sources():
     from .sources_registry import build_sources_payload
 
-    return build_sources_payload(get_all_verses())
+    # Attribution rows are static. Don't block this page on a YAML cold load —
+    # baked catalog counts are enough, and an empty count list still lists every text.
+    verses = get_all_verses() if corpus_ready() else (load_baked_catalog("strong_draft") or [])
+    return build_sources_payload(verses)
 
 
 @app.get("/lexicon")

@@ -1,0 +1,132 @@
+source_id: AFRIC_005
+category: root_text
+work_id: os_africanos_no_brasil
+work_title: Os Africanos no Brasil
+unit_id: os_africanos_no_brasil.os_africanos_no_brasil_005
+unit_label: The Houses Were Schools and Mosques
+title: The Houses Were Schools and Mosques
+unit_type: teaching_passage
+commentary: 'The claim is an address book of Islam in Bahia: named houses, named freedmen, named teachers,
+  named nations. Rua da Oração held a school where an alufá preached. Sanim is Tapa. Licutan is Pacífico
+  among his own, teaching in the shops of a master’s house. These are mosques that look like rooms. Rodrigues
+  lifts the list from the 1835 inquiry and keeps the police file’s appetite: houses as cells of a sect,
+  names as a roster of danger. That is the poison. We do not teach the Malê revolt as the essence of the
+  religion, and we do not turn this paragraph into a crime scene. The ethnographic remainder is the double
+  name and the double use. A man is Pacífico in Portuguese and Licutan among his own. A shop is a shop
+  and a mosque. A freed Nagô house is a school. Johnson’s many towns keep one God under different local
+  names; these houses keep one Book under Nagô and Tapa mouths. Lasnet’s ancestral land is a cult you
+  do not leave; these rooms are a cult rebuilt in someone else’s street grid. Existentially, you learn
+  one house that taught a language the street did not, and you stop needing a minaret before you will
+  admit a mosque. If the only church you can see is the one with a façade, you are still reading with
+  the master’s eyes.'
+themes:
+- candomble
+- nago
+- jeje
+- male
+- bahia
+tags:
+- os_africanos_no_brasil
+- candomble
+- nago
+- jeje
+- male
+- bahia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os
+  Africanos no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932),
+  public domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+  Homero Pires’s preface or later editors.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: 'Eram outras tantas escolas e igrejas maometanas: a casa dos nagôs libertos Belchior e Gaspar
+    da Silva Cunha, na rua da Oração, onde pregava de mestre o alufá ou marabu Luis, Sanim na sua nação
+    Tapa; a casa dos nagôs libertos Manuel Calafate e Aprígio; a casa do nagô Pacífico, Licutan entre
+    os seus, nas lojas da casa de seu senhor, no Cruzeiro de São Francisco.'
+- kind: iast
+  label: Romanization
+  body: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key terms: alufá
+    / marabu; Sanim (Tapa nation); Licutan (Pacífico among his own); rua da Oração; Cruzeiro de São Francisco.'
+- kind: translation
+  label: Pratibha Translation
+  body: 'They were so many schools and Muslim churches: the house of the freed Nagô men Belchior and Gaspar
+    da Silva Cunha, on Rua da Oração, where the alufá or marabout Luis preached as master — Sanim in his
+    Tapa nation; the house of the freed Nagô men Manuel Calafate and Aprígio; the house of the Nagô Pacífico,
+    Licutan among his own, in the shops of his master’s house at the Cruzeiro de São Francisco.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is an address book of Islam in Bahia: named houses, named freedmen, named teachers,
+    named nations. Rua da Oração held a school where an alufá preached. Sanim is Tapa. Licutan is Pacífico
+    among his own, teaching in the shops of a master’s house. These are mosques that look like rooms.
+    Rodrigues lifts the list from the 1835 inquiry and keeps the police file’s appetite: houses as cells
+    of a sect, names as a roster of danger. That is the poison. We do not teach the Malê revolt as the
+    essence of the religion, and we do not turn this paragraph into a crime scene. The ethnographic remainder
+    is the double name and the double use. A man is Pacífico in Portuguese and Licutan among his own.
+    A shop is a shop and a mosque. A freed Nagô house is a school. Johnson’s many towns keep one God under
+    different local names; these houses keep one Book under Nagô and Tapa mouths. Lasnet’s ancestral land
+    is a cult you do not leave; these rooms are a cult rebuilt in someone else’s street grid. Existentially,
+    you learn one house that taught a language the street did not, and you stop needing a minaret before
+    you will admit a mosque. If the only church you can see is the one with a façade, you are still reading
+    with the master’s eyes.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: alufá
+    definition: Muslim teacher / imam in Bahian Malê speech (also marabu) -> the master who preaches and
+      teaches letters -> "witch doctor" or "sect leader" is the police gloss
+  - term: Licutan
+    definition: Pacífico’s name among his own -> the name the nation uses when Portuguese is the master’s
+      tongue -> keeping only Pacífico adopts the baptismal record as the person
+  - term: Tapa
+    definition: nation of Sanim (Nupe) -> Islam in Bahia is not only Nagô -> collapsing every alufá into
+      Yoruba repeats the one-gloss error of cap. I
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Samuel Johnson, The Yoruba Faith — One God, Many Towns
+    resonance: Both keep a single highest address housed under local names and rooms.
+    divergence: Johnson’s towns are Yoruba polities; these houses are freedmen’s rooms and a master’s
+      shop.
+  - citation: Nina Rodrigues, O Animismo Fetichista — Terreiro Means Place and Jurisdiction
+    resonance: Both insist that a sacred house is a location with authority, not a vacant lot with rumors.
+    divergence: The terreiro’s jurisdiction is orisha; these rooms’ jurisdiction is Arabic teaching and
+      Malê prayer.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: 'Today, name one ordinary room — a shop, a kitchen, a rented house — that has served as a school
+    or a place of prayer. Write the two names it has: the street name and the name used inside.'
+provenance:
+  collection: Os Africanos no Brasil
+  category: candomble-bahia
+  verse: '5'
+  section: Rodrigues, Os Africanos, cap. II — 1835
+  cultural_context: Historical conditions through which Nagô, Jeje, Bantu, and Malê (Islam) practices
+    took root in Brazil. Sibling to *O Animismo Fetichista* (liturgy). Rodrigues was a physician and racial
+    theorist; the book is carregada de preconceito. Restore nations, language, Malê prayer, Gêge-Nagô
+    cult, and police survival — not his hierarchy, not "fetish" as doctrine, not criminal anthropology.
+    Study reading pending review by Candomblé and Malê tradition-bearers.
+  original_source: Rodrigues, Os Africanos, cap. II — 1835
+  original_reliability: SOURCED — Rodrigues Portuguese (posthumous 1932); Edelstein 2010 diplomatic of
+    that text. Not Homero Pires preface. Not Cap. VIII/IX as doctrine.
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os Africanos
+    no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932), public
+    domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+    Homero Pires’s preface or later editors.'
+translation: 'They were so many schools and Muslim churches: the house of the freed Nagô men Belchior
+  and Gaspar da Silva Cunha, on Rua da Oração, where the alufá or marabout Luis preached as master — Sanim
+  in his Tapa nation; the house of the freed Nagô men Manuel Calafate and Aprígio; the house of the Nagô
+  Pacífico, Licutan among his own, in the shops of his master’s house at the Cruzeiro de São Francisco.'
+abhyasa: 'Today, name one ordinary room — a shop, a kitchen, a rented house — that has served as a school
+  or a place of prayer. Write the two names it has: the street name and the name used inside.'
+practice: 'Today, name one ordinary room — a shop, a kitchen, a rented house — that has served as a school
+  or a place of prayer. Write the two names it has: the street name and the name used inside.'
+original: 'Eram outras tantas escolas e igrejas maometanas: a casa dos nagôs libertos Belchior e Gaspar
+  da Silva Cunha, na rua da Oração, onde pregava de mestre o alufá ou marabu Luis, Sanim na sua nação
+  Tapa; a casa dos nagôs libertos Manuel Calafate e Aprígio; a casa do nagô Pacífico, Licutan entre os
+  seus, nas lojas da casa de seu senhor, no Cruzeiro de São Francisco.'
+transliteration: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key
+  terms: alufá / marabu; Sanim (Tapa nation); Licutan (Pacífico among his own); rua da Oração; Cruzeiro
+  de São Francisco.'

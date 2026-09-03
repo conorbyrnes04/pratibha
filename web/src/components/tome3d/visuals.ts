@@ -62,6 +62,12 @@ const TRADITION_PALETTES: Record<string, TomePalette> = {
     accent: "#e0a84a",
     paper: "#f0e6d2",
   },
+  Candomblé: {
+    background: "#0c1218",
+    cloth: "#142838",
+    accent: "#6a9ec4",
+    paper: "#e4ebe8",
+  },
   Dakota: {
     background: "#12140c",
     cloth: "#243018",

@@ -188,6 +188,10 @@ const SUMI_RULES: Array<{ pattern: RegExp; glyph: SumiSlug }> = [
   { pattern: /futa.?jalon|fuuta.?jaloo|reichardt/i, glyph: "mountain" },
   { pattern: /pulaar.?tradition|ful[bɓ]e|peul/i, glyph: "ox" },
   { pattern: /senegalese.?animism|serer|pangool|roog/i, glyph: "oak" },
+  { pattern: /africanos.?no.?brasil|os_africanos/i, glyph: "serpent" },
+  { pattern: /animismo|fetichista|gantois|animisme/i, glyph: "yemaya" },
+  { pattern: /candombl/i, glyph: "yemaya" },
+  { pattern: /myths.?of.?[iìí]|myths_of_ife|wyndham|aramfe/i, glyph: "hawk" },
   { pattern: /yoruba|orisha|[oò]r[iì][sṣ][aà]/i, glyph: "oshun" },
 ];
 
@@ -200,6 +204,7 @@ export const TRADITION_SUMI: Record<string, SumiSlug> = {
   "Daoist": "yin_yang",
   "Confucian": "oak",
   "Yoruba": "oshun",
+  "Candomblé": "yemaya",
   "Serer": "oak",
   "Pulaar": "ox",
   "Futa Jalon": "mountain",

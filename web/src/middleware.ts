@@ -9,35 +9,26 @@ const AUTH_MIN_MS = 1000;
 const AUTH_WINDOW_MS = 15 * 60 * 1000;
 const AUTH_MAX_ATTEMPTS = 8;
 
-// Read-only content + discovery surfaces are browsable without an account (the
-// homepage funnels sign-in for the gated layers). User data (journal, account,
-// manuscript) and the metered chat stay gated. Keeping these public also lets
-// crawlers reach them, which — with per-passage metadata + share cards — is the
-// discovery half of the free-reading funnel.
-const isPublicPage = createRouteMatcher([
-  "/",
-  "/login",
-  "/today",
-  "/learn",
-  "/learn/(.*)",
-  "/read",
-  "/read/(.*)",
-  "/circle",
-  "/circle/(.*)",
-  "/sources",
-  "/glossary",
-  "/glossary/(.*)",
-  "/random",
-  "/s/(.*)",
-  "/m/(.*)",
-  "/privacy",
+// Authenticated surfaces stay gated. Everything else — including unknown
+// URLs — is public so crawlers and mistyped links get a real 404 instead of
+// a sign-in wall. User data (journal, account, manuscript) and metered chat
+// remain private.
+const isPrivatePage = createRouteMatcher([
+  "/journal",
+  "/journal/(.*)",
+  "/chat",
+  "/chat/(.*)",
+  "/manuscript",
+  "/manuscript/(.*)",
+  "/account",
+  "/account/(.*)",
 ]);
 
 const convexMiddleware = convexAuthNextjsMiddleware(
   async (request, ctx) => {
     if (!ctx.convexAuth) return;
     const authenticated = await ctx.convexAuth.isAuthenticated();
-    if (!isPublicPage(request) && !authenticated) {
+    if (isPrivatePage(request) && !authenticated) {
       return new Response(null, {
         status: 307,
         headers: {

@@ -21,6 +21,7 @@ Usage:
     .venv/bin/python scripts/bake_listen.py --slice announces
     .venv/bin/python scripts/bake_listen.py --tracks seer-in-its-nature
     .venv/bin/python scripts/bake_listen.py --slice work --work lalla_vakyani
+    .venv/bin/python scripts/bake_listen.py --slice fill --reserve 0
 """
 from __future__ import annotations
 
@@ -291,6 +292,7 @@ async def bake_speech(
     *,
     dry_run: bool,
     reserve: int,
+    leftover: int | None = None,
 ) -> tuple[int, int, int, list[str]]:
     import httpx
 
@@ -320,7 +322,7 @@ async def bake_speech(
                 jobs.append((verse, section, voice_id, text, room, gender))
 
     print(f"Speech jobs: {len(jobs)} across {len(verses)} verses")
-    left = remaining_chars()
+    left = leftover if leftover is not None else remaining_chars()
     print(f"Creator remaining before speech: {left:,}")
 
     for verse, section, voice_id, text, room, gender in jobs:
@@ -409,6 +411,7 @@ def collect_supporting(track_ids: list[str]) -> tuple[list[dict], list[str]]:
 
 
 HEROES_PATH = ROOT / "data" / "listen_heroes.json"
+FILL_PATH = ROOT / "data" / "listen_fill.json"
 
 
 def collect_work(work_id: str) -> tuple[list[dict], list[str]]:
@@ -442,6 +445,38 @@ def collect_work(work_id: str) -> tuple[list[dict], list[str]]:
     return verses, []
 
 
+def collect_fill_verses() -> tuple[list[dict], list[str]]:
+    """Bake the even-split wave recorded in data/listen_fill.json."""
+    if not FILL_PATH.is_file():
+        print("Missing data/listen_fill.json — run scripts/listen_fill.py --plan first")
+        return [], []
+    data = json.loads(FILL_PATH.read_text())
+    ids = list(((data.get("next_wave") or {}).get("ids")) or [])
+    if not ids:
+        print("listen_fill.json has no next_wave.ids — run scripts/listen_fill.py --plan")
+        return [], []
+    by_id, folded = _index_verses()
+    seen: set[str] = set()
+    verses: list[dict] = []
+    unresolved: list[str] = []
+    for pid in ids:
+        verse = resolve_passage(pid, by_id, folded)
+        if verse is None:
+            unresolved.append(pid)
+            continue
+        vid = str(verse.get("_id") or "")
+        if not vid or vid in seen:
+            continue
+        seen.add(vid)
+        verses.append(verse)
+    wave = data.get("next_wave") or {}
+    print(
+        f"Fill wave {wave.get('id')}: {len(verses)} verses · "
+        f"~{wave.get('planned_chars', 0):,} chars"
+    )
+    return verses, unresolved
+
+
 def collect_hero_verses() -> tuple[list[dict], list[str]]:
     if not HEROES_PATH.is_file():
         print("Missing data/listen_heroes.json — run scripts/select_listen_heroes.py first")
@@ -469,9 +504,9 @@ async def main() -> int:
     ap = argparse.ArgumentParser(description="Bake Listen cues and Path speech.")
     ap.add_argument(
         "--slice",
-        choices=("cues", "path", "walkable", "tracks", "heroes", "suggested", "work", "announces"),
+        choices=("cues", "path", "walkable", "tracks", "heroes", "suggested", "work", "fill", "announces"),
         default="path",
-        help="path = cues + essential Path primaries. suggested = Path supporting readings. announces = spoken layer titles.",
+        help="path = cues + essential Path primaries. fill = next wave in data/listen_fill.json. suggested = Path supporting readings. announces = spoken layer titles.",
     )
     ap.add_argument("--tracks", nargs="*", default=[], help="Track ids when --slice tracks.")
     ap.add_argument(
@@ -481,6 +516,12 @@ async def main() -> int:
         help="Work_id when --slice work (repeatable). Uses tts_key verses, else listen_heroes.json.",
     )
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument(
+        "--ids",
+        nargs="*",
+        default=[],
+        help="Verse _ids to bake (recast spoken audio for these only).",
+    )
     ap.add_argument(
         "--reserve",
         type=int,
@@ -501,13 +542,28 @@ async def main() -> int:
 
     t0 = time.monotonic()
     cue_made = cue_skip = 0
-    if args.slice in {"cues", "path", "walkable", "work"}:
+    recast_only = bool(args.ids)
+    if not recast_only and args.slice in {"cues", "path", "walkable", "work"}:
         cue_made, cue_skip = await bake_cues(dry_run=args.dry_run)
 
     track_ids: list[str] = []
     verses: list[dict] = []
     unresolved: list[str] = []
-    if args.slice == "path":
+    if recast_only:
+        by_id, folded = _index_verses()
+        seen: set[str] = set()
+        for pid in args.ids:
+            verse = resolve_passage(pid, by_id, folded)
+            if verse is None:
+                unresolved.append(pid)
+                continue
+            vid = str(verse.get("_id") or "")
+            if not vid or vid in seen:
+                continue
+            seen.add(vid)
+            verses.append(verse)
+        print(f"Recast ids: {len(verses)} verses")
+    elif args.slice == "path":
         track_ids = list(SPINE)
     elif args.slice == "walkable":
         track_ids = list(SPINE) + list(LIVING)
@@ -515,6 +571,8 @@ async def main() -> int:
         track_ids = list(args.tracks)
     elif args.slice == "heroes":
         verses, unresolved = collect_hero_verses()
+    elif args.slice == "fill":
+        verses, unresolved = collect_fill_verses()
     elif args.slice == "work":
         if not args.work:
             print("--work is required with --slice work")
@@ -536,9 +594,12 @@ async def main() -> int:
     if track_ids:
         verses, unresolved = collect_verses(track_ids)
 
-    announce_made, announce_skip, announce_chars, announce_failed = await bake_announces(
-        dry_run=args.dry_run
-    )
+    announce_made = announce_skip = announce_chars = 0
+    announce_failed: list[str] = []
+    if not recast_only and args.slice != "fill":
+        announce_made, announce_skip, announce_chars, announce_failed = await bake_announces(
+            dry_run=args.dry_run
+        )
 
     speech_made = speech_skip = chars = 0
     failed: list[str] = []
@@ -546,12 +607,18 @@ async def main() -> int:
         if unresolved:
             print(f"Unresolved passage ids ({len(unresolved)}): {unresolved}")
         speech_made, speech_skip, chars, failed = await bake_speech(
-            verses, dry_run=args.dry_run, reserve=args.reserve
+            verses, dry_run=args.dry_run, reserve=args.reserve, leftover=remaining_chars(sub)
         )
 
     elapsed = time.monotonic() - t0
     spent = chars + announce_chars
-    after = remaining_chars() if not args.dry_run else remaining_chars(sub) - spent
+    if args.dry_run:
+        after = remaining_chars(sub) - spent
+    else:
+        try:
+            after = remaining_chars()
+        except Exception:
+            after = remaining_chars(sub) - spent
     print()
     print(
         f"Done in {elapsed:.0f}s · cues {cue_made} · announces {announce_made} · "

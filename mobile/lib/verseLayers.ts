@@ -188,7 +188,12 @@ export function getLayer(item: VerseItem, kind: PratibhaLayerKind): PratibhaLaye
 }
 
 export function layerText(item: VerseItem, kind: PratibhaLayerKind): string {
-  return maybeHumanize(item, getLayer(item, kind)?.body);
+  const fromLayer = maybeHumanize(item, getLayer(item, kind)?.body);
+  if (fromLayer) return fromLayer;
+  if (kind === "translation") return maybeHumanize(item, item.translation);
+  if (kind === "commentary") return maybeHumanize(item, item.commentary);
+  if (kind === "practice") return maybeHumanize(item, item.practice || item.abhyasa);
+  return "";
 }
 
 export function passagePreview(item: VerseItem): string {

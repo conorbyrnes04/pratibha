@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     "Patanjali Yoga Sutras", "Kashmir Shaivism", "Vijnana Bhairava", "Buddhism",
     "comparative philosophy", "meditation practice", "commentary",
   ],
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "Pratibha",

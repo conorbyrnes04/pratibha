@@ -89,7 +89,7 @@ _ROOM_ACCENTS: dict[str, tuple[str, ...]] = {
 # Collection / work_id → room. Order matters; first match wins.
 _ROOM_PATTERNS: list[tuple[re.Pattern[str], VoiceRoom]] = [
     (re.compile(r"senegal|serer|pulaar|gaden|ful[bɓ]e|peul|lasnet|futa.?jalon|fuuta.?jaloo|reichardt|fulde", re.I), "yoruba"),
-    (re.compile(r"yoruba|johnson", re.I), "yoruba"),
+    (re.compile(r"yoruba|johnson|wyndham|myths.?of.?ife|aramfe|oduduwa|animismo|candombl|rodrigues|gantois|africanos|mal[eê]|aluf[aá]", re.I), "yoruba"),
     (re.compile(r"eastman|zitkala|soul of the indian|old indian legends|dakota", re.I), "dakota"),
     (re.compile(r"ecclesiastes|qoheleth|psalm|tehillim|zohar|yetzirah|kabbalah", re.I), "hebrew"),
     (re.compile(r"rumi|rūmī|ibn.?arabi|balyani|mathnaw|attar|mantiq|conference.?of.?the.?birds|hujwir|kashf", re.I), "sufi"),
@@ -521,9 +521,19 @@ async def resolve_verse_voice(verse: dict[str, Any], client: httpx.AsyncClient) 
 
 
 def _clip(text: str) -> str:
-    if len(text) <= _MAX_CHARS:
-        return text
-    return text[:_MAX_CHARS].rsplit(" ", 1)[0].rstrip() + "."
+    spoken = _for_speech(text)
+    if len(spoken) <= _MAX_CHARS:
+        return spoken
+    return spoken[:_MAX_CHARS].rsplit(" ", 1)[0].rstrip() + "."
+
+
+# IAST ⟨c⟩ is an affricate (English "ch"). Unmarked TTS reads ⟨c⟩ as /k/,
+# so "cakra" lands as "kakra". Rewrite the stem only — never English "can".
+_IAST_CAKR = re.compile(r"(?i)cakr")
+
+
+def _for_speech(text: str) -> str:
+    return _IAST_CAKR.sub(lambda m: "Chakr" if m.group(0)[0].isupper() else "chakr", text)
 
 
 def _speech_key(voice_id: str, text: str) -> str:

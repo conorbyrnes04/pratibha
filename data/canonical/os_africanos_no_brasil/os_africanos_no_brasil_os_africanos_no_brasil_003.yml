@@ -1,0 +1,129 @@
+source_id: AFRIC_003
+category: root_text
+work_id: os_africanos_no_brasil
+work_title: Os Africanos no Brasil
+unit_id: os_africanos_no_brasil.os_africanos_no_brasil_003
+unit_label: They Rebuilt Belief in Hidden Speech
+title: They Rebuilt Belief in Hidden Speech
+unit_type: teaching_passage
+commentary: 'The religious-historical claim is reconstruction under captivity: people torn from home retied
+  their bonds and rebuilt practice, custom, and belief in a language the masters did not know. The Atlantic
+  did not only take. Trade with the Costa d’África kept instructing the city in wars and rites still happening
+  on the other shore. Candomblé and Malê Islam are not folk leftovers invented from scraps; they are rebuilt
+  houses with a live supply line. Rodrigues, physician of a slave society, reports the fact while leaving
+  white brutality as scenery and the rebuilders as ethnographic stock. That is the poison: he can see
+  the reconstruction and still rank the reconstructors. Do not romanticize the trade as free cultural
+  exchange. Do not treat the rebuilt rite as a degeneration of an African original the scientist owns.
+  The ethnographic remainder is the method: language the owner cannot police, ships that still talk, practices
+  rebuilt as they could — not as a museum would prefer. Ìfẹ̀ locates truth in priests’ mouths at the shrine;
+  Bahia locates survival in mouths the plantation could not translate. Existentially, you notice a language
+  you do not speak carrying a rite, and you stop calling that silence emptiness. What you cannot overhear
+  is not therefore dead.'
+themes:
+- candomble
+- nago
+- jeje
+- male
+- bahia
+tags:
+- os_africanos_no_brasil
+- candomble
+- nago
+- jeje
+- male
+- bahia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os
+  Africanos no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932),
+  public domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+  Homero Pires’s preface or later editors.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Por sob a ignorância e brutalidades dos senhores brancos reataram-se os laços dos imigrados, sob
+    o duro regime do cativeiro reconstruíram, como puderam, as práticas, os usos e as crenças da pátria
+    longínqua. O comércio continuado com a Costa d’África ia-os instruindo dos sucessos guerreiros e religiosos
+    que por lá se desenrolavam.
+- kind: iast
+  label: Romanization
+  body: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key terms: cativeiro
+    (captivity / slavery); Costa d’África; práticas, usos, crenças.'
+- kind: translation
+  label: Pratibha Translation
+  body: Under the ignorance and brutalities of the white masters the bonds of the immigrants were retied;
+    under the hard regime of captivity they rebuilt, as they could, the practices, the customs, and the
+    beliefs of the distant homeland. Continued trade with the African coast kept instructing them in the
+    warrior and religious events unfolding over there.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The religious-historical claim is reconstruction under captivity: people torn from home retied
+    their bonds and rebuilt practice, custom, and belief in a language the masters did not know. The Atlantic
+    did not only take. Trade with the Costa d’África kept instructing the city in wars and rites still
+    happening on the other shore. Candomblé and Malê Islam are not folk leftovers invented from scraps;
+    they are rebuilt houses with a live supply line. Rodrigues, physician of a slave society, reports
+    the fact while leaving white brutality as scenery and the rebuilders as ethnographic stock. That is
+    the poison: he can see the reconstruction and still rank the reconstructors. Do not romanticize the
+    trade as free cultural exchange. Do not treat the rebuilt rite as a degeneration of an African original
+    the scientist owns. The ethnographic remainder is the method: language the owner cannot police, ships
+    that still talk, practices rebuilt as they could — not as a museum would prefer. Ìfẹ̀ locates truth
+    in priests’ mouths at the shrine; Bahia locates survival in mouths the plantation could not translate.
+    Existentially, you notice a language you do not speak carrying a rite, and you stop calling that silence
+    emptiness. What you cannot overhear is not therefore dead.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: cativeiro
+    definition: captivity / the slave regime -> the condition under which practices were rebuilt, not
+      the origin of the practices -> "slavery invented Candomblé" misses the homeland already being reconstructed
+  - term: Costa d’África
+    definition: the African coast as a live trading and news shore -> instruction continued after capture
+      -> treating Brazil as cut off from Africa adopts the master’s ignorance as history
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Myths of Ìfẹ̀ — Where Truth Has Its Home
+    resonance: 'Both place surety in a kept speech the outsider does not own: shrine mouths there, rebuilt
+      homeland speech here.'
+    divergence: Ìfẹ̀’s recitation is priestly and seated; Bahia’s reconstruction happens under the whip
+      and by coastal trade.
+  - citation: Lasnet, Senegalese Animism — One Does Not Leave Ancestral Land Voluntarily
+    resonance: Both treat departure from homeland as a wound that does not cancel the cult of origin.
+    divergence: Serer refusal is not to leave; this unit is what people did after they were taken.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, notice one language you do not speak that is carrying a rite, a song, or a prayer near
+    you. Do not translate it. Write only that it is being kept without you.
+provenance:
+  collection: Os Africanos no Brasil
+  category: candomble-bahia
+  verse: '3'
+  section: Rodrigues, Os Africanos, cap. II
+  cultural_context: Historical conditions through which Nagô, Jeje, Bantu, and Malê (Islam) practices
+    took root in Brazil. Sibling to *O Animismo Fetichista* (liturgy). Rodrigues was a physician and racial
+    theorist; the book is carregada de preconceito. Restore nations, language, Malê prayer, Gêge-Nagô
+    cult, and police survival — not his hierarchy, not "fetish" as doctrine, not criminal anthropology.
+    Study reading pending review by Candomblé and Malê tradition-bearers.
+  original_source: Rodrigues, Os Africanos, cap. II
+  original_reliability: SOURCED — Rodrigues Portuguese (posthumous 1932); Edelstein 2010 diplomatic of
+    that text. Not Homero Pires preface. Not Cap. VIII/IX as doctrine.
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os Africanos
+    no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932), public
+    domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+    Homero Pires’s preface or later editors.'
+translation: Under the ignorance and brutalities of the white masters the bonds of the immigrants were
+  retied; under the hard regime of captivity they rebuilt, as they could, the practices, the customs,
+  and the beliefs of the distant homeland. Continued trade with the African coast kept instructing them
+  in the warrior and religious events unfolding over there.
+abhyasa: Today, notice one language you do not speak that is carrying a rite, a song, or a prayer near
+  you. Do not translate it. Write only that it is being kept without you.
+practice: Today, notice one language you do not speak that is carrying a rite, a song, or a prayer near
+  you. Do not translate it. Write only that it is being kept without you.
+original: Por sob a ignorância e brutalidades dos senhores brancos reataram-se os laços dos imigrados,
+  sob o duro regime do cativeiro reconstruíram, como puderam, as práticas, os usos e as crenças da pátria
+  longínqua. O comércio continuado com a Costa d’África ia-os instruindo dos sucessos guerreiros e religiosos
+  que por lá se desenrolavam.
+transliteration: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key
+  terms: cativeiro (captivity / slavery); Costa d’África; práticas, usos, crenças.'
+tts_key: true

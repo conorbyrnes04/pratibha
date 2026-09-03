@@ -67,6 +67,26 @@ COLLECTION_ALIASES: dict[str, set[str]] = {
         "vajracchedika_prajnaparamita",
         "diamond_sutra",
     },
+    "os_africanos_no_brasil": {
+        "os_africanos_no_brasil",
+        "os_africanos",
+        "africanos_no_brasil",
+        "nina_rodrigues_africanos",
+        "rodrigues_africanos",
+    },
+    "animismo_fetichista": {
+        "animismo_fetichista",
+        "o_animismo_fetichista",
+        "rodrigues_animismo",
+        "animisme_fetichiste",
+    },
+    "myths_of_ife": {
+        "myths_of_ife",
+        "myths_of_ìfẹ̀",
+        "myths_of_ife_wyndham",
+        "wyndham",
+        "ife_myths",
+    },
     "johnson_yoruba_religion": {"johnson_yoruba_religion", "the_yoruba_faith_samuel_johnson"},
     "a_course_in_miracles": {"a_course_in_miracles", "a_course_in_miracles_original_edition", "acim"},
     "kabbalah_zohar_yetzirah": {

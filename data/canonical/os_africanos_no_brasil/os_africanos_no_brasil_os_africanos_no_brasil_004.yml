@@ -1,0 +1,129 @@
+source_id: AFRIC_004
+category: root_text
+work_id: os_africanos_no_brasil
+work_title: Os Africanos no Brasil
+unit_id: os_africanos_no_brasil.os_africanos_no_brasil_004
+unit_label: Islam Organized in Captivity
+title: Islam Organized in Captivity
+unit_type: teaching_passage
+commentary: 'The claim is institutional, not folkloric: Islam organized in captivity. Teachers preached
+  conversion, taught Arabic literacy, and imported Qur’ans from Africa. Malê life in Bahia is a school
+  and a mosque, not a rumor of "Mohammedan Negroes." Rodrigues writes seita poderosa — a powerful sect
+  — the physician’s word for a religion he will later feed into police panic and, in chapters we refuse
+  as doctrine, into criminal anthropology. That is the poison. A sect is what you call a church you intend
+  to rank. Do not teach 1835 as proof that Islam in Bahia was only revolt. Do not treat Arabic books as
+  contraband metaphysics. The ethnographic remainder is the import and the lesson: the book came from
+  there; the reading was taught here; the conversion was preached among people the city had classified
+  as cargo. Johnson’s reserved name for God is Yoruba theology; Malê Bahia’s reserved book is Arabic.
+  Both are organized address to a highest that is not a terreiro orisa. Lasnet’s Serer highest is named
+  as the sky and not bargained with as an object; the Qur’an is a different discipline of the same refusal
+  to make God a figurine. Existentially, you stop treating a captive religion as leftover magic. If a
+  people can import a book and teach its letters under slavery, the religion is not a fragment. It is
+  a house.'
+themes:
+- candomble
+- nago
+- jeje
+- male
+- bahia
+tags:
+- os_africanos_no_brasil
+- candomble
+- nago
+- jeje
+- male
+- bahia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os
+  Africanos no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932),
+  public domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+  Homero Pires’s preface or later editors.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: O Islamismo organizou-se em seita poderosa; vieram os mestres que pregavam a conversão e ensinavam
+    a ler no árabe os livros do Alcorão, que também de lá vinham importados.
+- kind: iast
+  label: Romanization
+  body: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key terms: Islamismo
+    / Malê; Alcorão; árabe; mestres (alufá / teachers).'
+- kind: translation
+  label: Pratibha Translation
+  body: Islam organized itself as a powerful community; teachers came who preached conversion and taught
+    reading, in Arabic, the books of the Qur’an, which were also imported from there.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is institutional, not folkloric: Islam organized in captivity. Teachers preached conversion,
+    taught Arabic literacy, and imported Qur’ans from Africa. Malê life in Bahia is a school and a mosque,
+    not a rumor of "Mohammedan Negroes." Rodrigues writes seita poderosa — a powerful sect — the physician’s
+    word for a religion he will later feed into police panic and, in chapters we refuse as doctrine, into
+    criminal anthropology. That is the poison. A sect is what you call a church you intend to rank. Do
+    not teach 1835 as proof that Islam in Bahia was only revolt. Do not treat Arabic books as contraband
+    metaphysics. The ethnographic remainder is the import and the lesson: the book came from there; the
+    reading was taught here; the conversion was preached among people the city had classified as cargo.
+    Johnson’s reserved name for God is Yoruba theology; Malê Bahia’s reserved book is Arabic. Both are
+    organized address to a highest that is not a terreiro orisa. Lasnet’s Serer highest is named as the
+    sky and not bargained with as an object; the Qur’an is a different discipline of the same refusal
+    to make God a figurine. Existentially, you stop treating a captive religion as leftover magic. If
+    a people can import a book and teach its letters under slavery, the religion is not a fragment. It
+    is a house.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: Malê
+    definition: Bahian name for African Muslims (often Nagô, Hausa, Tapa) -> Islam with Arabic literacy
+      in captivity -> default "slave revolt" or "sect" hides the school and the imported Qur’an
+  - term: Alcorão
+    definition: the Qur’an, imported and taught in Arabic -> the book of the house, not a fetish paper
+      -> police files that call prayers "papers" adopt the raid as the description
+  - term: seita
+    definition: Rodrigues’s "sect" for organized Islam -> racial-theory and police vocabulary -> the remainder
+      is a community with teachers, conversion, and a book
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Samuel Johnson, The Yoruba Faith — The Name Reserved for God Alone
+    resonance: 'Both protect a highest address that is not handled as a local figurine: reserved name
+      there, imported Book here.'
+    divergence: Johnson legislates Yoruba naming; Malê Bahia organizes Arabic reading under captivity.
+  - citation: Lasnet, Senegalese Animism — The Invisible Master Is Named as the Sky
+    resonance: Both keep the highest from being reduced to an object you can seize in a raid.
+    divergence: Serer Rog shares the sky’s name without a mosque; Malê Bahia imports a Qur’an and teaches
+      its letters.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, name one book you assumed could not have been taught under captivity or poverty. Write
+    who would have had to carry it, and who would have had to teach the letters. Do not call that house
+    a sect.
+provenance:
+  collection: Os Africanos no Brasil
+  category: candomble-bahia
+  verse: '4'
+  section: Rodrigues, Os Africanos, cap. II
+  cultural_context: Historical conditions through which Nagô, Jeje, Bantu, and Malê (Islam) practices
+    took root in Brazil. Sibling to *O Animismo Fetichista* (liturgy). Rodrigues was a physician and racial
+    theorist; the book is carregada de preconceito. Restore nations, language, Malê prayer, Gêge-Nagô
+    cult, and police survival — not his hierarchy, not "fetish" as doctrine, not criminal anthropology.
+    Study reading pending review by Candomblé and Malê tradition-bearers.
+  original_source: Rodrigues, Os Africanos, cap. II
+  original_reliability: SOURCED — Rodrigues Portuguese (posthumous 1932); Edelstein 2010 diplomatic of
+    that text. Not Homero Pires preface. Not Cap. VIII/IX as doctrine.
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os Africanos
+    no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932), public
+    domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+    Homero Pires’s preface or later editors.'
+translation: Islam organized itself as a powerful community; teachers came who preached conversion and
+  taught reading, in Arabic, the books of the Qur’an, which were also imported from there.
+abhyasa: Today, name one book you assumed could not have been taught under captivity or poverty. Write
+  who would have had to carry it, and who would have had to teach the letters. Do not call that house
+  a sect.
+practice: Today, name one book you assumed could not have been taught under captivity or poverty. Write
+  who would have had to carry it, and who would have had to teach the letters. Do not call that house
+  a sect.
+original: O Islamismo organizou-se em seita poderosa; vieram os mestres que pregavam a conversão e ensinavam
+  a ler no árabe os livros do Alcorão, que também de lá vinham importados.
+transliteration: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key
+  terms: Islamismo / Malê; Alcorão; árabe; mestres (alufá / teachers).'
+tts_key: true

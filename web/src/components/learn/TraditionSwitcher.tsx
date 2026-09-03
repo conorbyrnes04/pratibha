@@ -17,6 +17,7 @@ export function TraditionSwitcher({ pathId, onSelectPath }: TraditionSwitcherPro
   const current = trails.find((trail) => trail.id === pathId) ?? null;
   const [open, setOpen] = useState(false);
   const [previewId, setPreviewId] = useState<string | null>(null);
+  const [compact, setCompact] = useState(false);
   const rootRef = useRef<HTMLDivElement | null>(null);
   const nameRef = useRef<HTMLSpanElement | null>(null);
   const menuId = useId();
@@ -73,6 +74,15 @@ export function TraditionSwitcher({ pathId, onSelectPath }: TraditionSwitcherPro
     };
   }, [open]);
 
+  useEffect(() => {
+    function onScroll() {
+      setCompact(window.scrollY > 72);
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   function pick(trail: TraditionTrail) {
     setOpen(false);
     onSelectPath(trail.id);
@@ -80,9 +90,14 @@ export function TraditionSwitcher({ pathId, onSelectPath }: TraditionSwitcherPro
 
   const essential = trails.filter((trail) => trail.essential);
   const traditions = trails.filter((trail) => !trail.essential);
+  const distinctShort =
+    current &&
+    current.shortTitle.trim().toLowerCase() !== current.title.trim().toLowerCase()
+      ? current.shortTitle
+      : null;
 
   return (
-    <div className="learn-tradition-bar" ref={rootRef}>
+    <div className={`learn-tradition-bar${compact ? " is-compact" : ""}`} ref={rootRef}>
       <div className="learn-tradition-bar__inner">
         <div
           className="learn-tradition-bar__mala"
@@ -138,8 +153,8 @@ export function TraditionSwitcher({ pathId, onSelectPath }: TraditionSwitcherPro
             <span className="learn-tradition-bar__name" ref={nameRef}>
               {name}
             </span>
-            {current ? (
-              <span className="learn-tradition-bar__short">{current.shortTitle}</span>
+            {distinctShort ? (
+              <span className="learn-tradition-bar__short">{distinctShort}</span>
             ) : null}
           </span>
           <span className="learn-tradition-bar__chevron" aria-hidden />

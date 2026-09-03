@@ -1,0 +1,118 @@
+source_id: AFRIC_007
+category: root_text
+work_id: os_africanos_no_brasil
+work_title: Os Africanos no Brasil
+unit_id: os_africanos_no_brasil.os_africanos_no_brasil_007
+unit_label: The Limamo Reads the Qur’an
+title: The Limamo Reads the Qur’an
+unit_type: teaching_passage
+commentary: 'The claim is a bilingual household of Islam: the imam is Nagô Luis; the mosque is his house
+  on Rua Alegria; the Arabic Qur’an is his; the Portuguese version is his wife’s. Two literacies, one
+  book, one address. This is not a deficit. It is how a religion lives when the city’s language is not
+  the liturgical language. Rodrigues scores the gap as incapacity — he cannot write Portuguese; she does
+  not know Arabic — the racial theorist’s habit of reading a divided competence as a lower type. Poison.
+  Illiteracy in the master’s tongue is not ignorance of God. The ethnographic remainder is the pair of
+  books on the table and the house that is the igreja. Johnson’s Yoruba faith keeps a reserved name; this
+  house keeps a reserved script. Animismo’s terreiro is a jurisdiction with a peji; this mosque is a residence
+  with a number. Existentially, you notice two languages in one house serving one book, and you stop treating
+  the language you cannot read as the empty one. The highest thing in the room may be the page you are
+  not trained to open.'
+themes:
+- candomble
+- nago
+- jeje
+- male
+- bahia
+tags:
+- os_africanos_no_brasil
+- candomble
+- nago
+- jeje
+- male
+- bahia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os
+  Africanos no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932),
+  public domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+  Homero Pires’s preface or later editors.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: O atual Limamo é o nagô Luis, e a sede da igreja maometana, a sua residência no Barris, à rua
+    Alegria n.º 3. Como ela não conhece o árabe e o Limamo não sabe ler nem escrever o português, existem
+    na casa um Alcorão em árabe para o Limamo e uma versão portuguesa para sua mulher.
+- kind: iast
+  label: Romanization
+  body: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key terms: Limamo
+    (imam); Barris / rua Alegria n.º 3; Alcorão em árabe; versão portuguesa.'
+- kind: translation
+  label: Pratibha Translation
+  body: The present Limamo is the Nagô Luis, and the seat of the Muslim church is his residence in the
+    Barris, at Rua Alegria no. 3. Because she does not know Arabic and the Limamo cannot read or write
+    Portuguese, the house holds a Qur’an in Arabic for the Limamo and a Portuguese version for his wife.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is a bilingual household of Islam: the imam is Nagô Luis; the mosque is his house on
+    Rua Alegria; the Arabic Qur’an is his; the Portuguese version is his wife’s. Two literacies, one book,
+    one address. This is not a deficit. It is how a religion lives when the city’s language is not the
+    liturgical language. Rodrigues scores the gap as incapacity — he cannot write Portuguese; she does
+    not know Arabic — the racial theorist’s habit of reading a divided competence as a lower type. Poison.
+    Illiteracy in the master’s tongue is not ignorance of God. The ethnographic remainder is the pair
+    of books on the table and the house that is the igreja. Johnson’s Yoruba faith keeps a reserved name;
+    this house keeps a reserved script. Animismo’s terreiro is a jurisdiction with a peji; this mosque
+    is a residence with a number. Existentially, you notice two languages in one house serving one book,
+    and you stop treating the language you cannot read as the empty one. The highest thing in the room
+    may be the page you are not trained to open.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: Limamo
+    definition: imam, here the Nagô Luis -> liturgical head of a house-mosque -> "sect chief" is the inquiry’s
+      word
+  - term: versão portuguesa
+    definition: Portuguese Qur’an for the wife -> a second literacy inside the same Islam -> treating
+      only Arabic as "real" or only Portuguese as "civilized" repeats Rodrigues’s scoring
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nina Rodrigues, O Animismo Fetichista — Terreiro Means Place and Jurisdiction
+    resonance: Both locate a religion in a house with an address, not in an abstract Africa.
+    divergence: The terreiro’s jurisdiction is orisha; Rua Alegria 3 is a mosque whose liturgy is Arabic.
+  - citation: Samuel Johnson, The Yoruba Faith — The Name Reserved for God Alone
+    resonance: Both keep a highest speech that is not the street’s ordinary tongue.
+    divergence: Johnson reserves a spoken name; the Limamo reserves a script his wife approaches in Portuguese.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, sit with one book or prayer whose script you cannot read. Do not fetch a translation first.
+    Write whose literacy the house is built around, and whose literacy it also made room for.
+provenance:
+  collection: Os Africanos no Brasil
+  category: candomble-bahia
+  verse: '7'
+  section: Rodrigues, Os Africanos, cap. II
+  cultural_context: Historical conditions through which Nagô, Jeje, Bantu, and Malê (Islam) practices
+    took root in Brazil. Sibling to *O Animismo Fetichista* (liturgy). Rodrigues was a physician and racial
+    theorist; the book is carregada de preconceito. Restore nations, language, Malê prayer, Gêge-Nagô
+    cult, and police survival — not his hierarchy, not "fetish" as doctrine, not criminal anthropology.
+    Study reading pending review by Candomblé and Malê tradition-bearers.
+  original_source: Rodrigues, Os Africanos, cap. II
+  original_reliability: SOURCED — Rodrigues Portuguese (posthumous 1932); Edelstein 2010 diplomatic of
+    that text. Not Homero Pires preface. Not Cap. VIII/IX as doctrine.
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os Africanos
+    no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932), public
+    domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+    Homero Pires’s preface or later editors.'
+translation: The present Limamo is the Nagô Luis, and the seat of the Muslim church is his residence in
+  the Barris, at Rua Alegria no. 3. Because she does not know Arabic and the Limamo cannot read or write
+  Portuguese, the house holds a Qur’an in Arabic for the Limamo and a Portuguese version for his wife.
+abhyasa: Today, sit with one book or prayer whose script you cannot read. Do not fetch a translation first.
+  Write whose literacy the house is built around, and whose literacy it also made room for.
+practice: Today, sit with one book or prayer whose script you cannot read. Do not fetch a translation
+  first. Write whose literacy the house is built around, and whose literacy it also made room for.
+original: O atual Limamo é o nagô Luis, e a sede da igreja maometana, a sua residência no Barris, à rua
+  Alegria n.º 3. Como ela não conhece o árabe e o Limamo não sabe ler nem escrever o português, existem
+  na casa um Alcorão em árabe para o Limamo e uma versão portuguesa para sua mulher.
+transliteration: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key
+  terms: Limamo (imam); Barris / rua Alegria n.º 3; Alcorão em árabe; versão portuguesa.'

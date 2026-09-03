@@ -1,0 +1,26 @@
+---
+description: >-
+  30 Sep 2026 go-live for Myths of Ife, Animismo Fetichista, and Os Africanos
+  no Brasil — bake Listen when ElevenLabs credits refill, then deploy and verify.
+alwaysApply: true
+---
+
+# Sept 30 2026 — three-collection go-live
+
+Queued until **30 September 2026** (ElevenLabs / credit refill). Full steps:
+`docs/go-live-sept-30.md`.
+
+If today is **before** that date and the user did not ask to bake, deploy, or
+go live: do not spend ElevenLabs or Replicate quota on these works. Covers
+already exist.
+
+If today is **on or after** 30 Sep 2026, or the user says credits refilled /
+bake Listen / ship / go live:
+
+1. Follow `docs/go-live-sept-30.md` in order (pin hero ids → bake three works →
+   commit/deploy → pgvector → verify pratibha.agniagama.com).
+2. Bake only `--slice work` for `myths_of_ife`, `animismo_fetichista`,
+   `os_africanos_no_brasil`. Never `--slice heroes`.
+3. When the checklist is done, delete this rule and retire or mark the doc.
+
+Do not compile a LearningTrack unless Conor asks.

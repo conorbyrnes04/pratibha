@@ -8,10 +8,20 @@ import { collectionImageSrc, generatedArtPool } from "@/lib/collectionImages";
 import { displayCollectionName } from "@/lib/collectionLabels";
 import { TRADITION_ORDER } from "@/lib/libraryTomes";
 import { ArtBackdrop, ArtThumb } from "@/components/ArtImage";
+import { FilterSelect } from "@/components/FilterSelect";
 import { Glyph } from "@/components/Glyph";
 import { Disclosure } from "@/components/ui/Disclosure";
 import type { SourceAttribution } from "@/lib/types";
 import { useT } from "@/components/LocaleProvider";
+
+type SourceDensity = "open" | "columns" | "tight";
+const DENSITY_KEY = "pratibha.sources.density";
+
+function readDensity(): SourceDensity {
+  if (typeof window === "undefined") return "columns";
+  const raw = window.localStorage.getItem(DENSITY_KEY);
+  return raw === "open" || raw === "tight" || raw === "columns" ? raw : "columns";
+}
 
 const LICENSE_TONE: Record<string, string> = {
   public_domain: "text-emerald-300/90",
@@ -35,8 +45,8 @@ function SourceCard({ item }: { item: SourceAttribution }) {
   const glyph = collectionGlyph(item.collection);
 
   return (
-    <article className={`manuscript-card overflow-hidden rounded-[22px] ${!inCorpus ? "opacity-75" : ""}`}>
-      <div className="relative h-24 w-full sm:h-28">
+    <article className={`source-card manuscript-card overflow-hidden rounded-[18px] ${!inCorpus ? "opacity-75" : ""}`}>
+      <div className="source-card__banner">
         <ArtThumb
           src={collectionImageSrc(item.collection)}
           className="absolute inset-0 h-full w-full"
@@ -44,47 +54,41 @@ function SourceCard({ item }: { item: SourceAttribution }) {
         />
         <div className="art-overlay art-overlay--banner absolute inset-0" />
       </div>
-      <div className="relative -mt-8 p-5 pt-0 sm:p-6 sm:pt-0">
-        <div className="flex flex-wrap items-start justify-between gap-3">
-          <div className="flex items-start gap-3">
+      <div className="source-card__body">
+        <div className="flex items-start gap-2.5">
+          <span
+            className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-amber-200/25 bg-[#0b0b14]/85 backdrop-blur-sm"
+            aria-hidden
+          >
+            <Glyph name={glyph} size="sm" />
+          </span>
+          <h3 className="source-card__title">{displayCollectionName(item.collection)}</h3>
+        </div>
+        <div className="source-card__badges font-sans text-[10px] uppercase tracking-[0.12em]">
+          <span className={`rounded-full border border-amber-200/15 px-2 py-0.5 ${licenseClass}`}>
+            {item.license_label}
+          </span>
+          {item.provenance_tier_label ? (
             <span
-              className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-amber-200/25 bg-[#0b0b14]/85 backdrop-blur-sm"
-              aria-hidden
+              className={`rounded-full border border-amber-200/15 px-2 py-0.5 ${TIER_TONE[item.provenance_tier] || "text-stone-300"}`}
             >
-              <Glyph name={glyph} size="sm" />
+              {item.provenance_tier_label}
             </span>
-            <div>
-              <h3 className="text-2xl font-semibold tracking-[-0.03em] text-stone-100">
-                {displayCollectionName(item.collection)}
-              </h3>
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-2 font-sans text-xs uppercase tracking-[0.14em]">
-            <span className={`rounded-full border border-amber-200/15 px-2.5 py-1 ${licenseClass}`}>
-              {item.license_label}
+          ) : null}
+          {item.status === "in_progress" || !inCorpus ? (
+            <span className="rounded-full border border-amber-200/15 px-2 py-0.5 text-stone-400">Coming soon</span>
+          ) : item.coverage ? (
+            <span className="rounded-full border border-amber-200/15 px-2 py-0.5 text-stone-300">{item.coverage}</span>
+          ) : (
+            <span className="rounded-full border border-amber-200/15 px-2 py-0.5 text-stone-300">
+              {item.passages_in_corpus} passages
             </span>
-            {item.provenance_tier_label ? (
-              <span
-                className={`rounded-full border border-amber-200/15 px-2.5 py-1 ${TIER_TONE[item.provenance_tier] || "text-stone-300"}`}
-              >
-                {item.provenance_tier_label}
-              </span>
-            ) : null}
-            {item.status === "in_progress" || !inCorpus ? (
-              <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-400">Coming soon</span>
-            ) : item.coverage ? (
-              <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-300">{item.coverage}</span>
-            ) : (
-              <span className="rounded-full border border-amber-200/15 px-2.5 py-1 text-stone-300">
-                {item.passages_in_corpus} passages
-              </span>
-            )}
-          </div>
+          )}
         </div>
 
-        <p className="mt-4 font-sans text-sm leading-relaxed text-stone-300">{item.original_work}</p>
+        <p className="source-card__work font-sans text-sm leading-relaxed text-stone-300">{item.original_work}</p>
 
-        <div className="mt-4">
+        <div>
           <Disclosure summary="Edition & editorial details" hint={item.license_label}>
             <dl className="space-y-3 font-sans text-sm leading-relaxed text-stone-300">
               {item.anchor_translation ? (
@@ -115,7 +119,7 @@ function SourceCard({ item }: { item: SourceAttribution }) {
         </div>
 
         {links.length || inCorpus ? (
-          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 font-sans text-sm">
+          <div className="mt-auto flex flex-wrap items-center gap-x-3 gap-y-1.5 font-sans text-xs">
             {links.map((link) => (
               <a
                 key={link.label}
@@ -171,6 +175,21 @@ export default function SourcesPage() {
     total_passages: 0,
   });
   const [error, setError] = useState("");
+  const [density, setDensity] = useState<SourceDensity>("columns");
+
+  useEffect(() => {
+    setDensity(readDensity());
+  }, []);
+
+  function chooseDensity(next: string) {
+    const value: SourceDensity = next === "open" || next === "tight" ? next : "columns";
+    setDensity(value);
+    try {
+      window.localStorage.setItem(DENSITY_KEY, value);
+    } catch {
+      /* ignore quota / private mode */
+    }
+  }
 
   useEffect(() => {
     getSources()
@@ -192,8 +211,8 @@ export default function SourcesPage() {
   const shelves = useMemo(() => groupSourcesByTradition(items), [items]);
 
   return (
-    <main className="page-shell page-shell--reading">
-      <div className="section-stack">
+    <main className="page-shell page-shell--library">
+      <div className="section-stack section-stack--tight">
         <header className="library-header">
           <div className="library-header__atmosphere" aria-hidden>
             <ArtBackdrop srcs={generatedArtPool("bg-sources")} variant="subtle" opacity={0.11} />
@@ -263,6 +282,24 @@ export default function SourcesPage() {
           </p>
         ) : null}
 
+        {shelves.length > 0 ? (
+          <div className="flex justify-end">
+            <div className="w-full max-w-[16rem]">
+              <FilterSelect
+                label={t("sources.layout")}
+                tone="gold"
+                value={density}
+                onChange={chooseDensity}
+                options={[
+                  { value: "open", label: t("sources.layoutOpen"), hint: t("sources.layoutOpenHint") },
+                  { value: "columns", label: t("sources.layoutColumns"), hint: t("sources.layoutColumnsHint") },
+                  { value: "tight", label: t("sources.layoutTight"), hint: t("sources.layoutTightHint") },
+                ]}
+              />
+            </div>
+          </div>
+        ) : null}
+
         {shelves.map((shelf) => (
           <section key={shelf.tradition}>
             <div className="mb-4 flex items-baseline justify-between gap-3">
@@ -271,7 +308,7 @@ export default function SourcesPage() {
                 {shelf.items.length} {shelf.items.length === 1 ? "text" : "texts"}
               </p>
             </div>
-            <div className="space-y-5">
+            <div className={`source-shelf source-shelf--${density}`}>
               {shelf.items.map((item) => (
                 <SourceCard key={item.id} item={item} />
               ))}

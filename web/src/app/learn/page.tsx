@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Path",
   description:
     "Walk a tradition as a trail of gates: teaching, passage, and practice, one step at a time.",
+  alternates: { canonical: "/learn" },
 };
 
 export default function LearnPage() {

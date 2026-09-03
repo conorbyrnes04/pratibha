@@ -6,7 +6,19 @@ import { useAuth } from "@/components/AuthProvider";
 import { useT } from "@/components/LocaleProvider";
 
 /** Routes reachable without an account when auth is configured. */
-const PUBLIC_PREFIXES = ["/", "/login", "/learn", "/read", "/circle", "/m", "/s"];
+const PUBLIC_PREFIXES = [
+  "/",
+  "/login",
+  "/learn",
+  "/read",
+  "/circle",
+  "/random",
+  "/sources",
+  "/glossary",
+  "/privacy",
+  "/m",
+  "/s",
+];
 
 function isPublicPath(pathname: string): boolean {
   if (pathname === "/") return true;

@@ -235,7 +235,9 @@ export default function JournalPage() {
                   </Button>
                 </div>
               </div>
-              {note.prompt ? <p className="soft mt-4 text-sm">{note.prompt}</p> : null}
+              {note.prompt && note.prompt !== note.question ? (
+                <p className="soft mt-4 text-sm">{note.prompt}</p>
+              ) : null}
               {(() => {
                 const isLong = note.body.length > 360;
                 const open = expanded.has(note.id) || !isLong;

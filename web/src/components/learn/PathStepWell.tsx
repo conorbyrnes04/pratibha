@@ -17,6 +17,7 @@ import { displayPassageLocation, displayPassageTitle } from "@/lib/passageTitles
 import type { VerseItem } from "@/lib/types";
 import { passagePreview } from "@/lib/verseLayers";
 import { useT } from "@/components/LocaleProvider";
+import { stashChatPrompt } from "@/lib/chatHandoff";
 import { useLocalizedVerse } from "@/components/useLocalizedStudy";
 
 function actionLabel(t: (key: string) => string, chatMode?: string): string {
@@ -45,7 +46,9 @@ function PassageCard({
         {displayPassageLocation(item) ? ` · ${displayPassageLocation(item)}` : ""}
       </p>
       <h5 className="library-passage__title">{displayPassageTitle(item)}</h5>
-      {primary ? <p className="library-passage__preview line-clamp-2">{passagePreview(item)}</p> : null}
+      {passagePreview(item) ? (
+        <p className="library-passage__preview line-clamp-2">{passagePreview(item)}</p>
+      ) : null}
     </>
   );
   const listen = <ListenButton verseId={item._id} variant="header" />;
@@ -131,8 +134,14 @@ export function PathStepWell({
     : `/read`;
   const chatParams = new URLSearchParams();
   if (item) chatParams.set("verse_id", item._id);
-  chatParams.set("mode", step.chatMode || "question");
-  chatParams.set("q", step.chatPrompt);
+  // Path gates always say "Ask this gate" — don't force Compare mode or stuff
+  // the prompt into the URL (length limits + log leakage).
+  const mode = pathId
+    ? step.chatMode === "compare"
+      ? "question"
+      : step.chatMode || "question"
+    : step.chatMode || "question";
+  chatParams.set("mode", mode);
   chatParams.set("back", backHref);
   const chatHref = `/chat?${chatParams.toString()}`;
 
@@ -222,7 +231,13 @@ export function PathStepWell({
             {item ? t("learn.openLibrary") : t("learn.browseLibrary")}
           </Link>
         )}
-        <Link href={chatHref} className={buttonVariants({ variant: "secondary", size: "sm" })}>
+        <Link
+          href={chatHref}
+          className={buttonVariants({ variant: "secondary", size: "sm" })}
+          onClick={() => {
+            if (step.chatPrompt) stashChatPrompt(item?._id, step.chatPrompt);
+          }}
+        >
           {pathId ? t("gate.askGate") : actionLabel(t, step.chatMode)}
         </Link>
         <Link href="/journal" className={buttonVariants({ variant: "secondary", size: "sm" })}>

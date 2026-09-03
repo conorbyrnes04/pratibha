@@ -165,7 +165,7 @@ function renderLayerBody(
       <div className="mt-4 space-y-3">
         {items.filter(isKeyTerm).map((term) => (
           <article key={`${term.lemma_id || ""}:${term.term}`} className="citation-card p-3">
-            <h3 className="text-lg text-amber-100">
+            <h4 className="text-lg text-amber-100">
               {term.lemma_id ? (
                 <Link
                   href={`/glossary/${encodeURIComponent(term.lemma_id)}`}
@@ -179,7 +179,7 @@ function renderLayerBody(
               ) : (
                 <InlineMarkdown>{term.term}</InlineMarkdown>
               )}
-            </h3>
+            </h4>
             <p className="soft mt-1 text-sm leading-relaxed">
               <InlineMarkdown>{term.definition}</InlineMarkdown>
             </p>

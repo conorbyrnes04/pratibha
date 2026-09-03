@@ -443,9 +443,13 @@ export async function getCollections(options: CatalogFetchOptions = {}): Promise
 }
 
 export async function getSources(): Promise<SourcesPayload | null> {
-  const res = await fetch(`${API_BASE}/sources`, { cache: "no-store" });
-  if (!res.ok) return null;
-  return (await res.json()) as SourcesPayload;
+  try {
+    const res = await fetchWithTimeout(`${API_BASE}/sources`, 12_000);
+    if (!res.ok) return null;
+    return (await res.json()) as SourcesPayload;
+  } catch {
+    return null;
+  }
 }
 
 /** Browse lexicon lemmas. Backend: `GET /lexicon?q=&tradition=&limit=`. */

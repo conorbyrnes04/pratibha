@@ -97,6 +97,9 @@ export function natureVariantSrcs(baseSlug: string): string[] {
  * Order mirrors the generator manifest; more specific patterns first.
  */
 const REDBOOK_RULES: Array<{ pattern: RegExp; slug: string }> = [
+  { pattern: /africanos.?no.?brasil|os_africanos/i, slug: "os_africanos_no_brasil" },
+  { pattern: /animismo|fetichista|gantois|animisme/i, slug: "animismo_fetichista" },
+  { pattern: /myths.?of.?[iìí]|myths_of_ife|wyndham|aramfe/i, slug: "myths_of_ife" },
   { pattern: /senegalese.?animism|serer|lasnet|pangool/i, slug: "senegalese_animism" },
   { pattern: /pulaar.?texts|gaden|le.?poular/i, slug: "pulaar_texts" },
   { pattern: /futa.?jalon|fuuta.?jaloo|reichardt/i, slug: "futa_jalon_fulde" },

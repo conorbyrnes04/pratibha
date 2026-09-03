@@ -653,6 +653,54 @@ references:
       - label: Internet Archive
         url: https://archive.org/details/le-poular-etude-morphologique-textes
 
+  - id: nina_rodrigues_animisme_1900
+    collection: animismo_fetichista
+    translator: Nina Rodrigues (French of his own Portuguese)
+    year: 1900
+    work: L'Animisme Fétichiste Des Nègres de Bahia
+    license: public_domain
+    local_path: french/nina_rodrigues_animisme_1900.txt
+    note: >
+      1900 French book of the 1896–97 Revista Brazileira articles.
+      Observer document; racial-theory poison not adopted as doctrine.
+      Not Ramos 1935, not Maggie/Fry 2006. Sibling: Os Africanos no Brasil.
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/lanimismefetichistedesnegres
+
+  - id: nina_rodrigues_africanos_1932
+    collection: os_africanos_no_brasil
+    translator: Nina Rodrigues (Portuguese)
+    year: 1932
+    work: Os Africanos no Brasil
+    license: public_domain
+    local_path: portuguese/nina_rodrigues_africanos_1932.txt
+    note: >
+      Written c. 1890–1905; first published posthumously 1932 (IA scan labeled 1935).
+      Author d. 1906; PD in Brazil (life+70). Homero Pires preface is not Original.
+      Cap. VIII/IX not used as doctrine. Edelstein 2010 is a diplomatic crib.
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/osafricanosnobrasil
+      - label: SciELO / Edelstein 2010
+        url: https://books.scielo.org/id/mmtct
+
+  - id: wyndham_myths_of_ife_1921
+    collection: myths_of_ife
+    translator: John Wyndham
+    year: 1921
+    work: Myths of Ífè
+    license: public_domain
+    local_path: yoruba/wyndham_myths_of_ife_1921.txt
+    note: >
+      Ìfẹ̀ priest recitation taken down by a colonial ADO and recast as English
+      blank verse. Yoruba not preserved. Not Fabunmi 1969.
+    links:
+      - label: Internet Archive
+        url: https://archive.org/details/mythsofife00wynd
+      - label: Smithsonian — CC0
+        url: https://library.si.edu/digital-library/book/mythsofife00wynd
+
   - id: lasnet_mission_senegal_1900
     collection: senegalese_animism
     translator: Alexandre Lasnet

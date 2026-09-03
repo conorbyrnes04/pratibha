@@ -423,7 +423,7 @@ _NON_SANSKRIT_COLLECTION = re.compile(
     r"attar|mantiq|conference.?of.?the.?birds|hujwir|kashf|"
     r"tao|te.?ching|zhuang|chuang|lao.?tzu|confucius|analect|"
     r"milarepa|jetsun|tibet|dogen|dōgen|shobogenzo|shōbōgenzō|"
-    r"yoruba|òwe|johnson|eastman|zitkala|dakota|soul of the indian|old indian legends|"
+    r"yoruba|òwe|johnson|wyndham|myths.?of.?ife|animismo|candombl|rodrigues|africanos|eastman|zitkala|dakota|soul of the indian|old indian legends|"
     r"senegal|serer|pulaar|gaden|fulbe|fulɓe|peul|lasnet|futa.?jalon|fuuta.?jaloo|reichardt|fulde|"
     r"lalla|lal.?ded|lalleshwari|vakyani|vākyāni|"
     r"ecclesiastes|qoheleth|psalm|tehillim|"

@@ -129,7 +129,13 @@ export function PassageReader({ initialItem = null }: { initialItem?: VerseItem 
 
   const related = semanticRelated && semanticRelated.length > 0 ? semanticRelated : themeRelated;
   const relatedMode = semanticRelated && semanticRelated.length > 0 ? "semantic" : "themes";
-  const relatedStudy = useLocalizedVerseCards(related.slice(0, 5), 5);
+  const relatedStudy = useLocalizedVerseCards(related.slice(0, 6), 6);
+  const relatedSame = item
+    ? relatedStudy.filter((r) => collectionsMatch(r.collection, item.collection))
+    : [];
+  const relatedAcross = item
+    ? relatedStudy.filter((r) => !collectionsMatch(r.collection, item.collection))
+    : [];
 
   const siblings = useMemo(() => {
     if (!item?.collection) return [] as VerseItem[];
@@ -311,7 +317,7 @@ export function PassageReader({ initialItem = null }: { initialItem?: VerseItem 
           </section>
         ) : null}
 
-        <SanghaBoundary>
+        <SanghaBoundary silent>
           <CircleReadings verseId={item._id} />
         </SanghaBoundary>
         <QuietBoundary>
@@ -507,25 +513,47 @@ export function PassageReader({ initialItem = null }: { initialItem?: VerseItem 
           </div>
         ) : null}
 
-        {related.length > 0 ? (
+        {relatedSame.length + relatedAcross.length > 0 ? (
           <aside className="passage-related">
-            <h2 className="passage-layer__label">{t("reader.related")}</h2>
-            <p className="soft mt-1 text-sm">
-              {relatedMode === "semantic" ? t("reader.relatedSemantic") : t("reader.relatedThemes")}
-            </p>
-            <ul className="passage-related__list">
-              {relatedStudy.map((r) => (
-                <li key={r._id} className="passage-related__item">
-                  <Link href={`/read/${encodeURIComponent(r._id)}`}>
-                    <p className="passage-related__title">{displayPassageTitle(r)}</p>
-                    <p className="passage-related__meta">
-                      {displayCollectionName(r.collection)}
-                      {displayPassageLocation(r) ? ` · ${displayPassageLocation(r)}` : ""}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {relatedSame.length > 0 ? (
+              <div>
+                <h2 className="passage-layer__label">{t("reader.relatedSame")}</h2>
+                <ul className="passage-related__list">
+                  {relatedSame.map((r) => (
+                    <li key={r._id} className="passage-related__item">
+                      <Link href={`/read/${encodeURIComponent(r._id)}`}>
+                        <p className="passage-related__title">{displayPassageTitle(r)}</p>
+                        <p className="passage-related__meta">
+                          {displayCollectionName(r.collection)}
+                          {displayPassageLocation(r) ? ` · ${displayPassageLocation(r)}` : ""}
+                        </p>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+            {relatedAcross.length > 0 ? (
+              <div className={relatedSame.length > 0 ? "mt-8" : undefined}>
+                <h2 className="passage-layer__label">{t("reader.relatedAcross")}</h2>
+                <p className="soft mt-1 text-sm">
+                  {relatedMode === "semantic" ? t("reader.relatedSemantic") : t("reader.relatedThemes")}
+                </p>
+                <ul className="passage-related__list">
+                  {relatedAcross.map((r) => (
+                    <li key={r._id} className="passage-related__item">
+                      <Link href={`/read/${encodeURIComponent(r._id)}`}>
+                        <p className="passage-related__title">{displayPassageTitle(r)}</p>
+                        <p className="passage-related__meta">
+                          {displayCollectionName(r.collection)}
+                          {displayPassageLocation(r) ? ` · ${displayPassageLocation(r)}` : ""}
+                        </p>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </aside>
         ) : null}
       </ReadingShell>
