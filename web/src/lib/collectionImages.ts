@@ -99,6 +99,7 @@ export function natureVariantSrcs(baseSlug: string): string[] {
 const REDBOOK_RULES: Array<{ pattern: RegExp; slug: string }> = [
   { pattern: /senegalese.?animism|serer|lasnet|pangool/i, slug: "senegalese_animism" },
   { pattern: /pulaar.?texts|gaden|le.?poular/i, slug: "pulaar_texts" },
+  { pattern: /futa.?jalon|fuuta.?jaloo|reichardt/i, slug: "futa_jalon_fulde" },
   { pattern: /pulaar.?tradition|ful[bɓ]e|peul/i, slug: "pulaar_tradition" },
   { pattern: /gospel.?of.?mary/i, slug: "gospel_of_mary" },
   { pattern: /attar|mantiq|conference.?of.?the.?birds/i, slug: "conference_of_the_birds" },

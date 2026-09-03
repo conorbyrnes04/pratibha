@@ -21,8 +21,9 @@ import type { EditorialMaturity, VerseItem } from "@/lib/types";
  * v14: Sufi wave — Attar Conference of the Birds, Hujwīrī Kashf al-Maḥjūb,
  * and enriched Know Yourself (Balyānī).
  * v15: /verses is preview-only (no pratibha_layers) — drop fat v14 snapshots.
- * v16: Senegalese living speech — Serer cosaan, Fulɓe pastoral remnant, Gaden 1913 Pulaar. */
-const CACHE_VERSION = 16;
+ * v16: Senegalese living speech — Serer cosaan, Fulɓe pastoral remnant, Gaden 1913 Pulaar.
+ * v17: Futa Jalon Fulde (Reichardt 1876) — highland traditions, not Futa Toro Pulaar. */
+const CACHE_VERSION = 17;
 const TTL_MS = 24 * 60 * 60 * 1000;
 
 export type CatalogMaturityKey = "strong_draft" | "all";

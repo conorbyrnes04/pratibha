@@ -53,6 +53,7 @@ const CANONICAL: Array<{ display: string; aliases: string[] }> = [
   { display: "Serer Cosaan", aliases: ["senegalese animism", "senegalese_animism", "serer cosaan", "serer"] },
   { display: "Pulaar Tradition", aliases: ["pulaar tradition", "pulaar_tradition", "fulbe", "fulɓe"] },
   { display: "Pulaar Texts", aliases: ["pulaar texts (gaden)", "pulaar_texts", "pulaar texts", "gaden", "le poular"] },
+  { display: "Futa Jalon Fulde", aliases: ["futa jalon fulde (reichardt)", "futa_jalon_fulde", "futa jalon", "fuuta jaloo", "reichardt"] },
   { display: "Yoruba Proverbs (Òwe)", aliases: ["yoruba proverbs (òwe)", "yoruba_proverbs", "yoruba proverbs"] },
   { display: "The Yoruba Faith", aliases: ["the yoruba faith (samuel johnson)", "johnson_yoruba_religion", "the yoruba faith"] },
   { display: "Psalms", aliases: ["psalms (tehillim)", "psalms_tehillim", "tehillim", "psalms", "psalter"] },

@@ -532,6 +532,18 @@ SOURCES: list[dict[str, Any]] = [
         "links": [{"label": "Internet Archive — Gaden 1913", "url": "https://archive.org/details/le-poular-etude-morphologique-textes"}],
     },
     {
+        "id": "futa_jalon_fulde",
+        "collection": "Futa Jalon Fulde (Reichardt)",
+        "tradition": "Futa Jalon",
+        "original_work": "C.A.L. Reichardt, *Grammar of the Fulde Language* (London: Church Missionary House, 1876), Part II — original Futa Jalon Fulde traditions with facing English",
+        "anchor_translation": "English is a Pratibha rendering (pd_adapted) from Reichardt's 1876 English; Fulde is Reichardt's Latin transcription, OCR-cleaned",
+        "editorial_note": "Futa Jalon (Fuuta Jaloo) highland Fulde, not Futa Toro Pulaar. Three traditions: wars of Sheikh al-Ḥājj Umar (from Alfa Muhammed Sadi); origin of the Pulo nation from Fezzan (Muhammed Sadi and Ibrahim Mandinka); war of Alfa Muhammed Juhe of Masina with Imams Omar and Ibrahim. Scripture appendix is missionary and is not ingested. Does not follow Gaden 1913 (different valley), Gaden 1931 (not yet PD), or Hampâté Bâ. A study reading pending review by Futa Jalon tradition-bearers.",
+        "license": "public_domain",
+        "provenance_tier": "pd_adapted",
+        "status": "in_corpus",
+        "links": [{"label": "Internet Archive — Reichardt 1876", "url": "https://archive.org/details/grammarfuldelan00reicgoog"}],
+    },
+    {
         "id": "a_course_in_miracles",
         "collection": "A Course in Miracles (Original Edition)",
         "tradition": "Christian",

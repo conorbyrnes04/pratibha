@@ -88,7 +88,7 @@ _ROOM_ACCENTS: dict[str, tuple[str, ...]] = {
 
 # Collection / work_id → room. Order matters; first match wins.
 _ROOM_PATTERNS: list[tuple[re.Pattern[str], VoiceRoom]] = [
-    (re.compile(r"senegal|serer|pulaar|gaden|ful[bɓ]e|peul|lasnet", re.I), "yoruba"),
+    (re.compile(r"senegal|serer|pulaar|gaden|ful[bɓ]e|peul|lasnet|futa.?jalon|fuuta.?jaloo|reichardt|fulde", re.I), "yoruba"),
     (re.compile(r"yoruba|johnson", re.I), "yoruba"),
     (re.compile(r"eastman|zitkala|soul of the indian|old indian legends|dakota", re.I), "dakota"),
     (re.compile(r"ecclesiastes|qoheleth|psalm|tehillim|zohar|yetzirah|kabbalah", re.I), "hebrew"),
