@@ -53,7 +53,7 @@ Open the project in Expo Go (scan QR on iOS, or press `a` / `i` for emulators).
 | `app.config.ts` | `extra.apiBase` from `EXPO_PUBLIC_API_BASE` |
 | `@shared/*` | Aliased to `../web/src/lib` (types, shared helpers) |
 
-iOS allows HTTP to local/dev servers via `NSAllowsArbitraryLoads` in `app.config.ts` — for development only.
+Production iOS uses HTTPS only (App Transport Security). In Expo Go / `__DEV__`, Settings → Library can still point at a LAN API.
 
 ## Scripts
 

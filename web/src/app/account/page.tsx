@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useMutation } from "convex/react";
 import { useAuth } from "@/components/AuthProvider";
 import { GlyphMala } from "@/components/GlyphMala";
 import { GlyphMarkPicker } from "@/components/GlyphMarkPicker";
@@ -11,12 +12,17 @@ import { useT } from "@/components/LocaleProvider";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { useAvatarMark } from "@/lib/useAvatarMark";
 import { cn } from "@/lib/utils";
+import { api } from "../../../convex/_generated/api";
 
 export default function AccountPage() {
   const router = useRouter();
   const t = useT();
   const { configured, loading, user, signOut } = useAuth();
   const { mark, ink, choose, chooseInk, openMarks } = useAvatarMark();
+  const deleteAccount = useMutation(api.account.deleteAccount);
+  const [confirmDelete, setConfirmDelete] = useState(false);
+  const [deleting, setDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!loading && configured && !user) {
@@ -82,6 +88,40 @@ export default function AccountPage() {
         >
           {t("auth.signOut")}
         </Button>
+      </div>
+      <div className="mt-16 border-t border-amber-200/15 pt-10">
+        <p className="font-sans text-xs uppercase tracking-[0.22em] text-stone-400">{t("account.delete")}</p>
+        <p className="soft mt-3 max-w-xl font-sans text-sm leading-relaxed">{t("account.deleteLede")}</p>
+        {deleteError ? <p className="mt-3 font-sans text-sm text-rose-300">{deleteError}</p> : null}
+        {confirmDelete ? (
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Button
+              type="button"
+              variant="secondary"
+              disabled={deleting}
+              onClick={() => {
+                setDeleting(true);
+                setDeleteError(null);
+                void deleteAccount({})
+                  .then(() => signOut())
+                  .then(() => router.replace("/"))
+                  .catch((err: unknown) => {
+                    setDeleteError(err instanceof Error ? err.message : t("account.deleteFailed"));
+                    setDeleting(false);
+                  });
+              }}
+            >
+              {deleting ? t("account.deleting") : t("account.deleteConfirm")}
+            </Button>
+            <Button type="button" variant="ghost" disabled={deleting} onClick={() => setConfirmDelete(false)}>
+              {t("account.deleteCancel")}
+            </Button>
+          </div>
+        ) : (
+          <Button type="button" variant="ghost" className="mt-6 text-rose-300" onClick={() => setConfirmDelete(true)}>
+            {t("account.delete")}
+          </Button>
+        )}
       </div>
     </main>
   );

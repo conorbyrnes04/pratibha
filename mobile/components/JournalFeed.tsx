@@ -1,11 +1,12 @@
 import { PratibhaText, ui } from "@/components/ui/PratibhaText";
 import { deleteJournalNote, loadJournalNotes } from "@/lib/storage";
+import { useAuth } from "@/context/AuthContext";
 import { colors } from "@/constants/theme";
 import type { JournalNote } from "@shared/types";
 import * as Clipboard from "expo-clipboard";
 import * as Haptics from "expo-haptics";
 import { useFocusEffect, useRouter } from "expo-router";
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Pressable, TextInput, View, Keyboard } from "react-native";
 
 function reopenTarget(note: JournalNote): { pathname: string; params?: Record<string, string> } | null {
@@ -45,6 +46,7 @@ function formatJournalNoteText(note: JournalNote): string {
 
 export function JournalFeed() {
   const router = useRouter();
+  const { user } = useAuth();
   const [notes, setNotes] = useState<JournalNote[]>([]);
   const [q, setQ] = useState("");
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -59,6 +61,10 @@ export function JournalFeed() {
       refresh();
     }, [refresh]),
   );
+
+  useEffect(() => {
+    refresh();
+  }, [user?.id, refresh]);
 
   const filtered = useMemo(() => {
     const needle = q.trim().toLowerCase();

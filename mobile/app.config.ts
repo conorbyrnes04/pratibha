@@ -16,9 +16,6 @@ const config = {
     supportsTablet: true,
     bundleIdentifier: "com.pratibha.app",
     infoPlist: {
-      NSAppTransportSecurity: {
-        NSAllowsArbitraryLoads: true,
-      },
       ITSAppUsesNonExemptEncryption: false,
     },
   },
@@ -83,6 +80,7 @@ const config = {
   },
   extra: {
     apiBase: process.env.EXPO_PUBLIC_API_BASE ?? "https://pratibha-1.onrender.com",
+    convexUrl: process.env.EXPO_PUBLIC_CONVEX_URL ?? "https://giant-lapwing-264.convex.cloud",
     eas: {
       projectId: "7051a79c-f704-4c73-9672-e170d31f0aaf",
     },

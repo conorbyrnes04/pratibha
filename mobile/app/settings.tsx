@@ -1,14 +1,20 @@
 import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
 import { PratibhaText, ui } from "@/components/ui/PratibhaText";
 import { getApiBase, pingHealth, PRODUCTION_API_BASE, setApiBaseOverride } from "@/lib/api";
+import { api } from "@/lib/convexApi";
 import { APP_ICONS, type AppIconId } from "@/lib/appIcons";
-import { API_OVERRIDE_KEY, APP_ICON_KEY } from "@/lib/storage";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import { API_OVERRIDE_KEY, APP_ICON_KEY, saveJournalNotes, saveLearnBundle } from "@/lib/storage";
+import { useAuth } from "@/context/AuthContext";
 import { useStudy } from "@/context/StudyContext";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useMutation } from "convex/react";
+import { useRouter } from "expo-router";
 import { useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  Alert,
   Image,
+  Linking,
   Pressable,
   TextInput,
   View,
@@ -23,21 +29,30 @@ import {
   supportsAlternateIcons,
 } from "expo-alternate-app-icons";
 
+const PRIVACY_URL = "https://pratibha.agniagama.com/privacy";
+const SUPPORT_MAIL = "mailto:conor@agniagama.com";
+
 type PingState = "idle" | "checking" | "ok" | "fail";
 
 export default function SettingsScreen() {
+  const router = useRouter();
+  const { user, loading: authLoading, signOut } = useAuth();
   const { refreshCorpus } = useStudy();
+  const deleteAccount = useMutation(api.account.deleteAccount);
   const [apiBase, setApiBase] = useState(getApiBase());
   const [saved, setSaved] = useState(false);
   const [pingState, setPingState] = useState<PingState>("idle");
   const [pingDetail, setPingDetail] = useState("");
   const [iconId, setIconId] = useState<AppIconId>("default");
   const [iconNote, setIconNote] = useState("");
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
-    AsyncStorage.getItem(API_OVERRIDE_KEY).then((v) => {
-      if (v) setApiBase(v);
-    });
+    if (__DEV__) {
+      AsyncStorage.getItem(API_OVERRIDE_KEY).then((v) => {
+        if (v) setApiBase(v);
+      });
+    }
     AsyncStorage.getItem(APP_ICON_KEY).then((v) => {
       if (v && APP_ICONS.some((icon) => icon.id === v)) setIconId(v as AppIconId);
     });
@@ -98,61 +113,97 @@ export default function SettingsScreen() {
     }
   }
 
+  function confirmDelete() {
+    Alert.alert(
+      "Delete account?",
+      "This permanently removes your journal, path progress, circle offerings, and login. The library stays public. This cannot be undone.",
+      [
+        { text: "Keep my account", style: "cancel" },
+        {
+          text: "Delete account",
+          style: "destructive",
+          onPress: () => void runDelete(),
+        },
+      ],
+    );
+  }
+
+  async function runDelete() {
+    setDeleting(true);
+    try {
+      await deleteAccount({});
+      await saveJournalNotes([]);
+      await saveLearnBundle({ progress: {}, completedAt: {} });
+      await signOut();
+      router.replace("/(tabs)");
+    } catch (err) {
+      Alert.alert(
+        "Could not delete",
+        err instanceof Error ? err.message : "Try again, or email conor@agniagama.com.",
+      );
+    } finally {
+      setDeleting(false);
+    }
+  }
+
   return (
     <PratibhaScreen edges={stackScreenEdges}>
       <PratibhaText variant="eyebrow">Settings</PratibhaText>
       <PratibhaText variant="title" style={{ marginTop: 8, fontSize: 28 }}>
         This phone
       </PratibhaText>
-      <PratibhaText variant="soft" style={{ marginTop: 10 }}>
-        Pratibha talks to the live library by default. Change this only if you are running a local
-        server.
-      </PratibhaText>
 
       <View style={[ui.card, { marginTop: 20 }]}>
-        <PratibhaText variant="label">Library</PratibhaText>
-        <TextInput
-          value={apiBase}
-          onChangeText={setApiBase}
-          autoCapitalize="none"
-          autoCorrect={false}
-          returnKeyType="done"
-          onSubmitEditing={() => void applyBase(apiBase)}
-          blurOnSubmit
-          style={{
-            marginTop: 10,
-            borderRadius: 12,
-            borderWidth: 1,
-            borderColor: colors.border,
-            padding: 12,
-            color: colors.foreground,
-            fontSize: 15,
-          }}
-        />
+        <PratibhaText variant="label">Account</PratibhaText>
+        {authLoading ? (
+          <PratibhaText variant="soft" style={{ marginTop: 10 }}>
+            Opening session…
+          </PratibhaText>
+        ) : user ? (
+          <>
+            <PratibhaText variant="body" style={{ marginTop: 10, fontSize: 17 }}>
+              {user.email || "Signed in"}
+            </PratibhaText>
+            <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 15 }}>
+              Journal and path progress sync with the website.
+            </PratibhaText>
+            <View style={{ marginTop: 14, flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
+              <Pressable style={ui.buttonGhost} onPress={() => void signOut()}>
+                <PratibhaText style={ui.buttonGhostText}>Sign out</PratibhaText>
+              </Pressable>
+              <Pressable onPress={confirmDelete} disabled={deleting}>
+                <PratibhaText variant="label" style={{ color: colors.rose, paddingVertical: 10 }}>
+                  {deleting ? "Deleting…" : "Delete account"}
+                </PratibhaText>
+              </Pressable>
+            </View>
+          </>
+        ) : (
+          <>
+            <PratibhaText variant="soft" style={{ marginTop: 10, fontSize: 15 }}>
+              Sign in with email to carry notes and path progress across this phone and the
+              website. Google is not used in the app.
+            </PratibhaText>
+            <Pressable style={[ui.button, { marginTop: 14 }]} onPress={() => router.push("/login" as never)}>
+              <PratibhaText style={ui.buttonText}>Sign in</PratibhaText>
+            </Pressable>
+          </>
+        )}
+      </View>
+
+      <View style={[ui.card, { marginTop: 20 }]}>
+        <PratibhaText variant="label">Privacy</PratibhaText>
+        <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 15 }}>
+          How we store journal notes, progress, and Listen audio.
+        </PratibhaText>
         <View style={{ marginTop: 14, flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-          <Pressable style={ui.button} onPress={() => void applyBase(apiBase)}>
-            <PratibhaText style={ui.buttonText}>{saved ? "Saved" : "Save"}</PratibhaText>
+          <Pressable style={ui.buttonGhost} onPress={() => void Linking.openURL(PRIVACY_URL)}>
+            <PratibhaText style={ui.buttonGhostText}>Privacy policy</PratibhaText>
           </Pressable>
-          <Pressable style={ui.buttonGhost} onPress={() => void applyBase(PRODUCTION_API_BASE)}>
-            <PratibhaText style={ui.buttonGhostText}>Use live library</PratibhaText>
+          <Pressable style={ui.buttonGhost} onPress={() => void Linking.openURL(SUPPORT_MAIL)}>
+            <PratibhaText style={ui.buttonGhostText}>Support</PratibhaText>
           </Pressable>
         </View>
-        {pingState === "checking" ? (
-          <View style={{ marginTop: 12, flexDirection: "row", alignItems: "center", gap: 8 }}>
-            <ActivityIndicator color={colors.accent} size="small" />
-            <PratibhaText variant="soft" style={{ fontSize: 14 }}>
-              Checking…
-            </PratibhaText>
-          </View>
-        ) : pingState === "ok" ? (
-          <PratibhaText variant="soft" style={{ marginTop: 12, fontSize: 14, color: colors.emerald }}>
-            {pingDetail}
-          </PratibhaText>
-        ) : pingState === "fail" ? (
-          <PratibhaText variant="soft" style={{ marginTop: 12, fontSize: 14, color: colors.rose }}>
-            Couldn’t connect: {pingDetail}
-          </PratibhaText>
-        ) : null}
       </View>
 
       <View style={[ui.card, { marginTop: 20 }]}>
@@ -215,6 +266,57 @@ export default function SettingsScreen() {
           </PratibhaText>
         ) : null}
       </View>
+
+      {__DEV__ ? (
+        <View style={[ui.card, { marginTop: 20 }]}>
+          <PratibhaText variant="label">Library (dev)</PratibhaText>
+          <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 15 }}>
+            Production builds always use {PRODUCTION_API_BASE}.
+          </PratibhaText>
+          <TextInput
+            value={apiBase}
+            onChangeText={setApiBase}
+            autoCapitalize="none"
+            autoCorrect={false}
+            returnKeyType="done"
+            onSubmitEditing={() => void applyBase(apiBase)}
+            blurOnSubmit
+            style={{
+              marginTop: 10,
+              borderRadius: 12,
+              borderWidth: 1,
+              borderColor: colors.border,
+              padding: 12,
+              color: colors.foreground,
+              fontSize: 15,
+            }}
+          />
+          <View style={{ marginTop: 14, flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
+            <Pressable style={ui.button} onPress={() => void applyBase(apiBase)}>
+              <PratibhaText style={ui.buttonText}>{saved ? "Saved" : "Save"}</PratibhaText>
+            </Pressable>
+            <Pressable style={ui.buttonGhost} onPress={() => void applyBase(PRODUCTION_API_BASE)}>
+              <PratibhaText style={ui.buttonGhostText}>Use live library</PratibhaText>
+            </Pressable>
+          </View>
+          {pingState === "checking" ? (
+            <View style={{ marginTop: 12, flexDirection: "row", alignItems: "center", gap: 8 }}>
+              <ActivityIndicator color={colors.accent} size="small" />
+              <PratibhaText variant="soft" style={{ fontSize: 14 }}>
+                Checking…
+              </PratibhaText>
+            </View>
+          ) : pingState === "ok" ? (
+            <PratibhaText variant="soft" style={{ marginTop: 12, fontSize: 14, color: colors.emerald }}>
+              {pingDetail}
+            </PratibhaText>
+          ) : pingState === "fail" ? (
+            <PratibhaText variant="soft" style={{ marginTop: 12, fontSize: 14, color: colors.rose }}>
+              Couldn’t connect: {pingDetail}
+            </PratibhaText>
+          ) : null}
+        </View>
+      ) : null}
     </PratibhaScreen>
   );
 }

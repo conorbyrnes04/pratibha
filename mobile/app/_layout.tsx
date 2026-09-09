@@ -1,3 +1,5 @@
+import { AuthProvider } from "@/context/AuthContext";
+import { CloudSync } from "@/context/CloudSync";
 import { StudyProvider } from "@/context/StudyContext";
 import { colors } from "@/constants/theme";
 import { DarkTheme, ThemeProvider } from "@react-navigation/native";
@@ -30,26 +32,31 @@ export default function RootLayout() {
 
   return (
     <SafeAreaProvider>
-      <StudyProvider>
-        <ThemeProvider value={pratibhaTheme}>
-          <StatusBar style="light" />
-          <Stack
-            screenOptions={{
-              headerStyle: { backgroundColor: colors.background },
-              headerTintColor: colors.accentBright,
-              headerTitleStyle: { fontFamily: "Georgia" },
-              contentStyle: { backgroundColor: colors.background },
-            }}
-          >
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-            <Stack.Screen name="ask" options={{ title: "Ask", headerBackTitle: "Back" }} />
-            <Stack.Screen name="path/[id]" options={{ title: "Path", headerBackTitle: "Back" }} />
-            <Stack.Screen name="step/[trackId]/[stepId]" options={{ title: "Gate", headerBackTitle: "Back" }} />
-            <Stack.Screen name="passage/[id]" options={{ title: "Passage", headerBackTitle: "Back" }} />
-            <Stack.Screen name="settings" options={{ presentation: "modal", title: "Settings" }} />
-          </Stack>
-        </ThemeProvider>
-      </StudyProvider>
+      <AuthProvider>
+        <CloudSync>
+          <StudyProvider>
+            <ThemeProvider value={pratibhaTheme}>
+              <StatusBar style="light" />
+              <Stack
+                screenOptions={{
+                  headerStyle: { backgroundColor: colors.background },
+                  headerTintColor: colors.accentBright,
+                  headerTitleStyle: { fontFamily: "Georgia" },
+                  contentStyle: { backgroundColor: colors.background },
+                }}
+              >
+                <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                <Stack.Screen name="ask" options={{ title: "Ask", headerBackTitle: "Back" }} />
+                <Stack.Screen name="path/[id]" options={{ title: "Path", headerBackTitle: "Back" }} />
+                <Stack.Screen name="step/[trackId]/[stepId]" options={{ title: "Gate", headerBackTitle: "Back" }} />
+                <Stack.Screen name="passage/[id]" options={{ title: "Passage", headerBackTitle: "Back" }} />
+                <Stack.Screen name="settings" options={{ presentation: "modal", title: "Settings" }} />
+                <Stack.Screen name="login" options={{ title: "Sign in", headerBackTitle: "Back" }} />
+              </Stack>
+            </ThemeProvider>
+          </StudyProvider>
+        </CloudSync>
+      </AuthProvider>
     </SafeAreaProvider>
   );
 }

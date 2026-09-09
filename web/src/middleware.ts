@@ -29,12 +29,10 @@ const convexMiddleware = convexAuthNextjsMiddleware(
     if (!ctx.convexAuth) return;
     const authenticated = await ctx.convexAuth.isAuthenticated();
     if (isPrivatePage(request) && !authenticated) {
-      return new Response(null, {
-        status: 307,
-        headers: {
-          Location: new URL("/login", request.url).toString(),
-        },
-      });
+      const login = new URL("/login", request.url);
+      const next = `${request.nextUrl.pathname}${request.nextUrl.search}`;
+      if (next && next !== "/login") login.searchParams.set("next", next);
+      return NextResponse.redirect(login, 307);
     }
   },
   { cookieConfig: { maxAge: AUTH_COOKIE_MAX_AGE_SECONDS } },

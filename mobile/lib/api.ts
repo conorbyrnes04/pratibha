@@ -13,6 +13,7 @@ export function isLocalhostApiBase(url: string): boolean {
 }
 
 export function setApiBaseOverride(url: string | null): void {
+  if (!__DEV__) return;
   runtimeApiBase = url?.replace(/\/$/, "") || null;
 }
 

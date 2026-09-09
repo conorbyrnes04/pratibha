@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Pratibha",
-  description: "Privacy policy for Pratibha - how we handle your data",
+  title: "Privacy Policy",
+  description: "Privacy policy for Pratibha — how we handle your data",
 };
 
 export default function PrivacyPage() {
@@ -12,7 +12,7 @@ export default function PrivacyPage() {
       
       <div className="prose prose-invert max-w-none space-y-6">
         <p className="text-muted-foreground">
-          <strong>Last Updated:</strong> August 30, 2026
+          <strong>Last Updated:</strong> September 9, 2026
         </p>
 
         <section>
@@ -100,8 +100,11 @@ export default function PrivacyPage() {
             Pratibha integrates with the following third-party services:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Google OAuth</strong> - For optional sign-in with Google (governed by Google's Privacy Policy)</li>
-            <li><strong>Convex</strong> - For secure data storage (governed by Convex's Privacy Policy)</li>
+            <li><strong>Google OAuth</strong> — optional sign-in on the website (governed by Google&apos;s Privacy Policy). The iOS app uses email and password only.</li>
+            <li><strong>Convex</strong> — accounts, journal notes, and learning progress (governed by Convex&apos;s Privacy Policy)</li>
+            <li><strong>Render</strong> — the public library API (verses, sources, study chat)</li>
+            <li><strong>ElevenLabs</strong> — spoken Listen audio for selected passages</li>
+            <li><strong>OpenRouter</strong> — study-chat replies when you ask about a passage</li>
           </ul>
           <p className="mt-4">
             These services have their own privacy policies, and we recommend reviewing them.
@@ -120,7 +123,7 @@ export default function PrivacyPage() {
             <li><strong>Correct</strong> inaccuracies - Update your account information at any time</li>
           </ul>
           <p className="mt-4">
-            To exercise these rights, please contact us at the email below.
+            On the website, delete your account from the Account page. In the iOS app, open Settings → Delete account. Both remove your journal, path progress, circle offerings, and login. You can also email us at the address below.
           </p>
         </section>
 

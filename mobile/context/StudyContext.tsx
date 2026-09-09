@@ -5,12 +5,17 @@ import {
 } from "@shared/learningPaths";
 import type { VerseItem } from "@shared/types";
 import * as Haptics from "expo-haptics";
+import { useAuth } from "@/context/AuthContext";
+import { api } from "@/lib/convexApi";
+import { getCloudBridge } from "@/lib/cloudBridge";
+import { useQuery } from "convex/react";
 import {
   createContext,
   useCallback,
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ReactNode,
 } from "react";
@@ -18,9 +23,14 @@ import Constants from "expo-constants";
 import { getVerses, isLocalhostApiBase, setApiBaseOverride } from "@/lib/api";
 import {
   API_OVERRIDE_KEY,
-  loadProgress,
-  saveProgress,
+  asCompletedAt,
+  asProgress,
+  loadLearnBundle,
+  mergeCompletedAt,
+  mergeProgress,
+  saveLearnBundle,
   stepKey,
+  type CompletedAtMap,
   type ProgressMap,
 } from "@/lib/storage";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -47,8 +57,12 @@ type StudyContextValue = {
 const StudyContext = createContext<StudyContextValue | null>(null);
 
 export function StudyProvider({ children }: { children: ReactNode }) {
+  const { user } = useAuth();
+  const remoteProgress = useQuery(api.learnProgress.get, user ? {} : "skip");
+  const mergedForUser = useRef<string | null>(null);
   const [items, setItems] = useState<VerseItem[]>([]);
   const [progress, setProgress] = useState<ProgressMap>({});
+  const [completedAt, setCompletedAt] = useState<CompletedAtMap>({});
   const [hydrated, setHydrated] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -105,30 +119,68 @@ export function StudyProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     (async () => {
-      const [p, api] = await Promise.all([loadProgress(), AsyncStorage.getItem(API_OVERRIDE_KEY)]);
-      if (api && !(Constants.isDevice && isLocalhostApiBase(api))) setApiBaseOverride(api);
-      setProgress(p);
+      const [bundle, apiOverride] = await Promise.all([
+        loadLearnBundle(),
+        __DEV__ ? AsyncStorage.getItem(API_OVERRIDE_KEY) : Promise.resolve(null),
+      ]);
+      if (apiOverride && !(Constants.isDevice && isLocalhostApiBase(apiOverride))) {
+        setApiBaseOverride(apiOverride);
+      }
+      setProgress(bundle.progress);
+      setCompletedAt(bundle.completedAt);
       setHydrated(true);
       await refreshCorpus();
     })();
   }, [refreshCorpus]);
 
   useEffect(() => {
+    if (!user) {
+      mergedForUser.current = null;
+      return;
+    }
+    if (!hydrated || remoteProgress === undefined) return;
+    if (mergedForUser.current === user.id) return;
+    mergedForUser.current = user.id;
+    const remoteP = asProgress(remoteProgress?.progress);
+    const remoteC = asCompletedAt(remoteProgress?.completedAt);
+    setProgress((local) => mergeProgress(local, remoteP));
+    setCompletedAt((local) => mergeCompletedAt(local, remoteC));
+  }, [user, hydrated, remoteProgress]);
+
+  useEffect(() => {
     if (!hydrated) return;
-    saveProgress(progress);
-  }, [progress, hydrated]);
+    void saveLearnBundle({ progress, completedAt });
+    if (user && mergedForUser.current === user.id) {
+      void getCloudBridge()?.pushProgress(progress, completedAt);
+    }
+  }, [progress, completedAt, hydrated, user]);
 
   const toggleStep = useCallback(async (trackId: string, stepId: string) => {
     await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     const key = stepKey(trackId, stepId);
-    setProgress((p) => ({ ...p, [key]: !p[key] }));
+    setProgress((p) => {
+      const nextDone = !p[key];
+      setCompletedAt((c) => {
+        if (nextDone) return { ...c, [key]: c[key] || new Date().toISOString() };
+        const next = { ...c };
+        delete next[key];
+        return next;
+      });
+      return { ...p, [key]: nextDone };
+    });
   }, []);
 
   const resetTrack = useCallback(async (trackId: string) => {
     const track = trackById[trackId];
+    const keys = (track?.steps || []).map((s) => stepKey(trackId, s.id));
     setProgress((p) => {
       const next = { ...p };
-      for (const s of track?.steps || []) delete next[stepKey(trackId, s.id)];
+      for (const k of keys) delete next[k];
+      return next;
+    });
+    setCompletedAt((c) => {
+      const next = { ...c };
+      for (const k of keys) delete next[k];
       return next;
     });
   }, [trackById]);
