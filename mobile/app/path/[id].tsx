@@ -1,11 +1,12 @@
 import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
 import { useStudy } from "@/context/StudyContext";
 import { stepKey } from "@/lib/storage";
 import { useLocalSearchParams, router } from "expo-router";
 import { Pressable, StyleSheet, View } from "react-native";
 
 export default function PathScreen() {
+  const ui = useUi();
   const { id } = useLocalSearchParams<{ id: string }>();
   const { trackById, progress, trackDoneCount, resetTrack } = useStudy();
   const track = trackById[id || ""];

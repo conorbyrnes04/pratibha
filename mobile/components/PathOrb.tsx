@@ -1,4 +1,4 @@
-import { colors } from "@/constants/theme";
+import { useTheme } from "@/context/ThemeContext";
 import { LinearGradient } from "expo-linear-gradient";
 import { useEffect } from "react";
 import { StyleSheet, View, type ViewStyle } from "react-native";
@@ -22,11 +22,11 @@ type Props = {
 
 const ORB = 48;
 
-function orbPalette(state: PathOrbState) {
+function orbPalette(state: PathOrbState, accentBright: string) {
   switch (state) {
     case "complete":
       return {
-        border: "rgba(110, 231, 183, 0.85)",
+        border: "rgba(31, 107, 74, 0.85)",
         gradient: ["rgba(110, 231, 183, 0.95)", "rgba(52, 211, 153, 0.75)"] as const,
         text: "#0f172a",
         glow: "rgba(110, 231, 183, 0.25)",
@@ -35,8 +35,8 @@ function orbPalette(state: PathOrbState) {
       };
     case "highlight":
       return {
-        border: colors.accentBright,
-        gradient: [colors.accentBright, "#e8b85a"] as const,
+        border: accentBright,
+        gradient: [accentBright, "#e8b85a"] as const,
         text: "#0f172a",
         glow: "rgba(240, 201, 121, 0.35)",
         pulse: true,
@@ -46,7 +46,7 @@ function orbPalette(state: PathOrbState) {
       return {
         border: "rgba(240, 201, 121, 0.7)",
         gradient: ["rgba(240, 201, 121, 0.22)", "rgba(11, 11, 20, 0.92)"] as const,
-        text: colors.accentBright,
+        text: accentBright,
         glow: "rgba(240, 201, 121, 0.28)",
         pulse: false,
         ring: true,
@@ -55,7 +55,7 @@ function orbPalette(state: PathOrbState) {
       return {
         border: "rgba(240, 201, 121, 0.28)",
         gradient: ["rgba(240, 201, 121, 0.08)", "rgba(11, 11, 20, 0.88)"] as const,
-        text: "rgba(254, 243, 199, 0.92)",
+        text: accentBright,
         glow: "rgba(240, 201, 121, 0.12)",
         pulse: false,
         ring: false,
@@ -64,12 +64,13 @@ function orbPalette(state: PathOrbState) {
 }
 
 export function PathOrb({ label, state, size = ORB, style }: Props) {
-  const palette = orbPalette(state);
+  const { colors, reduceMotion } = useTheme();
+  const palette = orbPalette(state, colors.accentBright);
   const pulseOpacity = useSharedValue(0);
   const pulseScale = useSharedValue(0.92);
 
   useEffect(() => {
-    if (!palette.pulse) {
+    if (!palette.pulse || reduceMotion) {
       pulseOpacity.value = 0;
       pulseScale.value = 1;
       return;
@@ -84,7 +85,7 @@ export function PathOrb({ label, state, size = ORB, style }: Props) {
       -1,
       true,
     );
-  }, [palette.pulse, pulseOpacity, pulseScale]);
+  }, [palette.pulse, pulseOpacity, pulseScale, reduceMotion]);
 
   const pulseStyle = useAnimatedStyle(() => ({
     opacity: pulseOpacity.value,

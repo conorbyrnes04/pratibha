@@ -1,6 +1,6 @@
 import { IconButton, symbols } from "@/components/IconButton";
 import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
 import { useStudy } from "@/context/StudyContext";
 import { getVerse } from "@/lib/api";
 import { passagePreview } from "@/lib/verseLayers";
@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { Pressable, View } from "react-native";
 
 export default function HomeTab() {
+  const ui = useUi();
   const { heroTrack, heroNextStep, hydrated, startedTrackId } = useStudy();
   const [verse, setVerse] = useState<VerseItem | null>(null);
 

@@ -1,10 +1,10 @@
 import { LayerContent } from "@/components/LayerContent";
 import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
+import { useTheme } from "@/context/ThemeContext";
 import { getVerse } from "@/lib/api";
 import { upsertJournalNote } from "@/lib/storage";
 import { getStudyLayers, layerText, passagePreview, practiceText } from "@/lib/verseLayers";
-import { colors } from "@/constants/theme";
 import { isChapterSummaryMetaUnit } from "@shared/corpusFilters";
 import { displayCollectionName } from "@shared/collectionLabels";
 import { displayPassageTitle } from "@shared/passageTitles";
@@ -32,6 +32,8 @@ function reflectionPrompt(item: VerseItem): string {
 }
 
 export default function PassageScreen() {
+  const ui = useUi();
+  const { colors } = useTheme();
   const params = useLocalSearchParams<{ id: string }>();
   const [item, setItem] = useState<VerseItem | null>(null);
   const [loading, setLoading] = useState(true);

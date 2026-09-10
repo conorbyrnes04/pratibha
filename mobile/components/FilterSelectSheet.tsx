@@ -1,5 +1,5 @@
 import { PratibhaText } from "@/components/ui/PratibhaText";
-import { colors } from "@/constants/theme";
+import { useTheme } from "@/context/ThemeContext";
 import type { CollectionFilterOption } from "@shared/corpusFilters";
 import { useState } from "react";
 import { Modal, Pressable, ScrollView, StyleSheet, View } from "react-native";
@@ -13,9 +13,10 @@ type FilterSelectSheetProps = {
 };
 
 export function FilterSelectSheet({ label, value, onChange, options, tone = "gold" }: FilterSelectSheetProps) {
+  const { colors } = useTheme();
   const [open, setOpen] = useState(false);
   const selected = options.find((option) => option.value === value);
-  const accent = tone === "lapis" ? "#94b0d2" : colors.accentBright;
+  const accent = tone === "lapis" ? "#5a7394" : colors.accentBright;
   const border = tone === "lapis" ? "rgba(90, 120, 160, 0.45)" : colors.borderStrong;
 
   return (
@@ -25,7 +26,7 @@ export function FilterSelectSheet({ label, value, onChange, options, tone = "gol
       </PratibhaText>
       <Pressable
         onPress={() => setOpen(true)}
-        style={[styles.trigger, { borderColor: border }]}
+        style={[styles.trigger, { borderColor: border, backgroundColor: colors.cardFill }]}
       >
         <View style={styles.triggerRow}>
           {selected?.icon ? (
@@ -38,10 +39,13 @@ export function FilterSelectSheet({ label, value, onChange, options, tone = "gol
         </View>
       </Pressable>
 
-      <Modal visible={open} transparent animationType="slide" onRequestClose={() => setOpen(false)}>
+      <Modal visible={open} transparent animationType="fade" onRequestClose={() => setOpen(false)}>
         <Pressable style={styles.backdrop} onPress={() => setOpen(false)}>
-          <Pressable style={styles.sheet} onPress={(e) => e.stopPropagation()}>
-            <View style={styles.handle} />
+          <Pressable
+            style={[styles.sheet, { borderColor: colors.border, backgroundColor: colors.surface }]}
+            onPress={(e) => e.stopPropagation()}
+          >
+            <View style={[styles.handle, { backgroundColor: colors.borderStrong }]} />
             <PratibhaText variant="heading" style={{ fontSize: 22, marginBottom: 12 }}>
               {label}
             </PratibhaText>
@@ -57,7 +61,8 @@ export function FilterSelectSheet({ label, value, onChange, options, tone = "gol
                     }}
                     style={[
                       styles.option,
-                      active && { borderColor: accent, backgroundColor: "rgba(240, 201, 121, 0.1)" },
+                      { borderColor: colors.border, backgroundColor: colors.cardFill },
+                      active && { borderColor: accent, backgroundColor: colors.cardGoldFill },
                     ]}
                   >
                     <View style={styles.optionRow}>
@@ -90,7 +95,6 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     paddingHorizontal: 14,
     paddingVertical: 12,
-    backgroundColor: "rgba(0,0,0,0.28)",
   },
   triggerRow: {
     flexDirection: "row",
@@ -102,23 +106,20 @@ const styles = StyleSheet.create({
     fontSize: 18,
     lineHeight: 22,
     textAlign: "center",
-    fontFamily: "System",
     marginRight: 10,
   },
   backdrop: {
     flex: 1,
     justifyContent: "flex-end",
-    backgroundColor: "rgba(0,0,0,0.55)",
+    backgroundColor: "rgba(0,0,0,0.45)",
   },
   sheet: {
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     borderWidth: 1,
-    borderColor: colors.border,
     paddingHorizontal: 18,
     paddingTop: 10,
     paddingBottom: 28,
-    backgroundColor: colors.surface,
   },
   handle: {
     alignSelf: "center",
@@ -126,16 +127,13 @@ const styles = StyleSheet.create({
     height: 4,
     marginBottom: 14,
     borderRadius: 999,
-    backgroundColor: colors.borderStrong,
   },
   option: {
     borderWidth: 1,
-    borderColor: colors.border,
     borderRadius: 14,
     paddingHorizontal: 12,
     paddingVertical: 12,
     marginBottom: 8,
-    backgroundColor: "rgba(0,0,0,0.2)",
   },
   optionRow: {
     flexDirection: "row",

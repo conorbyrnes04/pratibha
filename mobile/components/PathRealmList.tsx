@@ -1,10 +1,32 @@
 import { PathOrb, type PathOrbState } from "@/components/PathOrb";
 import { LEARNING_REALMS, RECOMMENDED_SPINE } from "@shared/learningPaths";
+import { realmImageSrc } from "@shared/collectionImages";
+import { webAsset } from "@/lib/webAssets";
 import { LinearGradient } from "expo-linear-gradient";
-import { Pressable, StyleSheet, View } from "react-native";
+import { Image, Pressable, StyleSheet, View } from "react-native";
+import { useState } from "react";
 import { useStudy } from "@/context/StudyContext";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
-import { colors } from "@/constants/theme";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
+import { useTheme } from "@/context/ThemeContext";
+
+/** Illuminated realm backdrop; falls back to the thangka primary, then hides. */
+function RealmArt({ realmId }: { realmId: string }) {
+  const [uri, setUri] = useState(() => webAsset(realmImageSrc(realmId, realmId)));
+  const [failed, setFailed] = useState(false);
+  if (failed) return null;
+  return (
+    <Image
+      source={{ uri }}
+      resizeMode="cover"
+      onError={() => {
+        const primary = uri.replace(/-n\d{2}(?=\.jpg)/, "");
+        if (primary !== uri) setUri(primary);
+        else setFailed(true);
+      }}
+      style={StyleSheet.absoluteFill}
+    />
+  );
+}
 
 type Props = {
   selectedTrackId: string;
@@ -24,6 +46,8 @@ function orbState(
 }
 
 export function PathRealmList({ selectedTrackId, onSelectTrack }: Props) {
+  const ui = useUi();
+  const { colors, scheme } = useTheme();
   const { trackById, progress, recommendedNextId, anyProgress, trackDoneCount } = useStudy();
 
   return (
@@ -36,21 +60,36 @@ export function PathRealmList({ selectedTrackId, onSelectTrack }: Props) {
       </View>
 
       {LEARNING_REALMS.map((realm) => (
-        <View key={realm.id} style={styles.realmShell}>
-          <LinearGradient
-            colors={["rgba(216, 168, 74, 0.07)", "rgba(216, 168, 74, 0.01)", "transparent"]}
-            start={{ x: 1, y: 0 }}
-            end={{ x: 0.2, y: 0.85 }}
-            style={StyleSheet.absoluteFill}
-          />
-          <LinearGradient
-            colors={["rgba(13, 13, 24, 0.55)", "rgba(8, 8, 14, 0.82)"]}
-            style={StyleSheet.absoluteFill}
-          />
-          <LinearGradient
-            colors={["rgba(240, 201, 121, 0.14)", "transparent"]}
-            style={styles.yantraGlow}
-          />
+        <View
+          key={realm.id}
+          style={[
+            styles.realmShell,
+            { borderColor: colors.border, backgroundColor: scheme === "paper" ? colors.surface : "transparent" },
+          ]}
+        >
+          {scheme === "ink" ? (
+            <>
+              <RealmArt realmId={realm.id} />
+              <LinearGradient
+                colors={["rgba(8, 8, 14, 0.62)", "rgba(8, 8, 14, 0.78)"]}
+                style={StyleSheet.absoluteFill}
+              />
+              <LinearGradient
+                colors={["rgba(216, 168, 74, 0.07)", "rgba(216, 168, 74, 0.01)", "transparent"]}
+                start={{ x: 1, y: 0 }}
+                end={{ x: 0.2, y: 0.85 }}
+                style={StyleSheet.absoluteFill}
+              />
+              <LinearGradient
+                colors={["rgba(13, 13, 24, 0.55)", "rgba(8, 8, 14, 0.82)"]}
+                style={StyleSheet.absoluteFill}
+              />
+              <LinearGradient
+                colors={["rgba(240, 201, 121, 0.14)", "transparent"]}
+                style={styles.yantraGlow}
+              />
+            </>
+          ) : null}
 
           <View style={styles.realmContent}>
             <PratibhaText variant="eyebrow">{realm.title}</PratibhaText>
@@ -164,7 +203,6 @@ const styles = StyleSheet.create({
   pathBody: { flex: 1, minWidth: 0 },
   statusLine: {
     marginTop: 8,
-    color: colors.accentBright,
     opacity: 0.75,
     fontSize: 10,
   },

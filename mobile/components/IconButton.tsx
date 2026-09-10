@@ -1,11 +1,11 @@
-import { colors } from "@/constants/theme";
-import { SymbolView } from "expo-symbols";
+import { PratibhaIcon, symbols } from "@/components/PratibhaIcon";
+import { useTheme } from "@/context/ThemeContext";
 import { Link, type Href } from "expo-router";
 import { Pressable, type StyleProp, type ViewStyle } from "react-native";
 import * as Haptics from "expo-haptics";
 
 type Props = {
-  name: string;
+  name: keyof typeof symbols | string;
   accessibilityLabel: string;
   href?: Href;
   onPress?: () => void;
@@ -13,6 +13,7 @@ type Props = {
 };
 
 export function IconButton({ name, accessibilityLabel, href, onPress, style }: Props) {
+  const { colors } = useTheme();
   const inner = (
     <Pressable
       accessibilityLabel={accessibilityLabel}
@@ -23,7 +24,7 @@ export function IconButton({ name, accessibilityLabel, href, onPress, style }: P
         onPress?.();
       }}
     >
-      <SymbolView name={name as never} tintColor={colors.accentBright} size={22} />
+      <PratibhaIcon name={name as keyof typeof symbols} color={colors.accentBright} size={22} />
     </Pressable>
   );
 
@@ -37,8 +38,4 @@ export function IconButton({ name, accessibilityLabel, href, onPress, style }: P
   return inner;
 }
 
-export const symbols = {
-  gear: "gearshape",
-  ask: "bubble.left.fill",
-  search: "magnifyingglass",
-} as const;
+export { symbols };

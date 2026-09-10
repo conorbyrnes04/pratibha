@@ -17,4 +17,7 @@ export const api = {
     get: makeFunctionReference<"query">("learnProgress:get"),
     upsert: makeFunctionReference<"mutation">("learnProgress:upsert"),
   },
+  studentCommentaries: {
+    listRecent: makeFunctionReference<"query">("studentCommentaries:listRecent"),
+  },
 };

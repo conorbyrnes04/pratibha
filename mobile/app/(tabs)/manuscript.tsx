@@ -1,19 +1,20 @@
 import { JournalFeed } from "@/components/JournalFeed";
 import { IconButton, symbols } from "@/components/IconButton";
 import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "expo-router";
 import { Pressable, View } from "react-native";
 
 export default function ManuscriptTab() {
+  const ui = useUi();
   const router = useRouter();
   const { user } = useAuth();
   return (
     <PratibhaScreen>
       <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" }}>
         <View style={{ flex: 1, paddingRight: 12 }}>
-          <PratibhaText variant="eyebrow">Mine</PratibhaText>
+          <PratibhaText variant="eyebrow">My Manuscript</PratibhaText>
           <PratibhaText variant="title" style={{ marginTop: 8 }}>
             What you kept
           </PratibhaText>

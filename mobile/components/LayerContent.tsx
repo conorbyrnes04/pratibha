@@ -1,4 +1,4 @@
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
 import { MarkdownBody } from "@/components/MarkdownBody";
 import type { KeyTerm, PratibhaLayer, Resonance } from "@shared/types";
 import { View } from "react-native";
@@ -17,6 +17,7 @@ type Props = {
 };
 
 export function LayerContent({ layer, compact }: Props) {
+  const ui = useUi();
   const items = Array.isArray(layer.items) ? layer.items : [];
 
   if (layer.kind === "key_terms" && items.some(isKeyTerm)) {

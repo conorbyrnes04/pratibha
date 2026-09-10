@@ -39,3 +39,7 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# build artifacts (sideload/preview APKs are large; distribute via EAS, not git)
+*.apk
+*.aab

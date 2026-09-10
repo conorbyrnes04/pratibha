@@ -1,5 +1,7 @@
 import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
+import { useTheme } from "@/context/ThemeContext";
+import type { ThemeName } from "@/constants/theme";
 import { getApiBase, pingHealth, PRODUCTION_API_BASE, setApiBaseOverride } from "@/lib/api";
 import { api } from "@/lib/convexApi";
 import { APP_ICONS, type AppIconId } from "@/lib/appIcons";
@@ -21,7 +23,6 @@ import {
   Keyboard,
   Platform,
 } from "react-native";
-import { colors } from "@/constants/theme";
 import * as Haptics from "expo-haptics";
 import {
   getAppIconName,
@@ -35,6 +36,8 @@ const SUPPORT_MAIL = "mailto:conor@agniagama.com";
 type PingState = "idle" | "checking" | "ok" | "fail";
 
 export default function SettingsScreen() {
+  const ui = useUi();
+  const { colors, scheme, setScheme, eink } = useTheme();
   const router = useRouter();
   const { user, loading: authLoading, signOut } = useAuth();
   const { refreshCorpus } = useStudy();
@@ -150,7 +153,7 @@ export default function SettingsScreen() {
     <PratibhaScreen edges={stackScreenEdges}>
       <PratibhaText variant="eyebrow">Settings</PratibhaText>
       <PratibhaText variant="title" style={{ marginTop: 8, fontSize: 28 }}>
-        This phone
+        This device
       </PratibhaText>
 
       <View style={[ui.card, { marginTop: 20 }]}>
@@ -189,6 +192,34 @@ export default function SettingsScreen() {
             </Pressable>
           </>
         )}
+      </View>
+
+      <View style={[ui.card, { marginTop: 20 }]}>
+        <PratibhaText variant="label">Page</PratibhaText>
+        <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 15 }}>
+          {eink
+            ? "This device looks like an e-reader, so Paper is the default. Ink is the dark manuscript."
+            : "Ink is the dark manuscript. Paper is a cream page — better on e-ink and in bright light."}
+        </PratibhaText>
+        <View style={{ marginTop: 14, flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
+          {(["ink", "paper"] as ThemeName[]).map((name) => {
+            const selected = scheme === name;
+            return (
+              <Pressable
+                key={name}
+                onPress={() => {
+                  setScheme(name);
+                  void Haptics.selectionAsync();
+                }}
+                style={selected ? ui.button : ui.buttonGhost}
+              >
+                <PratibhaText style={selected ? ui.buttonText : ui.buttonGhostText}>
+                  {name === "ink" ? "Ink" : "Paper"}
+                </PratibhaText>
+              </Pressable>
+            );
+          })}
+        </View>
       </View>
 
       <View style={[ui.card, { marginTop: 20 }]}>

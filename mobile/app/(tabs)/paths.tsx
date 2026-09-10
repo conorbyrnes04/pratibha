@@ -1,14 +1,16 @@
 import { PathRealmList } from "@/components/PathRealmList";
 import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
 import { useStudy } from "@/context/StudyContext";
+import { useTheme } from "@/context/ThemeContext";
 import { getApiBase } from "@/lib/api";
-import { colors } from "@/constants/theme";
 import { Link, router } from "expo-router";
 import * as Haptics from "expo-haptics";
 import { Pressable, StyleSheet, View } from "react-native";
 
 export default function PathsTab() {
+  const ui = useUi();
+  const { colors } = useTheme();
   const {
     heroTrack,
     heroNextStep,

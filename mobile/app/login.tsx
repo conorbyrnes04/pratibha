@@ -1,13 +1,15 @@
 import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
 import { useAuth } from "@/context/AuthContext";
+import { useTheme } from "@/context/ThemeContext";
 import { MIN_PASSWORD_LENGTH } from "@shared/authRules";
 import { useRouter } from "expo-router";
 import { useEffect, useState } from "react";
 import { Pressable, TextInput, View, KeyboardAvoidingView, Platform } from "react-native";
-import { colors } from "@/constants/theme";
 
 export default function LoginScreen() {
+  const ui = useUi();
+  const { colors } = useTheme();
   const router = useRouter();
   const { user, loading, signInWithPassword, signUpWithPassword } = useAuth();
   const [mode, setMode] = useState<"signin" | "signup">("signin");
@@ -38,7 +40,7 @@ export default function LoginScreen() {
   return (
     <KeyboardAvoidingView
       style={{ flex: 1 }}
-      behavior={Platform.OS === "ios" ? "padding" : undefined}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
     <PratibhaScreen edges={stackScreenEdges}>
       <PratibhaText variant="eyebrow">Pratibha</PratibhaText>
@@ -62,7 +64,15 @@ export default function LoginScreen() {
           autoComplete="email"
           placeholder="you@example.com"
           placeholderTextColor={colors.muted2}
-          style={inputStyle}
+          style={{
+            marginTop: 10,
+            borderRadius: 12,
+            borderWidth: 1,
+            borderColor: colors.border,
+            padding: 12,
+            color: colors.foreground,
+            fontSize: 16,
+          }}
         />
         <PratibhaText variant="label" style={{ marginTop: 16 }}>
           Password
@@ -75,7 +85,15 @@ export default function LoginScreen() {
           autoComplete={mode === "signup" ? "password-new" : "password"}
           placeholder={`${MIN_PASSWORD_LENGTH}+ characters`}
           placeholderTextColor={colors.muted2}
-          style={inputStyle}
+          style={{
+            marginTop: 10,
+            borderRadius: 12,
+            borderWidth: 1,
+            borderColor: colors.border,
+            padding: 12,
+            color: colors.foreground,
+            fontSize: 16,
+          }}
         />
         {error ? (
           <PratibhaText variant="soft" style={{ marginTop: 12, color: colors.rose, fontSize: 14 }}>
@@ -108,13 +126,3 @@ export default function LoginScreen() {
     </KeyboardAvoidingView>
   );
 }
-
-const inputStyle = {
-  marginTop: 10,
-  borderRadius: 12,
-  borderWidth: 1,
-  borderColor: colors.border,
-  padding: 12,
-  color: colors.foreground,
-  fontSize: 16,
-} as const;

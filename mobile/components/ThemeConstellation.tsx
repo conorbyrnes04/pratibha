@@ -1,5 +1,5 @@
 import { PratibhaText } from "@/components/ui/PratibhaText";
-import { colors } from "@/constants/theme";
+import { useTheme } from "@/context/ThemeContext";
 import type { ThemeCount } from "@shared/corpusFilters";
 import { Pressable, ScrollView, StyleSheet, View } from "react-native";
 
@@ -10,6 +10,7 @@ type ThemeConstellationProps = {
 };
 
 export function ThemeConstellation({ themes, active, onChange }: ThemeConstellationProps) {
+  const { colors } = useTheme();
   if (themes.length === 0) return null;
 
   return (
@@ -41,7 +42,7 @@ export function ThemeConstellation({ themes, active, onChange }: ThemeConstellat
             <PratibhaText style={[styles.beadText, active === theme && styles.beadTextActive]}>
               {theme}
             </PratibhaText>
-            <PratibhaText style={styles.count}>{count}</PratibhaText>
+            <PratibhaText style={[styles.count, { color: colors.muted2 }]}>{count}</PratibhaText>
           </Pressable>
         ))}
       </ScrollView>
@@ -78,7 +79,6 @@ const styles = StyleSheet.create({
     color: "#e6eef8",
   },
   count: {
-    color: colors.muted2,
     fontSize: 10,
     letterSpacing: 1,
     textTransform: "uppercase",

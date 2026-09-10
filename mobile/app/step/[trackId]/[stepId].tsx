@@ -1,5 +1,5 @@
 import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
 import { useStudy } from "@/context/StudyContext";
 import { matchStepItem } from "@/lib/passages";
 import { learnStepContextId, notesForContext, stepKey, upsertJournalNote } from "@/lib/storage";
@@ -18,6 +18,7 @@ function actionLabel(chatMode?: string): string {
 }
 
 export default function StepScreen() {
+  const ui = useUi();
   const { trackId, stepId } = useLocalSearchParams<{ trackId: string; stepId: string }>();
   const { trackById, items, progress, toggleStep } = useStudy();
   const track = trackById[trackId || ""];

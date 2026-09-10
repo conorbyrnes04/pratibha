@@ -1,7 +1,7 @@
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
 import { deleteJournalNote, loadJournalNotes } from "@/lib/storage";
 import { useAuth } from "@/context/AuthContext";
-import { colors } from "@/constants/theme";
+import { useTheme } from "@/context/ThemeContext";
 import type { JournalNote } from "@shared/types";
 import * as Clipboard from "expo-clipboard";
 import * as Haptics from "expo-haptics";
@@ -45,6 +45,8 @@ function formatJournalNoteText(note: JournalNote): string {
 }
 
 export function JournalFeed() {
+  const ui = useUi();
+  const { colors } = useTheme();
   const router = useRouter();
   const { user } = useAuth();
   const [notes, setNotes] = useState<JournalNote[]>([]);

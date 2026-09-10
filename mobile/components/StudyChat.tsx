@@ -1,10 +1,10 @@
 import { MarkdownBody } from "@/components/MarkdownBody";
 import { PratibhaScreen, stackScreenEdges } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
+import { useTheme } from "@/context/ThemeContext";
 import { askChat, getVerse } from "@/lib/api";
 import { saveChatResponse } from "@/lib/storage";
 import { passagePreview } from "@/lib/verseLayers";
-import { colors } from "@/constants/theme";
 import { displayCollectionName } from "@shared/collectionLabels";
 import { displayPassageTitle } from "@shared/passageTitles";
 import type { ChatMode, VerseItem } from "@shared/types";
@@ -42,6 +42,8 @@ function parseChatMode(raw: unknown): ChatMode {
 }
 
 export default function StudyChat() {
+  const ui = useUi();
+  const { colors } = useTheme();
   const params = useLocalSearchParams<{ q?: string; verse_id?: string; mode?: string }>();
   const insets = useSafeAreaInsets();
   const headerHeight = useHeaderHeight();
@@ -226,7 +228,7 @@ export default function StudyChat() {
     <PratibhaScreen scroll={false} edges={stackScreenEdges} contentStyle={{ paddingBottom: 0, flex: 1 }}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
-        behavior={Platform.OS === "ios" ? "padding" : undefined}
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
         keyboardVerticalOffset={Platform.OS === "ios" ? headerHeight : 0}
       >
         <FlatList

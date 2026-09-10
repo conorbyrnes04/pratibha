@@ -2,9 +2,10 @@ import { Link, Stack } from "expo-router";
 import { Pressable } from "react-native";
 
 import { PratibhaScreen } from "@/components/ui/PratibhaScreen";
-import { PratibhaText, ui } from "@/components/ui/PratibhaText";
+import { PratibhaText, useUi } from "@/components/ui/PratibhaText";
 
 export default function NotFoundScreen() {
+  const ui = useUi();
   return (
     <>
       <Stack.Screen options={{ title: "Not found" }} />
