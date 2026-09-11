@@ -262,6 +262,7 @@ def _catalog_items(min_maturity: str | None) -> list[dict[str, Any]]:
 async def list_verses(
     request: Request,
     min_maturity: str | None = None,
+    collection: str | None = None,
     limit: int | None = None,
     offset: int = 0,
 ):
@@ -269,11 +270,28 @@ async def list_verses(
     if _catalog_rate_limited(request):
         raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
     items = _catalog_items(_valid_maturity(min_maturity))
+    if collection:
+        needle = collection.strip().lower()
+        slug = (
+            needle.replace("—", "-")
+            .replace("–", "-")
+            .replace(" ", "_")
+        )
+        # Collapse punctuation so "Confucius — Analects" ≈ confucius_analects
+        slug_compact = re.sub(r"[^a-z0-9]+", "_", needle).strip("_")
+        items = [
+            v
+            for v in items
+            if needle == str(v.get("collection", "")).strip().lower()
+            or slug == str(v.get("work_id", "")).strip().lower()
+            or needle == str(v.get("work_id", "")).strip().lower()
+            or slug_compact == str(v.get("work_id", "")).strip().lower()
+        ]
     total = len(items)
     start = max(0, offset)
     if limit is not None:
         cap = max(1, min(int(limit), _VERSES_MAX_LIMIT))
-        page = items[start:start + cap]
+        page = items[start : start + cap]
     else:
         page = items[start:]
     return JSONResponse(
@@ -1115,6 +1133,19 @@ async def _assemble_chat_messages(
         *req.messages,
     ]
     pinned_verse = _find_verse(req.verse_id)
+    named_works = detected_collections(latest_user, limit=2)
+    if named_works:
+        labels = ", ".join(_humanize_collection(slug) for slug in named_works)
+        msgs.append(
+            {
+                "role": "system",
+                "content": (
+                    f"The questioner named this work: {labels}. That is the text under discussion. "
+                    "Do not ask which text they mean, and do not say the title is unknown. "
+                    "Answer from Context drawn from that work (and the pinned dossier if present)."
+                ),
+            }
+        )
     if pinned_verse:
         msgs.append(
             {
