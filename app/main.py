@@ -13,6 +13,7 @@ import os
 import random
 import re
 import time
+import unicodedata
 import asyncpg
 
 from .chat_voice import (
@@ -149,9 +150,46 @@ def _valid_maturity(value: str | None) -> str | None:
     return normalized or None
 
 # Catalog scrape / amplification: honor `limit`, and cap unauthenticated hammering.
+# Per-collection pages (mobile Library) need headroom for long works (Meditations ~470).
 _VERSES_MAX_LIMIT = 200
+_VERSES_COLLECTION_MAX_LIMIT = 2000
 _CATALOG_RATE_MAX = int(os.environ.get("CATALOG_RATE_MAX_PER_MIN", "40") or "40")
 _catalog_hits: dict[str, list[float]] = {}
+
+
+def _ascii_fold(value: str) -> str:
+    """NFKD → ASCII so patanjali_yoga_sutras matches patañjali_yoga_sūtras."""
+    return (
+        unicodedata.normalize("NFKD", value)
+        .encode("ascii", "ignore")
+        .decode("ascii")
+    )
+
+
+def _collection_needles(collection: str) -> set[str]:
+    needle = collection.strip().lower()
+    folded = _ascii_fold(needle)
+    variants = {
+        needle,
+        folded,
+        needle.replace("—", "-").replace("–", "-").replace(" ", "_"),
+        folded.replace("—", "-").replace("–", "-").replace(" ", "_"),
+        re.sub(r"[^a-z0-9]+", "_", needle).strip("_"),
+        re.sub(r"[^a-z0-9]+", "_", folded).strip("_"),
+    }
+    return {v for v in variants if v}
+
+
+def _verse_collection_keys(v: dict[str, Any]) -> set[str]:
+    coll = str(v.get("collection", "")).strip().lower()
+    work = str(v.get("work_id", "")).strip().lower()
+    keys = {coll, work, _ascii_fold(coll), _ascii_fold(work)}
+    for raw in (coll, work, _ascii_fold(coll), _ascii_fold(work)):
+        if not raw:
+            continue
+        keys.add(re.sub(r"[^a-z0-9]+", "_", raw).strip("_"))
+        keys.add(raw.replace("—", "-").replace("–", "-").replace(" ", "_"))
+    return {k for k in keys if k}
 
 
 def _hit_limited(bucket: dict[str, list[float]], key: str, max_per_min: int) -> bool:
@@ -271,26 +309,13 @@ async def list_verses(
         raise HTTPException(429, "Too many requests. Please slow down and try again shortly.")
     items = _catalog_items(_valid_maturity(min_maturity))
     if collection:
-        needle = collection.strip().lower()
-        slug = (
-            needle.replace("—", "-")
-            .replace("–", "-")
-            .replace(" ", "_")
-        )
-        # Collapse punctuation so "Confucius — Analects" ≈ confucius_analects
-        slug_compact = re.sub(r"[^a-z0-9]+", "_", needle).strip("_")
-        items = [
-            v
-            for v in items
-            if needle == str(v.get("collection", "")).strip().lower()
-            or slug == str(v.get("work_id", "")).strip().lower()
-            or needle == str(v.get("work_id", "")).strip().lower()
-            or slug_compact == str(v.get("work_id", "")).strip().lower()
-        ]
+        needles = _collection_needles(collection)
+        items = [v for v in items if needles & _verse_collection_keys(v)]
     total = len(items)
     start = max(0, offset)
     if limit is not None:
-        cap = max(1, min(int(limit), _VERSES_MAX_LIMIT))
+        max_limit = _VERSES_COLLECTION_MAX_LIMIT if collection else _VERSES_MAX_LIMIT
+        cap = max(1, min(int(limit), max_limit))
         page = items[start : start + cap]
     else:
         page = items[start:]
