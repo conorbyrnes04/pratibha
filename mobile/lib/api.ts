@@ -32,11 +32,34 @@ function withMaturity(path: string, minMaturity?: EditorialMaturity | "all"): st
   return `${base}${path}${sep}min_maturity=${encodeURIComponent(minMaturity)}`;
 }
 
+/** fetch with an abort timeout so a stalled/cold backend never hangs forever. */
+async function fetchWithTimeout(url: string, ms: number, init?: RequestInit): Promise<Response> {
+  const ctrl = new AbortController();
+  const id = setTimeout(() => ctrl.abort(), ms);
+  try {
+    return await fetch(url, { ...init, signal: ctrl.signal });
+  } finally {
+    clearTimeout(id);
+  }
+}
+
 export async function getVerses(minMaturity?: EditorialMaturity | "all"): Promise<VerseItem[]> {
-  const res = await fetch(withMaturity("/verses", minMaturity));
-  if (!res.ok) throw new Error(`Failed to load verses (${res.status})`);
-  const data = await res.json();
-  return Array.isArray(data?.items) ? (data.items as VerseItem[]) : [];
+  const url = withMaturity("/verses", minMaturity);
+  // Render's free tier sleeps when idle; the first hit can take ~60s to wake.
+  // Two attempts with a generous timeout: the first nudges it awake, the second
+  // lands on a warm instance — instead of a timeout-less fetch hanging forever.
+  let lastErr: unknown = null;
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      const res = await fetchWithTimeout(url, 75000);
+      if (!res.ok) throw new Error(`Failed to load verses (${res.status})`);
+      const data = await res.json();
+      return Array.isArray(data?.items) ? (data.items as VerseItem[]) : [];
+    } catch (e) {
+      lastErr = e;
+    }
+  }
+  throw lastErr instanceof Error ? lastErr : new Error("Could not load verses");
 }
 
 export async function getVerse(id: string): Promise<VerseItem | null> {

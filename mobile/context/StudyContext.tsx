@@ -23,6 +23,7 @@ import Constants from "expo-constants";
 import { getVerses, isLocalhostApiBase, setApiBaseOverride } from "@/lib/api";
 import {
   API_OVERRIDE_KEY,
+  CORPUS_CACHE_KEY,
   asCompletedAt,
   asProgress,
   loadLearnBundle,
@@ -109,9 +110,15 @@ export function StudyProvider({ children }: { children: ReactNode }) {
     try {
       const verses = await getVerses("all");
       setItems(verses);
+      // Cache so the Library opens instantly next launch and survives a
+      // cold/flaky backend (Render free tier sleeps when idle).
+      if (verses.length > 0) {
+        AsyncStorage.setItem(CORPUS_CACHE_KEY, JSON.stringify(verses)).catch(() => undefined);
+      }
     } catch (e) {
       setError(e instanceof Error ? e.message : "Could not reach the Pratibha API");
-      setItems([]);
+      // Keep any cached corpus already on screen rather than blanking it.
+      setItems((prev) => prev);
     } finally {
       setLoading(false);
     }
@@ -119,9 +126,10 @@ export function StudyProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     (async () => {
-      const [bundle, apiOverride] = await Promise.all([
+      const [bundle, apiOverride, cachedCorpus] = await Promise.all([
         loadLearnBundle(),
         __DEV__ ? AsyncStorage.getItem(API_OVERRIDE_KEY) : Promise.resolve(null),
+        AsyncStorage.getItem(CORPUS_CACHE_KEY),
       ]);
       if (apiOverride && !(Constants.isDevice && isLocalhostApiBase(apiOverride))) {
         setApiBaseOverride(apiOverride);
@@ -129,6 +137,19 @@ export function StudyProvider({ children }: { children: ReactNode }) {
       setProgress(bundle.progress);
       setCompletedAt(bundle.completedAt);
       setHydrated(true);
+      // Show the cached corpus immediately (no spinner) while we refresh in the
+      // background; the very first install has no cache and waits for the fetch.
+      if (cachedCorpus) {
+        try {
+          const parsed = JSON.parse(cachedCorpus) as VerseItem[];
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            setItems(parsed);
+            setLoading(false);
+          }
+        } catch {
+          // ignore a corrupt cache
+        }
+      }
       await refreshCorpus();
     })();
   }, [refreshCorpus]);

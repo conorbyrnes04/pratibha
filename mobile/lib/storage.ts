@@ -7,6 +7,7 @@ export const JOURNAL_KEY = "pratibha.journal.v1";
 export const API_OVERRIDE_KEY = "pratibha.apiBase";
 export const APP_ICON_KEY = "pratibha.appIcon.v1";
 export const THEME_KEY = "pratibha.theme.v1";
+export const CORPUS_CACHE_KEY = "pratibha.corpus.v1";
 
 export type ProgressMap = Record<string, boolean>;
 export type CompletedAtMap = Record<string, string>;

@@ -106,7 +106,7 @@ function TomeCard({ tome, onOpen }: { tome: LibraryTome; onOpen: () => void }) {
 export default function ReadTab() {
   const ui = useUi();
   const { colors } = useTheme();
-  const { items, loading, refreshCorpus } = useStudy();
+  const { items, loading, error, refreshCorpus } = useStudy();
   const [q, setQ] = useState("");
   const [collection, setCollection] = useState("all");
   const [theme, setTheme] = useState("all");
@@ -207,11 +207,25 @@ export default function ReadTab() {
       {showShelf ? (
         <View style={{ marginTop: 18 }}>
           {totalTomes === 0 ? (
-            <View style={ui.card}>
-              <PratibhaText variant="soft">
-                {loading ? "Opening the house…" : "No texts match this theme. Clear the filter to see the full shelf."}
-              </PratibhaText>
-            </View>
+            error && !loading ? (
+              <View style={ui.card}>
+                <PratibhaText variant="heading" style={{ fontSize: 18, color: colors.rose }}>
+                  Couldn’t reach the library
+                </PratibhaText>
+                <PratibhaText variant="soft" style={{ marginTop: 8, fontSize: 14 }}>
+                  The library server may be waking up. Give it a moment and try again.
+                </PratibhaText>
+                <Pressable style={[ui.button, { marginTop: 12 }]} onPress={() => void refreshCorpus()}>
+                  <PratibhaText style={ui.buttonText}>Try again</PratibhaText>
+                </Pressable>
+              </View>
+            ) : (
+              <View style={ui.card}>
+                <PratibhaText variant="soft">
+                  {loading ? "Opening the house… (the server may be waking up)" : "No texts match this theme. Clear the filter to see the full shelf."}
+                </PratibhaText>
+              </View>
+            )
           ) : (
             <>
               <PratibhaText variant="label">
