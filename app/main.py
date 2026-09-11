@@ -151,13 +151,49 @@ def _cached_item_count() -> int:
     return len(verses) if isinstance(verses, list) else 0
 
 
+_VERSES_MAX_LIMIT = 2000
+
+
 @app.get("/verses")
-async def list_verses(min_maturity: str | None = None):
-    """Library index — slim payloads so the browser isn't handed ~9MB of layers."""
+async def list_verses(
+    min_maturity: str | None = None,
+    collection: str | None = None,
+    limit: int | None = None,
+    offset: int = 0,
+):
+    """Library index — slim payloads so the browser isn't handed ~9MB of layers.
+
+    Mobile (Boox/Odin) must filter by `collection` / work_id — the full dump
+    freezes Hermes. Always prefer /sources for the shelf, then this filter per tome.
+    """
     items = filter_by_maturity(get_all_verses(), _valid_maturity(min_maturity))
+    if collection:
+        needle = collection.strip().lower()
+        slug = needle.replace("—", "-").replace("–", "-").replace(" ", "_")
+        slug_compact = re.sub(r"[^a-z0-9]+", "_", needle).strip("_")
+        items = [
+            v
+            for v in items
+            if needle == str(v.get("collection", "")).strip().lower()
+            or slug == str(v.get("work_id", "")).strip().lower()
+            or needle == str(v.get("work_id", "")).strip().lower()
+            or slug_compact == str(v.get("work_id", "")).strip().lower()
+        ]
+    total = len(items)
+    start = max(0, offset)
+    if limit is not None:
+        cap = max(1, min(int(limit), _VERSES_MAX_LIMIT))
+        page = items[start : start + cap]
+    else:
+        page = items[start:]
     # Short CDN/browser freshness; the web client also keeps a localStorage catalog.
     return JSONResponse(
-        content={"items": [_verse_list_item(v) for v in items]},
+        content={
+            "items": [_verse_list_item(v) for v in page],
+            "total": total,
+            "offset": start,
+            "limit": limit,
+        },
         headers={"Cache-Control": "public, max-age=60, stale-while-revalidate=300"},
     )
 
