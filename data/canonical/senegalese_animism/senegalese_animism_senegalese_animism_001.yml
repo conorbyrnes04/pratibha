@@ -1,0 +1,143 @@
+source_id: SEN_ANIM_001
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_001
+unit_label: The Invisible Master Is Named as the Sky
+title: The Invisible Master Is Named as the Sky
+unit_type: teaching_passage
+commentary: 'The claim is that the highest principle is not an idol, not a carved object, and not a tribal
+  mascot, but an invisible sovereignty coextensive with the sky. Lasnet''s counterintuitive report — against
+  the colonial habit of calling everything "fetish" — is that the Serer already possess a philosophical
+  theism: one unseen master of all things. The further precision is linguistic. God and sky share a name.
+  This is not a failure to distinguish meteorology from metaphysics. It is a refusal to locate the absolute
+  in a manufactured image. The sky is the nearest analog of what cannot be pictured: height without a
+  summit, presence without a statue, seeing without being seen. Serer later sources (not used here because
+  they are not public domain) call this being Roog Sene, "Roog the Immensity." Even in Lasnet''s thinner
+  1900 notice the structure is already visible: invisibility, totality, moral regard, and a name that
+  cannot be reduced to a cult-object. Delafosse will add the regional key: a creator God of this type
+  is a cosmogonic-philosophical concept more than a liturgical addressee. The Serer confirm that pattern
+  from the ground: they know the master of all things, and they do not confuse that knowledge with a temple
+  of Roog. Existentially, the passage trains a distinction most religious cultures blur. The highest is
+  not the most available. What is named as the sky is precisely what you cannot grasp, bargain with, or
+  display. To "practice the good" is therefore not a private spirituality aimed at capturing God, but
+  a way of living under a gaze that needs no shrine. The first philosophical act of Senegalese animism,
+  in this source, is negative: do not make an image of the sky.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Les Sérères croient à l'existence d'un être invisible, maître de toutes choses, qui habite le
+    ciel au-dessus des nuages et qui voit avec satisfaction les hommes pratiquer le bien; ils le désignent
+    du même nom que le ciel, rog sérère, koch none.
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Key Serer terms: Rog / Roog (Serer-Sine: sky,
+    God); Koch / Koox (Serer-Noon / Cangin: the same supreme being).'
+- kind: translation
+  label: Pratibha Translation
+  body: 'There is an invisible master of all things. That master inhabits the sky above the clouds, sees
+    human conduct, and takes satisfaction in those who practice the good. The Serer name this master with
+    the same word they use for the sky itself: Rog among the Sine, Koch among the Noon.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that the highest principle is not an idol, not a carved object, and not a tribal
+    mascot, but an invisible sovereignty coextensive with the sky. Lasnet''s counterintuitive report —
+    against the colonial habit of calling everything "fetish" — is that the Serer already possess a philosophical
+    theism: one unseen master of all things. The further precision is linguistic. God and sky share a
+    name. This is not a failure to distinguish meteorology from metaphysics. It is a refusal to locate
+    the absolute in a manufactured image. The sky is the nearest analog of what cannot be pictured: height
+    without a summit, presence without a statue, seeing without being seen. Serer later sources (not used
+    here because they are not public domain) call this being Roog Sene, "Roog the Immensity." Even in
+    Lasnet''s thinner 1900 notice the structure is already visible: invisibility, totality, moral regard,
+    and a name that cannot be reduced to a cult-object. Delafosse will add the regional key: a creator
+    God of this type is a cosmogonic-philosophical concept more than a liturgical addressee. The Serer
+    confirm that pattern from the ground: they know the master of all things, and they do not confuse
+    that knowledge with a temple of Roog. Existentially, the passage trains a distinction most religious
+    cultures blur. The highest is not the most available. What is named as the sky is precisely what you
+    cannot grasp, bargain with, or display. To "practice the good" is therefore not a private spirituality
+    aimed at capturing God, but a way of living under a gaze that needs no shrine. The first philosophical
+    act of Senegalese animism, in this source, is negative: do not make an image of the sky.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: Rog / Roog
+    definition: Serer word for sky and for the supreme being -> God is not a being in the sky so much
+      as the sky-name of the invisible master -> translating only as "God" loses the refusal of images;
+      translating only as "sky" loses moral sovereignty
+  - term: Koch / Koox
+    definition: 'Noon / Cangin name of the same supreme being (Lasnet: koch none) -> the Noon are among
+      the Serer groups most resistant to conversion in the PD sources -> default "local deity" misses
+      that this is the same philosophical absolute under another language'
+  - term: être invisible
+    definition: 'invisible being -> Lasnet''s phrase already blocks idol-theory: the master is not the
+      tree, the stone, or the gris-gris -> reducing the religion to "fetishism" contradicts the opening
+      sentence of the very source that was supposed to prove it'
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Īśāvāsya Upaniṣad 1
+    resonance: Both begin from a totality that already envelops the world, so that the sacred is not added
+      to objects but recognized as their covering.
+    divergence: The Upaniṣad names that covering as the Lord (īśā) in a Vedic-renunciatory key; Serer
+      teaching names it as the sky and then, in practice, withholds direct cult from it.
+  - citation: Dào Dé Jīng 1 and 25
+    resonance: Both refuse a graspable name for the highest and use a cosmic analog (way, sky) rather
+      than a statue.
+    divergence: Daoist emptiness is non-theistic; Serer Rog remains a master who regards the good.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand where you can see open sky. For three minutes do not pray to it and do not photograph it.
+    Let the sky be the analog of what you cannot make into an object. Then name one ordinary good you
+    will practice today as if it were already seen.
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '1'
+  section: Lasnet 1900, Sérères — Religion
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Religion
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: 'There is an invisible master of all things. That master inhabits the sky above the clouds,
+  sees human conduct, and takes satisfaction in those who practice the good. The Serer name this master
+  with the same word they use for the sky itself: Rog among the Sine, Koch among the Noon.'
+abhyasa: Stand where you can see open sky. For three minutes do not pray to it and do not photograph it.
+  Let the sky be the analog of what you cannot make into an object. Then name one ordinary good you will
+  practice today as if it were already seen.
+practice: Stand where you can see open sky. For three minutes do not pray to it and do not photograph
+  it. Let the sky be the analog of what you cannot make into an object. Then name one ordinary good you
+  will practice today as if it were already seen.
+original: Les Sérères croient à l'existence d'un être invisible, maître de toutes choses, qui habite le
+  ciel au-dessus des nuages et qui voit avec satisfaction les hommes pratiquer le bien; ils le désignent
+  du même nom que le ciel, rog sérère, koch none.
+transliteration: 'French ethnographic report of Serer oral teaching. Key Serer terms: Rog / Roog (Serer-Sine:
+  sky, God); Koch / Koox (Serer-Noon / Cangin: the same supreme being).'
+tts_key: true

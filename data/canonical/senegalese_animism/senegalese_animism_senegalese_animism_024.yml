@@ -1,0 +1,126 @@
+source_id: SEN_ANIM_024
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_024
+unit_label: The Griot Is Returned to the Hollow Baobab
+title: The Griot Is Returned to the Hollow Baobab
+unit_type: teaching_passage
+commentary: 'The claim is that some souls have a different residence, not a lesser rite. Lasnet''s verb
+  jette can sound like contempt. The next clause blocks that reading: the same ceremonial as the others.
+  Wrapping in pagnes is the same honor. What changes is the house. Ordinary Serer go into an east-facing
+  tumulus outside the village. Griots go into the tree that already houses mammam. The baobab of unit
+  3 is not a dump. It is a preferred dwelling of spirits. To return a griot there is to assign a caste
+  of speech to the tree-house rather than to the earth-mound. Colonial caste-sneer is refused. The griot
+  remains apart in life (unit 22); in death that apartness is topological. Song and praise-speech belong
+  to a different hollow than farming bodies. Existentially, the teaching is that equality of ceremonial
+  care does not require identical placement. A society can honor two residences without pretending everyone
+  is the same kind of dead. You cannot found a griot-tree. You can ask, of your own end, whether you have
+  only imagined one generic hole, and whether some lives you know already belong to a different house.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Les griots ne sont pas enterrés, on les jette dans un baobab creux, enveloppés de pagnes, et avec
+    le même cérémonial que pour les autres Sérères.
+- kind: iast
+  label: Romanization
+  body: French ethnographic report of Serer oral teaching. Griots are not earth-buried; they are placed
+    in a hollow baobab, wrapped in cloths, with the same ceremonial as other Serer. The baobab is already
+    a spirit-dwelling (unit 3).
+- kind: translation
+  label: Pratibha Translation
+  body: Griots are not buried. They are placed in a hollow baobab, wrapped in cloths, and with the same
+    ceremonial as for the other Serer.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that some souls have a different residence, not a lesser rite. Lasnet''s verb jette
+    can sound like contempt. The next clause blocks that reading: the same ceremonial as the others. Wrapping
+    in pagnes is the same honor. What changes is the house. Ordinary Serer go into an east-facing tumulus
+    outside the village. Griots go into the tree that already houses mammam. The baobab of unit 3 is not
+    a dump. It is a preferred dwelling of spirits. To return a griot there is to assign a caste of speech
+    to the tree-house rather than to the earth-mound. Colonial caste-sneer is refused. The griot remains
+    apart in life (unit 22); in death that apartness is topological. Song and praise-speech belong to
+    a different hollow than farming bodies. Existentially, the teaching is that equality of ceremonial
+    care does not require identical placement. A society can honor two residences without pretending everyone
+    is the same kind of dead. You cannot found a griot-tree. You can ask, of your own end, whether you
+    have only imagined one generic hole, and whether some lives you know already belong to a different
+    house.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: griot
+    definition: the praise-speaker caste, kept apart in life and given the baobab in death -> not a "minstrel"
+      and not trash -> speech-people of a tree-residence
+  - term: baobab creux
+    definition: hollow baobab -> already a mammam-dwelling in unit 3 -> the griot's grave is a spirit-house,
+      not a refuse pit
+  - term: même cérémonial
+    definition: the same ceremonial -> equality of rite with difference of place -> "thrown away" as a
+      translation of jeter would erase this clause
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Hindu difference of funeral for sannyāsin (often without ordinary cremation-house rites)
+    resonance: Both can honor a person with a full rite that is not the standard earth or fire of the
+      householder.
+    divergence: The sannyāsin's difference is renunciation of the world; the griot's is caste-office returned
+      to the spirit-tree.
+  - citation: Celtic and northern tree-burial motifs (structural, late)
+    resonance: Both imagine some dead as belonging to a tree rather than to a flat grave.
+    divergence: Romantic tree-burial is often literary; Lasnet records a specific hollow baobab with the
+      same wrapping as earth-burial.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Stand at one actual tree. Without imitating a funeral, admit that a body could be housed in more
+    than earth. Then do one act of equal care toward someone your world ranks apart — a thanks, a share
+    of food, a listening — without demanding they occupy your house.
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '24'
+  section: Lasnet 1900, Sérères — Funérailles
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Funérailles
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: Griots are not buried. They are placed in a hollow baobab, wrapped in cloths, and with the
+  same ceremonial as for the other Serer.
+abhyasa: Stand at one actual tree. Without imitating a funeral, admit that a body could be housed in more
+  than earth. Then do one act of equal care toward someone your world ranks apart — a thanks, a share
+  of food, a listening — without demanding they occupy your house.
+practice: Stand at one actual tree. Without imitating a funeral, admit that a body could be housed in
+  more than earth. Then do one act of equal care toward someone your world ranks apart — a thanks, a share
+  of food, a listening — without demanding they occupy your house.
+original: Les griots ne sont pas enterrés, on les jette dans un baobab creux, enveloppés de pagnes, et
+  avec le même cérémonial que pour les autres Sérères.
+transliteration: French ethnographic report of Serer oral teaching. Griots are not earth-buried; they
+  are placed in a hollow baobab, wrapped in cloths, with the same ceremonial as other Serer. The baobab
+  is already a spirit-dwelling (unit 3).

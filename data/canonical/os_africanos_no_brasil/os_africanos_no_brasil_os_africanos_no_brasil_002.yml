@@ -1,0 +1,128 @@
+source_id: AFRIC_002
+category: root_text
+work_id: os_africanos_no_brasil
+work_title: Os Africanos no Brasil
+unit_id: os_africanos_no_brasil.os_africanos_no_brasil_002
+unit_label: Bahia Was Sudanese
+title: Bahia Was Sudanese
+unit_type: teaching_passage
+commentary: 'The historical claim is a map, not a compliment: Bahia’s African majority was Sudanese in
+  the old ethnographic sense — Yoruba/Nagô, Jeje/Ewe, Hausa, Tapa, and their neighbors — not exclusively
+  Bantu. Brazilian science had already decided the country was Bantu-colonized, and the exclusivism flattened
+  the city that would hold Gêge-Nagô terreiros and Malê houses. Rodrigues, racial theorist, writes the
+  correction inside a poisoned verb. Colonizaram o Brasil treats captive nations as colonists and keeps
+  the scientist’s right to sort stocks. Do not take Sudanese versus Bantu as a ranking of intelligence
+  or religion. Cap. VIII’s ladder is out of the classroom. The ethnographic remainder is regional: what
+  took root in Bahia is not what took root everywhere in Brazil. Nagô speech, Jeje titles, and Malê Arabic
+  are Sudanese facts of this city. Bantu life is not therefore empty or "monotheist by default" — a later
+  unit will refuse that smear. Johnson’s Yoruba faith is one Sudanese stream written from the inside;
+  Ellis’s òwe keep Yoruba as a speaking people, not a Bantu footnote. Existentially, you correct the inherited
+  map before you speak of African Brazil as one block. If your picture of the country has only one African
+  family, you are still in the exclusivism the sentence names.'
+themes:
+- candomble
+- nago
+- jeje
+- male
+- bahia
+tags:
+- os_africanos_no_brasil
+- candomble
+- nago
+- jeje
+- male
+- bahia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os
+  Africanos no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932),
+  public domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+  Homero Pires’s preface or later editors.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: A crença que domina os cientistas pátrios é que foram Bantus os povos negros que colonizaram o
+    Brasil. No erro deste exclusivismo incidem etnólogos, historiadores e literatos. Os primeiros [sudaneses]
+    predominaram na Bahia.
+- kind: iast
+  label: Romanization
+  body: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key terms: sudaneses
+    (West African / Sudanic nations in the old sense); Bantus; Bahia.'
+- kind: translation
+  label: Pratibha Translation
+  body: The belief that dominates the country’s scientists is that the Black peoples who settled Brazil
+    were Bantu. Ethnologists, historians, and men of letters fall into the error of that exclusivism.
+    The first group — the Sudanese — predominated in Bahia.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The historical claim is a map, not a compliment: Bahia’s African majority was Sudanese in the
+    old ethnographic sense — Yoruba/Nagô, Jeje/Ewe, Hausa, Tapa, and their neighbors — not exclusively
+    Bantu. Brazilian science had already decided the country was Bantu-colonized, and the exclusivism
+    flattened the city that would hold Gêge-Nagô terreiros and Malê houses. Rodrigues, racial theorist,
+    writes the correction inside a poisoned verb. Colonizaram o Brasil treats captive nations as colonists
+    and keeps the scientist’s right to sort stocks. Do not take Sudanese versus Bantu as a ranking of
+    intelligence or religion. Cap. VIII’s ladder is out of the classroom. The ethnographic remainder is
+    regional: what took root in Bahia is not what took root everywhere in Brazil. Nagô speech, Jeje titles,
+    and Malê Arabic are Sudanese facts of this city. Bantu life is not therefore empty or "monotheist
+    by default" — a later unit will refuse that smear. Johnson’s Yoruba faith is one Sudanese stream written
+    from the inside; Ellis’s òwe keep Yoruba as a speaking people, not a Bantu footnote. Existentially,
+    you correct the inherited map before you speak of African Brazil as one block. If your picture of
+    the country has only one African family, you are still in the exclusivism the sentence names.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: sudaneses
+    definition: nineteenth-century label for West African / Sudanic nations (Nagô, Jeje, Hausa, Tapa)
+      -> Bahia’s predominant African presence -> not a racial grade above Bantu, and not a synonym for
+      all of Brazil
+  - term: Bantus
+    definition: Central and Southern African nations present in Brazil -> the exclusivist default of Brazilian
+      science in Rodrigues’s day -> denying their monopoly in Bahia is not a denial of Bantu religion
+      elsewhere
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nina Rodrigues, O Animismo Fetichista — Only One God in the Universe
+    resonance: Both locate Bahia’s public African religion in a Yoruba/Nagô-weighted field rather than
+      a generic Black Brazil.
+    divergence: Animismo reports the terreiro’s court; this unit reports the demographic error that hid
+      that court from scientists.
+  - citation: Ellis, Yoruba òwe — Another's eye is not like one's own
+    resonance: 'Both refuse a single vantage: what one observer sees as the whole people is another people’s
+      blind spot.'
+    divergence: The òwe is a proverb about persons; this sentence is a correction of a national scientific
+      myth.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, name the African nation you silently assume when someone says Bahia or Brazil. Write a
+    second nation that the assumption erased. If you cannot, the exclusivism is still yours.
+provenance:
+  collection: Os Africanos no Brasil
+  category: candomble-bahia
+  verse: '2'
+  section: Rodrigues, Os Africanos, cap. I
+  cultural_context: Historical conditions through which Nagô, Jeje, Bantu, and Malê (Islam) practices
+    took root in Brazil. Sibling to *O Animismo Fetichista* (liturgy). Rodrigues was a physician and racial
+    theorist; the book is carregada de preconceito. Restore nations, language, Malê prayer, Gêge-Nagô
+    cult, and police survival — not his hierarchy, not "fetish" as doctrine, not criminal anthropology.
+    Study reading pending review by Candomblé and Malê tradition-bearers.
+  original_source: Rodrigues, Os Africanos, cap. I
+  original_reliability: SOURCED — Rodrigues Portuguese (posthumous 1932); Edelstein 2010 diplomatic of
+    that text. Not Homero Pires preface. Not Cap. VIII/IX as doctrine.
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os Africanos
+    no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932), public
+    domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+    Homero Pires’s preface or later editors.'
+translation: The belief that dominates the country’s scientists is that the Black peoples who settled
+  Brazil were Bantu. Ethnologists, historians, and men of letters fall into the error of that exclusivism.
+  The first group — the Sudanese — predominated in Bahia.
+abhyasa: Today, name the African nation you silently assume when someone says Bahia or Brazil. Write a
+  second nation that the assumption erased. If you cannot, the exclusivism is still yours.
+practice: Today, name the African nation you silently assume when someone says Bahia or Brazil. Write
+  a second nation that the assumption erased. If you cannot, the exclusivism is still yours.
+original: A crença que domina os cientistas pátrios é que foram Bantus os povos negros que colonizaram
+  o Brasil. No erro deste exclusivismo incidem etnólogos, historiadores e literatos. Os primeiros [sudaneses]
+  predominaram na Bahia.
+transliteration: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key
+  terms: sudaneses (West African / Sudanic nations in the old sense); Bantus; Bahia.'

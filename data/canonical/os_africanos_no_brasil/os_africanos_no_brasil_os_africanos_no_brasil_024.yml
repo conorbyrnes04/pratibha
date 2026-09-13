@@ -1,0 +1,131 @@
+source_id: AFRIC_024
+category: root_text
+work_id: os_africanos_no_brasil
+work_title: Os Africanos no Brasil
+unit_id: os_africanos_no_brasil.os_africanos_no_brasil_024
+unit_label: The Cult That Resisted the Whip
+title: The Cult That Resisted the Whip
+unit_type: teaching_passage
+commentary: 'The historical claim is a resistance with a list of enemies: whip, slaveholder, white Catholicism,
+  clergy, press, police. The Gêge-Nagô cult was not absorbed. The clergy stopped trying. The house is
+  destined to outlast the next two violences as well. This is not a compliment Rodrigues enjoys. He writes
+  infiéis and a destiny of resistance as a problem for the nation — a cult that will not die on schedule.
+  Poison. Do not take his forecast as a wish for police victory, and do not take it as a romance of invincibility.
+  The ethnographic remainder is the sequence of failed erasures. Conversion at the whip failed. Absorption
+  into white Catholicism failed. Clergy capitulated. Press and police are named as the current instruments.
+  Animismo’s terreiro is a jurisdiction; this unit is why that jurisdiction still has a door. Lasnet’s
+  people do not leave ancestral land voluntarily; these people were taken and still did not become the
+  master’s church. Existentially, you name one pressure that tried to absorb a practice you keep — office,
+  family, feed, force — and you keep the practice today. Resistance here is not a mood. It is a cult that
+  remained unabsorbed.'
+themes:
+- candomble
+- nago
+- jeje
+- male
+- bahia
+tags:
+- os_africanos_no_brasil
+- candomble
+- nago
+- jeje
+- male
+- bahia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os
+  Africanos no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932),
+  public domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+  Homero Pires’s preface or later editors.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: O culto gêge-nagô que resistiu à conversão católica a chicote nas fazendas e plantações; que sobreviveu
+    a todas as violências dos senhores de escravos; que não se absorveu até hoje nas práticas do catolicismo
+    dos brancos, diante de cuja resistência capitulou o clero católico que já nem tenta converter os infiéis;
+    esse culto está destinado a resistir, por longo prazo ainda, à propaganda da imprensa como às violências
+    da polícia.
+- kind: iast
+  label: Romanization
+  body: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key terms: culto
+    gêge-nagô; chicote; clero católico; polícia; imprensa.'
+- kind: translation
+  label: Pratibha Translation
+  body: The Gêge-Nagô cult that resisted Catholic conversion by the whip on the plantations; that survived
+    every violence of the slaveholders; that has not to this day been absorbed into the practices of the
+    whites’ Catholicism, before whose resistance the Catholic clergy capitulated and no longer even tries
+    to convert the "infidels" — that cult is destined to resist, for a long time yet, the propaganda of
+    the press as well as the violences of the police.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The historical claim is a resistance with a list of enemies: whip, slaveholder, white Catholicism,
+    clergy, press, police. The Gêge-Nagô cult was not absorbed. The clergy stopped trying. The house is
+    destined to outlast the next two violences as well. This is not a compliment Rodrigues enjoys. He
+    writes infiéis and a destiny of resistance as a problem for the nation — a cult that will not die
+    on schedule. Poison. Do not take his forecast as a wish for police victory, and do not take it as
+    a romance of invincibility. The ethnographic remainder is the sequence of failed erasures. Conversion
+    at the whip failed. Absorption into white Catholicism failed. Clergy capitulated. Press and police
+    are named as the current instruments. Animismo’s terreiro is a jurisdiction; this unit is why that
+    jurisdiction still has a door. Lasnet’s people do not leave ancestral land voluntarily; these people
+    were taken and still did not become the master’s church. Existentially, you name one pressure that
+    tried to absorb a practice you keep — office, family, feed, force — and you keep the practice today.
+    Resistance here is not a mood. It is a cult that remained unabsorbed.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: chicote
+    definition: the whip on plantations as an instrument of Catholic conversion -> failed -> "mission"
+      as kindness hides this sentence’s instrument
+  - term: infiéis
+    definition: the clergy’s word for the unconverted -> Rodrigues’s borrowed sneer -> the remainder is
+      a cult the clergy stopped trying to absorb
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Nina Rodrigues, O Animismo Fetichista — Terreiro Means Place and Jurisdiction
+    resonance: Both treat the standing house as a jurisdiction that does not dissolve because the surrounding
+      city is Catholic.
+    divergence: Animismo defines the place; this unit names the violences the place outlasted.
+  - citation: Lasnet, Senegalese Animism — One Does Not Leave Ancestral Land Voluntarily
+    resonance: Both refuse absorption as the natural end of a cult under pressure.
+    divergence: Serer refusal is not to leave the land; Gêge-Nagô refusal is not to become the master’s
+      church after being taken.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Today, name one pressure — office, family, feed, or force — that has tried to absorb a practice
+    you keep. Keep the practice once, unabsorbed. Do not announce it as heroism.
+provenance:
+  collection: Os Africanos no Brasil
+  category: candomble-bahia
+  verse: '24'
+  section: Rodrigues, Os Africanos, cap. VII
+  cultural_context: Historical conditions through which Nagô, Jeje, Bantu, and Malê (Islam) practices
+    took root in Brazil. Sibling to *O Animismo Fetichista* (liturgy). Rodrigues was a physician and racial
+    theorist; the book is carregada de preconceito. Restore nations, language, Malê prayer, Gêge-Nagô
+    cult, and police survival — not his hierarchy, not "fetish" as doctrine, not criminal anthropology.
+    Study reading pending review by Candomblé and Malê tradition-bearers.
+  original_source: Rodrigues, Os Africanos, cap. VII
+  original_reliability: SOURCED — Rodrigues Portuguese (posthumous 1932); Edelstein 2010 diplomatic of
+    that text. Not Homero Pires preface. Not Cap. VIII/IX as doctrine.
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Raimundo Nina Rodrigues, *Os Africanos
+    no Brasil* (written c. 1890–1905; first published São Paulo: Companhia Editora Nacional, 1932), public
+    domain in Brazil (author d. 1906). Original layer is cleaned Rodrigues Portuguese. Does not follow
+    Homero Pires’s preface or later editors.'
+translation: The Gêge-Nagô cult that resisted Catholic conversion by the whip on the plantations; that
+  survived every violence of the slaveholders; that has not to this day been absorbed into the practices
+  of the whites’ Catholicism, before whose resistance the Catholic clergy capitulated and no longer even
+  tries to convert the "infidels" — that cult is destined to resist, for a long time yet, the propaganda
+  of the press as well as the violences of the police.
+abhyasa: Today, name one pressure — office, family, feed, or force — that has tried to absorb a practice
+  you keep. Keep the practice once, unabsorbed. Do not announce it as heroism.
+practice: Today, name one pressure — office, family, feed, or force — that has tried to absorb a practice
+  you keep. Keep the practice once, unabsorbed. Do not announce it as heroism.
+original: O culto gêge-nagô que resistiu à conversão católica a chicote nas fazendas e plantações; que
+  sobreviveu a todas as violências dos senhores de escravos; que não se absorveu até hoje nas práticas
+  do catolicismo dos brancos, diante de cuja resistência capitulou o clero católico que já nem tenta converter
+  os infiéis; esse culto está destinado a resistir, por longo prazo ainda, à propaganda da imprensa como
+  às violências da polícia.
+transliteration: 'Rodrigues Portuguese of Afro-Brazilian observation (written c. 1905, pub. 1932). Key
+  terms: culto gêge-nagô; chicote; clero católico; polícia; imprensa.'
+tts_key: true

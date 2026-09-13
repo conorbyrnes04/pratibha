@@ -1,0 +1,143 @@
+source_id: SEN_ANIM_008
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_008
+unit_label: Souls of One Essence in Every Being
+title: Souls of One Essence in Every Being
+unit_type: teaching_passage
+commentary: 'The claim is ontological equality of essence across kinds, plus difference of office. Lasnet
+  does not write the word essence. He writes a world in which a forest, a field, a spring, a village,
+  a house, a baobab, a bird, and a newly dead human are all sites of personal life. That list is already
+  the doctrine. A person''s soul, a baobab''s mammam, a spring''s génie are the same sort of thing: addressable
+  life. They are not the same job. While a living human soul is busy governing its own body, it is not
+  a god. After death, freed from that inner administration, the same life may take a bird or become a
+  power the living must reckon with. A field, having no wandering animal body to run, already has that
+  outward independence — which is why land-soul and ancestor-soul can fuse, and why the Serer pour at
+  the baobab rather than at an empty symbol. Later Delafosse will name this nia: personal life of one
+  essence in the apparently inanimate as well as the animate. The Senegalese instance does not wait for
+  the Mande word. Libation makes sense only if the tree has a life. Speaking into the ear makes sense
+  only if the dead still have a life. Not addressing Roog makes sense if Roog is sky-scale soul, not a
+  nearby specialist. Existentially, the teaching forbids two reductions. You may not treat a place as
+  dead stuff. You may not treat a person as only a body. And you may not treat all souls as interchangeable
+  helpers. Personality means this tree, this spring, this ancestor — not "energy." The contemplative implication
+  is severe: relation is always particular. Animism is the opposite of a blur.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Ils croient surtout aux esprits, mammam, et ne s'adressent jamais à Dieu; ces esprits sont très
+    nombreux, il y a le génie de la forêt, des champs, de la fontaine, du village, de la case, etc. Ils
+    résident volontiers dans certains arbres comme le baobab. Les Sérères croient à une vie future et
+    à la métempsycose... ils pensent que l'âme du défunt est entrée dans son corps.
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Ontology recovered from Lasnet: mammam of
+    forest, field, spring, village, house; human soul able to enter a bird. Same-essence language is the
+    philosophical reading of that populated world.'
+- kind: translation
+  label: Pratibha Translation
+  body: 'They believe above all in the spirits, mammam — genius of the forest, the fields, the spring,
+    the village, the house — and those spirits willingly reside in certain trees such as the baobab. They
+    believe in a future life and in metempsychosis: the soul of the dead may enter the body of a bird.
+    Personal life is not confined to the human envelope.'
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is ontological equality of essence across kinds, plus difference of office. Lasnet
+    does not write the word essence. He writes a world in which a forest, a field, a spring, a village,
+    a house, a baobab, a bird, and a newly dead human are all sites of personal life. That list is already
+    the doctrine. A person''s soul, a baobab''s mammam, a spring''s génie are the same sort of thing:
+    addressable life. They are not the same job. While a living human soul is busy governing its own body,
+    it is not a god. After death, freed from that inner administration, the same life may take a bird
+    or become a power the living must reckon with. A field, having no wandering animal body to run, already
+    has that outward independence — which is why land-soul and ancestor-soul can fuse, and why the Serer
+    pour at the baobab rather than at an empty symbol. Later Delafosse will name this nia: personal life
+    of one essence in the apparently inanimate as well as the animate. The Senegalese instance does not
+    wait for the Mande word. Libation makes sense only if the tree has a life. Speaking into the ear makes
+    sense only if the dead still have a life. Not addressing Roog makes sense if Roog is sky-scale soul,
+    not a nearby specialist. Existentially, the teaching forbids two reductions. You may not treat a place
+    as dead stuff. You may not treat a person as only a body. And you may not treat all souls as interchangeable
+    helpers. Personality means this tree, this spring, this ancestor — not "energy." The contemplative
+    implication is severe: relation is always particular. Animism is the opposite of a blur.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: mammam
+    definition: spirits of forest, field, spring, village, house -> personal lives of places, not a generic
+      life-force -> "energy" erases personality; "god" overstates department
+  - term: âme
+    definition: soul able to leave a washed body and enter a bird -> the human instance of the same personal
+      life the baobab already has -> English "soul" can sound Christian-immortal in a different key; here
+      it is movable life
+  - term: pangool
+    definition: later Serer name for the free ancestral and land powers in this middle -> what the living
+      bind by rite -> not every mammam is an ancestor; some are other-than-human from the start
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Śiva Sūtra I.1 (caitanyam ātmā)
+    resonance: Both refuse to treat awareness or life-principle as a byproduct of matter.
+    divergence: The sūtra identifies consciousness as the Self of all; Lasnet describes many personal
+      lives of places and birds, not one Self.
+  - citation: Zhuangzi, butterfly dream / Free and Easy Wandering
+    resonance: Both make the species-boundary permeable to spirit.
+    divergence: Zhuangzi's register is transformation and epistemic play; Serer watching and pouring are
+      funeral and agricultural epistemology, not play.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Walk through one ordinary setting (kitchen, street, field). Name three distinct beings — a tool
+    or stone, a plant, a person. For each, silently say "personal life, not mine." Feel the difference
+    between that recognition and a vague glow of "everything is one."
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '8'
+  section: Lasnet 1900, Sérères — Religion (spirits of place; soul entering a bird)
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Religion (spirits of place; soul entering a bird)
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: 'They believe above all in the spirits, mammam — genius of the forest, the fields, the spring,
+  the village, the house — and those spirits willingly reside in certain trees such as the baobab. They
+  believe in a future life and in metempsychosis: the soul of the dead may enter the body of a bird. Personal
+  life is not confined to the human envelope.'
+abhyasa: Walk through one ordinary setting (kitchen, street, field). Name three distinct beings — a tool
+  or stone, a plant, a person. For each, silently say "personal life, not mine." Feel the difference between
+  that recognition and a vague glow of "everything is one."
+practice: Walk through one ordinary setting (kitchen, street, field). Name three distinct beings — a tool
+  or stone, a plant, a person. For each, silently say "personal life, not mine." Feel the difference between
+  that recognition and a vague glow of "everything is one."
+original: Ils croient surtout aux esprits, mammam, et ne s'adressent jamais à Dieu; ces esprits sont très
+  nombreux, il y a le génie de la forêt, des champs, de la fontaine, du village, de la case, etc. Ils
+  résident volontiers dans certains arbres comme le baobab. Les Sérères croient à une vie future et à
+  la métempsycose... ils pensent que l'âme du défunt est entrée dans son corps.
+transliteration: 'French ethnographic report of Serer oral teaching. Ontology recovered from Lasnet: mammam
+  of forest, field, spring, village, house; human soul able to enter a bird. Same-essence language is
+  the philosophical reading of that populated world.'

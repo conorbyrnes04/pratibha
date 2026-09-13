@@ -1,0 +1,136 @@
+source_id: SEN_ANIM_022
+category: root_text
+work_id: senegalese_animism
+work_title: Senegalese Animism
+unit_id: senegalese_animism.senegalese_animism_022
+unit_label: The Lamane Holds the Soil
+title: The Lamane Holds the Soil
+unit_type: teaching_passage
+commentary: 'The claim is that land is not a free market and not a royal whim. It sits with named masters
+  who transmit it in the male line and lend it. Lamane is the living face of unit 9''s ancestor-land fusion.
+  To hold the soil is already a religious-political office: the parcel has a someone who may speak for
+  it, rent it, and be chosen as village head because the soil already chose that house. Lasnet''s surrounding
+  colonial satisfaction — French residents, suppressed exactions — is not the teaching. The teaching is
+  that ownership here is kinship with a field. Absence of a wide caste ladder (except griots) makes the
+  lamane stand out more, not less. There is no separate priest-caste of Roog. The land-master is as close
+  as this source comes to a standing clergy of the ground. Existentially, modern readers either idolize
+  private property or pretend land is only theft. This office is neither. It is a hereditary trusteeship
+  that can be lent. You probably are not a lamane. You can still ask who actually holds the ground you
+  sleep on, and whether your relation to it is rent, gift, amnesia, or a vow.'
+themes:
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+tags:
+- senegalese_animism
+- serer
+- roog
+- pangool
+- living land
+- senegambia
+quality_score: 0
+editorial_score: 0
+editorial_maturity: strong_draft
+translation_provenance: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission
+  au Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie*
+  (Paris: Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+  local-author witness but the available Google scan was unusable in this pass.'
+pratibha_layers:
+- kind: original
+  label: Original
+  body: Les Sérères n'ont pour ainsi dire pas de castes nobles, de même ils n'ont pas de castes inférieures
+    comme par exemple les artisans des populations musulmanes; les griots seuls restent à part. Les notables
+    s'appellent lamanes; ils constituent la classe aisée et sont seuls propriétaires du sol qu'ils se
+    transmettent de père en fils et prêtent ou louent aux autres indigènes; c'est parmi eux que l'on choisit
+    les chefs de villages.
+- kind: iast
+  label: Romanization
+  body: 'French ethnographic report of Serer oral teaching. Key term: lamane — land-master, sole owner
+    of soil transmitted father to son, lender of fields, source of village heads. Griots remain apart
+    (see unit 24).'
+- kind: translation
+  label: Pratibha Translation
+  body: The Serer have almost no noble castes, and no artisan castes of the kind found among Muslim populations;
+    the griots alone remain apart. The notables are called lamanes. They are the well-off class and the
+    sole owners of the soil, which they transmit from father to son and lend or rent to others. Village
+    heads are chosen from among them.
+- kind: commentary
+  label: Pratibha Commentary
+  body: 'The claim is that land is not a free market and not a royal whim. It sits with named masters
+    who transmit it in the male line and lend it. Lamane is the living face of unit 9''s ancestor-land
+    fusion. To hold the soil is already a religious-political office: the parcel has a someone who may
+    speak for it, rent it, and be chosen as village head because the soil already chose that house. Lasnet''s
+    surrounding colonial satisfaction — French residents, suppressed exactions — is not the teaching.
+    The teaching is that ownership here is kinship with a field. Absence of a wide caste ladder (except
+    griots) makes the lamane stand out more, not less. There is no separate priest-caste of Roog. The
+    land-master is as close as this source comes to a standing clergy of the ground. Existentially, modern
+    readers either idolize private property or pretend land is only theft. This office is neither. It
+    is a hereditary trusteeship that can be lent. You probably are not a lamane. You can still ask who
+    actually holds the ground you sleep on, and whether your relation to it is rent, gift, amnesia, or
+    a vow.'
+- kind: key_terms
+  label: Key Terms
+  items:
+  - term: lamane
+    definition: Serer land-master -> sole transmitter of soil, lender of fields, pool from which village
+      heads are chosen -> "landlord" in a cash sense misses the cult-joint with the parcel
+  - term: sol
+    definition: the soil as what can be owned only in this hereditary way -> not a commodity among many
+      -> renting it out still leaves the lamane as the face of the field
+  - term: chefs de villages
+    definition: village heads chosen among lamanes -> civic office grows from land-office -> Fitaure in
+      Bérenger is the religious-civic twin of this structure
+- kind: resonances
+  label: Cross-Tradition Resonances
+  items:
+  - citation: Leviticus 25 (land shall not be sold in perpetuity; the land is Mine)
+    resonance: Both refuse a total alienation of soil and keep a deeper claim behind the living holder.
+    divergence: Leviticus names YHWH as the true owner; Serer lamane-right is family trusteeship of a
+      parcel whose high God is not the addressee of the lease.
+  - citation: Chinese lineage land and the ancestral hall's fields
+    resonance: Both lodge title in a descent group that lends use and still speaks for the earth of the
+      dead.
+    divergence: Chinese practice is hall-and-tablet coded; Lasnet's lamane is a notable who is also the
+      village's pool of chiefs.
+- kind: practice
+  label: Practice (Abhyasa)
+  body: Find out, if you do not know, who holds the title or lease of the ground you slept on last night.
+    Write the name. Then pour a sip of water for the ground itself, not for the paperwork. Notice the
+    gap between owner and soil-soul.
+provenance:
+  collection: Senegalese Animism
+  category: senegambian-animism
+  verse: '22'
+  section: Lasnet 1900, Sérères — Organisation sociale
+  cultural_context: 'Serer *cosaan* (tradition) is oral. There is no indigenous written scripture analogous
+    to a sūtra. French observer sentences stand as Original where no Serer speech survives in the PD sources.
+    The layers restore the philosophical claim without adopting colonial contempt, racial ranking, or
+    ''fetish'' as teaching. Key Serer terms kept in the Key Terms layer: Roog, Koch, Takhar, Tiurakh,
+    mammam, pangool, gisanekal, Fitaure, Bante.'
+  original_source: Lasnet 1900, Sérères — Organisation sociale
+  original_reliability: SOURCED — French ethnographic report of Serer oral teaching; Lasnet 1900 / Bérenger-Féraud
+    1879; OCR cleaned
+  english_source: 'English is a Pratibha rendering (pd_adapted) from Alexandre Lasnet, *Une mission au
+    Sénégal* (Paris: Challamel, 1900) and L.-J.-B. Bérenger-Féraud, *Les peuplades de la Sénégambie* (Paris:
+    Leroux, 1879), both public domain. Gravrand is not used (not PD). Boilat 1853 is named as preferred
+    local-author witness but the available Google scan was unusable in this pass.'
+translation: The Serer have almost no noble castes, and no artisan castes of the kind found among Muslim
+  populations; the griots alone remain apart. The notables are called lamanes. They are the well-off class
+  and the sole owners of the soil, which they transmit from father to son and lend or rent to others.
+  Village heads are chosen from among them.
+abhyasa: Find out, if you do not know, who holds the title or lease of the ground you slept on last night.
+  Write the name. Then pour a sip of water for the ground itself, not for the paperwork. Notice the gap
+  between owner and soil-soul.
+practice: Find out, if you do not know, who holds the title or lease of the ground you slept on last night.
+  Write the name. Then pour a sip of water for the ground itself, not for the paperwork. Notice the gap
+  between owner and soil-soul.
+original: Les Sérères n'ont pour ainsi dire pas de castes nobles, de même ils n'ont pas de castes inférieures
+  comme par exemple les artisans des populations musulmanes; les griots seuls restent à part. Les notables
+  s'appellent lamanes; ils constituent la classe aisée et sont seuls propriétaires du sol qu'ils se transmettent
+  de père en fils et prêtent ou louent aux autres indigènes; c'est parmi eux que l'on choisit les chefs
+  de villages.
+transliteration: 'French ethnographic report of Serer oral teaching. Key term: lamane — land-master, sole
+  owner of soil transmitted father to son, lender of fields, source of village heads. Griots remain apart
+  (see unit 24).'
