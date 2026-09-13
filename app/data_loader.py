@@ -1026,3 +1026,28 @@ def pick_daily(user_id: str = "guest", tz: str = "Europe/Paris", min_maturity: s
     now = datetime.datetime.now(pytz.timezone(tz))
     epoch_day = (now.date() - _DAILY_EPOCH).days
     return order[epoch_day % len(order)]
+
+
+# --- Precomputed resonances -------------------------------------------------
+# `GET /verse/{id}/related` is a pure function of corpus + embeddings, so it is
+# computed once by scripts/precompute_resonances.py and served from disk instead
+# of running a pgvector kNN per request. Missing/malformed file simply means the
+# endpoint falls back to the live query, so this is safe to ship before the
+# artefact exists.
+_RESONANCES_CACHE: dict[str, Any] | None = None
+
+
+def load_resonances() -> dict[str, list[dict[str, Any]]]:
+    """unit_id -> [{"id": neighbour_id, "score": float}, ...]; {} when absent."""
+    global _RESONANCES_CACHE
+    if _RESONANCES_CACHE is not None:
+        return _RESONANCES_CACHE
+    path = os.path.join(ROOT, "data", "resonances.json")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            data = json.load(fh)
+        table = data.get("resonances") if isinstance(data, dict) else None
+        _RESONANCES_CACHE = table if isinstance(table, dict) else {}
+    except (OSError, ValueError):
+        _RESONANCES_CACHE = {}
+    return _RESONANCES_CACHE

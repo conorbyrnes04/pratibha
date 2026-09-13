@@ -33,6 +33,7 @@ from .data_loader import (
     filter_reader_facing,
     get_all_verses,
     get_verse_by_id,
+    load_resonances,
     normalize_maturity,
     pick_daily,
 )
@@ -274,7 +275,20 @@ async def related_verses(sid: str, limit: int = 6):
     if verse is None:
         raise HTTPException(404, "Not found")
     cap = max(1, min(limit, 12))
-    hits = await retrieve_related_unit_ids(str(verse.get("_id") or sid), limit=cap, per_collection=2)
+    unit_id = str(verse.get("_id") or sid)
+
+    # Resonances are a pure function of corpus + embeddings, so they are
+    # precomputed (scripts/precompute_resonances.py) and served from disk.
+    # Falls back to the live pgvector kNN when the artefact is absent or has
+    # no entry for this unit, so behaviour is unchanged before it is generated.
+    source = "precomputed"
+    precomputed = load_resonances().get(unit_id)
+    if precomputed:
+        hits = [(str(n.get("id")), float(n.get("score") or 0.0), "") for n in precomputed if n.get("id")]
+    else:
+        source = "live"
+        hits = await retrieve_related_unit_ids(unit_id, limit=cap, per_collection=2)
+
     items: list[dict[str, Any]] = []
     skipped_missing = 0
     skipped_maturity = 0
@@ -291,7 +305,7 @@ async def related_verses(sid: str, limit: int = 6):
         items.append({**neighbour, "related_score": round(score, 4)})
         if len(items) >= cap:
             break
-    payload: dict[str, Any] = {"items": items, "mode": "semantic" if items else "empty"}
+    payload: dict[str, Any] = {"items": items, "mode": "semantic" if items else "empty", "source": source}
     if not items:
         payload["debug"] = {
             "hits": len(hits),

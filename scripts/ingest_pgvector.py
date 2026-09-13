@@ -291,12 +291,29 @@ def _embedding_client_and_model() -> tuple[AsyncOpenAI, str]:
     raise RuntimeError("Either OPENAI_API_KEY or OPENROUTER_API_KEY is required for ingestion embeddings.")
 
 
-async def main(dir_path: str):
+async def main(dir_path: str, only_list: str | None = None):
     patterns = [
         os.path.join(dir_path, "**", "*.yml"),
         os.path.join(dir_path, "**", "*.yaml"),
     ]
     files = sorted({fp for pattern in patterns for fp in glob.glob(pattern, recursive=True)})
+    if only_list:
+        # Backfill mode: process only the listed files. Each file is a DELETE+INSERT
+        # of its own chunks, so restricting the list keeps already-embedded units
+        # untouched instead of re-embedding a whole collection to reach a few gaps.
+        wanted = {
+            line.strip()
+            for line in Path(only_list).read_text().splitlines()
+            if line.strip() and not line.startswith("#")
+        }
+        before = len(files)
+        files = [f for f in files if f in wanted]
+        missing_from_glob = wanted - set(files)
+        print(f"--only: {len(files)} of {before} globbed files selected")
+        if missing_from_glob:
+            print(f"  warning: {len(missing_from_glob)} listed path(s) not found under {dir_path}")
+            for p in sorted(missing_from_glob)[:5]:
+                print(f"    {p}")
     if not files:
         print(f"No YAML files found under: {dir_path}")
         return
@@ -421,5 +438,11 @@ async def main(dir_path: str):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--dir", default="data/canonical")
+    ap.add_argument(
+        "--only",
+        help="Path to a newline-delimited list of source files to process. "
+             "Filters the --dir glob; use for backfilling gaps without "
+             "re-embedding units that are already indexed.",
+    )
     args = ap.parse_args()
-    asyncio.run(main(args.dir))
+    asyncio.run(main(args.dir, args.only))

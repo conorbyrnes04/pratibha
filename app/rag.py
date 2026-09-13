@@ -727,17 +727,43 @@ async def _embed_query(client: AsyncOpenAI, model: str, query: str, attempts: in
     raise last_exc if last_exc else RuntimeError("embedding failed")
 
 
+async def _tune_ann_search(conn: asyncpg.Connection, k: int) -> None:
+    """Size the HNSW candidate list to the query's LIMIT.
+
+    pgvector's `hnsw.ef_search` caps how many candidates the graph walk keeps.
+    If it is below the query's LIMIT the index physically cannot return k good
+    rows, and recall collapses. Measured against prod (31k chunks, LIMIT 144):
+
+        ef_search=40 (default) -> 27.2% recall, 304 ms
+        ef_search=100          -> 70.0% recall, 163 ms
+        ef_search=200          -> 94.1% recall, 182 ms
+
+    So keep ef_search comfortably above k. It is a session GUC and a no-op when
+    the planner chooses a non-HNSW scan, so this is safe regardless of index.
+    """
+    ef = max(100, min(1000, k * 2))
+    try:
+        await conn.execute(f"SET hnsw.ef_search = {int(ef)}")
+    except Exception:
+        # Older pgvector without HNSW — nothing to tune.
+        logger.debug("could not set hnsw.ef_search", exc_info=True)
+
+
 async def _vector_candidates(conn: asyncpg.Connection, query: str, fetch_k: int) -> list[tuple[str, dict, float]]:
     client, model = _embedding_client_and_model()
     if client is None:
         return []
     emb = await _embed_query(client, model, query)
     vector_str = f"[{','.join(map(str, emb))}]"
+    await _tune_ann_search(conn, fetch_k)
     rows = await conn.fetch(
         """
         SELECT body, metadata, 1 - (embedding <=> $1::vector) AS score
         FROM chunks
-        ORDER BY embedding <-> $1::vector
+        -- Order by cosine distance (<=>), matching idx_chunks_embedding's
+        -- vector_cosine_ops opclass. pgvector only uses an index when the
+        -- ORDER BY operator matches it, so <-> here forced a seq scan.
+        ORDER BY embedding <=> $1::vector
         LIMIT $2
         """,
         vector_str,
@@ -968,7 +994,11 @@ async def retrieve_related_unit_ids(
             """
             SELECT embedding::text AS emb, metadata
             FROM chunks
-            WHERE metadata->>'_id' = $1 OR metadata->>'unit_id' = $1
+            -- Only '_id' exists in chunk metadata (verified against prod: 31,119/31,119
+            -- rows have '_id', zero have 'unit_id'). The old `OR metadata->>'unit_id'`
+            -- never matched and forced a BitmapOr instead of a plain index scan on
+            -- idx_chunks_meta_id.
+            WHERE metadata->>'_id' = $1
             ORDER BY
               CASE metadata->>'layer_kind'
                 WHEN 'translation' THEN 1
@@ -986,13 +1016,14 @@ async def retrieve_related_unit_ids(
             return []
 
         # Fetch a generous neighbourhood of chunks, then collapse to unique units.
+        await _tune_ann_search(conn, max(limit * 24, 48))
         rows = await conn.fetch(
             """
             SELECT metadata, 1 - (embedding <=> $1::vector) AS score
             FROM chunks
             WHERE coalesce(metadata->>'_id', '') <> $2
-              AND coalesce(metadata->>'unit_id', '') <> $2
-            ORDER BY embedding <-> $1::vector
+            -- Cosine (<=>) to match idx_chunks_embedding; see note above.
+            ORDER BY embedding <=> $1::vector
             LIMIT $3
             """,
             seed["emb"],

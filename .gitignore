@@ -147,3 +147,6 @@ scratch/
 
 # Local secret exports for 1Password (never commit)
 docs/private/
+
+# Reversible backup written by scripts/prune_orphan_chunks.py (raw embeddings, large)
+data/_orphan_chunks_backup.json
